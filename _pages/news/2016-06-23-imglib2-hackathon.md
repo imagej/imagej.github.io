@@ -81,7 +81,7 @@ We spent the first couple of days discussing use cases and requirements for core
 
 Some of the needed features we considered:
 
--   [ImageJ 1.x](/software/imagej-1.x) style calibration
+-   [ImageJ 1.x](/software/imagej) style calibration
 -   Time space shearing
 -   Transformations for display
 -   Color conversion for display

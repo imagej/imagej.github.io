@@ -10,7 +10,7 @@ nav-title: Overview
   \"Great Wiki Launch\" editing sprint of June 1-4, 2021. The content is archived
   here for historical purposes." %}
 
-| **What**  | In order to launch the new ImageJ website at the highest possible level of quality, we did a pass over all the content, [correcting broken syntax](https://github.com/imagej/imagej.github.io/issues/117), [organizing the plugin categories](https://github.com/imagej/imagej.github.io/issues/119), and making notes about any remaining issues. |
+| **What**  | In order to launch the new ImageJ wiki at the highest possible level of quality, we did a pass over all the content, [correcting broken syntax](https://github.com/imagej/imagej.github.io/issues/117), [organizing the plugin categories](https://github.com/imagej/imagej.github.io/issues/119), and making notes about any remaining issues. |
 | **Why**   | Because there were more than 1400 pages which were mass converted from the old MediaWiki, and there were still rough edges that could not be fixed automatically. |
 | **Who**   | ***We did it as a team!*** See the [sign up sheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0) for the list of participants. |
 | **Where** | We met virtually in the [wiki chat room](https://gitter.im/imagej/imagej.github.io) and on the Fiji island (for audio/video). |

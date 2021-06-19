@@ -19,7 +19,7 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### Principal investigators
 
--   {% include person id='eliceiri' %}[^1] (ImageJ, Fiji)
+-   {% include person id='eliceiri' %}[^1] (ImageJ2, Fiji)
 -   {% include person id='tomancak' %}[^2] (Fiji)
 -   {% include person id='fjug' %}[^2][^3] (Fiji)
 -   [Anne Carpenter](http://www.broadinstitute.org/~anne/)[^4] (CellProfiler)
@@ -29,8 +29,11 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### {% include icon name='ImageJ' size='32px' %} [ImageJ](/software/imagej)
 
--   {% include person id='rasband' %}[^9] (lead, [ImageJ 1.x](/software/imagej-1.x))
--   {% include person id='ctrueden' %}[^1] (lead, [ImageJ2](/software/imagej2))
+-   {% include person id='rasband' %}[^9] (lead)
+
+### {% include icon name='ImageJ2' size='32px' %} [ImageJ2](/software/imagej2)
+
+-   {% include person id='ctrueden' %}[^1] (lead)
 -   {% include person id='hinerm' %}[^1]
 -   {% include person id='elevans' %}[^1]
 -   {% include person id='gselzer' %}[^1]
@@ -123,7 +126,7 @@ for details on that plugin's maintainers.
 ### Special thanks
 
 Our deep thanks to {% include person id='rasband' %}, author of
-[ImageJ 1.x](/software/imagej-1.x), for all his support and patience!
+[ImageJ](/software/imagej), for all his support and patience!
 
 ## List of contributors
 

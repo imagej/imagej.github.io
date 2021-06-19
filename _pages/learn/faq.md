@@ -16,34 +16,18 @@ See the [Batch Processing](/scripting/batch) page.
 
 ## What is the largest size image that ImageJ can open?
 
-There is a 2 gigapixel limit when opening and displaying image planes using the [ImageJ 1.x](/software/imagej-1.x) user interface's default image viewer. However, one major goal of the [ImageJ2](/software/imagej2) project is to break this limit. ImageJ2 uses the [ImgLib2](/libs/imglib2) library as its data model, which has much larger limits on the number of pixels (theoretically: \~$$ 2^{63} $$ per dimension, up to \~ $$ 2^{31} $$ dimensions, totaling \~$$ 2^{63^{31}} $$ pixels). Hence, you can open larger images using the {% include github org='imagej' repo='tutorials' label='ImageJ2 API' %}. But you will not be able to display them in the user interface yet.
+There is a 2 gigapixel limit when opening and displaying image planes using the original [ImageJ](/software/imagej) user interface's default image viewer. However, one major goal of the [ImageJ2](/software/imagej2) project is to break this limit. ImageJ2 uses the [ImgLib2](/libs/imglib2) library as its data model, which has much larger limits on the number of pixels (theoretically: \~$$ 2^{63} $$ per dimension, up to \~ $$ 2^{31} $$ dimensions, totaling \~$$ 2^{63^{31}} $$ pixels). Hence, you can open larger images using the {% include github org='imagej' repo='tutorials' label='ImageJ2 API' %}. But you will not be able to display them in the user interface yet.
 
-Furthermore, the [SCIFIO](/libs/scifio) library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
+Furthermore, the [SCIFIO](/libs/scifio) library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
 
-The [Fiji](/software/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
+The [Fiji](/software/fiji) project also includes the [BigDataViewer](/plugins/bdv) (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ2 core. But there are a couple of limitations right now:
 
 1.  BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
-2.  Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" IJ1 and IJ2 functionality](/libs/imagej-legacy) is tricky here. But we are working to lift these restrictions as time goes on.
+2.  Many ImageJ plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So ["mixing and matching" ImageJ and ImageJ2 functionality](/libs/imagej-legacy) is tricky here. But we are working to lift these restrictions as time goes on.
 
 # macOS
 
-## How do I set up Java 6 on macOS?
-
 See the [MacOS](/platforms/macos) page.
-
-## How do I run ImageJ on Yosemite?
-
-See the [MacOS](/platforms/macos) page.
-
-## How do I run ImageJ on El Capitan?
-
-See the [MacOS](/platforms/macos) page.
-
-## How do I run ImageJ with JavaFX support on macOS?
-
-Whether JavaFx is supported on macOS depends on the version of java that is used. You can check the version of java packaged with ImageJ or Fiji by right-clicking the app and viewing the contents. Then go into the java/macos folder. Versions of java starting with jdk1.8.0 should support JavaFX. However, if you see the default upon installation, adoptopenjdk-8.jdk, you will not have JavaFX support. In this case, you can add JavaFX support by replacing this will the Azul jdk that comes with JavaFX included as described [here](https://forum.image.sc/t/feedback-needed-bundled-java-future-directions/44030/17). 
-
-Can you check if you have JavaFX installed using the Plugins>Utilities>Find Jar for Class and searching for javafx.scene.Scene. If you can't fine this class then you don't have javafx installed.
 
 # Running
 
@@ -135,7 +119,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 
 *If you need to downgrade to avoid a critical bug, please [report that bug](/discuss/bugs) to the developers so that it can be fixed in a future version!*
 
--   You can change the version of [ImageJ 1.x](/software/imagej-1.x) used via the {% include bc path='Help | Update ImageJ...' %} menu item. This *only* changes the version of ImageJ 1.x—not all ImageJ components, [plugins](/plugins), etc.
+-   You can change the version of [ImageJ](/software/imagej) used via the {% include bc path='Help | Update ImageJ...' %} menu item. Note that this *only* changes the version of ImageJ itself—not any installed extensions. This command also works in ImageJ2, but only changes the version of the embedded ImageJ 1.x, not all ImageJ2 components.
 -   You can [switch to a different version of Java](#how-do-i-launch-imagej-with-a-different-version-of-java).
 -   You can [download a Fiji Life-Line version](/downloads#fiji).
 
@@ -174,33 +158,33 @@ Indeed, an earlier version of the Updater does not use your system-wide network 
 
 # Compatibility
 
-## What is the difference between ImageJ 1.x and ImageJ2?
+## What is the difference between ImageJ and ImageJ2?
 
-[ImageJ 1.x](/software/imagej-1.x) is an extensible platform for scientific image analysis. [ImageJ2](/software/imagej2) is redesigned from the ground up to meet the same needs, yet engineered with future-proof flexibility to adapt to researchers' growing requirements (new data types, higher dimensionality, huge images, etc...).
+[ImageJ](/software/imagej) is an extensible platform for scientific image analysis. [ImageJ2](/software/imagej2) is redesigned from the ground up to meet the same needs, yet engineered with future-proof flexibility to adapt to researchers' growing requirements (new data types, higher dimensionality, huge images, etc...).
 
-## Will ImageJ 1.x macros, plugins and scripts still work in ImageJ2?
+## Will ImageJ macros, plugins and scripts still work in ImageJ2?
 
-Yes. We are completely committed to 100% backwards compatibility with ImageJ 1.x. ImageJ2 includes the latest version of ImageJ 1.x "under the hood" so that existing macros, plugins and scripts will still run the same as before.
+Yes. We are completely committed to 100% backwards compatibility with the original ImageJ. ImageJ2 includes the latest version of ImageJ "under the hood" so that existing macros, plugins and scripts will still run the same as before.
 
-ImageJ2 user interfaces are just plugins; ImageJ2 runs with the *ImageJ 1.x UI* by default. But we have also created a new ImageJ2 user interface modeled after ImageJ 1.x to a very large extent, with all the same shortcut keys and behaviors whenever possible. Either way, ImageJ2 looks and feels like ImageJ 1.x, but with a powerful new infrastructure allowing it to process a wider variety of image data more quickly and easily.
+ImageJ2 user interfaces are just plugins; ImageJ2 runs with the *ImageJ UI* by default. But we have also created a new ImageJ2 user interface modeled after the original ImageJ to a very large extent, with all the same shortcut keys and behaviors whenever possible. Either way, ImageJ2 looks and feels like the original ImageJ, but with a powerful new infrastructure allowing it to process a wider variety of image data more quickly and easily.
 
 ## Does ImageJ2 support the ImageJ macro language? Is it deprecated?
 
-Thanks to the {% include github org='imagej' repo='imagej-legacy' label='ImageJ legacy layer' %}, [ImageJ 1.x](/software/imagej-1.x) [macros](/scripting/macro) will run unchanged in [ImageJ2](/software/imagej2), while also allowing to harness ImageJ2's new parameterized [scripting](/scripting) paradigm—something that was previously not possible with the macro language.
+Thanks to the {% include github org='imagej' repo='imagej-legacy' label='ImageJ legacy layer' %}, [ImageJ](/software/imagej) [macros](/scripting/macro) will run unchanged in [ImageJ2](/software/imagej2), while also allowing to harness ImageJ2's new parameterized [scripting](/scripting) paradigm—something that was previously not possible with the macro language.
 
-The ImageJ 1.x macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
+The ImageJ macro language has been extremely useful to many users. However, it has a substantial limitation: its functions are separate from those available from Java and the other scripting languages.
 
-In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ 1.x](/software/imagej-1.x) [plugins](/plugins) and [macros](/scripting/macro). They can run [headless](/learn/headless) on a server, and are accessible from various applications such as CellProfiler, [KNIME](/software/knime), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ 1.x API will remain accessible, too.
+In ImageJ2, the goal is to provide one unified set of functions, which is fully accessible from Java and all scripting languages. Hence, ImageJ2 plugins and scripts are more flexible than [ImageJ](/software/imagej) [plugins](/plugins) and [macros](/scripting/macro). They can run [headless](/learn/headless) on a server, and are accessible from various applications such as CellProfiler, [KNIME](/software/knime), OMERO, and headless from the command line. We would encourage newly developed scripts and plugins to use the ImageJ2 API since it offers these advantages, but the ImageJ API will remain accessible, too.
 
-## Can I call ImageJ 1.x API from an ImageJ2 command?
+## Can I call ImageJ API from an ImageJ2 command?
 
-Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ 1.x within your command. ImageJ 1.x is rather tightly coupled to AWT and hence does not work well headless. For details, see the [Headless](/learn/headless) page.
+Yes, although it is not recommended. You will lose most of the advantages of ImageJ2 if you embed calls to ImageJ within your command. The original ImageJ is tightly coupled to AWT and hence does not work well headless. For details, see the [Headless](/learn/headless) page.
 
-## Can I call ImageJ2 API from an ImageJ 1.x plugin?
+## Can I call ImageJ2 API from an ImageJ plugin?
 
 Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/blob/d3ff8e818bb26cb4713371878b239b36cb7d4877/howtos/src/main/java/howto/adv/ModernFromLegacy.java) tutorial example.
 
-## How do I find equivalent commands between ImageJ 1.x and ImageJ2 API?
+## How do I find equivalent commands between the ImageJ and ImageJ2 APIs?
 
 [ImageJ1-ImageJ2 cheat sheet](/develop/ij1-ij2-cheat-sheet) is available.
 
@@ -208,37 +192,23 @@ Yes, see the [call-modern-from-legacy](https://github.com/imagej/tutorials/blob/
 
 ## What is the difference between Fiji and ImageJ?
 
-Fiji is a *distribution* of ImageJ: it bundles the core ImageJ application with a curated selection of plugins pre-installed. Specifically, those plugins found on the [Fiji update site](/list-of-update-sites).
+Fiji is a *distribution* of ImageJ + ImageJ2: it bundles the core application with a curated selection of plugins pre-installed.
 
 ## How do I install Fiji?
 
 See [here](/software/fiji/downloads#installation) for instructions.
 
-## How do I turn my ImageJ installation into a Fiji one?
-
-Fiji is just ImageJ. If you are running [ImageJ2](/software/imagej2), simply run {% include bc path='Help | Update' %}, click *Manage update sites*, and enable the *Fiji* update site.
-
-Or if you are running [ImageJ 1.x](/software/imagej-1.x), you can bootstrap the updater by drag 'n dropping [this link](http://update.imagej.net/bootstrap.js) onto your running ImageJ and run the Javascript that was opened in a text window. After that, you can run Fiji/ImageJ using the [ImageJ launcher](/learn/launcher) that was installed into the ImageJ directory.
-
-## How do I develop Fiji in Eclipse?
-
-Please refer to the page *[Developing Fiji in Eclipse](/develop/eclipse)*.
-
-## How can I build Fiji from the command-line?
-
-[Download and build it](/software/fiji/building-from-source). You need Git for that (if you are on Windows, please use [Git for Windows](https://msysgit.github.io/)).
-
-## How do I install a Fiji plugin into vanilla [ImageJ 1.x](/software/imagej-1.x)?
+## How do I install a Fiji plugin into plain [ImageJ](/software/imagej)?
 
 Doing this is not recommended:
 
--   Fiji plugin authors test their plugins in Fiji, not vanilla [ImageJ 1.x](/software/imagej-1.x).
--   An increasing number of plugins use features of [ImageJ2](/software/imagej2), which are not available in [ImageJ 1.x](/software/imagej-1.x).
--   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](/develop/architecture#versioning) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [ Fiji maintainers](/contribute/governance) have already solved this problem for the [Fiji](/software/fiji) distribution.
+-   Fiji plugin authors test their plugins in Fiji, not plain [ImageJ](/software/imagej).
+-   An increasing number of plugins use features of [ImageJ2](/software/imagej2), which are not available in the original [ImageJ](/software/imagej).
+-   If you install multiple plugins with complex dependency chains in this manner, you may have dependency [version](/develop/architecture#versioning) conflicts. For things to work, you will need to ensure that all the library versions are compatible. The [Fiji maintainers](/contribute/governance) have already solved this problem for the [Fiji](/software/fiji) distribution.
 
 So you could save yourself a lot of pain by using Fiji instead.
 
-That said, you can install a Fiji plugin in a vanilla ImageJ 1.x installation, as long as you copy all its dependencies with it. You can do this as follows:
+That said, you can install a Fiji plugin in a plain ImageJ installation, as long as you copy all its dependencies with it. You can do this as follows:
 
     git clone git://github.com/fiji/Stitching
     cd Stitching
@@ -299,7 +269,7 @@ Over the years we evolved a development style as follows:
 -   merge
 -   deal with any fall-out
 
-This development style has been adopted by the [ImageJ team](/people), with two additions (making the fall-out step much smaller):
+This development style has been adopted by the [ImageJ2 team](/people), with two additions (making the fall-out step much smaller):
 
 -   tests are added as automated regression tests (to be run by the [continuous integration](/develop/travis) whenever new changes were pushed) whenever possible.
 -   merges are usually done with *--no-ff*, so that even fast-forwarding branches (i.e. rebased on top of *master*) will get a merge commit in which the branch is described more broadly.
@@ -381,7 +351,7 @@ Another possibility for the future is a client/server version of ImageJ that run
 
 ## Why is there Fiji when there is already ImageJ? And what is this ImageJ2 about?
 
-The [ImageJ](/software/imagej), [Fiji](/software/fiji) and [ImageJ2](/software/imagej2) projects are very closely related. See [ImageJ Flavors](/software/imagej#flavors) for a thorough breakdown of the differences.
+The [ImageJ](/software/imagej), [Fiji](/software/fiji) and [ImageJ2](/software/imagej2) projects are very closely related. See [ImageJ Flavors](/learn/flavors) for a thorough breakdown of the differences.
 
 See also:
 
@@ -390,15 +360,15 @@ See also:
 
 In short: we all collaborate, but have slightly different focus, hence the different projects and names.
 
-## How can we be sure that ImageJ 1.x, ImageJ2 and Fiji aren't going to diverge or fork over time?
+## How can we be sure that ImageJ, ImageJ2 and Fiji aren't going to diverge or fork over time?
 
-We are working to create an architecture where the programs work together and preserve compatibility. Fiji is just ImageJ with batteries included, and ImageJ2 includes ImageJ 1.x as-is for maximum compatibility. Fiji now uses ImageJ2 at its core. Most importantly, all involved developers are strongly dedicated to avoiding divergence—we are working closely together to ensure that ImageJ2 represents a continuation of ImageJ and Fiji, rather than a project fork.
+We are working to create an architecture where the programs work together and preserve compatibility. Fiji is just ImageJ with batteries included, and ImageJ2 includes ImageJ as-is for maximum compatibility. Fiji now uses ImageJ2 at its core. Most importantly, all involved developers are strongly dedicated to avoiding divergence—we are working closely together to ensure that ImageJ2 represents a continuation of ImageJ and Fiji, rather than a project fork.
 
 ## Would it make sense to merge the ImageJ2 and Fiji projects?
 
 [Fiji](/software/fiji) and [ImageJ2](/software/imagej2) are fundamentally the same software, using the same [launcher](/learn/launcher). So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [Updater](/plugins/updater), [Launcher](/learn/launcher) and [Script Editor](/scripting/script-editor) components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")—and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
-All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](/) serves all ImageJ content including Fiji-specific content (which is marked with the Fiji logo). But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [ImageJ 1.x](/software/imagej-1.x) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
+All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [ImageJ wiki](/) serves all ImageJ content including Fiji-specific content (which is marked with the Fiji logo). But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from the original [ImageJ](/software/imagej) to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
 More effort is still needed to clarify web resources, to explain concisely and clearly where people should go in different circumstances. We also have plans to make bug reporting simpler and easier across the projects.
 
@@ -439,11 +409,11 @@ Please see [Report a Bug](/discuss/bugs)' %}. While private mail might seem more
 
 ## I reported an issue, but it is still not fixed! Why not?
 
-[ImageJ](/software/imagej) is an [Open Source](/licensing/open-source) community project. The list of [contributors](/people) is large but most of the people involved are not paid to work on it. We greatly value community contributions and assistance.
+[ImageJ](/software/imagej) and its [variants](/learn/flavors) are [open source](/licensing/open-source) community projects. The list of [contributors](/people) is large but many of the people involved are not paid to work on it. We greatly value community contributions and assistance.
 
-There are not many professional developers whose formal jobs include responding to and addressing bug reports. These developers are not paid *solely* to fix bugs—rather, they are working to solve scientific problems and to advance the software's capabilities. And their attention is spread thin across many projects: [ImageJ](https://github.com/imagej), [Fiji](https://github.com/fiji), [SCIFIO](https://github.com/scifio), [SciJava](https://github.com/scijava), [LOCI](https://github.com/uw-loci), [OME](https://github.com/openmicroscopy), [ImgLib2](https://github.com/imglib), [OpenSPIM](https://github.com/openspim), [SLIM Curve](https://github.com/slim-curve), [NAR plugin for Maven](https://github.com/maven-nar), and others.
+There are not many professional developers whose formal jobs include responding to and addressing bug reports. These developers are not paid *solely* to fix bugs—rather, they are working to solve scientific problems and to advance the software's capabilities. And their attention is spread thin across many projects: [ImageJ](https://github.com/imagej), [Fiji](https://github.com/fiji), [SCIFIO](https://github.com/scifio), [SciJava](https://github.com/scijava), [LOCI](https://github.com/uw-loci), [OME](https://github.com/openmicroscopy), [ImgLib2](https://github.com/imglib), [OpenSPIM](https://github.com/openspim), and others.
 
-The organizations above total over 300 source code repositories, many of which have dozens of open issues in their issue trackers. There are also several hundred tickets in the [old ImageJ issue tracker](http://trac.imagej.net/) that are pending migration to GitHub Issues, as well as over a hundred [open issues in the Fiji Bugzilla](https://fiji.sc/bugzilla/buglist.cgi?resolution=---).
+The organizations above total over 300 source code repositories, many of which have dozens of open issues in their issue trackers. There are also several hundred tickets in the [old ImageJ2 issue tracker](https://imagej.net/tickets/) that were never migrated to GitHub Issues, as well as over a hundred [open issues archived in the Fiji Bugzilla](https://fiji.sc/bug/).
 
 So please understand that just because we have not responded to a bug report, does not mean we are uninterested in fixing it. It's just that we are very busy, and can use all the help we can get!
 

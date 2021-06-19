@@ -5,7 +5,7 @@ categories: [Visualization]
 artifact: sc.fiji:Image_5D
 ---
 
-This page supersedes the [original Image5D page](https://imagej.nih.gov/ij/plugins/image5d.html) from the ImageJ 1.x documentation.
+This page supersedes the [original Image5D page](https://imagej.nih.gov/ij/plugins/image5d.html) from the ImageJ documentation.
 
 {% include notice icon="info" content='Please consider using the built-in [hyperstacks](https://imagej.nih.gov/ij/docs/guide/146-8.html) functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.' %}
 

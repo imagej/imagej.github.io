@@ -143,9 +143,9 @@ Here is a summary of the hackathon results, written by Johannes Schindelin, Step
 
 The most important work done is certainly the redesign of ImgLib (dubbed "ImgLib2"). Other design questions have been addressed, too:
 
--   How to reuse IJ2's plugin infrastructure (e.g. in the 3D Viewer)
--   How to wrap IJ1 elegantly (Javassist)
--   The strategy how to go about including IJ2 in Fiji as early as possible (even gradually)
+-   How to reuse ImageJ2's plugin infrastructure (e.g. in the 3D Viewer)
+-   How to wrap ImageJ elegantly (Javassist)
+-   The strategy how to go about including ImageJ2 in Fiji as early as possible (even gradually)
 -   How to support ROIs and annotations in the ImgLib
 -   How to unify Dataset/imglib-algorithms/imglib-scripting into imglib-ops
 -   How to unify the different places where per-project metadata are stored in Fiji (Maven, Updater, LICENSES, Debian packages)
@@ -163,13 +163,13 @@ All of these discussions benefited incredibly from the fact that all the people 
 -   Stephan Saalfeld's Panorama Viewer was integrated.
 -   Debian packages are now built automatically every week (Mark Longair).
 -   Java code can be inlined into Jython code very easily now (for more performance without leaving the high-level scripting behind) (Albert Cardona).
--   The Image Expression Parser was fixed to accomodate for a breakage in IJ1.
+-   The Image Expression Parser was fixed to accommodate for a breakage in ImageJ.
 -   An alternative to the Tubeness algorithm which was published by Frangi was integrated into the Simple Neurite Tracer (Mark Longair).
 -   Fiji allows scripts & macros to be inserted anywhere in the menu structure by putting them in the corresponding subdirectory of Fiji.app/plugins/Scripts/ (Curtis Rueden).
 -   All scripts and macros inserted into the menus report that they were started, and they can be opened in the Script Editor when Shift was pressed before clicking on the respective menu entry.
 -   There is now a "Scale by DPI" Javascript in the {% include bc path="Image|Adjust" %} menu (Curtis Rueden).
 -   When Fiji was asked via the properties on MacOSX to run in 32-bit mode, it does so (Erwin Frise).
--   There is a base class for the Command Launcher of IJ1, reusable for every Swing application (and easily extended to AWT or whatever).
+-   There is a base class for the Command Launcher of ImageJ, reusable for every Swing application (and easily extended to AWT or whatever).
 -   There have been too many improvements to the Advanced Trainable Segmentation (AKA WEKA Segmentation) (Ignacio Arganda-Carreras).
 -   The OpenCL example from the ImageJ2 repository was ported to Fiji (and is slated to become a "scripting language") (Rick Lentz and Johannes Schindelin).
 -   The Fiji Updater (multiple sites) is shaping up nicely; most importantly, there is a regression test now that is easily extended and understandable, which makes it much more straight-forward to go about extending the Updater (Johannes Schindelin).
@@ -196,11 +196,11 @@ All of these discussions benefited incredibly from the fact that all the people 
 
 ### ImageJ2
 
--   Enabled support for IJ2-style plugins in the 3D Viewer \[see [r2190](http://trac.imagej.net/changeset/2190)\], which helped to further improve the plugin framework architecture. (Curtis Rueden and Bene Schmid)
--   Finalized the mechanism by which the ImageJ 1.x legacy support works, using a tool called Javassist to surgically alter IJ1 behavior where necessary \[see [r2175](http://trac.imagej.net/changeset/2175)\] (Curtis Rueden).
--   Improved how IJ1 plugins are called from IJ2 \[see [r2186](http://trac.imagej.net/changeset/2186)\] (Curtis Rueden).
--   Progress on combined spectral-lifetime visualization and analysis in IJ2 (Aivar Grislis).
--   Initial development toward a multi-resolution tiled viewer for IJ2 (Aivar Grislis).
+-   Enabled support for ImageJ2-style plugins in the 3D Viewer \[see [r2190](http://trac.imagej.net/changeset/2190)\], which helped to further improve the plugin framework architecture. (Curtis Rueden and Bene Schmid)
+-   Finalized the mechanism by which the ImageJ legacy support works, using a tool called Javassist to surgically alter ImageJ behavior where necessary \[see [r2175](http://trac.imagej.net/changeset/2175)\] (Curtis Rueden).
+-   Improved how ImageJ plugins are called from ImageJ2 \[see [r2186](http://trac.imagej.net/changeset/2186)\] (Curtis Rueden).
+-   Progress on combined spectral-lifetime visualization and analysis in ImageJ2 (Aivar Grislis).
+-   Initial development toward a multi-resolution tiled viewer for ImageJ2 (Aivar Grislis).
 -   Worked on making ITK available to ImageJ plugins (Luis Ibáñez).
 
 ### Bio-Formats

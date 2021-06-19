@@ -1,11 +1,10 @@
 ---
 title: Developing Plugins for ImageJ 1.x
 section: Extend:Development:Guides
+project: ImageJ
 ---
 
-{% include notice icon="imagej-1.x" content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](/develop/plugins).' %}
-
-{% include project content='ImageJ 1.x' %}
+{% include notice icon="imagej" content='This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [develop for ImageJ2](/develop/plugins).' %}
 
 # Plugin, script or macro?
 

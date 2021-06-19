@@ -49,7 +49,7 @@ There are three common methods for constructing an uber-JAR:
 
 **Disadvantages:**
 
--   Every time you need to update the version of the software, you must redeploy the entire uber-JAR (e.g., [ImageJ](/software/imagej) is \~68 MB as of May 2015). If you bundle individual JAR components, you need only update those that changed. This issue is of particular relevance to Java applications deployed via Java Web Start, since it automatically downloads the latest available version of each JAR dependency; in that case, your application startup time will suffer if you use the uber-JAR.
+-   Every time you need to update the version of the software, you must redeploy the entire uber-JAR (e.g., [ImageJ2](/software/imagej2) is \~68 MB as of May 2015). If you bundle individual JAR components, you need only update those that changed. This issue is of particular relevance to Java applications deployed via Java Web Start, since it automatically downloads the latest available version of each JAR dependency; in that case, your application startup time will suffer if you use the uber-JAR.
 -   You cannot cherry-pick only the JARs containing the functionality you need, so your application's footprint may suffer from bloat.
 -   If downstream code relies on any of the same dependencies which are embedded in an unshaded uber-jar, you may run into trouble (e.g., [`NoSuchMethodError`](/learn/troubleshooting#nosuchmethoderror-or-noclassdeffounderror) for unshaded uber-JARs) with multiple copies of those dependencies on your classpath, especially if you need to use a different version of that dependency than is bundled with the uber-JAR.
 

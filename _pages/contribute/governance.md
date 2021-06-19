@@ -79,430 +79,393 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
 <table>
   <tbody>
     <tr>
+      <th>Logo</th>
+      <th>Project</th>
+      <th>Founders</th>
+      <th>Leads</th>
+      <th>Maintainers</th>
+      <th>Developers</th>
+      <th>Contributors</th>
+    </tr>
+    <tr>
       <td>
-        <p><strong>Logo</strong></p>
+        {% include icon name='ImageJ' %}
       </td>
       <td>
-        <p><strong>Project</strong></p>
+        <strong><a href="/software/imagej">ImageJ</a></strong>
       </td>
       <td>
-        <p><strong>Founders</strong></p>
+        {% include person id='rasband' %}
       </td>
       <td>
-        <p><strong>Leads</strong></p>
+        {% include person id='rasband' %}
       </td>
       <td>
-        <p><strong>Maintainers</strong></p>
+        {% include person id='rasband' %}<br>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p><strong>Developers</strong></p>
+        {% include person id='rasband' %}
       </td>
       <td>
-        <p><strong>Contributors</strong></p>
+        See <a href="https://imagej.nih.gov/ij/notes.html">release notes</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='SciJava' %}</p>
+        {% include icon name='ImageJ2' %}
       </td>
       <td>
-        <p><strong><a href="/libs/scijava">SciJava</a></strong></p>
+        <strong><a href="/software/imagej2">ImageJ2</a></strong>
       </td>
       <td>
-        <p>{% include person id='joshmoore' %}<br>
-        {% include person id='ctrueden' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='ctrueden' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='ctrueden' %}</p>
-      </td>
-      <td>
-        <p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p>
-      </td>
-      <td>
-        <p>See <a href="/people">Contributors</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImgLib2' %}</p>
-      </td>
-      <td>
-        <p><strong><a href="/libs/imglib2">ImgLib2</a></strong></p>
-      </td>
-      <td>
-        <p>{% include person id='axtimwalde' %}<br>
-        {% include person id='StephanPreibisch' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='tpietzsch' %}<sup>1</sup><br>
-        {% include person id='StephanPreibisch' %}<br>
-        {% include person id='axtimwalde' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='tpietzsch' %}<br>
         {% include person id='ctrueden' %}<br>
-        {% include person id='StephanPreibisch' %}<br>
-        {% include person id='axtimwalde' %}</p>
-      </td>
-      <td>
-        <p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p>
-      </td>
-      <td>
-        <p>See <a href="/people">Contributors</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImageJ 1.x' %}</p>
-      </td>
-      <td>
-        <p><strong><a href="/software/imagej-1.x">ImageJ 1.x</a></strong></p>
-      </td>
-      <td>
-        <p>{% include person id='rasband' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='rasband' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='rasband' %}<br>
-        {% include person id='ctrueden' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='rasband' %}</p>
-      </td>
-      <td>
-        <p>See <a href="https://imagej.nih.gov/ij/notes.html">release notes</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='ImageJ2' %}</p>
-      </td>
-      <td>
-        <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
-      </td>
-      <td>
-        <p>{% include person id='ctrueden' %}<br>
-        {% include person id='eliceiri' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='ctrueden' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='ctrueden' %}</p>
-      </td>
-      <td>
-        <p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p>
-      </td>
-      <td>
-        <p>See <a href="/people">Contributors</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='SCIFIO' %}</p>
-      </td>
-      <td>
-        <p><strong><a href="/libs/scifio">SCIFIO</a></strong></p>
-      </td>
-      <td>
-        <p>{% include person id='ctrueden' %}<br>
+        {% include person id='tnargsirrah' %}<br>
         {% include person id='eliceiri' %}<br>
-        {% include person id='hinerm' %}</p>
+        Anne Carpenter<br>
+        Rudolf Oldenbourg
+
       </td>
       <td>
-        <p>{% include person id='ctrueden' %}</p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p>{% include person id='ctrueden' %}</p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/imagej/people">List on GitHub</a>
       </td>
       <td>
-        <p>See <a href="/people">Contributors</a></p>
+        See <a href="/people">Contributors</a>
       </td>
     </tr>
     <tr>
       <td rowspan="3" style="vertical-align: middle">
-        <p>{% include icon name='Fiji' %}</p>
+        {% include icon name='Fiji' %}
       </td>
       <td>
-        <p><strong><a href="/software/fiji">Fiji</a></strong></p>
+        <strong><a href="/software/fiji">Fiji</a></strong>
       </td>
       <td>
-        <p>{% include person id='dscho' %}<br>
+        {% include person id='dscho' %}<br>
         {% include person id='acardona' %}<br>
-        {% include person id='tomancak' %}</p>
+        {% include person id='tomancak' %}
       </td>
       <td>
-        <p>{% include person id='ctrueden' %}</p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p>{% include person id='ctrueden' %}<br>
-        Gabriella Turek</p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p><a href="https://github.com/orgs/fiji/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/fiji/people">List on GitHub</a>
       </td>
       <td>
-        <p>See <a href="/people">Contributors</a></p>
+        See <a href="/people">Contributors</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
+        <strong><a href="/plugins/bdv">BigDataViewer</a></strong>
       </td>
       <td>
-        <p>{% include person id='tpietzsch' %}</p>
+        {% include person id='tpietzsch' %}
       </td>
       <td>
-        <p>{% include person id='tpietzsch' %}</p>
+        {% include person id='tpietzsch' %}
       </td>
       <td>
-        <p>{% include person id='tpietzsch' %}<br>
-        {% include person id='StephanPreibisch' %}</p>
+        {% include person id='tpietzsch' %}<br>
+        {% include person id='StephanPreibisch' %}
       </td>
       <td>
-        <p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a></p>
+        <a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
+        <strong><a href="/plugins/trakem2">TrakEM2</a></strong>
       </td>
       <td>
-        <p>{% include person id='acardona' %}</p>
+        {% include person id='acardona' %}
       </td>
       <td>
-        <p>{% include person id='acardona' %}</p>
+        {% include person id='acardona' %}
       </td>
       <td>
-        <p>{% include person id='acardona' %}<br>
+        {% include person id='acardona' %}<br>
         {% include person id='axtimwalde' %}<br>
-        {% include person id='ctrueden' %}</p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/trakem2/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/trakem2/trakem2/graphs/contributors">Info on GitHub</a></p>
+        <a href="https://github.com/trakem2/trakem2/graphs/contributors">Info on GitHub</a>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='SLIM Curve' %}</p>
+        {% include icon name='SciJava' %}
       </td>
       <td>
-        <p><strong><a href="/plugins/slim-curve">SLIM Curve</a></strong></p>
+        <strong><a href="/libs/scijava">SciJava</a></strong>
       </td>
       <td>
-        <p>Paul Barber<br>
-        {% include person id='ctrueden' %}</p>
+        {% include person id='joshmoore' %}<br>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p>Paul Barber<sup>2</sup><br>
-        {% include person id='ctrueden' %}<sup>2</sup></p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p>{% include person id='aksagar' %}<br>
-        {% include person id='ctrueden' %}</p>
+        {% include person id='ctrueden' %}
       </td>
       <td>
-        <p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/scijava/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p>
+        See <a href="/people">Contributors</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='Bio-Formats' %}</p>
+        {% include icon name='ImgLib2' %}
       </td>
       <td>
-        <p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p>
+        <strong><a href="/libs/imglib2">ImgLib2</a></strong>
       </td>
       <td>
-        <p>{% include person id='ctrueden' %}<br>
-        {% include person id='eliceiri' %}</p>
+        {% include person id='axtimwalde' %}<br>
+        {% include person id='StephanPreibisch' %}
       </td>
       <td>
-        <p>{% include person id='melissalinkert' %}</p>
+        {% include person id='tpietzsch' %}<sup>1</sup><br>
+        {% include person id='StephanPreibisch' %}<br>
+        {% include person id='axtimwalde' %}
       </td>
       <td>
-        <p>{% include person id='melissalinkert' %}<br>
-        {% include person id='sbesson' %}</p>
+        {% include person id='tpietzsch' %}<br>
+        {% include person id='ctrueden' %}<br>
+        {% include person id='StephanPreibisch' %}<br>
+        {% include person id='axtimwalde' %}
+      </td>
+      <td>
+        <a href="https://github.com/orgs/imglib/people">List on GitHub</a>
+      </td>
+      <td>
+        See <a href="/people">Contributors</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {% include icon name='SCIFIO' %}
+      </td>
+      <td>
+        <strong><a href="/libs/scifio">SCIFIO</a></strong>
+      </td>
+      <td>
+        {% include person id='ctrueden' %}<br>
+        {% include person id='eliceiri' %}<br>
+        {% include person id='hinerm' %}
+      </td>
+      <td>
+        {% include person id='ctrueden' %}
+      </td>
+      <td>
+        {% include person id='ctrueden' %}
+      </td>
+      <td>
+        <a href="https://github.com/orgs/scijava/people">List on GitHub</a>
+      </td>
+      <td>
+        See <a href="/people">Contributors</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {% include icon name='Bio-Formats' %}
+      </td>
+      <td>
+        <strong><a href="/formats/bio-formats">Bio-Formats</a></strong>
+      </td>
+      <td>
+        {% include person id='ctrueden' %}<br>
+        {% include person id='eliceiri' %}
+      </td>
+      <td>
+        {% include person id='melissalinkert' %}
+      </td>
+      <td>
+        {% include person id='melissalinkert' %}<br>
+        {% include person id='sbesson' %}
       </td>
       <td style="white-space: normal">
-        <p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p>
+        <a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a>
       </td>
       <td>
-        <p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='KNIME' %}</p>
-      </td>
-      <td>
-        <p><strong><a href="/software/knime">KNIME Image Processing</a></strong></p>
-      </td>
-      <td>
-        <p>{% include person id='dietzc' %}<br>
-        Martin Horn</p>
-      </td>
-      <td>
-        <p>{% include person id='dietzc' %}</p>
-      </td>
-      <td>
-        <p>{% include person id='dietzc' %}<br>
-        Martin Horn</p>
-      </td>
-      <td>
-        <p><a href="https://github.com/orgs/knime-ip/people">List on GitHub</a></p>
-      </td>
-      <td>
-        <p>See <a href="/people">Contributors</a></p>
+        See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='CellProfiler' %}</p>
+        {% include icon name='KNIME' %}
       </td>
       <td>
-        <p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p>
+        <strong><a href="/software/knime">KNIME Image Processing</a></strong>
       </td>
       <td>
-        <p>{% include person id='LeeKamentsky' %}<br>
-        Anne Carpenter</p>
+        {% include person id='dietzc' %}<br>
+        Martin Horn
       </td>
       <td>
-        <p>{% include person id='0x00b1' %}</p>
+        {% include person id='dietzc' %}
       </td>
       <td>
-        <p>{% include person id='0x00b1' %}</p>
+        {% include person id='dietzc' %}<br>
+        Martin Horn
       </td>
       <td>
-        <p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/knime-ip/people">List on GitHub</a>
       </td>
       <td>
-        <p>See <a href="/people">Contributors</a></p>
+        See <a href="/people">Contributors</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='OMERO' %}</p>
+        {% include icon name='CellProfiler' %}
       </td>
       <td>
-        <p><strong><a href="/software/omero">OMERO</a></strong></p>
+        <strong><a href="/software/cellprofiler">CellProfiler</a></strong>
       </td>
       <td>
-        <p>{% include person id='joshmoore' %}<br>
+        {% include person id='LeeKamentsky' %}<br>
+        Anne Carpenter
+      </td>
+      <td>
+        {% include person id='0x00b1' %}
+      </td>
+      <td>
+        {% include person id='0x00b1' %}
+      </td>
+      <td>
+        <a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a>
+      </td>
+      <td>
+        See <a href="/people">Contributors</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {% include icon name='OMERO' %}
+      </td>
+      <td>
+        <strong><a href="/software/omero">OMERO</a></strong>
+      </td>
+      <td>
+        {% include person id='joshmoore' %}<br>
         Jean-Marie Burel<br>
         Chris Allan<br>
-        Jason Swedlow</p>
+        Jason Swedlow
       </td>
       <td>
-        <p>{% include person id='joshmoore' %}<br>
+        {% include person id='joshmoore' %}<br>
         Jean-Marie Burel<br>
-        Chris Allan</p>
+        Chris Allan
       </td>
       <td>
-        <p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a></p>
+        <a href="https://github.com/openmicroscopy/openmicroscopy/graphs/contributors">Info on GitHub</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='Icy' %}</p>
+        {% include icon name='Icy' %}
       </td>
       <td>
-        <p><strong><a href="/software/icy">Icy</a></strong></p>
+        <strong><a href="/software/icy">Icy</a></strong>
       </td>
       <td>
-        <p>Stephane Dallongeville<br>
+        Stephane Dallongeville<br>
         {% include person id='Fab14' %}<br>
-        Jean-Christophe Olivo-Marin</p>
+        Jean-Christophe Olivo-Marin
       </td>
       <td>
-        <p>Stephane Dallongeville<br>
-        {% include person id='Fab14' %}</p>
+        Stephane Dallongeville<br>
+        {% include person id='Fab14' %}
       </td>
       <td>
-        <p>Stephane Dallongeville<br>
-        {% include person id='Fab14' %}</p>
+        Stephane Dallongeville<br>
+        {% include person id='Fab14' %}
       </td>
       <td>
-        <p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>{% include icon name='Alida' %}</p>
-      </td>
-      <td>
-        <p><strong><a href="/software/alida">Alida</a></strong></p>
-      </td>
-      <td>
-        <p>Stefan Posch<br>
-        Birgit Möller</p>
-      </td>
-      <td>
-        <p>Stefan Posch<br>
-        Birgit Möller</p>
-      </td>
-      <td>
-        <p>Stefan Posch<br>
-        Birgit Möller</p>
-      </td>
-      <td>
-        <p><a href="https://github.com/orgs/alida-hub/people">List on GitHub</a></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a></p>
+        <a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include icon name='MiToBo' %}</p>
+        {% include icon name='Alida' %}
       </td>
       <td>
-        <p><strong><a href="/plugins/mitobo">MiToBo</a></strong></p>
+        <strong><a href="/software/alida">Alida</a></strong>
       </td>
       <td>
-        <p>Stefan Posch<br>
-        Birgit Möller</p>
+      Stefan Posch<br>
+      Birgit Möller
       </td>
       <td>
-        <p>Stefan Posch<br>
-        Birgit Möller</p>
+      Stefan Posch<br>
+      Birgit Möller
       </td>
       <td>
-        <p>Stefan Posch<br>
-        Birgit Möller</p>
+      Stefan Posch<br>
+      Birgit Möller
       </td>
       <td>
-        <p><a href="https://github.com/orgs/mitobo-hub/people">List on GitHub</a></p>
+        <a href="https://github.com/orgs/alida-hub/people">List on GitHub</a>
       </td>
       <td>
-        <p><a href="https://github.com/mitobo-hub/mitobo/graphs/contributors">Info on GitHub</a></p>
+        <a href="https://github.com/alida-hub/alida/graphs/contributors">Info on GitHub</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {% include icon name='MiToBo' %}
+      </td>
+      <td>
+        <strong><a href="/plugins/mitobo">MiToBo</a></strong>
+      </td>
+      <td>
+      Stefan Posch<br>
+      Birgit Möller
+      </td>
+      <td>
+      Stefan Posch<br>
+      Birgit Möller
+      </td>
+      <td>
+      Stefan Posch<br>
+      Birgit Möller
+      </td>
+      <td>
+        <a href="https://github.com/orgs/mitobo-hub/people">List on GitHub</a>
+      </td>
+      <td>
+        <a href="https://github.com/mitobo-hub/mitobo/graphs/contributors">Info on GitHub</a>
       </td>
     </tr>
   </tbody>
@@ -510,7 +473,6 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
 {:/}
 
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.  
-<sup>2</sup> Barber leads development of the {% include github org='slim-curve' repo='slim-curve' label='SLIM Curve C library' %}; Rueden leads development of the {% include github org='slim-curve' repo='slim-plugin' label='SLIM Curve plugin for ImageJ' %}.
 
 ## Further reading
 

@@ -38,7 +38,7 @@ Adds a stylized notice.
       {%- when "android"    -%} #a4c639
       {%- when "fiji"       -%} #65a4e3
       {%- when "imagej"     -%} #fadd8d
-      {%- when "imagej-1.x" -%} #fadd8d
+      {%- when "imagej"     -%} #fadd8d
       {%- when "imagej2"    -%} #fadd8d
       {%- when "info"       -%} #67a1fe
       {%- when "linux"      -%} black

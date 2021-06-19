@@ -15,7 +15,7 @@ team-maintainers:
 website: https://mitobo.informatik.uni-halle.de/
 ---
 
-The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ](/software/imagej), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ.
+The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ2](/software/imagej2), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ2.
 
 To make use of MiToBo's functionality it can be enabled by [toggling the MiToBo update site](/update-sites).
 

@@ -8,7 +8,7 @@ section: Learn:ImageJ Basics:Supported Platforms
 {% endcapture %}
 {% include img src='icons/windows' align='right' width=150 caption=windows-caption %}
 
-{% include wikipedia title='Microsoft Windows' text='Windows' %} is {% include wikipedia title='Microsoft' text='Microsoft' %}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using [ImageJ](/software/imagej) on Windows systems.
+{% include wikipedia title='Microsoft Windows' text='Windows' %} is {% include wikipedia title='Microsoft' text='Microsoft' %}'s family of operating systems. It is [the most prevalent desktop computer platform](https://www.netmarketshare.com/operating-system-market-share.aspx). This page details issues specific to using ImageJ and friends on Windows systems.
 
 # Installation
 

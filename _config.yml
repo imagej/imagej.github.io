@@ -1,7 +1,7 @@
-name: ImageJ
-title: ImageJ
-description: ImageJ is an open source image processing program designed for scientific multidimensional images.
-image: /media/icons/imagej.png
+name: ImageJ Wiki
+title: ImageJ Wiki
+description: The ImageJ wiki is a community-edited knowledge base on topics relating to ImageJ, an open source image processing program designed for scientific multidimensional images.
+image: /media/icons/imagej2.png
 markdown: kramdown
 kramdown:
   syntax_highlighter: rogue
@@ -13,24 +13,21 @@ collections:
     permalink: /:path
 allow-jekyll-4: false
 projects:
-  - name: Fiji
-    description: the Fiji distribution of ImageJ
-    link: /software/fiji
   - name: ImageJ
-    description: the ImageJ project
+    description: the original version of ImageJ
     link: /software/imagej
-  - name: ImageJ 1.x
-    description: ImageJ 1.x, the original version of ImageJ
-    link: /software/imagej-1.x
   - name: ImageJ2
     description: the ImageJ2 platform
     link: /software/imagej2
-  - name: SCIFIO
-    description: the SCIFIO library for scientific image I/O
-    link: /libs/scifio
+  - name: Fiji
+    description: the Fiji distribution of ImageJ
+    link: /software/fiji
   - name: SciJava
     description: the core SciJava software libraries
     link: /libs/scijava
+  - name: SCIFIO
+    description: the SCIFIO library for scientific image I/O
+    link: /libs/scifio
 defaults:
   -
     scope:
@@ -43,7 +40,7 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      icon: /media/icons/imagej.png
+      icon: /media/icons/imagej2.png
   -
     scope:
       path: "_pages/contribute"
@@ -169,17 +166,17 @@ defaults:
       icon: /media/icons/fiji.svg
   -
     scope:
-      path: "_pages/software/imagej-1.x"
+      path: "_pages/software/imagej"
       type: pages
     values:
-      icon: /media/icons/imagej-1.x.png
-      project: ImageJ 1.x
+      icon: /media/icons/imagej.png
+      project: ImageJ
   -
     scope:
       path: "_pages/software/imagej2"
       type: pages
     values:
-      icon: /media/icons/imagej.png
+      icon: /media/icons/imagej2.png
       project: ImageJ2
   -
     scope:

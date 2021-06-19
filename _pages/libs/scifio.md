@@ -11,15 +11,15 @@ doi: 10.1186/s12859-016-1383-0
 
 ## Benefits of using SCIFIO
 
-SCIFIO is focused on robust and extensible support for reading and writing image file formats. Using it with ImageJ provides many advantages:
+SCIFIO is focused on robust and extensible support for reading and writing image file formats. Using it with ImageJ2 provides many advantages:
 
 -   There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path='File | Open'%} automatically.
 -   There are additional import options available via the {% include bc path='File | Import | Image...'%} command.
--   There is a [Bio-Formats](/formats/bio-formats) plugin for SCIFIO, included with the [Fiji](/software/fiji) distribution of ImageJ, that adds automatic support for over a hundred life sciences file formats.
--   Additional SCIFIO file format plugins can be dropped into ImageJ and will also work automatically.
--   Unlike the ImageJ 1.x TIFF implementation, SCIFIO's support for TIFF adheres to the specification, allowing to successfully read many more sorts of TIFFs.
+-   There is a [Bio-Formats](/formats/bio-formats) plugin for SCIFIO, included with the [Fiji](/software/fiji) distribution of ImageJ2, that adds automatic support for over a hundred life sciences file formats.
+-   Additional SCIFIO file format plugins can be added to your ImageJ2 installation and will also work automatically.
+-   Unlike [ImageJ](/software/imagej)'s TIFF implementation, SCIFIO's support for TIFF adheres to the specification, allowing to successfully read many more sorts of TIFFs.
 -   Similarly, SCIFIO supports more sorts of JPEG files since it uses its own JPEG decoder.
--   SCIFIO also ships with support for several QuickTime codecs, allowing ImageJ to read QuickTime MOV files even in 64-bit mode without QuickTime for Java.
+-   SCIFIO also ships with support for several QuickTime codecs, allowing ImageJ2 to read QuickTime MOV files even in 64-bit mode without QuickTime for Java.
 -   SCIFIO supports many additional open file formats out of the box:
     -   animated GIF
     -   animated PNG
@@ -33,7 +33,7 @@ SCIFIO is focused on robust and extensible support for reading and writing image
     -   OME-XML
     -   PCX
     -   PICT (even in 64-bit mode and/or without QuickTime for Java installed)
--   If SCIFIO cannot handle the image file, it falls back to ImageJ 1.x.
+-   If SCIFIO cannot handle the image file, it falls back to ImageJ.
 -   You can save to SCIFIO-supported file formats using the {% include bc path='File | Export | Image...'%} command. Supported formats for export include:
     -   APNG
     -   AVI

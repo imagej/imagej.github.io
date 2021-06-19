@@ -5,13 +5,13 @@ section: Learn:ImageJ Basics:Supported Platforms
 
 {% include img src='icons/pi' align='right' class="box" width=150 caption='Learn programming through fun, practical projects!' %}
 
-The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian' %} operating system, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/software/imagej) and [Fiji](/software/fiji) on Raspberry Pi systems.
+The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian' %} operating system, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/software/imagej), [ImageJ2](/software/imagej2), and [Fiji](/software/fiji) on Raspberry Pi systems.
 
 # Installation
 
-{% include aside content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides [ImageJ 1.x](/software/imagej-1.x) only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}
+{% include aside content='You might notice there is as an `imagej` package available from your package manager. Please be aware that this provides the original [ImageJ](/software/imagej) only, packaged by a third party. You will not have access to any [ImageJ2](/software/imagej2)-specific features such as [parameterized scripts](/scripting/parameters), and you will likely have permissions errors because it is a system-wide ImageJ installation.' %}
 
-The following steps describe how to install ImageJ on a Raspberry Pi:
+The following steps describe how to install Fiji on a Raspberry Pi:
 
 1.  Open the terminal.
 2.  Install Java 8 on your Pi (`sudo apt-get install openjdk-8-jre`).
@@ -19,9 +19,9 @@ The following steps describe how to install ImageJ on a Raspberry Pi:
 4.  Verify it works using `java -version`.
 5.  Download and install the [platform-independent "no JRE" distribution of Fiji](http://downloads.imagej.net/fiji/latest/fiji-nojre.zip).
 6.  Download the [ImageJ.sh](https://github.com/imagej/imagej/blob/master/bin/ImageJ.sh) shell script
-7.  Move the ImageJ.sh file to the Fiji.app folder
+7.  Move the `ImageJ.sh` file to the `Fiji.app` folder
 8.  Set the executable bit (`chmod +x ImageJ.sh`)
-9.  Run it (`./ImageJ.sh`) to launch ImageJ.
+9.  Run it (`./ImageJ.sh`) to launch Fiji.
 
 You may also need to disable (comment out) `assistive_technologies=org.GNOME.Accessibility.AtkWrapper` in `/etc/java-8-openjdk/accessibility.properties`.
 

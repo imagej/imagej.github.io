@@ -2,10 +2,10 @@
 title: ImageJA
 section: Explore:Libraries
 artifact: net.imagej:ij
-icon: /media/icons/imagej-1.x.png
+icon: /media/icons/imagej.png
 ---
 
-ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ 1.x](/software/imagej-1.x) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
+ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ](/software/imagej) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.
 
 {% include aside title="Old versions of `ij.jar`" content="
 * Versions up to 1.48q are [in the SciJava Maven repository](http://maven.scijava.org/content/repositories/releases/net/imagej/ij/).
@@ -14,19 +14,19 @@ ImageJA is a project that provides a clean [Git](/develop/git) history of the [I
 
 ## Why ImageJA?
 
-The [ImageJ 1.x](/software/imagej-1.x) project, developed by {% include person id='rasband' %}, lives in the {% include github org='imagej' repo='imagej1' label='imagej/imagej1 repository' %} on [GitHub](/develop/github). The `imagej1` repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
+The [ImageJ](/software/imagej) project, developed by {% include person id='rasband' %}, lives in the {% include github org='imagej' repo='imagej1' label='imagej/imagej1 repository' %} on [GitHub](/develop/github). The `imagej1` repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
 
--   ImageJ 1.x artifacts cannot be published easily to public repositories for use as a dependency downstream.
--   The `imagej1` repository's source code does not precisely correspond to ImageJ 1.x's actual releases. Hence, that repository does not have any [Git](/develop/git) release tags.
--   Developing ImageJ 1.x in an [IDE](/develop/ides) would be more convenient if it were structured as a Maven project.
+-   ImageJ cannot be published easily to public repositories for use as a dependency downstream.
+-   The `imagej1` repository's source code does not precisely correspond to ImageJ's actual releases. Hence, that repository does not have any [Git](/develop/git) release tags.
+-   Developing ImageJ in an [IDE](/develop/ides) would be more convenient if it were structured as a Maven project.
 
-The ImageJA project is an adjusted version of ImageJ 1.x which addresses the above limitations.
+The ImageJA project is an adjusted version of ImageJ which addresses the above limitations.
 
 ## How it works
 
-The [ij1-builds job on Travis CI](https://travis-ci.com/imagej/ij1-builds) polls the [ImageJ 1.x release notes page](https://wsr.imagej.net/notes.html) for updates. When something has changed, the job performs the following actions:
+The [ij1-builds job on Travis CI](https://travis-ci.com/imagej/ij1-builds) polls the [ImageJ release notes page](https://wsr.imagej.net/notes.html) for updates. When something has changed, the job performs the following actions:
 
-1.  Downloads the latest ImageJ 1.x source archive from the ImageJ 1.x website.
+1.  Downloads the latest ImageJ source archive from the ImageJ website.
 2.  Extracts the archive.
 3.  Restructures the source code into a Maven project.
     -   Sources are placed in `src/main/java`.
@@ -37,7 +37,7 @@ The push triggers the followup [job](https://travis-ci.org/imagej/ImageJA), whic
 
 ## Historical note
 
-ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510) as a *fork* of [ImageJ 1.x](/software/imagej-1.x); i.e., it was synchronized closely with ImageJ with a few changes on top:
+ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510) as a *fork* of [ImageJ](/software/imagej); i.e., it was synchronized closely with ImageJ with a few changes on top:
 
 -   When run as an applet, ImageJA is embedded.
 -   The internal structure of ImageJA's recorder allows command listeners to get much more fine-grained information.
@@ -52,4 +52,4 @@ ImageJA was originally [launched in 2005](https://list.nih.gov/cgi-bin/wa.exe?A2
     -   A little bug fix in StackWindow: if you have a 2D time lapse, ImageJ will still use the zSelector (rather than the tSelector).
     -   ImageJA can handle https:// URLs, too.
 
-However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [ImageJ Legacy](/libs/imagej-legacy) page for details.
+However, these days, needed changes to ImageJ are instead patched at runtime; see the [ImageJ Legacy](/libs/imagej-legacy) page for details.

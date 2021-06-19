@@ -11,7 +11,7 @@ SciJava is a collaboration of projects providing software for scientific
 computing—an effort to cooperate and reuse code when feasible.
 
 It is also a collection of foundational software libraries, upon which
-[ImageJ](/software/imagej) and [Fiji](/software/fiji) are built.
+[ImageJ2](/software/imagej2) and [Fiji](/software/fiji) are built.
 
 # The SciJava component collection
 
@@ -85,7 +85,7 @@ See the [Architecture](/develop/architecture) and [Governance](/contribute/gover
 
 # SciJava Common
 
-SciJava Common is a common library for [SciJava](/libs/scijava) software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ](/software/imagej) and [SCIFIO](/libs/scifio).
+SciJava Common is a common library for [SciJava](/libs/scijava) software. It provides a plugin framework, with an extensible mechanism for service discovery, backed by its own annotation processor, so that plugins can be loaded dynamically. It is used by both [ImageJ2](/software/imagej2) and [SCIFIO](/libs/scifio).
 
 ## Plugin framework
 
@@ -103,9 +103,9 @@ All program state, such as available plugins, is accessible from a root object k
 
 
 {% capture  content %}
-Whereas [ImageJ 1.x](/software/imagej-1.x) is a {% include wikipedia title='Singleton pattern' text='singleton'%}, with static methods to access much of its functionality, [ImageJ2](/software/imagej2) encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
+Whereas [ImageJ](/software/imagej) is a {% include wikipedia title='Singleton pattern' text='singleton'%}, with static methods to access much of its functionality, [ImageJ2](/software/imagej2) encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
 {% endcapture %}
-{% include notice icon="imagej-1.x" content=content %}ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {% include javadoc package='net/imagej' class='ImageJ' %} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [seams](http://c2.com/cgi/wiki?SoftwareSeam) in the right places so that behavior at every level can be customized and overridden.
+{% include notice icon="imagej" content=content %}ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {% include javadoc package='net/imagej' class='ImageJ' %} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [seams](http://c2.com/cgi/wiki?SoftwareSeam) in the right places so that behavior at every level can be customized and overridden.
 
 #### SciJava services
 

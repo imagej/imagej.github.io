@@ -4,7 +4,7 @@ section: Extend:Development
 ---
 
 
-[ImageJ](/software/imagej), and the [SciJava](/libs/scijava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+[ImageJ2](/software/imagej2), and the [SciJava](/libs/scijava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 ## Open source
 
@@ -32,7 +32,7 @@ Isaac Newton attributed his success to {% include wikipedia title='Standing on t
 
 One of the central goals of the [SciJava component collection](/develop/architecture) is to extend Java's mantra of "write once, run anywhere" in new directions: [ImageJ Ops](/libs/imagej-ops) for image processing algorithms, and [SCIFIO](/libs/scifio) for scientific image I/O.
 
-[ImageJ2](/software/imagej2) commands work not only in the [ImageJ](/software/imagej) user interface, but also from many [other applications](/software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
+[ImageJ2](/software/imagej2) commands work not only in the user interface, but also from many [other applications](/software) in the [SciJava ecosystem](SciJava), including [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [KNIME](/software/knime) and [Alida](/software/alida).
 
 ## Compatibility
 

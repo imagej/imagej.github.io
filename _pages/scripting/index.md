@@ -41,7 +41,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p><a href="/scripting/macro">ImageJ Macro</a></p>
       </td>
       <td>
-        <p>The <a href="/software/imagej-1.x">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
+        <p>The <a href="/software/imagej">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
       </td>
     </tr>
     <tr>

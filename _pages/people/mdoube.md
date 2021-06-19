@@ -8,4 +8,5 @@ forum: mdoube
 github: mdoube
 ---
 
-Michael is the project lead for the [BoneJ](/plugins/bonej) and [BoneJ2](/plugins/bonej) plugins for [ImageJ](/software/imagej).
+Michael is the project lead for the [BoneJ](/plugins/bonej) plugins for [ImageJ](/software/imagej),
+and [BoneJ2](/plugins/bonej) plugins for [ImageJ2](/software/imagej2).

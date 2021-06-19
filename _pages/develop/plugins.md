@@ -9,7 +9,7 @@ If you are interested in developing an **existing** plugin instead, see [Contrib
 
 If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
 
-For instructions on plugin development for [ImageJ 1.x](/software/imagej-1.x), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
+For instructions on plugin development for the original [ImageJ](/software/imagej), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
 
 ## Requirements
 
@@ -255,7 +255,7 @@ In addition to modifying and developing the source code itself, there are severa
 
 #### Update your POM
 
--   For your [parent pom](https://maven.apache.org/pom.html#inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#dependency-management) of a lot of common useful dependencies, including the entire [ImageJ software stack](/develop/architecture#definitions) and all [Fiji](/software/fiji) components. Try to use the newest available version of `pom-scijava`.
+-   For your [parent pom](https://maven.apache.org/pom.html#inheritance), we recommend that you extend [`pom-scijava`](https://github.com/scijava/pom-scijava). This will provide [dependency management](https://maven.apache.org/pom.html#dependency-management) of a lot of common useful dependencies, including the entire [ImageJ2 software stack](/develop/architecture#definitions) and all [Fiji](/software/fiji) components. Try to use the newest available version of `pom-scijava`.
 -   Update your [groupId](https://maven.apache.org/pom.html#maven-coordinates). ImageJ projects use a `net.imagej` groupId, while Fiji projects use `sc.fiji`—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
 -   Update your [artifactId](https://maven.apache.org/pom.html#maven-coordinates) to something appropriate based on the intended use of your project.
 -   Update your <name> and <description> to something appropriate for your new artifactId.

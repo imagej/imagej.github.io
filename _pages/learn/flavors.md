@@ -1,5 +1,5 @@
 ---
-title: ImageJ
+title: Flavors of ImageJ
 section: Learn:ImageJ Basics
 doi: 10.1002/mrd.22489
 
@@ -12,15 +12,9 @@ timeline-imagej:
 - 2008 | Fiji                  | TODO
 - 2009 | ImageJ2               | TODO
 - 2015 | ImageJFX              | TODO
-- 2020 | ImageJ.JS             | TODO
 ---
 
-
-ImageJ is an open source Java image processing program inspired by [NIH Image](/software/nih-image). It runs on any computer with a Java 1.8 or later virtual machine. [Downloadable distributions](/downloads) are available for Windows, macOS and Linux. ImageJ has a strong, established user base, with thousands of [plugins](/plugins) and [macros](/scripting/macro) for performing a wide variety of tasks.
-
-## Flavors
-
-There are a few different flavors of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#History) below.
+There are a many different derivatives of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#History) below.
 
 {::nomarkdown}
 <table>
@@ -34,49 +28,52 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <th>Status</th>
     </tr>
     <tr>
-      <td><img src="/media/icons/fiji.png" width="64"/></td>
-      <td><a href="/software/fiji">Fiji</a></td>
-      <td><a href="/people">Fiji contributors</a></td>
-      <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
-        <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ with
-        many plugins useful for scientific image analysis in fields such as life
-        sciences. It is actively maintained, with updates released
-        often.<br><br>We recommend Fiji as the preferred version of ImageJ.</td>
-      <td><a href="/people/dscho#a-short-story-about-fiji">Dec. 2007</a></td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td><img src="/media/icons/imagej.png" width="64"/></td>
-      <td><a href="/software/imagej2">ImageJ2</a></td>
-      <td><a href="/people">ImageJ developers</a></td>
-      <td>A new version of ImageJ targeting scientific multidimensional image
-        data. It is a complete rewrite of ImageJ, but includes <a
-        href="/software/imagej-1.x">ImageJ 1.x</a> with a compatibility layer,
-        so that old-style plugins and macros can run the same as always.
-        ImageJ2 provides several significant new features, such as an automatic
-        <a href="updater">updater</a>, and improved <a
-        href="scripting">scripting</a> capabilities.</td>
-      <td>Dec. 2009</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td><img src="/media/icons/imagej-1.x.png" width="64"/></td>
-      <td><a href="/software/imagej-1.x">ImageJ 1.x</a></td>
+      <td><img src="/media/icons/imagej2.png" width="64"/></td>
+      <td><a href="/software/imagej">ImageJ</a></td>
       <td>{% include person id='rasband' %}</td>
-      <td>A stable version of ImageJ which has been in development since 1997.
+      <td>The original version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
-        macros for performing a wide variety of tasks.</td>
+        macros for performing a wide variety of tasks. Sometimes referred to as
+        *the original ImageJ* or *ImageJ 1.x* for technical clarity, or
+        informally with the shorthands *ImageJ1* or *IJ1*.</td>
       <td>1997</td>
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej-1.x.png" width="64"/></td>
+      <td><img src="/media/icons/imagej2.png" width="64"/></td>
+      <td><a href="/software/imagej2">ImageJ2</a></td>
+      <td><a href="/people">ImageJ2 developers</a></td>
+      <td>A new version of ImageJ targeting scientific multidimensional image
+        data. It is a complete rewrite of the
+        <a href="/software/imagej">original ImageJ</a>, but includes the
+        original ImageJ with a compatibility layer, so that old-style plugins
+        and macros can run the same as always. ImageJ2 provides several
+        significant new features, such as an automatic
+        <a href="updater">updater</a>, and improved
+        <a href="scripting">scripting</a> capabilities.</td>
+      <td>Dec. 2009</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td><img src="/media/icons/fiji.png" width="64"/></td>
+      <td><a href="/software/fiji">Fiji</a></td>
+      <td><a href="/people">Fiji contributors</a></td>
+      <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
+        <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ
+        and ImageJ2 with many plugins useful for scientific image analysis in
+        fields such as life sciences. It is actively maintained, with updates
+        released often.</td>
+      <td><a href="/people/dscho#a-short-story-about-fiji">Dec. 2007</a></td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td><img src="/media/icons/imagej2.png" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
-      <td><a href="/people">ImageJ developers</a></td>
+      <td><a href="/people">{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</a></td>
       <td>ImageJA is a project that provides a clean <a href="/develop/git">Git</a>
-        history of ImageJ 1.x, with a proper 'pom.xml' file so that it can be used
-        with Maven without hassles.<br><br>It is what ImageJ2's legacy support
-        uses at its core.</td>
+        history of the original ImageJ, with a proper 'pom.xml' file so that it
+        can be used with Maven without hassles.<br><br>It is what ImageJ2's
+        legacy support uses at its core.</td>
       <td>Jul. 2005</td>
       <td>Active</td>
     </tr>
@@ -85,7 +82,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td><a href="/software/imagej-js">ImageJ.JS</a></td>
       <td>{% include person id='oeway' %}</td>
       <td>ImageJ.JS is a web version of <a href="/libs/imageja">ImageJA</a> that runs in the browser without installation,
-      compiled from Java to Javascript using the <a href="https://leaningtech.com/cheerpj/">Cheerpj compiler</a> and integrated with the <a href="/software/imjoy">ImJoy</a> plugin system. It's accessible from <a href="https://ij.imjoy.io">https://ij.imjoy.io</a> and also support mobile devices and tablets.
+      compiled from Java to JavaScript using the <a href="https://leaningtech.com/cheerpj/">Cheerpj compiler</a> and integrated with the <a href="/software/imjoy">ImJoy</a> plugin system. It's accessible from <a href="https://ij.imjoy.io">https://ij.imjoy.io</a> and also support mobile devices and tablets.
       </td>
       <td>2020</td>
       <td>Active</td>
@@ -120,7 +117,7 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td></td>
       <td><a href="http://www.rawak.de/ij2x/imagej2x.html">ImageJ2x</a></td>
       <td><a href="http://rawak.de/">Rawak Software</a></td>
-      <td>ImageJ2x is a fork of ImageJ 1.x, modified to use a Swing interface.</td>
+      <td>ImageJ2x is a fork of the original ImageJ, modified to use a Swing interface.</td>
       <td>Unknown</td>
       <td>Last update:<br>May 2015</td>
     </tr>
@@ -131,8 +128,8 @@ There are a few different flavors of ImageJ with very similar names, and some co
       <td><img src="/media/logos/eu-hou.png" width="64"/></td>
       <td><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></td>
       <td><a href="http://www.euhou.net/">EU-HOU</a></td>
-      <td>SalsaJ is a closed-source fork of ImageJ 1.x intended for use with
-        professional astronomy images. It was designed to be used in
+      <td>SalsaJ is a closed-source fork of the original ImageJ intended for
+        use with professional astronomy images. It was designed to be used in
         classrooms, and has been localized into over 30 different
         languages.</td>
       <td>Unknown</td>
@@ -208,6 +205,6 @@ Here is a timeline of software development related to ImageJ:
 
 {% include citation %}
 
-{% include citation id='software/imagej-1.x' %}
+{% include citation id='software/imagej' %}
 
 See also [Citing](/contribute/citing).

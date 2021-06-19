@@ -9,7 +9,7 @@ section: Contribute:Licensing
 -   For information on their *technical* structure, see [Architecture](/develop/architecture).
 -   For information on their *social* structure, see [Governance](/contribute/governance)." %}
 
-The [ImageJ](/software/imagej) project, and related projects in the
+The [ImageJ2](/software/imagej2) project, and related projects in the
 [SciJava](/libs/scijava) component collection, are licensed as
 [open source](/licensing/open-source) software (OSS) projects.
 
@@ -80,15 +80,15 @@ The following table summarizes the dominant license of each project's components
     </tr>
     <tr>
       <td colspan=14 style="text-align: center;">
-        <p><strong><a href="/software/imagej-1.x">ImageJ 1.x</a></strong></p>
+        <p><strong><a href="/software/imagej">ImageJ</a></strong></p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><img src="/media/icons/imagej-1.x.png" width="48"></p>
+        <p><img src="/media/icons/imagej.png" width="48"></p>
       </td>
       <td>
-        <p><strong><a href="/software/imagej-1.x">ImageJ 1.x</a></strong></p>
+        <p><strong><a href="/software/imagej">ImageJ</a></strong></p>
       </td>
       <td>
         <p><a href="https://imagej.nih.gov/ij/disclaimer.html">Disclaimer</a></p>
@@ -130,7 +130,7 @@ The following table summarizes the dominant license of each project's components
     </tr>
     <tr>
       <td colspan=14 style="text-align: center">
-        <p><strong><a href="/develop/architecture">ImageJ software stack</a></strong></p>
+        <p><strong><a href="/develop/architecture">ImageJ2 software stack</a></strong></p>
       </td>
     </tr>
     <tr>
@@ -190,7 +190,7 @@ The following table summarizes the dominant license of each project's components
     </tr>
     <tr>
       <td>
-        <p><img src="/media/icons/imagej.png" width="48"></p>
+        <p><img src="/media/icons/imagej2.png" width="48"></p>
       </td>
       <td>
         <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
@@ -402,15 +402,15 @@ The following table summarizes the dominant license of each project's components
 
 ## Exceptions
 
-Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ](/software/imagej) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ2](/software/imagej2) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
 
-## A note about ImageJ 1.x
+## A note about ImageJ
 
-The [ImageJ 1.x](/software/imagej-1.x) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ 1.x project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ 1.x as a whole decidedly unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
+The original [ImageJ](/software/imagej) project is developed at the National Institutes of Health, a United States government organization. Hence, pursuant to [U.S. copyright law Title 17, Section 105](http://www.copyright.gov/title17/92chap1.html#105), no copyright applies. However, that waiver of copyright applies only to U.S. law, and does not apply to other countries. Furthermore, the ImageJ project includes substantial effort and code from individuals who are not U.S. government employees, making the legal status of ImageJ as a whole unclear. For further reading, see the {% include wikipedia title='Copyright status of work by the U.S. government' text='Wikipedia article "Copyright status of work by the U.S. government"'%}.
 
 ## Developers: How to use this page
 
-If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [managing copyright information](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html). There are numerous tools for assisting in license management; in ImageJ projects, for example, the [license-maven-plugin](https://www.mojohaus.org/license-maven-plugin/) is used to maintain file-scope copyright notices.
+If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [managing copyright information](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html). There are numerous tools for assisting in license management; in SciJava projects, for example, the [license-maven-plugin](https://www.mojohaus.org/license-maven-plugin/) is used to maintain file-scope copyright notices.
 
 ### Linking to these libraries
 
@@ -418,4 +418,4 @@ If you are writing code (open source or not) that will use one or more of these 
 
 ### Applying these licenses
 
-If you are writing open source code and aren't sure how to license it, you can use this page to get a feel for how other ImageJ software layers are licensed, and thus what might be appropriate for your project. You can follow [general tutorials](http://opensource.org/faq#apply-license) on applying open source licenses, or use the fantastic [choosealicense.com](http://choosealicense.com/licenses/) to guide your choice (which also includes *How to apply this license* instructions for each license).
+If you are writing open source code and aren't sure how to license it, you can use this page to get a feel for how other software layers are licensed, and thus what might be appropriate for your project. You can follow [general tutorials](http://opensource.org/faq#apply-license) on applying open source licenses, or use the fantastic [choosealicense.com](http://choosealicense.com/licenses/) to guide your choice (which also includes *How to apply this license* instructions for each license).

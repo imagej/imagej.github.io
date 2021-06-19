@@ -6,7 +6,7 @@ section: Explore:Software:Fiji
 
 -   [ImageJ's Google+ page](https://plus.google.com/u/0/112060674582400644206/)
 -   [Fiji's Google+ page](https://plus.google.com/u/0/111207545597136714163/)
--   [ImageJ 1.x documentation](https://imagej.nih.gov/ij/index.html)
+-   [ImageJ website](https://imagej.nih.gov/ij/)
 -   [ImageJ User Manual](https://imagej.nih.gov/ij/docs/user-guide.pdf)
 -   [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
 -   [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)

@@ -23,4 +23,4 @@ And more particulary for
 
 The diagram below depicts the relation between the different classes composing ImageJ 1.x.
 
-<img src="/media/scripting/imagej-1.x-api-diagram.jpg" width="1100"/>
+<img src="/media/scripting/imagej-api-diagram.jpg" width="1100"/>

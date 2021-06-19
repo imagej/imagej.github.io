@@ -25,7 +25,7 @@ All examples presented on this page are always entire classes including a main m
 -   imglib2-ij (the ImageJ interaction)
 -   imglib2-realtransform (for example 8)
 -   scifio (for reading and writing files)
--   ij (ImageJ 1.x core, used for display)
+-   ij (ImageJ core, used for display)
 
 Alternately, you can access the examples from the {% include github org='imglib' repo='imglib2-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](/libs/imglib2/developing) for further details.
 

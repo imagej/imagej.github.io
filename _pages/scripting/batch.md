@@ -4,9 +4,6 @@ title: Batch Processing
 section: Extend:Scripting:Languages
 ---
 
-
-
-
 # Overview
 
 A fundamental benefit to creating [scripts and macros](/scripting) in [ImageJ](/software/imagej) is the ability to *reuse* their functionality *on more than one image*. Although this can be done manually, there are multiple ways to easily automate this batch processing.

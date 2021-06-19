@@ -22,7 +22,7 @@ Today, the [ImageJ team](/people) is pleased to announce a new public release ca
 
 ## Bug-fixes
 
--   We resolved a significant [memory leak](https://fiji.sc/bugzilla/show_bug.cgi?id=819) due to images not being closed properly. This was also causing naming errors (e.g., the second time you opened "Data" it would display a title "Data-1" even after closing the first image) and other terrible gotchas. As a consequence, the linkage between ImageJ2 and [ImageJ 1.x](/software/imagej-1.x) data structures maintained by the {% include github org='imagej' repo='imagej-legacy' label='legacy layer' %} is now more robust.
+-   We resolved a significant [memory leak](https://fiji.sc/bugzilla/show_bug.cgi?id=819) due to images not being closed properly. This was also causing naming errors (e.g., the second time you opened "Data" it would display a title "Data-1" even after closing the first image) and other terrible gotchas. As a consequence, the linkage between ImageJ2 and [ImageJ 1.x](/software/imagej) data structures maintained by the {% include github org='imagej' repo='imagej-legacy' label='legacy layer' %} is now more robust.
 -   We fixed several bugs in [SCIFIO](/libs/scifio); e.g., ImageJ slice labels should now be preserved after saving and reopening in TIFF format.
 -   Quite a few other small bug-fixes; for example, the languages shown in the `Languages` menu of the [Script Editor](/scripting/script-editor) now appear in a consistent and alphabetical order.
 

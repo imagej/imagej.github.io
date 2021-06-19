@@ -10,11 +10,11 @@ The ImageJ launcher is a native application for launching ImageJ.
 
 The launcher supports the following flavors of ImageJ:
 
--   [ImageJ 1.x](/software/imagej-1.x)
+-   [ImageJ](/software/imagej)
 -   [ImageJ2](/software/imagej2)
 -   [Fiji](/software/fiji)
 
-The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ 1.x, Fiji or ImageJ2 in it. It is used in the [Fiji](/software/fiji) distribution as well as in [ImageJ2](/software/imagej2).
+The launcher is a native executable whose purpose is to start up a Java Virtual Machine and run ImageJ, ImageJ2, or Fiji in it. It is used in the [Fiji](/software/fiji) distribution as well as in [ImageJ2](/software/imagej2).
 
 ## Source
 
@@ -53,7 +53,7 @@ The launcher can do all kinds of things, like:
 
 ## Download
 
-The launcher comes with ImageJ 1.x, ImageJ2 and Fiji.
+The launcher comes with ImageJ, ImageJ2 and Fiji.
 
 If you want to test the latest UNSTABLE version, it can downloaded here:
 

@@ -109,7 +109,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
 
 Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a "melting pot" for a high-level assessment of compatibility.
 
-The [SciJava component collection](/develop/architecture) uses a [melting pot script](https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh) to test components from its lowest-level libraries (e.g., [SciJava Common](/libs/scijava#scijava-common) and [ImgLib2](/libs/imglib2)) to its topmost applications (e.g., [ImageJ](/software/imagej) and [Fiji](/software/fiji)).
+The [SciJava component collection](/develop/architecture) uses a [melting pot script](https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh) to test components from its lowest-level libraries (e.g., [SciJava Common](/libs/scijava#scijava-common) and [ImgLib2](/libs/imglib2)) to its topmost applications (e.g., [ImageJ2](/software/imagej2) and [Fiji](/software/fiji)).
 
 ## Is SemVer transitive?
 

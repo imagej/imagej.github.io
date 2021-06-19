@@ -1,9 +1,9 @@
 ---
 section: Extend:Development:Tools:IDEs
-title: Developing ImageJ on the command line
+title: Developing ImageJ2 on the command line
 ---
 
-This article explains how to install and configure command line tools for use with [ImageJ](/software/imagej) development.
+This article explains how to install and configure command line tools for use with [ImageJ2](/software/imagej2) development.
 
 ## Install and configure command line tools
 
@@ -48,13 +48,13 @@ Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/dow
 
 ## Download the source
 
-    git clone git://github.com/imagej/imagej
+    git clone git://github.com/imagej/imagej2
 
 See the [Source Code](/develop/source) page for further details.
 
 ## Build the source
 
-    cd imagej
+    cd imagej2
     mvn
 
 ## Launch the program

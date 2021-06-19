@@ -3,11 +3,11 @@ title: Downloads
 description: This page provides download links for ImageJ.
 ---
 
-{% include aside icon="icons/imagej" title="Where is [ImageJ2](/software/imagej2)?" content="A standalone download of ImageJ2 is not yet available, due to how the core [ImageJ update sites](/update-sites) are currently structured. The ImageJ2 team is working hard to change this, but in the meantime, please use the [Fiji distribution of ImageJ](/software/fiji), which is built on ImageJ2 and bundles many additional useful plugins." %}
+{% include aside icon="icons/imagej2" title="Where is [ImageJ2](/software/imagej2)?" content="A standalone download of ImageJ2 is not yet available, due to how the core [ImageJ update sites](/update-sites) are currently structured. The ImageJ2 team is working hard to change this, but in the meantime, please use the [Fiji distribution of ImageJ](/software/fiji), which is built on ImageJ2 and bundles many additional useful plugins." %}
 
 Which distribution of ImageJ would you like to download?
 
-| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej-1.x.png){:width="96px"}<br>ImageJ 1.x](https://imagej.nih.gov/ij/download.html) |
+| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej.png){:width="96px"}<br>ImageJ](https://imagej.nih.gov/ij/download.html) |
 {:.plain.center.center-text}
 
 {% capture help-me-decide %}
@@ -33,8 +33,8 @@ table.help-me-decide li {
 </style>
 <table class="plain top help-me-decide">
 <tr>
-  <th class="center-text middle"><a href="/software/imagej-1.x">{% include img src="icons/imagej-1.x" width=24 %} ImageJ 1.x</a></th>
-  <th class="center-text middle"><a href="/software/imagej2">{% include img src="icons/imagej"  width=24 %} ImageJ2</a></th>
+  <th class="center-text middle"><a href="/software/imagej">{% include img src="icons/imagej" width=24 %} ImageJ</a></th>
+  <th class="center-text middle"><a href="/software/imagej2">{% include img src="icons/imagej2"  width=24 %} ImageJ2</a></th>
 </tr>
 <tr>
   <td><ul>
@@ -42,7 +42,7 @@ table.help-me-decide li {
     <li>Small download (81 MB)</li>
     <li>Simple software architecture is <a href="https://imagej.nih.gov/ij/developer/">approachable for non-programmers</a></li>
     <li>Often faster than Fiji, for the scenarios ImageJ supports</li>
-    <li><a href="/licensing/#a-note-about-imagej-1.x">No copyright whatsoever</a></li>
+    <li><a href="/licensing/#a-note-about-imagej">No copyright whatsoever</a></li>
     <li>Very stable and mature</li>
     <li><a href="/people/rasband">Responsive and experienced maintainer</a> fixes bugs quickly</li>
     <li>Runs natively on M1 (arm64) Macs</li>
@@ -52,7 +52,7 @@ table.help-me-decide li {
     <li>Robust <a href="/develop/architecture">software architecture</a></li>
     <li>Advanced <a href="/scripting">scripting</a> features</li>
     <li><a href="/licensing">Licensed as permissive open source</a></li>
-    <li><a href="/libs/imagej-legacy">Backwards compatible with ImageJ 1.x</a></li>
+    <li><a href="/libs/imagej-legacy">Backwards compatible with the original ImageJ</a></li>
     <li><a href="/plugins/updater">ImageJ Updater</a> lets you install plugins from <a href="/update-sites">ImageJ update sites</a></li>
     <li>Support for <a href="/learn/headless">headless execution</a></li>
     <li><a href="/scripting/python">Works from Python</a>, including from Jupyter Notebooks</li>
@@ -65,8 +65,8 @@ table.help-me-decide li {
 For a thorough discussion of the two projects and their differences, please read these papers:
 
 * {% include citation id='software/imagej2' %}
+* {% include citation id='learn/flavors' %}
 * {% include citation id='software/imagej' %}
-* {% include citation id='software/imagej-1.x' %}
 
 Still have questions? Ask on the [Image.sc Forum](https://forum.image.sc/tag/imagej)!
 {% endcapture %}

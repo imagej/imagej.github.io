@@ -275,7 +275,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='dietzc|dscho|ctrueden' %}</p>
       </td>
       <td>
-        <p><a href="/software/knime">KNIME</a>+<a href="/software/imagej">ImageJ</a></p>
+        <p><a href="/software/knime">KNIME</a>+<a href="/software/imagej2">ImageJ2</a></p>
       </td>
     </tr>
     <tr>
@@ -564,7 +564,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='jcschaff|ctrueden' %}</p>
       </td>
       <td>
-        <p><a href="/software/virtual-cell">Virtual Cell</a> + <a href="/software/imagej">ImageJ</a></p>
+        <p><a href="/software/virtual-cell">Virtual Cell</a> + <a href="/software/imagej2">ImageJ2</a></p>
       </td>
     </tr>
     <tr>

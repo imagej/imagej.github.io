@@ -27,7 +27,7 @@ For instance you might come across the `PrefService` responsible for the storage
 
 # Get an image and perform an action
 
-First we want to learn different ways to select an image and perform an action on it. In [ImageJ 1.x](/software/imagej-1.x) the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](/scripting/parameters):
+First we want to learn different ways to select an image and perform an action on it. In [ImageJ 1.x](/software/imagej) the image is represented by an [ImagePlus](http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html) object. The recommended way to select an ImagePlus object is to use [Script Parameters](/scripting/parameters):
 
     #@ ImagePlus imp
     #@ Integer(label='Filter radius',description='The sigma of the gaussian filter.',value=2) sig

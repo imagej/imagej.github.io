@@ -9,7 +9,7 @@ Even though one could use any Java library to present a graphical user interface
 
 <img src="/media/scripting/script-parameters.png" title="fig:Script-parameters.png" width="400" alt="Script-parameters.png" /> 
 
-[Script parameters](/scripting/parameters) are a fast, succinct option to make a GUI in ImageJ and beyond. Scripts written using the `#@` parameter syntax can also be consumed by other tools in the [SciJava](/libs/scijava) ecosystem, including [KNIME](/software/knime), [OMERO](/software/omero) and others. They are independent of user interface, meaning alternative GUIs coded in other frameworks—such as [ImageJFX](/software/imagejfx) coded using JavaFX—can also present a GUI for your plugin/script that matches the application.
+[Script parameters](/scripting/parameters) are a fast, succinct option to make a GUI in [ImageJ2](/software/imagej2) and beyond. Scripts written using the `#@` parameter syntax can also be consumed by other tools in the [SciJava](/libs/scijava) ecosystem, including [KNIME](/software/knime), [OMERO](/software/omero) and others. They are independent of user interface, meaning alternative GUIs coded in other frameworks—such as [ImageJFX](/software/imagejfx) coded using JavaFX—can also present a GUI for your plugin/script that matches the application.
 
 Each parameter (integer, string input, etc.) corresponds to a user interface element, and is created by using a generic notation in the form `#@ ParameterType variableName` that is put at the top of the script.
 
@@ -21,6 +21,6 @@ See the [script parameters](/scripting/parameters) page for further details.
 
 <img src="/media/scripting/multi-column-dialog.png" title="fig:Multi-column-dialog.png" width="300" alt="Multi-column-dialog.png" /> 
 
-The [GenericDialog](/scripting/generic-dialog) class—part of [ImageJ 1.x](/software/imagej-1.x)—offers more flexibility than the [script parameters](/scripting/parameters), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](/libs/scijava) tools such as [KNIME](/software/knime) or [ImageJFX](/software/imagejfx).
+The [GenericDialog](/scripting/generic-dialog) class—part of [ImageJ 1.x](/software/imagej)—offers more flexibility than the [script parameters](/scripting/parameters), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](/libs/scijava) tools such as [KNIME](/software/knime) or [ImageJFX](/software/imagejfx).
 
 See the [generic dialog](/scripting/generic-dialog) page for further details.

@@ -152,7 +152,7 @@ Note that [lossy compression is not suitable for quantitative image analysis](/i
 
 While ImageJ strives for [reproducible](/develop/architecture#reproducible-builds) analysis, there are many reasons results can differ. Check the following:
 
--   Ensure that the version of [ImageJ](/software/imagej) is exactly the same on both machines.
+-   Ensure that the version of ImageJ is exactly the same on both machines.
     -   Click the [status bar](/learn#the-status-bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
     -   See also [How can I verify that my ImageJ is really 100% up to date?](/learn/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date).
@@ -232,11 +232,11 @@ If you are already at the limits of your computer's physical memory, the next st
 
 This error usually means that your image planes are larger than the maximum supported size.
 
-[ImageJ 1.x](/software/imagej-1.x) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
+The [original ImageJ](/software/imagej) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
 
-If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ 1.x, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
+If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
 
-[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the [ImageJ 1.x](/software/imagej-1.x) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/people) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
+[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the original ImageJ user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/people) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
 
 ## UnsupportedClassVersionError
 

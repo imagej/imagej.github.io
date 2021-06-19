@@ -39,7 +39,7 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 
 ## Using this guide
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [debug an external Java application](#exercise-4-imagej-plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/software/imagej).
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, none explicitly use ImageJ. But once you learn how to [debug an external Java application](#exercise-4-imagej-plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/software/imagej).
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -214,7 +214,7 @@ I found our console service! Look: class org.scijava.console.DefaultConsoleServi
 Next, we want to run this plugin in ImageJ and see what happens:
 
 1.  On the command line, run `mvn clean install` from the `imagej-troubleshooting` directory, to build a `.jar`
-2.  Copy the produced jar (e.g. `target/imagej-troubleshooting-0.1.0-SNAPSHOT.jar`) to the `ImageJ.app/jars` directory of your ImageJ installation
+2.  Copy the produced jar (e.g. `target/imagej-troubleshooting-0.1.0-SNAPSHOT.jar`) to the `jars` directory of your ImageJ installation
 3.  Start ImageJ
 
 Note that the menu path of the plugin is specified in the class's annotation:

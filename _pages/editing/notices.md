@@ -107,7 +107,7 @@ by name, sans file extension.
 
 ### Project-specific commentary
 
-{% highlight liquid %}{% raw %}{% include notice icon="imagej"
+{% highlight liquid %}{% raw %}{% include notice icon="imagej2"
   content="This website documents the ImageJ ecosystem." %}{% endraw %}{% endhighlight %}
 {% include notice icon="imagej"
   content="This website documents the ImageJ ecosystem." %}
@@ -121,10 +121,10 @@ by name, sans file extension.
 
 --------------
 
-{% highlight liquid %}{% raw %}{% include notice icon="imagej-1.x"
-  content="ImageJ 1.x was first released in 1997." %}{% endraw %}{% endhighlight %}
-{% include notice icon="imagej-1.x"
-  content="ImageJ 1.x was first released in 1997." %}
+{% highlight liquid %}{% raw %}{% include notice icon="imagej"
+  content="ImageJ was first released in 1997." %}{% endraw %}{% endhighlight %}
+{% include notice icon="imagej"
+  content="ImageJ was first released in 1997." %}
 
 --------------
 

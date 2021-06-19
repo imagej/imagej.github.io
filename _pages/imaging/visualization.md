@@ -15,7 +15,7 @@ A [pseudocolor image](/imaging/color-image-processing#pseudo-color) is a single 
 
 The [LUT Menu](https://imagej.nih.gov/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
-Note: in the ImageJ 1.x user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels.
+{% include notice icon='note' content="In the ImageJ user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels." %}
 
 More information on this topic can be found on the [Color Image Processing](/imaging/color-image-processing) page.
 

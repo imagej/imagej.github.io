@@ -115,7 +115,7 @@ Do not expect to find the ImageJ sources after cloning {% include github org='im
 
 If you want to look at the source code to study how to program image analysis algorithms then you will need to clone other GitHub projects.
 
-The repository {% include github org='imagej' repo='imagej1' label='imagej/imagej1' %}, for example, contains the source code of [ImageJ 1.x](/software/imagej-1.x), but it does not use Maven. The [ImageJA](/libs/imageja) project at {% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %} is a Mavenized version of ImageJ 1.x with a clean Git history. For curious people like me: the "A" in ImageJA was originally used for "Applet" and to differentiate the project from ImageJ itself.
+The repository {% include github org='imagej' repo='imagej1' label='imagej/imagej1' %}, for example, contains the source code of [ImageJ 1.x](/software/imagej), but it does not use Maven. The [ImageJA](/libs/imageja) project at {% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %} is a Mavenized version of ImageJ 1.x with a clean Git history. For curious people like me: the "A" in ImageJA was originally used for "Applet" and to differentiate the project from ImageJ itself.
 
 {% include notice icon="info" content='Side note: I am not expert NetBeans user, therefore I could not figure out another way:
 

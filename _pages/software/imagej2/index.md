@@ -3,6 +3,7 @@ title: ImageJ2
 section: Explore:Software
 doi: 10.1186/s12859-017-1934-z
 artifact: net.imagej:imagej
+icon: /media/icons/imagej2.png
 ---
 
 {% include aside content="
@@ -15,29 +16,29 @@ artifact: net.imagej:imagej
 - **Unify** online resources to a central location for the ImageJ community.
 - **Lead** ImageJ development with a clear vision.
 
-See also [these presentation slides about ImageJ](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
+See also [these presentation slides about ImageJ2](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
-ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of [ImageJ 1.x](/software/imagej-1.x), to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of the [original ImageJ application](/software/imagej), to support the next generation of multidimensional scientific imaging.
 
-To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ 1.x user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
+To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
-The [Fiji](/software/fiji) distribution of ImageJ has been built on top of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
+The [Fiji](/software/fiji) project has been built on top of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
 
 
 ## Features of ImageJ2
 
 ImageJ2 provides a wealth of new features and capabilities:
 
--   The [ImageJ Updater](/plugins/updater) makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
+-   The [ImageJ Updater](/plugins/updater) makes it simple to stay up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
 -   New and enhanced file format support via the [SCIFIO](/libs/scifio) library ([see below](#improved-image-io-with-the-scifio-library)).
 -   More powerful [Script Editor](/scripting/script-editor) with support for several scripting languages.
 -   New commands:
-    -   {% include bc path='Plugins | Debug | Dump Stack'%} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.
-    -   {% include bc path='Plugins | Debug | System Information'%} for reporting on versions of installed plugins and libraries.
+    -   {% include bc path='Plugins | Debug | Dump Stack' %} for debugging when things {% include wikipedia title='Hang (computing)' text='hang' %}.
+    -   {% include bc path='Plugins | Debug | System Information' %} for reporting on versions of installed plugins and libraries.
 -   Use ImageJ2's N-dimensional [ImgLib2](/libs/imglib2)-based data structures (still in beta).
 -   Write parameterized commands and scripts:
     -   Typed inputs and outputs with no dependence on AWT user interface.
-    -   Mix and match ImageJ 1.x and ImageJ2 data structures.
+    -   Mix and match ImageJ and ImageJ2 data structures.
     -   Plugins appear in the menu automatically without plugins.config files.
     -   Reusable in many contexts: [KNIME](/software/knime), [CellProfiler](/software/cellprofiler), [OMERO](/software/omero), [headless](/learn/headless)...
 
@@ -45,7 +46,7 @@ ImageJ2 provides a wealth of new features and capabilities:
 
 <img src="/media/search-bar.png" width="600"/>
 
-The search bar finds commands, and can search the ImageJ wiki as well as the [ImageJ Forum](http://forum.imagej.net/) if you check those respective checkboxes.
+The search bar finds commands, and can search the ImageJ wiki as well as the [Image.sc Forum](http://forum.image.sc/) if you check those respective checkboxes.
 
 For power users and developers, the search bar supports execution of "code snippets"—single lines of code for performing tasks—by starting the query with `!`. Any code that works in the [Script Interpreter](/scripting/interpreter) should be usable as a code snippet.
 
@@ -53,7 +54,7 @@ Developers can extend the capabilities of the search bar by writing [Searcher](h
 
 ### Improved image I/O with the SCIFIO library
 
-ImageJ2 uses the [SCIFIO](/libs/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc path='Edit | Options | ImageJ2'%} and modifying the *Use SCIFIO when opening files* option.
+ImageJ2 uses the [SCIFIO](/libs/scifio) library (SCientific Image Format Input and Output) by default for most image input tasks. You can change this behavior at any time by running {% include bc path='Edit | Options | ImageJ2' %} and modifying the *Use SCIFIO when opening files* option.
 
 For further details, see the [SCIFIO](/libs/scifio) page.
 
@@ -65,8 +66,8 @@ The following software component libraries form the core of ImageJ2:
 
 -   [ImageJ Common](/libs/imagej-common) - The core image data model, using ImgLib2.
 -   [ImageJ Ops](/libs/imagej-ops) - An extensible framework for reusable image processing algorithms.
--   [ImageJ Updater](/plugins/updater) - A mechanism to update individual plugins and libraries within ImageJ.
--   [ImageJ Legacy](/libs/imagej-legacy) - Provides complete backwards compatibility with ImageJ 1.x.
+-   [ImageJ Updater](/plugins/updater) - A mechanism to update individual plugins and libraries within ImageJ2.
+-   [ImageJ Legacy](/libs/imagej-legacy) - Provides complete backwards compatibility with the original ImageJ.
 -   [SciJava Common](/libs/scijava#scijava-common) - The core frameworks for plugins, modules and the application itself.
 
 See the [Architecture](/develop/architecture) page for further details.
@@ -90,11 +91,9 @@ ImageJ2 is funded from a variety of sources. See the [Funding](/contribute/fundi
 
 ## Publications
 
-{% include citation %}
+* {% include citation %}
 
-{% include citation id='software/imagej' %}
-
-For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But we recommend both of the above for learning about ImageJ2 in depth.
+* {% include citation id='learn/flavors' %}
 
 ## Presentations
 

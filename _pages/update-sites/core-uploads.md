@@ -8,7 +8,7 @@ nav-title: Core Sites
 
 ## Introduction
 
-This tutorial explains how to upload changes to core [ImageJ](/software/imagej) and [Fiji](/software/fiji) libraries.
+This tutorial explains how to upload changes to core [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) libraries.
 
 The typical workflow is:
 
@@ -31,15 +31,14 @@ Because releases are tied to the source code (and the update site contents are n
 
 Source repository for each core update site:
 
-|                 |                                                                   |
-|-----------------|-------------------------------------------------------------------|
-| **Update Site** | **Source**                                                        |
-| ImageJ          | *master* branch of [ImageJ.git](https://github.com/imagej/imagej) |
-| Fiji            | *master* branch of [Fiji.git](https://github.com/fiji/fiji)       |
+| Update Site | Source                                                              |
+|-------------|---------------------------------------------------------------------|
+| ImageJ      | *master* branch of [imagej2.git](https://github.com/imagej/imagej2) |
+| Fiji        | *master* branch of [fiji.git](https://github.com/fiji/fiji)         |
 
 ## Getting started
 
-First of all, start the [updater](/plugins/updater) with {% include bc path='Help | Update'%} and click on the *Manage update sites* button:
+First of all, start the [updater](/plugins/updater) with {% include bc path='Help | Update' %} and click on {% include button label="Manage update sites" %}:
 
 <img src="/media/mamed-3.jpg" width="770"/>
 
@@ -47,7 +46,7 @@ From this dialog, you can edit the desired update site(s) to add your authentica
 
 ## Configuring Fiji update site
 
-The Fiji update site uses {% include wikipedia title='WebDAV' text='webDAV'%} authentication. To upload something, you will need to:
+The Fiji update site uses {% include wikipedia title='WebDAV' text='webDAV' %} authentication. To upload something, you will need to:
 
 -   Ask an administrator to create a WebDAV account for you, and grant permission for uploading to update.fiji.sc.
 
@@ -64,7 +63,7 @@ You can now close the *Manage update sites* window and go on to [ Uploading your
 
 ## Configuring the ImageJ update site
 
-The ImageJ update site uses {% include wikipedia title='Secure Shell' text='ssh'%} authentication. You will need a login with [the imageJ update site](http://update.imagej.net) that some administrator will have to add to the *ij-update* group.
+The ImageJ update site uses {% include wikipedia title='Secure Shell' text='ssh' %} authentication. You will need a login with [the imageJ update site](http://update.imagej.net) that some administrator will have to add to the *ij-update* group.
 
 In the *Manage update sites* dialog, on the ImageJ update site line, add the following information:
 
@@ -75,8 +74,8 @@ It should look like this:
 
 <img src="/media/update-sites/update-site-ij2-creds.png" width="770"/>
 
-You can now close the *Manage update sites* window and go on to [ Uploading your resources](#uploading-your-resources).
+You can now close the *Manage update sites* window and go on to [Uploading your resources](#uploading-your-resources).
 
 ## Uploading your resources
 
-See the [ Uploading files to your update site](/update-sites/setup#uploading-files-to-your-update-site) section of the set up and populate tutorial.
+See the [Uploading files to your update site](/update-sites/setup#uploading-files-to-your-update-site) section of the set up and populate tutorial.

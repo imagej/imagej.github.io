@@ -22,7 +22,7 @@ This hackathon focused on the [ImageJ Ops](/libs/imagej-ops) library, adding sup
 -   Several miscellaneous design improvements ([\#36](https://github.com/imagej/imagej-ops/pull/36), [6cb8b083](https://github.com/imagej/imagej-ops/commit/6cb8b0831f9f3fb6d27bfcf2ee509ca20688b5c4))
 -   See the [SCM history](https://github.com/imagej/imagej-ops/compare/master@%7B13-Sep-2014%7D...master@%7B20-Sep-2014%7D) for full details.
 
-All thresholding algorithms from [ImageJ 1.x](/software/imagej-1.x) have been ported to Ops. Available thresholding methods now include:
+All thresholding algorithms from [ImageJ 1.x](/software/imagej) have been ported to Ops. Available thresholding methods now include:
 
 {::nomarkdown}
 <table>

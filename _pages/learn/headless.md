@@ -4,7 +4,7 @@ nav-links: true
 nav-title: Headless
 ---
 
-[ImageJ 1.x](/software/imagej-1.x) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
+[ImageJ](/software/imagej) was never meant as anything else than a desktop application with one user in front of one screen attached to one computer.
 
 However, it acquired [macro](/scripting/macro) capabilities, a [batch mode](/scripting/batch) for such macros, and even [scripting](/scripting) support.
 
@@ -12,10 +12,10 @@ Naturally, users want to execute such [macros](/scripting/macro) or [scripts](/s
 
 # `--headless` mode
 
-To address all of these needs, [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ 1.x's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
+To address all of these needs, [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
 
 **Shortcoming:** There are plugins which are even more bound to a GUI than
-ImageJ 1.x is. Naturally, these plugins will still try to instantiate GUI
+ImageJ is. Naturally, these plugins will still try to instantiate GUI
 elements when being called in headless mode, failing.
 
 ## Running scripts in headless mode
@@ -60,7 +60,7 @@ would override ImageJ's versions.
 
 Nowadays, we use [Javassist](/develop/javassist) for run-time patching, through
 the
-{% include github org='imagej' repo='ij1-patcher' label='ImageJ 1.x patcher' %}
+{% include github org='imagej' repo='ij1-patcher' label='ImageJ patcher' %}
 project. You do not need to do anything special to
 take advantage of this feature, except pass the `--headless` flag when
 launching ImageJ from the command line.
@@ -74,7 +74,7 @@ Java *does* support a headless mode via the `java.awt.headless` property; settin
 
 Unfortunately, with X11-based Java (such as on Linux, which is the most prevalent platform for running clusters), headless mode does not allow to instantiate any GUI components that would want to display text. The reason is that the font-metrics on X11 are provided by the X11 server (and are indeed different between servers) and therefore the dimensions of such elements simply cannot be calculated without a graphical desktop.
 
-Since ImageJ 1.x was devised as a desktop application, everything -- including macros -- works through the GUI. For example, a simple `run("Open...");` will look for the action in the menu.
+Since ImageJ was devised as a desktop application, everything -- including macros -- works through the GUI. For example, a simple `run("Open...");` will look for the action in the menu.
 
 On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 

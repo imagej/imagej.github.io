@@ -26,7 +26,7 @@ Something else we started to work on: we identified the places to change for [Im
 
 Due to ImgLib2's interface-drive design, it is very easy to wrap any data structure (e.g. Icy's, Alida's, ImageJ 1.x', etc) to conform with ImgLib2's interfaces, so all of the algorithms implemented to work with ImgLib2 interfaces can run on all of aforementioned data structures.
 
-Hence, once Trainable Segmentation is ported to work on ImgLib2 structures, it will be much more useful: it will no longer be limited to [ImageJ 1.x](/software/imagej-1.x)!
+Hence, once Trainable Segmentation is ported to work on ImgLib2 structures, it will be much more useful: it will no longer be limited to [ImageJ 1.x](/software/imagej)!
 
 All in all, a very productive hackathon!
 

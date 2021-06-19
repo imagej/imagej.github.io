@@ -78,7 +78,7 @@ The first goal is to get your extension into the hands of users.
       </td>
       <td style="background: #dfd; vertical-align: top">
         <ul>
-	  <li> <b><a href="/software/imagej-1.x">ImageJ 1.x</a></b> does not support update sites; users will need to use <b><a href="/software/imagej2">ImageJ2</a></b> (or <b><a href="/software/fiji">Fiji</a></b>: "Fiji Is Just ImageJ2"). You can <b><a href="/plugins/updater#bootstrapping-the-updater">upgrade an ImageJ 1.x installation to ImageJ2</a></b>.</li>
+	  <li> <b>The <a href="/software/imagej">original ImageJ</a></b> does not support update sites; users will need to use <b><a href="/software/imagej2">ImageJ2</a></b> (or <b><a href="/software/fiji">Fiji</a></b>: "Fiji Is Just ImageJ2").</li>
           <li> You will miss out on the <b><a href="/develop/project-management">tools and tests</a></b> used to ensure compatibility and reproducibility, making undetected breakages much more likely (at the least).</li>
         </ul>
       </td>
@@ -179,7 +179,7 @@ If you want to facilitate good science, please [share your source code](/licensi
 <li> GitHub greatly facilitates collaboration: sharing ideas and patches.</li>
 <li> Seriously: Git and GitHub are amazing tools, and you will be orders of magnitude less effective without them.</li>
 <li> "Doing it in public" is a great way to <b><a rel="nofollow" class="external text" href="http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">stop sucking and be awesome instead</a></b>.</li>
-<li> All of <b><a href="/software/imagej" title="ImageJ">ImageJ</a></b>, <b><a href="/software/fiji" title="Fiji">Fiji</a></b> and related <b><a href="/libs/scijava" title="SciJava">SciJava</a></b> projects are <b><a href="/develop/source" title="Source code">hosted on GitHub</a></b>.</li></ul>
+<li> All of <b><a href="/software/imagej" title="ImageJ">ImageJ</a></b>, <b><a href="/software/imagej2" title="ImageJ2">ImageJ2</a></b>, <b><a href="/software/fiji" title="Fiji">Fiji</a></b> and related <b><a href="/libs/scijava" title="SciJava">SciJava</a></b> projects are <b><a href="/develop/source" title="Source code">hosted on GitHub</a></b>.</li></ul>
 </td>
 <td style="background: #dfd; vertical-align: top">
 <ul><li> Git has a steep learning curve—the <b><a rel="nofollow" class="external text" href="https://desktop.github.com/">GitHub Desktop</a></b> client makes things easier.</li></ul>
@@ -353,7 +353,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <li> The ImageJ developers hope to unify these two wikis in the future.</li></ul>
 </td>
 <td style="vertical-align: top">
-<ul><li> The IIDP documents only <a href="/software/imagej-1.x" title="ImageJ 1.x">ImageJ 1.x</a>, not <a href="/software/imagej2" title="ImageJ2">ImageJ2</a>.</li>
+<ul><li> The IIDP documents only the original <a href="/software/imagej" title="ImageJ">ImageJ</a>, not <a href="/software/imagej2" title="ImageJ2">ImageJ2</a>.</li>
 <li> You must explicitly request an IIDP account from an administrator.</li>
 <li> The wiki uses Plone, a lesser known CMS engine.</li></ul>
 </td></tr>
@@ -361,7 +361,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <td colspan="3" style="background: white; border: none; height: 1em">
 </td></tr>
 <tr>
-<td colspan="3" style="background: lightgray"> <b>Add a page to the ImageJ 1.x website</b>
+<td colspan="3" style="background: lightgray"> <b>Add a page to the ImageJ website</b>
 </td></tr>
 <tr>
 <td><b>Steps</b>
@@ -372,14 +372,14 @@ Useful extensions deserve corresponding documentation explaining how to use them
 </td></tr>
 <tr>
 <td style="vertical-align: top">
-<ul><li> Prepare an HTML page modeled after the <a rel="nofollow" class="external text" href="https://imagej.nih.gov/ij/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
-<li> Email it to <a href="/people/rasband" title="Wayne Rasband">Wayne Rasband</a>, the developer of ImageJ 1.x, and sole maintainer of the <a rel="nofollow" class="external text" href="https://imagej.nih.gov/ij">ImageJ 1.x website</a>.</li></ul>
+<ul><li> Prepare an HTML page modeled after the <a rel="nofollow" class="external text" href="https://imagej.nih.gov/ij/plugins/index.html">list of ImageJ plugins</a>.</li>
+<li> Email it to <a href="/people/rasband" title="Wayne Rasband">Wayne Rasband</a>, the developer of ImageJ, and sole maintainer of the <a rel="nofollow" class="external text" href="https://imagej.nih.gov/ij">ImageJ website</a>.</li></ul>
 </td>
 <td style="vertical-align: top">
-<ul><li> Listed on the ImageJ 1.x website.</li></ul>
+<ul><li> Listed on the ImageJ website.</li></ul>
 </td>
 <td style="vertical-align: top">
-<ul><li> Not collaborative. No one else can edit the ImageJ 1.x website—not even you!</li>
+<ul><li> Not collaborative. No one else can edit the ImageJ website—not even you!</li>
 <li> Hence, turnaround time on updates is longer.</li>
 <li> The list of plugins there is extensive and difficult to sort through.</li></ul>
 </td></tr>

@@ -4,15 +4,15 @@ title: Development
 section: Extend:Develop
 ---
 
-{% include notice icon="info" content='If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ\'s [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java.' %} 
-This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](/plugins).
+{% include notice icon="info" content="If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ2's [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java." %} 
+This page provides an overview of ImageJ2 from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [plugins](/plugins).
 
 ## Quick start
 
--   **Learn to write [ImageJ scripts](/scripting)** from the [ImageJ tutorial notebooks](/tutorials).
--   **Learn to use ImageJ from Java** with the [ImageJ tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
+-   **Learn to write [scripts](/scripting)** from the [tutorial notebooks](/tutorials).
+-   **Learn to use ImageJ2 from Java** with the [tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
-## What is ImageJ?
+## What is ImageJ2?
 
 {::nomarkdown}
 <table style="width: 60%; font-size: large; margin-left: 25px; margin-top: 5px;">
@@ -70,21 +70,21 @@ public void loadAndDisplay(File file) {
 
 ## Project structure
 
-ImageJ is divided into three parts---ImageJ, ImgLib2, and SciJava---with responsibilities as follows:
+ImageJ2 is divided into three parts---ImageJ2, ImgLib2, and SciJava---with responsibilities as follows:
 
 {::nomarkdown}
 <table>
   <thead>
     <tr class="header">
       <th style="font-size: 56px; width: 350px">
-        {% include icon name='ImageJ' size='72px' %}<a href="/software/imagej">ImageJ</a>
+        {% include icon name='ImageJ2' size='72px' %}<a href="/software/imagej2">ImageJ2</a>
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <span style="font-size: large">ImageJ provides <strong>image-specific components</strong></span>
+        <span style="font-size: large">ImageJ2 provides <strong>image-specific components</strong></span>
         <ul>
           <li><a href="/libs/imagej-common">ImageJ Common</a></li>
           <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
@@ -130,41 +130,41 @@ ImageJ is divided into three parts---ImageJ, ImgLib2, and SciJava---with respons
 </table>
 {:/}
 
-For full details on the technical structure of ImageJ, see the [Architecture](architecture) page.
+For full details on the technical structure of ImageJ2, see the [Architecture](architecture) page.
 
 ## Key developer tools
 
-There are four indispensable software development tools on which ImageJ relies:
+There are four indispensable software development tools on which ImageJ2 relies:
 
-| {% include icon name='GitHub' %}  | [GitHub](github)   | A website which hosts all of ImageJ's [source code](source) and [issue trackers](project-management#issue-tracking). GitHub is ImageJ's nexus of online collaboration (i.e., "social coding"). |
+| {% include icon name='GitHub' %}  | [GitHub](github)   | A website which hosts all the [source code](source) and [issue trackers](project-management#issue-tracking). GitHub is the ImageJ community's nexus of online collaboration (i.e., "social coding"). |
 | {% include icon name='Git' %}     | [Git](git)         | A first-class {% include wikipedia title='Distributed version control' text='distributed'%} {% include wikipedia title='Version control' text='version control'%} system. Git saves "snapshots" of the source code, keeping a history of changes. |
 | {% include icon name='Maven' %}   | [Maven](maven)     | A {% include wikipedia title='Build automation' text='build automation'%} tool with great dependency management. Maven converts source code into program binaries, and much more. |
-| {% include icon name='Eclipse' %} | [Eclipse](eclipse) | An [integrated development environment](ides) (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br>Although: ImageJ can be developed using [*any* IDE](ides) which supports [Maven](maven). |
+| {% include icon name='Eclipse' %} | [Eclipse](eclipse) | An [integrated development environment](ides) (IDE) used by many developers in this community. Eclipse makes it much easier to explore and edit the source code.<br>Although: ImageJ and friends can be developed using [*any* IDE](ides) which supports [Maven](maven). |
 
 See the [Project management](project-management) page for further details.
 
 ## Source code
 
-[ImageJ](/software/imagej) and related [SciJava](/libs/scijava) software projects are [open source](/licensing/open-source). The code is organized into [well-separated](architecture#modularity) projects.
+[ImageJ2](/software/imagej2) and related [SciJava](/libs/scijava) software projects are [open source](/licensing/open-source). The code is organized into [well-separated](architecture#modularity) projects.
 
 See the [source code](source) page for further details.
 
 ## Tutorials
 
-Start with the [ImageJ tutorial notebooks](/tutorials)!
+Start with the [tutorial notebooks](/tutorials)!
 
 {::nomarkdown}
 <table class="top striped-columns">
   <tbody>
     <tr>
-      <th>Learning the ImageJ API</th>
-      <th>ImageJ plugins</th>
-      <th>The Fiji distribution of ImageJ</th>
+      <th>Learning the ImageJ2 API</th>
+      <th>ImageJ2 plugins</th>
+      <th>The Fiji distribution of ImageJ2</th>
     </tr>
     <tr>
       <td>
         <ul>
-          <li><a href="https://github.com/imagej/tutorials">ImageJ tutorials</a></li>
+          <li><a href="https://github.com/imagej/tutorials">ImageJ2 tutorials</a></li>
           <li><a href="/libs/imglib2/examples">ImgLib2 Examples</a></li>
           <li><a href="ij1-ij2-cheat-sheet">ImageJ1-ImageJ2 cheat sheet</a></li>
         </ul>

@@ -6,7 +6,7 @@ Last October we ran the [unit tests for ImageJ 1.x](/develop/ij1-unit-tests) aga
 
 Once again, an increasing number of tests are failing with each release, which indicates changing behavior creeping into the code.
 
-[Jenkins](/develop/jenkins) now [runs these tests automatically](http://jenkins.imagej.net/job/ImageJ1-unit-tests/) whenever a new version of [ImageJ 1.x](/software/imagej-1.x) is released, and reports failures to the [imagej-devel mailing list](/discuss/mailing-lists), so that we become aware as early as possible when regression bugs have been introduced.
+[Jenkins](/develop/jenkins) now [runs these tests automatically](http://jenkins.imagej.net/job/ImageJ1-unit-tests/) whenever a new version of [ImageJ 1.x](/software/imagej) is released, and reports failures to the [imagej-devel mailing list](/discuss/mailing-lists), so that we become aware as early as possible when regression bugs have been introduced.
 
 {::nomarkdown}
 <table>
