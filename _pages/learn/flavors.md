@@ -14,7 +14,7 @@ timeline-imagej:
 - 2015 | ImageJFX              | TODO
 ---
 
-There are a many different derivatives of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#History) below.
+There are a many different derivatives of ImageJ with very similar names, and some confusion is inevitable. Below is a table which should help to clarify the purpose of each. For the historical context of these projects, see [History](#history) below.
 
 {::nomarkdown}
 <table>
