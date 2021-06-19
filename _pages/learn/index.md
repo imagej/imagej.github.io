@@ -46,7 +46,7 @@ On macOS, the menu bar will appear on the top of the screen (as with all macOS a
 {% capture imagej-command-finder %}
 The original version of ImageJ does not have a search bar, but you can bring up the Command Finder, with some similar capabilities, by pressing the same keyboard shortcut: {% include key keys='ctrlcmd|L' %}
 {% endcapture %}
-{% include icon='imagej' content=imagej-command-finder %}
+{% include notice icon='imagej' content=imagej-command-finder %}
 
 The search bar is a convenient way to quickly find and launch commands, search for documentation, and more. The search panel can be brought up by clicking and typing into the search bar, or via the keyboard shortcut {% include key key='ctrlcmd|L' %}
 
