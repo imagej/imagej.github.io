@@ -28,7 +28,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <th>Status</th>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej2.png" width="64"/></td>
+      <td><img src="/media/icons/imagej.png" width="64"/></td>
       <td><a href="/software/imagej">ImageJ</a></td>
       <td>{% include person id='rasband' %}</td>
       <td>The original version of ImageJ which has been in development since 1997.
@@ -67,7 +67,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej2.png" width="64"/></td>
+      <td><img src="/media/icons/imagej.png" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
       <td><a href="/people">{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</a></td>
       <td>ImageJA is a project that provides a clean <a href="/develop/git">Git</a>
