@@ -14,20 +14,18 @@ icon: /media/icons/imagej2.png
 - **Broaden** ImageJ's usefulness and relevance across many disciplines of the scientific community.
 - **Maintain** backwards compatibility with existing ImageJ functionality.
 - **Unify** online resources to a central location for the ImageJ community.
-- **Lead** ImageJ development with a clear vision.
 
 See also [these presentation slides about ImageJ2](/presentations/2015-09-03-imagej2-and-fiji/#/4)." %}
 
-ImageJ2 is a new version of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of the [original ImageJ application](/software/imagej), to support the next generation of multidimensional scientific imaging.
+ImageJ2 is a rewrite of [ImageJ](/software/imagej) for multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of the [original ImageJ application](/software/imagej), to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
 The [Fiji](/software/fiji) project has been built on top of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [Updater](/plugins/updater) and [Launcher](/learn/launcher), were originally developed as part of Fiji. 
 
-
 ## Features of ImageJ2
 
-ImageJ2 provides a wealth of new features and capabilities:
+ImageJ2 provides many new features and capabilities:
 
 -   The [ImageJ Updater](/plugins/updater) makes it simple to stay up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
 -   New and enhanced file format support via the [SCIFIO](/libs/scifio) library ([see below](#improved-image-io-with-the-scifio-library)).
