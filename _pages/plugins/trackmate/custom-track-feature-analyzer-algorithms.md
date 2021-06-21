@@ -35,11 +35,15 @@ All the track feature analyzers must implement {% include github org='fiji' repo
 
 The only changes for us are two methods specific to tracks:
 
-    public void process( final Collection< Integer > trackIDs, final Model model );
+```java
+public void process( final Collection< Integer > trackIDs, final Model model );
+```
 
 the does the actual feature calculation for the specified tracks, and
 
-    public boolean isLocal();
+```java
+public boolean isLocal();
+```
 
 that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](/plugins/trackmate/custom-edge-feature-analyzer-algorithms#isLocal.28.29).
 
@@ -47,10 +51,12 @@ that specified whether the calculation of the features for one track affects onl
 
 Like all TrackMate modules, you need to annotate your class to make it discoverable by TrackMate. It takes the following shape:
 
-    @Plugin( type = TrackAnalyzer.class )
-    public class TrackStartSpotAnalyzer implements TrackAnalyzer
-    {
-            // etc...
+```java
+@Plugin( type = TrackAnalyzer.class )
+public class TrackStartSpotAnalyzer implements TrackAnalyzer
+{
+        // etc...
+```
 
 and that's good enough.
 
@@ -58,90 +64,92 @@ and that's good enough.
 
 Declaring the features your provide is done as before. This time, a single analyzer returns 6 values, so you need to declare them. Here is the related code:
 
-    @Plugin( type = TrackAnalyzer.class )
-    public class TrackStartSpotAnalyzer implements TrackAnalyzer
+```java
+@Plugin( type = TrackAnalyzer.class )
+public class TrackStartSpotAnalyzer implements TrackAnalyzer
+{
+
+    private static final String KEY = "TRACK_START_SPOT_ANALYZER";
+
+    public static final String TRACK_START_X = "TRACK_START_X";
+
+    public static final String TRACK_START_Y = "TRACK_START_Y";
+
+    public static final String TRACK_START_Z = "TRACK_START_Z";
+
+    public static final String TRACK_STOP_X = "TRACK_STOP_X";
+
+    public static final String TRACK_STOP_Y = "TRACK_STOP_Y";
+
+    public static final String TRACK_STOP_Z = "TRACK_STOP_Z";
+
+    private static final List< String > FEATURES = new ArrayList< String >( 6 );
+
+    private static final Map< String, String > FEATURE_SHORT_NAMES = new HashMap< String, String >( 6 );
+
+    private static final Map< String, String > FEATURE_NAMES = new HashMap< String, String >( 6 );
+
+    private static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 6 );
+
+    static
     {
+        FEATURES.add( TRACK_START_X );
+        FEATURES.add( TRACK_START_Y );
+        FEATURES.add( TRACK_START_Z );
+        FEATURES.add( TRACK_STOP_X );
+        FEATURES.add( TRACK_STOP_Y );
+        FEATURES.add( TRACK_STOP_Z );
 
-        private static final String KEY = "TRACK_START_SPOT_ANALYZER";
+        FEATURE_NAMES.put( TRACK_START_X, "Track start X" );
+        FEATURE_NAMES.put( TRACK_START_Y, "Track start Y" );
+        FEATURE_NAMES.put( TRACK_START_Z, "Track start Z" );
+        FEATURE_NAMES.put( TRACK_STOP_X, "Track stop X" );
+        FEATURE_NAMES.put( TRACK_STOP_Y, "Track stop Y" );
+        FEATURE_NAMES.put( TRACK_STOP_Z, "Track stop Z" );
 
-        public static final String TRACK_START_X = "TRACK_START_X";
+        FEATURE_SHORT_NAMES.put( TRACK_START_X, "X start" );
+        FEATURE_SHORT_NAMES.put( TRACK_START_Y, "Y start" );
+        FEATURE_SHORT_NAMES.put( TRACK_START_Z, "Z start" );
+        FEATURE_SHORT_NAMES.put( TRACK_STOP_X, "X stop" );
+        FEATURE_SHORT_NAMES.put( TRACK_STOP_Y, "Y stop" );
+        FEATURE_SHORT_NAMES.put( TRACK_STOP_Z, "Z stop" );
 
-        public static final String TRACK_START_Y = "TRACK_START_Y";
+        FEATURE_DIMENSIONS.put( TRACK_START_X, Dimension.POSITION );
+        FEATURE_DIMENSIONS.put( TRACK_START_Y, Dimension.POSITION );
+        FEATURE_DIMENSIONS.put( TRACK_START_Z, Dimension.POSITION );
+        FEATURE_DIMENSIONS.put( TRACK_STOP_X, Dimension.POSITION );
+        FEATURE_DIMENSIONS.put( TRACK_STOP_Y, Dimension.POSITION );
+        FEATURE_DIMENSIONS.put( TRACK_STOP_Z, Dimension.POSITION );
+    }
+        
+    /*
+     * FEATUREANALYZER METHODS
+     */
 
-        public static final String TRACK_START_Z = "TRACK_START_Z";
+    @Override
+    public List< String > getFeatures()
+    {
+        return FEATURES;
+    }
 
-        public static final String TRACK_STOP_X = "TRACK_STOP_X";
+    @Override
+    public Map< String, String > getFeatureShortNames()
+    {
+        return FEATURE_SHORT_NAMES;
+    }
 
-        public static final String TRACK_STOP_Y = "TRACK_STOP_Y";
+    @Override
+    public Map< String, String > getFeatureNames()
+    {
+        return FEATURE_NAMES;
+    }
 
-        public static final String TRACK_STOP_Z = "TRACK_STOP_Z";
-
-        private static final List< String > FEATURES = new ArrayList< String >( 6 );
-
-        private static final Map< String, String > FEATURE_SHORT_NAMES = new HashMap< String, String >( 6 );
-
-        private static final Map< String, String > FEATURE_NAMES = new HashMap< String, String >( 6 );
-
-        private static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 6 );
-
-        static
-        {
-            FEATURES.add( TRACK_START_X );
-            FEATURES.add( TRACK_START_Y );
-            FEATURES.add( TRACK_START_Z );
-            FEATURES.add( TRACK_STOP_X );
-            FEATURES.add( TRACK_STOP_Y );
-            FEATURES.add( TRACK_STOP_Z );
-
-            FEATURE_NAMES.put( TRACK_START_X, "Track start X" );
-            FEATURE_NAMES.put( TRACK_START_Y, "Track start Y" );
-            FEATURE_NAMES.put( TRACK_START_Z, "Track start Z" );
-            FEATURE_NAMES.put( TRACK_STOP_X, "Track stop X" );
-            FEATURE_NAMES.put( TRACK_STOP_Y, "Track stop Y" );
-            FEATURE_NAMES.put( TRACK_STOP_Z, "Track stop Z" );
-
-            FEATURE_SHORT_NAMES.put( TRACK_START_X, "X start" );
-            FEATURE_SHORT_NAMES.put( TRACK_START_Y, "Y start" );
-            FEATURE_SHORT_NAMES.put( TRACK_START_Z, "Z start" );
-            FEATURE_SHORT_NAMES.put( TRACK_STOP_X, "X stop" );
-            FEATURE_SHORT_NAMES.put( TRACK_STOP_Y, "Y stop" );
-            FEATURE_SHORT_NAMES.put( TRACK_STOP_Z, "Z stop" );
-
-            FEATURE_DIMENSIONS.put( TRACK_START_X, Dimension.POSITION );
-            FEATURE_DIMENSIONS.put( TRACK_START_Y, Dimension.POSITION );
-            FEATURE_DIMENSIONS.put( TRACK_START_Z, Dimension.POSITION );
-            FEATURE_DIMENSIONS.put( TRACK_STOP_X, Dimension.POSITION );
-            FEATURE_DIMENSIONS.put( TRACK_STOP_Y, Dimension.POSITION );
-            FEATURE_DIMENSIONS.put( TRACK_STOP_Z, Dimension.POSITION );
-        }
-            
-        /*
-         * FEATUREANALYZER METHODS
-         */
-
-        @Override
-        public List< String > getFeatures()
-        {
-            return FEATURES;
-        }
-
-        @Override
-        public Map< String, String > getFeatureShortNames()
-        {
-            return FEATURE_SHORT_NAMES;
-        }
-
-        @Override
-        public Map< String, String > getFeatureNames()
-        {
-            return FEATURE_NAMES;
-        }
-
-        @Override
-        public Map< String, Dimension > getFeatureDimensions()
-        {
-            return FEATURE_DIMENSIONS;
-        }
+    @Override
+    public Map< String, Dimension > getFeatureDimensions()
+    {
+        return FEATURE_DIMENSIONS;
+    }
+```
 
 Let's compute them now.
 
@@ -153,11 +161,15 @@ All the track structure is stored in a sub-component of the model called the {% 
 
 The tracks themselves are indexed by their ID, stored as an `int`, that has no particular meaning. Once you have the ID of track, you can get the spots it contains with
 
-    trackModel.trackSpots( trackID )
+```java
+trackModel.trackSpots( trackID )
+```
 
 and its links (or edges) with
 
-    trackModel.trackEdges( trackID )
+```java
+trackModel.trackEdges( trackID )
+```
 
 Let's exploit this.
 
@@ -166,40 +178,42 @@ Let's exploit this.
 Well, it is just about retrieving a track and identifying its starting and end points. Here is the whole code for the processing method:
 
 
-        @Override
-        public void process( final Collection< Integer > trackIDs, final Model model )
-        {
-            // The feature model where we store the feature values:
-            final FeatureModel fm = model.getFeatureModel();
+```java
+@Override
+public void process( final Collection< Integer > trackIDs, final Model model )
+{
+	// The feature model where we store the feature values:
+	final FeatureModel fm = model.getFeatureModel();
 
-            // Loop over all the tracks we have to process.
-            for ( final Integer trackID : trackIDs )
-            {
-                // The tracks are indexed by their ID. Here is how to get their
-                // content:
-                final Set< Spot > spots = model.getTrackModel().trackSpots( trackID );
-                // Or .trackEdges( trackID ) if you want the edges.
+	// Loop over all the tracks we have to process.
+	for ( final Integer trackID : trackIDs )
+	{
+		// The tracks are indexed by their ID. Here is how to get their
+		// content:
+		final Set< Spot > spots = model.getTrackModel().trackSpots( trackID );
+		// Or .trackEdges( trackID ) if you want the edges.
 
-                // This set is NOT ordered. If we want the first one and last one we
-                // have to sort them:
-                final Comparator< Spot > comparator = Spot.frameComparator;
-                final List< Spot > sorted = new ArrayList< Spot >( spots );
-                Collections.sort( sorted, comparator );
+		// This set is NOT ordered. If we want the first one and last one we
+		// have to sort them:
+		final Comparator< Spot > comparator = Spot.frameComparator;
+		final List< Spot > sorted = new ArrayList< Spot >( spots );
+		Collections.sort( sorted, comparator );
 
-                // Extract and store feature values.
-                final Spot first = sorted.get( 0 );
-                fm.putTrackFeature( trackID, TRACK_START_X, Double.valueOf( first.getDoublePosition( 0 ) ) );
-                fm.putTrackFeature( trackID, TRACK_START_Y, Double.valueOf( first.getDoublePosition( 1 ) ) );
-                fm.putTrackFeature( trackID, TRACK_START_Z, Double.valueOf( first.getDoublePosition( 2 ) ) );
+		// Extract and store feature values.
+		final Spot first = sorted.get( 0 );
+		fm.putTrackFeature( trackID, TRACK_START_X, Double.valueOf( first.getDoublePosition( 0 ) ) );
+		fm.putTrackFeature( trackID, TRACK_START_Y, Double.valueOf( first.getDoublePosition( 1 ) ) );
+		fm.putTrackFeature( trackID, TRACK_START_Z, Double.valueOf( first.getDoublePosition( 2 ) ) );
 
-                final Spot last = sorted.get( sorted.size() - 1 );
-                fm.putTrackFeature( trackID, TRACK_STOP_X, Double.valueOf( last.getDoublePosition( 0 ) ) );
-                fm.putTrackFeature( trackID, TRACK_STOP_Y, Double.valueOf( last.getDoublePosition( 1 ) ) );
-                fm.putTrackFeature( trackID, TRACK_STOP_Z, Double.valueOf( last.getDoublePosition( 2 ) ) );
+		final Spot last = sorted.get( sorted.size() - 1 );
+		fm.putTrackFeature( trackID, TRACK_STOP_X, Double.valueOf( last.getDoublePosition( 0 ) ) );
+		fm.putTrackFeature( trackID, TRACK_STOP_Y, Double.valueOf( last.getDoublePosition( 1 ) ) );
+		fm.putTrackFeature( trackID, TRACK_STOP_Z, Double.valueOf( last.getDoublePosition( 2 ) ) );
 
-                // Et voilà!
-            }
-        }
+		// Et voilà!
+	}
+}
+```
 
 The whole code for the analyzer can be found {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java' label='here' %}.
 
@@ -223,10 +237,10 @@ The first one we will see is the `enabled` value. It accepts a `boolean` as valu
 
 Like this:
 
-    @Plugin( type = TrackAnalyzer.class, enabled = false )
+```java
+@Plugin( type = TrackAnalyzer.class, enabled = false )
+```
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 14:23, 11 March 2014 (CDT)
-
-

@@ -21,13 +21,16 @@ The XML DTD is included in the DOCTYPE of each file. The root element is always 
 
 There must be exactly one of these elements present, with attributes that describe the size of the image in terms of number of voxels across, up and down, e.g.:
 
-`<imagesize width="520" height="434" depth="117"/>`
+```html
+<imagesize width="520" height="434" depth="117"/>
+```
 
 ### &lt;samplespacing&gt;
 
 There must be exactly one of these elements present, with attributes that describe the spacing of the samples in the image (voxels) in world-coordinates, e.g.:
-
-`<samplespacing x="0.28838738962693633" y="0.28838738962693633" z="1.2" units="micrometers"/>`
+```html
+<samplespacing x="0.28838738962693633" y="0.28838738962693633" z="1.2" units="micrometers"/>
+```
 
 ### &lt;path&gt;
 
@@ -45,15 +48,15 @@ The `<path>` element can have the following attributes:
 -   `fitted`: If present, this attribute gives the ID of another path which is a version of this path after the centre-line has been adjusted and radiuses at each point found. If this attribute is present, the `fittedversionof` attribute may not be.
 -   `fittedversionof`: If present, this attribute gives the ID of another path which was the source version for this one. Typically the path specified does not have radiusese defined for each point, although this is not always the case. If this attribute is present, the `fitted` attribute may not be.
 -   `usefitted`: This attribute must be present if either the `fitted` or `fittedversionof` attributes are. This attribute is either `"true"` or `"false"`. It should only be "true" for paths that have a fitted version, when it implies that the user wants the fitted path to be display in favour of this (the unfitted) one. If "false" and this path has a fitted version, it means that this path should not be displayed. It should always be "false" for paths that are fitted versions of other paths.
-    {% include notice icon="note" content="This is confusing and regrettable; in later versions this will be replaced by attributes with simpler semantics." %}
+{% include notice icon="note" content="This is confusing and regrettable; in later versions this will be replaced by attributes with simpler semantics." %}
 -   `swctype`: This should be an integer from 0 to 7 inclusive, indicating what the SWC type of the path is. If not present, the default value is 0. The conventional meaning of these values is:
     -   0: UNDEFINED
     -   1: SOMA
     -   2: AXON
     -   3: DENDRITE
-    -   4: APICAL\_DENDRITE
-    -   5: FORK\_POINT
-    -   6: END\_POINT
+    -   4: APICAL_DENDRITE
+    -   5: FORK_POINT
+    -   6: END_POINT
     -   7: CUSTOM
 
 The &lt;path&gt; element may contain zero or more &lt;point&gt; elements. These are described below:
@@ -74,7 +77,7 @@ The `<fill>` element represents a fill around a path. It contains all the points
 -   `id`: The ID of the fill, a non-negative integer unique among all the other fill IDs in this file.
 -   `frompaths`: A comma ( optional space) separated IDs of the paths from which this fill started. e.g. if this attribute is `frompaths="2, 0"` then there are nodes with distance 0 at each of the points on `<path id="2" ...` and `<path id="0" ...` in this fill.
 -   `metric`: this can either be `reciprocal-intensity-scaled` or `256-minus-intensity-scaled`. The former means that the cost of moving to a point from an adjacent one is the Euclidean distance between the two divide by the intensity value at the the latter. The former means that the cost of moving to a point from an adjacent one is the 256 minus the intensity value at the latter point all multiplied by the Euclidean distance between the two.
-    {% include notice icon="note" content="`metric` is a bad name for this attribute since these are not metrics in the strict sense: for example, they are not symmetric." %}
+{% include notice icon="note" content="`metric` is a bad name for this attribute since these are not metrics in the strict sense: for example, they are not symmetric." %}
 -   `threshold`: all the points with a "distance" less than this path are considered to be part of the fill.
 
 ### &lt;node&gt;

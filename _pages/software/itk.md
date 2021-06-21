@@ -25,15 +25,17 @@ When using `@itkImage` [parameters](/scripting/parameters) in scripts, ImageJ `D
 
 There are several templates in the [Script Editor](/scripting/script-editor) demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
 
-    # @itkImage image
-    # @OUTPUT Dataset output
+```java
+# @itkImage image
+# @OUTPUT Dataset output
 
-    from org.itk.simple import OtsuMultipleThresholdsImageFilter
+from org.itk.simple import OtsuMultipleThresholdsImageFilter
 
-    otsu = OtsuMultipleThresholdsImageFilter()
+otsu = OtsuMultipleThresholdsImageFilter()
 
-    # call otsu using simple itk wrapper
-    output = otsu.execute(image, 2, 0, 255, True)
+# call otsu using simple itk wrapper
+output = otsu.execute(image, 2, 0, 255, True)
+```
 
 ## Developer resources
 

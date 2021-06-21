@@ -43,7 +43,9 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
 This plugin can be called from a macro using:
 
-    run("Read and Write Excel");
+```java
+run("Read and Write Excel");
+```
 
 and it works very well with batching. A major change for v1.1.0, is that, if called slightly differently (see below), the plugin is now much better at handling large data sets and/or excel files that become large over time.
 
@@ -55,29 +57,41 @@ Arguments will be parsed from the second argument string as follows.
 
 `dataset_label=` The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop:
 
-    run("Read and Write Excel", "dataset_label=[My new results data label]");
-    //example with passed variable 'i'
-    run("Read and Write Excel", "dataset_label=Table"+i);
+```java
+run("Read and Write Excel", "dataset_label=[My new results data label]");
+//example with passed variable 'i'
+run("Read and Write Excel", "dataset_label=Table"+i);
+```
 
 `no_count_column` Prevents the plugin from adding a "Count" column automatically:
 
-    run("Read and Write Excel", "no_count_column");
+```java
+run("Read and Write Excel", "no_count_column");
+```
 
 `stack_results` Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import:
 
-    run("Read and Write Excel", "stack_results");
+```java
+run("Read and Write Excel", "stack_results");
+```
 
 `file=` The path to the excel file to create and/or update (uses the default desktop file otherwise):
 
-    run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
+```java
+run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
+```
 
 `sheet=` Which sheet in the excel file to put the results in. For example, `sheet=banana` will create and/or append a sheet named `banana`:
 
-    run("Read and Write Excel", "sheet=banana");
+```java
+run("Read and Write Excel", "sheet=banana");
+```
 
 Join arguments as follows:
 
-    run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]");
+```java
+run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]");
+```
 
 ### Large data import and export
 
@@ -85,46 +99,54 @@ Join arguments as follows:
 
 `file_mode=read_and_open` Will just load/open an excel file into computer memory (the one you specify with `file=`)...make sure you do `write_and_close` when you're done or you'll have problems:
 
-    run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
+```java
+run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
+```
 
 `file_mode=queue_write` Will queue something to be written to the excel file you've opened previously with `read_and_open:`
 
-    run("Read and Write Excel", "file_mode=queue_write");
+```java
+run("Read and Write Excel", "file_mode=queue_write");
+```
 
 `file_mode=write_and_close` Will write everything you've queued with `queue_write,` then close the excel file:
 
-    run("Read and Write Excel", "file_mode=write_and_close");
+```java
+run("Read and Write Excel", "file_mode=write_and_close");
+```
 
 Example large data macro workflow:
 
-    //macro to read and write large datasets
+```javascript
+//macro to read and write large datasets
 
-    //open or create the .xlsx file we want to add data to
-    run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
+//open or create the .xlsx file we want to add data to
+run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
 
-    //add multiple and/or large datasets
-    ///do macro analysis and generate a big results table
+//add multiple and/or large datasets
+///do macro analysis and generate a big results table
+run("Read and Write Excel", "file_mode=queue_write");
+///do macro analysis and generate a big results table
+run("Read and Write Excel", "file_mode=queue_write");
+///do macro analysis and generate a big results table
+run("Read and Write Excel", "file_mode=queue_write");
+///do macro analysis and generate a big results table
+run("Read and Write Excel", "file_mode=queue_write");
+//for example in a loop
+for (i = 0; i < 100; i++) {
+    //macro code here
     run("Read and Write Excel", "file_mode=queue_write");
-    ///do macro analysis and generate a big results table
-    run("Read and Write Excel", "file_mode=queue_write");
-    ///do macro analysis and generate a big results table
-    run("Read and Write Excel", "file_mode=queue_write");
-    ///do macro analysis and generate a big results table
-    run("Read and Write Excel", "file_mode=queue_write");
-    //for example in a loop
-    for (i = 0; i < 100; i++) {
-        //macro code here
-        run("Read and Write Excel", "file_mode=queue_write");
-    }
+}
 
-    //finally write the queued results data to the file
-    run("Read and Write Excel", "file_mode=write_and_close");
+//finally write the queued results data to the file
+run("Read and Write Excel", "file_mode=write_and_close");
+```
 
-Also see [Read\_and\_Write\_Excel\_Modified](https://github.com/bkromhout/Read_and_Write_Excel_Modified) for examples. **(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)**
+Also see [Read_and_Write_Excel_Modified](https://github.com/bkromhout/Read_and_Write_Excel_Modified) for examples. **(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)**
 
 ## Disclaimers and Licencing stuff
 
-I am aware that another Excel\_Writer plugin exists but it did not work very well for me (hence me creating this). I did not consult their source code but did find out about Apache POI(\*) from them.
+I am aware that another Excel_Writer plugin exists but it did not work very well for me (hence me creating this). I did not consult their source code but did find out about Apache POI(\*) from them.
 
 Since Brenden modified the plugin, the code is now a lot neater. Feel free to consult it as per your needs.
 
@@ -220,5 +242,3 @@ http://sites.imagej.net/ResultsToExcel
 -   The 'ImageJ Updater' window will now present you with the plugin files for installation
 -   Press 'Apply changes'
 -   After the update has been applied successfully, restart ImageJ
-
-

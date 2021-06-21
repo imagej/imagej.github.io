@@ -50,14 +50,14 @@ Have also a look at our 3D viewer if you want to see your result in 3D.
 
 The segmentation editor can now be started from a macro, with a user-defined set of materials. Such a macro would look like this:
 
-    // create a new Segmentation Editor
-    call("Segmentation_Editor.newSegmentationEditor");
+```javascript
+// create a new Segmentation Editor
+call("Segmentation_Editor.newSegmentationEditor");
 
-    // Reset the material list
-    call("Segmentation_Editor.newMaterials");
+// Reset the material list
+call("Segmentation_Editor.newMaterials");
 
-    // Add a desired materials
-    call("Segmentation_Editor.addMaterial", "MyMaterial1", 255, 255, 0);
-    call("Segmentation_Editor.addMaterial", "MyMaterial2", 255, 0, 0);
-
- 
+// Add a desired materials
+call("Segmentation_Editor.addMaterial", "MyMaterial1", 255, 255, 0);
+call("Segmentation_Editor.addMaterial", "MyMaterial2", 255, 0, 0);
+```

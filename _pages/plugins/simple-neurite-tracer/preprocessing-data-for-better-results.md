@@ -36,22 +36,24 @@ When you start up Simple Neurite Tracer with "test.lsm" as the current image, it
 
 The easiest way to preprocess multiple images is to record a macro for processing a single images, and then wrap it it in a loop to iterate over all the files in a directory. For example:
 
-    d = getDirectory("Select a directory");
-    files = getFileList(d);
+```javascript
+d = getDirectory("Select a directory");
+files = getFileList(d);
 
-    extension = ".tif";
+extension = ".tif";
 
-    for( i = 0; i < files.length; ++i ) {
-        filename = files[i];
-        if( endsWith(filename,extension) ) {
-            l = lengthOf(filename);
-            el = lengthOf(extension);
-            basename = substring(filename,0,l-el);
-            expected_window_name = "vesselness of "+filename;
-            output_filename = d + File.separator + basename + ".tubes.tif";
-            open(filename);
-            run("Frangi Vesselness (imglib, experimental)", "number=1 minimum=0.288387 maximum=0.288387");
-            selectWindow(expected_window_name);
-            saveAs("Tiff", output_filename);
-        }
+for( i = 0; i < files.length; ++i ) {
+    filename = files[i];
+    if( endsWith(filename,extension) ) {
+        l = lengthOf(filename);
+        el = lengthOf(extension);
+        basename = substring(filename,0,l-el);
+        expected_window_name = "vesselness of "+filename;
+        output_filename = d + File.separator + basename + ".tubes.tif";
+        open(filename);
+        run("Frangi Vesselness (imglib, experimental)", "number=1 minimum=0.288387 maximum=0.288387");
+        selectWindow(expected_window_name);
+        saveAs("Tiff", output_filename);
     }
+}
+```

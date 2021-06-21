@@ -53,7 +53,9 @@ As you can see, the full path to the file we saved which was enclosed in quotes 
 
 The reason is that you want ImageJ to save the processed image with a variable name. For a single image, the function would be called like this:
 
-`action("home/fiji/output-images/", "bridge.gif");`
+```javascript
+action("home/fiji/output-images/", "bridge.gif");
+```
 
 Now, let's enhance the function so that it opens the image itself, and also closes the image after it saved the result:
 
@@ -93,7 +95,7 @@ The next line defines a variable *list*, which takes the result of the builtin f
 
 The *for* loop does nothing else than assigning the integral numbers *0, ..., list.length-1* to the variable *i* and executing the lines between { and } with each setting.
 
-The line executed in the *for* loop calls the *action* function with the *i*th file name in the directory list, obtained by *list\[i\]*.
+The line executed in the *for* loop calls the *action* function with the *i*th file name in the directory list, obtained by *list[i]*.
 
 Sometimes, ImageJ can get confused when it has to open or close windows and perform operations on them, in which case it can appear as if operations are called out of order. To prevent that, enable the *batch mode*:
 
@@ -108,9 +110,8 @@ list = getFileList(input);
 for (i = 0; i < list.length; i++){
         action(input, output, list[i]);
 }
-```
-
 setBatchMode(false);
+```
 
 ## Alternative: Multiple Image Processor
 
@@ -132,5 +133,3 @@ Find the *Multiple ImageProcessor* plugin in the *Process* menu:
 The dialog would need to be filled out like this:
 
 ![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-9.jpg)
-
-

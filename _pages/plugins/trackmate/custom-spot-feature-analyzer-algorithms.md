@@ -53,11 +53,13 @@ Right now, let's focus on the factory class itself. There is not much to say: it
 
 The one interesting part is the factory method in charge of instantiating the `SpotAnalyzer`:
 
-    @Override
-        public SpotAnalyzer< T > getAnalyzer( final Model model, final ImgPlus< T > img, final int frame, final int channel )
-        {
-            return new RelativeIntensitySpotAnalyzer< T >( model, frame );
-        }
+```java
+@Override
+    public SpotAnalyzer< T > getAnalyzer( final Model model, final ImgPlus< T > img, final int frame, final int channel )
+    {
+        return new RelativeIntensitySpotAnalyzer< T >( model, frame );
+    }
+```
 
 Since we want to build a feature that does not need the image data, the constructor just skips the image reference. And that's it. We must now move on to the analyzer itself to implement the feature calculation logic.
 
@@ -73,66 +75,68 @@ The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/p
 
 Here is what the `process()` method of the analyzer looks like:
 
-        @Override
-        public boolean process()
+```java
+    @Override
+    public boolean process()
+    {
+        /*
+         * Collect all the spots from the target frame. In a SpotAnalyzer, you
+         * cannot interrogate only visible spots, because spot features are
+         * typically used to determine whether spots are going to be visible or
+         * not. This happens in the GUI at the spot filtering stage: We are
+         * actually building a feature on which a filter can be applied. So the
+         * spot features must be calculated over ALL the spots.
+         */
+
+        /*
+         * The spots are stored in a SpotCollection before they are tracked. The
+         * SpotCollection is the product of the detection step.
+         */
+        final SpotCollection sc = model.getSpots();
+        // 'false' means 'not only the visible spots, but all spots'.
+        Iterator< Spot > spotIt = sc.iterator( frame, false );
+
+        /*
+         * Compute the mean intensity for all these spots.
+         */
+
+        double sum = 0;
+        int n = 0;
+        while ( spotIt.hasNext() )
         {
-            /*
-             * Collect all the spots from the target frame. In a SpotAnalyzer, you
-             * cannot interrogate only visible spots, because spot features are
-             * typically used to determine whether spots are going to be visible or
-             * not. This happens in the GUI at the spot filtering stage: We are
-             * actually building a feature on which a filter can be applied. So the
-             * spot features must be calculated over ALL the spots.
-             */
+            final Spot spot = spotIt.next();
+            // Collect the mean intensity in the spot radius.
+            final double val = spot.getFeature( SpotIntensityAnalyzerFactory.MEAN_INTENSITY );
+            sum += val;
+            n++;
+        }
 
-            /*
-             * The spots are stored in a SpotCollection before they are tracked. The
-             * SpotCollection is the product of the detection step.
-             */
-            final SpotCollection sc = model.getSpots();
-            // 'false' means 'not only the visible spots, but all spots'.
-            Iterator< Spot > spotIt = sc.iterator( frame, false );
-
-            /*
-             * Compute the mean intensity for all these spots.
-             */
-
-            double sum = 0;
-            int n = 0;
-            while ( spotIt.hasNext() )
-            {
-                final Spot spot = spotIt.next();
-                // Collect the mean intensity in the spot radius.
-                final double val = spot.getFeature( SpotIntensityAnalyzerFactory.MEAN_INTENSITY );
-                sum += val;
-                n++;
-            }
-
-            if ( n == 0 )
-            {
-                // Nothing to do here.
-                return true;
-            }
-
-            final double mean = sum / n;
-
-            /*
-             * Make a second pass to set the relative intensity of these spots with
-             * respect to the mean we just calculated.
-             */
-
-            spotIt = sc.iterator( frame, false );
-            while ( spotIt.hasNext() )
-            {
-                final Spot spot = spotIt.next();
-                final double val = spot.getFeature( SpotIntensityAnalyzerFactory.MEAN_INTENSITY );
-                final double relMean = val / mean;
-                // Store the new feature in the spot
-                spot.putFeature( RELATIVE_INTENSITY, Double.valueOf( relMean ) );
-            }
-
+        if ( n == 0 )
+        {
+            // Nothing to do here.
             return true;
         }
+
+        final double mean = sum / n;
+
+        /*
+         * Make a second pass to set the relative intensity of these spots with
+         * respect to the mean we just calculated.
+         */
+
+        spotIt = sc.iterator( frame, false );
+        while ( spotIt.hasNext() )
+        {
+            final Spot spot = spotIt.next();
+            final double val = spot.getFeature( SpotIntensityAnalyzerFactory.MEAN_INTENSITY );
+            final double relMean = val / mean;
+            // Store the new feature in the spot
+            spot.putFeature( RELATIVE_INTENSITY, Double.valueOf( relMean ) );
+        }
+
+        return true;
+    }
+```
 
 The code for the whole class is {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzer.java' label='here' %}.
 
@@ -146,7 +150,9 @@ TrackMate does not offer a real in-depth module dependency management. It simply
 
 For instance, if you check the annotation part of the spot analyzer factory, you can see that there is an extra parameter, `priority`:
 
-    @Plugin( type = SpotAnalyzerFactory.class, priority = 1d )
+```java
+@Plugin( type = SpotAnalyzerFactory.class, priority = 1d )
+```
 
 This priority parameter accepts a `double` as value and this value determines the order of execution. Careful, the rule is the opposite of what would make sense for a priority:
 
@@ -161,5 +167,3 @@ Apart from the discussion on the priority and execution order, there is not much
 <figure><img src="/media/plugins/trackmate/trackmate-customspotanalyzer-01.png" title="TrackMate_CustomSpotAnalyzer_01.png" width="600" alt="TrackMate_CustomSpotAnalyzer_01.png" /><figcaption aria-hidden="true">TrackMate_CustomSpotAnalyzer_01.png</figcaption></figure>
 
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 07:32, 11 March 2014 (CDT)
-
-

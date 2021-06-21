@@ -44,7 +44,9 @@ There are 2 ways to print some information back to the user.
 The first one is a classical python print statement, that will print some information to the console.  
 `print "Hello world"`  
 You can print any kind of variable and objects.  
-`print "This is a string followed by an int", 10`
+```python
+print "This is a string followed by an int", 10
+```
 
 NB1 : If used in a plugin, and no console window is open then the printed information will not be visible to the user (contrary to the `log` function below)
 
@@ -52,9 +54,11 @@ NB2 : Using numerous print statements might slow down the execution time when us
 
 #### - With IJ.log()
 
-    from ij import IJ
-    IJ.log("Hello world")
-    IJ.log("This is a string followed by an int " + str(10))
+```python
+from ij import IJ
+IJ.log("Hello world")
+IJ.log("This is a string followed by an int " + str(10))
+```
 
 Contrary to the print statement the log function display some output into a log window (newly open if not already open), and accept only a string as argument.
 
@@ -121,8 +125,10 @@ Those package are built-in with Fiji, but any package that resides in the jars f
 
 For example, one of the main built-in ImageJ packages is called `ij`, and often Jython scripts will write something like this at the top:
 
-    from ij import IJ
-    # do stuff below....
+```python
+from ij import IJ
+# do stuff below....
+```
 
 Doing this allows you to access the `IJ` *class* which resides in the `ij` *package*. You can find a description of the `ij` package [here](https://javadoc.scijava.org/ImageJ1/ij/package-summary.html). What can we do with the `IJ` class? Clicking on the `IJ` link brings you to the [class documentation](https://javadoc.scijava.org/ImageJ1/ij/IJ.html) page for `IJ`. This class contains "static utility methods" which means you can call them with without instantiating (calling the constructor) the `IJ` class. We will cover constructors later. Looking through the documentation for `IJ`, lets focus on the method `createImage` ([docs here](https://javadoc.scijava.org/ImageJ1/ij/IJ.html#createImage-java.lang.String-int-int-int-int-)). This method can be called just like you would call a method on a python class. The documentation shows you need to provide the following parameters (types in parenthesis):
 
@@ -134,32 +140,38 @@ Doing this allows you to access the `IJ` *class* which resides in the `ij` *pack
 
 and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
 
-    from ij import IJ # read this as: "from the ij package import the IJ class"
-    test_img = IJ.createImage("Test image", 512, 512, 1, 8)
-    # now check the type of test_img
-    print(type(test_img))
-    # <type 'ij.ImagePlus'>
+```python
+from ij import IJ # read this as: "from the ij package import the IJ class"
+test_img = IJ.createImage("Test image", 512, 512, 1, 8)
+# now check the type of test_img
+print(type(test_img))
+# <type 'ij.ImagePlus'>
+```
 
 This code shows that we have successfully created an `ImagePlus` object. Looking at the documentation for the [ImagePlus class](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html), let's use a few of the methods to make sure the image was created correctly.
 
-    from ij import IJ
-    test_img = IJ.createImage("Test image", 512, 512, 1, 8)
-    # check the type:
-    print(type(test_img))
-    # <type 'ij.ImagePlus'>
-    title = test_img.getTitle()
-    width = test_img.width
-    height = test_img.height
-    print("{} is {} wide and {} tall.".format(title, width, height))
-    test_img.show()
+```python
+from ij import IJ
+test_img = IJ.createImage("Test image", 512, 512, 1, 8)
+# check the type:
+print(type(test_img))
+# <type 'ij.ImagePlus'>
+title = test_img.getTitle()
+width = test_img.width
+height = test_img.height
+print("{} is {} wide and {} tall.".format(title, width, height))
+test_img.show()
+```
 
 We accessed the title using the `getTitle()` [method](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImagePlus.html#getTitle--), which takes no arguments and returns the image name. We accessed the image width and height by accessing `test_img`'s **fields**. These are not methods, but contain information about the class. We could have also used the `getWidth()` and `getHeight()` methods as well. We then called the `show()` method on our test image and a (very boring) 512X512 8 bit image should have popped up.
 
 Here is another example where we use the ImageJ package and the [RoiManager](http://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/plugin/frame/RoiManager.html) class. According to the javadoc, the RoiManager class resides in `ij.plugin.frame`. Therefore the code will look like :
 
-    from ij.plugin.frame import RoiManager
-    RM = RoiManager()        # we create an instance of the RoiManager class
-    rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely
+```python
+from ij.plugin.frame import RoiManager
+RM = RoiManager()        # we create an instance of the RoiManager class
+rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely
+```
 
 ### Using openCV in Jython
 
@@ -171,53 +183,57 @@ A manual installation is also possible by putting the jar packages in the jar fo
 
 The first thing to know about OpenCV is that most functions work with an OpenCV matrix object. Fortunately, the IJ-OpenCV project provides some converters :
 
-    #@ ImagePlus ImP
-    from ijopencv.ij      import ImagePlusMatConverter
-    from ijopencv.opencv  import MatImagePlusConverter
-    from ij               import ImagePlus
+```python
+#@ ImagePlus ImP
+from ijopencv.ij      import ImagePlusMatConverter
+from ijopencv.opencv  import MatImagePlusConverter
+from ij               import ImagePlus
 
-    # Convert ImagePlus (actually the contained ImageProcessor) to Matrix object
-    imp2mat = ImagePlusMatConverter()
-    ImMat = imp2mat.toMat(imp.getProcessor())
-    print ImMat
+# Convert ImagePlus (actually the contained ImageProcessor) to Matrix object
+imp2mat = ImagePlusMatConverter()
+ImMat = imp2mat.toMat(imp.getProcessor())
+print ImMat
 
-    # Convert Matrix object to ImageProcessor
-    mat2ip = MatImagePlusConverter()
-    NewIP  = mat2ip.toImageProcessor(ImMat)
-    NewImp = ImagePlus("Matrix converted back to ImagePlus", NewIP)
-    print NewImP
+# Convert Matrix object to ImageProcessor
+mat2ip = MatImagePlusConverter()
+NewIP  = mat2ip.toImageProcessor(ImMat)
+NewImp = ImagePlus("Matrix converted back to ImagePlus", NewIP)
+print NewImP
+```
 
 Such kind of converter is also available for PointRoi to opencv keypoints...
 
 Now to use opencv function, we use the [JavaCPP API](http://bytedeco.org/javacpp-presets/opencv/apidocs/) that contains almost all functions of opencv.
 
-    from org.bytedeco.javacpp.opencv_core   import Mat, CvMat, vconcat
+```python
+from org.bytedeco.javacpp.opencv_core   import Mat, CvMat, vconcat
 
-    ## Typical matrices ##
+## Typical matrices ##
 
-    # Identity Matrix of size (3x3) and type 8-bit
-    Id = Mat().eye(3,3,0).asMat()
-    print Id
-    print CvMat(Id) # handy to visualise the matrix
+# Identity Matrix of size (3x3) and type 8-bit
+Id = Mat().eye(3,3,0).asMat()
+print Id
+print CvMat(Id) # handy to visualise the matrix
 
-    # Matrix of ones (3x3)
-    One = Mat().ones(3,3,0).asMat()
+# Matrix of ones (3x3)
+One = Mat().ones(3,3,0).asMat()
 
-    # Matrix of zeros (3x3)
-    Zero = Mat().zeros(3,3,0).asMat()
+# Matrix of zeros (3x3)
+Zero = Mat().zeros(3,3,0).asMat()
 
-    # Custom Matrices
-    # 1D-Matrix can be initialize from a list
-    # For 2D (or more) we have to concatenate 1D-Matrices
+# Custom Matrices
+# 1D-Matrix can be initialize from a list
+# For 2D (or more) we have to concatenate 1D-Matrices
 
-    Row1 = Mat([1,2,3,4,5]) # 1D matrix
-    Row2 = Mat([6,7,8,9,10])
+Row1 = Mat([1,2,3,4,5]) # 1D matrix
+Row2 = Mat([6,7,8,9,10])
 
-    TwoColumn = Mat()              # initialise output
-    vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
-    print CvMat(TwoColumn)
+TwoColumn = Mat()              # initialise output
+vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
+print CvMat(TwoColumn)
 
 {% include notice icon="warning" content="The `org.bytedeco.javacpp.opencv_core.Mat` object is different than the `org.opencv.core.Mat` !! They don't have exactly the same attributes and functions. In Fiji you should always use the objects from `org.bytedeco.javacpp`." %}
+```
 
 Similarly there is some apparent redudancy for the function in the javacpp API.
 
@@ -239,40 +255,44 @@ That's the one to use ! It takes only `org.bytedeco.javacpp.opencv_core.Mat` as 
 
 In addition to Matrices, opencv allows to use Scalar objects A scalar is a 4 item element (v0, v1, v2, v3). If v1=v2=v3=0 then the Scalar is real.
 
-    from org.bytedeco.javacpp.opencv_core   import Scalar
+```python
+from org.bytedeco.javacpp.opencv_core   import Scalar
 
-    # Real scalar can be initiated with a float parameters
-    Number = Scalar(5.0)
-    Number = Scalar(float(5))
-    print Number
+# Real scalar can be initiated with a float parameters
+Number = Scalar(5.0)
+Number = Scalar(float(5))
+print Number
 
-    # Using an integer as parameter has a different meaning
-    Empty = Scalar(5) # This initiate an empty Scalar object of size 5
-    print Empty
+# Using an integer as parameter has a different meaning
+Empty = Scalar(5) # This initiate an empty Scalar object of size 5
+print Empty
 
-    # Alternatively one can set the other values of the Scalar
-    Complex = Scalar(1,2,3,4)
-    print Complex
+# Alternatively one can set the other values of the Scalar
+Complex = Scalar(1,2,3,4)
+print Complex
+```
 
 #### Operations
 
 It is possible to perform some operations between matrices, or between Scalar and matrices.
 
-    from org.bytedeco.javacpp.opencv_core   import Scalar, Mat, subtract
+```python
+from org.bytedeco.javacpp.opencv_core   import Scalar, Mat, subtract
 
-    A = Mat([1,2,3,4,5])
-    B = Mat([1,2,-3,-4,0])
+A = Mat([1,2,3,4,5])
+B = Mat([1,2,-3,-4,0])
 
-    Number = Scalar(10.0)
+Number = Scalar(10.0)
 
-    ## Number - B ( B-Number is also possible)
-    Expr = subtract(Number,B)
-    print CvMat(Expr.asMat())
+## Number - B ( B-Number is also possible)
+Expr = subtract(Number,B)
+print CvMat(Expr.asMat())
 
-    ## A - B
-    Out = Mat()
-    subtract(A,B,Out)
-    print CvMat(Out)
+## A - B
+Out = Mat()
+subtract(A,B,Out)
+print CvMat(Out)
+```
 
 ## Self written Jython modules for ImageJ
 
@@ -280,12 +300,16 @@ In Jython you can write all commands line by line in a single file and execute i
 
 To load modules, one has to save them to a directory where Jython will find them. Two lines of code will reveal these directories to you:
 
-    from sys import path
-    print(path)
+```python
+from sys import path
+print(path)
+```
 
 When running this code the result is an output like
 
-    ['/home/michael/Software/ImageJ.app/jars/Lib', '/home/michael/Software/ImageJ.app/jars/jython-shaded-2.7.0.jar/Lib', '__classpath__', '__pyclasspath__/']
+```
+['/home/michael/Software/ImageJ.app/jars/Lib', '/home/michael/Software/ImageJ.app/jars/jython-shaded-2.7.0.jar/Lib', '__classpath__', '__pyclasspath__/']
+```
 
 This tells us that the folder `jars/Lib/` inside our ImageJ/Fiji directory is the right place to save modules. As `Lib/` does not exist by default, we have to create it.
 
@@ -296,29 +320,31 @@ To force the interpreter to use the last version of the py script there are 2 po
 -   Close Fiji, delete the `myModule$py.class` file and restart Fiji
 -   Use the following lines of code (found at [stackoverflow](http://stackoverflow.com/questions/10531920/jython-import-or-reload-dynamically)) that will force Jython to recompile all modules
 
-<!-- -->
-
-    # Use this to recompile Jython modules to class files.
-    from sys import modules
-    modules.clear()
-    # Imports of Jython modules are placed below:
-    import myModule
+```python
+# Use this to recompile Jython modules to class files.
+from sys import modules
+modules.clear()
+# Imports of Jython modules are placed below:
+import myModule
+```
 
 ### Adding a custom directory
 
 If you don't want to use `jars/Lib/` to save your modules, you have to extend the array `sys.path`:
 
-    from sys import path
-    from java.lang.System import getProperty
+```python
+from sys import path
+from java.lang.System import getProperty
 
-    # extend the search path by $FIJI_ROOT/bin/
-    # 'fiji.dir' works for plain ImageJ, too.
-    path.append(getProperty('fiji.dir') + '/bin')
-    # an alternative can be the users home directory
-    # path.append(getProperty('user.home') + '/JythonModules')
+# extend the search path by $FIJI_ROOT/bin/
+# 'fiji.dir' works for plain ImageJ, too.
+path.append(getProperty('fiji.dir') + '/bin')
+# an alternative can be the users home directory
+# path.append(getProperty('user.home') + '/JythonModules')
 
-    # Now you can import $FIJI_ROOT/bin/myModule.py
-    import myModule
+# Now you can import $FIJI_ROOT/bin/myModule.py
+import myModule
+```
 
 The function `getProperty()` accepts many more strings. A list can be found at [The Java Tutorials](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html).
 
@@ -326,6 +352,7 @@ The function `getProperty()` accepts many more strings. A list can be found at [
 
 On the way to perfectly organize Jython code, [packages](https://docs.python.org/2/tutorial/modules.html#packages) are the next step. A Jython package is a folder that contain a set of modules scripts together with a `__init__.py` file. This file can be empty. Below is a typical structure for the `Imagej.app/jars/Lib` folder:
 
+```
     Imagej.app/jars/Lib/
     -- myModule.py
     -- myPackage/
@@ -337,42 +364,46 @@ On the way to perfectly organize Jython code, [packages](https://docs.python.org
        -- __init__.py
        -- mathTools.py
        -- stackProcessing.py
+```
 
 There are two packages and one module. The first package contains three modules and the second package contains two modules. We can import the modules on different ways:
 
-    # Import the single module using the default name:
-    import myModule
+```python
+# Import the single module using the default name:
+import myModule
 
-    # Import mathTools from the first package
-    import myPackage.mathTools
-    # Use a function from the imported module
-    myPackage.mathTools.aFunction()
+# Import mathTools from the first package
+import myPackage.mathTools
+# Use a function from the imported module
+myPackage.mathTools.aFunction()
 
-    # Import mathTools from the second package
-    from myPackage2 import mathTools
-    # Use a function from the imported module without prefixing the package
-    mathTools.aFunction()
+# Import mathTools from the second package
+from myPackage2 import mathTools
+# Use a function from the imported module without prefixing the package
+mathTools.aFunction()
 
-    # Import customFilters from the first package and rename it
-    from myPackage import customFilters as filters
-    # Use a function from customFilters.py
-    filters.aFunction()
+# Import customFilters from the first package and rename it
+from myPackage import customFilters as filters
+# Use a function from customFilters.py
+filters.aFunction()
 
-    # Importing all module from a package
-    from myPackage2 import *
-    # The next line will fail
-    stackProcessing.aFunction()
+# Importing all module from a package
+from myPackage2 import *
+# The next line will fail
+stackProcessing.aFunction()
+```
 
 The reason for the last import to fail is the empty `__init__.py`. We have to define which modules of the package are imported when using `import *`. This is done by setting the variable `__all__` in the `__init__.py`. For `myPackage2` this line of code is needed:
-
-    __all__ = ["mathTools", "stackProcessing"]
+```python
+__all__ = ["mathTools", "stackProcessing"]
+```
 
 Besides setting this variable, the `__init__.py` file can contain normal Jython code that is executed upon import of the package.
 
 ## Bundle packages in a JAR file
 
 An interesting feature of Jython is to search for packages and modules inside of {% include wikipedia title="JAR (file format)" %}. The folder structure from the last section can be modified by packing everything into a single `myPackages.jar`. The name of the JAR file doesn't matter. All imports work the same as explained before.
-
+```
     Imagej.app/jars/Lib/
     -- myPackages.jar
        -- myModule.py
@@ -385,6 +416,7 @@ An interesting feature of Jython is to search for packages and modules inside of
           -- __init__.py
           -- mathTools.py
           -- stackProcessing.py
+```
 
 The advantage of this approach is that you can share your packages easily. For example you can upload the JAR file to an [update site](/update-sites). It is possible to upload .py scripts to update sites too, without packaging into a jar. The advantage of jar are that they allow to define dependencies more systematically.
 

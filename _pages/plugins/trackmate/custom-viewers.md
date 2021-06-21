@@ -45,8 +45,10 @@ Right now, we just focus on building the view.
 
 The factory itself has nothing particular. On top of the TrackMateModule methods, it just has a method to instantiate the view it controls:
 
-    @Override
-    public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
+```java
+@Override
+public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
+```
 
 You can see that we can possibly pass 3 parameters to the constructor of the view itself: the model of course, but also the settings object, so that we can find there a link to the image object. The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java' label='HyperStackDisplayer' %} uses it to retrieve the ImagePlus over which to display the TrackMate data.
 
@@ -103,12 +105,14 @@ Everytime the user changes a setting in the GUI, the new setting value is passed
 You don't *have to* keep your view in sync with the model. You can make something useful that would just capture a snapshot of the model as it is when you launch the view and be happy about it. But, TrackMate is about allowing both automatic and manual annotation of the image data, so most likely a very useful view will echoes the changes made to the model. Ideally it would even *enable* these changes to be made. But this is out of the scope of this tutorial.
 
 If you want to listen to changes made to the model, you have to register as a listener to it. This is made through
-
-    Model.addModelChangeListener( YourViewInstance );
+```java
+Model.addModelChangeListener( YourViewInstance );
+```
 
 and then you get a new method:
-
-    public void modelChanged( final ModelChangeEvent event )
+```java
+public void modelChanged( final ModelChangeEvent event )
+```
 
 The event itself can report 5 types of changes:
 
@@ -123,81 +127,83 @@ The event itself can report 5 types of changes:
 The TrackMate GUI shares a common instance of {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/SelectionModel.java' label='SelectionModel' %} that stores the selection the user made. This is convenient when exploring the tracking results.
 
 Your view can be kept in sync with the selection changes by implementing the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/SelectionChangeListener.java' label='SelectionChangeListener' %} interface. It adds a single method:
-
-    public void selectionChanged(SelectionChangeEvent event);
+```java
+public void selectionChanged(SelectionChangeEvent event);
+```
 
 ## A simple event logger.
 
 Let's keep our custom view simple: we will just build an event logger that recycles the IJ logger window to echo what happens to the model. We then of course have to implement the two listener interfaces mentioned above. But the code stays pretty simple: check {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/view/EventLoggerView.java' label='here' %} for the details.
 
 As for the factory, nothing fancy:
+```java
+package plugin.trackmate.examples.view;
 
-    package plugin.trackmate.examples.view;
+import ij.ImageJ;
+import ij.ImagePlus;
 
-    import ij.ImageJ;
-    import ij.ImagePlus;
+import javax.swing.ImageIcon;
 
-    import javax.swing.ImageIcon;
+import org.scijava.plugin.Plugin;
 
-    import org.scijava.plugin.Plugin;
+import fiji.plugin.trackmate.Model;
+import fiji.plugin.trackmate.SelectionModel;
+import fiji.plugin.trackmate.Settings;
+import fiji.plugin.trackmate.TrackMatePlugIn_;
+import fiji.plugin.trackmate.visualization.TrackMateModelView;
+import fiji.plugin.trackmate.visualization.ViewFactory;
 
-    import fiji.plugin.trackmate.Model;
-    import fiji.plugin.trackmate.SelectionModel;
-    import fiji.plugin.trackmate.Settings;
-    import fiji.plugin.trackmate.TrackMatePlugIn_;
-    import fiji.plugin.trackmate.visualization.TrackMateModelView;
-    import fiji.plugin.trackmate.visualization.ViewFactory;
+@Plugin( type = ViewFactory.class )
+public class EventLoggerViewFactory implements ViewFactory
+{
 
-    @Plugin( type = ViewFactory.class )
-    public class EventLoggerViewFactory implements ViewFactory
-    {
+	private static final String INFO_TEXT = "<html>This factory instantiates an event logger view for TrackMate, that uses the IJ log window to just echo all the event sent by the model.</html>";
 
-        private static final String INFO_TEXT = "<html>This factory instantiates an event logger view for TrackMate, that uses the IJ log window to just echo all the event sent by the model.</html>";
+	public static final String KEY = "EVENT_LOGGER_VIEW";
 
-        public static final String KEY = "EVENT_LOGGER_VIEW";
+	@Override
+	public String getInfoText()
+	{
+		return INFO_TEXT;
+	}
 
-        @Override
-        public String getInfoText()
-        {
-            return INFO_TEXT;
-        }
+	@Override
+	public ImageIcon getIcon()
+	{
+		return null;
+	}
 
-        @Override
-        public ImageIcon getIcon()
-        {
-            return null;
-        }
+	@Override
+	public String getKey()
+	{
+		return KEY;
+	}
 
-        @Override
-        public String getKey()
-        {
-            return KEY;
-        }
+	@Override
+	public String getName()
+	{
+		return "Event logger view";
+	}
 
-        @Override
-        public String getName()
-        {
-            return "Event logger view";
-        }
+	@Override
+	public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
+	{
+		return new EventLoggerView( model, selectionModel );
+	}
 
-        @Override
-        public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
-        {
-            return new EventLoggerView( model, selectionModel );
-        }
+	/*
+	 * MAIN METHOD
+	 */
 
-        /*
-         * MAIN METHOD
-         */
+	public static void main( final String[] args )
+	{
+		ImageJ.main( args );
+		new ImagePlus( "../fiji/samples/FakeTracks.tif" ).show();
+		new TrackMatePlugIn_().run( "" );
+	}
 
-        public static void main( final String[] args )
-        {
-            ImageJ.main( args );
-            new ImagePlus( "../fiji/samples/FakeTracks.tif" ).show();
-            new TrackMatePlugIn_().run( "" );
-        }
-
-    }
+}
+```
 
 <figure><img src="/media/plugins/trackmate/trackmate-customview-2.png" title="TrackMate_CustomView_2.png" width="200" alt="TrackMate_CustomView_2.png" /><figcaption aria-hidden="true">TrackMate_CustomView_2.png</figcaption></figure>
 
@@ -219,13 +225,13 @@ There is way to do that, just by tuning the SciJava annotation:
 
 So editing the header of our ViewFactory to make it look like:
 
-    @Plugin( type = ViewFactory.class, visible = false )
-    public class EventLoggerViewFactory implements ViewFactory
+```java
+@Plugin( type = ViewFactory.class, visible = false )
+public class EventLoggerViewFactory implements ViewFactory
+```
 
 is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](/plugins/trackmate/custom-track-feature-analyzer-algorithms). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
 
 But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
 
 {% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:51, 17 March 2014 (CDT)
-
-

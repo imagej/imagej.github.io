@@ -44,37 +44,37 @@ A skeleton ScriptHeader is provided below. Simply resolve the marked TODOs and y
 
 ## Prototype ScriptHeader
 
-    import org.scijava.plugin.Plugin;
-    import org.scijava.script.AbstractScriptHeader;
-    import org.scijava.script.ScriptHeader;
-    import org.scijava.script.ScriptLanguage;
+```java
+import org.scijava.plugin.Plugin;
+import org.scijava.script.AbstractScriptHeader;
+import org.scijava.script.ScriptHeader;
+import org.scijava.script.ScriptLanguage;
 
-    //NB: The @Plugin annotation allows this ScriptHeader to be discovered
-    //TODO give this header class an appropriate name
+//NB: The @Plugin annotation allows this ScriptHeader to be discovered
+//TODO give this header class an appropriate name
 
-    @Plugin(type = ScriptHeader.class)
-    public class MyScriptHeader extends AbstractScriptHeader {
+@Plugin(type = ScriptHeader.class)
+public class MyScriptHeader extends AbstractScriptHeader {
 
-    // -- ScriptHeader Methods --
+// -- ScriptHeader Methods --
 
-      @Override
-      public String getHeader() {
-        // TODO Return the text you would like to enter at the top
-        // of scripts of the target language.
-        return null;
-      }
+  @Override
+  public String getHeader() {
+    // TODO Return the text you would like to enter at the top
+    // of scripts of the target language.
+    return null;
+  }
 
-      // NB: If AbstractScriptHeader is not extended you will not implement this section
-      // but instead should override the public boolean supports(T) method.
+  // NB: If AbstractScriptHeader is not extended you will not implement this section
+  // but instead should override the public boolean supports(T) method.
 
-      // -- AbstractScriptHeader methods --
+  // -- AbstractScriptHeader methods --
 
-      @Override
-      protected Class<? extends ScriptLanguage> handledType() {
-        // TODO return the ScriptLanguage class you would like to
-        // receive this header string.
-        return null;
-      }
-    }
-
-
+  @Override
+  protected Class<? extends ScriptLanguage> handledType() {
+    // TODO return the ScriptLanguage class you would like to
+    // receive this header string.
+    return null;
+  }
+}
+```

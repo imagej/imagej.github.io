@@ -85,26 +85,28 @@ DMP is a simple data format for the storage of 2D images. It is used at IBT from
 
 A short [MATLAB](/scripting/matlab) code for writing such an image variable "image" with the size "width" and "heigth" is given below:
 
-     
-    fid=fopen(file,'w');
-    fwrite(fid,size(image,2),'uint16');
-    fwrite(fid,size(image,1),'uint16');
-    fwrite(fid,0,'uint16');
-    fwrite(fid,image','float32');
-    fclose(fid);
+```java
+fid=fopen(file,'w');
+fwrite(fid,size(image,2),'uint16');
+fwrite(fid,size(image,1),'uint16');
+fwrite(fid,0,'uint16');
+fwrite(fid,image','float32');
+fclose(fid);
+```
 
 Reading the a DMP image with [MATLAB](/scripting/matlab) can be achieved like this:
 
-     
-    fid=fopen(filename);
-    dim=fread(fid,3,'uint16');
-    width=dim(1);
-    height=dim(2);
-    data=zeros(height,width);
-    for ii=1:height
-        data(:,ii)=fread(fid,width,'float32');
-    end
-    fclose(fid);
+```java
+fid=fopen(filename);
+dim=fread(fid,3,'uint16');
+width=dim(1);
+height=dim(2);
+data=zeros(height,width);
+for ii=1:height
+    data(:,ii)=fread(fid,width,'float32');
+end
+fclose(fid);
+```
 
 ## Filtering
 
@@ -114,7 +116,7 @@ The filtering functions accept one or more images or stacks of images where some
 
 The mechanism of heat diffusion has been used as the basics for image filtering. Thereby, the image values are understood as temperature values and image blurring represents the process of heat transport blurring. The key idea is the introduction of anisotropy, i.e. of diffusion characteristics that are depending on the pixel environment and the transfer direction. The local anisotropy is assigned according to the direction and magnitude of the image gradient, introducing high diffusion rates at low gradients and low diffusion rates at high gradients. Hence, the anisotropic diffusion characteristics are defined according to an ellipse in 2D or an ellipsoid in 3D perpendicular to the gradient vector.
 
-The corresponding partial differential equation had first been numerically approached in 1990 by a fast algorithm of Perona and Malik \[Perona1990\] by defining the elliptic diffusion shapes by means of simple box filtering. Way better results can be obtained with the technique of Tschumperlé and Deriche \[Tschmperlé2005\] from 2005 by setting the tensor field according to the Eigenvalues and Eigenvectors in order to drive the diffusion. As expected, this approach is however more time consuming.
+The corresponding partial differential equation had first been numerically approached in 1990 by a fast algorithm of Perona and Malik [Perona1990] by defining the elliptic diffusion shapes by means of simple box filtering. Way better results can be obtained with the technique of Tschumperlé and Deriche [Tschmperlé2005] from 2005 by setting the tensor field according to the Eigenvalues and Eigenvectors in order to drive the diffusion. As expected, this approach is however more time consuming.
 
 {::nomarkdown}
 <table>
@@ -138,7 +140,7 @@ The filter works in 2D as well as in 3D.
 
 ### Canny Edge
 
-In 1986, J. Canny has proposed an excellent edge detection filter \[Canny1986\] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
+In 1986, J. Canny has proposed an excellent edge detection filter [Canny1986] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
 
 {::nomarkdown}
 <table>
@@ -162,15 +164,15 @@ The results of a Canny filtered image of a valve image is shown in the upper fig
 
 In image analysis, mainly two algorithms are prominent: the k-means algorithm and the mean shift algorithm. They have been implemented together with a third one, fuzzy c-means clustering.
 
-The k-means algorithm \[Kanungo2002\] minimizes the square sum of the distances of each data point to its assigned cluster center. It starts with a random association of the data points to an initially determined number of clusters. Using an iterative optimization procedure it converges quickly to stable data assignments to clusters. K-means clustering is popular because it is very fast.
+The k-means algorithm [Kanungo2002] minimizes the square sum of the distances of each data point to its assigned cluster center. It starts with a random association of the data points to an initially determined number of clusters. Using an iterative optimization procedure it converges quickly to stable data assignments to clusters. K-means clustering is popular because it is very fast.
 
-The mean shift clustering method \[Funkunaga1975\] optimizes the cluster centers such that the data densities within the clusters which are maximized. Within kernels of a given size around each data point, the centeroid of all points inside of the kernel is determined and the sphere shifted accordingly. After iterative repetition of this process, the sphere remains stationary. The data point is then assigned to this final cluster center. The algorithm can be understood as like the walk to the closest peak in a mountain landscape. Within a certain perimeter, the highest target is being located and reached. From thereon, the next target within the same perimeter is located and reached again. This process is iteratively carried on until the top within the selected perimeter is reached. Depending on the perimeter size, different hills or sub-hills will be achieved. If the perimeter is larger than 400km, you will reach the Mont Blanc from anywhere in Switzerland. If it is larger than 20'000km, the Mount Everest will be reached from any point in the world. If its size is only a some meters, you will probably end up on the top of a building.
+The mean shift clustering method [Funkunaga1975] optimizes the cluster centers such that the data densities within the clusters which are maximized. Within kernels of a given size around each data point, the centeroid of all points inside of the kernel is determined and the sphere shifted accordingly. After iterative repetition of this process, the sphere remains stationary. The data point is then assigned to this final cluster center. The algorithm can be understood as like the walk to the closest peak in a mountain landscape. Within a certain perimeter, the highest target is being located and reached. From thereon, the next target within the same perimeter is located and reached again. This process is iteratively carried on until the top within the selected perimeter is reached. Depending on the perimeter size, different hills or sub-hills will be achieved. If the perimeter is larger than 400km, you will reach the Mont Blanc from anywhere in Switzerland. If it is larger than 20'000km, the Mount Everest will be reached from any point in the world. If its size is only a some meters, you will probably end up on the top of a building.
 
-Fuzzy c-means clustering \[Bezdek1984\] allows a data point to be assigned to more than one clusters. The affiliation to a cluster is given by a membership value ranging from zero to one. The sum of all memberships for a data point is unity. Hence, the assignment of a data point to a class is not unequivocal but relative. The degree of belonging to a class is related inversely to the distance from the data point to the cluster. It also depends on a parameter that controls how much weight is given to the winning cluster. With fuzzy c-means, the centroid of a cluster is the mean of all points, weighted by their degree of belonging to the cluster. The finally winning class is the one with the highest ranking. The process of the fuzzy c-means algorithm is very similar to the k-means algorithm.
+Fuzzy c-means clustering [Bezdek1984] allows a data point to be assigned to more than one clusters. The affiliation to a cluster is given by a membership value ranging from zero to one. The sum of all memberships for a data point is unity. Hence, the assignment of a data point to a class is not unequivocal but relative. The degree of belonging to a class is related inversely to the distance from the data point to the cluster. It also depends on a parameter that controls how much weight is given to the winning cluster. With fuzzy c-means, the centroid of a cluster is the mean of all points, weighted by their degree of belonging to the cluster. The finally winning class is the one with the highest ranking. The process of the fuzzy c-means algorithm is very similar to the k-means algorithm.
 
-Expectation-maximization (EM) clustering \[Dempster1977\] iteratively finds the maximum likelyhood estimation of a Gaussian distribution fit of the original N-dimensional distribution of pixel values. The EM iteration alternates between performing an expectation (E) step, which creates a function for the expectation of the log-likelihood evaluated using the current estimate for the parameters, and a maximization (M) step, which computes parameters maximizing the expected log-likelihood found on the E step.
+Expectation-maximization (EM) clustering [Dempster1977] iteratively finds the maximum likelyhood estimation of a Gaussian distribution fit of the original N-dimensional distribution of pixel values. The EM iteration alternates between performing an expectation (E) step, which creates a function for the expectation of the log-likelihood evaluated using the current estimate for the parameters, and a maximization (M) step, which computes parameters maximizing the expected log-likelihood found on the E step.
 
-The plugin also allows clustering by using ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#image-clustering) plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here\|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
+The plugin also allows clustering by using ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#image-clustering) plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
 
 As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
@@ -198,7 +200,7 @@ Clustering can also be applied to one dimensional spaces (i.e. from a single gra
 
 ### Disconnect Particles
 
-In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented \[Münch2006\]. If requires a parameter k ranking from \[0...1\] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
+In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented [Münch2006]. If requires a parameter k ranking from [0...1] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
 
 {::nomarkdown}
 <table>
@@ -218,7 +220,7 @@ Results from cement grains acquired by 3D FIB-nanotomography are displayed in th
 
 ### Distance Transform
 
-Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach \[Saito1994,Meijster2000\] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
+Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach [Saito1994,Meijster2000] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
 
 {::nomarkdown}
 <table>
@@ -254,7 +256,7 @@ In the upper figure, a binary mask from cement particles (left) is processed by 
 
 ### FFT 2D 3D
 
-The fast, well known and widely used Cooley-Tukey radix-2 algorithm for the calculation of the discrete fast Fourier transform (FFT) only works on data whose size is equal to a power of two. In order to provide FFT on data of different size, the data is usually extended to the next higher power of two. In many cases, this approach is sufficient, in particular if the periodical nature of the transformed data function is not relevant. However, if the period length is important and must be left unchanged, FFT on the original data size is required. This can be achieved by using the Bluestein algorithm \[Bluestein1968,Rabiner1969\]. Since to our best knowledge, there is no ImageJ plugin available that permits FFT for non-radix-2 sized periods, this plugin has been built. It correctly calculates the complex FFT on 2D and 3D images of arbitrary size. It optionally provides the real and the imaginary part, or the magnitude and the angle images. Moreover, it allows a logarithmic or square-root based scaling to be introduced in order to lower the contrast among the FFT coefficients. This feature is useful if the FFT function is used for display purpose. The reversibility of the FFT transform is supported for all these options.
+The fast, well known and widely used Cooley-Tukey radix-2 algorithm for the calculation of the discrete fast Fourier transform (FFT) only works on data whose size is equal to a power of two. In order to provide FFT on data of different size, the data is usually extended to the next higher power of two. In many cases, this approach is sufficient, in particular if the periodical nature of the transformed data function is not relevant. However, if the period length is important and must be left unchanged, FFT on the original data size is required. This can be achieved by using the Bluestein algorithm [Bluestein1968,Rabiner1969]. Since to our best knowledge, there is no ImageJ plugin available that permits FFT for non-radix-2 sized periods, this plugin has been built. It correctly calculates the complex FFT on 2D and 3D images of arbitrary size. It optionally provides the real and the imaginary part, or the magnitude and the angle images. Moreover, it allows a logarithmic or square-root based scaling to be introduced in order to lower the contrast among the FFT coefficients. This feature is useful if the FFT function is used for display purpose. The reversibility of the FFT transform is supported for all these options.
 
 The figure to the right shows a sample FIB-nt image from cement paste (left) with a width of 427 and a height of 768 pixels. The magnitudes and angles of its Fourier transform is scaled by a logarithmic funcion for improving the visibility of the small coefficients. The inverse FFT transform of the center and right images reconstructs the original function (left) again without any loss of precision.
 
@@ -266,22 +268,20 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
 
-[right\|440px\|thumb\|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg) For instance,
+[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg) For instance,
 
-     
-    (i0 + i1 + i2) / 3
+```python
+(i0 + i1 + i2) / 3
+```
 
 will return an image providing the mean value of the images i0, i1 and i2 (see rightmost image to the right).  
-  
-  
-  
-  
-  
-[right\|300px\|thumb\|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg) The operation
 
-     
-    (i0 > 170)? 
-        java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
+[right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg) The operation
+
+```python
+(i0 > 170)? 
+	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
+```
 
 displays a mask where regions higher than 170 are red.  
   
@@ -290,21 +290,23 @@ displays a mask where regions higher than 170 are red.
   
   
   
-[right\|440px\|thumb\|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg) The operation
+[right|440px|thumb|left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2](Image_xFig6_7_03.jpg) The operation
 
-     
-    (i0==255)? -16711936 : 
-        ((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
+```python
+(i0==255)? -16711936 : 
+	((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
+```
 
 takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  
   
   
   
   
-[right\|300px\|thumb\|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg) The operation
+[right|300px|thumb|left: image i0, right: power of two of image i0](Image_xFig6_7_04.jpg) The operation
 
-     
-    Math.pow(i0, 2.)
+```java
+Math.pow(i0, 2.)
+```
 
 yields the power of two of the image i0.  
   
@@ -313,11 +315,11 @@ yields the power of two of the image i0.
   
   
   
-[right\|300px\|thumb\|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg) Or the operation
+[right|300px|thumb|left: image i0, right: copy of the image i0 overlayed by a horizontal ramp](Image_xFig6_7_05.jpg) Or the operation
 
-     
-    i0 + x
-
+```python
+i0 + x
+```
 will calculate a copy of the image i0 overlayed by a horizontal ramp.  
   
   
@@ -326,10 +328,11 @@ will calculate a copy of the image i0 overlayed by a horizontal ramp.
   
   
   
-[right\|300px\|thumb\|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg) And the code line
+[right|300px|thumb|left: image i0, right: ramp with the same size as image i0](Image_xFig6_7_06.jpg) And the code line
 
-     
-    x // i0
+```python     
+x // i0
+```
 
 creates the ramp only.
 
@@ -337,10 +340,11 @@ In this case, instead of a simple command "x" (which would create no image), a c
   
   
   
-[right\|350px\|thumb\|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg) The code
+[right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)](Image_xFig6_7_07.jpg) The code
 
-     
-    Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
+```python     
+Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
+```
 
 calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  
   
@@ -349,10 +353,11 @@ calculates an image of the same size as image i0, but containing only a halo cen
   
   
   
-[right\|300px\|thumb\|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg) The line
+[right|300px|thumb|left: image i0, right: binary thresholding of i0 by value 128](Image_xFig6_7_08.jpg) The line
 
-     
-    (i0 >= 128)? 255 : 0
+```python
+(i0 >= 128)? 255 : 0
+```
 
 creates a binary image mask by thresholding the image i0 with the value 128.  
   
@@ -362,93 +367,98 @@ creates a binary image mask by thresholding the image i0 with the value 128.
   
   
   
-[right\|300px\|thumb\|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg) The command
+[right|300px|thumb|left: image i0, right: circular mask around (100, 200)](Image_xFig6_7_09.jpg) The command
 
-     
-    (Math.sqrt(Math.pow(150 - x, 2) + 
-     Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
-
+```python
+(Math.sqrt(Math.pow(150 - x, 2) + 
+ Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
+```
 creates an image of the same size as i0 containing a circular mask around point (100, 200). The comment "// i0" is necessary for the definition of the image size to the size of i0.  
   
   
   
   
   
-[right\|320px\|thumb\|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg)
+[right|320px|thumb|left: image i3, right: content of image i3 inside of a circle only](Image_xFig6_7_10.jpg)
 
 The code
 
-     
-    (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
-     Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
-
+```python
+(Math.sqrt(Math.pow(mx / 2 - x, 2) + 
+ Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
+```
 takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).  
   
   
   
   
   
-[right\|360px\|thumb\|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg)
+[right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1](Image_xFig6_7_11.jpg)
 
 Finally,
 
-     
-    (((int)i0 ^ (int)i1) > 0)? 255 : 0
+```python   
+(((int)i0 ^ (int)i1) > 0)? 255 : 0
+```
 
 performs an exclusive OR operation of image i0 and image i1.
 
 The above examples show that any pixel- or voxel-wise operation can be provided in a single command line as soon as it follows the Java notation. The plugin is however able to do much more. Instead of pixelwise operation mode, image-wide Java code fragments can be provided. For example,
 
-     
-    float[] out = new float[i0.length];
-    for (int ii = 0; ii < out.length; ii++) 
-        out[ii] = (i0[ii] + i1[ii] + i2[ii]) / 3f;
-    return new Object[] { m0, out };
+```java
+float[] out = new float[i0.length];
+for (int ii = 0; ii < out.length; ii++) 
+	out[ii] = (i0[ii] + i1[ii] + i2[ii]) / 3f;
+return new Object[] { m0, out };
+```
 
-performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right\|350px\|thumb\|left: image i0, right: message box with number of pixel values &gt;= 10](Image_xFig6_7_13.jpg) The code fragment
+performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. [right|350px|thumb|left: image i0, right: message box with number of pixel values &gt;= 10](Image_xFig6_7_13.jpg) The code fragment
 
-     
-    float value = 10f;
-    int[] mm = m0;
-    int anz = 0;
-    for (int ii = 0; ii < i0.length; ii++) 
-        if (i0[ii] >= value) anz++;
-    IJ.showMessage(" ", "Number of pixels: " + anz);
-    return new Object[] { mm, null };
+```java
+float value = 10f;
+int[] mm = m0;
+int anz = 0;
+for (int ii = 0; ii < i0.length; ii++) 
+	if (i0[ii] >= value) anz++;
+IJ.showMessage(" ", "Number of pixels: " + anz);
+return new Object[] { mm, null };
+```
 
-[right\|500px\|thumb\|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg) Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
+[right|500px|thumb|left: image i3, center: image i5, right: image i5 embedded at the center area of image i3](Image_xFig6_7_14.jpg) Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
   
   
   
   
 Or the code
 
-     
-    int offx = (m3[0] - m5[0]) / 2;
-    int offy = (m3[1] - m5[1]) / 2;
-    float[] out = (float[])i3.clone();
-    for (int jj = 0; jj < m5[1]; jj++) 
-        for (int ii = 0; ii < m5[0]; ii++) 
-        out[ii + offx + (jj + offy) * m3[0]] = 
-            (i3[ii+offx + (jj+offy) * m3[0]] + 
-             i5[ii + jj * m5[0]]) / 2f;
-    return new Object[] { m3, out };
+```java
+int offx = (m3[0] - m5[0]) / 2;
+int offy = (m3[1] - m5[1]) / 2;
+float[] out = (float[])i3.clone();
+for (int jj = 0; jj < m5[1]; jj++) 
+	for (int ii = 0; ii < m5[0]; ii++) 
+	out[ii + offx + (jj + offy) * m3[0]] = 
+		(i3[ii+offx + (jj+offy) * m3[0]] + 
+		 i5[ii + jj * m5[0]]) / 2f;
+return new Object[] { m3, out };
+```
 
 takes the smaller image i5 and adds it to the center of the larger image i3.  
   
-[right\|500px\|thumb\|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg) The code fragment
+[right|500px|thumb|left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1](Image_xFig6_7_15.jpg) The code fragment
 
-     
-    double mean = 0;
-    int anz = 0;
-    for (int ii = 0; ii < m0[0] * m0[1]; ii++) 
-        if (i1[ii] > 127) {
-            mean += i0[ii];
-            anz++;
-        }
-    mean /= anz;
-    IJ.showMessage("mean value: " + mean);
-    return null;
+```java     
+double mean = 0;
+int anz = 0;
+for (int ii = 0; ii < m0[0] * m0[1]; ii++) 
+	if (i1[ii] > 127) {
+		mean += i0[ii];
+		anz++;
+	}
+mean /= anz;
+IJ.showMessage("mean value: " + mean);
+return null;
+```
 
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
 
@@ -456,58 +466,60 @@ just calculates the overall mean value of image i0 within the ROI defined by i1 
   
 Moreover, it is even possible to create your own images without any input image:
 
-     
-    int mx = 256;
-    int my = 200;
-    float[] out = new float[mx * my];
-    for (int jj = 0; jj < my; jj++) 
-        for (int ii = 0; ii < mx; ii++) out[ii + jj * mx] = ii;
-    return new Object[] { new int[] { mx, my }, out };
+```java     
+int mx = 256;
+int my = 200;
+float[] out = new float[mx * my];
+for (int jj = 0; jj < my; jj++) 
+	for (int ii = 0; ii < mx; ii++) out[ii + jj * mx] = ii;
+return new Object[] { new int[] { mx, my }, out };
+```
 
 creates an image containing a ramp (see image to the right), or
 
 <img src="/media/plugins/xfig6-7-17.jpg" width="200"/>
 
-     
-    int mx = 256;
-    int my = 200;
-    float[] out = new float[mx * my];
-    for (int jj = 0; jj < my; jj++) 
-        for (int ii = 0; ii < mx; ii++) {
-            if (Math.sqrt(Math.pow(ii - mx / 2, 2) + 
-                          Math.pow(jj - my / 2, 2)) < 80) 
-                out[ii + jj * mx] = 255;
-        }
-    return new Object[] { new int[] { mx, my }, out };
+```java     
+int mx = 256;
+int my = 200;
+float[] out = new float[mx * my];
+for (int jj = 0; jj < my; jj++) 
+	for (int ii = 0; ii < mx; ii++) {
+		if (Math.sqrt(Math.pow(ii - mx / 2, 2) + 
+					  Math.pow(jj - my / 2, 2)) < 80) 
+			out[ii + jj * mx] = 255;
+	}
+return new Object[] { new int[] { mx, my }, out };
+```
 
 <img src="/media/plugins/xfig6-7-18.jpg" title="fig:xFig6_7_18.jpg" width="380" alt="xFig6_7_18.jpg" /> creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
 
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
-     
-    int max = 255;
-    int mx = 512;
-    int my = 512;
-    float[] out = new float[mx * my];
-    for (int jj = 0; jj < my; jj++) 
-        for (int ii = 0; ii < mx; ii++) {
-            double px = -2. + (double)ii / 200.;
-            double py = -1. + (double)jj / 255.;
+```java
+int max = 255;
+int mx = 512;
+int my = 512;
+float[] out = new float[mx * my];
+for (int jj = 0; jj < my; jj++) 
+	for (int ii = 0; ii < mx; ii++) {
+		double px = -2. + (double)ii / 200.;
+		double py = -1. + (double)jj / 255.;
 
-            double zx = 0.0, zy = 0.0;
-            double zx2 = 0.0, zy2 = 0.0;
-            int value = 0;
-            while (value < max && zx2 + zy2 < 4.0) {
-                zy = 2.0 * zx * zy + py;
-                zx = zx2 - zy2 + px;
-                zx2 = zx * zx;
-                zy2 = zy * zy;
-                value++;
-            }
-            out[ii + jj * mx] = 50f * (float)Math.log(value);
-        }
-    return new Object[] { new int[] { mx, my }, out };
-
+		double zx = 0.0, zy = 0.0;
+		double zx2 = 0.0, zy2 = 0.0;
+		int value = 0;
+		while (value < max && zx2 + zy2 < 4.0) {
+			zy = 2.0 * zx * zy + py;
+			zx = zx2 - zy2 + px;
+			zx2 = zx * zx;
+			zy2 = zy * zy;
+			value++;
+		}
+		out[ii + jj * mx] = 50f * (float)Math.log(value);
+	}
+return new Object[] { new int[] { mx, my }, out };
+```
 This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
 
 ### Labeling 2D 3D
@@ -520,7 +532,7 @@ An example of labeling is given in the center and right images in the ["Disconne
 
 ### Median 2D 3D
 
-This plugin supports conventional as well as geometric 2D and 3D median filtering for images and image volumes. The geometric median filtering is achieved according to the algorithm of E.V.Weiszfeld \[Weiszfeld1937\]. Unlike the conventional median filtering, geometric median filtering can be achieved for a multidimensional vector space rather than for a one-dimensional set of values only. That is, if multiple images exist at a single location, they can be filtered by using the common N-dimensional geometrical distance measure for finding the median.
+This plugin supports conventional as well as geometric 2D and 3D median filtering for images and image volumes. The geometric median filtering is achieved according to the algorithm of E.V.Weiszfeld [Weiszfeld1937]. Unlike the conventional median filtering, geometric median filtering can be achieved for a multidimensional vector space rather than for a one-dimensional set of values only. That is, if multiple images exist at a single location, they can be filtered by using the common N-dimensional geometrical distance measure for finding the median.
 
 {% include img src="xfig6-09-1-phasesmedianfiltering" width="500" caption="Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors." %}
 
@@ -566,12 +578,12 @@ The results of this kind of correction is displayed in the above figure. To the 
 
 The roundness value of a connected object can be defined as the ratio of the actual size of the object and the size of the virtual sphere spanned by the largest diameter of that object.
 
-```
+```java
 2D: rnd = 4. * size / (diameter^2 * PI)
 3D: rnd = 6. * size / (diameter^3 * PI)
 ```
 
-Other well-known definitions (e.g. the definition of sphericity by Wadell \[Wadell1935\]) are based on the surface area of the sphere with the same volume as the object, relative to its actual surface area. The calculation of the surface area on pixelized objects is not straight forward, whereas the calculation of the volume size is just the number of object pixels or voxels. That's the reason why we prefer the former roundness definition. Though, another useful option for pixelized objects could be the roundness definition of ISO which is based on the ratio between inscribed and circumscribed circles of an object, i.e. the minimum and maximum sizes for circles fitting inside and enclosing an object.
+Other well-known definitions (e.g. the definition of sphericity by Wadell [Wadell1935]) are based on the surface area of the sphere with the same volume as the object, relative to its actual surface area. The calculation of the surface area on pixelized objects is not straight forward, whereas the calculation of the volume size is just the number of object pixels or voxels. That's the reason why we prefer the former roundness definition. Though, another useful option for pixelized objects could be the roundness definition of ISO which is based on the ratio between inscribed and circumscribed circles of an object, i.e. the minimum and maximum sizes for circles fitting inside and enclosing an object.
 
 Roundness values are useful to provide a metric of how closely the shape of an object approaches a circle (2D) or a sphere (3D), thus for rating object shapes.
 
@@ -579,7 +591,7 @@ Roundness values are useful to provide a metric of how closely the shape of an o
 
 ### Skeletonization 2D 3D
 
-In shape analysis, topological features can be captured from skeletons of the masks. Skeletons have several different mathematical definitions in the technical literature. Many different algorithms have been proposed. Many of them lack in retaining the original topology. A good conservation of the topology in 2D as well as in 3D was the main reason for the choice of the algorithm (Palagyi, \[Palagyi1998\]). This feature is displayed in the figure below, where a set of geometrical 3D objects is provided (left). After skeletonization (center), the topology is mainly being preserved. If the diameter of the skeletoized pipes is inflated up to the values from the distance transform of original volume (right), the thus restored objects obtain high similarity to the original ones.
+In shape analysis, topological features can be captured from skeletons of the masks. Skeletons have several different mathematical definitions in the technical literature. Many different algorithms have been proposed. Many of them lack in retaining the original topology. A good conservation of the topology in 2D as well as in 3D was the main reason for the choice of the algorithm (Palagyi, [Palagyi1998]). This feature is displayed in the figure below, where a set of geometrical 3D objects is provided (left). After skeletonization (center), the topology is mainly being preserved. If the diameter of the skeletoized pipes is inflated up to the values from the distance transform of original volume (right), the thus restored objects obtain high similarity to the original ones.
 
 {::nomarkdown}
 <table>
@@ -597,7 +609,7 @@ In shape analysis, topological features can be captured from skeletons of the ma
 
 ### Stripe Filter
 
-Striping artifacts may occur due to undesired effects during data acquisition. Defect detector pixels might be the reason of stripes in the projections of computed tomography measurements resulting in ring artifacts after reconstruction. Waterfall artifacts might be the reason for stripes when accessing 3D data using FIB-nanotomography. Both types of artifacts can be erased by a technique for stripe filtering based on the combination of wavelet and Fourier transform \[Münch2009\]. The potential of the stripe filtering plugin is shown in the figure below by applying it to a gray level image (top) and to a RGB image (bottom).
+Striping artifacts may occur due to undesired effects during data acquisition. Defect detector pixels might be the reason of stripes in the projections of computed tomography measurements resulting in ring artifacts after reconstruction. Waterfall artifacts might be the reason for stripes when accessing 3D data using FIB-nanotomography. Both types of artifacts can be erased by a technique for stripe filtering based on the combination of wavelet and Fourier transform [Münch2009]. The potential of the stripe filtering plugin is shown in the figure below by applying it to a gray level image (top) and to a RGB image (bottom).
 
 {::nomarkdown}
 <table>
@@ -635,13 +647,13 @@ This plugin provides image transforms for 2D images and for 3D image volumes by 
 
 This can be performed by using an operations strings syntax containing translation ('t'), rotation ('r') and / or scaling ('s') operation(s). Each operation is followed by its comma separated translation, rotation or scaling values. For instance, an operation
 
-```
+```java
 t10,-20r30
 ```
 
 defines a translation by (10, -20) followed by a rotation by 30 in degrees in 2D around the original center point. Likewise,
 
-```
+```java
 s0.5,0.8,1.5p0,0,0r-10,20,30t11,-22,33
 ```
 
@@ -711,7 +723,7 @@ The plugins of this section achieve quantitative evaluation on image values and 
 
 ### Particle Size Distribution
 
-This plugins calculates the particle size distribution (PSD) from a stack of images containing already segmented and labeled particles \[Münch2006\]. Either single images containing 2D particles, or stacks of images representing 3D volumes can be processed.
+This plugins calculates the particle size distribution (PSD) from a stack of images containing already segmented and labeled particles [Münch2006]. Either single images containing 2D particles, or stacks of images representing 3D volumes can be processed.
 
 The following features can be calculated:
 
@@ -751,7 +763,7 @@ An example of a 2D particle image, of its mask and some particle evaluations is 
 
 ### Phase Image Evaluation
 
-This plugins provides an evaluation of phase images \[Leemann2006, Leemann2010\] containing labeled phases. For instance, labeled images might be created interactively with the help of the plugin ["Segment Phases 3D"](#segment-phases-3d), or even automatically with the plugin ["Cluster Image"](#cluster-image).
+This plugins provides an evaluation of phase images [Leemann2006, Leemann2010] containing labeled phases. For instance, labeled images might be created interactively with the help of the plugin ["Segment Phases 3D"](#segment-phases-3d), or even automatically with the plugin ["Cluster Image"](#cluster-image).
 
 The phase image evaluation calculates some parameters of all phases, including the percental phase contents and the phase areas. Additionally, mean image values for each phase can be provided, if one or more gray value images associated to the current phase image are provided.
 
@@ -777,9 +789,9 @@ An image defining some phases is given in the above figure (top, left). The cyan
 
 ### Pore Size Distribution
 
-This plugins calculates the pore size distribution (PSD) for a pore structure \[Münch2008\], i.e. the distribution of the pore radii. The PSD can be calculated either in 2D or in 3D if the program is running on a stack of images. The pore masks must be prepared beforehand such that a simple thresholding procedure is capable to separate the locations of the pore from the material. The PSD calculation will be running on the pore phase.
+This plugins calculates the pore size distribution (PSD) for a pore structure [Münch2008], i.e. the distribution of the pore radii. The PSD can be calculated either in 2D or in 3D if the program is running on a stack of images. The pore masks must be prepared beforehand such that a simple thresholding procedure is capable to separate the locations of the pore from the material. The PSD calculation will be running on the pore phase.
 
-PDS's can be defined in different ways and must be chosen according to the specific requests \[Münch2008\]. The following PSD types can be calculated:
+PDS's can be defined in different ways and must be chosen according to the specific requests [Münch2008]. The following PSD types can be calculated:
 
 -   Discrete PSD: the generally used definition of a PSD from image data. The pores are regarded as discrete object. At each single pore, its pore area or pore volume is calculated and the radius of its circle- or sphere-equivalent object given.
 -   Continuous PSD: the pore space is categorized into regions of different radii in the sense that the regions can be filled with balls of different radii. The sizes of those radii are then attached to the respective locations. The histogram of radii then acts as continuous PSD.
@@ -877,7 +889,7 @@ The segmentation engine is visualized in the figure to the right while operating
 
 This plugin provides a 3D viewer of image and skeleton masks. The original data base should be a stack of images. An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D. 3D skeletonization can be performed by previously calling the ["Skeletonization 2D 3D"](#skeletonization-2d-3d) plugin.
 
-For 3D shading, the image masks can be either triangulated or voxelized. The triangulation is performed by using the well-known marching cubes algorithm \[Lorensen1987\], while voxelization is performed by a technique of Artzy et al (see reference below).
+For 3D shading, the image masks can be either triangulated or voxelized. The triangulation is performed by using the well-known marching cubes algorithm [Lorensen1987], while voxelization is performed by a technique of Artzy et al (see reference below).
 
 The viewer is resizable. The 3D scene can be rotated, translated, or scaled. Rotation can be achieved with the left mouse button. Translation in x, y can be achieved by the right mouse button. Translation in z is sometimes useful if the viewer is too close to the scene. It can be achieved by the middle mouse button. Scaling is achieved by simultaneously pressing down the <shift> key and the left mouse button.
 
