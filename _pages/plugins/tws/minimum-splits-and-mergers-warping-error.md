@@ -15,27 +15,27 @@ In the classic [ warping error](/plugins/tws/topology-preserving-warping-error),
 
 The minimum splits and mergers warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in [Beanshell script](/scripting/beanshell):
 
-    import trainableSegmentation.metrics.WarpingError;
+```javascript
+import trainableSegmentation.metrics.WarpingError;
 
-    // original labels
-    originalLabels = IJ.openImage("/path/original-labels.tif");
+// original labels
+originalLabels = IJ.openImage("/path/original-labels.tif");
 
-    // proposed (new) labels
-    proposedLabels = IJ.openImage("/path/proposed-labels.tif");
+// proposed (new) labels
+proposedLabels = IJ.openImage("/path/proposed-labels.tif");
 
-    // assign original labels and proposal to the metric
-    metric = new WarpingError( originalLabels, proposedLabels );
+// assign original labels and proposal to the metric
+metric = new WarpingError( originalLabels, proposedLabels );
 
-    // calculate metric for thresholds 0.0 to 0.9, in steps of 0.1
-    IJ.log("\nCalculating warping error by minimizing splits and mergers...");
-    metric = new WarpingError( originalLabels, proposedLabels );    
-    warpingError = metric.getMinimumSplitsAndMergersErrorValue( 0.0, 0.9, 0.1, false );
+// calculate metric for thresholds 0.0 to 0.9, in steps of 0.1
+IJ.log("\nCalculating warping error by minimizing splits and mergers...");
+metric = new WarpingError( originalLabels, proposedLabels );    
+warpingError = metric.getMinimumSplitsAndMergersErrorValue( 0.0, 0.9, 0.1, false );
 
-    // print results
-    IJ.log("  Warping error = " + warpingError);
-    IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
-
-[segmentation](/plugin-index#segmentation) 
+// print results
+IJ.log("  Warping error = " + warpingError);
+IJ.log("  # errors (splits + mergers pixels) = " + Math.round(warpingError * originalLabels.getWidth() * originalLabels.getHeight() * originalLabels.getImageStackSize() ) );
+```
 
 ## References
 

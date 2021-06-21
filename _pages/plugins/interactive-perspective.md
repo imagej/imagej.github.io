@@ -6,9 +6,9 @@ categories: [Transform]
 
 
 {% capture source%}
-{% include github org='axtimwalde' repo='mpicbg' branch='master' path='mpicbg\_/src/main/java/Transform\_Perspective.java' %}
+{% include github org='axtimwalde' repo='mpicbg' branch='master' path='mpicbg_/src/main/java/Transform_Perspective.java' %}
 {% endcapture %}
-{% include info-box name='Interactive Perspective' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=source released='November 9<sup>th</sup>, 2008' latest-version='February 13<sup>th</sup>, 2015' status='stable' category='[Transform](/plugin-index#transform), [Plugins](/plugin-index)' %}
+{% include info-box name='Interactive Perspective' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=source released='November 9<sup>th</sup>, 2008' latest-version='February 13<sup>th</sup>, 2015' status='stable' category='Transform, Plugins' %}
 
 This plugin allows to apply a **perspective transformation** to a 2D image in an interactive way.
 

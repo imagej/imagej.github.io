@@ -5,6 +5,12 @@ nav-links: true
 nav-title: Page List
 ---
 
+{% include notice icon="info" content="This page lists unreviewed pages on this
+  wiki, which have not yet been compared to their counterparts from the old
+  wiki to ensure they look as good or better than before. It was originally
+  part of the \"Great Wiki Launch\" editing sprint of June 1-4, 2021, but the
+  list remains useful for vetting pages that still have not been checked." %}
+
 <style>
 .todo-list {
   column-width: 18em;

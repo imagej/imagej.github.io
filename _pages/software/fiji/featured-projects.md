@@ -11,7 +11,7 @@ section: Explore:Software:Fiji
 
 -   Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
 
-[Transform](/plugin-index#transform)  
+Transform
 
 -   Interactive image transformation ([rigid](/plugins/interactive-rigid), [similarity](/plugins/interactive-similarity), [affine](/plugins/interactive-affine), [perspective](/plugins/interactive-perspective), [deform](/plugins/interactive-moving-least-squares))
 -   [Interactive Stack Rotation](/plugins/interactive-stack-rotation)
@@ -19,7 +19,7 @@ section: Explore:Software:Fiji
 -   [Panorama Viewer](http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html)
 -   [Distortion correction](/plugins/distortion-correction): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
 
-[Image registration](/plugin-index#registration)  
+[Image registration](/imaging/registration)  
 
 -   [Elastic Alignment and Montage](/plugins/elastic-alignment-and-montage)
 -   [SPIM Registration](/plugins/spim-registration) Registration and fusion of Selective Plane Illumination Microscopy data.
@@ -30,7 +30,7 @@ section: Explore:Software:Fiji
 -   Image montage (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html)) with global optimization (in 2D and across sections)
 -   [VIB Protocol](/plugins/vib-protocol) Label-based 3D alignment of image stacks.
 
-[Segmentation](/plugin-index#segmentation)  
+[Segmentation](/imaging/segmentation)  
 
 -   [Simple Neurite Tracer](/plugins/snt) (SNT)
 -   [Segmentation Editor](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)
@@ -39,13 +39,13 @@ section: Explore:Software:Fiji
 -   [Trainable Segmentation](/plugins/tws)
 -   [SIOX: Simple Interactive Object Extraction](/plugins/siox)
 
-[Tracking](/plugin-index#tracking)  
+[Tracking](/imaging/tracking)  
 
 -   [TrackMate](/plugins/trackmate)
 
 Analysis  
 
--   [Skeletons and tree analysis](/plugin-index#skeleton)
+-   Skeletons and tree analysis
 
 [ImgLib2](/libs/imglib2)  
 

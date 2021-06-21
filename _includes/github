@@ -7,7 +7,17 @@
 {%- assign path = include.path -%}
 {%- assign issue = include.issue -%}
 {%- assign pr = include.pr -%}
-{%- assign label = include.label | default: "on GitHub" -%}
+{%- assign label = include.label -%}
+
+{%- unless label -%}
+  {%- capture label -%}
+    {%- if commit    -%} {{org}}/{{repo}}@{{commit | slice: 0, 8}}
+    {%- elsif issue  -%} {{org}}/{{repo}}#{{issue}}
+    {%- elsif pr     -%} {{org}}/{{repo}}#{{pr}}
+    {%- else         -%} on GitHub
+    {%- endif -%}
+  {%- endcapture -%}
+{%- endunless -%}
 
 <a href="https://github.com/{{org}}/{{repo}}/
 {%- if source    -%} blob/{{branch}}/src/main/java/{{source}}

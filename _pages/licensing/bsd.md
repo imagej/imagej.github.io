@@ -1,5 +1,4 @@
 ---
-mediawiki: BSD
 title: BSD Licenses
 section: Contribute:Licensing:Open Source
 ---
@@ -30,7 +29,7 @@ license. A licensee of BSD-licensed software can:
 - Use, copy and distribute modified source or binary forms of the licensed
   program, provided that all distributed copies are accompanied by the license
 
-{% include licensing/links shortname="/licensing/bsd" url="https://choosealicense.com/licenses/bsd-2-clause/" choosealicense="bsd-2-clause" osi="BSD-2-Clause" %}
+{% include licensing/links shortname="BSD-2" url="https://choosealicense.com/licenses/bsd-2-clause/" osi="BSD-2-Clause" %}
 
 ## Modified BSD License
 
@@ -38,4 +37,4 @@ The **Modified** or **New BSD** (or **BSD 3-clause**) license is the same as
 BSD-2, but with an additional clause prohibiting the names of the authors from
 being used to endorse or promote products relating to the software.
 
-{% include licensing/links shortname="/licensing/bsd" url="https://choosealicense.com/licenses/bsd-3-clause/" choosealicense="bsd-3-clause" osswatch="modbsd" osi="BSD-3-Clause" %}
+{% include licensing/links shortname="BSD-3" url="https://choosealicense.com/licenses/bsd-3-clause/" osswatch="modbsd" osi="BSD-3-Clause" %}

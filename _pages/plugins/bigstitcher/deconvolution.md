@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher_Deconvolution
 title: BigStitcher Deconvolution
+extensions: ["mathjax"]
 ---
 
 ## Overview

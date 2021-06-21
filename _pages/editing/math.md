@@ -2,15 +2,26 @@
 title: Math Expressions
 section: Contribute:Editing the Wiki
 nav-links: true
+extensions: ["mathjax"]
 ---
 
 This page demonstrates how to include mathematical expressions.
 
-This site supports mathematical notation using
+Individual pages can opt-in to supporting mathematical notation using
 [MathJax](https://www.mathjax.org/), so that you can write expressions with
 {% include wikipedia title="LaTeX" %} syntax, either inline or as a block.
 
-Expressions are delineated by `$$` tags before and after the expression.
+Processing a page with MathJax can take a few seconds, so it is not enabled by
+default on all pages.If you want to use MathJax, you must enable it in the
+[front matter](/editing#add-the-pages-front-matter) of your page (i.e. add `"mathjax"` to `extensions`:
+
+```
+---
+extensions: ["mathjax"]
+---
+```
+
+In your page content, math expressions are delineated by `$$` tags before and after the expression.
 
 ## Block equation example
 

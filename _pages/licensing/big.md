@@ -1,5 +1,4 @@
 ---
-mediawiki: BIG_License
 title: BIG License
 section: Contribute:Licensing:Proprietary
 ---

@@ -2,6 +2,7 @@
 mediawiki: Noise_Generator
 title: Noise Generator
 categories: [Noise]
+extensions: ["mathjax"]
 ---
 
 
@@ -16,7 +17,7 @@ categories: [Noise]
 {% capture source%}
 {% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/NoiseGenerator' label='GitHub CSIM-ImageJ Noise Generator repository' %}
 {% endcapture %}
-{% include info-box name='Noise Generator PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 08<sup>th</sup>, 2015' latest-version='February 08<sup>th</sup>, 2015' status='experimental, active' category='[Plugins](/plugin-index), [Noise](/plugin-index#noise)' %}
+{% include info-box name='Noise Generator PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 08<sup>th</sup>, 2015' latest-version='February 08<sup>th</sup>, 2015' status='experimental, active' category='Plugins, Noise' %}
 
 ## Noise Generator
 

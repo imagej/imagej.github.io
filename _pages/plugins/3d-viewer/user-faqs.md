@@ -1,9 +1,9 @@
 ---
-mediawiki: 3D_Viewer:_User_FAQs
 title: 3D Viewer › User FAQs
+nav-links: true
+nav-title: User FAQs
+extensions: ["mathjax"]
 ---
-
-(Return to the main [3D Viewer](/plugins/3d-viewer) page)
 
 ## Basic Usage
 
@@ -233,13 +233,17 @@ Applying a transformation to a 3D object means to concatenate the specified tran
 To apply a transformation, select an object and click on {% include bc path="Transformation|Apply transform" %}. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
 
 Example:
-
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
-
-should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+```
+$$
+	\begin{matrix}
+	a11 & a12 & a13 & a14 \\
+	a21 & a22 & a23 & a24 \\
+	a31 & a32 & a33 & a34 \\
+		0 & 0 & 0 & 1 \\
+		\end{matrix}
+$$
+```
+should be specified as `a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34`.
 
 The window also allows you to load a transformation from a file. [Top](#top)
 
@@ -250,13 +254,18 @@ Setting a transformation of a 3D object does not concatenate transformations. Se
 To set a transformation, select an object and click on {% include bc path="Transformation|Set transform" %}. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
 
 Example:
+```
+$$
+	\begin{matrix}
+	a11 & a12 & a13 & a14 \\
+	a21 & a22 & a23 & a24 \\
+	a31 & a32 & a33 & a34 \\
+		0 & 0 & 0 & 1 \\
+		\end{matrix}
+$$
+```
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
-
-should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+should be specified as `a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34`.
 
 The window also allows you to load a transformation from a file. [Top](#top)
 
@@ -266,12 +275,19 @@ To see the current transformation matrix of a 3D object, select that object and 
 
 Example:
 
-`        |  a11 a12 a13 a14 |`  
-`        |  a21 a22 a23 a24 |`  
-`        |  a31 a32 a33 a34 |`  
-`        |    0   0   0   1 |`
+```
+$$
+	\begin{matrix}
+	a11 & a12 & a13 & a14 \\
+	a21 & a22 & a23 & a24 \\
+	a31 & a32 & a33 & a34 \\
+		0 & 0 & 0 & 1 \\
+		\end{matrix}
+$$
+```
 
-is shown as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+
+is shown as `a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34`.
 
 Click 'Cancel' if you don't want to change the transformation. [Top](#top)
 

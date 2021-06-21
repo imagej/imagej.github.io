@@ -1,5 +1,4 @@
 ---
-mediawiki: Apache
 title: Apache Software License
 section: Contribute:Licensing:Open Source
 ---
@@ -30,4 +29,4 @@ lawsuits. A licensee of Apache-2-licensed software can:
 - Use, copy and distribute modified source or binary forms of the licensed
   program, provided that all distributed copies are accompanied by the license
 
-{% include licensing/links shortname="Apache 2" choosealicense='apache-2.0' osi='Apache-2.0' %}
+{% include licensing/links shortname="Apache 2" url=' http://choosealicense.com/licenses/apache-2.0/' osi='Apache-2.0' %}

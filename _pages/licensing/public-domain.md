@@ -1,5 +1,4 @@
 ---
-mediawiki: Public_Domain
 title: Public Domain
 section: Contribute:Licensing:Open Source
 ---

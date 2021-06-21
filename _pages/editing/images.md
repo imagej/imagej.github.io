@@ -174,11 +174,11 @@ Or centered.
 ```
 {% include gallery content=
 "
-/media/site/pic01.jpg | Example 1
-/media/site/pic02.jpg | Example 2
-/media/site/pic03.jpg | Example 3
-/media/site/pic04.jpg | Example 4
-/media/icons/imagej.png | ImageJ!
+/media/editing/pic01.jpg | Example 1
+/media/editing/pic02.jpg | Example 2
+/media/editing/pic03.jpg | Example 3
+/media/editing/pic04.jpg | Example 4
+/media/icons/imagej2.png | ImageJ!
 "
 %}
 ```
@@ -186,10 +186,10 @@ Or centered.
 
 {% include gallery content=
 "
-/media/site/pic01.jpg | Example 1
-/media/site/pic02.jpg | Example 2
-/media/site/pic03.jpg | Example 3
-/media/site/pic04.jpg | Example 4
-/media/icons/imagej.png | ImageJ!
+/media/editing/pic01.jpg | Example 1
+/media/editing/pic02.jpg | Example 2
+/media/editing/pic03.jpg | Example 3
+/media/editing/pic04.jpg | Example 4
+/media/icons/imagej2.png | ImageJ!
 "
 %}

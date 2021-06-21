@@ -1,5 +1,4 @@
 ---
-mediawiki: User:StephanP
 title: Stephan Preibisch
 
 name: Stephan Preibisch

@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-01-29_-_KNIME_Image_Processing_hackathon
 title: 2016-01-29 - KNIME Image Processing hackathon
 ---
 
@@ -9,43 +8,47 @@ From Monday, January 11, 2016 through Friday, January 22, 2016, {% include perso
 
 The following chart illustrates when everyone was present:
 
+{% include img name="timeline" src="/media/news/knime-hackathon-timeline.png" %}
+
+<!-- The above rendered image was copied from the old MediaWiki. Original timeline data, as converted, follows.
+
 <timeline> Preset = TimeHorizontal\_AutoPlaceBars\_UnitYear
 
 ImageSize = width:600
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:c19 value:gray(0.3)`  
-` id:c20 value:blue`  
-` id:c21 value:red`  
-` id:c22 value:green`  
-` id:c23 value:black`  
-` id:c24 value:magenta`  
-` id:c25 value:teal`  
-` id:c26 value:yelloworange`  
-` id:c27 value:skyblue`  
-` id:c28 value:claret`  
-` id:c29 value:oceanblue`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:c19 value:gray(0.3)
+ id:c20 value:blue
+ id:c21 value:red
+ id:c22 value:green
+ id:c23 value:black
+ id:c24 value:magenta
+ id:c25 value:teal
+ id:c26 value:yelloworange
+ id:c27 value:skyblue
+ id:c28 value:claret
+ id:c29 value:oceanblue
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -55,66 +58,68 @@ ScaleMajor = unit:year increment:1 start:11 grid:white
 
 LineData =
 
-` at:11 color:gridLine layer:back width:0.5`  
-` at:12 color:gridLine layer:back width:0.5`  
-` at:13 color:gridLine layer:back width:0.5`  
-` at:14 color:gridLine layer:back width:0.5`  
-` at:15 color:gridLine layer:back width:0.5`  
-` at:16 color:gridLine layer:back width:0.5`  
-` at:17 color:gridLine layer:back width:0.5`  
-` at:18 color:gridLine layer:back width:0.5`  
-` at:19 color:gridLine layer:back width:0.5`  
-` at:20 color:gridLine layer:back width:0.5`  
-` at:21 color:gridLine layer:back width:0.5`  
-` at:22 color:gridLine layer:back width:0.5`  
-` at:23 color:gridLine layer:back width:0.5`
+ at:11 color:gridLine layer:back width:0.5
+ at:12 color:gridLine layer:back width:0.5
+ at:13 color:gridLine layer:back width:0.5
+ at:14 color:gridLine layer:back width:0.5
+ at:15 color:gridLine layer:back width:0.5
+ at:16 color:gridLine layer:back width:0.5
+ at:17 color:gridLine layer:back width:0.5
+ at:18 color:gridLine layer:back width:0.5
+ at:19 color:gridLine layer:back width:0.5
+ at:20 color:gridLine layer:back width:0.5
+ at:21 color:gridLine layer:back width:0.5
+ at:22 color:gridLine layer:back width:0.5
+ at:23 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15 `  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`
+ width:15 
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:18 till:21 text:"Ulrik Günther (MPI-CBG)"`  
-` color:c02 from:18 till:20 text:"Tobias Kötter (KNIME)"`  
-` color:c03 from:18 till:20 text:"Björn Lohmann (KNIME)"`  
-` color:c04 from:16 till:22 text:"Eike Heinz (UniKN)"`  
-` color:c05 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"`  
-` color:c06 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"`  
-` color:c07 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"`  
-` color:c08 from:13 till:21 text:"Robert Haase (MPI-CBG)"`  
-` color:c09 from:13 till:21 text:"Florian Jug (MPI-CBG)"`  
-` color:c10 from:13 till:21 text:"Tobias Pietzsch (MPI-CBG)"`  
-` color:c11 from:13 till:21 text:"Loic Royer (MPI-CBG)"`  
-` color:c12 from:13 till:17 text:"Tim-Oliver Buchholz (UniKN)"`  
-` color:c13 from:13 till:17 text:"Temesgen H. Dadi (FU Berlin)"`  
-` color:c14 from:12 till:22 text:"Christian Dietz (UniKN)"`  
-` color:c15 from:12 till:22 text:"Alexander Fillbrunn (UniKN)"`  
-` color:c16 from:12 till:22 text:"Jonathan Hale (KNIME)"`  
-` color:c17 from:12 till:22 text:"Stefan Helfrich (UniKN)"`  
-` color:c18 from:12 till:22 text:"Mark Hiner (UniWisc)"`  
-` color:c19 from:12 till:22 text:"Martin Horn (UniKN)"`  
-` color:c20 from:12 till:22 text:"David Kolb (UniKN)"`  
-` color:c21 from:12 till:22 text:"Ole Ostergaard (UniKN)"`  
-` color:c22 from:12 till:22 text:"Curtis Rueden (UniWisc)"`  
-` color:c23 from:12 till:22 text:"Patrick Winter (UniKN)"`  
-` color:c24 from:12 till:21 text:"Nico Hoffmann (TUD)"`  
-` color:c25 from:12 till:19 text:"Jon Fuller (KNIME)"`  
-` color:c26 from:12 till:19 text:"Kyle Harrington (HMS)"`  
-` color:c27 from:12 till:17 text:"Timo Sachsenberg (EKUT)"`  
-` color:c28 from:12 till:15 text:"Luis de la Garza (EKUT)"`  
-` color:c29 from:12 till:15 text:"Jan Eglinger (FMI Basel)"`
+ barSet:Hackers
+ color:c01 from:18 till:21 text:"Ulrik Günther (MPI-CBG)"
+ color:c02 from:18 till:20 text:"Tobias Kötter (KNIME)"
+ color:c03 from:18 till:20 text:"Björn Lohmann (KNIME)"
+ color:c04 from:16 till:22 text:"Eike Heinz (UniKN)"
+ color:c05 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"
+ color:c06 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"
+ color:c07 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"
+ color:c08 from:13 till:21 text:"Robert Haase (MPI-CBG)"
+ color:c09 from:13 till:21 text:"Florian Jug (MPI-CBG)"
+ color:c10 from:13 till:21 text:"Tobias Pietzsch (MPI-CBG)"
+ color:c11 from:13 till:21 text:"Loic Royer (MPI-CBG)"
+ color:c12 from:13 till:17 text:"Tim-Oliver Buchholz (UniKN)"
+ color:c13 from:13 till:17 text:"Temesgen H. Dadi (FU Berlin)"
+ color:c14 from:12 till:22 text:"Christian Dietz (UniKN)"
+ color:c15 from:12 till:22 text:"Alexander Fillbrunn (UniKN)"
+ color:c16 from:12 till:22 text:"Jonathan Hale (KNIME)"
+ color:c17 from:12 till:22 text:"Stefan Helfrich (UniKN)"
+ color:c18 from:12 till:22 text:"Mark Hiner (UniWisc)"
+ color:c19 from:12 till:22 text:"Martin Horn (UniKN)"
+ color:c20 from:12 till:22 text:"David Kolb (UniKN)"
+ color:c21 from:12 till:22 text:"Ole Ostergaard (UniKN)"
+ color:c22 from:12 till:22 text:"Curtis Rueden (UniWisc)"
+ color:c23 from:12 till:22 text:"Patrick Winter (UniKN)"
+ color:c24 from:12 till:21 text:"Nico Hoffmann (TUD)"
+ color:c25 from:12 till:19 text:"Jon Fuller (KNIME)"
+ color:c26 from:12 till:19 text:"Kyle Harrington (HMS)"
+ color:c27 from:12 till:17 text:"Timo Sachsenberg (EKUT)"
+ color:c28 from:12 till:15 text:"Luis de la Garza (EKUT)"
+ color:c29 from:12 till:15 text:"Jan Eglinger (FMI Basel)"
 
 </timeline>
+
+-->
 
 ## Hackathon progress
 
@@ -123,7 +128,7 @@ PlotData=
 -   Wrote a guide for developers ([Automatic Update Site Uploads](/update-sites/automatic-uploads)) on how to automatically upload to their update site via Travis
 -   Proof-of-concept'd restoring the Add Imports functionality to the script editor ({% include github org='imagej' repo='imagej-ui-swing' pr='67' label='imagej/imagej-ui-swing\#67' %})
 -   Added Renjin-flavored R scripting to ImageJ ({% include github org='scijava' repo='scripting-renjin' label='scijava/scripting-renjin' %})
--   Got the Fiji downloads migrated to Java 8 bundles (see [/downloads](/downloads))
+-   Got the Fiji downloads migrated to Java 8 bundles (see [Downloads](/downloads))
 -   Furthered development of the Ops Browser ({% include github org='imagej' repo='imagej-ui-swing' issue='60' label='imagej/imagej-ui-swing\#60' %}), including:
     -   Tailored User/Developer views
     -   Fuzzy filtering for Ops
@@ -152,7 +157,7 @@ PlotData=
     -   Fixed [SCIFIO](/libs/scifio) bug with DICOM format, noticed by {% include person id='kmader' %} ({% include github org='scifio' repo='scifio' pr='292' label='dicom-file-list-npe' %})
     -   Fixed bug when executing ops as commands, noticed by {% include person id='kephale' %} ({% include github org='imagej' repo='imagej-ops' commit='34b5523dfc051741a9ed69d2b5b9f97df24f2677' label='ops-as-commands' %})
     -   Investigated SJC bug in class loading, noticed by {% include person id='EikeHeinz' %}, but no solution yet ({% include github org='scijava' repo='scijava-common' issue='219' label='scijava/scijava-common\#219' %})
-    -   Fixed Eclipse configuration to run enforcer only upon initial configuration ({% include github org='scijava' repo='pom-scijava' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f scijava/pom-scijava@022a7bea' %})
+    -   Fixed Eclipse configuration to run enforcer only upon initial configuration (scijava/pom-scijava@022a7bea {% include github org='scijava' repo='pom-scijava' commit='022a7bea5ebbc5b81ffae7386a26eea8f8677e3f' %})
 
 <!-- -->
 
@@ -199,10 +204,10 @@ PlotData=
 
 -   reviewed, augmented and merged {% include person id='tinevez' %} YAML serialization for {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %}.
 -   moved {% include github org='scijava' repo='ui-behaviour' label='ui-behaviour' %} to the scijava org and set up jenkins jobs with {% include person id='ctrueden' %}, and released 1.0.0.
--   fixed memory leak in BigDataViewer ([1](https://github.com/bigdataviewer/bigdataviewer-core/pull/17)).
+-   fixed memory leak in BigDataViewer ([\[1\]](https://github.com/bigdataviewer/bigdataviewer-core/pull/17)).
 -   worked on factor graph library for tracking/segmentation formulations with {% include person id='fjug' %}.
--   reviewed and merged imglib2 PRs [2](https://github.com/imglib/imglib2/pull/117), [3](https://github.com/imglib/imglib2/pull/116), [4](https://github.com/imglib/imglib2/pull/114), [5](https://github.com/imglib/imglib2/pull/113), [6](https://github.com/imglib/imglib2/pull/111), [7](https://github.com/imglib/imglib2-realtransform/pull/3), [8](https://github.com/imglib/imglib2-realtransform/pull/2).
--   unified naming of "source" and "target" in imglib2 Views and RealViews [9](https://github.com/imglib/imglib2-realtransform/pull/4).
+-   reviewed and merged imglib2 PRs [\[2\]](https://github.com/imglib/imglib2/pull/117), [\[3\]](https://github.com/imglib/imglib2/pull/116), [\[4\]](https://github.com/imglib/imglib2/pull/114), [\[5\]](https://github.com/imglib/imglib2/pull/113), [\[6\]](https://github.com/imglib/imglib2/pull/111), [\[7\]](https://github.com/imglib/imglib2-realtransform/pull/3), [\[8\]](https://github.com/imglib/imglib2-realtransform/pull/2).
+-   unified naming of "source" and "target" in imglib2 Views and RealViews [\[9\]](https://github.com/imglib/imglib2-realtransform/pull/4).
 -   investigated imglib2 PlanarImg bug with {% include person id='dietzc' %} and {% include person id='kephale' %}.
 
 ### Stefan Helfrich

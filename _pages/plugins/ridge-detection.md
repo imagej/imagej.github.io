@@ -2,6 +2,7 @@
 mediawiki: Ridge_Detection
 title: Ridge Detection
 categories: [Uncategorized]
+extensions: ["mathjax"]
 ---
 
 {% include warning/unmaintained %}

@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher_BrightnessContrastAdjustment
 title: BigStitcher BrightnessContrastAdjustment
+extensions: ["mathjax"]
 ---
 
 ## Overview

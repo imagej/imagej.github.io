@@ -310,7 +310,6 @@ $sidebarPadding: 10px;
 
 /* --------------------------------- MENU --------------------------------- */
 
-
 .menu {
   font-size: 0.85em;
 }
@@ -410,7 +409,8 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 #statbox {
   font-size: small;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 #statbox ul {
@@ -439,13 +439,22 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 }
 
 #statbox #statbox-image {
-  float: left;
-  max-width: 128px;
-  max-height: 128px;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #statbox #statbox-name {
   font-size: large;
+}
+
+#statbox #statbox-honorific {
+  font-size: medium;
+  margin-top: -0.5em;
+}
+
+#statbox #statbox-honorific img {
+  vertical-align: middle;
 }
 
 #statbox #statbox-header {
@@ -476,13 +485,11 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 
 #nav-bar {
   text-align: center;
-  padding: 1rem 0 0 0;
   position: sticky;
   top: 0;
   font-size: small;
   margin-left: $sidebarWidth - $sidebarPadding;
   margin-right: $sidebarWidth - $sidebarPadding;
-  background: white;
   z-index: 1;
 }
 
@@ -496,17 +503,26 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   word-spacing: 1em;
   background-image: linear-gradient(
     -0.25turn,
-    transparent 0 calc(50% - 0.03em),
-    currentcolor 0 calc(50% + 0.03em),
+    transparent 0 0.6em,
+    currentcolor 0 0.7em,
     transparent 0
   );
+}
+
+@media screen and (max-width: 879px) {
+  #nav-bar {
+    margin-left: $sidebarPadding;
+    margin-right: $sidebarPadding;
+  }
+  #toc {
+    display: none;
+  }
 }
 
 /* -------------------------------- HEADER -------------------------------- */
 
 #header {
-  padding: 9em 0 9em 0;
-  background-image: url("../../media/site/overlay7.png");
+  background-image: url("/media/site/overlay7.png");
   color: rgba(255, 255, 255, 0.75);
   background-position: top left, center center, center center;
   background-size: auto, cover, cover;
@@ -514,10 +530,13 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   position: relative;
   text-align: center;
   min-width: 420px;
+  height: calc(100vh - 48px);
+  padding: 8em 1em 8em 1em;
 }
 
 #header a {
   border-bottom-color: rgba(255, 255, 255, 0.5);
+  color: #ed8;
 }
 
 #header a:hover {
@@ -597,75 +616,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 }
 
 #header h1 {
-  margin: 0;
-}
-
-#header p {
-  margin: 1.5em 0 0 0;
-  font-size: 1.3em;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  /* font-weight: 500; */
-}
-
-#header .actions {
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  margin-top: 9em;
-  margin-left: 0;
-  position: relative;
-}
-
-#header .actions li:first-child {
-  padding-left: 0;
-}
-
-#header .actions:after {
-  background: #ffffff;
-  content: '';
-  height: 100vh;
-  left: 50%;
-  position: absolute;
-  top: 100%;
-}
-
-#header .inner {
-  -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-  -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-  -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-  transition: transform 1.5s ease, opacity 2s ease;
-  -moz-transition-delay: 0.25s;
-  -webkit-transition-delay: 0.25s;
-  -ms-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  position: relative;
-  z-index: 1;
-  margin: 0 3em 0 3em;
-  height: auto;
-}
-
-#header .inner .actions {
-  -moz-transition: -moz-transform 1.25s ease;
-  -webkit-transition: -webkit-transform 1.25s ease;
-  -ms-transition: -ms-transform 1.25s ease;
-  transition: transform 1.25s ease;
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  -ms-transition-delay: 1s;
-  transition-delay: 1s;
-  -moz-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
+  margin: -2em 0 0 0;
 }
 
 #header:after {
@@ -703,15 +654,11 @@ body.is-preload #header:after {
   opacity: 1;
 }
 
-#header {
-  padding: 8em 3em 8em 3em;
-}
-
 /* -------------------------------- FOOTER -------------------------------- */
 
 #footer {
   padding: 4em 0 4em 0;
-  background-image: url("../../media/site/overlay8.png"), url("../../media/site/header.jpg");
+  background-image: url("/media/site/overlay8.png"), url("/media/site/header.jpg");
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed, fixed;
   background-position: top left, center center, center center;

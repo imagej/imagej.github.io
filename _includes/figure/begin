@@ -1,0 +1,18 @@
+{%- comment -%} This include is still a WORK IN PROGRESS! Please do not use yet. {%- endcomment -%}
+
+{%- assign columns = include.columns | plus: 0 -%}
+
+<style>
+.outer {
+  text-align: center;
+  vertical-align: bottom;
+}
+.inner {
+  text-align: center;
+  vertical-align: bottom;
+}
+</style>
+<center><strong>{{include.title}}</strong></center>
+<figure class="outer" style="display: grid; grid-template-columns: repeat({{columns}}, minmax(0, 1fr));">
+{%- assign panel-caption = nil -%}
+{%- assign figure-caption = {{include.caption}} -%}

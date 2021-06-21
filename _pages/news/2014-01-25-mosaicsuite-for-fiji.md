@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-01-25_-_MosaicSuite_for_Fiji
 title: 2014-01-25 - MosaicSuite for Fiji
 ---
 
@@ -21,7 +20,7 @@ I. F. Sbalzarini and P. Koumoutsakos. **Feature Point Tracking and Trajectory An
 
 All information on how to install the tools, documentation and developer information is available on the [MOSAIC group website](http://mosaic.mpi-cbg.de/?q=downloads/imageJ).
 
-The plugins are available in Fiji through a dedicated [**update site**](/list-of-update-sites).
+The plugins are available in Fiji through a dedicated [update site](/list-of-update-sites).
 
 We are looking forward to more contributions from the MOSAIC group in the future.
 

@@ -2,11 +2,11 @@
 title: 2012-03-20 - Unit tests for ImageJ 1.46
 ---
 
-Last October we ran the [unit tests for ImageJ1](/develop/ij1-unit-tests) against [various versions of ImageJ 1.45](/news/2011-10-07-unit-tests-for-imagej-1-45). It has been awhile since then, so here are the results with various versions of ImageJ 1.46.
+Last October we ran the [unit tests for ImageJ 1.x](/develop/ij1-unit-tests) against [various versions of ImageJ 1.45](/news/2011-10-07-unit-tests-for-imagej-1-45). It has been awhile since then, so here are the results with various versions of ImageJ 1.46.
 
 Once again, an increasing number of tests are failing with each release, which indicates changing behavior creeping into the code.
 
-[Jenkins](/develop/jenkins) now [runs these tests automatically](http://jenkins.imagej.net/job/ImageJ1-unit-tests/) whenever a new version of [ImageJ 1.x](/software/imagej1) is released, and reports failures to the [imagej-devel mailing list](/discuss/mailing-lists), so that we become aware as early as possible when regression bugs have been introduced.
+[Jenkins](/develop/jenkins) now [runs these tests automatically](http://jenkins.imagej.net/job/ImageJ1-unit-tests/) whenever a new version of [ImageJ 1.x](/software/imagej) is released, and reports failures to the [imagej-devel mailing list](/discuss/mailing-lists), so that we become aware as early as possible when regression bugs have been introduced.
 
 {::nomarkdown}
 <table>

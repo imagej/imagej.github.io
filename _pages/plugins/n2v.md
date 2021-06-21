@@ -8,13 +8,13 @@ categories: [Uncategorized]
 
 Noise2Void (N2V) is a powerful, context aware and flexible algorithm for image denoising. It uses artificial neural networks to learn about the properties of your images and how to best denoise them. N2V outperforms traditional denoising techniques.
 
-This page describes the N2V FIJI plugin. The N2V FIJI plugin provides a very simple way to use N2V in FIJI. All you need is a computer with a NVIDIA graphics cards, a FIJI installation and your noisy images.
+This page describes the N2V Fiji plugin. The N2V Fiji plugin provides a very simple way to use N2V in Fiji. All you need is a computer with a NVIDIA graphics cards, a Fiji installation and your noisy images.
 
 The execution of N2V has two steps. The first step will train the artificial neural network to remove the noise in the kind of images that you have. This training step is relatively slow, it might take around 12 h to get the best results. But don't worry. Just let your computer run the training over night. You don't need to do anything. Training only needs to happen once, and you will see a preview during the ongoing training. The result of the training is a model. The second step is called prediction. The prediction step will use the trained model to denoise your images. The same model can be used for any number of similar images. It typically takes less than a second per image. So high quality denoising of thousand images is easily possible within one day.
 
 See the paper for a detailed description of the algorithm.
 
-This FIJI plugin is part of CSBDeep. A set of open source neural network algorithms in FIJI. For more information, examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/n2v/).
+This Fiji plugin is part of CSBDeep. A set of open source neural network algorithms in Fiji. For more information, examples and images, click [here](https://csbdeep.bioimagecomputing.com/tools/n2v/).
 
 # Publication: Noise2Void - Learning Denoising from Single Noisy Images
 
@@ -127,7 +127,7 @@ Alternatively, you can <b>use the N2V menu</b>: {% include thumbnail src='/media
 
 # Exporting trained models from Python to ImageJ / Fiji
 
-It's possible to train a Noise2Void neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/n2v). The model that has been trained in Python, can be used in FIJI as well:
+It's possible to train a Noise2Void neural network using Python. The required code and instructions can be found [here](https://github.com/juglab/n2v). The model that has been trained in Python, can be used in Fiji as well:
 
 1.  In Python, run this at the end of you training: `model.export_TF()`
 2.  Locate the exported model file

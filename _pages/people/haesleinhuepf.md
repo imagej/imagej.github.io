@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Haesleinhuepf
 title: Robert Haase
 
 name: Robert Haase

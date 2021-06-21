@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-05-14_-_Trainable_Segmentation_refactoring
 title: 2013-05-14 - Trainable Segmentation refactoring
 ---
 

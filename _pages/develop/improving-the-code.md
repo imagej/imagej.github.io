@@ -37,7 +37,9 @@ By doing this, you will be duplicating the whole repository into your own GitHub
 
 Next, go to your command line, move to your workspace folder and clone the repository:
 
-    $ git clone https://github.com/username/VIB-lib
+```shell
+$ git clone https://github.com/username/VIB-lib
+```
 
 (change "username" for your GitHub account name)
 
@@ -45,9 +47,11 @@ Next, go to your command line, move to your workspace folder and clone the repos
 
 To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git. In our case:
 
-    $ cd VIB-lib
-    $ git remote add upstream https://github.com/fiji/VIB-lib
-    $ git fetch upstream
+```shell
+$ cd VIB-lib
+$ git remote add upstream https://github.com/fiji/VIB-lib
+$ git fetch upstream
+```
 
 *See [GitHub: how to configure a remote fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/) and [GitHub: how to sync a fork](https://help.github.com/articles/syncing-a-fork/) for more details.*
 
@@ -55,7 +59,9 @@ To sync changes you make in a fork with the original repository, you must config
 
 Create a new branch with a descriptive name. Since we want to work on AmiraMesh files, we call it "amira-io":
 
-    $ git checkout -b amira-io
+```shell
+$ git checkout -b amira-io
+```
 
 ## Development
 
@@ -111,48 +117,54 @@ Rebase operates over a range of commits. You provide it a starting point, and it
 
 For example, you can specify a specific commit to start from:
 
-    git rebase -i 6272a7bf
+```shell
+git rebase -i 6272a7bf
+```
 
 If we aren't sure which commit to start from, we can just rebase over the entire branch:
 
-    git rebase -i $(git merge-base --fork-point master)
+```shell
+git rebase -i $(git merge-base --fork-point master)
+```
 
 In our example, we run the first command and immediately Git launches our default text editor and open a file that details the commits in the range we've chosen:
 
-    pick 36fc3d2 Use java.util.zip tools to decode (inflate) AmiraMesh files instead of zjlib methods.
-    pick 25b44e1 Encode (deflate) using java.util.zip methods instead of the zjlib ones.
-    pick 913d6e3 Remove unused imports.
-    pick 45adf88 Add progress bar updates.
-    pick 1d6e8d9 Make call to static method correctly.
-    pick 1c1f88f Correct typos
-    pick 478c271 Fix bug when reading AmiraMesh files.
-    pick ffeaab8 Allow Avizo files to be read as well.
-    pick a3e4aec Remove jzlib dependency, now unnecessary.
-    pick 7d18362 Allow Avizo files to be read as well.
-    pick e768fd1 Add method to write AmiraMesh file faster using more memory.
-    pick 88dbc1c Add method to read AmiraMesh file fast using a more memory.
-    pick 4e4c7a4 Make sure the files and output streams are closed after writing.
-    pick 86a79cf Make the output stream a class field so it can be properly closed as well after writing the file.
-    pick def586d Correct indention.
-    pick c536d3d Make sure the file and input stream are closed after reading.
+```
+pick 36fc3d2 Use java.util.zip tools to decode (inflate) AmiraMesh files instead of zjlib methods.
+pick 25b44e1 Encode (deflate) using java.util.zip methods instead of the zjlib ones.
+pick 913d6e3 Remove unused imports.
+pick 45adf88 Add progress bar updates.
+pick 1d6e8d9 Make call to static method correctly.
+pick 1c1f88f Correct typos
+pick 478c271 Fix bug when reading AmiraMesh files.
+pick ffeaab8 Allow Avizo files to be read as well.
+pick a3e4aec Remove jzlib dependency, now unnecessary.
+pick 7d18362 Allow Avizo files to be read as well.
+pick e768fd1 Add method to write AmiraMesh file faster using more memory.
+pick 88dbc1c Add method to read AmiraMesh file fast using a more memory.
+pick 4e4c7a4 Make sure the files and output streams are closed after writing.
+pick 86a79cf Make the output stream a class field so it can be properly closed as well after writing the file.
+pick def586d Correct indention.
+pick c536d3d Make sure the file and input stream are closed after reading.
 
-    # Rebase 6272a7b..054d243 onto 6272a7b
-    #
-    # Commands:
-    #  p, pick = use commit
-    #  r, reword = use commit, but edit the commit message
-    #  e, edit = use commit, but stop for amending
-    #  s, squash = use commit, but meld into previous commit
-    #  f, fixup = like "squash", but discard this commit's log message
-    #  x, exec = run command (the rest of the line) using shell
-    #
-    # These lines can be re-ordered; they are executed from top to bottom.
-    #
-    # If you remove a line here THAT COMMIT WILL BE LOST.
-    #
-    # However, if you remove everything, the rebase will be aborted.
-    #
-    # Note that empty commits are commented out
+# Rebase 6272a7b..054d243 onto 6272a7b
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
 
 Breaking this information, from top to bottom, we see that:
 
@@ -170,31 +182,41 @@ Once we're done editing this file with our desired commands for each commit, we 
 -   Commits marked **reword** or **squash** will cause the rebase process to pause, opening a text editor where you can update the commit message as appropriate. The rebase automatically continues when this text file is saved and closed.
 -   Commits marked **edit** will also pause the rebase process, temporarily reverting control back to the terminal. In this case, we make whatever changes are required at this state of the code. Changes can be added and used to create new commits as normal, and/or merged into the current pre-existing commit using:
 
-<!-- -->
-
-    git commit --amend
+```shell
+git commit --amend
+```
 
 After any necessary changes have been committed, rebasing can continue by calling the command:
 
-    git rebase --continue
+```shell
+git rebase --continue
+```
 
 If we make a mistake while editing a commit, we can always undo the whole process using:
 
-    git rebase --abort
+```shell
+git rebase --abort
+```
 
 When the rebase process completes, we should see the following message in the command line:
 
-    $ Successfully rebased and updated refs/heads/master.
+```shell
+$ Successfully rebased and updated refs/heads/master.
+```
 
 At this point, if we are happy with the rebase we should push the changes back to our remote branch:
 
-    git push origin +HEAD
+```shell
+git push origin +HEAD
+```
 
 Note that the "+HEAD" in this command tells git to overwrite the remote branch, similar to a [force push](http://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push).
 
 If we are **not** happy with the state after our rebase, we can reset our local branch using:
 
-    git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
+```shell
+git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
+```
 
 ## Closing pull request
 
@@ -212,5 +234,3 @@ This tutorial has been written using the following references:
 -   [GitHub: how to configure a remote fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 -   [GitHub: how to sync a fork](https://help.github.com/articles/syncing-a-fork/)
 -   [GitHub: About Git rebase](https://help.github.com/articles/about-git-rebase/)
-
-  

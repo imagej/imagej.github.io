@@ -1,7 +1,7 @@
 ---
 mediawiki: Colocalization_Test
 title: Colocalization Test
-categories: [Colocalization,Color processing]
+categories: [Colocalization,Color Processing]
 ---
 
 {% include warning/deprecated
@@ -13,7 +13,7 @@ categories: [Colocalization,Color processing]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='Colocalisation\_Analysis' branch='master' source='Colocalisation\_Test.java' %}, modified from [MBF ImageJ](/software/mbf-imagej)
+{% include github org='fiji' repo='Colocalisation_Analysis' branch='master' source='Colocalisation_Test.java' %}, modified from [MBF ImageJ](/software/mbf-imagej)
 {% endcapture %}
 {% include info-box name='Colocalization Test' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Test](/imaging/colocalization-analysis#colocalization-test)' status='<span style="color:red">Deprecated, use [Coloc 2](/plugins/coloc-2) instead.</span>' %}
 

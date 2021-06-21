@@ -31,10 +31,12 @@ The training procedure consists of three consecutive phases:
 
 In the first phase, a user select a directory that contains input images together with their corresponding ground truth images. IsletJ2 expects the names of the input files to have a specific format consisting of a prefix, a single underscore, and a number. The plugin uses the prefix to group the images and the ground truths, respectively, which means that all the images must have a common prefix, and the same holds for the ground truths as well. The underscore serves purely as a delimiter between the preceding prefix and the following number. Finally, the number connects an image with its ground truth. For example, the names can be set as follows.
 
-    gt_01.png
-    gt_02.png
-    image_01.png
-    image_02.png
+```shell
+gt_01.png
+gt_02.png
+image_01.png
+image_02.png
+```
 
 After the images are loaded and displayed to a user, the user should verify that the plugin recognized the images and ground truths correctly. If the retrieved segmentations are correct, it is possible to advance to the last phase.
 
@@ -102,7 +104,7 @@ Should you use the plugin very frequently, it would be perhaps useful to access 
 
 A new keyboard shortcut can be defined using `Plugins` – `Shortcuts` – `Add Shortcut...` in the top menu. In the displayed window, pick a shortcut of your choice (e.g., `F12`) and select `Analyze` or `Train` as the command.
 
-See [ImageJ docs](/ij/docs/guide/146-31.html#toc-Subsection-31.2.2) for more information on how to manage keyboard shortcuts in ImageJ.
+See [ImageJ docs](https://imagej.nih.gov/ij/docs/guide/146-31.html#toc-Subsection-31.2.2) for more information on how to manage keyboard shortcuts in ImageJ.
 
 ### Determining the pixel size
 

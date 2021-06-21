@@ -11,33 +11,36 @@ There were 25 people participating at various times, though only a few stayed fo
 
 The following chart illustrates who attended, and when everyone was present:
 
+FIXME timeline
+
+<!--
 <timeline> ImageSize = width:550 height:auto barincrement:20 PlotArea = left:25 right:25 top:15 bottom:30 TimeAxis = orientation:horizontal format:dd/mm/yyyy
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:c19 value:gray(0.3)`  
-` id:gridLine value:gray(0.5)`  
-` id:canvas value:gray(0.8)`  
-` id:grid1  value:gray(0.4)`  
-` id:grid2  value:gray(0.2)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:c19 value:gray(0.3)
+ id:gridLine value:gray(0.5)
+ id:canvas value:gray(0.8)
+ id:grid1  value:gray(0.4)
+ id:grid2  value:gray(0.2)
 
 BackgroundColors = canvas:canvas AlignBars = justify
 
@@ -53,61 +56,62 @@ PlotData =
 
 LineData =
 
-` at:27/01/2011 color:gridLine layer:back width:0.5`  
-` at:28/01/2011 color:gridLine layer:back width:0.5`  
-` at:29/01/2011 color:gridLine layer:back width:0.5`  
-` at:30/01/2011 color:gridLine layer:back width:0.5`  
-` at:31/01/2011 color:gridLine layer:back width:0.5`  
-` at:01/02/2011 color:gridLine layer:back width:0.5`  
-` at:02/02/2011 color:gridLine layer:back width:0.5`  
-` at:03/02/2011 color:gridLine layer:back width:0.5`  
-` at:04/02/2011 color:gridLine layer:back width:0.5`  
-` at:05/02/2011 color:gridLine layer:back width:0.5`  
-` at:06/02/2011 color:gridLine layer:back width:0.5`  
-` at:07/02/2011 color:gridLine layer:back width:0.5`  
-` at:08/02/2011 color:gridLine layer:back width:0.5`  
-` at:09/02/2011 color:gridLine layer:back width:0.5`  
-` at:10/02/2011 color:gridLine layer:back width:0.5`  
-` at:11/02/2011 color:gridLine layer:back width:0.5`  
-` at:12/02/2011 color:gridLine layer:back width:0.5`  
-` at:13/02/2011 color:gridLine layer:back width:0.5`
+ at:27/01/2011 color:gridLine layer:back width:0.5
+ at:28/01/2011 color:gridLine layer:back width:0.5
+ at:29/01/2011 color:gridLine layer:back width:0.5
+ at:30/01/2011 color:gridLine layer:back width:0.5
+ at:31/01/2011 color:gridLine layer:back width:0.5
+ at:01/02/2011 color:gridLine layer:back width:0.5
+ at:02/02/2011 color:gridLine layer:back width:0.5
+ at:03/02/2011 color:gridLine layer:back width:0.5
+ at:04/02/2011 color:gridLine layer:back width:0.5
+ at:05/02/2011 color:gridLine layer:back width:0.5
+ at:06/02/2011 color:gridLine layer:back width:0.5
+ at:07/02/2011 color:gridLine layer:back width:0.5
+ at:08/02/2011 color:gridLine layer:back width:0.5
+ at:09/02/2011 color:gridLine layer:back width:0.5
+ at:10/02/2011 color:gridLine layer:back width:0.5
+ at:11/02/2011 color:gridLine layer:back width:0.5
+ at:12/02/2011 color:gridLine layer:back width:0.5
+ at:13/02/2011 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15`  
-` fontsize:M`  
-` textcolor:white`  
-` align:left`  
-` anchor:from`  
-` shift:(4,-4)`  
-` color:black`
+ width:15
+ fontsize:M
+ textcolor:white
+ align:left
+ anchor:from
+ shift:(4,-4)
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:06/02/2011 till:12/02/2011 text:"Larry Lindsey"`  
-` color:c02 from:06/02/2011 till:12/02/2011 text:"Luis Ibanez"`  
-` color:c03 from:04/02/2011 till:12/02/2011 text:"Ignacio Arganda-Carreras"`  
-` color:c04 from:01/02/2011 till:10/02/2011 text:"Benjamin Schmid"`  
-` color:c05 from:31/01/2011 till:07/02/2011 text:"Tobias Pietzsch"`  
-` color:c06 from:30/01/2011 till:06/02/2011 text:"Mark Longair"`  
-` color:c07 from:30/01/2011 till:05/02/2011 text:"Erwin Frise"`  
-` color:c08 from:30/01/2011 till:04/02/2011 text:"Lee Kamentsky"`  
-` color:c09 from:30/01/2011 till:04/02/2011 text:"Adam Fraser"`  
-` color:c10 from:30/01/2011 till:04/02/2011 text:"Arthur Edelstein"`  
-` color:c11 from:29/01/2011 till:05/02/2011 text:"Pavel Tomancak"`  
-` color:c12 from:28/01/2011 till:13/02/2011 text:"Johannes Schindelin"`  
-` color:c13 from:28/01/2011 till:12/02/2011 text:"Grant Harris"`  
-` color:c14 from:28/01/2011 till:07/02/2011 text:"Stephan Saalfeld"`  
-` color:c15 from:28/01/2011 till:03/02/2011 text:"Albert Cardona"`  
-` color:c16 from:27/01/2011 till:13/02/2011 text:"Madison Locals*"`  
-` color:c17 from:27/01/2011 till:09/02/2011 text:"Stephan Preibisch"`  
-` color:c18 from:27/01/2011 till:29/01/2011 text:"Mark Rowley"`  
-` color:c19 from:27/01/2011 till:29/01/2011 text:"Paul Barber"`
+ barSet:Hackers
+ color:c01 from:06/02/2011 till:12/02/2011 text:"Larry Lindsey"
+ color:c02 from:06/02/2011 till:12/02/2011 text:"Luis Ibanez"
+ color:c03 from:04/02/2011 till:12/02/2011 text:"Ignacio Arganda-Carreras"
+ color:c04 from:01/02/2011 till:10/02/2011 text:"Benjamin Schmid"
+ color:c05 from:31/01/2011 till:07/02/2011 text:"Tobias Pietzsch"
+ color:c06 from:30/01/2011 till:06/02/2011 text:"Mark Longair"
+ color:c07 from:30/01/2011 till:05/02/2011 text:"Erwin Frise"
+ color:c08 from:30/01/2011 till:04/02/2011 text:"Lee Kamentsky"
+ color:c09 from:30/01/2011 till:04/02/2011 text:"Adam Fraser"
+ color:c10 from:30/01/2011 till:04/02/2011 text:"Arthur Edelstein"
+ color:c11 from:29/01/2011 till:05/02/2011 text:"Pavel Tomancak"
+ color:c12 from:28/01/2011 till:13/02/2011 text:"Johannes Schindelin"
+ color:c13 from:28/01/2011 till:12/02/2011 text:"Grant Harris"
+ color:c14 from:28/01/2011 till:07/02/2011 text:"Stephan Saalfeld"
+ color:c15 from:28/01/2011 till:03/02/2011 text:"Albert Cardona"
+ color:c16 from:27/01/2011 till:13/02/2011 text:"Madison Locals*"
+ color:c17 from:27/01/2011 till:09/02/2011 text:"Stephan Preibisch"
+ color:c18 from:27/01/2011 till:29/01/2011 text:"Mark Rowley"
+ color:c19 from:27/01/2011 till:29/01/2011 text:"Paul Barber"
 
 </timeline>
+-->
 
 \* Madison locals include:
 
@@ -139,9 +143,9 @@ Here is a summary of the hackathon results, written by Johannes Schindelin, Step
 
 The most important work done is certainly the redesign of ImgLib (dubbed "ImgLib2"). Other design questions have been addressed, too:
 
--   How to reuse IJ2's plugin infrastructure (e.g. in the 3D Viewer)
--   How to wrap IJ1 elegantly (Javassist)
--   The strategy how to go about including IJ2 in Fiji as early as possible (even gradually)
+-   How to reuse ImageJ2's plugin infrastructure (e.g. in the 3D Viewer)
+-   How to wrap ImageJ elegantly (Javassist)
+-   The strategy how to go about including ImageJ2 in Fiji as early as possible (even gradually)
 -   How to support ROIs and annotations in the ImgLib
 -   How to unify Dataset/imglib-algorithms/imglib-scripting into imglib-ops
 -   How to unify the different places where per-project metadata are stored in Fiji (Maven, Updater, LICENSES, Debian packages)
@@ -159,13 +163,13 @@ All of these discussions benefited incredibly from the fact that all the people 
 -   Stephan Saalfeld's Panorama Viewer was integrated.
 -   Debian packages are now built automatically every week (Mark Longair).
 -   Java code can be inlined into Jython code very easily now (for more performance without leaving the high-level scripting behind) (Albert Cardona).
--   The Image Expression Parser was fixed to accomodate for a breakage in IJ1.
+-   The Image Expression Parser was fixed to accommodate for a breakage in ImageJ.
 -   An alternative to the Tubeness algorithm which was published by Frangi was integrated into the Simple Neurite Tracer (Mark Longair).
 -   Fiji allows scripts & macros to be inserted anywhere in the menu structure by putting them in the corresponding subdirectory of Fiji.app/plugins/Scripts/ (Curtis Rueden).
 -   All scripts and macros inserted into the menus report that they were started, and they can be opened in the Script Editor when Shift was pressed before clicking on the respective menu entry.
 -   There is now a "Scale by DPI" Javascript in the {% include bc path="Image|Adjust" %} menu (Curtis Rueden).
 -   When Fiji was asked via the properties on MacOSX to run in 32-bit mode, it does so (Erwin Frise).
--   There is a base class for the Command Launcher of IJ1, reusable for every Swing application (and easily extended to AWT or whatever).
+-   There is a base class for the Command Launcher of ImageJ, reusable for every Swing application (and easily extended to AWT or whatever).
 -   There have been too many improvements to the Advanced Trainable Segmentation (AKA WEKA Segmentation) (Ignacio Arganda-Carreras).
 -   The OpenCL example from the ImageJ2 repository was ported to Fiji (and is slated to become a "scripting language") (Rick Lentz and Johannes Schindelin).
 -   The Fiji Updater (multiple sites) is shaping up nicely; most importantly, there is a regression test now that is easily extended and understandable, which makes it much more straight-forward to go about extending the Updater (Johannes Schindelin).
@@ -192,11 +196,11 @@ All of these discussions benefited incredibly from the fact that all the people 
 
 ### ImageJ2
 
--   Enabled support for IJ2-style plugins in the 3D Viewer \[see [r2190](http://trac.imagej.net/changeset/2190)\], which helped to further improve the plugin framework architecture. (Curtis Rueden and Bene Schmid)
--   Finalized the mechanism by which the ImageJ 1.x legacy support works, using a tool called Javassist to surgically alter IJ1 behavior where necessary \[see [r2175](http://trac.imagej.net/changeset/2175)\] (Curtis Rueden).
--   Improved how IJ1 plugins are called from IJ2 \[see [r2186](http://trac.imagej.net/changeset/2186)\] (Curtis Rueden).
--   Progress on combined spectral-lifetime visualization and analysis in IJ2 (Aivar Grislis).
--   Initial development toward a multi-resolution tiled viewer for IJ2 (Aivar Grislis).
+-   Enabled support for ImageJ2-style plugins in the 3D Viewer \[see [r2190](http://trac.imagej.net/changeset/2190)\], which helped to further improve the plugin framework architecture. (Curtis Rueden and Bene Schmid)
+-   Finalized the mechanism by which the ImageJ legacy support works, using a tool called Javassist to surgically alter ImageJ behavior where necessary \[see [r2175](http://trac.imagej.net/changeset/2175)\] (Curtis Rueden).
+-   Improved how ImageJ plugins are called from ImageJ2 \[see [r2186](http://trac.imagej.net/changeset/2186)\] (Curtis Rueden).
+-   Progress on combined spectral-lifetime visualization and analysis in ImageJ2 (Aivar Grislis).
+-   Initial development toward a multi-resolution tiled viewer for ImageJ2 (Aivar Grislis).
 -   Worked on making ITK available to ImageJ plugins (Luis Ibáñez).
 
 ### Bio-Formats

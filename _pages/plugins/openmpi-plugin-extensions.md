@@ -1,9 +1,14 @@
 ---
 title: OpenMPI Plugin Extensions
-categories: [Uncategorized]
+categories: [Scripting]
+name: Parallel Ops
+team-developers: Daniel Trnka, Michal Krumnickl
+team-maintainers: Daniel Trnka
+source-url: https://github.com/fiji-hpc/scijava-parallel-mpi
+source-label: on GitHub
 ---
 
-{% include info-box name='OpenMPI Plugin Extensions' software='Fiji' author='Daniel Trnka, Michal Krumnikl' maintainer='Michal Krumnikl' released='TBD' latest-version='TBD' category='TBD' source=' [on github](https://github.com/fiji-hpc/scijava-parallel-mpi)' %}
+{% include notice icon="warning" content='Please Note: This version of the documentation is outdated. We recommend reading the [guide](https://github.com/fiji-hpc/scijava-parallel-mpi/wiki/How-to-Install-and-Run) instead. It contains current information on new features.' %}
 
 ## General information
 

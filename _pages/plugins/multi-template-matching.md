@@ -1,7 +1,9 @@
 ---
 title: Multi-Template Matching
 description: Object-detection with one or multiple template images
-categories: [Feature Extraction,Jython,Object Detection]
+categories: [Feature Extraction, Object Detection]
+icon: /media/icons/MultiTemplateMatching.jpg
+
 
 name:  Multi-Template Matching
 source-url: https://github.com/multi-template-matching/MultiTemplateMatching-Fiji
@@ -10,7 +12,7 @@ release-date : 2019
 license-url: /licensing/gpl
 license-label: GPLv3
 
-team-leads: Laurent Thomas | mailto:l.thomas@acquifer.de
+team-founders: Laurent Thomas, Jochen Gehrig
 ---
 
 <img src="/media/plugins/multi-template-matching-montagegui.png" width="800"/>

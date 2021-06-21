@@ -10,9 +10,9 @@ categories: [Uncategorized]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='Fiji\_Plugins' branch='master' source='fiji/geom/Shape\_Index\_Map.java' %}
+{% include github org='fiji' repo='Fiji_Plugins' branch='master' source='fiji/geom/Shape_Index_Map.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='[Plugins](/plugin-index)' website='' %}
+{% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='Plugins' website='' %}
 
 ## Explanation
 

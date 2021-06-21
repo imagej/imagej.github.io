@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Stelfrich
 title: Stefan Helfrich
 
 name: Stefan Helfrich

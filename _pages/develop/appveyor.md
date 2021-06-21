@@ -8,6 +8,6 @@ section: Extend:Development:Tools
 
 # Services
 
-Most [ImageJ](/software/imagej) and [SciJava](/libs/scijava) builds use [Travis CI](/develop/travis). However, for Windows-specific builds, AppVeyor is used.
+Most [SciJava](/libs/scijava)-based project builds use [Travis CI](/develop/travis). However, for Windows-specific builds, AppVeyor is used.
 
 See e.g. the [ImageJ Launcher](https://ci.appveyor.com/project/scijava/imagej-launcher) build.

@@ -123,11 +123,11 @@ You can verify whether the actual data is there by moving the mouse over the ima
 
 In many cases, ImageJ performs autoscaling by default, to improve the contrast of your image. Otherwise, in many cases with scientific images you might see only a black square (see previous question).
 
-You can override the autoscaling using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog.
+You can override the autoscaling using the [Brightness/Contrast](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Adjust) dialog.
 
-It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](/imaging/principles#what-are-pixel-values). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
+It is important to understand that [your image is a collection of samples, each of which has a numerical intensity value](/imaging/principles#what-are-pixel-values). The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [bit depth](https://imagej.nih.gov/ij/docs/guide/146-7.html#toc-Section-7), meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
-Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](/ij/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key keys='shift|C' %}).
+Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs **autoscaling** to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [Brightness/Contrast](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Adjust) dialog under the {% include bc path='Image | Adjust'%} menu (shortcut: {% include key keys='shift|C' %}).
 
 Alternately, to disable autoscaling during initial import, you can use the [Bio-Formats](/formats/bio-formats) plugin to import your data with the "Autoscale" option turned off:
 
@@ -144,7 +144,7 @@ Further reading:
 
 ## Whenever I open a file in ImageJ, the file size increases by a ridiculous amount!
 
-Are you using a [compressed format](/ij/docs/guide/146-7.html#sub:Native-Formats) such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
+Are you using a [compressed format](https://imagej.nih.gov/ij/docs/guide/146-7.html#sub:Native-Formats) such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
 
 Note that [lossy compression is not suitable for quantitative image analysis](/imaging/principles#why-lossy-jpegs-should-not-be-used-in-imaging).
 
@@ -152,7 +152,7 @@ Note that [lossy compression is not suitable for quantitative image analysis](/i
 
 While ImageJ strives for [reproducible](/develop/architecture#reproducible-builds) analysis, there are many reasons results can differ. Check the following:
 
--   Ensure that the version of [ImageJ](/software/imagej) is exactly the same on both machines.
+-   Ensure that the version of ImageJ is exactly the same on both machines.
     -   Click the [status bar](/learn#the-status-bar) and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
     -   If these two values differ between your machines, the versions are not the same.
     -   See also [How can I verify that my ImageJ is really 100% up to date?](/learn/faq#how-can-i-verify-that-my-imagej-is-really-100-up-to-date).
@@ -232,11 +232,11 @@ If you are already at the limits of your computer's physical memory, the next st
 
 This error usually means that your image planes are larger than the maximum supported size.
 
-[ImageJ1](/software/imagej1) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
+The [original ImageJ](/software/imagej) only supports image planes with **2 gigapixels** (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [Bio-Formats](/formats/bio-formats) plugin.
 
-If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ1, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
+If you are using Bio-Formats to open a file, however, the size limit is a bit more complicated. Instead of using `short[]` as in ImageJ, Bio-Formats store data in `byte[]` when reading planes. If the source image is in 16 bit or in 32 bit (4 bytes, eg. floating point TIFF), the maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or 1/4 (0.5 gigapixels), respectively.
 
-[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the [ImageJ1](/software/imagej1) user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/people) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
+[ImageJ2](/software/imagej2) supports larger image planes internally, but uses the original ImageJ user interface by default, which once again limits visualization to 2 gigapixels. The [ImageJ2 team](/people) is working to lift these size restrictions; see {% include github org='imagej' repo='imagej' issue='87' label='imagej/imagej\#87' %}.
 
 ## UnsupportedClassVersionError
 

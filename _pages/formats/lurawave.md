@@ -1,5 +1,4 @@
 ---
-mediawiki: LuraWave
 title: LuraWave
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
@@ -13,16 +12,16 @@ The [MBF Plugin Collection](/software/mbf-imagej) legally bundles the LuraWave L
 
 Steps to use:
 
-1.  [Download ImageJ 1.x](/ij/download.html) and unpack it
-2.  [Download the MBF Plugins Collection](/ij/plugins/mbf/)
-3.  Merge the MBF plugins into your ImageJ 1.x folder
+1.  [Download ImageJ](https://imagej.nih.gov/ij/download.html) and unpack it
+2.  [Download the MBF Plugins Collection](https://imagej.nih.gov/ij/plugins/mbf/)
+3.  Merge the MBF plugins into your ImageJ folder
 4.  Use {% include bc path='File | Open...'%} to convert your .flex files to OME-TIFF using [Bio-Formats](/formats/bio-formats)
 
 Unfortunately, for legal reasons, we cannot elaborate on the technical details of how the MBF collection provides this functionality, nor can we legally make this feature available within [ImageJ2](/software/imagej2) or [Fiji](/software/fiji).
 
 ## Purchasing your own license
 
-Alternately, the LuraWave decoder is proprietary software which you can (theoretically) purchase from [LuraTech](https://www.luratech.com/en/). However, we do not know the details of who to contact, nor how much it costs to do so.
+Alternately, the LuraWave decoder is proprietary software which you can (theoretically) purchase from [LuraTech](https://www.luratech.com/en/). However, we do not know the details of who to contact, nor how much it costs to do so. In October of 2015 Foxit Corporation acquired LuraTech Imaging GmbH.
 
 ## See also
 

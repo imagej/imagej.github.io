@@ -4,19 +4,17 @@ section: Extend:Development
 ---
 
 
-The [ImageJ](/software/imagej) and related [SciJava](/libs/scijava) projects take advantage of several project management tools.
+The [ImageJ2](/software/imagej2) and related [SciJava](/libs/scijava) projects take advantage of several project management tools.
 
 ## Git
 
-ImageJ uses the [Git](/develop/git) revision control system to manage its [source code](/develop/source).
+SciJava projects use the [Git](/develop/git) revision control system to manage its [source code](/develop/source).
 
 See the [Git](/develop/git) pages for more information, tutorials, etc.
 
 ## Maven
 
-ImageJ uses [Maven](/develop/maven) for its project infrastructure.
-
-SciJava projects use the [SciJava Maven repository](https://maven.scijava.org/) (using [Sonatype Nexus](http://www.sonatype.com/nexus)) for managing SciJava libraries. Such a repository serves two main purposes:
+SciJava projects use [Maven](/develop/maven) for its project infrastructure. They use the [SciJava Maven repository](https://maven.scijava.org/) (which runs [Sonatype Nexus](http://www.sonatype.com/nexus)) for deploying components and accessing dependencies. Such a repository serves two main purposes:
 
 ### Deployment
 
@@ -46,7 +44,7 @@ Developers can benefit from the mirror by adding the following section to their 
 
 ## Continuous integration
 
-ImageJ uses [Travis CI](/develop/travis), a cloud-based continuous integration (CI) system, which automatically checks the code for build and test errors.
+SciJava projects use [Travis CI](/develop/travis), a cloud-based continuous integration (CI) system, which automatically checks the code for build and test errors.
 
 ## Issue tracking
 
@@ -56,7 +54,11 @@ You can search issues using the ImageJ search portal's GitHub button here:
 
 {% include link-banner url='https://search.imagej.net/' %}
 
-Previously, some projects used [Trac](https://trac.edgewall.org/) for issue tracking and roadmapping, but all Trac issues have now been migrated to GitHub. The old Trac-based issues are still available as read-only archives: see [here for ImageJ](/tickets) and [here for LOCI/Bio-Formats](https://uw-loci.github.io/tickets/).
+Previously, some projects used different issue trackers. These old issues are still available as read-only archives:
+
+| [ImageJ2 Trac](/tickets)                                    |
+| [LOCI/Bio-Formats Trac](https://uw-loci.github.io/tickets/) |
+| [Fiji BugZilla](https://fiji.sc/bug/)                       |
 
 ### What are issues for?
 
@@ -66,70 +68,39 @@ Issues and milestones are public-facing entities, yet their content can be highl
 <table>
   <tbody>
     <tr>
-      <td>
-        <p><strong>Who</strong></p>
-      </td>
-      <td>
-        <p><strong>What</strong></p>
-      </td>
-      <td>
-        <p><strong>How?</strong></p>
-      </td>
+      <th>Who</th>
+      <th>What</th>
+      <th>How?</th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Users<br>
-        want...</strong></p>
-      </td>
-      <td>
-        <p>to know what's already been reported</p>
-      </td>
-      <td>
-        <p>Browse and search <a href="https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">all open issues</a>.</p>
-      </td>
+      <th>Users<br>want...</th>
+      <td>to know what's already been reported</td>
+      <td>Browse and search <a href="https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">all open issues</a>.</td>
     </tr>
     <tr>
       <td></td>
-      <td>
-        <p>to keep track of issues of interest</p>
-      </td>
-      <td>
-        <p>Subscribe to desired issues using <a href="https://guides.github.com/features/issues/#notifications">notifications</a>.</p>
-      </td>
+      <td>to keep track of issues of interest</td>
+      <td>Subscribe to desired issues using <a href="https://guides.github.com/features/issues/#notifications">notifications</a>.</td>
     </tr>
     <tr>
       <td></td>
-      <td>
-        <p>to know which issues were fixed in a release</p>
-      </td>
-      <td>
-        <p>Browse issues at a particular <a href="https://guides.github.com/features/issues/#filtering">milestone</a><br>
-        (e.g., <a href="https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">1.0.0 issues</a>, <a href="https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">1.0.0 bugs</a>, <a href="https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci+">1.0.0 enhancements</a>).</p>
-      </td>
+      <td>to know which issues were fixed in a release</td>
+      <td>Browse issues at a particular <a href="https://guides.github.com/features/issues/#filtering">milestone</a><br>
+        (e.g., <a href="https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">1.0.0 issues</a>, <a href="https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglibaven-nar+user%3Ascifio+user%3Ascijava+user%3Atrakem2">1.0.0 bugs</a>, <a href="https://github.com/issues?q=milestone%3A1.0.0+is%3Aclosed+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">1.0.0 enhancements</a>).</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>
-        <p>to ask questions and report new issues</p>
-      </td>
-      <td>
-        <p>Report new issues using the big green "New issue" button,<br>
-        or via ImageJ's <a href="/discuss/bugs">Report a Bug</a> plugin.</p>
+      <td>to ask questions and report new issues</td>
+      <td>Report new issues using the big green "New issue" button,<br>
+        or via ImageJ's <a href="/discuss/bugs">Report a Bug</a> plugin.
       </td>
     </tr>
     <tr>
-      <td>
-        <p><strong>Developers<br>
-        want...</strong></p>
-      </td>
-      <td>
-        <p>to track their current tasks</p>
-      </td>
-      <td>
-        <p>Browse issues assigned to a particular developer<br>
-        (e.g., <a href="https://github.com/issues?q=is%3Aopen+assignee%3Actrueden+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">ctrueden</a>, <a href="https://github.com/issues?q=is%3Aopen+assignee%3Ahinerm+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">hinerm</a>).</p>
-      </td>
+      <th>Developers<br>want...</th>
+      <td>to track their current tasks</td>
+      <td>Browse issues assigned to a particular developer<br>
+        (e.g., <a href="https://github.com/issues?q=is%3Aopen+assignee%3Actrueden+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">ctrueden</a>, <a href="https://github.com/issues?q=is%3Aopen+assignee%3Ahinerm+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">hinerm</a>).</td>
     </tr>
     <tr>
       <td></td>
@@ -137,7 +108,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>to find new tasks to work on</p>
       </td>
       <td>
-        <p>Browse the <a href="https://github.com/issues?q=is%3Aopen+label%3A%22help+wanted%22+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">"help wanted" label</a> or <a href="https://github.com/issues?q=is%3Aopen+no%3Aassignee+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">unassigned issues</a>.</p>
+        <p>Browse the <a href="https://github.com/issues?q=is%3Aopen+label%3A%22help+wanted%22+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">"help wanted" label</a> or <a href="https://github.com/issues?q=is%3Aopen+no%3Aassignee+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">unassigned issues</a>.</p>
       </td>
       <td></td>
     </tr>
@@ -159,7 +130,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>to easily see what needs attention</p>
       </td>
       <td>
-        <p>Browse <a href="https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">issues without a milestone</a>.</p>
+        <p>Browse <a href="https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">issues without a milestone</a>.</p>
       </td>
     </tr>
     <tr>
@@ -168,7 +139,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>to ignore inactive issues without closing them</p>
       </td>
       <td>
-        <p>Use the <a href="https://github.com/issues?q=is%3Aopen+milestone%3Aunscheduled+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci">"unscheduled" milestone</a>.</p>
+        <p>Use the <a href="https://github.com/issues?q=is%3Aopen+milestone%3Aunscheduled+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2">"unscheduled" milestone</a>.</p>
       </td>
     </tr>
     <tr>
@@ -217,19 +188,18 @@ Using these conventions gives rise to a workflow where new issues come in with n
 
 As issues are closed, they are sorted into milestones which match each project's release tags, making it easy to browse which issues were addressed as part of each release.
 
-The high-level topics of interest (i.e., [bugs](https://github.com/issues?q=is%3Aopen+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci) and [enhancements](https://github.com/issues?q=is%3Aopen+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci)) can easily be filtered by label, while milestones establish the timeline and functional development.
+The high-level topics of interest (i.e., [bugs](https://github.com/issues?q=is%3Aopen+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2) and [enhancements](https://github.com/issues?q=is%3Aopen+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Ascifio+user%3Ascijava+user%3Atrakem2)) can easily be filtered by label, while milestones establish the timeline and functional development.
 
 Note that the relationship between milestones and software releases can be one-to-many: e.g., bug-fix releases, or even the addition of new features, may not necessitate their own milestones. Good milestone structure should read similarly to a good [git](http://chris.beams.io/posts/git-commit/) [history](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message): informative without being overly verbose.
 
 ## Patch submissions
 
-The preferred mechanism to contribute improvements to [ImageJ](/software/imagej) and other [SciJava](/libs/scijava) components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/contribute) page for details.
+The preferred mechanism to contribute improvements to SciJava projects is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)! See the [Contributing](/contribute) page for details.
 
 ## Roadmap links
 
--   [News](/news) about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
--   [Recent changes](https://github.com/imagej/imagej.github.io/commits/main) to this web site (*not* the ImageJ code itself).
--   [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](/discuss/bugs) plugin.
+-   [News](/news) about ImageJ2 and Fiji developments, including status updates, observations and comments about programming.
+-   [Recent changes](https://github.com/imagej/imagej.github.io/commits/main) to this web site (*not* the source code itself).
 
 ## Citable code
 

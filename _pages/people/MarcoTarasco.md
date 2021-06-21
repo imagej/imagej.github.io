@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Zfmacros
 title: Marco Tarasco
 name: Marco Tarasco
 github: MarcoTarasco

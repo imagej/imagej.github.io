@@ -13,7 +13,7 @@ nav-links: true
 
 ## ImageJ
 
-[ImageJ 1.x](/software/imagej1) was funded internally by the Research Services branch of the [National Institutes of Health](https://nih.gov/). It continues to be developed by {% include person id='rasband' %}, who is now retired, and continues his work on ImageJ1 as an NIH special volunteer.
+The original [ImageJ](/software/imagej) was funded internally by the Research Services branch of the [National Institutes of Health](https://nih.gov/). It continues to be developed by {% include person id='rasband' %}, who is now retired, and continues his work on ImageJ as an NIH special volunteer.
 
 [ImageJ2](/software/imagej2) was initially funded from 2010 through 2012 by the National Institute of General Medical Sciences (NIGMS) through the American Recovery and Reinvestment Act of 2009 NIH Research and Research Infrastructure "Grand Opportunities" Grant, **"Hardening" of Biomedical Informatics/Computing Software for Robustness and Dissemination** (Ref: RC2 GM092519-01). For more information on the grant call, see the listing on the NIGMS [Grand Opportunity Areas](http://www.nigms.nih.gov/Research/pages/GrandOpportunityAreas.aspx) page. See also the original [ImageJ2 grant proposal](/software/imagej2/grant-proposal) from 2009. For several years after that, ImageJ development was funded by several sources, including a [Wellcome Trust](http://www.wellcome.ac.uk/) Strategic Award (Ref: 095931) for the [OMERO](/software/omero) project, and substantial development effort at the University of Konstanz, University of Wisconsin-Madison and elsewhere. In 2020, the [Center for Open Bioimage Analysis](/orgs/coba) (COBA) was established with a P41 grant from the NIH National Institute of General Medical Sciences. Part of COBA's funding is allocated toward ImageJ development and maintainence, with a focus on interoperability and integration with other bioimaging technologies.
 
@@ -43,7 +43,7 @@ The SciJava project as a whole is organized and maintained by {% include person 
 
 ## Fiji
 
-The [Fiji](/software/fiji) distribution of [ImageJ](/software/imagej) for the life sciences is a broad collection of plugins by many authors across the worldwide community.
+The [Fiji](/software/fiji) distribution of ImageJ and ImageJ2 for the life sciences is a broad collection of plugins by many authors across the worldwide community.
 
 Fiji as a whole is organized and maintained by:
 

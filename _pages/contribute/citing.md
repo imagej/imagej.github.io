@@ -4,20 +4,22 @@ section: Contribute
 nav-links: true
 ---
 
-{% include notice icon="info" content='This page describes how to *cite* [SciJava](/libs/scijava) projects.
+{% include notice icon="info" content='This page describes how to *cite* [ImageJ](/software/imagej) and related projects.
 
 -   For information on who *contributes* to these projects, see [Contributors](/people).
 -   For information on who *maintains* these projects, see [Governance](/contribute/governance).
--   For information on how ImageJ projects are *funded*, see [Funding](/contribute/funding).' %}
-
+-   For information on how these projects are *funded*, see [Funding](/contribute/funding).' %}
 
 ## Guidelines
 
 We ask users to cite:
 
-1.  Any [specific publications](/plugin-index#citable) of [plugins](/plugins) used.
-2.  The general paper of ImageJ distribution(s) used—e.g., if you used [Fiji](/software/fiji), cite the [Fiji](/software/fiji#publication) paper.
-3.  The general [ImageJ](/software/imagej) paper.
+1.  Any [specific publications](#citable-software) of [plugins](/plugins) used.
+
+2.  The general paper of [ImageJ flavor(s)](/learn/flavors) used; e.g.:
+    - If you used [Fiji](/software/fiji), cite the [Fiji paper](/software/fiji#publication).
+    - If you used [ImageJ2](/software/imagej2), cite the [ImageJ2 paper](/software/imagej2#publication).
+    - If you used the original [ImageJ](/software/imagej), cite the [ImageJ paper](/software/imagej#publication).
 
 If journal reference limits interfere, the plugin-specific publications should take precedence.
 
@@ -41,30 +43,22 @@ Thank you for your support.
 }
 </style>
 
-## Core projects
+## ImageJ and variants
+
+<div class="publication-box">
+<div>{% include icon name='ImageJ' %}
+<br><a href="/software/imagej">ImageJ</a></div>
+{% include citation id='software/imagej' %}</div>
 
 <div class="publication-box">
 <div>{% include icon name='ImageJ2' %}
 <br><a href="/software/imagej2">ImageJ2</a></div>
 {% include citation id='software/imagej2' %}</div>
 
-
-<div class="publication-box">
-<div>{% include icon name='ImageJ1' %}
-<br><a href="/software/imagej1">ImageJ 1.x</a></div>
-{% include citation id='software/imagej1' %}</div>
-
-## Distributions of ImageJ
-
 <div class="publication-box">
 <div>{% include icon name='Fiji' %}
 <br><a href="/software/fiji">Fiji</a></div>
 {% include citation id='software/fiji' %}</div>
-
-<div class="publication-box">
-<div>{% include icon name='Bio7' %}
-<br><a href="/software/bio7">Bio7</a></div>
-{% include citation id='software/bio7' %}</div>
 
 ## Supporting libraries
 
@@ -84,7 +78,7 @@ Thank you for your support.
   {% include citation id='libs/scifio' %}</div>
 
 <div class="publication-box">
-<div>{% include icon name='ImageJ' %}
+<div>{% include icon name='ImageJ2' %}
   <br><a href="/libs/imagej-ops">ImageJ Ops</a></div>
   {% include citation id='libs/imagej-ops' %}</div>
 

@@ -3,6 +3,7 @@ mediawiki: Level_Sets
 title: Level Sets
 categories: [Uncategorized]
 artifact: sc.fiji:level_sets
+extensions: ["mathjax"]
 ---
 
 <img src="/media/plugins/ls.2b.progress.png" width="300"/>
@@ -124,19 +125,21 @@ Result: ![](/media/plugins/ls.3.result.png)
 
 Note the output in the debug window:
 
-`Level Set (Active Contours): Starting Mon Apr 27 20:12:14 PDT 2009`  
-`Note: Each iteration step is 100 iterations`  
-`Note: ROI is shape, parsing shape`  
-`Initiated boundary pixels: 24 ZERO, 45 INSIDE, 144597 OUTSIDE`  
-`Grey seed not set - setting to mean of ROI boundary = 65`  
-`Delta t = 0.07575757575757575`  
-`Iteration step: convergence = 0.02057951452408498, number of pixels changed = 0.02057951452408498`  
-`Iteration step: convergence = 0.016657803438813925, number of pixels changed = 0.016657803438813925`  
-`Iteration step: convergence = 0.011131099511386819, number of pixels changed = 0.011131099511386819`  
-`Iteration step: convergence = 0.006338065350476374, number of pixels changed = 0.006338065350476374`  
-`Converged!`  
-`Iteration step: convergence = 0.00499110164272695, number of pixels changed = 0.00499110164272695`  
-`Level Set: Finished Mon Apr 27 20:12:15 PDT 2009`
+```
+Level Set (Active Contours): Starting Mon Apr 27 20:12:14 PDT 2009
+Note: Each iteration step is 100 iterations
+Note: ROI is shape, parsing shape
+Initiated boundary pixels: 24 ZERO, 45 INSIDE, 144597 OUTSIDE
+Grey seed not set - setting to mean of ROI boundary = 65
+Delta t = 0.07575757575757575
+Iteration step: convergence = 0.02057951452408498, number of pixels changed = 0.02057951452408498
+Iteration step: convergence = 0.016657803438813925, number of pixels changed = 0.016657803438813925
+Iteration step: convergence = 0.011131099511386819, number of pixels changed = 0.011131099511386819
+Iteration step: convergence = 0.006338065350476374, number of pixels changed = 0.006338065350476374
+Converged!
+Iteration step: convergence = 0.00499110164272695, number of pixels changed = 0.00499110164272695
+Level Set: Finished Mon Apr 27 20:12:15 PDT 2009
+```
 
 The "Grey seed" is the value derived from the region of interest. The "Greyscale tolerance" setting in the dialog will add a penalty to the progression if the value exceeds the limits set in the dialog (65 plus/minus 30 in the example, i.e. grey values from 35 to 95). This will limit the segmentation to grey values within the tolerance limits.
 

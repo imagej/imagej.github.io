@@ -9,6 +9,6 @@ github: bdezonia
 Barry DeZonia was a programmer at [LOCI](/orgs/loci) from January 2010 through
 November 2013. He was part of the original [ImageJ2](/software/imagej2)
 programming team. He designed substantial key parts of ImageJ2, reimplemented
-many [ImageJ1](/software/imagej1) commands in [ImgLib2](/libs/imglib2), and
+many [ImageJ 1.x](/software/imagej) commands in [ImgLib2](/libs/imglib2), and
 spearheaded the *ImgLib2 OPS* project which later became [ImageJ
 Ops](/libs/imagej-ops).

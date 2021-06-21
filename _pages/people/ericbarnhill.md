@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Ericbarnhill
 title: Eric Barnhill
 
 name: Eric Barnhill

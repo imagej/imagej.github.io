@@ -85,7 +85,7 @@ Functions of the buttons:
     "Diffusion"
     button allows one to apply an anisotropic diffusion filter layer by
     layer for all slices of the selected channel. This button calls the
-    plugin [Anisotropic diffusion 2D](/ij/plugins/anisotropic-diffusion-2d.html).
+    plugin [Anisotropic diffusion 2D](https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html).
 
 -   The "MorfSegmentation"
     button starts the plugin "Morphological Segmentation"

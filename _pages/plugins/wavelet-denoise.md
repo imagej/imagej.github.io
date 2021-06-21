@@ -6,7 +6,7 @@ categories: [Filtering]
 
 
 {% capture source%}
-{% include github org='LMCF-IMG' repo='Wavelet\_Denoise' %}
+{% include github org='LMCF-IMG' repo='Wavelet_Denoise' %}
 {% endcapture %}
 {% include info-box software='ImageJ/Fiji' name='Wavelet\_Denoise' author=' [Martin Čapek](/people/LMCF-IMG)' maintainer='Martin Čapek' source=source released='04/09/2020' latest-version='05/21/2020' %}
 
@@ -82,7 +82,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 1\. Open an image/stack.
 
-2\. Run {% include bc path='Plugins | Wavelet\_Denoise'%}.
+2\. Run {% include bc path='Plugins | Wavelet_Denoise'%}.
 
 3\. Arrange positions of <i>Wavelet\_Denoise</i> main window and <i>Synchronize Windows</i> dialog in the screen.
 
@@ -106,7 +106,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 1\. Open an image/stack.
 
-2\. Run {% include bc path='Plugins | Wavelet\_Denoise'%}.
+2\. Run {% include bc path='Plugins | Wavelet_Denoise'%}.
 
 3\. Arrange positions of <i>Wavelet\_Denoise</i> main window and <i>Synchronize Windows</i> dialog in the screen.
 

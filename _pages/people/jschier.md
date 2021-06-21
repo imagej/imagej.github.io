@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Schier
 title: Jan Schier
 name: Jan Schier
 affiliation: Institute of Information Theory and Automation | http://www.utia.cas.cz/

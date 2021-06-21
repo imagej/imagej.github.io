@@ -12,7 +12,7 @@ categories: [Uncategorized]
 
 ## Overview
 
-BigDataProcessor in an ImageJ1 based FIJI plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [1](https://github.com/embl-cba/fiji-plugin-bigDataProcessor/blob/master/README.md#big-data-processor).
+BigDataProcessor in an ImageJ 1.x based Fiji plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [1](https://github.com/embl-cba/fiji-plugin-bigDataProcessor/blob/master/README.md#big-data-processor).
 
 ## Installation
 

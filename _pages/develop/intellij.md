@@ -1,10 +1,10 @@
 ---
 mediawiki: Developing_ImageJ_in_IntelliJ_IDEA
 section: Extend:Development:Tools:IDEs
-title: Developing ImageJ in IntelliJ IDEA
+title: Developing ImageJ2 in IntelliJ IDEA
 ---
 
-This article explains how to install and configure IntelliJ IDEA for use with [ImageJ](/software/imagej) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
+This article explains how to install and configure IntelliJ IDEA for use with [ImageJ2](/software/imagej2) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 ## Install and configure IDEA
 
@@ -14,10 +14,10 @@ This article explains how to install and configure IntelliJ IDEA for use with [I
 
 -   **Install IDEA.** Download and install IDEA from the [IDEA web site](http://www.jetbrains.com/idea/download/).
 
-## Import the ImageJ source
+## Import the ImageJ2 source
 
 1.  From the IDEA menu, choose {% include bc path='Version Control|Checkout from Version Control|Git'%}
-2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](Git___github.com_imagej_imagej)
+2.  For the Git Repository URL, enter: [`git://github.com/imagej/imagej`](git://github.com/imagej/imagej2)
 3.  Specify a Parent Directory, click Clone, and wait
 4.  When prompted, click Yes to create an IntelliJ IDEA project from the sources
 
@@ -30,17 +30,17 @@ On some platforms, the first time you perform this procedure, you may be prompte
 
 1.  Choose {% include bc path='Run|Edit Configurations'%} from the menu
 2.  Click the Plus icon and choose Application
-3.  In the Name field, type ImageJ
+3.  In the Name field, type ImageJ2
 4.  Type "net.imagej.Main" for the Main class
-5.  For "Use classpath and JDK of module" select "imagej" from the list
+5.  For "Use classpath and JDK of module" select "imagej2" from the list
 6.  Click OK
-7.  Choose {% include bc path='Run|Run ImageJ'%} from the menu
+7.  Choose {% include bc path='Run|Run ImageJ2'%} from the menu
 
 The project automatically builds before launching, so it may take a little while the first time.
 
 ## Code style profiles
 
-This section is a short guide on how to start using the Eclipse code style profile of ImageJ.
+This section is a short guide on how to start using the Eclipse code style profile of ImageJ2.
 
 ### Installing Eclipse code formatter plugin
 
@@ -59,7 +59,7 @@ A tutorial on IntelliJ plugins can be found [here](https://www.jetbrains.com/hel
 
 After installing the ECF plugin you need to set it to use the Eclipse code styles file of the ImageJ project:
 
-1.  Download [eclipse-preferences.epf](https://github.com/imagej/imagej/blob/master/config/eclipse-preferences.epf)
+1.  Download [eclipse-preferences.epf](https://github.com/imagej/imagej2/blob/master/config/eclipse-preferences.epf)
 2.  Open Eclipse and follow [these](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm) steps to import an `.epf` file
 3.  Open {% include bc path="Window | Preferences | Java | Code Style | Formatter" %}
 4.  Set *Active Profile* to *ImageJ*
@@ -73,7 +73,7 @@ After installing the ECF plugin you need to set it to use the Eclipse code style
 12. Check *Optimize Imports*
 13. Set *Import order* to *Manual configuration* and write `com;io;java;javax;net;org;`
 
-**NB** You can skip the first five steps if you use [this XML file](https://github.com/imagej/imagej/blob/bcb4eddf41e90ffba6d520b83e691d3a02d65739/config/eclipse-code-clean-up-profile.xml). But note that it is old and possibly out of date.
+**NB** You can skip the first five steps if you use [this XML file](https://github.com/imagej/imagej2/blob/bcb4eddf41e90ffba6d520b83e691d3a02d65739/config/eclipse-code-clean-up-profile.xml). But note that it is old and possibly out of date.
 
 More information on setting up the ECF plugin can be found [here](https://github.com/krasa/EclipseCodeFormatter#instructions).
 
@@ -92,7 +92,7 @@ When renaming a classname which was annotated with SciJava's `@Plugin` annotatio
         items[2] = label='Quit', iconPath='/icons/commands/door_in.png', priority=0.0, enabled=true, pluginType=Command
         [Subscriber] org.scijava.menu.DefaultMenuService [priority = 0.0]
         [Method] protected void org.scijava.menu.DefaultMenuService.onEvent(org.scijava.module.event.ModulesUpdatedEvent)
-    java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found: 
+    java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found:
 
     the.plugin.you.just.Renamed
 

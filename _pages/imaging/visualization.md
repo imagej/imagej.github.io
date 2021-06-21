@@ -5,7 +5,7 @@ section: Learn:Scientific Imaging
 nav-links: true
 ---
 
-{% include notice icon='info' size='large' content='See [Visualization](/plugin-index#visualization) for pages about scientific visualization.' %} {% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
+{% include wikipedia title='Scientific visualization' text='Scientific visualization'%} is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
 ## Getting Started with Simple Visualization Options in ImageJ
 
@@ -13,9 +13,9 @@ nav-links: true
 
 A [pseudocolor image](/imaging/color-image-processing#pseudo-color) is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a {% include wikipedia title='Lookup table#Lookup_tables_in_image_processing' text='LUT' %}. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
 
-The [LUT Menu](/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
+The [LUT Menu](https://imagej.nih.gov/ij/docs/guide/146-19.html#sub:LUTMenu) of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
-Note: in the ImageJ 1.x user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels.
+{% include notice icon='note' content="In the ImageJ user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels." %}
 
 More information on this topic can be found on the [Color Image Processing](/imaging/color-image-processing) page.
 
@@ -100,7 +100,7 @@ For further reading about color maps, see [1] and [2]
 
 ### Adjusting your Image in ImageJ
 
-The [Adjust submenu](/ij/docs/guide/146-28.html#toc-Subsection-28.2) contains commands that adjust \[/docs/guide/146-28.html#sub:Brightness/Contrast>...%5BC%5D Brightness/Contrast\], \[</docs/guide/146-28.html#sub:Threshold>...%5BT%5D Threshold\] levels, and image \[</docs/guide/146-28.html#sub:Size... Size\].
+The [Adjust submenu](https://imagej.nih.gov/ij/docs/guide/146-28.html#toc-Subsection-28.2) contains commands that adjust [Brightness/Contrast](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Brightness/Contrast...%5BC%5D), [Threshold](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Threshold...%5BT%5D) levels, and image [Size](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Size...).
 
 ### Visualization of Volumetric Image Data
 
@@ -193,9 +193,9 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 
 ### The Basics: ImageJ v1.x Plot Tools
 
-1.  [Plot Profile](/ij/docs/guide/146-30.html#sub:Plot-Profile-%5Bk%5D)
-2.  [Plot Z-axis Profile](/ij/docs/guide/146-28.html#sub:Plot-Z-axis-Profile...)
-3.  [Surface Plot](/ij/docs/guide/146-30.html#sub:Surface-Plot...)
+1.  [Plot Profile](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Plot-Profile-%5Bk%5D)
+2.  [Plot Z-axis Profile](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Plot-Z-axis-Profile...)
+3.  [Surface Plot](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Surface-Plot...)
 
 ### Available Plugins for Making Plots in ImageJ
 

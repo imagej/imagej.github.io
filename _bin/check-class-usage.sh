@@ -16,7 +16,6 @@ assets/css/main.css
 assets/css/layout.css
 assets/css/includes.css
 assets/css/timeline.css
-assets/css/plugin-index.css
 assets/css/dock.css
 assets/css/noscript.css
 assets/css/home.css

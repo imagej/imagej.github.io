@@ -14,7 +14,6 @@ ImageJ allows you to write scripts in several different languages.
 -   Otherwise, choose your language from the *Language* menu.
 -   Grab code snippets for common tasks from the [Scripting toolbox](/scripting/toolbox).
 -   See [Scripting comparisons](/scripting/comparisons) for a side-by-side comparison of scripting languages.
--   See [Scripting](/plugin-index#scripting) for a list of all scripting-related pages on this wiki.
 
 # Supported languages
 
@@ -42,7 +41,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p><a href="/scripting/macro">ImageJ Macro</a></p>
       </td>
       <td>
-        <p>The <a href="/software/imagej1">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
+        <p>The <a href="/software/imagej">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
       </td>
     </tr>
     <tr>
@@ -198,7 +197,7 @@ Scripts can be packaged in a JAR file for easier distribution to your colleagues
 
 Inside the example-script-collection jar, the scripts are in `./resources/scripts.` and therefore get added to the menu when the JAR is on the classpath (i.e. in `./plugins/` or `./jars/`).
 
-ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as it is already described in the previous section, and for jars in `./jars/`. ImageJ1 recognizes plugins and scripts in `./plugins/`
+ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as it is already described in the previous section, and for jars in `./jars/`. ImageJ 1.x recognizes plugins and scripts in `./plugins/`
 
 # Running scripts in headless mode
 

@@ -23,6 +23,10 @@ code, and another three concluding it. Optionally, you can write the name of
 the language in small case next to the leading fence to declare syntax
 highlighting is desired with the stated language.
 
+**NB:** code fence syntax highlighting is currently not working locally due to
+differences in local build configuration. However, highlighting *will* display as
+appropriate on the public wiki.
+
 ### Java example
 
 {% capture code-fence-java %}
@@ -80,6 +84,43 @@ Right now, inline code snippets cannot have line numbers; see
 {% include github org='imagej' repo='imagej.github.io' issue=128 label='issue 128' %}
 for technical details. For now, if you want to have line numbers, use the
 [Embedding external code](#embedding-external-code) approach below.
+
+## Making code snippets executable and editable
+By enabling the `imjoy` extension, you can make your code snippets executable and editable.
+It makes wiki pages more interactive, thus suited for building demos and tutorials.
+Currently, it support ImageJ macro and ImJoy plugin scripts.
+
+To enable it, you need to:
+ 1. add `imjoy` to `extensions` in the [front matter](/editing#add-the-pages-front-matter) of your page;
+ 2. Add a HTML comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
+
+Here is an example for making a ImageJ macro code snippet executable.
+
+First, enable the `imjoy` extension in the begining of your page:
+```yaml
+---
+title: My Awesome Page
+extensions: ["imjoy"]
+---
+```
+
+Let's say you have the following macro:
+```javascript
+print("hello world");
+```
+
+To make it executable, you just need to add a HTML comment:
+````markdown
+<!-- ImJoyPlugin: { "type": "macro"} -->
+```javascript
+print("hello world");
+```
+````
+
+For more detailed instructions about using ImageJ macro with ImageJ.JS, please refer to [ImageJ.JS](/software/imagej-js). 
+
+Similarily, you can execute an ImJoy plugin in code fences which can be used for integrating image viewers such as 
+[Kaibu](https://kaibu.org), [vizarr](https://github.com/hms-dbmi/vizarr) and [ITK/VTK viewer](https://kitware.github.io/itk-vtk-viewer/), or running ImageJ2 and Fiji through [pyimagej](https://github.com/imagej/pyimagej) on a remote Jupyter server (e.g. on [Binder](https://mybinder.org)). For more details, please refer to [ImJoy](/software/imjoy).
 
 # Embedding external code
 

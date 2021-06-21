@@ -12,7 +12,7 @@ The SciJava [philosophy](/develop/philosophy) is to [release early, release ofte
 
 # Phases of development
 
-[ImageJ](/software/imagej) and [Fiji](/software/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
+[ImageJ2](/software/imagej2) and [Fiji](/software/fiji) are developed according to the [SciJava philosophy](/develop/philosophy), thus these applications are used throughout this tutorial to illustrate the development lifecycle.
 
 Whether adding new features, fixing bugs, improving performance, etc... **development** is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 

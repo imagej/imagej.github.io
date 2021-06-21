@@ -107,7 +107,7 @@ by name, sans file extension.
 
 ### Project-specific commentary
 
-{% highlight liquid %}{% raw %}{% include notice icon="imagej"
+{% highlight liquid %}{% raw %}{% include notice icon="imagej2"
   content="This website documents the ImageJ ecosystem." %}{% endraw %}{% endhighlight %}
 {% include notice icon="imagej"
   content="This website documents the ImageJ ecosystem." %}
@@ -121,10 +121,10 @@ by name, sans file extension.
 
 --------------
 
-{% highlight liquid %}{% raw %}{% include notice icon="imagej1"
-  content="ImageJ 1.x was first released in 1997." %}{% endraw %}{% endhighlight %}
-{% include notice icon="imagej1"
-  content="ImageJ 1.x was first released in 1997." %}
+{% highlight liquid %}{% raw %}{% include notice icon="imagej"
+  content="ImageJ was first released in 1997." %}{% endraw %}{% endhighlight %}
+{% include notice icon="imagej"
+  content="ImageJ was first released in 1997." %}
 
 --------------
 
@@ -172,10 +172,10 @@ by name, sans file extension.
 
 {% highlight liquid %}{% raw %}{% include notice class="fab fa-fort-awesome"
   content="You can use Font Awesome icons.
-  [More than 5,000 icons!](https://fontawesome.com/v5.9.0/icons)" %}{% endraw %}{% endhighlight %}
+  [More than 1,500 icons!](https://fontawesome.com/v5.9/icons?m=free)" %}{% endraw %}{% endhighlight %}
 {% include notice class="fab fa-fort-awesome"
   content="You can use Font Awesome icons.
-  [More than 5,000 icons!](https://fontawesome.com/v5.9.0/icons)" %}
+  [More than 1,500 icons!](https://fontawesome.com/v5.9/icons?m=free)" %}
 
 See also [Symbols › Font Awesome](/editing/symbols#font-awesome).
 

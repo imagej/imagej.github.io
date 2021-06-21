@@ -1,5 +1,4 @@
 ---
-mediawiki: 2015-06-17_-_Better_behavior_on_OS_X
 title: 2015-06-17 - Better behavior on OS X
 ---
 

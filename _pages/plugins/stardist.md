@@ -126,4 +126,4 @@ Please cite the paper if you are using the plugin in your research:
 
   
 
-[1] Carpenter et al., Genome Biology, 2006
+[1] Caicedo et al., Nature Methods, 2019

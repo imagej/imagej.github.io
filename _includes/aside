@@ -1,8 +1,10 @@
 {%- assign width = include.width -%}
-{%- assign title = include.title -%}
+{%- assign aside-title = include.title -%}
+{%- assign icon = include.icon -%}
 
 <aside class="sidebox"{% if width %} width="{{width}}"{% endif %}>
-{% if title %}<strong>{{title | markdownify}}</strong>{% endif %}
+{% if icon -%} {% include img src=icon width=72 align='right' class='box-icon' %} {%- endif %}
+{% if aside-title %}<strong>{{aside-title | markdownify}}</strong>{% endif %}
 <div>{{include.content | markdownify}}</div>
 </aside>
 

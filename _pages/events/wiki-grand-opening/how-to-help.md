@@ -5,11 +5,11 @@ nav-links: true
 nav-title: How to Help
 ---
 
-{% include notice icon="tip" content="Even if you only have a little time to
-  help, anything you can do to make progress will help to launch the site by
-  the target date of Friday, June 4!
-  [Sign up here](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0)."
-%}
+{% include notice icon="info" content="This page describes how to review
+  pages on this wiki, to ensure they look as good or better than they did
+  on the old wiki. It was originally part of the \"Great Wiki Launch\" editing
+  sprint of June 1-4, 2021, but the instructions remain useful for vetting
+  pages that still have not been checked." %}
 
 ## Project goals
 
@@ -17,8 +17,8 @@ nav-title: How to Help
 2.  **Improve or expand the content** of existing pages,
     as time and interest allows.
 3.  **Standardize the categories** for plugins. (Check out the
-    [plugin index](/plugin-index). See how many categories there are?
-    We need to pare it down!)
+    [list-of-extensions](/list-of-extensions). It's cleaner than before,
+    but further suggestions for consolidation are still welcome!)
 4.  **Get familiar** with the new wiki, and **provide feedback**:
     what works, what doesn't, etc.
 
@@ -92,58 +92,73 @@ In many ways, this new wiki is much more powerful than the old site.
 ## Questions to consider
 
 1.  **What should the official categories be** for plugins? Right now, people
-    can tag whatever they want for the categories, and [it shows in the plugin
-    index](/plugin-index). Do you have opinions? Or know of any kind of
-    community standard we could use here? Comment on {% include github
-      org='imagej' repo='imagej.github.io' issue=119 label='issue 119' %}!
+    can tag whatever they want for the categories, and
+    [it shows in the list of extensions](/list-of-extensions).
+    Do you have opinions? Or know of any kind of community
+    standard we could use here? Start a conversation in
+    [the chatroom](https://gitter.im/imagej/imagej.github.io) or
+    [on the Image.sc Forum](https://forum.image.sc/tag/imagej)!
 
-2.  `/update-sites` contains pages documenting what update sites are and how to
+2.  ~~`/update-sites` contains pages documenting what update sites are and how to
     use them, whereas `/sites` contains pages describing individual update sites
     (like `/people` for people, `/orgs` for organizations, `/software` for
     software packages, `/libs` for software libraries). **This naming is
-    confusing; do you have any better ideas?**
+    confusing; do you have any better ideas?**~~\\
+    *Resolution: `/sites/*` moved into `/update-sites/`
+    ({% include github org='imagej' repo='imagej.github.io' commit='3c6c255daf00b8bb215859249f9f9330ce49397a' label='imagej/imagej.github.io@3c6c255d' %}).*
 
-3.  `/tutorials` contains tutorials about ImageJ, but they are not currently
+3.  ~~`/tutorials` contains tutorials about ImageJ, but they are not currently
     rated by level of experience. It would be nicer if we rated each tutorial
     something like: 1-introductory (e.g. learning the GUI), 2-intermediate (e.g.
     recording and tweaking ImageJ macros), 3-advanced (e.g. scripting with the
-    Script Editor), 4-expert (e.g. programming plugins in Java).
+    Script Editor), 4-expert (e.g. programming plugins in Java).~~
 
-    *   **Would it make sense to divide the tutorials folder into subfolders** in
+    *   ~~**Would it make sense to divide the tutorials folder into subfolders** in
         this manner? How should we name it? `/tutorials/level1/` through
         `/tutorials/level4/`? Better ideas? Maybe the scripting tutorials in
         `/scripting/examples` should move into `/tutorials/level3` if we do
         this scheme? And maybe some things currently in `/learn` could move to
-        `/tutorials/level1` then?
-    *   **Or would it better to make the existing folder structure contain
+        `/tutorials/level1` then?~~
+    *   ~~**Or would it better to make the existing folder structure contain
         tutorials** at each level: `/learn` for level 1, `/scripting` for
         levels 2 and 3, and `/develop` for level 4? That's mostly how it is
         now, except we then also have articles the `/tutorials` folder...
-        should we parcel out what's there into the other locations instead?
+        should we parcel out what's there into the other locations instead?~~
 
-    Now that I've written all this out, I'm liking the latter approach, but
-    please think it over and discuss!
+    ~~Now that I've written all this out, I'm liking the latter approach, but
+    please think it over and discuss!~~\\
+    *Resolution: `/scripting/examples/*` was moved to `/tutorials/`
+    ({% include github org='imagej' repo='imagej.github.io' commit='11595491d01a6a788d6281f5b02d084afe353762' label='imagej/imagej.github.io@11595491' %}),
+    and all tutorials are now listed on `/tuturials/index`
+    ({% include github org='imagej' repo='imagej.github.io' commit='d942e84bf11f0a0fa86807b819455b2717c9c382' label='imagej/imagej.github.io@d942e84b' %}).
+    We should still consider adding a rating system for tutorials
+    ({% include github org='imagej' repo='imagej.github.io' issue=162 label='imagej/imagej.github.io#162' %}).*
 
-4.  The 11 not-yet-renamed pages in the root directory are:
+4.  ~~The 11 not-yet-renamed pages in the root directory are:~~
 
-    * Command\_Line\_Tips\_and\_Tricks
-    * Diadem\_Challenge\_Data
-    * Find\_Maxima...
-    * Finer\_Grained\_Debian\_Packages
-    * First-instar\_brain\_6.3MB
-    * ImageJ1-ImageJ2\_cheat\_sheet
-    * Imprint
-    * Java\_Options
-    * Java\_Tricks\_and\_Quirks
-    * Linux\_command\_line\_tutorial
-    * Mamed
+    * ~~Command\_Line\_Tips\_and\_Tricks~~
+    * ~~Diadem\_Challenge\_Data~~
+    * ~~Find\_Maxima...~~
+    * ~~Finer\_Grained\_Debian\_Packages~~
+    * ~~First-instar\_brain\_6.3MB~~
+    * ~~ImageJ1-ImageJ2\_cheat\_sheet~~
+    * ~~Imprint~~
+    * ~~Java\_Options~~
+    * ~~Java\_Tricks\_and\_Quirks~~
+    * ~~Linux\_command\_line\_tutorial~~
+    * ~~Mamed~~
 
-    Where should each one go? Please propose locations for them in the chat.
+    ~~Where should each one go? Please propose locations for them in the chat.~~\\
+    *Resolution: All of these pages are now located appropriately!*
 
-5.  Are there any cards on the [Road to Production project
+5.  ~~Are there any cards on the [Road to Production project
     board](https://github.com/imagej/imagej.github.io/projects/2) in the
     "To do - crowdsource!" column that interest you?
-    If so, please feel warmly invited to work on them!
+    If so, please feel warmly invited to work on them!~~\\
+    *Resolution: The "Road to Production" board is now complete and closed!
+    But you are still welcome to
+    [browse the issue tracker](https://github.com/imagej/imagej.github.io/issues)
+    for issues of interest to work on!*
 
 ## Setting up
 
@@ -157,10 +172,10 @@ In many ways, this new wiki is much more powerful than the old site.
     way to work!)
 
 2.  Once you have a GitHub account, do the following:
-    -   Open the
+    -   ~~Open the
         [first page of the sign-up sheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0)
         and make sure your GitHub ID is listed next to your name in the first
-        column.
+        column.~~
     -   Open the [chat room](https://gitter.im/imagej/imagej.github.io) in a
         browser tab, and sign in with your GitHub account.
     -   If you don't already have write access to the wiki, post a message in
@@ -230,10 +245,10 @@ In many ways, this new wiki is much more powerful than the old site.
 ## Choosing a page to work on
 
 Look over the [list of pages remaining](page-list).
-Pick one, then go to
+Pick one~~, then go to
 [page two of the sign-up sheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=967393198)
 and put your name next to that page before you start working on it.
-Otherwise, you might clash making edits at the same time as someone else.
+Otherwise, you might clash making edits at the same time as someone else~~.
 
 As for which pages to work on, here are some suggestions:
 

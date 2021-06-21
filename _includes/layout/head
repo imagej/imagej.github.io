@@ -1,5 +1,5 @@
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" />
     {% include layout/onebox-info %}
     <link rel="shortcut icon" href="/favicon.png">
     <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/assets/css/layout.css"/>
     <link rel="stylesheet" href="/assets/css/includes.css" />
     <link rel="stylesheet" href="/assets/css/timeline.css"/>
-    <link rel="stylesheet" href="/assets/css/plugin-index.css"/>
     <link rel="stylesheet" href="/assets/css/dock.css"/>
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 

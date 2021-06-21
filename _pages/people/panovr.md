@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Panovr
 title: Yili Zhao
 
 name: Yili Zhao

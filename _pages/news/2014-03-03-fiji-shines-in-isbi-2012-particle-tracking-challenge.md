@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-03-03_-_Fiji_shines_in_ISBI_2012_particle_tracking_challenge
 title: 2014-03-03 - Fiji shines in ISBI 2012 particle tracking challenge
 ---
 

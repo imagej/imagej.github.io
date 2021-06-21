@@ -1,5 +1,4 @@
 ---
-mediawiki: Diadem_Challenge_Data
 title: Diadem Challenge Data
 ---
 
@@ -39,33 +38,37 @@ You may wish at this point to adjust the viewing options in the tracer's dialog 
 
 <img src="/media/diadem-challenge-data-9.png" width="750"/>
 
-## Diadem Neocortical Layer 6 Axons
+## Diadem Neocortical Layer 1 Axons
 
-[The Neocortical Layer 6 Axons](http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html) data set is based on a set of image stacks that need to be stitched together. The key point here is that you must use the offsets supplied by the Diadem challenge rather than allowing Fiji to stitch the automatically - the stitching will be subtly different.
+[The Neocortical Layer 1 Axons](http://www.diademchallenge.org/neocortical_layer_1_axons_readme.html) data set is based on a set of image stacks that need to be stitched together. The key point here is that you must use the offsets supplied by the Diadem challenge rather than allowing Fiji to stitch the automatically - the stitching will be subtly different.
 
 Firstly, however, it will help to load each image sequence and save out the stack to a single TIFF image stack file. For each of the 6 directories, do the following: go to {% include bc path='File | Import | Image sequence'%} and select the first file in the directory (01.tif). After opening with the default options, save this out into the parent directory with the following names:
 
-`  directory 01 -> Tile_01_02.tif`  
-`  directory 02 -> Tile_02_02.tif`  
-`  directory 03 -> Tile_03_02.tif`  
-`  directory 04 -> Tile_03_01.tif`  
-`  directory 05 -> Tile_02_01.tif`  
-`  directory 06 -> Tile_01_01.tif`
+```
+directory 01 -> Tile_01_02.tif
+directory 02 -> Tile_02_02.tif
+directory 03 -> Tile_03_02.tif  
+directory 04 -> Tile_03_01.tif  
+directory 05 -> Tile_02_01.tif  
+directory 06 -> Tile_01_01.tif
+```
 
 Now create a text file in the same directory called TileConfiguration.txt with the following contents, but changing the directory path to whereever these files are on your computer:
 
-`   # Define the number of dimensions we are working on`  
-`   dim = 3`  
-`   `  
-`   # Define the image coordinates`  
-`   /home/mark/diadem-examples/Neocortical/Tile_01_01.tif; ; (0.0, 0.0, 0.0)`  
-`   /home/mark/diadem-examples/Neocortical/Tile_02_01.tif; ; (468.0, -14.0, -1.0)`  
-`   /home/mark/diadem-examples/Neocortical/Tile_03_01.tif; ; (924.0, 3.0, -19.0)`  
-`   /home/mark/diadem-examples/Neocortical/Tile_01_02.tif; ; (73.0, 507.0, -5.0)`  
-`   /home/mark/diadem-examples/Neocortical/Tile_02_02.tif; ; (526.0, 484.0, 11.0)`  
-`   /home/mark/diadem-examples/Neocortical/Tile_03_02.tif; ; (952.0, 462.0, -21.0)`
+```
+# Define the number of dimensions we are working on
+dim = 3
 
-These offset values are taken from [the official page describing the data set](http://www.diademchallenge.org/neocortical_layer_6_axons_readme.html).
+# Define the image coordinates
+/home/mark/diadem-examples/Neocortical/Tile_01_01.tif; ; (0.0, 0.0, 0.0)
+/home/mark/diadem-examples/Neocortical/Tile_02_01.tif; ; (468.0, -14.0, -1.0)
+/home/mark/diadem-examples/Neocortical/Tile_03_01.tif; ; (924.0, 3.0, -19.0)
+/home/mark/diadem-examples/Neocortical/Tile_01_02.tif; ; (73.0, 507.0, -5.0)
+/home/mark/diadem-examples/Neocortical/Tile_02_02.tif; ; (526.0, 484.0, 11.0)
+/home/mark/diadem-examples/Neocortical/Tile_03_02.tif; ; (952.0, 462.0, -21.0)
+```
+
+These offset values are taken from [the official page describing the data set](http://www.diademchallenge.org/neocortical_layer_1_axons_readme.html).
 
 Now you can stitch together the images using these offsets by going to {% include bc path='Plugins | Stitching | Stitch Collection of Images'%}, browsing to the TileConfiguration.txt file you've just created and making sure you uncheck the box "compute overlap". It should look something like this:
 

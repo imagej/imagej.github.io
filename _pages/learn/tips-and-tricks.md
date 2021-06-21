@@ -4,7 +4,6 @@ section: Learn:ImageJ Basics
 nav-links: true
 ---
 
-
 ImageJ is easy to use, but sometimes you wish for some function that is actually implemented, yet you do not know how to trigger. This page lists a few of those tricks.
 
 ## Show the memory consumption
@@ -15,13 +14,17 @@ Just click on the [status bar](/learn#the-main-window), and you will see how muc
 
 The macro language allows executing programs, and capturing their output:
 
-`output = exec("dir /w");`
+```javascript
+output = exec("dir /w");
+```
 
 ## Quickly see return values
 
 You do not need to wrap macro calls into write() calls: if you just write something like
 
-`getDirectory("plugins");`
+```javascript
+getDirectory("plugins");
+```
 
 the return value will appear in your Log window when called.
 

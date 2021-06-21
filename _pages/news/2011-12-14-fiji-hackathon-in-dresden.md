@@ -58,26 +58,26 @@ ImageSize = width:500
 
 Colors =
 
-` id:c01 value:blue`  
-` id:c02 value:red`  
-` id:c03 value:green`  
-` id:c04 value:black`  
-` id:c05 value:magenta`  
-` id:c06 value:teal`  
-` id:c07 value:yelloworange`  
-` id:c08 value:skyblue`  
-` id:c09 value:claret`  
-` id:c10 value:oceanblue`  
-` id:c11 value:purple`  
-` id:c12 value:powderblue`  
-` id:c13 value:coral`  
-` id:c14 value:redorange`  
-` id:c15 value:kelleygreen`  
-` id:c16 value:orange`  
-` id:c17 value:lightpurple`  
-` id:c18 value:tan2`  
-` id:gridLine value:gray(0.5)`  
-` id:gridCanvas value:gray(0.8)`
+ id:c01 value:blue
+ id:c02 value:red
+ id:c03 value:green
+ id:c04 value:black
+ id:c05 value:magenta
+ id:c06 value:teal
+ id:c07 value:yelloworange
+ id:c08 value:skyblue
+ id:c09 value:claret
+ id:c10 value:oceanblue
+ id:c11 value:purple
+ id:c12 value:powderblue
+ id:c13 value:coral
+ id:c14 value:redorange
+ id:c15 value:kelleygreen
+ id:c16 value:orange
+ id:c17 value:lightpurple
+ id:c18 value:tan2
+ id:gridLine value:gray(0.5)
+ id:gridCanvas value:gray(0.8)
 
 BackgroundColors = canvas:gridCanvas
 
@@ -87,51 +87,51 @@ ScaleMajor = unit:year increment:1 start:9 grid:white
 
 LineData =
 
-` at:9 color:gridLine layer:back width:0.5`  
-` at:10 color:gridLine layer:back width:0.5`  
-` at:11 color:gridLine layer:back width:0.5`  
-` at:12 color:gridLine layer:back width:0.5`  
-` at:13 color:gridLine layer:back width:0.5`  
-` at:14 color:gridLine layer:back width:0.5`  
-` at:15 color:gridLine layer:back width:0.5`  
-` at:16 color:gridLine layer:back width:0.5`  
-` at:17 color:gridLine layer:back width:0.5`  
-` at:18 color:gridLine layer:back width:0.5`  
-` at:19 color:gridLine layer:back width:0.5`
+ at:9 color:gridLine layer:back width:0.5
+ at:10 color:gridLine layer:back width:0.5
+ at:11 color:gridLine layer:back width:0.5
+ at:12 color:gridLine layer:back width:0.5
+ at:13 color:gridLine layer:back width:0.5
+ at:14 color:gridLine layer:back width:0.5
+ at:15 color:gridLine layer:back width:0.5
+ at:16 color:gridLine layer:back width:0.5
+ at:17 color:gridLine layer:back width:0.5
+ at:18 color:gridLine layer:back width:0.5
+ at:19 color:gridLine layer:back width:0.5
 
 BarData=
 
-` barset:Hackers`
+ barset:Hackers
 
 PlotData=
 
-` width:15 `  
-` fontsize:M`  
-` textcolor:white`  
-` align:left `  
-` anchor:from `  
-` shift:(4,-4) `  
-` color:black`
+ width:15 
+ fontsize:M
+ textcolor:white
+ align:left 
+ anchor:from 
+ shift:(4,-4) 
+ color:black
 
-` barSet:Hackers`  
-` color:c01 from:13 till:18 text:"Kevin Eliceiri"`  
-` color:c02 from:12 till:18 text:"Erwin Frise"`  
-` color:c03 from:12 till:15 text:"Fabrice de Chaumont"`  
-` color:c04 from:12 till:15 text:"Stephane Dallongeville"`  
-` color:c05 from:12 till:13 text:"Jiri Matas"`  
-` color:c06 from:11 till:19 text:"Johannes Schindelin"`  
-` color:c07 from:11 till:16 text:"Benjamin Schmid"`  
-` color:c08 from:11 till:15 text:"Jean-Marie Burel"`  
-` color:c09 from:10 till:18 text:"Mark Longair"`  
-` color:c10 from:10 till:18 text:"Jurgen Mayer"`  
-` color:c11 from:10 till:17 text:"Christian Dietz"`  
-` color:c12 from:10 till:16 text:"Martin Horn"`  
-` color:c13 from:9 till:19 text:"Dresden Locals*"`  
-` color:c14 from:9 till:18 text:"Curtis Rueden"`  
-` color:c15 from:9 till:18 text:"Barry DeZonia"`  
-` color:c16 from:9 till:18 text:"Melissa Linkert"`  
-` color:c17 from:9 till:18 text:"Stephan Preibisch"`  
-` color:c18 from:9 till:15 text:"Josh Moore"`
+ barSet:Hackers
+ color:c01 from:13 till:18 text:"Kevin Eliceiri"
+ color:c02 from:12 till:18 text:"Erwin Frise"
+ color:c03 from:12 till:15 text:"Fabrice de Chaumont"
+ color:c04 from:12 till:15 text:"Stephane Dallongeville"
+ color:c05 from:12 till:13 text:"Jiri Matas"
+ color:c06 from:11 till:19 text:"Johannes Schindelin"
+ color:c07 from:11 till:16 text:"Benjamin Schmid"
+ color:c08 from:11 till:15 text:"Jean-Marie Burel"
+ color:c09 from:10 till:18 text:"Mark Longair"
+ color:c10 from:10 till:18 text:"Jurgen Mayer"
+ color:c11 from:10 till:17 text:"Christian Dietz"
+ color:c12 from:10 till:16 text:"Martin Horn"
+ color:c13 from:9 till:19 text:"Dresden Locals*"
+ color:c14 from:9 till:18 text:"Curtis Rueden"
+ color:c15 from:9 till:18 text:"Barry DeZonia"
+ color:c16 from:9 till:18 text:"Melissa Linkert"
+ color:c17 from:9 till:18 text:"Stephan Preibisch"
+ color:c18 from:9 till:15 text:"Josh Moore"
 
 </timeline>
 

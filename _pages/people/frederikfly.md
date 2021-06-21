@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Frise
 title: Erwin Frise
 
 name: Erwin Frise

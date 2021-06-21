@@ -1,15 +1,14 @@
 ---
-mediawiki: Wayne_Rasband
 title: Wayne Rasband
-
 name: Wayne Rasband
 affiliation: National Institutes of Health | https://www.nih.gov/
 forum: Wayne
 github: rasband
 linkedin: in/waynerasband
+icon: /media/people/wayne-rasband.jpg
 ---
 
-{% include img align="left" name="Wayne Rasband" src="wayne-rasband" %} Wayne Rasband is a software developer who worked at the National Institutes of Health (NIH) for 40 years. He retired in 2010 but continues to work on ImageJ as an NIH volunteer. He fixes bugs, answers questions and adds features based on user feedback. Wayne also manages the [ImageJ 1.x website](/ij/index.html) and [mailing list](/discuss/mailing-lists).
+Wayne Rasband is a software developer who worked at the National Institutes of Health (NIH) for 40 years. He retired in 2010 but continues to work on ImageJ as an NIH volunteer. He fixes bugs, answers questions and adds features based on user feedback. Wayne also manages the [ImageJ website](https://imagej.nih.gov/ij/) and [mailing list](/discuss/mailing-lists).
 
 Rasband developed three image analysis programs while at the NIH. The first, from the late 70s, was called "Image". It ran on PDP-11 minicomputers, was written in Pascal, and was used to analyze autoradiographs and 2D electrophoresis gels. It had many of the capabilities we now take for granted in ImageJ, such as regions of interest, contrast stretching, thresholding and color lookup tables. "Image" did all this on computers with only 64KB of memory (images were stored in a 512x512 frame buffer/display).
 

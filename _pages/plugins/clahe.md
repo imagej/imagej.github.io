@@ -45,7 +45,7 @@ the selected channel is processed individually.
 ## Tips
 
 How can I process a series/stack of images?  
-Execute the following macro from [ImageJ's macro editor](/ij/developer/macro/macros.html) or [Fiji's scripting editor](/scripting/script-editor):
+Execute the following macro from [ImageJ's macro editor](https://imagej.nih.gov/ij/developer/macro/macros.html) or [Fiji's scripting editor](/scripting/script-editor):
 
 <!-- -->
 

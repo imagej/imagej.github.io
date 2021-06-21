@@ -1,6 +1,5 @@
 ---
-mediawiki: Hackathon
-title: Hackathon
+title: Hackathons
 section: Explore:Events
 ---
 
@@ -276,7 +275,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='dietzc|dscho|ctrueden' %}</p>
       </td>
       <td>
-        <p><a href="/software/knime">KNIME</a>+<a href="/software/imagej">ImageJ</a></p>
+        <p><a href="/software/knime">KNIME</a>+<a href="/software/imagej2">ImageJ2</a></p>
       </td>
     </tr>
     <tr>
@@ -426,7 +425,7 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
-        <p><a href="/events/conference-2015-hackathon">2015 Sep 05 -<br>
+        <p><a href="/events/conference-2015/hackathon">2015 Sep 05 -<br>
         2015 Sep 15</a></p>
       </td>
       <td>
@@ -565,7 +564,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='jcschaff|ctrueden' %}</p>
       </td>
       <td>
-        <p><a href="/software/virtual-cell">Virtual Cell</a> + <a href="/software/imagej">ImageJ</a></p>
+        <p><a href="/software/virtual-cell">Virtual Cell</a> + <a href="/software/imagej2">ImageJ2</a></p>
       </td>
     </tr>
     <tr>

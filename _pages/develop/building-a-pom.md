@@ -130,7 +130,7 @@ Simply copy and paste any or all of these into your POM's <dependency> block to 
         <artifactId>imagej-plugins-commands</artifactId>
     </dependency>
 
-    <!-- Run graphically with the classic (ImageJ 1.x) user interface -->
+    <!-- Run graphically with the classic ImageJ user interface -->
     <dependency>
         <groupId>net.imagej</groupId>
         <artifactId>imagej-legacy</artifactId>

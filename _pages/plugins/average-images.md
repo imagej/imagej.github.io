@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='vib/Average\_Images.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='vib/Average_Images.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Average Images' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

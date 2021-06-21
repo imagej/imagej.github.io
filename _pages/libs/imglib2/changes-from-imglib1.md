@@ -5,9 +5,6 @@ title: Changes from ImgLib1 to ImgLib2
 
 {% include project content='ImgLib2' %}At the [Madison hackathon](/events/2011-hackathon-in-madison), quite a lot has been done about design issues of the originally published ImgLib (which was already the 6th generation). Unfortunately, these improvements were not possible in a fully backwards-compatible manner.
 
-
-
-
 ### Summary
 
 -   Image and Container are abandoned. In case that write access is required, use Img instead, otherwise an apropriate access interface as described below.
@@ -41,33 +38,36 @@ The *LocalizableByDimCursor* was a combination of an iterator and random access.
 
 Handling out of bounds behavior is invariant to data storage. We have therefore moved it into the final implementations *ExtendedRandomAccessibleInterval* and *ExtendedRealRandomAccessibleRealInterval*. The usage is trivial as follows:
 
-    ExtendedRandomAccessibleInterval< IntType, Img< IntType> > extendedInterval =
-        new ExtendedRandomAccessibleInterval< IntType, Img< IntType > >(
-            myIntImg,
-            new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
-    RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
-
+```java
+ExtendedRandomAccessibleInterval< IntType, Img< IntType> > extendedInterval =
+    new ExtendedRandomAccessibleInterval< IntType, Img< IntType > >(
+        myIntImg,
+        new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
+RandomAccess< IntType > randomAccess = extendedInterval.randomAccess();
+```
 That way, out of boundary location handling is available for all Intervals that are compatible with the passed *OutOfBoundsFactory* (the existing work for all *RandomAccessible* & *Interval*).
 
 A simple shortcut is to call:
 
-    RandomAccessible< IntType > interval = Views.extend( myIntImg,
-         new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
-
+```java
+RandomAccessible< IntType > interval = Views.extend( myIntImg,
+     new OutOfBoundsMirrorFactory< IntType, Img< IntType > >( Boundary.DOUBLE ) );
+```
 For standard out of bounds strategies there are also static convenience methods:
 
-    /* Mirroring Strategy where the last pixel is the mirror */
-    RandomAccessible< IntType > interval = Views.extendMirrorSingle( myIntImg );
+```java
+/* Mirroring Strategy where the last pixel is the mirror */
+RandomAccessible< IntType > interval = Views.extendMirrorSingle( myIntImg );
 
-    /* Mirroring Strategy where the mirror lies behind the last pixel */
-    RandomAccessible< IntType > interval = Views.extendMirrorDouble( myIntImg );
+/* Mirroring Strategy where the mirror lies behind the last pixel */
+RandomAccessible< IntType > interval = Views.extendMirrorDouble( myIntImg );
 
-    /* Strategy where periodicity of the space is assumed (like FFT) */
-    RandomAccessible< IntType > interval = Views.extendPeriodic( myIntImg );
+/* Strategy where periodicity of the space is assumed (like FFT) */
+RandomAccessible< IntType > interval = Views.extendPeriodic( myIntImg );
 
-    /* Strategy that returns a constant value outside the boundaries */
-    RandomAccessible< IntType > interval = Views.extendValue( myIntImg, new IntType( 5 ) );
-
+/* Strategy that returns a constant value outside the boundaries */
+RandomAccessible< IntType > interval = Views.extendValue( myIntImg, new IntType( 5 ) );
+```
 They placed in the Views class because it is a special view onto an Img<T> or also any RandomAccessibleInterval<T>.
 
 ## Where did the NeighborhoodCursor and RegionOfInterestCursor go?

@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Gab1one
 title: Gabriel Einsdorf
 
 name: Gabriel Einsdorf

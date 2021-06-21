@@ -9,7 +9,7 @@ description: Registration and alignment of 3D image series
 {% capture source%}
 {% include github org='Rocsg' repo='Fijiyama' %}
 {% endcapture %}
-{% include info-box name='Fijiyama' software='Fiji' author='Romain Fernandez & Cédric Moisy' maintainer='Romain Fernandez' source=source released='February 10<sup>th</sup>, 2020' status='stable, active' category='[Registration](/plugin-index#registration)' %}
+{% include info-box name='Fijiyama' software='Fiji' author='Romain Fernandez & Cédric Moisy' maintainer='Romain Fernandez' source=source released='February 10<sup>th</sup>, 2020' status='stable, active' category='Registration' %}
 
 <i>Current Fijiyama version : Gorgeous Grapevine (last release : March 21<sup>th</sup>, 2020).</i>
 
@@ -211,7 +211,7 @@ Common categories of registration optimizers, associated with different registra
 
 ## Limitations
 
-For large datasets (15 and more timepoints) or images (1GB+), specific tools should be used. Here is a non-exhaustive list of plugins for [ImageJ](/software/imagej) / [Fiji](/software/fiji), available for 3D registration of large datasets: [BigStitcher](/plugins/bigstitcher), [Atlas\_Toolkit](/plugins/atlas-toolkit), [TrakEM2](/plugins/trakem2) or [Elastix](/plugins/elastix) wrapping plugin. Outside from the ImageJ world, for people who are not afraid to script, [Elastix](http://elastix.isi.uu.nl/) is a proper tool for series, and [Slicer](https://www.slicer.org/) can also do a great job. Limited to two-images registration, [MedInria](https://med.inria.fr/) is a very powerful and popular tool for medical images, which shares a lot of algorithmic basis with Fijiyama.
+For large datasets (15 and more timepoints) or images (1GB+), specific tools should be used. Here is a non-exhaustive list of plugins for [ImageJ](/software/imagej) and/or [Fiji](/software/fiji), available for 3D registration of large datasets: [BigStitcher](/plugins/bigstitcher), [Atlas\_Toolkit](/plugins/atlas-toolkit), [TrakEM2](/plugins/trakem2) or [Elastix](/plugins/elastix) wrapping plugin. Outside from the ImageJ world, for people who are not afraid to script, [Elastix](http://elastix.isi.uu.nl/) is a proper tool for series, and [Slicer](https://www.slicer.org/) can also do a great job. Limited to two-images registration, [MedInria](https://med.inria.fr/) is a very powerful and popular tool for medical images, which shares a lot of algorithmic basis with Fijiyama.
 
 ## Citing this work
 

@@ -15,12 +15,12 @@ Most scijava-projects API are listed on the [scijava javadocs](https://javadoc.s
 
 And more particulary for
 
--   [ImageJ1](https://javadoc.scijava.org/ImageJ1)
+-   [ImageJ 1.x](https://javadoc.scijava.org/ImageJ1)
 -   [ImageJ2](https://javadoc.scijava.org/ImageJ2)
 -   [Fiji](https://javadoc.scijava.org/Fiji/)
 
-## The ImageJ1 API
+## The ImageJ 1.x API
 
-The diagram below depicts the relation between the different classes composing ImageJ1.
+The diagram below depicts the relation between the different classes composing ImageJ 1.x.
 
-<img src="/media/scripting/imagej1-api-diagram.jpg" width="1100"/>
+<img src="/media/scripting/imagej-api-diagram.jpg" width="1100"/>

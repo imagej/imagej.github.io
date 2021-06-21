@@ -5,6 +5,7 @@ categories: [Analysis, Mathematical Morphology, Particle Analysis]
 logo: /media/logos/bonej.png
 artifact: org.bonej:bonej-plugins
 doi: 10.12688/wellcomeopenres.16619.2
+extensions: ["mathjax"]
 ---
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentation is for the current BoneJ version available through the ImageJ [updater](/plugins/updater). Legacy documentation is provided for old versions (1.x) at [bonej.org](https://bonej.org/).
@@ -84,27 +85,29 @@ The plug-in is intended to analyse the "texture" of an object thus it suits samp
 
 It is helpful to run a convergence analysis to determine settings that lead to a stable result in a reasonable amount of time. We recommend running the following macro on a typical image from your experiments.
 
-     //number of directions to draw probes
-     nDirsMax = 32768; //<- edit to suit your needs
-     //number of lines per direction
-     nLinesMax = 1024; //<- edit to suit your needs
-     
-     // --- No need to edit the rest
-     row = 0;
-     setBatchMode(true);
-     for (nDirs = 16; nDirs <= nDirsMax; nDirs *= 2){
-        for (nLines = 1; nLines <= nLinesMax; nLines *= 2){
-        startTime = getTime();
-        run("Anisotropy", "inputimage=net.imagej.ImgPlus@73956688 directions="+nDirs+" lines="+nLines+" samplingincrement=1.73 recommendedmin=true printradii=true printeigens=true displaymilvectors=false instruction=\"\"");
-            endTime = getTime();
-            duration = endTime - startTime;
-            setResult("nDirs", row, nDirs);
-            setResult("nLines", row, nLines);
-            setResult("Duration", row, duration);
-            updateResults();
-            row++;
-         }
+```java
+ //number of directions to draw probes
+ nDirsMax = 32768; //<- edit to suit your needs
+ //number of lines per direction
+ nLinesMax = 1024; //<- edit to suit your needs
+ 
+ // --- No need to edit the rest
+ row = 0;
+ setBatchMode(true);
+ for (nDirs = 16; nDirs <= nDirsMax; nDirs *= 2){
+    for (nLines = 1; nLines <= nLinesMax; nLines *= 2){
+    startTime = getTime();
+    run("Anisotropy", "inputimage=net.imagej.ImgPlus@73956688 directions="+nDirs+" lines="+nLines+" samplingincrement=1.73 recommendedmin=true printradii=true printeigens=true displaymilvectors=false instruction=\"\"");
+        endTime = getTime();
+        duration = endTime - startTime;
+        setResult("nDirs", row, nDirs);
+        setResult("nLines", row, nLines);
+        setResult("Duration", row, duration);
+        updateResults();
+        row++;
      }
+ }
+```
 
 This macro will output two tables, one with anisotropy results and one logging directions, lines, and duration. To complete the convergence analysis the two tables have to be copy-pasted into a spreadsheet so that anisotropy results can be plotted alongside timings and input parameters.
 
@@ -505,7 +508,7 @@ Menu path: {% include bc path="Plugins | BoneJ | Analyze | Particle Analyser" %}
 
 Particle Analyser performs connected-components labelling and particle analysis on binary 3D image stacks. It scales at about _O_(n) making it efficient on large images (200+ GB images have been tested by users so far) and runs at about 5-10 s/GB depending on particle number and geometry, and machine configuration. 
 
-The original design was for a member of our group who wished to study [osteocyte lacunae in synchrotron microCT images](https://doi.org/10.1016/j.bone.2013.12.020). The labelling algorithm is used in [Purify](https://imagej.github.io/plugins/bonej#purify) to identify and remove all but the largest foreground and background particle. Other groups use Particle Analyser for soil and materials analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
+The original design was for a member of our group who wished to study [osteocyte lacunae in synchrotron microCT images](https://doi.org/10.1016/j.bone.2013.12.020). The labelling algorithm is used in [Purify](/plugins/bonej#purify) to identify and remove all but the largest foreground and background particle. Other groups use Particle Analyser for soil and materials analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
 
 If you use it in your published work, please cite:
 
@@ -770,7 +773,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 
 The BoneJ plug-ins print their results into a shared result table. This is because we often need to calculate several measures for the same image, so it's handy to have them on one row. Repeated measures for the same image are reported on different rows. The results persist even if the table is closed. To clear the table run {% include bc path="Plugins | BoneJ | Table | Clear BoneJ results" %}.
 
-Note that some of the plug-ins (marked with *WIP*) still use a ImageJ1 style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
+Note that some of the plug-ins (marked with *WIP*) still use a ImageJ 1.x style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
 
 ## Usage reporting
 
@@ -778,8 +781,7 @@ Menu path {% include bc path="Edit | Options | BoneJ Usage" %}
 
 #### What is collected?
 
-BoneJ uses Google Analytics to report when a plugin's run() method completes successfully.
-
+BoneJ uses Google Analytics to report when a plugin's `run()` method completes successfully.
     https://www.google-analytics.com/__utm.gif?utmwv=5.2.5&utms=0&utmn=1074354874&utmhn=bonej.org&utmt=event&utme=5(Plugin%20Usage*org.bonej.wrapperPlugins.wrapperUtils.UsageReporterOptions*0.5.1)&utmcs=UTF-8&utmsr=3840x1080&utmvp=3840x1080&utmsc=24-bit&utmul=en-gb&utmje=0&utmcn=1&utmdt=bonej.org%20Usage%20Statistics&utmhid=512699200&utmr=-&utmp=%2Fstats&utmac=UA-366405-8&utmcc=__utma%3D1589599318.1327557233.1538550102.1538550102.1538550102.2%3B%2B__utmz%3D1589599318.1538550102.79.42.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3DBoneJ%20Usage%20Reporter%3B
 
 A one-pixel GIF image is requested from Google, with a rather long set of parameters. Reported details are:

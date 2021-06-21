@@ -1,9 +1,17 @@
-# ImageJ.net (Experimental)
+# ImageJ.net
 
 This repository houses the source of the [ImageJ wiki](https://imagej.net).
 
 Anyone is free to make additions, edits, and improvements; for details, see
-[Editing the Wiki](https://imagej.github.io/editing).
+[Editing the Wiki](https://imagej.net/editing).
+
+## Cloning this repository
+
+If you clone this repository, you can use Jekyll to build the site locally.
+Find instructions in the [Advanced Editing](https://imagej.net/editing) guide.
+
+This approach is more complex than editing individual pages via GitHub's online
+interface, but it is more powerful, with a much faster edit-debug cycle.
 
 ## Credit
 

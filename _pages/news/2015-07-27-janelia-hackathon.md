@@ -1,5 +1,4 @@
 ---
-mediawiki: 2015-07-27_-_Janelia_Hackathon
 title: 2015-07-27 - Janelia Hackathon
 ---
 
@@ -9,7 +8,7 @@ From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person id='
 
 -   SCIFIO is headed in a great direction:
     -   Will integrate it better into modern, powerful software tools including ImgLib2 and [BigDataViewer](/plugins/bdv).
-    -   Big step toward breaking the limitations of [ImageJ1](/software/imagej1), in particular the 2GPix plane barrier and limited image types.
+    -   Big step toward breaking the limitations of [ImageJ 1.x](/software/imagej), in particular the 2GPix plane barrier and limited image types.
     -   Will make possible things like more transparent and rapid ability to work with multi-position and multi-angle datasets (mosaics, light sheet, etc.).
 -   Stability of [ImageJ](/software/imagej) and Fiji—and other applications built on [SciJava](/libs/scijava) components—is now easier to validate.
 
@@ -25,9 +24,9 @@ From Sunday, July 27, 2015 through Friday, July 31, 2015, {% include person id='
 
 ## Progress this week
 
--   Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") [https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e 1](https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e_1).
+-   Curtis wrote a "melting pot" script for testing component changes in the context of a larger application (e.g.: "Would this change to TrakEM2 break Fiji?") \[[1](https://github.com/scijava/scijava-scripts/commit/d611704204d607dc94654a6810d00a1ab0e9280e)\].
 -   Curtis made some ImageJ improvements in response to feedback from Burkhard \[[2](https://github.com/imagej/imagej-plugins-commands/commit/6fafbc9c3444e3fe70420244699d02acfb72abfd), [3](https://github.com/imagej/imagej-plugins-commands/commit/ea9596b2d905eff9f7a9b2177dca5fe44b65ae6e)\].
--   Mark fixed bugs in SCIFIO cell caching in preparation for unification [https://github.com/imglib/imglib2-ij/pull/5 4](https://github.com/imglib/imglib2-ij/pull/5_4).
+-   Mark fixed bugs in SCIFIO cell caching in preparation for unification \[[4](https://github.com/imglib/imglib2-ij/pull/5)\].
 -   Mark and Curtis planned out the new SCIFIO API for "blockization".
 -   Mark began work on ImageJ data model changes for SCIFIO "blockization" \[[5](https://github.com/imagej/imagej-common/compare/calibrated-interval), [6](https://github.com/scifio/scifio/compare/blocks-are-so-plane)\].
 

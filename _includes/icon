@@ -19,7 +19,6 @@
       {%- when "GitHub"        -%} /develop/github
       {%- when "Icy"           -%} /software/icy
       {%- when "ImageJ"        -%} /software/imagej
-      {%- when "ImageJ1"       -%} /software/imagej1
       {%- when "ImageJ2"       -%} /software/imagej2
       {%- when "ImgLib2"       -%} /libs/imglib2
       {%- when "KNIME"         -%} /software/knime
@@ -67,7 +66,7 @@
 
 {%- assign filename = name | slugify -%}
 {%- if filename == "imagej2" -%}
-  {%- assign image_url = "/media/icons/imagej.png" -%}
+  {%- assign image_url = "/media/icons/imagej2.png" -%}
 {%- else -%}
   {%- assign image_url = "/media/icons/" | append: filename | append: extension -%}
 {%- endif -%}

@@ -2,7 +2,7 @@
 Adds a stylized notice.
 {%- endcomment -%}
 
-{%- assign content = include.content | markdownify -%}
+{%- assign message = include.content | markdownify -%}
 {%- assign size = include.size | default: "normal" -%}
 {%- assign icon = include.icon -%}
 {%- assign glyph = include.glyph -%}
@@ -35,19 +35,19 @@ Adds a stylized notice.
 {%- unless highlight-color -%}
   {%- capture highlight-color -%}
     {%- case icon -%}
-      {%- when "android" -%} #a4c639
-      {%- when "fiji"    -%} #65a4e3
-      {%- when "imagej"  -%} #fadd8d
-      {%- when "imagej1" -%} #fadd8d
-      {%- when "imagej2" -%} #fadd8d
-      {%- when "info"    -%} #67a1fe
-      {%- when "linux"   -%} black
-      {%- when "note"    -%} #901913
-      {%- when "tech"    -%} #bdbdbd
-      {%- when "tip"     -%} #7e7e7e
-      {%- when "warning" -%} #f57900
-      {%- when "windows" -%} #00adef
-      {%- else           -%} gold
+      {%- when "android"    -%} #a4c639
+      {%- when "fiji"       -%} #65a4e3
+      {%- when "imagej"     -%} #fadd8d
+      {%- when "imagej"     -%} #fadd8d
+      {%- when "imagej2"    -%} #fadd8d
+      {%- when "info"       -%} #67a1fe
+      {%- when "linux"      -%} black
+      {%- when "note"       -%} #901913
+      {%- when "tech"       -%} #bdbdbd
+      {%- when "tip"        -%} #7e7e7e
+      {%- when "warning"    -%} #f57900
+      {%- when "windows"    -%} #00adef
+      {%- else              -%} gold
     {%- endcase -%}
   {%- endcapture -%}
 {%- endunless -%}
@@ -65,7 +65,7 @@ Adds a stylized notice.
       <div class="notice-icon"><img src="{{src}}"></div>
     {%- endif -%}
   {%- endif -%}
-  <div class="notice-content">{{content}}</div>
+  <div class="notice-content">{{message}}</div>
 </div>
 
 {%- comment -%}

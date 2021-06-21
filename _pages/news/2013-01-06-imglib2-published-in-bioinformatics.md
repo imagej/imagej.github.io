@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-01-06_-_ImgLib2_published_in_Bioinformatics
 title: 2013-01-06 - ImgLib2 published in Bioinformatics
 ---
 

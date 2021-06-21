@@ -4,6 +4,7 @@ title: MorphoLibJ
 categories: [Analysis, Filtering, Segmentation, Mathematical Morphology]
 doi: 10.1093/bioinformatics/btw413
 artifact: fr.inra.ijpb:MorphoLibJ_
+extensions: ["mathjax"]
 ---
 
 
@@ -18,7 +19,7 @@ artifact: fr.inra.ijpb:MorphoLibJ_
 {% capture source%}
 {% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
-{% include info-box name='MorphoLibJ' software='IJPB-plugins' update-site='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Analysis](/plugin-index#analysis), [Filtering](/plugin-index#filtering), [Segmentation](/plugin-index#segmentation), [Mathematical morphology](/plugin-index#mathematical-morphology)' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
+{% include info-box name='MorphoLibJ' software='IJPB-plugins' update-site='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Analysis, Filtering, Segmentation, Mathematical Morphology' %}MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology'%} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
@@ -306,7 +307,7 @@ A binary particle may be described mathematically by its moments which correspon
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze'%} menu.
 
 ##### Global geometry
 
@@ -705,7 +706,7 @@ You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more
 
 ## Installation
 
--   In [ImageJ 1.x](/software/imagej1), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
+-   In [ImageJ 1.x](/software/imagej), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
 -   In [ImageJ2](/software/imagej2) (including [Fiji](/software/fiji)), you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins site to your list of update sites:
     1.  Select {% include bc path='Help | Update...'%} from the menu to start the [updater](/plugins/updater).
     2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
@@ -718,7 +719,7 @@ Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If
 
 {% include citation %}
 
-[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
+[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349https://imagej.nih.gov/ijpb/MorphoLibJ).
 
 
 ## License

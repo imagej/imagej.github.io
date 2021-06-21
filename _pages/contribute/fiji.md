@@ -13,7 +13,7 @@ The following document describes these requirements, as well as associated best 
 
 # Definition
 
-A "core" [Fiji](/software/fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your [ImageJ](/software/imagej) extension on a separate update site, this page does not apply.
+A "core" [Fiji](/software/fiji) project is one distributed on the [Fiji update site](http://update.fiji.sc). Such projects are subject to the requirements discussed below. Conversely, if you distribute your extension on a separate update site, this page does not apply.
 
 # Requirements
 
@@ -21,10 +21,9 @@ A "core" [Fiji](/software/fiji) project is one distributed on the [Fiji update s
 
 A key principle of the Fiji project is:
 
-  
-*If you want to go fast, go alone. If you want to go far, go together.*
-
-\- *African proverb*
+> If you want to go fast, go alone. If you want to go far, go together.
+>
+> \- African proverb
 
 There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [Open Source](/licensing/open-source) is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [invariably have the opposite effect](/licensing/closed-source) in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 

@@ -53,6 +53,6 @@ That's it! A bilevel image is produced with the name "-mask" appended to the ori
 
 The plugin is recordable and can be called from a macro ....
 
-`run("RATS ", "noise=25 lambda=3 min=81 verbose")`
-
-  
+```java
+run("RATS ", "noise=25 lambda=3 min=81 verbose")
+```

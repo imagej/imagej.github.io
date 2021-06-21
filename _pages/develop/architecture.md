@@ -3,27 +3,27 @@ title: Architecture
 section: Extend:Development
 ---
 
-{% include notice icon="info" content='This page describes the *technical* structure of [SciJava](/libs/scijava) and [ImageJ](/software/imagej) projects.
+{% include notice icon="info" content='This page describes the *technical* structure of [SciJava](/libs/scijava) projects.
 
 -   For information on the *social* structure, see [Governance](/contribute/governance).
 -   For information on the *legal* structure, see [Licensing](/licensing).' %}
 
 
-This page describes the technical structure of [SciJava](/libs/scijava) and [ImageJ](/software/imagej) projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](/develop/git) and [GitHub](/develop/github) before reading the sections here.
+This page describes the technical structure of [SciJava](/libs/scijava) projects, including [ImageJ2](/software/imagej2), [ImgLib2](/libs/imglib2), [SCIFIO](/libs/scifio), and other projects built on their foundations. For maximum benefit, we suggest readers familiarize themselves with [Maven](/develop/maven), [Git](/develop/git) and [GitHub](/develop/github) before reading the sections here.
 
 # Definitions
 
 Throughout this article, and elsewhere on this wiki, we use the following terms:
 
 -   A software **component** is a program, such as a [plugin](/plugins), or a {% include wikipedia title='Library (computing)' text='library'%} of reusable functions. Components are typically designed to work together, and combined to form a {% include wikipedia title='Application software' text='software application'%} such as [ImageJ](/software/imagej). In [Maven](/develop/maven) terms, a component is a single *artifact*, typically a {% include wikipedia title="JAR (file format)" %}.
--   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](/libs/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy) and the [ImageJ Updater](/plugins/updater).
+-   A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ2 project" refers to several components including [ImageJ Common](/libs/imagej-common), [ImageJ Ops](/libs/imagej-ops), [ImageJ Legacy](/libs/imagej-legacy) and the [ImageJ Updater](/plugins/updater).
 -   The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
 -   **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
--   The **ImageJ software stack** is the set of components upon which [ImageJ](/software/imagej) is built. It includes components from the [SciJava](/libs/scijava), [ImgLib2](/libs/imglib2), [ImageJ](/software/imagej) and [SCIFIO](/libs/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
+-   The **ImageJ2 software stack** is the set of components upon which [ImageJ2](/software/imagej2) is built. It includes components from the [SciJava](/libs/scijava), [ImgLib2](/libs/imglib2), [ImageJ](/software/imagej)+[ImageJ2](/software/imagej2), and [SCIFIO](/libs/scifio) foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
 # SciJava project structure
 
-The [ImageJ](/software/imagej) project, and related projects in the [SciJava](/libs/scijava) software ecosystem, are carefully structured to foster [extensibility](#extensibility).
+The [ImageJ2](/software/imagej2) project, and related projects in the [SciJava](/libs/scijava) software ecosystem, are carefully structured to foster [extensibility](#extensibility).
 
 ## Organizational structure
 
@@ -31,7 +31,7 @@ There are four organizations on [GitHub](https://github.com/) which form the bac
 
 -   [scijava](https://github.com/scijava) - for [SciJava](/libs/scijava) core components: general-purpose, non-image-specific libraries.
 -   [imglib](https://github.com/imglib) - for [ImgLib2](/libs/imglib2) components: flexible N-dimensional image processing.
--   [imagej](https://github.com/imagej) - for [ImageJ](/software/imagej) components: metadata-rich image library and application.
+-   [imagej](https://github.com/imagej) - for [ImageJ](/software/imagej)+[ImageJ2](/software/imagej2) components: metadata-rich image library and application.
 -   [scifio](https://github.com/scifio) - for [SCIFIO](/libs/scifio) components: scientific image I/O and file formats.
 
 Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [team of developers](/people).
@@ -51,8 +51,6 @@ Furthermore, many groups maintain their own GitHub organizations with components
 -   {% include person id='axtimwalde' %} – [saalfeldlab](https://github.com/saalfeldlab)
 -   {% include person id='StephanPreibisch' %} – [PreibischLab](https://github.com/PreibischLab)
 -   &lt;your organization here!&gt;
-
-The diagram on the right shows organizational relationships between SciJava software components.
 
 ## Git repositories
 
@@ -117,7 +115,7 @@ All components in these organizations use [Maven](/develop/maven) for [project m
         <p>{% include icon name='ImageJ2' %}</p>
       </td>
       <td>
-        <p><a href="/software/imagej">ImageJ</a></p>
+        <p><a href="/software/imagej2">ImageJ2</a></p>
       </td>
       <td>
         <p><a href="https://github.com/imagej">imagej</a></p>
@@ -204,7 +202,7 @@ The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com
 
 {% include img src="/media/develop/graph.png" align="right" width="400px" %}
 
-The ImageJ software stack is composed of the following core libraries:
+The ImageJ2 software stack is composed of the following core libraries:
 
 -   [SciJava Common](/libs/scijava#scijava-common) - The [SciJava](/libs/scijava) application container and plugin framework.
 -   [ImgLib2](/libs/imglib2) - The N-dimensional image data model.
@@ -218,7 +216,7 @@ The dependency hierarchy of library artifacts is shown in the diagram to the rig
 
 ### Modularity
 
-Much effort has been expended to ensure the design of these libraries provides a good {% include wikipedia title='Separation of concerns' text='separation of concerns'%}. Developers in need of specific functionality may choose to depend on only those components which are relevant, rather than needing to add a dependency to the entire ImageJ software stack.
+Much effort has been expended to ensure the design of these libraries provides a good {% include wikipedia title='Separation of concerns' text='separation of concerns'%}. Developers in need of specific functionality may choose to depend on only those components which are relevant, rather than needing to add a dependency to the entire ImageJ2 software stack.
 
 Along those lines, the libraries take great pains to be **UI agnostic**, with no dependencies on packages such as `java.awt` or `javax.swing`. The idea is that it should be possible to build a {% include wikipedia title='Graphical user interface' text='user interface'%} (UI) on top of these libraries, without needing to change the library code itself. We have developed several proof-of-concept UIs for ImageJ using different UI frameworks, including [Swing](https://github.com/imagej/imagej-ui-swing), [AWT](https://github.com/imagej/imagej-ui-awt), [Eclipse SWT](https://github.com/imagej/imagej-ui-swt) and [Apache Pivot](https://github.com/imagej/imagej-ui-pivot).
 
@@ -233,8 +231,8 @@ The [SciJava Common](/libs/scijava#scijava-common) (SJC) library provides a plug
 {% include aside title="Why are reproducible builds so essential for science?"
   content="Arguably **the most important thing** in science is to gain insights
 about nature **that can be verified by other researchers**. It is this
-mission for which [ImageJ](/software/imagej) and [Fiji](/software/fiji) stand, and it
-is the central reason why they are [open source](/licensing/open-source).
+mission for which [ImageJ2](/software/imagej2) and [Fiji](/software/fiji) stand,
+and it is the central reason why they are [open source](/licensing/open-source).
 
 To verify results, it is absolutely necessary to be able to reproduce results
 claimed in scientific articles, and in the interest of efficiency, it should be
@@ -251,7 +249,7 @@ A software *version* (or *build*) is called **reproducible** if it is easy to re
 
 For example, you can refer to "ImageJ 1.49g" as a *reproducible build*, or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is irreproducible.
 
-It gets more subtle when making heavy use of software libraries (sometimes called *dependencies*). It is known, for example, that many plugins in the now-defunct [MacBiophotonics distribution of ImageJ](/software/mbf-imagej) worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, *the Colocalisation Analysis plugin* does **not** refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
+It gets more subtle when making heavy use of software libraries (sometimes called *dependencies*). It is known, for example, that many plugins in the now-defunct [MacBiophotonics distribution of ImageJ](/software/mbf-imagej) worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, *the Colocalisation Analysis plugin* does **not** refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ version that could be used to verify previously published results.
 
 ## Advantages of reproducible builds
 

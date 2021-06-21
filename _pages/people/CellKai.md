@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Cellkai
 title: Kai Schleicher
 name: Kai Schleicher
 affiliation:

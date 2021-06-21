@@ -5,7 +5,7 @@ categories: [Projection]
 ---
 
 {% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author=benoalo maintainer=benoalo released='03 August 2016' filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='[Plugins](/plugin-index), [Projection](/plugin-index#projection)' %}
+{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author=benoalo maintainer=benoalo released='03 August 2016' filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='Plugins, Projection' %}
 
 ## Introduction
 
@@ -78,7 +78,7 @@ Plugin output: an altitude map (left) and a volume showing intensity on the surf
 
 ## Methods and Implementation
 
-The initial development of the plugin was initially proposed by Dagmar Kainmueller (Myers lab MPI-CBG, Dresden ). The plugin was implemented after the method of Li et al. \[1\]. One can refer to that paper for the principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in FIJI [Graph\_Cut plugin by Jan Funke](https://fiji.sc/Graph_Cut).
+The initial development of the plugin was initially proposed by Dagmar Kainmueller (Myers lab MPI-CBG, Dresden ). The plugin was implemented after the method of Li et al. \[1\]. One can refer to that paper for the principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in Fiji [Graph\_Cut plugin by Jan Funke](https://fiji.sc/Graph_Cut).
 
 Also If the plugin allows to detect only two surface with one input function, the underlying class has more flexibility and can handle any number of surface and cost function. It also allow to add crossing or non crossing constraints on any pair of surfaces as described in Li et al.
 

@@ -64,7 +64,7 @@ Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcd
 [1) Install EZFig](#RefHeadingToc27213566485089)
 
 
-[1.1) Install as a FIJI plugin](#RefHeadingToc27233566485089)
+[1.1) Install as a Fiji plugin](#RefHeadingToc27233566485089)
 
 [2) User Interface](#RefHeadingToc27273566485089)
 
@@ -94,7 +94,7 @@ Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcd
 <!-- -->
 
 
-[3.3) Importing files from ImageJ/FIJI](#RefHeadingToc27473566485089)
+[3.3) Importing files from ImageJ/Fiji](#RefHeadingToc27473566485089)
 
 [4) Load/Save EZFig files](#RefHeadingToc27493566485089)
 
@@ -390,9 +390,9 @@ Link to a video demo: [https://youtu.be/YZsSWBxcdDM>](https://youtu.be/YZsSWBxcd
 
 # 1) Install EZFig
 
-## 1.1) Install as a FIJI plugin
+## 1.1) Install as a Fiji plugin
 
-Download and install the latest FIJI available for your OS (from [https://fiji.sc/](https://fiji.sc/)). Launch FIJI.
+Download and install the latest Fiji available for your OS (from [https://fiji.sc/](https://fiji.sc/)). Launch Fiji.
 
 ![](/media/images37.png)
 
@@ -406,7 +406,7 @@ Press "Manage update sites"
 
 ![](/media/image87.png)
 
-locate EZFig and select it. Alternatively press "Add update site" (or just "Add" depending on the version of FIJI). Then type in the blank URL field : [http://sites.imagej.net/EZF/](http://sites.imagej.net/EZF/)
+locate EZFig and select it. Alternatively press "Add update site" (or just "Add" depending on the version of Fiji). Then type in the blank URL field : [http://sites.imagej.net/EZF/](http://sites.imagej.net/EZF/)
 
 ![](/media/image88.png)
 
@@ -414,11 +414,11 @@ Fiji offers to install EZFig. Press "Apply Changes".
 
 ![](/media/images42.png)
 
-Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff0000;"> FIJI</span><span style="color:#000000;"> </span><span style="color:#000000;">(this is very important)</span>
+Press "Ok" and <span style="color:#ff0000;">close</span><span style="color:#ff0000;"> Fiji</span><span style="color:#000000;"> </span><span style="color:#000000;">(this is very important)</span>
 
 ![](/media/image36.png)
 
-<span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> FIJI</span>, press {% include bc path="Plugin | EZFig | EZFig" %} to launch the software
+<span style="color:#ff0000;">Restart</span><span style="color:#ff0000;"> Fiji</span>, press {% include bc path="Plugin | EZFig | EZFig" %} to launch the software
 
 # 2) User Interface
 
@@ -508,7 +508,7 @@ Press {% include bc path="File | Import images" %}
 
 A dialog opens to select files. Supported formats are : jpg, tif, png, bmp, tga, lsm, svg, figur, gif.
 
-## 3.3) Importing files from ImageJ/FIJI
+## 3.3) Importing files from ImageJ/Fiji
 
 ![](/media/images6.png)
 

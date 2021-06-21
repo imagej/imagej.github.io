@@ -7,9 +7,9 @@ nav-links: true
 Please report bugs via the [Image.sc Forum](https://forum.image.sc/):
 
 - Start a new topic in the "Usage & Issues" category.
-- Add the `imagej` label, and any other relevant labels.
+- Add at least one label: `imagej`, `imagej2`, `fiji`, and any other relevant labels.
 - Include a [minimal working example](#bug-reporting-best-practices) illustrating the issue.
-- If you know who is responsible for maintaining the affected part of ImageJ, please `@mention` them.
+- If you know who is responsible for maintaining the affected part of the software, please `@mention` them.
 
 Or if you have a GitHub account, please feel welcome to report issues [on GitHub](https://github.com/imagej/imagej/issues) instead.
 
@@ -17,7 +17,7 @@ Thank you! 😁
 
 # Bug reporting best practices
 
-A bug report is a reproducible set of steps describing a problem. They are a common communication medium between users and developers. Users willing to take the time to write helpful bug reports drive the development of ImageJ, making it a better product for everyone.
+A bug report is a reproducible set of steps describing a problem. They are a common communication medium between users and developers. Users willing to take the time to write helpful bug reports drive software development, making it better for everyone.
 
 ## TL;DR Summary
 
@@ -41,23 +41,21 @@ Here are some quick tips for [writing a shorter letter](http://en.wikiquote.org/
 
 ## Why put effort into bug reports
 
-For light reading, there are numerous guides and essays on [how and why to write excellent bug reports](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html). ImageJ users should be aware that the development community is diverse: from publicly-funded individuals and teams to scientists and user contributors. For a largely open-source community like this, there are several key points to consider when submitting a bug:
+For light reading, there are numerous guides and essays on [how and why to write excellent bug reports](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html). Users should be aware that the development community is diverse: from publicly-funded individuals and teams to scientists and user contributors. For a largely open-source community like this, there are several key points to consider when submitting a bug:
 
 -   Teams developing open-source code are typically smaller and lack dedicated testing teams. Developers thus rely on an active and vocal community to provide feedback and guide the development process by identifying the areas in need of attention (complaint-driven development).
 -   If you encounter a bug, it is likely interfering with your desired workflow and needs to be resolved quickly. The better the bug report, the faster a developer will be able to reproduce and address the issue. Poorly written bug reports are more likely to sit unanswered—not because developers see the issue as unimportant, rather that the time required to clarify the bug report itself presents a significant barrier when setting priorities within an overflowing schedule.
--   When you find a bug, it is unlikely that you are the only individual affected by it. By reporting a bug in a way that developers can understand, identify and resolve the issue, you are performing a necessary and valuable service to the entire ImageJ community.
+-   When you find a bug, it is unlikely that you are the only individual affected by it. By reporting a bug in a way that developers can understand, identify and resolve the issue, you are performing a necessary and valuable service to the entire community.
 
 ## Components of a complete bug report
 
-There are three critical components in an ImageJ bug report. If a report is missing any of these components, its usefulness may be limited.
+There are three critical components in a bug report. If a report is missing any of these components, its usefulness may be limited.
 
 ### Environment information
 
-ImageJ is a flexible and extensible platform, so the actual "ImageJ environment" can vary from user to user. A common misunderstanding in bug reports is to just report the version of the base ImageJ component (e.g. 1.49e). This is helpful, but says nothing about what plugins, update sites, etc... are in use.
+ImageJ is a flexible and extensible platform, so the actual "ImageJ environment" can vary from user to user. A common mistake in bug reports is to report only the version of ImageJ itself (e.g. 1.49e). This is helpful, but says nothing about what plugins, update sites, etc... are in use.
 
-Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. Fiji currently ships with a [Report a Bug](/discuss/bugs) command; this will automatically populate the complete environment information and include it in the [bugzilla report](https://fiji.sc/bugzilla/); this bug-reporting functionality will be migrated to core ImageJ soon.
-
-Note that if you file a bug manually or are enquiring to a [mailing list](/discuss/mailing-lists), you can still copy and paste the contents of the *"Useful information about your system"* text box from the [Report a Bug](/discuss/bugs) dialog. It will be greatly appreciated.
+Errors can appear in any component of the software, and in some cases two plugins might work individually but have some negative interaction with each other. Thus a complete view of the ImageJ environment is imperative. If you are running [ImageJ2](/software/imagej2), you can use the command {% include bc path="Plugins | Debug | System Information" %} to generate a full report of what is installed.
 
 ### Minimal and precise steps to reproduce
 
@@ -80,13 +78,11 @@ Additional information is typically unnecessary... if a developer can reproduce 
 
 Developers typically have a cache of sample data for testing their application. That said, we are still striving to reproduce the original environment of the error. Having the original image that caused the error is the best possible way to test.
 
-If your test data is small and public, you can typically attach it to the bug report.
+If your test data is small and public, you can attach it to the bug report.
 
-The easiest and safest way to provide sample data is via the {% include bc path='Help | [Upload Sample Image](/plugins/upload-sample-image)'%} command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.
+If your test data is large, but can be shared, please use a cloud service link (Dropbox, Google Drive, etc.).
 
-Note: if you do upload sample data via ImageJ, you should mention the name of the dataset in your bug report. This will help developers find your image(s) quickly.
-
-For bugs working with excessively large datasets, you may need to communicate with a developer to determine the best way to test on your data.
+If your test data cannot be made public, but you are willing to share it privately with the developers, please do so.
 
 ## While you're waiting...
 
@@ -94,7 +90,7 @@ If you have encountered and reported a bug that is completely blocking your work
 
 ### Disable SCIFIO
 
-[ImageJ2](/software/imagej2) provides an alternative to the hard-coded case logic of [ImageJ 1.x](/software/imagej1)'s image I/O: [SCIFIO](/libs/scifio), plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please *disable* the "Use SCIFIO when opening files (BETA!)" option in the {% include bc path='Edit | Options | ImageJ2'%} dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
+[ImageJ2](/software/imagej2) provides an alternative to the hard-coded case logic of [ImageJ](/software/imagej)'s image I/O: [SCIFIO](/libs/scifio), plugin-based image I/O. While SCIFIO is more powerful, due to the vast scope of the overhaul, there are inevitably issues remaining. If your dataset used to open correctly for you, but is broken after updating, please *disable* the "Use SCIFIO when opening files (BETA!)" option in the {% include bc path='Edit | Options | ImageJ2'%} dialog. This will revert to ImageJ's classic image I/O until the SCIFIO-driven I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, **please** still report the discovered bug. The long-term vision for ImageJ is to migrate completely to the new image I/O paradigm, so if there are problems we need to know about them.
 

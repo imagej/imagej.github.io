@@ -120,9 +120,11 @@ Quite a few algorithms are available as proof-of-concept [MATLAB](/scripting/mat
 
 MATLAB bundles a Java runtime (and in fact, all of [MATLAB](/scripting/matlab)'s GUI is implemented in Java!) and allows the user to instantiate Java classes and call methods on them:
 
-    import java.io.File;
-    f = File('/usr/local/Fiji.app/');
-    f.exists()
+```java
+import java.io.File;
+f = File('/usr/local/Fiji.app/');
+f.exists()
+```
 
 Happily, there is a [MATLAB](/scripting/matlab) clone written in Java: [JMathLib](https://directory.fsf.org/wiki/JMathLib). While it is apparently not a speed demon, it should be useful to add JMathLib as a new scripting language to ImageJ, and integrate it into Fiji so that [MATLAB](/scripting/matlab) scripts can be executed just like all other ImageJ scripts, too.
 
@@ -202,14 +204,16 @@ It would be nice to have the opposite direction working, to call R from Fiji. As
 
 To overcome the typical problem of loading native libraries via System.loadLibrary() needing special platform-dependent settings, we should do something like this:
 
-    // prohibit JRI to call System.exit(1);
-    System.setProperty("jri.ignore.ule", "yes");
-    if (!Rengine.jriLoaded) {
-            // not found on the library path
-            System.load("/absolute/path/to/the/library");
-            Rengine.jriLoaded = true;
-    }
-    Rengine re = new Rengine();
+```java
+// prohibit JRI to call System.exit(1);
+System.setProperty("jri.ignore.ule", "yes");
+if (!Rengine.jriLoaded) {
+        // not found on the library path
+        System.load("/absolute/path/to/the/library");
+        Rengine.jriLoaded = true;
+}
+Rengine re = new Rengine();
+```
 
 ## Teach the Fiji Updater to accept other sites in addition to [fiji.sc](/contribute/funding)
 
@@ -309,7 +313,7 @@ For extra brownie points, do not hardcode the extension/plugin mapping (like Han
 
 ## Alpha shapes / concave hull / other Graph Theory algorithms
 
-Fiji already contains a [Delaunay\_Voronoi](/plugins/delaunay-voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
+Fiji already contains a [Delaunay_Voronoi](/plugins/delaunay-voronoi) plugin. The purpose of this project is to implement more graph algorithms. Most likely, this will involve designing a common framework for graph theory as applied to two- or higher-dimensional graphs.
 
 ## Support for storing ROIs in TIFF tag fields
 
@@ -325,7 +329,7 @@ One way to achieve that would be by using the [Free Java Media Framework](http:/
 
 I have collected near 15 new histogram segmentation methods that would be better put under a single interface together with others already available.
 
-Note: this is more or less implemented in the Auto\_Threshold and Auto\_Local\_Threshold plugins.--{% include person id='landinig' %} 14:47, 29 November 2009 (CET)
+Note: this is more or less implemented in the `Auto_Threshold` and `Auto_Local_Threshold` plugins.--{% include person id='landinig' %} 14:47, 29 November 2009 (CET)
 
 ## Virtual microscope-like image viewer
 

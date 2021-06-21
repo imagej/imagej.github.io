@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Ksmader
 title: Kevin Mader
 
 name: Kevin Mader

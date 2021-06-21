@@ -1,5 +1,4 @@
 ---
-mediawiki: 2018-01-11_-_Announcing_the_new_Scientific_Community_Image_Forum
 title: 2018-01-11 - Announcing the new Scientific Community Image Forum
 ---
 
@@ -19,7 +18,7 @@ title: 2018-01-11 - Announcing the new Scientific Community Image Forum
 
 **FAQ:**
 
--   **What if the traffic is too much?** Discourse has an excellent tagging system, so that topics can be organized non-hierarchically. E.g., if you ask a question about calling ImageJ from CellProfiler, you can add the \`imagej\` and \`cellprofiler\` tags. This will help people to narrow the scope of their attention as needed based on their time and interest. The front page will include a toplevel link to the tag feed of each partnered software project.
+-   **What if the traffic is too much?** Discourse has an excellent tagging system, so that topics can be organized non-hierarchically. E.g., if you ask a question about calling ImageJ from CellProfiler, you can add the `imagej` and `cellprofiler` tags. This will help people to narrow the scope of their attention as needed based on their time and interest. The front page will include a toplevel link to the tag feed of each partnered software project.
 -   **What about hardware questions?** While the primary focus is on software, sometimes discussion needs to touch on both, and the line between them is not always well-defined. So the current plan is to create a category for relevant hardware discussion as well.
 -   **What about commercial software?** Discussion of how to solve scientific problems with commercial software is very welcome, as long as it encourages independent learning. Here is an excerpt from the current ImageJ Guidelines explaining their philosophy about this:
     -   *Our community is structured to foster not only scientific independent thinking, but just as importantly, independent learning. The [open source process](/develop/philosophy#open-source) enables this sort of learning thanks to its accessibility, transparency, and reproducibility.*

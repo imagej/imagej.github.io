@@ -8,7 +8,7 @@ categories: [Uncategorized]
 
 This tool reads FEI SEM acquistion metadata from tiff tags and set image scale based on pixel size.
 
-Note: This macro use Bio-formats plugin to read metadata. FIJI should include the plugin in default. Otherwise, install Bio-formats manually in ImageJ.
+Note: This macro use Bio-formats plugin to read metadata. Fiji should include the plugin in default. Otherwise, install Bio-formats manually in ImageJ.
 
 ## **How to use**
 

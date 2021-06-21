@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher_FRC
 title: BigStitcher FRC
+extensions: ["mathjax"]
 ---
 
 ## Overview

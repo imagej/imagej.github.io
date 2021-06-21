@@ -1,6 +1,7 @@
 ---
 mediawiki: BigStitcher_Registration
 title: BigStitcher Registration
+extensions: ["mathjax"]
 ---
 
 After you have [detected interest points](/plugins/bigstitcher/interest-points) in your images, you can proceed to register them. In **MultiView mode**, select the views to be registered, right-click and choose {% include bc path='Processing|Register using Interest Points...'%}.

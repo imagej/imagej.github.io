@@ -5,7 +5,7 @@ section: Learn:Scientific Imaging
 nav-links: true
 ---
 
-{% include notice icon='info' size='large' content='See [Tracking](/plugin-index#tracking) for pages about particle tracking.' %}  Particle tracking algorithms identify and link objects across multiple images over time.
+Particle tracking algorithms identify and link objects across multiple images over time.
 
 ## Recommended ImageJ Plugins for Tracking
 

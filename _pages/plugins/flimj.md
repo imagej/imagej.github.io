@@ -2,6 +2,7 @@
 mediawiki: FLIMJ
 title: FLIMJ
 categories: [Uncategorized]
+extensions: ["mathjax"]
 ---
 
 
@@ -14,7 +15,7 @@ categories: [Uncategorized]
 {% endcapture %}
 {% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/media/icons/slim-curve.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
 [UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='flimlib.jar, flimlib-*arch*-*ver*.jar,  
-flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='[Analysis](/plugin-index#analysis)' %}
+flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='Analysis' %}
 
 ## Introduction
 
@@ -39,7 +40,7 @@ Once you have installed the FLIMJ plugin, it becomes available on the menu under
 
 ### Startup
 
-Open a dataset (such as {% include github org='flimlib' repo='flimj-ops' branch='master' path='test\_files/test2.sdt' label='this one' %}) or select an existing image display in Fiji:
+Open a dataset (such as {% include github org='flimlib' repo='flimj-ops' branch='master' path='test_files/test2.sdt' label='this one' %}) or select an existing image display in Fiji:
 
 <figure><img src="/media/plugins/flimj-usage-open-dataset.png" title="FLIMJ_usage_open_dataset.png" width="300" alt="FLIMJ_usage_open_dataset.png" /><figcaption aria-hidden="true">FLIMJ_usage_open_dataset.png</figcaption></figure>
 
@@ -117,7 +118,7 @@ Sometimes you may want to fine-tune the fitting configurations. The **Settings**
 
 #### Instrument response function (IRF/prompt)
 
-FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup) that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib' repo='flimj-ui' branch='master' path='test\_files/urea.sdt' label='this one using urea crystals' %}). The steps are as follows:
+FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [acceptable dataset](#Startup) that is taken during a standard IRF measurement procedure (such as {% include github org='flimlib' repo='flimj-ui' branch='master' path='test_files/urea.sdt' label='this one using urea crystals' %}). The steps are as follows:
 
 1.  Click on the drop-down menu, select *From file*; select the dataset file that contains the IRF.
 2.  In **Preview** panel, select *IRF Intensity* for the "Show" option (you may also select *Grayscale* for the "as" option to deactivate pseudocoloring):<img src="/media/plugins/flimj-irf-show-irf.png" title="fig:Choose IRF Intensity to enter IRF picking mode." width="200" alt="Choose IRF Intensity to enter IRF picking mode." />
@@ -161,7 +162,7 @@ After dataset fitting, you can select images to export in the drop-down checklis
 {% include notice icon="info" content='You may follow the following steps to reproduce the composite color image after export:
 
 1.  Export "Intensity" with desired fitted images;
-2.  Convert all images to RGB format by searching and executing the "RGB Color" command in FIJI;
+2.  Convert all images to RGB format by searching and executing the "RGB Color" command in Fiji;
 3.  Search and execute the "compose rgb-stacks" script, make the intensity image the "source" and the fitted image the "target", and choose "Multiply" as "compose method". Hit "OK".' %}
 
 ## Advanced topics

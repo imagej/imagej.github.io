@@ -245,7 +245,7 @@ This filter is used to denoise image. It is well suited to remove impulse noise.
 <img src="/media/plugins/cip/cip-median.png" title="fig:CIP_median.PNG" width="400" alt="CIP_median.PNG" />
 
 <span style="font-size:110%">**Implementation**</span>  
-The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ1 implementation for 2D image.
+The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ 1.x implementation for 2D image.
 
 # **invert**
 

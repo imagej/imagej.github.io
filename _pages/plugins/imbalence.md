@@ -4,7 +4,7 @@ title: IMBalENce
 categories: [Uncategorized]
 ---
 
-{% include notice icon="info" content='Plugin' software='ImageJ/FIJI' name='EM tool' maintainer=' [Zhou XU](https://github.com/IMBalENce/EM-tool) @ Monash Centre for Electron Microscopy' source='https://github.com/IMBalENce/EM-tool' released='30/08/2018' latest-version='06/05/2020' status='Stable, Active' category='' website='' %}
+{% include notice icon="info" content='Plugin' software='ImageJ/Fiji' name='EM tool' maintainer=' [Zhou XU](https://github.com/IMBalENce/EM-tool) @ Monash Centre for Electron Microscopy' source='https://github.com/IMBalENce/EM-tool' released='30/08/2018' latest-version='06/05/2020' status='Stable, Active' category='' website='' %}
 
 # **Overview**
 
@@ -25,11 +25,11 @@ Click the links below to find more about each tool.
 
 # **Installation**
 
-## Installation via FIJI updater
+## Installation via Fiji updater
 
-1\. [FIJI](https://fiji.sc) (Fiji Is Just ImageJ) should be installed on your computer.
+1\. [Fiji](https://fiji.sc) (Fiji Is Just ImageJ) should be installed on your computer.
 
-2\. Click {% include bc path="Help | Update..." %} to open the FIJI updater. If it's the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click {% include bc path="Help | Update..." %} again to bring up the ImageJ updater window.
+2\. Click {% include bc path="Help | Update..." %} to open the Fiji updater. If it's the first time updating your Fiji, it might take some time to download the update files and may also require to restart Fiji a few times. Once done, click {% include bc path="Help | Update..." %} again to bring up the ImageJ updater window.
 
 <figure><img src="/media/plugins/emtool-01.jpg" title="EMtool_01.jpg" width="350" alt="EMtool_01.jpg" /><figcaption aria-hidden="true">EMtool_01.jpg</figcaption></figure>
 
@@ -45,7 +45,7 @@ Click the links below to find more about each tool.
 
 6 Close the "Manage Update Sites" window and click the "Apply Changes" button on the "ImageJ Updater Window".
 
-7\. Once update is completed, restart FIJI. You should be able to see the plugins "EM tool" installed in the top toolbar.
+7\. Once update is completed, restart Fiji. You should be able to see the plugins "EM tool" installed in the top toolbar.
 
 ## Manual Installation
 
@@ -57,4 +57,4 @@ If you only want to use one of the plugins you can follow these steps:
 
 3\. Save .ijm files in the desired location within your imageJ application
 
-4\. Go to {% include bc path="Plugins|Macros|Install..." %} to add the macros, or drag-and-drop the .ijm file into ImageJ/FIJI
+4\. Go to {% include bc path="Plugins|Macros|Install..." %} to add the macros, or drag-and-drop the .ijm file into ImageJ/Fiji

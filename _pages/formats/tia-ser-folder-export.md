@@ -1,5 +1,4 @@
 ---
-mediawiki: TIA_.ser_folder_export
 title: TIA .ser folder export
 ---
 
@@ -13,7 +12,7 @@ Scale info of TEM images is also exported as HFW (Horizontal Full Width) in the 
 
 ## **Dependency**
 
-[TIA reader](/ij/plugins/tia-reader.html).
+[TIA reader](https://imagej.nih.gov/ij/plugins/tia-reader.html).
 
 Please follow the instruction in the webpage above to install the plugin before using this script.
 

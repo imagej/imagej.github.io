@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Miura
 title: Kota Miura
 
 name: Kota Miura

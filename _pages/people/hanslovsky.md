@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Hanslovsky
 title: Philipp Hanslovsky
 name: Philipp Hanslovsky
 affiliation:

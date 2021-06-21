@@ -13,19 +13,21 @@ Jan Švihlík and {% include person id='jschier' %}
 {% capture maintainer%}
 {% include person id='jschier' %}
 {% endcapture %}
-{% include info-box name='IsletJ' software='ImageJ' author=author maintainer=maintainer status='Active' %}IsletJ is a plugin for analysis of microscopy images of Langerhans islets in [ImageJ](/software/imagej). It provides free, open source tool for analysis of islets diameter and number and for estimation of sample purity (ratio of endocrine/exocrine tissue area).
+{% include info-box name='IsletJ' software='ImageJ' author=author maintainer=maintainer status='Active' %}
+
+IsletJ is a plugin for analysis of microscopy images of Langerhans islets in [ImageJ](/software/imagej). It provides free, open source tool for analysis of islets diameter and number and for estimation of sample purity (ratio of endocrine/exocrine tissue area).
 
 ## Installation
 
-IsletJ was designed to work with plain [ImageJ 1.x](/software/imagej1). It requires Java-8.
+IsletJ was designed to work with plain [ImageJ](/software/imagej). It requires Java-8.
 
-The simplest way to install the plugin is using the Fiji installer&gt;
+The simplest way to install the plugin is using [Fiji](/software/fiji):
 
 -   Download current version of Fiji from [here](/software/fiji/downloads)
--   Launch Fiji and run Updater {% include bc path='Help | Update...'%}
--   In {% include bc path='ImageJ Updater'%} select {% include bc path='Manage update sites'%}
--   In {% include bc path='Manage update sites'%} select {% include bc path='IsletJ'%} and then {% include bc path='Close'%}
--   In {% include bc path='ImageJ Updater'%} select {% include bc path='Apply changes'%}
+-   Launch Fiji and run {% include bc path='Help | Update...'%}
+-   Select {% include button label="Manage update sites" %}
+-   Check the {% include bc path='IsletJ' %} box and then select {% include button label="Close" %}
+-   Select {% include button label="Apply changes" %}
 -   Restart Fiji
 
 ## Documentation

@@ -16,7 +16,9 @@ The CSBDeep plugin can be installed from the ImageJ update site [1](http://sites
 1.  Clone this repository.
 2.  Run the following command from inside the repo:
 
-`mvn -Dimagej.app.directory=/path/to/Fiji.app/ -Ddelete.other.versions=true`
+```shell
+mvn -Dimagej.app.directory=/path/to/Fiji.app/ -Ddelete.other.versions=true
+```
 
 ## Run demos
 

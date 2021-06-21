@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-06-10_-_Switching_to_ImageJ2_script_editor
 title: 2014-06-10 - Switching to ImageJ2 script editor
 ---
 
@@ -11,8 +10,10 @@ The main benefit is that the script editor is now fully plug 'n play: adding the
 
 The biggest bonus for users, however, is that you can use the *@Parameter* framework for painless user interaction, even from ImageJ 1.x macros! Example:
 
-    // @String(label = "What is your first name?") name
-    print("Hello, " + name + "!");
+```java
+// @String(label = "What is your first name?") name
+print("Hello, " + name + "!");
+```
 
 Enjoy!
 

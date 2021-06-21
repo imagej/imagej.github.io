@@ -1,5 +1,4 @@
 ---
-mediawiki: Formats
 title: Formats
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]

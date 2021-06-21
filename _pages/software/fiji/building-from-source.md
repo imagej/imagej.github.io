@@ -31,49 +31,55 @@ Once the developer has identified which plugin or library she wants to modify or
 
 Let's assume that we want to develop the Skeletonize3D plugin. Its source code is maintained at <https://github.com/fiji/Skeletonize3D>. The first step is to clone the source code:
 
-    $ git clone https://github.com/fiji/Skeletonize3D
-    Cloning into 'Skeletonize3D'...
-    remote: Counting objects: 115, done.
-    remote: Compressing objects: 100% (58/58), done.
-    remote: Total 115 (delta 46), reused 115 (delta 46)
-    Receiving objects: 100% (115/115), 22.81 KiB | 0 bytes/s, done.
-    Resolving deltas: 100% (46/46), done.
-    Checking connectivity... done.
+```shell
+$ git clone https://github.com/fiji/Skeletonize3D
+Cloning into 'Skeletonize3D'...
+remote: Counting objects: 115, done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 115 (delta 46), reused 115 (delta 46)
+Receiving objects: 100% (115/115), 22.81 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (46/46), done.
+Checking connectivity... done.
+```
 
 You only need to type the part after the *$* prompt, i.e you would type `git clone `[`https://github.com/fiji/Skeletonize3D`](https://github.com/fiji/Skeletonize3D). The rest is shown only for reference, so that you know what to expect.
 
 Then let's use the command-line Maven to build the project:
 
-    $ cd Skeletonize3D/
-    $ mvn
-    [INFO] Scanning for projects...
-    [... lots and lots of interesting and useful information ...]
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 52.574s
-    [INFO] Finished at: Tue Dec 02 10:27:00 CET 2014
-    [INFO] Final Memory: 20M/81M
-    [INFO] ------------------------------------------------------------------------
+```shell
+$ cd Skeletonize3D/
+$ mvn
+[INFO] Scanning for projects...
+[... lots and lots of interesting and useful information ...]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 52.574s
+[INFO] Finished at: Tue Dec 02 10:27:00 CET 2014
+[INFO] Final Memory: 20M/81M
+[INFO] ------------------------------------------------------------------------
+```
 
 And finally, let's build the project and install it into the *Fiji.app/* directory:
 
-    $ mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true
-    [INFO] Scanning for projects...
-    [... lots and lots of interesting and useful information ...]
-    [INFO]
-    [INFO] --- imagej-maven-plugin:0.5.4:copy-jars (copy-jars) @ Skeletonize3D_ ---
-    [INFO] Copying Skeletonize3D_-1.0.2-SNAPSHOT.jar to $HOME/Desktop/Fiji.app/plugins
-    [INFO] Deleted overridden Skeletonize3D_-1.0.1.jar
-    [INFO] Copying ij-1.49j.jar to $HOME/Desktop/Fiji.app/jars
-    [INFO] Deleted overridden ij-1.49m.jar
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 21.331s
-    [INFO] Finished at: Tue Dec 02 10:30:02 CET 2014
-    [INFO] Final Memory: 14M/81M
-    [INFO] ------------------------------------------------------------------------
+```shell
+$ mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true
+[INFO] Scanning for projects...
+[... lots and lots of interesting and useful information ...]
+[INFO]
+[INFO] --- imagej-maven-plugin:0.5.4:copy-jars (copy-jars) @ Skeletonize3D_ ---
+[INFO] Copying Skeletonize3D_-1.0.2-SNAPSHOT.jar to $HOME/Desktop/Fiji.app/plugins
+[INFO] Deleted overridden Skeletonize3D_-1.0.1.jar
+[INFO] Copying ij-1.49j.jar to $HOME/Desktop/Fiji.app/jars
+[INFO] Deleted overridden ij-1.49m.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.331s
+[INFO] Finished at: Tue Dec 02 10:30:02 CET 2014
+[INFO] Final Memory: 14M/81M
+[INFO] ------------------------------------------------------------------------
+```
 
 Of course, this assumes that you followed the suggestion and unpacked your Fiji onto the Desktop. If you unpacked it somewhere else, you *have* to adjust the command-line accordingly.
 

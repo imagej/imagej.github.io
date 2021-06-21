@@ -56,8 +56,10 @@ Please note that those pseudo branches (which are called *refs* in Git Speak) ar
 
 Example: let's assume for a moment that you want to test the [Pull Request number \#6 of the SPIM Registration plugin](https://github.com/fiji/SPIM_Registration/pull/6). You can fetch and check out the pseudo-branch with the tentative merge result thusly:
 
-    git fetch origin refs/pull/6/merge
-    git checkout FETCH_HEAD
+```shell
+git fetch origin refs/pull/6/merge
+git checkout FETCH_HEAD
+```
 
 Please note that
 

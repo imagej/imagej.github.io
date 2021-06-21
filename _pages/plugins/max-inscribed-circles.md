@@ -1,14 +1,14 @@
 ---
 mediawiki: Max_Inscribed_Circles
 title: Max Inscribed Circles
-categories: [Uncategorized]
+categories: [Segmentation, Feature Extraction]
 ---
 
 
 {% capture source%}
 {% include github org='ptbiop' repo='ijp-max-inscribed-circles' %}
 {% endcapture %}
-{% include info-box name='Max Inscribed Circles' software='Fiji' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Max\_Inscribed\_Circle.jar' released='August 2015' latest-version='July 2016' source=source status='stable' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/)' %}
+{% include info-box name='Max Inscribed Circles' software='Fiji' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Max_Inscribed_Circle.jar' released='August 2015' latest-version='July 2016' source=source status='stable' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/)' %}
 
 ## Purpose
 
@@ -49,23 +49,27 @@ Setting the Minimum Disk Diameter to 0 will return a single ROI with the largest
 
 Making use of the GenericDialog class, the plugin is macro-recordable.
 
-    run("Max Inscribed Circles...", "minimum=20");
+```java
+run("Max Inscribed Circles...", "minimum=20");
+```
 
 ## Running from a Plugin
 
 What you need to run this in a plugin is
 
-    import ch.epfl.biop.MaxInscribedCircles;
+```java
+import ch.epfl.biop.MaxInscribedCircles;
+```
 
 And then call the static method
 
-    //imp must be an 8-bit binary image
-    ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
+```java
+//imp must be an 8-bit binary image
+ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
+```
 
 Set the last argument `isSelectionOnly` to true if you want to fit circles in the current selection. If you'd like to use the pixel mask, set it to false.
 
 ## Notes
 
 The accuracy is not perfect as we are using the distance map which has finite values. But for most practical purposes (Circles larger than 2 pixels in diameter), it should be sufficient.
-
-

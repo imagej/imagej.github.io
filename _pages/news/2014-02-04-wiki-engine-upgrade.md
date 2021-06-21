@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-02-04_-_Wiki_engine_upgrade
 title: 2014-02-04 - Wiki engine upgrade
 ---
 

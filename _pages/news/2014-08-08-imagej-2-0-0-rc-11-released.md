@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-08-08_-_ImageJ_2.0.0-rc-11_released
 title: 2014-08-08 - ImageJ 2.0.0-rc-11 released
 ---
 
@@ -7,7 +6,7 @@ Today, the [ImageJ team](/people) is pleased to announce a new public release ca
 
 ## New features
 
--   Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new `{% include bc path='Edit | Options | Privacy...'%}` setting. Expect great things coming to the usage page! (note: "great things" = statistics graphs)
+-   Usage tracking! We can now track and upload (anonymously) use counts at the plugin level, along with information about the environment of use (country, java version, language, operating system, time zone). Although we are taking care not to expose any user data with these statistics, this feature can be disabled via a new {% include bc path='Edit | Options | Privacy...'%} setting. Expect great things coming to the usage page! (note: "great things" = statistics graphs)
 
 <!-- -->
 
@@ -23,7 +22,7 @@ Today, the [ImageJ team](/people) is pleased to announce a new public release ca
 
 ## Bug-fixes
 
--   We resolved a significant [memory leak](https://fiji.sc/bugzilla/show_bug.cgi?id=819) due to images not being closed properly. This was also causing naming errors (e.g., the second time you opened "Data" it would display a title "Data-1" even after closing the first image) and other terrible gotchas. As a consequence, the linkage between ImageJ2 and [ImageJ 1.x](/software/imagej1) data structures maintained by the {% include github org='imagej' repo='imagej-legacy' label='legacy layer' %} is now more robust.
+-   We resolved a significant [memory leak](https://fiji.sc/bugzilla/show_bug.cgi?id=819) due to images not being closed properly. This was also causing naming errors (e.g., the second time you opened "Data" it would display a title "Data-1" even after closing the first image) and other terrible gotchas. As a consequence, the linkage between ImageJ2 and [ImageJ 1.x](/software/imagej) data structures maintained by the {% include github org='imagej' repo='imagej-legacy' label='legacy layer' %} is now more robust.
 -   We fixed several bugs in [SCIFIO](/libs/scifio); e.g., ImageJ slice labels should now be preserved after saving and reopening in TIFF format.
 -   Quite a few other small bug-fixes; for example, the languages shown in the `Languages` menu of the [Script Editor](/scripting/script-editor) now appear in a consistent and alphabetical order.
 

@@ -18,7 +18,7 @@ doi:
 {% capture source%}
 {% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/SampleEntropy-2D' label='GitHub CSIM-ImageJ SampEn2D repository' %}
 {% endcapture %}
-{% include info-box name='Two-dimensional Sample Entropy (SampEn2D) PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='June 23<sup>rd</sup>, 2016' latest-version='June 23<sup>rd</sup>, 2016' status='experimental, active' category='[Plugins](/plugin-index), [Pattern Recognition](/plugin-index#pattern-recognition)' %}
+{% include info-box name='Two-dimensional Sample Entropy (SampEn2D) PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='June 23<sup>rd</sup>, 2016' latest-version='June 23<sup>rd</sup>, 2016' status='experimental, active' category='Plugins, Pattern Recognition' %}
 
 ## Two-dimensional Sample Entropy
 

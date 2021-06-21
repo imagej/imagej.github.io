@@ -156,7 +156,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 
 ## Other pages and tools for Registration in ImageJ
 
-See [Registration](/plugin-index#registration) for other ImageJ pages and tools about image registration.
+Filter by the Registration category on the [list of extensions](/list-of-extensions) to see other ImageJ pages and tools about image registration.
 
 # References
 

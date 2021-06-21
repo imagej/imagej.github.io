@@ -1,5 +1,4 @@
 ---
-mediawiki: 2016-05-25_-_The_ImageJ_site_has_a_new_look!
 title: 2016-05-25 - The ImageJ site has a new look!
 ---
 

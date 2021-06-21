@@ -3,6 +3,7 @@ mediawiki: BUnwarpJ
 title: BUnwarpJ
 categories: [Registration]
 artifact: sc.fiji:bUnwarpJ_
+extensions: ["mathjax"]
 ---
 
 {\| \|style="vertical-align:top" \|<img src="/media/plugins/bunwarpj-scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}
@@ -241,7 +242,7 @@ You can also test bUnwarpJ with [Spline Deformation Generator](/plugins/spline-d
 
 ### Macro call
 
-[bUnwarpJ](/plugins/bunwarpj) is completely compatible with the [ImageJ macro language](/ij/developer/macro/macros.html). When in doubt, use the [Macro Recorder](/scripting/macro#the-recorder) to identify which commands need to be used.
+[bUnwarpJ](/plugins/bunwarpj) is completely compatible with the [ImageJ macro language](https://imagej.nih.gov/ij/developer/macro/macros.html). When in doubt, use the [Macro Recorder](/scripting/macro#the-recorder) to identify which commands need to be used.
 
 #### Main dialog
 

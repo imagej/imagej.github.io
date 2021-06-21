@@ -4,9 +4,6 @@ title: Batch Processing
 section: Extend:Scripting:Languages
 ---
 
-
-
-
 # Overview
 
 A fundamental benefit to creating [scripts and macros](/scripting) in [ImageJ](/software/imagej) is the ability to *reuse* their functionality *on more than one image*. Although this can be done manually, there are multiple ways to easily automate this batch processing.
@@ -22,7 +19,7 @@ A fundamental benefit to creating [scripts and macros](/scripting) in [ImageJ](/
 
 # Option 1 - {% include bc path='Process | Batch | Macro...'%}
 
-The fastest way to start batch conversion is via the [{% include bc path='Process | Batch | Macro...'%}](/ij/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
+The fastest way to start batch conversion is via the [{% include bc path='Process | Batch | Macro...'%}](https://imagej.nih.gov/ij/docs/guide/146-29.html#toc-Subsubsection-29.12.3) command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the `Add Macro Code` drop-down to generate a macro with the desired functionality.
 
 ![](/media/scripting/batchprocess.png)
 
@@ -40,7 +37,7 @@ Lines 26 and 27 can now be edited, replaced with the functional macro code you w
 
 # See also
 
--   [{% include bc path='Process | Batch'%}](/ij/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
+-   [{% include bc path='Process | Batch'%}](https://imagej.nih.gov/ij/docs/guide/146-29.html#toc-Subsection-29.12) submenu.
 -   [Scripting](/scripting) documentation and tutorials.
 -   [How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)
 -   [Assign your own keyboard shortcuts](/learn/keyboard-shortcuts#creating-your-own-keyboard-shortcuts)

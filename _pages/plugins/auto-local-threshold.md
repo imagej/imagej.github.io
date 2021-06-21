@@ -53,7 +53,7 @@ Implements Bernsen's thresholding method. Note that this implementation uses cir
 
 The method uses a user-provided *contrast threshold*. If the *local contrast* (max-min) is above or equal to the *contrast threshold*, the *threshold* is set at the *local midgrey value* (the mean of the minimum and maximum grey values in the local window). If the *local contrast* is below the *contrast threshold* the neighbourhood is considered to consist only of one class and the pixel is set to object or background depending on the value of the midgrey.
 
-```
+```python
 if ( local_contrast < contrast_threshold )
  pixel = ( mid_gray >= 128 ) ? object :  background  
 else
@@ -64,7 +64,7 @@ else
 
 {% include citation doi='10.1117/1.1631315' %}
 
-Based on ME Celebi's fourier\_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Based on ME Celebi's fourier_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Contrast
 
@@ -78,7 +78,9 @@ This procedure does not have user-provided parameters other than the kernel radi
 
 This selects the threshold as the mean of the local greyscale distribution. A variation of this method uses the mean - C, where C is a constant.
 
-`pixel = ( pixel > mean - c ) ? object : background`
+```java
+pixel = ( pixel > mean - c ) ? object : background
+```
 
 **Parameter 1**: is the *C value*. The default value is 0. Any other number will change the default value.
 
@@ -89,8 +91,9 @@ This selects the threshold as the mean of the local greyscale distribution. A va
 ### Median
 
 This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
-
-`pixel = ( pixel > median - c ) ? object : background`
+```java
+pixel = ( pixel > median - c ) ? object : background
+```
 
 **Parameter 1**: is the *C value*. The default value is 0. Any other number will change the default value.
 
@@ -101,8 +104,9 @@ This selects the threshold as the median of the local greyscale distribution. A 
 ### MidGrey
 
 This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the mid-grey - C, where C is a constant.
-
-`pixel = ( pixel > ( ( max + min ) / 2 ) - c ) ? object : background`
+```java
+pixel = ( pixel > ( ( max + min ) / 2 ) - c ) ? object : background
+```
 
 **Parameter 1**: is the *C value*. The default value is 0. Any other number will change the default value.
 
@@ -113,8 +117,9 @@ This selects the threshold as the mid-grey of the local greyscale distribution (
 ### Niblack
 
 Implements Niblack's thresholding method:
-
-`pixel = ( pixel >  mean + k * standard_deviation - c) ? object : background`
+```java
+pixel = ( pixel >  mean + k * standard_deviation - c) ? object : background
+```
 
 **Parameter 1**: is the *k value*. The default value is 0.2 for bright objects and -0.2 for dark objects. Any other number than 0 will change the default value.
 
@@ -122,7 +127,7 @@ Implements Niblack's thresholding method:
 
 {% include citation last='Niblack' first='W' year='1986' journal='' title='An introduction to Digital Image Processing, Prentice-Hall' %} <!-- TODO: No doi for this book. Decide whether to hardcode AMA style, or do something fancier. -->
 
-Ported from ME Celebi's fourier\_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Otsu
 
@@ -141,9 +146,9 @@ This is a modification of Sauvola's thresholding method to deal with low contras
 {% include citation doi='10.1109/ICCSP.2011.5739305' %}
 
 In this method, the threshold t is computed as:
-
-` t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))`
-
+```java
+t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))
+```
 where mean and stdev are the local mean and standard deviation respectively. Phansalkar recommends *k* = 0.25, *r* = 0.5, *p* = 2 and *q* = 10. In this plugin, *k* and *r* are the parameters 1 and 2 respectively, but the values of *p* and *q* are fixed.
 
 **Parameter 1**: is the *k value*. The default value is 0.25. Any other number than 0 will change its value.
@@ -155,15 +160,13 @@ Implemented from Phansalkar's paper description, although this version uses a ci
 ### Sauvola
 
 Implements Sauvola's thresholding method, which is a variation of Niblack's method
-
-`pixel = ( pixel > mean * ( 1 + k * ( standard_deviation / r - 1 ) ) ) ? object : background`
-
+```java
+pixel = ( pixel > mean * ( 1 + k * ( standard_deviation / r - 1 ) ) ) ? object : background
+```
 **Parameter 1**: is the *k value*. The default value is 0.5. Any other number than 0 will change the default value.
 
 **Parameter 2**: is the *r value*. The default value is 128. Any other number than 0 will change the default value
 
 {% include citation doi='10.1016/S0031-3203(99)00055-2' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
-
- 
+Ported from ME Celebi's fourier_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).

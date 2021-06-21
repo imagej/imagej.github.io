@@ -22,7 +22,7 @@ You can find the dotfiles in the following repositories:
         {% include github org='scijava' repo='dotfiles' label='scijava/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/software/imagej"><img src="/media/icons/imagej.png" width="48px"></a><br>
+        <p><a href="/software/imagej2"><img src="/media/icons/imagej2.png" width="48px"></a><br>
         {% include github org='imagej' repo='dotfiles' label='imagej/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
@@ -44,8 +44,8 @@ You can find the dotfiles in the following repositories:
         {% include github org='fiji' repo='dotfiles' label='fiji/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="SLIM%20Curve"><img src="/media/icons/slim-curve.png" width="48px"></a><br>
-        {% include github org='slim-curve' repo='dotfiles' label='slim-curve/dotfiles' %}</p>
+        <p><a href="/plugins/flimj"><img src="/media/icons/slim-curve.png" width="48px"></a><br>
+        {% include github org='flimlib' repo='dotfiles' label='flimlib/dotfiles' %}</p>
       </td>
     </tr>
   </tbody>

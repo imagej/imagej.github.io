@@ -5,7 +5,7 @@ doi: 10.1167/iovs.15-17599
 categories: [Uncategorized]
 ---
 
-{% include info-box logo='![ 96px](/media/icons/fiji.png)' software='ImageJ' name='RETINA Analysis Toolkit' author=' [**Daniel E. Maidana**](https://www.researchgate.net/profile/Daniel_Maidana2)  
+{% include info-box software='ImageJ' name='RETINA Analysis Toolkit' author=' [**Daniel E. Maidana**](https://www.researchgate.net/profile/Daniel_Maidana2)  
 [**Demetrios G. Vavvas**](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g)' maintainer='**Daniel E. Maidana**  
 Angiogenesis Laboratory  
 Massachusetts Eye and Ear Infirmary  

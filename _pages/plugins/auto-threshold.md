@@ -19,7 +19,7 @@ For **local** thresholding rather than global, see the [Auto Local Threshold](/p
 
 **Method** selects the algorithm to be applied (detailed below).
 
-The **Ignore black** and **Ignore white** options set the image histogram bins for \[0\] and \[255\] greylevels to 0 respectively. This may be useful if the digitised image has under- or over- exposed pixels.
+The **Ignore black** and **Ignore white** options set the image histogram bins for [0] and [255] greylevels to 0 respectively. This may be useful if the digitised image has under- or over- exposed pixels.
 
 **White object on black background** sets to white the pixels with values above the threshold value (otherwise, it sets to white the values less or equal to the threshold).
 
@@ -33,7 +33,7 @@ It you are processing a stack, two additional options are available: **Stack** c
 
 **2.** From version 1.12 the plugin supports thresholding of 16-bit images. Since the Auto Threshold plugin processes the full greyscale space, it can be slow when dealing with 16-bit images. Note that the ImageJ thresholder applet also processes 16-bit images, but in reality ImageJ first computes a histogram with 256 bins. Therefore, there might be differences in the results obtained on 16-bit images when using the applet and the true 16-bit results obtained with this plugin. Note that for speeding up, the histogram is bracketed to include only the range of bins that contain data (and avoid processing empty histogram bins at both extremes).
 
-**3.** The result of 16 bit images and stacks (when processing all slices) is an 8 bit container showing the result in white \[255\] to comply with the concept of "binary image" (i.e. 8 bits with 0 and 255 values). However, for stacks where only 1 slice is thresholded, the result is still a 16 bit container with the thresholded phase shown as white \[65535\]. This is to keep the data untouched in the remaining slices. The "Try all" option retains the 16 bit format to still show the images with methods that might fail to obtain a threshold. Images and stacks that are impossible to threshold remain unchanged.
+**3.** The result of 16 bit images and stacks (when processing all slices) is an 8 bit container showing the result in white [255] to comply with the concept of "binary image" (i.e. 8 bits with 0 and 255 values). However, for stacks where only 1 slice is thresholded, the result is still a 16 bit container with the thresholded phase shown as white [65535]. This is to keep the data untouched in the remaining slices. The "Try all" option retains the 16 bit format to still show the images with methods that might fail to obtain a threshold. Images and stacks that are impossible to threshold remain unchanged.
 
 **4.** The same image in 8 and 16 bits (without *scaling*) returns the same threshold value, however Li's method originally would return different values when the image data was *offset* (e.g. when adding a fixed value to all pixels). The current implementation avoids this offset-dependent problem.
 
@@ -53,7 +53,7 @@ Original image
 
 Try all methods.
 
-When processing stacks with many slices, the montages can become very large (\~16 times the original stack size) and one risks running out of RAM. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the montaged results. Select **No** to compute the threshold values and display them in the log window.
+When processing stacks with many slices, the montages can become very large (~16 times the original stack size) and one risks running out of RAM. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the montaged results. Select **No** to compute the threshold values and display them in the log window.
 
 ### Default
 
@@ -65,7 +65,7 @@ Implements Huang's fuzzy thresholding method. This uses Shannon's entropy functi
 
 {% include citation doi='10.1016/0031-3203(94)E0043-K' %} ([PDF](http://www.ktl.elf.stuba.sk/study/vacso/Zadania-Cvicenia/Cvicenie_3/TimA2/Huang_E016529624.pdf))
 
-Ported from ME Celebi's fourier\_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Huang2
 
@@ -87,7 +87,9 @@ Iterative procedure based on the isodata algorithm of:
 
 The procedure divides the image into object and background by taking an initial threshold, then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,
 
-`threshold = (average background + average objects)/2.`
+```java
+threshold = (average background + average objects)/2.
+```
 
 Several implementations of this method exist. See the source code for further comments.
 
@@ -101,7 +103,7 @@ Implements Li's Minimum Cross Entropy thresholding method based on the iterative
 
 {% include citation doi='10.1117/1.1631315' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### MaxEntropy
 
@@ -109,7 +111,7 @@ Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 
 {% include citation doi='10.1016/0734-189X(85)90125-2' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Mean
 
@@ -143,7 +145,7 @@ Tsai's method attempts to preserve the moments of the original image in the thre
 
 {% include citation doi='10.1016/0734-189X(85)90133-1' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [7](http://sourceforge.net/projects/fourier-ipal) and [8](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [7](http://sourceforge.net/projects/fourier-ipal) and [8](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Otsu
 
@@ -169,13 +171,13 @@ Similar to the **MaxEntropy** method, but using Renyi's entropy instead.
 
 {% include citation doi='10.1016/0734-189X(85)90125-2' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [9](http://sourceforge.net/projects/fourier-ipal) and [10](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [9](http://sourceforge.net/projects/fourier-ipal) and [10](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Shanbhag
 
 {% include citation doi='10.1006/cgip.1994.1037' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [11](http://sourceforge.net/projects/fourier-ipal) and [12](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [11](http://sourceforge.net/projects/fourier-ipal) and [12](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Triangle
 
@@ -197,4 +199,4 @@ Implements Yen's thresholding method from:
 
 {% include citation doi='10.1117/1.1631315' %}
 
-Ported from ME Celebi's fourier\_0.8 routines [13](http://sourceforge.net/projects/fourier-ipal) and [14](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier_0.8 routines [13](http://sourceforge.net/projects/fourier-ipal) and [14](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).

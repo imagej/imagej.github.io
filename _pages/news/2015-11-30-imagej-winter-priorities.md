@@ -1,5 +1,4 @@
 ---
-mediawiki: 2015-11-30_-_ImageJ_winter_priorities
 title: 2015-11-30 - ImageJ winter priorities
 ---
 

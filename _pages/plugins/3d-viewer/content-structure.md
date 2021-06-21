@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Content_Structure
 title: 3D Viewer › Content Structure
+nav-links: true
+nav-title: Content Structure
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## The relation between Content and Universe
 

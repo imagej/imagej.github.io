@@ -40,7 +40,7 @@ If you would like to reference FijiWings in a publication, you can cite:
 
 ## Tutorials
 
-{% include video platform='youtube' id='kkwbRaN51ww'%} {% include video platform='youtube' id='nlYZyJxV5Bw'%} {% include video platform='youtube' id='YDZHy\_5mPko'%}
+{% include video platform='youtube' id='kkwbRaN51ww'%} {% include video platform='youtube' id='nlYZyJxV5Bw'%} {% include video platform='youtube' id='YDZHy_5mPko'%}
 
 -   [All FijiWings videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
 

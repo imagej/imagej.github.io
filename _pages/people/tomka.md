@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Kazimiers
 title: Tom Kazimiers
 
 name: Tom Kazimiers

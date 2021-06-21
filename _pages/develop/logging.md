@@ -37,7 +37,7 @@ Unfortunately, SLF4J suffers from a couple of downsides:
 
 Still, SLF4J is a nice thing, so the SciJava project does provide a {% include github org='scijava' repo='scijava-log-slf4j' branch='master' path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java' label='LogService implementation backed by SLF4J' %}, which zealous developers can use to redirect all SciJava logging to the SLF4J framework, which they can then {% include wikipedia title='Fundamental theorem of software engineering' text='further redirect'%} using an SLF4J binding of their choosing!
 
-## How does logging work in ImageJ?
+## How does logging work in ImageJ2?
 
 {% include aside content="
 The six standard near-universal log levels are:
@@ -51,9 +51,9 @@ The six standard near-universal log levels are:
 
 [ImageJ2](/software/imagej2) uses the SciJava logging framework for all core logging. And the vanilla ImageJ2 distribution uses the `StderrLogService` which emits those messages to the standard error stream. The default log level is **`INFO`**.
 
-That said, there is a problem with using the standard output and/or error streams in a GUI-driven application: such messages are not visible by default. To work around this fact, many GUI-driven applications implement their own UI component for log messages, typically a "Log window" of some sort. This solution is how [ImageJ 1.x](/software/imagej1) addresses the logging problem on the GUI side: plugins are expected to call the static `IJ.log` and `IJ.handleException` methods to emit log messages and report exceptions to the user, respectively.
+That said, there is a problem with using the standard output and/or error streams in a GUI-driven application: such messages are not visible by default. To work around this fact, many GUI-driven applications implement their own UI component for log messages, typically a "Log window" of some sort. This solution is how the original [ImageJ](/software/imagej) addresses the logging problem on the GUI side: plugins are expected to call the static `IJ.log` and `IJ.handleException` methods to emit log messages and report exceptions to the user, respectively.
 
-ImageJ2 runs using the [ImageJ1](/software/imagej1) legacy user interface by default, meaning it inherits this Log window. But in addition, it also provides a separate Console window which logs all messages to stdout and stderr, so that no potentially valuable console output is hidden from the user. The Console window automatically becomes visible whenever any output to stderr occurs. Output to stderr is shown in red, to differentiate it from output to stdout.
+ImageJ2 runs using the [ImageJ](/software/imagej) legacy user interface by default, meaning it inherits this Log window. But in addition, it also provides a separate Console window which logs all messages to stdout and stderr, so that no potentially valuable console output is hidden from the user. The Console window automatically becomes visible whenever any output to stderr occurs. Output to stderr is shown in red, to differentiate it from output to stdout.
 
 Therefore, as long as logging messages end up on stdout or stderr somehow (which they do by default), all is well, and the user will see them. But if you configure your own logging implementation which suppresses the stderr behavior in favor of, e.g., logging to a file somewhere, then you are on your own!
 
@@ -69,20 +69,23 @@ If you are using the standard SciJava `LogService` implementation, you can contr
 
 E.g., in Java code:
 
-    System.setProperty("scijava.log.level", "debug");
-
+```java
+System.setProperty("scijava.log.level", "debug");
+```
 Or via the command line:
 
-    java -Dscijava.log.level=debug ... myorg.MyMainClass
+```java
+java -Dscijava.log.level=debug ... myorg.MyMainClass
+```
 
 You can even customize the logging behavior per package/class hierarchy. For example, to switch on debug level logging for classes in the `org.scijava.plugin` package and subpackages only:
 
-    System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
+```java
+System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
+```
 
 If you prefer environment variables, setting the `DEBUG` environment variable will cause SciJava logging to default to **`DEBUG`** level instead of the usual **`WARN`**.
 
 ## Using the LogService from your code
 
 The `LogService` is accessible from a SciJava plugin in the same way as any other [service](/libs/scijava#scijava-common#services): as a field annotated with `@Parameter`. See the [Writing plugins](/develop/plugins) guide for details.
-
-

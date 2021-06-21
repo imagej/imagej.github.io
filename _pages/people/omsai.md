@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Omsai
 title: Pariksheet Nanda
 
 name: Pariksheet Nanda

@@ -8,7 +8,7 @@ categories: [Uncategorized]
 {% capture source%}
 {% include github org='Borda' repo='ij-CMP-BIA' label='GitHub.com' %}
 {% endcapture %}
-{% include info-box name='CMP-BIA tools' software='ImagejJ/Fiji' author='Jiří Borovec ( [web](http://cmp.felk.cvut.cz/~borovji3/) )' maintainer='Jiří Borovec ([email](mailto:jiri.borovec(at)fel.cvut.cz))' filename=' [CMP\_BIA-0.2.jar](http://sites.imagej.net/CMP-BIA/plugins/)' source=source released='2013' version='0.2' latest-version='December 20<sup>th</sup>, 2013' license='GPLv2' category='[Segmentation](/plugin-index#segmentation)' %}
+{% include info-box name='CMP-BIA tools' software='ImagejJ/Fiji' author='Jiří Borovec ( [web](http://cmp.felk.cvut.cz/~borovji3/) )' maintainer='Jiří Borovec ([email](mailto:jiri.borovec(at)fel.cvut.cz))' filename=' [CMP\_BIA-0.2.jar](http://sites.imagej.net/CMP-BIA/plugins/)' source=source released='2013' version='0.2' latest-version='December 20<sup>th</sup>, 2013' license='GPLv2' category='Segmentation' %}
 
 # About
 
@@ -50,7 +50,7 @@ For the configuration there are only two parameters to be set:
 To show of handle segmentation results we presented a few approaches:
 
 -   *Overlap contours* - simply draw the contours on resulting superpixels into the image by chosen colour.
--   *Export segments as ROIs* - all superpixels are exported as polygons into the [ROI Manager](/ij/plugins/roi-manager-tools/index.html).
+-   *Export segments as ROIs* - all superpixels are exported as polygons into the [ROI Manager](https://imagej.nih.gov/ij/plugins/roi-manager-tools/index.html).
 -   *Show final segmentation* - add one more layer and fill each superpixel by a random colour.
 -   *Save segmentation into file* - export the superpixel segmentation into a text file as segmentation matrix with labels. The first line mark the image dimensions (*Dims: {width} {height}*) and then follow the labeling where each number represents the superpixel index. (Note, number of lines is equal to *{image width}* and there is *{image height}* number of indexes which are splitted by blanc space.) Have a look at sample file ![ jSLIC-AuPbSn40](/media/plugins/jslic-aupbsn40.zip).
 

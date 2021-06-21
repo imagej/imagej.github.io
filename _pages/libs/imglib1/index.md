@@ -51,55 +51,59 @@ Let's look at a simple function multiplying every pixel value with a given const
 
 No matter what kind of image (a single image, a stack, a 4D stack, with one color channel or three...), the algorithm is implemented cleanly and clearly:
 
-    public <T extends NumericType<T>> void mul( Image<T> input, T factor )
-    {
-            for ( final T value : input )
-              value.mul( factor );
-    }
+```cpp
+public <T extends NumericType<T>> void mul( Image<T> input, T factor )
+{
+        for ( final T value : input )
+          value.mul( factor );
+}
 
+```
 ### Using ImageJ
 
 In plain ImageJ, the same function looks like the following. Notice how we have to litter the code with special cases, and we have to know before hand the number of channels, slices, and pixels per slice. We even need a helper function to simplify operations a bit!
 
-     final static public void multiply( final ImagePlus input, final double factor )
-     {
-             final int nPixels = input.getWidth() * input.getHeight();
-             
-             // iterate through all channels, frames and timepoints (might be just one)
-             for ( int c = 1; c <= input.getNChannels(); ++c )
-                     for ( int z = 1; z <= input.getNSlices(); ++z )
-                             for ( int t = 1; t <= input.getNFrames(); ++t )
-                             {
-                                     input.setPosition( c, z, t );
-                                     final ImageProcessor ip = input.getChannelProcessor();
-                                     
-                                     // RGB images are special
-                                     if ( input.getType() == ImagePlus.COLOR_RGB )
-                                     {
-                                             for ( int i = 0; i < nPixels; ++i )
-                                             {
-                                                     final int rgb = ip.get( i );
-                                                     final int r = doubleTo8Bit( Math.round( ( (
-                                                             rgb >> 16 ) & 0xff ) * factor ) );
-                                                     final int g = doubleTo8Bit( Math.round( ( (
-                                                             rgb >> 8 ) & 0xff ) * factor ) );
-                                                     final int b = doubleTo8Bit( Math.round( (
-                                                             rgb & 0xff ) * factor ) );
-                                                     ip.set( i, ( r << 16 ) | ( g << 8 ) | b );
-                                             }
-                                     }
-                                     else
-                                     {
-                                             for ( int i = 0; i < nPixels; ++i )
-                                             {
-                                                     ip.setf( i, ip.getf( i ) * ( float )factor );
-                                             }
-                                     }
-                             }
-     }
-     
-     final static int doubleTo8Bit( final double value ) {
-             return Math.max( 0, Math.min( 255, (int) value ) );
-     }
+```java
+ final static public void multiply( final ImagePlus input, final double factor )
+ {
+         final int nPixels = input.getWidth() * input.getHeight();
+         
+         // iterate through all channels, frames and timepoints (might be just one)
+         for ( int c = 1; c <= input.getNChannels(); ++c )
+                 for ( int z = 1; z <= input.getNSlices(); ++z )
+                         for ( int t = 1; t <= input.getNFrames(); ++t )
+                         {
+                                 input.setPosition( c, z, t );
+                                 final ImageProcessor ip = input.getChannelProcessor();
+                                 
+                                 // RGB images are special
+                                 if ( input.getType() == ImagePlus.COLOR_RGB )
+                                 {
+                                         for ( int i = 0; i < nPixels; ++i )
+                                         {
+                                                 final int rgb = ip.get( i );
+                                                 final int r = doubleTo8Bit( Math.round( ( (
+                                                         rgb >> 16 ) & 0xff ) * factor ) );
+                                                 final int g = doubleTo8Bit( Math.round( ( (
+                                                         rgb >> 8 ) & 0xff ) * factor ) );
+                                                 final int b = doubleTo8Bit( Math.round( (
+                                                         rgb & 0xff ) * factor ) );
+                                                 ip.set( i, ( r << 16 ) | ( g << 8 ) | b );
+                                         }
+                                 }
+                                 else
+                                 {
+                                         for ( int i = 0; i < nPixels; ++i )
+                                         {
+                                                 ip.setf( i, ip.getf( i ) * ( float )factor );
+                                         }
+                                 }
+                         }
+ }
+ 
+ final static int doubleTo8Bit( final double value ) {
+         return Math.max( 0, Math.min( 255, (int) value ) );
+ }
+```
 
-The performance is better in the *ImgLib* version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation *mul()*, and since the implementation is labeled using the Java keyword *final*, it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any ComplexType (even for example real numbers) that are available or will be implemented in the future.
+The performance is better in the *ImgLib* version, as there is no need for two type conversions in every iteration: the Type instance implements the native operation `mul()`, and since the implementation is labeled using the Java keyword *final*, it will be inlined and optimized pretty quickly by Java's Just-In-Time compiler. Furthermore it will work on any ComplexType (even for example real numbers) that are available or will be implemented in the future.

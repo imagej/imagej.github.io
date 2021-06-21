@@ -2,6 +2,7 @@
 mediawiki: Classic_Watershed
 title: Classic Watershed
 categories: [Segmentation, Mathematical Morphology]
+extensions: ["mathjax"]
 ---
 
 
@@ -16,7 +17,7 @@ categories: [Segmentation, Mathematical Morphology]
 {% capture source%}
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](/plugin-index#segmentation), [Mathematical morphology](/plugin-index#mathematical-morphology)' %}{\| \|<span>  
+{% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Segmentation, Mathematical Morphology' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/plugins/classic-watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
 
 ## Introduction
@@ -60,23 +61,25 @@ Normally, Classic Watershed will lead to an over-segmentation of the input image
 
 This short macro runs the plugin twice in the blobs sample, first without pre-processing and then after applying a Gaussian blur of radius 3:
 
-    // load the Blobs sample image
-    run("Blobs (25K)");
-    // invert LUT and pixel values to have dark blobs
-    run("Invert LUT");
-    run("Invert");
-    // run plugin on image
-    run("Classic Watershed", "input=blobs mask=None use min=0 max=150");
-    // apply LUT to facilitate result visualization
-    run("3-3-2 RGB");
-    // pre-process image with Gaussian blur
-    selectWindow("blobs.gif");
-    run("Gaussian Blur...", "sigma=3");
-    rename("blobs-blur.gif");
-    // apply plugin on pre-processed image
-    run("Classic Watershed", "input=blobs-blur mask=None use min=0 max=150");
-    // apply LUT to facilitate result visualization
-    run("3-3-2 RGB");
+```java
+// load the Blobs sample image
+run("Blobs (25K)");
+// invert LUT and pixel values to have dark blobs
+run("Invert LUT");
+run("Invert");
+// run plugin on image
+run("Classic Watershed", "input=blobs mask=None use min=0 max=150");
+// apply LUT to facilitate result visualization
+run("3-3-2 RGB");
+// pre-process image with Gaussian blur
+selectWindow("blobs.gif");
+run("Gaussian Blur...", "sigma=3");
+rename("blobs-blur.gif");
+// apply plugin on pre-processed image
+run("Classic Watershed", "input=blobs-blur mask=None use min=0 max=150");
+// apply LUT to facilitate result visualization
+run("3-3-2 RGB");
+```
 
 Image:Blobs-blur.png\|Gaussian-blurred blobs image used as input (radius = 3). Image:Blobs-watershed-no-preprocessing.png\|Watershed segmentation on original image (Min h = 0, Max h = 150) Image:Blobs-blur-watershed.png\|Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150)
 

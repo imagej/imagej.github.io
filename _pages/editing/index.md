@@ -1,5 +1,4 @@
 ---
-mediawiki: Help:Contents
 title: Editing the Wiki
 section: Contribute:Editing the Wiki
 nav-links: true
@@ -47,8 +46,11 @@ correctly. The following table lists front matter fields you can use:
 |       **title** | The title of your page. (**Required**) |
 | **description** | A short description of your page. Also used for the site's search engine. When omitted, the first sentence of the page content is used. |
 |     **section** | Main menu section that should be open when this page first loads, if any. Nested sections to expand should be separated by colons (`:`). For example, this page's section is `Contribute:Editing the Wiki`. |
-|  **categories** | Comma-separated list of categories to which the page belongs, enclosed in square brackets (`[` and `]`). Pages in the `/plugins/` directory are browsable by category in the [Plugin index](/plugin-index). For example, `[Filtering, Help]` would put your page in the [filtering](/plugin-index#filtering) and [help](/plugin-index#help) sections. |
-|       **statbox** | The "Vital statistics" sidebar supports quite a few fields; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox#L30-L72) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page. |
+|  **categories** | For pages describing extensions (e.g. a plugin, script, or update site) of ImageJ: a comma-separated list of categories, enclosed in square brackets (`[` and `]`). Pages with categories appear in the [List of extensions](/list-of-extensions). For example, `[Segmentation, Registration]` would put your page in the Segmentation and Registration categories. |
+| **statbox\*** | A collection of individual fields that are used to populate the "Vital statistics" sidebar; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox#L30-L85) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page.<br> (***\***note there is no field called "statbox"*) |
+|        **icon** | A link (internal or external) to an icon that will be used for the page across the wiki, e.g. in the [list of extensions](/list-of-extensions) or search bar results. |
+|     **project** | Used to identify project affiliation. See the list of {% include github org='imagej' repo='imagej.github.io' branch='master' path='_config.yml#L15-L33' label='available projects' %} |
+|   **nav-links** | Adds a top navigation bar for related pages. See the [Navigation](/editing/navigation#nav-links) guide for examples. |
 
 Below is a minimal example front matter block. You can copy and paste this code into the editor of a new page (see above).
 
@@ -99,10 +101,12 @@ Note that the last example includes inline styling, which is kramdown-specific.
 
 Certain kinds of structures have dedicated pages of this guide:
 
+* [Images](images) (using [Liquid](#liquid), not Markdown,
+  for more complex image needs such as galleries, figures, etc...)
 * [Tables](tables)
 * [Math expressions](math)
 * [Source code and syntax highlighting](code)
-* [Images](images) ([Liquid](#liquid), not markdown, facilitating complex image needs such as galleries, figures, etc...)
+* [Footnotes](citations#footnotes)
 
 ## Liquid
 
@@ -115,20 +119,21 @@ which enable insertion of images, figures, notices, and more.
 (Think of this as: "I would like to *include* an image".)
 Here are a couple of examples:
 
-<table><tbody>
-<tr>
-  <th>Markup</th>
-  <th>Result</th>
-</tr>
-<tr>
-  <td><code>{% raw %}{% include icon name="imagej" %}{% endraw %}</code></td>
-  <td>{% include icon name="imagej" %}</td>
-</tr>
-<tr>
-  <td><code>{% raw %}{% include person id="rasband" %}{% endraw %}</code></td>
-  <td>{% include person id="rasband" %}</td>
-</tr>
-</tbody></table>
+<style>
+.skinny {
+  margin-left: 0;
+  max-width: 30em;
+}
+.skinny td:first-child {
+  width: 8em;
+}
+</style>
+
+| Markup | Result |
+|--------|--------|
+| `{% raw %}{% include icon name="imagej" %}{% endraw %}`  | {% include icon name="imagej" %} |
+| `{% raw %}{% include person id="rasband" %}{% endraw %}` | {% include person id="rasband" %} |
+{:style="margin-left: 0; max-width: 30em"}
 
 ### Available includes
 
@@ -138,8 +143,9 @@ The following tables list all of this site's general-purpose includes:
 
 | Include                                      | Purpose                 |
 |----------------------------------------------|-------------------------|
-| [citation](citations#include-citations)      | Insert a citation       |
-| [testimonial](citations#include-testimonial) | Insert a personal quote |
+| [citation](citations#citing-publications)    | Insert a citation       |
+| [testimonial](citations#testimonials)        | Insert a personal quote |
+{:.skinny}
 
 #### Linking
 
@@ -154,6 +160,7 @@ The following tables list all of this site's general-purpose includes:
 | [person-list](people#lists)       | Link to a list of user pages         |
 | [scholar](linking#scholar)        | Link to an article on Google Scholar |
 | [wikipedia](linking#wikipedia)    | Link to a Wikipedia page             |
+{:.skinny}
 
 #### Symbols
 
@@ -163,6 +170,7 @@ The following tables list all of this site's general-purpose includes:
 | [button](buttons)                 | Insert a button            |
 | [key](keys)                       | Insert a keyboard shortcut |
 | [icon](icons)                     | Insert an icon             |
+{:.skinny}
 
 #### Media
 
@@ -171,6 +179,7 @@ The following tables list all of this site's general-purpose includes:
 | [img](images#images)              | Insert an image            |
 | [gallery](images#image-galleries) | Insert an image gallery    |
 | [video](videos)                   | Embed a video              |
+{:.skinny}
 
 #### Notices
 
@@ -178,12 +187,14 @@ The following tables list all of this site's general-purpose includes:
 |-----------------------------|---------------------------------------|
 | [notice](notices)           | Insert an informational notice banner |
 | [aside](notices#asides)     | Float a right sidebar with commentary |
+{:.skinny}
 
 #### Source code
 
 | Include      | Purpose                          |
 |--------------|----------------------------------|
 | [code](code) | Embed a code snippet from GitHub |
+{:.skinny}
 
 #### Miscellaneous
 
@@ -193,6 +204,7 @@ The following tables list all of this site's general-purpose includes:
 | [timeline](timelines)                | Insert a horizontal timeline         |
 | [tooltip](tooltips)                  | Add a tooltip appearing on mouseover |
 | [echo](debugging)                    | For debugging                        |
+{:.skinny}
 
 #### MARKED FOR REMOVAL
 
@@ -202,3 +214,4 @@ The following tables list all of this site's general-purpose includes:
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
 | clear                                        | Delete after purging all floats    |
 | project                                      | Delete after improving statbox     |
+{:.skinny}

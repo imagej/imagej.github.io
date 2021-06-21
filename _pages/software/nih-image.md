@@ -1,5 +1,4 @@
 ---
-mediawiki: NIH_Image
 title: NIH Image
 section: Explore:Software
 doi: 10.1038/nmeth.2089

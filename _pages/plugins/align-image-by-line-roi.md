@@ -10,7 +10,7 @@ categories: [Tutorials,Registration]
 {% endcapture %}
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='Align\_Image.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='Align_Image.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Align Image by line ROI' maintainer=maintainer author='Johannes Schindelin' source=source released='28/09/2006' latest-version='28/09/2006' status='stable, handles only gray images' category='Registration' %}
 

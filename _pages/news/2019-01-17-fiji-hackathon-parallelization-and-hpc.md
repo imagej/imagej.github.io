@@ -1,5 +1,4 @@
 ---
-mediawiki: 2019-01-17_-_Fiji_Hackathon_-_Parallelization_and_HPC
 title: 2019-01-17 - Fiji Hackathon - Parallelization and HPC
 ---
 

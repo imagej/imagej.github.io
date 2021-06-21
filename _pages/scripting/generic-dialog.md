@@ -4,7 +4,7 @@ title: Generic dialog
 
 ## Introduction
 
-The {% include javadoc project='ImageJ1' package='ij/gui' class='GenericDialog' %} class is part of [ImageJ1](/software/imagej1) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [script parameters](/scripting/parameters) option but offers more possibilities.  
+The {% include javadoc project='ImageJ1' package='ij/gui' class='GenericDialog' %} class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [script parameters](/scripting/parameters) option but offers more possibilities.  
 Fiji offers an additional {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} subclass which include additional GUI item like a file input with a browse button.  
 Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
 
@@ -73,7 +73,7 @@ Dialog.addChoice("Type:", newArray("8-bit", "16-bit", "32-bit", "RGB"));
 Dialog.addCheckbox("Ramp", true);
 
 // One can add a Help button that opens a webpage
-Dialog.addHelp("https://imagej.net/ij/macros/DialogDemo.txt");
+Dialog.addHelp("https://imagej.nih.gov/ij/macros/DialogDemo.txt");
 
 // Finally show the GUI, once all parameters have been added
 Dialog.show();
@@ -93,7 +93,7 @@ print("Choice:", inChoice);
 print("Do something (1=True, 0=False):", inBoolean);
 ```
 
-See the section "/scripting/generic-dialog" of the [Macro functions reference](/ij/developer/macro/functions.html) for more details.
+See the section "/scripting/generic-dialog" of the [Macro functions reference](https://imagej.nih.gov/ij/developer/macro/functions.html) for more details.
 
 ## Image and file inputs
 
@@ -142,9 +142,9 @@ For instance the previous code saved as `GUI_.py` in `Fiji.app/scripts/Plugins/T
 ## Recalling previous entries using the PrefService
 
 It is convenient to have the previously entered parameters recalled at the next run of a given plugin. This is happening automatically for Script parameters (unless specified differently) but not for the GenericDialog class.  
-Fortunately, it is still possible to make it works using the PrefService.
+Fortunately, it is still possible to make it work using the PrefService.
 
-Services are some ImageJ2/SciJava features that can be though of as some kind of package import at runtime. They are not available in a plain ImageJ1, thus an alternative to recall parameter in ImageJ1 is to use a temp file to store the previously entered parameters.  
+Services are some ImageJ2/SciJava features that can be thought of as some kind of package import at runtime. They are not available in the original ImageJ, thus an alternative to recall parameters in ImageJ is to use a temp file to store the previously entered parameters.  
 Here's the link to the {% include javadoc project='SciJava' package='org/scijava/prefs' class='PrefService' %}.  
 And below is a Jython example of how to use it.
 ```python

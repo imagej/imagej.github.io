@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-05-03_-_SPIMage_processing_recipes_for_a_cluster
 title: 2013-05-03 - SPIMage processing recipes for a cluster
 ---
 

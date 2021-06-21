@@ -35,18 +35,18 @@ The *Use standard axes* / *Use semi-log axes* / *Use log-log axes* controls whet
 
 You can export profiles by clicking on "Save Profile" which will prompt for a CSV filename to save to. If you want to export the profile, so that you can edit in some other software or include it in a presentation, you can select *Export graph as SVG* in the graph window. You can then load the SVG file (e.g., in Inkscape):
 
-<div style="width:800px">
-
-<img src="/media/plugins/simple-neurite-tracer/sholl-analysis-10.jpg" title="fig:Simple_Neurite_Tracer-_Sholl_analysis-10.jpg" width="350" alt="Simple_Neurite_Tracer-_Sholl_analysis-10.jpg" /><img src="/media/plugins/simple-neurite-tracer/sholl-analysis-11.jpg" title="fig:Simple_Neurite_Tracer-_Sholl_analysis-11.jpg" width="350" alt="Simple_Neurite_Tracer-_Sholl_analysis-11.jpg" />
-
-</div>
-
-{% include clear%}
-
+<center>
+{% include img src="sholl-analysis-10" width="350" %} {% include img src="sholl-analysis-11" width="350" %}
+</center>
 
 # Analyzing Profiles
 
-Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](/plugins/sholl-analysis#parameters) have been specified, the plugin will [automatically calculate](/plugins/sholl-analysis#dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](/plugins/sholl-analysis#metrics). {% include notice icon="tip" content='You can perform batch analysis using [\_\_\_SHADOW1\_\_\_](/plugins/sholl-analysis#analysis-of-existing-profiles) or [\_\_\_SHADOW2\_\_\_](/plugins/sholl-analysis#analysis-of-traced-cells)' %}
+Press *Analyze Profile* to run the [Sholl Analysis](/plugins/sholl-analysis) plugin. Once [Parameters](/plugins/sholl-analysis#parameters) have been specified, the plugin will [automatically calculate](/plugins/sholl-analysis#dratio) the normalization method thought to be the most informative. Metrics will be displayed in a [detailed table](/plugins/sholl-analysis#metrics).
+
+{% capture analyzing-profiles-tip %}
+You can perform batch analysis using [{% include bc path="Analysis | Sholl | Sholl Analysis (Existing Profiles)..." %}](/plugins/sholl-analysis#analysis-of-existing-profiles) or [{% include bc path="Analysis | Sholl | Sholl Analysis (Tracings)..." %}](/plugins/sholl-analysis#analysis-of-traced-cells)
+{% endcapture %}
+{% include notice icon="tip" content=analyzing-profiles-tip %}
 
 # Sholl Image
 

@@ -1,14 +1,15 @@
 ---
 mediawiki: ImageJ_Ops
 title: ImageJ Ops
-section: Extend:Development:Guides
+section: Explore:Libraries
 artifact: net.imagej:imagej-ops
+icon: /media/icons/imagej2.png
 ref: Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. &amp; Eliceiri, K. (2021). ImageJ Ops [Software]. https://imagej.net/Ops.
 ---
 
 ImageJ Ops is a framework for reusable image processing operations. Ops extends Java's mantra of "write once, run anywhere" to image processing algorithms.
 
-The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](/libs/scijava)-compatible software project, such as [ImageJ](/software/imagej), [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).  
+The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [SciJava](/libs/scijava)-compatible software project, such as [ImageJ2](/software/imagej2), [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).  
 
 ## Design goals
 
@@ -16,7 +17,7 @@ Ops has three major design goals:
 
 1.  **Easy to use and extend.** There must be a wealth of easy-to-use image processing operations ("ops"), as well as an easy framework for extending those ops in new directions.
 2.  **Powerful and general.** An op should be able to consist of any number of typed input and output parameters, operating on arbitrary data structures, including images of N dimensions stored in a myriad of different ways: as files on disk, programmatically generated in memory, or in remote databases. Using the powerful [ImgLib2](/libs/imglib2) library achieves this ambitious goal.
-3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ 1.x's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ 1.x. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
+3.  **Very fast.** Even though ImgLib2 is vastly more general than ImageJ's data model, that generality should not come at the expense of performance. Otherwise, users must pay a time tax to do the same things they could already do in ImageJ. The ImageJ Ops framework needs to provide a means to override *any* general-but-slow op with a faster-but-more-specific alternative, fully transparently to the user.
 
 ## Getting started
 
@@ -60,9 +61,11 @@ For the core Ops available, you can go to the {% include javadoc package='?net/i
 
 You can also use the [Script Editor](/scripting/script-editor) in ImageJ and actively search using Ops itself. For example in groovy language:
 
-    // @OpService ops
-    print ops.help()
+{% highlight groovy %}
+// @OpService ops
+print ops.help()
 
+{% endhighlight %}
 in groovy will give a list of every Op signature. The `help` op can also provide information about ops or namespaces; e.g., `ops.help("add")` will return info about available `add` ops.
 
 ### Are there any Ops for image processing?

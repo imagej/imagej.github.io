@@ -1,8 +1,6 @@
 ---
-mediawiki: Metadata
 title: Metadata
 section: Learn:ImageJ Basics:File Formats
-nav-links: true
 ---
 
 # What is metadata?

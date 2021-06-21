@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Sinverso
 title: Samuel Inverso
 
 name: Samuel Inverso

@@ -1,22 +1,21 @@
 ---
-mediawiki: ImageJ1-ImageJ2_cheat_sheet
-title: ImageJ1-ImageJ2 cheat sheet
+title: ImageJ-ImageJ2 cheat sheet
 ---
 
-This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API. Based on the work of {% include person id='haesleinhuepf' %}, Scientific Computing Facility, MPI-CBG Dresden.
+This page summarizes translation of basic operations of [ImageJ 1.x](/software/imagej) and [ImageJ2](/software/imagej2) API. Based on the work of {% include person id='haesleinhuepf' %}, Scientific Computing Facility, MPI-CBG Dresden.
 
 {::nomarkdown}
 <table>
   <thead>
     <tr class="header">
-      <th style="text-align:left;">
-        <p>Task</p>
+      <th style="text-align:left; min-width: 10em;">
+        <p><strong>Task</strong></p>
       </th>
       <th>
-        <p>ImageJ1</p>
+        <p><strong>ImageJ</strong></p>
       </th>
       <th>
-        <p>ImageJ2</p>
+        <p><strong>ImageJ2</strong></p>
       </th>
     </tr>
   </thead>
@@ -132,13 +131,13 @@ ij.scifio().datasetIO().save(dataset, "/path/to/image.tif");
         <p>Convert image types</p>
       </td>
       <td>
-        <p>Convert from ImageJ2 Img object to ImageJ1 <code>ImagePlus</code> object:</p>
+        <p>Convert from ImgLib2 <code>Img</code> object to ImageJ <code>ImagePlus</code> object:</p>
 {%- highlight java -%}
 ImagePlus imp = ImageJFunctions.wrap(img,"Title");
 {%- endhighlight -%}
       </td>
       <td>
-        <p>Convert from ImageJ1 <code>ImagePlus</code> object to ImgLib2 <code>Img</code> object:</p>
+        <p>Convert from ImageJ <code>ImagePlus</code> object to ImgLib2 <code>Img</code> object:</p>
 {%- highlight java -%}
 Img img = ij.convert().convert(imp, Img.class);
 Img<T> realImg = ImageJFunctions.wrapReal(imp);

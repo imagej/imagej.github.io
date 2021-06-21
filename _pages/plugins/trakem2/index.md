@@ -38,8 +38,10 @@ TrakEM2 interacts with the [3D Viewer](/plugins/3d-viewer) for visualization of 
 
 The following configuration has been tested in a machine with 8 CPU cores and 16 Gb of RAM, running Ubuntu 8.04 "Hardy", with a 1.6.0\_16 or newer JVM:
 
-`./ImageJ-linux64 -Xms10g -Xmx10g -Xincgc -XX:MaxPermSize=256m -XX:PermSize=256m`  
-`-XX:NewRatio=5 -XX:CMSTriggerRatio=50 -XX:+UseCompressedOops --`
+```shell
+./ImageJ-linux64 -Xms10g -Xmx10g -Xincgc -XX:MaxPermSize=256m -XX:PermSize=256m \
+                 -XX:NewRatio=5 -XX:CMSTriggerRatio=50 -XX:+UseCompressedOops --
+```
 
 Put all the above in one line.
 
@@ -85,9 +87,11 @@ A. Use the built-in commands from the right-click menu, such as:
 
 B. Create a preprocessor script and set it to all images. For example, a [beanshell](/scripting/beanshell) script to run [CLAHE](/plugins/clahe) on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [Patch](https://fiji.sc/javadoc/ini/trakem2/display/Patch.html) instance and the [ImagePlus](https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html) instance that the Patch wraps, respectively.
 
-    import ij.IJ;
-    IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
-       + " histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
+``` java
+import ij.IJ;
+IJ.run(imp, "Enhance Local Contrast (CLAHE)", "blocksize=127"
+   + " histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
+```
 
 To set the script to all images, save the above to a file named "whatever.bsh" (notice the filename extension ".bsh") and then right-click on the TrakEM2 canvas and choose "Script - Set preprocessor script layer-wise", and choose the whole range of layers. This will set the script to every image of every layer, and trigger mipmap regeneration for every image. When TrakEM2 loads the image, the script will run on the image before TrakEM2 ever sees its contents.
 
@@ -162,5 +166,3 @@ As for a graphics card buy the largest you can afford, both in computing power a
 ## Publication
 
 {% include citation %}
-
-      

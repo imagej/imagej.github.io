@@ -17,9 +17,7 @@ doi: 10.1038/s41592-019-0359-1
 {% capture source%}
 {% include github org='bene51' repo='3Dscript' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='[Visualization](/plugin-index#visualization), [Plugins](/plugin-index)' %}
-
-<img src="/media/logos/3dscript.png" width="160"/> **3Dscript** - Create high-quality 3D/4D animations using a natural-language based syntax
+{% include info-box software='Create high-quality 3D/4D animations using a natural-language based syntax' logo='<img src="/media/logos/3dscript.png" width="160">' name='3Dscript' maintainer=maintainer author=author source=source status='active' released='January 2019' category='Visualization, Plugins' %}
 
 In state-of-the-art 3D rendering and animation software the user typically creates an animation by specifying a number of keyframes. While intuitive, this approach becomes tedious for complex motions like simultaneous rotations around multiple axes, and even worse for accelerated and decelerated motions: The number of required keyframes increases, and creating them becomes hardly reproducible.
 

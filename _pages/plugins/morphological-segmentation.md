@@ -16,7 +16,7 @@ categories: [Segmentation, Mathematical Morphology]
 {% capture source%}
 {% include github org='ijpb' repo='MorphoLibJ' %}
 {% endcapture %}
-{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='[Segmentation](/plugin-index#segmentation), [Mathematical morphology](/plugin-index#mathematical-morphology)' %}{\| \|<span>  
+{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Segmentation, Mathematical Morphology' %}{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/plugins/morphological-segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
 ## Introduction
@@ -99,7 +99,7 @@ This video tutorial (with audio as well) shows how to use the plugin segment a 3
 
 ## Macro language compatibility
 
-Morphological Segmentation is completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
+Morphological Segmentation is completely compatible with the popular [ImageJ macro language](https://imagej.nih.gov/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
 The complete list of commands is as follows:
 

@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 
 {% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='util/Find\_Connected\_Regions.java' %}
+{% include github org='fiji' repo='VIB' branch='master' source='util/Find_Connected_Regions.java' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='Find Connected Regions' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 

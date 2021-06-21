@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-06-25_-_Developing_plugins_with_NetBeans
 title: 2013-06-25 - Developing plugins with NetBeans
 ---
 

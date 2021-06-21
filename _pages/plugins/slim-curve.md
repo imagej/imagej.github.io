@@ -15,7 +15,7 @@ categories: [Uncategorized]
 {% include github org='slim-curve' repo='slim-plugin' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='SLIM Curve plugin' logo='<img src="/media/icons/slim-curve.png" width="64"/>' author=' [CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](/plugins/flimj)' website='https://slim-curve.github.io/' category='[Analysis](/plugin-index#analysis)' %}
+[UW-Madison LOCI](http://loci.wisc.edu/)' maintainer=maintainer filename='slim\_plugin-2.0.0-SNAPSHOT.jar' source=source latest-version='2.0.0-SNAPSHOT' status='discontinued in favor of [FLIMJ](/plugins/flimj)' website='https://slim-curve.github.io/' category='Analysis' %}
 
 ## Introduction
 
@@ -28,7 +28,7 @@ There are two algorithms used for curve fitting within SLIM Curve:
 1.  The first is a triple integral method that does a very fast estimate of a single exponential lifetime component.
 2.  The second is a Levenberg-Marquardt algorithm or LMA that uses an iterative, least-squares-minimization approach to generate a fit. This works with single, double and triple exponential models, as well as stretched exponential.
 
-The SLIM Curve library code is written in C89 compatible C and is thread-safe for fitting multiple pixels concurrently. Several files are provided as wrappers to call the library from Java code: *EcfWrapper.c* and *.h* provide a subset of function calls used by the SLIM Curve plugin for ImageJ, these may be invoked directly from Java using JNA. In addition there is a Java CurveFitter project that provides a wrapper to the SLIM Curve code. This invokes the C code using JNI, with loci\_curvefitter\_*SLIMCurveFitter.c* and *.h*.
+The SLIM Curve library code is written in C89 compatible C and is thread-safe for fitting multiple pixels concurrently. Several files are provided as wrappers to call the library from Java code: `EcfWrapper.c` and `.h` provide a subset of function calls used by the SLIM Curve plugin for ImageJ, these may be invoked directly from Java using JNA. In addition there is a Java CurveFitter project that provides a wrapper to the SLIM Curve code. This invokes the C code using JNI, with `loci_curvefitter_SLIMCurveFitter.c` and `.h`.
 
 ## Installation
 
@@ -132,7 +132,7 @@ For images that have more than one channel, there will also be a checkbox to *Di
 
 ### Macro language support
 
-All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](/ij/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. {% include thumbnail src='/media/plugins/screenshot-slim-final.png' title='Example of macro recording SLIM Curve'%}
+All the operations in SLIM Plugin operation are completely compatible with the popular [ImageJ macro language](https://imagej.nih.gov/ij/developer/macro/macros.html). Each of the button, selection, choice of algorithm, binning, noise model, default excitation selection with custom start-end time is completely macro record-able. Below is a typical macro recording for a typical usage where the user sets the algorithm, noise model, changes transient time, loads default excitation, sets the chi2 target, fixes A value for fitting and then starts fitting. {% include thumbnail src='/media/plugins/screenshot-slim-final.png' title='Example of macro recording SLIM Curve'%}
 
 The list of command are as follows
 

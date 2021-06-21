@@ -1,10 +1,9 @@
 ---
 mediawiki: 3D_Viewer:_Display_a_Stack
 title: 3D Viewer › Display a Stack
+nav-links: true
+nav-title: Display Stack
 ---
-
-(Return to the [Developer Documentation](/plugins/3d-viewer/developer-documentation) page)  
-(Return to the main [3D\_Viewer](/plugins/3d-viewer) page)
 
 ## How to create a universe and display an image stack as volume rendering, orthoslices, isosurface or surface plot
 
@@ -14,54 +13,68 @@ Creating a virtual universe and displaying an image stack in it is only a matter
 
 The first thing to do is to open an image stack:
 
-          // Open an image
-          String path = "/home/bene/PhD/brains/template.tif";
-          ImagePlus imp = IJ.openImage(path);
-          new StackConverter(imp).convertToGray8();
+```java
+// Open an image
+String path = "/home/bene/PhD/brains/template.tif";
+ImagePlus imp = IJ.openImage(path);
+new StackConverter(imp).convertToGray8();
+```
 
 Then a virtual universe is created and displayed in a window:
 
-          // Create a universe and show it
-          Image3DUniverse univ = new Image3DUniverse();
-          univ.show();
+```java
+// Create a universe and show it
+Image3DUniverse univ = new Image3DUniverse();
+univ.show();
+```
 
 A 3D object (=Content) is created and added to the universe by the following line of code:
 
-          // Add the image as a volume rendering
-          Content c = univ.addVoltex(imp);
+```java
+// Add the image as a volume rendering
+Content c = univ.addVoltex(imp);
+```
 
 In this case, the stack is displayed as a volume rendering. Volume renderings are created here by putting 2D slices of the stack one behind another. Different planes are thereby separated according to the pixel dimensions of the image. To each voxel, a transparency value is assigned, depending on its intensity. Black voxels are thereby fully transparent, whereas white ones are fully opaque.
 
 There exist 4 types of Contents: Volume Renderings, Orthoslices, Isosurfaces and Surface Plots. Contents which were created from an ImagePlus can be transferred from one display type into another:
 
-          // Display the image as orthslices
-          c.displayAs(Content.ORTHO);
+```java
+// Display the image as orthslices
+c.displayAs(Content.ORTHO);
+```
 
 Orthoslices are three orthogonal slices through the volume.
 
 Contents can be removed from the universe, identified by their name:
 
-          // Remove the Content
-          univ.removeContent(c.getName());
+```java
+// Remove the Content
+univ.removeContent(c.getName());
+```
 
 Here we add the stack as an isosurface:
 
-          // Add an isosurface
-          c = univ.addMesh(imp);
-
+```java
+// Add an isosurface
+c = univ.addMesh(imp);
+```
 Isosurfaces are surfaces which are generated here by applying the marching cubes algorithm. This algorithm assumes that there is one intensity value in the stack which separates a 3D object from its background. Therefore, the generated surface has theoretically everywhere the same (iso-)value. This value, also called the threshold of the surface, is adjustable, as will be seen later.
 
 Finally, a Content can be displayed as a surface plot. A surface plot is a 3D representation of a 2D slide, where the 3rd dimension is formed by the image intensity;
 
-          c = univ.addSurfacePlot(imp);
-
+```java
+c = univ.addSurfacePlot(imp);
+```
 It is possible to remove all the contents of the universe together and to close the universe:
 
-          // remove all contents
-          univ.removeAllContents();
+```java
+// remove all contents
+univ.removeAllContents();
 
-          // close
-          univ.close();
+// close
+univ.close();
+```
 
 ### Important methods of the universe class for handling Contents
 
@@ -80,37 +93,39 @@ In the short form, the missing parameters are set to their default values, which
 -   **threshold:** defined by the return value of `Content.getDefaultThreshold()`
 -   **resampling factor:** defined by the return value of `Content.getDefaultResamplingFactor()`
 
-<!-- -->
+```java
+public Content addContent(ImagePlus image, int type);
+public Content addContent(ImagePlus image, Color3f color, String name,
+	int thresh, boolean[] channels, int resf, int type);
 
-          public Content addContent(ImagePlus image, int type);
-          public Content addContent(ImagePlus image, Color3f color, String name,
-                int thresh, boolean[] channels, int resf, int type);
+public Content addVoltex(ImagePlus image);
+public Content addVoltex(ImagePlus image, Color3f color,
+	String name, int thresh, boolean[] channels, int resamplingF);
 
-          public Content addVoltex(ImagePlus image);
-          public Content addVoltex(ImagePlus image, Color3f color,
-                String name, int thresh, boolean[] channels, int resamplingF);
+public Content addOrthoslice(ImagePlus image);
+public Content addOrthoslice(ImagePlus image, Color3f color,
+	String name, int thresh, boolean[] channels, int resamplingF);
 
-          public Content addOrthoslice(ImagePlus image);
-          public Content addOrthoslice(ImagePlus image, Color3f color,
-                String name, int thresh, boolean[] channels, int resamplingF);
+public Content addSurfacePlot(ImagePlus image);
+public Content addSurfacePlot(ImagePlus image, Color3f color,
+	String name, int thresh, boolean[] channels, int resamplingF);
 
-          public Content addSurfacePlot(ImagePlus image);
-          public Content addSurfacePlot(ImagePlus image, Color3f color,
-                String name, int thresh, boolean[] channels, int resamplingF);
+public Content addMesh(ImagePlus img);
+public Content addMesh(ImagePlus image, Color3f color, String name,
+	int threshold, boolean[] channels, int resamplingF);
 
-          public Content addMesh(ImagePlus img);
-          public Content addMesh(ImagePlus image, Color3f color, String name,
-                int threshold, boolean[] channels, int resamplingF);
-
-          public Content addContent(Content c);
+public Content addContent(Content c);
+```
 
 The important methods for **removing Contents** are:
-
-          public void removeAllContents();
-          public void removeContent(String name);
+```java
+public void removeAllContents();
+public void removeContent(String name);
+```
 
 And for **retrieving Contents**, there exist:
-
-          public Iterator contents();
-          public Collection getContents();
-          public Content getContent(String name);
+```java
+public Iterator contents();
+public Collection getContents();
+public Content getContent(String name);
+```

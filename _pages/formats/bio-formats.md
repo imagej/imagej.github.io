@@ -1,5 +1,4 @@
 ---
-title: Bio-Formats
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export,SciJava,OME]
 doi: 10.1083/jcb.201004104

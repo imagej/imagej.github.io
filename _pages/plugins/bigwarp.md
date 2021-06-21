@@ -19,8 +19,7 @@ the warp on-the-fly.
 ## Installation
 
 BigWarp comes with Fiji. You can access it via
-{% include bc path="Plugins | BigDataViewer Big Warp" %}, or by modifying
-{% include github org='saalfeldlab' repo='bigwarp' branch='master' path='scripts/bigwarp_fiji_demo.bsh' label='this example script' %}.
+{% include bc path="Plugins | BigDataViewer Big Warp" %}.
 If this is not visible in your installation, try updating Fiji with
 {% include bc path="Help Update..." %}.
 
@@ -28,7 +27,14 @@ If this is not visible in your installation, try updating Fiji with
 
 Open two images in ImageJ, one *moving* and the other *target* and navigate to
 {% include bc path="Plugins | BigDataViewer | Big Warp" %}. A dialog will
-appear prompting selection of the moving and target images.
+appear prompting selection of the moving and target images. 
+
+Alternatively, save your images with
+[N5](https://github.com/saalfeldlab/n5-ij),
+[Zarr](https://zarr.readthedocs.io/en/stable/), or as a
+[bigdataviewer-xml](/plugins/bdv#exporting-datasets-for-the-bigdataviewer),
+and specify the paths to those images in the BigWarp dialog. See the section on
+[working with large images](#working-with-large-images) below. 
 
 Once the two image windows and one table window open, press
 {% include key key='Spacebar' %} to enter "landmark mode". Next, click on a
@@ -233,7 +239,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
 
 ### Selecting transformation types
 
-Press {% include key key='F8' %} to bring up a transformation type selection window (version 4.0.0 of BigWarp supports multiple options for transformations)
+Press {% include key key='F2' %} to bring up a transformation type selection window (versions 4.0.0 or later support multiple options for transformations)
 
 |                                                |                                                   |
 |------------------------------------------------|---------------------------------------------------|
@@ -317,7 +323,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr>
       <td style="padding: 5px;">
-        <p>{% include key key='F6' %}</p>
+        <p>{% include key key='F3' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Show moving image panel Visibility & and Grouping dialog.</p>
@@ -325,7 +331,7 @@ The following table shows the available navigation commands using the mouse:
     </tr>
     <tr>
       <td style="padding: 5px;">
-        <p>{% include key key='F7' %}</p>
+        <p>{% include key key='F4' %}</p>
       </td>
       <td style="padding: 5px;">
         <p>Show target image panel Visibility & and Grouping dialog.</p>
@@ -518,7 +524,7 @@ dimensions as the target image.
     -   Specified (pixel): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels*
     -   Specified (physical): *The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images*
 
-The warped moving image can be exported as an in-memory or [virtual](/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
+The warped moving image can be exported as an in-memory or [virtual](https://imagej.nih.gov/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 <img src="/media/plugins/bigwarplandmarkcenteredexport.png" width="600"/>
 
@@ -599,19 +605,15 @@ without quotation marks, spaces, or any other characters. Csv files storing bigw
 
 ## Working with large images
 
-The "normal" BigWarp plugin accessible through {% include bc path="Plugins |
-Big Data Viewer | BigWarp" %} works well for small- and medium-sized images but
-not for very large volumes (that do not fit into memory). For very large
-volumes, we recommend first
+For very large images, we recommend first
 [converting the volume to bigdataviewer's xml/hdf5 format](/plugins/bdv#exporting-datasets-for-the-bigdataviewer),
-then using
-[this script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy)
-to run BigWarp using the xml/h5 file(s). See also
-[this forum post.](https://forum.image.sc/t/issue-with-big-warp/31472)
+or to [N5](https://github.com/saalfeldlab/n5) using the [N5 plugin for Fiji](https://github.com/saalfeldlab/n5-ij).
+Bigwarp now supports both bdv/xml and n5 formats (versions 7.0.0 and later).
 
-[This script](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy)
-enables you to run BigWarp using images stored using
-[N5](https://github.com/saalfeldlab/n5).
+Older versions of BigWarp supported these scripts:
+* [Script for bdv/xml](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy)
+ [(see also this forum post)](https://forum.image.sc/t/issue-with-big-warp/31472)
+* [Script for N5](https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy)
 
 # Tutorials
 

@@ -9,7 +9,9 @@ categories: [Uncategorized]
 {% include github org='fpBioimage' repo='FPBioimageHelper-FIJI' %}
 {% endcapture %}
 {% include info-box software='ImageJ' name='FPBioimage Helper Plugin' logo='<img src="/media/logos/fpb.png" width="96"/>' author=' [FPBioimage](http://fpb.ceb.cam.ac.uk)  
-Marcus Fantham' Maintainer='Marcus Fantham' source=source %}FPBioimage is an interactive tool for viewing volumetric data in the web browser. To quickly share 3D data with your collaborators using FPBioimage, we provide this useful plugin for ImageJ and FIJI. 
+Marcus Fantham' Maintainer='Marcus Fantham' source=source %}
+
+FPBioimage is an interactive tool for viewing volumetric data in the web browser. To quickly share 3D data with your collaborators using FPBioimage, we provide this useful plugin for ImageJ and Fiji.
 
 
 ## Installation
@@ -39,25 +41,27 @@ FPBioimage Helper will set the XYZ voxel ratio from the image properties {% incl
 
 Copy the following macro to the bottom of the `Fiji/macros/StartupMacros.fiji.ijm` file to add a macro button for one-click uploading to FPBioimage.
 
-    macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393eL4161L4464D49D4bD4eD59D5bD5eD6aD6cD6dL9197D99D9bD9cDa1Da4Db1Db4DbbDc2Dc3DcaDccDdb" {
-        rW = getWidth();
-        rH = getHeight();
-        t = getTitle();
-        index = indexOf(t, ' ');
-        if (index>-1){t = substring(t, 0, index);}
-        index = indexOf(t, '.');
-        if (index>-1){t = substring(t, 0, index);}
+```javascript
+macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393eL4161L4464D49D4bD4eD59D5bD5eD6aD6cD6dL9197D99D9bD9cDa1Da4Db1Db4DbbDc2Dc3DcaDccDdb" {
+    rW = getWidth();
+    rH = getHeight();
+    t = getTitle();
+    index = indexOf(t, ' ');
+    if (index>-1){t = substring(t, 0, index);}
+    index = indexOf(t, '.');
+    if (index>-1){t = substring(t, 0, index);}
 
-        if (rW>500){rW = 499;}
-        if (rH>500){rH = 499;}
-        getVoxelSize(vW, vH, vD, x);
+    if (rW>500){rW = 499;}
+    if (rH>500){rH = 499;}
+    getVoxelSize(vW, vH, vD, x);
 
-        run("FPBioimage Helper", "unique=" + t + " x-voxel=" +vW + " y-voxel=" + vH + " z-voxel=" + vD + " x-resolution=" + rW + " y-resolution=" + rH + " upload");
-    }
+    run("FPBioimage Helper", "unique=" + t + " x-voxel=" +vW + " y-voxel=" + vH + " z-voxel=" + vD + " x-resolution=" + rW + " y-resolution=" + rH + " upload");
+}
+```
 
 ## Source code
 
-The source code for the FPBioimage FIJI plugin is {% include github org='fpbioimage' repo='FPBioimageHelper-FIJI' %}.
+The source code for the FPBioimage Fiji plugin is {% include github org='fpbioimage' repo='FPBioimageHelper-FIJI' %}.
 
 The source code for the FPBioimage web app can also be accessed {% include github org='fpbioimage' repo='unity' %}.
 

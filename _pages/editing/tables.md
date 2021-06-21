@@ -19,6 +19,55 @@ You can, however, easily create one using Markdown:
 {% endcapture %}
 {% include editing/example code=simple-table %}
 
+## Aligning Tables
+
+By default, tables are stretched to 100% width:
+
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+
+If you want the table to be its natural width instead, put `{:.left}` beneath the table:
+
+**Code**
+
+```
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.left}
+```
+
+**Result**
+
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.left}
+
+Or for a centered table, use `{:.center}`:
+
+**Code**
+
+```
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.center}
+```
+
+**Result**
+
+| Blue | Red | Green | Yellow | Purple |
+|------|-----|-------|--------|--------|
+| 5    | 4   | 3     | 2      | 1      |
+| 1    | 2   | 3     | 4      | 5      |
+{:.center}
+
 ## Aligning Columns
 
 You can place `:` symbols in the table header to specify column alignment:
@@ -81,3 +130,14 @@ you can declare it inline:
 {% endcapture %}
 {% include editing/example code=custom-styling-inline %}
 
+## Spreadsheets
+
+You can embed an external spreadsheet.
+
+### Google Sheets
+
+{% highlight liquid %}{% raw %}
+{% include spreadsheet platform="google" id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" %}
+{% endraw %}{% endhighlight %}
+
+{% include notice class="fas fa-hard-hat" content="This include is under construction! Coming soon." %}

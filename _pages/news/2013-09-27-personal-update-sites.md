@@ -1,5 +1,4 @@
 ---
-mediawiki: 2013-09-27_-_Personal_Update_Sites
 title: 2013-09-27 - Personal Update Sites
 ---
 

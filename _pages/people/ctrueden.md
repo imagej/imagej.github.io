@@ -28,14 +28,16 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 ### Immediate priorities
 
-*Last updated: 2021-May-03*
+*Last updated: 2021-Jun-09*
 
-1.  \[Spring 2021\] (with {% include person id='hinerm' %} and {% include person id='elevans' %}) **New ImageJ website.** ([roadmap](https://github.com/imagej/imagej.github.io/projects/2))
-2.  \[Summer 2021\] **ImageJ-OMERO** update to OMERO 5.5+. ([imagej/imagej-omero#107](https://github.com/imagej/imagej-omero/pull/107))
-3.  **Fix ImageJ1 patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ([imagej/ij1-patcher#47](https://github.com/imagej/ij1-patcher/pull/47))
-4.  \[Summer 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
-5.  \[Fall 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
-6.  \[Winter 2021\] **Maven-based ImageJ Launcher.** And migrate ImageJ and Fiji to ship with Java 11. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 11 if needed. Retire the Java-8 update site, using Maven coordinates instead.
+1.  \[Summer 2021\] ImageJ and Fiji component updates.
+    * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
+    * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
+    * **Fix ImageJ 1.x patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ({% include github org='imagej' repo='ij1-patcher' pr=47 %})
+    * New pom-scijava, imagej and fiji component releases.
+3.  \[Summer 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
+4.  \[Fall 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
+5.  \[Winter 2021\] **Maven-based ImageJ Launcher.** And migrate ImageJ and Fiji to ship with Java 11. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 11 if needed. Retire the Java-8 update site, using Maven coordinates instead.
 
 ### Medium-term priorities
 
@@ -44,10 +46,11 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 ### Longer-term priorities
 
-1. **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
-2. **SCIFIO blockization.** ([scifio/scifio#283](https://github.com/scifio/scifio/issues/283))
-3. **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([imagej/imagej-launcher#33](https://github.com/imagej/imagej-launcher/issues/33))
-4. **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
+1.  **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
+2.  **SCIFIO blockization.** ({% include github org='scifio' repo='scifio' issue=283 %})
+3.  **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher.
+    ({% include github org='imagej' repo='imagej-launcher' issue=33 %})
+4.  **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
 
 ### Constant priorities
 

@@ -25,7 +25,7 @@ All examples presented on this page are always entire classes including a main m
 -   imglib2-ij (the ImageJ interaction)
 -   imglib2-realtransform (for example 8)
 -   scifio (for reading and writing files)
--   ij (ImageJ 1.x core, used for display)
+-   ij (ImageJ core, used for display)
 
 Alternately, you can access the examples from the {% include github org='imglib' repo='imglib2-tutorials' label='ImgLib-tutorials Git repository' %}. After cloning the source code, open the project in your favorite IDE. See [Developing ImgLib2](/libs/imglib2/developing) for further details.
 
@@ -91,21 +91,26 @@ The `Sampler` interface implemented by `Cursor` and `RandomAccess` provides acce
 
 Note that `IterableInterval` implements the java.lang.Iterable interface, which means it is compatible to specialized Java language constructs:
 
-    // add 5 to every pixel
-    for ( UnsignedByteType type : img )
-        type.add( 5 );
+```java
+// add 5 to every pixel
+for ( UnsignedByteType type : img )
+    type.add( 5 );
+```
 
 ### Example 2a - Duplicating an Img using a generic method
 
 The goal of this example is to make a copy of an existing `Img`. For this task it is sufficient to employ `Cursor`s. The order of iteration for both `Img`'s will be the same as they are instantiated using the same `ImgFactory`. It is possible to test if two `IterableInterval` have the same iteration order:
 
-    boolean sameIterationOrder =
-        interval1.iterationOrder().equals( interval2.iterationOrder() );
+```java
+boolean sameIterationOrder =
+    interval1.iterationOrder().equals( interval2.iterationOrder() );
+```
 
 The copy method itself is a generic method, it will work on any kind of `Type`. In this particular case it works on a `FloatType`, but would also work on anything else like for example a `ComplexDoubleType`. The declaration of the generic type is done in the method declaration:
 
-    public < T extends Type< T > > Img< T > copyImage( ... )
-
+```java
+public < T extends Type< T > > Img< T > copyImage( ... )
+```
 `< T extends Type< T > >` basically means that `T` can be anything that extends `Type`. These can be final implementations such as `FloatType` or also intermediate interfaces such as `RealType`. This, however, also means that in the method body only operations supported by `Type` will be available. Note that the method returns a `T`, which also means that in the constructor from which we call method it will also return an `Img<FloatType>` as we provide it with one.
 
 {% include code org='imglib' repo='imglib2-tutorials' branch='master'

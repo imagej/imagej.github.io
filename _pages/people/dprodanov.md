@@ -1,5 +1,4 @@
 ---
-mediawiki: User:Dimiterpp
 title: Dimiter Prodanov
 
 name: Dimiter Prodanov

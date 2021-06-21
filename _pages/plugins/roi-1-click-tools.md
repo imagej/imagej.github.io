@@ -3,6 +3,7 @@ title: Roi 1-click tools
 name: Roi 1-click tools
 description: Annotation with ROIs of predefined dimensions
 categories: [Image Annotation]
+icon: /media/icons/roi_click_tools.svg
 
 source-url: https://github.com/LauLauThom/Fiji-RoiClickTools
 release-date : 2019
@@ -10,7 +11,7 @@ release-date : 2019
 license-url: /licensing/bsd
 license-label: BSD-2
 
-team-leads: Laurent Thomas | mailto:l.thomas@acquifer.de
+team-founders: Laurent Thomas, Jochen Gehrig
 ---
 
 # New versions
@@ -43,8 +44,10 @@ In ImageJ, copy the file *Roi 1-Click Tools.ijm* to *ImageJ\\macros\\toolsets*
 See the [Readme](https://github.com/LauLauThom/Fiji-RoiClickTools) of the GitHub repo.
 
 # Citation
-
-{% include citation doi='10.17912/micropub.biology.000215' %}
+Thomas, LS; Gehrig, J (2020). 
+*ImageJ/Fiji ROI 1-click tools for rapid manual image annotations and measurements.*
+**microPublication Biology** - 10.17912/micropub.biology.000215.
+https://doi.org/10.17912/micropub.biology.000215
 
 # Video tutorial
 

@@ -1,9 +1,10 @@
 ---
 mediawiki: Topology_preserving_warping_error
 title: Topology preserving warping error
+extensions: ["mathjax"]
 ---
 
-{% include thumbnail src='/media/plugins/tws/warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](/plugin-index#segmentation) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[^1].
+{% include thumbnail src='/media/plugins/tws/warping-error-comparison.png' title='Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.'%} The **warping error** is a [segmentation](/imaging/segmentation) metric that tolerates disagreements over boundary location, penalizes topological disagreements, and can be used directly as a cost function for learning boundary detection[^1].
 
 In other words, instead of focusing on the geometric differences (pixel disagreement) between two segmentations, the **warping error** focuses on the objects and measures the topological error between them.
 
@@ -97,27 +98,29 @@ The **warping error** can be distinguished from the [Rand error](/plugins/tws/ra
 
 The warping error metric is implemented for 2D images in the [Trainable Weka Segmentation](/plugins/tws) library. Here is an example of how to use it in a [Beanshell script](/scripting/beanshell):
 
-    import trainableSegmentation.metrics.WarpingError;
-    import ij.IJ;
+```python
+import trainableSegmentation.metrics.WarpingError;
+import ij.IJ;
 
-    // original labels
-    originalLabels = IJ.openImage("/path/original-labels.tif");
+// original labels
+originalLabels = IJ.openImage("/path/original-labels.tif");
 
-    // proposed (new) labels
-    proposedLabels = IJ.openImage("/path/proposed-labels.tif");
+// proposed (new) labels
+proposedLabels = IJ.openImage("/path/proposed-labels.tif");
 
-    // mask with geometric constraints
-    mask = IJ.openImage("/path/mask.tif");
+// mask with geometric constraints
+mask = IJ.openImage("/path/mask.tif");
 
-    // threshold to binarize labels (just in case they are not binary)
-    threshold = 0.5;
+// threshold to binarize labels (just in case they are not binary)
+threshold = 0.5;
 
-    metric = new WarpingError( originalLabels, proposedLabels, mask );
+metric = new WarpingError( originalLabels, proposedLabels, mask );
 
-    warpingError = metric.getMetricValue( threshold );
+warpingError = metric.getMetricValue( threshold );
 
-    IJ.log("Warping error between source image " + originalLabels.getTitle() + " and target image " 
-    + proposedLabels.getTitle() + " = " + warpingError);
+IJ.log("Warping error between source image " + originalLabels.getTitle() + " and target image " 
++ proposedLabels.getTitle() + " = " + warpingError);
+```
 
 ## See also
 

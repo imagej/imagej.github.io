@@ -9,7 +9,7 @@ section: Extend:Development:Tools
 
 # Services
 
-[ImageJ](/software/imagej) and [SciJava](/libs/scijava) projects use Travis in a variety of ways:
+[SciJava](/libs/scijava) projects use Travis in a variety of ways:
 
 -   Perform builds of SciJava projects. Travis deploys `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Travis build—i.e., the latest code on `master`.
 -   Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Travis is instrumental in early detection of new bugs introduced to the codebase.

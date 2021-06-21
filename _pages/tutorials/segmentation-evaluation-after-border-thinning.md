@@ -5,7 +5,7 @@ title: Segmentation evaluation after border thinning - Script
 
 # Introduction
 
-The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](/plugin-index#segmentation) method after thinning the borders of the image segments to 1-pixel width.
+The following [Beanshell script](/scripting/beanshell) allows you to evaluate the performance of your [segmentation](/imaging/segmentation) method after thinning the borders of the image segments to 1-pixel width.
 
 Retrospective evaluation of the original [ISBI-2012 segmentation challenge](http://brainiac2.mit.edu/isbi_challenge/) scoring system revealed that it was not sufficiently robust to variations in the widths of neurite borders. After evaluating all of these metrics and associated variants, it was found that specially normalized versions of the [Rand error](/plugins/tws/rand-error) and {% include wikipedia title="Variation of information" %} best matched our qualitative judgements of segmentation quality:
 
@@ -20,95 +20,97 @@ Further details about the metrics can be found in the [challenge publication](ht
 
 Just copy/paste it in the [Script Editor](/scripting/script-editor) or save it into a .bsh file and run it ({% include bc path='File | Open'%}):
 
-    /**
-     * Script to calculate the segmentation error between some 2D 
-     * original (binary) labels and their corresponding proposed labels (binary or
-     * probability -0-1- values).
-     * 
-     * The evaluation metrics are:
-     *  - Maximal foreground-restricted Rand score after thinning
-     *  - Maximal foreground-restricted information theoretic score after thinning
-     * 
-     * These are the final official metrics for the ISBI-2012 challenge
-     * on segmentation of neuronal structures in EM stacks (http://brainiac2.mit.edu/isbi_challenge/).
-      * 
-     * @author Ignacio Arganda-Carreras (ignacio.arganda@ehu.eus)
-     * @version January 12, 2016
-     */
-      
-    import trainableSegmentation.metrics.*;
-    import ij.WindowManager;
-    import ij.gui.GenericDialog;
-    import ij.IJ;
-      
-    // Get the list of images that are open
-    ids = WindowManager.getIDList();
-      
-    if ( ids == null || ids.length < 2 )
-    {
-        IJ.showMessage( "You should have at least two images open." );
-        return;
-    }
-      
-    // Get all the titles of the open images        
-    titles = new String[ ids.length ];
-    for ( int i = 0; i < ids.length; ++i )
-    {
-        titles[ i ] = ( WindowManager.getImage( ids[ i ] ) ).getTitle();
-    }
-      
-    // Create dialog        
-    gd = new GenericDialog( "Evaluate segmentation results" );
-              
-    gd.addMessage( "Image Selection:" );
-    current = WindowManager.getCurrentImage().getTitle();
-    gd.addChoice( "Original_labels", titles, current );
-    gd.addChoice( "Proposal", titles, current.equals( titles[ 0 ] ) ? titles[ 1 ] : titles[ 0 ] );
-              
-    gd.addMessage( "Segmentation error metrics:" );
-    gd.addCheckbox( "Maximal foreground-restricted Rand score after thinning", true );
-    gd.addCheckbox( "Maximal foreground-restricted information theoretic score after thinning", true );
+```java
+/**
+ * Script to calculate the segmentation error between some 2D 
+ * original (binary) labels and their corresponding proposed labels (binary or
+ * probability -0-1- values).
+ * 
+ * The evaluation metrics are:
+ *  - Maximal foreground-restricted Rand score after thinning
+ *  - Maximal foreground-restricted information theoretic score after thinning
+ * 
+ * These are the final official metrics for the ISBI-2012 challenge
+ * on segmentation of neuronal structures in EM stacks (http://brainiac2.mit.edu/isbi_challenge/).
+  * 
+ * @author Ignacio Arganda-Carreras (ignacio.arganda@ehu.eus)
+ * @version January 12, 2016
+ */
+  
+import trainableSegmentation.metrics.*;
+import ij.WindowManager;
+import ij.gui.GenericDialog;
+import ij.IJ;
+  
+// Get the list of images that are open
+ids = WindowManager.getIDList();
+  
+if ( ids == null || ids.length < 2 )
+{
+    IJ.showMessage( "You should have at least two images open." );
+    return;
+}
+  
+// Get all the titles of the open images        
+titles = new String[ ids.length ];
+for ( int i = 0; i < ids.length; ++i )
+{
+    titles[ i ] = ( WindowManager.getImage( ids[ i ] ) ).getTitle();
+}
+  
+// Create dialog        
+gd = new GenericDialog( "Evaluate segmentation results" );
+          
+gd.addMessage( "Image Selection:" );
+current = WindowManager.getCurrentImage().getTitle();
+gd.addChoice( "Original_labels", titles, current );
+gd.addChoice( "Proposal", titles, current.equals( titles[ 0 ] ) ? titles[ 1 ] : titles[ 0 ] );
+          
+gd.addMessage( "Segmentation error metrics:" );
+gd.addCheckbox( "Maximal foreground-restricted Rand score after thinning", true );
+gd.addCheckbox( "Maximal foreground-restricted information theoretic score after thinning", true );
 
-    gd.addMessage( "Data selection:" );
-    gd.addCheckbox( "Binary proposal", false );
-     
-    gd.showDialog();
-              
-    if (gd.wasCanceled()) 
-        return;
-              
-    originalLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
-    proposedLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
-      
-    calculateVRandAfterThinning = gd.getNextBoolean();
-    calculateVInfoAfterThinning = gd.getNextBoolean();
+gd.addMessage( "Data selection:" );
+gd.addCheckbox( "Binary proposal", false );
+ 
+gd.showDialog();
+          
+if (gd.wasCanceled()) 
+    return;
+          
+originalLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
+proposedLabels = WindowManager.getImage( ids[ gd.getNextChoiceIndex() ] );
+  
+calculateVRandAfterThinning = gd.getNextBoolean();
+calculateVInfoAfterThinning = gd.getNextBoolean();
 
-    binaryProposal = gd.getNextBoolean();
-      
-    IJ.log("---");
-    IJ.log("Evaluating segmentation...");
-    IJ.log("  Original labels: " + originalLabels.getTitle());
-    IJ.log("  Proposed labels: " + proposedLabels.getTitle() + "\n");
+binaryProposal = gd.getNextBoolean();
+  
+IJ.log("---");
+IJ.log("Evaluating segmentation...");
+IJ.log("  Original labels: " + originalLabels.getTitle());
+IJ.log("  Proposed labels: " + proposedLabels.getTitle() + "\n");
 
-    // Calculate segmentation error with the selected metrics
-      
-    if( calculateVRandAfterThinning )
-    {   
-        IJ.log("\nCalculating maximal foreground-restricted Rand score after thinning...");
-        metric = new RandError( originalLabels, proposedLabels );
-        maxThres = binaryProposal ? 0.0 : 1.0;
-        maxScore = metric.getMaximalVRandAfterThinning( 0.0, maxThres, 0.1, true );  
-        IJ.log("  Maximum foreground-restricted Rand score after thinning: " + maxScore );     
-    }
+// Calculate segmentation error with the selected metrics
+  
+if( calculateVRandAfterThinning )
+{   
+    IJ.log("\nCalculating maximal foreground-restricted Rand score after thinning...");
+    metric = new RandError( originalLabels, proposedLabels );
+    maxThres = binaryProposal ? 0.0 : 1.0;
+    maxScore = metric.getMaximalVRandAfterThinning( 0.0, maxThres, 0.1, true );  
+    IJ.log("  Maximum foreground-restricted Rand score after thinning: " + maxScore );     
+}
 
-    if( calculateVInfoAfterThinning )
-    {   
-        IJ.log("\nCalculating maximal foreground-restricted information theoretic score after thinning...");
-        metric = new VariationOfInformation( originalLabels, proposedLabels );
-        maxThres = binaryProposal ? 0.0 : 1.0;
-        maxScore = metric.getMaximalVInfoAfterThinning( 0.0, maxThres, 0.1 );  
-        IJ.log("  Maximum foreground-restricted information theoretic score after thinning: " + maxScore );     
-    }
+if( calculateVInfoAfterThinning )
+{   
+    IJ.log("\nCalculating maximal foreground-restricted information theoretic score after thinning...");
+    metric = new VariationOfInformation( originalLabels, proposedLabels );
+    maxThres = binaryProposal ? 0.0 : 1.0;
+    maxScore = metric.getMaximalVInfoAfterThinning( 0.0, maxThres, 0.1 );  
+    IJ.log("  Maximum foreground-restricted information theoretic score after thinning: " + maxScore );     
+}
+```
 
 If you run it while two images are open, the following dialog will pop up:
 

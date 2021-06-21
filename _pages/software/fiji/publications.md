@@ -6,8 +6,7 @@ section: Explore:Software:Fiji
 
 {% include notice icon="info" content='This page lists publications relating to the [Fiji](/software/fiji) project.
 
--   For general instructions on citing [ImageJ](/software/imagej) and [Fiji](/software/fiji), see [Citing](/contribute/citing).
--   For an index of citable software, see [Citable](/plugin-index#citable).' %}
+-   For general instructions on citing [ImageJ](/software/imagej), [ImageJ2](/software/imagej2), and [Fiji](/software/fiji), see [Citing](/contribute/citing).' %}
 
 
 ## Publications introducing Fiji
@@ -146,7 +145,7 @@ section: Explore:Software:Fiji
 
 {% include citation fn=1 content='journal' author='Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona' title='Fiji: an open-source platform for biological-image analysis' journal='Nature Methods' year='2012' volume='9(7)' pages='676-682' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html' %}
 
-{% include citation fn=2 id='software/imagej' %}
+{% include citation fn=2 id='learn/flavors' %}
 
 {% include citation fn=3 content='conference' author='Schindelin J' title='Fiji Is Just ImageJ (batteries included)' year='2008' month='November' %}
 
@@ -170,7 +169,7 @@ section: Explore:Software:Fiji
 
 {% include citation fn=13 doi='10.1371/journal.pbio.1000502' %}
 
-{% include citation fn=14 content='journal' author='Verena Kaynig, Thomas Fuchs, Joachim M. Buhmann' title='Neuron Geometry Extraction by Perceptual Grouping in ssTEM Images' journal='CVPR' year='2010' url='http://kaynig.de/kaynig\_cvpr2010.pdf' %}
+{% include citation fn=14 content='journal' author='Verena Kaynig, Thomas Fuchs, Joachim M. Buhmann' title='Neuron Geometry Extraction by Perceptual Grouping in ssTEM Images' journal='CVPR' year='2010' url='http://kaynig.de/kaynig_cvpr2010.pdf' %}
 
 {% include citation fn=15 content='journal' author='Longair Mark, Baker DA, Armstrong JD.' title='Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes.' journal='Bioinformatics' year='2011' url='http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long' %}
 

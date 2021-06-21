@@ -1,5 +1,4 @@
 ---
-mediawiki: 2014-04-01_-_ImageJ_2.0.0_stable_release_coming_this_spring
 title: 2014-04-01 - ImageJ 2.0.0 stable release coming this spring
 ---
 
@@ -9,9 +8,9 @@ The focus of the initial stable 2.0.0 release will be a unified application bund
 
 We are targeting the following goals for a June 1 release of ImageJ 2.0.0:
 
-1.  Integrate [ImageJ2](/software/imagej2) into the [ImageJ1](/software/imagej1) user interface. In a nutshell, this means providing support for ImageJ2's parameter-based commands from the classic ImageJ 1.x interface. The stable release of ImageJ 2.0.0 will continue to use the classic interface, with the "modern" interface remaining available as well, but still in beta. Similarly, the ImageJ2 data model (based on [ImgLib2](/libs/imglib2)) will continue to be available, but also still in beta.
+1.  Integrate [ImageJ2](/software/imagej2) into the [ImageJ 1.x](/software/imagej) user interface. In a nutshell, this means providing support for ImageJ2's parameter-based commands from the classic ImageJ 1.x interface. The stable release of ImageJ 2.0.0 will continue to use the classic interface, with the "modern" interface remaining available as well, but still in beta. Similarly, the ImageJ2 data model (based on [ImgLib2](/libs/imglib2)) will continue to be available, but also still in beta.
 2.  Unified image file I/O driven by the [SCIFIO](/libs/scifio) library. ImageJ2 will overcome the extensibility limitations imposed by ImageJ 1.x's "HandleExtraFileTypes" mechanism.
-3.  Improved [imagej.net](/) website encompassing all content from [mirror.imagej.net](/ij/) (ImageJ 1.x content), [developer.imagej.net](http://developer.imagej.net/) (ImageJ 2.x content) and [wiki.imagej.net](http://wiki.imagej.net/) (community content including Fiji). This will involve migration of some "developer" content to the wiki, as well as a better set of front pages that provide clear & easy access to ImageJ and Fiji downloads.
+3.  Improved [imagej.net](/) website encompassing all content from [mirror.imagej.net](https://mirror.imagej.net/) (ImageJ 1.x content), [developer.imagej.net](http://developer.imagej.net/) (ImageJ 2.x content) and [wiki.imagej.net](http://wiki.imagej.net/) (community content including Fiji). This will involve migration of some "developer" content to the wiki, as well as a better set of front pages that provide clear & easy access to ImageJ and Fiji downloads.
 4.  A well-vetted release of the burgeoning [ImageJ Ops](/libs/imagej-ops) project for easy development of reusable image processing algorithms.
 5.  Stable release of the {% include github org='imagej' repo='imagej-omero' label='ImageJ-OMERO' %} interoperability library, including support for calling many ImageJ 1.x plugins from [OMERO](http://openmicroscopy.org/info/omero).
 6.  A final logo for ImageJ 2.0.0, chosen by a community logo competition.

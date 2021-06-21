@@ -38,7 +38,7 @@ git push --all origin
 git clone becherovka:/path/my-new-repo.git
 ```
 
-(Note: git clone creates a directory my-new-repo.git, so do it from the root of your git\_papers folder.)
+(Note: git clone creates a directory my-new-repo.git, so do it from the root of your `git_papers` folder.)
 
 Magically, all the files flow onto your computer and you can track the changes to your manuscript performed from work or from home on your laptop by pulling and pushing until the next nasty merge conflict appears.
 

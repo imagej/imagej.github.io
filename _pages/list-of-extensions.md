@@ -68,6 +68,10 @@ function toggleAllCategories(checked) {
 }
 </script>
 <style>
+#categories-filter {
+  margin-bottom: 2em;
+  margin-top: -2em;
+}
 #filter-checkboxes {
   column-width: 13em;
 }
