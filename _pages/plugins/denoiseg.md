@@ -1,5 +1,4 @@
 ---
-mediawiki: DenoiSeg
 title: DenoiSeg
 categories: [DeepLearning, Denoising, Segmentation]
 ---
