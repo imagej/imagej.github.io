@@ -1,7 +1,7 @@
 ---
 mediawiki: DenoiSeg
 title: DenoiSeg
-categories: [Uncategorized]
+categories: [DeepLearning, Denoising, Segmentation]
 ---
 
 {% include thumbnail src='/media/plugins/denoiseg-teaser.png' title='Teaser of what DenoiSeg can compute on your data.'%}
