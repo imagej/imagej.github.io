@@ -159,7 +159,7 @@ the javascript only populates fields when they are empty.
 {%- if autopop or team-founders or team-leads or team-developers or team-debuggers or team-reviewers or team-support or team-maintainers or team-contributors -%}
 {%- capture team %}
       <details>
-        <summary style="text-align: center">{%- include tooltip text="Team" tooltip="The group of people who take responsibility for the project." -%}</summary>
+        <summary style="text-align: center">{%- include tooltip text="Team" tooltip="The group of people who take responsibility for the project." left="-75px" width="180px" -%}</summary>
         <table>
 {%- if autopop or team-founders -%}
 {%- include statbox/team-members title="Founders"

@@ -87,7 +87,7 @@ function fillRole(id, people) {
 }
 
 function fillStatus(id, label, description) {
-  fill(id, `<span class="tooltip">${label}<span class="tooltiptext">${description}</span></span>`);
+  fill(id, `<span class="tooltip">${label}<span class="tooltiptext" style="left: -90px; bottom: 1.5em; width: 180px">${description}</span></span>`);
 }
 
 function catalogRoles(team, id, name, url, roles) {

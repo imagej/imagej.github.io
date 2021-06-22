@@ -3,7 +3,7 @@ This is a helper include used by the statbox include.
 {%- endcomment -%}
   <tr>
 {%- if include.description -%}
-    <th>{%- include tooltip text=include.title tooltip=include.description -%}</th>
+    <th>{%- include tooltip text=include.title tooltip=include.description left="-10px" width="180px" -%}</th>
 {%- else -%}
     <th>{{include.title}}</th>
 {%- endif -%}
