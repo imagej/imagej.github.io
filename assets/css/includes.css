@@ -316,17 +316,15 @@ table.table-OS-info {
 .tooltip .tooltiptext {
   display: inline-block;
   visibility: hidden;
-  max-width: 200px;
   background-color: black;
   color: #fff;
   border-radius: 6px;
   padding: 2px 5px;
-  line-height: 1.5em;
+  line-height: 1.3em;
   position: absolute;
-  z-index: 1;
-  margin-top: 25px;
-  left: -50%;
-  white-space: nowrap;
+  z-index: 3;
+  margin-top: 0.5em;
+  text-align: left;
 }
 
 .tooltip:hover .tooltiptext {

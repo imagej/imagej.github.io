@@ -1,8 +1,21 @@
+{%- assign top = include.top | default: "80%" -%}
+{%- assign left = include.left | default: "25%" -%}
+{%- assign width = include.width -%}
 {%- assign style = include.style -%}
 
+{%- unless width or include.tooltip.size < 48 -%}
+  {%- assign width = '20em' -%}
+{%- endunless -%}
+
 <span class="tooltip"
-  {%- if style %} style="{{style}}" {%- endif -%}
->{{include.text}}<span class="tooltiptext">{{include.tooltip}}</span></span>
+  {%- if style %} style="{{style}}" {%- endif -%}>
+{{- include.text -}}
+<span class="tooltiptext" style="top: {{top}}; left: {{left}};
+  {%- if width %} width: {{width}}
+  {%- else %} white-space: nowrap
+  {%- endif -%}">
+{{- include.tooltip -}}
+</span></span>
 
 {%- comment -%}
 # vi:syntax=liquid
