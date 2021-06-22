@@ -1,7 +1,4 @@
 ---
-mediawiki:
-- Category:Fundamental
-- Category:Plugins
 title: List of Extensions
 section: Extend
 ---
