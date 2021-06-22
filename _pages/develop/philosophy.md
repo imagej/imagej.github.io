@@ -1,30 +1,30 @@
 ---
 title: Philosophy
 section: Extend:Development
+project: /libs/scijava
 ---
 
-
-[ImageJ2](/software/imagej2), and the [SciJava](/libs/scijava) component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+[SciJava](/libs/scijava) projects are developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 ## Open source
 
 The SciJava ecosystem is strongly committed to [open source](/licensing/open-source) software development. But this software is not an [open source](/licensing/open-source) software *product*—it is an [open source](/licensing/open-source) software *project* following an [open source](/licensing/open-source) development *process*.
 
-ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/discuss/#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
+These projects are funded by taxpayer money, so the project strives to be as transparent as possible. There are public [source code repositories](/develop/source), public [communication](/discuss/#ways-to-get-help) channels, public [project management](/develop/project-management) resources, and of course, this [community editable website](/editing). As you can see, we love [doing it in public](http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/)!
 
 ## Independent learning
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn. —{% include wikipedia title='Xun Kuang' text='Xunzi'%}
 
-The ImageJ and SciJava communities intend to foster not only scientific *independent thinking*, but just as importantly, *[independent learning](http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf)*. We want to not only [teach people how to fish](https://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day;_teach_a_man_to_fish_and_you_feed_him_for_a_lifetime), but *teach them how to learn*.
+These projects are intended to foster not only scientific *independent thinking*, but just as importantly, *[independent learning](http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf)*. We want to not only [teach people how to fish](https://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day;_teach_a_man_to_fish_and_you_feed_him_for_a_lifetime), but *teach them how to learn*.
 
-As such, responses to questions on [ImageJ public channels](/discuss/#ways-to-get-help) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/discuss/bugs#bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
+As such, responses to questions on [public channels](/discuss/#ways-to-get-help) will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [Bug reporting best practices](/discuss/bugs#bug-reporting-best-practices) for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of *how such solutions were produced*, as well as *how they might be improved or tailored to other similar scenarios*.
 
-We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [ImageJ forum](/discuss) with your ideas!
+We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [Image.sc Forum](/discuss) with your ideas!
 
 ## Extensibility
 
-[Extensibility](/develop/architecture#extensibility) is [ImageJ](/software/imagej)'s greatest strength. ImageJ is not just a software application—it is an extensible *platform* for the development of image [visualization](/imaging/visualization), [segmentation](/imaging/segmentation), [registration](/imaging/registration), and analysis routines.
+[Extensibility](/develop/architecture#extensibility) is [ImageJ](/software/imagej)'s greatest strength. [ImageJ2](/software/imagej2) is not just a software application—it is an extensible *platform* for the development of image [visualization](/imaging/visualization), [segmentation](/imaging/segmentation), [registration](/imaging/registration), and analysis routines.
 
 Isaac Newton attributed his success to {% include wikipedia title='Standing on the shoulders of giants' text='standing on the shoulders of giants'%}. The [SciJava component collection](/develop/architecture)'s powerful [plugin](/plugins) mechanism and [open source](/licensing/open-source) software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [Extensibility](/develop/architecture#extensibility) page for details.
 
@@ -36,7 +36,7 @@ One of the central goals of the [SciJava component collection](/develop/architec
 
 ## Compatibility
 
-Backward compatibility is one of ImageJ's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](/libs/imagej-legacy) page for details.
+Backward compatibility is one of ImageJ2's most important goals. It must remain possible to use existing [plugins](/plugins) and [macros](/scripting/macro) with new versions of ImageJ. See the [Compatibility](/libs/imagej-legacy) page for details.
 
 ## Release early, release often
 

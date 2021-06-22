@@ -2,7 +2,7 @@
 title: Temporal-Color Code
 categories: [Color Processing]
 name: Temporal-Color Code
-project: Fiji
+project: /software/fiji
 icon: /media/icons/fiji.svg
 source-url: https://github.com/fiji/fiji/blob/master/plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm
 release-date: 29 Nov 2010

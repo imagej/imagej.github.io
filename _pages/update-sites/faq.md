@@ -3,6 +3,7 @@ mediawiki: Update_site_FAQ
 title: Update site FAQ
 description: This pages answers frequently asked questions about update sites.
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: FAQ
 ---

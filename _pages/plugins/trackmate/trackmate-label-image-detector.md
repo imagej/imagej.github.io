@@ -3,7 +3,7 @@ title: TrackMate-Label-Image-Detector
 description: TrackMate detector that creates objects from a label image.
 categories: [Segmentation,Tracking]
 logo: /media/logos/trackmate-300p.png
-project: Fiji
+project: /software/fiji
 ---
 
 This page describes a detector for [TrackMate](/plugins/trackmate/index) that creates objects from a label image image. 

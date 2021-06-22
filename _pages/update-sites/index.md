@@ -2,6 +2,7 @@
 mediawiki: Update_Sites
 title: Update Sites
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: Overview
 ---

@@ -2,6 +2,7 @@
 mediawiki: How_to_set_up_and_populate_an_update_site
 title: How to set up and populate an update site
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: How to Create
 ---

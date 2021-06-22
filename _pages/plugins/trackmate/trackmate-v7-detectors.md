@@ -3,7 +3,7 @@ title: TrackMate v7 detectors
 description: New TrackMate detectors that can return the shape of objects.
 categories: [Tracking, Segmentation]
 logo: /media/logos/trackmate-300p.png
-project: Fiji
+project: /software/fiji
 section: Detectors with segmentation capabilities.
 ---
 Starting with version 7.0.0, [TrackMate](/plugins/trackmate/index) offers the possibility to segment objects, and store, display and quantify their shape. We used this new API to build simple detectors that can produce objects from a *label image*, a *mask* or a *grayscale image with a threshold*. But we also  looked to integrate the state-of-the-art segmentation algorithms shipped with Fiji that do so. So we integrated the *ilastik*, *MorphoLibJ*, *StarDist* and *Weka* plugins as detectors in TrackMate.

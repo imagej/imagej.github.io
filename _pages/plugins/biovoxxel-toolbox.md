@@ -2,7 +2,7 @@
 mediawiki: BioVoxxel_Toolbox
 title: BioVoxxel Toolbox
 categories: [Particle Analysis, Segmentation]
-project: BioVoxxel Toolbox
+project: /plugins/biovoxxel-toolbox
 pom-url: https://raw.githubusercontent.com/biovoxxel/BioVoxxel-Toolbox/master/Biovoxxel_Plugins/pom.xml
 ---
 

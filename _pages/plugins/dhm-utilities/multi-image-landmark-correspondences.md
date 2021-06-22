@@ -1,7 +1,7 @@
 ---
 mediawiki: DHM_Utilities/Multi-Image_Landmark_Correspondences
 title: DHM Utilities/Multi-Image Landmark Correspondences
-project: DHM Utilities
+project: /plugins/dhm-utilities
 name: Multi-Image Landmark Correspondences
 source-url: https://github.com/sudgy/multi-landmark
 license-url: /licensing/lgpl

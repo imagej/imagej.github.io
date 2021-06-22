@@ -1,0 +1,54 @@
+{%- assign text = nil -%}
+{%- if page.project or page.project-blurb -%}
+  {%- comment -%} Discern project ID. {%- endcomment -%}
+  {%- assign id = page.project -%}
+  {%- unless id -%}
+    {%- comment -%}
+      Project blurb given without project; assume current page is the project.
+    {%- endcomment -%}
+    {%- assign id = page.url | replace: "/index", "" -%}
+  {%- endunless -%}
+
+  {%- comment -%} Look up the project page with the given ID. {%- endcomment -%}
+  {%- assign p = site.pages | where: "url", id -%}
+  {%- unless p.first -%}
+    {%- assign id-index = id | append: "/index" -%}
+    {%- assign p = site.pages | where: "url", id-index -%}
+  {%- endunless -%}
+
+  {%- if p.first -%}
+    {%- assign icon = p[0].icon -%}
+    {%- assign blurb = p[0].project-blurb -%}
+    {%- unless blurb -%}
+      {%- comment -%} Project has no blurb; fall back to page title. {%- endcomment -%}
+      {%- assign blurb = p[0].title -%}
+    {%- endunless -%}
+    {%- capture tip -%}
+      This page describes content relating to {{blurb}}. Click the logo for details.
+    {%- endcapture -%}
+  {%- else -%}
+    {%- comment -%} Project URL is invalid. {%- endcomment -%}
+    {%- assign icon = false -%}
+    {%- capture tip -%} The project URL '{{id}}' does not exist. {%- endcapture -%}
+  {%- endif -%}
+
+  {%- capture text -%}
+    {%- if icon -%}
+      <img src="{{icon}}">
+    {%- else -%}
+      &#10060;
+    {%- endif -%}
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- if text -%}
+        <span class="project-icon shadowed-box">{% include tooltip text=text tooltip=tip %}</span>
+        <h1>{{page.title}}</h1>
+        <span class="project-counterweight"> </span>
+{%- else -%}
+        <h1>{{page.title}}</h1>
+{%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

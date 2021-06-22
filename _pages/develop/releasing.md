@@ -1,6 +1,7 @@
 ---
 title: Development Lifecycle
 section: Extend:Development:Guides
+project: /libs/scijava
 ---
 
 {% include notice icon="info" content='This page describes the core [SciJava](/libs/scijava) *software release process*.

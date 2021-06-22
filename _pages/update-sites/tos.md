@@ -2,6 +2,7 @@
 title: Personal Update Site Terms of Service
 description: This page describes the terms of service for personal update sites.
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: TOS
 ---

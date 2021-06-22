@@ -1,6 +1,7 @@
 ---
 title: Architecture
 section: Extend:Development
+project: /software/imagej2
 ---
 
 {% include notice icon="info" content='This page describes the *technical* structure of [SciJava](/libs/scijava) projects.

@@ -1,17 +1,18 @@
 ---
 title: Coding style
 section: Extend:Development
+project: /libs/scijava
 ---
 
- We make a serious effort to keep the ImageJ2 codebase clean, consistent and easy to read—which includes both the source code and the revision history.
+ We make a serious effort to keep the SciJava codebase clean, consistent and easy to read—which includes both the source code and the revision history.
 
 ## Interface-driven design
 
-ImageJ2 uses an [interface-driven design](https://msdn.microsoft.com/en-us/library/aa260635%28v=vs.60%29.aspx) where possible. Public interfaces, enumerations and constants (i.e., `public static final` fields) form the basis of ImageJ2's API contract with downstream code. While we make an effort not to change the public methods and fields of non-interfaces, they may require occasional changes to improve the system.
+SciJava projects use an [interface-driven design](https://msdn.microsoft.com/en-us/library/aa260635%28v=vs.60%29.aspx) where possible. Public interfaces, enumerations and constants (i.e., `public static final` fields) form the basis of SciJava's API contract with downstream code. While we make an effort not to change the public methods and fields of non-interfaces, they may require occasional changes to improve the system.
 
 ## Versioning
 
-ImageJ2 uses [Semantic Versioning](http://semver.org/). As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant. See the [Architecture](/develop/architecture#versioning) page for further details.
+SciJava projects use [Semantic Versioning](http://semver.org/). As of this writing, the project is still in beta, so the API is not finalized yet. But once we make the final 2.0.0 release, future versions will be fully compliant. See the [Architecture](/develop/architecture#versioning) page for further details.
 
 ## Naming
 
@@ -19,7 +20,7 @@ We have tried to name classes with similar logic to how the Java standard librar
 
 ## Cleverness
 
-Because a large number of developers study the ImageJ2 codebase, and it provides many examples of use, we try to provide [easy to understand, maintainable code](http://www.daedtech.com/writing-maintainable-code-demands-creativity). We avoid "clever" or obfuscated solutions to problems, since such code tends to be much harder to understand.
+Because a large number of developers study the SciJava codebase, and it provides many examples of use, we try to provide [easy to understand, maintainable code](http://www.daedtech.com/writing-maintainable-code-demands-creativity). We avoid "clever" or obfuscated solutions to problems, since such code tends to be much harder to understand.
 
 ## SCM history
 
@@ -81,12 +82,12 @@ We prefer use of private fields and methods over protected ones, where possible.
 
 1.  Protected fields provide an API contract to subclasses, which especially for reusable libraries must be carefully considered, just as you would public API. With too many protected fields, you can find yourself locked into your current internal design, with refactoring difficult or impossible.
 2.  You cannot exercise any restrictions or control over the usage of the protected fields. Conversely, providing getters and setters for private fields offers the ability to define in code any restrictions you need on those fields.
-3.  Relatedly, there is no mechanism in Java, even using a bytecode library such as Javassist, to add "seams" that inject or modify behavior when that field is read or written. For example, you could not later add a notification system for listeners that care about when the value of that field changes. In fact, you cannot detect at all when a field has changed, for the purposes of e.g. synchronization. We encountered this specific problem with the legacy layer to [ImageJ 1.x](/software/imagej), since it has quite a few non-private fields: when unknown third-party code changes an ImageJ field which stores some portion of the ImageJ program state, we cannot update the corresponding ImageJ2 state to match. We still have essentially no solution to this dilemma (the best we have come up with so far is polling, which is complex and error prone).
+3.  Relatedly, there is no mechanism in Java, even using a bytecode library such as Javassist, to add "seams" that inject or modify behavior when that field is read or written. For example, you could not later add a notification system for listeners that care about when the value of that field changes. In fact, you cannot detect at all when a field has changed, for the purposes of e.g. synchronization. We encountered this specific problem with [ImageJ2](/software/imagej2)'s legacy layer to [ImageJ](/software/imagej), since it has quite a few non-private fields: when unknown third-party code changes an ImageJ field which stores some portion of the ImageJ program state, we cannot update the corresponding ImageJ2 state to match. We still have essentially no solution to this dilemma (the best we have come up with so far is polling, which is complex and error prone).
 4.  One nice usage of non-private fields is for "struct"-style classes, such as `java.awt.Rectangle`, with its `x`, `y`, `width` and `height` fields. If all you are looking for is a "dumb" data structure class consisting of collections of primitives and object references, it can suffice, but given the points above, it is almost always superior to use private fields with getters and setters, even in classes fully intended to be subclassed.
 
 More observations on this issue can be found at [this post on StackOverflow](http://stackoverflow.com/a/3631338).
 
-All of that said, there are times when use of the `protected` modifier is appropriate, so you will certainly see it in a few places in the ImageJ2 codebase. In particular, we use `protected` for event handler methods, both to avoid unused method warnings in Eclipse, as well as to make it easier for subclasses to override the event handling behavior.
+All of that said, there are times when use of the `protected` modifier is appropriate, so you will certainly see it in a few places in the SciJava codebase. In particular, we use `protected` for event handler methods, both to avoid unused method warnings in Eclipse, as well as to make it easier for subclasses to override the event handling behavior.
 
 ## See also
 

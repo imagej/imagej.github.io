@@ -2,6 +2,7 @@
 mediawiki: How_to_upload_to_core_update_sites
 title: How to upload to core update sites
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: Core Sites
 ---

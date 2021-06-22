@@ -12,22 +12,6 @@ collections:
     output: true
     permalink: /:path
 allow-jekyll-4: false
-projects:
-  - name: ImageJ
-    description: the original version of ImageJ
-    link: /software/imagej
-  - name: ImageJ2
-    description: the ImageJ2 platform
-    link: /software/imagej2
-  - name: Fiji
-    description: the Fiji distribution of ImageJ
-    link: /software/fiji
-  - name: SciJava
-    description: the core SciJava software libraries
-    link: /libs/scijava
-  - name: SCIFIO
-    description: the SCIFIO library for scientific image I/O
-    link: /libs/scifio
 defaults:
   -
     scope:
@@ -95,21 +79,21 @@ defaults:
       type: pages
     values:
       icon: /media/icons/imglib2.png
-      project: ImgLib2
+      project: /libs/imglib2
   -
     scope:
       path: "_pages/libs/scifio"
       type: pages
     values:
       icon: /media/icons/scifio.png
-      project: SCIFIO
+      project: /libs/scifio
   -
     scope:
       path: "_pages/libs/scijava"
       type: pages
     values:
       icon: /media/icons/scijava.png
-      project: SciJava
+      project: /libs/scijava
   -
     scope:
       path: "_pages/licensing"
@@ -164,20 +148,21 @@ defaults:
       type: pages
     values:
       icon: /media/icons/fiji.svg
+      project: /software/fiji
   -
     scope:
       path: "_pages/software/imagej"
       type: pages
     values:
       icon: /media/icons/imagej.png
-      project: ImageJ
+      project: /software/imagej
   -
     scope:
       path: "_pages/software/imagej2"
       type: pages
     values:
       icon: /media/icons/imagej2.png
-      project: ImageJ2
+      project: /software/imagej2
   -
     scope:
       path: "_pages/tutorials"

@@ -38,7 +38,6 @@ the javascript only populates fields when they are empty.
 {%- assign artifact          = page.artifact          -%} {%- comment -%} The component's groupId:artifactId                          {%- endcomment -%}
 {%- assign repository        = page.repository        -%} {%- comment -%} Maven repository where release artifact is deployed         {%- endcomment -%}
 {%- assign pom-url           = page.pom-url           -%} {%- comment -%} URL where the component's latest POM can be found.          {%- endcomment -%}
-{%- assign project           = page.project           -%} {%- comment -%} Project umbrella to which this component belongs            {%- endcomment -%}
 {%- assign source-url        = page.source-url        -%} {%- comment -%} URL where the component's source code can be found          {%- endcomment -%}
 {%- assign source-label      = page.source-label      -%} {%- comment -%} Label to use for the source code link                       {%- endcomment -%}
 {%- assign license-url       = page.license-url       -%} {%- comment -%} URL where the component's licensing details can be found    {%- endcomment -%}
@@ -284,7 +283,6 @@ refreshComponent();
 {%- comment -%} ============== COMPONENT INFO ============== {%- endcomment -%}
 {%- comment -%} TODO: Infer project from groupId. {%- endcomment -%}
 {%- comment -%} TODO: Add support for licenseName, projectName, copyrightOwners. {%- endcomment -%}
-{%- if project                   -%} {%- include statbox/row id="component-project"                                        value=project         -%} {%- endif -%}
 {%- if autopop or source-label   -%} {%- include statbox/row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
 {%- if autopop or license-url    -%} {%- include statbox/row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
 {%- if autopop or release-url    -%} {%- include statbox/row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}

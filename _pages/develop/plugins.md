@@ -1,6 +1,7 @@
 ---
-title: Writing plugins
+title: Developing ImageJ2 Plugins
 section: Extend:Development:Guides
+project: /software/imagej2
 ---
 
 {% include notice icon="info" content='This guide provides a technical overview of [plugins](/plugins), including how to **create new plugins**.  
@@ -9,7 +10,7 @@ If you are interested in developing an **existing** plugin instead, see [Contrib
 
 If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
 
-For instructions on plugin development for the original [ImageJ](/software/imagej), see [Developing Plugins for ImageJ 1.x](/develop/ij1-plugins).' %}
+For instructions on plugin development for the original [ImageJ](/software/imagej), see [Developing Plugins for ImageJ](/develop/ij1-plugins).' %}
 
 ## Requirements
 

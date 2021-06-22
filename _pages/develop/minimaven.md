@@ -1,6 +1,7 @@
 ---
 mediawiki: MiniMaven
 title: MiniMaven
+project: /libs/scijava
 ---
 
 MiniMaven is a minimal build and dependency management system. It reads project configurations in the same format as [Maven](/develop/maven) (*pom.xml* files).

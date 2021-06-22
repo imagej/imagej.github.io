@@ -2,9 +2,9 @@
 mediawiki: Neuroanatomy
 title: Neuroanatomy
 categories: [Uncategorized]
+project: /software/fiji
 ---
 
-{% include project content='Fiji' %}
 {% capture author%}
 {% include person id='tferr' %}
 {% endcapture %}

@@ -1,6 +1,7 @@
 ---
 section: Extend:Development:Tools:IDEs
 title: Developing ImageJ2 on the command line
+project: /software/imagej2
 ---
 
 This article explains how to install and configure command line tools for use with [ImageJ2](/software/imagej2) development.

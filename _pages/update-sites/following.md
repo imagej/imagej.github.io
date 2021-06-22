@@ -1,6 +1,7 @@
 ---
 title: Following an update site
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: How to Use
 ---

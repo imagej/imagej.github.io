@@ -771,15 +771,6 @@ header.major {
   margin: 0 0 0.5em 0;
 }
 
-header.major:after {
-  background: #000000;
-  content: '';
-  display: inline-block;
-  height: 1px;
-  margin-top: 0;
-  width: 25%;
-}
-
 header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
   margin: 0 0 0 0;
 }
@@ -790,6 +781,37 @@ header.major p {
 
 header.special {
   text-align: center;
+  white-space: nowrap;
+}
+
+header.special h1 {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 0 0.5em 0.3em 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  max-width: calc(100% - 7em);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Project icon */
+
+.project-icon {
+  display: inline-block;
+  border-radius: 1em;
+  border: 1px solid aliceblue;
+  padding: 0.5em;
+  background: #ffe;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+.project-icon img {
+  width: 4em;
+}
+.project-counterweight {
+  display: inline-block;
+  width: 6em;
 }
 
 /* Box */

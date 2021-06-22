@@ -1,7 +1,8 @@
 ---
 mediawiki: Developing_ImageJ_in_IntelliJ_IDEA
-section: Extend:Development:Tools:IDEs
 title: Developing ImageJ2 in IntelliJ IDEA
+section: Extend:Development:Tools:IDEs
+project: /software/imagej2
 ---
 
 This article explains how to install and configure IntelliJ IDEA for use with [ImageJ2](/software/imagej2) development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.

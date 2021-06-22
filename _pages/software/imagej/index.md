@@ -4,6 +4,7 @@ section: Explore:Software
 doi: 10.1038/nmeth.2089
 artifact: net.imagej:ij
 icon: /media/icons/imagej.png
+project-blurb: the original version of ImageJ
 ---
 
 [ImageJ](/software/imagej) is [public domain](/licensing/public-domain) software for processing and analyzing scientific images, with many derivatives and variants, including [ImageJ2](/software/imagej2), [Fiji](/software/fiji), and [others](/learn/flavors).

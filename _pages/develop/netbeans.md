@@ -1,7 +1,8 @@
 ---
 mediawiki: Developing_ImageJ_in_NetBeans
-section: Extend:Development:Tools:IDEs
 title: Developing ImageJ2 in NetBeans
+section: Extend:Development:Tools:IDEs
+project: /libs/imagej2
 ---
 
 {% include warning/outdated %}

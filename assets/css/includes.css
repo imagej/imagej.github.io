@@ -325,6 +325,7 @@ table.table-OS-info {
   z-index: 3;
   margin-top: 0.5em;
   text-align: left;
+  white-space: normal;
 }
 
 .tooltip:hover .tooltiptext {

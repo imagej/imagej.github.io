@@ -1,9 +1,10 @@
 ---
 mediawiki: UpdaterV2
 title: UpdaterV2
+project: /software/imagej2
 ---
 
-# Upgrading the ImageJ / Fiji updater
+# Upgrading the ImageJ Updater
 
 There is a [wiki page](/plugins/updater) documenting the Updater from user perspective, this page is setting a stage for the changes that will be made to the updater.
 

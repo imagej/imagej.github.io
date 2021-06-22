@@ -1,7 +1,8 @@
 ---
 mediawiki: Developing_ImageJ_in_Eclipse
-title: Developing ImageJ in Eclipse
+title: Developing ImageJ2 in Eclipse
 section: Extend:Development:Tools:IDEs
+project: /software/imagej2
 ---
 
 This article explains how to install, configure and use Eclipse to develop

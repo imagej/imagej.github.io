@@ -2,6 +2,7 @@
 title: Fiji
 section: Explore:Software
 doi: 10.1038/nmeth.2019
+project-blurb: the Fiji distribution of ImageJ
 ---
 
 [Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ2](/software/imagej2), bundling a lot of plugins which facilitate scientific image analysis.

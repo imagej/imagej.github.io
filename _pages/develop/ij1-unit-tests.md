@@ -1,7 +1,7 @@
 ---
 mediawiki: Unit_tests_for_ImageJ1
 title: Unit tests for ImageJ
-project: ImageJ
+project: /software/imagej
 ---
 
 There are a [substantial number of unit tests](/news/2011-10-07-unit-tests-for-imagej-1-45) to exercise [ImageJ](/software/imagej) functionality. You can find them in the {% include github org='imagej' repo='ij1-tests' label='ij1-tests repository' %}:

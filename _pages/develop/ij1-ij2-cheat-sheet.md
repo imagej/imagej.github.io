@@ -1,5 +1,6 @@
 ---
 title: ImageJ-ImageJ2 cheat sheet
+project: /software/imagej2
 ---
 
 This page summarizes translation of basic operations of [ImageJ 1.x](/software/imagej) and [ImageJ2](/software/imagej2) API. Based on the work of {% include person id='haesleinhuepf' %}, Scientific Computing Facility, MPI-CBG Dresden.

@@ -3,6 +3,7 @@ mediawiki: Updater
 title: Updater
 categories: [ImageJ2]
 artifact: net.imagej:imagej-updater
+project: /software/imagej2
 ---
 
 The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.

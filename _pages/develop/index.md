@@ -2,6 +2,7 @@
 mediawiki: Development
 title: Development
 section: Extend:Develop
+project: /software/imagej2
 ---
 
 {% include notice icon="info" content="If your goal is to automate the behavior of ImageJ, consider writing a [script](/scripting/script-editor) using ImageJ2's [Script Editor](/scripting/script-editor)—it is often much simpler than a plugin in Java." %} 

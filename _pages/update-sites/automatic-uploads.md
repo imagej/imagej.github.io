@@ -2,6 +2,7 @@
 mediawiki: Automatic_Update_Site_Uploads
 title: Automatic Update Site Uploads
 section: Extend:Update Sites
+project: /software/imagej2
 nav-links: true
 nav-title: Automatic Uploads
 ---

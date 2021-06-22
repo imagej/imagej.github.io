@@ -1,6 +1,7 @@
 ---
 title: Build ImageJ2 Plugin With JavaFX
 section: Extend:Development:Tools
+project: /software/imagej2
 ---
 
 {% include wikipedia title="JavaFX" %} is Java's new graphical toolkit
