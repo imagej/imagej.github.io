@@ -7,15 +7,15 @@ nav-title: Introduction
 
 # What is ImageJ?
 
-[![](/media/icons/imagej.png){:height=48} ImageJ](/software/imagej) is [public domain](/licensing#a-note-about-imagej) software for processing and analyzing scientific images.
+[![](/media/icons/imagej.png){:height="48px"} ImageJ](/software/imagej) is [public domain](/licensing#a-note-about-imagej) software for processing and analyzing scientific images.
 
 # What is ImageJ2?
 
-[![](/media/icons/imagej2.png){:height=48} ImageJ2](/software/imagej2) is a new version of ImageJ for multidimensional image data, with a focus on scientific imaging. It includes some additional features not available in the original ImageJ.
+[![](/media/icons/imagej2.png){:height="48px"} ImageJ2](/software/imagej2) is a new version of ImageJ for multidimensional image data, with a focus on scientific imaging. It includes some additional features not available in the original ImageJ.
 
 # What is Fiji?
 
-[![](/media/icons/fiji.svg){:height=48} Fiji](/software/fiji) [<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](/software/fiji)—a "batteries-included" distribution of ImageJ and ImageJ2 which includes many useful [plugins](/plugins) [contributed by the community](/contribute/fiji).
+[![](/media/icons/fiji.svg){:height="48px"} <span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](/software/fiji)—a "batteries-included" distribution of ImageJ and ImageJ2 which includes many useful [plugins](/plugins) [contributed by the community](/contribute/fiji).
 
 # What does ImageJ provide?
 
