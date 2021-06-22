@@ -50,335 +50,38 @@ Here is a list for supported functions and algorithms, as of version 2.1.
 
 ### Supported ImgLib algorithms
 
-<table border="1">
-<tr>
-<th>
-
-Description
-
-</th>
-<th>
-
-Syntax
-
-</th>
-</tr>
-<tr>
-<td>
-
-Gaussian convolution
-
-</td>
-<td>
-
-gauss(img, sigma)
-
-</td>
-</tr>
-<tr>
-<td>
-
-Floyd-Steinberg dithering
-
-</td>
-<td>
-
-dither(img)
-
-</td>
-</tr>
-<tr>
-<td>
-
-Image normalization (sum to 1)
-
-</td>
-<td>
-
-normalize(img)
-
-</td>
-</table>
+| Description                    | Syntax            |
+| ------------------------------ | ----------------- |
+| Gaussian convolution           | gauss(img, sigma) |
+| Floyd-Steinberg dithering      | dither(img)       |
+| Image normalization (sum to 1) | normalize(img)    |
 
 ### Supported functions
 
-<table border="1">
-<tr>
-<th>
-
-Description
-
-</th>
-<th>
-
-Syntax
-
-</th>
-</tr>
-<tr>
-<td>
-
-Euler constant
-
-</td>
-<td>
-
-e
-
-</td>
-</tr>
-<tr>
-<td>
-
-π
-
-</td>
-<td>
-
-pi
-
-</td>
-</tr>
-<tr>
-<td>
-
-Standard operators
-
-</td>
-<td>
-
-+, -, \*, /, ^, %
-
-</td>
-</tr>
-<tr>
-<td>
-
-Sine
-
-</td>
-<td>
-
-sin
-
-</td>
-</tr>
-<tr>
-<td>
-
-Cosine
-
-</td>
-<td>
-
-cos
-
-</td>
-</tr>
-<tr>
-<td>
-
-Tangent
-
-</td>
-<td>
-
-tan
-
-</td>
-</tr>
-<tr>
-<td>
-
-Arc Sine
-
-</td>
-<td>
-
-asin
-
-</td>
-</tr>
-<tr>
-<td>
-
-Arc Cosine
-
-</td>
-<td>
-
-acos
-
-</td>
-</tr>
-<tr>
-<td>
-
-Arc Tangent
-
-</td>
-<td>
-
-atan
-
-</td>
-</tr>
-<tr>
-<td>
-
-Arc Tangent 2 args
-
-</td>
-<td>
-
-atan2(y,x)
-
-</td>
-</tr>
-<tr>
-<td>
-
-Hyperbolic Sine
-
-</td>
-<td>
-
-sinh
-
-</td>
-</tr>
-<tr>
-<td>
-
-Hyperbolic Cosine
-
-</td>
-<td>
-
-cosh
-
-</td>
-</tr>
-<tr>
-<td>
-
-Hyperbolic Tangent
-
-</td>
-<td>
-
-tanh
-
-</td>
-</tr>
-<tr>
-<td>
-
-Natural Logarithm
-
-</td>
-<td>
-
-log
-
-</td>
-</tr>
-<tr>
-<td>
-
-Exponential
-
-</td>
-<td>
-
-exp
-
-</td>
-</tr>
-<tr>
-<td>
-
-Power
-
-</td>
-<td>
-
-pow
-
-</td>
-</tr>
-<tr>
-<td>
-
-Square Root
-
-</td>
-<td>
-
-sqrt
-
-</td>
-</tr>
-<tr>
-<td>
-
-Absolute Value
-
-</td>
-<td>
-
-abs
-
-</td>
-</tr>
-<tr>
-<td>
-
-Round
-
-</td>
-<td>
-
-round
-
-</td>
-</tr>
-<tr>
-<td>
-
-Floor
-
-</td>
-<td>
-
-floor
-
-</td>
-</tr>
-<tr>
-<td>
-
-Ceiling
-
-</td>
-<td>
-
-ceil
-
-</td>
-</tr>
-<tr>
-<td>
-
-Boolean operators
-
-</td>
-<td>
-
-!, &&, \|\|, &lt;, &gt;, !=, ==, &gt;=, &lt;=
-
-</td>
-</table>
+| Description | Syntax |
+| - | - |
+| Euler constant | e |
+| π |pi |
+| Standard operators | +, -, \*, /, ^, % |
+| Sine | sin |
+| Cosine | cos |
+| Tangent | tan |
+| Arc Sine | asin |
+| Arc Cosine |acos |
+| Arc Tangent | atan |
+| Arc Tangent 2 args | atan2(y,x) |
+| Hyperbolic Sine | sinh |
+| Hyperbolic Cosine | cosh |
+| Hyperbolic Tangent | tanh |
+| Natural Logarithm | log |
+| Exponential | exp |
+| Power | pow |
+| Square Root | sqrt |
+| Absolute Value | abs |
+| Round | round |
+| Floor | floor |
+| Ceiling | ceil |
+| Boolean operators | !, &&, \|\|, &lt;, &gt;, !=, ==, &gt;=, &lt;= |
 
 ## Extending the parser
 
