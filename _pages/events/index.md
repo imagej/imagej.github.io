@@ -1,7 +1,10 @@
 ---
-title: Upcoming Events
+title: Events
 section: Explore:Events
+description: Information about upcoming and past ImageJ-related events
 ---
+
+## Upcoming events
 
 Please see [this list on the Image.sc Forum](https://forum.image.sc/t/upcoming-image-analysis-events/19912) of upcoming conferences, courses, and other events in the scientific imaging community.
 
