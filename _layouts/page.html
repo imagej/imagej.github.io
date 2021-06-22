@@ -17,13 +17,6 @@
       {% include layout/menu dockable=true %}
     </section>
 
-    <!-- Page title -->
-    <div class="container">
-      <header class="major special">
-        <h1><strong>{{page.title}}</strong></h1>
-      </header>
-    </div>
-
     <section id="right-column" class="sidebar dock">
       <!-- Vital stats -->
       {% include layout/statbox %}
@@ -35,6 +28,13 @@
         <ul data-toc="#content" data-toc-headings="h1,h2,h3,h4,h5,h6"></ul>
       </div>
     </section>
+
+    <!-- Page title -->
+    <div class="container">
+      <header class="major special">
+        <h1><strong>{{page.title}}</strong></h1>
+      </header>
+    </div>
 
     <!-- Nav bar -->
     {% include layout/nav-bar %}
