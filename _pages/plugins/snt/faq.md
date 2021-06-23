@@ -9,19 +9,17 @@ nav-title: FAQ
 
 ### How do I install SNT?
 
-See [Installation details](#SNT#Installation).
+See [Installation details](/plugins/snt/index#installation).
 
 ### How do I cite SNT?
 
-SNT is based on multiple publications. To cite SNT:
-
-  - Ferreira T, et al. (**2019**) (TBD)
+  - Arshadi, C., Günther, U., Eddison, M. Harrington, K.I.S, Ferreira T. [SNT: a unifying toolbox for quantification of neuronal anatomy](https://doi.org/10.1038/s41592-021-01105-7). *Nature Methods* 18, 374–377 (2021). 
 
 To reference specific modules/plugins that enhance SNT:
 
-  - **[Sholl Analysis](/plugins/sholl-analysis)**: Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](https://doi.org/10.1038/nmeth.3125), *Nature Methods* 11(10): 982–984
+  - **[Sholl Analysis](/plugins/sholl-analysis)**: Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. [Neuronal morphometry directly from bitmap images](https://doi.org/10.1038/nmeth.3125), *Nature Methods* 11(10): 982–984 (2014).
   - **[Tubular Geodesics](/plugins/snt/tubular-geodesics)**: Türetken E, Benmansour F, Fua P. [Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming](https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1). <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
-  - **[Cx3D](/plugins/snt/modeling)**: Zubler, F. & Douglas, R. [A framework for modeling the growth and development of neurons and networks](https://doi.org/10.3389/neuro.10.025.2009). Front. Comput. Neurosci. 3, 25 (2009)\].
+  - **[Cx3D](/plugins/snt/modeling)**: Zubler, F. & Douglas, R. [A framework for modeling the growth and development of neurons and networks](https://doi.org/10.3389/neuro.10.025.2009). Front. Comput. Neurosci. 3, 25 (2009).
 
 The original [Simple Neurite Tracer](#snt) publication is:
 
