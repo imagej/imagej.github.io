@@ -243,6 +243,8 @@
                 <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
                 <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
               {% include menu/section-end %} <!-- Explore/Libraries/ImgLib2 -->
+              
+              <li><a href="/libs">More...</a>
             {% include menu/section-end %} <!-- Explore/Libraries -->
 
             {% include menu/section title="Software" link="/software" %}
@@ -250,6 +252,7 @@
               <li><a href="/software/imagej">ImageJ</a>
               <li><a href="/software/imagej2">ImageJ2</a>
               <li><a href="/software/fiji">Fiji</a>
+              <li><a href="/software">More...</a>
             {% include menu/section-end %} <!-- Explore/Software -->
           {% include menu/section-end %} <!-- Explore -->
         </ul>
