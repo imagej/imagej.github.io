@@ -1,6 +1,7 @@
 ---
 title: Project Ideas
 section: Contribute
+project: /software/fiji
 nav-links: true
 ---
 
