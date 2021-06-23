@@ -1573,6 +1573,10 @@ button:disabled,
 
 
 @media screen and (max-width: 879px) {
+  .main {
+    padding: 0 1em 2em 1em;
+  }
+
   .main.style2, .main.style3 {
     width:100%;
   }
