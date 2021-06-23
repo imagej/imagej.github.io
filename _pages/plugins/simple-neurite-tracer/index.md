@@ -3,6 +3,7 @@ title: Simple Neurite Tracer
 nav-links: true
 nav-title: Index
 categories: [Uncategorized]
+doi: 10.1093/bioinformatics/btr390
 ---
 
 {% include warning/deprecated new="[SNT](/plugins/snt)"

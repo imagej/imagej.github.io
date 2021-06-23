@@ -3,6 +3,7 @@ mediawiki: Sholl_Analysis
 title: Sholl Analysis
 categories: [Analysis,Neuroanatomy]
 artifact: ca.mcgill:Sholl_Analysis
+doi: 10.1038/nmeth.3125
 ---
 
 <seo metak="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite, neuroanatomy" metad="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite,neuroanatomy" />
@@ -974,11 +975,9 @@ Releases notes are available on {% include github org='tferr' repo='ASA' branch=
 
 While in development (2005-2014), and prior to its [publication](#publication), *Sholl Analysis* has been cited by [several manuscripts](https://scholar.google.ca/scholar?as_q=&as_epq=Sholl+Analysis&as_oq=imagej+fiji&as_eq=%22Simple+Neurite+Tracer%22&as_occt=any&as_sauthors=&as_publication=&as_ylo=2005&as_yhi=2014&btnG=&hl=en&as_sdt=1%2C5&as_vis=1). The manuscripts citing its 2014 [publication](#publication) can be retrieved using [Scholar](https://scholar.google.ca/scholar?cites=15441574333602897335&as_sdt=2005&sciodt=1,5&hl=en) or [PubMed](http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25264773/citedby/?tool=pubmed). Below is a list of publications from authors that have made the developer aware how the program contributed to their research.
 
--   Stanko JP, Easterling MR, Fenton SE. Application of Sholl analysis to quantify changes in growth and development in rat mammary gland whole mounts. Reprod Toxicol. 2015 Jul;54:129-35 [PMID 25463529](http://www.ncbi.nlm.nih.gov/pubmed/25463529)
+-   {% include citation doi='10.1016/j.reprotox.2014.11.004' %}
 
-<!-- -->
-
--   Kroner A, Greenhalgh AD, Zarruk JG, Passos Dos Santos R, Gaestel M, David S. TNF and increased intracellular iron alter macrophage polarization to a detrimental M1 phenotype in the injured spinal cord. Neuron. 2014 Sep 3;83(5):1098-116 [PMID 25132469](http://www.ncbi.nlm.nih.gov/pubmed/25132469)
+-   {% include citation doi='10.1016/j.neuron.2014.07.027' %}
 
 {% include notice icon="info" content='Please append your work here, if the plugin has been useful to your work.' %}
 
@@ -988,15 +987,14 @@ This program is free software; you can redistribute it and/or modify it under th
 
 ## References
 
-[^1]: Ferreira TA, Iacono LL, Gross CT. Serotonin receptor 1A modulates actin dynamics and restricts dendritic growth in hippocampal neurons. Eur J Neurosci. 2010 Jul;32(1):18-26. [PMID: 20561047](http://www.ncbi.nlm.nih.gov/pubmed?term=20561047)
+{% include citation fn=1 doi='10.1111/j.1460-9568.2010.07283.x' %}
 
 [^2]: Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [PMID: 13117757](http://www.ncbi.nlm.nih.gov/pubmed?term=13117757)
 
-[^3]: Ristanović D, Milosević NT, Stulić V. Application of modified Sholl analysis to neuronal dendritic arborization of the cat spinal cord. J Neurosci Methods. 2006 Dec 15;158(2):212-8. [PMID: 16814868](http://www.ncbi.nlm.nih.gov/pubmed?term=16814868)
+{% include citation fn=3 doi='10.1016/j.jneumeth.2006.05.030' %}
 
-[^4]: Schoenen J. The dendritic organization of the human spinal cord: the dorsal horn. Neuroscience. 1982;7(9):2057-87.[PMID: 7145088](http://www.ncbi.nlm.nih.gov/pubmed?term=7145088)
+{% include citation fn=4 doi='10.1016/0306-4522(82)90120-8' %}
 
-[^5]: Milosević NT, Ristanović D. The Sholl analysis of neuronal cell images: semi-log or log-log method? J Theor Biol. 2007 Mar 7;245(1):130-40 [PMID: 17084415](http://www.ncbi.nlm.nih.gov/pubmed?term=17084415)
+{% include citation fn=5 doi='10.1016/j.jtbi.2006.09.022' %}
 
-[^6]: Brown KM, Barrionuevo G, Canty AJ, De Paola V, Hirsch JA, Jefferis GS, Lu J, Snippe M, Sugihara I, Ascoli GA. The DIADEM data sets: representative light microscopy images of neuronal morphology to advance automation of digital reconstructions. Neuroinformatics. 2011 Sep;9(2-3):143-57, [PMID: 21249531](http://www.ncbi.nlm.nih.gov/pubmed?term=21249531)
-
+{% include citation fn=6 doi='10.1007/s12021-010-9095-5' %}

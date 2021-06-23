@@ -3,6 +3,7 @@ mediawiki: SNT:_Modeling
 title: SNT › Modeling
 nav-links: true
 nav-title: Modeling
+doi: 10.3389/neuro.10.025.2009
 ---
 
 {% capture title%}
@@ -16,4 +17,4 @@ Currently, an [IDE](/develop/ides) is the most effective way to implement custom
 
 ## References
 
-[^1]: Zubler, F. & Douglas, R. A framework for modeling the growth and development of neurons and networks. Front. Comput. Neurosci. 3, 25 (2009) [<PMID:19949465>](http://www.ncbi.nlm.nih.gov/pubmed?term=19949465).
+{% include citation fn=1 %}
