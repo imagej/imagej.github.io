@@ -220,6 +220,7 @@
               <li><a href="/events/presentations">Presentations</a></li>
               <li><a href="/events/hackathons">Conferences</a></li>
               <li><a href="/events/hackathons">Hackathons</a></li>
+              <li><a href="/events">More...</a></li>
             {% include menu/section-end %} <!-- Discuss/Events -->
 
             {% include menu/section title="Libraries" link="/libs" %}
@@ -244,15 +245,15 @@
                 <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
               {% include menu/section-end %} <!-- Explore/Libraries/ImgLib2 -->
               
-              <li><a href="/libs">More...</a>
+              <li><a href="/libs">More...</a></li>
             {% include menu/section-end %} <!-- Explore/Libraries -->
 
             {% include menu/section title="Software" link="/software" %}
-              <li><a href="/software/nih-image">NIH Image</a>
-              <li><a href="/software/imagej">ImageJ</a>
-              <li><a href="/software/imagej2">ImageJ2</a>
-              <li><a href="/software/fiji">Fiji</a>
-              <li><a href="/software">More...</a>
+              <li><a href="/software/nih-image">NIH Image</a></li>
+              <li><a href="/software/imagej">ImageJ</a></li>
+              <li><a href="/software/imagej2">ImageJ2</a></li>
+              <li><a href="/software/fiji">Fiji</a></li>
+              <li><a href="/software">More...</a></li>
             {% include menu/section-end %} <!-- Explore/Software -->
           {% include menu/section-end %} <!-- Explore -->
         </ul>
