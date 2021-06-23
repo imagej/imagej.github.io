@@ -82,9 +82,6 @@
               <li><a href="/scripting/headless">Running Headlessly</a></li>
               <li><a href="/scripting/comparisons">Scripting Comparisons</a></li>
               <li><a href="/scripting/toolbox">Toolbox</a></li>
-              <li><a href="/scripting/multithreaded-image-processing-in-clojure">Multithreading with Clojure</a></li>
-              <li><a href="/scripting/multithreaded-image-processing-in-javascript">Multithreading in Javascript</a></li>
-              <li><a href="/scripting/chess">Chess in Jython</a></li>
 
               {% include menu/section title="Languages" %}
                 <li><a href="/scripting/beanshell">BeanShell Scripting</a></li>

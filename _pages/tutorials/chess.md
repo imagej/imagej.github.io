@@ -1,7 +1,5 @@
 ---
-mediawiki: Chess
 title: Chess
-section: Extend:Scripting
 project: /software/imagej
 ---
 
