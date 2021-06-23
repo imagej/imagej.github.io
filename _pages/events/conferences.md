@@ -1,5 +1,6 @@
 ---
 title: Conferences
+section: Explore:Events
 ---
 
 The core ImageJ development teams and greater image analysis community

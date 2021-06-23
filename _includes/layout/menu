@@ -218,7 +218,7 @@
 
             {% include menu/section title="Events" link="/events" %}
               <li><a href="/events/presentations">Presentations</a></li>
-              <li><a href="/events/hackathons">Conferences</a></li>
+              <li><a href="/events/conferences">Conferences</a></li>
               <li><a href="/events/hackathons">Hackathons</a></li>
               <li><a href="/events">More...</a></li>
             {% include menu/section-end %} <!-- Discuss/Events -->

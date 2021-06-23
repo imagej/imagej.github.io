@@ -1,6 +1,6 @@
 ---
 title: Presentations
-section: Events
+section: Explore:Events
 ---
 
 This page collects ImageJ-related presentations, including talks, workshops and posters.
