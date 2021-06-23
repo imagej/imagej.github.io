@@ -1,6 +1,7 @@
 ---
 mediawiki: Image_Expression_Parser
 title: Image Expression Parser
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:Image_Expression_Parser
 ---

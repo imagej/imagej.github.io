@@ -1,6 +1,7 @@
 ---
 mediawiki: Bleach_Correction
 title: Bleach Correction
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:CorrectBleach_
 ---

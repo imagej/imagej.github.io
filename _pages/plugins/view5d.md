@@ -1,6 +1,7 @@
 ---
 mediawiki: View5D
 title: View5D
+project: /software/fiji
 categories: [Visualization]
 artifact: sc.fiji:View5D_
 ---

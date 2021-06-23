@@ -1,6 +1,7 @@
 ---
 mediawiki: FijiArchipelago
 title: FijiArchipelago
+project: /software/fiji
 categories: [TrakEM2]
 artifact: sc.fiji:Fiji_Archipelago
 ---

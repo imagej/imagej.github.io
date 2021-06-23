@@ -1,6 +1,7 @@
 ---
 mediawiki: Anisotropic_Diffusion_2D
 title: Anisotropic Diffusion 2D
+project: /software/fiji
 categories: [Filtering]
 artifact: sc.fiji:Anisotropic_Diffusion_2D
 doi: 10.1109/TPAMI.2005.87

@@ -1,6 +1,7 @@
 ---
 mediawiki: Help_on_Menu_Item
 title: Help on Menu Item
+project: /software/fiji
 categories: [Help]
 artifact: sc.fiji:Fiji_Plugins
 ---

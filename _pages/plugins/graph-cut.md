@@ -1,6 +1,7 @@
 ---
 mediawiki: Graph_Cut
 title: Graph Cut
+project: /software/fiji
 categories: [Segmentation,Tutorials]
 artifact: sc.fiji:Graph_Cut
 ---

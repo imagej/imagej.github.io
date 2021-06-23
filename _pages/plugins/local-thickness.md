@@ -1,6 +1,7 @@
 ---
 mediawiki: Local_Thickness
 title: Local Thickness
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:LocalThickness_
 ---

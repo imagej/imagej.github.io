@@ -1,6 +1,7 @@
 ---
 mediawiki: SPIM_Registration
 title: SPIM Registration
+project: /software/fiji
 categories: [Registration]
 artifact: sc.fiji:SPIM_Registration
 ---

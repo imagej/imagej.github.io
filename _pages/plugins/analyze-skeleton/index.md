@@ -1,6 +1,7 @@
 ---
 mediawiki: AnalyzeSkeleton
 title: AnalyzeSkeleton
+project: /software/fiji
 categories: [Skeleton,Analysis,Neuroanatomy]
 artifact: sc.fiji:AnalyzeSkeleton_
 doi: 10.1002/jemt.20829

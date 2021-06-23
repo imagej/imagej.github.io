@@ -1,6 +1,7 @@
 ---
 mediawiki: Reconstruct_Reader
 title: Reconstruct Reader
+project: /software/fiji
 categories: [TrakEM2]
 artifact: sc.fiji:Reconstruct_Reader
 ---

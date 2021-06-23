@@ -1,6 +1,7 @@
 ---
 mediawiki: Register_Virtual_Stack_Slices
 title: Register Virtual Stack Slices
+project: /software/fiji
 categories: [Registration,TrakEM2]
 artifact: sc.fiji:register_virtual_stack_slices
 ---

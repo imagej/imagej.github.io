@@ -1,6 +1,7 @@
 ---
 mediawiki: SIOX:_Simple_Interactive_Object_Extraction
 title: "SIOX: Simple Interactive Object Extraction"
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:Siox_Segmentation
 ---

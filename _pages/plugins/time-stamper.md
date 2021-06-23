@@ -1,6 +1,7 @@
 ---
 mediawiki: Time_Stamper
 title: Time Stamper
+project: /software/fiji
 categories: [Image Annotation]
 artifact: sc.fiji:Time_Stamper
 ---

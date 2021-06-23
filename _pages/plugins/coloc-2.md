@@ -1,6 +1,7 @@
 ---
 mediawiki: Coloc_2
 title: Coloc 2
+project: /software/fiji
 categories: [Colocalization,Color Processing]
 artifact: sc.fiji:Colocalisation_Analysis
 ---

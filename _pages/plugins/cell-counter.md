@@ -1,6 +1,7 @@
 ---
 mediawiki: Cell_Counter
 title: Cell Counter
+project: /software/fiji
 categories: [Particle Analysis]
 artifact: sc.fiji:Cell_Counter
 ---

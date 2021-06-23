@@ -1,6 +1,7 @@
 ---
 mediawiki: ToAST
 title: ToAST
+project: /software/fiji
 categories: [Tracking]
 artifact: sc.fiji:ToAST_
 ---

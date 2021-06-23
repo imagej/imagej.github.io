@@ -1,6 +1,7 @@
 ---
 mediawiki: Stack_Manipulation
 title: Stack Manipulation
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:Stack_Manipulation
 ---

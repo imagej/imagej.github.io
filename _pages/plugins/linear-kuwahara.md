@@ -1,6 +1,7 @@
 ---
 mediawiki: Linear_Kuwahara
 title: Linear Kuwahara
+project: /software/fiji
 categories: [Tutorials]
 artifact: sc.fiji:Linear_Kuwahara
 ---

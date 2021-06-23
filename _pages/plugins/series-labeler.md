@@ -1,6 +1,7 @@
 ---
 mediawiki: Series_Labeler
 title: Series Labeler
+project: /software/fiji
 categories: [Image Annotation]
 artifact: sc.fiji:Series_Labeler
 ---

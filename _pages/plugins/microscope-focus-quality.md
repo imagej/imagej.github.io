@@ -1,6 +1,7 @@
 ---
 mediawiki: Microscope_Focus_Quality
 title: Microscope Focus Quality
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:microscope-image-quality
 doi: 10.1186/s12859-018-2087-4

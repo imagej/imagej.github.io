@@ -1,6 +1,7 @@
 ---
 mediawiki: IJ_Robot
 title: IJ Robot
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:IJ_Robot
 ---

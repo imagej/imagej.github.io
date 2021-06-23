@@ -1,6 +1,7 @@
 ---
 mediawiki: Samples
 title: Samples
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:Samples_
 ---

@@ -1,6 +1,7 @@
 ---
 mediawiki: Correct_3D_Drift
 title: Correct 3D Drift
+project: /software/fiji
 categories: [Registration]
 artifact: sc.fiji:Correct_3D_Drift
 ---

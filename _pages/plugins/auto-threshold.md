@@ -1,6 +1,7 @@
 ---
 mediawiki: Auto_Threshold
 title: Auto Threshold
+project: /software/fiji
 categories: [Segmentation]
 artifact: sc.fiji:Auto_Threshold
 ---

@@ -1,6 +1,7 @@
 ---
 mediawiki: Colour_Deconvolution
 title: Colour Deconvolution
+project: /software/fiji
 categories: [Color Processing]
 artifact: sc.fiji:Colour_Deconvolution
 ---

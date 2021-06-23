@@ -1,6 +1,7 @@
 ---
 mediawiki: Gray_Morphology
 title: Gray Morphology
+project: /software/fiji
 categories: [Segmentation, Mathematical Morphology]
 artifact: sc.fiji:Gray_Morphology
 ---

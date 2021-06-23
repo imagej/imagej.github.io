@@ -1,6 +1,7 @@
 ---
 mediawiki: Balloon
 title: Balloon
+project: /software/fiji
 categories: [Segmentation]
 artifact: sc.fiji:BalloonSegmentation_
 doi: 10.1038/nmeth.1940

@@ -1,6 +1,7 @@
 ---
 mediawiki: Manual_Tracking
 title: Manual Tracking
+project: /software/fiji
 categories: [Particle Analysis,Tracking]
 artifact: sc.fiji:Manual_Tracking
 ---

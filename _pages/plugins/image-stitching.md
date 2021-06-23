@@ -1,6 +1,7 @@
 ---
 mediawiki: Image_Stitching
 title: Image Stitching
+project: /software/fiji
 categories: [Registration,Stitching,Cookbook]
 artifact: sc.fiji:Stitching_
 ---

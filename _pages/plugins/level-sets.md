@@ -1,6 +1,7 @@
 ---
 mediawiki: Level_Sets
 title: Level Sets
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:level_sets
 extensions: ["mathjax"]

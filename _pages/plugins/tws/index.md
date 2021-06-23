@@ -1,6 +1,7 @@
 ---
 mediawiki: Trainable_Weka_Segmentation
 title: Trainable Weka Segmentation
+project: /software/fiji
 categories: [Segmentation,Machine Learning]
 artifact: sc.fiji:Trainable_Segmentation
 doi: 10.1093/bioinformatics/btx180

@@ -1,6 +1,7 @@
 ---
 mediawiki: Arrow
 title: Arrow
+project: /software/fiji
 categories: [Image Annotation]
 artifact: sc.fiji:Arrow_
 ---

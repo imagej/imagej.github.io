@@ -1,6 +1,7 @@
 ---
 mediawiki: BUnwarpJ
 title: BUnwarpJ
+project: /software/fiji
 categories: [Registration]
 artifact: sc.fiji:bUnwarpJ_
 extensions: ["mathjax"]

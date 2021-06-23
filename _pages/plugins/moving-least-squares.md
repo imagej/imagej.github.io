@@ -1,6 +1,7 @@
 ---
 mediawiki: Moving_Least_Squares
 title: Moving Least Squares
+project: /software/fiji
 categories: [Tutorials]
 doi: 10.1145/1179352.1141920
 artifact: sc.fiji:VIB_

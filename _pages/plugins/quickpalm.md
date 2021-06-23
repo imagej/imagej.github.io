@@ -1,5 +1,6 @@
 ---
 title: QuickPALM
+project: /software/fiji
 categories: [Super-resolution]
 artifact: sc.fiji:QuickPALM_
 doi: 10.1038/nmeth0510-339

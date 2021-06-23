@@ -1,6 +1,7 @@
 ---
 mediawiki: Directionality
 title: Directionality
+project: /software/fiji
 categories: [Analysis]
 artifact: sc.fiji:Directionality_
 extensions: ["mathjax"]

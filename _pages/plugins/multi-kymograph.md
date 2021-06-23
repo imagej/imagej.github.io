@@ -1,6 +1,7 @@
 ---
 mediawiki: Multi_Kymograph
 title: Multi Kymograph
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:Multi_Kymograph
 ---

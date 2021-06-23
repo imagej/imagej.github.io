@@ -1,5 +1,6 @@
 ---
 title: Sync Windows
+project: /software/fiji
 categories: [User Interface]
 artifact: sc.fiji:Sync_Win
 ---

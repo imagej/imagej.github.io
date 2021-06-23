@@ -1,6 +1,7 @@
 ---
 mediawiki: MTrack2
 title: MTrack2
+project: /software/fiji
 categories: [Tracking]
 artifact: sc.fiji:MTrack2_
 ---

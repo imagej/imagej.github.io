@@ -1,6 +1,7 @@
 ---
 mediawiki: Frangi
 title: Frangi
+project: /software/fiji
 artifact: sc.fiji:Feature_Detection
 doi: 10.1007/BFb0056195
 categories: [Uncategorized]

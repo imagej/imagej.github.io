@@ -1,6 +1,7 @@
 ---
 mediawiki: Make_Fiji_Package
 title: Make Fiji Package
+project: /software/fiji
 categories: [Tutorials]
 artifact: sc.fiji:Fiji_Package_Maker
 ---

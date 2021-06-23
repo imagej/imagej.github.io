@@ -1,6 +1,7 @@
 ---
 mediawiki: RATS:_Robust_Automatic_Threshold_Selection
 title: "RATS: Robust Automatic Threshold Selection"
+project: /software/fiji
 categories: [Segmentation,Tutorials]
 artifact: sc.fiji:RATS_
 ---

@@ -1,6 +1,7 @@
 ---
 mediawiki: Helmholtz_Analysis
 title: Helmholtz Analysis
+project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:Helmholtz_Analysis
 ---

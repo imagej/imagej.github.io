@@ -1,6 +1,7 @@
 ---
 mediawiki: TopoJ
 title: TopoJ
+project: /software/fiji
 categories: [Tutorials]
 artifact: sc.fiji:TopoJ_
 ---

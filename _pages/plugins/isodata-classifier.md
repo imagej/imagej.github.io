@@ -1,6 +1,7 @@
 ---
 mediawiki: IsoData_Classifier
 title: IsoData Classifier
+project: /software/fiji
 categories: [Segmentation]
 artifact: sc.fiji:IsoData_Classifier
 ---

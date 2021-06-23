@@ -1,6 +1,7 @@
 ---
 mediawiki: Multiview-Reconstruction
 title: Multiview-Reconstruction
+project: /software/fiji
 categories: [Transform,Registration,Deconvolution,ImgLib,Integral Image]
 artifact: sc.fiji:SPIM_Registration
 ---
