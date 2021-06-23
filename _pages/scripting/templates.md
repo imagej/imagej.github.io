@@ -1,7 +1,7 @@
 ---
-mediawiki: Script_Templates
 title: Script Templates
 section: Extend:Scripting
+project: /libs/scijava
 ---
 
 Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [Script Editor](/scripting/script-editor). Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
@@ -21,5 +21,3 @@ Above all else, templates should be **well documented**. Templates are intended 
 Ideally, a template will be focused on an a single objective (e.g. opening an image, calculating a threshold, operating on a directory, etc...).
 
 It is especially helpful to document how the template can be adapted to meet the user's needs.
-
-

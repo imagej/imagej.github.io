@@ -1,7 +1,7 @@
 ---
-mediawiki: Introduction_into_Macro_Programming
 title: Introduction into Macro Programming
 section: Extend:Scripting:Languages
+project: /software/imagej
 ---
 
 # Why Macros?
@@ -34,7 +34,7 @@ A variable can be assigned like this:
 factor = 1024;
 ```
 
-In this example, *factor* is the name of the variable, *1024* is the value assigned to the variable. The semicolon tells ImageJ that the assignment is done.
+In this example, `factor` is the name of the variable, `1024` is the value assigned to the variable. The semicolon tells ImageJ that the assignment is done.
 
 Example: assign text to a variable:
 
@@ -42,7 +42,7 @@ Example: assign text to a variable:
 message = "Hello, World!";
 ```
 
-In this case, the variable is named *message*, and the text *Hello, World!* is assigned to it; Text is specified inside double quotes.
+In this case, the variable is named `message`, and the text `Hello, World!` is assigned to it; Text is specified inside double quotes.
 
 ## Using variables
 
@@ -54,7 +54,7 @@ y = 3;
 result = x * x + y + y;
 ```
 
-This assigns the variable *x* the value 2, the variable *y* the value 3, and then assigns the variable *result* the square of *x* plus the square of *y*.
+This assigns the variable `x` the value 2, the variable `y` the value 3, and then assigns the variable `result` the square of `x` plus the square of `y`.
 
 This example shows how to [concatenate](https://www.techopedia.com/definition/3470/concatenation-programming) a fixed text with the value of a variable:
 
@@ -99,7 +99,7 @@ When a variable is assigned, the right-hand side is evaluated first, and only th
 amount = amount * 2;
 ```
 
-First, *amount \* 2* is evaluated. The result is then assigned back to the variable *amount*, effectively doubling it.
+First, `amount * 2` is evaluated. The result is then assigned back to the variable `amount`, effectively doubling it.
 
 A very important operation is to increment a variable's value by one:
 
@@ -118,19 +118,19 @@ counter++;
 
 Most of the time, you will call *functions* which implement the actions you want to execute. Functions have names, like variables, but they also have *parameters* that you can pass to the functions. ImageJ comes with many [predefined functions](https://imagej.nih.gov/ij/developer/macro/functions.html) that you can call to perform specific calculations or other operations.
 
-This example writes *Hello, World!* to the *Log* window:
+This example writes `Hello, World!` to the *Log* window:
 
 ```javascript
 write("Hello, World!");
 ```
 
-As before, a semicolon signifies the end of the statement. The name of the function is *write*, and the parameter list is enclosed in parentheses. In the case of *write*, there is only one parameter. If there are more parameters to be passed, they have to be separated by commas:
+As before, a semicolon signifies the end of the statement. The name of the function is `write`, and the parameter list is enclosed in parentheses. In the case of `write`, there is only one parameter. If there are more parameters to be passed, they have to be separated by commas:
 
 ```javascript
 newImage("My pretty new image", "8-bit black", 640, 480, 1);
 ```
 
-Like *write*, *newImage* is a builtin function of ImageJ. The order of the parameters is relevant, this is the way the function knows what each parameter means.
+Like `write`, `newImage` is a builtin function of ImageJ. The order of the parameters is relevant, this is the way the function knows what each parameter means.
 
 ## Defining functions
 
@@ -143,7 +143,7 @@ function closeImageByTitle(title) {
 }
 ```
 
-Note that the *title* is just another [variable](#Variables), which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable *title* set to *My pretty new image*:
+Note that the `title` is just another [variable](#Variables), which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable `title` set to `My pretty new image`:
 
 ```javascript
 closeImageByTitle("My pretty new image");
@@ -162,7 +162,7 @@ Everything after the two slashes up to the end of the line is a comment.
 
 ## Multi-line comments
 
-You can also have multi-line comments enclosed in */\* ... \*/* blocks:
+You can also have multi-line comments enclosed in `/* ... */` blocks:
 
 ```javascript
 /*
@@ -196,9 +196,9 @@ if (!is( "binary" )) {
 }
 ```
 
-There are several parts to a conditional block: the *if* keyword, the condition inside the parentheses, and the code block enclosed in curly braces.
+There are several parts to a conditional block: the `if` keyword, the condition inside the parentheses, and the code block enclosed in curly braces.
 
-In this case, the condition calls the function *is* to ask whether the current image is binary, and the exclamation mark negates the result, i.e. *!is("binary")* yields true if and only if the current image is <u>not</u> binary (as opposed to *is("binary")*, which returns true in the opposite case).
+In this case, the condition calls the function `is` to ask whether the current image is binary, and the exclamation mark negates the result, i.e. `!is("binary")` yields true if and only if the current image is <u>not</u> binary (as opposed to `is("binary")`, which returns true in the opposite case).
 
 If the code block consists of only one statement, the curly braces may be omitted, but it is a good practice to keep them (for example, nested conditional blocks are much easier to understand with curly braces than without).
 
@@ -206,7 +206,7 @@ Likewise, it is a good practice to *indent* the code inside the conditional bloc
 
 ## else
 
-You can optionally add an *else* clause, i.e. a code block that is executed when the condition is <b>not</b> met. Example:
+You can optionally add an `else` clause, i.e. a code block that is executed when the condition is <b>not</b> met. Example:
 
 ```javascript
 if (is("binary")) {
@@ -229,15 +229,15 @@ for (i = 0; i < 10; i++) {
 }
 ```
 
-This code will run *Dilate* ten times. The syntax of the *for* loop consists of the *for* keyword, followed by three statements enclosed in parentheses, and the code block to be executed.
+This code will run the Dilate command ten times. The syntax of the `for` loop consists of the `for` keyword, followed by three statements enclosed in parentheses, and the code block to be executed.
 
 The three statements defining how often to run the code block are the
 
-1.  initializer: typically, a counter variable is initialized, in this case *i* to the value zero,
-2.  the condition: as long as this condition is met (here *i &lt; 10*), the code block is executed,
+1.  initializer: typically, a counter variable is initialized, in this case `i` to the value zero,
+2.  the condition: as long as this condition is met (here `i < 10`), the code block is executed,
 3.  the incrementor: this statement is executed after the code block, just before testing again whether the block should be executed again.
 
-In this example, the variable *i* is first initialized to zero, then the condition is checked, and as *i* is smaller than 10, the code block is executed. After that, *i* is incremented, and the condition is checked again. As 1 is still smaller than 10, the code block is executed again. This repeats for the values 2, 3, ..., 9, but after the variable *i* was incremented from 9 to 10, the condition does not hold true anymore, so the loop is finished.
+In this example, the variable `i` is first initialized to zero, then the condition is checked, and as `i` is smaller than 10, the code block is executed. After that, `i` is incremented, and the condition is checked again. As 1 is still smaller than 10, the code block is executed again. This repeats for the values 2, 3, ..., 9, but after the variable `i` was incremented from 9 to 10, the condition does not hold true anymore, so the loop is finished.
 
 Even if the counter variable was not used inside the code block in this example, you are free to do so, of course.
 
@@ -270,7 +270,7 @@ for (i = 0; i < roiManager("count"); i++){
 
 # The recorder
 
-Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc path='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
+Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc path='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can click {% include button label="Create" %} to open the recorded instructions in an editor:
 
 ![](/media/scripting/macro-recorder.png)
 
@@ -289,9 +289,9 @@ run("Merge Channels...",
      "red=[Edges of " + title + "] green=" + title + " blue=" + title + " gray=*None*");
 ```
 
-Note that we need to use string concatenation in order to insert the current image's name in place of *boats.gif*, as described in [above](#using-variables).
+Note that we need to use string concatenation in order to insert the current image's name in place of `boats.gif`, as described in [above](#using-variables).
 
-In order to allow spaces in the name, you might also want to add extra *\[...\]* around the title:
+In order to allow spaces in the name, you might also want to add extra `[...]` around the title:
 
 ```javascript
 title = getTitle();
@@ -301,7 +301,7 @@ run("Merge Channels...",
 
 # Installing macros
 
-To install keyboard shortcuts or tool icons, you need to [wrap macro code in *macro* blocks](https://imagej.nih.gov/ij/developer/macro/macros.html#tools):
+To install keyboard shortcuts or tool icons, you need to [wrap macro code in `macro` blocks](https://imagej.nih.gov/ij/developer/macro/macros.html#tools):
 
 ```javascript
 macro "Title of the macro" {
@@ -311,9 +311,12 @@ macro "Title of the macro" {
 
 Then you need to *install* them:
 
-Simply save your macro in a "/plugins" subfolder of `./Fiji.app/scripts/` (e.g. `./Fiji.app/scripts/Plugins/MyScripts/My_Macro.ijm`), and it will appear in the respective menu (e.g. {% include bc path="Plugins | MyScripts | My Macro" %}) upon restart of [Fiji](/software/fiji).
+Simply save your macro in a `plugins` subfolder of `./ImageJ/scripts/` (e.g. `./ImageJ/scripts/Plugins/MyScripts/My_Macro.ijm`), and it will appear in the respective menu (e.g. {% include bc path="Plugins | MyScripts | My Macro" %}) after restarting the program.
 
-Note: The {% include bc path="Plugins | Macro | Install..." %} command is an ImageJ 1.x command that does not yet support the SciJava [Script Parameters](/scripting/parameters) syntax (@) that was introduced with ImageJ2.
+{% capture plugins-macros-install %}
+Note: The {% include bc path="Plugins | Macros | Install..." %} command is a command of the original ImageJ that does not yet support the SciJava [Script Parameters](/scripting/parameters) syntax (`#@`) that was introduced with [ImageJ2](/software/imagej2).
+{% endcapture %}
+{% include notice icon='imagej2' content=plugins-macros-install %}
 
 ## Keyboard shortcuts
 
@@ -345,7 +348,7 @@ macro "Save As JPEG Action Tool - C000R11ee" {
 }
 ```
 
-The icon is defined by a funny-looking string (in this case, *C000R11ee*). To learn how to define your own icon, please have a look [here](https://imagej.nih.gov/ij/developer/macro/macros.html#icons).
+The icon is defined by a funny-looking string (in this case, `C000R11ee`). To learn how to define your own icon, please have a look [here](https://imagej.nih.gov/ij/developer/macro/macros.html#icons).
 
 Many tools open an option dialog upon double-click on the icon. You can do that, too, by choosing a name that ends in *Action Tool Options*:
 
@@ -364,7 +367,7 @@ macro "Save As JPEG Action Tool Options" {
 
 This section contains a number of macros which you can use as starting points to write your own macros.
 
-If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)* or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc path='Templates | Macros | Process Folder'%}.
+If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial [How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory) or at the macro template that you can open in the [Script Editor](/scripting/script-editor) via {% include bc path='Templates | Macros | Process Folder' %}.
 
 ## Resizing to a given width of the selection bounds
 
@@ -643,7 +646,7 @@ For an example result, see [http://www.flickr.com/photos/mcammer/8551068739/]()
 
 Splits a grayscale image and merges. Works on stacks.
 
-Michael Cammer michael.cammer@med.nyu.edu with editing by Johannes Schindelin \[Johannes.Schindelin@gmx.de\] 20130312
+Michael Cammer with editing by {% include person id='dscho' %} 2013-03-12
 
 ```javascript
 macro "Split and Merge" {
@@ -665,7 +668,7 @@ macro "Split and Merge" {
 
 ## More example macros
 
-There are quite a lot of macros on the [ImageJ1 website](https://imagej.nih.gov/ij/macros/), and specifically [example macros](https://imagej.nih.gov/ij/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](https://imagej.nih.gov/ij/developer/index.html).
+There are quite a lot of macros on the [ImageJ website](https://imagej.nih.gov/ij/macros/), and specifically [example macros](https://imagej.nih.gov/ij/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](/events/conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](https://imagej.nih.gov/ij/developer/index.html).
 
 # Overcoming limitations
 
@@ -717,5 +720,3 @@ before the `exec` call. (since ImageJ 1.52u38)
 # Further documentation
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.nih.gov/ij/developer/index.html).
-
- 

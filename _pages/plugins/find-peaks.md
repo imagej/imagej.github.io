@@ -82,7 +82,7 @@ Analysis of 1D-signals was discussed in March 2014 on the [ImageJ mailing list](
 
 -   [PeakFinder Tool](http://simon.bio.uva.nl/objectj/examples/PeakFinder/peakfinder.html) by Norbert Vischer, a [macro](/scripting/macro) tool that retrieves intensity peaks along a straight line ROI.
 -   [Multi-Peak fitting using R](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#rmulti-peak_fitting_using_r) by Kota Miura, a [Jython](/scripting/jython) script that calls the [R](http://www.r-project.org) package [Peaks](http://cran.r-project.org/web/packages/Peaks/index.html). Requires [Rserve](http://www.rforge.net/Rserve/doc.html) ([instructions](http://cmci.embl.de/documents/101105ij_r_jython#using_r_from_imagej_via_rserve))
--   [Fast Filters plugin](http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:fast_filters:start) by Michael Schmid, a collection of unidirectional filters that can be applied to to rows or columns in an image ([instructions](https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934)).
+-   [Fast Filters plugin](http://imagejdocu.list.lu/doku.php?id=plugin:filter:fast_filters:start) by Michael Schmid, a collection of unidirectional filters that can be applied to to rows or columns in an image ([instructions](https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934)).
 
 ## Installation
 

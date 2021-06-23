@@ -1,24 +1,24 @@
 ---
-mediawiki: JRuby_Scripting
 title: JRuby Scripting
 section: Extend:Scripting:Languages
+project: /software/imagej
 ---
 
 [JRuby](http://jruby.codehaus.org/) is a marvellous project that created a complete implementation of Ruby that runs in the JVM. The excellent work of the authors of JRuby has made it very simple for us to add JRuby scripting into ImageJ.
 
-JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macro language. It has the following advantages:
+JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's [macro language](/scripting/macro). It has the following advantages:
 
 -   You don't have to learn a new language to script ImageJ (assuming you know Ruby)
 -   You're not limited to using the functionality exposed by the macro language: you can use any class in ImageJ, one of its plugins or standard Java classes
 -   Developing JRuby scripts is very fast compared to developing plugins in Java
 
-*(These advantages, of course, are shared by the [Jython Scripting](/scripting/jython), [Clojure Scripting](/scripting/clojure), Beanscript and [Javascript Scripting](/scripting/javascript) bundled in Fiji.)*
+{% include notice icon='info' content="These advantages, of course, are shared by all the scripting languages available in [ImageJ2](/software/imagej2), including [Jython](/scripting/jython), [Clojure](/scripting/clojure), [BeanShell](/scripting/beanshell) and [JavaScript](/scripting/javascript)." %}
 
-If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [ImageJ forum](https://forum.imagej.net). Have fun!
+If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [Image.sc Forum](https://forum.image.sc/). Have fun!
 
 ## Tutorial
 
-Let's start writing some JRuby right away - start up the interpreter by going to {% include bc path='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
+Let's start writing some JRuby right away—start up the interpreter by going to {% include bc path='Plugins | Scripting | JRuby Interpreter'%}. The interpreter window will pop up, but it may take a little time for the JRuby runtime to be ready. You should initially see the message:
 ```
 Starting JRuby ...
 ```
@@ -75,7 +75,7 @@ Note that this is an example of creating an object in JRuby; you use the usual `
 
 ### Importing classes
 
-If you need to use classes that aren't in the `java.*` or `ij.*` hierarchy—or if you are developing JRuby scripts in the [Script Editor](/scripting/script-editor)—you will have to include them explicitly.
+If you need to use classes that aren't in the `java.*` or `ij.*` hierarchy—or if you are developing JRuby scripts in the [Script Editor](/scripting/script-editor) of [ImageJ2](/software/imagej2)—you will have to include them explicitly.
 
 {%- include warning/importing-classes lang='JRuby' -%}
 
@@ -218,7 +218,7 @@ or:
 image = get_image
 ```
 
-The "run" method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](https://imagej.nih.gov/ij/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' branch='master' path='plugins/Examples/Blobs_Demo_in_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same - for example, if you compare the invocation of `getSelectionCoordinates,` you'll find that whereas the ImageJ macro version passes in the output variables:
+The `run` method may also be particularly useful for calling existing ImageJ plugins and commands. The next section has an example of the use of this. It may be instructive to compare the ["Blobs Demo" macro](https://imagej.nih.gov/ij/macros/ConvexHull.txt) from the ImageJ distribution with {% include github repo='fiji' branch='master' path='plugins/Examples/Blobs_Demo_in_Ruby.rb' label='a version ported to JRuby' %}. The use of the analagous function in JRuby is not always the same—for example, if you compare the invocation of `getSelectionCoordinates,` you'll find that whereas the ImageJ macro version passes in the output variables:
 
 ```ruby
 getSelectionCoordinates(xCoordinates, yCoordinates);
@@ -230,7 +230,10 @@ getSelectionCoordinates(xCoordinates, yCoordinates);
 x_coordinates, y_coordinates = get_selection_coordinates
 ```
 
+{% capture help-wanted %}
 A note for the interested programmer: About 15% of the macro functions have be done so far, and if anyone wanted to help out with doing the rest, that would be excellent! The source code {% include github repo='fiji' branch='master' path='plugins/JRuby/imagej.rb' label='can be found here' %}.
+{% endcapture %}
+{% include notice icon='tech' content=help-wanted %}
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -261,13 +264,15 @@ Some example output:
 
 ## Script Parameters
 
+{% include notice icon='imagej2' content="This section describes features specific to [ImageJ2](/software/imagej2), which are not available in the original [ImageJ](/software/imagej)." %}
+
 When using [Script Parameters](/scripting/parameters), e.g., in the [Script Editor](/scripting/script-editor), you need to use a `$` before `@ variables`, due to a limitation in the scoping, as in this example from [Script Templates](/scripting/templates):
 
 {% include code org='scijava' repo='scripting-jruby' branch='master' path='src/main/resources/script_templates/Intro/Greeting.rb' label='Greeting.rb' %}
 
 ## Library
 
-There is a library called {% include github repo='fiji' branch='master' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](/scripting/script-editor).
+The [Fiji](/software/fiji) distribution of ImageJ includes a library called {% include github repo='fiji' branch='master' path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [Script Editor](/scripting/script-editor).
 
 ## What next?
 

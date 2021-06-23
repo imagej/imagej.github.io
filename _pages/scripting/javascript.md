@@ -1,7 +1,7 @@
 ---
-mediawiki: JavaScript_Scripting
 title: JavaScript Scripting
 section: Extend:Scripting:Languages
+project: /software/imagej
 ---
 
 {% include wikipedia title='JavaScript' text='JavaScript'%} is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](/develop/plugins), including language name and syntax, the two are distinct languages and differ greatly in their design.
@@ -43,9 +43,9 @@ For some packages there are build in shortcuts. You can use `java.io.File` inste
 There are two ways:
 
 -   Direct: the variable is globally visible (dangerous! Leads to nasty bugs.)
--   With a <i>var</i> declaration: the variable is local, visible only within the innermost code block.
+-   With a `var` declaration: the variable is local, visible only within the innermost code block.
 
-<b>Local</b> variables are also <b>faster</b>, because they can be [efficiently optimized for access](http://www.mozilla.org/rhino/perf.html). Examples:
+**Local** variables are also **faster**, because they can be [efficiently optimized for access](http://www.mozilla.org/rhino/perf.html). Examples:
 
 ```java
 importClass(Packages.ij.IJ);
@@ -82,11 +82,11 @@ for (var i = 0; i< names.length; i++) {
 
 ### Arrays
 
-There are both Javascript arrays and native java arrays.
+There are both JavaScript arrays and native java arrays.
 
-#### Javascript arrays
+#### JavaScript arrays
 
-There are many ways to create a Javascript array. Here are a few:
+There are many ways to create a JavaScript array. Here are a few:
 
 ```java
 importClass(Packages.ij.IJ);
@@ -108,7 +108,7 @@ IJ.log( "Number of X coords: " + coords[0].length );
 IJ.log( "Number of Y coords: " + coords[1].length );
 ```
 
-Arrays in Javascript are extremely flexible:
+Arrays in JavaScript are extremely flexible:
 
 ```java
 importClass(Packages.ij.IJ);
@@ -146,7 +146,7 @@ print(pixels);
 print(pixels.length);
 ```
 
-To manipulate such arrays, just do so as if they were Javascript arrays. Beware, though, that now you are limited to numerical indices only, and within the array size only!
+To manipulate such arrays, just do so as if they were JavaScript arrays. Beware, though, that now you are limited to numerical indices only, and within the array size only!
 
 ```java
 width = 512
@@ -180,7 +180,7 @@ var pixels2 = new ByteArray(10);
 print(pixels2.length);
 ```
 
-Above, beware of all problems derived from manipulating signed byte\[\] arrays, whose values should be made unsigned first, modified, then signed back into the array.
+Above, beware of all problems derived from manipulating signed `byte[]` arrays, whose values should be made unsigned first, modified, then signed back into the array.
 
 ### Functions
 
@@ -204,7 +204,7 @@ invertImage(imp);
 imp.updateAndDraw();
 ```
 
-The number of arguments you invoke a function with is flexible. All arguments with which a function is invoked are collected in a variable named <i>arguments</i>.
+The number of arguments you invoke a function with is flexible. All arguments with which a function is invoked are collected in a variable named `arguments`.
 
 For example:
 
@@ -236,13 +236,13 @@ var imp = createImage(400, 400, "RGB");
 imp.show();
 ```
 
-For a complex example see the example script {% include github repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js' label='Multithreaded Image Processing in Javascript' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
+For a complex example see the example script {% include github org='fiji' repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js' label='Multithreaded Image Processing in JavaScript' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
 
 #### Functions as Objects
 
-Any number of variables may be created on the fly on the body of a function, on its own <i>this</i> self reference pointer.
+Any number of variables may be created on the fly on the body of a function, on its own `this` self reference pointer.
 
-To create an object in Javascript, just declare a function first that stores the object's data:
+To create an object in JavaScript, just declare a function first that stores the object's data:
 
 ```java
 // Use uppercase, by convention
@@ -298,7 +298,7 @@ function annotate(data) {
 annotate(data);
 ```
 
-As JavaScript uses prototype based object orientation, we can transform `annotate` to a object method. By adding a function to the prototype of an object, each instance of the object will own this method.
+As JavaScript uses prototype-based object orientation, we can transform `annotate` to an object method. By adding a function to the prototype of an object, each instance of the object will own this method.
 
 ```java
 importClass(Packages.ij.IJ);
@@ -430,7 +430,7 @@ IJ.log("The root of 12 is " + root);
 
 Suppose you want to create a new image with the square values of the pixels in another image.
 
-First, we get a <i>source</i> image (such as the currently active image):
+First, we get a `source` image (such as the currently active image):
 
 
 ```java
@@ -460,9 +460,9 @@ new Packages.ij.ImagePlus("square of " + source.title, ip2).show();
 
 But imagine now you want to get an image with the square root instead of the square, or the logarithm. Isn't that the same?
 
-We would have to write similar functions named <i>sqrt</i> and <i>pow3</i>. And so on.
+We would have to write similar functions named `sqrt` and `pow3`. And so on.
 
-Instead, we should stop and think: there is a common pattern. All we want to do is to apply a function to each pixel in one image, and set the result into the same pixel in another image. In functional programming this pattern is called a <i>map</i> operation. Since Javascript lets us pass functions as arguments, we can define our own <i>map</i> function:
+Instead, we should stop and think: there is a common pattern. All we want to do is to apply a function to each pixel in one image, and set the result into the same pixel in another image. In functional programming this pattern is called a `map` operation. Since JavaScript lets us pass functions as arguments, we can define our own `map` function:
 
 ```java
 function map(fn, ip) {
@@ -477,7 +477,7 @@ function map(fn, ip) {
 }
 ```
 
-Now, equipped with our <i>map</i> function, we can apply any mathematical operation we want:
+Now, equipped with our `map` function, we can apply any mathematical operation we want:
 
 ```java
 var ip_sqrt = map( Math.sqrt, source.getProcessor() );
@@ -485,9 +485,9 @@ var ip_log  = map( Math.log,  source.getProcessor() );
 ...
 ```
 
-But wait! We didn't pass any extra argument. How can we do a generic function for <i>pow</i> so we can apply a power of 2, or 3, etc?
+But wait! We didn't pass any extra argument. How can we do a generic function for `pow` so we can apply a power of 2, or 3, etc?
 
-We can rewrite our <i>map</i> function like this:
+We can rewrite our `map` function like this:
 
 ```java
 function map(fn, ip) {
@@ -502,15 +502,15 @@ function map(fn, ip) {
 }
 ```
 
-... where <i>arguments\[2\]</i> is the argument, if any, present beyond any declared arguments. This works because in javascript, functions can accept a variable number of arguments:
+... where `arguments[2]` is the argument, if any, present beyond any declared arguments. This works because in javascript, functions can accept a variable number of arguments:
 
 ```java
 var ip2 = map( Math.pow, source.getProcessor(), 2 );
 var ip3 = map( Math.pow, source.getProcessor(), 3 );
 ```
-Our second version of the <i>map</i> function, though, is a bit perverted: in standard functional programming techniques, the function given as arguments would be applied to each element at index <i>i</i> of every list; i.e. the function would receive as many arguments as lists we give to the <i>map</i>. But we don't need that.
+Our second version of the `map` function, though, is a bit perverted: in standard functional programming techniques, the function given as arguments would be applied to each element at index `i` of every list; i.e. the function would receive as many arguments as lists we give to the `map`. But we don't need that.
 
-So what's the big deal? We have abstracted away a common pattern, looping, but furthermore, we have reduced the complexity of our program. So now, for example, applying an optimization to the <i>map</i> function will improve <i>all</i> the places in our code that use it!
+So what's the big deal? We have abstracted away a common pattern, looping, but furthermore, we have reduced the complexity of our program. So now, for example, applying an optimization to the `map` function will improve `all` the places in our code that use it!
 
 (The same would be true for adding a debugging message, and what not. Anything you want).
 
@@ -553,7 +553,7 @@ function map(fn, ip) {
 }
 ```
 
-We would call the now multithreaded <i>map</i> function just like before:
+We would call the now multithreaded `map` function just like before:
 
 ```java
 var ip_sqrt = map( Math.sqrt, source.getProcessor() );
@@ -562,9 +562,9 @@ var ip2     = map( Math.pow, source.getProcessor(), 2 );
 var ip3     = map( Math.pow, source.getProcessor(), 3 );
 ```
 
-Above: <b>beware</b> that parallelizing a trivial function like Math.sqrt will likely result in a <b>slower</b> execution, because of multithreading overheads and the extreme contention in accessing the same pixel array from multiple threads. Perhaps you want to have <b>two versions</b> of map: the simple and the parallel one, and use the latter for complex, heavy functions.
+Above: **beware** that parallelizing a trivial function like Math.sqrt will likely result in a **slower** execution, because of multithreading overheads and the extreme contention in accessing the same pixel array from multiple threads. Perhaps you want to have **two versions** of map: the simple and the parallel one, and use the latter for complex, heavy functions.
 
-For further ease, we could create a <i>show</i> function that avoids further repetitions:
+For further ease, we could create a `show` function that avoids further repetitions:
 
 ```java
 function mapAndShow(imp, fn) {
@@ -585,9 +585,8 @@ with (new JavaImporter(Packages.ij.IJ)) {
 }
 ```
 
-<b>Note</b>
-
-All the above are examples to give you an idea of what is possible with Javascript and ImageJ. If you are interested on applying mathematical functions to images, you may be better off using internal ImageJ commands, as listed in the menu "Process - Math":
+{% capture built-in-math-functions %}
+All the above are examples to give you an idea of what is possible with JavaScript and ImageJ. If you are interested in applying mathematical functions to images, you may be better off using internal ImageJ commands, as listed in the menu {% include bc path="Process | Math" %}:
 
 ```java
 with (new JavaImporter(Packages.ij.IJ, Packages.ij.ImagePlus)) {
@@ -601,12 +600,14 @@ with (new JavaImporter(Packages.ij.IJ, Packages.ij.ImagePlus)) {
   imp2.show();
 }
 ```
+{% endcapture %}
+{% include notice icon='note' content=built-in-math-functions %}
 
 ### Using other *.js* files as libraries
 
 Programming becomes most useful when code is reused. To that end, many programmers will generalize their code into functions that can be called from other scripts as well.
 
-To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate *.js* files and let the Javascript interpreter know about them. You can fetch the location of scripts in a system independent way using `IJ.getDirectory("plugins")`:
+To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate *.js* files and let the JavaScript interpreter know about them. You can fetch the location of scripts in a system independent way using `IJ.getDirectory("plugins")`:
 
 ```java
 load(Packages.ij.IJ.getDirectory("plugins") + "JavaScript" + java.io.File.separator + "my-library-of-useful-functions.js");
@@ -661,7 +662,7 @@ imp = IJ.openImage("/path/to/image.jpg");
 imp.show();
 ```
 
-Also URLs (in this case, we call directly <i>show()</i>, not keeping the returned image pointer into any variable):
+Also URLs (in this case, we call directly `show()`, not keeping the returned image pointer into any variable):
 
 ```java
 IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif").show();
@@ -862,17 +863,17 @@ What the code above did: to look for an interface that could take a method with 
 
 See also an [example plugin](/scripting/comparisons#in-javascript) for ImageJ written in javascript.
 
-## Multithreaded Image Processing in Javascript
+## Multithreaded Image Processing in JavaScript
 
-The following example shows how to create a generic function, named <i>multithreader</i>, that accepts another function as argument and executes it in parallel a number of times. As a very simple example, a <i>printer</i> function is passed to the <i>multithreader</i>, and a list of numbers is printed without repeating anyone, and not preserving the order of course.
+The following example shows how to create a generic function, named `multithreader`, that accepts another function as argument and executes it in parallel a number of times. As a very simple example, a `printer` function is passed to the `multithreader`, and a list of numbers is printed without repeating anyone, and not preserving the order of course.
 
-The <i>multithreader</i> scales up to as many CPU cores as the computer has to offer.
+The `multithreader` scales up to as many CPU cores as the computer has to offer.
 
-Always remember: only <b>completely</b> independent tasks can be parallelized effectively!
+Always remember: only **completely** independent tasks can be parallelized effectively!
 
 A good strategy for multithreading involves carefully considering the task to parallelize: how small can the chunks be? For an image, a chunk could be a pixel or a line, but often those are too small to overcome the overhead of parallelization.
 
-Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
+Despite the simple example below, the `multithreader` framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github org='fiji' repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
 
 ```java
 // Import all classes that are used more than once:
@@ -922,7 +923,7 @@ function printer(i) {
  multithreader(printer, 0, 10);
 ```
 
-See the complete file here: {% include github repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
+See the complete file here: {% include github org='fiji' repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
 
 # Links
 

@@ -2,21 +2,20 @@
 mediawiki: Script_Editor_Auto_Import
 title: Script Editor Auto Import
 section: Extend:Scripting
+project: /software/imagej2
 ---
-
-
 
 # Background
 
-The ImageJ script editor originally would automatically import many useful classes. This provided a clear benefit to writing scripts in ImageJ, as any plugins could be used without troubling the writer to know and enumerate the required classes.
+The original [ImageJ](/software/imagej) script editor automatically imports many useful classes. This provided a clear benefit to writing scripts in ImageJ, as any plugins could be used without troubling the writer to know and enumerate the required classes.
 
-However, there were drawbacks to this method as well. As the imports were not transparent, the user could not know what was actually being imported. During the development of Fiji, it was decided that the broad scope of the autoimport functionality was not robust enough, and could lead to clashes between libraries. Further, it could lead to scripts that are un-executable since dependencies may not be explicitly declared. As these could create situations unresolvable by the user, a dark period devoid of automatic imports began.
+However, there are drawbacks to this method as well. As the imports are not transparent, the user cannot know what was actually being imported. During the development of [Fiji](/software/fiji), it was decided that the broad scope of the auto-import functionality was not robust enough, and could lead to clashes between libraries. Further, it could lead to scripts that are un-executable since dependencies may not be explicitly declared. As these could create situations unresolvable by the user, a dark period devoid of automatic imports began.
 
-Today, ImageJ has a flexible and extensible automatic import mechanism: the [ScriptHeader](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptHeader.java).
+Therefore, [ImageJ2](/software/imagej2) has a flexible and extensible automatic import mechanism: the [ScriptHeader](https://github.com/scijava/scijava-common/blob/181c016330be30861b573b70fb934f0b23c30447/src/main/java/org/scijava/script/ScriptHeader.java).
 
 # How ScriptHeaders works
 
-ScriptHeaders are [SciJava](/libs/scijava) plugins, so they can be distributed with any part of ImageJ or Fiji and will automatically be discovered.
+ScriptHeaders are [SciJava](/libs/scijava) plugins, so they can be distributed with any part of ImageJ2 or Fiji and will automatically be discovered.
 
 When using the script editor to make a script for a particular language, all ScriptHeaders compatible with that language will add their contents to the beginning of the script.
 

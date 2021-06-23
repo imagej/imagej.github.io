@@ -2,6 +2,7 @@
 mediawiki: Groovy_Scripting
 title: Groovy Scripting
 section: Extend:Scripting:Languages
+project: /software/imagej2
 ---
 
 [Groovy](http://groovy-lang.org/) is an agile and dynamic language for the Java Virtual Machine. It builds upon the strengths of [Java](/develop/plugins) but has additional power features inspired by languages like [Python](/scripting/python), [Ruby](/scripting/jruby) and Smalltalk.

@@ -6,7 +6,7 @@ Writing papers and making figures is and always will be a big part of what scien
 
 Two groups have recently introduced plugins that leverage the tools available in ImageJ/Fiji to make scientific figures. Both tools are made by scientists introducing innovative concepts specifically designed to make scientific figure making easier and more controlled.
 
-[FigureJ](http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:figurej:start) from *Jerome Mutterer* and [ScientiFig](http://srv-gred.u-clermont1.fr/labmirouse/software/) from *Benoit Aigouy* are well documented, open source ({% include github org='mutterer' repo='figurej' label='FigureJ' %} {% include github org='baigouy' repo='ScientiFig' label='ScientiFig' %}) and published:
+[FigureJ](http://imagejdocu.list.lu/doku.php?id=plugin:utilities:figurej:start) from *Jerome Mutterer* and [ScientiFig](http://srv-gred.u-clermont1.fr/labmirouse/software/) from *Benoit Aigouy* are well documented, open source ({% include github org='mutterer' repo='figurej' label='FigureJ' %} {% include github org='baigouy' repo='ScientiFig' label='ScientiFig' %}) and published:
 
 {% include citation doi="10.1111/jmi.12069" %}
 

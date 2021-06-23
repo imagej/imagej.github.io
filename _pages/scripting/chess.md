@@ -2,13 +2,14 @@
 mediawiki: Chess
 title: Chess
 section: Extend:Scripting
+project: /software/imagej
 ---
 
 ## Purpose
 
 This [Jython](/scripting/jython) script illustrates how to make an image interactive.
 
-Play chess within Fiji! Click on a starting square, then on another one to move a piece.
+Click on a starting square, then on another one to move a piece.
 
 ## Code
 

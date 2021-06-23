@@ -6,7 +6,7 @@ artifact: sc.fiji:AnalyzeSkeleton_
 doi: 10.1002/jemt.20829
 ---
 
-Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
+Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.list.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
 
 {::nomarkdown}
 <table>

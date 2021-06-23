@@ -44,7 +44,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Usage
 
--   Copy [Hill\_Shade.java](https://imagejdocu.tudor.lu/_media/plugin/filter/hill_shade/hill_shade.java) into the ImageJ plugins folder or a subfolder thereof (make sure you name the downloaded file "Hill\_Shade.java"; uppercase/lowercase matters).
+-   Copy [Hill\_Shade.java](https://imagejdocu.list.lu/_media/plugin/filter/hill_shade/hill_shade.java) into the ImageJ plugins folder or a subfolder thereof (make sure you name the downloaded file "Hill\_Shade.java"; uppercase/lowercase matters).
 -   Compile with "Compile and run".
 -   Alternatively, directly save the compiled class file [Hill\_Shade.class](/media/plugins/hill-shade.class) into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
 

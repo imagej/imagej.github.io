@@ -63,4 +63,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 ## See also
 
--   [Skeletonize3D at ImageJ documentation wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:skeletonize3d:start)
+-   [Skeletonize3D at ImageJ documentation wiki](http://imagejdocu.list.lu/doku.php?id=plugin:morphology:skeletonize3d:start)

@@ -1,19 +1,19 @@
 ---
-mediawiki: Scripting_toolbox
 title: Scripting toolbox
 section: Extend:Scripting
+project: /software/fiji
 ---
 
 This page is meant to provide small code snippets as a starting point for writing scripts.
 
-{% include info-box message="**See also:**
+{% include notice content="**See also:**
 
--   Language-specific scripting pages in the right-hand menu.
+-   [Scripting overview](/scripting) for a list of available scripting languages.
 -   [Scripting comparisons](/scripting/comparisons) to compare and contrast the languages.
 -   [Broadly Applicable Routines](/plugins/bar), a curated collection of snippets.
--   Albert Cardona's comprehensive [Fiji Jython tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please note that it is better idea to contribute tutorials to the ImageJ/Fiji wiki directly)." %}
+-   Albert Cardona's comprehensive [Fiji Jython tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please note that it is a better idea to contribute tutorials to the ImageJ Wiki directly)." %}
 
-{% include notice icon="note" content="to copy the snippets, just double-click somewhere into the code. If Javascript is enabled, this will automatically select the complete snippet." %}
+{% include notice icon="tip" content="To copy the snippets, just double-click somewhere into the code. If JavaScript is enabled, this will automatically select the complete snippet." %}
 
 ## Opening an image using ImageJ
 
@@ -24,9 +24,9 @@ path = "/path/to/file";
 open(path);
 ```
 
-#### Javascript
+#### JavaScript
 
-```Javascript
+```javascript
 importClass(Packages.ij.IJ);
 
 var path = "/path/to/file";
@@ -64,7 +64,7 @@ imp.show
   (.show imp))
 ```
 
-#### Beanshell
+#### BeanShell
 
 ```beanshell
 import ij.IJ;
@@ -83,7 +83,7 @@ path = "/path/to/file";
 run("Bio-Formats Importer", "open=" + path + " autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
 ```
 
-#### Javascript
+#### JavaScript
 
 ```javascript
 importClass(Packages.loci.plugins.BF);
@@ -122,7 +122,7 @@ See also [this python example script](https://gist.github.com/ctrueden/6282856)
 
 -   Clojure
 
--   Beanshell
+-   BeanShell
 
 ## Opening, processing, and saving a sequence of files in a folder
 
@@ -215,13 +215,13 @@ def process(srcDir, dstDir, currentDir, fileName, keepDirectories):
 run()
 ```
 
--   Javascript
+-   JavaScript
 
 -   Ruby
 
 -   Clojure
 
--   Beanshell
+-   BeanShell
 
 ## Wait a given amount of time, or until user presses OK
 
@@ -236,7 +236,8 @@ or
 waitForUser();
 ```
 
-#### Javascript
+#### JavaScript
+
 ```javascript
 Thread.sleep(100);
 ```
@@ -253,7 +254,7 @@ new WaitForUserDialog("Action required", "Please press OK when done.").show();
 
 -   Clojure
 
--   Beanshell
+-   BeanShell
 
 ## Select multiple ROIs from ROI manager and combine them
 
@@ -263,7 +264,8 @@ roiManager("select", newArray(0,2,4));
 roiManager("AND");
 ```
 
-#### Javascript
+#### JavaScript
+
 ```javascript
 importClass(Packages.ij.plugin.frame.RoiManager);
 
@@ -281,7 +283,8 @@ rm.setSelectedIndexes([0, 2, 4])
 rm.runCommand("AND")
 ```
 
-#### Beanshell
+#### BeanShell
+
 ```javascript
 import ij.plugin.frame.RoiManager;
 
@@ -298,7 +301,8 @@ rm.runCommand("AND");
 
 Sometimes things go wrong and all you see is "blabla.jpg is locked" when you try to process the image in some way. Then all you can do is to force-unlock the image, like so:
 
-#### Beanshell
+#### BeanShell
+
 ```javascript
 IJ.getImage().unlock();
 ```
@@ -307,7 +311,8 @@ IJ.getImage().unlock();
 
 The *Scale-Invariant Feature Transform* poses a relatively powerful way to reduce the complexity when trying to find matching parts of large images. Fiji has an implementation of this algorithm which you can use like so:
 
-#### Beanshell
+#### BeanShell
+
 ```javascript
 import java.util.ArrayList;
 
@@ -332,9 +337,10 @@ For more information, please browse the [Javadoc of the Feature class](http://ja
 
 [JFreeChart](http://www.jfree.org/jfreechart/) is a Java library for creating various charts. You can create charts as interactive JFrames, display them as an ImagePlus, or write them to SVG format.
 
-#### Javascript
+#### JavaScript
+
 ```javascript
-/* Javascript to test JFreeChart functionality */
+/* JavaScript to test JFreeChart functionality */
 
 importPackage(Packages.org.jfree.chart);
 importPackage(Packages.org.jfree.chart.plot);
@@ -431,9 +437,9 @@ outputStream.close();
 
 ## Writing out movie files with JavaCV
 
-[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into `ImageJ.app/lib/`<platform>`/` (or `Fiji.app/lib/`<platform>`/`) to let JavaCV find the native libraries (e.g. unpack `ffmpeg-macosx-x86_64.jar`'s `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting ImageJ/Fiji.
+[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into the `lib/<platform>/` folder of your Fiji installation (e.g. `Fiji.app/lib/linux64/`) to let JavaCV find the native libraries (e.g. unpack `ffmpeg-macosx-x86_64.jar`'s `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting Fiji.
 
-#### Beanshell
+#### BeanShell
 
 ```java
 /*

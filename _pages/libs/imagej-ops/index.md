@@ -24,7 +24,7 @@ Ops has three major design goals:
 Start by reading these Jupyter notebooks:
 
 -   [Using ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb) - to call ops from your scripts.
--   [Writing Op plugins](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb) - to write your own ops.
+-   [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/2-Ops.ipynb) - to write your own ops.
 
 Ops are a special type of ImageJ plugin, so a basic understanding of the [SciJava plugin framework](/develop/plugins) is strongly recommended.
 
@@ -37,7 +37,7 @@ In addition to cloning the [imagej-ops](https://github.com/imagej/imagej-ops) it
 
 -   [Step-by-step guide: Adding new ops](/develop/writing-ops)
 -   [ImageJ Tutorial: Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb)
--   [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb)
+-   [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/2-Ops.ipynb)
 -   "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) – [slides](/presentations/2017-02-12-imagej-ops-neubias/#/)
 -   "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [slides](/presentations/2015-09-04-imagej2-scripting/), [video 1](https://vimeo.com/140098817), [video 2](https://vimeo.com/140098835)
 -   "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [slides](/presentations/2015-01-12-imagej-ops/)

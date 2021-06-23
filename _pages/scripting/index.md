@@ -2,13 +2,14 @@
 mediawiki: Scripting
 title: Scripting
 section: Extend:Scripting
+project: /software/imagej2
 ---
 
-ImageJ allows you to write scripts in several different languages.
+ImageJ2 allows you to write scripts in several different languages.
 
 # Getting started
 
--   Read the [ImageJ tutorial notebooks](/tutorials) to learn how to write ImageJ scripts.
+-   Read the [ImageJ2 tutorial notebooks](/tutorials/notebooks) to learn how to write scripts.
 -   Press the {% include key key='[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key key='Shift' %}-{% include key key='[' %} to open the [Script Interpreter](/scripting/interpreter)).
 -   Optionally, choose a template from the *Templates* menu to get you started.
 -   Otherwise, choose your language from the *Language* menu.
@@ -17,7 +18,7 @@ ImageJ allows you to write scripts in several different languages.
 
 # Supported languages
 
-ImageJ's [Script Editor](/scripting/script-editor) supports many different languages. The following table summarizes the possibilities.
+ImageJ2's [Script Editor](/scripting/script-editor) supports many different languages. The following table summarizes the possibilities.
 
 {::nomarkdown}
 <table>
@@ -41,7 +42,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p><a href="/scripting/macro">ImageJ Macro</a></p>
       </td>
       <td>
-        <p>The <a href="/software/imagej">ImageJ 1.x</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
+        <p>The <a href="/software/imagej">ImageJ</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
       </td>
     </tr>
     <tr>
@@ -103,7 +104,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
         <p><a href="/scripting/matlab">MATLAB</a></p>
       </td>
       <td>
-        <p>ImageJ can interface bidirectionally with MATLAB. See the <a href="/scripting/matlab">MATLAB Scripting</a> page for details.</p>
+        <p>ImageJ2 can interface bidirectionally with MATLAB. See the <a href="/scripting/matlab">MATLAB Scripting</a> page for details.</p>
       </td>
     </tr>
     <tr>
@@ -128,7 +129,7 @@ ImageJ's [Script Editor](/scripting/script-editor) supports many different langu
 
 # Script parameters
 
-There is a universal `@parameter` notation available across all scripts for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x `GenericDialog` because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
+There is a universal script parameter notation available across all scripts for declaring inputs and outputs. This approach is preferred to using `GenericDialog` because it is totally agnostic to the user interface, allowing such scripts to run in a variety of contexts.
 
 See the [script parameters](/scripting/parameters) page for details.
 
@@ -181,7 +182,7 @@ For the script to appear in the ImageJ menus, the following must apply:
 3.  The script name contains a `_` (underscore) character,
     e.g. `MyScript_.ijm`.
 
-{% include notice icon="fiji" content='Replace `ImageJ.app` with `Fiji.app`' %}
+{% include notice icon="fiji" content='Fiji users: replace `ImageJ.app` with `Fiji.app`' %}
 
 The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
@@ -197,10 +198,8 @@ Scripts can be packaged in a JAR file for easier distribution to your colleagues
 
 Inside the example-script-collection jar, the scripts are in `./resources/scripts.` and therefore get added to the menu when the JAR is on the classpath (i.e. in `./plugins/` or `./jars/`).
 
-ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as it is already described in the previous section, and for jars in `./jars/`. ImageJ 1.x recognizes plugins and scripts in `./plugins/`
+ImageJ2 (and therefore Fiji) looks for scripts in subfolders of `./scripts/` as it is already described in the previous section, and for jars in `./jars/`. The original [ImageJ](/software/imagej) recognizes plugins and scripts in `./plugins/`.
 
 # Running scripts in headless mode
 
 See the [Scripting Headless](/scripting/headless) page for instructions on executing scripts headlessly.
-
-

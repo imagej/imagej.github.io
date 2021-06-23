@@ -1,18 +1,11 @@
 ---
-mediawiki: Using_the_Script_Editor
 title: Using the Script Editor
 section: Extend:Scripting
+project: /libs/scijava
+artifact: org.scijava:script-editor
 ---
 
-
-{% capture maintainer%}
-{% include person id='ctrueden' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='scijava' repo='script-editor' branch='master' source='org/scijava/ui/swing/script/ScriptEditor.java' %}
-{% endcapture %}
-{% include info-box name='Script Editor' software='ImageJ' author='Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)' maintainer=maintainer source=source released='11 Sep 2008' status='active' %}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [languages](/scripting/comparisons).
+The script editor is an invaluable help when writing scripts in any of the [SciJava](/libs/scijava) framework's supported [languages](/scripting/comparisons).
 
 ## Features
 
@@ -35,7 +28,7 @@ Programming
 Language specific tools  
 
 -   Organization of `import` declarations
--   Access to online documentation ([Javadocs](http://javadoc.imagej.net), [Built-in Macro Functions](https://imagej.nih.gov/ij/developer/macro/functions.html))
+-   Access to online documentation ([Javadocs](http://javadoc.scijava.org/), [ImageJ Macro Functions](https://imagej.nih.gov/ij/developer/macro/functions.html))
 -   Access to source code in `.jar` files
 
 Interface  
@@ -72,12 +65,12 @@ Once you are satisfied with the script, run it. This does not require saving, bu
 
 Note that while the script is running, the window title shows the tell-tale *(Running)*.
 
-You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](/scripting/comparisons)
+{% include warning/importing-classes %}
+
+You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](/scripting/comparisons).
 
 ![](/media/scripting/script-editor-dialog.jpg)
 
 ## Further reading
 
-See the [Scripting Help](/scripting) page for an introduction to scripting. For more information about each specific language, see the Languages section of top right sidebar.
-
-  
+See the [Scripting overview](/scripting) page for an introduction to scripting, and list of available languages, with links to more documentation.

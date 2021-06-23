@@ -345,4 +345,4 @@ This project requires a bit of knowledge in compiling C++ code on Linux, macOS a
 
 # Other resources
 
-There is a wish list on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=wishlist:start&s%5b%5d=ideas).
+There is a wish list on the [ImageJ Documentation Wiki](http://imagejdocu.list.lu/doku.php?id=wishlist:start&s%5b%5d=ideas).

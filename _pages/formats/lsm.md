@@ -17,6 +17,6 @@ In Fiji, corresponding commands are:
 -   {% include bc path='File | Import | Show LSMToolbox'%} which displays the toolbox, from which all commands can be called;
 -   {% include bc path='Help | About Plugins | LSMToolbox...'%} which displays information about the plugin.
 
-For more info see [LSM ToolBox documentation on ImageJ documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start).
+For more info see [LSM ToolBox documentation on ImageJ documentation Wiki](http://imagejdocu.list.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start).
 
  

@@ -1,12 +1,15 @@
 ---
-title: Generic dialog
+title: Generic Dialog
+project: /software/imagej
 ---
 
 ## Introduction
 
-The {% include javadoc project='ImageJ1' package='ij/gui' class='GenericDialog' %} class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [script parameters](/scripting/parameters) option but offers more possibilities.  
-Fiji offers an additional {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} subclass which include additional GUI item like a file input with a browse button.  
-Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
+The {% include javadoc project='ImageJ1' package='ij/gui' class='GenericDialog' %} class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more work than with the [script parameters](/scripting/parameters) feature of [SciJava](/libs/scijava), but offers more possibilities.
+
+Fiji offers an additional {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} subclass which include additional GUI items like a file input with a browse button.  
+
+As with script parameters, plugins using the `GenericDialog` (or one of its subclasses) are macro recordable.
 
 ### In Jython (or similar scripting language)
 

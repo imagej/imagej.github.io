@@ -25,6 +25,8 @@ The fastest way to start batch conversion is via the [{% include bc path='Proces
 
 # Option 2 - Script Template
 
+{% include notice icon="imagej2" content="This section requires ImageJ2." %}
+
 Open the [script editor](/scripting/script-editor), select {% include bc path='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
 
 <img src="/media/scripting/process-folder-ij1.png" width="762"/>
@@ -33,7 +35,7 @@ Lines 26 and 27 can now be edited, replaced with the functional macro code you w
 
 # Option 3 - Batch Processing with Script Parameters
 
-{% include notice icon="info" content='This section is currently being expanded to document the current state of the [SciJava Batch Processor](https://github.com/scijava/batch-processor/). The Batch Processor is a new addition to the SciJava/ImageJ framework. If you encounter any issues, please report/ask on the [forum](/discuss).' %}
+{% include notice icon="info" content='This section is currently being expanded to document the current state of the [SciJava Batch Processor](https://github.com/scijava/batch-processor/). The Batch Processor is a new addition to the SciJava/ImageJ2 framework. If you encounter any issues, please report/ask on the [forum](/discuss).' %}
 
 # See also
 

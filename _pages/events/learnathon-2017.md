@@ -68,7 +68,7 @@ Details of your assignment:
 
 -   Create a [Git](/develop/git) repository.
 -   Create a [Maven](/develop/maven) project. (hints: [1](https://github.com/imagej/example-imagej-command), [2](/develop/building-a-pom))
--   Implement a `Command` plugin in your [IDE](/develop/ides), which calculates the *mean* across an image. (hints: [1](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb), [2](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java))
+-   Implement a `Command` plugin in your [IDE](/develop/ides), which calculates the *mean* across an image. (hints: [1](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb), [2](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java))
 -   Push to [GitHub](/develop/github) (hints: [1](https://help.github.com/articles/pushing-to-a-remote/), [2](https://git-man-page-generator.lokaltog.net/)).
 
 If you get that far, YOU WIN. {% include person id='fjug' %} has a reward for you.
@@ -120,8 +120,8 @@ Git repos to clone:
 -   Afternoon Ops Session:
     -   [`https://github.com/imagej/tutorials`](https://github.com/imagej/tutorials)
         -   Import the `maven-projects/using-ops` into your IDE
-    -   [Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb) Jupyter notebook
-    -   [Extending ImageJ: Writing Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb) Jupyter notebook
+    -   [Introduction to ImageJ Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb) Jupyter notebook
+    -   [Extending ImageJ: Ops](https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/2-Ops.ipynb) Jupyter notebook
 -   Afternoon Session on KNIME:
     -   Download & Install KNIME (app with all extensions)
         -   https://www.knime.org/downloads/overview?quicktabs_knimed=1#quicktabs-knimed

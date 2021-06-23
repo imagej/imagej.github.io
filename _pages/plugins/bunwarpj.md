@@ -10,7 +10,7 @@ extensions: ["mathjax"]
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 
-For a quick start, you can have a look at the [video tutorial](http://imagejdocu.tudor.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial) (awarded at the Second ImageJ User & Developer Conference).
+For a quick start, you can have a look at the [video tutorial](http://imagejdocu.list.lu/doku.php?id=video:aligning:bunwarpj_basic_tutorial) (awarded at the Second ImageJ User & Developer Conference).
 
 ## General Description
 

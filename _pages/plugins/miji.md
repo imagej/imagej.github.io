@@ -1,15 +1,16 @@
 ---
 mediawiki: Miji
 title: Miji
+project: /software/fiji
 categories: [Tutorials,MATLAB]
 ---
 
-{% include notice icon="info" content='This page covers the original compatibility layer for running ImageJ 1.x within MATLAB.  
+{% include notice icon="info" content='This page covers the original compatibility layer for running ImageJ within MATLAB.  
 The current library for ImageJ/MATLAB integration is [ImageJ-MATLAB](/scripting/matlab); it has many advantages over this legacy project.' %}
 
-[MIJ](http://bigwww.epfl.ch/sage/soft/mij/) is a java package to exchange images between [MATLAB](/scripting/matlab) and ImageJ. It is written by {% include person id='dasv74' %} (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and {% include person id='dprodanov' %} (Department of Physiology and Pharmacology, Université Catholique de Louvain (UCL), Brussels, Belgium). It allows to start a instance of ImageJ inside [MATLAB](/scripting/matlab) and exchange images back and forth with it. It takes advantage of the fact that the user interface of [MATLAB](/scripting/matlab) is written in Java.
+[MIJ](http://bigwww.epfl.ch/sage/soft/mij/) is a java package to exchange images between [MATLAB](/scripting/matlab) and the original [ImageJ](/software/imagej). It is written by {% include person id='dasv74' %} (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and {% include person id='dprodanov' %} (Department of Physiology and Pharmacology, Université Catholique de Louvain (UCL), Brussels, Belgium). It allows to start a instance of ImageJ inside [MATLAB](/scripting/matlab) and exchange images back and forth with it. It takes advantage of the fact that the user interface of [MATLAB](/scripting/matlab) is written in Java.
 
-For your convenience, Jacques Pecreaux & {% include person id='dscho' %} wrote Miji.m, which makes it super-easy to use Fiji and the libraries and functions provided by [Fiji](/software/fiji)'s components from within [MATLAB](/scripting/matlab). Simply make sure that the `scripts/` directory of your `Fiji.app/` is in [MATLAB](/scripting/matlab)'s search patch, via {% include bc path='File | Set Path...'%} (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](/scripting/matlab) command `addpath('/Applications/Fiji.app/scripts')`). Then a simple
+For your convenience, Jacques Pecreaux & {% include person id='dscho' %} wrote `Miji.m`, which makes it super-easy to use [Fiji](/software/fiji) and the libraries and functions provided by Fiji's components from within [MATLAB](/scripting/matlab). Simply make sure that the `scripts/` directory of your `Fiji.app/` is in [MATLAB](/scripting/matlab)'s search patch, via {% include bc path='File | Set Path...'%} (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](/scripting/matlab) command `addpath('/Applications/Fiji.app/scripts')`). Then a simple
 
 ```matlab
 Miji;

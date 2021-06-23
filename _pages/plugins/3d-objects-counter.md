@@ -33,7 +33,7 @@ As ImageJ's "Analyze Particles" function, 3D-OC also has a "redirect to" option,
 
 ## Plugin's manual
 
-The plugin's manual might be downloaded from [ImageJ's wiki.](http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc.pdf)
+The plugin's manual might be downloaded from [ImageJ's wiki.](http://imagejdocu.list.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc.pdf)
 
 ## Install/Update
 

@@ -12,7 +12,7 @@ These instructions will be updated very soon so that ImageJ Documentation Wiki p
 
 **Legacy Text Follows**
 
-The ImageJ Documentation Wiki will no longer be available at location &lt;https://imagejdocu.tudor.lu&gt;, as the CRP Henri Tudor has merged to become the Luxembourg Institute of Science and Technology five years ago and the old domain will be discontinued. We want to take this as an opportunity to merge the resources on &lt;https://imagejdocu.tudor.lu&gt; with those here at &lt;https://imagej.net&gt;.
+The ImageJ Documentation Wiki will no longer be available at location &lt;https://imagejdocu.list.lu&gt;, as the CRP Henri Tudor has merged to become the Luxembourg Institute of Science and Technology five years ago and the old domain will be discontinued. We want to take this as an opportunity to merge the resources on &lt;https://imagejdocu.list.lu&gt; with those here at &lt;https://imagej.net&gt;.
 
 This guide covers the process of migrating a page from the ImageJ Documentation Wiki ([DocuWiki](https://www.dokuwiki.org/dokuwiki)) to this ImageJ wiki ([GitHub Pages with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)).
 

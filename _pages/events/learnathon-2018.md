@@ -67,7 +67,7 @@ Git repos to clone:
 
 ### ImageJ2 Ops
 
--   [ImageJ Tutorial Notebooks](/tutorials)
+-   [ImageJ2 Tutorial Notebooks](/tutorials/notebooks)
 
 ### ImageJ Legacy
 
@@ -79,7 +79,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 
 ### Jupyter Notebooks
 
--   [ImageJ Tutorials](https://github.com/imagej/tutorials)
+-   [ImageJ2 Tutorial Notebooks](/tutorials/notebooks)
 -   Installation:
     -   [Anaconda](https://conda.io/miniconda.html) (we suggest miniconda) should be installed on your system.
     -   Clone to a place of your choice: `git clone `[`https://github.com/imagej/tutorials`](https://github.com/imagej/tutorials)
@@ -111,7 +111,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 -   Clone https://github.com/imagej/tutorials (but you already have it, right?)
 -   Import `maven-projects/create-a-new-op` in Eclipse.
 -   See also the [Adding new ops](/develop/writing-ops) guide
--   See also the "Extending ImageJ: Ops" notebook linked from [here](/tutorials)
+-   See also the "Extending ImageJ: Ops" notebook linked from [here](/tutorials/notebooks)
 
 ### ImageJ Server
 

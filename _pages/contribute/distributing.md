@@ -345,11 +345,11 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <tr>
 <td style="vertical-align: top">
 <ul><li> Request an account from an IIDP administrator.</li>
-<li> <a rel="nofollow" class="external text" href="http://imagejdocu.tudor.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li></ul>
+<li> <a rel="nofollow" class="external text" href="http://imagejdocu.list.lu/doku.php?id=create_new_content">Create a page</a> for your extension.</li></ul>
 </td>
 <td style="vertical-align: top">
-<ul><li> The <a rel="nofollow" class="external text" href="http://imagejdocu.tudor.lu/">ImageJ Information and Documentation Portal</a> predates the ImageJ wiki, and many extensions are still primarily documented there.</li>
-<li> The IIDP is a fairly <a rel="nofollow" class="external text" href="http://imagejdocu.tudor.lu/doku.php?id=start&amp;do=recent">active</a> wiki (but not <a href="https://github.com/imagej/imagej.github.io/commits/main" title="Recent changes">compared to this one</a>!).</li>
+<ul><li> The <a rel="nofollow" class="external text" href="http://imagejdocu.list.lu/">ImageJ Information and Documentation Portal</a> predates the ImageJ wiki, and many extensions are still primarily documented there.</li>
+<li> The IIDP is a fairly <a rel="nofollow" class="external text" href="http://imagejdocu.list.lu/doku.php?id=start&amp;do=recent">active</a> wiki (but not <a href="https://github.com/imagej/imagej.github.io/commits/main" title="Recent changes">compared to this one</a>!).</li>
 <li> The ImageJ developers hope to unify these two wikis in the future.</li></ul>
 </td>
 <td style="vertical-align: top">

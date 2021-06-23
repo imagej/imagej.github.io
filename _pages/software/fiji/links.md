@@ -9,7 +9,7 @@ section: Explore:Software:Fiji
 -   [ImageJ website](https://imagej.nih.gov/ij/)
 -   [ImageJ User Manual](https://imagej.nih.gov/ij/docs/user-guide.pdf)
 -   [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
--   [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php)
+-   [ImageJ Documentation Wiki](http://imagejdocu.list.lu/doku.php)
 -   [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
 -   {% include wikipedia title='ImageJ' text='Wikipedia page on ImageJ'%}
 -   {% include wikipedia title='Fiji (software)' text='Wikipedia page on Fiji'%}
@@ -21,7 +21,7 @@ Links to the contributors' personal pages can be found [here](/people).
 ## More ImageJ plugins
 
 -   Plugins on the [ImageJ website](https://imagej.nih.gov/ij/plugins/index.html), specifically [links to external websites](https://imagej.nih.gov/ij/plugins/index.html#more)
--   Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:start)
+-   Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.list.lu/doku.php?id=plugin:start)
 -   The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
 -   Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 

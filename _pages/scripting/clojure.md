@@ -2,6 +2,7 @@
 mediawiki: Clojure_Scripting
 title: Clojure Scripting
 section: Extend:Scripting:Languages
+project: /software/imagej2
 extensions: ["mathjax"]
 ---
 
@@ -21,7 +22,7 @@ See also:
 
 ## Using Clojure inside Fiji
 
-Go to {% include bc path='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](/scripting/script-editor).
+Go to {% include bc path='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also the [Script Editor](/scripting/script-editor).
 
 See [Scripting Help](/scripting) for details on keybindings and how to use the interpreter. {% include key keys='Ctrl|)' %} will add all necessary ending parenthesis.
 
@@ -33,7 +34,7 @@ A minimal, complete clojure example:
 (.show gold)
 ```
 
-To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {% include bc path='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).
+To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of the `plugins` folder, and run {% include bc path='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
 
@@ -45,112 +46,22 @@ To execute a script, do any of:
 
 The script is *always* read directly from the source file, so no updating of menus is needed (unless its file name changes).
 
-### Convenient Clojure in Fiji with Funimage
+### Convenient Clojure with Funimage
 
--   [Funimage](https://github.com/funimage/funimage/) provides a library for convenient Clojure coding within Fiji. Alleviating much of the need for type-hinting, and some of the burdens involved in handling more complicated data structures, such as those from ImgLib2.
+-   [Funimage](https://github.com/funimage/funimage/) provides a library for convenient Clojure coding within [ImageJ2](/software/imagej2). Alleviating much of the need for type-hinting, and some of the burdens involved in handling more complicated data structures, such as those from [ImgLib2](/libs/imglib2).
 
 See the [list of update sites](/list-of-update-sites)
- for information on setting up the Funimage update site.
+for information on setting up the Funimage update site.
 
 ### Running Clojure files from the command line
 
-Fiji can execute any clojure file directly:
+ImageJ2 can execute any clojure file directly:
 
 ```shell
-./fiji plugins/Examples/blend_two_images.clj
+./ImageJ-linux64 plugins/Examples/blend_two_images.clj
 ```
 
-The file will run with the full classpath as set by fiji, which includes all jars in fiji/jars and fiji/plugins/ folders, among others.
-
-### Getting a REPL without the usual ImageJ GUI
-
-The simplest is:
-
-```shell
-./fiji --clojure
-```
-
-... which you may enrich with memory settings, incremental garbage collection (works great for multicore CPUs), the enhanced JIT (server flag), and a debugger agent (and any other JVM flag):
-
-```shell
-./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --clojure --
-```
-
-Above, **notice the ending double dash `--`** which separates Fiji/JVM options from ImageJ options (in this case, none).
-
-For a nicer Repl, you may want to run the clojure.lang.Repl via the jline.ConsoleRunner, which gives you up and down arrow navigation, etc:
-
-```shell
-./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n \
-         --main-class jline.ConsoleRunner -- clojure.lang.Repl
- ```
-
-Note that we put the double-dash between `jline.ConsoleRunner` (the main class to launch) and `clojure.lang.Repl` (its arguments).
-
-If no JVM arguments were specified, there's no need for the double dash:
-
-```shell
-./fiji --main-class jline.ConsoleRunner clojure.lang.Repl
-```
-
-Just make sure to have the jline.jar in your classpath (or drop it into fiji/jars folder).
-
-### Debugging with the Java Debugger
-
-If you have launched fiji with an agentlib, you may then connect to it via the `jdb`:
-
-First launch fiji with the agentlib:
-
-```shell
-./fiji -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --
-```
-
-Then connect, at the same port address:
-
-```shell
-cd fiji/java/linux/jdk1.6.0_12/bin/
-./jdb -attach 8010
-```
-
-Which gives you a jdb prompt after printing:
-
-```jdb
-Set uncaught java.lang.Throwable
-Set deferred uncaught java.lang.Throwable
-Initializing jdb ...
->
-```
-
-Now you may query about threads:
-
-```jdb
-> threads
-Group system:
-  (java.lang.ref.Reference$ReferenceHandler)0x72b Reference Handler cond. waiting
-  (java.lang.ref.Finalizer$FinalizerThread)0x72c  Finalizer         cond. waiting
-  (java.lang.Thread)0x72d                         Signal Dispatcher running
-```
-
-And suspend all to see the stack trace of each thread:
-
-```jdb
-> suspend
-> where 0x72d
-[1] java.io.FileInputStream.read (native method)
-[2] jline.Terminal.readCharacter (Terminal.java:99)
-[3] jline.UnixTerminal.readVirtualKey (UnixTerminal.java:128)
-[4] jline.ConsoleReader.readVirtualKey (ConsoleReader.java:1,450)
-[5] jline.ConsoleReader.readBinding (ConsoleReader.java:651)
-[6] jline.ConsoleReader.readLine (ConsoleReader.java:492)
-[7] jline.ConsoleReader.readLine (ConsoleReader.java:446)
-[8] jline.ConsoleReader.readLine (ConsoleReader.java:298)
-[9] jline.ConsoleReaderInputStream$ConsoleLineInputStream.read (ConsoleReaderInputStream.java:92)
-...
-```
-
-There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans and other IDEs that support Clojure via plugins, but the jdb gives you what you want very quickly.
-
-Within the jdb prompt, type "help".
+The file will run with the full classpath as set by ImageJ2, which includes all jars in `jars/` and `plugins/` folders, among others.
 
 ## Language basics
 
@@ -838,13 +749,13 @@ Simply write the clojure script in a text file, and follow these conventions:
 
 When done, just run the {% include bc path='PlugIns|Scripting|Refresh Clojure Scripts'%} plugin.
 
-Once saved and in the menus, you need *not* call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time Fiji opens, the script will automatically appear in the menus.
+Once saved and in the menus, you need *not* call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time ImageJ2 opens, the script will automatically appear in the menus.
 
 See [Scripting Help](/scripting) for more details, including how to use the built-in dynamic interpreter.
 
 ## Example Clojure plugins included in Fiji
 
-Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
+The [Fiji](/software/fiji) distribution of ImageJ2 includes some Clojure examples:
 
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/Multithreaded_Image_Processing.clj' label='Multithreaded_Image_Processing.clj' %}: illustrate, with macros (via [defmacro](http://clojure.org/macros#toc9)), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/blend_two_images.clj' label='blend_two_images.clj' %}: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.

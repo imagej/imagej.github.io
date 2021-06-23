@@ -27,7 +27,7 @@ location: `macros/AutoRun/`
 <!-- -->
 
 ### Action Bars
-Our shortcut toolbars, requires the [Action Bar](https://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start) plugin.
+Our shortcut toolbars, requires the [Action Bar](https://imagejdocu.list.lu/doku.php?id=plugin:utilities:action_bar:start) plugin.
 
 location: `jars/imcf-fiji-toolbars-*.jar`
 
@@ -40,7 +40,7 @@ location: `jars/imcf-fiji-scripts-*.jar`
 
 <!-- -->
 
-### [JaCoP](https://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:start)
+### [JaCoP](https://imagejdocu.list.lu/doku.php?id=plugin:analysis:jacop_2.0:just_another_colocalization_plugin:start)
 "Just another Coloc Plugin": a compilation of co-localization tools.
 
 location: `plugins/jacop_.jar`
@@ -65,7 +65,7 @@ location: `plugins/Kinetochore_Analysis3D.class`
 
 
 ### FRAP plugins
-#### **[FRAP Analysis](https://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:frap_analysis:start)**
+#### **[FRAP Analysis](https://imagejdocu.list.lu/doku.php?id=plugin:analysis:frap_analysis:start)**
 
 Tool for normalized analysis of single-spot FRAP experiments.
 
@@ -73,7 +73,7 @@ author: Philippe Carl (phcarl@free.fr)
 
 location: `plugins/FRAP_Analysis.class`
 
-#### **[FRAP Norm](https://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:frap_normalization:start)**
+#### **[FRAP Norm](https://imagejdocu.list.lu/doku.php?id=plugin:analysis:frap_normalization:start)**
 
 Automatic detection of bleached and whole cell areas in pictures from FRAP experiments.
 
@@ -81,7 +81,7 @@ author: Joris Meys
 
 location: `plugins/frap_norm2.jar`
 
-### [Edge detection](https://imagejdocu.tudor.lu/doku.php?id=plugin:filter:edge_detection:start)\\
+### [Edge detection](https://imagejdocu.list.lu/doku.php?id=plugin:filter:edge_detection:start)\\
 Canny-Deriche filtering for edge detection.
 
 author: Thomas Boudier, repackaged by Joris Meys

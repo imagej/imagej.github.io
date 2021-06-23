@@ -10,7 +10,7 @@ This page provides an overview of ImageJ2 from the perspective of software devel
 
 ## Quick start
 
--   **Learn to write [scripts](/scripting)** from the [tutorial notebooks](/tutorials).
+-   **Learn to write [scripts](/scripting)** from the [tutorial notebooks](/tutorials/notebooks).
 -   **Learn to use ImageJ2 from Java** with the [tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/maven-projects).
 
 ## What is ImageJ2?
@@ -152,7 +152,7 @@ See the [source code](source) page for further details.
 
 ## Tutorials
 
-Start with the [tutorial notebooks](/tutorials)!
+Start with the [ImageJ2 tutorial notebooks](/tutorials/notebooks)!
 
 {::nomarkdown}
 <table class="top striped-columns">

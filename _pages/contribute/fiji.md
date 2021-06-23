@@ -1,6 +1,7 @@
 ---
 title: Contributing to Fiji
 section: Contribute
+project: /software/fiji
 nav-links: true
 nav-title: Fiji
 ---

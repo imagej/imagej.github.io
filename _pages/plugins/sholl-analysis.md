@@ -484,10 +484,10 @@ Noise can be mitigated through the usage of processing filters, specially edge-p
 
 #### Uneven Illumination  
 
-Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.tudor.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
+Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.list.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
 
 -   [Bleach Correction](/plugins/bleach-correction), {% include bc path="Image | Adjust |" %}
--   [Attenuation correction](http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
+-   [Attenuation correction](http://imagejdocu.list.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
 
 #### Automated Segmentation  
 

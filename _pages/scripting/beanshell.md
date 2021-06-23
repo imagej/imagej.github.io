@@ -2,6 +2,7 @@
 mediawiki: BeanShell_Scripting
 title: BeanShell Scripting
 section: Extend:Scripting:Languages
+project: /software/imagej2
 ---
 
 [BeanShell](http://www.beanshell.org/) is the scripting language which is similar both to the [ImageJ macro language](/scripting/macro) and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write *scripts*, i.e. leave out all the syntactic sugar to make your code part of a class.
