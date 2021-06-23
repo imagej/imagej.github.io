@@ -1,4 +1,5 @@
 {%- assign text = nil -%}
+{%- assign p-url = nil -%}
 {%- if page.project or page.project-blurb -%}
   {%- comment -%} Discern project ID. {%- endcomment -%}
   {%- assign id = page.project -%}
@@ -17,6 +18,7 @@
   {%- endunless -%}
 
   {%- if p.first -%}
+    {%- assign p-url = p[0].url -%}
     {%- assign icon = p[0].icon -%}
     {%- assign blurb = p[0].project-blurb -%}
     {%- unless blurb -%}
@@ -24,7 +26,11 @@
       {%- assign blurb = p[0].title -%}
     {%- endunless -%}
     {%- capture tip -%}
-      This page describes content relating to {{blurb}}. Click the logo for details.
+      {%- if page.url == p-url -%}
+        This page describes {{blurb}}.
+      {%- else -%}
+        This page describes content relating to {{blurb}}. Click the logo for details.
+      {%- endif -%}
     {%- endcapture -%}
   {%- else -%}
     {%- comment -%} Project URL is invalid. {%- endcomment -%}
@@ -42,7 +48,10 @@
 {%- endif -%}
 
 {%- if text -%}
-        <span class="project-icon shadowed-box">{% include tooltip text=text tooltip=tip %}</span>
+        <a class="project-icon shadowed-box"
+          {%- unless page.url == p-url %} href="{{id}}" {%- endunless -%}>
+          {%- include tooltip text=text tooltip=tip -%}
+        </a>
         <h1>{{page.title}}</h1>
         <span class="project-counterweight"> </span>
 {%- else -%}
