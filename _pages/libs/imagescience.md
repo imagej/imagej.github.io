@@ -3,7 +3,11 @@ title: ImageScience
 section: Explore:Libraries
 pom-url: https://raw.githubusercontent.com/ImageScience/ImageScience/master/pom.xml
 website: https://imagescience.org/meijering/software/imagescience/
+project-blurb: the ImageScience plugin suite
+icon: https://imagescience.org/meijering/software/imagescience/waves.jpg
 ---
+
+{% include notice icon='osi-symbol' content="Be aware that the ImageScience plugins are not [open source](/licensing/open-source)." %}
 
 The ImageScience library supports the ImageScience suite of plugins:
 

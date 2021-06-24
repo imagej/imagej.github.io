@@ -2,8 +2,8 @@
 mediawiki: NeuronJ
 title: NeuronJ
 categories: [ImageScience,Neuroanatomy]
+project: /libs/imagescience
 ---
-
 
 {% capture maintainer%}
 {% include person id='emeijering' %}

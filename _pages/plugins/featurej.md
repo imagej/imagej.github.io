@@ -2,6 +2,7 @@
 mediawiki: FeatureJ
 title: FeatureJ
 categories: [ImageScience]
+project: /libs/imagescience
 ---
 
 
