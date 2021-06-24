@@ -6,7 +6,9 @@ categories: [Tracking]
 artifact: sc.fiji:MTrack2_
 ---
 
- This plugin is for tracking objects in 2D over time.
+{% include warning/mtrack-disambig %}
+
+This plugin is for tracking objects in 2D over time.
 
 Mtrack2 is based on the MultiTracker plugin by Jeffrey Kuhn which is based on the Object tracker plugin by {% include person id='rasband' %}. In contrast to the Multitracker plugin, the number of objects may vary between successive frames (objects may appear or disappear). Mtrack2 will identify the objects in each frame, and then determine which objects in successive frames are closest together. If theses are within a user-defined distance (the maximum velocity of the objects) they are assembled into tracks. When multiple objeccts are within the distance determined by the maximum velocity, the closest object is selected and the object is flagged in the output.
 

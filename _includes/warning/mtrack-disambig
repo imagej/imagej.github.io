@@ -1,0 +1,8 @@
+{% capture disambig-notice %}
+The {{page.title}} plugin is one of several unrelated plugins with very similar names and functionality:
+* [Mtrack2](/plugins/mtrack2) (~2009) is a plugin for tracking objects in 2D over time.
+* [MTrackJ](/plugins/mtrackj) is an [ImageScience](/libs/imagescience) plugin to facilitate motion tracking and analysis.
+* [MTrack](/plugins/mtrack) (~2018) is a plugin to detect, track, and measure microtubules in TIRF images.
+* [TrackMate](/plugins/trackmate) is your buddy for your everyday tracking.
+{% endcapture %}
+{% include notice icon="info" content=disambig-notice %}
