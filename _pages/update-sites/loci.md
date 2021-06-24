@@ -9,9 +9,9 @@ This page documents the [LOCI update site](http://sites.imagej.net/LOCI/). See a
 To activate it:
 
 -   [{% include bc path='Help|Update...'%}](/update-sites)
--   Click *Manage update sites*
--   Check *LOCI*
--   Click *Close*
+-   Click {% include button label="Manage update sites" %}
+-   Check the *LOCI* box
+-   Click {% include button label="Close" %}
 
 Some files should appear on the list with *Status/Action* of *Install it*.
 
