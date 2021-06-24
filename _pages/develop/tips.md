@@ -3,7 +3,7 @@ title: Tips for developers
 section: Extend:Development:Guides
 ---
 
-An unsorted list of hints that you might find useful:
+An unsorted list of hints that you might find useful.
 
 # Compile & Execute a Class
 
