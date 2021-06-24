@@ -83,7 +83,7 @@ search.addWidgets([
         return aDist - bDist;
       }
       var query = document.getElementById('search-box').querySelector('.ais-SearchBox-input').value;
-      return items.sort((a,b) => weightedDistance(query, a.title, b.title));
+      return items.sort((a,b) => weightedDistance(query.toLowerCase(), a.title.toLowerCase(), b.title.toLowerCase()));
     }
   }),
   instantsearch.widgets.pagination({
