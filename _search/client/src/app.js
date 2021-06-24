@@ -18,7 +18,8 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   //  queryBy is required.
   additionalSearchParameters: {
     queryBy: "title,description,content",
-    numTypos: 1
+    numTypos: 1,
+    perPage: 16
   }
 });
 const searchClient = typesenseInstantsearchAdapter.searchClient;
@@ -51,7 +52,6 @@ search.addWidgets([
     },
     /* See: https://www.algolia.com/doc/guides/building-search-ui/widgets/customize-an-existing-widget/js/#modify-the-list-of-items-in-widgets */
     transformItems(items) {
-      var query = document.getElementById('search-box').querySelector('.ais-SearchBox-input').value;
       /* Credit: https://www.tutorialspoint.com/levenshtein-distance-in-javascript */
       function levenshteinDistance(str1, str2) {
         const track = Array(str2.length + 1).fill(null).map(() =>
@@ -70,7 +70,20 @@ search.addWidgets([
         }
         return track[str2.length][str1.length];
       }
-      return items.sort((a,b) => levenshteinDistance(a.title, query) - levenshteinDistance(b.title, query));
+      function weightedDistance(q, a, b) {
+        var aDist = levenshteinDistance(q, a);
+        var bDist = levenshteinDistance(q, b);
+        var aIndex = a.indexOf(q);
+        var bIndex = b.indexOf(q);
+        // penalize fuzzy matches
+        if (aIndex < 0) aIndex += 1000;
+        if (bIndex < 0) aIndex += 1000;
+        aDist += aIndex;
+        bDist += bIndex;
+        return aDist - bDist;
+      }
+      var query = document.getElementById('search-box').querySelector('.ais-SearchBox-input').value;
+      return items.sort((a,b) => weightedDistance(query, a.title, b.title));
     }
   }),
   instantsearch.widgets.pagination({

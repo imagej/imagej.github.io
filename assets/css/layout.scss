@@ -7,7 +7,7 @@ $topBarHeight: $logoSize;
 $boxShadowSize: 4px;
 $searchBarPadding: 5px;
 $hitTitleWidth: 200px;
-$hitIconSize: 36px;
+$hitIconSize: 24px;
 $hitPadding: 5px;
 
 $hamMenuWidth: 250px;
@@ -70,8 +70,12 @@ $sidebarPadding: 10px;
   border: none;
 }
 
+.ais-Pagination-item {
+  padding: 0;
+}
+
 .search-result {
-  height: $logoSize;
+  max-height: 2em;
   color: black;
 }
 
@@ -82,28 +86,38 @@ $sidebarPadding: 10px;
 .hit-icon {
   width: $hitIconSize;
   height: $hitIconSize;
-  float: left;
+  object-fit: contain;
+  vertical-align: middle;
+  position: relative;
+  top: auto;
+  bottom: auto;
 }
 
 .hit-title {
   display: inline-block;
   width: $hitTitleWidth;
-  height: $hitIconSize;
   margin-left: $hitPadding;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  vertical-align: middle;
 }
 
 .hit-description {
   display: inline-block;
   width: #{'calc(100% - #{$hitTitleWidth + $hitIconSize + 2*$hitPadding + 18px})'};
-  height: $hitIconSize;
+  max-height: $hitIconSize + 10px;
   margin-left: $hitPadding;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: small;
   line-height: 17px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 500px) {
+  .hit-title { width: 0.7*$hitTitleWidth; font-size: 80%; }
+  .hit-description { width: #{'calc(100% - #{0.7*$hitTitleWidth + $hitIconSize + 2*$hitPadding + 18px})'}; }
 }
 
 .hit-name {
