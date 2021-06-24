@@ -21,8 +21,8 @@ Please feel welcome to [edit and expand](/editing) the material here!
 ## Installation
 
 Some parts of this guide describe plugins from the [Fiji](/software/fiji)
-distribution of ImageJ, as well as from the Cookbook
-[update site](/update-sites). Here's how to set it up:
+distribution of ImageJ, as well as from the
+[Cookbook update site](/update-sites/cookbook). Here's how to set it up:
 
 <style>
   .cookbook-install-table { width: auto; }
@@ -30,13 +30,13 @@ distribution of ImageJ, as well as from the Cookbook
 </style>
 
 | 1. | [Download and install](/software/fiji/downloads) the Fiji distribution of ImageJ. |                                               |
-| 2. | From the Fiji menu, select {% include bc path='Help | Update...' %}      | {% include img src="1-update-fiji" %}         |
-| 3. | Click the **Manage update sites** button                                 | {% include img src="2-manage-update-sites" %} |
-| 4. | Check the **Cookbook** update site                                       | {% include img src="3-enable-cookbook" %}     |
-| 5. | Close the **Manage update sites** dialog                                 |                                               |
-| 6. | Click **Apply changes** to download the Cookbook plugins                 | {% include img src="4-apply-changes" %}       |
-| 7. | Restart Fiji to complete the plugin installation                         |                                               |
-| 8. | Enjoy your new plugins from the **Cookbook** menu!                       | {% include img src="5-use-the-cookbook" %}    |
+| 2. | From the Fiji menu, select {% include bc path='Help | Update...' %}               | {% include img src="1-update-fiji" %}         |
+| 3. | Click {% include button label="Manage update sites" %}                            | {% include img src="2-manage-update-sites" %} |
+| 4. | Check the **Cookbook** update site                                                | {% include img src="3-enable-cookbook" %}     |
+| 5. | Click {% include button label="Close" %}                                          |                                               |
+| 6. | Click {% include button label="Apply changes" %} to download the Cookbook plugins | {% include img src="4-apply-changes" %}       |
+| 7. | Restart Fiji to complete the plugin installation                                  |                                               |
+| 8. | Enjoy your new plugins from the **Cookbook** menu!                                | {% include img src="5-use-the-cookbook" %}    |
 {:.cookbook-install-table}
 
 ## Source

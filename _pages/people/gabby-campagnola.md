@@ -5,4 +5,4 @@ affiliation:
 - Eliceiri Lab / LOCI (former) | /orgs/loci
 - University of Wisconsin-Madison | https://wisc.edu/
 ---
-Gabby Campagnola worked at [LOCI](/orgs/loci) on the [cookbook project](/imaging).
+Gabby Campagnola worked at [LOCI](/orgs/loci) on the [cookbook project](/update-sites/cookbook).

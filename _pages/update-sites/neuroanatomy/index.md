@@ -25,10 +25,9 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [Fiji]
 **Subscribing to the Neuroanatomy update site:**
 
 1.  Run [{% include bc path='Help|Update...'%}](/update-sites)
-2.  Click *Manage update sites*
-3.  Select the *Neuroanatomy* checkbox (see also [list of update sites](/list-of-update-sites)
-)
-4.  Click *Apply changes* and Restart ImageJ
+2.  Click {% include button label="Manage update sites" %}
+3.  Select the *Neuroanatomy* checkbox (see also [list of update sites](/list-of-update-sites))
+4.  Click {% include button label="Apply changes" %} and Restart ImageJ
 
 ## Notes
 

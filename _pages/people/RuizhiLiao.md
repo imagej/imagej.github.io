@@ -5,4 +5,4 @@ affiliation:
 - Eliceiri Lab / LOCI (former) | /orgs/loci
 github: RuizhiLiao
 ---
-Ruizhi Liao worked at [LOCI](/orgs/loci) on the [cookbook project](/imaging).
+Ruizhi Liao worked at [LOCI](/orgs/loci) on the [cookbook project](/update-sites/cookbook).

@@ -2,8 +2,8 @@
 mediawiki: Copy_Pixel_Size
 title: Copy Pixel Size
 categories: [Image Annotation]
+project: /update-sites/cookbook
 ---
-
 
 {% capture source%}
 {% include github org='fiji' repo='cookbook' branch='master' source='Copy_Pixel_Size.java' %}
@@ -16,6 +16,4 @@ A second dialog allows to enter the scale factors.
 
 ## Installation
 
-Available as part of the [Cookbook](/imaging) suite of plugins.
-
- 
+Available as part of the [Cookbook](/update-sites/cookbook) suite of plugins.

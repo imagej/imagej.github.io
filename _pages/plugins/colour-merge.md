@@ -2,6 +2,7 @@
 mediawiki: Colour_merge
 title: Colour merge
 categories: [Color Processing]
+project: /update-sites/cookbook
 ---
 
 {% include info-box software='ImageJ' name='Colour merge' author='unknown' filename='Colour\_merge.class' source='not found' released='unknown' latest-version='unknown' status='unknown' category='Color Processing' %}
