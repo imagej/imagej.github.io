@@ -697,18 +697,19 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
-        <p>2020 Aug 10 -<br>
-        2020 Aug 21</p>
+        <a href="/news/2021-06-01-fiji-hackathon">
+		<p>2021 Jun 1 -<br>
+        2021 Aug 31</p>
+		</a>
       </td>
       <td>
-        <p><a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br>
-        Ostrava, Czech Republic</p>
+        <p>Online (Gather Town) organized by<br/> <a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
       </td>
       <td>
-        <p>{% include person-list ids='fjug|tomancak|kozusznik|Michal Krumnikl|Pavel Moravec|Václav Svatoň' %}</p>
+        <p>{% include person-list ids='tomancak|kozusznik|Michal Krumnikl|pm-cz|xulman|Dimitrios Stefanos Velissariou|Václav Svatoň|tischi|tpietzsch|ctrueden|imagejan|axtimwalde|frauzufall|oeway|bogovicj|marktsuchida|tinevez|LeeKamentsky|joshmoore|biovoxxel|sbesson|kephale|lannybroo|jburel|Nils Norlin|Estibaliz Gomez de Mariscal' %}</p>
       </td>
       <td>
-        <p>Parallel Macro/Scripts and OpenMPI Plugins</p>
+        <p><a href="https://imagej.net/events/wiki-grand-opening/index">Wiki</a>, <a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr>
