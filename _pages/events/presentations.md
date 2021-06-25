@@ -7,56 +7,67 @@ This page collects ImageJ-related presentations, including talks, workshops and 
 
 Do you know of a publicly archived ImageJ-related presentation not listed here? Please add it!
 
+<style>
+  .program th {
+    padding: 0.3em;
+  }
+  .program td {
+    padding: 0 1em 0 1em;
+    font-size: 0.9em;
+  }
+  .section-major {
+    background: lightsteelblue;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+  }
+  .section-minor {
+    background: lightgray;
+    font-size: 1em;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+
 ## Living workshops
 
 These materials are regularly updated, and intended to teach ImageJ and Fiji at introductory, intermediate and advanced levels. The [LOCI](/orgs/loci) group uses them to teach ImageJ at the [AQLM](http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/) course every year, as well as locally. Videos of the workshops were recorded in Spring 2017; those links are below along with the corresponding slides used at that time.
 
 {::nomarkdown}
-<table>
+<table class="program">
   <thead>
     <tr class="header">
-      <th style="padding-left: 10px !important"></th>
+      <th></th>
       <th>Title</th>
-      <th style="padding-left: 10px !important">
-        <p><strong>Resources</strong></p>
-      </th>
+      <th>Resources</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important">
-        <p><a href="/presentations/fiji-introduction/"><img src="/media/learn/fiji-intro-slide.png" width="300px"></a></p>
-      </td>
+      <td rowspan=3 style="width: 300px"><img src="/media/learn/fiji-intro-slide.png" width="100%"></td>
       <td>Introduction to Fiji</td>
-      <td style="padding: 0.3em 1em 0.3em 10px !important">
-        <p>Spring 2017: <a href="/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br>
+      <td>
+        Spring 2017: <a href="/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br>
         Spring 2019: <a href="/presentations/fiji-introduction/">slides</a><br>
-        Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a></p>
+        Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a>
       </td>
     </tr>
     <tr>
-      <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important">
-        <p>Segmentation in Fiji</p>
-      </td>
-      <td style="padding: 0.3em 1em 0.3em 10px !important">
-        <p>Spring 2017: <a href="/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br>
+      <td>Segmentation in Fiji</td>
+      <td>
+        Spring 2017: <a href="/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br>
         Spring 2019: <a href="/presentations/fiji-segmentation/">slides</a><br>
-        Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a></p>
+        Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a>
       </td>
-      <td style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important"></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>Scripting with Fiji</td>
-      <td style="padding: 0.3em 1em 0.3em 10px !important">
-        <p>Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
-        Spring 2019: <a href="/presentations/fiji-scripting/">slides</a></p>
+      <td>
+        Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
+        Spring 2019: <a href="/presentations/fiji-scripting/">slides</a>
       </td>
-      <td></td>
     </tr>
   </tbody>
 </table>
@@ -65,7 +76,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 ## Talks
 
 {::nomarkdown}
-<table>
+<table class="program">
   <thead>
     <tr class="header">
       <th>Date</th>
@@ -76,10 +87,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
   </thead>
   <tbody>
     <tr>
-      <td><strong><a href="https://www.embl.de/training/events/2018/IMJ18-01/">From Images to Knowledge with ImageJ & Friends</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="https://www.embl.de/training/events/2018/IMJ18-01/">From Images to Knowledge with ImageJ & Friends</a></th>
     </tr>
     <tr>
       <td>2018-Dec-06</td>
@@ -93,16 +101,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><strong><a href="http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/">2017 NEUBIAS2020</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/">2017 NEUBIAS2020</a></th>
     </tr>
     <tr>
       <td>2017-Feb-16</td>
@@ -113,16 +112,10 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong><a href="/events/conference-2015">2015 ImageJ Conference</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="/events/conference-2015">2015 ImageJ Conference</a></th>
     </tr>
     <tr>
-      <td>Keynotes</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td colspan=4 class="section-minor">Keynotes</td>
     </tr>
     <tr>
       <td>2015-Sep-03</td>
@@ -157,10 +150,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td>Featured presentations</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td colspan=4 class="section-minor">Featured presentations</td>
     </tr>
     <tr>
       <td>2015-Sep-04</td>
@@ -187,10 +177,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td>Lightning talks</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td colspan=4 class="section-minor">Lightning talks</td>
     </tr>
     <tr>
       <td>2015-Sep-04</td>
@@ -338,10 +325,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong><a href="/events/conference-2012">2012 ImageJ Conference</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="/events/conference-2012">2012 ImageJ Conference</a></th>
     </tr>
     <tr>
       <td>2012-Oct-24</td>
@@ -352,10 +336,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong><a href="/events/isbi-2012">Bioimage analysis workshop - ISBI 2012</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="/events/isbi-2012">Bioimage analysis workshop - ISBI 2012</a></th>
     </tr>
     <tr>
       <td>2012-Apr-30</td>
@@ -366,10 +347,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong><a href="/events/conference-2010">2010 ImageJ Conference</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="/events/conference-2010">2010 ImageJ Conference</a></th>
     </tr>
     <tr>
       <td>2010-Oct-27</td>
@@ -380,10 +358,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong>Other presentations</strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major">Other presentations</th>
     </tr>
     <tr>
       <td>2020-May-13</td>
@@ -440,7 +415,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 ## Workshops
 
 {::nomarkdown}
-<table>
+<table class="program">
   <thead>
     <tr class="header">
       <th>Date</th>
@@ -451,10 +426,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
   </thead>
   <tbody>
     <tr>
-      <td><strong><a href="http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/">2017 NEUBIAS2020</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/">2017 NEUBIAS2020</a></th>
     </tr>
     <tr>
       <td>-</td>
@@ -465,10 +437,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong><a href="/events/conference-2015">2015 ImageJ Conference</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="/events/conference-2015">2015 ImageJ Conference</a></th>
     </tr>
     <tr>
       <td>2015-Sep-03</td>
@@ -538,10 +507,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td><strong>Other workshops</strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major">Other workshops</th>
     </tr>
     <tr>
       <td>-</td>
@@ -588,7 +554,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 ## Posters
 
 {::nomarkdown}
-<table>
+<table class="program">
   <thead>
     <tr class="header">
       <th>Date</th>
@@ -599,10 +565,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
   </thead>
   <tbody>
     <tr>
-      <td><strong><a href="/events/conference-2015">2015 ImageJ Conference</a></strong></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <th colspan=4 class="section-major"><a href="/events/conference-2015">2015 ImageJ Conference</a></th>
     </tr>
     <tr>
       <td>2015-Sep-03</td>
