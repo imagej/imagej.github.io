@@ -39,15 +39,13 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 <table class="program">
   <thead>
     <tr class="header">
-      <th></th>
       <th>Title</th>
       <th>Resources</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan=3 style="width: 300px"><img src="/media/learn/fiji-intro-slide.png" width="100%"></td>
-      <td>Introduction to Fiji</td>
+      <td>Introduction to ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br>
         Spring 2019: <a href="/presentations/fiji-introduction/">slides</a><br>
@@ -55,7 +53,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td>Segmentation in Fiji</td>
+      <td>Segmentation in ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br>
         Spring 2019: <a href="/presentations/fiji-segmentation/">slides</a><br>
@@ -63,7 +61,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td>Scripting with Fiji</td>
+      <td>Scripting with ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
         Spring 2019: <a href="/presentations/fiji-scripting/">slides</a>
