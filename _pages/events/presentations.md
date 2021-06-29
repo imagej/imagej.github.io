@@ -39,31 +39,31 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
 <table class="program">
   <thead>
     <tr class="header">
-      <th></th>
       <th>Title</th>
       <th>Resources</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan=3 style="width: 300px"><img src="/media/learn/fiji-intro-slide.png" width="100%"></td>
-      <td>Introduction to Fiji</td>
+      <td>Introduction to ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br>
         Spring 2019: <a href="/presentations/fiji-introduction/">slides</a><br>
-        Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a>
-      </td>
+        Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a><br>
+        Summer 2021: <a href="https://docs.google.com/presentation/d/1dcu41cC3Yzw2MnBMiWzWlHd7Rstr8Coo0zRAOXmfSGs/edit?usp=sharing/">slides</a>
+        </td>
     </tr>
     <tr>
-      <td>Segmentation in Fiji</td>
+      <td>Segmentation in ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br>
         Spring 2019: <a href="/presentations/fiji-segmentation/">slides</a><br>
-        Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a>
+        Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a><br>
+        Summer 2021: <a href="https://docs.google.com/presentation/d/1HKHZTTYCZWvm62IvgGAxzOvchwNfJswsx5WtKuRVCRE/edit?usp=sharing/">slides</a>
       </td>
     </tr>
     <tr>
-      <td>Scripting with Fiji</td>
+      <td>Scripting with ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
         Spring 2019: <a href="/presentations/fiji-scripting/">slides</a>
