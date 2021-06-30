@@ -66,7 +66,8 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Scripting with ImageJ</td>
       <td>
         Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
-        Spring 2019: <a href="/presentations/fiji-scripting/">slides</a>
+        Spring 2019: <a href="/presentations/fiji-scripting/">slides</a><br>
+        Summer 2021: <a href="https://docs.google.com/presentation/d/1c7cvJLAhRZ9t1zrbbAQ0Zr-hTrHva6WOT6hQQinuDTE/edit?usp=sharing/">slides</a>
       </td>
     </tr>
   </tbody>
