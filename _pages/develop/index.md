@@ -67,67 +67,110 @@ public void loadAndDisplay(File file) {
 </table>
 {:/}
 
-
 ## Project structure
 
 ImageJ2 is divided into three parts---ImageJ2, ImgLib2, and SciJava---with responsibilities as follows:
 
 {::nomarkdown}
-<table>
-  <thead>
-    <tr class="header">
-      <th style="font-size: 56px; width: 350px">
-        {% include icon name='ImageJ2' size='72px' %}<a href="/software/imagej2">ImageJ2</a>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <span style="font-size: large">ImageJ2 provides <strong>image-specific components</strong></span>
-        <ul>
-          <li><a href="/libs/imagej-common">ImageJ Common</a></li>
-          <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
-          <li><a href="/plugins/updater">ImageJ Updater</a></li>
-          <li><a href="/libs/imagej-legacy">ImageJ Legacy</a></li>
-          <li><a href="/libs/scifio">SCIFIO</a></li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="font-size: 56px">
-        {% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span style="font-size: large">ImgLib2 provides the <strong>core image data model</strong></span><br>
-        <ul>
-          <li>Extensible pixel types – not just uint8, uint16, float32</li>
-          <li>Extensible data sources – not just files on disk</li>
-          <li>Extensible sample organizations – not just arrays</li>
-          <li>Extensible dimensionality – not just X, Y, Z and time</li>
-          <li>Interface-driven design</li>
-        </ul>
-      </td>
-    <tr>
-      <td style="width: 350px;">
-        <a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a>
-      </td>
-    </tr>
-      <td>
-        <span style="font-size: large">SciJava provides <strong>scientific components more general than images</strong></span><br>
-        <ul>
-          <li>Application container</li>
-          <li>Plugin framework</li>
-          <li>Module framework</li>
-          <li>Display and UI frameworks</li>
-          <li>Scripting framework and plugins</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<style>
+  .layer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project {
+    flex-grow: 1;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5em;
+    min-width: 350px;
+    text-align: center;
+  }
+  .project div:first-child {
+    font-size: 3rem;
+    white-space: nowrap;
+    padding: 0.25em;
+  }
+  .project p {
+    margin: 0;
+    padding: 0;
+  }
+  .project p a, .project p img {
+    vertical-align: middle;
+  }
+  .project p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  .project ul.links {
+    list-style-type: none;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+  }
+  .project ul.links li {
+    display: inline;
+    background-color: peachpuff;
+    border-radius: 0.5em;
+    margin: 0.5em 0.1em;
+    padding: 0.3em 0.5em;
+    line-height: 2.3em;
+    white-space: nowrap;
+  }
+  .project ul.bullets {
+    display: inline-block;
+    text-align: left;
+    padding: 0.5em 1em 1em 2em;
+    list-style-type: square;
+  }
+</style>
+<div class="layer">
+  <div class="project">
+    <div>
+      <p>{% include icon name='ImageJ2' size='72px' %}<a href="/software/imagej2">ImageJ2</a></p>
+      <p>image-specific components</p>
+    </div>
+    <div>
+      <ul class="links">
+        <li><a href="/libs/imagej-common">ImageJ Common</a></li>
+        <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
+        <li><a href="/plugins/updater">ImageJ Updater</a></li>
+        <li><a href="/libs/imagej-legacy">ImageJ Legacy</a></li>
+        <li><a href="/libs/scifio">SCIFIO</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="layer">
+  <div class="project">
+    <div>
+      <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+      <p>more general than images</p>
+    </div>
+    <div>
+      <ul class="bullets">
+        <li>Application container</li>
+        <li>Plugin framework</li>
+        <li>Module framework</li>
+        <li>Display and UI frameworks</li>
+        <li>Scripting framework and plugins</li>
+      </ul>
+    </div>
+  </div>
+  <div class="project">
+    <div>
+      <p>{% include icon name='ImgLib2' size='72px' %}<a href="/libs/imglib2">ImgLib2</a></p>
+      <p>core image data model</p>
+    </div>
+    <div>
+      <ul class="bullets">
+        <li>Extensible pixel types – not just uint8, uint16, float32</li>
+        <li>Extensible data sources – not just files on disk</li>
+        <li>Extensible sample organizations – not just arrays</li>
+        <li>Extensible dimensionality – not just X, Y, Z and time</li>
+        <li>Interface-driven design</li>
+      </ul>
+    </div>
+  </div>
+</div>
 {:/}
 
 For full details on the technical structure of ImageJ2, see the [Architecture](architecture) page.
