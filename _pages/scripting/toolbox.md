@@ -13,7 +13,7 @@ This page is meant to provide small code snippets as a starting point for writin
 -   [Broadly Applicable Routines](/plugins/bar), a curated collection of snippets.
 -   Albert Cardona's comprehensive [Fiji Jython tutorial](http://www.ini.uzh.ch/~acardona/fiji-tutorial/) (please note that it is a better idea to contribute tutorials to the ImageJ Wiki directly)." %}
 
-{% include notice icon="tip" content="To copy the snippets, just double-click somewhere into the code. If JavaScript is enabled, this will automatically select the complete snippet." %}
+{% include notice icon="tip" content="To copy the snippets, mouse over the code and click the Copy button that appears." %}
 
 ## Opening an image using ImageJ
 
