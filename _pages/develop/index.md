@@ -1,5 +1,4 @@
 ---
-mediawiki: Development
 title: Development
 section: Extend:Develop
 project: /software/imagej2
