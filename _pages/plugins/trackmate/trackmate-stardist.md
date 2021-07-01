@@ -39,11 +39,11 @@ We use this model in the first StarDist detector.
 First laucn Fiji and open the tutorial image in Fiji.
 We use here the "stardist-tutorial/data/builtin model/cells.tif", provided in the tutorial data.
 
-![Cell images](/media/plugins/trackmate/trackmate-stardist-builtin-detector-image.png)
+{% include img name="Cell images" src="/media/plugins/trackmate/trackmate-stardist-builtin-detector-image.png" align="center" %}
 
 Then launch TrackMate (_Plugins > Tracking > TrackMate_).
 In the second panel titled **Select a detector**, you should see two new choices in the list, and on of them is **StarDist detector**. 
-{% include img name="TrackMate-StarDist builtin detector choice" src="/media/plugins/trackmate/trackmate-stardist-select-builtin-detector.png" %}
+{% include img name="TrackMate-StarDist builtin detector choice" src="/media/plugins/trackmate/trackmate-stardist-select-builtin-detector.png" align="center" %}
 
 Select it and click ** Next**.
 
@@ -56,35 +56,35 @@ This simple panel appears.
 
 Check the results of segmentation by click on the **Preview** button.
 Here is what I get on the first time-point of the tutorial image:
-{% include img name="TrackMate-StarDist results" src="/media/plugins/trackmate/trackmate-stardist-preview-results.png" %}
+{% include img name="TrackMate-StarDist results" src="/media/plugins/trackmate/trackmate-stardist-preview-results.png" align="center" %}
 
 The StarDist model works really well with this kind of data.
 After that you follow through the next steps in TrackMate to segment all cells in all time-points then track them. 
 Using the default tracker and default parameters each time we get this result:
 
-{% include video src="/media/plugins/trackmate/trackmate-stardist-results.mp4" width=800 %}
+{% include video src="/media/plugins/trackmate/trackmate-stardist-results.mp4" width=800 align="center" %}
 
-### StarDist detector on a multi-channel image.
+### ERK signalling and motility assay with a multi-channel image.
 
-Here we will use images from a cell migration assay, where cells are expressing an ERK reported in the second channel, and are stained for their nuclei. The analysis will consits in seegmenting and tracking the cells in the nuclei channel and analyzing intensities in the ERK channel.
+In this part of the tutorial we will correlate the translocation of an ERK reported in the nuclei with cell motility. We will use images from a cell migration assay, where cells are expressing an ERK reported in the second channel, and are stained for their nuclei in the first channel. The analysis will consist in segmenting and tracking the cells in the nuclei channel and analyzing intensities in the ERK channel.
 
 Open the ERK cells image you want to track. We use here the "stardist-tutorial/data/builtin model/cells.tif", provided in the tutorial data.
 
-![ERK Cell images](/media/plugins/trackmate/trackmate-stardist-builtin-detector-2-image.png)
+{% include img name="ERK Cell images" src="/media/plugins/trackmate/trackmate-stardist-builtin-detector-2-image.png" width="600" align="center" %}
 
 Launch TrackMate. In the second panel titled **Select a detector**, you should have two Stardist-related entries; again choose **StarDist detector** and click **Next**. 
 
 This time, the configuration panel lets you choose the channel to perform the segmentation on. Pick the first one, which is the nuclei channel. Check that the segmentation is working by clicking the **Preview** button.
 
-![Configuring the StarDist detector for the ERK cells movie](/media/plugins/trackmate/trackmate-stardist-select-builtin-detector2.png)
+{% include img name="Configuring the StarDist detector for the ERK cells movie" src="/media/plugins/trackmate/trackmate-stardist-select-builtin-detector2.png" width="800" align="center" %}
 
 Here is an example of what we get on the first frame of the tutorial image: 
 
-![Preview result](/media/plugins/trackmate/trackmate-stardist-builtin-detection-2-preview.png)
+{% include img name="Preview result" src="/media/plugins/trackmate/trackmate-stardist-builtin-detection-2-preview.png" width="800" align="center" %}
 
 In case the results are satisfying, click **Next** to perform detection in the full time-series. After the detection is finished, continue with the following steps same as in standard TrackMate [workflow](https://imagej.net/plugins/trackmate/getting-started#the-detection-process). Using the default tracker (Simple LAP tracker) with the default parameters we get this result without any filtering:
 
-![Tracking result](/media/plugins/trackmate/trackmate-stardist-builtin-tracking-result.gif)
+{% include img name="Tracking result" src="/media/plugins/trackmate/trackmate-stardist-builtin-tracking-result.gif" width="800" align="center" %}
 
 
 
@@ -98,11 +98,11 @@ In this tutorial we will track T cells imaged in bright-field with a model we tr
 
 First open the tutorial image called "stardist-tutorial/data/custom model/T cells/T_cells.tif" in Fiji.  provided in the tutorial data.
 
-![T cells](/media/plugins/trackmate/trackmate-stardist-custom-detector-2-image.png)
+{% include img name="T cells" src="/media/plugins/trackmate/trackmate-stardist-custom-detector-2-image.png" width="800" align="center" %}
 
 Launch TrackMate. In the second panel titled **Select a detector**, choose **StarDist detector custom model** and click **Next**. Its configuration panel requires several parameters:
 
-![Custom detector](/media/plugins/trackmate/trackmate-stardist-select-custom-detector2.png)
+{% include img name="Custom detector" src="/media/plugins/trackmate/trackmate-stardist-select-custom-detector2.png" width="800" align="center" %}
 
 - In the **Custom model file** text field, you need to enter the path to a StarDist model packaged as a zip file (or use the **Browse** button to navigate to the folder).
 - **Score threshold** correspond to the threshold on the probability map to identify object. It accepts values from 0 to 1.
@@ -110,11 +110,11 @@ Launch TrackMate. In the second panel titled **Select a detector**, choose **Sta
 
 - Set these parameters and click **Preview** button to test the detector on the current frame. Here is an example of what we get on the first time-point of the tutorial image (using default parameters): 
 
-  ![Preview result](/media/plugins/trackmate/trackmate-stardist-custom-detector-2-preview.png)
+  {% include img name="Preview result" src="/media/plugins/trackmate/trackmate-stardist-custom-detector-2-preview.png" width="800" align="center" %}
 
 - In case the results are satisfying, click **Next** to perform detection in the full time-series. After the detection is finished, continue with the following steps same as in standard TrackMate [workflow](https://imagej.net/plugins/trackmate/getting-started#the-detection-process). Using the default tracker (Simple LAP tracker) with the default parameters we get this result:
   
-  ![Tracking result](/media/plugins/trackmate/trackmate-stardist-custom-tracking-result.gif)
+  {% include img name="Tracking result" src="/media/plugins/trackmate/trackmate-stardist-custom-tracking-result.gif" width="800" align="center" %}
 
 ## Citations.
 
