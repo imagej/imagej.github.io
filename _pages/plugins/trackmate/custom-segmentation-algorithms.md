@@ -237,10 +237,10 @@ But creating spots from this probability is simple. The method {% include github
 	}
 ```
 Here the threshold value to segment the probability map is set by the user.
-Since we have a probaiblity map, we can use it to compute a quality value derived from this probability.
+Since we have a probability map, we can use it to compute a quality value derived from this probability.
 
 ### Example: the ilastik detector.
 
+The ilastik detector works exactly in the same way. It has a  {% include github org='tinevez' repo='TrackMate-Weka' branch='master' source='fiji/plugin/trackmate/ilastik/IlastikRunner.java' label='IlastikRunner' %}  class that is in charge of calling ilastik and convert the results to a spot collection. The ilastik detector just makes a simple call to it.
 
-
-
+However we use a special slicing of time-points for this algorithm. Indeed, the ilastik runner expects to receive _all_ the time-points to process at once, runs ilastik on them, and then return.
