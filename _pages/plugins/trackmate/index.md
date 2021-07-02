@@ -143,6 +143,7 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 -   [How to write your own viewer for TrackMate](/plugins/trackmate/custom-viewers)
 -   [How to write custom actions for TrackMate](/plugins/trackmate/custom-actions)
 -   [How to write your own detection algorithm for TrackMate](/plugins/trackmate/custom-detection-algorithms)
+-   New starting in version 7: [How to write your own or integrate a **segmentation** algorithm for TrackMate](/plugins/trackmate/custom-segmentation-algorithms)
 -   [How to write your own particle-linking algorithm for TrackMate](/plugins/trackmate/custom-particle-linking-algorithms)
 
 ## Known problems
