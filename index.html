@@ -85,7 +85,7 @@ layout: home
             <h1>Why ImageJ?</h1>
             <header class="container-whyij">
               <div class="row-whyij">
-                <div class="col-4">
+                <div class="col-4 why-column-padder">
                   <div class="fa-5x text-success">
                     <span class="fas fa-bolt"></span>
                   </div>
@@ -102,7 +102,7 @@ layout: home
                   and much more.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 why-column-padder">
                   <div class=" fa-5x text-primary">
                     <span class="fas fa-cogs"></span>
                   </div>
@@ -112,7 +112,7 @@ layout: home
                   hundreds of plugins to assist with any of your imaging needs.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 why-column-padder">
                   <div class=" fa-5x text-danger">
                     <span class="fas fa-heart"></span>
                   </div>
@@ -132,68 +132,93 @@ layout: home
     </div>
   </section>
 
-  <div class="col-md-8">
-    <div class="card text-center">
-      <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs" id="plugin-tabs" role="tablist">
-          <!-- dynamically generated from plugins.json -->
-        </ul>
-      </div>
-      <div class="card-body">
-        <div class="tab-content" id="plugin-tab-content">
-          <!-- dynamically generated from plugins.json -->
+  <section class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h2>Plugins</h2>
+          <p>
+            Fiji features thousands of plugins that aid in scientific image processing and analysis. Here are a few featured plugins hand-picked by the Fiji community - refresh the page to see different plugins!
+          </p>
+          <a class="button solid" href="{{site.baseurl}}/list-of-extensions">
+            Explore Extensions
+          </a>
+        </div>
+        <div class="col-8">
+          <div class="plugin-card">
+            <div class="plugin-card-header">
+              <ul class="plugin-nav-tabs" id="plugin-tabs" role="tablist">
+                <!-- dynamically generated from plugins.json -->
+              </ul>
+            </div>
+            <div class="plugin-card-body">
+              <div class="tab-content" id="plugin-tab-content">
+                <!-- dynamically generated from plugins.json -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-<!-- Spotlight -->
-<!-- Bootstrap core JavaScript
+  <!-- plugin javascript
      ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="/assets/js/jquery-3.4.1.min.js"></script>
   <script>
+    function slugify(text){
+      return text.toString().toLowerCase()
+        .replace(/\s+/g, '-')           // Replace spaces with -
+        .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+        .replace(/^-+/, '')             // Trim - from start of text
+        .replace(/-+$/, '');            // Trim - from end of text
+    }
+
     let first = true;
     const MAX_PLUGIN_COUNT = 6; // controls max number of tabs shown
-
-    $.getJSON("/plugins.json", function(json) {
-      let plugins = json.plugins;
-      // Fisher-Yates shuffle; see: https://javascript.info/task/shuffle
-      for (let i = plugins.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-        [plugins[i], plugins[j]] = [plugins[j], plugins[i]]; // swap elements
-      }
-      if (plugins.length > MAX_PLUGIN_COUNT){
-        plugins = plugins.slice(0,MAX_PLUGIN_COUNT);
-      }
-      plugins.map(function(val){
-        // generating the tab header
-        let nameSlug = 'plugin-' + slugify(val.name);
-        let tabString = `
-          <li class="nav-item">
-            <a class="nav-link ${first ? 'active' : ''}" id="${nameSlug}-tab-header" data-toggle="tab" href="#${nameSlug}-tab" role="tab" aria-controls="${nameSlug}" aria-selected="true">${val.name}</a>
-          </li>
-        `
-
-        // generating the tab panel
-        let paneString = `
-        <div class="tab-pane fade ${first ? 'show active' : ''}" id="${nameSlug}-tab" role="tabpanel" aria-labelledby="${nameSlug}-tab-header">
-          ${val.imgUrl ?
-            '<img class="img-fluid img-plugin" alt="image showing ' + val.name + ' in action" src = "' + val.imgUrl + '" /> <hr />'
-            : ''
-          }
-          <h5 class="card-title">${val.name}</h5>
-          <p class="card-text">${val.description}</p>
-          <a href="${val.link}" class="btn btn-primary">More information</a>
-        </div>
-        `
-        $("#plugin-tabs").append(tabString);
-        $("#plugin-tab-content").append(paneString);
-
-
-        if (first){
-          first = false;
+    fetch('/plugins.json')
+      .then(response => response.json())
+      .then((json) => {
+        let plugins = json.plugins;
+        // Fisher-Yates shuffle; see: https://javascript.info/task/shuffle
+        for (let i = plugins.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+          [plugins[i], plugins[j]] = [plugins[j], plugins[i]]; // swap elements
         }
-      })
-    });
+        if (plugins.length > MAX_PLUGIN_COUNT){
+          plugins = plugins.slice(0,MAX_PLUGIN_COUNT);
+        }
+
+        // TODO(mattxwang): we should probably properly sanitize inputs before injecting them
+        plugins.map((val) => {
+          // generating the tab header
+          let nameSlug = 'plugin-' + slugify(val.name);
+          let tabString = `
+            <li class="nav-item" role="presentation">
+              <button class="nav-link ${first ? 'active' : ''}" id="${nameSlug}-tab-header" data-bs-toggle="tab" data-bs-target="#${nameSlug}-tab" role="tab" aria-controls="${nameSlug}" aria-selected="true">${val.name}</button>
+            </li>
+          `
+
+          // generating the tab panel
+          let paneString = `
+          <div class="carousel-item ${first ? 'carousel-item-show' : ''}" id="${nameSlug}-tab" role="tabpanel" aria-labelledby="${nameSlug}-tab-header">
+            ${val.imgUrl ?
+              '<img class="img-fluid img-plugin" alt="image showing ' + val.name + ' in action" src = "' + val.imgUrl + '" /> <hr />'
+              : ''
+            }
+            <h3>${val.name}</h3>
+            <p>${val.description}</p>
+            <a href="${val.link}" class="button solid">More information</a>
+          </div>
+          `
+
+          document.getElementById("plugin-tabs").innerHTML += tabString;
+          document.getElementById("plugin-tab-content").innerHTML += paneString;
+
+          if (first){
+            first = false;
+          }
+        })
+      });
   </script>

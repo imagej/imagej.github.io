@@ -228,7 +228,7 @@
 }
 
 .button {
-  width: 10em;
+  min-width: 10em;
 }
 
 .container {
@@ -273,7 +273,10 @@
   display: flex;
 }
 
-.col-4 {
+/* TODO: completely refactor this */
+/* we shouldn't be overriding the default .col-4 styles */
+
+.why-column-padder {
   width: 30.5%;
   text-align:center;
   vertical-align:top;
@@ -283,12 +286,12 @@
   margin-right: 0.5em;
 }
 
-.col-4 p {
+.why-column-padder p {
   margin-top: 1em;
   font-size: 1.2em;
 }
 
-.col-4 h2 {
+.why-column-padder h2 {
   font-size: 1.6em;
 }
 
@@ -315,4 +318,48 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* code for the carousel plugin */
+
+.plugin-card {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.plugin-card-header {
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding: .5rem 1rem;
+}
+
+.plugin-card-body {
+  padding: 1rem 1rem;
+}
+
+.plugin-nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -0.5rem;
+  padding-left: 0;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item-show {
+  display: block;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.img-plugin {
+  max-width: 50%;
 }
