@@ -1,5 +1,4 @@
 ---
-mediawiki: Colocalization_by_Cross_Correlation
 title: Colocalization by Cross Correlation
 categories: [Colocalization]
 description: How to use the Colocalization by Cross Correlation plugin
