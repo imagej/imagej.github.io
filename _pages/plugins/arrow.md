@@ -1,5 +1,4 @@
 ---
-mediawiki: Arrow
 title: Arrow
 project: /software/fiji
 categories: [Image Annotation]
@@ -50,5 +49,3 @@ To be compatible with the previous Arrow\_ tool, this plugin has a legacy mode t
 ## Further developments
 
 If you need this tool to do something more, do not hesitate to mail the maintainer. He will be pleased to implement it.
-
- 
