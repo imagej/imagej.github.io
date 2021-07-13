@@ -1,6 +1,6 @@
 ---
-mediawiki: Balloon
-title: Balloon
+title: Balloon segmentation
+description: Plugin for the segmentation of contours using active contour/"balloon inflation" 
 project: /software/fiji
 categories: [Segmentation]
 artifact: sc.fiji:BalloonSegmentation_
@@ -11,7 +11,7 @@ doi: 10.1038/nmeth.1940
 
 ### Introduction
 
-A plugin[^1] that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures . It uses a physical "balloon inflation" algorithm for finding the cell boundaries from 8bits images. Features include:
+A plugin[^1] that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures. It uses a physical "balloon inflation" algorithm for finding the cell boundaries from 8bits images. Features include:
 
 -   Extraction of lists of individual cell shapes
 -   The determination of the cells being in contact each other
