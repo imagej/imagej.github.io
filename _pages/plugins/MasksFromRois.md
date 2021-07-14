@@ -16,6 +16,7 @@ team-founders: Laurent Thomas
 ---
 
 # Generate Masks from Rois in Fiji
+
 <img src="https://github.com/LauLauThom/MaskFromRois-Fiji/blob/main/GUI.png" width=50% height=50%>
 
 This plugin facilitates the generation of mask images (0/255) from image-regions outlined with ROIs for large datasets.  
