@@ -511,23 +511,19 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <th colspan=4 class="section-major">Other workshops</th>
     </tr>
     <tr>
-      <td>-</td>
+      <td>2021-August</td>
+      <td>Ellen Dobson</td>
+      <td>CZI Workshops</td>
       <td>
-        <a href="/software/biodip">BioDIP</a>
-      </td>
-      <td>Basics of Quantitative Image Analysis</td>
-      <td>
-        <a href="http://workshops.imagej.net/Basics-of-Quantitative-image-analysis.pdf">slides (PDF)</a>
+        <a href="https://docs.google.com/presentation/d/1eDKMlweAIyTw72LuAv6LCknLE9BmZruTRiWuIPQGadk/edit?usp=sharing">Workshop I</a>, <a href="https://docs.google.com/presentation/d/111nrll-4uyk0ZVrudmFnEZHyNt76RzVZvKvJkOVSoJA/edit?usp=sharing">Workshop II</a>
       </td>
     </tr>
     <tr>
-      <td>2015-Nov-03</td>
+      <td>2020-April-02</td>
+      <td>Robert Haase</td>
+      <td>Lecture Biolmage Analysis 2020</td>
       <td>
-        <a href="/orgs/loci">LOCI</a>
-      </td>
-      <td>Intro to ImageJ Ops - Usage and Development</td>
-      <td>
-        <a href="http://workshops.imagej.net/IntroToOps.pdf">slides (PDF)</a>, <a href="http://workshops.imagej.net/IntroToOps.pptx">slides (PPT)</a>
+        <a href="https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U">YouTube Channel</a>
       </td>
     </tr>
     <tr>
@@ -541,11 +537,23 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       </td>
     </tr>
     <tr>
-      <td>2020-April-02</td>
-      <td>Robert Haase</td>
-      <td>Lecture Biolmage Analysis 2020</td>
+      <td>2015-Nov-03</td>
       <td>
-        <a href="https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U">YouTube Channel</a>
+        <a href="/orgs/loci">LOCI</a>
+      </td>
+      <td>Intro to ImageJ Ops - Usage and Development</td>
+      <td>
+        <a href="http://workshops.imagej.net/IntroToOps.pdf">slides (PDF)</a>, <a href="http://workshops.imagej.net/IntroToOps.pptx">slides (PPT)</a>
+      </td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>
+        <a href="/software/biodip">BioDIP</a>
+      </td>
+      <td>Basics of Quantitative Image Analysis</td>
+      <td>
+        <a href="http://workshops.imagej.net/Basics-of-Quantitative-image-analysis.pdf">slides (PDF)</a>
       </td>
     </tr>
   </tbody>
