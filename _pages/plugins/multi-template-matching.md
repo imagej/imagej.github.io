@@ -15,7 +15,7 @@ license-label: GPLv3
 team-founders: Laurent Thomas, Jochen Gehrig
 ---
 
-<img src="/media/plugins/multi-template-matching-montagegui.png" width="800"/>
+{% include img name="MTM-GUI" src="/media/plugins/multi-template-matching-montagegui.png" %}
 
 # Installation
 
@@ -35,4 +35,3 @@ We also distribute a python package for Multi-Template-Matching available on [Py
 # Video Tutorials
 
 {% include video platform="youtube" id="PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo" %}
-    
