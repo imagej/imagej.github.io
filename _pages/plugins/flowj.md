@@ -47,7 +47,7 @@ You can run the plugin from the following menu location: _Plugins > BIJ > FlowJ_
 
 A dialog will open with the following options:
 
-![FlowJ dialog](/media/plugins/FlowJ_dialog.png)
+![FlowJ dialog](/media/plugins/flowj-dialog.png)
 
 
 ####  Buttons:

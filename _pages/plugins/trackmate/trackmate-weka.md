@@ -1,7 +1,7 @@
 ---
 title: TrackMate-Weka
 categories: [Segmentation,Tracking,Machine Learning]
-logo: /media/logos/trackmate-weka-logo.png
+logo: /media/icons/trackmate-weka.png
 ---
 
 # TrackMate-Weka.

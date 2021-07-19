@@ -2,7 +2,7 @@
 title: Multi-Template Matching
 description: Object-detection with one or multiple template images
 categories: [Feature Extraction, Object Detection]
-icon: /media/icons/MultiTemplateMatching.jpg
+icon: /media/icons/multi-template-matching.jpg
 
 
 name:  Multi-Template Matching
