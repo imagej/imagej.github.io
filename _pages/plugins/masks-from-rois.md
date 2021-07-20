@@ -12,7 +12,7 @@ release-date : 2021
 license-url: /licensing/mit
 license-label: MIT
 
-team-founders: Laurent Thomas
+team-founders: Laurent Thomas, Pierre Trehin  
 ---
 
 # Generate Masks from Rois in Fiji
