@@ -12,6 +12,8 @@ release-date : 2021
 license-url: /licensing/mit
 license-label: MIT
 
+icon: /media/icons/masks-from-rois.svg
+
 team-founders: Laurent Thomas, Pierre Trehin  
 ---
 
