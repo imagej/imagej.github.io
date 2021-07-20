@@ -11,6 +11,7 @@ github: hinerm
 stackoverflow: 1027800/hinerm
 openhub: hinerm
 linkedin: pub/mark-hiner/63/984/8b2
+orcid: 0000-0001-9404-7579
 ---
 
 Mark was a member of the core [ImageJ2](/software/imagej2) development team at [LOCI](/orgs/loci) from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [SCIFIO](/libs/scifio) project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing. He also developed the [ImageJ-MATLAB](/scripting/matlab) project for [ImageJ2](/software/imagej2)/[MATLAB](/scripting/matlab) interoperability. Mark rejoined the ImageJ2 team in 2020.
