@@ -20,7 +20,7 @@ nav-links:
 
 ## Introduction.
 
-Up to the version 7 of [TrackMate](/plugins/trackmate/index), detection algorithms were limited to return the position of spots and their radius. All the detection were represented by a tuple in the shape of `frame, x, y, z, radius, quality`. This is well suited to implement _detection algorithms_, that return the position of an object but omit its shape. The [previous page](/plugins/trackmate/custom-detection-algorithms) in this tutorial series showed how the base code to implement such an an algoritms as a detector for TrackMate.
+Up to the version 7 of [TrackMate](/plugins/trackmate/index), detection algorithms were limited to return the position of spots and their radius. All the detection were represented by a tuple in the shape of `frame, x, y, z, radius, quality`. This is well suited to implement _detection algorithms_, that return the position of an object but omit its shape. The [previous page](/plugins/trackmate/custom-detection-algorithms) in this tutorial series showed how the base code to implement such an algorithm as a detector for TrackMate.
 
 With version 7, we rewrote a large part of TrackMate to remove this limitation, at least in 2D. We changed the data model so that `Spot`s in TrackMate could _possibly_ store the shape, while not affecting the exiting detectors. We made a new API to facilitate implementing _segmentation algorithms_ in TrackMate, that can return the shape of objects. Their shape is later used to compute morphology features or to measure intensity within the object contour. We used this API to implement [7 new segmentation algorithms](/plugins/trackmate/trackmate-v7-detectors) in TrackMate, integrating the some of the best segmentation tools available in Java. This page documents how you can use this API to implement your own segmentation algorithms yourself, and make it a first-class-citizen of TrackMate, like any of the other TrackMate modules we document in this series.
 
@@ -241,6 +241,169 @@ Since we have a probability map, we can use it to compute a quality value derive
 
 ### Example: the ilastik detector.
 
-The ilastik detector works exactly in the same way. It has a  {% include github org='tinevez' repo='TrackMate-Weka' branch='master' source='fiji/plugin/trackmate/ilastik/IlastikRunner.java' label='IlastikRunner' %}  class that is in charge of calling ilastik and convert the results to a spot collection. The ilastik detector just makes a simple call to it.
+The ilastik detector works exactly in the same way. It has a  {% include github org='tinevez' repo='TrackMate-Ilastik' branch='master' source='fiji/plugin/trackmate/ilastik/IlastikRunner.java' label='IlastikRunner' %}  class that is in charge of calling ilastik and convert the results to a spot collection. The ilastik detector just makes a simple call to it.
 
-However we use a special slicing of time-points for this algorithm. Indeed, the ilastik runner expects to receive _all_ the time-points to process at once, runs ilastik on them, and then return.
+However we use a special slicing of time-points for this algorithm. Indeed, the ilastik runner expects to receive _all_ the time-points to process at once, runs ilastik on them, and then return. We will discuss this in the next section.
+
+Here is some explanation on the runner code:
+
+```java
+/*
+ * This corresponds roughyl to the lines 94-110 of the IlastikRunner class.
+ */
+
+// Path to the ilastik project, provided by the users.
+final File projectFile = new File( projectFilePath );
+
+// Create an ilastik pixel classifier, configured with the classifier in the specified project.
+final PixelClassification classifier = new PixelClassification(
+  executableFilePath,
+  projectFile,
+  logService,
+  statusService,
+  numThreads,
+  maxRamMb );
+final PixelPredictionType predictionType = PixelPredictionType.Probabilities;
+
+// Run the classifier on the 'cropped' source image. This will result in the PixelClassification
+// Actually RUNNING ilastik in the background, passing input and output images as files saved
+// in a temp folder. But this is transparent to us.
+final ImgPlus< T > output = classifier.classifyPixels( cropped, predictionType );
+
+// The output has one channel per class in the classifier, so we need to get the channel that
+// contains the probability for our object of interest only (specified by the user via the classID 
+// parameter).
+final ImgPlus< T > proba = ImgPlusViews.hyperSlice( output, output.dimensionIndex( Axes.CHANNEL ), classId );
+
+// Etc.
+...
+  
+// Not we just have to import this probability map as TrackMate ROIs. Since we received the proba
+// for ALL time-points at once, we need to process it time-point by time-point:
+  
+for ( int t = 0; t < proba.dimension( timeIndex ); t++ )
+		{
+			final List< Spot > spotsThisFrame;
+			final ImgPlus< T > probaThisFrame = TMUtils.hyperSlice( proba, 0, t );
+
+			if ( DetectionUtils.is2D( probaThisFrame ) )
+			{
+				/*
+				 * 2D: we compute and store the contour.
+				 */
+				final boolean simplify = true;
+        
+        // In 2D we again use the MaskUtils utilities. Note that we use the '...WithROI()'
+        // method version. In 2D we can import objects with their contours.
+				spotsThisFrame = MaskUtils.fromThresholdWithROI(
+						probaThisFrame,
+						probaThisFrame,
+						calibration, 
+						probaThreshold, 
+						simplify, 
+						numThreads, 
+						probaThisFrame );
+			}
+			else
+			{
+				/*
+				 * 3D: We create spots of the same volume that of the region.
+				 * So we use the methods without the '...WithROI()'.
+				 */
+				spotsThisFrame = MaskUtils.fromThreshold(
+						probaThisFrame,
+						probaThisFrame,
+						calibration,
+						probaThreshold,
+						numThreads,
+						probaThisFrame );
+			}
+  // etc...
+```
+
+## Controlling the slicing of time-points.
+
+Normally TrackMate automates the multi-threading processing of several time-points. When you develop a detector, a `SpotDetector` instance is supposed to operate only on one time-point. The processing logic in TrackMate will take care of providing a single time-point image to this detector and incorporate the detection results into the correct place in the `SpotCollection`.
+
+But because we wanted to integrate with algorithms and tools such as ilastik, we needed to provide another way of handling time-points. For instance, ilastik expects to receive all the time-points at once, process them, and return the probabilities for all time-points as well. This is considerably faster than calling ilastik several times, once per time-point.
+
+So starting with v7, there is a new hierarchy for `SpotDetectorFactory` in TrackMate:
+
+### `SpotDetectorFactory`
+
+{% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java' label='SpotDetectorFactory' %} is the initial interface for spot detector factories that generate one detector per time-point. It is will suited to detection and segmentation algorithms that can run concurrently on several time-points at once without a penalty too large. All detectors I know of, except the ilastik detector, derive from this interface.
+
+Note that its only specific method is the following:
+
+```java
+	/**
+	 * Returns a new {@link SpotDetector} configured to operate on the given
+	 * target frame. This factory must be first given the <code>ImgPlus</code>
+	 * and the settings map, through the <code>#setTarget(ImgPlus, Map)</code>
+	 * method.
+	 *
+	 * @param interval
+	 *            the interval that determines the region in the source image to
+	 *            operate on. This must <b>not</b> have a dimension for time
+	 *            (<i>e.g.</i> if the source image is 2D+T (3D), then the
+	 *            interval must be 2D; if the source image is 3D without time,
+	 *            then the interval must be 3D).
+	 * @param frame
+	 *            the frame index in the source image to operate on
+	 */
+	public SpotDetector< T > getDetector( final Interval interval, int frame );
+```
+
+So it will generate a `SpotDetector` instance per time-point. Such a detector has for output a `List< Spot >`, which is expected to contain only the spots it found in the frame it is configured to run on. TrackMate will take care of assembling all the `List< Spot >` from different time-point in a `SpotCollection`.
+
+### `SpotGlobalDetectorFactory`
+
+{% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotGlobalDetectorFactory.java' label='SpotGlobalDetectorFactory' %} is a new interface that does not slice time-points. Its unique specific method returns a `SpotGlobalDetector` that is expected to process *all* time-points at once. Such a detector is instantiated only once per detector run.
+
+```java
+	/**
+	 * Returns a new {@link SpotDetector} configured to operate on all the
+	 * time-points. This factory must be first given the <code>ImgPlus</code>
+	 * and the settings map, through the <code>#setTarget(ImgPlus, Map)</code>
+	 * method.
+	 *
+	 * @param interval
+	 *            the interval that determines the region in the source image to
+	 *            operate on. This must <b>not</b> have a dimension for time
+	 *            (<i>e.g.</i> if the source image is 2D+T (3D), then the
+	 *            interval must be 2D; if the source image is 3D without time,
+	 *            then the interval must be 3D).
+	 */
+	public SpotGlobalDetector< T > getDetector( final Interval interval );
+```
+
+The `SpotGlobalDetector` outputs a `SpotCollection`, that is expected to contain all the spots in all time-point of the movie.
+
+### The base `SpotDetectorFactoryBase` interface and the `has2Dsegmentation` flag.
+
+The two interfaces above derive from a mother interface that contains common methods: {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetectorFactoryBase.java' label='SpotDetectorFactoryBase' %}. It contains a very important method if are building a segmentation algorithm for TrackMate:
+
+```java
+	/**
+	 * Return <code>true</code> for the detectors that can provide a spot with a
+	 * 2D <code>SpotRoi</code> when they operate on 2D images.
+	 * <p>
+	 * This flag may be used by clients to exploit the fact that the spots
+	 * created with this detector will have a contour that can be used
+	 * <i>e.g.</i> to compute morphological features. The default is
+	 * <code>false</code>, indicating that this detector provides spots as a X,
+	 * Y, Z, radius tuple.
+	 * 
+	 * @return <code>true</code> if the spots created by this detector have a 2D
+	 *         contour.
+	 */
+	public default boolean has2Dsegmentation()
+	{
+		return false;
+	}
+```
+
+If your detector can return the spot shape for 2D images, override this method so that it returns true. This is important to let TrackMate know it should compute morphological features on the spot this detector created. If you don't see the morphological features in the GUI (Area, ...) this is most likely because of this method.
+
+As you can see in the examples above in this page, the new detectors return true for this method.
+
