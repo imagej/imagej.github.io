@@ -39,7 +39,7 @@ The resulting mask is black (pixel value 0) while regions outlined by rois are t
 Overlapping ROIs will thus be merged into a single "white blob" in the mask.  
 
 - Multi-class/semantic mask  
-This plugin takes advantage of the group attribute of ROIs to annotate regions belonging to the same "object-class", tissue...   
+This plugin takes advantage of the [group attribute of ROIs](https://f1000research.com/slides/9-183) to annotate regions belonging to the same "object-class", tissue...   
 There ROIs are turned to a region with pixel values value corresponding to the ROI group. The result is a "semantic mask", where object/tissues of the same group have the same pixel value.  
 
 Overlapping ROIs with identical group attributes will be merged into a single blob of identical pixel value.  
