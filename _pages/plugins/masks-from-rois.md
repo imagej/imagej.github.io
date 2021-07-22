@@ -20,12 +20,12 @@ team-founders: Laurent Thomas, Pierre Trehin
 # Generate Masks from Rois in Fiji
 
 ## Installation
-The plugin can be installed by activating the Masks from Rois update site (see [Activating an update site](https://imagej.net/update-sites/following)).  
+Activate the *Masks from Rois* update site (see [Activating an update site](https://imagej.net/update-sites/following)).  
 Restart Fiji.  
-The plugin are then available at the bottom of the menu *Edit > Selection*, the  *Mask from Rois* entry.
+The plugins are then available at the bottom of the menu *Edit > Selection*, the  *Mask from Rois* entry.
 
 ## Application
-These plugins facilitate the generation of mask from image-regions outlined with ROIs for large datasets.  
+These plugins facilitate the generation of masks from image-regions outlined with ROIs for large datasets.  
 It can be used for instance to generate ground-truth segmentation masks.  
 Annotated images can be single plane images or stacks with a single dimensions slider, __HYPERSTACKS ARE CURRENTLY NOT SUPPORTED__.  
 The plugin should be executed after having annotated all ROIs in an image (stored in the RoiManager), or all image-slices of a stack.   
