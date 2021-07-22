@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate
 title: How to write your own track feature analyzer algorithm for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
@@ -14,6 +13,8 @@ nav-links:
   url: /plugins/trackmate/custom-actions
 - title: Detection Algorithms
   url: /plugins/trackmate/custom-detection-algorithms
+- title: Segmentation Algorithms
+  url: /plugins/trackmate/custom-segmentation-algorithms
 - title: Particle-Linking Algorithms
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
@@ -31,7 +32,7 @@ Actually, we will not learn much beyond what we saw previously. The only little 
 All the track feature analyzers must implement {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java' label='TrackAnalyzer interface' %}. Like for the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface, it extends both
 
 -   {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} that helps you declaring what you compute,
--   and {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %}, that is in charge of the integration in TrackMate.
+-   and {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %}, that is in charge of the integration in TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -243,4 +244,4 @@ Like this:
 
 Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 14:23, 11 March 2014 (CDT)
+{% include person id='tinevez' %} 14:23, 11 March 2014 (CDT)

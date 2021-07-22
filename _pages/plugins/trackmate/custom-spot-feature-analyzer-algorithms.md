@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate
 title: How to write your own spot feature analyzer algorithm for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
@@ -14,6 +13,8 @@ nav-links:
   url: /plugins/trackmate/custom-actions
 - title: Detection Algorithms
   url: /plugins/trackmate/custom-detection-algorithms
+- title: Segmentation Algorithms
+  url: /plugins/trackmate/custom-segmentation-algorithms
 - title: Particle-Linking Algorithms
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
@@ -62,6 +63,8 @@ The one interesting part is the factory method in charge of instantiating the `S
 ```
 
 Since we want to build a feature that does not need the image data, the constructor just skips the image reference. And that's it. We must now move on to the analyzer itself to implement the feature calculation logic.
+
+A note before we move on: Starting with version 7, TrackMate introduced many new features, including a supplemental spot factory hierarchy that allows tuning how the time-points are processed. Either one by one each by a separate instance of a `SpotDetector`, like it is the case here, or all at once. This is explained in the [next section](/plugins/trackmate/custom-segmentation-algorithms) of this developer tutorial on implementing segmentation algorithm and using the new v7 API.
 
 ## The spot analyzer
 
