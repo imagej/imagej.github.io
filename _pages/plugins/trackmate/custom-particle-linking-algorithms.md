@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_write_your_own_particle-linking_algorithm_for_TrackMate
 title: How to write your own particle-linking algorithm for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
@@ -14,6 +13,7 @@ nav-links:
   url: /plugins/trackmate/custom-actions
 - title: Detection Algorithms
   url: /plugins/trackmate/custom-detection-algorithms
+- title: Segmentation Algorithms
 - title: Particle-Linking Algorithms
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
@@ -72,10 +72,10 @@ The price to pay for this simplicity is that - when tracking - it is not trivial
 
 We used the term *tracker* since the beginning of this series, but the correct term for what we will build now is particle linking algorithm. Our particles are the visible spots resulting from the detection step, and the links will be the edges of the graph. A tracker could be defined as the full application that combines a particle detection algorithm with a particle linking algorithm.
 
-In TrackMate, particle linking algorithms implements the [SpotTracker](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTracker.java) interface. It is very simple. As explained in the docs, a SpotTracker algorithm is simply expected to create a new [SimpleWeightedGraph](http://jgrapht.org/javadoc/index.html?org/jgrapht/graph/SimpleWeightedGraph.html) from the SpotCollection given (using of course only the *visible* spots). We use a simple weighted graph:
+In TrackMate, particle linking algorithms implements the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/tracking/SpotTracker.java' label='SpotTracker.java' %} interface. It is very simple. As explained in the docs, a SpotTracker algorithm is simply expected to create a new [SimpleWeightedGraph](https://jgrapht.org/javadoc/org.jgrapht.core/org/jgrapht/graph/SimpleWeightedGraph.html) from the SpotCollection given (using of course only the *visible* spots). We use a simple weighted graph:
 
 -   Though the weights themselves are not used for subsequent steps, it is suggested to use edge weight to report the cost of a link.
--   The graph is undirected, however, some link direction can be retrieved later on using the Spot.FRAME feature. The SpotTracker implementation does not have to deal with this; only undirected edges are created.
+-   The graph is undirected, however, some link direction can be retrieved later on using the `Spot.FRAME` feature. The SpotTracker implementation does not have to deal with this; only undirected edges are created.
 -   Several links between two spots are not permitted.
 -   A link with the same spot for source and target is not allowed.
 -   A link with the source spot and the target spot in the same frame is not allowed. This must be enforced by implementations.
@@ -87,94 +87,94 @@ There is also an extra method to pass a instance of [Logger](https://fiji.sc/jav
 There is already an example online that does [random link creation](https://github.com/fiji/plugins/trackmate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java). Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
 
 Creating the class yields the following skeleton:
-
+```java
     package plugin.trackmate.examples.tracker;
-
+    
     import org.jgrapht.graph.DefaultWeightedEdge;
     import org.jgrapht.graph.SimpleWeightedGraph;
-
+    
     import fiji.plugin.trackmate.Logger;
     import fiji.plugin.trackmate.Spot;
     import fiji.plugin.trackmate.tracking.SpotTracker;
-
+    
     public class DrunkenCellDivisionTracker implements SpotTracker
     {
-
+    
         private SimpleWeightedGraph< Spot, DefaultWeightedEdge > graph;
-
+    
         private String errorMessage;
-
+    
         private Logger logger = Logger.VOID_LOGGER;
-
+    
         @Override
         public SimpleWeightedGraph< Spot, DefaultWeightedEdge > getResult()
         {
             return graph;
         }
-
+    
         @Override
         public boolean checkInput()
         {
             return true;
         }
-
+    
         @Override
         public boolean process()
         {
             graph = new SimpleWeightedGraph< Spot, DefaultWeightedEdge >( DefaultWeightedEdge.class );
             return true;
         }
-
+    
         @Override
         public String getErrorMessage()
         {
             return errorMessage;
         }
-
+    
         @Override
         public void setNumThreads()
         {
             // Ignored. We do not multithreading here.
         }
-
+    
         @Override
         public void setNumThreads( final int numThreads )
         {
             // Ignored.
         }
-
+    
         @Override
         public int getNumThreads()
         {
             return 1;
         }
-
+    
         @Override
         public void setLogger( final Logger logger )
         {
-    // Just store the instance for later use.
+		// Just store the instance for later use.
             this.logger = logger;
         }
     }
-
+```
 Parameters need to be passed to the class via its constructor. As for detectors, the factory we will build later will be in charge of getting these parameters. Of course, the most important one is the SpotCollection to track. In our case it will be the only one, as our dummy tracker do not have any settings. So we can have a constructor like this:
-
+```java
     public DrunkenCellDivisionTracker( final SpotCollection spots )
         {
             this.spots = spots;
         }
-
+```
 then we exploit the SpotCollection in the `process()` method. Our strategy here is to loop over all the frames that have a content, and link each spot to two spots in the next frame - wherever they are - until there is either no source spots or no target spots left. The method looks like this:
-
+```java
     @Override
         public boolean process()
         {
             graph = new SimpleWeightedGraph< Spot, DefaultWeightedEdge >( DefaultWeightedEdge.class );
-
+    
             // Get the frames in order.
             final NavigableSet< Integer > frames = spots.keySet();
             final Iterator< Integer > frameIterator = frames.iterator();
-
+    
             // Get all the visible spots in the first frame, and put them in a new
             // collection.
             final Iterable< Spot > iterable = spots.iterable( frameIterator.next(), true );
@@ -183,7 +183,7 @@ then we exploit the SpotCollection in the `process()` method. Our strategy here 
             {
                 sourceSpots.add( spot );
             }
-
+    
             // Loop over frames, and link the source spots to spots in the next
             // frame.
             double progress = 0;
@@ -224,25 +224,26 @@ then we exploit the SpotCollection in the `process()` method. Our strategy here 
                         }
                     }
                 }
-
+    
                 // Regenerate source list for next frame.
                 sourceSpots.clear();
                 for ( final Spot spot : spots.iterable( frame, true ) )
                 {
                     sourceSpots.add( spot );
                 }
-
+    
                 progress += 1;
                 logger.setProgress( progress / frames.size() );
             }
             return true;
         }
-
+```
 So it's not really complicated. Which is good, because the complicated part, completely omitted here, is the one where you have to determine what links to create. This is where you Science should kick in.
 
 ## The factory class.
 
-Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named [SpotTrackerFactory](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/SpotTrackerFactory.java). It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](/plugins/trackmate/custom-detection-algorithms), so I won't detail the common methods again.
+Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/tracking/SpotTrackerFactory.java' label='SpotTrackerFactory.java' %}. 
+It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](/plugins/trackmate/custom-detection-algorithms), so I won't detail the common methods again.
 
 The methods specific to the tracker are:
 
@@ -272,8 +273,9 @@ TrackMate recognize there were two tracks. You did not have to worry about that.
 
 ## Wrapping up
 
-The full code, as well as the code for another tracker example can be found on [github](https://github.com/fiji/plugins/trackmate-examples/tree/master/src/main/java/plugin/trackmate/examples/tracker). And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
+The full code, as well as the code for another tracker example can be found on GitHub:
+{% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/tracker/' label='Tracker code' %}.
+And this concludes flatly our series of tutorials on how to extend TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 09:26, 5 September 2014 (CDT)
-
+{% include person id='tinevez' %} 09:26, 5 September 2014 (CDT)
 

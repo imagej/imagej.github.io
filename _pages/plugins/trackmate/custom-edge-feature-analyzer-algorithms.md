@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate
 title: How to write your own edge feature analyzer algorithm for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
@@ -14,6 +13,7 @@ nav-links:
   url: /plugins/trackmate/custom-actions
 - title: Detection Algorithms
   url: /plugins/trackmate/custom-detection-algorithms
+- title: Segmentation Algorithms
 - title: Particle-Linking Algorithms
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
@@ -24,7 +24,7 @@ This page is a tutorial that shows how to integrate your own edge feature analyz
 
 All these tutorials assume you are familiar with Java development. You should be at ease with java core concepts such as object oriented design, inheritance, interfaces, etc... Ideally you would even know that maven exists and that it can help you to compile software. Beyond this, the tutorials will provide what you need to know.
 
-Edge feature analyzers are algorithms that can associate one or more scalar numerical features to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java' label='EdgeVelocityAnalyzer.java' %}.
+Edge feature analyzers are algorithms that can associate one or more scalar numerical features to an edge, or a link between two spots in TrackMate. For instance, the instantaneous velocity is an edge feature (you need two linked spots to compute a displacement and a time interval), which happens to be provided by the algorithm named {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/edges/EdgeSpeedAnalyzer.java' label='EdgeSpeedAnalyzer.java' %}.
 
 ## TrackMate modules
 
@@ -40,11 +40,9 @@ TrackMate is extended by writing *modules*. Modules are just the basic algorithm
 
 All of these modules implement an interface, specific to the module class. For instance, an edge analyzer algorithm will implement the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. There is therefore 7 interfaces. They do have in common that they all extend the mother module interface called {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/plugins/trackmateModule.java' label='TrackMateModule' %}.
 
-TrackMateModule is used for two basic purpose:
+`TrackMateModule` is used for two basic purpose:
 
--   It itself extends the SciJavaPlugin interface, which will fuel the automatic discovery of new modules. We will discuss this point last.
-
-<!-- -->
+-   It itself extends the `SciJavaPlugin` interface, which will fuel the automatic discovery of new modules. We will discuss this point last.
 
 -   It has basic methods for the GUI integration:
     1.  `getKey()` returns a unique string identifier that is used internally to reference the algorithm. For instance: `"EDGE_VELOCITY_ANALYZER"`
@@ -52,10 +50,10 @@ TrackMateModule is used for two basic purpose:
     3.  `getIcon()` returns an `ImageIcon` to be displayed in the GUI.
     4.  `getInfoText()` returns a html string that briefly documents what the algorithm does. Basic html markup is accepted, so you can have something like
 
-<!-- -->
-
-    "<html>Plot the number of spots in each frame as a function <br>of time. Only the
-    <u>filtered</u> spots are taken into account. </html>"
+```html
+"<html>Plot the number of spots in each frame as a function <br>of time. Only the
+<u>filtered</u> spots are taken into account. </html>"
+```
 
 These are the methods used to integrate you module within the GUI. According to the class of the module, some might be plainly ignored. For instance, the edge analyzers subject of this tutorial ignore the icon and info text, since they are used silently within the GUI to provide new features.
 
@@ -78,9 +76,9 @@ So create a package for your new analyzer in our project, for instance `fiji.plu
 In this package, create a class `EdgeAngleAnalyzer` and let it implement the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. You should be getting something like this:
 
     package plugin.trackmate.examples.edgeanalyzer;
-
+    
     import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
-
+    
     public class EdgeAngleAnalyzer implements EdgeAnalyzer
     {
     }
@@ -99,61 +97,51 @@ These 6 methods are:
 
 -   `getFeatures()` returns a list of string that identifies the features the analyzer generate. There can be more than one. This list must contain strings that can be used in a XML file. Historically, we use capitalized strings, in the shape of java constants, such as `DISPLACEMENT`. We call them feature keys.
 
-<!-- -->
-
 -   `getFeatureNames()` returns a map that links the feature keys to the feature names. For instance in the GUI, we want to display "Displacement" rather than "DISPLACEMENT", so that is what this map is about. It is important that the keys of this map are the keys defined in the list above.
-
-<!-- -->
 
 -   `getFeatureShortNames()` returns another map with the same rules. We just use its value to display short names of features when this is needed in the GUI. There are no general advice on how to shorten your feature names; just try until it fits.
 
-<!-- -->
-
 -   `getFeatureDimensions()` returns a last map, that gives a dimension to your features. Physical dimensions are listed in the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/Dimension.java' label='Dimension enum' %}.
 
-<!-- -->
-
 -   `getIsIntFeature()` is just about sugar coating. It returns a map that tells what features are integer mapped. For instance, if you have a feature that count things, such as number of neighbors, you should map this feature to `true` here. This one is actually not *really* useful; there will be no problem, no loss of precision if you do not set it right. It's just about having numbers displayed correctly. I wanted that when there were 2 neighbors, the number of neighbors displayed was "2" and not "2.0000000000001". In our case, we measure an angle, so this feature should map to `false`.
-
-<!-- -->
 
 -   `isManualFeature()` returns a single flag that affects **all** the features calculated by this analyzer. Manual features are special features that were introduced in TrackMate v2.3.0. Let's leave that aside for now. Our angle feature is calculated automatically by the code we are just about to write. So this method should return `false`.
 
 In this tutorial, our analyzer just returns one feature, which is an angle. So a concrete implementation could be:
 
     package plugin.trackmate.examples.edgeanalyzer;
-
+    
     import java.util.ArrayList;
     import java.util.Collection;
     import java.util.Collections;
     import java.util.HashMap;
     import java.util.List;
     import java.util.Map;
-
+    
     import javax.swing.ImageIcon;
-
+    
     import fiji.plugin.trackmate.Dimension;
     import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
-
+    
     public class EdgeAngleAnalyzer implements EdgeAnalyzer
     {
-
+    
         // The string key that identifies our analyzer.
         private static final String KEY = "Edge angle";
-
+    
         // The only feature we compute here.
         private static final String EDGE_ANGLE = "EDGE_ANGLE";
-
+    
         private static final List< String > FEATURES = new ArrayList< String >( 1 );
-
+    
         private static final Map< String, Boolean > IS_INT = new HashMap< String, Boolean >( 1 );
-
+    
         public static final Map< String, String > FEATURE_NAMES = new HashMap< String, String >( 1 );
-
+    
         public static final Map< String, String > FEATURE_SHORT_NAMES = new HashMap< String, String >( 1 );
-
+    
         public static final Map< String, Dimension > FEATURE_DIMENSIONS = new HashMap< String, Dimension >( 1 );
-
+    
         // Let's set the feature list, names, short names and dimensions.
         static
         {
@@ -163,70 +151,70 @@ In this tutorial, our analyzer just returns one feature, which is an angle. So a
             FEATURE_SHORT_NAMES.put( EDGE_ANGLE, "Angle" );
             FEATURE_DIMENSIONS.put( EDGE_ANGLE, Dimension.ANGLE );
         }
-
+    
         private long processingTime;
-
+    
         /*
          * TRACKMATEMODULE METHODS
          */
-
+    
         @Override
         public String getKey()
         {
             return KEY;
         }
-
+    
         // Return a user-compliant name for this analyzer.
         @Override
         public String getName()
         {
             return "Edge angle";
         }
-
+    
         // We do not use info texts for any feature actually.
         @Override
         public String getInfoText()
         {
             return "";
         }
-
+    
         // The same: we don't use icons for features.
         @Override
         public ImageIcon getIcon()
         {
             return null;
         }
-
+    
         @Override
         public List< String > getFeatures()
         {
             return FEATURES;
         }
-
+    
         @Override
         public Map< String, String > getFeatureShortNames()
         {
             return FEATURE_SHORT_NAMES;
         }
-
+    
         @Override
         public Map< String, String > getFeatureNames()
         {
             return FEATURE_NAMES;
         }
-
+    
         @Override
         public Map< String, Dimension > getFeatureDimensions()
         {
             return FEATURE_DIMENSIONS;
         }
-
+    
         @Override
         public Map<String, Boolean> getIsIntFeature()
         {
             return Collections.unmodifiableMap(IS_INT);
         }
-
+    
         @Override
         public boolean isManualFeature() 
         {
@@ -243,13 +231,13 @@ There are also 4 methods which we will skip right now. They are related to the m
         {
             // We ignore multithreading for this tutorial.
         }
-
+    
         @Override
         public void setNumThreads( final int numThreads )
         {
             // We ignore multithreading for this tutorial.
         }
-
+    
         @Override
         public int getNumThreads()
         {
@@ -307,17 +295,17 @@ And for our XY edge angle, here are the methods content:
             {
                 final Spot source = model.getTrackModel().getEdgeSource( edge );
                 final Spot target = model.getTrackModel().getEdgeTarget( edge );
-
+    
                 final double x1 = source.getDoublePosition( 0 );
                 final double y1 = source.getDoublePosition( 1 );
                 final double x2 = target.getDoublePosition( 0 );
                 final double y2 = target.getDoublePosition( 1 );
-
+    
                 final double angle = Math.atan2( y2 - y1, x2 - x1 );
                 fm.putEdgeFeature( edge, EDGE_ANGLE, Double.valueOf( angle ) );
             }
         }
-
+    
         @Override
         public boolean isLocal()
         {
@@ -355,6 +343,5 @@ Great, no?
 
 You can find the full source for this example {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java' label='here' %}. It can also be used as a template for your analyzer.
 
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:25, 27 January 2014 (CST)
-
+{% include person id='tinevez' %} 10:25, 27 January 2014 (CST)
 

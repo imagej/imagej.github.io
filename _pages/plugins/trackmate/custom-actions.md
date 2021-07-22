@@ -13,6 +13,7 @@ nav-links:
   url: /plugins/trackmate/custom-actions
 - title: Detection Algorithms
   url: /plugins/trackmate/custom-detection-algorithms
+- title: Segmentation Algorithms
 - title: Particle-Linking Algorithms
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
