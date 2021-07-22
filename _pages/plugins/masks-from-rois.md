@@ -19,32 +19,41 @@ team-founders: Laurent Thomas, Pierre Trehin
 
 # Generate Masks from Rois in Fiji
 
-<img src="https://github.com/LauLauThom/MaskFromRois-Fiji/blob/main/GUI.png" width=50% height=50%>
+## Installation
+The plugin can be installed by activating the Masks from Rois update site (see [Activating an update site](https://imagej.net/update-sites/following)).  
+Restart Fiji.  
+The plugin are then available at the bottom of the menu *Edit > Selection*, the  *Mask from Rois* entry.
 
-This plugin facilitates the generation of mask images (0/255) from image-regions outlined with ROIs for large datasets.  
-It can be used for instance to generate ground-truth mask annotations.  
-Annotated images can be single plane images or stacks with a single dimensions slider, HYPERSTACKS ARE CURRENTLY NOT SUPPORTED.  
+## Application
+These plugins facilitate the generation of mask from image-regions outlined with ROIs for large datasets.  
+It can be used for instance to generate ground-truth segmentation masks.  
+Annotated images can be single plane images or stacks with a single dimensions slider, __HYPERSTACKS ARE CURRENTLY NOT SUPPORTED__.  
+The plugin should be executed after having annotated all ROIs in an image (stored in the RoiManager), or all image-slices of a stack.   
 
-This plugin should be called after annotating image-regions with ROIs, stored in the RoiManager.  
-Single images or multiple images in a stack (or Virtual stack) can be annotated. In the latter case, the Z-Position of the Rois is used to associate them to the corresponding image.
+Single images or multiple images in a stack (or Virtual stack) can be annotated. In the latter case, the Z-Position of the Rois is used to associate them to the corresponding image. One mask will be generated for every image in the stack.  
 
-For each image (or stack slice), a mask image is generated with regions outlined by rois represented by white-pixels (value=255), while the background area is black (value=0).
-Overlapping ROIs will result in a single "white blob" in the mask. 
+There are 2 plugins for the generation of: 
 
-The plugin should be executed after having annotated all ROIs in an image, or all image-slices of a stack.  
+- Binary masks  
+The resulting mask is black (pixel value 0) while regions outlined by rois are turned to white pixels (pixel value 255).  
+Overlapping ROIs will thus be merged into a single "white blob" in the mask.  
 
-## Mask images
-The resulting mask images (0/255 pixel values) can be displayed in ImageJ, and saved to a custom directory on disk, in one of the proposed format.    
-Filenames for the mask will be identical to the original filename when available (read from the fileinfo, slice label or window title).  
+- Multi-class/semantic mask  
+This plugin takes advantage of the group attribute of ROIs to annotate regions belonging to the same "object-class", tissue...   
+There ROIs are turned to a region with pixel values value corresponding to the ROI group. The result is a "semantic mask", where object/tissues of the same group have the same pixel value.  
+
+Overlapping ROIs with identical group attributes will be merged into a single blob of identical pixel value.  
+__Overlapping ROIs with different group attributes__ will however be assigned the pixel value of the last "painted" ROIs, ie the most bottom one in the RoiManager. 
+
+For visualisation of such semantic masks, the plugin automatically set the "Glasbey on dark" LUT.  
+When opening such saved mask, the LUT may not be automatically selected, and using a classical gray LUT does not allow to correclty visualize the mask.  
+In this case, select one of the Glasbey LUT in the imageJ menu _Image > LookUp Tables_. 
+
 
 ## Filename suffix
-An optional suffix can be added to the filenames, for instance if you are saving the mask in the same directory than the images.  
+When saving the mask as image files, an optional suffix can be added to the filenames, for instance if you are saving the mask in the same directory than the images.  
 
 __Example__:  
-original.tiff  
-with suffix *-mask* and `png` extension  
-original-mask.png
-
-## Installation
-The plugin can be installed by activating the MasksFromRoi update site (soon).  
-The plugin is then available in the menu *Edit > Selection > Mask(s) from Roi(s)*.
+_original.tiff_  
+with suffix *-mask* and `png` extension, the mask will be    
+_original-mask.png_
