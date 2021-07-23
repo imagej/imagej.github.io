@@ -5,6 +5,7 @@ categories: [Tracking, Segmentation]
 logo: /media/logos/trackmate-300p.png
 project: /software/fiji
 section: Detectors with segmentation capabilities.
+extensions: ["mathjax"]
 ---
 Starting with version 7.0.0, [TrackMate](/plugins/trackmate/index) offers the possibility to segment objects, and store, display and quantify their shape. We used this new API to build simple detectors that can produce objects from a *label image*, a *mask* or a *grayscale image with a threshold*. But we also  looked to integrate the state-of-the-art segmentation algorithms shipped with Fiji that do so. So we integrated the *ilastik*, *MorphoLibJ*, *StarDist* and *Weka* plugins as detectors in TrackMate.
 This page lists the seven detectors that have been introduced by this version, and links to their documentation and installation procedure.
@@ -119,6 +120,7 @@ The length of the contour in spatial unit.
 The circularity is a measure of how close to a circle the shape of an object is. 
 It has a value of 1 for circles and is getting close to 0 for very elongated objects.
 It is computed for 2D objects as 
+
 $$
 \frac{4 \times \pi \times \text{area}}{\text{perimeter}^2}
 $$
@@ -132,6 +134,7 @@ Intuitively, this is the contour we would get if we would wrap a rubber band aro
 It would stretch around the object contour, and would not extend inside the cavities of the object.
 The area of this convex object is therefore alwats larger than the area of the initial objet.
 Then the solidity is computed as:
+
 $$
 \text{solidity} = \frac{\text{area}}{\text{convex area}}
 $$
@@ -160,9 +163,11 @@ Careful, in images the Y axis runs from top to bottow, so the positive angle dir
 
 #### `Ellipse aspect ratio`
 The ellipse aspect ratio is the ratio of the major axis to the minor axis:
+
 $$
 \text{ellipse AR} = \frac{\text{major axis}}{\text{minor axis}}
 $$
+
 It ranges from 1 for ellipses that resembles circles, and gets larger for elongated ellipses.
 A perfect line as a positive infinite aspect ratio.
 
