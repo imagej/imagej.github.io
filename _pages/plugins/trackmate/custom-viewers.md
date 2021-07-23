@@ -27,7 +27,7 @@ Honestly, I think that one of the main good reason to extend TrackMate is that t
 
 Still, it is perfectly possible to build something useful without fulfilling all these requirements. And I still hope that someday someone will contribute a view that displays the model in the orthogonal slicer of Fiji.
 
-This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](/libs/scijava) discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
+This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. 
 
 ## A custom TrackMate view.
 
@@ -48,14 +48,17 @@ The factory itself has nothing particular. On top of the TrackMateModule methods
 
 ```java
 @Override
-public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
+public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel, final DisplaySettings displaySettings );
 ```
 
-You can see that we can possibly pass 3 parameters to the constructor of the view itself: the model of course, but also the settings object, so that we can find there a link to the image object. The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java' label='HyperStackDisplayer' %} uses it to retrieve the ImagePlus over which to display the TrackMate data.
+You can see that we can possibly pass 4 parameters to the constructor of the view itself: 
 
-The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views.
+- the model of course, 
+- but also the settings object, so that we can find there a link to the image object. The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java' label='HyperStackDisplayer' %} uses it to retrieve the ImagePlus over which to display the TrackMate data.
+- The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views.
+- Finally, the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/displaysettings/DisplaySettings.java' label='DisplaySettings' %} which contains the display settings the user configured in the GUI, and that your view should use if it can.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/visualization/plugins/trackmateModelView.java' label='TrackMateModelView' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %} interface.
 
 ### Methods.
 
@@ -184,32 +187,20 @@ public class EventLoggerViewFactory implements ViewFactory
 }
 ```
 
-Just note that the [SciJava](/libs/scijava) annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
+## Views must be launched elsewhere.
 
-{% include img name="Selecting the custom TrackMate even logger" src="/media/plugins/trackmate/trackmate-customview-2.png" width="250px" %}
+Starting with version 7, the custom views are not automatically fitted in the TrackMate GUI. This means that even after you built them, you will also need to provide a way for the user to launch it from within TrackMate. This is also what we do for the other views in TrackMate. Right now, you can find the following built-in views in TrackMate:
 
-Note that this time, TrackMate made good use of the `getName()` and `getInfoText()` methods.
+- The `HyperStackDisplayer`. This is the main view. It displays the tracking results on the ImageJ window and lets you edit tracking results.
+- [TrackScheme](/plugins/trackmate/trackscheme), the lineage view.
+- The table views.
 
-And here is what you get after a few manipulations:
+TrackScheme and the table views are launched from buttons in the display config panel of the GUI. For your custom views, the best way to show them is to use a custom action, which is the subject of the next tutorial.
+
+Fast-forwarding its results, here is what you get after a few manipulations:
 {% include img name="The custom TrackMate even logger" src="/media/plugins/trackmate/trackmate-customview-1.png" %}
 
-## Controlling the visibility of your view with the SciJava `visible` parameter.
 
-Our view is a good dummy examples. It is not that useful, and the info panel of the GUI could be used instead advantageously. We have nothing against it, but maybe we should not let users select it as the main view in the GUI, otherwise they might get frustrated (well, the HyperStack view is *always* used, whatever you choose, so we could not mind, but eh).
 
-There is way to do that, just by tuning the SciJava annotation:
+{% include person id='tinevez' %} 17 March 2014 - 23 July 2021
 
-{% include notice icon="info" content='To make a TrackMate module available in TrackMate, but not visible in the GUI menus, use the annotation parameter `visible = false`' %}
-
-So editing the header of our ViewFactory to make it look like:
-
-```java
-@Plugin( type = ViewFactory.class, visible = false )
-public class EventLoggerViewFactory implements ViewFactory
-```
-
-is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](/plugins/trackmate/custom-track-feature-analyzer-algorithms). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
-
-But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
-
-{% include person id='tinevez' %} 10:51, 17 March 2014 (CDT)

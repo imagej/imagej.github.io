@@ -85,7 +85,8 @@ There is also an extra method to pass a instance of [Logger](https://fiji.sc/jav
 
 ## A dummy example: drunken cell divisions.
 
-There is already an example online that does [random link creation](https://github.com/fiji/plugins/trackmate-examples/blob/master/src/main/java/plugin/trackmate/examples/tracker/RandomLinkingTracker.java). Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
+There is already an example online that does {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/tracker/RandomLinkingTracker.java' label='random linking' %}.
+Let's do something else, and build a tracker that links a spot to any two spots in the next frame (if they exist) as if it would go cell division as fast as it can.
 
 Creating the class yields the following skeleton:
 ```java
@@ -268,9 +269,26 @@ Used to pretty-print the settings map specific to this tracker.
 
 The rest is classic. Here is what it looks like for our tracker:
 
-![](/media/plugins/trackmate/trackamateexample-randomcelldivision.png)
+{% include img src = '/media/plugins/trackmate/trackamateexample-randomcelldivision.png' %}
 
 TrackMate recognize there were two tracks. You did not have to worry about that.
+
+
+
+## Controlling the visibility of your tracker with the SciJava `visible` parameter.
+
+Our tracker is a good dummy example, but it is not that useful. There might be cases where you wish for a TrackMate module not to be visible in the GUI. There is way to do that, just by tuning the SciJava annotation:
+
+{% include notice icon="info" content='To make a TrackMate module available in TrackMate, but not visible in the GUI menus, use the annotation parameter `visible = false`' %}
+
+So editing the header of our tracker factory to make it look like:
+
+```java
+@Plugin( type = SpotTrackerFactory.class, visible = false )
+public class DrunkenCellDivisionTrackerFactory implements SpotTrackerFactory
+```
+
+is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](/plugins/trackmate/custom-track-feature-analyzer-algorithms). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
 
 ## Wrapping up
 
