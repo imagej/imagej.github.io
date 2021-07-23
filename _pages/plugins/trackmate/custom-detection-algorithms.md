@@ -41,17 +41,17 @@ Let's get started with the easiest part, the detection algorithm.
 
 ### A detector instance operates on a single frame.
 
-The detection part itself is implemented in a class that implements the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface. Browsing there, you will see that it is just a specialization of an output algorithm from [ImgLib2](/libs/imglib2). We are required to spit out a `List`<Spot> that represents the list of detection (one `Spot` per detection) for a **single frame**.
+The detection part itself is implemented in a class that implements the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface. Browsing there, you will see that it is just a specialization of an output algorithm from [ImgLib2](/libs/imglib2). We are required to spit out a `List<Spot>` that represents the list of detection (one `Spot` per detection) for a **single frame**.
 
 This is important: <u>an instance of your detector is supposed to work on a single frame</u>. TrackMate will generate as many instances of the detector per frame it has to operate on. This facilitates development, but also multithreading: TrackMate fires one detector per thread it has access to, and this is done without you having to worry about it. TrackMate will bundle the outputs of all detectors in a thread-safe manner.
 
 It is the work of the detector factory to provide each instance with the data required to segment a specific frame. But we will see how this is done below.
 
-### A SpotDetector *can be* {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java' label='multithreaded' %}.
+### A SpotDetector *can be* {% include github org='imglib' repo='imglib2-algorithm' branch='master' source='net/imglib2/algorithm/MultiThreaded.java' label='multithreaded' %}.
 
 So TrackMate offers you a turnkey multithreaded solution: If you have a computer with 12 cores and 50 frames to segment, TrackMate will fire 12 SpotDetectors at once and process them concurrently.
 
-But let's say that you have 24 cores and only 6 frames to segment. You can exploit this situation by letting your concrete instance of SpotDetector implement the ImgLib2 {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java' label='MultiThreaded' %} interface. In that case, TrackMate will still fire 6 SpotDetector instances (one for each frame), but will allocate 4 threads to each instance, and get an extra kick in speed.
+But let's say that you have 24 cores and only 6 frames to segment. You can exploit this situation by letting your concrete instance of SpotDetector implement the ImgLib2 {% include github org='imglib' repo='imglib2-algorithm' branch='master' source='net/imglib2/algorithm/MultiThreaded.java' label='MultiThreaded' %}. interface. In that case, TrackMate will still fire 6 SpotDetector instances (one for each frame), but will allocate 4 threads to each instance, and get an extra kick in speed.
 
 Of course, you have to devise a clever multithreading strategy to operate concurrently on a single frame. For instance, you could divide the image into several blocks and process them in parallel. Or delegate to sub-algorithms that are multithreaded; check for instance the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetector.java' label='LogDetector' %} code.
 
@@ -64,6 +64,9 @@ Of course, you have to devise a clever multithreading strategy to operate concur
 -   The spot radius, representing in physical units, the approximate size of the image structure that was detected. TrackMate default detectors do not have an automatic size detection feature, so they ask the user what is the most likely size of the structures they should detect, tune themselves to this size, and set all the radius of the detections to be the one entered by the user.
 
 Any omission will trigger errors at runtime.
+
+Starting TrackMate version 7, spots can store object contours in 2D. 
+We will discuss this new feature in the next tutorial of this series.
 
 ### A dummy detector that returns spiraling spots.
 
@@ -79,7 +82,7 @@ This is the type of the image data we are to operate on.
 
 #### The constructor.
 
-Since the [ SpotDetector](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/detection/SpotDetector.java) interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
+Since the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
 
 Normal detectors would be fed with a reference to the image data *for this very single frame*. Here we do not care for image content, so it is not there. But we will speak of this more when discussing the factory.
 
@@ -330,9 +333,9 @@ Marshalling is the action of serializing a java object to XML. TrackMate relies 
 
 The settings map that the `marshall` method receives is the settings map to save. You can safely assume it has been successfully checked. The element parameter is a [JDom element](http://www.jdom.org/docs/apidocs/org/jdom2/Element.html), and it must contain eveything you want to save from the detector, as attribute or child elements. Here is what you must put in it:
 
--   You must at the very least set an attribute that has for key {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L14' label='`"DETECTOR_NAME"`' %} and value the SpotDetectorFactory key (the one you get with the `getKey()`) method[^2]. This will be used in turn when loading from XML, to retrieve the right detector you used.
+-   You must at the very least set an attribute that has for key {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L35' label='`"DETECTOR_NAME"`' %} and value the SpotDetectorFactory key (the one you get with the `getKey()`) method[^2]. This will be used in turn when loading from XML, to retrieve the right detector you used.
 -   If something goes wrong when saving, then the `marshall` method must return `false`, and you must provide a meaningful error message for the `getErrorMessage()` method.
--   Everything else is pretty much up to you. There is a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/io/IOUtils.java\#L383' label='helper method in IOUtils' %} that you can use to serialize single parameters. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L161' label='LogDetectorFactory marshall method' %} for an example.
+-   Everything else is pretty much up to you. There is a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/io/IOUtils.java' label='helper method in IOUtils' %} that you can use to serialize single parameters. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L201' label='LogDetectorFactory marshall method' %} for an example.
 
 #### Unmarshalling.
 
@@ -340,7 +343,7 @@ Unmarshalling is just the other way around. You get a map that you must first cl
 
 There are a few help methods around to help you with reading from XML. For instance, check all the `read*Attribute` of the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/io/IOUtils.java' label='IOUtils' %} class. It is also a good idea to call the `checkSettings` method with the map you just built.
 
-Check again the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L173' label='LogDetectorFactory unmarshall method' %} for an example.
+Check again the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L213' label='LogDetectorFactory unmarshall method' %} for an example.
 
 ### Instantiating spot detectors.
 
