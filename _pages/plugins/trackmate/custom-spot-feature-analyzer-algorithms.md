@@ -46,102 +46,126 @@ Let's get started with our example.
 
 ## The spot analyzer factory
 
-We want to generate an analyzer that will compute for each spot, its intensity relative to the mean intensity of all spots in the same frame. So you get for this feature a value of 1 if its intensity is equal to the mean, etc... We could have our analyzer actually compute the pixel intensity for each spot, take the mean over a frame, then normalize, etc... But, there is an analyzer that already computes the spot intensity and we can re-use it. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}.
+We want to generate an analyzer that will compute for each spot, the ratio of its mean intensity to the std intensity. So you get for this feature a value of 1 if its std intensity is equal to the mean, etc...
+We could have our analyzer actually compute the pixel intensity for each spot, take the mean and std.
+But, there is an analyzer that already computes the spot intensity and we can re-use it. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotIntensityMultiCAnalyzerFactory.java' label='SpotIntensityMultiCAnalyzerFactory' %}.
 
 It is a good idea to reuse this value in our computations, both for the quickness of development and runtime performance. But if we do so, we must ensure that the feature we depend on is available when our new analyzer runs. There is a way to do that, thanks to the notion of **priority**, which we will deal with later.
 
-Right now, let's focus on the factory class itself. There is not much to say: its content resembles all the feature analyzers we saw so far. So I am going to skip over the details and point you to the full source code {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzerFactory.java' label='here' %}.
+Right now, let's focus on the factory class itself. There is not much to say: its content resembles all the feature analyzers we saw so far. So I am going to skip over the details and point you to the full source code {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/MeanStdIntensityRatioSpotAnalyzerFactory.java' label='here' %}.
 
 The one interesting part is the factory method in charge of instantiating the `SpotAnalyzer`:
 
 ```java
-@Override
-    public SpotAnalyzer< T > getAnalyzer( final Model model, final ImgPlus< T > img, final int frame, final int channel )
-    {
-        return new RelativeIntensitySpotAnalyzer< T >( model, frame );
-    }
+	@Override
+	public SpotAnalyzer< T > getAnalyzer( final ImgPlus< T > img, final int frame, final int channel )
+	{
+		// Don't make an analyzer for other channels than the first.
+		if ( channel != 0 )
+			return SpotAnalyzer.dummyAnalyzer();
+
+		return new MeanStdIntensityRatioSpotAnalyzer<>();
+	}
 ```
 
-Since we want to build a feature that does not need the image data, the constructor just skips the image reference. And that's it. We must now move on to the analyzer itself to implement the feature calculation logic.
+Here are some important informations about this method.
+As stated in the javadoc:
 
-A note before we move on: Starting with version 7, TrackMate introduced many new features, including a supplemental spot factory hierarchy that allows tuning how the time-points are processed. Either one by one each by a separate instance of a `SpotDetector`, like it is the case here, or all at once. This is explained in the [next section](/plugins/trackmate/custom-segmentation-algorithms) of this developer tutorial on implementing segmentation algorithm and using the new v7 API.
+_This method will be called once per time-point **and per channel** of the source image. If a feature is defined independently of channels, implementation must care to skip generating several identical features when called on several channels._ 
+
+This also means that the feature computation will be resliced frame by frame and channel by channel. 
+But the first parameter of this method is the 5D source image. 
+It is the reponsibility of the implementing analyzers to reslice this image to yield only the channel and frame of interest.
+
+Since we want to build a feature that does not need the image data, the constructor just skips the image reference.
+And because we are lazy, we will compute the feature only for the first channel, so we return a dummy analyzer that does nothing for all channels that are not the first one (with index 0).
+
+And that's it. We must now move on to the analyzer itself to implement the feature calculation logic.
 
 ## The spot analyzer
 
-As you noted in the above method, each analyzer is meant to operate only on one frame. It can access the whole model, but it is supposed to compute the values for all the spots of a single frame. This permits multithreading: The factory will be asked to generate as many analyzer as there is threads available, and they will run concurrently. And we, as we build our analyzer - do not have to worry about concurrent issues.
+As you noted in the above method, each analyzer is meant to operate only on one frame. 
+This permits multithreading: 
+The factory will be asked to generate as many analyzer as there is threads available, and they will run concurrently. 
+And we, as we build our analyzer - do not have to worry about concurrent issues.
 
-A little word about the expected execution context: The TrackMate GUI operates in steps, as you have noted. First the detection step generates spots, then they are filtered, then they are tracked, etc... Therefore, when I said earlier that the whole model is available for calculation, this is not entirely true. When using the GUI, spot numerical features are used to filter spots after they have been detected. So that this stage, there is no tracks yet. There is not even filtered spots. A spot feature cannot depend on these objects, and this is a built-in limitation of TrackMate. So be cautious on what your numerical feature depends.
+A little word about the expected execution context: 
+The TrackMate GUI operates in steps, as you have noted. First the detection step generates spots, then they are filtered, then they are tracked, etc...
+Therefore, when I said earlier that the whole model is available for calculation, this is not entirely true.
+When using the GUI, spot numerical features are used to filter spots after they have been detected. 
+So that this stage, there is no tracks yet.
+There is not even filtered spots. A spot feature cannot depend on these objects, and this is a built-in limitation of TrackMate. So be cautious on what your numerical feature depends.
 
-Before we go into the code, here is quick recap on the TrackMate model API. After the detection step, the spots are stored in a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/SpotCollection.java' label='SpotCollection' %} object. It gathers all the spots, and can deal with their filtering visibility, etc... Spot analyzers are meant to operate only on one frame, so we will need to require the spot of this frame. The target frame is specified at construction time, by the factory.
-
-The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %} interface is pretty naked. There is nothing specific, and all the logic has to go in the `process()` method. There is no need to have a method to return the results of the computation, for spot objects can store their own feature values, thanks to the `Spot.putFeature(feature, value)` method.
-
-Here is what the `process()` method of the analyzer looks like:
+The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotAnalyzer.java' label='SpotAnalyzer' %} interface is pretty naked:
 
 ```java
-    @Override
-    public boolean process()
-    {
-        /*
-         * Collect all the spots from the target frame. In a SpotAnalyzer, you
-         * cannot interrogate only visible spots, because spot features are
-         * typically used to determine whether spots are going to be visible or
-         * not. This happens in the GUI at the spot filtering stage: We are
-         * actually building a feature on which a filter can be applied. So the
-         * spot features must be calculated over ALL the spots.
-         */
-
-        /*
-         * The spots are stored in a SpotCollection before they are tracked. The
-         * SpotCollection is the product of the detection step.
-         */
-        final SpotCollection sc = model.getSpots();
-        // 'false' means 'not only the visible spots, but all spots'.
-        Iterator< Spot > spotIt = sc.iterator( frame, false );
-
-        /*
-         * Compute the mean intensity for all these spots.
-         */
-
-        double sum = 0;
-        int n = 0;
-        while ( spotIt.hasNext() )
-        {
-            final Spot spot = spotIt.next();
-            // Collect the mean intensity in the spot radius.
-            final double val = spot.getFeature( SpotIntensityAnalyzerFactory.MEAN_INTENSITY );
-            sum += val;
-            n++;
-        }
-
-        if ( n == 0 )
-        {
-            // Nothing to do here.
-            return true;
-        }
-
-        final double mean = sum / n;
-
-        /*
-         * Make a second pass to set the relative intensity of these spots with
-         * respect to the mean we just calculated.
-         */
-
-        spotIt = sc.iterator( frame, false );
-        while ( spotIt.hasNext() )
-        {
-            final Spot spot = spotIt.next();
-            final double val = spot.getFeature( SpotIntensityAnalyzerFactory.MEAN_INTENSITY );
-            final double relMean = val / mean;
-            // Store the new feature in the spot
-            spot.putFeature( RELATIVE_INTENSITY, Double.valueOf( relMean ) );
-        }
-
-        return true;
-    }
+public void process( final Iterable< Spot > spots );
 ```
 
-The code for the whole class is {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/RelativeIntensitySpotAnalyzer.java' label='here' %}.
+The method receives an iterable over the spots which features are to be computed. 
+This iterable is prepared elsewhere in TrackMate, containing the spots to be updated for a single time-point as expected.
+It is not necessarily all the spots in the time-point.
+The same method is used _to update_ spot values after all the spots have been detected, tracked etc.
+Indeed, when you manually modify or create a spot, its features are automatically recomputed.
+When this happens the same method is called but the iterable contains only the spots that have been modified instead of the whole time-point.
+
+Since our feature value for one spot does not depend on any other spots, we can simplify our work further and derive our analyzer from a utility class that takes care of the multithreading part and only asks us to implement the feature computation logic for one spot. 
+This utility class is the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/AbstractSpotFeatureAnalyzer.java' label='AbstractSpotFeatureAnalyzer' %}.
+Thanks to it, body of the analyzer is very concise:
+
+```java
+package plugin.trackmate.examples.spotanalyzer;
+
+import fiji.plugin.trackmate.Spot;
+import fiji.plugin.trackmate.features.spot.AbstractSpotFeatureAnalyzer;
+import net.imglib2.type.numeric.RealType;
+
+public class MeanStdIntensityRatioSpotAnalyzer< T extends RealType< T > > extends AbstractSpotFeatureAnalyzer< T >
+{
+	@Override
+	public void process( final Spot spot )
+	{
+		// See below.
+	}
+}
+// etc
+```
+
+All the computation logic has to go in the `process(Spot)` method. 
+There is no need to have a method to return the results of the computation, for spot objects can store their own feature values, thanks to the `Spot.putFeature(feature, value)` method.
+
+Here is what the `process()` method of the mean/std analyzer looks like:
+
+```java
+	@Override
+	public void process( final Spot spot )
+	{
+		/*
+		 * Get the feature values created by the other spot analyzer for the
+		 * first channel only.
+		 * 
+		 * These values will be null if the spot intensity analyzer has not been
+		 * called before. This is controlled via the priority flag in the
+		 * annotation of the factory,
+		 * 
+		 * The channel number for feature keys are 1-based, so we need to add to
+		 * the channel number we received in the constructor.
+		 */
+		final Double mean = spot.getFeature( "MEAN_INTENSITY_CH1" );
+		final Double std = spot.getFeature( "STD_INTENSITY_CH1" );
+
+		// Compute mean / std.
+		final double ratio = mean.doubleValue() / std.doubleValue();
+
+		// Store results.
+		final String featureName = MeanStdIntensityRatioSpotAnalyzerFactory.MEAN_OVER_STD;
+		spot.putFeature( featureName, Double.valueOf( ratio ) );
+
+		// That's it!
+	}
+```
+
+The code for the whole class is {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/spotanalyzer/MeanStdIntensityRatioSpotAnalyzer.java' label='here' %}.
 
 ## Using SciJava priority to determine order of execution
 
@@ -154,19 +178,22 @@ TrackMate does not offer a real in-depth module dependency management. It simply
 For instance, if you check the annotation part of the spot analyzer factory, you can see that there is an extra parameter, `priority`:
 
 ```java
-@Plugin( type = SpotAnalyzerFactory.class, priority = 1d )
+@Plugin( type = SpotAnalyzerFactory.class, priority = -1. )
 ```
 
 This priority parameter accepts a `double` as value and this value determines the order of execution. Careful, the rule is the opposite of what would make sense for a priority:
 
-{% include notice icon="info" content='Feature analyzers are executed in order according to **increasing priority**. This means that analyzers with the greatest priority are executed last.' %}
+{% include notice icon="info" content='Feature analyzers are executed in order according to **increasing priority**. This means that analyzers with the greatest priority are executed first.' %}
 
-By convention, if your feature analyzer depends on the features calculated by N other analyzers, you take the larger priority of these analyzers, and add 1. In our case, we depend on the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}, which as a priority of 0 (the default if the parameter is unspecified). So quite logically, we set the priority of our analyzer to be 1. This ensures the proper execution order.
+By convention, if your feature analyzer depends on the features calculated by N other analyzers, you take the lowest priority of these analyzers, and remove 1. 
+In our case, we depend on the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/spot/SpotIntensityAnalyzerFactory.java' label='SpotIntensityAnalyzerFactory' %}, which as a priority of 0 (the default if the parameter is unspecified). 
+So quite logically, we set the priority of our analyzer to be -1. 
+This ensures the proper execution order.
 
 ## Wrapping up
 
 Apart from the discussion on the priority and execution order, there is not much to say. It works!
 
-<figure><img src="/media/plugins/trackmate/trackmate-customspotanalyzer-01.png" title="TrackMate_CustomSpotAnalyzer_01.png" width="600" alt="TrackMate_CustomSpotAnalyzer_01.png" /><figcaption aria-hidden="true">TrackMate_CustomSpotAnalyzer_01.png</figcaption></figure>
+{% include img src="/media/plugins/trackmate/trackmate-customspotanalyzer-01.png"  %}
 
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 07:32, 11 March 2014 (CDT)
+{% include person id='tinevez' %} 11 March 2014 - 23 July 2021
