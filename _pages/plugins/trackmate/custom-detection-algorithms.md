@@ -65,8 +65,7 @@ Of course, you have to devise a clever multithreading strategy to operate concur
 
 Any omission will trigger errors at runtime.
 
-Starting TrackMate version 7, spots can store object contours in 2D. 
-We will discuss this new feature in the next tutorial of this series.
+A note before we move on: Starting with version 7, TrackMate introduced many new features, including a supplemental spot factory hierarchy that allows tuning how the time-points are processed. Either one by one each by a separate instance of a `SpotDetector`, like it is the case here, or all at once. This is explained in the [next section](/plugins/trackmate/custom-segmentation-algorithms) of this developer tutorial on implementing segmentation algorithm and using the new v7 API.
 
 ### A dummy detector that returns spiraling spots.
 
