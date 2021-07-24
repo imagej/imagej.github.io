@@ -79,14 +79,18 @@ It is an important paramter that we describe here.
 
 Object contours are polygon that wraps around individual objects, initially following individual pixels.
 For instance, the initial output of the threshold detector for one spot looks like this:
-{% include img src='/media/plugins/trackmate/trackmate-spot-contour-pixel.png' %}
+
+{% include img src='/media/plugins/trackmate/trackmate-spot-contour-pixel.png' width='400'  %}
+
 Notice that the polygon follows exactly the contour of all pixels that are above the threshold.
 For instance the leftmost pixel on the image above is has 3 segments for its border.
 And all of the contour segments run along pixels horizontally or vertically.
 
 Simplifying contour will yield a simplifed shape of the object, that interpolate betwen pixels and return a smoother shape with fewer segments. 
 The same algorithm running with the `Simplify contours` parameter selected will yield the following:
-{% include img src='/media/plugins/trackmate/trackmate-spot-contour-simplified.png' %}
+
+{% include img src='/media/plugins/trackmate/trackmate-spot-contour-simplified.png' width='400' %}
+
 Simplifying contour generate TrackMate files that are smaller in disk space.
 More importantly, they yield more accurate morphological features.
 Indeed, the pixel-accurate contour overestimates the perimeter, because it sticks to invidual pixel borders.
@@ -95,9 +99,11 @@ In turn this generate contours that have an overestimated perimeter and will neg
 Simplifying contours somewhat tries to follow the object contour as if it would not be discretized over a pixel matrix.
 But it works well only if the objects are large enough.
 For small objects, below typically 10 pixels, the simplification generates inaccurate contours:
-{% include img src='/media/plugins/trackmate/trackmate-spot-contour-small.png' %}
+
+{% include img src='/media/plugins/trackmate/trackmate-spot-contour-small.png' width='400' %}
 
 So as a rule of thumb we recommend the following:
+
 - If your objects are big (N pixels larger than 10) and you want to measure their shape, always select the `Simplify contours` option.
 - If your objects are sampled on a small number of pixels, it does not make sense to measure their morphology anyway. 
 - So basically, unselect the `Simplify contours` only if you want to later generate a pixel-accurate mask from the objects (with for instance the `Export label image` action).
