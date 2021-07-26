@@ -1,5 +1,4 @@
 ---
-mediawiki: How_to_set_up_and_populate_an_update_site
 title: How to set up and populate an update site
 section: Extend:Update Sites
 project: /software/imagej2
@@ -17,41 +16,41 @@ See the [Distribution](/contribute/distributing) page for a discussion of the be
 
 ## Add your personal update site
 
+{% include notice icon="warning" content='Please note that since the [Wiki relaunch](https://imagej.net/events/wiki-grand-opening/), personal update sites are no longer hosted through the ImageJ Wiki. Existing upload credentials are unaffected - but the process for creating/updating credentials has changed.' %}
+
 By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your *personal update site*.
 
-A *personal update site* is hosted on https://sites.imagej.net/&lt;imagej-wiki-account&gt;. If you do not have an ImageJ Wiki account yet, no need to worry, you can register one while setting up your update site.
+A *personal update site* is hosted on https://sites.imagej.net/&lt;update-site-name&gt;. Uploading to a personal update site requires upload credentials (see below).
 
 {% include notice icon="info" content='There are some minimal *Terms of Service* for personal update sites. See the [Personal Update Site Terms of Service](/update-sites/tos) for details.' %}
 
-First of all, create a wiki account on https://imagej.net.
+First of all, please use [this thread on the imagej.sc forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request a new upload account and/or new update site. You can also request the addition or removal of uploader permissions to a particular site, or request a password reset.
 
-Please note, that the password for the corresponding update site is NOT the one for your wiki account. In order to set your update site password, use the link at the bottom of the wiki or click [here](Special_ChangeUploadPassword).
+If you need to create a new upload account as part of this process, your password will be PM'd to you by a forum admin.
 
-start the updater with {% include bc path='Help | Update'%} and click on the *Manage update sites* button:
+To start using your update site, in ImageJ start the updater with {% include bc path='Help | Update'%} and click on the *Manage update sites* button:
 
 <img src="/media/mamed-3.jpg" width="770"/>
 
-### Specifying your existing ImageJ Wiki account
+### Specifying your upload account
 
-Enter the name of that account and click *OK*:
+Click the *Add my site* button, enter account name and click *OK*. This will add a new entry with the appropriate URL and host configuration. It will also validate that the update site actually exists.
 
 <img src="/media/update-sites/personal-update-site-1.png" width="770"/>
 
-If your upload password (separate from your wiki password) was not initialized, you will then be asked to provide your wiki password, which will be used to initialize your upload password. The two passwords can differ. This can be source of confusion during setting up of the update.
-
-You can also manually [change or initialize your upload password](Special_ChangeUploadPassword).
+When you start the upload process you will be prompted for your password.
 
 ### Dedicated plugin update sites
 
 Rather than having a single update site for many plugins, it is highly advised to set up dedicated update sites for each plugin that could be of interest to the community.  
 Such dedicated update site can have a more intuitive name.  
-A given user/wiki account can own several update sites. To request a new update site for your user account, post your request on the forum (see [related post](https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas)), or on the [ImageJ Gitter](https://gitter.im/imagej/imagej).
+A given upload account can own several update sites. To request a new update site for your user account, post your request on the forum (see [related post](https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas)), or on the [ImageJ Gitter](https://gitter.im/imagej/imagej).
 
 ## Group update site
 
 In addition to [personal update sites](/update-sites/setup#add-your-personal-update-site), it is possible for groups of people to share an update site.
 
-To create such an update site, post on the [Image.sc Forum](https://forum.image.sc/tags/imagej), or in the [imagej Gitter channel](https://gitter.im/imagej/imagej), requesting the creation of the site on `sites.imagej.net`, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
+To create such an update site, post on the [Image.sc Forum](https://forum.image.sc/tags/imagej), or in the [imagej Gitter channel](https://gitter.im/imagej/imagej), requesting the creation of the site on `sites.imagej.net`, including the desired name of the site, as well as the upload users to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
 ## Adding an update site on your own server
 
@@ -72,7 +71,7 @@ The *upload information* depends on the protocol available for uploading:
 
 In case you want to use an SFTP/SSH server, it must have an empty, public web accessible folder where you intend to publish your updates. The ImageJ updater will not create that empty folder.
 
-{% include aside title="A note about SSH and `known_hosts`" content='For ImageJ to connect to your server over SSH, you must have configured your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain the host key, and optionally `$HOME/.ssh/config` may contain the host configuration/credentials. We recommend that the given host be specified in `$HOME/.ssh/config` and equipped with a private key.
+{% include notice icon="tip" content='**A note about SSH and `known_hosts`:** For ImageJ to connect to your server over SSH, you must have configured your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain the host key, and optionally `$HOME/.ssh/config` may contain the host configuration/credentials. We recommend that the given host be specified in `$HOME/.ssh/config` and equipped with a private key.
   
 Note that you need to connect with command-line ssh first, to record the finger-print of the host. It might be necessary to call `ssh-keyscan test.imagej.net >> $HOME/.ssh/known_hosts` to ensure the correctly formatted key appears in your configuration file. There is an issue with newer SSH servers offering host keys in `ecdsa-sha2-nistp256` format, but the [JSch](http://www.jcraft.com/jsch/) library wanting them in `ssh-rsa` format instead. If you receive the error `com.jcraft.jsch.JSchException: UnknownHostKey` then you might be bitten by this discrepancy; try using the `ssh-keyscan` invocation above. If you still have trouble, please write to the [Image.sc Forum](https://forum.image.sc/) to troubleshoot further.' %}
 
@@ -102,7 +101,7 @@ First, start the [updater](/plugins/updater):
 Click on the *Manage update sites* button and verify:
 
 -   Your update site is present and enabled
--   The *Host* column of your update site contains your user name, in the form: `webdav:`<WikiUsername>
+-   The *Host* column of your update site contains your user name, in the form: `webdav:`<UploadUsername>
 
 For example:
 
@@ -130,7 +129,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 <img src="/media/update-sites/upload-to-update-site.png" width="770"/>
 
-{% include notice icon="info" content='The *Upload to <update site name>* option is only available if you entered your [wiki credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. Be aware that the password for the update site [*is not* your Wiki password](/update-sites/faq#how-do-i-set-a-password-for-my-personal-update-site). This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
+{% include notice icon="info" content='The *Upload to <update site name>* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
 ### Modifying Dependencies
 

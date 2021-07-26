@@ -16,8 +16,7 @@ nav-title: Automatic Uploads
 -   An open-source project hosted on [GitHub](/develop/github)
 -   Logging in to [Travis CI](https://travis-ci.org/auth) with your corresponding GitHub account
 -   [Travis command line tools](https://github.com/travis-ci/travis.rb#installation)
--   An [account on this wiki](Special_CreateAccount)
--   An [initialized upload password](Special_ChangeUploadPassword). (**NOTE** - *not* necessarily the same as your Wiki password)
+-   An [initialized upload password](/update-sites/setup#add-your-personal-update-sit).
 
 # Additional resources
 
@@ -95,7 +94,7 @@ by your informations.
 
 ## Encrypting your password
 
-To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](Special_ChangeUploadPassword) of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
+To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](/update-sites/setup#add-your-personal-update-site) of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
 
 Note that when you run:
 

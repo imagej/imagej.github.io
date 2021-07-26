@@ -61,7 +61,7 @@ Please see the [Personal Update Site Terms of Service](/update-sites/tos) page.
 
 ## How do I set a password for my personal update site?
 
-Use [this page](Special_ChangeUploadPassword) to set a password for *uploading* content.
+Please see the instructions on the [Personal Update Sites](/update-sites/setup#add-your-personal-update-site) page.
 
 If you want to restrict which users can *access* your update site, please note that the [Personal Update Sites](/update-sites/setup#add-your-personal-update-site) service is only intended for freely available plugins. To restrict user access, you will need to host the update site yourself, sharing the URL only with your customers. Implementing an authentication scheme on top of an ImageJ update site is outside the scope of ImageJ—consider using something like [OAuth](http://oauth.net/).
 
@@ -93,5 +93,4 @@ The *View changes* option is helpful to identify what downloads are pending. Onc
 
 Other options to check if still not resolved:
 
--   Be sure to set your upload password for your currently logged-in wiki account. Just click [Set/change upload password](Special_ChangeUploadPassword) under the MORE TOOLS section at the bottom of any wiki page.
 -   Be sure that under "Manage update sites" that your credentials are inserted for your update site. See [Uploading files to your update site](/update-sites/setup#uploading-files-to-your-update-site) on the ImageJ wiki to double-check how to do this.
