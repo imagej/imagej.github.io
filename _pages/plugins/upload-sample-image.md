@@ -12,7 +12,7 @@ categories: [Uncategorized]
 
 Use the {% include bc path='Help | Upload Sample Image'%} command to upload a file (not just images) meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [bug report](/discuss/bugs) with a large image.
 
-To prevent abuse of this facility, access to the uploaded images is restricted to trusted admins of [this Wiki](Special_Incoming).
+To prevent abuse of this facility, access to the uploaded images is restricted to trusted community admins.
 
 If you upload a sample image and would like it to be deleted, just let us know [on the forum](http://forum.imagej.net/) with a post or private message to an admin.
 
