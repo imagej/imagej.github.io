@@ -1,5 +1,5 @@
 ---
-title: TrackMate-Mask-Detector
+title: TrackMate Mask detector
 description: TrackMate detector that creates objects from a mask image.
 categories: [Segmentation,Tracking]
 logo: /media/logos/trackmate-300p.png
@@ -59,7 +59,7 @@ The configuration panel is very simple:
 
 You just need to specify in what channel is the mask. In our case it is the second one. 
 
-There is a checkbox that lets you simplify contours. We suggest you leave it on by default. The details of contour simplification are explained [here](http://127.0.0.1:4000/plugins/trackmate/trackmate-v7-detectors#simplifying-contours). 
+There is a checkbox that lets you simplify contours. We suggest you leave it on by default. The details of contour simplification are explained [here](/plugins/trackmate/trackmate-v7-detectors#simplifying-contours). 
 
 The `Preview` button will show the results. In frame 11 for instance, 6 objects are detected with their contour:
 
