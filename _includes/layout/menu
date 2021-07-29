@@ -69,6 +69,7 @@
               <li><a href="/update-sites/automatic-uploads">Automatic Upload</a></li>
               <li><a href="/update-sites/core-uploads">Uploading to Core Sites</a></li>
               <li><a href="/update-sites/faq">Update Sites FAQ</a></li>
+              <li><a href="/update-sites/stats">Statistics</a></li>
             {% include menu/section-end %} <!-- Extend/Update Sites -->
 
             {% include menu/section title="Scripting" link="/scripting" %}
