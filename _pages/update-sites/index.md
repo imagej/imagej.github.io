@@ -17,7 +17,7 @@ An **update site** is web space used by the [Updater](/plugins/updater) which en
 
 <div style="clear: right; float: right">
 
-{% include notice icon="fiji" content='The [Fiji](/software/fiji) distribution of ImageJ2 ships with both the `/about` and `/fiji` sites enabled. You can transform your ImageJ2 installation into a Fiji one simply by enabling the `/fiji` update site.' %}
+{% include notice icon="fiji" content='The [Fiji](/software/fiji) distribution of ImageJ2 ships with both the `ImageJ` and `Fiji` sites enabled. You can transform your ImageJ2 installation into a Fiji one simply by enabling the `Fiji` update site.' %}
 
 </div>
 
