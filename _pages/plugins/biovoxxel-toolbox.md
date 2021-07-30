@@ -1,9 +1,11 @@
 ---
 mediawiki: BioVoxxel_Toolbox
 title: BioVoxxel Toolbox
+icon: https://www.biovoxxel.de/images/BioVoxxel_Logo.png
 categories: [Particle Analysis, Segmentation]
 project: /plugins/biovoxxel-toolbox
 pom-url: https://raw.githubusercontent.com/biovoxxel/BioVoxxel-Toolbox/master/Biovoxxel_Plugins/pom.xml
+nav-links: true
 ---
 
 
@@ -39,8 +41,6 @@ Form: plugin (recordable, *uses smart recording --&gt; records only fields which
 
 Status: Maintenance active
 
-Suggestions are welcome!
-
 ------------------------------------------------------------------------
 
 # Field-of-view measure correction
@@ -55,9 +55,7 @@ How to: only works on individual 8-bit binary images.
 
 Form: macro
 
-Status: maintenance active
-
-Future: Suggestions are welcome!
+Status: maintenance inactive, stable
 
 ------------------------------------------------------------------------
 
@@ -77,8 +75,6 @@ Form: macro
 
 Status: Maintenance active
 
-Future: Suggestions are welcome!
-
 ------------------------------------------------------------------------
 
 # Binary Feature Extractor
@@ -91,9 +87,9 @@ How to: First, specify the images containing on the one hand the objects to extr
 
 <img src="/media/plugins/featureextractor1.png" width="750"/>
 
-Status: plugin v1.0, can be run from the BioVoxxel Toolbox Menu, maintenance active
+Form: plugin
 
-Future: Further suggestions are welcome!
+Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -109,11 +105,9 @@ The macro gives different outputs. The optical output is an color-coded image, w
 
 New: now the "Speckle Inspector" comes as recordable plugin
 
-Form: plugin, recordable
+Form: plugin
 
 Status: maintenance active
-
-Future: suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -131,13 +125,11 @@ How to: The user needs to specify one of two parameters:
 
 3.) Separator size: the separator size describes the length of the one-pixel line separating connected particles. Thus, the user can specifically choose a size range in which the particle connections should be separated. Additionally, the option "exclude" enables to exclude the specified sizes and separate only connections which are smaller than the lower and bigger than the upper limit.
 
-Form: plugin, recordable
+Form: plugin
 
 Status: maintenance active
 
 Thanks to Thorsten Wagner which provided the ij-blobs library as basis and the idea to integrate convexity as a second parameter to make the function scale invariant and more flexible.
-
-Future: Suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -149,11 +141,9 @@ Purpose: The standard binary erosion and dilation suffers from the artefact that
 
 How to: The number of iterations determines how often the chosen function will be applied to the image.
 
-Form: plugin (with preview, recordable)
+Form: plugin
 
-Status: works on stacks now, maintenance active
-
-Future: suggestions are welcome!
+Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -165,9 +155,7 @@ How to: Original and binary mask images need to be identified from the drop-down
 
 Form: macro
 
-Status: maintenance active
-
-Future: Will be implemented for hyperstacks. Suggestions are welcome!
+Status: maintenance inactive, deprecated, stable
 
 ------------------------------------------------------------------------
 
@@ -205,11 +193,9 @@ Potential issues: If the user does not correctly define if he/she is looking for
 
 **Publication:** [Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms](http://www.cscjournals.org/library/manuscriptinfo.php?mc=IJIP-829). J. Brocher, Int. J. Image Process. 8(2), 2014 pp. 30-48
 
-Form: macro (plugin currently under development)
+Form: macro
 
-Status: v2.2 (performance improved), maintenance active
-
-Future: Suggestions are welcome!
+Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -225,8 +211,6 @@ Form: plugin
 
 Status: maintenance active
 
-Future: potentially additional filters will be added
-
 ------------------------------------------------------------------------
 
 # Flat-field and Pseudo flat-field correction
@@ -241,11 +225,9 @@ Advantage of the Pseudo flat field correction: This is now recordable and works 
 
 Form of Flat-field correction: macro
 
-form of Pseudo Flat-field correction: plugin
+Form of Pseudo Flat-field correction: plugin
 
-Status: maintenance active, problems with specific stacks (fill be addressed soon)
-
-Future: suggestions are welcome!
+Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -259,11 +241,9 @@ Method: The convoluted images are directly subtracted from the original with exc
 
 <figure><img src="/media/plugins/convoluted-background-subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
 
-Distribution: plugin, recordable
+Form: plugin
 
 Status: maintenance active!
-
-Future: suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -275,7 +255,7 @@ Purpose: The tool creates a intensity plot along any kind of lines as well as fr
 
 Form: macro
 
-Status: deprecated
+Status: maintenance inactive, deprecated
 
 ------------------------------------------------------------------------
 
@@ -289,7 +269,7 @@ How To: The line can be either straight, freehand or segmented and needs to be d
 
 Form: macro
 
-Status: deprecated
+Status: maintenance inactive, deprecated
 
 ------------------------------------------------------------------------
 
@@ -317,8 +297,6 @@ Form: plugin, recording still not fully functional!!!
 
 Status: maintenance active
 
-Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
-
 ------------------------------------------------------------------------
 
 # Recursive Filters
@@ -329,7 +307,7 @@ The maximum iteration can be set by the user up to 500 times but will be stopped
 
 <img src="/media/plugins/recursivefilters01.png" width="500"/>
 
-Form: recordable plugin
+Form: plugin
 
 Status: maintenance active
 
@@ -345,8 +323,6 @@ Form: macro
 
 Status: maintenance active
 
-Future: Suggestions are welcome!
-
 ------------------------------------------------------------------------
 
 # Hyperstack Color Coding
@@ -358,8 +334,6 @@ How to: Given that you start with a hyperstack, you can choose between time and 
 Form: macro
 
 Status: maintenance active
-
-Future: Suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -376,8 +350,6 @@ Methods: "Voronoi" analyzes the paticles according to the directly correlated vo
 Form: macro
 
 Status: maintenance active
-
-Future: Suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -398,8 +370,6 @@ Method: The UEPs of the particles are generated and the nearest neighbor distanc
 Form: macro
 
 Status: maintenance active
-
-Future: Suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -443,15 +413,7 @@ Method: Circle ROIs of the specified size are initially distributed with suffici
 
 Form: plugin, recordable
 
-Status: stable, not further actively maintained
-
-------------------------------------------------------------------------
-
-# Skeleton Length (corrected)
-
-Status: deprecated due to incorrect calculation
-
-Please rather use the [Analyze Skeleton 2D/3D](/plugins/analyze-skeleton) which is shipped with Fiji
+Status: stable, Maintenance inactive
 
 ------------------------------------------------------------------------
 
@@ -467,7 +429,7 @@ Method: As measure for the distance between the particles the minimum separation
 
 Form: macro
 
-Status: maintenance active
+Status: maintenance inactive
 
 Future: Suggestions are welcome!
 
@@ -485,11 +447,9 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit single ima
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
 
-Form: plugin, recordable
+Form: plugin
 
 Status: maintenance active
-
-Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -501,9 +461,7 @@ Purpose: This image filter enhances the contrast of true color images similar to
 
 How to: The user can key in a percentage of saturated pixels as in the "Enhance Contrast" function and has a preview option.
 
-Remarks: is recordable and works with stacks
-
-Form: plugin, recordable
+Form: plugin
 
 Status: maintenance active
 
@@ -533,9 +491,9 @@ Future: Will be implemented for stacks as well.
 
 All BioVoxxel Macros were developed by {% include person id='biovoxxel' %}
 
-The macros can be freely used, redistributed and changed according to the BSD-3 License.
+The toolbox can be freely used, redistributed and changed according to the BSD-3 License.
 
-For questions, comments and suggestions please contact: jan.brocher(at)biovoxxel.de
+For questions, comments and suggestions please contact: mailto:jan.brocher@biovoxxel.de
 
 There is NO WARRANTY of functionality for those macros.
 
