@@ -19,7 +19,7 @@ Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-<figure><img src="/media/plugins/extendedparticleanalyzer-v2.png" title="ExtendedParticleAnalyzer_v2.png" width="750" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
+<figure><img src="/media/plugins/extendedparticleanalyzer-v2.png" title="ExtendedParticleAnalyzer_v2.png" width="1024" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
@@ -61,15 +61,15 @@ Status: maintenance inactive, stable
 
 # Shape Descriptor Maps
 
-Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. Since version 0.6, when "interactive plots" is enabled, the user can simply click on one of the slices in the color coded output stack to receive a plot of the respective size sorted shape descriptor. **To finally abort the macro when interactive plots is active "Esc" needs to be pressed**.
+Purpose: Shape descriptors of the particles in an 8-bit binary image will be color coded (smallest to biggest values) and are shown in a stack containing the original image in the first slice and the "shape descriptor maps" in the consecutive ones. The respective shape descriptors are indicated in each slice. A calibration bar (LUT can be selected in the setup) enables easier overview and interpretation. The highest descriptor values can also be displayd as an orientation. When the checkbox "interactive plots" is enabled, the user can simply **double-click** on one of the slices in the color-coded output stack to receive a distrbution plot of the respective sorted shape descriptor. **To finally abort the macro when interactive plots is active "Esc" needs to be pressed**.
 
-The interactive plots enable to hover over the plot surface or retreiving the plot list to determine potential exclusion parameters which consecutively can be used with the "Advanced Particle Analyzer".
+The distribution might serve to find suitable cut-off sized which then can be used in the [Extended Particle Analyzer](https://imagej.net/plugins/biovoxxel-toolbox#extended-particle-analyzer)
 
 This macro helps to visually identify features in images according to their shape properties. Additionally, you can also use the color coded images for consecutive color thresholding after transfering them into RGB mode to extract specific features from the images, according to their coding color.
 
 How to: Select analysis modes and start.
 
-<img src="/media/plugins/shapedescriptormaps.png" width="750"/>
+<img src="/media/plugins/biovoxxel_toolbox/ShapeDescriptorMaps-21073001.png" width="1024"/>
 
 Form: macro
 
@@ -244,32 +244,6 @@ Method: The convoluted images are directly subtracted from the original with exc
 Form: plugin
 
 Status: maintenance active!
-
-------------------------------------------------------------------------
-
-# Scaled Intensity Plot
-
-Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does {% include bc path='Analyze | Plot Profile'%}) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen. This should enable to better compare intensity plots from different images or selections which is only possible if they have the same scaling. The latter is done in unscaled units (pixels). If a new plot line is added to an existing plot the choice "Draw grid lines" is either ignored or forced depending on how the destination plot was created using the same tool.
-
-<img src="/media/plugins/scaledintensityplots.png" width="750"/>
-
-Form: macro
-
-Status: maintenance inactive, deprecated
-
-------------------------------------------------------------------------
-
-# Stack Line Plots
-
-Purpose: The stack line plot enables to make line plots over a complete stack of images.
-
-How To: The line can be either straight, freehand or segmented and needs to be drawn beforehand. If the input image is a hyperstack the user can choose to plot over the z-slice or the t-frame range. In such a case the intensities of the active channel are taken for the plot. The macro automatically creates a stack of plots along the line selection with the upper intensity limit set at the highest intensity occurring along the line over all images. If the \[Shift\] key is held down before and while going to &gt;BioVoxxel Icon &gt;Stack Line Plots the limit is set to 255 for 8-bit images and 65535 for 16-bit images
-
-<img src="/media/plugins/stacklineplots.png" width="750"/>
-
-Form: macro
-
-Status: maintenance inactive, deprecated
 
 ------------------------------------------------------------------------
 
