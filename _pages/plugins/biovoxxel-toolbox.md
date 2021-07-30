@@ -5,7 +5,6 @@ icon: https://www.biovoxxel.de/images/BioVoxxel_Logo.png
 categories: [Particle Analysis, Segmentation]
 project: /plugins/biovoxxel-toolbox
 pom-url: https://raw.githubusercontent.com/biovoxxel/BioVoxxel-Toolbox/master/Biovoxxel_Plugins/pom.xml
-nav-links: true
 ---
 
 
