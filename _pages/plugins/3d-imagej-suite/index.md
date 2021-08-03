@@ -16,9 +16,7 @@ categories: [3D, Analysis, Filtering, Segmentation, Mathematical Morphology]
 
 ## 3D ImageJ Suite
 
-This *suite* provides plugins to enhance 3D capabilities of ImageJ.
-
-Migrating contents from [3D Suite on ImageJ Documentation Website](https://imagejdocu.list.lu/plugin/stacks/3d_ij_suite/start).
+This *suite* provides plugins to enhance 3D capabilities of ImageJ. Updated content will be available in [Framagit](https://mcib3d.frama.io/3d-suite-imagej/). 
 
 The pdf of the [NEUBIAS academy](http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/) presentation "*Introduction to 3D Analysis with 3D ImageJ suite*" is available : [NEUBIAS\_3DSuite.pdf](/media/plugins/3d-imagej-suite/neubias-3dsuite.pdf).
 
@@ -32,39 +30,7 @@ The associated project for automation is available in [TAPAS](/plugins/tapas).
 
 With many contributions from J. Ollion, Laboratoire Jean Perrin, Paris, France.
 
-## Features
 
-This *suite* is composed of :
-
--   [3D Filters](/plugins/3d-imagej-suite/filters) (mean, median, max, min, tophat, max local, ...) and [Edge and symmetry filter](/plugins/edge-and-symmetry-filter)
--   [3D Segmentation](/plugins/3d-segmentation) (iterative thresholding, spots segmentation, watershed, ...)
--   [3D Mathematical Morphology](/plugins/3d-imagej-suite/mathematical-morphology) tools (fill holes, binary closing, distance map, ...)
--   [3D RoiManager](https://imagejdocu.list.lu/plugin/stacks/3d_roi_manager/start) (3D display and analysis of 3D objects)
--   [3D Analysis](https://imagejdocu.list.lu/plugin/analysis/3d_analysis/start) (Geometrical measurements, Mesh measurements, Convex hull, ...)
--   [3D MereoTopology](https://imagejdocu.list.lu/plugin/analysis/3d_mereotopology/start) (Relationship between objects)
--   [3D Tools](https://imagejdocu.list.lu/plugin/stacks/3d_tools:start) (Drawing ellipsoids and lines, cropping, ...)
-
-A 2D/3D [spatial statistics](https://imagejdocu.list.lu/plugin/analysis/spatial_statistics_2d_3d/start) plugin is also available.
-
-## Installation
-
-From version 2.7, **3D ImageJ Suite** is available in Fiji as an [update site](/update-sites). The **Java8** and **ImageScience** update sites must be activated in Fiji, see instructions [here](/update-sites/following)\].
-
-You can also install **3D ImageJ Suite** manually (see download section) and unzip it in your plugins folder. The various plugins will appear in the menu **3D** of the plugins list.
-
-You have also to manually download and copy into your plugins directory the **imagescience.jar** library from [here](http://www.imagescience.org/meijering/software/featurej/).
-
-## Download
-
-ImageJ 1.47 or later is required. Java3D is also required, check that [3D\_Viewer](/plugins/3d-viewer) is working.
-
-**NEW** From version 3.83 and later, for ImageJ users the new version 4.0.1 of 3D\_Viewer is required (please remove the 3D\_Viewer plugin provided by ImageJ and replace it by [3d\_viewer-mcib.zip](/media/3d-viewer-mcib.zip), just unzip the file in the plugins directory).
-
-Java 1.8 or later is required. **The [imagescience](http://www.imagescience.org/meijering/software/featurej/) library is required ** : [download here](http://www.imagescience.org/meijering/software/download/imagescience.jar).
-
-**Bundle** : [Mcib3d-suite3.96.3.zip](/media/plugins/3d-imagej-suite/mcib3d-suite3.96.3.zip)
-
-Sources are available on [GitHub](https://github.com/) for [core](https://github.com/mcib3d/mcib3d-core) and [plugins](https://github.com/mcib3d/mcib3d-plugins).
 
 ## Citation
 
@@ -75,54 +41,3 @@ J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. (**2013**) TANGO: A Ge
 ## License
 
 GPL distribution (see [license](https://cecill.info/index.en.html)). Sources available on Github (see Download)
-
-## Acknowledgements
-
-The 3D suite would like to thanks P. Andrey, J.-F. Gilles and the developers of the following plugins :
-
--   [Imagescience](http://www.imagescience.org/meijering/software/featurej/)
--   [LocalThickness](http://www.optinav.com/Local_Thickness.htm)
--   [ConvexHull3D](https://imagej.nih.gov/ij/plugins/3d-convex-hull/index.html)
--   [3D Object Counter](https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start)
--   [Droplet Counter](https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start)
-
-## Links
-
--   [BoneJ2](/plugins/bonej)
--   [3D Shapes](https://sites.google.com/site/learnimagej/plugins/3d-shape)
--   [3D Annotation Tool](https://imagejdocu.list.lu/plugin/utilities/annotation_roi_3d/start)
--   [3D Viewer](/plugins/3d-viewer)
--   [MorphoLibJ](/plugins/morpholibj)
-
-## Change Log
-
--   30/10/2019 V3.96: Bug fixes and improvements. New plugins distances and interactions.
--   15/01/2019 V3.94: Bug fixes and improvements. 3D Manager interface improved.
--   19/10/2018 V3.93: Bug fixes and improvements. New plugins MultiColoc, EVF radial analysis and density.
--   14/03/2018 V3.92: Bug fixes and improvements. New Roi3D overlay in 3DManager.
--   05/01/2018 V3.91: Bug fixes and improvements.
--   10/04/2017 V3.9 : Display computing time and ETC for filters, new LooknFeel for Manager.
--   22/08/2016 V3.83: New plugin Radial Distance Area Ratio (RDAR), Watershed improved.
--   04/07/2016 V3.82: compatibility with new version of 3D viewer, improvements and bug fixes.
--   30/03/2016 V3.74: bug fixed in EDT.
--   18/03/2016 V3.71: new plugin 3D Maxima Finder.
--   02/03/2016 V3.7 : bug fixes, new plugin exclude objects on borders.
--   07/12/2015 V3.6 : bug fixes, new edge and symmetry filters, sync between 3D Viewer select object and 3DManager.
--   01/09/2015 V3.5 : compatibility with ImageScience 3.0.
--   20/08/2015 V3.4 : redesigned Watershed, Record Iterative Thresholding, Quantification in 32-bits images with NaN values.
--   05/06/2015 V3.3 : new function closeResults saveResults 3DManager + exclude on edges.
--   25/05/2015 V3.2 : improved watershed (especially for flat regions).
--   27/04/2015 V3.1 : bug in colocalisation (rare objects configuration) + improved split + poles in ellipsoid fitting.
--   21/11/2014 V3.0 : closest object in selection for 3D Manager. Macros functions to save results for 3D Manager.
--   03/10/2014 V2.9 : new Results Tables for 3DManager.
--   03/06/2014 V2.8 : new plugin shape analysis. Load/save objects with calibration.
--   21/03/2014 V2.71: bug fix in Segment3D.
--   24/10/2013 V2.7 : new segmentation Iterative thresholding; check for required libraries at startup; 32-bits segmentation and labelling.
--   28/05/2013 V2.6 : bug fixes and improvements, new filters openGray and closeGray.
--   21/03/2013 V2.5 : new design for 3D Manager.
--   08/02/2013 V2.4 : new plugin MereoTopology 3D.
--   29/10/2012 V2.3 : new macro functions for 3D Manager.
--   22/10/2012 V2.3 : bug fixed for filters3D with 32-bits images.
--   12/10/2012 V2.2 : calibration bug fixed in spatial statistics.
--   28/09/2012 V2.1 : corrected bug in display (Ellipsoid3D and RoiManager3D).
--   25/09/2012 V2.0 : first version.
