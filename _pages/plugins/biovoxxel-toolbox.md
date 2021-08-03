@@ -68,7 +68,7 @@ This macro helps to visually identify features in images according to their shap
 
 How to: Select analysis modes and start.
 
-<img src="/media/plugins/biovoxxel_toolbox/ShapeDescriptorMaps-21073001.png" width="1024"/>
+<img src="https://www.biovoxxel.de/BioVoxxel Toolbox/images/ShapeDescriptorMaps-21073001.png" width="1024"/>
 
 Form: macro
 
