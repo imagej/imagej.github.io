@@ -143,23 +143,23 @@ section: Explore:Software:Fiji
 
 ## References
 
-{% include citation fn=1 content='journal' author='Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona' title='Fiji: an open-source platform for biological-image analysis' journal='Nature Methods' year='2012' volume='9(7)' pages='676-682' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html' %}
+{% include citation fn=1 doi='10.1038/nmeth.2019' %}
 
 {% include citation fn=2 id='learn/flavors' %}
 
 {% include citation fn=3 content='conference' author='Schindelin J' title='Fiji Is Just ImageJ (batteries included)' year='2008' month='November' %}
 
-{% include citation fn=4 content='journal' author='Thomas Walter, David W Shattuck, Richard Baldock, Mark E Bastin, Anne E Carpenter, Suzanne Duce, Jan Ellenberg, Adam Fraser, Nicholas Hamilton, Steve Pieper, Mark A Ragan, Jurgen E Schneider, Pavel Tomancak and Jean-Karim Hériché' title='Visualization of image data from cells to organisms' journal='Nature Methods' year='2010' volume='7 No 3s' pages='S26 -S41' url='http://www.nature.com/nmeth/journal/v7/n3s/abs/nmeth.1431.html' %}
+{% include citation fn=4 doi='10.1038/nmeth.1431' %}
 
-{% include citation fn=5 content='journal' author='Kevin W Eliceiri, Michael R Berthold, Ilya G Goldberg, Luis Ibàñez, B S Manjunath, Maryann E Martone, Robert F Murphy, Hanchuan Peng, Anne L Plant, Badrinath Roysam, Nico Stuurmann, Jason R Swedlow, Pavel Tomancak & Anne E Carpenter' title='Biological imaging software tools' journal='Nature Methods' year='2012' volume='9(7)' pages='697–710' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2084.html' %}
+{% include citation fn=5 doi='10.1038/nmeth.2084' %}
 
-{% include citation fn=6 content='journal' author='Preibisch S and Saalfeld S and Tomancak P' title='Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions' journal='Bioinformatics' year='2009' month='April' volume='25(11)' pages='1463-1465' pmid='19346324' url='http://bioinformatics.oxfordjournals.org/cgi/content/full/25/11/1463' %}
+{% include citation fn=6 doi='10.1093/bioinformatics/btp184' %}
 
-{% include citation fn=7 content='journal' author='Hegge S and Kudryashev M and Smith A and Frischknecht F' title='Automated classification of <I>Plasmodium</I> sporozoite movement patterns reveals a shift towards productive motility during salivary gland infection' journal='Biotechnology Journal' year='2009' month='May' pmid='19455538' url='http://www3.interscience.wiley.com/journal/122393807/abstract' %}
+{% include citation fn=7 doi='10.1002/biot.200900007' %}
 
-{% include citation fn=8 content='journal' author='Benjamin Schmid , Johannes Schindelin , Albert Cardona , Mark Longair and Martin Heisenberg' title='A high-level 3D visualization API for Java and ImageJ' journal='BMC Bioinformatics' year='2010' volume='11' pages='274' url='http://www.biomedcentral.com/1471-2105/11/274/abstract' %}
+{% include citation fn=8 doi='10.1186/1471-2105-11-274' %}
 
-{% include citation fn=9 content='journal' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin and Pavel Tomancak' year='2010' title='Software for bead-based registration of selective plane illumination microscopy data' journal='Nature Methods' volume='7' pages='418-419' url='http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html' %}
+{% include citation fn=9 doi='10.1038/nmeth0610-418' %}
 
 {% include citation fn=10 doi='10.1523/JNEUROSCI.0186-10.2010' %}
 
@@ -169,23 +169,23 @@ section: Explore:Software:Fiji
 
 {% include citation fn=13 doi='10.1371/journal.pbio.1000502' %}
 
-{% include citation fn=14 content='journal' author='Verena Kaynig, Thomas Fuchs, Joachim M. Buhmann' title='Neuron Geometry Extraction by Perceptual Grouping in ssTEM Images' journal='CVPR' year='2010' url='http://kaynig.de/kaynig_cvpr2010.pdf' %}
+{% include citation fn=14 doi='10.1109/CVPR.2010.5540029' %}
 
-{% include citation fn=15 content='journal' author='Longair Mark, Baker DA, Armstrong JD.' title='Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes.' journal='Bioinformatics' year='2011' url='http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long' %}
+{% include citation fn=15 doi='10.1093/bioinformatics/btr390' %}
 
-{% include citation fn=16 content='journal' author='Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.' title='Integrated genetic and computation methods for in planta cytometry' journal='Nature Methods' year='2012' volume='advance online publication' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html' %}
+{% include citation fn=16 doi='10.1038/nmeth.1940' %}
 
 {% include citation fn=17 doi='10.1038/nmeth.2072' %}
 
-{% include citation fn=18 content='journal' author='Albert Cardona and Pavel Tomancak' title='Current challenges in open-source bioimage informatics' journal='Nature Methods' year='2012' volume='9(7)' pages='661–665' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2082.html' %}
+{% include citation fn=18 doi='10.1038/nmeth.2082' %}
 
 {% include citation fn=19 doi='10.1371/journal.pone.0038011' %}
 
-{% include citation fn=20 content='journal' author='Tobias Pietzsch, Stephan Preibisch, Pavel Tomancak, Stephan Saalfeld' title='ImgLib2 – Generic Image Processing in Java' journal='Bioinformatics' year='2012' volume='28(22)' pages='3009-3011' url='http://bioinformatics.oxfordjournals.org/content/28/22/3009' %}
+{% include citation fn=20 doi='10.1093/bioinformatics/bts543' %}
 
-{% include citation fn=21 content='journal' author='Pitrone P. G., Schindelin J., Stuyvenberg L., Preibisch S., Weber M.; Eliceiri K. W., Huisken J., Tomancak P.' title='OpenSPIM: an open access light sheet microscopy platform' journal='Nature Methods' volume='' number='' pages='' year='2013' url='http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2507.html' %}
+{% include citation fn=21 doi='10.1038/nmeth.2507' %}
 
-{% include citation fn=22 content='journal' author='Krull, A., Steinborn A., Ananthanarayanan V., Ramunno-Johnson D., Petersohn U., Tolic-Norrelykke I. M.' title='A divide and conquer strategy for the maximum likelihood localization of low intensity objects.' journal='Optics Express' volume='22' number='1' pages='210-228' year='2014' url='http://www.opticsinfobase.org/oe/fulltext.cfm?uri=oe-22-1-210&id=276396' %}
+{% include citation fn=22 doi='10.1364/OE.22.000210' %}
 
 {% include citation fn=23 doi='10.1016/j.jsb.2005.06.002' %}
 
