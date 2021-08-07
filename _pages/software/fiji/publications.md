@@ -147,7 +147,7 @@ section: Explore:Software:Fiji
 
 {% include citation fn=2 id='learn/flavors' %}
 
-{% include citation fn=3 content='conference' author='Schindelin J' title='Fiji Is Just ImageJ (batteries included)' year='2008' month='November' %}
+[^3]: Schindelin, J. (November 2008). *Fiji Is Just ImageJ (batteries included)*.  [Conference presentation] ImageJ User and Developer Conference, CRP Henri Tudor, Luxembourg.
 
 {% include citation fn=4 doi='10.1038/nmeth.1431' %}
 
@@ -195,20 +195,18 @@ section: Explore:Software:Fiji
 
 {% include citation fn=26 doi='10.1016/j.jsb.2009.03.017' %}
 
-[^27]: J. A. Helmuth and I. F. Sbalzarini. [Deconvolving active contours for fluorescence microscopy images](http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf), In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.
-
 {% include citation fn=28 doi='10.1038/nprot.2014.037' %}
 
 {% include citation fn=29 doi='10.1109/TIP.2012.2192129' %}
 
 {% include citation fn=30 doi='10.1016/j.jsb.2009.03.017' %}
 
-[^31]: J. A. Helmuth and I. F. Sbalzarini. [Deconvolving active contours for fluorescence microscopy images](http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf), In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.
+{% include citation fn=31 doi='10.1007/978-3-642-10331-5_51' %}
 
 {% include citation fn=32 doi='10.1186/1471-2105-14-349' %}
 
 {% include citation fn=33 doi='10.1186/1471-2105-11-372' %}
 
-[^34]: Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. [Neuronal morphometry directly from bitmap images](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html), *Nature Methods* 11(10): 982–984, 2014
+{% include citation fn=34 doi='10.1038/nmeth.3125' %}
 
-[^35]: Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, [TrackMate: An open and extensible platform for single-particle tracking](http://www.sciencedirect.com/science/article/pii/S1046202316303346), *Methods*, Available online 3 October 2016, ISSN 1046-2023.
+{% include citation fn=35 doi='10.1016/j.ymeth.2016.09.016' %}
