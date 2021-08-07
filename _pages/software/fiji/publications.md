@@ -111,7 +111,7 @@ section: Explore:Software:Fiji
 
 <!-- -->
 
--   The globally optimal [Squassh](/plugins/squassh) segmentation algorithm available in the [MOSAICsuite](/plugins/mosaicsuite) plugin includes cutting-edge developments from computer vision as described in Paul, Cardinale, and Sbalzarini (2013[^25]). It optionally also corrects for the microscope PSF, providing deconvolving segmentation as described in Helmuth et al. (2009[^26]) and in Helmuth and Sbalzarini (2009[^27])
+-   The globally optimal [Squassh](/plugins/squassh) segmentation algorithm available in the [MOSAICsuite](/plugins/mosaicsuite) plugin includes cutting-edge developments from computer vision as described in Paul, Cardinale, and Sbalzarini (2013[^25]). It optionally also corrects for the microscope PSF, providing deconvolving segmentation as described in Helmuth et al. (2009[^26]) and in Helmuth and Sbalzarini (2009[^30])
 
 <!-- -->
 
@@ -194,6 +194,8 @@ section: Explore:Software:Fiji
 {% include citation fn=25 doi='10.1007/s11263-013-0615-2' %}
 
 {% include citation fn=26 doi='10.1016/j.jsb.2009.03.017' %}
+
+{% include citation fn=27 doi='10.1038/nprot.2014.037' %}
 
 {% include citation fn=28 doi='10.1038/nprot.2014.037' %}
 
