@@ -86,17 +86,18 @@ for technical details. For now, if you want to have line numbers, use the
 [Embedding external code](#embedding-external-code) approach below.
 
 ## Making code snippets executable and editable
+
 By enabling the `imjoy` extension, you can make your code snippets executable and editable.
 It makes wiki pages more interactive, thus suited for building demos and tutorials.
 Currently, it support ImageJ macro and ImJoy plugin scripts.
 
 To enable it, you need to:
  1. add `imjoy` to `extensions` in the [front matter](/editing#add-the-pages-front-matter) of your page;
- 2. Add a HTML comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
+ 2. add a HTML comment `<!-- ImJoyPlugin: { ... } -->` before your code block. Inside the `{}` you can pass settings for setting up the ImJoy plugin.
 
-Here is an example for making a ImageJ macro code snippet executable.
+Here is an example for making an ImageJ macro code snippet executable.
 
-First, enable the `imjoy` extension in the begining of your page:
+First, enable the `imjoy` extension in the beginning of your page:
 ```yaml
 ---
 title: My Awesome Page
@@ -109,13 +110,13 @@ Let's say you have the following macro:
 print("hello world");
 ```
 
-To make it executable, you just need to add a HTML comment:
-````markdown
+To make it executable, you just need to add an HTML comment:
+~~~markdown
 <!-- ImJoyPlugin: { "type": "macro"} -->
 ```javascript
 print("hello world");
 ```
-````
+~~~
 
 For more detailed instructions about using ImageJ macro with ImageJ.JS, please refer to [ImageJ.JS](/software/imagej-js). 
 
