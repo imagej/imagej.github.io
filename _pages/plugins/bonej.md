@@ -285,7 +285,7 @@ A 3D image.
 -   Supports multi-point ROIs.
 -   Plug-in cancels if an ellipsoid can't be found, instead of reporting invalid results.
 
-## Fit sphere (WIP)
+## Fit sphere
 
 Menu path {% include bc path="Plugins | BoneJ | Fit sphere" %}.
 
