@@ -32,7 +32,8 @@ After the downloads have finished, close and restart Fiji.
 
 Menu path {% include bc path="Plugins | BoneJ | Analyse skeleton" %}.
 
-This plug-in simply includes [AnalyzeSkeleton](/plugins/analyze-skeleton) in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [Skeletonize3D](/plugins/skeletonize3d) if needed.
+This plug-in simply includes [
+Skeleton](/plugins/analyze-skeleton) in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [Skeletonize3D](/plugins/skeletonize3d) if needed.
 
 #### Suitable images
 
@@ -155,7 +156,7 @@ The measures are reported separately for each 2D/3D subspace in the image, i.e. 
 
 ## Calibrate SCANCO (WIP)
 
-Menu path {% include bc path="Plugins | BoneJ | Analyze | Calibrate SCANCO" %}
+Menu path {% include bc path="Plugins | BoneJ | Analyse | Calibrate SCANCO" %}
 
 Applies the *mg HA/ccm* pixel value calibration, i.e. *HU* or Hounfield unit calibration stored in the .isq format metadata to the image.
 
@@ -504,7 +505,7 @@ A 2D image.
 
 ## Particle Analyser
 
-Menu path: {% include bc path="Plugins | BoneJ | Analyze | Particle Analyser" %}
+Menu path: {% include bc path="Plugins | BoneJ | Analyse | Particle Analyser" %}
 
 Particle Analyser performs connected-components labelling and particle analysis on binary 3D image stacks. It scales at about _O_(n) making it efficient on large images (200+ GB images have been tested by users so far) and runs at about 5-10 s/GB depending on particle number and geometry, and machine configuration. 
 
