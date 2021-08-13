@@ -2,7 +2,7 @@
 
 # {{include.title}}
 
-![{{include.title}}]({{include.image}})
+{%- include img title=include.title src=include.image width=include.width -%}
 
 ## {{include.section}}
 
