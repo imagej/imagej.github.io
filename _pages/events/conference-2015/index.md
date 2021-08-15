@@ -1,5 +1,8 @@
 ---
 title: Conference 2015
+section: Explore:Events
+nav-links: true
+nav-title: Overview
 ---
 
 {% include events/conference title='ImageJ 2015 User & Developer Conference' section='5th ImageJ User & Developer Conference' dates='3 - 4 September 2015' image='/media/news/imagej-conference-2015.jpg' location=' [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA' %}

@@ -1,6 +1,8 @@
 ---
-mediawiki: Conference_2015_Program
 title: Conference 2015 Program
+section: Explore:Events
+nav-links: true
+nav-title: Program
 ---
 
 This page describes the full program for the [2015 ImageJ User & Developer Conference](/events/conference-2015).

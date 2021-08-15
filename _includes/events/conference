@@ -1,8 +1,4 @@
-<div markdown="1">
-
-# {{include.title}}
-
-{%- include img title=include.title src=include.image width=include.width -%}
+{% include img alt=include.title src=include.image width=include.width %}
 
 ## {{include.section}}
 
@@ -10,8 +6,6 @@
 - **Dates:** {{include.dates}}
 
 See the [{{include.title}} web site]({{include.link}}) for details!
-
-</div>
 
 {%- comment -%}
 # vi:syntax=liquid

@@ -1,6 +1,8 @@
 ---
-mediawiki: Conference_2015_Hackathon
 title: Conference 2015 Hackathon
+section: Explore:Events
+nav-links: true
+nav-title: Hackathon
 ---
 
 There was a [hackathon](/events/hackathons) in Madison following the ImageJ [Conference 2015](/events/conference-2015).
