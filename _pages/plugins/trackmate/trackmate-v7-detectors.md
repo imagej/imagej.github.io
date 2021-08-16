@@ -80,7 +80,7 @@ It is an important paramter that we describe here.
 Object contours are polygon that wraps around individual objects, initially following individual pixels.
 For instance, the initial output of the threshold detector for one spot looks like this:
 
-{% include img src='/media/plugins/trackmate/trackmate-spot-contour-pixel.png' width='400'  %}
+{% include img src='/media/plugins/trackmate/trackmate-spot-contour-pixel.png' width='400'  align='center'  %}
 
 Notice that the polygon follows exactly the contour of all pixels that are above the threshold.
 For instance the leftmost pixel on the image above is has 3 segments for its border.
@@ -89,7 +89,7 @@ And all of the contour segments run along pixels horizontally or vertically.
 Simplifying contour will yield a simplifed shape of the object, that interpolate betwen pixels and return a smoother shape with fewer segments. 
 The same algorithm running with the `Simplify contours` parameter selected will yield the following:
 
-{% include img src='/media/plugins/trackmate/trackmate-spot-contour-simplified.png' width='400' %}
+{% include img src='/media/plugins/trackmate/trackmate-spot-contour-simplified.png' width='400' align='center'  %}
 
 Simplifying contour generate TrackMate files that are smaller in disk space.
 More importantly, they yield more accurate morphological features.
@@ -100,7 +100,7 @@ Simplifying contours somewhat tries to follow the object contour as if it would 
 But it works well only if the objects are large enough.
 For small objects, below typically 10 pixels, the simplification generates inaccurate contours:
 
-{% include img src='/media/plugins/trackmate/trackmate-spot-contour-small.png' width='400' %}
+{% include img src='/media/plugins/trackmate/trackmate-spot-contour-small.png' width='400' align='center' %}
 
 So as a rule of thumb we recommend the following:
 
