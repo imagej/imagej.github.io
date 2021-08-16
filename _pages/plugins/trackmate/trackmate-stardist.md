@@ -26,7 +26,12 @@ We suggest that you test StarDist by itself just to make sure it runs after inst
 
 ## Usage and tutorial.
 
-TrackMate-StarDist ships two detectors that will appear in TrackMate. After installing TrackMate-StarDist and restarting Fiji, these two detectors will be integrated in TrackMate in a transparent manner. We describe how to use them in the  tutorial below.
+TrackMate-StarDist ships two detectors that will appear in TrackMate. After installing TrackMate-StarDist and restarting Fiji, these two detectors will be integrated in TrackMate in a transparent manner. We describe how to use them in the four tutorial below.
+They describe in order:
+1. Using TrackMate-StarDist on a single-channel image.
+2. Using TrackMate-StarDist on a multi-channel image and exploiting the intensity information.
+3. Using TrackMate-StarDist with a custom Deep-Learning model.
+4. Using TrackMate-StarDist to segment a 3D image using a slice-by-slice approach.
 
 ### StarDist detector with builtin versatile nuclei model on a single channel image.
 
@@ -314,11 +319,74 @@ Launch TrackMate. In the second panel titled **Select a detector**, choose **Sta
   
   {% include img name="Tracking result" src="/media/plugins/trackmate/trackmate-stardist-custom-tracking-result.gif" width="800" align="center" %}
 
+
+### Generation of 3D labels by tracking 2D labels using TrackMate.
+
+In this tutorial, you will learn how to generate 3D labels using TrackMate.
+The segmentation of 3D objects can be very heard. 
+Deep-Learning proves to be very efficient but there are still many models and algorithms that only work for the 2D case.
+In this tutorial, we "hack" TrackMate to segment 3D objects using the 2D StarDist segmentation algorithm.
+We trick TrackMate into thinking a 3D image is a 2D movie over time. 
+We track the fake 2D objects in Z, and use the resulting track information to rebuild the 3D segmentation of objects.
+The following step-by-step tutorial shows how to do this.
+
+
+- Open Fiji.
+- Open the `Spheroid-3D.tif` image in Fiji. This image is a Z stack of MCF10DCIS.com 3D spheroids that have been stained with DAPI to visualise their nuclei.
+- Open TrackMate  {% include bc path='Plugins>Tracking>TrackMate' %}. As the image is a 3D Z stack, TrackMate will ask you to swap the Z and T dimensions. This is what we want; click `Yes`.
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-1.png" width='300' align="center" %}
+
+- The start panel will open, showing information about the image dimensions. Click `Next`.
+- The `Select a detector` panel opens. From the pull-down menu select the `StarDist detector`. Click `Next`.
+- A panel with a description of the StarDist detector opens.  By clicking the `Preview` button, you can test the StarDist detector on the current frame. When you are happy with the result, click `Next`.
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-2.png" width='200' %}
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-3.png" width='350' %}
+
+- The detector will detect all nuclei in the selected channel for all time frames. This can take a few minutes.
+- When the progress bar has reached the end, click `Next`.
+- A panel to filter the detected spots according to their quality opens (more information about this filtering can be found [here](https://imagej.net/plugins/trackmate/getting-started#initial-spot-filtering)). In this exercise, this part can be ignored. Click `Next`.
+
+- A panel to filter spots according to their properties (i.e. size, shape, location, or signal intensity) opens. In this exercise, do the following:
+  - Click on the green plus sign at the bottom of the panel - a filter appears at the top of the panel.
+  - Click on the pull-down menu and select `Area`. Here we will filter out the smallest detected objects. Make sure the `Above` button is selected.
+  - Drag the horizontal line (cyan dashed line) to value 31.47.
+  - Click on the green plus sign at the bottom of the panel again - a new filter appears.
+  - Click on the pull-down menu and select `Max intensity ch1`. Here we will filter out the objects that have low intensity. Make sure the `Above` button is selected. Drag the horizontal line (cyan dashed line) to value 45524.62.
+  - Click on `Next`.
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-4.png" width='300' align="center" %}
+
+- Next, a tracking panel opens. In this panel, you can select the methods for tracking objects. Here, we use the `LAP tracker`. Please select it from the pull-down menu, and click `Next`.
+- A panel to choose the LAP tracker settings opens. With this panel, you choose how to track the cells. First, with the `Frame to Frame linking` parameter, you give the maximum distance to link two objects between frames. Here use 4 microns. Next, you tell Trackmate how many spots can be missing and still be the same track. Tick the `Allow gap closing` box and add values: `Max distance`: 4 microns and `Max frame gap`: 3. Click `Next`.
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-5.png" width='300' align="center" %}
+
+- A Track filter panel opens. In this panel, you can remove tracks according to their properties (i.e., length, speed, or location). Here, we filter out the shortest tracks to remove possible artefacts. Similarly, as in the object filtering above, click the green plus sign to add a filter. Click the pull-down menu and select `Track duration` from the list. Make sure that the `Above` option is ticked and set the slider to 3.45. Click `Next`.
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-6.png" width='300' align="center" %}
+
+- A window with track visualization options opens. Here it is possible to edit track or object colours according to their properties. We don't need to use it in this exercise. Click on `Next`.
+- Click on Next again.
+- You should have reached the `Select an action` panel. In this panel, there is a possibility to do different actions. For this exercise, we will export a label image of the tracked objects. From the pull-down menu, select `Export label image` and click on `Execute`.
+* From the pop-up window, tick the box `Export only spots in tracks` to eliminate any object not linked to a track and click `OK`.
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-7.png" width='400' align="center" %}
+
+- The label image is now exported. Remember to change the dimensions back from T to Z in Fiji  {% include bc path='Image>Properties' %} and to save your image {% include bc path='File > Save as...' %}.
+- The label image can be viewed in 3D for instance using [FPBioimage](https://fpb.ceb.cam.ac.uk/), and further analysed using the [3D ImageJ Suite](/plugins/3d-imagej-suite/).
+
+{% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-8.png" width='250' align="center" %}
+
+
+
 ## Citations.
 
 If you use this detector for you research, please be so kind as to cite the StarDist and the TrackMate papers:
 
 {% include citation doi='10.1007/978-3-030-00934-2_30'%}
 
+_________________________________
 
 Dmitry Ershov, Joanna W. Pylvänäinen, Jean-Yves Tinevez - July 2021
