@@ -36,12 +36,18 @@ The StarDist plugin comes with a very efficient model that can segment nuclei im
 
 We use this model in the first StarDist detector. 
 
+In the first tutorial we will use a movie following the migration of cancer cells, labelled for their nuclei. 
+You can download it from Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5206107.svg)](https://doi.org/10.5281/zenodo.5206107)
+
+
 First launch Fiji and open the tutorial image in Fiji.
-We use here the "stardist-tutorial/data/builtin model/cells.tif", provided in the tutorial data.
+We use here the `P31-crop.tif` file, provided in the tutorial data.
 
 {% include img name="Cell images" src="/media/plugins/trackmate/trackmate-stardist-builtin-detector-image.png" align="center" %}
 
-Then launch TrackMate (_Plugins > Tracking > TrackMate_).
+Then launch TrackMate {% include bc path='Plugins>Tracking>TrackMate' %}.
 In the second panel titled **Select a detector**, you should see two new choices in the list, and on of them is **StarDist detector**. 
 {% include img name="TrackMate-StarDist builtin detector choice" src="/media/plugins/trackmate/trackmate-stardist-select-builtin-detector.png" align="center" %}
 
@@ -63,6 +69,9 @@ After that you follow through the next steps in TrackMate to segment all cells i
 Using the default tracker and default parameters each time we get this result:
 
 {% include video src="/media/plugins/trackmate/trackmate-stardist-results.mp4" width=800 align="center" %}
+
+It was simple and fast, which means that careful inspection for missed cell divisions and false links is on order.
+
 
 ### ERK signalling and motility assay with a multi-channel image.
 
@@ -281,8 +290,11 @@ You can also use a custom model, that you have trained yourself and packaged as 
 We recommend using the dedicated notebooks on the _ZeroCostDL4Mic_ platform to do so. Check the [ZCDL4M wiki page dedicated to training StarDist](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki/Stardist) to generate such a model.
 
 In this tutorial we will track T cells imaged in bright-field with a model we trained ourselves. 
+You can find the image and the model (packaged as a zip file) on Zenodo:
 
-First open the tutorial image called "stardist-tutorial/data/custom model/T cells/T_cells.tif" in Fiji  provided in the tutorial data.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5206119.svg)](https://doi.org/10.5281/zenodo.5206119)
+
+First open the tutorial image called `TCellsMigration.tif` in Fiji  provided in the tutorial data.
 
 {% include img name="T cells" src="/media/plugins/trackmate/trackmate-stardist-custom-detector-2-image.png" width="800" align="center" %}
 
@@ -290,7 +302,7 @@ Launch TrackMate. In the second panel titled **Select a detector**, choose **Sta
 
 {% include img name="Custom detector" src="/media/plugins/trackmate/trackmate-stardist-select-custom-detector2.png" width="800" align="center" %}
 
-- In the **Custom model file** text field, you need to enter the path to a StarDist model packaged as a zip file (or use the **Browse** button to navigate to the folder).
+- In the **Custom model file** text field, you need to enter the path to a StarDist model packaged as a zip file (or use the **Browse** button to navigate to the folder). In the tutorial dataset the file is called `StarDistModel-TCellsBF.zip`.
 - **Score threshold** correspond to the threshold on the probability map to identify object. It accepts values from 0 to 1.
 - **Overlap threshold** correspond to the threshold used in non-maxima suppression step used to separate touching/overlapping objects; it accepts values from 0 to 1.
 
