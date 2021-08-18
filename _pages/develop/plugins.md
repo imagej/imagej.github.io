@@ -43,11 +43,11 @@ public class MyService implements Service { }
 
 @Plugin(type=SpecialService.class)
 public class SpecialService implements Service { }
+```
 
 {% include quiz q='Which of these plugins would we expect back if asking the [Context](/develop/plugins#the-context) for plugins of type `Service` plugin?' a='It would give back both the `MyService` and `SpecialService` plugins, since `SpecialService` is a subclass of `Service`.' %}
 
 {% include quiz q='What if we asked for plugins of type `SpecialService`?' a='It would just return the `SpecialService` plugin, since `MyService` is **not** a `SpecialService`.' %}
-```
 
 ### Plugin priority
 
@@ -61,9 +61,10 @@ public class MyService implements Service { }
 
 @Plugin(priority=224)
 public class SpecialService implements Service { }
+```
 
 {% include quiz q='Which plugin would be returned first if we asked the Context for a `Service` plugin?' a='The `SpecialService` plugin would come back first. If we look at the `Priority` class we see that `HIGH` simply [resolves to 100](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/Priority.java#L54-L55).' %}
-```
+
 We can also use *relative priorities* when referring to particular priority constants. This is a nice way to give the best chance that sorting will remain the same even if these constants change in the future:
 
 ```java
