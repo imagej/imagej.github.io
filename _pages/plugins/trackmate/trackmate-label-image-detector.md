@@ -21,7 +21,9 @@ If you have only one channel the preview look like this:
 
 ## Step-by-step tutorial.
 
-TODO! Link to the source image.
+First download the tutorial dataset on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5221424.svg)](https://doi.org/10.5281/zenodo.5221424)
 
 - Open Fiji.
 - Open your image in Fiji.
