@@ -330,6 +330,11 @@ We trick TrackMate into thinking a 3D image is a 2D movie over time.
 We track the fake 2D objects in Z, and use the resulting track information to rebuild the 3D segmentation of objects.
 The following step-by-step tutorial shows how to do this.
 
+First download the dataset from Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5220610.svg)](https://doi.org/10.5281/zenodo.5220610)
+
+The dataset onctains the raw data but also the intermediate label images in case you want to play with them directly. 
 
 - Open Fiji.
 - Open the `Spheroid-3D.tif` image in Fiji. This image is a Z stack of MCF10DCIS.com 3D spheroids that have been stained with DAPI to visualise their nuclei.
