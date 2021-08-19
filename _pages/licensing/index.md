@@ -226,38 +226,46 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></p>
       </td>
-      <td rowspan="3">
+      <td rowspan="2">
         <p><a href="/licensing/gpl">GPL</a></p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>✅</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>❌</p>
       </td>
-      <td rowspan="3" class="yesno">
+      <td rowspan="2" class="yesno">
         <p>❌</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
+      </td>
+      <td>
+        <p><a href="https://github.com/trakem2/trakem2/blob/master/README">Readme</a></p>
       </td>
     </tr>
     <tr>
@@ -267,13 +275,38 @@ The following table summarizes the dominant license of each project's components
       <td>
         <p><a href="https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE.txt">License</a></p>
       </td>
-    </tr>
-    <tr>
       <td>
-        <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
+        <p><a href="/licensing/bsd">BSD-2</a><sup>‡</sup></p>
       </td>
-      <td>
-        <p><a href="https://github.com/trakem2/trakem2/blob/master/README">Readme</a></p>
+      <td class="yesno">
+        <p>❌</p>
+      </td>
+      <td class="yesno">
+        <p>✅</p>
+      </td>
+      <td class="yesno">
+        <p>❌</p>
+      </td>
+      <td class="yesno">
+        <p>✅</p>
+      </td>
+      <td class="yesno">
+        <p>✅</p>
+      </td>
+      <td class="yesno">
+        <p>✅</p>
+      </td>
+      <td class="yesno">
+        <p>-</p>
+      </td>
+      <td class="yesno">
+        <p>✅</p>
+      </td>
+      <td class="yesno">
+        <p>❌</p>
+      </td>
+      <td class="yesno">
+        <p>-</p>
       </td>
     </tr>
     <tr>
@@ -397,8 +430,10 @@ The following table summarizes the dominant license of each project's components
 </table>
 {:/}
 
-<span>\*</span> See [choosealicense.com](http://choosealicense.com/) for details.  
-<sup>†</sup> See note below for details.
+<span>\*</span> See [choosealicense.com](http://choosealicense.com/) for details.\\
+<sup>†</sup> See note below for details.\\
+<sup>‡</sup> BigDataViewer libraries are licensed BSD-2; the BigDataViewer plugin for Fiji
+  <a href="https://github.com/bigdataviewer/bigdataviewer_fiji/blob/master/LICENSE.txt">is GPLv3</a>.
 
 ## Exceptions
 
