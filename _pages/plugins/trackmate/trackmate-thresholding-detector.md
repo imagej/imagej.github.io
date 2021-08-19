@@ -12,7 +12,9 @@ This page describes a detector for [TrackMate](/plugins/trackmate/index) that cr
 
 ## Step-by-step tutorial.
 
-TODO! Link to the demo image.
+Download the tutorial dataset from Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5220796.svg)](https://doi.org/10.5281/zenodo.5220796)
 
 - Open Fiji.
 - Open your image in Fiji.
