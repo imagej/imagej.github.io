@@ -22,7 +22,7 @@ The following component layers are part of the **[SciJava component collection](
 -   [ImgLib2](/libs/imglib2) - core libraries for N-dimensional image processing.
 -   [SCIFIO](/libs/scifio) - core libraries for N-dimensional image I/O.
 -   [ImageJ2](/software/imagej2) - core libraries and application for N-dimensional image processing.
--   [Fiji](/software/fiji) - "batteries-included" distribution of ImageJ, bundling a lot of plugins which facilitate scientific image analysis.
+-   [Fiji](/software/fiji) - "batteries-included" distribution of ImageJ and ImageJ2, bundling a lot of plugins which facilitate scientific image analysis.
 -   [BigDataViewer](/plugins/bdv) - re-slicing browser and Fiji plugin for terabyte-sized multi-view image sequences
 -   [TrakEM2](/plugins/trakem2) - Fiji plugin suite for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 -   [Bio-Formats](/formats/bio-formats) - libraries and ImageJ plugins for life sciences image format I/O.
@@ -111,7 +111,7 @@ Whereas [ImageJ](/software/imagej) is a {% include wikipedia title='Singleton pa
 
 Here are a few of SciJava Common's major core services:
 
--   **{% include javadoc project='SciJava' package='org/scijava/app' class='AppService' %}** - Tracks software applications (SCIFIO, ImageJ, etc.) present in the context.
+-   **{% include javadoc project='SciJava' package='org/scijava/app' class='AppService' %}** - Tracks software applications (SCIFIO, ImageJ2, etc.) present in the context.
 -   **{% include javadoc project='SciJava' package='org/scijava/display' class='DisplayService' %}** - Tracks available displays, as well as the active display, and provides the means to create new displays to visualize data.
 -   **{% include javadoc project='SciJava' package='org/scijava/event' class='EventService' %}** - Publishes events to the {% include wikipedia title='Publish%E2%80%93subscribe pattern' text='event bus'%}, and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
 -   **{% include javadoc project='SciJava' package='org/scijava/io' class='IOService' %}** - General tools for opening and saving data within the context.
@@ -127,9 +127,9 @@ Here are a few of SciJava Common's major core services:
 -   **{% include javadoc project='SciJava' package='org/scijava/tool' class='ToolService' %}** - Tracks available tools—logic binding user input to behavior—as well as the active tool (selected on the toolbar).
 -   **{% include javadoc project='SciJava' package='org/scijava/ui' class='UIService' %}** - Discovers and launches a user interface for interacting with ImageJ.
 
-#### ImageJ services
+#### ImageJ2 services
 
-Some of the services which ImageJ adds:
+Some of the services which ImageJ2 adds:
 
 -   **{% include javadoc package='net/imagej' class='DatasetService' %}** - Tools for creating and managing image data.
 -   **{% include javadoc package='net/imagej/display' class='ImageDisplayService' %}** - Similar to {% include javadoc package='org/scijava/display' class='DisplayService' %}, but specifically for {% include javadoc package='net/imagej/display' class='ImageDisplay' %}s.
