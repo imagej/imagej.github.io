@@ -31,7 +31,7 @@ That way when there are plenty of circles that are the same size, we can draw th
 
 ## Installation
 
-This plugin is available from the [PTBIOP Update Site](/list-of-update-sites) This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
+This plugin is available from the [PTBIOP Update Site](/list-of-update-sites). This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 ## Use
 
