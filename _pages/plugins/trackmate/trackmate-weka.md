@@ -64,4 +64,5 @@ Looking at the tracking result shown in the movie below, the focal adhesions loc
 
 {% include img src='/media/plugins/trackmate/trackmate-weka-detector-image6.gif' align='center'  %}
 
-
+__________________
+Minh-Son Phan, August 2021
