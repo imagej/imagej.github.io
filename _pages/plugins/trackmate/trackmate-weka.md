@@ -16,15 +16,23 @@ For this module to work, you just need to install the TrackMate module. Subscrib
 
 ## Tutorial: Tracking focal adhesions.
 
-Trainable Weka Segmentation is a machine learning pixel-based segmentation, a classifier for the objects of interest in the image is trained from user annotation, the classifier is then used for segmentation. The following image is employed to demonstrate the usage of the Weka classifier within TrackMate and can be downloaded from <span style="text-decoration:underline;">here</span>.
+Trainable Weka Segmentation is a machine learning pixel-based segmentation, a classifier for the objects of interest in the image is trained from user annotation, the classifier is then used for segmentation. The following image is employed to demonstrate the usage of the Weka classifier within TrackMate and can be downloaded from Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5226842.svg)](https://doi.org/10.5281/zenodo.5226842)
+
+The movie included show human dermal microvascular blood endothelial cells expressing Paxillin, imaged with a spinning-disk confocal microscope.
 
 {% include img src='/media/plugins/trackmate/trackmate-weka-detector-image8.png' align='center'  %}
 
-The [name?] cell was imaged by [microscope?], the goal is to track the focal adhesions staying at the cell periphery. They are in general brighter than the cell body and the image background, but with a high variance in their intensities. 
+The goal is to track the focal adhesions staying at the cell periphery. 
+They are in general brighter than the cell body and the image background, but with a high variance in their intensities. 
 
 ### Weka classifier.
 
-We provide <span style="text-decoration:underline;">here</span> an already trained Weka classifier for detection of the focal adhesions. Only the first image frame was extracted to do the annotation. The default features plus the Gabor filter were selected for training. The figure below illustrates the Weka GUI with two classes: one in red for focal adhesions and one in green for the others (cell body, image background). More details on training the classifier can be found from on the [plugin documentation page](/plugins/tws).
+We provide in the tutorial dataset an already trained Weka classifier for detection of the focal adhesions. 
+Only the first image frame was extracted to do the annotation. The default features plus the Gabor filter were selected for training. 
+The figure below illustrates the Weka GUI with two classes: one in red for focal adhesions and one in green for the others (cell body, image background). 
+More details on training the classifier can be found from on the [plugin documentation page](/plugins/tws).
 
 {% include img src='/media/plugins/trackmate/trackmate-weka-detector-image5.png' align='center'  width='400' %}
 
