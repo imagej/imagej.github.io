@@ -323,7 +323,7 @@ Launch TrackMate. In the second panel titled **Select a detector**, choose **Sta
 ### Generation of 3D labels by tracking 2D labels using TrackMate.
 
 In this tutorial, you will learn how to generate 3D labels using TrackMate.
-The segmentation of 3D objects can be very heard. 
+The segmentation of 3D objects can be very hard. 
 Deep-Learning proves to be very efficient but there are still many models and algorithms that only work for the 2D case.
 In this tutorial, we "hack" TrackMate to segment 3D objects using the 2D StarDist segmentation algorithm.
 We trick TrackMate into thinking a 3D image is a 2D movie over time. 
