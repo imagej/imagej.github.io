@@ -200,7 +200,7 @@ Status: maintenance active
 
 # Filter Check
 
-Purpose: This plugin enables you to test a certain range of radii of a specified image filter in one step. This shoud facilitate a better decision on a suitable filter for your processing purpose.
+Purpose: This plugin enables you to test a certain range of radii of a specified image filter in one step. This shoud facilitate a better decision on a suitable filter for your processing purpose. A small [hands on descrition](https://youtu.be/YpFhqKfnn-g?t=1765) is shown as part of the introductory video to basic image processing at the IJ conference in Madison 2015.
 
 How to: Choose a filter method from the drop down menu, key in a starting and an end radius. The image will be filtered in individual integer steps between the start and stop radius and presented in an image stack containing all the filtered images. The filter can also be applied to only a ROI. This is recommended for filters which are cost intensive, like the "Gaussian Weighted Median". The parameter setting is only needed for the "Bilateral Filter" (range radius) , "Mean Shift Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
