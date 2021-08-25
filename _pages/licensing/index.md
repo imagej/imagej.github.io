@@ -21,410 +21,208 @@ For an introduction to OSS licensing, see
 The following table summarizes the dominant license of each project's components.
 
 {::nomarkdown}
-<table>
+<style>
+  table.licensing td, table.licensing th {
+    text-align: center;
+  }
+  table.licensing td {
+    vertical-align: middle;
+  }
+  table.licensing th {
+    vertical-align: bottom;
+  }
+  .vertical {
+    min-height: 10em;
+    max-height: 10em;
+    height: 10em;
+    min-width: 1em;
+    width: 1em;
+    max-width: 1em;
+    vertical-align: middle !important;
+    text-align: left; !important;
+    padding: 0;
+    margin: 0;
+  }
+  .vertical p {
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    text-align: left !important;
+    vertical-align: middle !important;
+    min-width: 10em;
+    max-width: 10em;
+    line-height: 1em;
+    margin-left: -4em;
+    padding-left: 0.5em;
+  }
+</style>
+<table class="licensing">
   <tbody>
     <tr>
-      <td colspan=4 style="text-align: center;">
-        <p><strong>Basics</strong></p>
-      </td>
-      <td colspan=3>
-        <p><strong>Required*</strong></p>
-      </td>
-      <td colspan=7>
-        <p><strong>Permitted*</strong></p>
-      </td>
+      <th colspan=4 style="text-align: center">Basics</th>
+      <th colspan=3>Required*</th>
+      <th colspan=7>Permitted*</th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Logo</strong></p>
-      </td>
-      <td>
-        <p><strong>Project</strong></p>
-      </td>
-      <td>
-        <p><strong>License</strong></p>
-      </td>
-      <td>
-        <p><strong>Type</strong></p>
-      </td>
-      <td style="vertical-align: middle">
-        <p><img src="/media/licensing/licensing-disclose-source.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-license-and-copyright-notice.png" width="22px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-state-changes.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-commercial-use.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-distribution.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-modification.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-patent-grant.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-private-use.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-hold-liable.png" width="10px"></p>
-      </td>
-      <td>
-        <p><img src="/media/licensing/licensing-sublicensing.png" width="10px"></p>
-      </td>
+      <th>Logo</th>
+      <th>Project</th>
+      <th>License</th>
+      <th>Type</th>
+      <th class="vertical"><p>Disclose source</p></th>
+      <th class="vertical"><p>License and<br>copyright notice</p></th>
+      <th class="vertical"><p>State changes</p></th>
+      <th class="vertical"><p>Commercial use</p></th>
+      <th class="vertical"><p>Distribution</p></th>
+      <th class="vertical"><p>Modification</p></th>
+      <th class="vertical"><p>Patent grant</p></th>
+      <th class="vertical"><p>Private use</p></th>
+      <th class="vertical"><p>Hold liable</p></th>
+      <th class="vertical"><p>Sublicensing</p></th>
     </tr>
     <tr>
-      <td colspan=14 style="text-align: center;">
-        <p><strong><a href="/software/imagej">ImageJ</a></strong></p>
-      </td>
+      <th colspan=14 style="text-align: center"><a href="/software/imagej">ImageJ</a></th>
     </tr>
     <tr>
+      <td><img src="/media/icons/imagej.png" width="48"></td>
+      <th><a href="/software/imagej">ImageJ</a></th>
+      <td><a href="https://imagej.nih.gov/ij/disclaimer.html">Disclaimer</a></td>
       <td>
-        <p><img src="/media/icons/imagej.png" width="48"></p>
+        <a href="/licensing/public-domain">Public</a><br>
+        <a href="/licensing/public-domain">Domain</a><sup>†</sup>
       </td>
-      <td>
-        <p><strong><a href="/software/imagej">ImageJ</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://imagej.nih.gov/ij/disclaimer.html">Disclaimer</a></p>
-      </td>
-      <td>
-        <p><a href="/licensing/public-domain">Public</a><br>
-        <a href="/licensing/public-domain">Domain</a><sup>†</sup></p>
-      </td>
-      <td>
-        <p>❌</p>
-      </td>
-      <td>
-        <p>❌</p>
-      </td>
-      <td>
-        <p>❌</p>
-      </td>
-      <td>
-        <p>✅</p>
-      </td>
-      <td>
-        <p>✅</p>
-      </td>
-      <td>
-        <p>✅</p>
-      </td>
-      <td>
-        <p>-</p>
-      </td>
-      <td>
-        <p>✅</p>
-      </td>
-      <td>
-        <p>❌</p>
-      </td>
-      <td>
-        <p>✅</p>
-      </td>
+      <td style="text-align: center">❌</td>
+      <td>❌</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>-</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>✅</td>
     </tr>
     <tr>
-      <td colspan=14 style="text-align: center">
-        <p><strong><a href="/develop/architecture">ImageJ2 software stack</a></strong></p>
-      </td>
+      <th colspan=14 style="text-align: center"><a href="/develop/architecture">ImageJ2 software stack</a></th>
     </tr>
     <tr>
-      <td>
-        <p><img src="/media/icons/scijava.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/libs/scijava">SciJava</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/scijava/scijava-common/blob/master/LICENSE.txt">License</a></p>
-      </td>
-      <td rowspan="4">
-        <p><a href="/licensing/bsd">BSD-2</a></p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>-</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="4" class="yesno">
-        <p>-</p>
-      </td>
+      <td><img src="/media/icons/scijava.png" width="48"></td>
+      <th><a href="/libs/scijava">SciJava</a></th>
+      <td><a href="https://github.com/scijava/scijava-common/blob/master/LICENSE.txt">License</a></td>
+      <td rowspan="4"><a href="/licensing/bsd">BSD-2</a></td>
+      <td rowspan="4">❌</td>
+      <td rowspan="4">✅</td>
+      <td rowspan="4">❌</td>
+      <td rowspan="4">✅</td>
+      <td rowspan="4">✅</td>
+      <td rowspan="4">✅</td>
+      <td rowspan="4">-</td>
+      <td rowspan="4">✅</td>
+      <td rowspan="4">❌</td>
+      <td rowspan="4">-</td>
     </tr>
     <tr>
-      <td>
-        <p><img src="/media/icons/imglib2.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/libs/imglib2">ImgLib2</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/imglib/imglib2/blob/master/LICENSE.txt">License</a></p>
-      </td>
+      <td><img src="/media/icons/imglib2.png" width="48"></td>
+      <th><a href="/libs/imglib2">ImgLib2</a></th>
+      <td><a href="https://github.com/imglib/imglib2/blob/master/LICENSE.txt">License</a></td>
     </tr>
     <tr>
-      <td>
-        <p><img src="/media/icons/imagej2.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/software/imagej2">ImageJ2</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/imagej/imagej/blob/master/LICENSE.txt">License</a></p>
-      </td>
+      <td><img src="/media/icons/imagej2.png" width="48"></td>
+      <th><a href="/software/imagej2">ImageJ2</a></th>
+      <td><a href="https://github.com/imagej/imagej/blob/master/LICENSE.txt">License</a></td>
     </tr>
     <tr>
-      <td>
-        <p><img src="/media/icons/scifio.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/libs/scifio">SCIFIO</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/scifio/scifio/blob/master/LICENSE.txt">License</a></p>
-      </td>
+      <td><img src="/media/icons/scifio.png" width="48"></td>
+      <th><a href="/libs/scifio">SCIFIO</a></th>
+      <td><a href="https://github.com/scifio/scifio/blob/master/LICENSE.txt">License</a></td>
     </tr>
     <tr></tr>
     <tr>
-      <td colspan="14" style="text-align: center;">
-        <p><strong><a href="/software/fiji">Fiji projects</a></strong></p>
+      <th colspan="14" style="text-align: center"><a href="/software/fiji">Fiji projects</a></th>
+    </tr>
+    <tr>
+      <td rowspan="3"><img src="/media/icons/fiji.png" width="48"></td>
+      <th><a href="/software/fiji">Fiji</a></th>
+      <td><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></td>
+      <td rowspan="2"><a href="/licensing/gpl">GPL</a></td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">✅</td>
+      <td rowspan="2">❌</td>
+      <td rowspan="2">❌</td>
+    </tr>
+    <tr>
+      <th><a href="/plugins/trakem2">TrakEM2</a></th>
+      <td><a href="https://github.com/trakem2/trakem2/blob/master/README">Readme</a></td>
+    </tr>
+    <tr>
+      <th><a href="/plugins/bdv">BigDataViewer</a></th>
+      <td><a href="https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE.txt">License</a></td>
+      <td><a href="/licensing/bsd">BSD-2</a><sup>‡</sup></td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>-</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th colspan="14" style="text-align: center"><a href="/libs/scijava">SciJava consortium</a></th>
+    </tr>
+    <tr>
+      <td><img src="/media/icons/cellprofiler.png" width="48"></td>
+      <th><a href="/software/cellprofiler">CellProfiler</a></th>
+      <td><a href="https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE">License</a></td>
+      <td><a href="/licensing/bsd">BSD-3</a></td>
+      <td rowspan="1">❌</td>
+      <td rowspan="1">✅</td>
+      <td rowspan="1">❌</td>
+      <td rowspan="1">✅</td>
+      <td rowspan="1">✅</td>
+      <td rowspan="1">✅</td>
+      <td>-</td>
+      <td rowspan="1">✅</td>
+      <td rowspan="1">❌</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><img src="/media/icons/bio-formats.png" width="48"></td>
+      <th><a href="/formats/bio-formats">Bio-Formats</a></th>
+      <td>
+        <a href="https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt">License</a><br>
+        <a href="http://openmicroscopy.org/site/about/licensing-attribution">Info</a>
+      </td>
+      <td rowspan="3"><a href="/licensing/gpl">GPL</a></td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">✅</td>
+      <td rowspan="3">❌</td>
+      <td rowspan="3">❌</td>
+    </tr>
+    <tr>
+      <td><img src="/media/icons/omero.png" width="48"></td>
+      <th><a href="/software/omero">OMERO</a></th>
+      <td>
+        <a href="https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt">License</a><br>
+        <a href="http://openmicroscopy.org/site/about/licensing-attribution">Info</a>
       </td>
     </tr>
     <tr>
-      <td rowspan="3">
-        <p><img src="/media/icons/fiji.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/software/fiji">Fiji</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></p>
-      </td>
-      <td rowspan="2">
-        <p><a href="/licensing/gpl">GPL</a></p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="2" class="yesno">
-        <p>❌</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong><a href="/plugins/trakem2">TrakEM2</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/trakem2/trakem2/blob/master/README">Readme</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong><a href="/plugins/bdv">BigDataViewer</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE.txt">License</a></p>
-      </td>
-      <td>
-        <p><a href="/licensing/bsd">BSD-2</a><sup>‡</sup></p>
-      </td>
-      <td class="yesno">
-        <p>❌</p>
-      </td>
-      <td class="yesno">
-        <p>✅</p>
-      </td>
-      <td class="yesno">
-        <p>❌</p>
-      </td>
-      <td class="yesno">
-        <p>✅</p>
-      </td>
-      <td class="yesno">
-        <p>✅</p>
-      </td>
-      <td class="yesno">
-        <p>✅</p>
-      </td>
-      <td class="yesno">
-        <p>-</p>
-      </td>
-      <td class="yesno">
-        <p>✅</p>
-      </td>
-      <td class="yesno">
-        <p>❌</p>
-      </td>
-      <td class="yesno">
-        <p>-</p>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="14" style="text-align: center">
-        <p><strong><a href="/libs/scijava">SciJava consortium</a></strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><img src="/media/icons/cellprofiler.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/software/cellprofiler">CellProfiler</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE">License</a></p>
-      </td>
-      <td>
-        <p><a href="/licensing/bsd">BSD-3</a></p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>✅</p>
-      </td>
-      <td>
-        <p>-</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="1" class="yesno">
-        <p>❌</p>
-      </td>
-      <td>
-        <p>-</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><img src="/media/icons/bio-formats.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/formats/bio-formats">Bio-Formats</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt">License</a><br>
-        <a href="http://openmicroscopy.org/site/about/licensing-attribution">Info</a></p>
-      </td>
-      <td rowspan="3">
-        <p><a href="/licensing/gpl">GPL</a></p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>✅</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>❌</p>
-      </td>
-      <td rowspan="3" class="yesno">
-        <p>❌</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><img src="/media/icons/omero.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/software/omero">OMERO</a></strong></p>
-      </td>
-      <td>
-        <p><a href="https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt">License</a><br>
-        <a href="http://openmicroscopy.org/site/about/licensing-attribution">Info</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><img src="/media/icons/knime.png" width="48"></p>
-      </td>
-      <td>
-        <p><strong><a href="/software/knime">KNIME</a></strong></p>
-      </td>
-      <td>
-        <p><a href="http://www.knime.org/downloads/full-license">License</a></p>
-      </td>
+      <td><img src="/media/icons/knime.png" width="48"></td>
+      <th><a href="/software/knime">KNIME</a></th>
+      <td><a href="http://www.knime.org/downloads/full-license">License</a></td>
     </tr>
   </tbody>
 </table>
