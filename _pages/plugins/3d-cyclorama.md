@@ -119,7 +119,7 @@ B. Unrolling
 
 	Click "Load scanStack", navigate to the directory of your image stack, select one image and click "Open". This will open the image stack and it will load the ROIset file that is expected to be saved in the same directory. A message will be displayed in the script editor output panel informing of the selected RoiSet.
     ```
-	2. Compute the boundary contours (Panel 2: Compute boundary contours)
+2. Compute the boundary contours (Panel 2: Compute boundary contours)
     ```
 	Select the desired "contour length" (Start with 100 points. Increase if the contours do not properly capture the shape. Decrease as much as possible for improved performance).
 
@@ -140,7 +140,7 @@ B. Unrolling
 		If the contours in the intermediate slices remain relatively unchanged, then the "Interpolation interval" on panel 1 needs to be reduced.
 		If the contours oscillate exceedingly from slice to slice, the "Interpolation interval" on panel 1 needs to be increased.
     ```
-	3. Compute the intermediate contours and resampling surfaces (Panel 3: Compute resampling surfaces)
+3. Compute the intermediate contours and resampling surfaces (Panel 3: Compute resampling surfaces)
     ```
 	Define the "number of contours" to be computed on each slice, which includes the boundary and intermediate contours:
 		Begin with a small value (3 or 5) so that you can quickly derive the rest of the parameters on this panel.
@@ -206,7 +206,7 @@ B. Unrolling
 		If you would like to save the mappping to file, check the "Save mapping" checkbox in Panel 4. Note that this is required for bi-directional examination of the result (see C. Analysis).
 		If you would like to save the resulting 3D cyclorama to file as a tiff image, check the "Save cyclorama" in Panel 5.
     ```		
-	4. Proceed with the final unrolling:
+4. Proceed with the final unrolling:
     ```
 	Close the image stack and run the 3D cyclorama plugin again.
 
