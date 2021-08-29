@@ -284,8 +284,7 @@ C. Analysis
 			Under the "Invert ROIs" click the "Invert" button.
 			This will create a black mask stack with the same dimensions as the image stack and white cubes of 5 x 5 x 5 pixels at the corresponding (mapped) points of all the points currently existing in the ROI manager.
 
-
-
+![Help](https://user-images.githubusercontent.com/20737950/131255975-c5f6bbd8-eafe-4d34-9770-65716e112b9e.png)
 
 ## ChangeLog
 v1.0.0:
