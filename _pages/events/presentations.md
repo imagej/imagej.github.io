@@ -515,7 +515,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Ellen Dobson</td>
       <td>CZI Workshops</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1eDKMlweAIyTw72LuAv6LCknLE9BmZruTRiWuIPQGadk/edit?usp=sharing">Workshop I</a>, <a href="https://docs.google.com/presentation/d/111nrll-4uyk0ZVrudmFnEZHyNt76RzVZvKvJkOVSoJA/edit?usp=sharing">Workshop II</a>
+        <a href="https://chanzuckerberg.wistia.com/medias/uwakj3npiq">Workshop I video</a>, <a href="https://docs.google.com/presentation/d/1eDKMlweAIyTw72LuAv6LCknLE9BmZruTRiWuIPQGadk/edit?usp=sharing">Workshop I slides</a>, <a href="https://chanzuckerberg.wistia.com/medias/2kmue5jamv">Workshop II video</a>, <a href="https://docs.google.com/presentation/d/111nrll-4uyk0ZVrudmFnEZHyNt76RzVZvKvJkOVSoJA/edit?usp=sharing">Workshop II slides</a>
       </td>
     </tr>
     <tr>
