@@ -1,5 +1,5 @@
 ---
-title: lguerard
+title: Laurent Guerard
 name: Laurent Guerard
 affiliation:
   - IMCF University of Basel | https://www.biozentrum.unibas.ch/research/researchgroups/overview/unit/imcf/imaging-core-facility-%20imcf/
