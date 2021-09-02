@@ -38,6 +38,8 @@ Click the *Add my site* button, enter account name and click *OK*. This will add
 
 <img src="/media/update-sites/personal-update-site-1.png" width="770"/>
 
+Alternatively, you can click the "Add update site" button and manually type in the URL of your site.
+
 When you start the upload process you will be prompted for your password.
 
 ### Dedicated plugin update sites
