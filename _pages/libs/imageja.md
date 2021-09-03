@@ -3,6 +3,7 @@ title: ImageJA
 section: Explore:Libraries
 artifact: net.imagej:ij
 icon: /media/icons/imagej.png
+project: /software/imagej
 ---
 
 ImageJA is a project that provides a clean [Git](/develop/git) history of the [ImageJ](/software/imagej) project, with a proper 'pom.xml' file so that it can be used with [Maven](/develop/maven) without hassles.

@@ -3,6 +3,7 @@ title: ImageJ Legacy Bridge
 section: Explore:Libraries
 artifact: net.imagej:imagej-legacy
 icon: /media/icons/imagej2.png
+project: /software/imagej2
 ---
 
 Backward compatibility is one of ImageJ2's most important goals. It must remain possible to use existing plugins and macros with new versions of ImageJ.

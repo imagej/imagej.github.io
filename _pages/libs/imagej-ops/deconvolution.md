@@ -2,6 +2,7 @@
 mediawiki: Ops_Deconvolution
 title: Ops Deconvolution
 extensions: ["mathjax"]
+project: /software/imagej2
 ---
 
 
