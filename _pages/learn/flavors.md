@@ -34,8 +34,9 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>The original version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
         macros for performing a wide variety of tasks. Sometimes referred to as
-        *the original ImageJ* or *ImageJ 1.x* for technical clarity, or
-        informally with the shorthands *ImageJ1* or *IJ1*.</td>
+        <strong>the original ImageJ</strong> or <strong>ImageJ 1.x</strong> for
+        technical clarity, or informally with the shorthands
+        <strong>ImageJ1</strong> or <strong>IJ1</strong>.</td>
       <td>1997</td>
       <td>Active</td>
     </tr>
