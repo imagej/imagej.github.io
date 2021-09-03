@@ -14,7 +14,7 @@ ImageJ and Friends* (I2K) conference.
 
 The [Center for Open Bioimage Analysis (COBA)](/orgs/coba) at Broad Institute and [LOCI UW-Madison](/orgs/loci), as well as the [Fiji](/software/fiji) development team at [Max Planck Institute of Molecular Cell Biology and Genetics](/orgs/mpi-cbg) in Dresden, is pleased to formally announce the 2022 "From Images to Knowledge with ImageJ & Friends (I2K)" Symposium.
 
--   Date: April 2022 (two days TBD)
+-   Date: 9-10 May 2022
 -   Location: University of Wisconsin, Madison
 -   Registration: TBD
 
