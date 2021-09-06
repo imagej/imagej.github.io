@@ -19,11 +19,11 @@ For this module to work, you need three things:
 Run _Fiji > Help > Update_.
 From the ImageJ Updater window, Open the ```Manage update sites``` window.
 
-![](/media/plugins/trackmate/trackmate-ilastik-install-ilastik.png)
+{% include img src='/media/plugins/trackmate/trackmate-ilastik-install-ilastik.png' width='400px'  align='center' %}
 
 3. And finally, subscribe to the **TrackMate-Ilastik** update site.
 
-![](/media/plugins/trackmate/trackmate-ilastik-install.png)
+{% include img src='/media/plugins/trackmate/trackmate-ilastik-install.png' width='400px'  align='center' %}
 
 We rely on the capabilities of the **ilastik Fiji import/export plugin**, built by the ilastik team. It is documented in detail [in the ilastik website](https://www.ilastik.org/documentation/fiji_export/plugin).
 
