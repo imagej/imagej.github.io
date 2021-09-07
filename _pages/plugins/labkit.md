@@ -46,32 +46,20 @@ Follow these steps to segment an image:
 6.  In the side bar of Labkit, under the heading "Segmentation" you will find an entry "Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
 7.  From Labkit's main menu select {% include bc path="Segmentation | Show Segmentation Result in ImageJ" %}, to export your segmentation into ImageJ.
 
-### GPU Accelleration
+### Tutorial: Labkit With GPU Accelleration
 
 Make sure you installed Labkit with GPU support. Labkit can be used the same way as discribed above, with one additional step to enable the GPU acceleration.
 Open the "Classifier Settings" and select "Use GPU acceleration".
 
-### Manual Segmentation
+### Tutorial: Manual Segmentation
 
 See https://github.com/juglab/EmbedSeg/wiki/Use-Labkit-to-prepare-instance-masks.
 
-#### Workaround for plane wise manual segmentation of 3D images.
+### Tutorial: Segmenting a list of images with the macro recordable command
 
-Before starting Labkit, convert the image into a 2D + time by selecting (Image > Hyperstacks > Reorder Hyperstack...)
+### Tutorial: Segmenting a large image on a Cluster
 
-### Segmenting a list of images with the macro recordable command
-
-### Segmenting a large image on a Cluster
-
-### Tips & Tricks
-
--   If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {% include key key='S' %} on the keyboard. A dialog shows up. Use it to adjust the contrast.
--   There can be more than two labels, just click on the "Add label" button...
--   Labels can be renamed, by double clicking on them.
--   To change the label color, just click on the colored rectangle left of the labels name.
--   {% include key keys='D|mouse-wheel' %} to change the size of the brush tool.
-
-### Open & Save - Import & Export
+### Tutorial: Import & Export Segmentations
 
 -   Things you can save, open, import or export:
     -   Labeling - As `*.tif` or `*.labeling`
@@ -82,6 +70,29 @@ Before starting Labkit, convert the image into a 2D + time by selecting (Image >
 -   The word "labeling" is used to refer to the colorfully displayed areas overlayed on top of the image.
 -   Labkit's file format for labelings is `*.labeling`. It works great for very large files with very few labels. (This file format is likely to be improved and changed in the future.)
 -   The labeling can be saved and opened as `*.tif` as well. (This is a good option for not-too-big images. And can be used by any other tool.)
+
+## FAQ
+
+**Is it possible to manually segment a 3D image slice by slice?**
+
+Yes, this can be achieved by a workaround: Simple convert your image to 2D+time before opening it with Labkit. In Fiji use "Image > Hyperstacks > Re-order Hyperstack ..." to convert your image from 3D to 2D+time. 
+
+**After starting Labkit the window that should show my image is black?**
+
+This often happens if Labkit can't find proper brightness & contrast settings. Please click the button that says "auto contrast".
+
+**How I manually select the colors and brightness settings that are used to show the image?**
+
+Click {% include key key='S' %} on your keyboard. This should show the BigDataViewer brightness & color dialog. Use it to manually adjust those settings.
+
+**Can Labkit distinguish more than two classes "foreground" and "background"**
+
+Yes, simple click the "Add label" button this will add a new class. You are free to name labels / classes as you would like, simple double click on the label.
+
+**How can I change the color of the labels?**
+
+Just click on the colored rectangle left of the labels name. This will show a color selection dialog.
+
 
 ## Keyboard Shortcuts
 
