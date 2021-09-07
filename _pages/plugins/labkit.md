@@ -83,6 +83,34 @@ for (i = 0; i < 10; i++) {
 
 ### Tutorial: Segmenting a large image on a Cluster
 
+On your computer
+1.  Download the dataset of interest, unzip
+2.  Use BigStitcher FIJI plugin to resave the dataset as BDV HDF5 + XML format:
+    - Install BigStitcher update site in Fiji
+    - Run Plugins > BigStitcher > Batch Processing > Define dataset …
+      (Use Bioformats importer an make sure to select correct pixel size)
+3.  Train a classifier with Labkit therefor:
+    Plugins > Lakit > Open Image File With Labkit
+4.  Continue as discribed in the quik start tutorial.
+5.  Save the trained classifier {% include bc path="Segmentation | Save Classifier ..."} into a file.
+
+On the HPC cluster: (This is also covered on https://github.com/maarzt/labkit-command-line)
+
+6.  Copy the dataset HDF5 + XML to the cluster
+7.  Copy the trained classifier to the cluster
+8.  Download the labkit command line tool https://github.com/maarzt/labkit-command-line/releases/download/v0.1.1/labkit-snakemake-exmaple-0.1.1.zip
+9.  Extract this zip file
+10.  In the “Snakemake” file change:
+```sh
+IMAGE = “/path/to/your/dataset.xml”
+CLASSIFIER = “/path/to/your/pixel.classifier”
+USE_GPU=”true”
+```
+11. Run:
+```sh
+$ snakemake --cluster=”sbatch --partition=gpu” --jobs=10 --local-cores=1 --restart-times=10
+```
+
 ### Tutorial: Import & Export Segmentations
 
 -   Things you can save, open, import or export:
