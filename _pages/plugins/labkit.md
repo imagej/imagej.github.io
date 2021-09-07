@@ -31,7 +31,6 @@ There are two options for the installation of Labkit. Option A: The basic instal
 4. Install the “Labkit-Preview” update site, URL: https://sites.imagej.net/Labkit-Preview/
    (This update site is not in the list of official update sites. It needs to be added first.) 
 
-
 ## Tutorials
 
 ### Quick Start Tutorial
@@ -62,6 +61,25 @@ Open the "Classifier Settings" and select "Use GPU acceleration".
 <img src="https://user-images.githubusercontent.com/34229641/106534470-6b4df100-64f4-11eb-8c76-600a33de669a.gif"  width="800" />
 
 ### Tutorial: Segmenting a list of images with the macro recordable command
+
+Automatic image segmentation can be very useful to segment a large number of images.
+The images need to be similar to get good results. Make sure that brighness and contrast is normalized, and maybe do some background removal first.
+Select a representive image.
+Open this image with Labkit and segment the image as discribed in the quick start tutorial.
+But in the last step save the trained classifier {% include bc path="Segmentation | Save Classifier ..."} into a file.
+Now the following ImageJ macro can be used to apply the classifier over many images.
+
+```java
+// ImageJ macro for segmenting a list of images
+folder = "C:/path/to/folder/"
+for (i = 0; i < 10; i++) {
+   open(folder + "image_" + i + ".tif");
+   run("Segment Image With Labkit", "segmenter_file=" + folder + "my_pretrained_classifier.classifier use_gpu=false");
+   saveAs("Tiff", folder + "segmentation_" + i + ".tif");
+   close();
+   close();
+}
+```
 
 ### Tutorial: Segmenting a large image on a Cluster
 
