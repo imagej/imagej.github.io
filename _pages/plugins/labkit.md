@@ -66,7 +66,7 @@ Automatic image segmentation can be very useful to segment a large number of ima
 The images need to be similar to get good results. Make sure that brighness and contrast is normalized, and maybe do some background removal first.
 Select a representive image.
 Open this image with Labkit and segment the image as discribed in the quick start tutorial.
-But in the last step save the trained classifier {% include bc path="Segmentation | Save Classifier ..."} into a file.
+But in the last step save the trained classifier {% include bc path="Segmentation | Save Classifier ..." %} into a file.
 Now the following ImageJ macro can be used to apply the classifier over many images.
 
 ```java
