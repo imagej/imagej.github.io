@@ -92,7 +92,7 @@ On your computer
 3.  Train a classifier with Labkit therefor:
     Plugins > Lakit > Open Image File With Labkit
 4.  Continue as discribed in the quik start tutorial.
-5.  Save the trained classifier {% include bc path="Segmentation | Save Classifier ..."} into a file.
+5.  Save the trained classifier {% include bc path="Segmentation | Save Classifier ..." %} into a file.
 
 On the HPC cluster: (This is also covered on https://github.com/maarzt/labkit-command-line)
 
