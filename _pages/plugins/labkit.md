@@ -18,18 +18,17 @@ Additionally, Labkit is prepared to be used on high performance computing cluste
 
 ## Installation
 
-There are two options for the installation of Labkit. Option A: The basic installation (without GPU acceleration) that works on all computers. Option B: The installation with GPU acceleration. (better performance, but requires an NVIDIA GPU).
+Labkit if a plugin for Fiji. You first need to install Fiji. And then select Labkit from the list of available update sites.
 
-### Option A: Basic Installation
-1. Install Fiji
-2. Install the [Labkit update site](https://sites.imagej.net/Labkit/). (For details on how to install an update site click [here](/update-sites/following).)
+1. Install Fiji (see [here](https://imagej.net/software/fiji/downloads))
+2. Install the [Labkit update site](https://sites.imagej.net/Labkit/):
+   * Start `Fiji`
+   * From the menu select {% include bc path="Help | Update" %}
+   * Clicking on `Manage Update Sites`, that select `Labkit` in the table.
+   * Click `Close`, `Apply changes` and `Ok`
+   * Restart `Fiji`
 
-### Option B: Installation With GPU Support
-(Requires a NVIDIA GPU, and propery installed graphics card drivers.)
-1. Install Fijij
-2. Install the “clij” and “clij2” update sites in Fiji. (see https://clij.github.io/clij2-docs/installationInFiji for details)
-4. Install the “Labkit-Preview” update site, URL: https://sites.imagej.net/Labkit-Preview/
-   (This update site is not in the list of official update sites. It needs to be added first.) 
+<img src="https://user-images.githubusercontent.com/34229641/106533222-05606a00-64f2-11eb-83c7-74c4d2cd4861.gif"  width="800" />
 
 ## Tutorials
 
@@ -47,8 +46,11 @@ Follow these steps to segment an image:
 
 ### Tutorial: Labkit With GPU Accelleration
 
-Make sure you installed Labkit with GPU support. Labkit can be used the same way as discribed above, with one additional step to enable the GPU acceleration.
-Open the "Classifier Settings" and select "Use GPU acceleration".
+Labkit can use NVIDIA graphics cards to speed up it's calculations and segment your images faster.
+The speed difference is significant, maybe a factor of five. The actual speed up depends very much on your CPU and graphics card.
+Try it yourself, if there is an NVIDIA graphics cards in you computer, and your not afraid of installing the proper driver for it.
+
+All you need to do is to also install CLIJ2 in your Fiji. Look [here](https://clij.github.io/clij2-docs/installationInFiji) for detailed instructions on CLIJ2 installation. Then you can continue with the quick start tutorial, with just one additional step. Before you train the classifier, go to the "Classifier Settings" and select "Use GPU acceleration".
 
 ### Tutorial: Manual Segmentation
 
@@ -64,10 +66,10 @@ Open the "Classifier Settings" and select "Use GPU acceleration".
 
 Automatic image segmentation can be very useful to segment a large number of images.
 The images need to be similar to get good results. Make sure that brighness and contrast is normalized, and maybe do some background removal first.
-Select a representive image.
-Open this image with Labkit and segment the image as discribed in the quick start tutorial.
-But in the last step save the trained classifier {% include bc path="Segmentation | Save Classifier ..." %} into a file.
-Now the following ImageJ macro can be used to apply the classifier over many images.
+1.  Select a representive image.
+2.  Open this image with Labkit and segment the image as discribed in the quick start tutorial.
+    But in the last step save the trained classifier {% include bc path="Segmentation | Save Classifier ..." %} into a file.
+3.  Now the following ImageJ macro can be used to apply the classifier over many images.
 
 ```java
 // ImageJ macro for segmenting a list of images
@@ -101,10 +103,10 @@ On the HPC cluster: (This is also covered on https://github.com/maarzt/labkit-co
 8.  Download the labkit command line tool https://github.com/maarzt/labkit-command-line/releases/download/v0.1.1/labkit-snakemake-exmaple-0.1.1.zip
 9.  Extract this zip file
 10.  In the “Snakemake” file change:
-```sh
+```
 IMAGE = “/path/to/your/dataset.xml”
 CLASSIFIER = “/path/to/your/pixel.classifier”
-USE_GPU=”true”
+USE_GPU = ”true”
 ```
 11. Run:
 ```sh
