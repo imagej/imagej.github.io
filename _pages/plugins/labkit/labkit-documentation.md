@@ -61,9 +61,15 @@ More options are available in the `Labeling` menu (top of the Labkit window):
 
 ## Segmentation
 
-### Filters
+In the `Segmentation` panel, you can add pixel classifier, modify there settings, run to learn a segmentation and export their results.
 
-What are filters, compute features of the image used to learn the segmentation
+### Pixel classification settings
+
+<!--- Describe what filters are --->
+
+By clicking on the wheel, you can open the pixel classification settings for a particular classifier. A window opens, which allows you to set custom filters to tune your classifier and the segmentation results.
+
+A filter is a operation that can be applied to your image in order to extract features. In turn, these features will be used to learn the segmentation. Segmentation can be performed by clicking on the run button. The results is overlaid with the image. 
 
 Refer to the [guidelines]() for advice on choosing filters for your segmentation task.
 
@@ -83,34 +89,31 @@ Basic filters are in most cases the only filters you need. Except for the `origi
 - Mean (for each sigma):
 - Variance filters (for each sigma):
 
-### Customizable filters
+#### Customizable filters
 
 Customizable filters are filters whose parameters can be chosen by the user.
 
-- Difference of Gaussians: convolve the image with the difference of two Gaussians with the corresponding standard deviations.
-- Gaussian blur: convolve the image with a Gaussian of standard deviation sigma.
-- Hessian eigenvalues: 
-- Gaussian gradient magnitude:
-- Laplacian of Gaussian:
-- Min filters:
-- Max filters:
-- Mean:
-- Structure tensor eigenvalues:
-- Variance filters:
+- Difference of Gaussians
+- Gaussian blur
+- Hessian eigenvalues 
+- Gaussian gradient magnitude
+- Laplacian of Gaussian
+- Min filters
+- Max filters
+- Mean
+- Structure tensor eigenvalues
+- Variance filters
 
-### Deprecated filters
+#### Deprecated filters
 
 Deprecated filters are here to ensure backward compatibility with classifier trained with older versions of Labkit. We advise using only basic and customizable filters.
 
-### Import & Export Segmentations
+### Import & Export
 
--   Things you can save, open, import or export:
-    -   Labeling - As `*.tif` or `*.labeling`
-    -   Bitmap - (One layer of the labeling) As `*.tif`
-    -   Classifier - As `*.classifier`, only Labkit is able to work with them.
-    -   Segmentation result - As `*.tif`, or show to ImageJ
-    -   Segmentation's probability Map - As `*.tif`, or show in ImageJ
--   The word "labeling" is used to refer to the colorfully displayed areas overlayed on top of the image.
--   Labkit's file format for labelings is `*.labeling`. It works great for very large files with very few labels. (This file format is likely to be improved and changed in the future.)
--   The labeling can be saved and opened as `*.tif` as well. (This is a good option for not-too-big images. And can be used by any other tool.)
+The segmentation menu and the small arrow next to a classifier allow users to import/export various objects:
+
+- Import/export classifier using `Open Classifier...` or `Save Classifier...`
+- Save the segmentation result as `.tif` or `.h5`
+- Show the segmentation in ImageJ
+- Create a label layer from a segmented class
 

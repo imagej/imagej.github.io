@@ -13,11 +13,11 @@ These guidelines are meant to help users improve their automatic segmentation pi
 
 ### Label important features of each class
 
-examples of labeling (eg objects too dim are labeled to background, background between two objects)
+<!---  Examples of labeling (eg objects too dim are labeled to background, background between two objects) -->
 
 ### Do not over label
 
-explain why
+<!--- Explain impact of over labeling on the segmentation -->
 
 ## Choosing filters
 
