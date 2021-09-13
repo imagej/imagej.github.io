@@ -22,7 +22,7 @@ If you find Labkit useful for your research, please cite it:
 1. Install [Fiji](https://imagej.net/software/fiji/downloads)
 2. Install Labkit's [update site](/update-sites/following):
    1. Start Fiji
-   2. From the menu, select {% include bc path"Help | Update" %}
+   2. From the menu, select {% include bc path="Help | Update" %}
    3. Click on `Manage Update Sites`, then select `Labkit` in the table
    4. Close, click on `Apply changes` and then `Ok`
    5. Restart Fiji
