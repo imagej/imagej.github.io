@@ -45,8 +45,10 @@ Follow these steps to segment an image:
 
 ### Use Labkit With GPU acceleration
 
-1. Install the “clij” and “clij2” update sites in Fiji. (see https://clij.github.io/clij2-docs/installationInFiji for details)
-2. Open the "Classifier Settings" and select "Use GPU acceleration".
+Labkit can use NVIDIA graphics cards to speed up calculation and segment images faster. The speed difference is significant but will vary from machine to machine. In order to perform GPU-accelerated segmentation, follow these steps:
+
+1. Install [CLIJ2 in Fiji](https://clij.github.io/clij2-docs/installationInFiji)
+2. In Labkit, after selecting a classifier, open the "Classifier Settings" and select "Use GPU acceleration".
 
 ### Segment a list of images with a macro
 
@@ -100,7 +102,7 @@ On the HPC cluster:
 ```sh
 IMAGE = “/path/to/your/dataset.xml”
 CLASSIFIER = “/path/to/your/pixel.classifier”
-USE_GPU=”true”
+USE_GPU = ”true”
 ```
 
 {:start="11"}
