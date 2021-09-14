@@ -30,9 +30,9 @@ If you find Labkit useful for your research, please cite it:
 
 ## Documentation, tutorials and guidelines
 
-- The [documentation](/plugins/labkit/labkit-documentation) provides details of Labkit functionalities 
-- In the [tutorials page](/plugins/labkit/labkit-tutorials), you fill find diverse general and advanced tutorials, from manual and automatic segmentation, to macro, GPU-acceleration and running labkit on HPC clusters.
-- The [guidelines](/plugins/labkit/labkit-guidelines) page gives insight in how to improve the automatic segmentation
+- The [documentation](/plugins/labkit/documentation) provides details of Labkit functionalities 
+- In the [tutorials page](/plugins/labkit/tutorials), you fill find diverse general and advanced tutorials, from manual and automatic segmentation, to macro, GPU-acceleration and running labkit on HPC clusters.
+- The [guidelines](/plugins/labkit/guidelines) page gives insight in how to improve the automatic segmentation
 
 ## FAQ
 
