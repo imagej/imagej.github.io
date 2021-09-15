@@ -22,7 +22,7 @@ This detector is part of the core of TrackMate. It is documented here: [trackmat
 ### Thresholding detector.
 
 The thresholding detector creates objects from a grayscale image (it can be one channel in a multi-channel image). You have to specify a threshold value to segment the objects.
-This detector is also part of the core of TrackMate. It is documented here: [trackmate-threholding-detector](/plugins/trackmate/trackmate-thresholding-detector)
+This detector is also part of the core of TrackMate. It is documented here: [trackmate-thresholding-detector](/plugins/trackmate/trackmate-thresholding-detector)
 
 
 ### Label image detector.
