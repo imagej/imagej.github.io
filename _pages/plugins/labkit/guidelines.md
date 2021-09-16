@@ -19,11 +19,25 @@ These guidelines are meant to help users improve their automatic segmentation pi
 
 <!--- Explain impact of over labeling on the segmentation -->
 
-## Choosing filters
+## Pixel Classification Settings
 
-In cases where the default settings do not bring satisfactory results, changing the list of sigmas or the filters can be a game changer.
+Labkit's pixel classification algorithm applies a list of filters on the image to gather informations about the individual pixels.
+The pixel classification settings dialog allows to select which filters Labkit uses.
+The default settings should normally work well.
+But selecting the filters manually might in some cases help to improve the runtime or the quality of the resulting segmentations.
 
-### Choosing the sigmas
+Most of the filters first apply a gaussion blur on the image before they perform their individual operations.
+Select sigma values that are in the range of your object sizes. For example if you want to segment blob-like structures. Where the blobs diameter is roughly 10, then this value divided by 2 is a good sigma value to use respective sigma = 5. But also add values that are smaller, and bigger sigmas = 1.25; 2.5; 5; 10 would be a good way to go. The pixel classification is slower for high sigma values, sigma shouldn’t be bigger than 16.
 
-Use sigmas as large as your objects in terms of pixels.
+| Feature name          | Runtime / Complexity | Remarks |
+| --------------------- | -------------------- | ------- |
+| original image        | very low             | Always useful |
+| gaussian blur         | low                  | Always useful, they work well on images that are easy to segment. |
+| difference of gaussians | low | ^ |
+| gaussian gradient magnitude | low | ^ |
+| laplacian of gaussian | moderate | Useful for images that are harder to segment, might help to segment close gaps. |
+| hessian eigenvalues | moderate | ^ |
+| structure tensor eigenvalues | high | Similar to hessian eigenvalues but slow. Use only if it really helps on your images. |
+| min, max, mean | low | Use special cases. |
+| variance | moderate | Useful to segment objects with a rough texture. |
 
