@@ -11,13 +11,29 @@ These guidelines are meant to help users improve their automatic segmentation pi
 
 ## Labeling the image
 
-### Label important features of each class
+Labkit's pixel classification algorithm only needs very little training data.
+Providing a large amount of training data often results in a poorly performing classification.
+To get good a result use the smallest available brush size, draw thin lines. Pick a few representive objects in the image an for those mark foreground and background pixels (or whatever classes you are using). The following two images show a good and a bad example on how to place the scribbles for a random forest training.
 
-<!---  Examples of labeling (eg objects too dim are labeled to background, background between two objects) -->
+| good | bad |
+| ---- | --- |
+| <img src="/media/plugins/labkit/labkit-scribble-good.png"/> | <img src="/media/plugins/labkit/labkit-scribble-bad.png"/> |
 
-### Do not over label
+The lines that you draw should start roughly on edge of an object and go inwards. Similarly if you mark background pixels start close to an object and draw a line away from the object. Here are again good and bad examples. 
+| good | bad | bad |
+| ---- | --- | --- |
+| <img src="/media/plugins/labkit/labkit-scribble-object-good.png"/> | <img src="/media/plugins/labkit/labkit-scribble-object-bad.png"/> | <img src="/media/plugins/labkit/labkit-scribble-object-bad-2.png"/> |
 
-<!--- Explain impact of over labeling on the segmentation -->
+Avoid to mark the pixels at the edge of an object as foreground / background. It is likely that you might mark a few pixels wrongly or at least inconsistent. This will confuse the pixel classification algorithm.
+
+Here is a good example of how to label the gap between two objects:
+| good |
+| ---- |
+| <img src="/media/plugins/labkit/labkit-scribble-gap-good.png"/> |
+
+If background intensity varies a lot, label a few locations with different background intensities.
+If your foreground intensity varies a lot, label a few objects with different intensities.
+Time series: If the objects you want to segment change their appearance over time. Pick a few representative time frames, and mark some representative objects in each frame.
 
 ## Pixel Classification Settings
 
