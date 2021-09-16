@@ -37,6 +37,8 @@ Time series: If the objects you want to segment change their appearance over tim
 
 ## Pixel Classification Settings
 
+<img src="/media/plugins/labkit/labkit-pixel-classification-settings.png"/>
+
 Labkit's pixel classification algorithm applies a list of filters on the image to gather informations about the individual pixels.
 The pixel classification settings dialog allows to select which filters Labkit uses.
 The default settings should normally work well.
