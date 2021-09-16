@@ -121,7 +121,7 @@ Downgrading is generally not recommended as a long-term solution, but can be han
 
 -   You can change the version of [ImageJ](/software/imagej) used via the {% include bc path='Help | Update ImageJ...' %} menu item. Note that this *only* changes the version of ImageJ itself—not any installed extensions. This command also works in ImageJ2, but only changes the version of the embedded ImageJ 1.x, not all ImageJ2 components.
 -   You can [switch to a different version of Java](#how-do-i-launch-imagej-with-a-different-version-of-java).
--   You can [download a Fiji Life-Line version](/downloads#fiji).
+-   You can [download a Fiji Life-Line version](/software/fiji/downloads#life-line-fiji-versions).
 
 Lastly, if you have not yet upgraded, and have a currently working configuration, you can make a backup copy of your ImageJ folder before upgrading. Then if the upgrade has undesirable consequences, switch back to the old copy.
 
