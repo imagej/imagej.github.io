@@ -5,7 +5,7 @@ description: How to use the Colocalization by Cross Correlation plugin
 name: Colocalzation by Cross Correlation plugin
 source-label: Github
 source-url: https://github.com/andmccall/Colocalization_by_Cross_Correlation
-
+team-developers: Andrew McCall
 ---
 {% include info-box software='Fiji' name='Colocalization by Cross Correlation' maintainer=' [Andrew McCall](/people/andmccall)' author=' [Andrew McCall](/people/andmccall)' source=source status='active' released='2020' category='Plugins, Colocalization' %}
 
