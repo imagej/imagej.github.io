@@ -20,16 +20,18 @@ To get good a result use the smallest available brush size, draw thin lines. Pic
 | <img src="/media/plugins/labkit/labkit-scribble-good.png"/> | <img src="/media/plugins/labkit/labkit-scribble-bad.png"/> |
 
 The lines that you draw should start roughly on edge of an object and go inwards. Similarly if you mark background pixels start close to an object and draw a line away from the object. Here are again good and bad examples. 
+
 | good | bad | bad |
 | ---- | --- | --- |
-| <img src="/media/plugins/labkit/labkit-scribble-object-good.png"/> | <img src="/media/plugins/labkit/labkit-scribble-object-bad.png"/> | <img src="/media/plugins/labkit/labkit-scribble-object-bad-2.png"/> |
+| ![good](/media/plugins/labkit/labkit-scribble-object-good.png) | ![bad](/media/plugins/labkit/labkit-scribble-object-bad.png) | ![bad](/media/plugins/labkit/labkit-scribble-object-bad-2.png) |
 
 Avoid to mark the pixels at the edge of an object as foreground / background. It is likely that you might mark a few pixels wrongly or at least inconsistent. This will confuse the pixel classification algorithm.
 
 Here is a good example of how to label the gap between two objects:
+
 | good |
 | ---- |
-| <img src="/media/plugins/labkit/labkit-scribble-gap-good.png"/> |
+| ![good](/media/plugins/labkit/labkit-scribble-gap-good.png) |
 
 If background intensity varies a lot, label a few locations with different background intensities.
 If your foreground intensity varies a lot, label a few objects with different intensities.
