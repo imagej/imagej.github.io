@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Global_optimization
-title: BigStitcher Global optimization
+title: BigStitcher › Global Optimization
+nav-links: true
+nav-title: Global Optimization
 ---
 
 # Intro

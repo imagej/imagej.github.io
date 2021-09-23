@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Open_existing
-title: BigStitcher Open existing
+title: BigStitcher › Open Existing
+nav-links: true
+nav-title: Open Existing
 ---
 
 When clicking {% include bc path='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:

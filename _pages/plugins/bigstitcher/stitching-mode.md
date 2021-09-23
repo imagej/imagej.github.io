@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Stitching_Mode
-title: BigStitcher Stitching Mode
+title: BigStitcher › Stitching Mode
+nav-links: true
+nav-title: Stitching Mode
 ---
 
 After opening a XML file the main windows will appear in the **Stitching Mode**. In this mode all necessary steps for image stitching are performed

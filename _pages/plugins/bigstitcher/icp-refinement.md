@@ -1,7 +1,9 @@
 ---
 mediawiki: BigStitcher_ICP_refinement
-title: BigStitcher ICP refinement
+title: BigStitcher › Iterative Closest Point Refinement
 extensions: ["mathjax"]
+nav-links: true
+nav-title: ICP Refinement
 ---
 
 The default stitching pipeline of BigStitcher will calculate a **translational alignment** of your images. In some cases, however, there might also be more complex transformations (such as rotations between tiles or scaling between channels due to **chromatic aberrations**) between the images. To account for such **affine transformations** between the images, we offer the possibility to **Refine the Alignment** using the **ICP (Iterative Closest Point)** algorithm combined with global optimization.

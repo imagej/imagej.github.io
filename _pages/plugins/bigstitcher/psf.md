@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_PSF
-title: BigStitcher PSF
+title: BigStitcher › Point Spread Functions
+nav-links: true
+nav-title: PSF
 ---
 
 ## Overview

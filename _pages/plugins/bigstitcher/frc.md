@@ -1,7 +1,9 @@
 ---
 mediawiki: BigStitcher_FRC
-title: BigStitcher FRC
+title: BigStitcher › Fourier Ring Correlation
 extensions: ["mathjax"]
+nav-links: true
+nav-title: FRC
 ---
 
 ## Overview

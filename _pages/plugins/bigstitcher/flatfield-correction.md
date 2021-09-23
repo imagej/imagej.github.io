@@ -1,7 +1,9 @@
 ---
 mediawiki: BigStitcher_Flatfield_correction
-title: BigStitcher Flatfield correction
+title: BigStitcher › Flatfield Correction
 extensions: ["mathjax"]
+nav-links: true
+nav-title: Flatfield Correction
 ---
 
 ### Overview

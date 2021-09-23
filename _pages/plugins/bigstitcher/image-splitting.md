@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Image_Splitting
-title: BigStitcher Image Splitting
+title: BigStitcher › Image Splitting
+nav-links: true
+nav-title: Image Splitting
 ---
 
 ## Overview

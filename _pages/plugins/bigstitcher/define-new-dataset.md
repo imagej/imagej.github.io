@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Define_new_dataset
-title: BigStitcher Define new dataset
+title: BigStitcher › Define New Dataset
+nav-links: true
+nav-title: Define New Dataset
 ---
 
 When clicking {% include bc path='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:

@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Interest_point_management
-title: BigStitcher Interest point management
+title: BigStitcher › Interest Point Management
+nav-links: true
+nav-title: Interest Point Management
 ---
 
 ## Overview

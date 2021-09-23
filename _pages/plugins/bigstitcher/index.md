@@ -1,8 +1,10 @@
 ---
 mediawiki: BigStitcher
 title: BigStitcher
-categories: [Uncategorized]
+categories: [ImgLib, Registration, Stitching]
 extensions: ["mathjax"]
+nav-links: true
+nav-title: Overview
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Preview_Pairwise_shift
-title: BigStitcher Preview Pairwise shift
+title: BigStitcher › Preview Pairwise Shift
+nav-links: true
+nav-title: Preview Pairwise Shift
 ---
 
 The second step of the stitching process after the pairwise shifts between views has been calculated is previewing the links and correlation coefficients. It is important to screen the results and remove erroneous links.

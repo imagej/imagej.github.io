@@ -1,7 +1,9 @@
 ---
 mediawiki: BigStitcher_Interest_points
-title: BigStitcher Interest points
+title: BigStitcher › Interest Points
 extensions: ["mathjax"]
+nav-links: true
+nav-title: Interest Points
 ---
 
 ## Overview

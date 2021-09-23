@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Advanced_stitching
-title: BigStitcher Advanced stitching
+title: BigStitcher › Advanced Stitching
+nav-links: true
+nav-title: Advanced Stitching
 ---
 
 # Overview

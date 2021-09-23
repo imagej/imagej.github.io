@@ -1,7 +1,9 @@
 ---
 mediawiki: BigStitcher_BoundingBox
-title: BigStitcher BoundingBox
+title: BigStitcher › Bounding Box
 extensions: ["mathjax"]
+nav-links: true
+nav-title: Bounding Box
 ---
 
 If you want to fuse or deconvolve a sub-volume of your dataset (other than *all views* or the *currently selected views*), you have to specify that volume by defining a **Bounding Box**.

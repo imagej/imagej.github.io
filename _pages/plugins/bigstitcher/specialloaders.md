@@ -1,9 +1,9 @@
 ---
 mediawiki: BigStitcher_SpecialLoaders
-title: BigStitcher SpecialLoaders
+title: BigStitcher › Special Dataset Importers
+nav-links: true
+nav-title: Special Loaders
 ---
-
-# Special Dataset Importers
 
 In addition to the more generic [Automatic Loader](/plugins/bigstitcher/autoloader) and [Stack loaders](/plugins/bigstitcher/stackloader), we also offer single-purpose loaders for images acquired on a **Zeiss Lightsheet Z.1** or a **diSPIM** controlled via **MicroManager**.
 

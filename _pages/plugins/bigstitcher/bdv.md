@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_BDV
-title: BigStitcher BDV
+title: BigStitcher › BigDataViewer
+nav-links: true
+nav-title: BDV
 ---
 
 ## Displaying selected views in BigDataViewer

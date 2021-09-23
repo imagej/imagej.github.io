@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_manual_translation
-title: BigStitcher manual translation
+title: BigStitcher › Manual Translation
+nav-links: true
+nav-title: Manual Translation
 ---
 
 ## Manual View Arrangement

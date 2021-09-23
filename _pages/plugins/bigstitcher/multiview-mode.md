@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_MultiView_Mode
-title: BigStitcher MultiView Mode
+title: BigStitcher › MultiView Mode
+nav-links: true
+nav-title: MultiView Mode
 ---
 
 The **MultiView Mode** can be accessed by clicking the "MultiView" button in the main window.

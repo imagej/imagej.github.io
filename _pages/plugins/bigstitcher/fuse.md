@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Fuse
-title: BigStitcher Fuse
+title: BigStitcher › Image Fusion
+nav-links: true
+nav-title: Fusion
 ---
 
 ## Introduction

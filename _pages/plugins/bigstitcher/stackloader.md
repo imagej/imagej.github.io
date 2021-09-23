@@ -1,9 +1,9 @@
 ---
 mediawiki: BigStitcher_StackLoader
-title: BigStitcher StackLoader
+title: BigStitcher › Stack-based Dataset Import
+nav-links: true
+nav-title: StackLoader
 ---
-
-## Stack-based dataset import
 
 See also: the [dataset definition documentation](/plugins/mvr-definedataset) in [Multiview-Reconstruction](/plugins/multiview-reconstruction).
 

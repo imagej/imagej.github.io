@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_AutoLoader
-title: BigStitcher AutoLoader
+title: BigStitcher › AutoLoader
+nav-links: true
+nav-title: AutoLoader
 ---
 
 ## Select the files to include in the dataset

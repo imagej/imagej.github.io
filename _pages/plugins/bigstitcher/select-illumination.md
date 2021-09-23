@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Select_illumination
-title: BigStitcher Select illumination
+title: BigStitcher › Select Illumination
+nav-links: true
+nav-title: Select Illumination
 ---
 
 When views have more than one illumination, you can select the best one by selecting the views you wish to process and clicing {% include bc path='Preprocessing|Select Best Illuminations'%} in the **right-click menu**.

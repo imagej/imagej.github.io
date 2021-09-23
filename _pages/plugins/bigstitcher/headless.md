@@ -1,6 +1,8 @@
 ---
 mediawiki: BigStitcher_Headless
-title: BigStitcher Headless
+title: BigStitcher › Headless
+nav-links: true
+nav-title: Headless
 ---
 
 ## Overview
