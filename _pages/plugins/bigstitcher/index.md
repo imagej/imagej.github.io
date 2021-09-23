@@ -5,21 +5,8 @@ categories: [ImgLib, Registration, Stitching]
 extensions: ["mathjax"]
 nav-links: true
 nav-title: Overview
+artifact: net.preibisch:BigStitcher
 ---
-
-
-{% capture author%}
-{% include person id='StephanPreibisch' %} & {% include person id='hoerldavid' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='StephanPreibisch' %} & {% include person id='hoerldavid' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='PreibischLab' repo='BigStitcher' %}
-{% endcapture %}
-{% include notice icon="info" content='Plugin' software='BigStitcher' name='BigStitcher' author=author maintainer=maintainer source=source status='beta' %}
 
 ## Introduction & Overview
 
