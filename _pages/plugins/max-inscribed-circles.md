@@ -31,11 +31,11 @@ That way when there are plenty of circles that are the same size, we can draw th
 
 ## Installation
 
-This plugin is available from the [BIOP Update Site](/list-of-update-sites) This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
+This plugin is available from the [PTBIOP Update Site](/list-of-update-sites). This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 ## Use
 
-Call up the plugin using {% include bc path="Plugins|BIOP|Max Inscribed Circles..." %}.
+Call up the plugin using {% include bc path="Plugins|BIOP|Image Analysis|Binary|Max Inscribed Circles..." %}.
 
 You can select the smallest circle diameter after which it will stop looking, and whether you want the plugin to run on the current selection or the current image mask.
 
