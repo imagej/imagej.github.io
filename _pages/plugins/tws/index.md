@@ -131,8 +131,8 @@ a & b\\\\ c & d\\end{array}\\right)$$ are calculated thus:
 -   -   Module: $$\sqrt{a^{2}+bc+d^{2}}$$.
     -   Trace: $$a+d$$.
     -   Determinant: $$ad-cb$$.
-    -   First eigenvalue: $$\frac{a+d}{2}+\sqrt{\tfrac{4b^{2}+(a-d)^{2}}{2}}$$.
-    -   Second eigenvalue: $$\frac{a+d}{2}-\sqrt{\tfrac{4b^{2}+(a-d)^{2}}{2}}$$.
+    -   First eigenvalue: $$\frac{a+d}{2}+\sqrt{\frac{4b^{2}+(a-d)^{2}}{2}}$$.
+    -   Second eigenvalue: $$\frac{a+d}{2}-\sqrt{\frac{4b^{2}+(a-d)^{2}}{2}}$$.
     -   Orientation: $$\frac{1}{2}\arccos\left(4b^{2}+(a-d)^{2}\right)$$ This operation returns the orientation for which the second derivative is maximal. It is an angle returned in radians in the range $$\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$$ and corresponds to an orientation without direction. The orientation for the minimal second derivative can be obtained by adding (or subtracting) $$\frac{\pi}{2}$$.
     -   Gamma-normalized square eigenvalue difference: $$t^{4}(a-d)^{2}\left((a-d)^{2}+4b^{2}\right)$$, where $$t=1^{3/4}$$.
     -   Square of Gamma-normalized eigenvalue difference: $$t^{2}\left((a-d)^{2}+4b^{2}\right)$$, where $$t=1^{3/4}$$.
