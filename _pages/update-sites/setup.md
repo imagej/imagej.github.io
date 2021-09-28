@@ -20,11 +20,11 @@ See the [Distribution](/contribute/distributing) page for a discussion of the be
 
 By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your *personal update site*.
 
-A *personal update site* is hosted on https://sites.imagej.net/&lt;update-site-name&gt;. Uploading to a personal update site requires upload credentials (see below).
+A *personal update site* is hosted on https://sites.imagej.net/&lt;update-site-name&gt;. In the past, each update site corresponded directly to ImageJ Wiki user accounts - but now, a particular user can have upload access to many sites, and a particular update site can have many authorized users.
 
 {% include notice icon="info" content='There are some minimal *Terms of Service* for personal update sites. See the [Personal Update Site Terms of Service](/update-sites/tos) for details.' %}
 
-First of all, please use [this thread on the imagej.sc forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request a new upload account and/or new update site. You can also request the addition or removal of uploader permissions to a particular site, or request a password reset.
+First of all, please use [this thread on the imagej.sc forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request a new upload account and/or new update site. You can also request the addition or removal of uploader permissions of a given user to a particular site, or request a password reset for your upload account.
 
 If you need to create a new upload account as part of this process, your password will be PM'd to you by a forum admin.
 
@@ -32,15 +32,16 @@ To start using your update site, in ImageJ start the updater with {% include bc 
 
 <img src="/media/mamed-3.jpg" width="770"/>
 
-### Specifying your upload account
+### Specifying your site
 
-Click the *Add my site* button, enter account name and click *OK*. This will add a new entry with the appropriate URL and host configuration. It will also validate that the update site actually exists.
+Click the *Add update site* button. 
 
-<img src="/media/update-sites/personal-update-site-1.png" width="770"/>
 
-Alternatively, you can click the "Add update site" button and manually type in the URL of your site.
+<img src="/media/update-sites/add-update-site-1.png" width="770"/>
 
-When you start the upload process you will be prompted for your password.
+Optionally, enter a nickname for your site in the **Name** column. In the **URL** column, enter your site's complete URL. Finally, in the **Host** column, enter `webdav:<your-uploader-username>`
+
+<img src="/media/update-sites/add-update-site-2.png" width="770"/>
 
 ### Dedicated plugin update sites
 
