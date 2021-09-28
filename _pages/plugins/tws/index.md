@@ -223,6 +223,16 @@ The Weka button launches the Weka GUI Chooser, where we can start all the applic
 
 For a complete step-by-step description on how to compare classifiers for image segmentation using the [Weka](http://www.cs.waikato.ac.nz/ml/weka/) Explorer, have a look at the [Trainable Weka Segmentation - How to compare classifiers](/plugins/tws/how-to-compare-classifiers) tutorial.
 
+### Labels panel
+On the right side of the GUI, we have one button and one list of traces for each of the classes defined by the user (two by default: class 1 and class 2).
+#### Add to class button
+{% include thumbnail src='/media/plugins/tws/tws-choose-class-color-dialog.png' title='Dialog displayed by right-clicking on the *Add to class* buttons to select a new color for that class'%}By **left-clicking** on one of the *Add to [...]* buttons, the current selection (ROI) gets added to the class defined by that button. Notice the text of the button can be modified in the Settings dialog as described before.
+    
+By **right-clicking** on any of those buttons, a new dialog will be displayed to change the color associated to that class (and therefore the overlay and result lookup table).
+    
+#### Trace list
+Below every *Add to [...]* button there is its corresponding list of added traces (empty by default). By **left-clicking** on one of the traces, it will be hightlighted in the main image. On the contrary, **double clicking on it will remove the trace from the list**.
+    
 ### Macro language compatibility
 
 [Trainable Weka Segmentation](/plugins/tws) is completely compatible with the popular [ImageJ macro language](https://imagej.nih.gov/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file. {% include thumbnail src='/media/plugins/tws/aws-macro-recording.png' title='Example of macro recording of the Trainable Weka Segmentation tools.'%}
