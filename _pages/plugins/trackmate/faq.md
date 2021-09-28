@@ -1,6 +1,9 @@
 ---
-mediawiki: TrackMate_FAQ
 title: TrackMate FAQ
+description: Frequently asked questions about TrackMate.
+categories: [Tracking, Segmentation]
+logo: /media/logos/trackmate-300p.png
+project: /software/fiji
 ---
 
 This list of frequently asked questions is compiled from several questions we have seen several times on the [ImageJ forum](http://forum.imagej.net/). It will be updated as questions appear there.
@@ -15,11 +18,10 @@ This looks like a classical dimensionality problem. Is your image a Z-stack (1 t
 
 *We are using TrackMate to generate lineages of X cells in live Y and are interested in how the intensity of a signal of interest changes over time, but also in the cell volume. Since most of our cells are not spherical and some are clustered close together, the LoG detector yields rather unsatisfying results. Is it possible to detect these cells based on their actual shape instead of assuming they are all spheres and measure the volume of such segmented cells?*
 
-Unfortunately no.
+Yes! Starting with TrackMate v7 (Summer 2021).
 
-You are looking for *segmentation* algorithm, that can return the contour of an object, and harness complex object shapes. TrackMate just ships *detection* algorithms, that only return the X,Y,Z coordinates of each blob.
+You are looking for *segmentation* algorithm, that can return the contour of an object, and harness complex object shapes. TrackMate now ships several algorithms that can do that, and exploit the object shape in 2D. See [TrackMate v7 detectors](/plugins/trackmate/trackmate-v7-detectors)
 
-As of today, there are no plans we are aware of to make TrackMate ship segmentation algorithms.
 
 ### Signification of the Quality value in LoG Detector.
 
@@ -36,13 +38,13 @@ So by properties of the LoG filter, this quality value is larger for :
 -   bright spots;
 -   spots which diameter is close to the specified diameter.
 
+
 ### Exporting TrackMate spots to ImageJ 1.x ROIs.
 
 *TrackMate found my particles, and the preview function is usefeul. However I can't seem to figure out how to export all the TrackMate overlays to individual ROIs, so that I can analyse them with other plugins.*
 
-There is a ROI exporter action is in a separate package called `TrackMate-extras`. To install it, you have to download its *jar* file and drop it in the *plugins* folder of Fiji. Link and instructions are on the [TrackMate\#Downloadable\_jars](/plugins/trackmate#downloadable-jars) page.
+We had a plugin that did that prior to v7, but has not been ported to the new v7 yet (Summer 2021). 
 
-An action called **Export current spots to IJ rois** will appear in the menu of the action panel (the very last one in the GUI). It will convert each spot to a point in the Multi-Point ROI tool of ImageJ 1.x.
 
 ### Copying TrackMate tracking data to another image file.
 
@@ -61,6 +63,7 @@ The simplest solution consists in editing the TrackMate XML file, and have it po
 -   Change the `filename` tag to point to the other TIF file on which you want to copy the overlay.
 -   Next time you open the edited file in TrackMate, it will also open the new TIF file and put the annotation on it.
 
+
 ### Exporting TrakMate overlay to a movie.
 
 *In TrackMate after completing tracking, is there any way to export/save a movie with all tracks and moving spots (exactly as it appears after using the TrackMate)?*
@@ -71,11 +74,13 @@ One of them is called **Capture TrackMate overlay** and does what you need. It g
 
 Careful: the frame capture is simple and brutal. If you have something that passes over the TrackMate viewer while the capture is going on, it will be captured in the final movie.
 
+
 ### Customizing the look of tracks during movie export.
 
 *I am aware of **Capture TrackMate overlay** function but it only provides the final picture of the track(s) overlayed on the moving particle. I'm interested in showing that the tracks are (or a single track) being formed as the particles move.*
 
 The overlay capture abides to the display settings you set in the **Display Settings** GUI panel. By changing the **Track display mode** here, you can get what you need. For instance choosing the `Show local tracks, backward` will generate a "dragon tail" aspect for the tracks in the movie.
+
 
 ### Tracks looked jagged.
 
@@ -84,6 +89,7 @@ The overlay capture abides to the display settings you set in the **Display Sett
 <figure><img src="/media/plugins/trackmate/trackmate-jaggedlines.png" title="TrackMate_JaggedLines.png" width="600" alt="TrackMate_JaggedLines.png" /><figcaption aria-hidden="true">TrackMate_JaggedLines.png</figcaption></figure>
 
 Make sure the `Do sub-pixel localization` is checked. It will mitigate this problem. Also make sure that you choose a blob diameter that actually matches the objects you tracking.
+
 
 ### Various `java.lang.NoClassDefFoundError`s upon execution.
 
