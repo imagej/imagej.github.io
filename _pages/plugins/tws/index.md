@@ -16,8 +16,6 @@ extensions: ["mathjax"]
 
 **Segmentation**: it provides a labeled result based on the training of a chosen classifier.
 
-<b><span style="color:#f80000"> NOTE: </span></b> If you were looking for the Advanced Weka Segmentation plugin, you are in the right place. Advanced Weka Segmentation was renamed as **Trainable Weka Segmentation** and keeps complete backwards compatibility.
-
 ## Introduction
 
 The [Trainable Weka Segmentation](/plugins/tws) is a Fiji plugin that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations. [Weka](http://www.cs.waikato.ac.nz/ml/weka/) (Waikato Environment for Knowledge Analysis) can itself be called from the plugin. It contains a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces for easy access to this functionality. As described on their wikipedia site, the advantages of [Weka](http://www.cs.waikato.ac.nz/ml/weka/) include:
