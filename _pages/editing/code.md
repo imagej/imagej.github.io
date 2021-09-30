@@ -85,6 +85,12 @@ Right now, inline code snippets cannot have line numbers; see
 for technical details. For now, if you want to have line numbers, use the
 [Embedding external code](#embedding-external-code) approach below.
 
+{% include notice icon='warning' content="
+You might be familiar with the `linenos` argument to the `highlight` directive.
+Please ___do not use this___. As of this writing (Q3 2021), it produces badly
+formed HTML output, which can break wiki pages.
+" %}
+
 ## Making code snippets executable and editable
 
 By enabling the `imjoy` extension, you can make your code snippets executable and editable.
