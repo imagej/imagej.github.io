@@ -5,6 +5,8 @@ section: Extend:Development:Tools
 
 {% include img src='logos/travis' align='right' width=150 caption='**Travis CI:** Build your code in the cloud!' %}
 
+[SciJava CI has migrated from Travis CI to Github Actions](https://forum.image.sc/t/scijava-ci-migration-from-travis-ci-to-github-actions/57573). Go to the [Github Actions](https://imagej.net/develop/github-actions) page for configuration instructions. Repositories configured to use Travis CI are easily migrated by following the instructions on the [Github Actions](https://imagej.net/develop/github-actions) page. The [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/main/github-actionify.sh) performs the migration automatically.
+
 [Travis CI](https://travis-ci.org/) is a tool for [continuous integration](/develop/project-management#continuous-integration). It has excellent integration with [GitHub](/develop/github), and is very useful for automating builds, deployment and other tasks. 
 
 # Services
