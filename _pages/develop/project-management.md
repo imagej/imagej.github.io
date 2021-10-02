@@ -44,7 +44,7 @@ Developers can benefit from the mirror by adding the following section to their 
 
 ## Continuous integration
 
-SciJava projects use [Github Actions](/develop/github-actions), a cloud-based workflow automation system that is part of Github and supported continuous integration (CI). Github Actions automatically check the code for build and test errors.
+SciJava projects use [Github Actions](/develop/github-actions), a cloud-based workflow automation system that is part of Github and supports continuous integration (CI). Github Actions automatically check the code for build and test errors.
 
 ## Issue tracking
 
