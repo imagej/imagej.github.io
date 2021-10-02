@@ -119,7 +119,7 @@
                   <li><a href="/develop/command-line">Command Line</a></li>
                 {% include menu/section-end %}
 
-                <li><a href="/develop/travis">Travis</a></li>
+                <li><a href="/develop/github-actions">Github Actions</a></li>
                 <li><a href="/develop/appveyor">AppVeyor</a></li>
                 <li><a href="/develop/dotfiles">Dotfiles</a></li>
               {% include menu/section-end %} <!-- Extend/Development/Tools -->
