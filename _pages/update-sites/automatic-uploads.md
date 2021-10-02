@@ -19,7 +19,7 @@ nav-title: Automatic Uploads
 
 ## Additional resources
 
--   [GitHub Actions user guide](https://docs.github.com/en/actions/quickstart)
+-   [SciJava Github Actions setup instructions](https://imagej.net/develop/github-actions) or the general [GitHub Actions user guide](https://docs.github.com/en/actions/quickstart)
 
 ## Automatic Uploads via GitHub Actions
 
