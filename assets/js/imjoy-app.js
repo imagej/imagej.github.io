@@ -110,7 +110,17 @@
                 if (config.type === 'window') {
                     cfg.defaults = {}
                 }
-
+                if (!config.lang) {
+                    if(cfg.type.includes("python")){
+                        config.lang = "python"
+                    }
+                    else if(cfg.type.includes("javascript")){
+                        config.lang = "javascript"
+                    }
+                    else{
+                        console.error('"lang" is not specified, please make sure decorate the code block with the name of the language.')
+                    }
+                }
                 if (config.lang !== 'html')
                     src = `<config lang="json">\n${JSON.stringify(cfg, null, 1)}\n</config>\n<script lang="${config.lang}">\n${src}<\/script>`;
                 else
@@ -312,6 +322,7 @@
             preElm.pluginConfig.id = id;
 
             preElm.pluginConfig.namespace = id;
+            // for some reason, the data-lang attribute disappeared in the newer version
             preElm.pluginConfig.lang = preElm.getAttribute('data-lang');
 
             const outputFullscreenElm = preElm.querySelector(".fullscreen-button");
