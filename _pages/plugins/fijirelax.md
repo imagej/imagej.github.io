@@ -11,10 +11,10 @@ description: Quantitative MRI analysis
 {% endcapture %}
 {% include info-box name='FijiRelax' software='Fiji' author='Romain Fernandez' maintainer='Romain Fernandez' source=source released='February 11<sup>th</sup>, 2021' status='stable, active' category='Analysis' %}
 
-FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-echo spin-echo sequences. This tools is developed in the context of :
+FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-echo spin-echo sequences. This work was supported by the French Ministry of Agriculture, France AgriMer, CNIV and IFV, within VITIMAGE and VITIMAGE-2024 projects (program Plan National Dépérissement du Vignoble). This tools is developed in the context of :
 - the [Vitimage 1](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage) and [Vitimage 2024](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage-2024) projects.
 - the [Aplim](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) flagship project.
-This work was supported by the French Ministry of Agriculture, France AgriMer, CNIV and IFV, within VITIMAGE and VITIMAGE-2024 projects (program Plan National Dépérissement du Vignoble)
+
 
  
 ## Plugin features
