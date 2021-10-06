@@ -15,6 +15,10 @@ description: Registration and alignment of 3D image series
 
 The plugin **Fijiyama** (Yet Another Matching and Alignment tool for Fiji) is a generic tool for registration and alignment of 3D image series collected from various imaging modalities (MRI, X-rays, Microscopy, Photography, ...).
 
+This work was supported by the French Ministry of Agriculture, France AgriMer, CNIV and IFV, within VITIMAGE and VITIMAGE-2024 projects (program Plan National Dépérissement du Vignoble). This tools is developed in the context of :
+- the [Vitimage 1](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage) and [Vitimage 2024](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage-2024) projects.
+- the [Aplim](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) flagship project.
+
 ## Multi-modal time-series registration
 
 **Context:** 3D images acquired with various imaging devices or during monitoring experiments often come with different orientations and positions, making it difficult to analyze. Fixing this misalignment in 2D is difficult and become intractable in 3D. In addition, as each modality highlights different structures, images from multiple devices can be very dissimilar. In this situation, structures and phenomenon analysis can be compromised.
