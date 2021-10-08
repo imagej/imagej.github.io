@@ -10,7 +10,7 @@ nav-links: true
 
 You can tell which Java version ImageJ is using by clicking the ImageJ [status bar](/learn#the-status-bar) and looking for the part that says e.g. "Java 1.8.0\_45 \[64-bit\]". The relevant number is the one after "Java 1."—so e.g. "Java 1.8.0\_45" or similar indicates Java 8, while "Java 1.7.0\_79" or similar indicates Java 7.
 
-On macOS, you can use [this script](https://raw.githubusercontent.com/ctrueden/ctr-scripts/master/java-info) to diagnose which versions of Java are installed on your system.
+On macOS, you can use [this script](https://raw.githubusercontent.com/ctrueden/dotfiles/master/bin/java-info) to diagnose which versions of Java are installed on your system.
 
 See also [How do I launch ImageJ with a different version of Java?](/learn/faq#how-do-i-launch-imagej-with-a-different-version-of-java).
 
