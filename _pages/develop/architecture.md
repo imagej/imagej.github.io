@@ -272,28 +272,22 @@ We sometimes use `SNAPSHOT` versions temporarily on topic branches. However, we 
 
 ## Using snapshot couplings during development
 
-For developing several components in parallel, it is very useful to switch to `SNAPSHOT` dependency couplings e.g., to test a [pull request](https://help.github.com/articles/checking-out-pull-requests-locally/).
+For developing several components in parallel, it can be useful to switch to `SNAPSHOT` dependency couplings.
 
-There are two easy ways of going about this:
+You can override the version property of the dependency for which you wish to use a snapshot:
 
-1.  When a small number of snapshot couplings are needed, you can override the version property of the dependency for which you wish to use a snapshot:
-        <properties>
-          <scijava-common.version>LATEST</scijava-common.version>
-          <enforcer.skip>true</enforcer.skip> <!-- ONLY while depending on a SNAPSHOT -->
-        </properties>
-2.  Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a "dev profile" (defined in the [`pom-scijava` parent POM](https://github.com/scijava/pom-scijava/blob/pom-scijava-12.0.0/pom.xml#L2542-L2547)) by creating one or more "dev token" files:
-    -   `~/.scijava/dev.imagej`
-    -   `~/.scijava/dev.imglib2`
-    -   `~/.scijava/dev.scifio`
-    -   `~/.scijava/dev.scijava`
-
-    These files need not have any content; their mere existence will trigger the dev profile associated with the named organization, causing all artifacts of that organization to become coupled as `SNAPSHOT`s.
+```xml
+<properties>
+  <scijava-common.version>LATEST</scijava-common.version>
+  <enforcer.skip>true</enforcer.skip> <!-- ONLY while depending on a SNAPSHOT -->
+</properties>
+```
 
 In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {% include key keys='Alt|F5' %} while selecting the affected project(s) accomplishes this quickly.
 
 {% include notice icon="warning" content='Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. If this happens to you, try specifying the version explicitly e.g. `2.0.0-SNAPSHOT` instead of using `LATEST`.' %}
 
-Either way, ***Be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the main branch, in order to achieve [reproducible builds](#reproducible-builds).
+***Be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the main branch, in order to achieve [reproducible builds](#reproducible-builds).
 
 # Versioning
 
