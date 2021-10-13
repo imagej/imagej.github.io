@@ -257,7 +257,7 @@ It gets more subtle when making heavy use of software libraries (sometimes calle
 Some cardinal reasons to strive for reproducible builds are:
 
 -   Reproducible builds are essential for the scientific method (see sidebar right).
--   It becomes possible to use a [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) development style where the `master` branch is always release ready—or even a {% include wikipedia title='Continuous delivery' text='continuous delivery'%} approach.
+-   It becomes possible to use a [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) development style where the main branch is always release ready—or even a {% include wikipedia title='Continuous delivery' text='continuous delivery'%} approach.
 -   [Debugging with git-bisect](/develop/git/pinpoint-regressions) becomes feasible.
 -   As a consequence, it avoids {% include wikipedia title='Technical debt' text='technical debt'%} in favor of a robust development style.
 -   It attracts more developers to the project, since things "just work" out of the box.
@@ -268,7 +268,7 @@ For the reasons stated above, the SciJava software components strive for reprodu
 
 Each component depends on release [versions](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions) of *all* its dependencies—never on [snapshots](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions) or [version ranges](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges). A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all `<version>` tags specify release versions, never `SNAPSHOT` or `LATEST` versions. We use the [Maven Enforcer Plugin](http://maven.apache.org/enforcer/maven-enforcer-plugin/) to enforce this requirement (though it can be temporarily disabled by setting the `enforcer.skip` property).
 
-We sometimes use `SNAPSHOT` versions temporarily on topic branches. However, we always [rewrite them](/develop/git#rewriting-history) before merging to master, to purge all `SNAPSHOT` references, so that all commits in the history build reproducibly. We use SciJava's [check-branch.sh](https://github.com/scijava/scijava-scripts/blob/1386a7b0bc9e832d45f925202e1382717cf4a706/check-branch.sh) script to ensure all commits on a topic branch build cleanly with passing tests.
+We sometimes use `SNAPSHOT` versions temporarily on topic branches. However, we always [rewrite them](/develop/git#rewriting-history) before merging to main, to purge all `SNAPSHOT` references, so that all commits in the history build reproducibly. We use SciJava's [check-branch.sh](https://github.com/scijava/scijava-scripts/blob/1386a7b0bc9e832d45f925202e1382717cf4a706/check-branch.sh) script to ensure all commits on a topic branch build cleanly with passing tests.
 
 ## Using snapshot couplings during development
 
@@ -293,7 +293,7 @@ In the case of Eclipse, you may need to "Update Maven project" in order to see t
 
 {% include notice icon="warning" content='Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead.' %}
 
-Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](#reproducible-builds).
+Either way, ***Be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the main branch, in order to achieve [reproducible builds](#reproducible-builds).
 
 # Versioning
 
