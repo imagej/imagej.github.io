@@ -28,9 +28,9 @@ This plugin enables user to track pillars with drift correction and visualize th
 
 It can be automatically downloaded and installed by Fiji's updater({% include bc path="Help|Update..." %}). Activate the **PillarTracker** checkbox in *Manage update sites*. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually.
 
-Latest version: [Pillar_Tracker_GUI-1.1.6-SNAPSHOT.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs) (&lt;1 MB)
+Latest version: [Pillar_Tracker_GUI-1.1.6-SNAPSHOT.jar](https://github.com/scottreen/PillarTracker/releases/download/v1.1.6/Pillar_Tracker_GUI-1.1.6-SNAPSHOT.jar) (&lt;1 MB)
 
-[PillarTracker_Documentation.pdf](https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk) (\~3 MB)
+[PillarTracker_Documentation.pdf](https://github.com/scottreen/PillarTracker/releases/download/v1.1.6/documendation.pdf) (\~3 MB)
 
 [Sample_Files.zip](https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE) (61.9 MB)
 
