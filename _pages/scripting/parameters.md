@@ -73,6 +73,26 @@ Different styles are also possible.
 
 <img src="/media/scripting/scriptparameters-integerstyles.jpg" width="450"/>
 
+It is also possible to specify a format with a fixed number of decimals...
+```javascript
+// Specified format
+#@ Double (value=0.0123, persist=false, style="format:#.##") i
+#@ Double (value=0.0123, persist=false, style="format:#.00") j
+#@ Double (value=123.45, persist=false, style="format:#####.#####") k
+#@ Double (value=123.45, persist=false, style="format:00000.00000") l
+```
+
+... in combination with slider or scrollbars:
+```
+// Sliders and scroll bars
+#@ Double (value=1, min=0, max=10, stepSize=0.001, persist=false, style=slider) m
+#@ Double (value=1, min=0, max=10, stepSize=0.001, persist=false, style="slider,format:0.0000") n
+#@ Double (value=1, min=0, max=10, stepSize=0.001, persist=false, style="scroll bar") o
+#@ Double (value=1, min=0, max=10, stepSize=0.001, persist=false, style="scroll bar,format:0.0000") p
+```
+
+Scientific notation can be specified with `format:0.#####E0`
+
 ## Parameter properties
 
 If you look at the [@Parameter annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java), you will notice it has many properties—for example, `name` and `description`.
