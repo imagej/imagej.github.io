@@ -263,10 +263,10 @@ Steps are as follows:
    Eclipse before there will already be a configuration for it. Otherwise you
    can double-click "Maven Build" to create a new run configuration.
 
-3. Add a parameter: `imagej.app.directory` with value:
+3. Add a parameter: `scijava.app.directory` with value:
    `<path/to/ImageJ.app>` (e.g. `/home/hinerm/Fiji.app`)
 
-4. Add a parameter: `imagej.deleteOtherVersions` with value: `always`
+4. Add a parameter: `scijava.deleteOtherVersions` with value: `always`
 
 5. Click `Apply`
 
