@@ -1,31 +1,24 @@
 ---
-mediawiki: MaMuT
 title: MaMuT
-categories: [Uncategorized]
+project: /software/fiji
+description: MaMuT, the plugin to track and lineage cells in large, multi-view images.
+categories: [Tracking]
+artifact: sc.fiji:MaMuT
+logo: /media/icons/mamut.png
 doi: 10.7554/eLife.34410
 ---
 
+*A Fiji plugin for the annotation of massive, multi-view data.*
 
-{% capture maintainer%}
-{% include person id='tinevez' %}
-{% endcapture %}
+## Installation.
 
-{% capture author%}
-{% include person id='tinevez' %}, {% include person id='tpietzsch' %}
-{% endcapture %}
+Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) in the [Fiji updater](/plugins/updater) to get MaMuT.
 
-{% capture source%}
-{% include github org='fiji' repo='MaMuT' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='MaMuT' logo='<img src="/media/icons/mamut.png" title="fig:MaMuT_logo-256x256.png" width="160" alt="MaMuT_logo-256x256.png" />' maintainer=maintainer author=author source=source status='v0.27.0, active' released='06/01/2015' category='Segmentation, Tracking, Plugins' %}
 
-**A Fiji plugin for the annotation of massive, multi-view data. **
-
-Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get it.
 
 ## Publication.
 
-{% include citation %}
+{% include citation doi='10.7554/eLife.34410'%}
 
 ## Presentation.
 
@@ -55,6 +48,3 @@ The following pages are tutorials that will guide you through MaMuT and walk you
 
 -   [Example mamut.properties file](/plugins/mamut/example-properties-file) contains an example of a `mamut.properties` file, that is used to customize the key-bindings in the MaMuT viewer.
 
-## Developer documentation.
-
- 

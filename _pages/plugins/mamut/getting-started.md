@@ -1,6 +1,10 @@
 ---
-mediawiki: Getting_started_with_MaMuT
 title: Getting started with MaMuT
+project: /software/fiji
+description: The main tutorial for the MaMuT plugin.
+categories: [Tracking, Tutorial]
+logo: /media/icons/mamut.png
+doi: 10.7554/eLife.34410
 ---
 
 This page contains a tutorial for the [MaMuT](/plugins/mamut) plugin. It describes and document all its features using a publication related dataset.
@@ -510,11 +514,11 @@ This command really reads into the raw data, and therefore generate ImageJ stack
 
 ## Numerical features.
 
-We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [TrackMate](/plugins/trackmate), but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging.
+We already skimed over numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is directly imported from [TrackMate](/plugins/trackmate), and offers all the features available in TrackMate plus a few ones related to cell lineaging.
 
 Numerical features are automatically kept in sync with the annotation. As soon as you add an annotation or modify and delete and existing one, the recalculation of features is triggered. As mentioned above however, the range display on the main GUI window is not, and you need to click over it to refresh the displayed colormap and its range.
 
-The next paragraphs list and document the current features in MaMuT.
+The next paragraphs list and document some of the features in MaMuT.
 
 ### Spot features.
 
@@ -532,14 +536,14 @@ The next paragraphs list and document the current features in MaMuT.
 
 ### Link features.
 
-|                                                                 |                                                                                                                                                                                                                                                      |
-|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Spot source ID` & `Spot target ID` | The ID of the spot that is the source, respectively the target, of this link. In MaMuT and TrackMate, links have a direction, that follows time.                                                                         |
+|                                     |                                                              |
+| ----------------------------------- | ------------------------------------------------------------ |
+| `Spot source ID` & `Spot target ID` | The ID of the spot that is the source, respectively the target, of this link. In MaMuT and TrackMate, links have a direction, that follows time. |
 | `Link cost`                         | The cost associated to the link. This value is normally set by particle-linking algorithms, that can create links between spots following minimization of global cost. Links created manually get a default value of -1. |
-| `Velocity`                          | The velocity calculated between the source and target spots, in physical units.                                                                                                                                          |
-| `Displacement`                      | The displacement calculated between the source and target spots, in physical units.                                                                                                                                      |
-| `Manual edge color`                 | Life for manual spot color, but for links.                                                                                                                                                                               |
-|                                                                 |                                                                                                                                                                                                                                                      |
+| `Speed`                             | The velocity calculated between the source and target spots, in physical units. |
+| `Displacement`                      | The displacement calculated between the source and target spots, in physical units. |
+| `Manual edge color`                 | Life for manual spot color, but for links.                   |
+|                                     |                                                              |
 
 ### Track features.
 
