@@ -66,8 +66,8 @@ quickly has many advantages:
 
 - **Fewer conflicts.** It avoids conflicts between multiple long-running topic
   branches.
-- **SNAPSHOT builds.** [Travis](/develop/travis) builds the change into the
-  latest SNAPSHOT build, making it available from the
+- **SNAPSHOT builds.** [GitHub Actions](/develop/github-actions) builds the
+  change into the latest SNAPSHOT build, making it available from the
   [SciJava Maven repository](/develop/project-management#maven).
 - **Faster support.** Supporting the community is less convoluted, with changes
   released to users more rapidly. Yes, you can link to changes on a topic
@@ -145,7 +145,7 @@ The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/master/
 -   A tag is created on GitHub to easily reference the release commit.
 -   The "bump to next release cycle" commit is done automatically.
 -   The Maven POM references the correct tag rather than `HEAD`.
--   [Travis CI](/develop/travis) performs the actual release for you, using credentials which are encrypted in the repository itself.
+-   [GitHub Actions](/develop/github-actions) performs the actual release for you, using credentials which are encrypted in the repository itself.
 
 ### Prerequisites
 
@@ -153,7 +153,7 @@ The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/master/
 -   (**optional**) If you want to easily use these scripts from any directory, you can [add the scijava-scripts folder to your PATH](http://askubuntu.com/q/97897).
 -   Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [forum](/discuss) if you need assistance.
 -   If your component is to be released to the SciJava Maven repository, then add the following line to the properties section of your POM: <releaseProfiles>`deploy-to-imagej`</releaseProfiles>
--   Ensure the repository for your project is linked with a [Travis CI](/develop/travis) job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [forum](/discuss).
+-   Ensure the repository for your project is linked with a [GitHub Actions](/develop/github-actions) workflow that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [forum](/discuss).
 
 ### Steps to release
 
@@ -161,7 +161,7 @@ From your project's directory, simply run:
 
     release-version.sh
 
-The script will verify that your master branch is ready to go, then create and push a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging) for the release. [Travis CI](/develop/travis) will then notice the tag and complete the release for you. You should receive an email from Travis after the release is complete indicating whether the build was successful.
+The script will verify that your master branch is ready to go, then create and push a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging) for the release. [GitHub Actions](/develop/github-actions) will then notice the tag and complete the release for you. You should receive an email from GitHub after the release is complete indicating whether the build was successful.
 
 {% include notice icon="info" content='If your project is a [multi-module build](https://maven.apache.org/guides/mini/guide-multiple-modules.html), first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.' %}
 
