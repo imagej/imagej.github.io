@@ -1,24 +1,33 @@
 ---
-mediawiki: Align_RGB_planes
 title: Align RGB planes
+project: ImageJ
 categories: [Color Processing]
+name: Align RGB planes
+website: http://www.mecourse.com/landinig/software/software.html
+team-founders: Gabriel Landini | /people/landinig
+team-leads: Gabriel Landini | /people/landinig
+team-maintainers: Gabriel Landini | /people/landinig
+dev-status: Stable
+source-label: align_rgb.zip
+source-url: http://www.mecourse.com/landinig/software/align_rgb.zip
+release-date: 27 March 2007
 ---
-
-{% include info-box software='ImageJ' name='Align RGB planes' author='Gabriel Landini' maintainer='G. Landini at bham. ac. uk' filename=' [align\_rgb.zip](http://www.mecourse.com/landinig/software/align_rgb.zip)' source='in zip file' released='12 January 2004' latest-version='27 March 2007' status='active' category='Color Processing' website='http://www.mecourse.com/landinig/software/software.html' %}
 
 ## Documentation
 
 From the plugin inline help:
 
-<blockquote>
+<blockquote markdown=1>
 
-<u>Align RGB planes</u> v1.7 by G.Landini Changes the alignment of the RGB planes independently.
+<u>Align RGB planes</u> v1.7 by G.Landini
 
-*Red* *Green* and *Blue* checkboxes switch ON and OFF the planes and undo the alignment since last plane change. Note that when switching planes, the portion of the previously edited plane left outside the image frame is lost. Rotation, Width and Height changes are interpolated (so there is some loss of sharpness) and do not retain the image portions outside the image frame. You can use the **Resize2Rotate** macro to avoid loosing any image data.
+Changes the alignment of the RGB planes independently.
+
+*Red* *Green* and *Blue* checkboxes switch ON and OFF the planes and undo the alignment since last plane change. Note that when switching planes, the portion of the previously edited plane left outside the image frame is lost. Rotation, Width and Height changes are interpolated (so there is some loss of sharpness) and do not retain the image portions outside the image frame. You can use the **Resize2Rotate** macro to avoid losing any image data.
 
 The *Rotate*, *Width* and *Height* sliders set integer values, but fractional values can also be typed in the entry boxes. Just make sure you press {% include key key="RETURN" %} after the number is typed.
 
-The *Revert* button works only with single images, not stacks.
+The {% include button label="Revert" %} button works only with single images, not stacks.
 
 Note: When using stacks, 2 buttons {% include button label="< Prev" %} and {% include button label="Next >" %} are added to the panel. Do not use the slide bar in the stack window, but use those buttons instead.
 
