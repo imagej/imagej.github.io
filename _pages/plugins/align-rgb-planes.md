@@ -3,13 +3,13 @@ title: Align RGB planes
 project: ImageJ
 categories: [Color Processing]
 name: Align RGB planes
-website: http://www.mecourse.com/landinig/software/software.html
+website: https://blog.bham.ac.uk/intellimic/g-landini-software/
 team-founders: Gabriel Landini | /people/landinig
 team-leads: Gabriel Landini | /people/landinig
 team-maintainers: Gabriel Landini | /people/landinig
 dev-status: Stable
 source-label: align_rgb.zip
-source-url: http://www.mecourse.com/landinig/software/align_rgb.zip
+source-url: https://github.com/landinig/IJ-Align_RGB_planes/raw/main/align_rgb.zip
 release-date: 27 March 2007
 ---
 

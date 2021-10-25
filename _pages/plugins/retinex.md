@@ -51,6 +51,6 @@ After Retinex (default parameters): ![](/media/plugins/photo1-retinex.jpg)
 
 ## Homepage
 
-Please find the original page for the Retinex plugin [here](http://www.mecourse.com/landinig/software/retinex/retinex.html).
+Please find the original page for the Retinex plugin [here](https://blog.bham.ac.uk/intellimic/g-landini-software/).
 
  

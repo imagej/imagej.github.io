@@ -8,7 +8,9 @@ artifact: sc.fiji:IJ_Robot
 
 This plugin calls the Robot Java class. The purpose of the plugin is to allow the macro language to control other programs via clicking and key presses.
 
-See also http://www.mecourse.com/landinig/software/software.html
+See also:
+
+{% include link-banner url="https://blog.bham.ac.uk/intellimic/g-landini-software/" %}
 
 ## Use
 
