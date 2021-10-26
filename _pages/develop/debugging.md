@@ -12,24 +12,6 @@ If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/l
 
 To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](/learn/troubleshooting#launching-imagej-from-the-console) page for instructions.
 
-# Debugging plugins in an IDE (Netbeans, IntelliJ, Eclipse, etc)
-
-To debug a plugin in an IDE, you most likely need to provide a `main()` method. To make things easier, we provide helper methods in `fiji-lib` in the class `fiji.Debug` to run plugins, and to load images and run filter plugins:
-
-```java
-import fiji.Debug;
-
-...
-
-public void main(String[] args) {
-    Debug.runFilter("/home/clown/my-profile.jpg", "Gaussian Blur", "radius=2");
-}
-```
-
-You need to replace the first argument by a valid path to a sample image and the second argument by the name of your plugin (typically the class name with underscores replaced by spaces).
-
-If your plugin is not a filter plugin, i.e. if it does not require an image to run, simply use the `Debug.run(plugin, parameters)` method.
-
 ## Attaching to ImageJ instances
 
 Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in `<ImageJ>/plugins/`, and often we want to bundle them as `.jar` files, both of which are incompatible with Eclipse debugging). JDWP (*Java Debug Wire Protocol*) to the rescue!
