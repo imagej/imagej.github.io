@@ -1,7 +1,7 @@
 ---
 title: Dendritic Spine Counter
 description: Streamlined data entry and computer vision assisted operations for counting dendritic spines in neuronal slices
-categories: Image Annotation, Feature Extraction
+categories: [Annotation,Segmentation,Feature Extraction]
 icon: https://raw.githubusercontent.com/Mighty-Data-Inc/dendritic-spine-counter/main/src/main/java/images/icons/dsc--find-spines.png?token=AABJVJLPWILI3C6C4QEA7JDBQDGM4
 ---
 
