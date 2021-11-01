@@ -5,7 +5,6 @@ categories: [Annotation,Segmentation,Feature Extraction]
 icon: https://raw.githubusercontent.com/Mighty-Data-Inc/dendritic-spine-counter/main/src/main/java/images/icons/dsc--find-spines.png?token=AABJVJLPWILI3C6C4QEA7JDBQDGM4
 ---
 
-# Dendritic Spine Counter
 *Dendritic Spine Counter* is a plugin for [ImageJ](https://imagej.net/), 
 the public-domain software for processing and analyzing scientific images.
 This plugin creates a modular wizard dialog to assist neuroscientists
@@ -59,23 +58,10 @@ After you perform any of the above download and installation sequences, you'll n
 ![Dendritic Spine Counter resides in the Plugins dropdown.](https://raw.githubusercontent.com/Mighty-Data-Inc/dendritic-spine-counter/main/documentation/images/01-03.2-Plugins-menu.jpg)
 
 
-## Building from Source Code
-This project is built from a 
-[boilerplate example ImageJ command implementation](https://github.com/imagej/example-imagej2-command). 
-Users should refer to that example project
-to answer any questions about how to configure and build
-this software in your IDE of choice.
-
-The developers of this project used [Eclipse](https://www.eclipse.org/ide/).
-We found [ImageJ's documentation for developing ImageJ in Eclipse](https://imagej.net/imagej-wiki-static/Developing_ImageJ_in_Eclipse)
-to be extremely helpful. In particular, the [section about how to get Eclipse to copy the output JAR directly to 
-ImageJ's plugin directory](https://imagej.net/imagej-wiki-static/Developing_ImageJ_in_Eclipse#Option_2:_Install_dependencies)
-saved us a lot of hassle.
-
+## User Manual
+Please read the usage guide for a detailed walkthrough of how to use the software's features and capabilities.
 
 ## Further Reading 
-### User Manual
-Please read the usage guide for a detailed walkthrough of how to use the software's features and capabilities.
 
 [***Dendritic Spine Counter* Usage Guide**](https://github.com/Mighty-Data-Inc/dendritic-spine-counter/blob/main/documentation/Usage.md)
 
