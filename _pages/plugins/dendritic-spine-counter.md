@@ -5,18 +5,13 @@ categories: [Annotation,Segmentation,Feature Extraction]
 icon: https://raw.githubusercontent.com/Mighty-Data-Inc/dendritic-spine-counter/main/src/main/java/images/icons/dsc--find-spines.png?token=AABJVJLPWILI3C6C4QEA7JDBQDGM4
 ---
 
-*Dendritic Spine Counter* is a plugin for [ImageJ](https://imagej.net/), 
-the public-domain software for processing and analyzing scientific images.
-This plugin creates a modular wizard dialog to assist neuroscientists
+*Dendritic Spine Counter* creates a modular wizard dialog to assist neuroscientists
 with the task of counting dendritic spines in microscope images. It 
-achieves this through the use of computer vision algorithms to partially 
+achieves this through the use of statistics-based 
+computer vision algorithms to partially 
 (and optionally) automate the detection of features, and the organization 
 of user interfaces to provide a quick and convenient way for users to enter, 
 consolidate, tabulate, and save their data.
-
-It is intended to be used by neuroscience researchers,
-and is made available to the neuroscience community under the 
-[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.txt).
 
 It was debuted to the neuroscience community online via a virtual poster
 presentation on Nov 11, 2021, at the [2021 annual meeting of the Society 
@@ -61,9 +56,9 @@ After you perform any of the above download and installation sequences, you'll n
 ## User Manual
 Please read the usage guide for a detailed walkthrough of how to use the software's features and capabilities.
 
-## Further Reading 
-
 [***Dendritic Spine Counter* Usage Guide**](https://github.com/Mighty-Data-Inc/dendritic-spine-counter/blob/main/documentation/Usage.md)
+
+## Further Reading 
 
 ### Whitepaper 
 If you wish to use *Dendritic Spine Counter* in research that you intend to formally submit
