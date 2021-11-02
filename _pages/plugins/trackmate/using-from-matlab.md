@@ -1,19 +1,23 @@
 ---
-mediawiki: Using_TrackMate_from_MATLAB
 title: Using TrackMate from MATLAB
+project: /software/matlab
+description: Using TrackMate from MATLAB.
+categories: [Segmentation,Tracking]
+logo: /media/logos/trackmate-300p.png
+doi: 10.1101/2021.09.03.458852
 ---
 
 This page shows how to use and control TrackMate directly from *within [MATLAB](/scripting/matlab)*. This is great and made possible thanks to the great [Miji](/plugins/miji) tool, that make the Fiji classes visible from [MATLAB](/scripting/matlab). Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [ImageJ-MATLAB](/scripting/matlab). This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
 
 All the following examples assume you have launched [MATLAB](/scripting/matlab), and properly initiated Miji, using for instance
 
-```java
+```matlab
 Miji(false)
 ```
 
 or
 
-```java
+```matlab
 Miji(true)
 ```
 
@@ -27,7 +31,7 @@ Here we open an image though Fiji (not though [MATLAB](/scripting/matlab)) and t
 
 Note that we used the fully qualified name for TrackMate classes, *e.g.* `fiji.plugin.trackmate.TrackMate` instead of `TrackMate`. This is the first way to import classes in a [MATLAB](/scripting/matlab) script. We will see another way later.
 
-```java
+```matlab
 % Get currently selected image
 % imp = ij.IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
 imp = ij.ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
@@ -50,8 +54,7 @@ model.setLogger(fiji.plugin.trackmate.Logger.IJ_LOGGER)
 % Prepare settings object
 %------------------------
       
-settings = fiji.plugin.trackmate.Settings();
-settings.setFrom(imp)
+settings = fiji.plugin.trackmate.Settings( imp );
       
 % Configure detector - We use a java map
 settings.detectorFactory = fiji.plugin.trackmate.detection.LogDetectorFactory();
@@ -124,7 +127,7 @@ display(model.toString())
 
 MATLAB lets you import java names into its workspace, using the `import` command. Check [this](http://www.mathworks.fr/fr/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341). So we could rewrite the above script as follow:
 
-```java
+```matlab
 %----------------------------------
 % Import Fiji and TrackMate classes
 %----------------------------------
@@ -165,8 +168,7 @@ model.setLogger(Logger.IJ_LOGGER)
 % Prepare settings object
 %------------------------
        
-settings = Settings();
-settings.setFrom(imp)
+settings = Settings( imp );
        
 % Configure detector - We use a java map
 settings.detectorFactory = LogDetectorFactory();
@@ -194,7 +196,7 @@ settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
 % not features are calculated. 
     
 % The displacement feature is provided by the TrackDurationAnalyzer.
-settings.addTrackAnalyzer(TrackDurationAnalyzer())
+settings.addAllAnalyzers()
     
 % Configure track filters - We want to get rid of the two immobile spots at 
 % the bottom right of the image. Track displacement must be above 10 pixels.
@@ -239,7 +241,7 @@ display(model.toString())
 
 Because your just ran a [MATLAB](/scripting/matlab) script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
 
-```java
+```matlab
 % ... Do initialization before.
 
 
@@ -247,4 +249,4 @@ trackmate = TrackMate(model, settings);
 trackmate.setNumThreads(3); % As many threads as you want.
 ```
 
-[JeanYvesTinevez](/people/tinevez) ([talk](User_talk_JeanYvesTinevez)) 13:44, 17 January 2017 (CST)
+
