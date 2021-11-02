@@ -7,246 +7,33 @@ logo: /media/logos/trackmate-300p.png
 doi: 10.1101/2021.09.03.458852
 ---
 
-This page shows how to use and control TrackMate directly from *within [MATLAB](/scripting/matlab)*. This is great and made possible thanks to the great [Miji](/plugins/miji) tool, that make the Fiji classes visible from [MATLAB](/scripting/matlab). Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [ImageJ-MATLAB](/scripting/matlab). This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
+This page shows how to use and control TrackMate directly from *within [MATLAB](/scripting/matlab)*. 
+This is great and made possible thanks to the great [ImageJ-MATLAB](/scripting/matlab) extension, made starting in 2016 by Mark Hiner.
+It makes the Fiji classes visible from [MATLAB](/scripting/matlab). 
+Check this page first if you have not already. 
 
-All the following examples assume you have launched [MATLAB](/scripting/matlab), and properly initiated Miji, using for instance
+Apart from that, the collections of examples that follow just look like several scripts. 
+Which is actually the case: We use the [MATLAB](/scripting/matlab) interpreter as a scripting interface for TrackMate, as we did in the [Scripting TrackMate](/plugins/trackmate/scripting) page. 
+We separated this page to highlight [MATLAB](/scripting/matlab) specificities and to exploit its capabilities better.
 
-```matlab
-Miji(false)
-```
-
-or
-
-```matlab
-Miji(true)
-```
-
-if you want the Fiji window to be visible.
-
-Apart from that, the collections of examples that follow just look like several scripts. Which is actually the case: We use the [MATLAB](/scripting/matlab) interpreter as a scripting interface for TrackMate, as we did in the [Scripting TrackMate](/plugins/trackmate/scripting) page. We separated this page to highlight [MATLAB](/scripting/matlab) specificities and to exploit its capabilities better.
 
 ## A simple tracking example
 
-Here we open an image though Fiji (not though [MATLAB](/scripting/matlab)) and track its content. The results are displayed in a Fiji window as well. [MATLAB](/scripting/matlab) is used here only to control TrackMate and does not really plays a role in the process. This example is actually the same that in the first [Scripting TrackMate](/plugins/trackmate/scripting) example.
+Here we open an image though Fiji (not through [MATLAB](/scripting/matlab)) and track its content. 
+The results are displayed in a Fiji window as well.
+[MATLAB](/scripting/matlab) is used here only to control TrackMate and does not really plays a role in the process. 
+This example is actually the same that in the first [Scripting TrackMate](/plugins/trackmate/scripting) example.
 
-Note that we used the fully qualified name for TrackMate classes, *e.g.* `fiji.plugin.trackmate.TrackMate` instead of `TrackMate`. This is the first way to import classes in a [MATLAB](/scripting/matlab) script. We will see another way later.
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/MATLABExampleScript_1.m' %}
 
-```matlab
-% Get currently selected image
-% imp = ij.IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
-imp = ij.ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
-imp.show()
-   
-   
-%----------------------------
-% Create the model object now
-%----------------------------
-   
-% Some of the parameters we configure below need to have
-% a reference to the model at creation. So we create an
-% empty model now.
-model = fiji.plugin.trackmate.Model();
-   
-% Send all messages to ImageJ log window.
-model.setLogger(fiji.plugin.trackmate.Logger.IJ_LOGGER)
-      
-%------------------------
-% Prepare settings object
-%------------------------
-      
-settings = fiji.plugin.trackmate.Settings( imp );
-      
-% Configure detector - We use a java map
-settings.detectorFactory = fiji.plugin.trackmate.detection.LogDetectorFactory();
-map = java.util.HashMap();
-map.put('DO_SUBPIXEL_LOCALIZATION', true);
-map.put('RADIUS', 2.5);
-map.put('TARGET_CHANNEL', 1);
-map.put('THRESHOLD', 0);
-map.put('DO_MEDIAN_FILTERING', false);
-settings.detectorSettings = map;
-   
-% Configure spot filters - Classical filter on quality
-filter1 = fiji.plugin.trackmate.features.FeatureFilter('QUALITY', 1.0, true);
-settings.addSpotFilter(filter1)
-    
-% Configure tracker - We want to allow splits and fusions
-settings.trackerFactory  = fiji.plugin.trackmate.tracking.sparselap.SparseLAPTrackerFactory();
-settings.trackerSettings = fiji.plugin.trackmate.tracking.LAPUtils.getDefaultLAPSettingsMap(); % almost good enough
-settings.trackerSettings.put('ALLOW_TRACK_SPLITTING', true);
-settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
-   
-% Configure track analyzers - Later on we want to filter out tracks 
-% based on their displacement, so we need to state that we want 
-% track displacement to be calculated. By default, out of the GUI, 
-% not features are calculated. 
-   
-% The displacement feature is provided by the TrackDurationAnalyzer.
-settings.addTrackAnalyzer(fiji.plugin.trackmate.features.track.TrackDurationAnalyzer())
-   
-% Configure track filters - We want to get rid of the two immobile spots at 
-% the bottom right of the image. Track displacement must be above 10 pixels.
-filter2 = fiji.plugin.trackmate.features.FeatureFilter('TRACK_DISPLACEMENT', 10.0, true);
-settings.addTrackFilter(filter2)
-   
-   
-%-------------------
-% Instantiate plugin
-%-------------------
-   
-trackmate = fiji.plugin.trackmate.TrackMate(model, settings);
-      
-%--------
-% Process
-%--------
-   
-ok = trackmate.checkInput();
-if ~ok
-    display(trackmate.getErrorMessage())
-end
-
-ok = trackmate.process();
-if ~ok
-    display(trackmate.getErrorMessage())
-end
-      
-%----------------
-% Display results
-%----------------
-    
-selectionModel = fiji.plugin.trackmate.SelectionModel(model);
-displayer =  fiji.plugin.trackmate.visualization.hyperstack.HyperStackDisplayer(model, selectionModel, imp);
-displayer.render()
-displayer.refresh()
-   
-% Echo results
-display(model.toString())
-```
-
-## Using imports in MATLAB
-
-MATLAB lets you import java names into its workspace, using the `import` command. Check [this](http://www.mathworks.fr/fr/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341). So we could rewrite the above script as follow:
-
-```matlab
-%----------------------------------
-% Import Fiji and TrackMate classes
-%----------------------------------
-
-import java.util.HashMap
-import ij.*
-import fiji.plugin.trackmate.*
-import fiji.plugin.trackmate.detection.*
-import fiji.plugin.trackmate.features.*
-import fiji.plugin.trackmate.features.track.*
-import fiji.plugin.trackmate.tracking.*
-import fiji.plugin.trackmate.visualization.hyperstack.*
-
-
-%--------------------
-% Pick a source image
-%--------------------
-
-% Get currently selected image
-% imp = IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
-imp = ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
-imp.show()
-    
-    
-%----------------------------
-% Create the model object now
-%----------------------------
-    
-% Some of the parameters we configure below need to have
-% a reference to the model at creation. So we create an
-% empty model now.
-model = Model();
-    
-% Send all messages to ImageJ log window.
-model.setLogger(Logger.IJ_LOGGER)
-       
-%------------------------
-% Prepare settings object
-%------------------------
-       
-settings = Settings( imp );
-       
-% Configure detector - We use a java map
-settings.detectorFactory = LogDetectorFactory();
-map = HashMap();
-map.put('DO_SUBPIXEL_LOCALIZATION', true);
-map.put('RADIUS', 2.5);
-map.put('TARGET_CHANNEL', 1);
-map.put('THRESHOLD', 0);
-map.put('DO_MEDIAN_FILTERING', false);
-settings.detectorSettings = map;
-    
-% Configure spot filters - Classical filter on quality
-filter1 = FeatureFilter('QUALITY', 1.0, true);
-settings.addSpotFilter(filter1)
-     
-% Configure tracker - We want to allow splits and fusions
-settings.trackerFactory  = fiji.plugin.trackmate.tracking.sparselap.SparseLAPTrackerFactory();
-settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap(); % almost good enough
-settings.trackerSettings.put('ALLOW_TRACK_SPLITTING', true);
-settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
-    
-% Configure track analyzers - Later on we want to filter out tracks 
-% based on their displacement, so we need to state that we want 
-% track displacement to be calculated. By default, out of the GUI, 
-% not features are calculated. 
-    
-% The displacement feature is provided by the TrackDurationAnalyzer.
-settings.addAllAnalyzers()
-    
-% Configure track filters - We want to get rid of the two immobile spots at 
-% the bottom right of the image. Track displacement must be above 10 pixels.
-filter2 = FeatureFilter('TRACK_DISPLACEMENT', 10.0, true);
-settings.addTrackFilter(filter2)
-    
-    
-%-------------------
-% Instantiate plugin
-%-------------------
-    
-trackmate = TrackMate(model, settings);
-       
-%--------
-% Process
-%--------
-    
-ok = trackmate.checkInput();
-if ~ok
-    display(trackmate.getErrorMessage())
-end
- 
-ok = trackmate.process();
-if ~ok
-    display(trackmate.getErrorMessage())
-end
-       
-%----------------
-% Display results
-%----------------
-     
-selectionModel = SelectionModel(model);
-displayer = HyperStackDisplayer(model, selectionModel, imp);
-displayer.render()
-displayer.refresh()
-    
-% Echo results
-display(model.toString())
-```
 
 ## Why is this greater than it seems?
 
-Because your just ran a [MATLAB](/scripting/matlab) script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
+Because your just ran a [MATLAB](/scripting/matlab) script that uses and benefits from multithreading without relying on any toolbox! 
+Here is how to tune the number of threads used by TrackMate:
 
 ```matlab
 % ... Do initialization before.
-
-
 trackmate = TrackMate(model, settings);
 trackmate.setNumThreads(3); % As many threads as you want.
 ```
-
-
