@@ -88,7 +88,7 @@ This is also true if you have custom scripts, macros, etc... if these files are 
 
 
 
-# Tarvis CI
+# Travis CI
 ## Requirements
 
 -   An open-source project hosted on [GitHub](/develop/github)
