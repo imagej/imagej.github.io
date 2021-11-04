@@ -49,7 +49,7 @@ If it was a fast-forward (or if Git said "Everything up-to-date"), you are good 
 ./bin/update-fiji.py <filename>
 ```
 
-It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the *--auto* option of *./bin/update-fiji.py*. **Use with care!**
+It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the `--auto` option of `./bin/update-fiji.py`. **Use with care!**
 
 ## Internals
 

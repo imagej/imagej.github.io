@@ -163,7 +163,7 @@ For ease of use, in addition to their long name (40 hex characters, quite klunky
     git log README
     ```
 
-Note: to disambiguate between start commit and files, put a *--* between commit and/or options and files/directories, e.g. `git log HEAD -5 -- doc`
+Note: to disambiguate between start commit and files, put a `--` between commit and/or options and files/directories, e.g. `git log HEAD -5 -- doc`
 
 # What are branches? Why do I need them?
 

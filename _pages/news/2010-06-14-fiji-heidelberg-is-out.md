@@ -252,7 +252,7 @@ Fiji no longer starts after an update). If you have not updated between April 8,
 
 -   There are functions in *fiji.Main* now to identify and recall AWT components by a "component path" a la "Some Dialog&gt;Panel\[2\]&gt;TextField{Name:}".
 
--   Fiji can be asked to use the G1 garbage collector available since Java 1.6 Update 20, via the **--gc-g1** option (thanks to Albert Cardona).
+-   Fiji can be asked to use the G1 garbage collector available since Java 1.6 Update 20, via the `--gc-g1` option (thanks to Albert Cardona).
 
 -   When developing a in the [Script Editor](/scripting/script-editor), one can see the diff and commit the changes from within the [Script Editor](/scripting/script-editor) now.
 

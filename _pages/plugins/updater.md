@@ -69,7 +69,7 @@ You can also [set up and populate your own update site](/update-sites/setup).
 
 ## Command-line usage
 
-It is possible to drive the Updater through the command-line option *--update*. If you call that without arguments, it will show you what subcommands are available:
+It is possible to drive the Updater through the command-line option `--update`. If you call that without arguments, it will show you what subcommands are available:
 
     ./ImageJ-<platform> --update
 
