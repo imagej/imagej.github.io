@@ -24,4 +24,4 @@ The aim of this page is not to teach how to program in Groovy. This purpose is m
 
 ### Use an IDE for Groovy scripting
 
-As Groovy builds upon [Java](/develop/plugins), it can be use in a full fledged IDE with Fiji. If interested, follow this [tutorial](/scripting/groovy/set-up-ide-groovy)
+As Groovy builds upon [Java](/develop/plugins), it can be use in a full fledged IDE with Fiji. If interested, follow this [tutorial](/scripting/groovy/ides).
