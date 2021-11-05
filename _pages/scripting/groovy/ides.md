@@ -20,26 +20,27 @@ In order to set up this whole guide, you will need 4 parts:
 -   [Groovy](https://groovy.apache.org/download.html) will need to be installed as well. For installation on Linux, please follow [this guide](https://groovy-lang.org/install.html)
 -   [Java](https://www.azul.com/downloads/?package=jdk)
 
-{% include notice icon="info" content='If you want to run the scripts directly in Fiji, you will have to install the same Groovy version than Fiji. At the moment, that version is 3.0.4.' %}
+{% include notice icon="info" content='If you want to run the scripts directly in Fiji, you will have to install the same Groovy version that Fiji does. As of this writing, that version is 3.0.4.' %}
 
 ### Configure the project
 
-When first starting the IDE, select Create New Project and configure it correctly.
-In case the **Project SDK** is not automatically set, select the Java version installed previously. The **Groovy library** will have to be set up and pointed to the version you just downloaded by clicking on *Create*.
+When first starting the IDE, select "Create New Project" and configure it correctly.
 
-<img src="/media/scripting/groovy/configured_project.png" alt="fig:configured_project.png" width="550"/>
+In case the **Project SDK** is not automatically set, select the Java version installed previously. The **Groovy library** will have to be set up and pointed to the version you just downloaded by clicking on {% include button label="Create" %}.
 
-You can then select your project name and location and then click on Finish which will create the project and folder.
+{% include img src="configured_project" width="550px" %}
+
+You can then select your project name and location and then click on {% include button label="Finish" %} which will create the project and folder.
 
 ### Add Fiji dependencies
 
-You are now presented with your newly created project in the main editor window of your IDE. However, Fiji is not yet imported in your project and won't have autocompletion. To do so, go to **File > Project Structure > Modules > Dependencies** and click on the **+** icon and add JAR dependencies. Then select the JAR and the plugin folder of your Fiji.
+You are now presented with your newly created project in the main editor window of your IDE. However, Fiji is not yet imported in your project and won't have autocompletion. To do so, go to {% include bc path="File | Project Structure | Modules | Dependencies" %} and click on the {% include button label="+" %} button and add JAR dependencies. Then select the JAR and the plugin folder of your Fiji.
 
-<img src="/media/scripting/groovy/add_jar_dependencies.png" alt="fig:add_jar_dependencies.png" width="550"/>
+{% include img src="add_jar_dependencies" width="550px" %}
 
 ### Create new script
 
-Now click on **File > New > Groovy Script** to create a new script and you can start typing
+Now click on {% include bc path="File | New | Groovy Script" %} to create a new script and you can start typing
 ```groovy
 import ij.
 ```
@@ -50,8 +51,8 @@ and you should start seeing autocompletion. If it doesn't work, check again the 
 
 #### With the same groovy version than Fiji
 
-If you have installed and configured your IDE with the same Groovy version than Fiji, you should be able to run your script directly through IntelliJ.
+If you have installed and configured your IDE with the same Groovy version that Fiji has, you should be able to run your script directly through IntelliJ.
 
 #### With any groovy version
 
-Another solution to run the script in Fiji is to open the same groovy script in the script editor. If you modify the file in the IDE, save it and then select back the script editor, the file will detect that it has been modified and will ask for refresh. You can then run the script by clicking on the **run** button
+Another solution to run the script in Fiji is to open the same groovy script in the script editor. If you modify the file in the IDE, save it and then select back the script editor, the file will detect that it has been modified and will ask for refresh. You can then run the script by clicking on the {% include button label="Run" %} button.
