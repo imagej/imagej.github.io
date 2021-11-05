@@ -2,6 +2,7 @@
 title: Groovy Scripting
 section: Extend:Scripting:Languages
 project: /software/imagej2
+nav-links: true
 ---
 
 ## Introduction
