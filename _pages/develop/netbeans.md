@@ -15,7 +15,7 @@ This article explains how to install and configure NetBeans for use with [ImageJ
 
 #### Install Java Development Kit
 
-Download and install JDK 6 from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/).
+Download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk).
 
 #### Install NetBeans
 

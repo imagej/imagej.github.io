@@ -9,9 +9,7 @@ This article explains how to install and configure IntelliJ IDEA for use with [I
 
 ## Install and configure IDEA
 
--   **Install Java Development Kit.** Download and install Java SE 8 from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/). Or install it via a package manager, if possible.
-
-<!-- -->
+-   **Install OpenJDK.** Download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk). Or install it via a package manager, if possible.
 
 -   **Install IDEA.** Download and install IDEA from the [IDEA web site](http://www.jetbrains.com/idea/download/).
 

@@ -15,8 +15,7 @@ adjustment for other versions.
 ## Install the Java Development Kit
 
 -	To be safe, since you may need JavaFX (for the GUI) download [Java8 JDK with FX from Azul](https://www.azul.com/downloads/?version=java-8-lts&package=jdk-fx). Make sure to scroll down and choose the appropriate Operating System (Windows, Linux, etc) and Architecture (x86 64 bit for most systems, though older systems may be 32 bit). Pay attention to where you install this, as you will need to find it again within Eclipse!
--   Alternatively, download and install the Java Development Kit (JDK) from the
-    [Java web site](https://www.oracle.com/java/technologies/javase-downloads.html). 
+-   Alternatively, download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk).
 
 ## Install and configure Eclipse
 

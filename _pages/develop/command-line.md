@@ -35,7 +35,7 @@ Install [Git](/develop/git) and [Maven](/develop/maven) using [Homebrew](http://
 
     brew install git maven bash-completion
 
-Download and install [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/) from Oracle.
+Download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk).
 
 </div>
 <div id="linux" class="tabcontent" markdown="1">
