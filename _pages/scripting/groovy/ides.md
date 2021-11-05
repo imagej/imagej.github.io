@@ -7,16 +7,16 @@ nav-links: true
 
 ## Introduction
 
-As Groovy builds upon [Java](/develop/plugins), it can be used in a full fledged IDE with Fiji to have autocompletion and a more powerful environment than the script editor.
+As Groovy builds upon [Java](/develop/plugins), it can be used in a full fledged [IDE](/develop/ides) to have autocompletion and a more powerful environment than the [script editor](/scripting/script-editor).
 
 ## Set up the IDE
 
 ### Requisites
 
-In order to set up this whole guide, you will need 4 parts :
+In order to set up this whole guide, you will need 4 parts:
 
--   [Fiji](https://fiji.sc)
--   An IDE, this guide will use [IntelliJ Community](https://www.jetbrains.com/idea/download/), but it should also be possible using Eclipse
+-   [Fiji](/downloads)
+-   An [IDE](/develop/ides). This guide will use [IntelliJ IDEA Community](/develop/intellij), but it should also be possible using [Eclipse](/develop/eclipse).
 -   [Groovy](https://groovy.apache.org/download.html) will need to be installed as well. For installation on Linux, please follow [this guide](https://groovy-lang.org/install.html)
 -   [Java](https://www.azul.com/downloads/?package=jdk)
 
