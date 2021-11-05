@@ -12,30 +12,9 @@ If your Java code seems to have bottlenecks that make it run slow, you need to *
 
 Use [HPROF](http://java.sun.com/developer/technicalArticles/Programming/HPROF.html), a profiler included in Sun's Java since version 1.5.
 
-## Java Mission Control
-
-Starting with Java 1.7 update 40, Oracle bundles [Java Mission Control](http://www.oracle.com/technetwork/java/javaseproducts/mission-control/index.html) with their JREs/JDKs. This provides incredibly powerful monitoring/profiling capabilities, but it is notably lacking from OpenJDK.
-
-The most important part of Java Mission Control to enable efficient profiling is the *Flight Recorder*. The flight recorder has to be enabled explicitly at startup:
-
-```shell
-java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder [...]
-```
-The easiest way to use the flight recorder to profile a certain code path, say, from Eclipse, is to write a JUnit test (make sure that the time it runs is dominated by the code paths you want to profile!) and then add a run configuration for it whose JVM arguments include:
-
-```shell
--Dscijava.log.level=error \
--XX:+UnlockCommercialFeatures -XX:+FlightRecorder \
--XX:StartFlightRecording=name=MyRecording,duration=999s,filename=/tmp/a1.jfr,settings=profile
-```
-
-(Of course you want to avoid copying this blindly and adjust in particular the **duration** and the **filename** parameters.)
-
-After the JUnit test finishes, call *Java Mission Control* via the `jmc` executable (it lives in the JDK's *bin/* directory), {% include bc path='File | Open File'%} the *.jfr* file, click on the *Code* button in the center of the Mission Control window, select the *Hot Methods* tab of the big panel (confusingly, the tabs are at the bottom) and inspect the stack traces.
-
 ## VisualVM
 
-Use [VisualVM](http://download.oracle.com/docs/cd/E17409_01/javase/6/docs/technotes/guides/visualvm/index.html) (a tutorial can be found [here](http://java.dzone.com/articles/profile-your-applications-java)), which is a graphical alternative to HPROF, available in Sun's Java since version 6 update 7.
+Use [VisualVM](https://visualvm.github.io/) (a tutorial can be found [here](http://java.dzone.com/articles/profile-your-applications-java)), which is a graphical alternative to HPROF.
 
 See also [Rejeev Divakaran's detailed instructions on memory profiling with VisualVM](http://rejeev.blogspot.com/2009/04/analyzing-memory-leak-in-java.html).
 

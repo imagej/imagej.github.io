@@ -16,7 +16,7 @@ In order to set up this whole guide, you will need 4 parts :
 -   [Fiji](https://fiji.sc)
 -   An IDE, this guide will use [IntelliJ Community](https://www.jetbrains.com/idea/download/), but it should also be possible using Eclipse
 -   [Groovy](https://groovy.apache.org/download.html) will need to be installed as well. For installation on Linux, please follow [this guide](https://groovy-lang.org/install.html)
--  [Java](https://www.oracle.com/java/technologies/downloads/)
+-   [Java](https://www.azul.com/downloads/?package=jdk)
 
 {% include notice icon="info" content='If you want to run the scripts directly in Fiji, you will have to install the same Groovy version than Fiji. At the moment, that version is 3.0.4.' %}
 
