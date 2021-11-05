@@ -1,7 +1,7 @@
 ---
 title: Set up IDE for Groovy
 section: Extend:Scripting:Languages
-project: /software/imagej2
+project: /software/fiji
 nav-links: true
 ---
 
