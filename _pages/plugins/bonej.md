@@ -668,9 +668,8 @@ A 2D or 3D binary image.
 -   **HU Calibrated**: Allows you to enter your thresholds in Hounsfield units (HU) or uncalibrated units
 -   **Bone Min**: minimum pixel value to use in calculations
 -   **Bone Max**: maximum pixel value to use in calculations
--   **Slope**: $$m$$ where physical density $$= m * pixel value + c$$
--   **Y Intercept**: $$c$$ where physical density $$= m * pixel value + c$$
--   **Note**: density-weighted calculations are only applied to centroid determination at present
+-   **Slope**: $$m$$ where physical density $$= m × pixel value + c$$
+-   **Y Intercept**: $$c$$ where physical density $$= m × pixel value + c$$
 -   **Partial volume compensation**: Use model that assumes Gaussian blur of imaging modality and linear transform between pixel value and sample 'density' to correct for blurred and pixelated images (e.g. small bone in clinical CT)
 -   **Background**: pixel value that corresponds to zero bone density (could be the 'fat', 'air' or 'muscle' pixel value)
 -   **Foreground**: pixel value that corresponds to 100% bone density
