@@ -28,11 +28,22 @@ If you find Labkit useful for your research, please cite it:
    5. Restart Fiji
 3. Find Labkit in the plugin menu of Fiji, under "Labkit".
 
-## Documentation, tutorials and guidelines
+## Tutorials
 
-- The [documentation](/plugins/labkit/documentation) provides details of Labkit functionalities 
-- In the [tutorials page](/plugins/labkit/tutorials), you fill find diverse general and advanced tutorials, from manual and automatic segmentation, to macro, GPU-acceleration and running labkit on HPC clusters.
-- The [guidelines](/plugins/labkit/guidelines) page gives insight in how to improve the automatic segmentation
+- [Pixel classification (Quick start tutorial)](plugins/labkit/pixel-classification-tutorial)
+- [Manual segmentation (Quick start tutorial)](plugins/labkit/manual-segmentation-tutorial)
+- [Curation of segmentation results](plugins/labkit/curation-tutorial)
+- [What's the best way to annotation image for pixel classification?](plugins/labkit/scribble-guideline)
+- [Improve results or performance by customizing the feature settings.](plugins/labkit/feature-settings-guideline)
+- [GPU accelleration](plugins/labkit/gpu-accelleration-tutorial)
+- [Using Labkit in ImageJ Macro](plugins/labkit/batch-processing)
+- [How to run Labkit on an HPC cluster to precess huge data](plugins/labkit/hpc-cluster)
+
+## Documentation
+
+- [UI features & short cuts.](documentation)
+- [FAQ](faq)
+- [Pixel classification algorithm description](pixel-classification-algorithm)
 
 ## FAQ
 
@@ -55,7 +66,6 @@ Yes, simple click the "Add label" button this will add a new class. You are free
 **How can I change the color of the labels?**
 
 Just click on the colored rectangle left of the labels name. This will show a color selection dialog.
-
 
 ## Keyboard Shortcuts
 
