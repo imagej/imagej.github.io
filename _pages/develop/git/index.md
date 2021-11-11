@@ -28,6 +28,7 @@ This web site has lots of tutorials on Git; see the left sidebar.
 
 One of the most powerful things Git can do is rewrite a series of patches after the fact. This is a powerful technique worth learning. There are many guides available here and elsewhere:
 
+* [Learn Git Branching](https://learngitbranching.js.org/) is an interactive web tool where you can work through exercises covering a range of topics, including rebasing and rewriting history.
 * [Modifying your commits](/develop/improving-the-code#modifying-your-commits) section of the [Contributing to a plugin](/develop/improving-the-code) page
 *   [Advanced topic branch editing](/develop/git/topic-branches#advanced-topic-branch-editing-ka-rebase-on-drugs) section of the [Git topic branches](/develop/git/topic-branches) tutorial
 *   [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history/) tutorial from Atlassian
