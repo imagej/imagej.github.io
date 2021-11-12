@@ -3,7 +3,7 @@ title: ComsystanJ
 categories: [Complexity, Fractal dimension, Entropy, Image analysis, Time signal analysis]
 icon: /media/plugins/comsystanj/comsystan-favicon.png
 source-label: on GitHub
-source-url: https://https://github.com/comsystan/comsystanj
+source-url: https://github.com/comsystan/comsystanj
 team-founders: 
  - Helmut Ahammer
 team-developers: 
@@ -13,7 +13,7 @@ team-maintainers:
 ---
 
 <!-- ![Image](/media/plugins/comsystanj/comsystan-logo-grey46.png)-->
-<img src="media/plugins/comsystanj/comsystan-logo-grey46.png" width=100 height=100/>
+{% include img src="comsystan-logo-grey46" width=100 height=100 %}
 
 ## About ComsystanJ
 ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji plugins to compute the complexity, fractal dimension and other nonlinear measures of images and signals. It is recommended to use it with Fiji. Developed and maintained by Helmut Ahammer.
