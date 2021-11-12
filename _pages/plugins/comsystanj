@@ -1,5 +1,6 @@
 ---
 title: ComsystanJ
+description: Complexity analysis
 categories: [Complexity, Fractal dimension, Entropy, Image analysis, Time signal analysis]
 icon: /media/plugins/comsystanj/comsystan-favicon.png
 source-label: on GitHub
@@ -12,7 +13,6 @@ team-maintainers:
  - Helmut Ahammer
 ---
 
-<!-- ![Image](/media/plugins/comsystanj/comsystan-logo-grey46.png)-->
 {% include img src="comsystan-logo-grey46" width=100 height=100 %}
 
 ## About ComsystanJ
