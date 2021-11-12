@@ -3,7 +3,7 @@ title: Labkit - Automatic Segmentation - Quick Start Tutorial
 ---
 # Labkit - Automatic Segmentation - Quick Start Tutorial
 
-Follow these steps to segment an image:
+This quick start tutorial shows you how to segment an image within seconds using the [Labkit](index) plugin in Fiji.
 
 1.  Open an image in ImageJ.
 2.  Start Labkit by selecting {% include bc path="Plugins | Labkit | Open Current Image With Labkit" %} from the menu.
@@ -13,6 +13,8 @@ Follow these steps to segment an image:
 6.  In the side bar of Labkit, under the heading "Segmentation", there is a button named "Labkit Pixel Classifier". Click the button.
 7.  you will find an entry "Labkit Pixel Classifier \#1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
 8.  From Labkit's main menu select {% include bc path="Segmentation | Show Segmentation Result in ImageJ" %}, to export your segmentation into ImageJ.
+
+(For more tutorials and installation instructions click [here](/plugins/labkit))
 
 As video:
 ![labkit-quick-start](https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif)

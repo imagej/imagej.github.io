@@ -4,6 +4,10 @@ title: Labkit - Manual Segmentation - Quick Start Tutorial
 
 # Labkit - Manual Segmentation - Quick Start Tutorial
 
+This quick start tutorial shows you how to manually segment an image using the [Labkit](index) plugin for Fiji.
+
+(For installation instructions and more tutorials click [here](index))
+
 1.  Start Fiji, open your image, start Labkit (`Plugins > Labkit > Open Current Image With Labkit`)
 2.  Select `+ Add label`
 3.  Use the `Draw` button (pencil icon) to mark the contour around any one object instance
