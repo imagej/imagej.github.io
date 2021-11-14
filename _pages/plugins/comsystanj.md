@@ -1,5 +1,4 @@
 ---
-mediawiki: ComsystanJ
 title: ComsystanJ
 description: Complexity analysis
 categories: [Complexity, Fractal dimension, Entropy, Image analysis, Time signal analysis]
