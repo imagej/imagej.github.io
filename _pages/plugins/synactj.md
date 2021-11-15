@@ -4,7 +4,11 @@ icon: /media/icons/synActJ_logo.png
 categories: [plugin]
 ---
 
-{% include info-box software='ImageJ' name='SynActJ' author='Christopher Schmied' maintainer='Christopher Schmied' source=source status='stable' %}
+{% capture maintainer%} {% include person id='schmiedc' %} {% endcapture %}
+
+{% capture author%} {% include person id=schmiedc' %} {% endcapture %}
+
+{% capture source%} {% include github org='schmiedc' repo='SynActJ' %} {% endcapture %} {% include info-box software='Fiji' name='SynActJ' maintainer=maintainer author=author source=source status='active' released='2021' category='Plugins' %}
 
 # Synaptic Activity in ImageJ (SynActJ)
 
