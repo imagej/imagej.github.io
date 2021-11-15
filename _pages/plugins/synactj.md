@@ -1,6 +1,6 @@
 ---
 title: SynActJ
-icon: https://github.com/schmiedc/SynActJ/blob/master/src/main/resources/LogoSynActJ1.png
+icon: /media/icons/synActJ_logo.png
 categories: [plugin]
 project: /plugins/Cellular Imaging
 pom-url: https://github.com/schmiedc/SynActJ/blob/master/pom.xml
@@ -14,12 +14,19 @@ We tested the workflow with movies of pHluorin or calcium sensors.
 
 <img src="https://schmiedc.github.io/SynActJ/images/main/teaser.png" alt="Intro" class="inline"/>
 
-## Documentation
+## Documentation & source code
 
 Have a look at the github pages site for more information:<br>
 [https://schmiedc.github.io/SynActJ/](https://schmiedc.github.io/SynActJ/)
 <br/>
 <br/>
+The code is published free and open source under the [MIT license](https://github.com/schmiedc/SynActJ/blob/master/LICENSE).<br/>
+Please find the source code of the Fiji plugin here:<br/>
+https://github.com/schmiedc/SynActJ
+<br/>
+<br/>
+The source code of the R analysis can be found here:<br/>
+https://github.com/schmiedc/SynActJ_Shiny
 
 ## Core features
 - Java Swing based graphical user interface
