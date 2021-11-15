@@ -2,8 +2,6 @@
 title: SynActJ
 icon: /media/icons/synActJ_logo.png
 categories: [plugin]
-project: /plugins/Cellular Imaging
-pom-url: https://github.com/schmiedc/SynActJ/blob/master/pom.xml
 ---
 
 # Synaptic Activity in ImageJ (SynActJ)
