@@ -8,6 +8,8 @@ categories: [plugin]
 
 {% capture author%} {% include person id=schmiedc' %} {% endcapture %}
 
+{% capture source%} {% include source='https://github.com/schmiedc/SynActJ' %} {% endcapture %} 
+
 {% capture source%} {% include github org='schmiedc' repo='SynActJ' %} {% endcapture %} {% include info-box software='Fiji' name='SynActJ' maintainer=maintainer author=author source=source status='active' released='2021' category='Plugins' %}
 
 # Synaptic Activity in ImageJ (SynActJ)
@@ -30,7 +32,7 @@ Please find the source code of the Fiji plugin here:<br/>
 <br/>
 <br/>
 The source code of the R analysis can be found here:<br/>
-https://github.com/schmiedc/SynActJ_Shiny(https://github.com/schmiedc/SynActJ_Shiny
+[https://github.com/schmiedc/SynActJ_Shiny](https://github.com/schmiedc/SynActJ_Shiny)
 
 ## Core features
 - Java Swing based graphical user interface
