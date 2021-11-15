@@ -8,8 +8,6 @@ categories: [plugin]
 
 {% capture author%} {% include person id=schmiedc' %} {% endcapture %}
 
-{% capture source%} {% include source='https://github.com/schmiedc/SynActJ' %} {% endcapture %} 
-
 {% capture source%} {% include github org='schmiedc' repo='SynActJ' %} {% endcapture %} {% include info-box software='Fiji' name='SynActJ' maintainer=maintainer author=author source=source status='active' released='2021' category='Plugins' %}
 
 # Synaptic Activity in ImageJ (SynActJ)
