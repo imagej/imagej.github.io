@@ -4,6 +4,8 @@ icon: /media/icons/synActJ_logo.png
 categories: [plugin]
 ---
 
+{% include info-box software='ImageJ' name='SynActJ' author='Christopher Schmied' maintainer='Christopher Schmied' source=source status='stable' %}
+
 # Synaptic Activity in ImageJ (SynActJ)
 
 SynActJ is an image and data analysis workflow that allows to analyze synaptic activity. 
@@ -20,11 +22,11 @@ Have a look at the github pages site for more information:<br>
 <br/>
 The code is published free and open source under the [MIT license](https://github.com/schmiedc/SynActJ/blob/master/LICENSE).<br/>
 Please find the source code of the Fiji plugin here:<br/>
-https://github.com/schmiedc/SynActJ
+[https://github.com/schmiedc/SynActJ](https://github.com/schmiedc/SynActJ)
 <br/>
 <br/>
 The source code of the R analysis can be found here:<br/>
-https://github.com/schmiedc/SynActJ_Shiny
+https://github.com/schmiedc/SynActJ_Shiny(https://github.com/schmiedc/SynActJ_Shiny
 
 ## Core features
 - Java Swing based graphical user interface
