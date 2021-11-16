@@ -38,7 +38,7 @@ Deploying your library to a [Maven](/develop/maven) repository makes it availabl
 
 ## Testing things which cannot run headless
 
-If your tests require a display (i.e.: they do not pass when run [headless](/learn/headless)), you can will get errors during the build process such as: 
+If your tests require a display (i.e.: they do not pass when run [headless](/learn/headless)), you will get errors during the build process such as: 
 
      No X11 DISPLAY variable was set, but this program performed an operation which requires it.
      Error:  myTest  Time elapsed: 0.097 s  <<< ERROR!
