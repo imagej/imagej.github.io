@@ -16,7 +16,7 @@ categories: [Automation,Analysis,Filtering,Segmentation]
 
 ## TAPAS : An integrated tool for batch processing
 
-Updated content will be available at https://mcib3d.frama.io/tapas-doc/
+Updated content will be available at [Framagit](https://mcib3d.frama.io/tapas-doc/)
 
 **TAPAS** (Towards an Automated Processing and Analysis System) is a framework for processing and analysis workflow for multi-dimensional images. A workflow is a series of modules linked together to process an image, each module should perform one simple task.
 
