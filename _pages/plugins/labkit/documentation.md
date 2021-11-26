@@ -1,8 +1,8 @@
 ---
-title: Labkit Documentation
+title: Labkit documentation
 ---
 
-# Labkit Documentation
+# Documentation
 
 ## Interface
 
