@@ -77,17 +77,24 @@ The dimensionality 2d/3d and a list of sigma values.
 ## Notations
 * Let $$w_x$$ and $$w_y$$ denote the size of the pixels in $$x$$ and $$y$$, usually we use $$w_x = w_y = 1$$. For volumetric images, $$w_x$$, $$w_y$$, $$w_z$$ denote the size of the voxels. For anisotropic $$z$$ sampling $$w_z \neq 1$$ is used.
 * Each sigma value in the list is used to blur the input images with an according Gaussian blur filter. This produces $$N$$ differently blurred versions of the input image which we will denote by $$G_i$$:
-  $$\begin{aligned}G_i := \mathrm{gauss}_{\sigma_i} I \quad \mathrm{for} \quad i=1,...,N\end{aligned}$$
+
+  $$\G_i := \mathrm{gauss}_{\sigma_i} I \quad \mathrm{for} \quad i=1,...,N$$
+  
 * Additional we define $$G_0 := I$$ to be the non blurred input image.
 * We donate the first order partial derivatives of these images by $$\partial_x G_i$$ and $$\partial_y G_i$$.
   They are calculated by convolution of images with a central differences kernel:
-  $$\begin{aligned}partial_x G_i = {1 \over w_x} [-0.5 \ 0 \  0.5] \ast G_i\end{aligned}$$
+  
+  $$\partial_x G_i = {1 \over w_x} [-0.5 \ 0 \  0.5] \ast G_i$$
+  
   We also use the partial derivative in $$z$$ for volumetric images: $$\partial_z G_i$$
 * Similarely we denote the second oder partial by $$\partial^2_x G_i$$
   They are calculated by convolving the image with a kernel $$[1 \ -2 \ 1]$$:
-  $$\begin{aligned}partial^2_x G_i = {1 \over w_x^2}[1 \ -2 \ 1] \ast G_i\end{aligned}$$
+  
+  $$\partial^2_x G_i = {1 \over w_x^2}[1 \ -2 \ 1] \ast G_i$$
+  
 * The mixed second order derivative are denoted $$\partial_x \partial_y G_i$$ and they are calculated by two consequetive convolutions of the input image, with a kernel $$[-0.5 \ 0 \ 0.5]$$
-  \[\partial_x \partial_y G_i := {1 \over w_y}[-0.5 \ 0 \ 0.5]_y \ast \left( {1 \over w_x}[-0.5 \ 0 \ 0.5]_x \ast G_i \right)\]
+
+  $$\partial_x \partial_y G_i := {1 \over w_y}[-0.5 \ 0 \ 0.5]_y \ast \left( {1 \over w_x}[-0.5 \ 0 \ 0.5]_x \ast G_i \right)$$
 
 ## Feature Filters
 
