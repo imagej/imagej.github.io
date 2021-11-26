@@ -87,7 +87,7 @@ The dimensionality 2d/3d and a list of sigma values.
   They are calculated by convolving the image with a kernel $$[1 \ -2 \ 1]$$:
   $$\begin{aligned}partial^2_x G_i = {1 \over w_x^2}[1 \ -2 \ 1] \ast G_i\end{aligned}$$
 * The mixed second order derivative are denoted $$\partial_x \partial_y G_i$$ and they are calculated by two consequetive convolutions of the input image, with a kernel $$[-0.5 \ 0 \ 0.5]$$
-  $$\begin{aligned}partial_x \partial_y G_i := {1 \over w_y}[-0.5 \ 0 \ 0.5]_y \ast \left( {1 \over w_x}[-0.5 \ 0 \ 0.5]_x \ast G_i \right)\end{aligned}$$
+  \[\partial_x \partial_y G_i := {1 \over w_y}[-0.5 \ 0 \ 0.5]_y \ast \left( {1 \over w_x}[-0.5 \ 0 \ 0.5]_x \ast G_i \right)\]
 
 ## Feature Filters
 
