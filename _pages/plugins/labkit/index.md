@@ -41,7 +41,7 @@ If you find Labkit useful for your research, please cite it:
 
 ## Documentation
 
-- [UI features & short cuts.](documentation)
+- [UI features & short cuts](documentation)
 - [FAQ](faq)
 - [Pixel classification algorithm description](pixel-classification-algorithm)
 
