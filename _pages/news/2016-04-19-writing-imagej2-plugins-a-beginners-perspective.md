@@ -323,15 +323,15 @@ DemoPlugin
 |       |-- java
 |       |   !-- MyPlugin.java
 |       !-- resources
-|           !-- lena.tif
+|           !-- sample-image.tif
 ```
 
-After compiling your java files, Maven automatically generates the content of the `target` folder. Therefore: never commit any files from `target` to Git! You can tell Git to ignore these files by using a [.gitignore](https://help.github.com/articles/ignoring-files/) file (usually you start by copying [an existing one](https://github.com/imagej/imagej/blob/95722503b4d2243b2818f8a7b5c2cdf863c5da69/.gitignore) from another project)
+After compiling your java files, Maven automatically generates the content of the `target` folder. Therefore: never commit any files from `target` to Git! You can tell Git to ignore these files by using a [.gitignore](https://help.github.com/articles/ignoring-files/) file (usually you start by copying [an existing one](https://github.com/imagej/imagej2/blob/95722503b4d2243b2818f8a7b5c2cdf863c5da69/.gitignore) from another project)
 
 ```
 !-- target
     |-- classes
-    |   |-- lena.tif
+    |   |-- sample-image.tif
     |   |-- META-INF
     |   |   !-- json
     |   |       !-- org.scijava.plugin.Plugin

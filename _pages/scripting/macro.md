@@ -498,7 +498,7 @@ setBatchMode(false);
 
 ## Make a false-colored montage
 
-Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Lena example...
+Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Clown example...
 
 ```javascript
 function simplifyColors() {
