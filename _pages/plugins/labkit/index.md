@@ -30,7 +30,7 @@ If you find Labkit useful for your research, please cite it:
 
 ## What It Looks Like
 
-<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" style="width: 75%; height: 75%"/>
+<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" style="width: 1068px; height: 735px"/>
 
 ## Tutorials
 
