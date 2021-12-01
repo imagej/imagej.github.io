@@ -28,6 +28,10 @@ If you find Labkit useful for your research, please cite it:
    5. Restart Fiji
 3. Find Labkit in the plugin menu of Fiji, under "Labkit".
 
+## What It Looks Like
+
+<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" style="width: 75%; height: 75%"/>
+
 ## Tutorials
 
 - [Automatic segmentation (Quick start tutorial)](/plugins/labkit/pixel-classification-tutorial)
