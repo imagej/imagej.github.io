@@ -17,4 +17,5 @@ This quick start tutorial shows you how to segment an image within seconds using
 (For more tutorials and installation instructions click [here](/plugins/labkit))
 
 As video:
+
 ![labkit-quick-start](https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif)
