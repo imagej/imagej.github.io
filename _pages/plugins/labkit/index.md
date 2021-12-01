@@ -30,7 +30,7 @@ If you find Labkit useful for your research, please cite it:
 
 ## Tutorials
 
-- [Automatic segmentaiton (Quick start tutorial)](/plugins/labkit/pixel-classification-tutorial)
+- [Automatic segmentation (Quick start tutorial)](/plugins/labkit/pixel-classification-tutorial)
 - [Manual segmentation (Quick start tutorial)](/plugins/labkit/manual-segmentation-tutorial)
 - [Curation of segmentation results](/plugins/labkit/curation-tutorial)
 - [What's the best way to annotate an image for pixel classification?](/plugins/labkit/scribble-guideline)
