@@ -30,15 +30,14 @@ If you find Labkit useful for your research, please cite it:
 
 ## What It Looks Like
 
-<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" style="width: 1068px; height: 735px"/>
+<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" style="width: 712px; height: 490px"/>
 
 ## Tutorials
 
 - [Automatic segmentation (Quick start tutorial)](/plugins/labkit/pixel-classification-tutorial)
 - [Manual segmentation (Quick start tutorial)](/plugins/labkit/manual-segmentation-tutorial)
 - [Curation of segmentation results](/plugins/labkit/curation-tutorial)
-- [What's the best way to annotate an image for pixel classification?](/plugins/labkit/scribble-guideline)
-- [How to improve results or performance by customizing the feature settings?](/plugins/labkit/feature-settings-guideline)
+- [How to improve automatic segmentation results?](/plugins/labkit/guideline)
 - [GPU accelleration](/plugins/labkit/gpu-accelleration-tutorial)
 - [Using Labkit in ImageJ Macro](/plugins/labkit/batch-processing)
 - [How to run Labkit on an HPC cluster to precess huge data?](/plugins/labkit/hpc-cluster)
