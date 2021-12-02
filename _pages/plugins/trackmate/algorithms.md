@@ -313,10 +313,10 @@ The user is asked for a maximal allowed linking distance (entered in physical un
 2.  If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to [infinity](http://docs.oracle.com/javase/6/docs/api/java/lang/Double.html#positive-infinity) (*i.e* the blocking value). If not,
 3.  For each feature in the map, a penalty p is calculated as  
     $$ p = 3 \times W \times \frac{ | f_1-f_2|}{f_1+f_2} $$  
-    where W is the factor associated to the feature in the map. This expression is such that:
+    where W is the weight associated to the feature in the map. This expression is such that:
     -   there is no penalty if the 2 feature values f1 and f2 are the same;
-    -   with a factor of 1, the penalty is 1 is one value is the double of the other;
-    -   the penalty is 2 if one is 5 times the other one.
+    -   with a weight of 1, the penalty is 1 if one feature value is the double of the other;
+    -   the penalty is 2 if one feature value is 5 times largerr than the other one.
 4.  All penalties are summed, to form P = (1 + ∑ p )
 5.  The cost is set to the square of the product: C = ( D × P )²
 
