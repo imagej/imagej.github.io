@@ -219,13 +219,13 @@ These projects are examples of specific *use cases* within the ImageJ API.
 
 ### Working with user input
 
--   [Look at all the widgets!](https://github.com/imagej/tutorials/tree/master/maven-projects/widget-demo/src/main/java)
+-   [Look at all the widgets!](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto/ui)
 -   [Previewable commands](https://github.com/imagej/tutorials/tree/master/maven-projects/commands-with-preview/src/main/java)
 
 ### Plugin development
 
 -   [Create a new plugin type](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type/src/main/java)
--   [Create a new preprocessor](https://github.com/imagej/tutorials/tree/master/maven-projects/custom-preprocessor-plugin/src/main/java)
+<!-- -   [Create a new preprocessor](https://github.com/imagej/tutorials/tree/master/maven-projects/custom-preprocessor-plugin/src/main/java) -->
 
 ## Starting your own plugin
 
