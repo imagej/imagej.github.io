@@ -1,6 +1,6 @@
 ---
 title: Align RGB planes
-project: ImageJ
+project: /software/imagej
 categories: [Color Processing]
 name: Align RGB planes
 website: https://blog.bham.ac.uk/intellimic/g-landini-software/
