@@ -661,7 +661,7 @@ defines a scaling by (0.5, 0.8, 1.5) followed by a rotation by (-10, 20, 30) in 
 
 The corresponding homogeneous 4x4 (for 3D, or 3x3 for 2D) matrix operation is always indicated on the fly. Of course, the specification of the 4x4 (or 3x3) homogeneous matrix itself is possible as well. Moreover, the transformation of cartesian to cylindrical or spherical coordinates or vice versa is supported. Also, resampling into another pixel size is feasible.
 
-{% include thumbnail src='/media/plugins/xfig6-15-lenna.jpg' title='Well known Lenna image (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).'%}
+{% include thumbnail src='/media/plugins/xfig6-15-cow.jpg' title='Cow at Swiss alps (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).'%}
 
 ### Wavelets 2D
 
@@ -669,7 +669,7 @@ This program provides wavelets decomposition and reconstruction of 2D images. Th
 
 After a wavelet decomposition, the wavelet specifications (e.g. "db2" for the Daubechies 2 wavelets) together with the normalization parameters (boundary handling, output normalization) are stored to the image as additional info. Thereby if a wavelet decomposition is saved to TIFF image file format, this additional image information is being stored to the image file header. Consequently, the respective wavelet settings will be automatically recovered when the wavelet plugin is launched to such image.
 
-The example to the right shows a Haar wavelet decomposition of the "Lenna" image which is well known in the wavelet community. A graphically nice (top center) as well as a reconstructible version (bottom center) is presented. Reconstruction (right) is possible only from the reconstructible version. Since "Lenna" is a colour image and colour images are usually resolved with 8 bits per R,G,B-channel only, the reconstruction is not perfect but still acceptable for this example. In contrast, gray level images result in wavelet decompositions in floating point format and therefore allow perfect reconstructions.
+The example to the right shows a Haar wavelet decomposition of an image. A graphically nice (top center) as well as a reconstructible version (bottom center) is presented. Reconstruction (right) is possible only from the reconstructible version. Since colour images are usually resolved with 8 bits per R,G,B-channel only, the reconstruction is not perfect but still acceptable for this example. In contrast, gray level images result in wavelet decompositions in floating point format and therefore allow perfect reconstructions.
 
 ## Reconstruction
 
