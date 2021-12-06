@@ -11,6 +11,8 @@ release-date: 06-December-2021
 support-status: maintained actively as of December 2021
 ---
 
+{% include info-box software='ImageJ' name='Xlib' author='Beat Münch' maintainer='Beat Münch' source='https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp' released='1 June 2015' latest-version='6 December 2021' status='stable' category='Any' %}
+
 ## Overview of 'Xlib'
 
 A set of prospective ImageJ plugins is maintained by the group for 3D-Microscopy, Analysis and Modeling of the Laboratory for Concrete and Construction Chemistry at Empa Dübendorf, Switzerland. The plugins include automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, as well as tools for interactive segmentation, visualization and management of image data.
@@ -128,19 +130,7 @@ The filter works in 2D as well as in 3D.
 
 ### Canny Edge
 
-In 1986, J. Canny has proposed an excellent edge detection filter [Canny1986] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
-
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-2.jpg' title='Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes.'%}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include img align="right" src="/media/plugins/xfig6-2.jpg" caption='Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes.' %} In 1986, J. Canny has proposed an excellent edge detection filter [Canny1986] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
 
 The results of a Canny filtered image of a valve image is shown in the upper figure (top: original image). The gradient magnitude and angles are presented (2nd row), as well as the magnitudes after non-maxima suppression and also after joining the connected regions (3rd row).
 
@@ -162,19 +152,7 @@ Expectation-maximization (EM) clustering [Dempster1977] iteratively finds the ma
 
 The plugin also allows clustering by using ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for Developing KDD-Applications Supported by Index-Structures, developed by the ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) team http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data mining software written in Java. In addition to multiple features, ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) wrapper for the clustering of images is included into the ["Image Clustering"](#image-clustering) plugin. As soon as the respective elki.jar bundle is copied to the "plugins" directory of the current ImageJ version, image clustering with ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) is possible. The required specification parameters for the ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) clustering algorithm together with its parameters (details see ![here|30px](/media/plugins/xfig6-3-3.jpg) [ELKI](http://elki.dbs.ifi.lmu.de) documentation) can be defined by the user.
 
-As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
-
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-3-2.jpg' title='Results from clustering of the 15-dimensional image data space displayed in the figure above. First row: k-means for 2 (left), 3, 5 and 16 (right) clusters. Second row: mean shift for the seeking perimeters 100 (left), 70, 60 and 50 (right). Third row: fuzzy c-means clustering for 5 clusters at fuzziness 1.1 (left) and 4.0, 16 clusters at fuzziness 2.0, and its fuzziness membership values (right).'%}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include thumbnail src='/media/plugins/xfig6-3-2.jpg' title='Results from clustering of the 15-dimensional image data space displayed in the figure above. First row: k-means for 2 (left), 3, 5 and 16 (right) clusters. Second row: mean shift for the seeking perimeters 100 (left), 70, 60 and 50 (right). Third row: fuzzy c-means clustering for 5 clusters at fuzziness 1.1 (left) and 4.0, 16 clusters at fuzziness 2.0, and its fuzziness membership values (right).'%} As an example, ESEM images of a natural cement analogue (Maqarin, Jordania) is provided in the figure to the upper right. A backscatter electron microscope (BSE) image (top left) and image maps acquired from energy-dispersive X-ray spectroscopy (EDX) at the same location forked into 14 different elements (see figure above) are used as the basis for clustering. Thus together with the BSE image, the clustering is achieved from a 15-dimensional vector space. In the figure below, some results from different clustering algorithms and parameter settings are displayed. The first row shows results from the k-means, the second one from the mean shift, and the third one from fuzzy c-means clustering. K-means clustering (1st row) requires the number of clusters as an input parameter. The results for 2 (left), 3, 5 and 16 (right) clusters are provided. Slightly different results provides mean shift clustering (2nd row) which requires the size of the seeking perimeter as input parameter. It is determined at 100 (left), 70, 60 and at 50 (right). Fuzzy c-means clustering (3rd row) requires the number of clusters and the fuzziness as input parameters. The results are displayed for 5 clusters at fuzziness 1.1 (left) and 4.0, for 16 clusters at fuzziness 2.0, as well as an image showing its fuzziness membership to the cluster with the highest respective ranking at each location (right).
 
 Clustering can also be applied to one dimensional spaces (i.e. from a single gray level image), or for color images where the R, G, B color channels provide a 3-dimensional vector space. Clustering thus provides an elegant way for automatic segmentation of 2D images or 3D image volumes containing different phases.
 
