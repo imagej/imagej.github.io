@@ -11,7 +11,7 @@ release-date: 06-December-2021
 support-status: maintained actively as of December 2021
 ---
 
-{% include info-box software='ImageJ' name='Xlib' author='Beat Münch' maintainer='Beat Münch' source='(https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp)' released='1 June 2015' latest-version='6 December 2021' status='stable' category='Any' %}
+{% include info-box software='ImageJ' name='Xlib' author='Beat Münch' maintainer='Beat Münch' source='[https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp]' released='1 June 2015' latest-version='6 December 2021' status='stable' category='Any' %}
 
 ## Overview of 'Xlib'
 
@@ -130,7 +130,7 @@ The filter works in 2D as well as in 3D.
 
 ### Canny Edge
 
-{% include thumbnail align="right" src='/media/plugins/xfig6-2.jpg' caption='Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes.' %} In 1986, J. Canny has proposed an excellent edge detection filter [Canny1986] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
+{% include thumbnail align="right" src='/media/plugins/xfig6-2.jpg' title='Valve image (left) and the results from the Canny filter. Top: original image, 2nd row: magnitudes of gradient vectors, angles of gradient vectors, 3rd row: magnitudes after non-maxima suppression, and the connected regions after double thresholding the maximal magnitudes.' %} In 1986, J. Canny has proposed an excellent edge detection filter [Canny1986] that due to its performance became famous. The filter is based on a fast numeric approach for the calculation of the direction-dependent first derivative, i.e. the gradient vector function of an image. The Canny filter is well known for 2D imaging, yet it is barely supported in 3D. This plugin supports both, the 2D and the 3D implementation. It additionally supports preceding Gauss filtering, optional non-maxima suppression for the extraction of the edges, as well as a function for double thresholding and joining the connected regions. Double thresholding means that an upper threshold is used for extracting the relevant edges, while a lower threshold is provided for adding residing connections between the extracted edges. The plugin returns the magnitudes and the angles of the gradient vector functions.
 
 The results of a Canny filtered image of a valve image is shown in the upper figure (top: original image). The gradient magnitude and angles are presented (2nd row), as well as the magnitudes after non-maxima suppression and also after joining the connected regions (3rd row).
 
