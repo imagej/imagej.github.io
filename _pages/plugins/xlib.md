@@ -7,8 +7,8 @@ name: Xlib
 team-founders: Beat Münch
 team-leads: Beat Münch
 team-maintainers: Beat Münch
-release-date: 09-May-2020
-support-status: maintained actively as of May 2020
+release-date: 06-December-2021
+support-status: maintained actively as of December 2021
 ---
 
 ## Overview of 'Xlib'
@@ -118,17 +118,7 @@ The mechanism of heat diffusion has been used as the basics for image filtering.
 
 The corresponding partial differential equation had first been numerically approached in 1990 by a fast algorithm of Perona and Malik [Perona1990] by defining the elliptic diffusion shapes by means of simple box filtering. Way better results can be obtained with the technique of Tschumperlé and Deriche [Tschmperlé2005] from 2005 by setting the tensor field according to the Eigenvalues and Eigenvectors in order to drive the diffusion. As expected, this approach is however more time consuming.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-1.jpg' title='CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right).'%}<br></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include img align="left" name="spiral left" src="/media/plugins/xfig6-1.jpg" caption="CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right)." %}
 
 The filter is a brilliant edge preserving / smoothing filter for intelligent noise reduction. In particular, the implementation of Tschumperlé and Deriche outperforms other approaches in respect of the distinction between coherent edges and noise. The figure above shows a comparison between anisotropic diffusion (bottom right) and median filtering (bottom left) of a CT slice from concrete after strong alcali aggregate reactions (top). Anisotropic diffusion filtering is outstanding by better preserving the cracks while flattening inhomogeneities due to noise (please note center regions).
 
