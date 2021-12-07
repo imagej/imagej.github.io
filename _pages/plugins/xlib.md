@@ -232,7 +232,9 @@ The following command makes use of java-internal classes.  Since global import s
   
 displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  Like in the the previous example, it is important to set the argument "Format for output image" to "int color" in order to enable color output.
 
-{% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The following operation makes use of plain integer values for the color definition.  The value "-16777216" represents black, the value "-65536" red, the value "-16711936" green, the value "-16776961" blue color.
+The following operation makes use of plain integer values for the color definition.
+
+{% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The value "-16777216" represents black, the value "-65536" red, the value "-16711936" green, the value "-16776961" blue color.
 ```python
 (i0==255)? -16711936 : 
 	((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
