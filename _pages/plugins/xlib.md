@@ -166,9 +166,9 @@ Clustering can also be applied to one dimensional spaces (i.e. from a single gra
 
 ### Disconnect Particles
 
-In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented [Münch2006]. If requires a parameter k ranking from [0...1] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
-
 {% include thumbnail align="right" src="/media/plugins/xfig6-4.jpg" title="3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right)." %}
+
+In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented [Münch2006]. If requires a parameter k ranking from [0...1] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
 
 Results from cement grains acquired by 3D FIB-nanotomography are displayed in the figure above. To the left, the original data volume is visualized. The center image shows the mask after image thresholding. Particles close to each other are erroneously interconnected at various locations. The image to the right shows the volume disconnected at k=0.7 and labeled subsequently.
 
@@ -176,33 +176,13 @@ Results from cement grains acquired by 3D FIB-nanotomography are displayed in th
 
 ### Distance Transform
 
-Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach [Saito1994,Meijster2000] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
+{% include thumbnail align="right" src="/media/plugins/xfig6-5-1.jpg" title="Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right)." %}
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-5-1.jpg' title='Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right).'%}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach [Saito1994,Meijster2000] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
 
 In the upper figure, a binary mask from cement particles (left) is processed by using the Euclidian distance transform (center). The transform of the inverse mask is also given (right). The distances are visualized by using a color lookup table from blue (low values) to red (high values). The effect of different distance metrics is displayed in the lower figure. A simple mask consisting of 3 single black dots is provided (left). Next to it, the results of the Euclidian, Chessboard and Citymap (right) distance transform is shown.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig6-5-2.jpg' title='Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform.'%}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include thumbnail align="right" src="/media/plugins/xfig6-5-2.jpg" title="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
 
 -   {% include citation doi='10.1016/0031-3203(94)90133-3' %}
 
