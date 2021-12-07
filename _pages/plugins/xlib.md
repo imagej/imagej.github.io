@@ -216,7 +216,7 @@ Many image calculators allowing various arithmetic operations are already implem
   
 Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are the ones to be processed.  Subsequently, the above command will return an image providing the mean value of images i0, i1 and i2 (see rightmost image to the right).  
 
-The following command makes use of java-internal classes.  Since global import statements of many useful classes are usually not defined per default, the full path to the java library should be provided.
+The following command makes use of java-internal classes.  Since global import statements of many useful classes are usually not defined per default, the full path to the java library (here: "java.awt.Color") should be provided.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
 ```python
