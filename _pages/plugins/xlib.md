@@ -205,7 +205,7 @@ Many image calculators allowing various arithmetic operations are already implem
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-01.jpg' title='left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2' %}
 ```python
-(i0 + i1 + i2) / 3                                                                
+(i0 + i1 + i2) / 3
 ```
   
   
@@ -232,7 +232,7 @@ The following command makes use of java-internal classes.  Since no global impor
   
 displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
+{% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
 ```python
 (i0==255)? -16711936 : 
 	((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
@@ -270,7 +270,7 @@ will calculate a copy of the image i0 overlayed by a horizontal ramp.
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %} And the code line
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %} And the code line
 ```python     
 x // i0
 ```
@@ -306,7 +306,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %} The command
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %} The command
 ```python
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
