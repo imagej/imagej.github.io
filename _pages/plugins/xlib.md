@@ -239,9 +239,7 @@ Math.pow(i0, 2.)
 
 yields the power of two of the image i0.  It makes sense to set the value of "Format for output image" to "float gray" (instead of "byte gray") in order to avoid exceeding the value range.
 
-Moreover, the operation
-
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} Moreover, the operation 
 ```python
 i0 + x
 ```
@@ -259,9 +257,7 @@ creates the ramp only.
 
 In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java). The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0. Hence, the content of the image i0 is actually not being used, it serves as a template for the resulting size only.  
 
-The following code 
-
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %} The following code 
 ```python     
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 ```
