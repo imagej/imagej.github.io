@@ -458,20 +458,20 @@ This plugin supports conventional as well as geometric 2D and 3D median filterin
 
 The example color image (top right) shows multiple noisy phases. Conventional median filtering on each of the R,G,B bands separately yields the top right image. As can be perceived due to the RGB bands, new colors appear that are not present on the original image. Multidimensional geometrical filtering (in the RGB case, 3-dimensional) by using the Weiszfeld algorithm yields the bottom left image. When additionally confining to already existing color vectors only, the bottom right image results.
 
--   {% include citation last='Weiszfeld' first='E V' title='Sur le point pour lequel la somme des distances de n points donnes est minimum' journal='The Tohoku Mathematical Journal' volume='43' pages='355-386' year='1937' %} <!-- TODO: online ISSN 1881-2015; but no DOI -->
+<!-- -   {% include citation last='Weiszfeld' first='E V' title='Sur le point pour lequel la somme des distances de n points donnes est minimum' journal='The Tohoku Mathematical Journal' volume='43' pages='355-386' year='1937' %} TODO: online ISSN 1881-2015; but no DOI -->
 -   {% include citation doi='DOI:10.1007/s10479-008-0352-z' %}
 
 ### Remove Background
 
 If an image is subject to consistent global shifts of the image values depending on the location, this might be due to inconsistencies in the data acquisition rather than to real changes in the material properties. In that case, background removal techniques might be appropriate. A typical example is image data from FIB-nanotomography (FIB-nt). Thereby, FIB-nt is applied onto cubes that are engraved into the flat sample surface prior to data acquisition. Due to shadowing effects, the subsequent 3D data acquisition lacks in loss of brightness and contrast towards the lower boundaries of the slices. This erroneously causes systematic inhomogeneities of the image values impeding reliable quantitative imaging. Correction of such deficits can be obtained by determining a global polynomial of low degree over the entire image and by subsequently subtracting the values of the polynomial function from the original image. The global polynomial function is determined by performing least squares optimization. Accordingly, systematic brightness variations can be globally corrected. The necessary assumption is that the overall image values remain more or less constant over the entire image, at least in an average sense.
 
-{% include img src="xfig6-09-1.jpg" width="500" caption="FIB-nt image with strong shadowing effects (top left), its thresholding (top centre), global polynomial of degree 1 (top right), its subtraction from the original image (bottom left), and its thresholding (bottom right)." %}
+{% include img src="xfig6-9-1.jpg" width="500" caption="FIB-nt image with strong shadowing effects (top left), its thresholding (top centre), global polynomial of degree 1 (top right), its subtraction from the original image (bottom left), and its thresholding (bottom right)." %}
 
 An example from a FIB-nt image and its shadowing effects is given in the above figure (top left). After thresholding, the systematic brightness loss towards the lower boundary becomes obvious (top center). The determination of a global polynomial of degree 1 results in a background image (top right). After subtraction (bottom left), the brightness drop disappears, as subsequent thresholding (bottom right) approves.
 
 In addition to the global homogeneization of the brightness values, the plugin also allows the correction of contrast values. However as an additional prerequisite, the image must be assumed to consist of a certain number of phases of more or less stable image values. In that case, a global polynomial can be calculated from the phase containing the lowermost image values, and a second polynomial from the phase containing the uppermost image values. The drifts are corrected by flattening both polynomial functions. The procedure hereby requires the number of phases as input parameter.
 
-{% include img src="xfig6-09-2.jpg" width="500" caption="FIB-nt image of a fuel cell and its shadowing effects (left), and the image after correction (right) by assuming three existing phases." %}
+{% include img src="xfig6-9-2.jpg" width="500" caption="FIB-nt image of a fuel cell and its shadowing effects (left), and the image after correction (right) by assuming three existing phases." %}
 
 The results of this kind of correction is displayed in the above figure. To the left, the original image is displayed. It consists of three different phases. Towards the lower border, a substantial drop of both, brightness and contrast occurs. Assuming a three phase image and after correction, the corrected image appears to be free from brightness and contrast drops (right).
 
@@ -571,3 +571,91 @@ Examples of the 2D-to-3D reconstruction are given in the figure above for a stru
 ## Evaluation
 
 The plugins of this section achieve quantitative evaluation on image values and structures. This is an important topic in image processing in different scientific fields. A result from quantitative evaluation is not an image as it is from filtering, but rather a number representing some structural characteristics.
+
+### Particle Size Distribution
+
+This plugins calculates the particle size distribution (PSD) from a stack of images containing already segmented and labeled particles [Münch2006]. Either single images containing 2D particles, or stacks of images representing 3D volumes can be processed.
+
+The following features can be calculated:
+
+-   particle ID
+-   particle volume
+-   cumulative particle volume
+-   particle surface area
+-   cumulative particle surface area
+-   mean particle radius
+-   number of particle borders
+-   particle count
+-   cumulative particle count
+-   particle count weighted according to the number of boundaries
+-   cumulative particle count weighted according to the number of boundaries
+-   boundary value in case of clustering
+-   cluster mean value in case of clustering
+
+Correction of particles that are clipped at the borders is also possible. The correction is applied to the resulting pore radii only (i.e. not for the pore volume). The plugin allows cumulative integration of the particle volumes and surfaces starting from either small or large particles. The program plots out the resulting parameter fields.
+
+Per default, the function plots a parameter set for each particle separately. Additionally, the program allows different types of clustering of the parameter sets. Clustering means summing up or averaging the parameters within intervals yielding a histogram.
+
+An example of a 2D particle image, of its mask and some particle evaluations is given in the figure below.
+
+{% include img src="xfig8-1.jpg" width="500" caption="Grainy structure (top left), segmented mask of the grains (top right), and the evaluation of its particle size distribution (center and bottom)." %}
+
+-   {% include citation doi='10.1111/j.1551-2916.2006.01121.x' %}
+
+### Phase Image Evaluation
+
+This plugins provides an evaluation of phase images [Leemann2006, Leemann2010] containing labeled phases. For instance, labeled images might be created interactively with the help of the plugin ["Segment Phases 3D"](#segment-phases-3d), or even automatically with the plugin ["Cluster Image"](#cluster-image).
+
+The phase image evaluation calculates some parameters of all phases, including the percental phase contents and the phase areas. Additionally, mean image values for each phase can be provided, if one or more gray value images associated to the current phase image are provided.
+
+Furthermore, the plugin supports a peeling evaluation. Peeling starts from a specifically defined phase to its surroundings and requires a set of peeling radii defining toroidal regions around the starting phase. The peeling evaluation yields a data line at each peeling radius, including the peeling distance, number of pixels, mean value, and the percental phase contents for each phase. For image stacks, true 3D evaluations can be performed.
+
+{% include img src="xfig8-2.jpg" width="500" caption="Phase image (top, left) and the parameters provided for the phase image evaluation (top, right). The resulting plots and the list of parameters are displayed below." %}
+
+An image defining some phases is given in the above figure (top, left). The cyan colored center particle is supposed to act as the location from where peeling is initiated. The percental areas of the phases "Pores", "Matter", "Artificial" and "Unspecified" are plotted below. As it is evident from the calling parameters (see above figure, top, right) two gray level data images associated to the pore mask are provided (center field). Their mean values depending on the peeling radius are displayed in the graph at the bottom. The parameters are provided in a text file as well (bottom).
+
+-   {% include citation doi='10.1016/j.cemconres.2006.02.010' %}
+
+-   {% include citation doi='10.1016/j.cemconcomp.2009.11.007' %}
+
+### Pore Size Distribution
+
+This plugins calculates the pore size distribution (PSD) for a pore structure [Münch2008], i.e. the distribution of the pore radii. The PSD can be calculated either in 2D or in 3D if the program is running on a stack of images. The pore masks must be prepared beforehand such that a simple thresholding procedure is capable to separate the locations of the pore from the material. The PSD calculation will be running on the pore phase.
+
+PDS's can be defined in different ways and must be chosen according to the specific requests [Münch2008]. The following PSD types can be calculated:
+
+-   Discrete PSD: the generally used definition of a PSD from image data. The pores are regarded as discrete object. At each single pore, its pore area or pore volume is calculated and the radius of its circle- or sphere-equivalent object given.
+-   Continuous PSD: the pore space is categorized into regions of different radii in the sense that the regions can be filled with balls of different radii. The sizes of those radii are then attached to the respective locations. The histogram of radii then acts as continuous PSD.
+-   Continuous PSD with MIP simulation: same PSD definition as for the continuous PSD. However, the balls of different radii are intruded into the pore volume from one of the faces of the image cube (3D), or from one of the edges of the image (2D), respectively. This definition of the PSD corresponds to the pore size data that is retrieved by mercury intrusion porosimetry (MIP).
+
+{% include img src="xfig8-3.jpg" width="500" caption="3D volume of cement paste (OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) acquired by FIB-nanotomography (top) and its pore size distributions of varying definition (bottom, see referenced paper)." %}
+
+The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](/scripting/matlab)).
+
+-   {% include citation doi='10.1111/j.1551-2916.2008.02736.x' %}
+
+## Editors and Viewers
+
+This section contains plugins that are designed for user-interactive visualization and data processing on 2D slices and 3D volumes. They therefore don't just support a unique interaction on some image data, but they provide engines supporting an interactive dialog between the computer and the user.
+
+### Display Volume
+
+This plugin provides an orthogonal slicer for image volumes. The top view (xy), front view (xz) and side view (yz) of the volume are displayed at a specific point, the center point at startup. The point then can be moved by mouse interaction in one of the views while the remaining views keep track of the changes. Thereby, any x,y,z-location in the 3D volume can easily be focused and displayed. The image value at the current position is always plotted to the ImageJ window.
+
+As soon as the plugin is activated, the respective image stack disappears. Likely, as the orthogonal slicer window is closed, the respective image stack reappears again and the current slice position is selected.
+
+As the plugin is activated, the orthogonal slicer acts like a common image stack, that is, any filter operations or plugins can be applied to either a single slice or to the entire volume. One of the restrictions is that overlays cannot be handled with this plugin and like this, selection of ROIs (i.e. with the selection tools) are not supported.
+
+Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
+
+{% include img src="xfig9-1.jpg" width="500" caption="Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top)." %}
+
+As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#pore-size-distribution) section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
+
+<figure><img src="/media/plugins/xfig9-2.jpg" width="180" /></figure>
+
+### Edit Label Region
+
+This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images). Label images are images holding a set of regions at one specific gray level or color per region (example see figure in ["Disconnect Particles"](#disconnect-particles), right). Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported. There is also an operation for deleting objects smaller than a certain size. For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D. The interface of the engine is visualized in the figure to the right.
+
+{% include thumbnail src='/media/plugins/xfig9-3.jpg' title='Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#phase-image-evaluation)).'%}
