@@ -207,13 +207,7 @@ Many image calculators allowing various arithmetic operations are already implem
 ```python
 (i0 + i1 + i2) / 3
 ```
-  
-  
-  
-  
-  
-  
-  
+
 Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are the ones to be processed.  Subsequently, the above command will return an image providing the mean value of images i0, i1 and i2 (see rightmost image to the right).  
 
 The following command makes use of java-internal classes.  Since global import statements of many useful classes are usually not defined per default, the full path to the java library (here: "java.awt.Color") should be provided.
@@ -223,13 +217,7 @@ The following command makes use of java-internal classes.  Since global import s
 (i0 > 170)? 
 	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
 ```
-  
-  
-  
-  
-  
-  
-  
+
 displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  Like in the the previous example, it is important to set the argument "Format for output image" to "int color" in order to enable color output.
 
 The following operation makes use of plain integer values for the color definition.
@@ -241,37 +229,21 @@ The following operation makes use of plain integer values for the color definiti
 ```
 
 takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  Like in the the previous example, this operation requires setting the argument "Format for output image" to "int color".
-  
-  
-  
-  
-  
-  
-  
-  {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
 ```java
 Math.pow(i0, 2.)
 ```
 
-yields the power of two of the image i0.  
-  
-  
-  
-  
-  
-  
+yields the power of two of the image i0.  It makes sense to set the value of "Format for output image" to "float gray" (instead of "byte gray") in order to avoid exceeding the value range.
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} Or the operation
 ```python
 i0 + x
 ```
+
 will calculate a copy of the image i0 overlayed by a horizontal ramp.  
-  
-  
-  
-  
-  
-  
-  
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %} And the code line
 ```python     
 x // i0
@@ -280,45 +252,28 @@ x // i0
 creates the ramp only.
 
 In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java). The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0. Hence, the content of the image i0 is actually not being used, it serves as a template for the resulting size only.  
-  
-  
-  
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %} The code
 ```python     
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 ```
 
 calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  
-  
-  
-  
-  
-  
-  
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The line
 ```python
 (i0 >= 128)? 255 : 0
 ```
 
 creates a binary image mask by thresholding the image i0 with the value 128.  
-  
-  
-  
-  
-  
-  
-  
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %} The command
 ```python
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
 ```
 creates an image of the same size as i0 containing a circular mask around point (100, 200). The comment "// i0" is necessary for the definition of the image size to the size of i0.  
-  
-  
-  
-  
-  
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %}
 The code
 
@@ -327,11 +282,7 @@ The code
  Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
 ```
 takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).  
-  
-  
-  
-  
-  
+
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %}
 Finally,
 
@@ -362,10 +313,7 @@ return new Object[] { mm, null };
 ```
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-14.jpg' title='left: image i3, center: image i5, right: image i5 embedded at the center area of image i3' %} Counts all pixels (or voxels) in the image (or volume) with a value larger or equal 10.  
-  
-  
-  
-  
+
 Or the code
 
 ```java
