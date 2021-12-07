@@ -211,11 +211,14 @@ Many image calculators allowing various arithmetic operations are already implem
   
   
   
+  
+  
+  
 Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are the ones to be processed.  Subsequently, the above command will return an image providing the mean value of images i0, i1 and i2 (see rightmost image to the right).  
 
 The command
 
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
+{% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
 ```python
 (i0 > 170)? 
 	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
@@ -224,7 +227,10 @@ The command
   
   
   
-displays a mask where regions higher than 170 are red.  
+  
+  
+  
+  displays a mask where regions higher than 170 are red.  
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
 ```python
@@ -237,7 +243,10 @@ takes three binary images i0, i1, i2 and creates a colored mask out of it (see r
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
+  
+  
+  
+  {% include thumbnail align="right" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
 ```java
 Math.pow(i0, 2.)
 ```
