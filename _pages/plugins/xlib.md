@@ -633,29 +633,3 @@ PDS's can be defined in different ways and must be chosen according to the speci
 The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](/scripting/matlab)).
 
 -   {% include citation doi='10.1111/j.1551-2916.2008.02736.x' %}
-
-## Editors and Viewers
-
-This section contains plugins that are designed for user-interactive visualization and data processing on 2D slices and 3D volumes. They therefore don't just support a unique interaction on some image data, but they provide engines supporting an interactive dialog between the computer and the user.
-
-### Display Volume
-
-This plugin provides an orthogonal slicer for image volumes. The top view (xy), front view (xz) and side view (yz) of the volume are displayed at a specific point, the center point at startup. The point then can be moved by mouse interaction in one of the views while the remaining views keep track of the changes. Thereby, any x,y,z-location in the 3D volume can easily be focused and displayed. The image value at the current position is always plotted to the ImageJ window.
-
-As soon as the plugin is activated, the respective image stack disappears. Likely, as the orthogonal slicer window is closed, the respective image stack reappears again and the current slice position is selected.
-
-As the plugin is activated, the orthogonal slicer acts like a common image stack, that is, any filter operations or plugins can be applied to either a single slice or to the entire volume. One of the restrictions is that overlays cannot be handled with this plugin and like this, selection of ROIs (i.e. with the selection tools) are not supported.
-
-Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
-
-{% include img src="xfig9-1.jpg" width="500" caption="Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top)." %}
-
-As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#pore-size-distribution) section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
-
-<figure><img src="/media/plugins/xfig9-2.jpg" width="180" /></figure>
-
-### Edit Label Region
-
-This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images). Label images are images holding a set of regions at one specific gray level or color per region (example see figure in ["Disconnect Particles"](#disconnect-particles), right). Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported. There is also an operation for deleting objects smaller than a certain size. For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D. The interface of the engine is visualized in the figure to the right.
-
-{% include thumbnail src='/media/plugins/xfig9-3.jpg' title='Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#phase-image-evaluation)).'%}
