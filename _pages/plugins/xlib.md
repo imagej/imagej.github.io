@@ -203,10 +203,9 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
 
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-01.jpg' title='' %}
-
 [right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xfig6-7-01.jpg) For instance,
 
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-01.jpg' title='left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2' %}
 ```python
 (i0 + i1 + i2) / 3
 ```
@@ -215,6 +214,7 @@ will return an image providing the mean value of the images i0, i1 and i2 (see r
 
 [right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red](Image_xFig6_7_02.jpg) The operation
 
+<img src="/media/plugins/xfig6-7-02.jpg" title="left: image i0, right: mask where regions higher than 170 are colored in red" width="50" alt="xFig6-7-02.jpg" />
 ```python
 (i0 > 170)? 
 	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
