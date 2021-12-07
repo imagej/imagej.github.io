@@ -441,3 +441,133 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 ```
 This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
+
+### Labeling 2D 3D
+
+Particle analysis requires labeling of the previously determined particle mask which has been obtained by some type of image segmentation technique, e.g. by thresholding to mention the most simple one. The binary particle mask allows evaluation of the particles only globally. By labeling the particles, each particle is assigned a unique ID. Labeling is the prerequisite for evaluations considering local values such as particle size, diameter or other shape parameters on the single objects. This plugin implements the labeling of disconnected objects in both, 2D or 3D binary masks. The binarization from gray level images occurs via providing a lower and an upper threshold.
+
+{% include img src="xfig6-8" width="400" caption="Particle image (left) and its labeling (right)" %}
+
+An example of labeling is given in the center and right images in the ["Disconnect Particles"](#disconnect-particles) section, where the center image shows the particle mask before the disconnection procedure and before labeling. The disconnection procedure separates the single particles. After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
+
+### Median 2D 3D
+
+This plugin supports conventional as well as geometric 2D and 3D median filtering for images and image volumes. The geometric median filtering is achieved according to the algorithm of E.V.Weiszfeld [Weiszfeld1937]. Unlike the conventional median filtering, geometric median filtering can be achieved for a multidimensional vector space rather than for a one-dimensional set of values only. That is, if multiple images exist at a single location, they can be filtered by using the common N-dimensional geometrical distance measure for finding the median.
+
+{% include img src="xfig6-09-1-phasesmedianfiltering" width="500" caption="Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors." %}
+
+The example color image (top right) shows multiple noisy phases. Conventional median filtering on each of the R,G,B bands separately yields the top right image. As can be perceived due to the RGB bands, new colors appear that are not present on the original image. Multidimensional geometrical filtering (in the RGB case, 3-dimensional) by using the Weiszfeld algorithm yields the bottom left image. When additionally confining to already existing color vectors only, the bottom right image results.
+
+-   {% include citation last='Weiszfeld' first='E V' title='Sur le point pour lequel la somme des distances de n points donnes est minimum' journal='The Tohoku Mathematical Journal' volume='43' pages='355-386' year='1937' %} <!-- TODO: online ISSN 1881-2015; but no DOI -->
+-   {% include citation doi='DOI:10.1007/s10479-008-0352-z' %}
+
+### Remove Background
+
+If an image is subject to consistent global shifts of the image values depending on the location, this might be due to inconsistencies in the data acquisition rather than to real changes in the material properties. In that case, background removal techniques might be appropriate. A typical example is image data from FIB-nanotomography (FIB-nt). Thereby, FIB-nt is applied onto cubes that are engraved into the flat sample surface prior to data acquisition. Due to shadowing effects, the subsequent 3D data acquisition lacks in loss of brightness and contrast towards the lower boundaries of the slices. This erroneously causes systematic inhomogeneities of the image values impeding reliable quantitative imaging. Correction of such deficits can be obtained by determining a global polynomial of low degree over the entire image and by subsequently subtracting the values of the polynomial function from the original image. The global polynomial function is determined by performing least squares optimization. Accordingly, systematic brightness variations can be globally corrected. The necessary assumption is that the overall image values remain more or less constant over the entire image, at least in an average sense.
+
+{% include img src="xfig6-09-1.jpg" width="500" caption="FIB-nt image with strong shadowing effects (top left), its thresholding (top centre), global polynomial of degree 1 (top right), its subtraction from the original image (bottom left), and its thresholding (bottom right)." %}
+
+An example from a FIB-nt image and its shadowing effects is given in the above figure (top left). After thresholding, the systematic brightness loss towards the lower boundary becomes obvious (top center). The determination of a global polynomial of degree 1 results in a background image (top right). After subtraction (bottom left), the brightness drop disappears, as subsequent thresholding (bottom right) approves.
+
+In addition to the global homogeneization of the brightness values, the plugin also allows the correction of contrast values. However as an additional prerequisite, the image must be assumed to consist of a certain number of phases of more or less stable image values. In that case, a global polynomial can be calculated from the phase containing the lowermost image values, and a second polynomial from the phase containing the uppermost image values. The drifts are corrected by flattening both polynomial functions. The procedure hereby requires the number of phases as input parameter.
+
+{% include img src="xfig6-09-2.jpg" width="500" caption="FIB-nt image of a fuel cell and its shadowing effects (left), and the image after correction (right) by assuming three existing phases." %}
+
+The results of this kind of correction is displayed in the above figure. To the left, the original image is displayed. It consists of three different phases. Towards the lower border, a substantial drop of both, brightness and contrast occurs. Assuming a three phase image and after correction, the corrected image appears to be free from brightness and contrast drops (right).
+
+### Roundness 2D 3D
+
+The roundness value of a connected object can be defined as the ratio of the actual size of the object and the size of the virtual sphere spanned by the largest diameter of that object.
+
+```java
+2D: rnd = 4. * size / (diameter^2 * PI)
+3D: rnd = 6. * size / (diameter^3 * PI)
+```
+
+Other well-known definitions (e.g. the definition of sphericity by Wadell [Wadell1935]) are based on the surface area of the sphere with the same volume as the object, relative to its actual surface area. The calculation of the surface area on pixelized objects is not straight forward, whereas the calculation of the volume size is just the number of object pixels or voxels. That's the reason why we prefer the former roundness definition. Though, another useful option for pixelized objects could be the roundness definition of ISO which is based on the ratio between inscribed and circumscribed circles of an object, i.e. the minimum and maximum sizes for circles fitting inside and enclosing an object.
+
+Roundness values are useful to provide a metric of how closely the shape of an object approaches a circle (2D) or a sphere (3D), thus for rating object shapes.
+
+-   {% include citation doi='10.1086/624298' %}
+
+### Skeletonization 2D 3D
+
+In shape analysis, topological features can be captured from skeletons of the masks. Skeletons have several different mathematical definitions in the technical literature. Many different algorithms have been proposed. Many of them lack in retaining the original topology. A good conservation of the topology in 2D as well as in 3D was the main reason for the choice of the algorithm (Palagyi, [Palagyi1998]). This feature is displayed in the figure below, where a set of geometrical 3D objects is provided (left). After skeletonization (center), the topology is mainly being preserved. If the diameter of the skeletoized pipes is inflated up to the values from the distance transform of original volume (right), the thus restored objects obtain high similarity to the original ones.
+
+{% include img src="xfig6-11.jpg" width="500" caption="Some 3D objects (top), their skeletonization (bottom left) and their restoration by inflating the pipes up to the distance transform values of the original objects (bottom right)." %}
+
+-   {% include citation doi='10.1016/S0167-8655(98)00031-2' %}
+
+### Stripe Filter
+
+Striping artifacts may occur due to undesired effects during data acquisition. Defect detector pixels might be the reason of stripes in the projections of computed tomography measurements resulting in ring artifacts after reconstruction. Waterfall artifacts might be the reason for stripes when accessing 3D data using FIB-nanotomography. Both types of artifacts can be erased by a technique for stripe filtering based on the combination of wavelet and Fourier transform [Münch2009]. The potential of the stripe filtering plugin is shown in the figure below by applying it to a gray level image (top) and to a RGB image (bottom).
+
+{% include img src="xfig6-12-1.jpg" width="500" caption="Gray level (top) and RGB (bottom) image containing horizontal stripes (left) and the results of the stripe filtering plugin (right)." %}
+
+In the next figure, the stripes in CT projections (top) and the resulting ring artifacts in the reconstructed images (bottom) is presented, the original situation to the left and the results after stripe filtering to the right.
+
+{% include img src="xfig6-12-2.jpg" width="500" caption="Projection image in a CT slice (top) before (left) and after (right) stripe filtering. The stripes in the projections yield ring artifacts in the reconstructed image (bottom). An original (left) and its filtered version (right) is displayed." %}
+
+-   {% include citation doi='10.1364/OE.17.008567' %}
+
+{% include thumbnail src='/media/plugins/xfig6-13.jpg' title='Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).'%}
+
+### Transform 2D 3D
+
+This plugin provides image transforms for 2D images and for 3D image volumes by using polynomial fits of arbitrary degree. Various transforms can be chosen, including translation, rotation, scaling in arbitrary order and by choosing variable centrum coordinates.
+
+This can be performed by using an operations strings syntax containing translation ('t'), rotation ('r') and / or scaling ('s') operation(s). Each operation is followed by its comma separated translation, rotation or scaling values. For instance, an operation
+
+```java
+t10,-20r30
+```
+
+defines a translation by (10, -20) followed by a rotation by 30 in degrees in 2D around the original center point. Likewise,
+
+```java
+s0.5,0.8,1.5p0,0,0r-10,20,30t11,-22,33
+```
+
+defines a scaling by (0.5, 0.8, 1.5) followed by a rotation by (-10, 20, 30) in degrees around (0, 0, 0), followd by a translation by (11, -22, 33) in 3D.
+
+The corresponding homogeneous 4x4 (for 3D, or 3x3 for 2D) matrix operation is always indicated on the fly. Of course, the specification of the 4x4 (or 3x3) homogeneous matrix itself is possible as well. Moreover, the transformation of cartesian to cylindrical or spherical coordinates or vice versa is supported. Also, resampling into another pixel size is feasible.
+
+{% include thumbnail src='/media/plugins/xfig6-15-cow.jpg' title='Cow at Swiss alps (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).'%}
+
+### Wavelets 2D
+
+This program provides wavelets decomposition and reconstruction of 2D images. The decomposed set of wavelets can be chosen to be either reconstructible or non-reconstructible, i.e. just for visual presentation. If it is selected to be reconstructible, the image quality might be not really perceptionally ideal for presentation purpose. Hence for creating more attractive wavelet images, the choice of non-reconstructible wavelets might be preferred. The term "non-reconstructible" means that the sets of wavelets are normalized and cropped at the boundaries and therefore miss information for proper reconstruction. In the case of color images due to the restricted color resolution (8 bits per channel only), reconstruction might be feasible, however, the results usually are far beyond acceptable quality. Therefore for color images if reconstructability is required, we recommend splitting into R,G,B channels and processsing of each channel separately in order to achieve floating point rather than 8 bit resolution.
+
+After a wavelet decomposition, the wavelet specifications (e.g. "db2" for the Daubechies 2 wavelets) together with the normalization parameters (boundary handling, output normalization) are stored to the image as additional info. Thereby if a wavelet decomposition is saved to TIFF image file format, this additional image information is being stored to the image file header. Consequently, the respective wavelet settings will be automatically recovered when the wavelet plugin is launched to such image.
+
+The example to the right shows a Haar wavelet decomposition of an image. A graphically nice (top center) as well as a reconstructible version (bottom center) is presented. Reconstruction (right) is possible only from the reconstructible version. Since colour images are usually resolved with 8 bits per R,G,B-channel only, the reconstruction is not perfect but still acceptable for this example. In contrast, gray level images result in wavelet decompositions in floating point format and therefore allow perfect reconstructions.
+
+## Reconstruction
+
+Plugins of this section support preprocessing and reconstruction of images from projection data for CT imaging.
+
+Another category of methods in this section is the estimation of 3D data from 2D images with the idea of estimating parameters requesting 3D connectivity from 2D slices only.
+
+### Filtered Backprojection
+
+This plugin provides convolution / backprojection of a set of projections to an image. It supports different reconstruction filters (Shepp & Logan, Parzen, Hamming, Hann, Rectangular). The sequence of angles as well as the sequence of the projections can be altered.
+
+### Projections Sinograms
+
+This plugin converts sets of projections into stacks of sinograms and vice versa. It also supports flat and dark field correction, speckle filtering, Lambert inversion, adjustment of the rotation center, re-ordering of the projections, adjustment of the value range, etc.
+
+### Reconstruct 3D from 2D
+
+This plugin provides the reconstruction of virtual 3D phase volumes from 2D phase images. The goal is to preserve the structural characteristics given in the 2D image and to extrapolate it to 3D.
+
+The algorithm assumes that the 2-point autocorrelation function of similar structures is being preserved. The essential idea is to solve the 3D-reconstruction problem time efficiently in the Fourier space by applying the Wiener-Khinchin theorem. Basically, the autocorrelation function of the 2D image is extended to 3D and Fourier transformed. In the Fourier space, the arguments of the complex values are randomly chosen while keeping the magnitudes. Inverse Fourier transform then yields the newly estimated 3D volumes.
+
+{% include img src="xfig7-3-1.jpg" width="500" caption="Segmented masks from cement paste (top left, OPC CEM 1, 42.5, w/c 0.35, 28 days hydration) and from the contact zone of the anode membrane of a solid oxide fuel cell (bottom left). A virtual 3D reconstrucion was applied to the original structures (center). A single slice from the 3D image stack is displayed for both cases (right), showing different structures than the original ones, with however closely resembling characteristics." %}
+
+Examples of the 2D-to-3D reconstruction are given in the figure above for a structure from cement paste (top left) and for a structure from a solid oxide fuel cell (bottom left). The original gray level images have been acquired by SEM (scanning electron microscopy) at a pixel resolution of 20nm. Segmentation has been achieved by thresholding. After reconstruction of the 3D stack, a single slice of the reconstructed volume is displayed (right), revealing a "similar" structural appearance as the original one. The shaded surface of the reconstructed 3D mask is presented in the figure below for the cement (left) and the fuel cell (right).
+
+{% include img src="xfig7-3-2.jpg" width="500" caption="Shaded 3D representation of the reconstructed 3D stacks from the reconstructed volume of the cement paste (left) and the anode membrane (right)." %}
+
+## Evaluation
+
+The plugins of this section achieve quantitative evaluation on image values and structures. This is an important topic in image processing in different scientific fields. A result from quantitative evaluation is not an image as it is from filtering, but rather a number representing some structural characteristics.
