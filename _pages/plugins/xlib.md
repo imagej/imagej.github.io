@@ -216,7 +216,7 @@ Many image calculators allowing various arithmetic operations are already implem
   
 Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are the ones to be processed.  Subsequently, the above command will return an image providing the mean value of images i0, i1 and i2 (see rightmost image to the right).  
 
-The command
+The following command makes use of java-internal classes.  Since no global import statements of many of them are available per default, the full path to the java library should be provided.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
 ```python
@@ -230,9 +230,9 @@ The command
   
   
   
-  displays a mask where regions higher than 170 are red.  
+displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  
 
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
 ```python
 (i0==255)? -16711936 : 
 	((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
@@ -246,7 +246,7 @@ takes three binary images i0, i1, i2 and creates a colored mask out of it (see r
   
   
   
-  {% include thumbnail align="right" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
+  {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
 ```java
 Math.pow(i0, 2.)
 ```
@@ -258,7 +258,7 @@ yields the power of two of the image i0.
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} Or the operation
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} Or the operation
 ```python
 i0 + x
 ```
@@ -281,7 +281,7 @@ In this case, instead of a simple command "x" (which would create no image), a c
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %} The code
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %} The code
 ```python     
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 ```
@@ -293,7 +293,7 @@ calculates an image of the same size as image i0, but containing only a halo cen
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The line
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The line
 ```python
 (i0 >= 128)? 255 : 0
 ```
@@ -317,7 +317,7 @@ creates an image of the same size as i0 containing a circular mask around point 
   
   
   
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %}
 The code
 
 ```python
