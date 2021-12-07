@@ -207,7 +207,10 @@ Many image calculators allowing various arithmetic operations are already implem
 ```python
 (i0 + i1 + i2) / 3
 ```
-
+  
+  
+  
+  
 Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are the ones to be processed.  Subsequently, the above command will return an image providing the mean value of images i0, i1 and i2 (see rightmost image to the right).  
 
 The command
@@ -217,7 +220,10 @@ The command
 (i0 > 170)? 
 	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
 ```
-
+  
+  
+  
+  
 displays a mask where regions higher than 170 are red.  
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
@@ -653,7 +659,7 @@ Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possibl
   <tbody>
     <tr>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig9-1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top).'%}</p>
+        <p>{% include thumbnail src='/media/plugins/xfig9-1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top).'%}</p>
       </td>
     </tr>
   </tbody>
