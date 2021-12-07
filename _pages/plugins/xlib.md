@@ -216,7 +216,7 @@ Many image calculators allowing various arithmetic operations are already implem
   
 Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are the ones to be processed.  Subsequently, the above command will return an image providing the mean value of images i0, i1 and i2 (see rightmost image to the right).  
 
-The following command makes use of java-internal classes.  Since no global import statements of many of them are available per default, the full path to the java library should be provided.
+The following command makes use of java-internal classes.  Since global import statements of many useful classes are usually not defined per default, the full path to the java library should be provided.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
 ```python
@@ -230,7 +230,7 @@ The following command makes use of java-internal classes.  Since no global impor
   
   
   
-displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  
+displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  It is important to set the argument "Format for output image" to "int color" in order to enable color output.
 
 {% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
 ```python
@@ -238,7 +238,7 @@ displays a mask where values higher than 170 are set to a red color, while the r
 	((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
 ```
 
-takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  
+takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  Like in the the previous example, this operation requires setting the argument "Format for output image" to "int color".
   
   
   
