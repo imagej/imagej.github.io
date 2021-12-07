@@ -182,13 +182,13 @@ Fast distance transform of image masks is useful for many morphological imaging 
 
 In the upper figure, a binary mask from cement particles (left) is processed by using the Euclidian distance transform (center). The transform of the inverse mask is also given (right). The distances are visualized by using a color lookup table from blue (low values) to red (high values). The effect of different distance metrics is displayed in the lower figure. A simple mask consisting of 3 single black dots is provided (left). Next to it, the results of the Euclidian, Chessboard and Citymap (right) distance transform is shown.
 
-{% include thumbnail align="right" src="/media/plugins/xfig6-5-2.jpg" title="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
-
 -   {% include citation doi='10.1016/0031-3203(94)90133-3' %}
 
 -   {% include citation doi='10.1007/0-306-47025-X_36' %}
 
-{% include thumbnail src='/media/plugins/xfig6-6.jpg' title='FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.'%}
+{% include thumbnail align="left" src="/media/plugins/xfig6-5-2.jpg" title="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
+
+{% include thumbnail align="right" src='/media/plugins/xfig6-6.jpg' title='FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.'%}
 
 ### FFT 2D 3D
 
@@ -196,15 +196,16 @@ The fast, well known and widely used Cooley-Tukey radix-2 algorithm for the calc
 
 The figure to the right shows a sample FIB-nt image from cement paste (left) with a width of 427 and a height of 768 pixels. The magnitudes and angles of its Fourier transform is scaled by a logarithmic funcion for improving the visibility of the small coefficients. The inverse FFT transform of the center and right images reconstructs the original function (left) again without any loss of precision.
 
--   {% include citation last='Bluestein' first='L I' title='A Linear Filtering Approach to the Computation of the Discrete Fourier Transform' journal='Northeast Electronics Research and Engineering Meeting Record' volume='10' pages='218-219' year='1968' %} <!-- TODO: no doi for this article -->
-
+-   {% include citation doi='10.1109/TAU.1970.1162132' %}
 -   {% include citation doi='10.1109/TAU.1969.1162034' %}
 
 ### Image Calculator
 
 Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
 
-[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xFig6_7_01.jpg) For instance,
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-01.jpg' title='' %}
+
+[right|440px|thumb|left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2](Image_xfig6-7-01.jpg) For instance,
 
 ```python
 (i0 + i1 + i2) / 3
@@ -428,7 +429,7 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 ```
 
-<img src="/media/plugins/xfig6-7-18.jpg" title="fig:xFig6_7_18.jpg" width="380" alt="xFig6_7_18.jpg" /> creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
+<img src="/media/plugins/xfig6-7-18.jpg" title="fig:xfig6-7-18.jpg" width="380" alt="xfig6-7-18.jpg" /> creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
 
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
