@@ -647,3 +647,6 @@ As soon as the plugin is activated, the respective image stack disappears. Likel
 As the plugin is activated, the orthogonal slicer acts like a common image stack, that is, any filter operations or plugins can be applied to either a single slice or to the entire volume. One of the restrictions is that overlays cannot be handled with this plugin and like this, selection of ROIs (i.e. with the selection tools) are not supported.
 
 Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
+
+{% include img src="xfig9-1.jpg" width="500" caption="Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top)." %}
+
