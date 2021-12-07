@@ -218,7 +218,7 @@ Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are t
 
 The command
 
-{% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
 ```python
 (i0 > 170)? 
 	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
