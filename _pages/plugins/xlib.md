@@ -648,5 +648,78 @@ As the plugin is activated, the orthogonal slicer acts like a common image stack
 
 Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
 
-{% include img src="xfig9-1.jpg" width="500" caption="Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top)." %}
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/xfig9-1.jpg' title='Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the <a href="#pore-size-distribution">"Pore Size Distribution"</a> plugin (top).'%}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
 
+As an example, the above figure displays the view of the orthogonal slicer applied to the 3D volume displayed in the ["Pore Size Distribution"](#pore-size-distribution) section (top). The red cross-lines of the slicer show the current 3D cursor position which allows interactively focusing any point in the 3D space. The position vector and the associated image value are plotted to the ImageJ window (top).
+
+<figure><img src="/media/plugins/xfig9-2.jpg" width="180" /></figure>
+
+### Edit Label Region
+
+This plugin provides an engine for interactive editing of label images or label volumes (i.e. stacks of images). Label images are images holding a set of regions at one specific gray level or color per region (example see figure in ["Disconnect Particles"](#disconnect-particles), right). Operations such as deleting, joining, eroding, dilating, opening, or closing of manually selected 3D objects are supported. There is also an operation for deleting objects smaller than a certain size. For stacks of images, all operations can be performed either in slice-wise 2D, or truly volumetrically in 3D. The interface of the engine is visualized in the figure to the right.
+
+{% include thumbnail src='/media/plugins/xfig9-3.jpg' title='Engine for 3D segmentation (top right) which is currently operating on two gray level images (left). The image at the bottom right is the interactively segmented phase image which is currently containing four different phases (see top left figure for the plugin ["Phase Image Evaluation"](#phase-image-evaluation)).'%}
+
+### Segment Phases 3D
+
+This plugin provides an engine for interactive segmentation of multiple phases. The program works on both, single images as well as image stacks. For image stacks, the operations can be performed in either slice-wise 2D or in 3D. All images or image stacks currently opened in an ImageJ session may serve as input images or image volumes. This benefit of being able to use multiple input images enables creating phase masks from multiple coincident or from multiple filtered versions of the same 2D or 3D scene. The plugin is designed for interactive use, however it provides a scripting language enabling to run scripts in non-interactive mode. Thus, automated segmentation processes can even be launched from command line.
+
+The output of this program is a 2D phase image or a 3D phase stack of images which may contain up to 24 different phases. A phase is created by defining a bit mask by using different types of operations on any of the input images. Possible operations for building a phase include manual drawing (by using the selection buttons on the ImageJ main toolbar), thresholding, regular or constrained region growing, erosion, dilation, and removal of small regions.
+
+An intelligent workflow allows progressive refinement of each single phase represented by its bit mask. The bit masks are being interactively modified by using logical arithmetic (i.e. Boolean AND, OR, XOR, NOT) on a) the already present bit mask and b) the temporary mask created by one or more of the operations listed above. If, for instance, a thresholding operation was selected, its temporary mask can be added to the currently selected phase by running an "OR" operation. A temporary mask during an operation is always distinguished by its red color, while the currently valid mask after completion of the operation is denoted by its blue color.
+
+A phase name and an ID are assessed to each phase for later processing. The ID is important in the case some phases may overlap each other, in order to define the priorities.
+
+The resulting image may be either a simple binary 2D or 3D mask of the currently selected phase (button "Show Mask"), or it may be a phase image or image stack consisting of a 32-bit color TIFF image holding multiple phases (button "Show Phases"). In the case of a phase image containing multiple phases, each phase is denoted by a single bit from the 32-bit integer number. Thereby, all phase names and ID's are additionally being stored to the TIFF file header. Hence, a thereby created TIFF phase image can be later re-loaded for further processing together with all their intrinsic phase names.
+
+For understanding the basic principle of working, consider the following example steps:
+
+-   Select the requested image by clicking with the mouse on it, then go back to the "Segment Phases 3D" tool and click on the GUI. Like this, the requested image is being activated. Alternatively, the currently active image can be selected with the combo box "Input Image"
+-   For thresholding an image and thus by defining a binary mask, select a value range by adjusting the lower and upper thresholds. This can be achieved by either moving the sliders or by typing the values to the text boxes to the right (and confirming with <return>). A red temporary mask appears as an overlay.
+-   Likewise, temporary masks can also be created by using the ImageJ tools "rectangle", "oval", "polygon" or "freehand" selections (in 3D mode, applies to slices only).
+-   Press the button with the requested bit operation for applying the temporary mask to the currently valid mask. For instance, if the currently valid mask is empty as always when starting a new session or when defining a new phase, an "OR" operation adds the temporary mask to the current void mask. A blue resulting mask appears.
+-   As soon as the current mask (blue) is not void, bit operations "AND", "XOR" or "NOT" can be likewise applied by combining the current blue mask with a newly generated red temporary mask.
+-   For image stacks, this (or any other) operation is either performed in 2D or in 3D depending on whether the "Volume" checkbox is checked.
+-   Both, current as well as temporary mask can be further refined by applying region growing, erosion, dilation, or small particle removal operations (button "Delete Cruft"). Thus, any of those operations can be applied either to the red mask prior to applying a bit operation, or to the currently valid blue mask.
+-   The "Grow Region" and "Delete Region" operations require one or more initial points that can be defined using the "point" or "multiple-point" tool of ImageJ. In Addition, the "Grow Region" process can be constrained by the minimal size of the pixel neighbourhood which is defined by the slider and the text field "Constraint".
+-   Both, the "Erosion" and Dilation" operation tools require the erosion or dilation size to be defined by the "Size" text box.
+-   The "Delete Cruft" tool for removing small particles requires the maximal size of the particles that should be deleted. This is achieved by defining the numbers with the "Size" text box.
+-   A simple binary mask of the currently selected phase can be retrieved by pressing the "Show Mask" button.
+-   Most of the editing steps can easily be annulled by using the "Undo" button. Recovering an annulled editing step is also possible by using the "Redo" button. Like this, up to 32 editing steps can be restored.
+-   If more than one phases should be defined, each phase can be individually created by pressing the button "New Class". A new class obtains an initial name that can be manually overwritten (press <return> key after editing). Each class layer can now be separately edited after it was selected by the "Class ID" combo box. Removing of the current class is achieved by pressing "Delete Class".
+-   By default, phase classes are overlapping each other by following the hierarchical descending order inherent to the "Class ID" combo box to the right. This hierarchical order can be altered by changing the numbers in the combo box to the left (by writing the new numbers to the text field followed by pressing <return>). Alternatively by checking the check box "Overlap", the phase classes can be specified to independently overlap each other. If overlap mode is specified, the phase hierarchical order is irrelevant.
+-   Phase images are coded as RGB color images. Already existing phase images can be loaded by opening them with ImageJ and then by defining them by the respective entry in the combo box "Phase Image" followed by pressing the "Load" button. Alternatively, they can be opened and loaded by choosing the file path by using the button "Phase Path". If not yet existing and by pressing "Show Phases", phase images are being created. If open and displayed, they are updated after each modification of any of the classes they include. By pressing the button "Save", the current version of the phase image is being saved, by default to the path selected in "Phase image".
+-   Due to additional event listeners, an open "Segment Phases 3D" instance raises the time that is needed when browsing through the slices of an image stack. This blocking effect might be annoying. In order to bypass the listeners and thus to enhance the speed, the check box "Disconnect" might be temporarily checked (and unchecked, if "Segment Phases 3D" is being used again).
+-   By checking the check box "Record Script", a text editor is opened and each performed action recorded. The created text file can later be adjusted, stored to file, reloaded and be run by pressing the button "Run Script".
+
+The segmentation engine is visualized in the figure to the right while operating on two SEM images of cement paste (OPC CEM 1) acquired at the same location but at different microscope settings. The color image to the bottom right shows the currently constructed phase image consisting of 4 different overlapping phases. The same image in non-overlapping mode is displayed in the section for the ["Phase Image Evaluation"](#phase-image-evaluation) plugin, top left. Currently, the phase named "Grain" is active and overlayed to the top left gray level image in transparent blue. Like this, any current operation would now be achieved to the "Grain" phase. The rectangle and heart shapes were drawn manually with the selection tools.
+
+{% include thumbnail src='/media/plugins/xfig9-4.jpg' title='Triangulated and shaded visualization of the 3D volume in the plugin for ["Pore Size Distribution"](#pore-size-distribution) and ["Display Volume"](#display-volume).'%}
+
+### View 3D Mask
+
+This plugin provides a 3D viewer of image and skeleton masks. The original data base should be a stack of images. An image mask may contain the mask of arbitrary objects, while skeleton masks should contain objects which are previously skeletonized in 3D. 3D skeletonization can be performed by previously calling the ["Skeletonization 2D 3D"](#skeletonization-2d-3d) plugin.
+
+For 3D shading, the image masks can be either triangulated or voxelized. The triangulation is performed by using the well-known marching cubes algorithm [Lorensen1987], while voxelization is performed by a technique of Artzy et al (see reference below).
+
+The viewer is resizable. The 3D scene can be rotated, translated, or scaled. Rotation can be achieved with the left mouse button. Translation in x, y can be achieved by the right mouse button. Translation in z is sometimes useful if the viewer is too close to the scene. It can be achieved by the middle mouse button. Scaling is achieved by simultaneously pressing down the <shift> key and the left mouse button.
+
+The current transform matrix is always stored to a text file located in the folder from where ImageJ was started. It is updated after each change of the rotation, translation or scaling. Like this, the current settings of the scene that seem to be useful for further visualizations can be stored to file.
+
+The 3D viewer also contains a button to the bottom called "save canvas as JPEG". By pressing it, the current view can be stored to JPG image. The resolution of this image corresponds to the current resolution of the 3D window, i.e. to its window size.
+
+As an example, a triangulated view of the segmented 3D volume is presented in the image to the right (see nanotomographic 3D sample from cement paste, image of plugins ["Pore Size Distribution"](#pore-size-distribution) (top image) and of ["Display Volume"](#display-volume)). Other examples were given in the plugin description for ["Reconstruct 3D from 2D"](#reconstruct-3d-from-2d) and for ["Skeletonization 2D 3D"](#skeletonization-2d-3d) showing the original 3D scene, its skeleton and its skeleton after resizing its elements to their size determined by the distance transform values (see ["Distance Transform"](#distance-transform) plugin).
+
+-   {% include citation doi='10.1145/37402.37422' %}
+
+-   {% include citation doi='10.1016/0146-664X(81)90103-9' %}
