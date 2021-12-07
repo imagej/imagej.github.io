@@ -633,3 +633,17 @@ PDS's can be defined in different ways and must be chosen according to the speci
 The above figure (top) shows a picture of a 3D volume of cement paste measured by FIB-nanotomography at a pixel size of 14.84 x 18.84 x 30.0 nm^3. The pores have been segmented by thresholding and different definitions of PSD's have been calculated in slice-wise 2D as well as in real 3D (bottom graph, containing the results of the PSD calculations visualized by [MATLAB](/scripting/matlab)).
 
 -   {% include citation doi='10.1111/j.1551-2916.2008.02736.x' %}
+
+## Editors and Viewers
+
+This section contains plugins that are designed for user-interactive visualization and data processing on 2D slices and 3D volumes. They therefore don't just support a unique interaction on some image data, but they provide engines supporting an interactive dialog between the computer and the user.
+
+### Display Volume
+
+This plugin provides an orthogonal slicer for image volumes. The top view (xy), front view (xz) and side view (yz) of the volume are displayed at a specific point, the center point at startup. The point then can be moved by mouse interaction in one of the views while the remaining views keep track of the changes. Thereby, any x,y,z-location in the 3D volume can easily be focused and displayed. The image value at the current position is always plotted to the ImageJ window.
+
+As soon as the plugin is activated, the respective image stack disappears. Likely, as the orthogonal slicer window is closed, the respective image stack reappears again and the current slice position is selected.
+
+As the plugin is activated, the orthogonal slicer acts like a common image stack, that is, any filter operations or plugins can be applied to either a single slice or to the entire volume. One of the restrictions is that overlays cannot be handled with this plugin and like this, selection of ROIs (i.e. with the selection tools) are not supported.
+
+Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
