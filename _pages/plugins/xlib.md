@@ -230,21 +230,27 @@ The following operation makes use of plain integer values for the color definiti
 
 takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  Like in the the previous example, this operation requires setting the argument "Format for output image" to "int color".
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation
+The operation
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %}
 ```java
 Math.pow(i0, 2.)
 ```
 
 yields the power of two of the image i0.  It makes sense to set the value of "Format for output image" to "float gray" (instead of "byte gray") in order to avoid exceeding the value range.
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} Or the operation
+Moreover, the operation
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %}
 ```python
 i0 + x
 ```
 
 will calculate a copy of the image i0 overlayed by a horizontal ramp.  
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %} And the code line
+The code line
+ 
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %}
 ```python     
 x // i0
 ```
@@ -253,38 +259,46 @@ creates the ramp only.
 
 In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java). The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0. Hence, the content of the image i0 is actually not being used, it serves as a template for the resulting size only.  
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %} The code
+The following code 
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %}
 ```python     
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 ```
 
 calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The line
+The following command line 
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %}
 ```python
 (i0 >= 128)? 255 : 0
 ```
 
 creates a binary image mask by thresholding the image i0 with the value 128.  
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %} The command
+The following command line 
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %}
 ```python
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
 ```
 creates an image of the same size as i0 containing a circular mask around point (100, 200). The comment "// i0" is necessary for the definition of the image size to the size of i0.  
 
+The following code 
+
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %}
-The code
 
 ```python
 (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
  Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
 ```
-takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).  
+takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).
+
+Finally, 
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %}
-Finally,
 
 ```python   
 (((int)i0 ^ (int)i1) > 0)? 255 : 0
@@ -301,7 +315,8 @@ for (int ii = 0; ii < out.length; ii++)
 return new Object[] { m0, out };
 ```
 
-performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. {% include thumbnail align="right" src='/media/plugins/xfig6-7-13.jpg' title='left: image i0, right: message box with number of pixel values &gt;= 10' %} The code fragment
+performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above. {% include thumbnail align="right" src='/media/plugins/xfig6-7-13.jpg' title='left: image i0, right: message box with number of pixel values &gt;= 10' %} The code fragment 
+
 ```java
 float value = 10f;
 int[] mm = m0;
@@ -329,8 +344,10 @@ return new Object[] { m3, out };
 ```
 
 takes the smaller image i5 and adds it to the center of the larger image i3.  
-  
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-15.jpg' title='left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1' %} The code fragment
+
+The code fragment 
+
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-15.jpg' title='left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1' %}
 
 ```java     
 double mean = 0;
@@ -405,6 +422,7 @@ for (int jj = 0; jj < my; jj++)
 	}
 return new Object[] { new int[] { mx, my }, out };
 ```
+
 This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
 
 ### Labeling 2D 3D
