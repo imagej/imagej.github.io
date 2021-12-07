@@ -230,7 +230,7 @@ The following command makes use of java-internal classes.  Since global import s
   
   
   
-displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  It is important to set the argument "Format for output image" to "int color" in order to enable color output.
+displays a mask where values higher than 170 are set to a red color, while the remaining are set to black.  Like in the the previous example, it is important to set the argument "Format for output image" to "int color" in order to enable color output.
 
 {% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The operation
 ```python
