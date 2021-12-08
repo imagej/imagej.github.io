@@ -53,7 +53,7 @@ However, at the moment, it is still possible to run a (slightly outdated now) ve
 <tr>
   <td><a href="/media/icons/macos.png"><img alt="macOS" src="/media/icons/macos.png" width="26" height="32" /></a>
   </td>
-  <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/learn/faq#how-do-i-set-up-java-6-on-macos" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
+  <td>Download the final (2017-May-30) <a href="/software/fiji/downloads#java-6" title="Fiji Downloads">Java-6 version of Fiji</a>. It is distributed <i>without</i> Java, so you must <a href="/platforms/macos#how-do-i-run-imagej-with-java-6" title="Frequently Asked Questions">install Apple Java 6</a> on your system.
   <ul>
   <li>If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.</li>
   <li>Afterwards, <a href="/learn/troubleshooting#checking-the-java-version" title="/learn/troubleshooting">verify that Fiji is using Java 6</a>.</li>
