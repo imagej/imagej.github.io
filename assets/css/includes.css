@@ -11,6 +11,11 @@
   font-size: medium;
   text-indent: 0;
 }
+.figure.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* aside */
 
