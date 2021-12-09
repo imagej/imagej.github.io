@@ -239,10 +239,12 @@ Math.pow(i0, 2.)
 
 yields the power of two of the image i0.  It makes sense to set the value of "Format for output image" to "float gray" (instead of "byte gray") in order to avoid exceeding the value range.
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} Moreover, the operation 
+The operation 
 ```python
 i0 + x
 ```
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} 
 
 will calculate a copy of the image i0 overlayed by a horizontal ramp.  The value of 'x' (and 'y', 'z' for 3D volumes) is internally defined as the local x-coordinate (y-coordinate, z-coordinate for 3D volumes).
 
@@ -262,14 +264,7 @@ In this case, instead of a simple command "x" (which would create no image), a c
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 ```
 
-calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  
-
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The following command line 
-```python
-(i0 >= 128)? 255 : 0
-```
-
-creates a binary image mask by thresholding the image i0 with the value 128.  
+calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  Since the code for the generation of the image does not contain neither operations on input images, nor any definitions for the image size, the parser searches for other hints for determining the output image size and takes the reference to 'i0' even though it is commented out.
 
 The following command line 
 
@@ -278,7 +273,16 @@ The following command line
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
 ```
-creates an image of the same size as i0 containing a circular mask around point (100, 200). The comment "// i0" is necessary for the definition of the image size to the size of i0.  
+creates an image containing a circular mask around point (100, 200).
+
+As in the previous example, the comment "// i0" is required for defining the size of the new image according to the size of i0.
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The following command line 
+```python
+(i0 >= 128)? 255 : 0
+```
+
+creates a binary image mask by thresholding the image i0 with the value 128.  
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %} The following code 
 
