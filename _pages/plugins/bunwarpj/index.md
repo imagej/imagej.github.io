@@ -7,7 +7,7 @@ artifact: sc.fiji:bUnwarpJ_
 extensions: ["mathjax"]
 ---
 
-{\| \|style="vertical-align:top" \|<img src="/media/plugins/bunwarpj-scheme.png" title="fig:bUnwarpJ scheme: bidirectional Unwarping in Java." width="390" alt="bUnwarpJ scheme: bidirectional Unwarping in Java." /> \|}
+{% include img align="center" src="scheme" width="390" caption="bUnwarpJ scheme: bidirectional Unwarping in Java." %}
 
 This ImageJ/Fiji plugin performs **2D image registration based on elastic deformations** represented by B-splines. The invertibility of the deformations is enforced through a consistency restriction.
 
@@ -21,8 +21,6 @@ For a quick start, you can have a look at the [video tutorial](http://imagejdocu
 
 This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- $$E_{img}$$, an optional landmark constraint $$E_{\mu}$$, a regularization term $$(E_{div} + E_{rot})$$, and an energy term $$E_{cons}$$ that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
 
-  
-  
 $$ E = w_iE_{img} + w_{\mu}E_{\mu} + (w_dE_{div} + w_rE_{rot}) + w_cE_{cons} $$
 
 Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a {% include wikipedia title="Levenberg–Marquardt algorithm" %} minimization enhanced by a {% include wikipedia title="Broyden–Fletcher–Goldfarb–Shanno algorithm" %} estimate of the local Hessian of the goal function, and both, images and deformations are represented by {% include wikipedia title="B-spline" %}.
@@ -33,7 +31,7 @@ Where the weights of every term are set by the user in the main window of the pl
 
 The plugin can be called from the main ImageJ/Fiji menu under {% include bc path="Plugins | Registration | bUnwarpJ" %}. Two images (**8, 16, 32-bit grayscale or RGB Color**) need to be opened in order to be able to use the plugin. If so, the maing dialog window of the plugin will open.
 
-{% include thumbnail src='/media/plugins/bunwarpj-main-dialog.png' title='bUnwarpJ main dialog'%}
+{% include img align='right' src='main-dialog' caption='bUnwarpJ main dialog'%}
 
 **Both selected images will work simultaneously as source and target**, their tags are there only for the sake of clarification. The registration mode can be "Accurate", "Fast" and "Mono". The registration mode "**Mono**" (included since version 2.5) makes the program to perform only **unidirectional** registration, i.e. from source to target. The two registration modes "Accurate" and "Fast" involve performing **bidirectional** registration and affect the stopping criteria internally used by the program. More internal options can be modified in the "Advanced Options" panel. This panel gives you access to most of the internal parameters of the algorithm. The "Initial" and "Final" deformation lists allow you to select the coarsest and finest scale of the spline deformation field. "Very coarse" corresponds to 4 splines (one in each corner of the image). As you increase the deformation level, the number of splines is doubled in each direction (horizontal and vertical).
 
@@ -55,7 +53,7 @@ The final registration values appear in a separate ("Results") window.
 
 The following figure shows one of the **resulting stacks** from registering a source (moving) Lena image to a target (fixed) warped version of the same image:
 
-{% include thumbnail src='/media/plugins/bunwarpj-lena-basic-result.png' title='From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.'%}
+{% include thumbnail src='/media/plugins/bunwarpj/lena-basic-result.png' title='From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.'%}
 
 The **verbose mode** produces more information:
 
@@ -63,7 +61,7 @@ The **verbose mode** produces more information:
 2.  The grid obtained after deforming the fixed image with the vector field described above;
 3.  The step values of the optimization process in a separate ("Results") window.
 
-{% include thumbnail src='/media/plugins/bunwarpj-lena-verbose-result.png' title='From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.'%}
+{% include thumbnail src='/media/plugins/bunwarpj/lena-verbose-result.png' title='From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.'%}
 
 Since both, source and target images work as moving and fixed images, **there are two sets (stacks) of results**: from source to target and from target to source.
 
@@ -76,7 +74,7 @@ During the registration process, the current difference images and a mapping of 
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -90,7 +88,7 @@ During the registration process the toolbar will be changed to
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-when-registering.png' title='bUnwarpJ toolbar when the registration process has started.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-when-registering.png' title='bUnwarpJ toolbar when the registration process has started.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -108,7 +106,7 @@ When the plugin is called and before pressing "OK" in the main window, the toolb
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-add-crosses.png' title='bUnwarpJ toolbar before starting registration.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-add-crosses.png' title='bUnwarpJ toolbar before starting registration.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -122,7 +120,7 @@ The depressed button indicates that you may **add a landmark** now. Landmarks ar
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-move-crosses.png' title='bUnwarpJ toolbar with "Move crosses" button selected.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-move-crosses.png' title='bUnwarpJ toolbar with "Move crosses" button selected.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -136,7 +134,7 @@ Click and drag on any landmark to make it correspond to the same position in bot
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-landmarks-example.png' title='Example of landmarks on moving and fixed images.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/landmarks-example.png' title='Example of landmarks on moving and fixed images.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -150,7 +148,7 @@ Landmarks can be removed through the "**Remove crosses**" button:
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-remove-crosses.png' title='bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-remove-crosses.png' title='bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -170,12 +168,12 @@ This program allows you using masks in **two mutually exclusive ways**. In the f
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-draw-inner-mask.png' title='bUnwarpJ toolbar with "Draw an inner mask" button selected.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-draw-inner-mask.png' title='bUnwarpJ toolbar with "Draw an inner mask" button selected.'%}</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-draw-outer-mask.png' title='bUnwarpJ toolbar with "Draw an outer mask" button selected.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-draw-outer-mask.png' title='bUnwarpJ toolbar with "Draw an outer mask" button selected.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -189,7 +187,7 @@ The inner mask keeps the information in the interior of the polygon, while the o
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%}</p>
       </td>
     </tr>
   </tbody>
@@ -207,14 +205,14 @@ When using the "**Input/Output Menu**" from the toolbar, we have the possibility
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj-toolbar-io-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/toolbar-io-menu.png' title='bUnwarpJ toolbar with "Input/Output menu" button selected.'%}</p>
       </td>
     </tr>
   </tbody>
 </table>
 {:/}
 
-{% include thumbnail src='/media/plugins/bunwarpj-io-menu.png' title='bUnwarpJ Input/Output menu.'%}
+{% include thumbnail src='/media/plugins/bunwarpj/io-menu.png' title='bUnwarpJ Input/Output menu.'%}
 
 In the last release, the plugin presents the following Input/Output options:
 
@@ -329,7 +327,7 @@ One important advantage of [bUnwarpJ](/plugins/bunwarpj) over the previous metho
 
 ### SIFT and MOPS plugin support
 
-{% include thumbnail src='/media/plugins/bunwarpj-lena-sift-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
+{% include thumbnail src='/media/plugins/bunwarpj/lena-sift-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
 
 An explanation of the parameters is [ here](/plugins/feature-extraction#parameters). This plugin is also integrated in Fiji.
 
