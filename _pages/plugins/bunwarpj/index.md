@@ -1,6 +1,6 @@
 ---
-mediawiki: BUnwarpJ
-title: BUnwarpJ
+mediawiki: bUnwarpJ
+title: bUnwarpJ
 project: /software/fiji
 categories: [Registration]
 artifact: sc.fiji:bUnwarpJ_
