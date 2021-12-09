@@ -55,10 +55,8 @@ This include is for citing publications by DOI or page ID (URL slug).
 {%- if output -%}
   {{output}}
 {%- else -%}
-  {%- capture error-message -%}
-    Invalid citation arguments: `{{include}}`
-  {%- endcapture -%}
-  {% include notice icon="warning" content=error-message %}
+  {%- capture error-message -%} Invalid citation arguments: `{{include}}` {%- endcapture -%}
+  {%- include util/error message=error-message -%}
 {%- endif -%}
 
 {%- comment -%}

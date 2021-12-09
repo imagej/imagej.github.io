@@ -110,7 +110,7 @@
 
 {%- if error -%}
   {%- capture error-message -%} Unsupported arguments: {{include}} {%- endcapture -%}
-  {%- include notice type="warning" content=error-message -%}
+  {%- include util/error message=error-message -%}
 {%- else -%}
   <div class="video">
     {%- if caption -%} <figure class="figure"> {%- endif -%}

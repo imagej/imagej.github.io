@@ -1,0 +1,13 @@
+{%- comment -%}
+Displays an error message describing a non-fatal page build error.
+
+You can see all these errors on the command line after a
+local site build using the _bin/site-build-errors.sh script.
+{%- endcomment -%}
+
+{%- assign message = include.message -%}
+{% include notice class="error" glyph="&#10060;" highlight-color="red" content=message %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

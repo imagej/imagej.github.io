@@ -30,10 +30,8 @@
 {%- endif -%}
 
 {%- if src == '' -%}
-  {%- capture error-message -%}
-    Invalid img arguments: `{{include}}`
-  {%- endcapture -%}
-  {% include notice icon="warning" content=error-message %}
+  {%- capture error-message -%} Invalid img arguments: `{{include}}` {%- endcapture -%}
+  {% include util/error message=error-message %}
 {%- else -%}
   {%- if figure -%}
     <figure class="figure

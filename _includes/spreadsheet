@@ -7,10 +7,8 @@
 {%- if platform == "google" -%}
   <iframe width="{{width}}" height="{{height}}" frameborder="0" src="https://docs.google.com/spreadsheets/d/{{id}}/pubhtml?gid={{gid}};single=true&widget=true&headers=false"></iframe>
 {%- else -%}
-  {%- capture error-message -%}
-    Invalid spreadsheet arguments: `{{include}}`
-  {%- endcapture -%}
-  {% include notice icon="warning" content=error-message %}
+  {%- capture error-message -%} Invalid spreadsheet arguments: `{{include}}` {%- endcapture -%}
+  {% include util/error message=error-message %}
 {%- endif -%}
 
 {%- comment -%}

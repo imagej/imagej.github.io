@@ -72,10 +72,8 @@ Are you a JavaScript developer who can make it happen?
   {%- endif %}
 {{ content }}
 {%- else -%}
-  {%- capture error-message -%}
-    Invalid code arguments: `{{include}}`
-  {%- endcapture -%}
-  {% include notice icon="warning" content=error-message %}
+  {%- capture error-message -%} Invalid code arguments: `{{include}}` {%- endcapture -%}
+  {% include util/error message=error-message %}
 {%- endif -%}
 
 {%- comment -%}
