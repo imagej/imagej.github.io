@@ -207,6 +207,8 @@ The input images (or 3D image stacks) are named to 'i0', 'i1', 'i2',... in the o
 
 The image calculator has two different operation modes.  The first mode (see first few examples) just returns just a single value calculted from one or more input images.  This operation is then assigned to each single pixel or voxel.  The second mode (see last few examples) accepts multi-line coding using any type of java-syntax.  It requires an output image (or volume) being defined, calculated, and finally being returned by using the statement like "return new Object[] { mm, out };", the variable 'mm' holding an integer array containing the image (or volume) size in pixels (or voxels) in x, y (and eventually z); the variable 'out' holding the image (volume) data itself.
 
+In the following, some examples are presented:
+
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-01.jpg' title='left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2' %}
 
 ```python
@@ -246,7 +248,7 @@ Math.pow(i0, 2.)
 yields the power of two of the image i0.  It is recommended to set the value of "Format for output image" to "float gray" (or at least "short gray", instead of "byte gray") in order to avoid exceeding the value range.  If "byte gray" is selected, pixel values larger than 255 are set to 255.
 
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} The operation 
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: i0, right: copy of image i0 overlayed by a ramp' %} The operation 
 
 ```python
 i0 + x
@@ -296,7 +298,7 @@ creates a binary image mask by thresholding the image i0 with a threshold value 
 (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
  Math.pow(my / 2 - y, 2)) < mx / 2)? i0 : 0
 ```
-takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use of the variables 'mx' and 'my' holding the image size).
+takes the content of the image inside of a circle only and removes the regions outside.  Please note: this code fragment makes use of the predefined variables 'mx' and 'my' holding the image size in x and y.  For image stacks, the variable 'mz' is defined as well.
 
 {% include thumbnail align="right" width="300" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %} Finally, 
 
