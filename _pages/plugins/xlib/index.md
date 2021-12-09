@@ -75,7 +75,7 @@ Plugins of this section offer importing, handling or analysis of special data fo
 
 This plugin provides an engine for finding the most probable chemical compositions of some given energy dispersive spectroscopy (EDS) data. From a set of proposed chemical formula, a ranking of the probability of matching with the candidate EDS data is calculated.
 
-A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](/media/plugins/xclusteringphaseidentification.pdf).
+A step by step tutorial for the clustering and phase identification of EDS maps is provided in the manual entitled ["Instructions for the Phase Clustering and Identification Using the Plugins for ImageJ"](/media/plugins/xlib/xclusteringphaseidentification.pdf).
 
 The program can be used in combination with the ["Cluster Image"](#cluster-image) plugin. Thereby for a resulting set of cluster centers, the program provides the most probable cluster membership.
 
@@ -116,7 +116,7 @@ The filtering functions accept one or more images or stacks of images where some
 
 ### Anisotropic Diffusion
 
-{% include img align="left" src="/media/plugins/xlib/xfig6-1.jpg" caption="CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right)." %} The mechanism of heat diffusion has been used as the basics for image filtering. Thereby, the image values are understood as temperature values and image blurring represents the process of heat transport blurring. The key idea is the introduction of anisotropy, i.e. of diffusion characteristics that are depending on the pixel environment and the transfer direction. The local anisotropy is assigned according to the direction and magnitude of the image gradient, introducing high diffusion rates at low gradients and low diffusion rates at high gradients. Hence, the anisotropic diffusion characteristics are defined according to an ellipse in 2D or an ellipsoid in 3D perpendicular to the gradient vector.
+{% include img align="left" src="xfig6-1" caption="CT slice after strong alcali aggregate reactions (top) and edge preserving / smoothing filtering with a 4x4 median (bottom left) and anisotropic diffusion (bottom right)." %} The mechanism of heat diffusion has been used as the basics for image filtering. Thereby, the image values are understood as temperature values and image blurring represents the process of heat transport blurring. The key idea is the introduction of anisotropy, i.e. of diffusion characteristics that are depending on the pixel environment and the transfer direction. The local anisotropy is assigned according to the direction and magnitude of the image gradient, introducing high diffusion rates at low gradients and low diffusion rates at high gradients. Hence, the anisotropic diffusion characteristics are defined according to an ellipse in 2D or an ellipsoid in 3D perpendicular to the gradient vector.
 
 The corresponding partial differential equation had first been numerically approached in 1990 by a fast algorithm of Perona and Malik [Perona1990] by defining the elliptic diffusion shapes by means of simple box filtering. Way better results can be obtained with the technique of Tschumperlé and Deriche [Tschmperlé2005] from 2005 by setting the tensor field according to the Eigenvalues and Eigenvectors in order to drive the diffusion. As expected, this approach is however more time consuming.
 
@@ -168,7 +168,7 @@ Clustering can also be applied to one dimensional spaces (i.e. from a single gra
 
 ### Disconnect Particles
 
-{% include img align="right" src="/media/plugins/xlib/xfig6-4.jpg" caption="3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right)." %}
+{% include img align="right" src="xfig6-4" caption="3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right)." %}
 
 In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented [Münch2006]. If requires a parameter k ranking from [0...1] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
 
@@ -178,11 +178,11 @@ Results from cement grains acquired by 3D FIB-nanotomography are displayed in th
 
 ### Distance Transform
 
-{% include img align="right" src="/media/plugins/xlib/xfig6-5-1.jpg" caption="Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right)." %}
+{% include img align="right" src="xfig6-5-1" caption="Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right)." %}
 
 Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach [Saito1994,Meijster2000] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
 
-{% include img align="left" src="/media/plugins/xlib/xfig6-5-2.jpg" caption="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
+{% include img align="left" src="xfig6-5-2" caption="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
 
 {% include img align="right" src='xfig6-6' caption='FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.'%}
 
