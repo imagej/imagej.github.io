@@ -201,9 +201,14 @@ The figure to the right shows a sample FIB-nt image from cement paste (left) wit
 
 ### Image Calculator
 
-Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.
+Many image calculators allowing various arithmetic operations are already implemented in ImageJ, including the "Image Calculator", the "Calculator Plus" as well as the entire list of functions in "math", all of them under "Process". So why "yet another image calculator", you might ask. The reason is that our image calculator is easily able to perform the possible tasks of all of the above listed plugins and much more. The conceptual idea is to provide a list of all the images and image stacks that are currently opened in ImageJ and assign them to symbolic names (i0, i1, i2,...). In a text field, the user can then provide his own code he wants to be applied to the images.  The image calculater is working for both, single 2D images and for 3D image volumes.
+
+The input images (or 3D image stacks) are named to 'i0', 'i1', 'i2',... in the order they have been loaded to ImageJ.  Using these variables, any java-operations yielding values (i.e. basic operations or calls to java-functions) can be executed.
+
+The image calculator has two different operation modes.  The first mode (see first few examples) just returns just a single value calculted from one or more input images.  This operation is then assigned to each single pixel or voxel.  The second mode (see last few examples) accepts multi-line coding using any type of java-syntax.  It requires an output image (or volume) being defined, calculated, and finally being returned by using the statement like "return new Object[] { mm, out };", the variable 'mm' holding an integer array containing the image (or volume) size in pixels (or voxels) in x, y (and eventually z); the variable 'out' holding the image (volume) data itself.
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-01.jpg' title='left: image i0, 2nd: image i1, 3nd: image i2, right: mean value of the images i0, i1 and i2' %}
+
 ```python
 (i0 + i1 + i2) / 3
 ```
@@ -213,6 +218,7 @@ Make sure there are three images loaded on ImageJ such that i0, i1, and i2 are t
 The following command makes use of java-internal classes.  Since global import statements of many useful classes are usually not defined per default, the full path to the java library (here: "java.awt.Color") should be provided.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-02.jpg' title='left: image i0, right: mask where regions higher than 170 are colored in red' %}
+
 ```python
 (i0 > 170)? 
 	java.awt.Color.red.getRGB() : java.awt.Color.black.getRGB()
@@ -223,6 +229,7 @@ displays a mask where values higher than 170 are set to a red color, while the r
 The following operation makes use of plain integer values for the color definition.
 
 {% include thumbnail align="right" width="400" src='/media/plugins/xfig6-7-03.jpg' title='left: image i0, 2nd: image i1, 3rd: image i2, right: colored mask out of images i0, i1, i2' %} The value "-16777216" represents black, the value "-65536" red, the value "-16711936" green, the value "-16776961" blue color.
+
 ```python
 (i0==255)? -16711936 : 
 	((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
@@ -231,6 +238,7 @@ The following operation makes use of plain integer values for the color definiti
 takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  Like in the the previous example, this operation requires setting the argument "Format for output image" to "int color".
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation 
+
 ```java
 Math.pow(i0, 2.)
 ```
@@ -239,22 +247,25 @@ yields the power of two of the image i0.  It is recommended to set the value of 
 
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} The operation 
+
 ```python
 i0 + x
 ```
 
-will calculate a copy of the image i0 overlayed by a horizontal ramp.  The value of 'x' (and 'y', 'z' for 3D volumes) is internally defined as the local x-coordinate (y-coordinate, z-coordinate for 3D volumes).
+will calculate a copy of the image i0 overlayed by a horizontal ramp.  The value of 'x' (and 'y', and 'z' for 3D volumes) is internally defined as the local x-coordinate (y-coordinate, and z-coordinate for 3D volumes).
  
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %} The code line 
+
 ```python     
 x // i0
 ```
 
 creates the ramp only.
 
-In this case, instead of a simple command "x" (which would create no image), a comment "i0" is attached to the command ("//" means a comment in java). The reason for why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0. Hence, the content of the image i0 is actually not being used, it serves as a template for the resulting size only.  
+In this case, instead of an image operation, just the value of "x" (which would create no image itself) is returned.  A commented out "i0" is attached to the command.  The reason why this is necessary is to provide a clue about the size of the resulting image which now turns out to be equal to the size of image i0. Hence, the content of the image i0 is actually not being used, it serves as a template for the resulting size only.  
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-07.jpg' title='left: image i0 defining image size, right: halo centered at (100, 200)' %} The following code 
+
 ```python     
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 ```
@@ -262,6 +273,7 @@ Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  Since the code for the generation of the image does not contain neither operations on input images, nor any definitions for the image size, the parser searches for other hints for determining the output image size and takes the reference to 'i0' even though it is commented out.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %} The following command line 
+
 ```python
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
@@ -271,21 +283,22 @@ creates an image containing a circular mask around point (100, 200).
 As in the previous example, the comment "// i0" is required for defining the size of the new image according to the size of i0.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-08.jpg' title='left: image i0, right: binary thresholding of i0 by value 128' %} The following command line 
+
 ```python
 (i0 >= 128)? 255 : 0
 ```
 
 creates a binary image mask by thresholding the image i0 with a threshold value of 128.  Please note that single-row assingments as shown in all previous examples always need to return a pixel value.  That's the reason why 'if'-statements are not possible in this context and must be bypassed by a '?' operation.
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %} The following code 
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle' %} The following code 
 
 ```python
 (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
- Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
+ Math.pow(my / 2 - y, 2)) < mx / 2)? i0 : 0
 ```
-takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use of the variables 'mx' and 'my' which are holding the image size).
+takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use of the variables 'mx' and 'my' holding the image size).
 
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %} Finally, 
+{% include thumbnail align="right" width="300" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %} Finally, 
 
 ```python   
 (((int)i0 ^ (int)i1) > 0)? 255 : 0
@@ -350,7 +363,7 @@ return null;
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
 
 <!-- <img src="/media/plugins/xfig6-7-16.jpg" width="200"/> -->
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-16.jpg' %} Moreover, it is even possible to create your own images without any input image:
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-16.jpg' title='ramp image' %} Moreover, it is even possible to create your own images without any input image:
 
 ```java     
 int mx = 256;
@@ -364,7 +377,7 @@ return new Object[] { new int[] { mx, my }, out };
 creates an image containing a ramp (see image to the right), 
 
 <!-- <img src="/media/plugins/xfig6-7-17.jpg" width="200"/> -->
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-17.jpg' %} or, 
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-17.jpg' title='circular mask' %} or, 
 
 ```java     
 int mx = 256;
@@ -382,7 +395,7 @@ return new Object[] { new int[] { mx, my }, out };
 creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
 
 <!-- <img src="/media/plugins/xfig6-7-18.jpg" title="fig:xfig6-7-18.jpg" width="380" alt="xfig6-7-18.jpg" />  -->
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-18.jpg' %} As a final example, we show that it is also possible to create even more 'cute' images with that tool:
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-18.jpg' title='Mandelbrot fractal' %} As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
 ```java
 int max = 255;
