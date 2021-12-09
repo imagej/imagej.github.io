@@ -168,7 +168,7 @@ Clustering can also be applied to one dimensional spaces (i.e. from a single gra
 
 ### Disconnect Particles
 
-{% include img align="right" src="/media/plugins/xlib/xfig6-4.jpg" title="3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right)." %}
+{% include img align="right" src="/media/plugins/xlib/xfig6-4.jpg" caption="3D FIB-nanotomography of cement grains (left), subsequent thresholding (center), disconnected (k=0.7) and labeled particles (right)." %}
 
 In particle analysis from imaging due to the resolution limits, the particles might be wrongly connected at various locations if they are located too close to each other. To remedy such connections, an algorithm for disconnecting them at their bottle necks has been implemented [Münch2006]. If requires a parameter k ranking from [0...1] controlling the disconnection. At k=1, particle separation occurs at any bottle necks while at k=0, no separation at all is being performed. The optimum depends on the data and is usually somewhere around k=0.7 inducing marked bottle necks to be carved and small bottle necks to be left unchanged.
 
@@ -178,11 +178,11 @@ Results from cement grains acquired by 3D FIB-nanotomography are displayed in th
 
 ### Distance Transform
 
-{% include img align="right" src="/media/plugins/xlib/xfig6-5-1.jpg" title="Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right)." %}
+{% include img align="right" src="/media/plugins/xlib/xfig6-5-1.jpg" caption="Binary mask from cement particles (left) and Euclidian distance transform of it (center) and of its reversed mask (right)." %}
 
 Fast distance transform of image masks is useful for many morphological imaging applications. In an age of increasing data size, processing speed is of ultimate priority. A modern approach [Saito1994,Meijster2000] allows the generation of the distance transform even in linear time. The implementation in this plugin allows the calculation of Euclidian, Chessboard, or Citymap distance transform in both, 2D and 3D.
 
-{% include img align="left" src="/media/plugins/xlib/xfig6-5-2.jpg" title="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
+{% include img align="left" src="/media/plugins/xlib/xfig6-5-2.jpg" caption="Mask containing 3 black dots only (left) and its Euclidian, Chessboard and Citymap (right) distance transform." %}
 
 {% include img align="right" src='xfig6-6' caption='FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.'%}
 
