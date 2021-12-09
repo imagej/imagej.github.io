@@ -111,7 +111,7 @@ A *figure* is an image with legend text.
 
 ## Usage
 
-Images can be added with an accompanying legend text by including `figure` followed by a location (_e.g._ `align="left"`, `align="right"` and `align="center"`) as well as a `content` variable for the legend text.
+Images can be added with an accompanying legend text by including `img` followed by a location (_e.g._ `align="left"`, `align="right"` and `align="center"`) as well as a `caption` variable for the legend text.
 
 ## Example 1
 
