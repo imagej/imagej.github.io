@@ -230,27 +230,22 @@ The following operation makes use of plain integer values for the color definiti
 
 takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).  Like in the the previous example, this operation requires setting the argument "Format for output image" to "int color".
 
-The operation
-
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-04.jpg' title='left: image i0, right: power of two of image i0' %} The operation 
 ```java
 Math.pow(i0, 2.)
 ```
 
 yields the power of two of the image i0.  It makes sense to set the value of "Format for output image" to "float gray" (instead of "byte gray") in order to avoid exceeding the value range.
 
-The operation 
+
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} The operation 
 ```python
 i0 + x
 ```
 
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} 
-
 will calculate a copy of the image i0 overlayed by a horizontal ramp.  The value of 'x' (and 'y', 'z' for 3D volumes) is internally defined as the local x-coordinate (y-coordinate, z-coordinate for 3D volumes).
-
-The code line
  
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-06.jpg' title='left: image i0, right: ramp with the same size as image i0' %} The code line 
 ```python     
 x // i0
 ```
@@ -266,9 +261,7 @@ Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 
 calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).  Since the code for the generation of the image does not contain neither operations on input images, nor any definitions for the image size, the parser searches for other hints for determining the output image size and takes the reference to 'i0' even though it is commented out.
 
-The following command line 
-
-{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %}
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-09.jpg' title='left: image i0, right: circular mask around (100, 200)' %} The following command line 
 ```python
 (Math.sqrt(Math.pow(150 - x, 2) + 
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
@@ -292,9 +285,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
 ```
 takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).
 
-Finally, 
-
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %}
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %} Finally, 
 
 ```python   
 (((int)i0 ^ (int)i1) > 0)? 255 : 0
@@ -341,9 +332,7 @@ return new Object[] { m3, out };
 
 takes the smaller image i5 and adds it to the center of the larger image i3.  
 
-The code fragment 
-
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-15.jpg' title='left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1' %}
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-15.jpg' title='left: image i0, center: image mask i1, right: message box with mean value of i0 within mask i1' %} The code fragment 
 
 ```java     
 double mean = 0;
@@ -360,9 +349,8 @@ return null;
 
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
 
-<img src="/media/plugins/xfig6-7-16.jpg" width="200"/>  
-  
-Moreover, it is even possible to create your own images without any input image:
+<!-- <img src="/media/plugins/xfig6-7-16.jpg" width="200"/> -->
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-16.jpg' %} Moreover, it is even possible to create your own images without any input image:
 
 ```java     
 int mx = 256;
@@ -373,9 +361,10 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 ```
 
-creates an image containing a ramp (see image to the right), or
+creates an image containing a ramp (see image to the right), 
 
-<img src="/media/plugins/xfig6-7-17.jpg" width="200"/>
+<!-- <img src="/media/plugins/xfig6-7-17.jpg" width="200"/> -->
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-17.jpg' %} or, 
 
 ```java     
 int mx = 256;
@@ -390,9 +379,10 @@ for (int jj = 0; jj < my; jj++)
 return new Object[] { new int[] { mx, my }, out };
 ```
 
-<img src="/media/plugins/xfig6-7-18.jpg" title="fig:xfig6-7-18.jpg" width="380" alt="xfig6-7-18.jpg" /> creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
+creates an image containing a circle mask in the center (see image to the right). For more information about the syntax, please consult the help function of the plugin itself.
 
-As a final example, we show that it is also possible to create even more 'cute' images with that tool:
+<!-- <img src="/media/plugins/xfig6-7-18.jpg" title="fig:xfig6-7-18.jpg" width="380" alt="xfig6-7-18.jpg" />  -->
+{% include thumbnail align="right" src='/media/plugins/xfig6-7-18.jpg' %} As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
 ```java
 int max = 255;
