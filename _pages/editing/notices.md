@@ -142,9 +142,9 @@ by name, sans file extension.
 
 --------------
 
-{% highlight liquid %}{% raw %}{% include notice icon="apple"
+{% highlight liquid %}{% raw %}{% include notice icon="macos"
   content="Some people really love macOS!" %}{% endraw %}{% endhighlight %}
-{% include notice icon="apple"
+{% include notice icon="macos"
   content="Some people really love macOS!" %}
 
 --------------
