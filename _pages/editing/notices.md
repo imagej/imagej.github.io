@@ -109,7 +109,7 @@ by name, sans file extension.
 
 {% highlight liquid %}{% raw %}{% include notice icon="imagej2"
   content="This website documents the ImageJ ecosystem." %}{% endraw %}{% endhighlight %}
-{% include notice icon="imagej"
+{% include notice icon="imagej2"
   content="This website documents the ImageJ ecosystem." %}
 
 --------------
