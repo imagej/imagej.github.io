@@ -235,7 +235,7 @@ takes three binary images i0, i1, i2 and creates a colored mask out of it (see r
 Math.pow(i0, 2.)
 ```
 
-yields the power of two of the image i0.  It makes sense to set the value of "Format for output image" to "float gray" (instead of "byte gray") in order to avoid exceeding the value range.
+yields the power of two of the image i0.  It is recommended to set the value of "Format for output image" to "float gray" (or at least "short gray", instead of "byte gray") in order to avoid exceeding the value range.  If "byte gray" is selected, pixel values larger than 255 are set to 255.
 
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-05.jpg' title='left: image i0, right: copy of the image i0 overlayed by a horizontal ramp' %} The operation 
@@ -275,7 +275,7 @@ As in the previous example, the comment "// i0" is required for defining the siz
 (i0 >= 128)? 255 : 0
 ```
 
-creates a binary image mask by thresholding the image i0 with the value 128.  
+creates a binary image mask by thresholding the image i0 with a threshold value of 128.  Please note that single-row assingments as shown in all previous examples always need to return a pixel value.  That's the reason why 'if'-statements are not possible in this context and must be bypassed by a '?' operation.
 
 {% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-10.jpg' title='left: image i3, right: content of image i3 inside of a circle only' %} The following code 
 
@@ -283,7 +283,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
 (Math.sqrt(Math.pow(mx / 2 - x, 2) + 
  Math.pow(my / 2 - y, 2)) < mx / 2)? i3 : 0
 ```
-takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use the variables mx and my which are holding the image size).
+takes the content of the image inside of a circle only and removes the regions outside (please note: this code fragment makes use of the variables 'mx' and 'my' which are holding the image size).
 
 {% include thumbnail align="right" src='/media/plugins/xfig6-7-11.jpg' title='left: image i0, center: image i1, right: exclusive OR of images i0 and i1' %} Finally, 
 
@@ -350,7 +350,7 @@ return null;
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
 
 <!-- <img src="/media/plugins/xfig6-7-16.jpg" width="200"/> -->
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-16.jpg' %} Moreover, it is even possible to create your own images without any input image:
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-16.jpg' %} Moreover, it is even possible to create your own images without any input image:
 
 ```java     
 int mx = 256;
@@ -364,7 +364,7 @@ return new Object[] { new int[] { mx, my }, out };
 creates an image containing a ramp (see image to the right), 
 
 <!-- <img src="/media/plugins/xfig6-7-17.jpg" width="200"/> -->
-{% include thumbnail align="right" src='/media/plugins/xfig6-7-17.jpg' %} or, 
+{% include thumbnail align="right" width="200" src='/media/plugins/xfig6-7-17.jpg' %} or, 
 
 ```java     
 int mx = 256;
