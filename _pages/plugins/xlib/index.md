@@ -2,16 +2,16 @@
 mediawiki: Xlib
 title: Xlib
 categories: [Analysis,Filtering,MATLAB,Particle Analysis,Segmentation,Skeleton]
-
 name: Xlib
 team-founders: Beat Münch
 team-leads: Beat Münch
 team-maintainers: Beat Münch
-release-date: 06-December-2021
+release-date: 6 December 2021
+source-label: on SWITCHdrive
+source-url: https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp
+dev-status: Stable
 support-status: maintained actively as of December 2021
 ---
-
-{% include info-box software='ImageJ' name='Xlib' author='Beat Münch' maintainer='Beat Münch' source='[https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp](https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp)' released='1 June 2015' latest-version='6 December 2021' status='stable' category='Any' %}
 
 ## Overview of 'Xlib'
 
