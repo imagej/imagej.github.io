@@ -274,26 +274,22 @@ The Table shows examples of stitched data computed on an Intel® Quad-Core CPU m
 
 For any type of comment, questions or input please write to preibischs@janelia.hhmi.org or visit my [homepage](http://fly.mpi-cbg.de/preibisch).
 
-## Download for ImageJ & Acknowledgements
+## Acknowledgements
 
-Although the Stitching depends on quite some Fiji-specific libraries, there is a download for ImageJ available on my webpage in the [software section](http://fly.mpi-cbg.de/~preibisch/software.html).
+The Stitching depends on quite a few libraries. I want to thank all the authors for their support and help:
 
-Additionally to the Stitching plugins, it contains the following libraries. I want to thank all the authors for their support and help:
-
--   *edu_mines_jtk.jar*: Efficient 1-dimensional FFT implementation by [Dave Hale](http://inside.mines.edu/~dhale/jtk/).
--   *mpicbg.jar*: Transformation package by {% include person id='axtimwalde' %}
--   *[imglib](/libs/imglib1)*: N-dimensional image processing library for Java by {% include person id='tpietzsch' %}, {% include person id='StephanPreibisch' %} & {% include person id='axtimwalde' %}
--   *fiji-lib.jar & Fiji_Plugins.jar*: Fiji libraries by {% include person id='dscho' %}
--   *loci_tools.jar*: [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person id='ctrueden' %} and {% include person id='melissalinkert' %}
+-   [Mines Java Toolkit (JTK)](https://inside.mines.edu/~dhale/jtk/): Efficient 1-dimensional FFT implementation by Dave Hale.
+-   [MPI-CBG Transformation Package](https://github.com/axtimwalde/mpicbg) by {% include person id='axtimwalde' %}.
+-   [Imglib](/libs/imglib1): N-dimensional image processing library for Java by {% include person id='StephanPreibisch' %} and {% include person id='axtimwalde' %} (now superseded by [ImgLib2](/libs/imglib2)).
+-   [fiji-lib](https://github.com/fiji/fiji-lib) and [Fiji_Plugins](https://github.com/fiji/Fiji_Plugins): Fiji libraries by {% include person id='dscho' %}.
+-   [Bio-Formats](/formats/bio-formats) Java library for reading and writing life sciences image file formats. I want to especially thank {% include person id='ctrueden' %} and {% include person id='melissalinkert' %}.
 
 Additionally, I want to thank the following people for discussions, providing images and pushing me to develop and continuously improve the Stitching plugins:
 
-Danielle Bower, {% include person id='acardona' %}, Nicolas Gompel, Wieland Huttner, {% include person id='jefferis' %}, Arnim Jenett, {% include person id='tomka' %}, David Koos, Jan Peychl, {% include person id='tomancak' %}, James Truman, Nicholas Weiler and {% include person id='chalkie666' %}
+Danielle Bower, {% include person id='acardona' %}, Nicolas Gompel, Wieland Huttner, {% include person id='jefferis' %}, Arnim Jenett, {% include person id='tomka' %}, David Koos, Jan Peychl, {% include person id='tomancak' %}, James Truman, Nicholas Weiler and {% include person id='chalkie666' %}.
 
 ## See Also
 
 -   [The Publication on the Stitching Plugin](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184), S. Preibisch, S. Saalfeld, P. Tomancak (2009) Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
 -   [TrakEM2](/plugins/trakem2) for non-destructive stitching with floating, adjustable images.
 -   [XuvTools](http://www.xuvtools.org/doku.php) similar stitching software (but you cannot access XuvTools' source code freely) from the University of Freiburg and the [abstract](http://dx.doi.org/10.1111/j.1365-2818.2008.03094.x) of the accompying publication
-
-    
