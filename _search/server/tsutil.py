@@ -17,9 +17,9 @@ def connect():
         try:
             with open('/etc/typesense/typesense-server.ini') as f:
                 lines = f.readlines()
+                api_key = [line[10:] for line in lines if line.startswith('api-key = ')][0].rstrip()
         except FileNotFoundError:
             pass
-        api_key = [line[10:] for line in lines if line.startswith('api-key = ')][0].rstrip()
     if not api_key:
         return None
 
