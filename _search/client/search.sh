@@ -6,7 +6,7 @@ dir=$(dirname "$(echo "$0")")
 
 hostname=search.imagej.net
 prefix="https://$hostname:8108"
-collection=imagej-wiki
+collection=imagej-web
 
 TYPESENSE_API_KEY=$(cat "$dir/src/app.js" | grep '^ *apiKey: ' | sed 's/.*apiKey: "\([^"]*\)".*/\1/')
 

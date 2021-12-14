@@ -26,7 +26,7 @@ const searchClient = typesenseInstantsearchAdapter.searchClient;
 
 const search = instantsearch({
   searchClient,
-  indexName: "imagej-wiki"
+  indexName: "imagej-web"
 });
 
 search.addWidgets([

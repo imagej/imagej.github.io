@@ -10,7 +10,7 @@ ensureUser() { test "$(whoami)" = "$1" || die "Please run as $1."; }
 ensureUser root
 
 hostname=search.imagej.net
-collection=imagej-wiki
+collection=imagej-web
 
 # Install the typesense-server Debian package.
 wget https://dl.typesense.org/releases/0.19.0/typesense-server-0.19.0-amd64.deb &&
