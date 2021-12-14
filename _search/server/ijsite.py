@@ -71,10 +71,6 @@ def parse_document(docroot, path):
     if not 'description' in doc:
         doc['description'] = extract_description(doc, html.body.text),
 
-    logger.debug(f'[{doc["id"]}]')
-    logger.debug(f'title = {doc["title"]}')
-    logger.debug(f'description = {doc["description"]}')
-
     return doc
 
 
@@ -89,6 +85,7 @@ def load_site(docroot):
         '/javadoc',
         '/source',
     ]
+    logger.info('Loading content...')
     for root, dirs, files in os.walk(docroot):
         if any(root.find(path) >= 0 for path in ignored_paths):
             continue
@@ -102,4 +99,5 @@ def load_site(docroot):
             except:
                 logger.error(f'Failed to parse {path}:')
                 traceback.print_exc()
+    logger.info(f'Loaded {len(documents)} documents')
     return documents
