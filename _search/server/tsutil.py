@@ -1,6 +1,6 @@
 #!/bin/env python
 
-import logging
+import logging, os
 import typesense
 
 
@@ -11,13 +11,17 @@ def connect():
     """
     Open a connection to the typesense server.
     """
-    try:
-        with open('/etc/typesense/typesense-server.ini') as f:
-            lines = f.readlines()
-    except FileNotFoundError:
-        return None
 
-    api_key = [line[10:] for line in lines if line.startswith('api-key = ')][0].rstrip()
+    api_key = os.getenv('TYPESENSE_API_KEY')
+    if not api_key:
+        try:
+            with open('/etc/typesense/typesense-server.ini') as f:
+                lines = f.readlines()
+        except FileNotFoundError:
+            pass
+        api_key = [line[10:] for line in lines if line.startswith('api-key = ')][0].rstrip()
+    if not api_key:
+        return None
 
     return typesense.Client({
       'nodes': [{
