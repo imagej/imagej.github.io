@@ -119,6 +119,9 @@ info('Loading content...')
 documents = load_jekyll_site(docroot, icons)
 info(f'Loaded {len(documents)} documents')
 
+print(documents[0].keys())
+print(documents[0])
+'''
 client = connect()
 info('Connected to typesense')
 created = create(client, collection, documents, force=True)
@@ -126,3 +129,4 @@ info('Created new collection' if created else 'Updating existing collection')
 info(f'Indexing {len(documents)} documents...')
 update_index(client, collection, documents)
 info('Done!')
+'''

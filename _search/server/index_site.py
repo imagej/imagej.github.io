@@ -5,6 +5,7 @@ import typesense
 
 
 def debug(s):
+    print(f'[DEBUG] {s}')
     pass
 
 def info(s):
