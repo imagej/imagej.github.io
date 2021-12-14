@@ -1,8 +1,9 @@
-*~
 *.swp
+*~
+.idea/
 /.jekyll-cache/
 /.jekyll-metadata
 /.tweet-cache
 /Gemfile.lock
 /_site/
-.idea/
+__pycache__/
