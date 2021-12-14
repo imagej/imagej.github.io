@@ -46,10 +46,10 @@ def main(args):
     logging.root.setLevel(logging.INFO)
 
     if len(args) == 1:
-        collection = 'imagej-web'
+        collection = 'imagej-wiki'
         sites = {
-            'imagej-wiki': os.path.join(os.path.dirname(args[0]), '..', '..'),
-            'imagej-website': '/var/www/mirror.imagej.net',
+            'imagej.net': os.path.join(os.path.dirname(args[0]), '..', '..'),
+            'imagej.nih.gov/ij': '/var/www/mirror.imagej.net',
         }
     elif len(args) >= 3:
         collection = args[1]
