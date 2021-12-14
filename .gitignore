@@ -5,3 +5,4 @@
 /.tweet-cache
 /Gemfile.lock
 /_site/
+.idea/
