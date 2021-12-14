@@ -211,10 +211,10 @@ else:
 config = os.path.join(pathname, '_config.yml')
 docroot = os.path.join(pathname, '_pages')
 if not os.path.isfile(config) or not os.path.isdir(docroot):
-    error(f'The path ${pathname} does not appear to be a Jekyll site.')
+    error(f'The path {pathname} does not appear to be a Jekyll site.')
     sys.exit(1)
 else:
-    print(f'Found _pages at ${docroot}')
+    print(f'Found _pages at {docroot}')
 
 info('Parsing config...')
 icons = parse_icon_defaults(config)
