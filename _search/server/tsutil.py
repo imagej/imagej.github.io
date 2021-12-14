@@ -1,42 +1,21 @@
 #!/bin/env python
 
-import re, sys
+import logging
 import typesense
 
 
-def debug(s):
-    pass
-
-def info(s):
-    print(f'[INFO] {s}')
-
-def error(s):
-    sys.stderr.write(f'[ERROR] {s}\n')
-
-
-def first_sentence(lines):
-    def good(line):
-        if line.startswith('#'): return False      # ignore headers
-        if re.match('^[=-]+$', line): return False # ignore section dividers
-        return True
-
-    s = ''.join(line for line in lines if good(line))
-    s = re.sub('<[^>]*>', '', s)                   # strip HTML
-    s = re.sub('{%[^%]*%}', '', s)                 # strip Liquid tags
-    s = re.sub('\[([^]]*)\]\([^\)]*\)', '\\1', s)  # strip Markdown links
-    s = re.sub('\*+\\s*([^\*]*)\\s*\*+', '\\1', s) # strip emphasis
-    s = re.sub('\\s\\s*', ' ', s)                  # unify whitespace
-    dot = s.find('. ')
-    if dot >= 0: s = s[:dot+1]                     # cut down to first sentence
-    return s.strip()
+logger = logging.getLogger(__name__)
 
 
 def connect():
     """
     Open a connection to the typesense server.
     """
-    with open('/etc/typesense/typesense-server.ini') as f:
-        lines = f.readlines()
+    try:
+        with open('/etc/typesense/typesense-server.ini') as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        return None
 
     api_key = [line[10:] for line in lines if line.startswith('api-key = ')][0].rstrip()
 
@@ -63,7 +42,7 @@ def drop(client, collection):
     Delete the collection with the given name.
     """
     client.collections[collection].delete()
-    info('Deleted existing collection')
+    logger.info('Deleted existing collection')
 
 
 def create(client, collection, documents, force=False):
@@ -108,4 +87,3 @@ def update_index(client, collection, documents):
     Update the collection with the given name to match the given documents.
     """
     client.collections[collection].documents.import_(documents, {'action': 'upsert'})
-
