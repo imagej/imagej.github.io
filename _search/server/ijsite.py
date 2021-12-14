@@ -35,6 +35,16 @@ def parse_document(docroot, path):
     logger.debug(f'--> Content is {len(content)} lines')
     doc = {}
 
+    # Parse key/value pairs from the HTML head/meta tags.
+    metas = [] if not html.head else html.head.find_all('meta')
+    for meta in metas:
+        if not meta.has_attr('name') or not meta.has_attr('content'):
+            continue
+        key = meta['name']
+        val = meta['content']
+        logger.debug(f'--> Found meta tag key/value pair: {key} = {val}')
+        doc[key] = val
+
     # Parse key/value pairs e.g. "Author:" out of the HTML plugin table.
     table = html.find('table')
     if table:

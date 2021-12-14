@@ -61,7 +61,7 @@ def create(client, collection, documents, force=False):
     #   string[], int32[], int64[], float[], bool[]
 
     # Make a schema out of all the fields present across all the documents:
-    # a union of all the observed YAML keys, plus the three required fields.
+    # a union of all the observed keys, plus the three required fields.
     fieldset = set()
     for doc in documents:
         fieldset.update(doc)
