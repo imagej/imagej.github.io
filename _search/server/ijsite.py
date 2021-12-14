@@ -60,10 +60,10 @@ def parse_document(docroot, path):
                     doc[key] = val
 
     # Set required field values.
-    docid = path[len(docroot):path.rindex('.')]
+    docid = path[len(docroot):]
     doc.update({
         'id': f'https://imagej.nih.gov/ij{docid}',
-        'score': 100, # a constant value, at least for now,
+        'score': 90, # a constant value, at least for now,
         'title': html.title.text if html.title else docid,
         'icon': '/media/icons/imagej.png',
         'content': ''.join(content),
