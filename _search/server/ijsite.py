@@ -27,7 +27,7 @@ def parse_document(docroot, path):
     logger.debug(f'Parsing {path}...')
     try:
         with open(path) as f:
-            html = BeautifulSoup(f)
+            html = BeautifulSoup(f, features='lxml')
     except Exception as e:
         print(e)
         return None
