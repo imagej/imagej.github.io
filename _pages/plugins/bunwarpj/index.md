@@ -51,9 +51,9 @@ If you want to exit the plugin, press "Cancel". When you want the plugin to perf
 
 The final registration values appear in a separate ("Results") window.
 
-The following figure shows one of the **resulting stacks** from registering a source (moving) Lena image to a target (fixed) warped version of the same image:
+The following figure shows one of the **resulting stacks** from registering a source (moving) bridge image to a target (fixed) warped version of the same image:
 
-{% include thumbnail src='/media/plugins/bunwarpj/lena-basic-result.png' title='From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.'%}
+{% include thumbnail src='/media/plugins/bunwarpj/bridge-basic-result.png' title='From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.'%}
 
 The **verbose mode** produces more information:
 
