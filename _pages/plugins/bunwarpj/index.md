@@ -127,7 +127,7 @@ The depressed button indicates that you may **add a landmark** now. Landmarks ar
 </table>
 {:/}
 
-Click and drag on any landmark to make it correspond to the same position in both images. Here goes an example of the two Lena images with corresponding landmarks:
+Click and drag on any landmark to make it correspond to the same position in both images. Here goes an example of the two bridge images with corresponding landmarks:
 
 {::nomarkdown}
 <table>
@@ -187,7 +187,7 @@ The inner mask keeps the information in the interior of the polygon, while the o
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj/inner-mask-example.png' title='bUnwarpJ example of inner mask on Lena image.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/inner-mask-example.png' title='bUnwarpJ example of inner mask on bridge image.'%}</p>
       </td>
     </tr>
   </tbody>
