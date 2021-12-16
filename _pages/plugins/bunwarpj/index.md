@@ -327,7 +327,7 @@ One important advantage of [bUnwarpJ](/plugins/bunwarpj) over the previous metho
 
 ### SIFT and MOPS plugin support
 
-{% include thumbnail src='/media/plugins/bunwarpj/lena-sift-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
+{% include thumbnail src='/media/plugins/bunwarpj/bridge-sift-landmarks-example.png' title='bUnwarpJ: example of SIFT correspondences converted to registration landmarks.'%}The last release of bUnwarpJ has compatibility with Stephan Saalfeld's plugin for automatic [ feature extraction](/plugins/feature-extraction) (implementations of SIFT and MOPS algorithms).
 
 An explanation of the parameters is [ here](/plugins/feature-extraction#parameters). This plugin is also integrated in Fiji.
 
