@@ -74,7 +74,7 @@ During the registration process, the current difference images and a mapping of 
   <tbody>
     <tr>
       <td>
-        <p>{% include thumbnail src='/media/plugins/bunwarpj/lena-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%}</p>
+        <p>{% include thumbnail src='/media/plugins/bunwarpj/bridge-during-registration.png' title='Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.'%}</p>
       </td>
     </tr>
   </tbody>
