@@ -37,7 +37,7 @@ If you find Labkit useful for your research, please cite it:
 - [Automatic segmentation (Quick start tutorial)](/plugins/labkit/pixel-classification-tutorial)
 - [Manual segmentation (Quick start tutorial)](/plugins/labkit/manual-segmentation-tutorial)
 - [Curation of segmentation results](/plugins/labkit/curation-tutorial)
-- [How to improve automatic segmentation results?](/plugins/labkit/guideline)
+- [How to improve automatic segmentation results?](/plugins/labkit/guidelines)
 - [GPU accelleration](/plugins/labkit/gpu-accelleration-tutorial)
 - [Using Labkit in ImageJ Macro](/plugins/labkit/batch-processing)
 - [How to run Labkit on an HPC cluster to precess huge data?](/plugins/labkit/hpc-cluster)
