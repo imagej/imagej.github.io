@@ -2,7 +2,7 @@
 mediawiki: Labkit
 title: Labkit
 
-artifact: net.imglib2:imglib2-labkit
+artifact: sc.fiji:labkit-ui
 categories: [Uncategorized]
 ---
 
