@@ -92,7 +92,7 @@
                 <li><a href="/scripting/batch">Batch Processing</a></li>
                 <li><a href="/scripting/clojure">Lisp (Clojure)</a></li>
                 <li><a href="/scripting/matlab">MATLAB</a></li>
-                <li><a href="/scripting/jython">Python (Jython)</a></li>
+                <li><a href="/scripting/python">Python</a></li>
                 <li><a href="/scripting/renjin">R (Renjin)</a></li>
                 <li><a href="/scripting/jruby">Ruby (JRuby)</a></li>
                 <li><a href="/scripting/scala">Scala Scripting</a></li>
