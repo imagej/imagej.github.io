@@ -24,103 +24,75 @@ ImageJ2's [Script Editor](/scripting/script-editor) supports many different lang
 <table>
   <tbody>
     <tr>
-      <td style="white-space: normal !important">
-        <p>Recommended options</p>
-      </td>
-      <td></td>
+      <td colspan=2>Recommended options</td>
     </tr>
     <tr>
+      <td><a href="/scripting/groovy">Groovy</a></td>
       <td>
-        <p><a href="/scripting/groovy">Groovy</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='Groovy (programming language)' text='Groovy'%} is a flexible and powerful scripting language, Java-like but less verbose and dynamically typed. Learn this, and using Java later (if needed) will become easier.</p>
+        {% include wikipedia title='Groovy (programming language)' text='Groovy'%} is a flexible and powerful scripting language, Java-like but less verbose and dynamically typed. Learn this, and using Java later (if needed) will become easier.
       </td>
     </tr>
     <tr>
+      <td style="white-space: nowrap"><a href="/scripting/macro">ImageJ Macro</a></td>
       <td>
-        <p><a href="/scripting/macro">ImageJ Macro</a></p>
-      </td>
-      <td>
-        <p>The <a href="/software/imagej">ImageJ</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.</p>
+        The <a href="/software/imagej">ImageJ</a> macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.
       </td>
     </tr>
     <tr>
-      <td style="white-space: nowrap">
-        <p><a href="/scripting/jython">Python (Jython)</a></p>
-      </td>
+      <td><a href="/scripting/python">Python</a></td>
       <td>
-        <p>{% include wikipedia title='Python (programming language)' text='Python'%} is a popular choice among scientists.</p>
+        {% include wikipedia title='Python (programming language)' text='Python'%} is a popular choice among scientists. You can write [Jython scripts](/scripting/jython) (a Java-based Python 2 dialect) from inside ImageJ using its [script editor](/scripting/script-editor), or use [PyImageJ](/scripting/pyimagej) to invoke ImageJ functions from Python scripts.
       </td>
     </tr>
     <tr>
+      <td><a href="/scripting/javascript">JavaScript</a></td>
       <td>
-        <p><a href="/scripting/javascript">JavaScript</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='JavaScript' text='JavaScript'%} is a popular choice among web developers.</p>
+        {% include wikipedia title='JavaScript' text='JavaScript'%} is a popular choice among web developers.
       </td>
     </tr>
     <tr>
+      <td style="white-space: nowrap"><a href="/scripting/jruby">Ruby (JRuby)</a></td>
       <td>
-        <p><a href="/scripting/jruby">Ruby (JRuby)</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='Ruby (programming language)' text='Ruby'%} is another popular choice among web developers.</p>
+        {% include wikipedia title='Ruby (programming language)' text='Ruby'%} is another popular choice among web developers.
       </td>
     </tr>
     <tr>
+      <td style="white-space: nowrap"><a href="/scripting/clojure">Lisp (Clojure)</a></td>
       <td>
-        <p><a href="/scripting/clojure">Lisp (Clojure)</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='Lisp (programming language)' text='Lisp'%} is a popular choice among computer scientists.</p>
+        {% include wikipedia title='Lisp (programming language)' text='Lisp'%} is a popular choice among computer scientists.
       </td>
     </tr>
     <tr>
+      <td style="white-space: nowrap"><a href="/scripting/renjin">R (Renjin)</a></td>
       <td>
-        <p><a href="/scripting/renjin">R (Renjin)</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='R (programming language)' text='R'%} is a popular choice among scientists and statisticians.</p>
+        {% include wikipedia title='R (programming language)' text='R'%} is a popular choice among scientists and statisticians.
       </td>
     </tr>
     <tr>
-      <td>
-        <p>Other options</p>
-      </td>
-      <td></td>
+      <td colspan=2>Other options</td>
     </tr>
     <tr>
+      <td><a href="/develop/plugins">Java</a></td>
       <td>
-        <p><a href="/develop/plugins">Java</a></p>
-      </td>
-      <td>
-        <p>You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.</p>
+        You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.
       </td>
     </tr>
     <tr>
+      <td><a href="/scripting/matlab">MATLAB</a></td>
       <td>
-        <p><a href="/scripting/matlab">MATLAB</a></p>
-      </td>
-      <td>
-        <p>ImageJ2 can interface bidirectionally with MATLAB. See the <a href="/scripting/matlab">MATLAB Scripting</a> page for details.</p>
+        ImageJ2 can interface bidirectionally with MATLAB. See the <a href="/scripting/matlab">MATLAB Scripting</a> page for details.
       </td>
     </tr>
     <tr>
+      <td><a href="/scripting/beanshell">BeanShell</a></td>
       <td>
-        <p><a href="/scripting/beanshell">BeanShell</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='BeanShell' text='BeanShell'%} is an old script language, maintained mostly for backwards compatibility. It is nearly 100% compatible with Java syntax, but so is <a href="/scripting/groovy">Groovy</a>.</p>
+        {% include wikipedia title='BeanShell' text='BeanShell'%} is an old script language, maintained mostly for backwards compatibility. It is nearly 100% compatible with Java syntax, but so is <a href="/scripting/groovy">Groovy</a>.
       </td>
     </tr>
     <tr>
+      <td><a href="/scripting/scala">Scala</a></td>
       <td>
-        <p><a href="/scripting/scala">Scala</a></p>
-      </td>
-      <td>
-        <p>{% include wikipedia title='Scala (programming language)' text='Scala'%} support is currently experimental, and has bugs.</p>
+        {% include wikipedia title='Scala (programming language)' text='Scala'%} support is currently experimental, and has bugs.
       </td>
     </tr>
   </tbody>
