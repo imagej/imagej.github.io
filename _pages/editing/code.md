@@ -127,7 +127,7 @@ print("hello world");
 For more detailed instructions about using ImageJ macro with ImageJ.JS, please refer to [ImageJ.JS](/software/imagej-js). 
 
 Similarily, you can execute an ImJoy plugin in code fences which can be used for integrating image viewers such as 
-[Kaibu](https://kaibu.org), [vizarr](https://github.com/hms-dbmi/vizarr) and [ITK/VTK viewer](https://kitware.github.io/itk-vtk-viewer/), or running ImageJ2 and Fiji through [pyimagej](https://github.com/imagej/pyimagej) on a remote Jupyter server (e.g. on [Binder](https://mybinder.org)). For more details, please refer to [ImJoy](/software/imjoy).
+[Kaibu](https://kaibu.org), [vizarr](https://github.com/hms-dbmi/vizarr) and [ITK/VTK viewer](https://kitware.github.io/itk-vtk-viewer/), or running ImageJ2 and Fiji through [PyImageJ](/scripting/pyimagej) on a remote Jupyter server (e.g. on [Binder](https://mybinder.org)). For more details, please refer to [ImJoy](/software/imjoy).
 
 # Embedding external code
 

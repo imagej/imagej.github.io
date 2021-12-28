@@ -87,14 +87,14 @@ This menu hosts scripts that process files in bulk. Namely:
 
 ## Python Notebooks
 
-Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [pyimagej](https://pypi.org/project/pyimagej/) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/master/notebooks) directory in the SNT repository contains several examples at different complexity levels.
+Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PyImageJ](/scripting/pyimagej) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/master/notebooks) directory in the SNT repository contains several examples at different complexity levels.
 
 Here, we will exemplify basic functionality. Please refer to the complete [examples](https://github.com/morphonets/SNT/tree/master/notebooks) for more details. Once the Python environment is properly [setup](https://github.com/morphonets/SNT/tree/master/notebooks#snt-notebooks), one can initialize Fiji:
 
     import imagej
     ij = imagej.init('sc.fiji:fiji', headless=False)
 
-Then, one can use [pyjnius](https://github.com/kivy/pyjnius) (bundled with pyimagej) to import the needed SNT (Java) classes. E.g., to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [MouseLightLoader](https://morphonets.github.io/SNT/index.html?sc/fiji/snt/io/MouseLightLoader.html) and [TreeStatistics](https://morphonets.github.io/SNT/index.html?sc/fiji/snt/analysis/TreeStatistics.html) classes:
+Then, one can use [JPype](https://github.com/jpype-project/jpype) (bundled with PyImageJ) to import the needed SNT (Java) classes. E.g., to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [MouseLightLoader](https://morphonets.github.io/SNT/index.html?sc/fiji/snt/io/MouseLightLoader.html) and [TreeStatistics](https://morphonets.github.io/SNT/index.html?sc/fiji/snt/analysis/TreeStatistics.html) classes:
 
     from jnius import autoclass
     MouseLightLoader = autoclass('tracing.io.MouseLightLoader')

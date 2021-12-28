@@ -74,8 +74,8 @@ If you like Python, you probably want to use Python modules such as the
 excellent [NumPy](https://numpy.org/) and [SciPy](https://scipy.org/)
 libraries. Unfortunately, Jython does not support linking to Python modules
 backed by native code. If you need to use such modules, we recommend using
-[PyImageJ](https://pypi.org/project/pyimagej/) to call ImageJ functions from
-the Python side." %}
+[PyImageJ](/scripting/pyimagej) to call ImageJ functions from the Python side."
+%}
 
 Though Jython tries to be as close as possible as Python, there are some
 differences you may experience during scripting.
