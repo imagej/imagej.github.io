@@ -4,7 +4,9 @@ title: Jython Scripting
 section: Extend:Scripting:Languages
 ---
 
-
+{% include notice message="This page describes how to write scripts in
+  **Jython**, the JVM-based flavor of Python. To call ImageJ functions
+  from Python programs, see [PyImageJ](/scripting/pyimagej)." %}
 
 ## Introduction
 

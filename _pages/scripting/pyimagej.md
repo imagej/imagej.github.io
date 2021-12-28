@@ -6,6 +6,10 @@ source-url: https://github.com/imagej/pyimagej
 doi: 10.5281/zenodo.5537065
 ---
 
+{% include notice message="This page describes **PyImageJ**, a Python package
+  making ImageJ functions accessible from Python. To write scripts in Jython,
+  the JVM-based flavor of Python, see [Jython scripting](/scripting/jython)." %}
+
 [PyImageJ](https://pypi.org/project/pyimagej/) is a [Python](/scripting/python)
 wrapper for [ImageJ2](/software/imagej2). It also supports the
 [original ImageJ](/software/imagej) via ImageJ2's
