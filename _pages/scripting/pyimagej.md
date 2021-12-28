@@ -1,5 +1,6 @@
 ---
 title: PyImageJ
+project: /software/imagej2
 website: https://pypi.org/project/pyimagej/
 source-url: https://github.com/imagej/pyimagej
 doi: 10.5281/zenodo.5537065
