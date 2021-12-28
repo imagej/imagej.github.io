@@ -28,21 +28,23 @@ and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
 ### Immediate priorities
 
-*Last updated: 2021-Jun-09*
+*Last updated: 2021-Dec-28*
 
-1.  \[Summer 2021\] ImageJ and Fiji component updates.
+1.  \[Winter 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
+2.  \[Winter 2021\] ImageJ and Fiji component updates.
+    * New pom-scijava, imagej and fiji component releases (without log4j!).
+    * Fix deployment of `net.imagej:ij` artifacts. ({% include github org='imagej' repo='imagej1' issue=142 %})
+    * Fix [fiji-builds](https://github.com/fiji/fiji-builds) CI job.
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
     * **Fix ImageJ 1.x patching.** Reconcile latest ImageJ 1.x versions with ImageJ2 patching logic ({% include github org='imagej' repo='ij1-patcher' pr=47 %})
-    * New pom-scijava, imagej and fiji component releases.
-3.  \[Summer 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
-4.  \[Fall 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
-5.  \[Winter 2021\] **Maven-based ImageJ Launcher.** And migrate ImageJ and Fiji to ship with Java 11. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 11 if needed. Retire the Java-8 update site, using Maven coordinates instead.
+3.  \[Winter 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
+4.  \[Spring 2022\] **Maven-based ImageJ Launcher.** And migrate ImageJ and Fiji to ship with Java 11. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 11 if needed. Retire the Java-8 update site, using Maven coordinates instead.
 
 ### Medium-term priorities
 
 1.  **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/discuss/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
-2.  **Integrate PyImageJ with the ImageJ launcher.**
+2.  **Integrate PyImageJ with the ImageJ launcher.** (see also [this forum discussion](https://forum.image.sc/t/fiji-conda/59618/13))
 
 ### Longer-term priorities
 
