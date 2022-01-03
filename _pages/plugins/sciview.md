@@ -1,7 +1,7 @@
 ---
 mediawiki: SciView
 title: sciview
-categories: [Uncategorized]
+categories: [3D, Visualization]
 ---
 
 

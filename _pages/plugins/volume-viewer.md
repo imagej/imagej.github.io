@@ -2,7 +2,7 @@
 mediawiki: Volume_Viewer
 title: Volume Viewer
 project: /software/fiji
-categories: [Visualization]
+categories: [3D, Visualization]
 artifact: sc.fiji:Volume_Viewer
 ---
 

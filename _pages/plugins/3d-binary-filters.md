@@ -1,7 +1,7 @@
 ---
 mediawiki: 3D_Binary_Filters
 title: 3D Binary Filters
-categories: [Binary]
+categories: [3D, Binary]
 ---
 
 

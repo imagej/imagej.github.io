@@ -3,7 +3,7 @@ mediawiki:
 - 3D_cyclorama
 - 3Dcyclorama
 title: 3D cyclorama
-categories: [Digital Volume Unrolling, Digital Volume Flattening]
+categories: [3D, Digital Volume Unrolling, Digital Volume Flattening]
 description: Fiji plugin to digitally unroll deformed tubes.
 author: Charalambos Rossides
 ---
