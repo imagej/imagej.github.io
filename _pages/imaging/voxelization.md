@@ -16,25 +16,25 @@ A [Fiji](/software/fiji) installation with the [sciview](/plugins/sciview) updat
 
 #### Launch sciview
 
-![](/media/imaging/launch-sciview.png)
+{% include img src="launch-sciview" %}
 
 #### Import a 3D mesh
 
-![](/media/imaging/import-obj.png)
+{% include img src="import-obj" %}
 
 At the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work.
 
 #### Convert mesh to image
 
-![](/media/imaging/mesh-to-image.png)
+{% include img src="mesh-to-image" %}
 
 #### Select output dimensions
 
-![](/media/imaging/mesh-to-image-dimensions.png)
+{% include img src="mesh-to-image-dimensions" %}
 
 #### Inspect the result
 
-![](/media/imaging/voxelization-output.png)
+{% include img src="voxelization-output" %}
 
 ### Optional additional steps
 
