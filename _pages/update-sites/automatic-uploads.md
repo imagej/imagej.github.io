@@ -72,7 +72,9 @@ To upload to your wiki update site, you will need to provide GitHub Actions with
 
 GitHub Actions is capable of building many languages besides Java. If you cannot use Maven with a `scijava.app.directory` then you need to replace the following line of your `.github/workflows/release.yml`:
 
-      - `mvn -B install -Dscijava.app.directory=./Fiji.app -Ddelete.other.versions=true -Dscijava.ignoreDependencies=true`
+```shell
+mvn -B install -Dscijava.app.directory=./Fiji.app -Ddelete.other.versions=true -Dscijava.ignoreDependencies=true
+```
 
 with a sequence of commands that will move your build artifacts to the appropriate `./Fiji.app/jars` or `./Fiji.app/plugins` directory, as appropriate for your update site.
 
@@ -186,7 +188,9 @@ in your repository, the `.travis.yml` will automatically be updated appropriatel
 
 Travis CI is capable of building many languages besides Java. If you cannot use Maven with a `scijava.app.directory` then you need to replace the following line of your `.travis.yml`:
 
-      - `mvn clean install -Dscijava.app.directory="$(pwd)" -Ddelete.other.versions=true`
+```shell
+mvn clean install -Dscijava.app.directory="$(pwd)" -Ddelete.other.versions=true
+```
 
 with a sequence of commands that will move your build artifacts to the appropriate `/jars` or `/plugins` directory, as appropriate for your update site.
 
