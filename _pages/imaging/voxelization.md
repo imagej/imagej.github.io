@@ -6,7 +6,7 @@ nav-links: true
 
 Voxelization is the process of converting a data structures that store geometric information in a continuous domain (such as a 3D triangular mesh) into a rasterized image (a discrete grid).
 
-## How to voxel a 3D mesh with Fiji
+## How to voxelize a 3D mesh with Fiji
 
 ### Requirements
 
