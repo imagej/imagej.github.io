@@ -9,11 +9,11 @@ source-url: https://github.com/AllenMLI/AMPT
 pom-url: https://raw.githubusercontent.com/AllenMLI/AMPT/main/pom.xml
 website: https://allenmli.github.io/AMPT/
 team-founders:
-- AMPT Dev | mailto:ampt-dev@allenmli.org
+- AMPT Dev | mailto:ampt-dev@allenai.org
 team-leads:
-- AMPT Dev | mailto:ampt-dev@allenmli.org
+- AMPT Dev | mailto:ampt-dev@allenai.org
 team-maintainers:
-- AMPT Dev | mailto:ampt-dev@allenmli.org
+- AMPT Dev | mailto:ampt-dev@allenai.org
 ---
 
  The [Aquatic Mammal Photogrammetry Tool](https://allenmli.github.io/AMPT/) (AMPT) is an ImageJ plug-in that simplifies the process of measuring aquatic mammals from aerial imagery. The tool may be configured to support different guided measurements.
