@@ -51,12 +51,3 @@ print("Study Description: "+ studyDescription);
 print("Image Position: "+imagePosition);
 print("Pixel Spacing: "+ pixelSpacing);
 ```
-
-See also these past threads from the ImageJ [mailing list](/discuss/mailing-lists):
-
--   2015-09-23 - [Reading DICOM header without opening the image](http://imagej.1557.x6.nabble.com/Reading-DICOM-header-without-opening-the-image-tp5014426.html)
--   2013-10-10 - [ImageJ DICOM Header](http://imagej.1557.x6.nabble.com/ImageJ-DICOM-Header-tp5005125.html)
--   2013-05-30 - [Dicom Header](http://imagej.1557.x6.nabble.com/Dicom-Header-tp5003154.html)
--   2012-05-09 - [Running a Macro in a plugin, retrieving DICOM header information automatically](http://imagej.1557.x6.nabble.com/Running-a-Macro-in-a-plugin-retrieving-DICOM-header-information-automatically-tp4962557.html)
--   2012-04-19 - [Accessing a DICOM header](http://imagej.1557.x6.nabble.com/Accessing-a-DICOM-header-tt4898551.html)
--   2012-04-13 - [Query Dicom Header](http://imagej.1557.x6.nabble.com/Query-Dicom-Header-tp4877985.html)
