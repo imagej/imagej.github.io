@@ -323,7 +323,7 @@ As far as users are concerned, external Fiji plugins are exactly the same as int
 
 ## Where should I put the jars of my plugin?
 
-If you develop a Fiji plugin, the result will be in the form of one or more jars containing your plugin and possibly third-party libraries that you rely on. To deploy your plugin you put the jars in the plugins/ or jars/ Fiji subdirectories. The general idea is that only the jars directly containing plugin classes go into plugins/. Auxiliary and third-party jars go into jars/. (see [this mail](https://groups.google.com/d/msg/fiji-devel/pMe86pY_Kmc/vI-hUJyyrUwJ) for more background on this.)
+If you develop a Fiji plugin, the result will be in the form of one or more jars containing your plugin and possibly third-party libraries that you rely on. To deploy your plugin you put the jars in the plugins/ or jars/ Fiji subdirectories. The general idea is that only the jars directly containing plugin classes go into plugins/. Auxiliary and third-party jars go into jars/. (see [this mail](https://groups.google.com/g/fiji-devel/c/pMe86pY_Kmc/m/vI-hUJyyrUwJ) for more background on this.)
 
 ## How can I call ImageJ from my software?
 

@@ -46,4 +46,4 @@ Methods of getting the patch to Wayne include:
 
 The important part is that Wayne receive the code/patch, since he is the only one with the authority to merge it.
 
-(See also this [nice response](http://imagej.1557.x6.nabble.com/Non-Uniform-X-Y-Z-Units-Patch-tp5008492p5008496.html) from Curtis Rueden on the ImageJ mailing list.)
+(See also this [nice response](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;17b8ec52.1406) from Curtis Rueden on the ImageJ mailing list.)

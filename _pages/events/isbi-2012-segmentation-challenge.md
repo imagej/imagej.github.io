@@ -35,7 +35,7 @@ This challenge was part of a [workshop](http://www.biomedicalimaging.org/2012/in
 
 Each team received statistics regarding their results. **After the workshop, an overview article will be compiled by the organizers of the challenge, with up to three members per participating team as co-authors**.
 
-If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](/events/isbi-2012-segmentation-challenge#Organizers). There is also an **open discussion group** that you can join [here](http://groups.google.com/group/EM-segmentation-challenge-ISBI-2012).
+If you have any doubt regarding the challenge, please, do not hesitate to contact the [organizers](/events/isbi-2012-segmentation-challenge#Organizers). There is also an **open discussion group** that you can join [here](https://groups.google.com/g/EM-segmentation-challenge-ISBI-2012).
 
 ## Training data
 

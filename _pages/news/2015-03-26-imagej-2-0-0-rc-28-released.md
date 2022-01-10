@@ -26,7 +26,7 @@ The "Enable ImageJ2 data structures" option in {% include bc path='Edit | Option
 
 Regardless, that feature is also less important now that we do on-demand syncing when encountering an ImageJ2 command or script parameter, such as a `net.imagej.Dataset`. This release also fixes a bug surrounding that on-demand syncing, which caused it to be triggered unnecessarily ([imagej-common/92e59826](https://github.com/imagej/imagej-common/commit/92e59826bde0642f217e07b38c161087b15538d0)).
 
-Thanks to Greg for the [bug report on the ImageJ mailing list](http://imagej.1557.x6.nabble.com/Running-scripts-with-an-open-Virtual-Hyperstack-tp5012163p5012175.html)!
+Thanks to Greg for the [bug report on the ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;e60027e9.1503)!
 
 ### Bug fixes
 

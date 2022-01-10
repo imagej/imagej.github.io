@@ -151,7 +151,7 @@ The updater will only pick up files stored at the appropriate location according
    win64/
 ```
 
-Further information is in this [thread on fiji-devel](https://groups.google.com/forum/#!topic/fiji-devel/QbY4XnLC-wE)
+Further information is in this [thread on fiji-devel](https://groups.google.com/g/fiji-devel/c/QbY4XnLC-wE)
 
 ## The actual files
 

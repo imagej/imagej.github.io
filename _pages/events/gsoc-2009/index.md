@@ -179,5 +179,5 @@ The project would consist of
 # Other links
 
 * [ImageJ's homepage](/)  
-* [Fiji's developer mailing list](http://groups.google.com/group/fiji-devel)  
+* [Fiji's developer mailing list](https://groups.google.com/g/fiji-devel)  
 * [#fiji-devel channel](/discuss/chat#irc) on irc.freenode.net

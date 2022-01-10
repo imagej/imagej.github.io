@@ -183,7 +183,7 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         {% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20141125.zip' %}
       </td>
       <td>
-        Just prior to a <a href="https://groups.google.com/d/msg/fiji-devel/49a7q7e9g44/xuhp0nQRVnAJ">big update</a> to facilitate <a href="reproducible_builds">reproducible builds</a>.
+        Just prior to a <a href="https://groups.google.com/g/fiji-devel/c/49a7q7e9g44/m/xuhp0nQRVnAJ">big update</a> to facilitate <a href="reproducible_builds">reproducible builds</a>.
       </td>
     </tr>
     <tr>
@@ -231,7 +231,7 @@ Here are Life-Line versions from before Fiji switched to Java 8.
         {% include icon name='Fiji' size='24px' link='https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20130715.zip' %}
       </td>
       <td>
-        Just prior to <a href="https://groups.google.com/d/msg/fiji-devel/KpuWJ6kNgbk/XX2pR8jjam8J">extensive changes reconciling Fiji with ImageJ2</a>.
+        Just prior to <a href="https://groups.google.com/g/fiji-devel/c/KpuWJ6kNgbk/m/XX2pR8jjam8J">extensive changes reconciling Fiji with ImageJ2</a>.
       </td>
     </tr>
   </tbody>

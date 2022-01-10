@@ -164,7 +164,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>{% include person id='tnargsirrah' %}</td>
       <td>ImageJX was created as a means to discuss and explore
         improvements to ImageJ. There was an
-        <a href="http://groups.google.com/group/imagejx">ImageJX mailing
+        <a href="https://groups.google.com/g/imagejx">ImageJX mailing
         list</a> as well as an ImageJX software prototype. The ImageJX
         software prototype was a proof of concept—an attempt to
         reorganize ImageJ's internals to make it more flexible. The

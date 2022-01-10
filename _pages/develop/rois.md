@@ -539,8 +539,8 @@ final RealRandomAccessibleRealInterval< BoolType > rrari = Masks.toRealRandomAcc
 
 # Discussion
 
--   [G. Landini: Imglib or ImageJ2 and ROIs](https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/K8NRgKgk-WUJ) – ROIs should be drawn from the center of each pixel
--   [S. Preibisch: Imglib or ImageJ2 and ROIs - Where is a pixel?](https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/9SoisoaivWwJ) – Two kinds of ROIs: discrete and continuous
--   [D. White: Imglib or ImageJ2 and ROIs - A pixel is not a little square](https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/FU2Js4zNPG0J) – Alvy Ray's classic article
--   [J. Tinevez: ImageJ class hierarchy suggestions](https://groups.google.com/d/msg/fiji-devel/E9SSt9z2zRQ/Slc1BLzuvtcJ) – a proposed interface-driven design for ROIs
--   [Implementation plan for Imglib2-rois 2D](http://forum.imagej.net/t/implementation-plan-for-imglib2-rois-2d/2531) - forum discussion regarding ROI API
+-   [G. Landini: Imglib or ImageJ2 and ROIs](https://groups.google.com/g/fiji-devel/c/AdeqZKffIUU/m/K8NRgKgk-WUJ) – ROIs should be drawn from the center of each pixel
+-   [S. Preibisch: Imglib or ImageJ2 and ROIs - Where is a pixel?](https://groups.google.com/g/fiji-devel/c/AdeqZKffIUU/m/9SoisoaivWwJ) – Two kinds of ROIs: discrete and continuous
+-   [D. White: Imglib or ImageJ2 and ROIs - A pixel is not a little square](https://groups.google.com/g/fiji-devel/c/AdeqZKffIUU/m/FU2Js4zNPG0J) – Alvy Ray's classic article
+-   [J. Tinevez: ImageJ class hierarchy suggestions](https://groups.google.com/g/fiji-devel/c/E9SSt9z2zRQ/m/Slc1BLzuvtcJ) – a proposed interface-driven design for ROIs
+-   [Implementation plan for Imglib2-rois 2D](https://forum.image.sc/t/implementation-plan-for-imglib2-rois-2d/2531) - forum discussion regarding ROI API
