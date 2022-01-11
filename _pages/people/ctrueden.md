@@ -24,6 +24,37 @@ of [LOCI](/orgs/loci).
 He is the principal architect of [ImageJ2](/software/imagej2),
 and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
+## Community support pledge
+
+The ImageJ community generates a lot of support activity!
+[Forum posts](https://forum.image.sc/tag/imagej), [bug reports](/discuss/bugs),
+[chat room](/discuss/chat) messages, and
+[mailing list threads](/discuss/mailing-lists), and [more](/discuss).
+I want to help, but it's rather overwhelming, especially taken together
+with new development efforts and collaborations that are always ongoing.
+
+If you are reading this, perhaps you have posted issues or support requests
+that have gone unanswered for weeks, months, or even years. I want to change
+that, and am working on process improvements to make it easier for the core
+ImageJ2 team to respond to every support request within one work day:
+
+* **Better component status overview.** The site
+  [status.scijava.org](https://status.scijava.org/) is a developer-oriented
+  view of the status of every component in the SciJava
+  [Bill of Materials](/develop/architecture#bill-of-materials), especially
+  components built on [pom-scijava](https://github.com/scijava/pom-scijava).
+  I am expanding the scope of the component table to include a summary of
+  support requests, issues, pull requests, etc., per component, in a way that
+  will foster accountability for the people maintaining each component.
+
+* **Community Mondays.** In the meantime, starting in 2022, I am personally
+  focusing every Monday on answering support questions. I can't keep up with
+  everything, but I can try to make some small impact by responding to as many
+  requests as I can. Unfortunately, until the status.scijava.org work is
+  complete, I won't always succeed in prioritizing items in a fair order, but
+  I'm doing my best. And once the component table is upgraded, I will switch
+  to a daily rather than weekly support workflow.
+
 ## What is Curtis working on?
 
 ### Immediate priorities
