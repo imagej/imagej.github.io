@@ -122,8 +122,9 @@ cellpose can and does work with RGB images. They are single-channel but encode r
 
 ### Tracking cells stained for cytoplam with cellpose.
 
-One of the central  advantage of cellpose is its ability to give robuset segmentation results for cells stained for cytoplasm. We will use such a movie in this tutorial. You can download the example movie here TODO TODO
+One of the central  advantage of cellpose is its ability to give robuset segmentation results for cells stained for cytoplasm. We will use such a movie in this tutorial. You can download the movie from Zenodo:
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5863219.svg)](https://doi.org/10.5281/zenodo.5863219)
 
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-01" align='center' width='400' %}
 
@@ -176,10 +177,15 @@ Another key advantage of cellpose is that it is relatively easy and fast to trai
 
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-01" align='center' width='400' %}
 
-For instance the cells above were imaged in bright-field at high resolution. They have a rather complex shape and a low contrast. The segmentation of cells in such images is normally difficult with classical image processing techniques. In the following we will use the trackMate-Cellpose intragration to segment and track them. Our goal is to see if we discriminate between two types of cell locomotion based on dynamics and morphological features of single cells. We will see how to give more robustness to the analysis by filtering out some detections close to image border.
+For instance the cells above were imaged in bright-field at high resolution. They are Glioblastoma-astrocytoma U373 cells migrating on a polyacrylamide gel. They have a rather complex shape and a low contrast. The segmentation of cells in such images is normally difficult with classical image processing techniques. In the following we will use the trackMate-Cellpose intragration to segment and track them. Our goal is to see if we discriminate between two types of cell locomotion based on dynamics and morphological features of single cells. We will see how to give more robustness to the analysis by filtering out some detections close to image border.
 
-We have trained a cellpose model TODO TODO
+The data can be obtained from Zenodo:
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5863317.svg)](https://doi.org/10.5281/zenodo.5863317)
+
+The dataset contains a custom cellpose model. We have trained a it using the [ZeroCostDL4Mic platform](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki). This cellpose model was trained for 500 epochs on 214 paired image patches (image dimensions: 520x 696), with a batch size of 8, using the [Cellpose ZeroCostDL4Mic notebook (v 1.13)](https://colab.research.google.com/github/HenriquesLab/ZeroCostDL4Mic/blob/master/Colab_notebooks/Beta%20notebooks/Cellpose_2D_ZeroCostDL4Mic.ipynb). The cellpose `cyto2` model was used as a training starting point. The training was accelerated using a Tesla K80 GPU.
+
+To use the model you need to unzip the `Cellpose model 171121-20211118T111402Z-001.zip` file. The cellpose model file itself is the `cellpose_residual_on_style_on_concatenation_off_train_folder_2021_11_17_19_45_23.398850` file in the `171121` folder.
 We can use it in TrackMate by specifying "Custom" as a model in the interface:
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-02" align='center' width='350' %}
 
