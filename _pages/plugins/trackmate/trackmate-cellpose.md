@@ -124,7 +124,7 @@ cellpose can and does work with RGB images. They are single-channel but encode r
 
 One of the central  advantage of cellpose is its ability to give robuset segmentation results for cells stained for cytoplasm. We will use such a movie in this tutorial. You can download the movie from Zenodo:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5863219.svg)](https://doi.org/10.5281/zenodo.5863219)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5864646.svg)](https://doi.org/10.5281/zenodo.5864646)
 
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-01" align='center' width='400' %}
 
