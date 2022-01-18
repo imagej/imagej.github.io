@@ -163,7 +163,7 @@ We use the following parameter:
 
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-06" align='center' width='400' %}
 
-We dilate the cells with a `Scale factor` of *1.2* so that if the daughter cells moved away from the mother cell they are still linked to the mother. A `Minimal IoU` value of *0.3* mitigate false cell division detections. Choosing the *Precise* method for `IoU calulculation` has some cost on tracking time (5 s. versus 1 s. for the *Fast* method) but it is so short in our case that we still use it.
+We dilate the cells with a `Scale factor` of *1.2* so that if the daughter cells moved away from the mother cell they are still linked to the mother. A `Minimal IoU` value of *0.3* mitigate false cell division detections. Choosing the *Precise* method for `IoU calculation` has some cost on tracking time (5 s. versus 1 s. for the *Fast* method) but it is so short in our case that we still use it.
 
 Here is what the tracking results look like:
 
