@@ -21,8 +21,14 @@ team-founders: Laurent Thomas, Pierre Trehin
 
 ## Installation
 Activate the *Masks from Rois* update site (see [Activating an update site](https://imagej.net/update-sites/following)).  
-Restart Fiji.  
-The plugins are then available at the bottom of the menu *Edit > Selection*, the  *Mask from Rois* entry.
+
+Alternatively, without the Fiji updater, you can download the content of the repository, clicking the green button `code`, and choosing `Download ZIP`.  
+Unzip the file, drag and drop the Fiji.app directory in the directory containing your Fiji installation (ie in the directory containing your own Fiji.app).  
+This will automatically copy the files in the right location.  
+
+In both case, make sure to restart Fiji.  
+The plugins are then available at the bottom of the menu *Edit > Selection*, the  *Mask from Rois* entry.  
+
 
 ## Application
 These plugins facilitate the generation of masks from image-regions outlined with ROIs for large datasets.  
