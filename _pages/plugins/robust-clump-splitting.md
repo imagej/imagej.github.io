@@ -113,7 +113,7 @@ Once the SVM was trained, there are two windows, showing the results. In the fir
 
 ![](/media/plugins/svmmodellgraphic.png)
 
-The second window shows the parameters of this model. The optimum for $$c_1$$ and $$c_2$$ parameters, are given together with the number of support vectors and a confidencial matrix to evaluate the model.
+The second window shows the parameters of this model. The optimum for $$c_1$$ and $$c_2$$ parameters, are given together with the number of support vectors and a confidential matrix to evaluate the model.
 
 <img src="/media/plugins/svmmodelnumbers.png" width="300"/>
 

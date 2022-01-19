@@ -21,7 +21,7 @@ extensions: ["mathjax"]
 
 ## Introduction
 
-A {% include wikipedia title='Circle Hough Transform' text='Hough circle transform'%} is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete. The transform is also selective for circles, and will generally ignore elongated ellipses. The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in the search space. By searching a 3D Hough search space, the transform can measure the centroid and radius of each circlular object in an image.
+A {% include wikipedia title='Circle Hough Transform' text='Hough circle transform'%} is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete. The transform is also selective for circles, and will generally ignore elongated ellipses. The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in the search space. By searching a 3D Hough search space, the transform can measure the centroid and radius of each circular object in an image.
 
 {%- include img src='hough-intro2' align='center' width='1000px' caption='**Hough circle transform is specific to circular objects.** *Left Panel:* This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
 

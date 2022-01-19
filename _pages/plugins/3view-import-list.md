@@ -224,7 +224,7 @@ def make_list(filetype, folder, dir_RegExp, list_filename):
 			filenames[:] = [fn3 for fn3 in filenames if os.path.isfile(os.path.join(folder,dirs,fn3))and fn3.endswith(filetype)] # make sure there are no dirs ending in desired filetype (one never knows~) and filter for the filetype
 			filenames_size = len(filenames) # for progress bar only
 			for p, filen in enumerate(filenames):
-				try: # check if metadata was read already and extract metadata info from the 1st file on the list - if it was not, get this info by executing the except clause. This makes the metadata routine run only once in the beggining. Being nested inside the else: stm above, metadata is only read if it's not a single position acquisition - in this case it wouldn't be necessary. Also, complete calc of overlap and montage configuration
+				try: # check if metadata was read already and extract metadata info from the 1st file on the list - if it was not, get this info by executing the except clause. This makes the metadata routine run only once in the beginning. Being nested inside the else: stm above, metadata is only read if it's not a single position acquisition - in this case it wouldn't be necessary. Also, complete calc of overlap and montage configuration
 					overlap
 				except NameError:
 					IJ.showStatus('Reading stage coordinates 3/3...')

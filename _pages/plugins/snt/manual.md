@@ -66,7 +66,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img s
 
 </div>
 
--   {% include bc path='Compare Reconstructions...' %} Allows morphometric conparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
+-   {% include bc path='Compare Reconstructions...' %} Allows morphometric comparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
 -   {% include bc path='Create Dendrogram' %} Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Dendrogram Viewer](/plugins/snt/analysis#dendrogram-viewer) for details.
 -   {% include bc path='Batch Scripts| ' %} A collection of batch processing scripts related to image processing, reconstruction analysis and data curation. See [Script Templates: Batch](/plugins/snt/scripting#batch) for details.
 

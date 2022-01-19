@@ -141,7 +141,7 @@ Dye choice is critical here. Avoid DAPI and GFP, since DAPI emission is very bro
 
 As a general rule, you should have each object you image sampled over many pixels. When this is not the case, a colocalization statement cannot be reliable made, as the assumptions of the method no longer hold. 
 
-Let's suppose that you have two objects each with different colour, and you would like to assess if they colocalize in space. If we assume that they don't colcocalise, if the colocalization procedure you are using is working, it should give you a negative result. Consider one molecule of each dye. They are sitting close to each other, but they are not colocalized (in the same place). Now, if the pixel size is so big that these two molecules are imaged on the same pixel, the procedure tells you that they are colocalized. Once again, you are producing false-positive results.
+Let's suppose that you have two objects each with different colour, and you would like to assess if they colocalize in space. If we assume that they don't colocalise, if the colocalization procedure you are using is working, it should give you a negative result. Consider one molecule of each dye. They are sitting close to each other, but they are not colocalized (in the same place). Now, if the pixel size is so big that these two molecules are imaged on the same pixel, the procedure tells you that they are colocalized. Once again, you are producing false-positive results.
 
 <img src="/media/imaging/500px-colocalizationsampling.png" width="500"/>
 

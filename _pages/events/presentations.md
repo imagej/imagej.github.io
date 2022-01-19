@@ -521,7 +521,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>2020-April-02</td>
       <td>Robert Haase</td>
-      <td>Lecture Biolmage Analysis 2020</td>
+      <td>Lecture BioImage Analysis 2020</td>
       <td>
         <a href="https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U">YouTube Channel</a>
       </td>

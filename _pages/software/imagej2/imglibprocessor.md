@@ -437,7 +437,7 @@ Added a couple set/get methods so our new `ImageProcessor` type can manipulate i
   public void `setFgColor()`
   public Color `getDrawingColor()`
 
-Added a method that is only caled on processors of OTHER type by `ImagePlus::getPixel()` 
+Added a method that is only called on processors of OTHER type by `ImagePlus::getPixel()` 
   `public void encodePixelInfo(int[] destination, int x, int y)` 
   
 - ByteProcessor  

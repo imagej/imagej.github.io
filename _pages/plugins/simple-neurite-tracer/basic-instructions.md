@@ -40,7 +40,7 @@ In this plugin each path can only be a linear succession of points in the image.
 
 #### Saving and Loading Files
 
-You can load and save traces files with the corresponding buttons at the bottom of the tracer's dialog box. I suggest that you save your files with the original filename with the extension changeed to ".traces", so "test.tif" would have a traces file "test.traces". This is because the "Load Traces File" option will look for a file with that name and offer to load it for you.
+You can load and save traces files with the corresponding buttons at the bottom of the tracer's dialog box. I suggest that you save your files with the original filename with the extension changed to ".traces", so "test.tif" would have a traces file "test.traces". This is because the "Load Traces File" option will look for a file with that name and offer to load it for you.
 
 #### Filling Out Neurons
 

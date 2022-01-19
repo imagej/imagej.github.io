@@ -67,7 +67,7 @@ The dataset contains the ILP file, which is the ilastik project file. We trained
 {% include img src='/media/plugins/trackmate/trackmate-ilastik-tutorial_3.png' width='400px'  %}
 
 5. The ilastik classifier will be applied to the data. Wait for the process to be done and go to the next step.
-   - **Issues**: a few WARNING and ERRORS in the consol windows, in addition to DEBUG messages. No direct impact on the processing.
+   - **Issues**: a few WARNING and ERRORS in the console windows, in addition to DEBUG messages. No direct impact on the processing.
 6. You have the option to apply various filtering on computed features to remove some spots of the detection. This step has a direct impact on the quality of the tracking, it is worth to spend time on it to provide a clean spot detection before going to the next step. 
 
 

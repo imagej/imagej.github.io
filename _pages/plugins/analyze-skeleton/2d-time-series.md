@@ -23,7 +23,7 @@ To get around this limitation, we can run the "Analyze Skeleton (2D/3D)" command
 
 2. open a movie dataset in Fiji - check image metadata (Bat Cochlea Volume sample image works) check that it is a 2D movie not a 3D z stack: select the mobie image window, then do menu item Image - Properties You might need to change it from a z stack to a time series by changing the numbers there. You can also set the pixel size here if it is wrong in the first instance, so your results are calibrated in micrometers etc. instead of pixels (i hope thats true)
 
-3. Segment objects from the background, for instance using one of the auto threshold methods, such that you have an 8 bit binary image comtaining zeros for background and 255 for objects.
+3. Segment objects from the background, for instance using one of the auto threshold methods, such that you have an 8 bit binary image containing zeros for background and 255 for objects.
 
 4. Skeletonize each frame of the movie using the menu command Process - Bnary - Skeletonize Click yes when it asks you if you want to do all the frames/slices in the movie.
 

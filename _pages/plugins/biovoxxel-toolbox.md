@@ -16,7 +16,7 @@ You will find all functions of the BioVoxxel Toolbox under the icon of the green
 
 Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Particles..." command. It enables the user to further restrict the analysis on particles according to many more parameter spezifications of shape descriptors and angle orientations. Thus, setting minimal and maximal exclusion ranges of different parameters enables to extract particles from a binary image. The output types are the same as for the {% include bc path='Analyze | Analyze Particles'%}.
 
-Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
+Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circularity you can specify so in the initial dialog box.
 
 <figure><img src="/media/plugins/extendedparticleanalyzer-v2.png" title="ExtendedParticleAnalyzer_v2.png" width="1024" alt="ExtendedParticleAnalyzer_v2.png" /><figcaption aria-hidden="true">ExtendedParticleAnalyzer_v2.png</figcaption></figure>
 
@@ -168,7 +168,7 @@ Output interpretation: You will get a stack with each thresholding method repres
 
 <img src="/media/plugins/thresholdcheck.png" width="770"/>
 
-**blue** = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely beeing really background.
+**blue** = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely being really background.
 
 **cyan** = these areas have a certain brightness level in the original image but are not recognized by the respective tresholding algorithm, hence might point out a underestimation of features by the threshold.
 

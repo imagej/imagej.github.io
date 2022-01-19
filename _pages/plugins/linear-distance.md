@@ -23,7 +23,7 @@ Plugin for ImageJ to measure linear distances in binary images in X and Y direct
 
 ## Application
 
-Used for the calcuation of mean free paths in a two phase material.
+Used for the calculation of mean free paths in a two phase material.
 
 ## Dependecies
 

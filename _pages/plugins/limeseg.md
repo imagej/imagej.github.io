@@ -134,7 +134,7 @@ It is possible to define more precisely the seeds used to segment images. This c
 
 1\. Download a 3D C. Elegans embryo image `File>Import>URL..` from [here](https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif) which is a timepoint extracted from the full [dub dataset](https://scif.io/images/). 
 
-2\. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
+2\. Using a few ROIs approximately define the contour of the embryo at certain slices, like in the image shown above:
 
 ![](/media/plugins/limeseg-skeleton-example.png)
 

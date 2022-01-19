@@ -24,7 +24,7 @@ git --git-dir=/path/my-new-repo.git init --bare
 git remote add origin becherovka:/path/my-new-repo.git
 ```
 
-(Note: If it fails, you already have an "origin" and need to use a different name. One can chnange the path to the remote "origin" by editing the url field in the .git/config.)
+(Note: If it fails, you already have an "origin" and need to use a different name. One can change the path to the remote "origin" by editing the url field in the .git/config.)
 
 3\. Push from the laptop to the remote repository
 

@@ -46,7 +46,7 @@ The options here are:
 
 -   **Assign existing PSF to all selected views**: After selecting this, you will be asked for one view in the next step. The PSF from this view will be assigned to all selected views (same as the quick assign in the menu).
 -   **Assign new PSF to all selected views**: After selecting this, you will be asked for a **PSF file** in the next step. The PSF in that file will be assigned to all selected views. The PSF files have to be 3D TIFF stacks with odd dimension sizes and the center of the PSF at the center of the image.
--   **Duplicate PSFs from other channel**: After selecting this, you will be asked for a source and target channsel. For all selected views of the **target** channel, we will assign the PSF from the corresponding view in the **source** channel.
+-   **Duplicate PSFs from other channel**: After selecting this, you will be asked for a source and target channel. For all selected views of the **target** channel, we will assign the PSF from the corresponding view in the **source** channel.
 -   **Duplicate PSFs from other timepoint**: After selecting this, you will be asked for a timepoint. For all selected views, we will select the corresponding view at the selected timepoint and copy the PSF of that view.
 
 ### Averaging PSFs

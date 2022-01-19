@@ -66,7 +66,7 @@ The &lt;path&gt; element may contain zero or more &lt;point&gt; elements. These 
 This represents a point in a path. A point element may have the following attributes:
 
 -   `xd`, `yd`, `zd`: These three attributes give the position of the point in world coordinates. e.g. you can use these coordinates directly to calculate the length of paths.
--   **\[deprecated\]** `x`, `y`, `z`: These attributes represent the position of the point in image coordinates (i.e. indices of voxels in each axis). They are still generated for backwards compatability, but it's better to use `xd`, `yd` and `zd`.
+-   **\[deprecated\]** `x`, `y`, `z`: These attributes represent the position of the point in image coordinates (i.e. indices of voxels in each axis). They are still generated for backwards compatibility, but it's better to use `xd`, `yd` and `zd`.
 -   `r`: If present, this attribute gives the radius of the neuron at that point.
 -   `tx`, `ty`, `tz`: If present, these attributes give the tangent vector along the neuron at (`xd`, `yd`, `zd`)
 

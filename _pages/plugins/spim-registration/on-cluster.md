@@ -3353,7 +3353,7 @@ System.out.println("Rendering");
 //Comment out orientation or transformation accordingly:
 
 omp = net.imglib2.render.volume.Renderer.runGray(
-    imp,                                      //impSource 3d image, will be converted to singel channle float even if it is ARGB-color
+    imp,                                      //impSource 3d image, will be converted to singel channel float even if it is ARGB-color
     imp.getWidth(),                       //@param width width of the target canvas
     imp.getHeight(),                       //@param height height of the target canvas
     0,                                        //@param min minimum intensity

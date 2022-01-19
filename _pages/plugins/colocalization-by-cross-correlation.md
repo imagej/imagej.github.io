@@ -2,7 +2,7 @@
 title: Colocalization by Cross Correlation
 categories: [Colocalization]
 description: How to use the Colocalization by Cross Correlation plugin
-name: Colocalzation by Cross Correlation plugin
+name: Colocalization by Cross Correlation plugin
 source-label: Github
 source-url: https://github.com/andmccall/Colocalization_by_Cross_Correlation
 team-developers: Andrew McCall
@@ -63,7 +63,7 @@ Working with time-series data is not that different than working with non-time-s
 
 Another change with time-series data is that in addition to the gaussian fit analysis text window, which now displays the fit data for the frame with the highest correlation, the plugin will output a **table of gaussian fit results**, showing the gaussian fits and confidence for each frame. To save this table, go to File > Export > Table..., click browse and save the file as a .csv file (you must add the extension or you will get an error message).
 
-Lastly, the contribution images will still be generated and are functionally the same as for their non-time series counterparts. However, it's important to note that the contribution is evaluted on a per frame basis, and thus **each frame shows the signal contriubtion to the gaussian fit results for that frame**. Thus, if your cross-correlation distance shifts over the course of an experiment, the contribution images will display this shifting cross-correlation. 
+Lastly, the contribution images will still be generated and are functionally the same as for their non-time series counterparts. However, it's important to note that the contribution is evaluted on a per frame basis, and thus **each frame shows the signal contribution to the gaussian fit results for that frame**. Thus, if your cross-correlation distance shifts over the course of an experiment, the contribution images will display this shifting cross-correlation. 
 
 ## How it works & intermediate images description:
 

@@ -2,7 +2,7 @@
 title: Marija Matejcic
 name: Marija Matejcic
 affiliation:
-  - Institute for Bioengineerign of Catalunya (IBEC), Barcelona | https://ibecbarcelona.eu/integrative
+  - Institute for Bioengineering of Catalunya (IBEC), Barcelona | https://ibecbarcelona.eu/integrative
 forum: Marija
 github: MarijaMatejcic
 twitter: marija_matejcic

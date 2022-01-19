@@ -283,7 +283,7 @@ Correlation coefficient: 4.00e-03
 P-value for the correlation: 0.56
 ```
 
- We have to conlude that this dataset does not show a correlation between  instantaneous speed and ERK intensity in the nucleus.
+ We have to conclude that this dataset does not show a correlation between  instantaneous speed and ERK intensity in the nucleus.
 Maybe we need to filter out some spots with low speed, or investigate tracks as a whole.
 But this is left as an exercise to the reader.
 

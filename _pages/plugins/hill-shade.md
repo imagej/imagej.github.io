@@ -23,7 +23,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 -   **Elevation of Sun** - height of the light source in degrees, typically between 30 and 60
 -   **Azimuth of Sun** - direction to the light source in degrees, 0 is north, 90 east etc.
 -   **Nonlinear Contrast** - when &gt; 0, contrast for gentle slopes gets enhanced. Typical values are 1-5.
--   **Half Brightness for Horizontal** - when selected, a gamma correction is applied to the output, such that a horizontal plane will appear with half brightness (pixel value = 128), irrespective of the elevation of the sun. When not selected, the pixel value of a horizontal plane will be roughly 256\*sin(Sun\_Elevation). In that case, a horizontal plane gets half brighness only at sun elevation of 30°, the output gets brighter if the sun elevation is higher, and darker if it is lower.
+-   **Half Brightness for Horizontal** - when selected, a gamma correction is applied to the output, such that a horizontal plane will appear with half brightness (pixel value = 128), irrespective of the elevation of the sun. When not selected, the pixel value of a horizontal plane will be roughly 256\*sin(Sun\_Elevation). In that case, a horizontal plane gets half brightness only at sun elevation of 30°, the output gets brighter if the sun elevation is higher, and darker if it is lower.
 
 ## Tips
 

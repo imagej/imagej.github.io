@@ -89,7 +89,7 @@ Combining both information, we could give the following advice (as a rule of thu
 
 # Use the ParticleSizer with the NanoDefiner e-tool
 
-The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version). After the analysis of a dataset is finished, you can select the results table and export the cummulative mass function of the feret min diamater by {% include bc path="Results | Export CMF" %}. The exported file can be uploaded to the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version).
+The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version). After the analysis of a dataset is finished, you can select the results table and export the cumulative mass function of the feret min diamater by {% include bc path="Results | Export CMF" %}. The exported file can be uploaded to the [NanoDefiner e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version).
 
 # Examples
 

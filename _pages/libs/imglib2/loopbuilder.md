@@ -154,7 +154,7 @@ LoopBuilder.setImages(image).forEachPixel(
    }
 )
 ```
-Here the per pixel operation (line 3-5) changes the `squaredSum`, which is defined in line 1, outside of the per pixel operation. Only adding `.multiThreaded()` will cause wrong results. This is because the operation is simultaniously executed by mutliple threads. All the threads simultaniously changing the `squaredSum` causes choas. The wrong result is the consequence.
+Here the per pixel operation (line 3-5) changes the `squaredSum`, which is defined in line 1, outside of the per pixel operation. Only adding `.multiThreaded()` will cause wrong results. This is because the operation is simultaniously executed by mutliple threads. All the threads simultaniously changing the `squaredSum` causes chaos. The wrong result is the consequence.
 
 Luckily LoopBuilder provides a solution to this problem. LoopBuilder devides the image into chunks, and destributes the chunks to a pool of threads. A chunk is always only processed by one thread. That's why there are no multi-threading problems as long as we have one `squaredSum` variable per chunk. This can be done using LoopBuilders `.forEachChunk(...)` method:
 

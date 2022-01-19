@@ -250,7 +250,7 @@ A binary 3D image.
 
 -   **EF image**: stack containing EF values. NaN (not a number) values are used in the background. Summary statistics can be obtained by running {% include bc path="Analyze | Histogram" %}
 -   **Short-Mid image**: stack containing the $$a/b$$ ratios
--   **Mid-Long image**: stack contining the $$b/c$$ ratios
+-   **Mid-Long image**: stack continuing the $$b/c$$ ratios
 -   **Volume image**: stack containing ellipsoid volumes
 -   **Max id image**: stack containing the ID of the largest ellipsoid at each point; IDs relate to the sort order based on volume, so ID = 0 is the largest ellipsoid. $$-1$$ is foreground and background is labelled with a large negative number.
 -   **Flinn diagram**: plot of $$a/b$$ versus $$b/c$$ values present in the volume

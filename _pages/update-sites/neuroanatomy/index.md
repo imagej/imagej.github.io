@@ -84,7 +84,7 @@ SNT has its own [documentation](/plugins/snt). The list of *Image Processing for
         <p>{% include bc path='Analyze|Skeleton|Classify Particles Using Skeleton'%}</p>
       </td>
       <td>
-        <p>Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="/plugins/analyze-skeleton">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {% include github org='tferr' repo='hIPNAT' branch='master' path='src/main/resources/scripts/' label='Python script' %}.</p>
+        <p>Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="/plugins/analyze-skeleton">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cutoff ("snap to") distance. Implemented as a {% include github org='tferr' repo='hIPNAT' branch='master' path='src/main/resources/scripts/' label='Python script' %}.</p>
       </td>
     </tr>
     <tr>
