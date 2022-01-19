@@ -22,7 +22,7 @@ Volume Calculator uses three Fiji plugins:
 
 The section explains how to use Volume Calculator. A Magnetic Resonance Angiogram {% include wikipedia title='Magnetic resonance angiography' text='Magnetic resonance angiography'%}\|(MRA) is used as an example image. This MRA is of the hindlimb vasculature of a mouse and was performed in vivo.
 
-### Image Acquistion
+### Image Acquisition
 
 {% include thumbnail src='/media/plugins/volcal-2.png' title='Figure 1. 3D view of mouse hindlimb vasculature.'%}The image can come from any source. But be aware of the plugin's limitation: see the Introduction above. Figure 1 shows a 3D rendering of the example MRA. This MRA consists of 150 slices, each 512 X 512 in size.
 

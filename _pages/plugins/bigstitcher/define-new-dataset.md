@@ -17,11 +17,11 @@ The Automatic Loader is a comprehensive importer that should work with most of i
 
 -   **[Manual Loader (Bioformats)](/plugins/bigstitcher/stackloader)**
 
-The **Manual Loader (Bioformats)** can be used to import datasets that consist of several stacks that can be opened using LOCI Bioformats. Manual asignment of the stacks to Angles, Tiles or Illuminations according to patterns in the filename is necessary.
+The **Manual Loader (Bioformats)** can be used to import datasets that consist of several stacks that can be opened using LOCI Bioformats. Manual assignment of the stacks to Angles, Tiles or Illuminations according to patterns in the filename is necessary.
 
 -   **[Manual Loader (TIFF only, ImageJ Opener)](/plugins/bigstitcher/stackloader)**
 
-The **Manual Loader (TIFF only, ImageJ Opener))** can be used to import datasets that consist of several stacks that can be opened directly by ImageJ. Manual asignment of the stacks to Channels, Illuminations, Agles, Tiles or Illuminations according to patterns in the filename is necessary.
+The **Manual Loader (TIFF only, ImageJ Opener))** can be used to import datasets that consist of several stacks that can be opened directly by ImageJ. Manual assignment of the stacks to Channels, Illuminations, Angles, Tiles or Illuminations according to patterns in the filename is necessary.
 
 -   **[Zeiss Lightsheet Z.1 Dataset (Bioformats)](/plugins/bigstitcher/specialloaders)**
 

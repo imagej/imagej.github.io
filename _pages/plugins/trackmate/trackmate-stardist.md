@@ -115,7 +115,7 @@ Step by step:
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-erk-tutorial-3.png" width='300' align="center" %}
 
-- Next, a tracking panel opens. In this panel, you can select the methods for tracking objects. Here, we use the `LAP tracker` to acccount for possibly dividing cells. Please select it from the pull-down menu, and click `Next`.
+- Next, a tracking panel opens. In this panel, you can select the methods for tracking objects. Here, we use the `LAP tracker` to account for possibly dividing cells. Please select it from the pull-down menu, and click `Next`.
 - A panel for the LAP tracker settings opens. Int this panel, you choose how to track the cells. First, with the `Frame to Frame linking` parameter, you give the maximum distance to link two objects between frames. Here use 30 microns. Then, you can choose how many spots can be missing, and they could still be the same track. Tick the `Allow gap closing` box and add values: `Max distance`: 30 microns and `Max frame gap`: 5. Next, you let TrackMate know if the tracks are allowed to split. Splitting can be caused, for example, due to cell division. Tick the box `Allow track segment splitting` and insert value `Max distance`: 15 microns. Below you will also see settings for `Track segment merging`. Here this box should remain unticked. Click `Next`.
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-erk-tutorial-4.png" width='250' align="center" %}

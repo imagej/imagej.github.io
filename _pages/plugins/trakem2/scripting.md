@@ -107,7 +107,7 @@ for layer in Display.getFront().getLayerSet().getLayers():
 
 In Jython as in Python, member objects have automatically <i>get</i> and <i>set</i> functions.
 
-For example, altough a [Displayable](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Displayable.html) has a private <i>String title</i> member, this is valid python code for getting and setting the title of a Displayable like a Patch:
+For example, although a [Displayable](http://www.ini.uzh.ch/~acardona/api/ini/trakem2/display/Displayable.html) has a private <i>String title</i> member, this is valid python code for getting and setting the title of a Displayable like a Patch:
 
 ```python
 >>> p = Display.getFront().getActive()

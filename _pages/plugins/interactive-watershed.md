@@ -26,7 +26,7 @@ Creating a good segmentation however requires some expertise and can be time con
 
 The interactive Watershed plugin provides an interactive way to explore local minima (maxima) and threshold, updating the resulting watershed on the fly. This is possible by calculating the watershed only once at plugin initialization. Further when Threshold or maxima selection are updated this initial segmentation is reused to generate the new segmentation instantly. In order to ease quality assessment the results directly overlaid to the data.
 
-The 2 following subsection gives additionnal details on watershed working principle and on the strategy used in the plugin for local maxima detection: H-Maxima
+The 2 following subsection gives additional details on watershed working principle and on the strategy used in the plugin for local maxima detection: H-Maxima
 
 ## Watershed principle
 

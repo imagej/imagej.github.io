@@ -63,7 +63,7 @@ The &lt;path&gt; element may contain zero or more &lt;point&gt; elements. These 
 
 ### &lt;point&gt;
 
-This represents a point in a path. A point element may have the following attribes:
+This represents a point in a path. A point element may have the following attributes:
 
 -   `xd`, `yd`, `zd`: These three attributes give the position of the point in world coordinates. e.g. you can use these coordinates directly to calculate the length of paths.
 -   **\[deprecated\]** `x`, `y`, `z`: These attributes represent the position of the point in image coordinates (i.e. indices of voxels in each axis). They are still generated for backwards compatability, but it's better to use `xd`, `yd` and `zd`.
@@ -84,6 +84,6 @@ The `<fill>` element represents a fill around a path. It contains all the points
 
 -   `id`: Each node in the search has a non-negative integer ID which is unique within the enclosing fill.
 -   `x`, `y`, `z`: the position of the node in the image stack in image co-ordinates, i.e. 0-based indices in voxels.
--   `previousid`: If present, this ID gives you previous node on the shortest route from the original paths to this point. It is not present for the points on the original paths, which also have a `distance` attibute equal to 0.
+-   `previousid`: If present, this ID gives you previous node on the shortest route from the original paths to this point. It is not present for the points on the original paths, which also have a `distance` attribute equal to 0.
 -   `distance`: This is the minimum "distance" so far found for any route moving from any point on the original paths to this node. (The complete route can be reconstructed by following `previousid`s.)
 -   `status`: this attribute can either have the value `open` or `closed`, which have their conventional meanings in A\* search.

@@ -23,7 +23,7 @@ I am doing Image analysis consulting at Scionics GmbH and the Max Planck Institu
 
 <!-- -->
 
--   [Minimum Cost Z surface Projection](/plugins/minimum-cost-z-surface-projection) provide tools and plugin to detect 2D surface in 3D data. one can retrieve the altitute map of the surface and an image with the signal of the surface.
+-   [Minimum Cost Z surface Projection](/plugins/minimum-cost-z-surface-projection) provide tools and plugin to detect 2D surface in 3D data. one can retrieve the altitude map of the surface and an image with the signal of the surface.
 
 <!-- -->
 

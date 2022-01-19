@@ -1,6 +1,6 @@
 ---
 title: Chromatic shift origins, measurement and correction
-description: How chromatic shift arrises in a microscope, how to measure it and correct an image with a chromatic shift.
+description: How chromatic shift arises in a microscope, how to measure it and correct an image with a chromatic shift.
 section: Imaging
 nav-links: true
 nav-title: Chromatic Shift

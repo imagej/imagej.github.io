@@ -138,7 +138,7 @@ A perfectly convex object will have a value of 1.
 To compute it we first determine the convex hull of the object.
 Intuitively, this is the contour we would get if we would wrap a rubber band around the object. 
 It would stretch around the object contour, and would not extend inside the cavities of the object.
-The area of this convex object is therefore alwats larger than the area of the initial objet.
+The area of this convex object is therefore always larger than the area of the initial objet.
 Then the solidity is computed as:
 
 $$

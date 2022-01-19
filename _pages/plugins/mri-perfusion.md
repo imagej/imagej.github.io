@@ -48,7 +48,7 @@ The quantitative values that our plugin can calculate are listed bellow.
 
 ## How to use
 
-First of all, the perfusion gadolinium contrast agent image sequence has to be transformed into a HyperStack (use the plugin MRI Perfusion/Create HyperStack). It is important here that the image sequence loaded must to have a DICOM header, otherwise the method will fail to transform the image stack into a HyperStack. ALso, the perfusion image sequence that we say here is a image sequence with each brain slice are acquired in a period of time, which usually all the brain is acquired.
+First of all, the perfusion gadolinium contrast agent image sequence has to be transformed into a HyperStack (use the plugin MRI Perfusion/Create HyperStack). It is important here that the image sequence loaded must to have a DICOM header, otherwise the method will fail to transform the image stack into a HyperStack. Also, the perfusion image sequence that we say here is a image sequence with each brain slice are acquired in a period of time, which usually all the brain is acquired.
 
 After the HyperStack transformation step, you can choose what brain region you want to measure the perfusion metrics values[1]. Use the ROI tool provided by ImageJ to do the brain area selection. Before ROI selection, you can choose the two plugin metrics methods: Maps[2] and Metrics.
 

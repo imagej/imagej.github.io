@@ -42,7 +42,7 @@ There are three plugins which take those input parameters in different formats:
 -   **[Multi-Channel SPIM Registration](#multi-channel-spim-registration)**: Extends the [SPIM Registration](/plugins/spim-registration) to multiple channels and allows to override the z-stretching saved in the input files.
 -   **[Advanced SPIM Registration](#advanced-spim-registration)**: Registration of SPIM data using all possible options via loading a configuration file
 
-### Processing a Time Lapse Acqusition
+### Processing a Time Lapse Acquisition
 
 Processing a time lapse acquisition requires two steps. In the first step the registration for each individual timepoint has to be computed and will be automatically stored. Therefore, in the first pass, input the timepoints that should be processed in **Time Points to process** (e.g. 1-100), check **Register only (no fusion)** and uncheck **Timelapse processing**. After the registration is performed one timepoint has to be selected as reference timepoint, typically one with a low registration error. This timepoint should be fused to determine the **[correct cropping area ](#creating-a-cropped-output-image)** which will afterwards be applied to all other timepoints.
 
@@ -102,7 +102,7 @@ After all individual timepoints are registered and the cropping area is defined 
 <!-- -->
 
 -   **Fusion Method**: There are three options available.  
-    *Fuse all images at once* loads all the input images and computes the output image. This is the fastest method but it also needs significant amouts of RAM.  
+    *Fuse all images at once* loads all the input images and computes the output image. This is the fastest method but it also needs significant amounts of RAM.  
     *Fuse images sequentially* loads one input image after the other and computes the contribution sequentially. This is significantly slower but typically uses less RAM. However, this methods needs to allocate the output image twice during the fusion process as it needs to store image content and weights separatetly.  
     *Create independent registered images* is a special output option where each view is transformed into a compatible bounding box and written as a separate file for further processing.
 

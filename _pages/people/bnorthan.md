@@ -19,7 +19,7 @@ Brian is a consultant who works on image analysis problems. He is a contributor 
 I consult mainly with startups and small businesses, in the biomed space, who are looking to commercialize academic research. Often times they have pre-existing matlab and other legacy code that needs to be converted to a user-friendly app, such as an ImageJ-plugin. Recent projects have included:
 
 1.  **Deconvolution**
-2.  **Bio-image analsyis and feature detection**
+2.  **Bio-image analysis and feature detection**
 3.  **Single particle localization**
 4.  **Machine learning**
 5.  **Image analysis for clinical trials and product validation**

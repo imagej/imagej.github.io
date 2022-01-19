@@ -93,7 +93,7 @@ Now again try to segment this shape with level sets:
 Now take the same image and add some noise (Process - Noise - Add noise)
 
 -   Can you still get a good segmentation?
--   What difficulties arrise?
+-   What difficulties arise?
 
 If you want to know more about the plugin, you can look at the [documentation](/plugins/level-sets).
 

@@ -32,11 +32,11 @@ On the left side of the segmentation window, you see a list of available materia
 
 Now go through the slices and use ImageJ's selection tools to select the regions you want to label. You don't need to label each slice. When consecutive slices differ only slightly, you can use the built-in interpolation function to label them.
 
-After selecting the regions to label in each slice, click the I-Button (which is next to the Plus and Minus button). This interpolates if you didn't make selections on each slice. Now activate the "3d" checkbox. It means that the selections of all slices will be asigned to a material, not only the selection of the current slice.
+After selecting the regions to label in each slice, click the I-Button (which is next to the Plus and Minus button). This interpolates if you didn't make selections on each slice. Now activate the "3d" checkbox. It means that the selections of all slices will be assigned to a material, not only the selection of the current slice.
 
 ![](/media/plugins/segmentation-editor-3.png)
 
-Now go to the material list, select the material which you want to asign, and click on the Plus button. That's it.
+Now go to the material list, select the material which you want to assign, and click on the Plus button. That's it.
 
 ![](/media/plugins/segmentation-editor-4.png)
 

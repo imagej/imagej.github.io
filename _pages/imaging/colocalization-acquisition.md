@@ -61,7 +61,7 @@ Possible origins of blur are:
 -   wrong immersion oil / coverslip thickness / immersion medium
 -   similarly: objective lens correction collars not ajusted
 -   mechanical drift or moving sample - most apparent with slow imaging
--   imaging too deep into the sample ( &lt; 5 µm with oil, &gt; 5 µm with water, &gt; 50 µm with 2-photons system, and you will see sherical abberation due to refractive index mismatch between the objective lens immersion medium and sample)
+-   imaging too deep into the sample ( &lt; 5 µm with oil, &gt; 5 µm with water, &gt; 50 µm with 2-photons system, and you will see spherical aberration due to refractive index mismatch between the objective lens immersion medium and sample)
 -   widefield microscope system (or on a confocal microscope - optimal pinhole size of 1 Airy Unit not set)
 -   colorshift: if you don't know what it is, always use apochromat objectives - these correct for chromatic aberrations (blue bends better than red)
 -   Inadequate spatial sampling. If your pixels are too big to correctly sample the smallest features visible, you will not see those features. 

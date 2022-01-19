@@ -80,7 +80,7 @@ These particles could show some overlapping. We destinguish four different class
 -   S: Slightly overlapping
 -   H: High or complete overlapping
 
-Combining both information, we could give the following adivices (as a rule of thumb):
+Combining both information, we could give the following advice (as a rule of thumb):
 
 -   N+E or T+E -&gt; Keep the default settings
 -   N+I or T+I or S+I -&gt; Activate the irregular watershed

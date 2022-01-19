@@ -16,7 +16,7 @@ To install the plugin, download it and copy the unzipped file in your Fiji insta
 
 ## Usage
 
-The plugin was written to quantify the ingestion of fluorescent beads by C. elegans worms in various experimental conditions. More specifically, the plugin was designed to anlyze 2D images where one of the channel shows the fluorescent beads while the other one is a transmited light image of the worms.
+The plugin was written to quantify the ingestion of fluorescent beads by C. elegans worms in various experimental conditions. More specifically, the plugin was designed to analyze 2D images where one of the channel shows the fluorescent beads while the other one is a transmited light image of the worms.
 
 Once the plugin is installed, you can analyze an image as follows:
 

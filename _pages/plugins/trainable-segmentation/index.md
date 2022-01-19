@@ -62,7 +62,7 @@ Now it is time to train the classifier and look at the result, so we push the "T
 
 ### Refine the training
 
-Looking at the classification result there are some cases that are harder to classify than others. We add more annotations to help the classifier correct these cases. This is done by adding examples and then pushing the train classifier button in between to see how the result changes. **If you want to delete an example trace**, select the trace in the right list (it turns to yellow in the training image) and then **double click on it**. Here are some examples of what the annoations can look like:
+Looking at the classification result there are some cases that are harder to classify than others. We add more annotations to help the classifier correct these cases. This is done by adding examples and then pushing the train classifier button in between to see how the result changes. **If you want to delete an example trace**, select the trace in the right list (it turns to yellow in the training image) and then **double click on it**. Here are some examples of what the annotations can look like:
 
 ![](/media/plugins/trainable-segmentation/multiannotations.jpg)
 

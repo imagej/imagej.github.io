@@ -224,7 +224,7 @@ def make_list(filetype, folder, dir_RegExp, list_filename):
 			filenames[:] = [fn3 for fn3 in filenames if os.path.isfile(os.path.join(folder,dirs,fn3))and fn3.endswith(filetype)] # make sure there are no dirs ending in desired filetype (one never knows~) and filter for the filetype
 			filenames_size = len(filenames) # for progress bar only
 			for p, filen in enumerate(filenames):
-				try: # check if metadata was read already and extract metadata info from the 1st file on the list - if it was not, get this info by executing the except clause. This makes the metadata routine run only once in the beggining. Being nested inside the else: stm above, metadata is only read if it's not a single position aquisition - in this case it wouldn't be necessary. Also, complete calc of overlap and montage configuration
+				try: # check if metadata was read already and extract metadata info from the 1st file on the list - if it was not, get this info by executing the except clause. This makes the metadata routine run only once in the beggining. Being nested inside the else: stm above, metadata is only read if it's not a single position acquisition - in this case it wouldn't be necessary. Also, complete calc of overlap and montage configuration
 					overlap
 				except NameError:
 					IJ.showStatus('Reading stage coordinates 3/3...')
@@ -246,7 +246,7 @@ def make_list(filetype, folder, dir_RegExp, list_filename):
 					deltaX1 = pos2_Xstage - pos1_Xstage
 					deltaY1 = pos2_Ystage - pos1_Ystage #only for single column montage
 					# if deltaX1=0 then something went wrong with the metadata reading and the user has to manually input the coordinate values. note that for the case of a single folder deltaX1 would theoretically also be =0 (but this code doesn't even allow for that, since it requires at least 2 folders for the calculation)
-					#(or close to zero - most likely in a case of 'multiple ROI' acquistion (there would be stage movement) instead of 'montage') but that situation was already covered above and at that step the overlap var was initiated; in that situation this whole except NameError: is skipped and no deltaX1 calc is ever performed
+					#(or close to zero - most likely in a case of 'multiple ROI' acquisition (there would be stage movement) instead of 'montage') but that situation was already covered above and at that step the overlap var was initiated; in that situation this whole except NameError: is skipped and no deltaX1 calc is ever performed
 					if deltaX1 == 0:
 						IJ.log('Warning: Could not read stage position from files. Asking for user input')
 						options1 = getOptions(0, 0, 0, montage_size)
@@ -269,7 +269,7 @@ def make_list(filetype, folder, dir_RegExp, list_filename):
 						smaller_angle = bigger_angle - math.radians(45)
 						# hypotenuse of the rectangle formed between the 1st and the last stage position
 						montage_hyp = math.hypot(deltaX2, deltaY2)
-						# it's a rectangle, the hypotenuse angle will vary. Calcs for x lenght is 'adjecent side', so cos(x) and calcs for y is 'oposite side', so sin(x)
+						# it's a rectangle, the hypotenuse angle will vary. Calcs for x length is 'adjacent side', so cos(x) and calcs for y is 'opposite side', so sin(x)
 						montage_Xlenght = round(math.cos(smaller_angle) * montage_hyp, 3)
 						montage_Yheight = round(math.sin(smaller_angle) * montage_hyp, 3)
 						# and finally calculate the number of tiles in the x and y axis, assuming stage movement is reasonably accurate

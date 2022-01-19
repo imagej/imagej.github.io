@@ -14,7 +14,7 @@ Please note that the multi-view fusion plugin available through Fiji, is based o
 
 ## Overview of the multi-view fusion plugin
 
-The multi-view fusion plugin is able to combine several 3d acquistions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](/plugins/spim-registration). The registration can be achieved using one the following plugins:
+The multi-view fusion plugin is able to combine several 3d acquisitions of the same specimen taken from different viewpoints (this includes different tiles) into one single output image. This can be done for single timepoints or an entire timeseries. Prerequisite for the fusion is an aligned dataset, an overview of the complete registration and fusion process can be found [here](/plugins/spim-registration). The registration can be achieved using one the following plugins:
 
 -   [Bead-based registration](/plugins/spim-bead-registration)
 -   [Segmentation-based registration](Segmentation-based_registration)

@@ -179,7 +179,7 @@ rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave str
 
 It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [wiki page about opencv](/software/opencv)), yet the most straight forward is probably IJ-OpenCV which is available via the update sites. It will automatically download the necessary packages and dependencies in your Fiji installation.
 
-A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [IJopenCV github](https://github.com/joheras/IJ-OpenCV), which even provides a maven option.
+A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are available on the [IJopenCV github](https://github.com/joheras/IJ-OpenCV), which even provides a maven option.
 
 #### Matrices
 
@@ -251,7 +251,7 @@ using `CvArr` as input, but even if you manage to convert your input as a `CvArr
 
 -   `org.bytedeco.javacpp.opencv_core.transform`
 
-That's the one to use ! It takes only `org.bytedeco.javacpp.opencv_core.Mat` as input, which is the most approriate in Fiji/Jython
+That's the one to use ! It takes only `org.bytedeco.javacpp.opencv_core.Mat` as input, which is the most appropriate in Fiji/Jython
 
 #### Scalar
 

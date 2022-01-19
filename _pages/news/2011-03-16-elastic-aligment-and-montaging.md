@@ -1,5 +1,5 @@
 ---
-title: 2011-03-16 - Elastic aligment and montaging
+title: 2011-03-16 - Elastic alignment and montaging
 ---
 
 We have implemented a long-standing simple idea for elastic alignment of large section series and montaging mosaics from unpredictably deformed tiles inspired by work from Elisabeth Guest and Takeo Igarashi. The idea is best explained at an old [poster from 2008](http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2) that you can browse through [CATMAID](https://catmaid.readthedocs.io/en/stable/).

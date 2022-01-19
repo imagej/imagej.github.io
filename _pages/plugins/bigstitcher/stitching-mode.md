@@ -27,7 +27,7 @@ After opening a XML file the main windows will appear in the **Stitching Mode**.
 
 <!-- -->
 
--   In Stitching mode, only one Timepoint and Angle is displayed. Different Timepoints or Angles are accesed by the drop-down menu at the bottom **(4)**.
+-   In Stitching mode, only one Timepoint and Angle is displayed. Different Timepoints or Angles are accessed by the drop-down menu at the bottom **(4)**.
 
 ### The BigDataViewer window
 

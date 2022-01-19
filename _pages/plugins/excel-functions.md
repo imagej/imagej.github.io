@@ -9,7 +9,7 @@ pom-url: https://gitlab.com/biovoxxel/excel-table-macro-extensions/-/blob/main/e
 
 <a name="introduction"></a>
 ## Introduction
-The Excel macro extensions for ImageJ and Fiji are meant to make saving results tables in ImageJ and Fiji easy acessible on various different levels:
+The Excel macro extensions for ImageJ and Fiji are meant to make saving results tables in ImageJ and Fiji easily accessible on various different levels:
 
 - ImageJ2 / Fiji menu commands (fully recordable)
 - ImageJ macro language including the usage of auto-completion

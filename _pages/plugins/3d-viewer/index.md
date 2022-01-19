@@ -75,7 +75,7 @@ Unfortunately, there are quite a large number of possible reasons. Please help u
 
 ### Only a gray rectangle is shown by the 3D Viewer
 
-As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/discuss) with the information. You can also [report a bug](/discuss/bugs), which will provide a lot of addidtional, potentially useful information.
+As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [debugging the issues](/develop/debugging#debugging-java3d-issues) and [contacting us](/discuss) with the information. You can also [report a bug](/discuss/bugs), which will provide a lot of additional, potentially useful information.
 
 ## Publication
 

@@ -87,7 +87,7 @@ If you are interested in learning how to develop ImJoy plugins, We recommend the
 
 
 # Open integrations
-As part of our mission, we try to bring existing aand future software tools together by connecting them with the [ImJoy RPC protocol](https://github.com/imjoy-team/imjoy-rpc). This is not only internally for connecting plugins in the same workflow, but it also provide a way to integrate other software tools into the same workflow, or bring the ImJoy plugin system to website, online data repository, web applications and other software tools.
+As part of our mission, we try to bring existing and future software tools together by connecting them with the [ImJoy RPC protocol](https://github.com/imjoy-team/imjoy-rpc). This is not only internally for connecting plugins in the same workflow, but it also provide a way to integrate other software tools into the same workflow, or bring the ImJoy plugin system to website, online data repository, web applications and other software tools.
 
 We support two-way integration: 1) connect existing web app or software tools as an ImJoy plugin 2) integrate ImJoy core to other website or software tools. For more implementation details, please refer to the [integration docs](https://github.com/imjoy-team/imjoy-core/blob/master/docs/integration.md).
 

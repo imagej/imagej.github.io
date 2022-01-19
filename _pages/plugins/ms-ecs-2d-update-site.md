@@ -14,4 +14,4 @@ The documentation ([Stapel et al Documentation.pdf](/media/plugins/stapel-et-al-
 -   Cell annotation plugin in Fiji
 -   Transcript analysis plugin in Fiji
 
-Additonnally one can find detail on the KNIME workflow [here](http://tinyurl.com/KNIME-MS-ECS)
+Additionally one can find detail on the KNIME workflow [here](http://tinyurl.com/KNIME-MS-ECS)

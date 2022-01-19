@@ -292,7 +292,7 @@ As in the previous example, the comment "// i0" is required for defining the siz
 (i0 >= 128)? 255 : 0
 ```
 
-creates a binary image mask by thresholding the image i0 with a threshold value of 128.  Please note that single-row assingments as shown in all previous examples always need to return a pixel value.  That's the reason why 'if'-statements are not possible in this context and must be bypassed by a '?' operation.
+creates a binary image mask by thresholding the image i0 with a threshold value of 128.  Please note that single-row assignments as shown in all previous examples always need to return a pixel value.  That's the reason why 'if'-statements are not possible in this context and must be bypassed by a '?' operation.
 
 {% include img align="right" width="200" src='xfig6-7-10' caption='left: image i3, right: content of image i3 inside of a circle' %} The following code 
 

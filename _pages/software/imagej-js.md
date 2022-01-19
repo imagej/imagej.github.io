@@ -46,7 +46,7 @@ To facilitate the sharing of images, macro, and plugins, ImageJ.JS web app suppo
 
 ImageJ.JS supports two-way integration with [ImJoy](/software/imjoy), meaning you can either use it as an ImJoy plugin or load other ImJoy plugins into ImageJ.JS. This a a powerful combination, since it brings useful features from ImageJ including file IO, image processing plugins, macro scripting together with web plugins in ImJoy for building easy to use modern UI and powerful deep learning libraries.
 
-In the standalone mode (simply go to https://ij.imjoy.io), you will have acess to ImJoy features via the ImJoy icon located in the top-left corner of ImageJ. You can load ImJoy plugins into the workspace via a plugin URL, especially for those plugin that calls ImageJ.JS.
+In the standalone mode (simply go to https://ij.imjoy.io), you will have access to ImJoy features via the ImJoy icon located in the top-left corner of ImageJ. You can load ImJoy plugins into the workspace via a plugin URL, especially for those plugin that calls ImageJ.JS.
 
 For example, the following code shows how to call ImageJ.JS api from an ImJoy plugin:
 <!-- ImJoyPlugin: { "type": "web-worker", "editor_height": "400px"} -->
