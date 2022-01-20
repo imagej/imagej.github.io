@@ -302,10 +302,10 @@ Here are several ways to do so:
     -   Using the search bar, locate your command, taking note of the Class column's value.
         -   E.g., if we type "make binary" we see that the class is `ij.plugin.Thresholder`.
     -   Open the relevant project in GitHub:
-        -   E.g., for "ij." classes, go to: https://github.com/imagej/ImageJA
+        -   E.g., for "ij." classes, go to: https://github.com/imagej/ImageJ
     -   Press the {% include key key='T' %} key, and type the name of the file you are looking for.
         -   In the example above, this is Thresholder.java.
-    -   You should end up with a hit like: https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java.
+    -   You should end up with a hit like: https://github.com/imagej/ImageJ/blob/master/ij/plugin/Thresholder.java.
     -   This method requires that you know in which repository the code lives. However, you can combine it with **search.imagej.net** method above to figure out which repository, then load the code on GitHub, if desired.
 4.  **Using the "Open Source for Menu Item" command:**
     -   Run {% include bc path='Plugins | Scripting | Open Source for Menu Item' %}.

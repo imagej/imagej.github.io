@@ -7,15 +7,7 @@ section: Extend:Development
 
 The source code of the original [ImageJ](/software/imagej) is available at:
 
-{% include link-banner url='https://github.com/imagej/imagej1' %}
-
-And there is a version with clean [Git](/develop/git) history and release tags, with a [Maven](/develop/maven)-based build system, available at:
-
-{% include link-banner url='https://github.com/imagej/ImageJA' %}
-
-## ImageJ unit tests
-
-There are a substantial number of [unit tests to exercise ImageJ functionality](/develop/ij1-unit-tests).
+{% include link-banner url='https://github.com/imagej/ImageJ' %}
 
 # ImageJ2
 
@@ -37,7 +29,7 @@ All source code is on [GitHub](/develop/github).
 | ![](/media/icons/imagej2.png){:width="28"} | [ImageJ2](https://github.com/imagej)  | A general-purpose image processing application                  |
 | ![](/media/icons/imglib2.png){:width="28"} | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
 | ![](/media/icons/scifio.png){:width="28"}  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
-| ![](/media/icons/fiji.png){:width="28"}    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ                   |
+| ![](/media/icons/fiji.png){:width="28"}    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ and ImageJ2       |
 
 See the [Architecture](/develop/architecture) page for more information about the relationship between these projects.
 

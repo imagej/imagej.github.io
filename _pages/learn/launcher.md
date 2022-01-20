@@ -41,7 +41,7 @@ The launcher can do all kinds of things, like:
 -   Control the [Updater](/plugins/updater) from the command line
 -   Open images: `./ImageJ-<platform> example.jpg`
 -   Call Jython scripts: `./ImageJ-<platform> example.py` (also works for JRuby scripts when they have an `.rb` extension, for Beanshell scripts with `.bsh` extension, `.clj` for Clojure and `.js` for Javascript)
--   Call the Jython interpreter: `./ImageJ-<platform> --jython` (the classpath will be the same as when calling ImageJA), and likewise `--jruby`, `--bsh` and `--js` for the respective language's command-line interpreters
+-   Call the Jython interpreter: `./ImageJ-<platform> --jython` (the classpath will be the same as when calling ImageJ), and likewise `--jruby`, `--bsh` and `--js` for the respective language's command-line interpreters
 -   Run ImageJ with the system Java instead of its own one: `./ImageJ-<platform> --system`. But beware: this might fail since some plugins need at least Java 1.5, and the 3D viewer needs Java3D.
 -   Show the java command line instead of running ImageJ: `./ImageJ-<platform> --dry-run`
 -   Compile a Java class: `./ImageJ-<platform> --javac example.java`

@@ -29,8 +29,6 @@ There are a many different derivatives of ImageJ with very similar names, and so
     </tr>
     <tr>
       <td><img src="/media/icons/imagej.png" width="64"/></td>
-      <td><a href="/software/imagej">ImageJ</a></td>
-      <td>{% include person id='rasband' %}</td>
       <td>The original version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
         macros for performing a wide variety of tasks. Sometimes referred to as
@@ -68,22 +66,16 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej.png" width="64"/></td>
-      <td><a href="/libs/imageja">ImageJA</a></td>
-      <td><a href="/people">{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</a></td>
-      <td>ImageJA is a project that provides a clean <a href="/develop/git">Git</a>
-        history of the original ImageJ, with a proper 'pom.xml' file so that it
-        can be used with Maven without hassles.<br><br>It is what ImageJ2's
-        legacy support uses at its core.</td>
-      <td>Jul. 2005</td>
-      <td>Active</td>
-    </tr>
-    <tr>
       <td><img src="https://ij.imjoy.io/assets/icons/chrome/chrome-installprocess-128-128.png" width="64"/></td>
       <td><a href="/software/imagej-js">ImageJ.JS</a></td>
       <td>{% include person id='oeway' %}</td>
-      <td>ImageJ.JS is a web version of <a href="/libs/imageja">ImageJA</a> that runs in the browser without installation,
-      compiled from Java to JavaScript using the <a href="https://leaningtech.com/cheerpj/">Cheerpj compiler</a> and integrated with the <a href="/software/imjoy">ImJoy</a> plugin system. It's accessible from <a href="https://ij.imjoy.io">https://ij.imjoy.io</a> and also support mobile devices and tablets.
+      <td>ImageJ.JS is a web version of ImageJ that runs in the browser without
+        installation, compiled from Java to JavaScript using the
+        <a href="https://leaningtech.com/cheerpj/">Cheerpj compiler</a> and
+        integrated with the <a href="/software/imjoy">ImJoy</a> plugin system.
+        It's accessible from
+        <a href="https://ij.imjoy.io">https://ij.imjoy.io</a>
+        and also supports mobile devices and tablets.
       </td>
       <td>2020</td>
       <td>Active</td>
@@ -157,6 +149,18 @@ There are a many different derivatives of ImageJ with very similar names, and so
         includes most of the same plugins.</td>
       <td>2005</td>
       <td>Defunct<br>(Last update:<br>Dec. 2009)</td>
+    </tr>
+    <tr>
+      <td><img src="/media/icons/imagej.png" width="64"/></td>
+      <td><a href="/libs/imageja">ImageJA</a></td>
+      <td><a href="/people">{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</a></td>
+      <td>ImageJA was a project that provided a clean <a href="/develop/git">Git</a>
+        history of the original ImageJ, with a proper <code>pom.xml</code> file
+        so that it could be used with Maven without hassles. The ImageJ project
+        has since been updated to deploy releases to Maven Central directly,
+        without the need for the ImageJA project as an intermediate.</td>
+      <td>Jul. 2005</td>
+      <td>Superseded by ImageJ</td>
     </tr>
     <tr>
       <td></td>

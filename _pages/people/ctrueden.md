@@ -64,7 +64,6 @@ ImageJ2 team to respond to every support request within one work day:
 1.  \[Winter 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
 2.  \[Winter 2021\] ImageJ and Fiji component updates.
     * New pom-scijava, imagej and fiji component releases (without log4j!).
-    * Fix deployment of `net.imagej:ij` artifacts. ({% include github org='imagej' repo='imagej1' issue=142 %})
     * Fix [fiji-builds](https://github.com/fiji/fiji-builds) CI job.
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})

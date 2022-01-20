@@ -14,9 +14,9 @@ section: Extend:Development:Tools
 {% endcapture %}
 {% include img src='icons/maven' align='right' width=150 caption=maven-caption %}
 
-[ImageJ2](/software/imagej2), [Fiji](/software/fiji) and other [SciJava](/libs/scijava) projects use [Maven](https://maven.apache.org/) for their project infrastructure.
+[ImageJ](/software/imagej), [ImageJ2](/software/imagej2), [Fiji](/software/fiji), and other [SciJava](/libs/scijava)-based projects use [Maven](https://maven.apache.org/) for their project infrastructure.
 
-Maven artifacts are published to the [SciJava Maven repository](/develop/project-management#maven).
+Maven artifacts are published to [Maven Central](https://search.maven.org/) or to the [SciJava Maven repository](/develop/project-management#maven).
 
 # Why do we use Maven?
 

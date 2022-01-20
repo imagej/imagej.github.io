@@ -41,7 +41,7 @@ Changes to the original [ImageJ](/software/imagej) are made by {% include person
 
 Methods of getting the patch to Wayne include:
 
--   Submit a pull request on GitHub against {% include github org='imagej' repo='imagej1' label='the ImageJ repository' %}. Be aware that PRs will be reviewed and integrated by hand, not merged via the standard Git/GitHub workflow.
+-   Submit a pull request on GitHub against {% include github org='imagej' repo='ImageJ' label='the ImageJ repository' %}. Be aware that PRs will be reviewed and integrated by hand, not merged via the standard Git/GitHub workflow.
 -   Send the modified code in a [private mail to Wayne](mailto:rasband@gmail.com).
 
 The important part is that Wayne receive the code/patch, since he is the only one with the authority to merge it.
