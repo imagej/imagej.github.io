@@ -48,6 +48,6 @@ See [Developing ImageJ in NetBeans](/develop/netbeans).
 
 You can use the mvn command line tool to build ImgLib2. Just type "mvn" with no arguments. By default, Maven will compile the code, run unit tests, create a JAR file and install it in your local Maven repository (typically found in `~/.m2/repository`). Maven does its work in a subfolder called `target` which is where you'll find compiled classes and JAR artifacts.
 
-For more on using the Maven command line tool, see [Building a Project with Maven](http://maven.apache.org/run-maven/index.html) on the Maven web site.
+For more on using the Maven command line tool, see [Building a Project with Maven](http://maven.apache.org/run-maven/index.html) on the Maven website.
 
   

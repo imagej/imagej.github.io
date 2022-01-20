@@ -10,7 +10,7 @@ extensions: ["mathjax"]
 
 # Clojure tutorial for ImageJ
 
-Check out [clojure web site](http://clojure.org) and particularly the chapter on [Java interoperability](http://clojure.org/java_interop).
+Check out [clojure website](http://clojure.org) and particularly the chapter on [Java interoperability](http://clojure.org/java_interop).
 
 Clojure is *not* a scripting language: Clojure compiles directly to JVM bytecode, and thus runs at native speed. Thus one must think of Clojure as a true alternative to Java the language, but much more expressive, flexible and powerful.
 

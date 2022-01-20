@@ -2,7 +2,7 @@
 title: 2012-02-01 - The Fiji Updater has been integrated into the ImageJ2 code base
 ---
 
-A first working version of the [Updater](/plugins/updater) was integrated into the [ImageJ2](/software/imagej2) code base. This is an important step: the Updater can connect not only to the primary ImageJ2 update site, but to any number of update sites a user might configure. Likewise, advanced users may wish to set up their own update sites, which only requires a web site with either direct file access, or SSH/SFTP access (SFTP support was contributed by Jarek Sacha).
+A first working version of the [Updater](/plugins/updater) was integrated into the [ImageJ2](/software/imagej2) code base. This is an important step: the Updater can connect not only to the primary ImageJ2 update site, but to any number of update sites a user might configure. Likewise, advanced users may wish to set up their own update sites, which only requires a website with either direct file access, or SSH/SFTP access (SFTP support was contributed by Jarek Sacha).
 
 The Updater is a heavily adapted [Fiji](/software/fiji) Updater and works in conjunction with the ImageJ [Launcher](/learn/launcher) which we still have to integrate into the ImageJ2 code base from {% include github repo='fiji' label='fiji.git' %}.
 

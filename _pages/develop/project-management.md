@@ -199,7 +199,7 @@ The preferred mechanism to contribute improvements to SciJava projects is using 
 ## Roadmap links
 
 -   [News](/news) about ImageJ2 and Fiji developments, including status updates, observations and comments about programming.
--   [Recent changes](https://github.com/imagej/imagej.github.io/commits/main) to this web site (*not* the source code itself).
+-   [Recent changes](https://github.com/imagej/imagej.github.io/commits/main) to this website (*not* the source code itself).
 
 ## Citable code
 

@@ -4,7 +4,7 @@ title: 2011-10-16 - The Art of Debugging
 
 
 {% capture  content %}
-The following is a blog post from {% include person id='dscho' %} originally published on the ImageJDev web site.
+The following is a blog post from {% include person id='dscho' %} originally published on the ImageJDev website.
 {% endcapture %}
 {% include notice icon="info" content=content %}
 

@@ -4,7 +4,7 @@ title: 2009-11-06 - Bio-Formats + CellProfiler
 
 
 {% capture  content %}
-The following is a blog post from {% include person id='LeeKamentsky' %} originally published on the ImageJDev web site.
+The following is a blog post from {% include person id='LeeKamentsky' %} originally published on the ImageJDev website.
 {% endcapture %}
 {% include notice icon="info" content=content %}
 

@@ -11,7 +11,7 @@ The threads we are sending to the [ImageJ users list](https://imagej.nih.gov/ij/
 
 1.  [**Backwards compatibility**](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;78ecf36e.0912) – What does "near 100% backwards compatibility" mean? And is it a reasonable, warranted goal?
 2.  [**ImageJ project structure**](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;ff078265.0912) – What are ImageJ, Fiji, ImageJX and ImageJDev, and how are they related? What about project forks? How can people contribute?
-3.  [**ImageJDev.org web site**](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cf12215d.0912) – What is the role of this web site? How can we improve it?
+3.  [**ImageJDev.org website**](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cf12215d.0912) – What is the role of this website? How can we improve it?
 4.  [**ImageJ mailing lists**](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;a5b07f4c.0912) – There are an increasing number of ImageJ-related mailing lists. Are they all useful and necessary? Do we need any additional lists?
 5.  [**Scripting languages and API**](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;8c622001.0912) – Some people want ImageJ to support several different scripting languages based on a common underlying API, while others argue for a single, easy to learn macro language. What the pros and cons of each approach?
 

@@ -69,7 +69,7 @@ The first goal is to get your extension into the hands of users.
       </td>
       <td style="background: #dfd; vertical-align: top">
         <ul>
-	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">personal update site</a></b> hosted on the ImageJ web site.</li>
+	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">personal update site</a></b> hosted on the ImageJ website.</li>
           <li> Alternately, you can retain full control by hosting your update site yourself.</li>
           <li> Users are notified of updates without needing to check proactively.</li>
           <li> The updater manages dependencies for you.</li>
@@ -321,7 +321,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <ul><li> <b><a href="/editing#creating-a-new-page">Create a page</a></b> for your extension.</li></ul>
 </td>
 <td style="background: #dfd; vertical-align: top">
-<ul><li> The ImageJ wiki is part of imagej.net, the integrated ImageJ web site.</li>
+<ul><li> The ImageJ wiki is part of imagej.net, the integrated ImageJ website.</li>
 <li> The ImageJ wiki uses MediaWiki, the most popular wiki engine which drives Wikipedia.</li>
 <li> You can get started immediately; no human needs to approve your account or edits.</li></ul>
 </td>

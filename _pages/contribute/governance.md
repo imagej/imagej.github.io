@@ -45,7 +45,7 @@ Individuals often fill more than one role.
 
 ## Component status
 
-This web site documents lots of software [components](/develop/architecture#definitions)—and in particular, many ImageJ [plugins](/plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
+This website documents lots of software [components](/develop/architecture#definitions)—and in particular, many ImageJ [plugins](/plugins). Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
 
 Each component's page features an informational sidebar with a status report derived from the component's declared *team*. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
 

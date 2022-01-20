@@ -11,7 +11,7 @@ This article explains how to install and configure IntelliJ IDEA for use with [I
 
 -   **Install OpenJDK.** Download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk). Or install it via a package manager, if possible.
 
--   **Install IDEA.** Download and install IDEA from the [IDEA web site](http://www.jetbrains.com/idea/download/).
+-   **Install IDEA.** Download and install IDEA from the [IDEA website](http://www.jetbrains.com/idea/download/).
 
 ## Import the ImageJ2 source
 

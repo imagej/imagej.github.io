@@ -8,7 +8,7 @@ doi: 10.1109/TPAMI.2005.87
 extensions: ["mathjax"]
 ---
 
-This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [this page of the ImageJ 1.x web site](https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html).
+This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [this page of the ImageJ 1.x website](https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html).
 
 ## Documentation
 

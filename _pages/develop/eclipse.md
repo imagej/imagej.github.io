@@ -22,7 +22,7 @@ adjustment for other versions.
 ### Install Eclipse
 
 -   Download "Eclipse IDE for Java Developers" from the
-    [Eclipse web site](http://www.eclipse.org/downloads/).
+    [Eclipse website](http://www.eclipse.org/downloads/).
 
 {% include notice icon="warning" content='It is **important** to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [install the M2E plugin manually](http://eclipse.org/m2e/).' %}
 

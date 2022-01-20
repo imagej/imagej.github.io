@@ -20,6 +20,6 @@ title: ImageJFX
 
 <img src="/media/imagejfx.png" width="600"/>
 
-For further details, see the [ImageJFX web site](http://www.imagejfx.net/).
+For further details, see the [ImageJFX website](http://www.imagejfx.net/).
 
 

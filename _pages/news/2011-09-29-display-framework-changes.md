@@ -4,7 +4,7 @@ title: 2011-09-29 - Display framework changes
 
 
 {% capture  content %}
-The following is a blog post from {% include person id='ctrueden' %} originally published on the ImageJDev web site.
+The following is a blog post from {% include person id='ctrueden' %} originally published on the ImageJDev website.
 {% endcapture %}
 {% include notice icon="info" content=content %}
 

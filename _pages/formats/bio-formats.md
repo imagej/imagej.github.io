@@ -16,7 +16,7 @@ See [LOCI's Bio-Formats site](https://loci.wisc.edu/software/bio-formats) for a 
 
 ## Documentation
 
-What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [Bio-Formats web site](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
+What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [Bio-Formats website](https://www.openmicroscopy.org/bio-formats/) for additional information about Bio-Formats in general.
 
 See especially the [Using Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/users/imagej/load-images.html#using-bio-formats-to-load-images-into-imagej) page for detailed instructions.
 

@@ -22,7 +22,7 @@ Development of ImageJ and related software relies heavily on [Git](http://git-sc
 
 ## Git tutorials
 
-This web site has lots of tutorials on Git; see the left sidebar.
+This website has lots of tutorials on Git; see the left sidebar.
 
 ## Rewriting history
 

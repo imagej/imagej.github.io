@@ -82,7 +82,7 @@ The following projects are part of the **SciJava pledge** to work together, reus
 </table>
 {:/}
 
-See the [Architecture](/develop/architecture) and [Governance](/contribute/governance) pages, as well as the [SciJava web site](https://scijava.org/), for further details.
+See the [Architecture](/develop/architecture) and [Governance](/contribute/governance) pages, as well as the [SciJava website](https://scijava.org/), for further details.
 
 # SciJava Common
 
@@ -167,7 +167,7 @@ A history of API changes is available at: https://abi-laboratory.pro/java/tracke
 
 ## Further reading
 
--   [SciJava web site](https://scijava.org/)
+-   [SciJava website](https://scijava.org/)
 -   [SciJava Common presentation](https://scijava.org/scijava-common/scijava-common.html)
 -   {% include github org='imagej' repo='tutorials' label='ImageJ tutorials' %}
 -   {% include github org='scijava' repo='scijava-common' label='SciJava Common source code' %}

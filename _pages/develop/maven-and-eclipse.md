@@ -7,7 +7,7 @@ To take full advantage of a Maven-based project from within Eclipse, you should 
 
 For more information about Maven, see:
 
--   [Maven web site](http://maven.apache.org/)
+-   [Maven website](http://maven.apache.org/)
 -   [Maven: The Complete Reference](http://www.sonatype.com/books/mvnref-book/reference/public-book.html)
 -   [Better Builds with Maven](http://www.maestrodev.com/better-builds-with-maven/0-about-this-guide)
 
@@ -31,7 +31,7 @@ If you use Eclipse 3.7 Indigo or newer, you most likely have m2e already. If you
 
 On Windows, you will need to configure Eclipse to use the Java Development Kit (JDK).
 
-First, download and install JDK 6 from the Java web site.
+First, download and install JDK 6 from the Java website.
 
 Take note of where the Java installation ended up; we will use "C:\\Program Files\\Java\\jdk1.6.0\_20" below, though your path is likely to be different.
 

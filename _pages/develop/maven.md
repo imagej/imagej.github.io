@@ -139,7 +139,7 @@ For example, let's suppose you want to depend on the [snakeyaml](http://snakeyam
 
 # Depending on libraries outside the core repositories
 
-If you need to depend on a library that is not present in either Maven Central or the SciJava Maven repository, first double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [adding a `<repository>` to the `<repositories>` section of your POM](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)).
+If you need to depend on a library that is not present in either Maven Central or the SciJava Maven repository, first double check the project's website for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [adding a `<repository>` to the `<repositories>` section of your POM](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)).
 
 If there are no public repositories containing your dependency, you have two options:
 
@@ -153,7 +153,7 @@ Finally, for local testing you can [install the dependency into your local Maven
 mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar
 ```
 
-For the `groupId`, it is typically best to use the reversed domain name of the library's web site. For libraries that are not explicitly versioned, you may want to use a datestamp such as "20120920" for the `version`, rather than inventing your own versioning scheme.
+For the `groupId`, it is typically best to use the reversed domain name of the library's website. For libraries that are not explicitly versioned, you may want to use a datestamp such as "20120920" for the `version`, rather than inventing your own versioning scheme.
 
 {% include notice icon='warning' content="If you use `install:install-file`, others will not be able to build your code unless they also use `install:install-file` to install the library on their systems." %}
 

@@ -19,13 +19,13 @@ Download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk).
 
 #### Install NetBeans
 
-Download and install NetBeans from the [NetBeans web site](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
+Download and install NetBeans from the [NetBeans website](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
 
 ### Setting up NetBeans on macOS
 
 #### Install NetBeans
 
-Download and install NetBeans from the [NetBeans web site](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
+Download and install NetBeans from the [NetBeans website](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
 
 ### Setting up NetBeans on Linux
 
@@ -57,7 +57,7 @@ sudo aptitude install netbeans
 5.  Select the "ImageJ" project in the tree then click Open
 6.  Right-click the "ImageJ" project and choose Build
 
-You may receive a warning about Maven when building the project. It is not required, but if you wish to eliminate it, you can install Maven from the [Maven web site](http://maven.apache.org/download.html).
+You may receive a warning about Maven when building the project. It is not required, but if you wish to eliminate it, you can install Maven from the [Maven website](http://maven.apache.org/download.html).
 
 ## Launch the program
 

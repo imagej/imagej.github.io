@@ -179,7 +179,7 @@ queries to download updates. These update sites are versioned, but do not rely
 on other tools (e.g., [Git](/develop/git) or [Maven](/develop/maven)) in order
 to function. Rather, component developers upload new versions of their
 component(s) using the [ImageJ Updater](/plugins/updater), which makes them
-available to end users. Typically, update sites are available as web sites via
+available to end users. Typically, update sites are available as websites via
 HTTP, with uploads functioning via
 [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or
 [SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh)." %}

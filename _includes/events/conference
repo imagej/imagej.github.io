@@ -5,7 +5,7 @@
 - **Location:** {{include.location}}
 - **Dates:** {{include.dates}}
 
-See the [{{include.title}} web site]({{include.link}}) for details!
+See the [{{include.title}} website]({{include.link}}) for details!
 
 {%- comment -%}
 # vi:syntax=liquid

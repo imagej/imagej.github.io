@@ -41,7 +41,7 @@ In addition to looking in the `plugins` folder of ImageJ itself, ImageJ also loo
 
 ### Configuring where ImageJ looks for plugins
 
-Power users may wish to configure exactly which folder(s) ImageJ scans for plugins. The default folder is the `plugins` folder of the ImageJ installation. However, this can be overridden using the `plugins.dir` system property. See the ImageJ web site's article [Changing Location of Plugins Directory](https://imagej.nih.gov/ij/docs/menus/plugins.html#dir).
+Power users may wish to configure exactly which folder(s) ImageJ scans for plugins. The default folder is the `plugins` folder of the ImageJ installation. However, this can be overridden using the `plugins.dir` system property. See the ImageJ website's article [Changing Location of Plugins Directory](https://imagej.nih.gov/ij/docs/menus/plugins.html#dir).
 
 ### Multiple plugin directories
 
