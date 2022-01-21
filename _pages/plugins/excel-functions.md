@@ -49,6 +49,8 @@ The **Excel Macro Extension** can be installed the Fiji update site _Excel Funct
 
 Done! Congratulations and happy data saving!
 
+**Known issue:** If additionally the *Read and Write Excel plugin* is installed in parallel the two will clash. Make sure to just install the Excel Macro Extension alone to ensure full functionality.
+
 ## Usage Examples
 ### Macro Extension Example
 ```java
