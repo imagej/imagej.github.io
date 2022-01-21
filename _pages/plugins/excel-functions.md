@@ -2,6 +2,11 @@
 title: Excel Functions
 description: Functions to save basic ImageJ tables as well as arrays in .xlsx worksheets as well as add images and plots to Excel worksheets
 project: /plugins/excel-functions
+name: Jan Brocher
+affiliation: BioVoxxel
+website: https://www.biovoxxel.de
+repository: https://mvnrepository.com/artifact/de.biovoxxel/excel.macro.extensions
+source-url: https://gitlab.com/biovoxxel/excel-table-macro-extensions/-/tree/main/excel.macro.extensions
 pom-url: https://gitlab.com/biovoxxel/excel-table-macro-extensions/-/blob/main/excel.macro.extensions/pom.xml
 ---
 
