@@ -1,13 +1,24 @@
 ---
-mediawiki: Manual_tracking_with_TrackMate
 title: Manual tracking with TrackMate
+project: /software/fiji
+description: Tutorial on manual and semi-automated tracking with TrackMate.
+categories: [Segmentation,Tracking]
+logo: /media/logos/trackmate-300p.png
+artifact: sc.fiji:TrackMate
+doi: 10.1101/2021.09.03.458852
+nav-links:
+- title: Manual editing of tracks using TrackMate
+  url: /plugins/trackmate/manual-track-editing
+nav-links:
+- title: Manual tracking with TrackMate
+  url: /plugins/trackmate/manual-tracking
 ---
 
 The previous TrackMate tutorial - [Manual editing of tracks using TrackMate](/plugins/trackmate/manual-track-editing) is dedicated to manually correcting the results of an automated process. This small tutorial here shows how to do a fully manual annotation with [TrackMate](/plugins/trackmate).
 
 ## Setting up
 
-![](/media/plugins/trackmate/trackmate-manualtrackingentrypoint.png)
+{% include img src='/media/plugins/trackmate/trackmate-manual-tracking-01.png' width='500'  align='center'  %}
 
 There is not much to do. We will use the same, simple dataset that for [Getting started with TrackMate](/plugins/trackmate/getting-started). You can find it in {% include bc path='File | Open Samples | Tracks for TrackMate (807K)'%}.
 
@@ -15,40 +26,26 @@ As for the TrackMate plugin, you could start it up normally, selecting {% includ
 
 You should should get the layout pictured on the right. Notice that we are already displaying the *Display options* panel of the classic GUI, and that the *previous* button is disabled at the bottom. Notice also that the color scales for both spot and track features display a dummy range.
 
-{% include clear%}
-
-
 ## Creating spots one by one
 
 The default view (the one that re-uses the HyperStack viewer of ImageJ) can readily edit the tracks. You just have to make sure that the TrackMate tool is selected in the ImageJ toolbar:
 
-![](/media/plugins/trackmate/trackmate-toolbar.png)
+{% include img src='/media/plugins/trackmate/trackmate-toolbar.png' align='center' width='400' %}
 
-With this tool selected, you can now make the image window active and use the mouse of the keyboard to create spots. Here are the commands for the mouse:
+With this tool selected, you can now make the image window active and use the mouse of the keyboard to create spots. 
 
--   {% include key key="Double-click" %} anywhere in the image to create a spot and enter the edit mode. The edited spot is highlighted with a green, dashed circle, as pictured below:
-
-![](/media/plugins/trackmate/trackmate-spoteditmode.png)
-
--   To leave the edit mode, {% include key key="double-click" %} again anywhere. The spot is then added to the data model.
--   To edit it again, {% include key key="double-click" %} inside the spot. Its outline is now dashed; you are back in the edit mode.
--   While in the edit mode, you can move the edited spot around by clicking inside the spot and dragging it around. The spot will follow you if you change the time or the Z slider, and it will be added to the right plane upon leaving the edit mode.
--   You can also change its radius by using {% include key keys='Alt|Mouse wheel' %}. Using {% include key keys='Shift|Alt' %} changes the spot radius faster.
-
-This is how you edit the data with the mouse. You can also use the keyboard:
-
--   To create (or <u>a</u>dd) a spot, press {% include key key='A' %} with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using {% include key keys='Alt|Mouse wheel' %}, and leave the edit mode. This will "capture" the spot radius and apply it anywhere after.
+-   To create (or <u>a</u>dd) a spot, press {% include key key='A' %} with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited.
 -   To move a spot around, press {% include key key='Space' %} with the mouse over the target spot. Then move the mouse around. No need for mouse clicks.
 -   To <u>d</u>elete a spot, press the {% include key key='D' %} key with the mouse over the target spot.
 -   To change a spot radius, press {% include key key='Q' %} and {% include key key='E' %} over the target spot. {% include key keys='Shift|Q' %} and {% include key keys='Shift|E' %} change the radius by a larger amount.
 
 And that's it for spot creation.
 
-![](/media/plugins/trackmate/trackmate-createspots.png)
+{% include img src='/media/plugins/trackmate/trackmate-createspots.png' align='center' %}
 
 ## Create and removing single links
 
-![](/media/plugins/trackmate/trackmate-createsinglelink.png)
+{% include img src='/media/plugins/trackmate/trackmate-createsinglelink.png' align='center' %}
 
 All we have done so far was to create single spots, that are not part of any tracks. Tracks are created on the fly when you link several spots together. You can do it in [TrackScheme](/plugins/trackmate/trackscheme), as explained elsewhere. Here is how to do it directly on the image. To go on, create a few spots above the bright blob of the source image. We need at least a couple of them in consecutive frames.
 
@@ -64,7 +61,7 @@ Removing a link is done the same way: Select exactly two spots that are connecte
 
 ## The auto-linking mode
 
-![](/media/plugins/trackmate/trackmate-manualtracking-1.png)
+{% include img src='/media/plugins/trackmate/trackmate-manualtracking-1.png' align='center' %}
 
 Creating long tracks this way would be tedious, as you would always have to select a spot before creating a link. There is way to simplify this.
 
@@ -72,32 +69,22 @@ Press {% include key keys='Shift|L' %} to toggle the auto-linking mode on/off. W
 
 Let's apply this to our data. First create a spot over the bright blob at the top of the first frame, and roughly adjust its radius. Make sure the selection contains this spot, and only it (it must be highlighted in green), and press {% include key keys='Shift|L' %} to toggle the auto-linking mode on. Then move the second frame and place the mouse over the new spot location. Press **A**; a spot is created AND it is linked to the first spot by a track normally painted in red. Repeat until you reach about the frame 15 (the track branches, at some point, you have to decide what way you want to go). You should get - rather quickly - something like the picture on the right.
 
-{% include clear%}
-
-
-![](/media/plugins/trackmate/trackmate-manualtracking-2.png)
+{% include img src='/media/plugins/trackmate/trackmate-manualtracking-2.png' align='center' %}
 
 Tracks created this way do not have to be linear. You can create branching segments simply by remembering that in the auto-linking mode, links are created between the last selected spot.
 
 Therefore, to create the branch that goes on the right, go back on the frame 9 (the frame just before the branching happens) and click into the spot that's there to select it. Then move to the next frame and create the spots that belong to the right branch, just like you did before. These spots will be added to the same track, and should get a inverted Y-branch like pictured on the right.
 
-{% include clear%}
-
 
 ## Tracks are updated live
 
-![](/media/plugins/trackmate/trackmate-manualtracking-3.png)
+{% include img src='/media/plugins/trackmate/trackmate-manualtracking-3.png' align='center' %}
 
 Note that you do not have to worry about what track a spot belongs to when creating a link. Tracks are automatically managed on the fly. If you now create a second link between a pair of spots that are not connected with anything, a new track will be created automatically, and the color of the first ones will change.
 
 The same is valid when you delete a link or a spot. For instance, let's create 3 tracks out of our inverted Y. Go to the frame 9, and delete the spot that is at the crossing. You now have 3 tracks.
 
-{% include clear%}
-
-
 ## Track and spot features are updated live
-
-<figure><img src="/media/plugins/trackmate/trackmate-guimanualtracking.png" title="TrackMate_GUIManualTracking.png" width="200" alt="TrackMate_GUIManualTracking.png" /><figcaption aria-hidden="true">TrackMate_GUIManualTracking.png</figcaption></figure>
 
 TrackMate uses computes and uses some numerical features for its spots, edges and tracks. You can use these features to color the TrackMate objects.
 
@@ -105,16 +92,13 @@ For instance this is what happened in the previous section, when you deleted a s
 
 The track and spot colors are refreshed immediately in the HyperStack displayer. Note, though, that the color range in the GUI has not been updated. It still displays *-Infinity - Infinity*. This is by construction, to alleviate a bit the load when editing large models. If you want to refresh the color range, you have to click directly on it, and it will be properly repainted. On the right you can see what I get if I pick the feature *Y* for spot coloring, and the track index, after refreshing.
 
-{% include clear%}
-
-
 ## The semi-automatic tracking tool
 
 Since v2.1.0, TrackMate includes a tool that can automatically find spots and automatically link them to build a track. This is extremely handy to annotate images for which the automated detection in bulk yields too much spurious spots. I wish I had come with the idea *before* I started doing *C.elegans* lineaging.
 
 This tool is configured in the TrackMate tool option panel. It is not part of the classic GUI; to make it appear, double-click on the TrackMate tool in the ImageJ toolbar. You should see something like this:
 
-![](/media/plugins/trackmate/trackmate-v2.1.0-trackmatetools.png)
+{% include img src='/media/plugins/trackmate/trackmate-manual-tracking-02.png' align='center' width='500' %}
 
 We are interested in the **Semi-automatic tracking** panel. The bottom panel has just convenience buttons that allow you to select tracks or parts of tracks from the current selection (great to delete faulty tracks at once), and the right panel is a log. The semi-automatic tracking tool itself works as follow: It takes the single spot in the selection, and use its radius to build a neighborhood of this spot, but in the next frame. It then searches this neighborhood for a bright blob with a similar radius. If the found spot is close enough and have a quality high enough, it is linked to the first spot. The process is then repeated, until no suitable spot can be found or until there is no time-point to inspect anymore.
 
@@ -124,7 +108,7 @@ Let's put this in practice. Go to the frame 16 (or wherever you stopped annotati
 
 How far can it go really depends on the radius you set for the first spot, so results may vary. Here is how it looks on a movie:
 
-{% include video platform='youtube' id='fAOpKTenSaU'%}
+{% include video platform='youtube' id='fAOpKTenSaU' align='center' %}
 
 Great, no?
 
@@ -132,6 +116,6 @@ Great, no?
 
 These are the tools that should allow you to work very quickly. For fun: redo this tutorial with a [TrackScheme](/plugins/trackmate/trackscheme) window open. You should see that it works very well with manual annotation.
 
-{% include person id='tinevez' %} ([talk](User_talk_JeanYvesTinevez)) 10:54, 5 August 2013 (CDT)
 
-
+____
+Jean-Yves Tinevez, January 2022
