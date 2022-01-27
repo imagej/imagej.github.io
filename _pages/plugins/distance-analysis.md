@@ -140,7 +140,7 @@ if the recorder has a problem, here are some examples of macro line:
 
 Download and copy the following jar in your plugins folder [Diana\_1.48.jar](https://drive.google.com/open?id=1aODVyqRjmU53wEM52lfLM74Yn9GP9PBl)
 
-You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](/plugins/3d-imagej-suite).
+You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](https://mcib3d.frama.io/3d-suite-imagej/).
 
 *Note that this version works only with 3D ImageJ library [mcib3d-core3.94.jar](https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy-) and upper!*
 
