@@ -51,10 +51,12 @@ The **Excel Macro Extension** can be installed the Fiji update site _Excel Funct
 * In the new popup window search for the site names _Excel Functions_ and activate the checkbox
 * Press the **Close** button
 * Finally, press the **Apply changes** button and restart Fiji after the successful update... 
+* The Excel Functions are appearing under the menu _Plugins > Excel Functions_
 
 Done! Congratulations and happy data saving!
 
-**Known issue:** If additionally the *Read and Write Excel plugin* is installed in parallel the two will clash. Make sure to just install the Excel Macro Extension alone to ensure full functionality.
+***Known issue: If additionally the *Read and Write Excel plugin* is installed in parallel the two will clash. Make sure to just install the Excel Macro Extension alone to ensure full functionality.***
+
 
 ## Usage Examples
 ### Macro Extension Example
