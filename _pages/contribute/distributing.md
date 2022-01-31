@@ -69,7 +69,7 @@ The first goal is to get your extension into the hands of users.
       </td>
       <td style="background: #dfd; vertical-align: top">
         <ul>
-	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">personal update site</a></b> hosted on the ImageJ website.</li>
+	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">hosted update site</a></b> on `sites.imagej.net`.</li>
           <li> Alternately, you can retain full control by hosting your update site yourself.</li>
           <li> Users are notified of updates without needing to check proactively.</li>
           <li> The updater manages dependencies for you.</li>

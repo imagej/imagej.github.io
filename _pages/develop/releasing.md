@@ -197,9 +197,9 @@ component must then be *uploaded* to an ImageJ [update site](/update-sites).
 
 ### External update sites
 
-An update site can be hosted anywhere, though the ImageJ web server at http://sites.imagej.net/ offers a [personal update site](/update-sites/setup#add-your-personal-update-site) service.
+An update site can be hosted anywhere, although `sites.imagej.net` provides a [hosted update site](/update-sites/setup#creating-a-hosted-update-site) service.
 
-See the **[distribution](/contribute/distributing)** page for a discussion of pros and cons of distributing your plugin on a core versus a personal update site.
+See the **[distribution](/contribute/distributing)** page for a discussion of pros and cons of distributing your plugin on a core versus a separate update site.
 
 If you do manage [your own update site](/update-sites/setup), you can upload your release yourself.
 

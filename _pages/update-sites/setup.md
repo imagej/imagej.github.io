@@ -8,34 +8,31 @@ nav-title: How to Create
 
 ## Introduction
 
-This tutorial explains how to **set up a website to distribute your plugins**. It assumes that your plugins are correctly installed in your local ImageJ setup.
+This tutorial explains how to **set up a website to distribute your plugins**. It assumes that your plugins are correctly installed in your local [ImageJ2](/software/imagej2) setup.
 
 ## Rationale
 
 See the [Distribution](/contribute/distributing) page for a discussion of the benefits of update sites and how they fit in to plugin development.
 
-## Add your personal update site
+## Creating a hosted update site
 
-{% include notice icon="warning" content='Please note that since the [Wiki relaunch](https://imagej.net/events/wiki-grand-opening/), personal update sites are no longer hosted through the ImageJ Wiki. Existing upload credentials are unaffected - but the process for creating/updating credentials has changed.' %}
+The easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up an [update site](/update-sites) on the `sites.imagej.net` server, hosted at [LOCI](/orgs/loci).
 
-By far the easiest method to provide your macros, scripts and plugins to other users, letting them keep up-to-date in the most convenient manner, is to set up your *personal update site*.
+{% include notice icon="info" content='There are some minimal *Terms of Service* for hosted update sites. See the [Hosted Update Site Terms of Service](/update-sites/tos) for details.' %}
 
-A *personal update site* is hosted on https://sites.imagej.net/&lt;update-site-name&gt;. In the past, each update site corresponded directly to ImageJ Wiki user accounts - but now, a particular user can have upload access to many sites, and a particular update site can have many authorized users.
+***Please use [this thread on the Image.sc Forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request a new update site.***
 
-{% include notice icon="info" content='There are some minimal *Terms of Service* for personal update sites. See the [Personal Update Site Terms of Service](/update-sites/tos) for details.' %}
+You can also request:
+* The addition or removal of uploader permissions for a given user to a particular site;
+* A password reset for your upload account.
 
-First of all, please use [this thread on the imagej.sc forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request a new upload account and/or new update site. You can also request the addition or removal of uploader permissions of a given user to a particular site, or request a password reset for your upload account.
-
-If you need to create a new upload account as part of this process, your password will be PM'd to you by a forum admin.
-
-To start using your update site, in ImageJ start the updater with {% include bc path='Help | Update'%} and click on the *Manage update sites* button:
+To start using your update site, in ImageJ2, start the [Updater](/plugins/updater) with {% include bc path='Help | Update' %} and click on the {% include button label="Manage update sites" %} button:
 
 <img src="/media/mamed-3.jpg" width="770"/>
 
 ### Specifying your site
 
-Click the *Add update site* button. 
-
+Click the {% include button label="Add update site" %} button. 
 
 <img src="/media/update-sites/add-update-site-1.png" width="770"/>
 
@@ -47,21 +44,21 @@ Optionally, enter a nickname for your site in the **Name** column. In the **URL*
 
 Rather than having a single update site for many plugins, it is highly advised to set up dedicated update sites for each plugin that could be of interest to the community.  
 Such dedicated update site can have a more intuitive name.  
-A given upload account can own several update sites. To request a new update site for your user account, post your request on the forum (see [related post](https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas)), or on the [ImageJ Gitter](https://gitter.im/imagej/imagej).
+A given upload account can own several update sites. To request a new update site for your user account, post your request on the forum (see [related post](https://forum.image.sc/t/distributing-several-update-sites/21219/2)), or on the [ImageJ Gitter](https://gitter.im/imagej/imagej).
 
 ## Group update site
 
-In addition to [personal update sites](/update-sites/setup#add-your-personal-update-site), it is possible for groups of people to share an update site.
+In addition to [hosted update sites](/update-sites/setup#creating-a-hosted-update-site), it is possible for groups of people to share an update site.
 
 To create such an update site, post on the [Image.sc Forum](https://forum.image.sc/tags/imagej), or in the [imagej Gitter channel](https://gitter.im/imagej/imagej), requesting the creation of the site on `sites.imagej.net`, including the desired name of the site, as well as the upload users to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
 ## Adding an update site on your own server
 
-If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc path='Help | Update'%} and click the *Manage update sites* button:
+If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc path='Help | Update'%} and click the {% include button label="Manage update sites" %} button:
 
 <img src="/media/mamed-3.jpg" width="770"/>
 
-Now press the *Add* button, provide a nick name for your update site, the URL of your web space, and *upload information*.
+Now press the {% include button label="Add" %} button, provide a nick name for your update site, the URL of your web space, and *upload information*.
 
 The *upload information* depends on the protocol available for uploading:
 
@@ -101,7 +98,7 @@ First, start the [updater](/plugins/updater):
 
 ![](/media/update-sites/how-to-setup-a-plugin-distribution-site-1.jpg)
 
-Click on the *Manage update sites* button and verify:
+Click on the {% include button label="Manage update sites" %} button and verify:
 
 -   Your update site is present and enabled
 -   The *Host* column of your update site contains your user name, in the form: `webdav:`<UploadUsername>
@@ -114,7 +111,7 @@ Once your login information is set you can *Close* the update site window.
 
 ### Prepare your files for upload
 
-Click on the *Advanced mode* button and set the view options to see your plugins:
+Click on the {% include button label="Advanced mode" %} button and set the view options to see your plugins:
 
 -   If your have never uploaded your plugins, select *View local-only files*
 

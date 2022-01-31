@@ -40,7 +40,7 @@ if not updateService.getUpdateSite("Fiji-Legacy").isActive():
 
 ## Creating your own update site
 
-Anyone can share their extensions ([plugins](/plugins), [scripts](/scripting), etc.) by [creating their own update site](/update-sites/setup). You can use ImageJ2's [personal update site](/update-sites/setup#add-your-personal-update-site) service (hosted on the [ImageJ2 web server](http://sites.imagej.net/)), or host it on your own server.
+Anyone can share their extensions ([plugins](/plugins), [scripts](/scripting), etc.) by [creating their own update site](/update-sites/setup). You can use ImageJ2's [hosted update site](/update-sites/setup#creating-a-hosted-update-site) service, or host it on your own server.
 
 ## Frequently asked questions
 

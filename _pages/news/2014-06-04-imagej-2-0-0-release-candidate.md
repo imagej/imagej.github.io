@@ -13,7 +13,7 @@ The [Fiji](/software/fiji) distribution of ImageJ has bundled ImageJ2 for quite 
 ImageJ2 provides a wealth of new features and capabilities:
 
 -   The ImageJ Updater makes it simple to keep your ImageJ up to date, and to add new plugins by enabling additional [Update Sites](/update-sites).
--   The ImageJ Updater also makes it simple to publish your own tools based on ImageJ, via [Personal Update Sites](/update-sites/setup#add-your-personal-update-site).
+-   The ImageJ Updater also makes it simple to publish your own tools based on ImageJ, via [Personal Update Sites](/update-sites/setup#creating-a-hosted-update-site).
 -   New and enhanced file format support via the SCIFIO library. There is no need to call a special SCIFIO plugin; it works with commands like {% include bc path="File | Open" %} automatically. Additional import options are available via the {% include bc path="File | Import | Image..." %} command. See the [SCIFIO](/libs/scifio) page of the ImageJ wiki for further details. {% include img align="right" src="/media/news/imagej2-options.png" width="270px" %}
 -   New commands:
     -   {% include bc path="Plugins | Debug | Dump Stack" %} for debugging when things {% include wikipedia title='Hang (computing)' text='hang'%}.

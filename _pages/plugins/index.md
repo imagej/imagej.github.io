@@ -28,7 +28,7 @@ The ImageJ [Updater](/plugins/updater) is the best way to install and update plu
 
 ### Installing plugins manually
 
-If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [personal update site](/update-sites/setup#add-your-personal-update-site) as well as additional dedicated update sites (for a particular plugin) hosted on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [hosted update site](/update-sites/setup#creating-a-hosted-update-site) on [sites.imagej.net](http://sites.imagej.net/), to easily share and maintain updated plugins.
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's `plugins` folder:
 

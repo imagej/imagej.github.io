@@ -7,7 +7,7 @@ nav-links: true
 nav-title: Automatic Uploads
 ---
 
-{% include notice icon="info" content='This guide is intended for maintaining non-core update sites by automating builds with [GitHub Actions](https://docs.github.com/en/actions) or [Travis CI](https://travis-ci.org/).
+{% include notice icon="info" content='This guide is intended for maintaining non-core update sites by automating builds with [GitHub Actions](https://docs.github.com/en/actions) or [Travis CI](https://travis-ci.com/).
 - The [core update sites](/update-sites/core-uploads) are updated manually or automatically. Automated update is performed with [GitHub Actions](https://docs.github.com/en/actions) since July 2021, before that [Travis CI](/develop/travis) was used.
 - GitHub Actions and Travis CI are useful because they can freely build any open source project with minimal effort.' %}
 
@@ -15,7 +15,7 @@ nav-title: Automatic Uploads
 ## Requirements
 
 -   An open-source project hosted on [GitHub](/develop/github)
--   An [initialized upload password](/update-sites/setup#add-your-personal-update-sit).
+-   An [initialized upload password](/update-sites/setup#creating-a-hosted-update-site).
 
 ## Additional resources
 
@@ -66,7 +66,7 @@ Don't forget to replace the `WIKI_USER` and `UPDATE_SITE` variables by your info
 
 ### Encrypting your password
 
-To upload to your wiki update site, you will need to provide GitHub Actions with a `UPDATE_PASS` environment variable, which should evaluate to the [upload password](/update-sites/setup#add-your-personal-update-site) of the Wiki account performing the upload. To do so securely, follow the instructions on [creating encrypted secrets for a repository](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
+To upload to your wiki update site, you will need to provide GitHub Actions with a `UPDATE_PASS` environment variable, which should evaluate to the [upload password](/update-sites/setup#creating-a-hosted-update-site) of the Wiki account performing the upload. To do so securely, follow the instructions on [creating encrypted secrets for a repository](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
 ### Non-Mavenized Files
 
@@ -94,9 +94,9 @@ This is also true if you have custom scripts, macros, etc... if these files are 
 ## Requirements
 
 -   An open-source project hosted on [GitHub](/develop/github)
--   Logging in to [Travis CI](https://travis-ci.org/auth) with your corresponding GitHub account
+-   Logging in to [Travis CI](https://travis-ci.com/) with your corresponding GitHub account
 -   [Travis command line tools](https://github.com/travis-ci/travis.rb#installation)
--   An [initialized upload password](/update-sites/setup#add-your-personal-update-sit).
+-   An [initialized upload password](/update-sites/setup#creating-a-hosted-update-site).
 
 ## Additional resources
 
@@ -174,7 +174,7 @@ by your informations.
 
 ### Encrypting your password
 
-To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](/update-sites/setup#add-your-personal-update-site) of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
+To upload to your wiki update site, you will need to provide Travis CI with a `WIKI_UPLOAD_PASS` environment variable, which should evaluate to the [upload password](/update-sites/setup#creating-a-hosted-update-site) of the Wiki account performing the upload. To do so securely, follow the instructions on the [encrypting environment variables](https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key).
 
 Note that when you run:
 
