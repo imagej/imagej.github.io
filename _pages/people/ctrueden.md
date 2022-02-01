@@ -59,7 +59,48 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Immediate priorities
 
-*Last updated: 2021-Dec-28*
+*Last updated: 2022-Feb-01*
+
+1.  Fix `net.imagej:ij` deployment ([imagej/ImageJ#142](https://github.com/imagej/ImageJ/issues/142))
+
+2.  Discern and document the best way to retire obsolete ImageJ update sites (see [imagej/list-of-update-sites#103](https://github.com/imagej/list-of-update-sites/pull/103))
+
+    * Investigate imagejan's question on kephale's PR about backwards compatibility, and decide what to do based on my findings. We need some generally documented mechanism for retiring obsolete update sites in the least disruptive way for users.
+
+3.  Finish revamping status.scijava.org (scijava/status.scijava.org [github-issues branch](https://github.com/scijava/status.scijava.org/tree/github-issues))
+
+4.  Finish fixing javadoc.scijava.org ([scijava/pom-scijava#130](https://github.com/scijava/pom-scijava/issues/130))
+
+5.  Fix failing CI builds
+    * `imagej/pyimagej`
+    * `scijava/jgo`
+    * `imagej/tutorials`
+    * `axtimwalde/mpicbg`
+    * `imagej/imagej-omero`
+    * `imagej/imagej-opencv`
+    * `fiji/H5J_Loader_Plugin`
+    * `fiji/Kappa`
+    * Update CI-related docs on imagej.net
+
+6.  Migrate fiji-builds to WebDAV (with [hinerm](/people/hinerm))
+
+7.  Update all community projects to not use log4j ([scijava/pom-scijava#179](https://github.com/scijava/pom-scijava/issues/179))
+
+8.  Update all community projects to 19.04 JHDF5 ([scijava/pom-scijava#181](https://github.com/scijava/pom-scijava/issues/181))
+
+9.  Get [labkit](/plugins/labkit) into Fiji ([scijava/pom-scijava#183](https://github.com/scijava/pom-scijava/pull/183))
+
+10. Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
+
+11. Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ([scijava/pom-scijava#133](https://github.com/scijava/pom-scijava/issues/133), [scijava/pom-scijava#173](https://github.com/scijava/pom-scijava/issues/173), [scijava/pom-scijava#122](https://github.com/scijava/pom-scijava/issues/122))
+
+12. Finish the mega-melt ([scijava/pom-scijava#146](https://github.com/scijava/pom-scijava/issues/146))
+
+13. Finish reviewing [scijava-ops PRs](https://github.com/scijava/scijava/issues/75)
+
+14. Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox))
+
+### Short-term priorities
 
 1.  \[Winter 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
 2.  \[Winter 2021\] ImageJ and Fiji component updates.
