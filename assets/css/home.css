@@ -9,7 +9,7 @@
 #header img {
   display: block;
   width: auto;
-  height: calc(min(50vh, 55vw) - 13em);
+  height: calc(min(50vh, 40vw) - 13em);
   margin: auto;
   min-height: 100px;
 }
