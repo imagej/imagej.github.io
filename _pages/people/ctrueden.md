@@ -100,7 +100,7 @@ ImageJ2 team to respond to every support request within one work day:
 
 14. Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox))
 
-15. Fix ImageJ 1.x patching ({% include github org='imagej' repo='ij1-patcher' issue=50 %})
+15. Fix ImageJ 1.x patching ({% include github org='imagej' repo='ij1-patcher' issue=50 %}, {% include github org='imagej' repo='ImageJ' issue=149 %})
 
 ### Short-term priorities
 
