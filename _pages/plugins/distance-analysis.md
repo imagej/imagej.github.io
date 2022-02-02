@@ -161,14 +161,14 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
 -   05/09/2017 v1.2: many improvements within the code. update possibility when initializing images in Analyse. macro enable for the labelling part
 -   25/01/2018 v1.3: 8bits bug fixed, add macro features
 -   05/07/2018 v1.4: bugs fixed
--   19/12/2018 v.1.41: bugs fixed
--   21/12/2018 v.1.42: show again info in the log
--   17/01/2019 v.1.43: correct user interface and a bug with 2D images, thanks to Chin-Chun
--   14/05/2019 v.1.44: bugs fixed and compatibility with the last version of 3D Suite.
--   29/10/2019 v.1.45: bugs fixed and maven update. Thanks to N. Chiaruttini
--   24/01/2020 v.1.46: bug fixed, add coloc image in the batch
--   24/02/2020 v.1.47: bug fixed with the shuffle in macro line
+-   19/12/2018 v1.41: bugs fixed
+-   21/12/2018 v1.42: show again info in the log
+-   17/01/2019 v1.43: correct user interface and a bug with 2D images, thanks to Chin-Chun
+-   14/05/2019 v1.44: bugs fixed and compatibility with the last version of 3D Suite.
+-   29/10/2019 v1.45: bugs fixed and maven update. Thanks to N. Chiaruttini
+-   24/01/2020 v1.46: bug fixed, add coloc image in the batch
+-   24/02/2020 v1.47: bug fixed with the shuffle in macro line
 -   28/04/2020 v1.48: add integrated density measure
--   02/02/2022 v.1.49: bugs fixed, add some small options
+-   02/02/2022 v1.49: bugs fixed, add some small options
 
    
