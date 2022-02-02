@@ -138,11 +138,11 @@ if the recorder has a problem, here are some examples of macro line:
 
 ## Installation
 
-Download and copy the following jar in your plugins folder [Diana\_1.48.jar](https://drive.google.com/open?id=1aODVyqRjmU53wEM52lfLM74Yn9GP9PBl)
+Download and copy the following jar in your plugins folder [Diana\_1.49.jar](https://drive.google.com/file/d/1MSeTXcHLEmkxD6m7y1mNhBrIlHUN95S7)
 
 You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](https://mcib3d.frama.io/3d-suite-imagej/).
 
-*Note that this version works only with 3D ImageJ library [mcib3d-core3.94.jar](https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy-) and upper!*
+*Note that this version works only with the 3D ImageJ library [mcib3d-core4.0.1.jar] and upper!*
 
 ## Citation
 
@@ -169,5 +169,6 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
 -   24/01/2020 v.1.46: bug fixed, add coloc image in the batch
 -   24/02/2020 v.1.47: bug fixed with the shuffle in macro line
 -   28/04/2020 v1.48: add integrated density measure
+-   02/02/2022 v.1.49: bugs fixed, add some small options
 
    
