@@ -6,7 +6,7 @@ nav-title: Key Shortcuts
 ---
 
 {% capture text%}
-Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *<u>H</u>essian analysis* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='H' %}.
+Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
@@ -36,15 +36,11 @@ These shortcuts are always available:
 
 These shortcuts are available when running SNT in *Tracing Mode*:
 
--   {% include key key='H' %} - Toggles <u>H</u>essian calculation of Path curvatures.
+-   {% include key key='L' %} - Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image).
 
 <!-- -->
 
--   {% include key key='I' %} - Toggles tracing on filtered <u>I</u>mage.
-
-<!-- -->
-
--   {% include key key='M' %} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background.
+-   {% include key key='V' %} - Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background.
 
 <!-- -->
 
@@ -53,6 +49,14 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 <!-- -->
 
 -   {% include key keys='Alt|Shift' %}-click - Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching).
+
+<!-- -->
+
+-   {% include key keys='Shift|E' %} Activates *Edit Mode* (editing of selected Path).
+
+<!-- -->
+
+-   {% include key keys='Shift|P' %} <u>P</u>auses tracing operations.
 
 ### Navigation and Zoom
 
@@ -108,12 +112,15 @@ These shortcuts are always available:
 
 ### Path Editing
 
-These shortcuts become available in *Edit Mode*, activated through the contextual menu (displayed when right-clicking on a tracing canvas):
+These shortcuts become available in *Edit Mode*, activated through the contextual menu (displayed when right-clicking on a tracing canvas) or by pressing {% include key keys='Shift|E' %}:
 
--   {% include key key='D' %} or {% include key key='Backspace' %} - <u>D</u>eletes the active node.
--   {% include key key='I' %} or {% include key key='Insert' %} - <u>I</u>nserts a new node at cursor position.
--   {% include key key='M' %} - <u>M</u>oves active node to cursor position.
 -   {% include key key='B' %} - <u>B</u>rings active node to current Z-plane.
+-   {% include key key='C' %} - Connects highlighted nodes (see *Connect to Help...* in contextual menu)
+-   {% include key key='D' %} - <u>D</u>eletes the active node.
+-   {% include key key='I' %} - <u>I</u>nserts a new node at cursor position.
+-   {% include key key='L' %} - <u>L</u>ocks active node to prevent accidental editing.
+-   {% include key key='M' %} - <u>M</u>oves active node to cursor position.
+-   {% include key key='X' %} - Split Tree at active node: Re-roots the current reconstruction at the active node.
 
 ### Reconstruction Viewer
 
@@ -126,7 +133,12 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key key='F' %} - <u>F</u>it View to Visible Objects
 -   {% include key key='L' %} - <u>L</u>og Scene Details to Console
 -   {% include key key='R' %} - <u>R</u>eset View
+-   {% include key keys='Shift|R' %} - <u>R</u>eload View
 -   {% include key key='S' %} - Save <u>S</u>creenshot
+
+-   {% include key keys='Shift|F' %} - <u>F</u>ull Screen ({% include key key='Esc' %} to exit)
+-   {% include key keys='Shift|C' %} - Toggle <u>C</u>ontrol Panel
+
 -   {% include key key='H' %} - <u>H</u>elp (as Notification) ({% include key key='F1' %} shows Help on a dedicated window)
 
 ### SciView
@@ -138,7 +150,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 -   {% include key keys='Shift|Mouse Wheel' %} - Zoom
 -   {% include key key='W' %} {% include key key='A' %} {% include key key='S' %} {% include key key='D' %} - Move around (hold {% include key key='Shift' %} for slow movement)
 
-See [SciView](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full list of shortcuts.
+See [sciview](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full list of shortcuts.
 
 ### Legacy 3D Viewer
 
