@@ -5,7 +5,9 @@
 - **Location:** {{include.location}}
 - **Dates:** {{include.dates}}
 
+{% if include.link -%}
 See the [{{include.title}} website]({{include.link}}) for details!
+{%- endif -%}
 
 {%- comment -%}
 # vi:syntax=liquid

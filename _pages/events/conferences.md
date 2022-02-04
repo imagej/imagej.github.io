@@ -10,21 +10,22 @@ ImageJ and Friends* (I2K) conference.
 
 ### Future conferences
 
+If you have any questions or if you are interested in hosting a future conference focused on scientific imaging software, please start a thread on the [Image.sc Forum](https://forum.image.sc/).
+
 #### I2K 2022
 
-The [Center for Open Bioimage Analysis (COBA)](/orgs/coba) at Broad Institute and [LOCI UW-Madison](/orgs/loci), as well as the [Fiji](/software/fiji) development team at [Max Planck Institute of Molecular Cell Biology and Genetics](/orgs/mpi-cbg) in Dresden, is pleased to formally announce the 2022 "From Images to Knowledge with ImageJ & Friends (I2K)" Symposium.
+The [Center for Open Bioimage Analysis (COBA)](/orgs/coba) at Broad Institute and [LOCI UW-Madison](/orgs/loci), as well as the [Fiji](/software/fiji) development team at [Max Planck Institute of Molecular Cell Biology and Genetics](/orgs/mpi-cbg) in Dresden, is pleased to formally announce the 2022 "Images to Knowledge (I2K)" Symposium.
 
 -   Date: 6, 9 and 10 May 2022
 -   Location: Online
--   Registration: TBD
 
-If you have any questions or if you are interested in hosting a future conference focused on scientific imaging software, please start a thread on the [Image.sc Forum](https://forum.image.sc/).
+Check the [I2K 2022 conference page](/events/i2k-2022) for further details.
 
 ### Past conferences
 
 | **\#** | **Conference**                                                                                             | **Dates**             | **Location**                                                                       |
 |--------|------------------------------------------------------------------------------------------------------------|-----------------------|------------------------------------------------------------------------------------|
-| 7      | [From Images to Knowledge with ImageJ & Friends](https://www.janelia.org/you-janelia/conferences/from-images-to-knowledge-with-imagej-friends) | 30 November - 2 December 2020 | Fully virtual/online |
+| 7      | [From Images to Knowledge with ImageJ & Friends](/events/i2k-2020) | 30 November - 2 December 2020 | Fully virtual/online |
 | 6      | [From Images to Knowledge with ImageJ & Friends](/events/i2k-2018)                                      | 6 - 8 December 2018   | [EMBL](https://www.embl.de/), Heidelberg, Germany                                  |
 | \-     | [NEUBIAS 2020, Oeiras-Lisbon 2017](http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/) | 15 - 17 February 2017 | Lisbon, Portugal                                                                   |
 | 5      | [ImageJ User and Developer Conference 2015](/events/conference-2015)                                    | 3 - 4 September 2015  | [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), Madison, WI, USA |
