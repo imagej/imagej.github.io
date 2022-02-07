@@ -2,24 +2,26 @@
 title: BioVoxxel 3D Box
 icon: https://biovoxxel.github.io/bv3dbox/images/bv3dbox-logo.png
 categories: [Particle Analysis, Segmentation]
-pom-url: https://raw.githubusercontent.com/biovoxxel/BioVoxxel-Toolbox/master/Biovoxxel_Plugins/pom.xml
+pom-url: https://github.com/biovoxxel/bv3dbox/blob/main/BioVoxxel_3D_Box/pom.xml
 ---
 
-
 # BioVoxxel 3D Box (bv3dbox)
-
-**REMARK: This is currently still in alpha release stage and should be handled with care when creating results. Please inform me about any [issues](https://github.com/biovoxxel/bv3dbox/issues) you encounter!**
 
 Most of the known [BioVoxxel Toolbox](https://github.com/biovoxxel/BioVoxxel-Toolbox) functions now for 2D and 3D images in one place. All functions are heavily based on GPU computing via the fabulous [CLIJ2 library](https://clij.github.io/). Segmentation output is based stronger on labels (intensity coding of objects) instead of ROIs. Those labels can be equivalently used like ROIs with many CLIJ2 functions. Also label images created via other tools such as [MorphoLibJ](https://imagej.net/plugins/morpholibj) are suitable inputs for any plugin using labels.
 
 ![image](https://user-images.githubusercontent.com/10721817/152758424-ec724aa7-7202-4047-a530-8420b87f38c9.png)
 
+---
 
 ## Functionalities and Details
-All functions are described in detail here: [BioVoxxel 3D Box Github page](https://biovoxxel.github.io/bv3dbox/)
+**All functions are described in detail here: [BioVoxxel 3D Box Github page](https://biovoxxel.github.io/bv3dbox/)**
+
+---
 
 ## Installation
-The BioVoxxel 3D Box are distributed via the BioVoxxel 3D Box (bv3dbox) update site
+The BioVoxxel 3D Box are distributed via the [BioVoxxel 3D Box (bv3dbox) update site](https://imagej.github.io/list-of-update-sites/)
+
+---
 
 ### Dependencies (ImageJ update sites)
 The following update sites need to be minimally active to be able to use all functionalities of the BioVoxxel 3D Box
@@ -30,19 +32,22 @@ The following update sites need to be minimally active to be able to use all fun
 
 ---
 
-## Citation
+### Citation
 If you use this library and its functions to generate and publish results, please condider to acknowledge and cite the toolbox using the DOI.
 
 [![DOI](https://zenodo.org/badge/434949702.svg)](https://zenodo.org/badge/latestdoi/434949702)
 
 ---
 
-## Issues
+### Issues
+
+**REMARK: This is currently still in alpha release stage and should be handled with care when creating results. Please inform me about any [issues](https://github.com/biovoxxel/bv3dbox/issues) you encounter!**
+
 [https://github.com/biovoxxel/bv3dbox/issues](https://github.com/biovoxxel/bv3dbox/issues)
 
 ---
 
-## Acknowledgement
+### Acknowledgement
 The BioVoxxel 3D Box funtions are heavily based and rely strongly on the CLIJ library family.
 Therefore, this development would have not been possible without the work of Robert Haase and colleagues.
 
