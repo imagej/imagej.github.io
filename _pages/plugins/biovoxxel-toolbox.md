@@ -462,12 +462,9 @@ Future: Will be implemented for stacks as well.
 
 ------------------------------------------------------------------------
 
-All BioVoxxel Macros were developed by {% include person id='biovoxxel' %}
+# License
+The BioVoxxel Toolbox project runs under the [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause)
 
-The toolbox can be freely used, redistributed and changed according to the BSD-3 License.
+# Citation
 
-For questions, comments and suggestions please contact: mailto:jan.brocher@biovoxxel.de
-
-There is NO WARRANTY of functionality for those macros.
-
-In no event neither {% include person id='biovoxxel' %} nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.
+[![DOI](https://zenodo.org/badge/240048156.svg)](https://zenodo.org/badge/latestdoi/240048156)
