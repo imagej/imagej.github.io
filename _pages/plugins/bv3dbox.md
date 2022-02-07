@@ -1,8 +1,18 @@
 ---
 title: BioVoxxel 3D Box
+name: Jan Brocher
+affiliation: BioVoxxel
+forum: biovoxxel
+forum-tag: bv3dbox
+github: biovoxxel
+website: https://www.biovoxxel.de
 icon: https://biovoxxel.github.io/bv3dbox/images/bv3dbox-logo.png
 categories: [Particle Analysis, Segmentation]
-pom-url: https://github.com/biovoxxel/bv3dbox/blob/main/BioVoxxel_3D_Box/pom.xml
+release-url: https://github.com/biovoxxel/bv3dbox/releases
+dev-status: Active
+support-status: Active
+license-url: https://github.com/biovoxxel/bv3dbox/blob/main/LICENSE
+
 ---
 
 # BioVoxxel 3D Box (bv3dbox)
