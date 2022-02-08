@@ -290,6 +290,17 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 
 -   [Find maxima detector](/plugins/trackmate/find-maxima-detector) from Thorsten Wagner.
 
+### Interoperability with Python.
+
+There are several Python tools contributed by the TrackMate developer community that allows importing TrackMate results in Python and performing track analysis with the libraries of this language. Among them:
+
+- `NapaTrackMatter` [https://github.com/kapoorlab/NapaTrackMater](https://github.com/kapoorlab/NapaTrackMater) by Varun Kapoor, a bridge from TrackMate to Napari.
+- `pytrackmate` [https://github.com/hadim/pytrackmate](https://github.com/hadim/pytrackmate) by {% include person id='hadim' %}, a Python function that imports TrackMate files in Pandas data frames.
+- `Single-molecule-tracking-python` [https://github.com/Colorado-State-University-Stasevich-Lab/single-molecule-tracking-python](https://github.com/Colorado-State-University-Stasevich-Lab/single-molecule-tracking-python) by the Stasevich lab (Colorado State University), a series of functions in Python to perform single-molecule analysis based on TrackMate results.
+- `pyTrackMateXML`[https://github.com/rharkes/pyTrackMateXML](https://github.com/rharkes/pyTrackMateXML) by Rolf Harkes, a Python function to follow intensity traces based on TrackMate tracking results.
+
+Please contact their respective authors directly for support.
+
 ## Who uses TrackMate
 
 It turns out that TrackMate has a decent user base, as exemplified by a crude search on [Google Scholar](https://scholar.google.fr/scholar?q=trackmate+fiji). These citations accumulated before the TrackMate paper was out.
