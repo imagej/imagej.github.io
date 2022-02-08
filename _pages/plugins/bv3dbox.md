@@ -8,10 +8,11 @@ github: biovoxxel
 website: https://www.biovoxxel.de
 icon: https://biovoxxel.github.io/bv3dbox/images/bv3dbox-logo.png
 categories: [Particle Analysis, Segmentation]
-release-url: https://github.com/biovoxxel/bv3dbox/releases
+release-url: https://github.com/biovoxxel/bv3dbox/releases/tag/v1.0.1a
 dev-status: Active
 support-status: Active
 license-url: https://github.com/biovoxxel/bv3dbox/blob/main/LICENSE
+license-label: BSD-3
 
 ---
 
