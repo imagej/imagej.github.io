@@ -41,9 +41,8 @@ See the respective widget sections for a preview of the styles.
 | **Data type**                   | **Widget type**                          | **Available styles**                           |
 |---------------------------------|------------------------------------------|------------------------------------------------|
 | `boolean` `Boolean`             | checkbox                                 |                                                |
-| `byte` `short` `int` `long`     | numeric field                            | `slider` `spinner` `scroll bar`                |
-| `Byte` `Short` `Integer` `Long` | numeric field                            | `slider` `spinner` `scroll bar`                |
-| `Float`                         | numeric field                            | `slider` `spinner` `scroll bar`                |
+| `byte` `Byte` `short` `Short` `int` `Integer` `long` `Long` | numeric field | `slider` `spinner` `scroll bar` |
+| `Float` `Double`                | numeric field                            | `slider` `spinner` `scroll bar`                |
 | `BigInteger` `BigDecimal`       | numeric field                            | `slider` `spinner` `scroll bar`                |
 | `char` `Character` `String`     | text field                               | `text field` `text area` `password`            |
 | `Dataset` `ImagePlus`           | (&gt;=2 images) triggers a dropdown list |                                                |
