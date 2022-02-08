@@ -7,8 +7,8 @@ project: /software/fiji
 section: Detectors with segmentation capabilities.
 extensions: ["mathjax"]
 ---
-Starting with version 7.0.0, [TrackMate](/plugins/trackmate/index) offers the possibility to segment objects, and store, display and quantify their shape. We used this new API to build simple detectors that can produce objects from a *label image*, a *mask* or a *grayscale image with a threshold*. But we also  looked to integrate the state-of-the-art segmentation algorithms shipped with Fiji that do so. So we integrated the *ilastik*, *MorphoLibJ*, *StarDist* and *Weka* plugins as detectors in TrackMate.
-This page lists the seven detectors that have been introduced by this version, and links to their documentation and installation procedure.
+Starting with version 7.0.0, [TrackMate](/plugins/trackmate/index) offers the possibility to segment objects, and store, display and quantify their shape. We used this new API to build simple detectors that can produce objects from a *label image*, a *mask* or a *grayscale image with a threshold*. But we also  looked to integrate the state-of-the-art segmentation algorithms shipped with Fiji that do so. So we integrated the *ilastik*, *MorphoLibJ*, *StarDist*, *cellpose* and *Weka* plugins as detectors in TrackMate.
+This page lists the eight detectors that have been introduced by this version, and links to their documentation and installation procedure.
 
 
 ## Detectors with segmentation capabilities.
