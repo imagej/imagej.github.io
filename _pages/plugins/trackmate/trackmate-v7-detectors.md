@@ -49,6 +49,10 @@ The detector installation procedure and its documentation can be found here: [tr
 This detector is also not part of the core Fiji distribution. You need to have StarDist installed and running in your Fiji installation. This involves subscribing to the `CSBDeep` update site and the `StarDist` update site. And also to the `TrackMate-StarDist` update site.
 The detector installation procedure and its documentation can be found here: [trackmate-stardist](/plugins/trackmate/trackmate-stardist)
 
+### TrackMate-Cellpose.
+
+The integration of [cellpose](https://cellpose.readthedocs.io/en/latest/) in TrackMate is an example of a different type of integration, where we call a Python program from a Java program as a sub-process, and exchange data via files. To use cellpose with TrackMate you will need to have a working installation of cellpose on your computer, and subscribe to the `TrackMate-Cellpose` update site. 
+Detailed installation procedures, documentation and tutorials can be found here: [trackmate-cellpose](/plugins/trackmate/trackmate-cellpose).
 
 ### TrackMate-Weka.
 
