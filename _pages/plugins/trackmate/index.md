@@ -233,7 +233,15 @@ Again, it compiles several tutorials and developer documentation also linked bel
 -   [TrackScheme](/plugins/trackmate/trackscheme): the tool for the visualization, editing and analysis of tracks.
 -   [Manual tracking with TrackMate](/plugins/trackmate/manual-tracking)
 -   [Manual editing of tracks using TrackMate](/plugins/trackmate/manual-track-editing) shows how to manually curate and edit tracking results.
--   [TrackMate v7 new algorithms](/plugins/trackmate/trackmate-v7-detectors) documents the 7 new detectors introduced with version 7, and the new shape analysis framework.
+-   [TrackMate v7 new algorithms](/plugins/trackmate/trackmate-v7-detectors) documents the 8 new detectors introduced with version 7, and the new shape analysis framework. Individual documentation pages:
+	- Mask detector:  [trackmate-mask-detector](/plugins/trackmate/trackmate-mask-detector)
+	- Thresholding detector: [trackmate-thresholding-detector](/plugins/trackmate/trackmate-thresholding-detector)
+	- Label image detector: [trackmate-label-image-detector](/plugins/trackmate/trackmate-label-image-detector)
+	- TrackMate-Ilastik: [trackmate-ilastik](/plugins/trackmate/trackmate-ilastik).
+	- TrackMate-MorphoLibJ: [trackmate-morpholibj](/plugins/trackmate/trackmate-morpholibj)
+	- TrackMate-StarDist: [trackmate-stardist](/plugins/trackmate/trackmate-stardist)
+	- TrackMate-Cellpose: [trackmate-cellpose](/plugins/trackmate/trackmate-cellpose)
+	- TrackMate-Weka: [trackmate-weka](/plugins/trackmate/trackmate-weka)   
 -   [TrackMate Algorithms](/plugins/trackmate/algorithms) details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate.
 -   [Using TrackMate with MATLAB](/plugins/trackmate/analyzing-results-with-matlab) documents the [MATLAB](/scripting/matlab) functions shipped with Fiji that allows importing data generated with TrackMate into [MATLAB](/scripting/matlab).
 -   [TrackMate Performance](/plugins/trackmate/performance) reports various measures of the performance of its components. Performance reports include execution time and memory usage.
