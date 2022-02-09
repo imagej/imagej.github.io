@@ -59,17 +59,23 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Immediate priorities
 
-*Last updated: 2022-Feb-01*
+*Last updated: 2022-Feb-09*
 
 1.  Fix `net.imagej:ij` deployment ({% include github org='imagej' repo='ImageJ' issue=142 %})
 
-2.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %})
+2.  New pom-scijava release
+    -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
+    -   Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
+    -   Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
+    -   Finish fixing javadoc.scijava.org ({% include github org='scijava' repo='pom-scijava' issue=130 %})
 
 3.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' %})
 
-4.  Finish fixing javadoc.scijava.org ({% include github org='scijava' repo='pom-scijava' issue=130 %})
+4.  Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
 
-5.  Fix failing CI builds
+5.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %})
+
+6.  Fix failing CI builds
     * `imagej/pyimagej`
     * `scijava/jgo`
     * `imagej/tutorials`
@@ -80,27 +86,21 @@ ImageJ2 team to respond to every support request within one work day:
     * `fiji/Kappa`
     * Update CI-related docs on imagej.net
 
-6.  Migrate fiji-builds to WebDAV (with [hinerm](/people/hinerm))
+7.  Migrate fiji-builds to WebDAV (with [hinerm](/people/hinerm))
 
-7.  Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
+8.  Work on using PyImageJ from inside Java, and respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail
 
-8.  Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
-
-9.  Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
-
-10. Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
-
-11. Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %})
+9. Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %})
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
 
-12. Finish the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %})
+10. Finish the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %})
 
-13. Finish reviewing {% include github org='scijava' repo='scijava' issue=75 label='scijava-ops PRs' %}
+11. Finish reviewing {% include github org='scijava' repo='scijava' issue=75 label='scijava-ops PRs' %}
 
-14. Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox))
+12. Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox))
 
-15. Fix ImageJ 1.x patching ({% include github org='imagej' repo='ij1-patcher' issue=50 %}, {% include github org='imagej' repo='ImageJ' issue=149 %})
+13. Fix ImageJ 1.x patching ({% include github org='imagej' repo='ij1-patcher' issue=50 %}, {% include github org='imagej' repo='ImageJ' issue=149 %})
 
 ### Short-term priorities
 
