@@ -1,14 +1,16 @@
-title: TrackMate Helper
+---
+title: TrackMate-Helper
 categories: [Segmentation,Tracking,Benchmark]
 logo: /media/logos/trackmate-300p.png
 description: Userf-friendly parameter sweep with TrackMate with automatic benchmarks.
 artifact: sc.fiji:TrackMate
+---
 
 # The TrackMate helper
 
 ## Introduction
 
-The TrackMate helper tool is a tool that can sweep over an extensive range of user-defined tracking parameters, including detectors and tracking algorithms, to define the best possible combination of tracking parameters for your tracking task. The output of parameters is compared with ground truth tracks of the same dataset. The calculated metrics are based on the Cell Tracking Challenge, which aims to develop an objective evaluation for cell segmentation and tracking algorithms. More information about the CTC is available on their [<span class="underline">website</span>](http://celltrackingchallenge.net/).
+The TrackMate helper tool is a tool that can sweep over an extensive range of user-defined tracking parameters, including detectors and tracking algorithms, to define the best possible combination of tracking parameters for your tracking task. The output of parameters is compared with ground truth tracks of the same dataset. The calculated metrics are based on the Cell Tracking Challenge, which aims to develop an objective evaluation for cell segmentation and tracking algorithms. More information about the CTC is available on their [website](http://celltrackingchallenge.net/).
 
 If you are using this TrackMate module in your work, remember to cite the paper describing the Cell Tracking Challenge:
 
@@ -16,52 +18,52 @@ If you are using this TrackMate module in your work, remember to cite the paper 
 
 ## Requirements
 
-To use the TrackMate helper, you need to provide manually annotated ground truth tracks of your dataset exported in the CTC format. For more information on how to manually track your data using TrackMate see [<span class="underline">here</span>](#fbznopvvgtgy). To export tracks in the CTC format see [<span class="underline">here</span>](#kldt9fa1h6pu).
+To use the TrackMate helper, you need to provide manually annotated ground truth tracks of your dataset exported in the CTC format. For more information on how to manually track your data using TrackMate see [here](/plugins/trackmate). To export tracks in the CTC format see [here](/plugins/trackmate/actions/trackmate-ctc-exporter).
 
 ## Installation
 
 To use the Trackmate helper, you must subscribe to the *CellTrackingChallenge* and *TrackMate-CellTrackingChallenge* Fiji update sites:
 
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-01.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-01.png" 
 align="center"
 width='600'  %}
 ...
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-02.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-02.png" 
 align="center"
 width='600'  %}
+
 ## Running the parameter sweep
 
 -   Before launching the parameter sweep, please open the source image you would like to run the tracking and metrics on.
 
-
 -   Start the plugin: *Plugins \> Tracking \> TrackMate Cell-Tracking Challenge helper*
 
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-03.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-03.png" 
 align="center"
-width='600'  %}
+width='400'  %}
 
 -   It will ask you where the ground-truth corresponding to the source image is. It should be a path like: */Users/jpylvana/.../02_GT*
 
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-04.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-04.png" 
 align="center"
-width='600'  %}
+width='400'  %}
 
 -   Click **Ok**
 
 -   The parameter sweep UI will open with several options:
 
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-05.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-05.png" 
 align="center"
-width='600'  %}
+width='800'  %}
 
 1.  In the UI you will see the name of the source image and the path to the used ground truth data.
 
-2.  Start by selecting the detectors you want to assess from the detector and trackers list. For each detector and tracker, a new tab will appear on the lower part of the UI. In this example, for detection, we will assess the Stardist (pre-trained model) and the threshold detectors and for tracking, we will try the LAP and the Kalman Tracker.
+2.  Start by selecting the detectors you want to assess from the detector and trackers list. For each detector and tracker, a new tab will appear on the lower part of the UI. In this example, for detection, we will assess the StarDist (pre-trained model) and the threshold detectors and for tracking, we will try the LAP and the Kalman Tracker.
 
 3.  Select the parameters for your chosen detector and tracker. Here in our example, the page for the Threshold detector parameters is active. Here you can define one or a range of threshold values for testing. If you select a range, enter the starting and the ending threshold values and how many steps you want to test. The threshold values to be tested will be visible below. Here you can also select to Simplify the contours for segmentation if preferred. All the other detector and parameter settings work similarly.
 
@@ -83,17 +85,15 @@ When the TrackMate-Helper generates tracking results with some instances of the 
 
 The CTC metrics are saved in CSV files in the parent directory of the ground-truth folder. There will be one CSV file per detector and tracker combination:
 
-
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-06.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-06.png" 
 align="center"
-width='600'  %}
+width='400'  %}
 
 In each CSV file, there is one row per parameter set. The first columns store the CTC metrics and the subsequent one store the tracking parameters that generated these metrics:
 
-
 {% include img 
-src="/media/plugins/trackmate/trackmate-helper-07.png" 
+src="/media/plugins/trackmate/extensions/trackmate-helper-07.png" 
 align="center"
 width='600'  %}
 
@@ -101,17 +101,17 @@ These CSV files are parsed and processed automatically by the Helper. The parame
 
 1.  Best detector and tracker: Here, you can see the best combination of detector and tracker for each measured metric. To know the detector settings, hover your mouse over the detector/name, and the parameter will appear. For example, in the first line, the best detector and tracker for the segmentation accuracy (SEG) would be [<span class="underline">the</span> <span class="underline">Stardist</span> <span class="underline">detector</span>](#kix.70d7wv3jsui7) and the LAP tracker. The numerical value for SEG can be found in the Value column. The values are presented in the Viridis lookup table for quick visualization.
 
-{% include img 
-src="/media/plugins/trackmate/trackmate-helper-08.png" 
-align="center"
-width='600'  %}
+    {% include img 
+    src="/media/plugins/trackmate/extensions/trackmate-helper-08.png" 
+    align="center"
+    width='800'  %}
 
 2.  Best values: Here, you can find the best value you can get for a detector and tracker combination according to a specific CTC metric. The values are presented in the Viridis lookup table for quick visualization. The CTC metric to optimize can be changed from the pulldown menu above the values. If you pick "DET" in this menu, the table will show you what is the best parameters that maximize the "DET" score for each combination of detector and tracker tested. This is helpful to compare the performance of detectors and trackers among them. For instance, the row in this table with STARDIST_DETECTOR and KALMAN_TRACKER lists the settings that give the best "DET" value over all the parameters tested with this combination. If you need to optimize the "DET" value, this is the best you can get with this detector and tracker. The lines with only a detector, or respectively only a tracker (a blank in the other column), give the optimum over all possible combinations with any tracker, respectively any detector.
 
-{% include img 
-src="/media/plugins/trackmate/trackmate-helper-09.png" 
-align="center"
-width='600'  %}
+    {% include img 
+    src="/media/plugins/trackmate/extensions/trackmate-helper-09.png" 
+    align="center"
+    width='800'  %}
 
 3.  Report: In the report tab, you can find the details of parameters and configurations for each measured metric. For example,
 
@@ -125,21 +125,13 @@ width='600'  %}
 
 ## The CTC Metrics.
 
-------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------
-  Segmentation accuracy measure (SEG)   Evaluates the average amount of overlap between the segmentation and the ground truth.                                                                   0-1 (1 is best)
-
-  The tracking accuracy measure (TRA)   Normalized weighted distance between the tracking solution selected by the user and the reference tracking ground truth.                                 0-1 (1 is best)
-
-  The detection accuracy (DET)          Detection metric: Evaluate the effort required to manually correct a tracking result so that it matches the ground-truth.                                0-1 (1 is best)
-
-  Complete tracks (CT)                  Measures the fraction of ground truth cell tracks that a given method is able to reconstruct from the frame they appear into the frame they disappear.   0-1 (1 is best)
-
-  Track fractions (TF)                  Averages the fractions of the longest continuously matching algorithm-generated track with respect to the reference track.                               0-1 (1 is best)
-
-  Cell cycle accuracy (CCA)             Measures how accurately an algorithm reconstructs the length of the cell cycle.                                                                          0-1 (1 is best)
-
-  Branching correctness (BC)            Measures how efficient a selected tracking method is at detecting division events.                                                                       0-1 (1 is best)
-
-  Execution time (TIM)                  Time of algorithm execution                                                                                                                              seconds
-
-------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------
+| Metric                                  | Signification                                                | Range                     |
+| --------------------------------------- | ------------------------------------------------------------ | ------------------------- |
+| Segmentation accuracy measure (**SEG**) | Evaluates the average amount of overlap between the segmentation and the ground truth. | 0-1 (1 is best)           |
+| The tracking accuracy measure (**TRA**) | Normalized weighted distance between the tracking solution selected by the user and the reference   tracking ground truth. | 0-1 (1 is best)           |
+| The detection accuracy (**DET**)        | Detection metric: Evaluate   the effort required to manually correct a tracking result so that it matches   the ground-truth. | 0-1 (1 is best)           |
+| Complete tracks (**CT**)                | Measures the fraction of   ground truth cell tracks that a given method is able to reconstruct from the   frame they appear into the frame they disappear. | 0-1 (1 is best)           |
+| Track fractions (**TF**)                | Averages the fractions of   the longest continuously matching algorithm-generated track with respect to   the reference track. | 0-1 (1 is best)           |
+| Cell cycle accuracy (**CCA**)           | Measures how accurately an algorithm reconstructs the length of the cell cycle. | 0-1 (1 is best)           |
+| Branching correctness (**BC**)          | Measures how efficient a selected tracking method is at detecting division events. | 0-1 (1 is best)           |
+| Execution time (**TIM**)                | Time of algorithm execution.                                 | Seconds. Lower is better. |
