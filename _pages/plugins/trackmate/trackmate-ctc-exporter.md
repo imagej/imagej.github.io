@@ -18,7 +18,7 @@ TrackMate now allows users to export their tracking session into the CTC format 
 -   In the action panel, select **Export to CTC format** and click **Execute**.
 
 {% include img 
-src="/media/plugins/trackmate/actions/trackmate-ctc-exporter-01.png" 
+src="/media/plugins/trackmate/trackmate-ctc-exporter-01.png" 
 align="center"
 width='400'  %}
 
@@ -45,7 +45,7 @@ width='800'  %}
     -   Reference tracking annotations consist of cell markers interlinked between frames to form cell lineage trees. These are used to evaluate the detection and tracking performance of competing methods.
 
 {% include img 
-src="/media/plugins/trackmate/actions/trackmate-ctc-exporter-03.png" 
+src="/media/plugins/trackmate/trackmate-ctc-exporter-03.png" 
 align="center"
 width='800'  %}
 
