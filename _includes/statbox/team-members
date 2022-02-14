@@ -21,6 +21,9 @@ This is a helper include used by the statbox include.
 {%- assign name = tokens[0] | strip -%}
 {%- assign link = tokens[1] | strip -%}
         <li><a class="person" href="{{link}}" title="{{name}}">{{name}}</a></li>
+{%- elsif member | contains "@" -%}
+{%- assign id = member | strip | remove: "@" -%}
+        <li>{%- include person id=id -%}</li>
 {%- else -%}
         <li><span class="person">{{member}}</span></li>
 {%- endif -%}
