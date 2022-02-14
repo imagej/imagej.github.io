@@ -2,7 +2,9 @@
 title: CellProfiler
 name: CellProfiler
 section: Explore:Software:More...
-affiliation: CellProfiler
+affiliation: Broad Institute of MIT and Harvard
+release-url: https://cellprofiler.org/releases
+release-version: 4.2.1
 website: https://cellprofiler.org
 icon: /media/icons/cellprofiler.png
 dev-status: Active
