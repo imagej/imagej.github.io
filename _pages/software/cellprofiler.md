@@ -27,6 +27,16 @@ doi:
 {% endcapture %}
 CellProfiler is free open-source software designed to enable biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically.
 
+## Using CellProfiler
+
+All CellProfiler documentation is on the [CellProfiler website](https://cellprofiler.org). We recommend the [Getting Started](https://cellprofiler.org/getting-started) section for new users.
+
+Also of note:
+* [Video Tutorials](https://cellprofiler.org/tutorials)
+* [Version-specific Manuals](https://cellprofiler.org/manuals)
+* [Examples](https://cellprofiler.org/examples)
+* Support on the [Image.sc forum](https://forum.image.sc/tag/cellprofiler)
+
 ## Publications
 
 {% include citation %}
