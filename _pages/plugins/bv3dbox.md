@@ -3,7 +3,7 @@ title: BioVoxxel 3D Box
 name: Jan Brocher
 affiliation: BioVoxxel
 forum: biovoxxel
-github: @biovoxxel
+github: biovoxxel
 website: https://www.biovoxxel.de
 icon: https://biovoxxel.github.io/bv3dbox/images/bv3dbox-logo.png
 categories: [Particle Analysis, Segmentation]
