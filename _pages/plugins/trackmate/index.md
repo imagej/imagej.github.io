@@ -252,6 +252,7 @@ Again, it compiles several tutorials and developer documentation also linked bel
 ### For developers
 
 -   [Scripting TrackMate](/plugins/trackmate/scripting) shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](/scripting/script-editor). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
+-   In scripts, all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionnary for each detector and tracker, and the type of values they accept. All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/trackmate-detectors-trackers-keys).
 -   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab) shows how to use [MATLAB](/scripting/matlab) as a scripting language for TrackMate, and benefit from [MATLAB](/scripting/matlab) facilities.
 
 But the really interesting part for developers is the ability to extend TrackMate.

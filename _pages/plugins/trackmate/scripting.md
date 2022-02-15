@@ -18,11 +18,16 @@ Since we are calling the internals of TrackMate, we must get to know a bit of it
 
 -   Settings ([`fiji.plugin.trackmate.Settings`](https://fiji.sc/javadoc/fiji/plugin/trackmate/Settings.html)) is the class storing the fields that will configure TrackMate and pilot how the data is created. This is where you specify what is the source image, what are the detector and tracking algorithms to use, what are the filters to use, etc...
 
+IMPORTANT! You will see in the example below that all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionnary for each detector and tracker, and the type of values they accept. 
+
+All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/trackmate-detectors-trackers-keys).
+
 <!-- -->
 
 -   TrackMate (\[https://fiji.sc/javadoc/fiji/plugin/trackmate/plugins/trackmate.html>`fiji.plugin.trackmate.TrackMate`\]) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.
 
 So getting a working script is all about configuring a proper `Settings` object and calling `exec*` methods on a `TrackMate` object. Then we read the results in the `Model` object.
+
 
 ## A full example
 
