@@ -2,7 +2,7 @@
 title: CellProfiler
 name: CellProfiler
 section: Explore:Software:More...
-affiliation: Broad Institute of MIT and Harvard
+affiliation: Broad Institute of MIT and Harvard | https://www.broadinstitute.org/
 release-url: https://cellprofiler.org/releases
 release-version: 4.2.1
 website: https://cellprofiler.org
