@@ -36,6 +36,10 @@ Also of note:
 * [Examples](https://cellprofiler.org/examples)
 * Support on the [Image.sc forum](https://forum.image.sc/tag/cellprofiler)
 
+### Combining ImageJ and CellProfiler
+
+See [RunImageJScript](/plugins/runimagejscript).
+
 ## Publications
 
 {% include citation %}
