@@ -3,6 +3,8 @@ title: PyImageJ
 project: /software/imagej2
 website: https://pypi.org/project/pyimagej/
 source-url: https://github.com/imagej/pyimagej
+dev-status: Active
+team-developers: '@ctrueden, @hinerm, @elevans'
 doi: 10.5281/zenodo.5537065
 ---
 
