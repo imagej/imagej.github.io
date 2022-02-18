@@ -12,7 +12,6 @@ support-status: Active
 license-url: https://github.com/CellProfiler/examples/blob/master/LICENSE
 license-label: BSD-3
 source-url: https://github.com/cellprofiler/cellprofiler
-source-label: on GitHub
 forum-tag: cellprofiler
 team-founders: Broad Institute | https://broadinstitute.org
 team-maintainers: '@bcimini, @alucas'
