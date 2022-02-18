@@ -15,6 +15,10 @@ The sidebar supports quite a few fields; see [this comment](https://github.com/i
 
 Several URL-type stats have multiple related keys (e.g. `release-url` and `release-version`). This is to give you control over displayed text in the limited space of the Vital Statistics box. Note that entering a URL alone is typically insufficient to display: you must also enter a corresponding label.
 
+#### Source URLs
+
+The `source-url` key is an exception and does not require a corresponding label. Appropriate text will be auto-generated based on the URL domain.
+
 ### Keys with Special Values
 
 All statbox front matter supports plain-text `key:value` pairs, but several key types have additional value parsing options.
