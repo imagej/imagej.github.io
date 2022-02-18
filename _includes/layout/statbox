@@ -143,13 +143,13 @@ the javascript only populates fields when they are empty.
 {%- if autopop or source-url -%}
   {%- unless source-label -%}
     {%- capture source-label -%}
-      {%- if    {{source-url | truncate: 19}} == 'https://github.com/'      -%} on GitHub
-      {%- elsif {{source-url | truncate: 19}} == 'https://gitlab.com/'      -%} on GitLab
-      {%- elsif {{source-url | truncate: 22}} == 'https://bitbucket.org/'   -%} on BitBucket
-      {%- elsif {{source-url | truncate: 24}} == 'https://sourceforge.net/' -%} on SourceForge
-      {%- elsif {{source-url | truncate: 19}} == 'https://repo.or.cz/'      -%} on repo.or.cz
-      {%- elsif {{source-url}}                                              -%} online
-      {%- else                                                              -%} none
+      {%- if    source-url contains 'github.com/'      -%} on GitHub
+      {%- elsif source-url contains 'gitlab.com/'      -%} on GitLab
+      {%- elsif source-url contains 'bitbucket.org/'   -%} on BitBucket
+      {%- elsif source-url contains 'sourceforge.net/' -%} on SourceForge
+      {%- elsif source-url contains 'repo.or.cz/'      -%} on repo.or.cz
+      {%- elsif source-url                             -%} online
+      {%- else                                         -%} none
       {%- endif -%}
     {%- endcapture -%}
   {%- endunless -%}
