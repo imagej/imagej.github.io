@@ -40,44 +40,22 @@ Backward compatibility is one of ImageJ2's most important goals. It must remain 
 
 ## Release early, release often
 
-<table>
-  <tbody>
-  <tr><td colspan=3><b>Versioning strategies</b></td></tr>
-  <tr><td><i>Versioning</i></td><td><b>BOM</b></td><td><b>Monoversioned</b></td></tr>
-  <tr><td><i>Releases</i></td><td><b>RERO</b></td><td><b>"Big bang"</b></td></tr>
-  <tr><td><i>Version compatibility</i></td><td>Compatible components are declared in a <a href="/develop/architecture#bill-of-materials">Bill of Materials</a> (BOM)</td><td>Compatible components have the same version number</td></tr>
-  <tr><td><i>Frequency of releases</i></td><td>Faster</td><td>Slower</td></tr>
-  <tr><td><i>Stability</i></td><td>Less</td><td>More</td></tr>
-  </tbody>
-</table>
-
 {% include aside title="What's the alternative?" content="
-Some projects opt to release their entire software stack in a ***big bang***
-with a single monolithic version number. This has one extremely nice
-ramification: it clearly communicates which versions of which software
-components are intended to be compatible with one another.
+Some projects opt to release their entire software stack in a ***big bang*** with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.
 
-For example, the [OME](/software/omero) project (which includes
-[OMERO](/software/omero) and [Bio-Formats](/formats/bio-formats)) employs
-this approach to versioning and release management. Before each release, the
-OME team performs careful and thorough integration testing of all components.
+For example, the [OME](/software/omero) project (which includes [OMERO](/software/omero) and [Bio-Formats](/formats/bio-formats)) employed this approach to versioning and release management for many years. Before each release, the OME team would perform careful and thorough integration testing of all components.
 
-ImageJ and Fiji, in contrast, use the ***RERO*** style of releases, with
-compatible component versions declared in a
-[Bill of Materials](/develop/architecture#bill-of-materials) (BOM).
-Releases can happen more frequently, but consumers must take care to consult
-the BOM when combining various components together, or else there might be
-*version skew*." -%}
+ImageJ and Fiji, in contrast, use the ***RERO*** style of releases, with compatible component versions declared in a [Bill of Materials](/develop/architecture#bill-of-materials) (BOM). Releases can happen more frequently, but consumers must take care to consult the BOM when combining various components together, or else there might be *version skew*.
 
-ImageJ subscribes to the
-{% include wikipedia title='Release early, release often' text='release early, release often' %}
-(RERO) mantra often cited in software engineering circles. In particular—and
-especially because there is a small core development team—the project is driven
-by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/):
-**speed of iteration beats quality of iteration**. That is not to say that we
-do not strive for quality—we do. But we have found through experience that more
-releases, together with guiding user feedback, push a project forward more
-efficiently than a slower release cycle does.
+| *Versioning*            | **BOM**                                                                                                    | **Monoversioned**                                  |
+|-------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| *Releases*              | **Release early, release often (RERO)**                                                                    | **Big bang**                                       |
+| *Version compatibility* | Compatible components are declared in a [Bill of Materials](/develop/architecture#bill-of-materials) (BOM) | Compatible components have the same version number |
+| *Frequency of releases* | Faster                                                                                                     | Slower                                             |
+| *Stability*             | Less                                                                                                       | More                                               |
+" -%}
+
+ImageJ subscribes to the {% include wikipedia title='Release early, release often' text='release early, release often' %} (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
 To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](/develop/architecture#reproducible-builds) with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](/develop/travis), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
 
@@ -95,4 +73,4 @@ Java programs run without trouble and without recompiling on the major platforms
 
 So the true reason why we use Java is probably: it makes [ImageJ](/software/imagej) accessible.
 
-See also [Isn't Java too slow?](http://loci.wisc.edu/faq/isnt-java-too-slow) and [Why is your software written in Java?](http://loci.wisc.edu/faq/why-java) from the LOCI FAQ.
+See also [LOCI's Why Java page](https://uw-loci.github.io/why-java).
