@@ -9,7 +9,7 @@ function fetchCitation(element) {
       format: 'html',
       template: style,
       lang: 'en-US'
-    }).replace(/(https:\/\/doi\.org\/([^<]*))/, '<a href="$1">doi:$2</a>');
+    }).replace(/[^\"](https:\/\/doi\.org\/([^<]*))/, '<a href="$1"> doi:$2</a>');
   })
 }
 
