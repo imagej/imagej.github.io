@@ -19,7 +19,7 @@ The [Center for Open Bioimage Analysis (COBA)](/orgs/coba) at Broad Institute an
 -   Date: 6, 9 and 10 May 2022
 -   Location: Online
 
-Check the [I2K 2022 conference page](/events/i2k-2022) for further details.
+Check the [I2K 2022 conference page](http://i2kconference.org/) for further details.
 
 ### Past conferences
 
