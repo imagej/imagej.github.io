@@ -105,7 +105,7 @@ Using ImageJ Opener (.tif):
 
 You can download a Fiji version that we have tested for compatibility with the automated cluster processing here:
 
-**http://tomancak-srv1.mpi-cbg.de/~schmied/**
+**https://doi.org/10.5281/zenodo.6338071**
 
 It is important to note that we can only guarantee the proper execution of the workflow with the provided Fiji version. We will from time to time upgrade to cover the latest changes in the plugins.
 
