@@ -48,4 +48,19 @@ If you find Labkit useful for your research, please cite it:
 - [FAQ](/plugins/labkit/faq)
 - [Pixel classification algorithm description](/plugins/labkit/pixel-classification-algorithm)
 
+## How to cite
+
+```
+@article{arzt2022labkit
+  author={Arzt, Matthias and Deschamps, Joran and Schmied, Christopher and Pietzsch, Tobias and Schmidt, Deborah and Tomancak, Pavel and Haase, Robert and Jug, Florian},   
+  title={LABKIT: Labeling and Segmentation Toolkit for Big Image Data},      
+  journal={Frontiers in Computer Science},      
+  volume={4},      
+  year={2022},      
+  url={https://www.frontiersin.org/article/10.3389/fcomp.2022.777728},       
+  doi={10.3389/fcomp.2022.777728},      
+  issn={2624-9898},   
+}
+```
+
 
