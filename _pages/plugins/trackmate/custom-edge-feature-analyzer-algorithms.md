@@ -76,13 +76,14 @@ So create a package for your new analyzer in our project, for instance `fiji.plu
 
 In this package, create a class `EdgeAngleAnalyzer` and let it implement the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface. You should be getting something like this:
 
+```java
     package plugin.trackmate.examples.edgeanalyzer;
     
     import fiji.plugin.trackmate.features.edges.EdgeAnalyzer;
     
     public class EdgeAngleAnalyzer implements EdgeAnalyzer
-    {
-    }
+    {}
+```
 
 It is important to note that we provide a blank constructor. This is very important: with the way we use SciJavaPlugin integration, we cannot use the constructor to pass any object reference. If your analyzer needs some objects which are not provided through the interface methods, then you cannot code it with TrackMate directly. However we should cover most use-cases with what we have.
 
@@ -110,6 +111,7 @@ These 6 methods are:
 
 In this tutorial, our analyzer just returns one feature, which is an angle. So a concrete implementation could be:
 
+```java
     package plugin.trackmate.examples.edgeanalyzer;
     
     import java.util.ArrayList;
@@ -222,11 +224,13 @@ In this tutorial, our analyzer just returns one feature, which is an angle. So a
             // This feature is calculated automatically.
             return false;
         }
+```
 
 ## Multithreading & Benchmarking methods
 
 There are also 4 methods which we will skip right now. They are related to the multi-threading aspect of the analyzer. You can code your analyzer to exploit a multithreaded environment, and TrackMate will configure it through the following methods:
 
+```java
         @Override
         public void setNumThreads()
         {
@@ -245,10 +249,13 @@ There are also 4 methods which we will skip right now. They are related to the m
             // We ignore multithreading for this tutorial.
             return 1;
         }
-
+```
+       
 There is also
 
+```java
     public long getProcessingTime()
+```
 
 that returns how much milliseconds was spent on computing the features.
 
@@ -281,13 +288,16 @@ There is just one thing to know: Once you computed the numerical value of your f
 
 It works like a 2D Map:
 
+```java
         final FeatureModel fm = model.getFeatureModel();
         Double val = Double.valueOf(3.1451564);
         String FEATURE = "MY_AWESOME_EDGE_FEATURE";
         fm.putEdgeFeature( edge, FEATURE, val );
+```
 
 And for our XY edge angle, here are the methods content:
 
+```java
         @Override
         public void process( final Collection< DefaultWeightedEdge > edges, final Model model )
         {
@@ -312,6 +322,7 @@ And for our XY edge angle, here are the methods content:
         {
             return true;
         }
+```
 
 ## Making the analyzer discoverable
 
@@ -323,10 +334,12 @@ Until TrackMate v2.2.0, there was no other way to extend TrackMate than to modif
 
 Just add the following line before the class declaration:
 
+```java
     @Plugin( type = EdgeAnalyzer.class )
     public class EdgeAngleAnalyzer implements EdgeAnalyzer
     {
     ...
+```
 
 and that's it. Let me repeat:
 
