@@ -3,6 +3,7 @@
 dir=$(cd "$(dirname "$0")/.." && pwd)
 bin="$dir/_bin"
 root="$dir/_site"
+failed=0
 test -d "$root" || {
   echo "Please generate the site first."
   echo "  bundle exec jekyll serve"
@@ -11,29 +12,60 @@ test -d "$root" || {
 
 echo "[Checking page generation]"
 "$bin/check-page-generation.sh"
-test $? -eq 0 && echo "--> Page generation looks good."
+if [ $? -ne 0 ]; then
+  failed=$((failed+1))
+else
+  echo "--> Page generation looks good."
+fi
 
 echo
 echo "[Checking user IDs]"
 "$bin/check-user-ids.sh"
-test $? -eq 0 && echo "--> User IDs look good."
+if [ $? -ne 0 ]; then
+  failed=$((failed+1))
+else
+  echo "--> User IDs look good."
+fi
+
 
 echo
 echo "[Checking include usage]"
 "$bin/check-include-usage.sh"
-test $? -eq 0 && echo "--> Includes look good."
+if [ $? -ne 0 ]; then
+  failed=$((failed+1))
+else
+  echo "--> Includes look good."
+fi
+
 
 echo
 echo "[Checking include documentation]"
 "$bin/check-include-help.sh"
-test $? -eq 0 && echo "--> Include docs look good."
+if [ $? -ne 0 ]; then
+  failed=$((failed+1))
+else
+  echo "--> Include docs look good."
+fi
+
 
 echo
 echo "[Checking HTML element id values]"
 "$bin/check-html-ids.sh"
-test $? -eq 0 && echo "--> HTML element ids look good."
+if [ $? -ne 0 ]; then
+  failed=$((failed+1))
+else
+  echo "--> HTML element ids look good."
+fi
 
-echo
-echo "[Checking site HTML]"
-"$bin/check-site-html.sh"
-test $? -eq 0 && echo "--> Site HTML looks good! Congratulations."
+
+# echo
+# echo "[Checking site HTML]"
+# "$bin/check-site-html.sh"
+# if [ $? -ne 0 ]; then
+#   failed=$((failed+1))
+# else
+#  echo "--> Site HTML looks good! Congratulations."
+# fi
+
+echo "$failed checks failed."
+exit $failed
