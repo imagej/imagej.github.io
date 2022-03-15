@@ -8,6 +8,6 @@ section: Extend:Development:Tools
 
 # Services
 
-Most [SciJava](/libs/scijava)-based project builds use [Travis CI](/develop/travis). However, for Windows-specific builds, AppVeyor is used.
+Most [SciJava](/libs/scijava)-based project builds use [GitHub Actions](/develop/github-actions). However, some Windows-specific builds use AppVeyor.
 
 See e.g. the [ImageJ Launcher](https://ci.appveyor.com/project/scijava/imagej-launcher) build.
