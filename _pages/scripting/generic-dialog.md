@@ -5,7 +5,7 @@ project: /software/imagej
 
 ## Introduction
 
-The {% include javadoc project='ImageJ1' package='ij/gui' class='GenericDialog' %} class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more work than with the [script parameters](/scripting/parameters) feature of [SciJava](/libs/scijava), but offers more possibilities.
+The [GenericDialog](https://imagej.nih.gov/ij/developer/api/ij/ij/gui/GenericDialog.html) class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more work than with the [script parameters](/scripting/parameters) feature of [SciJava](/libs/scijava), but offers more possibilities.
 
 Fiji offers an additional {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} subclass which include additional GUI items like a file input with a browse button.  
 
