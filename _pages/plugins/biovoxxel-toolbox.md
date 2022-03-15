@@ -78,6 +78,8 @@ Status: Maintenance active
 
 # Binary Feature Extractor
 
+[Newer version for 2D and 3D images](https://biovoxxel.github.io/bv3dbox#overlap-extractor)
+
 Purpose: The "Feature Extractor" is aimed to select isolate specific features in a binary image by other binary particles as selectors which are located completely inside the features or overlap partially with those. It additionally allows also to get a visual combination of extracted features and selectors (combining those images by using a boolean OR function). The idea for the feature extractor is taken from J. Russ "The Image Processing Handbook" 6th Edition.
 
 Example: A specific nuclear fluorescent staining is thresholded as the selector while the complete cells are thresholded as the features to be extracted.
@@ -93,6 +95,8 @@ Status: maintenance active
 ------------------------------------------------------------------------
 
 # Speckle Inspector
+
+[Newer version for 2D and 3D images](https://biovoxxel.github.io/bv3dbox#object-inspector)
 
 Purpose: The "Speckle Inspector" is able to identify bigger features by the number of containing smaller features/speckles.
 
@@ -160,6 +164,8 @@ Status: maintenance inactive, deprecated, stable
 
 # **Threshold Check**
 
+[Newer version for 2D and 3D images](https://biovoxxel.github.io/bv3dbox#threshold-check)
+
 Purpose: The "Threshold Check" should simply provide a help in deciding which of the 16 [Auto Threshold](/plugins/auto-threshold) and the 9 [Auto Local Threshold](/plugins/auto-local-threshold) outputs from the respective plugins results in the potentially best binary image outcome. This is not an absolute measure but should rather assist in the decision for the application of one specific auto threshold algorithm in non-obvious cases. In the new version you can choose additionally to quantify the quality of the thresholding.
 
 How to: The user needs to first select the image the in which the thresholds should be checked (including all the pre-processing you want/need to apply). Be aware to also specify if you are thresholding bright or dark features in the first checkbox! You can also choose to ignore black or white pixels from the threshold calculations (as in the normal AutoThreshold dialog). Furthermore, you can choose to include also the 9 Auto Local Thresholds with the respective parameters (for further reading check out: Auto Local Thresholds. Finally, you can include a quantification of the results and choose if you want to have an overview montage in addition to the normal stack output. Thresholds are indicated in the upper left corner of the images for better identification.
@@ -192,10 +198,6 @@ Potential issues: If the user does not correctly define if he/she is looking for
 
 **Publication:** [Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms](http://www.cscjournals.org/library/manuscriptinfo.php?mc=IJIP-829). J. Brocher, Int. J. Image Process. 8(2), 2014 pp. 30-48
 
-Form: macro
-
-Status: maintenance active
-
 ------------------------------------------------------------------------
 
 # Filter Check
@@ -214,6 +216,8 @@ Status: maintenance active
 
 # Flat-field and Pseudo flat-field correction
 
+[Newer version for 2D and 3D images](https://biovoxxel.github.io/bv3dbox#flat-field-correction)
+
 Purpose: The macro enables to "subtract" background due to inequal lighting from grayscale and true color images. It either uses a previously taken flat-field image (&gt;Flat-field correction) or creates an artificial flat-field image (&gt;Pseudo flat-field correction) from the selected original image. For true color images this is done using the brightness channel of an HSB stack. The original image (brightness channel for true color images) is divided by the flat-field image and the brightness is normalized using the mean intensity of the original image.
 
 How to: You need either choose the two images in the "Flat-field" version or specify a gaussian blurring radius for the "Pseudo flat-field correction" in a way to eliminate specific feature appearance but to keep the difference in shading/lighting. Therefore, rather big radii (sigma) are needed (potentially between 40-150, but this depends on image and feature size).
@@ -221,12 +225,6 @@ How to: You need either choose the two images in the "Flat-field" version or spe
 Remark: The pseudo flat field correction menu command links to the plugin with the same name under {% include bc path='Plugins | BioVoxxel'%} (necessary to additionally download from the BioVoxxel update site together with the Toolbox).
 
 Advantage of the Pseudo flat field correction: This is now recordable and works with stacks. Thus, time-lapse movies e.g. from a brightfield microscope can be completely corrected for unequal lighting according to the individual differences in each frame. The blurring is visualized on the currently active frame to be able to sufficiently eliminate structural information.
-
-Form of Flat-field correction: macro
-
-Form of Pseudo Flat-field correction: plugin
-
-Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -239,10 +237,6 @@ How to: The user can choose between Gaussian, Median and Mean convolution filter
 Method: The convoluted images are directly subtracted from the original with exception of the median filtered one. The latter additionally receives a grayscale dilation by application of a maximum filter with the factor (1.5\*(radius/10)). This should reduce artifacts around object borders.
 
 <figure><img src="/media/plugins/convoluted-background-subtraction.png" title="Convoluted_Background_Subtraction.png" width="750" alt="Convoluted_Background_Subtraction.png" /><figcaption aria-hidden="true">Convoluted_Background_Subtraction.png</figcaption></figure>
-
-Form: plugin
-
-Status: maintenance active!
 
 ------------------------------------------------------------------------
 
@@ -266,23 +260,17 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit single ima
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
 
-Form: plugin, recording still not fully functional!!!
-
-Status: maintenance active
-
 ------------------------------------------------------------------------
 
 # Recursive Filters
+
+[Newer version for 2D and 3D images](https://biovoxxel.github.io/bv3dbox#recursive-filter)
 
 Purpose: The recursive filters plugin allows to repetitively apply one of the three basic image filters (Gaussian Blur, Mean, Median) with small radii (max = 3) by adjusting the iteration. The previously filtered image will then be taken as basis for the next image filtering
 
 The maximum iteration can be set by the user up to 500 times but will be stopped if two consecutive filtered images do not show any further difference.
 
 <img src="/media/plugins/recursivefilters01.png" width="500"/>
-
-Form: plugin
-
-Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -292,10 +280,6 @@ Purpose: Uses a basic difference of Gaussian method for feature detection and a 
 
 How to: Difference of Gaussian needs the specification of 2 different Gaussian blurring radii and Difference from Median needs the specification of a Median kernel radius.
 
-Form: macro
-
-Status: maintenance active
-
 ------------------------------------------------------------------------
 
 # Hyperstack Color Coding
@@ -303,10 +287,6 @@ Status: maintenance active
 Purpose: This macro enables the color coding of the time or volume dimension in stacks and hyperstacks. Multi-channels need to be split up before color coding can be done. The macro is based on the idea of the plugin from Kota Miura and Johannes Schindelin. In contrast to the latter, it keeps the coded stack besides the creation of an additional color-coded z-projection.
 
 How to: Given that you start with a hyperstack, you can choose between time and volume to be color coded. You can choose to create a z-projection by choosing from different projection types (as available in the ImageJ "Z-Project" function). Furthermore, a separated calibration bar can be created which will be horizontal for coded time stacks and vertical for coded volume stacks.
-
-Form: macro
-
-Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -319,10 +299,6 @@ How to: Specify the analysis parameters (same input as for "Analyze Particles...
 Methods: "Voronoi" analyzes the paticles according to the directly correlated voronoi map. "UEP Voronoi" uses the voronoi map from the ultimate eroded points of the particles. This might underestimate the real number of neighbors and is rather suitable for roundish structures. "Centroid Neighborhood" analyzes an area corresponding to a circle with the specified neighborhood radius around the centroid of each particle. "Particle Neighborhood" analyzes also an area around each particle with the specified radius as distance to the particle border.
 
 <img src="/media/plugins/neighboranalysis.png" width="750"/>
-
-Form: macro
-
-Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -339,10 +315,6 @@ Method: The UEPs of the particles are generated and the nearest neighbor distanc
 **BE AWARE:** This tool estimates the type of clustering or exclusion since it does not take non-isotropic shape into account and WORKS ONLY on complete, rectangular images and NOT inside irregular ROIs. This might be changed in future.
 
 <img src="/media/plugins/distributionanalysis.png" width="750"/>
-
-Form: macro
-
-Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -362,6 +334,7 @@ Application: The algorithm was already successfully applied in the quantificatio
 
 Limitation: works on 2D binary images only and does not detect clusters inside other clusters
 
+------------------------------------------------------------------------
 # Cluster Indicator
 
 (depricated)
@@ -384,10 +357,6 @@ Consider that the detector size as well as density settings influence if a clust
 
 Method: Circle ROIs of the specified size are initially distributed with sufficient overlap to cover the complete image. The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
-Form: plugin, recordable
-
-Status: stable, Maintenance inactive
-
 ------------------------------------------------------------------------
 
 # Nearest Neighbor Indicator (Separate Tool)
@@ -399,12 +368,6 @@ Output: A copy of the original image is created with the particle of interest (P
 Method: As measure for the distance between the particles the minimum separation distance is taken by analysis of the intensity coded Voronoi cell algorithm of ImageJ. The lowest non-background intensity is used to indicate the nearest neighbor.
 
 <img src="/media/plugins/nearestneighborindicator.png" width="750"/>
-
-Form: macro
-
-Status: maintenance inactive
-
-Future: Suggestions are welcome!
 
 ------------------------------------------------------------------------
 
@@ -418,12 +381,6 @@ Output: The filter will be applied directly on the input image. It is undoable (
 
 Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
 
-Installation: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
-
-Form: plugin
-
-Status: maintenance active
-
 ------------------------------------------------------------------------
 
 # Enhance True Color Contrast
@@ -433,10 +390,6 @@ Status: maintenance active
 Purpose: This image filter enhances the contrast of true color images similar to the method Enhance Contrast in Fiji. If the latter would be applied to true color images this leads to a change in color values and saturation. This unwanted effects are eliminated by the recordable "Enhance True Color Contrast" plugin. It preserves color tone and saturation while enhancing the contrast in the brightness channel of the HSB color space. This is done using high precision float value calculation and not by a simple conversion o fthe image to HSB color space as available in ImageJ/Fiji. The latter would lead to a loss in quality since due to conversion and back-conversion to RGB.
 
 How to: The user can key in a percentage of saturated pixels as in the "Enhance Contrast" function and has a preview option.
-
-Form: plugin
-
-Status: maintenance active
 
 ------------------------------------------------------------------------
 
@@ -452,13 +405,10 @@ How To: the user can choose to use the differential threshold determination or t
 
 Download: Part of the BioVoxxel update site in Fiji and can be found under {% include bc path='Plugins | BioVoxxel'%}
 
-Form: plugin, recordable
-
-Status: maintenance active
-
-Future: Will be implemented for stacks as well.
-
 ------------------------------------------------------------------------
+
+# Leica ROI Reader
+The Reader can open and read Leica ROI files saved by the LAS software (tested only for LAS AF). and add them to the ImageJ ROI Manager.
 
 ------------------------------------------------------------------------
 
