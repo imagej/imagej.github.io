@@ -26,7 +26,7 @@ output=$(find _includes -type f | while read f
 do
   inc=${f#_includes/}
   s=$(echo "$count" | grep " $inc$")
-  test "$s" || s="   0 $inc"
+  test "$s" || s="      0 $inc"
   grep -q TODO "$f" && echo "$s [UNFINISHED]" || echo "$s"
 done | sort -nr)
 echo "$output"
