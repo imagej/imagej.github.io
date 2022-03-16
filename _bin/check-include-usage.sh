@@ -30,5 +30,8 @@ do
   grep -q TODO "$f" && echo "$s [UNFINISHED]" || echo "$s"
 done | sort -nr)
 echo "$output"
-unused=$(echo "$output" | grep '^ *0 *' | wc -l)
-exit $((invalid+unused))
+unused=$(echo "$output" | grep '^ *0 ' | wc -l)
+
+errors=$((invalid+unused))
+test "$errors" -gt 255 && errors=255
+exit $errors
