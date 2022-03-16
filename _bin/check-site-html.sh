@@ -34,4 +34,5 @@ for f in $(find "$root" -name '*.html'); do
     echo "--> $sf OK"
   fi
 done
+test "$errors" -gt 255 && errors=255
 exit $errors
