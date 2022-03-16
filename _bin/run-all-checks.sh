@@ -33,7 +33,10 @@ echo "[Checking HTML element id values]"
 "$bin/check-html-ids.sh"
 test $? -eq 0 && echo "--> HTML element ids look good."
 
-echo
-echo "[Checking site HTML]"
-"$bin/check-site-html.sh"
-test $? -eq 0 && echo "--> Site HTML looks good! Congratulations."
+# NB: Disabled until check-page-html.sh caches its output
+# for the same input hash. Once that's in place, running
+# this test on CI won't be so super expensive.
+#echo
+#echo "[Checking site HTML]"
+#"$bin/check-site-html.sh"
+#test $? -eq 0 && echo "--> Site HTML looks good! Congratulations."
