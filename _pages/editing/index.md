@@ -213,5 +213,4 @@ The following tables list all of this site's general-purpose includes:
 | thumbnail                                    | Merge with img include             |
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
 | clear                                        | Delete after purging all floats    |
-| project                                      | Delete after improving statbox     |
 {:.skinny}
