@@ -39,7 +39,7 @@ output=$(bundle exec htmlproofer "$F" \
   --report-missing-doctype \
   --report-eof-tags \
   --report-mismatched-tags \
-  --url-ignore \"/^/ij$/,/^/conference$/,/^/list-of-update-sites$/,/^/mbf$/,/^/presentations$/,/^/tickets$/,/^/workshops$/,/^/images$/,/^/ij//,/^/conference//,/^/list-of-update-sites//,/^/mbf//,/^/presentations//,/^/tickets//,/^/workshops//,/^/images//\" \
+  --url-ignore \"/^/ij$/,/^/conference$/,/^/list-of-update-sites$/,/^/mbf$/,/^/presentations$/,/^/tickets$/,/^/workshops$/,/^/images$/,/^/ij//,/^/conference//,/^/list-of-update-sites//,/^/mbf//,/^/pipermail//,/^/presentations//,/^/tickets//,/^/workshops//,/^/images//\" \
   --root-dir="$root" 2>&1)
 status=$?
 test "$VERBOSE" && echo "$output" ||
