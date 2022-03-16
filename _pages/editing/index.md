@@ -174,11 +174,12 @@ The following tables list all of this site's general-purpose includes:
 
 #### Media
 
-| Include                           | Purpose                    |
-|-----------------------------------|----------------------------|
-| [img](images#images)              | Insert an image            |
-| [gallery](images#image-galleries) | Insert an image gallery    |
-| [video](videos)                   | Embed a video              |
+| Include                            | Purpose                    |
+|------------------------------------|----------------------------|
+| [img](images#images)               | Insert an image            |
+| [gallery](images#image-galleries)  | Insert an image gallery    |
+| [video](videos)                    | Embed a video              |
+| [spreadsheet](tables#spreadsheets) | Embed a spreadsheet        |
 {:.skinny}
 
 #### Notices
