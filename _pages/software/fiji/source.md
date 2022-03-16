@@ -10,7 +10,7 @@ The Fiji Launcher is now called the [ImageJ launcher](/learn/launcher) and lives
 
 ## The plugins
 
-The plugins served from Fiji's update site are all [Open Source](/licensing/closed-source). The source code lives {% include github org='fiji' repo='' label='on GitHub' %}, in repositories reflecting the name of the *.jar* file generated from the source code. Example: the source code for *Fiji\_Plugins.jar* lives in https://github.com/fiji/Fiji_Plugins.
+The plugins served from Fiji's update site are all [Open Source](/licensing/open-source). The source code lives {% include github org='fiji' repo='' label='on GitHub' %}, in repositories reflecting the name of the *.jar* file generated from the source code. Example: the source code for *Fiji\_Plugins.jar* lives in https://github.com/fiji/Fiji_Plugins.
 
 The only special rule applies for plugins whose file names end in an underscore: that underscore will be stripped. Example: the sources of *Arrow\_.jar* are stored {% include github org='fiji' repo='Arrow' %}.
 
