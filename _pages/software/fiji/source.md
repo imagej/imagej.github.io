@@ -6,7 +6,7 @@ This page will give you an idea how Fiji's source code is organized. Every direc
 
 ## The Fiji launcher
 
-The Fiji Launcher is now called the [ImageJ launcher](/learn/launcher) and lives {% include github org='imagej' repo='imagej-launcher' label='in its own repository' %}. It is [built by Travis CI](https://travis-ci.org/imagej/imagej-launcher).
+The Fiji Launcher is now called the [ImageJ launcher](/learn/launcher) and lives {% include github org='imagej' repo='imagej-launcher' label='in its own repository' %}.
 
 ## The plugins
 
