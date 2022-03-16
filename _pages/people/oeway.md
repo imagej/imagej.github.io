@@ -1,7 +1,6 @@
 ---
 title: Wei Ouyang
 name: Wei Ouyang
-github: oeway
 email: oeway007@gmail.com
 affiliation:
   - Science for Life Laboratory

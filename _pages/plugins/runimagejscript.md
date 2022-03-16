@@ -6,8 +6,8 @@ dev-status: Active
 support-status: Active
 source-url: https://github.com/CellProfiler/CellProfiler-plugins/
 team-lead: '@hinerm'
-team-developers: '@alucas, @bcimini, @hinerm'
-team-maintainers: '@alucas, @hinerm'
+team-developers: '@alicelucas, @bethac07, @hinerm'
+team-maintainers: '@alicelucas, @hinerm'
 icon: /media/icons/cellprofiler.png
 categories: [CellProfiler]
 ---

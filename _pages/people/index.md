@@ -106,8 +106,8 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### {% include icon name='CellProfiler' size='32px' %} [CellProfiler](/software/cellprofiler)
 
--   {% include person id='bcimini' %}[^4] (lead)
--   {% include person id='alucas' %}[^4] 
+-   {% include person id='bethac07' %}[^4] (lead)
+-   {% include person id='alicelucas' %}[^4]
 -   {% include person id='0x00b1' %}[^4] (former)
 -   {% include person id='LeeKamentsky' %}[^4] (former)
 </div>
