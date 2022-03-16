@@ -5,7 +5,7 @@ bin="$dir/_bin"
 root="$dir/_site"
 test -d "$root" || {
   echo "Please generate the site first."
-  echo "  bundle exec jekyll serve"
+  echo "  bundle exec jekyll build"
   exit 1
 }
 
