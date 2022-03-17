@@ -43,7 +43,7 @@ If your tests require a display (i.e.: they do not pass when run [headless](/lea
      No X11 DISPLAY variable was set, but this program performed an operation which requires it.
      Error:  myTest  Time elapsed: 0.097 s  <<< ERROR!
 
-You can fix this using [Xvfb](/learn/headless#xvfb) as follows.
+You can fix this using [Xvfb](/learn/headless#xvfb-virtual-desktop) as follows.
 In your repository there is a file `.github/workflows/build-main.yml`.
 In this file there should be some lines that read:
 
