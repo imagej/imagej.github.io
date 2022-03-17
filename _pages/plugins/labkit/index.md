@@ -1,5 +1,4 @@
 ---
-mediawiki: Labkit
 title: Labkit
 
 artifact: sc.fiji:labkit-ui
