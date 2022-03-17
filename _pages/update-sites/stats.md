@@ -6,10 +6,10 @@ section: Extend:Update Sites
 <div id="controls" style="left: auto; right: auto; text-align: center">
 <b>Update Site:</b> <select id="site" onchange="updateChart()"></select>
 <br>
-<b>Granularity:</b>
-<input type="radio" id="daily" name="mode" value="daily" checked onchange="updateChart()"><label for="daily">Daily</label>
-<input type="radio" id="weekly" name="mode" value="weekly" onchange="updateChart()"><label for="weekly">Weekly</label>
-<input type="radio" id="monthly" name="mode" value="monthly" onchange="updateChart()"><label for="monthly">Monthly</label>
+<b>Rolling average:</b>
+<input type="radio" id="daily" name="mode" value="daily" checked onchange="updateChart()"><label for="daily">Raw</label>
+<input type="radio" id="weekly" name="mode" value="weekly" onchange="updateChart()"><label for="weekly">7-day</label>
+<input type="radio" id="monthly" name="mode" value="monthly" onchange="updateChart()"><label for="monthly">30-day</label>
 </div>
 
 <div id="stats-chart" style="width: 100%;"></div>
