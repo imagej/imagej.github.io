@@ -55,6 +55,10 @@ Note: in the advanced mode you can also upload plugins to your [update site](/up
 
 <figure><img src="/media/plugins/snapshot-of-the-advanced-mode-of-the-updater.png" title="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" width="750" alt="Snapshot_of_the_Advanced_Mode_of_the_Updater.png" /><figcaption aria-hidden="true">Snapshot_of_the_Advanced_Mode_of_the_Updater.png</figcaption></figure>
 
+### Editing dependencies
+
+While in the advanced mode, you can **edit a file's dependencies directly** by making changes in the right-hand Details pane. Just delete the dependency lines you don't want, or type new ones that you do want. This is useful when the Updater's byte-code analyzer detects wrong dependencies for a particular file.
+
 ## Starting the Updater manually
 
 Just click on the {% include bc path='Help | Update...'%} menu item:
