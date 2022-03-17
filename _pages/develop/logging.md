@@ -89,4 +89,4 @@ If you prefer environment variables, setting the `DEBUG` environment variable wi
 
 ## Using the LogService from your code
 
-The `LogService` is accessible from a SciJava plugin in the same way as any other [service](/libs/scijava#scijava-common#services): as a field annotated with `@Parameter`. See the [Writing plugins](/develop/plugins) guide for details.
+The `LogService` is accessible from a SciJava plugin in the same way as any other [service](/libs/scijava#services): as a field annotated with `@Parameter`. See the [Writing plugins](/develop/plugins) guide for details.
