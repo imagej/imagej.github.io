@@ -1,9 +1,11 @@
 ---
-title: Labkit
+title: Labkit - Intuitive Pixel Classification in Fiji
 
 artifact: sc.fiji:labkit-ui
 categories: [Uncategorized]
 ---
+
+## Abstract
 
 <!--<img src="/media/plugins/labkit-illustration.jpg" width="700"/>-->
 
