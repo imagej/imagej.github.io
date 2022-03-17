@@ -399,7 +399,7 @@ Please see also the developers tips how to [use ImageJ's API effectively](/devel
 
 See guides on:
 
--   [Developing in Eclipse](/develop/eclipse#create-the-eclipse-projects)
+-   [Developing in Eclipse](/develop/eclipse)
 -   [Plugin distribution](/contribute/distributing)
 -   [Development lifecycle](/develop/releasing)
 -   [Debugging practice](/develop/debugging-exercises)
