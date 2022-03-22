@@ -437,7 +437,7 @@ outputStream.close();
 
 ## Writing out movie files with JavaCV
 
-[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into the `lib/<platform>/` folder of your Fiji installation (e.g. `Fiji.app/lib/linux64/`) to let JavaCV find the native libraries (e.g. unpack `ffmpeg-macosx-x86_64.jar`'s `.dylib` files directly into `ImageJ.app/lib/macosx/`) **before** starting Fiji.
+[JavaCV](https://github.com/bytedeco/javacv) is a Java wrapper around OpenCV and FFMPEG. You will have to unpack the libraries into the `lib/<platform>/` folder of your Fiji installation (e.g. `Fiji.app/lib/linux64/`) to let JavaCV find the native libraries (e.g. unpack `ffmpeg-macosx-x86_64.jar`'s `.dylib` files directly into `Fiji.app/lib/macosx/`) **before** starting Fiji.
 
 #### BeanShell
 

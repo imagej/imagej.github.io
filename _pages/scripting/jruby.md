@@ -249,7 +249,7 @@ projection_options += "interpolate"
 run "3D Project...", projection_options
 ```
 
-In general, the best way to figure out what these options should be is to start the macro recorder with "{% include bc path='Plugins | Macros | Record...'%}" and run the plugin. In this case, the output in the macro recorder looks like this:
+In general, the best way to figure out what these options should be is to start the macro recorder with {% include bc path='Plugins | Macros | Record...'%} and run the plugin. In this case, the output in the macro recorder looks like this:
 
 ```ruby
 run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4

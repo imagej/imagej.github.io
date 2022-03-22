@@ -318,10 +318,10 @@ On Linux, the output will be written to the file `.xsession-errors` in the home 
 
 ### macOS
 
-On macOS, you need to remember that any application is just a directory with a special layout. So you can call ImageJ like this from the *Terminal* (which you will find in the Finder by clicking on {% include bc path="Go|Utilities" %}. Example command line:
+On macOS, you need to remember that any application is just a directory with a special layout. So you can call it like this from the *Terminal* (which you will find in the Finder by clicking on {% include bc path="Go|Utilities" %}. Example command line:
 
 ```shell
-cd /Applications/ImageJ.app/Contents/MacOS/
+cd /Applications/ImageJ2.app/Contents/MacOS/
 cp ImageJ-macosx debug
 ./debug
 ```

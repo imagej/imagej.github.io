@@ -4,7 +4,7 @@ title: Straighten...
 categories: [Uncategorized]
 ---
 
-ImageJ has a simple and effective tool for Straightening images of curved structures, which can be found in the menus as "{% include bc path='Edit | Selection | Straighten...'%}". A silly example (straightening an MPI canteen banana) is shown here.
+ImageJ has a simple and effective tool for Straightening images of curved structures, which can be found in the menus as {% include bc path='Edit | Selection | Straighten...'%}. A silly example (straightening an MPI canteen banana) is shown here.
 
 First, select the "Segmented Line" selection tool by right-clicking on the "Straight Line Selections" tool icon in the toolbar and choosing the "Segemented Lines" option. Then click along a selection of points along the structure, completing the line with a right click. You should have something like this:
 

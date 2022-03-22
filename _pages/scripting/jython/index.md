@@ -2,6 +2,7 @@
 mediawiki: Jython_Scripting
 title: Jython Scripting
 section: Extend:Scripting:Languages
+project: /software/imagej2
 ---
 
 {% include notice message="This page describes how to write scripts in
@@ -10,17 +11,17 @@ section: Extend:Scripting:Languages
 
 ## Introduction
 
-Jython is an implementation of the Python programming language designed to run on the Java platform. [^1] In ImageJ Jython is one of several [supported languages](/scripting#supported-languages).
+Jython is an implementation of the Python programming language designed to run on the Java platform. [^1] In ImageJ, Jython is one of several [supported languages](/scripting#supported-languages).
 
 ## When to use Jython
 
-All scripting language supported by ImageJ can be used to access the [ImageJ API](http://javadoc.imagej.net/). There are only differences in how the imports are handled and in the syntax of the selected language. Jython has a syntax that differs from most other language as indentations instead of brackets are used to group code blocks.
+All scripting language supported by ImageJ can be used to access the [ImageJ API](https://javadoc.scijava.org/). There are only differences in how the imports are handled and in the syntax of the selected language. Jython has a syntax that differs from most other language as indentations instead of brackets are used to group code blocks.
 
 The following list will help you to decide if Jython is the right choice to create scripts for ImageJ:
 
--   If you have experience with Python you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [own modules](/scripting/jython#self-written-jython-modules-for-imagej) you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
+-   If you have experience with Python, you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [own modules](/scripting/jython#self-written-jython-modules-for-imagej) you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
 -   If don't have any experience in programming, the Python language is a good choice to start with. If your only aim is to write scripts for ImageJ, there are other languages you should try first (e.g. [Groovy](/scripting/groovy)).
--   In Python many problems can be solved with less code than in other languages. Still the code is easy to read. Have a look at the examples on this page and decide if you want to start using Python for ImageJ scripting.
+-   In Python, many problems can be solved with less code than in other languages. Nonetheless, the code is easy to read. Have a look at the examples on this page and decide if you want to start using Python for ImageJ scripting.
 
 ### Explanation
 
@@ -34,7 +35,7 @@ Even with the given limitations, Jython is a powerful language for ImageJ script
 
 ### Introduction
 
-The aim of this page is not to teach how to program in Python. This purpose is much better fulfilled by the [documentation of Python2](https://docs.python.org/2/library/index.html). The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
+The aim of this page is not to teach how to program in Python. This purpose is much better fulfilled by the [documentation of Python 2](https://docs.python.org/2/library/index.html). The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
 
 That is why more complex examples are used that are fully functional. Just copy the code to the [Script Editor](/scripting/script-editor) and try them by yourself. Extensive in-line documentation is used to explain the implementation.
 
@@ -422,7 +423,7 @@ An interesting feature of Jython is to search for packages and modules inside of
 
 The advantage of this approach is that you can share your packages easily. For example you can upload the JAR file to an [update site](/update-sites). It is possible to upload .py scripts to update sites too, without packaging into a jar. The advantage of jar are that they allow to define dependencies more systematically.
 
-**NB** : Script implementing "ImageJ menu macro" and "utilitary scripts" that are used as imported modules in other macros **should be packed in separate jar files** ! Indeed, if not explicitly mentioned, the jython interpreter only looks in the Jars/Lib folder to import module, so the .jar containing the "utilitary scripts" should be put there, while the jar containing the "ImageJ menu macro" can be put either in the Plugin or script/Plugin folder in order to appear in the ImageJ menu.
+{% include notice icon="note" text='Script implementing "ImageJ menu macro" and "utility scripts" that are used as imported modules in other macros **should be packed in separate JAR files**! Indeed, if not explicitly mentioned, the jython interpreter only looks in the Jars/Lib folder to import module, so the .jar containing the "utility scripts" should be put there, while the jar containing the "ImageJ menu macro" can be put either in the Plugin or script/Plugin folder in order to appear in the ImageJ menu.' %}
 
 Contrary to the scripts in Jars/Lib, the menu macro scripts are not compiled, and as explained above they can not be imported in other scripts since the Plugin folder do not reside in the Jython search path by default.
 
@@ -440,7 +441,7 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
 -   [ImageJ2 Python Scripts](/tutorials/imagej2-python)
 -   [A Fiji Scripting Tutorial by Albert Cardona](https://www.ini.uzh.ch/~acardona/fiji-tutorial/)
 -   [Jython scripting cookbook](http://wiki.cmci.info/documents/120206pyip_cooking/python_imagej_cookbook)
--   [ImageJ tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)
+-   [ImageJ2 tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)
 
 ## References
 

@@ -1937,7 +1937,7 @@ import com.xhaus.jyson.JysonCodec as jyson
 
 ### Using a jython script as a plugin
 
-The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running "'{% include bc path='Plugins | Scripting | Refresh Jython Scripts'%}'" or "'{% include bc path='Help | Refresh Menus'%}'", or on restarting Fiji.
+The simplest way is to place the jython script file into fiji/plugins/ folder or a subfolder, and it will appear in the menus after running {% include bc path='Plugins | Scripting | Refresh Jython Scripts'%} or {% include bc path='Help | Refresh Menus'%}, or on restarting Fiji.
 
 If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available as {% include bc path='File | New | Animation'%}.
 
