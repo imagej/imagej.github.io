@@ -1,6 +1,6 @@
 ---
 title: Git
-section: Extend:Develop:Git
+section: Extend:Development:Git
 ---
 
 {% include notice icon="info" content='If Git is completely new to you, read:
