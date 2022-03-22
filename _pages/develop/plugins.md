@@ -14,7 +14,7 @@ For instructions on plugin development for the original [ImageJ](/software/image
 
 ## Requirements
 
-As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
+As ImageJ2 is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
 |                                                                                                              |                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -186,7 +186,7 @@ There are always other options for saving or restoring your work—[stashing](ht
 -   You can look at the [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) to figure out [which libraries](/develop/source) that particular project is using.
 -   You can [compile and build](http://maven.apache.org/archives/maven-1.x/start/quick-start.html) from the command line by running `mvn` from any project's top-level directory (any directory containing a `pom.xml`).
 -   Building a project results in a `jar` output in the `$PROJECT/target/` directory.
--   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ.app/jars/` directory of an [ImageJ installation](/downloads) to try out any of the example plugins.
+-   For a more "real-world" experience, you can drop the `jar` you built into the `ImageJ2.app/jars/` directory of an [ImageJ installation](/downloads) to try out any of the example plugins.
 -   If you're not sure how to find your plugin within ImageJ, use the [search bar](/learn#the-search-bar)!
 -   You can also import each project into [Eclipse](/develop/eclipse)/[NetBeans](/develop/netbeans)/[IntelliJ IDEA](/develop/intellij) as a [maven project](https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html).
 

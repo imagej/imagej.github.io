@@ -11,8 +11,8 @@ ImageJ2 allows you to write scripts in several different languages.
 
 -   Read the [ImageJ2 tutorial notebooks](/tutorials/notebooks) to learn how to write scripts.
 -   Press the {% include key key='[' %} key to open the [Script Editor](/scripting/script-editor) (or {% include key key='Shift' %}-{% include key key='[' %} to open the [Script Interpreter](/scripting/interpreter)).
--   Optionally, choose a template from the *Templates* menu to get you started.
--   Otherwise, choose your language from the *Language* menu.
+-   Optionally, choose a template from the {% include bc path="Templates" %} menu to get you started.
+-   Otherwise, choose your language from the {% include bc path="Language" %} menu.
 -   Grab code snippets for common tasks from the [Scripting toolbox](/scripting/toolbox).
 -   See [Scripting comparisons](/scripting/comparisons) for a side-by-side comparison of scripting languages.
 
@@ -137,12 +137,12 @@ You can create, edit and run scripts using the built-in [Script Editor](/scripti
 
 # Adding scripts to the Plugins menu
 
-For the script to appear in the ImageJ menus, the following must apply:
+For the script to appear in the menus, the following must apply:
 
 {% include notice icon="warning" content="`.txt` is not a supported script extension" %}
 
-1.  The script file is saved in the `ImageJ.app/scripts` or the
-    `ImageJ.app/plugins/Scripts` directory (or a subdirectory thereof).
+1.  The script file is saved in the `ImageJ2.app/scripts` or the
+    `ImageJ2.app/plugins/Scripts` directory (or a subdirectory thereof).
 2.  The script name ends in a supported script extension. For example:
     - `.groovy` for groovy,
     - `.js` for javascript,
@@ -154,11 +154,11 @@ For the script to appear in the ImageJ menus, the following must apply:
 3.  The script name contains a `_` (underscore) character,
     e.g. `MyScript_.ijm`.
 
-{% include notice icon="fiji" content='Fiji users: replace `ImageJ.app` with `Fiji.app`' %}
+{% include notice icon="fiji" content='Fiji users: replace `ImageJ2.app` with `Fiji.app`' %}
 
 The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
-Scripts in the top-level `ImageJ.app/plugins` directory will appear at the bottom of the *Plugins* menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the `ImageJ.app/scripts/File` directory will add it to the *File* menu.
+Scripts in the top-level `ImageJ2.app/plugins` directory will appear at the bottom of the *Plugins* menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the `ImageJ2.app/scripts/File` directory will add it to the {% include bc path="File" %} menu.
 
 If you aren't able to find your script, you can always use the [search bar](/learn#the-search-bar) to verify its location (or absence).
 

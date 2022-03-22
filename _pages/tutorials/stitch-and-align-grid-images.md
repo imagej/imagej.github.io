@@ -20,7 +20,7 @@ In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles:
 
 ## Stitching
 
-As a first step, we start Fiji and go to '{% include bc path='Plugins | Stitching | Stitch Sequence of Grids of Images'%}':
+As a first step, we start Fiji and go to {% include bc path='Plugins | Stitching | Stitch Sequence of Grids of Images'%}:
 
 ![](/media/tutorials/stitching-menu-grid-sequence.png)
 

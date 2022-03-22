@@ -75,7 +75,7 @@ The first row of the results table contains values for the x, y, width and heigh
 
 From the second row downward, the first column is the time (slice number), the second column is the Ch1 mean intensity, and the third channel is the Ch2 mean intensity and the ratio value. The stack must have its frame interval calibrated in order for the "Time" value to be in seconds. Otherwise, it is "Slices". The frame interval can be set for the stack via the menu command {% include bc path='Image | Properties' %}.
 
-This table can be copied to the clipboard and pasted elsewhere with the "{% include bc path='Edit | Copy All'%}" menu command.
+This table can be copied to the clipboard and pasted elsewhere with the {% include bc path='Edit | Copy All'%} menu command.
 
 ***Ratio Analysis Using ROI manager***
 
@@ -101,7 +101,7 @@ To generate a reference image:
 
 The [LSM Toolbox](/formats/lsm) is a project aiming at the integration of common useful functions around the Zeiss LSM file format, that should enhance usability of confocal LSM files kept in their native format, thus preserving all available metadata.
 
-In Fiji, corresponding commands are: "{% include bc path='File | Import | Show LSMToolbox'%}" which displays the toolbox, from which all commands can be called and "{% include bc path='Help | About Plugins | LSMToolbox...'%}" which displays information about the plugin.
+In Fiji, corresponding commands are: {% include bc path='File | Import | Show LSMToolbox'%} which displays the toolbox, from which all commands can be called and {% include bc path='Help | About Plugins | LSMToolbox...'%} which displays information about the plugin.
 
 ### Biorad
 

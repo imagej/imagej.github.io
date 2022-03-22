@@ -25,8 +25,8 @@ nav-title: Automatic Uploads
 
 GitHub Actions can be used to automatically build a repository in response to code changes. To ease the maintenance of ImageJ update sites, we can use GitHub Actions to automatically upload the latest version of a site. This is done by creating a `.github/workflows/release.yml` file in your update site's GitHub repository that does the following:
 
-1.  Create a fresh ImageJ.app
-2.  Build the update site's repository and move the required artifacts (e.g. `.jars`) to their intended locations in the ImageJ.app
+1.  Create a fresh ImageJ2.app
+2.  Build the update site's repository and move the required artifacts (e.g. `.jars`) to their intended locations in the ImageJ2.app
 3.  Upload the local update site state to your Wiki update site
 
 As a starting point you can copy the following `.github/workflows/release.yml` :
@@ -78,13 +78,13 @@ mvn -B install -Dscijava.app.directory=./Fiji.app -Ddelete.other.versions=true -
 
 with a sequence of commands that will move your build artifacts to the appropriate `./Fiji.app/jars` or `./Fiji.app/plugins` directory, as appropriate for your update site.
 
-This is also true if you have custom scripts, macros, etc... if these files are not present in the correct locations of the local ImageJ.app, they will appear to have been deleted.
+This is also true if you have custom scripts, macros, etc... if these files are not present in the correct locations of the local ImageJ2.app, they will appear to have been deleted.
 
 ## Caveats
 
 {% include notice icon="warning" content="**USE CAUTION HERE**
 
-1.  You are configuring GitHub Actions to upload the state of an ImageJ installation to your update site. The ImageJ.app that will be uploaded is located at `./Fiji.app` with respect to the current working directory of the virtual machine GitHub Actions is running on. If your build artifacts are not located in the `./Fiji.app/jars` or `./Fiji.app/plugins` directory, or you don't manually copy scripts to the correct location, ImageJ will see these items as having been deleted—**effectively removing all content from your update site.** You can mitigate this danger by customizing your `release.yml` to download your own update site into the base ImageJ.app; only changes to the update site state will be uploaded.
+1.  You are configuring GitHub Actions to upload the state of an ImageJ installation to your update site. The ImageJ2.app that will be uploaded is located at `./Fiji.app` with respect to the current working directory of the virtual machine GitHub Actions is running on. If your build artifacts are not located in the `./Fiji.app/jars` or `./Fiji.app/plugins` directory, or you don't manually copy scripts to the correct location, ImageJ will see these items as having been deleted—**effectively removing all content from your update site.** You can mitigate this danger by customizing your `release.yml` to download your own update site into the base ImageJ2.app; only changes to the update site state will be uploaded.
 2.  By default—building the master branch of your repository—your update site will be updated with **every change** to the source code. Although we encourage the master branch to be \"[release ready](/develop/releasing#phase-2-on-master)\", a safer practice would be to configure GitHub Actions to [only build specific events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)—and set it to build [release versions](/develop/architecture#reproducible-builds) only—e.g. with a release version integration branch.
 3.  Using the Maven-based `release.yml` as suggested implies that you are conforming to the managed dependencies of the parent pom.xml. If you are not staying up-to-date with the ImageJ and Fiji update sites (by using the latest ImageJ or Fiji [bill of materials](/develop/architecture#bill-of-materials)) then this automation may break your own update site." %}
 
@@ -106,8 +106,8 @@ This is also true if you have custom scripts, macros, etc... if these files are 
 
 Travis CI can be used to automatically build a repository in response to code changes. To ease the maintenance of ImageJ update sites, we can use Travis to automatically upload the latest version of a site. This is done by creating a `.travis.yml` file in your update site's GitHub repository that does the following:
 
-1.  Create a fresh ImageJ.app
-2.  Build the update site's repository and move the required artifacts (e.g. `.jars`) to their intended locations in the ImageJ.app
+1.  Create a fresh ImageJ2.app
+2.  Build the update site's repository and move the required artifacts (e.g. `.jars`) to their intended locations in the ImageJ2.app
 3.  Upload the local update site state to your Wiki update site
 
 As a starting point you can copy the following `.travis.yml` :
@@ -194,13 +194,13 @@ mvn clean install -Dscijava.app.directory="$(pwd)" -Ddelete.other.versions=true
 
 with a sequence of commands that will move your build artifacts to the appropriate `/jars` or `/plugins` directory, as appropriate for your update site.
 
-This is also true if you have custom scripts, macros, etc... if these files are not present in the correct locations of the local ImageJ.app, they will appear to have been deleted.
+This is also true if you have custom scripts, macros, etc... if these files are not present in the correct locations of the local ImageJ2.app, they will appear to have been deleted.
 
 ## Caveats
 
 {% include notice icon="warning" content="**USE CAUTION HERE**
 
-1.  You are configuring Travis CI to upload the state of an ImageJ installation to your update site. The current working directory IS the ImageJ.app that will be uploaded. If your build artifacts are not located in the `jars` or `plugins` directory, or you don't manually copy scripts to the correct location, ImageJ will see these items as having been deleted—**effectively removing all content from your update site.** You can mitigate this danger by customizing your `.travis-deploy.sh` to download your own update site into the base ImageJ.app; only changes to the update site state will be uploaded.
+1.  You are configuring Travis CI to upload the state of an ImageJ2 installation to your update site. The current working directory IS the ImageJ2.app that will be uploaded. If your build artifacts are not located in the `jars` or `plugins` directory, or you don't manually copy scripts to the correct location, ImageJ will see these items as having been deleted—**effectively removing all content from your update site.** You can mitigate this danger by customizing your `.travis-deploy.sh` to download your own update site into the base ImageJ2.app; only changes to the update site state will be uploaded.
 2.  By default—building the master branch of your repository—your update site will be updated with **every change** to the source code. Although we encourage the master branch to be \"[release ready](/develop/releasing#phase-2-on-master)\", a safer practice would be to configure Travis CI to [only build specific branches](https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches)—and set it to build [release versions](/develop/architecture#reproducible-builds) only—e.g. with a release version integration branch.
 3.  Using the Maven-based `.travis.yml` as suggested implies that you are conforming to the managed dependencies of the parent pom.xml. If you are not staying up-to-date with the ImageJ and Fiji update sites (by using the latest ImageJ or Fiji [bill of materials](/develop/architecture#bill-of-materials)) then this automation may break your own update site." %}
 

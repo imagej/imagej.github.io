@@ -17,7 +17,7 @@ This tutorial is also available in Jupyter notebook form [here](https://nbviewer
 
 ## Introduction & required files
 
-All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](/scripting/script-editor)) and compile & run them. The required Java libraries (jar files) are part of ImageJ and can be found in *ImageJ.app/jars/*:
+All examples presented on this page are always entire classes including a main method to run them. Simply copying them into your favorite editor (e.g. the [Script Editor](/scripting/script-editor)) and compile & run them. The required Java libraries (jar files) are part of [ImageJ2](/software/imagej2) and can be found in `ImageJ2.app/jars/`:
 
 -   imglib2 (the core)
 -   imglib2-algorithm (algorithms implemented in ImgLib2)

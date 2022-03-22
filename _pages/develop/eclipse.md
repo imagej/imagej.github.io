@@ -240,7 +240,7 @@ All modern Eclipse installations have the m2e plugin, so you can simply tell
 Maven to
 [build the project](http://www.vogella.com/tutorials/EclipseMaven/article.html#example_eclipsemavenproject_runningthebuild).
 This creates a `.jar` in the `/target` subdirectory,
-which you can then copy to an `ImageJ.app/jars/` directory.
+which you can then copy to an `ImageJ2.app/jars/` directory.
 
 This is a simple option that makes minimal changes to the existing
 installation.
@@ -263,7 +263,7 @@ Steps are as follows:
    can double-click "Maven Build" to create a new run configuration.
 
 3. Add a parameter: `scijava.app.directory` with value:
-   `<path/to/ImageJ.app>` (e.g. `/home/hinerm/Fiji.app`)
+   `<path/to/ImageJ2.app>` (e.g. `/home/hinerm/Fiji.app`)
 
 4. Add a parameter: `scijava.deleteOtherVersions` with value: `always`
 

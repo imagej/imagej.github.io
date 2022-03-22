@@ -41,8 +41,6 @@ Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jr
 
 Use the `--java-home` command line option:
 
-<!-- -->
-
     /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \  
     '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
@@ -52,8 +50,6 @@ In particular, this means that to run Java 6 on the latest macOS versions, you m
 
 -   ***EITHER:*** Remove all installations of Java 7 and Java 8 ([remove the JRE](https://www.java.com/en/download/help/mac_uninstall_java.xml) and [remove all JDKs](http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html#uninstall)).
 -   ***OR:*** Launch ImageJ explicitly using `java`. Here is a sample invocation for Fiji (copy and paste into Terminal):
-
-<!-- -->
 
     export J6="$(/usr/libexec/java_home -v 1.6)"
     export IJ_HOME=/Applications/Fiji.app
@@ -65,8 +61,6 @@ See "How do I setup a launcher app" below for instructions on turning this invoc
 
 Use the `--java-home` command line option:
 
-<!-- -->
-
     $HOME/ImageJ.app/ImageJ-linux64 --java-home \  
     /usr/lib/jvm/java-7-openjdk-amd64
 
@@ -75,8 +69,6 @@ One downside of doing this is that ImageJ will launch in a separate process, whi
 ## How do I setup a launcher app for macOS for running with a different JVM version?
 
 Start Automator and select to create an *Application*. Double-click *Run Shell Script* in the Library/Utilities folder and replace the text content — cat — with the following:
-
-<!-- -->
 
     open -a "Fiji.app" --args --java-home \  
     /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/
@@ -146,8 +138,6 @@ Indeed, an earlier version of the Updater does not use your system-wide network 
 -   open the [Script Editor](/scripting/script-editor) with {% include bc path='File | New | Script' %}
 -   set the language to *BeanShell* in the {% include bc path="Language" %} menu of the editor
 -   paste the following code (and adjust it to match your settings):
-
-<!-- -->
 
     import ij.IJ;
 

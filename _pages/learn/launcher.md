@@ -74,11 +74,30 @@ There are basically two ways to do that:
 
 {% include notice icon="note" content="Even if you do not pass ImageJ options at all, you need to add the separator, otherwise ImageJ thinks you passed it an ImageJ option. Example:<br>`./ImageJ-linux64 -XX:+HeapDumpOnOutOfMemoryError --`" %}
 
-- By modifying/creating the file `jvm.cfg` in the same directory as the ImageJ launcher.
+- By modifying/creating the file `ImageJ.cfg` in the same directory as the ImageJ launcher.
 
-{% include notice icon="note" content="The options listed in `jvm.cfg` will be passed to the virtual machine before the options passed on the command line, so that the command line can override the options specified in `jvm.cfg`." %}
+{% include notice icon="note" content="The options listed in `ImageJ.cfg` will be passed to the virtual machine before the options passed on the command line, so that the command line can override the options specified in `ImageJ.cfg`." %}
 
-Which method is appropriate for you depends on what you want to do: if you want to change ImageJ's default, use the `jvm.cfg` method.
+Which method is appropriate for you depends on what you want to do: if you want to change ImageJ's default, use the `ImageJ.cfg` method.
+
+### Example ImageJ.cfg
+
+`ImageJ.cfg` will change the default settings for the launcher. The file should be located in the same directory as the launcher, usually `Fiji.app`. An example `ImageJ.cfg` is as follows:
+
+```
+# ImageJ startup properties
+maxheap.mb = 1024
+jvmargs = -XX:+HeapDumpOnOutOfMemoryError -Xincgc
+legacy.mode = false
+```
+
+#### Keys
+
+- `maxheap.mb` The integer value is passed as a `-Xmx` option to the JVM set the maximum heap size. See below.
+- `jvmargs` Arguments passed to the Java Virtual machine.
+- `legacy.mode` Deprecated option to disable use of the legacy `ImageJ.cfg`. In recent versions of the launcher, this is [ignored](https://github.com/imagej/imagej-launcher/commit/0c3902642829b40a8ed72edd5ea3fbc1a3872acf).
+
+Note that this differs from an [older legacy format](https://imagej.nih.gov/ij/docs/install/windows.html) and that the first "# ImageJ startup properties" comment line is [required](https://github.com/imagej/imagej-launcher/blob/0c3902642829b40a8ed72edd5ea3fbc1a3872acf/src/main/c/config.c#L116-L123).
 
 ### The double-dash
 

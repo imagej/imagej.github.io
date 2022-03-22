@@ -19,9 +19,9 @@ See also [How do I launch ImageJ with a different version of Java?](/learn/faq#h
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode:
 
 -   <img src="/media/icons/linux.svg" height="20"/> On Linux 64-bit (from a console):
-        DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64
+        DEBUG=1 $HOME/ImageJ2.app/ImageJ-linux64
 -   <img src="/media/icons/macos.png" height="20"/> On macOS (from Terminal):
-        DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx
+        DEBUG=1 /Applications/ImageJ2.app/Contents/MacOS/ImageJ-macosx
 -   <img src="/media/icons/windows.svg" height="20"/> On Windows 64-bit:
     -   Make a copy of `ImageJ-win64.exe` called `debug.exe`
     -   Run `debug.exe`
@@ -30,7 +30,7 @@ To diagnose problems with ImageJ, it is often helpful to launch it in debug mode
 
 You can control the log level more precisely by setting the `scijava.log.level` system property. E.g., on Linux:
 
-    $HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --
+    $HOME/ImageJ2.app/ImageJ-linux64 -Dscijava.log.level=trace --
 
 Valid levels include: `none`, `error`, `warn`, `info`, `debug` and `trace`. See the [Logging](/develop/logging) page for more about SciJava logging.
 
@@ -91,7 +91,7 @@ Then you can try the following:
         .
         jre\bin\javaw.exe
         -Xmx512m -cp ij.jar ij.ImageJ
--   Save the file as `ImageJ.cfg` in your `ImageJ.app` (or `Fiji.app`) installation.
+-   Save the file as `ImageJ.cfg` in your `ImageJ2.app` (or `Fiji.app`) installation.
     -   Note that by default, Windows hides file extensions; you may need to [show file extensions](http://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions) before you can successfully name the file `ImageJ.cfg` as required.
 -   Try running `ImageJ-win32.exe` again.
 
@@ -266,6 +266,20 @@ To control the version of Java that ImageJ uses, see [How do I launch ImageJ wit
 These errors indicate a "version skew" between the software libraries in your ImageJ installation. Most commonly, this situation occurs when multiple [update sites](/update-sites) are enabled which ship incompatible versions of those libraries.
 
 The proper fix is for the maintainers of those update sites to reconcile the versions somehow, but as a user you can work around the issue in the meantime by disabling the problematic update site(s). Start from a fresh download of ImageJ, enabling the update sites you want one by one, testing your workflow each time. Once you determine which update site(s) causes the issue, you can create a separate copy of ImageJ with only the problematic site(s) enabled. Although you will no longer have a single ImageJ with all desired functionality enabled, keeping isolated installations will let you continue using all the plugins you need by launching each appropriate copy of ImageJ.
+
+## VerifyError
+
+Certain versions and builds of the [original ImageJ](/software/imagej) library (`ij.jar`) within an [ImageJ2](/software/imagej2) installation may result in fatal `VerifyError` messages to the console upon startup.
+
+For example, if you compile the original ImageJ with OpenJDK 8 and insert the resulting `ij.jar` into `Fiji.app/jars`, it may fail with `java.lang.VerifyError: Expecting a stack map frame`. This is a known documented [issue with ij1-patcher](https://github.com/imagej/ij1-patcher/issues/50).
+
+To work around this issue before a proper fix is available, you can [disable bytecode verification](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html#BABHDABI):
+
+    $HOME/ImageJ2.app/ImageJ-linux64 -Xverify:none --
+
+(Replacing `ImageJ-linux64` with the launcher for your particular platform, of course.)
+
+There may still be problems with the [ImageJ Legacy layer](/libs/imagej-legacy) in this scenario, but it does allow the program to start up successfully.
 
 # macOS issues
 
