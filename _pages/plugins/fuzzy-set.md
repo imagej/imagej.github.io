@@ -30,7 +30,7 @@ To use our software to transform images, the user must install the software onto
 
 1. You will need to know whether you have a 32- or 64-bit operating system, according to the website, Fiji can run on:
 
--   Windows XP, Vista, 7, 8 and 10
+-   Windows XP, Vista, 7, 8, 10, 11, etc.
 -   Mac OS X 10.8 "Mountain Lion" or later
 -   Linux on amd64 and x86 architectures
 

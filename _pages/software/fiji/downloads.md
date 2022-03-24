@@ -10,7 +10,7 @@ title: Fiji Downloads
 
 Fiji is supported on the following systems:
 
--   Windows XP, Vista, 7, 8 and 10
+-   Windows XP, Vista, 7, 8, 10, 11, etc.
 -   Mac OS X 10.8 "Mountain Lion" or later
 -   Linux on amd64 and x86 architectures
 
