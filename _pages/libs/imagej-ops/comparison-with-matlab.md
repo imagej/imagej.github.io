@@ -228,7 +228,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
   <tbody>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='ImageAdapter' %}</p>
+        <p>{% include matlab path='images/ref' function='imageadapter-class' %}</p>
       </td>
       <td>
         <p>Interface for image I/O</p>
@@ -1164,7 +1164,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='iptGetPointerBehavior' %}</p>
+        <p>{% include matlab path='images/ref' function='iptgetpointerbehavior' %}</p>
       </td>
       <td>
         <p>Retrieve pointer behavior from graphics object</p>
@@ -1180,7 +1180,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='iptPointerManager' %}</p>
+        <p>{% include matlab path='images/ref' function='iptpointermanager' %}</p>
       </td>
       <td>
         <p>Create pointer manager in figure</p>
@@ -1196,7 +1196,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='iptSetPointerBehavior' %}</p>
+        <p>{% include matlab path='images/ref' function='iptsetpointerbehavior' %}</p>
       </td>
       <td>
         <p>Store pointer behavior structure in graphics object</p>
@@ -1212,7 +1212,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='makeConstrainToRectFcn' %}</p>
+        <p>{% include matlab path='images/ref' function='makeconstraintorectfcn' %}</p>
       </td>
       <td>
         <p>Create rectangularly bounded drag constraint function</p>
@@ -1391,7 +1391,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='images.geotrans.PiecewiseLinearTransformation2D' %}</p>
+        <p>{% include matlab path='images/ref' function='images.geotrans.piecewiselineartransformation2d' %}</p>
       </td>
       <td>
         <p>2-D piecewise linear geometric transformation</p>
@@ -1399,7 +1399,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='images.geotrans.PolynomialTransformation2D' %}</p>
+        <p>{% include matlab path='images/ref' function='images.geotrans.polynomialtransformation2d' %}</p>
       </td>
       <td>
         <p>2-D Polynomial Geometric Transformation</p>
@@ -1407,7 +1407,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='images.geotrans.LocalWeightedMeanTransformation2D' %}</p>
+        <p>{% include matlab path='images/ref' function='images.geotrans.localweightedmeantransformation2d' %}</p>
       </td>
       <td>
         <p>2-D Local Weighted Mean Geometric Transformation</p>
@@ -1553,7 +1553,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='registration.metric.MattesMutualInformation' %}</p>
+        <p>{% include matlab path='images/ref' function='registration.metric.mattesmutualinformation' %}</p>
       </td>
       <td>
         <p>Mattes mutual information metric configuration object</p>
@@ -1561,7 +1561,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='registration.metric.MeanSquares' %}</p>
+        <p>{% include matlab path='images/ref' function='registration.metric.meansquares' %}</p>
       </td>
       <td>
         <p>Mean square error metric configuration object</p>
@@ -1569,7 +1569,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='registration.optimizer.RegularStepGradientDescent' %}</p>
+        <p>{% include matlab path='images/ref' function='registration.optimizer.regularstepgradientdescent' %}</p>
       </td>
       <td>
         <p>Regular step gradient descent optimizer configuration object</p>
@@ -1577,7 +1577,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='registration.optimizer.OnePlusOneEvolutionary' %}</p>
+        <p>{% include matlab path='images/ref' function='registration.optimizer.oneplusoneevolutionary' %}</p>
       </td>
       <td>
         <p>One-plus-one evolutionary optimizer configuration object</p>
@@ -1910,7 +1910,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralImage' %}</p>
+        <p>{% include matlab path='images/ref' function='integralimage' %}</p>
       </td>
       <td>
         <p>Calculate integral image</p>
@@ -1918,7 +1918,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralImage3' %}</p>
+        <p>{% include matlab path='images/ref' function='integralimage3' %}</p>
       </td>
       <td>
         <p>Calculate 3-D integral image</p>
@@ -1926,7 +1926,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralBoxFilter' %}</p>
+        <p>{% include matlab path='images/ref' function='integralboxfilter' %}</p>
       </td>
       <td>
         <p>2-D box filtering of integral images</p>
@@ -1934,7 +1934,7 @@ This page is intended to help developers switch from MATLAB to Ops by showing eq
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralBoxFilter3' %}</p>
+        <p>{% include matlab path='images/ref' function='integralboxfilter3' %}</p>
       </td>
       <td>
         <p>3-D box filtering of 3-D integral images</p>
@@ -2422,7 +2422,7 @@ Deblurring
   <tbody>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='ImageAdapter' %}</p>
+        <p>{% include matlab path='images/ref' function='imageadapter-class' %}</p>
       </td>
       <td>
         <p>Interface for image I/O</p>
@@ -3296,7 +3296,7 @@ Deblurring
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralBoxFilter3' %}</p>
+        <p>{% include matlab path='images/ref' function='integralboxfilter3' %}</p>
       </td>
       <td>
         <p>3-D box filtering of 3-D integral images</p>
@@ -3304,7 +3304,7 @@ Deblurring
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='IntegralImage3' %}</p>
+        <p>{% include matlab path='images/ref' function='integralimage3' %}</p>
       </td>
       <td>
         <p>Calculate 3-D integral image</p>
@@ -3913,7 +3913,7 @@ Deblurring
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralBoxFilter' %}</p>
+        <p>{% include matlab path='images/ref' function='integralboxfilter' %}</p>
       </td>
       <td>
         <p>2-D box filtering of integral images</p>
@@ -3921,7 +3921,7 @@ Deblurring
     </tr>
     <tr>
       <td>
-        <p>{% include matlab path='images/ref' function='integralImage' %}</p>
+        <p>{% include matlab path='images/ref' function='integralimage' %}</p>
       </td>
       <td>
         <p>Calculate integral image</p>
