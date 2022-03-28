@@ -3,7 +3,7 @@
 # Parse ImageJ tutorials into documents for
 # use with their own searchable collection.
 
-import logging, os, traceback
+import logging, traceback
 import yaml
 from parseutil import first_sentence
 
@@ -12,12 +12,12 @@ logger = logging.getLogger(__name__)
 
 
 def is_imagej_tutorials(root):
-    java = os.path.join(root, 'java')
-    notebooks = os.path.join(root, 'notebooks')
-    return os.path.isdir(java) and os.path.isdir(notebooks)
+    java = Path(root) / 'java'
+    notebooks = Path(root) / 'notebooks'
+    return java.isdir() and notebooks.isdir()
 
 
-def parse_java_source(root, path):
+def parse_java_source(path):
     logger.debug(f'Parsing Java source file {path}...')
 
     with open(path) as f:
@@ -30,7 +30,7 @@ def parse_java_source(root, path):
     return doc
 
 
-def parse_notebook(root, path):
+def parse_notebook(path):
     logger.debug(f'Parsing notebook {path}...')
 
     with open(path) as f:
@@ -45,27 +45,22 @@ def parse_notebook(root, path):
     return doc
 
 
-def find_resources(root, suffix):
-    # TODO: use pathlib to find all .java or .ipynb (based on suffix) inside root.
-    pass
-
-
 def load_imagej_tutorials(root):
     """
     Loads the content from the given imagej/tutorials folder.
     See: https://github.com/imagej/tutorials
     """
-    java = os.path.join(siteroot, 'java')
-    notebooks = os.path.join(siteroot, 'notebooks')
-    if not os.path.isdir(java) or not os.path.isdir(notebooks):
+    java = Path(root) / 'java'
+    notebooks = Path(root) / 'notebooks'
+    if not java.isdir() or not notebooks.isdir():
         raise ValueError(f'The path {siteroot} does not appear to be a Jekyll site.')
 
     logger.info('Loading content...')
     documents = []
 
-    for javafile in find_resources(java, '.java'):
+    for javafile in java.rglob("**/*.java"):
         try:
-            doc = parse_java_source(root, path)
+            doc = parse_java_source(javafile)
             if doc:
                 documents.append(doc)
         except:
@@ -73,9 +68,9 @@ def load_imagej_tutorials(root):
             traceback.print_exc()
     logger.info(f'Loaded {len(documents)} documents from Java source files')
 
-    for nbfile in find_resources(notebooks, '.ipynb'):
+    for nbfile in notebooks.rglob("**/*.ipynb"):
         try:
-            doc = parse_notebook(root, path)
+            doc = parse_notebook(nbfile)
             if doc:
                 documents.append(doc)
         except:
