@@ -45,6 +45,9 @@ def parse_notebook(path):
 
     return doc
 
+def process_cell(cell):
+    return type(cell)
+
 
 def load_imagej_tutorials(root):
     """
@@ -54,7 +57,7 @@ def load_imagej_tutorials(root):
     java = Path(root) / 'java'
     notebooks = Path(root) / 'notebooks'
     if not java.isdir() or not notebooks.isdir():
-        raise ValueError(f'The path {siteroot} does not appear to be a Jekyll site.')
+        raise ValueError(f'The path {root} does not appear to be a Jekyll site.')
 
     logger.info('Loading content...')
     documents = []
@@ -65,7 +68,7 @@ def load_imagej_tutorials(root):
             if doc:
                 documents.append(doc)
         except:
-            logger.error(f'Failed to parse {path}:')
+            logger.error(f'Failed to parse {Path}:')
             traceback.print_exc()
     logger.info(f'Loaded {len(documents)} documents from Java source files')
 
@@ -75,8 +78,11 @@ def load_imagej_tutorials(root):
             if doc:
                 documents.append(doc)
         except:
-            logger.error(f'Failed to parse {path}:')
+            logger.error(f'Failed to parse {Path}:')
             traceback.print_exc()
     logger.info(f'Loaded {len(documents)} documents from Jupyter notebooks')
 
     return documents
+
+def main():
+    print("Hello")

@@ -2,6 +2,7 @@
 
 import logging, os, sys
 import jekyll, ijsite, tsutil
+import tutorials
 
 
 logger = logging.getLogger('indexer')
@@ -12,6 +13,8 @@ def load_site(siteroot):
         return jekyll.load_jekyll_site(siteroot)
     if ijsite.is_imagej_website(siteroot):
         return ijsite.load_site(siteroot)
+    if tutorials.is_imagej_tutorials(siteroot):
+        return tutorials.load_imagej_tutorials(siteroot)
     return None
 
 
