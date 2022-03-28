@@ -4,8 +4,9 @@
 # use with their own searchable collection.
 
 import logging, traceback
-import yaml
+import json
 from parseutil import first_sentence
+from pathlib import Path
 
 
 logger = logging.getLogger(__name__)
