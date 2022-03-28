@@ -1,12 +1,12 @@
 ---
 mediawiki: Comparison_of_Matlab_functions_and_Ops
-title: Comparison of Matlab functions and Ops
+title: Comparison of MATLAB functions and Ops
 project: /software/imagej2
 ---
 
-{% include notice icon="info" content='This page is under active development.
+{% include notice icon="info" content='This page is under active development.' %}
 
--   The intention is to help developers switch from MATLAB to Ops by showing equivalent operations.' %}
+This page is intended to help developers switch from MATLAB to Ops by showing equivalent operations.
 
 ## Import, Export, and Conversion
 
