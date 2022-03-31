@@ -9,7 +9,7 @@ and [deepImageJ](https://deepimagej.github.io/deepimagej/) for segmentation and 
 
 {% include img align ="center" name="GAT_overview" src ="https://raw.githubusercontent.com/pr4deepr/GutAnalysisToolbox/main/wiki_images/figures/summary_figure.png" %}
 
-A detailed how to use instructions with wiki is available here: https://github.com/pr4deepr/GutAnalysisToolbox/wiki
+Click [here to access the WIKI](https://github.com/pr4deepr/GutAnalysisToolbox/wiki) detailed instructions on how to use GAT.A detailed how to use instructions with wiki is available here: 
 
 You can also watch tutorials for GAT on [Youtube](https://www.youtube.com/playlist?list=PLmBt1Dumq60p4mIFT4j7TP_PVRjbO55Oi).
 
