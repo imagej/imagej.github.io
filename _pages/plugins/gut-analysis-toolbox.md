@@ -1,15 +1,13 @@
 ---
 title: Gut Analysis Toolbox
-description: Gut Analysis Toolbox or GAT allows the semi-automated analysis of the cells within the enteric nervous system of the gastrointestinal tract in **2D**. GAT enables quantification of enteric neurons and their subtypes in gut wholemounts. It runs in FIJI, a popular image analysis software in microscopy and uses deep learning models to segment cells of interest. 
+description: Gut Analysis Toolbox or GAT allows the semi-automated analysis of the cells within the enteric nervous system of the gastrointestinal tract in **2D**. GAT enables quantification of enteric neurons and their subtypes in gut wholemounts. It runs in Fiji, a popular image analysis software in microscopy and uses custom deep learning models to segment cells of interest. 
 categories: [Analysis,Segmentation,Neuron,Gut]
 ---
 
-**Gut Analysis Toolbox** enables semi-automated analysis of the neuronal and glial distribution within the gut wall (enteric nervous system). It uses a combination of `FIJI macros`, [StarDist](https://github.com/stardist/stardist) 
-and [deepImageJ](https://deepimagej.github.io/deepimagej/) under the hood to do the heavy lifting with automated segmentation. 
+**Gut Analysis Toolbox** enables semi-automated analysis of the neuronal and glial distribution within the gut wall (enteric nervous system). It uses a combination of `FIJI macros`, [StarDist](https://github.com/stardist/stardist), [CLIJ](https://clij.github.io/) 
+and [deepImageJ](https://deepimagej.github.io/deepimagej/) for segmentation and analysis.
 
-<p align="center">
-<img src="https://github.com/pr4deepr/GutAnalysisToolbox/blob/main/wiki_images/figures/summary_figure.png" alt="GAT_overview" width="600" >
-</p>
+{% include img align ="center" name="GAT_overview" src ="https://raw.githubusercontent.com/pr4deepr/GutAnalysisToolbox/main/wiki_images/figures/summary_figure.png" %}
 
 A detailed how to use instructions with wiki is available here: https://github.com/pr4deepr/GutAnalysisToolbox/wiki
 
@@ -27,7 +25,7 @@ What you can do with GAT:
 
 Software citation on Zenodo:
 
-Luke Sorensen, Ayame Saito, Sabrina Poon, Myat Noe Han, Adam Humenick, Keith Mutunduwe, Christie Glennan, Narges Mahdavian, Simon JH Brookes, Rachel M McQuade, Jaime PP Foong, Sebastian K. King, Estibaliz Gómez-de-Mariscal, Robert Haase, Simona Carbone, Nicholas A. Veldhuis, Daniel P. Poole, & Pradeep Rajasekhar (2022). Gut Analysis Toolbox (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.6095590
+Luke Sorensen, Ayame Saito, Sabrina Poon, Myat Noe Han, Adam Humenick, Keith Mutunduwe, Christie Glennan, Narges Mahdavian, Simon JH Brookes, Rachel M McQuade, Jaime PP Foong, Sebastian K. King, Estibaliz Gómez-de-Mariscal, Robert Haase, Simona Carbone, Nicholas A. Veldhuis, Daniel P. Poole, & Pradeep Rajasekhar (2022). Gut Analysis Toolbox (1.0.0). Zenodo. doi: 10.5281/zenodo.6095590
 
 To download the training data, notebooks and associated models please go to the following Zenodo link:
 
