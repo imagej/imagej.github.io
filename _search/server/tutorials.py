@@ -46,6 +46,9 @@ def parse_notebook(path):
     return doc
 
 def process_cell(cell):
+    # 2 cases: java file or a notebook
+    # case 1: notebook -> need info inside cells and then info from output lines
+    # case 2: java file -> need class name and class javadoc for description
     return type(cell)
 
 
