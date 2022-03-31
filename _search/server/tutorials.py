@@ -22,7 +22,7 @@ def parse_java_source(path):
     logger.debug(f'Parsing Java source file {path}...')
 
     with open(path) as f:
-        lines = json.read(f)
+        lines = json.load(f)
 
     # This is dumb -- do we want to do better?
     doc = {}
@@ -35,7 +35,7 @@ def parse_notebook(path):
     logger.debug(f'Parsing notebook {path}...')
 
     with open(path) as f:
-        data = json.read(f)
+        data = json.load(f)
 
     doc = {}
     doc['content'] = ''
@@ -45,10 +45,15 @@ def parse_notebook(path):
 
     return doc
 
+# type of cell is dict for reference
+# 2 cases: java file or a notebook
+# case 1: notebook -> need info inside cells and then info from output lines
+# case 2: java file -> need class name and class javadoc for description
 def process_cell(cell):
-    # 2 cases: java file or a notebook
-    # case 1: notebook -> need info inside cells and then info from output lines
-    # case 2: java file -> need class name and class javadoc for description
+    # case 1: notebook
+
+    # case 2: java files
+
     return type(cell)
 
 
