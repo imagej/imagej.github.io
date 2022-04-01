@@ -3,7 +3,9 @@ title: Virtual Cell
 section: Explore:Software
 icon: /media/icons/vcell.png
 name: Virtual Cell
-affiliation: "[CCAM](https://health.uconn.edu/cell-analysis-modeling/) at [UConn Health](https://health.uconn.edu/)"
+affiliation:
+- CCAM | https://health.uconn.edu/cell-analysis-modeling/
+- UConn Health | https://health.uconn.edu/
 website: https://vcell.org/
 source-url: https://github.com/virtualcell/vcell
 project-blurb: the Virtual Cell modeling and simulation environment for cell biology
