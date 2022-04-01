@@ -13,7 +13,7 @@ categories: [Analysis,Segmentation,Neuron,Gut]
 **Gut Analysis Toolbox** enables semi-automated analysis of the neuronal and glial distribution within the gut wall (enteric nervous system). It uses a combination of `FIJI macros`, [StarDist](https://github.com/stardist/stardist), [CLIJ](https://clij.github.io/) 
 and [deepImageJ](https://deepimagej.github.io/deepimagej/) for segmentation and analysis.
 
-{% include img align ="center" name="GAT_overview" src="https://raw.githubusercontent.com/pr4deepr/GutAnalysisToolbox/main/wiki_images/figures/summary_figure.png" %}
+{% include img align="center" name="GAT overview" src="https://raw.githubusercontent.com/pr4deepr/GutAnalysisToolbox/main/wiki_images/figures/summary_figure.png" %}
 
 Click [here to access the WIKI](https://github.com/pr4deepr/GutAnalysisToolbox/wiki) detailed instructions on how to use GAT.A detailed how to use instructions with wiki is available here: 
 
