@@ -28,7 +28,7 @@ Most people might think that the image contains 4 distinct colours: 2 sets of th
 
 So... now, how do you feel about determining colocalization by looking for yellow blobs? Doesn't make much sense does it? We notice that the shades and hues of colours look different according to what other colours they are next to! So, you need to measure something from the pixel values, not simply subjectively "look at" a red/green colour merge image.
 
-An even better reason to always quantitatively evaluate colcoalization is that this actually tells you what you are looking for - the correlation (or not) between 2 channels of pixels over space.
+An even better reason to always quantitatively evaluate colocalization is that this actually tells you what you are looking for - the correlation (or not) between 2 channels of pixels over space.
 
 ## Methods of colocalization analysis
 
