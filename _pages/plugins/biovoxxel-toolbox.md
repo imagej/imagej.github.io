@@ -115,7 +115,7 @@ Status: maintenance active
 ------------------------------------------------------------------------
 
 # Watershed Irregular Features
-
+[The new Label Splitter for 2D and 3D images as alternative](https://biovoxxel.github.io/bv3dbox#label-splitter)
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular (non-ellipsoid like) structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
 <img src="/media/plugins/watershed-irregular-features.png" width="770"/>
