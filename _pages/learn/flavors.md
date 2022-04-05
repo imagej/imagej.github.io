@@ -29,6 +29,8 @@ There are a many different derivatives of ImageJ with very similar names, and so
     </tr>
     <tr>
       <td><img src="/media/icons/imagej.png" width="64"/></td>
+      <td><a href="/software/imagej">ImageJ</a></td>
+      <td>{% include person id='rasband' %}</td>
       <td>The original version of ImageJ which has been in development since 1997.
         It has a strong, established user base, with thousands of plugins and
         macros for performing a wide variety of tasks. Sometimes referred to as
