@@ -349,10 +349,10 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
         Anne Carpenter
       </td>
       <td>
-        {% include person id='0x00b1' %}
+        {% include person id='bethac07' %}
       </td>
       <td>
-        {% include person id='0x00b1' %}
+        {% include person id='bethac07' %}
       </td>
       <td>
         <a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a>
@@ -397,17 +397,15 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
         <strong><a href="/software/icy">Icy</a></strong>
       </td>
       <td>
-        Stephane Dallongeville<br>
+        {% include person='Stephane-D' %}<br>
         {% include person id='Fab14' %}<br>
         Jean-Christophe Olivo-Marin
       </td>
       <td>
-        Stephane Dallongeville<br>
-        {% include person id='Fab14' %}
+        {% include person='Stephane-D' %}
       </td>
       <td>
-        Stephane Dallongeville<br>
-        {% include person id='Fab14' %}
+        {% include person='Stephane-D' %}
       </td>
       <td>
         <a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a>
