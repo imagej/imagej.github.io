@@ -2,7 +2,8 @@
 title: Labkit - Intuitive Pixel Classification in Fiji
 
 artifact: sc.fiji:labkit-ui
-categories: [Uncategorized]
+categories: [Classification, Machine Learning]
+doi: 10.3389/fcomp.2022.777728
 ---
 
 ## Abstract
@@ -21,10 +22,10 @@ Labkit is a user-friendly Fiji plugin for the segmentation of microscopy image d
 2. Install Labkit's [update site](/update-sites/following):
    1. Start Fiji
    2. From the menu, select {% include bc path="Help | Update" %}
-   3. Click on `Manage Update Sites`, then select `Labkit` in the table
-   4. Close, click on `Apply changes` and then `Ok`
+   3. Click on {% include button label="Manage Update Sites" %}, then select "Labkit" in the table
+   4. Close, click on {% include button label="Apply changes" %} and then {% include button label="Ok" %}
    5. Restart Fiji
-3. Find Labkit in the plugin menu of Fiji, under "Labkit".
+3. Find Labkit in the menu at {% include bc path="Plugins | Labkit" %}.
 
 ## Tutorials
 
@@ -44,19 +45,6 @@ Labkit is a user-friendly Fiji plugin for the segmentation of microscopy image d
 
 ## How to cite
 
-If you find Labkit useful for your research, please cite it: [LABKIT: Labeling and Segmentation Toolkit for Big Image Data](https://www.frontiersin.org/article/10.3389/fcomp.2022.777728)
+If you find Labkit useful for your research, please cite it:
 
-```
-@article{arzt2022labkit
-  author={Arzt, Matthias and Deschamps, Joran and Schmied, Christopher and Pietzsch, Tobias and Schmidt, Deborah and Tomancak, Pavel and Haase, Robert and Jug, Florian},   
-  title={LABKIT: Labeling and Segmentation Toolkit for Big Image Data},      
-  journal={Frontiers in Computer Science},      
-  volume={4},      
-  year={2022},      
-  url={https://www.frontiersin.org/article/10.3389/fcomp.2022.777728},       
-  doi={10.3389/fcomp.2022.777728},      
-  issn={2624-9898},   
-}
-```
-
-
+* {% include citation %}
