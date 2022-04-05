@@ -397,15 +397,15 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
         <strong><a href="/software/icy">Icy</a></strong>
       </td>
       <td>
-        {% include person name='Stephane-D' %}<br>
+        {% include person id='Stephane-D' %}<br>
         {% include person id='Fab14' %}<br>
         Jean-Christophe Olivo-Marin
       </td>
       <td>
-        {% include person name='Stephane-D' %}
+        {% include person id='Stephane-D' %}
       </td>
       <td>
-        {% include person name='Stephane-D' %}
+        {% include person id='Stephane-D' %}
       </td>
       <td>
         <a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a>
