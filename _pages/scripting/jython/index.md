@@ -5,7 +5,7 @@ section: Extend:Scripting:Languages
 project: /software/imagej2
 ---
 
-{% include notice message="This page describes how to write scripts in
+{% include notice content="This page describes how to write scripts in
   **Jython**, the JVM-based flavor of Python. To call ImageJ functions
   from Python programs, see [PyImageJ](/scripting/pyimagej)." %}
 

@@ -8,7 +8,7 @@ team-developers: '@ctrueden, @hinerm, @elevans'
 doi: 10.5281/zenodo.5537065
 ---
 
-{% include notice message="This page describes **PyImageJ**, a Python package
+{% include notice content="This page describes **PyImageJ**, a Python package
   making ImageJ functions accessible from Python. To write scripts in Jython,
   the JVM-based flavor of Python, see [Jython scripting](/scripting/jython)." %}
 
