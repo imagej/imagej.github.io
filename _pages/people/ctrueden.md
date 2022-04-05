@@ -47,88 +47,88 @@ ImageJ2 team to respond to every support request within one work day:
   support requests, issues, pull requests, etc., per component, in a way that
   will foster accountability for the people maintaining each component.
 
-* **Community Mondays.** In the meantime, starting in 2022, I am personally
-  focusing every Monday on answering support questions. I can't keep up with
+* **Community Fridays.** In the meantime, starting in 2022, I am personally
+  focusing every Friday on answering support questions. I can't keep up with
   everything, but I can try to make some small impact by responding to as many
   requests as I can. Unfortunately, until the status.scijava.org work is
   complete, I won't always succeed in prioritizing items in a fair order, but
-  I'm doing my best. And once the component table is upgraded, I will switch
-  to a daily rather than weekly support workflow.
+  I'm doing my best.
 
 ## What is Curtis working on?
 
+*Last updated: 2022-Apr-05*
+
+### Weekly allocation of effort
+
+|     Day | Focus                   |
+|--------:|:------------------------|
+| **Mon** | Meetings and mentorship |
+| **Tue** | Immediate priorities    |
+| **Wed** | Review and merge PRs    |
+| **Thu** | Project management      |
+| **Fri** | Community support       |
+
 ### Immediate priorities
 
-*Last updated: 2022-Feb-09*
+1.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} job:
+    - Activate CI with correct caching.
+    - Ensure it updates the correct ImageJ Launcher version with up-to-date bundled OpenJDK for each platform.
 
-1.  Fix `net.imagej:ij` deployment ({% include github org='imagej' repo='ImageJ' issue=142 %})
+2.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %}).
 
-2.  New pom-scijava release
+3.  [with {% include person id='hinerm' %}] New pom-scijava release:
     -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
     -   Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
     -   Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
     -   Finish fixing javadoc.scijava.org ({% include github org='scijava' repo='pom-scijava' issue=130 %})
+    -   Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
+    -   Make the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %}) fully work.
+    -   Fix failing CI builds:
+        * `imagej/pyimagej`
+        * `scijava/jgo`
+        * `imagej/tutorials`
+        * `axtimwalde/mpicbg`
+        * `imagej/imagej-omero`
+        * `imagej/imagej-opencv`
+        * `fiji/H5J_Loader_Plugin`
+        * `fiji/Kappa`
+        * Update CI-related docs on imagej.net
 
-3.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' %})
-
-4.  Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
-
-5.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %})
-
-6.  Fix failing CI builds
-    * `imagej/pyimagej`
-    * `scijava/jgo`
-    * `imagej/tutorials`
-    * `axtimwalde/mpicbg`
-    * `imagej/imagej-omero`
-    * `imagej/imagej-opencv`
-    * `fiji/H5J_Loader_Plugin`
-    * `fiji/Kappa`
-    * Update CI-related docs on imagej.net
-
-7.  Migrate fiji-builds to WebDAV (with [hinerm](/people/hinerm))
-
-8.  Work on using PyImageJ from inside Java, and respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail
-
-9. Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %})
+4.  Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}):
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
 
-10. Finish the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %})
+5.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
 
-11. Finish reviewing {% include github org='scijava' repo='scijava' issue=75 label='scijava-ops PRs' %}
+### Project management priorities
 
-12. Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox))
+1.  Create a spreadsheet with potential future directions for a new Java-driven GUI, to replace the current original-ImageJ-based UI.
 
-13. Fix ImageJ 1.x patching ({% include github org='imagej' repo='ij1-patcher' issue=50 %}, {% include github org='imagej' repo='ImageJ' issue=149 %})
+2.  Create a project board roadmap for SciJava+ImageJ2+Fiji migration to Java 11 and 17.
+
+3.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' %}):
 
 ### Short-term priorities
 
-1.  \[Winter 2021\] (with {% include person id='elevans' %} and {% include person id='hinerm' %}) *PyImageJ paper.* ([roadmap](https://github.com/imagej/pyimagej/projects/1))
-2.  \[Winter 2021\] (with {% include person id='gselzer' %} and {% include person id='hinerm' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
-3.  \[Spring 2022\] **Maven-based ImageJ Launcher.** And migrate ImageJ and Fiji to ship with Java 11. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 11 if needed. Retire the Java-8 update site, using Maven coordinates instead.
+- \[Spring 2022\] (with {% include person id='elevans' %}) **PyImageJ paper.** ([roadmap](https://github.com/imagej/pyimagej/projects/1))
+- \[Spring 2022\] (with {% include person name='Jack Rueth' %}) **ImageJ wiki search bar.** Search tutorials, source code, and more.
+- \[Spring 2022\] (with {% include person name='Amandine Tournay' %}) **Python from Java.** Use PyImageJ from inside the Fiji desktop application. And respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail.
+- \[Spring 2022\] (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to newer Java if needed.
+- \[Autumn 2022\] (with {% include person id='gselzer' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
+- \[Winter 2022\] **Maven-based ImageJ Launcher** to simplify creation and maintenance of update sites.
 
 ### Medium-term priorities
 
-1.  **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/discuss/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
-2.  **Integrate PyImageJ with the ImageJ launcher.** (see also [this forum discussion](https://forum.image.sc/t/fiji-conda/59618/13))
+- **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/discuss/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
+- **Integrate PyImageJ with the ImageJ launcher.** (see also [this forum discussion](https://forum.image.sc/t/fiji-conda/59618/13))
 
 ### Longer-term priorities
 
-1.  **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
-2.  **SCIFIO blockization.** ({% include github org='scifio' repo='scifio' issue=283 %})
-3.  **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher.
-    ({% include github org='imagej' repo='imagej-launcher' issue=33 %})
-4.  **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
-
-### Constant priorities
-
-I also have the following continuous priorities:
-
-1.  Project management tasks (e.g., managing [issues](/develop/project-management#issue-tracking))
-2.  Coordinating efforts and mentoring programmers at [LOCI](/orgs/loci)
-3.  Server maintenance and troubleshooting
-4.  User support: questions on the [Image.sc Forum](/discuss), [bug reports](/discuss/bugs), [pull requests](https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues), email
+- **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
+- **SCIFIO blockization.** ({% include github org='scifio' repo='scifio' issue=283 %})
+- **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher.
+  ({% include github org='imagej' repo='imagej-launcher' issue=33 %})
+- **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
 
 ## Recommended development tools
 
