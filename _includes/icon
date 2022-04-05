@@ -54,6 +54,7 @@
   {%- case name -%}
     {%- when "Alida"         -%} .jpg
     {%- when "Android"       -%} .svg
+    {%- when "KNIME"         -%} .svg
     {%- when "Linux"         -%} .svg
     {%- when "Micro-Manager" -%} .jpg
     {%- when "Pi"            -%} .svg

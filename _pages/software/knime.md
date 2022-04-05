@@ -2,6 +2,8 @@
 mediawiki: KNIME
 title: KNIME
 section: Explore:Software
+icon: /media/icons/knime.svg
+project-blurb: the KNIME Analytics Platform
 doi:
 - 10.3389/fcomp.2020.00008
 - 10.1016/j.jbiotec.2017.07.028
