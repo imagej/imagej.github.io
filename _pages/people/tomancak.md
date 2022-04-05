@@ -2,7 +2,7 @@
 title: Pavel Tomancak
 name: Pavel Tomancak
 honorific: Godfather of Fiji
-website: http://www.mpi-cbg.de/research/research-groups/pavel-tomancak/
+website: https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/
 affiliation: MPI-CBG Dresden | /orgs/mpi-cbg
 github: tomancak
 scholar: Iu-PrGkAAAAJ

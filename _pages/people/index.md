@@ -21,10 +21,10 @@ section: Contribute
 
 -   {% include person id='eliceiri' %}[^1] (ImageJ2, Fiji)
 -   {% include person id='tomancak' %}[^2] (Fiji)
--   {% include person id='fjug' %}[^2][^3] (Fiji)
--   [Anne Carpenter](http://www.broadinstitute.org/~anne/)[^4] (CellProfiler)
--   [Michael Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)[^5][^6] (KNIME)
--   [Jason Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)[^7][^8] (OME)
+-   {% include person id='fjug' %}[^23] (Fiji)
+-   [Anne Carpenter](https://carpenter-singh-lab.broadinstitute.org/)[^4] (CellProfiler)
+-   [Michael Berthold](https://www.researchgate.net/profile/Michael-Berthold)[^5][^6] (KNIME)
+-   [Jason Swedlow](https://www.lifesci.dundee.ac.uk/people/jason-swedlow)[^7][^8] (OME)
 </div>
 <div class="contributor-block" markdown=1>
 ### {% include icon name='ImageJ' size='32px' %} [ImageJ](/software/imagej)
@@ -54,7 +54,7 @@ section: Contribute
 -   {% include person id='iarganda' %}[^13]
 -   {% include person id='StephanPreibisch' %}[^2][^21]
 -   {% include person id='axtimwalde' %}[^2][^21]
--   {% include person id='tpietzsch' %}[^2][^3]
+-   {% include person id='tpietzsch' %}
 -   {% include person id='imagejan' %}[^14]
 -   {% include person id='tferr' %}[^15][^21]
 -   {% include person id='hadim' %}[^15]
@@ -70,7 +70,7 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### {% include icon name='ImgLib2' size='32px' %} [ImgLib2](/libs/imglib2)
 
--   {% include person id='tpietzsch' %}[^2][^3] (lead)
+-   {% include person id='tpietzsch' %} (lead)
 -   {% include person id='StephanPreibisch' %}[^2][^21]
 -   {% include person id='axtimwalde' %}[^2][^21]
 -   {% include person id='bogovicj' %}[^21]
@@ -85,7 +85,7 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### [BigDataViewer](/plugins/bdv)
 
--   {% include person id='tpietzsch' %}[^2][^3] (lead)
+-   {% include person id='tpietzsch' %} (lead)
 -   {% include person id='StephanPreibisch' %}[^2][^21]
 </div>
 <div class="contributor-block" markdown=1>
@@ -99,7 +99,7 @@ section: Contribute
 
 -   {% include person id='dietzc' %}[^5][^6] (lead)
 -   {% include person id='hornm' %}[^6]
--   {% include person id='tibuch' %}[^3][^5]
+-   {% include person id='tibuch' %}[^14]
 -   {% include person id='Squareys' %}[^5][^6]
 -   {% include person id='gab1one' %}[^5][^6]
 </div>
@@ -116,7 +116,7 @@ section: Contribute
 
 -   {% include person id='joshmoore' %}[^7][^8] (co-lead)
 -   {% include person id='jburel' %}[^8] (co-lead)
--   See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
+-   See also [OME Teams](https://www.openmicroscopy.org/teams/)
 </div>
 </div> <!-- End columnar list. -->
 
@@ -151,22 +151,23 @@ Here is an incomplete list:
 [^1]: [Laboratory for Optical and Computation](/orgs/loci) (LOCI) at [UW-Madison](https://wisc.edu/)
 [^2]: [Max Planck Institute of Molecular Cell Biology and Genetics](/orgs/mpi-cbg) (MPI-CBG) at Dresden
 [^3]: [Center for Systems Biology Dresden](/orgs/csbd) (CSBD)
-[^4]: [Broad Institute](http://www.broadinstitute.org/) of MIT and Harvard
-[^5]: [University of Konstanz](http://www.uni-konstanz.de/en/welcome/), Germany
+[^4]: [Broad Institute](https://www.broadinstitute.org/) of MIT and Harvard
+[^5]: [University of Konstanz](https://www.uni-konstanz.de/en/), Germany
 [^6]: [KNIME GmbH](https://www.knime.com/)
-[^7]: [Glencoe Software](http://glencoesoftware.com/), Inc.
-[^8]: [University of Dundee](http://www.dundee.ac.uk/), Scotland
-[^9]: [National Institutes of Health](http://www.nih.gov/)
-[^10]: [True North Intelligent Algorithms LLC](http://www.truenorth-ia.com/)
-[^11]: [Marine Biological Laboratory](http://www.mbl.edu/) (MBL) at Woods Hole
-[^12]: [Institut Pasteur](http://www.pasteur.fr/en), Paris, France
-[^13]: [Ikerbasque](http://www.ikerbasque.net/), Basque Foundation for Science, Spain
+[^7]: [Glencoe Software](https://www.glencoesoftware.com/), Inc.
+[^8]: [University of Dundee](https://www.dundee.ac.uk/), Scotland
+[^9]: [National Institutes of Health](https://www.nih.gov/)
+[^10]: [True North Intelligent Algorithms LLC](https://github.com/True-North-Intelligent-Algorithms)
+[^11]: [Marine Biological Laboratory](https://www.mbl.edu/) (MBL) at Woods Hole
+[^12]: [Institut Pasteur](https://www.pasteur.fr/en), Paris, France
+[^13]: [Ikerbasque](https://www.ikerbasque.net/en), Basque Foundation for Science, Spain
 [^14]: [Friedrich Miescher Institute](https://www.fmi.ch/) for Biomedical Research (FMI), Basel, Switzerland
 [^15]: [McGill University](https://www.mcgill.ca/)
 [^16]: GE Healthcare (Applied Precision, Inc.)
 [^17]: University of Birmingham
-[^18]: [University of Idaho](http://www.uidaho.edu), Moscow
-[^19]: [University of Applied Sciencs and Arts Dortmund](http://www.fh-dortmund.de), Germany
-[^20]: [Institute of Neuroinformatics](https://www.ini.uzh.ch/), [Uni/ETH Zurich](https://www.ethz.ch/en.html)
+[^18]: [University of Idaho](https://www.uidaho.edu/), Moscow
+[^19]: [University of Applied Sciencs and Arts Dortmund](https://www.fh-dortmund.de/), Germany
+[^20]: [Institute of Neuroinformatics](https://www.ini.uzh.ch/), [Uni/ETH Zurich](https://ethz.ch/en.html)
 [^21]: [HHMI Janelia Research Campus](/orgs/janelia)
 [^22]: [Image Data Analysis platform](https://www.mdc-berlin.de/image-data-analysis) of the [Max Delbrück Center (MDC)](https://www.mdc-berlin.de/)
+[^23]: [Human Technopole](/orgs/human-technopole), Milan, Italy
