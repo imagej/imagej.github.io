@@ -20,8 +20,10 @@ section: Contribute
 ### Principal investigators
 
 -   {% include person id='eliceiri' %}[^1] (ImageJ2, Fiji)
--   {% include person id='tomancak' %}[^2] (Fiji)
 -   {% include person id='fjug' %}[^23] (Fiji)
+-   {% include person id='axtimwalde' %}[^2][^21] (ImgLib2, Fiji)
+-   {% include person id='StephanPreibisch' %}[^2][^21] (ImgLib2, Fiji)
+-   {% include person id='tomancak' %}[^2] (Fiji)
 -   [Anne Carpenter](https://carpenter-singh-lab.broadinstitute.org/)[^4] (CellProfiler)
 -   [Michael Berthold](https://www.researchgate.net/profile/Michael-Berthold)[^5][^6] (KNIME)
 -   [Jason Swedlow](https://www.lifesci.dundee.ac.uk/people/jason-swedlow)[^7][^8] (OME)
