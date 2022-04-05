@@ -16,8 +16,7 @@ LOCI plays a very active role in the ImageJ community:
 -   LOCI launched the [ImageJ2](/software/imagej2), [SCIFIO](/libs/scifio) and
     [SciJava Common](/libs/scijava#scijava-common) projects, and continues to
     drive their development.
--   Together with [CSBD](/orgs/csbd)/[MPI-CBG](/orgs/mpi-cbg), LOCI maintains
-    the [Fiji](/software/fiji) project.
+-   LOCI leads maintenance of the [Fiji](/software/fiji) project.
 -   LOCI founded the [Bio-Formats](/formats/bio-formats) project, and led the
     project's development for several years.
 -   LOCI regularly funds and hosts [hackathons](/events/hackathons) intended to
@@ -46,7 +45,7 @@ and/or support:
 -   {% include person id='hinerm' %} (programmer, Sep 2010-Jun 2016, Jun 2020-current)
 -   {% include person id='etadobson' %} (scientist)
 -   {% include person id='elevans' %} (post doc)
--   {% include person id='gselzer' %} (student programmer, [ImageJ Ops](/libs/imagej-ops))
+-   {% include person id='gselzer' %} (graduate student programmer, [ImageJ Ops](/libs/imagej-ops) and [PyImageJ](/scripting/pyimagej))
 
 See also the [complete list of LOCI lab members](https://eliceirilab.org/researchers/) on the LOCI website.
 
