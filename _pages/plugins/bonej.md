@@ -686,14 +686,14 @@ A 2D or 3D binary image.
 -   **Density**: mean physical density, calculated from pixel values and calibration coefficients
 -   **wX cent**: Density-weighted x-coordinate of centroid
 -   **wY cent**: Density-weighted y-coordinate of centroid
--   **Theta**: angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from $$-\pi/2$$ to $$\pi/2$$, with positive as clockwise
--   **R1**: maximum chord length from minor axis
--   **R2**: maximum chord length from major axis
--   **I<sub>min</sub>**: Second moment of area around minor axis
--   **I<sub>max</sub>**: Second moment of area around major axis
+-   **Theta**: angle of major axis (axis for <i>I</i><sub>max</sub>, the long axis of your specimen's cross section) from the horizontal, ranging from $$-\pi/2$$ to $$\pi/2$$, with positive as clockwise
+-   **R1**: maximum chord length from major axis (the short hemi-width)
+-   **R2**: maximum chord length from minor axis (the long hemi-width)
+-   **I<sub>min</sub>**: Second moment of area around minor axis (the larger _I_ value)
+-   **I<sub>max</sub>**: Second moment of area around major axis (the smaller _I_ value)
 -   **I<sub>pm</sub>**: Product moment of area (= 0 if no errors are present, e.g. due to pixelation)
--   **Z<sub>max</sub>**: Section modulus around major axis (*I*<sub>max</sub> / R2)
--   **Z<sub>min</sub>**: Section modulus around minor axis (*I*<sub>min</sub> / R1)
+-   **Z<sub>max</sub>**: Section modulus around major axis (*I*<sub>max</sub> / R1)
+-   **Z<sub>min</sub>**: Section modulus around minor axis (*I*<sub>min</sub> / R2)
 -   **Z<sub>pol</sub>**: Polar section modulus
 -   **Feret Min**: Minimum caliper width
 -   **Feret Max**: Maximum caliper width
