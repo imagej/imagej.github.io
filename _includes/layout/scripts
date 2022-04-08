@@ -18,11 +18,11 @@
 <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
 <script>anchors.add('#page h1, #page h2, #page h3, #page h4, #page h5, #page h6');</script>
 <!-- Citations -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
+<script src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9"></script>
 <script src="/assets/js/cite.js"></script>
 <!-- Search -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/algoliasearch/3.32.0/algoliasearchLite.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.40.3/dist/instantsearch.production.min.js"></script>
 <script src="/assets/js/search.js"></script>
 <script src="/assets/js/search-tweaks.js"></script>
 
