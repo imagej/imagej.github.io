@@ -192,40 +192,41 @@ There are always other options for saving or restoring your work—[stashing](ht
 
 ### First steps
 
-The [IntroToImageJ API](https://github.com/imagej/tutorials/blob/master/maven-projects/intro-to-imagej-api/src/main/java/IntroToImageJAPI.java) class documents many common functions and structures in ImageJ, and is a great starting point.
+The [IntroToImageJ API](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/adv/IntroToImageJAPI.java) class documents many common functions and structures in ImageJ, and is a great starting point.
 
 ### Basic plugins
 
 These projects provide minimal examples with thorough online documentation.
 
 -   [example-imagej-command](https://github.com/imagej/example-imagej-command) - A minimal template for an ImageJ command plugin
--   Look at some [simple commands](https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java) and see how they interact with users
--   [Getting started with modules](https://github.com/imagej/tutorials/tree/master/maven-projects/working-with-modules/src/main/java)—the foundation of many user-facing plugin types, including [commands](#Commands)
+-   Look at some [simple commands](https://github.com/imagej/tutorials/tree/master/java/simple-commands/src/main/java) and see how they interact with users
+-   [Getting started with modules](https://github.com/imagej/tutorials/blob/master/java/working-with-modules/src/main/java/WorkingWithModules.java)—the foundation of many user-facing plugin types, including [commands](#Commands)
 
 ### Targeted tasks
 
 These projects are examples of specific *use cases* within the ImageJ API.
 
--   [Execute commands programmatically](https://github.com/imagej/tutorials/tree/master/maven-projects/execute-commands/src/main/java)
--   [Open a dataset](https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset/src/main/java)
--   [Combine ROIs](https://github.com/imagej/tutorials/tree/master/maven-projects/add-rois/src/main/java)
--   [React to framework events](https://github.com/imagej/tutorials/tree/master/maven-projects/listen-to-events/src/main/java)—such as creating a dataset
+-   [Execute commands programmatically](https://github.com/imagej/tutorials/master/java/execute-commands/src/main/java/ExecuteCommands.java)
+-   [Open a dataset](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/datasets/LoadAndDisplayDataset.java)
+-   [Combine ROIs](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/images/AddROIs.java)
+-   [React to framework events](https://github.com/imagej/tutorials/blob/master/java/listen-to-events/src/main/java/ListenToEvents.java)—such as creating a dataset
 
 ### Working with Ops
 
--   [Using Ops](https://github.com/imagej/tutorials/tree/master/maven-projects/using-ops/src/main/java)
--   [Add datasets](https://github.com/imagej/tutorials/tree/master/maven-projects/add-two-datasets/src/main/java)
--   [Create a new Op type](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-op/src/main/java)
+-   [Using Ops](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/ops/UsingOps.java)
+-   [Add datasets](https://github.com/imagej/tutorials/blob/master/java/add-two-datasets/src/main/java/AddTwoDatasets.java)
+-   [Create a new Op type](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/ops/CreateANewOp.java)
+-   
 
 ### Working with user input
 
--   [Look at all the widgets!](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto/ui)
--   [Previewable commands](https://github.com/imagej/tutorials/tree/master/maven-projects/commands-with-preview/src/main/java)
+-   [Look at all the widgets!](https://github.com/imagej/tutorials/tree/master/java/howtos/src/main/java/howto/ui)
+-   [Previewable commands](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/ui/preview/CommandWithPreview.java)
 
 ### Plugin development
 
--   [Create a new plugin type](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type/src/main/java)
-<!-- -   [Create a new preprocessor](https://github.com/imagej/tutorials/tree/master/maven-projects/custom-preprocessor-plugin/src/main/java) -->
+-   [Create a new plugin type](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/plugins/create/CreateANewPluginType.java)
+<!-- -   [Create a new preprocessor](https://github.com/imagej/tutorials/tree/master/java/custom-preprocessor-plugin/src/main/java) -->
 
 ## Starting your own plugin
 
