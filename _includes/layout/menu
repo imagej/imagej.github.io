@@ -75,9 +75,9 @@
             {% include menu/section title="Scripting" link="/scripting" %}
               <li><a href="/scripting/batch">Batch Processing</a></li>
               <li><a href="/scripting/basics">Scripting Basics</a></li>
-              <li><a href="/scripting/user-input">User Input</a></li>
-              <li><a href="/scripting/javadoc">Using Javadoc</a></li>
               <li><a href="/scripting/script-editor">Script Editor</a></li>
+              <li><a href="/scripting/javadoc">Using Javadoc</a></li>
+              <li><a href="/scripting/user-input">User Input</a></li>
               <li><a href="/scripting/auto-imports">Auto Import</a></li>
               <li><a href="/scripting/templates">Templates</a></li>
               <li><a href="/scripting/headless">Running Headlessly</a></li>
