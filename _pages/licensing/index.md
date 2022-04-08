@@ -220,7 +220,7 @@ The following table summarizes the dominant license of each project's components
       </td>
     </tr>
     <tr>
-      <td><img src="/media/icons/knime.png" width="48"></td>
+      <td><img src="/media/icons/knime.svg" width="48"></td>
       <th><a href="/software/knime">KNIME</a></th>
       <td><a href="http://www.knime.org/downloads/full-license">License</a></td>
     </tr>

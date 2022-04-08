@@ -16,7 +16,7 @@ The {% include wikipedia title='Gitter' text='Gitter'%} chat service, while rela
 |--------------------------------------------|-------------------------------|---------------------------------------------------|
 | ![](/media/icons/imagej2.png){:width="48"} | [ImageJ2](/software/imagej2)  | [imagej](https://gitter.im/orgs/imagej/rooms)     |
 | ![](/media/icons/fiji.png){:width="48"}    | [Fiji](/software/fiji)        | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| ![](/media/icons/knime.png){:width="48"}   | [KNIME](/software/knime)      | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
+| ![](/media/icons/knime.svg){:width="48"}   | [KNIME](/software/knime)      | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
 | ![](/media/icons/imglib2.png){:width="48"} | [ImgLib2](/libs/imglib2)      | [imglib](https://gitter.im/orgs/imglib/rooms)     |
 | ![](/media/icons/scifio.png){:width="48"}  | [SCIFIO](/libs/scifio)        | [scifio](https://gitter.im/orgs/scifio/rooms)     |
 | ![](/media/icons/scijava.png){:width="48"} | [SciJava](/libs/scijava)      | [scijava](https://gitter.im/orgs/scijava/rooms)   |
