@@ -111,6 +111,8 @@
               {% include menu/section title="Tools" %}
                 <li><a href="/develop/github">GitHub</a></li>
                 <li><a href="/develop/maven">Maven</a></li>
+                <li><a href="/develop/ci">CI/CD</a></li>
+                <li><a href="/develop/dotfiles">Dotfiles</a></li>
 
                 {% include menu/section title="IDEs" link="/develop/ides" %}
                   <li><a href="/develop/eclipse">Eclipse</a></li>
@@ -118,10 +120,6 @@
                   <li><a href="/develop/intellij">IntelliJ IDEA</a></li>
                   <li><a href="/develop/command-line">Command Line</a></li>
                 {% include menu/section-end %}
-
-                <li><a href="/develop/github-actions">Github Actions</a></li>
-                <li><a href="/develop/appveyor">AppVeyor</a></li>
-                <li><a href="/develop/dotfiles">Dotfiles</a></li>
               {% include menu/section-end %} <!-- Extend/Development/Tools -->
 
               {% include menu/section title="Guides" %}

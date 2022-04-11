@@ -21,8 +21,8 @@ Here is a quick summary of the most recommended options:
     -   Make your project **[open source](/licensing/open-source)**.
     -   Host it on **[GitHub](/develop/github)**.
     -   Use **[Maven](/develop/maven)** to build and SemVer for **[versioning](/develop/versioning)**.
-    -   Use **[Travis](/develop/travis)** for continuous integration and artifact deployment to the [SciJava Maven repository](/develop/project-management#maven).
--   **Documentation.**
+    -   Use **[GitHub Actions](/develop/github-actions)** for continuous integration and artifact deployment to the [SciJava Maven repository](/develop/project-management#maven).
+-   **Documentation:**
     -   Create a page here on the **[ImageJ Wiki](/)**.
 
 The tables below discuss additional options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
@@ -110,7 +110,7 @@ The first goal is to get your extension into the hands of users.
 <li> A <b><a href="/contribute/governance" title="Governance">Fiji maintainer</a></b> will help you to manage your project.</li>
 <li> You can lean on existing tools and documentation to maintain <b><a href="/develop/architecture#reproducible-builds" title="Reproducible builds">reproducibility</a></b> of your project.</li>
 <li> Your project will always be compatible with the latest Fiji distribution.</li>
-<li> <a href="/develop/travis" title="Travis">Travis</a> automatically tests your project for errors, deploying successful builds to the <a href="/develop/project-management#maven" title="SciJava Maven repository">SciJava Maven repository</a>.</li></ul>
+<li> <a href="/develop/github-actions" title="GitHub Actions">GitHub Actions</a> automatically tests your project for errors, deploying successful builds to the <a href="/develop/project-management#maven" title="SciJava Maven repository">SciJava Maven repository</a>.</li></ul>
 </td>
 <td style="background: #dfd; vertical-align: top">
 <ul><li> You must abide by the <b><a href="/contribute/fiji" title="Fiji contribution requirements">Fiji contribution requirements</a></b>.</li>
