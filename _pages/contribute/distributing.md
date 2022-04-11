@@ -14,10 +14,10 @@ If you create a useful extension of ImageJ—e.g., a [plugin](/plugins), [script
 
 Here is a quick summary of the most recommended options:
 
--   **Distribution.**
+-   **Distribution:**
     -   A\) **[create your own update site](/update-sites/setup)**; or
     -   B\) **[bundle your plugin with Fiji](/contribute/fiji)**.
--   **Source code.**
+-   **Source code:**
     -   Make your project **[open source](/licensing/open-source)**.
     -   Host it on **[GitHub](/develop/github)**.
     -   Use **[Maven](/develop/maven)** to build and SemVer for **[versioning](/develop/versioning)**.
@@ -69,7 +69,7 @@ The first goal is to get your extension into the hands of users.
       </td>
       <td style="background: #dfd; vertical-align: top">
         <ul>
-	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">hosted update site</a></b> on `sites.imagej.net`.</li>
+	  <li> You do not need server space to host your extensions; you can use a <b><a href="/update-sites/setup">hosted update site</a></b> on <code>sites.imagej.net</code>.</li>
           <li> Alternately, you can retain full control by hosting your update site yourself.</li>
           <li> Users are notified of updates without needing to check proactively.</li>
           <li> The updater manages dependencies for you.</li>
@@ -321,12 +321,12 @@ Useful extensions deserve corresponding documentation explaining how to use them
 <ul><li> <b><a href="/editing#creating-a-new-page">Create a page</a></b> for your extension.</li></ul>
 </td>
 <td style="background: #dfd; vertical-align: top">
-<ul><li> The ImageJ wiki is part of imagej.net, the integrated ImageJ website.</li>
-<li> The ImageJ wiki uses MediaWiki, the most popular wiki engine which drives Wikipedia.</li>
-<li> You can get started immediately; no human needs to approve your account or edits.</li></ul>
+<ul><li> The ImageJ wiki is a central repository of ImageJ-related community knowledge and documentation.</li>
+<li> The ImageJ wiki uses Jekyll with GitHub Pages; see [Editing the Wiki](/editing) for details.</li>
 </td>
 <td style="background: #dfd; vertical-align: top">
 <p>-
+<li> You can get started immediately, but your first edit will be submitted as a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (PR), where it will be approved by another editor. After that, you will be added to the list of direct editors, so that subsequent edits do not need to go through the PR mechanism (although they still can, if you prefer to have others review your changes before they go live).</li></ul>
 </p>
 </td></tr>
 <tr>
