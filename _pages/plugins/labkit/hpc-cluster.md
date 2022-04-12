@@ -24,7 +24,7 @@ On the HPC cluster:
 
 6.  Copy the dataset HDF5 + XML to the cluster
 7.  Copy the trained classifier to the cluster
-8.  Download the [Labkit command line tool](https://github.com/maarzt/labkit-command-line/releases/download/v0.1.1/labkit-snakemake-exmaple-0.1.1.zip)
+8.  Download the [Labkit command line tool](https://github.com/maarzt/labkit-command-line/releases/download/v0.1.4/labkit-snakemake-exmaple-0.1.4.zip)
 9.  Unzip the command line tool archive
 10.  Edit the “Snakemake” file and change the following lines:
 
