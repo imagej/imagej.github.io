@@ -5,6 +5,7 @@ name: Vladimír Ulman
 affiliation: IT4Innovations | /orgs/it4i
 website: https://www.fi.muni.cz/~xulman/
 github: xulman
+forum: ulman
 ---
 
 Hi,
