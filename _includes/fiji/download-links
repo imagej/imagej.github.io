@@ -15,10 +15,10 @@
 <tr>
 <td style="text-align: center"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip"><img alt="Windows (32-bit)" src="/media/icons/windows.svg" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">32-bit</a>
 </td>
-<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip"><img alt="All platforms (no JRE)" src="/media/icons/fiji.png" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
+<td colspan=2 style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip"><img alt="All platforms (no JRE)" src="/media/icons/fiji.png" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
 </td>
-<td style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip"><img alt="Linux (32-bit)" src="/media/icons/linux.svg" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux32.zip">32-bit</a>
-</td></tr></tbody>
+</tr>
+</tbody>
 </table>
 </div>
 {% endraw %}
