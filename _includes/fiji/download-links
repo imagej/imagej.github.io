@@ -6,7 +6,7 @@
 <tr>
 <td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><img alt="Windows (64-bit)" src="/media/icons/windows.svg" width="129" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><b>64-bit</b></a>
 </td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><img alt="macOS" src="/media/icons/macos.png" width="105" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS</b></a>
+<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><img alt="macOS" src="/media/icons/macos.png" width="105" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS (x86_64)</b></a>
 </td>
 <td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><img alt="Linux (64-bit)" src="/media/icons/linux.svg" width="128" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><b>64-bit</b></a>
 </td>
