@@ -649,6 +649,12 @@ Menu path {% include bc path="Plugins | BoneJ | Slice Geometry" %}
 
 Slice Geometry calculates cross-sectional geometric properties of shapes: cross-sectional area, centroid, mean density, second moment of area, section modulus, Feret diameter and local thickness (2D and 3D). Measurements can be limited to a rectangular ROI. If your bone is not well aligned with the image axes, you may find it useful to align the bone to its principal axes using Moments of Inertia or by exporting a transformed volume from the ImageJ 3D Viewer. Importantly, no assumption of geometry is made for any of the measurements.
 
+#### Differences from BoneJ1
+
+The code and operation of Slice Geometry is nearly identical between major BoneJ versions. Note that BoneJ2 diverges from BoneJ1 by using a strict "subscript as axis" notation for the identification of second moments of area _I_ and section modulus _Z_. There is a great deal of confusion about how these values are derived and named, and the naming conventions are used inconsistently in the literature. Second moment of area is calculated by measuring the sum of squared distances **away from** an axis times small areas. The axis is identified in the subscript. So, _I_<sub>x</sub> measures squared distances in _y_. In practice this means that the _larger_ _I_ or _Z_ value relates to the _shorter_ axis of an approximately elliptical cross section. _I_<sub>max</sub> and _I_<sub>min</sub> (and the corresponding _Z_ values) are in BoneJ2 named for the lengths of their axes and not their relative magnitude, which is a different behaviour than previously, and from how the naming convention is described in some other places. This helps to resolve the contradictory situation where for example the larger _I_ value is calculated around the minor axis of familiar geometries such as the ellipse, while maintaining consistency with the "subscript as axis" naming convention.
+
+Note that because _I_ and _Z_ values come in pairs, it is straightforward to resolve any confusion about which naming convention has been used in prior work (provided you have access to the data). Regardless of how it has been named, the larger value of a pair has been calculated around, and not in the direction of, the shorter axis. If you are calculating a ratio between members of a pair of moments or moduli and the result is the other side of 1 than you expect, check the axis labels and lengths and consider inverting the ratio.
+
 #### Suitable images
 
 A 2D or 3D binary image.
