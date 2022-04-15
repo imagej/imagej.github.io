@@ -56,7 +56,7 @@ ImageJ2 team to respond to every support request within one work day:
 
 ## What is Curtis working on?
 
-*Last updated: 2022-Apr-05*
+*Last updated: 2022-Apr-15*
 
 ### Weekly allocation of effort
 
@@ -70,13 +70,9 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Immediate priorities
 
-1.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} job:
-    - Activate CI with correct caching.
-    - Ensure it updates the correct ImageJ Launcher version with up-to-date bundled OpenJDK for each platform.
+1.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %}).
 
-2.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %}).
-
-3.  [with {% include person id='hinerm' %}] New pom-scijava release:
+2.  [with {% include person id='hinerm' %}] New pom-scijava release:
     -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
     -   Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
     -   Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
@@ -94,11 +90,13 @@ ImageJ2 team to respond to every support request within one work day:
         * `fiji/Kappa`
         * Update CI-related docs on imagej.net
 
-4.  Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}):
+3.  Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}):
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
 
-5.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
+4.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
+
+5.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
 
 ### Project management priorities
 
@@ -110,12 +108,10 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Short-term priorities
 
-- \[Spring 2022\] (with {% include person id='elevans' %}) **PyImageJ paper.** ([roadmap](https://github.com/imagej/pyimagej/projects/1))
 - \[Spring 2022\] (with {% include person name='Jack Rueth' %}) **ImageJ wiki search bar.** Search tutorials, source code, and more.
 - \[Spring 2022\] (with {% include person name='Amandine Tournay' %}) **Python from Java.** Use PyImageJ from inside the Fiji desktop application. And respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail.
-- \[Spring 2022\] (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17. Use a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to newer Java if needed.
+- \[Summer 2022\] (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17 ([roadmap](https://github.com/orgs/imagej/projects/4)), with a **Maven-based ImageJ update site generator** to simplify creation and maintenance of update sites.
 - \[Autumn 2022\] (with {% include person id='gselzer' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
-- \[Winter 2022\] **Maven-based ImageJ Launcher** to simplify creation and maintenance of update sites.
 
 ### Medium-term priorities
 
