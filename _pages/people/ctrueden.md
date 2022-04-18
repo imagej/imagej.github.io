@@ -56,7 +56,7 @@ ImageJ2 team to respond to every support request within one work day:
 
 ## What is Curtis working on?
 
-*Last updated: 2022-Apr-15*
+*Last updated: 2022-Apr-18*
 
 ### Weekly allocation of effort
 
@@ -70,9 +70,11 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Immediate priorities
 
-1.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %}).
+1.  Prepare and record PyImageJ workshop for [I2K 2022 conference](https://www.i2kconference.org/).
 
-2.  [with {% include person id='hinerm' %}] New pom-scijava release:
+2.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %}).
+
+3.  [with {% include person id='hinerm' %}] New pom-scijava release:
     -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
     -   Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
     -   Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
@@ -90,21 +92,19 @@ ImageJ2 team to respond to every support request within one work day:
         * `fiji/Kappa`
         * Update CI-related docs on imagej.net
 
-3.  Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}):
+4.  Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}):
     * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
     * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
 
-4.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
+5.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
 
-5.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
+6.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
 
 ### Project management priorities
 
-1.  Create a spreadsheet with potential future directions for a new Java-driven GUI, to replace the current original-ImageJ-based UI.
+1.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' label='scijava/status.scijava.org' %}).
 
-2.  Create a project board roadmap for SciJava+ImageJ2+Fiji migration to Java 11 and 17.
-
-3.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' %}):
+2.  Continue populating the project board for SciJava+ImageJ2+Fiji migration to Java 11 and 17 ([roadmap](https://github.com/orgs/imagej/projects/4)).
 
 ### Short-term priorities
 
