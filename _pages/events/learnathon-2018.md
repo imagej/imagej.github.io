@@ -109,7 +109,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 ### Developing ImageJ Ops
 
 -   Clone https://github.com/imagej/tutorials (but you already have it, right?)
--   Import `maven-projects/create-a-new-op` in Eclipse.
+-   Import `java/howtos/src/main/java/howto/ops/CreateANewOp` in Eclipse.
 -   See also the [Adding new ops](/develop/writing-ops) guide
 -   See also the "Extending ImageJ: Ops" notebook linked from [here](/tutorials/notebooks)
 
