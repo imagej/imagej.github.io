@@ -385,13 +385,14 @@ An 8-bit, binary 2D or 3D image. Hyperstacks are not supported.
 -   **Use clusters**: if true then the pruning result is independent of the order in which the graph is traversed. False corresponds with methodology in Reznikov's article. See above for more details.
 -   **Print centroids**: Print the centroids (center coordinates) of the node pairs at the ends of each edge.
 -   **Print % culled edges**: Print statistics of different types of edges pruned.
+-   **Show skeleton**: Create a copy of the skeleton that is used as input for ITA analysis.
 
 #### Results
 
 -   **Inter-trabecular angles**: angles (in radians) between each branch of each node included in the analysis. Sorted into columns according to the number of branches per node. For example, column *"3"* shows the angles between branches of nodes with three branches.
 -   **Centroids** (optional): A table of the center coordinates of the node pairs at the ends of each edge.
 -   **Culled edge percentages** (optional): A table showing the percentages of different kinds of edges pruned, compared to the total number of edges in the analysed graph.
--   **Skeleton** (optional): if the plug-in had to skeletonise the input image, it displays the result of the thinning.
+-   **Skeleton** (optional): A copy of the skeleton image used for analysis.
 
 #### Differences to BoneJ1
 
