@@ -1,8 +1,7 @@
 ---
-mediawiki: VIB_Protocol
-title: VIB Protocol
+title: Virtual Insect Brain (VIB) Protocol
 project: /software/fiji
-categories: [Uncategorized]
+categories: [Registration]
 artifact: sc.fiji:VIB_
 ---
 
@@ -33,35 +32,25 @@ After that, a second dialog appears, which asks the user for all the necessary i
 
 The different fields have the following meaning:
 
-Files  
-Use the buttons "Add to files" and "Delete from files" to add here the input images.
+**Files**  
+Use the buttons {% include button label="Add to files" %} and {% include button label="Delete from files" %} to add here the input images.
 
-<!-- -->
-
-Working directory  
+**Working directory**  
 All the output of the VIB Protocol goes into this folder.
 
-<!-- -->
-
-Template  
+**Template**  
 Choose one of the images in the "Files" list as a template (reference) brain (by selecting it in the list and clicking "Use as template"). Alternatively, you can choose an external reference by typing the path to the file you want to use.
 
-<!-- -->
-
-No of channels  
+**No of channels**  
 The number of channels contained in the input files.
 
-<!-- -->
-
-No of reference channel  
+**No of reference channel**  
 The number of the reference channel. The reference channel will be used for labelling.
 
-<!-- -->
-
-Resampling factor  
+**Resampling factor**  
 In order to speed up execution time, it is a good idea to scale the images down. Selecting here '2' for example means that a 1024x1024x256 images will be downsampled to 256x256x64.
 
-Clicking OK will finally start the VIB Protocol. At this point, the above mentioned configuration file is created and saved, which is shown by:
+Clicking {% include button label="OK" %} will finally start the VIB Protocol. At this point, the above mentioned configuration file is created and saved, which is shown by:
 
 ![](/media/plugins/vib-protocol-3.png)
 
