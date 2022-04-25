@@ -518,9 +518,17 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <th colspan=4 class="section-major">Other workshops</th>
     </tr>
+      <tr>
+      <td>2022-April-27</td>
+      <td>{% include person id='etadobson'%} & {% include person id='elevans' %}</td>
+      <td>ABRF Light Microscopy Research Group - 3D Segmentation using ImageJ</td>
+      <td>
+        <a href="https://docs.google.com/presentation/d/1-hqOCs7NwCa-Edc3s9SP9ln5E9PDdn9wfeQ4_-6Unuk/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
     <tr>
       <td>2021-August</td>
-      <td>Ellen Dobson</td>
+      <td>{% include person id='etadobson'%}</td>
       <td>CZI Workshops</td>
       <td>
         <a href="https://chanzuckerberg.wistia.com/medias/uwakj3npiq">Workshop I video</a>, <a href="https://docs.google.com/presentation/d/1eDKMlweAIyTw72LuAv6LCknLE9BmZruTRiWuIPQGadk/edit?usp=sharing">Workshop I slides</a>, <a href="https://chanzuckerberg.wistia.com/medias/2kmue5jamv">Workshop II video</a>, <a href="https://docs.google.com/presentation/d/111nrll-4uyk0ZVrudmFnEZHyNt76RzVZvKvJkOVSoJA/edit?usp=sharing">Workshop II slides</a>
