@@ -1,6 +1,7 @@
 ---
 title: AccPbFRET
 name: AccPbFRET
+source-url: https://github.com/CellMoTher/AccPbFRET
 license-url: /licensing/gpl
 license-label: GPLv3
 dev-status: Active
