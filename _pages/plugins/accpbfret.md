@@ -21,6 +21,10 @@ doi: 10.1186/1471-2105-9-346
 ## Introduction
 
 ## Installation
+1. Download the latest version of [Fiji](https://fiji.sc/). 
+2. Enable the FRET Imaging [update site](https://imagej.net/update-sites/following).
+3. Once installed, go to _Plugins > FRET Imaging > AccPbFRET_.
+* ImageJ 1.x users can download the latest version of AccPbFRET from the releases page [here](https://github.com/CellMoTher/AccPbFRET/releases).
 
 ## Citation
 
