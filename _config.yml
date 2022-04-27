@@ -181,4 +181,9 @@ defaults:
       type: pages
     values:
       icon: /media/icons/trackmate.png
-
+  -
+    scope:
+      path: "_pages/plugins/modularimageanalysis"
+      type: pages
+    values:
+      icon: /media/icons/mia.png
