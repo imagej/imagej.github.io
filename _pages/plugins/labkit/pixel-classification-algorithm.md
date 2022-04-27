@@ -23,6 +23,8 @@ The basic principle of the random forest based pixel classification algorithm is
    examples to a certain class.
 3. A selection of filters and their parameters to be used for feature extraction.
 
+Note on input: all channels of the input image will be used for the training. For training on individual channels load them separately. 
+
 Show example:
 
 ## Outputs
