@@ -518,7 +518,15 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <th colspan=4 class="section-major">Other workshops</th>
     </tr>
-      <tr>
+    <tr>
+      <td>2022-April-30</td>
+      <td>{% include person id='elevans' %}</td>
+      <td>AQLM Image processing, segmentation and scripting with ImageJ/Fiji Workshp</td>
+      <td>
+        <a href="https://docs.google.com/presentation/d/1f8vKVmeRdHYzyXoWZEv-ylpqbWIDR3mlUMAXM6iVawI/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
+    <tr>
       <td>2022-April-27</td>
       <td>{% include person id='etadobson'%} & {% include person id='elevans' %}</td>
       <td>ABRF Light Microscopy Research Group - 3D Segmentation using ImageJ</td>
