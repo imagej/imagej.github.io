@@ -24,7 +24,7 @@ categories: [Segmentation,Visualization,Plugins,Citable]
 
 **Original image referencing.** The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, *in situ*, and in 3D with [ClearVolume](/plugins/clearvolume).
 
-This brief [video](/media/demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in this [paper](http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full).
+This brief [video](/media/demostration.mov) describes VTEA's core behaviors. VTEA's utility has been demonstrated in a number of [papers](https://imagej.net/plugins/vtea#vtea-reference).
 
 We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing large 3D fluorescence light microscopy image volumes ranging from 50-100s of microns thick. Our solution is predicated upon the idea that *image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis*.
 
@@ -63,7 +63,7 @@ Select "Apply changes". Upon restart, the plugin will be present under a new men
 
 Please visit the new [wiki](https://vtea.wiki)!
 
-## VTEA reference
+## VTEA references
 
 Examples of the use of VTEA in manuscripts:
 
