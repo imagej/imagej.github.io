@@ -21,7 +21,7 @@ categories: [Segmentation,Visualization,Plugins,Citable]
 
 **Mesoscale 3D analysis.** We built VTEA to handle massive datasets and to operate seamlessly on an embedded database to enable analysis of >500 thousand cells (hardware limits do apply).
 
-**Supervised and unsupervised cell classification and neighborhood generation.**  VTEA supports flow cytometry-like gating and subgating and incorporates tools for clustering and dimensionality reduction to facilitate cell classification.  Cell classifaction can include both computationally defined and expert labeled cells via imagej ROIs.  
+**Supervised and unsupervised cell classification.**  VTEA supports flow cytometry-like gating and subgating and incorporates tools for clustering and dimensionality reduction to facilitate cell classification.  Cell classifaction can include both computationally defined and expert labeled cells via imagej ROIs.  
 
 **Neighborhood construction and analysis.**  Once cell classfication/labels are defined they may be used in a neighborhood analysis including that same tools used in VTEA for supervised and unsupervised classification and labeling of neighborhoods based on the label distributions per neighborhood (sum and fraction of total).
 
