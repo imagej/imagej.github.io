@@ -1,9 +1,21 @@
+{%- assign url = page.url | replace: ".html", "" -%}
+{%- assign mw = page.mediawiki -%}
 <div class="page-info"> 
-
-    <a href="{{"https://github.com/imagej/imagej.github.io/commits/main/_pages"}}{{page.url | replace: ".html", ""}}.md">Page history</a>
-    <a href="{{"https://github.com/imagej/imagej.github.io/edit/main/_pages"}}{{page.url | replace: ".html", ""}}.md">Edit this page</a>
-    <a href="/help/editing">How do I edit this website?</a>
-    
+  <a href="https://github.com/imagej/imagej.github.io/commits/main/_pages{{url}}.md">Page history</a>
+  <a href="https://github.com/imagej/imagej.github.io/edit/main/_pages{{url}}.md">Edit this page</a>
+  <a href="/editing">How do I edit this website?</a>
+{%- if mw and mw != 'NONE' -%}
+  <br>
+  {%- if mw.first -%}
+    Original MediaWiki pages:&nbsp;&nbsp;
+    {%- for link in mw -%}
+      <a href="https://imagej.net/imagej-wiki-static/{{link}}">{{forloop.index}}</a>
+    {%- endfor -%}
+  {%- else -%}
+    <a href="https://imagej.net/imagej-wiki-static/{{mw}}">Original MediaWiki page</a>
+  {%- else -%}
+  {%- endif -%}
+{%- endif -%}
 </div>
 
 {%- comment -%}

@@ -1,5 +1,7 @@
 ---
+mediawiki: User:MAP-Lab
 title: MAP Lab
+section: Contribute:Organizations
 ---
 
 Research in the lab addresses the molecular basis of drug addiction. We focus

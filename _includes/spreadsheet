@@ -1,0 +1,16 @@
+{%- assign platform = include.platform | default: "google" -%}
+{%- assign width = include.width | default: 500 -%}
+{%- assign height = include.height | default: 300 -%}
+{%- assign id = include.id -%}
+{%- assign gid = include.gid | default: "" -%}
+
+{%- if platform == "google" -%}
+  <iframe width="{{width}}" height="{{height}}" frameborder="0" src="https://docs.google.com/spreadsheets/d/{{id}}/pubhtml?gid={{gid}};single=true&widget=true&headers=false"></iframe>
+{%- else -%}
+  {%- capture error-message -%} Invalid spreadsheet arguments: `{{include}}` {%- endcapture -%}
+  {% include util/error message=error-message %}
+{%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

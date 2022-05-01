@@ -1,0 +1,88 @@
+{%- comment -%} TODO generalize {%- endcomment -%}
+{%- assign name = include.name | strip -%}
+
+{%- if include.link -%}
+  {%- assign image_link = include.link -%}
+{%- else -%}
+  {%- capture image_link -%}
+    {%- case name -%}
+      {%- when "Alida"         -%} /software/alida
+      {%- when "Android"       -%} /platforms/android
+      {%- when "Bio-Formats"   -%} /formats/bio-formats
+      {%- when "Bio7"          -%} /software/bio7
+      {%- when "BoneJ"         -%} /plugins/bonej
+      {%- when "CellProfiler"  -%} /software/cellprofiler
+      {%- when "ClearVolume"   -%} /plugins/clearvolume
+      {%- when "Eclipse"       -%} /develop/eclipse
+      {%- when "Fiji"          -%} /software/fiji
+      {%- when "Git"           -%} /develop/git
+      {%- when "GitHub"        -%} /develop/github
+      {%- when "Icy"           -%} /software/icy
+      {%- when "ImageJ"        -%} /software/imagej
+      {%- when "ImageJ2"       -%} /software/imagej2
+      {%- when "ImgLib2"       -%} /libs/imglib2
+      {%- when "KNIME"         -%} /software/knime
+      {%- when "Linux"         -%} /platforms/linux
+      {%- when "LOCI"          -%} /orgs/loci
+      {%- when "MacOS"         -%} /platforms/macos
+      {%- when "Maven"         -%} /develop/maven
+      {%- when "Micro-Manager" -%} /software/micro-manager
+      {%- when "MiToBo"        -%} /plugins/mitobo
+      {%- when "OME"           -%} /software/omero
+      {%- when "OMERO"         -%} /software/omero
+      {%- when "Orbit"         -%} /software/orbit
+      {%- when "Pi"            -%} /platforms/pi
+      {%- when "Plugin"        -%} /plugins
+      {%- when "QuPath"        -%} /software/qupath
+      {%- when "SCIFIO"        -%} /libs/scifio
+      {%- when "SciJava"       -%} /libs/scijava
+      {%- when "SLIM Curve"    -%} /plugins/slim-curve
+      {%- when "StarDist"      -%} /plugins/stardist
+      {%- when "VCell"         -%} /software/virtual-cell
+      {%- when "Windows"       -%} /platforms/windows
+    {%- endcase -%}
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- if include.align -%}
+  {%- assign image_align = 'style="float:' | append: include.align | append: ';"' -%}
+{%- else -%}
+  {%- assign image_align = "" -%}
+{%- endif -%}
+
+{%- capture extension -%}
+  {%- case name -%}
+    {%- when "Alida"         -%} .jpg
+    {%- when "Android"       -%} .svg
+    {%- when "KNIME"         -%} .svg
+    {%- when "Linux"         -%} .svg
+    {%- when "Micro-Manager" -%} .jpg
+    {%- when "Pi"            -%} .svg
+    {%- when "StarDist"      -%} .jpg
+    {%- when "Windows"       -%} .svg
+    {%- when "info"          -%} .svg
+    {%- else                 -%} .png
+  {%- endcase -%}
+{%- endcapture -%}
+
+{%- assign filename = name | slugify -%}
+{%- if filename == "imagej2" -%}
+  {%- assign image_url = "/media/icons/imagej2.png" -%}
+{%- else -%}
+  {%- assign image_url = "/media/icons/" | append: filename | append: extension -%}
+{%- endif -%}
+
+{%- assign image_size = include["size"] | default: "48px" -%}
+{%- assign first = image_size | slice: 0 -%}
+{%- if first == "x" -%}
+  {%- assign size =  image_size | slice: 1, image_size.size -%}
+  {%- assign image_size = 'height="' | append: size | append: '"'  -%}
+{%- else -%}
+  {%- assign image_size = 'width="' | append: image_size | append: '"'  -%}
+{%- endif -%}
+
+<a href="{{image_link}}"><img {{image_align}} alt="{{name}}" src="{{image_url}}" {{image_size}}/></a>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

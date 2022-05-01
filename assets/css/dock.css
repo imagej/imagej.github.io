@@ -23,8 +23,8 @@
   display: none;
   z-index: 1;
   position: absolute;
-  width: 240px;
-  height: auto;
+  width: 260px;
+  height: 5000vh;
   top: 60px;
   bottom: 0;
 }

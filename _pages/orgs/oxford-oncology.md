@@ -1,5 +1,9 @@
 ---
+mediawiki:
+- User:MicroscopyOncologyOxford
+- User:Oxford_Oncology
 title: Oxford Oncology
+section: Contribute:Organizations
 ---
 
 The Microscopy Core in the department of oncology at the University of Oxford

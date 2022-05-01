@@ -1,10 +1,12 @@
 ---
-title: Developing ImageJ in Eclipse
-section: Development:Guides
+mediawiki: Developing_ImageJ_in_Eclipse
+title: Developing ImageJ2 in Eclipse
+section: Extend:Development:Tools:IDEs
+project: /software/imagej2
 ---
 
 This article explains how to install, configure and use Eclipse to develop
-[ImageJ](/about) [components](/develop/architecture#definitions) and
+[ImageJ2](/software/imagej2) [components](/develop/architecture#definitions) and
 [plugins](/plugins). Directions correspond to Eclipse 4.4 Luna, and may need
 adjustment for other versions.
 
@@ -12,26 +14,31 @@ adjustment for other versions.
 
 ## Install the Java Development Kit
 
--   Download and install the Java Development Kit (JDK) from the
-    [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/).
+-	To be safe, since you may need JavaFX (for the GUI) download [Java8 JDK with FX from Azul](https://www.azul.com/downloads/?version=java-8-lts&package=jdk-fx). Make sure to scroll down and choose the appropriate Operating System (Windows, Linux, etc) and Architecture (x86 64 bit for most systems, though older systems may be 32 bit). Pay attention to where you install this, as you will need to find it again within Eclipse!
+-   Alternatively, download and install [OpenJDK](https://www.azul.com/downloads/?package=jdk).
 
 ## Install and configure Eclipse
 
 ### Install Eclipse
 
 -   Download "Eclipse IDE for Java Developers" from the
-    [Eclipse web site](http://www.eclipse.org/downloads/).
+    [Eclipse website](http://www.eclipse.org/downloads/).
 
-{% include warning-box content='It is **important** to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [install the M2E plugin manually](http://eclipse.org/m2e/).' %}
+{% include notice icon="warning" content='It is **important** to choose "Eclipse IDE for Java Developers" because it contains Maven support built-in. Otherwise, you will have to [install the M2E plugin manually](http://eclipse.org/m2e/).' %}
 
 -   Unpack the archive to a location of your choice.
 
 ### Configure Eclipse for your platform
 
-<div style="overflow: hidden">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'windows')">Windows</button>
+  <button class="tablinks" onclick="openTab(event, 'macos')">MacOS</button>
+  <button class="tablinks" onclick="openTab(event, 'linux')">Linux</button>
+</div>
 
-<tabs>
-<tab name="/platforms/windows"> ![ x32px](/media/win.png) **Windows**
+<div id="windows" class="tabcontent" markdown="1">
+{%- include icon name="Windows" size="32px" -%}
+<br/>
 
 **Avoid permissions issues.** We recommend installing Eclipse *outside* of the `Program Files` directory. E.g.: `C:\Users\frood\Programs\eclipse`, where `C:\Users\frood` is your user directory.
 
@@ -47,13 +54,17 @@ Now update Eclipse's JRE to be JDK-aware:
 -   Click Search..., navigate to your JDK installation folder (e.g., `C:\Program Files\Java\jdk1.8.0_11`) and click OK
 -   Check the box next to the JRE that appears and click OK
 
-</tab>
-<tab name="macOS"> ![ x32px](/media/osx.png) **macOS**
+</div>
+<div id="macos" class="tabcontent" markdown="1">
+{%- include icon name="MacOS" width="32px" -%}
+<br/>
 
-**Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/help/faq#macos), as there are several Java-related issues on macOS.
+**Understand Java 6 vs. Java 8.** Eclipse should work on macOS with no further configuration. However, we recommend reading the [macOS section of the FAQ](/learn/faq#macos), as there are several Java-related issues on macOS.
 
-</tab>
-<tab name="/platforms/linux"> ![ x32px](/media/tux.png) **Linux**
+</div>
+<div id="linux" class="tabcontent" markdown="1">
+{%- include icon name="Linux" width="32px" -%}
+<br/>
 
 **Avoid permissions issues.** We recommend installing to `$HOME/eclipse`.
 
@@ -61,15 +72,14 @@ Now update Eclipse's JRE to be JDK-aware:
 
 **Adjust the Eclipse font size.** Sometimes it is desirable to change the Eclipse font size. To do so, create a GTK configuration file (e.g. `~/.gtkrc-eclipse`) and place the following lines there:
 
-`style "eclipse" {`  
-`    font_name = "Sans Condensed 8"`  
-`}`  
-`class "GtkWidget" style "eclipse"`
+```
+style "eclipse" {
+    font_name = "Sans Condensed 8"
+}
+class "GtkWidget" style "eclipse"
+```
 
 Then run eclipse using this command: `GTK2_RC_FILES=~/.gtkrc-eclipse eclipse`
-</tab>
-</tabs>
-
 </div>
 
 ## Clone the source code
@@ -200,12 +210,12 @@ people call it *compile-debug* or *edit-compile-debug* or *edit-compile-run* or
 *debug-edit-compile* or *edit-build-test-debug* or *edit-compile-link-debug*
 or...
 
-## Launch ImageJ
+## Launch ImageJ2
 
-If you cloned the [imagej project](https://github.com/imagej/imagej),
+If you cloned the [imagej2 project](https://github.com/imagej/imagej2),
 you can launch the program as follows:
 
-1. In the Package Explorer, expand the `imagej` project
+1. In the Package Explorer, expand the `imagej2` project
 2. Navigate into `src/main/java`
 3. Navigate into `net.imagej`
 4. Right-click on `Main.java`
@@ -213,63 +223,6 @@ you can launch the program as follows:
 
 Other projects will have different main classes,
 but the general procedure is the same.
-
-## Running and debugging
-
-One major problem when debugging [ImageJ 1.x](/software/imagej1) plugins is
-that ImageJ 1.x expects all the plugins' `.jar` files to live in a
-sub-directory `plugins/` in the ImageJ root directory. We can trick ImageJ by
-setting the property `ij.dir` to the location of the `.jar` file generated by
-m2e. The [Fiji](/software/fiji) project provides a convenience class
-`fiji.Debug` in the
-{% include github org='fiji' repo='fiji-lib' label='fiji-lib' %}
-component which lets you do that without any pain:
-
-```
-import fiji.Debug; // requires fiji-lib as a dependency
-
-[...]
-
-public static void main(String[] args) {
-    // requires a plugins.config in src/main/resources/ that defines the command name:
-    // Plugins, "My shiny new plugin", the.current.PluginClass
-    Debug.run("My shiny new plugin", "plugin parameters");
-}
-```
-
-The format of `plugin parameters` can be determined by using the
-[macro recorder](/scripting/macro#the-recorder), or just pass `null` if your
-plugin opens a dialog. For more complex plugins that are not macro recordable,
-you can pass empty strings to the `run` method—it will still launch an ImageJ
-instance with your plugin on the classpath.
-
-If your plugin does not depend on `fiji-lib` by default, you can add it using
-[maven](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html).
-Just paste the following block into your `pom.xml` dependencies:
-
-```xml
-<dependency>
-  <groupId>sc.fiji</groupId>
-  <artifactId>fiji-lib</artifactId>
-</dependency>
-```
-
-To debug classes of type `PlugInFilter`, use the
-`Debug.runFilter(imagePath, plugin, parameters)` method instead.
-
-Note: if you do not even require ImageJ 1.x to really know about your plugin
-(i.e. the plugin does not have to show up in the menus for the
-testing/debugging to work), you can also do something like this instead:
-
-```java
-public static void main(String[] args) {
-  new ImageJ();
-  ImagePlus image = IJ.openImage("/path/to/fiji/samples/clown.jpg");
-  IJ.runPlugIn(image, "fiji.My_Beautiful_Plugin", "parameter=Hello");
-  image.show();
-  WindowManager.addWindow(image.getWindow());
-}
-```
 
 ## Testing your plugin in an existing installation
 
@@ -279,7 +232,7 @@ actual user's installation. To test your plugin in an existing installation you
 can either simply copy the jar, or use Maven to install your plugin and its
 dependencies.
 
-{% include thumbnail src='/media/mavenrunconfig.png' title='Setting up a new Maven Build configuration' %}
+{% include thumbnail src='/media/develop/mavenrunconfig.png' title='Setting up a new Maven Build configuration' %}
 
 ### Option 1: Copying the jar
 
@@ -287,7 +240,7 @@ All modern Eclipse installations have the m2e plugin, so you can simply tell
 Maven to
 [build the project](http://www.vogella.com/tutorials/EclipseMaven/article.html#example_eclipsemavenproject_runningthebuild).
 This creates a `.jar` in the `/target` subdirectory,
-which you can then copy to an `ImageJ.app/jars/` directory.
+which you can then copy to an `ImageJ2.app/jars/` directory.
 
 This is a simple option that makes minimal changes to the existing
 installation.
@@ -309,10 +262,10 @@ Steps are as follows:
    Eclipse before there will already be a configuration for it. Otherwise you
    can double-click "Maven Build" to create a new run configuration.
 
-3. Add a parameter: `imagej.app.directory` with value:
-   `<path/to/ImageJ.app>` (e.g. `/home/hinerm/Fiji.app`)
+3. Add a parameter: `scijava.app.directory` with value:
+   `<path/to/ImageJ2.app>` (e.g. `/home/hinerm/Fiji.app`)
 
-4. Add a parameter: `imagej.deleteOtherVersions` with value: `always`
+4. Add a parameter: `scijava.deleteOtherVersions` with value: `always`
 
 5. Click `Apply`
 
@@ -363,7 +316,7 @@ you can try the following steps.
 
 2.  Check that the `-sources` JAR has been downloaded locally.
     -   Navigate to
-        `<path-to-.m2-repo>/repository/`<groupId>`/`<artifactId>`/`<version>
+        `<path-to-.m2-repo>/repository/<groupId>/<artifactId>/<version>`
         and see if there is a `-sources` JAR there.
     -   If it is not, then in a terminal navigate to the folder containing your
         project's pom.xml file. And then from the command line run:
@@ -371,13 +324,13 @@ you can try the following steps.
         mvn dependency:get -Dartifact=groupId:artifactId:version:packaging:classifier
         ```
         -   For example if a project depended on imagej-common and you needed
-            to retrieve the `-sources` JAR, the command you'd type would be:  
+            to retrieve the `-sources` JAR, the command you'd type would be:
             ```
             mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:jar:sources
             ```
 
 3.  If the `-sources` JAR was there, you could check its contents by running
-    the following command from the terminal:  
+    the following command from the terminal:
     ```
     jar tr <path-to-.m2-repo>/repository/<groupId>/<artifactId>/<version>/<jar-name>-sources.jar
     ```
@@ -395,8 +348,8 @@ section for more information.
 
 ## See also
 
-* [Writing plugins](/develop/plugins) (for [ImageJ2](/software/imagej2))
+* [Developing plugins for ImageJ2](/develop/plugins)
 * [Developing plugins for ImageJ 1.x](/develop/ij1-plugins)
 * [Contributing to a plugin](/develop/improving-the-code)
-* {% include github org='imagej' repo='example-legacy-plugin' label='example-imagej-command' %} ([ImageJ2](/software/imagej2)-style command)
-* {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} ([ImageJ1](/software/imagej1)-style command)
+* {% include github org='imagej' repo='example-imagej-command' label='example-imagej-command' %} ([ImageJ2](/software/imagej2)-style command)
+* {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} ([ImageJ 1.x](/software/imagej)-style command)

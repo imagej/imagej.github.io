@@ -1,4 +1,6 @@
 {%- comment -%}
 This include just echoes its arguments, for debugging/learning purposes.
 {%- endcomment -%}
-<p>{{include}}</p>
+```
+{{include}}
+```

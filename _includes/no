@@ -1,7 +1,0 @@
-<center>
-<img src="/media/icons/no-red-x.png" style="width:30px;height:30px;">
-</center>
-
-{%- comment -%}
-# vi:syntax=liquid
-{%- endcomment -%}

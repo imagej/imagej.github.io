@@ -1,11 +1,11 @@
 ---
 title: GNU Lesser General Public License
-section: About:Licensing:Open Source
+section: Contribute:Licensing:Open Source
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
+{% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-The **GNU Lesser General Public License** is a free, [open source](Open_source)
+The **GNU Lesser General Public License** is a free, [open source](/licensing/open-source)
 license for software and other kinds of works. It is a middle ground between
 **{% include wikipedia title='Copyleft' text='copyleft'%}** licenses such as
 the [GPL](/licensing/gpl) and **permissive** licenses like [BSD](/licensing/bsd) and [MIT](/licensing/mit).
@@ -25,11 +25,11 @@ for more information.
 Version 3 of the LGPL is the latest version, written in 2007. It is the
 recommended version of the LGPL to use for new projects.
 
-{% include license-links shortname='LGPLv3' url='https://www.gnu.org/licenses/lgpl.html' choosealicense='lgpl-3.0' osi='LGPL-3.0' %}
+{% include licensing/links shortname='LGPLv3' url='https://www.gnu.org/licenses/lgpl.html' choosealicense='lgpl-3.0' osi='LGPL-3.0' %}
 
 ## GNU Lesser General Public License v2.1
 
 Version 2.1 of the LGPL is an older version from 1999. It is recommended to use
 LGPLv3 instead if possible.
 
-{% include license-links shortname='LGPLv2' url='https://www.gnu.org/licenses/lgpl-2.1.html' choosealicense='lgpl-2.1' osswatch='lgpl' osi='LGPL-2.1' %}
+{% include licensing/links shortname='LGPLv2' url='https://www.gnu.org/licenses/lgpl-2.1.html' choosealicense='lgpl-2.1' osswatch='lgpl' osi='LGPL-2.1' %}

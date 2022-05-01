@@ -77,7 +77,7 @@ function fillRole(id, people) {
     var url = person.url;
     if (!name && id) name = id;
     if (!name) continue; // no name or id -- skip this person
-    if (!url && id) url = `/users/${id}`;
+    if (!url && id) url = `/people/${id}`;
     var li = document.createElement('li');
     li.innerHTML = url ?
       `<a class="person" href="${url}">${name}</a>` :
@@ -87,7 +87,7 @@ function fillRole(id, people) {
 }
 
 function fillStatus(id, label, description) {
-  fill(id, `<span class="tooltip">${label}<span class="tooltiptext">${description}</span></span>`);
+  fill(id, `<span class="tooltip">${label}<span class="tooltiptext" style="left: -90px; bottom: 1.5em; width: 180px">${description}</span></span>`);
 }
 
 function catalogRoles(team, id, name, url, roles) {
@@ -98,7 +98,7 @@ function catalogRoles(team, id, name, url, roles) {
   }
 }
 
-function populateFromPOM(pom) {
+function fillStatsFromPOM(pom) {
   var g = value(pom, ['groupId']) || value(pom, ['parent', 'groupId']);
   var a = value(pom, ['artifactId']);
   var v = value(pom, ['version']) || value(pom, ['parent', 'version']);
@@ -200,16 +200,20 @@ function populateFromPOM(pom) {
   }
 }
 
-function populateFromRepository(g, a, v, repository) {
-  downloadPOM(g, a, v, repository).then(pom => populateFromPOM(pom));
+function fillStatsFromURL(url) {
+  download(url).then(pom => fillStatsFromPOM(pom));
 }
 
-function populateComponent(artifact, repository) {
+function fillStatsFromGAV(g, a, v, repository) {
+  downloadPOM(g, a, v, repository).then(pom => fillStatsFromPOM(pom));
+}
+
+function fillStatsFromArtifact(artifact, repository) {
   if (!repository) repository = 'https://maven.scijava.org/content/groups/public';
   var gav = artifact.split(':');
   var g = gav.length > 0 ? gav[0] : '';
   var a = gav.length > 1 ? gav[1] : '';
   var v = gav.length > 2 ? gav[2] : '';
-  if (v) populateFromRepository(g, a, v, repository);
-  else latestVersion(g, a, repository).then(lv => populateFromRepository(g, a, lv, repository));
+  if (v) fillStatsFromGAV(g, a, v, repository);
+  else latestVersion(g, a, repository).then(lv => fillStatsFromGAV(g, a, lv, repository));
 }

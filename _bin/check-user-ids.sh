@@ -5,7 +5,7 @@ errors=0
 
 # Check that user page name matches GitHub ID.
 
-for f in "$pages/users/"*
+for f in "$pages/people/"*
 do
   user=${f##*/}
   user=${user%.md}
@@ -24,7 +24,7 @@ ids2=$(grep -IRo '{% include person-list ids=[^%]*%}' "$pages" | sed 's/.* ids=.
 ids=$(echo "$ids1" "$ids2" | sort -u | grep -v ' ')
 for id in $ids
 do
-  test -f "$pages/users/$id.md" || {
+  test -f "$pages/people/$id.md" || {
     echo "Unknown person ID: $id"
     errors=$((errors+1))
   }

@@ -1,0 +1,5 @@
+{% include notice icon="image-sc" content="The ***recommended*** way to get help with ImageJ is to use the [Image.sc Forum](https://forum.image.sc/).<br>You will find a friendly community with many experts on both scientific and technical topics." %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

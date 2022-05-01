@@ -1,0 +1,5 @@
+{% include notice icon="warning" content="This section is out of date, potentially misleading or invalid. Be careful with any instructions here. When in doubt, [ask for help from the community](/discuss)." %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

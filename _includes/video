@@ -1,0 +1,129 @@
+{%- assign platform = include.platform -%}
+{%- assign id = include.id -%}
+
+{%- assign width = include.width -%}
+{%- assign height = include.height -%}
+{%- assign aspect = include.aspect -%}
+
+{%- assign src = include.src -%}
+{%- assign direct = include.direct -%}
+{%- assign linkback = include.linkback -%}
+
+{%- assign caption = include.caption -%}
+
+{%- assign default-width = 400 -%}
+{%- assign default-height = 300 -%}
+
+{%- comment -%} Standardize case of supported platforms. {%- endcomment -%}
+{%- assign platform-dc = platform | downcase -%}
+{%- case platform-dc -%}
+  {%- when "youtube"    -%} {%- assign platform = "YouTube" -%}
+  {%- when "vimeo"      -%} {%- assign platform = "Vimeo" -%}
+  {%- when "switchtube" -%} {%- assign platform = "SWITCHtube" -%}
+{%- endcase -%}
+
+{%- assign error = false -%}
+
+{%- comment -%} Compute good dimensions for video container. {%- endcomment -%}
+{%- unless width or height -%}
+  {%- comment -%} Compute height from default width. {%- endcomment -%}
+  {%- assign width = default-width -%}
+{%- endunless -%}
+{%- unless width -%}
+  {%- if aspect contains ":" -%}
+    {%- comment -%} Compute width from height + aspect ratio. {%- endcomment -%}
+    {%- assign ratio = aspect | split: ":" -%}
+    {%- assign width = height | times: ratio[0] | divided_by: ratio[1] -%}
+  {%- else -%}
+    {%- comment -%} No aspect ratio given; use default width. {%- endcomment -%}
+    {%- assign width = default-width -%}
+  {%- endif -%}
+{%- endunless -%}
+{%- unless height -%}
+  {%- if aspect contains ":" -%}
+    {%- comment -%} Compute height from width + aspect ratio. {%- endcomment -%}
+    {%- assign ratio = aspect | split: ":" -%}
+    {%- assign height = width | times: ratio[1] | divided_by: ratio[0] -%}
+  {%- else -%}
+    {%- comment -%} No aspect ratio given; use default width. {%- endcomment -%}
+    {%- assign height = default-height -%}
+  {%- endif -%}
+{%- endunless -%}
+
+{%- if src -%}
+  {%- comment -%} Direct source given. Embed with video tag. {%- endcomment -%}
+  {%- if direct == nil %} {%- assign direct = true -%} {%- endif -%}
+{%- else -%}
+  {%- comment -%} Platform + ID given. Embed with iframe tag. {%- endcomment -%}
+  {%- if direct == nil %} {%- assign direct = false -%} {%- endif -%}
+  {%- capture src -%}
+    {%- if id -%}
+      {%- case platform-dc -%}
+        {%- when "youtube" -%}
+          {%- assign prefix = id | slice: 0, 2 -%}
+          {%- if prefix == 'PL' -%}
+            https://www.youtube.com/embed/videoseries?list={{id}}
+          {%- else -%}
+            https://www.youtube.com/embed/{{id}}
+          {%- endif -%}
+        {%- when "vimeo" -%}
+          https://player.vimeo.com/video/{{id}}?color=b80013&title=0&byline=0&portrait=0
+        {%- when "switchtube" -%}
+          https://tube.switch.ch/embed/{{id}}
+        {%- else -%}
+          {%- assign error = true -%}
+      {%- endcase -%}
+    {%- else -%}
+      {%- assign error = true -%}
+    {%- endif -%}
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- if linkback == nil -%}
+  {%- comment -%}
+    Automatic linkback behavior: include a linkback only if the
+    embedded widget itself does not link back to the original video.
+  {%- endcomment -%}
+  {%- if direct or platform-dc == "vimeo" -%}
+    {%- assign linkback = true -%}
+  {%- else -%}
+    {%- assign linkback = false -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if linkback -%}
+  {%- capture linkback-blurb -%}
+    {%- if direct -%}
+      <a href="{{src}}">[download original]</a>
+    {%- elsif platform and platform != "" -%}
+      <a href="{%- case platform-dc -%}
+        {%- when "youtube"    -%} https://www.youtube.com/watch?v={{id}}
+        {%- when "vimeo"      -%} https://vimeo.com/{{id}}
+        {%- when "switchtube" -%} https://tube.switch.ch/videos/{{id}}
+        {%- else              -%} {{src}}
+      {%- endcase -%}">[view on {{platform}}]</a>
+    {%- else -%}
+      <a href="{{src}}">[view original]</a>
+    {%- endif -%}
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- if error -%}
+  {%- capture error-message -%} Unsupported arguments: {{include}} {%- endcapture -%}
+  {%- include util/error message=error-message -%}
+{%- else -%}
+  <div class="video">
+    {%- if caption -%} <figure class="figure"> {%- endif -%}
+    {%- if direct -%}
+      <video controls width="{{width}}" height="{{height}}"><source src="{{src}}">Sorry, your browser doesn't support embedded video.</video>
+    {%- else -%}
+      <iframe src="{{src}}" width="{{width}}" height="{{height}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    {%- endif -%}
+    {%- if linkback -%} <div class="linkback" style="width: {{width}}px">{{linkback-blurb}}</div> {%- endif -%}
+    {%- if caption -%} <figcaption>{{caption | markdownify}}</figcaption> {%- endif -%}
+  </div>
+{%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

@@ -1,0 +1,81 @@
+{%- comment -%}
+A horizontal navigation bar with links.
+{%- endcomment -%}
+
+{%- assign pages = page.nav-links -%}
+
+{%- if pages == true -%}
+  {%- comment -%}
+    "nav-links: true" specified; include all pages from this page's directory.
+  {%- endcomment -%}
+
+  {%- capture page-dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
+  {%- assign candidates = site.pages | where_exp: "p", "p.url contains page-dir" -%}
+
+  {%- comment -%}
+    We build up the list of links as a big string, because Jekyll 3.9
+    pukes when sorting the pages array by title using where_exp:
+      jekyll/filters.rb:304:in `sort!': Liquid error: comparison
+      of Array with Array failed included (Liquid::ArgumentError)
+  {%- endcomment -%}
+  {%- assign links = "" -%}
+  {%- for p in candidates -%}
+    {%- capture p-dir -%} {%- include util/dir path=p.url -%} {%- endcapture -%}
+    {%- if p-dir != page-dir -%} {%- continue -%} {%- endif -%}
+    {%- unless p.nav-links -%} {%- continue -%} {%- endunless -%}
+
+    {%- comment -%} Sort index page before the others. {%- endcomment -%}
+    {%- assign url = p.url | replace: "/index", "/!index" -%}
+
+    {%- assign title = p.nav-title | default: p.title
+      | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
+    {%- capture link -%}
+      <li><a href="{{url}}">{{title}}</a></li>
+    {%- endcapture -%}
+    {%- unless links == "" -%}
+      {%- assign links = links | append: "|" -%}
+    {%- endunless -%}
+    {%- assign links = links | append: link -%}
+  {%- endfor -%}
+
+  {%- comment -%}
+    Doing a split+sort ends up with links sorted by URL, which is OK enough.
+  {%- endcomment -%}
+  {%- assign sorted-links = links | split: "|" | sort -%}
+
+  <div id="nav-bar"><ul class="shadowed-box">
+    {%- capture page-ref -%} <a href="{{page.url}}"> {%- endcapture -%}
+    {%- for link in sorted-links -%}
+      {%- comment -%} NB: Loop vars are immutable! O_O {%- endcomment -%}
+      {%- assign l = link | replace: "/!index", "/index" -%}
+      {%- if l contains page-ref -%}
+        {%- comment -%}
+          This link points at the current page; remove the <a> and </a> tags.
+          We do this post-processing here, rather than handling it above,
+          so that the sort above works as desired.
+        {%- endcomment -%}
+        {%- assign l = l | replace: page-ref, "" | replace: "</a>", "" -%}
+      {%- endif -%}
+      {{l}}
+    {%- endfor -%}
+  </ul></div>
+{%- elsif pages -%}
+  {%- comment -%}
+    Explicit list of nav-links given; use it as-is.
+  {%- endcomment -%}
+  <div id="nav-bar"><ul class="shadowed-box">
+  {% for p in pages %}
+    {%- assign title = p.nav-title | default: p.title
+      | replace: " ", "&nbsp;" | replace: "-", "&#8209;" -%}
+    {%- if p.url == page.url -%}
+      <li>{{title}}</li>
+    {%- else -%}
+      <li><a href="{{p.url}}">{{title}}</a></li>
+    {%- endif -%}
+  {% endfor %}
+  </ul></div>
+{%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

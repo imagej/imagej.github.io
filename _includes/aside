@@ -1,0 +1,13 @@
+{%- assign width = include.width -%}
+{%- assign aside-title = include.title -%}
+{%- assign icon = include.icon -%}
+
+<aside class="sidebox"{% if width %} width="{{width}}"{% endif %}>
+{% if icon -%} {% include img src=icon width=72 align='right' class='box-icon' %} {%- endif %}
+{% if aside-title %}<strong>{{aside-title | markdownify}}</strong>{% endif %}
+<div>{{include.content | markdownify}}</div>
+</aside>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

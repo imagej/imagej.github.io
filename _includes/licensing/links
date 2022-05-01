@@ -1,0 +1,19 @@
+The {{include.shortname}} license text can be found at:
+
+{% include link-banner url=include.url %}
+
+### See also
+
+{% if include.choosealicense %}
+* [{{include.shortname}} on choosealicense.com](https://choosealicense.com/licenses/{{include.choosealicense}}/)
+{% endif %}{% if include.wikipedia %}
+* [{{include.shortname}} on Wikipedia](https://en.wikipedia.org/wiki/{{include.wikipedia}})
+{% endif %}{% if include.osswatch %}
+* [{{include.shortname}} on OSS Watch](https://oss-watch.ac.uk/resources/{{include.osswatch}})
+{% endif %}{% if include.osi %}
+* [{{include.shortname}} on Open Source Initiative](https://opensource.org/licenses/{{include.osi}})
+{% endif %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

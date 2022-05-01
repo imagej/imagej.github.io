@@ -1,0 +1,40 @@
+{%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
+{%- assign media-dir = "/media" | append: dir | append: "/" -%}
+{%- assign default-prefixes = "|" | append: media-dir | append: "|/media/" | split: "|" -%}
+{%- assign default-suffixes = "|.svg|.webp|.png|.gif|.jpg" | split: "|" -%}
+
+{%- assign path = include.path -%}
+{%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
+{%- assign suffixes = include.suffixes | default: include.suffix | default: default-suffixes -%}
+
+{%- assign match = nil -%}
+{%- for prefix in prefixes -%}
+  {%- for suffix in suffixes -%}
+    {%- assign candidate = prefix | append: path | append: suffix -%}
+    {%- if site.allow-jekyll-4 -%}
+      {%- assign hit = site.static_files | find: "path", candidate -%}
+      {%- if hit -%}
+        {%- assign match = candidate -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- comment -%}
+        Even though the where filter does not terminate upon finding
+        a match, it is still much faster than explicitly looping on
+        site.static_files and breaking upon finding the first match.
+      {%- endcomment -%}
+      {%- assign hits = site.static_files | where: "path", candidate -%}
+      {%- if hits.size > 0 -%}
+        {%- assign match = candidate -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if match -%} {%- break -%} {%- endif -%}
+{%- endfor -%}
+
+{{- match -}}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

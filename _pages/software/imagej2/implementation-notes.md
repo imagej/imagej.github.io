@@ -1,4 +1,10 @@
 ---
+mediawiki:
+- ImageJ2/Documentation/Edit/Options/Compatibility
+- ImageJ2/Documentation/Edit/Options/Misc
+- ImageJ2/Documentation/Image/Overlay/OverlayManager
+- ImageJ2/Documentation/PointSetDemo
+- ImageJ2/Documentation/Process/Math/Equation
 title: ImageJ2 implementation notes
 ---
 
@@ -151,7 +157,7 @@ The Invert command - in ImageJ 1.x the Invert command inverts all pixels with re
 
 ## {% include bc path='Image | Overlay | Overlay Manager' %}
 
-ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [ImageJ 1.x documentation of its ROI Manager](/ij/docs/menus/analyze.html#manager).
+ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [ImageJ 1.x documentation of its ROI Manager](https://imagej.nih.gov/ij/docs/menus/analyze.html#manager).
 
 However there are some major differences between them. For instance:
 
@@ -168,7 +174,7 @@ The syntax for a text specified `PointSet` is as one or more axis ranges optiona
 
 The axis syntax follows Haskell's list comprehension syntax. You can specify an axis name and its associated single value (i.e. `x = [10]`). Or multiple values (i.e. `x=[10,20,30]`). Or a range of values (i.e. `x = [1..25]`). Or even a range of values by a defined step size (i.e. `x = [1,3..15]` which equals [1,3,5,7,9,11,13,15]).
 
-The constraint equations use much of the same syntax as outlined [here](/ImageJ2_Documentation_Process_Math_Equation).
+The constraint equations use much of the same syntax as outlined [here](#process--math--equation).
 
 Some examples:
 

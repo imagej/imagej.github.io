@@ -5,7 +5,7 @@ bin="$dir/_bin"
 root="$dir/_site"
 test -d "$root" || {
   echo "Please generate the site first."
-  echo "  bundle exec jekyll serve"
+  echo "  bundle exec jekyll build"
   exit 1
 }
 
@@ -20,8 +20,9 @@ do
 done
 
 errors=0
-while read f
-do
+for f in $(find "$root" -name '*.html'); do
+  f=${f#$root}
+  f="_site$f"
   "$bin/check-page-html.sh" "$f"
   status=$?
   if [ $status -ne 0 ]
@@ -32,5 +33,6 @@ do
     sf=$(echo "$f" | sed "s:^$root/::")
     echo "--> $sf OK"
   fi
-done <<< "$(find "$root" -name '*.html')"
+done
+test "$errors" -gt 255 && errors=255
 exit $errors

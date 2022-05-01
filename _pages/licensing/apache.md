@@ -1,13 +1,13 @@
 ---
 title: Apache Software License
-section: About:Licensing:Open Source
+section: Contribute:Licensing:Open Source
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
+{% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-The **Apache License** is a **permissive** [free software](Open_Source)
-license, imposing minimal restrictions on the redistribution of covered
-software. This is in contrast to
+The **Apache License** is a **permissive**
+[free software](/licensing/open-source) license, imposing minimal
+restrictions on the redistribution of covered software. This is in contrast to
 {% include wikipedia title='Copyleft' text='copyleft' %}
 licenses like the [GPL](/licensing/gpl), which have reciprocity share-alike requirements.
 The Apache License is named for the
@@ -29,4 +29,4 @@ lawsuits. A licensee of Apache-2-licensed software can:
 - Use, copy and distribute modified source or binary forms of the licensed
   program, provided that all distributed copies are accompanied by the license
 
-{% include license-links shortname="Apache 2" choosealicense='apache-2.0' osi='Apache-2.0' %}
+{% include licensing/links shortname="Apache 2" url=' http://choosealicense.com/licenses/apache-2.0/' osi='Apache-2.0' %}

@@ -1,0 +1,5 @@
+{%- include util/find-media path=include.path prefix="/media/icons/" -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

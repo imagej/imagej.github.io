@@ -1,0 +1,106 @@
+---
+mediawiki: Image_Processing_School_Pilsen_2009
+title: Image Processing School Pilsen 2009
+---
+
+See also the [Image Processing School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/) announcement webpage.
+
+# Schedule (tentative):
+
+| **Time**                 | Wednesday, September 9th                                                                                                 | Thursday, September 10th                                 | Friday, September 11th                                                         | Saturday, September 12th                 |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------|
+| Session 1: 9:30 - 11:00  | [Welcome](#welcome-and-introduction) and [Installing Fiji](#overview-of-installing-and-using-fiji) | [Quantitative Imaging](#quantitative-imaging) | [Segmentation](#Segmentation)                                       | [Registration](#Registration) |
+| Session 2: 11:30 - 12:30 | [Image Processing Fundamentals](#image-processing-fundamentals)                                               | [Colocalization](#Colocalization)             | [Beyond 3D](#beyond-3d)                                             |                                          |
+| Session 3: 14:00 - 15:30 | [Fiji scripting: Python](#Fiji_scripting:_Python)                                                             | [TrakEM2](#TrakEM2)                           | [Fiji scripting: advanced Python](#Fiji_scripting:_advanced_Python) |                                          |
+| Session 4: 16:00 - 17:30 | [Show your images!](#work-sessions)                                                                           | [Work session](#work-sessions)                | [Work session](#work-sessions)                                      |                                          |
+
+## Wednesday
+
+### Welcome and Introduction
+
+[Albert Cardona](/people/acardona)
+
+### Overview of installing and using Fiji
+
+Setup: installing Fiji and getting familiar with it; overview of major features.
+
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
+
+### Image Processing fundamentals
+
+Fundamentals of image processing: anatomy of a digital image, image formats. Includes notes on image acquisition (effects of dynamic range and exposure times)
+
+Lead instructor: [Albert Cardona](/people/acardona)
+
+### Fiji scripting: Python
+
+Introduction to Fiji scripting in Python
+
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
+
+## Thursday
+
+### Quantitative Imaging
+
+Quantitative image acquisition and analysis: Spectroscopy not photography, simple measurements.
+
+The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
+
+Lead instructor: [Dan White](/people/chalkie666)
+
+### Colocalization
+
+Quantitative Image analysis: What you need to know about Colocalization Analysis
+
+The presentation is available online (PDF) [here!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
+
+Lead instructor: [Dan White](/people/chalkie666)
+
+### TrakEM2
+
+[TrakEM2](/plugins/trakem2): image registration and manual segmentation.
+
+Lead instructor: [Albert Cardona](/people/acardona)
+
+## Friday
+
+### Segmentation
+
+Introduction to image segmentation.
+
+-   Pixel-based and vector-based.
+-   Manual and semi-automatic.
+
+Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
+
+Lead instructor: [Verena Kaynig](Verena_Kaynig)
+
+### Beyond 3D
+
+Intensity vs time analysis
+
+Lead instructor: {% include person id='tinevez' %}
+
+### Fiji scripting: advanced Python
+
+Advanced Fiji scripting in Python
+
+Lead instructors: {% include person id='tinevez' %}
+
+### Writing Fiji plugins in Java
+
+Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting:_advanced_Python)).
+
+Lead instructor: [Johannes Schindelin](Johannes_Schindelin)
+
+## Saturday
+
+### Registration
+
+Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](/plugins/register-virtual-stack-slices), [TrakEM2](/plugins/trakem2), [BUnwarpJ](/plugins/bunwarpj))
+
+Lead instructor: {% include person id='iarganda' %}
+
+## Work sessions
+
+At the end of every day, there is time to apply what you learnt and go beyond that. You can process your own images and discuss results and methods with the instructors.

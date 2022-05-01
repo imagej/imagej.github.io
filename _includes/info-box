@@ -1,3 +1,4 @@
+{%- comment -%} TODO eliminate in favor of statbox {%- endcomment -%}
 {% capture info_content %}
 <div info="content">
     {{include.content | markdownify}}
@@ -45,11 +46,11 @@
 {% if include.logo %}
 <p markdown="1">{{include.logo}}</p>
 {% else %}
-<p><img src="/media/icons/40px-Information-sign.png"></p>
+<p><img src="/media/icons/info.svg" width=32></p>
 {% endif %}
 {% endcapture %}
 
-<div class="note">
+<div>
     <table class="table-info info-notice">
         <tbody>
             <tr>

@@ -4,7 +4,7 @@ dir=$(cd "$(dirname "$0")/.." && pwd)
 root="$dir/_site"
 test -d "$root" || {
   echo "Please generate the site first."
-  echo "  bundle exec jekyll serve"
+  echo "  bundle exec jekyll build"
   exit 1
 }
 
@@ -39,7 +39,7 @@ output=$(bundle exec htmlproofer "$F" \
   --report-missing-doctype \
   --report-eof-tags \
   --report-mismatched-tags \
-  --url-ignore '/\/(ij|conference|list-of-update-sites|mbf|presentations|tickets|workshops|images|list-of-update-sites)($|\/.*)/' \
+  --url-ignore \"/^/ij$/,/^/conference$/,/^/list-of-update-sites$/,/^/mbf$/,/^/presentations$/,/^/tickets$/,/^/workshops$/,/^/images$/,/^/ij//,/^/conference//,/^/list-of-update-sites//,/^/mbf//,/^/pipermail//,/^/presentations//,/^/tickets//,/^/workshops//,/^/images//\" \
   --root-dir="$root" 2>&1)
 status=$?
 test "$VERBOSE" && echo "$output" ||

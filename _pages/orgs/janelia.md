@@ -1,5 +1,6 @@
 ---
 title: HHMI Janelia Research Campus
+section: Contribute:Organizations
 ---
 
 The [Janelia Research Campus](https://www.janelia.org/) is a scientific

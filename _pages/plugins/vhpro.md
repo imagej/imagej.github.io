@@ -1,5 +1,7 @@
 ---
+mediawiki: User:Idavidhf
 title: VHPro
+categories: [Uncategorized]
 ---
 
 VHPro is an image-based plugin for relative measurements using custom ROIs.
@@ -18,7 +20,7 @@ It can be customized to given graphical outputs from the results.
 
 ## See also
 
-* [MultiTracker](/ij/plugins/multitracker.html)
+* [MultiTracker](https://imagej.nih.gov/ij/plugins/multitracker.html)
 * [Manual Tracking](/plugins/manual-tracking)
 * [SpotTracker](/plugins/spottracker)
 * [MTrack2](/plugins/mtrack2)

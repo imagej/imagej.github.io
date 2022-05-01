@@ -1,7 +1,7 @@
-name: ImageJ
-title: ImageJ
-description: ImageJ is an open source image processing program designed for scientific multidimensional images.
-image: /assets/images/logo.png
+name: ImageJ Wiki
+title: ImageJ Wiki
+description: The ImageJ wiki is a community-edited knowledge base on topics relating to ImageJ, a public domain program for processing and analyzing scientific images, and its ecosystem of derivatives and variants, including ImageJ2, Fiji, and others.
+image: /media/icons/imagej2.png
 markdown: kramdown
 kramdown:
   syntax_highlighter: rogue
@@ -11,6 +11,7 @@ collections:
   pages:
     output: true
     permalink: /:path
+allow-jekyll-4: false
 defaults:
   -
     scope:
@@ -23,23 +24,161 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      icon: /media/icons/40px-information-sign.png
+      icon: /media/icons/imagej2.png
   -
     scope:
-      path: "_pages/plugins"
+      path: "_pages/contribute"
       type: pages
     values:
-      icon: /media/icons/default.png
+      icon: https://upload.wikimedia.org/wikipedia/commons/1/18/About_icon_%28The_Noun_Project%29.svg
+  -
+    scope:
+      path: "_pages/develop"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/5/55/Icon_%2880027%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/events"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/c/c4/Icon_%2880022%29_-_The_Noun_Project.svg
   -
     scope:
       path: "_pages/formats"
       type: pages
     values:
-      icon: /media/icons/default.png
+      icon: /media/icons/plugin.png
+  -
+    scope:
+      path: "_pages/guide"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Book_%2821025%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/imaging"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/d/de/Laboratory_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/learn"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/e/ee/Knowledge_Transfer_%2827472%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/libs"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/4/44/Stacked_books_silhouette.svg
+  -
+    scope:
+      path: "_pages/libs/imglib2"
+      type: pages
+    values:
+      icon: /media/icons/imglib2.png
+      project: /libs/imglib2
+  -
+    scope:
+      path: "_pages/libs/scifio"
+      type: pages
+    values:
+      icon: /media/icons/scifio.png
+      project: /libs/scifio
+  -
+    scope:
+      path: "_pages/libs/scijava"
+      type: pages
+    values:
+      icon: /media/icons/scijava.png
+      project: /libs/scijava
+  -
+    scope:
+      path: "_pages/licensing"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/f/f8/CopyrightImg.svg
+  -
+    scope:
+      path: "_pages/news"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/93/News_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/orgs"
+      type: pages
+    values:
+      icon: /media/icons/scijava.png
+  -
+    scope:
+      path: "_pages/people"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/90/Ic_person_48px.svg
+  -
+    scope:
+      path: "_pages/platforms"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/0/0c/Device-computer-icon.png
+  -
+    scope:
+      path: "_pages/plugins"
+      type: pages
+    values:
+      icon: /media/icons/plugin.png
+  -
+    scope:
+      path: "_pages/sites"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cloud_Upload_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/software"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/9/94/Laptop_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/software/fiji"
+      type: pages
+    values:
+      icon: /media/icons/fiji.svg
+      project: /software/fiji
+  -
+    scope:
+      path: "_pages/software/imagej"
+      type: pages
+    values:
+      icon: /media/icons/imagej.png
+      project: /software/imagej
+  -
+    scope:
+      path: "_pages/software/imagej2"
+      type: pages
+    values:
+      icon: /media/icons/imagej2.png
+      project: /software/imagej2
+  -
+    scope:
+      path: "_pages/tutorials"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/e/ee/Knowledge_Transfer_%2827472%29_-_The_Noun_Project.svg
+  -
+    scope:
+      path: "_pages/update-sites"
+      type: pages
+    values:
+      icon: https://upload.wikimedia.org/wikipedia/commons/2/2a/Cloud_Upload_-_The_Noun_Project.svg
   -
     scope:
       path: "_pages/plugins/trackmate"
       type: pages
     values:
-      icon: /media/icons/trackmate-icon120x120-color.png
+      icon: /media/icons/trackmate.png
 

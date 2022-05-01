@@ -1,0 +1,12 @@
+# https://editorconfig.org/
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+
+[*.md]
+# Markdown can use trailing '  ' to indicate <br />
+trim_trailing_whitespace = false
+

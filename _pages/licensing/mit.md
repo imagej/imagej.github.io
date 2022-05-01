@@ -1,13 +1,13 @@
 ---
 title: MIT License
-section: About:Licensing:Open Source
+section: Contribute:Licensing:Open Source
 ---
 
-{% include info-box content='For a summary of [SciJava](SciJava) licensing, see the [Licensing](/licensing) page.' %} 
+{% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-The **MIT License** is a **permissive** [free software](Open_Source) license,
-imposing minimal restrictions on the redistribution of covered software.
-This is in contrast to
+The **MIT License** is a **permissive**
+[free software](/licensing/open-source) license, imposing minimal
+restrictions on the redistribution of covered software. This is in contrast to
 {% include wikipedia title='Copyleft' text='copyleft'%} licenses like the
 [GPL](/licensing/gpl), which have reciprocity share-alike requirements. The MIT license is
 named for the [Massachusetts Institute of Technology](http://mit.edu/), where
@@ -27,4 +27,4 @@ the [Simplified BSD License](/licensing/bsd). A licensee of MIT-licensed softwar
 - Use, copy and distribute modified source or binary forms of the licensed
   program, provided that all distributed copies are accompanied by the license
 
-{% include license-links shortname="/licensing/mit" url='https://choosealicense.com/licenses/mit/' choosealicense='mit' osi='MIT' %}
+{% include licensing/links shortname="MIT" url='https://choosealicense.com/licenses/mit/' osi='MIT' %}

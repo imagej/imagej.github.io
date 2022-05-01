@@ -1,0 +1,8 @@
+{%- assign old = include.old -%}
+{%- assign new = include.new -%}
+{%- capture deprecated -%}
+**DEPRECATION NOTICE:**
+This page describes {{old}}, which is no longer supported or maintained.
+Please use {{new}} instead.
+{%- endcapture -%}
+{% include notice icon='warning' content=deprecated %}

@@ -1,0 +1,14 @@
+{% include img alt=include.title src=include.image width=include.width %}
+
+## {{include.section}}
+
+- **Location:** {{include.location}}
+- **Dates:** {{include.dates}}
+
+{% if include.link -%}
+See the [{{include.title}} website]({{include.link}}) for details!
+{%- endif -%}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

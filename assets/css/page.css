@@ -3,6 +3,10 @@
   #ham-toggle {
     display: none;
   }
+
+  .container {
+    margin: 1em 220px;
+  }
 }
 
 @media screen and (max-width: 879px) {
@@ -15,8 +19,6 @@
   }
 
   #right-column {
-    width: calc(100% - 20px);
-    margin-top: 0;
-    margin-bottom: 1rem;
+    display: none;
   }
 }

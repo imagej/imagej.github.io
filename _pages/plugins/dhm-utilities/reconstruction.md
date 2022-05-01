@@ -1,8 +1,7 @@
 ---
+mediawiki: DHM_Utilities/Reconstruction
 title: DHM Utilities/Reconstruction
-categories: [Plugins]
-project: DHM Utilities
-
+project: /plugins/dhm-utilities
 name: Reconstruction
 source-url: https://github.com/sudgy/reconstruction
 license-url: /licensing/lgpl

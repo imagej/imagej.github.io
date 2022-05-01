@@ -3,12 +3,16 @@ This is a helper include used by the statbox include.
 {%- endcomment -%}
   <tr>
 {%- if include.description -%}
-    <th>{%- include tooltip text=include.title tooltip=include.description -%}</th>
+    <th>{%- include tooltip text=include.title tooltip=include.description left="-10px" width="180px" -%}</th>
 {%- else -%}
     <th>{{include.title}}</th>
 {%- endif -%}
     <td id="component-team-{{include.title | downcase}}">
-{%- assign members = include.members | split: ',' -%}
+{%- assign members = include.members -%}
+{%- unless members.first -%}
+  {%- comment -%} Convert comma-separated list to array. {%- endcomment -%}
+  {%- assign members = members | split: ',' -%}
+{%- endunless -%}
 {%- if members.size > 0 -%}
       <ul>
 {%- for member in members -%}
@@ -17,6 +21,9 @@ This is a helper include used by the statbox include.
 {%- assign name = tokens[0] | strip -%}
 {%- assign link = tokens[1] | strip -%}
         <li><a class="person" href="{{link}}" title="{{name}}">{{name}}</a></li>
+{%- elsif member | contains "@" -%}
+{%- assign id = member | strip | remove: "@" -%}
+        <li>{%- include person id=id -%}</li>
 {%- else -%}
         <li><span class="person">{{member}}</span></li>
 {%- endif -%}

@@ -1,0 +1,5 @@
+{% include notice icon="info" content="The content in this section needs to be developed. [You can help](/editing) fill it in!" %}
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

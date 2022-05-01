@@ -1,15 +1,64 @@
-{%- capture style-class -%}
-  {%- case include.align -%}
-    {%- when "left"  -%} image-left
-    {%- when "right" -%} image-right
-    {%- when "center" -%} image-center
-    {%- when "fit" -%} image-fit
-  {%- endcase -%}
-{%- endcapture -%}
+{%- assign title = include.title -%}
+{%- assign heading = include.heading | default: include.title -%}
+{%- assign caption = include.caption -%}
+{%- assign alt = include.alt | default: include.title | default: include.src -%}
+{%- assign width = include.width -%}
+{%- assign align = include.align -%}
+{%- assign class = include.class -%}
+{%- assign style = include.style -%}
+{%- assign link = include.link -%}
 
-{%- capture src -%}{%- include functions/find-media src=include.src -%}{%- endcapture -%}
+{%- capture src -%}{%- include util/find-media path=include.src -%}{%- endcapture -%}
 
-<img src="{{src}}" alt="{{include.name}}" class="{{style-class}} {{include.classes}}"{%- if include.width %} width={{include.width}}{%- endif -%}>
+{%- if heading or caption -%}
+  {%- assign figure = true -%}
+{%- else -%}
+  {%- assign figure = false -%}
+{%- endif -%}
+
+{%- comment -%}
+  NB: For now, 'left' alignment is treated as float-left, and 'right' is
+  treated as float-right. This is because it's consistent with how MediaWiki
+  does things. However, it is inconsistent from a CSS-centric standpoint,
+  because 'left' and 'right' don't imply float (i.e. text wrapping). We should
+  consider evolving this include to use more consistent terminology somehow.
+{%- endcomment -%}
+{%- if align == 'left' -%}
+  {%- assign align = 'float-left' -%}
+{%- elsif align == 'right' -%}
+  {%- assign align = 'float-right' -%}
+{%- endif -%}
+
+{%- if src == '' -%}
+  {%- capture error-message -%} Invalid img arguments: `{{include}}` {%- endcapture -%}
+  {% include util/error message=error-message %}
+{%- else -%}
+  {%- if figure -%}
+    <figure class="figure
+      {%- if align %} {{align}} {%- endif -%}
+      {%- if class %} {{class}} {%- endif -%}"
+            style="
+      {%- if width -%} width: {{width}}px; {%- endif -%}
+      {%- if style %} {{style}} {%- endif -%}"
+    >
+    {%- assign align = nil -%}
+    {%- assign class = nil -%}
+    {%- assign style = nil -%}
+  {%- endif -%}
+  {%- if heading -%} <center><strong>{{heading | markdownify}}</strong></center> {%- endif -%}
+  {%- if link -%} <a href="{{link}}"> {%- endif -%}
+  <img src="{{src}}" class="img
+    {%- if align %} {{align}} {%- endif -%}
+    {%- if class %} {{class}} {%- endif -%}"
+    {%- if alt   %} alt="{{alt}}"     {%- endif -%}
+    {%- if title %} title="{{title}}" {%- endif -%}
+    {%- if width %} width={{width}}   {%- endif -%}
+    {%- if style %} style="{{style}}" {%- endif -%}
+  >
+  {%- if link -%} </a> {%- endif -%}
+  {%- if caption -%} <figcaption>{{ caption | markdownify }}</figcaption> {%- endif -%}
+  {%- if figure -%} </figure> {%- endif -%}
+{%- endif -%}
 
 {%- comment -%}
 # vi:syntax=liquid

@@ -1,5 +1,7 @@
 ---
 title: Keyboard Shortcuts
+section: Learn:ImageJ Basics
+nav-links: true
 ---
 
 ImageJ has a lot of keyboard shortcuts.
@@ -12,7 +14,7 @@ For a verbose list of keyboard shortcuts, call
 ## The search bar
 
 Use {% include key key='ctrlcmd|L' %} to jump to the
-[search bar](/learn/getting-started#the-search-bar),
+[search bar](/learn#the-search-bar),
 to call menu entries by name.
 
 ## Recent commands
@@ -27,7 +29,7 @@ To open new images, press {% include key keys='ctlcmd|O' %}.
 ## Creating your own keyboard shortcuts
 
 You can also
-[assign your own keyboard shortcuts](/ij/docs/guide/146-31.html#toc-Subsection-31.2)!
+[assign your own keyboard shortcuts](https://imagej.nih.gov/ij/docs/guide/146-31.html#toc-Subsection-31.2)!
 
 ## Assign a shortcut to a macro
 
@@ -63,7 +65,7 @@ macro "Macro 3 [H]"{
 }
 ```
 
-The key defined in square bracket is case sensitive ! If a capital letter is used then the shortcut is {% include key keys="shift | <key>" %}.
+The key defined in square bracket is case sensitive ! If a capital letter is used then the shortcut is {% include key keys="shift | &lt;key&gt;" %}.
 
 ### Option 2: Save the macro(s) as a toolset
 

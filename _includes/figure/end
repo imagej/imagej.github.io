@@ -1,0 +1,15 @@
+{%- comment -%} This include is still a WORK IN PROGRESS! Please do not use yet. {%- endcomment -%}
+{%- if panel-caption -%}
+  {%- if panel-caption != '' -%} <figcaption>{{panel-caption}}</figcaption> {%- endif -%} 
+  </figure>
+{%- endif -%}
+{%- if figure-caption -%} <figcaption style="grid-column: 1 / span {{columns}}">{{figure-caption}}</figcaption> {%- endif -%}
+</figure><!-- CTR START HERE: consider whether we really want to be using
+  nested figures. If we could put the figcaptions in separate grid boxes,
+  everything would line up a lot more easily. But because each figcaption is
+  contained inside its panel figure, we need to resort to more involved CSS to
+  align things vertically. Better to keep figure-col and figure-row variables,
+  and do that bookkeeping, with grid-column and grid-row so we can stuff the
+  captions 
+{%- assign panel-caption = nil -%}
+{%- assign fig-caption = nil -%}

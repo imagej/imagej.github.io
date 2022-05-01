@@ -1,0 +1,72 @@
+{%- comment -%}
+Adds a stylized notice.
+{%- endcomment -%}
+
+{%- assign message = include.content | markdownify -%}
+{%- assign size = include.size | default: "normal" -%}
+{%- assign icon = include.icon -%}
+{%- assign glyph = include.glyph -%}
+{%- assign glyph-classes = include.class | default: "" -%}
+{%- assign background-color = include.background-color -%}
+{%- assign highlight-color = include.highlight-color -%}
+
+{%- comment -%} Infer glyph from common icons. {%- endcomment -%}
+{%- unless glyph -%}
+  {%- capture glyph -%}
+    {%- case icon -%}
+      {%- when "tip"     -%} &#128161;
+    {%- endcase -%}
+  {%- endcapture -%}
+{%- endunless -%}
+
+{%- comment -%} Infer background color from common icons. {%- endcomment -%}
+{%- unless background-color -%}
+  {%- capture background-color -%}
+    {%- case icon -%}
+      {%- when "info"    -%} #ebf2f8
+      {%- when "tip"     -%} #dedede
+      {%- when "warning" -%} #ffcccb
+      {%- else           -%} #e6e6e6
+    {%- endcase -%}
+  {%- endcapture -%}
+{%- endunless -%}
+
+{%- comment -%} Infer highlight color from common icons. {%- endcomment -%}
+{%- unless highlight-color -%}
+  {%- capture highlight-color -%}
+    {%- case icon -%}
+      {%- when "android"    -%} #a4c639
+      {%- when "fiji"       -%} #65a4e3
+      {%- when "imagej"     -%} goldenrod
+      {%- when "imagej2"    -%} #fadd8d
+      {%- when "info"       -%} #67a1fe
+      {%- when "linux"      -%} black
+      {%- when "note"       -%} #901913
+      {%- when "tech"       -%} #bdbdbd
+      {%- when "tip"        -%} #7e7e7e
+      {%- when "warning"    -%} #f57900
+      {%- when "windows"    -%} #00adef
+      {%- else              -%} gold
+    {%- endcase -%}
+  {%- endcapture -%}
+{%- endunless -%}
+
+<div class="notice" style="font-size: {{size}}; background: {{background-color}}; border-left: 10px solid {{highlight-color}}">
+  {%- if glyph != "" or glyph-classes != "" -%}
+    <div class="notice-icon"><span class="{{glyph-classes}}">{{glyph}}</span></div>
+  {%- elsif icon and icon != "" -%}
+    {%- capture src -%} {%- include util/find-icon path=icon -%} {%- endcapture -%}
+    {%- assign extension = src | slice: -4, 4 | downcase -%}
+    {%- if extension == '.svg' -%}
+      {%- comment -%} Vector images need an explicit width. {%- endcomment -%}
+      <div class="notice-icon"><img src="{{src}}" width="32"></div>
+    {%- else -%}
+      <div class="notice-icon"><img src="{{src}}"></div>
+    {%- endif -%}
+  {%- endif -%}
+  <div class="notice-content">{{message}}</div>
+</div>
+
+{%- comment -%}
+# vi:syntax=liquid
+{%- endcomment -%}

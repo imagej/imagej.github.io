@@ -21,34 +21,34 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 <div class="timeline">
-	<style type="text/css" scoped>
-		{%- for entry in include.timeline -%}
-		{%- assign tokens = entry | split: "|" -%}
-		{%- assign year = tokens[0] | strip -%}
-		.timeline input[data-description="{{year}}"]:checked ~ .timeline-descriptions-wrapper p[data-description="{{year}}"] { display: block; }
-		{%- endfor %}
-	</style>
-	<b>{{include.title}}</b>
-	<div class="input-flex-container">
-		{%- for entry in include.timeline -%}
-		{%- assign tokens = entry | split: "|" -%}
-		{%- assign year = tokens[0] | strip -%}
-		{%- assign label = tokens[1] | strip -%}
-		<input type="radio" name="timeline-dot" data-description="{{year}}"{% if year == include.initial %} checked{% endif %}>
-		<div class="dot-info" data-description="{{year}}">
-			<span class="year">{{year}}</span>
-			<span class="label">{{label}}</span>
-		</div>
-		{%- endfor %}
-		<div class="timeline-descriptions-wrapper">
-			{%- for entry in include.timeline -%}
-			{%- assign tokens = entry | split: "|" -%}
-			{%- assign year = tokens[0] | strip -%}
-			{%- assign description = tokens[2] | strip %}
-			<p data-description="{{year}}">{{description}}</p>
-			{%- endfor %}
-		</div>
-	</div>
+  <style type="text/css" scoped>
+    {%- for entry in include.timeline -%}
+    {%- assign tokens = entry | split: "|" -%}
+    {%- assign year = tokens[0] | strip -%}
+    .timeline input[data-description="{{year}}"]:checked ~ .timeline-descriptions-wrapper p[data-description="{{year}}"] { display: block; }
+    {%- endfor %}
+  </style>
+  <b>{{include.title}}</b>
+  <div class="timeline-input-flex-container">
+    {%- for entry in include.timeline -%}
+    {%- assign tokens = entry | split: "|" -%}
+    {%- assign year = tokens[0] | strip -%}
+    {%- assign label = tokens[1] | strip -%}
+    <input type="radio" name="timeline-dot" data-description="{{year}}"{% if year == include.initial %} checked{% endif %}>
+    <div class="timeline-dot-info" data-description="{{year}}">
+      <span class="year">{{year}}</span>
+      <span class="label">{{label}}</span>
+    </div>
+    {%- endfor %}
+    <div class="timeline-descriptions-wrapper">
+      {%- for entry in include.timeline -%}
+      {%- assign tokens = entry | split: "|" -%}
+      {%- assign year = tokens[0] | strip -%}
+      {%- assign description = tokens[2] | strip %}
+      <p data-description="{{year}}">{{description}}</p>
+      {%- endfor %}
+    </div>
+  </div>
 </div>
 
 {%- comment -%}
