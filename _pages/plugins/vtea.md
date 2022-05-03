@@ -46,13 +46,13 @@ Please visit the new [wiki](https://vtea.wiki)!
 
 Examples of VTEA use in manuscripts:
 
-1. Lake BB, Menon R, Winfree S, et al. An Atlas of Healthy and Injured Cell States and Niches in the Human Kidney. Genomics; 2021. [doi:10.1101/2021.07.28.454201](https://doi.org/10.1101/2021.07.28.454201)
-2. Ferkowicz MJ, Winfree S, et al. for the Kidney Precision Medicine Project. Large-scale, three-dimensional tissue cytometry of the human kidney: a complete and accessible pipeline. Lab Invest. 2021;101(5):661-676. [doi:10.1038/s41374-020-00518-w](https://doi.org/10.1038/s41374-020-00518-w)
-3. Black LM, Farrell ER, Barwinska D, et al. VEGFR3 tyrosine kinase inhibition aggravates cisplatin nephrotoxicity. Am J Physiol-Ren Physiol. 2021;321(6):F675-F688. [doi:10.1152/ajprenal.00186.2021](https://doi.org/10.1152/ajprenal.00186.2021)
-4. Black LM, Winfree S, Khochare SD, et al. Quantitative 3-dimensional imaging and tissue cytometry reveals lymphatic expansion in acute kidney injury. Lab Invest. 2021;101(9):1186-1196. [doi:10.1038/s41374-021-00609-2](https://doi.org/10.1038/s41374-021-00609-2)
-5. Varberg KM, Winfree S, Chu C, et al. Kinetic analyses of vasculogenesis inform mechanistic studies. Am J Physiol-Cell Physiol. 2017;312(4):C446-C458. [doi:10.1152/jpcell.00367.2016](https://doi.org/10.1152/jpcell.00367.2016)
-6. Makki MS, Winfree S, Lingeman JE, et al. A Precision Medicine Approach Uncovers a Unique Signature of Neutrophils in Patients With Brushite Kidney Stones. Kidney Int Rep. 2020;5(5):663-677. [doi:10.1016/j.ekir.2020.02.1025](https://doi.org/10.1016/j.ekir.2020.02.1025)
-7. Woloshuk A, Khochare S, Almulhim AF, et al. In Situ Classification of Cell Types in Human Kidney Tissue Using 3D Nuclear Staining. Cytometry A. 2021;99(7):707-721. [doi:10.1002/cyto.a.24274](https://doi.org/10.1002/cyto.a.24274)
+1. {% include citation doi="10.1101/2021.07.28.454201" %}
+2. {% include citation doi="10.1038/s41374-020-00518-w" %}
+3. {% include citation doi="10.1152/ajprenal.00186.2021" %}
+4. {% include citation doi="10.1038/s41374-021-00609-2" %}
+5. {% include citation doi="10.1152/jpcell.00367.2016" %}
+6. {% include citation doi="10.1016/j.ekir.2020.02.1025" %}
+7. {% include citation doi="10.1002/cyto.a.24274" %}
 
 The original VTEA was demonstrated in the following publication:
 
