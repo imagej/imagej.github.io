@@ -1,7 +1,7 @@
 ---
 title: Stephen Cross
 name: Stephen Cross
-website: https://www.github.com/sjcross
+website: https://github.com/sjcross
 affiliation:
   - Wolfson Bioimaging Facility, University of Bristol | http://www.bristol.ac.uk/wolfson-bioimaging/
 github: sjcross
