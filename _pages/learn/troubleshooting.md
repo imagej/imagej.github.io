@@ -182,7 +182,7 @@ Manager will always report an ever-growing amount of RAM used by the Java
 process, until the JVM shuts down.
 
 The best way to monitor ImageJ's actual memory usage is to run the
-[{% include bc path="Plugins | Utilities | Monitor Memory..." %}](https://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5)
+[{% include bc path="Plugins | Utilities | Monitor Memory..." %}](https://imagej.nih.gov/ij/docs/guide/146-31.html#toc-Subsubsection-31.3.5)
 command. You can also click on the ImageJ
 [status bar](/learn#the-status-bar) to trigger a garbage
 collection operation, which will typically decrease the memory use.
