@@ -1,5 +1,4 @@
 ---
-mediawiki: KymoResliceWide
 title: KymoResliceWide
 categories: [Stacks]
 ---
