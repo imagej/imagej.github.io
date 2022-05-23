@@ -28,11 +28,10 @@ MIA is developed in the [Wolfson Bioimaging Facility](https://www.bristol.ac.uk/
 The latest version of MIA can be installed directly into Fiji via an update site.
 1. Launch the ImageJ [Updater](/plugins/updater) from {% include bc path="Help|Update..." %}
 2. Click "Manage update sites" and in the window that opens, click "Add update site" 
-3. In the blank row that appears, enter the following:
-    - Name: ModularImageAnalysis
-    - URL: https://sites.imagej.net/ModularImageAnalysis
-4. Whilst still on the "Manage update sites" window, tick the "IJPB-Plugins" update site
-5. Close the "Manage update sites" window, then click "Apply changes"
+3. Ensure the following two update sites are ticked:
+   - IJPB-plugins
+   - ModularImageAnalysis
+4. Close the "Manage update sites" window, then click "Apply changes" in the Updater window
 
 ### Manually from GitHub
 Specific versions of MIA can be downloaded from GitHub and installed into Fiji manually.
