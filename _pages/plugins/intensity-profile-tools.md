@@ -4,8 +4,8 @@ description: Macro toolset for horizontal/vertical intensity profiles
 categories: [Feature Extraction]
 
 name:  Intensity Profile Tools
-source-url:https://github.com/LauLauThom/IntensityProfileToolset-ImageJ
-release-date : 2021
+source-url: https://github.com/LauLauThom/IntensityProfileToolset-ImageJ
+release-date: 2021
 
 license-url: /licensing/mit
 license-label: mit
