@@ -9,7 +9,6 @@ affiliation:
   - ex - EMBL Heidelberg
 
 forum: Kota
-github: miura
 twitter: cmci_
 orcid: 0000-0001-6926-191X
 ---
