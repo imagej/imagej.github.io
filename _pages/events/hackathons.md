@@ -129,7 +129,7 @@ ImageJ has benefitted from many hackathons over the years:
         Heidelberg, Germany</p>
       </td>
       <td>
-        <p>{% include person-list ids='acardona|axtimwalde|bene51|cmci|ctrueden|dscho|iarganda|larrylindsey|hinerm|StephanPreibisch|tnargsirrah|vkaynig' %}</p>
+        <p>{% include person-list ids='acardona|axtimwalde|bene51|miura|ctrueden|dscho|iarganda|larrylindsey|hinerm|StephanPreibisch|tnargsirrah|vkaynig' %}</p>
       </td>
       <td>
         <p><a href="/software/fiji">Fiji</a></p>
@@ -433,7 +433,7 @@ ImageJ has benefitted from many hackathons over the years:
         Madison, WI, USA</p>
       </td>
       <td>
-        <p>{% include person-list ids='ctrueden|hinerm|dietzc|tpietzsch|axtimwalde|bnorthan|fjug|thewtex|jaywarrick|tferr|biovoxxel|etadobson|awalter17|lnyng|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|cmci|marktsuchida|ChrisWeisiger' %}</p>
+        <p>{% include person-list ids='ctrueden|hinerm|dietzc|tpietzsch|axtimwalde|bnorthan|fjug|thewtex|jaywarrick|tferr|biovoxxel|etadobson|awalter17|lnyng|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|miura|marktsuchida|ChrisWeisiger' %}</p>
       </td>
       <td>
         <p><a href="/software/imagej2">ImageJ2</a> Learnathon + <a href="/libs/imagej-ops">ImageJ Ops</a></p>

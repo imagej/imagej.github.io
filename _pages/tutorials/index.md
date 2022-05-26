@@ -23,7 +23,7 @@ retain and maintain knowledge that might otherwise be lost. Here is a list of
 links to facilities providing tutorials and documentation:
 
 * [BioDIP teaching materials](https://www.biodip.de/wiki/Teaching_Material)
-* [Centre for Molecular and Cellular Imaging at the EMBL](http://wiki.cmci.info/mainpages/documents)
+* [Centre for Molecular and Cellular Imaging at the EMBL](https://wiki.cmci.info/mainpages/documents)
 
 Please feel welcome to add your organization's tutorials to this list!
 

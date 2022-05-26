@@ -7,7 +7,7 @@ icon: /media/icons/fiji.svg
 source-url: https://github.com/fiji/fiji/blob/master/plugins/Scripts/Image/Hyperstacks/Temporal-Color_Code.ijm
 release-date: 29 Nov 2010
 dev-status: beta
-team-maintainers: Kota Miura | /people/cmci
+team-maintainers: Kota Miura | /people/miura
 team-contributors: Johannes Schindelin | /people/dscho
 ---
 
