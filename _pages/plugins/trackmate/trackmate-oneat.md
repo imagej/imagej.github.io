@@ -1,6 +1,6 @@
 ---
 title: TrackMate-Oneat
-description: TrackMate trackcorrector that uses action classification network, oneat's prediction to correct lineage trees
+description: Trackcorrector that uses oneat's prediction to correct lineage trees
 categories: [Tracking]
 logo: /media/logos/trackmate-oneat.png
 ---
