@@ -2,7 +2,7 @@
 title: TrackMate-Oneat
 description: Trackcorrector that uses oneat's prediction to correct lineage trees
 categories: [Tracking]
-logo: /media/logos/trackmate-oneat.png
+logo: /media/logos/trackmate-oneat-logo.png
 ---
 
 # TrackMate-Oneat
