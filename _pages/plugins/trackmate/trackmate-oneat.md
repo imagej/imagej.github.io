@@ -28,7 +28,7 @@ Essentially in this scheme we describe the breaking and creating new linking pro
 
 ## Tutorial: *Xenopus nuclei* early development.
 In this video I compare the tracking results using LAP tracker of TrackMate and SimpleLap tracker + oneat correction. 
-[LAP tracker comparision with SimpleLAP Tracker + oneat correction](https://youtu.be/9HZvWxr2fsY)
+[LAP tracker comparision with SimpleLAP Tracker + oneat correction](https://youtu.be/9HZvWxr2fsY) The dataset used can be found [here](https://zenodo.org/record/6591369#.YpOTwXZBy3A) along with the ground truth tracks. We used different combinations of TrackMate tracking algorithms and oneat and after converting the tracks to ctc compatiable formats obtianed the following tracking metrics which show that combination of SimpleLAP tracker with Oneat is most appropriate for this particular example to obtain highest tracking accurate results.
 
 ## Tracking Metrics
 
@@ -47,7 +47,7 @@ In this video I compare the tracking results using LAP tracker of TrackMate and 
 ### LAP Tracker without track splitting and Quality as additional cost + Oneat
 {DET : 0.990083,   CT :	0.6766,      TRA : 0.986742, TF : 0.9521, BCi	0.054}
 
-### The dataset.
+
 
 
 
