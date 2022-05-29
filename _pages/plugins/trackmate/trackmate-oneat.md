@@ -22,6 +22,8 @@ As is outlined in the video tutorial, we have to first finish the tracking proce
 
 ## Algorithm.
 
+The algorithm for oneat is described figuratively [here](https://github.com/kapoorlab/imagej.github.io/blob/main/media/plugins/trackmate/actions/TrackMate-oneat-algorithm.jpg).
+Essentially in this scheme we describe the breaking and creating new linking process. If users chooses LAP tracker with segment splitting then we check for mitosis events, in this step we match the locations of mitotic cells with that of oneat detected location, if a match is found the track is not marked for re-linking else the mitotic cell link is broken and is marked for re-linking. If the user has also uploaded a file that contains cell death locations then such tracks are terminated at the found location. If the user on the other hand chooses Simple LAP tracker then the check for mitosis is skipped as that algorithm doe snot support segment to segment linking. In the next step the segments are re-linked based on our local segment linker step. In this step we create a local graph which contains the edge between the mother cell and its source cell to be linked with edges in the local neighborhood of daughter cells. We constrain this process of linking by enforcing that the size of the daughter cells to be less than that of the mother cell and  also the difference in the Z slices of the mother and daughter cell links. One such an assingment is determines using Jaqman Segment linker algorithm we break those links in the main graph and create new links based on the assingements determined. This leads to a new graph/trackschem with new TrackId's being generated.
 
 
 ## Tutorial: *Xenopus nuclei* early development.
