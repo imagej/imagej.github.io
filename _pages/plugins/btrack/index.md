@@ -36,7 +36,7 @@ The Raw image metadata contains the information about the camera pixel size and 
 #### Main Panel
 After completing the selection of choosing the images and optional csv file press the button supplied in the "Done Selection" panel area. At this stage the boundary points of the tissue are computed from the segmentation image and if the csv file was also inputted the skeleton end points at their respective time frames are added to the display of the Raw image and a second panel containing computational and interactivity option will open.
 
-<img src="/media/plugins/btrack/main.png" width="200"/>
+<img src="/media/plugins/btrack/main.png" width="400"/>
 
 #### Interactivity Options
 
