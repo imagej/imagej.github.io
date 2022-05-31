@@ -1,15 +1,13 @@
 ---
-mediawiki: Tissue Branch Tracker
 title: Tissue Branch Tracker
 logo: /media/logos/btrack.png
 categories: [Tracking,Tissue,Skeletonization]
 ---
 
-
-
 <img src="/media/icons/btrack.png" width="250"/> 
 
-BTrack is a tool, 
+BTrack is a Fiji plugin for tracking cells inside a mouse embryo bud with track and track editing tools based on Mastodon and [TrackMate](/plugins/trackmate).
+
 ## Installation
 
 1.  Click {% include bc path="Help | Update..." %}.
