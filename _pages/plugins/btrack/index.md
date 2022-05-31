@@ -31,7 +31,12 @@ A panel to input the Raw and Segmentation with optional field of loading a csv f
 
 
 #### Microscope Parameters
+The Raw image metadata contains the information about the camera pixel size and the time calibration. If this information is not present in the metadata the users can modify the text field with the correct values. We use these values to output the final velocity calculation in these units.
 
+#### Main Panel
+After completing the selection of choosing the images and optional csv file press the button supplied in the "Done Selection" panel area. At this stage the boundary points of the tissue are computed from the segmentation image and if the csv file was also inputted the skeleton end points at their respective time frames are added to the display of the Raw image and a second panel containing computational and interactivity option will open.
+
+<img src="/media/plugins/btrack/main.png" width="200"/>
 
 #### Interactivity Options
 
@@ -40,6 +45,8 @@ A panel to input the Raw and Segmentation with optional field of loading a csv f
 
 
 **Dynamic slider display**
+After the welcome screen the user can only see the view of the input timelapse at the value indicated by the slider embedded into the panel. Moving the slider will interactively update the view along with the overlay of the chosen view.
+
 
 #### Tracking Options
 
