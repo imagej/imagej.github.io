@@ -27,7 +27,7 @@ A typical dataset consists of a 2d time-lapse of the dynamically growing tissue 
 
 A panel to input the Raw and Segmentation with optional field of loading a csv file containing the end point locations will open.
 
-<img src="/media/plugins/btrack/input.png" width="500"/>
+<img src="/media/plugins/btrack/welcome.png" width="500"/>
 
 
 #### Microscope Parameters
