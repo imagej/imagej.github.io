@@ -618,11 +618,15 @@ Older versions of BigWarp supported these scripts:
 
 # Tutorials
 
+-   A vitual tutorial given by {% include person id="bogovicj" %} in April 2022.
+
+{% include video platform='youtube' id='EApotxnnQD8' %}
+
 -   An example of a 2d warping by
     [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to
     [this forum post](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593).
 
-{% include video platform='youtube' id='zNur6mk9VXg'%}
+{% include video platform='youtube' id='zNur6mk9VXg' %}
 
 # Publication
 
