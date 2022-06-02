@@ -15,7 +15,11 @@ categories: [Uncategorized]
 
 ## Overview
 
-MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multi-modal cloud-hosted big image data. For more information please [visit the documentation](https://mobie.github.io/).
+MoBIE (**M**ultim**o**dal **B**ig **I**mage Data **E**xploration) is a framework for sharing and interactive browsing of multi-modal cloud-hosted big image data. 
+
+Please have a look at [some videos](https://www.youtube.com/channel/UCtRtv0JkEEW5zLFO7d_nglg) demonstrating the functionality.
+
+For more information please [visit the documentation](https://mobie.github.io/).
 
 ## Installation
 
