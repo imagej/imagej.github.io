@@ -618,11 +618,15 @@ Older versions of BigWarp supported these scripts:
 
 # Tutorials
 
+-   A vitual tutorial given by {% include person id="bogovicj" %} in April 2022.
+
+{% include video platform='youtube' id='EApotxnnQD8' %}
+
 -   An example of a 2d warping by
     [Nicolas Chiaruttini](http://kiaru.eu/cv-rapide/) in response to
     [this forum post](https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593).
 
-{% include video platform='youtube' id='zNur6mk9VXg'%}
+{% include video platform='youtube' id='zNur6mk9VXg' %}
 
 # Publication
 
@@ -638,3 +642,6 @@ Older versions of BigWarp supported these scripts:
 6.  Gao et al. ["Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution."](http://science.sciencemag.org/content/363/6424/eaau8302.abstract) Science 363 (6424) 2019.
 7.  Wan et al. ["Single-Cell Reconstruction of Emerging Population Activity in an Entire Developing Circuit."](https://www.sciencedirect.com/science/article/pii/S0092867419309584) Cell 179(2) 2019.
 8.  Hoffman, Shtengel et al. ["Correlative three-dimensional super-resolution and block-face electron microscopy of whole vitreously frozen cells."](https://science.sciencemag.org/content/367/6475/eaaz5357) Science 367 (6475) 2020.
+9.  Weigel et al. [“ER-to-Golgi protein delivery through an interwoven, tubular network extending from ER”](https://doi.org/10.1016/j.cell.2021.03.035) Cell 184:9 2021.
+10. Chiaruttini et al. ["An Open-Source Whole Slide Image Registration Workflow at Cellular Precision Using Fiji, QuPath and Elastix"](https://www.frontiersin.org/articles/10.3389/fcomp.2021.780026/full) Frontiers In Computer Science 2021.
+11. Ritter et al. ["ESCRT-mediated membrane repair protects tumor-derived cells against T cell attack"](https://doi.org/10.1126/science.abl3855) Science 376 (6591) 2022.
