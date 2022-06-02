@@ -4,20 +4,13 @@ title: MoBIE
 categories: [Uncategorized]
 ---
 
-<figure><img src="/media/plugins/mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true">Mobie-white.jpg</figcaption></figure>
+<figure><img src="/media/plugins/mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true"></figcaption></figure>
 
 
 {% capture source%}
 {% include github org='mobie-org' repo='mobie-viewer-fiji' %}
 {% endcapture %}
 {% include info-box name='MoBIE' software='Fiji' update-site='MoBIE' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
-
-
-
-
-
-
-
 
 
 ## Overview
