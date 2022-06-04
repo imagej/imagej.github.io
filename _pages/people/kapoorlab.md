@@ -2,6 +2,7 @@
 title: Varun Kapoor
 
 name: Varun Kapoor
+
 gravatar: fa99446001a750a28e3cac0cd0dcffcf 
 affiliation: Kapoorlabs, Paris
 orcid: 0000-0001-5331-7966
