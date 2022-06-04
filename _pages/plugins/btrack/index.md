@@ -6,7 +6,7 @@ categories: [Tracking,Tissue,Skeletonization]
 
 <img src="/media/icons/btrack.png" width="250"/> 
 
-BTrack is a Fiji plugin for tracking cells inside a mouse embryo bud with track and track editing tools based on Mastodon and [TrackMate](/plugins/trackmate).
+BTrack is a Fiji plugin for tracking growing ends of tissue branches using skeletonization implementationof imglib2.
 
 ## Installation
 
