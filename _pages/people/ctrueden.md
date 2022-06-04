@@ -70,9 +70,9 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Immediate priorities
 
-1.  Prepare and record PyImageJ workshop for [I2K 2022 conference](https://www.i2kconference.org/).
+1.  [with {% include person name='Amandine Tournay' %}] **Python from Java.** Use PyImageJ from inside the Fiji desktop application. And respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail when progress is far enough along.
 
-2.  Discern and document the best way to retire obsolete ImageJ update sites (see {% include github org='imagej' repo='list-of-update-sites' pr=103 %}).
+2.  [with {% include person id='hinerm' %} Update ImageJ-OMERO to OMERO 5.5+ ({% include github org='imagej' repo='imagej-omero' pr=107 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}).
 
 3.  [with {% include person id='hinerm' %}] New pom-scijava release:
     -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
@@ -92,26 +92,21 @@ ImageJ2 team to respond to every support request within one work day:
         * `fiji/Kappa`
         * Update CI-related docs on imagej.net
 
-4.  Finish reconciling ImageJ-OMERO and ImageJ Server with PSJ 30+ ({% include github org='scijava' repo='pom-scijava' issue=133 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}):
-    * **ImageJ-OMERO** update to OMERO 5.5+. ({% include github org='imagej' repo='imagej-omero' pr=107 %})
-    * **ImageJ Server** fix ({% include github org='imagej' repo='imagej-server' issue=41 %})
+4.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
 
 5.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
 
-6.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
-
 ### Project management priorities
 
-1.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' label='scijava/status.scijava.org' %}).
+1.  Continue populating the project board for SciJava+ImageJ2+Fiji migration to Java 11 and 17 ([roadmap](https://github.com/orgs/imagej/projects/4)).
 
-2.  Continue populating the project board for SciJava+ImageJ2+Fiji migration to Java 11 and 17 ([roadmap](https://github.com/orgs/imagej/projects/4)).
+2.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' label='scijava/status.scijava.org' %}).
 
 ### Short-term priorities
 
-- \[Spring 2022\] (with {% include person name='Jack Rueth' %}) **ImageJ wiki search bar.** Search tutorials, source code, and more.
-- \[Spring 2022\] (with {% include person name='Amandine Tournay' %}) **Python from Java.** Use PyImageJ from inside the Fiji desktop application. And respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail.
 - \[Summer 2022\] (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17 ([roadmap](https://github.com/orgs/imagej/projects/4)), with a **Maven-based ImageJ update site generator** to simplify creation and maintenance of update sites.
 - \[Autumn 2022\] (with {% include person id='gselzer' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
+- \[Winter 2022\] Make ImageJ Server work again ({% include github org='imagej' repo='imagej-server' issue=41 %}, {% include github org='scijava' repo='pom-scijava' issue=133 %}).
 
 ### Medium-term priorities
 
