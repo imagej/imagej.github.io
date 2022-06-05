@@ -60,7 +60,7 @@ After selection of the parameters the table shows the found tracks. When selecti
 The users can either save one track at a time or can choose to save all the tracks at once. The saved information includes text files containing velocities for each track, and an image that contains the dot locations in each timepoint for all the tracks. This final image is used in the later analysis to localize the final end of a branch in a growing tissue.
 ## Authors
 
-Lead programmer, Mantainer: [Varun Kapoor](/people/kapoorlab)
+Lead programmer, Mantainer: [Varun Kapoor](people/kapoorlab)
 Contributor, Debugger: [Claudia Carabana](/people/claudiacarabana)
 
 ## Citation
