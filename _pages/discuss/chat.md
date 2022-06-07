@@ -6,7 +6,7 @@ nav-links: true
 
 ImageJ community members are often available via a couple of different chat services.
 
-{% include notice icon="note" content="**HOWEVER:** It is often better to
+{% include notice icon="image-sc" content="**HOWEVER:** It is often better to
 use the [Image.sc Forum](https://forum.image.sc/), rather than chat rooms,
 because:
 
