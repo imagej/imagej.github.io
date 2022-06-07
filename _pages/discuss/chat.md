@@ -47,12 +47,12 @@ Several ImageJ-related projects have channels on the [Image.sc Zulip instance](h
 
 | Logo                                       | Project                                      | Channel       |
 |--------------------------------------------|----------------------------------------------|---------------|
-| ![](/media/icons/imagej2.png){:width="48"} | ImageJ wiki (this website)                   | `#imagej.net` |
-| ![](/media/icons/imagej2.png){:width="48"} | [ImageJ2](/software/imagej2)                 | `#ImageJ2`    |
-| ![](/media/icons/fiji.png){:width="48"}    | [Fiji](/software/fiji)                       | `#Fiji`       |
-| ![](/media/icons/imglib2.png){:width="48"} | [ImgLib2](/libs/imglib2)                     | `#ImgLib2`    |
-| ![](/media/icons/scifio.png){:width="48"}  | [SCIFIO](/libs/scifio)                       | `#SCIFIO`     |
-| ![](/media/icons/scijava.png){:width="48"} | [SciJava](/libs/scijava)                     | `#SciJava`    |
+| ![](/media/icons/imagej2.png){:width="24"} | ImageJ wiki (this website)                   | `#imagej.net` |
+| ![](/media/icons/imagej2.png){:width="24"} | [ImageJ2](/software/imagej2)                 | `#ImageJ2`    |
+| ![](/media/icons/fiji.png){:width="24"}    | [Fiji](/software/fiji)                       | `#Fiji`       |
+| ![](/media/icons/imglib2.png){:width="24"} | [ImgLib2](/libs/imglib2)                     | `#ImgLib2`    |
+| ![](/media/icons/scifio.png){:width="24"}  | [SCIFIO](/libs/scifio)                       | `#SCIFIO`     |
+| ![](/media/icons/scijava.png){:width="24"} | [SciJava](/libs/scijava)                     | `#SciJava`    |
 |                                            | [3D ImageJ Suite](/plugins/3d-imagej-suite/) | `#3D Suite`   |
 
 ## Gitter
@@ -61,12 +61,12 @@ The {% include wikipedia title='Gitter' text='Gitter' %} chat service is how dev
 
 | Logo                                       | Project                       | Chat rooms                                        |
 |--------------------------------------------|-------------------------------|---------------------------------------------------|
-| ![](/media/icons/imagej2.png){:width="48"} | [ImageJ2](/software/imagej2)  | [imagej](https://gitter.im/orgs/imagej/rooms)     |
-| ![](/media/icons/fiji.png){:width="48"}    | [Fiji](/software/fiji)        | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| ![](/media/icons/knime.svg){:width="48"}   | [KNIME](/software/knime)      | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
-| ![](/media/icons/imglib2.png){:width="48"} | [ImgLib2](/libs/imglib2)      | [imglib](https://gitter.im/orgs/imglib/rooms)     |
-| ![](/media/icons/scifio.png){:width="48"}  | [SCIFIO](/libs/scifio)        | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| ![](/media/icons/scijava.png){:width="48"} | [SciJava](/libs/scijava)      | [scijava](https://gitter.im/orgs/scijava/rooms)   |
+| ![](/media/icons/imagej2.png){:width="24"} | [ImageJ2](/software/imagej2)  | [imagej](https://gitter.im/orgs/imagej/rooms)     |
+| ![](/media/icons/fiji.png){:width="24"}    | [Fiji](/software/fiji)        | [fiji](https://gitter.im/orgs/fiji/rooms)         |
+| ![](/media/icons/knime.svg){:width="24"}   | [KNIME](/software/knime)      | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
+| ![](/media/icons/imglib2.png){:width="24"} | [ImgLib2](/libs/imglib2)      | [imglib](https://gitter.im/orgs/imglib/rooms)     |
+| ![](/media/icons/scifio.png){:width="24"}  | [SCIFIO](/libs/scifio)        | [scifio](https://gitter.im/orgs/scifio/rooms)     |
+| ![](/media/icons/scijava.png){:width="24"} | [SciJava](/libs/scijava)      | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
 ## IRC
 
