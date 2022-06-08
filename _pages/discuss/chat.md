@@ -74,7 +74,7 @@ Long ago, some community members frequented {% include wikipedia title='Internet
 
 | Channel       | Description                                                         |
 |---------------|---------------------------------------------------------------------|
-| `#imagejdev`  | Core ImageJ development discussion.                                 |
+| `#imagejdev`  | Core [ImageJ2](/software/imagej2) development discussion.           |
 | `#fiji-devel` | [Fiji](/software/fiji) user and developer discussion and questions. |
 
 Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
