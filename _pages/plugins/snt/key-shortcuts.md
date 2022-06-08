@@ -15,22 +15,12 @@ Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically s
 These shortcuts are always available:
 
 -   {% include key key='Y' %} - Confirms the current temporary path. *Mnemonic: <u>Y</u>es*.
-
-<!-- -->
-
 -   {% include key key='N' %} - Discards the current temporary path. *Mnemonic: <u>N</u>o*.
-
-<!-- -->
-
 -   {% include key key='F' %} - Finishes a path. Note that you can finish a path by pressing {% include key key='Y' %} twice.
-
-<!-- -->
-
 -   {% include key key='C' %} - Cancels a path. Note that you can finish a path by pressing {% include key key='N' %} twice.
-
-<!-- -->
-
 -   {% include key key='Esc' %} - Aborts current operation / Exits current mode
+-   {% include key keys='ctlcmd|Shift|P' %} - Toggle Command <u>P</u>alette
+
 
 ### Tracing
 
@@ -48,7 +38,7 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 
 <!-- -->
 
--   {% include key keys='Alt|Shift' %}-click - Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching).
+-   {% include key keys='Alt|Shift|Left Click' %} - Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching).
 
 <!-- -->
 
@@ -138,7 +128,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 
 -   {% include key keys='Shift|F' %} - <u>F</u>ull Screen ({% include key key='Esc' %} to exit)
 -   {% include key keys='Shift|C' %} - Toggle <u>C</u>ontrol Panel
-
+-   {% include key keys='ctlcmd|Shift|P' %} - Toggle Command <u>P</u>alette
 -   {% include key key='H' %} - <u>H</u>elp (as Notification) ({% include key key='F1' %} shows Help on a dedicated window)
 
 ### SciView
