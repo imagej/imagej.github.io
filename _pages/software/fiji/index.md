@@ -2,6 +2,7 @@
 title: Fiji
 section: Explore:Software
 doi: 10.1038/nmeth.2019
+artifact: sc.fiji:fiji
 project-blurb: the Fiji distribution of ImageJ
 ---
 
