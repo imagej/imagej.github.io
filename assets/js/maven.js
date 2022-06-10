@@ -33,10 +33,18 @@ function download(url) {
     alert("HTTP-Error: " + response.status);
   }
   */
-  // START HERE: also need response last modified date
+  // TODO: Handle HTTP response codes.
   return fetch(url)
     .then(response => response.text())
     .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"));
+}
+
+function lastModified(url) {
+  // TODO: Someone better at JavaScript than me could figure out how to combine
+  // this request with the one from download, extracting both the response text
+  // and the last modified date in one swoop. But it wasn't obvious to me how
+  // to do it due to the asynchronous promises involved.
+  return fetch(url).then(response => response.headers.get('Last-Modified'));
 }
 
 function gpath(g) {
@@ -199,8 +207,6 @@ function fillStatsFromPOM(pom) {
   fill('component-license', link(licenseURL, licenseName));
   fill('component-release', link(releaseURL(g, a, v), v));
 
-  fill('component-date', 'TODO'); // e.g. 'Tue Oct 27 14:25:43 CDT 2015';
-
   var team = {};
   var developers = values(pom, ['developers', 'developer'], false)
   for (var i in developers) {
@@ -285,6 +291,7 @@ function fillStatsFromPOM(pom) {
 
 function fillStatsFromURL(url) {
   download(url).then(pom => fillStatsFromPOM(pom));
+  lastModified(url).then(date => fill('component-date', date));
 }
 
 function fillStatsFromGAV(g, a, v, repository) {
