@@ -113,6 +113,89 @@ function fillStatsFromPOM(pom) {
 
   var licenseName = value(pom, ['licenses', 'license', 'name']);
   var licenseURL = value(pom, ['licenses', 'license', 'url']);
+
+  // Standardize/abbreviate known licenses.
+  switch (licenseName) {
+    case 'Apache 2':                                            licenseName = 'Apache v2';  break;
+    case 'Apache License 2':                                    licenseName = 'Apache v2';  break;
+    case 'Apache License, Version 2.0':                         licenseName = 'Apache v2';  break;
+    case 'Apache Software License, Version 2.0':                licenseName = 'Apache v2';  break;
+    case 'BSD 2-Clause "Simplified" License':                   licenseName = 'BSD-2';      break;
+    case 'BSD 2-Clause License':                                licenseName = 'BSD-2';      break;
+    case 'BSD License Version 3':                               licenseName = 'BSD-3';      break;
+    case 'BSD license version 3':                               licenseName = 'BSD-3';      break;
+    case 'BSD-2-Clause':                                        licenseName = 'BSD-2';      break;
+    case 'BSD3':                                                licenseName = 'BSD-3';      break;
+    case 'CC0 1.0 Universal License':                           licenseName = 'CC0';        break;
+    case 'CC0 1.0 Universal':                                   licenseName = 'CC0';        break;
+    case 'CC0':                                                 licenseName = 'CC0';        break;
+    case 'Community Research and Academic Programming License': licenseName = 'CRAPL';      break;
+    case 'Eclipse Public License 1.0':                          licenseName = 'EPLv1';      break;
+    case 'Eclipse Public License':                              licenseName = 'EPL';        break;
+    case 'Eclipse Public License, Version 2.0':                 licenseName = 'EPLv2';      break;
+    case 'GNU GPL v3':                                          licenseName = 'GPLv3';      break;
+    case 'GNU General Public License (GPL) v3+':                licenseName = 'GPLv3+';     break;
+    case 'GNU General Public License v2':                       licenseName = 'GPLv2';      break;
+    case 'GNU General Public License v2+':                      licenseName = 'GPLv2+';     break;
+    case 'GNU General Public License v2+':                      licenseName = 'GPLv2+';     break;
+    case 'GNU General Public License v3':                       licenseName = 'GPLv3';      break;
+    case 'GNU General Public License v3+':                      licenseName = 'GPLv3+';     break;
+    case 'GNU General Public License v3+':                      licenseName = 'GPLv3+';     break;
+    case 'GNU General Public License v3.0':                     licenseName = 'GPLv3';      break;
+    case 'GNU General Public License':                          licenseName = 'GPL';        break;
+    case 'GNU General Public License, version 2 (GPL-2.0)':     licenseName = 'GPLv2';      break;
+    case 'GNU Lesser General Public License v2.1+':             licenseName = 'GPLv2.1+';   break;
+    case 'GNU Lesser General Public License v3+':               licenseName = 'GPLv3+';     break;
+    case 'GNU Public License v2':                               licenseName = 'GPLv2';      break;
+    case 'GPL 2 or later':                                      licenseName = 'GPLv2+';     break;
+    case 'GPL-2.0':                                             licenseName = 'GPLv2';      break;
+    case 'GPLv2 with Classpath exception':                      licenseName = 'GPLv2 w/CP'; break;
+    case 'GPLv2':                                               licenseName = 'GPLv2';      break;
+    case 'GPLv3.0':                                             licenseName = 'GPLv3';      break;
+    case 'Janelia Farm Research Campus Software Copyright 1.1': licenseName = 'JFRCv1.1';   break;
+    case 'MIT License':                                         licenseName = 'MIT';        break;
+    case 'Modified BSD License':                                licenseName = 'BSD-3';      break;
+    case 'Simplified BSD License':                              licenseName = 'BSD-2';      break;
+    case 'Simplified BSD License':                              licenseName = 'BSD-2';      break;
+    case 'The Apache Software License, Version 2.0':            licenseName = 'Apache v2';  break;
+    case 'The BSD License':                                     licenseName = 'BSD';        break;
+    case 'The GNU Lesser General Public License, Version 3.0':  licenseName = 'LGPLv3';     break;
+    case 'The MIT License':                                     licenseName = 'MIT';        break;
+    case 'The zlib/libpng License':                             licenseName = 'zlib/libpng' break;
+    case 'bsd_2':                                               licenseName = 'BSD-2';      break;
+    case 'not licensed yet':                                    licenseName = 'None';       break;
+    case 'olefile License':                                     licenseName = 'olefile';    break;
+  }
+
+  // Fill in missing license URLs for known licenses.
+  if (!licenseURL) {
+    switch (licenseName) {
+      case 'Apache v2':     licenseURL = '/licensing/apache#apache-license-20'; break;
+      case 'BSD':           licenseURL = '/licensing/bsd'; break;
+      case 'BSD-2':         licenseURL = '/licensing/bsd#simplified-bsd-license'; break;
+      case 'BSD-3':         licenseURL = '/licensing/bsd#modified-bsd-license'; break;
+      case 'CC0':           licenseURL = '/licensing/public-domain#creative-commons-zero-10-universal'; break;
+      case 'CRAPL':         licenseURL = 'https://matt.might.net/articles/crapl/'; break;
+      case 'EPL':           licenseURL = '/licensing/epl'; break;
+      case 'EPLv1':         licenseURL = '/licensing/epl#eclipse-public-license-v10'; break;
+      case 'EPLv2':         licenseURL = '/licensing/epl#eclipse-public-license-v20'; break;
+      case 'GPL':           licenseURL = '/licensing/gpl'; break;
+      case 'GPLv2 w/CP':    licenseURL = '/licensing/gpl#gnu-general-public-license-v2'; break;
+      case 'GPLv2':         licenseURL = '/licensing/gpl#gnu-general-public-license-v2'; break;
+      case 'GPLv2+':        licenseURL = '/licensing/gpl#gnu-general-public-license-v2'; break;
+      case 'GPLv2.1+':      licenseURL = '/licensing/gpl#gnu-general-public-license-v2'; break;
+      case 'GPLv3':         licenseURL = '/licensing/gpl#gnu-general-public-license-v3'; break;
+      case 'GPLv3+':        licenseURL = '/licensing/gpl#gnu-general-public-license-v3'; break;
+      case 'LGPL':          licenseURL = '/licensing/lgpl'; break;
+      case 'LGPLv2':        licenseURL = '/licensing/lgpl#gnu-lesser-general-public-license-v21'; break;
+      case 'LGPLv2.1':      licenseURL = '/licensing/lgpl#gnu-lesser-general-public-license-v21'; break;
+      case 'LGPLv3':        licenseURL = '/licensing/lgpl#gnu-lesser-general-public-license-v3'; break;
+      case 'MIT':           licenseURL = '/licensing/mit'; break;
+      case 'Public domain': licenseURL = '/licensing/public-domain'; break;
+      case 'Unlicense':     licenseURL = '/licensing/public-domain#unlicense'; break;
+    }
+  }
+
   fill('component-license', link(licenseURL, licenseName));
   fill('component-release', link(releaseURL(g, a, v), v));
 
