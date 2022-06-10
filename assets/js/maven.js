@@ -57,8 +57,8 @@ function latestVersion(g, a, repository) {
     .then(metadata => value(metadata, ['versioning', 'release']));
 }
 
-function downloadPOM(g, a, v, repository) {
-  return download(`${repository}/${gpath(g)}/${a}/${v}/${a}-${v}.pom`);
+function pomURL(g, a, v, repository) {
+  return `${repository}/${gpath(g)}/${a}/${v}/${a}-${v}.pom`;
 }
 
 function link(url, label) {
@@ -295,7 +295,7 @@ function fillStatsFromURL(url) {
 }
 
 function fillStatsFromGAV(g, a, v, repository) {
-  downloadPOM(g, a, v, repository).then(pom => fillStatsFromPOM(pom));
+  fillStatsFromURL(pomURL(g, a, v, repository))
 }
 
 function fillStatsFromArtifact(artifact, repository) {
