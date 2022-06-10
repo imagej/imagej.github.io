@@ -54,7 +54,7 @@ function downloadPOM(g, a, v, repository) {
 }
 
 function link(url, label) {
-  return `<a href=\"${url}\">${label}</a>`;
+  return url ? `<a href=\"${url}\">${label}</a>` : label;
 }
 
 function releaseURL(g, a, v) {
