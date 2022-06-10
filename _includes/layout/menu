@@ -168,6 +168,7 @@
               {% include menu/section title="Open Source" link="/licensing/open-source" %}
                 <li><a href="/licensing/apache">Apache</a></li>
                 <li><a href="/licensing/bsd">BSD</a></li>
+                <li><a href="/licensing/epl">EPL</a></li>
                 <li><a href="/licensing/gpl">GPL</a></li>
                 <li><a href="/licensing/lgpl">LGPL</a></li>
                 <li><a href="/licensing/mit">MIT</a></li>
