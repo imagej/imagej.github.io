@@ -5,7 +5,7 @@ section: Contribute:Licensing:Open Source
 
 {% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-The **GNU Lesser General Public License** is a free, [open source](/licensing/open-source)
+The **GNU Lesser General Public License** (LGPL) is a free, [open source](/licensing/open-source)
 license for software and other kinds of works. It is a middle ground between
 **{% include wikipedia title='Copyleft' text='copyleft'%}** licenses such as
 the [GPL](/licensing/gpl) and **permissive** licenses like [BSD](/licensing/bsd) and [MIT](/licensing/mit).

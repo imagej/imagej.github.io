@@ -5,7 +5,7 @@ section: Contribute:Licensing:Open Source
 
 {% include notice icon="info" content='For a summary of [SciJava](/libs/scijava) licensing, see the [Licensing](/licensing) page.' %} 
 
-The **GNU General Public License** is a free,
+The **GNU General Public License** (GPL) is a free,
 **{% include wikipedia title='Copyleft' text='copyleft' %}**
 [open source](/licensing/open-source) license for software and other kinds of works. This
 is in contrast to **permissive** licenses like [BSD](/licensing/bsd), which impose minimal
