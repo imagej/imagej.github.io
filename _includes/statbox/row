@@ -10,8 +10,15 @@ This is a helper include used by the statbox include.
 {%- endcapture -%}
   <tr>
 {%- if include.label -%}
+  {%- comment -%}
+  For manually specified statbox field values, label the element with a class.
+  This helps the JavaScript automation know not to overwrite such values.
+  {%- endcomment -%}
+  {%- capture classes -%}
+  {%- if value != "" and value != "none" %} class="manual" {%- endif -%}
+  {%- endcapture -%}
     <th>{{include.label}}</th>
-    <td id="{{include.id}}">{{value}}</td>
+    <td id="{{include.id}}"{{classes}}>{{value}}</td>
 {%- else -%}
     <td id="{{include.id}}" colspan=2>{{value}}</td>
 {%- endif -%}

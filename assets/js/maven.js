@@ -71,7 +71,10 @@ function releaseURL(g, a, v) {
 
 function fill(id, value) {
   var element = document.getElementById(id);
-  if (element) element.innerHTML = value || '[Unknown]';
+  if (element && !element.classList.contains("manual")) {
+    // Value exists and was not manually specified, so it should be filled.
+    element.innerHTML = value || '[Unknown]';
+  }
 }
 
 function fillRole(id, people) {
