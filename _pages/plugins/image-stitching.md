@@ -1,18 +1,17 @@
 ---
-mediawiki: Image_Stitching
 title: Image Stitching
+description: The Stitching plugin (2d-5d) reconstructs big images/stacks from tiled input images/stacks, optimizing for the best overlap.
 project: /software/fiji
 categories: [Registration,Stitching,Cookbook]
 artifact: sc.fiji:Stitching_
+doi: 10.1093/bioinformatics/btp184
 ---
-
- 
 
 ## Citation
 
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", *Bioinformatics*, **25**(11):1463-1465. [Webpage](http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184) [PDF](http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf)
+{% include citation %}
 
 ## Introduction
 

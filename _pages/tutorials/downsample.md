@@ -1,5 +1,4 @@
 ---
-mediawiki: Downsample
 title: Downsample
 ---
 
@@ -19,7 +18,7 @@ This script calculates the required Gaussian kernel for a given target **width**
 
 Furthermore, you can define the "intrinsic" Gaussian kernel of the source and target images. An optimal sampler is identified by sigma=0.5. If your source image was blurred already, you may set a higher **source sigma** for a sharper result. Setting **target sigma** to values smaller than 0.5 makes the result appear sharper and therefore eventually aliased.
 
-This script is maintained by Stephan Saalfeld.
+This script is maintained by {% include person id="axtimwalde" %}.
 
 ## Example
 
@@ -144,8 +143,8 @@ else
 
 ## See also
 
+-   [Scripting](/scripting)
 -   [Javascript Scripting](/scripting/javascript)
--   [Scripting Help](/scripting)
--   [Scripting\_comparisons](/scripting/comparisons)
+-   [Scripting comparisons](/scripting/comparisons)
 
 

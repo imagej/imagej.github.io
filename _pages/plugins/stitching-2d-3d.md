@@ -1,9 +1,12 @@
 ---
-mediawiki: Stitching_2D/3D
 title: Stitching 2D/3D
+description: The Stitching 2D/3D plugin is an old/deprecated version of the Image Stitching plugins.
 project: /software/fiji
 categories: [Registration,Stitching]
 artifact: sc.fiji:Stitching_
+dev-status: Obsolete
+support-status: Minimal
+doi: 10.1093/bioinformatics/btp184
 ---
 
 {% include notice icon="warning" content='Please note that this version of the Stitching is deprecated. A new version is available here: [Image Stitching](/plugins/image-stitching)' %}
@@ -24,12 +27,12 @@ The 2D/3D Stitching Plugin is able to reconstruct big images/stacks from an arbi
 
 The Stitching package comes with 4 different plugins:
 
--   **[ 2D Stitching](Stitching_2D_3D#2D_Stitching_and_3D_Stitching)**: Stitch two 2-dimensional images, rectangular ROIs can be used to limit the area to search in.
--   **[ 3D Stitching](Stitching_2D_3D#2D_Stitching_and_3D_Stitching)**: Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
--   **[ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images)**: Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
--   **[ Stitch Image Grid Sequence](Stitching_2D_3D#stitch-image-grid-sequence)**: Stitch a sequence of 2D or 3D regular grids of images.
--   **[ Stitch Collection of Images](Stitching_2D_3D#stitch-collection-of-images)**: Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
--   **[ Stitch Directory with Images (unknown configuration)](Stitching_2D_3D#stitch-directory-with-images-unknown-configuration))**: Stitch all images that are located in a given directory without any knowledge of the tile configuration.
+-   **[2D Stitching](#2d-stitching-and-3d-stitching)**: Stitch two 2-dimensional images, rectangular ROIs can be used to limit the area to search in.
+-   **[3D Stitching](#2d-stitching-and-3d-stitching)**: Stitch two image stacks (3D), rectangular ROIs can be used to limit the area to search in as well.
+-   **[Stitch Grid of Images](#stitch-grid-of-images)**: Stitch an arbitrary number of 2D or 3D images which are arranged in a regular grid (e.g. 4 x 3 images with roughly 10% overlap)
+-   **[Stitch Image Grid Sequence](#stitch-image-grid-sequence)**: Stitch a sequence of 2D or 3D regular grids of images.
+-   **[Stitch Collection of Images](#stitch-collection-of-images)**: Stitch an arbitrary number of 2D or 3D images which do not have to be in a regular grid. The rough initial configuration (which image is overlapping another one) is given in tile configuration file.
+-   **[Stitch Directory with Images (unknown configuration)](#stitch-directory-with-images-unknown-configuration))**: Stitch all images that are located in a given directory without any knowledge of the tile configuration.
 
 ## 2D Stitching and 3D Stitching
 
@@ -57,13 +60,13 @@ The user has to define the grid size, that means how the input tiles are arrange
 
 The next entries in the dialog are used to tell the plugin how to load the images which are in the grid. The directory should point to the directory where the images are stored. In the file names the user has to tell the program how the files are named (e.g. 49 different file names). There are typically two ways how the files are named:
 
--   **Images have an increasing number**: Tile\_001.lsm Tile\_002.lsm .... Tile\_049.lsm
--   **Images have the x and y coordinate in their filenames**: Tile\_01\_01.tif Tile\_01\_02.tif .... Tile\_07\_07.tif
+-   **Images have an increasing number**: `Tile_001.lsm` `Tile_002.lsm` .... `Tile_049.lsm`
+-   **Images have the x and y coordinate in their filenames**: `Tile_01_01.tif` `Tile_01_02.tif` .... `Tile_07_07.tif`
 
 These two cases would be described as follows:
 
--   **Images have an increasing number**: Tile\_{iii}.lsm - The index number has always three digits and is just counted up starting at 1. The plugin knows that it has to count till 49 as there are 7 x 7 tiles.
--   **Images have the x and y coordinate in their filenames**: Tile\_{xx}\_{yy}.tif - The index numbers for x and y coordinate of the tile have always two digits and are counted up starting at one each. The plugin knows that it has to count to 7 each as there are 7 x 7 tiles.
+-   **Images have an increasing number**: `Tile_{iii}.lsm` - The index number has always three digits and is just counted up starting at 1. The plugin knows that it has to count till 49 as there are 7 x 7 tiles.
+-   **Images have the x and y coordinate in their filenames**: `Tile_{xx}_{yy}.tif` - The index numbers for x and y coordinate of the tile have always two digits and are counted up starting at one each. The plugin knows that it has to count to 7 each as there are 7 x 7 tiles.
 
 The starting numbers for x, y and i can be changed in the boxes below. The plugin will write a tileconfiguration.txt into the directory where the files are stored which can be investigated and changed if wanted. The plugin Stitch Collection of Images will take such a file as input. If you hit the checkbox "Save only tile configuration" the plugin will just create this file and stop.
 
@@ -81,7 +84,7 @@ If you check the Create only Preview checkbox the program will not register the 
 
 ## Stitch Image Grid Sequence
 
-This plugin complements the previous one by stitching a sequence of grid of image that must have the same X-Y grid configuration. Apart from the previous parameters, the user must now select the number of sections (*grid size z*), the file name template (for example "Tile\_Z{zzz}\_Y{yyy}\_X{xxx}.lsm"), the starting z value and the *output directory* where all resulting stitched images will be stored.
+This plugin complements the previous one by stitching a sequence of grid of image that must have the same X-Y grid configuration. Apart from the previous parameters, the user must now select the number of sections (*grid size z*), the file name template (for example `Tile_Z{zzz}_Y{yyy}_X{xxx}.lsm`), the starting z value and the *output directory* where all resulting stitched images will be stored.
 
 ## Stitch Collection of Images
 
@@ -90,15 +93,15 @@ This plugin takes an arbitrary tile configuration as input which has to be store
 
 The plugin Stitch Grid of Images will for example create such a file.
 
-All the other parameters are the same as explained in the section [ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images).
+All the other parameters are the same as explained in the section [Stitch Grid of Images](#stitch-grid-of-images).
 
 ## Stitch Directory with Images (unknown configuration)
 
-This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images). If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded.
+This plugin takes all images that are located in a given directory and tries to align them without any knowledge of the tile configuration. All other parameters are identical to those explained in the section [Stitch Grid of Images](#stitch-grid-of-images). If the plugin does not find the correct alignment, you can try to increase the cross correlation threshold so that only pairwise alignments with very high quality are used for the global optimization. This increases the chance that the optimizer is able to detect the correct pairwise alignments. This, however, requires images with high quality as otherwise correct pairwise alignments with relatively low correlation are excluded.
 
 ## Stitch Multiple Series or Tile Scan File
 
-This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](/formats/bio-formats)'s series support. The parameters are as explained in the section [ Stitch Grid of Images](Stitching_2D_3D#stitch-grid-of-images).
+This plugin takes series of images contained in a single file, e.g. in the .lsm file format. It relies on [Bio-Formats](/formats/bio-formats)'s series support. The parameters are as explained in the section [Stitch Grid of Images](#stitch-grid-of-images).
 
 ## Problems and Known Issues
 
