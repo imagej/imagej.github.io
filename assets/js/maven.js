@@ -291,7 +291,7 @@ function fillStatsFromPOM(pom) {
 
 function fillStatsFromURL(url) {
   download(url).then(pom => fillStatsFromPOM(pom));
-  lastModified(url).then(date => fill('component-date', date));
+  lastModified(url).then(date => fill('component-date', date.replace(/(\d{4}) /, "$1<br>")));
 }
 
 function fillStatsFromGAV(g, a, v, repository) {

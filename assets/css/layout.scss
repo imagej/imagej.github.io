@@ -447,6 +447,16 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   margin-bottom: 0.5em;
 }
 
+#statbox tr {
+  line-height: 1.4em;
+}
+
+#statbox th {
+  vertical-align: middle;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 #statbox img {
   max-width: 100%;
 }
@@ -490,6 +500,10 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   line-height: 0 !important;
   text-indent: 0 !important;
   letter-spacing: 0 !important;
+}
+
+#statbox #component-date {
+  font-size: 0.7em;
 }
 
 /* ------------------------------- NAV BAR -------------------------------- */
