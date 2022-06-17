@@ -103,7 +103,7 @@ Slides can be found [here](https://bnorthan.github.io/viewing-images-tutorial/sl
 
 [ImageJ Tutorials](https://github.com/imagej/tutorials)
 
-[Widget-Demo](https://github.com/imagej/tutorials/tree/master/maven-projects/widget-demo) showing all different widgets for all available input @Parameters.
+[Widget-Demo](https://github.com/imagej/tutorials/tree/learnathon-2019/maven-projects/widget-demo) showing all different widgets for all available input @Parameters.
 
 [DoG Pyramid example.](https://github.com/tibuch/DoG_Pyramid)
 

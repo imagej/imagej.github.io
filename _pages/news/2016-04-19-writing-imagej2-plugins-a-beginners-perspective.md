@@ -163,7 +163,7 @@ To import several projects from GitHub I always had to close all open project in
 Start from an existing plugin as a template:
 
 -   For ImageJ 1.x plugins: {% include github org='imagej' repo='minimal-ij1-plugin' label='imagej/minimal-ij1-plugin' %}
--   For ImageJ2 plugins: {% include github org='imagej' repo='tutorials' branch='master' path='java/simple-commands' label='simple-commands in imagej/tutorials' %}
+-   For ImageJ2 plugins: {% include github org='imagej' repo='tutorials' branch='39ef3f267f9766a5e0a4503666899af91f936587' path='maven-projects/simple-commands' label='simple-commands in imagej/tutorials' %}
 
 Import it as a sample project into your IDE and modify this project according to your needs:
 

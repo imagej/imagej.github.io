@@ -8,7 +8,7 @@ Today, the [ImageJ](/software/imagej) and [KNIME](/software/knime) teams are ple
 
 ## Motivation
 
-The ImageJ2 vision is to extend Java's mantra of "write once, run anywhere" to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {% include github org='scijava' repo='scijava-common' label='plugin' %} and {% include github org='imagej' repo='tutorials' branch='master' path='maven-projects/working-with-modules/src/main/java/WorkingWithModules.java' label='module' %} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).
+The ImageJ2 vision is to extend Java's mantra of "write once, run anywhere" to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {% include github org='scijava' repo='scijava-common' label='plugin' %} and {% include github org='imagej' repo='tutorials' branch='a93fc45a495c2d27bb2afcba1da22474f2a1449c' path='maven-projects/working-with-modules/src/main/java/WorkingWithModules.java' label='module' %} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [CellProfiler](/software/cellprofiler), [KNIME](/software/knime), [OMERO](/software/omero) and [Alida](/software/alida).
 
 But still notably missing was the next crucial layer: a framework for *image processing* specifically. To address that, we set out to create a framework for reusable image processing algorithms, with the following characteristics:
 
@@ -22,11 +22,11 @@ When it comes to ease of use, generality and performance in computer programs, t
 
 An op is just an ImageJ module, but with some additional structure and requirements: you can think of an op as a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects. There are over 80 ops implemented so far, with {% include github org='imagej' repo='imagej-ops' tag='ij-ops-0.1.0' path='operations.txt' label='many more to come' %}; see this ImageJ tutorial to learn about some of them:
 
-[Using Ops](https://github.com/imagej/tutorials/tree/master/maven-projects/using-ops/src/main/java/UsingOps.java)
+[Using Ops](https://github.com/imagej/tutorials/tree/a93fc45a495c2d27bb2afcba1da22474f2a1449c/maven-projects/using-ops/src/main/java/UsingOps.java)
 
 And for algorithm developers, there is another tutorial briefly demonstrating how it works to create a new one:
 
-[Create a new op](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-op/src/main/java/CreateANewOp.java)
+[Create a new op](https://github.com/imagej/tutorials/tree/a93fc45a495c2d27bb2afcba1da22474f2a1449c/maven-projects/create-a-new-op/src/main/java/CreateANewOp.java)
 
 ## Caveats
 
