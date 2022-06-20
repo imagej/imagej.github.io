@@ -283,14 +283,14 @@ refreshComponent();
 {%- comment -%} ============== COMPONENT INFO ============== {%- endcomment -%}
 {%- comment -%} TODO: Infer project from groupId. {%- endcomment -%}
 {%- comment -%} TODO: Add support for licenseName, projectName, copyrightOwners. {%- endcomment -%}
-{%- if autopop or source-label   -%} {%- include statbox/row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
-{%- if autopop or license-url    -%} {%- include statbox/row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
-{%- if autopop or release-url    -%} {%- include statbox/row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}
-{%- if autopop or release-date   -%} {%- include statbox/row id="component-date"           label="Date"                    value=release-date    -%} {%- endif -%}
-{%- if autopop or dev-status     -%} {%- include statbox/row id="component-dev-status"     label="Development status"      value=dev-status      -%} {%- endif -%}
-{%- if autopop or support-status -%} {%- include statbox/row id="component-support-status" label="Support status"          value=support-status  -%} {%- endif -%}
-{%- if forum-tag                 -%} {%- include statbox/row id="component-forum-tag"      label="Discussion"              value=forum-tag       -%} {%- endif -%}
-{%- if team                      -%} {%- include statbox/row id="component-team"                                           value=team            -%} {%- endif -%}
+{%- if autopop or source-url or source-label     -%} {%- include statbox/row id="component-source"         label="Source"  url=source-url  value=source-label    -%} {%- endif -%}
+{%- if autopop or license-url or license-label   -%} {%- include statbox/row id="component-license"        label="License" url=license-url value=license-label   -%} {%- endif -%}
+{%- if autopop or release-url or release-version -%} {%- include statbox/row id="component-release"        label="Release" url=release-url value=release-version -%} {%- endif -%}
+{%- if autopop or release-date                   -%} {%- include statbox/row id="component-date"           label="Date"                    value=release-date    -%} {%- endif -%}
+{%- if autopop or dev-status                     -%} {%- include statbox/row id="component-dev-status"     label="Development status"      value=dev-status      -%} {%- endif -%}
+{%- if autopop or support-status                 -%} {%- include statbox/row id="component-support-status" label="Support status"          value=support-status  -%} {%- endif -%}
+{%- if forum-tag                                 -%} {%- include statbox/row id="component-forum-tag"      label="Discussion"              value=forum-tag       -%} {%- endif -%}
+{%- if team                                      -%} {%- include statbox/row id="component-team"                                           value=team            -%} {%- endif -%}
 
 {%- comment -%} =============== PERSON INFO ================ {%- endcomment -%}
 {%- if forum              -%} {%- include statbox/row id="person-forum"       label="Image.sc Forum" value=forum url=forum-url -%} {%- endif -%}
