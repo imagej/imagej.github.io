@@ -4,7 +4,7 @@ title: PhotoBend
 categories: [Tracking]
 name: PhotoBend
 source-url: https://github.com/anotherche/photobend
-release-date: 26/04/2017
+release-date: 26 Apr 2017
 dev-status: Alpha
 team-founders: Stanislav Chizhik | /people/anotherche
 team-maintainers: Stanislav Chizhik | /people/anotherche

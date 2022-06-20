@@ -4,7 +4,7 @@ title: Cross Sectional Analyzer
 name: Cross Sectional Analyzer
 source-url: https://github.com/mattrothman/cross-sectional-analysis
 source-label: on GitHub
-release-date: 2020/05/14
+release-date: 14 May 2020
 team-developers: Thalia Barr-Malec, Nalin Richardson, Matthew Rothman
 categories: [Uncategorized]
 ---

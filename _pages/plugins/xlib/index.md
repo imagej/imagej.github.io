@@ -6,7 +6,7 @@ name: Xlib
 team-founders: Beat Münch
 team-leads: Beat Münch
 team-maintainers: Beat Münch
-release-date: 6 December 2021
+release-date: 6 Dec 2021
 source-label: on SWITCHdrive
 source-url: https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp
 dev-status: Stable

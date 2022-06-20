@@ -3,7 +3,7 @@ title: BIOP Lookup Tables
 name: BIOP Lookup Tables
 source-url: http://biop.epfl.ch/INFO_Facility.html#staff
 source-label: PTBIOP staff site
-release-date: October 2016
+release-date: Oct 2016
 dev-status: Stable
 team-developers: Romain Guiet, Olivier Burri
 team-maintainers: Romain Guiet

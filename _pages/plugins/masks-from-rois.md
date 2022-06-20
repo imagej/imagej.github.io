@@ -7,7 +7,7 @@ categories:
   - Segmentation
 
 source-url: https://github.com/LauLauThom/MaskFromRois-Fiji
-release-date : 2021
+release-date: 2021
 
 license-url: /licensing/mit
 license-label: MIT

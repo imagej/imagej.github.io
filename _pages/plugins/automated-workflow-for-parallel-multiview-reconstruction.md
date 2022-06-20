@@ -10,7 +10,7 @@ team-developers:
  - Pavel Tomancak | /people/tomancak
 team-maintainers: 
  - Christopher Schmied | /people/schmiedc
-release-date: 'July 2015'
+release-date: Jul 2015
 ---
 
 {% include notice icon="info" content='Latest release: March 2016' %}

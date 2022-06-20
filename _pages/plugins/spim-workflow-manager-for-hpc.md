@@ -14,7 +14,7 @@ team-developers:
  - Pavel Tomancak | /people/tomancak
 team-maintainers: 
  - Jan Kožusznik | /people/kozusznik
-release-date: 'August 2018'
+release-date: Aug 2018
 ---
 
 {% include notice icon="info" content='Latest release: March 2019' %}

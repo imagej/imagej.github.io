@@ -7,7 +7,7 @@ icon: /media/icons/jipipe.svg
 
 name:  JIPipe
 source-url: https://github.com/applied-systems-biology/jipipe
-release-date : 2022
+release-date: 2022
 
 license-url: /licensing/bsd
 license-label: BSD 2-clause

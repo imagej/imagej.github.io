@@ -6,7 +6,7 @@ categories: [Image Annotation]
 icon: /media/icons/quali-annotations.svg
 
 source-url: https://github.com/LauLauThom/Fiji-QualiAnnotations
-release-date : 2020
+release-date: 2020
 
 license-url: /licensing/gpl
 license-label: GPL-v3

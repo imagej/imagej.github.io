@@ -10,7 +10,7 @@ team-maintainers: Gabriel Landini | /people/landinig
 dev-status: Stable
 source-label: align_rgb.zip
 source-url: https://github.com/landinig/IJ-Align_RGB_planes/raw/main/align_rgb.zip
-release-date: 27 March 2007
+release-date: 27 Mar 2007
 ---
 
 ## Documentation

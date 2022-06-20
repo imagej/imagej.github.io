@@ -9,7 +9,7 @@ dev-status: Stable
 support-status: Limited
 source-url: https://github.com/thorstenwagner/ij-nl-means
 release-version: v1.4.6
-release-date: 13 March 2016
+release-date: 13 Mar 2016
 doi:
 - 10.5201/ipol.2011.bcm_nlm
 - 10.1109/ISBI.2008.4541250

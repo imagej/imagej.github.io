@@ -6,7 +6,7 @@ categories: [Image Annotation]
 icon: /media/icons/roi-click-tools.svg
 
 source-url: https://github.com/LauLauThom/Fiji-RoiClickTools
-release-date : 2019
+release-date: 2019
 
 license-url: /licensing/bsd
 license-label: BSD-2

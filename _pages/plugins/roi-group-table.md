@@ -5,7 +5,7 @@ categories: [Image Annotation]
 
 name: Roi-group table
 source-url: https://github.com/LauLauThom/RoiGroupTable
-release-date : 2020
+release-date: 2020
 
 license-url: /licensing/gpl
 license-label: MIT

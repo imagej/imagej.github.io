@@ -7,7 +7,7 @@ icon: /media/icons/multi-template-matching.jpg
 
 name:  Multi-Template Matching
 source-url: https://github.com/multi-template-matching/MultiTemplateMatching-Fiji
-release-date : 2019
+release-date: 2019
 
 license-url: /licensing/gpl
 license-label: GPLv3

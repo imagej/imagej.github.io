@@ -5,7 +5,7 @@ source-url: https://github.com/Borda/ij-CMP-BIA
 team-founder: Jiří Borovec | https://cmp.felk.cvut.cz/~borovji3/
 team-maintainer: Jiří Borovec | mailto:jiri.borovec@fel.cvut.cz
 release-version: 0.2
-release-date: December 20, 2013
+release-date: 20 Dec 2013
 license-url: /licensing/gpl#gnu-general-public-license-v2
 license-label: GPLv2
 ---

@@ -8,7 +8,7 @@ team-developers:
  - Pavel Tomancak | /people/tomancak
 team-maintainers: 
  - Pavel Tomancak | /people/tomancak
-release-date: 'May 2013'
+release-date: May 2013
 ---
 
 {% include notice icon="warning" content='Please Note: This version of the software is outdated. We highly recommend using the new [automated workflow](/plugins/automated-workflow-for-parallel-multiview-reconstruction). It is much more user friendly, efficient and versatile using full automation of the processing.' %}
