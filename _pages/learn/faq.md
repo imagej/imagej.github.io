@@ -42,18 +42,9 @@ Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jr
 Use the `--java-home` command line option:
 
     /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \  
-    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
+    '/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home'
 
-Note: the `--java-home` flag does not support Apple Java installations. Specifying Apple Javas with this flag will give an error message about being unable to find `lib/server/libjvm.dylib`. However, ImageJ will fall back to Apple Java if no other Java installations are available.
-
-In particular, this means that to run Java 6 on the latest macOS versions, you must do ***ONE*** of the following:
-
--   ***EITHER:*** Remove all installations of Java 7 and Java 8 ([remove the JRE](https://www.java.com/en/download/help/mac_uninstall_java.xml) and [remove all JDKs](http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html#uninstall)).
--   ***OR:*** Launch ImageJ explicitly using `java`. Here is a sample invocation for Fiji (copy and paste into Terminal):
-
-    export J6="$(/usr/libexec/java_home -v 1.6)"
-    export IJ_HOME=/Applications/Fiji.app
-    $J6/bin/$($IJ_HOME/Contents/MacOS/ImageJ-macosx --dry-run | perl -pe 's/ -Djava.ext.dirs=.*? -D/ -D/')
+{% include notice icon="tech" content="Old versions of Mac OS X shipped with Apple's fork of OpenJDK 6, which included some Mac-specific features. But Apple Java is long discontinued now. If you wish to install your own OpenJDK(s) on modern versions of macOS, it is recommended to use [Homebrew](https://brew.sh/), or simply download and unpack the OpenJDK distribution(s) of your choice into a `Java` folder inside your user folder." %}
 
 See "How do I setup a launcher app" below for instructions on turning this invocation into a Dock icon.
 
