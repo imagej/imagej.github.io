@@ -2,13 +2,13 @@
 mediawiki: Sholl_Analysis
 title: Sholl Analysis
 categories: [Analysis,Neuroanatomy]
-artifact: ca.mcgill:Sholl_Analysis
+artifact: org.morphonets:SNT
 doi: 10.1038/nmeth.3125
 ---
 
 <seo metak="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite, neuroanatomy" metad="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite,neuroanatomy" />
 
- Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
+Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analyis of traced reconstructions (via [SNT](/plugins/snt)) and profiles obtained by other software is also possible.
 
 ## Introduction
 
@@ -23,10 +23,7 @@ The Sholl technique[^2] is used to describe neuronal arbors. This plugin can per
 
 ## Installation
 
-The plugin is distributed with Fiji. It installs several commands under {% include bc path='Analysis|Sholl| ' color='white'%}. **As part of an active effort to [modernize ImageJ](/news/2015-12-22-the-road-to-java-8) you need to [subscribe](/update-sites/following#add-update-sites) to the Java 8 update site to access the latest plugin version** (this will also allow you to access the newest [ImageJ capabilities](/news/2015-12-22-the-road-to-java-8#components-which-have-already-migrated)). To do so, you can either:
-
--   [Download the latest Fiji release](/downloads). Newer releases come pre-bundled with Java 8, and are already subscribed to the Java-8 update site](/list-of-update-sites).
--   If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [Fiji installation aware of it](/learn/troubleshooting#checking-the-java-version). Then subscribe to the [Java-8 update site](/list-of-update-sites).
+The latest version of the plugin is bundled with [SNT](/plugins/snt). Once [installed](/plugins/snt/#installation), it can be accessed through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window' color='white'%}, or the SNT icon in the ImageJ toolbar. See [SNT installation](/plugins/snt/#installation) for details.
 
 ## Direct Analysis of Images
 
