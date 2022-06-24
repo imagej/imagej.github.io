@@ -21,6 +21,8 @@ See the [script parameters](/scripting/parameters) page for further details.
 
 ## GenericDialog
 
+{% include notice icon='tech' content="GenericDialog is a graphical dialog. Depending on how it is used, it may impact a script's usability in different scenarios, such as [headless](/learn/headless) execution from the command line." %}
+
 {% include img src="multi-column-dialog" width="300" %}
 
 The [GenericDialog](/scripting/generic-dialog) class—part of the original [ImageJ](/software/imagej)—offers more flexibility than the [script parameters](/scripting/parameters), including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using `GenericDialog` are also not automatically usable in other [SciJava](/libs/scijava) tools such as [KNIME](/software/knime) or [ImageJFX](/software/imagejfx).
