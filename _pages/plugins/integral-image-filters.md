@@ -1,21 +1,14 @@
 ---
-mediawiki: Integral_Image_Filters
 title: Integral Image Filters
 categories: [Filtering,Integral Image]
 extensions: ["mathjax"]
+source-url: https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral
+artifact: mpicbg:mpicbg_:1.4.1
 ---
 
+{% include video platform='youtube' id='p1mhZqj2VTY'%}
 
-{% capture author%}
-{% include person id='axtimwalde' %} ([1](mailto:saalfeld@mpi-cbg.de))
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='axtimwalde' %}
-{% endcapture %}
-{% include info-box name='Integral Image Filters' software='Fiji' author=author maintainer=maintainer source=' [GitHub](https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral)' released='March 21<sup>st</sup>, 2011' latest-version='February 22<sup>nd</sup>, 2012' status='stable, active' category='Plugins, Filtering' %}{% include video platform='youtube' id='p1mhZqj2VTY'%}
-
-Integral images have been introduced in by Crow (1984)[^1] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation[^2], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}[^3], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform[^4]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
+Integral images have been introduced by Crow (1984)[^1] as a technique to improve texture rendering speed at multiple scales in perspective projections. The technique has since then been used for a number of applications. The most popular examples are fast normalized cross-correlation[^2], the {% include wikipedia title='Viola%E2%80%93Jones object detection framework' text='Viola-Jones object detection framework'%}[^3], and the {% include wikipedia title='SURF' text='Speeded Up Robust Feature (SURF)'%} transform[^4]. In Fiji, we currently use Integral Images for a number of basic statistic block filters.
 
 ## Basic Block Statistics with Integral Images (Summed-Area Tables)
 
@@ -45,45 +38,19 @@ which expands to
 
 $$ \text{Var}(x) = \frac{1}{n}\sum_{i=1}^n\left(x_i^2-2x_i\mu+\mu^2\right) $$
 
-$$
+$$ = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \mu^2 $$`
+$$ = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 $$
 
-$$
+$$ = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n}\sum_{i=1}^n2x_i\mu + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
+$$ = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 $$
 
-$$
+$$ = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2 $$
 
-$$
+$$ = \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2 $$
 
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2\mu}{n}\sum_{i=1}^nx_i + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
-
-$$
-
-$$
-
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{2}{n^2}\left(\sum_{i=1}^nx_i\right)^2 + \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
-
-$$
-
-$$
-
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \frac{1}{n^2}\left(\sum_{i=1}^nx_i\right)^2`
-
-$$
-
-$$
-
-`       = \frac{1}{n}\sum_{i=1}^nx_i^2 - \left(\frac{1}{n}\sum_{i=1}^nx_i\right)^2`
-
-$$
-
-$$
-
-`       = \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right)`
-
-$$
+$$ = \frac{1}{n}\left(\sum_{i=1}^nx_i^2 - \frac{1}{n}\left(\sum_{i=1}^nx_i\right)^2\right) $$
 
 Both sums can be generated from two Integral Images over $$I(\vec{x})$$ and $$I(\vec{x})^2$$ respectively. For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel. Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
 
@@ -107,63 +74,31 @@ that can be transformed yielding a set of independent sums. For the numerator, t
 
 $$ \sum_{i=1}^n(x_i-\mu_X)(y_i-\mu_Y) = \sum_{i=1}^nx_iy_i-\sum_{i=1}^nx_i\mu_Y-\sum_{i=1}^ny_i\mu_X+\sum_{i=1}^n\mu_X\mu_Y $$
 
-$$
+$$ = \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y $$
 
-`= \sum_{i=1}^nx_iy_i-\mu_Y\sum_{i=1}^nx_i-\mu_X\sum_{i=1}^ny_i+n\mu_X\mu_Y`
-
-$$
-
-$$
-
-`= \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i`
-
-$$
+$$ = \sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i $$
 
 For the denominator, it is handy to multiply with $$\frac{n}{n}$$ first
 
 $$ r_{XY} = \frac{\sum_{i=1}^nx_iy_i-\frac{1}{n}\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}} $$
 
-$$
+$$ = \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}} $$
 
-`= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{n\sqrt{\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{\sum_{i=1}^n(y_i-\mu_Y)^2}}`
-
-$$
-
-$$
-
-`= \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}}`
-
-$$
+$$ = \frac{n\sum_{i=1}^nx_iy_i-\sum_{i=1}^ny_i\sum_{i=1}^nx_i}{\sqrt{n\sum_{i=1}^n(x_i-\mu_X)^2}\sqrt{n\sum_{i=1}^n(y_i-\mu_Y)^2}} $$
 
 because
 
 $$ n\sum_{i=1}^n(x_i-\mu_X)^2 = n\sum_{i=1}^n(x_i^2-2x_i\mu_X+\mu_X^2) $$
 
-$$
+$$ = n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2 $$
 
-`= n\sum_{i=1}^nx_i^2 - 2n\mu_X\sum_{i=1}^nx_i + \left(\sum_{i=1}^nx_i\right)^2`
+$$ = n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2 $$
 
-$$
-
-$$
-
-`= n\sum_{i=1}^nx_i^2 - 2\left(\sum_{i=1}^nx_i\right)^2 + \left(\sum_{i=1}^nx_i\right)^2`
-
-$$
-
-$$
-
-`= n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2`
-
-$$
+$$ = n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2 $$
 
 yielding
 
-$$
-
-`r_{XY} = \frac{n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i}{\sqrt{n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2}\sqrt{n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2}}`
-
-$$
+$$ r_{XY} = \frac{n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i}{\sqrt{n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)^2}\sqrt{n\sum_{i=1}^ny_i^2 - \left(\sum_{i=1}^ny_i\right)^2}} $$
 
 which means that we can calculate $$r_{XY}$$ for each block at a fix offset of two images from five summed-area tables at constant time. In some situations (e.g. finding an extremum), it is sufficient to estimate $$r_{XY}^2$$ and the sign of $$r_{XY}$$. Then, the calculation of the two square roots can be avoided
 
@@ -171,13 +106,13 @@ $$ r_{XY}^2 = \frac{a^2}{\left(n\sum_{i=1}^nx_i^2 - \left(\sum_{i=1}^nx_i\right)
 
 with
 
-$$ a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{}\sgn(r_{XY}) = \sgn(a) $$
+$$ a = n\sum_{i=1}^nx_iy_i - \sum_{i=1}^nx_i\sum_{i=1}^ny_i\quad\text{and}\quad{} sgn(r_{XY}) = sgn(a) $$
 
 ## References
 
 {% include citation fn=1 doi='10.1145/800031.808600' %}
 
-{% include citation fn=2 content='conference' first='J. P.' last='Lewis' booktitle='Vision Interface' volume='95' pages='120–123' publisher='Canadian Image Processing and Pattern Recognition Society' title='Fast template matching' year='1995' %} <!-- TODO: No doi for this book. Decide whether to hardcode AMA style, or do something fancier. -->
+[^2]: Lewis, J. P. (1995). "Fast template matching". *Vision Interface* 95: 120–123, Canadian Image Processing and Pattern Recognition Society. <!-- NB: No DOI for this book. -->
 
 {% include citation fn=3 doi='10.1023/B:VISI.0000013087.49260.fb' %}
 
