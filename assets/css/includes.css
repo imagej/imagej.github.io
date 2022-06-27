@@ -194,7 +194,7 @@ table.info-notice {
   grid-column-gap: 0.5em;
 }
 
-.ctlcmd span:first-child {
+.ctlcmd span:nth-child(odd) {
   text-align: right;
 }
 
