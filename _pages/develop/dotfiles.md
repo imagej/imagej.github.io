@@ -74,8 +74,9 @@ mkdir -p code/ctrueden
 cd code/ctrueden
 git clone git://github.com/ctrueden/dotfiles
 cd dotfiles
-sh config-links.sh
+sh setup.sh
 ```
+
 Clone code for organization(s) of interest—e.g., imagej:
 ```bash
 cd
@@ -86,12 +87,6 @@ mr up
 
 Switch to zsh:
 ```bash
-# grab zgen
-cd
-mkdir -p code/zsh
-cd code/zsh
-mr up
-
 # on Linux
 sudo apt-get install zsh
 sudo chsh -s /bin/zsh
