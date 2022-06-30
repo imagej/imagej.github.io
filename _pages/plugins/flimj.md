@@ -1,24 +1,11 @@
 ---
 mediawiki: FLIMJ
 title: FLIMJ
-categories: [Uncategorized]
+categories: [Analysis, Lifetime]
 extensions: ["mathjax"]
+doi: 10.1371/journal.pone.0238327
+artifact: flimlib:flimj-ui
 ---
-
-
-{% capture maintainer%}
-{% include person id='ctrueden' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='slim-curve' repo='slim-plugin' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='FLIMJ plugin' logo='<img src="/media/icons/slim-curve.png" width="64"/>' author=' [KCL Comprehensive Cancer Centre](https://kclpure.kcl.ac.uk/portal/en/persons/paul-barber(3940a1bb-cf59-4927-9cd2-5ec0cb52b8d3).html)  
-[UW-Madison LOCI](http://loci.wisc.edu/)
-[CRUK/MRC at University of Oxford](http://www.rob.ox.ac.uk/)' maintainer=maintainer filename='flimlib.jar, flimlib-*arch*-*ver*.jar,  
-flimj-ops-*ver*.jar' source=source latest-version='1.0.0' website='https://flimlib.github.io/' category='Analysis' %}
-
-## Introduction
 
 The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](/software/fiji) distribution of ImageJ simply by enabling the FLIMJ [update site](/update-sites). Features include:
 
@@ -179,3 +166,9 @@ More documentation coming soon. For now, see the source code at:
 And:
 
 {% include link-banner url='https://github.com/flimlib/flimj-ops' %}
+
+## Publication
+
+If you use FLIMJ in your work, please cite the paper:
+
+{% include citation %}
