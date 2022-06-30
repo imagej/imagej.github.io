@@ -4,8 +4,13 @@ title: FLIMJ
 categories: [Analysis, Lifetime]
 extensions: ["mathjax"]
 doi: 10.1371/journal.pone.0238327
-artifact: flimlib:flimj-ui
+artifact: flimlib:flimlib
 ---
+<!--
+We use flimlib for the artifact so the authors in the statbox reflect more
+appropriate credit: this wiki page covers not only flimj-ui and/or flimj-ops,
+but the flimlib project as a whole.
+-->
 
 The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [FLIMLib](https://flimlib.github.io/) library. The plugin can be installed into the [Fiji](/software/fiji) distribution of ImageJ simply by enabling the FLIMJ [update site](/update-sites). Features include:
 
