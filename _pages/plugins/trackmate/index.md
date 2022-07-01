@@ -115,7 +115,7 @@ width='400px'
 
 #### Measuring morohpological features over time
 
-**Following cell morphology over several divisions within a lineage.** The lineage follows the growth of a _Nesseiria meningitidis_. The bottom graphs display the cell area and circularity for the cell highilighted in green in the above lineage. For 2D images,  TrackMate can measure the morphological features of the objects it tracks. 
+**Following cell morphology over several divisions within a lineage.** The lineage follows the growth of a _Nesseiria meningitidis_. The bottom graphs display the cell area and circularity for the cell highlighted in green in the above lineage. For 2D images,  TrackMate can measure the morphological features of the objects it tracks. 
 
 {% include img 
 src='/media/plugins/trackmate/trackmate_morphofeatureslineage.png'
@@ -210,7 +210,7 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 
 ## Documentation and tutorials
 
-- The main manual for TrackMate can befound here:
+- The main manual for TrackMate can be found here:
 
 [TrackMate-manual.pdf](/media/plugins/trackmate/trackmate-manual.pdf) - 14 MB, 150+ pages.
 
