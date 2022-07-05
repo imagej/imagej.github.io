@@ -103,9 +103,10 @@ Using ImageJ Opener (.tif):
 
 # Fiji for workflow
 
-You can download a Fiji version that we have tested for compatibility with the automated cluster processing here:
+You can download a Fiji version that we have tested for compatibility with the automated cluster processing here (2015-06-30_Fiji.app.tar.gz
+):
 
-**https://doi.org/10.5281/zenodo.6338071**
+**[Link to repository](https://doi.org/10.5281/zenodo.6338071)**
 
 It is important to note that we can only guarantee the proper execution of the workflow with the provided Fiji version. We will from time to time upgrade to cover the latest changes in the plugins.
 
@@ -237,9 +238,9 @@ After this initial setup you can proceed to modify the *config.yaml* for your sp
 
 # Setup for the dataset
 
-You can download a 5 view, single channel .czi example dataset here:
+You can download a 5 view, single channel .czi example dataset here (example.zip):
 
-**http://tomancak-srv1.mpi-cbg.de/~schmied/**
+**[Link to repository](https://doi.org/10.5281/zenodo.6338071)**
 
 The example dataset looks like this:
 
