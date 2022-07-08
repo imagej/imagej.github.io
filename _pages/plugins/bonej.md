@@ -406,7 +406,7 @@ Reznikov, N et al. (2016), *Inter-trabecular angle: A parameter of trabecular bo
 
 Menu path {% include bc path="Plugins | BoneJ | Thickness" %}.
 
-This plug-in includes [Local\_Thickness](/plugins/local-thickness) in BoneJ, and provides some additional options & results. Local thickness measures *the diameter of the largest sphere that fits inside the object and contains the point* for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
+This plug-in includes [Local\_Thickness](/plugins/local-thickness) in BoneJ, and provides some additional options & results. Local thickness measures *the diameter of the largest sphere that fits inside the object and contains the point* for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular separation (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the marrow space. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
 
 #### Suitable images
 
@@ -414,7 +414,7 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 
 #### Parameters
 
--   **Calculate**: chooses which thickness maps to calculate - trabecular thickness, trabecular spacing, or both. In order to calculate trabecular spacing, the image voxels are inverted.
+-   **Calculate**: chooses which thickness maps to calculate - trabecular thickness, trabecular separation, or both. In order to calculate trabecular separation, the image voxels are inverted.
 -   **Show thickness maps**: display the calculated thickness maps or not.
 -   **Mask thickness maps**: remove artifacts from the thickness maps. Artifacts are foreground voxels not present in the original image. Resets to true for each run, because unmasked pixels bias the result.
 
