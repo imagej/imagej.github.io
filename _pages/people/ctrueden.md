@@ -70,13 +70,10 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Immediate priorities
 
-1.  [with {% include person name='Amandine Tournay' %}] **Python from Java.** Use PyImageJ from inside the Fiji desktop application. And respond to [the thread](https://forum.image.sc/t/fiji-conda/59618/23) in detail when progress is far enough along.
-
-2.  [with {% include person id='hinerm' %} Update ImageJ-OMERO to OMERO 5.5+ ({% include github org='imagej' repo='imagej-omero' pr=107 %}, {% include github org='scijava' repo='pom-scijava' issue=173 %}, {% include github org='scijava' repo='pom-scijava' issue=122 %}).
-
-3.  [with {% include person id='hinerm' %}] New pom-scijava release:
+1.  [with {% include person id='hinerm' %}] New pom-scijava release:
     -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
     -   Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
+    -   Include the updated ImageJ-OMERO ({% include github org='scijava' repo='pom-scijava' issue=173 %})
     -   Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
     -   Finish fixing javadoc.scijava.org ({% include github org='scijava' repo='pom-scijava' issue=130 %})
     -   Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
@@ -92,9 +89,9 @@ ImageJ2 team to respond to every support request within one work day:
         * `fiji/Kappa`
         * Update CI-related docs on imagej.net
 
-4.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
+2.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
 
-5.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
+3.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
 
 ### Project management priorities
 
