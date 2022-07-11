@@ -1,5 +1,5 @@
 ---
-title: Fiji/YouTube Channel
+title: Fiji YouTube Channel
 ---
 
 Fiji has a [YouTube Channel](http://www.youtube.com/user/fijichannel)

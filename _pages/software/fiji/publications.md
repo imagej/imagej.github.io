@@ -1,6 +1,6 @@
 ---
 mediawiki: Fiji/Publications
-title: Fiji/Publications
+title: Fiji Publications
 section: Explore:Software:Fiji
 ---
 

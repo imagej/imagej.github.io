@@ -1,6 +1,6 @@
 ---
 mediawiki: DHM_Utilities/Multi-Image_Landmark_Correspondences
-title: DHM Utilities/Multi-Image Landmark Correspondences
+title: DHM Utilities › Multi-Image Landmark Correspondences
 project: /plugins/dhm-utilities
 name: Multi-Image Landmark Correspondences
 source-url: https://github.com/sudgy/multi-landmark

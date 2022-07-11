@@ -1,6 +1,6 @@
 ---
 mediawiki: DHM_Utilities/Reconstruction
-title: DHM Utilities/Reconstruction
+title: DHM Utilities › Reconstruction
 project: /plugins/dhm-utilities
 name: Reconstruction
 source-url: https://github.com/sudgy/reconstruction

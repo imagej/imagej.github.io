@@ -1,6 +1,6 @@
 ---
 mediawiki: DHM_Utilities/Phase_Unwrapping
-title: DHM Utilities/Phase Unwrapping
+title: DHM Utilities › Phase Unwrapping
 project: /plugins/dhm-utilities
 name: Phase Unwrapping
 source-url: https://github.com/sudgy/phase-unwrapping
