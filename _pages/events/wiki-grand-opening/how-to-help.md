@@ -324,7 +324,7 @@ feature. Unfortunately, the statbox is not documented well enough yet on the
 wiki&mdash;although the [include itself describes it, including all supported
 front matter fields](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox).
 Do you like writing documentation? You could add the mapping from `info-box`
- fields to `statbox` fields here in this section! It would help all of us.
+fields to `statbox` fields here in this section! It would help all of us.
 
 #### Automatic statbox
 
