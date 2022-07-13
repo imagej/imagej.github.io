@@ -57,8 +57,15 @@ function latestVersion(g, a, repository) {
     .then(metadata => value(metadata, ['versioning', 'release']));
 }
 
-function pomURL(g, a, v, repository) {
-  return `${repository}/${gpath(g)}/${a}/${v}/${a}-${v}.pom`;
+/* Discern the concrete version string for a given snapshot version. */
+function resolveSnapshotVersion(g, a, v, repository) {
+  // E.g.: slim-curve:slim_plugin:2.0.0-SNAPSHOT -> 2.0.0-20191015.150518-26
+  return download(`${repository}/${gpath(g)}/${a}/${v}/maven-metadata.xml`)
+    .then(metadata => {
+      var timestamp = value(metadata, ['versioning', 'snapshot', 'timestamp']);
+      var buildNumber = value(metadata, ['versioning', 'snapshot', 'buildNumber']);
+      return `${v.slice(0, -9)}-${timestamp}-${buildNumber}`;
+    });
 }
 
 function link(url, label) {
@@ -298,7 +305,12 @@ function fillStatsFromURL(url) {
 }
 
 function fillStatsFromGAV(g, a, v, repository) {
-  fillStatsFromURL(pomURL(g, a, v, repository))
+  if (v.endsWith("-SNAPSHOT")) {
+    resolveSnapshotVersion(g, a, v, repository).then(sv => {
+      fillStatsFromURL(`${repository}/${gpath(g)}/${a}/${v}/${a}-${sv}.pom`);
+    });
+  }
+  else fillStatsFromURL(`${repository}/${gpath(g)}/${a}/${v}/${a}-${v}.pom`);
 }
 
 function fillStatsFromArtifact(artifact, repository) {
