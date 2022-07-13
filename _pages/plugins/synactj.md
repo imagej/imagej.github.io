@@ -1,7 +1,7 @@
 ---
 title: SynActJ
 icon: /media/icons/synActJ_logo.png
-categories: [plugin]
+categories: [Uncategorized]
 ---
 
 # Synaptic Activity in ImageJ (SynActJ)

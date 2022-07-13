@@ -2,7 +2,7 @@
 title: Getting started with MaMuT
 project: /software/fiji
 description: The main tutorial for the MaMuT plugin.
-categories: [Tracking, Tutorial]
+categories: [Tracking, Tutorials]
 logo: /media/icons/mamut.png
 doi: 10.7554/eLife.34410
 ---

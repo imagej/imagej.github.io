@@ -1,7 +1,7 @@
 ---
 title: ComsystanJ
 description: Complexity analysis
-categories: [Complexity, Fractal dimension, Entropy, Image analysis, Time signal analysis]
+categories: [Complexity, Fractal Dimension, Entropy, Time Signal Analysis]
 icon: /media/plugins/comsystanj/comsystan-favicon.png
 source-label: on GitHub
 source-url: https://github.com/comsystan/comsystanj

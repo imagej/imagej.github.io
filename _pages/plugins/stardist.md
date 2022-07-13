@@ -1,7 +1,7 @@
 ---
 mediawiki: StarDist
 title: StarDist
-categories: [Uncategorized]
+categories: [Machine Learning, Segmentation]
 ---
 
 
