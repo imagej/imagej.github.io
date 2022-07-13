@@ -697,10 +697,8 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
-        <a href="/news/2021-06-01-fiji-hackathon">
-		<p>2021 Jun 1 -<br>
-        2021 Aug 31</p>
-		</a>
+        <p><a href="/news/2021-06-01-fiji-hackathon">2021 Jun 1 -<br>
+        2021 Aug 31</a></p>
       </td>
       <td>
         <p>Online (Gather Town) organized by<br/> <a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
@@ -709,7 +707,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='tomancak|kozusznik|Michal Krumnikl|pm-cz|xulman|Dimitrios Stefanos Velissariou|Václav Svatoň|tischi|tpietzsch|ctrueden|imagejan|axtimwalde|frauzufall|oeway|bogovicj|marktsuchida|tinevez|LeeKamentsky|joshmoore|biovoxxel|sbesson|kephale|lannybroo|jburel|Nils Norlin|Estibaliz Gomez de Mariscal' %}</p>
       </td>
       <td>
-        <p><a href="https://imagej.net/events/wiki-grand-opening/index">Wiki</a>, <a href="/software/fiji">Fiji</a></p>
+        <p><a href="https://imagej.net/events/wiki-grand-opening">Wiki</a>, <a href="/software/fiji">Fiji</a></p>
       </td>
     </tr>
     <tr>
@@ -727,17 +725,11 @@ ImageJ has benefitted from many hackathons over the years:
         <p>Prague, Czech Republic<br/>organized by<br/><a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
       </td>
       <td>
-        <p>{% include person-list ids='Ko Sugawara|tischi|tpietzsch|kozusznik|xulman' %}</p>
+        <p>{% include person-list ids='ksugar|tischi|tpietzsch|kozusznik|xulman' %}</p>
       </td>
       <td>
         <p><a href="/software/fiji">Fiji</a>+<a href="https://ngff.openmicroscopy.org/latest/">OME-NGFF</a></p>
       </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
   </tbody>
 </table>
