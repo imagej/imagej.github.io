@@ -711,12 +711,6 @@ ImageJ has benefitted from many hackathons over the years:
       </td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
       <td>
         <p>2022 Sep 5 -<br>
         2022 Sep 9</p>
