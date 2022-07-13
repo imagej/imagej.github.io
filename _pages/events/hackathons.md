@@ -718,6 +718,27 @@ ImageJ has benefitted from many hackathons over the years:
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <td>
+        <p>2022 Sep 5 -<br>
+        2022 Sep 9</p>
+      </td>
+      <td>
+        <p>Prague, Czech Republic<br/>organized by<br/><a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
+      </td>
+      <td>
+        <p>{% include person-list ids='Ko Sugawara|tischi|tpietzsch|kozusznik|xulman' %}</p>
+      </td>
+      <td>
+        <p><a href="/software/fiji">Fiji</a>+<a href="https://ngff.openmicroscopy.org/latest/">OME-NGFF</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 {:/}
