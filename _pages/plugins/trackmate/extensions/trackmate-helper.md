@@ -1,7 +1,6 @@
 ---
 title: TrackMate-Helper
 categories: [Segmentation,Tracking,Benchmark]
-logo: /media/logos/trackmate-300p.png
 description: Userf-friendly parameter sweep with TrackMate with automatic benchmarks.
 artifact: sc.fiji:TrackMate
 ---

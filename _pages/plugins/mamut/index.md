@@ -4,7 +4,7 @@ project: /software/fiji
 description: MaMuT, the plugin to track and lineage cells in large, multi-view images.
 categories: [Tracking]
 artifact: sc.fiji:MaMuT
-logo: /media/icons/mamut.png
+icon: /media/icons/mamut.png
 doi: 10.7554/eLife.34410
 ---
 

@@ -2,7 +2,6 @@
 title: Scripting TrackMate
 description: Example Jython scripts for TrackMate.
 categories: [Tracking, Segmentation]
-logo: /media/logos/trackmate-300p.png
 project: /software/fiji
 ---
 

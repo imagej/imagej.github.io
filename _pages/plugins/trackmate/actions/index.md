@@ -1,7 +1,6 @@
 ---
 title: TrackMate actions
 categories: [Segmentation,Tracking]
-logo: /media/logos/trackmate-300p.png
 description: TrackMate actions
 artifact: sc.fiji:TrackMate
 ---

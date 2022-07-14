@@ -1,15 +1,25 @@
 ---
-title: Zellige tutorial
-project: /software/fiji
+title: Zellige
 description: Surface extraction tool
 categories: [Projection,Segmentation]
-logo: /media/logos/Zellige_logo.png
-artifact: zellige-core
-doi: https://doi.org/10.1101/2022.04.05.485876
+icon: /media/icons/zellige.png
+pom-url: https://gitlab.pasteur.fr/ida-public/zellige-core/-/raw/master/pom.xml
+doi: 10.1101/2022.04.05.485876
+source-url: https://gitlab.pasteur.fr/ida-public/zellige-core
+update-site: Zellige
 ---
 
+Zellige is a software tool allowing the automated extraction of a non-prescribed number of various surfaces from a 3D
+image acquired by fluorescence microscopy. The program is available through a Fiji plugin.
+
+## Publication
+
+{% include citation %}
+
+## Tutorial
+
 The Zellige plugin consists of a single window divided in 3 main parts for each step: selection, construction and projection.
-<br>As an example we use an acquisition of  [Drosophila pupal wing and abdomen](https://zenodo.org/record/6376566). Open the file in FIJI.
+<br>As an example we use an acquisition of  [Drosophila pupal wing and abdomen](https://zenodo.org/record/6376566). Open the file in Fiji.
 
 <!-- ![fullGui](/media/plugins/logos/zellige/full_gui.png){:width="900px"} -->
 {% include img
@@ -21,7 +31,7 @@ width='500'  %}
 <br>
 <li type = "square"><strong>Choose a file</strong></li>
 
-In the top left corner is a selection field that will display when clicked on all opened images in FIJI. You can then select the image that you want to process.
+In the top left corner is a selection field that will display when clicked on all opened images in Fiji. You can then select the image that you want to process.
 
 <!-- ![fileChooser](/media/plugins/zellige/file_chooser.png){:width="100px"} -->
 {% include img
@@ -158,8 +168,3 @@ The state of the program is displayed on the bottom of the application next to t
 <span style="color: navy"><i>With the provided set of parameters, Zellige will generate 6 surfaces including the 4 surfaces of interest.</i>
 </span>
 </ul>
-
-
-
-
-

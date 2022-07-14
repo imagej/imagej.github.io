@@ -1,7 +1,7 @@
 ---
 title: TrackMate-Ilastik
 categories: [Segmentation,Tracking,Machine Learning]
-logo: /media/icons/trackmate-ilastik.png
+icon: /media/icons/trackmate-ilastik.png
 ---
 
 # TrackMate-Ilastik.

@@ -1,9 +1,7 @@
 ---
 title: TrackMate
-project: /software/fiji
 description: TrackMate is your buddy for your everyday tracking.
 categories: [Segmentation,Tracking]
-logo: /media/logos/trackmate-300p.png
 artifact: sc.fiji:TrackMate
 doi: 10.1101/2021.09.03.458852
 ---

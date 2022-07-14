@@ -1,6 +1,6 @@
 ---
 title: SynActJ
-icon: /media/icons/synActJ_logo.png
+icon: /media/icons/synactj.png
 categories: [Uncategorized]
 ---
 

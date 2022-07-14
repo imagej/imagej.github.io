@@ -1,9 +1,7 @@
 ---
 title: Manual editing of tracks using TrackMate
-project: /software/fiji
 description: Manually correcting and editing existing tracks with TrackMate.
 categories: [Segmentation,Tracking]
-logo: /media/logos/trackmate-300p.png
 artifact: sc.fiji:TrackMate
 doi: 10.1101/2021.09.03.458852
 nav-links:

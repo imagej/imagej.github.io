@@ -2,7 +2,7 @@
 title: LimeSeg
 categories: [Segmentation]
 artifact: eu.kiaru:limeseg
-icon: /media/icons/limeseg-logo.png
+icon: /media/icons/limeseg.png
 doi: 10.1186/s12859-018-2471-0
 nav-links: true
 ---

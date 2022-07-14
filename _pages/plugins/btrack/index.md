@@ -1,6 +1,6 @@
 ---
 title: Tissue Branch Tracker
-logo: /media/logos/btrack-logo.png
+icon: /media/icons/btrack.png
 categories: [Tracking,Tissue,Skeleton]
 ---
 

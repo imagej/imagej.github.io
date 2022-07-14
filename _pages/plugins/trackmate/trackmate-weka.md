@@ -1,7 +1,7 @@
 ---
 title: TrackMate-Weka
 categories: [Segmentation,Tracking,Machine Learning]
-logo: /media/icons/trackmate-weka.png
+icon: /media/icons/trackmate-weka.png
 artifact: sc.fiji:TrackMate-Weka
 ---
 

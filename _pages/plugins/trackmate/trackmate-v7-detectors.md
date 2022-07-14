@@ -2,8 +2,6 @@
 title: TrackMate v7 detectors
 description: New TrackMate detectors that can return the shape of objects.
 categories: [Tracking, Segmentation]
-logo: /media/logos/trackmate-300p.png
-project: /software/fiji
 section: Detectors with segmentation capabilities.
 extensions: ["mathjax"]
 ---

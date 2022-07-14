@@ -3,7 +3,6 @@ title: Using TrackMate from MATLAB
 project: /software/matlab
 description: Using TrackMate from MATLAB.
 categories: [Segmentation,Tracking]
-logo: /media/logos/trackmate-300p.png
 doi: 10.1101/2021.09.03.458852
 ---
 

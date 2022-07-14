@@ -2,8 +2,6 @@
 title: Setting keys for TrackMate detectors and trackers
 description: Setting keys for TrackMate detectors and trackers.
 categories: [Tracking, Segmentation, Scripting]
-logo: /media/logos/trackmate-300p.png
-project: /software/fiji
 ---
 
 # Setting keys for TrackMate detectors and trackers.
@@ -260,9 +258,9 @@ The user is asked for a maximal allowed linking distance (entered in physical un
 2. If the spots are separated by more than the max allowed distance, the link is forbidden, and the cost is set to infinity. If not,
 
 3. For each feature in the map, a penalty p is calculated as
-
-   ​		`p = 3 × W × |f1−f2| / ( f1+f2 )`
-
+   ```
+   p = 3 × W × |f1−f2| / ( f1+f2 )
+	 ```
    where `W` is the weight associated to the feature in the map. This expression is such that:
 
    - there is no penalty if the 2 feature values `f1` and `f2` are the same;

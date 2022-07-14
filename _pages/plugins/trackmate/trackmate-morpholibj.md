@@ -1,7 +1,7 @@
 ---
 title: TrackMate-MorphoLibJ
 categories: [Segmentation,Tracking]
-logo: /media/icons/trackmate-morpholibj.png
+icon: /media/icons/trackmate-morpholibj.png
 ---
 
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on the [Morphological Segmentation](/plugins/morphological-segmentation) plugin shipped with the [MorphoLibJ](/plugins/morpholibj) library. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following).

@@ -2,8 +2,6 @@
 title: TrackMate-Thresholding-Detector
 description: TrackMate detector that creates objects by thresholding a grayscale image.
 categories: [Segmentation,Tracking]
-logo: /media/logos/trackmate-300p.png
-project: /software/fiji
 ---
 
 ## Usage.

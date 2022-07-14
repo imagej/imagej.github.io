@@ -2,7 +2,6 @@
 title: TrackMate FAQ
 description: Frequently asked questions about TrackMate.
 categories: [Tracking, Segmentation]
-logo: /media/logos/trackmate-300p.png
 project: /software/fiji
 ---
 

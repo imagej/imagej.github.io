@@ -1,9 +1,7 @@
 ---
 title: Manual tracking with TrackMate
-project: /software/fiji
 description: Tutorial on manual and semi-automated tracking with TrackMate.
 categories: [Segmentation,Tracking]
-logo: /media/logos/trackmate-300p.png
 artifact: sc.fiji:TrackMate
 doi: 10.1101/2021.09.03.458852
 nav-links:

@@ -1,6 +1,6 @@
 ---
 title: ModularImageAnalysis (MIA)
-logo: /media/icons/mia.png
+icon: /media/icons/mia.png
 categories: [Analysis, Automation, Scripting]
 doi: 10.5281/zenodo.1201320
 artifact: io.github.mianalysis:mia

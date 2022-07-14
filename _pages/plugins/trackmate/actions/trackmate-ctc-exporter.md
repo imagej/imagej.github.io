@@ -1,7 +1,6 @@
 ---
 title: Export tracking results in the cell tracking challenge format
 categories: [Segmentation,Tracking,Benchmark]
-logo: /media/logos/trackmate-300p.png
 description: Export a TrackMate results to the Cell-Tracking-Challenge file format
 artifact: sc.fiji:TrackMate
 ---

@@ -2,7 +2,7 @@
 title: BoneJ
 description: Plugins for bone image analysis in ImageJ 
 categories: [Analysis, Mathematical Morphology, Particle Analysis]
-logo: /media/icons/bonej.png
+icon: /media/icons/bonej.png
 artifact: org.bonej:bonej-plugins
 doi: 10.12688/wellcomeopenres.16619.2
 extensions: ["mathjax"]

@@ -1,7 +1,7 @@
 ---
 title: TrackMate-Cellpose
 categories: [Segmentation,Tracking,Deep Learning]
-logo: /media/icons/cellposelogo.png
+icon: /media/icons/cellpose.png
 description: cellpose integration in TrackMate.
 categories: [Segmentation,Tracking]
 artifact: sc.fiji:TrackMate-Cellpose

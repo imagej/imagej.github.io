@@ -1,13 +1,12 @@
 ---
 mediawiki: MicrotubuleTracker
 title: MicrotubuleTracker
-logo: /media/logos/mtrack.png
+name: MTrack
+icon: /media/icons/mtrack.png
 categories: [Tracking,Microtubules]
 ---
 
 {% include warning/mtrack-disambig %}
-
-<img src="/media/icons/mtrack.png" width="250"/> 
 
 MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules.
 
@@ -16,6 +15,7 @@ MTrack detects microtubule seeds, tracks the growing microtubule ends and create
 To make yourself familiar with MTrack, please go to the [Example section](#Example), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
 
 For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. 
+
 ## Installation
 
 1.  Click {% include bc path="Help | Update..." %}.

@@ -1,7 +1,7 @@
 ---
 title: TrackMate-StarDist
 categories: [Segmentation,Tracking,Machine Learning]
-logo: /media/icons/trackmate-stardist.png
+icon: /media/icons/trackmate-stardist.png
 ---
 
 # TrackMate-StarDist

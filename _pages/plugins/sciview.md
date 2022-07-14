@@ -2,7 +2,7 @@
 title: sciview
 categories: [3D, Visualization]
 artifact: sc.iview:sciview
-logo: /media/icons/sciview.png
+icon: /media/icons/sciview.png
 ---
 
 ## Purpose

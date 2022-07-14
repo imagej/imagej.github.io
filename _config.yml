@@ -181,6 +181,8 @@ defaults:
       type: pages
     values:
       icon: /media/icons/trackmate.png
+      project: /software/fiji
+      logo: /media/logos/trackmate-300p.png
   -
     scope:
       path: "_pages/plugins/modularimageanalysis"

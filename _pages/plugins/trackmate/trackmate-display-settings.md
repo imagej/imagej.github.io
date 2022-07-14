@@ -2,8 +2,6 @@
 title: TrackMate display settings
 description: How to configure the display of TrackMate
 categories: [Tracking, Segmentation]
-logo: /media/logos/trackmate-300p.png
-project: /software/fiji
 ---
 
 Starting with version 7, we entirely redesigned the display settings in [TrackMate](/plugins/trackmate/index).
