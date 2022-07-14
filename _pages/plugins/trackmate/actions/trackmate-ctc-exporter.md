@@ -9,7 +9,7 @@ artifact: sc.fiji:TrackMate
 
 The cell tracking challenge (CTC) aims to compare and evaluate cells and nuclei tracking methods objectively. To perform the evaluation, both segmentation and tracks predicted by a tracking algorithm are compared to manually annotated ground truth. Authors of the CTC developed several evaluation metrics to score the tracking quality and a tool to compute them. More information about the CTC is available on their [<span class="underline">website</span>](http://celltrackingchallenge.net/) and publication:
 
-> *Ulman, V., Maška, M., Magnusson, K. et al. An objective comparison of cell-tracking algorithms. Nat Methods 14, 1141--1152 (2017). https://doi.org/10.1038/nmeth.4473*
+{% include citation doi="10.1038/nmeth.4473" %}
 
 TrackMate now allows users to export their tracking session into the CTC format to compute evaluation metrics (see tutorial below). The TrackMate helper also uses the CTC metrics to identify the best possible tracking parameters to use; more information about the TrackMate helper is available here.
 

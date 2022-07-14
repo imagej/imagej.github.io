@@ -427,10 +427,10 @@ The particle linking algorithm would read as follow:
 
 ## References
 
-{% include citation fn=1 doi=10.1023/B:VISI.0000029664.99615.94 %}
+{% include citation fn=1 doi="10.1023/B:VISI.0000029664.99615.94" %}
 
-{% include citation fn=2 doi=10.1038/nmeth.1237 %}
+{% include citation fn=2 doi="10.1038/nmeth.1237" %}
 
 [^3]: J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March
 
-{% include citation fn=4 doi=10.1006/jcis.1996.0217 %}
+{% include citation fn=4 doi="10.1006/jcis.1996.0217" %}

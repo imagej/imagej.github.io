@@ -381,9 +381,11 @@ The dataset onctains the raw data but also the intermediate label images in case
 
 ## Citations
 
-If you use this detector for you research, please be so kind as to cite the StarDist and the TrackMate papers:
+If you use this detector for your research, please be so kind as to cite the StarDist and the TrackMate papers:
 
-{% include citation doi='10.1007/978-3-030-00934-2_30'%}
+{% include citation id='plugins/stardist' %}
+
+{% include citation id='plugins/trackmate' %}
 
 _________________________________
 

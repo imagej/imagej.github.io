@@ -14,7 +14,7 @@ Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in
 
 ## TrackMate v2.7.x series accuracy against the ISBI dataset
 
-From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We though it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](/software/icy) offered the website to host the challenge data, and it is still available today[^3] for download.
+From v2.7.x, TrackMate ships a new tracker that can deal specifically with linear motion. We thought it was the right time to re-run the accuracy assessment with the ISBI challenge data. The people behind [Icy](/software/icy) offered the website to host the challenge data, and it is still available today for download.
 
 The figures below shows the comparison of accuracy for the 3 classes of tracking algorithms available in TrackMate:
 

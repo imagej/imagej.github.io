@@ -2,6 +2,7 @@
 mediawiki: StarDist
 title: StarDist
 categories: [Machine Learning, Segmentation]
+doi: 10.1007/978-3-030-00934-2_30
 ---
 
 
@@ -120,10 +121,8 @@ Please have a look at the [Fiji/Jython script batch-processing example](https://
 
 Please cite the paper if you are using the plugin in your research:
 
--   Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [Cell Detection with Star-convex Polygons](https://arxiv.org/abs/1806.03535). International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Granada, Spain, September 2018.
+{% include citation %}
 
 ## References
-
-  
 
 [1] Caicedo et al., Nature Methods, 2019
