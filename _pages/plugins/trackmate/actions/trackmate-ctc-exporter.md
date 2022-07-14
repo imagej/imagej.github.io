@@ -5,7 +5,7 @@ description: Export a TrackMate results to the Cell-Tracking-Challenge file form
 artifact: sc.fiji:TrackMate
 ---
 
-# Export tracking results in the cell tracking challenge format.
+# Export tracking results in the cell tracking challenge format
 
 The cell tracking challenge (CTC) aims to compare and evaluate cells and nuclei tracking methods objectively. To perform the evaluation, both segmentation and tracks predicted by a tracking algorithm are compared to manually annotated ground truth. Authors of the CTC developed several evaluation metrics to score the tracking quality and a tool to compute them. More information about the CTC is available on their [<span class="underline">website</span>](http://celltrackingchallenge.net/) and publication:
 
@@ -13,7 +13,7 @@ The cell tracking challenge (CTC) aims to compare and evaluate cells and nuclei 
 
 TrackMate now allows users to export their tracking session into the CTC format to compute evaluation metrics (see tutorial below). The TrackMate helper also uses the CTC metrics to identify the best possible tracking parameters to use; more information about the TrackMate helper is available here.
 
-## Limitations.
+## Limitations
 
 NOTE! There are some incompatibilities between CTC and TrackMate file format. Usually, they appear for problematic tracking results. They are due to the fact that TrackMate and the CTC format represents tracking results in a different manner: In TrackMate, objects are represented by an overlay of polygons and in the CTC format, objects are represented by label images, pixel by pixel. This led to some incompatibilities between the two in some marginal cases:
 

@@ -22,7 +22,7 @@ A second example is the Script Editor (result of Google Summer of Code 2009) whi
 
 The Google Summer of Code program captures the attention of students worldwide, facilitating the discovery of ideal students for our open source software project. We hope that we'll entice great students beyond their contribution this Summer and perhaps recruit them later for further development of scientific image processing applications.
 
-## Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation
+## Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation.
 
 In 2009, we crafted and submitted an application for Fiji as a hosting institution, which was awarded 3 student positions. Two of these students went on to develop two key components of Fiji: the Fiji Updater and the Script Editor. The third student abandoned soon after starting, but his project was partially completed by the mentor (support for [MATLAB](/scripting/matlab) scripts). The two successful projects greatly improved Fiji.
 

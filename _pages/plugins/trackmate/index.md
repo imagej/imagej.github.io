@@ -297,7 +297,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 
 -   [Find maxima detector](/plugins/trackmate/find-maxima-detector) from Thorsten Wagner.
 
-### Interoperability with Python.
+### Interoperability with Python
 
 There are several Python tools contributed by the TrackMate developer community that allows importing TrackMate results in Python and performing track analysis with the libraries of this language. Among them:
 

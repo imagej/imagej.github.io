@@ -4,7 +4,7 @@ title: 2016-03-31 - TrackMate v3.1.0 released
 
 We just release the version 3.1.0 of [TrackMate](/plugins/trackmate), a Fiji plugin for single-particle tracking. We also mention here the changes of version 3.0.1, which did not get a news item.
 
-## Improvements.
+## Improvements
 
 -   Add an action that export all visible spots statistics, regardless of whether they belong in a track or not.
 
@@ -28,7 +28,7 @@ This track display mode only shows the content of the current selection, for spo
 
 -   TrackMate is now more verbose when doing manual editing.
 
-## Changes.
+## Changes
 
 -   We really do not relaunch TrackScheme automatically when loading a TrackMate file.
 

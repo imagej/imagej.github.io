@@ -15,13 +15,13 @@ The computer used for these tests is the following:
 * Memory  24 GB 1333 MHz DDR3 ECC
 * Software  Mac OS X Lion 10.7.5 (11G63)
 
-## Time of execution.
+## Time of execution
 
 The tests reported here were run on an Apple Mac Pro, 2 x 2.66 GHz 6-Core Intel Xeon, 24 Go 1333 MHz DDR3, running Mac OS X v10.7.5, with Java 1.6. The detectors instantiated were tamed to use only 1 thread. Unless indicated, the median filter and the sub-pixel localization were not done.
 
-### The DoG & LoG detectors.
+### The DoG & LoG detectors
 
-#### Processing time for a 2D image as a function of its size.
+#### Processing time for a 2D image as a function of its size
 
 For a *uint16* image, varying its size, containing 200 gaussian spots of radius 3 (everything is in pixel units).
 
@@ -43,7 +43,7 @@ The LoG detector operates in Fourier space, and because of the Fourier transform
 
 <img src="/media/plugins/trackmate/trackmate-dogandlogtimevspixels.png" width="400"/>
 
-#### Processing time for a 3D image as a function of its size.
+#### Processing time for a 3D image as a function of its size
 
 | N (pixels) | Image size  | DoG detector time (ms) | LoG detector time (ms) |
 |:-----------|-------------|------------------------|------------------------|
@@ -60,7 +60,7 @@ Interestingly, the LoG detector seems to become the slowest at intermediate size
 
 <img src="/media/plugins/trackmate/trackmate-dogandlogtimevspixels3d.png" width="400"/>
 
-#### Processing time for a 2D image as a function of the spot radius.
+#### Processing time for a 2D image as a function of the spot radius
 
 We used a 1024x1024 *uint16* image, with 200 gaussian spots, the size of which we varied. The detector was tuned to this radius.
 
@@ -70,7 +70,7 @@ We find that for the DoG detector, the processing time to increase linearly with
 
 The LoG detector shows a near-constant processing time, which makes it desirable for spots larger than 2 pixels in radius. This is due to the way we compute the convolution which is explained below.
 
-#### Processing time for a 3D image as a function of the spot radius.
+#### Processing time for a 3D image as a function of the spot radius
 
 This time we used a 256x256x256 3D image, but with otherwise the same parameters.
 

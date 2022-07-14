@@ -8,7 +8,7 @@ Starting with version 7, we entirely redesigned the display settings in [TrackMa
 You can now tune how track are displayed in with many more parameters. 
 Jan Eglinger initially made a config option that allowed changing the lookup table (LUT) for coloring in TrackMate. We built upon this to extend it by adapting a pattern used for  [Mastodon](/plugins/mastodon/index) settings
 
-## The display settings panel.
+## The display settings panel
 
 In the config view panel of the UI, there is now a button that toggles the visibility of the display settings panel. 
 
@@ -25,7 +25,7 @@ The meaning of this parameters is summarized below:
 {% include img src='trackmate-display-settings-4.png'  %}
 
 
-## Configuring the default display settings.
+## Configuring the default display settings
 
 You can change what display settings are used by default in new Tracking sessions.
 There is an extra plugin in Fiji in {% include bc path="Edit | Options | Configure TrackMate display settings..." %} that shows the same configuration panel.
@@ -51,7 +51,7 @@ etc.
 ➜  ~ 
 ```
 
-## Settings are saved with the data.
+## Settings are saved with the data
 
 When you save a TrackMate session to XML, the save file will include the display settings you configured. 
 When you will reload the data, the display settings will also be loaded and used.

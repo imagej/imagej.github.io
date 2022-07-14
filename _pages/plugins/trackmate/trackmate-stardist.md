@@ -4,11 +4,9 @@ categories: [Segmentation,Tracking,Machine Learning]
 icon: /media/icons/trackmate-stardist.png
 ---
 
-# TrackMate-StarDist
-
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [StarDist](/plugins/stardist) to segment objects in 2D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following).
 
-## Installation.
+## Installation
 
 You need to subscribe to the **CSBDeep** update site and to the **StarDist** update site first, then to the **TrackMate-StarDist** update site:
 
@@ -24,7 +22,7 @@ And finally the TrackMate-StarDist update site.
 Once you have them all, please restart Fiji.
 We suggest that you test StarDist by itself just to make sure it runs after installation. This way we can better find what is wrong in case it does not work. Follow for instance the instructions on the [StarDist](/plugins/stardist) page.
 
-## Usage and tutorial.
+## Usage and tutorial
 
 TrackMate-StarDist ships two detectors that will appear in TrackMate. After installing TrackMate-StarDist and restarting Fiji, these two detectors will be integrated in TrackMate in a transparent manner. We describe how to use them in the four tutorial below.
 They describe in order:
@@ -33,7 +31,7 @@ They describe in order:
 3. Using TrackMate-StarDist with a custom Deep-Learning model.
 4. Using TrackMate-StarDist to segment a 3D image using a slice-by-slice approach.
 
-### StarDist detector with builtin versatile nuclei model on a single channel image.
+### StarDist detector with builtin versatile nuclei model on a single channel image
 
 The StarDist plugin comes with a very efficient model that can segment nuclei imaged in fluorescence in 2D, generated from the dataset in the Kaggle challenge of 2018:
 
@@ -78,7 +76,7 @@ Using the default tracker and default parameters each time we get this result:
 It was simple and fast, which means that careful inspection for missed cell divisions and false links is on order.
 
 
-### ERK signalling and motility assay with a multi-channel image.
+### ERK signalling and motility assay with a multi-channel image
 
 In this part of the tutorial we will correlate the translocation of an ERK reported in the nuclei with cell motility. We will use images from a cell migration assay, where cells are expressing an ERK reported in the first channel, and are stained for their nuclei in the second channel. The analysis will consist in segmenting and tracking the cells in the nuclei channel and analyzing intensities in the ERK channel. In a second part we will investigate whether the instantaneous speed correlates with the ERK signal in the nuclei.
 
@@ -86,7 +84,7 @@ You can find the source image and additional files on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5205955.svg)](https://doi.org/10.5281/zenodo.5205955)
 
-#### Tracking with TrackMate.
+#### Tracking with TrackMate
 
 Step by step:
 
@@ -142,7 +140,7 @@ TrackMate will generate a video of the experiment.
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-erk-tutorial-7.gif" width='400' align="center" %}
 
 
-#### Track analysis with MATLAB.
+#### Track analysis with MATLAB
 
 The zip file of the dataset contains the 2 CSV files generated from the first paty above, and a MATLAB script that reads them and investigate whether the speed correlates with ERK intensity.
 We outline the script here.
@@ -287,9 +285,7 @@ P-value for the correlation: 0.56
 Maybe we need to filter out some spots with low speed, or investigate tracks as a whole.
 But this is left as an exercise to the reader.
 
-
-
-### Tracking T-cells imaged in bright-field with a custom model in the StarDist detector.
+### Tracking T-cells imaged in bright-field with a custom model in the StarDist detector
 
 You can also use a custom model, that you have trained yourself and packaged as a zip file.
 We recommend using the dedicated notebooks on the _ZeroCostDL4Mic_ platform to do so. Check the [ZCDL4M wiki page dedicated to training StarDist](https://github.com/HenriquesLab/ZeroCostDL4Mic/wiki/Stardist) to generate such a model.
@@ -319,8 +315,7 @@ Launch TrackMate. In the second panel titled **Select a detector**, choose **Sta
   
   {% include img name="Tracking result" src="/media/plugins/trackmate/trackmate-stardist-custom-tracking-result.gif" width="800" align="center" %}
 
-
-### Generation of 3D labels by tracking 2D labels using TrackMate.
+### Generation of 3D labels by tracking 2D labels using TrackMate
 
 In this tutorial, you will learn how to generate 3D labels using TrackMate.
 The segmentation of 3D objects can be very hard. 
@@ -384,9 +379,7 @@ The dataset onctains the raw data but also the intermediate label images in case
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-8.png" width='250' align="center" %}
 
-
-
-## Citations.
+## Citations
 
 If you use this detector for you research, please be so kind as to cite the StarDist and the TrackMate papers:
 

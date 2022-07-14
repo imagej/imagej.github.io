@@ -10,17 +10,17 @@ doi: 10.7554/eLife.34410
 
 *A Fiji plugin for the annotation of massive, multi-view data.*
 
-## Installation.
+## Installation
 
 Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) in the [Fiji updater](/plugins/updater) to get MaMuT.
 
 
 
-## Publication.
+## Publication
 
 {% include citation doi='10.7554/eLife.34410'%}
 
-## Presentation.
+## Presentation
 
 MaMuT is an end user plugin that combines the [BigDataViewer](/plugins/bdv) and [TrackMate](/plugins/trackmate) to provide an application that allow browsing, annotating and curating annotations for large image data.
 
@@ -38,7 +38,7 @@ However, MaMuT itself does not ship any fully-automated or tracking algorithm. I
 
 ![](/media/plugins/mamut/mamut-largeannotationsquickly.png)
 
-## User documentation.
+## User documentation
 
 The following pages are tutorials that will guide you through MaMuT and walk you though its features.
 

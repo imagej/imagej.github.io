@@ -4,11 +4,11 @@ description: TrackMate detector that creates objects by thresholding a grayscale
 categories: [Segmentation,Tracking]
 ---
 
-## Usage.
+## Usage
 
 This page describes a detector for [TrackMate](/plugins/trackmate/index) that creates objects from a grayscale image (it can be one channel in a multi-channel image). You have to specify a threshold value to segment the objects.
 
-## Step-by-step tutorial.
+## Step-by-step tutorial
 
 Download the tutorial dataset from Zenodo:
 

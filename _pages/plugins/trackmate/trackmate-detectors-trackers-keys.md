@@ -4,11 +4,9 @@ description: Setting keys for TrackMate detectors and trackers.
 categories: [Tracking, Segmentation, Scripting]
 ---
 
-# Setting keys for TrackMate detectors and trackers.
-
 The detectors and trackers in TrackMate are configured via a set of key and values. In the GUI, TrackMate takes care of presenting to the user only the settings relevant to the chosen detector or tracker, but in scripts or other program, they must be known. This document lists all the parameters of all the current known detectors and trackers in TrackMate and shows how to configure them in your scripts and programs.
 
-## Configuring a detector and a tracker.
+## Configuring a detector and a tracker
 
 First a word of how to specify what detector / tracker to use, and how to configure them programmatically. 
 
@@ -33,7 +31,7 @@ print( 'Done.' )
 
 We restrict ourselves here in showing how to configure the detector and tracker in the `Settings` object.
 
-### The detector factory.
+### The detector factory
 
 The detector to use is determined by setting the field `Settings.detectorFactory`. The value to enter must be a `SpotDetectorFactoryBase`. For instance like this (in Python):
 
@@ -43,7 +41,7 @@ settings.detectorFactory = LogDetectorFactory()
 
 As of today (February 2022), the following spot detectors are known:
 
-#### Built-in detectors.
+#### Built-in detectors
 
 They are all found in the `fiji.plugin.trackmate.detection` package.
 
@@ -54,7 +52,7 @@ They are all found in the `fiji.plugin.trackmate.detection` package.
 5. `LabeImageDetectorFactory`
 6. `ManualDetectorFactory`
 
-#### Detectors in extensions.
+#### Detectors in extensions
 
 7. `CellposeDetectorFactory`, in the `fiji.plugin.trackmate.cellpose` package, requires the `TrackMate-Cellpose` extension.
 8. `IlastikDetectorFactory`, in the `fiji.plugin.trackmate.ilastik` package, requires the `TrackMate-Ilastik` extension.
@@ -63,7 +61,7 @@ They are all found in the `fiji.plugin.trackmate.detection` package.
 10. `StarDistCustomDetectorFactory`, as above.
 11. `WekaDetectorFactory`, in the `fiji.plugin.trackmate.weka` package, requires the `TrackMate-Weka` extension.
 
-### The tracker factory.
+### The tracker factory
 
 The tracker to use is determined by setting the field `Settings.trackerFactory`. The value to enter must be a `SpotTrackerFactory`. For instance like this (in Python):
 
@@ -80,7 +78,7 @@ As of today (February 2022), the following spot trackers are known:
 5. `NearestNeighborTrackerFactory` in the `fiji.plugin.trackmate.tracking.kdtree` package.
 6. `ManualTrackerFactory` in the `fiji.plugin.trackmate.tracking` package.
 
-### The settings map or dict.
+### The settings map or dict
 
 Once you picked a detector factory and a tracker factory, you must input their settings using a `Map<String Object>` in Java, or a `dict` in Python.  In what follows we suppose we are using a Python script to run TrackMate and will use the syntax of its language.
 
@@ -99,9 +97,9 @@ settings.detectorSettings = {
 
 We need to know for each detector and tracker exactly what are the keys they support and what is the type of values they expect. This is the goal of this document.
 
-## Key / value definition for the detectors.
+## Key / value definition for the detectors
 
-### LoG and DoG detector (`LogDetectorFactory` and `DogDetectorFactory`).
+### LoG and DoG detector (`LogDetectorFactory` and `DogDetectorFactory`)
 
 These two detectors use a different implementation but relies on the same key / valeus for their settings
 
@@ -113,14 +111,14 @@ These two detectors use a different implementation but relies on the same key / 
 | `DO_SUBPIXEL_LOCALIZATION` | `boolean`        | If `True` the spot position will be refined with sub-pixel accuracy (quadratic fitting scheme). |
 | `DO_MEDIAN_FILTERING`      | `boolean`        | If `True` the input will be processed by a 2D 3x3 median before detection. |
 
-### The mask detector (`MaskDetectorFactory`).
+### The mask detector (`MaskDetectorFactory`)
 
 | Key                 | Value Type     | Description                                                  |
 | ------------------- | -------------- | ------------------------------------------------------------ |
 | `TARGET_CHANNEL`    | positive `int` | In what channel is the mask, 1-based (1 is the first channel). |
 | `SIMPLIFY_CONTOURS` | `boolean`      | If `True` the 2D contours detected will be simplified. If `False`, they will follow exactly the pixel borders. |
 
-### The threshold detector (`ThresholdDetectorFactory`).
+### The threshold detector (`ThresholdDetectorFactory`)
 
 | Key                   | Value Type     | Description                                                  |
 | --------------------- | -------------- | ------------------------------------------------------------ |
@@ -128,7 +126,7 @@ These two detectors use a different implementation but relies on the same key / 
 | `SIMPLIFY_CONTOURS`   | `boolean`      | If `True` the 2D contours detected will be simplified. If `False`, they will follow exactly the pixel borders. |
 | `INTENSITY_THRESHOLD` | `float`        | The threshold on pixel value to use for segmentation.        |
 
-### The label image detector (`LabeImageDetectorFactory`).
+### The label image detector (`LabeImageDetectorFactory`)
 
 Careful, there is a typo in the factory name, and a 'l' is missing.
 
@@ -137,7 +135,7 @@ Careful, there is a typo in the factory name, and a 'l' is missing.
 | `TARGET_CHANNEL`    | positive `int` | In what channel are the labels, 1-based (1 is the first channel). |
 | `SIMPLIFY_CONTOURS` | `boolean`      | If `True` the 2D contours detected will be simplified. If `False`, they will follow exactly the pixel borders. |
 
-### The manual detector factory (`ManualDetectorFactory`).
+### The manual detector factory (`ManualDetectorFactory`)
 
 Using this detector will result in the automatic detection step to be skipped.
 
@@ -145,7 +143,7 @@ Using this detector will result in the automatic detection step to be skipped.
 | -------- | ---------------- | ------------------------------------------------------------ |
 | `RADIUS` | positive `float` | The default radius to use when creating objects, in physical units ( μm if the pixel size is in  μm). |
 
-### The cellpose detector (`CellposeDetectorFactory`).
+### The cellpose detector (`CellposeDetectorFactory`)
 
 | Key                        | Value Type                                                   | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -159,7 +157,7 @@ Using this detector will result in the automatic detection step to be skipped.
 | `SIMPLIFY_CONTOURS`        | `boolean`                                                    | If `True` the 2D contours detected will be simplified. If `False`, they will follow exactly the pixel borders. |
 
 
-### The ilastik detector (`IlastikDetectorFactory`).
+### The ilastik detector (`IlastikDetectorFactory`)
 
 | Key                   | Value Type               | Description                                                  |
 | --------------------- | ------------------------ | ------------------------------------------------------------ |
@@ -177,13 +175,13 @@ Using this detector will result in the automatic detection step to be skipped.
 | `CONNECTIVITY`      | Either the `int` `6` (for 'straight' connectivity) or `26` (for 'diagonal' connectivity). | The connectivity to use when using the watershed algorithm.  |
 | `SIMPLIFY_CONTOURS` | `boolean`                                                    | If `True` the 2D contours detected will be simplified. If `False`, they will follow exactly the pixel borders. |
 
-### The StarDist detector with built-in nuclei model (`StarDistDetectorFactory`).
+### The StarDist detector with built-in nuclei model (`StarDistDetectorFactory`)
 
 | Key              | Value Type     | Description                                                  |
 | ---------------- | -------------- | ------------------------------------------------------------ |
 | `TARGET_CHANNEL` | positive `int` | In what channel are the nuclei, 1-based (1 is the first channel). |
 
-### The StarDist detector with custom model  (`StarDistCustomDetectorFactory`).
+### The StarDist detector with custom model  (`StarDistCustomDetectorFactory`)
 
 | Key                 | Value Type               | Description                                                  |
 | ------------------- | ------------------------ | ------------------------------------------------------------ |
@@ -192,7 +190,7 @@ Using this detector will result in the automatic detection step to be skipped.
 | `SCORE_THRESHOLD`   | `float` between 0 and 1. | Threshold on object detection. Higher values lead to fewer segmented objects, but will likely avoid false positives. |
 | `OVERLAP_THRESHOLD` | `float` between 0 and 1. | Threshold on object separation. Higher values allow segmented objects to overlap substantially. |
 
-### The Weka detector (`WekaDetectorFactory`).
+### The Weka detector (`WekaDetectorFactory`)
 
 | Key                   | Value Type               | Description                                                  |
 | --------------------- | ------------------------ | ------------------------------------------------------------ |
@@ -201,9 +199,9 @@ Using this detector will result in the automatic detection step to be skipped.
 | `CLASS_INDEX`         | `int`, 0-based.          | The index of the class specified in the Weka model to get the probability map for. |
 | `PROBA_THRESHOLD`     | `float` between 0 and 1. | The threshold on the probability map output by Weka.         |
 
-## Key / value definition for the trackers.
+## Key / value definition for the trackers
 
-### The simple LAP tracker (`SimpleSparseLAPTrackerFactory`).
+### The simple LAP tracker (`SimpleSparseLAPTrackerFactory`)
 
 This stripped-down implementation of the LAP tracker from *Jaqaman et al, 2008* has many parameters that are described in the next paragraph. For the purpose of this simplified version, it is best to start from the default settings returned by:
 
@@ -219,7 +217,7 @@ and edit the 3 following important parameters:
 | `MAX_FRAME_GAP`            | positive `int`   | Gap-closing time-distance. The max difference in time-points between two spots to allow for linking. For instance a value of `2` means that the tracker will be able to make a link between a spot in frame `t ` and a successor spots in frame `t+2`, effectively bridging over one missed detection in one frame. |
 | `GAP_CLOSING_MAX_DISTANCE` | positive `float` | Gap-closing max spatial distance. The max distance between two spots, in physical units, allowed for creating links over missing detections. |
 
-### The LAP tracker (`SparseLAPTrackerFactory`).
+### The LAP tracker (`SparseLAPTrackerFactory`)
 
 This tracker is fully configurable with many parameters and feature weights.  All parameters are described in the table below. However for practical usage it is best  to start from the default settings returned by:
 
@@ -247,7 +245,7 @@ and edit the parameters that needs to change. For details on their meaning, plea
 | `CUTOFF_PERCENTILE`               | positive `float` from 0 to 1.       | Cutoff percentile                                            |
 | `BLOCKING_VALUE`                  | positive `float`                    | Blocking value: cost for mon-physical, forbidden links. Default value is `Infinity`. |
 
-#### The feature penalty map.
+#### The feature penalty map
 
 Feature penalties are a way to alter individual linking cost by using the numerical features computed for all spots. We repeat here how individual costs they are calculated for this tracker.
 
@@ -308,7 +306,7 @@ You must use the **keys** of the features, not their name. Here is the table of 
 | `QUALITY`                                           | The spot detection quality                          |
 | `RADIUS`                                            | The spot radius                                     |
 
-### The Kalman tracker (`KalmanTrackerFactory`).
+### The Kalman tracker (`KalmanTrackerFactory`)
 
 | Key                    | Value Type       | Description                                                  |
 | ---------------------- | ---------------- | ------------------------------------------------------------ |
@@ -316,7 +314,7 @@ You must use the **keys** of the features, not their name. Here is the table of 
 | `KALMAN_SEARCH_RADIUS` | positive `float` | The max search radius specifying how far from a predicted position the tracker should look  for candidate spots. |
 | `MAX_FRAME_GAP`        | positive `int`   | The max difference in time-points between two spots to allow for linking. For instance a value of `2` means that the tracker will be able to make a link between a spot in frame `t ` and a successor spots in frame `t+2`, effectively bridging over one missed detection in one frame. |
 
-### The overlap tracker (`OverlapTrackerFactory`).
+### The overlap tracker (`OverlapTrackerFactory`)
 
 | Key               | Value Type                           | Description                                                  |
 | ----------------- | ------------------------------------ | ------------------------------------------------------------ |
@@ -324,7 +322,7 @@ You must use the **keys** of the features, not their name. Here is the table of 
 | `MIN_IOU`         | positive `float`                     | Minimal IoU below which links are not created.               |
 | `IOU_CALCULATION` | `string`, either `FAST` or `PRECISE` | What method to use for IoU calculation.                      |
 
-### The nearest-neighbor tracker (`NearestNeighborTrackerFactory`).
+### The nearest-neighbor tracker (`NearestNeighborTrackerFactory`)
 
 | Key                    | Value Type       | Description                                                  |
 | ---------------------- | ---------------- | ------------------------------------------------------------ |

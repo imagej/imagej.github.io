@@ -19,7 +19,7 @@ nav-links:
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
 
-## Introduction.
+## Introduction
 
 Actions were my crude solution to the problem of adding random features to [TrackMate](/plugins/trackmate) without having to change the GUI too much. Adding buttons or dialogs or extra panels is cumbersome and I thought it would complexify the GUI, which is meant to be simple. A TrackMate action is a lazy workaround for this problem. You must keep in mind that is a placeholder for random feature ideas, and provided a quick and dirty way to test them.
 
@@ -27,11 +27,11 @@ A TrackMate action takes the shape of an item in a drop-down list in the last pa
 
 In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](/plugins/trackmate/custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](/libs/scijava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface
 
 Again, the action behavior and its integration in TrackMate are split in two classes. The behavior is described by the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface. The integration mechanism is controlled by the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface, which extends the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface.
 
-### [SciJava](/libs/scijava) parameters recap.
+### [SciJava](/libs/scijava) parameters recap
 
 There is not much to say about the factory itself. It is the class that must be annotated with
 
@@ -45,7 +45,7 @@ All the SciJava annotation parameters apply, and they have the following meaning
 -   The `visible = true/false` parameter determines whether the action is listed in the action panel. If false, the action factory is instantiated but the corresponding action will not be listed in the panel, preventing any use.
 -   The `priority = double` parameter is used here just to determine the order in which the action items appear in the list. High priorities are listed last.
 
-### Action factory methods.
+### Action factory methods
 
 As of [TrackMate](/plugins/trackmate) version 7 (August 2021), actions are the only TrackMate modules that use the `getIcon()` method. The icon is then displayed in the action list, next to the action name. That's it for the `TrackMateModule` part.
 
@@ -116,7 +116,7 @@ public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
 ```
 Nothing complicated.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateAction.java' label='TrackMateAction' %} interface
 
 This interface is just made of two methods:
 
@@ -172,7 +172,7 @@ public class LaunchEventLoggerAction implements TrackMateAction
 }
 ```
 
-## Wrapping up.
+## Wrapping up
 
 And here are the results:
 

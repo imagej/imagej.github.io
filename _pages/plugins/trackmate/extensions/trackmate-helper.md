@@ -130,7 +130,7 @@ These CSV files are parsed and processed automatically by the Helper. The parame
 
 4.  If you would like to apply the best possible tracking parameters for your tracking data, you can select one row and from the right top of the button Launch TrackMate with the parameters currently selected.
 
-## The CTC Metrics.
+## The CTC Metrics
 
 | Metric                                  | Signification                                                | Range                     |
 | --------------------------------------- | ------------------------------------------------------------ | ------------------------- |

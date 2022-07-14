@@ -6,7 +6,7 @@ categories: [Segmentation,Tracking]
 
 This page describes a detector for [TrackMate](/plugins/trackmate/index) that creates objects from a black and white channel in the source image. You can add the mask as an extra channel in the source image. The objects will be built based on all the pixels have a value strictly larger than 0, which solves the issue of having a mask on 8-bit, 16-bit or 32-bit images.
 
-## Usage.
+## Usage
 
 There is not much to say. You need to prepare a mask for the source image you want to track using any means that work. 
 
@@ -14,9 +14,9 @@ For 2D images, TrackMate will obtain the contour of objects, possibly simplified
 
 It is a good idea to merge this mask as an extra channel of the source image, so that you can have both the mask and the source image in TrackMate. This allows measuring  numerical features on the source image based on the contours obtained with the mask.
 
-## Tutorial: *C.elegans* early development.
+## Tutorial: *C.elegans* early development
 
-### The dataset.
+### The dataset
 
 We will use a simple and short image of a *C.elegans* embryo. You can download the data on Zenodo:
 
@@ -29,7 +29,7 @@ This movie is a maximum-intensity projection (MIP) of a longer movie used initia
 
 This is very short movie, that stops after the 2nd cell division. We made a MIP so that this movie can be used in this tutorial.
 
-### The image.
+### The image
 
 Open the image `CelegansEarly_MIP.tif` in Fiji. 
 
@@ -43,7 +43,7 @@ The 2nd channel contains the segmentation results of this signal, that I obtaine
 
 {% include img src='/media/plugins/trackmate/trackmate-mask-tutorial-1.png' align='center' %}
 
-### Running TrackMate.
+### Running TrackMate
 
 Launch TrackMate: {% include bc path='Plugins>Tracking>TrackMate' %}
 
@@ -69,7 +69,7 @@ The click the `Next` button. In total 78 spots are found in this movie. You can 
 
 Notice that we have false divisions due to the motile polar body, that gets wrongly attached to the top cell movie. We could correct this either manually, or by filtering out the polar bodies based on their `Area`. We leave this correction as an exercise to the reader.
 
-### Plotting nucleus shape over time.
+### Plotting nucleus shape over time
 
 Now that we have the cell shape and their lineage, we can follow how the shape changes as the cell divides. For instance, let's plot the nucleus size and circularity of the bottom cell over time.
 
@@ -95,7 +95,7 @@ As a side note, if you right-click on any of the 2 plots, you will have this pop
 
 {% include img src='/media/plugins/trackmate/trackmate-mask-tutorial-8.png' width='400'  align='center'%}
 
-### Editing the mask.
+### Editing the mask
 
 If we repeat the above procedure for the top cell, we have the following graphs:
 
@@ -129,7 +129,7 @@ Right now, this is the only way to edit the spot contour in TrackMate. Which mea
 
 {% include person id='tinevez' %}  July 2021
 
-## Tutorial: Cancer cells migration.
+## Tutorial: Cancer cells migration
 
 Get the tutorial dataset from Zenodo:
 

@@ -6,7 +6,7 @@ icon: /media/icons/trackmate-morpholibj.png
 
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on the [Morphological Segmentation](/plugins/morphological-segmentation) plugin shipped with the [MorphoLibJ](/plugins/morpholibj) library. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following).
 
-## Installation.
+## Installation
 
 We need to subscribe to both the MorphoLibJ library and the TrackMate-MorphoLibJ update sites.
 
@@ -17,7 +17,7 @@ Relaunch Fiji. A new item should appear in the list of detectors in the 2nd pane
 
 {% include img src="/media/plugins/trackmate/trackmate-morpholibj-tutorial-1.png" align="center" width='400' %}
 
-## Usage.
+## Usage
 
 This detector module literally implements the  [Morphological Segmentation](/plugins/morphological-segmentation) plugin.
 It will therefore have the same strengths and limitations. 
@@ -27,7 +27,7 @@ For instance cells stained for their membranes.
 The best documentation for this segmentation tool  is found on its dedicated page, but we will repeat the description of the key parameters in the tutorial below.
 One of the key advantage compared to using directly the plugin is that the TrackMate module version will properly process timelapses, while the core plugin treats everything as a Z-stack.
 
-## Tutorial. Tracking cells in Xenopus tissue.
+## Tutorial: tracking cells in Xenopus tissue
 
 Download the tutorial dataset from Zenodo. 
 

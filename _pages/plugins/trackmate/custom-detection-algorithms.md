@@ -19,7 +19,7 @@ nav-links:
   url: /plugins/trackmate/custom-particle-linking-algorithms
 ---
 
-## Introduction.
+## Introduction
 
 Welcome to the most useful and also unfortunately the hardest part in this tutorial series on how to extend [TrackMate](/plugins/trackmate) with custom modules.
 
@@ -37,9 +37,9 @@ We did not have to care when implementing a [custom action](/plugins/trackmate/c
 
 Let's get started with the easiest part, the detection algorithm.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface
 
-### A detector instance operates on a single frame.
+### A detector instance operates on a single frame
 
 The detection part itself is implemented in a class that implements the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface. Browsing there, you will see that it is just a specialization of an output algorithm from [ImgLib2](/libs/imglib2). We are required to spit out a `List<Spot>` that represents the list of detection (one `Spot` per detection) for a **single frame**.
 
@@ -47,7 +47,7 @@ This is important: <u>an instance of your detector is supposed to work on a sing
 
 It is the work of the detector factory to provide each instance with the data required to segment a specific frame. But we will see how this is done below.
 
-### A SpotDetector *can be* {% include github org='imglib' repo='imglib2-algorithm' branch='master' source='net/imglib2/algorithm/MultiThreaded.java' label='multithreaded' %}.
+### A SpotDetector *can be* {% include github org='imglib' repo='imglib2-algorithm' branch='master' source='net/imglib2/algorithm/MultiThreaded.java' label='multithreaded' %}
 
 So TrackMate offers you a turnkey multithreaded solution: If you have a computer with 12 cores and 50 frames to segment, TrackMate will fire 12 SpotDetectors at once and process them concurrently.
 
@@ -55,7 +55,7 @@ But let's say that you have 24 cores and only 6 frames to segment. You can explo
 
 Of course, you have to devise a clever multithreading strategy to operate concurrently on a single frame. For instance, you could divide the image into several blocks and process them in parallel. Or delegate to sub-algorithms that are multithreaded; check for instance the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetector.java' label='LogDetector' %} code.
 
-### Detection results are represented by {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/Spot.java' label='Spots' %}.
+### Detection results are represented by {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/Spot.java' label='Spots' %}
 
 {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/Spot.java' label='Spots' %} are used to represent detection results: one detection = one spot. By convention, a detection algorithm must provide *at least* the following numerical feature to each spot:
 
@@ -67,7 +67,7 @@ Any omission will trigger errors at runtime.
 
 A note before we move on: Starting with version 7, TrackMate introduced many new features, including a supplemental spot factory hierarchy that allows tuning how the time-points are processed. Either one by one each by a separate instance of a `SpotDetector`, like it is the case here, or all at once. This is explained in the [next section](/plugins/trackmate/custom-segmentation-algorithms) of this developer tutorial on implementing segmentation algorithm and using the new v7 API.
 
-### A dummy detector that returns spiraling spots.
+### A dummy detector that returns spiraling spots
 
 For this tutorial we will build a dummy detector, that actually fully ignores the image content and just create spots that seem to spiral out from the center of the image. A real detector would require you to hone your [ImgLib2](/libs/imglib2) skills; check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetector.java' label='LogDetector' %} code for an example.
 
@@ -79,7 +79,7 @@ Instances of SpotDetector are parametrized with a generic type `T` that must ext
 
 This is the type of the image data we are to operate on.
 
-#### The constructor.
+#### The constructor
 
 Since the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetector.java' label='SpotDetector' %} interface gives little constraint on inputs, all of them must be provided at construction time in the constructor. Keep in mind that we have one instance per frame, so we must know what frame we are to process.
 
@@ -89,21 +89,21 @@ Because TrackMate can also be tuned to operate only on a ROI, the instance recei
 
 Because we must store the *physical coordinates*' in the spots we create, we need a calibration array to convert pixel coordinates to physical ones. That is the role of the `double[]calibration` array, and it contains the pixel sizes along X, Y and Z.
 
-#### The {% include github repo='imglib' branch='master' path='imglib2/algorithm/Algorithm.java' label='Algorithm' %} methods.
+#### The {% include github repo='imglib' branch='master' path='imglib2/algorithm/Algorithm.java' label='Algorithm' %} methods
 
 `checkInput()` checks that the parameters passed are OK prior to processing, and returns `false` if they are not. `process()` does all the hard work, and return `false` if something goes wrong.
 
 If any of these two methods returns `false`, you are expected to document what went wrong in an error message that can be retrieved through `getErrorMessage()`.
 
-#### The {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/OutputAlgorithm.java' label='OutputAlgorithm' %} method.
+#### The {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/OutputAlgorithm.java' label='OutputAlgorithm' %} method
 
 This one just asks us to return the results as a list of spots. It must be a field of your instance, that is ideally instantiated and built in the `precess()` method. The `getResult()` method exposes this list.
 
-#### The {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/Benchmark.java' label='Benchmark' %} method.
+#### The {% include github repo='imglib' branch='master' path='algorithms/core/src/main/java/net/imglib2/algorithm/Benchmark.java' label='Benchmark' %} method
 
 Well, we just want to know how much time it took. Note that all of these are the usual suspects of an ImgLib2 generic algorithm, so they should not confuse you.
 
-#### The code itself.
+#### The code itself
 
 ```java
     package plugin.trackmate.examples.detector;
@@ -257,7 +257,7 @@ And that's about it.
 
 Now for something completely different, we move to the factory class that instantiates this detector.
 
-## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java' label='SpotDetectorFactory' %} interface.
+## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java' label='SpotDetectorFactory' %} interface
 
 The SpotDetectorFactory concrete implementation is the class that needs to be annotated with the [SciJava](/libs/scijava) annotation. For instance:
 
@@ -270,7 +270,7 @@ Note that we have to deal with the same type parameter than for the SpotDetector
 
 I will skip all the TrackMateModule methods we have seen over and over in this tutorial series. There is nothing new here, they all have the same role. The difficult and interestings parts are linked to what we introduced above. Basically we need to provide a logic for passing the raw image data, for saving/loading to XML, for querying the user for parameters, and checking them.
 
-### Getting the raw image data.
+### Getting the raw image data
 
 Since the TrackMateModule concrete implementation must have a blank constructor, there must be another way to pass required arguments to factories. For SpotDetector factories, this role is played by the `setTarget` method:
 
@@ -283,7 +283,7 @@ The raw image data is returned as an `ImgPlus`, that can be seen as the [ImgLib2
 
 The second argument is the settings map for this specific detector. It takes the shape of a map with string keys and object values, that can be cast to whatever relevant class. The concrete factory must be able to check that all the required parameters are there, and have a valid class, and to feed to the SpotDetector instances. We will see below that the user provides them through a configuration panel.
 
-### Getting detection parameters through a configuration panel.
+### Getting detection parameters through a configuration panel
 
 For a proper TrackMate integration, we need to provide a means for users to tune the detector they chose. And since TrackMate was built first to be used through a GUI, we need to create a GUI element for this task: a configuration panel. The class that does that in TrackMate is {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/components/ConfigurationPanel.java' label='ConfigurationPanel' %}. It is an abstract class that extends JPanel, and that adds two methods to display a settings map and return it.
 
@@ -298,7 +298,7 @@ The GUI panel has access to the model and settings objects, and can therefore di
 
 This is a difficult part because you have to write a GUI element. GUIs are excruciating long and painfully hard to write, at least if you want to get them right. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/gui/components/detector/LogDetectorConfigurationPanel.java' label='configuration panel of the LOG detector' %} for an example.
 
-### Checking the validity of parameters.
+### Checking the validity of parameters
 
 There is a layer of methods that allows checking for the parameter validity. Normally you don't need to, since you write the configuration panel for the detector you also develop, but I have found this to be useful to find errors early. Parameter checking is done after user edition, loading and saving.
 
@@ -314,7 +314,7 @@ public String getErrorMessage();
 
 The `getDefaultSettings()` method return a new settings map initialized with default values. It must contain all the required parameter keys, and nothing more. The `checkSettings()` method does the actual parameter checking. It must check that all the required parameters are there, that they have the right class, and that there is no spurious mapping in the map. Should any of these defects be found, it returns `false`. Finally, `getErrorMessage()` should return a meaningful error message if the check failed.
 
-### Saving to and loading from XML.
+### Saving to and loading from XML
 
 TrackMate tries to save as much information as possible when saving to XML. The save file should contain at the very least the tracking results, but it should also include the parameters that help creating these results. The detection algorithm parameters should therefore be included.
 
@@ -326,7 +326,7 @@ public boolean marshall( final Map< String, Object > settings, final Element ele
 public boolean unmarshall( final Element element, final Map< String, Object > settings );
 ```
 
-#### Marshalling.
+#### Marshalling
 
 Marshalling is the action of serializing a java object to XML. TrackMate relies on the [JDom library](http://www.jdom.org/) to do so, and it greatly simplifies the task.
 
@@ -336,7 +336,7 @@ The settings map that the `marshall` method receives is the settings map to save
 -   If something goes wrong when saving, then the `marshall` method must return `false`, and you must provide a meaningful error message for the `getErrorMessage()` method.
 -   Everything else is pretty much up to you. There is a {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/io/IOUtils.java' label='helper method in IOUtils' %} that you can use to serialize single parameters. Check the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L201' label='LogDetectorFactory marshall method' %} for an example.
 
-#### Unmarshalling.
+#### Unmarshalling
 
 Unmarshalling is just the other way around. You get a map that you must first clear, then build from the JDom element specified. You can safely assume that the XML element you get was built from the `marshall` method of the same SpotDetectorFactory. TrackMate makes sure the right `unmarshall` method is called.
 
@@ -344,7 +344,7 @@ There are a few help methods around to help you with reading from XML. For insta
 
 Check again the {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L213' label='LogDetectorFactory unmarshall method' %} for an example.
 
-### Instantiating spot detectors.
+### Instantiating spot detectors
 
 And finally, the method that gives its name to this factory:
 
@@ -400,7 +400,7 @@ Because the dummy example we use in this tutorial is not such an enlightenment, 
         }
 ```
 
-### The code for the dummy spiral generator factory.
+### The code for the dummy spiral generator factory
 
 And here is the full code for this tutorial example. It is the ultimate simplification of a SpotDetectorFactory, and was careful to strip anything useful by first ignoring the image content, second by not using any parameter. You can also find it {% include github org='fiji' repo='TrackMate-examples' branch='master' source='plugin/trackmate/examples/detector/SpiralDummyDetectorFactory.java' label='online' %}.
 

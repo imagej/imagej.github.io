@@ -41,7 +41,7 @@ The flow field is always shown as a grayscale (float) stack with separated x and
 - Extensive angular error estimation, so that estimated flow can be compared to true flow field.
 - Sources available
 
-### Usage.
+### Usage
 
 You can run the plugin from the following menu location: _Plugins > BIJ > FlowJ_. 
 
@@ -49,8 +49,7 @@ A dialog will open with the following options:
 
 ![FlowJ dialog](/media/plugins/flowj-dialog.png)
 
-
-####  Buttons:
+####  Buttons
 
 - `Compute flow field` - starts the computation of optical flow for the slice set in Frame, using the Algorithm. The flow field will be displayed in DC format at scale = 1.
 - `Display` - redisplays the flow field in a separate window. The size of the window is determined by Scale, and the visualization format by Mapping type.
@@ -61,7 +60,7 @@ A dialog will open with the following options:
 - `Copy central frame` - shows the stack slice for which the flow was computed.
 - `Graph` - opens a window that shows a graph of measured versus true flow. A true flow field needs to be loaded for this to work.
 
-#### Parameters:
+#### Parameters
 
 - `Frame` - sets the slice for which the flow is computed. The frame is set to the central slice in the stack by default.
 - `Mapping type` - selects the visualization algorithm used by Display
@@ -80,7 +79,7 @@ Barron, J.L., Fleet, D.J. & Beauchemin, S.S. [Performance of optical flow techni
 
 - Recently discovered the Carnegie Mellon University image database with many good motion sequences, available at http://vasc.ri.cmu.edu/idb/html/motion/index.html
 
-### References.
+### References
 
 - Barron, J. L., Fleet D.J., and Beauchemin S.S., "Performance of Optical Flow Techniques," Int J Comp Vis, vol. 12, no. 1, pp. 43-77, 1994. **The best reference overall.**
 - Niessen, W. J., Duncan, J. S., Nielsen, M., Florack, L. M. J., and ter Haar Romeny, B. M., "A Multiscale Approach to Image Sequence Analysis," Comp Vis Imag Understand, vol. 65, no. 2, pp. 259-268, 1997.

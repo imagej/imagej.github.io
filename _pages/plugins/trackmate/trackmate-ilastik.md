@@ -4,11 +4,9 @@ categories: [Segmentation,Tracking,Machine Learning]
 icon: /media/icons/trackmate-ilastik.png
 ---
 
-# TrackMate-Ilastik.
-
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [Ilastik](https://www.ilastik.org/) to segment objects in 2D or 3D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following).
 
-## Installation.
+## Installation
 
 For this module to work, you need three things:
 
@@ -38,7 +36,7 @@ ilastik allowed ressources on the system can be tuned in _Fiji > Plugins > ilast
 - number of threads ilastik can use
 - maximum RAM ilastik can use
 
-## Tutorial.
+## Tutorial
 
 For this tutorial we will work with the Neisseria meningitidis bacterial growth dataset, that you can download on Zenodo.
 
@@ -46,7 +44,7 @@ For this tutorial we will work with the Neisseria meningitidis bacterial growth 
 
 The dataset contains the ILP file, which is the ilastik project file. We trained a pixel classifier on several images that Laure acquired previously, and that are distinct from the movie we will track. We will use the same ILP file in TrackMate so that it can run ilastik to yield objects.
 
-### Start trackmate.
+### Start trackmate
 
 1. Load the `NeisseriaMeningitidisGrowth.tif` movie into Fiji, and start TrackMate _Plugins > Tracking > TrackMate_.
    - (**optional**) specify a ROI with the selection tool of your choice.
@@ -56,7 +54,7 @@ The dataset contains the ILP file, which is the ilastik project file. We trained
 {% include img src='/media/plugins/trackmate/trackmate-ilastik-tutorial_1.png' width='400px'  %}
 
 
-### Select the detector.
+### Select the detector
 
 3. In the **Detector** menu, choose the ilastik detector and go next.
 4. Browse to the location to the NeisseriaMeningitidisGrowth pre-trained ilastik project file (e.g. `NeisseriaMeningitidisGrowth.ilp` file). Number of classes to detect and probability threshold can be defined. In this case, use the default values.
@@ -76,7 +74,7 @@ The dataset contains the ILP file, which is the ilastik project file. We trained
 
 
 
-### Select the tracker.
+### Select the tracker
 
 7. Now that objects are detected in each timepoint, we can select a **tracker**. Multiple choices are available and is dependent of the data to process. Please see the [Tracker tutorial](/plugins/trackmate/getting-started#configuring-the-simple-lap-tracker) for more information on each tracker and help you decide which to choose. For this example, we will choose **LAP Tracker** as it allows split and merge behaviour.
 
@@ -89,13 +87,12 @@ The dataset contains the ILP file, which is the ilastik project file. We trained
 {% include img src='/media/plugins/trackmate/trackmate-ilastik-tutorial_7.png' width='400px'  %}
 {% include img src='/media/plugins/trackmate/trackmate-ilastik-tutorial_8.png' width='400px'  %}
 
-### Explore results.
+### Explore results
 
 10. The last steps allows you to explore the tracking and computed features for the spots and tracks. It is also possible to export various results (e.g. tracks, lineage, segmentation, etc.) for further analysis.
 
 {% include img src='/media/plugins/trackmate/trackmate-ilastik-tutorial_9.png' width='400px'  %}
 {% include img src='/media/plugins/trackmate/trackmate-ilastik-tutorial_10.png' width='400px'  %}
-
 
 ________
 Stéphane Rigaud - September 2021

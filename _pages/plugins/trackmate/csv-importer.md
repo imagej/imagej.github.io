@@ -16,17 +16,17 @@ team-support:  Jean-Yves Tinevez
 team-maintainers:  Jean-Yves Tinevez
 ---
 
-# CSV to TrackMate importer.
+# CSV to TrackMate importer
 
 This plugin allows for importing detections and tracks contained in CSV files into TrackMate, or to export them as TrackMate XML file in headless mode.
 
-## Installation.
+## Installation
 
 This plugin lives on a separate [update site](/list-of-update-sites). If you want to use it, you first need to subscribe to the update site named `TrackMateCSVImporter`, as explained [here](/update-sites/following).
 
 The importer can be found in the {% include bc path='Plugins | Tracking | TrackMate CSV importer'%} menu.
 
-## Using the GUI.
+## Using the GUI
 
 The example below shows a capture of the GUI when re-importing a CSV file created by TrackMate itself (from the `Analysis` button).
 
@@ -36,7 +36,7 @@ Open the target image in Fiji, and browse to the CSV file from the GUI. It will 
 
 Depending on whether you specify to import the track values or not, the TrackMate GUI will be created at a different stage.
 
-## Running the exporter from the command line.
+## Running the exporter from the command line
 
 After installation, a Jython script called `CsvToTrackMate.py` will be addede to the `scripts` folder of your Fiji installation. It is meant to be called in [headless mode](/learn/headless) to directly convert a CSV file and an image file into a TrackMate file.
 

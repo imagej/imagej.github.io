@@ -5,17 +5,15 @@ icon: /media/icons/trackmate-weka.png
 artifact: sc.fiji:TrackMate-Weka
 ---
 
-# TrackMate-Weka.
-
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on the [Trainable Weka Segmentation](/plugins/tws/index) plugin to segment objects in 2D or 3D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following).
 
-## Installation.
+## Installation
 
 For this module to work, you just need to install the TrackMate module. Subscribe to the  **TrackMate-Weka** update site.
 
 {% include img src='/media/plugins/trackmate/trackmate-weka-install.png' align='center'  %}
 
-## Tutorial: Tracking focal adhesions.
+## Tutorial: tracking focal adhesions
 
 Trainable Weka Segmentation is a machine learning pixel-based segmentation, a classifier for the objects of interest in the image is trained from user annotation, the classifier is then used for segmentation. The following image is employed to demonstrate the usage of the Weka classifier within TrackMate and can be downloaded from Zenodo:
 
@@ -28,7 +26,7 @@ The movie included show human dermal microvascular blood endothelial cells expre
 The goal is to track the focal adhesions staying at the cell periphery. 
 They are in general brighter than the cell body and the image background, but with a high variance in their intensities. 
 
-### Weka classifier.
+### Weka classifier
 
 We provide in the tutorial dataset an already trained Weka classifier for detection of the focal adhesions. 
 Only the first image frame was extracted to do the annotation. The default features plus the Gabor filter were selected for training. 
@@ -37,7 +35,7 @@ More details on training the classifier can be found from on the [plugin documen
 
 {% include img src='/media/plugins/trackmate/trackmate-weka-detector-image5.png' align='center'  width='400' %}
 
-### Using Weka in TrackMate.
+### Using Weka in TrackMate
 
 Now open the image in Fiji and launch TrackMate, click Next and select Weka detector from the dropdown menu
 

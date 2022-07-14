@@ -6,7 +6,7 @@ categories: [Segmentation,Tracking]
 
 This page describes a detector for [TrackMate](/plugins/trackmate/index) that creates objects from a label image image. 
 
-## Usage.
+## Usage
 
 Label images are especially convenient as an output of segmentation algorithms. Indeed, in some cases you might have different objects that are so close that they touch each other. If a segmentation algorithm can detect them, but outputs a black and white mask, they will appear as one object in the mask if they share a border.
 In a label image, each object is represented by different integer values. For instance, the object #1 in a label image will be made from all the pixels that have a pixel value of 1, over a black background of 0. Object #2 will have the pixel value 2, etc. This allows resolving them even if they touch each other.
@@ -17,7 +17,7 @@ If you have only one channel the preview look like this:
 
 {% include img src="/media/plugins/trackmate/trackmate-label-image-detectors-preview.png" width='400' align='center' %}
 
-## Step-by-step tutorial.
+## Step-by-step tutorial
 
 First download the tutorial dataset on Zenodo:
 
