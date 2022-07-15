@@ -25,7 +25,9 @@ BTrack is a tool to analyse the growth of branched tissues. A 2D time-lapse/ 3D 
 
 For using this detector select Btrack from the detector menu list of TrackMate. The screen looks as shown here
 
-{% include img src="/media/plugins/btrack/Btrackdetector_screen_1.png" %}
+
+<img src="/media/plugins/btrack/Btrackdetector_screen_1.png" width="250"/> 
+
 
 
 #### Detection Panel
