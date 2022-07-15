@@ -39,7 +39,7 @@ In our [example, download from Zenodo](https://zenodo.org/record/6838981) we hav
 
 #### Tracking Options
 
-After the initial preview click on the next button to run the detector on all the timepoints, after that you can use the simple LAP tracker of TrackMate to track the growing end points. The final result after tracking looks as shown here
+After the initial preview click on the next button to run the detector on all the timepoints, after that you can use the simple LAP tracker of TrackMate [^1] to track the growing end points. The final result after tracking looks as shown here
 
 {% include img src="/media/plugins/btrack/initial_tracks.png" %}
 
