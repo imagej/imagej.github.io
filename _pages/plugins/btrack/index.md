@@ -30,13 +30,17 @@ For using this detector select Btrack from the detector menu list of TrackMate. 
 
 #### Detection Panel
 Click next and if you are using a hyperstack with Raw and segmentation images in two channels, choose the segmentation image channel for the detector. Click Preview to see the detected end points. The panel for this looks as shown here
+
 {% include img src="/media/plugins/btrack/Btrackdetector_screen_2.png" %}
+
 In our [example, download from Zenodo](https://zenodo.org/record/6838981) we have the Segmentation image in channel 1 and the Raw image in channel 2 and the initial detections look as shown here
+
 {% include img src="/media/plugins/btrack/initial_detections.png" %}
 
 #### Tracking Options
 
 After the initial preview click on the next button to run the detector on all the timepoints, after that you can use the simple LAP tracker of TrackMate to track the growing end points. The final result after tracking looks as shown here
+
 {% include img src="/media/plugins/btrack/initial_tracks.png" %}
 
 
