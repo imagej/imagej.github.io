@@ -9,9 +9,9 @@ This is an interactive non-scientific fun plugin to {% include wikipedia title='
 new mpicbg.ij.integral.InteractiveTilt().run("");
 ```
 
-{%- include img src='mpi-cbg' caption="People sitting in the MPI-CBG cafeteria." -%}
-{%- include img src='street' caption="A crossroad in NYC." -%}
-{%- include img src='dc' caption="A view over DC." -%}
-{%- include img src='car' caption="Some cars in front of a restaurant." -%}
-{%- include img src='traveler' caption="A traveler in the mountains." -%}
-{%- include img src='wood' caption="Landscape." -%}
+{% include img src='mpi-cbg' caption="People sitting in the MPI-CBG cafeteria." %}
+{% include img src='street' caption="A crossroad in NYC." %}
+{% include img src='dc' caption="A view over DC." %}
+{% include img src='car' caption="Some cars in front of a restaurant." %}
+{% include img src='traveler' caption="A traveler in the mountains." %}
+{% include img src='wood' caption="Landscape." %}
