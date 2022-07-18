@@ -68,7 +68,7 @@ First you need to open a new image and select the type of annotation you would l
 An overview of the annotation types is demonstrated below.
 Please check [our guide](#how-to-annotate) for a quick overview of the functionalities of the plugin.
 
-{% include img name="annotation_and_export_types" src="/media/annotatorj/annotation_and_export_types.png" caption="**Figure 1**: Annotation and export types." %}
+{% include img name="annotation_and_export_types" src="/media/plugins/annotatorj/annotation_and_export_types.png" caption="**Figure 1**: Annotation and export types." %}
 
 The figure also shows how the given annotation types can be exported with the supplemented [exporter plugin](#export).
 
