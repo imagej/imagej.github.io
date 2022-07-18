@@ -19,6 +19,8 @@ It provides an interface-driven design that supports numeric and non-numeric dat
 -   [How To Migrate Code From ImgLib To ImgLib2](/libs/imglib2/migrate-from-imglib1)
 -   ["Introduction to ImgLib2"](/libs/imglib2/workshop-introductory) workshop
 -   ["Advanced Programming with ImgLib2"](/libs/imglib2/workshop-advanced) workshop
+-   ["I2K 2020 Introductory ImgLib2"](https://github.com/saalfeldlab/i2k2020-imglib2-intro) workshop
+-   ["I2K 2020 Advanced ImgLib2"](https://github.com/saalfeldlab/i2k2020-imglib2-advanced) workshop
 
 ## Source code
 
