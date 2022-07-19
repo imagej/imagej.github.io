@@ -24,13 +24,6 @@ The plugin **RootSystemTracker** is an automatic analysis pipeline based on regi
 -   High-throughput (automatic batch processing)
 
 
-## Preparing your dataset
-
-**Input data:** 2D + t image sequence acquired with an imaging automaton presenting a growing root system in a petri dish. Data should be organized in an input directory, one subdirectory per dish, with name patterning such as img_XX.tif, in order that ImageJ detect the image sequence autonomously.
-
-**Output data:** 2D segmentation with root apparition time, root skeleton, root system architecture as a RSML file, and an interpolated movie of the growing root system (see below)
-
-
 ## Demo
 
 The following video shows the movie produced by RootSystemTracker on a specimen
@@ -55,6 +48,12 @@ and add the **Fijiyama** repository (by clicking on the button **Add update site
 The following video shows a tutorial for Fijiyama and RootSystemTracker installation:
 
 {% include video platform='youtube' id='scm6UPlfgzU'%}
+
+## Preparing your dataset
+
+**Input data:** 2D + t image sequence acquired with an imaging automaton presenting a growing root system in a petri dish. Data should be organized in an input directory, one subdirectory per dish, with name patterning such as img_XX.tif, in order that ImageJ detect the image sequence autonomously.
+
+**Output data:** 2D segmentation with root apparition time, root skeleton, root system architecture as a RSML file, and an interpolated movie of the growing root system (see below)
 
 
 ## Running the plugin
