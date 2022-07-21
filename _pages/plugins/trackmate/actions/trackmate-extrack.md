@@ -103,7 +103,7 @@ Click the `Start estimaton` button.
 The process relies on maximum-likelihood estimation (MLE) and uses the values entered manuall as a starting guess.
 ExxTrack is relatively robust, so if the starting values are not too far off, the MLE should converge. 
 The estimation can be long; with thes 400 tracks it takes about 1 minute on my 2021 workstation, but the starting values were close.
-We took advantage of multi-threading to speed up the iterations so ou should hear the fan in your computer making noise. 
+We took advantage of multi-threading to speed up the iterations so you should hear the fan in your computer making noise. 
 
 Here are the estimates I obtained:
 
@@ -134,12 +134,12 @@ Click the `Compute probabilities` button in the bottom right to do so.
 This computation should be relatively quick.
 
 Once the computation is over, it pushes new numerical features to the TrackMate session.
-For instance, if you go back to the main TrackMate window, and click the `Spots` button in the _Display options_ panel, you will see that the spots have now two new numerical features, _P stack_ and _P diffusive_:
+For instance, if you go back to the main TrackMate window, and click the `Spots` button in the _Display options_ panel, you will see that the spots have now two new numerical features, _P stuck_ and _P diffusive_:
 
 {% include img src='/media/plugins/trackmate/actions/trackmate-extrack-06.png' align='center'  %}
 
 These numerical values can be used to generate a visualization of the current state in TrackMate.
-In the same TrackMate panel, in _Color spots by_, choose `Probability diffusive` unders the _Spot features_ category.
+In the same TrackMate panel, in _Color spots by_, choose `Probability diffusive` under the _Spot features_ category.
 Do the same for the _Color tracks by_ settings.
 Click on the two `auto` buttons next to the min and max to have the display range automatically set from 0 to 1. 
 
