@@ -59,11 +59,11 @@ The following criteria apply to projects hosted in the [fiji organization](https
 
 Projects that reside outside the [fiji organization](https://github.com/fiji) are not subject to the requirements above. But it is then the project maintainer's responsibility to ensure the project continues to function properly in up-to-date installations of Fiji. This might entail code changes as ImageJ and Fiji evolve.
 
-## Continuous integration: Travis CI
+## Continuous integration: GitHub Actions
 
-To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [Travis CI](/develop/travis) job that builds and tests the source code, and deploys the [Maven artifacts](#maven-artifacts), whenever a new revision is made available.
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [GitHub Actions](/develop/github-actions) job that builds and tests the source code, and deploys the [Maven artifacts](#maven-artifacts), whenever a new revision is made available.
 
-Have a look at the [Travis](/develop/travis) page for instructions on setting it up.
+Have a look at the [GitHub Actions](/develop/github-actions) page for instructions on setting it up.
 
 ## Versioning and dependency convergence
 
