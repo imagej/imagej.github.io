@@ -39,13 +39,12 @@ The following people at LOCI are involved in ImageJ-related development
 and/or support:
 
 -   {% include person id='eliceiri' %} (principal investigator)
--   {% include person id='smgriffin2' %} (lab administrator)
--   {% include person id='ctrueden' %} (software architect)
--   {% include person id='marktsuchida' %} (programmer, [Micro-Manager](/software/micro-manager))
+-   {% include person id='smgriffin2' %} (lab administrator, Oct 2018-current)
+-   {% include person id='ctrueden' %} (programmer, Jan 2002-current)
+-   {% include person id='marktsuchida' %} (programmer, 2020-current)
 -   {% include person id='hinerm' %} (programmer, Sep 2010-Jun 2016, Jun 2020-current)
--   {% include person id='etadobson' %} (scientist)
--   {% include person id='elevans' %} (post doc)
--   {% include person id='gselzer' %} (graduate student programmer, [ImageJ Ops](/libs/imagej-ops) and [PyImageJ](/scripting/pyimagej))
+-   {% include person id='elevans' %} (postdoc programmer, Jan 2020-current)
+-   {% include person id='gselzer' %} (graduate student programmer, Jun 2017-current)
 
 See also the [complete list of LOCI lab members](https://eliceirilab.org/researchers/) on the LOCI website.
 
@@ -53,6 +52,7 @@ See also the [complete list of LOCI lab members](https://eliceirilab.org/researc
 
 The following alumni worked on ImageJ-related projects during their time at LOCI:
 
+-   {% include person id='etadobson' %} (scientist programmer, Sep 2015-May 2022)
 -   {% include person id='Xanthorapedia' %} (programmer, [FLIMJ](/plugins/flimj), Nov 2017-Dec 2020)
 -   {% include person id='awalter17' %} (programmer, Sep 2014-May 2018)
 -   {% include person id='lnyng' %} (programmer, Sep 2015-May 2017)
@@ -73,3 +73,8 @@ The following alumni worked on the [Cookbook](/update-sites/cookbook) project as
 -   {% include person id='gabby-campagnola' %} (June 2013 - August 2013)
 
 See also the [complete list of LOCI lab alumni](https://eliceirilab.org/labalumni/) on the LOCI website.
+
+## See also
+
+* [LOCI Software Articles](https://uw-loci.github.io/)
+* [Eliceiri lab website](https://eliceirilab.org/)
