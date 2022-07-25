@@ -1,7 +1,8 @@
 ---
 title: Curtis Rueden
+
 name: Curtis Rueden
-website: https://restlesscoder.net/
+website: https://ctrue.name/cv
 gravatar: 63df759e2779af56fd050a968ff98d09
 affiliation:
   - Eliceiri Lab / LOCI | /orgs/loci
@@ -18,9 +19,7 @@ arxiv: rueden_c_1
 scholar: VqKfxYcAAAAJ
 ---
 
-Curtis Rueden directs the
-[software development efforts](https://loci.wisc.edu/software/home)
-of [LOCI](/orgs/loci).
+Curtis Rueden is a research software engineer at [LOCI](/orgs/loci).
 He is the principal architect of [ImageJ2](/software/imagej2),
 and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
@@ -60,13 +59,13 @@ ImageJ2 team to respond to every support request within one work day:
 
 ### Weekly allocation of effort
 
-|     Day | Focus                   |
-|--------:|:------------------------|
-| **Mon** | Meetings and mentorship |
-| **Tue** | Immediate priorities    |
-| **Wed** | Review and merge PRs    |
-| **Thu** | Project management      |
-| **Fri** | Community support       |
+|     Day | Focus                                                                                                                                                    |
+|--------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Mon** | Meetings and mentorship                                                                                                                                  |
+| **Tue** | Immediate priorities                                                                                                                                     |
+| **Wed** | Review and merge PRs ([my PR queue](https://github.com/users/ctrueden/projects/1/views/2))                                                               |
+| **Thu** | Project management                                                                                                                                       |
+| **Fri** | Community support ([forum topics](https://forum.image.sc/u/ctrueden/activity/bookmarks), [issues](https://github.com/users/ctrueden/projects/1/views/3)) |
 
 ### Immediate priorities
 
