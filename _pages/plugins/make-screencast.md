@@ -1,14 +1,18 @@
 ---
 mediawiki: Make_Screencast
+name: "Make\_Screencast.bsh"
 title: Make Screencast
 categories: [Scripting]
+dev-status: "stable"
+team-founder: '@dscho'
+team-maintainer: '@dscho'
 ---
 
 
 {% capture source%}
 {% include github repo='fiji' branch='master' path='plugins/Scripts/File/Make_Screencast.bsh' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Make\_Screencast.bsh' author='Johannes Schindelin' maintainer='Johannes Schindelin' filename='Make\_Screencast.bsh' source=source status='stable' %}
+{% include info-box filename='Make\_Screencast.bsh' source=source %}
 
 **Make Screencast** is a [Beanshell](/scripting/beanshell) script to record a screencast in {% include wikipedia title='Ogg' text='Ogg'%} or {% include wikipedia title='QuickTime File Format' text='Quicktime'%} video formats.
 

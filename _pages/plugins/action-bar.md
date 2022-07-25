@@ -4,7 +4,7 @@ title: ActionBar
 categories: [Development]
 dev-status: Stable
 support-status: Active
-team-founders: Jerome Mutterer | https://github.com/mutterer
+team-founders: "@mutterer"
 ---
 
 ## Overview

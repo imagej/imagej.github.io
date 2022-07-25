@@ -1,14 +1,21 @@
 ---
 mediawiki: Gabriel_Graph
+name: "Gabriel Graph"
 title: Gabriel Graph
 categories: [Uncategorized]
+release-date: "July 2017"
+initial-release-date: "August 2015"
+website: "http://biop.epfl.ch/INFO_Facility.html#staff"
+dev-status: "stable"
+team-founder: '@lacan'
+team-maintainer: '@lacan'
 ---
 
 
 {% capture source%}
 {% include github org='ptbiop' repo='ijp-gabriel-graph' %}
 {% endcapture %}
-{% include info-box name='Gabriel Graph' software='Fiji' author='Olivier Burri' maintainer='Olivier Burri' filename='Gabriel\_Graph-1.0.0.jar' released='August 2015' latest-version='July 2017' source=source status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
+{% include info-box filename='Gabriel\_Graph-1.0.0.jar'  source=source %}
 
 ## Purpose
 

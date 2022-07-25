@@ -1,22 +1,14 @@
 ---
 mediawiki: MyofibrilJ
+name: "MyofribilJ"
 title: MyofibrilJ
 categories: [Scripting,Analysis]
+tags: [Fourier analysis, autocorrelation]
+initial-release-date: "November 2017"
+team-founders: ["@giocard", Maria Spletter]
+team-maintainer: "@giocard"
+source-url: https://github.com/giocard/MyofibrilJ
 ---
-
-<seo metak="Fourier analysis, autocorrelation" metad="Fourier analysis, autocorrelation" /> 
-{% capture maintainer%}
-{% include person id='giocard' %}
-{% endcapture %}
-
-{% capture author%}
-{% include person id='giocard' %} and Maria Spletter
-{% endcapture %}
-
-{% capture source%}
-{% include github org='giocard' repo='MyofibrilJ' %}
-{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='MyofribilJ' maintainer=maintainer author=author source=source released='November 2017' category='Analysis, Scripting, Plugins' %}
 
 ## Introduction
 

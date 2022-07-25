@@ -10,7 +10,7 @@ release-date: 2020
 license-url: /licensing/gpl
 license-label: MIT
 
-team-founders: Laurent Thomas
+team-founder: "@LauLauThom"
 ---
 
 <img src=https://github.com/LauLauThom/RoiGroupTable/blob/main/RoiGroupTable-GUI.PNG width=50% height=50%>

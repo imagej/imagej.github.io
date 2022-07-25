@@ -1,10 +1,16 @@
 ---
 mediawiki: RGB_to_Montage
+name: "RGB to Montage"
 title: RGB to Montage
 categories: [Color Processing]
+release-date: "unknown"
+initial-release-date: "unknown"
+dev-status: "Unmaintained"
+team-founder: 'unknown'
+team-maintainer: 'None'
 ---
 
-{% include info-box software='ImageJ' name='RGB to Montage' author='unknown' maintainer='None' filename='RGB\_to\_Montage.class' source='not found' released='unknown' latest-version='unknown' status='Unmaintained' category='Color Processing' %}
+{% include info-box filename='RGB\_to\_Montage.class' source='not found'  %}
 
 ## Purpose
 

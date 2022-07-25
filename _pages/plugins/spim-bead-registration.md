@@ -1,10 +1,16 @@
 ---
 mediawiki: SPIM_Bead_Registration
+name: "Selective Plane Illumination Microscopy Bead-based Registration"
 title: SPIM Bead Registration
 categories: [Uncategorized]
+release-date: "October 2011"
+initial-release-date: "February 2010"
+website: "http://fly.mpi-cbg.de/~preibisch"
+team-founder: ['@StephanPreibisch', '@axtimwalde', '@dscho', '@tomancak']
+team-maintainer: '@StephanPreibisch'
 ---
 
-{% include info-box name='Selective Plane Illumination Microscopy Bead-based Registration' software='ImageJ' author='Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak' maintainer='Stephan Preibisch' filename='SPIM\_Registration.jar' released='February 2010' latest-version='October 2011' category='SPIM Registration' website="[Stephan Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch)" %}
+{% include info-box filename='SPIM\_Registration.jar'  category='SPIM Registration' %}
 
 ## Citation
 

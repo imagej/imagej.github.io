@@ -1,14 +1,19 @@
 ---
 mediawiki: Saim
+name: "SAIM (Scanning Angle Interference Microscopy)"
 title: Saim
 categories: [Analysis, Microscopy]
+release-date: "2016/09/28"
+initial-release-date: "2015/11/20"
+team-founder: '@nicost'
+team-maintainer: '@nicost'
 ---
 
 
 {% capture source%}
 {% include github org='nicost' repo='saimAnalysis' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='SAIM (Scanning Angle Interference Microscopy)' author='Nico Stuurman (nico.stuurman at ucsf.edu)' maintainer='[Nico Stuurman](Nico_Stuurman)' filename='' source=source released='2015/11/20' latest-version='2016/09/28' category='Techniques' %}
+{% include info-box source=source  category='Techniques' %}
 
 # ImageJ/Fiji plugin to to analyze Scanning Angle Interference Microscope Data.
 

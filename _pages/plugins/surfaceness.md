@@ -1,13 +1,17 @@
 ---
 mediawiki: Surfaceness
+name: "Surfaceness"
 title: Surfaceness
 categories: [Uncategorized]
+dev-status: "stable"
+team-founders: ['@mhl', '@StephanPreibisch']
+team-maintainer: '@mhl'
 ---
 
 
 {% capture source%}
 {% include github org='fiji' repo='VIB' branch='master' source='features/Surfaceness_.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Surfaceness' author='Mark Longair, Stephan Preibisch' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
+{% include info-box filename='VIB\_.jar' source=source %}
 
 FIXME: write some documentation for this plugin

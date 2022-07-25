@@ -1,10 +1,15 @@
 ---
 mediawiki: Dithering
+name: "Dithering"
 title: Dithering
 categories: [Segmentation]
+release-date: "v1.0 (17 May 2009)"
+dev-status: "active"
+team-founder: '@landinig'
+team-maintainer: '@landinig (G.Landini at bham. ac. uk)'
 ---
 
-{% include info-box software='ImageJ' name='Dithering' author='Gabriel Landini' maintainer='Gabriel Landini (G.Landini at bham. ac. uk)' filename='Dithering_.txt' source='See below' latest-version='v1.0 (17 May 2009)' status='active' %}
+{% include info-box filename='Dithering_.txt' source='See below'  %}
 
 ## Purpose
 

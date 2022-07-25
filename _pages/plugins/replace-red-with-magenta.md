@@ -1,18 +1,20 @@
 ---
 mediawiki: Replace_Red_with_Magenta
+name: "Replace Red with Magenta"
 title: Replace Red with Magenta
 categories: [Tutorials]
+release-date: "27/06/2011"
+initial-release-date: "27/06/2011"
+team-maintainer: "@dscho"
+team-founder: '@dscho'
 ---
 
 
-{% capture maintainer%}
-{% include person id='dscho' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='fiji' repo='Fiji_Plugins' branch='master' source='fiji/color/Convert_Red_To_Magenta.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Replace Red with Magenta' maintainer=maintainer author='Johannes Schindelin' source=source released='27/06/2011' latest-version='27/06/2011' status='' category='Plugins' %}
+{% include info-box source=source  %}
 
 This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.
 

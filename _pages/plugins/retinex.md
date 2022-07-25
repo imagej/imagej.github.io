@@ -1,14 +1,19 @@
 ---
 mediawiki: Retinex
+name: "Retinex"
 title: Retinex
 categories: [Tutorials]
+release-date: "02/08/2010"
+initial-release-date: "02/08/2010"
+team-founder: 'Francisco Jiménez Hernández'
+team-maintainer: 'Francisco Jiménez Hernández | mailto:jimenezf_at_fi.uaemex.mx'
 ---
 
 
 {% capture source%}
 {% include github org='fiji' repo='Fiji_Plugins' branch='master' source='Retinex_.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Retinex' maintainer='[Francisco Jiménez Hernández](mailto:jimenezf_at_fi.uaemex.mx)' author='Francisco Jiménez Hernández' source=source released='02/08/2010' latest-version='02/08/2010' status='' category='Plugins' website='' %}
+{% include info-box source=source  %}
 
 ## Retinex
 

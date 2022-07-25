@@ -4,9 +4,9 @@ project: /software/imagej
 categories: [Color Processing]
 name: Align RGB planes
 website: https://blog.bham.ac.uk/intellimic/g-landini-software/
-team-founders: Gabriel Landini | /people/landinig
-team-leads: Gabriel Landini | /people/landinig
-team-maintainers: Gabriel Landini | /people/landinig
+team-founders: "@landinig"
+team-leads: "@landinig"
+team-maintainers: "@landinig"
 dev-status: Stable
 source-label: align_rgb.zip
 source-url: https://github.com/landinig/IJ-Align_RGB_planes/raw/main/align_rgb.zip

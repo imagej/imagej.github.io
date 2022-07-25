@@ -1,18 +1,20 @@
 ---
 mediawiki: TAPAS
+name: "TAPAS"
 title: TAPAS
 categories: [Automation,Analysis,Filtering,Segmentation]
+release-date: "22/06/2020, V0.6.3"
+initial-release-date: "14/08/2019, V0.4"
+dev-status: "stable, active"
+team-founder: "@mcib3d"
+team-maintainer: "@mcib3d"
+update-site: "TAPAS"
 ---
-
-
-{% capture author%}
-{% include person id='mcib3d' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='mcib3d' repo='tapas-core' %}
 {% endcapture %}
-{% include info-box name='TAPAS' software='tapas' update-site='TAPAS' author=author maintainer=' [Thomas Boudier](https://github.com/mcib3d)' source=source released='14/08/2019, V0.4' latest-version='22/06/2020, V0.6.3' status='stable, active' category='Automation, Analysis, Filtering, Segmentation' %}
+{% include info-box software='tapas' source=source  %}
 
 ## TAPAS : An integrated tool for batch processing
 

@@ -1,13 +1,14 @@
 ---
 title: Gut Analysis Toolbox
+name: "Gut Analysis Toolbox"
 description: Gut Analysis Toolbox or GAT allows the semi-automated analysis of the cells within the enteric nervous system of the gastrointestinal tract in **2D**. GAT enables quantification of enteric neurons and their subtypes in gut wholemounts. It runs in Fiji, a popular image analysis software in microscopy and uses custom deep learning models to segment cells of interest. 
 categories: [Analysis,Segmentation,Neuron,Gut]
+website: "https://github.com/pr4deepr/GutAnalysisToolbox"
+update-site: "GutAnalysisToolbox"
+team-founder: '@pr4deepr'
+team-maintainer: '@pr4deepr'
+source-url: https://github.com/pr4deepr/GutAnalysisToolbox
 ---
-
-{% capture source%}
-{% include github org='pr4deepr' repo='GutAnalysisToolbox' %}
-{% endcapture %}
-{% include info-box name='Gut Analysis Toolbox' software='Fiji' update-site='GutAnalysisToolbox' author='Pradeep Rajasekhar' maintainer='Pradeep Rajasekhar' source=source website='https://github.com/pr4deepr/GutAnalysisToolbox' %} 
 
 
 **Gut Analysis Toolbox** enables semi-automated analysis of the neuronal and glial distribution within the gut wall (enteric nervous system). It uses a combination of `FIJI macros`, [StarDist](https://github.com/stardist/stardist), [CLIJ](https://clij.github.io/) 

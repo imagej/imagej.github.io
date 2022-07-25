@@ -2,9 +2,14 @@
 mediawiki: Frames
 title: Frames
 categories: [Import-Export]
+project: /software/imagej
+name: "Frames"
+release-date: "2020-04-01"
+initial-release-date: "2019-04-01"
+dev-status: "stable"
+team-founder: 'Fred Damen'
+team-maintainer: 'Fred Damen'
 ---
-
-{% include info-box software='ImageJ 1.x' name='Frames' author='Fred Damen' maintainer='Fred Damen' filename='Frames.jar' source=' [Frames.zip](/media/frames.zip)' released='1 April 2019' latest-version='1 April 2020' status='stable' category='Analysis' website='' %}
 
 These are a set of plugins that are used to work with data in the frame direction. The F\_Project plugin projects the images in the frame direction into a lower dimension using different methods. The F\_Profiler pulgin plots the contents of an ROI through the frame direction. The Frame\_Slider provides sliders to step though the frames of a hyperstacks based on the variable/values in the slice labels.
 
@@ -39,91 +44,91 @@ If the first slice of every frame has a Short Label that can be split by the reg
 
 There are also static methods provided, with the same names, albeit, all lower case, with two syntaxis: `method(ImagePlus,slices,frames)`, `method(ImagePlus)`, `save fit(..., int), fit(..., String)`.
 
-```
+```java
 TreeMap<String,Double> getVars(ImagePlus imp, int f)
 ```
 Extract variable/value pairs from frame's slice label.
 
-```
+```java
 TreeMap<String,TreeMap<Double,Double>> getVars(ImagePlus imp)
 ```
 Extract variable/values from all frames' slice labels.
 
-```
+```java
 LinkedHashMap<String,String> overRepeats(ImagePlus imp, String var)
 ```
 Determine the subsets (keys) that exist and the associated comma separated frames (values), where var is the repeater.  
 see 'repeats var'
 
-```
+```java
 TreeMap<Double,String> sortFramesByLabel(ImagePlus imp)
 ```
 returns comma separated list of frames for each unique label.
 
-```
+```java
 void removeVarFromLabels(ImagePlus imp, String var)
 ```
 Remove superfluous variable var from all slice labels
 
-```
+```java
 void replaceVarValWithInLabel(ImagePlus imp, String var, String val)
 ```
 Replace all the values for var with val in all the slice labels.
 
-```
+```java
 int findVarInLabel(ImagePlus imp, String var)
 ```
 Determines position of var in the slice label variables. -1 not found or error.
 
-```
+```java
 TreeMap<Double,String> sortFramesByLabel(ImagePlus imp, String var)
 ```
 Determine frames (values - comma separated) that corrosponds to each var values (keys).
 
-```
+```java
 ImagePlus extractFramesByVar(ImagePlus imp, String var, double val)
 ```
 Extract all frames that have the variable / value pair var/val.
 
-```
+```java
 TreeMap<Double,ImagePlus> extractFramesByVar(ImagePlus imp, String var)
 ```
 Extract the frames (as an ImagePlus) that corresponds to each value (key) for slice label
 
-```
+```java
 ImagePlus sortFramesByVar(ImagePlus imp, String var)
 ```
 Rearrange frame order to that of increasing var values.
 
-```
+```java
 double center(double[] a)
 ```
 weighted mean weighted to the median
 
-```
+```java
 double[] theilsen(double[] ... _x)
 ```
 theilsen regressor for linear.  
 can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed
 
-```
+```java
 double[] theilsen2(double[] ... _x)
 ```
 theilsen regressor for quadradic.  
 can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed
 
-```
+```java
 double[] linreg(double[] x, double[] y)
 ```
 linear least squares regressor  
 can be called as x\[\],y\[\] or xy\[\]\[\] but only the first pair computed
 
-```
+```java
 double centroid(double[] x, double[] y)
 ```
 Centroid
 
-```
+```java
 public interface Compute {
 public double[] compute(double[] x, double[] y);
    return (x == null) ? new double[NV] : process(x,y);
@@ -134,7 +139,7 @@ ImagePlus compute(ImagePlus imp, Compute fp, ImagePlus mask)
 ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp, ImagePlus mask)
 ```
 
-```
+```java
 ImagePlus[] split(ImagePlus imp)
 ```
 fit and compute have `ImagePlus[] method(..., ImagePlus[] imps);`  
@@ -144,7 +149,7 @@ fit and compute have `ImagePlus[] method(..., ImagePlus[] imps);`
 
 #### ASL - MRI
 
-```
+```java
 ImagePlus aslAcquired = . . .
 ImagePlus tag = F_Project.mean(aslAcquired,"all","1-100-2");
 ImagePlus ctl = F_Project.mean(aslAcquired,"all","2-100-2");
@@ -155,7 +160,7 @@ ImagePlus asl = ctl.duplicate();
 
 #### ADC - MRI
 
-```
+```java
 /* Assuming many b-values (slicelabels = "b=%f") */
 ImagePlus dwiAcquired = . . .
 ImagePlus dwi = dwiAcquired.duplicate();
@@ -165,14 +170,14 @@ for(int f=0; f<dwiAcquired.getNFrames(); f++)
 ImagePlus adc_etal = F_Project.fit(dwi,"Exponential");
 ```
 OR with more resilience to outliers . . .  
-```
+```java
 IJ.run(dwi, "Log", "");
 ImagePlus adc_etal = F_Project.theilsen(dwi);
 ```
 
 #### Arbitrary proccessing
 
-```
+```java
 IJ.run(mask,"Convert to Mask", "method=Huang background=Default calculate");
 ImagePlus[] pimp = F_Project.compute(imp, new F_Project.Compute() {
    @Override
@@ -195,7 +200,7 @@ When you have one or more Hyperstacks open and want to step though the images pe
 
 ## Install
 
-Unzip [Frames.zip](/media/frames.zip) into ImageJ 1.x plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.
+Unzip [Frames.zip](/media/frames.zip) into ImageJ plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.
 
 ## ChangeLog
 

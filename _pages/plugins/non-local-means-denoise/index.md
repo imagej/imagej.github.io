@@ -3,8 +3,8 @@ title: Non Local Means Denoise
 categories: [Denoising]
 team-founders:
 - Pascal Behnel
-- Thorsten Wagner | /people/thorstenwagner
-team-maintainer: Thorsten Wagner | /people/thorstenwagner
+- "@thorstenwagner"
+team-maintainer: "@thorstenwagner"
 dev-status: Stable
 support-status: Limited
 source-url: https://github.com/thorstenwagner/ij-nl-means

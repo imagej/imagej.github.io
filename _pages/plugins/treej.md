@@ -1,14 +1,21 @@
 ---
 mediawiki: TreeJ
+name: "TreeJ"
 title: TreeJ
 categories: [Analysis]
+initial-release-date: "July, 2016"
+team-founders:
+- Elise Laruelle | https://github.com/L-EL
+- Philippe Andrey
+- Jean-Christophe Palauqui
+- Alain Trubuil
+team-maintainer: Elise Laruelle | https://github.com/L-EL
 ---
-
 
 {% capture source%}
 {% include github org='L-EL' repo='TreeJ' %}
 {% endcapture %}
-{% include info-box name='TreeJ' software='ImageJ and Fiji' author=' [Elise Laruelle](https://github.com/L-EL) , Philippe Andrey, Jean-Christophe Palauqui, Alain Trubuil' maintainer=' [Elise Laruelle](https://github.com/L-EL)' filename=' [TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar)' source=source Initial-released='July, 2016' category='Analysis, Plugins' %}
+{% include info-box filename=' [TreeJ\_-1.0.0-SNAPSHOT.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar)' source=source %}
 
 This plugin contains an interface to reconstruct interactively and recursively a cell lineage from a static labeled image. It allows to :
 

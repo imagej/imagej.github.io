@@ -2,8 +2,8 @@
 title: OpenMPI Plugin Extensions
 categories: [Scripting]
 name: Parallel Ops
-team-developers: Daniel Trnka, Michal Krumnickl
-team-maintainers: Daniel Trnka
+team-developers: [Daniel Trnka, Michal Krumnickl]
+team-maintainer: Daniel Trnka
 source-url: https://github.com/fiji-hpc/scijava-parallel-mpi
 source-label: on GitHub
 ---

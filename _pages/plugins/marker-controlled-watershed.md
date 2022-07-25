@@ -1,23 +1,17 @@
 ---
 mediawiki: Marker-controlled_Watershed
+name: "Marker-controlled Watershed"
 title: Marker-controlled Watershed
 categories: [Segmentation, Mathematical Morphology]
+release-date: "July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)"
+initial-release-date: "July 3<sup>rd</sup>, 2014"
+dev-status: "stable, active"
+team-founders: ["@iarganda", "@dlegland"]
+team-maintainers: ["@iarganda", "@dlegland"]
+source-url: https://github.com/ijpb/MorphoLibJ
 ---
 
-
-{% capture author%}
-{% include person id='iarganda' %}, David Legland
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='iarganda' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='ijpb' repo='ijpb-plugins' %}
-{% endcapture %}
-{% include info-box name='Marker-controlled Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Segmentation, Mathematical Morphology' %}{\| \|<span>  
-</span>style="vertical-align:top" \|{% include thumbnail src='/media/plugins/watershed-flooding-markers-blobs-gradient.gif' title='Marker-controlled flooding on the gradient image of the blobs sample.'%} \|}
+{% include thumbnail src='/media/plugins/watershed-flooding-markers-blobs-gradient.gif' title='Marker-controlled flooding on the gradient image of the blobs sample.' %}
 
 ## Introduction
 

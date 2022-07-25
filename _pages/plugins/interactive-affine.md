@@ -1,10 +1,16 @@
 ---
 mediawiki: Interactive_Affine
+name: "Interactive Affine"
 title: Interactive Affine
 categories: [Transform]
+release-date: "November 9, 2008"
+initial-release-date: "June 6, 2008"
+dev-status: "stable"
+team-founder: '@axtimwalde'
+team-maintainer: '@axtimwalde'
 ---
 
-{% include info-box name='Interactive Affine' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=' [in gitweb](https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Affine.java)' released='June 6<sup>th</sup>, 2008' latest-version='November 9<sup>th</sup>, 2008' status='stable' category='Transform, Plugins' %}
+{% include info-box source=' [in gitweb](https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Affine.java)'  %}
 
 This plugin allows to apply a **free affine transformation** to a 2D image in an interactive way.
 

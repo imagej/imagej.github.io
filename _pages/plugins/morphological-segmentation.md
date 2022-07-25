@@ -1,22 +1,17 @@
 ---
 mediawiki: Morphological_Segmentation
+name: "Morphological Segmentation"
 title: Morphological Segmentation
 categories: [Segmentation, Mathematical Morphology]
+release-date: "July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)"
+initial-release-date: "July 3<sup>rd</sup>, 2014"
+dev-status: "stable, active"
+team-founders: ["@iarganda", "@dlegland"]
+team-maintainers: ["@iarganda", "@dlegland"]
+source-url: https://github.com/ijpb/MorphoLibJ
 ---
 
-
-{% capture author%}
-{% include person id='iarganda' %}, David Legland
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='iarganda' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='ijpb' repo='MorphoLibJ' %}
-{% endcapture %}
-{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Segmentation, Mathematical Morphology' %}{\| \|<span>  
+{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/plugins/morphological-segmentation-animation-blobs.gif' title='Visual description of the different steps of the Morphological Segmentation plugin.'%} \|}
 
 ## Introduction

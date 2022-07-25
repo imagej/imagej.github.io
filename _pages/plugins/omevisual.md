@@ -1,27 +1,13 @@
 ---
 mediawiki: OMEVisual
+name: "OMEVisual"
 title: OMEVisual
 categories: [OME]
+initial-release-date: "08/05/2016"
+artifact: sc.fiji:OMEVisual
 ---
 
-
-{% capture author%}
-{% include person id='hadim' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='hadim' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='fiji' repo='OMEVisual' %}
-{% endcapture %}
-{% include info-box name='OMEVisual' logo='' software='Fiji' author=author maintainer=maintainer source=source released='08/05/2016' status='v1.0.1, stable' category='' %}
-
-
-## Presentation
-
-`OMEVisual` is a Fiji plugin to easily visualize OME metadata.
+OMEVisual is a Fiji plugin to easily visualize [OME](https://www.openmicroscopy.org/) metadata.
 
 Usage:
 

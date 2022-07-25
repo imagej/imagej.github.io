@@ -1,10 +1,17 @@
 ---
 mediawiki: Spots_colocalization_(ComDet)
+name: "ComDet"
 title: Spots colocalization (ComDet)
 categories: [Colocalization]
+release-date: "7 April 2020"
+initial-release-date: "23 November 2012"
+website: "https://github.com/ekatrukha/ComDet/wiki"
+dev-status: "stable"
+team-founder: '@ekatrukha'
+team-maintainer: '@ekatrukha'
 ---
 
-{% include info-box software='ImageJ' name='ComDet' author=' [Eugene Katrukha](http://katpyxa.info)' maintainer='[Eugene Katrukha](mailto:katpyxa_at_gmail.com)' filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)' released='23 November 2012' latest-version='7 April 2020' status='stable' category='Colocalization' website=' [wiki](https://github.com/ekatrukha/ComDet/wiki)' %}
+{% include info-box filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)'  %}
 
 Plugin for finding and/or analyzing colocalization of bright intensity spots (cells, particles, vesicles, comets, dots, etc) in images with heterogeneous background (microscopy, astronomy, engineering, etc).
 

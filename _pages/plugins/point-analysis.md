@@ -1,14 +1,17 @@
 ---
 mediawiki: Point_Analysis
+name: "Point Analysis"
 title: Point Analysis
 categories: [Tutorials]
+release-date: "29/12/2016"
+initial-release-date: "29/12/2016"
+dev-status: "Alpha"
+team-founder: 'Simon Klein'
+team-maintainer: 'Simon Klein'
+source-url: https://github.com/kleinsimon/PointAnalysis
 ---
 
 
-{% capture source%}
-{% include github org='kleinsimon' repo='PointAnalysis' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Point Analysis' maintainer='Simon Klein' author='Simon Klein' source=source released='29/12/2016' latest-version='29/12/2016' status='Alpha' category='Plugins' website='' %}
 
 PointAnalysis
 

@@ -1,14 +1,17 @@
 ---
 mediawiki: Interactive_Watershed
+name: "Interactive H\_Watershed"
 title: Interactive Watershed
 categories: [Segmentation]
 extensions: ["mathjax"]
+initial-release-date: "08 May 2017"
+team-founder: "@benoalo"
+team-maintainer: "@benoalo"
 ---
 
 
-{% capture benoalo -%} {% include person id='benoalo' %} {%- endcapture %}
 {% capture source -%} {% include github org='mpicbg-scicomp' repo='Interactive-H-Watershed' %} {%- endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Interactive H\_Watershed' author=benoalo maintainer=benoalo released='08 May 2017' filename='SCF-MPI-CBG update site' source=source category='Plugins, Segmentation' %}
+{% include info-box filename='SCF-MPI-CBG update site' source=source %}
 
 <img src="/media/interactivewatershed-illustration.png" width="500"/>
 

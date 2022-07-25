@@ -1,14 +1,21 @@
 ---
 mediawiki: Max_Inscribed_Circles
+name: "Max Inscribed Circles"
 title: Max Inscribed Circles
 categories: [Segmentation, Feature Extraction]
+release-date: "July 2016"
+initial-release-date: "August 2015"
+website: "https://www.epfl.ch/research/facilities/ptbiop/staff/"
+dev-status: "stable"
+team-founders: ['@lacan', '@romainGuiet']
+team-maintainer: '@lacan'
 ---
 
 
 {% capture source%}
 {% include github org='ptbiop' repo='ijp-max-inscribed-circles' %}
 {% endcapture %}
-{% include info-box name='Max Inscribed Circles' software='Fiji' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Max_Inscribed_Circle.jar' released='August 2015' latest-version='July 2016' source=source status='stable' website=' [BIOP Staff Page](https://www.epfl.ch/research/facilities/ptbiop/staff/)' %}
+{% include info-box filename='Max_Inscribed_Circle.jar'  source=source %}
 
 ## Purpose
 

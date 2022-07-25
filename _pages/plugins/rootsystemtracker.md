@@ -1,16 +1,9 @@
 ---
-mediawiki: RootSystemTracker
 title: RootSystemTracker
 categories: [Analysis]
 description: Time-lapse tracking of root system architecture
+pom-url: https://raw.githubusercontent.com/Rocsg/RootSystemTracker/main/pom.xml
 ---
-
-
-{% capture source%}
-{% include github org='Rocsg' repo='RootSystemTracker' %}
-{% endcapture %}
-{% include info-box name='RootSystemTracker' software='Fiji' author='Romain Fernandez' maintainer='Romain Fernandez' source=source released='Jul 13<sup>th</sup>, 2022' status='stable, active' category='Analysis' %}
-
 
 <i>Current version : Handsome Honeysuckle (last release : July 13<sup>th</sup>, 2022).</i>
 
@@ -74,5 +67,3 @@ Major updates include new features released, or major refactoring, while minor u
 ## Contact
 
 Issues, feature request ? Please contact romainfernandez06ATgmail.com
-
-

@@ -1,10 +1,14 @@
 ---
 mediawiki: Blind_Analysis_Tools
+name: "Blind Analysis Tools"
 title: Blind Analysis Tools
 categories: [Uncategorized]
+dev-status: "Active"
+team-founders: ['@ahtsaJ', Holger Lorenz]
+team-maintainers: ['@ahtsaJ', Holger Lorenz]
 ---
 
-{% include info-box name='Blind Analysis Tools' software='Fiji' source=' [on GitHub](https://github.com/ahtsaJ/Blind-Analysis-Tools)' author='Astha Jaiswal, Holger Lorenz' maintainer='Astha Jaiswal, Holger Lorenz' status='Active' %}
+{% include info-box source=' [on GitHub](https://github.com/ahtsaJ/Blind-Analysis-Tools)' %}
 
 ## Introduction
 

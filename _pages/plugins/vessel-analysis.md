@@ -1,18 +1,16 @@
 ---
 mediawiki: Vessel_Analysis
+name: "Vessel Analysis"
 title: Vessel Analysis
-categories: [Uncategorized]
+categories: [Analysis]
+release-date: "1.1"
+initial-release-date: "June 14, 2016"
+dev-status: "stable"
+team-founders: [Nivetha Govindaraju, "@mfarna"]
+team-maintainer: "@mfarna"
 ---
 
-
-{% capture author%}
-Nivetha Govindaraju, {% include person id='mfarna' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='mfarna' %} (<mai.elfarnawany@gmail.com>)
-{% endcapture %}
-{% include info-box name='Vessel Analysis' software='Fiji' author=author maintainer=maintainer filename=' [Vessel Analysis.zip](/media/plugins/vessel-analysis.zip)' released='June 14<sup>th</sup>, 2016' latest-version='1.1' status='stable' category='Plugins, Analysis' %}
+{% include info-box filename=' [Vessel Analysis.zip](/media/plugins/vessel-analysis.zip)' %}
 
 ## **Description:**
 

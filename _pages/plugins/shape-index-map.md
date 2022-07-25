@@ -1,18 +1,20 @@
 ---
 mediawiki: Shape_Index_Map
+name: "Shape Index Map"
 title: Shape Index Map
 categories: [Uncategorized]
+release-date: "18/08/2010"
+initial-release-date: "18/08/2010"
+team-maintainer: "@dscho"
+team-founder: '@dscho'
 ---
 
 
-{% capture maintainer%}
-{% include person id='dscho' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='fiji' repo='Fiji_Plugins' branch='master' source='fiji/geom/Shape_Index_Map.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Shape Index Map' maintainer=maintainer author='Johannes Schindelin' source=source released='18/08/2010' latest-version='18/08/2010' status='' category='Plugins' website='' %}
+{% include info-box source=source  %}
 
 ## Explanation
 

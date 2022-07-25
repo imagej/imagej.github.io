@@ -14,7 +14,7 @@ license-label: BSD-3
 source-url: https://github.com/cellprofiler/cellprofiler
 forum-tag: cellprofiler
 team-founders: Broad Institute | https://broadinstitute.org
-team-maintainers: '@bethac07, @alicelucas'
+team-maintainers: ['@bethac07', Nodar Gogoberidze]
 doi:
 - 10.1186/gb-2006-7-10-r100
 - 10.1093/bioinformatics/btr095

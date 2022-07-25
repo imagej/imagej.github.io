@@ -1,14 +1,18 @@
 ---
 mediawiki: Tubeness
+name: "Tubeness"
 title: Tubeness
 categories: [Uncategorized]
+dev-status: "stable"
+team-founders: ['@mhl', '@StephanPreibisch']
+team-maintainer: '@mhl'
 ---
 
 
 {% capture source%}
 {% include github org='fiji' repo='VIB' branch='master' source='features/Tubeness_.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Tubeness' author='Mark Longair, Stephan Preibisch' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
+{% include info-box filename='VIB\_.jar' source=source %}
 
 
 {% capture text%}

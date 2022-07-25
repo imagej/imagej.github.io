@@ -1,14 +1,18 @@
 ---
 mediawiki: Multiple_Image_Processor
+name: "Multiple Image Processor"
 title: Multiple Image Processor
 categories: [Uncategorized]
+release-date: "10/10/2005"
+initial-release-date: "10/10/2005"
+website: "http://ciar.rcm.upr.edu/projects/imageprocessor/multiples"
+dev-status: "stable"
+team-founder: 'Nathaniel Gonzalez Santiago | mailto:ngonzalez@rcm.upr.edu'
+team-maintainer: 'Nathaniel Gonzalez Santiago | mailto:ngonzalez@rcm.upr.edu'
+source-url: https://github.com/fiji/M_I_P
 ---
 
 
-{% capture source%}
-{% include github org='fiji' repo='M_I_P' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Multiple Image Processor' maintainer='[at rcm.upr.edu](mailto:ngonzalez)' author='Nathaniel Gonzalez Santiago' source=source released='10/10/2005' latest-version='10/10/2005' status='stable' category='Plugins' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples)' %}
 
 ## Multiple Image Processor
 

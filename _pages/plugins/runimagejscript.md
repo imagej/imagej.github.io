@@ -5,9 +5,13 @@ affiliation: Center for Open Bioimage Analysis | https://openbioimageanalysis.or
 dev-status: Active
 support-status: Active
 source-url: https://github.com/CellProfiler/CellProfiler-plugins/
+team-founder: '@hinerm'
 team-lead: '@hinerm'
-team-developers: '@alicelucas, @bethac07, @hinerm'
-team-maintainers: '@alicelucas, @hinerm'
+team-support: ['@bethac07', '@hinerm']
+team-reviewer: '@hinerm'
+team-debugger: '@hinerm'
+team-maintainer: '@hinerm'
+team-contributors: ['@alicelucas']
 icon: /media/icons/cellprofiler.png
 categories: [CellProfiler]
 ---

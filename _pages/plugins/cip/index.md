@@ -1,10 +1,14 @@
 ---
 title: CIP
+name: "CIP"
 categories: [Uncategorized]
+initial-release-date: "January 2018"
+update-site: "CIP"
+team-founder: "@benoalo"
+team-maintainer: "@benoalo"
 ---
 
-{% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='CIP' update-site='CIP' author=benoalo maintainer=benoalo released='January 2018' filename='CIP update site' source='https://github.com/benoalo/CIP' category='Scripting' %}
+{% include info-box filename='CIP update site' source='https://github.com/benoalo/CIP' category='Scripting' %}
 
 {% include img src="/media/cip-basic-concept.png" width="600" caption="**Figure 1**: CIP is a simple toolbox to learn and prototype image analysis workflow in ImageJ. It hides ImageJ complexity while making it easy to combine ImageJ packages for more specific tasks." %}
 

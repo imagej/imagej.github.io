@@ -5,13 +5,13 @@ license-url: /licensing/gpl
 license-label: GPLv3
 dev-status: Active
 support-status: Active
-team-founders: János Roszik, Duarte Lisboa, János Szöllosi, György Vereb
-team-leads: Cameron Lloyd | /people/camlloyd
-team-developers: Cameron Lloyd | /people/camlloyd
-team-debuggers: Cameron Lloyd | /people/camlloyd
-team-reviewers: Cameron Lloyd | /people/camlloyd
-team-support: Cameron Lloyd | /people/camlloyd
-team-maintainers: Cameron Lloyd | /people/camlloyd
+team-founders: [János Roszik, Duarte Lisboa, János Szöllosi, György Vereb]
+team-leads: "@camlloyd"
+team-developers: "@camlloyd"
+team-debuggers: "@camlloyd"
+team-reviewers: "@camlloyd"
+team-support: "@camlloyd"
+team-maintainers: "@camlloyd"
 categories: [Analysis]
 doi: 10.1002/cyto.a.20747
 ---

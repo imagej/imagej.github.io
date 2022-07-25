@@ -12,7 +12,7 @@ release-date: 2019
 license-url: /licensing/gpl
 license-label: GPLv3
 
-team-founders: Laurent Thomas, Jochen Gehrig
+team-founders: ["@LauLauThom", "Jochen Gehrig"]
 ---
 
 {% include img name="MTM-GUI" src="/media/plugins/multi-template-matching-montagegui.png" %}

@@ -1,10 +1,17 @@
 ---
 mediawiki: Fourier_Ring_Correlation_Plugin
+name: "Fourier Ring Correlation"
 title: Fourier Ring Correlation Plugin
 categories: [Uncategorized]
+release-date: "July 2018"
+initial-release-date: "September 2016"
+website: "http://biop.epfl.ch/INFO_Facility.html#staff"
+dev-status: "stable"
+team-founder: ['@lacan', Alex Herbert]
+team-maintainer: '@lacan'
 ---
 
-{% include info-box name='Fourier Ring Correlation' software='Fiji' author='Olivier Burri, Alex Herbert' maintainer='Olivier Burri' filename='FRC\_-1.0.2.jar' released='September 2016' latest-version='July 2018' source=' [github page](https://github.com/BIOP/ijp-frc)' status='stable' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
+{% include info-box filename='FRC\_-1.0.2.jar'  source=' [github page](https://github.com/BIOP/ijp-frc)' %}
 
 # Updates
 

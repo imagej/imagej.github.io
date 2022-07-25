@@ -1,25 +1,16 @@
 ---
-mediawiki: Anomalous_Diffusion_Filters
 title: Anomalous Diffusion Filters
-categories: [Uncategorized]
+categories: [Filtering]
 extensions: ["mathjax"]
+
+name: "Anomalous Diffusion Filters PlugIn"
+release-date: "2015-02-03"
+initial-release-date: "2015-02-03"
+dev-status: stable
+team-founder: "@acsenrafilho"
+team-maintainer: "@acsenrafilho"
+source-url: https://github.com/CSIM-Toolkits/ImageJ/tree/master/plugins/AnomalousDiffusionFilters
 ---
-
-
-{% capture author%}
-{% include person id='acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='acsenrafilho' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/AnomalousDiffusionFilters' label='GitHub CSIM-ImageJ AnomalousDiffusionFilters repository' %}
-{% endcapture %}
-{% include info-box name='Anomalous Diffusion Filters PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 03<sup>rd</sup>, 2015' latest-version='February 03<sup>rd</sup>, 2015' status='experimental, active' category='Plugins, Filtering' %}
-
-## Anomalous Diffusion Filters
 
 {% include thumbnail src='/media/plugins/filters-examples.png' title='Filtering examples with the T1w MRI stack available in Fiji examples images.'%}
 
@@ -37,7 +28,7 @@ Anomalous diffusion processes (ADP) are mathematically denoted by a power law in
 
 $$ \frac{\partial\rho}{\partial t} = \overrightarrow{\nabla}[D_q .\overrightarrow{\nabla} \rho]^{2-q} $$
 
-Where $$\rho$$ represents diffusing element concentration, $$D_q$$ denotes the generalized diffusion coefficient and $q$ is the power law parameter conveniently written. When $$q=1$$, the porous media equation recovers the classical diffusion, for $$q&lt;1$$ it represents sub-diffusive process, and when $$q&gt;1$$ it means super-diffusive phenomena are present. The $$D_q$$ is the diffusion coefficient function that regulates diffusibility. We can distinguish $$D_q$$ function in isotropic: when the diffusion coefficient is the same for all direction, i.e. $$D_q$$ is direction invariant; and anisotropic behavior: when diffusion is driven to specific directions. The definition of isotropy or anisotropy is directly related to $$D_{q}$$ function, which is the spatial function that regulates the filter blurring effect at each point.
+Where $$\rho$$ represents diffusing element concentration, $$D_q$$ denotes the generalized diffusion coefficient and $q$ is the power law parameter conveniently written. When $$q=1$$, the porous media equation recovers the classical diffusion, for $$q<1$$ it represents sub-diffusive process, and when $$q>1$$ it means super-diffusive phenomena are present. The $$D_q$$ is the diffusion coefficient function that regulates diffusibility. We can distinguish $$D_q$$ function in isotropic: when the diffusion coefficient is the same for all direction, i.e. $$D_q$$ is direction invariant; and anisotropic behavior: when diffusion is driven to specific directions. The definition of isotropy or anisotropy is directly related to $$D_{q}$$ function, which is the spatial function that regulates the filter blurring effect at each point.
 
 ### Generalized diffusion coefficient function
 
@@ -48,16 +39,16 @@ The generalized diffusion coefficient value, $$D_q$$, must be consistent with AD
 Proposed IAD and AAD filters are based on iterative numerical algorithms for ADP. The method used to solve partial differential anomalous equations uses finite differences, of first and second order, when time and space becomes discrete, i.e. digital images. Both isotropic and anisotropic approaches were implemented through numerical differential operators using explicit numeric formulation, similar to classic anisotropic diffusion filter (purposed by Perona and Malik).
 
 Numerical approaches were implemented using differential operators in one dimension, and then rotated in eight angle directions with respect to the central reference pixel. We can express this rotation in follow equation.
-```
+
 $$
     I_{\phi,t+1} = I_{\phi,t} + \lambda.\overrightarrow{\nabla} \Big[ D_q. \overrightarrow{\nabla} I_{\phi,t}^{2 - q} \Big]
 $$
-```
+
 Where $$I_{\phi,t}$$ and $$I_{\phi,t+1}$$ are the evaluated images in $$t_i$$ iterations, and $$I_{\phi,0}$$ is the original image. $$D_{q}$$ is the diffusion coefficient regulated by a power law with $$\textit{q}$$, and $$\phi$$ are the possible orientations with respect to the central pixel. The equation above assumes the time step is a constant ($$\lambda \propto \Delta t/\Delta x^2$$) and it depends on the numerical discretization. A careful time step determination plays an important role for numerical stability. The time step determination have a direct influence on the numeric discretization of the diffusion equation and here it follows the same assumptions made for the classical anisotropic diffusion algorithm. More details about the time step parameters and numerical stability can be found in [references section of the CSIM page](/orgs/csim-lab#publications).
 
 ## Filters parameters
 
-{% include thumbnail src='/media/plugins/filters-parameters.png' title='Filter\'s parameters for both isotropic and anisotropic approaches.'%}
+{% include img align="right" src='filters-parameters' width=278 title="Filter's parameters for both isotropic and anisotropic approaches." %}
 
 Basically, the common parameters that are used for both anomalous filtering methods are the number of iterations and the anomalous parameter (q value). The number of iterations is directly related to the time parameter and it must be a positive and integer number, because of the forward and discrete filter implementation. The anomalous parameter, or q value, is the general parameters to define what anomalous probability distribution that will be used for all filtering process in the image.
 

@@ -4,7 +4,12 @@ project: /software/imagej2
 website: https://pypi.org/project/pyimagej/
 source-url: https://github.com/imagej/pyimagej
 dev-status: Active
-team-developers: '@ctrueden, @hinerm, @elevans'
+team-lead: '@ctrueden'
+team-developers: ['@ctrueden', '@elevans', '@gselzer']
+team-debuggers: ['@ctrueden', '@elevans', '@gselzer', '@hinerm']
+team-reviewers: ['@ctrueden', '@elevans', '@gselzer', '@hinerm']
+team-support: ['@ctrueden', '@elevans', '@gselzer', '@hinerm']
+team-maintainers: ['@ctrueden', '@elevans', '@hinerm']
 doi: 10.5281/zenodo.5537065
 ---
 

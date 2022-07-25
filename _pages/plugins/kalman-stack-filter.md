@@ -1,10 +1,16 @@
 ---
 mediawiki: Kalman_Stack_Filter
+name: "Kalman Stack Filter"
 title: Kalman Stack Filter
 categories: [Filtering]
+release-date: "17 November 2006"
+initial-release-date: "23 May 2003"
+website: "https://imagej.nih.gov/ij/plugins/kalman.html"
+dev-status: "stable (not yet in fiji update)"
+team-founder: 'Christopher Philip Mauer'
 ---
 
-{% include info-box software='ImageJ' name='Kalman Stack Filter' author='Christopher Philip Mauer' filename='Kalman\_Stack\_Filter.class' source=' [Kalman\_Stack\_Filter.java](https://imagej.nih.gov/ij/plugins/download/Kalman_Stack_Filter.java)' released='23 May 2003' latest-version='17 November 2006' status='stable (not yet in fiji update)' category='Filtering' website='https://imagej.nih.gov/ij/plugins/kalman.html' %}
+{% include info-box filename='Kalman\_Stack\_Filter.class' source=' [Kalman\_Stack\_Filter.java](https://imagej.nih.gov/ij/plugins/download/Kalman_Stack_Filter.java)'  %}
 
 ## Purpose
 

@@ -6,8 +6,8 @@ name: PhotoBend
 source-url: https://github.com/anotherche/photobend
 release-date: 26 Apr 2017
 dev-status: Alpha
-team-founders: Stanislav Chizhik | /people/anotherche
-team-maintainers: Stanislav Chizhik | /people/anotherche
+team-founders: "@anotherche"
+team-maintainers: "@anotherche"
 doi: 10.1039/C7SC04863G
 ---
 

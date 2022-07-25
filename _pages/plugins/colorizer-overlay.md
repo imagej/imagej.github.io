@@ -1,10 +1,14 @@
 ---
-mediawiki: Colorizer_Overlay
 title: Colorizer Overlay
 categories: [Image Annotation]
+project: /software/imagej
+name: "Colorizer\_Overlay"
+initial-release-date: "2020-04-01"
+license-label: GPL
+license-url: https://www.gnu.org/licenses/gpl.html
+dev-status: "stable"
+team-founder: 'Fred Damen'
 ---
-
-{% include info-box software='ImageJ 1.x' name='Colorizer\_Overlay' author='Fred Damen' filename='Colorizer\_Overlay.jar' source=' [Colorizer_Overlay.zip](/media/plugins/colorizer-overlay.zip)' released='1 April 2020' status='stable' category='Image annotation' website='' %}
 
 The Colorizer\_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, i.e., quantified image, and overlay this upon a background image. The impetus for this plugin was my inability to remember how to perform all the necessary steps and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
 
@@ -38,22 +42,39 @@ The process of generating a colorized overlay is best, but not required, done in
 
 ## Methods
 
-`public static ImagePlus doOverlay(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi, double wmin, double wmax, String lut)`  
+```java
+public static ImagePlus doOverlay(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi, double wmin, double wmax, String lut)
+```
 Apply LUT to Roi'ed DisplayRange'd forground image, overlay on Roi'ed background image and crop to bounding box. Roi(s) need to explicitly identified; image(s) will not be queried for Roi(s).
 
-`public static ImagePlus addLabel(ImagePlus imp, double x, double y, String label, Font font, Color fgc, Color bgc)`  
+```java
+public static ImagePlus addLabel(ImagePlus imp, double x, double y, String label, Font font, Color fgc, Color bgc)
+```
 Add label to imp at x,y using font and colors.
 
-`public static ImagePlus addColorBar(ImagePlus imp, String lut, String cbwhere, String cbsize, double fgll, double fgul, String format, Font font, Color fgc, Color bgc)`  
+```java
+public static ImagePlus addColorBar(ImagePlus imp, String lut, String cbwhere, String cbsize, double fgll, double fgul, String format, Font font, Color fgc, Color bgc)
+```
 Add a properly adorned colorbar of at edge of the image.
 
-`public static ImagePlus doScale(ImagePlus imp, String newSize, String interpolationType, String boarderType)`  
+```java
+public static ImagePlus doScale(ImagePlus imp, String newSize, String interpolationType, String boarderType)
+```
 Scale the image appropriately.
 
-`public static ImagePlus doOverlayLabelColorBar(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi,` `String label, double fgll, double fgul, double multiplier,` `String lut, String cbwhere, String cbsize, String format, Font font, Color fgc, Color bgc)`  
+```java
+public static ImagePlus doOverlayLabelColorBar(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi,
+                                               String label, double fgll, double fgul, double multiplier,
+                                               String lut, String cbwhere, String cbsize, String format, Font font, Color fgc, Color bgc)
+```
 Overlay colorbar and label.
 
-`public static ImagePlus doOverlayScaleLabelColorBar(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi,` `String label, double fgll, double fgul, double multiplier, String lut,` `String newSize, String interpolationType, String boarderType,` `String cbwhere, String cbsize, String format, Font font, Color fgc, Color gc)`  
+```java
+public static ImagePlus doOverlayScaleLabelColorBar(ImagePlus bgimp, Roi bgroi, ImagePlus fgimp, Roi fgroi,
+                                                    String label, double fgll, double fgul, double multiplier, String lut,
+                                                    String newSize, String interpolationType, String boarderType,
+                                                    String cbwhere, String cbsize, String format, Font font, Color fgc, Color gc)
+```
 Scale then overlay colorbar and label.
 
 ## Coding Goodies
@@ -62,7 +83,7 @@ How to not do string overlays; there are more direct ways I discovered after bec
 
 ## Install
 
-Unzip [Colorizer\_Overlay.zip](/media/plugins/colorizer-overlay.zip) into ImageJ 1.x plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.  
+Unzip [Colorizer\_Overlay.zip](/media/plugins/colorizer-overlay.zip) into ImageJ's plugins {% include bc path="File|Show Folder|Plugins" %} or plugins/jars directories. Source code in jar file.  
 {% include bc path="Plugins|Annotation|Colarizer_Overlay..." %}
 
 ## Licence
@@ -76,5 +97,3 @@ GPL distribution licence.
 ## Known Bugs
 
 Let me know.
-
- 

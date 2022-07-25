@@ -1,16 +1,13 @@
 ---
-mediawiki: Delaunay_Voronoi
 title: Delaunay Voronoi
-categories: [Uncategorized]
+
+name: "Delaunay/Voronoi"
+categories: [Image Annotation]
+initial-release-date: "2006-08-14"
+team-founders: L. Paul Chew
+artifact: sc.fiji:VIB_
+source-url: https://github.com/fiji/VIB/blob/master/src/main/java/Delaunay_Voronoi.java
 ---
-
-
-{% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='Delaunay_Voronoi.java' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Delaunay/Voronoi' author='Johannes Schindelin, L. Paul Chew' maintainer='Johannes Schindelin' source=source released='14 August 2006' latest-version='11 December 2008' status='stable' category='Image annotation' %}
-
-## Purpose
 
 Plugin to perform Delaunay Triangulation, or draw the Voronoi Diagram for a given point ROI.
 
@@ -24,7 +21,7 @@ The dual problem is the Voronoi Diagram: given a set of points, visualize those 
 
 A picture says more than thousand words:
 
-![The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black](/media/delaunay-voronoi.png)
+{% include img src="delaunay-voronoi" caption="The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black" %}
 
 ## Usage
 
@@ -38,7 +35,7 @@ This plugin operates on a point selection consisting of multiple points.
 
 The plugin shows this dialog when it is called:
 
-![](/media/plugins/delaunay-dialog.png)
+{% include img src="delaunay-dialog" %}
 
 Options include:
 

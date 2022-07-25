@@ -3,13 +3,16 @@ mediawiki:
 - Linear_Distance
 - LinearDistance
 title: LinearDistance
+name: "Linear Distance"
 categories: [Uncategorized]
+release-date: "29/12/2016"
+initial-release-date: "15/04/2016"
+dev-status: "Alpha"
+team-founder: 'Simon Klein'
+team-maintainer: 'Simon Klein'
+source-url: https://github.com/kleinsimon/PointAnalysis
 ---
 
-{% capture source%}
-{% include github org='kleinsimon' repo='PointAnalysis' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Linear Distance' maintainer='Simon Klein' author='Simon Klein' source=source released='15/04/2016' latest-version='29/12/2016' status='Alpha' category='Plugins' website='' %}
 
 Plugin for ImageJ to measure linear distances in images in X and Y direction. At this time, two methods are implemented: First, the automatic scan of a binarized, two phased image. Second, the interactive placement of marks which will be measured afterwards (Linear Interception).
 

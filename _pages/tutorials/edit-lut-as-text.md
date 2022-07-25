@@ -1,13 +1,17 @@
 ---
 mediawiki: Edit_LUT_As_Text
+name: "Edit LUT As Text"
 title: Edit LUT As Text
+dev-status: "stable"
+team-founder: '@dscho'
+team-maintainer: '@dscho'
 ---
 
 
 {% capture source%}
 {% include github repo='fiji' branch='master' path='plugins/Examples/Edit_LUT_As_Text.py' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Edit LUT As Text' author='Johannes Schindelin' maintainer='Johannes Schindelin' source=source status='stable' %}
+{% include info-box source=source %}
 
 # Purpose
 

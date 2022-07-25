@@ -1,10 +1,14 @@
 ---
 mediawiki: Minimum/Maximum/Median
+name: "Minimum/Maximum/Median"
 title: Minimum/Maximum/Median
 categories: [Uncategorized]
+dev-status: "beta"
+team-founder: '@bene51'
+team-maintainer: '@bene51'
 ---
 
-{% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='VIB\_.jar' source='VIB\_.jar' status='beta' %}
+{% include info-box filename='VIB\_.jar' source='VIB\_.jar' %}
 
 ## Purpose
 

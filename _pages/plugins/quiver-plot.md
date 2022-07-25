@@ -1,24 +1,15 @@
 ---
 mediawiki: Quiver_Plot
+name: "Quiver Plot"
 title: Quiver Plot
 categories: [Visualization]
+release-date: "March 17, 2017 (v0.2.0)"
+initial-release-date: "January 11, 2017"
+dev-status: "stable, active"
+team-founder: "@llamero"
+team-maintainer: "@llamero"
+source-url: https://github.com/llamero/Quiver_Plot
 ---
-
-
-{% capture author%}
-{% include person id='llamero' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='llamero' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='llamero' repo='Quiver_Plot' %}
-{% endcapture %}
-{% include info-box name='Quiver Plot' software='plugin' author=author maintainer=maintainer source=source released='January 11<sup>th</sup>, 2017' latest-version='March 17<sup>th</sup>, 2017 (v0.2.0)' status='stable, active' category='Visualization' %}
-
-## Introduction
 
 A quiver plot is a 2D array of vector arrows that can be used to visualize dynamic processes such as flow or wave propagation. Vectors have both magnitude and direction; therefore to generate a vector plot, there needs to be a corresponding 2D array of the direction of each vector, and a 2D array of the magnitude of each vector.
 

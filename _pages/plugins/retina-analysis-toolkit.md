@@ -1,17 +1,21 @@
 ---
 mediawiki: RETINA_Analysis_Toolkit
+name: "RETINA Analysis Toolkit"
 title: RETINA Analysis Toolkit
 doi: 10.1167/iovs.15-17599
 categories: [Uncategorized]
+release-date: "July 21, 2016"
+initial-release-date: "August 18, 2015"
+team-founders:
+- "@DanielMaidana"
+- "Demetrios G. Vavvas | https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g"
+team-maintainer: "@DanielMaidana"
+website: "https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ"
+dev-status: "Active and validated with Fiji (ImageJ 1.51d)"
 ---
 
-{% include info-box software='ImageJ' name='RETINA Analysis Toolkit' author=' [**Daniel E. Maidana**](https://www.researchgate.net/profile/Daniel_Maidana2)  
-[**Demetrios G. Vavvas**](https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g)' maintainer='**Daniel E. Maidana**  
-Angiogenesis Laboratory  
-Massachusetts Eye and Ear Infirmary  
-Harvard Medical School  
-Email: [Daniel Maidana](mailto:dmaida3@uic.edu)' filename=' [TUNEL Cell Counter Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip)' source=' [TUNEL Cell Counter Repository](https://osf.io/9rveh/)  
-' released='August 18<sup>th</sup>, 2015' latest-version='July 21<sup>th</sup>, 2016' status='Active and validated with Fiji (ImageJ 1.51d)' website=' [RETINA Analysis Toolkit at YouTube](https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ)' %}  
+{% include info-box filename=' [TUNEL Cell Counter Macro](https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip)' source=' [TUNEL Cell Counter Repository](https://osf.io/9rveh/)' %}
+
 **RETINA Analysis Toolkit** is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
 
 

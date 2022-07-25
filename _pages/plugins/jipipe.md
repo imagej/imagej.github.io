@@ -12,7 +12,7 @@ release-date: 2022
 license-url: /licensing/bsd
 license-label: BSD 2-clause
 
-team-founders: Ruman Gerst, Zoltan Cseresnyes, Marc Thilo Figge
+team-founders: [Ruman Gerst, Zoltan Cseresnyes, Marc Thilo Figge]
 ---
 
 {% include img name="JIPipe-GUI" src="/media/plugins/jipipe-algorithm-finder.png" %}

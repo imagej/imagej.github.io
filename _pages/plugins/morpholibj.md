@@ -5,6 +5,7 @@ categories: [Analysis, Filtering, Segmentation, Mathematical Morphology]
 doi: 10.1093/bioinformatics/btw413
 artifact: fr.inra.ijpb:MorphoLibJ_
 extensions: ["mathjax"]
+team-founders: [Gaetan Lehmann, '@dlegland']
 ---
 
 MorphoLibJ is a collection of {% include wikipedia title='Mathematical morphology' text='mathematical morphology' %} methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital Imaging lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
@@ -732,7 +733,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 {% include citation fn=8 doi='10.1002/9783527628308.ch4' %}
 
-{% include citation fn=9 title='Efficient N-Dimensional surface estimation using Crofton formula and run-length encoding' author='Lehmann, Gaetan and Legland, David' journal='Insight Journal' year='2012' pages='1-11' url='https://www.insight-journal.org/browse/publication/852' %} <!-- TODO: No doi for Insight Journal articles. Decide whether to hardcode AMA style, or do something fancier. -->
+{% include citation fn=9 title='Efficient N-Dimensional surface estimation using Crofton formula and run-length encoding' journal='Insight Journal' year='2012' pages='1-11' url='https://www.insight-journal.org/browse/publication/852' %} <!-- TODO: No doi for Insight Journal articles. Decide whether to hardcode AMA style, or do something fancier. -->
 
 {% include citation fn=10 doi='10.1111/j.1365-2818.1981.tb01197.x' %}
 

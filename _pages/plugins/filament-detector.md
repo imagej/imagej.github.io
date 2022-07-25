@@ -1,31 +1,20 @@
 ---
-mediawiki: FilamentDetector
+name: FilamentDetector
 title: FilamentDetector
-categories: [Uncategorized]
+project: /software/fiji
+categories: [Object Detection, Tracking]
+initial-release-date: "13/10/2017"
+artifact: sc.fiji:FilamentDetector
 ---
-
-
-{% capture author%}
-{% include person id='hadim' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='hadim' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='hadim' repo='FilamentDetector' %}
-{% endcapture %}
-{% include info-box name='FilamentDetector' logo='' software='Fiji' author=author maintainer=maintainer source=source released='13/10/2017' status='v0.1.1, alpha' category='Tracking, Detection' %}
-
-## Presentation
 
 FilamentDetector is a Fiji plugin that allows easy, fast and accurate detection and tracking of biological filaments.
 
-**Please visit the GitHub page for more information: https://github.com/hadim/FilamentDetector**
+Please visit the GitHub page for more information:
+
+{% include link-banner url="https://github.com/fiji/FilamentDetector" %}
 
 ## Authors
 
-FilamentDetector has been created by Hadrien Mary.
+FilamentDetector has been created by {% include person id="hadim" %}, and is included with the [Fiji](/software/fiji) distribution of ImageJ.
 
-This work started in 2017 at the Gary Brouhard laboratory (http://brouhardlab.mcgill.ca) at McGill University.
+This work started in 2017 at the [Gary Brouhard laboratory](https://brouhardlab.mcgill.ca) at McGill University.

@@ -1,14 +1,20 @@
 ---
 mediawiki: ROI_Picker
+name: "ROI Picker"
 title: ROI Picker
 categories: [Uncategorized]
+release-date: "22 October 2013"
+initial-release-date: "30 August 2013"
+dev-status: "second version"
+team-founder: '@hinerm'
+team-maintainer: '@hinerm'
 ---
 
 
 {% capture source%}
 {% include github org='fiji' repo='Stitching' branch='master' source='tools/RoiPicker.java' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='ROI Picker' author='Mark Hiner' maintainer='Mark Hiner' source=source released='30 August 2013' latest-version='22 October 2013' status='second version' category='Plugins' %}
+{% include info-box source=source  %}
 
 ## Purpose
 

@@ -1,10 +1,18 @@
 ---
 mediawiki: Slice_Labeler
+name: "Slice Labeler"
 title: Slice Labeler
 categories: [Image Annotation]
+release-date: "13 May 2004"
+initial-release-date: "13 May 2004"
+website: "https://imagej.nih.gov/ij/plugins/slice-labeler.html"
+dev-status: "stable"
+team-founder: 'Pedro Ramos-Cabrer'
 ---
 
-{% include info-box software='ImageJ' name='Slice Labeler' author='Pedro Ramos-Cabrer' filename=' [Slice\_Labeler.class](https://imagej.nih.gov/ij/plugins/download/Slice_Labeler.class)' source=' [Slice\_Labeler.java](https://imagej.nih.gov/ij/plugins/download/Slice_Labeler.java)' released='13 May 2004' latest-version='' status='stable' category='Image annotation' website=' [Slice Labeler](https://imagej.nih.gov/ij/plugins/slice-labeler.html)' %} This plugin is superceeded by the [Series Labeler](/plugins/series-labeler)
+{% include info-box filename=' [Slice\_Labeler.class](https://imagej.nih.gov/ij/plugins/download/Slice_Labeler.class)' source=' [Slice\_Labeler.java](https://imagej.nih.gov/ij/plugins/download/Slice_Labeler.java)' category='Image annotation' %}
+
+This plugin is superseded by the [Series Labeler](/plugins/series-labeler).
 
 *Copy from the website:*
 

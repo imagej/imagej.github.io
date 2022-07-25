@@ -1,10 +1,16 @@
 ---
 mediawiki: Interactive_Rigid
+name: "Interactive Rigid"
 title: Interactive Rigid
 categories: [Transform]
+release-date: "October 10, 2008"
+initial-release-date: "October 10, 2008"
+dev-status: "stable"
+team-founder: '@axtimwalde'
+team-maintainer: '@axtimwalde'
 ---
 
-{% include info-box name='Interactive Rigid' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Rigid.java)' released='October 10, 2008' latest-version='October 10, 2008' status='stable' category='Transform, Plugins' %}
+{% include info-box source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Rigid.java)'  %}
 
 This plugin allows to apply a rigid transformation (rotation and translation) to a 2D image in an interactive way.
 

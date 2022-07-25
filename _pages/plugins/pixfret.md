@@ -1,19 +1,22 @@
 ---
 mediawiki: PixFRET
+name: "PixFRET"
 title: PixFRET
 doi: 10.1002/jemt.20215
 categories: [Uncategorized]
+release-date: "1.5.2"
+initial-release-date: "2005"
+dev-status: "stable"
+team-maintainer: "@imagejan"
+team-founders: [Jerome Feige, '@dasv74', Walter Wahli, Beatrice Desvergne, Laurent Gelman]
 ---
 
 
-{% capture maintainer%}
-{% include person id='imagejan' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='fmi-basel' repo='pixfret' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='PixFRET' author='Jerome Feige, Daniel Sage, Walter Wahli, Beatrice Desvergne, Laurent Gelman' maintainer=maintainer source=source released='2005' latest-version='1.5.2' status='stable' category='Analysis' %}
+{% include info-box source=source  category='Analysis' %}
 
 ## Installation
 

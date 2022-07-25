@@ -1,37 +1,37 @@
 ---
 mediawiki: LungJ
+name: "LungJ"
 title: LungJ
 categories: [Segmentation,Binary,Filtering,Image Annotation]
 doi: 10.5258/SOTON/401280
+initial-release-date: "Nov 10, 2016"
+icon: /media/icons/lungj.png
+pom-url: https://raw.githubusercontent.com/LWollatz/LungJ/master/pom.xml
 ---
 
-
-{% capture LWollatz -%} {% include person id='LWollatz' %} {%- endcapture %}
-{% capture source -%} {% include github org='LWollatz' repo='LungJ' %} {%- endcapture %}
-{% include info-box name='LungJ' author=LWollatz maintainer=LWollatz software='ImageJ/Fiji' logo='<img src="/media/icons/lungj.png" title="fig:LungJ-logo.png" width="200" alt="LungJ-logo.png" />' source=source released='Nov 10<sup>st</sup>, 2016' latest-version='0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1)' status='stable, new' category='Segmentation, Binary, Filtering, Image annotation' %}
-
+LungJ is a plug-in for Fiji / ImageJ for segmenting images, too large to process in RAM at once as well as several other tools for image segmentation & processing.
 
 ## Installation
 
-1\) {% include bc path='Help | Update...'%}
+1. {% include bc path='Help | Update...'%}
 
-2\) Manage update sites
+2. Manage update sites
 
-3\) Add update site
+3. Add update site
 
-4\) Name: LungJ
+4. Name: LungJ
 
-5\) URL: http://sites.imagej.net/LungJ/
+5. URL: http://sites.imagej.net/LungJ/
 
-6\) Close
+6. Close
 
-7\) {% include bc path='Help | Update...'%}
+7. {% include bc path='Help | Update...'%}
 
-8\) Restart Fiji/ ImageJ to apply changes.
+8. Restart Fiji/ ImageJ to apply changes.
 
-9\) A new subdirectory called LungJ appears under Plugins.
+9. A new subdirectory called LungJ appears under Plugins.
 
-10\) Future versions of LungJ will be updated together with the normal Fiji plugin updates.
+10. Future versions of LungJ will be updated together with the normal Fiji plugin updates.
 
 ## Function Documentation
 

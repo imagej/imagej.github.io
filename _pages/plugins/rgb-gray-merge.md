@@ -1,10 +1,16 @@
 ---
 mediawiki: RGB-Gray_Merge
+name: "RGB-Gray Merge"
 title: RGB-Gray Merge
 categories: [Color Processing]
+release-date: "4 January 2007"
+initial-release-date: "12 December 2001"
+dev-status: "Unmaintained"
+team-founder: 'Eugene Tkachenko and Justin D. Pearlman'
+team-maintainer: 'None'
 ---
 
-{% include info-box software='ImageJ' name='RGB-Gray Merge' author='Eugene Tkachenko and Justin D. Pearlman' maintainer='None' filename='RGB\_Gray\_Merge.class' source='RGB\_Gray\_Merge.java' released='12 December 2001' latest-version='4 January 2007' status='Unmaintained' category='Color Processing' %}
+{% include info-box filename='RGB\_Gray\_Merge.class' source='RGB\_Gray\_Merge.java'  %}
 
 ## Purpose
 

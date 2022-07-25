@@ -1,15 +1,18 @@
 ---
 mediawiki: StarDist
+name: "StarDist"
 title: StarDist
 categories: [Machine Learning, Segmentation]
 doi: 10.1007/978-3-030-00934-2_30
+website: "https://github.com/stardist/stardist"
+update-site: "StarDist"
+team-founders: ['@uschmidt83', '@maweigert']
+team-maintainers: ['@uschmidt83', '@maweigert']
+source-url: https://github.com/stardist/stardist-imagej
 ---
 
 
-{% capture source%}
-{% include github org='stardist' repo='stardist-imagej' %}
-{% endcapture %}
-{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/stardist/stardist' %} <img src="/media/icons/stardist.jpg" width="128"/>
+<img src="/media/icons/stardist.jpg" width="128"/>
 
 ## Overview
 

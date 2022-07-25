@@ -1,11 +1,17 @@
 ---
 mediawiki: Iterative_Deconvolve_3D
+name: "Iterative Deconvolve 3D"
 title: Iterative Deconvolve 3D
 categories: [Deconvolution]
 doi: 10.2514/6.2005-2961
+release-date: "4 June 2005"
+initial-release-date: "1 May 2005"
+website: "http://www.optinav.info/Iterative-Deconvolve-3D.htm"
+dev-status: "stable"
+team-founder: 'Bob Dougherty'
 ---
 
-{% include info-box software='ImageJ' name='Iterative Deconvolve 3D' author='Bob Dougherty' filename=' [Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class)' source=' [Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java)' released='1 May 2005' latest-version='4 June 2005' status='stable' category='Deconvolution' website='http://www.optinav.info/Iterative-Deconvolve-3D.htm' %}
+{% include info-box filename=' [Iterative\_Deconvolve\_3D.class](http://www.optinav.info/download/Iterative_Deconvolve_3D.class)' source=' [Iterative\_Deconvolve\_3D.java](http://www.optinav.info/download/Iterative_Deconvolve_3D.java)'  %}
 
 ## Purpose
 

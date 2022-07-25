@@ -1,22 +1,16 @@
 ---
 mediawiki: BoneJ1
+name: "BoneJ 1.x"
 title: BoneJ1
 categories: [Uncategorized]
 doi: 10.1016/j.bone.2010.08.023
+website: "http://bonej.org/legacy"
+dev-status: "Legacy"
+team-maintainer: "@mdoube"
+team-founder: "@mdoube"
+source-url: https://github.com/mdoube/BoneJ
+icon: /media/icons/bonej.png
 ---
-
-{% capture author%}
-{% include person id='mdoube' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='mdoube' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='mdoube' repo='BoneJ' %}
-{% endcapture %}
-{% include info-box name='BoneJ 1.x' software='ImageJ' logo='<img src="/media/icons/bonej.png" width="96"/>' author=author maintainer=maintainer source=source status='Legacy' website='http://bonej.org/legacy' %}
 
 BoneJ is a plugin for bone image analysis in [ImageJ](/software/imagej). It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 

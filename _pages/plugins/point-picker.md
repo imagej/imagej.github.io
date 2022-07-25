@@ -1,18 +1,23 @@
 ---
 title: Point Picker
-name: "Point Picker"
 categories: [Particle Analysis]
-release-date: "27 September 2003"
-initial-release-date: "16/09/2010"
-release-date: "16/09/2010"
-website: "http://bigwww.epfl.ch/thevenaz/pointpicker/"
-dev-status: "probably not active"
+
+name: Point Picker
+initial-release-date: "27-09-2003"
+website: http://bigwww.epfl.ch/thevenaz/pointpicker/
 team-founder: 'Philippe Thévenaz | http://bigwww.epfl.ch/thevenaz/'
-team-maintainer: 'Philippe Thévenaz'
-source-url: https://github.com/fiji/PointPicker/blob/master/src/main/java/PointPicker_.java
+source-url: https://github.com/fiji-BIG/PointPicker
+artifact: sc.fiji:PointPicker_
+license-label: BIG
+license-url: /licensing/big
+update-site: BIG-EPFL
 ---
 
+{% include notice icon='osi-symbol' content="Be aware that the BIG-EPFL plugins are not [open source](/licensing/open-source)." %}
+
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/pointpicker/).
+
+Enable the [BIG-EPFL update site](/update-sites/big-epfl) to gain access to the Extended Depth of Field plugin.
 
 ## Downloads and resources
 

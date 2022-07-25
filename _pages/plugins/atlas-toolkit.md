@@ -1,19 +1,20 @@
 ---
 mediawiki: Atlas_Toolkit
+name: "Atlas Toolkit"
 title: Atlas Toolkit
 categories: [Registration]
 doi: 10.1038/srep20732
+release-date: "1.0, May 6, 2015"
+initial-release-date: "November 16, 2015"
+website: "http://www.grocottlab.com/software"
+dev-status: "stable, active"
+team-maintainer: '@GrocottLab'
+team-founder: '@GrocottLab'
+source-url: https://github.com/GrocottLab/Atlas-Toolkit
+pom-url: https://raw.githubusercontent.com/GrocottLab/Atlas-Toolkit/master/pom.xml
 ---
 
-
-{% capture maintainer%}
-{% include person id='GrocottLab' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='GrocottLab' repo='Atlas-Toolkit' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='Atlas Toolkit' author=' [Grocott Lab](http://www.grocottlab.com)' maintainer=maintainer filename='Atlas\_Toolkit\_1.0-SNAPSHOT.jar' source=source released='November 16<sup>th</sup>, 2015' latest-version='1.0, May 6<sup>th</sup>, 2015' status='stable, active' category='Registration' website=' [www.grocottlab.com](http://www.grocottlab.com/software)' %}The Atlas Toolkit plugin is a collection of tools developed to achieve group-wise elastic registration of 3D objects by decomposing the alignment problem into a sequence of orthogonal 2D elastic registrations, for which each object is registered to every other. These 2D elastic registrations are powered by the [BUnwarpJ](/plugins/bunwarpj) plugin, and registration is guided by the gross morphology of the corresponding 3D objects, which can be defined using the [Segmentation Editor](/plugins/segmentation-editor) plugin.
+The Atlas Toolkit plugin is a collection of tools developed to achieve group-wise elastic registration of 3D objects by decomposing the alignment problem into a sequence of orthogonal 2D elastic registrations, for which each object is registered to every other. These 2D elastic registrations are powered by the [BUnwarpJ](/plugins/bunwarpj) plugin, and registration is guided by the gross morphology of the corresponding 3D objects, which can be defined using the [Segmentation Editor](/plugins/segmentation-editor) plugin.
 
 ## Installation of the plugin
 

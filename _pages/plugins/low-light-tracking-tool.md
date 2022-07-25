@@ -1,20 +1,20 @@
 ---
 mediawiki: Low_Light_Tracking_Tool
+name: "Blob Tracking"
 title: Low Light Tracking Tool
-categories: [Tutorials]
+categories: [Tracking]
+release-date: "May 22, 2013"
+initial-release-date: "May 22, 2013"
+dev-status: "PreRelease, active"
+team-founders: ["@alex-krull", "@damienrj"]
+team-maintainer: "@alex-krull"
+source-url: https://github.com/alex-krull/fiji
+doi: 10.1364/OE.22.000210
 ---
 
+This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper:
 
-{% capture author%}
-{% include person id='alex-krull' %}, {% include person id='damienrj' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='alex-krull' %}, {% include person id='damienrj' %}
-{% endcapture %}
-{% include info-box name='Blob Tracking' software='Fiji' author=author maintainer=maintainer source='https://github.com/alex-krull/fiji' released='May 22<sup>nd</sup>, 2013' latest-version='May 22<sup>nd</sup>, 2013' status='PreRelease, active' category='Tracking' %}
-
-This software is a tool for the tracking of low-light sub-resolution objects in fluorescent microscopy. It can be applied in other fields as well. The plugin implements the localization algorithm described in the following paper: "A Divide and Conquer Strategy for the Maximum Likelihood localization of Low Intensity Objects" by Alexander Krull et al, 2013 Optics Express, Vol. 22, Issue 1, pp. 210-228 (2014).
+{% include citation %}
 
 # Installation of the plugin
 

@@ -1,22 +1,16 @@
 ---
 mediawiki: Neuroanatomy
+name: "Neuroanatomy update site"
 title: Neuroanatomy
-categories: [Uncategorized]
+categories: [Analysis, Neuroanatomy]
 project: /software/fiji
+dev-status: "Active"
+team-founder: "@tferr"
+team-maintainer: "@tferr"
+source-url: https://github.com/morphonets
 ---
 
-{% capture author%}
-{% include person id='tferr' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='tferr' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='morphonets' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='Neuroanatomy update site' author=author maintainer=maintainer source=source status='Active' category='Plugins, Analysis, Neuroanatomy' %} The Neuroanatomy update site is used for distribution of [SNT](/plugins/snt). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included.
+The Neuroanatomy update site is used for distribution of [SNT](/plugins/snt). A few other (legacy) plugins for *Image Processing for NeuroAnatomy and Tree-like Structures* are also included.
 
 # Installation
 

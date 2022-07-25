@@ -1,24 +1,22 @@
 ---
 mediawiki: SampEn2D
+name: "Two-dimensional Sample Entropy (SampEn2D) PlugIn"
 title: SampEn2D
 categories: [Pattern Recognition]
 doi:
 - 10.1088/2057-1976/2/4/045002
 - 10.1109/EMBC.2014.6944339
+release-date: "June 23<sup>rd</sup>, 2016"
+initial-release-date: "June 23<sup>rd</sup>, 2016"
+dev-status: "experimental, active"
+team-founder: "@acsenrafilho"
+team-maintainer: "@acsenrafilho"
 ---
-
-{% capture author%}
-{% include person id='acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='acsenrafilho' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/SampleEntropy-2D' label='GitHub CSIM-ImageJ SampEn2D repository' %}
 {% endcapture %}
-{% include info-box name='Two-dimensional Sample Entropy (SampEn2D) PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='June 23<sup>rd</sup>, 2016' latest-version='June 23<sup>rd</sup>, 2016' status='experimental, active' category='Plugins, Pattern Recognition' %}
+{% include info-box source=source  %}
 
 ## Two-dimensional Sample Entropy
 

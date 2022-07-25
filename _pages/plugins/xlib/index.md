@@ -3,9 +3,9 @@ mediawiki: Xlib
 title: Xlib
 categories: [Analysis,Filtering,MATLAB,Particle Analysis,Segmentation,Skeleton]
 name: Xlib
-team-founders: Beat Münch
-team-leads: Beat Münch
-team-maintainers: Beat Münch
+team-founders: "@bmuench"
+team-leads: "@bmuench"
+team-maintainers: "@bmuench"
 release-date: 6 Dec 2021
 source-label: on SWITCHdrive
 source-url: https://drive.switch.ch/index.php/s/WOVSIPMky2JsXsp

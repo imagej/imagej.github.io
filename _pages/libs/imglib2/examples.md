@@ -2,7 +2,7 @@
 title: ImgLib2 Examples
 section: Explore:Libraries:ImgLib2
 name: ImgLib2 Examples
-team-maintainers: Stephan Preibisch, Curtis Rueden
+team-maintainers: ["@StephanPreibisch", "@ctrueden"]
 source-url: https://github.com/imglib/imglib2-tutorials
 ---
 

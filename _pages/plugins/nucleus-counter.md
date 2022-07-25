@@ -1,10 +1,13 @@
 ---
 mediawiki: Nucleus_Counter
+name: "Nucleus Counter"
 title: Nucleus Counter
 categories: [Particle Analysis]
 project: /update-sites/cookbook
+dev-status: "unknown"
+team-founder: 'unknown'
 ---
 
-{% include info-box software='ImageJ' name='Nucleus Counter' author='unknown' filename='part of [MBF ImageJ](/software/mbf-imagej) bundle' source='' released='' latest-version='' status='unknown' category='Particle Analysis' website='' %}
+{% include info-box filename='part of [MBF ImageJ](/software/mbf-imagej) bundle' %}
 
 This plugin is part of the [MBF ImageJ](/software/mbf-imagej) bundle. Author, version history and status is unknown.

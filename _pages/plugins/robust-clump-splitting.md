@@ -1,31 +1,30 @@
 ---
 mediawiki: Robust_clump_splitting
+name: "Robust Clump Splitting"
 title: Robust clump splitting
 categories: [Uncategorized]
 extensions: ["mathjax"]
+release-date: "v1.0.0 (04 Sep 2016)"
+dev-status: "active"
+team-founders: ["@LouiseBloch", "@thorstenwagner"]
+team-maintainer: "@LouiseBloch"
+artifact: de.biomedical-imaging.ij:ij_robust_split
+website: https://github.com/thorstenwagner/ij-robust-split
+dois:
+- 10.1016/j.patcog.2005.11.014
+- 10.1016/j.patcog.2012.09.008
+- 10.1109/ICIP.2011.6116627
 ---
-
-
-{% capture author%}
-{% include person id='LouiseBloch' %}, {% include person id='thorstenwagner' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='LouiseBloch' %}, {% include person id='thorstenwagner' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='Robust Clump Splitting' author=author maintainer=maintainer filename='ij\_robust\_split.jar \[\]' source='Github https://github.com/thorstenwagner/ij-robust-split' latest-version='v1.0.0 (04 Sep 2016)' status='active' %}
-
-## Purpose
 
 This plugin is an implementation of the concavity-based clump splitting algorithms described in:
 
-*Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F. (2005). A rule based Approach for robust clump splitting. Pattern Recognition, 39(6), pp.1088–1098.*
+{% include citation doi="10.1016/j.patcog.2005.11.014" %}
 
-*Farhan, M., Yli-Harja, O., und Niemistö, A. (2013). A novel method for splitting clumps of convex objects incorporating image intensity and using rectangular window-based concavity point-pair search. Pattern Recognition, 46(3), pp.741–751.*
+{% include citation doi="10.1016/j.patcog.2012.09.008" %}
 
 and
 
-*Wang, H., Zhang, H., und Nilanjan, R. (2011). Clump splitting via bottleneck detection. IEEE International Conference Image Processing, 2, pp.61–64.*
+{% include citation doi="10.1109/ICIP.2011.6116627" %}
 
 The plugin provides an alternative to the ImageJ "build-in"-[watershed](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Watershed)-plugin. It does not perform better results on regular round clumps. Especially for big clumps with image disturbances and many holes in the clump the results of the watershed plugins are much more robust and it does not depends on so many parameters. For elongated indididual objects, the plugin can produce better results than the watershed.
 
@@ -175,10 +174,10 @@ If you use ImageJ just copy ij\_robust\_split.jar in your plugins folder and cop
 
 The best way to cite the formal methods is:
 
-*Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F. (2005). A rule based Approach for robust clump splitting. Pattern Recognition, 39(6), pp.1088–1098.*
+{% include citation doi="10.1016/j.patcog.2005.11.014" %}
 
-*Farhan, M., Yli-Harja, O., und Niemistö, A. (2013). A novel method for splitting clumps of convex objects incorporating image intensity and using rectangular window-based concavity point-pair search. Pattern Recognition, 46(3), pp.741–751.*
+{% include citation doi="10.1016/j.patcog.2012.09.008" %}
 
 and
 
-*Wang, H., Zhang, H., und Nilanjan, R. (2011). Clump splitting via bottleneck detection. IEEE International Conference Image Processing, 2, pp.61–64.*
+{% include citation doi="10.1109/ICIP.2011.6116627" %}

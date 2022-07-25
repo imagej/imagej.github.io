@@ -1,50 +1,51 @@
 ---
-mediawiki: Cover_Maker
 title: Cover Maker
 categories: [Tutorials]
+artifact: sc.fiji:fiji
+name: "CoverMaker"
+dev-status: Stable
+team-maintainer: "@tomancak"
+team-contributors: "@dscho"
+release-date: "2012-06-29"
+initial-release-date: "2012-05-27"
+source-url: https://github.com/fiji/fiji/blob/master/plugins/Examples/CoverMaker/Cover_Maker.py
 ---
 
-
-{% capture maintainer%}
-{% include person id='tomancak' %}
-{% endcapture %}
-
-{% capture author%}
-{% include person id='tomancak' %}, {% include person id='dscho' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github repo='fiji' branch='master' path='plugins/Examples/CoverMaker/Cover_Maker.py' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='CoverMaker' maintainer=maintainer author=author source=source released='27/05/2012' latest-version='29/06/2012' status='active' category='Plugins' website='' %}
-
-
-## Introduction
-
-<img src="/media/plugins/nature-cover.png" title="fig:Nature cover for the paper on the developmental hourglass ." width="166" alt="Nature cover for the paper on the developmental hourglass ." />This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 66,000 images of gene expression patterns in Drosophila embryogenesis is provided [here](#Databases) as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.
+{% include img align="right" src="nature-cover" width=166 caption="Nature cover for the paper on the developmental hourglass." %}
+This project explores the algorithms for reconstructing scientific images as a combination of other scientific images drawing from a large database of scientific imagery. The resulting image can be visually stunning given that a large database with good balance of colors is available. One such database consisting of about 66,000 images of gene expression patterns in Drosophila embryogenesis is provided [here](#databases) as a starting point. The results of the plugin can be used as material for cover art such as for example the Nature cover on the right.
 
 There are many online or offline solutions available for reconstructing images in this way, some of them undoubtedly more sophisticated than the CoverMaker. The CoverMaker is open source, integrated into Fiji and so can serve as platform for exploring the associated image analysis questions. Everyone is welcome to improve the code and the algorithms, contribute more image databases and show off the results of their experiments.
 
-Please note that the Nature cover was NOT made with the CoverMaker plugin, but it inspired its subsequent development. Below we show the template image depicting the famous Ernst Haeckel embryo drawings and the resulting output image generated using the CoverMaker. For more examples jump to the [Gallery](#Gallery) section.
+Please note that the Nature cover was NOT made with the CoverMaker plugin, but it inspired its subsequent development. Below we show the template image depicting the famous Ernst Haeckel embryo drawings and the resulting output image generated using the CoverMaker. For more examples jump to the [Gallery](#gallery) section.
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 
-{% capture title%}
-**Drawing of Haeckel embryos.** For afficionados this is in fact Romanes' 1892 copy of the {% include wikipedia title='Ernst Haeckel' text='Ernst Haeckel'%} drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book "[The Tragic Sense of Life](http://www.amazon.com/The-Tragic-Sense-Life-Evolutionary/dp/0226712141)".
-{% endcapture %}
-{% include thumbnail src='/media/plugins/haeckel-embryos-white.png' title=title %} | <figure><img src="/media/plugins/haeckel-embryos-cover.png" title="CoverMaker rendition of Haeckel embryos The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." width="350" alt="CoverMaker rendition of Haeckel embryos The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." /><figcaption aria-hidden="true"><strong>CoverMaker rendition of Haeckel embryos</strong> The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></figcaption></figure><section class="footnotes" role="doc-endnotes"><hr /><ol><li id="fn1" role="doc-endnote">{% include citation doi='10.1186/gb-2002-3-12-research0088' %}<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li><li id="fn2" role="doc-endnote">{% include citation doi='10.1186/gb-2007-8-7-r145' %}<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></li></ol></section> |
+{% capture title -%} For afficionados this is in fact Romanes' 1892 copy of the {% include wikipedia title='Ernst Haeckel' text='Ernst Haeckel' %} drawing. If you consider Haeckel a fraud, think again and start by reading the excellent Robert J. Richards book "[The Tragic Sense of Life](http://www.amazon.com/The-Tragic-Sense-Life-Evolutionary/dp/0226712141)". {%- endcapture %}
+{% include img src='haeckel-embryos-white' width=350 title="Drawing of Haeckel embryos" caption=title %}
+{% include img src="haeckel-embryos-cover" width=350 title="CoverMaker rendition of Haeckel embryos" caption="The image was generated using a database of 66,579 images of gene expression pattern during Drosophila embryogenesis visualized by histochemical RNA in situ hybridization." %}
+
+{% include citation fn=1 doi='10.1186/gb-2002-3-12-research0088' %}
+{% include citation fn=2 doi='10.1186/gb-2007-8-7-r145' %}
 
 ## Gallery
 
 Here are some example CoverMaker images. Feel free to [send](mailto:tomancak@mpi-cbg.de) your experiments particularly if you make it on the cover ;-).
 
-
-{% capture content%}
-
-{% endcapture %}
-{% include gallery content=content%}
-
+{% include gallery content=
+"
+/media/bioessays-backcover.jpg | Backcover of Bioessays featuring famous drawing of early Drosophila embryogenesis by Victoria Foe
+/media/methods-cover-2014-small.jpg | Cover of Methods journal focused on Drosophila, edited by Nobert Perrimon
+/media/bioimage-informatics-cover.jpg | Cover of Bioimage Informatics 2012 conference brochure
+/media/news/nm-cover.jpg | Cover of July 2012 Issue of Nature Methods containing focus on Bioimage Informatics
+/media/cover-suggestion-5-fullres.jpg | high-resolution version of Nature Methods cover
+/media/microscope-cover.png | Open clipart microscope
+/media/runt-fish-1.png | Runt expression pattern at cellular blastoderm stage of Drosophila embryogenesis
+/media/cover-suggestion-1.jpg | Cover suggestion for Focus on Bioimage Informatics - logos
+/media/ovary-cover-test.jpg | Stage 10 Drosophila egg chamber
+/media/example-cover-embryo.png | Dorsal ectoderm expression at blastoderm satge
+/media/imagej2-cover.jpg | ImageJ2 logo
+/media/plugins/haeckel-embryos-cover.png | Haeckel embryos
+/media/fiji-cover.png | Fiji logo
+"
+%}
 
 ## How does it work
 
@@ -52,82 +53,55 @@ The principle is very simple. One divides the template image into tiles that hav
 
 The template image gets cropped to the dimensions that are compatible with the tile size (i.e. for 12x9 tiles the dimensions have to be divisible by 12 and 9 respectively). Every database image is used only once and so, as the build-up progresses, the database can get 'exhausted' for a particular color and shape. To minimize this effect we place the tiles randomly into the image.
 
-The tricky part is to prepare the database. We provide a [pre-computed database](#Databases) based on the embryo *in situ* data containing 12x9 pixels tiles. You can generate your own databases using the [Prepare CoverMaker Database](#prepare-covermaker-database) script that scours a file system and down-samples all available RGB jpegs to the desired tile dimensions.
+The tricky part is to prepare the database. We provide a [pre-computed database](#databases) based on the embryo *in situ* data containing 12x9 pixels tiles. You can generate your own databases using the [Prepare CoverMaker Database](#prepare-covermaker-database) script that scours a file system and down-samples all available RGB jpegs to the desired tile dimensions.
 
-Finally, for printing poster size images, the plugin will generate in the second step of its operation (after the output image has been formed at the original resolution of the template image) an arbitrarily large output image at desired dpi resolution using the database of original images available [here](#Databases) or generated by you using the [Prepare CoverMaker Database](#prepare-covermaker-database) script.
+Finally, for printing poster size images, the plugin will generate in the second step of its operation (after the output image has been formed at the original resolution of the template image) an arbitrarily large output image at desired dpi resolution using the database of original images available [here](#databases) or generated by you using the [Prepare CoverMaker Database](#prepare-covermaker-database) script.
 
 ## CoverMaker Tutorial
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>We will start by opening an image that will serve as template. For the time being it needs to be an RGB image. It can have any dimensions, however consider that larger images will require many more tiles to fill up, it will take long and the effect will be less visible. Fiji logo shown on the right is a good start. Alternatively one of the Fiji sample images such as the clown.jpg gives good results quickly.</p>
-        <p><em>Note:</em> I would recommend having only one image opened before proceeding further.</p>
-      </td>
-      <td>
-        <p>{% include thumbnail src='/media/plugins/fiji-logo-in-fiji.png' title='"Template image"'%}</p>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p>Now we launch the CoverMaker python script by going to {% include bc path="Plugins | Examples | CoverMaker | Cover Maker" %}. (Or typing {% include key key="L" %} and searching with keyword `cover`).</p>
-        <p>A basic dialog box will appear prompting us to select the image database by clicking on <strong>Browse</strong> and locating in the file system the <a href="#Databases">tif file</a> containing down-sampled images. The tif file is called 12_9.tif indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default <strong>tile width and height</strong> in the dialog box.</p>
-        <p>Next <strong>click ok</strong> and the reconstruction will start. As a first step the template image will be cropped to the size that is multiple of the tile width and height (not shown, see <a href="#future-work">Future work</a> for comment on the cropping issue.</p>
-        <p>Below we monitor the progress of building the cover</p>
-      </td>
-      <td>
-        <p>{% include thumbnail src='/media/plugins/covermaker-dialog-1.png' title='The initial CoverMaker dialog box'%}</p>
-      </td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-  {:/}
+{% include img align='right' src='fiji-logo-in-fiji' width=150 title="Template image" %}
 
-|                                                                                                         |                                                                                                           |                                                                                                           |                                                                                                             |                                                                                                               |     |
-|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----|
-| {% include thumbnail src='/media/plugins/cover-buildup-1.png' title='Starting'%} | {% include thumbnail src='/media/plugins/cover-buildup-2.png' title='Progress 1'%} | {% include thumbnail src='/media/plugins/cover-buildup-3.png' title='Progress 2'%} | {% include thumbnail src='/media/plugins/cover-buildup-4.png' title='Almost there'%} | {% include thumbnail src='/media/plugins/cover-buildup-5.png' title='Finished Cover'%} |     |
+We will start by opening an image that will serve as template. For the time being it needs to be an RGB image. It can have any dimensions, however consider that larger images will require many more tiles to fill up, it will take long and the effect will be less visible. Fiji logo shown on the right is a good start. Alternatively one of the Fiji sample images such as the clown.jpg gives good results quickly.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>After the reconstruction finishes a second dialog box pops up. Here we have an option to <strong>Cancel</strong> the program, the finished low resolution image will remain opened and can be saved using normal Fiji procedures.</p>
-        <p>If we like the result of the experiment, we can save it at high resolution using the original images. We can decide on the final <strong>resolution</strong> of the output image in dpi, specify the <strong>width or height in pixels or inches</strong>. The fields are linked and should update while we are editing the different parameters.</p>
-        <p>Next we need to click on <strong>Browse</strong> and locate the <a href="#Databases">zip file</a> containing the originals. Finally we click on <strong>ok</strong> and the building of the final high resolution output image will commence as shown below. Note that now the image grows sequentially since we already know where to place the images from the initial run and the <a href="#how-does-it-work">randomization</a> is no longer necessary.</p>
-      </td>
-      <td>
-        <p>{% include thumbnail src='/media/plugins/covermaker-dialog-2.png' title='The second CoverMaker dialog box for saving high resolution output'%}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+{% include notice icon="note" content="I would recommend having only one image opened before proceeding further." %}
 
-|                                                                                                               |                                                                                                                 |                                                                                                                 |                                                                                                                   |                                                                                                                     |     |
-|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----|
-| {% include thumbnail src='/media/plugins/hires-cover-buildup-1.png' title='Starting'%} | {% include thumbnail src='/media/plugins/hires-cover-buildup-2.png' title='Progress 1'%} | {% include thumbnail src='/media/plugins/hires-cover-buildup-3.png' title='Progress 2'%} | {% include thumbnail src='/media/plugins/hires-cover-buildup-4.png' title='Almost there'%} | {% include thumbnail src='/media/plugins/hires-cover-buildup-5.png' title='Finished Cover'%} |     |
+Now we launch the CoverMaker python script by going to {% include bc path="Plugins | Examples | CoverMaker | Cover Maker" %}. (Or typing {% include key key="L" %} and searching with keyword `cover`).
 
-When we zoom in on the final output image that was generated in this case at 300dpi and compare with the initial reconstructed image we will see the database images with much greater detail. The image can be made almost arbitrarily large and printed as a large poster. *Note*: the downsampler we use does not do a good job upsampling, thus when the originals are too small for a given dpi size combination artifacts in the output image will occur (grid of lines). This exception is currently not handled properly.
+{% include img align='right' src='/media/plugins/covermaker-dialog-1.png' width=300 title='The initial CoverMaker dialog box' %}
+                                                                      
+A basic dialog box will appear prompting us to select the image database by clicking on {% include button label="Browse" %} and locating in the file system the [tif file](#databases) containing down-sampled images. The tif file is called `12_9.tif` indicating that the images have been scaled to the 12x9 pixel dimension. This is the default tile size. If you use a different database with different aspect ratio please change the default **tile width and height** in the dialog box.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p>{% include thumbnail src='/media/plugins/lowres-zoomin.png' title='Close up on the Initial low resolution image'%}</p>
-      </td>
-      <td>
-        <p>{% include thumbnail src='/media/plugins/hires-zoomin.png' title='Close up on the final high resolution image'%}</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+Next **click {% include button label='OK' %}** and the reconstruction will start. As a first step the template image will be cropped to the size that is multiple of the tile width and height (not shown, see [Future work](#future-work) for comment on the cropping issue.
+
+Below we monitor the progress of building the cover
+
+{% include img src='/media/plugins/cover-buildup-1.png' width=130 title='Starting' %}
+{% include img src='/media/plugins/cover-buildup-2.png' width=130 title='Progress 1' %}
+{% include img src='/media/plugins/cover-buildup-3.png' width=130 title='Progress 2' %}
+{% include img src='/media/plugins/cover-buildup-4.png' width=130 title='Almost there' %}
+{% include img src='/media/plugins/cover-buildup-5.png' width=130 title='Finished Cover' %}
+
+{% include img align='right' src='covermaker-dialog-2' width=300 caption='The second CoverMaker dialog box for saving high resolution output' %}
+
+After the reconstruction finishes a second dialog box pops up. Here we have an option to {% include button label="Cancel" %} the program, the finished low resolution image will remain opened and can be saved using normal Fiji procedures.
+
+If we like the result of the experiment, we can save it at high resolution using the original images. We can decide on the final **resolution** of the output image in dpi, specify the **width or height in pixels or inches**. The fields are linked and should update while we are editing the different parameters.
+
+Next we need to click on {% include button label="Browse" %} and locate the [zip file](#databases) containing the originals. Finally we click on {% include button label='OK' %} and the building of the final high resolution output image will commence as shown below. Note that now the image grows sequentially since we already know where to place the images from the initial run and the [randomization](#how-does-it-work) is no longer necessary.
+
+{% include img src='hires-cover-buildup-1' width=130 title='Starting' %}
+{% include img src='hires-cover-buildup-2' width=130 title='Progress 1' %}
+{% include img src='hires-cover-buildup-3' width=130 title='Progress 2' %}
+{% include img src='hires-cover-buildup-4' width=130 title='Almost there' %}
+{% include img src='hires-cover-buildup-5' width=130 title='Finished Cover' %}
+
+When we zoom in on the final output image that was generated in this case at 300dpi and compare with the initial reconstructed image we will see the database images with much greater detail. The image can be made almost arbitrarily large and printed as a large poster.
+
+{% include notice icon='note' content='The downsampler we use does not do a good job upsampling, thus when the originals are too small for a given dpi size combination artifacts in the output image will occur (grid of lines). This exception is currently not handled properly.' %}
+
+{% include img src='lowres-zoomin' width=240 caption='Close up on the Initial low resolution image' %}
+
+{% include img src='hires-zoomin' width=240 caption='Close up on the final high resolution image' %}
 
 ## Prepare CoverMaker Database
 
@@ -137,17 +111,17 @@ In many ways preparing the image databases is a trickier business than actually 
 
 Before we start searching for images we must decide on the dominant aspect ratio present in our image set. Obviously, since the tiles have all the same dimensions, different aspect ratios of input images would cause deformation during down-sampling to that common tile dimension. Fortunately, since CoverMaker is targeting scientific imaging, in most cases a large image database will have a uniform or one dominant aspect ratio.
 
-{% include thumbnail src='/media/plugins/create-database-dialog.png' title='Input and output parameters dialog'%} The user must also specify the **aspect ratio** and **base directory** under which the images are to be found.
+{% include img align='right' src='create-database-dialog' width=200 title='Input and output parameters dialog' %} The user must also specify the **aspect ratio** and **base directory** under which the images are to be found.
 
 The output parameters are the **minimum and maximum tile width and height** of the downsampled tiles. These should be compatible with the aspect ratio (for convenience the width and height are linked in the Dialog box). Users can specify a range of tile dimensions (by specifying minimum and maximum widths and heights) and the script will generate scalings between those bound in increments of one pixel. Note that the range should not be very broad (typically between 10 and 20 pixels). When the minimum and maximum are the same only single tile size will be generated.
 
 Finally the user must specify the **originals width and height** to which the images should be scaled. If these dimensions are the same as the dominant image dimensions on the filesystem, no scaling will occur, however this will duplicate every image encountered during the search. The resulting zip archive could become too large. Note that the images need not be very large as they will be scaled down again when CoverMaker outputs the final image at reasonable resolution.
 
-{% include thumbnail src='/media/plugins/covermaker-database-log.png' title='Progress log'%} The script will then recursively traverse the directory tree under this root looking for images with extensions *jpeg*, *jpe* and *jpg*. The extensions to be searched are currently hardcoded. During the search the script will write into ImageJ log the images it encountered and what is being done with them. Hopefully most images will have the matching aspect ratio specified above and will be scaled. Images with different aspect ratios will be skipped.
+{% include img align='right' src='covermaker-database-log' width=200 title='Progress log' %} The script will then recursively traverse the directory tree under this root looking for images with extensions *jpeg*, *jpe* and *jpg*. The extensions to be searched are currently hardcoded. During the search the script will write into ImageJ log the images it encountered and what is being done with them. Hopefully most images will have the matching aspect ratio specified above and will be scaled. Images with different aspect ratios will be skipped.
 
 The output of the script are two types of files:
 
--   tif stacks containing downsampled image tiles of the specified dimensions (the naming convention is width\_height.tif, i.e. for 12x9 pixel tiles 12\_9.tif). Separate tif file for each output tile size will be generated
+-   tif stacks containing downsampled image tiles of the specified dimensions (the naming convention is `width_height.tif`, i.e. for 12x9 pixel tiles `12_9.tif`). Separate tif file for each output tile size will be generated
 -   one zip archive of the original images scaled to the size specified in the parameters **original width** and **original height** (note that this file should NOT be unzipped)
 
 Both output files are saved in the **base directory**. They can be directly used in the CoverMaker plugin.
@@ -167,7 +141,7 @@ Currently we provide a single database of images prepared for CoverMaker. The da
 | Database type               | scaled tiles                                           | originals (DO NOT unzip)                                        |
 | Drosophila Embryo *in situ* | [12\_9.tif](https://fiji.sc/samples/12_9.tif) (16.6MB) | [originals.zip](https://fiji.sc/samples/originals.zip) (1.45GB) |
 
-**Important note :** Do not unzip the orinals.zip archive. The CoverMaker is able to extract the relevant images.
+{% include notice icon='warning' content='Do not unzip the `originals.zip` archive. The CoverMaker is able to extract the relevant images.' %}
 
 More scientific databases to come.... Feel free to [send](mailto:tomancak@mpi-cbg.de) me yours.
 
@@ -175,7 +149,7 @@ More scientific databases to come.... Feel free to [send](mailto:tomancak@mpi-cb
 
 The plugin was written as a Jython script during the [Madison ImageJ2/Fiji hackathon in January 2011](/events/2011-hackathon-in-madison). The heavy lifting is performed using [in lined](/scripting/jython#inline-java-code-inside-jython-the-weaver) Java code snippet courtesy of {% include person id='acardona' %}. All the large scale downsampling is done using {% include person id='axtimwalde' %} proper [downsampler](tutorials/downsample). {% include person id='dscho' %} has helped a lot with the Dialog Listeners and will maintain the plugin for posterity.
 
-BTW, this plugin and its genesis is a great example of the power of Fiji and the hackathons. I came to the hackathon not knowing anything about python and with only basic knowledge of Java and the ImageJ code base. In ten days I had the plugin written, probably driving the Fiji geeks crazy with my constant basic (or downright stupid) questions. But the take home message for biologists is - it can be done!
+BTW, this plugin and its genesis is a great example of the power of Fiji and the hackathons. I came to the hackathon not knowing anything about python and with only basic knowledge of Java and the ImageJ codebase. In ten days I had the plugin written, probably driving the Fiji geeks crazy with my constant basic (or downright stupid) questions. But the take home message for biologists is: it can be done!
 
 ## Future work
 

@@ -1,14 +1,15 @@
 ---
 mediawiki: CATS
+name: "CATS"
 title: CATS
 categories: [Uncategorized]
+update-site: "EMBL-CBA"
+team-founder: '@tischi'
+team-maintainer: '@tischi'
+source-url: https://github.com/embl-cba/fiji-plugin-cats
 ---
 
 
-{% capture source%}
-{% include github org='embl-cba' repo='fiji-plugin-cats' %}
-{% endcapture %}
-{% include info-box name='CATS' software='Fiji' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 ## Overview
 

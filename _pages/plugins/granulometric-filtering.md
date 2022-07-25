@@ -1,11 +1,16 @@
 ---
 mediawiki: Granulometric_Filtering
+name: "Granulometric Filtering"
 title: Granulometric Filtering
 categories: [Particle Analysis]
 doi: 10.1016/j.jneumeth.2005.07.011
+release-date: "21 May 2005"
+website: "https://imagej.nih.gov/ij/plugins/gran-filter.html"
+dev-status: "unknown"
+team-founder: '@dprodanov'
 ---
 
-{% include info-box software='ImageJ' name='Granulometric Filtering' author='Dimiter Prodanov' filename=' [Gran_Filter.jar](https://imagej.nih.gov/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' released='21 May 2005' latest-version='' status='unknown' category='' website='https://imagej.nih.gov/ij/plugins/gran-filter.html' %}
+{% include info-box filename=' [Gran_Filter.jar](https://imagej.nih.gov/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' %}
 
 ## Purpose
 

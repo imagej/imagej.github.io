@@ -1,21 +1,24 @@
 ---
 mediawiki: Colocalization_Threshold
+name: "Colocalization Threshold"
 title: Colocalization Threshold
 categories: [Colocalization,Color Processing]
+release-date: "june 2009"
+website: /imaging/colocalization-analysis#colocalization-threshold
+dev-status: "no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](/plugins/coloc-2)"
+team-maintainer: "@chalkie666"
+team-founder: 'Tony Collins (and others?)'
 ---
 
 {% include warning/deprecated
   old="the Colocalization Threshold plugin"
   new="[Coloc 2](/plugins/coloc-2)" %}
 
-{% capture maintainer%}
-{% include person id='chalkie666' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='fiji' repo='Colocalisation_Analysis' branch='master' source='Colocalisation_Threshold.java' %}, modified from [MBF ImageJ](/software/mbf-imagej)
 {% endcapture %}
-{% include info-box name='Colocalization Threshold' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Threshold](/imaging/colocalization-analysis#colocalization-threshold)' status='no longer actively supported, unlikely to be stable enough for real use. Use [Coloc\_2](/plugins/coloc-2)' %}
+{% include info-box filename='Colocalization.jar' source=source  %}
 
 ## Purpose
 

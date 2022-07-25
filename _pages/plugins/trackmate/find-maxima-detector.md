@@ -1,17 +1,14 @@
 ---
 mediawiki: Find_maxima_(Trackmate_module)
+name: "Find Maxima Detector for TrackMate"
 title: Find maxima (TrackMate module)
+release-date: "v1.0.0 (13 May 2016)"
+dev-status: "active"
+team-founders: ["@thorstenwagner", "@tinevez"]
+team-maintainer: "@thorstenwagner"
 ---
 
-
-{% capture author%}
-{% include person id='thorstenwagner' %}, {% include person id='tinevez' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='thorstenwagner' %},
-{% endcapture %}
-{% include info-box software='Fiji' name='Find Maxima Detector for TrackMate' author=author maintainer=maintainer filename='TrackMate\_FindMaxima.jar [\[1](https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-trackmate-findmaxima) \]' latest-version='v1.0.0 (13 May 2016)' status='active' %}
+{% include info-box filename='TrackMate\_FindMaxima.jar [\[1](https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-trackmate-findmaxima) \]'  %}
 
 ## Purpose
 

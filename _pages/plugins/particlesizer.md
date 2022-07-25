@@ -1,18 +1,16 @@
 ---
 mediawiki: ParticleSizer
+name: "ParticleSizer"
 title: ParticleSizer
 categories: [Uncategorized]
+release-date: "v1.0.7 (28. Ocotober 2016)"
+dev-status: "active"
+team-founder: "@thorstenwagner"
+team-maintainer: "@thorstenwagner"
+update-site: "Biomedgroup & ParticleSizer"
 ---
 
-
-{% capture author%}
-{% include person id='thorstenwagner' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='thorstenwagner' %}
-{% endcapture %}
-{% include info-box software='Fiji' update-site='Biomedgroup & ParticleSizer' name='ParticleSizer' author=author maintainer=maintainer filename='ParticleSizer\_.jar [\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-particlesizer) \]' latest-version='v1.0.7 (28. Ocotober 2016)' status='active' %}
+{% include info-box filename='ParticleSizer\_.jar [\[1](https://github.com/thorstenwagner/ij-particlesizer/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-particlesizer) \]'  %}
 
 # Purpose
 

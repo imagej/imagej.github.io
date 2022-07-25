@@ -1,11 +1,16 @@
 ---
 mediawiki: Colour_merge
+name: "Colour merge"
 title: Colour merge
 categories: [Color Processing]
 project: /update-sites/cookbook
+release-date: "unknown"
+initial-release-date: "unknown"
+dev-status: "unknown"
+team-founder: 'unknown'
 ---
 
-{% include info-box software='ImageJ' name='Colour merge' author='unknown' filename='Colour\_merge.class' source='not found' released='unknown' latest-version='unknown' status='unknown' category='Color Processing' %}
+{% include info-box filename='Colour\_merge.class' source='not found'  %}
 
 ## Purpose
 

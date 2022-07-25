@@ -1,10 +1,16 @@
 ---
 mediawiki: Test_Java3D
+name: "Test Java3D"
 title: Test Java3D
 categories: [Uncategorized]
+release-date: "-"
+initial-release-date: "-"
+dev-status: "stable"
+team-founder: '@bene51'
+team-maintainer: '@bene51'
 ---
 
-{% include info-box software='ImageJ' name='Test Java3D' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar' released='-' latest-version='-' status='stable' category='Plugins' %}
+{% include info-box filename='http://132.187.25.13/home/imagej/Test\_Java3D.jar' source='http://132.187.25.13/home/imagej/Test\_Java3D.jar'  %}
 
 ## Purpose
 

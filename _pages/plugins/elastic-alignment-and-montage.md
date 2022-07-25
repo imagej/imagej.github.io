@@ -1,18 +1,18 @@
 ---
 mediawiki: Elastic_Alignment_and_Montage
+name: "Elastic Align and Montage"
 title: Elastic Alignment and Montage
 categories: [Registration,TrakEM2]
+release-date: "October 22, 2011"
+initial-release-date: "March 11, 2011"
+dev-status: "experimental, active"
+team-founder: "@axtimwalde"
+team-maintainer: "@axtimwalde"
 ---
 
+{% include info-box source='https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin'  category='Registration' %}
 
-{% capture author%}
-{% include person id='axtimwalde' %} ([1](mailto:saalfeld@mpi-cbg.de))
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='axtimwalde' %}
-{% endcapture %}
-{% include info-box name='Elastic Align and Montage' software='Fiji' author=author maintainer=maintainer source='https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin' released='March 11<sup>th</sup>, 2011' latest-version='October 22<sup>nd</sup>, 2011' status='experimental, active' category='Plugins, Registration' %}== Citation == Please note that the elastic alignment and montage plugin available through Fiji, is based on a publication. If you use it successfully for your research please cite our work:
+== Citation == Please note that the elastic alignment and montage plugin available through Fiji, is based on a publication. If you use it successfully for your research please cite our work:
 
 S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic volume reconstruction from series of ultra-thin microscopy sections, *Nature Methods*, 9(7), 717-720 [Webpage](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2072.htmll) [PDF](/media/plugins/saalfeld-nmeth.2072.pdf) [Supplement](/media/plugins/saalfeld-nmeth.2072-s1.pdf)
 

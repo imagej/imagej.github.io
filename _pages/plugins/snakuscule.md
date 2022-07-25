@@ -1,15 +1,20 @@
 ---
-mediawiki: Snakuscule
 title: Snakuscule
 categories: [Segmentation]
+
+name: Snakuscule
+initial-release-date: "2010-09-17"
+website: http://bigwww.epfl.ch/thevenaz/snakuscule/
+team-founder: Philippe Thévenaz
+source-url: https://github.com/fiji-BIG/Snakuscule
+artifact: sc.fiji:Snakuscule_
+license-label: BIG
+license-url: /licensing/big
+update-site: BIG-EPFL
 ---
 
-
-{% capture source%}
-{% include github org='fiji' repo='Snakuscule' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Snakuscule' maintainer='Philippe Thévenaz' author='Philippe Thévenaz' source=source released='17/09/2010' latest-version='17/09/2010' status='' category='Plugins' website='http://bigwww.epfl.ch/thevenaz/snakuscule/' %}
+{% include notice icon='osi-symbol' content="Be aware that the BIG-EPFL plugins are not [open source](/licensing/open-source)." %}
 
 This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/snakuscule/).
 
- 
+Enable the [BIG-EPFL update site](/update-sites/big-epfl) to gain access to the Snakuscule plugin.

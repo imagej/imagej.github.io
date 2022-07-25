@@ -1,16 +1,17 @@
 ---
 mediawiki: MoBIE
+name: "MoBIE"
 title: MoBIE
 categories: [Uncategorized]
+update-site: "MoBIE"
+team-founders: ['@tischi', Kimberly Meechan, Constantin Pape]
+team-maintainer: '@tischi'
+source-url: https://github.com/mobie-org/mobie-viewer-fiji
 ---
 
 <figure><img src="/media/plugins/mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true"></figcaption></figure>
 
 
-{% capture source%}
-{% include github org='mobie-org' repo='mobie-viewer-fiji' %}
-{% endcapture %}
-{% include info-box name='MoBIE' software='Fiji' update-site='MoBIE' author='Christian Tischer, Kimberly Meechan, Constantin Pape' maintainer='Christian Tischer' source=source %}
 
 
 ## Overview

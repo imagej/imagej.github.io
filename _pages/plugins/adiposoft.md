@@ -1,10 +1,16 @@
 ---
 mediawiki: Adiposoft
+name: "Adiposoft"
 title: Adiposoft
 categories: [Uncategorized]
+release-date: "January 2019"
+initial-release-date: "April 2012"
+dev-status: "stable, active"
+team-founder: 'CIMA | https://cima.unav.edu/'
+team-maintainer: 'Mikel Ariz | mailto:mikelariz@unav.es'
 ---
 
-{% include info-box software='ImageJ' name='Adiposoft' author=' [CIMA](https://cima.unav.edu/) , [University of Navarra](http://www.unav.edu/) .' maintainer='[Mikel Ariz](mailto:mikelariz@unav.es)' released='April 2012' latest-version='January 2019' status='stable, active' publications=' [JLR](http://www.jlr.org/content/53/12/2791.short)' category='Segmentation' %}
+{% include info-box publications=' [JLR](http://www.jlr.org/content/53/12/2791.short)' category='Segmentation' %}
 
 <img src="/media/screenshot1.jpg" width="350"/>
 

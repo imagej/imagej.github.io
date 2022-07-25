@@ -1,23 +1,19 @@
 ---
 mediawiki: ActogramJ
+name: "ActogramJ"
 title: ActogramJ
 categories: [Visualization]
 doi: 10.1177/0748730411414264
+initial-release-date: "2010"
+dev-status: "active"
+team-maintainer: "@bene51"
+team-founder: "@bene51"
+source-url: https://github.com/bene51/ActogramJ
 ---
 
 
-{% capture maintainer%}
-{% include person id='bene51' %}
-{% endcapture %}
 
-{% capture author%}
-{% include person id='bene51' %}
-{% endcapture %}
 
-{% capture source%}
-{% include github org='bene51' repo='ActogramJ' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='ActogramJ' maintainer=maintainer author=author source=source status='active' released='2010' category='Visualization, Plugins' %}
 
 **ActogramJ** - Visualizing and analyzing activity diagrams in behavioral experiments
 

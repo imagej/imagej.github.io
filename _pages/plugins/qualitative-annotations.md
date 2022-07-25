@@ -11,7 +11,7 @@ release-date: 2020
 license-url: /licensing/gpl
 license-label: GPL-v3
 
-team-founders: Laurent Thomas, Jochen Gehrig
+team-founders: ["@LauLauThom", "Jochen Gehrig"]
 ---
 
 # Installation

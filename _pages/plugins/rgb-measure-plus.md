@@ -1,10 +1,16 @@
 ---
 mediawiki: RGB_Measure_Plus
+name: "RGB Measure Plus"
 title: RGB Measure Plus
 categories: [Color Processing]
+release-date: "23 March 2005"
+initial-release-date: "23 March 2005"
+website: "https://imagej.nih.gov/ij/plugins/rgb-measure-plus.html"
+dev-status: "initial version"
+team-founder: '@dprodanov'
 ---
 
-{% include info-box software='ImageJ' name='RGB Measure Plus' author='Dimiter Prodanov' filename='RGB\_Measure\_Plus.class' source=' [RGB\_Measure\_Plus.java](https://imagej.nih.gov/ij/plugins/download/RGB_Measure_Plus.java)' released='23 March 2005' latest-version='23 March 2005' status='initial version' category='Color Processing' website='https://imagej.nih.gov/ij/plugins/rgb-measure-plus.html' %}
+{% include info-box filename='RGB\_Measure\_Plus.class' source=' [RGB\_Measure\_Plus.java](https://imagej.nih.gov/ij/plugins/download/RGB_Measure_Plus.java)'  %}
 
 ## Purpose
 

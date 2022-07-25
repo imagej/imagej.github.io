@@ -12,10 +12,10 @@ release-version: V3.96
 update-site: 3D ImageJ Suite
 dev-status: stable, active
 support-status: supported
-team-founder: Thomas Boudier | /people/mcib3d
-team-support: Thomas Boudier | /people/mcib3d
-team-reviewer: Thomas Boudier | /people/mcib3d
-team-maintainer: Thomas Boudier | /people/mcib3d
+team-founder: "@mcib3d"
+team-support: "@mcib3d"
+team-reviewer: "@mcib3d"
+team-maintainer: "@mcib3d"
 team-contributors:
 - Jean Ollion
 doi: 10.1093/bioinformatics/btt276

@@ -1,14 +1,22 @@
 ---
 mediawiki: Upload_Sample_Image
+name: "Upload Sample Image"
 title: Upload Sample Image
 categories: [Uncategorized]
+release-date: "2014-07-01"
+initial-release-date: "2009-06-11"
+dev-status: "stable"
+team-founder: '@dscho'
+team-maintainer: '@dscho'
 ---
 
 
 {% capture source%}
 {% include github org='imagej' repo='imagej-plugins-commands' branch='master' source='net/imagej/plugins/commands/upload/SampleImageUploader.java' %}
 {% endcapture %}
-{% include info-box software='ImageJ' name='Upload Sample Image' maintainer='Johannes Schindelin' author='Johannes Schindelin' source=source released='2009-06-11' latest-version='2014-07-01' status='stable' category='Plugins' website='' %}== Upload Sample Image ==
+{% include info-box source=source  %}
+
+== Upload Sample Image ==
 
 Use the {% include bc path='Help | Upload Sample Image'%} command to upload a file (not just images) meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a [bug report](/discuss/bugs) with a large image.
 

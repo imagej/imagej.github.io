@@ -10,7 +10,7 @@ release-date: 2021
 license-url: /licensing/mit
 license-label: mit
 
-team-founders: Laurent Thomas
+team-founders: "@LauLauThom"
 ---
 
 # Installation 

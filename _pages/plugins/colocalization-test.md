@@ -1,21 +1,24 @@
 ---
 mediawiki: Colocalization_Test
+name: "Colocalization Test"
 title: Colocalization Test
-categories: [Colocalization,Color Processing]
+categories: [Colocalization, Color Processing]
+release-date: "june 2009"
+website: /imaging/colocalization-analysis#colocalization-test
+dev-status: Deprecated
+team-maintainer: "@chalkie666"
+team-founder: 'Tony Collins (and others?)'
 ---
 
 {% include warning/deprecated
   old="the Colocalization Test plugin"
   new="[Coloc 2](/plugins/coloc-2)" %}
 
-{% capture maintainer%}
-{% include person id='chalkie666' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='fiji' repo='Colocalisation_Analysis' branch='master' source='Colocalisation_Test.java' %}, modified from [MBF ImageJ](/software/mbf-imagej)
 {% endcapture %}
-{% include info-box name='Colocalization Test' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Test](/imaging/colocalization-analysis#colocalization-test)' status='<span style="color:red">Deprecated, use [Coloc 2](/plugins/coloc-2) instead.</span>' %}
+{% include info-box filename='Colocalization.jar' source=source  %}
 
 ## Purpose
 

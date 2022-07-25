@@ -5,9 +5,9 @@ name: Beat Münch
 github: bmuench
 ---
 
-## Plugins of library [Xlib](/plugins/xlib)
+Developer of the [Xlib](/plugins/xlib) plugin library.
 
-{% include info-box software='ImageJ / Fiji' name='Xlib' maintainer='Beat Münch' author='Beat Münch' filename='[xlib_.jar](#https://sites.imagej.net/Xlib/plugins/xlib_.jar-20191001174205)' released='01.06.2015' latest-version='01.12.2019' status='maintained actively as of December 2019' website='/plugins/xlib' %}
+## Plugins of library [Xlib](/plugins/xlib)
 
 This plugin contains various powerful utilities for basic image analysis, filtering, segmentation, pore and particle size analysis, reconstruction, 2D / 3D editing and viewing. All plugins run on images or image stacks. Almost all plugins are capable to run either in two or in three dimensions (i.e. 2D images or 3D image volumes provided by image stacks). Full documentation can be found [here](/plugins/xlib).
 

@@ -2,6 +2,7 @@
 mediawiki: SPIM_Registration_Method
 title: SPIM Registration Method
 extensions: ["mathjax"]
+team-founder: 'J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer'
 ---
 
 ## Citation
@@ -325,7 +326,7 @@ We want to thank [Carl Zeiss Microimaging](http://www.zeiss.de/micro) for access
 
 ## References
 
-[^1]: {% include citation content='journal' author='J. Huisken and J. Swoger and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer' title='Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy' journal='Science' volume='305' number='5686' pages='1007 1010' year='2004' %}
+[^1]: {% include citation content='journal' title='Optical Sectioning Deep Inside Live Embryos by Selective Plane Illumination Microscopy' journal='Science' volume='305' number='5686' pages='1007 1010' year='2004' %}
 
 [^2]: {% include citation content='journal' author='P. Shaw, D. Agard, Y. Hiraoka, and J. Sedat' title='Tilted view reconstruction in optical microscopy. Three-dimensional reconstruction of Drosophila melanogaster embryo nuclei' journal='Biophysical Journal' volume='55' number='1' year='1989' pages='101–110' %}
 

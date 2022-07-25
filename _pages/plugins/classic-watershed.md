@@ -1,23 +1,25 @@
 ---
 mediawiki: Classic_Watershed
+name: "Classic Watershed"
 title: Classic Watershed
 categories: [Segmentation, Mathematical Morphology]
 extensions: ["mathjax"]
+release-date: "July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)"
+initial-release-date: "July 3<sup>rd</sup>, 2014"
+dev-status: "stable, active"
+team-maintainer: "@iarganda"
+team-founder: ["@iarganda", "@dlegland"]
 ---
 
 
-{% capture author%}
-{% include person id='iarganda' %}, David Legland
-{% endcapture %}
 
-{% capture maintainer%}
-{% include person id='iarganda' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Classic Watershed' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Segmentation, Mathematical Morphology' %}{\| \|<span>  
+{% include info-box software='IJPB-plugins' source=source  %}
+
+{\| \|<span>  
 </span>style="vertical-align:top" \|{% include thumbnail src='/media/plugins/classic-watershed-lines-blur-blobs.png' title='Overlay of watershed lines on blurred blobs.'%} \|}
 
 ## Introduction

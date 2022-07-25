@@ -1,10 +1,16 @@
 ---
 mediawiki: Interactive_Similarity
+name: "Interactive Similarity"
 title: Interactive Similarity
 categories: [Transform]
+release-date: "December 15, 2008"
+initial-release-date: "November 22, 2008"
+dev-status: "stable"
+team-founder: '@axtimwalde'
+team-maintainer: '@axtimwalde'
 ---
 
-{% include info-box name='Interactive Similarity' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Similarity.java)' released='November 22<sup>th</sup>, 2008' latest-version='December 15<sup>th</sup>, 2008' status='stable' category='Transform, Plugins' %}
+{% include info-box source=' [in gitweb](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Similarity.java)'  %}
 
 This plugin allows to apply a **similarity transformation** (rotation, translation and isotropic scaling) to a 2D image in an interactive way.
 

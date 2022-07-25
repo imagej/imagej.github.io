@@ -1,10 +1,15 @@
 ---
 mediawiki: Watershed_Algorithm_(ImageJ_plugin)
+name: "Watershed Algorithm"
 title: Watershed Algorithm (ImageJ plugin)
 categories: [Uncategorized]
+release-date: "15 December 2003"
+website: "https://imagej.nih.gov/ij/plugins/watershed.html"
+dev-status: "unknown"
+team-founder: 'Christopher Mei'
 ---
 
-{% include info-box software='ImageJ' name='Watershed Algorithm' author='Christopher Mei' filename=' [Watershed_Algorithm.jar](https://imagej.nih.gov/ij/plugins/download/jars/Watershed_Algorithm.jar)' source='included in .jar' released='15 December 2003' latest-version='' status='unknown' category='Segmentation' website='https://imagej.nih.gov/ij/plugins/watershed.html' %}
+{% include info-box filename=' [Watershed_Algorithm.jar](https://imagej.nih.gov/ij/plugins/download/jars/Watershed_Algorithm.jar)' source='included in .jar' category='Segmentation' %}
 
 This algorithm is an implementation of the watershed immersion algorithm written by Vincent and Soille (1991):
 

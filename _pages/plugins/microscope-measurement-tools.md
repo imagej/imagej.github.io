@@ -1,18 +1,22 @@
 ---
 mediawiki: Microscope_Measurement_Tools
+name: "Microscope Measurement Tools"
 title: Microscope Measurement Tools
 categories: [Registration]
+release-date: "2.3"
+initial-release-date: "Sept. 24, 2015"
+website: "https://github.com/demisjohn/Microscope-Measurement-Tools"
+dev-status: "beta"
+team-founder: "@demisjohn"
+team-maintainer: "@demisjohn"
 ---
-
-
-{% capture demisjohn %}
-{% include person id='demisjohn' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='demisjohn' repo='Microscope-Measurement-Tools' %}
 {% endcapture %}
-{% include info-box software='Fiji' name='Microscope Measurement Tools' author=demisjohn maintainer=demisjohn filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases)' source=source released='Sept. 24<sup>th</sup>, 2015' latest-version='2.3' status='beta' website=' [Microscope Measurement Tools at GitHub](https://github.com/demisjohn/Microscope-Measurement-Tools)' %} Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
+{% include info-box filename=' [Download from GitHub/Releases](https://github.com/demisjohn/Microscope-Measurement-Tools/releases)' source=source  %}
+
+Recall saved calibrations for your microscope's measurement scale and create measurement annotations.
 
 ## Description
 

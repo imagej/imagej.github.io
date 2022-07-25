@@ -1,17 +1,19 @@
 ---
-mediawiki: Multi-View_Deconvolution
 title: Multi-View Deconvolution
 categories: [Uncategorized]
----
 
-{% capture source -%} {% include github org='fiji' repo='SPIM_Registration' %} {%- endcapture %}
-{% include info-box name='Multi-view deconvolution plugin' software='ImageJ' author='Stephan Preibisch, Fernando Amat, Eugene Myers, Pavel Tomancak' maintainer='Stephan Preibisch' source=source filename='SPIM_Registration.jar' released='February 2013' latest-version='June 2013' category='SPIM Registration' website="[Stephan Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch)" %}
+name: "Multi-view deconvolution plugin"
+initial-release-date: "February 2013"
+website: "http://fly.mpi-cbg.de/~preibisch"
+team-founders: ['@fernandoamat', Eugene Myers, '@tomancak']
+artifact: sc.fiji:SPIM_Registration
+---
 
 ## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
--   S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
+{% include citation doi='10.1038/nmeth.2929' %}
 
 ## Overview of the multi-view deconvolution plugin
 
@@ -31,11 +33,11 @@ Alternatively, an estimate or a simulated PSF can be provided as a 3d image. Thi
 
 It is highly recommended that before starting the multi-view deconvolution, to use the [Multi-view fusion](/plugins/multi-view-fusion) in order to determine the right bounding box for the image to be deconvolved.
 
-<span style="color:#A52A2A"> *Note: Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.* </span>
+{% include notice icon='warning' content='Do not set the bounding box too close to the imaged sample as it might result in artifacts. A distance of around 30-50 pixels between sample and the bounding box is suggested for the multi-view deconvolution.' %}
 
 ## How to use the plugin
 
-{% include thumbnail src='/media/plugins/spim-multiview-dialog1.jpg' title='Shows the first dialog that queries the location of the multi-view files'%}
+{% include img align='right' src='spim-multiview-dialog1' width=350 caption='Shows the first dialog that queries the location of the multi-view files' %}
 
 The multi-view deconvolution consists like the multi-view fusion of two consecutive dialogs. The first dialog queries the information necessary to analyze the dataset, i.e. locate the image files, the registration information and the location of the corresponding beads if applicable. Please note that all the parameters will be transferred from the [Multi-view fusion](/plugins/multi-view-fusion) dialog that you used before to set the bounding box (cropping area).
 
@@ -43,72 +45,52 @@ We omit a detailed explanation of the parameters here as it is identical to the 
 
 After providing the data the plugin will check which kind of registrations are available (\*.registration and \*.registration\_.to{tt}). Typically, the individual registration is available, and maybe also several time-series registrations to various reference timepoints. If no registration files could be found, the plugin will quit.
 
-{% include thumbnail src='/media/plugins/mv-deconvolution.png' title='Shows the second dialog that queries detailed parameters'%}
+{% include clear style='right' %}{% include img align='right' src='mv-deconvolution' width=350 caption='Shows the second dialog that queries detailed parameters' %}
 
 In the second dialog, you have to define the detailed instruction of how to run the multi-view deconvolution.
-
-<span style="color:#A52A2A"> *Note: Some of the options that are only mentioned here are explained in detail in the supplement of the not yet published publication. We will upload graphs, comparisons, etc. once the paper is accepted.* </span>
 
 The available options are:
 
 -   **Registration for channel 0:** You can choose which registration is used for this channel. You can typically choose between the individual registration of this timepoint or any registration to a reference timepoint.
 
-<!-- -->
-
 -   **Crop output image offset x/y/z:** Defines the offset of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 refers to the top-front-left corner of the bounding box surrounding all views.
-
-<!-- -->
 
 -   **Crop output image size x/y/z:** Defines the size of the cropping area (bounding box) in the x/y/z-dimension of the output image relative to the uncropped image. A value of 0 means no cropping.
 
-*Note: The values defining the bounding box are identical to those provided in the multi-view fusion!*
+{% include notice icon='info' content='The values defining the bounding box are identical to those provided in the multi-view fusion!' %}
 
 -   **Type of iteration:** There are several iteration schemes that have been developed and can be used. They differ from each other by convergence time and image quality, which is of course a trade-off:
 
-<!-- -->
-
--   -   *Independent (slow, very precise)* Is an ad-hoc optimization, yields reasonable results in case of very high signal-to-noise levels. In this case it is very fast.
+    -   *Independent (slow, very precise)* Is an ad-hoc optimization, yields reasonable results in case of very high signal-to-noise levels. In this case it is very fast.
     -   *Efficient Bayesian - Optimization I (fast, precise)* Is an optimization of the Efficient Bayesian multi-view deconvolution which approximates the conditional probabilities - the default choice.
     -   *Efficient Bayesian (less fast, more precise)* Incorporates conditional probabilities between the views into account without making any further assumptions.
     -   *Independent (slow, very precise)* assumes the individual views to be independent. This scheme converges slowest, but is least susceptible to noise and distortions (relevant at low signal-noise-ratios, imprecise alignments and inaccurate estimations of the PSFs)
 
-<!-- -->
-
 -   **Number of iterations:** Typical multi-view deconvolution scenarios comprising around 4-8 views need 10-15 iterations when using *Efficient Bayesian - Optimization I (fast, precise)* as iteration scheme. The behavior relative to another number of views and different optimization schemes can be found in Supplementary Figure 4 (to be linked).
 
-*Note: In order to determine the correct number of iterations for your dataset we suggest to use the Debug Mode (see below) on a partial volume.*
+{% include notice icon='info' content='In order to determine the correct number of iterations for your dataset we suggest to use the Debug Mode (see below) on a partial volume.' %}
 
 -   **Use Tikhonov Regularization/Tikhonov Parameter:** The regularization can be (de)activated. The behavior of the Tikhonov Parameter is shown in Supplementary Figures 5 and 6 (to be linked).
 
-<!-- -->
-
 -   **ImgLib Container:** Defines which container is used to hold the image data in memory. The ArrayContainer is usually the right choice as it provides highest performance. The PlanarContainer and CellContainer might(!) help in case it runs out of memory, but they save only a few percent.
-
-<!-- -->
 
 -   **Compute:** Define if the multi-view deconvolution should be computed for the entire image at once or in blocks. The result will be 100% identical! Computing in blocks saves a significant amount of RAM at the cost of higher computation time. If you run out of memory, try computing it in small blocks. If you select to choose a manually defined block size, a subsequent dialog will query the dimensions.
 
-*Note: For computation on the CPU, specific block sizes are not important (it is not a traditional power-of-2 scheme). However, on the GPU it is highly recommended to use only power-of-two values (256, 512, etc.), or maximally a sum of power-of-two values (384, 768, etc.)*
+{% include notice icon='info' content='For computation on the CPU, specific block sizes are not important (it is not a traditional power-of-2 scheme). However, on the GPU it is highly recommended to use only power-of-two values (256, 512, etc.), or maximally a sum of power-of-two values (384, 768, etc.)' %}
 
 -   **Compute on:** The multi-view deconvolution can be computed on the CPU or the GPU via JNA and CUDA. The CPU computation is built in Fiji, the CUDA code requires to load a native library (\*.dll, \*.so) that needs to be copied into the Fiji directory before starting Fiji. If you chose to compute the entire image at once on the GPU, a subsequent dialog will query which CUDA device to use. If you chose blocks on CUDA, you can choose in a subsequent dialog which GPU's will be used. If you have more than one CUDA device, use them both. It is usually not faster to let the CPU's compute blocks as well, but it might be.
 
-*Note: Note that when CUDA crashes (e.g. because of out-of-memory), Java usually crashes with it.*
+{% include notice icon='info' content='Note that when CUDA crashes (e.g. because of out-of-memory), Java usually crashes with it.' %}
 
 -   **PSF Estimation:** The PSFs can either be extracted from the corresponding beads that were detected during the bead-based registration or image(s) of the PSF can be provided. You can use a simulated PSF for your data or measured PSF's from another experiment (see PSF display for details how to store them). You can either use the same PSF for all views, it will be transformed according to the registrations of each view, or you specify a PSF for each view. In the latter case you can choose to transform the PSF's or you provide them already transformed. Typically, you will transform them. In case the PSFs are transformed, they to have the same calibration as the input views.
 
-<!-- -->
-
 -   **PSF display:** In order to verify or store the extracted PSFs they can be displayed as maximum intensity projection along the rotation axis, as averaged three-dimensional volume or each PSF individually as three-dimensional volume. For the last two cases you can choose to display them in the same calibration as the input views or already transformed. <span style="color:#A52A2A">You can for example save them and provide them as input for another deconvolution experiment where no beads were included.</span>
 
-*Note: All images are displayed as Virtual stacks. You might need to duplicate them in order to save them.*
+{% include notice icon='info' content='All images are displayed as Virtual stacks. You might need to duplicate them in order to save them.' %}
 
 -   **Debug Mode:** The debug mode will not only compute the final image but also show intermediate iterations in an ImageJ window. This allows to identify the correct number of iterations desired for your dataset. You will be queried in a subsequent dialog after every how many iterations you want to see current state of the iteration. It makes sense to not run the debug mode on the entire dataset but maybe a smaller part. Although the output might not be identical it gives a pretty good idea of how many iterations are required.
 
-<!-- -->
-
 -   **Load images sequentially:** You usually want to activate this option as it saves a lot of memory and at the same time is just unnoticeably slower.
-
-<!-- -->
 
 -   **Fused image output:** You can choose to display the result, save it the output directory as slices or create a different directory for each timepoint that is processed.
 
@@ -130,15 +112,13 @@ The difference between these coordinates of the different channels can for examp
 
 Some tips and tricks in the next few paragraphs require to change a static variable in the source code that changes the behavior of the plugin. This is done using the **script editor** and works as follows:
 
--   {% include bc path='File | New | Script'%}
--   {% include bc path='Language | Beanshell'%}
+-   {% include bc path='File | New | Script' %}
+-   {% include bc path='Language | Beanshell' %}
 -   type the command, e.g.
-
-<!-- -->
-
+    ```java
     System.gc();
-
--   click Run
+    ```
+-   click {% include button label="Run" %}
 
 This just cleans up the RAM, which might be useful. Note that changes that are made (not in this case though) are only valid for the **currently running Fiji instance**.
 

@@ -1,13 +1,13 @@
 ---
 mediawiki: Find_Peaks
+name: "Find Peaks"
 title: Find Peaks
 categories: [Scripting,Analysis]
+tags: [local maxima,local minima,extrema,inflection point, signal processing, spectral analysis]
+initial-release-date: "February 2014"
+team-founder: "@tferr"
+team-maintainer: "@tferr"
 ---
-
-<seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" /> 
-{% capture author%}
-{% include person id='tferr' %}
-{% endcapture %}
 
 {% capture filename%}
 {% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data_Analysis/Find_Peaks.bsh' %}
@@ -16,7 +16,7 @@ categories: [Scripting,Analysis]
 {% capture source%}
 {% include github org='tferr' repo='Scripts' branch='master' path='README.md\#data-analysis' %}
 {% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR update site](/plugins/bar)' author=author filename=filename source=source released='February 2014' category='Analysis, Scripting, Plugins' %}
+{% include info-box filename=filename source=source category='Analysis, Scripting' %}
 
 A [BAR](/plugins/bar) script (written in [BeanShell](/scripting/beanshell)) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](/plugins/bar#installation) to the BAR [update site](/list-of-update-sites).
 

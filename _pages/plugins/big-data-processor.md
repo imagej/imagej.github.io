@@ -1,14 +1,13 @@
 ---
 mediawiki: BigDataProcessor
+name: "BigDataProcessor"
 title: BigDataProcessor
 categories: [Uncategorized]
+update-site: "EMBL-CBA"
+team-founder: '@tischi'
+team-maintainer: '@tischi'
+pom-url: https://raw.githubusercontent.com/bigdataprocessor/bigdataprocessor1/master/pom.xml
 ---
-
-
-{% capture source%}
-{% include github org='embl-cba' repo='fiji-plugin-bigDataProcessor' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='BigDataProcessor' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 ## Overview
 

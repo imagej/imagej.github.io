@@ -1,15 +1,17 @@
 ---
 mediawiki: ITK
+name: "ITK"
 title: ITK
 section: Explore:Software
 doi: 10.3233/978-1-60750-929-5-586
+website: "http://itk.org/"
+dev-status: "Active"
+icon: /media/logos/itk.png
+source-url: https://github.com/InsightSoftwareConsortium/ITK
+team-maintainer: "Insight Software Consortium | http://itk.org/"
 ---
 
-
-{% capture source%}
-{% include github org='InsightSoftwareConsortium' repo='ITK' %}
-{% endcapture %}
-{% include info-box name='ITK' software='ITK' logo='<img src="/media/logos/itk.png" width="96"/>' author=' [Insight Software Consortium](http://itk.org/)' maintainer=' [Insight Software Consortium](http://itk.org/)' source=source status='Active' website='http://itk.org/' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](/licensing/open-source) application development framework widely used for the development of image [segmentation](/imaging/segmentation) and image registration programs.
+The Insight Toolkit (ITK) is a cross-platform, [open-source](/licensing/open-source) application development framework widely used for the development of image [segmentation](/imaging/segmentation) and image registration programs.
 
 # ITK integration with ImageJ
 
@@ -52,5 +54,3 @@ To cite ITK, please use the following publication:
 See also:
 
 -   [How do I cite the use of ITK in a publication?](https://itk.org/Wiki/ITK/FAQ#how-do-i-cite-the-use-of-itk-in-a-publication)
-
- 

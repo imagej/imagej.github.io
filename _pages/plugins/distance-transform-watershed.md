@@ -1,23 +1,20 @@
 ---
 mediawiki: Distance_Transform_Watershed
+name: "Distance Transform Watershed (2D and 3D)"
 title: Distance Transform Watershed
 categories: [Segmentation, Mathematical Morphology]
 extensions: ["mathjax"]
+release-date: "July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)"
+initial-release-date: "August 25, 2016"
+dev-status: "stable, active"
+team-founders: [iarganda, dlegland]
+team-maintainers: [iarganda, dlegland]
 ---
-
-
-{% capture author%}
-{% include person id='iarganda' %}, David Legland
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='iarganda' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='ijpb' repo='ijpb-plugins' %}
 {% endcapture %}
-{% include info-box name='Distance Transform Watershed (2D and 3D)' software='IJPB-plugins' author=author maintainer=maintainer source=source released='August 25<sup>th</sup>, 2016' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](/plugins/morpholibj) v1.4.1)' status='stable, active' category='Segmentation, Mathematical Morphology' %}
+{% include info-box software='IJPB-plugins' source=source  %}
 
 ## Introduction
 

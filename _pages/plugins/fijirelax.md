@@ -1,15 +1,17 @@
 ---
 mediawiki: FijiRelax
+name: "FijiRelax"
 title: FijiRelax
 categories: [Analysis]
 description: Quantitative MRI analysis
+initial-release-date: "February 11, 2021"
+dev-status: "stable, active"
+team-founder: 'Romain Fernandez'
+team-maintainer: 'Romain Fernandez'
+source-url: https://github.com/Rocsg/FijiRelax
 ---
 
 
-{% capture source%}
-{% include github org='Rocsg' repo='FijiRelax' %}
-{% endcapture %}
-{% include info-box name='FijiRelax' software='Fiji' author='Romain Fernandez' maintainer='Romain Fernandez' source=source released='February 11<sup>th</sup>, 2021' status='stable, active' category='Analysis' %}
 
 FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-echo spin-echo sequences. This work was supported by the French Ministry of Agriculture, France AgriMer, CNIV and IFV, within VITIMAGE and VITIMAGE-2024 projects (program Plan National Dépérissement du Vignoble). This tools is developed in the context of :
 - the [Vitimage 1](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage) and [Vitimage 2024](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage-2024) projects.

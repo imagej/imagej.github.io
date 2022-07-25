@@ -1,19 +1,16 @@
 ---
 mediawiki: Ellipse_split
+name: "Ellipse Splitting Plugin"
 title: Ellipse split
 doi: 10.5281/zenodo.834339
 categories: [Uncategorized]
+release-date: "v0.4.0 (15 May 2016)"
+dev-status: "active"
+team-founder: "@thorstenwagner"
+team-maintainer: "@thorstenwagner"
 ---
 
-
-{% capture author%}
-{% include person id='thorstenwagner' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='thorstenwagner' %}
-{% endcapture %}
-{% include info-box software='Fiji/ImageJ' name='Ellipse Splitting Plugin' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \]' latest-version='v0.4.0 (15 May 2016)' status='active' %}
+{% include info-box filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \]'  %}
 
 ## Purpose
 

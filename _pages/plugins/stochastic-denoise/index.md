@@ -5,8 +5,8 @@ name: Stochastic Denoise
 dev-status: Unreleased
 support-status: Unreleased
 doi: 10.5244/C.23.117
-team-founder: Jan Funke | /people/funkey
-team-maintainer: Jan Funke | /people/funkey
+team-founder: "@funkey"
+team-maintainer: "@funkey"
 source-url: https://github.com/fiji/Stochastic_Denoise
 ---
 

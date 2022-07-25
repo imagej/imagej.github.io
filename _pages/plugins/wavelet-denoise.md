@@ -1,14 +1,16 @@
 ---
 mediawiki: Wavelet_Denoise
+name: "Wavelet\_Denoise"
 title: Wavelet Denoise
 categories: [Filtering]
+release-date: "05/21/2020"
+initial-release-date: "04/09/2020"
+team-founder: '@LMCF-IMG'
+team-maintainer: '@LMCF-IMG'
+source-url: https://github.com/LMCF-IMG/Wavelet_Denoise
 ---
 
 
-{% capture source%}
-{% include github org='LMCF-IMG' repo='Wavelet_Denoise' %}
-{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Wavelet\_Denoise' author=' [Martin Čapek](/people/LMCF-IMG)' maintainer='Martin Čapek' source=source released='04/09/2020' latest-version='05/21/2020' %}
 
 ## Plugin for wavelet-based denoising/filtering image data
 

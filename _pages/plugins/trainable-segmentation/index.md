@@ -1,28 +1,20 @@
 ---
 mediawiki: Trainable_Segmentation_Plugin_(deprecated)
+name: "Trainable Segmentation"
 title: Trainable Segmentation Plugin (deprecated)
 categories: [Segmentation]
+release-date: "January 6, 2012"
+initial-release-date: "March 16, 2010"
+dev-status: "**deprecated**"
+team-founders: ["@vkaynig", "@iarganda", "@acardona"]
+team-maintainer: "@iarganda"
+source-url: https://github.com/fiji/Trainable_Segmentation
 ---
 
-<div style="background:#fdd; padding: 10px 10px 0 10px; border: 1px solid black;">
-
+{% include notice icon="warning" content="
 **DEPRECATION NOTICE:** This page describes the Trainable Segmentation plugin, the previous incarnation of the [Trainable Weka Segmentation](/plugins/tws) plugin and library. We encourage users and developers to work with the more advanced and properly maintained [Trainable Weka Segmentation](/plugins/tws) instead.
+" %}
 
-</div>
-
-
-{% capture author%}
-Verena Kaynig, {% include person id='iarganda' %}, Albert Cardona
-{% endcapture %}
-
-{% capture maintainer%}
- [Verena Kaynig](http://www.kaynig.de) and {% include person id='iarganda' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='fiji' repo='Trainable_Segmentation' %}
-{% endcapture %}
-{% include info-box name='Trainable Segmentation' software='Fiji' author=author maintainer=maintainer source=source released='March 16<sup>th</sup>, 2010' latest-version='January 6<sup>th</sup>, 2012' status='**deprecated**' category='Segmentation' %}
 
 ## User Manual
 

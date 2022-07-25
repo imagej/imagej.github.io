@@ -14,7 +14,7 @@ license-label: MIT
 
 icon: /media/icons/masks-from-rois.svg
 
-team-founders: Laurent Thomas, Pierre Trehin  
+team-founders: ["@LauLauThom", "Pierre Trehin"]
 ---
 
 # Generate Masks from Rois in Fiji

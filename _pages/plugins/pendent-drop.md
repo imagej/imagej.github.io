@@ -1,11 +1,18 @@
 ---
 mediawiki: Pendent_Drop
+name: "Pendent Drop"
 title: Pendent Drop
 doi: 10.5334/jors.97
 categories: [Uncategorized]
+release-date: "version 2 (September 20, 2015)"
+initial-release-date: "September 28, 2010"
+dev-status: "stable, active"
+update-site: "https://sites.imagej.net/Daerr/"
+team-founder: 'Adrian Daerr | http://www.msc.univ-paris-diderot.fr/~daerr/'
+team-maintainer: 'Adrian Daerr | http://www.msc.univ-paris-diderot.fr/~daerr/'
 ---
 
-{% include info-box name='Pendent Drop' software='Fiji' author=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/)' maintainer=' [Adrian Daerr](http://www.msc.univ-paris-diderot.fr/~daerr/)' update-site='https://sites.imagej.net/Daerr/' source='https://github.com/adaerr/pendent-drop' released='September 28, 2010' latest-version='version 2 (September 20, 2015)' status='stable, active' %}
+{% include info-box source='https://github.com/adaerr/pendent-drop'  %}
 
 ![](/media/plugins/eaucontrastemaxfit.jpg)
 

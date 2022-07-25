@@ -2,11 +2,10 @@
 mediawiki: Sholl_Analysis
 title: Sholl Analysis
 categories: [Analysis,Neuroanatomy]
+tags: [sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite, neuroanatomy]
 artifact: org.morphonets:SNT
 doi: 10.1038/nmeth.3125
 ---
-
-<seo metak="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite, neuroanatomy" metad="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite,neuroanatomy" />
 
 Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analyis of traced reconstructions (via [SNT](/plugins/snt)) and profiles obtained by other software is also possible.
 

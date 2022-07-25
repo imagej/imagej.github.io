@@ -1,15 +1,17 @@
 ---
 mediawiki: Fijiyama
+name: "Fijiyama"
 title: Fijiyama
 categories: [Registration]
 description: Registration and alignment of 3D image series
+initial-release-date: "February 10, 2020"
+dev-status: "stable, active"
+team-founder: 'Romain Fernandez & Cédric Moisy'
+team-maintainer: 'Romain Fernandez'
+source-url: https://github.com/Rocsg/Fijiyama
 ---
 
 
-{% capture source%}
-{% include github org='Rocsg' repo='Fijiyama' %}
-{% endcapture %}
-{% include info-box name='Fijiyama' software='Fiji' author='Romain Fernandez & Cédric Moisy' maintainer='Romain Fernandez' source=source released='February 10<sup>th</sup>, 2020' status='stable, active' category='Registration' %}
 
 <i>Current Fijiyama version : Gorgeous Grapevine (last release : March 21<sup>th</sup>, 2020).</i>
 

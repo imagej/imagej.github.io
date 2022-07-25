@@ -5,8 +5,8 @@ source-url: http://biop.epfl.ch/INFO_Facility.html#staff
 source-label: PTBIOP staff site
 release-date: Oct 2016
 dev-status: Stable
-team-developers: Romain Guiet, Olivier Burri
-team-maintainers: Romain Guiet
+team-developers: ["@romainGuiet", "@lacan"]
+team-maintainers: "@romainGuiet"
 categories: [Uncategorized]
 ---
 

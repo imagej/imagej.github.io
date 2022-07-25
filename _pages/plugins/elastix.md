@@ -1,14 +1,15 @@
 ---
 mediawiki: Elastix
+name: "Elastix"
 title: Elastix
 categories: [Uncategorized]
+update-site: "EMBL-CBA"
+team-founder: '@tischi'
+team-maintainer: '@tischi'
+source-url: https://github.com/embl-cba/fiji-plugin-elastixWrapper
 ---
 
 
-{% capture source%}
-{% include github org='embl-cba' repo='fiji-plugin-elastixWrapper' %}
-{% endcapture %}
-{% include info-box name='Elastix' software='Fiji' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 ## Overview
 

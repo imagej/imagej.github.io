@@ -1,14 +1,15 @@
 ---
 mediawiki: BigDataProcessor2
+name: "BigDataProcessor2"
 title: BigDataProcessor2
 categories: [Uncategorized]
+update-site: "BigDataProcessor"
+team-founder: 'Ashis Ravindran & @tischi'
+team-maintainer: '@tischi'
+source-url: https://github.com/embl-cba/bigDataProcessor2
 ---
 
 
-{% capture source%}
-{% include github org='embl-cba' repo='bigDataProcessor2' %}
-{% endcapture %}
-{% include info-box name='BigDataProcessor2' software='Fiji' update-site='BigDataProcessor' author='Ashis Ravindran & Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 ## Overview
 

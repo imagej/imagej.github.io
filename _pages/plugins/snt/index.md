@@ -1,31 +1,21 @@
 ---
 mediawiki: SNT
+name: "SNT"
 title: SNT
+description: A complete framework for quantification of neuronal anatomy.
 categories: [Segmentation,Neuroanatomy]
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 nav-links: true
 nav-title: Overview
 doi: 10.1038/s41592-021-01105-7
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+update-site: Neuroanatomy
 ---
-
-{% capture author%}
-{% include person id='tferr' %}, {% include person id='kephale' %}, {% include person id='carshadi' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='tferr' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='morphonets' repo='SNT' %}
-{% endcapture %}
-{% include info-box name='SNT' software='complete framework for quantification of neuronal anatomy' logo='<img src="/media/logos/snt.png" width="150"/>' author=author maintainer=maintainer source=source status='stable, active' category='Neuroanatomy' %}
-
-## Overview
 
 SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#snt) plug-in.
 
-SNT's documentation is extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
+SNT's documentation is extensive. Please use the navigation bar on top of the page to access the different sections. The major sections are organized as follows:
 
 -   **[Manual](/plugins/snt/manual)**: SNT's user guide for tracing operations
 -   **[Walk-throughs](/plugins/snt/step-by-step-instructions)**: Detailed step-by-step instructions for specific tasks

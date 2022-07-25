@@ -1,23 +1,18 @@
 ---
 mediawiki: Hough_Circle_Transform
+name: "Hough Circle Transform"
 title: Hough Circle Transform
-categories: [Analysis]
+categories: [Analysis, Feature Extraction]
 extensions: ["mathjax"]
+release-date: "September 21, 2018 (v1.0.0)"
+initial-release-date: "February 4, 2017"
+dev-status: "stable, active"
+team-founder: "@llamero"
+team-maintainer: "@llamero"
+update-site: "UCB Vision Sciences"
+source-url: https://github.com/llamero/Local_Hough_Circle
 ---
 
-
-{% capture author%}
-{% include person id='llamero' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='llamero' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='llamero' repo='Local_Hough_Circle' %}
-{% endcapture %}
-{% include info-box name='Hough Circle Transform' software='plugin' update-site='UCB Vision Sciences' author=author maintainer=maintainer source=source released='February 4<sup>th</sup>, 2017' latest-version='September 21<sup>st</sup>, 2018 (v1.0.0)' status='stable, active' category='Analysis, Feature Extraction' %}
 
 ## Introduction
 

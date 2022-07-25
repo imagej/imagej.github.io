@@ -1,23 +1,19 @@
 ---
 mediawiki: ClearVolume
+name: "ClearVolume"
 title: ClearVolume
 categories: [Visualization]
 doi: 10.1038/nmeth.3372
+website: "https://clearvolume.github.io/"
+dev-status: "active"
+team-maintainer: "@fjug"
+team-contributors: ["@royerloic", "@maweigert", "@skalarproduktraum"]
+icon: /media/icons/clearvolume.png
+source-url: https://github.com/ClearVolume/imglib2-clearvolume
 ---
 
 
-{% capture author%}
-{% include person id='fjug' %}, {% include person id='royerloic' %}, Martin Weigert, {% include person id='skalarproduktraum' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='fjug' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='ClearVolume' repo='imglib2-clearvolume' %}
-{% endcapture %}
-{% include info-box name='ClearVolume' logo='![](/media/logos/clearvolume.png)' software='Fiji' author=author maintainer=maintainer source=source status='active' category='Visualization' website='https://clearvolume.github.io/' %}== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
+== Problems and Solutions == We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
 -   **Problem:** on a Linux machine ClearVolume would not start but throw an ugly exception like
 

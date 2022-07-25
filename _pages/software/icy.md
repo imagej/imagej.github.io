@@ -1,11 +1,18 @@
 ---
 mediawiki: Icy
+name: "Icy"
 title: Icy
 section: Explore:Software
 doi: 10.1038/nmeth.2075
+website: "https://icy.bioimageanalysis.org/"
+dev-status: "Active"
+icon: /media/icons/icy.png
+team-founder: 'QuIA | http://www.bioimageanalysis.org/'
+team-maintainer: 'QuIA | http://www.bioimageanalysis.org/'
+source-url: https://github.com/Icy-imaging
 ---
 
-{% include info-box name='Icy' software='Icy' logo='<img src="/media/icons/icy.png" width="96"/>' author=' [QuIA](http://www.bioimageanalysis.org/) at [Institut Pasteur](http://www.pasteur.fr/en)' maintainer=' [QuIA](http://www.bioimageanalysis.org/) at [Institut Pasteur](http://www.pasteur.fr/en)' source=' [on GitHub](https://github.com/Icy-imaging)' status='Active' website='http://icy.bioimageanalysis.org/' %}Icy is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.
+Icy is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.
 
 ## Publication
 

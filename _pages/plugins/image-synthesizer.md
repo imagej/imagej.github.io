@@ -1,10 +1,16 @@
 ---
 mediawiki: Image_Synthesizer
+name: "Image Synthesizer"
 title: Image Synthesizer
 categories: [Uncategorized]
+release-date: "24.05.2020"
+initial-release-date: "19.03.2018"
+website: "http://wiki.imagej.net/Image\_Synthesizer"
+team-founder: 'Maximilian Maske'
+team-maintainer: 'Maximilian Maske'
 ---
 
-{% include info-box software='ImageJ / Fiji plugins' name='Image Synthesizer' maintainer='Maximilian Maske' author='Maximilian Maske' released='19.03.2018' latest-version='24.05.2020' category='Plugins' website='http://wiki.imagej.net/Image\_Synthesizer' %}
+{% include info-box %}
 
 ## Overview of 'Image Synthesizer'
 

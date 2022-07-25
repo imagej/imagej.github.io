@@ -1,11 +1,14 @@
 ---
 mediawiki: Minimum_Cost_Z_surface_Projection
+name: "Min Cost Z Surface"
 title: Minimum Cost Z surface Projection
 categories: [Projection]
+initial-release-date: "03 August 2016"
+team-founder: "@benoalo"
+team-maintainer: "@benoalo"
 ---
 
-{% capture benoalo %}{% include person id='benoalo' %}{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Min Cost Z Surface' author=benoalo maintainer=benoalo released='03 August 2016' filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' category='Plugins, Projection' %}
+{% include info-box filename='![](/media/mincostzsurface-1.1.0.jar.zip)' source=' [MPI-CBG git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)' %}
 
 ## Introduction
 

@@ -1,10 +1,14 @@
 ---
-mediawiki: DICOM_open
 title: DICOM open
 categories: [Import-Export]
+project: /software/imagej
+name: "DICOM\_open"
+license-label: GPL
+license-url: https://www.gnu.org/licenses/gpl.html
+initial-release-date: "2019-04-01"
+dev-status: "stable"
+team-founder: 'Fred Damen'
 ---
-
-{% include info-box software='ImageJ 1.x' name='DICOM\_open' author='Fred Damen' filename='DICOM\_open.jar' source=' [DICOM\_open.zip](/media/plugins/dicom-open.zip)' released='1 April 2019' status='stable' category='Import-Export' website='' %}
 
 The DICOM\_open plugin provides additional functionality on top of the DICOM plugin. There were three main impetuses for developing this plugin, first was to be able to search the DICOM files for a series to open, second was to open the series and get at the actual voxel data, and, third was to properly arrange the images in a hyperstack.
 
@@ -80,7 +84,7 @@ public static String getTagLine(ImagePlus imp, int s, String tag)
 
 ## Install
 
-Unzip [DICOM\_open.zip](/media/plugins/dicom-open.zip) into ImageJ 1.x plugins {% include bc path="File|Show Folder|Plugins" %} or `plugins`/`jars` directories. Source code in jar file. `DICOM_explode` is included.
+Unzip [DICOM\_open.zip](/media/plugins/dicom-open.zip) into ImageJ plugins {% include bc path="File|Show Folder|Plugins" %} or `plugins`/`jars` directories. Source code in jar file. `DICOM_explode` is included.
 
 ## Licence
 

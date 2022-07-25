@@ -1,32 +1,21 @@
 ---
 mediawiki: PillarTracker
+name: "PillarTracker"
 title: PillarTracker
 categories: [Tracking,Visualization,Analysis,Filtering]
+release-date: "**1.1.6 May 2018**"
+initial-release-date: "June 2017"
+dev-status: "stable, active"
+team-founders: [Xu Xiaochun, Felix Martin Margadant]
+team-maintainer: Xu Xiaochun
+source-url: https://github.com/scottreen/PillarTracker
 ---
 
-<div style="float:right;">
-
-
-{% capture author%}
-{% include person name='Xu Xiaochun' %}, {% include person name='Felix Martin Margadant' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person name='Xu Xiaochun' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='scottreen' repo='PillarTracker' %}
-{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='PillarTracker' author=author maintainer=maintainer source=source released='June 2017' latest-version='**1.1.6 May 2018**' status='stable, active' category='Tracking, Visualization, Filtering, Analysis, Plugins' %}
-
-</div>
-
-This plugin enables user to track pillars with drift correction and visualize the trajectories and deflections.
+PillarTracker enables users to track pillars with drift correction and visualize the trajectories and deflections.
 
 ## Installation
 
-It can be automatically downloaded and installed by Fiji's updater({% include bc path="Help|Update..." %}). Activate the **PillarTracker** checkbox in *Manage update sites*. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually.
+It can be automatically downloaded and installed via the [ImageJ Updater](/plugins/updater) ({% include bc path="Help|Update..." %}). Activate the **PillarTracker** checkbox in *Manage update sites*. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually.
 
 Latest version: [Pillar_Tracker_GUI-1.1.6-SNAPSHOT.jar](https://github.com/scottreen/PillarTracker/releases/download/v1.1.6/Pillar_Tracker_GUI-1.1.6-SNAPSHOT.jar) (&lt;1 MB)
 

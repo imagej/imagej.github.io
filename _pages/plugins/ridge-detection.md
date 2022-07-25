@@ -1,18 +1,18 @@
 ---
 mediawiki: Ridge_Detection
+name: "Ridge (Line) Detection Plugin"
 title: Ridge Detection
-categories: [Uncategorized]
+categories: [Filtering]
 extensions: ["mathjax"]
+release-date: "v1.4.0 (20 Aug 2017)"
+dev-status: "Unmaintained"
+artifact: de.biomedical-imaging.imagej:ij_ridge_detect
+doi: 10.5281/zenodo.845874
 ---
 
 {% include warning/unmaintained %}
- {% include notice icon='info' size='large' content='As this plugin is no longer maintained... you can check out [ImageJ Ops](/libs/imagej-ops) for Ridge Detection algorithms.' %}
 
-
-{% capture author%}
-{% include person id='thorstenwagner' %}, {% include person id='hinerm' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='Ridge (Line) Detection Plugin' author=author maintainer='Unmaintained' filename='Ridge\_Detect.jar [\[1](https://github.com/thorstenwagner/ij-ridgedetection/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ridgedetection) \]' latest-version='v1.4.0 (20 Aug 2017)' status='Unmaintained' %}
+{% include notice icon='info' size='large' content='As this plugin is no longer maintained... you can check out [ImageJ Ops](/libs/imagej-ops) for Ridge Detection algorithms.' %}
 
 ## Purpose
 
@@ -30,7 +30,7 @@ This example shows the application of the plugin on images of carbon nanotubes (
 
 # Parameter Selection
 
-There are three parameters which **have to ** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/plugins/ridge-detection-parameters.png" title="fig:Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
+There are three parameters which **have to** be specified. These are the mandatory parameters. The optional parameters can be used to estimate the mandatory parameters <img src="/media/plugins/ridge-detection-parameters.png" title="Ridge_Detection_Parameters.png" width="200" alt="Ridge_Detection_Parameters.png" />
 
 ## Mandatory Parameters
 
@@ -60,7 +60,7 @@ $$T_{L}=\left\lfloor 0.17\cdot\frac{2\cdot b_{low}\cdot\frac{w}{2}}{\sqrt{2\pi}\
 
 ## Further options (true/false)
 
-<img src="/media/plugins/ridgedetectionwidth.png" title="fig:Output if &quot;Estimated width&quot; is selected" width="140" alt="Output if &quot;Estimated width&quot; is selected" /> **Correct position:** Correct the line position if it has different contrast on each side of it.
+<img src="/media/plugins/ridgedetectionwidth.png" title="Output if &quot;Estimated width&quot; is selected" width="140" alt="Output if &quot;Estimated width&quot; is selected" /> **Correct position:** Correct the line position if it has different contrast on each side of it.
 
 **Estimate width:** If this option is selected the width of the line is estimated.
 
@@ -114,7 +114,7 @@ If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder a
 
 This is a list of publications where the plugin was used:
 
-Glaser, M., Schnauß, J., Tschirner, T., Schmidt, S., Moebius-Winkler, M., Käs, J. A., & Smith, D. M. (2016). Self-assembly of hierarchically ordered structures in DNA nanotube systems. New Journal of Physics New J. Phys., 18(5), 055001. <doi:10.1088/1367-2630/18/5/055001>
+{% include citation doi="10.1088/1367-2630/18/5/055001" %}
 
 # How to cite
 
@@ -122,8 +122,10 @@ We think the best way is to cite the formal method and the used implementation:
 
 **Method**:
 
-*Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.*
+{% include citation doi="10.1109/34.659930" %}
 
 **Implementation**:
 
 <a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection"><img src="/media/plugins/ij-ridgedetection.svg" width="174px"/></a>
+
+{% include citation %}

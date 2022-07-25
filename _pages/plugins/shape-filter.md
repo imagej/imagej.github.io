@@ -1,19 +1,13 @@
 ---
 mediawiki: Shape_Filter
+name: "Shape Filter Plugin"
 title: Shape Filter
 categories: [Uncategorized]
 extensions: ["mathjax"]
+artifact: de.biomedical-imaging.ij:ij_shape_filter
+website: https://github.com/thorstenwagner/ij-shape-filter
+doi: 10.5334/jors.ae
 ---
-
-
-{% capture author%}
-{% include person id='thorstenwagner' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='thorstenwagner' %}
-{% endcapture %}
-{% include info-box software='ImageJ/Fiji' name='Shape Filter Plugin' author=author maintainer=maintainer filename='shape\_filter\_x.y.z.jar [\[1](https://github.com/thorstenwagner/ij-shape-filter/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-shape-filter) \]' latest-version='v1.4.2 (14 July 2016)' status='active' %}
 
 # General Description
 
@@ -21,7 +15,7 @@ The ImageJ Shape Filter Plugin use the [\[ij-blob](https://github.com/thorstenwa
 
 If you like to cite the Shape Filter plugin in a scientific publication, please cite:
 
-Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Component Analysis and Shape Analysis. Journal of Open Research Software 1(1):e6, DOI: http://dx.doi.org/10.5334/jors.ae
+{% include citation %}
 
 ## Shape Features
 

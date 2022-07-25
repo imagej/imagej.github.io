@@ -1,7 +1,12 @@
 ---
 mediawiki: 3D_Binary_Filters
+name: "Minimum/Maximum/Median"
 title: 3D Binary Filters
 categories: [3D, Binary]
+release-date: "3.0.0, December 17, 2015"
+dev-status: "beta"
+team-founder: '@bene51'
+team-maintainer: '@bene51'
 ---
 
 
@@ -12,7 +17,7 @@ categories: [3D, Binary]
 {% capture source %}
 {% include github org='fiji' repo='VIB' %}
 {% endcapture %}
-{% include info-box name='Minimum/Maximum/Median' software='ImageJ' author='Benjamin Schmid' maintainer='Benjamin Schmid' filename=filename source=source latest-version='3.0.0, December 17<sup>th</sup>, 2015' status='beta' %}
+{% include info-box filename=filename source=source  %}
 
 ## Purpose
 

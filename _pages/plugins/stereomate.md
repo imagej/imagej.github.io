@@ -1,19 +1,17 @@
 ---
 mediawiki: StereoMate
+name: "StereoMate"
 title: StereoMate
 categories: [Uncategorized]
 doi: 10.1101/648337
+initial-release-date: "August 2019"
+website: "/ij/plugins/stereomate.html"
+dev-status: "stable"
+team-founder: "@stevenjwest"
+team-maintainer: "@stevenjwest"
 ---
 
-
-{% capture author%}
-{% include person id='stevenjwest' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='stevenjwest' %}
-{% endcapture %}
-{% include info-box software='Fiji' name='StereoMate' author=author maintainer=maintainer filename='Stereo\_Mate.jar' source='https://github.com/stevenjwest/StereoMate' released='August 2019' status='stable' website='/ij/plugins/stereomate.html' %}
+{% include info-box filename='Stereo\_Mate.jar' source='https://github.com/stevenjwest/StereoMate' %}
 
 ## Purpose
 

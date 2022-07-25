@@ -1,14 +1,18 @@
 ---
 mediawiki: Region_Competition
+name: "Region Competition"
 title: Region Competition
 categories: [Segmentation,Deconvolution]
+initial-release-date: "2013"
+website: "http://mosaic.mpi-cbg.de/?q=downloads/imageJ"
+dev-status: "active"
+team-maintainer: "@krzysg"
+update-site: "MOSAIC ToolSuite"
+team-founder: 'MOSAIC Group | https://sbalzarini-lab.org/'
 ---
 
 
-{% capture maintainer%}
-{% include person id='krzysg' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Region Competition' author=' [MOSAIC Group](http://mosaic.mpi-cbg.de/) , [Center for Systems Biology Dresden (CSBD)](http://www.mpg-sysbio.de) , [Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)](http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html) , Dresden, Germany.' maintainer=maintainer update-site='MOSAIC ToolSuite' source=' [MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite)' released='2013' status='active' category='Segmentation, Deconvolution' website=' [MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ)' %}
+{% include info-box source=' [MPI-CBG git](https://git.mpi-cbg.de/mosaic/MosaicSuite)' %}
 
 **Region Competition** is a 2D and 3D multi-region image segmentation tool. It can segment arbitrary (and not priorly known) numbers of objects in fluorescence microscopy images. The objects can have either constant or varying internal intensity. The segmentation computed by Region Competition can optionally correct for the PSF of the microscope, hence providing deconvolved segmentations as described in Helmuth et al. (2009[^1]) and in Helmuth and Sbalzarini (2009[^2]). Region Competition is part of the [MosaicSuite](http://mosaic.mpi-cbg.de/?q=downloads/imageJ), which also offers 3D particle tracking, co-localization analysis, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [MOSAIC web page](http://mosaic.mpi-cbg.de/?q=downloads/imageJ). The algorithm is described in Cardinale, Paul, and Sbalzarini (2012[^3]).
 

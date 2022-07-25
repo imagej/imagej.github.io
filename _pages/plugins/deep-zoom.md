@@ -1,16 +1,16 @@
 ---
-mediawiki: Deep_Zoom
 title: Deep Zoom
-categories: [Unmaintained]
+categories: [Import-Export]
+
+name: Deep Zoom
+dev-status: Obsolete
+support-status: None
+source-url: https://github.com/uw-loci/deep-zoom-plugin
+pom-url: https://raw.githubusercontent.com/uw-loci/deep-zoom-plugin/master/pom.xml
 ---
 
-
-{% capture source%}
-{% include github org='uw-loci' repo='deep-zoom-plugin' %}
-{% endcapture %}
-{% include info-box software='ImageJ' name='Deep Zoom' author=' [Aivar Grislis](http://loci.wisc.edu/people/aivar-grislis)' source=source status='inactive' category='Import-Export' %}== Introduction ==
-
-<img src="/media/plugins/deep-zoom-1.png" title="fig:Deep-zoom-1.png" width="300" alt="Deep-zoom-1.png" /> <img src="/media/plugins/deep-zoom-2.png" title="fig:Deep-zoom-2.png" width="400" alt="Deep-zoom-2.png" />
+{% include img src="deep-zoom-1" width=300 %}
+{% include img src="deep-zoom-2" width=400 %}
 
 The Deep Zoom Plugin is useful for exporting a large image to the {% include wikipedia title='Deep Zoom' text='Deep Zoom'%} format.  It builds an HTML and an XML file and an associated collection of folders for different zoom levels containing image tiles.  If these are created within or moved to a folder on a web server, the image can subsequently be viewed, zoomed, and panned over the 'Net in a browser window.  (It can also be viewed from the local filesystem in a browser window.)
 
@@ -40,7 +40,7 @@ The first screenshot shows the user interface for the plugin:
 -   'Image window width' and 'Image window height' specify the size of the image window in the browser.
 -   'Launch browser' controls whether or not the plugin should pop up a browser to view the results.
 -   'URL (optional)' can be used if your output folder is on a web server.  Then the browser views the results from your web server.
--   On my Mac I have my output folder set to '/Users/aivar/Sites' and URL set to [`http://0.0.0.0/~aivar`](http://0.0.0.0/~aivar).
+-   On my Mac I have my output folder set to '/Users/aivar/Sites' and URL set to `http://0.0.0.0/~aivar`.
 -   The dropdown list for 'Implementation' is for experimental purposes (and will be removed from the final version of the plugin).  For now the default 'CHAINED' option is best.  To read more about the different implementations see below.
 
 ## See also
@@ -58,5 +58,3 @@ MULTIINSTANCE is similar to SINGLEINSTANCE except that every time a set of input
 The CHAINED code is [here](https://github.com/uw-loci/deep-zoom-plugin/tree/master/src/main/java/loci/chainableplugin).  SINGLEINSTANCE and MULTIINSTANCE both use the same package [here](https://github.com/uw-loci/deep-zoom-plugin/tree/master/src/main/java/loci/multiinstanceplugin).  (There's also some experimental workflow code in this project [here](https://github.com/uw-loci/deep-zoom-plugin/tree/master/src/main/java/loci/deepzoom/workflow), tested [here](https://github.com/uw-loci/deep-zoom-plugin/tree/master/src/test/java/loci/workflow).  This creates a workflow/pipeline of components (chunks of code or plugins) with named input and output images chained together.  A workflow may be a component.  Workflows can be saved/restored to/from XML.)
 
 (Currently both SINGLEINSTANCE and MULTIINSTANCE versions pop up the browser window before the file/folder structure is completely written.  So to actually view the image in the browser you have to wait and refresh.)
-
- 

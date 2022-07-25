@@ -7,13 +7,13 @@ license-url: /licensing/lgpl
 license-label: LGPLv3
 dev-status: Active
 support-status: Active
-team-founders: Jean-Yves Tinevez
-team-leads:  Jean-Yves Tinevez
-team-developers:  Jean-Yves Tinevez
-team-debuggers:  Jean-Yves Tinevez
-team-reviewers:  Jean-Yves Tinevez
-team-support:  Jean-Yves Tinevez
-team-maintainers:  Jean-Yves Tinevez
+team-founders: "@tinevez"
+team-leads: "@tinevez"
+team-developers: "@tinevez"
+team-debuggers: "@tinevez"
+team-reviewers: "@tinevez"
+team-support: "@tinevez"
+team-maintainers: "@tinevez"
 ---
 
 # CSV to TrackMate importer

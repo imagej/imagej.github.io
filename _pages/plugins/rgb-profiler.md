@@ -1,10 +1,16 @@
 ---
 mediawiki: RGB_Profiler
+name: "RGB Profiler"
 title: RGB Profiler
 categories: [Color Processing]
+release-date: "2 February 2004"
+initial-release-date: "2 February 2004"
+website: "https://imagej.nih.gov/ij/plugins/rgb-profiler.html"
+dev-status: "first version"
+team-founders: [Christophe Laummonerie, '@mutterer']
 ---
 
-{% include info-box software='ImageJ' name='RGB Profiler' author='Christophe Laummonerie, Jerome Mutterer' filename=' [RGB\_Profiler.class](https://imagej.nih.gov/ij/plugins/download/RGB_Profiler.class)' source=' [RGB\_Profiler.java](https://imagej.nih.gov/ij/plugins/download/RGB_Profiler.java)' released='2 February 2004' latest-version='2 February 2004' status='first version' category='Color Processing' website='https://imagej.nih.gov/ij/plugins/rgb-profiler.html' %}
+{% include info-box filename=' [RGB\_Profiler.class](https://imagej.nih.gov/ij/plugins/download/RGB_Profiler.class)' source=' [RGB\_Profiler.java](https://imagej.nih.gov/ij/plugins/download/RGB_Profiler.java)'  %}
 
 ## Purpose
 

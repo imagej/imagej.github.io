@@ -1,19 +1,14 @@
 ---
 mediawiki: IsletJ
+name: "IsletJ"
 title: IsletJ
 doi: 10.3727/096368916X692005
-categories: [Uncategorized]
+categories: [Microscopy]
+dev-status: "Active"
+team-maintainer: "@jschier"
+team-founders: [Jan Švihlík, "@jschier"]
+source-url: https://github.com/jschier/IsletJ
 ---
-
-
-{% capture author%}
-Jan Švihlík and {% include person id='jschier' %}
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='jschier' %}
-{% endcapture %}
-{% include info-box name='IsletJ' software='ImageJ' author=author maintainer=maintainer status='Active' %}
 
 IsletJ is a plugin for analysis of microscopy images of Langerhans islets in [ImageJ](/software/imagej). It provides free, open source tool for analysis of islets diameter and number and for estimation of sample purity (ratio of endocrine/exocrine tissue area).
 
@@ -36,4 +31,4 @@ User documentation in PDF format is available at [github](https://github.com/jsc
 
 ## Publication
 
--   Habart D., Švihlík J., Schier Jan, Cahová M., Girman P., Zacharovová K., Berková Z., Kříž J., Fabryová E., Kosinová L., Papáčková Z., Kybic J., Saudek F. : Automated Analysis of Microscopic Images of Isolated Pancreatic Islets , Cell Transplantation vol.25, 12 (2016), p. 2145-2156, DOI [https://doi.org/10.3727/096368916X692005](https://doi.org/10.3727/096368916X692005)
+{% include citation %}

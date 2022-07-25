@@ -11,7 +11,7 @@ release-date: 2019
 license-url: /licensing/bsd
 license-label: BSD-2
 
-team-founders: Laurent Thomas, Jochen Gehrig
+team-founders: ["@LauLauThom", Jochen Gehrig]
 ---
 
 # New versions

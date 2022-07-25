@@ -2,23 +2,16 @@
 mediawiki: CSIMLab
 title: CSIMLab
 section: Contribute:Organizations
-categories: [Filtering,Noise]
+categories: [Filtering, Noise]
 extensions: ["mathjax"]
+name: "CSIM Laboratory ImageJ"
+release-date: "2015-02-01"
+initial-release-date: "2015-02-01"
+source-url: https://github.com/CSIM-Toolkits/ImageJ
+dev-status: "experimental, active"
+team-maintainer: "@acsenrafilho"
+team-founder: "@acsenrafilho"
 ---
-
-
-{% capture author%}
-{% include person id='acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='acsenrafilho' %}
-{% endcapture %}
-
-{% capture source%}
-{% include github org='CSIM-Toolkits' repo='ImageJ' label='GitHub CSIM-ImageJ repository' %}
-{% endcapture %}
-{% include info-box name='CSIM Laboratory ImageJ' software='Fiji' author=author maintainer=maintainer source=source released='February 01<sup>st</sup>, 2015' latest-version='February 01<sup>st</sup>, 2015' status='experimental, active' category='Plugins, Filtering, Noise' %}== Purpose ==
 
 Promote plugins, macros and scripts created by the Computing in Signal and Image in Medicine research group (CSIM). All the code implemented here have a specific applications, where are related with the basic image analysis such as image filtering, registration, feature extraction and others. Please, be free to install our plugins, macros and scripts from the ImageJ Updater or even contribute with our codes on GitHub repository ({% include github org='CSIM-Toolkits' repo='ImageJ' label='GitHub CSIM-ImageJ repository' %}).
 

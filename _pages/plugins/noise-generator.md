@@ -1,23 +1,20 @@
 ---
 mediawiki: Noise_Generator
+name: "Noise Generator PlugIn"
 title: Noise Generator
 categories: [Noise]
 extensions: ["mathjax"]
+release-date: "February 08, 2015"
+initial-release-date: "February 08, 2015"
+dev-status: "experimental, active"
+team-founder: "@acsenrafilho"
+team-maintainer: "@acsenrafilho"
 ---
-
-
-{% capture author%}
-{% include person id='acsenrafilho' %} ([1](mailto:acsenrafilho@gmail.com))
-{% endcapture %}
-
-{% capture maintainer%}
-{% include person id='acsenrafilho' %}
-{% endcapture %}
 
 {% capture source%}
 {% include github org='CSIM-Toolkits' repo='ImageJ/tree/master/plugins/NoiseGenerator' label='GitHub CSIM-ImageJ Noise Generator repository' %}
 {% endcapture %}
-{% include info-box name='Noise Generator PlugIn' software='Fiji' author=author maintainer=maintainer source=source released='February 08<sup>th</sup>, 2015' latest-version='February 08<sup>th</sup>, 2015' status='experimental, active' category='Plugins, Noise' %}
+{% include info-box source=source  %}
 
 ## Noise Generator
 
