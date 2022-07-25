@@ -25,9 +25,7 @@ count=$(echo "$matches" | uniq -c)
 output=$(find _includes -type f | while read f
 do
   inc=${f#_includes/}
-  case "$inc" in
-    extensions/*) continue ;; # Skip extensions.
-  esac
+  test "$inc" = "${inc#extensions/}" || continue # Skip extensions.
   s=$(echo "$count" | grep " $inc$")
   test "$s" || s="      0 $inc"
   grep -q TODO "$f" && echo "$s [UNFINISHED]" || echo "$s"
