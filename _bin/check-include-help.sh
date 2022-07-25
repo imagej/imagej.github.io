@@ -4,7 +4,7 @@ dir=$(cd "$(dirname "$0")/.." && pwd)
 cd "$dir"
 
 documented=$(grep -A99999 '# Available includes' _pages/editing/index.md |
-  grep '^| [a-z\[]' | sed 's/^| \[\?\([a-z-]*\).*/\1/')
+  grep '^| [a-z\[]' | sed 's/^| \[*\([a-z-]*\).*/\1/')
 
 errors=0
 
