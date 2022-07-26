@@ -66,7 +66,8 @@ The spots in the selection do not matter.
 With the detector-based methods, the gaps will always be filled, regardless of whether there is an actual bright blob  near the spot location or not.
 Some additions might be spurious is there is nothing to detect in the search region.
 
-
+There is no undo.
+Please save your tracks before running this action.
 
 _____________________
 *Authors:*
