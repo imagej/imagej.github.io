@@ -55,7 +55,7 @@ All the usual tracking, track editing and saving options that are provided by Tr
 
 ## Authors
 Lead programmer, Mantainer: {% include person id='kapoorlab' %}
-
+Contributor: {% include person id='claudiacarabana' %}
 ## References
 
 [^1]: J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March
