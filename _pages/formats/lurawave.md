@@ -2,6 +2,7 @@
 title: LuraWave
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 ---
 
 If you have Flex files from an older Opera system, you may receive a message from [Bio-Formats](/formats/bio-formats) stating that you need a LuraWave LWF license code to decode these files.

@@ -2,6 +2,7 @@
 title: Formats
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 ---
 
 

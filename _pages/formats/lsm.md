@@ -2,6 +2,7 @@
 title: LSM Toolbox
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 artifact: sc.fiji:LSM_Toolbox
 ---
 

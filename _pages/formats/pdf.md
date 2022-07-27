@@ -2,6 +2,7 @@
 title: Extract Images From PDF...
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 artifact: sc.fiji:IO_
 ---
 

@@ -3,6 +3,7 @@ title: OlympusImageJPlugin
 name: OlympusViewer Plugin
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 initial-release-date: "Dec. 9, 2015: First version Ver.1.1.1"
 release-date: "Mar. 17, 2020: Ver.2.3.1"
 team-maintainer: 'OLYMPUS CORPORATION (olympus-imagejplugin at ot.olympus.co.jp)'
