@@ -3,6 +3,7 @@ title: MATLAB Scripting
 section: Extend:Scripting:Languages
 project: /software/imagej2
 doi: 10.1093/bioinformatics/btw681
+artifact: net.imagej:imagej-matlab
 ---
 
 {% include notice icon="warning" content="Prior to MATLAB R2017b, MATLAB ships with Java 7, but ImageJ2 requires Java 8. You will need to change your MATLAB installation to use Java 8, by following the instructions for your platform: [Windows](http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows), [macOS](http://www.mathworks.com/matlabcentral/answers/103056-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-mac-os) or [Linux](http://www.mathworks.com/matlabcentral/answers/130360-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-linux-os).
