@@ -7,11 +7,11 @@ name: "DS4H Image Alignment"
 release-date: "2019-08-13"
 initial-release-date: "2019-06-08"
 dev-status: "stable"
-team-founders: [Stefano Belli, Antonella Carbonaro, Filippo Piccinini]
-team-maintainer: Stefano Belli
+team-founders: [Antonella Carbonaro, Filippo Piccinini, UniBoDS4H, Stefano Belli, Marco Edoardo Duma]
+team-maintainer: UniBoDS4H
 license-label: GPLv3
 license-url: /licensing/gpl
-source-url: https://github.com/illeb/DS4H-Image-Alignment
+source-url: https://github.com/UniBoDS4H/DS4H-Image-Alignment
 ---
 
 Align (i.e. co-register) 2D images.
@@ -22,11 +22,16 @@ Align (i.e. co-register) 2D images.
 
 "Data Science for Health (DS4H) Image Alignment" is a user-friendly tool freely provided as an ImageJ/Fiji plugin. With DS4H Image Alignment, 2D images can be easily aligned (i.e. co-registered) by defining with a few clicks some well visible reference marks.
 
+### Alignment via corner points
 The implemented least-squares method automatically approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images. It also considers rotations and scale changes in case of object dilation/shrink. Finally, it provides an iterative subroutine for a fine alignment, to easily reach a very good image co-registration quality.
+
+### Automatic Alignment
+DS4H-IA provides an opportunity to fully-automatically align 2D microscopy images. The approach designed is based on the well-known BRIEF algorithm. Briefly, starting from the open-source code available in the OpenCV library, we implemented a solution based on Star Detector, a common algorithm for defining reliable corner points then used by BRIEF to generate local image descriptors. The descriptors are then compared and then filtered using the before defining the projection matrix to be then used for aligning subsequent images. Finally, a multichannel stack with all the input images aligned in z, is provided as output. In addition, it can be reused as input of DS4H-IA to: (a) correct wrong alignments, or (b) manually align images not easily handled by the automatic registration approach (e.g. DIC microscopy images when a dataset of fluorescence ones is analysed). In these cases, it would be more precise referring to a semi-automatic registration modality than a fully-automatic one, because most of the images are automatically aligned using BRIEF, but some of them are then registered via corner points manually defined by the user.
+
 
 ## Implementation
 
-DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with ".svs" files, but also all the medical imaging formats included in the [Bio-Formats](/formats/bio-formats) library.
+DS4H Image Alignment has been implemented in Java as a plugin for ImageJ and Fiji. It works with ".svs" files, but also all the medical imaging formats included in the [Bio-Formats](/formats/bio-formats) library.
 
 ## Download
 
@@ -34,7 +39,7 @@ DS4H Image Alignment is freely available, together with a sample dataset and a v
 
 To install DS4H Image Alignment follow the instructions reported on the Video Tutorial. Basically, you have to copy the DS4H Image Alignment ".jar" file in the plugins folder of Imagej/Fiji.
 
-- [ImageJ/Fiji plugin](https://sites.imagej.net/DS4H/plugins/jars/) (".jar" file), to be copied in the plugins folder of Imagej/Fiji.
+- [ImageJ/Fiji plugin](https://github.com/UniBoDS4H/DS4H-Image-Alignment/releases) (".jar" file), to be copied in the plugins folder of Imagej or Fiji, available for Mac (Intel or ARM chip), Windows, Linux.
 
 - [Sample dataset](http://filippopiccinini.altervista.it/TestAlignment_SameSampleDifferentChannels.zip) (1 MB), with a few images useful to test DS4H Image Alignment.
 
@@ -61,6 +66,8 @@ Image Alignment and the material available on the Image Alignment website is lic
 ## Acknowledgments
 
 We thanks all the University Students that helped in this project. In particular:
+
+- (2022) Marco Edoardo Duma, University of Bologna, School of Computer Sciences, BS thesis, title: DS4H Image Alignment: Modulo per allineamento multimodale automatico considerando deformazioni solide. Supervisor: Antonella Carbonaro. Co-supervisors: Filippo Piccinini, Giovanni Martinelli, Gastone Castellani. Thesis defence: 27th May 2022
 
 - (2019) Stefano Belli, Master's Degree Student in Computer Sciences, University of Bologna, Italy, email: stefano.belli4@studio.unibo.it
 
