@@ -7,7 +7,7 @@ doi: 10.1088/1361-6463/ab0261
 name: Fast4DReg
 initial-release-date: "2022"
 team-founder: "@guijacquemet"
-team-maintainer: '@jwpylvanainen'
+team-maintainer: '@jpylvanainen'
 support-status: Active
 source-label: GitHub
 source-url: https://github.com/guijacquemet/Fast4DReg
