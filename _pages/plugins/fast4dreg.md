@@ -154,9 +154,9 @@ Try disabling time averaging (1).
 
 ## Contributors
 
-* [Joanna Pylvänäinen](https://twitter.com/JwPylvanainen)
+* {% include person id='jpylvanainen' %}
 * [Romain F. Laine](https://twitter.com/LaineBioImaging)
-* [Guillaume Jacquemet](https://twitter.com/guijacquemet)
+* {% include person id='guijacquemet' %}
 
 ## When using this script, please cite the NanoJ paper
 
