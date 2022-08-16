@@ -2,6 +2,7 @@
 title: Guillaume Jacquemet
 name: Guillaume Jacquemet
 github: guijacquemet
+twitter: guijacquemet
 doi: 10.1083/jcb.201704045
 ---
 
