@@ -129,7 +129,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 <img src="/media/update-sites/upload-to-update-site.png" width="770"/>
 
-{% include notice icon="info" content='The *Upload to <update site name>* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
+{% include notice icon="info" content='The *Upload to &lt;update site name&lt;* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
 ### Modifying Dependencies
 
