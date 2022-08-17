@@ -115,7 +115,7 @@ Click on the {% include button label="Advanced mode" %} button and set the view 
 
 -   If your have never uploaded your plugins, select *View local-only files*
 
-**For .ijm macro**, the files must be located in the *macro* or *scripts* folder (or any subfolder in it).
+**For .ijm macros**, the files should be in an appropriately named *plugins* subfolder. Their parent folder will become the entry name in the `Plugins` menu.
 
 **For .py scripts**, they can be either in the *Jars/Lib* or *scripts* folder (or any subfolder).
 
