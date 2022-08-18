@@ -58,6 +58,9 @@ Fast4DReg is easy to istall by enabling the Fast4DReg update site:
 - Open ImageJ
 - Navigate to Help -> Update -> Manage update sites
 - Select FastDReg
+  
+ {% include img src="fast4dreg-install-0" %}
+
 - When selected select Close and Apply changes.
 - Restart Fiji.
 
