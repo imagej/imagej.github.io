@@ -16,7 +16,7 @@ Please note that TrackMate is available through Fiji, and is based on several pu
 
 and / or
 
-{% include citation doi='10.1016/j.ymeth.2016.09.016' %}
+{% include citation doi='10.1038/s41592-022-01507-1' %}
 
 ## Presentation
 
