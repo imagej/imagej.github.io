@@ -35,7 +35,7 @@ The *Neuroanatomy update site* is [Fiji](/software/fiji)'s [update site](/update
 | {% include bc path='Analyze|Skeleton|Summarize Skeleton'%}               | Bulk statistics of skeletonized images |
 | {% include bc path='Analyze|Skeleton|Classify Particles Using Skeleton'%}| Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="/plugins/analyze-skeleton">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cutoff ("snap to") distance |
 | {% include bc path='File|Open Samples|Fractal Tree'%} | Synthetic image (<a href="https://en.wikipedia.org/wiki/L-system">L-System</a> Tree) useful for debugging, testing or prototyping |
-| {% include bc path='File|Open Samples|ddaC Neuron'%} | Segmented neuron (2D) useful for debugging, testing or prototyping |
+| {% include bc path='File|Open Samples|ddaC Neuron'%} | Binary image (2D) of a Drosophila class IV ddaC sensory neuron in which dendrites have been segmented. Useful for debugging, testing or prototyping. Run {% include bc path='Image|Show Info...'%} to know more about this cell type |
 
 ## Script Editor
 

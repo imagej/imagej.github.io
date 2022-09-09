@@ -37,10 +37,12 @@ When SNT is compiled, a [suite of tests](https://github.com/morphonets/SNT/tree/
 
 ### What is a SWC file?
 
+<span id="swc"></span>
 It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose *lingua franca* of a neuron's three dimensional structure. It is described in more detail [here](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) and [here](https://neuroinformatics.nl/swcPlus/). SNT supports all known variants of the format including [ESWC](https://www.nature.com/articles/sdata2017207) and [SWC+](https://neuroinformatics.nl/swcPlus/). The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a {% include wikipedia title="Adobe SWC file" %} used by Adobe.
 
 ### In which format should I save my tracings: TRACES or SWC?
 
+<span id="file-format"></span>
 When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
 
 |                                                   | SWC                                                                                                                                  | TRACES                                                                               |
