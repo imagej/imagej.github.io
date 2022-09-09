@@ -25,13 +25,13 @@ This page contains a list of screencasts that describe SNT capabilities.
 
 # Outdated Screencasts
 
-These are old [Simple Neurite Tracer](/plugins/snt/faq#snt) screencasts that are likely too outdated to be useful.
+These are old [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) screencasts that are likely too outdated to be useful.
 
-## Basic Usage of [Simple Neurite Tracer](/plugins/snt/faq#snt)
+## Basic Usage of [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
 
 {% include video platform='youtube' id='y6ZPdDfUOjI' %}
 
-## Using MIP overlays in [Simple Neurite Tracer](/plugins/snt/faq#snt)
+## Using MIP overlays in [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
 
 {% include video platform='youtube' id='pXpMRb1AC4I' %}
 

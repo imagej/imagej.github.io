@@ -1,5 +1,4 @@
 ---
-mediawiki: SNT:_FAQ
 title: SNT › FAQ
 nav-links: true
 nav-title: FAQ
@@ -58,7 +57,7 @@ In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|S
 
 ### How can I improve SNT documentation?
 
-[Create an account](/editing#new-accounts) on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable\!
+Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!
 
 ## Tracing
 
@@ -72,7 +71,7 @@ Righ-click on the image canvas and select *Pause SNT* from the contextual menu. 
 
 ### Is there a way to process one image after another in a fast way?
 
-Yes. Have a look at these [detailed instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
+Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
 
 ### How can I import an image sequence into SNT?
 
