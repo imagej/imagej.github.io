@@ -22,9 +22,15 @@ The ParticleSizer script combines a number of different plugins. The most easy w
 
 It is recommended to install R to get better plots. When this point is skipped, a stripped-down plot will be shown:
 
-1.  Download the latest R: https://cran.uni-muenster.de/
-    1.  Download the Rserver package: https://rforge.net/bin/windows/contrib/3.0/Rserve_1.8-0.zip
-    2.  Download the MASS package: https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
+The ParticleSizer script combines a number of different plugins. The most easy way (and at the moment the only way) is to follow Biomedgroup & ParticleSizer update site.
+
+It is recommended to install R to get better plots. When this point is skipped, a stripped-down plot will be shown:
+
+You can now start the ParticleSizer via Plugins › NanoDefine - › ParticleSizer
+
+1.  Download the latest R 3.6 release: https://cran.r-project.org/bin/windows/base/old/3.6.3/
+    1.  Download the Rserver package: https://ftp.gwdg.de/pub/misc/cran/bin/windows/contrib/3.6/Rserve_1.7-3.1.zip
+    2.  Download the MASS package: https://ftp.gwdg.de/pub/misc/cran/bin/windows/contrib/3.6/MASS_7.3-54.zip
     3.  Start R and select the packages downloaded in 1. and 2. via {% include bc path="Start Packages | Install packages from local zip files" %}
 2.  Open Fiji, start the ParticleSizer Settings Manager and the R path to the R binary.
 
