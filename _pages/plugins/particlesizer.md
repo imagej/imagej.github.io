@@ -28,7 +28,7 @@ You can now start the ParticleSizer via Plugins › NanoDefine - › ParticleSiz
     1.  Download the Rserver package: https://ftp.gwdg.de/pub/misc/cran/bin/windows/contrib/3.6/Rserve_1.7-3.1.zip
     2.  Download the MASS package: https://ftp.gwdg.de/pub/misc/cran/bin/windows/contrib/3.6/MASS_7.3-54.zip
     3.  Start R and select the packages downloaded in 1. and 2. via {% include bc path="Start Packages | Install packages from local zip files" %}
-2.  Open Fiji, start the ParticleSizer Settings Manager and the R path to the R binary.
+2.  Open Fiji, start the ParticleSizer Settings Manager and set the field `Set R install directory` to the R installation directory.
 
 You can now start the ParticleSizer via {% include bc path="Plugins | NanoDefine -|ParticleSizer" %}
 
