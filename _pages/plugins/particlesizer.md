@@ -22,10 +22,6 @@ The ParticleSizer script combines a number of different plugins. The most easy w
 
 It is recommended to install R to get better plots. When this point is skipped, a stripped-down plot will be shown:
 
-The ParticleSizer script combines a number of different plugins. The most easy way (and at the moment the only way) is to follow Biomedgroup & ParticleSizer update site.
-
-It is recommended to install R to get better plots. When this point is skipped, a stripped-down plot will be shown:
-
 You can now start the ParticleSizer via Plugins › NanoDefine - › ParticleSizer
 
 1.  Download the latest R 3.6 release: https://cran.r-project.org/bin/windows/base/old/3.6.3/
