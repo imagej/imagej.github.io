@@ -1,16 +1,19 @@
 ---
-title: Strahler Analysis
+title: Strahler Analysis (From Images)
 categories: [Skeleton,Analysis,Neuroanatomy]
-doi: 10.5281/zenodo.49399
 tags: strahler,plugin,arbor,neuron,morphometry,dendrite
 update-site: Neuroanatomy
 artifact: org.morphonets:SNT
+forum-tag: strahler-analysis
+icon: /media/icons/snt.png
+doi: 10.1038/s41592-021-01105-7
 source-url: "https://github.com/morphonets/SNT/blob/master/src/main/java/sc/fiji/snt/plugin/ij1/Strahler.java#L58-L66"
 ---
 
-A plugin from the [Neuroanatomy update site](/plugins/Neuroanatomy) that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
 
-{% include notice icon="info" content='This page describes how to perform Strahler Analysis on skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt).' %}
+A [SNT](/plugins/snt)[^1] plugin that performs Strahler analysis on topographic skeletons (2D/3D). {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees.
+
+{% include notice icon="info" content='This page describes how to perform Strahler Analysis directly from skeletonized images. For analysis of traced structures have a look at [SNT](/plugins/snt/analysis#strahler-analysis).' %}
 
 ## Description
 
@@ -18,7 +21,7 @@ A plugin from the [Neuroanatomy update site](/plugins/Neuroanatomy) that perform
 
 {% include img align="right" width="300" name="Strahler Analysis by iterative elimination of end-point branches" src="strahleranimation" caption="The analysis occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them." %}
 
-*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](/plugins/analyze-skeleton) iteratively to retrieve [Horton-Strahler numbers](#References) from the [skeletonized centerlines](/plugins/skeletonize3d) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
+*Strahler Analysis* takes a <u>binary</u> or <u>8-bit grayscale</u> image (2D or 3D) containing a <u>single arbor</u>, and calls [AnalyzeSkeleton](/plugins/analyze-skeleton)[^2] iteratively to retrieve [Horton-Strahler numbers](#References) from the [skeletonized centerlines](/plugins/skeletonize3d) of the input image. Each iteration includes three operations: 1) a (re)-skeletonization step to ensure that arbor remains represented by its centerlines, 2) an elimination step in which terminal-branches are pruned from the image and 3) an analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
 
 ## Parameters
 
@@ -54,21 +57,15 @@ If checked, analysis will run in *verbose* mode by outputting detailed measureme
 
 ## Root Detection
 
-The problem with undiscriminated elimination of terminal branches is that a root-branch containing an end-point is always eliminated on the first iteration step. In order to protect root branches from elimination, *Strahler Analysis* needs to know where root branches are located. As of version 1.4.0, root-detection is implemented by means of a rectangular ROI containing the root branch and by activating the *Infer root end-points from rectangular ROI* option. Here is an example:
+The problem with undiscriminated elimination of terminal branches is that a root-branch containing an end-point is always eliminated on the first iteration step. In order to protect root branches from elimination, *Strahler Analysis* needs to know where root branches are located. Root-detection is implemented by means of a rectangular ROI containing the root branch and by activating the *Infer root end-points from rectangular ROI* option. Here is an example:
 
-<center>
-<table>
-<tr><td>Arbor with rectangular ROI containing root</td><td>Analysis ignoring ROI: Inaccurate result</td><td>Analysis taking ROI into account: Accurate result</td></tr>
-<tr><td colspan=3><img src="/media/plugins/strahler-rootprotection.png" width="550"/></td></tr>
-<tr><td colspan=3>Root branches are spared from the iterative elimination procedure if marked by a rectangular ROI. Middle image: ROI is ignored. As a consequence, root-branch is interpreted as any other terminal-branch. Right image: Analysis infers that end-point contained by ROI belongs to a root-branch and marked branch is excluded from the iteration.</td></tr>
-</table>
-</center>
+{% include img align="center" width="600px" src="/media/plugins/strahler-rootprotection.png" caption="**Left**: Arbor with rectangular ROI containing root. **Middle**: Analysis ignores ROI. Root-branch is interpreted as any other terminal-branch and the resulting classification is inaccurate. **Right**: Analysis takes ROI into account and infers that the end-point contained by the ROI is the root of the structure. Root branch is excluded from the iteration and the classification is accurate." %}
 
 ### Notes on Root Detection
 
 -   Only a rectangular ROI can be used to mark the root branch. This is intentional: The way the root-detection algorithm works is by *protecting* all end-points that are contained by the ROI from end-point elimination. Using complex ROIs (e.g., discontinuous or containing internal holes) would make this task much more cumbersome.
 -   The ROI only needs to contain root end-point(s) and it should not matter if its boundaries intercept other branches. However, measurements on root-branches may be inaccurate if the ROI contains junction(s) points. The best way to ensure the algorithm ran as expected is to visually inspect all the slices in the *Iteration stack*.
--   Root detection may not be required in the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), if root(s) remain connected in the center of the arbor (as in [animation above](#strahler-animation)). In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
+-   Root detection may not be required in the case of radial arbors (i.e., tree-like structures that branch out evenly in multiple directions), if root(s) remain connected in the center of the arbor (as in the [animation above](#strahler-animation)). In neurobiology, radial-ramification is an anatomical hallmark of certain cell types such as Retinal Ganglion Cells, Chandelier neurons or Drosophila Class IV sensory neurons.
 -   If you are batch processing multiple images you should work with .tif files: When saving as TIFF, ImageJ will store the active ROI in the image header, making it immediately available when the image is open.
 
 ## Results
@@ -93,41 +90,37 @@ If *Show detailed information* is checked, *Average branch length*, *N. of trees
 
 ## Installation
 
-To install *Strahler Analysis* you must use Java 8 and subscribe to the [Neuroanatomy update site](/plugins/Neuroanatomy).
+To use *Strahler Analysis* you must install [SNT](/plugins/snt#installation).
 
-## Related Links
+## Related Tools
 
--   [AnalyzeSkeleton](/plugins/analyze-skeleton) and [Skeletonize3D](/plugins/skeletonize3d), analysis of topographic skeletons
--   [Sholl Analysis](/plugins/sholl-analysis), bitmap morphometry based on the Sholl technique
+- [SNT](/plugins/snt)
+- [Sholl Analysis](/plugins/sholl-analysis)
+- [AnalyzeSkeleton](/plugins/analyze-skeleton) and [Skeletonize3D](/plugins/skeletonize3d), analysis of topographic skeletons (see also [BoneJ](/plugins/bonej) that has made several improvemts to  skeletonization routines)
 
 ## Citing
 
-* Plugins from the [Neuroanatomy update site](/plugins/Neuroanatomy)[^1].
+The authoritative reference for *Strahler Analysis* is:
 
-* [Skeletonization](/plugins/skeletonize3d) and [Skeleton Analysis](/plugins/analyze-skeleton)[^2]
+{% include citation id='plugins/snt' %}
 
-* [BoneJ](/plugins/bonej)[^3]
+The authoritative reference for *AnalyzeSkeleton* is:
+
+{% include citation id='plugins/analyze-skeleton' %}
+
 
 ## Acknowledgments
 
 To all the developers of [AnalyzeSkeleton](https://github.com/fiji/AnalyzeSkeleton/graphs/contributors).
 
-## License
-
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
 ## References
 
 Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%}:
 
-{% include citation doi='10.1130/0016-7606(1945)56[275:EDOSAT]2.0.CO;2' %}
+- Arthur N, Strahler H. Hypsometric (Area-Altitude) Analysis Of Erosional Topography. GSA Bulletin 1952;; 63 (11): 1117–1142. doi: [10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2](https://doi.org/10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2)
 
-{% include citation doi='10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2' %}
+- {% include citation doi='10.1029/TR038i006p00913' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf))
 
-{% include citation doi='10.1029/TR038i006p00913' %} ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf))
 
-[^1]: {% include citation %}
-
+[^1]: {% include citation id='plugins/snt' %}
 [^2]: {% include citation id='plugins/analyze-skeleton' %}
-
-[^3]: {% include citation id='plugins/bonej' %}
