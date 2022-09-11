@@ -2,6 +2,10 @@
 title: SNT › Key Shortcuts
 nav-links: true
 nav-title: Key Shortcuts
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
+update-site: Neuroanatomy
 ---
 
 {% capture text%}

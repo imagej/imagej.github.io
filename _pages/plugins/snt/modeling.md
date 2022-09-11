@@ -2,6 +2,10 @@
 title: SNT › Modeling
 nav-links: true
 nav-title: Modeling
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
+update-site: Neuroanatomy
 doi:
 - 10.1038/s41592-021-01105-7
 - 10.3389/neuro.10.025.2009

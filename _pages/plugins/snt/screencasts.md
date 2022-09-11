@@ -1,11 +1,23 @@
 ---
-mediawiki: SNT:_Screencasts
 title: SNT › Screencasts
 nav-links: true
 nav-title: Screencasts
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
 ---
 
-This page contains a list of screencasts that describe SNT capabilities.
+This page contains a list of video tutorials and recorded workshopts that describe SNT capabilities.
+
+
+# Workshops
+
+## Exploring neuronal morphology with SNT and pyimagej
+
+{% include video platform='youtube' id='AwpQS59AjuU' %}
+
+
+# Video Tutorials
 
 ## Introduction To Tracing
 
@@ -23,9 +35,10 @@ This page contains a list of screencasts that describe SNT capabilities.
 
 {% include video platform='youtube' id='inZl4zS7oc4' %}
 
+
 # Outdated Screencasts
 
-These are old [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) screencasts that are likely too outdated to be useful.
+These are old [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) screencasts that are likely too outdated to be useful. Listed here for historical record.
 
 ## Basic Usage of [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
 
