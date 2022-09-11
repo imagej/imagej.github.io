@@ -17,10 +17,10 @@ SNT registers three commands in Fiji's menu structure in the {% include bc path=
 
 ![](/media/plugins/snt/snt-startup-prompt.png) SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
 
--   **Image**/**Image File** The image to be traced/analyzed. The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking *Browse* and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
--   **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try to guess if there is a reconstruction file associated with the chosen image by looking at all the reconstruction files (`.traces`, `.(e)swc`, or `.json`) in the image directory, and choosing one that more {% include wikipedia title="Levenshtein distance" %} the image filename.
--   **User interface** Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [accurate node placement](/plugins/snt/step-by-step-instructions#accurate-point-placement) but requires more RAM.
--   **Tracing Channel** Specifies the image channel to trace on (this option is ignored with single-channel images).
+- **Image**/**Image File** The image to be traced/analyzed. The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking *Browse* and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
+- **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try to guess if there is a reconstruction file associated with the chosen image by looking at all the reconstruction files (`.traces`, `.(e)swc`, or `.json`) in the image directory, and choosing one that more {% include wikipedia title="Levenshtein distance" %} the image filename.
+- **User interface** Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [accurate node placement](/plugins/snt/step-by-step-instructions#accurate-point-placement) but requires more RAM.
+- **Tracing Channel** Specifies the image channel to trace on (this option is ignored with single-channel images).
 
 # Main Dialog
 
@@ -30,45 +30,47 @@ SNT registers three commands in Fiji's menu structure in the {% include bc path=
 
 Lists commands for I/O operations. Most are self-explanatory. Noteworthy: <img src="/media/plugins/snt/snt-from-open-image-prompt.png" title="fig:" width="200" />
 
--   {% include bc path='Choose Tracing Image| ' %} Specifies the image to trace on without having to restart SNT. To trace on an image currently open in ImageJ, use *From Open Image...*. A prompt with the currently open images will appear, allowing selection of one. To browse for an image file, use *From File...*. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
+- {% include bc path='Choose Tracing Image| ' %} Specifies the image to trace on without having to restart SNT. To trace on an image currently open in ImageJ, use *From Open Image...*. A prompt with the currently open images will appear, allowing selection of one. To browse for an image file, use *From File...*. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
 
--   {% include bc path='Import| Labels (AmiraMesh)...' %} This option assumes you are tracing on the same spatial coordinates of an annotated neuropil, for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
+- {% include bc path='Import| Labels (AmiraMesh)...' %} This option assumes you are tracing on the same spatial coordinates of an annotated neuropil, for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
+  
+  {% include img src="snt-mouselight-remote-loader-prompt" width="200" %}
 
-    {% include img src="snt-mouselight-remote-loader-prompt" width="200" %}
+- {% include bc path='Import| Remote Databases| ' %} Allows import of neuronal reconstructions from the [FlyCircuit](http://www.flycircuit.tw/), [MouseLight](https://ml-neuronbrowser.janelia.org/) and [NeuroMorpho](http://neuromorpho.org/) remote databases.
 
--   {% include bc path='Import| Remote Databases| ' %} Allows import of neuronal reconstructions from the [FlyCircuit](http://www.flycircuit.tw/), [MouseLight](https://ml-neuronbrowser.janelia.org/) and [NeuroMorpho](http://neuromorpho.org/) remote databases.
+- {% include bc path='Export As| SWC| ' %} Allows export of all traced paths in the [SWC](/plugins/snt/faq#what-is-a-swc-file) file format, the most common format for representing neuronal reconstructions. Note that you can also export subsets of paths using the [Path Manager](#path-manager).
 
--   {% include bc path='Export As| SWC| ' %} Allows export of all traced paths in the [SWC](/plugins/snt/faq#what-is-a-swc-file) file format, the most common format for representing neuronal reconstructions. Note that you can also export subsets of paths using the [Path Manager](#path-manager).
--   {% include bc path='Save Measurements...' %} Allows export of measurements generated by the *Measure...* and *Quick Measurements* commands in the {% include wikipedia title="Comma-separated values" %} file format.
--   {% include bc path='Reset SNT and Restart...' %} Resets all preferences and restarts SNT.
+- {% include bc path='Save Measurements...' %} Allows export of measurements generated by the *Measure...* and *Quick Measurements* commands in the {% include wikipedia title="Comma-separated values" %} file format.
 
--   {% include img src="snt-path-csv-properties-example-spreadsheet" width="1000" title="Exported measurements for OP_1 (truncated)" %}
+- {% include bc path='Reset SNT and Restart...' %} Resets all preferences and restarts SNT.
+
+- {% include img src="snt-path-csv-properties-example-spreadsheet" width="1000" title="Exported measurements for OP_1 (truncated)" %}
 
 ### Analysis
 
--   {% include bc path='Path Order Analysis' %} Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [1](/plugins/snt/analysis#path-order-analysis) for details.
--   {% include bc path='Sholl Analysis...' %} Brings up the [Sholl Analysis](/plugins/sholl-analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](/plugins/snt/analysis#sholl-analysis) for details.
--   {% include bc path='Sholl Analysis (by Focal Point)...' %} Allows precise positioning of the focal point used by Sholl Analysis. See [3](/plugins/snt/analysis#sholl-analysis-by-focal-point) for details.
--   {% include bc path='Strahler Analysis' %} Conducts [Strahler Analysis](/plugins/strahler-analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](/plugins/snt/analysis#strahler-analysis) for details.
--   {% include bc path='Export CSV Properties...' %} Allows export of information regarding individual Paths, including (but not limited to) morphometrics, neurite compartments, linkage relationships to other Paths and start and end coordinates.
--   {% include bc path='Measure...' %} Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [5](/plugins/snt/analysis#measurements) for details.
--   {% include bc path='Quick Measurements|' %} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {% include bc path='Analyze|Measure' %} in the Path Manager. See [6](/plugins/snt/analysis#measurements) for details.
+- {% include bc path='Path Order Analysis' %} Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [1](/plugins/snt/analysis#path-order-analysis) for details.
+- {% include bc path='Sholl Analysis...' %} Brings up the [Sholl Analysis](/plugins/sholl-analysis) dialog with a pre-defined set of focal points the user can choose from. See [2](/plugins/snt/analysis#sholl-analysis) for details.
+- {% include bc path='Sholl Analysis (by Focal Point)...' %} Allows precise positioning of the focal point used by Sholl Analysis. See [3](/plugins/snt/analysis#sholl-analysis-by-focal-point) for details.
+- {% include bc path='Strahler Analysis' %} Conducts [Strahler Analysis](/plugins/strahler-analysis) on existing paths, producing a table of analysis results and a Strahler plot. See [4](/plugins/snt/analysis#strahler-analysis) for details.
+- {% include bc path='Export CSV Properties...' %} Allows export of information regarding individual Paths, including (but not limited to) morphometrics, neurite compartments, linkage relationships to other Paths and start and end coordinates.
+- {% include bc path='Measure...' %} Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [5](/plugins/snt/analysis#measurements) for details.
+- {% include bc path='Quick Measurements|' %} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {% include bc path='Analyze|Measure' %} in the Path Manager. See [6](/plugins/snt/analysis#measurements) for details.
 
 ### Utilities
 
--   <span id="RecPlotter"></span>{% include bc path='Reconstruction Plotter...' %} Plots a dynamic 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
+- <span id="RecPlotter"></span>{% include bc path='Reconstruction Plotter...' %} Plots a dynamic 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
 
 <div align="left">
 
--   <img src="/media/plugins/snt/snt-reconstruction-plotter-example.png" title="fig:SNT-Reconstruction-Plotter-Example.png" width="200" alt="SNT-Reconstruction-Plotter-Example.png" />
--   <img src="/media/plugins/snt/snt-reconstruction-plotter-controls.png" title="fig:SNT-Reconstruction-Plotter-Controls.png" width="200" alt="SNT-Reconstruction-Plotter-Controls.png" />
--   <img src="/media/plugins/snt/snt-reconstruction-plotter-colored.png" title="fig:SNT-Reconstruction-Plotter-Colored.png" width="200" alt="SNT-Reconstruction-Plotter-Colored.png" />
+- <img src="/media/plugins/snt/snt-reconstruction-plotter-example.png" title="fig:SNT-Reconstruction-Plotter-Example.png" width="200" alt="SNT-Reconstruction-Plotter-Example.png" />
+- <img src="/media/plugins/snt/snt-reconstruction-plotter-controls.png" title="fig:SNT-Reconstruction-Plotter-Controls.png" width="200" alt="SNT-Reconstruction-Plotter-Controls.png" />
+- <img src="/media/plugins/snt/snt-reconstruction-plotter-colored.png" title="fig:SNT-Reconstruction-Plotter-Colored.png" width="200" alt="SNT-Reconstruction-Plotter-Colored.png" />
 
 </div>
 
--   {% include bc path='Compare Reconstructions...' %} Allows morphometric comparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
--   {% include bc path='Create Dendrogram' %} Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Dendrogram Viewer](/plugins/snt/analysis#dendrogram-viewer) for details.
--   {% include bc path='Batch Scripts| ' %} A collection of batch processing scripts related to image processing, reconstruction analysis and data curation. See [Script Templates: Batch](/plugins/snt/scripting#batch) for details.
+- {% include bc path='Compare Reconstructions...' %} Allows morphometric comparison of two single reconstruction files or multiple groups of reconstruction files. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
+- {% include bc path='Create Dendrogram' %} Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Dendrogram Viewer](/plugins/snt/analysis#dendrogram-viewer) for details.
+- {% include bc path='Batch Scripts| ' %} A collection of batch processing scripts related to image processing, reconstruction analysis and data curation. See [Script Templates: Batch](/plugins/snt/scripting#batch) for details.
 
 ### Scripts
 
@@ -78,10 +80,10 @@ See [SNT: Scripting](/plugins/snt/scripting).
 
 Contains commands for organizing tracing views on screen, plus commands for displaying cached data used for auto-tracing.
 
--   {% include bc path='Arrange Views' %} Resets the view pane on-screen positions to their default.
--   {% include bc path='Hide Tracing Canvas| ' %} Allows toggling of the visibility of the three orthogonal view panes as well as the Legacy 3D View window.
--   {% include bc path='Show Cached Filtered Image' %} Displays the cached filtered image in a separate window. Note a filtered image must be loaded in order to use this feature. The process of loading a filtered image is detailed in [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images).
--   {% include bc path='Show Cached Hessian Tubeness Image' %} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "/plugins/tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](/plugins/snt/manual#main-dialog) overview guide.
+- {% include bc path='Arrange Views' %} Resets the view pane on-screen positions to their default.
+- {% include bc path='Hide Tracing Canvas| ' %} Allows toggling of the visibility of the three orthogonal view panes as well as the Legacy 3D View window.
+- {% include bc path='Show Cached Filtered Image' %} Displays the cached filtered image in a separate window. Note a filtered image must be loaded in order to use this feature. The process of loading a filtered image is detailed in [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images).
+- {% include bc path='Show Cached Hessian Tubeness Image' %} Displays the cached *Hessian (Tubeness) image* in a separate window. Note there are two ways to enable this feature. Either 1) enable *Hessian-based analysis* then run the *Cache All Hessian Computations* command from the "Auto-tracing" gear drop-down menu or 2) use the *Load Precomputed "/plugins/tubeness" Image* option in the same gear menu. These features are detailed in the "Auto-tracing" section of the [Main Dialog](/plugins/snt/manual#main-dialog) overview guide.
 
 ## Main Tab
 
@@ -91,11 +93,14 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 **Enable Snapping checkbox** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
--   This feature assumes the signal is brighter than the background as typically found in fluorescent images.![](/media/plugins/snt/cursor-snap.png)
--   If multiple maxima exist (e.g., when the signal is saturated), it snaps to their centroid.
--   To streamline the computation: XYZ dimensions are constrained to even numbers and limited range.
--   Snapping occurs in 2D (i.e., in the active plane) if Z=0.
--   The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z&gt;0).
+- This feature assumes the signal is brighter than the background as typically found in fluorescent images.![](/media/plugins/snt/cursor-snap.png)
+- If multiple maxima exist (e.g., when the signal is saturated), it snaps to their centroid.
+- To streamline the computation: XYZ dimensions are constrained to even numbers and limited range.
+- Snapping occurs in 2D (i.e., in the active plane) if Z=0.
+- The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z&gt;0).
+- This functionallity was inspired by <a href="/plugins/neuronj">NeuronJ</a>, that described it like this in its manual:
+
+> To facilitate accurate positioning of starting points, so that they are really on a neurite rather than close to one, the program carries out a local snapping operation. This means that when moving the mouse within the image, the program quickly searches in a small window around the current mouse position for the pixel that is most likely to be on a neurite.
 
 ### Auto-tracing
 
@@ -105,12 +110,13 @@ This home tab aggregated widgets for tracing and frequent operations.
 
 **Hessian options** (Specified in the *gear* drop-down menu) may be chosen *Manually* (if you already have a quantitative understanding of the image) or *Visually* (generally more intuitive). Hessian analysis requires two parameters to be specified:
 
--   **Sigma** Controls the spatial scale of the filter. A lower *sigma* (σ) will capture small scale structure but is more sensitive to noise. A larger σ will consider larger scale structures but is less sensitive to local shape characteristics. It is generally advised to pick a value which reflects the average radius of the structures to be traced. It corresponds to the standard deviation of the 3D Gaussian kernel used to smooth the image prior to *Tubeness* filtering
--   **Maximum** The maximum pixel intensity on the *Tubeness* image beyond which the cost function for A\* search is minimized.
+- **Sigma** Controls the spatial scale of the filter. A lower *sigma* (σ) will capture small scale structure but is more sensitive to noise. A larger σ will consider larger scale structures but is less sensitive to local shape characteristics. It is generally advised to pick a value which reflects the average radius of the structures to be traced. It corresponds to the standard deviation of the 3D Gaussian kernel used to smooth the image prior to *Tubeness* filtering
+- **Maximum** The maximum pixel intensity on the *Tubeness* image beyond which the cost function for A\* search is minimized.
 
 If you choose *Visually*, the dialog will prompt you to click on a representative region of the image which has meaningful structure. Once you click there, a 9-square palette is generated showing increasing values of sigma (from top-left to bottom-right) applied to that region of the image. The palette is an image stack which can be scrolled through with the mouse wheel.
 
 <!-- TODO: Improve how multi-panel figures are declared. -->
+
 <figure style="width: 100%; max-width: 100%">
 <center><strong>Adjusting max</strong>
 {% include img src='sigma-palette-location' width="200" caption="" %} {% include img src="sigma-palette-max" width="200" caption="Oversaturated" %} {% include img src="sigma-palette-mid" width="200" caption="Default" %} {% include img src="sigma-palette-min" width="200" caption="Undersaturated" %}
@@ -122,24 +128,24 @@ Experiment with different *Adjusted max.* values to find a setting which capture
 
 The {% include bc path='Estimate Radii (Local Thickness)...' %} option in the Hessian gear menu will run the *Local Thickness (complete process)* plugin found in {% include bc path='Analyze|Local Thickness|Local Thickness (complete process)' %} in the main Fiji dialog. This allows automated radii estimation of processes across the image, which can inform the choice of sigma. The user can set the Z-slice range for the analysis to consider, as well as the pixel intensity threshold (pixel values below the threshold are treated as background). <img src="/media/plugins/snt/snt-estimate-thickness-prompt.png" title="fig:Snt-Estimate-Thickness-Prompt.png" width="200" alt="Snt-Estimate-Thickness-Prompt.png" /> The parameters are:
 
--   **First Z-slice** The starting slice of the image to be considered in the estimation.
--   **Last Z-slice** The end slice of the image to be considered in the estimation.
--   **Dimmest intensity (approx.)** Pixel values below this value are treated as background when computing the distance map. Use -1 to adopt the default cutoff value (half of the image max).
+- **First Z-slice** The starting slice of the image to be considered in the estimation.
+- **Last Z-slice** The end slice of the image to be considered in the estimation.
+- **Dimmest intensity (approx.)** Pixel values below this value are treated as background when computing the distance map. Use -1 to adopt the default cutoff value (half of the image max).
 
 Pressing *OK* will output a color-mapped image (based off local radius) and a histogram showing the distribution of radii across the image. To calibrate the Hessian analysis for smaller processes, one might select a sigma value closer to the minimum estimated thickness, or the opposite for larger processes.
 
 <div align="left">
 
--   <img src="/media/plugins/snt/snt-estimate-radii-image-result.png" title="fig:Snt-Estimate-Radii-Image-Result.png" width="200" alt="Snt-Estimate-Radii-Image-Result.png" />
--   <img src="/media/plugins/snt/snt-estimate-radii-histogram-result.png" title="fig:Snt-Estimate-Radii-Histogram-Result.png" width="200" alt="Snt-Estimate-Radii-Histogram-Result.png" />
+- <img src="/media/plugins/snt/snt-estimate-radii-image-result.png" title="fig:Snt-Estimate-Radii-Image-Result.png" width="200" alt="Snt-Estimate-Radii-Image-Result.png" />
+- <img src="/media/plugins/snt/snt-estimate-radii-histogram-result.png" title="fig:Snt-Estimate-Radii-Histogram-Result.png" width="200" alt="Snt-Estimate-Radii-Histogram-Result.png" />
 
 </div>
 
 Other options are also available in the *gear* drop-down menu:
 
--   **Cached Computations (Main/Secondary Image)** By default SNT computes the Hessian matrix on a "compute-as-you-go" basis, which saves memory but increases the pathfinding time. If you have enough RAM, you can use this set of options to compute the matrix once for the full image and cache the result, which in certain cases, can lead to almost-instantaneous searches. Note that this computation adopts the current values of sigma and max. reported in the widget, so you should adjust those before running this command.
--   **Flush Cached Data** Removes cached data from memory
--   **Show Cached "Tubeness Image"** Displays the *Tubeness* data currently cached. Useful for debugging purposes. Also mirrored in {% include bc path='View | Show Cached/Loaded Hessian (Tubeness) Image' %}.
+- **Cached Computations (Main/Secondary Image)** By default SNT computes the Hessian matrix on a "compute-as-you-go" basis, which saves memory but increases the pathfinding time. If you have enough RAM, you can use this set of options to compute the matrix once for the full image and cache the result, which in certain cases, can lead to almost-instantaneous searches. Note that this computation adopts the current values of sigma and max. reported in the widget, so you should adjust those before running this command.
+- **Flush Cached Data** Removes cached data from memory
+- **Show Cached "Tubeness Image"** Displays the *Tubeness* data currently cached. Useful for debugging purposes. Also mirrored in {% include bc path='View | Show Cached/Loaded Hessian (Tubeness) Image' %}.
 
 {% include img src="/media/plugins/snt/original-hessian-side-by-side.png" width="400" caption="OP_1 Tubeness image overlay at 80% opacity" %}
 
@@ -147,9 +153,9 @@ Other options are also available in the *gear* drop-down menu:
 
 This is one of SNT's most advanced features. [Hessian-based analysis](#Auto-tracing) provides a convenient and easy way to perform auto-tracing on pre-processed data in which voxels defining the traced structure are scored by their likelihood of *belonging* to a tube-like structure. However, it is just one approach for "tubeness" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in ImageJ? *Tracing on Secondary Image* is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A\*star search will operate. Here are two specific usages for this option:
 
--   **Frangi *Vesselness* filtering** For certain datasets Frangi filtering ([Frangi et al. 1998](https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf)) is more effective than [Tubeness](/plugins/tubeness) at enhancing tube-like structures in the image. However, it is more computation intensive, and thus, less suitable to be adopted by the "compute-as-needed" approach used in Hessian-based analysis. Thus, one can import a pre-computed Frangi-filtered image using this option.
--   **Hessian-analysis at multiple scales** Let's consider a structure formed simultaneously by very thick and very thin processes (e.g. axons and dendrites). To trace it one would need to adjust continuously the sigma parameter while tracing. Instead, to trace structures of variable diameters more effectively, one could load a copy of the current image as *secondary image*, and assign different hessian parameters to both images.
--   **Adopting probability maps** Pre-classified images (using e.g., machine learning) could also be loaded here.
+- **Frangi *Vesselness* filtering** For certain datasets Frangi filtering ([Frangi et al. 1998](https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf)) is more effective than [Tubeness](/plugins/tubeness) at enhancing tube-like structures in the image. However, it is more computation intensive, and thus, less suitable to be adopted by the "compute-as-needed" approach used in Hessian-based analysis. Thus, one can import a pre-computed Frangi-filtered image using this option.
+- **Hessian-analysis at multiple scales** Let's consider a structure formed simultaneously by very thick and very thin processes (e.g. axons and dendrites). To trace it one would need to adjust continuously the sigma parameter while tracing. Instead, to trace structures of variable diameters more effectively, one could load a copy of the current image as *secondary image*, and assign different hessian parameters to both images.
+- **Adopting probability maps** Pre-classified images (using e.g., machine learning) could also be loaded here.
 
 Importantly, this option can be toggled at will, during tracing. Indeed, one can ping-pong between *secondary image* and main image simply, by pressing {% include key key='I' %}, the shortcut for the *Trace on Secondary **I**mage* checkbox.
 
@@ -157,11 +163,11 @@ Importantly, this option can be toggled at will, during tracing. Indeed, one can
 
 <img src="/media/plugins/snt/snt-tracing-on-filtered-image-gear-options.png" title="fig:SNT-Tracing-On-Filtered-Image-Gear-Options.png" width="200" alt="SNT-Tracing-On-Filtered-Image-Gear-Options.png" /> <img src="/media/plugins/snt/snt-generate-filtered-image-prompt.png" title="fig:SNT-Generate-Filtered-Image-Prompt.png" width="200" alt="SNT-Generate-Filtered-Image-Prompt.png" />
 
--   **Load Specified File** Loads the filtered image specified in the *File* textbox.
--   **Generate Secondary Image** Enables processing of the currently open image directly from SNT. Three routines are currently supported: *Frangi*, *Frangi (without Gaussian)* and *Tubeness*. Supports saving and display of the resulting image. To use the currently open image as the secondary image, choose *None. Duplicate Primary Image*. Noteworthy: It is assumed that the current sigma value in the Auto-tracing widget reflects the size of structures to be filtered. If that is not the case, the sigma should be adjusted before running this command.
--   **Adjust Min-Max** Sets the range of pixel intensities used by A\* search.
--   **Show Cached image** Displays the currently loaded filtered image in a separate window.
--   **Show Path in File Explorer** Opens the directory containing the filtered image specified in the *File* textbox in the File Explorer GUI.
+- **Load Specified File** Loads the filtered image specified in the *File* textbox.
+- **Generate Secondary Image** Enables processing of the currently open image directly from SNT. Three routines are currently supported: *Frangi*, *Frangi (without Gaussian)* and *Tubeness*. Supports saving and display of the resulting image. To use the currently open image as the secondary image, choose *None. Duplicate Primary Image*. Noteworthy: It is assumed that the current sigma value in the Auto-tracing widget reflects the size of structures to be filtered. If that is not the case, the sigma should be adjusted before running this command.
+- **Adjust Min-Max** Sets the range of pixel intensities used by A\* search.
+- **Show Cached image** Displays the currently loaded filtered image in a separate window.
+- **Show Path in File Explorer** Opens the directory containing the filtered image specified in the *File* textbox in the File Explorer GUI.
 
 See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images) walk-through for more details.
 
@@ -169,9 +175,9 @@ See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#gene
 
 By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: !["Filters for visibility of paths" widget](/media/path-visibility-filters.png)
 
-1.  **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
-2.  **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
-3.  **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
+1. **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
+2. **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
+3. **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
 
 Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [SciView](/plugins/sciview).
 
@@ -180,7 +186,6 @@ Any combination of these options may be toggled simultaneously. Note that these 
 <img src="/media/plugins/snt/default-path-colors.png" title="fig:" width="300" /> <img src="/media/plugins/snt/cmyk-color-model.png" title="fig:CMYK color selection UI" width="300" alt="CMYK color selection UI" /> By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget and using the {% include wikipedia title="CMYK color model" %}. For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#ui-interaction) widget.
 
 **Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [SciView](/plugins/sciview).
-
 
 {% capture tip %}
 The [Path Manager](#path-manager) offers several ways to colorize Paths: 1) Using {% include bc path='Tag | Color' %} swatches (custom colors can be temporarily assigned to empty swatches, by right-clicking on them) or 2) Using {% include bc path='Analyze|Color Coding...' %}, providing morphometric-based [color mapping](#analyze). Note that Path Manager commands are applied to all paths if no paths are selected.
@@ -205,56 +210,56 @@ This tab aggregated widgets for advanced settings.
 
 ![](/media/plugins/snt/snt-views-widget.png)
 
--   **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
+- **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
 
 <div align="center">
 
--   <img src="/media/plugins/snt/op1-without-mip.png" title="fig:Image without MIP overlay" width="250" alt="Image without MIP overlay" />
--   <img src="/media/plugins/snt/op1-with-mip.png" title="fig:Image with MIP overlay at 30%" width="250" alt="Image with MIP overlay at 30%" />
+- <img src="/media/plugins/snt/op1-without-mip.png" title="fig:Image without MIP overlay" width="250" alt="Image without MIP overlay" />
+- <img src="/media/plugins/snt/op1-with-mip.png" title="fig:Image with MIP overlay at 30%" width="250" alt="Image with MIP overlay at 30%" />
 
 </div>
 
--   **Draw diameters in XY view** Displays the stored diameter (if any) in the XY view for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
+- **Draw diameters in XY view** Displays the stored diameter (if any) in the XY view for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
 
 <div align="center">
 
--   <img src="/media/plugins/snt/draw-diameters-disabled.png" title="fig:Draw diameters - disabled" width="200" alt="Draw diameters - disabled" />
--   <img src="/media/plugins/snt/draw-diameters-enabled.png" title="fig:Draw diameters - enabled" width="200" alt="Draw diameters - enabled" />
+- <img src="/media/plugins/snt/draw-diameters-disabled.png" title="fig:Draw diameters - disabled" width="200" alt="Draw diameters - disabled" />
+- <img src="/media/plugins/snt/draw-diameters-enabled.png" title="fig:Draw diameters - enabled" width="200" alt="Draw diameters - enabled" />
 
 </div>
 
--   **Apply zoom changes to all views** If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views if they are open. Since in ImageJ zooming may resize the image window, you can use {% include bc path='Views|Arrange Views' %} to reset their positions
--   **Resize Canvas** If using a display canvas to view reconstructions, reset its dimensions to the default. (Currently, this command is only available for display canvases, to resize an image go to IJ's command {% include bc path='Image | Adjust | Canvas Size...' %}
--   **Display ZY/XZ views** If currently using the XY only view, display the ZY and XZ views as well.
+- **Apply zoom changes to all views** If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views if they are open. Since in ImageJ zooming may resize the image window, you can use {% include bc path='Views|Arrange Views' %} to reset their positions
+- **Resize Canvas** If using a display canvas to view reconstructions, reset its dimensions to the default. (Currently, this command is only available for display canvases, to resize an image go to IJ's command {% include bc path='Image | Adjust | Canvas Size...' %}
+- **Display ZY/XZ views** If currently using the XY only view, display the ZY and XZ views as well.
 
 ### Temporary Paths
 
 !["Temporary Paths" widget](/media/snt-temporary-paths-dialog.png)
 
--   **Confirm temporary segments** If active, prompts for either confirmation or denial of whether or not to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
-    -   **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
-    -   **Pressing 'N' twice cancels path** Discard a temporary or unconfirmed path, including the start node, on two successive {% include key key='N' %} key presses.
+- **Confirm temporary segments** If active, prompts for either confirmation or denial of whether or not to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
+  - **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
+  - **Pressing 'N' twice cancels path** Discard a temporary or unconfirmed path, including the start node, on two successive {% include key key='N' %} key presses.
 
 ### UI Interaction
 
 ![](/media/plugins/snt/snt-ui-interaction-widget.png)
 
--   **Colors** Specifies how components should be rendered, including:
-    -   **Canvas annotations** The label shown on the top-left corner of the views indicating the state of the UI ("Tracing Paused", "Choosing Sigma", etc.)
-    -   **Fills** The pixels that have been reached by the Fill search
-    -   **Unconfirmed** and **Temporary** paths.
--   **Path nodes rendering scale** Adjusts the radius of the drawn circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation. The default scale is inferred from the current zoom level.
--   **Activate canvas on mouse hovering** If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
+- **Colors** Specifies how components should be rendered, including:
+  - **Canvas annotations** The label shown on the top-left corner of the views indicating the state of the UI ("Tracing Paused", "Choosing Sigma", etc.)
+  - **Fills** The pixels that have been reached by the Fill search
+  - **Unconfirmed** and **Temporary** paths.
+- **Path nodes rendering scale** Adjusts the radius of the drawn circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation. The default scale is inferred from the current zoom level.
+- **Activate canvas on mouse hovering** If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
 
 ### Misc
 
--   **Skip confirmation dialogs** If active, disables the "*Are you sure?*" prompt preceding major actions. Note that this option does not apply to irreversible actions such as deleting paths.
--   **Debug mode** If active, logs detailed information about actions in the console.
--   **Preferences...** Allows setting other options, namely:
-    -   Whether the position of dialogs should be remembered across restarts
-    -   Whether {% include wikipedia title="Gzip" %} compression (lossless) should be used to reduce the storage footprint of ".traces" files.
-    -   The max number of parallel threads to be used by SNT, as specified in ImageJ's {% include bc path='Edit|Options|Memory & Threads...' %}
-    -   *Reset All Preferences...* Resets all options to their default values. A restart of SNT may be required for changes to take effect.
+- **Skip confirmation dialogs** If active, disables the "*Are you sure?*" prompt preceding major actions. Note that this option does not apply to irreversible actions such as deleting paths.
+- **Debug mode** If active, logs detailed information about actions in the console.
+- **Preferences...** Allows setting other options, namely:
+  - Whether the position of dialogs should be remembered across restarts
+  - Whether {% include wikipedia title="Gzip" %} compression (lossless) should be used to reduce the storage footprint of ".traces" files.
+  - The max number of parallel threads to be used by SNT, as specified in ImageJ's {% include bc path='Edit|Options|Memory & Threads...' %}
+  - *Reset All Preferences...* Resets all options to their default values. A restart of SNT may be required for changes to take effect.
 
 ## 3D Tab
 
@@ -276,23 +281,23 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option. <img src="/media/plugins/snt/snt-path-edit-right-click-menu.png" title="fig:Contextual menu" width="250" alt="Contextual menu" />
 
--   **Select Nearest Path** {% include key key='G' %} or {% include key keys='Shift|G' %} Will select the path closest to the mouse cursor.
--   **Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
--   **Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
--   **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
--   **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
--   **Sholl Analysis at Nearest Node** {% include key keys='Shift|Alt|A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)' %}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
+- **Select Nearest Path** {% include key key='G' %} or {% include key keys='Shift|G' %} Will select the path closest to the mouse cursor.
+- **Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
+- **Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
+- **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+- **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+- **Sholl Analysis at Nearest Node** {% include key keys='Shift|Alt|A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)' %}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
 
 ### Editing Paths
 
 <img src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="fig:SNT-Path-Edit-Right-Click-Menu-Active.png" width="250" alt="SNT-Path-Edit-Right-Click-Menu-Active.png" /> Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allowing use of the menu options under the *Edit Path* option. When *Edit Mode* is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
 
--   **Reset Active Node** Clears the active node from the cursor.
--   **Delete Active Node** {% include key key='D' %} or {% include key key='Backspace' %} Permanently removes the active node from the path.
--   **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
--   **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor position.
--   **Bring Active Node to Current Z-plane** {% include key key='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
--   **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step_instructions#mergingjoining-paths).
+- **Reset Active Node** Clears the active node from the cursor.
+- **Delete Active Node** {% include key key='D' %} or {% include key key='Backspace' %} Permanently removes the active node from the path.
+- **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
+- **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor position.
+- **Bring Active Node to Current Z-plane** {% include key key='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
+- **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step_instructions#mergingjoining-paths).
 
 # Path Manager
 
@@ -304,24 +309,24 @@ Right-clicking on any of the image views will bring up a menu with various editi
 
 {% include img src="snt-path-manager-edit" width="250" caption="\"Edit\" menu" %}
 
--   {% include bc path='Delete...' %} Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
--   {% include bc path='Rename...' %} Renames the selected Path. Only one Path may be renamed at a time.
--   {% include bc path='Make Primary' %} Makes the selected Path the primary Path, moving it to the top of the tree hierarchy. Note that this will alter parent-child relationships between Paths and, by consequence, individual nodes.
--   {% include bc path='Disconnect...' %} Disconnects the selected Path from all of its connected Path(s) (Undoable operation).
--   {% include bc path='Merge...' %} Merges the selected Paths (at least two) into one. Note the starting node of Path *i* is merged to the endpoint of Path *i+1*.
--   {% include bc path='Specify Radius...' %} Assigns a constant radius to all the nodes of selected Path(s). This setting only applies to unfitted Paths and overrides any existing values.
--   {% include bc path='Ramer-Douglas-Peuker Downsampling...' %} Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s).
+- {% include bc path='Delete...' %} Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
+- {% include bc path='Rename...' %} Renames the selected Path. Only one Path may be renamed at a time.
+- {% include bc path='Make Primary' %} Makes the selected Path the primary Path, moving it to the top of the tree hierarchy. Note that this will alter parent-child relationships between Paths and, by consequence, individual nodes.
+- {% include bc path='Disconnect...' %} Disconnects the selected Path from all of its connected Path(s) (Undoable operation).
+- {% include bc path='Merge...' %} Merges the selected Paths (at least two) into one. Note the starting node of Path *i* is merged to the endpoint of Path *i+1*.
+- {% include bc path='Specify Radius...' %} Assigns a constant radius to all the nodes of selected Path(s). This setting only applies to unfitted Paths and overrides any existing values.
+- {% include bc path='Ramer-Douglas-Peuker Downsampling...' %} Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s).
 
 ### Tag
 
 !["Tag" Menu](/media/snt-path-manager-tag.png) Assigns tags to Paths. Tags are organized in the following categories:
 
--   {% include bc path='Type| ' %} Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options..' %} dialog  
-    These tags are considered to be essential annotations and all paths are assigned the *Undefined*-type tag when created. For this reason they are not eliminated by the *Remove All Tags* command.
--   {% include bc path='Color| ' %} A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign a metric-based color mapping using the {% include bc path='Analyze|Color Coding...' %} command.
--   {% include bc path='Image Metadata| ' %} Information on hyperstack position details (e.g., channel, frame or slice labels on which a path was traced).
--   {% include bc path='Morphometry| ' %} Morphometric properties, such as *Path length*, *Path mean radius* or *[Path order](/plugins/snt/analysis#path-order-analysis)*.
--   {% include bc path='Custom...' %} Ad-hoc comments.
+- {% include bc path='Type| ' %} Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options..' %} dialog  
+  These tags are considered to be essential annotations and all paths are assigned the *Undefined*-type tag when created. For this reason they are not eliminated by the *Remove All Tags* command.
+- {% include bc path='Color| ' %} A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign a metric-based color mapping using the {% include bc path='Analyze|Color Coding...' %} command.
+- {% include bc path='Image Metadata| ' %} Information on hyperstack position details (e.g., channel, frame or slice labels on which a path was traced).
+- {% include bc path='Morphometry| ' %} Morphometric properties, such as *Path length*, *Path mean radius* or *[Path order](/plugins/snt/analysis#path-order-analysis)*.
+- {% include bc path='Custom...' %} Ad-hoc comments.
 
 Note that only SWC-type tags are preserved across restarts when saving traces in the SWC format. All others require data to be saved in SNT's own .Traces format.
 
@@ -329,22 +334,22 @@ Note that only SWC-type tags are preserved across restarts when saving traces in
 
 ![](/media/plugins/snt/fit-manager.png) SNT can use the fluorescent signal around traced Paths to optimize curvatures and estimate the thickness of traced structures to sub-voxel accuracy. The optimization algorithm uses pixel intensities to fit circular cross-sections around each node. Once computed, fitted cross-sections can be used to: 1) Infer the radius of nodes, and/or 2) refine node positioning, by snapping their coordinates to the cross-section centroid. The {% include bc path='Refine/Fit|' %} menu contains three entries: <img src="/media/plugins/snt/explore-fit-preview.png" title="fig:Slice in &quot;Explore/Preview Fit&quot; image stack" width="250" alt="Slice in &quot;Explore/Preview Fit&quot; image stack" />
 
--   {% include bc path='Fit Path(s).../Un-fit Path(s)/Apply Existing Fit' %} This option will change depending on which Path(s) are currently selected. You can use it to 1) Fit selected Path(s), 2) un-fit Path(s) that have already been fitted, or 3) apply a generated preview of the fit or an existing fit.
--   {% include bc path='Explore/Preview Fit' %} Carves out a region of the image along and around each Path node, generating an animated cross-view "fly-through" with the result of the fitting operation. The generated image is annotated with details of the fit: i) Fitted radius; ii) normalized score quantifying the "circularity" of a node's cross section, and iii) the angle between node and parent tangent vectors.
--   {% include bc path='Discard Fit(s)...' %} Deletes the existing fit(s) for the selected Path(s), or all fits if no Paths are selected.
+- {% include bc path='Fit Path(s).../Un-fit Path(s)/Apply Existing Fit' %} This option will change depending on which Path(s) are currently selected. You can use it to 1) Fit selected Path(s), 2) un-fit Path(s) that have already been fitted, or 3) apply a generated preview of the fit or an existing fit.
+- {% include bc path='Explore/Preview Fit' %} Carves out a region of the image along and around each Path node, generating an animated cross-view "fly-through" with the result of the fitting operation. The generated image is annotated with details of the fit: i) Fitted radius; ii) normalized score quantifying the "circularity" of a node's cross section, and iii) the angle between node and parent tangent vectors.
+- {% include bc path='Discard Fit(s)...' %} Deletes the existing fit(s) for the selected Path(s), or all fits if no Paths are selected.
 
 Before computing the fit, SNT will prompt you to specify two parameters:
 
--   **Type of Refinement**: Either 1) *Assign radii of fitted cross-sections to nodes*, 2) *Snap node coordinates to cross-section centroids*, or 1) & 2) *Assign fitted radii and snap node coordinates*
--   **Max. Radius** Defines (in pixels) the largest radius allowed in the fit. It constrains the optimization to minimize fitting artifacts caused by neighboring structures. A good rule of thumb is to use 1.5-2x the largest radius in the traced structure. Default is 40 pixels on each side of the path
+- **Type of Refinement**: Either 1) *Assign radii of fitted cross-sections to nodes*, 2) *Snap node coordinates to cross-section centroids*, or 1) & 2) *Assign fitted radii and snap node coordinates*
+- **Max. Radius** Defines (in pixels) the largest radius allowed in the fit. It constrains the optimization to minimize fitting artifacts caused by neighboring structures. A good rule of thumb is to use 1.5-2x the largest radius in the traced structure. Default is 40 pixels on each side of the path
 
 Assuming you chose to fit both centroids and radii, a fitted path might look like the rightmost image below. Notice how the nodes follow the center line of the structure more closely, and how each node now has a non-zero radius approximating that of the traced axon.
 
 <div align="center">
 
--   <img src="/media/plugins/snt/fit-parameter-prompt.png" title="fig:Fitting parameters" width="286" alt="Fitting parameters" />
--   <img src="/media/plugins/snt/before-fitting.png" title="fig:Before fitting" width="300" alt="Before fitting" />
--   <img src="/media/plugins/snt/after-fitting.png" title="fig:Fitted path" width="300" alt="Fitted path" />
+- <img src="/media/plugins/snt/fit-parameter-prompt.png" title="fig:Fitting parameters" width="286" alt="Fitting parameters" />
+- <img src="/media/plugins/snt/before-fitting.png" title="fig:Before fitting" width="300" alt="Before fitting" />
+- <img src="/media/plugins/snt/after-fitting.png" title="fig:Fitted path" width="300" alt="Fitted path" />
 
 </div>
 
@@ -352,65 +357,77 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 
 !["Fill" menu](/media/snt-path-manager-fill.png)
 
--   {% include bc path='Fill Out...' %} Begins the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
+- {% include bc path='Fill Out...' %} Begins the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
 
 ### Analyze
 
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first. !["Analyze" menu](/media/snt-path-manager-analyze-menu.png)
 
--   {% include bc path='Color Coding...' %} Assigns color codes to paths based on the chosen metric.
-    -   *Color by* Drop-down menu containing the metrics which inform the color mapping.
-    -   *LUT* Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
-    -   *Rec. Viewer Color Map* If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
-    -   *Rec. Plotter Color Map* If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
-    -   *Remove Existing Color Coding* Removes existing color coding from the selected paths.
-        {% include img src="snt-path-manager-color-mapper" title="Color Mapper prompt" width="300" caption="Color Mapper prompt, after choosing metric: Branch Order, LUT: Ice, showing the Reconstruction Viewer with the color-mapped OP_1 tracing." %}
--   {% include bc path='Distribution Analysis...' %} Plots a histogram of the selected metric.
-    -   *Measurement* - Drop-down menu with the available metrics.
-        {% include img src="snt-distribution-analysis" title="Distribution Analysis prompt" width="300" caption="Distribution Analysis prompt: Choosing Branch Order for the measurement." %}
--   {% include bc path='Measure.../Quick Measurements' %} Shows a table of summary statistics for selected paths. The former command allows for specific selections of metrics. If measuring multiple tracings, the table can be sorted by column.
+- {% include bc path='Color Coding...' %} Assigns color codes to paths based on the chosen metric.
+  
+  - *Color by* Drop-down menu containing the metrics which inform the color mapping.
+  - *LUT* Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
+  - *Rec. Viewer Color Map* If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
+  - *Rec. Plotter Color Map* If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
+  - *Remove Existing Color Coding* Removes existing color coding from the selected paths.
+    {% include img src="snt-path-manager-color-mapper" title="Color Mapper prompt" width="300" caption="Color Mapper prompt, after choosing metric: Branch Order, LUT: Ice, showing the Reconstruction Viewer with the color-mapped OP_1 tracing." %}
 
-    {% include img src="snt-path-manager-measurements" width="1000" caption="Measurements table for OP_1" %}
+- {% include bc path='Distribution Analysis...' %} Plots a histogram of the selected metric.
+  
+  - *Measurement* - Drop-down menu with the available metrics.
+    {% include img src="snt-distribution-analysis" title="Distribution Analysis prompt" width="300" caption="Distribution Analysis prompt: Choosing Branch Order for the measurement." %}
 
--   {% include bc path='Convert to ROIs...' %} Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
-    -   *Convert* Drop-down menu specifying the compartment to convert.
-    -   *View* Drop-down menu specifying which view to overlay the ROIs.
-    -   *Impose SWC colors*
-    -   *Adopt path diameter as line thickness*
-    -   *Discard existing ROIs in ROI Manager*
+- {% include bc path='Measure.../Quick Measurements' %} Shows a table of summary statistics for selected paths. The former command allows for specific selections of metrics. If measuring multiple tracings, the table can be sorted by column.
+  
+  {% include img src="snt-path-manager-measurements" width="1000" caption="Measurements table for OP_1" %}
 
-        {% include img src="snt-convert-to-rois" align="center" width="300"
-          heading="Converting paths to ROIs with the default parameters."
-          title="Convert to ROIs prompt" caption="Convert to ROIs prompt" %}
+- {% include bc path='Convert to ROIs...' %} Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Creates an instance of the [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager)
+  
+  - *Convert* Drop-down menu specifying the compartment to convert.
+  
+  - *View* Drop-down menu specifying which view to overlay the ROIs.
+  
+  - *Impose SWC colors*
+  
+  - *Adopt path diameter as line thickness*
+  
+  - *Discard existing ROIs in ROI Manager*
+    
+    {% include img src="snt-convert-to-rois" align="center" width="300"
+      heading="Converting paths to ROIs with the default parameters."
+      title="Convert to ROIs prompt" caption="Convert to ROIs prompt" %}
 
--   {% include bc path='Plot Profile' %} Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance (from the start node of a Path) plot for selected Path(s).
+- {% include bc path='Plot Profile' %} Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance (from the start node of a Path) plot for selected Path(s).
+  
+  {% include img src="snt-path-profile-graph" align="center" width="400"
+    heading="Intensity profile for Path 0 of OP_1." %}
 
-    {% include img src="snt-path-profile-graph" align="center" width="400"
-      heading="Intensity profile for Path 0 of OP_1." %}
+- {% include bc path='Skeletonize...' %} Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity.
+  
+  - *Roi filtering*
+    
+    - *None*
+    - *Convert only segments contained by ROI*
+  
+  - *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin on the skeletonized output image.
+    
+    {% include img src="snt-path-manager-skeletonize" align="center" width="300"
+      heading="Converting paths to a topographic skeleton with default parameters."
+      title="Skeletonize prompt" caption="Skeletonize prompt" %}
 
--   {% include bc path='Skeletonize...' %} Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity.
-    -   *Roi filtering*
-        -   *None*
-        -   *Convert only segments contained by ROI*
-    -   *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin on the skeletonized output image.
-
-        {% include img src="snt-path-manager-skeletonize" align="center" width="300"
-          heading="Converting paths to a topographic skeleton with default parameters."
-          title="Skeletonize prompt" caption="Skeletonize prompt" %}
-
--   {% include bc path='Save Subset as SWC...' %} Exports the selected subset of Path(s) as an [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
+- {% include bc path='Save Subset as SWC...' %} Exports the selected subset of Path(s) as an [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
 
 ## Filter Toolbar
 
 ![](/media/plugins/snt/snt-path-manager-text-filter.png) The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/plugins/snt/snt-text-filter-balloon-button.png) button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/plugins/snt/snt-text-filter-menu-button.png) button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/plugins/snt/snt-text-filter-advanced-button.png) button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include: !["Color Filters" menu](/media/snt-path-manager-text-filter-color-filters.png)
 
--   **Color Filters** ![](/media/plugins/snt/snt-text-filter-color-button.png) Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
--   **Morphology Filters** ![](/media/plugins/snt/snt-text-filter-morphology-button.png) Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| ' %}.
-    -   *Path Order...* Filters for Paths of [Path order](/plugins/snt/analysis#path-order-analysis) in the inputted range. Example queries: `1-2`: selects all primary and secondary branches; `max-max`: selects all terminal branches.
-    -   *Length...* Filters for Paths of length within the inputted range. Example queries: `10-20`: selects all Paths with lengths between 10 and 20μm; `max-max`: selects the longest path(s).
-    -   *Mean Radius...* Filters for Paths of mean radius within the inputted range.
-    -   *No. of Nodes...* Filters for Paths with node count within the inputted range.
-    -   *SWC Type...* Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [tagged](/plugins/snt/manual#tag) using the{% include bc path='Tag|Type|' %} menu.
+- **Color Filters** ![](/media/plugins/snt/snt-text-filter-color-button.png) Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
+- **Morphology Filters** ![](/media/plugins/snt/snt-text-filter-morphology-button.png) Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| ' %}.
+  - *Path Order...* Filters for Paths of [Path order](/plugins/snt/analysis#path-order-analysis) in the inputted range. Example queries: `1-2`: selects all primary and secondary branches; `max-max`: selects all terminal branches.
+  - *Length...* Filters for Paths of length within the inputted range. Example queries: `10-20`: selects all Paths with lengths between 10 and 20μm; `max-max`: selects the longest path(s).
+  - *Mean Radius...* Filters for Paths of mean radius within the inputted range.
+  - *No. of Nodes...* Filters for Paths with node count within the inputted range.
+  - *SWC Type...* Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [tagged](/plugins/snt/manual#tag) using the{% include bc path='Tag|Type|' %} menu.
 
 # Fill Manager
 
