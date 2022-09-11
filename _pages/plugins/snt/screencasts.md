@@ -1,8 +1,10 @@
 ---
-mediawiki: SNT:_Screencasts
 title: SNT › Screencasts
 nav-links: true
 nav-title: Screencasts
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
 ---
 
 This page contains a list of screencasts that describe SNT capabilities.

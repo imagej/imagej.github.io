@@ -2,6 +2,10 @@
 title: SNT › FAQ
 nav-links: true
 nav-title: FAQ
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
+update-site: Neuroanatomy
 ---
 
 ## General
@@ -45,13 +49,13 @@ It is the most widely adopted format for encoding neuronal reconstructions, in w
 <span id="file-format"></span>
 When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
 
-|                                                   | SWC                                                                                                                                  | TRACES                                                                               |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| No. reconstructions / file                        | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                            |
-| Image metadata                                    | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                           |
-| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                               |
-| Format                                            | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))          |
-| Presence                                          | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
+|                                              | SWC                                                                                                                                  | TRACES                                                                           |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| No. reconstructions / file                   | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                        |
+| Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                       |
+| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                           |
+| Format                                       | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))           |
+| Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
 
 ### How do I (batch) convert TRACES to SWC?
 
