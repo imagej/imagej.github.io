@@ -2,6 +2,9 @@
 title: SNT › Reconstruction Viewer
 nav-links: true
 nav-title: Reconstruction Viewer
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
 ---
 
 <img align="right" src="/media/plugins/snt/reconstruction-viewer-animated-gif.gif" title="SNT-ScriptInterpreter.png" />

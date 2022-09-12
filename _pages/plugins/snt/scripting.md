@@ -8,10 +8,10 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
-{% capture text%}
+{% capture api%}
 The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](https://morphonets.github.io/SNT).
 {% endcapture %}
-{% include notice icon="info" content=text %}
+{% include notice icon="info" content=api %}
 
 # SNT Scripts
 
