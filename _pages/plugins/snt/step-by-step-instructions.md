@@ -280,7 +280,7 @@ As you can see in the middle image, the threshold is set too far from the path, 
 
 <div align="center">
   <img src="/media/plugins/snt/snt-zoomed-filling-2.png" title="Fill, opaque" width="250" alt="Fill, opaque" />
-  <img src="/media/plugins/snt/snt-transparent-filling-2.png" title="Fill, with "Transparent overlay" on" width="250" alt="Fill, with "Transparent overlay" on" />
+  <img src="/media/plugins/snt/snt-transparent-filling-2.png" title="Fill, with 'Transparent overlay' on" width="250" alt="Fill, with 'Transparent overlay' on" />
   <img src="/media/plugins/snt/snt-refined-filling-2.png" title="Fill, refined" width="250" alt="Fill, refined" />
 </div>
 
