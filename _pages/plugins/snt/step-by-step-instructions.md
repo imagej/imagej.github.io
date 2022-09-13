@@ -295,7 +295,7 @@ If you are happy with this, then you might as well click "Pause" so that your co
 The image stack you would get from the image used in this example might look something like this: 
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-filling-viewed-2.png" title="Having selected the "Image Stack... -> As Grayscale Image..." option" width="500" />
+  <img src="/media/plugins/snt/snt-filling-viewed-2.png" title="Having selected the 'Image Stack... -> As Grayscale Image...' option" width="500" />
 </div>
 
 # Generating *Filtered Images*
