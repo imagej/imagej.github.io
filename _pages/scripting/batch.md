@@ -27,7 +27,7 @@ The fastest way to start batch conversion is via the [{% include bc path='Proces
 
 {% include notice icon="imagej2" content="This section requires ImageJ2." %}
 
-Open the [script editor](/scripting/script-editor), select {% include bc path='Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)'%}. This will generate the following boilerplate:
+Open the [script editor](/scripting/script-editor), select {% include bc path='Templates | ImageJ 1.x | Batch | Process Folder (ImageJ Macro)'%}. This will generate the following boilerplate:
 
 <img src="/media/scripting/process-folder-ij1.png" width="762"/>
 
