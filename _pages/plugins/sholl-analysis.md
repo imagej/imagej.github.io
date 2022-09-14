@@ -14,7 +14,7 @@ Automated and multithreaded Sholl for direct analysis of fluorescent images and/
 {% capture text%}
 ***Sholl Analysis* is based on a [publication](#publication). If you use it successfully for your research please be so kind as to cite our work!**
 
-The [manuscript](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) is accompanied by a [Supplementary Note](http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf) that presents the software in further detail. 
+The [manuscript](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) is accompanied by a [Supplementary Note](https://www.nature.com/articles/nmeth.3125#Sec2) that presents the software in further detail. 
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
