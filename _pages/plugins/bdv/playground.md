@@ -9,7 +9,7 @@ As announced in the forum [here](https://forum.image.sc/t/getting-bigdataviewer-
 
 # Installation
 
-Enable the [bigdataviewer playground update site](/update-sites/following) (https://biop.epfl.ch/Fiji-Bdv-Playground/).
+Enable the [PTBIOP update site](/update-sites/following). The [BIOP](https://www.epfl.ch/research/facilities/ptbiop/) is maintaining this library.
 
 # What bigdataviewer-playground brings ?
 -   **Modularity for bigdataviewer!** Bigdataviewer playground creates a way to access existing BDV instances when scripting or writing java code. Being able to combine scripts or code for display and processing is doable easily via scripting (Groovy, ImageJ macro, etc.)
