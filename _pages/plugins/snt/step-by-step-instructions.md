@@ -250,7 +250,7 @@ This section describes methods to increase the accuracy of node placement.
 
 # Filling
 
-<img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting "Fill Out..." with 1 path selected" width="350" />
+<img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
 
 ### I.Starting the Fill
