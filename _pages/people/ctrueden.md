@@ -46,68 +46,41 @@ ImageJ2 team to respond to every support request within one work day:
   support requests, issues, pull requests, etc., per component, in a way that
   will foster accountability for the people maintaining each component.
 
-* **Community Fridays.** In the meantime, starting in 2022, I am personally
-  focusing every Friday on answering support questions. I can't keep up with
-  everything, but I can try to make some small impact by responding to as many
-  requests as I can. Unfortunately, until the status.scijava.org work is
-  complete, I won't always succeed in prioritizing items in a fair order, but
-  I'm doing my best.
+* **Community Mondays.** In the meantime, I am personally focusing every Monday
+  on answering support questions. I can't keep up with everything, but I can
+  try to make some small impact by responding to as many requests as I can.
+  Unfortunately, until the status.scijava.org work is complete, I won't always
+  succeed in prioritizing items in a fair order, but I'm doing my best.
 
 ## What is Curtis working on?
 
-*Last updated: 2022-Apr-18*
+*Last updated: 2022-Sep-16*
 
 ### Weekly allocation of effort
 
-|     Day | Focus                                                                                                                                                    |
-|--------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Mon** | Meetings and mentorship                                                                                                                                  |
-| **Tue** | Immediate priorities                                                                                                                                     |
-| **Wed** | Review and merge PRs ([my PR queue](https://github.com/users/ctrueden/projects/1/views/2))                                                               |
-| **Thu** | Project management                                                                                                                                       |
-| **Fri** | Community support ([forum topics](https://forum.image.sc/u/ctrueden/activity/bookmarks), [issues](https://github.com/users/ctrueden/projects/1/views/3)) |
+| Day | Focus |
+|----:|:------|
+| **Mon** | Community support ([forum topics](https://forum.image.sc/u/ctrueden/activity/bookmarks), [issues](https://github.com/users/ctrueden/projects/1/views/3)) |
+| **Tue** | Fiji maintenance ([PR queue](https://github.com/users/ctrueden/projects/1/views/2)) |
+| **Wed** thru **Fri** | New development: SciJava Ops |
 
 ### Immediate priorities
 
-1.  [with {% include person id='hinerm' %}] New pom-scijava release:
-    -   Update all community projects to not use log4j ({% include github org='scijava' repo='pom-scijava' issue=179 %})
-    -   Update all community projects to 19.04 JHDF5 ({% include github org='scijava' repo='pom-scijava' issue=181 %})
-    -   Include the updated ImageJ-OMERO ({% include github org='scijava' repo='pom-scijava' issue=173 %})
-    -   Get [labkit](/plugins/labkit) into Fiji ({% include github org='scijava' repo='pom-scijava' pr=183 %})
-    -   Finish fixing javadoc.scijava.org ({% include github org='scijava' repo='pom-scijava' issue=130 %})
-    -   Catch up on component release backlog (see [status.scijava.org](https://status.scijava.org) table)
-    -   Make the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %}) fully work.
-    -   Fix failing CI builds:
-        * `imagej/pyimagej`
-        * `scijava/jgo`
-        * `imagej/tutorials`
-        * `axtimwalde/mpicbg`
-        * `imagej/imagej-omero`
-        * `imagej/imagej-opencv`
-        * `fiji/H5J_Loader_Plugin`
-        * `fiji/Kappa`
-        * Update CI-related docs on imagej.net
-
-2.  Fix the {% include github org='fiji' repo='fiji-builds' label='fiji-builds' %} CI workflow.
-
-3.  Finish the imagej.net statbox feature ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
-
-### Project management priorities
-
-1.  Continue populating the project board for SciJava+ImageJ2+Fiji migration to Java 11 and 17 ([roadmap](https://github.com/orgs/imagej/projects/4)).
-
-2.  Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' label='scijava/status.scijava.org' %}).
+- Make the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %}) fully work.
+- (with {% include person id='hinerm' %} and {% include person id='gselzer' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
+- Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' label='scijava/status.scijava.org' %}).
 
 ### Short-term priorities
 
-- \[Summer 2022\] (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17 ([roadmap](https://github.com/orgs/imagej/projects/4)), with a **Maven-based ImageJ update site generator** to simplify creation and maintenance of update sites.
-- \[Autumn 2022\] (with {% include person id='gselzer' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
-- \[Winter 2022\] Make ImageJ Server work again ({% include github org='imagej' repo='imagej-server' issue=41 %}, {% include github org='scijava' repo='pom-scijava' issue=133 %}).
+- **Integrate PyImageJ with the ImageJ launcher.** (see also [this forum discussion](https://forum.image.sc/t/fiji-conda/59618/13))
+- **Upgrade component stack to Java 11/17.** (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17 ([roadmap](https://github.com/orgs/imagej/projects/4)), with a **Maven-based ImageJ update site generator** to simplify creation and maintenance of update sites.
+- **Better javadoc.scijava.org.** ({% include github org='scijava' repo='pom-scijava' issue=130 %})
 
 ### Medium-term priorities
 
+- **Finish the imagej.net statbox feature.** ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
 - **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/discuss/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
-- **Integrate PyImageJ with the ImageJ launcher.** (see also [this forum discussion](https://forum.image.sc/t/fiji-conda/59618/13))
+- **Fix the ImageJ Server.** ({% include github org='imagej' repo='imagej-server' issue=41 %}, {% include github org='scijava' repo='pom-scijava' issue=133 %}).
 
 ### Longer-term priorities
 
