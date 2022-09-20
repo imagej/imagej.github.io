@@ -9,6 +9,7 @@ dev-status: "stable, active"
 team-founder: 'Romain Fernandez & Cédric Moisy'
 team-maintainer: 'Romain Fernandez'
 source-url: https://github.com/Rocsg/Fijiyama
+maven-repo: https://search.maven.org/artifact/io.github.rocsg/fijiyama/
 ---
 
 
