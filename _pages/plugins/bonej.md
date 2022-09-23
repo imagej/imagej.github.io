@@ -232,7 +232,7 @@ A binary 3D image.
 
 #### Parameters
 
--   **Sampling increment**: distance between sample points on each vector; should be less than the pixel spacing.
+-   **Sampling increment**: distance in pixel widths between sample points on each vector; should be less than 1 (defaults to 1/2.3).
 -   **Vectors**: number of vectors to sample at each seed point.
 -   **Skeleton points per ellipsoid**: allows dense or sparse sampling, a value of $$1$$ means that an ellipsoid is sampled at every seed point.
 -   **Contact sensitivity**: how many vectors must touch the background before dilation stops.
