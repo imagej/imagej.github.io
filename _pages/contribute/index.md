@@ -13,29 +13,52 @@ Everybody is welcome to [contribute](/contribute) with [plugins](/plugins),
 [patches](/develop/github), [bug reports](/discuss/bugs),
 [tutorials](/tutorials), [documentation](/learn), and artwork.
 
-The community encourages discussion about proposed changes on ImageJ's [communication channels](/discuss/#ways-to-get-help). Submit your ideas!
+## Public communication
+
+The community encourages discussion about proposed changes on ImageJ's [communication channels](/discuss). Submit your ideas!
 
 Start on the [Image.sc Forum](https://forum.image.sc/), searching for discussions related to your contribution to get some context & background. It can also be helpful to [search](/discuss#searching-imagej-resources) for applicable issues and plans across the spectrum of ImageJ resources. The ImageJ community believes that [public discussion is important](/develop/philosophy#open-source) so that ideas are exposed to healthy alternate points of view rather than lost.
 
-If you are interested in helping to tackle open issues, see the [wish list](/develop/wish-list) page.
+## Ways to contribute
 
-## This website
+We are all busy, and it can be hard to make time to contribute to an open-source project. Here are some ways to get involved at any level of time, commitment, and expertise:
 
-This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wikipedia' text='Wikipedia'%} project). This site is built by the ImageJ community, and anyone can contribute!
+* Improve the documentation here on the wiki.
+
+* File issues on GitHub when things don't work.
+
+* Answer questions on [forum.image.sc](https://forum.image.sc).
+
+* Fix small/easy bugs you find in the code on GitHub.
+
+* Tackle open issues&mdash;see the [wish list](/develop/wish-list) page.
+
+* Take responsibility for one or more plugins by adopting a [team role](/contribute/governance#scijava-team-roles):
+  * *Support* - Respond to support requests on public channels such as this forum.
+  * *Reviewer* - Look over and approve GitHub pull requests when they come in for your component(s).
+  * *Debugger* - Investigate and debug problems with your component(s) when they are reported.
+  * *Developer* - Add new features to your component(s) upon user request.
+  * *Lead*, *Maintainer* - Make decisions about when to cut new releases and make them available to end users.
+
+When in doubt, [discuss](/discuss) your ideas publicly on the [Image.sc Forum](https://forum.image.sc/)!
+
+### This website
+
+This site, imagej.net, is a wiki (similar to the {% include wikipedia title='Wikipedia' text='Wikipedia' %} project). This site is built by the ImageJ community, and anyone can contribute!
 
 Contributing documentation is an easy way to give back to the community without needing to learn software development skills.
 
 If you are a software developer, please consider [documenting your work on this site](/contribute/distributing#documenting-your-extension). You can also create your own [tutorial](/tutorials).
 
-When in doubt, [discuss](/discuss) your ideas publicly on the [Image.sc Forum](https://forum.image.sc/)!
+We strive for ***centralized documentation and online resources***. Creating your own tutorial in your own GitHub space is great, but much less visible and accessible than adding to the [official ImageJ2 tutorials](https://github.com/imagej/tutorials). Same thing with doing your own blog post, or external documentation on your web site, or running your own ImageJ workshop with your own workshop materials. Those things are all good, but much *better* is to contribute it to the appropriate central resource—e.g., the [Presentations page of this website](/events/presentations).
 
-## ImageJ2
+### ImageJ2
 
 Submit patches to [ImageJ2](/software/imagej2) via [pull requests](https://help.github.com/articles/using-pull-requests/) against [ImageJ2's source on GitHub](https://github.com/imagej).
 
 Note that since ImageJ2 has a modular [architecture](/develop/architecture), it is possible that your change would be more applicable to one of the supporting technologies such as [ImgLib2](https://github.com/imglib), [SCIFIO](https://github.com/scifio) or [SciJava](https://github.com/scijava).
 
-## ImageJ
+### ImageJ
 
 Changes to the original [ImageJ](/software/imagej) are made by {% include person id='rasband' %}, the ImageJ developer, along with many contributors. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [Release Notes/News](https://imagej.nih.gov/ij/notes.html)).
 
