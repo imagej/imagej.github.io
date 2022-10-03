@@ -139,104 +139,103 @@ Programmatic control over an open instance of [Reconstruction Viewer](/plugins/s
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
 {% highlight python %}
+#@ Context context
+#@ DatasetService ds
+#@ DisplayService display
+#@ ImageJ ij
+#@ LegacyService ls
+#@ LogService log
+#@ LUTService lut
+#@ SNTService snt
+#@ UIService ui
 
-    #@ Context context
-    #@ DatasetService ds
-    #@ DisplayService display
-    #@ ImageJ ij
-    #@ LegacyService ls
-    #@ LogService log
-    #@ LUTService lut
-    #@ SNTService snt
-    #@ UIService ui
-    
-    from sc.fiji.snt import (Path, PathAndFillManager, SNT, SNTUI, Tree)
-    from sc.fiji.snt.analysis import (MultiTreeColorMapper, PathProfiler, RoiConverter,
-            TreeAnalyzer, TreeColorMapper, TreeStatistics)
-    from sc.fiji.snt.analysis.graph import GraphUtils
-    from sc.fiji.snt.analysis.sholl import TreeParser
-    from sc.fiji.snt.annotation import (AllenCompartment, AllenUtils, VFBUtils, ZBAtlasUtils)
-    from sc.fiji.snt.io import (FlyCircuitLoader, MouseLightLoader, NeuroMorphoLoader)
-    from sc.fiji.snt.plugin import (SkeletonizerCmd, StrahlerCmd)
-    from sc.fiji.snt.util import (BoundingBox, PointInImage, SNTColor, SWCPoint)
-    from sc.fiji.snt.viewer import (Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D)
-    
-    # Documentation Resources: https://imagej.net/plugins/snt/scripting
-    # SNT API: https://morphonets.github.io/SNT
-    # Rec. Viewer's API: https://morphonets.github.io/SNT/index.html?sc/fiji/snt/viewer/Viewer3D.html
-    # Tip: Programmatic control of the Viewer's scene can be set using the Console info
-    # produced when calling viewer.logSceneControls() or pressing 'L' when viewer is frontmost
-    # If opening this template from the standalone RV, the instance ID of the Viewer (e.g., 2)
-    # will be automatically passed as a parameter to getRecViewer()
-    viewer = snt.getRecViewer()
-    
-    # Added code begins here ##################################################################
-    import time
-    
-    def do_stuff(viewer):
-    
-        viewer.logSceneControls()
-    
-        # Load a neuron from Mouse Secondary Motor Area from the MouseLight database.
-        loader = MouseLightLoader("AA0100")
-        if not loader.isDatabaseAvailable():
-            ui.showDialog("Could not connect to ML database", "Error")
-            return
-        if not loader.idExists():
-            ui.showDialog("Somehow the specified id was not found", "Error")
-            return
-    
-        # Extract nodes with tag "axon".
-        axon = loader.getTree('axon')
-        # Do the same for the dendrites.
-        dendrites = loader.getTree('dendrites')
-    
-        # Load the Allen CCF Mouse Reference Brain
-        # and add it to the scene.
-        viewer.loadRefBrain('mouse')
-    
-        # Add both Trees to the scene
-        viewer.addTree(axon)
-        dendrites.setColor('cyan')
-        viewer.addTree(dendrites)
-    
-        # Get the OBJMesh object representing the maximum depth Allen CCF compartment
-        # containing the soma point and add it to the scene.
-        soma_annotation = loader.getSomaCompartment()
-        viewer.addMesh(soma_annotation.getMesh())
-    
-        # Enforce side perspective.
-        viewer.setViewMode('side')
-    
-        # Next, we will applying a color mapping to the axon
-        # using branch order as the metric and the Ice Lut.
-        # Make an instance of TreeColorMapper using SciJava context.
-        mapper = TreeColorMapper(context)
-        # Get the net.imglib2.display.ColorTable object.
-        lut = mapper.getColorTable('Ice.lut')
-        # Color code the axon and render in scene.
-        # The min and max values returned by the mapper are used
-        # to set the range of the color bar legend.
-        bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.STRAHLER_NUMBER, lut)
-        viewer.addColorBarLegend(lut, bounds[0], bounds[1])
-        # Display a text annotation of the cell ID and metric used by the mapper.
-        scene_annotation = "{}: Branch Order".format(axon.getLabel())
-        viewer.addLabel(scene_annotation)
-    
-        # Begin a rotation animation for the objects in scene.
-        viewer.setAnimationEnabled(True)
-        # Wait some time before applying a new color mapping
-        # based on path distances, using a different LUT (Fire).
-        time.sleep(5)
-    
-        lut = mapper.getColorTable('Fire.lut')
-        # Remap the axon Tree and update scene.
-        bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.PATH_DISTANCE, lut)
-        viewer.addColorBarLegend(lut, bounds[0], bounds[1])
-        scene_annotation = "{}: Path Distance".format(axon.getLabel())
-        viewer.addLabel(scene_annotation)
-    
-    
-    do_stuff(viewer)
+from sc.fiji.snt import (Path, PathAndFillManager, SNT, SNTUI, Tree)
+from sc.fiji.snt.analysis import (MultiTreeColorMapper, PathProfiler, RoiConverter,
+        TreeAnalyzer, TreeColorMapper, TreeStatistics)
+from sc.fiji.snt.analysis.graph import GraphUtils
+from sc.fiji.snt.analysis.sholl.parsers import TreeParser
+from sc.fiji.snt.annotation import (AllenCompartment, AllenUtils, VFBUtils, ZBAtlasUtils)
+from sc.fiji.snt.io import (FlyCircuitLoader, MouseLightLoader, NeuroMorphoLoader)
+from sc.fiji.snt.plugin import (SkeletonizerCmd, StrahlerCmd)
+from sc.fiji.snt.util import (BoundingBox, PointInImage, SNTColor, SWCPoint)
+from sc.fiji.snt.viewer import (Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D)
+
+# Documentation Resources: https://imagej.net/plugins/snt/scripting
+# SNT API: https://morphonets.github.io/SNT
+# Rec. Viewer's API: https://morphonets.github.io/SNT/index.html?sc/fiji/snt/viewer/Viewer3D.html
+# Tip: Programmatic control of the Viewer's scene can be set using the Console info
+# produced when calling viewer.logSceneControls() or pressing 'L' when viewer is frontmost
+# If opening this template from the standalone RV, the instance ID of the Viewer (e.g., 2)
+# will be automatically passed as a parameter to getRecViewer()
+viewer = snt.getRecViewer()
+
+# Added code begins here ##################################################################
+import time
+
+def do_stuff(viewer):
+
+    viewer.logSceneControls()
+
+    # Load a neuron from Mouse Secondary Motor Area from the MouseLight database.
+    loader = MouseLightLoader("AA0100")
+    if not loader.isDatabaseAvailable():
+        ui.showDialog("Could not connect to ML database", "Error")
+        return
+    if not loader.idExists():
+        ui.showDialog("Somehow the specified id was not found", "Error")
+        return
+
+    # Extract nodes with tag "axon".
+    axon = loader.getTree('axon')
+    # Do the same for the dendrites.
+    dendrites = loader.getTree('dendrites')
+
+    # Load the Allen CCF Mouse Reference Brain
+    # and add it to the scene.
+    viewer.loadRefBrain('mouse')
+
+    # Add both Trees to the scene
+    viewer.addTree(axon)
+    dendrites.setColor('cyan')
+    viewer.addTree(dendrites)
+
+    # Get the OBJMesh object representing the maximum depth Allen CCF compartment
+    # containing the soma point and add it to the scene.
+    soma_annotation = loader.getSomaCompartment()
+    viewer.addMesh(soma_annotation.getMesh())
+
+    # Enforce side perspective.
+    viewer.setViewMode('side')
+
+    # Next, we will applying a color mapping to the axon
+    # using branch order as the metric and the Ice Lut.
+    # Make an instance of TreeColorMapper using SciJava context.
+    mapper = TreeColorMapper(context)
+    # Get the net.imglib2.display.ColorTable object.
+    lut = mapper.getColorTable('Ice.lut')
+    # Color code the axon and render in scene.
+    # The min and max values returned by the mapper are used
+    # to set the range of the color bar legend.
+    bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.STRAHLER_NUMBER, lut)
+    viewer.addColorBarLegend(lut, bounds[0], bounds[1])
+    # Display a text annotation of the cell ID and metric used by the mapper.
+    scene_annotation = "{}: Branch Order".format(axon.getLabel())
+    viewer.addLabel(scene_annotation)
+
+    # Begin a rotation animation for the objects in scene.
+    viewer.setAnimationEnabled(True)
+    # Wait some time before applying a new color mapping
+    # based on path distances, using a different LUT (Fire).
+    time.sleep(5)
+
+    lut = mapper.getColorTable('Fire.lut')
+    # Remap the axon Tree and update scene.
+    bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.PATH_DISTANCE, lut)
+    viewer.addColorBarLegend(lut, bounds[0], bounds[1])
+    scene_annotation = "{}: Path Distance".format(axon.getLabel())
+    viewer.addLabel(scene_annotation)
+
+
+do_stuff(viewer)
 
 {% endhighlight %}
