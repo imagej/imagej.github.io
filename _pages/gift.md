@@ -1,5 +1,4 @@
 ---
-mediawiki: GIFT
 title: GIFT
 categories: [Analysis]
 icon:  /media/icons/gift.png
