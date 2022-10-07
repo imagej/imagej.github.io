@@ -17,7 +17,8 @@ FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-ec
 - the [Vitimage 1](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage) and [Vitimage 2024](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage-2024) projects.
 - the [Aplim](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) flagship project.
 
-
+Developer documentation:
+[FijiRelax latest javadoc](https://javadoc.io/doc/io.github.rocsg/fijirelax/latest/index.html)
  
 ## Plugin features
 
