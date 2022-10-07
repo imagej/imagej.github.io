@@ -25,6 +25,7 @@ Most of the known [BioVoxxel Toolbox](https://github.com/biovoxxel/BioVoxxel-Too
 ---
 
 ## Version
+![GitHub](https://img.shields.io/github/license/biovoxxel/bv3dbox?style=plastic)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/biovoxxel/bv3dbox?include_prereleases&style=plastic)
 
 ---
@@ -56,6 +57,8 @@ If you use this library and its functions to generate and publish results, pleas
 ---
 
 ### Issues
+
+![GitHub issues](https://img.shields.io/github/issues/biovoxxel/bv3dbox?style=plastic)
 
 **REMARK: This is currently still in alpha release stage and should be handled with care when creating results. Please inform me about any [issues](https://github.com/biovoxxel/bv3dbox/issues) you encounter!**
 
