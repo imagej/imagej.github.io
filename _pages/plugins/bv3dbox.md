@@ -24,6 +24,11 @@ Most of the known [BioVoxxel Toolbox](https://github.com/biovoxxel/BioVoxxel-Too
 
 ---
 
+## Version
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/biovoxxel/bv3dbox?include_prereleases&style=plastic)
+
+---
+
 ## Functionalities and Details
 **All functions are described in detail here: [BioVoxxel 3D Box Github page](https://biovoxxel.github.io/bv3dbox/)**
 
