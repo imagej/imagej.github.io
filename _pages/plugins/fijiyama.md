@@ -16,7 +16,7 @@ maven-repo: https://search.maven.org/artifact/io.github.rocsg/fijiyama/
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.rocsg/fijiyama.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.rocsg%22%20AND%20a:%22fijiyama%22)
 [![Downloads](https://img.shields.io/badge/Users%20-+5400%20downloads-orange.svg)](https://img.shields.io/badge)
 
-<i>Current Fijiyama version : Gorgeous Grapevine (last release : March 21<sup>th</sup>, 2020).</i>
+<i>Current Fijiyama version : Handsome Honeysuckle (last release : October 16<sup>th</sup>, 2022).</i>
 
 The plugin **Fijiyama** (Yet Another Matching and Alignment tool for Fiji) is a generic tool for registration and alignment of 3D image series collected from various imaging modalities (MRI, X-rays, Microscopy, Photography, ...).
 
