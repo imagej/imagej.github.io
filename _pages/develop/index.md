@@ -234,7 +234,7 @@ Start with the [ImageJ2 tutorial notebooks](/tutorials/notebooks)!
 {:/}
 
 Also check the Youtube tutorials from the I2K conference channel such as
-    
-    {% include video platform='youtube' id='3SMLgHnpvRI' %}
-    
-    {% include video platform='youtube' id='vokM-yvBx8M' %}
+
+{% include video platform='youtube' id='3SMLgHnpvRI' %}
+
+{% include video platform='youtube' id='vokM-yvBx8M' %}
