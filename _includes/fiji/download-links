@@ -2,22 +2,52 @@
 <div>
 <table>
 <tbody>
-<tr><th colspan="3" style="font-size: large; text-align: center">~ Download Fiji for your OS ~</th></tr>
-<tr>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><img alt="Windows (64-bit)" src="/media/icons/windows.svg" width="129" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip"><b>64-bit</b></a>
-</td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><img alt="macOS" src="/media/icons/macos.png" width="105" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"><b>macOS (x86_64)</b></a>
-</td>
-<td style="text-align: center; vertical-align: top; width: 128px"> <a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><img alt="Linux (64-bit)" src="/media/icons/linux.svg" width="128" height="128"></a><br><a href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"><b>64-bit</b></a>
-</td>
-</tr>
-<tr><th colspan="3" style="text-align: center">Other downloads</th></tr>
-<tr>
-<td style="text-align: center"> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip"><img alt="Windows (32-bit)" src="/media/icons/windows.svg" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">32-bit</a>
-</td>
-<td colspan=2 style="text-align: center">  <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip"><img alt="All platforms (no JRE)" src="/media/icons/fiji.png" width="24" height="24"></a> <a href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">No JRE</a>
-</td>
-</tr>
+  <tr>
+    <th colspan="3" style="font-size: large; text-align: center">~ Download Fiji for your OS ~</th>
+  </tr>
+
+  <tr>
+    <th rowspan="2"><img style="vertical-align:middle;" alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></th>
+    <td>Windows 64-bit</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip">imagej.net (USA)</a>,
+      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-win64.zip">micron.ox.ac.uk (European mirror)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Windows 32-bit</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">imagej.net (USA)</a>,
+      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-win32.zip">micron.ox.ac.uk (European mirror)</a>
+    </td>
+  </tr>
+
+  <tr>
+    <th><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></th>
+    <td>macOS (x86_64)</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip">imagej.net (USA)</a>,
+      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-macosx.zip">micron.ox.ac.uk (European mirror)</a>
+    </td>
+  </tr>
+
+  <tr>
+    <th><img alt="Linux" src="/media/icons/linux.svg" width="24" height="24"></th>
+    <td>Linux (64-bit)</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip">imagej.net (USA)</a>,
+      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-linux64.zip">micron.ox.ac.uk (European mirror)</a>
+    </td>
+  </tr>
+
+  <tr>
+    <th><img alt="Linux" src="/media/icons/fiji.png" width="24" height="24"></th>
+    <td>No JRE</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">imagej.net (USA)</a>,
+      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-nojre.zip">micron.ox.ac.uk (European mirror)</a>
+    </td>
+  </tr>
 </tbody>
 </table>
 </div>
