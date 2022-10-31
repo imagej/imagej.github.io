@@ -11,6 +11,19 @@ pom-url: https://raw.githubusercontent.com/biovoxxel/BioVoxxel-Toolbox/master/Bi
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 
 ------------------------------------------------------------------------
+# How to cite
+### Cite the Toolbox
+If you find those functions helpful and use it to generate results you publish, please consider to cite:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5986130.svg)](https://doi.org/10.5281/zenodo.5986130)
+
+### Cite the Figure Tools
+
+The BioVoxxel Figure Tools can be cited separately from the toolbox plugins as follows:
+
+[![DOI](https://zenodo.org/badge/542074524.svg)](https://zenodo.org/badge/latestdoi/542074524)
+
+------------------------------------------------------------------------
 
 # Extended Particle Analyzer
 
@@ -415,6 +428,4 @@ The Reader can open and read Leica ROI files saved by the LAS software (tested o
 # License
 The BioVoxxel Toolbox project runs under the [BSD-3 License](https://opensource.org/licenses/BSD-3-Clause)
 
-# Citation
 
-[![DOI](https://zenodo.org/badge/240048156.svg)](https://zenodo.org/badge/latestdoi/240048156)
