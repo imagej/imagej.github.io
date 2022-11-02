@@ -232,27 +232,32 @@ A binary 3D image.
 
 #### Parameters
 
--   **Sampling increment**: distance between sample points on each vector; should be less than the pixel spacing.
 -   **Vectors**: number of vectors to sample at each seed point.
+-   **Sampling increment**: distance in pixel widths between sample points on each vector; should be less than 1 (defaults to 1/2.3).
 -   **Skeleton points per ellipsoid**: allows dense or sparse sampling, a value of $$1$$ means that an ellipsoid is sampled at every seed point.
 -   **Contact sensitivity**: how many vectors must touch the background before dilation stops.
 -   **Maximum iterations**: how hard to try to find larger ellipsoids - fitting will stop if no improvement has been made after this number of iterations..
 -   **Maximum drift**: how far the centroid may be displaced from its seed point.
--   **EF image**: stack containing EF values for each point contained by at least one ellipsoid and NaN elsewhere.
--   **Ellipsoid ID image**: stack containing the ID of the biggest ellipsoid at each point, ranked in descending order ($$0$$ is the largest ellipsoid).
--   **Volume image**: image showing the volume of the largest ellipsoid containing that point.
--   **Axis ratio images**: images showing $$a/b$$ and $$b/c$$ ratios foreach point containing at least one ellipsoid and NaN elsewhere.
--   **Flinn peak plot**: plot of $$a/b$$ vs $$b/c$$ weighted by volume, so bright pixels indicate relatively more of the structure has that axis ratio.
--   **Gaussian sigma:** amount to blur the Flinn peak plot - set to $$0$$ for a precise but less 'beautiful' result.
--   **Flinn plot**: unweighted Flinn plot - every ellipsoid is represented by the same sized point regardless of ellipsoid size.
+-   **Repetitions**: run Ellipsoid Factor this many times and averge the result.
+-   **Average over largest n ellipsoids**: EF at each point is calculated as the average of the n largest ellipsoids containing the point.
+-   **Seed points based on distance ridge**: Use the distance ridge from Local Thickness as starting centroids for ellipsoids.
+-   **Threshold for distance ridge**: threshold for distance ridge.
+-   **Seed points on topology-preserving skeletonization**: use a medial axis thinning to find starting centroids for ellipsoids.
+-   **Show Flinn plots**: Display the ellipsoids' axis ratios ($$a/b$$ and $$b/a$$) on Cartesian axes. Volume-weighted (pixel value represents volume of ellipsoids with that characteristic) and unweighted (each ellipsoids represented by a pixel) are provided. Contrast stretching and Gaussian blurring may be necessary to visualise well the weighted Flinn plot.
+-   **Show algorithm convergence**: show algorithm convergence
+-   **Show verbose output images**: Display image stacks containing 3D maps of
+    - seed points
+    - ellipsoid axis ratios, $$a/b$$ and $$b/c$$.
+    - ellipsoid axis lengths, $$a$$, $$b$$, $$c$$.
+    - ellipsoid ID
+    - ellipsoid volume
 
 #### Results
-
--   **EF image**: stack containing EF values. NaN (not a number) values are used in the background. Summary statistics can be obtained by running {% include bc path="Analyze | Histogram" %}
--   **Short-Mid image**: stack containing the $$a/b$$ ratios
--   **Mid-Long image**: stack continuing the $$b/c$$ ratios
--   **Volume image**: stack containing ellipsoid volumes
--   **Max id image**: stack containing the ID of the largest ellipsoid at each point; IDs relate to the sort order based on volume, so ID = 0 is the largest ellipsoid. $$-1$$ is foreground and background is labelled with a large negative number.
+-   **Median, Max and Min EF**: summary statistics logged to the BoneJ results table.
+-   **Filling percentage**: performance parameter indicating how well fitted the structure is by ellipsoids. 100% indicates complete filling, but may occur because ellipsoids have burst out of structural boundaries due to poor settings.
+-   **number of ellipsoids**: how many ellipsoids completed fitting.
+-   **EF image**: stack containing EF values. NaN (not a number) values are used in the background.
+-   **Verbose images**: as listed above, may be useful for debugging and validation studies.
 -   **Flinn diagram**: plot of $$a/b$$ versus $$b/c$$ values present in the volume
 -   **Weighted Flinn plot**: Flinn diagram with peaks of intensity proportional to volume occupied by each ($$a/b$$, $$b/c$$) ratio
 

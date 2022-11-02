@@ -115,7 +115,7 @@ Click on the {% include button label="Advanced mode" %} button and set the view 
 
 -   If your have never uploaded your plugins, select *View local-only files*
 
-**For .ijm macro**, the files must be located in the *macro* or *scripts* folder (or any subfolder in it).
+**For .ijm macros**, the files should be in an appropriately named *plugins* subfolder. Their parent folder will become the entry name in the `Plugins` menu.
 
 **For .py scripts**, they can be either in the *Jars/Lib* or *scripts* folder (or any subfolder).
 
@@ -125,11 +125,11 @@ Out of those folder, the updater might not see them.
 
 In this case, the plugin we'll be uploading is contained in *A\_Jolly\_Useful\_Plugin.jar*.
 
-Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|Left Click' %}) in any column, for the context menu and select *Upload to <update site name>*.
+Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|Left Click' %}) in any column, for the context menu and select *Upload to &lt;update site name&gt;*.
 
 <img src="/media/update-sites/upload-to-update-site.png" width="770"/>
 
-{% include notice icon="info" content='The *Upload to <update site name>* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
+{% include notice icon="info" content='The *Upload to &lt;update site name&gt;* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
 ### Modifying Dependencies
 

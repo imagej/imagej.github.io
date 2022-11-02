@@ -30,17 +30,17 @@ The plugin works with time/z-stacks.
 
 Launch the detection by choosing {% include bc path="Plugins|ComDet|Detect Particles" %}.
 
-http://katpyxa.info/software/ComDet/ComDet_open_v.0.5.0.png
+![](https://katpyxa.info/software/ComDet/ComDet_open_v.0.5.0.png)
 
 ## Simple detection (1 channel)
 
 If the image is not multi-channel image, the following dialog window will appear:
 
-http://katpyxa.info/software/ComDet/ComDet_detection_only_v0.5.0.png
+![](https://katpyxa.info/software/ComDet/ComDet_detection_only_v0.5.0.png)
 
 Specify estimated particles size and intensity threshold (particle brightness) and press OK. To have good detection usually you need to play with parameters and see how it goes. Checkbox "*Preview...*" allows to see detection on the current picture and simplifies this task. The "ROI shape" option allows you to choose, if you want your detection to be displayed as "Ovals" or "Rectangles".
 
-http://katpyxa.info/software/ComDet/ComDet_preview_button.gif
+![](https://katpyxa.info/software/ComDet/ComDet_preview_button.gif)
 
 By default, plugin looks only for particles of specified size. If you check "*Include larger particles?*" box, it will also try to quantify bigger spots.
 
@@ -50,7 +50,7 @@ If you choose *Add to ROI Manager* option ("All particles"), plugin will add det
 
 After pressing OK plugin runs and add ovals/rectangles in overlay on top of detected particles.
 
-http://katpyxa.info/software/ComDet/ComDet_detection_before_after_v2.png
+![](https://katpyxa.info/software/ComDet/ComDet_detection_before_after_v2.png)
 
 Also it will provide you *Results* table containing particles' coordinates (see below) and *Summary* table. I recommend to play with parameters to get a nice detection result.
 
@@ -58,17 +58,17 @@ Also it will provide you *Results* table containing particles' coordinates (see 
 
 If you want detection to be performed in some specific region instead of whole image, select some ROI using any ImageJ ROI selection tools **before** launching plugin:
 
-http://katpyxa.info/software/ComDet/ComDet_ROI_before_v2.png
+![](https://katpyxa.info/software/ComDet/ComDet_ROI_before_v2.png)
 
 In this case only particles in that ROI will be detected (also supported in "*Preview..*" mode):
 
-http://katpyxa.info/software/ComDet/ComDet_ROI_after_v2.png
+![](https://katpyxa.info/software/ComDet/ComDet_ROI_after_v2.png)
 
 ## Detection and colocalization in multi-channel image (two or more channels)
 
 If your image contains multiple channels then after pressing *Detect Particles* the dialog will look differently:
 
-http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v0.5.0.png
+![](https://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v0.5.0.png)
 
 First, the plugin will show the window above with general setup and later it will proceed with a series of parameter windows, specifying detection parameters for each channel. To get colocalization analysis you need to check "*Calculate colocalization?*" box. If you uncheck it, then only detection will be performed.
 
@@ -78,13 +78,13 @@ There is an additional parameter in case of colocalization: maximum distance bet
 
 After you press "OK", a series of windows for detection parameters for each channel will pop-up:
 
-http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v0.5.0_multich.png
+![](https://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v0.5.0_multich.png)
 
 Take a notice that "*Preview...*" button in this case will only show detection, it will not mark/analyze colocalization.
 
 After detection is finished ComDet marks detected particles with ovals/rectangles of their own channel (LUT) color and colocalized particles in overlapping color:
 
-http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_mark_v2.png
+![](https://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_mark_v2.png)
 
 Also *Add to ROI Manager* option is available. ROIs will have names in the format of ind(detection\# in Results table)\_ch(\#channel)\_sl(\#slice)\_fr(\#frame). You can add all detected particles or only those that colocalize.
 
@@ -94,7 +94,7 @@ Also *Add to ROI Manager* option is available. ROIs will have names in the forma
 
 Here is example of *Results* table (*Summary* table is kind of self-explanatory).
 
-http://katpyxa.info/software/ComDet/Results_v.0.5.0.png
+![](https://katpyxa.info/software/ComDet/Results_v.0.5.0.png)
 
 Columns are:
 

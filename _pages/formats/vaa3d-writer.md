@@ -1,6 +1,7 @@
 ---
 title: Vaa3d Writer
 categories: [Import-Export]
+nav-links: true
 artifact: sc.fiji:Vaa3d_Writer
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Vaa3d Reader
 categories: [Import-Export]
+nav-links: true
 artifact: sc.fiji:Vaa3d_Reader
 ---
 

@@ -2,6 +2,7 @@
 title: Save as animated gif
 section: Learn:File Formats
 categories: [Import-Export]
+nav-links: true
 artifact: sc.fiji:IO_
 name: Save as animated gif
 ---

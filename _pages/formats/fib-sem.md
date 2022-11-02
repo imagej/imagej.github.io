@@ -2,6 +2,7 @@
 title: FIBSEM importer
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
+nav-links: true
 artifact: sc.fiji:IO_
 name: FIBSEM importer
 ---

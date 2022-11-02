@@ -31,7 +31,7 @@ For versions of OMERO prior to 5.5, OME's plugin for ImageJ was known as **OMERO
 
 The [ImageJ2 team](/people) has developed [ImageJ-OMERO](https://github.com/imagej/imagej-omero), a SciJava-based library for bidirectional interoperability between [ImageJ2](/software/imagej2) and OMERO, with plugins to upload and download images, tables, and regions of interest to and from OMERO, and support for running ImageJ scripts on the OMERO server side.
 
-{% include notice icon="warning" content="Unfortunately, ImageJ-OMERO has not yet been updated to work with OMERO 5.5 and newer. This work is in progress; follow [imagej/imagej-omero#107](https://github.com/imagej/imagej-omero/pull/107) for details." %}
+ImageJ-OMERO is accessed via a collection of `OMERO x.x` [update sites](/list-of-update-sites) specific to the OMERO server version you are connecting to.
 
 ### GReD/MICA plugins
 

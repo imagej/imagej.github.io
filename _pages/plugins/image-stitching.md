@@ -208,7 +208,7 @@ This option exists, but is disabled by default as it is likely only required in 
 
 -   {% include bc path='File | New | Script'%}
 -   {% include bc path='Language | Beanshell'%}
--   type the following line (without the 001)
+-   type the following line:
 
 ``` java
 plugin.Stitching_Grid.seperateOverlapY = true;
@@ -224,7 +224,7 @@ You can change the fraction of the area that is blended using the scripting lang
 
 -   {% include bc path='File | New | Script'%}
 -   {% include bc path='Language | Beanshell'%}
--   type the following line (without the 001) to change it to e.g. 10%
+-   type the following line to change it to e.g. 10%:
 
 ``` java
 mpicbg.stitching.fusion.BlendingPixelFusion.fractionBlended = 0.1;
@@ -242,7 +242,7 @@ You can activate the option using the **script editor**:
 
 -   {% include bc path='File | New | Script'%}
 -   {% include bc path='Language | Beanshell'%}
--   type the following line (without the 001):
+-   type the following line:
 
 ``` java
 mpicbg.stitching.GlobalOptimization.ignoreZ = true;

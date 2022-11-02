@@ -1,8 +1,11 @@
 ---
-mediawiki: SNT:_FAQ
 title: SNT › FAQ
 nav-links: true
 nav-title: FAQ
+artifact: org.morphonets:SNT
+icon: /media/icons/snt.png
+forum-tag: snt
+update-site: Neuroanatomy
 ---
 
 ## General
@@ -38,19 +41,21 @@ When SNT is compiled, a [suite of tests](https://github.com/morphonets/SNT/tree/
 
 ### What is a SWC file?
 
+<span id="swc"></span>
 It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose *lingua franca* of a neuron's three dimensional structure. It is described in more detail [here](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) and [here](https://neuroinformatics.nl/swcPlus/). SNT supports all known variants of the format including [ESWC](https://www.nature.com/articles/sdata2017207) and [SWC+](https://neuroinformatics.nl/swcPlus/). The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a {% include wikipedia title="Adobe SWC file" %} used by Adobe.
 
 ### In which format should I save my tracings: TRACES or SWC?
 
+<span id="file-format"></span>
 When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
 
-|                                                   | SWC                                                                                                                                  | TRACES                                                                               |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| No. reconstructions / file                        | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                            |
-| Image metadata                                    | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                           |
-| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                               |
-| Format                                            | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))          |
-| Presence                                          | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
+|                                              | SWC                                                                                                                                  | TRACES                                                                           |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| No. reconstructions / file                   | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                        |
+| Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                       |
+| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                           |
+| Format                                       | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))           |
+| Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
 
 ### How do I (batch) convert TRACES to SWC?
 
@@ -58,7 +63,7 @@ In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|S
 
 ### How can I improve SNT documentation?
 
-[Create an account](/editing#new-accounts) on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable\!
+Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!
 
 ## Tracing
 
@@ -72,7 +77,7 @@ Righ-click on the image canvas and select *Pause SNT* from the contextual menu. 
 
 ### Is there a way to process one image after another in a fast way?
 
-Yes. Have a look at these [detailed instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
+Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
 
 ### How can I import an image sequence into SNT?
 

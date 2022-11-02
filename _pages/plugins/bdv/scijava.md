@@ -212,7 +212,7 @@ Run both scripts consecutively:
                     "output_mode", "Add To Bdv").get()
     }
 
-#### IJ1 Macro Language
+#### ImageJ Macro Language
 
 Opens blobs and deforms it and append it in BigDataViewer:
 

@@ -16,6 +16,8 @@ BTrack is a TrackMate detector for tracking growing ends of tissue branches usin
 4.  Click *Close* and then click *Apply changes*.
 5.  Restart Fiji.
 6.  The detector would show up in the drop down menu list of TrackMate.
+7.  After the detection, any of the TrackMate tracking algorithms can be used for [tracking](https://imagej.net/plugins/trackmate/#single-particle-tracking) the skeleton end points.
+8.  Track analysis post tracking can be done using all the functionality available in [TrackMate](https://imagej.net/plugins/trackmate/#track-analysis).
 
 ## Usage
 
@@ -55,7 +57,7 @@ All the usual tracking, track editing and saving options that are provided by Tr
 
 ## Authors
 Lead programmer, Mantainer: {% include person id='kapoorlab' %}
-
+Contributor: {% include person id='claudiacarabana' %}
 ## References
 
 [^1]: J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March

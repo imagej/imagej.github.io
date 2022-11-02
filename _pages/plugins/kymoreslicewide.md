@@ -24,19 +24,19 @@ You can use ImageJ's *native* **embedded** characteristics of the line/curve, li
 Plugin automatically picks up your choice of line selection from ImageJ and corrects for its length.  
 Just use the one you need.
 
-![External image](http://katpyxa.info/software/KymoResliceWide/line_selection2.png)
+![External image](https://katpyxa.info/software/KymoResliceWide/line_selection2.png)
 
 ### Line width
 
 Define the width of line using double click on the line selection tool in ImageJ
 
-![External image](http://katpyxa.info/software/KymoResliceWide/line_width2.png)
+![External image](https://katpyxa.info/software/KymoResliceWide/line_width2.png)
 
 ### Parameters
 
 After that the window showing kymograph parameters will pop-up:
 
-![External image](http://katpyxa.info/software/KymoResliceWide/choice2.png)
+![External image](https://katpyxa.info/software/KymoResliceWide/choice2.png)
 
 Where following options are available (in order):
 

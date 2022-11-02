@@ -11,13 +11,17 @@ team-maintainer: 'Romain Fernandez'
 source-url: https://github.com/Rocsg/FijiRelax
 ---
 
+## Documentation and latest stable build
+[![javadoc](https://javadoc.io/badge2/io.github.rocsg/fijirelax/javadoc.svg)](https://javadoc.io/doc/io.github.rocsg/fijirelax)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.rocsg/fijirelax.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.rocsg%22%20AND%20a:%22fijirelax%22)
 
-
+## Summary
 FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-echo spin-echo sequences. This work was supported by the French Ministry of Agriculture, France AgriMer, CNIV and IFV, within VITIMAGE and VITIMAGE-2024 projects (program Plan National Dépérissement du Vignoble). This tools is developed in the context of :
 - the [Vitimage 1](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage) and [Vitimage 2024](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage-2024) projects.
 - the [Aplim](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) flagship project.
 
-
+Developer documentation:
+[FijiRelax latest javadoc](https://javadoc.io/doc/io.github.rocsg/fijirelax/latest/index.html)
  
 ## Plugin features
 

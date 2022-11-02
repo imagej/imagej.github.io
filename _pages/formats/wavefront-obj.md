@@ -2,6 +2,7 @@
 title: Wavefront .OBJ ...
 name: "ExportMesh\_"
 dev-status: "stable"
+nav-links: true
 artifact: sc.fiji:VIB_
 source-url: https://github.com/fiji/VIB/blob/master/src/main/java/marchingcubes/ExportMesh_.java
 ---

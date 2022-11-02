@@ -12,7 +12,7 @@ doi: 10.1101/2021.09.03.458852
 
 Please note that TrackMate is available through Fiji, and is based on several publications. If you use it successfully for your research **please be so kind as to cite our work**:
 
-{% include citation doi='10.1101/2021.09.03.458852' %}
+{% include citation doi='10.1038/s41592-022-01507-1' %}
 
 and / or
 

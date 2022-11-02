@@ -32,7 +32,7 @@ Thomas Boudier ![](/media/emailboudier.png), [Academia Sinica](https://www.sinic
 
 <!-- -->
 
--   [3D Segmentation](https://imagejdocu.list.lu/plugin/segmentation/3d_spots_segmentation/start) (iterative thresholding, spots segmentation, ...)
+-   3D Segmentation (iterative thresholding, spots segmentation, ...)
 
 **Object based co-localization and distance analysis**
 
@@ -88,9 +88,9 @@ choose a threshold value
 
 Filter objects by size and remove objects from image edges is possible
 
-\- Spot segmentation method : a tutorial for this method is found [here](https://imagejdocu.list.lu/plugin/segmentation/3d_spots_segmentation/start)
+\- Spot segmentation method : a tutorial for this method is found [here](https://mcib3d.frama.io/3d-suite-imagej/plugins/Segmentation/Custom/3D-Spots-Segmentation/)
 
-\- Iterative segmentation method : a tutorial for this method is found [here](https://imagejdocu.list.lu/plugin/segmentation/3d_spots_segmentation/start)
+\- Iterative segmentation method : a tutorial for this method is found [here](https://mcib3d.frama.io/3d-suite-imagej/plugins/Segmentation/3D-Iterative-Segmentation/)
 
 \- Filter objects by size is possible
 

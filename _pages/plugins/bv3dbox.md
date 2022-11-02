@@ -24,6 +24,12 @@ Most of the known [BioVoxxel Toolbox](https://github.com/biovoxxel/BioVoxxel-Too
 
 ---
 
+## Version
+![GitHub](https://img.shields.io/github/license/biovoxxel/bv3dbox?style=plastic)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/biovoxxel/bv3dbox?include_prereleases&style=plastic)
+
+---
+
 ## Functionalities and Details
 **All functions are described in detail here: [BioVoxxel 3D Box Github page](https://biovoxxel.github.io/bv3dbox/)**
 
@@ -31,15 +37,6 @@ Most of the known [BioVoxxel Toolbox](https://github.com/biovoxxel/BioVoxxel-Too
 
 ## Installation
 The BioVoxxel 3D Box are distributed via the [BioVoxxel 3D Box (bv3dbox) update site](https://imagej.github.io/list-of-update-sites/)
-
----
-
-### Dependencies (ImageJ update sites)
-The following update sites need to be minimally active to be able to use all functionalities of the BioVoxxel 3D Box
-
-* CLIJ2
-* CLIJx
-* 3D ImageJ Suite
 
 ---
 
@@ -51,6 +48,8 @@ If you use this library and its functions to generate and publish results, pleas
 ---
 
 ### Issues
+
+![GitHub issues](https://img.shields.io/github/issues/biovoxxel/bv3dbox?style=plastic)
 
 **REMARK: This is currently still in alpha release stage and should be handled with care when creating results. Please inform me about any [issues](https://github.com/biovoxxel/bv3dbox/issues) you encounter!**
 

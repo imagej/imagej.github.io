@@ -6,7 +6,7 @@ categories: [Uncategorized]
 
 ## Download
 
-The Radial Symmetry plugin can be downloaded from the [update site](http://sites.imagej.net/milkyklim). After that it will appear in the 'Plugins' menu under 'Radial Symmetry Localization'.
+The Radial Symmetry plugin can be downloaded from the [update site](http://sites.imagej.net/RadialSymmetry). After that it will appear in the 'Plugins' menu under 'Radial Symmetry Localization'.
 
 The source code is available on Github, please, also post feature requests & bug reports there.
 

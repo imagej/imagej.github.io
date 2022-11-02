@@ -2,13 +2,13 @@
 title: 3D ImageJ Suite
 categories: [3D, Analysis, Filtering, Segmentation, Mathematical Morphology]
 name: 3D ImageJ Suite
-website: https://imagejdocu.list.lu/plugin/stacks/3d_ij_suite/start
+website: https://mcib3d.frama.io/3d-suite-imagej/
 project: /software/imagej
 license-label: GPL/CeCILL
 license-url: https://cecill.info/index.en.html
-source-url: https://github.com/mcib3d/mcib3d-core
+source-url: https://framagit.org/mcib3d/mcib3d-core
 release-date: 2019 Oct 30
-release-version: V3.96
+release-version: 4.0.93
 update-site: 3D ImageJ Suite
 dev-status: stable, active
 support-status: supported
