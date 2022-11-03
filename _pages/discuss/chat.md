@@ -55,30 +55,8 @@ Several ImageJ-related projects have channels on the [Image.sc Zulip instance](h
 | ![](/media/icons/scijava.png){:width="24"} | [SciJava](/libs/scijava)                     | `#SciJava`    |
 |                                            | [3D ImageJ Suite](/plugins/3d-imagej-suite/) | `#3D Suite`   |
 
-## Gitter
+## Previous chat solutions
 
-The {% include wikipedia title='Gitter' text='Gitter' %} chat service is how developers of [SciJava](/libs/scijava)-based software have been discussing day-to-day issues for the past several years. You can participate, too: all you need is either a [GitHub](https://github.com/) or [Twitter](https://twitter.com/) account. Advantages of Gitter (compared to IRC) include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history. But it seems the community is trending more toward Zulip (see above), so it is not clear for how much longer the Gitter rooms will stay active.
+**Gitter.** For several years, developers of [SciJava](/libs/scijava)-based software discussed day-to-day development issues using the {% include wikipedia title='Gitter' text='Gitter' %} chat service. But these Gitter chat rooms are no longer actively monitored.
 
-| Logo                                       | Project                       | Chat rooms                                        |
-|--------------------------------------------|-------------------------------|---------------------------------------------------|
-| ![](/media/icons/imagej2.png){:width="24"} | [ImageJ2](/software/imagej2)  | [imagej](https://gitter.im/orgs/imagej/rooms)     |
-| ![](/media/icons/fiji.png){:width="24"}    | [Fiji](/software/fiji)        | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| ![](/media/icons/knime.svg){:width="24"}   | [KNIME](/software/knime)      | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
-| ![](/media/icons/imglib2.png){:width="24"} | [ImgLib2](/libs/imglib2)      | [imglib](https://gitter.im/orgs/imglib/rooms)     |
-| ![](/media/icons/scifio.png){:width="24"}  | [SCIFIO](/libs/scifio)        | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| ![](/media/icons/scijava.png){:width="24"} | [SciJava](/libs/scijava)      | [scijava](https://gitter.im/orgs/scijava/rooms)   |
-
-## IRC
-
-Long ago, some community members frequented {% include wikipedia title='Internet Relay Chat' text='IRC' %} on [irc.freenode.net](http://freenode.net/), in the following chat rooms:
-
-| Channel       | Description                                                         |
-|---------------|---------------------------------------------------------------------|
-| `#imagejdev`  | Core [ImageJ2](/software/imagej2) development discussion.           |
-| `#fiji-devel` | [Fiji](/software/fiji) user and developer discussion and questions. |
-
-Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
-
-But active core developers of ImageJ-related projects have not monitored these rooms for many years, and since the [Freenode "hostile takeover" of 2021](https://en.wikipedia.org/wiki/Freenode), the rooms might not even exist anymore.
-
-Chat logs from these channels can be downloaded from [here](https://code.imagej.net/irc-logs/).
+**IRC.** Before that, some community members frequented {% include wikipedia title='Internet Relay Chat' text='IRC' %} on [irc.freenode.net](http://freenode.net/) in the `#imagejdev` and `#fiji-devel` chat rooms. But active core developers of ImageJ-related projects have not monitored these rooms for many years, and since the [Freenode "hostile takeover" of 2021](https://en.wikipedia.org/wiki/Freenode), the rooms might not even exist anymore. Chat logs from these channels can be downloaded from [here](https://code.imagej.net/irc-logs/).
