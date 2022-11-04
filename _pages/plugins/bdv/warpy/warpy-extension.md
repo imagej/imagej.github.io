@@ -9,7 +9,13 @@ This page documents a way to register whole slide images in Fiji and analyze the
 
 If you are registering serial sections, you can modify the registration parameters in order to have a match at the tissue level instead of at a cellular/subcellular level.
 
-# Installation - Option 1 - Automated procedure with bash scripts
+# Videos tutorials
+
+[Playlist](https://www.youtube.com/watch?v=cgRA9NZ-AOo&list=PL2PJpdamvnti8PqyMdcezGLeAtH6LSy69)
+
+# Installation 
+
+## Option 1 - Automated procedure with bash scripts
 
 This is an experimental install procedure which is performing all the steps detailed in the Complete procedure below, but with bash scripts. It is the one explained in the video tutorial:
 
@@ -33,31 +39,31 @@ This is an experimental install procedure which is performing all the steps deta
 {% include notice icon="warning"
   content="On Mac, If you get an error message, please [grant the terminal application with full disk access](https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/)" %}
 
-# Installation - Option 2 - Manual procedure
+## Installation - Option 2 - Manual procedure
 
-## ImageJ / Fiji
+### ImageJ / Fiji
 
-### PTBIOP update site
+#### PTBIOP update site
 
 Enable the [PTBIOP](https://imagej.github.io/update-sites/following) update site, then restart Fiji.
 
-### Elastix  - To enable automated registrations capabilities
+#### Elastix  - To enable automated registrations capabilities
 - Download the [latest release of elastix for your OS](https://github.com/SuperElastix/elastix/releases/tag/5.0.1). This documentation has been tested for elastix 5.0.1.
 - Unzip it somewhere convenient ( `C` drive on windows, in `Applications` for Mac )
 
-#### Windows
+##### Windows
 
 For windows users, you also need to install [Visual C++ redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist), you'll most probably need `vc_redist.x64.exe`
 
-#### Mac
+##### Mac
 
 Fiji will be calling the elastix executables, which are recognized as ‘unknown developers’ by Mac OS. Thus you need to [make security exceptions for both elastix and transformix](https://support.apple.com/en-hk/guide/mac-help/mh40616/mac) to avoid clicking indefinitely on the OS warning messages.
 
-#### Linux (not tested)
+##### Linux (not tested)
 
 Nothing particular should be required for linux system. If it works, please contact the BIOP and let us know!
 
-### Indicate `elastix` and `transformix` executable location in Fiji
+#### Indicate `elastix` and `transformix` executable location in Fiji
 
 - Execute {% include bc path="Plugins|BIOP|Set and Check Wrappers"%} then indicate the proper location of the executable files 
 
@@ -69,12 +75,12 @@ Nothing particular should be required for linux system. If it works, please cont
 
 Once elastix is installed, you can run [the following script](https://gist.githubusercontent.com/NicoKiaru/b91f9f3f0069b765a49b5d4629a8b1c7/raw/0744676341b16ee4f37ed203130f0e0b761c08c8/TestRegister.groovy) in Fiji to test elastix functionality. Save the file with a `.groovy` extension, open it Fiji, and run it.
 
-## QuPath
+### QuPath
 
 * Install the [latest QuPath version (0.3+)](https://qupath.github.io/)
 * Install the [QuPath Warpy extension by following its readme](https://github.com/BIOP/qupath-extension-warpy).
 
-# WSI registration  - step by step procedure
+# Step by step registration procedure
 
 To follow the WSI registration procedure, a demo dataset, consisting of  a fluorescent image which can be registered to a RGB H-DAB image, can be [downloaded from Zenodo](https://doi.org/10.5281/zenodo.5674521). Only the files with the `.ome.tiff` extensions are necessary.
 
@@ -302,9 +308,11 @@ Transformation file successfully written to QuPath project: Path\id_moving\trans
 
 This means that the result of the registration has been stored as a file into your QuPath project. It can then be used from within QuPath to transfer annotations and or detections from one slide to another one, as explained in the next section.
 
-NOTE: the transformation is stored as a json file in the data entry folder of the fixed moving image. It is named by convention `transform_{i}_{j}.json` where `i` and `j` are the entry ids of the fixed and the the moving image in the QuPath project.
+{% include notice icon="info"
+  content="the transformation is stored as a json file in the data entry folder of the fixed moving image. It is named by convention `transform_{i}_{j}.json` where `i` and `j` are the entry ids of the fixed and the the moving image in the QuPath project." %}
 
-## Editing a previous registration
+
+# Editing a previous registration
 
 Once the registration has been performed, you may have second thoughts regarding a region which has not been registered well enough. If that's the case, you can go back to Fiji, re-open your QuPath project, and run the command
 `QuPath - Edit Warpy Registration`:
@@ -315,7 +323,7 @@ You will need to select the moving and fixed image (a warning message is display
 
 Running this command will launch the BigWarp interface, in which you can modify, remove, or add new landmarks. Click the appropriate button in the BigWarp bigdataviewer window in order to save and override your previous registration (which is lost, unless you save the BigWarp landmark file).
 
-## Analysis in QuPath
+# Analysis in QuPath
 
 From within QuPath, annotations and or detections can be transferred within registered images, one way or another. Indeed, provided transformations are regular enough, they are invertible.
 
@@ -366,20 +374,33 @@ The above scripts consists of two parts:
 
 - transfered annotations/detections does not contain the standard measurements provided by QuPath (fluorescent intensity / DAB value, etc.) In order to add the measurements on the target image, the function `Warpy.addIntensityMeasurements` can be called
 
-## Troubleshooting
+# Saving the registered image
 
-Something's wrong in this documentation ? Please post your issue or question in the [image.sc forum](forum.image.sc).
+You have several options, but please be aware that computing the fully transformed image is not as safe as working with transfered ROIs. The image can be modified significantly.
 
-## References (papers)
+{% include notice icon="warning"
+  content="Computing a fully transformed image, created with ImageCombinerWarpy or with the Fiji Warpy exporter, is a transformation over the pixel contents of the original images! The pixel difference between the original and the transformed image depends on the transformation, the used interpolation as well as the downsampling used in the current viewer. This must be taken into account in all analysis steps performed on such transformed images." %}
 
-- [Fiji](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html)
-- [QuPath](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5715110/) 
-- [BigWarp](http://ieeexplore.ieee.org/document/7493463/)
-- [Elastix (1)](http://dx.doi.org/10.1109/TMI.2009.2035616) [Elastix (2)](http://dx.doi.org/10.3389/fninf.2013.00050)
-- [BigDataViewer](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html)
+## With Image Combiner Warpy
 
-## References (github)
+This requires using QuPath and the Image Combiner capabilities. For more informations, go to
+[export combined image to OME-TIFF.](/plugins/bdv/warpy/warpy-image-combiner-additional-info#project-entry--image-file)
 
-The code to perform this workflow is splitted in several parts:
+## With Warpy in Fiji
 
-[Qupath warpy extension](https://github.com/BIOP/qupath-extension-warpy) and several repositories for the Fiji side. On the Fiji side, the main components are [Bigdataviewer-playground](https://github.com/bigdataviewer/bigdataviewer-playground) for the management of multiple sources and [Bigdataviewer-biop-tools](https://github.com/BIOP/bigdataviewer-biop-tools).
+In Fiji, you can type ‘export warpy’ into Fiji’s search bar and you should get a window like this:
+
+{% include img name="Warpy - export choose images" src="/media/plugins/bdv/warpy/warpy-fiji-export-window0.png" %}
+
+After clicking ok, you’ll get a second window with writing options:
+
+{% include img name="Warpy - export options" src="/media/plugins/bdv/warpy/warpy-fiji-export-window1.png" %}
+
+And if everything’s right, you’ll get a progress bar during image writing (click on the bottom right square of Fiji’s main bar):
+
+{% include img name="Warpy - export progress bar" src="/media/plugins/bdv/warpy/warpy-fiji-export-progress.png" %}
+
+
+
+
+
