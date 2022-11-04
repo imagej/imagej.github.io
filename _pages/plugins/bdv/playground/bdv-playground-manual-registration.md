@@ -1,5 +1,5 @@
 ---
-title: Manual Registration with BigDataViewer Playground
+title: Tuto - Manual Registration
 artifact: sc.fiji:bigdataviewer-playground
 nav-links: true
 toc: true
@@ -12,12 +12,12 @@ toc: true
 
 {% include notice icon="warning"
   content="There is a bug : do not show the cross overlay to follow this tutorial." %}
-Please follow [these instructions](/plugins/bdv/playground) to create a synchronized ortho bdv/bvv viewer. In short:
-* [Create a bdv ortho viewer with synchronized states](/plugins/bdv/playground#using-bigdataviewer-orthoviewer)
+Please follow [these instructions](/plugins/bdv/playground/bdv-playground-visualize) to create a synchronized ortho bdv/bvv viewer. In short:
+* [Create a bdv ortho viewer with synchronized states](/plugins/bdv/playground/bdv-playground-visualize#using-bigdataviewer-orthoviewer)
 
 ## OPTIONAL link a BVV Ortho viewer, possible only with 16 bits data
-* [Create a bvv ortho viewer with synchronized states](/plugins/bdv/playground#using-bigvolumerviewer-orthoviewer)
-* [Synchronize the front view of the bvv and bdv ortho viewer](/bdv/playground#synchronization-of-viewers-location)
+* [Create a bvv ortho viewer with synchronized states](/plugins/bdv/playground/bdv-playground-visualize#using-bigvolumerviewer-orthoviewer)
+* [Synchronize the front view of the bvv and bdv ortho viewer](/plugins/bdv/playground/bdv-playground-visualize#synchronization-of-viewers-location)
 * Synchronize the states between the front view of the bvv and bdv ortho viewer
 
 You should get these two windows:
@@ -25,7 +25,7 @@ You should get these two windows:
 
 # Open the xml bdv dataset
 
-Proceed as [explained here](/plugins/bdv/playground#open-a-bigdataviewer-xml-dataset).
+Proceed as [explained here](/plugins/bdv/playground/bdv-playground-open-dataset).
 
 If you need to register multiple images between them, you can add them in one viewer with a right-click in the tree view or 
 * with {% include bc path="Plugins|BigDataViewer-Playground|BDV|BDV - Show Sources"%} for bdv
