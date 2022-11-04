@@ -41,14 +41,28 @@ It consists of two components:
 
 {% include video platform="youtube" id="ckqdrx0OvsI" aspect="1:1" %}
 
+# Troubleshooting
 
-# Code
+Something's wrong in this documentation ? Please post your issue or question in the [image.sc forum](forum.image.sc).
 
-All code of the Warpy workflow can be found within these repositories:
+List of solved issues encountered and reported in the forum:
 
-* [bigdataviewer-playground](https://github.com/bigdataviewer/bigdataviewer-playground)
-* [bigdataviewer-biop-tools](https://github.com/BIOP/bigdataviewer-biop-tools)
-* [qupath-extension-warpy](https://github.com/BIOP/qupath-extension-warpy)
+[https://forum.image.sc/search?q=warpy%20status%3Asolved](https://forum.image.sc/search?q=warpy%20status%3Asolved)
+
+# References
+
+## Papers
+- [Fiji](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html)
+- [QuPath](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5715110/) 
+- [BigWarp](http://ieeexplore.ieee.org/document/7493463/)
+- [Elastix (1)](http://dx.doi.org/10.1109/TMI.2009.2035616) [Elastix (2)](http://dx.doi.org/10.3389/fninf.2013.00050)
+- [BigDataViewer](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html)
+
+## Source code
+
+The code to perform this workflow is splitted in several parts:
+
+[Qupath warpy extension](https://github.com/BIOP/qupath-extension-warpy) and several repositories for the Fiji side. On the Fiji side, the main components are [Bigdataviewer-playground](https://github.com/bigdataviewer/bigdataviewer-playground) for the management of multiple sources and [Bigdataviewer-biop-tools](https://github.com/BIOP/bigdataviewer-biop-tools).
 
 # Legacy
 
