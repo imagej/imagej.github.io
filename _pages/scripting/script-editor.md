@@ -5,7 +5,7 @@ project: /libs/scijava
 artifact: org.scijava:script-editor
 ---
 
-The script editor is an invaluable help when writing scripts in any of the [SciJava](/libs/scijava) framework's supported [languages](/scripting/comparisons).
+The script editor is an invaluable help when writing scripts in any of the [SciJava](/_pages/libs/scijava.md) framework's supported [languages](comparisons.md).
 
 ## Features
 
@@ -19,8 +19,8 @@ Programming
 
 -   Syntax highlighting
 -   Output console
--   Git integration (file being edited must be part of a [Git](/develop/git) repository)
--   Language specific [templates](/scripting/templates)
+-   Git integration (file being edited must be part of a [Git](../develop/git/index.md) repository)
+-   Language specific [templates](templates.md)
 -   Find and replace using regex patterns
 -   Automatic brace highlighting
 -   Line numbers
@@ -28,7 +28,7 @@ Programming
 Language specific tools  
 
 -   Organization of `import` declarations
--   Access to online documentation ([Javadocs](http://javadoc.scijava.org/), [ImageJ Macro Functions](https://imagej.nih.gov/ij/developer/macro/functions.html))
+-   Access to online documentation ([Javadocs](https://javadoc.scijava.org/), [ImageJ Macro Functions](https://imagej.nih.gov/ij/developer/macro/functions.html))
 -   Access to source code in `.jar` files
 
 Interface  
@@ -67,10 +67,10 @@ Note that while the script is running, the window title shows the tell-tale *(Ru
 
 {% include warning/importing-classes %}
 
-You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](/scripting/comparisons).
+You can use all of ImageJ's classes right away. Here is an example that shows a dialog where the user can input a number. For details how to write dialogs in the different scripting languages, see [Scripting comparisons](comparisons.md).
 
 ![](/media/scripting/script-editor-dialog.jpg)
 
 ## Further reading
 
-See the [Scripting overview](/scripting) page for an introduction to scripting, and list of available languages, with links to more documentation.
+See the [Scripting overview](index.md) page for an introduction to scripting, and list of available languages, with links to more documentation.
