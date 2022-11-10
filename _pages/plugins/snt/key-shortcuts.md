@@ -88,11 +88,11 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key key='D' %}        | Toggle <u>D</u>ark Mode |
 | {% include key key='F' %}        | <u>F</u>it View to Visible Objects |
 | {% include key key='L' %}        | <u>L</u>og Scene Details to Console |
-| {% include key key='R' %}        | <u>R</u>eset View |
-| {% include key keys='Shift|R' %} | <u>R</u>eload View |
+| {% include key key='R' %}        | <u>R</u>eset View (1 press) or <u>R</u>eload Scene (double press) |
 | {% include key key='S' %}        | Save <u>S</u>creenshot |
-| {% include key keys='Shift|F' %} | <u>F</u>ull Screen ({% include key key='Esc' %} to exit) |
 | {% include key keys='Shift|C' %} | Toggle <u>C</u>ontrol Panel |
+| {% include key keys='Shift|F' %} | Toggle <u>F</u>ull Screen ({% include key key='Esc' %} can also be used to exit) |
+| {% include key keys='Shift|S' %} | Toggle <u>S</u>tatus Bar |
 | {% include key key='H' %}        | <u>H</u>elp (as Notification) ({% include key key='F1' %} shows Help on a dedicated window) |
 
 ### sciview
