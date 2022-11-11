@@ -6,7 +6,7 @@ categories: [Import-Export]
 nav-links: true
 initial-release-date: "Dec. 9, 2015: First version Ver.1.1.1"
 release-date: "Mar. 17, 2020: Ver.2.3.1"
-team-maintainer: 'OLYMPUS CORPORATION (olympus-imagejplugin at ot.olympus.co.jp)'
+team-maintainer: 'EVIDENT CORPORATION (Contact email address is in preparation)'
 ---
 
 {% include info-box source='The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.' %}
