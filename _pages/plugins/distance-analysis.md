@@ -2,6 +2,7 @@
 mediawiki: Distance_Analysis
 title: Distance Analysis
 categories: [Analysis,Colocalization]
+pom-url: https://raw.githubusercontent.com/JeffGilles/DiAna/master/pom.xml
 ---
 
 ## Distance Analysis (DiAna)
