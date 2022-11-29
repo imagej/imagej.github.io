@@ -10,7 +10,7 @@ team-debuggers: ['@ctrueden', '@elevans', '@gselzer', '@hinerm']
 team-reviewers: ['@ctrueden', '@elevans', '@gselzer', '@hinerm']
 team-support: ['@ctrueden', '@elevans', '@gselzer', '@hinerm']
 team-maintainers: ['@ctrueden', '@elevans', '@hinerm']
-doi: 10.5281/zenodo.5537065
+doi: 10.1038/s41592-022-01655-4
 ---
 
 {% include notice content="This page describes **PyImageJ**, a Python package
@@ -33,10 +33,8 @@ instructions, please see the project page on PyPI:
 
 {% include link-banner url="https://pypi.org/project/pyimagej/" %}
 
-## Citing
+## Publication
 
-To cite PyImageJ, for the moment, you can use:
+To cite PyImageJ, you can use:
 
 {% include citation %}
-
-A PyImageJ paper is forthcoming.
