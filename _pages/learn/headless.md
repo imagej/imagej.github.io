@@ -24,12 +24,16 @@ Please see the [headless scripting guide](/scripting/headless).
 
 ## Running macros in headless mode
 
-To run a *macro* in headless mode, use the `-macro` command line argument along with the `--headless` option, as follows:
+To run a *macro* in headless mode via a command prompt, first open a command prompt in the Fiji.app or ImageJ directory where the .exe (on windows) of ImageJ resides.  Then use the following syntax, with the `-macro` command line argument along with the `--headless` option, as follows:
 
 ```shell
-ImageJ --headless -macro path-to-Macro.ijm
+ImageJ --headless --console -macro path-to-Macro.ijm
 ```
+The `--console` flag is optional, it only ensures that print statements and error messages are shown in the command prompt.    
+If you omit the `--headless` flag, the GUI will open and the macro will be executed.  
+
 If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required *only* when specifying the macro name instead of a path.
+
 
 You can even pass parameters to the macro; e.g.:
 
@@ -51,6 +55,11 @@ eval("script", "System.exit(0);");
 the `getArgument()` is used to grab the parameter string itself, and it is then passed to an IJ command.
 
 {% include notice icon="warning" content='Please note that you will not be able to use [script parameters](/scripting/parameters) with `-macro`. Follow instructions in [Scripting Headless](/scripting/headless) instead.' %}
+
+Some ImageJ commands relying on the GUI do not work in headless mode such as : 
+- `selectWindow("name")`, use `selectImage(title)` instead for images  
+- `Table.Rename("oldTitle", "newTitle")`
+
 
 {% capture historical-note %}
 Headless support was originally a branch in [ImageJA](/libs/imageja); it worked
