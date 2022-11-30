@@ -30,6 +30,9 @@ To run a *macro* in headless mode via a command prompt, first open a command pro
 ImageJ --headless --console -macro path-to-Macro.ijm
 ```
 The `--console` flag is optional, it only ensures that print statements and error messages are shown in the command prompt.    
+However, **it also has a side effect of preventing the command prompt from "returning" after execution**, in effect giving the impression that the code is hanging. This is especially not desirable if calling ImageJ from an external program : the external program would just wait indefinitly for the execution to terminate.   
+**An external program can still access the printed statements without the `--console` flag**, by redirecting the standard/error output of the process (ImageJ.exe).  
+
 If you omit the `--headless` flag, the GUI will open and the macro will be executed.  
 
 If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required *only* when specifying the macro name instead of a path.
