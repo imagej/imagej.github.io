@@ -22,6 +22,35 @@ The library implements several functionalities that were missing in ImageJ, and 
 
 -   **Binary / label images utilities** for removing or keeping largest connected component, perform size opening, fill holes, kill borders...
 
+
+## Installation
+
+-   In [ImageJ 1.x](/software/imagej), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
+-   In [ImageJ2](/software/imagej2) (including [Fiji](/software/fiji)), you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins site to your list of update sites:
+    1.  Select {% include bc path='Help | Update...' %} from the menu to start the [updater](/plugins/updater).
+    2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
+    3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
+    4.  Click *Apply changes* and restart ImageJ.
+
+
+## Documentation
+
+Each [released version of MorphoLibJ](https://github.com/ijpb/MorphoLibJ/releases) comes with a [User Manual in PDF format](https://github.com/ijpb/MorphoLibJ/releases/download/v1.4.0/MorphoLibJ-manual-v1.4.0.pdf).
+
+The main source code directory is on GitHub under [src/main/java/inra/ijpb](http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb).
+
+You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more information about its API.
+
+
+## Citation
+
+Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+
+{% include citation %}
+
+[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349https://imagej.nih.gov/ijpb/MorphoLibJ).
+
+
 ## Morphological filters
 
 Morphological filters are very common filters that can be combined together to provide a large variety of solutions. They are local filters, in the sense that they consider the neighborhood of each pixel/voxel.
@@ -682,31 +711,6 @@ Making use of MorphoLibJ's label methods and the [ImageJ 3D Viewer](/plugins/3d-
 At the end of the script a dialog is shown to smooth the surfaces at will. Each label is added to the 3D scene independently with the name "label-X" where X is its label value. 
 
 {% include img align='center' src='morpholibj-visualize-labels-in-3d-viewer' caption='From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.' %}
-
-## Documentation
-
-Each [released version of MorphoLibJ](https://github.com/ijpb/MorphoLibJ/releases) comes with a [User Manual in PDF format](https://github.com/ijpb/MorphoLibJ/releases/download/v1.4.0/MorphoLibJ-manual-v1.4.0.pdf).
-
-The main source code directory is on GitHub under [src/main/java/inra/ijpb](http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb).
-
-You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more information about its API.
-
-## Installation
-
--   In [ImageJ 1.x](/software/imagej), download the [latest released jar](https://github.com/ijpb/MorphoLibJ/releases) into the *plugins* folder.
--   In [ImageJ2](/software/imagej2) (including [Fiji](/software/fiji)), you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins site to your list of update sites:
-    1.  Select {% include bc path='Help | Update...' %} from the menu to start the [updater](/plugins/updater).
-    2.  Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
-    3.  Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
-    4.  Click *Apply changes* and restart ImageJ.
-
-## Citation
-
-Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If you use it successfully for your research please be so kind to cite our work:
-
-{% include citation %}
-
-[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349https://imagej.nih.gov/ijpb/MorphoLibJ).
 
 
 ## License
