@@ -6,6 +6,8 @@ categories: [Automation, 3D, Analysis, Particle Analysis, Segmentation, Object D
 project: /plugins/CiliaQ
 doi: 10.1140/epje/s10189-021-00031-y
 source-url: https://github.com/hansenjn/CiliaQ/
+dev-status: Active
+support-status: Active
 pom-url: https://raw.githubusercontent.com/hansenjn/CiliaQ/master/pom.xml
 ---
 
