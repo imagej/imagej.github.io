@@ -3,7 +3,7 @@ mediawiki: FreQ
 title: FreQ
 description: An ImageJ plugin to analyze pixel intensity oscillations in time-lapse 2D images.
 icon: https://raw.githubusercontent.com/hansenjn/FreQ/master/FreQ%20Logo%20Small.png
-categories: [Automation, Analysis, Cilia, FastFourierTransformation, FrequencyAnalysis]
+categories: [Automation, Analysis, Cilia, Fast Fourier Transformation, Frequency Analysis]
 doi: 10.1016/j.xpro.2022.101542
 source-url: https://github.com/hansenjn/FreQ
 dev-status: Stable
