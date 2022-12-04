@@ -12,7 +12,7 @@ team-founder: '@hansenjn'
 team-maintainer: '@hansenjn'
 ---
 
-An ImageJ plugin to analyze pixel intensity oscillations in time-lapse 2D images. 
+FreQ is an ImageJ plugin to analyze pixel intensity oscillations in time-lapse 2D images. 
 For example, this allows to characterize the ciliary beat of multi-ciliated cells in time-lapse images
 acquired with a bright-field or phase-contrast microscope. 
 
