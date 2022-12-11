@@ -20,7 +20,17 @@ FijiRelax is a generic tool for 3D+t MRI analysis and exploration using multi-ec
 - the [Vitimage 1](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage) and [Vitimage 2024](https://www.plan-deperissement-vigne.fr/recherches/programmes-de-recherche/vitimage-2024) projects.
 - the [Aplim](https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim) flagship project.
 
-Developer documentation:
+## Statement of need
+FijiRelax is a generic tool for multi-echo spin-echo T1-T2 relaxometry capable of processing a wide variety of MRI images ranging from a plant stem to a human brain (see \autoref{fig:figure1}-b). It has been designed for three types of scientists: i) end-users using a GUI, ii) advanced users able to use a scripting languages to process large number of images, and iii) developers able to adapt and extend the application with new functionalities.
+
+* **End-users using a GUI**: this mode is recommended for scientists who are not specialists in image processing nor programming. Download FijiRelax through the official Fiji release, and follow the step-by-step installation instructions, as well as the hands-on tutorials built on the test dataset hosted at Zenodo [@fijirelaxDataset]. Then, use the graphical user interface to import and process your own Bruker/NIFTI/Custom data, explore the relaxation maps in space and time using the graphical relaxation curve explorer and export your results as 2D/3D/4D TIFF images. This mode is also recommended for studying new datasets or new biological questions. Among the interface features, the plugin provides a graphical explorer to visualize the relaxation curves, and the estimated PD-weighted T1 and T2 distributions over customizable areas of interest. In 5D hypermaps, the distributions at each time-point can be displayed simultaneously, giving access to valuable information on water distribution in tissues and its evolution during the monitoring period.
+
+* **Advanced users**: this mode can be used by scientists with programming skills. Load the sample BeanShell scripts provided in the Zenodo archive by dragging them into the Fiji interface and run the scripts to reproduce the results shown in \autoref{fig:figure1}: import a dataset, convert it to an HyperMap (see \autoref{fig:figure1}-e), compute the parameter maps. Then, adapt these scripts to your needs, including processing your own data and batch-processing multiple experiments.
+
+* **Developers**: this mode is for programmers fluent with Java and Maven. Start by exploring the FijiRelax API: [API Overview](https://javadoc.io/doc/io.github.rocsg/fijirelax/latest/index.html). Build your own tools on top of the FijiRelax library, provided as a jar file hosted at maven central repository ([Artifact](https://search.maven.org/artifact/io.github.rocsg/fijirelax)), by indicating FijiRelax as a dependency in your POM file and run the unit tests. FijiRelax is hosted on a github public repository ([https://github.com/rocsg/fijirelax](https://github.com/rocsg/fijirelax)) and developers can offer to contribute to its development, and extend it by requesting features, or proposing new features.
+
+
+## Developer documentation:
 [FijiRelax latest javadoc](https://javadoc.io/doc/io.github.rocsg/fijirelax/latest/index.html)
  
 ## Plugin features
