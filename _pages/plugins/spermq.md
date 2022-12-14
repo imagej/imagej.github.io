@@ -1,5 +1,4 @@
 ---
-mediawiki: SpermQ
 title: SpermQ
 description: An ImageJ plugin to analyze the flagellar beat of sperm and sperm steering.
 icon: https://raw.githubusercontent.com/hansenjn/SpermQ/master/Webfiles/20200708%20SpermQ%20Logo%20low%20res.png
@@ -10,18 +9,17 @@ dev-status: Stable
 support-status: Active
 team-founder: '@hansenjn'
 team-maintainer: '@hansenjn'
+update-site: SpermQ
 ---
 
 An ImageJ plugin to analyze the flagellar beat of sperm and sperm steering.
+
+## Publication
  
 The software is published with the following publication:
-Hansen, J.N.; Rassmann, S.; Jikeli, J.F.; Wachten, D. 
-*SpermQ–A Simple Analysis Software to Comprehensively Study Flagellar Beating and Sperm Steering.*
-Cells 2019, 8, 10. doi: https://doi.org/10.3390/cells8010010.
 
-------------------------------------------------------------------------
+{% include citation %}
 
-# Using and citing SpermQ
-Please visit the SpermQ Github repository at https://github.com/hansenjn/SpermQ for more information on how to use and cite SpermQ.
+## Using and citing SpermQ
 
-------------------------------------------------------------------------
+Please visit the SpermQ GitHub repository at https://github.com/hansenjn/SpermQ for more information on how to use and cite SpermQ.
