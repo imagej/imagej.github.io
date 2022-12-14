@@ -80,7 +80,7 @@ search.addWidgets([
         if (bIndex < 0) aIndex += 1000;
         aDist += aIndex;
         bDist += bIndex;
-        return aDist - bDist;
+        return bDist - aDist;
       }
       var query = document.getElementById('search-box').querySelector('.ais-SearchBox-input').value;
       return items.sort((a,b) => weightedDistance(query.toLowerCase(), a.title.toLowerCase(), b.title.toLowerCase()));
