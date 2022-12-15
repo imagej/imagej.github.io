@@ -1,3 +1,19 @@
+---
+title: ColonyArea
+description: ImageJ-plugin that is optimized to perform standard analysis of colony formation assays conducted in 6- to 24-well dishes.
+categories: [Segmentation]
+doi: 10.1088/1361-6463/ab0261
+
+name: ColonyArea
+initial-release-date: "2014"
+team-founder: "@turkubioimaging"
+team-maintainer: '@turkubioimaging'
+support-status: Active
+source-label: GitHub
+source-url: https://github.com/Turku-BioImaging/ColonyArea
+---
+
+
 <p float='left'>
     <img src='images/ColonyArea-Figure1.jpg' style="height:125px;width:auto;"/>
     <img src='images/ColonyArea-Figure4.jpg' style="height:125px;width:auto;margin-left:15px;"/>
