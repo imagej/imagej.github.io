@@ -91,6 +91,3 @@ Beginning in October 2022, maintenance of this plugin is handled by [Turku BioIm
 
 For more information and support, email [image-data@bioimaging.fi](mailto:image-data@bioimaging.fi)
 
-<p float='left'>
-    <img src='images/BioImaging_logo_posa_vaaka.jpg' style="height:75px;width:auto;"/>
-</p>
