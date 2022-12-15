@@ -2,7 +2,7 @@
 title: ColonyArea
 description: ImageJ-plugin that is optimized to perform standard analysis of colony formation assays conducted in 6- to 24-well dishes.
 categories: [Segmentation]
-doi: 10.1088/1361-6463/ab0261
+doi: 10.1371/journal.pone.0092444
 
 name: ColonyArea
 initial-release-date: "2014"
