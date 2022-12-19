@@ -73,7 +73,7 @@ doi = {10.1371/journal.pone.0092444},
 journal = {PloS ONE},
 month = {3},
 number = {3},
-title = {{ColonyArea: An ImageJ plugin to automatically quantify colony formation in clonogenic assays}},
+title = {% raw %}{{ColonyArea: An ImageJ plugin to automatically quantify colony formation in clonogenic assays}}{% endraw %},
 volume = {9},
 year = {2014}
 }
