@@ -60,7 +60,7 @@ Note that since ImageJ2 has a modular [architecture](/develop/architecture), it 
 
 ### ImageJ
 
-Changes to the original [ImageJ](/software/imagej) are made by {% include person id='rasband' %}, the ImageJ developer, along with many contributors. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [Release Notes/News](https://imagej.nih.gov/ij/notes.html)).
+Changes to the original [ImageJ](/software/imagej) are made by {% include person id='rasband' %}, the ImageJ developer, along with many contributors. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [Release Notes/News](https://imagej.net/ij/notes.html)).
 
 Methods of getting the patch to Wayne include:
 

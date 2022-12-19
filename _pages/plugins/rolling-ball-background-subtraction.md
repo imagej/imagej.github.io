@@ -4,12 +4,12 @@ name: "Rolling Ball Background Subtraction"
 title: Rolling Ball Background Subtraction
 categories: [Filtering]
 initial-release-date: "22 November 2007"
-website: "https://imagej.nih.gov/ij/plugins/rolling-ball.html"
+website: "https://imagej.net/ij/plugins/rolling-ball.html"
 dev-status: "first version"
 team-founders: [Michael Castle, Janice Keller]
 ---
 
-{% include info-box filename='Rolling\_Ball\_Background.class' source=' [Rolling\_Ball\_Background.java](https://imagej.nih.gov/ij/plugins/download/Rolling_Ball_Background.java)' %}
+{% include info-box filename='Rolling\_Ball\_Background.class' source=' [Rolling\_Ball\_Background.java](https://imagej.net/ij/plugins/download/Rolling_Ball_Background.java)' %}
 
 ## Documentation
 

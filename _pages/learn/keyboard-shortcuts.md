@@ -29,7 +29,7 @@ To open new images, press {% include key keys='ctlcmd|O' %}.
 ## Creating your own keyboard shortcuts
 
 You can also
-[assign your own keyboard shortcuts](https://imagej.nih.gov/ij/docs/guide/146-31.html#toc-Subsection-31.2)!
+[assign your own keyboard shortcuts](https://imagej.net/ij/docs/guide/146-31.html#toc-Subsection-31.2)!
 
 ## Assign a shortcut to a macro
 

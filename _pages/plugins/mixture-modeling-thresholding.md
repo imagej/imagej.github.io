@@ -4,12 +4,12 @@ name: "Mixture Modeling"
 title: Mixture Modeling Thresholding
 categories: [Segmentation]
 initial-release-date: "15 December 2003"
-website: "https://imagej.nih.gov/ij/plugins/mixture-modeling.html"
+website: "https://imagej.net/ij/plugins/mixture-modeling.html"
 dev-status: "unknown"
 team-founders: [Christopher Mei, Maxime Dauphin]
 ---
 
-{% include info-box filename=' [Mixture\_Modeling.jar](https://imagej.nih.gov/ij/plugins/download/jars/Mixture_Modeling.jar) (18,454 Bytes)' source='in .jar file' %}
+{% include info-box filename=' [Mixture\_Modeling.jar](https://imagej.net/ij/plugins/download/jars/Mixture_Modeling.jar) (18,454 Bytes)' source='in .jar file' %}
 
 ## Purpose
 

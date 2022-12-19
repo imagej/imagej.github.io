@@ -218,7 +218,7 @@ If you use the plugin, please cite our corresponding publication:
 To use this tool you need to:
 
 - Install [JDK 1.8](https://java.com/en/download/manual.jsp)
-- (optional) Download [ImageJ](https://imagej.nih.gov/ij/download.html) or [Fiji](https://fiji.sc/) (Fiji is just ImageJ)
+- (optional) Download [ImageJ](https://imagej.net/ij/download.html) or [Fiji](https://fiji.sc/) (Fiji is just ImageJ)
 
 ## Building from source
 

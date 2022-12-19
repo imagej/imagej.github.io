@@ -26,7 +26,7 @@ and
 
 {% include citation doi="10.1109/ICIP.2011.6116627" %}
 
-The plugin provides an alternative to the ImageJ "build-in"-[watershed](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Watershed)-plugin. It does not perform better results on regular round clumps. Especially for big clumps with image disturbances and many holes in the clump the results of the watershed plugins are much more robust and it does not depends on so many parameters. For elongated indididual objects, the plugin can produce better results than the watershed.
+The plugin provides an alternative to the ImageJ "build-in"-[watershed](https://imagej.net/ij/docs/guide/146-29.html#sub:Watershed)-plugin. It does not perform better results on regular round clumps. Especially for big clumps with image disturbances and many holes in the clump the results of the watershed plugins are much more robust and it does not depends on so many parameters. For elongated indididual objects, the plugin can produce better results than the watershed.
 
 It depends on the [IJ-Blob](/plugins/ij-blob) library, the [Vecmath](https://github.com/hharrison/vecmath) library, the [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) library and the [JavaML](http://java-ml.sourceforge.net/) library.
 

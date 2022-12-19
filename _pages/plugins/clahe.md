@@ -40,7 +40,7 @@ In addition, the plugin asks for:
 
 ### How can I process a series/stack of images?  
 
-Execute the following macro from [ImageJ's macro editor](https://imagej.nih.gov/ij/developer/macro/macros.html) or [Fiji's script editor](/scripting/script-editor):
+Execute the following macro from [ImageJ's macro editor](https://imagej.net/ij/developer/macro/macros.html) or [Fiji's script editor](/scripting/script-editor):
 
 ```javascript
 blocksize = 127;

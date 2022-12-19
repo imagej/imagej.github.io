@@ -22,5 +22,5 @@ If you have found a bug, please [submit a bug report](/discuss/bugs).
 
 | List                                           | Description                                                                 | Archives                                             |
 |------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------|
-| [ImageJ](https://imagej.nih.gov/ij/list.html)  | For general user and developer discussion about [ImageJ](/software/imagej). | [Archives](http://list.nih.gov/archives/imagej.html) |
+| [ImageJ](https://imagej.net/ij/list.html)  | For general user and developer discussion about [ImageJ](/software/imagej). | [Archives](http://list.nih.gov/archives/imagej.html) |
 | [SciJava](https://groups.google.com/g/scijava) | For discussion of [SciJava](/libs/scijava) supporting libraries.            | [Archives](https://groups.google.com/g/scijava)      |

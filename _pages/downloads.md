@@ -7,7 +7,7 @@ description: This page provides download links for ImageJ.
 
 Which distribution of ImageJ would you like to download?
 
-| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej.png){:width="96px"}<br>ImageJ](https://imagej.nih.gov/ij/download.html) |
+| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej.png){:width="96px"}<br>ImageJ](https://imagej.net/ij/download.html) |
 {:.plain.center.center-text}
 
 {% capture help-me-decide %}
@@ -40,7 +40,7 @@ table.help-me-decide li {
   <td><ul>
     <li>Lightweight (ImageJ is a single JAR file)</li>
     <li>Small download (81 MB)</li>
-    <li>Simple software architecture is <a href="https://imagej.nih.gov/ij/developer/">approachable for non-programmers</a></li>
+    <li>Simple software architecture is <a href="https://imagej.net/ij/developer/">approachable for non-programmers</a></li>
     <li>Often faster than Fiji, for the scenarios ImageJ supports</li>
     <li><a href="/licensing/#a-note-about-imagej">No copyright whatsoever</a></li>
     <li>Very stable and mature</li>

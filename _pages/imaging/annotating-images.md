@@ -58,7 +58,7 @@ This plugin points to the native menu command {% include bc path="Analyze|Tools|
 
 ### Issues with adding text
 
-Adding text to single frame images should be done in CorelDRAW or a similar application so the text does not become part of the image and can therefore be edited at any time. Adding text to an image/movie is irreversible so it should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs by using the *"Copy to System"* and *"Paste"* options in the {% include bc path="Edit" %} menu. This supersedes the System Clipboard plugin (Plugin documentation found [here](https://imagej.nih.gov/ij/plugins/clipboard.html)). In the case that an image is not pasting accurately, use {% include bc path="Edit|Paste Special" %} in the receiving application, then select "*Device independent bitmap*".
+Adding text to single frame images should be done in CorelDRAW or a similar application so the text does not become part of the image and can therefore be edited at any time. Adding text to an image/movie is irreversible so it should not be done on raw data. Images can be copied to and pasted from the system clipboard between programs by using the *"Copy to System"* and *"Paste"* options in the {% include bc path="Edit" %} menu. This supersedes the System Clipboard plugin (Plugin documentation found [here](https://imagej.net/ij/plugins/clipboard.html)). In the case that an image is not pasting accurately, use {% include bc path="Edit|Paste Special" %} in the receiving application, then select "*Device independent bitmap*".
 
 Always save your images before adding text. Text color is set via the color picker button on the tool bar. Double-click on it to open the palette and choose a color.
 

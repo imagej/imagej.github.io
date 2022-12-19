@@ -271,7 +271,7 @@ The startup process automatically injects the ImageJ2 classpath into the [MATLAB
 
 The following Java commands work in MATLAB command window to open a sample image in ImageJ.
 
-    imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
+    imp = ij.IJ.openImage("http://imagej.net/ij/images/boats.gif");
     imp.show()
 
 <img src="/media/scripting/boats-screenshot.png" width="400"/>
@@ -340,7 +340,7 @@ If you wish to assign the numeric data of an ImageJ2 image into the Workspace of
 
 If you use [`copytoImagePlus`](https://github.com/kouichi-c-nakamura/copytoImagePlus), you can open a 2D-5D MATLAB array as a Hyperstack with the right image type (8bit, 16bit, and 32bit for uint8, uint16, and other types of MATLAB array, respectively) in ImageJ with a simple syntax. Also, you can use `copytoImagePlus` within a MATLAB function independently of the `IJM` variable in base workspace.
 
-    imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/Spindly-GFP.zip");
+    imp = ij.IJ.openImage("http://imagej.net/ij/images/Spindly-GFP.zip");
     imp.show();
     IJM.getDatasetAs('I'); % I is 5-D double with the size of 171x196x2x5x51 in MATLAB
     I16 = uint16(I);

@@ -5,12 +5,12 @@ title: RGB Measure Plus
 categories: [Color Processing]
 release-date: "23 March 2005"
 initial-release-date: "23 March 2005"
-website: "https://imagej.nih.gov/ij/plugins/rgb-measure-plus.html"
+website: "https://imagej.net/ij/plugins/rgb-measure-plus.html"
 dev-status: "initial version"
 team-founder: '@dprodanov'
 ---
 
-{% include info-box filename='RGB\_Measure\_Plus.class' source=' [RGB\_Measure\_Plus.java](https://imagej.nih.gov/ij/plugins/download/RGB_Measure_Plus.java)'  %}
+{% include info-box filename='RGB\_Measure\_Plus.class' source=' [RGB\_Measure\_Plus.java](https://imagej.net/ij/plugins/download/RGB_Measure_Plus.java)'  %}
 
 ## Purpose
 

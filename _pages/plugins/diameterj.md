@@ -331,7 +331,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
   <tbody>
     <tr>
       <td>
-        <p><big><strong>Download and install <a href="https://imagej.nih.gov/ij/download.html">ImageJ 1.48</a> or newer or <a href="/downloads">Fiji</a> (any version)</strong></big></p>
+        <p><big><strong>Download and install <a href="https://imagej.net/ij/download.html">ImageJ 1.48</a> or newer or <a href="/downloads">Fiji</a> (any version)</strong></big></p>
       </td>
       <td></td>
       <td></td>
@@ -372,7 +372,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
       </td>
       <td>
         <ol>
-          <li>Follow instructions <a href="https://imagej.nih.gov/ij/docs/install/osx.html#dandd">Here</a> or <a href="/platforms/macos">Here</a> for installation of ImageJ/Fiji on macOS
+          <li>Follow instructions <a href="https://imagej.net/ij/docs/install/osx.html#dandd">Here</a> or <a href="/platforms/macos">Here</a> for installation of ImageJ/Fiji on macOS
           </li>
         </ol>
       </td>

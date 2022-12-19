@@ -13,8 +13,8 @@ The [MBF Plugin Collection](/software/mbf-imagej) legally bundles the LuraWave L
 
 Steps to use:
 
-1.  [Download ImageJ](https://imagej.nih.gov/ij/download.html) and unpack it
-2.  [Download the MBF Plugins Collection](https://imagej.nih.gov/ij/plugins/mbf/)
+1.  [Download ImageJ](https://imagej.net/ij/download.html) and unpack it
+2.  [Download the MBF Plugins Collection](https://imagej.net/ij/plugins/mbf/)
 3.  Merge the MBF plugins into your ImageJ folder
 4.  Use {% include bc path='File | Open...'%} to convert your .flex files to OME-TIFF using [Bio-Formats](/formats/bio-formats)
 

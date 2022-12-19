@@ -94,7 +94,7 @@ This video tutorial (with audio as well) shows how to use the plugin segment a 3
 
 ## Macro language compatibility
 
-Morphological Segmentation is completely compatible with the popular [ImageJ macro language](https://imagej.nih.gov/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
+Morphological Segmentation is completely compatible with the popular [ImageJ macro language](https://imagej.net/ij/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
 The complete list of commands is as follows:
 

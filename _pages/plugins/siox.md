@@ -212,9 +212,9 @@ Still Image Approach:
 
 ## ImageJ version
 
-Thanks to {% include person id='rasband' %}, there is an [ImageJ](https://imagej.nih.gov/ij/plugins/siox/index.html) version of this plugin without Fiji dependencies:
+Thanks to {% include person id='rasband' %}, there is an [ImageJ](https://imagej.net/ij/plugins/siox/index.html) version of this plugin without Fiji dependencies:
 
-[https://imagej.nih.gov/ij/plugins/siox/index.html](https://imagej.nih.gov/ij/plugins/siox/index.html)
+[https://imagej.net/ij/plugins/siox/index.html](https://imagej.net/ij/plugins/siox/index.html)
 
 ## Licenses
 

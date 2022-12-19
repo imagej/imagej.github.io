@@ -116,7 +116,7 @@ counter++;
 
 # Functions
 
-Most of the time, you will call *functions* which implement the actions you want to execute. Functions have names, like variables, but they also have *parameters* that you can pass to the functions. ImageJ comes with many [predefined functions](https://imagej.nih.gov/ij/developer/macro/functions.html) that you can call to perform specific calculations or other operations.
+Most of the time, you will call *functions* which implement the actions you want to execute. Functions have names, like variables, but they also have *parameters* that you can pass to the functions. ImageJ comes with many [predefined functions](https://imagej.net/ij/developer/macro/functions.html) that you can call to perform specific calculations or other operations.
 
 This example writes `Hello, World!` to the *Log* window:
 
@@ -301,7 +301,7 @@ run("Merge Channels...",
 
 # Installing macros
 
-To install keyboard shortcuts or tool icons, you need to [wrap macro code in `macro` blocks](https://imagej.nih.gov/ij/developer/macro/macros.html#tools):
+To install keyboard shortcuts or tool icons, you need to [wrap macro code in `macro` blocks](https://imagej.net/ij/developer/macro/macros.html#tools):
 
 ```javascript
 macro "Title of the macro" {
@@ -348,7 +348,7 @@ macro "Save As JPEG Action Tool - C000R11ee" {
 }
 ```
 
-The icon is defined by a funny-looking string (in this case, `C000R11ee`). To learn how to define your own icon, please have a look [here](https://imagej.nih.gov/ij/developer/macro/macros.html#icons).
+The icon is defined by a funny-looking string (in this case, `C000R11ee`). To learn how to define your own icon, please have a look [here](https://imagej.net/ij/developer/macro/macros.html#icons).
 
 Many tools open an option dialog upon double-click on the icon. You can do that, too, by choosing a name that ends in *Action Tool Options*:
 
@@ -668,23 +668,23 @@ macro "Split and Merge" {
 
 ## More example macros
 
-There are quite a lot of macros on the [ImageJ website](https://imagej.nih.gov/ij/macros/), and specifically [example macros](https://imagej.nih.gov/ij/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](/events/conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](https://imagej.nih.gov/ij/developer/index.html).
+There are quite a lot of macros on the [ImageJ website](https://imagej.net/ij/macros/), and specifically [example macros](https://imagej.net/ij/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](/events/conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](https://imagej.net/ij/developer/index.html).
 
 # Overcoming limitations
 
-Macros have a major limitation compared to the other [scripting](/scripting) languages: they have only a [fixed set of built-in functions](https://imagej.nih.gov/ij/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
+Macros have a major limitation compared to the other [scripting](/scripting) languages: they have only a [fixed set of built-in functions](https://imagej.net/ij/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
 ## Macro extensions
 
-It is possible to implement code in [Java](/develop/plugins) which extends the macro language via the [`Ext` prefix](https://imagej.nih.gov/ij/developer/macro/functions.html#Ext). However, this cannot be done within the macro itself.
+It is possible to implement code in [Java](/develop/plugins) which extends the macro language via the [`Ext` prefix](https://imagej.net/ij/developer/macro/functions.html#Ext). However, this cannot be done within the macro itself.
 
 ## The call function
 
-The [`call` function](https://imagej.nih.gov/ij/developer/macro/functions.html#call) can invoke Java methods directly. However, this function only supports calling `public static` Java methods which accept `String` only, and return `String` only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
+The [`call` function](https://imagej.net/ij/developer/macro/functions.html#call) can invoke Java methods directly. However, this function only supports calling `public static` Java methods which accept `String` only, and return `String` only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
 
 ## The eval function
 
-The [`eval` function](https://imagej.nih.gov/ij/developer/macro/functions.html#eval) can execute [JavaScript](/scripting/javascript) (or [BeanShell](/scripting/beanshell) or [Python](/scripting/python)) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
+The [`eval` function](https://imagej.net/ij/developer/macro/functions.html#eval) can execute [JavaScript](/scripting/javascript) (or [BeanShell](/scripting/beanshell) or [Python](/scripting/python)) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
 
 Here is an example which sets the position of a [3D Viewer](/plugins/3d-viewer) window:
 
@@ -709,9 +709,9 @@ eval("script",
 
 ## The exec function
 
-The [`exec` function](https://imagej.nih.gov/ij/developer/macro/functions.html#exec) can call any external program or process with optional arguments.  
+The [`exec` function](https://imagej.net/ij/developer/macro/functions.html#exec) can call any external program or process with optional arguments.  
 It can be used to e.g. automatically open a tabular software with a result table after analysis. It can also be used to open a specific webpage in the default browser.  
-See [Examples](https://imagej.nih.gov/ij/macros/ExecExamples.txt).  
+See [Examples](https://imagej.net/ij/macros/ExecExamples.txt).  
 Note that the macro code will wait for the external process to terminate, and only after that continue the execution of the rest of the code (except when opening a webpage or excel).  
 If you dont want the macro to wait until the end of the external process you can call the command  
 `setOption("WaitForCompletion", false);`  
@@ -719,4 +719,4 @@ before the `exec` call. (since ImageJ 1.52u38)
 
 # Further documentation
 
-A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.nih.gov/ij/developer/index.html).
+A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.net/ij/developer/index.html).

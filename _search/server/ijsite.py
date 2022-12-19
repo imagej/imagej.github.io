@@ -62,7 +62,7 @@ def parse_document(docroot, path):
     # Set required field values.
     docid = path[len(docroot):]
     doc.update({
-        'id': f'https://imagej.nih.gov/ij{docid}',
+        'id': f'https://imagej.net/ij{docid}',
         'score': 90, # a constant value, at least for now,
         'title': html.title.text if html.title else docid,
         'icon': '/media/icons/imagej.png',

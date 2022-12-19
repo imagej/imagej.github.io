@@ -48,7 +48,7 @@ Please note that [MorphoLibJ](/plugins/morpholibj) is based on a publication. If
 
 {% include citation %}
 
-[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349https://imagej.nih.gov/ijpb/MorphoLibJ).
+[MorphoLibJ](/plugins/morpholibj)'s code repository has its own [DOI](https://zenodo.org/badge/latestdoi/21349https://imagej.net/ijpb/MorphoLibJ).
 
 
 ## Morphological filters
@@ -325,7 +325,7 @@ For particles with complex shapes, the geodesic diameter may be of interest. It 
 
 #### Plugins
 
-Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze' %} menu.
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [Utilities for binary images](/plugins/morpholibj#utilities-for-binary-images)). The output is a results table (ImageJ [Results table](https://imagej.net/ij/docs/guide/146-22.html)) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {% include bc path='Plugins | MorphoLibJ | Analyze' %} menu.
 
 ##### Global geometry
 

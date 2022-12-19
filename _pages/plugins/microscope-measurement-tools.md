@@ -133,7 +133,7 @@ The example adds a Calibration for a JEOL SEM, which automatically sets the scal
 
 This simple python (jython) plugin was created by {% include person id='demisjohn' %}, 2015.
 
-I used the following plugins as inspiration: [Correct\_3D\_drift](/plugins/correct-3d-drift) and [Microscope Scale](https://imagej.nih.gov/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
+I used the following plugins as inspiration: [Correct\_3D\_drift](/plugins/correct-3d-drift) and [Microscope Scale](https://imagej.net/ij/plugins/microscope-scale.html) (which sadly is no longer easily customizable).
 
 Please see the GitHub page for issues needing coding work, and ideas for improvement. You are always welcome to contribute code to the GitHub project, it is remarkably simple due to Fiji's excellent Python API!
 

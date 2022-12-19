@@ -28,7 +28,7 @@ Before using the plugin, make sure your version of Fiji comes pre-downloaded wit
 * {% include bc path="Image | Adjust | Auto Threshold" %}
 * {% include bc path="Analyze | Local Thickness | Geometry to Distance Map" %}
 
-Also make sure you install [Mexican Hat Filter](https://imagej.nih.gov/ij/plugins/mexican-hat/index.html) plugin
+Also make sure you install [Mexican Hat Filter](https://imagej.net/ij/plugins/mexican-hat/index.html) plugin
 
 ## **Usage:**
 

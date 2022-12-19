@@ -157,7 +157,7 @@ The Invert command - in ImageJ 1.x the Invert command inverts all pixels with re
 
 ## {% include bc path='Image | Overlay | Overlay Manager' %}
 
-ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [ImageJ 1.x documentation of its ROI Manager](https://imagej.nih.gov/ij/docs/menus/analyze.html#manager).
+ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [ImageJ 1.x documentation of its ROI Manager](https://imagej.net/ij/docs/menus/analyze.html#manager).
 
 However there are some major differences between them. For instance:
 

@@ -97,7 +97,7 @@ legacy.mode = false
 - `jvmargs` Arguments passed to the Java Virtual machine.
 - `legacy.mode` Deprecated option to disable use of the legacy `ImageJ.cfg`. In recent versions of the launcher, this is [ignored](https://github.com/imagej/imagej-launcher/commit/0c3902642829b40a8ed72edd5ea3fbc1a3872acf).
 
-Note that this differs from an [older legacy format](https://imagej.nih.gov/ij/docs/install/windows.html) and that the first "# ImageJ startup properties" comment line is [required](https://github.com/imagej/imagej-launcher/blob/0c3902642829b40a8ed72edd5ea3fbc1a3872acf/src/main/c/config.c#L116-L123).
+Note that this differs from an [older legacy format](https://imagej.net/ij/docs/install/windows.html) and that the first "# ImageJ startup properties" comment line is [required](https://github.com/imagej/imagej-launcher/blob/0c3902642829b40a8ed72edd5ea3fbc1a3872acf/src/main/c/config.c#L116-L123).
 
 ### The double-dash
 

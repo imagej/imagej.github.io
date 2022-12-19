@@ -17,7 +17,7 @@ The other main flavor of ImageJ, a redesign started in 2010, is known as [ImageJ
 
 ## See also
 
--   The [ImageJ website](https://imagej.nih.gov/ij/)
+-   The [ImageJ website](https://imagej.net/ij/)
 
 ## Publication
 

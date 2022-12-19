@@ -49,7 +49,7 @@ def main(args):
         collection = 'imagej-wiki'
         sites = {
             'imagej.net': os.path.join(os.path.dirname(args[0]), '..', '..'),
-            'imagej.nih.gov/ij': '/var/www/mirror.imagej.net',
+            'imagej.net/ij': '/var/www/wsr.imagej.net/ij',
         }
     elif len(args) >= 3:
         collection = args[1]

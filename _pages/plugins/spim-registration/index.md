@@ -57,7 +57,7 @@ The pipeline is relatively linear as described above, we highlight the steps whe
 
 ## How do I view fused, saved output image(s)
 
-The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with {% include bc path="Plugins|Image5D|[Virtual Image 5D Opener](https://imagej.nih.gov/ij/plugins/image5d.html)" %} or via the {% include bc path="File|Import|Bio-Formats..." %} (check the option *Group files with similar names*).
+The fused images will be saved in the *output* directory of the dataset as a collection of two-dimensional planes. The created output images can be viewed for example with {% include bc path="Plugins|Image5D|[Virtual Image 5D Opener](https://imagej.net/ij/plugins/image5d.html)" %} or via the {% include bc path="File|Import|Bio-Formats..." %} (check the option *Group files with similar names*).
 
 ## Downloading example dataset
 

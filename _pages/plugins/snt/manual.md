@@ -482,7 +482,7 @@ This menu contains several options which provide quick ways to analyze and visua
         <img src="/media/plugins/snt/snt-path-manager-measurements.png" width="80%" title="Measurements table (v3.0) displaying data for the OP1 demo dataset" />
     </div>
 
-- {% include bc path='Convert to ROIs...' %} Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Opens the [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager), if closed. Options include:
+- {% include bc path='Convert to ROIs...' %} Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.net/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Opens the [ROI Manager](https://imagej.net/ij/docs/guide/146-30.html#fig:The-ROI-Manager), if closed. Options include:
   
   - *Convert* Drop-down menu specifying the structure(s) to convert (branches, branch-points, or end-points)
   

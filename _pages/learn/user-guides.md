@@ -7,8 +7,8 @@ nav-links: true
 <div style="display: table">
 
 <div style="text-align:center;" markdown="1">
-<a href="https://imagej.nih.gov/ij/docs/guide"><img src="/media/books/imagej-user-guide.jpg" width="247" height="350"></a>\\
-The [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) provides a
+<a href="https://imagej.net/ij/docs/guide"><img src="/media/books/imagej-user-guide.jpg" width="247" height="350"></a>\\
+The [ImageJ User Guide](https://imagej.net/ij/docs/guide/) provides a
 thorough description of ImageJ's built-in functions.
 </div>
 

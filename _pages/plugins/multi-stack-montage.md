@@ -84,7 +84,7 @@ public class My_Plugin implements PlugIn {
     public void run(String arg) {
 
         // Make some nice images
-        ImagePlus imp = IJ.openImage("https://imagej.nih.gov/ij/images/confocal-series.zip");
+        ImagePlus imp = IJ.openImage("https://imagej.net/ij/images/confocal-series.zip");
         String imageName = imp.getTitle();
 
         // Recolor them

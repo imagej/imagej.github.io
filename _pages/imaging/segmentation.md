@@ -85,9 +85,9 @@ One good workflow for segmentation in ImageJ is as follows:
 Preprocess the image using filters, to make later thresholding more effective. Which filter(s) to use is highly dependent on your data, but some commonly useful filters include:
 
 -   [Deconvolution](/imaging/deconvolution)
--   [Subtract Background](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Subtract-Background...)
--   [Gaussian Blur](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Gaussian-Blur...)
--   [Find Edges](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Find-Edges)
+-   [Subtract Background](https://imagej.net/ij/docs/guide/146-29.html#sub:Subtract-Background...)
+-   [Gaussian Blur](https://imagej.net/ij/docs/guide/146-29.html#sub:Gaussian-Blur...)
+-   [Find Edges](https://imagej.net/ij/docs/guide/146-29.html#sub:Find-Edges)
 
 ## Adjusting Threshold
 
@@ -99,7 +99,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 -   Select {% include bc path='Image | Adjust | Threshold...'%}
 -   Specify whether or not the background should be dark or light
 -   Adjust the minimum and maximum sliders until you are satisfied with the saturation level of your image
-    -   [More information](https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Threshold...%5BT%5D)
+    -   [More information](https://imagej.net/ij/docs/guide/146-28.html#sub:Threshold...%5BT%5D)
 
 ## Creating Masks
 
@@ -108,9 +108,9 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 -   Select {% include bc path='Edit | Selection | Create Mask'%}
 -   Based on the image and set threshold, some portions of the image may be over/under saturated
     -   Select the portion of the image that needs to be adjusted
-    -   Select [Dilate](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Dilate) to grow the included pixels to further saturate this portion of the image or [Erode](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Erode) to remove saturation
-        -   [More information](https://imagej.nih.gov/ij/docs/guide/146-29.html#infobox:InvertedLutMask).
--   One quick way to split overlapping objects is the [Watershed](https://imagej.nih.gov/ij/docs/guide/146-29.html#sub:Watershed) command.
+    -   Select [Dilate](https://imagej.net/ij/docs/guide/146-29.html#sub:Dilate) to grow the included pixels to further saturate this portion of the image or [Erode](https://imagej.net/ij/docs/guide/146-29.html#sub:Erode) to remove saturation
+        -   [More information](https://imagej.net/ij/docs/guide/146-29.html#infobox:InvertedLutMask).
+-   One quick way to split overlapping objects is the [Watershed](https://imagej.net/ij/docs/guide/146-29.html#sub:Watershed) command.
 
 ## Selections
 
@@ -120,7 +120,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 -   Select {% include bc path='Edit | Selection | Create Selection'%} to select the objects within the mask
 -   To deselect a portion of the image, select {% include key keys='Shift|left click' %}
-    -   [More information](https://imagej.nih.gov/ij/docs/guide/146-27.html#sub:Create-Selection)
+    -   [More information](https://imagej.net/ij/docs/guide/146-27.html#sub:Create-Selection)
 
 {% include img src="reverted-tree" width="300" caption="Selections on the reverted image" %}
 
@@ -128,16 +128,16 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 
 -   Before transferring the mask's selections, revert the image to its original form by selecting {% include key keys='Shift|E' %}
 -   Select first the mask, then the original image, and select {% include key keys='Shift|E' %} to transfer the mask's selections
-    -   [More information](https://imagej.nih.gov/ij/docs/guide/146-27.html#infobox:TransferSelections)
+    -   [More information](https://imagej.net/ij/docs/guide/146-27.html#infobox:TransferSelections)
 
 ## Analysis
 
 Do some numerical analysis on the selected data:
 
--   [Measure](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Measure...%5Bm%5D) the entire selection directly.
-    -   Control which measurements are done using [Set Measurements](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Set-Measurements...).
--   Use [Analyze Particles](https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Analyze-Particles...) to extract desirable objects from your selection and report individual statistics on them.
--   Use the [ROI Manager](https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager) to **Add** the selection and then **Split** it (under the **More** button), then use **Multi Measure** (also under **More**) to report statistics on the objects.
+-   [Measure](https://imagej.net/ij/docs/guide/146-30.html#sub:Measure...%5Bm%5D) the entire selection directly.
+    -   Control which measurements are done using [Set Measurements](https://imagej.net/ij/docs/guide/146-30.html#sub:Set-Measurements...).
+-   Use [Analyze Particles](https://imagej.net/ij/docs/guide/146-30.html#sub:Analyze-Particles...) to extract desirable objects from your selection and report individual statistics on them.
+-   Use the [ROI Manager](https://imagej.net/ij/docs/guide/146-30.html#fig:The-ROI-Manager) to **Add** the selection and then **Split** it (under the **More** button), then use **Multi Measure** (also under **More**) to report statistics on the objects.
 -   [Write a macro](/scripting/macro) to automate this sort of analysis, loop over objects in the ROI manager, measure and manipulate them, etc.
 
 # See also

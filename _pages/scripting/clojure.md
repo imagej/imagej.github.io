@@ -30,7 +30,7 @@ A minimal, complete clojure example:
 
 ```clojure
 (import '(ij IJ))
-(def gold (IJ/openImage "https://imagej.nih.gov/ij/images/AuPbSn40.jpg"))
+(def gold (IJ/openImage "https://imagej.net/ij/images/AuPbSn40.jpg"))
 (.show gold)
 ```
 
@@ -261,13 +261,13 @@ Above, note the dot '.' after Random, which indicates we are calling the constru
 
 ImageJ has three basic objects:
 
--   The [`ImagePlus`](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html), which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
--   The [`ImageProcessor`](https://imagej.nih.gov/ij/developer/api/ij/process/ImageProcessor.html), which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
+-   The [`ImagePlus`](https://imagej.net/ij/developer/api/ij/ImagePlus.html), which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
+-   The [`ImageProcessor`](https://imagej.net/ij/developer/api/ij/process/ImageProcessor.html), which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
     -   `ByteProcessor` - `byte[]`
     -   `ShortProcessor` - `short[]`
     -   `FloatProcessor` - `float[]`
     -   `ColorProcessor` - `int[]` (byte-packed ARGB, but Alpha channel is ignored)
--   The [`ImageStack`](https://imagej.nih.gov/ij/developer/api/ij/ImageStack.html) which contains unfortunately not an array of `ImageProcessor,` but an `Object[]` containing an homogeneous list of equal length `byte[]`, or `float[]`, etc.
+-   The [`ImageStack`](https://imagej.net/ij/developer/api/ij/ImageStack.html) which contains unfortunately not an array of `ImageProcessor,` but an `Object[]` containing an homogeneous list of equal length `byte[]`, or `float[]`, etc.
 
 For extensive documentation, see the [Anatomy of an ImageJ image](http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics) ImageJ programming basics tutorial.
 
@@ -334,7 +334,7 @@ An alternative way would be to simply duplicate the processor of imp-1, and then
 
 ### Resizing an ImageStack
 
-This one is harder, because an ImageStack is just a wrapper for Object\[\] list of pixel arrays. ImageJ though provides a mid-level resizing method, via the [CanvasResizer](https://imagej.nih.gov/ij/developer/api/ij/plugin/CanvasResizer.html) class:
+This one is harder, because an ImageStack is just a wrapper for Object\[\] list of pixel arrays. ImageJ though provides a mid-level resizing method, via the [CanvasResizer](https://imagej.net/ij/developer/api/ij/plugin/CanvasResizer.html) class:
 
 ```clojure
 (import '(ij.plugin CanvasResizer)

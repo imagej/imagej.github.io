@@ -108,7 +108,7 @@ Here is a summary of roles for projects in the [SciJava](/libs/scijava) ecosyste
         {% include person id='rasband' %}
       </td>
       <td>
-        See <a href="https://imagej.nih.gov/ij/notes.html">release notes</a>
+        See <a href="https://imagej.net/ij/notes.html">release notes</a>
       </td>
     </tr>
     <tr>

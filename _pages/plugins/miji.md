@@ -38,7 +38,7 @@ If you get an error saying that some Plugin related classes cannot be found, ple
 
 ## Running ImageJ commands
 
-In ImageJ, you can [record macros](https://imagej.nih.gov/ij/docs/guide/146-31.html#sub:Record...), one of the most powerful ways to use the program. Most of the recorded statements will look like this:
+In ImageJ, you can [record macros](https://imagej.net/ij/docs/guide/146-31.html#sub:Record...), one of the most powerful ways to use the program. Most of the recorded statements will look like this:
 
 ```javascript
 run("Command", "key1=7 key2 key3=[C:\\Documents and Settings\\Fiji\\Test.png]");

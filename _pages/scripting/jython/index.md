@@ -141,7 +141,7 @@ Doing this allows you to access the `IJ` *class* which resides in the `ij` *pack
 4.  depth (int)
 5.  bitdepth (int)
 
-and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
+and it returns an `ImagePlus` object. `ImagePlus` objects are very important in ImageJ, and you will the documentation for them [here](https://imagej.net/ij/developer/api/ij/ImagePlus.html). Below is an example of how to import and use the static methods on the `IJ` class to create an image.
 
 ```python
 from ij import IJ # read this as: "from the ij package import the IJ class"
@@ -166,9 +166,9 @@ print("{} is {} wide and {} tall.".format(title, width, height))
 test_img.show()
 ```
 
-We accessed the title using the `getTitle()` [method](https://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/ImagePlus.html#getTitle--), which takes no arguments and returns the image name. We accessed the image width and height by accessing `test_img`'s **fields**. These are not methods, but contain information about the class. We could have also used the `getWidth()` and `getHeight()` methods as well. We then called the `show()` method on our test image and a (very boring) 512X512 8 bit image should have popped up.
+We accessed the title using the `getTitle()` [method](https://javadoc.scijava.org/ImageJ1https://imagej.net/ij/ImagePlus.html#getTitle--), which takes no arguments and returns the image name. We accessed the image width and height by accessing `test_img`'s **fields**. These are not methods, but contain information about the class. We could have also used the `getWidth()` and `getHeight()` methods as well. We then called the `show()` method on our test image and a (very boring) 512X512 8 bit image should have popped up.
 
-Here is another example where we use the ImageJ package and the [RoiManager](http://javadoc.scijava.org/ImageJ1https://imagej.nih.gov/ij/plugin/frame/RoiManager.html) class. According to the javadoc, the RoiManager class resides in `ij.plugin.frame`. Therefore the code will look like :
+Here is another example where we use the ImageJ package and the [RoiManager](http://javadoc.scijava.org/ImageJ1https://imagej.net/ij/plugin/frame/RoiManager.html) class. According to the javadoc, the RoiManager class resides in `ij.plugin.frame`. Therefore the code will look like :
 
 ```python
 from ij.plugin.frame import RoiManager
@@ -445,4 +445,4 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
 
 ## References
 
-[^1]: [Wikipedia entry on Jython](https://imagej.nih.gov/ij/plugins/index.html). Accessed: 2016-08-30
+[^1]: [Wikipedia entry on Jython](https://imagej.net/ij/plugins/index.html). Accessed: 2016-08-30

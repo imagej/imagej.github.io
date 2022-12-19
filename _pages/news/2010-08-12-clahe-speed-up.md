@@ -10,6 +10,6 @@ You will notice, that the result is not exactly the same as in the exact per-pix
 
 [Update Fiji](/plugins/updater) to get the new version immediately.
 
-There is also a [standalone plugin](https://imagej.nih.gov/ij/plugins/clahe/index.html) for ImageJ available.
+There is also a [standalone plugin](https://imagej.net/ij/plugins/clahe/index.html) for ImageJ available.
 
 

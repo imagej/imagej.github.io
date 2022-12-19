@@ -4,12 +4,12 @@ name: "Multi Otsu Threshold"
 title: Multi Otsu Threshold
 categories: [Segmentation]
 initial-release-date: "14 April 2006"
-website: "https://imagej.nih.gov/ij/plugins/multi-otsu-threshold.html"
+website: "https://imagej.net/ij/plugins/multi-otsu-threshold.html"
 dev-status: "stable"
 team-founder: 'Yasunari Tosa'
 ---
 
-{% include info-box filename='Multi\_OtsuThreshold.class' source=' [Multi\_OtsuThreshold.java](https://imagej.nih.gov/ij/plugins/download/Multi_OtsuThreshold.java)' %}
+{% include info-box filename='Multi\_OtsuThreshold.class' source=' [Multi\_OtsuThreshold.java](https://imagej.net/ij/plugins/download/Multi_OtsuThreshold.java)' %}
 
 ## Purpose
 

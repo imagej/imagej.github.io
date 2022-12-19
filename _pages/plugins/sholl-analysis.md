@@ -102,7 +102,7 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
 
 
 {%- capture binary-tip -%}
-With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](https://imagej.nih.gov/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
+With binary images, *Sholl Analysis* treats zero intensities as the background, independently of the image lookup table or the state of the *Black background option* in {% include bc path="Process | Binary | Options..." %}. As with any other [ImageJ routine](https://imagej.net/ij/docs/guide/146-29.html#infobox:blackBackground) , confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
 {%- endcapture -%}
 {% include notice icon="tip" content=binary-tip %}
 
@@ -396,7 +396,7 @@ SNT provides several scripts and commands that faciliate all type of Sholl-relat
 %}
 
 {% capture tip%}
-For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at [tutorials](/tutorials), [segmentation](/imaging/segmentation) and the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) .
+For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at [tutorials](/tutorials), [segmentation](/imaging/segmentation) and the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) .
 {% endcapture %}
 {% include notice icon="tip" content=tip %}
 
@@ -651,7 +651,7 @@ Use the Edit this page option on the [top](#top) of the page and edit its conten
 <dl>
 <dd markdown="1">
 
-The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...'%} or {% include bc path='Image|Type|'%} commands.
+The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.net/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...'%} or {% include bc path='Image|Type|'%} commands.
 
 </dd>
 </dl>
@@ -663,7 +663,7 @@ The plugin does not parse RGB images, but will process any grayscale image (8/16
 <dl>
 <dd markdown="1">
 
-This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
+This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
 
 </dd>
 </dl>
@@ -716,7 +716,7 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 <dl>
 <dd markdown="1">
 
-Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>

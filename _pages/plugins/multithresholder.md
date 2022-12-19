@@ -5,7 +5,7 @@ title: MultiThresholder
 categories: [Segmentation]
 release-date: "25 January 2007"
 initial-release-date: "21 July 2005"
-website: "https://imagej.nih.gov/ij/plugins/multi-thresholder.html"
+website: "https://imagej.net/ij/plugins/multi-thresholder.html"
 dev-status: "unknown"
 team-founder: 'Kevin (Gali) Baler'
 ---
@@ -16,7 +16,7 @@ plugin from {% include person id='landinig' %} does a better job.
 {%- endcapture removed-from-fiji -%}
 {% include notice icon="info" content=removed-from-fiji %}
 
-{% include info-box filename=' [Multi_Thresholder.jar](https://imagej.nih.gov/ij/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file'  %}
+{% include info-box filename=' [Multi_Thresholder.jar](https://imagej.net/ij/plugins/download/jars/Multi_Thresholder.jar) (30,729 Bytes)' source='in .jar file'  %}
 
 ## Purpose
 

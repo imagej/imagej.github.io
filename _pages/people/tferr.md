@@ -24,9 +24,9 @@ Tiago Ferreira (he/him) is a researcher at Janelia Research Campus, and the auth
     - [Find Peaks](/plugins/find-peaks)
     - [ROI Color Coder](https://imagejdocu.list.lu/doku.php?id=macro:roi_color_coder) †
     - [Distribution Plotter](https://imagejdocu.list.lu/doku.php?id=macro:distribution_plotter) †
-    - [ROI Manager Tools](https://imagej.nih.gov/ij/plugins/roi-manager-tools/) †
+    - [ROI Manager Tools](https://imagej.net/ij/plugins/roi-manager-tools/) †
 
-He has also made significant improvemts to Fiji's [Script Editor](/scripting/script-editor) ({% include github org='scijava' repo='script-editor' label='GitHub' %}), and contributes to several libraries and documentation efforts related to ImageJ. Tiago Ferreira is the author of the [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/) ({% include github org='tferr' repo='IJ-guide' label='GitHub' %}).
+He has also made significant improvemts to Fiji's [Script Editor](/scripting/script-editor) ({% include github org='scijava' repo='script-editor' label='GitHub' %}), and contributes to several libraries and documentation efforts related to ImageJ. Tiago Ferreira is the author of the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) ({% include github org='tferr' repo='IJ-guide' label='GitHub' %}).
 
 You can reach him [here](https://forum.image.sc/new-message?username=tferr&title=Hi+Tiago%21&body=Hi+Tiago%2C%0D%0AI+am+reaching+out+because...).
 

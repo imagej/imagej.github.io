@@ -5,12 +5,12 @@ title: Granulometric Filtering
 categories: [Particle Analysis]
 doi: 10.1016/j.jneumeth.2005.07.011
 release-date: "21 May 2005"
-website: "https://imagej.nih.gov/ij/plugins/gran-filter.html"
+website: "https://imagej.net/ij/plugins/gran-filter.html"
 dev-status: "unknown"
 team-founder: '@dprodanov'
 ---
 
-{% include info-box filename=' [Gran_Filter.jar](https://imagej.nih.gov/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' %}
+{% include info-box filename=' [Gran_Filter.jar](https://imagej.net/ij/plugins/download/jars/Gran_Filter.jar) (39,559 Bytes)' source='in .jar file' %}
 
 ## Purpose
 

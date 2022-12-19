@@ -6,8 +6,8 @@ section: Explore:Software:Fiji
 
 -   [ImageJ's Google+ page](https://plus.google.com/u/0/112060674582400644206/)
 -   [Fiji's Google+ page](https://plus.google.com/u/0/111207545597136714163/)
--   [ImageJ website](https://imagej.nih.gov/ij/)
--   [ImageJ User Manual](https://imagej.nih.gov/ij/docs/user-guide.pdf)
+-   [ImageJ website](https://imagej.net/ij/)
+-   [ImageJ User Manual](https://imagej.net/ij/docs/user-guide.pdf)
 -   [Fluorescence image analysis introduction](http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/)
 -   [ImageJ Documentation Wiki](http://imagejdocu.list.lu/doku.php)
 -   [About the relationship between ImageJ2 and Fiji](http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations)
@@ -20,7 +20,7 @@ Links to the contributors' personal pages can be found [here](/people).
 
 ## More ImageJ plugins
 
--   Plugins on the [ImageJ website](https://imagej.nih.gov/ij/plugins/index.html), specifically [links to external websites](https://imagej.nih.gov/ij/plugins/index.html#more)
+-   Plugins on the [ImageJ website](https://imagej.net/ij/plugins/index.html), specifically [links to external websites](https://imagej.net/ij/plugins/index.html#more)
 -   Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.list.lu/doku.php?id=plugin:start)
 -   The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
 -   Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
@@ -123,7 +123,7 @@ If you're still unsure and think that your code is not good enough, then publish
 
 ## Miscellaneous
 
--   An [explanation](https://imagej.nih.gov/ij/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
+-   An [explanation](https://imagej.net/ij/docs/install/osx.html#icon) where ImageJ's icon's [microscope](http://www.arsmachina.com/s-hart1209.htm) comes from.
 
 ## Imaging Networks and Facilities
 

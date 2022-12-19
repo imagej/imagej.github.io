@@ -24,7 +24,7 @@ If you are using NanoTrackJ in a scientific publication, please cite:
 
 **Center Estimation:** here are three methods available. The blob method requires a binary image. The objects you want to track should be connected foreground pixels. Such connected regions are often called "blobs". Each blob represents a particle to be tracked. You have to segment your image (e.g. through thresholding) to use this method. The centroid of the blob is used for tracking.
 
-The *maxima method* utilizes the [{% include bc path="Process|Find Maxima" %}](https://imagej.nih.gov/ij/docs/menus/process.html#find-maxima) method of ImageJ. A "Spot Assistant" helps the user to select an appropriate mean filter size and tolerance value.
+The *maxima method* utilizes the [{% include bc path="Process|Find Maxima" %}](https://imagej.net/ij/docs/menus/process.html#find-maxima) method of ImageJ. A "Spot Assistant" helps the user to select an appropriate mean filter size and tolerance value.
 
 ![](/media/plugins/spotassistant.png)
 
@@ -32,7 +32,7 @@ This is the recommended method and it is also usable with RGB image series. The 
 
 ![](/media/spots.png) ![](/media/plugins/spotsmax.png)
 
-The *maxima method & gaussian fit* also utilizes the [{% include bc path="Process|Find Maxima" %}](https://imagej.nih.gov/ij/docs/menus/process.html#find-maxima) method of ImageJ but do an gaussian fit after that to improve the estimation qualtity. Theoretically it achieves sub-pixel accuracy. However, diffraction patterns often suffers from saturation and sometimes they do not even have a gaussian shape so that sub-pixel accuracy is not achievable.
+The *maxima method & gaussian fit* also utilizes the [{% include bc path="Process|Find Maxima" %}](https://imagej.net/ij/docs/menus/process.html#find-maxima) method of ImageJ but do an gaussian fit after that to improve the estimation qualtity. Theoretically it achieves sub-pixel accuracy. However, diffraction patterns often suffers from saturation and sometimes they do not even have a gaussian shape so that sub-pixel accuracy is not achievable.
 
 **Diffusion-Coefficient-Estimator:** Two methods are available: The regression method and the covariance method. The *regression method* is the most used in literature to estimate the diffusion coefficient. It evaluates the mean squared displacement for different time lags. Then it fits a regression line to the data points. This regression line is not constrained to go through the point of origin (0,0). The slope of this regression line is proportional to diffusion coefficient. This method is very simple but unfortunately error prone. Up to now its not clear, how many data points lead to the best estimate. Therefore, the plugin allows the user to determine what minimum and maximum time lag should be used.
 

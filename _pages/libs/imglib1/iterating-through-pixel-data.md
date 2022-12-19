@@ -73,7 +73,7 @@ public class Example_Cursors<T extends RealType<T>> implements PlugIn {
     public void run(String arg) {
 
         // Open the bat-cochlea example
-                String name = "https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip";
+                String name = "https://imagej.net/ij/images/bat-cochlea-volume.zip";
         ImagePlus imp = IJ.openImage(name);
         imp.show();
 
@@ -137,7 +137,7 @@ public class Localizable_Cursors<T extends RealType<T>> implements PlugIn {
     public void run(String arg) {
  
         // Open the M51 galaxy example
-                String name = "https://imagej.nih.gov/ij/images/m51.tif";
+                String name = "https://imagej.net/ij/images/m51.tif";
         ImagePlus imp = IJ.openImage(name);
         imp.show();
  
@@ -226,7 +226,7 @@ public class LocalizableByDim_Cursors<T extends RealType<T>> implements PlugIn {
 	public void run(String arg) {
  
 		// Open the Confocal series example
-				final String name = "https://imagej.nih.gov/ij/images/mri-stack.zip";
+				final String name = "https://imagej.net/ij/images/mri-stack.zip";
 		final ImagePlus imp = IJ.openImage(name);
 		imp.show();
  

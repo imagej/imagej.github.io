@@ -5,12 +5,12 @@ title: Sigma Filter
 categories: [Filtering]
 doi: 10.1016/0734-189X(83)90047-6
 initial-release-date: "25 October 2007"
-website: "https://imagej.nih.gov/ij/plugins/sigma-filter.html"
+website: "https://imagej.net/ij/plugins/sigma-filter.html"
 dev-status: "1st version"
 team-founder: 'Michael Schmid and Tony Collins'
 ---
 
-{% include info-box filename=' [Sigma_Filter_Plus.class](https://imagej.nih.gov/ij/plugins/download/Sigma_Filter_Plus.class)' source=' [Sigma_Filter_Plus.java](https://imagej.nih.gov/ij/plugins/download/Sigma_Filter_Plus.java)' %}
+{% include info-box filename=' [Sigma_Filter_Plus.class](https://imagej.net/ij/plugins/download/Sigma_Filter_Plus.class)' source=' [Sigma_Filter_Plus.java](https://imagej.net/ij/plugins/download/Sigma_Filter_Plus.java)' %}
 
 ## Purpose
 

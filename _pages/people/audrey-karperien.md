@@ -12,4 +12,4 @@ loop: 67628
 ---
 
 Audrey Karperien is developer and project lead for
-[FracLac](https://imagej.nih.gov/ij/plugins/fraclac/fraclac.html).
+[FracLac](https://imagej.net/ij/plugins/fraclac/fraclac.html).

@@ -4,12 +4,12 @@ name: "Maximum Entropy Threshold"
 title: Maximum Entropy Threshold
 categories: [Segmentation]
 initial-release-date: "13 February 2004"
-website: "https://imagej.nih.gov/ij/plugins/entropy.html"
+website: "https://imagej.net/ij/plugins/entropy.html"
 dev-status: "unknown"
 team-founder: 'Jerek Sacha'
 ---
 
-{% include info-box filename=' [Entropy\_Threshold.class](https://imagej.nih.gov/ij/plugins/download/Entropy_Threshold.class) (1,418 Bytes)' source=' [Entropy\_Threshold.java](https://imagej.nih.gov/ij/plugins/download/Entropy_Threshold.java) (2,755 Bytes)' %}
+{% include info-box filename=' [Entropy\_Threshold.class](https://imagej.net/ij/plugins/download/Entropy_Threshold.class) (1,418 Bytes)' source=' [Entropy\_Threshold.java](https://imagej.net/ij/plugins/download/Entropy_Threshold.java) (2,755 Bytes)' %}
 
 ## Purpose
 

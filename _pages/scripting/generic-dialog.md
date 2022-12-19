@@ -5,7 +5,7 @@ project: /software/imagej
 
 ## Introduction
 
-The [GenericDialog](https://imagej.nih.gov/ij/developer/api/ij/ij/gui/GenericDialog.html) class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more work than with the [script parameters](/scripting/parameters) feature of [SciJava](/libs/scijava), but offers more possibilities.
+The [GenericDialog](https://imagej.net/ij/developer/api/ij/ij/gui/GenericDialog.html) class is part of [ImageJ](/software/imagej) and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more work than with the [script parameters](/scripting/parameters) feature of [SciJava](/libs/scijava), but offers more possibilities.
 
 Fiji offers an additional {% include javadoc project='Fiji' package='fiji/util/gui' class='GenericDialogPlus' %} subclass which include additional GUI items like a file input with a browse button.  
 
@@ -76,7 +76,7 @@ Dialog.addChoice("Type:", newArray("8-bit", "16-bit", "32-bit", "RGB"));
 Dialog.addCheckbox("Ramp", true);
 
 // One can add a Help button that opens a webpage
-Dialog.addHelp("https://imagej.nih.gov/ij/macros/DialogDemo.txt");
+Dialog.addHelp("https://imagej.net/ij/macros/DialogDemo.txt");
 
 // Finally show the GUI, once all parameters have been added
 Dialog.show();
@@ -96,7 +96,7 @@ print("Choice:", inChoice);
 print("Do something (1=True, 0=False):", inBoolean);
 ```
 
-See the section "/scripting/generic-dialog" of the [Macro functions reference](https://imagej.nih.gov/ij/developer/macro/functions.html) for more details.
+See the section "/scripting/generic-dialog" of the [Macro functions reference](https://imagej.net/ij/developer/macro/functions.html) for more details.
 
 ## Image and file inputs
 

@@ -26,8 +26,8 @@ The script is maintained by Albert Cardona.
     (.openURL opener url)))
 
 ; Fetch two example 512x512 images from the net
-(let [baboon (open-url "https://imagej.nih.gov/ij/images/baboon.jpg")
-      bridge (open-url "https://imagej.nih.gov/ij/images/bridge.gif")]
+(let [baboon (open-url "https://imagej.net/ij/images/baboon.jpg")
+      bridge (open-url "https://imagej.net/ij/images/bridge.gif")]
   ; Obtain color channel byte arrays for baboon color image
   (let [len (count (.. baboon (getProcessor) (getPixels))) ; could also say (* 512 512)
     r (make-array Byte/TYPE len)

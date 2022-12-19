@@ -241,7 +241,7 @@ imp.show()
 
 ```python
 # 1 - Obtain an image
-blobs = IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif")
+blobs = IJ.openImage("https://imagej.net/ij/images/blobs.gif")
 # Make a copy with the same properties as blobs image:
 imp = blobs.createImagePlus()
 ip = blobs.getProcessor().duplicate()
@@ -288,7 +288,7 @@ table = ResultsTable()
 roim = RoiManager(True)
 # Create a ParticleAnalyzer, with arguments:
 # 1. options (could be SHOW_ROI_MASKS, SHOW_OUTLINES, SHOW_MASKS, SHOW_NONE, ADD_TO_MANAGER, and others; combined with bitwise-or)
-# 2. measurement options (see [https://imagej.nih.gov/ij/developer/api/ij/measure/Measurements.html Measurements])
+# 2. measurement options (see https://imagej.net/ij/developer/api/ij/measure/Measurements.html)
 # 3. a ResultsTable to store the measurements
 # 4. The minimum size of a particle to consider for measurement
 # 5. The maximum size (idem)
@@ -400,11 +400,11 @@ finally:
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
 ```python
-imp = IJ.openImage("https://imagej.nih.gov/ij/images/blobs.gif")
+imp = IJ.openImage("https://imagej.net/ij/images/blobs.gif")
 IJ.run(imp, "Histogram", "")
 ```
 
-How ImageJ does it, internally, has to do with the [ImageStatisics](https://imagej.nih.gov/ij/developer/api/ij/process/ImageStatistics.html) class:
+How ImageJ does it, internally, has to do with the [ImageStatisics](https://imagej.net/ij/developer/api/ij/process/ImageStatistics.html) class:
 
 ```python
 stats = imp.getStatistics()
@@ -429,7 +429,7 @@ array('i',[0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 304,
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
-To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](https://imagej.nih.gov/ij/developer/api/ij/measure/Measurements.html)):
+To calculate other parameters, specify them by bitwise-or composition (see flags in [Measurements](https://imagej.net/ij/developer/api/ij/measure/Measurements.html)):
 
 stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
 print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
@@ -451,7 +451,7 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 mean: 104.96356275303644 median: 64.0 area: 1976.0
 ```
 
-To display the histogram window ourselves, we may use the [HistogramWindow](https://imagej.nih.gov/ij/developer/api/ij/gui/HistogramWindow.html) class:
+To display the histogram window ourselves, we may use the [HistogramWindow](https://imagej.net/ij/developer/api/ij/gui/HistogramWindow.html) class:
 
 ```python
 hwin = HistogramWindow(imp)
@@ -1143,7 +1143,7 @@ run()
 
 ### Apply a binary mask to every slice in an image stack
 
-Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](https://imagej.nih.gov/ij/developer/api/ij/process/ImageProcessor.html) obtained from the [ImageStack](https://imagej.nih.gov/ij/developer/api/ij/ImageStack.html) that one can get from the [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html). (The [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html) being what the opener or the [WindowManager](https://imagej.nih.gov/ij/developer/api/ij/WindowManager.html) provides.)
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [ImageProcessor](https://imagej.net/ij/developer/api/ij/process/ImageProcessor.html) obtained from the [ImageStack](https://imagej.net/ij/developer/api/ij/ImageStack.html) that one can get from the [ImagePlus](https://imagej.net/ij/developer/api/ij/ImagePlus.html). (The [ImagePlus](https://imagej.net/ij/developer/api/ij/ImagePlus.html) being what the opener or the [WindowManager](https://imagej.net/ij/developer/api/ij/WindowManager.html) provides.)
 
 ```python
 # Albert Cardona 2012-10-05 for Sara Abrahamsson
@@ -1731,7 +1731,7 @@ from ij import IJ, ImagePlus, ImageStack
 from fiji.scripting import Weaver
 
 # The currently open image, an 8-bit stack
-imp = IJ.openImage("https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
+imp = IJ.openImage("https://imagej.net/ij/images/bat-cochlea-volume.zip")
 
 slices = [None, None]
 
@@ -1770,7 +1770,7 @@ from ij import IJ, ImagePlus, ImageStack
 from fiji.scripting import Weaver
 
 # The currently open image, an 8-bit stack
-imp = IJ.openImage("https://imagej.nih.gov/ij/images/bat-cochlea-volume.zip")
+imp = IJ.openImage("https://imagej.net/ij/images/bat-cochlea-volume.zip")
 
 w = Weaver.method(
   """

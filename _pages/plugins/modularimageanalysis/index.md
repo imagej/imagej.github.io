@@ -193,7 +193,7 @@ If you haven't already done so, at this point it's also worth looking at the [ex
 ## Acknowledgements
 The plugin makes use of a combination of plugins packaged with Fiji as well as others that can be installed via the updater.
 
-Required plugins pre-packaged with Fiji: [AnalyzeSkeleton](/plugins/analyze-skeleton), [Auto Threshold](/plugins/auto-threshold), [bUnwarpJ](/plugins/bunwarpj), [Bio-Formats](/formats/bio-formats), [Colour Deconvolution](/plugins/colour-deconvolution), [Correct Bleach](/plugins/bleach-correction), [Feature Extraction](/plugins/feature-extraction), [TrackMate](/plugins/trackmate), [Weka Trainable Segmentation](/plugins/tws).  Required plugins that need installing via the ImageJ updater: [MorphoLibJ](/plugins/morpholibj).  Plugins bundled with MIA: [Stack Focuser](https://imagej.nih.gov/ij/plugins/stack-focuser.html).
+Required plugins pre-packaged with Fiji: [AnalyzeSkeleton](/plugins/analyze-skeleton), [Auto Threshold](/plugins/auto-threshold), [bUnwarpJ](/plugins/bunwarpj), [Bio-Formats](/formats/bio-formats), [Colour Deconvolution](/plugins/colour-deconvolution), [Correct Bleach](/plugins/bleach-correction), [Feature Extraction](/plugins/feature-extraction), [TrackMate](/plugins/trackmate), [Weka Trainable Segmentation](/plugins/tws).  Required plugins that need installing via the ImageJ updater: [MorphoLibJ](/plugins/morpholibj).  Plugins bundled with MIA: [Stack Focuser](https://imagej.net/ij/plugins/stack-focuser.html).
 
 A list of bundled dependencies along with their respective licenses can be found [here](https://htmlpreview.github.io/?https://github.com/mianalysis/mia/blob/master/target/site/dependencies.html).
 

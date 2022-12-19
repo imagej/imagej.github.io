@@ -12,7 +12,7 @@ The {% include wikipedia title='TIFF' text='TIFF file format' %} is one of the m
 
 [ImageJ](/software/imagej) (and therefore [ImageJ2](/software/imagej2) with its default legacy user interface) has built-in support for TIFF files via the {% include bc path='File | Open...' %} command.
 
-You can also import TIFFs as [virtual stacks](https://imagej.nih.gov/ij/docs/guide/146-8.html#sub:Virtual-Stacks) via the {% include bc path='File | Import | TIFF Virtual Stack...' %} command.
+You can also import TIFFs as [virtual stacks](https://imagej.net/ij/docs/guide/146-8.html#sub:Virtual-Stacks) via the {% include bc path='File | Import | TIFF Virtual Stack...' %} command.
 
 -   **Pro:** The ImageJ TIFF reader is very fast.
 -   **Con:** The ImageJ TIFF support is incomplete. Some valid baseline TIFF files will not open properly. In particular, TIFF files with out-of-order planes cannot be opened.

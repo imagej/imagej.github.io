@@ -104,7 +104,7 @@ Should you use the plugin very frequently, it would be perhaps useful to access 
 
 A new keyboard shortcut can be defined using `Plugins` – `Shortcuts` – `Add Shortcut...` in the top menu. In the displayed window, pick a shortcut of your choice (e.g., `F12`) and select `Analyze` or `Train` as the command.
 
-See [ImageJ docs](https://imagej.nih.gov/ij/docs/guide/146-31.html#toc-Subsection-31.2.2) for more information on how to manage keyboard shortcuts in ImageJ.
+See [ImageJ docs](https://imagej.net/ij/docs/guide/146-31.html#toc-Subsection-31.2.2) for more information on how to manage keyboard shortcuts in ImageJ.
 
 ### Determining the pixel size
 

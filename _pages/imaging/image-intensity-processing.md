@@ -35,7 +35,7 @@ The results are displayed in a plot-window with the ROI details in the plot wind
 
 ## Dynamic intensity vs Time analysis
 
-The plugin *Plot Z Axis Profile* (this is the *[Z Profiler](https://imagej.nih.gov/ij/plugins/z-profiler.html)* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person id='rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc path='Image | Stacks | Plot Z Axis Profile'%} command.
+The plugin *Plot Z Axis Profile* (this is the *[Z Profiler](https://imagej.net/ij/plugins/z-profiler.html)* from Kevin (Gali) Baler (gliblr at yahoo.com) and {% include person id='rasband' %} simply renamed) will monitor the intensity of a moving ROI using a particle tracking tool. This tool can be either manual or automatic. Use the {% include bc path='Image | Stacks | Plot Z Axis Profile'%} command.
 
 ## Getting intensity values from multiple ROIs
 
