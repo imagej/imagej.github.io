@@ -52,7 +52,7 @@ A comprehensive dataset can be found on Zenodo at [https://doi.org/10.5281/zenod
 
 ## Installation
 
-The following video guide you throughout the installation process, and take a first tour of FijiRelax functions.
+The following video guide you throughout the installation process, and take a first tour of FijiRelax functions. Window users, warning. You have specific operations to run at the end of this section.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8jEVQjRbFcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -67,6 +67,8 @@ In order to install FijiRelax on your computer, please follow these steps:
 4\. Add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. Now you can click on **Close** and apply the modifications.
 
 5\. Restart Fiji: a new **FijiRelax** entry should be available in the menu {% include bc path="Plugins | Analyze" %}. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK** and **Fijiyama** are correctly selected.
+
+6\. If you are a Windows user: there is specific issues between an external package ImageJ-ITK and the current JDK shipped with ImageJ. Whether or not you understand this point, please follow the documented procedure to escape this. You have to use ImageJ with a different JAVA version. It is well explained there: https://imagej.net/learn/faq#on-windows . You can find for example an OpenJDK 8 at OpenLogic, then install it, and when asked, check the box to select that it have to build a JAVA_HOME variable (replace a red cross symbole by a hard-disk symbol when asked, you'll see it). After that you remove the java or jre dir in your Fiji.app, as said, and it's ok!
 
 
 ## Preparing your data
