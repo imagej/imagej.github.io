@@ -56,6 +56,7 @@ In order to address the complex task of multi-modal registration, computation is
 ## Installation
 
 In order to install Fijiyama on your computer, please follow these simple steps:
+Window users, warning. You have specific operations to run at the end of this section.
 
 1\. (if needed) Download and install Fiji from https://fiji.sc/ ; start Fiji, and let it automatically update. Then restart Fiji.
 
@@ -66,6 +67,8 @@ In order to install Fijiyama on your computer, please follow these simple steps:
 and add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox.
 
 4\. Restart Fiji: a new **Fijiyama** entry should be available in the menu {% include bc path="Plugins | Registration" %}. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK**, and **Fijiyama** are correctly selected.
+
+5\. If you are a Windows user: there is specific issues between an external package ImageJ-ITK and the current JDK shipped with ImageJ. Whether or not you understand this point, please follow the documented procedure to escape this. You have to use ImageJ with a different JAVA version. It is well explained there: https://imagej.net/learn/faq#on-windows . You can find for example an OpenJDK 8 at OpenLogic, then install it, and when asked, check the box to select that it have to build a JAVA_HOME variable (replace a red cross symbole by a hard-disk symbol when asked, you'll see it). After that you remove the java or jre dir in your Fiji.app, as said, and it's ok!
 
 The following video shows a tutorial for Fijiyama installation:
 
