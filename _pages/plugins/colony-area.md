@@ -209,3 +209,20 @@ Steps involved in the processing
 ```
 
 [Note: sum of maximum intensities can be rewritten as 255*area of well or region.]
+
+# ColonyArea ImageJ plugin
+
+[![DOI:10.1371/journal.pone.0092444](http://img.shields.io/badge/DOI-10.1371/journal.pone.0092444-00AEEF.svg)](https://doi.org/10.1371/journal.pone.0092444)
+
+**Camilo Guzmán<sup>1,2</sup>, Manish Bagga<sup>1,2</sup>, Amanpreet Kaur<sup>1</sup>, Jukka Westermarck<sup>1</sup>, and Daniel Abankwa<sup>1</sup>**
+
+<sup>1</sup>Turku Centre for Biotechnology, University of Turku, Åbo Akademi University  
+<sup>2</sup>Equal contribution
+
+<table style='border-collapse: collapse; border-style:hidden';>
+<tr style='padding:10px;'>
+<td style='padding: 10px;'><a href='https://bioscience.fi' target='_blank'><img src='https://raw.githubusercontent.com/Turku-BioImaging/ColonyArea/main/images/turku_bioscience_logo_RGB-300x78.png' width='auto' height='45'/></a></td>
+<td style='padding: 10px;'><a href='https://utu.fi' target='_blank'><img src='https://raw.githubusercontent.com/Turku-BioImaging/ColonyArea/main/images/UTU_logo_EN_RGB.png' width='auto' height='45'/></a></td>
+<td style='padding: 10px;'><a href='https://abo.fi' target='_blank'><img src='https://raw.githubusercontent.com/Turku-BioImaging/ColonyArea/main/images/aaenglogobasicbw2009.png' width='auto' height='55'/></a></td>
+</tr>
+</table>
