@@ -19,7 +19,7 @@ The plugin can be used with labelled images, but it also integrates tools for th
 
 Jean-François Gilles, Institute of Biology Paris Seine (France). jean-francois.gilles (at) upmc.fr
 
-Thomas Boudier ![](/media/emailboudier.png), [Academia Sinica](https://www.sinica.edu.tw/en), Taipei, Taiwan.
+Thomas Boudier ![](/media/emailboudier.png), [CENTURI](https://centuri-livingsystems.org), Université Aix-Marseille, France.
 
 ## Features
 
@@ -139,7 +139,7 @@ if the recorder has a problem, here are some examples of macro line:
 
 ## Installation
 
-Download and copy the following jar in your plugins folder [Diana\_1.49.jar](https://drive.google.com/file/d/1W1qOUGuOgSOs5KeNY0BZ6353tp-TJnky)
+Download and copy the following jar in your plugins folder [Diana\_1.50.jar](https://drive.google.com/file/d/1sR9StTTMX-Oi466nR2SCHXg2KySAyXhV)
 
 You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](https://mcib3d.frama.io/3d-suite-imagej/).
 
@@ -171,5 +171,6 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
 -   24/02/2020 v1.47: bug fixed with the shuffle in macro line
 -   28/04/2020 v1.48: add integrated density measure
 -   02/02/2022 v1.49: bugs fixed, add some small options
+-   09/01/2023 v1.50: bugs fixed
 
    
