@@ -63,7 +63,7 @@ Major updates include new features released, or major refactoring, while minor u
 
 ## Citing this work
 
--  Romain Fernandez, Amandine Crabos, Morgan Maillard, Philippe Nacry, Christophe Pradal. High-throughput and automatic structural and developmental root phenotyping on Arabidopsis seedlings. bioRxiv 2022.07.13.499903; doi: https://doi.org/10.1101/2022.07.13.499903
+-  Fernandez, R., Crabos, A., Maillard, M. et al. High-throughput and automatic structural and developmental root phenotyping on Arabidopsis seedlings. Plant Methods 18, 127 (2022). https://doi.org/10.1186/s13007-022-00960-5
 
 ## Contact
 
