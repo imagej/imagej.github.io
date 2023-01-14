@@ -40,6 +40,8 @@ It you are processing a stack, two additional options are available: **Stack** c
 
 **5.** The same image *scaled* by a fixed value (e.g. when multiplying all pixels by a fixed value) returns a similar threshold result (within 2 greyscale levels of the original unscaled image) for all methods except Huang, Li and Triangle due to the way these algorithms work. E.g. the Triangle method applied to an 8 bit image and to the same image converted to 16 bits *with scaling* can result in different threshold values. This is because the scaling from 8 to 16 bits creates empty bins in between the scaled grey values. The Triangle method (based on a geometric approach) finds those artefactual gaps in the new 16 bit histogram which satisfy the method constraints, but which would not exist in the original 8 bit image. This cannot be prevented (for example by detecting empty histogram bins) as it would interfere with the analysis when real empty bins (as oppose to artefactual ones) exist in the image.
 
+**6.** Added bilevel image threshold. Thanks to Wayne Rasband and Wilhelm Burger. When the image consists of only 2 different pixel values (any two intensities) the plugin will automatically threshold it to values 0 and 255, while ignoring the selected thresholding method. This is because most methods expecting bi-modal histograms will fail as bilevel images can sometimes be interpreted as unimodal (e.g. an image consisting of two contiguous values in the histogram).
+
 ## Available methods
 
 ### Try all
