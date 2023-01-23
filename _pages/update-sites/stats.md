@@ -55,3 +55,27 @@ section: Extend:Update Sites
 You can download the raw data from:
 
 {% include link-banner url='https://sites.imagej.net/stats.json' %}
+
+Here is an example Python script to list all update sites with more than 5000 hits in the year 2022:
+
+```python
+import json
+
+year = 2022
+cutoff = 5000
+
+with open('stats.json') as f:
+    stats = json.load(f)
+
+recent_totals = {
+    site: sum(v for date, v in counts.items() if date.startswith(f'{year}-'))
+    if isinstance(counts, dict) else 0
+    for site, counts in stats.items()
+}
+
+popular = dict(sorted(recent_totals.items(), key=lambda x:x[1]))
+
+for site, total in popular.items():
+    if total > cutoff:
+        print(f"* {site} = {total}")
+```
