@@ -222,6 +222,7 @@ table.info-notice {
   font-size: large;
   background-color: khaki;
   padding: 0.5em 0 0.5em 3em;
+  margin-bottom: 1em;
 }
 
 /* notice */
