@@ -52,6 +52,8 @@ section: Extend:Update Sites
     });
 </script>
 
+## Analyzing the data yourself
+
 You can download the raw data from:
 
 {% include link-banner url='https://sites.imagej.net/stats.json' %}
