@@ -105,6 +105,7 @@ The shell script also uses a Python script to transform the CSV output into the 
       titleHeight: 24,
       xlabel: xlabel,
       ylabel: "Time",
+      includeZero: true,
       labelsSeparateLines: true,
       drawPoints: true,
       pointSize: 3,
