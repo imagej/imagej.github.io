@@ -154,7 +154,7 @@ So you want to be an effective software developer? Use tools!
     <tr>
       <td rowspan=6><a href="https://www.zsh.org/">Zsh</a></td>
       <td rowspan=6>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></td>
-      <td><a href="https://github.com/tarjoilija/zgen">zgen</a></td>
+      <td><a href="https://github.com/zpm-zsh/zpm">zpm</a></td>
       <td>Lightweight plugin manager</td>
     </tr>
     <tr>

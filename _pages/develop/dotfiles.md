@@ -62,7 +62,7 @@ There are several tools for which configuration and customization is provided:
 
 Where possible, configuration is driven by plugin managers:
 
--   [zgen](https://github.com/tarjoilija/zgen) and [Oh-My-Zsh](http://ohmyz.sh/) for zsh
+-   [zpm](https://github.com/zpm-zsh/zpm) and [Oh-My-Zsh](http://ohmyz.sh/) for zsh
 -   [Vundle](https://github.com/VundleVim/Vundle.vim) for vim
 
 ## How to get started?
