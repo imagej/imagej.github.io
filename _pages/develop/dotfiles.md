@@ -89,11 +89,11 @@ Switch to zsh:
 ```bash
 # on Linux
 sudo apt-get install zsh
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 # on macOS
 brew install zsh
-sudo chsh -s /usr/local/bin/zsh
+chsh -s /usr/local/bin/zsh
 
 # on Windows, use Chocolatey to install Cygwin
 choco install cygwin cyg-get
