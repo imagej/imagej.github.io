@@ -21,7 +21,7 @@ instead of on an animation. You will find information about [Generating and
 exploiting kymographs](https://imagej.net/tutorials/generate-and-exploit-kymographs)
 on the ImageJ tutorials.
 
-{% include video src="https://user-images.githubusercontent.com/1943662/214679831-c3cac787-b69e-4822-892f-cece7dcc305e.mp4 %}
+{% include video src="https://user-images.githubusercontent.com/1943662/214679831-c3cac787-b69e-4822-892f-cece7dcc305e.mp4" %}
 
 ImageJ/Fiji has several built-in features to generate kymographs, and many
 plugins also exist. I created this one to gather features that I find useful
