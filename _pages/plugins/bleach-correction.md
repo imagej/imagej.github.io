@@ -4,6 +4,7 @@ title: Bleach Correction
 project: /software/fiji
 categories: [Uncategorized]
 artifact: sc.fiji:CorrectBleach_
+doi: 10.12688/f1000research.27171.1
 ---
 
 ## History
@@ -12,7 +13,7 @@ The plugin was made available by {% include person id='miura' %} and Jens Rietdo
 
 ## Citation
 
-Miura K. Bleach correction ImageJ plugin for compensating the photobleaching of time-lapse sequences [version 1]. F1000Research 2020, 9:1494 [https://doi.org/10.12688/f1000research.27171.1](https://doi.org/10.12688/f1000research.27171.1)
+{% include citation %}
 
 ## Details
 
