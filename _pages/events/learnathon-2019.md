@@ -128,7 +128,7 @@ The course went through these examples: https://github.com/imglib/imglib2-introd
 
 The course went through these examples: https://github.com/bigdataviewer/bigdataviewer-workshop
 
-**14:00 - 15:00 Viewers: SciView**
+**14:00 - 15:00 Viewers: sciview**
 
 https://github.com/skalarproduktraum/sciview-tutorial
 

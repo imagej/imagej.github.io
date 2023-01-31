@@ -9,7 +9,7 @@ of converting 3D image data into 2D images on the computer screen.
 
 ## ImageJ plugins
 
-- [SciView](/plugins/sciview)
+- [sciview](/plugins/sciview)
 - [BigDataViewer](/plugins/bdv)
 - [ClearVolume](/plugins/clearvolume)
 - [3D Viewer](/plugins/3d-viewer)

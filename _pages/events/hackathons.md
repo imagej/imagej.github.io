@@ -596,7 +596,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='kephale|axtimwalde|dietzc|ctrueden|maarzt|tpietzsch|royerloic|bnorthan|skalarproduktraum|marktsuchida|Robert Wiese' %}</p>
       </td>
       <td>
-        <p><a href="/plugins/sciview">SciView</a></p>
+        <p><a href="/plugins/sciview">sciview</a></p>
       </td>
     </tr>
     <tr>

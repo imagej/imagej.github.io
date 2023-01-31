@@ -170,12 +170,12 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
     </tr>
     <tr>
       <td>
-        <a href="/plugins/sciview">SciView</a>
+        <a href="/plugins/sciview">sciview</a>
       </td>
       <td>A tool for 3D visualization capabilities for images and meshes.</td>
       <td>
         <ul>
-          <li>Uses the <a href="https://github.com/ClearVolume/scenery">Scenery</a> and <a href="/plugins/clearvolume">ClearVolume</a> infrastructure
+          <li>Uses the <a href="https://github.com/ClearVolume/scenery">scenery</a> and <a href="/plugins/clearvolume">ClearVolume</a> infrastructure
           </li>
           <li>Integrates <a href="/software/imagej2">ImageJ2</a> functionality, including <a href="/libs/imagej-ops">ImageJ Ops</a>
           </li>

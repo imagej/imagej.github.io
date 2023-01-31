@@ -131,13 +131,13 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 -   ImgLib2 Cache Examples (optional): [`https://github.com/imglib/imglib2-cache-examples.git`](https://github.com/imglib/imglib2-cache-examples.git)
 -   Vistools live here: [`https://github.com/bigdataviewer/bigdataviewer-vistools.git`](https://github.com/bigdataviewer/bigdataviewer-vistools.git)
 
-### scenery & SciView
+### scenery & sciview
 
 -   [Slides](https://ulrik.is/sharing-a-file-named/dais-learnathon-2018-scenery-sciview.pdf) / [zipped keynote](https://ulrik.is/sharing-a-file-named/dais-learnathon-2018-scenery-sciview.zip)
 -   Repositories to be cloned:
     -   [`https://github.com/skalarproduktraum/sciview-tutorial.git`](https://github.com/skalarproduktraum/sciview-tutorial.git)
 -   scenery repo: [`https://github.com/scenerygraphics/scenery`](https://github.com/scenerygraphics/scenery)
--   SciView repo: [`https://github.com/scenerygraphics/SciView`](https://github.com/scenerygraphics/SciView)
+-   sciview repo: [`https://github.com/scenerygraphics/sciview`](https://github.com/scenerygraphics/sciview)
 
 ### KNIME ImageJ2 Integration
 

@@ -60,7 +60,7 @@ These typically demonstrate various aspects of analysis, tracing, image processi
 
 - **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
 
-- **SciView\_Demo.groovy** Exemplifies how bridge SNT with [SciView](/plugins/sciview).
+- **SciView\_Demo.groovy** Exemplifies how bridge SNT with [sciview](/plugins/sciview).
 
 - **Extensive\_Sholl\_Stats.groovy** Exemplifies how to perform linear and polynomial regression on tabular [Sholl](/plugins/sholl-analysis) data.
 

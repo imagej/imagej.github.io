@@ -56,7 +56,7 @@ The following steps describe how to create a desktop icon to launch Fiji on a Ra
 
 It is supposedly possible to run [Java 3D](/libs/java-3d) on the Pi; see [this StackOverflow thread](http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2). However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used!
 
-Even better, if you get [ClearVolume](/plugins/clearvolume) and/or [SciView](/plugins/sciview) working on the Pi, please update this page, and announce it on the [Image.sc Forum](/discuss)!
+Even better, if you get [ClearVolume](/plugins/clearvolume) and/or [sciview](/plugins/sciview) working on the Pi, please update this page, and announce it on the [Image.sc Forum](/discuss)!
 
 # Troubleshooting
 

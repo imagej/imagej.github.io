@@ -246,7 +246,7 @@ By default, all the nodes of a path are projected onto the current Z-slice. This
 
 3. **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
 
-Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [SciView](/plugins/sciview).
+Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [sciview](/plugins/sciview).
 
 
 ### Default Path Colors
@@ -257,7 +257,7 @@ By default, finished paths are colored by their selection status (only selected 
 
 
 **Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons.
-Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [SciView](/plugins/sciview).
+Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [sciview](/plugins/sciview).
 
 
 {% capture tip %}
@@ -349,7 +349,7 @@ The [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) is an advanced, 
 
 ### sciview
 
-[sciview](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
+[sciview](/plugins/sciview) is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, sciview can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the imagery at hand. Additionally, native integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
 
 ### Legacy 3D Viewer
 
