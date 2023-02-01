@@ -1,3 +1,0 @@
-pyyaml
-typesense==0.10.0
-beautifulsoup4
