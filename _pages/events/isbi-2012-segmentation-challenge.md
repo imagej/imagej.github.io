@@ -3,6 +3,8 @@ mediawiki: Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_201
 title: Segmentation of neuronal structures in EM stacks challenge - ISBI 2012
 ---
 
+{% include notice content="The ISBI 2012 challenge server has been decommissioned, but you can still [download the training and test data](https://downloads.imagej.net/ISBI-2012-challenge.zip)!" %}
+
 <img src="/media/logos/isbi.jpg" title="fig:ISBI-logo.jpg" width="100" alt="ISBI-logo.jpg" />The [IEEE International Symposium on Biomedical Imaging (ISBI)](http://www.biomedicalimaging.org/) is the premier forum for the presentation of technological advances in theoretical and applied biomedical imaging and image computing. In the context of the [ISBI 2012](http://www.biomedicalimaging.org/2012/) conference which was held in Barcelona, Spain, from 2 to 5 May 2012, we organized a [challenge workshop](http://www.biomedicalimaging.org/2012/index.php/programme/isbi-challenges/13-challenges/49-contest-workshop-segmentation-of-neuronal) on **segmentation of neuronal structures in EM stacks**.
 
 {% include thumbnail src='/media/events/challenge-isbi-2012-sample-image.png' title='Example of ssTEM image and its corresponding segmentation'%}In this **challenge**, a full stack of EM slices will be used to train {% include wikipedia title='Machine learning' text='machine learning'%} algorithms for the purpose of **automatic segmentation of neural structures**.
@@ -29,7 +31,7 @@ The workshop competition is done but **the challenge remains open for new contri
 
 ## How to participate
 
-**Everybody** can participate in the challenge. The only requirement consists of filling up the registration form [here](http://brainiac2.mit.edu/isbi_challenge/user/register) to get a user name and password to download the data and upload the results.
+**Everybody** can participate in the challenge. The only requirement consists of filling up the registration form [here](http://brainiac2.mit.edu/isbi_challenge/user/register)(offline) to get a user name and password to download the data and upload the results.
 
 This challenge was part of a [workshop](http://www.biomedicalimaging.org/2012/index.php/programme/opensourceworkshops) previous to the [IEEE International Symposium on Biomedical Imaging (ISBI) 2012](http://www.biomedicalimaging.org/2012/). After the publication of the evaluation ranking, teams were invited to submit an abstract. During the workshop, participants had the opportunity to present their methods and the results were discussed.
 
@@ -43,17 +45,17 @@ If you have any doubt regarding the challenge, please, do not hesitate to contac
 
 The corresponding binary labels are provided in an in-out fashion, i.e. white for the pixels of segmented objects and black for the rest of pixels (which correspond mostly to membranes).
 
-**To get the training data, please, register in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/), log in and go to the "/downloads" section**.
+**To get the training data, please, register in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/)(offline), log in and go to the "/downloads" section**.
 
 This is the only data that participants are allowed to use to train their algorithms.
 
 ## Test data
 
-The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/), after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
+The contesting segmentation methods will be ranked by their performance on a test dataset, also available in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/)(offline), after registration. This test data is another volume from the same Drosophila first instar larva VNC as the training dataset.
 
 ## Results format
 
-The **results** are expected to be uploaded in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/) as a **32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).**
+The **results** are expected to be uploaded in the [challenge server](http://brainiac2.mit.edu/isbi_challenge/)(offline) as a **32-bit TIFF 3D image, which values between 0 (100% membrane certainty) and 1 (100% non-membrane certainty).**
 
 ## Evaluation metrics
 
