@@ -5,34 +5,22 @@ section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
 nav-links: true
 initial-release-date: "Dec. 9, 2015: First version Ver.1.1.1"
-release-date: "Mar. 17, 2020: Ver.2.3.1"
-team-maintainer: 'EVIDENT CORPORATION (Contact email address is in preparation)'
+release-date: "Jan. 30, 2023: Ver.2.4.1"
+team-maintainer: 'EVIDENT CORPORATION (GLOB-SM-imagejplugin at evidentscientific.com)'
 ---
 
 {% include info-box source='The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.' %}
 
-This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
+This plugin can load EVIDENT(Olympus) vsi/oir/omp2info file formats and show some meta data.
+
+## New release 
+  Ver.2.4.1 Fix for incorrect colours displayed in some VSI files.
+
+## Download
+  Download the latest OlympusViewer ImageJ Plugin for [Windows](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253989) and [Mac](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253988).
 
 ## Installation
-
-Please see also [installation manual](http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin).
-
-Windows
-
-1.  Download OlympusViewer-win.zip [here](http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win)
-2.  Extract the zip file.
-3.  Execute OlympusViewer-win.exe. This file is in self-extracting format.
-4.  If you agree to our end user license agreement, extract it to your specified folder.
-5.  Unzip the OlympusViewer-package.zip
-6.  Install vs2017 runtime if the runtime is not installed in your PC. The runtime is in OlympusViewer-package/WinRuntime. If you use 32bit OS, install VC\_redist.x86.exe. If you use 64bit OS, install VC\_redist.x64.exe
-7.  Copy "OlympusViewer" folder in "OlympusViewer-package" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
-
-Mac
-
-1.  Download OlympusViewer-mac.dmg [here](http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Mac)
-2.  Double click the dmg file.
-3.  If you agree to our end user license agreement, extract it.
-4.  Copy "OlympusViewer-Ver2.3.1" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
+  Please see our installation instructions for [Windows](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253989) and [Mac](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253988).
 
 ## How to use
 
