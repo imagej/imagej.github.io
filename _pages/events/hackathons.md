@@ -727,6 +727,36 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
+      <p>2022 Oct 3 -<br>
+      2023 Oct 7</p>
+      </td>
+      <td>
+        <p><a href="/orgs/loci">LOCI</a><br/>Madison, WI, USA<br></p>
+      </td>
+      <td>
+        <p>{% include person-list ids='gnodar01|hinerm|ctrueden|elevans|gselzer' %}</p>
+      </td>
+      <td>
+        <p><a href="/software/cellprofiler">CellProfiler</a>+<a href="/scripting/pyimagej">PyImageJ</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p>2022 Dec 5 -<br>
+      2023 Dec 8</p>
+      </td>
+      <td>
+        <p><a href="/orgs/loci">LOCI</a><br/>Madison, WI, USA<br></p>
+      </td>
+      <td>
+        <p>{% include person-list limit=4 ids='oeway|hinerm|ctrueden|elevans' %}</p>
+      </td>
+      <td>
+        <p>ImageJ in the cloud</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <p><a href="/news/2023-02-10-dl-accessibility-from-java">2023 Feb 6 -<br>
         2023 Feb 10</a></p>
       </td>
