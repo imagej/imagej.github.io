@@ -18,6 +18,12 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 879px) {
+  .figure {
+    max-width: inherit;
+  }
+}
+
 /* aside */
 
 .sidebox {
