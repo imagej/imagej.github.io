@@ -13,6 +13,7 @@ doi:
 - 10.1016/j.jbiotec.2017.07.028
 - 10.1007/978-3-319-28549-8_7
 - 10.1007/978-3-540-78246-9_38
+forum-tag: knime
 ---
 
 The [KNIME Analytics Platform](https://www.knime.com/) is an open source data analytics, reporting and integration platform and application. KNIME integrates various components for machine learning and data mining through its modular data pipelining concept. A graphical user interface allows assembly of nodes for data preprocessing (ETL: Extraction, Transformation, Loading), for modeling and data analysis and visualization. KNIME is an acronym for **K**o**n**stanz **I**nformation **M**in**e**r.

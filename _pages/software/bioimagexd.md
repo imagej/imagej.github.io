@@ -14,6 +14,7 @@ team-founders:
 - Jyrki Heino  
 - "@chalkie666"
 team-maintainer: 'Lassi Paavolainen' 
+forum-tag: bioimagexd
 ---
 
 BioImageXD is a free open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.

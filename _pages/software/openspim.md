@@ -4,6 +4,7 @@ name: OpenSPIM
 doi: 10.1038/nmeth.2507
 icon: /media/icons/openspim.png
 website: https://openspim.org/
+forum-tag: openspim
 ---
 
 [OpenSPIM](https://openspim.org/) is an Open Access platform for

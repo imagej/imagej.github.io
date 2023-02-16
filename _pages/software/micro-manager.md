@@ -10,6 +10,7 @@ icon: /media/icons/micro-manager.jpg
 source-url: https://github.com/micro-manager/micro-manager
 team-founder: "Vale Lab | https://valelab.ucsf.edu/"
 team-maintainer: "@marktsuchida"
+forum-tag: micro-manager
 ---
 
 μManager is a software package for control of automated microscopes.

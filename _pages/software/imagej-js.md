@@ -11,6 +11,7 @@ github: imjoy-team
 license-url: /licensing/mit
 license-label: MIT
 team-leads: Wei Ouyang | /people/oeway
+forum-tag: imagej-js
 ---
 
 ImageJ.JS is web version of ImageJ, we compiled ImageJ (version 1) from Java into Javascript with a Java compiler called [CheerpJ](https://www.leaningtech.com/pages/cheerpj.html). In addition to the modification for making it work better within the browser, importantly, we integrated it with the [ImJoy](https://imjoy.io) plugin ecosystem. The project is currently under active development within the [ImJoy Team](https://github.com/imjoy-team) led by Wei Ouyang.

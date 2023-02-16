@@ -10,6 +10,7 @@ icon: /media/icons/icy.png
 team-founder: 'QuIA | http://www.bioimageanalysis.org/'
 team-maintainer: 'QuIA | http://www.bioimageanalysis.org/'
 source-url: https://github.com/Icy-imaging
+forum-tag: icy
 ---
 
 Icy is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.

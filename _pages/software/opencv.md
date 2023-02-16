@@ -2,6 +2,8 @@
 title: OpenCV
 description: Computer vision library available for multiple programing languages
 section: Explore:Software
+name: OpenCV
+forum-tag: opencv
 ---
 
 [OpenCV](http://opencv.org/) is a widespread computer vision and machine learning library applied in a great variety of contexts, including life sciences. The power of OpenCV relies on the huge amount (more than 2500) of both classic and state-of-the-art computer vision algorithms provided by this library. OpenCV supplies algorithms for: image processing, feature detection, object detection, machine-learning, and video analysis.

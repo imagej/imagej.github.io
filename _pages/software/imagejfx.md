@@ -8,6 +8,7 @@ dev-status: "dormant"
 team-founder: "@cmongis"
 team-maintainer: "@cmongis"
 source-url: https://github.com/cmongis/imagejfx
+forum-tag: imagejfx
 ---
 
 

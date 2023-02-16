@@ -11,6 +11,7 @@ team-developers: OME | https://www.openmicroscopy.org/
 team-maintainers: OME | https://www.openmicroscopy.org/
 source-url: https://github.com/ome/openmicroscopy
 website: https://www.openmicroscopy.org/info/omero
+forum-tag: omero
 ---
 
 OMERO is client-server software for visualization, management and analysis of biological microscope images.

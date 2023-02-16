@@ -5,6 +5,7 @@ icon: /media/icons/scijava.svg
 logo: /media/logos/scijava.png
 project-blurb: the core SciJava software libraries
 artifact: org.scijava:scijava-common
+forum-tag: scijava
 ref: Rueden, C., Schindelin, J., Hiner, M. &amp; Eliceiri, K. (2021). SciJava Common [Software]. https://scijava.org/.
 ---
 

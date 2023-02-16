@@ -5,6 +5,7 @@ doi: 10.1186/s12859-017-1934-z
 artifact: net.imagej:imagej
 icon: /media/icons/imagej2.png
 project-blurb: the ImageJ2 platform
+forum-tag: imagej2
 ---
 
 {% include aside content="
