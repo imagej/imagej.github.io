@@ -2,8 +2,13 @@
 title: napari
 section: Explore:Software
 doi: 10.5281/zenodo.3555620
+icon: /media/icons/napari.svg
+name: napari
+source-url: https://github.com/napari/napari
+license-url: /licensing/bsd#modified-bsd-license
+license-label: BSD-3
+forum-tag: napari
 ---
-
 
 [napari](https://napari.org/) is a fast, interactive, multi-dimensional image
 viewer for Python. It’s designed for browsing, annotating, and analyzing large
