@@ -1,13 +1,26 @@
+{%- comment -%}
+  NB: The util/dir capture must happen FIRST, or else it gets corrupted for some reason...
+{%- endcomment -%}
 {%- capture dir -%} {%- include util/dir path=page.url -%} {%- endcapture -%}
-{%- assign media-dir = "/media" | append: dir | append: "/" -%}
-{%- assign default-prefixes = "|" | append: media-dir | append: "|/media/" | split: "|" -%}
-{%- assign default-suffixes = "|.svg|.webp|.png|.gif|.jpg" | split: "|" -%}
 
 {%- assign path = include.path -%}
-{%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
-{%- assign suffixes = include.suffixes | default: include.suffix | default: default-suffixes -%}
 
-{%- assign match = nil -%}
+{%- assign scheme = path | slice: 0, 7 -%}
+{%- if scheme == "http://" or scheme == "https:/" -%}
+  {%- comment -%} Path is an absolute URL. {%- endcomment -%}
+  {%- assign prefixes = nil -%}
+  {%- assign suffixes = nil -%}
+  {%- assign match = path -%}
+{%- else -%}
+  {%- comment -%} Path is a fragment. Search for matching media. {%- endcomment -%}
+  {%- assign media-dir = "/media" | append: dir | append: "/" -%}
+  {%- assign default-prefixes = "|" | append: media-dir | append: "|/media/" | split: "|" -%}
+  {%- assign default-suffixes = "|.svg|.webp|.png|.gif|.jpg" | split: "|" -%}
+  {%- assign prefixes = include.prefixes | default: include.prefix | default: default-prefixes -%}
+  {%- assign suffixes = include.suffixes | default: include.suffix | default: default-suffixes -%}
+  {%- assign match = nil -%}
+{%- endif -%}
+
 {%- for prefix in prefixes -%}
   {%- for suffix in suffixes -%}
     {%- assign candidate = prefix | append: path | append: suffix -%}
