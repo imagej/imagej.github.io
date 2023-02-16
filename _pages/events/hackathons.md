@@ -725,6 +725,21 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/software/fiji">Fiji</a>+<a href="https://ngff.openmicroscopy.org/latest/">OME-NGFF</a></p>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p><a href="/news/2023-02-10-dl-accessibility-from-java">2023 Feb 6 -<br>
+        2023 Feb 10</a></p>
+      </td>
+      <td>
+        <p><a href="/orgs/human-technopole">Human Technopole</a><br/>Milan, Italy<br></p>
+      </td>
+      <td>
+        <p>{% include person-list ids='beatrizserrano|carlosuc3m|cfusterbarcelo|tischi|ctrueden|dasv74|davidackerman|elevans|finglis|fjug|Igor Zubarev|ivan-ea|tinevez|jdeschamps|lmoyasans|hinerm|mkitti|petebankhead|axtimwalde|tpietzsch|oeway' %}</p>
+      </td>
+      <td>
+        <p>Accessibility of deep learning models from Java</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 {:/}
