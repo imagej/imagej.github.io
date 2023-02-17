@@ -6,7 +6,7 @@ From Monday, February 6, 2023 through Friday, February 10, 2023, the [Human Tech
 
 ## Participants
 
-{% include person-list limit=99 ids="beatrizserrano|carlosuc3m|cfusterbarcelo|tischi|ctrueden|dasv74|davidackerman|elevans|finglis|fjug|Igor Zubarev|ivan-ea|tinevez|jdeschamps|lmoyasans|hinerm|mkitti|petebankhead|axtimwalde|tpietzsch|oeway" %}
+{% include person-list limit=99 ids="beatrizserrano|carlosuc3m|cfusterbarcelo|tischi|ctrueden|dasv74|davidackerman|elevans|finglis|fjug|cateek|ivan-ea|tinevez|jdeschamps|lmoyasans|hinerm|mkitti|petebankhead|axtimwalde|tpietzsch|oeway" %}
 
 ## Resources
 

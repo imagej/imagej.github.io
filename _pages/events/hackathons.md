@@ -764,7 +764,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p><a href="/orgs/human-technopole">Human Technopole</a><br/>Milan, Italy<br></p>
       </td>
       <td>
-        <p>{% include person-list ids='beatrizserrano|carlosuc3m|cfusterbarcelo|tischi|ctrueden|dasv74|davidackerman|elevans|finglis|fjug|Igor Zubarev|ivan-ea|tinevez|jdeschamps|lmoyasans|hinerm|mkitti|petebankhead|axtimwalde|tpietzsch|oeway' %}</p>
+        <p>{% include person-list ids='beatrizserrano|carlosuc3m|cfusterbarcelo|tischi|ctrueden|dasv74|davidackerman|elevans|finglis|fjug|cateek|ivan-ea|tinevez|jdeschamps|lmoyasans|hinerm|mkitti|petebankhead|axtimwalde|tpietzsch|oeway' %}</p>
       </td>
       <td>
         <p>Accessibility of deep learning models from Java</p>
