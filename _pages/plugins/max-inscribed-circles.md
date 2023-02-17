@@ -68,13 +68,47 @@ What you need to run this in a plugin is
 import ch.epfl.biop.MaxInscribedCircles;
 ```
 
-And then call the static method
+And then you can use it in two ways. Statically or with a builder pattern
 
 ```java
-//imp must be an 8-bit binary image
+//imp must be an 8-bit binary image. No stacks
+// static call
 ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
 ```
 
+Example using the builder pattern in Groovy from a script
+```
+#@ ImagePlus imp
+#@ RoiManager rm 
+import ij.gui.Overlay
+import ch.epfl.biop.MaxInscribedCircles
+
+rm.reset()
+
+// Builder Pattern. Useful if you have a stack
+MaxInscribedCircles mic = MaxInscribedCircles.builder(imp)
+        .minimumDiameter( 5 )
+        .useSelectionOnly( true ) // will only do the selection and ignore the stack
+        .getSpine(true )
+        .spineClosenessTolerance( 20 )
+        .spineMinimumSimilarity( 0.3)
+        .appendPositionToName( true )
+        .build()
+
+mic.process()
+def circles = mic.getCircles()
+def spines = mic.getSpines()
+def spineParts = mic.getSpineParts()
+
+
+def overlay = new Overlay()
+
+circles.each{ rm.addRoi( it ) }
+spines.each{ rm.addRoi( it ) }
+spineParts.each{ overlay.add( it ) }
+
+imp.setOverlay( overlay )
+```
 Set the last argument `isSelectionOnly` to true if you want to fit circles in the current selection. If you'd like to use the pixel mask, set it to false.
 
 ## Notes
