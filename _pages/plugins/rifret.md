@@ -25,11 +25,9 @@ The 3-cube approach is based on measuring donor emission upon donor-specific exc
 
 ## Installation
 
-1. Download the latest version of Fiji.
-2. Enable the FRET Imaging update site.
-3. Once installed, go to Plugins > FRET Imaging > RiFRET.
-
-## Usage
+1. Download the latest version of [Fiji](https://fiji.sc/). 
+2. Enable the FRET Imaging [update site](https://imagej.net/update-sites/following).
+3. Once installed, go to _Plugins > FRET Imaging > RiFRET_.
 
 ## Citation
 
