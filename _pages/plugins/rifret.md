@@ -13,7 +13,9 @@ team-reviewers: "@camlloyd"
 team-support: "@camlloyd"
 team-maintainers: "@camlloyd"
 categories: [Analysis]
-doi: 10.1002/cyto.a.20747
+doi:
+- 10.1038/s41598-023-30098-w
+- 10.1002/cyto.a.20747
 ---
 
 *An ImageJ plugin for intensity-based three-filter set (ratiometric) FRET which works with unknown varying donor/accepter ratios, corrects for channel crosstalk and instrument calibration, and yields quantitative FRET E values.*
