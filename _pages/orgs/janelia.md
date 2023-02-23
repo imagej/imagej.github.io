@@ -13,7 +13,6 @@ development community, including
 {% include person id="hanslovsky" %},
 {% include person id="StephanPreibisch" %},
 {% include person id="tferr" %},
-{% include person id="brossetti" %},
 {% include person id="carshadi" %},
 and {% include person id="acardona" %}.
 
