@@ -62,9 +62,11 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 
 Just select the radio button option needed then click {% include button label='OK' %} or {% include key key='Enter' %} to continue.
 
-<img src="/media/plugins/fast-roi-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" align="right"/> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
+<img src="/media/plugins/fast-roi-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" align="right"/>
+If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
-{% include img src="fast-thr-roi" width="500" caption="Example of thresholded image and corrected ROI" %}
+
+<img src="/media/plugins/fast-thr-roi.png" title="Example of thresholded image and corrected ROI" width="500" />
 
 Select the appropriate tool in ImageJ toolbar: ![](/media/freehand.png) Freehand (default) OR ![](/media/plugins/wand-tool.png) Wand tool.
 
