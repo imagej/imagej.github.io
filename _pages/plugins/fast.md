@@ -51,7 +51,7 @@ The macro displays a dialog box to set analysis options:
 
 ## Validation of selected Regions Of Interest
 
-<img src="/media/plugins/fast-roi-check.png" title="fig:User validation of defined ROI" width="200" alt="User validation of defined ROI" align="right"/>
+<img src="/media/plugins/fast-roi-check.png" title="User validation of defined ROI" width="200" alt="User validation of defined ROI" align="right"/>
 After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
 Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
@@ -62,7 +62,7 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 
 Just select the radio button option needed then click {% include button label='OK' %} or {% include key key='Enter' %} to continue.
 
-<img src="/media/plugins/fast-roi-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" align="right"/>
+<img src="/media/plugins/fast-roi-edition.png" title="Dialog box to redefine area" width="200" alt="Dialog box to redefine area" align="right"/>
 If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
 
