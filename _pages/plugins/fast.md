@@ -18,7 +18,7 @@ This ImageJ macro automates tasks (open, set threshold, save Region Of Interest,
 
 ## Image Processing
 
-{% include thumbnail src='/media/plugins/fast-processing.png' title='Description of the Image processing pipeline of FAST macro.'%}
+<img src="/media/plugins/fast-processing.png" title="Description of the Image processing pipeline of FAST macro." width="390" align="right"/>
 
 ### Step 1: Auto processing of images within the selected work directory
 
@@ -34,7 +34,8 @@ This ImageJ macro automates tasks (open, set threshold, save Region Of Interest,
 
 ## Startup Options
 
-{% include thumbnail src='/media/plugins/fast-options.png' title='Options dialog box'%} The macro displays a dialog box to set analysis options:
+<img src="/media/plugins/fast-options.png" title="Options dialog box" width="250" align="right"/>
+The macro displays a dialog box to set analysis options:
 
 **File type** : Select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).  
 'Other' allow to enter a specific file extension.  
@@ -50,7 +51,8 @@ This ImageJ macro automates tasks (open, set threshold, save Region Of Interest,
 
 ## Validation of selected Regions Of Interest
 
-<img src="/media/plugins/fast-roi-check.png" title="fig:User validation of defined ROI" width="200" alt="User validation of defined ROI" /> After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
+<img src="/media/plugins/fast-roi-check.png" title="fig:User validation of defined ROI" width="200" alt="User validation of defined ROI" align="right"/>
+After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
 Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
 
@@ -60,7 +62,7 @@ Each image and the corresponding ROI are opened automatically. An options dialog
 
 Just select the radio button option needed then click {% include button label='OK' %} or {% include key key='Enter' %} to continue.
 
-<img src="/media/plugins/fast-roi-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" /> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
+<img src="/media/plugins/fast-roi-edition.png" title="fig:Dialog box to redefine area" width="200" alt="Dialog box to redefine area" align="right"/> If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
 {% include img src="fast-thr-roi" width="500" caption="Example of thresholded image and corrected ROI" %}
 
@@ -69,7 +71,8 @@ Select the appropriate tool in ImageJ toolbar: ![](/media/freehand.png) Freehand
 -   To remove non-specific fluorescence, use selected tool and hold {% include key key='Alt' %} while unwanted area to remove it from ROI.
 -   To add area to the previously selected ROI, hold {% include key key='Shift' %} while selecting new area to add.
 
-Click {% include button label='OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include notice icon="tip" content='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
+Click {% include button label='OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated.
+{% include notice icon="tip" content='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
 
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 
