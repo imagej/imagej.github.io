@@ -51,7 +51,7 @@ If you use this library and its functions to generate and publish results, pleas
 
 ![GitHub issues](https://img.shields.io/github/issues/biovoxxel/bv3dbox?style=plastic)
 
-**REMARK: This is currently still in alpha release stage and should be handled with care when creating results. Please inform me about any [issues](https://github.com/biovoxxel/bv3dbox/issues) you encounter!**
+**REMARK: This is currently still an early release and should be handled with care when creating results. Please inform me about any [issues](https://github.com/biovoxxel/bv3dbox/issues) you encounter!**
 
 [https://github.com/biovoxxel/bv3dbox/issues](https://github.com/biovoxxel/bv3dbox/issues)
 
