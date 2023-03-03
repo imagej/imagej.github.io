@@ -18,7 +18,7 @@ This ImageJ macro automates tasks (open, set threshold, save Region Of Interest,
 
 ## Image Processing
 
-<img src="/media/plugins/fast-processing.png" title="Description of the Image processing pipeline of FAST macro." width="450" align="right"/>
+[<img src="/media/plugins/fast-processing.png" title="Description of the Image processing pipeline of FAST macro." width="450" align="right"/>] (https://imagej.net/media/plugins/fast-processing.png)
 
 ### Step 1: Auto processing of images within the selected work directory
 
