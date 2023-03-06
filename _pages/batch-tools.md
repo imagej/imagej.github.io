@@ -6,5 +6,5 @@ Supports batch image processing and analysis, including batch merge channels, co
 
 {% include link-banner url="https://sites.imagej.net/BatchTools/" %}
 
-{% include link-banner url="https://github.com/neville-ng/ImageJ-BatchTools" %}
+{% include link-banner url="https://github.com/neville-s-ng/ImageJ-BatchTools" %}
 
