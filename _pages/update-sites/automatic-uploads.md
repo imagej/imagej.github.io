@@ -42,7 +42,7 @@ jobs:
   build_release:
     runs-on: ubuntu-latest
     env:
-      IJ_DOWNLOAD_URL: https://downloads.imagej.net/fiji/latest/fiji-linux64.tar.gz
+      IJ_DOWNLOAD_URL: https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
       WIKI_USER: YOUR_USER_NAME
       UPDATE_PASS: ${{ secrets.UPDATE_PASS }}  # DO NOT WRITE your password here
       UPDATE_SITE: YOUR_UPDATE_SITE_NAME
@@ -53,7 +53,8 @@ jobs:
         run: mvn -B package
       - name: Install ImageJ/Fiji
         run: |
-          curl --silent ${IJ_DOWNLOAD_URL} | tar --extract --gzip
+          curl --silent -O ${IJ_DOWNLOAD_URL}
+          unzip fiji-linux64.zip
           ./Fiji.app/ImageJ-linux64 --headless --update edit-update-site ${UPDATE_SITE} https://sites.imagej.net/${UPDATE_SITE}/ "webdav:${WIKI_USER}:${UPDATE_PASS}" .
       - name: Install in ImageJ/Fiji (with Maven)
         run: mvn -B install -Dscijava.app.directory=./Fiji.app -Ddelete.other.versions=true -Dscijava.ignoreDependencies=true
