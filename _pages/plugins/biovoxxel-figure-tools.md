@@ -1,4 +1,6 @@
-# BioVoxxel Figure Tools
+---
+title: BioVoxxel Figure Tools
+---
 
 The Figure tools is a collection of functions which may help when preparing images in ImageJ / Fiji for further use in publication figures.
 
