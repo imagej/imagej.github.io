@@ -1,9 +1,12 @@
 ---
-mediawiki: MicrotubuleTracker
-title: MicrotubuleTracker
+title: MTrack
 name: MTrack
 icon: /media/icons/mtrack.png
 categories: [Tracking,Microtubules]
+artifact: org.kapoorlabs:MTrack:3.0.1-SNAPSHOT
+dev-status: Obsolete
+support-status: None
+doi: 10.1038/s41598-018-37767-1
 ---
 
 {% include warning/mtrack-disambig %}
@@ -65,7 +68,7 @@ Press Next to proceed. Three screens and one panel will open. They show the orig
 
 #### MSER parameters
 
-The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[1]. Read more about [MSER parameters](/plugins/mser-parameters). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the "active image". Once most seeds are correctly recognized as objects, click "Find endpoints" to detect the ends of each seed with sub-pixel accuracy.
+The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER)[^1]. Read more about [MSER parameters](/plugins/mser-parameters). If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the "active image". Once most seeds are correctly recognized as objects, click "Find endpoints" to detect the ends of each seed with sub-pixel accuracy.
 
 The end-points will be displayed as green circles. A "Next" button appears on the panel, which allows the user to flip to the next panel.
 
@@ -108,10 +111,8 @@ An example movie with several dynamic microtubules is available for download [he
 
 Please note that MTrack is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 
-Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber, "MTrack: Automated Detection and Tracking of Dynamic Microtubules" [2]
+{% include citation %}
 
 ## References
 
-[1] Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.
-
-[2] https://www.biorxiv.org/content/early/2018/07/13/368191
+{% include citation fn=1 doi="10.1016/j.imavis.2004.02.006" %}
