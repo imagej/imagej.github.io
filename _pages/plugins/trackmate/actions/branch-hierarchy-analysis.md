@@ -1,7 +1,7 @@
 ---
 title: Branch hierarchy analysis
-categories: [Hierarchical analysis]
-description: Decomposition and analyse of the tracks in successives branches
+categories: [Track analysis]
+description: Decomposition and analysis of tracks in successives branches.
 artifact: sc.fiji:TrackMate
 ---
 
@@ -19,7 +19,7 @@ A new window should appear.
 
 {% include img src='/media/plugins/trackmate/actions/branch_analysis_action.png'  align='left' %}
 
-TrackMate decomposes all the tracks in branchs and give the results in a table that will appear in a new window.
+TrackMate decomposes all the tracks in branchs and give the results in a table that will appear in the new window.
 The list of the columns and their significations is given in the section [Analysis of a branch](#analysis-of-a-branch)
 
 The rows of the table can be sorted by a column value by clicking on the corresponding column.
