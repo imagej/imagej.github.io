@@ -1,5 +1,9 @@
 ---
 title: TrackMate Accuracy
+description: Assessing the tracking accuracy of the algorithm in TrackMate.
+categories: [Segmentation,Tracking]
+artifact: sc.fiji:TrackMate
+doi: 10.1101/2021.09.03.458852
 ---
 
 **The problem with tracking algorithms is that they always give an answer.**
@@ -10,7 +14,7 @@ This answer can be completely irrelevant, even non-physical, and there is no bui
 
 In 2011-2012, an ISBI Grand Challenge was organized for the [Single-Particle Tracking algorithms](http://bioimageanalysis.org/track/). Though TrackMate does not offer a completely new algorithm, product of an original Research work, we took the chance and participated in the challenge. The results and the methodology to compute the accuracy of a tracking algorithms were published[^1] thereafter.
 
-Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[^2]. See the [LAP trackers section](/plugins/trackmate/algorithms#lap-trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
+Unsurprisingly, we did not score amongst the best. At the time, TrackMate was in version 1.1, and ship a stripped down version of the better performing Jaqaman *et al.* LAP framework[^2]. See the [LAP trackers section](/plugins/trackmate/trackers/lap-trackers) for algorithm details. Plus, TrackMate was was young at the time, and some bugs did not help.
 
 ## TrackMate v2.7.x series accuracy against the ISBI dataset
 
@@ -102,13 +106,13 @@ Below are shown typical images taken from the challenge.
 
 <div class="row">
   <div class="column3">
-{% include img align="fit" name="Low density" src="vesicle-snr-7-density-low-1" %}
+{% include img align="fit" name="Low density" src="/media/plugins/trackmate/vesicle-snr-7-density-low-1" %}
   </div>
   <div class="column3">
-{% include img align="fit" name="Medium density" src="vesicle-snr-7-density-mid-1" %}
+{% include img align="fit" name="Medium density" src="/media/plugins/trackmate/vesicle-snr-7-density-mid-1" %}
   </div>
   <div class="column3">
-{% include img align="fit" name="High density" src="vesicle-snr-7-density-high-1" %}
+{% include img align="fit" name="High density" src="/media/plugins/trackmate/vesicle-snr-7-density-high-1" %}
   </div>
 </div>
 
@@ -118,19 +122,19 @@ Contrast stretched to the 0-150 8-bit range.
 
 <div class="row">
   <div class="column5">
-{% include img align="fit" name="SNR = 7" src="receptor-snr-7-density-low-1" %}
+{% include img align="fit" name="SNR = 7" src="/media/plugins/trackmate/receptor-snr-7-density-low-1" %}
   </div>
   <div class="column5">
-{% include img align="fit" name="SNR = 4" src="receptor-snr-4-density-low-1" %}
+{% include img align="fit" name="SNR = 4" src="/media/plugins/trackmate/receptor-snr-4-density-low-1" %}
   </div>
   <div class="column5">
-{% include img align="fit" name="SNR = 3" src="receptor-snr-3-density-low-1" %}
+{% include img align="fit" name="SNR = 3" src="/media/plugins/trackmate/receptor-snr-3-density-low-1" %}
   </div>
   <div class="column5">
-{% include img align="fit" name="SNR = 2" src="receptor-snr-2-density-low-1" %}
+{% include img align="fit" name="SNR = 2" src="/media/plugins/trackmate/receptor-snr-2-density-low-1" %}
   </div>
   <div class="column5">
-{% include img align="fit" name="SNR = 1" src="receptor-snr-1-density-low-1" %}
+{% include img align="fit" name="SNR = 1" src="/media/plugins/trackmate/receptor-snr-1-density-low-1" %}
   </div>
 </div>
 
@@ -138,7 +142,7 @@ Contrast stretched to the 0-50 8-bit range.
 
 #### The MICROTUBULE scenario particle shape
 
-{% include img align="fit" name="SNR = 4, density = mid" src="microtubule-snr-4-density-mid-1" %}
+{% include img align="center" name="SNR = 4, density = mid" src="/media/plugins/trackmate/microtubule-snr-4-density-mid-1" width="300px" %}
 
 ### Accuracy measurements
 
@@ -176,7 +180,7 @@ The three spot trackers were configured as indicated in the table below. It's no
 <th> Value
 </th></tr>
 <tr>
-<td rowspan="3"> <a href="/plugins/trackmate/algorithms#linear-motion-tracker" class="mw-redirect" title="TrackMate algorithms">Linear motion tracker</a>
+<td rowspan="3"> <a href="/plugins/trackmate/algorithms#linear-motion-tracker" class="mw-redirect" title="TrackMate algorithms">Kalman tracker (linear motion)</a>
 </td>
 <td> Initial search radius
 </td>
@@ -193,7 +197,7 @@ The three spot trackers were configured as indicated in the table below. It's no
 <td> 3
 </td></tr>
 <tr>
-<td rowspan="3"> <a href="/plugins/trackmate/algorithms#lap-trackers" class="mw-redirect" title="TrackMate algorithms">LAP Brownian motion</a>
+<td rowspan="3"> <a href="/plugins/trackmate/algorithms#lap-trackers" class="mw-redirect" title="TrackMate algorithms">LAP tracker (Brownian motion)</a>
 </td>
 <td> Max linking distance
 </td>

@@ -6,23 +6,23 @@ categories: [Tracking, Segmentation]
 
 Starting with version 7, we entirely redesigned the display settings in [TrackMate](/plugins/trackmate/index).
 You can now tune how track are displayed in with many more parameters. 
-Jan Eglinger initially made a config option that allowed changing the lookup table (LUT) for coloring in TrackMate. We built upon this to extend it by adapting a pattern used for  [Mastodon](/plugins/mastodon/index) settings
+Jan Eglinger initially made a config option that allowed changing the lookup table (LUT) for coloring in TrackMate. We built upon this to extend it by adapting a pattern used for [Mastodon](/plugins/mastodon/index) settings
 
 ## The display settings panel
 
 In the config view panel of the UI, there is now a button that toggles the visibility of the display settings panel. 
 
-{% include img src='trackmate-display-settings-1.png' width='250'  %}
+{% include img src='/media/plugins/trackmate/trackmate-display-settings-1.png' width='250'  %}
 
 This new panel lets you configure all of the display settings now available, of which only a subset is available on the config view panel.
 
-{% include img src='trackmate-display-settings-2.png' width='250'  %}
-{% include img src='trackmate-display-settings-3.png' width='250'  %}
+{% include img src='/media/plugins/trackmate/trackmate-display-settings-2.png' width='250'  %}
+{% include img src='/media/plugins/trackmate/trackmate-display-settings-3.png' width='250'  %}
 
 Any change you make in this panel will be reflected immediately on the views currently opne.
 The meaning of this parameters is summarized below:
 
-{% include img src='trackmate-display-settings-4.png'  %}
+{% include img src='/media/plugins/trackmate/trackmate-display-settings-4.png'  %}
 
 
 ## Configuring the default display settings
@@ -31,7 +31,7 @@ You can change what display settings are used by default in new Tracking session
 There is an extra plugin in Fiji in {% include bc path="Edit | Options | Configure TrackMate display settings..." %} that shows the same configuration panel.
 At the bottom of this panel there are 3 buttons:
 
-{% include img src='trackmate-display-settings-5.png' width='250'  %}
+{% include img src='/media/plugins/trackmate/trackmate-display-settings-5.png' width='250'  %}
 
 - `Reset` resets the display options to the built-in defaults.
 - `Revert` reloads the display options from what was saved before.

@@ -19,7 +19,7 @@ Since we are calling the internals of TrackMate, we must get to know a bit of it
 
 IMPORTANT! You will see in the example below that all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionnary for each detector and tracker, and the type of values they accept. 
 
-All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/trackmate-detectors-trackers-keys).
+All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/scripting/trackmate-detectors-trackers-keys).
 
 <!-- -->
 
@@ -30,7 +30,7 @@ So getting a working script is all about configuring a proper `Settings` object 
 
 ## A full example
 
-Here is an example of full tracking process, using the easy image found in the [first tutorial](/plugins/trackmate/getting-started). The following (Jython) script works as following:
+Here is an example of full tracking process, using the easy image found in the [first tutorial](/plugins/trackmate/tutorials/getting-started). The following (Jython) script works as following:
 
 -   It fetches the image from the web
 -   It configures settings for segmentation and tracking

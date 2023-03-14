@@ -3,6 +3,7 @@ title: TrackMate-ExTrack
 categories: [Tracking]
 description: Export a TrackMate results to the Cell-Tracking-Challenge file format
 artifact: fr.pasteur.iah:TrackMate-ExTrack
+doi: 10.1083/jcb.202208059
 ---
 
 # TrackMate-ExTrack: diffusion and binding kinetics in live cells.
@@ -10,7 +11,7 @@ artifact: fr.pasteur.iah:TrackMate-ExTrack
 TrackMate-ExTrack is a [TrackMate](/plugins/trackmate/index) action that contains a port of the Python analysis tool ExTrack to Java and TrackMate.
 The paper that describes the science behind this tool is here:
 
-{% include citation doi='10.1101/2022.07.13.499913' %}
+{% include citation doi='10.1083/jcb.202208059' %}
 
 Please cite it if ExTrack is useful for your research.
 

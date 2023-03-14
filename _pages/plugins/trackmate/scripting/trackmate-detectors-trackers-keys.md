@@ -4,7 +4,7 @@ description: Setting keys for TrackMate detectors and trackers.
 categories: [Tracking, Segmentation, Scripting]
 ---
 
-The detectors and trackers in TrackMate are configured via a set of key and values. In the GUI, TrackMate takes care of presenting to the user only the settings relevant to the chosen detector or tracker, but in scripts or other program, they must be known. This document lists all the parameters of all the current known detectors and trackers in TrackMate and shows how to configure them in your scripts and programs.
+The detectors and trackers in [TrackMate](/plugins/trackmate) are configured via a set of key and values. In the GUI, TrackMate takes care of presenting to the user only the settings relevant to the chosen detector or tracker, but in scripts or other program, they must be known. This document lists all the parameters of all the current known detectors and trackers in TrackMate and shows how to configure them in your scripts and programs.
 
 ## Configuring a detector and a tracker
 
@@ -225,7 +225,7 @@ This tracker is fully configurable with many parameters and feature weights.  Al
 settings = fiji.plugin.trackmate.tracking.LAPUtils.getDefaultLAPSettingsMap()
 ```
 
-and edit the parameters that needs to change. For details on their meaning, please refer to the [TrackMate documentation](https://imagej.net/plugins/trackmate/algorithms#lap-trackers) and  *Jaqaman et al, 2008*.
+and edit the parameters that needs to change. For details on their meaning, please refer to the [TrackMate documentation](https://imagej.net/plugins/trackmate/trackers/lap-trackers) and  *Jaqaman et al, 2008*.
 
 | Key                               | Value Type                          | Description                                                  |
 | --------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
@@ -258,7 +258,7 @@ The user is asked for a maximal allowed linking distance (entered in physical un
 3. For each feature in the map, a penalty p is calculated as
    ```
    p = 3 × W × |f1−f2| / ( f1+f2 )
-	 ```
+	```
    where `W` is the weight associated to the feature in the map. This expression is such that:
 
    - there is no penalty if the 2 feature values `f1` and `f2` are the same;

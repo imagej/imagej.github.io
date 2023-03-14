@@ -80,9 +80,9 @@ First let's edit the display options so that the spots are colored by their trac
 
 {% include img src='/media/plugins/trackmate/trackmate-manual-editing-05.png' width='300'  align='center'  %}
 
-[TrackScheme](/plugins/trackmate/trackscheme) is a TrackMate tool for the visualization and editing of tracks. It displays a kind of "track map", where a track is laid on a pane, arranged vertically over time, as a Parisian subway train map. Tracks are displayed hierarchically, discarding the spatial location of each spot. Each spot is laid out going through time from top to bottom. It is a great tool particularly to study and edit lineages.
+[TrackScheme](/plugins/trackmate/views/trackscheme) is a TrackMate tool for the visualization and editing of tracks. It displays a kind of "track map", where a track is laid on a pane, arranged vertically over time, as a Parisian subway train map. Tracks are displayed hierarchically, discarding the spatial location of each spot. Each spot is laid out going through time from top to bottom. It is a great tool particularly to study and edit lineages.
 
-[TrackScheme](/plugins/trackmate/trackscheme) also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
+[TrackScheme](/plugins/trackmate/views/trackscheme) also allows manually editing the tracks. Press the **TrackScheme** button on the last panel. By default, the tracks are displayed as colored circles joined by lines. Each circle represent a spot, and the lines represent a link connecting two dots. The selection in TrackScheme is share across TrackMate, so if you select one circle, it will be highlighted in the HyperStack viewer as well (circled in green).
 
 {% include img src='/media/plugins/trackmate/trackmate-manual-editing-06.png' width='500'  align='center'  %}
 

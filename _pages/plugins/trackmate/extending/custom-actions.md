@@ -2,21 +2,21 @@
 title: How to write custom actions for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
-  url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-edge-feature-analyzer-algorithms
 - title: Track Feature Analyzers
-  url: /plugins/trackmate/custom-track-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-track-feature-analyzer-algorithms
 - title: Spot Feature Analyzers
-  url: /plugins/trackmate/custom-spot-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-spot-feature-analyzer-algorithms
 - title: Viewers
-  url: /plugins/trackmate/custom-viewers
+  url: /plugins/trackmate/extending/custom-viewers
 - title: Actions
-  url: /plugins/trackmate/custom-actions
+  url: /plugins/trackmate/extending/custom-actions
 - title: Detection Algorithms
-  url: /plugins/trackmate/custom-detection-algorithms
+  url: /plugins/trackmate/extending/custom-detection-algorithms
 - title: Segmentation Algorithms
-  url: /plugins/trackmate/custom-segmentation-algorithms
+  url: /plugins/trackmate/extending/custom-segmentation-algorithms
 - title: Particle-Linking Algorithms
-  url: /plugins/trackmate/custom-particle-linking-algorithms
+  url: /plugins/trackmate/extending/custom-particle-linking-algorithms
 ---
 
 ## Introduction
@@ -25,7 +25,7 @@ Actions were my crude solution to the problem of adding random features to [Trac
 
 A TrackMate action takes the shape of an item in a drop-down list in the last panel of the GUI. It can do more or less anything, since we pass everything to the action, even a reference to the GUI itself. Thanks to the [SciJava](/libs/scijava) discovery mechanism, we do not have to worry about adding it on the GUI: it will automatically be listed in the action list. The drawback of this simplicity is that you cannot use it to provide elaborated user interaction mechanisms, such as the ones you can find in a view.
 
-In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](/plugins/trackmate/custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](/libs/scijava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
+In this tutorial, we will use it to launch the event logger we created in the [previous tutorial](custom-viewers) of this series. If you remember, we saw in the last paragraph how to use the `visible = false` parameter the [SciJava](/libs/scijava) annotation to hide it from the view menu. Hereby preventing the user to access it. No problem, we will now build an action that will launch it as a supplementary view.
 
 ## The {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/action/TrackMateActionFactory.java' label='TrackMateActionFactory' %} interface
 

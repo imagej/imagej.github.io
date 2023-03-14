@@ -2,26 +2,26 @@
 title: How to write your own track feature analyzer algorithm for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
-  url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-edge-feature-analyzer-algorithms
 - title: Track Feature Analyzers
-  url: /plugins/trackmate/custom-track-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-track-feature-analyzer-algorithms
 - title: Spot Feature Analyzers
-  url: /plugins/trackmate/custom-spot-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-spot-feature-analyzer-algorithms
 - title: Viewers
-  url: /plugins/trackmate/custom-viewers
+  url: /plugins/trackmate/extending/custom-viewers
 - title: Actions
-  url: /plugins/trackmate/custom-actions
+  url: /plugins/trackmate/extending/custom-actions
 - title: Detection Algorithms
-  url: /plugins/trackmate/custom-detection-algorithms
+  url: /plugins/trackmate/extending/custom-detection-algorithms
 - title: Segmentation Algorithms
-  url: /plugins/trackmate/custom-segmentation-algorithms
+  url: /plugins/trackmate/extending/custom-segmentation-algorithms
 - title: Particle-Linking Algorithms
-  url: /plugins/trackmate/custom-particle-linking-algorithms
+  url: /plugins/trackmate/extending/custom-particle-linking-algorithms
 ---
 
 ## Introduction
 
-This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating **feature analyzers**: small algorithms that calculate one or several numerical values for the TrackMate results. The [previous article](/plugins/trackmate/custom-edge-feature-analyzer-algorithms) focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
+This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating **feature analyzers**: small algorithms that calculate one or several numerical values for the TrackMate results. The [previous article](/plugins/trackmate/extending/custom-edge-feature-analyzer-algorithms) focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
 
 In this article, we will create a **feature analyzer for tracks** that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track.
 

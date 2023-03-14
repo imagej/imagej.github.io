@@ -2,28 +2,28 @@
 title: How to use the new API to create spots with ROIs in TrackMate
 nav-links:
 - title: Edge Feature Analyzers
-  url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-edge-feature-analyzer-algorithms
 - title: Track Feature Analyzers
-  url: /plugins/trackmate/custom-track-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-track-feature-analyzer-algorithms
 - title: Spot Feature Analyzers
-  url: /plugins/trackmate/custom-spot-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-spot-feature-analyzer-algorithms
 - title: Viewers
-  url: /plugins/trackmate/custom-viewers
+  url: /plugins/trackmate/extending/custom-viewers
 - title: Actions
-  url: /plugins/trackmate/custom-actions
+  url: /plugins/trackmate/extending/custom-actions
 - title: Detection Algorithms
-  url: /plugins/trackmate/custom-detection-algorithms
+  url: /plugins/trackmate/extending/custom-detection-algorithms
 - title: Segmentation Algorithms
-  url: /plugins/trackmate/custom-segmentation-algorithms
+  url: /plugins/trackmate/extending/custom-segmentation-algorithms
 - title: Particle-Linking Algorithms
-  url: /plugins/trackmate/custom-particle-linking-algorithms
+  url: /plugins/trackmate/extending/custom-particle-linking-algorithms
 ---
 
 ## Introduction
 
-Up to the version 7 of [TrackMate](/plugins/trackmate/index), detection algorithms were limited to return the position of spots and their radius. All the detection were represented by a tuple in the shape of `frame, x, y, z, radius, quality`. This is well suited to implement _detection algorithms_, that return the position of an object but omit its shape. The [previous page](/plugins/trackmate/custom-detection-algorithms) in this tutorial series showed how the base code to implement such an algorithm as a detector for TrackMate.
+Up to the version 7 of [TrackMate](/plugins/trackmate/index), detection algorithms were limited to return the position of spots and their radius. All the detection were represented by a tuple in the shape of `frame, x, y, z, radius, quality`. This is well suited to implement _detection algorithms_, that return the position of an object but omit its shape. The [previous page](/plugins/trackmate/extending/custom-detection-algorithms) in this tutorial series showed how the base code to implement such an algorithm as a detector for TrackMate.
 
-With version 7, we rewrote a large part of TrackMate to remove this limitation, at least in 2D. We changed the data model so that `Spot`s in TrackMate could _possibly_ store the shape, while not affecting the exiting detectors. We made a new API to facilitate implementing _segmentation algorithms_ in TrackMate, that can return the shape of objects. Their shape is later used to compute morphology features or to measure intensity within the object contour. We used this API to implement [7 new segmentation algorithms](/plugins/trackmate/trackmate-v7-detectors) in TrackMate, integrating the some of the best segmentation tools available in Java. This page documents how you can use this API to implement your own segmentation algorithms yourself, and make it a first-class-citizen of TrackMate, like any of the other TrackMate modules we document in this series.
+With version 7, we rewrote a large part of TrackMate to remove this limitation, at least in 2D. We changed the data model so that `Spot`s in TrackMate could _possibly_ store the shape, while not affecting the exiting detectors. We made a new API to facilitate implementing _segmentation algorithms_ in TrackMate, that can return the shape of objects. Their shape is later used to compute morphology features or to measure intensity within the object contour. We used this API to implement [7 new segmentation algorithms](/plugins/trackmate/detectors/trackmate-v7-detectors) in TrackMate, integrating the some of the best segmentation tools available in Java. This page documents how you can use this API to implement your own segmentation algorithms yourself, and make it a first-class-citizen of TrackMate, like any of the other TrackMate modules we document in this series.
 
 We need to first review the new API itself, which basically boils down to one class offering static methods. Then, as for the other detectors, we need to add some flags in the detector factory to tell TrackMate that what we build is a segmentation algorithm that returns the object shape. Finally, we will also see some find tuning of the multithreading for your detectors, made to accommodate the various existing segmentation tools you might want to integrate in TrackMate. We will use the examples of the 7 segmentation algorithms mentioned above to base this tutorial.
 
