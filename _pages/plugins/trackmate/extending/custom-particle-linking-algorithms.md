@@ -2,26 +2,26 @@
 title: How to write your own particle-linking algorithm for TrackMate
 nav-links:
 - title: Edge Feature Analyzers
-  url: /plugins/trackmate/custom-edge-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-edge-feature-analyzer-algorithms
 - title: Track Feature Analyzers
-  url: /plugins/trackmate/custom-track-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-track-feature-analyzer-algorithms
 - title: Spot Feature Analyzers
-  url: /plugins/trackmate/custom-spot-feature-analyzer-algorithms
+  url: /plugins/trackmate/extending/custom-spot-feature-analyzer-algorithms
 - title: Viewers
-  url: /plugins/trackmate/custom-viewers
+  url: /plugins/trackmate/extending/custom-viewers
 - title: Actions
-  url: /plugins/trackmate/custom-actions
+  url: /plugins/trackmate/extending/custom-actions
 - title: Detection Algorithms
-  url: /plugins/trackmate/custom-detection-algorithms
+  url: /plugins/trackmate/extending/custom-detection-algorithms
 - title: Segmentation Algorithms
-  url: /plugins/trackmate/custom-segmentation-algorithms
+  url: /plugins/trackmate/extending/custom-segmentation-algorithms
 - title: Particle-Linking Algorithms
-  url: /plugins/trackmate/custom-particle-linking-algorithms
+  url: /plugins/trackmate/extending/custom-particle-linking-algorithms
 ---
 
 ## Introduction
 
-This last part on particle-linking modules concludes the series of tutorials on extending [TrackMate](/plugins/trackmate). The most difficult modules to create are spot detectors, which was the subject of the [previous tutorial](/plugins/trackmate/custom-detection-algorithms). Particle-linking modules, or trackers, are a little bit less complicated.
+This last part on particle-linking modules concludes the series of tutorials on extending [TrackMate](/plugins/trackmate). The most difficult modules to create are spot detectors, which was the subject of the [previous tutorial](custom-detection-algorithms). Particle-linking modules, or trackers, are a little bit less complicated.
 
 However, you still need to understand how we store and manipulate links in TrackMate, and this implies very briefly introducing mathematical graphs.
 
@@ -245,7 +245,7 @@ So it's not really complicated. Which is good, because the complicated part, com
 ## The factory class
 
 Now that we have the clever part of the code (the one that does the actual linking), we need to deal with TrackMate integration. Like for the detection modules, this is done <i>via</i> a factory class, named {% include github org='fiji' repo='TrackMate' branch='master' source='fiji/plugin/trackmate/tracking/SpotTrackerFactory.java' label='SpotTrackerFactory.java' %}. 
-It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](/plugins/trackmate/custom-detection-algorithms), so I won't detail the common methods again.
+It is completely equivalent to the SpotDetectorFactory we saw in the [previous tutorial](custom-detection-algorithms), so I won't detail the common methods again.
 
 The methods specific to the tracker are:
 
@@ -286,7 +286,7 @@ So editing the header of our tracker factory to make it look like:
 public class DrunkenCellDivisionTrackerFactory implements SpotTrackerFactory
 ```
 
-is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](/plugins/trackmate/custom-track-feature-analyzer-algorithms). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
+is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](custom-track-feature-analyzer-algorithms). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
 
 ## Wrapping up
 

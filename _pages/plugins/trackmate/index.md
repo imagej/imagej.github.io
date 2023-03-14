@@ -206,6 +206,7 @@ Do you want to make your new algorithms usable by the reviewers of your submitte
 
 TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
 
+
 ## Documentation and tutorials
 
 ### Downloadable documents and tutorials
@@ -226,30 +227,26 @@ Again, it compiles several tutorials and developer documentation also linked bel
 
 ### Online tutorials
 
--   [Getting started with TrackMate](/plugins/trackmate/getting-started) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
--   [TrackScheme](/plugins/trackmate/trackscheme): the tool for the visualization, editing and analysis of tracks.
--   [Manual tracking with TrackMate](/plugins/trackmate/manual-tracking)
--   [Manual editing of tracks using TrackMate](/plugins/trackmate/manual-track-editing) shows how to manually curate and edit tracking results.
+-   [Getting started with TrackMate](/plugins/trackmate/tutorials/getting-started) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
+-   [Manual editing of tracks using TrackMate](/plugins/trackmate/tutorials/manual-track-editing) shows how to manually curate and edit tracking results.
+-   [Manual tracking with TrackMate](/plugins/trackmate/tutorials/manual-tracking) shows how to perform a fully manual annotation of tracks in a source image.
+-   [TrackMate v7 new algorithms](/plugins/trackmate/detectors/trackmate-v7-detectors) documents the 8 new detectors introduced with version 7, and the new shape analysis framework. Each subpage contains a tutorial that explains how to use each of the new detector.
 
--   [TrackMate v7 new algorithms](/plugins/trackmate/trackmate-v7-detectors) documents the 8 new detectors introduced with version 7, and the new shape analysis framework. Individual documentation pages:
-	- Mask detector:  [trackmate-mask-detector](/plugins/trackmate/trackmate-mask-detector)
-	- Thresholding detector: [trackmate-thresholding-detector](/plugins/trackmate/trackmate-thresholding-detector)
-	- Label image detector: [trackmate-label-image-detector](/plugins/trackmate/trackmate-label-image-detector)
-	- TrackMate-Ilastik: [trackmate-ilastik](/plugins/trackmate/trackmate-ilastik).
-	- TrackMate-MorphoLibJ: [trackmate-morpholibj](/plugins/trackmate/trackmate-morpholibj)
-	- TrackMate-StarDist: [trackmate-stardist](/plugins/trackmate/trackmate-stardist)
-	- TrackMate-Cellpose: [trackmate-cellpose](/plugins/trackmate/trackmate-cellpose)
-	- TrackMate-Weka: [trackmate-weka](/plugins/trackmate/trackmate-weka) 
+### TrackMate components
 
+TrackMate has a modular design and ships several algorithms of several types: detectors, trackers, analyzers, etc. 
+The pages below documents individual components, or modules or TrackMate.
 
-### Detectors and segmenters documentation
-
--   [TrackMate Algorithms](/plugins/trackmate/algorithms) details and documents the automated segmentation algorithms, particle-linking algorithms, etc.. currently implemented in TrackMate.
+- [TrackMate Detectors](/plugins/trackmate/detectors): detect objects in images.
+- [TrackMate Trackers](/plugins/trackmate/trackers): link objects to build tracks.
+- [TrackMate Analyzers](/plugins/trackmate/analyzers): compute numerical values on spots, edges and tracks.
+- [TrackMate Actions](/plugins/trackmate/actions): miscalleneous actions on tracking results.
+- [TrackMate Views](/plugins/trackmate/views): tracking results viewers.
 
 
 ### Interoperability
 
-#### Python.
+#### Python
 
 There are several Python tools contributed by the TrackMate developer community that allows importing TrackMate results in Python and performing track analysis with the libraries of this language. Among them:
 
@@ -262,49 +259,18 @@ Please contact their respective authors directly for support.
 
 #### MATLAB
 
--   [Using TrackMate with MATLAB](/plugins/trackmate/analyzing-results-with-matlab) documents the [MATLAB](/scripting/matlab) functions shipped with Fiji that allows importing data generated with TrackMate into [MATLAB](/scripting/matlab).
+-   [Using TrackMate with MATLAB](/plugins/trackmate/interoperability/analyzing-results-with-matlab) documents the [MATLAB](/scripting/matlab) functions shipped with Fiji that allows importing data generated with TrackMate into [MATLAB](/scripting/matlab).
 
 
 ### Scripting TrackMate
 
--   [Scripting TrackMate](/plugins/trackmate/scripting) shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](/scripting/script-editor). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
+-   [Scripting TrackMate](/plugins/trackmate/scripting/scripting) shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](/scripting/script-editor). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
 
--   In scripts, all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionnary for each detector and tracker, and the type of values they accept. All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/trackmate-detectors-trackers-keys).
+-   In scripts, all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionnary for each detector and tracker, and the type of values they accept. All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/scripting/trackmate-detectors-trackers-keys).
 
--   [Using TrackMate from MATLAB](/plugins/trackmate/using-from-matlab) shows how to use [MATLAB](/scripting/matlab) as a scripting language for TrackMate, and benefit from [MATLAB](/scripting/matlab) facilities.
-
-
-### Performance and accuracy
-
--   [TrackMate Performance](/plugins/trackmate/performance) reports various measures of the performance of its components. Performance reports include execution time and memory usage.
--   [TrackMate Accuracy](/plugins/trackmate/accuracy) reports various measures of the accuracy of its components. Accuracy reports how well TrackMate can generate scientifically correct results, and compare its output to known ground truth.
+-   [Using TrackMate from MATLAB](/plugins/trackmate/scripting/using-from-matlab) shows how to use [MATLAB](/scripting/matlab) as a scripting language for TrackMate, and benefit from [MATLAB](/scripting/matlab) facilities.
 
 
-### External documentation tips and tricks
-
-Various very useful tips and tricks contributed by users:
-
-  -   Dave Mason on using pivot tables to get track statistics based on spot features: [mean-intensity-of-tracks-using-trackmate](https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5)
-
-
-### Extending TrackMate
-
-Do you have a tracking or a detection algorithm you want to implement? Of course you can write a whole software from scratch. But at some point you will have to design a model to hold the data, to write code that can load and save the results, visualize them, have even a minimalistic GUI, and allow to manually correct the outcome of your algorithm. This can be long, tedious and boring, while the part that interests you is just the core algorithm.
-
-We propose you to use TrackMate as a home for your algorithm. The framework is already there; it might not be perfect but can get your algorithm integrated very quickly. And then you can benefit from the other modules.
-
-The subject of extending TrackMate is not completely trivial. However, recent advances in the [SciJava package](http://www.scijava.org/), brewed by the Fiji and ImageJ2 teams considerably simplified the task. It should be of no difficulty for an average Java developer.
-
-The following tutorials show how to integrate a module of each kind in TrackMate. They are listed by increasing complexity, and it is a good idea to practice them in this order.
-
--   [How to write your own edge feature analyzer algorithm for TrackMate](/plugins/trackmate/custom-edge-feature-analyzer-algorithms)
--   [How to write your own track feature analyzer algorithm for TrackMate](/plugins/trackmate/custom-track-feature-analyzer-algorithms)
--   [How to write your own spot feature analyzer algorithm for TrackMate](/plugins/trackmate/custom-spot-feature-analyzer-algorithms)
--   [How to write your own viewer for TrackMate](/plugins/trackmate/custom-viewers)
--   [How to write custom actions for TrackMate](/plugins/trackmate/custom-actions)
--   [How to write your own detection algorithm for TrackMate](/plugins/trackmate/custom-detection-algorithms)
--   New starting in version 7: [How to write your own or integrate a **segmentation** algorithm for TrackMate](/plugins/trackmate/custom-segmentation-algorithms)
--   [How to write your own particle-linking algorithm for TrackMate](/plugins/trackmate/custom-particle-linking-algorithms)
 
 ### Misc information
 
@@ -312,11 +278,46 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 
 - The TrackMate [FAQ](/plugins/trackmate/faq)
 
-## Extensions
+- Dave Mason on using pivot tables to get track statistics based on spot features: [mean-intensity-of-tracks-using-trackmate](https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5)
+
+
+
+## Extending TrackMate
+
+Do you have a tracking or a detection algorithm you want to implement? Of course you can write a whole software from scratch. But at some point you will have to design a model to hold the data, to write code that can load and save the results, visualize them, have even a minimalistic GUI, and allow to manually correct the outcome of your algorithm. This can be long, tedious and boring, while the part that interests you is just the core algorithm.
+
+We propose you to use TrackMate as a home for your algorithm. The framework is already there; it might not be perfect but can get your algorithm integrated very quickly. And then you can benefit from the other modules.
+
+
+### Developer documentation
+
+The subject of extending TrackMate is not completely trivial. However, recent advances in the [SciJava package](http://www.scijava.org/), brewed by the Fiji and ImageJ2 teams considerably simplified the task. It should be of no difficulty for an average Java developer.
+
+[This page](/plugins/trackmate/extending) lists several tutorials show how to integrate a module of each kind in TrackMate. They are listed by increasing complexity, and it is a good idea to practice them in this order.
+
+
+### Known extensions
+
+Some extensions are documented within this wiki.
+[This page](/plugins/trackmate/extensions) lists the documented extensions.
 
 Please tell us if you have one that you want to advertise here!
 
-### Downloadable jars
+#### As Fiji update sites
+
+The Fiji updater already lists several TrackMate extensions as update sites.
+Their name all start with TrackMate-*:
+
+{% include img
+src='/media/plugins/trackmate/trackmate-extensions-update-sites.png' 
+width='400px' 
+align='center'
+%}
+
+As much as possible we try to include share their code source on a common GitHub organization dedicated to TrackMate: the [TrackMate-SC org](https://github.com/trackmate-sc).
+
+
+#### Downloadable jars
 
 Thanks to Travis, the extension we are aware of are built automatically and can be downloaded following the links below. They point to a simple .jar file that you just have to drop in your *Fiji.app/jars* folder. TrackMate will recognise the extra modules it ships and will integrate them in the plugin.
 
@@ -325,20 +326,18 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 | Find maxima (TrackMate module) | This plugin implements the find maxima detection algorithm for TrackMateas in the _Process > Find Maxima..._ command. The results are almost the same. Subpixel accuracy is activated by default. | Thorsten Wagner | <a href="https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest"> on Github </a> | <a href="https://github.com/thorstenwagner/ij-trackmate-findmaxima">on Github</a> |
 | TrackMate -> Spot-On connector | This extension adds an action allowing to automatically transfer a tracking analysis performed in TrackMate to <a href="https://spoton.berkeley.edu">Spot-On</a>, without having to export the tracks and reimport them. Spot-On is a web-interface designed for the analysis of single-molecule tracking experiments. | Maxime Woringer | <a href="https://gitlab.com/tjian-darzacq-lab/Spot-On-TrackMate/tags">on Gitlab</a> | <a href="https://gitlab.com/tjian-darzacq-lab/Spot-On-TrackMate">on Gitlab</a> |
 
-### Extensions with extra source code
+#### Extensions with extra source code
 
 [Ronny Sczech TrackMate repository](https://github.com/chicoronny/RonnyTrackMate) contains the source code to various TrackMate enhancements, in Java and macros.
 
-### Extensions documentation
+#### Extensions documentation
 
 -   [Find maxima detector](/plugins/trackmate/find-maxima-detector) from Thorsten Wagner.
 
 
-## Who uses TrackMate
+## Acknowledgements
 
-It turns out that TrackMate has a decent user base, as exemplified by a crude search on [Google Scholar](https://scholar.google.fr/scholar?q=trackmate+fiji). These citations accumulated before the TrackMate paper was out.
-
-## TrackMate components
+### Libraries 
 
 TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](/develop) system and the [Fiji Updater](/plugins/updater) ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
 
@@ -352,8 +351,7 @@ TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Bu
 -   The TrackMate file format is plain XML, and is generated or loaded using the [JDom](http://www.jdom.org/) library.
 -   For the icons, as almost every ImageJ plugin with a GUI, we used the [silk icon set](http://www.famfamfam.com/lab/icons/silk/), by Mark James. But we are also very lucky to have icons and logos designed specifically for TrackMate by [IlluScienta](http://www.illuscientia.com/).
 
-
-## Acknowledgements
+### Support
 
 We are extremely thankful for the support of [Khuloud Jaqaman](http://www.utsouthwestern.edu/labs/jaqaman/) while we were implementing in Java a stripped down version of her work on robust LAP tracker, following her seminal paper published in the Danuser group:
 
@@ -365,3 +363,8 @@ TrackMate development uses YourKit as a profiling tool. YourKit supports open so
 YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler), [YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/), and [YourKit YouMonitor](https://www.yourkit.com/youmonitor/).
 
 ![YourKit logo](https://www.yourkit.com/images/yklogo.png)
+
+
+### Who uses TrackMate
+
+It turns out that TrackMate has a decent user base, as exemplified by a crude search on [Google Scholar](https://scholar.google.fr/scholar?q=trackmate+fiji). These citations accumulated before the TrackMate paper was out.
