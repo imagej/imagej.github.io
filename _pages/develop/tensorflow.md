@@ -71,6 +71,8 @@ The variables you should have set are these two. Normally, CUDA does that for yo
 As well as the following additions to your PATH system-variable.
 ![PATH variable content](/media/develop/tensorflow-gpu-win-path.png)
 
+If after restarting Fiji, the menu `Edit > Options > TensorFlow...` still shows a CPU version although you previously selected a GPU version (a message is also reported in the console window `Window > Console` stating that no tensorflow could be found in the lib/win64 directory), then you can try to move the dll `tensorflow_jni.dll` from its original location in `Fiji.app/lib/win64` to the root directory of Fiji (the one containing the exe for Fiji, typically Fiji.app).   
+
 ### 3.2 Hints for Linux
 
 #### Step-by-step example
