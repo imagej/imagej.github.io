@@ -250,7 +250,7 @@ The pages below documents individual components, or modules or TrackMate.
 
 There are several Python tools contributed by the TrackMate developer community that allows importing TrackMate results in Python and performing track analysis with the libraries of this language. Among them:
 
-- `NapaTrackMatter` [https://github.com/kapoorlab/NapaTrackMater](https://github.com/kapoorlab/NapaTrackMater) by {% include person id='kapoorlab' %}, a bridge from TrackMate to Napari.
+- `NapaTrackMater` [https://github.com/kapoorlab/NapaTrackMater](https://github.com/kapoorlab/NapaTrackMater) by {% include person id='kapoorlab' %}, a bridge from TrackMate to Napari.
 - `pytrackmate` [https://github.com/hadim/pytrackmate](https://github.com/hadim/pytrackmate) by {% include person id='hadim' %}, a Python function that imports TrackMate files in Pandas data frames.
 - `Single-molecule-tracking-python` [https://github.com/Colorado-State-University-Stasevich-Lab/single-molecule-tracking-python](https://github.com/Colorado-State-University-Stasevich-Lab/single-molecule-tracking-python) by the Stasevich lab (Colorado State University), a series of functions in Python to perform single-molecule analysis based on TrackMate results.
 - `pyTrackMateXML`[https://github.com/rharkes/pyTrackMateXML](https://github.com/rharkes/pyTrackMateXML) by Rolf Harkes, a Python function to follow intensity traces based on TrackMate tracking results.
