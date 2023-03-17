@@ -17,7 +17,7 @@ respective operating system [here](https://jekyllrb.com/docs/installation/).
 
 Once jekyll has been installed,
 [clone](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository)
-the repository. Navigate to the cloned repository and run `bundle install` to
+the [repository](https://github.com/imagej/imagej.github.io). Navigate to the cloned repository and run `bundle install` to
 install the specific ruby gems necessary to run jekyll and serve the site.
 Once installation is complete, it is a good idea to run `bundle update`
 (it is a good idea to `bundle update` every so often to stay up to date).
