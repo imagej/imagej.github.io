@@ -115,8 +115,9 @@ This macro will output two tables, one with anisotropy results and one logging d
 #### Results
 
 -   **Degree of anisotropy**: how much orientation there is in the structure. $$0.0$$ means the image is completely isotropic, the sample has no directionality whatsoever. $$1.0$$ means there is an extreme prevailing orientation in the structure of the image.
--   **Radii of fitted ellipsoid** (optional): the lengths of the radii $$a \leq b \leq c$$ of the ellipsoid fitted on the MIL points. Degree of anisotropy equals $$= 1.0 - \frac{1}{c^2}/\frac{1}{a^2}$$.
+-   **Radii of fitted ellipsoid** (optional): the lengths in pixels of the radii $$a \leq b \leq c$$ of the ellipsoid fitted on the MIL points. Degree of anisotropy equals $$= 1.0 - \frac{1}{c^2}/\frac{1}{a^2}$$.
 -   **Eigenvectors and values** (optional): the values $$m00, m01, m02 ... m22$$ correspond to the $$x, y, z$$ components of the three eigenvectors of the fitted ellipsoid. The eigenvalues $$D1, D2, D3$$ correspond to $$\frac{1}{c^2}, \frac{1}{b^2}, \frac{1}{a^2}$$ respectively, where $$a, b, c$$ are the radii of the ellipsoid.
+-   **MIL point cloud**: Also known as a rose plot. It can be informative to display the input image stack in the ImageJ 3D Viewer with Add > From Image, but note you first have to decalibrate the input image (Image > Properties..., set all Pixel width, height & depth to 1 pixel). This will give a visualisation of the MIL cloud aligned to the imput data. 
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
