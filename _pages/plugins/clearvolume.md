@@ -50,6 +50,10 @@ ClearVolume in your research, please cite it—see reference below.
 
 </center>
 
+<!--
+
 See ClearVolume in action!
 
 {% include video platform='youtube' id='IyUpkgTJJvc' %}
+
+-->
