@@ -57,7 +57,7 @@ ImageJ and Fiji, in contrast, use the ***RERO*** style of releases, with compati
 
 ImageJ subscribes to the {% include wikipedia title='Release early, release often' text='release early, release often' %} (RERO) mantra often cited in software engineering circles. In particular—and especially because there is a small core development team—the project is driven by [Boyd's Law of Iteration](http://blog.codinghorror.com/boyds-law-of-iteration/): **speed of iteration beats quality of iteration**. That is not to say that we do not strive for quality—we do. But we have found through experience that more releases, together with guiding user feedback, push a project forward more efficiently than a slower release cycle does.
 
-To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](/develop/architecture#reproducible-builds) with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](/develop/travis), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
+To ensure releases can happen quickly, each SciJava component is independently released and versioned, using [reproducible builds](/develop/architecture#reproducible-builds) with a "release ready" `master` branch. This allows individual SciJava components to be released with the [push of a button](/develop/ci), in a *timespan less than five minutes*. This puts bug-fixes into the hands of users as quickly as possible.
 
 ## Convention over configuration
 

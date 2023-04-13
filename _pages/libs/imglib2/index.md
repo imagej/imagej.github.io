@@ -26,7 +26,7 @@ It provides an interface-driven design that supports numeric and non-numeric dat
 
 You can find the source {% include github org='imglib' repo='imglib2' %}.
 
-There is also a continuous integration system that builds ImgLib2 [every time the code changes](https://travis-ci.org/imglib/imglib2).
+There is also a [continuous integration](/develop/ci) system that builds ImgLib2 [every time the code changes](https://github.com/imglib/imglib2/actions).
 
 ## ImgLib2 vs. ImgLib1
 

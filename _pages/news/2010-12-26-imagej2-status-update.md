@@ -14,7 +14,7 @@ The following is a status update on the [ImageJ2](/software/imagej2) project as 
 
 #### Unit tests
 
-We have created {% include github org='imagej' repo='ij1-tests' label='extensive unit tests' %} for approximately 40 of ImageJ's core classes. These tests are useful for verifying that new versions of ImageJ still perform identically to previous versions. The tests are fully automated, and run whenever we make a change to the ImageJ codebase, via our [Hudson continuous integration system](/develop/travis).
+We have created {% include github org='imagej' repo='ij1-tests' label='extensive unit tests' %} for approximately 40 of ImageJ's core classes. These tests are useful for verifying that new versions of ImageJ still perform identically to previous versions. The tests are fully automated, and run whenever we make a change to the ImageJ codebase, via our [continuous integration system](/develop/ci).
 
 #### ImageJ2 architecture
 

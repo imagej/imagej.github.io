@@ -125,7 +125,7 @@ PlotData=
 
 ### Mark Hiner
 
--   Wrote a guide for developers ([Automatic Update Site Uploads](/update-sites/automatic-uploads)) on how to automatically upload to their update site via Travis
+-   Wrote a guide for developers ([Automatic Update Site Uploads](/update-sites/automatic-uploads)) on how to automatically upload to their update site
 -   Proof-of-concept'd restoring the Add Imports functionality to the script editor ({% include github org='imagej' repo='imagej-ui-swing' pr='67' label='imagej/imagej-ui-swing\#67' %})
 -   Added Renjin-flavored R scripting to ImageJ ({% include github org='scijava' repo='scripting-renjin' label='scijava/scripting-renjin' %})
 -   Got the Fiji downloads migrated to Java 8 bundles (see [Downloads](/downloads))

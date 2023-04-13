@@ -22,8 +22,8 @@ Further, we strive for ImageJ to be a community driven project. It is not merely
 -   Public [issue trackers](/develop/project-management#issue-tracking).
 -   Public [communication channels](/discuss/#ways-to-get-help) for open discussion.
 -   Public [wiki](/) for community contributed content.
--   [Travis CI](/develop/travis), ImageJ's public {% include wikipedia title='Continuous integration' text='continuous integration'%} system.
--   Public [Maven repository](/develop/project-management#maven) for ImageJ binaries.
+-   Public [CI/CD](/develop/ci) for automated QA and deployment of binary builds.
+-   Public [Maven repository](/develop/project-management#maven) for serving binaries.
 
 Using these resources, you can always observe the latest progress of the project, get an idea of where the project is heading, contribute code to the project yourself using GitHub, or write documentation, tutorials and other information on the wiki.
 

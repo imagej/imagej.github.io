@@ -23,7 +23,7 @@ There are several popular options for performing CI builds in the cloud, or on y
 
 * [GitHub Actions](/develop/github-actions) - Used by most SciJava projects for builds, testing, and deployment.
 * [AppVeyor](/develop/appveyor) - Used by a few SciJava projects for builds on the Windows platform.
-* [Travis CI](/develop/travis-ci) - Used by SciJava projects from 2017 until 2021.
+* [Travis CI](/develop/travis) - Used by SciJava projects from 2017 until 2021.
 * [Jenkins](/develop/jenkins) - Used by SciJava projects from 2010 until 2019.
 
 Just to name a few that are or were used within the ImageJ community.

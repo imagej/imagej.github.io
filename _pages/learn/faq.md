@@ -252,7 +252,7 @@ Over the years we evolved a development style as follows:
 
 This development style has been adopted by the [ImageJ2 team](/people), with two additions (making the fall-out step much smaller):
 
--   tests are added as automated regression tests (to be run by the [continuous integration](/develop/travis) whenever new changes were pushed) whenever possible.
+-   tests are added as automated regression tests (to be run by the [continuous integration](/develop/ci) whenever new changes were pushed) whenever possible.
 -   merges are usually done with `--no-ff`, so that even fast-forwarding branches (i.e. rebased on top of *master*) will get a merge commit in which the branch is described more broadly.
 
 See also [coding style](/develop/coding-style).
