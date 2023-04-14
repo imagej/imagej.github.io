@@ -9,12 +9,12 @@ update-site: Neuroanatomy
 ---
 
 {% capture text%}
-Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
+Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and most do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
 {% capture tip%}
-SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT hotkeys do not require holding down {% include key keys='ctlcmd' %}. When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {% include key key='S' %} will toggle cursor snapping while Pressing {% include key keys='ctlcmd|S' %} will allow you to save the traced image using IJ"s built-in command {% include bc path='File|Save'%}.
+SNT was designed so that its shortcuts minimally collide with those of ImageJ. Most SNT hotkeys do not require holding down {% include key keys='ctlcmd' %}. When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {% include key key='S' %} will toggle cursor snapping while Pressing {% include key keys='ctlcmd|S' %} will allow you to save the traced image using IJ"s built-in command {% include bc path='File|Save'%}.
 {% endcapture %}
 {% include notice icon="tip" content=tip %}
 
@@ -58,6 +58,8 @@ The Command Palette is a faster way to access actions. Press {% include key keys
 
 These shortcuts are available when running SNT in *Tracing Mode*:
 
+| {% include key keys='Ctrl|S' %}               | <u>S</u>ave tracings |
+| {% include key key='Ctrl|Shift|S' %}          | <u>S</u>ave <u>S</u>napshot Backup |
 | {% include key key='L' %}                     | Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image) |
 | {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
 | {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/step-by-step-instructions#accurate-point-placement) |
