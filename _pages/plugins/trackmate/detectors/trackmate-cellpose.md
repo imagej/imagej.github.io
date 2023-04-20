@@ -3,7 +3,7 @@ title: TrackMate-Cellpose
 categories: [Segmentation,Tracking,Deep Learning]
 icon: /media/icons/cellpose.png
 description: cellpose integration in TrackMate.
-categories: [Segmentation,Tracking]
+categories: [Segmentation,Tracking,Machine Learning]
 artifact: sc.fiji:TrackMate-Cellpose
 section: TrackMate-Cellpose.:Usage:cellpose parameters in the TrackMate UI.
 ---
