@@ -63,11 +63,11 @@ JACoP v2.0 was released for the second ImageJ User and Developer Conference in N
 
 ## Installation
 
-Simply download [JACoP\_.jar](https://imagejdocu.list.lu/_media/plugin/analysis/jacop_2.0/just_another_colocalization_plugin/jacop_.jar) to the Plugins folder of ImageJ, restart ImageJ and use the "JACoP" command in the Plugins menu.
+Simply download [JACoP\_.jar](https://github.com/fabricecordelieres/IJ-Plugin_JACoP/releases) to the Plugins folder of ImageJ, restart ImageJ and use the "JACoP" command in the Plugins menu.
 
 ## Download
 
-Plugin available here: [JACoP\_.jar](https://imagejdocu.list.lu/_media/plugin/analysis/jacop_2.0/just_another_colocalization_plugin/jacop_.jar)
+Plugin available here: [JACoP\_.jar](https://github.com/fabricecordelieres/IJ-Plugin_JACoP/releases)
 
 ## License
 
