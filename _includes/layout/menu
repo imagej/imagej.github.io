@@ -127,7 +127,6 @@
                 <li><a href="/develop/improving-the-code">Contributing to a plugin</a></li>
                 <li><a href="/develop/releasing">Development lifecycle</a></li>
                 <li><a href="/develop/building-a-pom">Building a POM</a></li>
-                <hr>
                 <li><a href="/develop/debugging-exercises">Hands-on debugging</a></li>
                 <li><a href="/develop/writing-ops">Adding new ops</a></li>
                 <li><a href="/develop/formats">Adding new formats</a></li>
