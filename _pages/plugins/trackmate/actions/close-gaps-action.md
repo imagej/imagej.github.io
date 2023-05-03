@@ -11,8 +11,10 @@ For instance, a track will contain a spot at frame _t_ and one linked to it at _
 This action modifies the track by inserting a spot at frame _t+1_ in the track.
 Several methods are available and can be configured to simply interpolate the spot position or search for them in the source image.
 
+    
 {% include img src='/media/plugins/trackmate/actions/close-track-gaps-01.png' align='left'  %}
 {% include img src='/media/plugins/trackmate/actions/close-track-gaps-02.png' align='right'  %}
+    
 
 
 ## Usage.
