@@ -74,3 +74,20 @@ Similarly for Windows (again respect single/double quotes) or macOS,
 ImageJ-win64.exe --ij2 --headless --console --run "PathTo/hello.py" "name1='Mr', name2='Kraken'"
 ./ImageJ-macosx --ij2 --headless --console --run hello.py 'name1="Mr",name2="Mrs Kraken"'
 ```
+
+## Controlling the Updater
+
+To prevent unnecessary server connections to update sites in headless mode you can set the `imagej.updater.disableAutocheck` java parameter `true`:
+
+```ssh
+./ImageJ-linux64 -Dimagej.updater.disableAutocheck=true -- --ij2 --headless --console --run hello.py 'name="Mr Kraken"'
+```
+
+Often headless mode is used to run many scripts in parallel that could result in huge numbers of server connections. Setting this paramter will prevent this issue. This parameter does not persist between launches and must be included every time server connections to update sites should be prevented.
+
+If desired, the updater can be controlled in headless mode using the following commands to add an update site and update ImageJ.
+
+```ssh
+./ImageJ-linux64 --update add-update-site BAR http://sites.imagej.net/Tiago/
+./ImageJ-linux64 --ij2 --headless --update update
+```
