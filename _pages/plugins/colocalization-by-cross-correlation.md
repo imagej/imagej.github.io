@@ -72,7 +72,7 @@ The R-squared value is also only calculated in the range of mean ± 3×sigma, an
 The peak height can likely be ignored in most cases, but loosely reflects the relative strength of the correlation. As an example, it could be used if you expect a change in the number of correlated particles or ratio of correlated to uncorrelated particles, but no change in the distance. Since the Gaussian curve fitting is done off the subtracted cross-correlation data, the peak height is also influenced by all the image quality parameters that confidence is. **For the height to be comparable across images, they must have been imaged under identical conditions.** Importantly, the values in the cross-correlation results are normalized to the mask volume. Thus, differences in the volume of anlayzed region should be accounted for if you are comparing Gaussian height. 
 
 ### Contribution of each image to the gaussian fit
-Two new images will be created that display the signal from each analyzed image that contributed to the cross-correlation and gaussian fit result. It is important to note that the data it contains will always be visible, even if you do NOT have a strong correlation between the two images. The pixel intensity values should NOT be used as an indicator of overall correlation between the images (that's what the confidence value is for), but the relative brightness within an image can be used as an approximate indicator of how strongly that particular signal contributed to the correlation result. This relative brightness indication can be easily seen in the example data above: In our original data, all the dots are of the same size and intensity, however, in the resulting contribution images, the dots that remain are varied in their brightness based on how much they contributed to the cross-correlation result (you'll notice that the brightest dots are all oriented in the same direction). 
+Two new images will be created that display the signal from each analyzed image that contributed to the cross-correlation and gaussian fit result. It is important to note that the data it contains will always be visible, even if you do NOT have a strong correlation between the two images. Generally, the pixel intensity values should NOT be used as an indicator of overall correlation between the images, but the relative brightness within an image can be used as an approximate indicator of how strongly that particular signal contributed to the correlation result. This relative brightness indication can be easily seen in the example data above: In our original data, all the dots are of the same size and intensity, however, in the resulting contribution images, the dots that remain are varied in their brightness based on how much they contributed to the cross-correlation result (you'll notice that the brightest dots are all oriented in the same direction). 
 
 ## Working with time-series data:
 
@@ -85,6 +85,30 @@ Working with time-series data is not that different than working with non-time-s
 Another change with time-series data is that in addition to the gaussian fit analysis text window, which now displays the fit data for the frame with the highest correlation, the plugin will output a **table of gaussian fit results**, showing the gaussian fits and confidence for each frame. To save this table, go to File > Export > Table..., click browse and save the file as a .csv file (you must add the extension or you will get an error message).
 
 Lastly, the contribution images will still be generated and are functionally the same as for their non-time series counterparts. However, it's important to note that the contribution is evaluted on a per frame basis, and thus **each frame shows the signal contribution to the gaussian fit results for that frame**. Thus, if your cross-correlation distance shifts over the course of an experiment, the contribution images will display this shifting cross-correlation. 
+
+## Advantages and Disadvantages
+
+### Advantages
+
+* High- and super-resolution compatible: Since CCC measures spatial correlation over as a function of distance, there's no requirement for the two channels to overlap. This means that you can keep improving your resolution, and your results will generally just get better (though there is a limit to this).
+* More details of the spatial correlation are provided, leading to a better understanding of the nature of the relation
+* Image quality metrics and spatial correlation variability are built into the results (with zero effort from the user): 
+  *  Improved resolution > more accurate mean, narrower SD, higher confidence
+  *  Higher SNR > higher R-squared
+  *  Higher molecular density >  lower confidence
+  *  Longer spatial correlation distance > lower confidence, lower R-squared, eventually larger SD; This may seem disadvantageous, but it simply means there's a slight bias for closer correlations, which are generally more likely to be the true correlation
+  *  More uncorrelated particles > lower confidence, eventually causes inaccuarte mean, larger SD, and lower R-squared
+
+### Disadvantages
+
+* The pre-processing steps are important: failure to subtract background will result in low confidence, and failure to use a mask when necessary will often result in fitting to a low spatial frequency (such as cells correlating with themselves and resulting in a mean of 0, and a SD of 5-10 µm)
+* Results are sensitive to mask selection: changes to the mask can cause significant changes to the results. If very slight mask changes cause significant changes to the results it likely means you are right on the border of the required resolution for the spatial correlation you are measuring, and you should try to improve your resolution
+* The plugin uses a lot of memory, more than I ever thought it would, and nearly all the memory used scales with image size. I've tried reducing the memory requirement as much as I can, but it still uses a ton. Changing the input image bit-depth makes almost no difference, as all the calculations and data generated are 32-bit. However, there are some things you can do:
+  * Crop or split the image. If you're studying correlations inside a cell, you could analyze each cell individually. I don't recommend cutting across a mask though, this will change your results.
+  * Make sure to use a good mask that isn't too large. During the pixel randomization, all the pixels inside the mask are stored in a list. So, the smaller the mask, the shorter the list.
+  * Turn off intermediate images and contribution images. Both of these add a significant amount to the total memory required for the plugin.
+  * Buy more RAM. It's not that expensive, and it's usually super easy to install. This may not be an option if you use a Mac though.
+  * Run the analysis with a cloud computing service. CCC was made using SciJava and is [Headless mode](/learn/headless) compatible, making it possible to run the analysis remotely.
 
 ## How it works & intermediate images description:
 
@@ -110,3 +134,9 @@ To remove the contribution from low spatial frequency structures/data (such as c
 After the averaged randomized cross-correlation image is generated, it is subtracted from the original cross-correlation. Then, we generate a radial profile of the subtracted data and fit a gaussian curve to it. We also generate a radial profile for the original correlation data before subtraction, as this is needed to establish a measure of confidence. The confidence is calculated as the area under the curve (AUC) of the subtracted correlation radial profile (in the range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range). The confidence value, along with the mean and sigma of the gaussian fit are displayed in a log window. Higher values of confidence, closer to 1, indicate that two images likely have a true spatial correlation at the indicated distance.
 
 To generate the contribution images, we further modify the subtracted cross-correlation image, by effectively multiplying it with the gaussian fit in order to create a cross-correlation image that only retains the data within our gaussian curve range. This gaussian-modified cross-correlation image is then used to back-calculate the contribution images. Image1Contribution = (image2 ∗ gaussModifiedCorr) × image1. Image2Contribution = (image1 ★ gaussModifiedCorr) × image2. Key: ∗ -> convolve, ★ -> correlate.
+
+## Just Cross-correlation
+
+When you install CCC, you'll also find the "Just Cross Correlation" command under Analyze > Colocalization. This command simply cross-correlates the two input images, and calculates the radial profile. No gaussian curve fitting or statistics are calculated. Just cross-correlation can be used if CCC fails due to insufficient memory, to at least see a cross-correlation curve, or it can be used for non-gaussian relations, such as the one desscribed below.
+
+I originally made this as I had someone who wanted to determine the average thickness of a joint from a microCT scan. The cross-correlation of an edges only version of the two bones on either side of the joint generated an S-curve (that trailed down after the peak), after which they could extract the curve data and fit an S-curve to it using a separate application. 
