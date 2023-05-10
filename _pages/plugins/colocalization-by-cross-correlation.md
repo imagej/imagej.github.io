@@ -18,7 +18,7 @@ Available on the list of [ImageJ updates sites](/update-sites/following). Requir
 
 ## How to use Colocalization by Cross Correlation (CCC):
 
-### Prepare a mask for the Costes randomization
+### Prepare a mask for the pixel randomization
 {% include img align="right" name="Randomization mask" src="colocbycorrelate-mask" caption="**Randomization mask:** An example of an appropriate mask for analyzing cross-correlation of cytoplasmic proteins(right), generated from an actin stain (left)." %}
 To get the best possible results, you will want to create and save a [segmented mask](/imaging/segmentation) for one of your images. This mask should contain all possible localizations for that stain/dye, or it should be a mask of localization for your null hypothesis (_i.e_ if you hypothesize a protein is localized to the mitochondria, you would want your mask to encompass the entire cell). As an example, say you are studying correlation between two nuclear proteins, then you would want your mask to cover the nucles, which could be created easily using a DAPI or Hoechst stain (the mask itself does not need to be generated from either image your are trying to correlate). If you were studying cytoplasmic proteins, you would want your mask to cover the entire cytoplasm. The mask is very important and not using it could easily lead to undesired correlations. This is because without a mask this plugin will find correlations at any distance, and, if say you are studying nuclear proteins, can easily correlate one nuclei to the nuclei of a neighboring cell (cells are often highly repetitive and spaced relatively evenly). However, when an appropriate mask is used, these cell to cell correlations will be subtracted out during the analysis.
 
@@ -125,7 +125,7 @@ First, this plugin applies the provided mask to both images, setting any pixels 
 
 To remove the contribution from low spatial frequency structures/data (such as cells and nuclei), and to correct for correlation that results from high molecular density or low resolution, a second cross-correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
 
-1. Randomizing Image1 using the [Costes randomization method](/media/costes-etalcoloc.pdf) and the mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei), which is provided by the user.
+1. Randomizing Image1 using the pixel randomization and the mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei), which is provided by the user.
 
 2. Calculating the cross-correlation of the randomized image with Image2.
 
