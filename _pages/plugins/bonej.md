@@ -743,7 +743,8 @@ A 3D binary image.
 
 #### Parameters
 
--   **Export STL file(s)**: if checked, then the meshes created from the image are saved as .stl-files. A dialog opens for you to select a folder for the files.
+-   **Export STL file**: if checked, then the meshes created from the image are saved as .stl-files. A dialog opens for you to select a folder for the files.
+-   **STL directory**: the location to save the STL file. If no directory is specified but **Export STL file** is checked, the plugin will quit and print a message to the log.
 
 #### Results
 
