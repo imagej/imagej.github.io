@@ -33,7 +33,7 @@ The 3-cube approach is based on measuring donor emission upon donor-specific exc
 
 ## Usage
 
-Download the help file as a PDF [here](/media/RiFRET_2.0.0_helpfile.pdf).
+Download the help file as a PDF [here](/media/rifret/rifret_2_0_0_helpfile.pdf).
 
 ## Citation
 
