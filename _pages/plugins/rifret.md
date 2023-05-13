@@ -31,6 +31,10 @@ The 3-cube approach is based on measuring donor emission upon donor-specific exc
 2. Enable the FRET Imaging [update site](https://imagej.net/update-sites/following).
 3. Once installed, go to _Plugins > FRET Imaging > RiFRET_.
 
+## Usage
+
+Download the help file as a PDF [here](/media/RiFRET_2.0.0_helpfile.pdf).
+
 ## Citation
 
 This software is based on a publication. If you use it in your work, please cite:
