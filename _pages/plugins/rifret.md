@@ -142,7 +142,7 @@ Download the help file as a PDF [here](/media/rifret/rifret_2_0_0_helpfile.pdf).
 
 ## *File*
 
-{% include img name="rifret-file-menu" src="/media/plugins/rifret/rifret-file-menu.png" %}
+{% include img src="/media/plugins/rifret/rifret-file-menu.png" %}
 
 ### [[]{#_Toc111200461 .anchor}**Open**](https://imagej.nih.gov/ij/docs/guide/146-26.html#sec:File)
 
@@ -244,7 +244,7 @@ Convert Image to 32-bit: converts images to 32-bit format.
 
 ### [[]{#_Toc111200475 .anchor}Gaussian Blur](https://imagej.nih.gov/ij/docs/guide/146-29.html#toc-Subsection-29.11)
 
-Applies a Gaussian blur with a selected σ 1/e^2^ radius. (Former users
+Applies a Gaussian blur with a selected σ 1/e<sup>2</sup> radius. (Former users
 of RiFRET please note that the Gaussian Blur used in versions 1.x had
 2.5 times larger radiuses with the same value set, and it is now
 deprecated.)
@@ -607,7 +607,7 @@ Processing*
 3\. Select a CSV with the appropriate parameters. To keep and use the
 parameters currently displayed in the main window, simply click cancel.
 
-4\. Set the channel order numerically and click OK ([see above](#stack))
+4\. Set the channel order numerically and click OK ([see above](#step-1-open-stacks))
 
 The plugin will produce and measure the FRET images with the selected
 threshold values. The FRET images and the corrected channel images (if
