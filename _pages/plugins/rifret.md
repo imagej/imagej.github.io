@@ -38,113 +38,13 @@ Download the help file as a PDF [here](/media/plugins/rifret_2_0_0_helpfile.pdf)
 
 # Table of Contents
 
-# [Menu bar](#menu-bar)
-
-## [File](#file)
-
-### [Open [3](#_Toc111200461)](#_Toc111200461)
-
-[Save as Tiff](#save-as-tiff)
-
-[Save as BMP](#save-as-bmp)
-
-[Save Messages)](#save-messages)
-
-[Load Parameters from CSV](#load-parameters-from-csv)
-
-[Save Parameters to CSV](#save-parameters-to-csv)
-
-[Batch Processing](#batch-processing)
-
-[Reset All)](#reset-all)
-
-[Image:](#image)
-
-[Stack to Images](#_Toc111200470)
-
-[Tile Image Windows](#tile-image-windows)
-
-[Apply Mask](#apply-mask)
-
-[Register to Donor Channel](#register-to-donor-channel)
-
-[Calculate Ratio of Images: Calculates the ratio of two selected 32-bit image](#calculate-ratio-of-images-calculates-the-ratio-of-two-selected-32-bit-image)
-
-[Gaussian Blur [5](#_Toc111200475)](#_Toc111200475)
-
-[Threshold](#threshold)
-
-[Histogram](#histogram)
-
-[LUT fire](#lut-fire)
-
-[LUT spectrum](#lut-spectrum)
-
-[Corrections](#corrections)
-
-[Use of the Plugin with pixel-wise autofluorescence correction](#using-the-plugin-with-pixel-wise-autofluorescence-correction)
-
-[Main window with pixel-wise autofluorescence correction](#main-window-with-pixel-wise-autofluorescence-correction)
-
-[Calculate correction and calibration factors](#calculate-correction-and-calibration-factors)
-
-[Calculate S and B factors](#calculate-s-and-b-factors)
-
-[Background subtraction](#background-subtraction)
-
-[Set the ratio of epsilons](#set-the-ratio-of-epsilons)
-
-[Calculate α](#calculate-α)
-
-[Calculate FRET](#calculating-fret)
-
-[Step 1: Open and set images](#step-1-open-and-set-images)
-
-[Step 1: Open stacks](#step-1-open-stacks)
-
-[Step 2: Blur channels
-[12](#step-2-blur-channels)](#step-2-blur-channels)
-
-[Step 3: Subtract background
-[12](#step-3-subtract-background)](#step-3-subtract-background)
-
-[Step 4: Thresholding [12](#step-4-thresholding)](#step-4-thresholding)
-
-[Step 5: Create FRET Image
-[12](#step-5-create-fret-image)](#step-5-create-fret-image)
-
-[Step 6: Set threshold for FRET image
-[12](#step-6-set-threshold-for-fret-image)](#step-6-set-threshold-for-fret-image)
-
-[Step 7: Save FRET image as TIFF
-[13](#step-7-save-fret-image-as-tiff)](#step-7-save-fret-image-as-tiff)
-
-[Step 8: Select ROIs and make measurements
-[13](#step-8-select-rois-and-make-measurements)](#step-8-select-rois-and-make-measurements)
-
-[Use of the Plugin without pixel-wise autofluorescence correction
-[14](#using-the-plugin-without-pixel-wise-autofluorescence-correction)](#using-the-plugin-without-pixel-wise-autofluorescence-correction)
-
-[Main window without pixel-wise autofluorescence correction
-[14](#main-window-without-pixel-wise-autofluorescence-correction)](#main-window-without-pixel-wise-autofluorescence-correction)
-
-[Calculate S factors [15](#calculate-s-factors)](#calculate-s-factors)
-
-[Background subtraction
-[15](#background-subtraction-1)](#background-subtraction-1)
-
-[Average autofluorescence correction
-[15](#average-autofluorescence-correction)](#average-autofluorescence-correction)
-
-[Batch processing [16](#batch-processing-1)](#batch-processing-1)
-
 # Menu bar
 
 ## *File*
 
 {% include img src="rifret-file-menu" %}
 
-### [[]{#_Toc111200461 .anchor}**Open**](https://imagej.net/ij/docs/guide/146-26.html#sec:File)
+### [**Open**](https://imagej.net/ij/docs/guide/146-26.html#toc-Subsection-26.2)
 
 Opens an image with the file manager.
 
@@ -196,7 +96,7 @@ open the program again to clear these.
 
 {% include img name="rifret-image-menu" src="rifret-image-menu" %}
 
-### [[]{#_Toc111200470 .anchor}**Stack to Images**](https://imagej.net/ij/docs/guide/146-28.html#toc-Subsection-28.6)
+### [**Stack to Images**](https://imagej.net/ij/docs/guide/146-28.html#toc-Subsection-28.6)
 
 Splits the selected multichannel image so each channel is treated as a
 standalone image. The resulting windows can be used during the analysis process by assigning to them the appropriate role at the steps using the "set image" function.
@@ -235,14 +135,14 @@ performed (this is equivalent to cross-correlation in the spatial
 domain). Finally, images are inverse transformed back into the spatial
 domain. The maxima (peaks) are then used to shift in X and Y. Currently,
 sub-pixel shift is not supported. N.B. Image registration requires image
-dimensions to be 2^n^ and square (e.g. 512×512). Results of registration
+dimensions to be 2<sup>n</sup> and square (e.g. 512×512). Results of registration
 will be output to the log.
 
 ### Calculate Ratio of Images: Calculates the ratio of two selected 32-bit image
 
 Convert Image to 32-bit: converts images to 32-bit format.
 
-### [[]{#_Toc111200475 .anchor}Gaussian Blur](https://imagej.net/ij/docs/guide/146-29.html#toc-Subsection-29.11)
+### [Gaussian Blur](https://imagej.net/ij/docs/guide/146-29.html#toc-Subsection-29.11)
 
 Applies a Gaussian blur with a selected σ 1/e<sup>2</sup> radius. (Former users
 of RiFRET please note that the Gaussian Blur used in versions 1.x had
