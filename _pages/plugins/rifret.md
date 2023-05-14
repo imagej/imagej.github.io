@@ -194,7 +194,7 @@ calculated on a donor only sample, the S2, S4, S6 factors on an acceptor
 only sample and the B1, B2, B3 on a non labelled sample.
 
 First, the fluorescent channels should be set. If only stacks are
-available, use [Stack to Images](#_Stack_to_Images). When the
+available, use [Stack to Images](#stack-to-images). When the
 single-channel images are available select the donor channel then click
 on the Set donor channel image button. Repeat this step with the other
 channels. All images are set to 32-bit depth automatically.
@@ -218,8 +218,7 @@ ROI. The selected ROI will be copied to all the channels.
 into the boxes under the text Constant:
 
 When clicking on subtract for each channel, the plugin checks if there
-is a ROI in the image and subtracts the average value of the ROI and
-[also]{.underline} subtracts the constant. So depending on the samples
+is a ROI in the image and subtracts the average value of the ROI and <u>also</u> subtracts the constant. So depending on the samples
 used for the S and B factors, either the ROI average or the constant
 should be used.
 
@@ -365,8 +364,7 @@ properly named.
 ### Step 2: **Blur channels**
 
 Optional step, with the dialogue box, the pixel radius of the blurring
-can be entered. The plugin uses the [Gaussian
-Blur](https://imagej.net/ij/docs/guide/146-29.html#toc-Subsection-29.11)
+can be entered. The plugin uses the [Gaussian Blur](https://imagej.net/ij/docs/guide/146-29.html#toc-Subsection-29.11)
 function of the FIJI. It can be a useful tool when only low SNR images
 are available. (Please note that all the channels should be blurred with
 the same radius)
@@ -379,11 +377,11 @@ Autofluorescence from cells or tissues is taken into account on a pixel
 by pixel basis using the B factors calculated
 [previously](#calculate-s-and-b-factors).
 
-<u>Option1</u>: select a cell-free ROI with the FIJI built in
+<u>Option 1</u>: select a cell-free ROI with the FIJI built in
 options on the donor channel, and click on Copy ROI. The selected ROI
 will be copied to all the channels.
 
-<u>Option2</u>: If the background values are known from an
+<u>Option 2</u>: If the background values are known from an
 independent cell-free sample, you can type them to the boxes under the
 text Constant:
 
