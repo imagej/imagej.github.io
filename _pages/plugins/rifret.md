@@ -34,7 +34,7 @@ The 3-cube approach is based on measuring donor emission upon donor-specific exc
 
 ## Usage
 
-Download the help file as a PDF [here](/media/rifret/rifret_2_0_0_helpfile.pdf).
+Download the help file as a PDF [here](/media/plugins/rifret_2_0_0_helpfile.pdf).
 
 # Table of Contents
 
@@ -142,9 +142,9 @@ Download the help file as a PDF [here](/media/rifret/rifret_2_0_0_helpfile.pdf).
 
 ## *File*
 
-{% include img src="/media/plugins/rifret/rifret-file-menu.png" %}
+{% include img src="rifret-file-menu" %}
 
-### [[]{#_Toc111200461 .anchor}**Open**](https://imagej.nih.gov/ij/docs/guide/146-26.html#sec:File)
+### [[]{#_Toc111200461 .anchor}**Open**](https://imagej.net/ij/docs/guide/146-26.html#sec:File)
 
 Opens an image with the file manager.
 
@@ -160,7 +160,7 @@ Saves the selected image in BMP format.
 
 Saves the content of the messages pane in .txt format.
 
-{% include img name="rifret-save-as-txt" src="/media/plugins/rifret/rifret-save-as-txt.png" %}
+{% include img name="rifret-save-as-txt" src="rifret-save-as-txt" %}
 
 ###  **Clear Messages**
 
@@ -194,9 +194,9 @@ open the program again to clear these.
 
 ## <u>Image</u> 
 
-{% include img name="rifret-image-menu" src="/media/plugins/rifret/rifret-image-menu.png" %}
+{% include img name="rifret-image-menu" src="rifret-image-menu" %}
 
-### [[]{#_Toc111200470 .anchor}**Stack to Images**](https://imagej.nih.gov/ij/docs/guide/146-28.html#toc-Subsection-28.6)
+### [[]{#_Toc111200470 .anchor}**Stack to Images**](https://imagej.net/ij/docs/guide/146-28.html#toc-Subsection-28.6)
 
 Splits the selected multichannel image so each channel is treated as a
 standalone image. The resulting windows can be used during the analysis process by assigning to them the appropriate role at the steps using the "set image" function.
@@ -214,7 +214,7 @@ image to be masked is automatically converted to 32-bit when the "Set
 image to be masked" command is applied. The two images must be the same
 size. The command opens this dialog:
 
-{% include img name="apply-mask" src="/media/plugins/rifret/rifret-apply-mask.png" %}
+{% include img name="apply-mask" src="rifret-apply-mask" %}
 
 Setting the input images renames them as "Mask image -- date" and "Image
 to mask -- date". The output images are 32-bit and named:
@@ -242,7 +242,7 @@ will be output to the log.
 
 Convert Image to 32-bit: converts images to 32-bit format.
 
-### [[]{#_Toc111200475 .anchor}Gaussian Blur](https://imagej.nih.gov/ij/docs/guide/146-29.html#toc-Subsection-29.11)
+### [[]{#_Toc111200475 .anchor}Gaussian Blur](https://imagej.net/ij/docs/guide/146-29.html#toc-Subsection-29.11)
 
 Applies a Gaussian blur with a selected σ 1/e<sup>2</sup> radius. (Former users
 of RiFRET please note that the Gaussian Blur used in versions 1.x had
@@ -268,7 +268,7 @@ Applies the spectrum lookup table to the selected image
 
 ## <u>Corrections</u>
 
-{% include img name="rifret-corrections-menu" src="/media/plugins/rifret/rifret-corrections-menu.png" %}
+{% include img name="rifret-corrections-menu" src="rifret-corrections-menu" %}
 
 Pixel-wise Autofluorescence Correction: Enables the pixelwise
 autofluorescence function. (Changes the main window of the plugin)
@@ -277,7 +277,7 @@ autofluorescence function. (Changes the main window of the plugin)
 
 ## Main window with pixel-wise autofluorescence correction 
 
-{% include img name="rifret-main-window-autofluorescence-correction" src="/media/plugins/rifret/rifret-main-window-autofluorescence-correction.png" %}
+{% include img name="rifret-main-window-autofluorescence-correction" src="rifret-main-window-autofluorescence-correction" %}
 
 ## Calculate correction and calibration factors
 
@@ -286,7 +286,7 @@ the calculate buttons.
 
 ### Calculate S and B factors
 
-{% include img name="rifret-calculate-correction-factors" src="/media/plugins/rifret/rifret-calculate-correction-factors.png" %}
+{% include img name="rifret-calculate-correction-factors" src="rifret-calculate-correction-factors" %}
 
 All windows implementing the calculation of spectral spillover factors
 (S and B factors) follow the same logic. The S1, S3, S5 factors can be
@@ -351,7 +351,7 @@ constant. Make sure background ROIs contain no cells when using
 pixel-wise AF correction.
 
 The threshold buttons open the built in [Threshold window of
-Fiji](https://imagej.nih.gov/ij/docs/guide/146-28.html#toc-Subsection-28.2).
+Fiji](https://imagej.net/ij/docs/guide/146-28.html#toc-Subsection-28.2).
 After selecting the appropriate threshold, it should be applied and the
 Set to NaN option should be selected. The selected threshold can be
 reset with the reset.
@@ -380,7 +380,7 @@ most dye pairs this numeric is negligibly small.
 
 ### Calculate α
 
-{% include img name="rifret-calculate-alpha" src="/media/plugins/rifret/rifret-calculate-alpha.png" %}
+{% include img name="rifret-calculate-alpha" src="rifret-calculate-alpha" %}
 
 For calculating the alpha factor, the intensity of the donor channel
 (I1) on a donor only and transfer channel (I2) on an acceptor only
@@ -431,13 +431,13 @@ The double labeled images should be opened.
 
 Open and set as channels:
 
-{% include img name="rifret-open-and-set-images" src="/media/plugins/rifret/rifret-open-and-set-images.png" %}
+{% include img name="rifret-open-and-set-images" src="rifret-open-and-set-images" %}
 
 
-with open the built-in [image opener of Fiji](https://imagej.nih.gov/ij/docs/guide/146-26.html#toc-Subsection-26.2)
+with open the built-in [image opener of Fiji](https://imagej.net/ij/docs/guide/146-26.html#toc-Subsection-26.2)
 starts (all the supported image formats can be opened this way). If
 images are in stacks, they can be split using [Stack to
-Images](https://imagej.nih.gov/ij/docs/guide/146-28.html#toc-Subsection-28.6)
+Images](https://imagej.net/ij/docs/guide/146-28.html#toc-Subsection-28.6)
 in the IJ menu.
 
 When single channel images are opened, select the window with the donor
@@ -448,13 +448,13 @@ acceptor, and autofluorescence channels in the same manner.
 
 When the Use stack is checked, the main window changes:
 
-{% include img name="rifret-open-stacks" src="/media/plugins/rifret/rifret-open-stacks.png" %}
+{% include img name="rifret-open-stacks" src="rifret-open-stacks" %}
 
-Click Open & set stack, The [built-in image opener of Fiji](https://imagej.nih.gov/ij/docs/guide/146-26.html#toc-Subsection-26.2)
+Click Open & set stack, The [built-in image opener of Fiji](https://imagej.net/ij/docs/guide/146-26.html#toc-Subsection-26.2)
 starts. Select a stack, and when it is opened, the following window
 should appear:
 
-{% include img name="rifret-set-channel-order" src="/media/plugins/rifret/rifret-set-channel-order.png" %}
+{% include img name="rifret-set-channel-order" src="rifret-set-channel-order" %}
 
 The position of the appropriate channel in the stacks should be written
 in the dialogue boxes in a numeric form. The numbering of channels
@@ -466,7 +466,7 @@ properly named.
 
 Optional step, with the dialogue box, the pixel radius of the blurring
 can be entered. The plugin uses the [Gaussian
-Blur](https://imagej.nih.gov/ij/docs/guide/146-29.html#toc-Subsection-29.11)
+Blur](https://imagej.net/ij/docs/guide/146-29.html#toc-Subsection-29.11)
 function of the FIJI. It can be a useful tool when only low SNR images
 are available. (Please note that all the channels should be blurred with
 the same radius)
@@ -520,7 +520,7 @@ image can be reloaded.
 ### **Step 7: Save FRET image as TIFF**
 
 Saves TIFF format images with the [built in FIJI image
-exporter](https://imagej.nih.gov/ij/docs/guide/146-26.html#toc-Subsection-26.10)
+exporter](https://imagej.net/ij/docs/guide/146-26.html#toc-Subsection-26.10)
 
 This command also saves the corrected donor and acceptor images into a
 stack when the show corrected donor and acceptor images option is
@@ -546,7 +546,7 @@ images.
 
 ## Main window without pixel-wise autofluorescence correction 
 
-{% include img name="rifret-main-window" src="/media/plugins/rifret/rifret-main-window.png" %}
+{% include img name="rifret-main-window" src="rifret-main-window" %}
 
 Without pixel-wise autofluorescence correction, the main window does not
 display the boxes for B factors, and the button to set the
@@ -573,7 +573,7 @@ label signals.
 
 ### Calculate S factors
 
-{% include img name="rifret-calculate-s-factors" src="/media/plugins/rifret/rifret-calculate-s-factors.png" %}
+{% include img name="rifret-s-factors" src="rifret-s-factors" %}
 
 Of the S factors, without pixel-wise autofluorescence only factors S1-4 need to be determined.
 
