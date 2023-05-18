@@ -58,8 +58,8 @@ The Command Palette is a faster way to access actions. Press {% include key keys
 
 These shortcuts are available when running SNT in *Tracing Mode*:
 
-| {% include key keys='ctlcmd|S' %}               | <u>S</u>ave tracings |
-| {% include key key='ctlcmd|Shift|S' %}          | <u>S</u>ave <u>S</u>napshot Backup |
+| {% include key keys='Ctrl|S' %} / {% include key keys='Command|S' %}           | <u>S</u>ave tracings |
+| {% include key key='Ctrl|Shift|S %} / {% include key keys='Command|Shift|S' %} | <u>S</u>ave <u>S</u>napshot Backup |
 | {% include key key='L' %}                     | Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image) |
 | {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
 | {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/step-by-step-instructions#accurate-point-placement) |
