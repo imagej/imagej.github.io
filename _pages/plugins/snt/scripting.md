@@ -105,8 +105,8 @@ Then, one import the needed SNT (Java) classes. E.g., to download a neuron recon
 
 {% highlight python %}
 from scyjava import jimport
-MouseLightLoader = jimport('tracing.io.MouseLightLoader')
-TreeStatistics = jimport('tracing.analysis.TreeStatistics')
+MouseLightLoader = jimport('sc.fiji.snt.io.MouseLightLoader')
+TreeStatistics = jimport('sc.fiji.snt.analysis.TreeStatistics')
 {% endhighlight %}
 
 Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (ID = "AA0100" in the [MouseLight database](https://ml-neuronbrowser.janelia.org/)).
