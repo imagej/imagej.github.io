@@ -5,7 +5,6 @@ title: Analyze Stripes
 categories: [Analysis,Tutorials]
 release-date: "14 February 2019"
 initial-release-date: "9 August 2013"
-website: "http://imagejdocu.list.lu/doku.php?id=macro:analyze_stripes"
 dev-status: "stable"
 team-founder: 'Justin R. Bickford'
 team-maintainer: 'Justin R. Bickford'
@@ -13,7 +12,7 @@ team-maintainer: 'Justin R. Bickford'
 
 ## Analyze Stripes
 
-{% include info-box filename=' [Analyze\_Stripes\_v2.6.ijm](http://imagejdocu.list.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.6.ijm)'  category='Analysis' %}
+[Analyze\_Stripes\_v2.6.ijm](https://raw.githubusercontent.com/JBickford2/analyze_stripes/main/analyze_stripes_v2.6.ijm)
 
 ## Purpose
 
@@ -21,7 +20,7 @@ Analyze\_Stripes is a Fiji (or ImageJ) macro designed to automatically measure t
 
 ## Documentation
 
-Complete documentation may be found at the [Analyze\_Stripes website](http://imagejdocu.list.lu/doku.php?id=macro:analyze_stripes).
+Complete documentation may be found here [Analyze\_Stripes documentation](https://raw.githubusercontent.com/JBickford2/analyze_stripes/main/Analyze_Stripes%20Wiki%20page.pdf).
 
 ## News
 
