@@ -6,7 +6,7 @@ toc: true
 ---
 
 {% include notice icon="warning"
-  content="To follow this tutorial, make sure the BigDataViewer-Playground update site is enabled." %}
+  content="To follow this tutorial, make sure the PTBIOP update site is enabled." %}
 
 # Create an orthoviewer
 
