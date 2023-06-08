@@ -116,6 +116,13 @@ All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *s
 | {% include key key='W' %}   | Selects the <u>W</u>and (selection) tool |
 | {% include key key='Esc' %} | Shuttles between the Hand and Wand tool after both have been selected at least once |
 
+
+### File Choosers
+
+| {% include key key='H' %}   | Toggles visibility of <u>H</u>idden files |
+| {% include key key='R' %}   | <u>R</u>efreshes (reloads) contents of current directory |
+
+
 ### Other
 
-There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
+There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path). These are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
