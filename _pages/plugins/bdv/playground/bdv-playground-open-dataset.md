@@ -37,7 +37,7 @@ Note that this WSI dataset demo-ed in this documentation is [accessible from Zen
 
 As long as the QuPath project uses Bio-Formats image server, the project can be translated into a BigDataViewer dataset and be opened directly with the plugin: 
 
-`Plugins › BigDataViewer-Playground › BDVDataset › Open [QuPath Project (legacy)]`
+` Plugins › BigDataViewer-Playground › BDVDataset › Create BDV Dataset [QuPath]`
 
 ## Open images from a BigDataServer as a BDV Dataset
 
@@ -49,11 +49,14 @@ You can use:
 
 You can use:
 
-`Plugins › BigDataViewer-Playground › BDVDataset › Open [Imaris]`
+`Plugins › BigDataViewer-Playground › BDVDataset › Create BDV Dataset [Imaris]`
 
 ## Open OMERO images as a BDV Dataset
 
-Coming soon ...
+You can use:
+`Plugins › BigDataViewer-Playground › BDVDataset › Create BDV Dataset [OMERO]`
+
+You will be asked for your credentials. Note that there is a limitation currently which [prevents the opening of images that are not located in your default group](https://github.com/imagej/imagej-omero/issues/117). 
 
 ## Import the current ImageJ image as a BDV Dataset
 
