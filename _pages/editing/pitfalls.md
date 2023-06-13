@@ -143,6 +143,7 @@ to be set as `true` or `false`. If you need that, you can write:
   {%- assign my-boolean-flag = true -%}
 {%- else -%}
   {%- assign my-boolean-flag = false -%}
+{%- endif -%}
 {% endraw %}{% endhighlight %}
 
 ### Truthiness and falsiness
