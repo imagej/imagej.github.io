@@ -260,3 +260,13 @@ This will bring you to a drag-and-drop interface that allows you to create a new
 If you want more control over the structure of the files you're adding, it may be easier to go the [Advanced Editing](/editing/advanced) route.
 This also allows you to preview your changes before committing them.
 
+# FAQ
+
+## Why do I need to fork this repository to edit it?
+
+If you go to edit a page and see this message, it means you are not listed as a [collaborator](https://github.com/imagej/imagej.github.io/settings/access)
+in this repository.
+
+  {% include img align="center" src="editing/forking" style="border: 1px solid #aaa" %}
+
+To be added as a collaborator, just [get in touch](/discuss#ways-to-get-help) and let us know your GitHub account name; we'll be happy to add you!
