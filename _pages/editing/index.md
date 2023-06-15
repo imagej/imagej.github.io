@@ -11,6 +11,14 @@ page" link at the top right with a direct link to this interface.
 
 {% include notice icon="tech" content="Advanced users can make edits via a local clone of the site repository; see the [advanced editing guide](/editing/advanced) for setup instructions." %}
 
+# Requirements
+
+As this wiki is completely hosted on GitHub, you will need to be logged into a GitHub account to make edits (this replaces the old system of registering for an ImageJ-wiki-specific account). If you don't have an account yet, you can [create one freely](https://github.com/signup).
+
+For the smoothest editing experience you will want [collaborator access](https://github.com/imagej/imagej.github.io/settings/access). To be added as a collaborator, just [get in touch](/discuss#ways-to-get-help) and let us know your GitHub account name and we'll be happy to add you.
+
+Non-collaborators have to [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo), edit that fork as described below, and then [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+
 # Creating a new page
 
 Let's dive in to how to create a new page on the site.
