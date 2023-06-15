@@ -223,3 +223,28 @@ The following tables list all of this site's general-purpose includes:
 | [info-box](notices#info-box)                 | Delete after migrating to statbox  |
 | clear                                        | Delete after purging all floats    |
 {:.skinny}
+
+# Finalizing your edits
+
+Once you're happy with your new page, click on the "Commit changes" button to save your work:
+
+ {% include img align="center" src="editing/committing-changes" style="border: 1px solid #aaa" %}
+
+This will bring up a dialog where you can set the summary commit message, a more in-depth description
+of the changes, and verify the account used to make the changes.
+
+ {% include img align="center" src="editing/commit-dialog" style="border: 1px solid #aaa" %}
+
+For most edits it makes sense to simply commit to the `main` branch directly. Just adding pages won't break
+anything. But if you are concerned you can always use the "branch and pull request" option. Just make sure to
+assign or mention someone in the PR (pull request)! Otherwise we may not see it to merge it in a timely manner.
+Good options for reviewer are {% include person id="hinerm" %} and {% include person id="ctrueden" %}.
+
+If you aren't sure what to write in your commit message, there are many guides out on the internet. You can even
+ask ChatGPT! Just don't do this:
+
+  {% include img align="center" src="https://imgs.xkcd.com/comics/git_commit.png" style="border: 1px solid #aaa" %}
+
+Once you are sufficiently happy with your message and click the "Commit changes" button, your edits will go onto the
+history of the site. This will trigger [a rebuild of the site](https://github.com/imagej/imagej.github.io/actions). Once
+that completes, your changes will show up on the live site! Thank you for your contribution!
