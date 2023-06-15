@@ -33,29 +33,45 @@ See the [MacOS](/platforms/macos) page.
 
 ## How do I launch ImageJ with a different version of Java?
 
-### On Windows
+### Bundled Java
 
-Install Java 8, and delete or rename the `ImageJ.app\java` and/or `ImageJ.app\jre` folders, if they exist. If this does not result in ImageJ using the expected Java version, check the Environment Variables ({% include bc path='Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables' %}) for the variable "JAVA\_HOME". Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for ImageJ (for instance: "C:\\Program Files\\Java\\jdk1.8.0\_172"). See also [Java environment variable setup](http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation).
+ImageJ will look for a "bundled" Java in the `java` subdirectory, in a platform- and architecture-specific directory. For example, if you [downloaded](/fiji/downloads) the "Windows 64-bit" Fiji it would come with a Java installation in the `Fiji.app\java\win64` directory. The possible `platform + architecture` directories are:
 
-### On macOS
+* `win64`
+* `win32`
+* `linux-amd64`
+* `linux`
+* `macosx`
 
-Use the `--java-home` command line option:
+If you replace the Java in the directory appropriate for your platform (or create the indicated subdirectory structure, if you downloaded the "No JRE" Fiji) then ImageJ will try to launch with that "bundled" Java first.
 
-    /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \  
-    '/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home'
+### System Java
+
+If no bundled Java is found, ImageJ will fall back to your "system Java", which is indicated by the `JAVA_HOME` environment variable. Usually this is set when installing Java, but see also [Java environment variable setup](http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation).
+
+### Command-line option
+
+Finally, ImageJ supports the `java-home` command-line flag that allows it to be started with a particular Java version *for just that run*. To use this flag you would run the platform- + architecture-specific launcher (aka "binary" or "excutable") in the [CLI](https://en.wikipedia.org/wiki/Command-line_interface) of your choice, with a syntax like:
+
+    /path/to/ImageJ/launcher --java-home '/path/to/java'
+
+The ImageJ launcher path would be one of:
+
+* Fiji.app/ImageJ-win64.exe
+* Fiji.app/ImageJ-win32.exe
+* Fiji.app/Contents/MacOS/ImageJ-macosx
+* Fiji.app/ImageJ-linux32
+* Fiji.app/ImageJ-linux64
+
+#### On macOS
 
 {% include notice icon="tech" content="Old versions of Mac OS X shipped with Apple's fork of OpenJDK 6, which included some Mac-specific features. But Apple Java is long discontinued now. If you wish to install your own OpenJDK(s) on modern versions of macOS, it is recommended to use [Homebrew](https://brew.sh/), or simply download and unpack the OpenJDK distribution(s) of your choice into a `Java` folder inside your user folder." %}
 
 See "How do I setup a launcher app" below for instructions on turning this invocation into a Dock icon.
 
-### On Linux
+#### On Linux
 
-Use the `--java-home` command line option:
-
-    $HOME/ImageJ.app/ImageJ-linux64 --java-home \  
-    /usr/lib/jvm/java-7-openjdk-amd64
-
-One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case...
+One downside of doing this is that ImageJ will launch in a separate process, which has some unintuitive side effects. For example, Ubuntu's Unity user interface will not allow you to "Pin to Launcher" in this case.
 
 ## How do I setup a launcher app for macOS for running with a different JVM version?
 
