@@ -248,3 +248,15 @@ ask ChatGPT! Just don't do this:
 Once you are sufficiently happy with your message and click the "Commit changes" button, your edits will go onto the
 history of the site. This will trigger [a rebuild of the site](https://github.com/imagej/imagej.github.io/actions). Once
 that completes, your changes will show up on the live site! Thank you for your contribution!
+
+# Adding non-page files
+
+If you need to add other types of files, you can use the "Upload files" option in the "Add files" button:
+
+  {% include img align="center" src="editing/uploading-files" style="border: 1px solid #aaa" %}
+
+This will bring you to a drag-and-drop interface that allows you to create a new commit directly after you've uploaded your desired files.
+
+If you want more control over the structure of the files you're adding, it may be easier to go the [Advanced Editing](/editing/advanced) route.
+This also allows you to preview your changes before committing them.
+
