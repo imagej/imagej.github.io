@@ -23,7 +23,7 @@ Non-collaborators have to [fork this repository](https://docs.github.com/en/get-
 
 Let's dive in to how to create a new page on the site.
 If you are looking to edit an existing page, skip to
-[adding and editing page content](#adding-editing-page-content) below.
+[adding and editing page content](#adding-editing-page-content) below. See also the general GitHub [guide to editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
 1.  Navigate to an appropriate sub-directory of the
     [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages)
