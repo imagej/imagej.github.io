@@ -5,6 +5,7 @@ title: Analyze Stripes
 categories: [Analysis,Tutorials]
 release-date: "14 February 2019"
 initial-release-date: "9 August 2013"
+website: https://github.com/JBickford2/analyze_stripes
 dev-status: "stable"
 team-founder: 'Justin R. Bickford'
 team-maintainer: 'Justin R. Bickford'
@@ -12,7 +13,7 @@ team-maintainer: 'Justin R. Bickford'
 
 ## Analyze Stripes
 
-[Analyze\_Stripes\_v2.6.ijm](https://raw.githubusercontent.com/JBickford2/analyze_stripes/main/analyze_stripes_v2.6.ijm)
+[Analyze\_Stripes\_v2.6.ijm](https://raw.githubusercontent.com/JBickford2/analyze_stripes/5fa28bbedb850e99442fba192a47374c5bbbd812/analyze_stripes_v2.6.ijm)
 
 ## Purpose
 
