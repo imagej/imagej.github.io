@@ -5,7 +5,7 @@ categories: [Visualization, User Interface]
 name: QuickFigures
 website: https://github.com/grishkam/QuickFigures/blob/master/README.md
 user-guide: https://github.com/grishkam/QuickFigures/blob/master/UserGuide/User%20Guide.md
-icon: media/icons/QuickFigureIcon.png
+icon: media/icons/QuickFigure.png
 
 ---
 
