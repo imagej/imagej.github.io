@@ -8,7 +8,7 @@ user-guide: https://github.com/grishkam/QuickFigures/blob/master/UserGuide/User%
 icon: media/icons/QuickFigure.png
 
 ---
-
+# QuickFigures
 This plugin can be used to easily create figures for publication, presentation or sharing. These figures can be exported to PDF, PowerPoint, SVG or regenerated in Adobe Illustrator.
 It is designed primarily for Microscopy Images, Gels and Western Blots but can also be used for a variety of other figure types. 
 
