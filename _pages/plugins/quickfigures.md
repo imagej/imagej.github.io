@@ -21,6 +21,7 @@ You can also watch the full length [tutorial video playlist](https://www.youtube
 
 # Publication
 When using QuickFigures in a publication, you can cite [the paper in PlosOne](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240280).
+
 {% include citation doi='10.1371/journal.pone.0240280' %}
 
 
