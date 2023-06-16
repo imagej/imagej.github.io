@@ -5,7 +5,7 @@ categories: [Visualization, User Interface]
 name: QuickFigures
 website: https://github.com/grishkam/QuickFigures/blob/master/README.md
 user-guide: https://github.com/grishkam/QuickFigures/blob/master/UserGuide/User%20Guide.md
-
+icon: https://github.com/grishkam/QuickFigures/blob/master/UserGuide/images/tools/QuickFigure.png
 ---
 
 This plugin allows quick creation of figures for publications, prensentations and collaboration. 
