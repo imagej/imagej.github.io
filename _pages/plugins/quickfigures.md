@@ -3,7 +3,7 @@ title: QuickFigures
 doi: 10.1371/journal.pone.0240280
 categories: [Visualization, Import-Export]
 name: QuickFigures
-website: https://github.com/grishkam/QuickFigures
+website: https://github.com/grishkam/QuickFigures/blob/master/README.md
 user-guide: https://github.com/grishkam/QuickFigures/blob/master/UserGuide/User%20Guide.md
 
 ---
