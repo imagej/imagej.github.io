@@ -9,8 +9,8 @@ icon: media/icons/QuickFigure.png
 
 ---
 
-This plugin can be used to easily creates figures for publications, prensentations and collaboration. 
-It designed primarily for Microscopy Images and Western Blots but can also be used for a variety of other figure types. 
+This plugin can be used to easily create figures for publications, presentations and collaboration. These figures can be exported to PDF, PowerPoint, SVG or regenerated in Adobe Illustrator.
+It is designed primarily for Microscopy Images, Gels and Western Blots but can also be used for a variety of other figure types. 
 
 QuickFigures is meant to be easy to understand, simple to use, and flexible enough for publication ready figures. 
 If you are in a hurry, you can learn the basics in less than 10 minutes with [this tutorial video](https://www.youtube.com/watch?v=9Crg-FAOHmc&t=416s). 
