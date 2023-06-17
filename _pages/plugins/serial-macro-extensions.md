@@ -47,14 +47,14 @@ Jérôme Mutterer, Tom Mueller, Graeme Awcock, Michael Schmid
 -   Establish a serial connection to the serial device, using COM8 port
     and a bitrate of 9600 bps:
 
-` Ext.open("COM8",9600,""); // this is enough e.g. for the
-Arduino, defaults parameters are DATABITS_8,STOPBITS_1,PARITY_NONE
-`
+` Ext.open("COM8",9600,""); ``
+This is enough e.g. for the Arduino, defaults parameters are DATABITS_8,STOPBITS_1,PARITY_NONE
 
-` Ext.open("COM1",14400,"DATABITS_8 STOPBITS_2 PARITY_ODD");
-// advanced serial port configuration
 
-// Available options
+` Ext.open("COM1",14400,"DATABITS_8 STOPBITS_2 PARITY_ODD");`
+An example of advanced serial port configuration
+
+Available options
 
 // DEFAULT: 8 data bits, 1 stop bit, no parity
 
@@ -64,8 +64,6 @@ Arduino, defaults parameters are DATABITS_8,STOPBITS_1,PARITY_NONE
 
 // Parity: // PARITY_NONE // PARITY_EVEN // PARITY_ODD // PARITY_MARK //
 PARITY_SPACE
-
-`
 
 -   Read what the serial device sends:
 
