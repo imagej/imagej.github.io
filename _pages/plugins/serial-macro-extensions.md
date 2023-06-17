@@ -42,16 +42,18 @@ Jérôme Mutterer, Tom Mueller, Graeme Awcock, Michael Schmid
 
 -   Get a list of available serial ports:
 
-`ports = Ext.ports(); `
+`ports = Ext.ports();`
 
 -   Establish a serial connection to the serial device, using COM8 port
     and a bitrate of 9600 bps:
 
-` Ext.open("COM8",9600,""); ``
+`Ext.open("COM8",9600,"");`
+
 This is enough e.g. for the Arduino, defaults parameters are DATABITS_8,STOPBITS_1,PARITY_NONE
 
 
-` Ext.open("COM1",14400,"DATABITS_8 STOPBITS_2 PARITY_ODD");`
+`Ext.open("COM1",14400,"DATABITS_8 STOPBITS_2 PARITY_ODD");`
+
 An example of advanced serial port configuration
 
 Available options
@@ -67,23 +69,23 @@ PARITY_SPACE
 
 -   Read what the serial device sends:
 
-` data = Ext.readUntil("\n"); `
+`data = Ext.readUntil("\n");`
 
 -   Send a string command to the serial device:
 
-` Ext.write("a"); `
+`Ext.write("a");`
 
 -   Close the active serial port:
 
-` Ext.close(); `
+`Ext.close();`
 
 -   Poll if a serial connection is already there:
 
-` active = Ext.alive(); // returns "0" or "1" `
+`active = Ext.alive(); // returns "0" or "1" `
 
 -   Get help:
 
-` print ( Ext.help() );`
+`print ( Ext.help() );`
 
 ## History
 
