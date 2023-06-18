@@ -8,6 +8,9 @@ forum: WeisongZhao
 github: WeisongZhao
 ---
 
-Weisong Zao is a Ph.D. student at the Harbin Institute of Technology and has contributed and is maintaining serveral plugins:
+He is currently an assistant professor at Harbin Institute of Technology (HIT) and has contributed and is maintaining serveral plugins:
 
 -   [Adaptive Median Filter](/plugins/adaptive-median-filter)
+-   [tvarianceJ](https://github.com/WeisongZhao/tvarianceJ)
+-   [SACDj](https://github.com/WeisongZhao/SACDj)
+-   [PANELJ](https://github.com/WeisongZhao/PANELJ)
