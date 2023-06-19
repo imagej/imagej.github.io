@@ -21,7 +21,7 @@ mechanism. You can:
 
 ## See also
 
--   IJSerial plugin (<http://www.eslide.net/>) (but requires a separate config file, does not provide persistence to
+-   IJSerial plugin (but requires a separate config file, does not provide persistence to
     the serial connection)
 
 ## Authors
@@ -30,8 +30,8 @@ Jérôme Mutterer, Tom Mueller, Graeme Awcock, Michael Schmid
 
 ## Installation (all platforms)
 
--   Requires JSSC library
--   Download serial_ext2.jar to the plugins folder
+-   Requires JSSC library (https://mvnrepository.com/artifact/io.github.java-native/jssc/2.9.4)
+-   Download [serial_ext2.jar](https://seafile.unistra.fr/f/7571b686588c4c65b4e0/) to the plugins folder
 -   Restart ImageJ
 
 ## Usage
