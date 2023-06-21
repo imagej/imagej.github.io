@@ -1,5 +1,5 @@
 ---
-mediawiki: Adjustable_Watershed
+project: /software/imagej
 title: Adjustable Watershed
 categories: [Segmentation]
 dev-status: "stable"
@@ -9,7 +9,7 @@ dev-status: "stable"
 
 # Adjustable Watershed
 
-*Watershed segmentation of the Euclidian Distance Map, similar to Process>Binary>Watershed but with adjustable sensitivity and preview*
+*Watershed segmentation of binary images based on the Euclidian Distance Map, similar to Process>Binary>Watershed but with adjustable sensitivity and preview*
 
 ## Basics
 
@@ -19,12 +19,11 @@ Watershed segmentation based on the EDM splits a particle if the EDM has more th
 
 ## Dialog Options (Parameters)
 
-### Tolerance
+**Tolerance**: 
 This value determines the difference of radius between the smaller of the largest inscribed circles and a circle inscribed at the neck between the particles. The higher this value, the fewer segmentation lines. The standard ImageJ Process>Binary>Watershed algorithm uses a tolerance of 0.5. The value should not be much lower than this because low values tend to produce false segmentations, caused by the pixel quantization.
 
 ## Limitations
 
-* WARNING: With ImageJ versions 1.48t22 and before, it may remove small particles if the tolerance is larger than 1. This problem is fixed in ImageJ 1.48t23 (20-March-2014).
 * The plugin should not be used if particles can have inner holes. For such particles, unpredictable segmentation lines can occur or the particle may remain unsplit. To make sure you have no such particles, you may run 'fill holes' before use and see whether anything changes.
 
 ## Download and Installation
