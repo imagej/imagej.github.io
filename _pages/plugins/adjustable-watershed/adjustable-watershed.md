@@ -27,8 +27,8 @@ This value determines the difference of radius between the smaller of the larges
 * The plugin should not be used if particles can have inner holes. For such particles, unpredictable segmentation lines can occur or the particle may remain unsplit. To make sure you have no such particles, you may run 'fill holes' before use and see whether anything changes.
 
 ## Download
-* Source code `Adjustable_Watershed.java` {% include github repo='imagej.github.io' branch='main' path='media/adjustable-watershed/Adjustable_Watershed.java' %} (make sure you download the **raw** file, use the button near the top right)
-* Class file `Adjustable_Watershed.class` {% include github repo='imagej.github.io' branch='main'  path='media/adjustable-watershed/Adjustable_Watershed.class' %}
+* Source code `Adjustable_Watershed.java` {% include github org='imagej' repo='imagej.github.io' branch='main' path='media/adjustable-watershed/Adjustable_Watershed.java' %} (make sure you download the **raw** file, use the button near the top right)
+* Class file `Adjustable_Watershed.class` {% include github org='imagej' repo='imagej.github.io' branch='main'  path='media/adjustable-watershed/Adjustable_Watershed.class' %}
 
 ## Installation
 - Copy the raw `Adjustable_Watershed.java` file into the ImageJ plugins folder or a subfolder thereof. Make sure that you name the downloaded file ”Adjustable_Watershed.java”; uppercase/lowercase matters.
