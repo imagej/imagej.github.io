@@ -1,6 +1,6 @@
 ---
 title: Warpy
-artifact: ch.epfl.biop:bigdataviewer-biop-tools
+artifact: ch.epfl.biop:qupath-extension-warpy
 nav-links: true
 toc: true
 ---
