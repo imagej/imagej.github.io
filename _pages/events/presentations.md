@@ -99,8 +99,8 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       {% include person id='dietzc' %}</td>
       <td>ImageJ and Friends: Retrospective, current status and future</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1SWO0DhrJfIvgKdr4jkBFP2nCn-JZ4QZ5xeDjwWRIXQo/present">slides (online; no movies)</a>,<br>
-        <a href="https://downloads.imagej.net/presentations/i2k-2018/ImageJ-and-Friends.pptx">slides (1.6GB PPTX; with movies)</a>
+        <a href="https://downloads.imagej.net/presentations/i2k-2018/ImageJ-and-Friends.pptx">slides (1.6GB PPTX; with movies)</a>,<br>
+        <a href="https://downloads.imagej.net/presentations/i2k-2018/I2K-Opening-Talk.pptx">slides (88M PPTX; no movies)</a>
       </td>
     </tr>
     <tr>
