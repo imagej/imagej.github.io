@@ -14,8 +14,8 @@ On the local computer:
     - Run Plugins > BigStitcher > Batch Processing > Define dataset …
       (Use Bioformats importer and make sure to select the correct pixel size)
 3.  Open the image in Labkit using:
-    Plugins > Lakit > Open Image File With Labkit
-4.  Continue as described in the [quick automatic segmentation]()
+    Plugins > Labkit > Open Image File With Labkit
+4.  Continue as described in the [quick automatic segmentation](pixel-classification-tutorial.md)
 5.  Save the trained classifier {% include bc path="Segmentation | Save Classifier ..." %}
 
 On the HPC cluster:
@@ -26,7 +26,7 @@ On the HPC cluster:
 7.  Copy the trained classifier to the cluster
 8.  Download the [Labkit command line tool](https://github.com/maarzt/labkit-command-line/releases/download/v0.1.4/labkit-snakemake-exmaple-0.1.4.zip)
 9.  Unzip the command line tool archive
-10.  Edit the “Snakemake” file and change the following lines:
+10. Edit the “Snakemake” file and change the following lines:
 
 ```sh
 IMAGE = “/path/to/your/dataset.xml”
