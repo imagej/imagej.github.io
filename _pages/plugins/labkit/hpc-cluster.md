@@ -15,7 +15,7 @@ On the local computer:
       (Use Bioformats importer and make sure to select the correct pixel size)
 3.  Open the image in Labkit using:
     Plugins > Labkit > Open Image File With Labkit
-4.  Continue as described in the [quick automatic segmentation](pixel-classification-tutorial.md)
+4.  Continue as described in the [quick automatic segmentation](pixel-classification-tutorial)
 5.  Save the trained classifier {% include bc path="Segmentation | Save Classifier ..." %}
 
 On the HPC cluster:
