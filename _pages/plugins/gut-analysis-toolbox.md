@@ -16,7 +16,7 @@ and [deepImageJ](https://deepimagej.github.io/deepimagej/) for segmentation and 
 
 {% include img align="center" name="GAT_overview" src="/media/plugins/Gut_Analysis_Toolbox/summary_figure.png" %}
 
-Click [here to access the WIKI](https://github.com/pr4deepr/GutAnalysisToolbox/wiki) detailed instructions on how to use GAT.A detailed how to use instructions with wiki is available here: 
+Click [here to access the WIKI](https://gut-analysis-toolbox.gitbook.io/docs/) detailed instructions on how to use GAT.
 
 You can also watch tutorials for GAT on [Youtube](https://www.youtube.com/playlist?list=PLmBt1Dumq60p4mIFT4j7TP_PVRjbO55Oi).
 
@@ -32,7 +32,7 @@ What you can do with GAT:
 
 Software citation on Zenodo:
 
-Luke Sorensen, Ayame Saito, Sabrina Poon, Myat Noe Han, Adam Humenick, Keith Mutunduwe, Christie Glennan, Narges Mahdavian, Simon JH Brookes, Rachel M McQuade, Jaime PP Foong, Sebastian K. King, Estibaliz Gómez-de-Mariscal, Robert Haase, Simona Carbone, Nicholas A. Veldhuis, Daniel P. Poole, & Pradeep Rajasekhar (2022). Gut Analysis Toolbox (1.0.0). Zenodo. doi: 10.5281/zenodo.6095590
+Sorensen, L., Saito, A., Poon, S., Noe Han, M., Hamnett, R., Neckel, P, Humenick, A., Mutunduwe, K., Glennan, C., Mahdavian, N., JH Brookes, S., M McQuade, R., PP Foong, J., Gómez-de-Mariscal, E., Muñoz Barrutia, A., Kaltschmidt, J. A., King, S. K., Haase, R., Carbone, S., A. Veldhuis, N., P. Poole, D., & Rajasekhar, P. (2022). Gut Analysis Toolbox [Computer software]. Zenodo. doi: 10.5281/zenodo.6095590
 
 To download the training data, notebooks and associated models please go to the following Zenodo link:
 
