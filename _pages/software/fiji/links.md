@@ -32,7 +32,7 @@ Links to the contributors' personal pages can be found [here](/people).
   <tbody>
     <tr>
       <td>
-        <p><img src="/media/logos/knime.jpg" width="150"></p>
+        <p><img src="/media/logos/knime.svg" width="150"></p>
       </td>
       <td>
         <p>The <a href="http://tech.knime.org/community/image-processing">Konstanz kNowledge Information Mining Environment</a>.</p>

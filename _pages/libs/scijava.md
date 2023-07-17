@@ -45,7 +45,7 @@ The following projects are part of the **SciJava pledge** to work together, reus
         <p><a href="/software/cellprofiler"><img src="/media/logos/cellprofiler.png" height="64px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/knime"><img src="/media/logos/knime.jpg" height="54px"></a></p>
+        <p><a href="/software/knime"><img src="/media/logos/knime.svg" height="54px"></a></p>
       </td>
       <td></td>
       <td style="text-align: center; vertical-align: middle">
