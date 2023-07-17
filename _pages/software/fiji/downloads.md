@@ -16,6 +16,8 @@ Fiji is supported on the following systems:
 
 However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime is available (Solaris, Raspbian, etc.).
 
+* MacOS Arm64 Note: The default MacOS download should run on Arm64 via the Rosetta translator (https://en.wikipedia.org/wiki/Rosetta_(software)) which may come at some performance cost.  Alternatively you can install the no-JRE version which defaults to the Mac Java and will limit some native library functionality that does not yet have Arm64 support (https://forum.image.sc/t/fiji-clij-etc-native-on-apple-silicon-arm64-m1/53627/25).
+
 # Installation
 
 {% include warning/avoid-program-files %}
