@@ -11,11 +11,11 @@ The LUT Channels Tool allows to customize personal favorite LUTs, tests color de
 
 ## Installation
 
-The figure tools are installed together with the [BioVoxxel Toolbox]([url](https://imagej.net/plugins/biovoxxel-toolbox))
+The figure tools are installed together with the [BioVoxxel Toolbox](https://imagej.net/plugins/biovoxxel-toolbox)
 
 ## Documentation
 
-Figure Tools documentation can be found [here]([url](https://github.com/biovoxxel/BioVoxxel-Figure-Tools#biovoxxel-figure-tools))
+Figure Tools documentation can be found [here](https://github.com/biovoxxel/BioVoxxel-Figure-Tools#biovoxxel-figure-tools)
 
 ## Citation and Releases
 
@@ -23,4 +23,4 @@ Figure Tools documentation can be found [here]([url](https://github.com/biovoxxe
 
 ## Code on GitHub
 
-[Code on GitHub]([url](https://github.com/biovoxxel/BioVoxxel-Figure-Tools))
+[Code on GitHub](https://github.com/biovoxxel/BioVoxxel-Figure-Tools)
