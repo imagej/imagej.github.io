@@ -12,7 +12,7 @@ Fiji-Plugin to segment and quantify confocal images.
 
 ## Install Plugin in Fiji
 
-The Cluster Analysis Plugin is integrated in the built-in Updater Site of Imagej and regular updates are available through it.
+The Cluster Analysis Plugin is integrated in the built-in Updater Site of ImageJ and regular updates are available through it.
 
 Go directly on your local Fiji-application and click on {% include bc path="Update | Manage update sites | Add my site" %} and type in the ImageJ Wiki account dcolam. After that all scripts and dependencies should be installed in the right place and you only need to restart Fiji.
 

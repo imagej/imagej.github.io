@@ -353,10 +353,10 @@ The function `getProperty()` accepts many more strings. A list can be found at [
 
 ## Self written Jython packages for ImageJ
 
-On the way to perfectly organize Jython code, [packages](https://docs.python.org/2/tutorial/modules.html#packages) are the next step. A Jython package is a folder that contain a set of modules scripts together with a `__init__.py` file. This file can be empty. Below is a typical structure for the `Imagej.app/jars/Lib` folder:
+On the way to perfectly organize Jython code, [packages](https://docs.python.org/2/tutorial/modules.html#packages) are the next step. A Jython package is a folder that contain a set of modules scripts together with a `__init__.py` file. This file can be empty. Below is a typical structure for the `ImageJ.app/jars/Lib` folder:
 
 ```
-    Imagej.app/jars/Lib/
+    ImageJ.app/jars/Lib/
     -- myModule.py
     -- myPackage/
        -- __init__.py
@@ -407,7 +407,7 @@ Besides setting this variable, the `__init__.py` file can contain normal Jython 
 
 An interesting feature of Jython is to search for packages and modules inside of {% include wikipedia title="JAR (file format)" %}. The folder structure from the last section can be modified by packing everything into a single `myPackages.jar`. The name of the JAR file doesn't matter. All imports work the same as explained before.
 ```
-    Imagej.app/jars/Lib/
+    ImageJ.app/jars/Lib/
     -- myPackages.jar
        -- myModule.py
        -- myPackage/

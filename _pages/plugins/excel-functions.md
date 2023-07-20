@@ -24,7 +24,7 @@ The Excel macro extensions for ImageJ and Fiji are meant to make saving results 
 
 ### Remarks
 _I am also fully aware of the existance and similarity to the [Read and Write Excel plugin](https://imagej.net/plugins/read-and-write-excel)_
-However, I wanted to create something, which could be useable in different ways to connect Imagej with Excel as well as make it simpler to use from the macro language. So, it is rather complementary. One current advantage is being able to add images as well as ImageJ data plots into any Excel workbook sheet as desired. 
+However, I wanted to create something, which could be useable in different ways to connect ImageJ with Excel as well as make it simpler to use from the macro language. So, it is rather complementary. One current advantage is being able to add images as well as ImageJ data plots into any Excel workbook sheet as desired. 
 Drawback of adding images to Excel is that they mostly appear horizontally distorted. This is not solvable via the [Apache POI](https://poi.apache.org/) used as dependency for this extensions. But right-clicking in Excel on the respective image and choosing the image settings for "size and position" pressing the "Reset" button will set the correct image aspect ratio. There is currently no function more convenient than that.
 Limitation regarding data plots is that the Apache POI library still has some difficulties or missing functions to fully enable the seamless transfer of data plots into Excel. Therefore, a saved plot might need to be optically adjusted in Excel directly.
 

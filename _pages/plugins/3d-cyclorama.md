@@ -237,7 +237,7 @@ C. Analysis
 		A "Load project" panel will pop up. Leave the default values and click "Load".
 		In the file selector that pops up, navigate to the "Cyclorama" directory that was created in the directory of the image stack.
 		Select the <datetime>_log.txt file and click "Open".
-		This will open the image stack, the 3D cyclorama, the Imagej log window and a panel titled "Analyze cyclorama".
+		This will open the image stack, the 3D cyclorama, the ImageJ log window and a panel titled "Analyze cyclorama".
 
 	Bidirectional mapping:
 		When the checkbox "Link views" is checked clicking on either of the views (image stack or cyclorama) will create the corresponding (mapped) point on the other view.
@@ -263,7 +263,7 @@ C. Analysis
 		This is useful when features are segmented on the 3D cyclorama and the corresponding features need to be quantified on the image stack.
 		Example:
 			Uncheck all check boxes.
-			Select the rectangle tool (leftmost tool on the Imagej toolbar).
+			Select the rectangle tool (leftmost tool on the ImageJ toolbar).
 			Draw a rectangle on top of the 3D cyclorama and press ctrl+f to fill it with a given colour.
 			Repeat this over all slices of the cyclorama (Keep the rectangle unchanged, scroll to change image slice and press ctrl+f on each slice).
 			Under the "Invert projected image (Cyclorama)" click "Select".
@@ -279,7 +279,7 @@ C. Analysis
 		This is useful when seed-points (e.g. for region growth segmentation purposes) need to be identified on the 3D cyclorama and defined on the image stack.
 		Example:
 			Uncheck the "Activate ROI manager" to close any open ROI manager.
-			Select the point tool (7th tool from the left on the Imagej toolbar).
+			Select the point tool (7th tool from the left on the ImageJ toolbar).
 			Click on a feature on the cyclorama image and press "t" to add the ROI to the ROI manager. Repeat this several times to create several ROIs.
 			Under the "Invert ROIs" click the "Invert" button.
 			This will create a black mask stack with the same dimensions as the image stack and white cubes of 5 x 5 x 5 pixels at the corresponding (mapped) points of all the points currently existing in the ROI manager.

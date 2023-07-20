@@ -90,7 +90,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 4\. Run {% include bc path='Window | Tile'%}.
 
-5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/Imagej.
+5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/ImageJ.
 
 6\. Find a slice of interest in a stack image with multiple slices (if such is opened).
 
@@ -114,7 +114,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 4\. Run {% include bc path='Window | Tile'%}.
 
-5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/Imagej.
+5\. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its "WT-" and "Filtered-" versions for syncing if more images are opened in Fiji/ImageJ.
 
 6\. Find a slice of interest in a stack image with multiple slices (if such is opened).
 

@@ -214,7 +214,7 @@ PlotData=
 
 ### Jonas Massa
 
--   implemented an ilastik HDF5 import/export plugin for Imagej ({% include github org='Beinabih' repo='ilastik-Fiji-Plugin' label='Beinabih/ilastik-Fiji-Plugin' %})
+-   implemented an ilastik HDF5 import/export plugin for ImageJ ({% include github org='Beinabih' repo='ilastik-Fiji-Plugin' label='Beinabih/ilastik-Fiji-Plugin' %})
 
 ### HongKee Moon
 

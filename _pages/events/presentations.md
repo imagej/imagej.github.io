@@ -95,7 +95,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>2023-Jul-19</td>
       <td>{% include person id='ctrueden' %}</td>
-      <td>The Future of Image Analysis + Imagej/Fiji</td>
+      <td>The Future of Image Analysis + ImageJ/Fiji</td>
       <td>
         <a href="https://docs.google.com/presentation/d/1Lt024rW_g79qTTlcJPaxVbNFJuOzeVdEdDpQPuQJd0I/edit?usp=drive_link">slides</a>
       </td>
