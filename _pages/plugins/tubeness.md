@@ -1,25 +1,26 @@
 ---
-mediawiki: Tubeness
 name: "Tubeness"
 title: Tubeness
+project: /software/imagej2
+artifact: net.imagej:imagej-ops
+icon: /media/icons/imagej2.png
+doi: 10.1016/s1361-8415(98)80009-1
 categories: [Uncategorized]
-dev-status: "stable"
-team-founders: ['@mhl', '@StephanPreibisch']
-team-maintainer: '@mhl'
 ---
 
+_Tubeness_ is an algorithm for enhancing filamentous structures of a specified thickness (blood vessels, neurites, and other tube-like structures)described by Sato et al 1998.[^1]. It can be applied to 2D and 3D images. It can be a faster alternative to [Frangi](/plugins/frangi). The algorithm is explained in more detail [here](https://github.com/imagej/imagej-ops/pull/527). There are three _Tubeness_ implementations in ImageJ:
 
-{% capture source%}
-{% include github org='fiji' repo='VIB' branch='master' source='features/Tubeness_.java' %}
-{% endcapture %}
-{% include info-box filename='VIB\_.jar' source=source %}
+- Legacy plugin (In Fiji registered under {% include bc path='Plugins|Analyze|Tubeness' %} ([source code](https://github.com/fiji/VIB/blob/master/src/main/java/features/Tubeness_.java)). This is now deprecated.
 
+- An [ImageJ Op](/libs/imagej-ops/index). This is a modernized, multithreaded version of the initial implemenation that has been validated/benchmarked more carefully ([details](https://github.com/imagej/imagej-ops/pull/527))
 
-{% capture text%}
-A multithreaded implementation of the original IJ1 Tubeness plugin has been [developed](https://github.com/imagej/imagej-ops/pull/527) by {% include person id='tinevez' %} in the context of [ImageJ\_Ops](/libs/imagej-ops).
-{% endcapture %}
-{% include notice icon="info" content=text %}
-
-The original documentation for the IJ1 Tubeness plugin can be found at http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/.
+- An [SNT](/plugins/snt) implementation ([source code](https://github.com/morphonets/SNT/tree/master/src/main/java/sc/fiji/snt/filter)) that extends the ImageJ Op approach to multiple scales (similarly to [Frangi](/plugins/frangi)) for better detection of neurites. SNT's [Secondary Layer Wizard](/plugins/snt/manual#tracing-on-secondary-image) can also be used to preview the effect of scale size in the result.
 
 
+
+{% include img align="center" width="600px" src="/media/plugins/tubeness-before-and-after.png" caption="Tubeness: Left: Original image. Right: Filtered image." %}
+
+
+
+
+{% include citation fn=1 %}
