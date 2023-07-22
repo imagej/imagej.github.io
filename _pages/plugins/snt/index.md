@@ -28,15 +28,16 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/snt-overview.png | Overview diagram
+/media/plugins/snt/snt-overview.png | Overview of SNT components &amp; SNT functionality
 /media/plugins/snt/snt-4D-examples.png | Semi-automated tracing: Support for multi-channel and timelapse images
 /media/plugins/snt/snt-auto-tracing-overview.png | Fully automated tracing of segmented images
-/media/plugins/snt/simpleneuritetracer2.png | Scripted routines co-exist with graphical user interface operations
+/media/plugins/snt/snt-v3-overview.png | Scripted routines co-exist with graphical user interface operations
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages
 /media/plugins/snt/snt-notebook.png | Scripting in native python through [pyimagej](/scripting/pyimagej)
 /media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
 /media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize data from projectomes and connectomics
+/media/plugins/snt/snt-non-neuronal-example.png | Not only neurons: SNT can be used to analyze many types of filamentous structures
 "
 %}
 
@@ -57,12 +58,17 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 
 | Section                                                         | Contents                                                                                                                                     |
 | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[Manual](/plugins/snt/manual)**                               | SNT's user guide for tracing operations                                                                                                      |
-| **[Walk-throughs](/plugins/snt/step-by-step-instructions)**     | Detailed step-by-step instructions for specific tasks                                                                                        |
-| **[Screencasts](/plugins/snt/screencasts)**                     | Video tutorials. If you are using SNT for the first time you probably want to start here                                                     |
+| **[Analysis](/plugins/snt/analysis)**                           | Overview of GUI-based analyses                                                                                                               |
+| **[Extending](/plugins/snt/extending)**                         | Resources for developers interested in extending SNT or parsing TRACES files                                                                 |
+| **[FAQ](/plugins/snt/faq)**                                     | Frequently asked questions                                                                                                                   |
+| **[Keyboard Shortcuts](/plugins/snt/key-shortcuts)**            | List of SNT shortcuts (cheatsheet)                                                                                                           |
+| **[Manual](/plugins/snt/manual)**                               | User guide for main interface and tracing operations                                                                                         |
+| **[Metrics](/plugins/snt/metrics)**                             | Cheatsheet for common measurements                                                                                                           |
+| **[Modeling](/plugins/snt/modeling)**                           | Cx3D integration                                                                                                                             |
 | **[Reconstruction Viewer](/plugins/snt/reconstruction-viewer)** | SNT's entry point for visualization of pre-existing data. If you are analyzing neuronal reconstructions you may want to start here           |
-| **[Analysis](/plugins/snt/analysis)**                           | Overview of all analysis commands, accessible in either the tracing interface or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) |
+| **[Screencasts](/plugins/snt/screencasts)**                     | Video tutorials. If you are using SNT for the first time you probably want to start here                                                     |
 | **[Scripting](/plugins/snt/scripting)**                         | Details on how to use SNT as a scripting library                                                                                             |
+| **[Walk-throughs](/plugins/snt/step-by-step-instructions)**     | Detailed step-by-step instructions for specific tasks                                                                                        |
 
 ## References
 
