@@ -1,7 +1,7 @@
 ---
 title: SNT › Key Shortcuts
 nav-links: true
-nav-title: Key Shortcuts
+nav-title: Shortcuts
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
@@ -10,14 +10,20 @@ update-site: Neuroanatomy
 
 {% capture text%}
 Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and most do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
+
+_Typically_, when {% include key keys='ctlcmd' %} is pressed, hotkeys are not intercepted by SNT. E.g., During a tracing session pressing {% include key key='N' %} triggers <u>N</u>o* in the interactive prompt while {% include key keys='ctlcmd|N' %} will trigger IJ"s built-in command {% include bc path='File|New|image...'%}.
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
-{% capture tip%}
-SNT was designed so that its shortcuts minimally collide with those of ImageJ. Most SNT hotkeys do not require holding down {% include key keys='ctlcmd' %}. When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {% include key key='S' %} will toggle cursor snapping while Pressing {% include key keys='ctlcmd|S' %} will allow you to save the traced image using IJ"s built-in command {% include bc path='File|Save'%}.
+{% capture cmdpalette%}
+{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
+The Command Palette is the fastest way to access actions and discover their respective shortcuts:
+1. Press {% include key keys='ctlcmd|Shift|P' %} in either SNT or Reconstruction Viewer
+2. Start typing to filter actions, scripts and available commands
+3. Press {% include key keys='up' %} or {% include key keys='down' %} to select a command (or use the  {% include key keys='mouse wheel' %})
+4. Press {% include key keys='Enter' %} to run it
 {% endcapture %}
-{% include notice icon="tip" content=tip %}
-
+{% include notice background-color="white" icon="tech" content=cmdpalette %}
 
 ### Interactive Prompt
 
@@ -45,13 +51,6 @@ SNT was designed so that its shortcuts minimally collide with those of ImageJ. M
 | {% include key key='2' %} | Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices |
 | {% include key key='3' %} | Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame |
 | {% include key key='G' %} | Selects the nearest path to the mouse cursor. Holding {% include key keys='Shift|G' %} adds the path nearest to the mouse cursor to the current list of selected paths. *Mnemonic: <u>G</u>roup paths around cursor.* Note that Paths can only be edited one at a time, and thus {% include key keys='Shift|G' %} is disabled in *Edit Mode* |
-
-
-{% capture tip2%}
-The Command Palette is a faster way to access actions. Press {% include key keys='ctlcmd|Shift|P' %} and begin typing to filter an interactive list of actions, scripts and commands in SNT's or Reconstruction Viewer dialogs:\\
-{% include img src="/media/plugins/snt/command-palette.png" align="center" width="450px" %}
-{% endcapture %}
-{% include notice icon="tip" content=tip2 %}
 
 
 ### Tracing
@@ -118,4 +117,4 @@ All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *s
 
 ### Other
 
-There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
+There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when right-clicking a tracing canvas.

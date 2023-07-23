@@ -17,13 +17,11 @@ See [Installation details](/plugins/snt/index#installation).
 ### How do I cite SNT?
 
 - {% include citation id='plugins/snt' %}
-
 To reference specific modules/plugins that enhance SNT:
-
 - **[Sholl Analysis](/plugins/sholl-analysis)**
   {% include citation id="plugins/sholl-analysis" %}
 - **[Tubular Geodesics](/plugins/snt/tubular-geodesics)**
-  {% include citation id="plugins/snt/tubular-geodesics" %}
+  {% include citation doi='10.1109/cvpr.2012.6247722' %}
 - **[Cx3D](/plugins/snt/modeling)**
   {% include citation id="plugins/snt/modeling" %}
 
@@ -40,45 +38,46 @@ Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and r
 When SNT is compiled, a [suite of tests](https://github.com/morphonets/SNT/tree/master/src/test/java/sc/fiji/snt) is run to detect deficiencies in the code base. Morphometry results are benchmarked against values obtained in [L-Measure](http://cng.gmu.edu:8080/Lm/) and [NeuroM](https://github.com/BlueBrain/NeuroM). However, no test suite is ever perfect. If you detect inaccuracies, please {% include github org='morphonets ' repo='SNT ' label='report ' %} them\!
 
 ### What is a SWC file?
-
 <span id="swc"></span>
 It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose *lingua franca* of a neuron's three dimensional structure. It is described in more detail [here](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) and [here](https://neuroinformatics.nl/swcPlus/). SNT supports all known variants of the format including [ESWC](https://www.nature.com/articles/sdata2017207) and [SWC+](https://neuroinformatics.nl/swcPlus/). The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a {% include wikipedia title="Adobe SWC file" %} used by Adobe.
 
 ### In which format should I save my tracings: TRACES or SWC?
-
 <span id="file-format"></span>
-When tracing 4D or 5D images, `TRACES` is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images `TRACES` is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for `TRACES` → `SWC` conversion. The following table summarizes the differences between the two formats:
+When tracing 4D or 5D images, TRACES is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images TRACES is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for TRACES → SWC conversion. The following table summarizes the differences between the two formats:
 
-|                                              | SWC                                                                                                                                  | TRACES                                                                           |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| No. reconstructions / file                   | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                        |
-| Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                       |
-| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                           |
-| Format                                       | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))           |
-| Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exlusive to SNT. But [open and easily parsable](/plugins/snt/traces-file-format) |
+|                                              | SWC                                                                                                                                  | TRACES                                                                                     |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| No. reconstructions per file                 | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                                  |
+| Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                                 |
+| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                                     |
+| [Fits](/plugins/snt/manual#refinefit)        | Not stored, unless fitting replaces existing nodes                                                                                   | Stored                                                                                     |
+| [Fills](/plugins/snt/manual#fill)            | Not stored                                                                                                                           | Filling parameters stored                                                                  |
+| Format                                       | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))                     |
+| Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exclusive to SNT. But [open and easily parsable](/plugins/snt/extending#traces-file-format) |
+
+### Which file formats for neuronal reconstruction are supported by SNT?
+SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the MouseLight project).
+
+### Which image file formats are supported by SNT?
+Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multi-channel before loading.
 
 ### How do I (batch) convert TRACES to SWC?
-
-In the [Script Editor](/scripting/script-editor) ({% include bc path='File|New|Script...'%}) look for {% include bc path='Templates|Neuroanatomy|Batch|Convert Traces to SWC'%} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [interface](/plugins/snt/scripting#script-templates). Don't see the scripts? Please ensure SNT is properly [installed](/plugins/snt#installation).
+Use the {% include bc path='Batch|Convert Traces to SWC'%} template script.
 
 ### How can I improve SNT documentation?
-
 Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!
 
 ## Tracing
 
-### Having to confirm indivual segments is too cumbersome for me. Is it possible to trace without interruption, by clicking in succession?
-
-Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporay Paths* section).
+### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
+Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section).
 
 ### How can I browse voxel intensities around processes?
-
-Righ-click on the image canvas and select *Pause SNT* from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
+Right-click on the image canvas and select *Pause SNT* from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
+Alternative, you can can also obtain Path profiles, in which voxel intensities are plotted along selected path(s).
 
 ### Is there a way to process one image after another in a fast way?
-
 Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
 
 ### How can I import an image sequence into SNT?
-
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}

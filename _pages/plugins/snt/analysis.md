@@ -8,133 +8,154 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
-# Sholl Analysis
+# Brain Area Analysis
+See [Graph-based Analysis](#graph-based-analysis).
 
-There are two [Sholl Analysis](/plugins/sholl-analysis) commands available in SNT's *Analysis* menu. The {% include bc path='Analysis|Shuoll Analysis...'%} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*) , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
-
-{% capture text%}
-Sholl Analysis has a dedicated [documentation page](/plugins/sholl-analysis) detailing [parameters](/plugins/sholl-analysis#parameters), [plots](/plugins/sholl-analysis#sholl-plots), and [metrics](/plugins/sholl-analysis#metrics).
-{% endcapture %}
-{% include notice icon="info" content=text %}
-
-## Sholl Analysis (by Focal Point)
-
-<img align="right" src="/media/plugins/snt/snt-sholl-coarse-intructions.png" title="Initiating Sholl Analysis: coarse method" width="250" alt="Initiating Sholl Analysis: coarse method" />
-It is also possible to initiate [Sholl Analysis](/plugins/sholl-analysis) on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing *Sholl Analysis at Nearest Node* from the contextual menu (Shortcut: {% include key keys='Alt|Shift|A' %}.
-
-Alternatively, for precise positioning of the center of analysis:
-
-1. Mouse over the path of interest. Press {% include key key='G' %} to activate it.
-2. Press {% include key keys='Alt|Shift' %} to select a node along the path.
-3. Press {% include key keys='Alt|Shift|A' %} to start analysis.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-sholl-precise-step-1.png" title="1) Select path" width="250" alt="1) Select path" />
-  <img src="/media/plugins/snt/snt-sholl-precise-step-2.png" title="2) Snap cursor to node" width="250" alt="2) Snap cursor to node" />
-  <img src="/media/plugins/snt/snt-sholl-precise-step-3.png" title="3) Sholl dialog" width="200" alt="3) Sholl dialog" />
-</div>
-
- The Sholl dialog created by this approach differs slightly from the dialog created by running the {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)...'%} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks. In addition to morphology and custom tag filters, the *Path filtering* drop-down menu provides an additional option to restrict the analysis to the subset of paths selected in the Path Manager. Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the *Preview* checkbox under the *Sampling* section and experiment with different step sizes.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-sholl-preview-step-size-1.png" title="fig:Step Size = 0" width="200" alt="Step Size = 0" />
-  <img src="/media/plugins/snt/snt-sholl-preview-step-size-2.png" title="fig:Step Size = 5" width="200" alt="Step Size = 5" />
-</div>
-
-In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction . To color code the tracing, choose *Color coded paths* from the *Annotations* drop-down menu and select a Lut from the *Annotations Lut* drop-down menu before pressing *Run Analysis*. To output the Sholl Image, choose *3D viewer labels image* from the *Annotations* drop-down menu and select the desired LUT.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-sholl-profile-plot-new.png" title="fig:Sholl Profile Plot" width="310" alt="Sholl Profile Plot" />
-  <img src="/media/plugins/snt/snt-sholl-profile-table-new.png" title="fig:Sholl Profile Table" width="232" alt="Sholl Profile Table" />
-  <img src="/media/plugins/snt/snt-sholl-color-map.png" title="Traces Color Coded by Sholl Intersections - Ice Lut" width="202" alt="Color Coded Tracing - Ice Lut" />
-</div>
-
-# Strahler Analysis
-
-To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current contents of the Path Manager, choose the {% include bc path='Utilities|Strahler Analysis'%} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contain morphometric statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {% include bc path='Analyze|Skeleton|Strahler Analysis...'%} plugin in the main Fiji dialog.
-
-{% capture text%}
-*Strahler Analysis (from Images)* has a dedicated [documentation page](/plugins/strahler-analysis) with useful information.
-{% endcapture %}
-{% include notice icon="info" content=text %}
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-strahler-analysis-table.png" title="fig:Strahler Analysis table" width="300" alt="Strahler Analysis table" />
-  <img src="/media/plugins/snt/snt-strahler-analysis-plot.png" title="fig:Strahler Analysis plot" width="300" alt="Strahler Analysis plot" />
-</div>
-
-# Path Order Analysis
-
-Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on *Path Order* as opposed to Strahler classification in which branches are classified (more details on alternative branch classification schemes can be found e.g., [here](https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm)). Produces a table of results and a plot similar to the *Strahler Analysis* option, with morphometric statistics on the group of paths associated with each Branch Order.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-path-order-analysis-table.png" title="Path Order Analysis table" width="300" alt="Path Order Analysis table" />
-  <img src="/media/plugins/snt/snt-path-order-analysis-plot.png" title="Path Order Analysis plot" width="300" alt="Path Order Analysis plot" />
-</div>
+# Convex Hull Analysis
+_Convex hull_ commands (in SNT  main dialog, [Rec. viewer](/plugins/snt/reconstruction-viewer) and [Rec. plotter](/plugins/snt/manual#plotter)) compute the 2D or 3D convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains the nodes of its paths). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size).
 
 # Measurements
 
-SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {% include bc path='Analysis|Measure...'%}. in the main SNT dialog.
+SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure'%} in Reconstruction Viewer). A simplified _Quick Measurements_ variant of this command also exists, in which common metrics are immediately retrieved using default settings. To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in the Path Manager's {% include bc path='Analyze|Measurements'%} menu.
 
-To quickly measure all existing paths with a common set of statistics, choose {% include bc path='Analysis|Quick Measurements'%}. In both cases the results of the measurements are displayed in a common table.
+{% include img align="center" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features an offline guide accessible through the <i>Gear</i> menu." %}
 
-To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then choose either command from the {% include bc path='Analyze'%} menu in the Path Manager.
+The reason for distinguish between branch-based (ie., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
-Batch measurements of reconstructions can be accomplished via scripting. See *Measure\_Multiple\_Files.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example.
+Batch measurements of reconstructions can be accomplished via scripting. See, e.g., the [bundled template script](/plugins/snt/scripting#bundled-templates) *Measure\_Multiple\_Files.py*, and related batch scripts for examples.
 
-<div align="center">
-  <img src="/media/snt-measure-results-table.png" title="Measurements Table" width="90%" />
-</div>
+**Note on Fitted Paths:**<br>
+Some branch-based metrics may not be available when mixing fitted and un-fitted paths because paths are fitted independently from one another and may not be aware of the original connectivity. When this happens, metrics may be reported as NaN and related errors reported to the Console (when running in Debug mode).
+If this becomes an issue, consider fitting paths in situ using the Replace existing nodes option instead. Also, remember that you can also use the Path Manager's Edit>Rebuild... command to re-compute relationships between paths
 
-# Dendrogram Viewer
+# Statistics
+SNT assembles comparison reports and simple statistical reports (two-sample t-test/one-way ANOVA) for up to six groups of cells. This is described in [Comparing Reconstructions](#comparing-reconstructions). In addition, descriptive statistics are commonly reported in histograms from *Frequency/Distribution Analysis* commands.
 
-<img align="right" src="/media/plugins/snt/snt-dendrogram-shortcuts.png" title="Dendrogram Viewer shortcuts" width="140" alt="Dendrogram Viewer shortcuts" /> 
+{% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png" caption="Example of histograms obtained from the Path Manager's _Branch-based Distributions..._ command."%}
 
-Found at {% include bc path='Utilities|Create Dendrogram'%}, this option generates a {% include wikipedia title="Dendrogram" %} from one connected component (i.e., a single rooted tree structure) in the Path Manager, providing a high-level overview of neurite branching topology. Note that if multiple rooted trees exist in the Path Manager, you will be prompted to choose one of them.
+<span id="dendrogram-viewer"></span>
+# Graph-based Analysis
+Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
 
-The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose *Available Shortcuts...*. The plot may be exported in several file formats, including HTML, PNG and SVG.
+The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The_Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG and SVG.
 
-Fine-grained programmatic control over SNT's Graph objects is achieved using the [JGraphT API](https://jgrapht.org/javadoc/) in a script. Also relevant is the [sc.fiji.snt.analysis.graph](http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html) package which provides high-level tools for Graph creation and conversion. See *Graph\_Analysis.py* in the SNT [Script Templates](/plugins/snt/scripting#script-templates) for a basic example.
+Typically, the most common types of graphs handled by _Graph Viewer_ are:
 
-<div align="center">
-  <img src="/media/plugins/snt/snt-dendrogram-viewer.png" title="Dendrogram Viewer" width="500" alt="Dendrogram Viewer" />
-</div>
+ - **Dendrograms**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Utilities|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
+
+ - **Annotation Graphs** These rely on brain annotations (i.e., neuropil labels) and are typically used to summarize projectomes or relationships between brain areas, including ferris-wheel diagrams. Note that annotation graphs can be generated for a single cell or groups of cells.
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/graph-viewer-dendrogram-simple.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) under the _vertical hierarchical_ layout. Edges depict branch length (µm). Vertices depict the root node (1), branch-, and end- points.
+/media/plugins/snt/graph-viewer-dendrogram-color-coded.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) color-coded by edge weight, i.e., branch length (µm), under the default layout (_vertical tree_).
+/media/plugins/snt/graph-viewer-ferris-wheel.png | Ferris-wheel diagram for a group of MouseLight PT-neurons (medulla-projecting) located in the secondary motor cortex (MOs, center vertex). Outer vertices depict target areas innervated by the cells' axons (automatically grouped by ontology). Edges encode axonal cable length (µm).
+"
+%}
+
+Two other type of _Brain Area Analysis_ visualizations relying on graph-based analysis (but not _Graph Viewer_) include boxplots and Sankey (flow) diagrams reporting innervation across brain areas/neuropil regions:
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/sankey-flow-plot-with-tooltip.png | Flow-plot (Sankey diagram) for two groups of MouseLight PT-neurons: Medulla-projecting (MY Proj.) and Thalamus-projecting (TH Proj.) _Flows_ depict axonal cable length (µm) at target areas () colored using the default ontology color-scheme adopted by the Allen Mouse Brain Common Coordinate Framework, CCFv3).
+/media/plugins/snt/brain-analysis-group-boxplot.png | The same flow-plot data in boxplot format (see *Flow and Ferris-Wheel Diagrams Demo* script)
+/media/plugins/snt/brain-analysis-combined-boxplot.png | *Analysis › Brain Area Analysis...* histogram in which frequencies of a particular morphometric trait are retrieved across brain areas (neuropil labels). In this example, *No. of tips* was retrieved for the four cells in the *MouseLight dendrites* demo dataset (*File › Load Demo Dataset...*)
+"
+%}
+
+Ultimately, fine-grained programmatic control over SNT's Graph objects is achieved via scripting. Relevant resources:
+- [JGraphT](https://jgrapht.org/): The underlying library handling graph theory data structures and algorithms ([JAVA API](https://jgrapht.org/javadoc/) and [Python API](https://pypi.org/project/jgrapht/).
+- [SNT graph package](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/analysis/graph/package-summary.html): High-level tools for graph creation within SNT
+- *SNT Demo Scripts*: See e.g., *Graph\_Analysis.py* and *Flow\_and\_Ferris\-Wheel\_Diagrams\_Demo.groovy*, two [SNT demo scripts](/plugins/snt/scripting#snt-scripts).. 
+- *Python notebooks*: For [pyimagej](/scripting/pyimagej) examples, have a look at the *Hemisphere Analysis* [notebook](/plugins/snt/scripting#python-notebooks).
+
+# Sholl Analysis
+
+{% capture sholl%}
+There are several entry points to Sholl Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
+
+1. Sholl Analysis (Image): Direct parsing of images, bypassing tracing
+2. Sholl Analysis (Tracings): Parsing of reconstructions
+3. Sholl Analysis Scripts: These handle batch processing of files, specialized analysis, and misc. utilities 
+
+Sholl Analysis has a dedicated [documentation page](/plugins/sholl-analysis) detailing [parameters](/plugins/sholl-analysis#parameters), [plots](/plugins/sholl-analysis#sholl-plots), and [metrics](/plugins/sholl-analysis#metrics).
+{% endcapture %}
+{% include notice icon="info" content=sholl %}
+
+
+In the main SNT dialog, Sholl commands are available in the {% include bc path='Analysis| '%} menu and image contextual menu and include:
+
+-  **{% include bc path='Sholl Analysis...'%}** Analyzes cells based on a set of pre-defined, morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*). Note that this assumes the relevant morphology tag(s) have been assigned to the set of paths being analyzed. Since the center of analysis is only determined after the prompt has been dismissed, preview of sampling shells may not be available.
+
+- **{% include bc path='Sholl Analysis (by Focal Point)...'%}** Analyzes cells on an _exact_, user-defined focal point. It is described on the following section.
+
+- **{% include bc path='Sholl Analysis at Nearest Node'%}** Coarser alternative to {% include bc path='Sholl Analysis (by Focal Point)...'%}, run from the image contextual menu by right-clicking _near_ a node (Shortcut: {% include key keys='Alt|Shift|A' %}.
+
+## Sholl Analysis (by Focal Point)
+
+For precise positioning of the center of analysis:
+
+1. Mouse over the path of interest. Press {% include key key='G' %} to activate it
+   <img align="right" width="400px" src="/media/plugins/snt/sholl-analysis-by-focal-point.png" title=" " />
+2. Then, select the node to be used as focal point. This can be done in one of two ways:
+   1. Select a node along the path as you would for forking operation: i.e., by pressing {% include key keys='Alt|Shift' %} while moving the cursor along the path (Note the "Fork Point" label appearing near the cursor on non-display canvases). With {% include key keys='Alt|Shift' %} still pressed, press  {% include key keys='A' %} to start the analysis
+   2. Make the path editable (right-click on the image and choose _Edit Path_ from the contextual menu). Move the cursor along the path until the desired node is highlighted. Press  {% include key keys='Alt|Shift|A' %} to start the analysis
+
+NB: The default {% include key keys='Alt|Shift' %} modifier can be simplified in the _Options_ tab of the main dialog.
+
+The Sholl dialog created by this approach is a variant of the dialog created by running the {% include bc path='Sholl|Sholl Analysis (From Tracings)...'%} from the _Neuroanatomy Shortcuts_ panel, with a couple of changes:
+1. Since the center of analysis is defined precisely on an image, radius step size can be previewed 
+2. The *Path filtering* drop-down menu provides additional options to restrict the analysis to the subset of paths selected in the Path Manager
+3. The type of annotations is more specialized and includes:
+  - **Color coded nodes** Intersection counts will be color mapped into path nodes under the _annotation LUT_.
+  - **3D viewer labels image** This generates a synthetic image holding the number of intersections at each distance from the center under _annotation LUT_. This image can then be fed to the "Apply Color Labels" action of the legacy 3D viewer, to "overlay" the mapping on the legacy 3D viewer scene.
+
+Note that plots and tables can be directly saved to disk by selecting _Save_ and specifying a valid directory in the dialog. The remaining options in the dialog are described in the [Sholl documentation page](/plugins/sholl-analysis).
+
+{% include img align="center" src="/media/plugins/snt/sholl-analysis-outputs.png" caption="Overview of Sholl analysis outputs: Linear and log-log profile (Sholl decay calculation), *detailed* and *summary* tables. Note that 'traditional' plots are obtained by disabling curve-fitting altogether."%}
+
+# Strahler Analysis
+{% capture strahler%}
+Similarly to _Sholl Analysis_, there are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
+
+1. Strahler Analysis (Image)... Direct parsing of images, bypassing tracing
+2. Strahler Analysis (Tracings)... Parsing of reconstructions
+3. Strahler Analysis Scripts: These handle batch processing of files
+
+_Strahler Analysis (Image)_ has a dedicated [documentation page](/plugins/strahler-analysis) with details on the classification.
+{% endcapture %}
+{% include notice icon="info" content=strahler %}
+
+To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current contents of the Path Manager, choose the {% include bc path='Analysis|Strahler Analysis...'%} in the main SNT dialog. This command will output the results of the analysis as a table and plot(s). These figures contain morphometric statistics of branches at each Horton-Strahler number. Refer to the _Strahler Analysis (Image)_ [documentation](/plugins/strahler-analysis) for details on the classification.
+{% include img align="center" src="/media/plugins/snt/strahler-analysis-from-reconstructions.png" caption="Strahler Analysis detailed output."%}
+
+# Path Order Analysis
+
+Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option is a variant of Strahler with the following differences:
+- Classification is based on _Path Order_: Paths are the scope of classification (not branches)
+- Ranking of orders is reversed relatively to Strahler analysis (reversed Strahler orders), with primary paths having _order 1_ and terminal paths having the highest order
+- Classification accepts _any_ structure: Since classification is path-based, there are no topological constrains in the analysis. While Strahler requires structures to be valid mathematical trees, Path order analysis can be performed on any structures, even those with loops
+
+# Persistence Analysis
+Currently, persistence analysis is only available via [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](/plugins/snt/scripting#python-notebooks).
 
 # Comparing Reconstructions
+<img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" title=" " />
+SNT can compare up to six groups of cells. The entry point for this type of comparison is twofold:
+- **{% include bc path='Utilities|Compare Reconstructions/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
+- **{% include bc path='Neuronal arbors|Load &amp; Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
 
-The {% include bc path='Utilities|Compare Reconstructions...'%} command will bring up a prompt which gives the user the option to compare two single reconstruction files against multiple metrics, or multiple groups of reconstruction files against a single metric.
+The dialog  prompt for this feature allows selection of up to six directories containing reconstruction files (SWC, TRACES, JSON, NDF). The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, it is possible to  restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result typically includes:
+- A simple statistical report, including descriptive statistics and a two-sample t-test (when comparing two groups) or one-way ANOVA (when comparing three or more groups)
+- Comparison plots for the chosen metric: Grouped histogram and boxplot
+- _Montages_ of groups. These are multi-panel vignettes of up to 10 group exemplars. These can all be exported as PNG or SVG.
 
-<div align="center">
-  <img src="/media/plugins/snt/snt-compare-reconstructions-single-or-group-choice.png" width="250" />
-  <img src="/media/plugins/snt/snt-compare-reconstructions-single-file-chooser.png" width="300" />
-  <img src="/media/plugins/snt/snt-compare-reconstructions-single-3dviewer-result.png" width="400" />
-</div>
+{% include img align="center" src="/media/plugins/snt/snt-compare-reconstructions-overview.png" caption="Comparing _No. of branches_ between two cell groups: Overview of outputs."%}
 
-If you select, *Compare two files* and press *OK*, a file chooser dialog will appear allowing the user to select two SWC files and their respective colors for display in Reconstruction Viewer.
-
-Use the *Browse* button to select the two files and press 'OK' to run the analysis. The results will include a table containing results of the *Quick Measurements* function for both reconstructions, as well as an instance of the 3D Reconstruction Viewer displaying both reconstructions.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-compare-reconstructions-single-measurements-table.png" title="fig:" width="90%" />
-</div>
-
-To instead compare multiple groups of reconstruction files against a single metric, choose *Compare groups of cells (two or more)* in the initial prompt.
-
-<img align="right" src="/media/plugins/snt/snt-compare-reconstructions-group-file-chooser.png" width="200" />
-
-The file selection prompt for this option allows selection of up to four directories containing SWC files. The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, the user may restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result include multi-panel figure(s) rendering up to ten reconstructions from each group, a window with the metric statistics on each group, a box-plot and a histogram. These figures can all be exported as PNG or SVG.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-compare-reconstruction-group-render1.png" title="Montage of exemplars from Group 1" width="350" />
-  <img src="/media/plugins/snt/snt-compare-reconstruction-group-render2.png" title="Montage of exemplars from Group 2" width="350" />
-</div>
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-compare-reconstruction-group-statistics-window.png" title="Snt-Compare-Reconstruction-Group-Statistics-Window.png" width="300" title="Statistics" />
-  <img src="/media/plugins/snt/snt-compare-reconstruction-group-box-plot.png" title="Box-plot" width="200" />
-  <img src="/media/plugins/snt/snt-compare-reconstruction-group-histogram.png" title="Histogram" width="300" />
-</div>
+{% include notice icon="info" content="SNT performs statistical tests without verifying if samples fulfill basic test-criteria (e.g., normality, variance homogeneity, sample size, etc.)" %}
 
 # Custom Analyses
 
 It is possible to script your own analysis routines. See [SNT Scripting](/plugins/snt/scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
+
+
