@@ -258,6 +258,14 @@ Once you have selected each of these tools (Wand and Hand) once, you should be a
 </table>
 
 # Full-automated Tracing
+{% capture ddac-demo%}
+You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila ddaC neuron (Autotrace demo)_. It will load a binary (thresholded) image of a Drosophila space-filling neuron (ddaC) displaying autotracing options for automated reconstruction.
+{% endcapture %}
+
+{% include notice icon="info" content=ddac-demo %}
+<div align="center">
+  <img src="/media/plugins/snt/snt-fully-automated-reconstructions.png" title="Fully automated reconstructions (ddaC demo dataset)" width="850" />
+</div>
 
 # Spine/Varicosity Analysis
 {% capture spines-demo%}
@@ -283,14 +291,14 @@ NB:
   - Create a freehand area ROI around the path(s) of interest
   - Run ImageJ's {% include bc path='Process|Find Maxima...' %}. Detection will be restricted to freehand selection
 
-- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files so you may want to save the multi-point ROis for future reference
+- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROis for future reference
 
-- ImageJ has several ways to expedite handling of multi-point ROIs:
+- ImageJ has several ways to expedite handling of multipoint ROIs:
   - Click on a point and drag to move it
   - Alt-click on a point to delete it
   - To delete multiple points, create an area selection while holding down {% include key key='alt' %}
   - Use {% include bc path='Edit|Selection|Select None' %} to delete a multi-point selection
-  - Use {% include bc path='Edit|Selection|Restore Selection' %} to restore a deleted multi-point selection
+  - Use {% include bc path='Edit|Selection|Restore Selection' %} to restore a deleted multipoint selection
   - Double-click on the Multi-point tool in the ImageJ toolbar for further options
 
 
@@ -343,7 +351,7 @@ Fillings are controlled by the Fill Manager and share many of the same propertie
 
 ### I. Starting the Fill
 
-First, select the one or more paths that you want to fill out from in the Path Manager and select {% include bc path="Fill|Fill Out..." %} in the Path Manager (or select none if you want to fill all of the existing paths). Once the filling starts, you should be able to see a thick green surround the path while scrolling through the 3D stack:
+First, select the one or more paths that you want to fill out from in the Path Manager and select {% include bc path="Fill|Fill Out..." %} in the Path Manager (or select none if you want to fill all the existing paths). Once the filling starts, you should be able to see a thick green surround the path while scrolling through the 3D stack:
 
 The filler continues to explore the image until you click "Pause" or "Stop" in the dialog, or until all the image has been fully explored. However, the fill which is shown only includes those points up to a certain threshold distance from the path. Note that this "distance" doesn't mean a real physical distance, but instead a 'likelihood-distance': a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path. Information about the current threshold and the progress of the search is shown in the dialog. Note that if your image is rather small, the entire image may be fully explored before you have time to interact with prompt.
 <img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />

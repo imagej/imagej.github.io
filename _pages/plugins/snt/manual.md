@@ -174,7 +174,7 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 
 **Enable Snapping checkbox** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
-<img align="right" width="250" src="/media/plugins/snt/cursor-snap.png" title="Cursor auto-snapping in 2D or 3D" />
+<img align="right" width="300" src="/media/plugins/snt/cursor-snap.png" title="Cursor auto-snapping in 2D or 3D" />
 
  - This feature assumes the signal is brighter than the background as typically found in fluorescent images.
 
@@ -192,7 +192,7 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 
 ### Auto-tracing
 
-<img align="right" width="250" src="/media/plugins/snt/snt-auto-tracing.png" title="Auto-tracing options" />
+<img align="right" width="450" src="/media/plugins/snt/snt-auto-tracing.png" title="Auto-tracing options" />
 - **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search algorithm" %} to automatically trace paths between two manually selected points. To manually place nodes along a path, toggle this feature off. Note that it is also possible to enable other built-in algorithms or algorithms provided by external SNT add-ons. Current options include:
 
   - **A\* search**: Canonical and proven implementation of the historic algorithm, ported from [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
@@ -225,6 +225,7 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 
 ### Tracing on Secondary Image (Layer)
 <span id="tracing-on-secondary-image"></span>
+<img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-menu.png" title="Secondary layer controls" />
 This is one of SNT's most advanced and useful features. The [default auto-tracing](#Auto-tracing) provides a convenient and easy way to detect structures by their likelihood of *belonging* to a tube-like structure (such as a neurite). However, it is just _one_ approach for "tube-like" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in SNT? *Tracing on Secondary Layer* is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A\* star search will operate. Because this option can be toggled at will, it becomes a secondary _layer_ for auto-tracing: E.g., you may decide to auto-trace certain neurites on the original image, while tracing other neurites on the secondary layer.
 
 For the most part the secondary layer remains hidden because feedback on auto-tracing searches is always provided in the original image. When RAM is not limited, one can ping-pong between _secondary_ and _original_ image simply, by pressing {% include key key='L' %}, the shortcut for the _Trace/Fill on Secondary **L**ayer_ checkbox. Here are some specific usages for this feature:
@@ -237,6 +238,7 @@ For the most part the secondary layer remains hidden because feedback on auto-tr
 
 
 #### Creating Secondary layers
+<img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" title="Secondary layer wizard" />
 
 Secondary layers are created/load using the second *gear* drop-down menu in the auto-tracing panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
 
@@ -255,24 +257,21 @@ The wizard needs two types of information from the user: The type of filtering o
 
 - **Scale(s)** Also known as _sigmas_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
 
-    - **Select visually...**: The wizard will prompt you to click on a representative region of the image which has meaningful structure. Once you click there, a preview palette is generated showing increasing values of σ (from top-left to bottom-right) applied to that region of the image. Select the suitable scales
+    - **Select visually...**: The wizard will prompt you to click on a representative region of the image which has a meaningful structure. Once you click there, a preview palette is generated showing increasing values of σ (from top-left to bottom-right) applied to that region of the image. Select the suitable scales
 
     - **Estimate programmatically...**: This allows automated estimation of radii across the image, which can inform the choice of scale(s). The only parameter required is _Dimmest intensity (approx.)_: Pixel values below this value are treated as background when computing thicknesses. Use -1 to adopt the default cutoff value (half of the image max). After pressing *OK*, a color-mapped image (based off local radius) and a histogram showing the distribution of radii across the image are shown. The histogram can be used to validate values chosen _visually_ in the preview palette.
 
       NB: Analysis is performed via the *Local Thickness (complete process)* plugin ({% include bc path='Analyze|Local Thickness|Local Thickness (complete process)' %} in Fiji's menu bar). 
 
-
 NB: The wizard also allows you use a backup copy of the image being traced as secondary layer. This is only useful if you intend to modify the original image during a tracing session, but want to have convenient access to the initial image at a later time.
 
+
 <div align="center">
-  <img src="/media/plugins/snt/snt-estimate-radii-image-result.png" title="Estimate Radii-Image: Color coded image" width="250" />
-  <img src="/media/plugins/snt/snt-estimate-radii-histogram-result.png" title="Estimate Radii: Histogram result" width="250" />
+ <img  width="900" src="/media/plugins/snt/snt-secondary-layer-wizard.png" title="Secondary layer wizard previewers" />
+<br>
+<b>Secondary Layer Wizard</b>.<br>
+<b>Left</b>:  Visual selection of filtering kernel(s) using the <i>Sigma palette</i>. The palette features its own offline manual accessible by pressing <i>H</i> or <i>F1</i>. <b>Right</b>: Programmatic estimation of radii across the whole image using <i>local thickness</i>.
 </div>
- Given this histogram one might select a scale closer to the minimum estimated thickness (0.330) to capture smaller processes, or the maximum (2.0) to capture larger processes. In practice, one would specify multiple scales across this range (e.g, [0.33, 0.671, 0.996, 2.0]; [min, mode, mean, and max.]).
-
-<img align="right" src="/media/plugins/snt/snt-generate-filtered-image-prompt.png" title="Generate Secondary Layer prompt (v3)" width="250" />
-
-
 #### Loading Secondary layers
 
 The second *gear* drop-down menu in the auto-tracing panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images) walk-through for more details.
@@ -282,7 +281,7 @@ The same menu also provides options to import a [Weka](/plugins/tws) model. In t
 
 ### Filters for Visibility of Paths
 
-<img align="right" src="/media/plugins/snt/path-visibility-filters.png" />
+<img align="right" src="/media/plugins/snt/path-visibility-filters.png"  width="300" />
 By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths: 
 
 1. **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
@@ -296,7 +295,6 @@ Any combination of these options may be toggled simultaneously. Note that these 
 
 ### Default Path Colors
 
-<img align="left" src="/media/plugins/snt/default-path-colors.png" title="Default path colors widget" width="300" />
 <img align="right" src="/media/plugins/snt/cmyk-color-model.png" title="CMYK color selection UI" width="300" />
 By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget and using the {% include wikipedia title="CMYK color model" %}. For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#ui-interaction) widget.
 
@@ -325,7 +323,7 @@ This tab aggregated widgets for advanced settings.
 
 ### Views
 
-<img align="right" src="/media/plugins/snt/snt-views-widget.png" width="300" />
+<img align="right" width="300" src="/media/plugins/snt/snt-options-tab.png" title="Options tab" />
 - **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
 
 <div align="center">
@@ -349,8 +347,6 @@ This tab aggregated widgets for advanced settings.
 
 ### Temporary Paths
 
-<img align="right" src="/media/plugins/snt/snt-temporary-paths-dialog.png" />
-
 - **Confirm temporary segments** If active, prompts for either confirmation or denial of whether or not to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
 
   - **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
@@ -359,8 +355,6 @@ This tab aggregated widgets for advanced settings.
 
 
 ### UI Interaction
-
-<img align="right" src="/media/plugins/snt/snt-ui-interaction-widget.png" />
 
 - **Colors** Specifies how components should be rendered, including:
 
@@ -394,7 +388,7 @@ This tab aggregated widgets for advanced settings.
 
 ## 3D Tab
 
-<img align="right" src="/media/plugins/snt/snt-3d-tab.png" title="3D tab (v3.0)" />
+<img align="right" width="300" src="/media/plugins/snt/snt-3d-tab.png" title="3D tab" />
 This tab aggregates widgets related to 3D interaction.
 
 ### Reconstruction Viewer
@@ -412,30 +406,31 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 
 # Contextual Menu
 
-<img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu.png" title="Contextual menu (v3.0)" width="300" alt="Contextual menu" />
-Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. 
+{% include img align="left" width="250" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
 
-- **Select Nearest Path** {% include key key='G' %} or {% include key keys='Shift|G' %} Will select the path closest to the mouse cursor.
+Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. The list includes:
 
-- **Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
+**Select Nearest Path** {% include key key='G' %} or {% include key keys='Shift|G' %} Will select the path closest to the mouse cursor.
 
-- **Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
+**Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
 
-- **Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+**Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
 
-- **Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+**Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](#ui-interaction) to indicate this state.
 
-- **Sholl Analysis at Nearest Node** {% include key keys='Shift|Alt|A' %} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)' %}. Note the *Center* parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
+**Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+
+**Sholl Analysis at Nearest Node** {% include key keys='Shift|Alt|A' %} Described in [Analysis › Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis-by-focal-point).
 
 
 ### Editing Paths
 
 <img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v3.0)" width="300" />
-Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allowing use of the menu options under the *Edit Path* option. When *Edit Mode* is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
+Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allowing use of the menu options under the *Edit Path* option. When *Edit Mode* is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*. The list of editing commands includes:
 
-- **Reset Active Node** Clears the active node from the cursor.
+- **Reset Active Node** Clears the active node under the cursor.
 
-- **Delete Active Node** {% include key key='D' %} or {% include key key='Backspace' %} Permanently removes the active node from the path.
+- **Delete Active Node** {% include key key='D' %} Permanently removes the active node from the path.
 
 - **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
 
@@ -443,7 +438,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allo
 
 - **Bring Active Node to Current Z-plane** {% include key key='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 
-- **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step_instructions#mergingjoining-paths).
+- **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
 
 
 # Path Manager
@@ -514,7 +509,7 @@ SNT can use the fluorescent signal around traced Paths to optimize curvatures an
 - {% include bc path='Fit Path(s).../Un-fit Path(s)/Apply Existing Fit' %} This option will change depending on which Path(s) are currently selected. You can use it to 1) Fit selected Path(s), 2) un-fit Path(s) that have already been fitted, or 3) apply a generated preview of the fit or an existing fit.
 
 <img align="right" src="/media/plugins/snt/explore-fit-preview.png" title="Slice in &quot;Explore/Preview Fit&quot; image stack" width="250" alt="Slice in &quot;Explore/Preview Fit&quot; image stack" />
-- {% include bc path='Explore/Preview Fit' %} Carves out a region of the image along and around each Path node, generating an animated cross-view "fly-through" with the result of the fitting operation. The generated image is annotated with details of the fit: i) Fitted radius; ii) normalized score quantifying the "circularity" of a node's cross section, and iii) the angle between node and parent tangent vectors.
+- {% include bc path='Explore/Preview Fit' %} Carves out a region of the image along and around each Path node, generating an animated cross-view "fly-through" with the result of the fitting operation. The generated image is annotated with details of the fit: i) Fitted radius; ii) normalized score quantifying the "circularity" of a node's cross-section, and iii) the angle between node and parent tangent vectors.
 - {% include bc path='Discard Fit(s)...' %} Deletes the existing fit(s) for the selected Path(s), or all fits if no Paths are selected.
 
 Before computing the fit, SNT will prompt you to specify two parameters:
@@ -602,9 +597,9 @@ This menu contains several options which provide quick ways to analyze and visua
 
 - **{% include bc path='Train Weka Classifier' %}** Uses selected Path(s) to train a random forest classifier (a machine learning algorithm for semantic segmentation) aimed at classifying neurite-associated pixels. Classification is performed by [/plugins//tws](Trainable Weka Segmentation). The resulting classification can be exported into other software, or loaded as secondary tracing layer. Refer to the prompt's built-in documentation for more details.
 
-- **{% include bc path='Spine/Varicosity Utilities| ' %}** This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multi-point ROIs placed along paths. These are detailed in [Step by step instructions](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis).
+- **{% include bc path='Spine/Varicosity Utilities| ' %}** This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Step-by-step instructions](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis).
 
-- **{% include bc path='Time-lapse Utilities| ' %}** This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step by step instructions](/plugins/snt/step-by-step-instructions#time-lapse-analysis) for more details.
+- **{% include bc path='Time-lapse Utilities| ' %}** This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/step-by-step-instructions#time-lapse-analysis) for more details.
 
 - **{% include bc path='Save Subset as SWC...' %}** Exports the selected subset of Path(s) as an [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
 
