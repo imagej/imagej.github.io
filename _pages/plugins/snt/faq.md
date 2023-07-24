@@ -27,7 +27,7 @@ To reference specific modules/plugins that enhance SNT:
 
 The original [Simple Neurite Tracer](#snt) publication is:
 
-- {% include citation id='plugins/simple-neurite-tracer' %}
+- {% include citation doi='10.1093/bioinformatics/btr390' %}
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
