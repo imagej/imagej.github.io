@@ -145,7 +145,7 @@ You can also manually enter or edit any information in the *Details* panel:
 
 ### Upload your files
 
-Finally, click *Apply changes (upload)* to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of ImageJ, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server.
+Finally, click *Apply Changes (upload)* to upload your plugin to the server and allow others to access it. If you have dependencies that are not part of ImageJ, the updater will ask you if you want to upload that jar as well. Finally, you will be asked for your login credentials again and the files will be uploaded to the server.
 
 Check that your plugins are now registered as ImageJ plugins by selecting the *View files of the '\[your site name here\]' site* view option:
 
@@ -153,6 +153,36 @@ Check that your plugins are now registered as ImageJ plugins by selecting the *V
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](/update-sites/following) to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
 For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).
+
+## Removing files from your update site
+
+Sometimes you may have libraries or resources that are no longer necessary for your update site. Follow these steps to remove unwanted files.
+
+### Uninstall (local)
+
+An ImageJ update site is essentially just a record of the changes/modifications from a base ImageJ distribution. We always populate an update site from our local installation, and for removal that's no different. The first step is just physically removing the unwanted file(s).
+
+In the {% include button label="Advanced mode" %} view of the updater, you can select any installed file and use either the {% include button label="Uninstall" %} button, or drop-down menu entry, to mark an item for removal. Then when you {% include button label="Apply Changes" %}, the selected item(s) will be deleted from your local filesystem.
+
+<img src="/media/update-sites/uninstall.png" width="770"/>
+
+This is functionally equivalent to removing these files manually from your filesystem; feel free to do so before starting your ImageJ application.
+
+### Mark obsolete (update site)
+
+Once you have removed the undesired files, go back to the {% include button label="Advanced mode" %} view of the updater and find the removed file(s). Using the *View uninstalled files only* view option can help here - if your file *is not* showing up on this view then something is off: double-check the file is not present locally.
+
+When you find the uninstalled file(s) you can click their *Status/Action* and change it to **Mark obsolete (xxxxx)**. This option should always have an associated update site name; verify that it matches the update site you will be removing the file from.
+
+<img src="/media/update-sites/markobsolete.png" width="770"/>
+
+Marking a file as obsolete will change its status to **Remove it**, and the action button to {% include button label="Apply Changes (Upload)" %}
+
+### Upload the changes
+
+Now you can proceed with uploading, just as you did when [adding new files](#upload-your-files).
+
+This will make a record of the removal in the update site's metadata, so you can always verify what happened in the future.
 
 ## Publishing your update site
 
@@ -163,4 +193,7 @@ If you want your update site to be listed in the ImageJ update manager, follow t
 
 For additional information on common topics regarding update site maintenance, please see the [update site FAQ](/update-sites/faq).
 
+## Troubleshooting
+
+If you run into any problems, please [let us know](/discuss)!
 
