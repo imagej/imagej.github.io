@@ -1,18 +1,26 @@
 ---
-mediawiki: Frangi
 title: Frangi
-project: /software/fiji
-artifact: sc.fiji:Feature_Detection
+project: /software/imagej2
+artifact: net.imagej:imagej-ops
+icon: /media/icons/imagej2.png
 doi: 10.1007/BFb0056195
 categories: [Uncategorized]
 ---
 
-{% include notice icon="warning" content="This is an experimental plugin, and I have doubts about its correctness—in particular, the results are strange when the ratio of pixelWidth : pixelHeight : pixelDepth is other than 1:1:1. In addition, the results in any case seem to be different from those from other implementations, such as [this [MATLAB](/scripting/matlab) one](http://www.mathworks.co.uk/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter). I don't have time to work on this any more (and no longer work in academia at all) so if someone were interested in taking it over, that would be brilliant."  %} This plugin implements the algorithm for detection of vessel- or tube-like structures in 2D and 3D images described Frangi et al 1998.[^1]
+_Frangi vesselness_ is an algorithm for detection of tube-like structures (such as in imagery of filamentous structures (blood vessels, neurites, etc.). It applies to both 2D and 3D images and was first described by Frangi et al 1998.[^1] ([PDF](https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf)). In many cases, this method is known to be a better alternative to single-scale [Tubeness](/plugins/tubeness) filtering (at least for isotropic images), but it is slower. There are two ImageJ implementations of the algorithm:
 
-In my experience, this method produces consistently better results than the [Tubeness](/plugins/tubeness) plugin for isotropic image data, although it is significantly slower.
+- A legacy plugin (In Fiji registered under {% include bc path='Plugins|Process|Frangi Vesselness' %} ([source code](https://github.com/fiji/Feature_Detection)). This is a deprecated implementaton with expected inaccuracies.
 
-These screenshots show the results on an example file:
+- An [ImageJ Op](/libs/imagej-ops/index)  (In Fiji registed under {% include bc path='Plugins|Process|Frangi Vesselness' %}). This version superseeds previous implementations and has been validated/benchmarked againgst other implementations (namely ITK and MATLAB) ([details](https://forum.image.sc/t/frangi-vesselness-filter-feedback/6747)). It requires 3 inputs:
+ 
+  1. Scale(s): Radii of the structures to be filtered
+  2. Spacing: the physical spacing between image data points (i.e., the pixel/voxel dimensions)
+  3. Whether or not a gaussian filter should be applied at each scale before the filter runs
 
-![](/media/plugins/frangi-before-and-after.png)
+SNT's uses this filter internally. Its [Secondary Layer Wizard](/plugins/snt/manual#tracing-on-secondary-image) provides a convenient way to preview the effect of scale size in the result.
+
+{% include img align="center" width="600px" src="/media/plugins/frangi-before-and-after.png" caption="Frangi Vesselness: Left: Original image. Right: Filtered image." %}
+
+
 
 {% include citation fn=1 %}

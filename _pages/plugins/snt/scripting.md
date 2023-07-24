@@ -9,7 +9,7 @@ update-site: Neuroanatomy
 ---
 
 {% capture api%}
-The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](https://morphonets.github.io/SNT).
+The most up-to-date SNT API can be found at [https://javadoc.scijava.org/SNT](https://javadoc.scijava.org/SNT).
 {% endcapture %}
 {% include notice icon="info" content=api %}
 
@@ -17,78 +17,49 @@ The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT](h
 
 A key feature of SNT is its extensibility via scripts.This section provides an overview to the ever-growing list of SNT scripts. These can be accessed through the {% include bc path='Plugins|NeuroAnatomy|Neuroanatomy Shortcut Window' %}, the *Scripts* menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Typically, holding {% include key key='Shift' %} while selecting a script from a menu outside the [Script Editor](/scripting/script-editor) will open it.
 
-SNT Scripts are intentionally written in multiple languages, but the majority is written in [Groovy](/scripting/groovy/)and [Python](/scripting/python) (Jython), for no other reason that those seem to be the most commonly used language by its developers
+SNT Scripts are intentionally written in multiple languages to demonstrate flexibility, but the majority is written in [Groovy](/scripting/groovy/) and [Python](/scripting/python) (Jython), for no other reason that those seem to be the most commonly used language by its developers. [script parameters](/scripting/parameters) are typically used for rapid development.
+
+## Bundled Templates
+{% include img align="right" src="/media/plugins/snt/snt-scripts-menu.png" width="200px" caption="Scripts menu in main dialog"%}
+There are ~50 scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Render* (visualization), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Demos*.
+
+Your script can also be bundled with SNT, or made available through the Neuroanatomy update site. Did you write a useful routine? Please [announce it](https://forum.image.sc/tag/snt), or submit a [pull request](https://github.com/morphonets/SNT/pulls) so that it can be distributed with Fiji!
 
 ## Adding Scripts to SNT
 
 There are a couple of ways to have your own scripts appear in SNT's *Scripts* menu:
 
-Any script saved into Fiji's "scripts" sub-directory containing *SNT* in the filename (e.g., `C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py` or `/home/user/Fiji.app/scripts/My_SNT_Script.py`) will be listed in {% include bc path='Scripts'%} menu:
+Any script saved into Fiji's "scripts" sub-directory containing *SNT* in the filename (e.g., *C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py* or */home/user/Fiji.app/scripts/My_SNT_Script.py*) will be listed in {% include bc path='Scripts'%} menu:
 
-1. Go to {% include bc path='Scripts|New...'%} from the SNT dialog. This will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice.
+1. Go to {% include bc path='Scripts|New...'%} from the SNT dialog. You can choose to open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice or to assemble your boilerplate using the [Script Recorder](#script-recorder)
 
-2. Save the script in `Fiji.app/scripts/` including 'SNT' anywhere in its file name
+2. Save the script in *Fiji.app/scripts/* including 'SNT' anywhere in its file name
 
 3. Run {% include bc path='Scripts|Reload...'%}, and your new script should appear in the full list of scripts found at {% include bc path='Scripts|Full List...'%}.
 
-Did you write a useful script? Please submit a [pull request](https://github.com/morphonets/SNT/pulls) on GitHub so that it can be distributed with Fiji!
+## Script Recorder
+
+SNT features a script recorder that similarly to _ImageJ's macro recorder_ converts menu and button clicks into executable code. Note however that while the recorder captures simple commands well, it struggles to capture those that are more complex or particularly interactive. 
+
+The goal of the recorder is twofold: 1) simplify prototyping of new scripts and 2) Log your actions during a tracing session. This is particularly useful to assemble reproducible records.
+
+There are two ways to start the recorder: {% include bc path='Scripts|New|Record...'%} or by pressing the _Record_ button in [Command Palette](/plugins/snt/manual#command-palette).
+
+As a rule-of-thumb, commands that are simple or do not involve prompts record flawlessly. This includes setting filters for visibility of tags, applying Tags, or filtering paths in the Path Manager. Commands for fully automated reconstructions, or generating secondary layers _should_ work well. However, many others remain limited.
+
+<div align="center">
+  <img src="/media/plugins/snt/snt-script-recorder.png" title="SNT's Script Recorder" width="650px" />
+</div>
+
 
 ## Script Interpreter
 
-Some of SNT's functionality is accessible in the [Script Interpreter](/scripting/interpreter). Here is an example:
+Some of SNT's functionality is conveniently accessible in the [Script Interpreter](/scripting/interpreter). Here is an example:
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-scriptinterpreter.png" title="SNT-ScriptInterpreter.png" width="650px" />
+  <img src="/media/plugins/snt/snt-scriptinterpreter.png" title="SNTService being accessed in the Script Interpreter" width="650px" />
 </div>
 
-## Script Templates
-
-<img align="right" src="/media/plugins/snt/snt-scripts-menu-full-list.png" title="SNT Scripts Menu" width="400" />
-These typically demonstrate various aspects of analysis, tracing, image processing and batch processing routines.
-
-### Analysis
-
-- **Analysis\_Demo\_(Interactive).py** Exemplifies how to programmatically interact with a running instance of SNT to analyze traced data. Because of all the GUI updates, this approach is *significantly slower* than analyzing reconstructions directly (see Analysis\_Demo.py for comparison)
-
-- **Analysis\_Demo.py** A [Jython](/scripting/jython) demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit.
-
-- **Download\_ML\_Data.groovy** Exemplifies how to programmatically retrieve data from MouseLight's database at \[//ml-neuronbrowser.janelia.org ml-neuronbrowser.janelia.org\]: It iterates through all the neurons in the server and downloads data (both JSON and SWC formats) for cells with soma associated with the specified Allen Reference Atlas (ARA) compartment. Downloaded files will contain all metadata associated with the cell (i.e., labeling used, strain, etc.)
-
-- **Get\_Branch\_Points\_in\_Brain\_Compartment.groovy** Exemplifies how to extract morphometric properties of a MouseLight cell associated with a specific brain region/neuropil compartment. Requires internet connection.
-
-- **Graph\_Analysis.py** Demonstrates how to handle neurons as graph structures {% include wikipedia title="Graph theory" %} in which nodes connected by edges define the morphology of the neuron. SNT represents neurons as directed graphs (assuming the root -typically the soma- as origin) and allows data be processed using the powerful [jgrapht](https://jgrapht.org/) library. In this demo, the [graph diameter](http://mathworld.wolfram.com/GraphDiameter.html) (i.e., the length of the longest shortest path or the longest graph geodesic) of a cellular compartment is computed for a neuron fetched from the MouseLight database.
-
-- **Reconstruction\_Viewer\_Demo.py** Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
-
-- **SciView\_Demo.groovy** Exemplifies how bridge SNT with [sciview](/plugins/sciview).
-
-- **Extensive\_Sholl\_Stats.groovy** Exemplifies how to perform linear and polynomial regression on tabular [Sholl](/plugins/sholl-analysis) data.
-
-### Boilerplate
-
-These scripts hold extensible boilerplate code in several programming languages, namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython). The most essential imports and [script parameters](/scripting/parameters) are included to facilitate rapid development.
-
-### Tracing
-
-- **Scripted\_Tracing\_Demo.py** Exemplifies how to programmatically perform A\* tracing between two points without GUI interaction, which allows for automated tracing of relatively simple structures (e.g., neurospheres neurites, microtubule bundles, etc). In this demo, points are retrieved from the SWC file of SNT's "demo tree", effectively recreating the initial SWC data.
-
-- **Scripted\_Tracing\_Demo\_(Interactive).py** Exemplifies how to programmatically interact with a running instance of SNT to perform auto-tracing tasks.
-
-- **Take\_Snapshot.py** Displays a WYSIWYG image of a tracing canvas. Exemplifies how to script SNT using SNTService.
-
-### Batch
-
-This menu hosts scripts that process files in bulk. Namely:
-
-- **Convert\_Traces\_to\_SWC.py** Converts all .traces files in a directory into SWC.
-
-- **Filter\_Multiple\_Images.py** Bulk filtering of image files using Frangi Vesselness.
-
-- **Measure\_Multiple\_Files.py**/**Measure\_Multiple\_Files\_(With\_Options).groovy** Bulk measurements of reconstruction files.
-
-- **Render\_Cell\_Collection.groovy** Exemplifies how to quickly render large collections of cells from a directory of files in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
-
-- **Render\_Cell\_Collection\_(MultiPanel\_Figure).groovy** Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (e.g., cable length).
 
 # Python Notebooks
 
@@ -130,9 +101,12 @@ def run():
 
 {% endhighlight %}
 
-# Examples
+# Fiji Scripting
 
-## Scripting Reconstruction Viewer
+Scripting in Fiji's script editor is perhaps best done using Groovy and python. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
+
+
+## Example
 
 Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Tools & Utilities|Script This Viewer...'%} [command](/plugins/snt/reconstruction-viewer#utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](/plugins/snt/reconstruction-viewer#settings).
 

@@ -1,7 +1,7 @@
 ---
 title: SNT › Reconstruction Viewer
 nav-links: true
-nav-title: Reconstruction Viewer
+nav-title: Rec. Viewer
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
@@ -11,7 +11,7 @@ forum-tag: snt
 SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both surface meshes and reconstructions. It can be used as a standalone program or from withing SNT. Some of its features include:
 
  - Interactive scenes (controlled rotations, panning, zoom, scaling, animation, "dark"/"light" mode)
- - Suport for axes, transparency, color interpolation and path smoothing
+ - Support for axes, transparency, color interpolation and path smoothing
  - Tools for management and customization of scene elements
  - Ability to render both local and remote files on the same scene
  - Loading of surface meshes of several template brains (Drosophila, zebrafish, and mouse (Allen Mouse Brain Atlas))
