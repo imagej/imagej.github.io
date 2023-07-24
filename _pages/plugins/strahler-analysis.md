@@ -11,11 +11,12 @@ doi: 10.1038/s41592-021-01105-7
 
 {% capture strahler%}
 There are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
-
-1. _Strahler Analysis (Image)..._ Direct parsing of skeletonized images, bypassing tracing
-2. _Strahler Analysis (Tracings)..._ Parsing of traced structures
-3. _Strahler Analysis Scripts_  Batch processing of files
-
+<br/>
+<ol>
+<li><i>Strahler Analysis (Image)...</i> Direct parsing of skeletonized images, bypassing tracing</li>
+<li><i>Strahler Analysis (Tracings)...</i> Parsing of traced structures</li>
+<li><i>Strahler Analysis Scripts</i>  Batch processing of files</li>
+</ol>
 This documentation page is mainly focused on _Strahler Analysis (Image)..._.
 {% endcapture %}
 {% include notice icon="info" content=strahler %}
