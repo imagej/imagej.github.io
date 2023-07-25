@@ -58,4 +58,12 @@ pip install cellpose-omni==0.7.3
 
 The default models *bact_phase_omni* and *bact_fluor_omni* are stored in the cellpose pretrained models folder.
 
+### Troubleshooting "Found 0 spots" errors
+
+On some systems we have noticed that sometimes TrackMate returns 0 detections for the cellpose and omnipose detectors, even when the installation of these two programs worked correctly.
+In most cases, this is due to the fact that the pretrained models have not been downloaded prior to running the TrackMate integration.
+To fix this, the easiest way is to launch the cellpose or omnipose Python GUI, and segment a single small image.
+This will trigger the download of the pretrained models.
+After this, the TrackMate integration should work as expected.
+
 
