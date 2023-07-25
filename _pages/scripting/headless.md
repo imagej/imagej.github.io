@@ -88,6 +88,13 @@ Often headless mode is used to run many scripts in parallel that could result in
 If desired, the updater can be controlled in headless mode using the following commands to add an update site and update ImageJ.
 
 ```ssh
-./ImageJ-linux64 --update add-update-site BAR http://sites.imagej.net/Tiago/
+./ImageJ-linux64 --update add-update-site BAR https://sites.imagej.net/Tiago/
 ./ImageJ-linux64 --ij2 --headless --update update
 ```
+
+You can also add multiple update sites in a single command line:
+
+```ssh
+./ImageJ-win64.exe --update add-update-sites "BAR" "https://sites.imagej.net/Tiago/" "IJPB-plugins" "https://sites.imagej.net/IJPB-plugins/"
+```
+
