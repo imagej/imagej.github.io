@@ -77,6 +77,7 @@ The source video follows  _E. coli_ bacteria imaged in phase contrast.
 We want to segment them, track them, and plot the growth curve for the bacteria imaged. 
 
 The image file can be found on Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8182297.svg)](https://doi.org/10.5281/zenodo.8182297)
 Download it and save it somewhere convenient.
 
 After executing the installation procedure above, launch Fiji and open the image.
