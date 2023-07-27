@@ -540,6 +540,14 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <th colspan=4 class="section-major">Other workshops</th>
     </tr>
     <tr>
+      <td>2023-July-27</td>
+      <td>{% include person id='elevans' %}</td>
+      <td>Van Andel Institute Image processing workshop with ImageJ/Fiji</td>
+      <td>
+        <a href="https://docs.google.com/presentation/d/1e94san5M7zl5n0ZLjQyVBafAFi6zJLyFV1pzvxXItYg/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
+    <tr>
       <td>2022-April-30</td>
       <td>{% include person id='elevans' %}</td>
       <td>AQLM Image processing, segmentation and scripting with ImageJ/Fiji Workshp</td>
