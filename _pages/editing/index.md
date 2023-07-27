@@ -28,6 +28,7 @@ If you are looking to edit an existing page, skip to
 1.  Navigate to an appropriate sub-directory of the
     [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages)
     of the repository. For example, if you are creating a page about a plugin, you would go to [_pages/plugins/](https://github.com/imagej/imagej.github.io/tree/main/_pages).
+    **Note:** if you need to create a new sub-directory, it can be specified in the file name below.
 
 2.  Click {% include button label="Add file" %} then
     {% include button label="Create new file" %} from the drop-down:
@@ -39,6 +40,7 @@ If you are looking to edit an existing page, skip to
     be:
     * all lower case
     * use the file extension `.md`
+    * optionally prefixed with new sub-directory name(s), separated with `/`
     * avoid symbols and spaces, and separate words using dashes (`-`):
 
     {% include img align="center" src="editing/name-your-file" style="border: 1px solid #aaa" %}
