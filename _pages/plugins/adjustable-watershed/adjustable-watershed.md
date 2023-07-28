@@ -3,6 +3,7 @@ project: /software/imagej
 title: Adjustable Watershed
 categories: [Segmentation]
 dev-status: "stable"
+icon: /media/icons/plugin_icon_ImageJColor.png
 ---
 
 
@@ -32,9 +33,9 @@ This value determines the difference of radius between the smaller of the larges
 
 ## Installation
 - Copy the raw `Adjustable_Watershed.java` file into the ImageJ plugins folder or a subfolder thereof. Make sure that you name the downloaded file ”Adjustable_Watershed.java”; uppercase/lowercase matters.
-- Compile with “Compile and Run” and press “OK” (May not work on Fiji?)
+- Compile with “Compile and Run” and press “OK”. Note that "Compile and Run" is currently broken on Fiji; as a workaround use File>New>Script, open the `Adjustable_Watershed.java` file and press “Run“.
 - Alternatively, directly save the .class file Adjustable_Watershed.class into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly, uppercase/lowercase matters.
-- Use Help>Update Menus or restart ImageJ to make it appear in the Plugins menu.
+- Use Help>Update Menus or restart ImageJ to make it appear in the Plugins menu (not necessary if you have used the Fiji Script Editor).
 
 ## Versions
 2022-12-15, by Michael Schmid: Uses nonblocking dialog
