@@ -27,7 +27,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 -   **Half Brightness for Horizontal** - when selected, a gamma correction is applied to the output, such that a horizontal plane will appear with half brightness (pixel value = 128), irrespective of the elevation of the sun. When not selected, the pixel value of a horizontal plane will be roughly 256\*sin(Sun\_Elevation). In that case, a horizontal plane gets half brightness only at sun elevation of 30°, the output gets brighter if the sun elevation is higher, and darker if it is lower.
 
 ## Tips
-{% include img src="/media/plugins/hillshade/hillshade-overlay-example" width="280" align="right" caption="Topographic map created by superposition" %}
+{% include img src="/media/plugins/hillshade/hillshade-overlay-example.jpg" width="280" align="right" caption="Topographic map created by superposition" %}
 
 -   If the slopes are very gentle, you can try setting smaller values of the pixel size to enhance the contrast.
 -   To create an output like a topographic map, display the input (elevation data) with a suitable lookup table and superimpose the hill shade output:
@@ -36,7 +36,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
     -   Convert the input image to RGB.
     -   Use {% include bc path="Process|Image Calculator" %} with 'Operation=Average' to combine the input image and the shaded image.
     -   Typically, you will then want to enhance the colors a bit, using {% include bc path="Image|Adjust|Color Balance" %}.
-    -   The image at the right (full size {% include github org='imagej' repo='imagej.github.io' branch='main'  path='media/plugins/hillshade/hillshade-overlay-example' %}) shows an example, based on Space Shuttle Radar Topography Mission data of the area around Austria's highest mountain, the Großglockner.
+    -   The image at the right (full size {% include github org='imagej' repo='imagej.github.io' branch='main'  path='media/plugins/hillshade/hillshade-overlay-example.jpg' %}) shows an example, based on Space Shuttle Radar Topography Mission data of the area around Austria's highest mountain, the Großglockner.
 -   Such a superimposed map can be also loaded as 'Texture' when using the [Interactive 3D surface plot](https://imagej.net/ij/plugins/surface-plot-3d.html) plugin.
 
 ## Download
@@ -55,5 +55,5 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 ## Related Links
 
--   Get elevation maps in tiff format for a given place at this website: https://srtm.csi.cgiar.org/srtmdata/
+-   Get elevation maps in tiff format for a given place at this website: [https://srtm.csi.cgiar.org/srtmdata/](https://srtm.csi.cgiar.org/srtmdata/)
 
