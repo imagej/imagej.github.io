@@ -8,7 +8,7 @@ forum-tag: snt
 ---
 
 {% capture version%}
-**This manual was last revised for version 4.2. Some newer features may not be documented.**<br>
+**This manual was last revised for version 4.3.0. Some newer features may not be documented.**<br>
 Please help us to keep this manual up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice icon="info" content=version %}
@@ -296,12 +296,10 @@ Any combination of these options may be toggled simultaneously. Note that these 
 ### Default Path Colors
 
 <img align="right" src="/media/plugins/snt/cmyk-color-model.png" title="CMYK color selection UI" width="300" />
-By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget and using the {% include wikipedia title="CMYK color model" %}. For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#ui-interaction) widget.
-
+By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget . For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#ui-interaction) widget.
 
 **Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons.
 Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [sciview](/plugins/sciview).
-
 
 {% capture tip %}
 The [Path Manager](#path-manager) offers several ways to colorize Paths:
@@ -410,7 +408,9 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 
 Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. The list includes:
 
-**Select Nearest Path** {% include key key='G' %} or {% include key keys='Shift|G' %} Will select the path closest to the mouse cursor.
+**Select Nearest Path** {% include key key='G' %} Will select the path closest to the mouse cursor. Pressing {% include key keys='Shift|G' %} will keep adding the closest path to the existing path selection
+
+**Select Paths by 2D ROI** A convenience utility to select path(s) quickly (but coarsely). One the command is run, it is possible to "draw" an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
 
 **Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
 
@@ -426,24 +426,22 @@ Right-clicking on any of the tracing views will bring up a menu with various edi
 ### Editing Paths
 
 <img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v3.0)" width="300" />
-Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allowing use of the menu options under the *Edit Path* option. When *Edit Mode* is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*. The list of editing commands includes:
-
-- **Reset Active Node** Clears the active node under the cursor.
-
-- **Delete Active Node** {% include key key='D' %} Permanently removes the active node from the path.
-
-- **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
-
-- **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor position.
+Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlocking the menu options under *Edit Path*. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
 
 - **Bring Active Node to Current Z-plane** {% include key key='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
-
-- **Connect To (Start Join)** Allows two existing paths to be [merged or joined](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
+- **Delete Active Node** {% include key key='D' %} or {% include key key='Backspace' %} Permanently removes the active node from the path.
+- **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
+- **Lock Active Node**  {% include key key='L' %} Ensures the active node won't change on cursor movement. Useful for e.g., ensuring that a merge operation is not affected by accidental cursor movement.
+- **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor location.
+- **Connect To (...)** {% include key key='C' %} Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
+- **Split Tree at Active Node** {% include key key='X' %} Splits the current tree into two subtrees by disconnecting the active node from its parent structure
+- **Reset Active Node** Clears the active node
+- **Set Active Node as Tree Root** Reorganizes the existing tree so that the active node becomes its root
 
 
 # Path Manager
 
-<img align="right" src="/media/plugins/snt/snt-path-manager.png" title="Path Manager (v3.0)" />
+<img align="right" width="300" src="/media/plugins/snt/snt-path-manager.png" title="Path Manager (v4.3)" />
 ![Path Manager](/media/plugins/snt/) The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" or "root" (path 0) and all other paths (paths 1...N) are children of the primary path. This pattern repeats for each cell being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
 {% include notice icon="info" content="Path Manager commands are applied to all paths if no paths are selected." %}
@@ -452,9 +450,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allo
 ## Menu Commands
 
 ### Edit
-
-<img align="right" src="/media/plugins/snt/snt-path-manager-edit.png" title="Path Manager Edit menu (v3.0)" width="250" />
-
+- 
 - **{% include bc path='Delete...' %}** Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
 
 - **{% include bc path='Duplicate...' %}** Duplicates the selected path. Only one Path my be duplicated at a time
@@ -479,8 +475,6 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, allo
 
 
 ### Tag
-
-<img align="right" src="/media/plugins/snt/snt-path-manager-tag.png" title="Path Manager Tag menu (v3.0)" width="250" />
 Assigns tags to Paths. Tags allow for paths to be searched, selected, and bookmarked. Tags are organized in the following categories:
 
 - {% include bc path='Type| ' %} Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options..' %} dialog  
@@ -503,12 +497,11 @@ Fitted radii are only exported to [SWC files](/plugins/snt/faq#in-which-format-s
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
-<img align="right" src="/media/plugins/snt/fit-manager.png" title="Path Manager Refine/Fit menu (v3.0)" width="250" />
 SNT can use the fluorescent signal around traced Paths to optimize curvatures and estimate the thickness of traced structures to sub-voxel accuracy. The optimization algorithm uses pixel intensities to fit circular cross-sections around each node. Once computed, fitted cross-sections can be used to: 1) Infer the radius of nodes, and/or 2) refine node positioning, by snapping their coordinates to the cross-section centroid. The {% include bc path='Refine/Fit|' %} menu contains three entries:
+<img align="right" src="/media/plugins/snt/explore-fit-preview.png" title="Slice in &quot;Explore/Preview Fit&quot; image stack" width="250" alt="Slice in &quot;Explore/Preview Fit&quot; image stack" />
 
 - {% include bc path='Fit Path(s).../Un-fit Path(s)/Apply Existing Fit' %} This option will change depending on which Path(s) are currently selected. You can use it to 1) Fit selected Path(s), 2) un-fit Path(s) that have already been fitted, or 3) apply a generated preview of the fit or an existing fit.
 
-<img align="right" src="/media/plugins/snt/explore-fit-preview.png" title="Slice in &quot;Explore/Preview Fit&quot; image stack" width="250" alt="Slice in &quot;Explore/Preview Fit&quot; image stack" />
 - {% include bc path='Explore/Preview Fit' %} Carves out a region of the image along and around each Path node, generating an animated cross-view "fly-through" with the result of the fitting operation. The generated image is annotated with details of the fit: i) Fitted radius; ii) normalized score quantifying the "circularity" of a node's cross-section, and iii) the angle between node and parent tangent vectors.
 - {% include bc path='Discard Fit(s)...' %} Deletes the existing fit(s) for the selected Path(s), or all fits if no Paths are selected.
 
@@ -529,14 +522,11 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 
 ### Fill
 
-<img align="right" src="/media/plugins/snt/snt-path-manager-fill.png" title="Path Manager Fill Menu (v3.0)" />
 - {% include bc path='Fill Out...' %} Begins the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
 
 ### Analyze
 
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths and associated branches. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first.
-
-<img align="right" src="/media/plugins/snt/snt-path-manager-analyze-menu.png" title="Path Manager Analyze Menu (v3.0)" />
 
 - **{% include bc path='Color Coding...' %}** Assigns color codes to paths or cells based on the chosen metric.
  
@@ -586,22 +576,21 @@ This menu contains several options which provide quick ways to analyze and visua
     <img src="/media/plugins/snt/snt-path-profile.png" width="500" title="Path profile (v4.1)" />
 </div>
 
-- **{% include bc path='Skeletonize...' %}** Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity.
-<img align="right" width="300" src="/media/plugins/snt/snt-path-manager-skeletonize.png" title="Converting paths to a topographic skeleton with default parameters (v3.0)" />
+- **{% include bc path='Skeletonize...' %}** Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity. This command has a couple of configurable settings:
 
-  - *Roi filtering*: If an area ROI exists over the image (you may need to pause SNT to create such an ROI), then only paths inside it will be converted.
+  - *Roi filtering*: If an area ROI exists over the image (you may need to pause SNT to create such an ROI), then only paths inside it will be converted
+  - *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin on the skeletonized output image
 
-  - *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin on the skeletonized output image.
+<img align="right" width="400" src="/media/plugins/snt/snt-straightened-path.png" title="Highlighted path in cyan 'straightened' using Path Manager Analyze>Straighten... command" />
+- **{% include bc path='Straighten' %}** Creates a 'linear image' from the pixels associated with a single paths, similarly to [ImageJ's Straighten](/plugins/straighten) command. Useful to e.g., display intensity gradients or featured landmarks along a neurite.
 
-- **{% include bc path='Straighten' %}** Creates a 'linear image' from the pixels associated with a single paths, similarly to [/plugins/straighten](ImageJ's Straighten) command
-
-- **{% include bc path='Train Weka Classifier' %}** Uses selected Path(s) to train a random forest classifier (a machine learning algorithm for semantic segmentation) aimed at classifying neurite-associated pixels. Classification is performed by [/plugins//tws](Trainable Weka Segmentation). The resulting classification can be exported into other software, or loaded as secondary tracing layer. Refer to the prompt's built-in documentation for more details.
+- **{% include bc path='Train Weka Classifier' %}** Uses selected Path(s) to train a random forest classifier (a machine learning algorithm for semantic segmentation) aimed at classifying neurite-associated pixels. Classification is performed by [Trainable Weka Segmentation](/plugins/tws). The resulting classification can be exported into other software, or loaded as secondary tracing layer. Refer to the prompt's built-in documentation for more details.
 
 - **{% include bc path='Spine/Varicosity Utilities| ' %}** This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Step-by-step instructions](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis).
 
 - **{% include bc path='Time-lapse Utilities| ' %}** This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/step-by-step-instructions#time-lapse-analysis) for more details.
 
-- **{% include bc path='Save Subset as SWC...' %}** Exports the selected subset of Path(s) as an [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
+- **{% include bc path='Save Subset as SWC...' %}** Exports the selected subset of Path(s) as an [SWC](/plugins/snt/faq#what-is-a-swc-file) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
 
 
 ## Filter Toolbar
