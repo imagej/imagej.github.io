@@ -48,7 +48,7 @@ This is an experimental install procedure which is performing all the steps deta
 Enable the [PTBIOP](https://imagej.github.io/update-sites/following) update site, then restart Fiji.
 
 #### Elastix  - To enable automated registrations capabilities
-- Download the [latest release of elastix for your OS](https://github.com/SuperElastix/elastix/releases/tag/5.0.1). This documentation has been tested for elastix 5.0.1.
+- Download the [release 5.0.1 of elastix for your OS](https://github.com/SuperElastix/elastix/releases/tag/5.0.1). This documentation has been tested for elastix 5.0.1.
 - Unzip it somewhere convenient ( `C` drive on windows, in `Applications` for Mac )
 
 ##### Windows
