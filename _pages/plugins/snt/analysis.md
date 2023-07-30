@@ -6,6 +6,7 @@ artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
+tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 
 # Brain Area Analysis
@@ -20,12 +21,12 @@ SNT provides a couple ways to measure reconstructions. To measure complete cells
 
 {% include img align="center" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features an offline guide accessible through the <i>Gear</i> menu." %}
 
-The reason for distinguish between branch-based (ie., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
+The reason for distinguish between branch-based (i.e., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
 Batch measurements of reconstructions can be accomplished via scripting. See, e.g., the [bundled template script](/plugins/snt/scripting#bundled-templates) *Measure\_Multiple\_Files.py*, and related batch scripts for examples.
 
 **Note on Fitted Paths:**<br>
-Some branch-based metrics may not be available when mixing fitted and un-fitted paths because paths are fitted independently from one another and may not be aware of the original connectivity. When this happens, metrics may be reported as NaN and related errors reported to the Console (when running in Debug mode).
+Some branch-based metrics may not be available when mixing fitted and un-fitted paths because paths are fitted independently of one another and may not be aware of the original connectivity. When this happens, metrics may be reported as NaN and related errors reported to the Console (when running in Debug mode).
 If this becomes an issue, consider fitting paths in situ using the Replace existing nodes option instead. Also, remember that you can also use the Path Manager's Edit>Rebuild... command to re-compute relationships between paths
 
 # Statistics
@@ -57,17 +58,17 @@ Two other type of _Brain Area Analysis_ visualizations relying on graph-based an
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/sankey-flow-plot-with-tooltip.png | Flow-plot (Sankey diagram) for two groups of MouseLight PT-neurons: Medulla-projecting (MY Proj.) and Thalamus-projecting (TH Proj.) _Flows_ depict axonal cable length (µm) at target areas () colored using the default ontology color-scheme adopted by the Allen Mouse Brain Common Coordinate Framework, CCFv3).
+/media/plugins/snt/sankey-flow-plot-with-tooltip.png | Flow-plot (Sankey diagram) for two groups of MouseLight PT-neurons: Medulla-projecting (MY Proj.) and Thalamus-projecting (TH Proj.) _Flows_ depict axonal cable length (µm) at target areas (colored using the default ontology color-scheme adopted by the Allen Mouse Brain Common Coordinate Framework, CCFv3).
 /media/plugins/snt/brain-analysis-group-boxplot.png | The same flow-plot data in boxplot format (see *Flow and Ferris-Wheel Diagrams Demo* script)
 /media/plugins/snt/brain-analysis-combined-boxplot.png | *Analysis › Brain Area Analysis...* histogram in which frequencies of a particular morphometric trait are retrieved across brain areas (neuropil labels). In this example, *No. of tips* was retrieved for the four cells in the *MouseLight dendrites* demo dataset (*File › Load Demo Dataset...*)
 "
 %}
 
 Ultimately, fine-grained programmatic control over SNT's Graph objects is achieved via scripting. Relevant resources:
-- [JGraphT](https://jgrapht.org/): The underlying library handling graph theory data structures and algorithms ([JAVA API](https://jgrapht.org/javadoc/) and [Python API](https://pypi.org/project/jgrapht/).
+- [JGraphT](https://jgrapht.org/): The underlying library handling graph theory data structures and algorithms with [JAVA](https://jgrapht.org/javadoc/) and [Python](https://pypi.org/project/jgrapht/) APIs
 - [SNT graph package](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/analysis/graph/package-summary.html): High-level tools for graph creation within SNT
-- *SNT Demo Scripts*: See e.g., *Graph\_Analysis.py* and *Flow\_and\_Ferris\-Wheel\_Diagrams\_Demo.groovy*, two [SNT demo scripts](/plugins/snt/scripting#snt-scripts).. 
-- *Python notebooks*: For [pyimagej](/scripting/pyimagej) examples, have a look at the *Hemisphere Analysis* [notebook](/plugins/snt/scripting#python-notebooks).
+- *SNT Demo Scripts*: See e.g., *Graph\_Analysis.py* and *Flow\_and\_Ferris\-Wheel\_Diagrams\_Demo.groovy*, two [SNT demo scripts](/plugins/snt/scripting#snt-scripts)
+- *Python notebooks*: For [pyimagej](/scripting/pyimagej) examples, have a look at the *Hemisphere Analysis* [notebook](/plugins/snt/scripting#python-notebooks)
 
 # Sholl Analysis
 

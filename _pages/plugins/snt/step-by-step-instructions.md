@@ -7,6 +7,7 @@ icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
 extensions: ["mathjax"]
+tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 
 {% capture version%}
@@ -17,7 +18,7 @@ Please help us to keep these walk-throughs up-to-date by [editing](https://githu
 
 # Semi-automated Tracing
 {% capture op1-demo-incomplete%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset. All of the neuronal processes are traced in this dataset, so you may want to delete some of the existing paths beforehand.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset. All the neuronal processes are traced in this dataset, so you may want to delete some of the existing paths beforehand.
 {% endcapture %}
 
 {% include notice icon="info" content=op1-demo-incomplete %}
@@ -229,7 +230,7 @@ Information on other options in the prompt can be accessed through the tooltip t
 
 # Spine/Varicosity Analysis
 {% capture spines-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset, as it contains pre-placed multi-point ROIs emulating markers for dendritic spines.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset, as it contains pre-placed multipoint ROIs emulating markers for dendritic spines.
 {% endcapture %}
 {% include notice icon="info" content=spines-demo %}
 
@@ -270,7 +271,7 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget.
 2. Trace the path of interest
 3. Repeat 1. and 2. for all the frames to be traced
-4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you match paths in the same time-series, by specifying several criteria:
+4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series, by specifying several criteria:
 
     - **Time points** Only paths associated with these time-points (frames) will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
 
@@ -345,13 +346,13 @@ We will assume that you want to use the first of these approaches:
 
 Fill distances must be interpreted as  ‘likelihood distances’.
 
-> Pixels associated with *low distances* are likely associated with the filled path. Pixels associated with *high distances* are unlikely to be associated with the path
+> Pixels associated with *low distances* are likely associated with the traced path. Pixels associated with *high distances* are unlikely to be associated with the path.
 
 The smallest distance  corresponds to a perfect match to whatever information the filler has on the center-line of the traced path, and the highest distance correspond to the _worst_ match. When a threshold is set, pixels are clustered into two groups: those that ‘fill’ the path and those above threshold that don't.
 
 Note that *likelihood distances* are under an arbitrary range. Consider a scale ranging from ]0 to 1]: If the threshold distance is set at 0.2, paths are only ‘filled’ with voxels that share at least 80% *likelihood* with the traced center-lines. In practice, the upper limit of this distance depends on much of the image has been explored by the algorithm. Thus, it is not trivial to define _a priori_ a sensible threshold. It should be  assumed that the range of possible distances falls between 0 (perfect likelihood, i.e., center-line voxels themselves) and a _maximum_ corresponding to the most distinct voxel to the path center-line. Such voxel of "maximum difference" is expected to belong to the image background (unlabeled neurite). Distances can be studied by exporting fills as [Distance maps](#v-exporting).
 
-While adjusting the _distance threshold_ is the single most effective way to improve 'fills', other approaches can also be improve the result:
+While adjusting the _distance threshold_ is the single most effective way to improve 'fills', other approaches can also improve the result:
 
 - **Adopt secondary layers**: Currently, the filler only looks at pixel intensities, and thus likelihood is a simple comparison of gray value intensities, but note that other _features_ can be used by the algorithm, when a [secondary tracing layer](/plugins/snt/manual#tracing-on-secondary-image-layer) is used. E.g., If the filling occurs in a [Tubeness](/plugins/tubeness) flavor of the image, then distances reflect likelihoods of association with tube-like structures.
 

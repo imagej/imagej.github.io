@@ -7,6 +7,13 @@ icon: /media/icons/snt.png
 forum-tag: snt
 ---
 
+
+{% capture version%}
+**These instructions were last revised for version 3.0**.<br>
+Please help us to keep this page up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
+{% endcapture %}
+{% include notice content=version %}
+
 <img align="right" src="/media/plugins/snt/reconstruction-viewer-animated-gif.gif" title="SNT-ScriptInterpreter.png" />
 SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both surface meshes and reconstructions. It can be used as a standalone program or from withing SNT. Some of its features include:
 
@@ -68,7 +75,7 @@ This menu relates to the import, customization and management of rendered recons
 ### Add
 
 - {% include bc path='Import File...'%} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
-- {% include bc path='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
+- {% include bc path='Import Directory...'%} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions, or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
 - {% include bc path='Import & Compare Groups...'%} Calls the {% include bc path='Utilities|Compare Reconstructions...'%} command found in the main SNT dialog, allowing import, rendering and comparison of multiple groups of reconstructions.
 - {% include bc path='Load from Database| '%} Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
 
@@ -200,7 +207,7 @@ This menu houses several functions to measure and analyze loaded reconstructions
 
 -   {% include bc path='Brain Area Analysis...'%} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
 -   {% include bc path='Create Dendrogram...'%} Runs the {% include bc path='Utilities|Create Dendrogram...'%} command found in the main SNT dialog. See [Dendrogram Viewer](/plugins/snt/analysis#dendrogram-viewer). Note only one reconstruction may be selected at a time with this option.
--   {% include bc path='Sholl Analysis...'%} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analysed at a time.
+-   {% include bc path='Sholl Analysis...'%} Runs the [Sholl Analysis](/plugins/sholl-analysis) plugin found in {% include bc path='Analyze|Sholl|Sholl Analysis (From Tracings)'%}. Note only one reconstruction may be analyzed at a time.
 
 <div align="left">
     <img src="/media/plugins/snt/reconstruction-viewer-aa0100-sholl-table.png" title="AA0100 Sholl Table" width="200" alt="AA0100 Sholl Table" />

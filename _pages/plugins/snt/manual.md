@@ -5,13 +5,14 @@ nav-title: Manual
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
+tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 
 {% capture version%}
-**This manual was last revised for version 4.3.0. Some newer features may not be documented.**<br>
+**These instructions were last revised for version 4.3.0**.<br>
 Please help us to keep this manual up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
-{% include notice icon="info" content=version %}
+{% include notice content=version %}
 
 # SNT Commands
 
@@ -36,7 +37,7 @@ SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %
 
 - **Image**/**Image file** The image to be traced/analyzed. The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking *Browse* and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
 
-- **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try fill this field by looking at all the reconstruction files (.traces, .(e)swc, .ndf, or .json) in the image directory and retrieving the filename closer to _Image file_.
+- **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try to fill this field by looking at all the reconstruction files (.traces, .(e)swc, .ndf, or .json) in the image directory and retrieving the filename closer to _Image file_.
 
 - **User interface** Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [accurate node placement](/plugins/snt/step-by-step-instructions#accurate-point-placement) but requires more RAM.
 
@@ -168,7 +169,7 @@ This *home* tab aggregated widgets for tracing and frequent operations.
 
 ### Data Source
 <img align="right" src="/media/plugins/snt/snt-data-source-widget.png" width="300" />
-If tracing on a multi-dimensional image (i.e., one with multiple data channels and/or a time axis), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button.
+If tracing on a multidimensional image (i.e., one with multiple data channels and/or a time axis), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button.
 
 ### Cursor Auto-snapping
 
@@ -221,7 +222,7 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 
           - **Specify Manually** Advanced option for users with if a quantitative understanding of the image. Searches may consider pixels outside neurites when maximum in over-estimated, and may take significantly longer when it is under-estimated, since each pixel will carry a greater-than-reasonable cost
 
-          - **Compute Once** Statistics are computed once for the whole image (may take a while for large images) and stored in memory. If enough RAM is available this _may_ speed-up searches. Although in real-word usage any speed-gains relatively to _Compute Real-Time_ seem negligible on modern hardware
+          - **Compute Once** Statistics are computed once for the whole image (may take a while for large images) and stored in memory. If enough RAM is available this _may_ speed up searches. Although in real-word usage any speed-gains relatively to _Compute Real-Time_ seem negligible on modern hardware
 
 ### Tracing on Secondary Image (Layer)
 <span id="tracing-on-secondary-image"></span>
@@ -259,11 +260,11 @@ The wizard needs two types of information from the user: The type of filtering o
 
     - **Select visually...**: The wizard will prompt you to click on a representative region of the image which has a meaningful structure. Once you click there, a preview palette is generated showing increasing values of σ (from top-left to bottom-right) applied to that region of the image. Select the suitable scales
 
-    - **Estimate programmatically...**: This allows automated estimation of radii across the image, which can inform the choice of scale(s). The only parameter required is _Dimmest intensity (approx.)_: Pixel values below this value are treated as background when computing thicknesses. Use -1 to adopt the default cutoff value (half of the image max). After pressing *OK*, a color-mapped image (based off local radius) and a histogram showing the distribution of radii across the image are shown. The histogram can be used to validate values chosen _visually_ in the preview palette.
+    - **Estimate programmatically...**: This allows automated estimation of radii across the image, which can inform the choice of scale(s). The only parameter required is *Dimmest intensity (approx.)*: Pixel values below this value are treated as background when computing thicknesses. Use -1 to adopt the default cutoff value (half of the image max). After pressing *OK*, a color-mapped image (based off local radius) and a histogram showing the distribution of radii across the image are shown. The histogram can be used to validate values chosen _visually_ in the preview palette.
 
       NB: Analysis is performed via the *Local Thickness (complete process)* plugin ({% include bc path='Analyze|Local Thickness|Local Thickness (complete process)' %} in Fiji's menu bar). 
 
-NB: The wizard also allows you use a backup copy of the image being traced as secondary layer. This is only useful if you intend to modify the original image during a tracing session, but want to have convenient access to the initial image at a later time.
+NB: The wizard also allows you to use a backup copy of the image being traced as secondary layer. This is only useful if you intend to modify the original image during a tracing session, but want to have convenient access to the initial image at a later time.
 
 
 <div align="center">
@@ -338,14 +339,14 @@ This tab aggregated widgets for advanced settings.
 
 - **Apply zoom changes to all views** If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views if they are open. Since in ImageJ zooming may resize the image window, you can use {% include bc path='Views|Arrange Views' %} to reset their positions
 
-- **Resize Canvas** If using a display canvas to view reconstructions, reset its dimensions to the default. (Currently, this command is only available for display canvases, to resize an image go to IJ's command {% include bc path='Image | Adjust | Canvas Size...' %}
+- **Resize Canvas** If using a display canvas to view reconstructions, reset its dimensions to the default. Currently, this command is only available for display canvases, to resize an image go to IJ's command {% include bc path='Image | Adjust | Canvas Size...' %}
 
 - **Display ZY/XZ views** If currently using the XY only view, display the ZY and XZ views as well.
 
 
 ### Temporary Paths
 
-- **Confirm temporary segments** If active, prompts for either confirmation or denial of whether or not to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
+- **Confirm temporary segments** If active, prompts for either confirmation or denial of whether to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
 
   - **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
 
@@ -364,7 +365,7 @@ This tab aggregated widgets for advanced settings.
 
 - **Path nodes rendering scale** Adjusts the radius of the drawn circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation. The default scale is inferred from the current zoom level.
 
-- **Activate canvas on mouse hovering** If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
+- **Activate canvas on mouse hovering** If active, moving the mouse cursor over any of the views automatically brings the view window into focus, allowing it to receive input.
 
 
 ### Misc
@@ -399,7 +400,7 @@ This option assumes you have [sciview](/plugins/sciview) properly installed. sci
 
 ### Legacy 3D Viewer
 
-The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step_instructions#tracing-in-the-legacy-3d-viewer).
+The Legacy 3D Viewer is a functional tracing canvas, but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step_instructions#tracing-in-the-legacy-3d-viewer).
 
 
 # Contextual Menu
@@ -453,7 +454,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 - 
 - **{% include bc path='Delete...' %}** Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
 
-- **{% include bc path='Duplicate...' %}** Duplicates the selected path. Only one Path my be duplicated at a time
+- **{% include bc path='Duplicate...' %}** Duplicates the selected path. Only one Path may be duplicated at a time
 
 - **{% include bc path='Rename...' %}** Renames the selected Path. Only one Path may be renamed at a time. Path names are expected to be unique.
 
@@ -477,7 +478,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 ### Tag
 Assigns tags to Paths. Tags allow for paths to be searched, selected, and bookmarked. Tags are organized in the following categories:
 
-- {% include bc path='Type| ' %} Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options..' %} dialog  
+- {% include bc path='Type| ' %} Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options...' %} dialog  
   These tags are considered to be essential annotations and all paths are assigned the *Undefined*-type tag when created. For this reason they are not eliminated by the *Remove All Tags* command.
 
 - {% include bc path='Color| ' %} A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign a metric-based color mapping using the {% include bc path='Analyze|Color Coding...' %} command.
@@ -596,7 +597,7 @@ This menu contains several options which provide quick ways to analyze and visua
 ## Filter Toolbar
 
 <img align="right" src="/media/plugins/snt/snt-path-manager-text-filter.png" title="Filtering toolbar (v3.0)" />
-The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/plugins/snt/snt-text-filter-balloon-button.png) button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/plugins/snt/snt-text-filter-menu-button.png) button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ![](/media/plugins/snt/snt-text-filter-advanced-button.png) button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include:
+The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {% include key key='down' %} and {% include key key='up' %} arrow keys find the next/previous occurrence of the entered phrase, while the ![](/media/plugins/snt/snt-text-filter-balloon-button.png) button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the ![](/media/plugins/snt/snt-text-filter-menu-button.png) button, including wildcard support, case-sensitive matching, and replace-by-pattern. In addition, the ![](/media/plugins/snt/snt-text-filter-advanced-button.png) button restricts filtering to the selected subset of Path(s). Other means of filtering Paths include:
 <img align="right" src="/media/plugins/snt/snt-path-manager-text-filter-color-filters.png" title="Filtering by color tags (v3.0)" />
 
 - **Color Filters** ![](/media/plugins/snt/snt-text-filter-color-button.png) Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.

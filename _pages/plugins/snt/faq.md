@@ -25,13 +25,13 @@ To reference specific modules/plugins that enhance SNT:
 - **[Cx3D](/plugins/snt/modeling)**
   {% include citation id="plugins/snt/modeling" %}
 
-The original [Simple Neurite Tracer](#snt) publication is:
+The original [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication is:
 
 - {% include citation doi='10.1093/bioinformatics/btr390' %}
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
-Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](#citing), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji ' repo='Simple_Neurite_Tracer' label='historic ' %} and SNT's {% include github org='morphonets ' repo='SNT ' label='current ' %} repositories.
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](#how-do-i-cite-snt), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji ' repo='Simple_Neurite_Tracer' label='historic ' %} and SNT's {% include github org='morphonets ' repo='SNT ' label='current ' %} repositories.
 
 ### How accurate is SNT?
 
@@ -45,21 +45,21 @@ It is the most widely adopted format for encoding neuronal reconstructions, in w
 <span id="file-format"></span>
 When tracing 4D or 5D images, TRACES is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images TRACES is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for TRACES → SWC conversion. The following table summarizes the differences between the two formats:
 
-|                                              | SWC                                                                                                                                  | TRACES                                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| No. reconstructions per file                 | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                                  |
-| Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                                 |
-| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                                     |
-| [Fits](/plugins/snt/manual#refinefit)        | Not stored, unless fitting replaces existing nodes                                                                                   | Stored                                                                                     |
-| [Fills](/plugins/snt/manual#fill)            | Not stored                                                                                                                           | Filling parameters stored                                                                  |
-| Format                                       | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))                     |
+|                                              | SWC                                                                                                                                  | TRACES                                                                                      |
+|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| No. reconstructions per file                 | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                                   |
+| Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                                  |
+| [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                                      |
+| [Fits](/plugins/snt/manual#refinefit)        | Not stored, unless fitting replaces existing nodes                                                                                   | Stored                                                                                      |
+| [Fills](/plugins/snt/manual#fill)            | Not stored                                                                                                                           | Filling parameters stored                                                                   |
+| Format                                       | Plain text                                                                                                                           | XML or compressed XML (as per [preferences](/plugins/snt/manual#misc))                      |
 | Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exclusive to SNT. But [open and easily parsable](/plugins/snt/extending#traces-file-format) |
 
 ### Which file formats for neuronal reconstruction are supported by SNT?
 SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the MouseLight project).
 
 ### Which image file formats are supported by SNT?
-Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multi-channel before loading.
+Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
 
 ### How do I (batch) convert TRACES to SWC?
 Use the {% include bc path='Batch|Convert Traces to SWC'%} template script.
@@ -74,7 +74,7 @@ Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary P
 
 ### How can I browse voxel intensities around processes?
 Right-click on the image canvas and select *Pause SNT* from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
-Alternative, you can can also obtain Path profiles, in which voxel intensities are plotted along selected path(s).
+Alternative, you can also obtain Path profiles, in which voxel intensities are plotted along selected path(s).
 
 ### Is there a way to process one image after another in a fast way?
 Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
