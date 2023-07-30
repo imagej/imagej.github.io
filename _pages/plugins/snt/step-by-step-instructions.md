@@ -7,11 +7,18 @@ icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
 extensions: ["mathjax"]
+tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
+
+{% capture version%}
+**These instructions were last revised for version 4.3.0**.<br>
+Please help us to keep these walk-throughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
+{% endcapture %}
+{% include notice content=version %}
 
 # Semi-automated Tracing
 {% capture op1-demo-incomplete%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset. All of the neuronal processes are traced in this dataset, so you may want to delete some of the existing paths beforehand.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset. All the neuronal processes are traced in this dataset, so you may want to delete some of the existing paths beforehand.
 {% endcapture %}
 
 {% include notice icon="info" content=op1-demo-incomplete %}
@@ -74,120 +81,6 @@ From this point on, you can carry on adding nodes to the branched path as [above
   <img src="/media/plugins/snt/snt-sb-temporary-path-2.png" title="1) Temporary path branching-off" width="33%" alt="1) Temporary path branching-off" />
   <img src="/media/plugins/snt/snt-sb-confirmed-path-2.png" title="2) Temporary path confirmed" width="33%" alt="2) Temporary path confirmed" />
   <img src="/media/plugins/snt/snt-sb-completed-branch-2.png" title="3) Branched (child) path completed" width="33%" alt="3) Branched (child) path completed" />
-</div>
-
-## Joining: End A Path On An Existing Path
-
-{::nomarkdown}
-
-<table>
-  <tbody>
-    <tr style="background-color:white">
-      <td>
-        <p>Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like [1]:</p>
-      </td>
-      <td>
-        <figure>
-          <img src="/media/plugins/snt/snt-ej-cropped-half-finished-2.png" title="[1] Unfinished join segment, in red - disconnected" width="350" alt="[1] Unfinished join segment, in red - disconnected">
-          <figcaption aria-hidden="true">
-            <span style="text-align:center;font-size:90%">[1] Unfinished join segment, in red - disconnected</span>
-          </figcaption>
-        </figure>
-      </td>
-    </tr>
-    <tr style="background-color:white">
-      <td>
-        <p>... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {% include key key='G' %} shortcut) as in [2]:</p>
-      </td>
-      <td>
-        <figure>
-          <img src="/media/plugins/snt/snt-ej-cropped-selected-destination-path-2.png" title="[2] Selected path to join to, in green" width="350" alt="[2] Selected path to join to, in green">
-          <figcaption aria-hidden="true">
-            <span style="text-align:center;font-size:90%">[2] Selected path to join to, in green</span>
-          </figcaption>
-        </figure>
-      </td>
-    </tr>
-    <tr style="background-color:white">
-      <td>
-        <p>Now hold down {% include key keys='Alt|Shift' %} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:</p>
-      </td>
-      <td>
-        <figure>
-          <img src="/media/plugins/snt/snt-ej-cropped-end-join-created-2.png" title="[3] Connected path to join, unconfirmed" width="350" alt="[3] Connected path to join, unconfirmed">
-          <figcaption aria-hidden="true">
-            <span style="text-align:center;font-size:90%">[3] Connected path to join, unconfirmed</span>
-          </figcaption>
-        </figure>
-      </td>
-    </tr>
-    <tr style="background-color:white">
-      <td>
-        <p>If you're happy with the result, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. Note that the path list indicates that this new <em>Path (1)</em> ends on the existing <em>Path (0)</em>. The result will look like [4]:</p>
-      </td>
-      <td>
-        <figure>
-          <img src="/media/plugins/snt/snt-ej-cropped-path-completed-2.png" title="[4] Confirmed join" width="350" alt="[4] Confirmed join">
-          <figcaption aria-hidden="true">
-            <span style="text-align:center;font-size:90%">[4] Confirmed join</span>
-          </figcaption>
-        </figure>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
-
-## Merging/Joining Paths
-
-Two paths can be merged or joined in *Edit Mode*. To do so:
-
-1. Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [Contextual menu](/plugins/snt/manual#contextual-menu))
-2. Activate the node to be merged by hovering over it
-3. Select the second path by using the {% include key key='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
-4. Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu.
-
-If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other. Note that one of the nodes must be terminal, to ensure no loops are created.
-
-<div align="center">
-<img src='/media/plugins/snt/snt-edit-path-connect-to-step-1.png' width="20%" title='1) Select parent path and activate first join node'>
-<img src='/media/plugins/snt/snt-edit-path-connect-to-step-2.png' width="20%" title='2) Select child path and activate second join node'>
-<img src='/media/plugins/snt/snt-edit-path-connect-to-step-3.png' width="20%" title='3) Use contextual-menu option to connect child path to parent path'>
-<img src='/media/plugins/snt/snt-edit-path-connect-to-result.png' width="20%" title='4) Joined result'>
-</div>
-
-## Tracing in the Legacy 3D Viewer
-
-### I. Starting the Viewer
-
-<img align="right" src="/media/plugins/snt/snt-3d-dialog.png" title="The legacy 3D Viewer remains a functional canvas" width="300px"/>
-
-It remains possible to trace in the legacy 3D Viewer. To open it, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters:
-
-- Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
-
-- Select the preferred rendering style from the *Mode* drop-down menu.
-
-- Once you *Apply* the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
-  
-  <img align="right" src="/media/plugins/snt/snt-image-resampling-factor.png" title="Legacy 3D Viewer resampling prompt" width="300px"/>
-
-### II. Tracing and Navigation
-
-- **Selecting points for tracing** Select the *Wand tool* ({% include key key='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#Tracing). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier.
-
-<img  align="right" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="300"/>
-
-- **Rotation** Either use the *Hand tool* ({% include key key='H' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel
-
-- **Translation** Hold {% include key key='Shift' %} and the scroll wheel while dragging the mouse.
-
-- **Adjusting zoom depth** Scroll the mouse wheel.
-
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts. 
-
-<div align="center">
-<img align="center" src="/media/plugins/snt/fiji-toolbar-wand-and-hand-2.png" title="Tools used by the Legacy 3D Viewer"/>
 </div>
 
 ## Accurate Point Placement
@@ -257,25 +150,93 @@ Once you have selected each of these tools (Wand and Hand) once, you should be a
   </tbody>
 </table>
 
+## Tracing in the Legacy 3D Viewer
+
+### I. Starting the Viewer
+
+<img align="right" src="/media/plugins/snt/snt-3d-dialog.png" title="The legacy 3D Viewer remains a functional canvas" width="300px"/>
+It remains possible to trace in the legacy 3D Viewer. To open it, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters:
+
+- Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
+
+- Select the preferred rendering style from the *Mode* drop-down menu.
+
+- Once you *Apply* the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
+  <img align="right" src="/media/plugins/snt/snt-image-resampling-factor.png" title="Legacy 3D Viewer resampling prompt" width="300px"/>
+
+### II. Tracing and Navigation
+<img  align="left" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="300"/>
+
+###### Selecting points for tracing
+Select the *Wand tool* ({% include key key='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#iii-confirm-the-temporary-segment). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier.
+
+###### Navigation
+**Rotation** Either use the *Hand tool* ({% include key key='H' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel
+
+**Translation** Hold {% include key key='Shift' %} and the scroll wheel while dragging the mouse.
+
+**Adjusting zoom depth** Scroll using the mouse wheel.
+
+NB: Once you have selected the Wand and Hand tools once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts.
+
+# Merging/Joining Paths
+
+{% include notice icon="info" content=op1-demo-incomplete %}
+Two paths can be merged or joined in *Edit Mode*. To do so:
+
+1. Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [contextual menu](/plugins/snt/manual#contextual-menu)
+2. Activate the node to be merged by hovering over it
+3. Select the second path by using the {% include key key='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
+4. Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu
+
+<div style="text-align: center;">
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-1.png' width="20%" title='1) Select parent path and activate first join node'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-2.png' width="20%" title='2) Select child path and activate second join node'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-3.png' width="24%" title='3) Use the contextual-menu option to connect child path to parent path'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-result.png' width="20%" title='4) Joined result'>
+</div>
+
+
+**Important Notes**:
+- If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other. Note that one of the nodes must be terminal, to ensure no loops are created.
+- The direction of merge matters, and it is assumed to be always from parent to child. If the child path is oriented in the wrong direction (i.e., moving “towards” its parent at the point of merge), it will be re-oriented so that single root connectivity is maintained
+- Loop-forming connections are not allowed
+- The recommended way to concatenate or combine paths is to use the respective commands in Path Manager's [Edit menu](/plugins/snt/manual#edit)
+
 # Full-automated Tracing
 {% capture ddac-demo%}
 You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila ddaC neuron (Autotrace demo)_. It will load a binary (thresholded) image of a Drosophila space-filling neuron (ddaC) displaying autotracing options for automated reconstruction.
 {% endcapture %}
-
 {% include notice icon="info" content=ddac-demo %}
+
+Full automated tracing requires two types of inputs:
+1. **Segmented Image (*Mandatory*)** The pre-processed image from which paths will be extracted. It will be [skeletonized](/plugins/skeletonize3d) by the extraction algorithm. If thresholded (recommended), only highlighted pixels are considered, otherwise all non-zero intensities in the image will be considered for extraction.
+
+2. **Original Image (*Optional*)** The original (un-processed) image used to resolve any possible loops in the segmented image using brightness criteria. If available: loops will be nicked at the dimmest voxel of the dimmest branch in the detected loop. If unavailable: Loops will be nicked at the shortest branch in the loop.
+
+It also requires some parameters to be set in the prompt:
+
+- **Set Root from ROI** This option assumes that an active area ROI marks the root of the structure. If an ROI exists, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. If no ROI exists, an arbitrary root node is used.<br> If a 3D image, toggling the *Restrict to active plane* checkbox clarifies  that the root highlighted by the ROI occurs at the ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
+
+- **Small components settings** These options determine whether the algorithm should ignore segments (connected components that are disconnected from the main structure) that are too small to be of interest. Disconnected segments with a cable length below the specified  *length threshold* will be discarded by the algorithm.<br>Increase this value if too many isolated branches are being created. Decrease it to bias the extraction for larger, contiguous structures.
+
+- **Adjacent components settings** If the segmented image is fragmented into multiple components (e.g., due to 'beaded' staining): Should the algorithm attempt to connect nearby components? If so, what should be the maximum allowable distance between disconnected components to be merged?<br>You should increase *Max. connection distance* if the algorithm produces too many gaps. Decrease it to minimize spurious connections.
+
+Information on other options in the prompt can be accessed through the tooltip text that is displayed when hovering the mouse above them.
+
 <div align="center">
   <img src="/media/plugins/snt/snt-fully-automated-reconstructions.png" title="Fully automated reconstructions (ddaC demo dataset)" width="850" />
 </div>
 
 # Spine/Varicosity Analysis
 {% capture spines-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset, as it contains pre-placed multi-point ROIs emulating markers for dendritic spines.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset, as it contains pre-placed multipoint ROIs emulating markers for dendritic spines.
 {% endcapture %}
 {% include notice icon="info" content=spines-demo %}
 
 This type of analysis uses (manually placed) multi-Point ROIs along paths as markers for neurite features such dendritic spines or axonal varicosities. Currently only counts and densities are supported. A typical workflow would proceed as follows.
 
- 1. Right-click on the image being traced and choose _Pause SNT_ from the contextual menu
+ 1. Right-click on the image being traced and choose _Count Spine/Varicosities_ from the [contextual menu](/plugins/snt/manual#contextual-menu). SNT will pause, the multipoint tool will be selected, and a floating dialog (that can be dismissed at will) displays a summary of these instructions
  2. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) the feature being counted
  3. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosity Utilities|Extract Counts from Multi-point ROIs...' %}. The dialog allows you to specify:
    
@@ -294,13 +255,12 @@ NB:
 - SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROis for future reference
 
 - ImageJ has several ways to expedite handling of multipoint ROIs:
-  - Click on a point and drag to move it
-  - Alt-click on a point to delete it
+  - {% include key key='left click' %} on a point and drag to move it
+  - {% include key key='alt|left click' %} on a point to delete it
   - To delete multiple points, create an area selection while holding down {% include key key='alt' %}
   - Use {% include bc path='Edit|Selection|Select None' %} to delete a multi-point selection
   - Use {% include bc path='Edit|Selection|Restore Selection' %} to restore a deleted multipoint selection
-  - Double-click on the Multi-point tool in the ImageJ toolbar for further options
-
+  - {% include key key='double click' %} on the Multi-point tool in the ImageJ toolbar for further options
 
 # Time-lapse analysis
 {% capture timelapse-demo%}
@@ -308,10 +268,10 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 {% endcapture %}
 {% include notice icon="info" content=timelapse-demo %}
 
-1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#options-tab) widget.
+1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget.
 2. Trace the path of interest
 3. Repeat 1. and 2. for all the frames to be traced
-4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you match paths in the same time-series, by specifying several criteria:
+4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series, by specifying several criteria:
 
     - **Time points** Only paths associated with these time-points (frames) will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
 
@@ -331,14 +291,13 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 
       - **Output** Whether a plot, a table or both should be created
 
-
 # Filling
 {% capture op1-demo-full%}
 You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset.
 {% endcapture %}
 {% include notice icon="info" content=op1-demo-full %}
 <img align="right" src="/media/plugins/snt/fill-manager-v420.png" title="Fill Manager (v4.2.0)." width="275" />
-Paths can be "filled out" to volumes, i.e., converted into 3D images that can be used to improve the visualization of the shape of a neuron beyond what can be seen from traced center-lines, and/or subsequent image processing routines. The filling algorithm uses the center-line path coordinates as seeds in a 'signal search' that expands along neurites to encapsulate the neurite in 3D. The result can be exported as different types of images, including distance maps, binary masks or labeled image.
+Paths can be "filled out" to volumes, i.e., converted into 3D images that can be used to improve the visualization of the shape of a neuron beyond what can be seen from traced center-lines, and/or subsequent image processing routines. The filling algorithm uses the center-line path coordinates as seeds in a '[signal search](#iii-understanding-fill-distances-and-distance-threshold)' that expands along neurites to encapsulate the neurite in 3D. The result can be exported as different types of images, including distance maps, binary masks or labeled image.
 
 Fillings are controlled by the Fill Manager and share many of the same properties of auto-tracing:
 
@@ -353,11 +312,11 @@ Fillings are controlled by the Fill Manager and share many of the same propertie
 
 First, select the one or more paths that you want to fill out from in the Path Manager and select {% include bc path="Fill|Fill Out..." %} in the Path Manager (or select none if you want to fill all the existing paths). Once the filling starts, you should be able to see a thick green surround the path while scrolling through the 3D stack:
 
-The filler continues to explore the image until you click "Pause" or "Stop" in the dialog, or until all the image has been fully explored. However, the fill which is shown only includes those points up to a certain threshold distance from the path. Note that this "distance" doesn't mean a real physical distance, but instead a 'likelihood-distance': a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path. Information about the current threshold and the progress of the search is shown in the dialog. Note that if your image is rather small, the entire image may be fully explored before you have time to interact with prompt.
+The filler continues to explore the image until you click "Pause" or "Stop" in the dialog, or until all the image has been fully explored. However, the fill which is shown only includes those points up to a certain threshold distance from the path. Note that this "distance" doesn't mean a real physical distance, but instead a 'likelihood-distance': a measure which takes into account the intensity values of the pixels which must be [passed through when moving away from the path](#iii-understanding-fill-distances-and-distance-threshold). Information about the current threshold and the progress of the search is shown in the dialog. Note that if your image is rather small, the entire image may be fully explored before you have time to interact with prompt.
 <img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />
 The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". 
 
-The _Search status_ shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and highlighted in green in the image). The "Max. explored distance:" shows the maximum distance from the path that has been completely explored.
+The _Search status_ shows your current [threshold distance](#iii-understanding-fill-distances-and-distance-threshold): so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and highlighted in green in the image). The "Max. explored distance:" shows the maximum distance from the path that has been completely explored.
 
 ### II.Adjusting the Fill Threshold
 
@@ -383,7 +342,23 @@ We will assume that you want to use the first of these approaches:
   <img src="/media/plugins/snt/snt-refined-filling-2.png" title="Fill, refined" width="250" alt="Fill, refined" />
 </div>
 
-### III. Completing the Fill
+### III. Understanding Fill Distances and Distance Threshold
+
+Fill distances must be interpreted as  ‘likelihood distances’.
+
+> Pixels associated with *low distances* are likely associated with the traced path. Pixels associated with *high distances* are unlikely to be associated with the path.
+
+The smallest distance  corresponds to a perfect match to whatever information the filler has on the center-line of the traced path, and the highest distance correspond to the _worst_ match. When a threshold is set, pixels are clustered into two groups: those that ‘fill’ the path and those above threshold that don't.
+
+Note that *likelihood distances* are under an arbitrary range. Consider a scale ranging from ]0 to 1]: If the threshold distance is set at 0.2, paths are only ‘filled’ with voxels that share at least 80% *likelihood* with the traced center-lines. In practice, the upper limit of this distance depends on much of the image has been explored by the algorithm. Thus, it is not trivial to define _a priori_ a sensible threshold. It should be  assumed that the range of possible distances falls between 0 (perfect likelihood, i.e., center-line voxels themselves) and a _maximum_ corresponding to the most distinct voxel to the path center-line. Such voxel of "maximum difference" is expected to belong to the image background (unlabeled neurite). Distances can be studied by exporting fills as [Distance maps](#v-exporting).
+
+While adjusting the _distance threshold_ is the single most effective way to improve 'fills', other approaches can also improve the result:
+
+- **Adopt secondary layers**: Currently, the filler only looks at pixel intensities, and thus likelihood is a simple comparison of gray value intensities, but note that other _features_ can be used by the algorithm, when a [secondary tracing layer](/plugins/snt/manual#tracing-on-secondary-image-layer) is used. E.g., If the filling occurs in a [Tubeness](/plugins/tubeness) flavor of the image, then distances reflect likelihoods of association with tube-like structures.
+
+- **Optimize center-lines**: Since center-line pixes function as seeds, ensuring they follow closely the curvatures of the fluorescence signal using [Path fitting](/plugins/snt/manual#refinefit) may improve the result
+
+### IV. Completing the Fill
 
 If the search is still active, you might as well click "Pause" so halt exploration of the image. Then you can either:
 
@@ -391,11 +366,11 @@ If the search is still active, you might as well click "Pause" so halt explorati
 
 - Discard the fill by either clicking "Cancel/Discard" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete"
 
-### IV. Exporting 
+### V. Exporting 
 
 - The "Export" button provides several export options, including:
 
-  - Binary mask: Only the points in the fill are preserved under a constant value. This is useful to e.g., mask out structures outside the neuron being traced, or to train a [Weka model](/plugins/tws)
+  - Binary mask: Only the points in the fill are preserved under a constant value. This is useful to e.g., mask out structures outside the neuron being traced, or to train a [Weka model](/plugins/tws).
 
   - Grayscale: Only the points in the fill are preserved under the original pixel intensities. This is useful to e.g., render the structure in the [legacy 3D Viewer](/plugins/3d-viewer) or [sciview](/plugins/sciview) to do a surface rendering of the neuron.
 
@@ -414,7 +389,7 @@ Currently, only the output images/CSV summary of fills can be exported. TRACES f
 
 # Generating *Filtered Images* in Bulk
 
-This section describes how to generate [Filtered Images](/plugins/snt/manual#tracing-on-secondary-image-layer) outside SNT in bulk. The easiest way to process multiple images is to 1) record a macro that processes a single image, then 2) wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
+This section describes how to generate [Filtered Images](/plugins/snt/manual#tracing-on-secondary-image-layer) outside SNT in bulk. Note that there are [many tutorials](/scripting/batch) on this topic. Arguably, the easiest way to process multiple images is to 1) record a macro that processes a single image, then 2) wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
 
 {% highlight javascript %}
 d = getDirectory("Select a directory");

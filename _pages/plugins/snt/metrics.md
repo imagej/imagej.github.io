@@ -6,6 +6,7 @@ artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
+tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 
 ## Metrics
@@ -98,7 +99,7 @@ The sum of branch lengths of branches ending at terminal endpoints (tips)
  The total number of nodes (and thus _compartments_) in a branch
 
 ###### No. of branch points
-The total number (count) of branch points (also know as fork points)
+The total number (count) of branch points (also known as fork points)
 
 ###### No. of branches
 The total number (count) of branches

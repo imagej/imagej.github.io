@@ -6,6 +6,7 @@ artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
+tags: snt,tracing,segmentation,neuroanatomy
 ---
 
 ## Using SNT in other projects

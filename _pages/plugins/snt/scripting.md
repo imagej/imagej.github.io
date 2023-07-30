@@ -106,7 +106,18 @@ def run():
 Scripting in Fiji's script editor is perhaps best done using Groovy and python. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
 
 
-## Example
+# Further  Resources
+
+As mentioned, SNT's [source code repository](https://github.com/morphonets/SNT) includes both  [Bundled Template Scripts](https://github.com/morphonets/SNT/tree/main/src/main/resources/script_templates/Neuroanatomy) and [Jupyter notebooks](https://github.com/morphonets/SNT/tree/main/notebooks). But additional snippets, examples, and further tutorials do exist online, including:
+
+- [Scripts from the SNT manuscript](https://github.com/morphonets/SNTmanuscript)
+
+- [Examples from I2K tutorials](https://github.com/morphonets/i2k2020)
+
+- [Snippets across the forum](https://forum.image.sc/tag/snt)
+
+
+# Example
 
 Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Tools & Utilities|Script This Viewer...'%} [command](/plugins/snt/reconstruction-viewer#utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](/plugins/snt/reconstruction-viewer#settings).
 
@@ -164,8 +175,7 @@ def do_stuff(viewer):
     # Do the same for the dendrites.
     dendrites = loader.getTree('dendrites')
 
-    # Load the Allen CCF Mouse Reference Brain
-    # and add it to the scene.
+    # Load the Allen CCF Mouse Reference Brain and add it to the scene
     viewer.loadRefBrain('mouse')
 
     # Add both Trees to the scene

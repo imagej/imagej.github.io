@@ -11,7 +11,7 @@ update-site: Neuroanatomy
 {% capture text%}
 Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and most do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
 <br><br>
-_Typically_, when {% include key keys='ctlcmd' %} is pressed, hotkeys are not intercepted by SNT. E.g., During a tracing session pressing {% include key key='N' %} triggers <u>N</u>o* in the interactive prompt while {% include key keys='ctlcmd|N' %} will trigger IJ"s built-in command {% include bc path='File|New|image...'%}.
+_Typically_, when {% include key keys='ctlcmd' %} is pressed, hotkeys are not intercepted by SNT. E.g., During a tracing session pressing {% include key key='N' %} triggers <u>N</u>o* in the interactive prompt while {% include key keys='ctlcmd|N' %} will trigger IJ's built-in command {% include bc path='File|New|image...'%}.
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
@@ -109,7 +109,7 @@ See [sciview](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full l
 
 ### Legacy 3D Viewer
 
-All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *should* be recognized by the [Legacy 3D viewer](/plugins/snt/step-by-step-instructions#legacy-3d-viewer). In addition the following are also implemented:
+All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *should* be recognized by the [Legacy 3D viewer](/plugins/snt/step-by-step-instructions#legacy-3d-viewer). In addition, the following are also implemented:
 
 | {% include key key='H' %}   | Selects the <u>H</u>and (rotation) tool |
 | {% include key key='W' %}   | Selects the <u>W</u>and (selection) tool |

@@ -1,5 +1,4 @@
 ---
-mediawiki: Skeletonize3D
 title: Skeletonize3D
 project: /software/fiji
 categories: [Skeleton]
@@ -14,10 +13,10 @@ doi: 10.1002/jemt.20829
   <tbody>
     <tr>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p>
+        <p style="vertical-align:top" |{% include thumbnail src='/media/plugins/smoothed-bat-cochlea-volume.gif' title='Smoothed bat cochlea volume'%}</p>
       </td>
       <td>
-        <p>style="vertical-align:top" |{% include thumbnail src='/media/plugins/skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p>
+        <p style="vertical-align:top" |{% include thumbnail src='/media/plugins/skeleton-bat-cochlea-volume.gif' title='3D skeleton from bat cochlea volume'%}</p>
       </td>
     </tr>
   </tbody>
@@ -52,9 +51,7 @@ As Hanno Homman explains in his paper, \[...\] *binary thinning is used for find
 
 ## Changelog
 
-**2008/11/19**: Update: changed skeleton pixel values to 255.
-
-**2008/11/15**: First release.
+{% include github org='fiji' repo='Skeletonize3D' branch='master' %}
 
 ## License
 
@@ -64,4 +61,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 ## See also
 
--   [Skeletonize3D at ImageJ documentation wiki](http://imagejdocu.list.lu/doku.php?id=plugin:morphology:skeletonize3d:start)
+- [AnalyzeSkeleton](/plugins/analyze-skeleton)
