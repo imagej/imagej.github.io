@@ -797,7 +797,7 @@ ImageJ has benefitted from many hackathons over the years:
         <p>{% include person-list ids='skalarproduktraum|kephale|ctrueden|elect86|Lukas Tempel|Jan Tiemann|tpietzsch|Ella Hierche|Samuel Pantze|xulman|Justin Buerger|Aryaman Gupta|Druhin Abrol|Wissal Salhi|Chiara Notaro' %}</p>
       </td>
       <td>
-        <p>scenery & sciview hackathon 2023: Let's get those to 1.0</p>
+        <p><a href="/libs/scenery">scenery</a> & <a href="/plugins/sciview">sciview</a> hackathon 2023: Let's get those to 1.0</p>
       </td>
     </tr>
     <tr>
