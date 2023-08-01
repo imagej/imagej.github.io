@@ -1,3 +1,11 @@
+---
+title: Hue Colors
+categories: [Segmentation]
+name: Hue Colors
+team-developers:
+- Chris Pudney
+---
+
 # [Syngenta Plugins](/plugins/syngenta-plugins) > Hue Colours Plugin
 
 This plug-in provides the ability to segment images in colour-space.
