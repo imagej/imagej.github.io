@@ -50,14 +50,6 @@ ImageJ has benefitted from many hackathons over the years:
   <tbody>
     <tr>
       <td>
-        <p>ImageJ Hackathons</p>
-      </td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
         <p><a href="https://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf">2007 Summer</a></p>
       </td>
       <td>
@@ -701,7 +693,8 @@ ImageJ has benefitted from many hackathons over the years:
         2021 Aug 31</a></p>
       </td>
       <td>
-        <p>Online (Gather Town) organized by<br/> <a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
+        <p>Online (Gather Town) organized by<br>
+        <a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
       </td>
       <td>
         <p>{% include person-list ids='tomancak|kozusznik|Michal Krumnikl|pm-cz|xulman|Dimitrios Stefanos Velissariou|Václav Svatoň|tischi|tpietzsch|ctrueden|imagejan|axtimwalde|frauzufall|oeway|bogovicj|marktsuchida|tinevez|LeeKamentsky|joshmoore|biovoxxel|sbesson|kephale|lannybroo|jburel|Nils Norlin|Estibaliz Gomez de Mariscal' %}</p>
@@ -716,7 +709,9 @@ ImageJ has benefitted from many hackathons over the years:
         2022 Sep 9</p>
       </td>
       <td>
-        <p>Prague, Czech Republic<br/>organized by<br/><a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
+        <p>Prague, Czech Republic<br>
+        organized by<br>
+        <a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
       </td>
       <td>
         <p>{% include person-list ids='ksugar|tischi|tpietzsch|kozusznik|xulman' %}</p>
@@ -731,7 +726,8 @@ ImageJ has benefitted from many hackathons over the years:
       2023 Oct 7</p>
       </td>
       <td>
-        <p><a href="/orgs/loci">LOCI</a><br/>Madison, WI, USA<br></p>
+        <p><a href="/orgs/loci">LOCI</a><br>
+        Madison, WI, USA<br></p>
       </td>
       <td>
         <p>{% include person-list ids='gnodar01|hinerm|ctrueden|elevans|gselzer' %}</p>
@@ -743,10 +739,11 @@ ImageJ has benefitted from many hackathons over the years:
     <tr>
       <td>
       <p>2022 Dec 5 -<br>
-      2023 Dec 8</p>
+      2022 Dec 8</p>
       </td>
       <td>
-        <p><a href="/orgs/loci">LOCI</a><br/>Madison, WI, USA<br></p>
+        <p><a href="/orgs/loci">LOCI</a><br>
+        Madison, WI, USA</p>
       </td>
       <td>
         <p>{% include person-list limit=4 ids='oeway|hinerm|ctrueden|elevans' %}</p>
@@ -761,13 +758,62 @@ ImageJ has benefitted from many hackathons over the years:
         2023 Feb 10</a></p>
       </td>
       <td>
-        <p><a href="/orgs/human-technopole">Human Technopole</a><br/>Milan, Italy<br></p>
+        <p><a href="/orgs/human-technopole">Human Technopole</a><br>
+        Milan, Italy</p>
       </td>
       <td>
         <p>{% include person-list ids='beatrizserrano|carlosuc3m|cfusterbarcelo|tischi|ctrueden|dasv74|davidackerman|elevans|finglis|fjug|cateek|ivan-ea|tinevez|jdeschamps|lmoyasans|hinerm|mkitti|petebankhead|axtimwalde|tpietzsch|oeway' %}</p>
       </td>
       <td>
         <p>Accessibility of deep learning models from Java</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><a href="/news/2023-06-09-web-cloud-ai-bioimage-analysis">2023 Jun 5 -<br>
+        2023 Jun 9</a></p>
+      </td>
+      <td>
+        <p><a href="/orgs/scilifelab">SciLifeLab</a><br>
+        Stockholm, Sweden</p>
+      </td>
+      <td>
+        <p>{% include person-list ids='oeway|carlosuc3m|cfusterbarcelo|ctrueden|JonasKlotz|thewtex|gnodar01|HedgehogCode|Craig Russell|Andréa Papaleo|Simon Franchini|Tomaz Fogaça Vieira|Sebastian Soyer|Weize Xu|Iván Hidalgo|Vera Galinova' %}</p>
+      </td>
+      <td>
+        <p>Web and Cloud Infrastructure for AI-Powered BioImage Analysis</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><a href="/news/2023-06-17-scenery-sciview-hackathon-2023">2023 Jun 10 -<br>
+        2023 Jun 17</a></p>
+      </td>
+      <td>
+        <p><a href="https://www.csbdresden.de/">CSB Dresden</a><br>
+        Dresden, Germany</p>
+      </td>
+      <td>
+        <p>{% include person-list ids='skalarproduktraum|kephale|ctrueden|elect86|Lukas Tempel|Jan Tiemann|tpietzsch|Ella Hierche|Samuel Pantze|xulman|Justin Buerger|Aryaman Gupta|Druhin Abrol|Wissal Salhi|Chiara Notaro' %}</p>
+      </td>
+      <td>
+        <p>scenery & sciview hackathon 2023: Let's get those to 1.0</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>2023 Jul 21 -<br>
+        2023 Jul 22</p>
+      </td>
+      <td>
+        <p><a href="https://www.fairmont.com/san-francisco/">Fairmont San Francisco</a><br>
+        San Francisco, CA, USA</p>
+      </td>
+      <td>
+        <p>{% include person-list ids='jni|Czaki|andy-sweet|brisvag|kevinyamauchi|GenevieveBuckley|royerloic|jluethi|kephale|ctrueden' %}</p>
+      </td>
+      <td>
+        <p>Post-CZI-Imaging-2023 hackathon: <a href="/software/napari">napari</a> and <a href="/plugins/sciview">sciview</a></p>
       </td>
     </tr>
   </tbody>
