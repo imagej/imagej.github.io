@@ -123,6 +123,8 @@ We now wish to correct for segmentation mistakes, that caused some nuclei to be 
 The HyperStack displayer let you edit spots combining the mouse and keyboard. 
 I have found using the mouse clicks sub-optimal and painful for the carpal bones when editing a lot of spots. Using a combination of the mouse and keyboard proved to be more efficient. 
 
+[This page](/plugins/trackmate/tutorials/trackmate-editing-shortcuts) contains a summary of the keyboard shortcuts we use here.
+
 ### Moving an existing spot
 
 -   Position the mouse over the target spot (you do not need to select it).
