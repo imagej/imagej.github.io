@@ -230,6 +230,7 @@ Again, it compiles several tutorials and developer documentation also linked bel
 -   [Getting started with TrackMate](/plugins/trackmate/tutorials/getting-started) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
 -   [Manual editing of tracks using TrackMate](/plugins/trackmate/tutorials/manual-track-editing) shows how to manually curate and edit tracking results.
 -   [Manual tracking with TrackMate](/plugins/trackmate/tutorials/manual-tracking) shows how to perform a fully manual annotation of tracks in a source image.
+-   [Keyboard shortcuts for editing](/plugins/trackmate/tutorials/trackmate-editing-shortcuts) contains a summary of the keyboard shortcuts we use here.
 -   [TrackMate v7 new algorithms](/plugins/trackmate/detectors/trackmate-v7-detectors) documents the 8 new detectors introduced with version 7, and the new shape analysis framework. Each subpage contains a tutorial that explains how to use each of the new detector.
 
 ### TrackMate components

@@ -14,6 +14,8 @@ nav-links:
 
 The [previous TrackMate tutorial](/plugins/trackmate/tutorials/manual-track-editing) is dedicated to manually correcting the results of an automated process. This small tutorial here shows how to do a fully manual annotation with [TrackMate](/plugins/trackmate).
 
+[This page](/plugins/trackmate/tutorials/trackmate-editing-shortcuts) contains a summary of the keyboard shortcuts we use here.
+
 ## Setting up
 
 {% include img src='/media/plugins/trackmate/trackmate-manual-tracking-01.png' width='500'  align='center'  %}
