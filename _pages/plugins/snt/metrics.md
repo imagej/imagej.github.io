@@ -11,9 +11,15 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 
 ## Metrics
 {% capture text%}
-This list reflects only the default measurements available in the GUI and is not exhaustive. Note that some of the metrics described here have been ported from [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm): {% include citation doi='10.1038/nprot.2008.51' %}
+**This list reflects only default measurements  and is not exhaustive. For each metric SNT retrieves the descriptive statistics _Mix_, _Max_, _Mean_, _Standard Deviation_ (SD), _Sum_ and _N_**.<br>
+E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_). This leads to [inevitable redundancy](#notes) between certain measurements.
+<br>
+
+ Also, please note that some of the metrics described here have been ported from [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm): {% include citation doi='10.1038/nprot.2008.51' %}
 {% endcapture %}
 {% include notice icon="info" content=text %}
+
+
 
 <span id="b"></span>
 ###### Branch contraction
@@ -30,10 +36,10 @@ The path length of a branch (i.e., the sum of all its inter-node distances)
 The average of the radii of the nodes defining a branch
 
 ###### Branch surface area
-_Estimated_ surface area of a branch computed from treating each inter-node segment as a conical frustum and summing the surface area of all frusta
+_Estimated_ surface area[^1] of a branch computed from treating each inter-node segment as a conical frustum and summing the surface area of all frusta
 
 ###### Branch volume
-_Estimated_ volume of a branch computed from treating each inter-node segment as a conical frustum and summing the volume of all frusta
+_Estimated_ volume[^1] of a branch computed from treating each inter-node segment as a conical frustum and summing the volume of all frusta
 
 <span id="c"></span>
 ###### Cable length
@@ -166,10 +172,10 @@ See [Path Order Analysis](/plugins/snt/analysis#path-order-analysis)
 The number (count) of spine/varicosity markers associated with a path, divided by its path length
 
 ###### Path surface area
-_Estimated_ surface area of a path computed from treating each inter-node segment as a conical frustum and summing the surface area of all frusta
+_Estimated_ surface area[^1] of a path computed from treating each inter-node segment as a conical frustum and summing the surface area of all frusta
 
 ###### Path volume
-_Estimated_ volume of a path computed from treating each inter-node segment as a conical frustum and summing the volume of all frusta
+_Estimated_ volume[^1] of a path computed from treating each inter-node segment as a conical frustum and summing the volume of all frusta
 
 <span id="r"></span>
 ###### Remote bif. angles
@@ -213,11 +219,11 @@ See [Skeweness](/plugins/sholl-analysis#skeweness) in [Sholl › Metrics based o
 See [Sum inters.](/plugins/sholl-analysis#sum) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
 
 ###### Surface area
-Treating each inter-node segment as a conical frustum, the sum of the surface areas of all frusta
+Treating each inter-node segment as a conical frustum, the sum of the surface areas[^1] of all frusta
 
 <span id="v"></span>
 ###### Volume
-Treating each inter-node segment as a conical frustum, the sum of the volume of all frusta
+Treating each inter-node segment as a conical frustum, the sum of the volume[^1] of all frusta
 
 ###### Width
 The width of the bounding box embedding the structure being measured
@@ -225,8 +231,17 @@ The width of the bounding box embedding the structure being measured
 ###### X,Y,Z coordinates
 Cartesian coordinates in the three-dimensional space
 
+##### Notes
+- This list does not include specialized metrics provided by dedicated SNT plugins, such as [Strahler](/plugins/snt/analysis#strahler-analysis) or [Sholl](/plugins/snt/analysis#sholl-analysis)
+- Some combinations of metrics/statistics may not be meaningful: e.g., if you are only measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one value has been computed. In this case, the Measurements table will append '[Single metric]' to such data
+- There is an intrinsic redundancy between some of the listed metrics: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- *NaN* values for a reported metric typically reflects undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is a valid mathematical tree
 
-## Statistics
+
+[^1]: Volume and surface area calculations assume radii have been assigned to  path nodes, typically through [fitting routines](/plugins/snt/manual#refinefit). Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/step-by-step-instructions#filling).
+
+<span id="statistics"></span>
+## Group Statistics
 SNT assembles comparison reports and simple statistical reports (two-sample t-test/one-way ANOVA) for up to six groups of cells. This is described in [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions).
 
 
@@ -242,7 +257,7 @@ An image with more than 3 dimensions (3D). Examples include fluorescent images a
 Same as neuronal process. Either an axon or a dendrite
 
 ###### Path
-Can be defined as a sequence of branches, starting from soma or a branch point until a termination. In manual and assisted (semi-automated) tracing, neuronal arbors are traced using paths, not branches. Fitting algorithms that take into account voxel intensities can be used to refine the center-line coordinates of a path, typically to obtain more accurate curvatures. Fitting procedures can also be used to estimate the volume of the neurite(s) associated with a path
+Can be defined as a sequence of branches, starting from soma or a branch point until a termination. In manual and assisted (semi-automated) tracing, neuronal arbors are traced using paths, not branches. [Fitting algorithms](/plugins/snt/manual#refinefit) that take into account voxel intensities can be used to refine the center-line coordinates of a path, typically to obtain more accurate curvatures. Fitting procedures can also be used to estimate the volume of the neurite(s) associated with a path
 
 ###### (Neuronal) morphometry
 Quantification of neuronal morphology
