@@ -378,12 +378,14 @@ If the search is still active, you might as well click "Pause" so halt explorati
 
   - Annotated Distance map: Points along the fill are assigned the _explored distance_ as described earlier. Useful for debugging and/or perusing the fill operation
 
+  - CSV export: Exports details of the filling operation as tabular data. This includes [distance thresholds](#iii-understanding-fill-distances-and-distance-threshold), algorithms used, and volumes of filled paths
+
 <div align="center">
-  <img src="/media/plugins/snt/filling-output-examples.png" title="Fill Manager export options" width="850" />
+  <img src="/media/plugins/snt/filling-output-examples.png" title="Fill Manager export options. Properties of fills can also be exported to CSV files." width="850" />
 </div>
 
 {% capture text%}
-Currently, only the output images/CSV summary of fills can be exported. TRACES files contain only the search parameters of fill operations which allows SNT to recapitulate the search. No information on fills is stored in [SWC files](/plugins/snt/faq#in-which-format-should-i-save-my-tracings-traces-or-swc).
+Currently, only the output images/CSV summary of fills can be exported. TRACES files contain only the search parameters of fill operations which allows SNT to recapitulate the search when files are reopened. No information on fills is stored in [SWC files](/plugins/snt/faq#in-which-format-should-i-save-my-tracings-traces-or-swc).
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
