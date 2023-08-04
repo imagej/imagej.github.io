@@ -77,7 +77,7 @@ Once elastix is installed, you can run [the following script](https://gist.githu
 
 ### QuPath
 
-* Install the [latest QuPath version (0.3+)](https://qupath.github.io/)
+* Install the [latest QuPath version (0.4+)](https://qupath.github.io/)
 * Install the [QuPath Warpy extension by following its readme](https://github.com/BIOP/qupath-extension-warpy).
 
 # Step by step registration procedure
@@ -111,7 +111,7 @@ Save your project, and you are done for now on the QuPath side.
 
 ### Open your QuPath project
 In Fiji, open your QuPath project using 
-{% include bc path="Plugins|BigDataViewer-Playground|Open [QuPath Project]"%}. You can also directly type `QuPath` in Fiji's search bar to avoid struggling in Fiji's menu hierarchy.
+{% include bc path="Plugins|BigDataViewer-Playground|BDVDataset|Create BDV Dataset [QuPath]"%}. You can also directly type `QuPath` in Fiji's search bar to avoid struggling in Fiji's menu hierarchy.
 
 - Select your QuPath project file (usually named `project.qpproj`).
 - Let the default options but make sure to select **MILLIMETER** in the `physical units of the dataset` field
@@ -330,44 +330,21 @@ From within QuPath, annotations and or detections can be transferred within regi
 To transfer annotations or detections from one image to another:
 - using the procedure of your choice (cell detection plugin, stardist, manual annotation, etc.), create annotations or detections on the image of your choice (for instance the moving image). 
 - move to the other registered image (for instance the fixed image).
-- you can then execute the following script {% include bc path="Automate|User scripts...|New Script..."%}
+- you can then execute one of the scripts below {% include bc path="Automate|User scripts...|New Script..."%}
 
-```java
+{% include code
+     org="BIOP"
+     repo="qupath-extension-warpy"
+     branch="main"
+     path="src/main/resources/scripts/Warpy_transfer_annotations_and_detections_to_current_entry.groovy"
+     label="Transfer annotations" %}
 
-// Transfer PathObjects from another image that contains a serialized RealTransform
-// result from Warpy
-
-// The current Image Entry that we want to transfer PathObjects to
-def targetEntry = getProjectEntry() 
-
-// Locate candidate entries can can be transformed into the source entry
-def sourceEntries = Warpy.getCandidateSourceEntries( targetEntry )
-
-// Choose one source or transfer from all of them with a for loop
-def sourceEntry = sourceEntries[0]
-
-// Recover the RealTransform that was put there by WSI Aligner 
-def transform = Warpy.getRealTransform( sourceEntry, targetEntry )
-
-// Recover the objects we wish to transform into the target image
-// This step ensures you can have control over what gets transferred
-def objectsToTransfer = Warpy.getPathObjectsFromEntry( sourceEntry )
-
-// Finally perform the transform of each PathObject
-def transferedObjects = Warpy.transformPathObjects(objectsToTransfer, transform)
-
-// Convenience method to add intensity measurements. Does not have to do with transforms directly.
-// This packs the addIntensityMeasurements in such a way that it works for RGB and Fluoresence images
-Warpy.addIntensityMeasurements(transferedObjects, 1)
-
-// Finally, add the transformed objects to the current image and update the display
-addObjects(transferedObjects) 
-
-fireHierarchyUpdate()
-
-// Necessary import, requires qupath-extenstion-warpy, see: https://github.com/BIOP/qupath-extension-warpy
-import qupath.ext.biop.warpy.*
-```
+{% include code
+     org="BIOP"
+     repo="qupath-extension-warpy"
+     branch="main"
+     path="src/main/resources/scripts/Warpy_transfer_TMA_to_current_entry.groovy"
+     label="Transfer TMAs" %}
 
 The above scripts consists of two parts:
 - `Warpy.getCandidateSourceEntries` looks through all images of the QuPath project if there are transformations files will allow to transfer annotations and detections from one image to the current (target) one, and then performs the transfer.
