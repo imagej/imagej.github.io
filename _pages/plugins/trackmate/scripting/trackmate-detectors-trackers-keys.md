@@ -49,7 +49,7 @@ They are all found in the `fiji.plugin.trackmate.detection` package.
 2. `DogDetectorFactory` 
 3. `MaskDetectorFactory`
 4. `ThresholdDetectorFactory`
-5. `LabeImageDetectorFactory`
+5. `LabelImageDetectorFactory`
 6. `ManualDetectorFactory`
 
 #### Detectors in extensions
@@ -126,9 +126,7 @@ These two detectors use a different implementation but relies on the same key / 
 | `SIMPLIFY_CONTOURS`   | `boolean`      | If `True` the 2D contours detected will be simplified. If `False`, they will follow exactly the pixel borders. |
 | `INTENSITY_THRESHOLD` | `float`        | The threshold on pixel value to use for segmentation.        |
 
-### The label image detector (`LabeImageDetectorFactory`)
-
-Careful, there is a typo in the factory name, and a 'l' is missing.
+### The label image detector (`LabelImageDetectorFactory`)
 
 | Key                 | Value Type     | Description                                                  |
 | ------------------- | -------------- | ------------------------------------------------------------ |
