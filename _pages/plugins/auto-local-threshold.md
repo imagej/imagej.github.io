@@ -3,7 +3,7 @@ mediawiki: Auto_Local_Threshold
 title: Auto Local Threshold
 project: /software/fiji
 categories: [Segmentation]
-artifact: sc.fiji:Auto_Threshold
+artifact: sc.fiji:Auto_Local_Threshold
 ---
 
 This plugin binarises 8-bit images using various **local** thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius **r** (in pixel units) around it. The segmented phase is always shown as white (255).
