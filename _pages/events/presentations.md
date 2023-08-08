@@ -375,6 +375,14 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <th colspan=4 class="section-major">Other presentations</th>
     </tr>
     <tr>
+      <td>2023-Aug-09</td>
+      <td>{% include person id='hinerm'%}</td>
+      <td>Introduction to the ImageJ2 Team (C-MITIE Retreat)</td>
+      <td>
+        <a href="https://docs.google.com/presentation/d/166CkXRaaSXS-qd4F6VYyIkYILevMKfCT-jhUyloHUjM/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
+    <tr>
       <td>2023-Jan-26</td>
       <td>{% include person id='elevans'%}</td>
       <td>Introduction to the ImageJ Ecosystem (Advanced Imaging Methods Workshop 2023)</td>
