@@ -72,6 +72,12 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
         Summer 2021: <a href="https://docs.google.com/presentation/d/1c7cvJLAhRZ9t1zrbbAQ0Zr-hTrHva6WOT6hQQinuDTE/edit?usp=sharing/">slides</a>
       </td>
     </tr>
+    <tr>
+      <td>Image processing with ImageJ/Fiji</td>
+      <td>
+        Summer 2023: <a href="https://docs.google.com/presentation/d/1FteAHtgwo60oE3FlrRwQ9La5rn4G090l6mhbGUNwClg/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 {:/}
