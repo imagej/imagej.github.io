@@ -92,9 +92,9 @@ by name, sans file extension.
 ### Technical note
 
 {% highlight liquid %}{% raw %}{% include notice icon="tech"
-  content="To compile, use `./configure && make & make install`." %}{% endraw %}{% endhighlight %}
+  content="To compile, use `./configure && make && make install`." %}{% endraw %}{% endhighlight %}
 {% include notice icon="tech"
-  content="To compile, use `./configure && make & make install`." %}
+  content="To compile, use `./configure && make && make install`." %}
 
 ### Usage tip
 
