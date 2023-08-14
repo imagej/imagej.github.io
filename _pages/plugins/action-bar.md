@@ -11,7 +11,7 @@ doi: 10.6084/m9.figshare.3397603
 
 This plugin extends ImageJ's graphical user interface. Its purpose is to provide one or many easy to use button bar(s). This type of bars is called 'ActionBar'. It will be a good place to install frequently used items like macros, built-in commands, or user plugins.
 
-{% include notice icon="info" content="Find the latest ActionBar plus documentation <a href="https://doi.org/10.6084/m9.figshare.3397603">here</a>" %}
+{% include notice icon="info" content='Find the latest ActionBar plus documentation <a href="https://doi.org/10.6084/m9.figshare.3397603">here</a>' %}
 
 ## Authors
 
@@ -77,7 +77,7 @@ config file to do real things.
 ## Customizing your ActionBar(s)
 
 You can customize the default `ActionBarConf.txt` as you like, but you can
-also have more than one Action Bar (an idea by {% include person="landinig" %}). To
+also have more than one Action Bar (an idea by {% include person id="landinig" %}). To
 achieve that, simply call Action Bar with the reference to the
 configuration file of your choice. Here are two ways of doing this:
 
