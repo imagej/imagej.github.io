@@ -180,3 +180,34 @@ if detector.process():
 else:
     print "The detector could not process the data."
 ```
+
+## Save track and spot statistics to CSV
+
+To directly save to CSV (instead of displaying the tables in the GUI), you can use the TrackTableView API:
+
+```python
+#@ TrackMate tm
+#@ File (style="save") csvFileSpots
+#@ File (style="save") csvFileTracks
+#@ File (style="save") csvFileAllSpots
+
+from fiji.plugin.trackmate.visualization.table import TrackTableView
+from fiji.plugin.trackmate.visualization.table import AllSpotsTableView
+from fiji.plugin.trackmate import SelectionModel
+from fiji.plugin.trackmate.gui.displaysettings import DisplaySettings
+
+# Create default SelectionModel and DisplaySettings
+sm = SelectionModel(tm.getModel())
+ds = DisplaySettings()
+
+# Save spot and track statistics
+trackTableView = TrackTableView(tm.getModel(), sm, ds)
+trackTableView.getSpotTable().exportToCsv(csvFileSpots)
+trackTableView.getTrackTable().exportToCsv(csvFileTracks)
+
+# Save all spots table
+spotsTableView = AllSpotsTableView(tm.getModel(), sm, ds)
+spotsTableView.exportToCsv(csvFileAllSpots.getAbsolutePath())
+```
+
+(Note that this script uses a SciJava `#@` parameter to get the current `TrackMate` instance. If you created an instance in your own script already, you can use this one directly.)
