@@ -17,7 +17,7 @@ The ModularImageAnalysis (MIA) plugin provides a modular framework for assemblin
 
 **High-throughput:** Workflows are, by default, compatible with batch processing multiple files within a single folder.  Thanks to [Bio-Formats](/formats/bio-formats), MIA has native support for multi-series image formats such as Leica .lif and Nikon .nd2.
 
-**Modular:** Workflows can be automated from initial image loading through processing, object detection, measurement extraction, visualisation, and data exporting.  MIA includes near 200 modules integrated with key ImageJ plugins such as [Bio-Formats](/formats/bio-formats), [TrackMate](/plugins/trackmate) and [Weka Trainable Segmentation](/plugins/tws).  For a complete list of modules, please go [here](https://mianalysis.github.io/mia/html/modules/modules.html).
+**Modular:** Workflows can be automated from initial image loading through processing, object detection, measurement extraction, visualisation, and data exporting.  MIA includes near 200 modules integrated with key ImageJ plugins such as [Bio-Formats](/formats/bio-formats), [TrackMate](/plugins/trackmate) and [Weka Trainable Segmentation](/plugins/tws).  For a complete list of modules, please go [here](https://mianalysis.github.io/modules).
 
 **Reactive:** Module(s) can be turned on/off dynamically in response to factors such as availability of images and objects, user inputs and measurement-based filters.  Switches can also be added to "processing view" for easy workflow control.
 
@@ -37,7 +37,7 @@ The latest version of MIA can be installed directly into Fiji via an update site
 Specific versions of MIA can be downloaded from GitHub and installed into Fiji manually.
 
 Note: If installing MIA manually, the ModularImageAnalysis update site should be disabled from the ImageJ Updater.
-1. Download the desired version of MIA from the [Releases](https://github.com/mianalysis/mia/releases) page.
+1. Download the desired version of MIA from the [Releases](https://github.com//mia/releases) page.
 2. Place this .jar file into the /plugins directory of the your Fiji installation.
 3. Install [MorphoLibJ](/plugins/morpholibj) using the instructions [here](/plugins/morpholibj#installation)
 
@@ -59,7 +59,7 @@ Details on constructing and editing workflows can be found in the [Creating a ne
 #### Workflow controls
 The left-most section of editing view is split into two sections. The top half deals with adding, removing and sorting modules in the current workflow, while the bottom half offers shortcuts for workflow handling (e.g. loading and saving).
 
-The {% include button label="+" %} button will open a menu listing all available modules sorted by category. Selecting a module will insert it into the current workflow (see "Modules in workflow" below). If any module is currently selected in the workflow, the new module will be inserted immediately after it, otherwise, it will be added to the bottom of the list. Similarly, the {% include button label="-" %} button will remove any selected modules (note: multiple modules can be selected from the current workflow). The {% include button label="▲" %} and {% include button label="▼" %} buttons can be used to move modules around in the workflow. A full list of modules and descriptions can be found in the [module documentation](https://mianalysis.github.io/mia/html/modules/modules.html).
+The {% include button label="+" %} button will open a menu listing all available modules sorted by category. Selecting a module will insert it into the current workflow (see "Modules in workflow" below). If any module is currently selected in the workflow, the new module will be inserted immediately after it, otherwise, it will be added to the bottom of the list. Similarly, the {% include button label="-" %} button will remove any selected modules (note: multiple modules can be selected from the current workflow). The {% include button label="▲" %} and {% include button label="▼" %} buttons can be used to move modules around in the workflow. A full list of modules and descriptions can be found in the [module documentation](https://mianalysis.github.io/modules).
 
 Existing workflows can be loaded from .mia files using the {% include button label="Load" %} button and saved with {% include button label="Save" %}. If the workflow has been loaded from a .mia file or has been saved previously, the {% include button label="Save" %} button will overwrite the existing file. To save to a new file, please use {% include bc path="File|Save as..." %}. A full analysis run can be started using the {% include button label="Run" %} button. This will run the workflow on the file specified in "Input control" and is equivalent to starting an analysis from "processing view". The {% include button label="Stop" %} button will terminate any active analysis runs.
 
@@ -148,7 +148,7 @@ If you haven't already done so, at this point it's also worth looking at the [ex
 1. A list of available modules can be viewed by clicking the {% include button label="+" %} button in the top-left corner of the MIA interface.
     - Modules are grouped into general categories and sub-categories.
     - To view a description of each module, hover the mouse over its name.
-    - Full documentation of each module can be found in the [Modules](https://mianalysis.github.io/mia/html/modules/modules.html) pages.
+    - Full documentation of each module can be found in the [Modules](https://mianalysis.github.io/modules) pages.
 2. Click a module to add it to current workflow.
     - If any modules in the current workflow are selected, the new module will be inserted immediately after them. Otherwise, it will be added to the bottom of the list.
 3. Modules can also be discovered and added using the module search feature.
@@ -160,11 +160,11 @@ If you haven't already done so, at this point it's also worth looking at the [ex
     - Modules can also be moved by dragging them to a new position in the workflow.
 
 ### Selecting files to process
-1. Files or folders being processed are specified in the always-present [Input control](https://mianalysis.github.io/mia/html/modules/core/inputcontrol.html) module, which can be found above the current workflow.
+1. Files or folders being processed are specified in the always-present [Input control](https://mianalysis.github.io/modules/core/input-control) module, which can be found above the current workflow.
 2. The "Input path" parameter specifies either a file or folder that the analysis will be run on.
-    - The selected file only acts to provide a root path from which the analysis runs. The image at this location isn't automatically loaded into the MIA workspace, instead this is done by a variety of image loading modules (see [Input/output](https://mianalysis.github.io/mia/html/modules/inputoutput/inputoutput.html) modules).
+    - The selected file only acts to provide a root path from which the analysis runs. The image at this location isn't automatically loaded into the MIA workspace, instead this is done by a variety of image loading modules (see [Input/output](https://mianalysis.github.io/modules/input-output) modules).
     - This fine-grain control over image loading allows us to load sub-sets of image stacks (e.g. a single channel) and gives greater control of the images stored in memory at any given time.
-    - A copy of the [Load image](https://mianalysis.github.io/mia/html/modules/inputoutput/loadimage.html) module is automatically included with all new workflows.
+    - A copy of the [Load image](https://mianalysis.github.io/modules/input-output/load-image) module is automatically included with all new workflows.
 3. If a folder is selected, all files contained within (and within sub-folders) can be processed.
     - In this "batch" mode, only files matching specified filters will be processed.
 
@@ -180,7 +180,7 @@ If you haven't already done so, at this point it's also worth looking at the [ex
 5. Modules and parameters can be renamed by right-clicking on their name.
 
 ### Configuring output results format
-1. The generated results spreadsheet can be configured in the always-present [Output control](https://mianalysis.github.io/mia/html/modules/core/outputcontrol.html) module, which can be found above the current workflow.
+1. The generated results spreadsheet can be configured in the always-present [Output control](https://mianalysis.github.io/modules/core/output-control) module, which can be found above the current workflow.
     - Results spreadsheets will typically be stored in the same folder as the selected input file or within a selected input folder.
 2. By default, all measurements will be included in the spreadsheet. These can be enabled/disabled individually from the "Measurement selection" section.
     - Each exported object collection will be given a separate sheet in the worksheet.
@@ -189,6 +189,21 @@ If you haven't already done so, at this point it's also worth looking at the [ex
     - A single summary is prepared for each processed image; however, this can be split down per timepoint.
     - Each measurement can be summarised as the mean, minimum, maximum, standard deviation and sum.
     - Individual measurement summaries can be enabled/disabled in the "Measurement selection" section.
+
+## Contributing
+We welcome any contributions to the MIA project.  If you'd like to get involved, there are a few ideas on how you could do so in our [get involved](https://mianalysis.github.io/getinvolved) guide, but any involvement, big or small, would be greatly appreciated.
+
+If you'd like to include the latest version of MIA in your project, you can add the following dependency to your pom.xml file:
+
+```
+<dependency>
+    <groupId>io.github.mianalysis</groupId>
+    <artifactId>mia</artifactId>
+    <version>1.4.0</version>
+</dependency>
+```
+
+The JavaDoc for MIA is available [here](https://javadoc.io/doc/io.github.mianalysis/mia).
 
 ## Acknowledgements
 The plugin makes use of a combination of plugins packaged with Fiji as well as others that can be installed via the updater.
@@ -205,7 +220,7 @@ We hope you find MIA useful.  If you've used MIA in your research, please cite i
 {% include citation doi="10.5281/zenodo.1201320" %}
 
 ## Publications
-MIA has been used in a variety of different analyses, a few published examples of which are listed below. For a more complete list, please go to [Publications](https://mianalysis.github.io/mia/html/publications.html).
+MIA has been used in a variety of different analyses, a few published examples of which are listed below. For a more complete list, please go to [Publications](https://mianalysis.github.io/publications).
 
 {% include citation doi="10.1038/s42003-021-02972-8" %}
 
