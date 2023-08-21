@@ -20,23 +20,23 @@ The easiest method to provide your macros, scripts and plugins to other users, l
 
 {% include notice icon="info" content='There are some minimal *Terms of Service* for hosted update sites. See the [Hosted Update Site Terms of Service](/update-sites/tos) for details.' %}
 
-***Please use [this thread on the Image.sc Forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request a new update site.***
+***Please use [this thread on the Image.sc Forum](https://forum.image.sc/t/requests-for-creating-imagej-update-sites/40051/) to request new update sites and/or upload account.***
 
 You can also request:
 * The addition or removal of uploader permissions for a given user to a particular site;
 * A password reset for your upload account.
 
-To start using your update site, in ImageJ2, start the [Updater](/plugins/updater) with {% include bc path='Help | Update' %} and click on the {% include button label="Manage update sites" %} button:
+To start using your update site, in ImageJ2, start the [Updater](/plugins/updater) with {% include bc path='Help | Update' %} and click on the {% include button label="Manage Update Sites" %} button:
 
-<img src="/media/mamed-3.jpg" width="770"/>
+<img src="/media/update-sites/manage-sites.png" width="770"/>
 
 ### Specifying your site
 
-Click the {% include button label="Add update site" %} button. 
+Click the {% include button label="Add Unlisted Site" %} button. 
 
 <img src="/media/update-sites/add-update-site-1.png" width="770"/>
 
-Optionally, enter a nickname for your site in the **Name** column. In the **URL** column, enter your site's complete URL. Finally, in the **Host** column, enter `webdav:<your-uploader-username>`
+Using the URL and upload-username obtained above for [hosted](#creating-a-hosted-update-site) or [self-owned](#adding-an-update-site-on-your-own-server) sites, enter your site's complete URL in the **URL** column and `webdav:<upload-username>` in the **Host** column. Optionally, you can edit the **Name** column for a local nickname to identify your site.
 
 <img src="/media/update-sites/add-update-site-2.png" width="770"/>
 
@@ -98,7 +98,7 @@ First, start the [updater](/plugins/updater):
 
 ![](/media/update-sites/how-to-setup-a-plugin-distribution-site-1.jpg)
 
-Click on the {% include button label="Manage update sites" %} button and verify:
+Click on the {% include button label="Manage Update Sites" %} button and verify:
 
 -   Your update site is present and enabled
 -   The *Host* column of your update site contains your user name, in the form: `webdav:`<UploadUsername>
@@ -107,11 +107,11 @@ For example:
 
 <img src="/media/update-sites/personal-update-site-7.png" width="770"/>
 
-Once your login information is set you can *Close* the update site window.
+If this info is missing, see [Specifying your site](#specifying-your-site). Once your login information is set you can {% include button label="Apply and Close" %} the `Manage Update Sites` window.
 
 ### Prepare your files for upload
 
-Click on the {% include button label="Advanced mode" %} button and set the view options to see your plugins:
+Click on the {% include button label="Advanced Mode" %} button and set the view options to see your plugins:
 
 -   If your have never uploaded your plugins, select *View local-only files*
 
@@ -162,7 +162,7 @@ Sometimes you may have libraries or resources that are no longer necessary for y
 
 An ImageJ update site is essentially just a record of the changes/modifications from a base ImageJ distribution. We always populate an update site from our local installation, and for removal that's no different. The first step is just physically removing the unwanted file(s).
 
-In the {% include button label="Advanced mode" %} view of the updater, you can select any installed file and use either the {% include button label="Uninstall" %} button, or drop-down menu entry, to mark an item for removal. Then when you {% include button label="Apply Changes" %}, the selected item(s) will be deleted from your local filesystem.
+In the {% include button label="Advanced Mode" %} view of the updater, you can select any installed file and use either the {% include button label="Uninstall" %} button, or drop-down menu entry, to mark an item for removal. Then when you {% include button label="Apply Changes" %}, the selected item(s) will be deleted from your local filesystem.
 
 <img src="/media/update-sites/uninstall.png" width="770"/>
 
@@ -170,7 +170,7 @@ This is functionally equivalent to removing these files manually from your files
 
 ### Mark obsolete (update site)
 
-Once you have removed the undesired files, go back to the {% include button label="Advanced mode" %} view of the updater and find the removed file(s). Using the *View uninstalled files only* view option can help here - if your file *is not* showing up on this view then something is off: double-check the file is not present locally.
+Once you have removed the undesired files, go back to the {% include button label="Advanced Mode" %} view of the updater and find the removed file(s). Using the *View uninstalled files only* view option can help here - if your file *is not* showing up on this view then something is off: double-check the file is not present locally.
 
 When you find the uninstalled file(s) you can click their *Status/Action* and change it to **Mark obsolete (xxxxx)**. This option should always have an associated update site name; verify that it matches the update site you will be removing the file from.
 
