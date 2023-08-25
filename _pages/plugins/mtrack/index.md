@@ -10,7 +10,7 @@ doi: 10.1038/s41598-018-37767-1
 ---
 # Important
 
-This plugin is now deprecated and is replaced by a Napari plugin that computes dynamic instability paramerters from the Kymographs of Microtubule and Actin. [Napari plugin](https://www.napari-hub.org/plugins/vollseg-napari-mtrack): In this plugin user inputs the kymographs of microtubules and then use a UNET model to segment the kymograph edges and this Napari plugin computes the dynamic instability parameters. See the [demo here:](https://youtu.be/MLLkC4Ls220?si=1y6Fb0J6iXhgyXzI)
+This plugin is now deprecated and is replaced by a Napari plugin that computes dynamic instability paramerters from the Kymographs of Microtubule and Actin. [Napari plugin](https://www.napari-hub.org/plugins/vollseg-napari-mtrack): In this plugin user inputs the kymographs of microtubules and then use a UNET model to segment the kymograph edges and this Napari plugin computes the dynamic instability parameters. See the [demo here](https://youtu.be/MLLkC4Ls220?si=1y6Fb0J6iXhgyXzI)
 
 
 {% include warning/mtrack-disambig %}
