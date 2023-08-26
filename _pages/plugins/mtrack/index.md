@@ -19,7 +19,7 @@ MTrack is a tool, which detects, tracks, and measures the behavior of fluorescen
 
 MTrack detects microtubule seeds, tracks the growing microtubule ends and creates trajectories. 
 
-To make yourself familiar with MTrack, please go to the [Example section](#Example), where you are able to download an example TIRF movie and you will find detailed instruction for running it.
+
 
 For using MTrack on movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurement is always done on the original movie. 
 
@@ -93,22 +93,6 @@ In case an end has been wrongly recognized, the user can deselect an end by left
 The user can select the start and end time over which the tracking will be performed by entering the frame numbers. Click "Confirm ends and track" to perform the actual tracking, which will be performed "live" (progress bar will show).
 
 Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won't be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends that will be tracked. During tracking, a yellow crosshair will show the current position of the tracking on each marked microtubule. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the "Track ID" movie, which can be used to link the trajectories to individual microtubules and an "Overlay movie", in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID. Each trajectory will contain the following information: frame number, total microtubule length (in px and μm), track ID, x and y position (px and μm) and the length increment from the previous frame (px and µm). After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
-
-
-## Example
-
-An example movie with several dynamic microtubules is available for download [here](http://preibischlab.mdc-berlin.de/download/MTrack/MTrack_Demo.tif.zip). To perform the analysis of this movie:
-
-1.  Put the demo movie **MTrack\_Demo.tif** into an empty directory, the results will also be stored here.
-2.  To run the MicroTubule Tracker:
-3.  Select {% include bc path="Plugins | MTrack | Microtubule Detection and Tracking" %},
-4.  Select **Simple Mode**, **Concatenated Seed Image followed by time-lapse images**, choose the file, the microscope parameters will be automatically loaded, finally click **Next&gt;** to continue.
-5.  Using the default MSER parameters *7 microtubule seeds will be identified*, click **Find Endpoints** to continue.
-6.  The correct endpoints of 6 microtubule seeds will be identified (one is too short and can be added manually), click **Next&gt;** to continue.
-7.  Click **Confirm the end(s) and track** to track the microtubules over all 241 time-points. The expected runtime is around 6-7 min. *Note: the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.*
-8.  Each microtubule trajectory will be saved.
-9.  You are now able to review the tracking results in the ImageJ windows.
-
 
 
 ## Citation
