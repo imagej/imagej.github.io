@@ -77,6 +77,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key key='I' %} | <u>I</u>nserts a new node at cursor position |
 | {% include key key='L' %} | <u>L</u>ocks active node to prevent accidental editing |
 | {% include key key='M' %} | <u>M</u>oves active node to cursor position |
+| {% include key key='R' %} | Changes the <u>R</u>adius of active node |
 | {% include key key='X' %} | Splits tree at active node, re-rooting the selected structure at the active node |
 
 ### Reconstruction Viewer
