@@ -76,6 +76,9 @@ Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary P
 Right-click on the image canvas and select *Pause SNT* from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
 Alternative, you can also obtain Path profiles, in which voxel intensities are plotted along selected path(s).
 
+### I traced an image in pixel coordinates but need to scale the reconstruction to physical units. How do I do it?
+Have a look at [these instructions](https://forum.image.sc/t/how-to-set-the-correct-scale-micrometer-um-of-traced-cell-in-sholl-analysis/84764/4)
+
 ### Is there a way to process one image after another in a fast way?
 Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
 
