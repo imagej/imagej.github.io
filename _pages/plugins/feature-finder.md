@@ -59,5 +59,5 @@ During preview, the dialog also displays a histogram of the number of features v
 ## Version history
 - Version 2010-Dec-28, Michael Schmid: Plugin released
 - Version 2012-Dec-23, Michael Schmid: Uses parallel processing on multi-core machines (faster)
-- Version 2020-Mar-13, Michael Schmid: Output type 'List (calibrated)' added
+- Version 2020-Mar-13, Michael Schmid: Non-blocking dialog; output type 'List (calibrated)' added
 
