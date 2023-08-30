@@ -11,7 +11,8 @@ icon: /media/icons/plugin_icon_ImageJColor.png
 - Supports the built-in ImageJ fit functions (you have modify the code for your own functions).
 - Input data are calibrated pixel values (if there is a calibration), also the z axis calibration is taken into account. If there is no calibration for the z axis, note that the **z values** for the fit are between **0 and NSlices−1**, **not** between 1 and NSlices as the usual numbering of stack slices in ImageJ. This is different from z axis profile plots.
 - The output is a stack of fit parameters, functions thereof, and/or data on the quality of the fit for each (x,y) pixel.
-- Hyperstacks are not supported.
+- Multi-dimensional stacks (hyperstacks) are not supported.
+- Since curve fitting in ImageJ is an iterative process (except for linear regression fits), fitting large amounts of data takes time. Thus, the code puts more emphasis on speed than on retrying the fit with different initial parameters to ensure correct results. This means that in rare cases, the fit quality is worse than when manually doing the same fit with the ImageJ Curve Fitter.
 
 ## Dialog Options
 ![Dialog screen shot](/media/plugins/stack-fitter/stack-fitter-screenshot.png)
