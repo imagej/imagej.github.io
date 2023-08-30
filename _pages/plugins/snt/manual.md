@@ -448,11 +448,11 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 - **Lock Active Node**  {% include key key='L' %} Ensures the active node won't change on cursor movement. Useful for e.g., ensuring that a merge operation is not affected by accidental cursor movement.
 - **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor location.
 - **Set Active Node Radius...** {% include key key='R' %} Allows radius of active node to be modified. Options include: 1) Assign a specific value or a scaling factor; 2) half of the minimum voxel size; 3) The average radius of flanking nodes; or 4) the average path radius
-- **Tag Active Node...** Assigns a color tag to active node. Note paths with color-coded nodes may be rendered differently from default paths in terms of opacity, rendering scale, etc.
+- **Tag Active Node...** Assigns a color tag to the active node. Note paths with color-coded nodes may be rendered differently from default paths in terms of opacity, rendering scale, etc.
 - **Connect To (...)** {% include key key='C' %} Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
 - **Split Tree at Active Node** {% include key key='X' %} Splits the current tree into two subtrees by disconnecting the active node from its parent structure
 - **Reset Active Node** Clears the active node
-- **Set Active Node as Tree Root** Reorganizes the existing tree so that the active node becomes its root
+- **Set Active Node as Tree Root** If only one Tree exists, reorganizes it so that the active node becomes its root. If multiple Trees exist, allows you to choose the Tree to be rooted on the active node. 
 
 
 # Path Manager
