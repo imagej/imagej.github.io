@@ -10,7 +10,7 @@ icon: /media/icons/plugin_icon_ImageJColor.png
 **A plugin-filter providing a high-pass command. It subtracts the Gaussian blurred input image from the input image.**
 
 ## Dialog Options
-{{:plugin:filter:highpass_filter:highpass-screenshot.jpg|Screenshot of the High-pass filter}}
+![Dialog screen shot](/media/plugins/high-pass/high-pass-screenshot.jpg)
 - **Radius (Sigma)** is the standard deviation (blur length) of the Gaussian that will be subtracted.
 - **Scaled Units** (spatially calibrated images only) should be selected if "Radius (Sigma)" is not in pixels but in physical units (e.g., micrometers).
 - **Shift Values to Display Range** adds an offset so that the output will fit into the currently displayed data range. This option should be selected when processing only a selection of a 32-bit (float) image that does not have its pixel values around zero. This option is also useful for most 16-bit images.
