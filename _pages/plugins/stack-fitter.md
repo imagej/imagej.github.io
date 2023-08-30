@@ -9,10 +9,10 @@ icon: /media/icons/plugin_icon_ImageJColor.png
 
 **This plugin fits the data along the z axis (as obtained with Image>Stacks>Plot z axis profile) for each (x,y) pixel of a stack and creates a new stack with the fit results.**
 - Supports the built-in ImageJ fit functions (you have modify the code for your own functions).
-- Input data are calibrated pixel values (if there is a calibration), also the z axis calibration is taken into account.
+- Input data are calibrated pixel values (if there is a calibration), also the z axis calibration is taken into account. If there is no calibration for the z axis, note that the **z values** for the fit are between **0 and NSlices−1**, **not** between 1 and NSlices as the usual numbering of stack slices in ImageJ. This is different from z axis profile plots.
 - The output is a stack of fit parameters, functions thereof, and/or data on the quality of the fit for each (x,y) pixel.
 - Hyperstacks are not supported.
-- 
+
 ## Dialog Options
 ![Dialog screen shot](/media/plugins/stack-fitter/stack-fitter-screenshot.png)
 
@@ -28,13 +28,13 @@ icon: /media/icons/plugin_icon_ImageJColor.png
   - When blank, there is one slice for each fit parameter.
   - Otherwise, you can specify which parameter(s) or numbers the slices correspond to:
     - Variables ''a, b, c,'' ... are the fit parameters.
-    - ''R2'' is the R squared value, the [[wp>coefficient of determination]].
+    - ''R2'' is the R squared value, the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination).
     - ''D2'' is the sum of squared residuals.
     - You can also make functions from these; use ''v'' to specify the function result.
   - Example: ''a, -b/(2*c), R2'''
     - Here, the first output stack slice is the 'a' parameter,
     - the second slice is calculated from the 'b' and 'c' parameters as ''-b/(2*c)'', and
-    - the third slice is Rsquared,
+    - the third slice is R squared.
   - Example: ''if (a>0) v=sqrt(a); else v=-sqrt(-a);, b''
     - Here, the first output stack slice is the square root of the 'a' parameter, or minus the square root of -a, if a is negative, and
     - the second slice gets the fit parameter 'b' as pixel values.
@@ -53,5 +53,5 @@ Fitting a 512×512×10 stack with 'Exponential with Offset' needs about a minute
 - Alternatively, directly save the .class file `Stack_Fitter.class` into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly, uppercase/lowercase matters.
 - Use Help>Update Menus or restart ImageJ to make it appear in the Plugins menu (not necessary if you have used the Fiji Script Editor).
 
-# Version History
+## Version History
 - 2018-03-23, Michael Schmid: First version
