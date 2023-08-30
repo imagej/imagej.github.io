@@ -34,4 +34,4 @@ Note that Undo will revert only the image contents, not the calibration.
 - Use Help>Update Menus or restart ImageJ to make it appear in the Plugins menu (not necessary if you have used the Fiji Script Editor).
 
 ## Version history
-Version 2020-Jan-03, Michael Schmid: Nonblocking dialog
+Version 2020-Jan-03, Michael Schmid: Non-blocking dialog
