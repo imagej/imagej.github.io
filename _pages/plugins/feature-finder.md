@@ -45,12 +45,10 @@ During preview, the dialog also displays a histogram of the number of features v
 
 ## Download
 * Source code `Feature_Finder.java` {% include github org='imagej' repo='imagej.github.io' branch='main' path='media/plugins/feature-finder/Feature_Finder.java' %} (make sure you download the **raw** file, use the button near the top right)
-* Class file `Feature_Finder.class` {% include github org='imagej' repo='imagej.github.io' branch='main'  path='media/plugins/feature-finder/Feature_Finder.class' %}
 
 ## Installation
 - Copy the raw `Feature_Finder.java` file into the ImageJ plugins folder or a subfolder thereof. Make sure that you name the downloaded file ”Feature_Finder.java”; uppercase/lowercase matters.
 - Compile with “Compile and Run” and press “OK”. Note that "Compile and Run" is currently broken on Fiji; as a workaround use File>New>Script, open the `Feature_Finder.java` file and press “Run“.
-- Alternatively, directly save the .class file `Feature_Finder.class` into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly, uppercase/lowercase matters.
 - Use Help>Update Menus or restart ImageJ to make it appear in the Plugins menu (not necessary if you have used the Fiji Script Editor).
 
 ## License
