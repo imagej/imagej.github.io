@@ -452,7 +452,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 - **Connect To (...)** {% include key key='C' %} Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
 - **Split Tree at Active Node** {% include key key='X' %} Splits the current tree into two subtrees by disconnecting the active node from its parent structure
 - **Reset Active Node** Clears the active node
-- **Set Active Node as Tree Root** Reorganizes the existing tree so that the active node becomes its root
+- **Set Active Node as Tree Root** Reorganizes the existing tree so that the active node becomes its root.
 
 
 # Path Manager
@@ -468,34 +468,37 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 ### Edit ›
 
 #### Delete...
-Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
+Removes selected Path(s) from the Path Manager. Note that children of selected paths are not deleted by default unless selected. To include them, choose _Append Children To Selection_ from Path Manager's contextual menu. Also, if no Paths are selected, all Paths are deleted.
 
 #### Duplicate...
-Duplicates the selected path. Only one Path may be duplicated at a time
+Duplicates the selected path. Only one Path may be duplicated at a time.
 
 #### Rename...
-Renames the selected Path. Only one Path may be renamed at a time. Path names are expected to be unique.
-
-#### Merge Primary Path(s) into Shared Root
-Takes two or more primary paths and merges them into a common root node placed at the centroid defined by starting nodes of the primary paths to be merged. This is useful, e.g., when all the paths around a soma have been traced without passing through it. Note that this will alter parent-child relationships between Paths and, by consequence, individual nodes.
+Renames the selected Path. Only one Path may be renamed at a time because path names are expected to be unique.
 
 #### Combine...
-Combines two or more _disconnected_ paths into one (undoable operation)
+Combines (connects) two or more _disconnected_ paths into one (undoable operation).
 
 #### Concatenate...
-Concatenates two or more paths into a single un-branched segment.
+Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing) belonging to the same neurite.
 
 #### Disconnect...
-Disconnects the selected Path from all of its connected Path(s) (Undoable operation).
+Disconnects selected path(s) from all of its connections. Note that this is an undoable operation and will force connectiviy of remaining paths to be rearranged.
+
+#### Merge Primary Path(s) into Shared Root
+Takes two or more primary paths and merges them into a common root node placed at the centroid defined by starting nodes of the primary paths to be merged. This is useful, e.g., when all the paths around a soma have been traced without passing through it. Note that this will alter parent-child relationships between paths.
+
+#### Reverse...
+Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing).
 
 #### Specify Radius...
 Assigns a constant radius to all the nodes of selected Path(s). This setting only applies to unfitted Paths and overrides any existing values.
 
 #### Specify No. Spine\Varicosity Markers...
-Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s)
+Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity Analysis](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis)).
 
 #### Ramer-Douglas-Peuker Downsampling...
-Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s).
+Simflifies paths by reducing their node density. Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s) (undoable operation).
 
 #### Rebuild...
 Resets all Path IDs and recompute connectivity for all paths. Useful to reset ill-relationships created from mis-editing paths.

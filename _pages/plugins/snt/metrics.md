@@ -234,12 +234,11 @@ Cartesian coordinates in the three-dimensional space
 ##### Notes
 - This list does not include specialized metrics provided by dedicated SNT plugins, such as [Strahler](/plugins/snt/analysis#strahler-analysis) or [Sholl](/plugins/snt/analysis#sholl-analysis)
 - Some combinations of metrics/statistics may not be meaningful: e.g., if you are only measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one value has been computed. In this case, the Measurements table will append '[Single metric]' to such data
-- Each of the 60+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$60\times 5$$ features. Note that there is an intrinsic redundancy these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
-- *NaN* values for a reported metric typically reflects undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
-
+- Each of the 60+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$60\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+-  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
+- Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/step-by-step-instructions#filling)
 
 [^1]: Volume and surface area calculations assume radii have been assigned to  path nodes, typically through [fitting routines](/plugins/snt/manual#refinefit).<br>
-Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/step-by-step-instructions#filling).
 
 <span id="statistics"></span>
 ## Group Statistics
