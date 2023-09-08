@@ -83,7 +83,7 @@ To prevent unnecessary server connections to update sites in headless mode you c
 ./ImageJ-linux64 -Dimagej.updater.disableAutocheck=true -- --ij2 --headless --console --run hello.py 'name="Mr Kraken"'
 ```
 
-Often headless mode is used to run many scripts in parallel that could result in huge numbers of server connections. Setting this paramter will prevent this issue. This parameter does not persist between launches and must be included every time server connections to update sites should be prevented.
+Often headless mode is used to run many scripts in parallel that could result in huge numbers of server connections. Setting this parameter will prevent this issue. This parameter does not persist between launches and must be included every time server connections to update sites should be prevented.
 
 If desired, the updater can be controlled in headless mode using the following commands to add an update site and update ImageJ.
 
@@ -98,3 +98,4 @@ You can also add multiple update sites in a single command line:
 ./ImageJ-win64.exe --update add-update-sites "BAR" "https://sites.imagej.net/Tiago/" "IJPB-plugins" "https://sites.imagej.net/IJPB-plugins/"
 ```
 
+Go to the updater section to get the [complete list of available commands](/plugins/updater).

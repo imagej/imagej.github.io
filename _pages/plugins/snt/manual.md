@@ -448,7 +448,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 - **Lock Active Node**  {% include key key='L' %} Ensures the active node won't change on cursor movement. Useful for e.g., ensuring that a merge operation is not affected by accidental cursor movement.
 - **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor location.
 - **Set Active Node Radius...** {% include key key='R' %} Allows radius of active node to be modified. Options include: 1) Assign a specific value or a scaling factor; 2) half of the minimum voxel size; 3) The average radius of flanking nodes; or 4) the average path radius
-- **Tag Active Node...** Assigns a color tag to active node. Note paths with color-coded nodes may be rendered differently from default paths in terms of opacity, rendering scale, etc.
+- **Tag Active Node...** Assigns a color tag to the active node. Note paths with color-coded nodes may be rendered differently from default paths in terms of opacity, rendering scale, etc.
 - **Connect To (...)** {% include key key='C' %} Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
 - **Split Tree at Active Node** {% include key key='X' %} Splits the current tree into two subtrees by disconnecting the active node from its parent structure
 - **Reset Active Node** Clears the active node
@@ -572,7 +572,7 @@ This command sets fitting options and should be run before computing a fit. Opti
 
 - **Radius fallback** This setting defines what should happen when radii are being fitted but fitting fails at certain node location(s). It allows such nodes to be assigned a 'best guess' (see explanation of *mode* in {% include bc path='Explore/Preview Fit' %}), the smallest radius possible (i.e., minimum voxel separation), or _NaN_. Note that the latter my cause statistical measurements to fail. See [Correct Radii](#correct-radii) for details on how to handle *fallback values*.
 
-- **Min. angle** This is an advanced, micro-optimization setting defining (in degrees) the smallest angle between the fitted node and parent tangent vectors. It minimizes abrupt jaggering between neighboring nodes. For most structures, this value is expected to be between 60 and 90 degrees. Acuter angles are more permissive but may induce more drastic displacements between nodes.
+- **Min. angle** This is an advanced, micro-optimization setting defining (in degrees) the smallest angle between the fitted node and parent tangent vectors. It minimizes abrupt jittering between neighboring nodes. For most structures, this value is expected to be between 60 and 90 degrees. Acuter angles are more permissive but may induce more drastic displacements between nodes.
 
 - **Target image** If a [secondary tracing layer](#tracing-on-secondary-image-layer) is being used, this setting defines with image data should be used for fitting.
 
@@ -582,7 +582,7 @@ This command sets fitting options and should be run before computing a fit. Opti
 
 #### Correct Radii...
 <img align="right" width="500" src="/media/plugins/snt/correct-radii.png" title="Correct Radii..." />
-If the fitting fails at a certain location (e.g., because the shape of the cross-section is too irregular, or because the fitted centroid is too far off) the program will skip that node moving on to the next. Skipped nodes will retain their original coordinates but their radius may become unset (see _Radius fallback_ in [parameters](#parameters)). This command collects such nodes from selected paths, and assigns them new radii using linear interpolation based on remaining nodes with valid radii. It can apply the interpolation immediately, or simply preview it. Note that by default _NaN_ and negative numbers are always correct. The criteria specified in the prompt are used as extra conditions.
+If the fitting fails at a certain location (e.g., because the shape of the cross-section is too irregular, or because the fitted centroid is too far off) the program will skip that node moving on to the next. Skipped nodes will retain their original coordinates but their radius may become unset (see _Radius fallback_ in [parameters](#parameters)). This command collects such nodes from selected paths, and assigns them new radii using linear interpolation based on remaining nodes with valid radii. It can apply the interpolation immediately, or simply preview it. Note that by default _NaN_ and negative values are always corrected. The criterion specified in the prompt is used as an extra correction condition.
 
 ### Fill ›
 This menu contains options to start the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).

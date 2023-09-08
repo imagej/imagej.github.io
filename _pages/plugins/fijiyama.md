@@ -62,7 +62,7 @@ Window users, warning. You have specific operations to run at the end of this se
 
 2\. Open Fiji, run the **Update manager** {% include bc path="Help | Update" %}. Click on "OK" to close the first popup windows, then click on the button **Manage update sites...**.
 
-3\. In this list, activate **ImageJ-ITK** by checking the corresponding checkboxes.
+3\. In this list, activate **ImageJ-ITK** by checking the corresponding checkboxes. Do the same for **IJPB-plugins**
 
 and add the **Fijiyama** repository (by clicking on the button **Add update site**, and filling the fields : name = "/plugins/fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox.
 
