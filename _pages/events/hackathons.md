@@ -770,6 +770,22 @@ ImageJ has benefitted from many hackathons over the years:
     </tr>
     <tr>
       <td>
+        <p>2023 Apr 15 -<br>
+        2023 Apr 21</p>
+      </td>
+      <td>
+        <p><a href="/orgs/loci">LOCI</a><br>
+        Madison, WI, USA</p>
+      </td>
+      <td>
+        <p>{% include person-list ids='tinevez|tpietzsch|ctrueden|hinerm|elevans|gselzer' %}</p>
+      </td>
+      <td>
+        <p>TrackMate in 3D</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <p><a href="/news/2023-06-09-web-cloud-ai-bioimage-analysis">2023 Jun 5 -<br>
         2023 Jun 9</a></p>
       </td>
