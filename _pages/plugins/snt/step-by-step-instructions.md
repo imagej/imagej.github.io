@@ -209,18 +209,32 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 {% endcapture %}
 {% include notice icon="info" content=ddac-demo %}
 
+## Input Image(s)
 Full automated tracing requires two types of inputs:
+
 1. **Segmented Image (*Mandatory*)** The pre-processed image from which paths will be extracted. It will be [skeletonized](/plugins/skeletonize3d) by the extraction algorithm. If thresholded (recommended), only highlighted pixels are considered, otherwise all non-zero intensities in the image will be considered for extraction.
 
 2. **Original Image (*Optional*)** The original (un-processed) image used to resolve any possible loops in the segmented image using brightness criteria. If available: loops will be nicked at the dimmest voxel of the dimmest branch in the detected loop. If unavailable: Loops will be nicked at the shortest branch in the loop.
 
-It also requires some parameters to be set in the prompt:
+## Soma/Root Detection
+Root detection requires an area ROI marking the root of the arbor exists on the image. With neurons, this typically corresponds to an area ROI marking the soma. Three strategies are possible:
 
-- **Set Root from ROI** This option assumes that an active area ROI marks the root of the structure. If an ROI exists, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. If no ROI exists, an arbitrary root node is used.<br> If a 3D image, toggling the *Restrict to active plane* checkbox clarifies  that the root highlighted by the ROI occurs at the ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
+- **Place root on ROI's centroid** Attempts to root all of primary paths intersecting the ROI at its centroid. Typically, this options is used when multiple paths branch out from the soma of the cell, the ROI defines the contour of the soma, and somatic segments are expected to be part of the reconstruction
 
-- **Small components settings** These options determine whether the algorithm should ignore segments (connected components that are disconnected from the main structure) that are too small to be of interest. Disconnected segments with a cable length below the specified  *length threshold* will be discarded by the algorithm.<br>Increase this value if too many isolated branches are being created. Decrease it to bias the extraction for larger, contiguous structures.
+- **Place roots along ROI's edge** Attempts to root all of primary paths intersecting along the perimeter of the ROI. As above, this option is typically used when multiple paths branch out from the soma of the cell, the ROI defines the contour of the soma, but somatic segments are expected to be excluded from the reconstructions
 
-- **Adjacent components settings** If the segmented image is fragmented into multiple components (e.g., due to 'beaded' staining): Should the algorithm attempt to connect nearby components? If so, what should be the maximum allowable distance between disconnected components to be merged?<br>You should increase *Max. connection distance* if the algorithm produces too many gaps. Decrease it to minimize spurious connections.
+- **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma
+
+- **None. Igore any ROIs**. If no ROI exists, an arbitrary root node is used.
+
+When parsing 3D images, toggling the *Restrict to active plane* checkbox clarifies that the root(s) marked by the ROI occurs at the active ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
+
+## Gaps and Disconnected components
+It is almost impossible to segment structures into a single, coherent volume. These options define how gaps in the segmentation should be handled.
+
+- **Settings for handling small components** These options determine whether the algorithm should ignore segments (connected components that are disconnected from the main structure) that are too small to be of interest. Disconnected segments with a cable length below the specified *length threshold* will be discarded by the algorithm.<br>Increase this value if too many isolated branches are being created. Decrease it to bias the extraction for larger, contiguous structures.
+
+- **Settings for handling adjacent components** If the segmented image is fragmented into multiple components (e.g., due to 'beaded' staining): Should the algorithm attempt to connect nearby components? If so, what should be the maximum allowable distance between disconnected components to be merged?<br>You should increase *Max. connection distance* if the algorithm produces too many gaps. Decrease it to minimize spurious connections.
 
 Information on other options in the prompt can be accessed through the tooltip text that is displayed when hovering the mouse above them.
 
