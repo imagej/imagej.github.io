@@ -15,7 +15,7 @@ This plugin extends ImageJ's graphical user interface. Its purpose is to provide
 
 ## Authors
 
-{% include person-list ids="mutterer | dscho | axtimwalde | Michael Schmid | Serge Mazères | lacan | Simon Roussel | landinig" %}.
+{% include person-list limit=99 ids="mutterer | dscho | axtimwalde | Michael Schmid | Serge Mazères | lacan | Simon Roussel | landinig" %}.
 
 ## Citing
 
