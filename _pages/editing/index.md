@@ -15,9 +15,11 @@ page" link at the top right with a direct link to this interface.
 
 As this wiki is completely hosted on GitHub, you will need to be logged into a GitHub account to make edits (this replaces the old system of registering for an ImageJ-wiki-specific account). If you don't have an account yet, you can [create one freely](https://github.com/signup).
 
-For the smoothest editing experience you will want [collaborator access](https://github.com/imagej/imagej.github.io/settings/access). To be added as a collaborator, just [get in touch](/discuss#ways-to-get-help) and let us know your GitHub account name and we'll be happy to add you.
+When making edits through the GitHub web UI, first-time contributors will likely be prompted to [fork this repository](#why-do-i-need-to-fork-this-repository-to-edit-it). Make your edits to your fork as described below, and then [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). 
 
-Non-collaborators have to [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo), edit that fork as described below, and then [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+An admin will review your pull request, merge it, and add you as a collaborator. Any future edits can then be made directly to this wiki. You can delete your fork at that point.
+
+You can also manually create [forks](https://docs.github.com/en/get-started/quickstart/fork-a-repo) at any time, and are welcome to continue using the Pull Request mechanism if you prefer.
 
 # Creating a new page
 
@@ -271,4 +273,4 @@ in this repository.
 
   {% include img align="center" src="editing/forking" style="border: 1px solid #aaa" %}
 
-To be added as a collaborator, just [get in touch](/discuss#ways-to-get-help) and let us know your GitHub account name; we'll be happy to add you!
+Proceed with the forking as indicated (which creates a copy of the repository under your account, so that you can edit it). Make the edits you'd like to your fork, then submit a pull request. Upon completion of the pull request review you will be made a collaborator and can make future edits directly.
