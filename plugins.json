@@ -10,7 +10,7 @@
             "name": "Action Bar",
             "description": "Extend ImageJ's graphical user interface, providing one (or many) easy to use button bar(s).",
             "link": "/plugins/action-bar",
-            "imgUrl": "https://imagejdocu.tudor.lu/_media/plugin/utilities/action_bar/actionbar.jpeg"
+            "imgUrl": "/media/plugins/action-bar/actionbar.jpeg"
         },
         {
             "name": "BAR",
