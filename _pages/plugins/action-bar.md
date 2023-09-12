@@ -31,7 +31,7 @@ called 'ActionBar'. It will be a good place to install frequently used
 items like macros, built-in commands, or user plugins. It can turn a
 series of plugins into a good looking user interface (see examples).
 
-{% include img src="actionbar.jpeg" title="ABDemo" align="center" %}
+{% include img src="actionbar.jpeg" name="ABDemo" align="center" %}
 
 Each button can have a name, an icon, and can do **one of three actions
 type**:
