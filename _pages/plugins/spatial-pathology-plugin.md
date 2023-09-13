@@ -6,6 +6,8 @@ categories: [Uncategorized]
 dev-status: "Maintaining"
 team-founder: "@ariondey"
 team-maintainer: "@ariondey"
+source-label: on GitHub
+source-url: https://github.com/ariondey/Spatial-Pathology-Plugin
 ---
 # Spatial Pathology Plugin
 
