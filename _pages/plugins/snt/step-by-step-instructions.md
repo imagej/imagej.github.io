@@ -219,13 +219,13 @@ Full automated tracing requires two types of inputs:
 ## Soma/Root Detection
 Root detection requires an area ROI marking the root of the arbor exists on the image. With neurons, this typically corresponds to an area ROI marking the soma. Three strategies are possible:
 
-- **Place root on ROI's centroid** Attempts to root all of primary paths intersecting the ROI at its centroid. Typically, this options is used when multiple paths branch out from the soma of the cell, the ROI defines the contour of the soma, and somatic segments are expected to be part of the reconstruction
+- **Place root on ROI's centroid** Attempts to root all of primary paths intersecting the ROI at its centroid. Typically, this option is used when 1) multiple paths branch out from the soma of the cell, 2) the ROI defines the contour of the soma, and 3) somatic segments are expected to be part of the reconstruction.
 
-- **Place roots along ROI's edge** Attempts to root all of primary paths intersecting along the perimeter of the ROI. As above, this option is typically used when multiple paths branch out from the soma of the cell, the ROI defines the contour of the soma, but somatic segments are expected to be excluded from the reconstructions
+- **Place roots along ROI's edge** Attempts to root all of primary paths intersecting along the perimeter of the ROI. As above, this option is typically used when multiple paths branch out from the soma of the cell and the ROI defines the contour of the soma, but somatic segments are not expected to be included in the reconstruction.
 
-- **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma
+- **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma.
 
-- **None. Igore any ROIs**. If no ROI exists, an arbitrary root node is used.
+- **None. Igore any ROIs** If no ROI exists an arbitrary root node is used.
 
 When parsing 3D images, toggling the *Restrict to active plane* checkbox clarifies that the root(s) marked by the ROI occurs at the active ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
 

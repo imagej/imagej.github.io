@@ -1,5 +1,5 @@
 ---
-title: Strahler Analysis (From Images)
+title: SNT › Strahler Analysis (From Images)
 categories: [Skeleton,Analysis,Neuroanatomy]
 tags: strahler,plugin,arbor,neuron,morphometry,dendrite
 update-site: Neuroanatomy
@@ -7,6 +7,31 @@ artifact: org.morphonets:SNT
 forum-tag: strahler-analysis
 icon: /media/icons/snt.png
 doi: 10.1038/s41592-021-01105-7
+nav-links:
+- title: Overview
+  url: /plugins/snt/index
+- title: Analysis
+  url: /plugins/snt/analysis
+- title: Extending
+  url: /plugins/snt/extending
+- title: FAQ
+  url: /plugins/snt/faq
+- title: Shortcuts
+  url: /plugins/snt/key-shortcuts
+- title: Manual
+  url: /plugins/snt/manual
+- title: Metrics
+  url: /plugins/snt/metrics
+- title: Modeling
+  url: /plugins/snt/modeling
+- title: Rec. Viewer
+  url: /plugins/snt/reconstruction-viewer
+- title: Screencasts
+  url: /plugins/snt/screencasts
+- title: Scripting
+  url: /plugins/snt/scripting
+- title: Walk‑throughs
+  url: /plugins/snt/step-by-step-instructions
 ---
 
 {% capture strahler%}
@@ -20,6 +45,11 @@ There are several entry points to Strahler Analysis in SNT. You can find those i
 This documentation page is mainly focused on _Strahler Analysis (Image)..._.
 {% endcapture %}
 {% include notice icon="info" content=strahler %}
+
+{% capture strahler%}
+While _Strahler Analysis (Image)..._ remains a functional plugin, you may find its simplicity rather limiting. A more flexible approach may be to convert [skeletonized images into traced paths](/plugins/snt/step-by-step-instructions#full-automated-tracing) and run [Strahler Analysis (Tracings)](/plugins/snt/analysis#strahler-analysis) on them.
+{% endcapture %}
+{% include notice icon="warning" background-color="#EBF2F8" content=strahler %}
 
 {% include img align="right" src="/media/plugins/strahler-classification-example.png" caption="Strahler classification"%}
 {% include wikipedia title='Strahler number' text='Strahler numbering'%}[^3] is a numerical procedure that summarizes the branching complexity of mathematical trees. The {% include wikipedia title='Strahler number' text='Strahler classification'%} occurs as follows:
@@ -40,9 +70,6 @@ The *Strahler number* of a neuronal arbor reflects the highest number in the cla
 3. An analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
 <span id="strahler-animation">
 {% include img align="right" width="300" name="Strahler Analysis by iterative elimination of end-point branches" src="strahleranimation" caption="The direct analysis of images occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them." %}
-
-
-**NB: While _Strahler Analysis (Image)..._ remains a functional plugin, you may find its simplicity rather limiting. A more flexible approach may be to convert skeletonized images into traced paths in SNT, and run [Strahler Analysis (Tracings)](/plugins/snt/analysis#strahler-analysis) on them.**
 
 ## Parameters
 
@@ -102,6 +129,7 @@ There are two major limitations with parsing images directly:
 
 ## Related Tools
 
+- [SNT](/plugins/snt)
 - [Sholl Analysis](/plugins/sholl-analysis)
 - [AnalyzeSkeleton](/plugins/analyze-skeleton) and [Skeletonize3D](/plugins/skeletonize3d), analysis of topographic skeletons (see also [BoneJ](/plugins/bonej) that has made several improvemts to  skeletonization routines)
 

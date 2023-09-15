@@ -1,5 +1,5 @@
 ---
-title: Sholl Analysis
+title: SNT › Sholl Analysis
 name: Sholl plugins
 categories: [Analysis,Neuroanatomy]
 tags: [sholl,sholl analysis,snt,arbor,neuron,morphometry,dendrite,neuroanatomy]
@@ -7,52 +7,79 @@ forum-tag: sholl-analysis
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 doi: 10.1038/nmeth.3125
+nav-links:
+- title: Overview
+  url: /plugins/snt/index
+- title: Analysis
+  url: /plugins/snt/analysis
+- title: Extending
+  url: /plugins/snt/extending
+- title: FAQ
+  url: /plugins/snt/faq
+- title: Shortcuts
+  url: /plugins/snt/key-shortcuts
+- title: Manual
+  url: /plugins/snt/manual
+- title: Metrics
+  url: /plugins/snt/metrics
+- title: Modeling
+  url: /plugins/snt/modeling
+- title: Rec. Viewer
+  url: /plugins/snt/reconstruction-viewer
+- title: Screencasts
+  url: /plugins/snt/screencasts
+- title: Scripting
+  url: /plugins/snt/scripting
+- title: Walk‑throughs
+  url: /plugins/snt/step-by-step-instructions
 ---
 
-Automated and multithreaded Sholl for direct analysis of fluorescent images and/or traced morphologies. Features powerful quantifications based on curve fitting. Analyis of profiles obtained by other software is also possible. Originally released as a stand-alone Fiji plugin, this program is now part of [SNT](/plugins/snt).
+Automated and multithreaded Sholl for direct analysis of fluorescent images and/or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of profiles obtained by other software is also possible. Originally released as a stand-alone Fiji plugin, this program is now part of [SNT](/plugins/snt).
 
 {% capture text%}
-***Sholl Analysis* is based on a [publication](#publication). If you use it successfully for your research please be so kind as to cite our work!**
-
-The [manuscript](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) is accompanied by a [Supplementary Note](https://www.nature.com/articles/nmeth.3125#Sec2) that presents the software in further detail. 
+***SNT and Sholl Analysis* are based on [publications](/plugins/snt/faq#how-do-i-cite-snt). If you use these tools successfully for your research please be so kind as to cite our work!** The [Sholl Analysis manuscript](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html) is accompanied by a [Supplementary Note](https://www.nature.com/articles/nmeth.3125#Sec2) that presents the software in further detail. 
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
+# Introduction
+<img align="right" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
+The Sholl technique[^2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. The way its internal algorithm collects data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
 
-## Introduction
-
-<span id="ca1-cell-mask"></span>
-{% include img align="right" name="ca1-cell-mask" src="bitmapsholl-ca1mask" caption="[Skeletonized](/plugins/skeletonize3d) hippocampal [CA1 cell](https://doi.org/10.1111/j.1460-9568.2010.07283.x) (juvenile mouse) in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated." %}
-
-The Sholl technique[^2] is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric *shells* (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells. The major advantages of this plugin over other implementations are:
-
--   When analyzing images directly, it does not require previous tracing of the arbor (although it can also analyze [traced arbors](#analysis-of-traced-cells))
+-   It can analyze both images and reconstructions
+-   When analyzing images directly, it does not require previous tracing of the arbor 
 -   It combines [curve fitting](#methods-table) with several [methods](#sholl-plots) to automatically retrieve [quantitative descriptors](#metrics) from sampled data, which allows direct statistical comparisons between arbors
 -   It allows [continuous and repeated sampling](#multiple-samples-and-noise-reduction) around user-defined foci
 -   It allows [batch processing](#batch-processing)
 
-
-## Installation
-
 After [installing SNT](/plugins/snt/#installation), Sholl commands can be accessed through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window'%}, or the SNT icon in the ImageJ toolbar.
-
-
-## Direct Analysis of Images
+<span id="ca1-cell-mask"></span><span id="ca1-cell-plot"></span>
+{% include gallery align="center" content=
+"
+/media/plugins/snt/sholl-analysis-outputs.png | Overview of outputs: Linear and log-log profile (Sholl decay calculation), detailed and summary tables. ‘Traditional’ plots are obtained by disabling curve-fitting altogether
+/media/plugins/bitmapsholl-ca1mask.png | [Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^8] in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated.
+/media/plugins/bitmapsholl-ca1compartment.png | Linear plot for the same CA1 cell[^8]. Using the soma as center, image was sampled twice using [hemishells](#hemishells) in order to segregate apical from basal dendrites. For clarity, distances for basal branches were assigned negative values and arbor overlaid (in green) over the profile.
+/media/plugins/combineshollprofiles.png | *Combine Sholl Profiles...* aggregates individual profiles into a single plot, obtaining the average profile for groups of cells [[use case](https://forum.image.sc/t/sholl-merging-profiles-with-different-radii/54144/13)]
+/media/plugins/snt/sholl-group-statistics.png | Statistics for [groups of cells](/plugins/snt/analysis#comparing-reconstructions) [[use case](https://forum.image.sc/t/sholl-analysis-with-snt-one-graph-for-two-groups/82471/2)]
+/media/plugins/animatedpolyfit.gif | Sampled data can be fitted to polynomials of varying degree (animation created using [BAR](/plugins/bar))
+/media/plugins/snt/sholl-convex-hull.png | Scripting allows for arbitrary focal points, in this case the centroid of the neuron's convex hull (*Convex Hull as Center* template script)
+/media/plugins/shollresultasrois.png | Intersection points and sampling shells can be retrieved as ROIs. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.
+/media/plugins/snt/sholl-rasterized-shells.png | Using Sholl to measure the distribution of image objects (_Sholl Rasterize Shells_ template script) [[use case](https://forum.image.sc/t/measuring-distribution-of-object-diameters-in-different-stripes-using-sholl-plugin/51087)]
+/media/plugins/snt/snt-sholl-integrate-density-profiles.png | Not only neurons: Integrated-density profiles can be used to obtain radial maps of fluorescent markers.
+"
+%}
+# Direct Analysis of Images
+<img align="right" width="320px" src="/media/plugins/snt/sholl-bitmap-promptv4.png" title="Main prompt (v4.2.1) when input is a segmented image" >
 
 In this mode (bitmap analysis), the plugin requires a [binary image or a segmented](#faq:threshold) [grayscale image](#faq:image-types) (2D or 3D) containing a single neuron.
 
-1.  Segment the neuronal arbor using {% include bc path='Image|Adjust|Threshold...'%} (shortcut: {% include key keys='Shift|T' %}). When using multichannel images, you will have to set the its display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...'%} ({% include key keys='Shift|Z' %}), because images displayed as *Composites* cannot be thresholded.
-2.  Define the center of analysis using a valid [startup ROI](#startup-roi).
-3.  Run {% include bc path='Analysis|Sholl|Sholl Analysis...'%}, adjusting the default [Parameters](#parameters) in the dialog prompt.
-4.  Press *More » [Cf. Segmentation](#cf-segmentation)* to visually inspect the two thresholded phases: *arbor* and *background*.
-5.  Problems? Read the [FAQs](#faq).
+1.  Segment the neuronal arbor using {% include bc path='Image|Adjust|Threshold...'%} (shortcut: {% include key keys='Shift|T' %}). When using multichannel images, you will have to set the display mode to *Grayscale* using {% include bc path='Image|Color|Channels Tool...'%} ({% include key keys='Shift|Z' %}), because images displayed as *Composites* cannot be thresholded.
+2. [Visually inspect](#cf-segmentation) the two thresholded phases in the image to ensure the *arbor* is being parsed and not *background*.
+3. Define the center of analysis using a valid [startup ROI](#startup-roi).
+4. Run {% include bc path='Analysis|Sholl|Sholl Analysis...'%}, adjusting the default [Parameters](#parameters) in the dialog prompt.
+5. Problems? Read the [FAQs](#faq).
 
-{% capture text%}
-Some of the illustrations of this manual pertain to older versions of the software. Most prompts have meanwhile been simplified. However, descriptions remain relevant to current use.
-{% endcapture %}
-{% include notice icon="info" content=text %}
 
-### Startup ROI
+## Startup ROI
 
 The center of analysis can be specified using one of three possibilities:
 
@@ -60,27 +87,26 @@ The center of analysis can be specified using one of three possibilities:
 
 2. Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [batch processing](#batch-processing) of images with different dimensions with undefined [Ending radius](#end-radius).  
 
-3. Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.  
+3. Multipoint selection:A Multi-point selection (multipoint counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.  
 
 {% include img align="center" name="sholl plots" src="/media/plugins/shollanalysisstartuprois.png" %}
 
 Three types of ROIs expected by the plugin when analyzing images directly. <b>Left</b>: Line defining center of analysis (focal point), hemisphere restriction and ending radius. <b>Middle</b>: Single point defining center of analysis. <b>Right</b>: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary neurites.
 
+## Cf. Segmentation
 
-### Cf. Segmentation
-
-Press *More» Cf. Segmentation* to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the *B&W* lookup table in the Threshold Widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}). *Cf. Segmentation* allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[^3]:
+It is important to visually confirm which phase of the segmented image will be sampled, specially when using black and white (binary) lookup tables. To so, you can select the _Red_ lookup table in the Threshold widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}) to highlight foreground from background pixels to verify that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[^3]:
 
 <table>
   <tbody>
-    <tr>
+    <tr style="background-color:white">
       <td>
         <center>
-          <p><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px"><em>Cf. Segmentation output</em></span> <span style="display:inline-block;text-align:center;width:230px"><em>Intersections mask</em></span></p>
+          <p><span style="display:inline-block;text-align:center;width:230px">Segmented image<br><em>(Black/White LUT)</em></span> <span style="display:inline-block;text-align:center;width:230px">Segmented image<br><em>(Yellow/Blue LUT)</em></span> <span style="display:inline-block;text-align:center;width:230px">Intersections mask<br><em>(Jet LUT)</em></span></p>
         </center>
       </td>
     </tr>
-    <tr>
+    <tr style="background-color:white">
       <td>
         <center>
           <figure>
@@ -89,12 +115,12 @@ Press *More» Cf. Segmentation* to visually confirm which phase of the segmented
         </center>
       </td>
     </tr>
-    <tr>
+    <tr style="background-color:white">
       <td>
         <center>
-          <p><strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.</p>
+          <strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.<br>
+        Note the reversal of output and how the <em><a href="#output-options">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT'%}).
         </center>
-        <p>Note the reversal of <em><a href="#cf-segmentation">Cf. Segmentation</a> output</em> and how the <em><a href="#output-options">intersections mask</a></em> no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold: 1) the program oversamples (cf. hue ramps on upper left of <em>Intersections mask</em>) and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would <em>look the same</em> under an inverted lookup table ({% include bc path='Image|Lookup Tables|Invert LUT'%}).</p>
       </td>
     </tr>
   </tbody>
@@ -109,119 +135,134 @@ With binary images, *Sholl Analysis* treats zero intensities as the background, 
 <span id="traces"></span>
 
 
-## Analysis of Traced Cells
+# Analysis of Traced Cells
 
-{% include img align="right" width="300px" src="/media/sholltracingsprompt.png" caption="Main prompt (v3.6.8) when input is traced data" %}
+<img align="right" width="320px" src="/media/plugins/snt/sholl-tracings-promptv4.png" title="Main prompt (v4.2.1) when input is a traced data" >
 
-In this mode the plugin analyzes reconstructed arbors, which is particularly relevant for stainings that do not allow single-cell resolution or proper segmentation. Traced cells are better analyzed through [SNT](/plugins/snt/analysis#sholl-analysis)'s main interface, as it offers more options for defining the center of analysis, tagged branches, etc.  However, dedicated prompts are also available ({% include bc path='Plugins|Sh|Sholl Analysis (Tracings)...'%}) for cases in which viewing traces is not necessary, or when [batch processing](#batch-processing) is needed, since such prompts are macro recordable and/or themselves created by scripts. 
+In this mode the plugin analyzes reconstructed arbors (traced in SNT or [elsewhere](/update-sites/neuroanatomy/external-resources)), which is particularly relevant for stainings that do not allow single-cell resolution or proper segmentation. There are several entry points to this analysis, namely:
 
-> You can use analyze reconstructed data from any software capable of [SWC](/plugins/snt/faq#swc), not just [SNT](/plugins/snt). Third-party software includes [Py3DN](https://sourceforge.net/projects/py3dn/), [Neuromantic](http://www.reading.ac.uk/neuromantic/) , [NeuronStudio](http://research.mssm.edu/cnic/tools-ns.html) , [neuTube](http://www.neutracing.com) , or [Vaa3D](http://www.vaa3d.org/) ). In addition, [L-Measure](http://cng.gmu.edu:8080/Lm/) , [NLMorphologyConverter](http://neuronland.org/NL.html) or [Neuron](http://www.neuron.yale.edu/neuron/) can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
-
-1.  Run {% include bc path='Sholl Analysis (Tracings)...'%} and specify a [tracing file](/plugins/snt/faq#file-format) (`swc`, `eswc` or `traces` extension). If needed, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
-
-2.  Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (*axon*, *dendrite*, *soma*, etc.). Note that if your tracings are not tagged you can do so in [SNT](/plugins/snt/analysis#sholl-analysis)
-
-3.  Adjust the default [Parameters](#parameters)
-
-4.  Problems? Read the [FAQs](#faq)
-
-
-## Analysis of Existing Profiles
-<span id="importing"></span>
-
-<span id="ca1-cell-plot"></span>
-{% include img align="right" name="ca1-linear-plot" src="bitmapsholl-ca1compartment" caption="Linear plot for CA1 cell [described above](#ca1-cell-mask). Using the soma as center, image was sampled twice using the [Restrict analysis to hemicircle/hemisphere](#restrict) option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [curve fitting](#methods-table) to a sub-range of distances once [data is collected](#importing)." %}
-
-
-- **Input data**: Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
-- **Restricting input data**: To restrict measurements to a range of distances ([see related example](#ca1-cell-plot)), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {% include key key='Shift' %} while selecting the last row in the range. Then, in the prompt, activate the *Restrict analysis to selected rows only* checkbox.
-- **Calculation of *Radius step size***: [Radius step size](#step-size) is calculated from the difference between the first two rows in *Distance column*. This is mainly relevant when choosing *Annulus/Spherical shell* as [normalizer](#normalizer).
-
-
-
-## Parameters
-
-The majority of parameters is shared by all the Analysis commands in the{% include bc path='Analysis|Sholl| '%} submenu. However, some settings are specific to the type of data used as input: A segmented image, a tracing, or a previously obtained profile. When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc path='Analyze|Set Scale...'%} or {% include bc path='Image|Properties...'%} ({% include key keys='Shift|P' %}), the type of image (2D or 3D), and its [active ROI](#startup-roi).
-
-
-#### Definition of Shells
-
-
-- <span id="start-radius"></span>**Starting radius** The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
-
-- <span id="end-radius"></span>**Ending radius** The radius of the largest (last) sampling circle/sphere. It is automatically calculated if a [line ROI is used](#usage). Note that the specified distance may not be actually sampled, if *Radius step size* is not a divisor of *Ending radius*-*Starting radius*. In this case, the program will choose the largest possible distance smaller than the specified value.
+- [SNT](/plugins/snt/analysis#sholl-analysis)'s main interface: Offers more options for defining the center of analysis, restrictions to tagged branches, etc., but is not amenable to batch processing.
   
-  You can clear *Ending radius* or set it to *NaN* ("Not a Number") to sample the entire image. This is particularly useful when [batch processing](#batch-processing) images with different dimensions.
+- *Sholl Analysis (Tracings)* commands accessed through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window'%} (SNT icon in the ImageJ toolbar): for cases in which viewing traces is not necessary, or when [batch processing](#batch-processing) is needed
 
-- <span id="step-size"></span>**Radius step size** The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements.
+To analyze cells without having to initialize SNT's tracing interface, run {% include bc path='Sholl Analysis (Tracings)...'%} and specify:
+  
+- **File** The [tracing file](/plugins/snt/faq#file-format) [(e)swc, .ndf, .json, or .traces extension] to be parsed
 
-  For stacks with anisotropic voxel size, setting *Radius step size* to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
+- **Path filtering** Whether the analysis should be restricted to particular paths, e.g., those tagged as  (*axon*, *dendrite*, *soma*, etc.). Note that if your tracings are not tagged you can do so in [SNT](/plugins/snt/analysis#sholl-analysis)
 
-- <span id="restrict"></span>**Restrict analysis to hemicircle/hemisphere** This option is only available when an orthogonal radius has been created (by holding {% include key key='Shift' %} while using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>). It can be used to limit the analysis to sub-compartments of the arbor.
+- **Center** The center of analysis, defined by:
+    - **Root nodes** These correspond to the starting nodes of primary (root) paths. If multiple primary paths exist, center becomes the centroid (mid-point) of their starting nodes
+    - **Soma node(s)** These correspond to nodes tagged as "soma". If _Ignore connectivity_ is chosen, the centroid of all soma-tagged nodes is used, even if such nodes are not at the root of the structure. If _Primary paths only_ is chosen only root nodes tagged as "soma" are considered
 
-  For horizontal lines, this option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line. For vertical lines, it instructs the plugin to measure intersections at sites equidistant from the center that have x-coordinates to the left/right of the drawn line.
+- **Metrics & Output** These are described in [Curve fitting](#descriptors-and-curve-fitting), [Choice of Methods](choice-of-methods), and [Output options](output-options).
 
-{% include img align="right" width="320px" src="bitmapsholl-prompt-v3.png" caption="Main prompt (v3.4.1) when input is a segmented image" %}
+- **Advanced Options** These are included in the _Options, Preferences and Resources_ dialog, and include:
 
-
-#### Multiple Samples/Noise Reduction
-
-- **Samples per radius *(2D images only)*** Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [integration method](#samples-integration). This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
-
-  Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 *Samples per radius*, the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101. Note that it would not make sense to increase the number of samples beyond the length (in pixels) of *Radius step size*. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
-
-- <span id="samples-integration"></span>**Samples integration *(2D images only)*** The measure of central tendency used to combine intersection counts when multiple *Samples per radius* are used. Options are *Mean* (the default), *Median* or *Mode*.
-
-- **Ignore isolated (6-connected) voxels *(3D images only)*** - If checked, single isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy image stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
-
-  Keep in mind that this is just a refinement feature, and you should not expect it to mitigate major artifacts derived from poor segmentation.
+  - **Skip somatic segments** If primary paths start 'far-away' from the soma, this options allows segments between the soma and neurite be ignored. Note that this option is only considered when the arbor being analyzed is rooted on a single-node tagged as 'Soma'
+  
+  - **Include zero counts** Whether entries associated with 0 intersections should be included in detailed tables, plots, etc.
 
 
-#### Descriptors and Curve Fitting
+# Analysis of Existing Profiles
+<span id="importing"></span>
+This option allows curve fitting to be applied to previously sampled profiles and is achieved via [scripting](/plugins/snt/scripting). It requires only a tab or comma delimited text file (.csv, .txt) listing a sampled Sholl profile. Have a look at the *Sholl Extensive Stats Demo* [template script](/plugins/snt/scripting#bundled-templates) for more details.
 
-- <span id="enclosing-radius-cutoff"></span>**Enclosing radius cutoff** The number of intersections to be used in the definition of [Enclosing radius](#enclosing-radius).
+# Parameters
 
-- <span id="primary-branches"></span>**Number of primary branches** The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [Schoenen ramification indices](#schoenen-sampled). It is automatically populated using multi-point counts if a multi-point ROI is [detected at startup](#startup-roi). Set it to zero (or *NaN*) to disable calculations of ramification indices.
+Some parameters are specific to the type of data used as input whether a segmented image or a reconstruction (tracing). When analyzing images, input values take into account the scale information of the image (which can be set using the {% include bc path='Analyze|Set Scale...'%} or {% include bc path='Image|Properties...'%} ({% include key keys='Shift|P' %}), the type of image (2D or 3D), and its [active ROI](#startup-roi).
 
-    -   **Infer from starting radius** If checked, the *Number of Primary branches* is inferred from the count of intersections at [Starting radius](#start-radius).
+For clarity, settings pertaining to direct parsing of images are tagged with <i class="fas fa-image"></i>, those pertaining to reconstructions (tracings) with <i class="fas fa-pen"></i>.
 
-{% include img align="right" width="320px" src="bitmapsholl-tabularprompt.png" caption="Main prompt (v3.4.3) when input is tabular data" %}
+## Shells
+<span id="definition-of-shells"></span>
+#### Start radius
+<i class="fas fa-image"></i> The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
 
--   **Fit profile and compute descriptors** If checked, data is fitted according to the chosen [method](#choice-of-methods) and appropriate [metrics](#metrics) calculated automatically. If unchecked, only sampled data is plotted.
+#### Step size
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements. For stacks with anisotropic voxel size, setting *Radius step size* to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
 
-    -   **Show fitting details** - Choose this option to have all of the parameters of the simplex fitting printed to the Log window. The {% include wikipedia title='Coefficient of determination' text='coefficient of determination'%} (*R<sup>2</sup>*, a measure of goodness of fit) is always stored in the *Sholl Results* table even when this option is not selected.
+#### End radius
+<i class="fas fa-image"></i> The radius of the largest (last) sampling circle/sphere. It is automatically calculated if a [line ROI is used](#usage). Note that the specified distance may not be actually sampled, if *Radius step size* is not a divisor of *Ending radius*-*Starting radius*. In this case, the program will choose the largest possible distance smaller than the specified value. You can clear *Ending radius* or set it to *NaN* ("Not a Number") to sample the entire image. This is particularly useful when [batch processing](#batch-processing) images with different dimensions.
 
+#### Hemishells
+<span id="restrict"></span>
+<i class="fas fa-image"></i> This option can be used to limit the analysis to sub-compartments of the arbor. This option instructs the algorithm to measure intersections at sites equidistant from the center that have y-coordinates above/below the drawn line or x-coordinates to the left/right of the center.
 
+#### Preview
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Previews sampling shells on the image being analyzed. Note that with 3D images, the previewed 2D circumferences do not reflect the actual 3D spheres used by the algorithm.
 
-#### Choice of Methods
-
-<span id="sholl-methods"></span>The [type of profile(s)](#methods-table) to be obtained. *Linear* (profile without normalization), or normalized profiles: *Linear-norm*, *Semi-log*, or *Log-log*.
-
-- **Polynomial** Specifies the degree of the [polynomial](#methods-table) to be fitted to the *Linear* profile[^4]. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
-
-- **Most informative** Select this option when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [Determination ratio](#dratio) to determine which of *Semi-log* or *Log-log* methods is more appropriate. *Linear-norm* is not performed. *Best fitting degree* and *Most informative* choices are obviously more computer-intensive and can be monitored by activating the *Show fitting details* checkbox.
-
-- <span id="normalizer"></span>**Normalizer** The property of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles. It is [described below](#methods-table).
-
-
-
-#### Output Options
-
-- **Create intersections mask** If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle and can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...'%} or using the *Options...* command in the *More»* drop-down menu.
- 
-  The default Lookup Table (LUT) used by the mask can be changed using {% include bc path='Image|Lookup Tables|'%}. The background color \[gray level: 0 (black) to 255 (white)\] can also be set in {% include bc path='Metrics & Options...'%}, or at any later point using {% include bc path='Image|Color|Edit Lut...'%} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...'%}
-
-{% include img align="right" src="/media/plugins/shollresultasrois.png" width="400" caption="Intersection points and sampling shells can be retrieved as ROIs. Intersection points are placed at edges of detected clusters of foreground pixels, not their center." %}
-
-- **Overlay sampling shells and intersection points (2D images only)** If checked, two sets of ROIS are added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels.
-
-- **Save results to** If checked, all the results (with the exception of the *[Sholl Table](#metrics)*) are saved to the specified directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data and 3) The Sholl mask. Files are named after the image filename and analysis method. Saving options can be specified in {% include bc path='Analysis|Sholl|Metrics & Options...'%} (*Options...* command in the *More»* drop-down menu).
-
-    -   **Do not display saved files** If checked, saved files are directly saved to disk and are not displayed. Activate this option when [batch processing](#batch-processing) files.
+#### Set center from Active ROI
+<i class="fas fa-image"></i> Updates the center position by reading the centroid of the active ROI.
 
 
+### Segmentation
 
-## Sholl Plots
+#### Samples per radius *(2D images only)*
+<span id="multiple-samplesnoise-reduction"></span>
+<i class="fas fa-image"></i> Defines the number of measurements to be performed at each sampling circumference. These measurements are then combined into a single value according to the chosen [integration method](#samples-integration). This strategy, a break from previous approaches, increases the accuracy of non-continuos profiles by diluting out the effect of processes extending tangent to the sampling circumference.
+
+Visually, this option can be imagined as the "thickness" of the sampling circumference: e.g., for a radius of 100 pixels and a value of 3 *Samples per radius*, the final number of intersections would integrate the measurements sampled at distances 99, 100 and 101. Note that it would not make sense to increase the number of samples beyond the length (in pixels) of *Radius step size*. For this reason, this option is limited to a draconian (and arbitrary) maximum of 10 samples.
+
+#### Samples integration *(2D images only)*
+<span id="samples-integration"></span>
+<i class="fas fa-image"></i> The measure of central tendency used to combine intersection counts when multiple *Samples per radius* are used. Options are *Mean* (the default), *Median* or *Mode*.
+
+#### Ignore isolated voxels *(3D images only)*
+<i class="fas fa-image"></i> Accessed thorough the _Options & Preferences_ dialog. If checked, single (6-connected) isolated voxels intersecting the surface of sampling spheres are not taken into account, which may allow for smoother profiles on noisy image stacks. However, it should be noted that connectivity in the stack volume may not reflect connectivity on the surface of a digitized sphere. Indeed, in certain contexts, it is possible (though unlikely) to obtain higher intersection counts when this filtering option is active.
+
+Keep in mind that this is just a refinement feature, and you should not expect it to mitigate major artifacts derived from poor segmentation.
+
+#### No. of parallel threads  *(3D images only)*
+<i class="fas fa-image"></i> Accessed thorough the _Options & Preferences_ dialog. Sets the max. no. of parallel threads to be used when parsing 3D stacks. Note that this options also sets the no. of threads used by ImageJ and SNT for other multithreaded tasks. Set it to 0 to use all of the available processors on your computer.
+
+#### Number of primary branches
+<i class="fas fa-image"></i> The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [Schoenen ramification indices](#schoenen-sampled). This option is only relevant when computing branching indices. Set it to zero to disable calculations of ramification indices. Choices include:
+
+- **Infer from starting radius** If checked, the *Number of Primary branches* is inferred from the count of intersections at [Starting radius](#start-radius).
+- **Infer from multipoint ROI** Uses multipoint counts if a multipoint ROI is [detected at startup](#startup-roi).
+
+
+### Polynomial fit
+<span id="descriptors-and-curve-fitting"></span>
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Specifies the degree of the [polynomial](#methods-table) to be fitted to the *Linear* profile[^4]. While the polynomial of best approximation, or "best fit", should be empirically determined for each analyzed cell type, it is possible to ask the plugin to predict the order of the fitting polynomial (or at least try) using the choice *Best fitting degree*. In this case, the plugin will loop through all the available choices of polynomials, perform each fit in the background and choose the one with the highest coefficient of determination.
+
+Detailed control over polynomial fitting is controlled by the options in the *Options a& Preferences* prompt, namely:
+
+- **Min. Degree** The lowest order to be considered when calculating the 'best-fit' polynomial
+- **Max. Degree** The highest order to be considered when calculating the 'best-fit' polynomial (degrees above 40 may not be supported)
+- **R-squared cutoff** The coefficient of determination (R<sup>2</sup>) cutoff used to discard 'inappropriate fits'. Only fits associated with a R^2 greater than this value will be considered
+- **K-S validation** Whether a fit should be discarded if two-sample Kolmogorov-Smirnov testing rejects the null hypothesis that fitted and profiled values are samples drawn from the same probability distribution (p&lt;0.05)
+
+### Normalization
+<span id="sholl-methods"></span><span id="choice-of-methods"></span>
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Options for computing metrics based on normalized ([Semi-log or Log-log](#methods-table) profiles), including [Sholl decay](#sholl-decay).
+
+- **Method** Specifies the type of method. Select *Automatically choose* when you cannot predict which type of normalized profile best describes the dataset. If chosen, the plugin will use the [Determination ratio](#dratio) to determine which of *Semi-log* or *Log-log* methods is more appropriate.
+
+- <span id="normalizer"></span>**Normalizer** The property of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles. Default is area (2D images)/volume (3D images). It is [described below](#methods-table).
+
+### Output Options
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Defines which kind of annotations should be output, including: 
+
+- **Plots** The type of plot(s) to be output. In addition to the [Linear and Normalized profiles](#methods-table) and their cumulative variants, it is also possible to obtain integrated density plots when parsing images. In this case rather than reporting on intersections, these plots report on normalized integrated density (sum of all voxel intensities) along the sampling shell normalized to the perimeter/surface of the shell.
+
+- **Tables** Defines which kind of tables should be output, including _Detailed_ and _Summary_ tables.
+
+- **Annotations** Defines which kind of annotations should be output, including:
+
+  - **LUT** The Lookup Table (LUT) used for annotations.
+
+  - **ROIs** Allows for two sets of ROIS to be added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels. Note that WYSIWYG versions (RGB images) of these masks can be obtained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...'%}. Note that ROIs are not created when outputting integrated density plots.
+
+  - **Mask** A 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle
+
+- **Save files** If checked, outputs are saved to the specified directory. Files are named after the image filename . 
+
+-   **Show fitting details** - Choose this option to have all the parameters of the simplex fitting printed to the Log window. The {% include wikipedia title='Coefficient of determination' text='coefficient of determination'%} (*R<sup>2</sup>*, a measure of goodness of fit) is always stored in the *Sholl Results* table even when this option is not selected
+
+
+# Sholl Plots
 
 {% include img align="center" name="sholl plots" src="shollplots" %}
 
@@ -314,40 +355,19 @@ The majority of parameters is shared by all the Analysis commands in the{% inclu
 
 <span style="display: inline-block; width: 25px">***log***</span> Natural logarithm, the logarithm to the base *e*
 
-<span style="display: inline-block; width: 25px">***S***</span>The [chosen property ](#choice-of-methods) of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles.  
+<span style="display: inline-block; width: 25px">***S***</span>The [property](#normalization) of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles.  
 <span style="display: inline-block; width: 25px"> </span>For 2D images, the *Perimeter* of the sampling circumference (2πr) or the *Area* of the corresponding circle (πr<sup>2</sup>)  
 <span style="display: inline-block; width: 25px"> </span>For 3D images, the *Surface* of the sampling sphere (4πr<sup>2</sup>) or its respective *Volume* (4/3πr<sup>3</sup>)  
+<span style="display: inline-block; width: 25px"> </span>*Annulus*/*Spherical shell* normalization is also available when performing [non-continuous sampling](#step-size). In this case, the normalization is performed against the area/volume between circumferences/spheres at *r* ± *Radius step size*/2
 
-> A third [normalization option](#normalizer) is also available when performing [non-continuous sampling](#step-size): *Annulus*/*Spherical shell*. In this case, the normalization is performed against the area of the annulus formed between the circumferences at *r* ± *Radius step size*/2 (2D images), or against the volume between the two spheres at *r* ± *Radius step size*/2 (3D images).  
 
+# Metrics
 
-## Metrics
+Morphometric descriptors and other properties of the arbor are printed to a dedicated table. Output is customizable using the _detailed metrics_ checkbox in *Options & Preferences...*
 
-Morphometric descriptors and other properties of the arbor are printed to a dedicated table named *Sholl Results*. Output is fully customizable using {% include bc path='Analysis|Sholl|Metrics & Options...'%} or using the *Options...* command in the *More»* drop-down menu. The first columns log analysis parameters: *Image Directory*, *filename* and *voxel unit*, *Channel*, *Lower* and *Upper Threshold levels*, *X,Y* (in pixels) and *Z* (slice number) coordinates of center of analysis, *Starting* and *Ending radius*, *Radius step*, *Number of Samples per Radius*, etc. Other parameters are described below.
+## Metrics based on sampled data
 
-{% include img align="center" name="Descriptors and metrics are listed in the Sholl Table (v2.4)" src="bitmapsholl-table"%}
-
-### Metrics based on sampled data
-
-{% include img align="right" name="Metrics & Options prompt (version 3.6.4)" src="sholloptionsprompt" %}
-
-- **Intersecting radii** The number of sampling radii intersecting the arbor at least once.
-
-- <span id="sum"></span> **Sum of intersections (*Sum inters.*)** The sum of all intersections.
-
-- <span id="mean-inters"></span> **Mean of intersections (*Mean inters.*)** *Sum inters.* divided by *Intersecting radii*. See also [Mean value](#mean-value-of-function), [FAQ](#faq:AUC)
-
-- **Median of intersections (*Median Inters.*)**  The median value of sampled intersections.
-
-- <span id="skewness"></span> **Skewness** The {% include wikipedia title='Skewness' text='skewness'%} of the sampled data, an indication of how symmetrical the distribution is around its mean. Positive values indicate an asymmetrical distribution with a longer tail to the right. Negative values indicate data with a longer tail to the left. A popular rule of thumb considers that if the skewness is greater than 1.0 (or less than -1.0), the distribution may be considered far from symmetrical. See also [Skewness (fitted data)](#skewness-fitted)
-
-- <span id="kurtosis"></span> **Kurtosis** The {% include wikipedia title='Kurtosis' text='kurtosis'%} of the sampled data, which quantifies whether the shape of the distribution matches that of a Gaussian distribution, assuming that a Gaussian distribution has a kurtosis of 0. A distribution more peaked than a Gaussian has a positive kurtosis while a negative value indicates a flatter distribution. See also [Kurtosis (fitted data)](#kurtosis-fitted)
-
-- <span id="max-inters"></span> **Highest count of intersections (*Max inters.*)**  The maximum value of sampled intersections, i.e., the maximum in a linear \[*N* vs *Distance*\] profile, reflecting the highest number of processes/branches in the arbor. See also [Critical value](#critical-value).
- 
-- <span id="max-inters-radius"></span> **Radius of highest count of intersections (*Max inters. radius*)** The distance at which the *Highest count of intersections* occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered. See also [Critical radius](#critical-radius)
-
-- <span id="schoenen-sampled"></span> **Schoenen Ramification index (*Ramification index (sampled)*)** A measure of ramification[^6]: the ratio between *Max inters.* and the number of [primary branches](#primary-branches). It is only calculated when [primary branches](#primary-branches) is valid and not zero. See also [Ramification index (fit)](#schoenen-fitted)
+- <span id="bi">**Branching Index (*BI*)** An index that summarizes neurite arborization as defined by Garcia-Segura & Perez-Marquez[^7]. Note that this index is broadly affected by radius step size. Comparison of this metric across cells sampled differently will be nonsensical, as [demonstrated here](https://forum.image.sc/t/access-sholl-profiles-with-python-script-from-tracings/78837/6). Step size should always be included (e.g., BI<sub>10μm</sub>=20) when reporting this metric.
 
 - <span id="centroid">**Centroid radius**  The abcissa of the {% include wikipedia title='Centroid' text='centroid'%} (i.e., the geometric center or barycenter) of the linear profile. It is [highlighted](#sholl-plots) on the *N* vs *Distance* plot.
 
@@ -355,53 +375,69 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 - <span id="enclosing-radius"></span> **Enclosing radius**  The last (thus, the widest) of *Intersecting radii* to be associated with the number of intersections specified by [Enclosing radius cutoff](#enclosing-radius-cutoff). For a cutoff of 1 (the default) *Enclosing radius* is the widest of *Intersecting radii*. It reflects the {% include wikipedia title='Feret diameter' text='Feret length'%} of the arbor.
 
+- <span id="kurtosis"></span> **Kurtosis** The {% include wikipedia title='Kurtosis' text='kurtosis'%} of the sampled data, which quantifies whether the shape of the distribution matches that of a Gaussian distribution, assuming that a Gaussian distribution has a kurtosis of 0. A distribution more peaked than a Gaussian has a positive kurtosis while a negative value indicates a flatter distribution. See also [Kurtosis (fitted data)](#kurtosis-fitted)
 
-### Metrics based on fitted data
+- <span id="max-inters"></span> **Highest count of intersections (*Max inters.*)**  The maximum value of sampled intersections, i.e., the maximum in a linear \[*N* vs *Distance*\] profile, reflecting the highest number of processes/branches in the arbor. See also [Critical value](#critical-value).
 
-- <span id="dratio"></span> **Determination ratio**  The ratio of the [coefficient of determination](#reg-r2) for the semi-log method and that for the log–log method[^5]. If the semi-log method is better relatively to the log–log method, the *Determination ratio* becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [most informative](#choice-of-methods). The prediction can be monitored by activating the [Show fitting details ](#descriptors-and-curve-fitting) checkbox.
+- **Intersecting radii** The number of sampling radii intersecting the arbor at least once.
 
-- <span id="sholl-decay"></span> **Sholl regression coefficient (*Regression coefficient*)** The slope (multiplied by -1) of the linear regression described in [(3)](#eq3) and [(4)](#eq4), i.e., *k*, a measure of the rate of decay of the number of branches with distance from the center of analysis. Higher *k* values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [second linear regression](#sholl-plots) centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [*Sholl table*](#metrics) under dedicated columns, e.g., *Sholl regression coefficient \[P10-P90\]*, when data within the 10<sup>th</sup>–90<sup>th</sup> percentile is used.
+- <span id="mean-inters"></span> **Mean of intersections (*Mean inters.*)** *Sum inters.* divided by *Intersecting radii*. See also [Mean value](#mean-value-of-function), [FAQ](#faq:AUC)
+
+- **Median of intersections (*Median Inters.*)**  The median value of sampled intersections.
+
+- <span id="max-inters-radius"></span> **Radius of highest count of intersections (*Max inters. radius*)** The distance at which the *Highest count of intersections* occurred, reflecting sites of highest branch density. Note that if the same maximum occurs multiple times, only the first distance is considered. See also [Critical radius](#critical-radius)
+
+- <span id="schoenen-sampled"></span> **Schoenen Ramification index (*Ramification index (sampled)*)** A measure of ramification[^6]: the ratio between *Max inters.* and the number of [primary branches](#primary-branches). It is only calculated when [primary branches](#primary-branches) is valid and not zero. See also [Ramification index (fit)](#schoenen-fitted)
+
+- <span id="skewness"></span> **Skewness** The {% include wikipedia title='Skewness' text='skewness'%} of the sampled data, an indication of how symmetrical the distribution is around its mean. Positive values indicate an asymmetrical distribution with a longer tail to the right. Negative values indicate data with a longer tail to the left. A popular rule of thumb considers that if the skewness is greater than 1.0 (or less than -1.0), the distribution may be considered far from symmetrical. See also [Skewness (fitted data)](#skewness-fitted)
+
+- <span id="sum"></span> **Sum of intersections (*Sum inters.*)** The sum of all intersections.
+
+<br><br>
+{% include img align="center" width="750px" src="/media/plugins/snt/sholl-metrics-overview.jpg" %}
+Overview of Sholl metrics) based on curve fitting including the Sholl regression coefficient (k), Critical value (Nm), Critical radius (rc) and Mean value (Nav). Differences between sampled and fitted maxima are shaded in gray. The centroid of the sampled profile is marked (×). Schoenen ramification index (RI) is the ratio between number of branches at the maximum and the number of primary branches, using either sampled data or the fitted Nm. (Ferreira T, et al., 2014, [supplementary booklet](https://www.nature.com/articles/nmeth.3125#Sec2))
+<br><br>
+
+## Metrics based on fitted data
+
+- <span id="bi-fitted">**Branching Index (*BI fitted*)** the [branching index](#bi) obtained from the fitted profile.
+
+- <span id="critical-radius"></span> **Critical radius**  The distance at which *Critical value* occurs. By default, it is calculated with a precision of 1/1000 of *Radius step size*. Abbreviation: *r<sub>c</sub>*. See also [Max inters. radius](#max-inters-radius)
+
+- <span id="critical-value"></span> **Critical value**  The local maximum of the polynomial fit, i.e, *N* at *Critical radius* in [(1)](#eq1). Abbreviation: *N<sub>m</sub>*. See also [Max inters.](#max-inters)
+
+{% include notice icon="tip" content='**Nomenclature**: [Previous authors](#references) have used different terms to describe the largest value taken by the Sholl profile, including *Dendrite maximum*. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#publication)), Here we adopt the term [Critical radius](#critical-radius), renaming *Dendrite maximum* (*N<sub>m</sub>*) to [Critical value](#critical-value).' %}
+
+- <span id="dratio"></span> **Determination ratio**  The ratio of the [coefficient of determination](#reg-r2) for the semi-log method and that for the log–log method[^5]. If the semi-log method is better relatively to the log–log method, the *Determination ratio* becomes larger than 1. It is the parameter used by the plugin to silently predict the normalization method that is the [most informative](#choice-of-methods). The prediction can be monitored by selecting *Debug mode* in *Options and Preferences*.
+
+- <span id="kurtosis-fitted"></span> **Kurtosis (*Kurtosis (fit)*)**  The [kurtosis](#kurtosis) of the fitted polynomial distribution between [Starting radius](#start-radius) and [Ending radius](#end-radius).
+
+- <span id="mean-value-of-function"></span> **Mean value**  The mean value[^4] of the fitted polynomial function [(1)](#eq1), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*. On the Sholl plot, it is [highlighted](#sholl-plots) as the height of the rectangle that has the width of *Enclosing radius* − *First intersecting radius* and the same area of the area under the fitted curve on that discrete interval. It is analogous to [Mean inters.](#mean-inters), the arithmetic mean of sampled intersections throughout the arbor (cf. [Metrics based on sampled data](#metrics-based-on-sampled-data)). By default, (see [Advanced Usage](#advanced-usage)), it is calculated with a precision of 1/1000 of *Radius step size*.
+
+- **Polynomial R<sup>2</sup> (*Polyn. R^2*)** The coefficient of determination of the polynomial fit described in [(1)](#eq1).
 
 - **Regression intercept**  The y-coordinate *m* described in [(3)](#eq3) and [(4)](#eq4).
 
 - <span id="reg-r2"></span> **Regression R<sup>2</sup> (*Regression R^2*)**  The coefficient of determination of the linear regression described in [(3)](#eq3) and [(4)](#eq4).
 
-- <span id="critical-value"></span> **Critical value**  The local maximum of the polynomial fit, i.e, *N* at *Critical radius* in [(1)](#eq1). Abbreviation: *N<sub>m</sub>*. See also [Max inters.](#max-inters)
-
-- <span id="critical-radius"></span> **Critical radius**  The distance at which *Critical value* occurs. By default (see [Advanced Usage](#advanced-usage)), it is calculated with a precision of 1/1000 of *Radius step size*. Abbreviation: *r<sub>c</sub>*. See also [Max inters. radius](#max-inters-radius)
-
-{% include notice icon="tip" content='**Nomenclature**: [Previous authors](#references) have used different terms to describe the largest value taken by the Sholl profile, including *Dendrite maximum*. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [List of citations](#publication)), Here we adopt the term [Critical radius](#critical-radius), renaming *Dendrite maximum* (*N<sub>m</sub>*) to [Critical value](#critical-value).' %}
-
-- <span id="mean-value-of-function"></span> **Mean value**  The mean value[^4] of the fitted polynomial function [(1)](#eq1), representing the average of intersections over the whole area occupied by the arbor. Abbreviation *N<sub>av</sub>*. On the Sholl plot, it is [highlighted](#sholl-plots) as the height of the rectangle that has the width of *Enclosing radius* − *First intersecting radius* and the same area of the area under the fitted curve on that discrete interval. It is analogous to [Mean inters.](#mean-inters), the arithmetic mean of sampled intersections throughout the arbor (cf. [Metrics based on sampled data](#metrics-based-on-sampled-data)). By default (see [Advanced Usage](#advanced-usage)), it is calculated with a precision of 1/1000 of *Radius step size*.
-
 - <span id="schoenen-fitted"></span> **Schoenen Ramification index (*Ramification index (fit)*)** Schoenen Ramification index retrieved from fitted profile: The ration between [Critical value](#critical-value) and [Number of primary branches](#primary-branches). See also [Ramification index (sampled)](#schoenen-sampled)
+
+- <span id="sholl-decay"></span> **Sholl regression coefficient (*Regression coefficient*)** The slope (multiplied by -1) of the linear regression described in [(3)](#eq3) and [(4)](#eq4), i.e., *k*, a measure of the rate of decay of the number of branches with distance from the center of analysis. Higher *k* values reflect larger changes in the function log(N/S). To optimize the fit, the plugin retrieves a [second linear regression](#sholl-plots) centered around the median distance, excluding distances at the edges of the profile. Details of this second fit are also registered on the [*Sholl table*](#metrics) under dedicated columns, e.g., *Sholl regression coefficient \[P10-P90\]*, when data within the 10<sup>th</sup>–90<sup>th</sup> percentile is used.
 
 - <span id="skewness-fitted"></span> **Skewness (*Skewness (fit)*)**  The [skewness](#skewness) of the fitted polynomial distribution between [Starting radius](#start-radius) and [Ending radius](#end-radius).
 
-- <span id="kurtosis-fitted"></span> **Kurtosis (*Kurtosis (fit)*)**  The [kurtosis](#kurtosis) of the fitted polynomial distribution between [Starting radius](#start-radius) and [Ending radius](#end-radius).
 
-- **Polynomial R<sup>2</sup> (*Polyn. R^2*)** The coefficient of determination of the polynomial fit described in [(1)](#eq1).
+# Complementary Tools
 
-
-## Complementary Tools
-
-SNT provides several scripts and commands that faciliate all type of Sholl-related analyses. You'll find them through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window'%}, as well as in Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu. Here are some examples:
-
-{% include gallery align="center" content=
-"
-/media/plugins/animatedpolyfit.gif | Sampled data from the ddaC cell being fitted to polynomials of varying degree ([BAR](/plugins/bar) script)
-/media/plugins/combineshollprofiles.png | *Combine Sholl Profiles...* aggregates individual profiles into a single plot, obtaining the average profile (with standard deviation) of a group of cells (v3.6.12 snapshot)
-/media/plugins/snt/sholl-convex-hull.png | The *Convex Hull as Center* script exemplifies how to adopt arbitrary focal points, in this case the centroid of the neuron's convex hull (v4.1.2 snapshot)
-"
-%}
+SNT provides several scripts and commands that facilitate all type of Sholl-related analyses. You'll find them through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window'%} (SNT icon in the ImageJ toolbar), as well as in Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu.
 
 {% capture tip%}
-For additional image processing tools have a look at the growing list of [update sites](/list-of-update-sites). For more information on image processing have a look at [tutorials](/tutorials), [segmentation](/imaging/segmentation) and the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) .
+For more information on image processing routines have a look at [tutorials](/tutorials), [segmentation](/imaging/segmentation) and the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) .
 {% endcapture %}
 {% include notice icon="tip" content=tip %}
 
 
-In addition, several [BAR](/plugins/bar) commands -- installed by subscribing to the [BAR update site](/plugins/bar#installation) -- were designed to complement the first release of *Sholl Analysis*. While, some of these tools have meanwhile become outdate, some remain relevant. These include:
+In addition, several [BAR](/plugins/bar) commands -- installed by subscribing to the [BAR update site](/plugins/bar#installation) -- were designed to complement the first release of *Sholl Analysis*. While, some of these tools have meanwhile become outdated, some remain relevant. These include:
 
 - **[Segmentation](#pre-processing) tools**  Thresholding, shape-based masking and edge-detection routines ([full list](/plugins/bar#list-of-bars))
 
@@ -414,15 +450,15 @@ In addition, several [BAR](/plugins/bar) commands -- installed by subscribing to
 - **{% include github org='tferr' repo='Scripts' branch='master' path='BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#interactive-plotting' label='Interactive Plotting' %}** Whole-purpose routine that plots data from imported spreadsheets.
 
 
-## Pre-processing
+# Pre-processing
 
-This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [Complementary Tools](#complementary-tools), several routines listed here as distributed through the [BAR](/plugins/bar) [update site](/list-of-update-sites).
+This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets.
 
 
-#### Noise  
+## Noise  
 
 Noise can be mitigated through the usage of processing filters. Specially useful are edge-preserving filters:
-
+- [Tubeness](/plugins/tubeness) and [Frangi](/plugins/frangi), see SNT's [Secondary Layer Wizard](/plugins/snt/manual#tracing-on-secondary-image)
 - [Rolling Ball](/plugins/rolling-ball-background-subtraction) or "Top hat" filters, e.g., {% include bc path="Process | Subtract Background..." %}
 - Median Filtering (2D/3D), e.g., {% include bc path="Process | Filters |" %}, {% include bc path="Plugins | 3D |" %}
 - [Anisotropic Diffusion](/plugins/anisotropic-diffusion-2d), {% include bc path="Plugins | Process | Anisotropic Diffusion 2D" %}
@@ -430,17 +466,18 @@ Noise can be mitigated through the usage of processing filters. Specially useful
 - Shen-Castan Edge Detector ([BAR](/plugins/bar) plugin), {% include bc path="BAR | Segmentation |" %}
 - Frequency filters, e.g., {% include bc path="Process | FFT | Bandpass Filter..." %}
 
-#### Uneven Illumination  
+## Uneven Illumination  
 
-Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.list.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. Examples:
+Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.list.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. E.g.:
 
+- [Tubeness](/plugins/tubeness) and [Frangi](/plugins/frangi), see SNT's [Secondary Layer Wizard](/plugins/snt/manual#tracing-on-secondary-image)
 - [Bleach Correction](/plugins/bleach-correction), {% include bc path="Image | Adjust |" %}
 - [Attenuation correction](http://imagejdocu.list.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
 
-#### Segmentation  
+## Segmentation  
 
 It is possible to adopt more sophisticated [segmentation algorithms](/imaging/segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
-
+- [Trainable Weka Segmentation](/plugins/tws), machine learning algorithms for pixel-based segmentations
 - [Local Threshold](/plugins/auto-local-threshold), {% include bc path="Image | Adjust |" %}
 - [Robust Automatic Threshold Selection](/plugins/rats), {% include bc path="Plugins | Segmentation |" %}
 - [Level Sets](/plugins/level-sets), {% include bc path="Plugins | Segmentation |" %}
@@ -450,12 +487,11 @@ It is possible to adopt more sophisticated [segmentation algorithms](/imaging/se
 - [BAR](/plugins/bar) scripts for manual curation of thresholded images, {% include bc path="BAR | [Segmentation](/plugins/bar#segmentation) |" %}
 
 
-## Batch Processing
-
+# Batch Processing
 
 The Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu lists demo scripts that perform batch operations. For sake of completeness, here is a small tutorial on how to write a macro from the ground up:
 
-### Tutorial: Batch Analysis of Images using IJM Languages
+## Tutorial: Batch Analysis of Images using IJM Languages
 
 Any macro must set a center, or allow the Sholl Analysis plugin to access a ROI marking it. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
@@ -523,7 +559,7 @@ run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear 
 That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %} 
 
 
-### Examples:
+## Examples:
 
 More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting). Here are some examples:
 
@@ -531,9 +567,7 @@ More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting).
 
 {% include code org='morphonets' repo='SNT' branch='master' path='src/main/resources/script_templates/Neuroanatomy/Analysis/Sholl_Extract_Profile_From_Image_Demo.py' label='Extract Profile from Image (Python)' %}
 
-
-
-## FAQ
+# FAQ
 
 **General**
 
@@ -548,11 +582,11 @@ More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting).
 
 The authoritative reference for *Sholl Analysis* is:
 
--   Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. (**2014**), [Neuronal morphometry directly from bitmap images](http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html), *Nature Methods* 11(10): 982–984.
+- {% include citation id='plugins/sholl-analysis' %}
 
-The [authoritative reference](/contribute/citing) for Fiji:
+The authoritative reference for *SNT* is:
 
--   Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B, Tinevez JY, White DJ, Hartenstein V, Eliceiri K, Tomancak P, Cardona A. (**2012**) [Fiji: an open-source platform for biological-image analysis](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html), *Nature Methods* 9(7): 676-682.
+- {% include citation id='plugins/snt' %}
 
 </dd>
 </dl>
@@ -612,7 +646,7 @@ Have a look at [ Pre-processing](#pre-processing).
 <dl>
 <dd markdown="1">
 
-As mentioned several times, the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [segmentation routines](#pre-processing). On the other hand, if you already obtained binary images make sure you are [interpreting them properly](#cf-segmentation). You should also confirm that [Ending radius](#end-radius) does not intersect objects in the image canvas that extend beyond the analyzed arbor. As a rule of thumb, always refer to the [Sholl mask](#faq:sholl-mask) to visually inspect which regions of the image have been measured.
+The quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [segmentation routines](#pre-processing). On the other hand, if you already obtained binary images make sure you are [interpreting them properly](#cf-segmentation). You should also confirm that [Ending radius](#end-radius) does not intersect objects in the image canvas that extend beyond the analyzed arbor. As a rule of thumb, always refer to the [Sholl mask](#faq:sholl-mask) to visually inspect which regions of the image have been measured.
 
 </dd>
 </dl>
@@ -651,19 +685,7 @@ Use the Edit this page option on the [top](#top) of the page and edit its conten
 <dl>
 <dd markdown="1">
 
-The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.net/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...'%} or {% include bc path='Image|Type|'%} commands.
-
-</dd>
-</dl>
-<li markdown="1">
-
-<span id="faq:compartments"></span>**I cannot see the hemicircle/hemisphere option. Why?**
-
-</li>
-<dl>
-<dd markdown="1">
-
-This option is only available if an orthogonal line has been created by holding {% include key key='Shift' %} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) for the full list of key modifiers that can be used while creating straight line ROIs.
+The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multichannel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [ImageJ User Guide](https://imagej.net/ij/docs/guide/), RGB images can be converted using {% include bc path='Image|Color|Channels Tool...'%} or {% include bc path='Image|Type|'%} commands.
 
 </dd>
 </dl>
@@ -676,18 +698,6 @@ This option is only available if an orthogonal line has been created by holding 
 <dd markdown="1">
 
 The Z-position (depth) of the center of analysis is the active Z-slice of the stack. With multichannel (composite) images, the active channel also defines the C-position. Both are reported in the *Sholl Results* table.
-
-</dd>
-</dl>
-<li markdown="1">
-
-<span id="faq:saving"></span>**I cannot see the option to save the results. Why?**
-
-</li>
-<dl>
-<dd markdown="1">
-
-The image you are trying to analyze is not saved locally. Saving it to a local directory (e.g., your Desktop or Home folder) should re-enable it.
 
 </dd>
 </dl>
@@ -715,20 +725,7 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 </li>
 <dl>
 <dd markdown="1">
-
-Select the table, then choose {% include bc path="File | Save As..." %}The filename extension can be specified using the *More » Options...* command (see the [ImageJ User Guide](https://imagej.net/ij/docs/guide/) for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
-
-</dd>
-</dl>
-<li markdown="1">
-
-<span id="faq:precision"></span>**Can I modify the way data is displayed?**
-
-</li>
-<dl>
-<dd markdown="1">
-
-Mostly, using {% include bc path='Analysis|Sholl|Metrics & Options'%} (also listed in the *More » Options...* shortcut), including the number of decimal places reported by the *Sholl Results* table or the usage of scientific notation. To resize plots, use the *More »* dropdown menu in the *Options* dialog.
+Use Fiji's {% include bc path="File | Export | Table..." %} command or SNT's {% include bc path="File | Save Tables and Analysis Plots.." %} ([details](/plugins/snt/manual#save-tables--analysis-plots)). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 
 </dd>
 </dl>
@@ -820,7 +817,7 @@ Have a look at [Complementary Tools](#complementary-tools).
 <dl>
 <dd markdown="1">
 
-It is likely that frequent interactions with the dialog prompt(s) (from which the Recorder retrieves user-specified parameters) have "confused" ImageJ. While this process is usually flawless, it may happen that repeated triggering of GUI-specific commands that are not recordable (e.g., *[Cf. Segmentation](#cf-segmentation)* or *[Import Other Data](#importing)* buttons) may lead to an incomplete recording. The solution is to repeat the recording, while minimizing such interactions.
+It is likely that frequent interactions with the dialog prompt(s) (from which the Recorder retrieves user-specified parameters) have "confused" ImageJ. The solution is to repeat the recording, while minimizing such interactions.
 
 </dd>
 </dl>
@@ -849,19 +846,19 @@ Release notes are available on the {% include github org='morphonets' repo='SNT'
 
 - [SNT](/plugins/snt)
 
-- [List of ImageJ extensions](/list-of-extensions#neuroanatomy), which you can filter by the Neuroanatomy category. These include [NeuronJ](/plugins/neuronj), an alternative to SNT. NeuronJ features a friendly interface but is restricted to 2D images, is not capable of SWC export and is no longer under active development
+- [List of ImageJ extensions](/list-of-extensions#neuroanatomy), which you can filter by the Neuroanatomy category
 
 - [Neuroanatomy update site](/update-sites/neuroanatomy), distributing SNT, Sholl and related plugins, namely [Strahler_Analysis](/plugins/strahler-analysis)
 
 
-## Publication
+# Publication
 
 {% include citation %}
 
 *Citting manuscripts can be retrieved using [Scholar](https://scholar.google.com/scholar?cites=15441574333602897335&as_sdt=2005&sciodt=1,5&hl=en) or [PubMed](http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25264773/citedby/?tool=pubmed), although many [more publications seem to be using it](https://scholar.google.com/scholar?hl=en&as_sdt=1%2C5&as_vis=1&q=fiji+AND+%22Sholl+Analysis%22&btnG=). See [here](/plugins/snt/faq#how-do-i-cite-snt) for details on how to cite SNT.*
 
 
-## References
+# References
 
 [^2]: Sholl DA. Dendritic organization in the neurons of the visual and motor cortices of the cat. J Anat. 1953 Oct;87(4):387-406. [PMID: 13117757](http://www.ncbi.nlm.nih.gov/pubmed?term=13117757)
 
@@ -872,3 +869,7 @@ Release notes are available on the {% include github org='morphonets' repo='SNT'
 {% include citation fn=5 doi='10.1016/j.jtbi.2006.09.022' %}
 
 {% include citation fn=6 doi='10.1007/s12021-010-9095-5' %}
+
+{% include citation fn=7 doi='10.1016/j.jneumeth.2014.01.016' %}
+
+{% include citation fn=8 doi='10.1111/j.1460-9568.2010.07283.x' %}

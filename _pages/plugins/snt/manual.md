@@ -77,7 +77,7 @@ All SNT dialogs (including the _Neuroanatomy Shortcut Window_ support drag-and-d
 This option assumes you are tracing on the same spatial coordinates of an annotated neuropil for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
 
 #### Load Demo Dataset...
-Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, and to create [Minimal reproducible example](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets requires an internet connection.
+Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/step-by-step-instructions), and to create [Minimal reproducible example](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets requires an internet connection.
 
 #### Save Tracings ›
 Options to save/export all of traced paths in the SWC and TRACES formats. Note that it is also possible to export subsets of paths using the [Path Manager](#path-manager).
