@@ -217,7 +217,6 @@ Keep in mind that this is just a refinement feature, and you should not expect i
 <i class="fas fa-image"></i> Accessed thorough the _Options & Preferences_ dialog. Sets the max. no. of parallel threads to be used when parsing 3D stacks. Note that this options also sets the no. of threads used by ImageJ and SNT for other multithreaded tasks. Set it to 0 to use all of the available processors on your computer.
 
 #### Number of primary branches
-<span id="number-of-primary-branches"></span>
 <i class="fas fa-image"></i> The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [Schoenen ramification indices](#schoenen-sampled). This option is only relevant when computing branching indices. Set it to zero to disable calculations of ramification indices. Choices include:
 
 - **Infer from starting radius** If checked, the *Number of Primary branches* is inferred from the count of intersections at [Starting radius](#start-radius).
