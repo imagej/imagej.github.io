@@ -388,14 +388,14 @@ If the search is still active, you might as well click "Pause" so halt explorati
 
   - Grayscale: Only the points in the fill are preserved under the original pixel intensities. This is useful to e.g., render the structure in the [legacy 3D Viewer](/plugins/3d-viewer) or [sciview](/plugins/sciview) to do a surface rendering of the neuron.
 
-  - Labels: Each fill gets assigned a unique pixel value, so that all paths are distinguishable from each other.
+  - Labels: Each group of paths (Tree) gets assigned a unique pixel value so that such groups are distinguishable from each other. Note that scripting can be used to extend this option to individual paths so that each path in a group gets assigned a unique label (see the *Fill_Demo.py* script and this [discussion](https://forum.image.sc/t/batch-filling-in-snt/58733/7) for details)
 
   - Annotated Distance map: Points along the fill are assigned the _explored distance_ as described earlier. Useful for debugging and/or perusing the fill operation
 
   - CSV export: Exports details of the filling operation as tabular data. This includes [distance thresholds](#iii-understanding-fill-distances-and-distance-threshold), algorithms used, and volumes of filled paths
 
 <div align="center">
-  <img src="/media/plugins/snt/filling-output-examples.png" title="Fill Manager export options. Properties of fills can also be exported to CSV files." width="850" />
+  <img src="/media/plugins/snt/filling-output-examples.png" title="Fill Manager export options as demoed by the Fill_Demo.py script. Properties of fills can also be exported to CSV files." width="850" />
 </div>
 
 {% capture text%}
