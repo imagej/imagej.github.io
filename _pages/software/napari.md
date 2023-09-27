@@ -20,12 +20,20 @@ closely with the Python ecosystem, napari can be easily coupled to leading
 machine learning and image analysis tools (e.g. `scikit-image`, `scikit-learn`,
 `TensorFlow`, `PyTorch`), enabling more user-friendly automated analysis.
 
-A plugin called [napari-imagej](https://github.com/imagej/napari-imagej) is
-currently being developed to enable use of [ImageJ2](/software/imagej2)
-commands from the napari interface. Like other ImageJ2 Python integrations
-(e.g. [CellProfiler](/software/cellprofiler)), the napari-imagej plugin is
-built on [PyImageJ](https://pypi.org/project/pyimagej).
+## napari-imagej
 
-## Publication
+A plugin called [napari-imagej](https://napari.imagej.net/) enables use of
+[ImageJ](/software/imagej) and [ImageJ2](/software/imagej2) commands from the
+napari interface. Like other ImageJ2 Python integrations (e.g.
+[CellProfiler](/software/cellprofiler)), the napari-imagej plugin is built on
+[PyImageJ](/software/pyimagej).
+
+For further details, see the napari-imagej website at:
+
+{% include link-banner url="https://napari.imagej.net/" %}
+
+## Publications
 
 {% include citation %}
+
+{% include citation doi="10.1038/s41592-023-01990-0" %}
