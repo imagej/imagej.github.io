@@ -21,6 +21,7 @@ Available on the list of [ImageJ updates sites](/update-sites/following). Requir
 ### Brief overview
 - Verify accurate scaling (Image > Properties)
 - Prepare a mask of the region to be analyzed
+- (Optional but recommended) Deconvolve the images
 - Convert images to 32-bit (Image > Type > 32-bit)
 - Measure and subtract the mean background for both images (Process > Math > Subtract)
 - Run the plugin
