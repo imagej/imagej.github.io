@@ -42,7 +42,7 @@ TreeJ is now accessible in {% include bc path='Plugins | TreeJ'%}.
 ## Usage
 
 
-https://github.com/L-EL/imagej.github.io/assets/9355033/9d5f1744-8643-4b27-bc23-060b00241ee2
+{% include video platform='youtube' id='8YjHjr3D8Jo'%}
 
 
 #### Input
