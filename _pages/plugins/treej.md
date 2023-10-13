@@ -41,6 +41,10 @@ TreeJ is now accessible in {% include bc path='Plugins | TreeJ'%}.
 
 ## Usage
 
+
+https://github.com/L-EL/imagej.github.io/assets/9355033/9d5f1744-8643-4b27-bc23-060b00241ee2
+
+
 #### Input
 
 TreeJ should be launched on a 2D or 3D labeled image (8 bits, 16 bits or 32 bits). The labeling can be discontinuous and watershed lines, if present, are not a problem. The region labels with zero are considered as the background.
