@@ -35,8 +35,8 @@ or
     1.  Select {% include bc path='Help | Update...' %} from the menu to start the [updater](/plugins/updater).
     2.  Click on *Manage update sites*. 
     3.  Activate the TreeJ update site and close the dialog. 
-    4.  Click *Apply changes* and restart ImageJ.
-    5.  
+    4.  Click *Apply changes* and restart ImageJ. 
+    
 TreeJ is now accessible in {% include bc path='Plugins | TreeJ'%}.
 
 ## Usage
@@ -108,5 +108,6 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
 
 ## Other links
 Visit the [Github](https://github.com/L-EL/TreeJ) to have information on the development of TreeJ.
+
 See the related paper.
 
