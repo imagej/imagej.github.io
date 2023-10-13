@@ -2,7 +2,7 @@
 mediawiki: TreeJ
 name: "TreeJ"
 title: TreeJ
-categories: [Analysis]
+categories: [Annotation, Analysis]
 initial-release-date: "July, 2016"
 team-founders:
 - Elise Laruelle | https://github.com/L-EL
@@ -27,12 +27,28 @@ This plugin contains an interface to reconstruct interactively and recursively a
 
 <img src="/media/plugins/treejexample.png" width="900"/> 
 
+## Installation
+
+- Download the [.jar](https://github.com/L-EL/TreeJ/releases) and place it in the *Plugins* directory of the ImageJ/Fiji directory
+or 
+-   In Fiji, [ add](/update-sites/following#add-update-sites) the TreeJ site to your list of update sites:
+    1.  Select {% include bc path='Help | Update...' %} from the menu to start the [updater](/plugins/updater).
+    2.  Click on *Manage update sites*. 
+    3.  Activate the TreeJ update site and close the dialog. 
+    4.  Click *Apply changes* and restart ImageJ. 
+    
+TreeJ is now accessible in {% include bc path='Plugins | TreeJ'%}.
 
 ## Usage
+
+
+https://github.com/L-EL/imagej.github.io/assets/9355033/9d5f1744-8643-4b27-bc23-060b00241ee2
+
 
 #### Input
 
 TreeJ should be launched on a 2D or 3D labeled image (8 bits, 16 bits or 32 bits). The labeling can be discontinuous and watershed lines, if present, are not a problem. The region labels with zero are considered as the background.
+As TreeJ changes labels in the image, the input image is protected but the output images may have a different depth.
 
 ------------------------------------------------------------------------
 
@@ -78,7 +94,7 @@ Validate with the **Unpair** button.
 To saved tree information, two possible formats :
 
 -   **.treeV** home made format, compatible as input of TreeJ. Contains tree and tag information
--   **.nwk** [http://evolution.genetics.washington.edu/phylip/newicktree.html newick tree](http://evolution.genetics.washington.edu/phylip/newicktree.html_newick_tree), compatible as input of TreeJ, but contains only the tree information
+-   **.tree** [http://evolution.genetics.washington.edu/phylip/newicktree.html newick tree](http://evolution.genetics.washington.edu/phylip/newicktree.html_newick_tree), compatible as input of TreeJ, but contains only the tree information
 
 The drawing tree can be exported to a PDF file (named with the input image name) with the **Export to PDF** button.
 
@@ -94,8 +110,8 @@ From a segmented image of an Arabidospsi thaliana embryo of 122 cells (FigA), a 
 
 ![](/media/plugins/filiationtools.png)
 
-## Installation
+## Other links
+Visit the [Github](https://github.com/L-EL/TreeJ) to have information on the development of TreeJ.
 
-Download [.jar](https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar) and put into "plugin" directory of ImageJ or Fiji directory. Reload ImageJ/Fiji and TreeJ will be accessible in the {% include bc path='Plugin | TreeJ'%} menu.
+See the related paper.
 
- 
