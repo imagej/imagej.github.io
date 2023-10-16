@@ -413,7 +413,7 @@ This option assumes you have [sciview](/plugins/sciview) properly installed. sci
 
 ### Legacy 3D Viewer
 
-The Legacy 3D Viewer is a functional tracing canvas, but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step_instructions#tracing-in-the-legacy-3d-viewer).
+The Legacy 3D Viewer is a functional tracing canvas, but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer).
 
 
 # Contextual Menu
