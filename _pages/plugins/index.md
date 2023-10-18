@@ -32,8 +32,8 @@ If the plugin you want is not distributed via an ImageJ update site, please enco
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's `plugins` folder:
 
--   If the file suffix is `.jar` or `.class` then it is usually enough to simply restart ImageJ after dropping the file into `plugins`.
--   If the file suffix is `.java` then you typically must execute the [Compile and Run](https://imagej.net/ij/docs/guide/146-31.html#toc-Subsection-31.5) command on the file to first compile it to a `.class`. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's `Plugins` menu.
+-   If the file suffix is `.jar` or `.class` then it is usually enough to simply restart ImageJ after dropping the file into `plugins` (or any similar directory mentioned in the following sections).
+-   If the file suffix is `.java` then you typically must manually compile it to a `.class` using the `javac` utility. For example, running the following from the directory containing your plugin: `javac -cp "$IJ_DIR/jars/*" MyCoolPlugin_.java`. This assumes environment variable `IJ_DIR` set to your ImageJ installation directories (`$IJ_DIR` for MacOS/Linux, `%IJ_DIR%` for Windows). After running this command once you will have a `.class` file that you can use as indicated above. Don't forget the `_` required in the name!
 
 ### User-specific plugins
 
@@ -45,21 +45,21 @@ Power users may wish to configure exactly which folder(s) ImageJ scans for plugi
 
 ### Multiple plugin directories
 
-For ultimate control, ImageJ also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the `ij1.plugin.dirs` system property.
+For ultimate control, ImageJ also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the `ij1.plugin.dirs` system property. Note that the trailing double-separator, `--`, is required!
 
 E.g.,
 
 -   on 64-bit Linux:
 	```shell
-	$IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins
+	$IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=/path/to/my/plugins --
 	```
 -   On macOS:
 
-$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins
+$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=/path/to/my/plugins --
 
 -   On 64-bit Windows:
 	```shell
-	%IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs=%IJ_DIR%\jars;%IJ_DIR%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins
+	%IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs="C:\path\to\my\plugins" --
 	```
 
 Where `$IJ_DIR` (or `%IJ_DIR%` on Windows) is the path to your ImageJ installation.
