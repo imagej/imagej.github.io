@@ -55,7 +55,9 @@ E.g.,
 	```
 -   On macOS:
 
-$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=/path/to/my/plugins --
+	```shell
+	$IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=/path/to/my/plugins --
+	```
 
 -   On 64-bit Windows:
 	```shell
