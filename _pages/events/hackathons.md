@@ -646,7 +646,7 @@ ImageJ has benefitted from many hackathons over the years:
       </td>
       <td>
         <p><a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br>
-        Ostrava, Czech Republic</p>
+        Ostrava, Czechia</p>
       </td>
       <td>
         <p>{% include person-list ids='fjug|tpietzsch|tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|PetrBainar|awalter17|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode|bogovicj|NicoKiaru|Jana Klímová|kozusznik|Michal Krumnikl|Manan Lalit|Emil Melnikov|Pavel Moravec|Václav Svatoň|tischi|turekg|Tomas Vicar|Marwan Zouinkhi' %}</p>
@@ -709,7 +709,7 @@ ImageJ has benefitted from many hackathons over the years:
         2022 Sep 9</p>
       </td>
       <td>
-        <p>Prague, Czech Republic<br>
+        <p>Prague, Czechia<br>
         organized by<br>
         <a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br></p>
       </td>
@@ -830,6 +830,22 @@ ImageJ has benefitted from many hackathons over the years:
       </td>
       <td>
         <p>Post-CZI-Imaging-2023 hackathon: <a href="/software/napari">napari</a> and <a href="/plugins/sciview">sciview</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><a href="https://www.ceitec.eu/imglib2-and-bigdataviewer-hackathon-brno/a4534">2023 Oct 10 -<br>
+        2023 Oct 18</p>
+      </td>
+      <td>
+        <p><a href="https://www.ceitec.eu/">CEITEC</a> MU</br>
+        Brno, Czechia</p>
+      </td>
+      <td>
+        <p>{% include person-list ids='nornil|xulman|StephanPreibisch|ctrueden|lleplat|minnerbe|mzouink|ekatrukha|Alanocallaghan|ksugar|elect86|smlpt|tpietzsch|trautmane|skalarproduktraum|frauzufall|carlosuc3m|stefanhahmann|Gabor Kovacs|Wojciech Jesionek|Johannes Girstmair|axtimwalde' %}</p>
+      </td>
+      <td>
+        <p><a href="/libs/imglib2">ImgLib2</a> and <a href="/plugins/bdv">BigDataViewer</a></p>
       </td>
     </tr>
   </tbody>
