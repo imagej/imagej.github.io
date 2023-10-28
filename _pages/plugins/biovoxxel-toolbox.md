@@ -21,7 +21,7 @@ If you find those functions helpful and use it to generate results you publish, 
 
 The BioVoxxel Figure Tools can be cited separately from the toolbox plugins as follows:
 
-[![DOI](https://zenodo.org/badge/542074524.svg)](https://zenodo.org/badge/latestdoi/542074524)
+[![DOI](https://zenodo.org/badge/542074524.svg)](https://zenodo.org/badge/latestdoi/542074524)  ![GitHub release (latest by date)](https://img.shields.io/github/v/release/biovoxxel/BioVoxxel-Figure-Tools?style=plastic)
 
 ------------------------------------------------------------------------
 
