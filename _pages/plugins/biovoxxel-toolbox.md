@@ -15,7 +15,7 @@ You will find all functions of the BioVoxxel Toolbox under the icon of the green
 ### Cite the Toolbox
 If you find those functions helpful and use it to generate results you publish, please consider to cite:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5986130.svg)](https://doi.org/10.5281/zenodo.5986129)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5986130.svg)](https://doi.org/10.5281/zenodo.5986129)  ![GitHub release (latest by date)](https://img.shields.io/github/v/release/biovoxxel/BioVoxxel-Toolbox?style=plastic)
 
 ### Cite the Figure Tools
 
