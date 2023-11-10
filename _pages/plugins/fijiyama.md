@@ -68,7 +68,12 @@ and add the **Fijiyama** repository (by clicking on the button **Add update site
 
 4\. Restart Fiji: a new **Fijiyama** entry should be available in the menu {% include bc path="Plugins | Registration" %}. If not, go back to the Update Manager, and check that the repositories **ImageJ-ITK**, and **Fijiyama** are correctly selected.
 
-5\. If you are a Windows user: there is specific issues between an external package ImageJ-ITK and the current JDK shipped with ImageJ. Whether or not you understand this point, please follow the documented procedure to escape this. You have to use ImageJ with a different JAVA version. It is well explained there: https://imagej.net/learn/faq#on-windows . You can find for example an OpenJDK 8 at OpenLogic, then install it, and when asked, check the box to select that it have to build a JAVA_HOME variable (replace a red cross symbole by a hard-disk symbol when asked, you'll see it). After that you remove the java or jre dir in your Fiji.app, as said, and it's ok!
+5\. For Windows users, there is a compatibility problem with the JAVA package supplied with ImageJ, so you must install a different version of JAVA. For more information on this issue, see doc at https://imagej.net/learn/faq#on-windows.
+To solve the problem:
+- a) Download and install the latest version (.msi installer file) of OpenJDK 8 from the OpenLogic website (https://www.openlogic.com/openjdk-downloads).
+- b) During installation, click on the red cross in front of the "Define JAVA_HOME variable" option and select the "Install on local disk" option (it changes the red cross to a hard disk icon).
+- c) Once installation is complete, go to the Java folder of your Fiji/ImageJ software (usually .../fiji-win64/Fiji.app/java/) and delete the contents of the directory. If no bundled Java is found, ImageJ will fall back to your "system Java", which is indicated by the JAVA_HOME environment variable you've just installed.
+- d) Restart ImageJ and enjoy FIJIYAMA, it should work!
 
 The following video shows a tutorial for Fijiyama installation:
 
