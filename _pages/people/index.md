@@ -24,6 +24,7 @@ section: Contribute
 -   {% include person id='axtimwalde' %}[^2][^21] (ImgLib2, Fiji)
 -   {% include person id='StephanPreibisch' %}[^2][^21] (ImgLib2, Fiji)
 -   {% include person id='tomancak' %}[^2] (Fiji)
+-   {% include person id='bethac07' %}[^4] (CellProfiler)
 -   [Anne Carpenter](https://carpenter-singh-lab.broadinstitute.org/)[^4] (CellProfiler)
 -   [Michael Berthold](https://www.researchgate.net/profile/Michael-Berthold)[^5][^6] (KNIME)
 -   [Jason Swedlow](https://www.lifesci.dundee.ac.uk/people/jason-swedlow)[^7][^8] (OME)
@@ -108,8 +109,8 @@ section: Contribute
 <div class="contributor-block" markdown=1>
 ### {% include icon name='CellProfiler' size='32px' %} [CellProfiler](/software/cellprofiler)
 
--   {% include person id='bethac07' %}[^4] (lead)
--   {% include person id='alicelucas' %}[^4]
+-   {% include person id='gnodar01' %}[^4] (co-lead)
+-   {% include person id='alicelucas' %}[^4] (former)
 -   {% include person id='0x00b1' %}[^4] (former)
 -   {% include person id='LeeKamentsky' %}[^4] (former)
 </div>
