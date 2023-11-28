@@ -209,7 +209,7 @@ The following parameters are measured:
 | Closest Head BB                    | Label of the closest spine head based on border to border distance |
 | Closest Head dist. BB              | Border to border distance between the spine head and the closest spine head |
 
-{% include img src="media/plugins/spot-spine1.png" align="center" width='500'  %}
+{% include img src='media/plugins/spot-spine1.png' %}
 
 | Parameter                          | Description                                            |
 |------------------------------------|--------------------------------------------------------|
