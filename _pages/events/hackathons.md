@@ -649,7 +649,7 @@ ImageJ has benefitted from many hackathons over the years:
         Ostrava, Czechia</p>
       </td>
       <td>
-        <p>{% include person-list ids='fjug|tpietzsch|tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|PetrBainar|awalter17|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode|bogovicj|NicoKiaru|Jana Klímová|kozusznik|Michal Krumnikl|Manan Lalit|Emil Melnikov|Pavel Moravec|Václav Svatoň|tischi|turekg|Tomas Vicar|Marwan Zouinkhi' %}</p>
+        <p>{% include person-list ids='fjug|tpietzsch|tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|PetrBainar|awalter17|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode|bogovicj|NicoKiaru|Jana Klímová|kozusznik|Michal Krumnikl|Manan Lalit|emilmelnikov|Pavel Moravec|Václav Svatoň|tischi|turekg|Tomas Vicar|Marwan Zouinkhi' %}</p>
       </td>
       <td>
         <p><a href="/plugins/spim-workflow-manager-for-hpc">Parallelization and HPC</a></p>

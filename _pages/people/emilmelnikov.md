@@ -1,7 +1,7 @@
 ---
-title: Emil Nelnikov
+title: Emil Melnikov
 
-name: Emil Nelnikov
+name: Emil Melnikov
 github: emilmelnikov
 ---
 
