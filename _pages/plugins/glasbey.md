@@ -4,7 +4,7 @@ doi: 10.1002/col.20327
 categories: [Color Processing]
 project: /software/fiji
 name: Glasbey
-source-url: https://github.com/fiji/fiji/blob/master/luts/glasbey.lut
+source-url: https://github.com/fiji/fiji/blob/-/luts/glasbey.lut
 team-maintainer: '@landinig'
 ---
 

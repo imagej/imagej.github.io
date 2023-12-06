@@ -28,8 +28,8 @@ If you are looking to edit an existing page, skip to
 [adding and editing page content](#adding-editing-page-content) below. See also the general GitHub [guide to editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
 1.  Navigate to an appropriate sub-directory of the
-    [pages section](https://github.com/imagej/imagej.github.io/tree/main/_pages)
-    of the repository. For example, if you are creating a page about a plugin, you would go to [_pages/plugins/](https://github.com/imagej/imagej.github.io/tree/main/_pages).
+    [pages section](https://github.com/imagej/imagej.github.io/tree/-/_pages)
+    of the repository. For example, if you are creating a page about a plugin, you would go to [_pages/plugins/](https://github.com/imagej/imagej.github.io/tree/-/_pages).
     **Note:** if you need to create a new sub-directory, it can be specified in the file name below.
 
 2.  Click {% include button label="Add file" %} then
@@ -59,7 +59,7 @@ correctly. The following table lists front matter fields you can use:
 | **description** | A short description of your page. Also used for the site's search engine. When omitted, the first sentence of the page content is used. |
 |     **section** | Main menu section that should be open when this page first loads, if any. Nested sections to expand should be separated by colons (`:`). For example, this page's section is `Contribute:Editing the Wiki`. |
 |  **categories** | For pages describing extensions (e.g. a plugin, script, or update site) of ImageJ: a comma-separated list of categories, enclosed in square brackets (`[` and `]`). Pages with categories appear in the [List of extensions](/list-of-extensions). For example, `[Segmentation, Registration]` would put your page in the Segmentation and Registration categories. |
-| **statbox\*** | A collection of individual fields that are used to populate the "Vital statistics" sidebar; see [this comment](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox#L30-L85) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page.<br> (***\***note there is no field called "statbox"*) |
+| **statbox\*** | A collection of individual fields that are used to populate the "Vital statistics" sidebar; see [this comment](https://github.com/imagej/imagej.github.io/blob/-/_includes/layout/statbox#L30-L85) for a list. Including at least one of these fields will cause the statbox to appear; otherwise, there will be no statbox for the page.<br> (***\***note there is no field called "statbox"*) |
 |        **icon** | A link (internal or external) to an icon that will be used for the page across the wiki, e.g. in the [list of extensions](/list-of-extensions) or search bar results. |
 |     **project** | Used to identify project affiliation. See the list of {% include github org='imagej' repo='imagej.github.io' branch='master' path='_config.yml#L15-L33' label='available projects' %} |
 |   **nav-links** | Adds a top navigation bar for related pages. See the [Navigation](/editing/navigation#nav-links) guide for examples. |

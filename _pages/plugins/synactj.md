@@ -18,7 +18,7 @@ Have a look at the github pages site for more information:<br>
 [https://schmiedc.github.io/SynActJ/](https://schmiedc.github.io/SynActJ/)
 <br/>
 <br/>
-The code is published free and open source under the [MIT license](https://github.com/schmiedc/SynActJ/blob/master/LICENSE).<br/>
+The code is published free and open source under the [MIT license](https://github.com/schmiedc/SynActJ/blob/-/LICENSE).<br/>
 Please find the source code of the Fiji plugin here:<br/>
 [https://github.com/schmiedc/SynActJ](https://github.com/schmiedc/SynActJ)
 <br/>
@@ -36,7 +36,7 @@ The source code of the R analysis can be found here:<br/>
 ## Accepted Datasets
 Expected are 2D single channel .tif files containing multiple frames. At a specific frame the cultured neurons were stimulated and active boutons show an increase in intensity. The image calibration can be changed in the workflow. A settings file can be provided but can also be created later.
 
-A small example file is provided here: [Link to example data](https://github.com/schmiedc/SynActJ/blob/master/testInput/testMovie.tif)
+A small example file is provided here: [Link to example data](https://github.com/schmiedc/SynActJ/blob/-/testInput/testMovie.tif)
 
 The default segmentation parameters should work for this example file.
 

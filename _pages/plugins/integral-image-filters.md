@@ -2,7 +2,7 @@
 title: Integral Image Filters
 categories: [Filtering,Integral Image]
 extensions: ["mathjax"]
-source-url: https://github.com/axtimwalde/mpicbg/tree/master/mpicbg/src/main/java/mpicbg/ij/integral
+source-url: https://github.com/axtimwalde/mpicbg/tree/-/mpicbg/src/main/java/mpicbg/ij/integral
 artifact: mpicbg:mpicbg_:1.4.1
 ---
 

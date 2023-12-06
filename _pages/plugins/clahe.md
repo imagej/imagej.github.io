@@ -1,7 +1,7 @@
 ---
 title: Enhance Local Contrast (CLAHE)
 categories: [Filtering]
-source-url: https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/mpicbg/ij/clahe/PlugIn.java
+source-url: https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/mpicbg/ij/clahe/PlugIn.java
 artifact: mpicbg:mpicbg_:1.4.1
 ---
 

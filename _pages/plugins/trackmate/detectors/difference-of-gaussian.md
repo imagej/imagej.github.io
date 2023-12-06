@@ -43,7 +43,7 @@ This [page](performance) compares the performance of the LoG detector and the Do
 ## Code.
 
 The TrackMate implementation is based on ImgLib2[^2].
-The code can be found [on GitHub](https://github.com/trackmate-sc/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/detection/DogDetector.java).
+The code can be found [on GitHub](https://github.com/trackmate-sc/TrackMate/blob/-/src/main/java/fiji/plugin/trackmate/detection/DogDetector.java).
 
 ## References
 

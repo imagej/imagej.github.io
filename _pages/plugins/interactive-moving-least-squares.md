@@ -7,7 +7,7 @@ initial-release-date: "2008-07-18"
 team-founder: '@axtimwalde'
 team-maintainer: '@axtimwalde'
 artifact: mpicbg:mpicbg_
-source-url: https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_MovingLeastSquaresMesh.java
+source-url: https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/Transform_MovingLeastSquaresMesh.java
 ---
 
 {% include video platform='youtube' id='NwOxRmX03xs'%}

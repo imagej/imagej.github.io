@@ -43,8 +43,8 @@ output = otsu.execute(image, 2, 0, 255, True)
 ## Developer resources
 
 -   [GitHub (we welcome pull requests)](https://github.com/imagej/imagej-itk/)
--   [An ImageJ2 Op that uses SimpleITK](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/ops)
--   [An ImageJ2 command (plugin that adds a menu item) for the Op.](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/commands)
+-   [An ImageJ2 Op that uses SimpleITK](https://github.com/imagej/imagej-itk/tree/-/src/main/java/net/imagej/itk/ops)
+-   [An ImageJ2 command (plugin that adds a menu item) for the Op.](https://github.com/imagej/imagej-itk/tree/-/src/main/java/net/imagej/itk/commands)
 
 ## Publication
 

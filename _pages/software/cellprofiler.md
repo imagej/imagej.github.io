@@ -9,7 +9,7 @@ website: https://cellprofiler.org
 icon: /media/icons/cellprofiler.png
 dev-status: Active
 support-status: Active
-license-url: https://github.com/CellProfiler/examples/blob/master/LICENSE
+license-url: https://github.com/CellProfiler/examples/blob/-/LICENSE
 license-label: BSD-3
 source-url: https://github.com/cellprofiler/cellprofiler
 forum-tag: cellprofiler

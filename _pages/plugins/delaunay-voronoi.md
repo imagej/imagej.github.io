@@ -6,7 +6,7 @@ categories: [Image Annotation]
 initial-release-date: "2006-08-14"
 team-founders: L. Paul Chew
 artifact: sc.fiji:VIB_
-source-url: https://github.com/fiji/VIB/blob/master/src/main/java/Delaunay_Voronoi.java
+source-url: https://github.com/fiji/VIB/blob/-/src/main/java/Delaunay_Voronoi.java
 ---
 
 Plugin to perform Delaunay Triangulation, or draw the Voronoi Diagram for a given point ROI.

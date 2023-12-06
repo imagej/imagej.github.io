@@ -56,7 +56,7 @@ After you perform any of the above download and installation sequences, you'll n
 ## User Manual
 Please read the usage guide for a detailed walkthrough of how to use the software's features and capabilities.
 
-[***Dendritic Spine Counter* Usage Guide**](https://github.com/Mighty-Data-Inc/dendritic-spine-counter/blob/main/documentation/Usage.md)
+[***Dendritic Spine Counter* Usage Guide**](https://github.com/Mighty-Data-Inc/dendritic-spine-counter/blob/-/documentation/Usage.md)
 
 ## Further Reading 
 
@@ -68,7 +68,7 @@ and operating principles. We've eschewed artificial neural networks and other ma
 in favor of heuristic and statistical approaches, so as to permit neuroscientists to use the
 software with a confident understanding of what it's doing and how it's doing it. 
 
-[***Dendritic Spine Counter* Whitepaper**](https://github.com/Mighty-Data-Inc/dendritic-spine-counter/blob/main/documentation/Paper.md)
+[***Dendritic Spine Counter* Whitepaper**](https://github.com/Mighty-Data-Inc/dendritic-spine-counter/blob/-/documentation/Paper.md)
 
 ### GitHub Project Page
 This project is hosted on GitHub. 

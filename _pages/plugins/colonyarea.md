@@ -62,7 +62,7 @@ Restart Fiji. In the _Plugins_ dropdown of the Fiji menu, _ColonyArea_ should no
 
 ## Usage
 
-Detailed usage instructions and examples [here](https://github.com/Turku-BioImaging/ColonyArea/blob/main/USAGE.md).
+Detailed usage instructions and examples [here](https://github.com/Turku-BioImaging/ColonyArea/blob/-/USAGE.md).
 
 Sample image files used in the manual can be downloaded [here](https://b2share.eudat.eu/records/39fa39965b314f658e4a198a78d7f6b5).
 

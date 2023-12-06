@@ -24,7 +24,7 @@ SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses 
 
 SNT is toolbox for tracing and analyzing neuronal morphologies imaged using light microscopy. It aims to be as complete as possible, while remaining efficient to use. It can be used as a desktop application, or a [scripting library](/plugins/snt/scripting). It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) software, and aggregates other tools previously scattered across the Fiji ecosystem of plugins, including [Sholl](/plugins/sholl-analysis)[^2] and [Strahler](/plugins/strahler-analysis) plugins.
 
-The [source repository](https://github.com/morphonets/SNT) contains more details about the project, including a list of [features](https://github.com/morphonets/SNT#features), and [implementation details](https://github.com/morphonets/SNT/blob/master/NOTES.md#notes)
+The [source repository](https://github.com/morphonets/SNT) contains more details about the project, including a list of [features](https://github.com/morphonets/SNT#features), and [implementation details](https://github.com/morphonets/SNT/blob/-/NOTES.md#notes)
 
 {% include gallery align="fill" content=
 "

@@ -8,7 +8,7 @@ team-founder: 'Tristan McRae'
 team-maintainer: 'Tristan McRae'
 ---
 
-{% include info-box source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' %}
+{% include info-box source=' [GitHub](https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/-/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java)' %}
 
 # Introduction
 

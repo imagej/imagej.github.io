@@ -13,7 +13,7 @@ license-label: MIT
 team-founder: "@LauLauThom"
 ---
 
-<img src=https://github.com/LauLauThom/RoiGroupTable/blob/main/RoiGroupTable-GUI.PNG width=50% height=50%>
+<img src=https://github.com/LauLauThom/RoiGroupTable/blob/-/RoiGroupTable-GUI.PNG width=50% height=50%>
 
 The Roi group is a convenient built-in functionalitiy of ImageJ/Fiji to annotate ROIs of different categories.  
 The group attribute of ROIs is a simple number (integer) associated to a predefined color, such that ROIs from the same group are displayed with the same color.  

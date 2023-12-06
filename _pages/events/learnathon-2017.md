@@ -95,8 +95,8 @@ This is, from my (Hanslovsky) point of view, the best way to create a new git re
 Git repos to clone:
 
 -   Morning + early afternoon sessions:
-    -   [`https://github.com/imglib/imglib2-introductory-workshop`](https://github.com/imglib/imglib2-introductory-workshop) ([slides](https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf) are in the repository)
-    -   (bonus) LabelingPlus: https://github.com/TrNdy/Indago/blob/master/src/main/java/com/indago/data/segmentation/LabelingPlus.java
+    -   [`https://github.com/imglib/imglib2-introductory-workshop`](https://github.com/imglib/imglib2-introductory-workshop) ([slides](https://github.com/imglib/imglib2-introductory-workshop/blob/-/Introduction-ImgLib2.pdf) are in the repository)
+    -   (bonus) LabelingPlus: https://github.com/TrNdy/Indago/blob/-/src/main/java/com/indago/data/segmentation/LabelingPlus.java
 -   Afternoon session:
     -   The pull-request example: [to solve](https://github.com/Meyenhofer/ij-command-2/issues/)
     -   [`https://github.com/mpicbg-scicomp/ij2course-images`](https://github.com/mpicbg-scicomp/ij2course-images)
@@ -129,11 +129,11 @@ Git repos to clone:
     -   How to install ImageJ Integration in KNIME: https://tech.knime.org/community/imagej
     -   Set heap-size of KNIME: https://tech.knime.org/faq#q4_2
     -   [`https://github.com/knime-ip/knip-sdk-setup`](https://github.com/knime-ip/knip-sdk-setup)
-        -   See installation instructions in [README.md](https://github.com/knime-ip/knip-sdk-setup/blob/master/README.md)
+        -   See installation instructions in [README.md](https://github.com/knime-ip/knip-sdk-setup/blob/-/README.md)
     -   [`https://github.com/knime-ip/knip-imagej2`](https://github.com/knime-ip/knip-imagej2)
-        -   See installation instructions in [README.md](https://github.com/knime-ip/knip-imagej2/blob/master/README.md)
+        -   See installation instructions in [README.md](https://github.com/knime-ip/knip-imagej2/blob/-/README.md)
     -   [`https://github.com/knime-ip/knip-course`](https://github.com/knime-ip/knip-course)
-        -   See instructions for exercises in [README.md](https://github.com/knime-ip/knip-course/blob/master/README.md)
+        -   See instructions for exercises in [README.md](https://github.com/knime-ip/knip-course/blob/-/README.md)
 
 <!-- -->
 

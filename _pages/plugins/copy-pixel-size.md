@@ -8,7 +8,7 @@ initial-release-date: "2001-11-22"
 website: http://www.med.harvard.edu/JPNM/ij/plugins/CopyPixelSize.html
 dev-status: stable
 team-founder: 'J. Anthony Parker'
-source-url: https://github.com/fiji/cookbook/blob/master/src/main/java/sc/fiji/cookbook/Copy_Pixel_Size.java
+source-url: https://github.com/fiji/cookbook/blob/-/src/main/java/sc/fiji/cookbook/Copy_Pixel_Size.java
 pom-url: https://raw.githubusercontent.com/fiji/cookbook/master/pom.xml
 ---
 

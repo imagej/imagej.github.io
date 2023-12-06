@@ -1153,7 +1153,7 @@ for ballOb in layerset.getZDisplayables(Ball):
 # Albert Cardona 2015-07-02 for Jemima Burden at UCL.
 
 # See also the API of the Ball class:
-# https://github.com/trakem2/trakem2/blob/master/src/main/java/ini/trakem2/display/Ball.java#L716
+# https://github.com/trakem2/trakem2/blob/-/src/main/java/ini/trakem2/display/Ball.java#L716
 
 
 from ini.trakem2.display import Display, Ball
@@ -1394,4 +1394,4 @@ All the following are included in Fiji's `plugins/Examples/plugins/trakem2_Examp
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2_Example_Scripts/T2_set_all_transforms_to_identity.py' label='Set all transforms to identity' %} for TrakEM2 objects.
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2_Example_Scripts/T2_Select_All.py' label='Select All' %} objects in TrakEM2.
 -   {% include github repo='fiji' branch='master' path='plugins/Examples/plugins/trakem2_Example_Scripts/Measure_AreaLists.py' label='Measure AreaList' %} in TrakEM2.
--   A [collection of scripts for TrakEM2](https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/plugins/trakem2), hosted by github. Mostly related to inspecting and analyzing [Treeline](https://fiji.sc/javadoc/ini/trakem2/display/Treeline.html), [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html) and [Connector](https://fiji.sc/javadoc/ini/trakem2/display/Connector.html) instances, when used for neural circuit reconstruction.
+-   A [collection of scripts for TrakEM2](https://github.com/acardona/Fiji-TrakEM2-scripts/tree/-/plugins/trakem2), hosted by github. Mostly related to inspecting and analyzing [Treeline](https://fiji.sc/javadoc/ini/trakem2/display/Treeline.html), [AreaTree](https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html) and [Connector](https://fiji.sc/javadoc/ini/trakem2/display/Connector.html) instances, when used for neural circuit reconstruction.

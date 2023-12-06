@@ -123,7 +123,7 @@ create a projected image along the specified dimension(s) with the specified met
 <img src="/media/plugins/cip/cip-project.png" title="fig:CIP_project.PNG" width="400" alt="CIP_project.PNG" />  
 
 <span style="font-size:110%">**Implementation**</span>  
-The [projection](https://github.com/benoalo/CIP/blob/master/src/main/java/invizio/cip/misc/Project2CIP.java) is implemented as part of CIP.
+The [projection](https://github.com/benoalo/CIP/blob/-/src/main/java/invizio/cip/misc/Project2CIP.java) is implemented as part of CIP.
 
 # **concatenate**
 

@@ -35,7 +35,7 @@ api.createWindow({src: 'https://imjoy.io/#/app', passive: true})
 Since ImJoy itself doesn't provide any functional plugins, for any actual application, you will need to work with the corresponding plugins. For example, if you click "Run" below, you will see a demo plugin which does image classification with lightweight deep learning model running in the browser:
 <!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px", "hide_code_block": true } -->
 ```js
-api.createWindow({src: 'https://github.com/imjoy-team/imjoy-plugins/blob/master/repository/HPA-Classification.imjoy.html'})
+api.createWindow({src: 'https://github.com/imjoy-team/imjoy-plugins/blob/-/repository/HPA-Classification.imjoy.html'})
 ```
 
 For more plugin examples, please check out the [gallery](https://imjoy.io/docs/#/gallery).
@@ -89,7 +89,7 @@ If you are interested in learning how to develop ImJoy plugins, We recommend the
 # Open integrations
 As part of our mission, we try to bring existing and future software tools together by connecting them with the [ImJoy RPC protocol](https://github.com/imjoy-team/imjoy-rpc). This is not only internally for connecting plugins in the same workflow, but it also provide a way to integrate other software tools into the same workflow, or bring the ImJoy plugin system to website, online data repository, web applications and other software tools.
 
-We support two-way integration: 1) connect existing web app or software tools as an ImJoy plugin 2) integrate ImJoy core to other website or software tools. For more implementation details, please refer to the [integration docs](https://github.com/imjoy-team/imjoy-core/blob/master/docs/integration.md).
+We support two-way integration: 1) connect existing web app or software tools as an ImJoy plugin 2) integrate ImJoy core to other website or software tools. For more implementation details, please refer to the [integration docs](https://github.com/imjoy-team/imjoy-core/blob/-/docs/integration.md).
 
 Here is a list of integration examples:
  * [ImageJ.JS](https://ij.imjoy.io)
@@ -162,11 +162,11 @@ class ImJoyPlugin():
 api.export(ImJoyPlugin())
 ```
 
-As a more useful demoo, the following code load an [pixel classifier plugin](https://github.com/imjoy-team/imjoy-plugins/blob/master/repository/PixelClassifier.imjoy.html) for interactive image segmentation with scikit-image and scikit-learn. 
+As a more useful demoo, the following code load an [pixel classifier plugin](https://github.com/imjoy-team/imjoy-plugins/blob/-/repository/PixelClassifier.imjoy.html) for interactive image segmentation with scikit-image and scikit-learn. 
 (Please note that it can take a few minutes to run for the first time.)
 <!-- ImJoyPlugin: { "type": "web-worker","editor_height": "200px", "hide_code_block": true} -->
 ```js
-api.getPlugin({src: 'https://github.com/imjoy-team/imjoy-plugins/blob/master/repository/PixelClassifier.imjoy.html'}).then((plugin)=>{
+api.getPlugin({src: 'https://github.com/imjoy-team/imjoy-plugins/blob/-/repository/PixelClassifier.imjoy.html'}).then((plugin)=>{
     plugin.run()
 })
 ```
@@ -188,8 +188,8 @@ Full documentation can be found at [https://imjoy.io/docs/](https://imjoy.io/doc
 
 ## Code of Conduct
 
-Help us keep the ImJoy community open and inclusive. Please read and follow our [Code of Conduct](https://github.com/imjoy-team/ImJoy/blob/master/docs/CODE_OF_CONDUCT.md).
+Help us keep the ImJoy community open and inclusive. Please read and follow our [Code of Conduct](https://github.com/imjoy-team/ImJoy/blob/-/docs/CODE_OF_CONDUCT.md).
 
 ## License
 
-[MIT License](https://github.com/imjoy-team/ImJoy/blob/master/LICENSE)
+[MIT License](https://github.com/imjoy-team/ImJoy/blob/-/LICENSE)

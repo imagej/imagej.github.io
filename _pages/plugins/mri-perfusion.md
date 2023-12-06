@@ -8,7 +8,7 @@ initial-release-date: "2015-02-04"
 dev-status: stable
 team-founder: "@acsenrafilho"
 team-maintainer: "@acsenrafilho"
-source-url: https://github.com/CSIM-Toolkits/ImageJ/tree/master/plugins/MRI-Perfusion
+source-url: https://github.com/CSIM-Toolkits/ImageJ/tree/-/plugins/MRI-Perfusion
 ---
 
 {% include img align='right' src='perfusion' width=300 caption='Example of the perfusion curve obtained in the peritumoral region on brain cancer.' %}

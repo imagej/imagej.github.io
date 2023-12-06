@@ -106,7 +106,7 @@ The following table summarizes the dominant license of each project's components
     <tr>
       <td><img src="/media/icons/scijava.png" width="48"></td>
       <th><a href="/libs/scijava">SciJava</a></th>
-      <td><a href="https://github.com/scijava/scijava-common/blob/master/LICENSE.txt">License</a></td>
+      <td><a href="https://github.com/scijava/scijava-common/blob/-/LICENSE.txt">License</a></td>
       <td rowspan="4"><a href="/licensing/bsd">BSD-2</a></td>
       <td rowspan="4">❌</td>
       <td rowspan="4">✅</td>
@@ -122,17 +122,17 @@ The following table summarizes the dominant license of each project's components
     <tr>
       <td><img src="/media/icons/imglib2.png" width="48"></td>
       <th><a href="/libs/imglib2">ImgLib2</a></th>
-      <td><a href="https://github.com/imglib/imglib2/blob/master/LICENSE.txt">License</a></td>
+      <td><a href="https://github.com/imglib/imglib2/blob/-/LICENSE.txt">License</a></td>
     </tr>
     <tr>
       <td><img src="/media/icons/imagej2.png" width="48"></td>
       <th><a href="/software/imagej2">ImageJ2</a></th>
-      <td><a href="https://github.com/imagej/imagej/blob/master/LICENSE.txt">License</a></td>
+      <td><a href="https://github.com/imagej/imagej/blob/-/LICENSE.txt">License</a></td>
     </tr>
     <tr>
       <td><img src="/media/icons/scifio.png" width="48"></td>
       <th><a href="/libs/scifio">SCIFIO</a></th>
-      <td><a href="https://github.com/scifio/scifio/blob/master/LICENSE.txt">License</a></td>
+      <td><a href="https://github.com/scifio/scifio/blob/-/LICENSE.txt">License</a></td>
     </tr>
     <tr></tr>
     <tr>
@@ -141,7 +141,7 @@ The following table summarizes the dominant license of each project's components
     <tr>
       <td rowspan="3"><img src="/media/icons/fiji.png" width="48"></td>
       <th><a href="/software/fiji">Fiji</a></th>
-      <td><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></td>
+      <td><a href="https://github.com/fiji/fiji/blob/-/LICENSES">Licenses</a></td>
       <td rowspan="2"><a href="/licensing/gpl">GPL</a></td>
       <td rowspan="2">✅</td>
       <td rowspan="2">✅</td>
@@ -156,11 +156,11 @@ The following table summarizes the dominant license of each project's components
     </tr>
     <tr>
       <th><a href="/plugins/trakem2">TrakEM2</a></th>
-      <td><a href="https://github.com/trakem2/trakem2/blob/master/README">Readme</a></td>
+      <td><a href="https://github.com/trakem2/trakem2/blob/-/README">Readme</a></td>
     </tr>
     <tr>
       <th><a href="/plugins/bdv">BigDataViewer</a></th>
-      <td><a href="https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE.txt">License</a></td>
+      <td><a href="https://github.com/bigdataviewer/bigdataviewer-core/blob/-/LICENSE.txt">License</a></td>
       <td><a href="/licensing/bsd">BSD-2</a><sup>‡</sup></td>
       <td>❌</td>
       <td>✅</td>
@@ -179,7 +179,7 @@ The following table summarizes the dominant license of each project's components
     <tr>
       <td><img src="/media/icons/cellprofiler.png" width="48"></td>
       <th><a href="/software/cellprofiler">CellProfiler</a></th>
-      <td><a href="https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE">License</a></td>
+      <td><a href="https://github.com/CellProfiler/CellProfiler/blob/-/LICENSE">License</a></td>
       <td><a href="/licensing/bsd">BSD-3</a></td>
       <td rowspan="1">❌</td>
       <td rowspan="1">✅</td>
@@ -231,11 +231,11 @@ The following table summarizes the dominant license of each project's components
 <span>\*</span> See [choosealicense.com](http://choosealicense.com/) for details.\\
 <sup>†</sup> See note below for details.\\
 <sup>‡</sup> BigDataViewer libraries are licensed BSD-2; the BigDataViewer plugin for Fiji
-  <a href="https://github.com/bigdataviewer/bigdataviewer_fiji/blob/master/LICENSE.txt">is GPLv3</a>.
+  <a href="https://github.com/bigdataviewer/bigdataviewer_fiji/blob/-/LICENSE.txt">is GPLv3</a>.
 
 ## Exceptions
 
-Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ2](/software/imagej2) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/master/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/master/README.md)), waiving all copyright interest as allowed by law.
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a `LICENSE.txt` or similar file of the relevant repository on [GitHub](/develop/github). That said, in general, the table below is accurate with very few exceptions. When there *is* an exception, it is often licensed more permissively than the rest of the project—for example, the core of [Bio-Formats](/formats/bio-formats) is licensed under [BSD-2](/licensing/bsd) ([1](https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt)), and the [ImageJ2](/software/imagej2) and [SCIFIO](/libs/scifio) tutorials are licensed under [CC0](/licensing/public-domain) ([1](https://github.com/imagej/tutorials/blob/-/README.md), [2](https://github.com/scifio/scifio-tutorials/blob/-/README.md)), waiving all copyright interest as allowed by law.
 
 ## A note about ImageJ
 

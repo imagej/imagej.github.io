@@ -38,4 +38,4 @@ Follow the procedure described on the Fiji wiki at [How to follow a 3rd party up
 -   To cite this software, please use the following reference: A. Daerr and A. Mogne, *Pendent\_Drop: An ImageJ Plugin to Measure the Surface Tension from an Image of a Pendent Drop*. Journal of Open Research Software, 4: e3 (2016), [DOI: 10.5334/jors.97](http://dx.doi.org/10.5334/jors.97)
 -   [description on author's home page](http://www.msc.univ-paris-diderot.fr/~daerr/misc/pendent_drop.html)
 -   [source code on github](https://github.com/adaerr/pendent-drop)
--   [PDF document descripting both the pendent drop method and the plugin in more detail](https://github.com/adaerr/pendent-drop/blob/master/article/Goutte_pendante.pdf)
+-   [PDF document descripting both the pendent drop method and the plugin in more detail](https://github.com/adaerr/pendent-drop/blob/-/article/Goutte_pendante.pdf)

@@ -533,9 +533,9 @@ The warped moving image can be exported as an in-memory or [virtual](https://ima
 
 Often, it is important to apply transforms estimated with one image to other images in the same space.
 
-If you have moving and target images open in Fiji [this script](https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm.groovy) to transform the moving image into the space of the target image. You will need to provide a file containing the saved landmark point pairs.
+If you have moving and target images open in Fiji [this script](https://github.com/saalfeldlab/bigwarp/blob/-/scripts/Apply_Bigwarp_Xfm.groovy) to transform the moving image into the space of the target image. You will need to provide a file containing the saved landmark point pairs.
 
-To manually specify the field-of-view (FOV) of the target space, use [this script](https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm_FOV.groovy)
+To manually specify the field-of-view (FOV) of the target space, use [this script](https://github.com/saalfeldlab/bigwarp/blob/-/scripts/Apply_Bigwarp_Xfm_FOV.groovy)
 
 To make the scripts above appear in your Fiji Plugins menu, simply copy them into the `/plugins/Scripts folder` in your Fiji installation.
 

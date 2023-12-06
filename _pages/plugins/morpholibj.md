@@ -37,7 +37,7 @@ The library implements several functionalities that were missing in ImageJ, and 
 
 Each [released version of MorphoLibJ](https://github.com/ijpb/MorphoLibJ/releases) comes with a [User Manual in PDF format](https://github.com/ijpb/MorphoLibJ/releases/download/v1.4.0/MorphoLibJ-manual-v1.4.0.pdf).
 
-The main source code directory is on GitHub under [src/main/java/inra/ijpb](http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb).
+The main source code directory is on GitHub under [src/main/java/inra/ijpb](http://github.com/ijpb/MorphoLibJ/tree/-/src/main/java/inra/ijpb).
 
 You can browse the [javadoc](http://ijpb.github.io/MorphoLibJ/javadoc/) for more information about its API.
 

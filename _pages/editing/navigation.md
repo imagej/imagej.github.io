@@ -53,7 +53,7 @@ nav-links:
 
 ![menu](/media/editing/menu.png){:width="200px"}
 
-The navigation menu allows hierarchical organization of wiki topics. Items are added to the menu by editing [the `menu` include](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/menu) and creating a new `<li>` element as appropriate:
+The navigation menu allows hierarchical organization of wiki topics. Items are added to the menu by editing [the `menu` include](https://github.com/imagej/imagej.github.io/blob/-/_includes/layout/menu) and creating a new `<li>` element as appropriate:
 
 {% highlight html %}
             {% raw %}{% include menu/section title="Editing the Wiki" link="/editing" %}{% endraw %}

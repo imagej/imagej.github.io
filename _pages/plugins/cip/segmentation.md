@@ -62,7 +62,7 @@ This function threshold an image and label its connected component (i.e. it sets
 <img src="/media/plugins/cip/cip-label.png" title="fig:CIP_label.PNG" width="400" alt="CIP_label.PNG" />
 
 <span style="font-size:110%">**Implementation**</span>  
-The labeling is performed our custom implementation. It uses a union find approach relying pixel runs to speed up to labeling process. The source code is available on [github](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/RleCCL.java). The principle of the algorithm was described in \[1\].
+The labeling is performed our custom implementation. It uses a union find approach relying pixel runs to speed up to labeling process. The source code is available on [github](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/RleCCL.java). The principle of the algorithm was described in \[1\].
 
 \[1\] Cabaret, Laurent, Lionel Lacassagne, and Louiza Oudni. "A review of world's fastest connected component labeling algorithms: Speed and energy estimation." Design and Architectures for Signal and Image Processing (DASIP), 2014 Conference on. IEEE, 2014.
 
@@ -107,10 +107,10 @@ the illustration above show the contour of the detected region on top of the ori
 <span style="font-size:110%">**Implementation**</span>  
 Each maxima detection method rely on a custom implementation
 
-**[Classic](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/Maxima.java)** method is a union find implementation of maxima detection  
-**[Height](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HMaxima.java)** and **[Area](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/AreaMaxima.java)** methods are derived from attribute filtering approaches \[1\] simply using a different attribute peak height or area as criteria to merge peaks and stop their extension.  
-**[Distance](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/WindowMaxima.java)** is simpler but efficient approach that pass a filter window over the image and check is all pixel values in the window are lower or equal to the center pixel. This method can make errors if image contains plato.  
-**[MultiScale](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/MultiScaleMaxima.java)** method builds a difference of gaussian pyramid and detection in that scale space. The implementation principle is well described in \[2\].
+**[Classic](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/Maxima.java)** method is a union find implementation of maxima detection  
+**[Height](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/HMaxima.java)** and **[Area](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/AreaMaxima.java)** methods are derived from attribute filtering approaches \[1\] simply using a different attribute peak height or area as criteria to merge peaks and stop their extension.  
+**[Distance](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/WindowMaxima.java)** is simpler but efficient approach that pass a filter window over the image and check is all pixel values in the window are lower or equal to the center pixel. This method can make errors if image contains plato.  
+**[MultiScale](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/MultiScaleMaxima.java)** method builds a difference of gaussian pyramid and detection in that scale space. The implementation principle is well described in \[2\].
 
 \[1\] Meijster, A., & Wilkinson, M. H. (2002). A comparison of algorithms for connected set openings and closings. IEEE Transactions on Pattern Analysis and Machine Intelligence, 24(4), 484-494.
 
@@ -151,6 +151,6 @@ In that example the starting point of the watershed are the extended maxima of t
 <img src="/media/plugins/cip/cip-watershed.png" title="fig:CIP_watershed.PNG" width="400" alt="CIP_watershed.PNG" />
 
 <span style="font-size:110%">**Implementation**</span>  
-Both seeded watershed and H-watershed are implemented based on the image foresting transform approach \[1\]. The H-watershed adds the construction of a hierarchical tree of segment that can be used in further applications. Both implementations can be found [here](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/SeededWatershed.java) and [there](https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HWatershed.java)
+Both seeded watershed and H-watershed are implemented based on the image foresting transform approach \[1\]. The H-watershed adds the construction of a hierarchical tree of segment that can be used in further applications. Both implementations can be found [here](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/SeededWatershed.java) and [there](https://github.com/benoalo/ImgAlgo/blob/-/src/main/java/invizio/imgalgo/label/HWatershed.java)
 
 \[1\] Lotufo, R. D. A., Falcão, A. X., & Zampirolli, F. A. (2002). IFT-watershed from gray-scale marker. In Computer Graphics and Image Processing, 2002. Proceedings. XV Brazilian Symposium on (pp. 146-152). IEEE.

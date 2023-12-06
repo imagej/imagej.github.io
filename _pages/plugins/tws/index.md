@@ -162,7 +162,7 @@ Each of the 6 resulting images is a feature. Hence pixels in lines of similarly 
 
 When using grayscale images, the input image will be also included as a feature. In the case of color (RGB) images, the **Hue, Saturation and Brightness** will be as well part of the features.
 
-The detailed implementation of these 2D filters can be found in the [source code](https://github.com/fiji/Trainable_Segmentation/blob/master/src/main/java/trainableSegmentation/FeatureStack.java).
+The detailed implementation of these 2D filters can be found in the [source code](https://github.com/fiji/Trainable_Segmentation/blob/-/src/main/java/trainableSegmentation/FeatureStack.java).
 
 **<span style="color:#f80000">NOTE**: The features named *Derivatives*, *Laplacian* and *Structure* belong to the [ImageScience](/libs/imagescience) suite and need to be activated [by enabling the ImageScience update site in the updater](/update-sites/following).
 

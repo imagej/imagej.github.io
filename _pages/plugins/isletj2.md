@@ -110,7 +110,7 @@ See [ImageJ docs](https://imagej.net/ij/docs/guide/146-31.html#toc-Subsection-31
 
 Take a photo of a stage micrometer and open the photo in Fiji. Use a straight line to measure the distance from 0 to 4. Then open `Analyze` – `Set Scale...` and fill the `Known distance` input. Fiji will compute the number of pixels per micrometer. Invert the number to get the number of micrometers per pixel.
 
-![How to measure the pixel size. Taken from the [documentation](https://github.com/jschier/IsletJ/blob/master/pdf/IsletJ_Guide_2.pdf) of the original plugin version.](/media/micrometer.png)
+![How to measure the pixel size. Taken from the [documentation](https://github.com/jschier/IsletJ/blob/-/pdf/IsletJ_Guide_2.pdf) of the original plugin version.](/media/micrometer.png)
 
 ## Acknowledgements
 

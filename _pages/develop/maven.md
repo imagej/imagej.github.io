@@ -125,7 +125,7 @@ There are many more things you can do with Maven, but chances are you will not n
 
 The simplicity of the `pom.xml` you need comes from the fact that Maven defines implicit defaults. It calls that *convention over configuration*. For many reasons, it is strongly recommended to stay with the defaults as much as possible.
 
-In the context of [SciJava](/libs/scijava), you will most likely never write a `pom.xml` from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/blob/master/java/howtos/src/main/java/howto/datasets/LoadAndDisplayDataset.java) as a starting point.
+In the context of [SciJava](/libs/scijava), you will most likely never write a `pom.xml` from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [ImageJ "Load and Display a Dataset" tutorial](https://github.com/imagej/tutorials/blob/-/java/howtos/src/main/java/howto/datasets/LoadAndDisplayDataset.java) as a starting point.
 
 # How to find a dependency's groupId/artifactId/version (GAV)?
 

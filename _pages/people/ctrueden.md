@@ -149,7 +149,7 @@ So you want to be an effective software developer? Use tools!
       <td>Quoting/parenthesizing made simple</td>
     </tr>
     <tr>
-      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/vimrc">my .vimrc</a></td>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/vimrc">my .vimrc</a></td>
     </tr>
     <tr>
       <td rowspan=6><a href="https://www.zsh.org/">Zsh</a></td>
@@ -186,16 +186,16 @@ So you want to be an effective software developer? Use tools!
       <td>Even more and better tab completions</td>
     </tr>
     <tr>
-      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/zshrc">my .zshrc</a></td>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/zshrc">my .zshrc</a></td>
     </tr>
     <tr>
       <td rowspan=2><a href="/develop/git">Git</a></td>
       <td rowspan=2>It is worth the pain, I promise</td>
       <td><a href="https://myrepos.branchable.com/">myrepos</a></td>
-      <td>Commit, push & pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/master/mrconfig">en masse</a></td>
+      <td>Commit, push & pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/-/mrconfig">en masse</a></td>
     </tr>
     <tr>
-      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/master/gitconfig">my .gitconfig</a></td>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/gitconfig">my .gitconfig</a></td>
     </tr>
     <tr>
       <td><a href="/develop/github">GitHub</a></td>

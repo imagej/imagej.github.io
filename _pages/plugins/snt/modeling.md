@@ -15,7 +15,7 @@ Modeling in SNT is performed through [Cortex3D (Cx3D)](https://github.com/morpho
 
 Currently, an [IDE](/develop/ides) is the most effective way to implement custom models, using the [minimal-cx3d-example-project](https://github.com/morphonets/minimal-cx3d-example-project) as a template. For more information refer to the [GitHub project page](https://github.com/morphonets/cx3d).
 
-{% include img align="center" name="cx3d-sciview" src="/media/plugins/snt/cx3d-sciview.png" caption="Synthetic neuron generated using the *[Random Branching](https://github.com/morphonets/cx3d/blob/master/src/main/java/sc/iview/cx3d/commands/RandomBranchingDemo.java)* demo, accessible from sciview's *Demo* menu." %}
+{% include img align="center" name="cx3d-sciview" src="/media/plugins/snt/cx3d-sciview.png" caption="Synthetic neuron generated using the *[Random Branching](https://github.com/morphonets/cx3d/blob/-/src/main/java/sc/iview/cx3d/commands/RandomBranchingDemo.java)* demo, accessible from sciview's *Demo* menu." %}
 
 ## References
 

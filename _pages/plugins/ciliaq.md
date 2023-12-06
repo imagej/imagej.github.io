@@ -1,7 +1,7 @@
 ---
 title: CiliaQ
 description: A set of three ImageJ plugins to quantify ciliary shape, length, and fluorescence in 2D, 3D, and 4D images of cilia.
-icon: https://github.com/hansenjn/CiliaQ/blob/master/Webfiles/20200618%20CiliaQ%20Logo%20Small.png
+icon: https://github.com/hansenjn/CiliaQ/blob/-/Webfiles/20200618%20CiliaQ%20Logo%20Small.png
 categories: [Automation, 3D, Analysis, Particle Analysis, Segmentation, Object Detection, Colocalization, Tracking, Cilia]
 doi: 10.1140/epje/s10189-021-00031-y
 source-url: https://github.com/hansenjn/CiliaQ/

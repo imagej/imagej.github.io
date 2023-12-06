@@ -10,7 +10,7 @@ categories: [Particle Analysis, Segmentation]
 release-url: https://github.com/biovoxxel/bv3dbox/releases/tag/v1.0.1a
 dev-status: Active
 support-status: Active
-license-url: https://github.com/biovoxxel/bv3dbox/blob/main/LICENSE
+license-url: https://github.com/biovoxxel/bv3dbox/blob/-/LICENSE
 license-label: BSD-3
 source-url: https://github.com/biovoxxel/bv3dbox
 source-label: bv3dbox

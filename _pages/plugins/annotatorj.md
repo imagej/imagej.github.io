@@ -15,7 +15,7 @@ team-maintainer: Réka Hollandi
 
 The AnnotatorJ plugin aims to ease object annotation. An exporter plugin, AnnotatorJExporter is also included.
 
-A detailed user manual is provided in [**AnnotatorJ_documentation.pdf**](https://github.com/spreka/annotatorj/blob/master/AnnotatorJ_documentation.pdf) in the plugin's GitHub repository.
+A detailed user manual is provided in [**AnnotatorJ_documentation.pdf**](https://github.com/spreka/annotatorj/blob/-/AnnotatorJ_documentation.pdf) in the plugin's GitHub repository.
 
 # Get started
 ## Using a release version
@@ -173,11 +173,11 @@ For more details, please see the corresponding publication:
 
 ## Segmentation mask import
 
-16-bit multi-labelled segmentation masks created in OpSeF will be imported for editing and/or classification (see [instructions](#how-to-annotate) or [documentation](https://github.com/spreka/annotatorj/blob/master/AnnotatorJ_documentation.pdf)).
+16-bit multi-labelled segmentation masks created in OpSeF will be imported for editing and/or classification (see [instructions](#how-to-annotate) or [documentation](https://github.com/spreka/annotatorj/blob/-/AnnotatorJ_documentation.pdf)).
 
 ## Classified mask import
 
-16-bit multi-labelled segmentation masks created and classified in OpSeF will be imported for editing and/or classification (see [instructions](#how-to-annotate) or [documentation](https://github.com/spreka/annotatorj/blob/master/AnnotatorJ_documentation.pdf)).
+16-bit multi-labelled segmentation masks created and classified in OpSeF will be imported for editing and/or classification (see [instructions](#how-to-annotate) or [documentation](https://github.com/spreka/annotatorj/blob/-/AnnotatorJ_documentation.pdf)).
 Classes will be marked with different contour colours.
 
 
@@ -200,7 +200,7 @@ annotation_folder
 	|--- ...
 ```
 
-This structure is created by the AnnotatorJ plugin such that the *annotation folder* is created as a sub-folder of the *image folder* with the name of the selected annotation class (see the [documentation](https://github.com/spreka/annotatorj/blob/master/AnnotatorJ_documentation.pdf)).
+This structure is created by the AnnotatorJ plugin such that the *annotation folder* is created as a sub-folder of the *image folder* with the name of the selected annotation class (see the [documentation](https://github.com/spreka/annotatorj/blob/-/AnnotatorJ_documentation.pdf)).
 
 Possible export options are displayed above.
 

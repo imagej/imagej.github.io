@@ -7,7 +7,7 @@ initial-release-date: "2008-08-07"
 team-founders: "@axtimwalde"
 team-maintainer: "@axtimwalde"
 artifact: mpicbg:mpicbg_
-source-url: https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Roi.java
+source-url: https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/Transform_Roi.java
 ---
 
 The plugin **Landmark Correspondences** calculates a transformation between two corresponding landmark clouds and renders a transformed image. The landmarks are read from point selections over two images. The transformation is estimated by a least squares or Moving Least Squares fit for the available models.

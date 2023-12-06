@@ -7,45 +7,45 @@ nav-title: Example Code
 
 Below you can find a list of all the example java classes for download, together with a short description.
 
--   [Display\_Content.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Display_Content.java) Demonstrates how to create a virtual universe and display an image stack as volume rendering, orthoslices, isosurface or surface plot.
--   [Change\_Attributes.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Change_Attributes.java) Demonstrates how to change attributes like color or transparency of a Content. Also discusses the meaning of these attributes for various display types.
+-   [Display\_Content.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Display_Content.java) Demonstrates how to create a virtual universe and display an image stack as volume rendering, orthoslices, isosurface or surface plot.
+-   [Change\_Attributes.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Change_Attributes.java) Demonstrates how to change attributes like color or transparency of a Content. Also discusses the meaning of these attributes for various display types.
 
 <!-- -->
 
--   [Apply\_Transformation.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Apply_Transformation.java) Demonstrates how to modify the transformation of individual Contents.
+-   [Apply\_Transformation.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Apply_Transformation.java) Demonstrates how to modify the transformation of individual Contents.
 
 <!-- -->
 
--   [Highlight\_Points.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Highlight_Points.java) Demonstrates how to create named points for a Content and how to handle those landmark sets.
+-   [Highlight\_Points.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Highlight_Points.java) Demonstrates how to create named points for a Content and how to handle those landmark sets.
 
 <!-- -->
 
--   [Movie\_Recording.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Movie_Recording.java) Demonstrates how to animate the virtual universe and create a movie which can subsequently be embedded into presentations.
+-   [Movie\_Recording.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Movie_Recording.java) Demonstrates how to animate the virtual universe and create a movie which can subsequently be embedded into presentations.
 
 <!-- -->
 
--   [Volume\_Rendering.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Volume_Rendering.java) Shows how a VoltexGroup can be retrieved after displaying a stack as a volume rendering, and how the volume can be edited.
+-   [Volume\_Rendering.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Volume_Rendering.java) Shows how a VoltexGroup can be retrieved after displaying a stack as a volume rendering, and how the volume can be edited.
 
 <!-- -->
 
--   [Orthoslices\_.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Orthoslices_.java) Shows how a OrthoGroup can be retrieved after displaying a stack as orthoslices and how the displayed slices can be changed and hidden.
+-   [Orthoslices\_.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Orthoslices_.java) Shows how a OrthoGroup can be retrieved after displaying a stack as orthoslices and how the displayed slices can be changed and hidden.
 
 <!-- -->
 
--   [Surface\_Plot.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Surface_Plot.java) Shows how a SurfacePlotGroup can be retrieved after displaying a stack as a surface plot and how to update the displayed slice.
+-   [Surface\_Plot.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Surface_Plot.java) Shows how a SurfacePlotGroup can be retrieved after displaying a stack as a surface plot and how to update the displayed slice.
 
 <!-- -->
 
--   [Custom\_Surface.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Custom_Surface.java) Shows how to create custom meshes, consisting of triangles, lines, points or quads, and how they are displayed in the universe.
+-   [Custom\_Surface.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Custom_Surface.java) Shows how to create custom meshes, consisting of triangles, lines, points or quads, and how they are displayed in the universe.
 
 <!-- -->
 
--   [Display\_4D.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Display_4D.java) Shows how to load 4D data, visualize and animate in the universe.
+-   [Display\_4D.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Display_4D.java) Shows how to load 4D data, visualize and animate in the universe.
 
 <!-- -->
 
--   [Two\_Canvasses.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Two_Canvasses.java) Shows how to display one universe in two windows.
+-   [Two\_Canvasses.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Two_Canvasses.java) Shows how to display one universe in two windows.
 
 <!-- -->
 
--   [Custom\_Behavior.java](https://github.com/bene51/3DViewer_Examples/blob/master/src/main/java/examples/Custom_Behavior.java) Shows how to catch and handle mouse and key events.
+-   [Custom\_Behavior.java](https://github.com/bene51/3DViewer_Examples/blob/-/src/main/java/examples/Custom_Behavior.java) Shows how to catch and handle mouse and key events.

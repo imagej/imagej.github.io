@@ -845,7 +845,7 @@ Support for *Kontron IMG*, *Scanco ISQ* and *Stratec pQCT* file formats has been
 
 ## Licence
 
-BoneJ2 is free, open-source software. You can redistribute it and/or modify it under the terms of the [BSD 2-clause licence](https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md). The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
+BoneJ2 is free, open-source software. You can redistribute it and/or modify it under the terms of the [BSD 2-clause licence](https://github.com/bonej-org/BoneJ2/blob/-/LICENCE.md). The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
 
 ## Citation
 

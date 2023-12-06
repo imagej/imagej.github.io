@@ -2,7 +2,7 @@
 title: Linear Stack Alignment with SIFT
 categories: [Registration]
 artifact: mpicbg:mpicbg_
-source-url: https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/SIFT_Align.java
+source-url: https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/SIFT_Align.java
 doi: 10.1023/B:VISI.0000029664.99615.94
 ---
 

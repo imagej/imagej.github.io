@@ -18,7 +18,7 @@ source-url: https://github.com/stardist/stardist-imagej
 
 This is the ImageJ/Fiji plugin for [StarDist](https://github.com/stardist/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/stardist/stardist) for links to our publications and the full-featured Python package that can also be used to train new models.
 
-If you need any help, please first take a look at the StarDist [documentation](https://github.com/stardist/stardist/blob/master/README.md) and [frequently asked questions (FAQ)](https://stardist.net/docs/faq.html). 
+If you need any help, please first take a look at the StarDist [documentation](https://github.com/stardist/stardist/blob/-/README.md) and [frequently asked questions (FAQ)](https://stardist.net/docs/faq.html). 
 If that doesn't solve your issue, you can browse the existing [`stardist`-tagged forum posts](https://forum.image.sc/tag/stardist) or search the [image.sc forum](https://forum.image.sc/). If you can't find what you're looking for, please create a new topic at [the forum](https://forum.image.sc/) (and use the tag `stardist`).
 If you open a new topic, please provide a clear and concise description to understand and ideally reproduce the issue you're having.
 Please only file an issue [here](https://github.com/stardist/stardist-imagej) for bug reports or if you have technical questions regarding the plugin.

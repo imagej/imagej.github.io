@@ -10,7 +10,7 @@ This page provides an overview of ImageJ2 from the perspective of software devel
 ## Quick start
 
 -   **Learn to write [scripts](/scripting)** from the [tutorial notebooks](/tutorials/notebooks).
--   **Learn to use ImageJ2 from Java** with the [tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/java).
+-   **Learn to use ImageJ2 from Java** with the [tutorial Maven projects](https://github.com/imagej/tutorials/tree/-/java).
 
 ## What is ImageJ2?
 

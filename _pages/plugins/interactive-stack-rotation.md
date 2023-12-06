@@ -7,7 +7,7 @@ initial-release-date: "2009-09-29"
 team-founder: "@axtimwalde"
 team-maintainer: "@axtimwalde"
 artifact: mpicbg:mpicbg_
-source-url: https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Stack_Rotate.java
+source-url: https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/Stack_Rotate.java
 ---
 
 Here is a screencast how to use the Interactive Stack Rotation plugin:

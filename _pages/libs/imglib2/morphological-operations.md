@@ -16,13 +16,13 @@ This ImgLib2 package ships only (yet) the basic morphological operations:
 -   opening
 -   closing
 
-These 4 operations are implemented for arbitrary dimensionalities (2D, 3D, 4D, etc...). The package reuses standard ImgLib2 interfaces and classes. It also conforms to the public static methods accessors for low level algorithms, as the [gauss3](https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3) package does. Apart from this, it is strongly inspired by the morphological operation methods in the Image Processing Toolbox of the [MATLAB](https://www.mathworks.com/help/images/morphological-filtering.html) software.
+These 4 operations are implemented for arbitrary dimensionalities (2D, 3D, 4D, etc...). The package reuses standard ImgLib2 interfaces and classes. It also conforms to the public static methods accessors for low level algorithms, as the [gauss3](https://github.com/imglib/imglib2-algorithm/tree/-/src/main/java/net/imglib2/algorithm/gauss3) package does. Apart from this, it is strongly inspired by the morphological operation methods in the Image Processing Toolbox of the [MATLAB](https://www.mathworks.com/help/images/morphological-filtering.html) software.
 
 It also ships facilities to generate structuring elements, and allows the use of decomposed structuring elements for performance optimization. This part is documented below.
 
-Classes can be found in the [`net.imglib2.algorithm.morphology`](https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/morphology) package of the [imglib2-algorithm library](https://github.com/imglib/imglib2-algorithm).
+Classes can be found in the [`net.imglib2.algorithm.morphology`](https://github.com/imglib/imglib2-algorithm/tree/-/src/main/java/net/imglib2/algorithm/morphology) package of the [imglib2-algorithm library](https://github.com/imglib/imglib2-algorithm).
 
-Examples can be found in the [`net.imglib2.algorithm.morphology`](https://github.com/imglib/imglib2-tests/tree/master/src/test/java/net/imglib2/algorithm/morphology) package of the [imglib2-tests library](https://github.com/imglib/imglib2-tests).
+Examples can be found in the [`net.imglib2.algorithm.morphology`](https://github.com/imglib/imglib2-tests/tree/-/src/test/java/net/imglib2/algorithm/morphology) package of the [imglib2-tests library](https://github.com/imglib/imglib2-tests).
 
 ### Gray morphology and flat structuring elements
 
@@ -30,7 +30,7 @@ This set of methods does *gray morphology*. It applies to source images that can
 
 It actually applies to more than this: The type of the source image only needs to extend `Type` (the ImgLib2 mother interface for values) and `Comparable` (the java interface for objects than can be compared to others). This is detailed later.
 
-However, we use the ImgLib2 [Shape interface](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/region/localneighborhood/Shape.java) for structuring elements. This restricts structuring elements to *flat* structuring elements, which do not have a weight, or value, associated to each location. This prevents us from developing a *stricto sensu* rolling-ball background subtraction algorithm based on this package (but a rolling-disk version is possible).
+However, we use the ImgLib2 [Shape interface](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/region/localneighborhood/Shape.java) for structuring elements. This restricts structuring elements to *flat* structuring elements, which do not have a weight, or value, associated to each location. This prevents us from developing a *stricto sensu* rolling-ball background subtraction algorithm based on this package (but a rolling-disk version is possible).
 
 ### Morphological operations on `Comparable` type
 
@@ -78,14 +78,14 @@ Whatevs       Whatevs       Whatevs       Totes         Whovian       Whovian
 
 The 4 basic operations are accessed through 4 classes:
 
--   [net.imglib2.algorithm.morphology.Dilation](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java)
--   [net.imglib2.algorithm.morphology.Erosion](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java)
--   [net.imglib2.algorithm.morphology.Opening](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java)
--   [net.imglib2.algorithm.morphology.Closing](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Closing.java)
+-   [net.imglib2.algorithm.morphology.Dilation](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Dilation.java)
+-   [net.imglib2.algorithm.morphology.Erosion](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Erosion.java)
+-   [net.imglib2.algorithm.morphology.Opening](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Opening.java)
+-   [net.imglib2.algorithm.morphology.Closing](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Closing.java)
 
 Each of these classes contains only static methods that performs the desired operation. There can be up to 16 flavors of the same operation. They exist to cover all cases, which fall in 4 categories:
 
--   You want to operate on an [Img](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/img/Img.java) and return a **new Img** with the results. Then you need to call for instance:
+-   You want to operate on an [Img](https://github.com/imglib/imglib2/blob/-/src/main/java/net/imglib2/img/Img.java) and return a **new Img** with the results. Then you need to call for instance:
 
     ```
     Img< FloatType > result = Dilation.dilate( img, strel, 1 );
@@ -101,7 +101,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     <img src="/media/libs/imglib2/dilatedtonewfullimgexample.png" width="600"/>
 
--   You want to operate on a source [RandomAccessibleInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessibleInterval.java), in place (write the results in the source):
+-   You want to operate on a source [RandomAccessibleInterval](https://github.com/imglib/imglib2/blob/-/src/main/java/net/imglib2/RandomAccessibleInterval.java), in place (write the results in the source):
 
     ```
     Dilation.dilateInPlace( rai, interval, strel, 1 );
@@ -109,7 +109,7 @@ Each of these classes contains only static methods that performs the desired ope
 
     <img src="/media/libs/imglib2/dilatedinplaceexample.png" width="600"/>
 
--   You want to operate on a source [RandomAccessible](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessible.java), and write the results in a provided [IterableInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/IterableInterval.java):
+-   You want to operate on a source [RandomAccessible](https://github.com/imglib/imglib2/blob/-/src/main/java/net/imglib2/RandomAccessible.java), and write the results in a provided [IterableInterval](https://github.com/imglib/imglib2/blob/-/src/main/java/net/imglib2/IterableInterval.java):
 
     ```
     Dilation.dilate( source, target, strel, 1 )
@@ -120,7 +120,7 @@ Each of these classes contains only static methods that performs the desired ope
 Now, each of these category are declined in 4 specifics methods:
 
 -   Depending on the source type:
-    -   If the source type inherits from [RealType](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/type/numeric/RealType.java) - which is the case for most numeric types and all the native types - then you can use directly the above methods without any extras.
+    -   If the source type inherits from [RealType](https://github.com/imglib/imglib2/blob/-/src/main/java/net/imglib2/type/numeric/RealType.java) - which is the case for most numeric types and all the native types - then you can use directly the above methods without any extras.
     -   But you may have a source which might be `T extends Comparable & Type`. Then you have to provided the maximal value or the minimal value or both for this type. Then you have to call the methods whose signature are like:
         ```
         public static < T extends Type< T > & Comparable< T > > Img< T > dilate( final Img< T > source, final Shape strel, final T minVal, final int numThreads )
@@ -143,7 +143,7 @@ It turns out some structuring elements can be decomposed to achieve greater perf
 
 Several structuring elements can be decomposed, sometimes depending on the dimensionality of the problem.
 
-In the ImgLib2 morphology package, these decompositions are achieved through the [StructuringElements](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/StructuringElements.java) class. For instance:
+In the ImgLib2 morphology package, these decompositions are achieved through the [StructuringElements](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/StructuringElements.java) class. For instance:
 
     public static final List< Shape > diamond( final int radius, final int dimensionality, final boolean decompose )
 

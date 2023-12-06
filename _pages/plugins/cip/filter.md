@@ -33,7 +33,7 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 <img src="/media/plugins/cip/cip-gauss.png" title="fig:CIP_gauss.PNG" width="400" alt="CIP_gauss.PNG" />
 
 <span style="font-size:110%">**Implementation**</span>  
-CIP gauss implementation wraps the gauss ops, itself relying on the [imglib2 gauss3 implementation](https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3).
+CIP gauss implementation wraps the gauss ops, itself relying on the [imglib2 gauss3 implementation](https://github.com/imglib/imglib2-algorithm/tree/-/src/main/java/net/imglib2/algorithm/gauss3).
 
 # **erode**
 
@@ -63,7 +63,7 @@ Erosion shrinks the region in an image by a certain radius. It works both with b
 <img src="/media/plugins/cip/cip-erode.png" title="fig:CIP_erode.PNG" width="400" alt="CIP_erode.PNG" />  
 
 <span style="font-size:115%">**Implementation**</span>  
-CIP function wraps the [imglib2 Erosion class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java) from the morphology package.
+CIP function wraps the [imglib2 Erosion class](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Erosion.java) from the morphology package.
 
 # **dilate**
 
@@ -94,7 +94,7 @@ this filter dilate the region in an image by a certain radius. It works both wit
 
 <span style="font-size:110%">**Implementation**</span>
 
-CIP function wraps the [imglib2 Dilation class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java) from the morphology package.
+CIP function wraps the [imglib2 Dilation class](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Dilation.java) from the morphology package.
 
 # **opening**
 
@@ -123,7 +123,7 @@ This filter performs an erosion followed by a dilation. It erases small and thin
 <img src="/media/plugins/cip/cip-opening.png" title="fig:CIP_opening.PNG" width="400" alt="CIP_opening.PNG" />
 
 <span style="font-size:110%">**Implementation**</span>  
-CIP function wraps the [imglib2 Opening class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java) from the morphology package.
+CIP function wraps the [imglib2 Opening class](https://github.com/imglib/imglib2-algorithm/blob/-/src/main/java/net/imglib2/algorithm/morphology/Opening.java) from the morphology package.
 
 # **closing**
 

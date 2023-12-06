@@ -363,6 +363,6 @@ The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, t
 
 Example scripts (ImageJ 1.x and groovy) are available here:
 
-{% include link-banner url='https://github.com/NicoKiaru/LimeSeg/tree/master/src/main/resources/script-templates/LimeSeg' %}
+{% include link-banner url='https://github.com/NicoKiaru/LimeSeg/tree/-/src/main/resources/script-templates/LimeSeg' %}
 
 They are also accessible as templates in the [ImageJ script editor](/scripting/script-editor), if the LimeSeg update site is enabled.

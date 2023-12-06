@@ -29,7 +29,7 @@ This function allow to track the region defined in a list of label map image and
     **trackmate model**: a TrackmateModel instance that can be further used for visualisation or saving the track information to disk. One can refer to [ trackmate scripting resource](/plugins/trackmate/scripting) for more information on how to use trackmate model. [cip.show](/plugins/cip/utilities#show) also provide some convenience to display result in trackschme or in image overlay.
 
 <span style="font-size:110%">**Example**</span>  
-one can find an example script [here](https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py)
+one can find an example script [here](https://github.com/benoalo/CIP/blob/-/scripts/tracking_cip.py)
 
 <span style="font-size:110%">**Implementation**</span>  
 the track function detect the position of labelmap region at each time step load this information in trackmate\[1,2\] data structures before running the trackmate [tracking algorithm](https://github.com/fiji/plugins/trackmate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/sparselap/SparseLAPTracker.java). the tracking

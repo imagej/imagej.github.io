@@ -257,7 +257,7 @@ Finally add at least one of the following dependencies for ImageJ plugin support
 
 ## Further readings
 
--   [README.md](https://github.com/imagej/minimal-ij1-plugin/blob/master/README.md) of the [Minimal Maven based ImageJ 1.x plugin](https://github.com/imagej/minimal-ij1-plugin)
+-   [README.md](https://github.com/imagej/minimal-ij1-plugin/blob/-/README.md) of the [Minimal Maven based ImageJ 1.x plugin](https://github.com/imagej/minimal-ij1-plugin)
 -   Learn more about [ImageJ/SciJava dependencies](/develop/maven#how-to-find-a-dependencys-groupidartifactidversion-gav)
 -   [ImageJ Maven FAQ](/develop/maven-faq)
 

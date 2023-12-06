@@ -89,4 +89,4 @@ This stepwise evolution makes it slightly harder to choose between LoG and DoG d
 
 ## References
 
-[^1]: https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java
+[^1]: https://github.com/imagej/imglib/blob/-/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java

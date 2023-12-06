@@ -193,7 +193,7 @@ In many ways, this new wiki is much more powerful than the old site.
 
 4.  Finally, it's time for your first project! You're going to create (or edit
     if it already exists) your own personal page! Navigate into the
-    [`_pages/people` directory](https://github.com/imagej/imagej.github.io/tree/main/_pages/people).
+    [`_pages/people` directory](https://github.com/imagej/imagej.github.io/tree/-/_pages/people).
     Check whether a page exists with the same name as your GitHub ID, plus the
     `.md` file extension. (Hint! Press the {% include key key='T' %} key to engage
     the quick search filter, type your GitHub ID, and see if there's a match.)
@@ -322,7 +322,7 @@ also allows you to potentially use syntax highlighting to futher improve readabi
 We are retiring the `include info-box` in favor of using the wiki's `statbox`
 feature. Unfortunately, the statbox is not documented well enough yet on the
 wiki&mdash;although the [include itself describes it, including all supported
-front matter fields](https://github.com/imagej/imagej.github.io/blob/main/_includes/layout/statbox).
+front matter fields](https://github.com/imagej/imagej.github.io/blob/-/_includes/layout/statbox).
 Do you like writing documentation? You could add the mapping from `info-box`
 fields to `statbox` fields here in this section! It would help all of us.
 

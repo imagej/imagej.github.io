@@ -27,13 +27,13 @@ Deploying your library to a [Maven](/develop/maven) repository makes it availabl
 ## Instructions
 
 -   In order to add Github CI support to a repository, the secrets are needed: A) for deploying to Maven repositories; and B) in the case of deploying to OSS Sonatype, for GPG signing of artifacts. 
--   If the secrets have been added to your organization, and you have push access to the relevant repository on GitHub, you can use the [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/master/github-actionify.sh) with the `-f` flag to perform the needed operations. 
+-   If the secrets have been added to your organization, and you have push access to the relevant repository on GitHub, you can use the [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/-/github-actionify.sh) with the `-f` flag to perform the needed operations. 
 -   The github-actionify script will return '[ERROR] Dirty working copy' if you have uncommited changes. If you get this error, check the status of the repository with `git status` and then run `github-actionify -f` again.
 -   If you need help, please ask [on the Image.sc Forum](https://forum.image.sc/) in the Development category, or in the [scijava-common channel](https://gitter.im/scijava/scijava-common) on Gitter.
 
 ## Configuration of JavaFX builds
 
--   The workflows configured by the [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/master/github-actionify.sh) do not include JavaFX. 
+-   The workflows configured by the [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/-/github-actionify.sh) do not include JavaFX. 
 -   To add support for JavaFX, edit the files contained in the folder `.github/workflows/` to match those found in other SciJava projects that depend on JavaFX, e.g. [FilamentDetector](https://github.com/fiji/FilamentDetector).
 
 ## Testing things which cannot run headless

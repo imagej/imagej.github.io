@@ -27,7 +27,7 @@ The simplest way to install the plugin is using [Fiji](/software/fiji):
 
 ## Documentation
 
-User documentation in PDF format is available at [github](https://github.com/jschier/IsletJ/blob/master/pdf/IsletJ_Guide_2.pdf)
+User documentation in PDF format is available at [github](https://github.com/jschier/IsletJ/blob/-/pdf/IsletJ_Guide_2.pdf)
 
 ## Publication
 

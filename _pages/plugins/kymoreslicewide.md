@@ -10,7 +10,7 @@ team-founders: ['@ekatrukha', Laurie Young]
 team-maintainer: '@ekatrukha'
 ---
 
-{% include info-box filename=' [KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true)' source=' [github](https://github.com/ekatrukha/KymoResliceWide)'  %}
+{% include info-box filename=' [KymoResliceWide\_.jar](https://github.com/ekatrukha/KymoResliceWide/blob/-/KymoResliceWide_.jar?raw=true)' source=' [github](https://github.com/ekatrukha/KymoResliceWide)'  %}
 
 This plugin builds [kymographs](/tutorials/generate-and-exploit-kymographs) using straight line, polyline or freehand selection of variable thickness (and using either average or maximum intensity across the line), working also on Hyper-/RGB stacks. So it is extended implementation of ImageJ's *Reslice* function. Here are some thought on "[Why another kymograph plugin?](http://katpyxa.info/feedbacks/?p=26)".
 

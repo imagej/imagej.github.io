@@ -66,7 +66,7 @@ There many beginner books for Java. If you want to be well prepared, you may als
 
 **10:00 - 12:00 ImageJ2 API beating**
 
--   [slides](https://github.com/fiji/learnathon-2019/tree/master/ImageJ2_API_beating)
+-   [slides](https://github.com/fiji/learnathon-2019/tree/-/ImageJ2_API_beating)
 -   [Coding a ImageJ2 plugin template](https://github.com/haesleinhuepf/daisLEARNATHON2019/blob/step2_empty_workspace/src/main/java/de/mpicbg/imagej/CellCountingWorkflow.java)
 -   [Coding a workflow with ImageJ2](https://github.com/haesleinhuepf/daisLEARNATHON2019/blob/what_we_did_at_dais_learnation_2019/src/main/java/de/mpicbg/imagej/CellCountingWorkflow.java)
 -   [Translating a workflow to the GPU](https://github.com/haesleinhuepf/daisLEARNATHON2019/blob/step9_put_results_table/src/main/java/de/mpicbg/imagej/CellCountingWorkflow.java)
@@ -134,7 +134,7 @@ https://github.com/skalarproduktraum/sciview-tutorial
 
 **15:00 - 16:00 Paintara Demo**
 
-https://github.com/fiji/learnathon-2019/tree/master/paintera
+https://github.com/fiji/learnathon-2019/tree/-/paintera
 
 ## Wednesday
 

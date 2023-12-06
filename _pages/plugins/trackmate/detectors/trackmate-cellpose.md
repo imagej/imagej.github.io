@@ -294,7 +294,7 @@ The excellent people of the BIOP facility mentioned above also prepared a Conda 
 
 For this procedure to apply, you need to have Windows 10 or 11 as an OS, to have Python installed on your system using [Anaconda](https://www.anaconda.com/) and a NVIDIA GPU card. Ideally you would not have installed the Cuda library yet.
 
-Go to the [BIOP GitHub page](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#-conda-cellpose-gpu-) and fetch the YAML file corresponding to cellpose v0.6. Save it somwhere convenient.
+Go to the [BIOP GitHub page](https://github.com/BIOP/ijl-utilities-wrappers/blob/-/README.md#-conda-cellpose-gpu-) and fetch the YAML file corresponding to cellpose v0.6. Save it somwhere convenient.
 
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-biop-yaml-page.png"  align='center' class='box' %}
 

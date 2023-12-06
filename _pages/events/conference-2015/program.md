@@ -393,7 +393,7 @@ The necessity to make large volumetric datasets available for interactive visual
 
 It provides efficient implementations of common data types, storage layouts, and algorithms. [ImgLib2](/libs/imglib2) is the data model underlying [ImageJ2](/software/imagej2), the [KNIME Image Processing toolbox](https://tech.knime.org/community/image-processing), the [BigDataViewer](/plugins/bdv), and an increasing number of Fiji-Plugins.
 
-[ImgLib2](/libs/imglib2) is licensed under [BSD](https://github.com/imglib/imglib2/blob/master/LICENSE.txt). Documentation and source code are available at [http://imglib2.net](http://imglib2.net) and in a public source code repository at [GitHub](https://github.com/imglib/imglib2).
+[ImgLib2](/libs/imglib2) is licensed under [BSD](https://github.com/imglib/imglib2/blob/-/LICENSE.txt). Documentation and source code are available at [http://imglib2.net](http://imglib2.net) and in a public source code repository at [GitHub](https://github.com/imglib/imglib2).
 
 \[ [Poster](https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0) \]
 

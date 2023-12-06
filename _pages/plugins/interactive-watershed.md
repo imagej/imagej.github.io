@@ -192,7 +192,7 @@ History of version available of SCF\_MPI\_CBG update site
 <!-- -->
 
 -   2017-08-16: version 1.0.4
-    -   feature: in scripting the parameter are optionnal (defaults, thresh = min , seed dynamics = 0.05\*(Max-Min) , peakFlooding = 100). See [jython script on the project repository](https://github.com/mpicbg-scicomp/Interactive-H-Watershed/blob/master/scripts/jython_Ops.py) for usage details.
+    -   feature: in scripting the parameter are optionnal (defaults, thresh = min , seed dynamics = 0.05\*(Max-Min) , peakFlooding = 100). See [jython script on the project repository](https://github.com/mpicbg-scicomp/Interactive-H-Watershed/blob/-/scripts/jython_Ops.py) for usage details.
     -   bugfix: the output image is not a virtual stack anymore. That was annoying for further analysis of the regions.
     -   bugfix: The output image now the same calibration as the input
 

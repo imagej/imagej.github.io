@@ -63,9 +63,9 @@ Some of SNT's functionality is conveniently accessible in the [Script Interprete
 
 # Python Notebooks
 
-Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PyImageJ](/scripting/pyimagej) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/master/notebooks) directory in the SNT repository contains several examples at different complexity levels.
+Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PyImageJ](/scripting/pyimagej) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/-/notebooks) directory in the SNT repository contains several examples at different complexity levels.
 
-Here, we will only exemplify basic functionality. Please refer to the complete [examples](https://github.com/morphonets/SNT/tree/master/notebooks) for more details. Once the Python environment is properly [setup](https://github.com/morphonets/SNT/tree/master/notebooks#snt-notebooks), one can initialize Fiji:
+Here, we will only exemplify basic functionality. Please refer to the complete [examples](https://github.com/morphonets/SNT/tree/-/notebooks) for more details. Once the Python environment is properly [setup](https://github.com/morphonets/SNT/tree/-/notebooks#snt-notebooks), one can initialize Fiji:
 
 {% highlight python %}
 import imagej
@@ -108,7 +108,7 @@ Scripting in Fiji's script editor is perhaps best done using Groovy and python. 
 
 # Further  Resources
 
-As mentioned, SNT's [source code repository](https://github.com/morphonets/SNT) includes both  [Bundled Template Scripts](https://github.com/morphonets/SNT/tree/main/src/main/resources/script_templates/Neuroanatomy) and [Jupyter notebooks](https://github.com/morphonets/SNT/tree/main/notebooks). But additional snippets, examples, and further tutorials do exist online, including:
+As mentioned, SNT's [source code repository](https://github.com/morphonets/SNT) includes both  [Bundled Template Scripts](https://github.com/morphonets/SNT/tree/-/src/main/resources/script_templates/Neuroanatomy) and [Jupyter notebooks](https://github.com/morphonets/SNT/tree/-/notebooks). But additional snippets, examples, and further tutorials do exist online, including:
 
 - [Scripts from the SNT manuscript](https://github.com/morphonets/SNTmanuscript)
 

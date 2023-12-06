@@ -271,4 +271,4 @@ print("Done")
 # Links
 
 -   [ImageJ API examples](/develop/ij1-plugins#imagejs-api)
--   [ImageJ2 tutorials repository](https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto)
+-   [ImageJ2 tutorials repository](https://github.com/imagej/tutorials/tree/-/howtos/src/main/java/howto)

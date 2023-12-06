@@ -54,7 +54,7 @@ The documentation is split into several parts:
 ## Tutorials
 
 **[how to manually register a bdv dataset with bigdataviewer-playground](/plugins/bdv/playground/bdv-playground-manual-registration)**
-**[Inspecting multiple Tissue Cores using the BigDataViewer and BigDataViewer Playground in Fiji](https://github.com/BIIFSweden/FOM_Multiplexed/blob/main/bdvPlayground.md)
+**[Inspecting multiple Tissue Cores using the BigDataViewer and BigDataViewer Playground in Fiji](https://github.com/BIIFSweden/FOM_Multiplexed/blob/-/bdvPlayground.md)
 
 
 ## Other

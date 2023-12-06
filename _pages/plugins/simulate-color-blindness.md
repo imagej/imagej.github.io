@@ -3,7 +3,7 @@ name: "Simulate Color Blindness"
 title: Simulate Color Blindness
 categories: [Color Processing]
 artifact: sc.fiji:Dichromacy_
-source-url: https://github.com/fiji/Dichromacy/blob/master/src/main/java/Daltonize_.java
+source-url: https://github.com/fiji/Dichromacy/blob/-/src/main/java/Daltonize_.java
 ---
 
 This plugin simulates color blindness.

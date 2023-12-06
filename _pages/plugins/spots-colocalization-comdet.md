@@ -11,7 +11,7 @@ team-founder: '@ekatrukha'
 team-maintainer: '@ekatrukha'
 ---
 
-{% include info-box filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)'  %}
+{% include info-box filename=' [ComDet.jar](https://github.com/ekatrukha/ComDet/blob/-/target/ComDet_-0.5.1.jar?raw=true) + for ImageJ [Jama lib](https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar)' source=' [github](https://github.com/ekatrukha/ComDet)'  %}
 
 Plugin for finding and/or analyzing colocalization of bright intensity spots (cells, particles, vesicles, comets, dots, etc) in images with heterogeneous background (microscopy, astronomy, engineering, etc).
 

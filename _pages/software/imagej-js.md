@@ -127,7 +127,7 @@ For more detailed usage, please refer to [ImJoy Slides](https://github.com/imjoy
 
 
 # Integrate ImageJ.JS to your own website
-If you have a project page, website or online data repository which you would like to allow users to run ImageJ.JS, you can integrate ImageJ.JS to make your data and analysis workflow interactive. Since ImageJ.JS is also an [ImJoy](/software/imjoy) plugin, the recommend way to integrate ImageJ.JS is to load the ImJoy core to your site by following the [integration docs](https://github.com/imjoy-team/imjoy-core/blob/master/docs/integration.md), and then run the following code to instantiate ImageJ.JS:
+If you have a project page, website or online data repository which you would like to allow users to run ImageJ.JS, you can integrate ImageJ.JS to make your data and analysis workflow interactive. Since ImageJ.JS is also an [ImJoy](/software/imjoy) plugin, the recommend way to integrate ImageJ.JS is to load the ImJoy core to your site by following the [integration docs](https://github.com/imjoy-team/imjoy-core/blob/-/docs/integration.md), and then run the following code to instantiate ImageJ.JS:
 
 <!-- ImJoyPlugin: { "type": "web-worker", "editor_height": "400px"} -->
 ```javascript

@@ -48,7 +48,7 @@ You will need to create a python environment (whether through [venv](https://doc
 After [Installation](#Installation) we can now create `RunImageJScript` modules in a running CellProfiler.
 
 1. Use {% include bc path='Edit | Add Module | Advanced | RunImageJScript' %} to add the new module to your pipeline
-1. Select how your ImageJ/Fiji will be initialized. This follows the same principles of [PyImageJ initialization](https://github.com/imagej/pyimagej/blob/master/doc/Initialization.md#ways-to-initialize):
+1. Select how your ImageJ/Fiji will be initialized. This follows the same principles of [PyImageJ initialization](https://github.com/imagej/pyimagej/blob/-/doc/Initialization.md#ways-to-initialize):
    * ![RunImageJScript local initialization](/media/plugins/cellprofiler/cp_init_local.png) ![RunImageJScript endpoint initialization](/media/plugins/cellprofiler/cp_init_endpoint.png) ![RunImageJScript latest initialization](/media/plugins/cellprofiler/cp_init_latest.png)
    * **Local** will point to a `Fiji.app` on disk. This is the only option which does not automatically download and cache additional assets
    * **Endpoint** will take a list of one or more endpoint(s), e.g. `sc.fiji:fiji:2.3.1`

@@ -58,7 +58,7 @@ A tutorial on IntelliJ plugins can be found [here](https://www.jetbrains.com/hel
 
 After installing the ECF plugin you need to set it to use the Eclipse code styles file of the ImageJ project:
 
-1.  Download [eclipse-preferences.epf](https://github.com/scijava/scijava-coding-style/blob/master/preferences.epf)
+1.  Download [eclipse-preferences.epf](https://github.com/scijava/scijava-coding-style/blob/-/preferences.epf)
 2.  Open Eclipse and follow [these](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm) steps to import an `.epf` file
 3.  Open {% include bc path="Window | Preferences | Java | Code Style | Formatter" %}
 4.  Set *Active Profile* to *ImageJ*

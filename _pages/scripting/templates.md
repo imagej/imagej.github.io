@@ -12,7 +12,7 @@ Available templates are sorted by language under the `Templates` menu of the [Sc
 
 The [Script Editor](/scripting/script-editor) will automatically search the `script_templates` directory and register any discovered scripts as templates. For example, a [Mavenized](/develop/maven) project could add a sample script in `src/main/resources/script_templates` and it would be packaged into the appropriate location of the resultant `.jar`.
 
-For examples of how the existing templates are structured and distributed, take a look at the [`imagej-legacy` project](https://github.com/imagej/imagej-legacy/tree/master/src/main/resources/script_templates) (which maintains the script templates that were previously shipped with Fiji's script editor) as well as the [`imagej-scripting` project](https://github.com/imagej/imagej-scripting).
+For examples of how the existing templates are structured and distributed, take a look at the [`imagej-legacy` project](https://github.com/imagej/imagej-legacy/tree/-/src/main/resources/script_templates) (which maintains the script templates that were previously shipped with Fiji's script editor) as well as the [`imagej-scripting` project](https://github.com/imagej/imagej-scripting).
 
 # Template best practices
 

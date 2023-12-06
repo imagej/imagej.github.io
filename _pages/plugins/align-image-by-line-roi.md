@@ -5,7 +5,7 @@ categories: [Registration]
 name: "Align Image by line ROI"
 initial-release-date: "2006-09-28"
 artifact: sc.fiji:VIB_
-source-url: https://github.com/fiji/VIB/blob/master/src/main/java/Align_Image.java
+source-url: https://github.com/fiji/VIB/blob/-/src/main/java/Align_Image.java
 ---
 
 This plugin aligns an image to another image. You have to provide two landmarks per image by selecting a line.

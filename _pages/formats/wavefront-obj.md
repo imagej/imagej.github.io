@@ -4,7 +4,7 @@ name: "ExportMesh\_"
 dev-status: "stable"
 nav-links: true
 artifact: sc.fiji:VIB_
-source-url: https://github.com/fiji/VIB/blob/master/src/main/java/marchingcubes/ExportMesh_.java
+source-url: https://github.com/fiji/VIB/blob/-/src/main/java/marchingcubes/ExportMesh_.java
 ---
 
 This plugin will threshold a stack and create a surface using marchingcubes, and then save that as a Wavefront .OBJ file.

@@ -9,7 +9,7 @@ initial-release-date: "2015-02-03"
 dev-status: stable
 team-founder: "@acsenrafilho"
 team-maintainer: "@acsenrafilho"
-source-url: https://github.com/CSIM-Toolkits/ImageJ/tree/master/plugins/AnomalousDiffusionFilters
+source-url: https://github.com/CSIM-Toolkits/ImageJ/tree/-/plugins/AnomalousDiffusionFilters
 ---
 
 {% include thumbnail src='/media/plugins/filters-examples.png' title='Filtering examples with the T1w MRI stack available in Fiji examples images.'%}

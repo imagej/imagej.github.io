@@ -25,7 +25,7 @@ Simply turn on the [TraJClassifier update site](/update-sites/following).
 
 ## Introduction
 
-Please start by reading the [introduction](https://github.com/thorstenwagner/TraJ/wiki#introduction) of TraJ, because the TraJClassifier is build upon this library. The TraJClassifier was [trained](https://github.com/thorstenwagner/ij-trajectory-classifier/blob/master/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java) using [simulated trajectories](https://github.com/thorstenwagner/TraJ/wiki#simulation) of normal diffusion, subdiffusion, confined diffusion and directed motion. For each simulated, we estimated nine features for each trajectory (For more information about these features, go to the [TraJ wiki](https://github.com/thorstenwagner/TraJ/wiki#features)):
+Please start by reading the [introduction](https://github.com/thorstenwagner/TraJ/wiki#introduction) of TraJ, because the TraJClassifier is build upon this library. The TraJClassifier was [trained](https://github.com/thorstenwagner/ij-trajectory-classifier/blob/-/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java) using [simulated trajectories](https://github.com/thorstenwagner/TraJ/wiki#simulation) of normal diffusion, subdiffusion, confined diffusion and directed motion. For each simulated, we estimated nine features for each trajectory (For more information about these features, go to the [TraJ wiki](https://github.com/thorstenwagner/TraJ/wiki#features)):
 
 -   Alpha
 -   Asymmetry (Asymmetry3)

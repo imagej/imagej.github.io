@@ -129,7 +129,7 @@ cip.show(h, regions, 'glasbey' ) # overlay the region contour to img
 
 <img src="/media/plugins/cip/cip-show-region.png" title="fig:CIP_show_region.PNG" width="650" alt="CIP_show_region.PNG" />
 
-An example script displaying tracks can found [here](https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py)
+An example script displaying tracks can found [here](https://github.com/benoalo/CIP/blob/-/scripts/tracking_cip.py)
 
 ## Implementation
 The show function relies on IJ1 component as a starting point as this is the way data are displayed when downloading a fresh version of Fiji. this also ensure that this data can easily be seen and processed the usual way by any imageJ plugins.

@@ -11,7 +11,7 @@ team-founder: '@ekatrukha'
 team-maintainer: '@ekatrukha'
 ---
 
-{% include info-box filename=' [ContourLines\_.jar](https://github.com/ekatrukha/ContourLines/blob/master/target/ContourLines_-0.0.4.jar?raw=true)' source=' [github](https://github.com/ekatrukha/ContourLines)'  %}
+{% include info-box filename=' [ContourLines\_.jar](https://github.com/ekatrukha/ContourLines/blob/-/target/ContourLines_-0.0.4.jar?raw=true)' source=' [github](https://github.com/ekatrukha/ContourLines)'  %}
 
 Plugin generating contour lines with equal spacing on top of an image (using overlay). Based/inspired by [streamlines](https://github.com/anvaka/streamlines) project by [anvaka](https://github.com/anvaka) and [this publication](http://web.cs.ucdavis.edu/~ma/SIGGRAPH02/course23/notes/papers/Jobard.pdf) (use it for citation).
 

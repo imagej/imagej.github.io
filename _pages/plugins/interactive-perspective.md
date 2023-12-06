@@ -7,7 +7,7 @@ initial-release-date: "2008-11-09"
 team-founder: '@axtimwalde'
 team-maintainer: '@axtimwalde'
 artifact: mpicbg:mpicbg_
-source-url: https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Perspective.java
+source-url: https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/Transform_Perspective.java
 ---
 
 This plugin allows to apply a **perspective transformation** to a 2D image in an interactive way.

@@ -10,7 +10,7 @@ team-founder: '@axtimwalde'
 team-maintainer: '@axtimwalde'
 ---
 
-{% include info-box source=' [in gitweb](https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Affine.java)'  %}
+{% include info-box source=' [in gitweb](https://github.com/axtimwalde/mpicbg/blob/-/mpicbg_/src/main/java/Transform_Affine.java)'  %}
 
 This plugin allows to apply a **free affine transformation** to a 2D image in an interactive way.
 

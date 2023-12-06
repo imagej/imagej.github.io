@@ -35,7 +35,7 @@ You can add more landmarks throughout the process, but we advise you to really m
 We will illustrate the basics of WormBox by using an example in which our goal is to obtain measurements from a set of hooks for *Potamotrygonocestus* (a onchobothriid cestode).
 With this example we hope to demonstrate how WormBox can be helpful.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_2.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_2.jpg)
 
 **Figure 2**. Definition of landmarks upon handles and prongs of internal and lateral bothridial hooks of *Potamotrygonocestus*.
 
@@ -58,23 +58,23 @@ Here are the steps you should take to fully complete the first part of this tuto
 
 Start Fiji/ImageJ and enable WormBox in the switch to alternate macro tool sets (Figure 3).
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_3.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_3.jpg)
 
 **Figure 3**. Selecting WormBox tool sets.
 
 Once the plugin is enabled, 5 new icons will become available to you with the following function:
 
-- ![](https://github.com/bruvellu/WormBox/blob/main/media/fig_3a.jpg) Initialize landmark setup and/or load ROI (Region of Interest) to images.
-- ![](https://github.com/bruvellu/WormBox/blob/main/media/fig_3b.jpg) Save landmark positions.
-- ![](https://github.com/bruvellu/WormBox/blob/main/media/fig_3c.jpg) Count meristic variable.
-- ![](https://github.com/bruvellu/WormBox/blob/main/media/fig_3d.jpg) Add new landmarks.
-- ![](https://github.com/bruvellu/WormBox/blob/main/media/fig_3e.jpg) Run WomBox Analyzer, to compile measurements to .cvs file.
+- ![](https://github.com/bruvellu/WormBox/blob/-/media/fig_3a.jpg) Initialize landmark setup and/or load ROI (Region of Interest) to images.
+- ![](https://github.com/bruvellu/WormBox/blob/-/media/fig_3b.jpg) Save landmark positions.
+- ![](https://github.com/bruvellu/WormBox/blob/-/media/fig_3c.jpg) Count meristic variable.
+- ![](https://github.com/bruvellu/WormBox/blob/-/media/fig_3d.jpg) Add new landmarks.
+- ![](https://github.com/bruvellu/WormBox/blob/-/media/fig_3e.jpg) Run WomBox Analyzer, to compile measurements to .cvs file.
 
 ### Step 2
 
 Open the first image of your working folder. You can do that by either dragging the image into the Fiji/ImageJ main menu area (gray area) or by using File/Open.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_4.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_4.jpg)
 
 **Figure 4**. Opening images in Fiji.
 
@@ -86,7 +86,7 @@ However, if the original image is not in .tif format, or if the extension is wri
 
 Scaling images. If your images are not scaled by Fiji/ImageJ or, although scaled using a different software, Fiji/ImageJ did not recognize the scale, WormBox will require that a scale is provided and the warning window below will be presented.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_5.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_5.jpg)
 
 **Figure 5**. Request for providing a scale by WormBox.
 
@@ -94,7 +94,7 @@ To scale the image in Fiji/ImageJ you will have to follow these steps:
 
 **Step 3a** Select the "straight" tool to draw lines.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_6.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_6.jpg)
 
 **Figure 6**. Selecting the straight line tool in ImageJ.
 
@@ -102,7 +102,7 @@ To scale the image in Fiji/ImageJ you will have to follow these steps:
 
 **Step 3c** In the main menu, select Analyze/Set Scale and provide the known distance (*i.e.*, 50) and the unity of the length (*i.e.*, µm).
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_7.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_7.jpg)
 
 **Figure 7**. Set scale menu in ImageJ.
 
@@ -116,7 +116,7 @@ If you have opened a image and WormBox has recognized the scale, you are ready t
 Press the button to load ROI from the WormBox tool set.
 If this is the first time you are using WormBox for the images within a given folder you will have to define the number of landmarks you will be working.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_8.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_8.jpg)
 
 **Figure 8**. Defining the number of landmarks in WormBox.
 
@@ -124,7 +124,7 @@ As we mentioned above (Figure 2), we will need 8 landmarks for the measurements 
 By selecting 8 and pressing "OK", we will define a template with eight landmarks which will be used for all images in this folder (Figure 9A).
 A file called RoiSet.zip will be created and all landmarks will appear on the left part of the image.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_9.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_9.jpg)
 
 **Figure 9**. **A**, landmark pasted on image after defining numbers of landmarks or loading template. **B**, landmarks placed in desired positions.
 
@@ -134,7 +134,7 @@ However, all information will be still there, saved in associated files with ext
 These files will be used to compile the information after you process all images and **SHOULD NOT BE REMOVED**---unless you want to wipe out all the data.
 If you desire to verify and or modify the positions of the landmarks, just reload the ROI using the icon in the macro tool set menu of WormBox.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_9b_note.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_9b_note.jpg)
 
 **NOTE:** WormBox allows you to delete any landmark if you feel that a given measurement should not be taken from a given image.
 All you have to do is to place the landmarks that you consider that should be included in the image and use the ROI manager to delete the ones that should not be taken into account. 
@@ -174,14 +174,14 @@ In this case, the measurement for "variable_x" will be the sum of the distances 
 Once you have written your configuration file (*e.g.*, hooks_measurements.conf) and saved it, run the WormBox Analyzer (see definition of icons above).
 First, WormBox will ask you the target folder in which your images have been processed (Figure 10A); and then the name of your configuration file (Figure 10B).
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_10.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_10.jpg)
 
 **Figure 10**. **A**, menu for selecting target folder. **B**, menu to specify configuration file.
 
 Finally, you will have to specify the output file name.
 WormBox will generate a .csv (comma separated values) text file that can be opened in any spreadsheet software (*e.g.*, Excel, OpenOffice, among others) as demonstrated in Figure 11.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_11.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_11.jpg)
 
 **Figure 11**. Summary results from WormBox showed by opening the .csv file in OpenOffice Spreadsheet.
 
@@ -202,7 +202,7 @@ Except for the fact that we are using two sets of landmarks to compute testes di
 It is true that the configuration file will have to specify that; which will be addressed latter.
 Thus, let’s see how we count structures using WormBox.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_12.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_12.jpg)
 
 **Figure 12**. Landmarks on loose proglottids of *Potamotrygonocestus*.
 
@@ -219,7 +219,7 @@ If you have any difficulties, please go back and have a quick look above.
 To start counting, you have to enable the function to count meristic variables (icon with Σ sign).
 By doing that, you will turn on the multi-point tool of Fiji/ImageJ and a window named "action required" will appear.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_13.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_13.jpg)
 
 **Figure 13**. Enabling the multi-point tool of Fiji/ImageJ.
 
@@ -227,7 +227,7 @@ Once the counting tool is on, all you have to do is to position your mouse on to
 Here, we will count two sets of testes: poral and aporal ones.
 As you start clicking on top of the testes, let’s say on the aporal side, landmarks in yellow will provide the counting (Figure 14).
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_14.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_14.jpg)
 
 **Figure 14**. Image showing landmarks in blue and counting unities in yellow for partial counts of aporal testes.
 
@@ -241,7 +241,7 @@ Now, let us count the other set of testes, *i.e.*, poral testes.
 You can start by loading all you have done thus far by pressing the icon to load ROI into image.
 If you load the ROI, you should have something like Figure 15.
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_15.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_15.jpg)
 
 **Figure 15**. Summary information after loading ROI at this point.
 
@@ -296,7 +296,7 @@ Finally, meristic variable are defined by its name followed by ":count". Example
 
 The final results should be something like this:
 
-![](https://github.com/bruvellu/WormBox/blob/main/media/fig_16.jpg)
+![](https://github.com/bruvellu/WormBox/blob/-/media/fig_16.jpg)
 
 **Figure 16**. Summary results from WormBox showed by opening the .csv file in OpenOffice Spreadsheet.
 

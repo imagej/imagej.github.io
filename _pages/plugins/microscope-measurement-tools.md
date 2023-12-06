@@ -44,7 +44,7 @@ Three files are included:
 Please see the complete installation & usage instructions here:
 
   
-[**Microscope Meas. - Calibration instructions.pdf**](https://github.com/demisjohn/Microscope-Measurement-Tools/blob/master/Microscope%20Meas.%20-%20Calibration%20instructions.pdf)
+[**Microscope Meas. - Calibration instructions.pdf**](https://github.com/demisjohn/Microscope-Measurement-Tools/blob/-/Microscope%20Meas.%20-%20Calibration%20instructions.pdf)
 
 Basic instructions are as follows.
 

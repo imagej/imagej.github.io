@@ -8,7 +8,7 @@ team-maintainer: "@tomancak"
 team-contributors: "@dscho"
 release-date: "2012-06-29"
 initial-release-date: "2012-05-27"
-source-url: https://github.com/fiji/fiji/blob/master/plugins/Examples/CoverMaker/Cover_Maker.py
+source-url: https://github.com/fiji/fiji/blob/-/plugins/Examples/CoverMaker/Cover_Maker.py
 ---
 
 {% include img align="right" src="nature-cover" width=166 caption="Nature cover for the paper on the developmental hourglass." %}

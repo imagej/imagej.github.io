@@ -10,7 +10,7 @@ Sound downsampling of an image requires the elimination of image frequencies hig
 
 ## Download
 
-Get a snapshot from the git repository here: [downsample\_.js](https://github.com/fiji/fiji/blob/master/plugins/Examples/downsample_.js).
+Get a snapshot from the git repository here: [downsample\_.js](https://github.com/fiji/fiji/blob/-/plugins/Examples/downsample_.js).
 
 ## Documentation
 

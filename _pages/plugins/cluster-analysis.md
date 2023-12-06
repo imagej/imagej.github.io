@@ -41,7 +41,7 @@ After clicking on Cluster Analysis, a dialog should appear, where you need to sp
 
 In the next dialog, you will be prompted to define several details for every channel of your images. If your images don't have 4 channels, just ignore the ones you don't need. You can also name every channel individually and specify whether you want to perform a Particle Analysis. Also make sure to click on the Test parameter button to test whether all parameters are set up correctly. When the Z-Stack option is omitted, the analysis will be run on all slices of your images. Specify also the delimiter used in your titles, so that information can be extracted from the image titles and be used in your database.
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Dialog1.png?raw=True)
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Dialog1.png?raw=True)
 
 You can perform a background subtraction using a sliding paraboloid with a specific rolling ball radius. Furthermore, you can filter a channel using Gaussian Blurring by a defined sigma (radius). It is also possible to adjust Brightness and Contrast either automatically or manually, even though neither are recommended nor useful. Both blurring radius and rolling ball are dependent on the resolution of your images. Finding the right parameters depend strongly on what information you want to extract from one channel. If you need to detect small particles, a strong blur and background subtraction can make the particles weaker and detection almost impossible. In general, the bigger the blurring radius, the bigger the blur. Conversely, the smaller the rolling ball, the higher the background that gets subtracted.
 
@@ -49,23 +49,23 @@ After setting up the first dialog, you will need to specify the parameters to pe
 
 You can also perform a Colocalisation Analysis with other channels, for example, if you want to count the number of objects inside or outside the nuclei. Just tick the corresponding channel you want to perform the colocalisation with. The colocalisation algorithm works by using the identified objects during the particle analysis as a mask for another channel and perform a second particle analysis on the chosen channels only within the primary mask. You can also enlarge the mask created from the primary channel by a certain amount in microns (if your images are calibrated, otherwise pixels).
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Dialog2.png?raw=True)
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Dialog2.png?raw=True)
 
 After defining parameters for all corresponding channels, you can either choose to manually segment regions of interest in your pictures (you will need to sit in front of the screen during the whole run) or define an automated segmentation algorithm which is based on an additional Particle Analysis combining several channels together. By applying a high Gaussian Blur one can filter for dense structures in your images such as nuclei dense brain regions (e.g. pyramidal cell layer in the hippocampus) or using a morphological staining such as a dendritic marker (such as MAP2). The automated segmentation algorithm will always also include the quantification of the whole image, even if the algorithm fails to detect an appropriate mask. Play around with the parameters to find the suitable combination for your purpose. If you only want to select the whole image, just set every numerical option to 0.
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Dialog4.png?raw=True)
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Dialog4.png?raw=True)
 
 One can also include a step-wise segment analysis from your primary segmentation outcome with a defined step range in microns. This can be particularly useful when you want to analyse segments of synaptic rich layers such as the Stratum Radiatum of the hippocampus.
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Denditic_Segm_Analysis.png?raw=True)
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Denditic_Segm_Analysis.png?raw=True)
 
 The script will choose a random image after setting all parameters and show you all steps of the analysis to check whether the parameters meet all criterias. When you are satisfied with the outcome, press on Start Experiment or try another image or define all parameters again.The old parameters will be saved in the ini.cfg-file and remembered for when you want to re-run the script.
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Result1.png?raw=True)
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Result1.png?raw=True)
 
 Example of successful segmentation of the pyramidal cell layer (as red line) of the CA1 in the hippocampus and the quantificitation of a certain mRNA within the segmentation (thresholded particles in red, found particles segmented in green).
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Coloc_Example.png?raw=True)
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Coloc_Example.png?raw=True)
 
 Example of a GFP-filled neuron stained for a post- and presynaptic marker. GFP was used as a mask to find post- and presynaptic components individually. Colocalisation between post- presynapse was achieved by superimposing one channel to the other and counting inside the superimposed channel (all bounded within the GFP-mask). By rotating the superimposed channel by 90°, one can estimate the random colocalisation between the two channels (Done automatically when performing colocalisation analysis)
 
@@ -80,7 +80,7 @@ You will find four different tables in the database:
 
 These tables are also available as .csv-tables in the Output Table folder.
 
-![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/master/ExampleImage/Database.png?raw=True "SQLite Browser")
+![Alt Text](https://github.com/dcolam/Cluster-Analysis-Plugin/blob/-/ExampleImage/Database.png?raw=True "SQLite Browser")
 
 It is recommended to open your Output.db file with a a DB-Browser such as DB-Browser for Sqlite (http://sqlitebrowser.org/) for a quick look, but to import your datasets using Matlab, R, Python or another popular programming language to properly analyze your data. The usual routine consists of creating a connection to the database and defining a query containing conditional-statements to correctly retrieve the corresponding measurements.
 

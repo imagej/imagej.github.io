@@ -30,7 +30,7 @@ and only *one* `Application` instance can exist at runtime. Therefore, the
 IJ1/IJ2 interface (using Swing).
 
 -   An example of how to use the `javafx.embed.swing.JFXPanel` in a Fiji project can be found
-    [here](https://github.com/fiji/OMEVisual/blob/master/src/main/java/sc/fiji/omevisual/gui/MainAppFrame.java)
+    [here](https://github.com/fiji/OMEVisual/blob/-/src/main/java/sc/fiji/omevisual/gui/MainAppFrame.java)
     
 The ImageJ UI is written in Swing and JavaFX will run in a different thread. This adds some additional considerations
 when building JavaFX projects that will run in ImageJ. Extra care must be taken to ensure changes in the swing UI are

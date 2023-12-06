@@ -17,7 +17,7 @@ The [EpiGraph](/plugins/epigraph) is a Fiji plugin that combines computational g
 
 It contains a set of visualization tools, together with graphical user interfaces for easy extraction and analysis of information. The collected data of arrangement can be exported to excel tables for being processed with other tools as well.
 
-On top, to encourage the sharing of resources, [EpiGraph](/plugins/epigraph) is published under an open-source (GPLv3) license, which can be downloaded from https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/LICENSE.
+On top, to encourage the sharing of resources, [EpiGraph](/plugins/epigraph) is published under an open-source (GPLv3) license, which can be downloaded from https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/-/LICENSE.
 
 ## **Pipeline**
 

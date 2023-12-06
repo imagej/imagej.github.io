@@ -153,7 +153,7 @@ Reporting Bugs and Suggestions
 
 The source code for MiNA is available on [Github](https://github.com/StuartLab/MiNA). Software bugs can be reported using the [issue tracker](https://github.com/StuartLab/MiNA/issues). If you implement your own feature, fix a bug, or extend the tool and want to contribute it back to the project you can always make a [pull request](https://github.com/ScienceToolkit/MiNA/pulls).
 
-When reporting bugs, please provide the steps required to reproduce the issue. Before reporting, try running the updater (Help → Update...) and, if that fails, reinstalling Fiji and adding the update sites as described in the installation section. Please only report software bugs with with the [issue tracker](https://github.com/StuartLab/MiNA/issues). Also, be sure to check the FAQ (frequently asked questions) in the [README.md](https://github.com/StuartLab/MiNA/blob/master/README.md) first.
+When reporting bugs, please provide the steps required to reproduce the issue. Before reporting, try running the updater (Help → Update...) and, if that fails, reinstalling Fiji and adding the update sites as described in the installation section. Please only report software bugs with with the [issue tracker](https://github.com/StuartLab/MiNA/issues). Also, be sure to check the FAQ (frequently asked questions) in the [README.md](https://github.com/StuartLab/MiNA/blob/-/README.md) first.
 
 <h1>
 

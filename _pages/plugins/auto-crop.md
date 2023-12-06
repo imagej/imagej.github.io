@@ -3,7 +3,7 @@ title: Auto Crop
 categories: [Tutorials]
 name: "Auto Crop"
 artifact: sc.fiji:Fiji_Plugins
-source-url: https://github.com/fiji/Fiji_Plugins/blob/master/src/main/java/fiji/selection/Select_Bounding_Box.java
+source-url: https://github.com/fiji/Fiji_Plugins/blob/-/src/main/java/fiji/selection/Select_Bounding_Box.java
 initial-release-date: "2020-02-04"
 ---
 

@@ -138,7 +138,7 @@ Once a feature or fix is complete it can move to the `master` branch of the repo
 
 Once the `master` branch of a component has your desired new functionality, the next step is to cut a *release* version of the component. Normally, the Maven version (in the [pom.xml](https://maven.apache.org/pom.html#Introduction)) on master is a [*SNAPSHOT* version](http://stackoverflow.com/q/5901378), meaning it is [unstable](/develop/architecture#reproducible-builds) and not yet released. However, a [stable](/develop/architecture#reproducible-builds) *release* artifact can be deployed to the appropriate remote Maven repository.
 
-The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/master/release-version.sh) script automates the steps to performing a release. It relies on the [Maven Release plugin](http://maven.apache.org/maven-release/maven-release-plugin/) to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
+The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/-/release-version.sh) script automates the steps to performing a release. It relies on the [Maven Release plugin](http://maven.apache.org/maven-release/maven-release-plugin/) to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
 ### Advantages
 

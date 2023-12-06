@@ -27,7 +27,7 @@ See [slides](https://frauzufall.github.io/imagej-universe-intro/)!
 
 ### Start a Maven project with Eclipse
 
-See [slides](https://github.com/fiji/learnathon-2018/blob/master/Start%20a%20Maven%20Project.pdf)
+See [slides](https://github.com/fiji/learnathon-2018/blob/-/Start%20a%20Maven%20Project.pdf)
 
 Git repos to clone:
 
@@ -54,14 +54,14 @@ Git repos to clone:
 
 -   [`https://github.com/imglib/imglib2-introductory-workshop.git`](https://github.com/imglib/imglib2-introductory-workshop.git)
 
-([Slides](https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf) are contained in the repository.)
+([Slides](https://github.com/imglib/imglib2-introductory-workshop/blob/-/Introduction-ImgLib2.pdf) are contained in the repository.)
 
 ## Tuesday
 
 ### ImageJ2 and SciJava
 
 -   Search for stuff in our ecosystem: [https://search.imagej.net](https://search.imagej.net)
--   [SciJava and ImageJ Ops Jupyter notebook / slides](https://github.com/fiji/learnathon-2018/blob/master/SciJava%20and%20ImageJ%20Ops.ipynb)
+-   [SciJava and ImageJ Ops Jupyter notebook / slides](https://github.com/fiji/learnathon-2018/blob/-/SciJava%20and%20ImageJ%20Ops.ipynb)
 -   [Slides from last year's Learnathon about SciJava community](/presentations/2017-06-19-dais-learnathon/)
 -   [Developing ImageJ in Eclipse](/develop/eclipse)
 
@@ -74,8 +74,8 @@ Git repos to clone:
 The ImageJ Legacy Course covered the topics: images, tables, regions of interest and command execution.
 
 -   [ImageJ Legacy Exercises (Slides Included)](https://github.com/maarzt/imagej-legacy-course)
--   Last years [cheatsheet](https://github.com/maarzt/imagej-legacy-course/blob/master/slides/ij_legacy_cheetsheet.pdf)
--   Last years course [Slides](https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy.pdf) [Old Exercise 1](https://github.com/mpicbg-scicomp/ij2course-images) [Old Exercise 2](https://github.com/mpicbg-scicomp/ij2course-regions) [Old Exercise 3](https://github.com/mpicbg-scicomp/ij2course-tables)
+-   Last years [cheatsheet](https://github.com/maarzt/imagej-legacy-course/blob/-/slides/ij_legacy_cheetsheet.pdf)
+-   Last years course [Slides](https://github.com/mpicbg-scicomp/ij2course-images/blob/-/slides/ij_legacy.pdf) [Old Exercise 1](https://github.com/mpicbg-scicomp/ij2course-images) [Old Exercise 2](https://github.com/mpicbg-scicomp/ij2course-regions) [Old Exercise 3](https://github.com/mpicbg-scicomp/ij2course-tables)
 
 ### Jupyter Notebooks
 
@@ -116,15 +116,15 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 ### ImageJ Server
 
 -   https://github.com/imagej/imagej-server
--   [imagej.server Python module](https://github.com/imagej/imagej.py/tree/master/imagej/server)
--   [Example Jupyter notebook using imagej-server](https://github.com/CellProfiler/notebooks/blob/master/cellprofiler_with_imagej_server.ipynb)
+-   [imagej.server Python module](https://github.com/imagej/imagej.py/tree/-/imagej/server)
+-   [Example Jupyter notebook using imagej-server](https://github.com/CellProfiler/notebooks/blob/-/cellprofiler_with_imagej_server.ipynb)
 -   [Remote HPC cluster parallelization support in SciJava plugins](http://forum.imagej.net/t/remote-hpc-cluster-parallelization-support-in-scijava-plugins/10755)
 
 ## Thursday
 
 ### ClearVolume and BDV VisTools
 
--   [Slides](https://github.com/fiji/learnathon-2018/blob/master/Jug_BigDataAnd3dViz.pdf)
+-   [Slides](https://github.com/fiji/learnathon-2018/blob/-/Jug_BigDataAnd3dViz.pdf)
 -   Repositories to be cloned:
     -   [`https://github.com/fjug/TutorialClearVolume.git`](https://github.com/fjug/TutorialClearVolume.git)
     -   [`https://github.com/fjug/TutorialBigDataViewer.git`](https://github.com/fjug/TutorialBigDataViewer.git)
@@ -148,7 +148,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 
 ### Imglib2 Algorithm
 
--   Slides: [https://github.com/maarzt/imglib2-algorithm-workshop/blob/master/slides/presentation.pdf](https://github.com/maarzt/imglib2-algorithm-workshop/blob/master/slides/presentation.pdf)
+-   Slides: [https://github.com/maarzt/imglib2-algorithm-workshop/blob/-/slides/presentation.pdf](https://github.com/maarzt/imglib2-algorithm-workshop/blob/-/slides/presentation.pdf)
 -   Exercises: [https://github.com/maarzt/imglib2-algorithm-workshop](https://github.com/maarzt/imglib2-algorithm-workshop)
 
 ### Imglib2 Advanced

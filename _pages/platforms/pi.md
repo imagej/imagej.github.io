@@ -18,7 +18,7 @@ The following steps describe how to install Fiji on a Raspberry Pi:
 3.  Choose Java 8 (`sudo update-alternatives --config java`).
 4.  Verify it works using `java -version`.
 5.  Download and install the [platform-independent "no JRE" distribution of Fiji](http://downloads.imagej.net/fiji/latest/fiji-nojre.zip).
-6.  Download the [ImageJ.sh](https://github.com/imagej/imagej2/blob/master/bin/ImageJ.sh) shell script
+6.  Download the [ImageJ.sh](https://github.com/imagej/imagej2/blob/-/bin/ImageJ.sh) shell script
 7.  Move the `ImageJ.sh` file to the `Fiji.app` folder
 8.  Set the executable bit (`chmod +x ImageJ.sh`)
 9.  Run it (`./ImageJ.sh`) to launch Fiji.

@@ -34,7 +34,7 @@ If one would like to contribute or simply toy with the source code of the librar
 
 ## Documentation organisation
 
-To build a script with CIP, follow one of the examples below or try one of the [repository](https://github.com/benoalo/CIP/tree/master/scripts%7Cproject) examples.
+To build a script with CIP, follow one of the examples below or try one of the [repository](https://github.com/benoalo/CIP/tree/-/scripts%7Cproject) examples.
 
 To get information on a function follow the link in the function table in the [categories](/plugins/cip#tools-categories) section or directly go to one of the category pages: [Format](/plugins/cip/format), [Filter](/plugins/cip/filter), [Math](/plugins/cip/math), [Segment](/plugins/cip/segmentation), [Assess](/plugins/cip/utilities).
 

@@ -302,7 +302,7 @@ Here are several ways to do so:
         -   E.g., for "ij." classes, go to: https://github.com/imagej/ImageJ
     -   Press the {% include key key='T' %} key, and type the name of the file you are looking for.
         -   In the example above, this is Thresholder.java.
-    -   You should end up with a hit like: https://github.com/imagej/ImageJ/blob/master/ij/plugin/Thresholder.java.
+    -   You should end up with a hit like: https://github.com/imagej/ImageJ/blob/-/ij/plugin/Thresholder.java.
     -   This method requires that you know in which repository the code lives. However, you can combine it with **search.imagej.net** method above to figure out which repository, then load the code on GitHub, if desired.
 4.  **Using the "Open Source for Menu Item" command:**
     -   Run {% include bc path='Plugins | Scripting | Open Source for Menu Item' %}.
@@ -394,7 +394,7 @@ As a complete example, if you were interested in the [2D Histogram](/plugins/2d-
 
 -   The [search bar](/learn#the-search-bar) indicates it's located in VIB.jar
 -   VIB is a Fiji plugin, so we go to [the VIB repository](https://github.com/fiji/VIB).
--   On GitHub, press {% include key key='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java) source.
+-   On GitHub, press {% include key key='T' %}, search for "Histogram", and find [the Histogram 2D](https://github.com/fiji/VIB/blob/-/src/main/java/util/Histogram_2D.java) source.
 
 ## I have a problem that is not covered on this page!
 

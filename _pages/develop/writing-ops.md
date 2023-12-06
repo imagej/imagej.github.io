@@ -74,7 +74,7 @@ public class DefaultGCD implements GCD extends AbstractOp {
 }
 ```
 
-[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/DefaultGCD.java)
+[On GitHub](https://github.com/tferr/Scripts/blob/-/BAR/src/main/java/bar/DefaultGCD.java)
 
 ## Use your Op
 
@@ -162,7 +162,7 @@ public class BAR extends AbstractNamespace {
 }
 ```
 
-[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BAR.java)
+[On GitHub](https://github.com/tferr/Scripts/blob/-/BAR/src/main/java/bar/BAR.java)
 
 ## Implement your Op(s)
 
@@ -274,7 +274,7 @@ public class BARService extends AbstractService implements ImageJService {
 }
 ```
 
-[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BARService.java)
+[On GitHub](https://github.com/tferr/Scripts/blob/-/BAR/src/main/java/bar/BARService.java)
 
 Now we can drop package prefixes when using our Namespace in scripts:
 
@@ -301,7 +301,7 @@ with contents:
 
     print("Greatest common divisor of " + str(a) + " and " + str(b) + " is: " + str(bar.gcd(a, b)))
 
-[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/resources/script_templates/BAR/GCD.py)
+[On GitHub](https://github.com/tferr/Scripts/blob/-/BAR/src/main/resources/script_templates/BAR/GCD.py)
 ```
 
 Then users will be able to select `Templates > BAR > GCD` from the script editor window, to automatically load the script and select the correct script language (python in this case).

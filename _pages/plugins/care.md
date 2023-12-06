@@ -51,4 +51,4 @@ Please read [this page](/develop/tensorflow) for GPU support.
 
 ## License
 
-This project is licensed under the BSD 2-clause "Simplified" License -- see the [LICENSE.txt](https://github.com/CSBDeep/CSBDeep_fiji/blob/master/LICENSE.txt) file for details.
+This project is licensed under the BSD 2-clause "Simplified" License -- see the [LICENSE.txt](https://github.com/CSBDeep/CSBDeep_fiji/blob/-/LICENSE.txt) file for details.
