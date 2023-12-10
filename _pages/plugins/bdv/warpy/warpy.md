@@ -1,6 +1,6 @@
 ---
 title: Warpy
-artifact: ch.epfl.biop:qupath-extension-warpy
+artifact: qupath.ext.warpy:qupath-extension-warpy
 nav-links: true
 toc: true
 ---
