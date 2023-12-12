@@ -3,7 +3,7 @@ mediawiki: Spot_Spine
 title: Spot Spine
 categories: [Analysis]
 license-label: GPL
-pom-url: https://github.com/JeffGilles
+source-url: https://github.com/JeffGilles/Spot-Spine
 team-founder: "@JeffGilles"
 team-support: "@JeffGilles"
 team-maintainer: "@JeffGilles"
@@ -19,7 +19,7 @@ Spine necks tracing uses algorithms from the plugin [SNT](https://imagej.net/plu
 
 ## Authors
 
-Jean-Francois Gilles, 
+Jean-François Gilles, 
 Thomas Boudier, 
 Tiago Ferreira, 
 Nicolas Heck.
@@ -158,7 +158,7 @@ You can modify the brightness&Contrast (Image>Adjust>Brightness/Contrast), you c
 
 3.  `Next` – Trace necks
 
-    This will trace spine necks using algorithm from the SNT plugin.
+    This will trace spine necks using algorithm from the SNT plugin. The minimal euclidian distance between the spine head and the dendrite is computed to identify one voxel at the border of the spine head and one voxel at the border of the dendrite, and the optimal path between these two points is found by SNT. After tracing, the neck is the one-voxel wide path from the voxel positioned at the edge of the spine head to the voxel preceding the first voxel positioned at the border of the dendrite.
 
     A composite image stack is displayed, that contains the following channels :
     1st channel = Spine heads
@@ -264,7 +264,7 @@ and [in the publication](https://doi.org/10.1016/j.ymeth.2016.11.016).
 
 ## Installation
 
-Download and copy the following jar in your plugins folder XXXXX.jar (soon)
+Download and copy the following .jar in your plugins folder [Spot_Spine.jar](https://drive.google.com/file/d/1RyRXoG8hUCs9zFmc2Ztt0PfeHIFHZyQJ/view?usp=sharing)
 
 The plugin 3DImageSuite is required. Download at https://mcib3d.frama.io/3d-suite-imagej/#download
 
