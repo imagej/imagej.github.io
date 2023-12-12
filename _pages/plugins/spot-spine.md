@@ -158,9 +158,9 @@ You can modify the brightness&Contrast (Image>Adjust>Brightness/Contrast), you c
 
 3.  `Next` – Trace necks
 
-    This will trace spine necks using algorithm from the SNT plugin. The minimal euclidian distance between the spine head and the dendrite is computed to identify one voxel at the border of the spine head and one voxel at the border of the dendrite, and the optimal path between these two points is found by SNT. After tracing, the neck is the one-voxel wide path from the voxel positioned at the edge of the spine head to the voxel preceding the first voxel positioned at the border of the dendrite.
+    This will trace spine necks using algorithm from the SNT plugin.
 
-    A composite image stack is displayed, that contains the following channels :
+    A composite image stack is displayed, that contains the following channels:
     1st channel = Spine heads
     2nd channel = Straight lines from spine head border to dendrite border
     3rd channel = Dendrite model
