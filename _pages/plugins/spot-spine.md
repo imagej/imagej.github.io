@@ -266,9 +266,9 @@ and [in the publication](https://doi.org/10.1016/j.ymeth.2016.11.016).
 
 Download and copy the following .jar in your plugins folder [Spot_Spine.jar](https://drive.google.com/file/d/1RyRXoG8hUCs9zFmc2Ztt0PfeHIFHZyQJ/view?usp=sharing)
 
-The plugin 3DImageSuite is required. Download at https://mcib3d.frama.io/3d-suite-imagej/#download
+The plugin 3DImageSuite is required. Download [link](https://mcib3d.frama.io/3d-suite-imagej/#download)
 
-The plugin SNT/Neuroanatomy is required. Download at https://imagej.net/plugins/snt/#installation
+The plugin SNT/Neuroanatomy is required. Download [link](https://imagej.net/plugins/snt/#installation)
 
 Both can be found in Fiji>Update...>Manager Update Sites.
 
