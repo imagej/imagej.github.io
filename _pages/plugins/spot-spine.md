@@ -264,13 +264,15 @@ and [in the publication](https://doi.org/10.1016/j.ymeth.2016.11.016).
 
 ## Installation
 
-Download and copy the following .jar in your plugins folder [Spot_Spine.jar](https://drive.google.com/file/d/1RyRXoG8hUCs9zFmc2Ztt0PfeHIFHZyQJ/view?usp=sharing)
+- Download and copy the following .jar in your plugins folder [Spot_Spine.jar](https://drive.google.com/file/d/1RyRXoG8hUCs9zFmc2Ztt0PfeHIFHZyQJ/view?usp=sharing)
 
-The plugin 3DImageSuite is required. Download [link](https://mcib3d.frama.io/3d-suite-imagej/#download)
+- The plugin 3DImageSuite is required. Download [link](https://mcib3d.frama.io/3d-suite-imagej/#download)
 
-The plugin SNT/Neuroanatomy is required. Download [link](https://imagej.net/plugins/snt/#installation)
+- The plugin SNT/Neuroanatomy is required. Download [link](https://imagej.net/plugins/snt/#installation)
 
-Both can be found in Fiji>Update...>Manager Update Sites.
+- Both can be found in Fiji>Update...>Manager Update Sites.
+
+- An image stack and traced dendrite are provided for testing the plugin. Download the [test image](https://drive.google.com/file/d/1H2ee0nGDP4t8X_eBPYJzUZbrbkJBqeP5/view?usp=drive_link). Download the [swc file of the dendrite](https://drive.google.com/file/d/1umXo3P4yj4O1sJ0jZei_P7IcR-Ac0oBS/view?usp=drive_link)
 
 ## Citation
 
