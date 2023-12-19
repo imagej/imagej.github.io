@@ -73,10 +73,16 @@ E.g., in Java code:
 ```java
 System.setProperty("scijava.log.level", "debug");
 ```
-Or via the command line:
+Or via the command line when running a specific class:
 
 ```java
 java -Dscijava.log.level=debug ... myorg.MyMainClass
+```
+
+Or via the command line when starting ImageJ2:
+
+```bash
+ImageJ-[linux64|macosx|win32.exe|win64.exe] -Dscijava.log.level=debug
 ```
 
 You can even customize the logging behavior per package/class hierarchy. For example, to switch on debug level logging for classes in the `org.scijava.plugin` package and subpackages only:
