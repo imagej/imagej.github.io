@@ -22,8 +22,7 @@ You only need to do this on the first install, if it was installed correctly you
 
 ### Workflow 
 When you launch the plugin you will be immediately asked what you want the bin interval to be. Once an image is run, the normalized distances to user selected points will range from 0 (directly on the base line) or 1.0 (directly on the top line). 
-Example (assuming you choose a bin interval of 0.1): 
-	@@ -43,11 +43,10 @@ After this, you will be asked to place points through a .csv. The format for thi
+Example (assuming you choose a bin interval of 0.1): distances will be charted as such: 0.1, 0.2,0.3 ... 1.0. After this, you will be asked to place points through a .csv. The format for this CSV is simply a two column csv with one column being x and the other being y.
 ### Batch Processing
 You will be prompted if you want to repeat with another image. Every image will output both excel files detailed in data output, but keep in mind that while the xls file that has the image name will be specific to the image it ran under, the histogram will account for ALL IMAGES RUN IN THAT SESSION. MEANING: if you realize you ran the wrong type of image or you annotated it poorly, you can get the histogram results from the previous image and essentially have a clean restart point.
 
@@ -40,4 +39,4 @@ For saving images you will be prompted to select a folder, I would highly reccom
 ctrl + a: Undoes your current selection, excellent way to let you redo anything that pops up
 
 ### Questions(?)
-If you have any questions or issues, please contact me with concerns or create an issue within github itself. Although this is a plugin affiliated with the Weis Lab at Wake Forest University I am the sole developer so bothering them with any issues you have with this will be fruitless but I would be happy to help with anything.
+If you have any questions or issues, please contact me with concerns or create an issue within github itself. Although this is a plugin affiliated with the Weis Lab at Wake Forest University I am the sole developer so contacting them with any issues you have with this will be fruitless but I would be happy to help with anything.
