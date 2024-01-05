@@ -18,7 +18,7 @@ icon: /media/icons/plugin_icon_ImageJColor.png
 ![Dialog screen shot](/media/plugins/stack-fitter/stack-fitter-screenshot.png)
 
 - **Fit function for z profiles**
-  -  Selects the fit function, see [the ImageJ documentation](https://imagej.nih.gov/ij/docs/guide/146-30.html#tab:CurveFitterFunctions) for details on the functions.
+  -  Selects the fit function, see [the ImageJ documentation](https://imagej.net/ij/docs/guide/146-30.html#tab:CurveFitterFunctions) for details on the functions.
 - **Use previous pixel for initial fit params**
   -  This should be selected if adjacent pixels (or all pixels) typically have similar z profiles. Then the initial "guess" parameters are taken from the result of the previous pixel.
   - When unchecked, ImageJ tries to guess the initial parameter form the data values of each curve.
