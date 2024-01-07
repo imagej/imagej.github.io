@@ -63,7 +63,3 @@ List of solved issues encountered and reported in the forum:
 The code to perform this workflow is splitted in several parts:
 
 [Qupath warpy extension](https://github.com/BIOP/qupath-extension-warpy) and several repositories for the Fiji side. On the Fiji side, the main components are [Bigdataviewer-playground](https://github.com/bigdataviewer/bigdataviewer-playground) for the management of multiple sources and [Bigdataviewer-biop-tools](https://github.com/BIOP/bigdataviewer-biop-tools).
-
-# Legacy
-
-There is a legacy version of this workflow which was working with QuPath v.0.2.3. [It can be accessed here](https://c4science.ch/w/bioimaging_and_optics_platform_biop/image-processing/wsi_registration_fjii_qupath/).
