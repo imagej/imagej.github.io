@@ -37,28 +37,29 @@ TrakEM2 interacts with the [3D Viewer](/plugins/3d-viewer) for visualization of 
 
 ## Running fiji for heavy-duty, memory-intensive, high-performance TrakEM2 tasks
 
-The following configuration has been tested in a machine with 8 CPU cores and 16 Gb of RAM, running Ubuntu 8.04 "Hardy", with a 1.6.0\_16 or newer JVM:
+The following configuration has been tested in a machine with 256 CPU cores and 1 TB of RAM, running Ubuntu 22.04, with the latest 1.8.0 JVM:
 
 ```shell
-./ImageJ-linux64 -Xms10g -Xmx10g -Xincgc -XX:MaxPermSize=256m -XX:PermSize=256m \
-                 -XX:NewRatio=5 -XX:CMSTriggerRatio=50 -XX:+UseCompressedOops --
+-Xms500g -Xmx500g  -XX:+UseG1GC -verbose:gc -XX:+PrintGCDateStamps
 ```
 
-Put all the above in one line.
+Given that Fiji launches with the incremental garbage collector (via `-Xincgc`) instead of the concurrent one (via `-XX:UseG1GC` as above), you can't just modify the ImageJ.cfg file like you would do to update the RAM usage (via `-Xms500g -Xmx500g`). Instead, do the following: generate a dry-run command in your terminal, pipe it into a text file, edit it to replace the `-Xincgc` for the G1 GC one, make the file executable, and launch it. This sed script can do that too:
+
+```shell
+$ ./ImageJ-linux64 --dry-run | sed 's/-Xincgc/-XX:+UseG1GC -verbose:gc -XX:+PrintGCDateStamps'/ >> launcher.sh
+$ chmod +x launcher.sh
+$ ./launcher.sh
+```
 
 What the JVM flags mean:
 
--   -Xms10g : use an initial heap size of 10 Gb (i.e. start fiji with 10 Gb of RAM preallocated to it)
--   -Xmx10g: use a maximum heap size of 10 Gb. Note it's the same amount as the intial heap size, so that the heap cannot be resized.
--   -Xincgc : use the incremental garbage collector. Clean up unused memory in the concurrent mark-sweep generation (i.e. not the super-new generation of allocated objects) using parallel threads.
--   -XX:MaxPermSize=256m : set the heap size allocated to objects that don't need to be garbage often to 256 Mb. The default is only 32 Mb, which proves insufficient.
--   -XX:PermSize=256m : preallocate the heap for the permanent objects directly to the desired maximum, 256 Mb, so it doesn't ever have to be resized.
--   -XX:NewRatio=5 : Set the ratio of ephemeral versus more long-lived objects to 5 (the default is 9 or more in 64-bit Sun JVMs).
--   -XX:CMSTriggerRatio=50 : run the parallel garbage collector when the ratio of free versus non-free heap space is 50 % (the default is 92% in 64-bit JVM, which may incur in pauses and undesirable full sweeps).
--   -XX:+UseCompressedOops : use 32-bit pointers when possible, in a 64-bit JVM. This can cut the memory footprint by half in many cases.
--   The ending double hyphen "--" is to specify all of these are JVM arguments, not fiji/ImageJ arguments.
+-   -Xms500g : use an initial heap size of 500 Gb (i.e. start fiji with 500 Gb of RAM preallocated to it)
+-   -Xmx500g: use a maximum heap size of 500 Gb. Note it's the same amount as the intial heap size, so that the heap cannot be resized.
+-   -XX:+UseG1GC : use the concurrent garbage collector. Clean up unused memory using parallel threads.
+-   -verbose:gc: optional, see when the garbage collector runs.
+-   -XX:+PrintGCDateStamps: see a record of when the GC is run.
 
-With the above settings, we have succesfully registered 33,000 image tiles corresponding to 459 serial sections, using the "Align multi-layer mosaic" TrakEM2 command.
+With the above settings, we have succesfully registered tens of thousands of sections with millions of images in TrakEM2.
 
 ## Preparing TrakEM2 for best performance
 
