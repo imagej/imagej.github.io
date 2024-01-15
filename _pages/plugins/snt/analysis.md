@@ -65,6 +65,7 @@ Two other type of _Brain Area Analysis_ visualizations relying on graph-based an
 %}
 
 Ultimately, fine-grained programmatic control over SNT's Graph objects is achieved via scripting. Relevant resources:
+
 - [JGraphT](https://jgrapht.org/): The underlying library handling graph theory data structures and algorithms with [JAVA](https://jgrapht.org/javadoc/) and [Python](https://pypi.org/project/jgrapht/) APIs
 - [SNT graph package](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/analysis/graph/package-summary.html): High-level tools for graph creation within SNT
 - *SNT Demo Scripts*: See e.g., *Graph\_Analysis.py* and *Flow\_and\_Ferris\-Wheel\_Diagrams\_Demo.groovy*, two [SNT demo scripts](/plugins/snt/scripting#snt-scripts)
@@ -83,10 +84,9 @@ Sholl Analysis has a dedicated [documentation page](/plugins/sholl-analysis) det
 {% endcapture %}
 {% include notice icon="info" content=sholl %}
 
-
 In the main SNT dialog, Sholl commands are available in the {% include bc path='Analysis| '%} menu and image contextual menu and include:
 
--  **{% include bc path='Sholl Analysis...'%}** Analyzes cells based on a set of pre-defined, morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*). Note that this assumes the relevant morphology tag(s) have been assigned to the set of paths being analyzed. Since the center of analysis is only determined after the prompt has been dismissed, preview of sampling shells may not be available.
+- **{% include bc path='Sholl Analysis...'%}** Analyzes cells based on a set of pre-defined, morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*). Note that this assumes the relevant morphology tag(s) have been assigned to the set of paths being analyzed. Since the center of analysis is only determined after the prompt has been dismissed, preview of sampling shells may not be available.
 
 - **{% include bc path='Sholl Analysis (by Focal Point)...'%}** Analyzes cells on an _exact_, user-defined focal point. It is described on the following section.
 
@@ -105,17 +105,19 @@ For precise positioning of the center of analysis:
 NB: The default {% include key keys='Alt|Shift' %} modifier can be simplified in the _Options_ tab of the main dialog.
 
 The Sholl dialog created by this approach is a variant of the dialog created by running the {% include bc path='Sholl|Sholl Analysis (From Tracings)...'%} from the _Neuroanatomy Shortcuts_ panel, with a couple of changes:
+
 1. Since the center of analysis is defined precisely on an image, radius step size can be previewed 
 2. The *Path filtering* drop-down menu provides additional options to restrict the analysis to the subset of paths selected in the Path Manager
 3. The type of annotations is more specialized and includes:
-  - **Color coded nodes** Intersection counts will be color mapped into path nodes under the _annotation LUT_.
-  - **3D viewer labels image** This generates a synthetic image holding the number of intersections at each distance from the center under _annotation LUT_. This image can then be fed to the "Apply Color Labels" action of the legacy 3D viewer, to "overlay" the mapping on the legacy 3D viewer scene.
+   - **Color coded nodes** Intersection counts will be color mapped into path nodes under the _annotation LUT_.
+   - **3D viewer labels image** This generates a synthetic image holding the number of intersections at each distance from the center under _annotation LUT_. This image can then be fed to the "Apply Color Labels" action of the legacy 3D viewer, to "overlay" the mapping on the legacy 3D viewer scene.
 
 Note that plots and tables can be directly saved to disk by selecting _Save_ and specifying a valid directory in the dialog. The remaining options in the dialog are described in the [Sholl documentation page](/plugins/sholl-analysis).
 
 {% include img align="center" src="/media/plugins/snt/sholl-analysis-outputs.png" caption="Overview of Sholl analysis outputs: Linear and log-log profile (Sholl decay calculation), *detailed* and *summary* tables. Note that 'traditional' plots are obtained by disabling curve-fitting altogether."%}
 
 # Strahler Analysis
+
 {% capture strahler%}
 Similarly to _Sholl Analysis_, there are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
 
@@ -133,20 +135,24 @@ To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current conten
 # Path Order Analysis
 
 Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option is a variant of Strahler with the following differences:
+
 - Classification is based on _Path Order_: Paths are the scope of classification (not branches)
 - Ranking of orders is reversed relatively to Strahler analysis (reversed Strahler orders), with primary paths having _order 1_ and terminal paths having the highest order
 - Classification accepts _any_ structure: Since classification is path-based, there are no topological constrains in the analysis. While Strahler requires structures to be valid mathematical trees, Path order analysis can be performed on any structures, even those with loops
 
 # Persistence Analysis
+
 Currently, persistence analysis is only available via [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](/plugins/snt/scripting#python-notebooks).
 
 # Comparing Reconstructions
+
 <img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" title=" " />
 SNT can compare up to six groups of cells. The entry point for this type of comparison is twofold:
 - **{% include bc path='Utilities|Compare Reconstructions/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
-- **{% include bc path='Neuronal arbors|Load &amp; Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
+- **{% include bc path='Neuronal arbors|Load & Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
 
 The dialog  prompt for this feature allows selection of up to six directories containing reconstruction files (SWC, TRACES, JSON, NDF). The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, it is possible to  restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result typically includes:
+
 - A simple statistical report, including descriptive statistics and a two-sample t-test (when comparing two groups) or one-way ANOVA (when comparing three or more groups)
 - Comparison plots for the chosen metric: Grouped histogram and boxplot
 - _Montages_ of groups. These are multi-panel vignettes of up to 10 group exemplars. These can all be exported as PNG or SVG.
@@ -158,5 +164,3 @@ The dialog  prompt for this feature allows selection of up to six directories co
 # Custom Analyses
 
 It is possible to script your own analysis routines. See [SNT Scripting](/plugins/snt/scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
-
-

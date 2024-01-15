@@ -15,9 +15,9 @@ The most up-to-date SNT API can be found at [https://javadoc.scijava.org/SNT](ht
 
 # SNT Scripts
 
-A key feature of SNT is its extensibility via scripts.This section provides an overview to the ever-growing list of SNT scripts. These can be accessed through the {% include bc path='Plugins|NeuroAnatomy|Neuroanatomy Shortcut Window' %}, the *Scripts* menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy'%} menu of Fiji's Script Editor. Typically, holding {% include key key='Shift' %} while selecting a script from a menu outside the [Script Editor](/scripting/script-editor) will open it.
+A key feature of SNT is its extensibility via scripts. This section provides an overview to the ever-growing list of SNT scripts. These can be accessed through the {% include bc path='Plugins|NeuroAnatomy|Neuroanatomy Shortcut Window' %}, the *Scripts* menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy'%} menu in the [Script Editor](/scripting/script-editor). Typically, holding {% include key key='Shift' %} while selecting a script from a menu outside the [Script Editor](/scripting/script-editor) will open it.
 
-SNT Scripts are intentionally written in multiple languages to demonstrate flexibility, but the majority is written in [Groovy](/scripting/groovy/) and [Python](/scripting/python) (Jython), for no other reason that those seem to be the most commonly used language by its developers. [script parameters](/scripting/parameters) are typically used for rapid development.
+SNT Scripts are intentionally written in multiple languages to demonstrate flexibility, but the majority is written in [Groovy](/scripting/groovy/) and [Python](/scripting/python) (Jython), for no other reason that those seem to be the most commonly used language by its developers. [Script parameters](/scripting/parameters) are typically used for simpler routines.
 
 ## Bundled Templates
 {% include img align="right" src="/media/plugins/snt/snt-scripts-menu.png" width="200px" caption="Scripts menu in main dialog"%}
@@ -29,9 +29,9 @@ Your script can also be bundled with SNT, or made available through the Neuroana
 
 There are a couple of ways to have your own scripts appear in SNT's *Scripts* menu:
 
-Any script saved into Fiji's "scripts" sub-directory containing *SNT* in the filename (e.g., *C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py* or */home/user/Fiji.app/scripts/My_SNT_Script.py*) will be listed in {% include bc path='Scripts'%} menu:
+Any script saved into Fiji's "scripts" subdirectory containing *SNT* in the filename (e.g., *C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py* or */home/user/Fiji.app/scripts/My_SNT_Script.py*) will be listed in {% include bc path='Scripts'%} menu:
 
-1. Go to {% include bc path='Scripts|New...'%} from the SNT dialog. You can choose to open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice or to assemble your boilerplate using the [Script Recorder](#script-recorder)
+1. Go to {% include bc path='Scripts|New...'%} from the SNT dialog. You can choose to open an instance of Fiji's Script Editor with preloaded boilerplate code in the scripting language of your choice or to assemble your boilerplate using the [Script Recorder](#script-recorder)
 
 2. Save the script in *Fiji.app/scripts/* including 'SNT' anywhere in its file name
 
