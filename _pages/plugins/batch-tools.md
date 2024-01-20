@@ -13,10 +13,6 @@ team-maintainer: Neville S. Ng
 
 ## Description 
 
-Toolbar to support batch image processing and analysis, including batch extract, merge channels, composite conversion, Z-projection, channel B&C and colour adjustment, file export, and cell count, gray value & area measurement. 
-
-## Description 
-
 Toolbar for batch image processing and analysis including image extraction, channel merge, composite conversion, Z-projection, channel B&C and colour adjustment, file export, and cell area, gray value & count.
 
 Intended for handling typical light microscopy size datasets (10s-100s of images). 
