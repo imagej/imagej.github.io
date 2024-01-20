@@ -27,7 +27,7 @@ Intended for handling typical light microscopy size datasets (10s-100s of images
 
 ## Tools
 - Batch Extract
-	- For extracting images from common propriatary life science files (Bio-Formats, e.g. .nd2, .lif, .lsm, etc.) to TIFF files
+	- For extracting images from common proprietary life science files (Bio-Formats, e.g. .nd2, .lif, .lsm, etc.) to TIFF files
 	- Useful for processing raw data in absence of proprietary software and when multiple samples are saved in a single file
 	- Export each item/series with separate files for separate channels, or single files with merged channels
 	- Processes 1 input file at a time, or all files in a directory
