@@ -131,15 +131,33 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 {% include notice icon="info" content='The *Upload to &lt;update site name&gt;* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
-### Modifying Dependencies
+### Editing Metadata
 
-When a plugin is selected, a *Details* panel becomes available. The plugin's dependencies, e.g. *ij.jar* and *someJarOrOther.jar*, are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of ImageJ and the updater will automatically upload them to the site.
-
-You can also manually enter or edit any information in the *Details* panel:
+When a file is selected in Advanced MOde, a *Details* panel becomes available. This allows manual editing of important metadata.
 
 <img src="/media/update-sites/how-to-setup-a-plugin-distribution-site-15.jpg" width="770"/>
 
 {% include notice icon="info" content='The *Details* panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the *Details* panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
+
+#### Platform-specific Files
+
+Some files in your update site may only be appropriate for specific platforms (e.g. Mac, Windows, Linux): `dll` or `dylib` files, for example. In that case, the *Platform* field can be used as a "classifier," such that the updater will only download the given file if its platform value matches the current platform ImageJ is running on. This allows you to upload platform-specific binaries for all platforms to a single update site.
+
+<img src="/media/update-sites/change-platform.png" width="770"/>
+
+Note that this field *must* have one of the following values:
+
+* macosx
+* win32
+* win64
+* linux32
+* linux64
+
+{% include notice icon="warning" content='Platform values other than those in this list will cause your file to *never be matched*, so it will not show up for any follower of your update site.' %}
+
+#### Modifying Dependencies
+
+The plugin's dependencies, e.g. *ij.jar* and *someJarOrOther.jar*, are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of ImageJ and the updater will automatically upload them to the site.
 
 {% include notice icon="warning" content='Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the *Details* tab to correct the problem. Please [let us know](/discuss) when this happens so we can try to improve the updater' %}
 
