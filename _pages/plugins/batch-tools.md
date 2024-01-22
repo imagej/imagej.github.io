@@ -64,6 +64,11 @@ Intended for handling typical light microscopy size datasets (10s-100s of images
 	- First image is used as configuration for thresholding, or optionally set per image
 	- Along with per-file .csv data, a summary .csv of data from each file is also generated
 
+## Issues
+
+Report issues here
+https://github.com/neville-s-ng/ImageJ-BatchTools/issues
+
 ## Acknowledgements
 
 All developers and maintainers of the ImageJ community.
