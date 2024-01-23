@@ -23,10 +23,10 @@ The table below summarizes key differences between Labkit and TWS (as of SNT v4.
 | Image size                                           | Out-of-core, multiple terabytes large image data     | Smaller images (RAM-limited) |
 | GPU support                                          | via [CLIJ2](https://clij.github.io/)                 | No                           |
 | Underlying architecture(s)                           | [ImgLib2](/libs/imglib2) and [BigDataViewer](../bdv) | ImageJ                       |
-| Support for multichannel images                      | Partial. Labels apply to all channels                | Yes (but subpar)             |
-| Support for timelapse images                         | Yes                                                  | Yes (but subpar)             |
+| Support for multichannel images                      | Yes                                                  | Yes (w/ [caveats](#caveats)) |
+| Support for timelapse images                         | Yes                                                  | Yes (w/ [caveats](#caveats)) |
 | Scripting and IJ macro language support              | Yes. Some commands are macro-recordable              | Yes. GUI is macro-recordable |
-| Batch Processing                                     | From GUI and via scripting                           | Via scripting                |
+| Batch Processing                                     | From GUI and via macros and scripts                  | Via macros and scripts       |
 | Import of pre-trained models into SNT                | Yes                                                  | Yes                          |
 | Direct loading of SNT paths as classification labels | Yes                                                  | Yes                          |
 
@@ -44,12 +44,14 @@ Importing of models can be done via the [Secondary layer menu](manual#tracing-on
 ## Training Models
 
 To convert traced paths into training labels, simply select the path(s) of interest and run the respective command in the Path Manager's [Process›](manual#process-) menu. This will start up a new instance of Labkit/TWS preloaded with labels generated from selected path(s).
-While TWS and Labkit handle 2D/3D grayscale images in the same way, there are some idiosyncrasies in the way Labkit and TWS handle SNT-generated labels:
+Paths from different channels are split into distinct classification classes 
+(i.e., 1 class per channel). Note that there are some (minor) idiosyncrasies in the way Labkit and TWS handle SNT-generated labels:
+
+<span id="caveats"></span>
 
 |                                         | **[Labkit](../labkit)**                                   | **[TWS](../tws)**                                                                                                                                                                               |
 |-----------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Single-node paths                       | Valid labels                                              | Typically skipped                                                                                                                                                                               |
-| Multi-channel images                    | Labels are not channel-specific and apply to all channels | Paths from different channels are split into distinct classification classes (1 class per channel)                                                                                              |
 | Hyperstacks (images with CT dimensions) | Displayed by [BigDataViewer](../bdv)                      | CT dimensions are displayed as a simple stack in the TWS window. IJ's {% include bc path='Stack to Hyperstack...' %} command can be used to re-apply the original image layout to output images |
 
 <table>

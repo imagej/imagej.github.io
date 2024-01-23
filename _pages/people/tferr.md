@@ -2,7 +2,6 @@
 title: Tiago Ferreira
 name: Tiago A. Ferreira
 affiliation:
-- MouseLight | https://www.janelia.org/project-team/mouselight/members
 - Janelia Research Campus | /orgs/janelia
 - Howard Hughes Medical Institute | https://www.hhmi.org/
 orcid: 0000-0001-6866-1540

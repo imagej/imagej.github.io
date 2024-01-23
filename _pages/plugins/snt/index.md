@@ -29,11 +29,12 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 {% include gallery align="fill" content=
 "
 /media/plugins/snt/snt-overview.png | Overview of SNT components &amp; SNT functionality
-/media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/step-by-step-instructions#semi-automated-tracing): Support for multi-channel and timelapse images
+/media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/step-by-step-instructions#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/step-by-step-instructions#time-lapse-analysis) images
 /media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing) of segmented images
 /media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#bundled-templates) co-exist with graphical user interface operations
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
 /media/plugins/snt/snt-notebook.png | Scripting in native python through [pyimagej](/scripting/pyimagej)
+/media/plugins/snt/snt-delaunay-triangulation.png | Delaunay tesselation: Tracings can be used in [image processing routines](/plugins/snt/manual#process-)
 /media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
 /media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)
@@ -64,7 +65,7 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 | **[Extending](/plugins/snt/extending)**                         | Resources for developers interested in extending SNT or parsing TRACES files                                                       |
 | **[FAQ](/plugins/snt/faq)**                                     | Frequently asked questions                                                                                                         |
 | **[Key Shortcuts](/plugins/snt/key-shortcuts)**                 | List of SNT shortcuts (keyboard cheatsheet)                                                                                        |
-| **[Machine Learning](/plugins/snt/machine-learning)**           | Semantic segmentation: Labkit and TWS integration                                                                                  |
+| **[Machine Learning](/plugins/snt/machine-learning)**           | Semantic segmentation: Labkit and TWS integration                                                                                  |
 | **[Manual](/plugins/snt/manual)**                               | User guide for main interface and tracing operations                                                                               |
 | **[Metrics](/plugins/snt/metrics)**                             | Cheatsheet for common measurements                                                                                                 |
 | **[Modeling](/plugins/snt/modeling)**                           | Cx3D integration                                                                                                                   |
