@@ -278,32 +278,51 @@ NB:
 
 # Time-lapse analysis
 {% capture timelapse-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Hippocampal neuron (DIC timelapse)_ dataset: It features a timelapse video of a cultured neuron in which neurites have been traced across time.
+There are two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) you can use to follow these instructions:
+- _Hippocampal neuron (DIC timelapse)_ dataset: A timelapse video of a cultured neuron in which neurites have been pre-traced across time
+- _Segmented video (2D timelapse)_ dataset: A small, thresholded video of a cultured neuron processed by a script that automates tracing at each frame
 {% endcapture %}
 {% include notice icon="info" content=timelapse-demo %}
 
-1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget.
+1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget
+
 2. Trace the path of interest
-3. Repeat 1. and 2. for all the frames to be traced
-4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series, by specifying several criteria:
 
-    - **Time points** Only paths associated with these time-points (frames) will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
+3. Repeat 1. and 2. for all the frames to be traced. There are a couple of ways to expedite tracing across frames:
 
-    - **Matching criteria** These are a series of conditions that matching paths must fulfill. Some require no further adjustments (e.g., _channel_, _path order_, _type tag_, _color tag_) while others (described below) have configurable settings. Criteria can be combined E.g., if _channel_ and _type tag_ are selected, paths need to share the same channel and the same type tag ('Axon', 'Dendrite', etc.) to be matched. 
+   - Duplicate the path(s) of interest using Path Manager's {% include bc path='Edit|[Duplicate...](/plugins/snt/manual#duplicate)' %} This will allow you to copy a path (and its children) to a new frame (or channel). If a neurite is retracting, you can duplicate the subsection of the path that better matches the retracted neurite: e.g., by restricting the duplication to a fraction of the path's total length, or up to a branch-point
+
+   - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset...' %})
+   <img align="right" src="/media/plugins/snt/snt-match-paths-across-time.png" title="MatchPath(s) Across Time... prompt" width="350" alt="MatchPath(s) Across Time... prompt" />
+
+4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
+
+    - **Frame range** Only paths associated with these frames will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
+
+    - **Matching criteria** These are a series of conditions that matching paths must fulfill. Some require no further adjustments (e.g., _channel_, _path order_, _type tag_, _color tag_) while others have configurable settings. Criteria can be combined E.g., if _channel_ and _type tag_ are selected, paths need to share the same channel and the same type tag ('Axon', 'Dendrite', etc.) to be matched. 
 
        The criteria with configurable settings are perhaps the most commonly used:
 
       - **Starting node location** If selected, matching paths need to share a common origin (starting node) in terms of (X, Y, Z) coordinates. Sample movement and focus drift are common during time-lapse sequences. To account for this, it is possible to specify a (X, Y, Z) 'motion-shift' neighborhood: Paths that originate within this neighborhood (in spatially calibrated units) are considered to share the same starting node location
 
-      - **Custom tag** If selected, matching paths need to share the specified (case sensitive) tag. A regex pattern can also be specified
-
-5. Once paths have been matched across the time-lapse future analysis becomes simplified. {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} can be used to e.g. plot growth across time. {% include bc path='Time Profile...' %} includes the following options:
+      - **Orientation** If selected, paths need to extent under the same overall direction (outgrowth angle) to be matched. Paths sharing an outgrowth angle +/- the specified range (in degrees) are assumed to share the same overall direction of growth
+    
+      - **Custom tag** If selected, matching paths need to share the specified (case-sensitive) tag. A regex pattern can also be specified
+      
+    - NB: Note that any mistakes by the matching algorithm can be corrected by editing _neurite#_ tags manually
+   
+5. Once paths have been matched across the time-lapse to common neurites, future analysis becomes simplified. {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} can be used to e.g. plot growth across time. {% include bc path='Time Profile...' %} includes the following options:
 
       - **Metric** the measurement to be profiled across time
 
       - **Grouping strategy** Typically this would be set to _Matched path(s) across time_ to reflect the matching performed in 4. However, if there are many short-lived neurites (i.e., only visible in few frames) it may be beneficial to choose  _Matched path(s) across time (≥2 time-points)_. This will only consider paths present in two or more frames. A _no grouping_ strategy is also available for cases where step 4 was skipped.
 
       - **Output** Whether a plot, a table or both should be created
+
+<div align="center">
+  <img  src="/media/plugins/snt/snt-time-profile.png" title="Time Profile... (v4.3.0)" width="500" />
+</div>
+
 
 # Filling
 {% capture op1-demo-full%}

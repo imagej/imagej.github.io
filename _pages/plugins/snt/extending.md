@@ -66,28 +66,22 @@ There must be exactly one of these elements present, with attributes that descri
 
 The `<path>` element can have the following attributes:
 
--   `id`: a non-negative integer ID unique among the `<path>`s in this file
--   `startson`: if this is present, it gives the ID of the path which the beginning of this path branches off from. If `startson` is specified, then either the deprecated attribute `startsindex` or the recommended attributes `startsx`, `startsy` `startsz` must be specified as well.
--   **\[deprecated\]** `startsindex`: This attribute used to indicate the 0-based index of the point in the other Path where the branch occurred. Please use `startsx`, `startsy` and `startsz` instead.
--   `startsx`, `startsy` and `startsz`: These attributes indicate where on the path specified by `startson` the branch occurs. If one of these is attributes is specified, all must be specified.
--   `endson`: if this is present, it gives the ID of the path which the branch ends on. If `endson` is specified, then either the deprecated attribute `endsindex` or the recommended attributes `endsx`, `endsy` `endsz` must be specified as well.
--   **\[deprecated\]** `endsindex`: This attribute used to indicate the 0-based index of the point in the other Path where this path joins it. Please use `endsx`, `endsy` and `endsz` instead.
--   `endsx`, `endsy` and `endsz`: These attributes indicate where on the path specified by `endson` this path ends. If one of these is attributes is specified, all must be specified.
--   `name`: A string giving the name of this path
--   `reallength`: The length of this path found by summing the Euclidean distance between each consecutive pair of points, in the units specified in &lt;samplespacing&gt;
--   `fitted`: If present, this attribute gives the ID of another path which is a version of this path after the centre-line has been adjusted and radii at each point found. If this attribute is present, the `fittedversionof` attribute may not be.
--   `fittedversionof`: If present, this attribute gives the ID of another path which was the source version for this one. Typically, the path specified does not have radii defined for each point, although this is not always the case. If this attribute is present, the `fitted` attribute may not be.
--   `usefitted`: This attribute must be present if either the `fitted` or `fittedversionof` attributes are. This attribute is either `"true"` or `"false"`. It should only be "true" for paths that have a fitted version, when it implies that the user wants the fitted path to be display in favour of this (the unfitted) one. If "false" and this path has a fitted version, it means that this path should not be displayed. It should always be "false" for paths that are fitted versions of other paths.
-{% include notice icon="note" content="This is confusing and regrettable; in later versions this will be replaced by attributes with simpler semantics." %}
--   `swctype`: This should be an integer from 0 to 7 inclusive, indicating what the SWC type of the path is. If not present, the default value is 0. The conventional meaning of these values is:
-    -   0: UNDEFINED
-    -   1: SOMA
-    -   2: AXON
-    -   3: DENDRITE
-    -   4: APICAL_DENDRITE
-    -   ~~~5: FORK_POINT~~~ (Deprecated)
-    -   ~~~6: END_POINT~~~ (Deprecated)
-    -   7: CUSTOM
+- `id`: a non-negative integer ID unique among the `<path>`s in this file
+- `startson`: if this is present, it gives the ID of the path which the beginning of this path branches off from. If `startson` is specified, then either the deprecated attribute `startsindex` or the recommended attributes `startsx`, `startsy` `startsz` must be specified as well.
+- **\[deprecated\]** `startsindex`: This attribute used to indicate the 0-based index of the point in the other Path where the branch occurred. Please use `startsx`, `startsy` and `startsz` instead.
+- `startsx`, `startsy` and `startsz`: These attributes indicate where on the path specified by `startson` the branch occurs. If one of these is attributes is specified, all must be specified.
+- `endson`: if this is present, it gives the ID of the path which the branch ends on. If `endson` is specified, then either the deprecated attribute `endsindex` or the recommended attributes `endsx`, `endsy` `endsz` must be specified as well.
+- **\[deprecated\]** `endsindex`: This attribute used to indicate the 0-based index of the point in the other Path where this path joins it. Please use `endsx`, `endsy` and `endsz` instead.
+- `endsx`, `endsy` and `endsz`: These attributes indicate where on the path specified by `endson` this path ends. If one of these is attributes is specified, all must be specified.
+- `name`: A string giving the name of this path
+- `reallength`: The length of this path found by summing the Euclidean distance between each consecutive pair of points, in the units specified in &lt;samplespacing&gt;
+- `fitted`: If present, this attribute gives the ID of another path which is a version of this path after the centre-line has been adjusted and radii at each point found. If this attribute is present, the `fittedversionof` attribute may not be.
+- `fittedversionof`: If present, this attribute gives the ID of another path which was the source version for this one. Typically, the path specified does not have radii defined for each point, although this is not always the case. If this attribute is present, the `fitted` attribute may not be.
+- `usefitted`: This attribute must be present if either the `fitted` or `fittedversionof` attributes are. This attribute is either `"true"` or `"false"`. It should only be "true" for paths that have a fitted version, when it implies that the user wants the fitted path to be display in favour of this (the unfitted) one. If "false" and this path has a fitted version, it means that this path should not be displayed. It should always be "false" for paths that are fitted versions of other paths.
+
+  NB: This is confusing and regrettable; in later versions this will be replaced by attributes with simpler semantics.
+
+- `swctype`: The integer flag defining the type of the path as defined in the [latest SWC specification](https://swc-specification.readthedocs.io/en/latest/). If not present, the default value is 0.
 
 The &lt;path&gt; element may contain zero or more &lt;point&gt; elements. These are described below:
 

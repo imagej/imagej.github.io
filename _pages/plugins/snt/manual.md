@@ -485,7 +485,17 @@ Removes selected Path(s) from the Path Manager. Note that children of selected p
 
 #### Duplicate...
 
-Duplicates the selected path. Only one Path may be duplicated at a time.
+Duplicates the selected path with options to duplicate just a sub-segment or a full duplication with or without child paths. Options include:
+
+- **Portion to be duplicated** Either: _Full length_, _Specified percentage of length_, _Up to first branch point_, or _Up to last branch point_
+
+- **Children** Whether to include child paths in the duplication (either _immediate_ or _all_ children). Note that inclusion of children requires the path to be duplicated in full length
+
+- **Assign to Channel/Frame** The CT position of the duplicated path. Useful when 'transfering' paths across frames in [timelapse videos](step-by-step-instructions#time-lapse-analysis)
+
+- **Make primary** Whether the duplicated path (or group of paths) should be disconnected from their parent
+<img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" title="Duplicate... (v4.3)" />
+
 
 #### Rename...
 
@@ -627,6 +637,7 @@ If the fitting fails at a certain location (e.g., because the shape of the cross
 This menu contains options to start the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
 
 ### Process ›
+This menu lists commands pertaining to ROIs and image processing routines.
 
 #### Convert to ROIs...
 
