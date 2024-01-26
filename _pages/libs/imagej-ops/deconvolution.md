@@ -1,12 +1,8 @@
 ---
-mediawiki: Ops_Deconvolution
 title: Ops Deconvolution
 extensions: ["mathjax"]
 project: /software/imagej2
 ---
-
-
-
 
 ## Overview
 
@@ -14,17 +10,18 @@ project: /software/imagej2
 
 Current work is focused on:
 
-1\. Implementation of Richardson Lucy with Total Variation Regularization, Vector Acceleration and Non-Circulant Edge handling.
+1. Implementation of Richardson Lucy with Total Variation Regularization, Vector Acceleration and Non-Circulant Edge handling.
 
-2\. Designing a framework that will make it easy for developers to extend Richardson Lucy with other types of regularization, acceleration and edge handling.
+2. Designing a framework that will make it easy for developers to extend Richardson Lucy with other types of regularization, acceleration and edge handling.
 
-3\. Designing a framework that will make it easy for developers to implement other types of deconvolution.
+3. Designing a framework that will make it easy for developers to implement other types of deconvolution.
 
 ## Richardson Lucy
 
 {% include wikipedia title='Richardson%E2%80%93Lucy deconvolution' text='Richardson Lucy'%} is an iterative deconvolution algorithm that can be used to reconstruct a blurred image.
 
-{% raw %}$$\mathbf{o}_{k+1}(s)=\left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}{o}_{k}(s)$${% endraw %}
+$$\mathbf{o}_{k+1}(s)=\left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}{o}_{k}(s)$$
+
 
 In practice the Richardson-Lucy algorithm needs to be modified to improve noise handling (regularization), improve convergence speed (acceleration) and reduce edge artifacts.
 
@@ -34,7 +31,7 @@ To prevent noise amplification the Richardson Lucy algorithm should be regulariz
 
 [Richardson Lucy with Total Variation Regularization](http://www.ncbi.nlm.nih.gov/pubmed/16586486)
 
-{% raw %}$$\mathbf{o}_{k+1}(s) = \left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}\frac\right)}$${% endraw %}
+{% raw %}$$\mathbf{o}_{k+1}(s) = \left\{\left[\frac{i(s)}{(o_{k}*h)(s)}\right]*h(-s)\right\}\frac{{o}_{k}(s)}{1-\lambda_{TV}div\left({\frac{\nabla_{ok}(s)}{|\nabla_{ok}(s)|}}\right)}$${% endraw %}
 
 ### Richardson Lucy with Vector Acceleration
 
@@ -62,26 +59,26 @@ We encourage users of deconvolution to try deconvolving this image with various 
 
 ### Original
 
-<img src="/media/libs/imagej-ops/composite-orig-xy.jpg" width="300"/><img src="/media/libs/imagej-ops/composite-orig-zx.jpg" width="140"/>
+{% include img src="composite-orig-xy.jpg" width="300" %} {% include img src="composite-orig-zx.jpg" width="140" %}
 
 ### Deconvolved
 
-<img src="/media/libs/imagej-ops/composite-decon-xy.jpg" width="300"/><img src="/media/libs/imagej-ops/composite-decon-zx.jpg" width="140"/>
+{% include img src="composite-decon-xy.jpg" width="300" %} {% include img src="composite-decon-zx.jpg" width="140" %}
 
 ## References
 
--   T. Pietzsch, S. Preibisch, P. Tomancak and S. Saalfeld, *ImgLib2 - Generic image processing in Java*, Bioinformatics, Vol. 28(22), pp. 3009-3011 (2012).
+- {% include citation id="libs/imglib2" %}
 
--   C.T. Rueden, J. Schindelin, B.E. Dezonia, A.R. Grislis, M.C. Hiner and K.W. Eliceiri (2013). *Open Source BioImage Informatics: Tools for Interoperability. Microscopy and Microanalysis*, Vol. 19 (Suppl. 2) , pp 754-755 (2013).
+- {% include citation doi="10.1017/S143192761300576X " %}
 
--   N. Dey, L. Blank-Feraud, C. Zimmer, P. Roux, Z. Kam, J-C, Olivo-Marin, J. Zerubia, *Richardson-Lucy Algorithm with Total Varation Regularization for 3D Confocal Microscope Deconvolution*, Microscopy Research and Technique, Vol. 69(1), pp. 260-266 (2006).
+- {% include citation doi="10.1002/jemt.20294" %}
 
--   M. Laasmaa, M. Vendelin, P. Peterson, *Application of regularized Richardson-Lucy algorithm for deconvolution of confocal microscopy images*, Journal of Microscopy, Vol. 243(2), pp. 124-140 (2011).
+- {% include citation doi="10.1111/j.1365-2818.2011.03486.x" %}
 
--   L. Rudin, S. Osher, E. Fatemi, *Nonlinear total variation noise removal algorithm*, Physica D., Vol. 60(2), pp. 259-266 (1992).
+- {% include citation doi="10.1016/0167-2789(92)90242-F" %}
 
--   C. Vonesch (2013), *Second International Challenge on 3D Deconvolution Microscopy*, http://bigwww.epfl.ch/deconvolution/challenge.
+- C. Vonesch (2013), *Second International Challenge on 3D Deconvolution Microscopy*, http://bigwww.epfl.ch/deconvolution/challenge.
 
--   D. Biggs, M. Andrews, *Acceleration of iterative image restoration algorithms*, Applied Optics, Vol. 36(8), pp. 1766-75 (1997).
+- {% include citation doi="10.1364/AO.36.001766" %}
 
--   S. Remmele, J. Hesser, *Vector Extrapolation-Based Acceleration of Regularized Richardson Lucy Image Deblurring*, Informatik Actuell, pp. 400-404 (2009).
+- {% include citation doi="10.1007/978-3-540-93860-6_81" %}
