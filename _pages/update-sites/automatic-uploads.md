@@ -31,6 +31,7 @@ GitHub Actions can be used to automatically build a repository in response to co
 As a starting point you can copy the following `.github/workflows/release.yml` :
 
 ```yml
+{% raw %}
 name: Release to Update Site
 
 on:
@@ -60,6 +61,7 @@ jobs:
       - name: Release to ImageJ update site
         run: |
           ./Fiji.app/ImageJ-linux64 --headless --update upload-complete-site --force ${UPDATE_SITE}
+{% endraw %}
 ```
 
 Don't forget to replace the `WIKI_USER` and `UPDATE_SITE` variables by your informations.
