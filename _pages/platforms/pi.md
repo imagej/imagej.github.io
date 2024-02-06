@@ -5,7 +5,7 @@ section: Learn:ImageJ Basics:Supported Platforms
 
 {% include img src='icons/pi' align='right' class="box" width=150 caption='Learn programming through fun, practical projects!' %}
 
-The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexpensive single-board computer system which runs the {% include wikipedia title='Raspbian' text='Raspbian' %} operating system, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/software/imagej), [ImageJ2](/software/imagej2), and [Fiji](/software/fiji) on Raspberry Pi systems.
+The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexpensive single-board computer system which runs {% include wikipedia title='Raspberry Pi OS' text='Raspberry Pi OS' %}, a flavor of Debian [Linux](/platforms/linux). This page provides advice and guidance for running [ImageJ](/software/imagej), [ImageJ2](/software/imagej2), and [Fiji](/software/fiji) on Raspberry Pi systems.
 
 # Installation
 
@@ -13,18 +13,27 @@ The {% include wikipedia title='Raspberry Pi' text='Raspberry Pi' %} is an inexp
 
 The following steps describe how to install Fiji on a Raspberry Pi:
 
-1.  Open the terminal.
-2.  Install Java 8 on your Pi (`sudo apt-get install openjdk-8-jre`).
-3.  Choose Java 8 (`sudo update-alternatives --config java`).
-4.  Verify it works using `java -version`.
-5.  Download and install the [platform-independent "no JRE" distribution of Fiji](http://downloads.imagej.net/fiji/latest/fiji-nojre.zip).
-6.  Download the [ImageJ.sh](https://github.com/imagej/imagej2/blob/-/bin/ImageJ.sh) shell script
-7.  Move the `ImageJ.sh` file to the `Fiji.app` folder
-8.  Set the executable bit (`chmod +x ImageJ.sh`)
-9.  Run it (`./ImageJ.sh`) to launch Fiji.
+1.  Open the terminal
+2.  Install [SDKMAN!](https://sdkman.io/)
+3.  Verify it works:
 
-You may also need to disable (comment out) `assistive_technologies=org.GNOME.Accessibility.AtkWrapper` in `/etc/java-8-openjdk/accessibility.properties`.
+        sdk version
+4.  Install Java 8:
 
+        sdk install java 8.0.402-tem
+5.  Verify it works:
+
+        java -version
+    
+7.  Download and install the [platform-independent "no JRE" distribution of Fiji](http://downloads.imagej.net/fiji/latest/fiji-nojre.zip)
+8.  Download the [ImageJ.sh](https://github.com/imagej/imagej2/blob/-/bin/ImageJ.sh) shell script
+9.  Move the `ImageJ.sh` file to the `Fiji.app` folder
+10.  Set the executable bit:
+
+         chmod +x ImageJ.sh
+11.  Launch Fiji:
+
+         ./ImageJ.sh
 Note that the shell script supports only a subset of the functionality of the native [ImageJ Launcher](/learn/launcher), but it should be able to run ImageJ successfully.
 
 The following steps describe how to create a desktop icon to launch Fiji on a Raspberry Pi:
