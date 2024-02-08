@@ -5,7 +5,7 @@ nav-links: true
 toc: true
 ---
 
-**ImageCombinerWarpy** is a QuPath (v0.3.x) extension for the non-linear overlay of whole slide images.
+**ImageCombinerWarpy** is a QuPath extension for the non-linear overlay of whole slide images.
 
 It is based on the [ImageCombiner](https://forum.image.sc/t/qupath-scripting-4-image-combiner-register-images-and-create-project-entry/50484).
 In addition to the affine transformation used in the ImageCombiner, the ImageCombinerWarpy uses the [Warpy extension](/plugins/bdv/warpy/warpy-extension) to combine registered whole slide images.
@@ -18,8 +18,7 @@ The only condition is that Warpy transform files exist for all overlay images, a
 (Combinations of affine transformations and Warpy transformations are not possible.)
 
 {% include notice icon="warning"
-  content="The ImageCombinerWarpy is an experimental tool.
-Please read the notes at the end of the document carefully!" %}
+  content="Please read the notes at the end of the document carefully!" %}
 
 # Installation
       
