@@ -19,10 +19,72 @@ the warp on-the-fly.
 
 ## Installation
 
-BigWarp comes with Fiji. You can access it via
-{% include bc path="Plugins | BigDataViewer Big Warp" %}.
-If this is not visible in your installation, try updating Fiji with
+BigWarp comes with Fiji. You can access it via {% include bc path="Plugins | BigDataViewer | Big Warp Command" %} 
+for the newer startup dialog, or {% include bc path="Plugins | BigDataViewer | Big Warp" %} 
+for the legacy dialog. If this is not visible in your installation, try updating Fiji with
 {% include bc path="Help Update..." %}.
+
+## Starting BigWarp
+
+### `Big Warp Command`
+
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp-init-dialog.png" width="500"/> </td>
+        <td style="padding: 5px;">
+            <ul>
+            <li><b>BigWarp project or landmarks</b> : Select a saved BigWarp project file (json) or landmarks file (csv).</li>
+            <li><b>Add open image</b>: Select an image open in ImageJ to add to BigWarp. Click the {% include button label='+' %} button to add the selected image to the table.</li> 
+            <li><b>Add image file/folder</b>: Select an file or folder. Click the {% include button label='+' %} button to add the selected image to the table.
+                You can {% include button label='Browse' %} your file system, or explore {% include button label='H5/N5/Zarr' %} containers.</li>
+            <li><b>Add transformation</b>: Select a transformation. Click the {% include button label='+' %} to add the selected transformation to the currrently selected row of the table.
+                You can {% include button label='Browse' %} your file system, or explore {% include button label='H5/N5/Zarr' %} containers.</li>
+            </ul>
+        </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
+
+Selected images are displayed in a table at the bottom of the dialog.  Indicate an image as
+moving by checking the box in the "Moving" column.  Only *moving images* will be transformed by
+BigWarp. Any number of images can be set as moving. Clicking {% include button label='remove' %}
+will remove a row from the table.
+
+BigWarp can also apply "external" transformations to images. These are shown in the *Transform*
+column of the table. They can be added with the "Add transformation" option above, or by writing
+a path or [N5URL](https://github.com/saalfeldlab/n5/wiki/URLs) directly into the table.
+
+### `Big Warp`
+
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp-dialog-legacy.png" width="250"/> </td>
+        <td style="padding: 5px;">
+            <ul>
+            <li><b>moving image</b> : Select an image open in ImageJ to be transformed.</li>
+            <li><b>target image</b>: Select an image open in ImageJ as a reference image. Will not be transformed.</li>
+            <li><b>N5/Zarr/HDF5/BDV-XML</b>: The four options below let you selected chunked storage containers for moving and target images</li>
+                <ul>
+                    <li><b>Moving</b>: The root of of the storage container for the moving image (ususally ends with ".h5", ".n5", or ".zarr")</li>
+                    <li><b>Moving dataset</b>: The path to the moving image relative to the root ("/" refers to the container root)</li>
+                    <li><b>Target</b>: The root of of the storage container for the target image (ususally ends with ".h5", ".n5", or ".zarr")</li>
+                    <li><b>Target dataset</b>: The path to the target image relative to the root ("/" refers to the container root)</li>
+                </ul>
+            <li><b>Landmarks file</b>: A csv file containing landmarks</li>
+            <li><b>Apply transform from landmarks</b>: if selected and landmarks are provided, BigWarp will transform the moving image(s) on startup.</li>
+            </ul>
+        </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
+
+Note: The moving or target images open in ImageJ may be multi-channel. Chunked file formats let you open images that are too large for "traditional" ImageJ, or stream image data on the fly from cloud storage.
 
 ## Usage
 
