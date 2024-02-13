@@ -302,7 +302,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
 
 ### Selecting transformation types
 
-Press {% include key key='F2' %} to bring up a transformation type selection window (versions 4.0.0 or later support multiple options for transformations)
+Press {% include key key='F2' %} to bring up a transformation type selection window, or {% include key key='U' %} to open the BigWarp options dialog (versions 4.0.0 or later support multiple options for transformations).
 
 |                                                |                                                   |
 |------------------------------------------------|---------------------------------------------------|
@@ -600,6 +600,69 @@ If you have moving and target images open in Fiji [this script](https://github.c
 To manually specify the field-of-view (FOV) of the target space, use [this script](https://github.com/saalfeldlab/bigwarp/blob/-/scripts/Apply_Bigwarp_Xfm_FOV.groovy)
 
 To make the scripts above appear in your Fiji Plugins menu, simply copy them into the `/plugins/Scripts folder` in your Fiji installation.
+
+### Export transforms
+
+Export a transformation with {% include bc path="File | Export transformation" %}.  BigWarp can export non-linear
+transformations as displacement fields that can either be displayed as a window in ImageJ or written to a file. BigWarp uses the
+[OME-NGFF](https://github.com/ome/ngff) format to store transformations. 
+
+{::nomarkdown}
+<table>
+  <tbody>
+    <tr>
+        <td style="padding:5px;">
+            <ul>
+            <li><b>Type</b> 
+                <ul>
+                    <li>Flat: Compose all transformatations BigWarp knows about into one single displacement field.</li>
+                    <li>Sequence: If a transformation was imported on startup, this option saves a reference to it,
+                        and newly created displacement field contains only the part of the transformation editable by BigWarp.</li>
+                </ul>
+            </li>
+            <li><b>Direction</b> 
+                <ul>
+                    <li>FORWARD: The "forward" transform needed to transform image data.</li>
+                    <li>INVERSE: The "inverse" transform needed to transform coordinate data.</li>
+                    <li>BOTH: Exports both the forward and inverse transform when possible.</li>
+                </ul>
+            </li>
+            <li><b>Split affine</b>: If selected, separates the affine from the deformable parts when exporting a thin-plate-spline.
+            <li><b>Threads</b>: The number of parallel threads to use for computation.
+            <li><b>Format</b> 
+                <ul>
+                    <li>NGFF: The recommended option uses <a href="https://github.com/ome/ngff">OME-NGFF</a>.</li>
+                    <li>TPS: A temporary option that will hopefully one day join the NGFF standard.</li>
+                </ul>
+            </li>
+            <li><b>Virtual</b>: If exporting to ImageJ, uses a <a href="https://imagej.net/ij/docs/guide/146-8.html#toc-Section-8">virtual stack</a>, i.e., the transformation will be computed on-the-fly, 
+                so the transform will initially appear faster, but navigation will be slower when new parts of the images need to be computed.
+            <li><b>N5 options</b>: The parameters for writing to chunked file formats. Read about them in <a href="https://github.com/saalfeldlab/n5-ij?tab=readme-ov-file#export-n5">the N5 documentation</a>.</li>
+            <li><b>Field of view</b> : 
+                <ul>
+                    <li><b>Reference</b>
+                        <ul>
+                            <li>Moving (warped): BigWarp will set the spacing option to match the moving image, and will
+                                estimate the physical size to the smallest bounding box that fits the entire warped moving image.</li>
+                            <li>Target: BigWarp will set the field of view options to values matching the target image.</li>
+                        </ul>
+                    </li>
+                    <li><b>units</b>: the physical unit for the field-of-view of the image.</li>
+                    <li><b>min(unit)</b>: the physical coordinates of the top-left pixel.</li>
+                    <li><b>size(unit)</b>: the physical extent in each dimension.</li>
+                    <li><b>spacing(unit/px)</b> : the physical spacing between adjacent pixels along each dimension.</li>
+                    <li><b>size(px)</b>: the number of pixels in each dimension.</li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp-export-transform-dialog.png" width="500"/> </td>
+    </tr>
+  </tbody>
+</table>
+{:/}
+
+
 
 #### Warp 2d ImageJ ROIs
 
