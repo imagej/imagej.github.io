@@ -15,6 +15,8 @@ It provides an interface-driven design that supports numeric and non-numeric dat
 -   [ImgLib2 paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
 -   [ImgLib2 Documentation](/libs/imglib2/documentation)
 -   [ImgLib2 Examples](/libs/imglib2/examples)
+-   [ImgLib2 Blog](https://imglib.github.io/imglib2-blog/)
+-   [Image.sc forum](https://forum.image.sc/tag/imglib2)
 -   {% include javadoc project='ImgLib2' %} javadoc
 -   [How To Migrate Code From ImgLib To ImgLib2](/libs/imglib2/migrate-from-imglib1)
 -   ["Introduction to ImgLib2"](/libs/imglib2/workshop-introductory) workshop
