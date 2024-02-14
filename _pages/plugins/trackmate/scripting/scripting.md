@@ -23,7 +23,7 @@ All the keys of the known detectors and trackers are documented [in this page](/
 
 <!-- -->
 
--   TrackMate ([`fiji.plugin.trackmate.TrackMate`](https://fiji.sc/javadoc/fiji/plugin/trackmate/plugins/trackmate.html) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u>, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.
+-   TrackMate ([`fiji.plugin.trackmate.TrackMate`](https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u>, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.
 
 So getting a working script is all about configuring a proper `Settings` object and calling `exec*` methods on a `TrackMate` object. Then we read the results in the `Model` object.
 
