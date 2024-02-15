@@ -3,6 +3,7 @@ title: BigWarp
 project: /software/fiji
 categories: [Visualization,Transform,Registration]
 artifact: sc.fiji:bigwarp_fiji
+extensions: ["mathjax"]
 doi: 10.1109/ISBI.2016.7493463
 ---
 
@@ -32,7 +33,7 @@ for the legacy dialog. If this is not visible in your installation, try updating
 <table>
   <tbody>
     <tr>
-        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp-init-dialog.png" width="500"/> </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-init-dialog.png" width="500"/> </td>
         <td style="padding: 5px;">
             <ul>
             <li><b>BigWarp project or landmarks</b> : Select a saved BigWarp project file (json) or landmarks file (csv).</li>
@@ -63,7 +64,7 @@ a path or [N5URL](https://github.com/saalfeldlab/n5/wiki/URLs) directly into the
 <table>
   <tbody>
     <tr>
-        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp-dialog-legacy.png" width="250"/> </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-dialog-legacy.png" width="250"/> </td>
         <td style="padding: 5px;">
             <ul>
             <li><b>moving image</b> : Select an image open in ImageJ to be transformed.</li>
@@ -306,7 +307,7 @@ Press {% include key key='F2' %} to bring up a transformation type selection win
 
 |                                                |                                                   |
 |------------------------------------------------|---------------------------------------------------|
-| <img src="/media/plugins/bigwarp-selecttps.png" width="400"/> | <img src="/media/plugins/bigwarp-selectaffine.png" width="400"/> |
+| <img src="/media/plugins/bigwarp/bigwarp-selecttps.png" width="400"/> | <img src="/media/plugins/bigwarp/bigwarp-selectaffine.png" width="400"/> |
 | Example of a thin plate spline transformation  | Example of an affine transformation               |
 
 #### Table of transformation types
@@ -318,6 +319,49 @@ Press {% include key key='F2' %} to bring up a transformation type selection win
 | Similarity        | Linear transform with translation, rotation, and one scale parameter (7 degrees of freedom)                       |
 | Rotation          | Linear transform with translation, and rotation (6 degrees of freedom)                                            |
 | Translation       | Translation only (3 degrees of freedom)                                                                           |
+
+#### Masked transformations
+
+It is sometimes useful to limit the transformation to a certain area, for example, when fine-tuning another transformation.
+Options for masked transformations can be found in the BigWarp options dialog {% include bc path="Settings | BigWarp Options" %} 
+or shortcut {% include key key='U' %}. (*Available in version 9.0.0 or later*)
+
+Turn on a transformation mask by setting the "Mask interpolation option to one of `LINEAR`, `ROTATION`, or `SIMILARITY`.
+
+{% include img name="spirals" src="/media/plugins/bigwarp/bigwarp-mask-1.png" width="500px" %} {% include img name="spirals" src="/media/plugins/bigwarp/bigwarp-mask-2.png" width="500px" %}
+
+##### Details
+
+* **Mask interpolation**
+    * NONE : no masking
+    * LINEAR : mask with "linear" interpolation
+    * ROTATION : mask "rotation" interpolation
+    * SIMILARITY : mask "similarity" interpolation
+
+We generally recommend the `SIMILARITY` option when using a transform mask, though all options should give similar results in
+most cases.
+
+* **Mask falloff**: The shape of the falloff curve of the spherical mask from the center (where it equals one) to the outside where it equals zero. Not relevant for imported masks.
+    * COSINE
+    * GAUSSIAN
+    * LINEAR 
+
+* **Auto-estimate mask**: The size and position of the spherical mask will be automatically estimated as the smallest sphere
+  that contains the clicked landmarks. Any manual edtis to the mask will turn this option off. Not relevant for imported masks.
+
+* **Show mask overlay**: Overlays two circles on the fixed image window indicating mask size and position. Transformations are
+  fully applied inside the inner circle, the transform is partly applied in between the two circles, and not at all applied
+  outside the outer circle. Not relevant for imported masks.
+
+It is also possible to import a mask from a file with {% include bc path="File | Import Mask" %}, or remove an imported mask
+with {% include bc path="File | Remove Mask" %}. Masks should take values between zero and one, where a value of one indicates
+the transform will be fully applied, a value of zero indicates the transform will not be applied, and partially applied for
+values in between. For masks with an intensity range that is not $$[0,1]$$, use the *Imported mask intensity range* (see below) to
+map its intensities as desired.
+
+* **Imported mask intensity range**: Linearly map the intensity of an imported mask to $$[0,1]$$. The left (right) intensity will
+  be mapped to zero (one). The Only relevant for imported masks.
+
 
 ### Navigation and Visualization
 
@@ -567,7 +611,7 @@ Export the warped moving image by clicking
 {% include bc path="File | Export as ImagePlus" %} or using the
 {% include key keys='Ctrl|E' %} keyboard shortcut.
 
-![](/media/plugins/bigwarp-export.png)
+![](/media/plugins/bigwarp/bigwarp-export.png)
 
 The default parameters will result in the exported image having the same
 dimensions as the target image.
@@ -589,7 +633,7 @@ dimensions as the target image.
 
 The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-<img src="/media/plugins/bigwarplandmarkcenteredexport.png" width="600"/>
+<img src="/media/plugins/bigwarp/bigwarplandmarkcenteredexport.png" width="600"/>
 
 ### Apply transforms
 
@@ -656,7 +700,7 @@ transformations as displacement fields that can either be displayed as a window 
             </li>
             </ul>
         </td>
-        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp-export-transform-dialog.png" width="500"/> </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-export-transform-dialog.png" width="500"/> </td>
     </tr>
   </tbody>
 </table>
@@ -700,8 +744,8 @@ The results are shown in the "Inverse example" below.
 
 |                                                   |                                                   |
 |---------------------------------------------------|---------------------------------------------------|
-| <img src="/media/plugins/bigwarp-warp-roi-fwd.png" width="600"/> | <img src="/media/plugins/bigwarp-warp-roi-inv.png" width="600"/> |
-| Forward example (click to expand)                 | Inverse example (click to expand)                 |
+| <img src="/media/plugins/bigwarp/bigwarp-warp-roi-fwd.png" width="600"/> | <img src="/media/plugins/bigwarp/bigwarp-warp-roi-inv.png" width="600"/> |
+| Forward example                                                  | Inverse example                                                  |
 
 Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.
 
