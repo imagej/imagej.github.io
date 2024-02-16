@@ -30,9 +30,9 @@ What you can do with GAT:
 
 **Reference**
 
-Software citation on Zenodo:
+To cite GAT:
 
-Sorensen, L., Saito, A., Poon, S., Noe Han, M., Hamnett, R., Neckel, P, Humenick, A., Mutunduwe, K., Glennan, C., Mahdavian, N., JH Brookes, S., M McQuade, R., PP Foong, J., Gómez-de-Mariscal, E., Muñoz Barrutia, A., Kaltschmidt, J. A., King, S. K., Haase, R., Carbone, S., A. Veldhuis, N., P. Poole, D., & Rajasekhar, P. (2022). Gut Analysis Toolbox [Computer software]. Zenodo. doi: 10.5281/zenodo.6095590
+Sorensen, L., A. Humenick, S. S. B. Poon, M. N. Han, N. S. Mahdavian, R. Hamnett, E. Gómez-de-Mariscal, P. H. Neckel, A. Saito, K. Mutunduwe, C. Glennan, R. Haase, R. M. McQuade, J. P. P. Foong, S. J. H. Brookes, J. A. Kaltschmidt, A. Muñoz-Barrutia, S. K. King, N. A. Veldhuis, S. E. Carbone, D. P. Poole and P. Rajasekhar (2024). "Gut Analysis Toolbox: Automating quantitative analysis of enteric neurons." bioRxiv: 2024.2001.2017.576140.
 
 To download the training data, notebooks and associated models please go to the following Zenodo link:
 
