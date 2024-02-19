@@ -149,6 +149,6 @@ I originally made this as I had someone who wanted to determine the average thic
 ### Removing pixel randomization
 In version 2 of CCC, the repeating pixel randomization process (as described in the BMC Bioinformatics publication) was replaced by the mean within the mask method to remove the low spatial frequency component. This new process was faster, more memory efficient, and allows CCC to generate consistent results when provided the same input. While it seems very different on its face, this is in effect the same process and produces identical results if infinite repeats were used with v1. This is ultimately because the cross-correlation did not have to be done after each randomization with the overall result being averaged across repeats, but instead the randomization of the image could be repeated and averaged first, then the resulting image cross-correlated with the second image. Effectively:
 
-$$\lim\limits_{n \to \infty} \left(\frac{\sum_{i=1}^n \left(rand(Img1)_i \bigstar Img2\right)}{n}\right) = \lim\limits_{n \to \infty} \left(\left(\frac{\sum_{i=1}^n \left(rand(Img1)_i\right)}{n} \right)\bigstar Img2\right)$$
+$$\lim\limits_{n \to \infty} \left(\frac{\sum_{i=1}^n \left(rand(Img1)_i \star Img2\right)}{n}\right) = \lim\limits_{n \to \infty} \left(\left(\frac{\sum_{i=1}^n \left(rand(Img1)_i\right)}{n} \right)\star Img2\right)$$
  
 The process of randomizing and averaging an image an infinite number of times would result in an image of just the mean intensity value. Hence why the mean intensity under the mask is used.
