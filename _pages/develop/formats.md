@@ -7,7 +7,7 @@ Before an image can be analyzed, it needs to be opened properly. The way scienti
 
 [ImageJ2](/software/imagej2) provides a comprehensive solution to the issue of data formats in the form of [SCIFIO](/libs/scifio) data format plugins. [SCIFIO](/libs/scifio), the SCientific Image Format Input and Output library, is a flexible framework for image format support. To get started writing SCIFIO formats:
 
--   Check out the [SCIFIO tutorials](https://github.com/scifio/scifio-tutorials/tree/-/core/src/main/java/io/scif/tutorials/core).
+-   Check out the [SCIFIO tutorials](https://github.com/scifio/scifio-tutorials).
 -   Look at simple [existing formats](https://github.com/scifio/scifio/blob/scifio-0.24.0/src/main/java/io/scif/formats/BMPFormat.java) for a starting point.
 
 ## ImageJ 1.x format handling
