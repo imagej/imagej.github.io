@@ -11,6 +11,13 @@ team-maintainer: Neville S. Ng
 
 ---
 
+## Usage
+
+Copyright (c) 2014 - 2024, Neville S. Ng. All rights reserved.
+
+The author assumes no responsibility for its use by other parties, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic. 
+Please cite and acknowledge ImageJ Batch Tools whenever you present or publish work that utilises this tool.
+
 ## Description 
 
 Toolbar for batch image processing and analysis including image extraction, channel merge, composite conversion, Z-projection, channel B&C and colour adjustment, file export, and cell area, gray value & count.
