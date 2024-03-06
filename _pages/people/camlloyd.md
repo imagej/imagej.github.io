@@ -2,8 +2,7 @@
 title: Cameron Lloyd
 
 name: Cameron Lloyd
-affiliation:
-  - University of Cambridge | https://www.oncology.cam.ac.uk/directory/c-lloyd
+gravatar: 278c8dff7fe8bb8fe6f00c0bb0e74000
 forum: camlloyd
 github: camlloyd
 researchgate: Cameron-Lloyd-2
