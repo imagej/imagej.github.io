@@ -131,6 +131,64 @@ It will affect the smoothness of the resulting segmentation and the computing ti
 
 _By default in the non-advanced option, this parameter is set to `True`._
 
+
+### Parameters for 3D stacks
+
+Starting from version 8, TrackMate can also handle 3D stack.
+CellPose offers two version of "3D" segmentation:
+
+- `2D+Z` stitching: cells are segmented in 2D in each z-slice then the 3D volume is reconstructed by merging together segmented cells that overlap enough between neighboring slices.
+
+- `3D mode`: CellPose 3D segmentation consists in running the (x,y), (y,z) and (x,z) plans through the 2D neural networks and then reconstruction the 3D volumes.
+
+In both cases, the **deep learning part of CellPose segmentation is done in 2D**. 2D slices are runned through the neural networks to compute the flows and get the segmentation. Thus **any of the CellPose models** can be used for 3D segmentation and (re)training of new models can be done with 2D annotations.
+
+The parameters available in TrackMate-Cellpose are documented above. 
+Below we document the additional parameters that are available when the images are 3D. 
+
+{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-ui-parameters-3D.png" align='center' width='450' %}
+
+_By default, TrackMate uses the `3D mode` in the non-advanced version. You can change it through the `Advanced Cellpose detector` interface._
+
+#### `Remove cells below`
+Keep only masks that have a minimum volume, in pixels. This parameter is used only in the `3D mode` of Cellpose and corresponds to the *min_size* parameter of Cellpose. In this mode, the flow threshold is not used, so this parameter allows to limit false positives by eliminating very small segmentations.⚠️ Note that this parameter doesn't take into account the anisotropy of the stack (the filtering is applied on the original image size).
+
+_By default, this value is set to 15 in the non-advanced version._
+
+#### `Do 2D+Z`
+This allows to choose to run the 3D segmentation with the `2D+Z` Cellpose mode.
+Each z-slice is runned through Cellpose and cells are segmented, similar to the 2D segmentation (see above). The same parameters (model, diameter, flow, cell probability..) are used.
+Then Cellpose performs a step of 3D reconstruction that merge together 2D masks from consecutive slices if the objects overlap enough.
+
+If this parameter is not checked, then the segmentation is done with Cellpose `3D mode`. 
+The stack is decomposed in 2D slices in the xy, yz and xz directions. Each slice is runned through the 2D network to compute the flows.
+The 3D masks of the cells are then reconstructed by merging together the calculated flows.
+In this mode, the `flow_threshold` parameter is not used anymore as it is ignored in Cellpose.
+
+##### `IOU_threshold`
+When the Cellpose mode is 2D+Z stitching, this parameter called *stitch_threshold* in Cellpose fixes the minimum overlap necessary to merge two segmented cells from consecutive z-slices.
+For the two segmented objects in two consecutives z-slices, the intersection over union (IOU) is calculated and if the IOU is above the `IOU threshold`, the two objects will be marked as part of the same cell.
+
+
+### Anisotropy of 3D images in TrackMate-CellPose
+
+3D images are often non isotropic (the resolution in x, y is usually smaller than the resolution in z).
+To handle this anisotropy, Cellpose resizes the stack to have isotropic voxels (same resolution in all dimensions). 
+
+TrackMate automatically calculates the anisotropy as the ratio between the scale in z by the scale in x,y that are read from the scaling information in the metadata of the image. This calculated value is then used for the *anisotropy* parameter of Cellpose.
+
+⚠️ If your image properties are not correctly set, the anisotropy will not be correctly corrected for!
+
+
+### (Re)Training of a CellPose model
+
+To optimize CellPose on your data, you can retrain one its model and use it in TrackMate-CellPose. You can do the retraining easily through [CellPose 2.0 GUI](https://www.nature.com/articles/s41592-022-01663-4). When the model gives acceptable results, select it in TrackMate interface with the `custom_model` parameter. 
+
+Note that in 3D stacks, it can be worth it to create xy, yz and xz images of the stack corrected for anisotropy and to draw annotations on it to train the model to make it more performant for the segmentation with the `3D mode`.
+<br>
+
+***
+
 ### Tip: Passing RGB images to TrackMate for cellpose
 
 On the cellpose webiste you can find a collection of test images to test with cellpose. They will work with the TrackMate integration as well, but they are RGB images. TrackMate does not support RGB images. So we give here a short optional procedure on how to feed RGB images to TrackMate and have them still segmented by cellpose as expected. Again, if you don't have RGB images as input, you can skip this section.
