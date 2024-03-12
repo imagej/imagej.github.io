@@ -20,6 +20,7 @@ Available on the list of [ImageJ updates sites](/update-sites/following). Requir
 ## How to use Colocalization by Cross Correlation (CCC):
 
 ### Brief overview
+- Correct for [chromatic shift](/imaging/chromatic-shift)
 - Prepare a mask of the region to be analyzed
 - Deconvolve the images (Optional but recommended)
 - Convert images to 32-bit (Image > Type > 32-bit)
