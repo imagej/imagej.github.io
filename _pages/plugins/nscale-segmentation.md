@@ -15,24 +15,23 @@ The watershed algorithm and the segmentation tools within the Fiji software ofte
 To instal the plugin onto Fiji first copy the script from the update site (https://sites.imagej.net/Nscale_segmentation/) and save it as 
 a txt. (Open notebook, paste script onto notebook and save it). To run it go to plugins>macros>install> and click on the Nscale_segmentation script you just saved. The plugin should show up like this: 
 
-![](/media/Nscale_segmentation.P1.jpg)
 
+{% include img src="nscale-segmentation-1.jpg" %}
 
 ## Start
 
 Once you have the plugin installed open the image you want to analyse. Right click the plugin icon and a pop up should appear 
 asking to input a scale factor number. This number should range from 1-10. Start with a lower scale number and click ok. 
 
-![](/media/Nscale_segmentation.P2.jpg)
+{% include img src="nscale-segmentation-2.jpg" %}
 
 Click the icon again to set your desired Gaussian Blur radius.
 
-![](/media/Nscale_segmentation.P3.jpg)
+{% include img src="nscale-segmentation-3.jpg" %}
 
 And set the radius and threshold for the removal of outliers. 
 
-![](/media/Nscale_segmentation.P4.jpg)
-
+{% include img src="nscale-segmentation-4.jpg" %}
 
 Once you set all the parameters and click ok, this should segment all the cellular nuclei in your image. If the segmentation is too big or small for your cells, right click the plugin icon again and adjust the scale factor (increase/decrease accordingly) before making changes to outlier radius. 
 
@@ -40,8 +39,4 @@ Once you set all the parameters and click ok, this should segment all the cellul
 
 This tool should segment touching or merged nuclei from separate cells.  
 
-
-![](/media/Nscale_segmentation.P5.jpg)
-
-
-
+{% include img src="nscale-segmentation-5.jpg" %}
