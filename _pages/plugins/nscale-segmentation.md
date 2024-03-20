@@ -1,20 +1,20 @@
 ---
-mediawiki: Nscale_segmentation
 name: "Nscale_segmentation"
 title: Nscale_segmentation
 categories: [Segmentation]
 website: "https://sites.imagej.net/Nscale_segmentation/"
 dev-status: "stable"
-Author: ['@Eden Tamrat']
+team-founder: 'Eden Tamrat'
+team-lead: 'Eden Tamrat'
+team-developer: 'Eden Tamrat'
 ---
 
-The watershed algorithm and the segmentation tools within the Fiji software often dont distinguish a cluster of nuclei that are in close proximity, erroneously grouping them together. This leads to an inaccurate analysis of average nuclear size. To address this issue, this customizable segmentation plugin employs a scale parameter to calibrate the image, to give a more precise separation of touching nuclei.
+The watershed algorithm and the segmentation tools within the Fiji software often don't distinguish a cluster of nuclei that are in close proximity, erroneously grouping them together. This leads to an inaccurate analysis of average nuclear size. To address this issue, this customizable segmentation plugin employs a scale parameter to calibrate the image, to give a more precise separation of touching nuclei.
 
 ## Instalation
 
-To instal the plugin onto Fiji first copy the script from the update site (https://sites.imagej.net/Nscale_segmentation/) and save it as 
-a txt. (Open notebook, paste script onto notebook and save it). To run it go to plugins>macros>install> and click on the Nscale_segmentation script you just saved. The plugin should show up like this: 
-
+To install the plugin onto Fiji first copy the script from the update site (https://sites.imagej.net/Nscale_segmentation/) and save it as 
+a txt. (Open notebook, paste script onto notebook and save it). To run it go to {% include bc path="Plugins|Macros|Install..." %} and click on the Nscale_segmentation script you just saved. The plugin should show up like this: 
 
 {% include img src="nscale-segmentation-1.jpg" %}
 
