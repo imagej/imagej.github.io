@@ -128,7 +128,7 @@ _By default in the non-advanced option, this parameter is set to `True`._
 
 ## Parameters for 3D stacks
 
-Starting from version 8, TrackMate can also handle 3D stack.
+Starting from version 8, TrackMate can also handle 3D stack with CellPose.
 CellPose offers two version of "3D" segmentation:
 
 - `2D+Z` stitching: cells are segmented in 2D in each z-slice then the 3D volume is reconstructed by merging together segmented cells that overlap enough between neighboring slices.
@@ -162,6 +162,11 @@ In this mode, the `flow_threshold` parameter is not used anymore as it is ignore
 #### `IOU_threshold`
 When the Cellpose mode is 2D+Z stitching, this parameter called *stitch_threshold* in Cellpose fixes the minimum overlap necessary to merge two segmented cells from consecutive z-slices.
 For the two segmented objects in two consecutives z-slices, the intersection over union (IOU) is calculated and if the IOU is above the `IOU threshold`, the two objects will be marked as part of the same cell.
+
+#### `Smooth`
+Performs a smoothing of the 3D detection to obtain more regular segmentations. 
+In the `3D mode`, the `flow_threshold` parameter is indeed not used so we can obtain quite irregular shapes. 
+You can also choose to disable this option and use the smoothing option later (see example [in the tutorial below](#smoothing-the-results)).
 
 
 #### Anisotropy of 3D images in TrackMate-CellPose
@@ -311,6 +316,8 @@ Then proceed as before for the tracking step and the plot generation. The area a
 ## Detect and track cells in 3D from membrane staining
 
 This tutorial guides you through the detection and tracking of cells in 3D using Cellpose (version 2.0) and TrackMate (version 8).
+The dataset used in this tutorial was shared with us by Paul Palmquist-Gomes in Sigolène Meilhac's team (Institut Imagine/Institut Pasteur). 
+The movie contains 14 time frames, 86 z planes and is of 1024*1024 pixels. Around 600 cells (spots) were detected at each time frame. 
 
 ### Set Cellpose parameters for detection
 
