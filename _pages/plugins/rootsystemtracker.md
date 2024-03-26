@@ -5,9 +5,11 @@ description: Time-lapse tracking of root system architecture
 pom-url: https://raw.githubusercontent.com/Rocsg/RootSystemTracker/main/pom.xml
 ---
 
-<i>Current version : Handsome Honeysuckle (last release : July 13<sup>th</sup>, 2022).</i>
+<i>Current version : Handsome Honeysuckle (last release : July 26<sup>th</sup>, 2024).</i>
 
-The plugin **RootSystemTracker** is an automatic analysis pipeline based on registration and topological tracking, capable of accurately describing the topology and geometry of observed root systems in 2D+t.
+The plugin **RootSystemTracker** is an automatic analysis pipeline based on registration and topological tracking, capable of accurately describing the topology and geometry of observed root systems in 2D+t in laboratory conditions. 
+
+Update : Next release is on 2nd april 2024. This will be the first deployment of possibility to annotate time-lapse series from in-field conditions. Stay tuned!
 
 ## Plugin features
 
