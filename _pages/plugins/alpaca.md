@@ -16,5 +16,8 @@ Please cite ALPACA like this:
 {% include citation %}
 
 # Description
-
+## Section 1
 **work in progress**
+
+## Manual
+For a detailed manual please see [The ALPACA manual](https://github.com/tschmenger/imagej.github.io/blob/ae937d6b904f3de36712dc35b1d55e879a45b42f/media/plugins/alpaca_manual.pdf).
