@@ -16,8 +16,14 @@ Please cite ALPACA like this:
 {% include citation %}
 
 # Description
-## Section 1
-**work in progress**
+## How to use
+This pipeline is based on the free to download software packages of ZEN and FIJI. After selecting the update site for ALPACA in FIJI by clicking --> **HELP** --> **Update** --> **Manage Update Sites** you will find the ALPACA macros after clicking on <span style="color: red"> >> </span> under **Cilia Tools**. You can find more information about performing the cell-based assay and taking the images in *Doornbos et. al. 2021* and the manual below.
 
-## Manual
+## Using the 'Whole Cilia analysis tool' function
+This macro will perform the individual macros in an all-in-one fashion. The user will asked to select the folder containing the images and to select values for several analysis variables (default values are provided). The analysis will then performed automatically, including **counting of nuclei**, **measuring of cilia length** & **assessing intraflagellar transport (IFT)**. The output will contain *.tif* images and spreadsheets. 
+
+## Using individual macros
+Instead of performing the complete analysis the user may choose to execute only a single macro at the time.
+
+# Manual
 For a detailed manual please see [The ALPACA manual](https://github.com/tschmenger/imagej.github.io/blob/ae937d6b904f3de36712dc35b1d55e879a45b42f/media/plugins/alpaca_manual.pdf).
