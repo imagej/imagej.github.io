@@ -23,7 +23,7 @@ A bug report is a reproducible set of steps describing a problem. They are a com
 
 -   Report the issue using the [Report a Bug](/discuss/bugs) plugin (in the Help menu).
 -   Provide a [minimal, complete, verifiable example](http://stackoverflow.com/help/mcve) (MCVE).
--   [Describe what you already tried](http://whathaveyoutried.com/).
+-   [Describe what you already tried](https://web.archive.org/web/20170318144207/http://mattgemmell.com/what-have-you-tried/).
 -   [Put as much effort into your question](http://stackoverflow.com/help/how-to-ask) as you expect to be put into its response.
 
 ## Be concise
