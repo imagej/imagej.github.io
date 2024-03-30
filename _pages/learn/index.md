@@ -31,7 +31,7 @@ ImageJ's [extensibility](/develop/architecture#extensibility) is the root of its
 
 ## Installation
 
-First, you should to [download](/downloads) and install ImageJ, ImageJ2, or Fiji!
+First, you should [download](/downloads) and install ImageJ, ImageJ2, or Fiji!
 
 ## The main window
 
