@@ -39,8 +39,9 @@ Here is an example of full tracking process, using the easy image found in the [
 -   Then the [TrackMate](/plugins/trackmate) object performs all the steps needed.
 -   The final results is displayed as an overlay.
 
-{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_1.py' %}        
-        
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_ExecTracking.py' %}        
+
+
 ## Loading and reading from a saved TrackMate XML file
 
 Scripting is a good way to interrogate and play non-interactively with tracking results. The example below shows how to load a XML TrackMate file and rebuild a full working model from it.
@@ -49,9 +50,10 @@ That way you could for instance redo a full tracking process by only changing on
 
 For the example below to work for you, you will have to edit line 25 and put the actual path to your TrackMate file.
 
-{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_2.py' %}
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_ReadTrackMateFile.py' %}
 
-## Export spot, edge and track numerical features after tracking
+
+## Display spot, edge and track numerical features after tracking
 
 This example shows how to extract numerical features from tracking results.
 
@@ -72,7 +74,16 @@ Finally, depending on their type, numerical features are not stored at the same 
 
 Check the script below to see a working example.
 
-{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_3.py' %}
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_GetTrackingData.py' %}
+
+
+## Exporting to TrackMate file, to CSV files, to simple track files
+
+This script demonstrates several ways by which TrackMate data can be exported to files. Mainly: 1/ to a TrackMate XML file, 2/ & 3/ to CSV files, 4/ to a simplified XML file, for linear tracks.
+
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_ExportToFiles.py' %}
+
+
         
 ## Manually creating a model
 
@@ -104,7 +115,7 @@ Spot quality and link cost are typically useful to quantify automatic spot detec
 
 The script below does this: ![](/media/plugins/trackmate/trackmate-animatedname.gif)
 
-{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_4.py' %}
+{% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_CreateTrackingData.py' %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
