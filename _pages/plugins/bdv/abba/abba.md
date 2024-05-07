@@ -6,7 +6,7 @@ toc: true
 ---
 
 The complete documentation of ABBA can be found here: 
-[https://biop.github.io/ijp-imagetoatlas/](https://biop.github.io/ijp-imagetoatlas/).
+[https://abba-documentation.readthedocs.io](https://abba-documentation.readthedocs.io).
 
 You can use ABBA by activating the PTBIOP update site, but more functionalities are acessible through other installation means. Check the full documentation for instructions.
 
@@ -34,7 +34,7 @@ It has been developed by the [BioImaging & Optics Platform](https://www.epfl.ch/
 
 ## Documentation
 
-You will find the complete documentation in [https://biop.github.io/ijp-imagetoatlas/](https://biop.github.io/ijp-imagetoatlas/)
+You will find the complete documentation in [https://abba-documentation.readthedocs.io](https://abba-documentation.readthedocs.io)
 
 
 
