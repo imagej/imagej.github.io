@@ -4,8 +4,12 @@ title: Large-scale cell tracking under segmentation uncertainty
 dev-status: Beta
 support-status: Active
 description: Cell tracking and segmentation software
-Creator: Jordão Bragantini
-Developer: "@ilan-theodoro"
+Creator: 
+  - Jordão Bragantini
+  - Ilan Theodoro
+Developer: 
+  - "@ilan-theodoro"
+  - "@JoOkuma"
 doi: 10.48550/arXiv.2308.04526
 categories: [Tracking]
 ---
@@ -71,9 +75,9 @@ The usage is simple and the following steps describes briefly how to use the Ult
     
 in which the user can select the desired tracking workflow. The options are:
  - **Auto Detection From Image**: which provides a way to track cells using solely the image as input;
- - **Manual Detection**: which is suitable for tracking cells using your custom **edge** detection and **foreground** 
+ - **Foreground & edges from user**: which is suitable for tracking cells using your custom **edge** detection and **foreground** 
    segmentation algorithms;
- - and **Auto Detection From Label**: which is suitable for tracking cells using a pre-segmented image from your favorite 
+ - and **Segmentation from user**: which is suitable for tracking cells using a pre-segmented image from your favorite 
    segmentation software, such as [Stardist](https://github.com/stardist/stardist), 
    [Cellpose](https://github.com/MouseLand/cellpose), 
    [MicroSAM](https://github.com/computational-cell-analytics/micro-sam) or any other.
@@ -102,6 +106,12 @@ in which the user can select the desired tracking workflow. The options are:
 
 [![Ultrack GUI with track image selection](/media/plugins/ultrack/07_open_tracks.png)](/media/plugins/ultrack/07_open_tracks.png)
 [![Tracks Viewer it Trackmate](/media/plugins/ultrack/08_trackmate.png)](/media/plugins/ultrack/08_trackmate.png)
+
+# Acknowledgments
+
+We are thankful for the ImageJ community for providing the necessary tools to develop this plugin, such as 
+the FIJI platform and integrations. We also acknowledge the developers from Trackmate plugin for their work 
+in the tool, which we relied on to visualize the tracking results.
 
 # Citation
 If you find ultrack useful, please cite Ultrack as follows:
