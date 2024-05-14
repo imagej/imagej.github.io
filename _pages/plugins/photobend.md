@@ -69,7 +69,7 @@ Add update site PhotoBend to install the plugins automatically.
 
 -   [{% include bc path='Help|Update...'%}](/update-sites)
 -   Click *Manage update sites*
--   Add and check new update site: Name=*PhotoBend*, URL="http://sites.imagej.net/Anotherche/"
+-   Add and check new update site: Name=*PhotoBend*, URL="https://sites.imagej.net/PhotoBend/"
 -   Click *Close*
 -   (You can skip this optional step by default) In the list of new jar files that are proposed to be installed from the update site, you can unchek files that do not need to be installed (for example, files not related to your operating system or processor architecture). To do this, change "Install / Update" to "Keep as is" for those files.
 -   Click *Apply changes*
@@ -81,9 +81,11 @@ Warning: the plugins depend on several libraries which will be installed in loca
 -   xmpcore. Version 5.1.3
 -   metadata-extractor. Version 2.11.0
 
+Update: сurrent versions of the plugins use a new way of installing the javacv library, using an additional auxiliary JavaCV Installer plugin, which controls the presence of all necessary dependencies on the system.  During the installation of the plugins described above, the JavaCV Installer plugin is checked for the presence and is installed automatically if necessary. Detailed information about JavaCV Installer plugin can be found on the community page https://forum.image.sc/t/new-javacv-installer-plugin/55392.  
+
 ## Citing
 
-We kindly ask you to cite Cizhik 2018[^1] when publishing the results obtained using these plugins. Thank you for your support.
+We kindly ask you to cite Chizhik 2018[^1] when publishing the results obtained using these plugins. Thank you for your support.
 
 ## References
 
