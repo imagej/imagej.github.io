@@ -791,7 +791,7 @@ The BoneJ plug-ins print their results into a shared result table. This is becau
 
 Note that some of the plug-ins (marked with *WIP*) still use a ImageJ 1.x style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
 
-## Usage reporting
+## Usage reporting (removed from version 7.0.19, 15 May 2024)
 
 Menu path {% include bc path="Edit | Options | BoneJ Usage" %}
 
