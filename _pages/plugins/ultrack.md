@@ -1,5 +1,4 @@
 ---
-mediawiki: Ultrack FIJI's plugin
 title: Large-scale cell tracking under segmentation uncertainty
 dev-status: Beta
 support-status: Active
