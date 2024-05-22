@@ -65,7 +65,11 @@ The steps below describe how to use the Ultrack plugin:
 
 2. Click on the **Plugins** → **Tracking** → **Ultrack** menu. The Ultrack GUI will open.
 
-![Ultrack GUI](media/plugins/ultrack/00_init.png)
+{% include img
+src="/media/plugins/ultrack/00_init.png"
+align="left"
+caption="Ultrack GUI"
+%}
 
 3. (Optional but required in the first run) If Ultrack is correctly installed and accessible through the system path, 
    the user can proceed to the next step. Otherwise, the user needs to set the path to the Ultrack executable in the 
@@ -75,11 +79,20 @@ The steps below describe how to use the Ultrack plugin:
 4. Now you should be able to start the connection with the Ultrack software by clicking the **Start Ultrack Server** 
    button. The plugin will update its GUI to show the available tracking options, as shown in the figure below.
 
-![Ultrack GUI with server started](media/plugins/ultrack/01_gui.png)
+{% include img
+src="/media/plugins/ultrack/01_gui.png"
+align="left"
+caption="Ultrack GUI with server started"
+%}
+
 
 4. The user should now select the desired tracking workflow in this section:
     
-![Ultrack GUI with tracking workflows](media/plugins/ultrack/03_workflows.png)
+{% include img
+src="/media/plugins/ultrack/03_workflows.png"
+align="left"
+caption="Ultrack GUI with tracking workflows"
+%}
     
 in which the user can select the desired tracking workflow. The options are:
  - **Auto Detection From Image**: which provides a way to track cells using solely the image as input;
@@ -95,25 +108,51 @@ in which the user can select the desired tracking workflow. The options are:
    [check here](https://github.com/royerlab/ultrack-dev/blob/main/ultrack/config/README.md) for more information about
    the parameters. Not all of them are available in the FIJI interface, Python is required for full customization.
 
-![Ultrack GUI with tracking options](media/plugins/ultrack/02_options.png)
+{% include img
+src="/media/plugins/ultrack/02_options.png"
+align="left"
+caption="Ultrack GUI with tracking options"
+%}
 
 6. After setting the parameters, the user can click the **Select Images** button to select the image to be tracked. 
    It is worth mentioning that some workflows, such as **Manual Detection**, require more than one image to be selected.
 
-![Ultrack GUI with image opening](media/plugins/ultrack/04_image_opening.png)
-![Ultrack GUI with image selector](media/plugins/ultrack/05_image_selection.png)
+{% include img
+src="/media/plugins/ultrack/04_image_opening.png"
+align="left"
+caption="Ultrack GUI with image opening"
+%}
+
+{% include img
+src="/media/plugins/ultrack/05_image_selection.png"
+align="left"
+caption="Ultrack GUI with image selector"
+%}
 
 7. Finally, the user can click the **Run** button to start the tracking process. The user can follow the tracking 
    process in the **Ultrack Log** section. 
 
-![Ultrack GUI with tracking progress](media/plugins/ultrack/06_run.png)
+{% include img
+src="/media/plugins/ultrack/06_run.png"
+align="left"
+caption="Ultrack GUI with tracking progress"
+%}
 
 8. To visualize the tracking results, the user can click the **View Tracks** button. Then, it will request a 
    particular image to bind the tracks. In the end, The tracking results will be shown using the 
    [TrackMate](https://imagej.net/plugins/trackmate/) plugin. 
 
-![Ultrack GUI with track image selection](media/plugins/ultrack/07_open_tracks.png)
-![Tracks Viewer it Trackmate](media/plugins/ultrack/08_trackmate.png)
+{% include img
+src="/media/plugins/ultrack/07_open_tracks.png"
+align="left"
+caption="Ultrack GUI with track image selection"
+%}
+
+{% include img
+src="/media/plugins/ultrack/08_trackmate.png"
+align="left"
+caption="Tracks Viewer it Trackmate"
+%}
 
 # Acknowledgments
 
