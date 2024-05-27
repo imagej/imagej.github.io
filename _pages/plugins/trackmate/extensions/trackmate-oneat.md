@@ -2,8 +2,15 @@
 title: TrackMate-Oneat
 description: Trackcorrector that uses oneat's prediction to correct lineage trees
 categories: [Tracking]
-icon: /media/icons/trackmate-oneat.png
+icon: /media/icons/mtrack.png
 ---
+<img src="/media/icons/mtrack.png" alt="Logo1" width="150"/>
+<img src="/media/icons/kapoorlablogo.png" alt="Logo2" width="150"/>
+
+This product is a testament to our expertise at KapoorLabs, where we specialize in creating cutting-edge solutions. We offer bespoke pipeline development services, transforming your developmental biology questions into publishable figures with our advanced computer vision and AI tools. Leverage our expertise and resources to achieve end-to-end solutions that make your research stand out.
+
+**Note:** The tools and pipelines showcased here represent only a fraction of what we can achieve. For tailored and comprehensive solutions beyond what was done in the referenced publication, engage with us directly. Our team is ready to provide the expertise and custom development you need to take your research to the next level. Visit us at [KapoorLabs](https://www.kapoorlabs.org/).
+
 
 This page describes a track corrector module for TrackMate that relies on [oneat](https://pypi.org/project/oneat/). It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following) called **TrackMate-Oneat**.
 
