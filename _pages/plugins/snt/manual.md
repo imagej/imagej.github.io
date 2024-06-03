@@ -19,6 +19,7 @@ Please help us to keep this manual up-to-date by [editing](https://github.com/im
 SNT registers commands in Fiji's menu structure in the {% include bc path='Plugins|Neuroanatomy|' %} sub-menu, namely:
 
 **Neuroanatomy Shortcuts Window** A toolbar panel listing most SNT commands, actions, and scripts including entry points to Sholl and Strahler analyses. It can be open via {% include bc path='Plugins|Neuroanatomy|' %}, or more easily, by pressing *SNT* in the ImageJ toolbar:
+
 <div align="center">
     <img align="center" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
 </div>
@@ -151,36 +152,46 @@ The Command Palette is the fastest way to access actions and discover their resp
 3. Press {% include key keys='up' %} or {% include key keys='down' %} to select a command (or use the  {% include key keys='mouse wheel' %})
 4. Press {% include key keys='Enter' %} to run it. If the record button is toggled, executed commands are recorded by the [Script Recorder](/plugins/snt/scripting#script-recorder).
 
-<span id="plotter"></span>
-
-#### Reconstruction Plotter
-
-_Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructions by plotting 2D projections of traced paths. A control panel  allows for adjustment of the spatial orientation of the tracing. By default, the plot is monochrome. If paths are assigned color tags, or the structure has been color-coded  use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render a (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot. Features include:
-
-- Dark/light theme (controls in plotter's contextual menu)
-- Export as SVG
-- Color legends when color mappings are present
-- Can be combined in multi-panel viewers (mainly via scripting)
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-reconstruction-plotter-example.png" title="SNT-Reconstruction-Plotter-Example.png" width="250" alt="SNT-Reconstruction-Plotter-Example.png" />
-  <img src="/media/plugins/snt/snt-reconstruction-plotter-controls.png" title="SNT-Reconstruction-Plotter-Controls.png" width="250" alt="SNT-Reconstruction-Plotter-Controls.png" />
-  <img src="/media/plugins/snt/snt-reconstruction-plotter-colored.png" title="SNT-Reconstruction-Plotter-Colored.png" width="250" alt="SNT-Reconstruction-Plotter-Colored.png" />
-</div>
 
 #### Compare Reconstructions/Cell Groups...
 
 Allows morphometric comparisons of two single reconstruction files or multiple groups of reconstruction files (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
 
-#### Create Dendrogram
 
-Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
+<span id="plotter"></span>
+
+#### Reconstruction Plotter
+
+<img align="right" src="/media/plugins/snt/snt-reconstruction-plotter.png" title="Reconstruction Plotter overview" width="50%" alt="Reconstruction Plotter overview" />
+
+_Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructions by plotting 2D projections of traced paths. Its major ability is to produce publication-quality (vector-based) renditions of neuronal reconstructions. A control panel  allows for adjustment of the spatial orientation of the tracing. By default, the plot is monochrome. If paths are assigned color tags, or the structure has been color-coded  use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render a (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot. Features (accessed via plotter's contextual menu) include:
+
+- Dark/light theme
+- Costumization controls for font, axes, etc. 
+- Export as SVG (vector graphics)
+- Color legends when color mappings are present
+- Can be combined in multi-panel viewers (mainly via scripting)
+
 
 #### Create Annotation Graph...
 
 See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
 
-#### Auto-trace Segmented Image
+
+#### Create Dendrogram
+
+Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
+
+
+#### Create Figure...
+
+<img align="right" src="/media/plugins/snt/snt-create-figure.png" title="Create Figure... prompt" width="350px" alt="Create Figure... prompt" />
+Creates multi-panel figures from chosen reconstructions, according to the following options:
+
+- **Style**: Wether cells should be rendered in a single pane or in a multipanel montage with 1 cell per pane
+- **Type**: Wether the illustration should be a bitmap image (typically rendered at 1micron per pixel); a scalable graphics 2D image (see [Reconstruction Plotter](#reconstruction-plotter)), or an interactive 3D scene (see [Reconstruction Viewer](/plugins/snt/reconstruction-viewer))
+- **View**: The display plane of the scene: XY (the default), XZ, or ZY. This option pertains only to static 2D scenes
+- **Positioning**: Whether reconstructions should be rendered under theur original coordinates, or whether every cell in the scene should be translatated to a common xyz coordinate (0,0,0) 
 
 #### Autotrace Segmented Image...
 
@@ -188,7 +199,7 @@ Similar to {% include bc path='File|Autotrace Segmented Image File...| ' %} but 
 
 ### Scripts›
 
-See [SNT: Scripting](/plugins/snt/scripting).
+Commands listing bundled and local scripts, as well as access to SNT's Script Recorder. See [SNT: Scripting](/plugins/snt/scripting) for details.
 
 ### View›
 
@@ -211,7 +222,7 @@ This *home* tab aggregated widgets for tracing and frequent operations.
 ### Data Source
 
 <img align="right" src="/media/plugins/snt/snt-data-source-widget.png" width="300" />
-If tracing on a multidimensional image (i.e., one with multiple data channels and/or a time axis), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button.
+If tracing on a multidimensional image (i.e., one with multiple channels and/or multiple time points), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button. By default, new values need to be confirmed in a confimation prompt. It this is too cumbersome, the *Auto-load CT position of new paths* option automatically loads the active channel/frame when a new path is started. Note that this option may not be compatible with [secondary layers](#tracing-on-secondary-image-layer) and [Z-projection overlays](#views).
 
 ### Cursor Auto-snapping
 
@@ -282,7 +293,7 @@ For the most part the secondary layer remains hidden because feedback on auto-tr
 
 #### Creating Secondary layers
 
-<img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" title="Secondary layer wizard" />
+<img align="right" width="400" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" title="Secondary layer wizard" />
 
 Secondary layers are created/load using the second *gear* drop-down menu in the auto-tracing panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
 
@@ -502,7 +513,12 @@ Duplicates the selected path with options to duplicate just a sub-segment or a f
 Renames the selected Path. Only one Path may be renamed at a time because path names are expected to be unique.
 
 #### Auto-connect...
+
 Connects two paths in a parent-child relationship. The fork-point between the two will be automatically guessed.
+
+#### Disconnect...
+
+Disconnects selected path(s) from all of its connections. Note that this is an undoable operation and will force connectiviy of remaining paths to be rearranged.
 
 #### Combine...
 
@@ -512,10 +528,6 @@ Combines (connects) two or more _disconnected_ paths into one (undoable operatio
 
 Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing) belonging to the same neurite.
 
-#### Disconnect...
-
-Disconnects selected path(s) from all of its connections. Note that this is an undoable operation and will force connectiviy of remaining paths to be rearranged.
-
 #### Merge Primary Path(s) into Shared Root
 
 Takes two or more primary paths and merges them into a common root node placed at the centroid defined by starting nodes of the primary paths to be merged. This is useful, e.g., when all the paths around a soma have been traced without passing through it. Note that this will alter parent-child relationships between paths.
@@ -524,7 +536,7 @@ Takes two or more primary paths and merges them into a common root node placed a
 
 Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing).
 
-#### Specify Radius...
+#### Specify Constant Radius...
 
 Assigns a constant radius to all the nodes of selected Path(s). This setting only applies to unfitted Paths and overrides any existing values.
 
@@ -546,13 +558,14 @@ Assigns tags to Paths. Tags allow for paths to be searched, selected, and bookma
 
 #### Type ›
 
-Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {% include bc path='Tag|Options...' %} dialog. These tags are considered to be essential annotations and all paths are assigned the *Undefined*-type tag when created. For this reason they are not eliminated by the *Remove All Tags* command.
+<img align="right" src="/media/plugins/snt/snt-swc-type-tags.png" title="SWC tags" width="300" alt="SWC tags" />
+Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as per [SWC specification](https://swc-specification.readthedocs.io/en/latest/index.html). It is also possible to pair each type with a color tag through the {% include bc path='Options...' %} dialog. These tags are considered to be essential annotations and are not eliminated by the *Remove All Tags* command. Paths are assigned the *Undefined*-type tag when created. 
 
 #### Color ›
 
-A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign unique (distinctive) colors to a group of paths. Metric-based color mapping can also be applied using the {% include bc path='Analyze|Color Coding...' %} command.
+A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign unique (distinctive) colors to a group of paths. Metric-based color mapping can also be applied using the {% include bc path='Analyze|Color Coding...' %} command. Note that paths containining multiple colors (e.g., after node color coding or after tagging invidivual noder) are asssigned a multi-color gradient icon in the Path Manager list.
 
-#### Image Metadata ›
+#### Image Properties ›
 
 Information on hyperstack position details (e.g., channel, frame or slice labels on which a path was traced).
 
@@ -562,7 +575,11 @@ Morphometric properties, such as *Path length*, *Path mean radius* or *[Path ord
 
 #### Custom...
 
-Ad-hoc comments.
+Ad-hoc comments as tags.
+
+#### Remove Tags...
+
+Allows tags to be removed. Note that SWC-type tags are not affected by this command. 
 
 <span id="refinefit"></span>
 
@@ -666,9 +683,11 @@ Outputs a binary image that is a topographic skeleton, ie, it generates an empty
 Creates a 'linear image' from the pixels associated with a single paths, similarly to [ImageJ's Straighten](/plugins/straighten) command. Useful to e.g., display intensity gradients or featured landmarks along a neurite.
 
 #### Load Labkit With Selected Paths...
+
 Uses selected Path(s) to train -- in [Labkit](/plugins/labkit) -- a random forest classifier (a machine learning algorithm for semantic segmentation) aimed at classifying neurite-associated pixels. Described in [Machine Learning](machine-learning).
 
 #### Load TWS With Selected Paths...
+
 Uses selected Path(s) to train -- in [TWS](/plugins/tws) -- a random forest classifier (a machine learning algorithm for semantic segmentation) aimed at classifying neurite-associated pixels. Described in [Machine Learning](machine-learning).
 
 ### Analyze ›
@@ -677,11 +696,13 @@ This menu contains several options which provide quick ways to analyze and visua
 
 #### Color Coding ›
 
-Commands to assign color codes to paths, or cells/branches based on a chosen metric. These commands prompt for the following settings:
+<img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" title="Color Coding" />
+
+Commands to assign color codes to paths, or cells/branches based on a chosen metric. The reason for dedicated to both Paths and Cells is nuanced but intentional: Color coding of paths accepts _any_ type of structures while color coding of cells requires structures to be valid mathematical trees. As a consequence, the pool of mapping metrics between commands is not the same. These commands prompt for the following settings:
 
 - *Color by* Drop-down menu containing the metrics which inform the color mapping.
 
-- *LUT* Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
+- *LUT* Drop-down menu containing the LUTs ("Look Up Tables") that define the color ramps to be mapped to the matric. Availabe choices reflect all the LUTs installed in Fiji. The selected LUT is displayed in the color bar directly underneath.
 
 - *Rec. Viewer Color Map* If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
 
@@ -689,10 +710,6 @@ Commands to assign color codes to paths, or cells/branches based on a chosen met
 
 - *Remove Existing Color Coding* Removes existing color coding from the selected paths.
 
-<div align="center">
-    <img src="/media/plugins/snt/snt-path-manager-color-mapper.png" title="Color Mapper prompt (v3.0)" width="300" />
-    <img src="/media/plugins/snt/snt-color-mapped-op1.png" title="OP1 demo reconstruction color-coded by 'branch order' displayed in Reconstruction Viewer" width="300" />
-</div>
 
 #### Frequency Analysis ›
 
@@ -711,12 +728,24 @@ Commands for retrieving a table of summary statistics for selected paths/cells. 
 
 Plots a Path metric against several others.
 
-### Plot Profile...
+### Node Profiler...
+<img align="right" src="/media/plugins/snt/snt-node-and-path-profiler.png" width="700px" title="Node and Path Profilers (v4.3)" />
 
-Uses voxel intensities values under path nodes to generate *Intensity vs. Distance* plots for selected Path(s). Refer to the prompt's mouse over tooltips for details.
-<div align="center">
-    <img src="/media/plugins/snt/snt-path-profile.png" width="500" title="Path profile (v4.1)" />
-</div>
+Displays across-section profile of the path. The X-axis represents distance across the path and the Y-axis a measure of pixel intensity. Pixel Intensities are retrieve using a 'shaped cursor' described in [Path Profiler...](#path-profiler).
+
+### Path Profiler...
+
+Displays an XY, *Intensity vs. Distance* plot of the intensities of pixels along path(s). The X-axis represents distance along the path and the Y-axis a measure of pixel intensity. Pixel Intensities are retrieve using a 'shaped cursor' that collects intensities at each path node. It is defined by two parameters:
+
+- *Shape* The geometric shape centered at each node from which intensities are retrieved. Options include: **Circle (hollow)**, **Disk (filled)**, **Sphere (filled)**, **2D line** or **None**.
+NB:
+   - Shapes are always centered at the node
+   - Shapes are assembled orthogonally to the path in the node's plane. E.g., If *2D line*, intensities are retrieved along a line perpendicular to the path at the node's location (i.e., similar to the way radii of traced paths are rendered in the tracing image)
+   - If *None* is selected, a single intensity is retrieved at the node 
+
+- *Radius* The radius (in pixels) of the shape, or half-length if shape is *2D Line*. If set to zero and the path has radii, each shape is resized to the radius of its node.
+
+- *Integration metric* The statistics (Mean, Median, Sum, etc.) integrating pixel intensities within *shape*.
 
 #### Spine/Varicosity Utilities ›
 
@@ -738,10 +767,11 @@ The filter toolbar allows paths to be searched and filtered quickly using tags (
 - **Color Filters** ![](/media/plugins/snt/snt-text-filter-color-button.png) Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 
 - **Morphology Filters** ![](/media/plugins/snt/snt-text-filter-morphology-button.png) Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {% include bc path='Tag|Morphology| ' %}.
-<img align="right" width="400px" src="/media/plugins/snt/snt-path-manager-text-filter-color-filters.png" title="Filtering by color tags (v3.0)" />
-
+  
+  <img align="right" width="400px" src="/media/plugins/snt/snt-path-manager-text-filter-color-filters.png" title="Filtering by color tags (v3.0)" />
+  
   - *Path Order...* Filters for Paths of [Path order](/plugins/snt/analysis#path-order-analysis) in the inputted range. Example queries: `1-2`: selects all primary and secondary paths; `max-max`: selects all terminal paths.
-
+  
   - *Length...* Filters for Paths of length within the inputted range. Example queries: `10-20`: selects all Paths with lengths between 10 and 20μm; `max-max`: selects the longest path(s).
   
   - *Mean Radius...* Filters for Paths of mean radius within the inputted range.
@@ -753,6 +783,7 @@ The filter toolbar allows paths to be searched and filtered quickly using tags (
 ## Contextual Menu
 
 The Path Manager contextual menu offers convenience options to sort Paths, collapse/expand selections, and access children of Paths.  
+
 # Fill Manager
 
 Provides controls for all filling operations. It is described in more detail in the [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
