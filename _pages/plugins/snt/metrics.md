@@ -266,7 +266,7 @@ Quantification of neuronal morphology
 Any area in the nervous system. The cellular tissue around neuronal processes
 
 ###### Out-of-core
-Software with out-of-core capabilities is able to process data that is too large to fit into a computer’s main memory
+Software with out-of-core capabilities is able to process data that is too large to fit into a computer’s main memory. SNT supports out-of-core tracing via scripting.
 
 ###### Reconstruction
 See [Tracing](#tracing)
