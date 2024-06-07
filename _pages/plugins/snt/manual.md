@@ -226,7 +226,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 
 ### Cursor Auto-snapping
 
-**Enable Snapping checkbox** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
+**Enable Snapping** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position, searches quickly for local maxima in that neighborhood, and moves the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
 <img align="right" width="300" src="/media/plugins/snt/cursor-snap.png" title="Cursor auto-snapping in 2D or 3D" />
 
@@ -380,13 +380,6 @@ This tab aggregated widgets for advanced settings.
   <img src="/media/plugins/snt/op1-with-mip.png" title="OP1 demo dataset with MIP overlay at 30%" width="250" alt="Image with MIP overlay at 30%" />
 </div>
 
-- **Draw diameters in XY view** Displays the stored diameter (if any) in the XY view for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
-
-<div align="center">
-    <img src="/media/plugins/snt/draw-diameters-disabled.png" title="Draw diameters - disabled" width="200" alt="Draw diameters - disabled" />
-    <img src="/media/plugins/snt/draw-diameters-enabled.png" title="Draw diameters - enabled" width="200" alt="Draw diameters - enabled" />
-</div>
-
 - **Apply zoom changes to all views** If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views if they are open. Since in ImageJ zooming may resize the image window, you can use {% include bc path='Views|Arrange Views' %} to reset their positions
 
 - **Resize Canvas** If using a display canvas to view reconstructions, reset its dimensions to the default. Currently, this command is only available for display canvases, to resize an image go to IJ's command {% include bc path='Image | Adjust | Canvas Size...' %}
@@ -395,35 +388,54 @@ This tab aggregated widgets for advanced settings.
 
 ### Temporary Paths
 
-- **Confirm temporary segments** If active, prompts for either confirmation or denial of whether to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
+- **Confirm temporary segments** If active, prompts for either confirmation or denial of whether to keep an unconfirmed path segment. If inactive, automatically confirms the path segment created on each subsequent node placement after starting a path. Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active:
   
   - **Pressing 'Y' twice finishes path** Finish a temporary path on two successive {% include key key='Y' %} key presses.
   - **Pressing 'N' twice cancels path** Discard a temporary or unconfirmed path, including the start node, on two successive {% include key key='N' %} key presses.
 
-### UI Interaction
+- **Finishing a path selects it**
+Wether a path should be automatically selected once finished.
 
+- **Require 'Shift' to branch off a path**
+If selected the default shortcutfor branching off a path ( {% include key key='Alt|Left-click' %} ) becomes {% include key key='Shift|Alt|Left-click' %}, which avoids conflict with OS-level shortcuts (in several Linux distributions, {% include key key='Alt|Left-click' %} is a common shortcut for dragging windows around the screen).
+
+### Path Rendering
+
+- **Draw diameters** Displays the stored diameter (if any) in the XY view for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
+
+<div align="center">
+    <img src="/media/plugins/snt/draw-diameters-disabled.png" title="Draw diameters - disabled" width="200" alt="Draw diameters - disabled" />
+    <img src="/media/plugins/snt/draw-diameters-enabled.png" title="Draw diameters - enabled" width="200" alt="Draw diameters - enabled" />
+</div>
+
+- **Rendering scale** Adjusts the radius of the drawn circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation. The default scale is inferred from the current zoom level.
+
+- **Centerline opacity (%)**
+The render opacity (in percentage) for node diameters and segments connecting path nodes.
+
+- **Out-of-plane opacity (%)**
+The render opacity (in percentage) for path segments that are above/below the active Z-plane. It is only considered when tracing 3D images and [visibility filters](#filters-for-visibility-of-paths) are set to
+_Only nodes within {x} nearby Z-slices_.
+
+
+### Misc 
 - **Colors** Specifies how components should be rendered, including:
-  
   - **Canvas annotations** The label shown in the top-left corner of the views indicating the state of the UI ("Tracing Paused", "Choosing Sigma", etc.)
   - **Fills** The pixels that have been reached by the Fill search
   - **Unconfirmed** and **Temporary** paths.
 
-- **Path nodes rendering scale** Adjusts the radius of the drawn circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation. The default scale is inferred from the current zoom level.
-
 - **Activate canvas on mouse hovering** If active, moving the mouse cursor over any of the views automatically brings the view window into focus, allowing it to receive input.
-
-### Misc
 
 - **Skip confirmation dialogs** If active, disables the "*Are you sure?*" prompt preceding major actions. Note that this option does not apply to irreversible actions such as deleting paths.
 
 - **Debug mode** If active, logs detailed information about actions in the console.
 
 - **Preferences...** Allows setting other options, namely:
-  
   - Whether the position of dialogs should be remembered across restarts
   - Whether {% include wikipedia title="Gzip" %} compression (lossless) should be used to reduce the storage footprint of ".traces" files.
   - The max number of parallel threads to be used by SNT, as specified in ImageJ's {% include bc path='Edit|Options|Memory & Threads...' %}
   - *Reset All Preferences...* Resets all options to their default values. A restart of SNT may be required for changes to take effect.
+
 
 ## 3D Tab
 
@@ -444,40 +456,86 @@ The Legacy 3D Viewer is a functional tracing canvas, but it depends on outdated 
 
 # Contextual Menu
 
-{% include img align="left" width="250" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
+{% include img align="right" width="250" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
 
 Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. The list includes:
 
-**Select Nearest Path** {% include key key='G' %} Will select the path closest to the mouse cursor. Pressing {% include key keys='Shift|G' %} will keep adding the closest path to the existing path selection
+## Path Selection
 
-**Select Paths by 2D ROI** A convenience utility to select path(s) quickly (but coarsely). One the command is run, it is possible to "draw" an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
+#### Select Nearest Path {% include key key='G' %}
+Selects ("<u>G</u>roups") the path closest to the mouse cursor.
 
-**Fork at Nearest Node** {% include key keys='Shift|Alt|Left Click' %} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path).
+#### Add Nearest Path to Selection {% include key key='Shift|G' %}
+Keeps appending the closest path to the existing path selection.
 
-**Continue Extending Path** Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
+#### Select Paths by 2D ROI
+A convenience utility to select path(s) quickly (but coarsely). One the command is run, it is possible to "draw" an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
 
-**Pause SNT** Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](#ui-interaction) to indicate this state.
+## Tracing
 
-**Pause Tracing** Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+#### Click on Brightest Voxel Above/Below Cursor {% include key key='V' %}
+Finds the brightest Voxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background.
 
-**Sholl Analysis at Nearest Node** {% include key keys='Shift|Alt|A' %} Described in [Analysis › Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis-by-focal-point).
+#### Continue Extending Path
+Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
+
+#### Fork at Nearest Node {% include key keys='Alt|Left Click' %}
+Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path). Note that the shortcut can be set to {% include key keys='Shift|Alt|Left Click' %} in the [Options tab](#temporary-paths).
+
 
 ### Editing Paths
 
 <img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v4.2)" width="300" />
 Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlocking the menu options under *Edit Path*. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
 
-- **Bring Active Node to Current Z-plane** {% include key key='B' %} Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
-- **Delete Active Node** {% include key key='D' %} or {% include key key='Backspace' %} Permanently removes the active node from the path.
-- **Insert New Node At Cursor Position** {% include key key='I' %} Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
-- **Lock Active Node**  {% include key key='L' %} Ensures the active node won't change on cursor movement. Useful for e.g., ensuring that a merge operation is not affected by accidental cursor movement.
-- **Move Active Node to Cursor Position** {% include key key='M' %} Moves the active node to the cursor location.
-- **Set Active Node Radius...** {% include key key='R' %} Allows radius of active node to be modified. Options include: 1) Assign a specific value or a scaling factor; 2) half of the minimum voxel size; 3) The average radius of flanking nodes; or 4) the average path radius
-- **Tag Active Node...** Assigns a color tag to the active node. Note paths with color-coded nodes may be rendered differently from default paths in terms of opacity, rendering scale, etc.
-- **Connect To (...)** {% include key key='C' %} Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
-- **Split Tree at Active Node** {% include key key='X' %} Splits the current tree into two subtrees by disconnecting the active node from its parent structure
-- **Reset Active Node** Clears the active node
-- **Set Active Node as Tree Root** Reorganizes the existing tree so that the active node becomes its root.
+##### Bring Active Node to Current Z-plane {% include key key='B' %}
+Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
+
+##### Connect To (...) {% include key key='C' %}
+Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
+
+##### Delete Active Node {% include key key='D' %}
+Removes the active node from the path.
+
+#### Insert New Node At Cursor Position {% include key key='I' %}
+Inserts a new node at the cursor position. The inserted node is placed between the active node and its parent.
+
+#### Lock Active Node  {% include key key='L' %}
+Ensures the active node won't change on cursor movement. Useful for e.g., ensuring that a merge operation is not affected by accidental cursor movement.
+
+#### Move Active Node to Cursor Position {% include key key='M' %}
+Moves the active node to the cursor location.
+
+#### Set Active Node Radius... {% include key key='R' %}
+Allows radius of active node to be modified. Options include: 1) Assign a specific value or a scaling factor; 2) half of the minimum voxel size; 3) The average radius of flanking nodes; or 4) the average path radius.
+
+#### Split Tree at Active Node {% include key key='X' %}
+Splits the current tree into two subtrees by disconnecting the active node from its parent structure
+
+#### Reset Active Node
+Clears/Deselects the active node.
+
+#### Set Active Node as Tree Root
+Reorganizes the existing tree so that the active node becomes its root.
+
+#### Tag Active Node...
+Assigns a color tag to the active node. Note paths with color-coded nodes may be rendered differently from default paths in terms of opacity, rendering scale, etc.
+
+
+### Actions
+
+#### Count SPines/Varicosities
+Described in [Spine/Varicosity Analysis](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis).
+
+#### Sholl Analysis at Nearest Node {% include key keys='Shift|Alt|A' %}
+Described in [Analysis › Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis-by-focal-point).
+
+#### Pause Tracing {% include key keys='Shift|P' %}
+Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+
+#### Pause SNT
+Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](#ui-interaction) to indicate this state.
+
 
 # Path Manager
 
@@ -573,12 +631,15 @@ Information on hyperstack position details (e.g., channel, frame or slice labels
 
 Morphometric properties, such as *Path length*, *Path mean radius* or *[Path order](/plugins/snt/analysis#path-order-analysis)*.
 
-#### Custom...
+#### Other...
 
-Ad-hoc comments as tags.
+<img align="right" src="/media/plugins/snt/snt-replace-tags.png" title="Replace Tag(s)" width="300" alt="Replace tags" />
+Ad-hoc tag(s) can be typed in a dialog prompt (comma-separated list supported).
+
+#### Replace...
+Allows existing tag(s) to be replaced/swapped by new values. Note that SWC-type tags are not affected by this command.
 
 #### Remove Tags...
-
 Allows tags to be removed. Note that SWC-type tags are not affected by this command. 
 
 <span id="refinefit"></span>
@@ -731,7 +792,7 @@ Plots a Path metric against several others.
 ### Node Profiler...
 <img align="right" src="/media/plugins/snt/snt-node-and-path-profiler.png" width="700px" title="Node and Path Profilers (v4.3)" />
 
-Displays across-section profile of the path. The X-axis represents distance across the path and the Y-axis a measure of pixel intensity. Pixel Intensities are retrieve using a 'shaped cursor' described in [Path Profiler...](#path-profiler).
+Displays a cross-section profile of the path. The X-axis represents distance across the path and the Y-axis a measure of pixel intensity. Pixel Intensities are retrieve using a 'shaped cursor' described in [Path Profiler...](#path-profiler).
 
 ### Path Profiler...
 
