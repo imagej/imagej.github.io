@@ -336,14 +336,14 @@ To transfer annotations or detections from one image to another:
      org="BIOP"
      repo="qupath-extension-warpy"
      branch="main"
-     path="src/main/resources/scripts/Warpy_transfer_annotations_and_detections_to_current_entry.groovy"
+     path="src/main/resources/scripts/Transfer_annotations_and_detections_to_current_entry.groovy"
      label="Transfer annotations" %}
 
 {% include code
      org="BIOP"
      repo="qupath-extension-warpy"
      branch="main"
-     path="src/main/resources/scripts/Warpy_transfer_TMA_to_current_entry.groovy"
+     path="src/main/resources/scripts/Transfer_TMA_to_current_entry.groovy"
      label="Transfer TMAs" %}
 
 The above scripts consists of two parts:
