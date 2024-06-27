@@ -9,12 +9,6 @@ update-site: Neuroanatomy
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 
-# Brain Area Analysis
-See [Graph-based Analysis](#graph-based-analysis).
-
-# Convex Hull Analysis
-_Convex hull_ commands (in SNT  main dialog, [Rec. viewer](/plugins/snt/reconstruction-viewer) and [Rec. plotter](/plugins/snt/manual#plotter)) compute the 2D or 3D convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains the nodes of its paths). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size).
-
 # Measurements
 
 SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure'%} in Reconstruction Viewer). A simplified _Quick Measurements_ variant of this command also exists, in which common metrics are immediately retrieved using default settings. To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in the Path Manager's {% include bc path='Analyze|Measurements'%} menu.
@@ -33,6 +27,12 @@ If this becomes an issue, consider fitting paths in situ using the Replace exist
 SNT assembles comparison reports and simple statistical reports (two-sample t-test/one-way ANOVA) for up to six groups of cells. This is described in [Comparing Reconstructions](#comparing-reconstructions). In addition, descriptive statistics are commonly reported in histograms from *Frequency/Distribution Analysis* commands.
 
 {% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png" caption="Example of histograms obtained from the Path Manager's _Branch-based Distributions..._ command."%}
+
+# Convex Hull Analysis
+_Convex hull_ commands (in SNT  main dialog, [Rec. viewer](/plugins/snt/reconstruction-viewer) and [Rec. plotter](/plugins/snt/manual#plotter)) compute the 2D or 3D convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains the nodes of its paths). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size).
+
+# Brain Area Analysis
+See [Graph-based Analysis](#graph-based-analysis).
 
 <span id="dendrogram-viewer"></span>
 # Graph-based Analysis
@@ -133,16 +133,31 @@ To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current conten
 {% include img align="center" src="/media/plugins/snt/strahler-analysis-from-reconstructions.png" caption="Strahler Analysis detailed output."%}
 
 # Path Order Analysis
-
 Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option is a variant of Strahler with the following differences:
 
 - Classification is based on _Path Order_: Paths are the scope of classification (not branches)
 - Ranking of orders is reversed relatively to Strahler analysis (reversed Strahler orders), with primary paths having _order 1_ and terminal paths having the highest order
 - Classification accepts _any_ structure: Since classification is path-based, there are no topological constrains in the analysis. While Strahler requires structures to be valid mathematical trees, Path order analysis can be performed on any structures, even those with loops
 
-# Persistence Analysis
+# Persistence Homology
 
-Currently, persistence analysis is only available via [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](/plugins/snt/scripting#python-notebooks).
+Persistent homology computes topological features of neuronal reconstructions at different spatial resolutions, which in turn can be used to obtain topological signatures of their branching patterns. The Topological Morphology Descriptor (TMD) is the first published algorithm to use persistence Homology to describe neuronal arbors. It is described in:
+
+{% include img align="right" name="Persistence landscape for a single cell (ML neuron #AA0039)" src="/media/plugins/snt/snt-persistence-landscape.png" %}
+
+Kanari, L., Dłotko, P., Scolamiero, M., Levi, R., Shillcock, J., Hess, K., & Markram, H. (2017). A Topological Representation of Branching Neuronal Morphologies. Neuroinformatics, 16(1), 3–13. [doi:10.1007/s12021-017-9341-1](https://doi.org/10.1007/s12021-017-9341-1)
+
+SNT implements TMD and TMD "variants" by supporting several descriptor functions:
+- Radial: Uses the Euclidean (i.e., "straight line") distance between a node and the tree's root, as used in the original Kanari et al. study 
+- Geodesic: Uses the "path" distance between a node and the tree's root
+- Path order: Uses the [Path order](#path-order-analysis) of a node
+- Coordinates: Uses the X, Y, or Z coordinate of a node
+
+In addition, SNT also implements descriptors based on persistence landscapes, as described in:
+
+Bubenik, P. (2012). Statistical topological data analysis using persistence landscapes (Version 4). ArXiv. [doi:10.48550/ARXIV.1207.6437](https://doi.org/10.48550/ARXIV.1207.6437)
+
+Currently, persistence homology descriptors can be computed via [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
 
 # Comparing Reconstructions
 
@@ -161,6 +176,5 @@ The dialog  prompt for this feature allows selection of up to six directories co
 
 {% include notice icon="info" content="SNT performs statistical tests without verifying if samples fulfill basic test-criteria (e.g., normality, variance homogeneity, sample size, etc.)" %}
 
-# Custom Analyses
-
-It is possible to script your own analysis routines. See [SNT Scripting](/plugins/snt/scripting) for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
+# Specialized Analyses
+See [SNT Scripting](/plugins/snt/scripting), as well as script templates demonstrating a range of analysis possibilities.
