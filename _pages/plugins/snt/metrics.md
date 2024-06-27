@@ -12,11 +12,13 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 
 ## Metrics
 {% capture text%}
-**This list reflects only default measurements and is [not exhaustive](#notes). For each metric SNT retrieves the descriptive statistics _Mix_, _Max_, _Mean_, _Standard Deviation_ (SD), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements.<br>
+**This list is mainly focused on default measurements available through SNT's GUI and does not include specialized metrics available via its scripting API. Thus, it only captures [a subset](#notes) of the full repertoire of SNT metrics.**<br>
+
+**For each metric SNT retrieves the descriptive statistics _Mix_, _Max_, _Mean_, _Standard Deviation_ (SD), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements.<br>
 E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
 <br>
 <br>
- Also, please note that some of the metrics described here have been ported from [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm): {% include citation doi='10.1038/nprot.2008.51' %}
+ Also, please note that some of the metrics described here have been ported from published literature including [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm): {% include citation doi='10.1038/nprot.2008.51' %}
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
@@ -92,7 +94,7 @@ The squared distance between nodes defining a branch or a Path. Alternative to _
 The sum of branch lengths of branches of highest Strahler order. Typically, these correspond to the most 'internal' branches of an arbor, in direct sequence from the root. Note that_Primary branches_ are _inner branches_ starting at the tree's root.
 
 ###### Length of longest shortest path
-Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _Length of longest shortest path_ corresponds to the [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html). Note that this metric can only be computed for structures that are valid mathematical trees.
+Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _Length of longest shortest path_ corresponds to the [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html) (longest graph geodesic). Note that this metric can only be computed for structures that are valid mathematical trees.
 
 ###### Length of primary branches
 The sum of branch lengths of primary (or root-associated) branches. Primary branches have origin in a tree's root, extending to the closest branch point or end-point, i.e., they are _inner branches_ starting at the root. Note that a primary branch can also be terminal.
@@ -100,9 +102,13 @@ The sum of branch lengths of primary (or root-associated) branches. Primary bran
 ###### Length of terminal branches
 The sum of branch lengths of branches ending at terminal endpoints (tips)
 
+<span id="m"></span>
+###### Maximum geodesic
+Same as [Length of longest shortest path](#length-of-longest-shortest-path)
+
 <span id="n"></span>
 ###### No. of branch nodes (branch fragmentation)
- The total number of nodes (and thus _compartments_) in a branch
+The total number of nodes (and thus _compartments_) in a branch
 
 ###### No. of branch points
 The total number (count) of branch points (also known as fork points)
@@ -177,6 +183,12 @@ _Estimated_ surface area[^1] of a path computed from treating each internode seg
 ###### Path volume
 _Estimated_ volume[^1] of a path computed from treating each internode segment as a conical frustum and summing the volume of all frusta
 
+###### Persistence diagram
+See [persistence homology](/plugins/snt/analysis#persistence-homology)
+
+###### Persistence landscapes
+See [persistence homology](/plugins/snt/analysis#persistence-homology)
+
 <span id="r"></span>
 ###### Remote bif. angles
 The angle between each bifurcation point and its children in the simplified graph, which comprise either branch points or terminal nodes. Note that branch points with more than 2 children are ignored.
@@ -221,20 +233,26 @@ See [Sum inters.](/plugins/sholl-analysis#sum) in [Sholl › Metrics based on sa
 ###### Surface area
 Treating each internode segment as a conical frustum, the sum of the surface areas[^1] of all frusta
 
+<span id="t"></span>
+###### TMD
+Topological Morphology Descriptor. See [persistence homology analysis](/plugins/snt/analysis#persistence-homology)
+
 <span id="v"></span>
 ###### Volume
 Treating each internode segment as a conical frustum, the sum of the volume[^1] of all frusta
 
+<span id="w"></span>
 ###### Width
 The width of the bounding box embedding the structure being measured
 
+<span id="x"></span>
 ###### X,Y,Z coordinates
 Cartesian coordinates in the three-dimensional space
 
 ##### Notes
-- This list does not include specialized metrics provided by dedicated SNT plugins, such as [Strahler](/plugins/snt/analysis#strahler-analysis) or [Sholl](/plugins/snt/analysis#sholl-analysis)
-- Some combinations of metrics/statistics may not be meaningful: e.g., if you are only measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one value has been computed. In this case, the Measurements table will append '[Single metric]' to such data
-- Each of the 60+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$60\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- This list does not include specialized metrics provided by dedicated SNT modules, such as [Strahler](/plugins/snt/analysis#strahler-analysis), [Sholl](/plugins/snt/analysis#sholl-analysis), [Persistence diagrams/landscapes](/plugins/snt/analysis#persistence-homology), or [Graph-based](/plugins/snt/analysis#graph-based-analysis) analysis
+- Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
+- Each of the ~70 metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$70\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 - Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/step-by-step-instructions#filling)
 

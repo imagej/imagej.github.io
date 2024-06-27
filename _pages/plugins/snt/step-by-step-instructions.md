@@ -85,14 +85,15 @@ From this point on, you can carry on adding nodes to the branched path as [above
 
 ## Accurate Point Placement
 {% include notice icon="info" content=op1-demo-incomplete %}
+Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views to be visible. You can do so at <a href="/plugins/snt/manual#startup-prompt">startup</a>, by making sure that <em>Default: XY, ZY and XZ views</em> is selected, or by clicking in <em>Display ZY/XZ Views</em> in the <a href="/plugins/snt/manual#options-tab">Options tab</a> if you have already started SNT.
 <table>
   <tbody>
     <tr style="background-color:white">
       <td>
-        <p>Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views to be visible. You can do so at <a href="/plugins/snt/manual#startup-prompt">startup</a>, by making sure that <em>Default: XY, ZY and XZ views</em> is selected, or by clicking in <em>Display ZY/XZ Views</em> in the <a href="/plugins/snt/manual#options-tab">Options tab</a> if you have already started SNT.</p>
+        <p></p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-three-pane-view-enabled-startup-prompt.png" width="300">
+        <img src="/media/plugins/snt/snt-three-pane-view-enabled-startup-prompt.png" width="300px">
       </td>
     </tr>
     <tr style="background-color:white">
@@ -101,7 +102,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         <p>At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image. When this option is enabled, the cursor will automatically 'sniff' for local maxima and 'snap' to their average X,Y,Z position. The pixel that is most likely to be on a neurite is indicated by the red cross-hair cursor.</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" width="300">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" width="300px">
       </td>
     </tr>
     <tr style="background-color:white">
@@ -111,7 +112,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         <p>Note that when Z-snapping is enabled, all views become synchronized,</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="300">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="300px">
       </td>
     </tr>
     <tr style="background-color:white">
@@ -120,7 +121,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" width="300">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" width="300px">
       </td>
     </tr>
     <tr style="background-color:white">
@@ -128,7 +129,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         <p>Zoom out again with the {% include key key='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" width="300">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" width="300px">
       </td>
     </tr>
     <tr style="background-color:white">
@@ -136,7 +137,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         <p>The path along the neuron may not follow the center line perfectly:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" width="300">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" width="300px">
       </td>
     </tr>
     <tr style="background-color:white">
@@ -144,7 +145,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
         <p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-6.png" width="300">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-6.png" width="300px">
       </td>
     </tr>
   </tbody>
@@ -284,18 +285,22 @@ There are two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) 
 {% endcapture %}
 {% include notice icon="info" content=timelapse-demo %}
 
-1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget
+1. The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts. You can run it from Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Apply 3D Drift Corrections...' %} if your image is small, but if your time-lapse video is rather large it is recommended that you run registration routines _before_ loading the image in SNT to avoid running out of RAM. The illustration below highligths the type of mitigation you should expect:
 
-2. Trace the path of interest
+{% include img align="center" name="Drift correction" src="/media/plugins/snt/snt-timelapse-drift-correction.png" caption="**Mitigation of motion artifacts**. Left: Original time-lapse sequence (time projection). Right: Projection of the same time-lapse after 3D drift correction. Neurite displacements are color coded with warmer hues indicating higher motility (arbitrary scale). Note how lateral motion of the soma and of the longest extending neurite (lower left) has been minimized." %}
 
-3. Repeat 1. and 2. for all the frames to be traced. There are a couple of ways to expedite tracing across frames:
+2. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget
+
+3. Trace the path of interest. This can be done manually or perhaps automated via a script (see below)
+
+4. Repeat 1. and 2. for all the frames to be traced. There are a couple of ways to expedite tracing across frames:
 
    - Duplicate the path(s) of interest using Path Manager's {% include bc path='Edit|[Duplicate...](/plugins/snt/manual#duplicate)' %} This will allow you to copy a path (and its children) to a new frame (or channel). If a neurite is retracting, you can duplicate the subsection of the path that better matches the retracted neurite: e.g., by restricting the duplication to a fraction of the path's total length, or up to a branch-point
 
    - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset...' %})
    <img align="right" src="/media/plugins/snt/snt-match-paths-across-time.png" title="MatchPath(s) Across Time... prompt" width="350" alt="MatchPath(s) Across Time... prompt" />
 
-4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
+5. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
 
     - **Frame range** Only paths associated with these frames will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
 
@@ -311,7 +316,7 @@ There are two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) 
       
     - NB: Note that any mistakes by the matching algorithm can be corrected by editing _neurite#_ tags manually
    
-5. Once paths have been matched across the time-lapse to common neurites, future analysis becomes simplified. {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} can be used to e.g. plot growth across time. {% include bc path='Time Profile...' %} includes the following options:
+6. Once paths have been matched across the time-lapse to common neurites, future analysis becomes simplified. {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} can be used to e.g. plot growth across time. {% include bc path='Time Profile...' %} includes the following options:
 
       - **Metric** the measurement to be profiled across time
 

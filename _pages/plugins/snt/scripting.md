@@ -65,7 +65,7 @@ Some of SNT's functionality is conveniently accessible in the [Script Interprete
 
 Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PyImageJ](/scripting/pyimagej) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/-/notebooks) directory in the SNT repository contains several examples at different complexity levels.
 
-Here, we will only exemplify basic functionality. Please refer to the complete [examples](https://github.com/morphonets/SNT/tree/-/notebooks) for more details. Once the Python environment is properly [setup](https://github.com/morphonets/SNT/tree/-/notebooks#snt-notebooks), one can initialize Fiji:
+Here, we will only exemplify basic functionality. Please refer to the complete [notebook examples](https://github.com/morphonets/SNT/blob/main/notebooks/) for more details. Once the Python environment is properly [setup](https://github.com/morphonets/SNT/tree/-/notebooks#snt-notebooks), one can initialize Fiji:
 
 {% highlight python %}
 import imagej

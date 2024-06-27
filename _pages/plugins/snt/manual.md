@@ -255,7 +255,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 
 - **Fast marching**: Provided by [Tubular Geodesics](/plugins/snt/tubular-geodesics), an external SNT add-on 
   
-  Independently of the algorithm used, the gear menu in this pane provides options to tweak the performance, accuracy and footprint of the computations involved in the search. These include:
+  Independently of the algorithm used, the algorithm drop-down menu in this pane provides options to tweak the performance, accuracy and footprint of the computations involved in the search. These include:
   
   - **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower footprint), or _Array_ (slightly faster, but higher footprint)
   
@@ -281,9 +281,11 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 
 <span id="tracing-on-secondary-image"></span>
 <img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-menu.png" title="Secondary layer controls" />
-This is one of SNT's most advanced and useful features. The [default auto-tracing](#Auto-tracing) provides a convenient and easy way to detect structures by their likelihood of *belonging* to a tube-like structure (such as a neurite). However, it is just _one_ approach for "tube-like" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in SNT? *Tracing on Secondary Layer* is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A\* star search will operate. Because this option can be toggled at will, it becomes a secondary _layer_ for auto-tracing: E.g., you may decide to auto-trace certain neurites on the original image, while tracing other neurites on the secondary layer.
+This is one of SNT's most advanced and useful features. The [default auto-tracing](#Auto-tracing) provides an immediate way to detect structures by their likelihood of *belonging* to a tube-like structure (such as a neurite). However, it is just _one_ approach for "tube-like" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect processing algorithm for your images is not yet available in SNT?
 
-For the most part the secondary layer remains hidden because feedback on auto-tracing searches is always provided in the original image. When RAM is not limited, one can ping-pong between _secondary_ and _original_ image simply, by pressing {% include key key='L' %}, the shortcut for the _Trace/Fill on Secondary **L**ayer_ checkbox. Here are some specific usages for this feature:
+*Tracing on Secondary Layer* is the answer to these questions: It allows you to feed SNT with a pre-processed image on which the A\* star search will operate. Because this option can be toggled at will, it becomes a secondary _layer_ for auto-tracing: E.g., you may decide to auto-trace certain neurites on the original image, while tracing other neurites on the secondary layer.
+
+For the most part, the secondary layer remains hidden because feedback on auto-tracing searches is always provided in the original image. When RAM is not limited, one can ping-pong between _secondary_ and _original_ image simply, by pressing {% include key key='L' %}, the shortcut for the _Trace/Fill on Secondary **L**ayer_ checkbox. Here are some specific usages for this feature:
 
 - **Frangi *Vesselness* filtering** For certain datasets [Frangi](/plugins/frangi) filtering  is quite effective at enhancing tubular structures. However, it is more computation intensive, and thus, less suitable to be adopted by "compute-as-needed" approaches. Thus, Frangi-filtering can be computed once for the whole image, and the result loaded as secondary layer
 
@@ -295,11 +297,11 @@ For the most part the secondary layer remains hidden because feedback on auto-tr
 
 <img align="right" width="400" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" title="Secondary layer wizard" />
 
-Secondary layers are created/load using the second *gear* drop-down menu in the auto-tracing panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
+Secondary layers are created/load using the "Layers" drop-down menu in the auto-tracing panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
 
 The wizard needs two types of information from the user: The type of filtering operation and the size(s) (scale(s)) of the structures being traced, which control the spatial scale of the filter (known as σ).
 
-- **Filter** The filtering operation, including  *Frangi*, *Tubeness*, *Gaussian blur* and *Median*. Note rh.
+- **Filter** The filtering operation, including *Frangi*, *Tubeness*, *Gaussian blur* and *Median*. Note rh.
   
   - **Tubeness** This corresponds to the _Hessian-based analysis_ of older SNT versions. This filter enhances tube-like structures in the image, using an improved [Tubeness](/plugins/tubeness) approach, modified to support multiple scale(s)
   
@@ -327,9 +329,9 @@ NB: The wizard also allows you to use a backup copy of the image being traced as
 </div>
 #### Loading Secondary layers
 
-The second *gear* drop-down menu in the auto-tracing panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images) walk-through for more details.
+The "Layers" drop-down menu in the auto-tracing panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images) walk-through for more details.
 
-The same menu also provides options to import a [Weka](/plugins/tws) model. In the latter, the model is applied to the image being traced, and the resulting 'p-map' is loaded as secondary layer.
+The same menu also provides options to import a [Labkit/Weka](./machine-learning) model. In this case the model is applied to the image being traced, and the resulting 'p-map' is loaded as secondary layer.
 
 ### Filters for Visibility of Paths
 
@@ -356,7 +358,7 @@ Any custom color tags will be ignored until the option is toggled off. Note that
 The [Path Manager](#path-manager) offers several ways to colorize Paths:
 
 1. Using {% include bc path='Tag | Color' %} swatches (custom colors can be temporarily assigned to empty swatches, by right-clicking on them)
-2. Using {% include bc path='Analyze|Color Coding...' %}, providing morphometric-based [color mapping](#analyze).
+2. Using {% include bc path='Analyze|Color Mapping...' %}, providing morphometric-based [color mapping](#analyze).
 
 <center>
   {% include img src="path-manager-color-tag" width=272 %}
@@ -456,11 +458,11 @@ The Legacy 3D Viewer is a functional tracing canvas, but it depends on outdated 
 
 # Contextual Menu
 
-{% include img align="right" width="250" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
-
 Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. The list includes:
 
 ## Path Selection
+
+{% include img align="right" width="250" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
 
 #### Select Nearest Path {% include key key='G' %}
 Selects ("<u>G</u>roups") the path closest to the mouse cursor.
@@ -531,10 +533,10 @@ Described in [Spine/Varicosity Analysis](/plugins/snt/step-by-step-instructions#
 Described in [Analysis › Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis-by-focal-point).
 
 #### Pause Tracing {% include key keys='Shift|P' %}
-Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](/plugins/snt/manual#ui-interaction) to indicate this state.
+Disables tracing functions until this option is deselected. Tracing views are annotated with the *Tracing Paused* [label](#misc) to indicate this state.
 
 #### Pause SNT
-Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](#ui-interaction) to indicate this state.
+Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the *SNT Paused* [label](#misc) to indicate this state.
 
 
 # Path Manager
@@ -621,7 +623,7 @@ Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as per [
 
 #### Color ›
 
-A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign unique (distinctive) colors to a group of paths. Metric-based color mapping can also be applied using the {% include bc path='Analyze|Color Coding...' %} command. Note that paths containining multiple colors (e.g., after node color coding or after tagging invidivual noder) are asssigned a multi-color gradient icon in the Path Manager list.
+A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign unique (distinctive) colors to a group of paths. Metric-based color mapping can also be applied using the {% include bc path='Analyze|Color Mapping...' %} command. Note that paths containining multiple colors (e.g., after node color mapping or after tagging invidivual noder) are asssigned a multi-color gradient icon in the Path Manager list.
 
 #### Image Properties ›
 
@@ -656,9 +658,9 @@ SNT can use the fluorescent signal around traced Paths to optimize curvatures an
 Assuming you chose to fit both centroids and radii, a fitted path might look like the rightmost image below. Notice how the nodes follow the center line of the structure more closely, and how each node now has a non-zero radius approximating that of the traced axon.
 
 <div align="center">
-    <img src="/media/plugins/snt/fit-parameter-prompt.png" title="Fitting parameters" height="330" alt="Fitting parameters" />
-    <img src="/media/plugins/snt/before-fitting.png" title="Before fitting" height="330" alt="Before fitting" />
-    <img src="/media/plugins/snt/after-fitting.png" title="Fitted path" height="330" alt="Fitted path" />
+    <img src="/media/plugins/snt/fit-parameter-prompt.png" title="Fitting parameters" height="330px" alt="Fitting parameters" />
+    <img src="/media/plugins/snt/before-fitting.png" title="Before fitting" height="330px" alt="Before fitting" />
+    <img src="/media/plugins/snt/after-fitting.png" title="Fitted path" height="330px" alt="Fitted path" />
 </div>
 
 The {% include bc path='Refine/Fit|' %} menu contains several commands:
@@ -707,7 +709,7 @@ This command sets fitting options and should be run before computing a fit. Opti
 
 #### Correct Radii...
 
-<img align="right" width="500" src="/media/plugins/snt/correct-radii.png" title="Correct Radii..." />
+<img align="right" width="550px" src="/media/plugins/snt/correct-radii.png" title="Correct Radii..." />
 If the fitting fails at a certain location (e.g., because the shape of the cross-section is too irregular, or because the fitted centroid is too far off) the program will skip that node moving on to the next. Skipped nodes will retain their original coordinates but their radius may become unset (see _Radius fallback_ in [parameters](#parameters)). This command collects such nodes from selected paths, and assigns them new radii using linear interpolation based on remaining nodes with valid radii. It can apply the interpolation immediately, or simply preview it. Note that by default _NaN_ and negative values are always corrected. The criterion specified in the prompt is used as an extra correction condition.
 
 ### Fill ›
@@ -755,21 +757,21 @@ Uses selected Path(s) to train -- in [TWS](/plugins/tws) -- a random forest clas
 
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths and associated branches. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first.
 
-#### Color Coding ›
+#### Color Mapping ›
 
-<img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" title="Color Coding" />
+<img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" title="Color Mapping" />
 
-Commands to assign color codes to paths, or cells/branches based on a chosen metric. The reason for dedicated to both Paths and Cells is nuanced but intentional: Color coding of paths accepts _any_ type of structures while color coding of cells requires structures to be valid mathematical trees. As a consequence, the pool of mapping metrics between commands is not the same. These commands prompt for the following settings:
+This menu lists commands for mapping morphological traits into Lookup tables that are then used to render reconstructions. It contains commands to map path-based metrics or branch-based metrics: _Path-based Color Mapping_ accepts _any_ type of structures (i.e., any group of selected paths, even those belonging to different cells) but offers limited mapping metrics, while _Branch-based Color Mapping_ requires structures to be valid mathematical trees (with more mapping metrics available). These commands prompt for the following settings:
 
 - *Color by* Drop-down menu containing the metrics which inform the color mapping.
 
 - *LUT* Drop-down menu containing the LUTs ("Look Up Tables") that define the color ramps to be mapped to the matric. Availabe choices reflect all the LUTs installed in Fiji. The selected LUT is displayed in the color bar directly underneath.
 
-- *Rec. Viewer Color Map* If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
+- *Rec. Viewer Color Map* If active, opens a [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) instance with the selected paths mapped to the selected LUT.
 
-- *Rec. Plotter Color Map* If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
+- *Rec. Plotter Color Map* If active, opens a [Reconstruction Plotter](#reconstruction-plotter) instance with the selected paths mapped to the selected LUT.
 
-- *Remove Existing Color Coding* Removes existing color coding from the selected paths.
+The *Remove Existing Color Mapping...* command removes existing color mapping from the selected paths.
 
 
 #### Frequency Analysis ›
