@@ -233,7 +233,7 @@ See [Sum inters.](/plugins/sholl-analysis#sum) in [Sholl › Metrics based on sa
 ###### Surface area
 Treating each internode segment as a conical frustum, the sum of the surface areas[^1] of all frusta
 
-<span id="v"></span>
+<span id="t"></span>
 ###### TMD
 Topological Morphology Descriptor. See [persistence homology analysis](/plugins/snt/analysis#persistence-homology)
 
