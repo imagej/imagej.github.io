@@ -21,6 +21,8 @@ To use this tracker in TrackMate, you first need a working installation of Track
 Please follow the instructions on the GitHub repository of Trackastra:
 [https://github.com/weigertlab/trackastra?tab=readme-ov-file#installation](https://github.com/weigertlab/trackastra?tab=readme-ov-file#installation)
 
+The integration needs at least the version 0.2.1 of Trackastra.
+
 Once done, let's test that it works. 
 Supposing that you created a conda environment name `trackastra`, type the following in a terminal:
 
@@ -65,3 +67,17 @@ To find it on my system where I installed mamba I typed `which mamba` in a termi
 I then browsed to this path in the configuration window then clicked the `OK` button.
 
 {% include img src="/media/plugins/trackmate/trackmate-trackastra-01" align='center' width='400' %}
+
+### Activate the TrackMate-Trackastra update site
+
+In Fiji, go to {% include bc path='Help|Update...' %}. 
+Update and restart Fiji until it is up-to-date. 
+Then go to the update menu once more, and click on the `Manage update sites` button, at the bottom-left of the updater window. 
+A new window containing all the known update sites will appear. 
+Add the unlisted site  **TrackMate-Trackastra**, filling the information as follow:
+
+{% include img src="/media/plugins/trackmate/trackmate-trackastra-02" align='center' width='400' %}
+
+Then restart Fiji once more. 
+
+## Tracking Neisseria _meningitidis growth_ with Trackastra
