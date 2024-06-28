@@ -276,10 +276,11 @@ and [in the publication](https://doi.org/10.1016/j.ymeth.2016.11.016).
 
 ## Citation
 
-soon...
+Gilles JF, Mailly P, Ferreira T, Boudier T, Heck N. Spot Spine, a freely available ImageJ plugin for 3D detection and morphological analysis of dendritic spines, F1000Research 2024, 13:176 [link](https://f1000research.com/articles/13-176/v1)
 
 ## License
 
 GPL distribution (see [license](https://cecill.info/index.en.html)).
 
 ## Change log
+2024/06/28 : v1.0 Ajust dendrite shape and some details
