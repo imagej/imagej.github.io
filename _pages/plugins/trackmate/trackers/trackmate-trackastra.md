@@ -76,7 +76,7 @@ Then go to the update menu once more, and click on the `Manage update sites` but
 A new window containing all the known update sites will appear. 
 Add the unlisted site  **TrackMate-Trackastra**, filling the information as follow:
 
-{% include img src="/media/plugins/trackmate/trackmate-trackastra-02" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/trackmate-trackastra-02" align='center' width='600' %}
 
 Then restart Fiji once more. 
 
