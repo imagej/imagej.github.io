@@ -8,4 +8,4 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
-This page has move [here](extending#tubular-geodesics).
+This page has moved [here](extending#tubular-geodesics).

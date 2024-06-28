@@ -140,24 +140,23 @@ Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dia
 - Classification accepts _any_ structure: Since classification is path-based, there are no topological constrains in the analysis. While Strahler requires structures to be valid mathematical trees, Path order analysis can be performed on any structures, even those with loops
 
 # Persistence Homology
+<img align="right" width="300px" src="/media/plugins/snt/snt-persistence-landscape.png" title="Visualization of a persistence landscape for ML neuron #AA0039" />
+<img align="right" width="350px" src="/media/plugins/snt/snt-persistence-analyzer.png" title="Persistence Homology prompt" />
 
 Persistent homology computes topological features of neuronal reconstructions at different spatial resolutions, which in turn can be used to obtain topological signatures of their branching patterns. The Topological Morphology Descriptor (TMD) is the first published algorithm to use persistence Homology to describe neuronal arbors. It is described in:
 
-{% include img align="right" name="Persistence landscape for a single cell (ML neuron #AA0039)" src="/media/plugins/snt/snt-persistence-landscape.png" %}
+Kanari, L., Dłotko, P., Scolamiero, M., Levi, R., Shillcock, J., Hess, K., & Markram, H. (2017). A Topological Representation of Branching Neuronal Morphologies. Neuroinformatics, 16(1), 3–13. [doi:10.1007/s12021-017-9341-1](https://doi.org/10.1007/s12021-017-9341-1).
 
-Kanari, L., Dłotko, P., Scolamiero, M., Levi, R., Shillcock, J., Hess, K., & Markram, H. (2017). A Topological Representation of Branching Neuronal Morphologies. Neuroinformatics, 16(1), 3–13. [doi:10.1007/s12021-017-9341-1](https://doi.org/10.1007/s12021-017-9341-1)
+SNT implements TMD and TMD variants by supporting several descriptor functions:
+- Radial: The Euclidean (i.e., "straight line") distance between a node and the tree's root, as used in the original TMD description by Kanari et al.
+- Centrifugal: The reversed [Strahler classification](#strahler-analysis) of a node
+- Geodesic: The "path distance" between a node and the tree's root
+- Path order: The [path order](#path-order-analysis) of a node
+- Coordinates: The X, Y, or Z coordinate of a node
 
-SNT implements TMD and TMD "variants" by supporting several descriptor functions:
-- Radial: Uses the Euclidean (i.e., "straight line") distance between a node and the tree's root, as used in the original Kanari et al. study 
-- Geodesic: Uses the "path" distance between a node and the tree's root
-- Path order: Uses the [Path order](#path-order-analysis) of a node
-- Coordinates: Uses the X, Y, or Z coordinate of a node
+In addition, SNT also implements descriptors based on persistence landscapes, as described in Bubenik, P. (2012). Statistical topological data analysis using persistence landscapes. ArXiv. [doi:10.48550/ARXIV.1207.6437](https://doi.org/10.48550/ARXIV.1207.6437).
 
-In addition, SNT also implements descriptors based on persistence landscapes, as described in:
-
-Bubenik, P. (2012). Statistical topological data analysis using persistence landscapes (Version 4). ArXiv. [doi:10.48550/ARXIV.1207.6437](https://doi.org/10.48550/ARXIV.1207.6437)
-
-Currently, persistence homology descriptors can be computed via [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
+Currently, _basic_ persistence homology descriptors can be computed using {% include bc path='Analysis|Persistence Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistence Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
 
 # Comparing Reconstructions
 
@@ -176,5 +175,5 @@ The dialog  prompt for this feature allows selection of up to six directories co
 
 {% include notice icon="info" content="SNT performs statistical tests without verifying if samples fulfill basic test-criteria (e.g., normality, variance homogeneity, sample size, etc.)" %}
 
-# Specialized Analyses
+# Other Specialized Analyses
 See [SNT Scripting](/plugins/snt/scripting), as well as script templates demonstrating a range of analysis possibilities.

@@ -12,7 +12,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 
 ## Metrics
 {% capture text%}
-**This list is mainly focused on default measurements available through SNT's GUI and does not include specialized metrics available via its scripting API. Thus, it only captures [a subset](#notes) of the full repertoire of SNT metrics.**<br>
+**This list is focused on default measurements available through SNT's GUI and does not include specialized metrics available via its scripting API. Thus, it only captures [a subset](#notes) of the full repertoire of SNT metrics.**<br>
 
 **For each metric SNT retrieves the descriptive statistics _Mix_, _Max_, _Mean_, _Standard Deviation_ (SD), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements.<br>
 E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
