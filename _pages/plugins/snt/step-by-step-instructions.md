@@ -90,14 +90,6 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
   <tbody>
     <tr style="background-color:white">
       <td>
-        <p></p>
-      </td>
-      <td>
-        <img src="/media/plugins/snt/snt-three-pane-view-enabled-startup-prompt.png" width="300px">
-      </td>
-    </tr>
-    <tr style="background-color:white">
-      <td>
         <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key key='Shift' %} to synchronize the view in the other panes.</p>
         <p>At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image. When this option is enabled, the cursor will automatically 'sniff' for local maxima and 'snap' to their average X,Y,Z position. The pixel that is most likely to be on a neurite is indicated by the red cross-hair cursor.</p>
       </td>
@@ -408,7 +400,7 @@ If the search is still active, you might as well click "Pause" so halt explorati
 
 - The "Export" button provides several export options, including:
 
-  - Binary mask: Only the points in the fill are preserved under a constant value. This is useful to e.g., mask out structures outside the neuron being traced, or to train a [Weka model](/plugins/tws).
+  - Binary mask: Only the points in the fill are preserved under a constant value. This is useful to e.g., mask out structures outside the neuron being traced, or to train a [TWS/Labkit model](/plugins/snt/machine-learning).
 
   - Grayscale: Only the points in the fill are preserved under the original pixel intensities. This is useful to e.g., render the structure in the [legacy 3D Viewer](/plugins/3d-viewer) or [sciview](/plugins/sciview) to do a surface rendering of the neuron.
 
