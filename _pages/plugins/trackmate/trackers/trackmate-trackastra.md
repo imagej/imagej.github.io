@@ -54,6 +54,10 @@ options:
 
 ### Configure conda path in Fiji
 
+> [!WARNING]
+> You need to do the following only on **MacOS** and on **Linux**. 
+> On Windows, you can skip this step.
+
 Because this integration relies on **conda**, we need to tell TrackMate where is conda on your system.
 There is a command to do this in the _Edit > Options >Configure TrackMate Conda path..._
 
@@ -66,7 +70,7 @@ To find it on my system where I installed mamba I typed `which mamba` in a termi
 ```
 I then browsed to this path in the configuration window then clicked the `OK` button.
 
-{% include img src="/media/plugins/trackmate/trackmate-trackastra-01" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-01" align='center' width='400' %}
 
 ### Activate the TrackMate-Trackastra update site
 
@@ -76,8 +80,54 @@ Then go to the update menu once more, and click on the `Manage update sites` but
 A new window containing all the known update sites will appear. 
 Add the unlisted site  **TrackMate-Trackastra**, filling the information as follow:
 
-{% include img src="/media/plugins/trackmate/trackmate-trackastra-02" align='center' width='600' %}
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-02" align='center' width='600' %}
 
 Then restart Fiji once more. 
 
-## Tracking Neisseria _meningitidis growth_ with Trackastra
+## Tracking _E. coli_ growth with Trackastra
+
+We will use the same dataset that for the tutorial in the Trackastra code repository. 
+Please download the archive below:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12600359.svg)](https://doi.org/10.5281/zenodo.12600359)
+
+Open the TIF image in Fiji. 
+It is a 2-channel movie of 20 frame. 
+The first channel contains the segmentation results stored as a label image, and the second channel contines the source image. 
+This movie follows the growth of two bacteria (_Escherichia coli_). 
+While the bacteria divides, they move, probably because of sample or stage drift.
+
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-04" align='center' width='400' %}
+
+Launch TrackMate with this image selected (_Plugins > Tracking > TrackMate_), and in the detector selection. pick **Label image detector**.
+Click the _Next_ button.
+In the detector configuration pannel, make sure the channel 1 is selected (the labels are in the first channel), and click the _Next_ button again.
+TrackMate should tell you that it found 128 spots. 
+
+Go through the next panel, making sure you do not filter out any spots. 
+When in the tracker selection step, pick **Trackastra**.
+This panel should then be displayed:
+
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-05" align='center' width='200' %}
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-06" align='center' width='200' %}
+
+We don't have to change much. 
+Trackstra requires the source image for tracking, so we have to tell it in what channel of our multi-channel image the raw input is.
+In our case it is the channel 2. 
+The `general_2d` pretrained model will work on this data, and since we want to detect cell divisions, we can simpy pick the `greedy` tracking mode. 
+
+Click _Next_. 
+Afer a while you should see the following log:
+
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-07" align='center' %}
+
+Et voila ! 
+
+{% include video 
+src="/media/plugins/trackmate/trackers/trackastra/TrackMate-trpL_150310-11.mp4" 
+width='600' 
+align="center" %}
+
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-08" align='center' width='600' %}
+
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-09" align='center' width='600' %}
