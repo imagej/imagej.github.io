@@ -112,6 +112,9 @@ This panel should then be displayed:
 {% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-06" align='center' width='200' %}
 
 We don't have to change much. 
+The first item lets you select a conda environment among the list of those TrackMate discovered.
+Of course, you need to select in what conda environment is your instalation of Trackastra.
+In my case, I simply named this environment `trackastra`, which is selected in the first item of the configuration panel.
 Trackstra requires the source image for tracking, so we have to tell it in what channel of our multi-channel image the raw input is.
 In our case it is the channel 2. 
 The `general_2d` pretrained model will work on this data, and since we want to detect cell divisions, we can simpy pick the `greedy` tracking mode. 
