@@ -108,7 +108,7 @@ Go through the next panel, making sure you do not filter out any spots.
 When in the tracker selection step, pick **Trackastra**.
 This panel should then be displayed:
 
-{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-05" width='30' %}
+{% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-05" width='300' %}
 {% include img src="/media/plugins/trackmate/trackers/trackastra/trackmate-trackastra-06" width='300' %}
 
 We don't have to change much. 
