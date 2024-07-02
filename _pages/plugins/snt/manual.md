@@ -108,21 +108,18 @@ Resets all preferences and restarts SNT using default options.
 
 ### Analysis ›
 
+#### Atlas-based ›
+See [Atlas-based Analysis](/plugins/snt/analysis#atlas-based-analysis).
+
+#### Path-based ›
+See [Path-based Analysis](/plugins/snt/analysis#path-based-analysis).
+
 #### Convex Hull
+See [Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
 
-See [Analysis › Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
+#### Persistence Homology
+See [Persistence Homology Analysis](/plugins/snt/analysis#persistence-homology).
 
-#### Path Order Analysis
-
-See [Analysis › Path Order Analysis](/plugins/snt/analysis#path-order-analysis).
-
-#### Path Properties: Export CSV...
-
-Allows export of information regarding individual Paths (morphometrics, neurite compartments, linkage relationships to other Paths, start and end coordinates, etc.).
-
-#### Brain Area Analysis
-
-Summarizes projection patterns across brain areas. See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
 
 #### Sholl Analysis.../Sholl Analysis (by Focal Point)...
 
@@ -154,32 +151,10 @@ The Command Palette is the fastest way to access actions and discover their resp
 
 
 #### Compare Reconstructions/Cell Groups...
-
 Allows morphometric comparisons of two single reconstruction files or multiple groups of reconstruction files (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
 
 
-<span id="plotter"></span>
-
-#### Reconstruction Plotter
-
-<img align="right" src="/media/plugins/snt/snt-reconstruction-plotter.png" title="Reconstruction Plotter overview" width="50%" alt="Reconstruction Plotter overview" />
-
-_Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructions by plotting 2D projections of traced paths. Its major ability is to produce publication-quality (vector-based) renditions of neuronal reconstructions. A control panel  allows for adjustment of the spatial orientation of the tracing. By default, the plot is monochrome. If paths are assigned color tags, or the structure has been color-coded  use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render a (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot. Features (accessed via plotter's contextual menu) include:
-
-- Dark/light theme
-- Costumization controls for font, axes, etc. 
-- Export as SVG (vector graphics)
-- Color legends when color mappings are present
-- Can be combined in multi-panel viewers (mainly via scripting)
-
-
-#### Create Annotation Graph...
-
-See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
-
-
 #### Create Dendrogram
-
 Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
 
 
@@ -192,6 +167,23 @@ Creates multi-panel figures from chosen reconstructions, according to the follow
 - **Type**: Wether the illustration should be a bitmap image (typically rendered at 1micron per pixel); a scalable graphics 2D image (see [Reconstruction Plotter](#reconstruction-plotter)), or an interactive 3D scene (see [Reconstruction Viewer](/plugins/snt/reconstruction-viewer))
 - **View**: The display plane of the scene: XY (the default), XZ, or ZY. This option pertains only to static 2D scenes
 - **Positioning**: Whether reconstructions should be rendered under theur original coordinates, or whether every cell in the scene should be translatated to a common xyz coordinate (0,0,0) 
+
+
+<span id="plotter"></span>
+
+#### Reconstruction Plotter
+
+_Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructions by plotting 2D projections of traced paths. Its major ability is to produce publication-quality (vector-based) renditions of neuronal reconstructions. A control panel  allows for adjustment of the spatial orientation of the tracing. By default, the plot is monochrome. If paths are assigned color tags, or the structure has been color-coded  use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render a (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot. Features (accessed via plotter's contextual menu) include:
+<img align="right" src="/media/plugins/snt/snt-reconstruction-plotter.png" title="Reconstruction Plotter overview" width="50%" alt="Reconstruction Plotter overview" />
+- Dark/light theme
+- Costumization controls for font, axes, etc. 
+- Export as SVG (vector graphics)
+- Color legends when color mappings are present
+- Can be combined in multi-panel viewers (mainly via scripting)
+
+#### Apply 3D Drift Corrections...
+A convenience alias for [Correct 3D Drift](/plugins/correct-3d-drift), which can correct abrupt displacements as well as slow drifts in video timelapses. It is recommended that you run _Correct 3D Drift_ on large time-lapse videos _before_ loading the image in SNT to avoid running out of RAM. See [Time-lapse analysis walkthrough](/plugins/snt/step-by-step-instructions#time-lapse-analysis) for details.
+
 
 #### Autotrace Segmented Image...
 
@@ -311,7 +303,7 @@ The wizard needs two types of information from the user: The type of filtering o
   
   - **Gaussian blur** Filter for noise removal, capable of gentle smoothing with some ability to preserve neurite edges, specially under small σ values.
 
-- **Scale(s)** Also known as _sigmas_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
+- **Scale(s)** Also known as _sigma(s)_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
   
   - **Select visually...**: The wizard will prompt you to click on a representative region of the image which has a meaningful structure. Once you click there, a preview palette is generated showing increasing values of σ (from top-left to bottom-right) applied to that region of the image. Select the suitable scales
   

@@ -10,12 +10,13 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 # Measurements
+{% include img align="right" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features options for searching and selecting metrics, renderer measured cells, and summarize existing measurements. An offline guide is also accessible through the <i>Gear</i> menu." %}
 
-SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure'%} in Reconstruction Viewer). A simplified _Quick Measurements_ variant of this command also exists, in which common metrics are immediately retrieved using default settings. To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in the Path Manager's {% include bc path='Analyze|Measurements'%} menu.
+SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer). To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in the Path Manager's {% include bc path='Analyze|Measurements'%} menu.
 
-{% include img align="center" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features an offline guide accessible through the <i>Gear</i> menu." %}
+The reason for distinguishing between branch-based (i.e., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
-The reason for distinguish between branch-based (i.e., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
+A convenience _Quick Measurements_ command also exists ( {% include bc path='Analysis| '%} menu in the main SNT dialog (or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
 
 Batch measurements of reconstructions can be accomplished via scripting. See, e.g., the [bundled template script](/plugins/snt/scripting#bundled-templates) *Measure\_Multiple\_Files.py*, and related batch scripts for examples.
 
@@ -31,45 +32,6 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 # Convex Hull Analysis
 _Convex hull_ commands (in SNT  main dialog, [Rec. viewer](/plugins/snt/reconstruction-viewer) and [Rec. plotter](/plugins/snt/manual#plotter)) compute the 2D or 3D convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains the nodes of its paths). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size).
 
-# Brain Area Analysis
-See [Graph-based Analysis](#graph-based-analysis).
-
-<span id="dendrogram-viewer"></span>
-# Graph-based Analysis
-Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
-
-The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The_Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG and SVG.
-
-Typically, the most common types of graphs handled by _Graph Viewer_ are:
-
- - **Dendrograms**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Utilities|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
-
- - **Annotation Graphs** These rely on brain annotations (i.e., neuropil labels) and are typically used to summarize projectomes or relationships between brain areas, including ferris-wheel diagrams. Note that annotation graphs can be generated for a single cell or groups of cells.
-
-{% include gallery align="fill" content=
-"
-/media/plugins/snt/graph-viewer-dendrogram-simple.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) under the _vertical hierarchical_ layout. Edges depict branch length (µm). Vertices depict the root node (1), branch-, and end- points.
-/media/plugins/snt/graph-viewer-dendrogram-color-coded.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) color-coded by edge weight, i.e., branch length (µm), under the default layout (_vertical tree_).
-/media/plugins/snt/graph-viewer-ferris-wheel.png | Ferris-wheel diagram for a group of MouseLight PT-neurons (medulla-projecting) located in the secondary motor cortex (MOs, center vertex). Outer vertices depict target areas innervated by the cells' axons (automatically grouped by ontology). Edges encode axonal cable length (µm).
-"
-%}
-
-Two other type of _Brain Area Analysis_ visualizations relying on graph-based analysis (but not _Graph Viewer_) include boxplots and Sankey (flow) diagrams reporting innervation across brain areas/neuropil regions:
-
-{% include gallery align="fill" content=
-"
-/media/plugins/snt/sankey-flow-plot-with-tooltip.png | Flow-plot (Sankey diagram) for two groups of MouseLight PT-neurons: Medulla-projecting (MY Proj.) and Thalamus-projecting (TH Proj.) _Flows_ depict axonal cable length (µm) at target areas (colored using the default ontology color-scheme adopted by the Allen Mouse Brain Common Coordinate Framework, CCFv3).
-/media/plugins/snt/brain-analysis-group-boxplot.png | The same flow-plot data in boxplot format (see *Flow and Ferris-Wheel Diagrams Demo* script)
-/media/plugins/snt/brain-analysis-combined-boxplot.png | *Analysis › Brain Area Analysis...* histogram in which frequencies of a particular morphometric trait are retrieved across brain areas (neuropil labels). In this example, *No. of tips* was retrieved for the four cells in the *MouseLight dendrites* demo dataset (*File › Load Demo Dataset...*)
-"
-%}
-
-Ultimately, fine-grained programmatic control over SNT's Graph objects is achieved via scripting. Relevant resources:
-
-- [JGraphT](https://jgrapht.org/): The underlying library handling graph theory data structures and algorithms with [JAVA](https://jgrapht.org/javadoc/) and [Python](https://pypi.org/project/jgrapht/) APIs
-- [SNT graph package](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/analysis/graph/package-summary.html): High-level tools for graph creation within SNT
-- *SNT Demo Scripts*: See e.g., *Graph\_Analysis.py* and *Flow\_and\_Ferris\-Wheel\_Diagrams\_Demo.groovy*, two [SNT demo scripts](/plugins/snt/scripting#snt-scripts)
-- *Python notebooks*: For [pyimagej](/scripting/pyimagej) examples, have a look at the *Hemisphere Analysis* [notebook](/plugins/snt/scripting#python-notebooks)
 
 # Sholl Analysis
 
@@ -116,6 +78,7 @@ Note that plots and tables can be directly saved to disk by selecting _Save_ and
 
 {% include img align="center" src="/media/plugins/snt/sholl-analysis-outputs.png" caption="Overview of Sholl analysis outputs: Linear and log-log profile (Sholl decay calculation), *detailed* and *summary* tables. Note that 'traditional' plots are obtained by disabling curve-fitting altogether."%}
 
+
 # Strahler Analysis
 
 {% capture strahler%}
@@ -132,12 +95,74 @@ _Strahler Analysis (Image)_ has a dedicated [documentation page](/plugins/strahl
 To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current contents of the Path Manager, choose the {% include bc path='Analysis|Strahler Analysis...'%} in the main SNT dialog. This command will output the results of the analysis as a table and plot(s). These figures contain morphometric statistics of branches at each Horton-Strahler number. Refer to the _Strahler Analysis (Image)_ [documentation](/plugins/strahler-analysis) for details on the classification.
 {% include img align="center" src="/media/plugins/snt/strahler-analysis-from-reconstructions.png" caption="Strahler Analysis detailed output."%}
 
-# Path Order Analysis
-Found at {% include bc path='Analysis|Path Order Analysis'%} in the main SNT dialog, this option is a variant of Strahler with the following differences:
 
+# Path-based Analysis
+Path-based analyses accept _any_ traced structure (e.g., disconnected paths, paths associated with different cells, etc.), even those with loops. While most SNT measurements require traced structures to be valid mathematical trees, path-based measurements have no topological constraints. There are two commands in this category: [Path Order Analysis](#path-order-analysis), and [Path Properties: Export CSV...](#path-properties-export-csv).
+
+### Path Order Analysis
+This command ({% include bc path='Analysis|Path-based|Path Order Analysis'%} in the main SNT dialog) is a variant of [Strahler](strahler-analysis) with the following differences:
 - Classification is based on _Path Order_: Paths are the scope of classification (not branches)
 - Ranking of orders is reversed relatively to Strahler analysis (reversed Strahler orders), with primary paths having _order 1_ and terminal paths having the highest order
-- Classification accepts _any_ structure: Since classification is path-based, there are no topological constrains in the analysis. While Strahler requires structures to be valid mathematical trees, Path order analysis can be performed on any structures, even those with loops
+- Any collection of paths can be analyzed without validating into a formal tree
+
+### Path Properties: Export CSV...
+This command ({% include bc path='Analysis|Path-based|Path Properties: Export CSV...'%}) exports path details morphometrics, neurite compartments, linkage relationships to other Paths, start and end coordinates, etc.) to a spreadsheet file.
+
+# Atlas-based Analysis
+Atlas-based analyses require reconstruction nodes to be tagged with neuropil IDs (atlas labels) (e.g., ). Broadly, there are two types of analyses: [Brain Area Frequencies](#brain-area-frequencies) and [Annotations Graphs](#annotations-graphs).
+
+
+### Brain Area Frequencies
+This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog, or % include bc path='Analyze & Measure| '%} menu in Reconstruction Viewer) summarizes projection patterns across brain areas by computing frequency histograms of how often a morphometric trait (no. of tips, cable length, etc.) occurs across brain regions (neuropil labels). Such histograms can be obtained for groups of cells, isolated cells, or parts thereof.
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/brain-analysis-combined-histograms.png | *Brain Area Frequencies...* in which *No. of tips* was tabulated across the motor cortext subregions associated with the four cells in the *File › Load Demo Dataset...  › MouseLight dendrites* demo dataset
+/media/plugins/snt/snt-brain-analysis-ipsi-contra.png | *Brain Area Frequencies...* of a single cell (*Hemisphere Analysis* [notebook](https://github.com/morphonets/SNT/tree/main/notebooks)) in which *Cable length* of axonal projections was tabulated across ipsilateral and contralateral hemisphere regions. Note how projections to the Ectorhinal area (ECT) are exclusively ipsilateral
+"
+%}
+
+
+### Annotations Graphs
+Two types of _Annotations Graphs_ include boxplots and Sankey (flow) diagrams reporting innervation across brain areas/neuropil regions:
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/sankey-flow-plot-with-tooltip.png | Flow-plot (Sankey diagram) for two groups of MouseLight PT-neurons: Medulla-projecting (MY Proj.) and Thalamus-projecting (TH Proj.) _Flows_ depict axonal cable length (µm) at target areas (colored using the default ontology color-scheme adopted by the Allen Mouse Brain Common Coordinate Framework, CCFv3).
+/media/plugins/snt/brain-analysis-group-boxplot.png | The same flow-plot data in boxplot format (see *Flow and Ferris-Wheel Diagrams Demo* script)
+"
+%}
+
+Other types of _Annotations Graphs_ are described in [Graph-based Analysis](#graph-based-analysis).
+
+
+<span id="dendrogram-viewer"></span>
+# Graph-based Analysis
+Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
+
+The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The_Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG and SVG.
+
+Typically, the most common types of graphs handled by _Graph Viewer_ are:
+
+ - **Dendrograms**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Utilities|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
+
+ - **Annotation Graphs** These rely on brain annotations (i.e., neuropil labels) and are typically used to summarize projectomes or relationships between brain areas, including ferris-wheel diagrams. Annotation graphs can be generated for a single cell or groups of cells.
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/graph-viewer-dendrogram-simple.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) under the _vertical hierarchical_ layout. Edges depict branch length (µm). Vertices depict the root node (1), branch-, and end- points.
+/media/plugins/snt/graph-viewer-dendrogram-color-coded.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) color-coded by edge weight, i.e., branch length (µm), under the default layout (_vertical tree_).
+/media/plugins/snt/graph-viewer-ferris-wheel.png | Ferris-wheel diagram for a group of MouseLight PT-neurons (medulla-projecting) located in the secondary motor cortex (MOs, center vertex). Outer vertices depict target areas innervated by the cells' axons (automatically grouped by ontology). Edges encode axonal cable length (µm).
+"
+%}
+
+Ultimately, fine-grained programmatic control over SNT's Graph objects is achieved via scripting. Relevant resources:
+
+- [JGraphT](https://jgrapht.org/): The underlying library handling graph theory data structures and algorithms with [JAVA](https://jgrapht.org/javadoc/) and [Python](https://pypi.org/project/jgrapht/) APIs
+- [SNT graph package](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/analysis/graph/package-summary.html): High-level tools for graph creation within SNT
+- *SNT Demo Scripts*: See e.g., *Graph\_Analysis.py* and *Flow\_and\_Ferris\-Wheel\_Diagrams\_Demo.groovy*, two [SNT demo scripts](/plugins/snt/scripting#snt-scripts)
+- *Python notebooks*: For [pyimagej](/scripting/pyimagej) examples, have a look at the *Hemisphere Analysis* [notebook](/plugins/snt/scripting#python-notebooks)
+
 
 # Persistence Homology
 <img align="right" width="300px" src="/media/plugins/snt/snt-persistence-landscape.png" title="Visualization of a persistence landscape for ML neuron #AA0039" />
@@ -156,7 +181,7 @@ SNT implements TMD and TMD variants by supporting several descriptor functions:
 
 In addition, SNT also implements descriptors based on persistence landscapes, as described in Bubenik, P. (2012). Statistical topological data analysis using persistence landscapes. ArXiv. [doi:10.48550/ARXIV.1207.6437](https://doi.org/10.48550/ARXIV.1207.6437).
 
-Currently, _basic_ persistence homology descriptors can be computed using {% include bc path='Analysis|Persistence Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistence Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
+Currently, _basic_ persistence homology descriptors can be computed using UI commands {% include bc path='Analysis|Persistence Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistence Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
 
 # Comparing Reconstructions
 

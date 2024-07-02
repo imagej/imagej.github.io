@@ -18,7 +18,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
 <br>
 <br>
- Also, please note that some of the metrics described here have been ported from published literature including [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm): {% include citation doi='10.1038/nprot.2008.51' %}
+ Note that some of the metrics described here have been ported from published literature including [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm): {% include citation doi='10.1038/nprot.2008.51' %}
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
@@ -94,7 +94,7 @@ The squared distance between nodes defining a branch or a Path. Alternative to _
 The sum of branch lengths of branches of highest Strahler order. Typically, these correspond to the most 'internal' branches of an arbor, in direct sequence from the root. Note that_Primary branches_ are _inner branches_ starting at the tree's root.
 
 ###### Length of longest shortest path
-Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _Length of longest shortest path_ corresponds to the [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html) (longest graph geodesic). Note that this metric can only be computed for structures that are valid mathematical trees.
+Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _Length of longest shortest path_ corresponds to the [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html) (also known as maximum geodesic, or longest graph geodesic). Note that this metric can only be computed for structures that are valid mathematical trees.
 
 ###### Length of primary branches
 The sum of branch lengths of primary (or root-associated) branches. Primary branches have origin in a tree's root, extending to the closest branch point or end-point, i.e., they are _inner branches_ starting at the root. Note that a primary branch can also be terminal.
