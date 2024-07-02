@@ -21,7 +21,7 @@ To use this tracker in TrackMate, you first need a working installation of Track
 Please follow the instructions on the GitHub repository of Trackastra:
 [https://github.com/weigertlab/trackastra?tab=readme-ov-file#installation](https://github.com/weigertlab/trackastra?tab=readme-ov-file#installation)
 
-The integration needs at least the version 0.2.1 of Trackastra.
+The integration needs at least the version 0.2.2 of Trackastra.
 
 Once done, let's test that it works. 
 Supposing that you created a conda environment name `trackastra`, type the following in a terminal:
@@ -54,9 +54,8 @@ options:
 
 ### Configure conda path in Fiji
 
-> [!WARNING]
-> You need to do the following only on **MacOS** and on **Linux**. 
-> On Windows, you can skip this step.
+{% include notice icon="warning"
+  content="You need to do the following only on **MacOS** and on **Linux**. On Windows, you can skip this step." %}
 
 Because this integration relies on **conda**, we need to tell TrackMate where is conda on your system.
 There is a command to do this in the _Edit > Options >Configure TrackMate Conda path..._
