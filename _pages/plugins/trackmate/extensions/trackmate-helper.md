@@ -1,8 +1,8 @@
 ---
 title: TrackMate-Helper
 categories: [Segmentation,Tracking,Benchmark]
-description: Userf-friendly parameter sweep with TrackMate with automatic benchmarks.
-artifact: sc.fiji:TrackMate
+description: Optimal tracking parameters determination by parameter sweep with TrackMate and tracking metrics.
+artifact: sc.fiji:TrackMate-CTCRunner
 ---
 
 # The TrackMate-Helper
