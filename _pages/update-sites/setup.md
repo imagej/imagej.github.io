@@ -111,19 +111,25 @@ If this info is missing, see [Specifying your site](#specifying-your-site). Once
 
 ### Prepare your files for upload
 
-Click on the {% include button label="Advanced Mode" %} button and set the view options to see your plugins:
+The general principle of populating an update site is to add the files of interest to your local Fiji installation, building your desired working state, then synchronizing to the remote update site.
 
--   If your have never uploaded your plugins, select *View local-only files*
+Note that there are several guidelines for where these files should be placed, based on their file type:
 
-**For .ijm macros**, the files should be in an appropriately named *plugins* subfolder. Their parent folder will become the entry name in the `Plugins` menu.
+* **.jar libraries**: for files used by other libraries or plugins, but not directly present e.g. in the `Plugins` menu, they go in the *jars* folder (or subfolder). If the file is platform-specific, it goes in the corresponding platform subdirectory of the *jars* folder (e.g. *jars/win64*).
+* **.jar plugins**: new additions to the `Plugins` menu belong in the *plugins* folder (or subfolder). Don't forget to include an underscore (`_`) in the name!
+* **.dll, .dylib, etc...**: native libraries belong in a platform-specific subfolder of the *lib* directory (e.g. *lib/win64*).
+* **.ijm macros**: the files should be in the *plugins* folder or an appropriately named subfolder thereof. Their parent folder will become the entry name in the `Plugins` menu.
+* **.py scripts**: they can be either in the *jars/Lib* or *scripts* folder (or any subfolder).
 
-**For .py scripts**, they can be either in the *Jars/Lib* or *scripts* folder (or any subfolder).
+{% include notice icon="info" content='If you are uploading platform-specific files you will also need to [edit the metadata](#editing-metadata)!' %}
 
-Out of those folder, the updater might not see them.
+Out of those folders, the updater might not see them, or they may not be loaded correctly.
 
--   If you are uploading new versions of your plugins, select *View locally modified files only*
+To see your plugin(s) or file(s) back in the updater, click the {% include button label="Advanced Mode" %} button and set the view options:
+- If your have never uploaded your plugins, select *View local-only files*
+- If you are uploading new versions of your plugins, select *View locally modified files only*
 
-In this case, the plugin we'll be uploading is contained in *A\_Jolly\_Useful\_Plugin.jar*.
+In this example, the plugin we'll be uploading is contained in *A\_Jolly\_Useful\_Plugin.jar*.
 
 Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|Left Click' %}) in any column, for the context menu and select *Upload to &lt;update site name&gt;*.
 
@@ -133,7 +139,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 ### Editing Metadata
 
-When a file is selected in Advanced MOde, a *Details* panel becomes available. This allows manual editing of important metadata.
+When a file is selected in Advanced Mode, a *Details* panel becomes available. This allows manual editing of important metadata.
 
 <img src="/media/update-sites/how-to-setup-a-plugin-distribution-site-15.jpg" width="770"/>
 
