@@ -181,9 +181,6 @@ _Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructio
 - Color legends when color mappings are present
 - Can be combined in multi-panel viewers (mainly via scripting)
 
-#### Apply 3D Drift Corrections...
-A convenience wrapper for [Correct 3D Drift](/plugins/correct-3d-drift) that can correct abrupt displacements as well as slow drifts in video timelapses. See [Time-lapse analysis walkthrough](/plugins/snt/step-by-step-instructions#time-lapse-analysis) for details.
-
 
 #### Autotrace Segmented Image...
 

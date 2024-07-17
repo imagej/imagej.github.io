@@ -25,7 +25,7 @@ To reference specific modules/plugins that enhance SNT:
 - **[Cx3D](/plugins/snt/modeling)**
   {% include citation id="plugins/snt/modeling" %}
 
-The original [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication is:
+Given all the [changes](#what-is-the-difference-between-snt-and-simple-neurite-tracer), the 2011 publication for Simple Neurite Tracer is no longer considered a primary citation:
 
 - {% include citation doi='10.1093/bioinformatics/btr390' %}
 
@@ -37,7 +37,7 @@ Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and r
 
 When SNT is compiled, a [suite of tests](https://github.com/morphonets/SNT/tree/-/src/test/java/sc/fiji/snt) is run to detect deficiencies in the code base. Morphometry results are benchmarked against values obtained in [L-Measure](http://cng.gmu.edu:8080/Lm/) and [NeuroM](https://github.com/BlueBrain/NeuroM). However, no test suite is ever perfect. If you detect inaccuracies, please {% include github org='morphonets ' repo='SNT ' label='report ' %} them\!
 
-### What is a SWC file?
+### What is a SWC file?1
 <span id="swc"></span>
 It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose *lingua franca* of a neuron's three-dimensional structure. The latest [SWC specification](https://swc-specification.readthedocs.io/en/latest/index.html) provides more details about the format. SNT supports all known variants of the format including [ESWC](https://www.nature.com/articles/sdata2017207), [SWC+](https://neuroinformatics.nl/swcPlus/), and latest [specification](https://swc-specification.readthedocs.io/en/latest/index.html) (v1.0.3, as of this writing). The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, an unrelated {% include wikipedia title="Adobe SWC file" %} format also used to exist.
 

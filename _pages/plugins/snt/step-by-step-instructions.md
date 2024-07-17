@@ -281,11 +281,9 @@ There are two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) 
 
 The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts. 
 
-SNT features [Apply 3D Drift Corrections...](/plugins/snt/manual#apply-3d-drift-corrections), a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration below highligths the type of mitigation you should expect.
-
+SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highligths the type of mitigation you should expect.
 
 Once undesired motion has been mitigated:
-
 
 1. Specify the first time-point to be traced using the [Data Source](/plugins/snt/manual#data-source) widget
 
