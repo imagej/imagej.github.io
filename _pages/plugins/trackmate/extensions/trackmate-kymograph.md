@@ -143,7 +143,7 @@ In the Kymograph tracer window, there is a ‘`Save`’ button at the bottom rig
 
 ```json
 {  	
-    "name": ~/DemoDataset/U251_mitoRED_lifeAct670_3_Kymograph_2-1.tif",  
+ 	"name": "~/DemoDataset/U251_mitoRED_lifeAct670_3_Kymograph_2-1.tif",  
  	"spaceInterval": 0.1830000292800047,  
 	"timeInterval": 2.0,  
 	"spaceUnits": "µm",  
