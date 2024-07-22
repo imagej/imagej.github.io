@@ -32,7 +32,11 @@ We can create a moving kymograph between any two tracks in TrackMate that have a
 
 ### The demo dataset.  
 
-In the following tutorial, we will use a movie acquired by Dr. Ines Saenz de Santa Maria, in the lab of Pr.  Charia Zurzolo, Institut Pasteur. The movie can be downloaded from Zenodo **TODO**. Ines follows the transfer  of mitochondria through tunneling nanotubes (TNTs) that extend sometimes between two cells. 
+In the following tutorial, we will use a movie acquired by Dr. Ines Saenz de Santa Maria, in the lab of Pr.  Charia Zurzolo, Institut Pasteur. The movie can be downloaded from Zenodo: 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12784611.svg)](https://doi.org/10.5281/zenodo.12784611)
+
+Ines follows the transfer  of mitochondria through tunneling nanotubes (TNTs) that extend sometimes between two cells. 
 
 {% include img src="/media/plugins/trackmate/extensions/trackmate-kymograph-02.png" align='center'  %}
 
@@ -48,9 +52,9 @@ With the image open, launch the manual tracking version of TrackMate, in *Plugin
 
 We will now manually create the two tracks for the TNT extremity. The manual editing and creation of tracks  is detailed in other tutorials: 
 
-- https://imagej.net/plugins/trackmate/manual-tracking
+- [Manual tracking with TrackMate](/plugins/trackmate/tutorials/manual-tracking)
 
-- https://imagej.net/plugins/trackmate/manual-track-editing
+- [Manually editing tracks with TrackMate](/plugins/trackmate/tutorials/manual-track-editing)
 
 
 But we will repeat here some of the information you can find there.  
@@ -205,7 +209,7 @@ The kymograph tracing, we have been using above is a great tool to detect and qu
 
 {% include img src="/media/plugins/trackmate/extensions/trackmate-kymograph-23.png" align='center'  %}
 
-This new image is a time-lapse movie with the same calibration that of the source. It cuts 2D planes from the  (possibly 3D) source image, that follow the kymograph line defined by the two tracks you specified. It can be  saved and used as input to classical analysis or tracking using e.g., TrackMate. The positions and velocities  measured in such a movie will be with respect to the moving frame of the first or second track points, or their  center, as set by the ‘`Alignment`’ parameter in the controller. The ‘`Projection method`’ parameter is  ignored.   
+This new image is a time-lapse movie with the same calibration that of the source. It cuts 2D planes from the  (possibly 3D) source image, that follow the kymograph line defined by the two tracks you specified. It can be  saved and used as input to classical analysis or tracking using e.g., [TrackMate](/plugins/trackmate/index). The positions and velocities  measured in such a movie will be with respect to the moving frame of the first or second track points, or their  center, as set by the ‘`Alignment`’ parameter in the controller. The ‘`Projection method`’ parameter is  ignored.   
 
 ## Other features.  
 
