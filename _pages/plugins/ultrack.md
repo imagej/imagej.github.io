@@ -19,27 +19,18 @@ categories: [Tracking]
 
 # Overview
 
-[Ultrack](https://github.com/royerlab/ultrack) is a method for large-scale 3D cell-tracking through a segmentation selection approach.
-It is effective at tracking cells across large microscopy datasets on two fronts: (i) It can solve
-problems containing millions of segmentation instances in terabyte-scale 3D+t datasets; (ii) It achieves competitive 
-results with or without deep learning, which requires 3D annotated data, that is scarce in the fluorescence microscopy 
-field. The proposed method computes cell tracks and segments using a hierarchy of segmentation hypotheses and selects 
-disjoint segments by maximizing the overlap between adjacent frames. We show that this method achieves state-of-the-art 
-results in 3D images from the cell tracking challenge and has a faster integer linear programming formulation. Moreover, 
-our framework is flexible and supports segmentations from off-the-shelf cell segmentation models and can combine them 
-into an ensemble that improves tracking.
+[Ultrack](https://github.com/royerlab/ultrack) is a method for large-scale 3D cell-tracking through a segmentation selection approach. It is effective at tracking cells across large microscopy datasets on two fronts: (i) It can solve problems containing millions of segmentation instances in terabyte-scale 3D+t datasets; (ii) It achieves competitive results with or without deep learning, which requires 3D annotated data, that is scarce in the fluorescence microscopy field. The proposed method computes cell tracks and segments using a hierarchy of segmentation hypotheses and selects disjoint segments by maximizing the overlap between adjacent frames. We show that this method achieves state-of-the-art results in 3D images from the cell tracking challenge and has a faster integer linear programming formulation. Moreover, our framework is flexible and supports segmentations from off-the-shelf cell segmentation models and can combine them into an ensemble that improves tracking.
 
 # Description
 
 ## Installation 
 
-The Ultrack plugin is a Java client for Python's Ultrack tracking software. The user needs to have
-Python installed in the system, preferably managed by [conda](https://conda.io/projects/conda/en/latest/index.html).
+The Ultrack plugin is a Java client for Python's Ultrack tracking software. The user needs to have Python installed in the system, preferably managed by [conda](https://conda.io/projects/conda/en/latest/index.html).
 The FIJI plugin depends on Ultrack's optional functionalities.
-Therefore, installation must include `ultrack[api]`.
+Therefore, installation must include `ultrack`.
 For example:
 ```bash
-pip install 'ultrack[api]'
+pip install ultrack
 ```
 
 For additional installation instructions, please refer to the [Ultrack documentation](https://github.com/royerlab/ultrack).
@@ -48,14 +39,9 @@ This plugin will call the Ultrack routines under the hood, enabling cell trackin
 
 ### FIJI integration
 
-The ultrack plugin is available after selecting the update site for ultrack in FIJI by clicking **HELP** → **Update** 
-→ **Manage Update Sites** and then searching for **Ultrack**. To activate the update site, click the checkbox in the
-**Activate** column, the leftmost one. Right after that, click **Apply and Close** and then **Apply Changes** in the now-enabled
-button at the bottom of the previous **ImageJ Update** window. That will trigger the download of the Ultrack
-plugin.
+The ultrack plugin is available after selecting the update site for ultrack in FIJI by clicking **HELP** → **Update** → **Manage Update Sites** and then searching for **Ultrack**. To activate the update site, click the checkbox in the **Activate** column, the leftmost one. Right after that, click **Apply and Close** and then **Apply Changes** in the now-enabled button at the bottom of the previous **ImageJ Update** window. That will trigger the download of the Ultrack plugin.
 
-After that, FIJI restart is required, and then the Ultrack plugin will be available in the **Plugins**→**Tracking**→
-**Ultrack** menu.
+After that, FIJI restart is required, and then the Ultrack plugin will be available in the **Plugins**→**Tracking**→**Ultrack** menu.
 
 ## How to Use
 
@@ -67,21 +53,18 @@ The steps below describe how to use the Ultrack plugin:
 
 {% include img
 src="/media/plugins/ultrack/00_init.png"
-align="left"
+align="center"
 caption="Ultrack GUI"
 %}
 
-3. (Optional but required in the first run) If Ultrack is correctly installed and accessible through the system path, 
-   the user can proceed to the next step. Otherwise, the user needs to set the path to the Ultrack executable in the 
-   **Environment**→**Select Conda Path** menu. It will open a dialog to select the `conda` executable, and 
-   then the user needs to select the preferred environment, which should be one indicated with the `[Ultrack found]` flag.
 
-4. Now you should be able to start the connection with the Ultrack software by clicking the **Start Ultrack Server** 
-   button. The plugin will update its GUI to show the available tracking options, as shown in the figure below.
+3. (Optional but required in the first run) If Ultrack is correctly installed and accessible through the system path, the user can proceed to the next step. Otherwise, the user needs to set the path to the Ultrack executable in the **Environment**→**Select Conda Path** menu. It will open a dialog to select the `conda` executable, and then the user needs to select the preferred environment, which should be one indicated with the `[Ultrack found]` flag. Additionally, one can click on `Create conda environment` to automatically create a new `conda` environment with `ultrack` and its required dependencies.
+
+4. Now you should be able to start the connection with the Ultrack software by clicking the **Start Ultrack Server** button. The plugin will update its GUI to show the available tracking options, as shown in the figure below.
 
 {% include img
 src="/media/plugins/ultrack/01_gui.png"
-align="left"
+align="center"
 caption="Ultrack GUI with server started"
 %}
 
@@ -90,9 +73,10 @@ caption="Ultrack GUI with server started"
     
 {% include img
 src="/media/plugins/ultrack/03_workflows.png"
-align="left"
+align="center"
 caption="Ultrack GUI with tracking workflows"
 %}
+
     
 in which the user can select the desired tracking workflow. The options are:
  - **Auto Detection From Image**: which provides a way to track cells using solely the image as input;
@@ -110,55 +94,55 @@ in which the user can select the desired tracking workflow. The options are:
 
 {% include img
 src="/media/plugins/ultrack/02_options.png"
-align="left"
+align="center"
 caption="Ultrack GUI with tracking options"
 %}
 
-6. After setting the parameters, the user can click the **Select Images** button to select the image to be tracked. 
-   It is worth mentioning that some workflows, such as **Manual Detection**, require more than one image to be selected.
+
+6. After setting the parameters, the user can click the **Select Images** button to select the image to be tracked. It is worth mentioning that some workflows, such as **Manual Detection**, require more than one image to be selected.
 
 {% include img
 src="/media/plugins/ultrack/04_image_opening.png"
-align="left"
+align="center"
 caption="Ultrack GUI with image opening"
 %}
 
+
 {% include img
 src="/media/plugins/ultrack/05_image_selection.png"
-align="left"
+align="center"
 caption="Ultrack GUI with image selector"
 %}
 
-7. Finally, the user can click the **Run** button to start the tracking process. The user can follow the tracking 
-   process in the **Ultrack Log** section. 
+
+7. Finally, the user can click the **Run** button to start the tracking process. The user can follow the tracking process in the **Ultrack Log** section. 
 
 {% include img
 src="/media/plugins/ultrack/06_run.png"
-align="left"
+align="center"
 caption="Ultrack GUI with tracking progress"
 %}
 
-8. To visualize the tracking results, the user can click the **View Tracks** button. Then, it will request a 
-   particular image to bind the tracks. In the end, The tracking results will be shown using the 
-   [TrackMate](https://imagej.net/plugins/trackmate/) plugin. 
+
+8. To visualize the tracking results, the user can click the **View Tracks** button. Then, it will request a particular image to bind the tracks. In the end, The tracking results will be shown using the [TrackMate](https://imagej.net/plugins/trackmate/) plugin. 
 
 {% include img
 src="/media/plugins/ultrack/07_open_tracks.png"
-align="left"
+align="center"
 caption="Ultrack GUI with track image selection"
 %}
 
+
 {% include img
 src="/media/plugins/ultrack/08_trackmate.png"
-align="left"
+align="center"
 caption="Tracks Viewer it Trackmate"
 %}
 
+
 # Acknowledgments
 
-We thank the ImageJ community for providing the necessary tools to develop this plugin, such as 
-the FIJI platform and integrations. We also acknowledge the developers from [Trackmate](https://imagej.net/plugins/trackmate/) plugin for their work 
-in the tool, which we rely on to visualize the tracking results.
+We thank the ImageJ community for providing the necessary tools to develop this plugin, such as the FIJI platform and integrations. We also acknowledge the developers from [Trackmate](https://imagej.net/plugins/trackmate/) plugin for their work in the tool, which we rely on to visualize the tracking results.
 
 # Citation
 If you find ultrack useful, please cite Ultrack as follows:
