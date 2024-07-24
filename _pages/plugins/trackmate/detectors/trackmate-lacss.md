@@ -1,11 +1,9 @@
 ---
 title: TrackMate-Lacss
-categories: [Segmentation,Tracking,Deep Learning]
-icon:
 description: Lacss integration in TrackMate.
-categories: [Segmentation,Tracking,Machine Learning]
-artifact: sc.fiji:TrackMate-Lacss
-section: TrackMate-Lacss.:Usage:Lacss parameters in the TrackMate UI.
+categories: [Segmentation,Tracking,Deep Learning,Machine Learning]
+pom-url: https://github.com/jiyuuchc/TrackMate-Lacss/blob/main/pom.xml
+website: https://github.com/jiyuuchc/TrackMate-Lacss
 ---
 
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [lacss](https://github.com/jiyuuchc/lacss) to segment cells in 2D or 3D. It is not included in the base installation of TrackMate and must be installed via its own [update site](https://sites.imagej.net/TrackMate-Lacss/).
