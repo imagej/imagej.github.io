@@ -12,16 +12,16 @@ Lacss itself is a deep-learning model for single-cell segmentation from microsco
 
 The design of TrackMate-Lacss follows a server/client model, using the [GRPC](https://grpc.io/) communication protocol. In such case, the Lacss program runs as a GRPC server, listening on a TCP port, which the thin client TrackMate-Lacss commuicates with the server at the TCP port, by sending the image data and receiving the segmentation results.
 
-From the users' perspective, the most important advantage of such design is so that they can run the server on a different computer than the one they run FIJI on. Modern deep learning algorithm heavily rely on sohisticated GPU hardware for speed. Our design allows the user to utlize a dedicated server for faster computation and for multiple users to share computational resources. 
+From the users' perspective, the most important advantage of such design is so that they can run the server on a different computer than the one they run Fiji on. Modern deep learning algorithm heavily rely on sohisticated GPU hardware for speed. Our design allows the user to utlize a dedicated server for faster computation and for multiple users to share computational resources. 
 
-On the other hand, there is also nothing wrong in running the server locally on the same machine running FIJI. It is entirly the users' choice in how to set it up.
+On the other hand, there is also nothing wrong in running the server locally on the same machine running Fiji. It is entirly the users' choice in how to set it up.
 
 ## Limitations
 3D segmentation results will not be rendered in full. Instead only a single point per cell will be disaplyed. This is the limitation of the TrackMate itself and will be resolved in the next major release of the TrackMate.
 
 ## Installation
 
-You need to install both the *Lacss*, which is an python package, and *TrackMate-Lacss*, which is an FIJI/ImageJ plugin.
+You need to install both the *Lacss*, which is an python package, and *TrackMate-Lacss*, which is an Fiji/ImageJ plugin.
 
 ### Install Lacss
 
