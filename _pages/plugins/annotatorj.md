@@ -1,7 +1,7 @@
 ---
 title: AnnotatorJ
 description: tool for object annotation in 2D for general purposes with export options
-categories: [Annotation, Image Annotation, DeepLearning, Deep-Learning, Import-Export, Segmentation, Object Detection, Classification, Interactive]
+categories: [Annotation, Image Annotation, Deep Learning, Import-Export, Segmentation, Object Detection, Classification, Interactive]
 source-label: on GitHub
 source-url: https://github.com/spreka/annotatorj
 license: GPL-3.0

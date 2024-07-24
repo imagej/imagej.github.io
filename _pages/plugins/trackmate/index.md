@@ -46,7 +46,7 @@ width='800'
 align="center" %}
 
 You can use these algorithms to track objects in various imaging modalities.
-For instance, here are T-cells imaged in bright-field tracked with a custom Deep-Learning model used with StarDist:
+For instance, here are T-cells imaged in bright-field tracked with a custom Deep Learning model used with StarDist:
 
 {% include video 
 src="https://www.biorxiv.org/content/biorxiv/early/2021/09/20/2021.09.03.458852/DC4/embed/media-4.mp4" 

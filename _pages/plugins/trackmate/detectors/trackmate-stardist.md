@@ -28,7 +28,7 @@ TrackMate-StarDist ships two detectors that will appear in TrackMate. After inst
 They describe in order:
 1. Using TrackMate-StarDist on a single-channel image.
 2. Using TrackMate-StarDist on a multi-channel image and exploiting the intensity information.
-3. Using TrackMate-StarDist with a custom Deep-Learning model.
+3. Using TrackMate-StarDist with a custom Deep Learning model.
 4. Using TrackMate-StarDist to segment a 3D image using a slice-by-slice approach.
 
 ### StarDist detector with builtin versatile nuclei model on a single channel image
@@ -319,7 +319,7 @@ Launch TrackMate. In the second panel titled **Select a detector**, choose **Sta
 
 In this tutorial, you will learn how to generate 3D labels using TrackMate.
 The segmentation of 3D objects can be very hard. 
-Deep-Learning proves to be very efficient but there are still many models and algorithms that only work for the 2D case.
+Deep Learning proves to be very efficient but there are still many models and algorithms that only work for the 2D case.
 In this tutorial, we "hack" TrackMate to segment 3D objects using the 2D StarDist segmentation algorithm.
 We trick TrackMate into thinking a 3D image is a 2D movie over time. 
 We track the fake 2D objects in Z, and use the resulting track information to rebuild the 3D segmentation of objects.

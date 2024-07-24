@@ -14,7 +14,7 @@ It requires Omnipose to be installed on your system and working independently. T
 
 ## Omnipose
 
-[Omnipose](https://github.com/kevinjohncutler/omnipose) is a segmentation algorithm based on Deep-Learning techniques, and inspired from the Cellpose architecture. Omnipose is well suited for bacterial cell segmentation, and achieves remarkable performances on mixed bacterial cultures, antibiotic-treated cells and cells of elongated or branched morphology.
+[Omnipose](https://github.com/kevinjohncutler/omnipose) is a segmentation algorithm based on Deep Learning techniques, and inspired from the Cellpose architecture. Omnipose is well suited for bacterial cell segmentation, and achieves remarkable performances on mixed bacterial cultures, antibiotic-treated cells and cells of elongated or branched morphology.
 
 If you use the Omnipose TrackMate module for your research, please don't forget to cite the Omnipose paper:
 
