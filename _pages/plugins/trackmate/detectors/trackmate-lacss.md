@@ -8,78 +8,91 @@ artifact: sc.fiji:TrackMate-Lacss
 section: TrackMate-Lacss.:Usage:Lacss parameters in the TrackMate UI.
 ---
 
-This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [lacss](https://github.com/jiyuuchc/lacss) to segment cells in 2D. It is not included in the core of TrackMate and must be installed via its own [update site](https://sites.imagej.net/TrackMate-Lacss/). This plugin also requires a python environment with the lacss library installed. This wiki-page offers insights for installation and how to optimize lacss integration. 
+This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [lacss](https://github.com/jiyuuchc/lacss) to segment cells in 2D or 3D. It is not included in the base installation of TrackMate and must be installed via its own [update site](https://sites.imagej.net/TrackMate-Lacss/).
 
-Lacss is a deep-learning model for single-cell segmentation from microscopy images. On GPU, the model is quite fast and ueful for processing large time-laspe dataset. In additon, Lacss is designed to utilize point labels for model training. Therefore experimental data such as DAPI counter stain can be used to easily train a custom model. See [lacss](https://github.com/jiyuuchc/lacss) website for more details. 
+Lacss itself is a deep-learning model for single-cell segmentation from microscopy images. On GPU, the model is very fast for processing large time-laspe dataset. In additon, Lacss is designed to utilize point labels for model training, and offers several efficient paths for adapting an existing model to new data characeristics. See [lacss](https://github.com/jiyuuchc/lacss) website for more details. 
 
-The TrackMate-Lacss module, is a thin Java wrapper around the Lacss python module which runs as a seperate process. The Java code communicates with the Python process via [anonymous pipe](https://en.wikipedia.org/wiki/Anonymous_pipe) - sending and receiving messages encoded in Google's [Protobuf](https://protobuf.dev/).
+The design of TrackMate-Lacss follows a server/client model, using the [GRPC](https://grpc.io/) communication protocol. In such case, the Lacss program runs as a GRPC server, listening on a TCP port, which the thin client TrackMate-Lacss commuicates with the server at the TCP port, by sending the image data and receiving the segmentation results.
+
+From the users' perspective, the most important advantage of such design is so that they can run the server on a different computer than the one they run FIJI on. Modern deep learning algorithm heavily rely on sohisticated GPU hardware for speed. Our design allows the user to utlize a dedicated server for faster computation and for multiple users to share computational resources. 
+
+On the other hand, there is also nothing wrong in running the server locally on the same machine running FIJI. It is entirly the users' choice in how to set it up.
+
+## Limitations
+3D segmentation results will not be rendered in full. Instead only a single point per cell will be disaplyed. This is the limitation of the TrackMate itself and will be resolved in the next major release of the TrackMate.
 
 ## Installation
 
-Installation requires you to subscribe to an  update site in Fiji's plugin updater. It also requires a working python environment with the Lacss library.
+You need to install both the *Lacss*, which is an python package, and *TrackMate-Lacss*, which is an FIJI/ImageJ plugin.
 
-### TrackMate-Lacss update site
+### Install Lacss
 
-In Fiji, go to {% include bc path='Help|Update...' %}. Update and restart Fiji until it is up-to-date. Then go to the update menu once more, and click on the `Manage update sites` button, at the bottom-left of the updater window. A new window containing all the known update sites will appear. Click on the  **TrackMate-Lacss** check box and restart Fiji one more time. 
+The short version:
 
+```
+pip install lacss
+```
 
-### Lacss
+Slightly longer version: See the [Lacss Documentation](https://jiyuuchc.github.io/lacss/install/) for more details. We recommend installation on a Linux computer with GPU.
 
-This step is independent of Fiji. See the updated Lacss API for most up-to-date method [here](https://jiyuuchc.github.io/lacss/install/)
+_Lacss installation is independent of Fiji._
 
-We recommend installation of GPU Version if possible. CPU, while useable, loses that advantage of processing speed and may increase segmentation time dramaticly. 
+### Install TrackMate-Lacss
 
-*Important* Make sure you launch FIJI within the activted virtual environemnt you use for the Lacss installation. Otherwise FIJI will not be able to find and start the python module.
-
-## Limitations
-
-- The plugin only offer a few pre-trained models. For best results requires own seperate model training.
+In Fiji, go to {% include bc path='Help|Update...' %}, update, and click on the `Manage update sites` button (bottom-left). A new window containing all the known update sites will appear. Click on the  **TrackMate-Lacss** check box and restart Fiji. 
 
 ## Usage
+#### Starting the Lacss server
+To start Lacss on a remote server:
+```
+python -m lacss.deploy.remote_server --modelpath=<path_to_model_file>
+```
+The server should print out an randomized token string, which serves as the key for access. You should copy and save it somewhere. 
+```
+> COPY THE TOKEN BELOW FOR ACCESS.
+> =======================================================================
+> adK11qJ7-LcnIsFRbcPKy8x46Pz6bxJpsXodOhd4P_k
+> =======================================================================
+```
+The <path_to_model_file> is the local path to the file that contains the model parameters. You can get the download links of model files by calling the above command without arguments:
+```
+python -m lacss.deploy.remote_server
+```
 
+To start Lacss locally:
+```
+python -m lacss.deploy.remote_server --modelpath=<path_to_model_file> --local
+```
 #### Lacss Parameters in the TrackMate UI
 
-{% include img src="/media/plugins/trackmate/trackmate-lacss-ui.png" align='center' width='300' %}
+##### `Server`
 
-As shown, these are the changeable parameters in the GUI.
+The address to the GRPC server in the format of "hostname:port". The default is for a local server.
 
-##### `Path to Model Parameter`
+##### `Access token`
 
-The Path to Model Parameter can be 1 of 2 options:
-
-- Default; Which pulls in a pre-trained model contained within the .jar file
-- Custom ; Which prompts you to select the _path to a lacss model file_. For example: `C:\Users\Nick\Downloads\livecell_a431.pkl`
-
-##### `Pre-Trained Models:`
-Currently:
-- the `default` model - a model trained with a combination of beight-field and fluorescence images.  Should work on most microscopy images.
-- the `custom` model - several additional pretrained models can be downloaded from [hugging face](https://huggingface.co/jiyuuchc), or you can train one yourself.
+The token printed out by the server. Leave it empty for a local server.
 
 ##### `Minimum Cell Area`
 
-A float type that defines the minimum area of a valid prediction. 
+The minimum cell area/volume in units of pixels.
 
 ##### `Scaling Factor`
 
-A Float type with default = 1. Contols a 	image scaling factor. If not 1, the input image will be resized internally before fed to the model. The results will be resized back to the scale of the orginal input image. 
+If not 1, the input image will be resized internally before sent to the model. This is useful if your cell sizes (in pixles) differs significantly from those of the training data.
+##### `Score Treshold`
 
-##### `IOU Threshold`
+Minimum score needed to be considered a valid prediction. 
 
-A float type with default = 0. 
+##### `NMS IOU`
 
-##### `Segmentation Treshold`
+Lacss is an object detection model, and can detect cells that are right on top of each others. If you want to disable this behavior, set a non-zero IOU threshold to remove cells that are overlapping with others.
 
-A float type with default = 0.5. Controls the minimum score value to be considered a valid prediction. 
+##### `Multi-Channel`
 
-##### `Remove Out of Bounds`
-
-Whether to remove out-of-bound predictions. Default is False or unchecked.
-
-##### `Multi Channel`
-
-Whether to consider multichannel. Default is True or checked. 
+By default the segmentation is performed by considering all color channels. Uncheck this to use only a single channel. 
 
 _____
 
 * This plugin and page was adopted from Jean-Yves Tinevez's Trackmate-Cellpose plugin and wiki-page* 
-* Last updated - Dec 2023*
+* Last updated - July 2024*
