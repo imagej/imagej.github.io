@@ -58,7 +58,7 @@ When tracing 4D or 5D images, TRACES is preferable because the channel and/or ti
 | Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exclusive to SNT. But [open and easily parsable](/plugins/snt/extending#traces-file-format) |
 
 ### Which file formats for neuronal reconstruction are supported by SNT?
-SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the MouseLight project).
+SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the [MouseLight](https://ml-neuronbrowser.janelia.org/) project).
 
 ### Which image file formats are supported by SNT?
 Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.

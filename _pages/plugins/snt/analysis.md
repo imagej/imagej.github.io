@@ -27,7 +27,14 @@ If this becomes an issue, consider fitting paths in situ using the Replace exist
 # Statistics
 SNT assembles comparison reports and simple statistical reports (two-sample t-test/one-way ANOVA) for up to six groups of cells. This is described in [Comparing Reconstructions](#comparing-reconstructions). In addition, descriptive statistics are commonly reported in histograms from *Frequency/Distribution Analysis* commands.
 
-{% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png" caption="Example of histograms obtained from the Path Manager's _Branch-based Distributions..._ command."%}
+{% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png"
+caption="
+**_Branch-based Distributions..._**
+<p>
+SNT charts are zoomable, scalable, and are rendered using scientific plotting styles to be as publication-ready as possible.
+Righ-click on the plot canvas to export it as scalable vector graphics (SVG), acess customization controls, a light/dark theme toggle, and options to aggregate existing charts in multi-panel figures. With simple charts, it is typically enough to double-click on plotted components to edit them.
+</p>
+"%}
 
 # Convex Hull Analysis
 _Convex hull_ commands (in SNT  main dialog, [Rec. viewer](/plugins/snt/reconstruction-viewer) and [Rec. plotter](/plugins/snt/manual#plotter)) compute the 2D or 3D convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains the nodes of its paths). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size).
@@ -113,7 +120,7 @@ Atlas-based analyses require reconstruction nodes to be tagged with neuropil IDs
 
 
 ### Brain Area Frequencies
-This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog, or % include bc path='Analyze & Measure| '%} menu in Reconstruction Viewer) summarizes projection patterns across brain areas by computing frequency histograms of how often a morphometric trait (no. of tips, cable length, etc.) occurs across brain regions (neuropil labels). Such histograms can be obtained for groups of cells, isolated cells, or parts thereof.
+This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog, or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer) summarizes projection patterns across brain areas by computing frequency histograms of how often a morphometric trait (no. of tips, cable length, etc.) occurs across brain regions (neuropil labels). Such histograms can be obtained for groups of cells, isolated cells, or parts thereof.
 
 {% include gallery align="fill" content=
 "
@@ -122,37 +129,43 @@ This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog,
 "
 %}
 
-
 ### Annotations Graphs
-Two types of _Annotations Graphs_ include boxplots and Sankey (flow) diagrams reporting innervation across brain areas/neuropil regions:
+Annotations Graphs rely on brain annotations (i.e., neuropil labels) and are typically used to obtain unbiased, semi-quantitative summaries of projectomes or relationships between brain areas. Annotation graphs can be generated for a single cell or groups of cells. There are three major types of annotation graphs reporting neurite occupancy across brain areas/neuropil regions: 1) Sankey (flow) diagrams, 2) Ferris wheel diagrams, and 3) Boxplots:
 
-{% include gallery align="fill" content=
+{% include gallery align="center" content=
 "
 /media/plugins/snt/sankey-flow-plot-with-tooltip.png | Flow-plot (Sankey diagram) for two groups of MouseLight PT-neurons: Medulla-projecting (MY Proj.) and Thalamus-projecting (TH Proj.) _Flows_ depict axonal cable length (µm) at target areas (colored using the default ontology color-scheme adopted by the Allen Mouse Brain Common Coordinate Framework, CCFv3).
 /media/plugins/snt/brain-analysis-group-boxplot.png | The same flow-plot data in boxplot format (see *Flow and Ferris-Wheel Diagrams Demo* script)
+/media/plugins/snt/graph-viewer-ferris-wheel.png | Ferris-wheel diagram for the group of MY-projecting neurons. These cells are located in the secondary motor cortex (MOs, center vertex). Outer vertices depict target areas innervated by the cells' axons (automatically grouped by ontology). Edges encode axonal cable length (µm).
 "
 %}
 
-Other types of _Annotations Graphs_ are described in [Graph-based Analysis](#graph-based-analysis).
+Prompts for generation of Annotation graphs, typically require a common set of inputs to be specified:
+
+- **Metric**: The morphometric trait defining connectivy (cable length, no. of tips, etc.)
+- **Cutoff value**: Brain areas associated with less than this quantity are excluded from the diagram. E.g., if metric is "No. of Tips" and this value is 10, only brain areas targetted by at least 11 tips are reported
+- **Deepest ontology** The highest ontology level to be considered for neuropil labels. As a reference, the deepest level for mouse brain atlases is around 10. Setting this value to 0 forces SNT to consider all depths
+
+Other types of specialized graphs are described in [Graph-based Analysis](#graph-based-analysis).
 
 
 <span id="dendrogram-viewer"></span>
 # Graph-based Analysis
 Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
 
-The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The_Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG and SVG.
+The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The _Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG and SVG.
 
 Typically, the most common types of graphs handled by _Graph Viewer_ are:
 
- - **Dendrograms**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Utilities|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer).
+ - **Graphs based on morphology**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Utilities|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer). Typically, dendrograms are generated for single cells
 
- - **Annotation Graphs** These rely on brain annotations (i.e., neuropil labels) and are typically used to summarize projectomes or relationships between brain areas, including ferris-wheel diagrams. Annotation graphs can be generated for a single cell or groups of cells.
+ - **Graphs based on brain annotations** As mentioned [above](#annotations-graphs), these rely on brain annotations (i.e., neuropil labels). Annotation graphs can be generated for a single cell or groups of cells
 
-{% include gallery align="fill" content=
+{% include gallery align="center" content=
 "
 /media/plugins/snt/graph-viewer-dendrogram-simple.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) under the _vertical hierarchical_ layout. Edges depict branch length (µm). Vertices depict the root node (1), branch-, and end- points.
 /media/plugins/snt/graph-viewer-dendrogram-color-coded.png | Dendrogram of a neuronal tree (_Toy neuron_ demo dataset) color-coded by edge weight, i.e., branch length (µm), under the default layout (_vertical tree_).
-/media/plugins/snt/graph-viewer-ferris-wheel.png | Ferris-wheel diagram for a group of MouseLight PT-neurons (medulla-projecting) located in the secondary motor cortex (MOs, center vertex). Outer vertices depict target areas innervated by the cells' axons (automatically grouped by ontology). Edges encode axonal cable length (µm).
+/media/plugins/snt/snt-graph-viewer-ml-dendrites.png | Relationships between brain areas associated with the _MouseLight dendrites_ demo dataset
 "
 %}
 

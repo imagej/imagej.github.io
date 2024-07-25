@@ -38,8 +38,10 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-recviewer-convexhull-and-surface.png | [Convex hulls](/plugins/snt/analysis#convex-hull-analysis) and [surface annotations](/plugins/snt/reconstruction-viewer#geometric-annotations)
 /media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
 /media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations
+/media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer/)
+/media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/analysis#sholl-analysis) and [Strahler](/plugins/snt/analysis#strahler-analysis) analysis
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)
-/media/plugins/snt/snt-projectome-vis.png | Routines to summarize data from [projectomes and connectomics](/plugins/snt/analysis#graph-based-analysis)
+/media/plugins/snt/graph-viewer-ferris-wheel.png | Routines to summarize data from [projectomes and connectomics](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/snt-astrocyte-example.png | Glia analysis: Bulk characterization (width and length) of astrocytic processes ([use case](https://forum.image.sc/t/determining-astrocyte-width-from-2d-images-using-fiji-snt/56426/2))
 /media/plugins/snt/snt-non-neuronal-example.png | Not only neurons: SNT can be used to analyze many types of filamentous structures
 "

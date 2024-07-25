@@ -166,7 +166,10 @@ Creates multi-panel figures from chosen reconstructions, according to the follow
 - **Style**: Whether cells should be rendered in a single pane or in a multipanel montage with 1 cell per pane
 - **Type**: Whether the illustration should be a bitmap image (typically rendered at 1micron per pixel); a scalable graphics 2D image (see [Reconstruction Plotter](#reconstruction-plotter)), or an interactive 3D scene (see [Reconstruction Viewer](/plugins/snt/reconstruction-viewer))
 - **View**: The display plane of the scene: XY (the default), XZ, or ZY. This option pertains only to static 2D scenes
-- **Positioning**: Whether reconstructions should be rendered under the original coordinates, or whether every cell in the scene should be translatated to a common xyz coordinate (0,0,0) 
+- **Positioning**: Whether reconstructions should be rendered under the original coordinates, or whether every cell in the scene should be translatated to a common xyz coordinate (0,0,0)
+<div align="center">
+  <img src="/media/plugins/snt/snt-create-figure-demo.gif" title="Create figure: 3D (interactive) multi-panel montage" width="60%" alt="Create figure: 3D (interactive) multi-panel montage" />
+</div>
 
 
 <span id="plotter"></span>
