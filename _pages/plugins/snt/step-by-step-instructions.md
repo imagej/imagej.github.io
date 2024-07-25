@@ -11,7 +11,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**These instructions were last revised for version 4.3.0**.<br>
+**This page was last revised for version 4.3.0**.<br>
 Please help us to keep these walk-throughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -218,7 +218,7 @@ Root detection requires an area ROI marking the root of the arbor exists on the 
 
 - **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma.
 
-- **None. Igore any ROIs** If no ROI exists an arbitrary root node is used.
+- **None. Ignore any ROIs** If no ROI exists an arbitrary root node is used.
 
 When parsing 3D images, toggling the *Restrict to active plane* checkbox clarifies that the root(s) marked by the ROI occurs at the active ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
 
@@ -281,7 +281,7 @@ There are two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) 
 
 The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts. 
 
-SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highligths the type of mitigation you should expect.
+SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well as existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highligths the type of mitigation you should expect.
 
 Once undesired motion has been mitigated:
 

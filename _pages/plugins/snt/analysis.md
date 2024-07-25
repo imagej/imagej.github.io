@@ -16,7 +16,7 @@ SNT provides a couple ways to measure reconstructions. To measure complete cells
 
 The reason for distinguishing between branch-based (i.e., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
-A convenience _Quick Measurements_ command also exists ( {% include bc path='Analysis| '%} menu in the main SNT dialog (or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
+A convenience _Quick Measurements_ command also exists ( {% include bc path='Analysis| '%} menu in the main SNT dialog or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
 
 Batch measurements of reconstructions can be accomplished via scripting. See, e.g., the [bundled template script](/plugins/snt/scripting#bundled-templates) *Measure\_Multiple\_Files.py*, and related batch scripts for examples.
 

@@ -21,7 +21,12 @@ SNT Scripts are intentionally written in multiple languages to demonstrate flexi
 
 ## Bundled Templates
 {% include img align="right" src="/media/plugins/snt/snt-scripts-menu.png" width="200px" caption="Scripts menu in main dialog"%}
-There are 50+ scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Render* (visualizations), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Demos* (teaching examples).
+There are 50+ scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Demos* (teaching examples), *Render* (visualizations), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Time-lapses* (time-lapse utilities).
+
+Bundled scripts can be accessed in two ways:
+
+- Scripts menu in the main SNT dialog and SNT Shortcuts window (hold {% include key keys='Shift' %} while selecting a script to have it open in the Script Editor)
+- In the {% include bc path='Templates|Neuroanatomy| ' %} list in the Script Editor
 
 Your script can also be bundled with SNT, or made available through the Neuroanatomy update site. Did you write a useful routine? Please [announce it](https://forum.image.sc/tag/snt), or submit a [pull request](https://github.com/morphonets/SNT/pulls) so that it can be distributed with Fiji!
 

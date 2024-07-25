@@ -17,15 +17,17 @@ See [Installation details](/plugins/snt/index#installation).
 ### How do I cite SNT?
 
 - {% include citation id='plugins/snt' %}
+
 To reference specific modules/plugins that enhance SNT:
+
 - **[Sholl Analysis](/plugins/sholl-analysis)**
   {% include citation id="plugins/sholl-analysis" %}
-- **[Tubular Geodesics](/plugins/snt/tubular-geodesics)**
-  {% include citation doi='10.1109/cvpr.2012.6247722' %}
 - **[Cx3D](/plugins/snt/modeling)**
-  {% include citation id="plugins/snt/modeling" %}
+  {% include citation doi="10.3389/neuro.10.025.2009" %}
+- **[Tubular Geodesics](/plugins/snt/extending#tubular-geodesics)**
+  {% include citation doi='10.1109/cvpr.2012.6247722' %}
 
-Given all the [changes](#what-is-the-difference-between-snt-and-simple-neurite-tracer), the 2011 publication for Simple Neurite Tracer is no longer considered a primary citation:
+The first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
 
 - {% include citation doi='10.1093/bioinformatics/btr390' %}
 
@@ -37,7 +39,7 @@ Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and r
 
 When SNT is compiled, a [suite of tests](https://github.com/morphonets/SNT/tree/-/src/test/java/sc/fiji/snt) is run to detect deficiencies in the code base. Morphometry results are benchmarked against values obtained in [L-Measure](http://cng.gmu.edu:8080/Lm/) and [NeuroM](https://github.com/BlueBrain/NeuroM). However, no test suite is ever perfect. If you detect inaccuracies, please {% include github org='morphonets ' repo='SNT ' label='report ' %} them\!
 
-### What is a SWC file?1
+### What is a SWC file?
 <span id="swc"></span>
 It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose *lingua franca* of a neuron's three-dimensional structure. The latest [SWC specification](https://swc-specification.readthedocs.io/en/latest/index.html) provides more details about the format. SNT supports all known variants of the format including [ESWC](https://www.nature.com/articles/sdata2017207), [SWC+](https://neuroinformatics.nl/swcPlus/), and latest [specification](https://swc-specification.readthedocs.io/en/latest/index.html) (v1.0.3, as of this writing). The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, an unrelated {% include wikipedia title="Adobe SWC file" %} format also used to exist.
 
@@ -62,7 +64,7 @@ SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by 
 Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
 
 ### How do I (batch) convert TRACES to SWC?
-Use the {% include bc path='Batch|Convert Traces to SWC'%} template script.
+Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from the Scripts menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy|'%} menu in the Script Editor. 
 
 ### How can I improve SNT documentation?
 Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!
