@@ -224,8 +224,8 @@ The number of times a secondary peak occurs in a Sholl profile. See [Max inters.
 ###### Sholl: Ramification index
 See [Schoenen Ramification index](/plugins/sholl-analysis#schoenen-sampled) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
 
-###### Sholl: Skeweness
-See [Skeweness](/plugins/sholl-analysis#skeweness) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+###### Sholl: Skewness
+See [Skewness](/plugins/sholl-analysis#skewness) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
 
 ###### Sholl: Sum
 See [Sum inters.](/plugins/sholl-analysis#sum) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
@@ -269,7 +269,7 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 A polygon mesh defines the shape of a three-dimensional polyhedral object. In neuronal anatomy, meshes define neuropil annotations, typically compartments of a reference brain atlas (e.g., the hippocampal formation in mammals, or mushroom bodies in insects)
 
 ###### Multi-dimensional image
-An image with more than 3 dimensions (3D). Examples include fluorescent images associated with multiple fluorophores (multi-channel) and images with a time-dimension (time-lapse videos). A 3D multi-channel timelapse has 5 dimensions
+An image with more than 3 dimensions (3D). Examples include fluorescent images associated with multiple fluorophores (multichannel) and images with a time-dimension (time-lapse videos). A 3D multichannel timelapse has 5 dimensions
 
 ###### Neurite
 Same as neuronal process. Either an axon or a dendrite

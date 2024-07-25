@@ -17,15 +17,17 @@ See [Installation details](/plugins/snt/index#installation).
 ### How do I cite SNT?
 
 - {% include citation id='plugins/snt' %}
+
 To reference specific modules/plugins that enhance SNT:
+
 - **[Sholl Analysis](/plugins/sholl-analysis)**
   {% include citation id="plugins/sholl-analysis" %}
-- **[Tubular Geodesics](/plugins/snt/tubular-geodesics)**
-  {% include citation doi='10.1109/cvpr.2012.6247722' %}
 - **[Cx3D](/plugins/snt/modeling)**
-  {% include citation id="plugins/snt/modeling" %}
+  {% include citation doi="10.3389/neuro.10.025.2009" %}
+- **[Tubular Geodesics](/plugins/snt/extending#tubular-geodesics)**
+  {% include citation doi='10.1109/cvpr.2012.6247722' %}
 
-The original [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication is:
+The first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
 
 - {% include citation doi='10.1093/bioinformatics/btr390' %}
 
@@ -62,7 +64,7 @@ SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by 
 Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
 
 ### How do I (batch) convert TRACES to SWC?
-Use the {% include bc path='Batch|Convert Traces to SWC'%} template script.
+Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from the Scripts menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy|'%} menu in the Script Editor. 
 
 ### How can I improve SNT documentation?
 Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!

@@ -369,7 +369,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 - <span id="bi">**Branching Index (*BI*)** An index that summarizes neurite arborization as defined by Garcia-Segura & Perez-Marquez[^7]. Note that this index is broadly affected by radius step size. Comparison of this metric across cells sampled differently will be nonsensical, as [demonstrated here](https://forum.image.sc/t/access-sholl-profiles-with-python-script-from-tracings/78837/6). Step size should always be included (e.g., BI<sub>10μm</sub>=20) when reporting this metric.
 
-- <span id="centroid">**Centroid radius**  The abcissa of the {% include wikipedia title='Centroid' text='centroid'%} (i.e., the geometric center or barycenter) of the linear profile. It is [highlighted](#sholl-plots) on the *N* vs *Distance* plot.
+- <span id="centroid">**Centroid radius**  The abscissa of the {% include wikipedia title='Centroid' text='centroid'%} (i.e., the geometric center or barycenter) of the linear profile. It is [highlighted](#sholl-plots) on the *N* vs *Distance* plot.
 
 - **Centroid value** The ordinate of the {% include wikipedia title='Centroid' text='centroid'%} (i.e., the geometric center or barycenter) of the linear profile. It is [highlighted](#sholl-plots) on the *N* vs *Distance* plot.
 

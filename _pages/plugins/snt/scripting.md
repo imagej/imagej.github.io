@@ -21,7 +21,12 @@ SNT Scripts are intentionally written in multiple languages to demonstrate flexi
 
 ## Bundled Templates
 {% include img align="right" src="/media/plugins/snt/snt-scripts-menu.png" width="200px" caption="Scripts menu in main dialog"%}
-There are 50+ scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Render* (visualizations), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Demos* (teaching examples).
+There are 50+ scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Demos* (teaching examples), *Render* (visualizations), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Time-lapses* (time-lapse utilities).
+
+Bundled scripts can be accessed in two ways:
+
+- Scripts menu in the main SNT dialog and SNT Shortcuts window (hold {% include key keys='Shift' %} while selecting a script to have it open in the Script Editor)
+- In the {% include bc path='Templates|Neuroanatomy| ' %} list in the Script Editor
 
 Your script can also be bundled with SNT, or made available through the Neuroanatomy update site. Did you write a useful routine? Please [announce it](https://forum.image.sc/tag/snt), or submit a [pull request](https://github.com/morphonets/SNT/pulls) so that it can be distributed with Fiji!
 
@@ -119,37 +124,39 @@ As mentioned, SNT's [source code repository](https://github.com/morphonets/SNT) 
 
 # Example
 
-Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Tools & Utilities|Script This Viewer...'%} [command](/plugins/snt/reconstruction-viewer#utilities). It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the drop-down menu of the *Preferred Language* [option](/plugins/snt/reconstruction-viewer#settings).
+Programmatic control over an open instance of [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) (either called from within SNT or as a standalone application) can be achieved by selecting the {% include bc path='Scripting|Record Script...'%} [command](/plugins/snt/reconstruction-viewer#scripting). It will then open an instance of SNT's script recorder loaded with a boilerplate template containing the most essential imports and [script parameters](/scripting/parameters). The default programming language for this template can be chosen from the Recorder's drop-down menu.
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
 {% highlight python %}
+# Last tested: 2024-07-12, SNTv4.3.0pre
 #@ Context context
 #@ DatasetService ds
 #@ DisplayService display
 #@ ImageJ ij
-#@ LegacyService ls
 #@ LogService log
 #@ LUTService lut
 #@ SNTService snt
 #@ UIService ui
 
-from sc.fiji.snt import (Path, PathAndFillManager, SNT, SNTUI, Tree)
-from sc.fiji.snt.analysis import (MultiTreeColorMapper, PathProfiler, RoiConverter,
-        TreeAnalyzer, TreeColorMapper, TreeStatistics)
-from sc.fiji.snt.analysis.graph import GraphUtils
+from sc.fiji.snt import Path, PathAndFillManager, SNT, SNTUI, Tree
+from sc.fiji.snt.analysis import GroupedTreeStatistics, MultiTreeStatistics, NodeStatistics, TreeStatistics,\
+            ConvexHullAnalyzer, PersistenceAnalyzer, ShollAnalyzer, StrahlerAnalyzer, NodeColorMapper,\
+            TreeColorMapper, PathProfiler, PathStraightener, RoiConverter, SkeletonConverter, SNTChart, SNTTable
+from sc.fiji.snt.analysis.graph import DirectedWeightedGraph
 from sc.fiji.snt.analysis.sholl.parsers import TreeParser
-from sc.fiji.snt.annotation import (AllenCompartment, AllenUtils, VFBUtils, ZBAtlasUtils)
-from sc.fiji.snt.io import (FlyCircuitLoader, MouseLightLoader, NeuroMorphoLoader)
-from sc.fiji.snt.plugin import (SkeletonizerCmd, StrahlerCmd)
-from sc.fiji.snt.util import (BoundingBox, PointInImage, SNTColor, SWCPoint)
-from sc.fiji.snt.viewer import (Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D)
+from sc.fiji.snt.annotation import AllenCompartment, AllenUtils, VFBUtils, ZBAtlasUtils
+from sc.fiji.snt.io import FlyCircuitLoader, MouseLightLoader, NeuroMorphoLoader
+from sc.fiji.snt.plugin import SkeletonizerCmd, StrahlerCmd
+from sc.fiji.snt.util import BoundingBox, PointInImage, SNTColor, SWCPoint
+from sc.fiji.snt.viewer import Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D
 
 # Documentation Resources: https://imagej.net/plugins/snt/scripting
-# SNT API: https://morphonets.github.io/SNT
-# Rec. Viewer's API: https://morphonets.github.io/SNT/index.html?sc/fiji/snt/viewer/Viewer3D.html
-# Tip: Programmatic control of the Viewer's scene can be set using the Console info
-# produced when calling viewer.logSceneControls() or pressing 'L' when viewer is frontmost
+# Latest SNT API: https://javadoc.scijava.org/SNT/
+
+# Rec. Viewer's API: https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/viewer/Viewer3D.html
+# Tip: Scene details can be printed to Console using `viewer.logSceneControls()` or recorded
+# by pressing 'L' (mnemonic: [L]og) when viewer is frontmost
 # If opening this template from the standalone RV, the instance ID of the Viewer (e.g., 2)
 # will be automatically passed as a parameter to getRecViewer()
 viewer = snt.getRecViewer()

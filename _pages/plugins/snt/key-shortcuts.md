@@ -23,7 +23,7 @@ The Command Palette is the fastest way to access actions and discover their resp
 3. Press {% include key keys='up' %} or {% include key keys='down' %} to select a command (or use the  {% include key keys='mouse wheel' %})
 4. Press {% include key keys='Enter' %} to run it
 {% endcapture %}
-{% include notice background-color="white" icon="tech" content=cmdpalette %}
+{% include notice background-color="white" icon="none" content=cmdpalette %}
 
 ### Interactive Prompt
 
@@ -85,6 +85,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key key='left' %} {% include key key='right' %} {% include key key='up' %} {% include key key='down' %} | Rotate (with mouse: {% include key keys='Left Drag' %}) |
 | {% include key keys='shift|left' %} {% include key key='right' %} {% include key key='up' %} {% include key key='down' %} | Pan (with mouse: {% include key keys='Right Drag' %}) |
 | {% include key key='+' %} / {% include key key='-' %} | Zoom (with mouse: {% include key keys='Mouse Wheel' %}) |
+| {% include key keys='CTRL|Left Click' %} | Snap to top/side view |
 | {% include key key='A' %}        | Toggle <u>A</u>xes |
 | {% include key key='C' %}        | Toggle <u>C</u>amera Mode |
 | {% include key key='D' %}        | Toggle <u>D</u>ark Mode |
