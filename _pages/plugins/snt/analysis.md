@@ -125,7 +125,7 @@ This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog,
 {% include gallery align="fill" content=
 "
 /media/plugins/snt/brain-analysis-combined-histograms.png | *Brain Area Frequencies...* in which *No. of tips* was tabulated across the motor cortext subregions associated with the four cells in the *File › Load Demo Dataset...  › MouseLight dendrites* demo dataset
-/media/plugins/snt/snt-brain-analysis-ipsi-contra.png | *Brain Area Frequencies...* of a single cell (*Hemisphere Analysis* [notebook](https://github.com/morphonets/SNT/tree/main/notebooks)) in which *Cable length* of axonal projections was tabulated across ipsilateral and contralateral hemisphere regions. Note how projections to the Ectorhinal area (ECT) are exclusively ipsilateral
+/media/plugins/snt/snt-brain-analysis-ipsi-contra.png | *Brain Area Frequencies...* of a single cell in which *Cable length* of axonal projections was tabulated across ipsilateral and contralateral hemisphere regions.  See the *Hemisphere Analysis* [notebook](https://github.com/morphonets/SNT/tree/main/notebooks) for details
 "
 %}
 
