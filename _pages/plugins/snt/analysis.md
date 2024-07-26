@@ -31,7 +31,7 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 caption="
 **_Branch-based Distributions..._**
 <p>
-SNT charts are zoomable, scalable, and are rendered using scientific plotting styles to be as publication-ready as possible.
+SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible.
 Righ-click on the plot canvas to export it as scalable vector graphics (SVG), acess customization controls, a light/dark theme toggle, and options to aggregate existing charts in multi-panel figures. With simple charts, it is typically enough to double-click on plotted components to edit them.
 </p>
 "%}

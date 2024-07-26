@@ -24,7 +24,7 @@ SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses 
 
 SNT is toolbox for tracing and analyzing neuronal morphologies imaged using light microscopy. It aims to be as complete as possible, while remaining efficient to use. It can be used as a desktop application, or a [scripting library](/plugins/snt/scripting). It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) software, and aggregates other tools previously scattered across the Fiji ecosystem of plugins, including [Sholl](/plugins/sholl-analysis)[^2] and [Strahler](/plugins/strahler-analysis) plugins.
 
-The [source repository](https://github.com/morphonets/SNT) contains more details about the project, including a list of [features](https://github.com/morphonets/SNT#features), and [implementation details](https://github.com/morphonets/SNT/blob/-/NOTES.md#notes)
+The [source repository](https://github.com/morphonets/SNT) contains more details about the project, including a list of [features](https://github.com/morphonets/SNT#features), and [implementation details](https://github.com/morphonets/SNT/blob/-/NOTES.md#notes).
 
 {% include gallery align="fill" content=
 "
@@ -38,7 +38,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-recviewer-convexhull-and-surface.png | [Convex hulls](/plugins/snt/analysis#convex-hull-analysis) and [surface annotations](/plugins/snt/reconstruction-viewer#geometric-annotations)
 /media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
 /media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations
-/media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer/)
+/media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer)
 /media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/analysis#sholl-analysis) and [Strahler](/plugins/snt/analysis#strahler-analysis) analysis
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/graph-viewer-ferris-wheel.png | Routines to summarize data from [projectomes and connectomics](/plugins/snt/analysis#graph-based-analysis)
