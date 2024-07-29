@@ -32,7 +32,8 @@ caption="
 **_Branch-based Distributions..._**
 <p>
 SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible.
-Righ-click on the plot canvas to export it as scalable vector graphics (SVG), acess customization controls, a light/dark theme toggle, and options to aggregate existing charts in multi-panel figures. With simple charts, it is typically enough to double-click on plotted components to edit them.
+Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures. 
+With histograms, normal distribution curves and quartile marks can be overlaid on frequencies. With simple charts, it is typically enough to double-click on plotted components to edit them. 
 </p>
 "%}
 
@@ -153,7 +154,7 @@ Other types of specialized graphs are described in [Graph-based Analysis](#graph
 # Graph-based Analysis
 Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
 
-The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The _Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG and SVG.
+The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The _Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG, and SVG.
 
 Typically, the most common types of graphs handled by _Graph Viewer_ are:
 
@@ -207,7 +208,7 @@ The dialog  prompt for this feature allows selection of up to six directories co
 
 - A simple statistical report, including descriptive statistics and a two-sample t-test (when comparing two groups) or one-way ANOVA (when comparing three or more groups)
 - Comparison plots for the chosen metric: Grouped histogram and boxplot
-- _Montages_ of groups. These are multi-panel vignettes of up to 10 group exemplars. These can all be exported as PNG or SVG.
+- _Montages_ of groups. These are multi-panel vignettes of up to 10 group exemplars. These can all be exported as PDF, PNG, or SVG
 
 {% include img align="center" src="/media/plugins/snt/snt-compare-reconstructions-overview.png" caption="Comparing _No. of branches_ between two cell groups: Overview of outputs."%}
 
