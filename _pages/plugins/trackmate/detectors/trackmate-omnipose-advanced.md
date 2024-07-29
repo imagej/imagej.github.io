@@ -1,22 +1,20 @@
 ---
-title: TrackMate-Omnipose
+title: TrackMate-Omnipose-Advanced
 categories: [Segmentation,Tracking,Deep Learning]
 icon: /media/icons/omniposelogo.png
-description: omnipose integration in TrackMate.
+description: Omnipose integration in TrackMate with additional hyper-parameters.
 categories: [Segmentation,Tracking,Machine Learning]
 artifact: sc.fiji:TrackMate-Cellpose
 ---
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-01.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-01.png" align='center' width='500' %}
 
-The Omnipose integration in [TrackMate](/plugins/trackmate/index) works roughly as the [Cellpose integration](trackmate-cellpose) one. 
-It requires Omnipose to be installed on your system and working independently. This page gives installation details and advices at how to use the omnipose integration in TrackMate.
-
-There is an advanced version of this detector, documented [here](trackmate-omnipose-advanced) where you can configure additional parameters.
+The advanced Omnipose integration in [TrackMate](/plugins/trackmate/index) works roughly as the [Omnipose integration](trackmate-omnipose). The omnipose advanced detector gives you the possibility to tune some Omnipose model hyper-parameters.
+It requires Omnipose to be installed on your system and working independently. This page gives installation details and advices at how to use the omnipose advanced integration in TrackMate.
 
 ## Omnipose
 
-[Omnipose](https://github.com/kevinjohncutler/omnipose) is a segmentation algorithm based on Deep Learning techniques, and inspired from the Cellpose architecture. Omnipose is well suited for bacterial cell segmentation, and achieves remarkable performances on mixed bacterial cultures, antibiotic-treated cells and cells of elongated or branched morphology.
+[Omnipose](https://github.com/kevinjohncutler/omnipose) is a segmentation algorithm based on Deep-Learning techniques, and inspired from the Cellpose architecture. Omnipose is well suited for bacterial cell segmentation, and achieves remarkable performances on mixed bacterial cultures, antibiotic-treated cells and cells of elongated or branched morphology.
 
 If you use the Omnipose TrackMate module for your research, please don't forget to cite the Omnipose paper:
 
@@ -36,10 +34,12 @@ align="center" %}
 
 ### TrackMate-Cellpose update site
 
-The TrackMate-Omnipose module is part of the TrackMate-Cellpose Fiji extension.	
+The TrackMate-Omnipose-Advanced module is part of the TrackMate-Cellpose Fiji extension.	
 Please check the installation instruction on the [TrackMate-Cellpose page](trackmate-cellpose#TrackMate-Cellpose update site).
 
 ### Omnipose installation
+
+See the installation instructions on the basic  [Omnipose integration](trackmate-omnipose). page.
 
 The integration works with Omnipose version 1.0.6.
 
@@ -78,6 +78,17 @@ pip install scipy==1.11.4
 pip install omnipose==1.0.6
 ```
 
+### Omnipose advanced hyper-parameters
+
+Choosing the Omnipose advanced detector gives you the possibility to tune the values of the mask and the flow threshold, which are fixed to their default values in the Omnipose detector.
+
+The flow_threshold parameter is the maximum allowed error of the flow fields averaged over all pixels in a given mask. The default is ```flow_threshold=0.4```.
+We recommend you to increase this threshold if Omnipose is not returning as many masks as you expect, and to decrease it if Omnipose is returning too many spurious masks.
+
+The mask threshold is applied to the distance transform output of Omnipose to seed cell masks pixels. The default is ```mask_threshold=0.0```. You should decrease this threshold if Omnipose is not returning as many masks as you expect, or if the returned masks do not cover the entire cell.
+
+More details about Omnipose hyper-parameters can be found [here](https://omnipose.readthedocs.io/settings.html).
+
 ### Troubleshooting "Found 0 spots" errors with pretrained models
 
 On some systems we have noticed that sometimes TrackMate returns 0 detections for the cellpose and omnipose detectors, even when the installation of these two programs worked correctly.
@@ -88,30 +99,19 @@ After this, the TrackMate Omnipose integration should work as expected.
 
 ### Custom models
 
-You can use in this TrackMate-Omnipose integration your own custom models that were trained on the same version 1.0.6 of Omnipose. 
+You can use in this TrackMate-Omnipose-Advanced integration your own custom models that were trained on the same version 1.0.6 of Omnipose. You should select the option ```Custom``` in the list of models, and provide the path of the custom model you want to use.
 In the last versions of Omnipose, some changes were made, in particular in the way to call the models and the default parameters values. We made our code as robust as possible to deal with these changes but we can't ensure this TrackMate integration of Omnipose is compatible with custom models trained on all the previous versions of Omnipose.
 
-### Omnipose advanced detector
-
-There is an [advanced version of this detector](trackmate-omnipose-advanced), that gives the possibility to tune the values of the mask and the flow threshold.
-Details about the meaning of the mask and flow thresholds can be found [here](https://omnipose.readthedocs.io/settings.html).
-
-
-## Usage
-
-The integration is really close to the cellpose integration, with parameters that are almost identical (and a lot of shared code).
-The main thing that changed is the list of pretrained models.
-We refer to the [TrackMate-Cellpose](trackmate-cellpose) page for details. 
 
 ### Tutorial
 
-Here is a brief tutorial where we segment and track individual bacteria in several colonies.
+The following tutorial is identical to the one on the basic  [Omnipose integration](trackmate-omnipose) page, but displays the changes you can find in the advanced version.
+We segment and track individual bacteria in several colonies.
 The source video follows  _E. coli_ bacteria imaged in phase contrast. 
 We want to segment them, track them, and plot the growth curve for the bacteria imaged. 
 
 The image file can be found on Zenodo:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8182297.svg)](https://doi.org/10.5281/zenodo.8182297)
-
 Download it and save it somewhere convenient.
 
 After executing the installation procedure above, launch Fiji and open the image.
@@ -121,29 +121,30 @@ With this image selected, run TrackMate (_Plugins > TrackMate_).
 
 {% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-01.png" align='center' width='500' %}
 
-In the detector selection panel, pick the **omnipose detector**.
+In the detector selection panel, pick the **omnipose advanced detector**.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-02.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-02.png" align='center' width='300' %}
 
-The configuration panel is quasi identical to that of the cellpose detector.
-The list of pretrained models is however specific to omnipose.
-Also, since in TrackMate we give the size of objects to detect in microns, we can expect to use a `diameter` value comparatively smaller for bacteria. 
+The configuration panel is quasi identical to that of the omnipose detector.
 Here, the default values will give us satisfactory results. 
 You just need to edit the path to the python executable on your computer. 
-For a windows computer where omnipose has been installed following the instructions above, this path is something like `C:\Users\tinevez\anaconda3\envs\omnipose\python.exe`
+For a windows computer where omnipose has been installed following the instructions above, this path is something like `C:\Users\tinevez\anaconda3\envs\omnipose-106\python.exe`.
+For a Mac computer, the path will be like `/opt/miniforge/base/envs/omnipose-106/bin/python`.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-03.png" align='center' %}
+To change the values of the flow and mask thresholds, you need to slide their associated cursor in the panel.
+
+{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-03.png" align='center' width='300' %}
 
 Click the `Preview` button to check that the settings give correct results.
 Here the quality is equal to the number of pixels inside detected objects.
 We see that there are some very small objects with settings we have, but otherwise the results are excellent with the default parameters. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-04.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-04.png" align='center' width='500' %}
 
 We can now run the detection over the whole movie by clicking the `Next` button.
 On my windows machine with a NVIDIA 2080Ti, it takes about 3 to 4 seconds per frame. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-05.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-05.png" align='center' width='500' %}
 
 When done, click `Next` to reach the initial filtering panel.
 The quality histogram displays a small peak at low quality, corresponding to small spurious objects.
