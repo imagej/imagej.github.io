@@ -180,7 +180,7 @@ _Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructio
 <img align="right" src="/media/plugins/snt/snt-reconstruction-plotter.png" title="Reconstruction Plotter overview" width="50%" alt="Reconstruction Plotter overview" />
 - Dark/light theme
 - Customization controls for font, axes, etc. 
-- Export as SVG (vector graphics)
+- Export as PDF or SVG (vector graphics)
 - Color legends when color mappings are present
 - Can be combined in multi-panel viewers (mainly via scripting)
 
