@@ -75,7 +75,6 @@
             {% include menu/section title="Scripting" link="/scripting" %}
               <li><a href="/scripting/basics">Scripting Basics</a></li>
               <li><a href="/scripting/script-editor">Script Editor</a></li>
-              <li><a href="/scripting/javadoc">Using Javadoc</a></li>
               <li><a href="/scripting/user-input">User Input</a></li>
               <li><a href="/scripting/auto-imports">Auto Import</a></li>
               <li><a href="/scripting/templates">Templates</a></li>
@@ -104,6 +103,7 @@
               <li><a href="/develop/source">Source code</a></li>
               <li><a href="/develop/project-management">Project management</a></li>
               <li><a href="/develop/coding-style">Coding style</a></li>
+              <li><a href="/develop/javadoc">Using Javadoc</a></li>
               <li><a href="/develop/debugging">Debugging</a></li>
               <li><a href="/develop/wish-list">Wish list</a></li>
 
