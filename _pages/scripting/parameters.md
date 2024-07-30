@@ -1,5 +1,6 @@
 ---
 title: Script Parameters
+section: Extend:Scripting
 project: /software/imagej2
 ---
 
