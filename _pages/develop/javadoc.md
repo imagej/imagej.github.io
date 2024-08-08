@@ -1,6 +1,6 @@
 ---
 title: How to use the Javadoc
-section: Extend:Scripting
+section: Extend:Development
 ---
 
 ## What is the Javadoc?
