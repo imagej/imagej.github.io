@@ -155,7 +155,7 @@ To analyze cells without having to initialize SNT's tracing interface, run {% in
     - **Root nodes** These correspond to the starting nodes of primary (root) paths. If multiple primary paths exist, center becomes the centroid (mid-point) of their starting nodes
     - **Soma node(s)** These correspond to nodes tagged as "soma". If _Ignore connectivity_ is chosen, the centroid of all soma-tagged nodes is used, even if such nodes are not at the root of the structure. If _Primary paths only_ is chosen only root nodes tagged as "soma" are considered
 
-- **Metrics & Output** These are described in [Curve fitting](#descriptors-and-curve-fitting), [Choice of Methods](choice-of-methods), and [Output options](output-options).
+- **Metrics & Output** These are described in [Curve fitting](#descriptors-and-curve-fitting), [Choice of Methods](#choice-of-methods), and [Output options](#output-options).
 
 - **Advanced Options** These are included in the _Options, Preferences and Resources_ dialog, and include:
 
@@ -598,7 +598,7 @@ The authoritative reference for *SNT* is:
 <dl>
 <dd markdown="1">
 
-The [original Sholl Analysis plugin](http://labs.biology.ucsd.edu/ghosh/software/) by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of *Sholl Analysis* inherits Tom's initial 2D algorithm, but has numerous [added features](#release-notes) to enhance its utility. Note that throughout 2012 the plugin was temporarily called *Advanced Sholl Analysis*. You can follow the entire history of the plugin using its [release notes](#release-notes)
+The [original Sholl Analysis plugin](http://web.archive.org/web/20140216075253/http://labs.biology.ucsd.edu/ghosh/software/) by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of *Sholl Analysis* inherits Tom's initial 2D algorithm, but has numerous [added features](#release-notes) to enhance its utility. Note that throughout 2012 the plugin was temporarily called *Advanced Sholl Analysis*. You can follow the entire history of the plugin using its [release notes](#release-notes)
 
 </dd>
 </dl>
@@ -737,7 +737,7 @@ Use Fiji's {% include bc path="File | Export | Table..." %} command or SNT's {% 
 <dl>
 <dd markdown="1">
 
-The Sholl mask ([see example of CA1 cell](#ca1-cell-mask)) is simply an illustration: a maximum intensity projection of the analyzed cell in which [intersection counts](##output-options) are used as pixel intensities. As explained in [Output Options](#output-options), its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [segmentation artifacts](#cf-segmentation).
+The Sholl mask ([see example of CA1 cell](#ca1-cell-mask)) is simply an illustration: a maximum intensity projection of the analyzed cell in which [intersection counts](#output-options) are used as pixel intensities. As explained in [Output Options](#output-options), its LUT can be modified, and intensities calibrated using ImageJ default commands. As mentioned, it can also be used to visually inspect for [segmentation artifacts](#cf-segmentation).
 
 </dd>
 </dl>

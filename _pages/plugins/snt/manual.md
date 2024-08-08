@@ -69,6 +69,8 @@ Imports of neuronal reconstructions from multiple sources, including:
 
 - **{% include bc path='Remote Databases' %}** Import of neuronal reconstructions from [FlyCircuit](http://www.flycircuit.tw/), [InsectBrain](https://insectbraindb.org/app/), [MouseLight](https://ml-neuronbrowser.janelia.org/), and [NeuroMorpho](http://neuromorpho.org/).
 
+{% include img align="center" src="/media/plugins/snt/snt-swc-prompts.png" caption="Prompts for importing and exporting SWC files" %}
+
 {% capture dnd %}
 All SNT dialogs (including the _Neuroanatomy Shortcut Window_ support drag-and-drop: E.g., you can import SWC files just by dragging and dropping them either into the main SNT dialog or the Path Manager.
 {% endcapture %}
@@ -167,6 +169,11 @@ Creates multi-panel figures from chosen reconstructions, according to the follow
 - **Type**: Whether the illustration should be a bitmap image (typically rendered at 1micron per pixel); a scalable graphics 2D image (see [Reconstruction Plotter](#reconstruction-plotter)), or an interactive 3D scene (see [Reconstruction Viewer](/plugins/snt/reconstruction-viewer))
 - **View**: The display plane of the scene: XY (the default), XZ, or ZY. This option pertains only to static 2D scenes
 - **Positioning**: Whether reconstructions should be rendered under the original coordinates, or whether every cell in the scene should be translatated to a common xyz coordinate (0,0,0)
+- **Rotation**: Whether cell(s) should be rotated to a _guessed_ 'vertical' position. Options include:
+  - _None_: No rotation is performed
+  - _Longest geodesic_: Assumes the longest shortest path in the arbor reflects its overall orientation. May be best suitable for polarized architectures (e.g., dendrites of pyramidal cells)
+  - _Tips_: Assumes the vector defined by the soma and the centroid of all tips in the arbor reflects its overall orientation. May be best suitable for symmetrical or radial architectures (e.g., dendrites of starburst amacrine cells)
+
 <div align="center">
   <img src="/media/plugins/snt/snt-create-figure-demo.gif" title="Create figure: 3D (interactive) multi-panel montage" width="60%" alt="Create figure: 3D (interactive) multi-panel montage" />
 </div>
