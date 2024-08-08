@@ -12,16 +12,16 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 # Measurements
 {% include img align="right" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features options for searching and selecting metrics, renderer measured cells, and summarize existing measurements. An offline guide is also accessible through the <i>Gear</i> menu." %}
 
-SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer). To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in the Path Manager's {% include bc path='Analyze|Measurements'%} menu.
+SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer). To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in Path Manager's {% include bc path='Analyze|Measurements'%} menu.
 
-The reason for distinguishing between branch-based (i.e., cell-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while branch-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
+The reason for distinguishing between cell-based (i.e., branch-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while cell-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
 A convenience _Quick Measurements_ command also exists ( {% include bc path='Analysis| '%} menu in the main SNT dialog or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
 
 Batch measurements of reconstructions can be accomplished via scripting. See, e.g., the [bundled template script](/plugins/snt/scripting#bundled-templates) *Measure\_Multiple\_Files.py*, and related batch scripts for examples.
 
 **Note on Fitted Paths:**<br>
-Some branch-based metrics may not be available when mixing fitted and un-fitted paths because paths are fitted independently of one another and may not be aware of the original connectivity. When this happens, metrics may be reported as NaN and related errors reported to the Console (when running in Debug mode).
+Some cell-based metrics may not be available when mixing fitted and un-fitted paths because paths are fitted independently of one another and may not be aware of the original connectivity. When this happens, metrics may be reported as NaN and related errors reported to the Console (when running in Debug mode).
 If this becomes an issue, consider fitting paths in situ using the Replace existing nodes option instead. Also, remember that you can also use the Path Manager's Edit>Rebuild... command to re-compute relationships between paths
 
 # Statistics
@@ -29,7 +29,7 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 
 {% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png"
 caption="
-**_Branch-based Distributions..._**
+**Cell-based Distributions..._**
 <p>
 SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible.
 Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures. 
@@ -108,7 +108,7 @@ To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current conten
 Path-based analyses accept _any_ traced structure (e.g., disconnected paths, paths associated with different cells, etc.), even those with loops. While most SNT measurements require traced structures to be valid mathematical trees, path-based measurements have no topological constraints. There are two commands in this category: [Path Order Analysis](#path-order-analysis), and [Path Properties: Export CSV...](#path-properties-export-csv).
 
 ### Path Order Analysis
-This command ({% include bc path='Analysis|Path-based|Path Order Analysis'%} in the main SNT dialog) is a variant of [Strahler](strahler-analysis) with the following differences:
+This command ({% include bc path='Analysis|Path-based|Path Order Analysis'%} in the main SNT dialog) is a variant of [Strahler](#strahler-analysis) with the following differences:
 - Classification is based on _Path Order_: Paths are the scope of classification (not branches)
 - Ranking of orders is reversed relatively to Strahler analysis (reversed Strahler orders), with primary paths having _order 1_ and terminal paths having the highest order
 - Any collection of paths can be analyzed without validating into a formal tree

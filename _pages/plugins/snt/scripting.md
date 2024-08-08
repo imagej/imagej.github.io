@@ -113,7 +113,7 @@ Scripting in Fiji's script editor is perhaps best done using Groovy and python. 
 
 # Further  Resources
 
-As mentioned, SNT's [source code repository](https://github.com/morphonets/SNT) includes both  [Bundled Template Scripts](https://github.com/morphonets/SNT/tree/-/src/main/resources/script_templates/Neuroanatomy) and [Jupyter notebooks](https://github.com/morphonets/SNT/tree/-/notebooks). But additional snippets, examples, and further tutorials do exist online, including:
+As mentioned, SNT's [source code repository](https://github.com/morphonets/SNT) includes both  [Bundled Template Scripts](https://github.com/morphonets/SNT/tree/main/src/main/resources/script_templates/Neuroanatomy) and [Jupyter notebooks](https://github.com/morphonets/SNT/tree/main/notebooks). But additional snippets, examples, and further tutorials do exist online, including:
 
 - [Scripts from the SNT manuscript](https://github.com/morphonets/SNTmanuscript)
 

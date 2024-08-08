@@ -16,7 +16,7 @@ SNT interacts with [Labkit](../labkit) and [Trainable Weka Segmentation (TWS)](.
 - Import a pre-trained model into SNT and directly load the probability maps of the semantic segmentation as secondary tracing layer
 - Train a model with SNT paths
 
-The table below summarizes key differences between Labkit and TWS (as of SNT v4.3.0). Note that both tools classify images using the [Weka framework](https://www.cs.waikato.ac.nz/ml/weka/).
+The table below summarizes key differences between Labkit and TWS (as of SNT v4.3.0). Note that both tools classify images using the [Weka framework](https://ml.cms.waikato.ac.nz/weka/).
 
 |                                                      | **[Labkit](../labkit)**                              | **[TWS](../tws)**            |
 |------------------------------------------------------|------------------------------------------------------|------------------------------|
@@ -88,4 +88,4 @@ The [Weka framework](https://waikato.github.io/weka-wiki/citing_weka/) is descri
 
 - Eibe Frank, Mark A. Hall, and Ian H. Witten (2016). The WEKA Workbench. 
   Online Appendix for "Data Mining: Practical Machine Learning Tools and 
-  Techniques", Morgan Kaufmann, Fourth Edition, 2016. ([PDF](https://www.cs.waikato.ac.nz/ml/weka/Witten_et_al_2016_appendix.pdf))
+  Techniques", Morgan Kaufmann, Fourth Edition, 2016. ([PDF](https://ml.cms.waikato.ac.nz/weka/Witten_et_al_2016_appendix.pdf))
