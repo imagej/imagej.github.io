@@ -320,7 +320,7 @@ Note: The {% include bc path="Plugins | Macros | Install..." %} command is a com
 
 ## Keyboard shortcuts
 
-Keyboard shortcuts can be defined by adding the key within brackets at the end of the macro name. These keyboard shortcuts will only work if they are [registered as shortcuts](/learn/keyboard-shortcuts), either by 
+Keyboard shortcuts can be defined by adding the key within brackets at the end of the macro name. These keyboard hotkeys will only work if they are [registered as shortcuts](/learn/keyboard-shortcuts).
 
 Example:
 
