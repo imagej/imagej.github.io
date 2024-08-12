@@ -320,10 +320,12 @@ Note: The {% include bc path="Plugins | Macros | Install..." %} command is a com
 
 ## Keyboard shortcuts
 
-Keyboard shortcuts can be defined by adding the key within brackets at the end of the macro name. Example:
+Keyboard shortcuts can be defined by adding the key within brackets at the end of the macro name. These keyboard shortcuts will only work if they are [registered as shortcuts](/learn/keyboard-shortcuts), either by 
+
+Example:
 
 ```javascript
-// install a keyboard shortcut: when pressing Ctrl+J,
+// install a keyboard shortcut: when pressing J,
 // the user is asked for JPEG quality and for a location
 // to save the current image as .jpg file
 
@@ -334,6 +336,9 @@ macro "Save As JPEG... [j]" {
     saveAs("Jpeg");
 }
 ```
+
+Make sure to register a shortcut using {% include bc path='Plugins|Shortcuts|Add Shortcut...' %}
+
 
 ## Tool icons
 
