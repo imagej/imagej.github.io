@@ -100,7 +100,7 @@ The highest Horton-Strahler number of a tree, i.e., the Horton-Strahler number o
 Defined as the branches of highest Strahler order. Typically, these correspond to the most 'internal' branches of an arbor, in direct sequence from the root. Note that _Primary branches_ are _inner branches_ starting at the tree's root
 <br>See also: [Primary branches](#primary-branches), [Terminal branches](#terminal-branches)
 
-###### Inner branches: Extension angles XY
+###### Inner branches: Extension angle XY
 The [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane
 
 ###### Inner branches: Extension angle XZ

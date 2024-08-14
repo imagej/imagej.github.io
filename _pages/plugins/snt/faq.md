@@ -27,9 +27,9 @@ To reference specific modules/plugins that enhance SNT:
 - **[Tubular Geodesics](/plugins/snt/extending#tubular-geodesics)**
   {% include citation doi='10.1109/cvpr.2012.6247722' %}
 
-The first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
+**NB:** Similarly to the main [Fiji article](/software/fiji#publication), the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
 
-- {% include citation doi='10.1093/bioinformatics/btr390' %}
+   - {% include citation doi='10.1093/bioinformatics/btr390' %}
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 

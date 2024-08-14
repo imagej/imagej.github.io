@@ -307,7 +307,7 @@ Once undesired motion has been mitigated:
 
       - **Starting node location** If selected, matching paths need to share a common origin (starting node) in terms of (X, Y, Z) coordinates. Sample movement and focus drift are common during time-lapse sequences. To account for this, it is possible to specify a (X, Y, Z) 'motion-shift' neighborhood: Paths that originate within this neighborhood (in spatially calibrated units) are considered to share the same starting node location
 
-      - **Orientation** If selected, paths need to extent under the same overall direction (outgrowth angle) to be matched. Paths sharing an outgrowth angle +/- the specified range (in degrees) are assumed to share the same overall direction of growth
+      - **Orientation** If selected, paths need to extent under the same overall direction (outgrowth [extension angle](./metrics#extension-angle)) to be matched. Paths sharing an outgrowth angle +/- the specified range (in degrees) are assumed to share the same overall direction of growth
     
       - **Custom tag** If selected, matching paths need to share the specified (case-sensitive) tag. A regex pattern can also be specified
       

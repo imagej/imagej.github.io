@@ -16,7 +16,7 @@ doi: 10.1038/s41592-021-01105-7
 SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multidimensional microscopy data, semi-automated and automated routines, and options for editing traces. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data.
 
 {% capture text%}
-**SNT is available through Fiji and is based on [publications](/plugins/snt/faq#how-do-i-cite-snt). If you use it successfully for your research please be so kind as to cite our work!**
+**SNT is based on [publications](/plugins/snt/faq#how-do-i-cite-snt). Please [cite](/plugins/snt/faq#how-do-i-cite-snt) SNT in your own research!**
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
