@@ -1,7 +1,7 @@
 ---
 title: SNT › Contributing
 nav-links: true
-nav-title: Contribute
+nav-title: Contributing
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt

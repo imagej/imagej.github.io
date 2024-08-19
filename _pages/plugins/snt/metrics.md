@@ -27,6 +27,15 @@ Metrics ported from published literature include their associated publication in
 A measure of _straightness_. The ratio between the Euclidean distance of a branch (i.e., Euclidean distance between the first and last node of the branch) and its path length. Range of values: ]0--1] (unitless). L-measure metric[^2]
 <br>See also: [Path contraction](#path-contraction)
 
+##### Branch extension angle XY
+The [extension angle](#extension-angle) of a branch in the XY plane
+
+##### Branch extension angle XZ
+The [extension angle](#extension-angle) of a branch in the XZ plane
+
+##### Branch extension angle ZY
+The [extension angle](#extension-angle) of a branch in the ZY plane
+
 ##### Branch fractal dimension
 Also known has [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension). Defined as the slope obtained from the log-log plot of _Path distance vs Euclidean distance_, as [implemented by L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) following the definition of [Marks & Burke (2007)](https://doi.org/10.1002/cne.21418). It is only computed for branches defined by at least five nodes. L-measure metric[^2] described in: {% include citation doi='10.1002/cne.21418' %}
 
@@ -83,7 +92,7 @@ The depth of the bounding box embedding the structure being measured
 
 <span id="e"></span>
 ##### Extension angle
- The _overall_ outgrowth direction of a branch,path, or neurite. It is obtained from the slope of a linear regression performed across all coordinates on either the XY, XZ, or ZY plane. Extension angles are expressed in degrees, under a [0-360[ range
+ The _overall_ outgrowth direction of a branch, path, or neurite. It is obtained from the slope of a linear regression performed across all coordinates on either the XY, XZ, or ZY plane. Extension angles are expressed in degrees, under a [0-360[ range
 
 <span id="h"></span>
 ##### Height
@@ -331,7 +340,7 @@ Cartesian coordinates in the three-dimensional space
 
 - Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
 
-- Each of the 80+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$80\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- Each of the ~90 metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$90\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 

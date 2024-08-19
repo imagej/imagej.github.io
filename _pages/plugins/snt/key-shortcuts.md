@@ -1,7 +1,7 @@
 ---
 title: SNT › Key Shortcuts
 nav-links: true
-nav-title: Key Shortcuts
+nav-title: Hotkeys
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt

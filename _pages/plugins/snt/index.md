@@ -65,12 +65,13 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 | Section                                                         | Contents                                                                                                                           |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | **[Analysis](/plugins/snt/analysis)**                           | Overview of GUI-based analyses                                                                                                     |
+| **[Contributing](/plugins/snt/contribute)**                     | How to contribute to SNT                                                                                                           |
 | **[Extending](/plugins/snt/extending)**                         | Resources for developers interested in extending SNT or parsing TRACES files                                                       |
 | **[FAQ](/plugins/snt/faq)**                                     | Frequently asked questions                                                                                                         |
 | **[Key Shortcuts](/plugins/snt/key-shortcuts)**                 | List of SNT shortcuts (keyboard cheatsheet)                                                                                        |
 | **[Machine Learning](/plugins/snt/machine-learning)**           | Semantic segmentation: Labkit and TWS integration                                                                                  |
 | **[Manual](/plugins/snt/manual)**                               | User guide for main interface and tracing operations                                                                               |
-| **[Metrics](/plugins/snt/metrics)**                             | Cheatsheet for common measurements                                                                                                 |
+| **[Metrics](/plugins/snt/metrics)**                             | Definition of metrics                                                                                                             |
 | **[Modeling](/plugins/snt/modeling)**                           | Cx3D integration                                                                                                                   |
 | **[Reconstruction Viewer](/plugins/snt/reconstruction-viewer)** | SNT's entry point for visualization of pre-existing data. If you are analyzing neuronal reconstructions you may want to start here |
 | **[Screencasts](/plugins/snt/screencasts)**                     | Video tutorials. If you are using SNT for the first time you probably want to start here                                           |
