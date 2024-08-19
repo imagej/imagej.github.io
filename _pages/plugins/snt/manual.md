@@ -835,12 +835,14 @@ The filter toolbar allows paths to be searched and filtered quickly using tags (
   
   <img align="right" width="400px" src="/media/plugins/snt/snt-path-manager-text-filter-color-filters.png" title="Filtering by color tags (v3.0)" />
   
-  - *Path Order...* Filters for Paths of [Path order](/plugins/snt/analysis#path-order-analysis) in the inputted range. Example queries: `1-2`: selects all primary and secondary paths; `max-max`: selects all terminal paths.
+  - *Path Order...* Filters for Paths of [Path order](/plugins/snt/analysis#path-order-analysis) in the inputted range. Example queries: `1-2`: selects all primary and secondary paths; `max-max`: selects all paths with highest order.
   
   - *Length...* Filters for Paths of length within the inputted range. Example queries: `10-20`: selects all Paths with lengths between 10 and 20μm; `max-max`: selects the longest path(s).
   
   - *Mean Radius...* Filters for Paths of mean radius within the inputted range.
   
+  - *No. of Children...* Filters for Paths according to their no. of children. E.g., `0-0` selects all terminal paths
+
   - *No. of Nodes...* Filters for Paths with node count within the inputted range.
   
   - *SWC Type...* Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [tagged](/plugins/snt/manual#tag) using the{% include bc path='Tag|Type|' %} menu.

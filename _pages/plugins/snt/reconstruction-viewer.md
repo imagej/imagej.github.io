@@ -9,13 +9,13 @@ forum-tag: snt
 
 {% capture version%}
 **This page was last revised for version 4.3.0**.<br>
-Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
+Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/reconstruction-viewer.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
 
 
 # Overview
-SNT's Reconstruction Viewer is a 3D visualization tool for both surface meshes and reconstructions. It can be used as a standalone program or from withing SNT. Some of its features include:
+SNT's Reconstruction Viewer is a 3D visualization tool for both surface meshes and skeletonized reconstructions of neurons. It can be used as a standalone program or from withing SNT. Some of its features include:
 
  - Interactive scenes (controlled rotations, panning, zoom, scaling, animation, dark/light theme)
  - Support for axes, transparency, color interpolation, path smoothing, and geometric annotations (surfaces, meshes, vectors, planes, etc.)

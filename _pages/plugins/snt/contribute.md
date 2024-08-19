@@ -18,10 +18,10 @@ This is key. Citations remain the most informative metric of the impact of SNT o
 ### Join the Forum
 This is simple but impactful. Join [forum.image.sc](https://forum.image.sc/), follow the [#snt tag](https://forum.image.sc/tag/snt) and help out by answering questions others may have. When you do so, you are not only paying forward any help you received; you are also allowing developers to focus their time on SNT development.
 
-### Report bugs
-Did something fail? Please report it, either on the forum or on GitHub. Don't forget to include a [minimal, complete, verifiable example](/learn/faq#i-reported-an-issue-but-it-is-still-not-fixed-why-not).
+### Report Bugs
+Did something fail? Please report it, either on the [forum](https://forum.image.sc/tag/snt) or on [GitHub](https://github.com/morphonets/SNT/issues). Don't forget to include a [minimal, complete, verifiable example](/learn/faq#i-reported-an-issue-but-it-is-still-not-fixed-why-not).
 
-### Contribute documentation
+### Contribute Documentation
 Did you notice a typo? Is something unclear or outdated? Are examples missing? Please make a suggestion! Either by following the _Edit this page_ option on the [top](#top) of the page, reaching out on the [forum](https://forum.image.sc/tag/snt), or opening an issue on [GitHub](https://github.com/morphonets/SNT/issues). Please don't be shy. All changes are trackable and undoable.
 
 ### Reach Out
@@ -33,4 +33,4 @@ If you have useful code, it would be great if you could post it on the [forum](h
 ### Improve Core Functionality
 Do you have programming experience and a solution for an existing problem? Great! Please file an issue proposing your contribution before submitting a formal pull request to ensure it is not being tackled by someone else.
 
-Would you like to help, but Java is not your thing? That is fine. You should know that Java is not the favorite programming language of SNT developers either. You prefer Python? Julia? R? Great! There is a broad interest in linking SNT functionality to other programming languages (e.g., have a look at [SNT's notebook collection](https://github.com/morphonets/SNT/tree/main/notebooks)). Development of SNT follows the same [Fiji's open process](/contribute/fiji#open-development-process). Do [reach out](https://forum.image.sc/tag/snt) with your ideas!
+Would you like to help, but Java is not your thing? That is fine. You should know that Java is not the favorite programming language of SNT developers either. You prefer Python? Julia? R? Great! There is a broad interest in linking SNT functionality to other programming languages (e.g., have a look at [SNT's notebook collection](https://github.com/morphonets/SNT/tree/main/notebooks)). Development of SNT follows the same [open process](/contribute/fiji#open-development-process) followed by Fiji. Do [reach out](https://forum.image.sc/tag/snt) with your ideas!
