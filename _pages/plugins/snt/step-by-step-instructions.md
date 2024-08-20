@@ -236,10 +236,16 @@ Information on other options in the prompt can be accessed through the tooltip t
 </div>
 
 # Spine/Varicosity Analysis
+
 {% capture spines-demo%}
 You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset, as it contains pre-placed multipoint ROIs emulating markers for dendritic spines.
 {% endcapture %}
 {% include notice icon="info" content=spines-demo %}
+
+{% capture spot-spine%}
+Complete shape analysis of dendritic spines can be performed using [Spot Spine](/plugins/spot-spine).
+{% endcapture %}
+{% include notice icon="info" content=spot-spine %}
 
 This type of analysis uses (manually placed) multi-Point ROIs along paths as markers for neurite features such dendritic spines or axonal varicosities. Currently only counts and densities are supported. A typical workflow would proceed as follows.
 

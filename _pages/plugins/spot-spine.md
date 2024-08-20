@@ -1,9 +1,12 @@
 ---
-mediawiki: Spot_Spine
+name: Spot Spine
 title: Spot Spine
-categories: [Analysis]
+categories: [Analysis, Neuroanatomy]
+description: 3D detection and morphological analysis of dendritic spines.
 license-label: GPL
 source-url: https://github.com/JeffGilles/Spot-Spine
+forum-tag: spot-spine
+doi: 10.12688/f1000research.146327.1
 team-founder: "@JeffGilles"
 team-support: "@JeffGilles"
 team-maintainer: "@JeffGilles"
@@ -30,7 +33,7 @@ Nicolas Heck.
 
 Prior using SpotSpine, the dendrite should be traced and the traced model should be saved in swc file format.
 Several softwares offer to trace dendrites, such as the ImageJ plugin [SNT](https://imagej.net/plugins/snt/), [NeuTube](https://neutracing.com/), Neuronstudio, among others.
-Others formats can be converted in [swc](http://www.neuronland.net/NLMorphologyConverter/NLMorphologyConverter.html).
+Others formats can be converted to [SWC](https://swc-specification.readthedocs.io/en/latest/).
 
 Before running SpotSpine, place in the same folder the image stack and the .swc file that contains the model of the dendrite. The swc file should be name exactly as the image stack. You can place several image and swc files in the same folder ; SpotSpine will automatically read the image name and find the corresponding swc file.
 
@@ -266,17 +269,22 @@ and [in the publication](https://doi.org/10.1016/j.ymeth.2016.11.016).
 
 - Download and copy the following .jar in your plugins folder [Spot_Spine.jar](https://drive.google.com/file/d/1RyRXoG8hUCs9zFmc2Ztt0PfeHIFHZyQJ/view?usp=sharing)
 
-- The plugin 3DImageSuite is required. Download [link](https://mcib3d.frama.io/3d-suite-imagej/#download)
+- [SNT](./snt/#installation) and [3D ImageJ Suite](./3d-imagej-suite/) are required dependencies that can be installed via update sites:
+  1. Run the Fiji [Updater](./updater) ({% include bc path='Help|Update...'%}, the penultimate entry in the {% include bc path='Help|'%} menu)
+  2. Click *Manage update sites*
+  3. Search for *SNT* and *3D Image Suite* and select their respective checkboxes
+  4. Click *Apply changes* and restart Fiji
 
-- The plugin SNT/Neuroanatomy is required. Download [link](https://imagej.net/plugins/snt/#installation)
+- An image stack and traced dendrite are provided for testing the plugin. Download the [test image](https://drive.google.com/file/d/1H2ee0nGDP4t8X_eBPYJzUZbrbkJBqeP5/view?usp=drive_link) and [SWC file of the dendrite](https://drive.google.com/file/d/1umXo3P4yj4O1sJ0jZei_P7IcR-Ac0oBS/view?usp=drive_link)
 
-- Both can be found in Fiji>Update...>Manager Update Sites.
+NB:
+- The plugins folder can be opened in the file system using {% include bc path='File|Show Folder|Plugins'%}
+- The 3D Image Suite can also be [downloaded manually](https://mcib3d.frama.io/3d-suite-imagej/#download)
 
-- An image stack and traced dendrite are provided for testing the plugin. Download the [test image](https://drive.google.com/file/d/1H2ee0nGDP4t8X_eBPYJzUZbrbkJBqeP5/view?usp=drive_link). Download the [swc file of the dendrite](https://drive.google.com/file/d/1umXo3P4yj4O1sJ0jZei_P7IcR-Ac0oBS/view?usp=drive_link)
 
 ## Citation
 
-Gilles JF, Mailly P, Ferreira T, Boudier T, Heck N. Spot Spine, a freely available ImageJ plugin for 3D detection and morphological analysis of dendritic spines, F1000Research 2024, 13:176 [link](https://f1000research.com/articles/13-176/v1)
+{% include citation id='plugins/spot-spine' %}
 
 ## License
 
