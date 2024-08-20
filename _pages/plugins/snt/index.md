@@ -53,8 +53,8 @@ SNT is currently distributed through [Fiji](/software/fiji)'s [Neuroanatomy upda
 
 1. Run the Fiji [Updater](/plugins/updater) ({% include bc path='Help|Update...'%}, the penultimate entry in the {% include bc path='Help|'%} menu)
 2. Click *Manage update sites*
-3. Select the *Neuroanatomy* checkbox
-4. Click *Apply changes* and restart Fiji.
+3. Search for *Neuroanatomy* (or *SNT*) and activate the *Neuroanatomy* checkbox
+4. Click *Apply changes* and restart Fiji
 
 **Optional**: For [sciview](/plugins/sciview) and [Cx3D](/plugins/snt/modeling) functionality, you need to install [sciview](/plugins/sciview). See the [official sciview documentation](https://docs.scenery.graphics/sciview) for details.
 

@@ -18,7 +18,11 @@ See [Installation details](/plugins/snt/index#installation).
 
 - {% include citation id='plugins/snt' %}
 
-To reference specific modules/plugins that enhance SNT:
+**NB:** Similarly to the main [Fiji article](/software/fiji#publication), the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
+
+   - {% include citation doi='10.1093/bioinformatics/btr390' %}
+
+To reference specific modules that enhance SNT:
 
 - **[Sholl Analysis](/plugins/sholl-analysis)**
   {% include citation id="plugins/sholl-analysis" %}
@@ -27,9 +31,6 @@ To reference specific modules/plugins that enhance SNT:
 - **[Tubular Geodesics](/plugins/snt/extending#tubular-geodesics)**
   {% include citation doi='10.1109/cvpr.2012.6247722' %}
 
-**NB:** Similarly to the main [Fiji article](/software/fiji#publication), the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
-
-   - {% include citation doi='10.1093/bioinformatics/btr390' %}
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
@@ -47,7 +48,7 @@ It is the most widely adopted format for encoding neuronal reconstructions, in w
 <span id="file-format"></span>
 When tracing 4D or 5D images, TRACES is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images TRACES is also preferable to preserve [Path Manager tags](/plugins/snt/manual#tag) across restarts. Note that the {% include bc path='[Scripts](/plugins/snt/manual#scripts)| '%} menu provides a [batch converter](#convert) for TRACES → SWC conversion. The following table summarizes the differences between the two formats:
 
-|                                              | SWC                                                                                                                                  | TRACES                                                                                      |
+|                                              | **SWC**                                                                                                                              | **TRACES**                                                                                  |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | No. reconstructions per file                 | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                                   |
 | Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                                  |
@@ -58,7 +59,10 @@ When tracing 4D or 5D images, TRACES is preferable because the channel and/or ti
 | Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exclusive to SNT. But [open and easily parsable](/plugins/snt/extending#traces-file-format) |
 
 ### Which file formats for neuronal reconstruction are supported by SNT?
-SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the [MouseLight](https://ml-neuronbrowser.janelia.org/) project).
+SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the [MouseLight](https://ml-neuronbrowser.janelia.org/) project). Other file formats can be converted to [SWC](#swc) using [xyz2swc](https://neuromorpho.org/xyz2swc/ui/).
+
+### My neuronal reconstructions are saved under a format that is not supported. How can I open them?
+Unsupported and proprietary file formats can be converted to [SWC](#swc) using [xyz2swc](https://neuromorpho.org/xyz2swc/ui/).
 
 ### Which image file formats are supported by SNT?
 Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
@@ -86,3 +90,20 @@ Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite
 
 ### How can I import an image sequence into SNT?
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
+
+## Spine Analysis
+
+### Does SNT support spine analysis?
+Currently only [Spine densities](./step-by-step-instructions#spinevaricosity-analysis) are supported. In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
+
+
+## Soma Analysis
+
+### Can SNT reconstruct somata?
+Currently SNT favors the [single-point soma representation](https://neuromorpho.org/SomaFormat.html). The task of soma segmentation is better tackled with dedicated machine-learning tools, including:
+
+| **Tools**                                       | **Fiji Integration**                                                                                    | **Resources**                                                                               |
+|-------------------------------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| [Labkit](../labkit) and [TWS](../tws)           | Bundled with Fiji                                                                                       | [SNT › Machine Learning](./machine-learning), [Forum](https://forum.image.sc/tag/labkit)    |
+| [Cellpose](https://www.cellpose.org/)           | Via [PTBIOP](https://wiki-biop.epfl.ch/en/ipa/fiji/update-site) update site                             | [Documentation](https://github.com/BIOP/ijl-utilities-wrappers?tab=readme-ov-file#cellpose), [Forum](https://forum.image.sc/tag/cellpose)|
+| [StarDist](https://github.com/stardist/stardist)| Via [PTBIOP](https://wiki-biop.epfl.ch/en/ipa/fiji/update-site)/[CSBDeep](/plugins/csbdeep) update sites| [Documentation](https://github.com/BIOP/ijl-utilities-wrappers?tab=readme-ov-file#stardist), [Forum](https://forum.image.sc/tag/stardist)|
