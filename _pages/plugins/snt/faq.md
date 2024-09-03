@@ -73,6 +73,7 @@ Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from th
 ### How can I improve SNT documentation?
 Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!
 
+
 ## Tracing
 
 ### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
@@ -91,6 +92,7 @@ Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite
 ### How can I import an image sequence into SNT?
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
 
+
 ## Spine Analysis
 
 ### Does SNT support spine analysis?
@@ -100,7 +102,7 @@ Currently only [Spine densities](./step-by-step-instructions#spinevaricosity-ana
 ## Soma Analysis
 
 ### Can SNT reconstruct somata?
-Currently SNT favors the [single-point soma representation](https://neuromorpho.org/SomaFormat.html). The task of soma segmentation is better tackled with dedicated machine-learning tools, including:
+Currently SNT favors the [single-point soma representation](https://neuromorpho.org/SomaFormat.html). The task of soma segmentation is better tackled using ImageJ built-in tools for analysis of contours, or by means of dedicated machine-learning tools, including:
 
 | **Tools**                                       | **Fiji Integration**                                                                                    | **Resources**                                                                               |
 |-------------------------------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|

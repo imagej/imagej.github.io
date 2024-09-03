@@ -28,16 +28,17 @@ A measure of _straightness_. The ratio between the Euclidean distance of a branc
 <br>See also: [Path contraction](#path-contraction)
 
 ##### Branch extension angle XY
-The [extension angle](#extension-angle) of a branch in the XY plane
+The absolute [extension angle](#extension-angle) of a branch in the XY plane
 
 ##### Branch extension angle XZ
-The [extension angle](#extension-angle) of a branch in the XZ plane
+The absolute [extension angle](#extension-angle) of a branch in the XZ plane
 
 ##### Branch extension angle ZY
-The [extension angle](#extension-angle) of a branch in the ZY plane
+The absolute [extension angle](#extension-angle) of a branch in the ZY plane
 
 ##### Branch fractal dimension
-Also known has [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension). Defined as the slope obtained from the log-log plot of _Path distance vs Euclidean distance_, as [implemented by L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) following the definition of [Marks & Burke (2007)](https://doi.org/10.1002/cne.21418). It is only computed for branches defined by at least five nodes. L-measure metric[^2] described in: {% include citation doi='10.1002/cne.21418' %}
+Also known has [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension). Defined as the slope obtained from the log-log plot of _Path distance vs Euclidean distance_, as [implemented by L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) following the definition of [Marks & Burke (2007)](https://doi.org/10.1002/cne.21418). It is only computed for branches defined by at least five nodes. L-measure metric[^2] described in:
+{% include citation doi='10.1002/cne.21418' %}
 
 ##### Branch length
 The _path length_ of a branch (i.e., the sum of all its internode distances)
@@ -60,10 +61,14 @@ The total path length of a structure, i.e., the sum of all internode distances o
 Complexity Indices are ratios of anatomical properties that summarize branching patterns. Typically, this type of descriptors have been created to summarize (early) neural development in vitro
 
 ###### Complexity index: ACI
-Also known as "Axonal Complexity Index". An index based on path orders, defined as $$\frac{\sum_{n=1}^{N} {Path\,order - 1}}{N}$$, with $$N$$ being the total number of paths in the reconstruction. Described in: {% include citation doi='10.1523/JNEUROSCI.4434-06.2007' %}
+Also known as "Axonal Complexity Index". An index based on path orders, defined as $$\frac{\sum_{n=1}^{N} {Path\,order - 1}}{N}$$, with $$N$$ being the total number of paths in the reconstruction. Described in:
+
+{% include citation doi='10.1523/JNEUROSCI.4434-06.2007' %}
 
 ###### Complexity index: DCI
-Also known as "Dendritic Complexity Index". An index based on the number of primary neurites, total arbor length, and the number and Strahler-order of terminal branches. Described in: {% include citation doi='10.1523/JNEUROSCI.19-22-09928.1999' %}
+Also known as "Dendritic Complexity Index". An index based on the number of primary neurites, total arbor length, and the number and Strahler-order of terminal branches. Described in:
+
+{% include citation doi='10.1523/JNEUROSCI.19-22-09928.1999' %}
 
 ##### Convex hull
 Defined as the polygon (2D) or the polyhedron (3D) enclosing a reconstruction
@@ -92,7 +97,11 @@ The depth of the bounding box embedding the structure being measured
 
 <span id="e"></span>
 ##### Extension angle
- The _overall_ outgrowth direction of a branch, path, or neurite. It is obtained from the slope of a linear regression performed across all coordinates on either the XY, XZ, or ZY plane. Extension angles are expressed in degrees, under a [0-360[ range
+The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across allcoordinates on either the XY, XZ, or ZY plane. Extension angles _absolute_ or _relative_ (_rel._):
+
+- _Absolute angles_ are measured with respect to a fixed reference and range from [0°-360°[ under a _West-clockwise_ convention (W: 0°; N: 90°; E: 180°; S: 270°)
+
+- _Relative (rel.) angles_ are measured as the acute intersection angle between the extension angle of a branch/path and the extension angle of its parent, and range between [0°-180°[. When no parent exists the relative extension angle is _NaN_
 
 <span id="h"></span>
 ##### Height
@@ -110,13 +119,13 @@ Defined as the branches of highest Strahler order. Typically, these correspond t
 <br>See also: [Primary branches](#primary-branches), [Terminal branches](#terminal-branches)
 
 ###### Inner branches: Extension angle XY
-The [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane
+The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane
 
 ###### Inner branches: Extension angle XZ
-The [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XZ plane
+The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XZ plane
 
 ###### Inner branches: Extension angle ZY
-The [extension angle](#extension-angle) of [inner branches](#inner-branches) in the ZY plane
+The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the ZY plane
 
 ###### Inner branches: Length
 The length of [inner branches](#inner-branches)
@@ -132,13 +141,13 @@ The distance between nodes defining a branch or a Path. Can be retrieved as _squ
 The longest graph geodesic. Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _longest shortest path_ corresponds to its [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html) (also known as maximum geodesic, or longest graph geodesic). Can only be computed for structures that are valid mathematical trees.
 
 ###### Longest shortest path: Extension angle XY
-[Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XY plane
+Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XY plane
 
 ###### Longest shortest path: Extension angle XZ
-[Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XZ plane
+Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XZ plane
 
 ###### Longest shortest path: Extension angle ZY
-[Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the ZY plane
+Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the ZY plane
 
 ###### Longest shortest path: Length
 Length of [longest shortest path](#longest-shortest-path)
@@ -203,14 +212,23 @@ The color channel associated with a path (multidimensional images)
 ##### Path contraction
 A measure of straightness of a path. See [Branch contraction](#branch-contraction) for definition
 
-##### Path extension angle XY plane
-[Extension angle](#extension-angle) of a path in the XY plane
+##### Path extension angle XY
+Absolute [Extension angle](#extension-angle) of a path in the XY plane
 
-##### Path extension angle XZ plane
-[Extension angle](#extension-angle) of a path in the XZ plane
+##### Path extension angle XY (Rel.)
+Relative [Extension angle](#extension-angle) of a path in the XY plane
 
-##### Path extension angle ZY plane
-[Extension angle](#extension-angle) of a path in the ZY plane
+##### Path extension angle XZ
+Absolute [Extension angle](#extension-angle) of a path in the XZ plane
+
+##### Path extension angle XZ (Rel.)
+Relative [Extension angle](#extension-angle) of a path in the XZ plane
+
+##### Path extension angle ZY
+Absolute [Extension angle](#extension-angle) of a path in the ZY plane
+
+##### Path extension angle ZY (Rel.)
+Relative [Extension angle](#extension-angle) of a path in the ZY plane
 
 ##### Path frame
 The time-point associated with a path (multidimensional images)
@@ -244,14 +262,14 @@ See [persistence homology](/plugins/snt/analysis#persistence-homology)
 Primary branches that have origin in a tree's root, extending to the closest branch point or end-point, i.e., [inner branches](#inner-branches) starting at the root. Also known as root-associated branches. Note that a primary branch can also be terminal
 <br>See also: [Inner branches](#inner-branches), [Terminal branches](#terminal-branches)
 
-###### Primary branches: Extension angle XY plane
-[Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XY plane
+###### Primary branches: Extension angle XY
+Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XY plane
 
-###### Primary branches: Extension angle XZ plane
-[Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XZ plane
+###### Primary branches: Extension angle XZ
+Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XZ plane
 
-###### Primary branches: Extension angle ZY plane
-[Extension angle](#extension-angle) of [primary branches](#primary-branches) in the ZY plane
+###### Primary branches: Extension angle ZY
+Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the ZY plane
 
 ###### Primary branches: Length
 The length of [primary branches](#primary-branches)
@@ -306,14 +324,14 @@ Treating each internode segment as a conical frustum, the sum of the surface are
 Branches ending at terminal endpoints (tips)
 <br>See also: [Inner branches](#inner-branches), [Primary branches](#primary-branches)
 
-###### Terminal branches: Extension angle XY plane
-[Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XY plane
+###### Terminal branches: Extension angle XY
+Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XY plane
 
-###### Terminal branches: Extension angle XZ plane
-[Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XZ plane
+###### Terminal branches: Extension angle XZ
+Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XZ plane
 
-###### Terminal branches: Extension angle ZY plane
-[Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the ZY plane
+###### Terminal branches: Extension angle ZY
+Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the ZY plane
 
 ###### Terminal branches: Length
 The sum of branch lengths of branches ending at terminal endpoints (tips)
@@ -336,11 +354,11 @@ Cartesian coordinates in the three-dimensional space
 
 ### Notes
 
-- This list does not include all of the specialized metrics provided by dedicated SNT modules, such as [Strahler](/plugins/snt/analysis#strahler-analysis), [Sholl](/plugins/snt/analysis#sholl-analysis), [Persistence diagrams/landscapes](/plugins/snt/analysis#persistence-homology), or [Graph-based](/plugins/snt/analysis#graph-based-analysis) analysis
+- This list does not include all of the specialized metrics provided by dedicated modules, such as [Strahler](/plugins/snt/analysis#strahler-analysis), [Sholl](/plugins/snt/analysis#sholl-analysis), [Persistence diagrams/landscapes](/plugins/snt/analysis#persistence-homology), or [Graph-based](/plugins/snt/analysis#graph-based-analysis) analysis
 
 - Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
 
-- Each of the ~90 metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$90\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- Each of the 90+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$90\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 
