@@ -18,7 +18,7 @@ Labkit is a user-friendly Fiji plugin for the segmentation of microscopy image d
 
 ## Installation
 
-Labkit is boundled with Fiji. All you need to do is [install Fiji](https://imagej.net/software/fiji/downloads). You will find Labkit in the main menu under `Plugins > Labkit`.
+Labkit is bundled with Fiji. All you need to do is [install Fiji](https://imagej.net/software/fiji/downloads). You will find Labkit in the main menu under `Plugins > Labkit`.
 
 ## Tutorials
 
