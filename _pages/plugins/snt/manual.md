@@ -445,23 +445,47 @@ This tab aggregates widgets related to 3D interaction.
 
 ### Reconstruction Viewer
 
-The [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) is an advanced, fully scriptable OpenGL viewer enabling 3D visualization and interaction with reconstructions, OBJ meshes (including multiple model organism neuropil annotations and reference brains), computed surfaces (convex hulls) and other shape annotations. For performance reasons, some Path Manager changes may need to be synchronized manually from the RV controls. To open Reconstruction Viewer with the current contents of the Path Manager, press *Open Reconstruction Viewer*. To instead open the viewer press _Reconstruction Viewer_ on the [Shortcuts](#startup) dialog.
+This widget provides an entry point to a dedicated [Reconstruction Viewer](/plugins/snt/reconstruction-viewer) that loads all the paths currently listed in the [Path Manager](#path-manager). Note that the behavior of this dedicated viewer is slightly different from standalone viewers:
+
+- Paths are aggregated under a common "Path Manager Contents" object
+
+- Changes to paths performed in the Path Manager _should_ percolate in real time to the viewer. However, some operations may require manual synchronization using [Sync Path Manager Changes](./reconstruction-viewer#sync-path-manager-changes) in the [Scene Controls](./reconstruction-viewer#scene-controls) menu
+
+- Initializing a viewer from this widget will always load the current contens of the Path Manager. To start a viewer with an empty scene, press *Reconstruction Viewer* on the [Neuroanatomy Shortcuts Window](#snt-commands) dialog
 
 ### sciview
 
-This option assumes you have [sciview](/plugins/sciview) properly installed. sciview is a modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Integration with [Cx3D](https://github.com/morphonets/cx3d) enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
+This option assumes [sciview](/plugins/sciview) to be successfully installed. sciview is a modern replacement for the [Legacy 3D Viewer](#legacy-3d-viewer), providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. sciview scenes support image volumes, meshes, and paths, as well as integration with [Cx3D](https://github.com/morphonets/cx3d). The latter enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
 
 ### Legacy 3D Viewer
 
-The Legacy 3D Viewer is a functional tracing canvas, but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer).
+The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it is no longer actively maintained and _may_ not function reliably on certain hardware. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer).
+
+<span id="bookmarks"></span>
+<span id="bookmark-manager"></span>
+
+## Bookmarks Tab
+
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguos branching point, or an ambiguous cross-over between two neurites). The basic usage is as follows:
+
+<img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" title="Bookmarks tab" />
+
+- Right click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor X, Y, Z, C, T coordinates
+
+- To visit a bookmarked location double-click on its entry. The image will be centered at that position under the speficied zoom in {% include bc path='Preferred Zoom Level (%)' %}
+
+- Use {% include bc path='Import...' %} to load bookmars from a CSV file. Use {% include bc path='Export...' %} to store current list.
+
+- To rename an existing bookmark, select it and start typing its new label. Alternatively, use 
+{% include bc path='Rename Selected Bookmark..' %} command in the list righ-click menu
+
+- Bookmarks can also be transferred to ImageJ's ROI Manager using {% include bc path='Send Selected Bookmarks to ROI Manager...' %} in the list righ-click menu
 
 # Image Contextual Menu
 
 Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. The list includes:
 
 ## Path Selection
-
-{% include img align="right" width="250" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
 
 ### Select Nearest Path {% include key key='G' %}
 Selects ("<u>G</u>roups") the path closest to the mouse cursor.
@@ -471,6 +495,11 @@ Keeps appending the closest path to the existing path selection.
 
 ### Select Paths by 2D ROI
 A convenience utility to select path(s) quickly (but coarsely). One the command is run, it is possible to "draw" an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
+
+### Bookmark Cursor Position {% include key key='Shift|B' %}
+Described in [Bookmarks Tab](#bookmarks-tab).
+
+{% include img align="right" width="280" name="contextual menu" src="/media/plugins/snt/snt-contextual-menu.png" %}
 
 ## Tracing
 
@@ -486,7 +515,6 @@ Creates a fork point at the node closest to the mouse cursor. Once a fork point 
 
 ## Editing Paths
 
-<img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v4.2)" width="300" />
 Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlocking the menu options under *Edit Path*. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
 
 ### Bring Active Node to Current Z-plane {% include key key='B' %}
@@ -494,6 +522,8 @@ Moves the active node to the active Z-plane. Note that the translation is only d
 
 ### Connect To (...) {% include key key='C' %}
 Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
+
+<img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v4.2)" width="300" />
 
 ### Delete Active Node {% include key key='D' %}
 Removes the active node from the path.

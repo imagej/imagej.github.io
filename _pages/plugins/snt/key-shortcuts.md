@@ -23,7 +23,7 @@ The Command Palette is the fastest way to access actions and discover their resp
 3. Press {% include key keys='up' %} or {% include key keys='down' %} to select a command (or use the  {% include key keys='mouse wheel' %})
 4. Press {% include key keys='Enter' %} to run it
 {% endcapture %}
-{% include notice background-color="white" icon="none" content=cmdpalette %}
+{% include notice  icon="info" content=cmdpalette %}
 
 ### Interactive Prompt
 
@@ -63,6 +63,7 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 | {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
 | {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/step-by-step-instructions#accurate-point-placement) |
 | {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching) |
+| {% include key keys='Shift|B' %}              | <u>B</u>ookmarks cursor location |
 | {% include key keys='Shift|E' %}              | Activates *Edit Mode* (<u>E</u>diting of selected Path) |
 | {% include key keys='Shift|P' %}              | <u>P</u>auses tracing operations |
 
