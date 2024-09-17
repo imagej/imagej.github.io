@@ -3,7 +3,7 @@ title: ModularImageAnalysis (MIA)
 icon: /media/icons/mia.png
 categories: [Analysis, Automation, Scripting]
 doi: 10.5281/zenodo.1201320
-artifact: io.github.mianalysis:mia
+artifact: io.github.mianalysis:mia-plugin
 ---
 
 {% include img align="center" name="fig:ModularImageAnalysis screenshot." src="main-screenshot" %}
