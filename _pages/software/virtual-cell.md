@@ -14,7 +14,7 @@ doi: 10.1016/S0167-7799(01)01740-1
 
 Virtual Cell (VCell for short) is a modeling and simulation environment for cell biology.
 
-A VCell plugin for ImageJ is currently in the works! Stay tuned!
+To use VCell spatial simulation results within ImageJ, please download our plugin [VCell Simulation Results Viewer](https://github.com/virtualcell/vcell-fiji).
 
 ## Publication
 
