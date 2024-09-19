@@ -1,5 +1,6 @@
 ---
 title: Python
+section: Extend:Scripting:Languages
 ---
 
 You can use ImageJ from [Python](https://python.org/):
