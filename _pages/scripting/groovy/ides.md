@@ -20,7 +20,7 @@ In order to set up this whole guide, you will need 4 parts:
 -   [Groovy](https://groovy.apache.org/download.html) will need to be installed as well. For installation on Linux, please follow [this guide](https://groovy-lang.org/install.html)
 -   [Java](https://www.azul.com/downloads/?package=jdk)
 
-{% include notice icon="info" content='If you want to run the scripts directly in Fiji, you will have to install the same Groovy version that Fiji does. As of this writing, that version is 3.0.4.' %}
+{% include notice icon="info" content='If you want to run the scripts directly in Fiji, you will have to install the same Groovy version that Fiji does. This can be found by looking at the groovy file in your Fiji installation's jars folder.' %}
 
 ### Configure the project
 
