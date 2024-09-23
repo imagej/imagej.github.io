@@ -7,6 +7,8 @@ nav-title: Principles
 
 The page is a collection of principles for the entire image analysis process, from acquisition to processing to analysis.
 
+{% include notice icon="tip" content="For a thorough introduction to bioimaging specifically, much of which is applicable to scientific imaging as a whole, check out the [bioimagingguide.org](https://www.bioimagingguide.org/)!" %}
+
 # Image acquisition
 
 ## Introduction
