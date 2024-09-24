@@ -1,6 +1,6 @@
 ---
 title: Why Closed-Source Is Wrong
-section: Contribute:Licensing:Proprietary
+section: Contribute:Licensing
 ---
 
 This page has a few war stories about having to fight with developing software where you should not need to fight.

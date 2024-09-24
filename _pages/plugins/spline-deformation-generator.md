@@ -25,11 +25,11 @@ artifact: sc.fiji:SplineDeformationGenerator_
 
 \[1\] I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, ["Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/downloads/arganda_carreras_CVAMIA06.pdf) Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 
-\[2\] Carlos O. S. Sorzano, P. Thévenaz, M. Unser, ["Elastic Registration of Biological Images Using Vector-Spline Regularization ,"](http://bigwww.epfl.ch/publications/sorzano0501.html) IEEE Transactions on Biomedical Engineering, vol. 52, no. 4, pp. 652-663, April 2005. P.
+\[2\] Carlos O. S. Sorzano, P. Thévenaz, M. Unser, ["Elastic Registration of Biological Images Using Vector-Spline Regularization ,"](https://bigwww.epfl.ch/publications/sorzano0501.html) IEEE Transactions on Biomedical Engineering, vol. 52, no. 4, pp. 652-663, April 2005. P.
 
-\[3\] Thévenaz, T. Blu, M. Unser, ["Interpolation Revisited,"](http://bigwww.epfl.ch/publications/thevenaz0002.html) IEEE Transactions on Medical Imaging, vol. 19, no. 7, pp. 739-758, July 2000.
+\[3\] Thévenaz, T. Blu, M. Unser, ["Interpolation Revisited,"](https://bigwww.epfl.ch/publications/thevenaz0002.html) IEEE Transactions on Medical Imaging, vol. 19, no. 7, pp. 739-758, July 2000.
 
-\[4\] M. Unser, ["Splines: A Perfect Fit for Signal and Image Processing,"](http://bigwww.epfl.ch/publications/unser9902.html) IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999.
+\[4\] M. Unser, ["Splines: A Perfect Fit for Signal and Image Processing,"](https://bigwww.epfl.ch/publications/unser9902.html) IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999.
 
 ## License
 

@@ -125,7 +125,7 @@ Always use the same conditions that were used for acquisition of the measured PS
 
 ### How to do the deconvolution
 
-Several plugins for imageJ exist. The most sophisticated are the [DeconvolutionLab (BIG - EPFL)](http://bigwww.epfl.ch/algorithms/deconvolutionlab/) and the parallel [iterative](/plugins/parallel-iterative-deconvolution) and [spectral](/plugins/parallel-spectral-deconvolution) deconvolution plugins.
+Several plugins for imageJ exist. The most sophisticated are the [DeconvolutionLab (BIG - EPFL)](https://bigwww.epfl.ch/algorithms/deconvolutionlab/) and the parallel [iterative](/plugins/parallel-iterative-deconvolution) and [spectral](/plugins/parallel-spectral-deconvolution) deconvolution plugins.
 
 For further very nicely written and informative descriptions of this topic, see the [Huygens deconvolution guide](https://svi.nl/Huygens-Deconvolution).
 

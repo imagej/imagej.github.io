@@ -15,7 +15,7 @@ team-maintainer: "@NHotaling"
 
 <span style="display: none">nanofiber diameter measurement, nanofiber diameter analysis, nanofiber diameter characterization, nanofiber diameter software, nanofiber diameter plugin, nanofiber diameter program, ImageJ nanofiber diameter, Fiji nanofiber diameter, automated nanofiber diameter, free, open source, radius</span>
 
-**DiameterJ**[^1] is a free, open source plugin created for ImageJ, ImageJ2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)[^2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
+**DiameterJ**[^1] is a free, open source plugin created for ImageJ, ImageJ2, and Fiji developed at the National Institute of Standards and Technology. DiameterJ is a validated nanofiber diameter characterization tool. DiameterJ is able to analyze an image and find the diameter of nanofibers or microfibers at every pixel along a fibers axis and produces a histogram of these diameters. Included with this histogram are summary statistics such as mean fiber diameter and most occurring fiber diameter (mode). DiameterJ also bundles [OrientationJ](https://bigwww.epfl.ch/demo/orientation/)[^2] for a complete analysis of fiber orientation within an image as well as the "Analyze Particles" function built into ImageJ/Fiji to analyze pore space within scaffolds and produce summary statistics for pores.
 
 ## Overview
 
@@ -84,7 +84,7 @@ A new diameter was then calculated using the new corrected length and the total 
 
 #### Fiber Orientation
 
-Fiber orientation was determined using a well-established plug-in for ImageJ called [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line. Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels. The subsequent frequency histogram of fiber orientation was then saved as an image. OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin. In the Fiji version of DiameterJ the [Directionality](/plugins/directionality)[^16] plugin, written by Jean-Yves Tinevez, can also be used to obtain the raw distribution data. This approach is considerably slower and less elegant (pop-up windows remain open) than OrientationJ but for now it is the only way to obtain the raw orientation data in batch.
+Fiber orientation was determined using a well-established plug-in for ImageJ called [OrientationJ](https://bigwww.epfl.ch/demo/orientation/). To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line. Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels. The subsequent frequency histogram of fiber orientation was then saved as an image. OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin. In the Fiji version of DiameterJ the [Directionality](/plugins/directionality)[^16] plugin, written by Jean-Yves Tinevez, can also be used to obtain the raw distribution data. This approach is considerably slower and less elegant (pop-up windows remain open) than OrientationJ but for now it is the only way to obtain the raw orientation data in batch.
 
 ### How to Use DiameterJ
 
@@ -428,7 +428,7 @@ If you installed imageJ before the end of 2013 you should uninstall your current
 
 ## Complementary Tools
 
-DiameterJ[^1] works with several plugins of ImageJ/Fiji. First and foremost [OrientationJ](http://bigwww.epfl.ch/demo/orientation/). Also, other great tools that we have incorporated are [AnalyzeSkeleton](/plugins/analyze-skeleton) function from Ignacio Arganda-Carreras, as well as [Skeleton Intersections](http://jvsmicroscope.uta.fi/?q=skeleton_intersections) from Gabriel Landini's morphology plugin. We'd also like to give a big thank you to the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm which makes our segmentations work a lot better. Speaking of which, we include a lot of segmentation algorithms that we aren't nearly talented enough to of developed ourselves. In particular those techniques outlined above in the [Segmentation](/plugins/diameterj#segmentation) section of this article and can be found in the links below.
+DiameterJ[^1] works with several plugins of ImageJ/Fiji. First and foremost [OrientationJ](https://bigwww.epfl.ch/demo/orientation/). Also, other great tools that we have incorporated are [AnalyzeSkeleton](/plugins/analyze-skeleton) function from Ignacio Arganda-Carreras, as well as [Skeleton Intersections](http://jvsmicroscope.uta.fi/?q=skeleton_intersections) from Gabriel Landini's morphology plugin. We'd also like to give a big thank you to the [Statistical Region Merging](/plugins/statistical-region-merging) algorithm which makes our segmentations work a lot better. Speaking of which, we include a lot of segmentation algorithms that we aren't nearly talented enough to of developed ourselves. In particular those techniques outlined above in the [Segmentation](/plugins/diameterj#segmentation) section of this article and can be found in the links below.
 
 We'd also like to say that DiameterJ plays nicely with the output from any other segmentation algorithm that produces a binary image. Fiji has a ton of [Segmentation](/imaging/segmentation) algorithms that are great for different types of images. Additionally, many plugins have been created for use in ImageJ or Fiji: [IJ Plugins](http://ij-plugins.sourceforge.net/plugins/segmentation/) [Auto Threshold](/plugins/auto-threshold) and [Auto Local Threshold](/plugins/auto-local-threshold). If our defaults don't work then try any/all of these.
 
@@ -458,7 +458,7 @@ Help is welcome in any/all of these improvements!
 
 ## External Links
 
--   [OrientationJ](http://bigwww.epfl.ch/demo/orientation/)
+-   [OrientationJ](https://bigwww.epfl.ch/demo/orientation/)
 -   [NIST](http://www.nist.gov/)
 
 ## References

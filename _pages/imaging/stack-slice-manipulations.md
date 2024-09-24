@@ -95,7 +95,7 @@ The plugins StackReg (to align a stack) and TurboReg (to align more than one ima
 
 Based on:
 
-P. Thévenaz, U.E. Ruttimann, M. Unser, "[A Pyramid Approach to Subpixel Registration Based on Intensity](http://bigwww.epfl.ch/publications/thevenaz9801.html)," IEEE Transactions on Image Processing, vol. 7, no. 1, pp. 27-41, January 1998.
+P. Thévenaz, U.E. Ruttimann, M. Unser, "[A Pyramid Approach to Subpixel Registration Based on Intensity](https://bigwww.epfl.ch/publications/thevenaz9801.html)," IEEE Transactions on Image Processing, vol. 7, no. 1, pp. 27-41, January 1998.
 
 Time series before alignment
 

@@ -51,7 +51,7 @@ There are several ImageJ plugins for generating a theoretical point spread funct
 
 -   [PSF Tool for ImageJ](http://www.mosaic.ethz.ch/downloads/psftool) by the ETH Computationnal Biophysics Lab
 -   [Diffraction PSF 3D](/plugins/diffraction-psf-3d) by Robert Dougherty
--   [Deconvolution3D](http://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
+-   [Deconvolution3D](https://bigwww.epfl.ch/demo/deconvolution3D/) by Pierre Besson.
 
 To use these tools you need to know some parameters of your microscope setup and sample like NA, RI of mounting medium, wavelength, etc.
 

@@ -8,7 +8,7 @@ categories: [Tutorials,MATLAB]
 {% include notice icon="info" content='This page covers the original compatibility layer for running ImageJ within MATLAB.  
 The current library for ImageJ/MATLAB integration is [ImageJ-MATLAB](/scripting/matlab); it has many advantages over this legacy project.' %}
 
-[MIJ](http://bigwww.epfl.ch/sage/soft/mij/) is a java package to exchange images between [MATLAB](/scripting/matlab) and the original [ImageJ](/software/imagej). It is written by {% include person id='dasv74' %} (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and {% include person id='dprodanov' %} (Department of Physiology and Pharmacology, Université Catholique de Louvain (UCL), Brussels, Belgium). It allows to start a instance of ImageJ inside [MATLAB](/scripting/matlab) and exchange images back and forth with it. It takes advantage of the fact that the user interface of [MATLAB](/scripting/matlab) is written in Java.
+[MIJ](https://bigwww.epfl.ch/sage/soft/mij/) is a java package to exchange images between [MATLAB](/scripting/matlab) and the original [ImageJ](/software/imagej). It is written by {% include person id='dasv74' %} (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and {% include person id='dprodanov' %} (Department of Physiology and Pharmacology, Université Catholique de Louvain (UCL), Brussels, Belgium). It allows to start a instance of ImageJ inside [MATLAB](/scripting/matlab) and exchange images back and forth with it. It takes advantage of the fact that the user interface of [MATLAB](/scripting/matlab) is written in Java.
 
 For your convenience, Jacques Pecreaux & {% include person id='dscho' %} wrote `Miji.m`, which makes it super-easy to use [Fiji](/software/fiji) and the libraries and functions provided by Fiji's components from within [MATLAB](/scripting/matlab). Simply make sure that the `scripts/` directory of your `Fiji.app/` is in [MATLAB](/scripting/matlab)'s search patch, via {% include bc path='File | Set Path...'%} (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the [MATLAB](/scripting/matlab) command `addpath('/Applications/Fiji.app/scripts')`). Then a simple
 
@@ -85,7 +85,7 @@ To get a quick help on the available functions, call
 MIJ.help
 ```
 
-Further descriptions and example code can be found on [the home page for MIJ](http://bigwww.epfl.ch/sage/soft/mij/). Eventually, detailed documentation about the class MIJ can be found [here](http://bigwww.epfl.ch/sage/soft/mij/doc/index.html) (suitable if you have a bit of experience with Java).
+Further descriptions and example code can be found on [the home page for MIJ](https://bigwww.epfl.ch/sage/soft/mij/). Eventually, detailed documentation about the class MIJ can be found [here](https://bigwww.epfl.ch/sage/soft/mij/doc/index.html) (suitable if you have a bit of experience with Java).
 
   
 ![](/media/plugins/mij-splash.jpg)

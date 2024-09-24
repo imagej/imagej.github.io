@@ -43,7 +43,7 @@ Result of the Stack Focuser plugin with '3' as the kernel value.
 
 ### Wavelet-transform Based Focusing
 
-Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [http://bigwww.epfl.ch/demo/edf/index.html](http://bigwww.epfl.ch/demo/edf/index.html).
+Authors: Daniel Sage, Jesse Berent, Brigitte Forster, Dimitri Van De Ville, Biomedical Imaging Group, Swiss Federal Institute of Technology Lausanne (EPFL), Switzerland, [https://bigwww.epfl.ch/demo/edf/index.html](https://bigwww.epfl.ch/demo/edf/index.html).
 
 This is a superior but slower, algorithm compared to the Sobel-filter focusing. The "*Extended Depth of Field*" plugin uses a wavelet transform (a more sophisticated transform compared to the Fourier transform) to calculate "best focus". Run the plugin and check "Show 3D View". This plugin will work with RGB images. A more detailed description of the wavelet transform extended depth of field plugin can be found at the authors' website. A topology image is also generated. Please cite the authors' papers below if you publish work using this plugin.
 
@@ -51,9 +51,9 @@ This is a superior but slower, algorithm compared to the Sobel-filter focusing. 
 
 For more information see the following papers:
 
-B. Forster, D. Van De Ville, J. Berent, D. Sage, M. Unser , "[Extended Depth-of-Focus for Multi-Channel Microscopy Images: A Complex Wavelet Approach](http://bigwww.epfl.ch/preprints/forster0401p.html)" Proceedings of the Second 2004 IEEE International Symposium on Biomedical Imaging: From Nano to Macro (ISBI'04), Arlington VA, USA, April 15-18, 2004, in press.
+B. Forster, D. Van De Ville, J. Berent, D. Sage, M. Unser , "[Extended Depth-of-Focus for Multi-Channel Microscopy Images: A Complex Wavelet Approach](https://bigwww.epfl.ch/preprints/forster0401p.html)" Proceedings of the Second 2004 IEEE International Symposium on Biomedical Imaging: From Nano to Macro (ISBI'04), Arlington VA, USA, April 15-18, 2004, in press.
 
-J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[Extended Depth-of-Focus for Color Images in Bright-Field microscopy](http://bigwww.epfl.ch/publications/berent0301.html)" Proceedings from the Autumn Meeting of the Swiss Society of Pharmacology and Toxicology, October 27-28, 2003, Basel, Switzerland.
+J. Berent, B. Forster, D. Van De Ville, D. Sage, M. Unser, "[Extended Depth-of-Focus for Color Images in Bright-Field microscopy](https://bigwww.epfl.ch/publications/berent0301.html)" Proceedings from the Autumn Meeting of the Swiss Society of Pharmacology and Toxicology, October 27-28, 2003, Basel, Switzerland.
 
 ## Depth Coding
 

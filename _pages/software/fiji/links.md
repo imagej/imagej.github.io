@@ -22,7 +22,7 @@ Links to the contributors' personal pages can be found [here](/people).
 
 -   Plugins on the [ImageJ website](https://imagej.net/ij/plugins/index.html), specifically [links to external websites](https://imagej.net/ij/plugins/index.html#more)
 -   Plugins on the [ImageJ Documentation Wiki](http://imagejdocu.list.lu/doku.php?id=plugin:start)
--   The Biomedical Imaging Group in Lausanne has [many interesting plugins](http://bigwww.epfl.ch/algorithms.html).
+-   The Biomedical Imaging Group in Lausanne has [many interesting plugins](https://bigwww.epfl.ch/algorithms.html).
 -   Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
 
 ## Related projects

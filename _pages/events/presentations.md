@@ -363,7 +363,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ2 – ImageJ for the Next Generation of Biological Image Data</td>
       <td>
-        <a href="http://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf">slides</a>, <a href="http://bigwww.epfl.ch/eurobioimaging/abstracts/rueden.pdf">abstract</a>
+        <a href="https://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf">slides</a>, <a href="https://bigwww.epfl.ch/eurobioimaging/abstracts/rueden.pdf">abstract</a>
       </td>
     </tr>
     <tr>

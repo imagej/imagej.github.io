@@ -45,7 +45,7 @@ Richardson Lucy and other iterative algorithms are often slow to converge. Accel
 
 The proper handling of boundary conditions is an important part of deconvolution. Images are finite and usually treated as circulant. Thus when deconvolving (or convolving) images are usually extended (padded) to prevent boundary artifacts. A novel approach, to handle edge artifacts, was introduced as part of the 2014 international grand challenge on deconvolution. This approach uses non-circulant convolution operators.
 
-[Non-circulant Richardson Lucy](http://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl)
+[Non-circulant Richardson Lucy](https://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl)
 
 ## Scripts
 
@@ -53,7 +53,7 @@ A collection of scripts that use ops-deconvolution is being developed and can be
 
 ## Preliminary Results
 
-Preliminary results have been generated using the [C. Elegans Embryo](http://bigwww.epfl.ch/deconvolution/bio/) images and PSFs provided by the Bio-Imaging Group of EPFL. Note that this result is not yet optimal, as the image has spherical aberration (asymmetrical 'flare' in the xz view) and the provided PSF did not have SA. In the future better ops to produce a theoretical PSF with spherical aberration will be developed.
+Preliminary results have been generated using the [C. Elegans Embryo](https://bigwww.epfl.ch/deconvolution/bio/) images and PSFs provided by the Bio-Imaging Group of EPFL. Note that this result is not yet optimal, as the image has spherical aberration (asymmetrical 'flare' in the xz view) and the provided PSF did not have SA. In the future better ops to produce a theoretical PSF with spherical aberration will be developed.
 
 We encourage users of deconvolution to try deconvolving this image with various commercial and open source packages and discuss results on the [ImageJ Forum](http://forum.imagej.net/).
 
@@ -77,7 +77,7 @@ We encourage users of deconvolution to try deconvolving this image with various 
 
 - {% include citation doi="10.1016/0167-2789(92)90242-F" %}
 
-- C. Vonesch (2013), *Second International Challenge on 3D Deconvolution Microscopy*, http://bigwww.epfl.ch/deconvolution/challenge.
+- C. Vonesch (2013), *Second International Challenge on 3D Deconvolution Microscopy*, https://bigwww.epfl.ch/deconvolution/challenge.
 
 - {% include citation doi="10.1364/AO.36.001766" %}
 

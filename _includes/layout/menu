@@ -173,11 +173,10 @@
                 <li><a href="/licensing/lgpl">LGPL</a></li>
                 <li><a href="/licensing/mit">MIT</a></li>
                 <li><a href="/licensing/public-domain">Public domain</a></li>
+                <li><a href="/licensing/big">BIG</a></li>
               {% include menu/section-end %} <!-- Contribute/Licensing/Open Source -->
 
-              {% include menu/section title="Proprietary" link="/licensing/closed-source" %}
-                <li><a href="/licensing/big">BIG</a></li>
-              {% include menu/section-end %} <!-- Contribute/Licensing/Proprietary -->
+              <li><a href="/licensing/closed-source">Proprietary</a></li>
             {% include menu/section-end %} <!-- Contribute/Licensing -->
 
             {% include menu/section title="Editing the Wiki" link="/editing" %}

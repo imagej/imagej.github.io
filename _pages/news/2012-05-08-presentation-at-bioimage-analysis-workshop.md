@@ -6,6 +6,6 @@ On April 30 through May 1 we attended a Bioimage Analysis Workshop in Barcelona 
 
 It was great meeting with developers of related projects, including [OME](/software/omero), [KNIME Image Processing](/software/knime), [Icy](/software/icy) and [BioImageXD](/software/bioimagexd)! The big takeaway message of the workshop was interoperability: we are all striving to make our software work together well, so that users can combine them and benefit from all our efforts.
 
-Download the talk in [PDF](http://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf) or [ODP](http://conference.imagej.net/2012-ISBI/2012-04-30-imagej2-barcelona.odp) format.
+Download the talk in [PDF](https://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf) or [ODP](http://conference.imagej.net/2012-ISBI/2012-04-30-imagej2-barcelona.odp) format.
 
  
