@@ -47,35 +47,35 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>Introduction to ImageJ/Fiji</td>
       <td>
-        Spring 2017: <a href="/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br>
-        Spring 2019: <a href="/presentations/fiji-introduction/">slides</a><br>
-        Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a><br>
-        Summer 2021: <a href="https://docs.google.com/presentation/d/1dcu41cC3Yzw2MnBMiWzWlHd7Rstr8Coo0zRAOXmfSGs/edit?usp=sharing/">slides</a><br>
         Spring 2023: <a href="https://docs.google.com/presentation/d/1if03t5KoVHgsy8s96ABnlzaGz8dNPUSZ3i5Wpwv5PCs/edit?usp=sharing">slides</a>
+        Summer 2021: <a href="https://docs.google.com/presentation/d/1dcu41cC3Yzw2MnBMiWzWlHd7Rstr8Coo0zRAOXmfSGs/edit?usp=sharing/">slides</a><br>
+        Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a><br>
+        Spring 2019: <a href="/presentations/fiji-introduction/">slides</a><br>
+        Spring 2017: <a href="/presentations/2017-05/fiji-introduction/">slides</a>, <a href="https://vimeo.com/218520761">video</a><br>
         </td>
-    </tr>
-    <tr>
-      <td>Segmentation in ImageJ/Fiji</td>
-      <td>
-        Spring 2017: <a href="/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br>
-        Spring 2019: <a href="/presentations/fiji-segmentation/">slides</a><br>
-        Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a><br>
-        Summer 2021: <a href="https://docs.google.com/presentation/d/1HKHZTTYCZWvm62IvgGAxzOvchwNfJswsx5WtKuRVCRE/edit?usp=sharing">slides</a><br>
-        Spring 2023: <a href="https://docs.google.com/presentation/d/1ebyxUHph_O_OcngfMsR2QuxMJcdODpu08qAWUpQCIvM/edit?usp=sharing">slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Scripting with ImageJ/Fiji</td>
-      <td>
-        Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
-        Spring 2019: <a href="/presentations/fiji-scripting/">slides</a><br>
-        Summer 2021: <a href="https://docs.google.com/presentation/d/1c7cvJLAhRZ9t1zrbbAQ0Zr-hTrHva6WOT6hQQinuDTE/edit?usp=sharing/">slides</a>
-      </td>
     </tr>
     <tr>
       <td>Image processing with ImageJ/Fiji</td>
       <td>
         Summer 2023: <a href="https://docs.google.com/presentation/d/1FteAHtgwo60oE3FlrRwQ9La5rn4G090l6mhbGUNwClg/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Segmentation in ImageJ/Fiji</td>
+      <td>
+        Spring 2023: <a href="https://docs.google.com/presentation/d/1ebyxUHph_O_OcngfMsR2QuxMJcdODpu08qAWUpQCIvM/edit?usp=sharing">slides</a>
+        Summer 2021: <a href="https://docs.google.com/presentation/d/1HKHZTTYCZWvm62IvgGAxzOvchwNfJswsx5WtKuRVCRE/edit?usp=sharing">slides</a><br>
+        Winter 2020: <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">slides</a><br>
+        Spring 2019: <a href="/presentations/fiji-segmentation/">slides</a><br>
+        Spring 2017: <a href="/presentations/2017-05/fiji-segmentation/">slides</a>, <a href="https://vimeo.com/218520761#t=1h05m49s">video</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td>Scripting with ImageJ/Fiji</td>
+      <td>
+        Summer 2021: <a href="https://docs.google.com/presentation/d/1c7cvJLAhRZ9t1zrbbAQ0Zr-hTrHva6WOT6hQQinuDTE/edit?usp=sharing/">slides</a>
+        Spring 2019: <a href="/presentations/fiji-scripting/">slides</a><br>
+        Spring 2017: <a href="/presentations/2017-05/fiji-scripting/">slides</a>, <a href="https://vimeo.com/218520432">video</a><br>
       </td>
     </tr>
   </tbody>
