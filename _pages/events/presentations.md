@@ -47,6 +47,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>Introduction to ImageJ/Fiji</td>
       <td>
+        Fall 2024: <a href="https://docs.google.com/presentation/d/1JzcToNnOTlt0dmthmkdhAhmcHG3aSnzLcyugB29Csmg/edit?usp=sharing">slides</a>
         Spring 2023: <a href="https://docs.google.com/presentation/d/1if03t5KoVHgsy8s96ABnlzaGz8dNPUSZ3i5Wpwv5PCs/edit?usp=sharing">slides</a>
         Summer 2021: <a href="https://docs.google.com/presentation/d/1dcu41cC3Yzw2MnBMiWzWlHd7Rstr8Coo0zRAOXmfSGs/edit?usp=sharing/">slides</a><br>
         Fall 2019: <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">slides</a><br>
