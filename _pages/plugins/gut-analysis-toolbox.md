@@ -21,18 +21,19 @@ Click [here to access the WIKI](https://gut-analysis-toolbox.gitbook.io/docs/) d
 You can also watch tutorials for GAT on [Youtube](https://www.youtube.com/playlist?list=PLmBt1Dumq60p4mIFT4j7TP_PVRjbO55Oi).
 
 What you can do with GAT:
-* Semi-automated analysis of number of enteric neurons: Uses pan-neuronal marker Hu or anything with similar 
+* Semi-automated analysis of enteric neuronal distribution: Uses pan-neuronal marker Hu or any marker with similar 
  labelling
 * Normalise counts to the number of ganglia.
 * Count number of neuronal subtypes, such as ChAT, nNOS etc..
-* Spatial analysis using number of neighboring cells.
+* Spatial analysis with number of neighboring cells.
 * Calcium imaging analysis: Alignment of images and extraction of normalised traces
+* Multiplex image registration
 
 **Reference**
 
 To cite GAT:
 
-Sorensen, L., A. Humenick, S. S. B. Poon, M. N. Han, N. S. Mahdavian, R. Hamnett, E. Gómez-de-Mariscal, P. H. Neckel, A. Saito, K. Mutunduwe, C. Glennan, R. Haase, R. M. McQuade, J. P. P. Foong, S. J. H. Brookes, J. A. Kaltschmidt, A. Muñoz-Barrutia, S. K. King, N. A. Veldhuis, S. E. Carbone, D. P. Poole and P. Rajasekhar (2024). "Gut Analysis Toolbox: Automating quantitative analysis of enteric neurons." bioRxiv: 2024.2001.2017.576140.
+Luke Sorensen, Adam Humenick, Sabrina S. B. Poon, Myat Noe Han, Narges S. Mahdavian, Matthew C. Rowe, Ryan Hamnett, Estibaliz Gómez-de-Mariscal, Peter H. Neckel, Ayame Saito, Keith Mutunduwe, Christie Glennan, Robert Haase, Rachel M. McQuade, Jaime P. P. Foong, Simon J. H. Brookes, Julia A. Kaltschmidt, Arrate Muñoz-Barrutia, Sebastian K. King, Nicholas A. Veldhuis, Simona E. Carbone, Daniel P. Poole, Pradeep Rajasekhar; Gut Analysis Toolbox: Automating quantitative analysis of enteric neurons. J Cell Sci 2024; jcs.261950. doi: https://doi.org/10.1242/jcs.261950
 
 To download the training data, notebooks and associated models please go to the following Zenodo link:
 
