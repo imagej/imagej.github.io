@@ -137,9 +137,11 @@ if the recorder has a problem, here are some examples of macro line:
 -   run("DiAna\_Segment", "img=C0.tif iter=3-2000-20-30-true");
 -   run("DiAna\_Analyse", "img1=imageA.tif img2=imageB.tif lab1=segA.tif lab2=segB.tif coloc distc=50.0 adja kclosest=1 dista=50.0 measure");
 
+To compute closest borders, use a 'b' after the number of closest objects: ... adja kclosest=1b
+
 ## Installation
 
-Download and copy the following jar in your plugins folder [Diana\_1.52.jar](https://drive.google.com/file/d/1hkmM6kHMnPvwya26ogQsNaLI2AMVq_zN)
+Download and copy the following jar in your plugins folder [Diana\_1.53.jar](https://drive.google.com/file/d/1hkmM6kHMnPvwya26ogQsNaLI2AMVq_zN)
 
 You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](https://mcib3d.frama.io/3d-suite-imagej/).
 
@@ -174,5 +176,6 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
 -   09/01/2023 v1.50: bugs fixed
 -   23/06/2023 v1.51: macro bug fixed
 -   12/07/2023 v1.52: macro bug fixed and enhance GUI checkup
+-   01/10/2024 v1.53: closest border-border enabled
 
    
