@@ -46,7 +46,7 @@ You can download it from Zenodo:
 
 
 First launch Fiji and open the tutorial image in Fiji.
-We use here the `P31-crop.tif` file, provided in the tutorial data.
+We use here the [`P31-crop.tif` file](https://zenodo.org/records/5206107/files/P31-crop.tif?download=1), provided in the tutorial data.
 
 {% include img name="Cell images" src="/media/plugins/trackmate/trackmate-stardist-builtin-detector-image.png" align="center" %}
 
