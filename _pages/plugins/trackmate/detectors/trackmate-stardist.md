@@ -50,7 +50,7 @@ We use here the `P31-crop.tif` file, provided in the tutorial data.
 
 {% include img name="Cell images" src="/media/plugins/trackmate/trackmate-stardist-builtin-detector-image.png" align="center" %}
 
-Then launch TrackMate {% include bc path='Plugins>Tracking>TrackMate' %}.
+Then launch TrackMate {% include bc path='Plugins|Tracking|TrackMate' %}.
 In the second panel titled **Select a detector**, you should see two new choices in the list, and on of them is **StarDist detector**. 
 {% include img name="TrackMate-StarDist builtin detector choice" src="/media/plugins/trackmate/trackmate-stardist-select-builtin-detector.png" align="center" %}
 
@@ -90,7 +90,7 @@ Step by step:
 
 - Open Fiji.
 - Open your image. This image has two channels, the ERK reporter in channel 1 (green) and a DNA staining in channel 2 (grey).
-- Open TrackMate {% include bc path='Plugins>Tracking>TrackMate' %}. The TrackMate start panel will open, showing information about the image dimensions. Click `Next`.
+- Open TrackMate {% include bc path='Plugins|Tracking|TrackMate' %}. The TrackMate start panel will open, showing information about the image dimensions. Click `Next`.
 - The “Select a detector” panel opens. From the pull-down menu, select the `StarDist detector`. The description of the detector method will appear in the panel. Click `Next`.
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-erk-tutorial-1.png" width='300' align="center" %}
@@ -333,7 +333,7 @@ The dataset onctains the raw data but also the intermediate label images in case
 
 - Open Fiji.
 - Open the `Spheroid-3D.tif` image in Fiji. This image is a Z stack of MCF10DCIS.com 3D spheroids that have been stained with DAPI to visualise their nuclei.
-- Open TrackMate  {% include bc path='Plugins>Tracking>TrackMate' %}. As the image is a 3D Z stack, TrackMate will ask you to swap the Z and T dimensions. This is what we want; click `Yes`.
+- Open TrackMate  {% include bc path='Plugins|Tracking|TrackMate' %}. As the image is a 3D Z stack, TrackMate will ask you to swap the Z and T dimensions. This is what we want; click `Yes`.
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-1.png" width='300' align="center" %}
 
@@ -374,7 +374,7 @@ The dataset onctains the raw data but also the intermediate label images in case
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-7.png" width='400' align="center" %}
 
-- The label image is now exported. Remember to change the dimensions back from T to Z in Fiji  {% include bc path='Image>Properties' %} and to save your image {% include bc path='File > Save as...' %}.
+- The label image is now exported. Remember to change the dimensions back from T to Z in Fiji  {% include bc path='Image|Properties' %} and to save your image {% include bc path='File | Save as...' %}.
 - The label image can be viewed in 3D for instance using [FPBioimage](https://fpb.ceb.cam.ac.uk/), and further analysed using the [3D ImageJ Suite](/plugins/3d-imagej-suite/).
 
 {% include img  src="/media/plugins/trackmate/trackmate-stardist-spheroid-tutorial-8.png" width='250' align="center" %}

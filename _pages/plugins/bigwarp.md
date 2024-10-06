@@ -23,7 +23,7 @@ the warp on-the-fly.
 BigWarp comes with Fiji. You can access it via {% include bc path="Plugins | BigDataViewer | Big Warp Command" %} 
 for the newer startup dialog, or {% include bc path="Plugins | BigDataViewer | Big Warp" %} 
 for the legacy dialog. If this is not visible in your installation, try updating Fiji with
-{% include bc path="Help Update..." %}.
+{% include bc path="Help | Update..." %}.
 
 ## Starting BigWarp
 

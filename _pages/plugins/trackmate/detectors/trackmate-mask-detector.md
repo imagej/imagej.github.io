@@ -45,7 +45,7 @@ The 2nd channel contains the segmentation results of this signal, that I obtaine
 
 ### Running TrackMate
 
-Launch TrackMate: {% include bc path='Plugins>Tracking>TrackMate' %}
+Launch TrackMate: {% include bc path='Plugins|Tracking|TrackMate' %}
 
 In the second panel, select the `Mask detector`
 
