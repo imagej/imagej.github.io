@@ -1,5 +1,4 @@
 ---
-mediawiki: Microscope_Focus_Quality
 title: Microscope Focus Quality
 project: /software/fiji
 categories: [Uncategorized]
@@ -49,6 +48,6 @@ The plugin is currently limited to single (i.e., 2D) images of 16-bit integer da
 ## See also
 
 -   [TensorFlow](/libs/tensorflow), the machine learning library this plugin uses.
--   [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html) post on Google Research Blog
+-   [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.google/blog/using-deep-learning-to-facilitate-scientific-image-analysis/) post on Google Research Blog
 
 
