@@ -52,5 +52,5 @@ Example: [Projection of binary images of capillaries in brain](/media/plugins/MA
 
 -   {% include bc path='Plugins | Biomat | 2D Heat Kernel Tensor'%}
 -   {% include bc path='Plugins | Biomat | 2D Tensor Statistics'%}
--   {% include bc path='Process | Filters | 2D Tensor Color Coding'%}
+-   {% include bc path='Process | Biomat | 2D Tensor Color Coding'%}
  
