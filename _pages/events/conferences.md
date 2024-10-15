@@ -3,10 +3,9 @@ title: Conferences
 section: Explore:Events
 ---
 
-The core ImageJ development teams and greater image analysis community
-showcase ImageJ, its extensions, and other useful open source scientific
-imaging software at the bienniel *From Images to Knowledge with
-ImageJ and Friends* (I2K) conference.
+The core Fiji/ImageJ development teams and greater image analysis community
+showcase Fiji/ImageJ, its extensions, and other useful open source scientific
+imaging software at the bienniel *From Images to Knowledge* (I2K) conference.
 
 ### Future conferences
 
@@ -16,6 +15,9 @@ If you have any questions or if you are interested in hosting a future conferenc
 
 | **\#** | **Conference**                                                                                              | **Dates**                     | **Location**                                                                        |
 |--------|-------------------------------------------------------------------------------------------------------------|-------------------------------|-------------------------------------------------------------------------------------|
+| 9.1    | [Virtual I2K 2024: Online Tutorials on Image Analysis](/events/i2k-2024#virtual-i2k)                        | 28 - 30 Oct 2024              | Fully virtual/online (organized by [BINA](/orgs/bina))                              |
+| 9      | [I2K 2024: From Images to Knowledge](/events/i2k-2024)                                                      | 23 - 25 Oct 2024              | [Human Technopole](/orgs/human-technopole), Milan, Italy                            |
+| 8.5    | [Halfway to I2K: Virtual Tutorials on Image Analysis](/events/i2k-2023)                                     | 17 - 19 Oct 2023              | Fully virtual/online (organized by [BINA](/orgs/bina))                              |
 | 8      | [I2K 2022: From Images to Knowledge](/events/i2k-2022)                                                      | 6, 9, 10 May 2022             | Fully virtual/online (organized by [COBA](/orgs/coba) and [MPI-CBG](/orgs/mpi-cbg)) |
 | 7      | [From Images to Knowledge with ImageJ & Friends](/events/i2k-2020)                                          | 30 November - 2 December 2020 | Fully virtual/online (organized by [Janelia Research Campus](/orgs/janelia))        |
 | 6      | [From Images to Knowledge with ImageJ & Friends](/events/i2k-2018)                                          | 6 - 8 December 2018           | [EMBL](https://www.embl.de/), Heidelberg, Germany                                   |
