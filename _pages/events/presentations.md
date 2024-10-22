@@ -97,6 +97,17 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
   </thead>
   <tbody>
     <tr>
+      <th colspan=4 class="section-major"><a href="i2k-2024">I2K 2024</a></th>
+    </tr>
+    <tr>
+      <td>2024-Oct-23</td>
+      <td>{% include person id='ctrueden' %}</td>
+      <td>Fiji Progress and Priorities 2024</td>
+      <td>
+        <a href="https://docs.google.com/presentation/d/1YyFymvpFYA4L-p8gIMgKvJzrZhto6sNl0qItEImNme4/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
+    <tr>
       <th colspan=4 class="section-major"><a href="https://chanzuckerberg.com/science/meetings/">CZI Imaging 2023</a></th>
     </tr>
     <tr>
