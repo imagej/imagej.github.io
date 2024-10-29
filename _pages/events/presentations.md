@@ -122,6 +122,14 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <th colspan=4 class="section-major"><a href="https://www.embl.de/training/events/2018/IMJ18-01/">From Images to Knowledge with ImageJ & Friends</a></th>
     </tr>
     <tr>
+      <td>2024-Oct-29</td>
+      <td>{% include person id='elevans' %}</td>
+      <td>Segmentation & Scripting with Fiji/ImageJ</td>
+      <td>
+        <a href="https://docs.google.com/presentation/d/1PjzLeKpouuEpxOOwETS4TiOgTHTEbozOIJzcLNA0J6s/edit?usp=sharing">slides</a>
+      </td>
+    </tr>
+    <tr>
       <td>2018-Dec-06</td>
       <td>{% include person id='ctrueden' %},<br>
       {% include person id='tpietzsch' %},<br>
