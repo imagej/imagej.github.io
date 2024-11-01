@@ -9,7 +9,7 @@ doi: 10.1371/journal.pone.0038011
 
 TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 
-See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html) for an overview. 
+See [TrakEM2 snapshots](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/snapshots.html) for an overview. 
 
 ## Features
 
@@ -29,8 +29,8 @@ TrakEM2 interacts with the [3D Viewer](/plugins/3d-viewer) for visualization of 
 
 ## Documentation
 
--   [How to](http://www.ini.uzh.ch/~acardona/howto.html)
--   [Manual](http://www.ini.uzh.ch/~acardona/trakem2_manual.html)
+-   [How to](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/howto.html)
+-   [Manual](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/trakem2_manual.html)
 -   [TrakEM2 tutorials](/plugins/trakem2/tutorials) with video tutorials.
 -   Examples of [scripting in TrakEM2](/plugins/trakem2/scripting).
 -   Writing [plugins for TrakEM2](/plugins/trakem2/tplugin).
@@ -159,8 +159,8 @@ As for a graphics card buy the largest you can afford, both in computing power a
 {% include thumbnail src='/media/plugins/trakem2/trakem2-trees.png' title='The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.'%} 
 {% include thumbnail src='/media/plugins/trakem2/clahe-live-filter.jpg' title='Effect of the [CLAHE](/plugins/clahe) live filter in TrakEM2. Data with high dynamic range is displayed with perceptually boosted local contrast. [CLAHE parameters](/plugins/clahe) are relative to display pixels and, therefore, will not result in an effective bandpass when zooming out largely on statically pre-processed images.'%} 
 {% include thumbnail src='/media/plugins/trakem2/neuronal-arbors-1.png' title='Neuronal arbors reconstructed with TrakEM2 using the [treeline](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) segmentation type.'%} 
-{% include thumbnail src='/media/plugins/trakem2/trakem2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](http://www.ini.uzh.ch/~acardona/data.html).'%} 
-{% include thumbnail src='/media/plugins/trakem2/trakem2-display-2.png' title='[TrakEM2](/plugins/trakem2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees) and [connectors](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors) (for synapses).'%} 
+{% include thumbnail src='/media/plugins/trakem2/trakem2-arealists.png' title='Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [manually segmentated data set](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/data.html).'%} 
+{% include thumbnail src='/media/plugins/trakem2/trakem2-display-2.png' title='[TrakEM2](/plugins/trakem2) showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [treelines](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/trakem2_manual.html#trees) and [connectors](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/trakem2_manual.html#connectors) (for synapses).'%} 
 {% include thumbnail src='/media/plugins/trakem2/trakem2-display-segmentations.png' title='Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.'%} 
 
 {% include clear content='left' %}
