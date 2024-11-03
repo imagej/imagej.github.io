@@ -11,7 +11,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for version 4.3.0**.<br>
+**This page was last revised for version 5.0.0**.<br>
 Please help us to keep these walk-throughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -145,32 +145,45 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
 
 ## Tracing in the Legacy 3D Viewer
 
+The legacy 3D Viewer allows for tracing in an interactive 3D scene.
+
 ### I. Starting the Viewer
 
 <img align="right" src="/media/plugins/snt/snt-3d-dialog.png" title="The legacy 3D Viewer remains a functional canvas" width="300px"/>
-It remains possible to trace in the legacy 3D Viewer. To open it, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see 3 parameters:
+ To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see several parameters:
 
-- Select *New with image* from the *Viewer* drop-down menu (selecting *New without image* would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing their window titles from the drop-down menu.
+- Select *New with image...* from the *Viewer* drop-down menu and press *Apply*. Note that you can re-use existing viewers you may have open by choosing their window titles from the drop-down menu. NB: Selecting *New without image* would only allow you to look at reconstructions without the underlying signal.
 
-- Select the preferred rendering style from the *Mode* drop-down menu.
+- Large images may require downsampling for performance reasons. Once you *Apply* the viewer choice, a prompt will appear asking you to choose the downsampling factor for the image. E.g., a value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction. Note that while downsampling speeds up rendering it often results in signal smoothing. Volumes should look crisper without downsampling. Original pixels are used with a resampling factor of 1. 
 
-- Once you *Apply* the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
-  <img align="right" src="/media/plugins/snt/snt-image-resampling-factor.png" title="Legacy 3D Viewer resampling prompt" width="300px"/>
+- Once the downsampling factor is specified, the viewer window will appear with the currently open image (i.e., the current Channel/Frame being traced as specified in the [Data Source](/plugins/snt/manual#data-source) widget).
+
+- Options in the _Mode_ drop-down menu specify how paths should be rendered. There are three possibilities: 1) *Lines*: Only the centerline of paths is displayed; 2) *Lines and disks*: Centerline of paths is displayed with disks at each node depicting the node radius;  and 3) *Surface reconstruction*: Paths are dispayed as surface meshes.
+
+{% include notice content="By default, the Legacy 3D Viewer displays warnings and errors in pop-up dialogs. You can toggle _Disable pop-up errors_ to have them displayed in a non-blocking Log window." %}
+
 
 ### II. Tracing and Navigation
-<img  align="left" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="300"/>
+<img  align="right" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="350"/>
 
-###### Selecting points for tracing
-Select the *Wand tool* ({% include key key='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) in the main ImageJ toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#iii-confirm-the-temporary-segment). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier.
+#### Selecting points for tracing
+_Tracing_ mode is only active when the *Wand tool* in the main ImageJ toolbar is active. To activate it, press the {% include key key='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) and click over the region you want to trace. Tracing works the same way as in the XY, YZ, and XZ views, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#iii-confirm-the-temporary-segment). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier. NB: This shortcut can be simplified: See [Options Tab](/plugins/snt/manual#temporary-paths) for details.
 
-###### Navigation
-**Rotation** Either use the *Hand tool* ({% include key key='H' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) tool and left-click while dragging the mouse or drag mouse while holding the scroll wheel
+To interact with the scene without tracing, activate the *Hand tool* in the main ImageJ toolbar by pressing {% include key key='H' %}.
 
-**Translation** Hold {% include key key='Shift' %} and the scroll wheel while dragging the mouse.
 
-**Adjusting zoom depth** Scroll using the mouse wheel.
+#### Navigation
 
-NB: Once you have selected the Wand and Hand tools once, you should be able to switch between them by pressing the {% include key key='Esc' %} key. See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts.
+- **Rotation**: Use {% include key keys='Middle Drag' %}. Alternatively, if the *Hand tool* ({% include key key='H' %}) is active in the ImageJ toolbar you can use {% include key keys='Left Drag' %}
+
+- **Translation**: Use {% include key keys='Shift|Middle Drag' %}. Alternatively, if the *Hand tool* ({% include key key='H' %}) is active in the ImageJ toolbar you can use {% include key keys='Shift|Left Drag' %}
+
+- **Zoom**: Use {% include key keys='Mouse Wheel' %}
+
+See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of all supported shortcuts.
+
+{% include notice content="Note that the 3D Viewer is not aware of commands listed in the [Image Contextual Menu](/plugins/snt/manual#image-contextual-menu) (e.g., _Path Editing_). Such commands need to be accessed from the image canvas" %}
+
 
 # Merging/Joining Paths
 

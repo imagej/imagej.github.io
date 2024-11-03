@@ -27,10 +27,10 @@ The Command Palette is the fastest way to access actions and discover their resp
 
 ### Interactive Prompt
 
-| {% include key key='Y' %}  | Confirms the current temporary path. *Mnemonic: <u>Y</u>es* |
-| {% include key key='N' %}  | Discards the current temporary path. *Mnemonic: <u>N</u>o*  |
-| {% include key key='F' %}  | <u>F</u>inishes a path. Note that you can finish a path by pressing {% include key key='Y' %} {% include key key='Y' %} twice |
 | {% include key key='C' %}  | <u>C</u>ancels a path. Note that you can finish a path by pressing {% include key key='N' %} {% include key key='N' %} twice |
+| {% include key key='F' %}  | <u>F</u>inishes a path. Note that you can finish a path by pressing {% include key key='Y' %} {% include key key='Y' %} twice |
+| {% include key key='N' %}  | Discards the current temporary path. *Mnemonic: <u>N</u>o*  |
+| {% include key key='Y' %}  | Confirms the current temporary path. *Mnemonic: <u>Y</u>es* |
 | {% include key key='Esc' %}| Aborts current operation / Exits current mode |
 
 
@@ -62,7 +62,7 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 | {% include key key='L' %}                     | Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image) |
 | {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
 | {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/step-by-step-instructions#accurate-point-placement) |
-| {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching) |
+| {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching). This shortcut can be [simplified](/plugins/snt/manual#temporary-paths) |
 | {% include key keys='Shift|B' %}              | <u>B</u>ookmarks cursor location |
 | {% include key keys='Shift|E' %}              | Activates *Edit Mode* (<u>E</u>diting of selected Path) |
 | {% include key keys='Shift|P' %}              | <u>P</u>auses tracing operations |
@@ -86,18 +86,20 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key key='left' %} {% include key key='right' %} {% include key key='up' %} {% include key key='down' %} | Rotate (with mouse: {% include key keys='Left Drag' %}) |
 | {% include key keys='shift|left' %} {% include key key='right' %} {% include key key='up' %} {% include key key='down' %} | Pan (with mouse: {% include key keys='Right Drag' %}) |
 | {% include key key='+' %} / {% include key key='-' %} | Zoom (with mouse: {% include key keys='Mouse Wheel' %}) |
+| {% include key keys='Double Click' %} | Toggle animation |
 | {% include key keys='CTRL|Left Click' %} | Snap to top/side view |
 | {% include key key='A' %}        | Toggle <u>A</u>xes |
 | {% include key key='C' %}        | Toggle <u>C</u>amera Mode |
 | {% include key key='D' %}        | Toggle <u>D</u>ark Mode |
 | {% include key key='F' %}        | <u>F</u>it View to Visible Objects |
+| {% include key key='H' %}        | <u>H</u>elp (as Notification) ({% include key key='F1' %} shows Help on a dedicated window) |
 | {% include key key='L' %}        | <u>L</u>og Scene Details to Console |
 | {% include key key='R' %}        | <u>R</u>eset View (1 press) or <u>R</u>eload Scene (double press) |
 | {% include key key='S' %}        | Save <u>S</u>creenshot |
 | {% include key keys='Shift|C' %} | Toggle <u>C</u>ontrol Panel |
 | {% include key keys='Shift|F' %} | Toggle <u>F</u>ull Screen ({% include key key='Esc' %} can also be used to exit) |
 | {% include key keys='Shift|S' %} | Toggle <u>S</u>tatus Bar |
-| {% include key key='H' %}        | <u>H</u>elp (as Notification) ({% include key key='F1' %} shows Help on a dedicated window) |
+| {% include key keys='Ctrl|Shift|P' %} / {% include key keys='Command|Shift|P' %}| Toggle Command <u>P</u>alette |
 
 ### sciview
 
@@ -112,11 +114,18 @@ See [sciview](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full l
 
 ### Legacy 3D Viewer
 
-All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) *should* be recognized by the [Legacy 3D viewer](/plugins/snt/step-by-step-instructions#legacy-3d-viewer). In addition, the following are also implemented:
+The most important shortcuts for the [Legacy 3D viewer](/plugins/snt/step-by-step-instructions#legacy-3d-viewer) are:
 
-| {% include key key='H' %}   | Selects the <u>H</u>and (rotation) tool |
-| {% include key key='W' %}   | Selects the <u>W</u>and (selection) tool |
-| {% include key key='Esc' %} | Shuttles between the Hand and Wand tool after both have been selected at least once |
+| {% include key key='H' %} | Selects the <u>H</u>and (pan) tool |
+| {% include key key='W' %} | Selects the <u>W</u>and (tracing) tool |
+| {% include key keys='Middle Drag' %} | Rotation |
+| {% include key keys='Shift|Middle Drag' %} | Pan (translation) |
+| {% include key keys='Mouse Wheel' %} | Zoom |
+| {% include key keys='Shift|Left Drag' %} | When Hand tool is active: Pan (translation) |
+| {% include key keys='Left Drag' %} | When Hand tool is active: Rotation |
+
+In addition, _most_ shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) can be used in the 3D Viewer. When a key stroke is not recognized by the 3D Viewer, a mesage is displayed in the [status bar](/plugins/snt/manual#status-bar) of the main dialog. 
+
 
 ### Other
 

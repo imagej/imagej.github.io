@@ -76,6 +76,9 @@ Use the *Edit this page* option on the <a href="#top">top</a> of the documentati
 
 ## Tracing
 
+### Can I trace in 3D?
+Yes, always. Either using the XY,ZY,XZ [views](/plugins/snt/step-by-step-instructions#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy), or [sciview](/plugins/snt/manual#sciview) (experimental).
+
 ### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
 Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section).
 

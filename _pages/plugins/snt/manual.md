@@ -9,7 +9,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for version 4.3.0**.<br>
+**This page was last revised for version 5.0.0**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -332,6 +332,11 @@ The "Layers" drop-down menu in the auto-tracing panel also allows for importing 
 
 The same menu also provides options to import a [Labkit/Weka](./machine-learning) model. In this case the model is applied to the image being traced, and the resulting 'p-map' is loaded as secondary layer.
 
+
+### Computation Settings
+This widget reports current settings (cost function, image statistics, etc.). Report can be copied to the clipboard, or logged to the [Script Recorder](./scripting/#script-recorder).  
+
+
 ### Filters for Visibility of Paths
 
 <img align="right" src="/media/plugins/snt/path-visibility-filters.png"  width="300" />
@@ -459,27 +464,31 @@ This option assumes [sciview](/plugins/sciview) to be successfully installed. sc
 
 ### Legacy 3D Viewer
 
-The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it is no longer actively maintained and _may_ not function reliably on certain hardware. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer).
+The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. That being said, SNTv5 has implemented several improvements that have restored/improved Legacy 3D Viewer functionality relatively to earlier versions. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer).
 
 <span id="bookmarks"></span>
 <span id="bookmark-manager"></span>
 
 ## Bookmarks Tab
 
-This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguos branching point, or an ambiguous cross-over between two neurites). The basic usage is as follows:
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). The basic usage is as follows:
 
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" title="Bookmarks tab" />
 
-- Right click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor X, Y, Z, C, T coordinates
+- Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor X, Y, Z, C, and T coordinates
 
-- To visit a bookmarked location double-click on its entry. The image will be centered at that position under the speficied zoom in {% include bc path='Preferred Zoom Level (%)' %}
-
-- Use {% include bc path='Import...' %} to load bookmars from a CSV file. Use {% include bc path='Export...' %} to store current list.
+- To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
 
 - To rename an existing bookmark, select it and start typing its new label. Alternatively, use 
-{% include bc path='Rename Selected Bookmark..' %} command in the list righ-click menu
+{% include bc path='Rename Selected Bookmark..' %} command in the list right-click menu
 
-- Bookmarks can also be transferred to ImageJ's ROI Manager using {% include bc path='Send Selected Bookmarks to ROI Manager...' %} in the list righ-click menu
+- Use {% include bc path='Import...' %} to load bookmars from either: 1) a CSV file, 2) Existing ROIs in ImageJ's ROI Manager, or 3) Existing ROIs in the overlay of the image being traced. Note that when loading an area ROI, the bookmark is registered at the ROI's centroid
+
+- Use {% include bc path='Export...' %} to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
+
+## Status Bar
+The status bar at the bottom of the Main Dialog displays brief messages about ongoing operations. By default, the status bar reports the image title and the CT position being traced.
+
 
 # Image Contextual Menu
 
