@@ -35,6 +35,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
 /media/plugins/snt/snt-notebook.png | Scripting in native python through [pyimagej](/scripting/pyimagej)
 /media/plugins/snt/snt-delaunay-triangulation.png | Delaunay tesselation: Tracings can be used in [image processing routines](/plugins/snt/manual#process-)
+/media/plugins/snt/snt-density-map.png | Density maps for group(s) of cells obtained from [built-in scripts](/plugins/snt/scripting#bundled-templates)
 /media/plugins/snt/snt-recviewer-convexhull-and-surface.png | [Convex hulls](/plugins/snt/analysis#convex-hull-analysis) and [surface annotations](/plugins/snt/reconstruction-viewer#geometric-annotations)
 /media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
 /media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations

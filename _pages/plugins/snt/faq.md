@@ -16,13 +16,11 @@ See [Installation details](/plugins/snt/index#installation).
 
 ### How do I cite SNT?
 
+**The proper citation for SNT is**:
+
 - {% include citation id='plugins/snt' %}
 
-**NB:** Similarly to the main [Fiji article](/software/fiji#publication), the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication **is no longer considered a primary citation**:
-
-   - {% include citation doi='10.1093/bioinformatics/btr390' %}
-
-To reference specific modules that enhance SNT:
+**Note that neither the main [Fiji article](/software/fiji#publication), nor the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication are appropriate citations for SNT**. To reference additional modules that enhance SNT:
 
 - **[Sholl Analysis](/plugins/sholl-analysis)**
   {% include citation id="plugins/sholl-analysis" %}
@@ -34,7 +32,7 @@ To reference specific modules that enhance SNT:
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
-Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](#how-do-i-cite-snt), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji ' repo='Simple_Neurite_Tracer' label='historic ' %} and SNT's {% include github org='morphonets ' repo='SNT ' label='current ' %} repositories.
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](https://doi.org/10.1093/bioinformatics/btr390), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji ' repo='Simple_Neurite_Tracer' label='historic ' %} and SNT's {% include github org='morphonets ' repo='SNT ' label='current ' %} repositories.
 
 ### How accurate is SNT?
 
