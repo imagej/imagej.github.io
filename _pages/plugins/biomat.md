@@ -2,8 +2,8 @@
 mediawiki: Biomat
 name: "Biomat"
 title: Biomat
-categories: [Filtering]
-release-date: "10/18/2024"
+categories: [Filtering, Mathematical Morphology]
+release-date: "11/26/2024"
 initial-release-date: "03/26/2019"
 team-founder: 'Jiří Janáček'
 team-maintainer: 'Jiří Janáček | mailto:jiri.janacek_at_fgu.cas.cz'
@@ -25,6 +25,24 @@ Preprocessing example: [Stack of confocal microscopy images of capillaries in ra
 -   {% include bc path='Plugins | Biomat | Lipschitz 3D Filter'%} with "slope" = 2 and "top hat" on
 
  {% include img align="center" name="brain proc" src="https://raw.githubusercontent.com/jiri-janacek/biomat/b9b53126134ac7e9fbca9a29de66bc7f2b7c845e/media/capillaries_brain_proc_3Dg.gif" caption="Processed data" %}
+
+## Morphological operations with quadratic structuring function
+
+**Spherical Extrusion** - tool for calculation of volume of objects from 2D projections.
+
+Example: [Synthetic contours](https://raw.githubusercontent.com/jiri-janacek/biomat/c3f75436ccf4b863dbdf6267a352b129b28a89a7/media/simobjinv.tif)
+
+ {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects.png" caption="Original data" %}
+
+-   {% include bc path='Plugins | Biomat | Spherical Extrusion'%}
+
+ {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion.png" caption="Height of spherical extrusion" %}
+
+ {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion_res.png" caption="Area and mean height of spherical extrusion" %}
+
+Volume = 2 * Area * Mean.
+
+ {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion3D.gif" caption="Reconstructed objects" %}
 
 ## Plugins for detection of fibres in 3D image
 
