@@ -42,7 +42,13 @@ Example: [Synthetic contours](https://raw.githubusercontent.com/jiri-janacek/bio
 
 Volume = 2 * Area * Mean.
 
- {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion3D.gif" caption="Reconstructed objects" %}
+ {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_SphericalExtrusion3d.gif" caption="Reconstructed objects" %}
+
+**Distance Map 3D** - 3D Euclidean distance transform.
+
+Example: [Ball with 40 pixels radius](https://raw.githubusercontent.com/jiri-janacek/biomat/93f0fbe74646db4588feb99e86cb3ba35288dcc2/media/testball.tif)
+
+-   {% include bc path='Plugins | Biomat | Distance Map 3D'%}
 
 ## Plugins for detection of fibres in 3D image
 
