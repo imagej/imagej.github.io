@@ -26,7 +26,7 @@ Labkit is bundled with Fiji. All you need to do is [install Fiji](https://imagej
 - [Manual segmentation (Quick start tutorial)](/plugins/labkit/manual-segmentation-tutorial)
 - [Curation of segmentation results](/plugins/labkit/curation-tutorial)
 - [How to improve automatic segmentation results?](/plugins/labkit/guidelines)
-- [GPU acceleration](/plugins/labkit/gpu-accelleration-tutorial)
+- [GPU acceleration](/plugins/labkit/gpu-acceleration-tutorial)
 - [Using Labkit in ImageJ Macro](/plugins/labkit/batch-processing)
 - [How to run Labkit on an HPC cluster to process huge data?](/plugins/labkit/hpc-cluster)
 
