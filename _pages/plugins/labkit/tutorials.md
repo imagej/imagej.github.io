@@ -8,6 +8,6 @@ title: Labkit Tutorials
 - [Curation of segmentation results](curation-tutorial)
 - [What's the best way to annotation image for pixel classification?](scribble-guideline)
 - [Improve results or performance by customizing the feature settings.](feature-settings-guideline)
-- [GPU accelleration](gpu-accelleration-tutorial)
+- [GPU acceleration](gpu-acceleration-tutorial)
 - [Using Labkit in ImageJ Macro](batch-processing)
 - [How to run Labkit on an HPC cluster to precess huge data](hpc-cluster)
