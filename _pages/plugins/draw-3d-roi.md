@@ -24,7 +24,7 @@ With any z-stack image open in Fiji, including 4D and 5D images, run the plugin 
 
 To create a 3D mask, you just need to set an ROI using the "Set perspective's ROI" button for one or more perspectives, though at least two are recommended. **Any of the ImageJ selection tools can be used** to generate the ROIs, with the exception of the straight line tool with a line width of 1 and the multi-point tool. After setting the perspective ROI, the ROI selection will be cleared from the image, but can be retrieved again by clicking the "Get perspective's ROI" button. The "Reset perspective's ROI" button can be used to reset the ROI to the default ROI, which is the full image from that perspective (equivalent to the Select All command). This allows the user to modify existing perspective's ROI's if the preview looks incorrect (discussed below). This is generally best done by using easily-modifiable ROI tools (like the polygon tool) and clicking the Get then Reset buttons before adjusting the ROI. 
 
-{% include img align="right" name="Draw 3D ROI plugin" src="Draw3DROI-mainWindow"%}
+{% include img align="right" name="Draw 3D ROI plugin" src="draw3droi-mainwindow" %}
 
 ### Previewing your mask
 
