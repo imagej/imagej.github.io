@@ -11,7 +11,7 @@ This page provides an overview of ImageJ2 from the perspective of software devel
 
 -   **Learn to write [scripts](/scripting)** from the [tutorial notebooks](/tutorials/notebooks).
 -   **Learn to use ImageJ2 from Java** with the [tutorial Maven projects](https://github.com/imagej/tutorials/tree/master/java).
--   **Read an introduction** about [Writing ImageJ2 Plugins: A Beginners Perspective](https://imagej.net/news/2016-04-19-writing-imagej2-plugins-a-beginners-perspective).
+-   **Get started developing your own Fiji plugin** with [a beginner's guide to starting a Fiji project](/develop/beginners-guide).
 
 ## What is ImageJ2?
 
