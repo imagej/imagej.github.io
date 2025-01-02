@@ -10,6 +10,8 @@ If you are interested in developing an **existing** plugin instead, see [Contrib
 
 If you have completed a plugin that you would like to **share with the community**, see [Distributing your plugins](/contribute/distributing).
 
+If you are new to Java development, see the [beginner's guide to starting a Fiji project](/develop/beginners-guide).
+
 For instructions on plugin development for the original [ImageJ](/software/imagej), see [Developing Plugins for ImageJ](/develop/ij1-plugins).' %}
 
 ## Requirements
