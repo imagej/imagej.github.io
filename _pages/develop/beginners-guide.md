@@ -25,7 +25,7 @@ Lastly, this new guide exclusively covers Scijava-based Fiji projects, and will 
 -   The top-level source of information is [the ImageJ wiki](/).
 -   The [Development](/develop) page is the best portal for aspiring ImageJ developers.
 -   [Fiji](/software/fiji) is available at: {% include github org='fiji' repo='fiji' label='fiji/fiji' %}
-- 	<Javadoc>
+- 	Use the [Javadoc](/develop/javadoc) to find class documentation
 -   For additional help, use the [ImageJ Forum](/discuss).
 
 ## Overview of terminology
