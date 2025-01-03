@@ -18,7 +18,7 @@ Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/sc
 
 Most of this guide is written from the perspective of using IDEA IntelliJ as your IDE. While everything can be done when using the other recommended IDEs, the specifics may differ from what you see here.
 
-Lastly, this new guide exclusively covers Scijava-based Fiji projects, and will not cover or link to any information on ImageJ-1.x plugin development. Appropriately leveraging the tools in Scijava and Imglib2 makes plugin development, particularly handling input and output, significantly easier and more efficient. This guide is meant as a rough overview of the entire process and deliberately does not go into great detail on any single topic. 
+Lastly, this new guide exclusively covers Scijava-based Fiji projects, and will not cover or link to any information on ImageJ-1.x plugin development. Appropriately leveraging the tools in Scijava and Imglib2 makes plugin development, particularly handling input and output, significantly easier and more efficient. This guide is meant as a rough overview of the entire process and deliberately does not go into great detail on any single topic. If you are interested in ImageJ-1.x plugin development, see the [ImageJ-1.x plugin development page](/develop/ij1-pluins). 
 
 ## Finding information
 
@@ -62,7 +62,7 @@ You will need:
 
 Environments used for testing this guide:
 
--   Windows 10 and 11
+-   Windows 10 and 11, x86_64
 -   Azul Zulu 1.8.x
 -   IntelliJ IDEA 2019.2.3 and 2024.3.1 (Community Edition)
 -   Git 2.x
