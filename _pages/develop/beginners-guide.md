@@ -55,7 +55,7 @@ You will need:
 
 -   Java 1.8 JDK (version 1.8 is also referred to as Java 8). It's recommended to use [Azul Zulu](https://www.azul.com/downloads/?package=jdk#zulu) JDK.
 -   [IDE](/develop/ides) (recommended: [IntelliJ\_IDEA](/develop/intellij), [NetBeans](/develop/netbeans) or [Eclipse](/develop/eclipse))
--	[Github](https://github.com/) account.
+-	[Github](https://github.com/) account (required if you want to release to SciJava Maven repository, otherwise just highly recommended).
 -   If you want to release to a Maven Repository: unbundled [Git](https://git-scm.com/downloads)
 -   If you want to release to a Maven Repository: bundled [Apache Maven](/develop/maven)
 -   [Fiji source code](/develop/source) is an optional help
