@@ -33,7 +33,7 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 ### Entropy analyses
 - Generalised entropies, Permutation entropy, Sample entropy
 
-## Fractal analyses
+### Fractal analyses
 - Fragmentation dimension, Higuchi dimension, Hurst coefficient (HK, RS, SP), Hurst coefficient (PSD), Katz dimension, Petrosian dimension, RSE dimension (Roughness dimension), Sevcik dimension, Tug of war dimension, Walking divider dimension
 
 ## 2D images
