@@ -1,7 +1,6 @@
 ---
-title: TRACES file format
+title: SNT › Tubular Geodesics
 nav-links: false
-nav-title: tubular geodesics
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt

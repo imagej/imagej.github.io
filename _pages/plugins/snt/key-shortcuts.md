@@ -61,8 +61,8 @@ These shortcuts are available when running SNT in *Tracing Mode*:
 | {% include key key='Ctrl|Shift|S' %} / {% include key keys='Command|Shift|S' %} | <u>S</u>ave <u>S</u>napshot Backup |
 | {% include key key='L' %}                     | Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image) |
 | {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
-| {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/step-by-step-instructions#accurate-point-placement) |
-| {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path) for more details on joining and branching). This shortcut can be [simplified](/plugins/snt/manual#temporary-paths) |
+| {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/walkthroughs#accurate-point-placement) |
+| {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path) for more details on joining and branching). This shortcut can be [simplified](/plugins/snt/manual#temporary-paths) |
 | {% include key keys='Shift|B' %}              | <u>B</u>ookmarks cursor location |
 | {% include key keys='Shift|E' %}              | Activates *Edit Mode* (<u>E</u>diting of selected Path) |
 | {% include key keys='Shift|P' %}              | <u>P</u>auses tracing operations |
@@ -114,7 +114,7 @@ See [sciview](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full l
 
 ### Legacy 3D Viewer
 
-The most important shortcuts for the [Legacy 3D viewer](/plugins/snt/step-by-step-instructions#legacy-3d-viewer) are:
+The most important shortcuts for the [Legacy 3D viewer](/plugins/snt/walkthroughs#legacy-3d-viewer) are:
 
 | {% include key key='H' %} | Selects the <u>H</u>and (pan) tool |
 | {% include key key='W' %} | Selects the <u>W</u>and (tracing) tool |
@@ -129,4 +129,4 @@ In addition, _most_ shortcuts that are not specific to tracing canvases (XY, ZY 
 
 ### Other
 
-There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when right-clicking a tracing canvas.
+There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when right-clicking a tracing canvas.
