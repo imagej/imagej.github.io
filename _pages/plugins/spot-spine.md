@@ -6,7 +6,7 @@ description: 3D detection and morphological analysis of dendritic spines.
 license-label: GPL
 source-url: https://github.com/JeffGilles/Spot-Spine
 forum-tag: spot-spine
-doi: 10.12688/f1000research.146327.1
+doi: 10.12688/f1000research.146327.2
 team-founder: "@JeffGilles"
 team-support: "@JeffGilles"
 team-maintainer: "@JeffGilles"

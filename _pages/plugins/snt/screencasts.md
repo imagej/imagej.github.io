@@ -48,6 +48,6 @@ These are old [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-be
 
 {% include video platform='youtube' id='pXpMRb1AC4I' %}
 
-## Using The [Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer)
+## Using The [Legacy 3D Viewer](/plugins/snt/walkthroughs#tracing-in-the-legacy-3d-viewer)
 
 {% include video platform='youtube' id='SrPeSwu31Zs' %}

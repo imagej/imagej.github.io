@@ -22,15 +22,15 @@ SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses 
 
 ## Overview
 
-SNT is toolbox for tracing and analyzing neuronal morphologies imaged using light microscopy. It aims to be as complete as possible, while remaining efficient to use. It can be used as a desktop application, or a [scripting library](/plugins/snt/scripting). It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) software, and aggregates other tools previously scattered across the Fiji ecosystem of plugins, including [Sholl](/plugins/sholl-analysis)[^2] and [Strahler](/plugins/strahler-analysis) plugins.
+SNT is toolbox for tracing and analyzing neuronal morphologies imaged using light microscopy. It aims to be as complete as possible, while remaining efficient to use. It can be used as a desktop application, or a [scripting library](/plugins/snt/scripting). It supersedes the original [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) software, and aggregates other tools previously scattered across the Fiji ecosystem of plugins, including [Sholl](./sholl)[^2] and [Strahler](./strahler) plugins.
 
 The [source repository](https://github.com/morphonets/SNT) contains more details about the project, including a list of [features](https://github.com/morphonets/SNT#features), and [implementation details](https://github.com/morphonets/SNT/blob/-/NOTES.md#notes).
 
 {% include gallery align="fill" content=
 "
 /media/plugins/snt/snt-overview.png | Overview of SNT components &amp; SNT functionality
-/media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/step-by-step-instructions#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/step-by-step-instructions#time-lapse-analysis) images
-/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing) of segmented images
+/media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
+/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/walkthroughs#full-automated-tracing) of segmented images
 /media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#bundled-templates) co-exist with graphical user interface operations
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
 /media/plugins/snt/snt-notebook.png | Scripting in native python through [pyimagej](/scripting/pyimagej)
@@ -77,7 +77,7 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 | **[Reconstruction Viewer](/plugins/snt/reconstruction-viewer)** | SNT's entry point for visualization of pre-existing data. If you are analyzing neuronal reconstructions you may want to start here |
 | **[Screencasts](/plugins/snt/screencasts)**                     | Video tutorials. If you are using SNT for the first time you probably want to start here                                           |
 | **[Scripting](/plugins/snt/scripting)**                         | Details on how to use SNT as a scripting library                                                                                   |
-| **[Walk-throughs](/plugins/snt/step-by-step-instructions)**     | Detailed step-by-step instructions for specific tasks                                                                              |
+| **[Walkthroughs](/plugins/snt/walkthroughs)**     | Detailed step-by-step instructions for specific tasks                                                                              |
 
 ## References
 
