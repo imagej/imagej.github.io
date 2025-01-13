@@ -50,11 +50,11 @@ There are several entry points to Sholl Analysis in SNT. You can find those in t
 2. Sholl Analysis (Tracings): Parsing of reconstructions
 3. Sholl Analysis Scripts: These handle batch processing of files, specialized analysis, and misc. utilities 
 
-Sholl Analysis has a dedicated [documentation page](/plugins/sholl-analysis) detailing [parameters](/plugins/sholl-analysis#parameters), [plots](/plugins/sholl-analysis#sholl-plots), and [metrics](/plugins/sholl-analysis#metrics).
+Sholl Analysis has a dedicated [documentation page](./sholl) detailing [parameters](./sholl#parameters), [plots](./sholl#sholl-plots), and [metrics](./sholl#metrics).
 {% endcapture %}
 {% include notice icon="info" content=sholl %}
 
-In the main SNT dialog, Sholl commands are available in the {% include bc path='Analysis| '%} menu and image contextual menu and include:
+In the main SNT dialog, Sholl commands are available in the [Analysis](manual#analysis-) and [image contextual](manual#image-contextual-menu) menus and include:
 
 - **{% include bc path='Sholl Analysis...'%}** Analyzes cells based on a set of pre-defined, morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*). Note that this assumes the relevant morphology tag(s) have been assigned to the set of paths being analyzed. Since the center of analysis is only determined after the prompt has been dismissed, preview of sampling shells may not be available.
 
@@ -82,7 +82,7 @@ The Sholl dialog created by this approach is a variant of the dialog created by 
    - **Color coded nodes** Intersection counts will be color mapped into path nodes under the _annotation LUT_.
    - **3D viewer labels image** This generates a synthetic image holding the number of intersections at each distance from the center under _annotation LUT_. This image can then be fed to the "Apply Color Labels" action of the legacy 3D viewer, to "overlay" the mapping on the legacy 3D viewer scene.
 
-Note that plots and tables can be directly saved to disk by selecting _Save_ and specifying a valid directory in the dialog. The remaining options in the dialog are described in the [Sholl documentation page](/plugins/sholl-analysis).
+Note that plots and tables can be directly saved to disk by selecting _Save_ and specifying a valid directory in the dialog. The remaining options in the dialog are described in the [Sholl documentation page](./sholl).
 
 {% include img align="center" src="/media/plugins/snt/sholl-analysis-outputs.png" caption="Overview of Sholl analysis outputs: Linear and log-log profile (Sholl decay calculation), *detailed* and *summary* tables. Note that 'traditional' plots are obtained by disabling curve-fitting altogether."%}
 
@@ -92,17 +92,29 @@ Note that plots and tables can be directly saved to disk by selecting _Save_ and
 {% capture strahler%}
 Similarly to _Sholl Analysis_, there are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
 
-1. Strahler Analysis (Image)... Direct parsing of images, bypassing tracing
-2. Strahler Analysis (Tracings)... Parsing of reconstructions
+1. [Strahler Analysis (Image)...](./strahler) Direct parsing of images, bypassing tracing
+2. Strahler Analysis (Tracings)... Parsing of reconstructions (described in this section)
 3. Strahler Analysis Scripts: These handle batch processing of files
 
-_Strahler Analysis (Image)_ has a dedicated [documentation page](/plugins/strahler-analysis) with details on the classification.
 {% endcapture %}
 {% include notice icon="info" content=strahler %}
 
-To conduct [Strahler Analysis](/plugins/strahler-analysis) on the current contents of the Path Manager, choose the {% include bc path='Analysis|Strahler Analysis...'%} in the main SNT dialog. This command will output the results of the analysis as a table and plot(s). These figures contain morphometric statistics of branches at each Horton-Strahler number. Refer to the _Strahler Analysis (Image)_ [documentation](/plugins/strahler-analysis) for details on the classification.
+{% include img align="right" src="/media/plugins/strahler-classification-example.png" caption="Strahler classification"%}
+{% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees. The {% include wikipedia title='Strahler number' text='Strahler classification'%} occurs as follows:
+
+- If a brach is terminal (has no children), its Strahler number is one
+- If a branch has one child-branch with Strahler number *i*, and all other children-branches have Strahler numbers less than *i*, then the Strahler number of the branch is *i* again
+- If a branch has two or more children-branches with Strahler number *i*, and no children-branches with greater number, then the Strahler number of the branch is *i+1*
+
+The *Strahler number* of a neuronal arbor reflects the highest number in the classification, i.e., the number of its root branch. Original publications by {% include wikipedia title='Robert E. Horton' text='Robert E. Horton'%} and {% include wikipedia title='Arthur Newell Strahler' text='Arthur N. Strahler'%} include:
+
+- Arthur N Strahler, Hypsometric (Area-Altitude) Analysis Of Erosional Topography (1952). GSA Bulletin; 63(11): 1117–42. [doi: 10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2](https://doi.org/10.1130/0016-7606(1952)63[1117:HAAOET]2.0.CO;2)
+- Arthur N Strahler, Quantitative analysis of watershed geomorphology (1957). Eos, Transactions American Geophysical Union,  38(6), 913–20. [doi: 10.1029/TR038i006p00913](https://doi.org/10.1029/TR038i006p00913) ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf))
+
+To conduct Strahler analysis on the current contents of the Path Manager, choose the {% include bc path='Analysis|Strahler Analysis...'%} in the main SNT dialog. This command will output the results of the analysis as a table and plot(s). These figures contain morphometric statistics (cf. [Strahler metrics](./metrics)) of branches at each Horton-Strahler number.
 {% include img align="center" src="/media/plugins/snt/strahler-analysis-from-reconstructions.png" caption="Strahler Analysis detailed output."%}
 
+To conduct analyses directly from (thresholded) images, have a look at [Strahler Analysis (From Images)](./strahler).
 
 # Path-based Analysis
 Path-based analyses accept _any_ traced structure (e.g., disconnected paths, paths associated with different cells, etc.), even those with loops. While most SNT measurements require traced structures to be valid mathematical trees, path-based measurements have no topological constraints. There are two commands in this category: [Path Order Analysis](#path-order-analysis), and [Path Properties: Export CSV...](#path-properties-export-csv).

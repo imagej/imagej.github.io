@@ -9,7 +9,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for version 5.0.0**.<br>
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -37,9 +37,9 @@ SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %
 
 - **Image**/**Image file** The image to be traced/analyzed. The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking *Browse* and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
 
-- **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try to fill this field by looking at all the reconstruction files (.traces, .(e)swc, .ndf, or .json) in the image directory and retrieving the filename closer to _Image file_.
+- **Reconstruction file** The path of the reconstruction file to be imported. SNT will automatically try to fill this field by looking at all the reconstruction files (.traces, .swc, .ndf, or .json) in the image directory and retrieving the filename closer to _Image file_.
 
-- **User interface** Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [accurate node placement](/plugins/snt/step-by-step-instructions#accurate-point-placement) but requires more RAM.
+- **User interface** Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [accurate node placement](/plugins/snt/walkthroughs#accurate-point-placement) but requires more RAM.
 
 - **Tracing Channel** Specifies the image channel to trace on (this option is ignored with single-channel images).
 
@@ -55,11 +55,17 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 
 #### Choose Tracing Image...
 
-Specifies the image to trace on without having to restart SNT. To trace on an image currently open in ImageJ, use *From Open Image...*. A prompt with currently open images will appear, allowing selection of one. To browse for an image file, use *From File...*. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
+Specifies the image to trace on without having to restart SNT. Commands include:
+
+- *{% include bc path='From Open Image...'%}* Use this to staring tracing on an image already open in Fij. It allows selection of an image from a a prompt listing all images currently open
+- *{% include bc path='From File...'%}* Allows browsing for an image file
+- *{% include bc path='From System Clipboard'%}* Loads a 2D image from the system clipboard. Useful, to e.g., trace on [forum-posted](https://forum.image.sc/) images
+
+In either scenario. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
 
 #### Autotrace Segmented Image File...
 
-If you have a binary mask of the image you want to trace saved to disk (i.e., a pre-processed version of the image in which background pixels have been zeroed), you can use this command to attempt automatic reconstruction. This is similar to {% include bc path='Utilities | Autotrace Segmented Image... ' %} but uses file paths as input. See [Full-automated tracing walkthrough](/plugins/snt/step-by-step-instructions#full-automated-tracing) for details.
+If you have a binary mask of the image you want to trace saved to disk (i.e., a pre-processed version of the image in which background pixels have been zeroed), you can use this command to attempt automatic reconstruction. This is similar to {% include bc path='Utilities | Autotrace Segmented Image... ' %} but uses file paths as input. See [Full-automated tracing walkthrough](/plugins/snt/walkthroughs#full-automated-tracing) for details.
 
 #### Load Tracings ›
 
@@ -83,7 +89,7 @@ This option assumes you are tracing on the same spatial coordinates of an annota
 
 #### Load Demo Dataset...
 
-Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/step-by-step-instructions), and to create [Minimal reproducible example](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
+Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/walkthroughs), and to create [Minimal reproducible example](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
 
 #### Save Tracings ›
 
@@ -194,7 +200,7 @@ _Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructio
 
 #### Autotrace Segmented Image...
 
-Similar to {% include bc path='File|Autotrace Segmented Image File...| ' %} but using image(s) already open  as input. See [Full-automated tracing walkthrough](/plugins/snt/step-by-step-instructions#full-automated-tracing) for details.
+Similar to {% include bc path='File|Autotrace Segmented Image File...| ' %} but using image(s) already open  as input. See [Full-automated tracing walkthrough](/plugins/snt/walkthroughs#full-automated-tracing) for details.
 
 ### Scripts›
 
@@ -328,7 +334,7 @@ NB: The wizard also allows you to use a backup copy of the image being traced as
 </div>
 #### Loading Secondary layers
 
-The "Layers" drop-down menu in the auto-tracing panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images) walk-through for more details.
+The "Layers" drop-down menu in the auto-tracing panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/walkthroughs#generating-filtered-images) walkthrough for more details.
 
 The same menu also provides options to import a [Labkit/Weka](./machine-learning) model. In this case the model is applied to the image being traced, and the resulting 'p-map' is loaded as secondary layer.
 
@@ -464,7 +470,7 @@ This option assumes [sciview](/plugins/sciview) to be successfully installed. sc
 
 ### Legacy 3D Viewer
 
-The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. That being said, SNTv5 has implemented several improvements that have restored/improved Legacy 3D Viewer functionality relatively to earlier versions. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/step-by-step-instructions#tracing-in-the-legacy-3d-viewer).
+The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. That being said, SNTv5 has implemented several improvements that have restored/improved Legacy 3D Viewer functionality relatively to earlier versions. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/walkthroughs#tracing-in-the-legacy-3d-viewer).
 
 <span id="bookmarks"></span>
 <span id="bookmark-manager"></span>
@@ -475,7 +481,7 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
 
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" title="Bookmarks tab" />
 
-- Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor X, Y, Z, C, and T coordinates
+- Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor's X, Y, Z, C, T coordinates
 
 - To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
 
@@ -516,10 +522,10 @@ Described in [Bookmarks Tab](#bookmarks-tab).
 Finds the brightest Voxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background.
 
 ### Continue Extending Path
-Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#ii-pick-a-subsequent-point).
+Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [Step-By-Step Instructions](/plugins/snt/walkthroughs#ii-pick-a-subsequent-point).
 
 #### Fork at Nearest Node {% include key keys='Alt|Left Click' %}
-Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#branching-start-a-path-on-an-existing-path). Note that the shortcut can be set to {% include key keys='Shift|Alt|Left Click' %} in the [Options tab](#temporary-paths).
+Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [Step-By-Step Instructions](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path). Note that the shortcut can be set to {% include key keys='Shift|Alt|Left Click' %} in the [Options tab](#temporary-paths).
 
 
 ## Editing Paths
@@ -530,7 +536,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 
 ### Connect To (...) {% include key key='C' %}
-Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/step-by-step-instructions#mergingjoining-paths).
+Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/walkthroughs#mergingjoining-paths).
 
 <img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v4.2)" width="300" />
 
@@ -565,7 +571,7 @@ Assigns a color tag to the active node. Note paths with color-coded nodes may be
 ## Actions
 
 ### Count SPines/Varicosities
-Described in [Spine/Varicosity Analysis](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis).
+Described in [Spine/Varicosity Analysis](/plugins/snt/walkthroughs#spinevaricosity-analysis).
 
 ### Sholl Analysis at Nearest Node {% include key keys='Shift|Alt|A' %}
 Described in [Analysis › Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis-by-focal-point).
@@ -580,7 +586,7 @@ Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image
 # Path Manager
 
 <img align="right" width="300" src="/media/plugins/snt/snt-path-manager.png" title="Path Manager (v4.3)" />
-![Path Manager](/media/plugins/snt/) The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" or "root" (path 0) and all other paths (paths 1...N) are children of the primary path. This pattern repeats for each cell being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
+The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" or "root" (path 0) and all other paths (paths 1...N) are children of the primary path. This pattern repeats for each cell being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
 {% include notice icon="info" content="Path Manager commands are applied to all paths if no paths are selected." %}
 
@@ -624,7 +630,7 @@ Combines (connects) two or more _disconnected_ paths into one (undoable operatio
 
 #### Concatenate...
 
-Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing) belonging to the same neurite.
+Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/walkthroughs#full-automated-tracing) belonging to the same neurite.
 
 #### Merge Primary Path(s) into Shared Root
 
@@ -632,7 +638,7 @@ Takes two or more primary paths and merges them into a common root node placed a
 
 #### Reverse...
 
-Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/step-by-step-instructions#full-automated-tracing).
+Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/walkthroughs#full-automated-tracing).
 
 #### Specify Constant Radius...
 
@@ -640,7 +646,7 @@ Assigns a constant radius to all the nodes of selected Path(s). This setting onl
 
 #### Specify No. Spine\Varicosity Markers...
 
-Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity Analysis](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis)).
+Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity Analysis](/plugins/snt/walkthroughs#spinevaricosity-analysis)).
 
 #### Ramer-Douglas-Peuker Downsampling...
 
@@ -669,7 +675,13 @@ Information on hyperstack position details (e.g., channel, frame or slice labels
 
 #### Morphometry ›
 
+<img align="right" src="/media/plugins/snt/snt-proofreading-toolbar.png" title="Proofreading toolbar" width="400" alt="Proofreading toolbar" />
 Morphometric properties, such as *Path length*, *Path mean radius* or *[Path order](/plugins/snt/analysis#path-order-analysis)*.
+
+#### Proofreading Toolbar
+
+The proofreading toolbar allows for color-coded proofreading tags to be applied to selected paths in a convenient manner. Only one proofreading tag can be applied, because the previous assigned tag is replaced by the most recent assigment. Press "None" to remove existing tags.
+
 
 #### Other...
 
@@ -752,7 +764,7 @@ If the fitting fails at a certain location (e.g., because the shape of the cross
 
 ### Fill ›
 
-This menu contains options to start the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
+This menu contains options to start the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/walkthroughs#filling).
 
 ### Process ›
 This menu lists commands pertaining to ROIs and image processing routines.
@@ -802,7 +814,7 @@ This menu contains several options which provide quick ways to analyze and visua
 
 <img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" title="Color Mapping" />
 
-This menu lists commands for mapping morphological traits into Lookup tables that are then used to render reconstructions. It contains commands to map path-based metrics or branch-based metrics: _Path-based Color Mapping_ accepts _any_ type of structures (i.e., any group of selected paths, even those belonging to different cells) but offers limited mapping metrics, while _Branch-based Color Mapping_ requires structures to be valid mathematical trees (with more mapping metrics available). These commands prompt for the following settings:
+This menu lists commands for mapping morphological traits into lookup tables that are then used to render reconstructions. It contains commands to map path-based metrics or branch-based metrics: _Path-based Color Mapping_ accepts _any_ type of structures (i.e., any group of selected paths, even those belonging to different cells) but offers limited mapping metrics, while _Branch-based Color Mapping_ requires structures to be valid mathematical trees (with more mapping metrics available). These commands prompt for the following settings:
 
 - *Color by* Drop-down menu containing the metrics which inform the color mapping.
 
@@ -853,11 +865,11 @@ NB:
 
 #### Spine/Varicosity Utilities ›
 
-This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Step-by-step instructions](/plugins/snt/step-by-step-instructions#spinevaricosity-analysis).
+This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Step-by-step instructions](/plugins/snt/walkthroughs#spinevaricosity-analysis).
 
 #### Time-lapse Utilities ›
 
-This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/step-by-step-instructions#time-lapse-analysis) for more details.
+This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/walkthroughs#time-lapse-analysis) for more details.
 
 #### Save Subset as SWC...
 
@@ -892,4 +904,4 @@ The Path Manager contextual menu offers convenience options to sort Paths, colla
 
 # Fill Manager
 
-Provides controls for all filling operations. It is described in more detail in the [Filling: Step-By-Step Instructions](/plugins/snt/step-by-step-instructions#filling).
+Provides controls for all filling operations. It is described in more detail in the [Filling: Step-By-Step Instructions](/plugins/snt/walkthroughs#filling).

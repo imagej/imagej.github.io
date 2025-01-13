@@ -361,7 +361,7 @@ Cartesian coordinates in the three-dimensional space
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 
-- Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/step-by-step-instructions#filling)
+- Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/walkthroughs#filling)
 
 [^1]: Volume and surface area calculations assume radii have been assigned to  path nodes, typically through [fitting routines](/plugins/snt/manual#refinefit).<br>
 [^2]: [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) metrics are described in: {% include citation doi='10.1038/nprot.2008.51' %}<br>

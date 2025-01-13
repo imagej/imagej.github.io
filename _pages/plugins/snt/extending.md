@@ -32,7 +32,7 @@ The Tubular Geodesics plugins were developed several years ago for [Simple Neuri
 - [Tubular Geodesics homepage](https://www.epfl.ch/labs/cvlab/software/biomedical/delin-fiji/)
 - [Tracing on Filtered Images](/plugins/snt/manual#main-dialog#tracing-on-secondary-image)
 - [Secondary Image Screencast](/plugins/snt/screencasts#secondary-images)
-- [Generating Filtered Images](/plugins/snt/step-by-step-instructions#generating-filtered-images)
+- [Generating Filtered Images](/plugins/snt/walkthroughs#generating-filtered-images)
 
 Tubular geodesics reference:
 {% include citation doi='10.1109/cvpr.2012.6247722' %}

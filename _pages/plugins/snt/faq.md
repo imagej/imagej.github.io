@@ -22,7 +22,7 @@ See [Installation details](/plugins/snt/index#installation).
 
 **Note that neither the main [Fiji article](/software/fiji#publication), nor the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication are appropriate citations for SNT**. To reference additional modules that enhance SNT:
 
-- **[Sholl Analysis](/plugins/sholl-analysis)**
+- **[Sholl Analysis](/plugins/snt/sholl)**
   {% include citation id="plugins/sholl-analysis" %}
 - **[Cx3D](/plugins/snt/modeling)**
   {% include citation doi="10.3389/neuro.10.025.2009" %}
@@ -75,7 +75,7 @@ Use the *Edit this page* option on the <a href="#top">top</a> of the documentati
 ## Tracing
 
 ### Can I trace in 3D?
-Yes, always. Either using the XY,ZY,XZ [views](/plugins/snt/step-by-step-instructions#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy), or [sciview](/plugins/snt/manual#sciview) (experimental).
+Yes, always. Either using the XY,ZY,XZ [views](/plugins/snt/walkthroughs#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy), or [sciview](/plugins/snt/manual#sciview) (experimental).
 
 ### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
 Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section).
@@ -93,11 +93,14 @@ Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite
 ### How can I import an image sequence into SNT?
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
 
+## Sholl Analysis
+See [Sholl Analysis › FAQ](./sholl#faq).
+
 
 ## Spine Analysis
 
 ### Does SNT support spine analysis?
-Currently only [Spine densities](./step-by-step-instructions#spinevaricosity-analysis) are supported. In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
+Currently only [Spine densities](./walkthroughs#spinevaricosity-analysis) are supported. In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
 
 
 ## Soma Analysis
