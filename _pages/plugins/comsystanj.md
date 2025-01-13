@@ -28,7 +28,7 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Autocorrelation, FFT, Statistics
 
 ### Complexity analyses
-- Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot,Porta Guzik Ehler indices, Recurrence quantification analysis, Standard HRV measurements, Symbolic aggregation
+- Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot, Porta Guzik Ehler indices, Recurrence quantification analysis, Standard HRV measurements, Symbolic aggregation
 
 ### Entropy analyses
 - Generalised entropies, Permutation entropy, Sample entropy
@@ -40,10 +40,10 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Image opener, Image generator
 
 ### Preprocessing
-- Auto crop borders, Filter, Noise, Particles to stack, Segmentation - RGB Relative, Surrogates
+- Auto crop borders, Filter, Histogram modification, Noise, Particles to stack, Segmentation - RGB relative, Surrogates
 
 ### Complexity analyses
-- Kolmogorov complexity and Logical Depth
+- Kolmogorov complexity and Logical depth
 
 ### Entropy analyses
 - Generalised entropies
@@ -52,13 +52,13 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Box counting dimension, Correlation dimension, Fractal correlation dimension, Directional correlation dimension, FFT dimension, Link to FracLac, Fractal fragmentation indices, Generalised dimensions, Higuchi dimension 1D, Higuchi dimension 2D, Lacunarity, Mass radius dimension, Minkowski dimension, Perimeter area dimension, Pyramid dimension, Succolarity, Tug of war dimension, Walking divider dimension
   
 ## 3D Image volume
-- Image volume opener, Image volume Generator
+- Image volume opener, Image volume generator
 
 ### 3D Preprocessing
 - 3D Filter, 3D Noise, 3D Surrogates
 
 ### 3D Complexity analyses
-- 3D Kolmogorov complexity and Logical Depth
+- 3D Kolmogorov complexity and Logical depth
 
 ### 3D Entropy analyses
 - 3D Generalised entropies
