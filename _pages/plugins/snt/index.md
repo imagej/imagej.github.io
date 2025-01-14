@@ -82,4 +82,4 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 ## References
 
 [^1]: {% include citation id='plugins/snt' %}
-[^2]: {% include citation id='plugins/sholl-analysis' %}
+[^2]: {% include citation id='plugins/snt/sholl' %}
