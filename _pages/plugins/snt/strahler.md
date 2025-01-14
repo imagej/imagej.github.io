@@ -16,11 +16,11 @@ doi: 10.1038/s41592-021-01105-7
 There are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
 <br/>
 <ol>
-<li><i>Strahler Analysis (Image)...</i> Direct parsing of skeletonized images, bypassing tracing</li>
-<li><i>Strahler Analysis (Tracings)...</i> Parsing of traced structures</li>
+<li><i>Strahler Analysis (Image)...</i> Direct parsing of skeletonized images, bypassing tracing (described on this page)</li>
+<li><i>Strahler Analysis (Tracings)...</i> Parsing of traced structures (described in 
+<a href="/plugins/snt/analysis#strahler-analysis">Analysis › Strahler (Tracings)</a>)</li>
 <li><i>Strahler Analysis Scripts</i>  Batch processing of files</li>
 </ol>
-This documentation page is mainly focused on _Strahler Analysis (Image)..._.
 {% endcapture %}
 {% include notice icon="info" content=strahler %}
 
@@ -29,7 +29,7 @@ While _Strahler Analysis (Image)..._ remains a functional workflow, you may find
 {% endcapture %}
 {% include notice icon="warning" background-color="#fffbeb" content=strahler %}
 
-{% include img align="right" src="/media/plugins/strahler-classification-example.png" caption="Strahler classification"%}
+{% include img align="right" src="/media/plugins/snt/strahler-classification-example.png" caption="Strahler classification"%}
 Strahler numbering is a numerical procedure that summarizes the branching complexity of mathematical trees. It is described in detail [here](./analysis#strahler-analysis).
 
 ## Description
@@ -47,7 +47,7 @@ Strahler numbering is a numerical procedure that summarizes the branching comple
 **Infer root end-points from rectangular ROI**: This option is only available when a rectangular ROI is present. It is described in [root detection](#root-detection).
 
 <span id="strahler-animation">
-{% include img align="right" width="300" name="Strahler Analysis by iterative elimination of end-point branches" src="/media/plugins/strahleranimation.gif" caption="Direct analysis of images occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them." %}
+{% include img align="right" width="300" name="Strahler Analysis by iterative elimination of end-point branches" src="/media/plugins/snt/strahleranimation.gif" caption="Direct analysis of images occurs through progressive pruning of terminal branches, *iterative tree simplification*, a method that requires detecting all terminal branches (i.e., branches that contain an end-point) and all the degree-one paths leading to them." %}
 
 **Ignore single-point arbors (Isolated pixels)** Elimination of end-point branches may give rise to single point arbors. Such 'debris' have 1 end-point but no slab branches or junctions. When this option is selected, single-point arbors will be discarded on each iteration. If deselected, the total number of end-points may be overestimated.
 
@@ -66,7 +66,7 @@ Strahler numbering is a numerical procedure that summarizes the branching comple
 
 ## Root Detection
 
-{% include img align="right" width="600px" src="/media/plugins/strahler-rootprotection.png" caption="**Left**: Arbor with rectangular ROI containing root. **Middle**: Analysis ignores ROI. Root-branch is interpreted as any other terminal-branch and the resulting classification is inaccurate. **Right**: Analysis takes ROI into account and infers that the end-point contained by the ROI is the root of the structure. Root branch is excluded from the iteration and the classification is accurate." %}
+{% include img align="right" width="600px" src="/media/plugins/snt/strahler-rootprotection.png" caption="**Left**: Arbor with rectangular ROI containing root. **Middle**: Analysis ignores ROI. Root-branch is interpreted as any other terminal-branch and the resulting classification is inaccurate. **Right**: Analysis takes ROI into account and infers that the end-point contained by the ROI is the root of the structure. Root branch is excluded from the iteration and the classification is accurate." %}
 
 The problem with undiscriminated elimination of terminal branches is that a root-branch containing an end-point is always eliminated on the first iteration step. In order to protect root branches from elimination, *Strahler Analysis* needs to know where root branches are located. Root-detection is implemented by means of a rectangular ROI containing the root branch and by activating the *Infer root end-points from rectangular ROI* option. Here is an example:
 

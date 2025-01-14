@@ -2,7 +2,6 @@
 title: SNT › Strahler Analysis (From Images)
 categories: [Skeleton,Analysis,Neuroanatomy]
 tags: strahler,plugin,arbor,neuron,morphometry,dendrite
-update-site: Neuroanatomy
 artifact: org.morphonets:SNT
 forum-tag: strahler-analysis
 icon: /media/icons/snt.png
@@ -12,12 +11,16 @@ nav-links:
   url: /plugins/snt/index
 - title: Analysis
   url: /plugins/snt/analysis
+- title: Contributing
+  url: /plugins/snt/contribute
 - title: Extending
   url: /plugins/snt/extending
 - title: FAQ
   url: /plugins/snt/faq
-- title: Shortcuts
+- title: Hotkeys
   url: /plugins/snt/key-shortcuts
+- title: Machine Learning
+  url: /plugins/snt/machine-learning
 - title: Manual
   url: /plugins/snt/manual
 - title: Metrics
@@ -30,8 +33,12 @@ nav-links:
   url: /plugins/snt/screencasts
 - title: Scripting
   url: /plugins/snt/scripting
-- title: Walk‑throughs
-  url: /plugins/snt/Walkthroughs
+- title: Sholl
+  url: /plugins/snt/sholl
+- title: Strahler
+  url: /plugins/snt/strahler
+- title: Walkthroughs
+  url: /plugins/snt/walkthroughs
 ---
 
 

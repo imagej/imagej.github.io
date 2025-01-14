@@ -41,13 +41,13 @@ After [installing SNT](/plugins/snt/#installation), Sholl commands can be access
 {% include gallery align="center" content=
 "
 /media/plugins/snt/sholl-analysis-outputs.png | Overview of outputs: Linear and log-log profile (Sholl decay calculation), detailed and summary tables. ‘Traditional’ plots are obtained by disabling curve-fitting altogether
-/media/plugins/bitmapsholl-ca1mask.png | [Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^8] in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated.
-/media/plugins/bitmapsholl-ca1compartment.png | Linear plot for the same CA1 cell[^8]. Using the soma as center, image was sampled twice using [hemishells](#hemishells) in order to segregate apical from basal dendrites. For clarity, distances for basal branches were assigned negative values and arbor overlaid (in green) over the profile.
-/media/plugins/combineshollprofiles.png | *Combine Sholl Profiles...* aggregates individual profiles into a single plot, obtaining the average profile for groups of cells [[use case](https://forum.image.sc/t/sholl-merging-profiles-with-different-radii/54144/13)]
+/media/plugins/snt/bitmapsholl-ca1mask.png | [Skeletonized](/plugins/skeletonize3d) hippocampal CA1 cell[^8] in which apical and basal dendrites have been analyzed [separately](#ca1-cell-plot) and [color coded](#output-options) according to their Sholl profile. Warmer hues indicate higher number of Intersections (*N*). [Critical radius](#critical-radius) (*r<sub>c</sub>*) and [Mean value](#mean-value-of-function) (*N<sub>av</sub>*) are indicated.
+/media/plugins/snt/bitmapsholl-ca1compartment.png | Linear plot for the same CA1 cell[^8]. Using the soma as center, image was sampled twice using [hemishells](#hemishells) in order to segregate apical from basal dendrites. For clarity, distances for basal branches were assigned negative values and arbor overlaid (in green) over the profile.
+/media/plugins/snt/combineshollprofiles.png | *Combine Sholl Profiles...* aggregates individual profiles into a single plot, obtaining the average profile for groups of cells [[use case](https://forum.image.sc/t/sholl-merging-profiles-with-different-radii/54144/13)]
 /media/plugins/snt/sholl-group-statistics.png | Statistics for [groups of cells](/plugins/snt/analysis#comparing-reconstructions) [[use case](https://forum.image.sc/t/sholl-analysis-with-snt-one-graph-for-two-groups/82471/2)]
-/media/plugins/animatedpolyfit.gif | Sampled data can be fitted to polynomials of varying degree (animation created using [BAR](/plugins/bar))
+/media/plugins/snt/animatedpolyfit.gif | Sampled data can be fitted to polynomials of varying degree (animation created using [BAR](/plugins/bar))
 /media/plugins/snt/sholl-convex-hull.png | Scripting allows for arbitrary focal points, in this case the centroid of the neuron's convex hull (*Convex Hull as Center* template script)
-/media/plugins/shollresultasrois.png | Intersection points and sampling shells can be retrieved as ROIs. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.
+/media/plugins/snt/shollresultasrois.png | Intersection points and sampling shells can be retrieved as ROIs. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.
 /media/plugins/snt/sholl-rasterized-shells.png | Using Sholl to measure the distribution of image objects (_Sholl Rasterize Shells_ template script) [[use case](https://forum.image.sc/t/measuring-distribution-of-object-diameters-in-different-stripes-using-sholl-plugin/51087)]
 /media/plugins/snt/snt-sholl-integrate-density-profiles.png | Not only neurons: Integrated-density profiles can be used to obtain radial maps of fluorescent markers.
 "
@@ -74,7 +74,7 @@ The center of analysis can be specified using one of three possibilities:
 
 3. Multipoint selection:A Multi-point selection (multipoint counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.  
 
-{% include img align="center" name="sholl plots" src="/media/plugins/shollanalysisstartuprois.png" %}
+{% include img align="center" name="sholl plots" src="/media/plugins/snt/shollanalysisstartuprois.png" %}
 
 Three types of ROIs expected by the plugin when analyzing images directly. <b>Left</b>: Line defining center of analysis (focal point), hemisphere restriction and ending radius. <b>Middle</b>: Single point defining center of analysis. <b>Right</b>: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary neurites.
 
@@ -249,7 +249,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 
 # Sholl Plots
 
-{% include img align="center" name="sholl plots" src="/media/plugins/shollplots.png" %}
+{% include img align="center" name="sholl plots" src="/media/plugins/snt/shollplots.png" %}
 
 ***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles for the ddaC cell ({% include bc path='File|Open Samples|ddaC Neuron'%}), version 3.0**. Most of the retrieved [metrics](#metrics-based-on-fitted-data) are automatically highlighted by the plugin. *Linear profile*: [Mean value](#mean-value-of-function) (horizontal grid line) and [Centroid](#centroid) (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#sholl-decay) (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#dratio) when compared to the Log-log method.
 
