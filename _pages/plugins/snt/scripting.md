@@ -42,13 +42,13 @@ Any script saved into Fiji's "scripts" subdirectory containing *SNT* in the file
 
 3. Run {% include bc path='Scripts|Reload...'%}, and your new script should appear in the full list of scripts found at {% include bc path='Scripts|Full List...'%}.
 
-## Script Recorder
+# Script Recorder
 
 SNT features a script recorder that similarly to _ImageJ's macro recorder_ converts menu and button clicks into executable code. Note however that while the recorder captures simple commands well, it struggles to capture those that are more complex or particularly interactive. 
 
 The goal of the recorder is twofold: 1) simplify prototyping of new scripts and 2) Log your actions during a tracing session. This is particularly useful to assemble reproducible records.
 
-There are two ways to start the recorder: {% include bc path='Scripts|New|Record...'%} or by pressing the _Record_ button in [Command Palette](/plugins/snt/manual#command-palette).
+There are two ways to start the recorder: {% include bc path='Scripts|Record...'%} or by pressing the _Record_ button in [Command Palette](/plugins/snt/manual#command-palette).
 
 As a rule-of-thumb, commands that are simple or do not involve prompts record flawlessly. This includes setting filters for visibility of tags, applying Tags, or filtering paths in the Path Manager. Commands for fully automated reconstructions, or generating secondary layers _should_ work well. However, many others remain limited.
 
@@ -57,14 +57,24 @@ As a rule-of-thumb, commands that are simple or do not involve prompts record fl
 </div>
 
 
-## Script Interpreter
+# REPL
 
-Some of SNT's functionality is conveniently accessible in the [Script Interpreter](/scripting/interpreter). Here is an example:
-
+SNT's Scripting REPL (Read–Eval–Print Loop) is opened using {% include bc path='Scripts|New|REPL'%}. It is a [Script Interpreter](/scripting/interpreter) instance with pre-initialized variables that are entry-points to the API of current SNT session. The REPL serves as a commandline prompt with access to all of SNT classes.
 <div align="center">
-  <img src="/media/plugins/snt/snt-scriptinterpreter.png" title="SNTService being accessed in the Script Interpreter" width="650px" />
+  <img src="/media/plugins/snt/snt-repl.png" title="SNTService being accessed in SNT's Scripting REPL" width="700px" />
 </div>
+The REPL has access to _all_ of SNT's API. The prompt does not feature auto-completion but you can use `api(object, 'optional keyword')` to obtain a list of methods associated with an object. Example: To find out all of the 'demo' methods in SNTService, one would use:
 
+{% highlight java %}
+>>> api(snt, "demo")
+6 method(s) available in sc.fiji.snt.SNTService:
+  demoImage(String arg0)           -> ImagePlus
+  demoTree(String arg0)            -> Tree
+  demoTree()                       -> Tree
+  demoTreeImage()                  -> ImagePlus
+  demoTrees()                      -> List
+  demoTreesSWC()                   -> List
+{% endhighlight %}
 
 # Python Notebooks
 

@@ -477,7 +477,7 @@ The Legacy 3D Viewer is a functional tracing canvas and allows images to be trac
 
 ## Bookmarks Tab
 
-This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). The basic usage is as follows:
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/walkthroughs#spinevaricosity-analysis). The basic usage is as follows:
 
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" title="Bookmarks tab" />
 

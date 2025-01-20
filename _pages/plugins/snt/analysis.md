@@ -99,7 +99,7 @@ Similarly to _Sholl Analysis_, there are several entry points to Strahler Analys
 {% endcapture %}
 {% include notice icon="info" content=strahler %}
 
-{% include img align="right" src="/media/plugins/strahler-classification-example.png" caption="Strahler classification"%}
+{% include img align="right" src="/media/plugins/snt/strahler-classification-example.png" caption="Strahler classification"%}
 {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees. The {% include wikipedia title='Strahler number' text='Strahler classification'%} occurs as follows:
 
 - If a brach is terminal (has no children), its Strahler number is one
