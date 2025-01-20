@@ -267,7 +267,7 @@ This type of analysis uses (manually placed) multi-Point ROIs along paths as mar
  2. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) the feature being counted
  3. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosity Utilities|Extract Counts from Multi-point ROIs...' %}. The dialog allows you to specify:
    
-    - **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager
+    - **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager. It also allows [bookmarked locations](/plugins/snt/manual#bookmarks-tab) to be parsed as markers
    
     - **Max. association distance** The maximum allowed distance between a point and its path in physical units. This option is ignored if set to -1 (the default). This works as follows: for every point ROI, the closest path node is identified. ROI is only considered to be associated with Path if its distance to the closest path node is less than or equal to _Max. association distance_.
    
