@@ -18,7 +18,7 @@ Also you may want to have a look at [Introduction\_into\_Macro\_Programming](/sc
 
 Most of this guide is written from the perspective of using IDEA IntelliJ as your IDE. While everything can be done when using the other recommended IDEs, the specifics may differ from what you see here.
 
-Lastly, this new guide exclusively covers Scijava-based Fiji projects, and will not cover or link to any information on ImageJ-1.x plugin development. Appropriately leveraging the tools in Scijava and Imglib2 makes plugin development, particularly handling input and output, significantly easier and more efficient. This guide is meant as a rough overview of the entire process and deliberately does not go into great detail on any single topic. If you are interested in ImageJ-1.x plugin development, see the [ImageJ-1.x plugin development page](/develop/ij1-pluins). 
+Lastly, this new guide exclusively covers Scijava-based Fiji projects, and will not cover or link to any information on ImageJ-1.x plugin development. Appropriately leveraging the tools in Scijava and Imglib2 makes plugin development, particularly handling input and output, significantly easier and more efficient. This guide is meant as a rough overview of the entire process and deliberately does not go into great detail on any single topic. If you are interested in ImageJ-1.x plugin development, see the [ImageJ-1.x plugin development page](/develop/ij1-plugins). 
 
 ## Finding information
 
@@ -37,11 +37,11 @@ ImgLib2 is one of the foundational Java libraries used by Fiji, responsible for 
 ### Scijava
 [Scijava](/libs/scijava) is a collection of different libraries that provides very useful interfaces between you as a developer, and the user, as well as between you and the underlying data structrues and tools. This includes many powerful [services](/libs/scijava#services) that are available as [parameters](/scripting/parameters) through any instance of Fiji. 
 
-### IDE (Intgrated Development Environment)
+### IDE (Integrated Development Environment)
 An [IDE](/develop/ides) is where you will write your code. It's highly recommended to use [IntelliJ\_IDEA](/develop/intellij), [NetBeans](/develop/netbeans) or [Eclipse](/develop/eclipse). 
 
 ### Maven
-[Maven](/develop/maven) is a build tool that packages the java code into jar files that the Fiji can recognize, and helps with library management for your project. Maven comes bunlded with the major java IDEs. Maven properties are managed through the [pom.xml](/develop/building-a-pom) file, discussed further below. 
+[Maven](/develop/maven) is a build tool that packages the java code into jar files that the Fiji can recognize, and helps with library management for your project. Maven comes bundled with the major java IDEs. Maven properties are managed through the [pom.xml](/develop/building-a-pom) file, discussed further below. 
 
 ### Git and Github
 [Git](/develop/git) is a version control tool that can be used to upload projects to a repository, and which also comes bundled with the major IDEs. [Github](/develop/github) is an online repository for storing and managing git repositories, many of which are open-source.
@@ -88,7 +88,7 @@ In general, there are two alternative strategies to develop your plugin:
 -   Run IntelliJ IDEA
 -   Choose {% include bc path='File|New|Project from Version Control|Git'%} from the main menu
 
-*Fiji Plugin*
+**Fiji Plugin**
 
 -   For the Repository URL, enter: [`https://github.com/imagej/tutorials.git`](https://github.com/imagej/tutorials.git) and choose a local folder you want the project to be stored in
 
