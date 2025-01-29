@@ -291,5 +291,6 @@ NB:
 GPL distribution (see [license](https://cecill.info/index.en.html)).
 
 ## Change log
+2025/01/29: v1.0.2 Correct bug with modified max kernel
 2024/08/30: v1.0.1 Enhance swc file reading
 2024/06/28: v1.0 Ajust dendrite shape and some details
