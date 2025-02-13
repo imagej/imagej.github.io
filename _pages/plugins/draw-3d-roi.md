@@ -8,6 +8,10 @@ source-url: https://github.com/andmccall/Draw3DROI
 team-developers: Andrew McCall
 ---
 
+{% include notice icon="info" content='This plugin is unrelated to the 3D Draw ROI command from [3D ImageJ Suite](/plugins/3d-imagej-suite/index), and is not directly associated with 3D ImageJ suite. 
+Despite the similar names 3D Draw ROI and Draw 3D ROI sevre different purposes. 3D Draw ROI takes a mask and creates a 3D outline of the mask shapes, creating the look of a more traditional 2D ROI selection. 
+Draw 3D ROI is used to create a 3D mask from several 2D drawn ROIs.' %}
+
 ## Draw 3D ROI
 
 This plugin allows users to create a 3D binary segmented mask by hand-drawing 2D ROIs from multiple image perspectives. The 3D binary mask is generated from the intersection of the user provided ROIs. 
