@@ -17,10 +17,10 @@ This plugin can load EVIDENT(Olympus) vsi/oir/omp2info file formats and show som
   Ver.2.4.1 Fix for incorrect colours displayed in some VSI files.
 
 ## Download
-  Download the latest OlympusViewer ImageJ Plugin for [Windows](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253989) and [Mac](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253988).
+  Download the latest OlympusViewer ImageJ Plugin for [Windows](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software) and [Mac](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software).
 
 ## Installation
-  Please see our installation instructions for [Windows](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253989) and [Mac](https://www.olympus-lifescience.com/en/downloads/detail-iframe/?0%5bdownloads%5d%5bid%5d=847253988).
+  Please see our installation instructions for [Windows](https://github.com/evident-imagejplugin/evident-viewer-guide/blob/main/EvidentViewer_Installation_Guide_win.md) and [Mac](https://github.com/evident-imagejplugin/evident-viewer-guide/blob/main/EvidentViewer_Installation_Guide_mac.md).
 
 ## How to use
 
