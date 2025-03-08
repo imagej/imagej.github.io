@@ -3,49 +3,60 @@
 <table>
 <tbody>
   <tr>
-    <th colspan="3" style="font-size: large; text-align: center">~ Download Fiji for your OS ~</th>
-  </tr>
-
-  <tr>
-    <th rowspan="2"><img style="vertical-align:middle;" alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></th>
-    <td>Windows 64-bit</td>
-    <td>
-      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip">imagej.net (USA)</a>,
-      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-win64.zip">micron.ox.ac.uk (European mirror)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>Windows 32-bit</td>
-    <td>
-      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">imagej.net (USA)</a>,
-      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-win32.zip">micron.ox.ac.uk (European mirror)</a>
-    </td>
-  </tr>
-
-  <tr>
-    <th><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></th>
-    <td>macOS (x86_64)</td>
-    <td>
-      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip">imagej.net (USA)</a>,
-      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-macosx.zip">micron.ox.ac.uk (European mirror)</a>
-    </td>
+    <th>&nbsp;</th>
+    <th>Operating system</th>
+    <th>Download links</th>
   </tr>
 
   <tr>
     <th><img alt="Linux" src="/media/icons/linux.svg" width="24" height="24"></th>
     <td>Linux (64-bit)</td>
     <td>
-      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip">imagej.net (USA)</a>,
-      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-linux64.zip">micron.ox.ac.uk (European mirror)</a>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-linux64.zip">imagej.net (USA)</a>
+      | <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-linux64.zip">micron.ox.ac.uk (Europe)</a>
     </td>
   </tr>
 
   <tr>
-    <th><img alt="Linux" src="/media/icons/fiji.png" width="24" height="24"></th>
+    <th><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></th>
+    <td>macOS (Apple silicon)</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/future/fiji-future-macos-arm64.zip">imagej.net (USA)</a>
+    </td>
+  </tr>
+
+  <tr>
+    <th><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></th>
+    <td>macOS (Intel)</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-macosx.zip">imagej.net (USA)</a>
+      | <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-macosx.zip">micron.ox.ac.uk (Europe)</a>
+    </td>
+  </tr>
+
+  <tr>
+    <th><img alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></th>
+    <td>Windows (64-bit)</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-win64.zip">imagej.net (USA)</a>
+      | <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-win64.zip">micron.ox.ac.uk (Europe)</a>
+    </td>
+  </tr>
+  <tr>
+    <th><img alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></th>
+    <td>Windows (32-bit)</td>
+    <td>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-win32.zip">imagej.net (USA)</a>
+      | <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-win32.zip">micron.ox.ac.uk (Europe)</a>
+    </td>
+  </tr>
+
+  <tr>
+    <th><img alt="no-JRE" src="/media/icons/fiji.png" width="24" height="24"></th>
     <td>No JRE</td>
     <td>
-      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">imagej.net (USA)</a>,
-      <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-nojre.zip">micron.ox.ac.uk (European mirror)</a>
+      <a style="text-decoration: underline;" href="https://downloads.imagej.net/fiji/latest/fiji-nojre.zip">imagej.net (USA)</a>
+      | <a style="text-decoration: underline;" href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-nojre.zip">micron.ox.ac.uk (Europe)</a>
     </td>
   </tr>
 </tbody>
