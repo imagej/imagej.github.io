@@ -1,9 +1,12 @@
 ---
 title: JavaCV Installer
+name: JavaCVInstaller
 categories: [Development, Utilities]
 source-url: https://github.com/anotherche/imagej-javacv-installer
-initial-release-date: "July 2020"
-dev-status: "active"
+release-date: March 11 2025
+release-version: 0.6.0
+dev-status: Active
+support-status: Active
 team-founders: "@anotherche"
 team-maintainers: "@anotherche"
 ---
@@ -57,14 +60,14 @@ Manual JavaCV installation can be done using the plugin's user interface:
 Using macro or public methods of the plugin, developers can automatically check for required interfaces and install missing JavaCV dependencies in ImageJ.
 
 For example, to silently install ffmpeg and opencv from JavaCV 1.5.10, one can run the following macro:
-```
+```java
 IJ.run("Install JavaCV libraries", "version=1.5.10 select_installation_option=[Install missing] treat_selected_version_as_minimal_required ffmpeg opencv");
 ```
 
 To implement interactive installation of missing dependencies, one can use the following code 
 (note that the first part of this method checks if the installer itself is installed, and installs it in ImageJ if it is missing.):
 
-```
+```java
 boolean checkJavaCV(String version, boolean treatAsMinVer, String components) {
 
 		String javaCVInstallCommand = "Install JavaCV libraries";
