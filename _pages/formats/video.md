@@ -23,6 +23,10 @@ There are several ways to enable support for more video formats:
 
 -   For exporting video, you could try the [Save As Movie](https://sites.google.com/site/qingzongtseng/save-as-movie) plugin. Unfortunately, there is no update site for it; you must perform a complex installation procedure manually.
 
+<!-- -->
+
+-   Video import and export is supported by the new [FFmpegVideoImportExport](https://imagej.net/plugins/ffmpeg-video-import-export) plugin under development, which uses actual JavaCV libraries.
+
 ## Transcoding
 
 Another strategy is to transcode your video to an uncompressed format using a tool such as QuickTime Pro, VirtualDub or FFmpeg on the command line. The uncompressed video stream can then easily be opened in ImageJ without the need for additional plugins. Similarly, for saving video, you can write to an uncompressed format, then compress it afterward using an external tool.
