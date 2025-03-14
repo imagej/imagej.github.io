@@ -18,7 +18,7 @@ When you start a new [Maven](/develop/maven) project, one of the first things yo
         <parent>
             <groupId>org.scijava</groupId>
             <artifactId>pom-scijava</artifactId>
-            <version>12.0.0</version>
+            <version>40.0.0</version>
             <relativePath />
         </parent>
 
