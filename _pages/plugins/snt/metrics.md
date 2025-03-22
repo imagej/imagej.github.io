@@ -76,7 +76,7 @@ Defined as the polygon (2D) or the polyhedron (3D) enclosing a reconstruction
 The perimeter of the 2D polygon or the surface area of the 3D polyhedron of the [convex hull](#convex-hull)
 
 ###### Convex hull: Boxivity
-The extent to which the [convex hull](#convex-hull) approaches a rectangle (2D) or a cuboid (3D). Range of values: 0--1 (unitless)
+The extent to which the [convex hull](#convex-hull) approaches a rectangle (if 2D) or a cuboid (if 3D). Range of values: 0--1 (unitless)
 
 ###### Convex hull: Centroid-root distance
 The distance between the root of a neuronal arbor and the centroid of its [convex hull](#convex-hull)
@@ -96,7 +96,7 @@ The depth of the bounding box embedding the structure being measured
 
 <span id="e"></span>
 ##### Extension angle
-The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across allcoordinates on either the XY, XZ, or ZY plane. Extension angles _absolute_ or _relative_ (_rel._):
+The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across allcoordinates on either the XY, XZ, or ZY plane. Extension angles can be _absolute_ or _relative_ (_rel._):
 
 - _Absolute angles_ are measured with respect to a fixed reference and range from [0°-360°[ under a _West-clockwise_ convention (W: 0°; N: 90°; E: 180°; S: 270°)
 
@@ -278,42 +278,54 @@ The length of [primary branches](#primary-branches)
 ##### Remote bif. angles
 The angle between each bifurcation point and its children in the simplified graph, which comprise either branch points or terminal nodes. Note that branch points with more than 2 children are ignored. L-measure metric[^2]
 
+<span id="balancing-factor"></span><span id="bf"></span>
+##### Root angles: Balancing factor
+Dimensionless property related to [Centripetal bias](#root-angles-centripetal-bias) but with range $$[0, 1]$$. It is sufficient to produce realistic neuronal morphologies with generalized minimum spanning tree modeling. Described in:
+
+{% include citation doi='10.1371/journal.pcbi.1000877' %}
+
+##### Root angles: Centripetal bias
+[Root angle analysis](/plugins/snt/analysis#root-angle-analysis) metric (dimensionless, range: $$[0,\infty[$$). It is defined as the concentration ($$\kappa$$) of the von Mises fit of the root angle distribution: $$\kappa=0$$ indicate no bias (root angles are distributed uniformly) while $$\kappa\to\infty$$ indicate that all neurites point directly toward the root of the tree
+
+##### Root angles: Mean direction
+[Root angle analysis](/plugins/snt/analysis#root-angle-analysis) metric. The mean direction of the fitted von Mises distribution (in degrees).
+
 <span id="s"></span>
 ##### Sholl: Decay
-The [Sholl regression coefficient](/plugins/sholl-analysis#sholl-decay)
+The [Sholl regression coefficient](/plugins/snt/sholl#sholl-decay)
 
 ##### Sholl: Degree of Polynomial fit
-The polynomial degree used to fit the Sholl profile. See [Sholl › Fitting functions](/plugins/sholl-analysis#eq1)
+The polynomial degree used to fit the Sholl profile. See [Sholl › Fitting functions](/plugins/snt/sholl#eq1)
 
 ##### Sholl: Kurtosis
-See [Kurtosis](/plugins/sholl-analysis#kurtosis) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+See [Kurtosis](/plugins/snt/sholl#kurtosis) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: Max
-See [Max inters.](/plugins/sholl-analysis#max-inters) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+See [Max inters.](/plugins/snt/sholl#max-inters) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: Max (fitted)
-See [Critical value](/plugins/sholl-analysis#critical-value) in [Sholl › Metrics based on fitted data](/plugins/sholl-analysis#metrics-based-on-fitted-data)
+See [Critical value](/plugins/snt/sholl#critical-value) in [Sholl › Metrics based on fitted data](/plugins/snt/sholl#metrics-based-on-fitted-data)
 
 ##### Sholl: Max (fitted) radius
-See [Critical radius](/plugins/sholl-analysis#critical-radius) in [Sholl › Metrics based on fitted data](/plugins/sholl-analysis#metrics-based-on-fitted-data)
+See [Critical radius](/plugins/snt/sholl#critical-radius) in [Sholl › Metrics based on fitted data](/plugins/snt/sholl#metrics-based-on-fitted-data)
 
 ##### Sholl: Mean
-See [Mean inters.](/plugins/sholl-analysis#mean-inters) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+See [Mean inters.](/plugins/snt/sholl#mean-inters) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: No. maxima
-The number of times _Max inters._ occurs in a Sholl profile. See [Max inters.](/plugins/sholl-analysis#max-inters) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+The number of times _Max inters._ occurs in a Sholl profile. See [Max inters.](/plugins/snt/sholl#max-inters) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: No. secondary maxima
-The number of times a secondary peak occurs in a Sholl profile. See [Max inters.](/plugins/sholl-analysis#max-inters) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+The number of times a secondary peak occurs in a Sholl profile. See [Max inters.](/plugins/snt/sholl#max-inters) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: Ramification index
-See [Schoenen Ramification index](/plugins/sholl-analysis#schoenen-sampled) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+See [Schoenen Ramification index](/plugins/snt/sholl#schoenen-sampled) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: Skewness
-See [Skewness](/plugins/sholl-analysis#skewness) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+See [Skewness](/plugins/snt/sholl#skewness) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Sholl: Sum
-See [Sum inters.](/plugins/sholl-analysis#sum) in [Sholl › Metrics based on sampled data](/plugins/sholl-analysis#metrics-based-on-sampled-data)
+See [Sum inters.](/plugins/snt/sholl#sum) in [Sholl › Metrics based on sampled data](/plugins/snt/sholl#metrics-based-on-sampled-data)
 
 ##### Surface area
 Treating each internode segment as a conical frustum, the sum of the surface areas[^1] of all frusta
@@ -353,11 +365,11 @@ Cartesian coordinates in the three-dimensional space
 
 ### Notes
 
-- This list does not include all of the specialized metrics provided by dedicated modules, such as [Strahler](/plugins/snt/analysis#strahler-analysis), [Sholl](/plugins/snt/analysis#sholl-analysis), [Persistence diagrams/landscapes](/plugins/snt/analysis#persistence-homology), or [Graph-based](/plugins/snt/analysis#graph-based-analysis) analysis
+- This list does not include all of the specialized metrics provided by dedicated modules, such as [Strahler](/plugins/snt/analysis#strahler-analysis), [Sholl](/plugins/snt/sholl#metrics), [Persistence diagrams/landscapes](/plugins/snt/analysis#persistence-homology), or [Graph-based](/plugins/snt/analysis#graph-based-analysis) analysis
 
 - Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
 
-- Each of the 90+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$90\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- Each of the 95+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$95\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 

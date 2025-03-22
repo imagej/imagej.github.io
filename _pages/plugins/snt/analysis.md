@@ -37,6 +37,25 @@ With histograms, normal distribution curves and quartile marks can be overlaid o
 </p>
 "%}
 
+
+# Comparing Reconstructions
+
+<img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" title=" " />
+SNT can compare up to six groups of cells. The entry point for this type of comparison is twofold:
+- **{% include bc path='Utilities|Compare Reconstructions/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
+- **{% include bc path='Neuronal arbors|Load & Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
+
+The dialog  prompt for this feature allows selection of up to six directories containing reconstruction files (SWC, TRACES, JSON, NDF). The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, it is possible to  restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result typically includes:
+
+- A simple statistical report, including descriptive statistics and a two-sample t-test (when comparing two groups) or one-way ANOVA (when comparing three or more groups)
+- Comparison plots for the chosen metric: Grouped histogram and boxplot
+- _Montages_ of groups. These are multi-panel vignettes of up to 10 group exemplars. These can all be exported as PDF, PNG, or SVG
+
+{% include img align="center" src="/media/plugins/snt/snt-compare-reconstructions-overview.png" caption="Comparing _No. of branches_ between two cell groups: Overview of outputs."%}
+
+{% include notice icon="info" content="SNT performs statistical tests without verifying if samples fulfill basic test-criteria (e.g., normality, variance homogeneity, sample size, etc.)" %}
+
+
 # Convex Hull Analysis
 _Convex hull_ commands (in SNT  main dialog, [Rec. viewer](/plugins/snt/reconstruction-viewer) and [Rec. plotter](/plugins/snt/manual#plotter)) compute the 2D or 3D convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains the nodes of its paths). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size).
 
@@ -209,22 +228,23 @@ In addition, SNT also implements descriptors based on persistence landscapes, as
 
 Currently, _basic_ persistence homology descriptors can be computed using UI commands {% include bc path='Analysis|Persistence Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistence Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
 
-# Comparing Reconstructions
 
-<img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" title=" " />
-SNT can compare up to six groups of cells. The entry point for this type of comparison is twofold:
-- **{% include bc path='Utilities|Compare Reconstructions/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
-- **{% include bc path='Neuronal arbors|Load & Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
+# Root Angle Analysis
+Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or rootof the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
 
-The dialog  prompt for this feature allows selection of up to six directories containing reconstruction files (SWC, TRACES, JSON, NDF). The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, it is possible to  restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result typically includes:
+{% include citation doi='10.1016/j.celrep.2019.04.097' %}
 
-- A simple statistical report, including descriptive statistics and a two-sample t-test (when comparing two groups) or one-way ANOVA (when comparing three or more groups)
-- Comparison plots for the chosen metric: Grouped histogram and boxplot
-- _Montages_ of groups. These are multi-panel vignettes of up to 10 group exemplars. These can all be exported as PDF, PNG, or SVG
+A root angle is defined as the angle between a neurite segment (defined centripetally from the termination point to the soma) and the direct path to the soma or root (see [Bird and Cuntz 2019](https://pubmed.ncbi.nlm.nih.gov/31167149/)). The analysis proceeds as follows:
 
-{% include img align="center" src="/media/plugins/snt/snt-compare-reconstructions-overview.png" caption="Comparing _No. of branches_ between two cell groups: Overview of outputs."%}
+- Root angles are computed centripetally for every node in the arbor in centripetal sequence (from tips to root)
 
-{% include notice icon="info" content="SNT performs statistical tests without verifying if samples fulfill basic test-criteria (e.g., normality, variance homogeneity, sample size, etc.)" %}
+- The distribution of root angles is fitted to a [von Mises distribution](https://en.wikipedia.org/wiki/Von_Mises_distribution), a specialized probability distribution that models angles/directions. von Mises can be considered a 'wrapped normal', or a circular analogue of the normal distribution, as it addresses the issue of "wrapping" that occurs when dealing with angles revolving around a circle where 0° and 360° (2π) are the same. 
+
+- [Centripetal bias](./metrics#root-angles-centripetal-bias), [Balancing factor](./metrics#root-angles-balancing-factor), and [Mean direction](./metrics#root-angles-mean-direction) are then computed from the von Mises fit
+
+The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-angle-analysis) in the main dialog, Reconstruction Viewer's [Analyze & Measure](/plugins/snt/reconstruction-viewer#analyze--measure) menu, or [template scripts](/plugins/snt/scripting#bundled-templates). The screenshot below depicts the output of the *Analysis › Root Angle Analysis* template script:
+
+{% include img align="fit" src="/media/plugins/snt/snt-root-angle-analysis.png" %}
 
 # Other Specialized Analyses
 See [SNT Scripting](/plugins/snt/scripting), as well as script templates demonstrating a range of analysis possibilities.
