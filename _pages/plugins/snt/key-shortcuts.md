@@ -8,22 +8,17 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
+
 {% capture text%}
 Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and most do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
-<br><br>
+
+{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
 _Typically_, when {% include key keys='ctlcmd' %} is pressed, hotkeys are not intercepted by SNT. E.g., During a tracing session pressing {% include key key='N' %} triggers <u>N</u>o* in the interactive prompt while {% include key keys='ctlcmd|N' %} will trigger IJ's built-in command {% include bc path='File|New|image...'%}.
+<br><br>
+If you are not familiar with SNT commands the [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift|P' %}) is the fastest way to access actions and discover their respective shortcuts!
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
-{% capture cmdpalette%}
-{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
-The Command Palette is the fastest way to access actions and discover their respective shortcuts:
-1. Press {% include key keys='ctlcmd|Shift|P' %} in either SNT or Reconstruction Viewer
-2. Start typing to filter actions, scripts and available commands
-3. Press {% include key keys='up' %} or {% include key keys='down' %} to select a command (or use the  {% include key keys='mouse wheel' %})
-4. Press {% include key keys='Enter' %} to run it
-{% endcapture %}
-{% include notice  icon="info" content=cmdpalette %}
 
 ### Interactive Prompt
 

@@ -263,7 +263,7 @@ Generates a Dendrogram plot of single cells. See [Graph-based Analysis](/plugins
 See [Analysis › Persistence Homology](/plugins/snt/analysis#graph-based-analysis).
 
 #### Sholl Analysis...
-Runs [Sholl Analysis](/plugins/sholl-analysis#analysis-of-traced-cells) on single cells.
+Runs [Sholl Analysis](/plugins/snt/sholl#analysis-of-traced-cells) on single cells.
 
 #### Strahler Analysis...
 Conducts [Strahler Analysis](/plugins/snt/analysis#strahler-analysis) on single cells.

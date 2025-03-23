@@ -552,28 +552,15 @@ More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting).
 <dl>
 <dd markdown="1">
 
-The authoritative reference for *Sholl Analysis* is:
+The authoritative references for *Sholl Analysis* are twofold:
 
 - {% include citation id='plugins/sholl-analysis' %}
-
-The authoritative reference for *SNT* is:
 
 - {% include citation id='plugins/snt' %}
 
 </dd>
 </dl>
-<li markdown="1">
 
-<span id="faq:plugin"></span>**What is the difference between *Sholl Analysis* and an homonymous plugin released by the Ghosh laboratory in 2005**?
-
-</li>
-<dl>
-<dd markdown="1">
-
-The [original Sholl Analysis plugin](http://web.archive.org/web/20140216075253/http://labs.biology.ucsd.edu/ghosh/software/) by Tom Maddock (version 1.0) was released for ImageJ 1.35 and is now deprecated, unmaintained software that behaves erratically in newer versions of ImageJ. The current implementation of *Sholl Analysis* inherits Tom's initial 2D algorithm, but has numerous [added features](#release-notes) to enhance its utility. Note that throughout 2012 the plugin was temporarily called *Advanced Sholl Analysis*. You can follow the entire history of the plugin using its [release notes](#release-notes)
-
-</dd>
-</dl>
 <li markdown="1">
 
 <span id="faq:threshold"></span>**Why do I need to threshold the cell?**
@@ -588,7 +575,7 @@ Counting intersections is really a binary procedure: a shell either intercepts a
 </dl>
 <li markdown="1">
 
-<span id="faq:threshold2"></span>**In version 1.0, it was not mandatory to adjust threshold values prior to analysis. Why is it now?**
+<span id="faq:threshold2"></span>**In older versions it was not mandatory to adjust threshold values prior to analysis. Why is it now?**
 
 </li>
 <dl>
@@ -809,9 +796,10 @@ Report it in the [ImageJ Forum](http://forum.imagej.net).
 </dl>
 </ol>
 
-## Release Notes
+<span id="release-notes"></span>
+# Version History
 
-Release notes are available on the {% include github org='morphonets' repo='SNT' label='SNT repository' %}. Releases notes up to version 3.7.3 are available on the {% include github org='tferr' repo='ASA' branch='master' path='Notes.md#release-notes-for-sholl-analysis' label='initial project repository' %}.
+Release notes are available on the {% include github org='morphonets' repo='SNT' label='SNT repository' %}. Releases notes up to version 3.7.3 are available on an {% include github org='tferr' repo='ASA' branch='master' path='Notes.md#release-notes-for-sholl-analysis' label='older repository' %}. In turn, the latter inherited (with permission) the 2D algorithm of an even earlier [ImageJ 1.35 plugin](http://web.archive.org/web/20140216075253/http://labs.biology.ucsd.edu/ghosh/software/) by Tom Maddock. Note that throughout 2012 the project was temporarily called *Advanced Sholl Analysis*.
 
 
 # Publication

@@ -16,11 +16,11 @@ See [Installation details](/plugins/snt/index#installation).
 
 ### How do I cite SNT?
 
-**The proper citation for SNT is**:
+**Note that neither the main [Fiji article](/software/fiji#publication), nor the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication are appropriate citations for SNT. The proper citation for SNT is**:
 
 - {% include citation id='plugins/snt' %}
 
-**Note that neither the main [Fiji article](/software/fiji#publication), nor the first [Simple Neurite Tracer](#what-is-the-difference-between-snt-and-simple-neurite-tracer) publication are appropriate citations for SNT**. To reference additional modules that enhance SNT:
+In addition, you should also cite any additional modules that you may use:
 
 - **[Sholl Analysis](/plugins/snt/sholl)**
   {% include citation id="plugins/sholl-analysis" %}

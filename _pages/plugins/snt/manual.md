@@ -89,7 +89,7 @@ This option assumes you are tracing on the same spatial coordinates of an annota
 
 #### Load Demo Dataset...
 
-Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/walkthroughs), and to create [Minimal reproducible example](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
+Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/walkthroughs), and to create [Minimal reproducible examples](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
 
 #### Save Tracings ›
 
@@ -117,17 +117,19 @@ Resets all preferences and restarts SNT using default options. It is recommended
 ### Analysis ›
 
 #### Atlas-based ›
-See [Atlas-based Analysis](/plugins/snt/analysis#atlas-based-analysis).
+See [Analysis › Atlas-based Analysis](/plugins/snt/analysis#atlas-based-analysis).
 
 #### Path-based ›
-See [Path-based Analysis](/plugins/snt/analysis#path-based-analysis).
+See [Analysis › Path-based Analysis](/plugins/snt/analysis#path-based-analysis).
 
 #### Convex Hull
-See [Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
+See [Analysis › Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
 
 #### Persistence Homology
-See [Persistence Homology Analysis](/plugins/snt/analysis#persistence-homology).
+See [Analysis › Persistence Homology Analysis](/plugins/snt/analysis#persistence-homology).
 
+#### Root Angle Analysis
+See [Analysis › Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis).
 
 #### Sholl Analysis.../Sholl Analysis (by Focal Point)...
 
@@ -154,8 +156,10 @@ The Command Palette is the fastest way to access actions and discover their resp
 
 1. Press {% include key keys='ctlcmd|Shift|P' %} in either SNT or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)
 2. Start typing to filter actions, scripts and available commands
-3. Press {% include key keys='up' %} or {% include key keys='down' %} to select a command (or use the  {% include key keys='mouse wheel' %})
+3. Press {% include key keys='up' %} or {% include key keys='down' %} (or use the  {% include key keys='mouse wheel' %}) to select a command 
 4. Press {% include key keys='Enter' %} to run it. If the record button is toggled, executed commands are recorded by the [Script Recorder](/plugins/snt/scripting#script-recorder).
+
+By default, commands and actions are filtered using approximate string matching. Exact matching can be enabled by toggling the _Match Case/Whitespace_ buttons. Press the &nbsp;<i style="color:gray;" class="fas fa-map-pin"></i>&nbsp; button to display the Command Palette above all windows. Press the &nbsp;<i style="color:gray;" class="fas fa-lock"></i>&nbsp; button to keep the Palette open after running a command.
 
 
 #### Compare Reconstructions/Cell Groups...
