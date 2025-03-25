@@ -43,6 +43,8 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/analysis#sholl-analysis) and [Strahler](/plugins/snt/analysis#strahler-analysis) analysis
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/graph-viewer-ferris-wheel.png | Routines to summarize data from [projectomes and connectomics](/plugins/snt/analysis#graph-based-analysis)
+/media/plugins/snt/snt-2d-histogram.png | Specialized [statistics](/plugins/snt/analysis#statistics)
+/media/plugins/snt/snt-labkit-training.png | [Semantic segmentation](/plugins/snt/machine-learning)
 /media/plugins/snt/snt-astrocyte-example.png | Glia analysis: Bulk characterization (width and length) of astrocytic processes ([use case](https://forum.image.sc/t/determining-astrocyte-width-from-2d-images-using-fiji-snt/56426/2))
 /media/plugins/snt/snt-non-neuronal-example.png | Not only neurons: SNT can be used to analyze many types of filamentous structures
 "
