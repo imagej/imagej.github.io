@@ -832,13 +832,21 @@ The *Remove Existing Color Mapping...* command removes existing color mapping fr
 
 
 #### Frequency Analysis ›
-
-<img align="right" width="400" src="/media/plugins/snt/snt-combined-histograms.png" title="Branch-based Distributions..." />
 Commands for retrieving histograms of selected path/branch metric(s). These commands prompt for the following settings:
 
 - *Measurement* Drop-down menu with the available metrics.
 
 - *Polar* Whether the histogram should be plotted using polar coordinates. Typically, this assumes that the data being profiled ranges between 0 and 360 degrees (e.g., bifurcation angles)
+
+The menu also lists a command for displaying two-dimensional (bivariate) histograms in which two-distributions are plotted.
+
+{% include gallery content=
+"
+/media/plugins/snt/snt-combined-histograms.png | Distributions of branch-based metrics...
+/media/plugins/snt/snt-2d-histogram.png | Two-dimensional histogram
+"
+%}
+
 
 #### Measurements ›
 

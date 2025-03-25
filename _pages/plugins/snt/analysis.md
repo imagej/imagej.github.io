@@ -29,7 +29,7 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 
 {% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png"
 caption="
-**Cell-based Distributions..._**
+**Cell-based Distributions...**
 <p>
 SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible.
 Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures. 
