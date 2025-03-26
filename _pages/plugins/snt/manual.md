@@ -676,24 +676,23 @@ A preset swatch color, or a custom one chosen from the color chooser (right-clic
 #### Image Properties ›
 
 Information on hyperstack position details (e.g., channel, frame or slice labels on which a path was traced).
+<img align="right" src="/media/plugins/snt/snt-proofreading-toolbar.png" title="Proofreading toolbar" width="300" alt="Proofreading toolbar" />
 
 #### Morphometry ›
 
-<img align="right" src="/media/plugins/snt/snt-proofreading-toolbar.png" title="Proofreading toolbar" width="400" alt="Proofreading toolbar" />
 Morphometric properties, such as *Path length*, *Path mean radius* or *[Path order](/plugins/snt/analysis#path-order-analysis)*.
 
 #### Proofreading Toolbar
 
-The proofreading toolbar allows for color-coded proofreading tags to be applied to selected paths in a convenient manner. Only one proofreading tag can be applied, because the previous assigned tag is replaced by the most recent assigment. Press "None" to remove existing tags.
+The proofreading toolbar allows for path-reviewing tags to be applied to selected paths in a convenient manner. Only one proofreading tag can be applied, because the previous assigned tag is replaced by the most recent assigment. Press "None" to remove existing tags. The toolbar includes an option to summarize current tag assignments, by listing the proportions of tagged paths.
 
 
 #### Other...
-
-<img align="right" src="/media/plugins/snt/snt-replace-tags.png" title="Replace Tag(s)" width="300" alt="Replace tags" />
 Ad-hoc tag(s) can be typed in a dialog prompt (comma-separated list supported).
 
 #### Replace...
 Allows existing tag(s) to be replaced/swapped by new values. Note that SWC-type tags are not affected by this command.
+<img align="right" src="/media/plugins/snt/snt-replace-tags.png" title="Replace Tag(s)" width="300" alt="Replace tags" />
 
 #### Remove Tags...
 Allows tags to be removed. Note that SWC-type tags are not affected by this command. 
