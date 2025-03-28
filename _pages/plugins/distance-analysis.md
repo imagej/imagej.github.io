@@ -141,7 +141,7 @@ To compute closest borders, use a 'b' after the number of closest objects: ... a
 
 ## Installation
 
-Download and copy the following jar in your plugins folder [Diana\_1.53.jar](https://drive.google.com/file/d/1hkmM6kHMnPvwya26ogQsNaLI2AMVq_zN)
+Download and copy the following jar in your plugins folder [Diana\_1.54.jar](https://drive.google.com/file/d/1hkmM6kHMnPvwya26ogQsNaLI2AMVq_zN)
 
 You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](https://mcib3d.frama.io/3d-suite-imagej/).
 
@@ -177,5 +177,5 @@ GPL distribution (see [3](http://www.cecill.info/index.en.html%7Clicence)). Sour
 -   23/06/2023 v1.51: macro bug fixed
 -   12/07/2023 v1.52: macro bug fixed and enhance GUI checkup
 -   01/10/2024 v1.53: closest border-border enabled
-
+-   28/03/2025 v1.54: SpotSegmentation bug fixed, now allows 32bits images
    
