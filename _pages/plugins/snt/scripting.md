@@ -76,6 +76,38 @@ The REPL has access to _all_ of SNT's API. The prompt does not feature auto-comp
   demoTreesSWC()                   -> List
 {% endhighlight %}
 
+# Analysis of External Data
+While SNT is not a statistical analysis software, it does offer some convenience methods to parse third-party data. E.g., to take a quick peek at a distribution of tabular values, one could use the following snippet to plot a histogram while fitting a Gaussian mixture model to the data. While it is written in Groovy, it would run almost verbatim in any other scripting language because it relies only on the SNT API.
+
+{% highlight groovy %}
+import sc.fiji.snt.analysis.*
+
+path = "https://raw.githubusercontent.com/morphonets/misc/master/dataset-demos/csv/demo-trees-coord.csv" // url or path to local file
+table = SNTTable.fromFile(path) // read data into a table
+headers = ["y", "z"] // headers of columns to be plotted
+histogram = SNTChart.getHistogram(table, headers, false) // table, col. headers, radial plot?
+histogram.setGMMFitVisible(true) // fit Gaussian mixed model to data
+histogram.show() // display histogram
+{% endhighlight %}
+
+Alternatively, the same data could be plotted in a two-dimensional histogram:
+
+{% highlight groovy %}
+import sc.fiji.snt.analysis.*
+import sc.fiji.snt.util.*
+
+path = "https://raw.githubusercontent.com/morphonets/misc/master/dataset-demos/csv/demo-trees-coord.csv" // url or path to local file
+table = SNTTable.fromFile(path) // read data into a table
+SNTChart.showHistogram3D(table.get("y"), table.get("z"), ColorMaps.get("viridis")) // show 3D histogram of the same columns using viridis LUT
+{% endhighlight %}
+
+Note that this approach would work for both local and remote files. The result of both snippets side-by-side:
+
+<div align="center">
+  <img src="/media/plugins/snt/snt-analysis-external-data.png" title="Analysis of tabular data in SNT" width="700px" />
+</div>
+
+
 # Python Notebooks
 
 Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PyImageJ](/scripting/pyimagej) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/-/notebooks) directory in the SNT repository contains several examples at different complexity levels.
