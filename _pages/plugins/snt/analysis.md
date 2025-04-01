@@ -27,16 +27,19 @@ If this becomes an issue, consider fitting paths in situ using the Replace exist
 # Statistics
 SNT assembles comparison reports and simple statistical reports (two-sample t-test/one-way ANOVA) for up to six groups of cells. This is described in [Comparing Reconstructions](#comparing-reconstructions). In addition, descriptive statistics are commonly reported in histograms from *Frequency/Distribution Analysis* commands.
 
-{% include img align="center" src="/media/plugins/snt/snt-combined-histograms.png"
-caption="
-**Cell-based Distributions...**
-<p>
-SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible.
-Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures. 
-With histograms, normal distribution curves and quartile marks can be overlaid on frequencies. With simple charts, it is typically enough to double-click on plotted components to edit them. 
-</p>
-"%}
+{% include img align="right" src="/media/plugins/snt/snt-combined-histograms.png" caption="Distributions or morphometric traits..."%}
 
+Notes on SNT charts and plots:
+
+- SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible. Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures
+
+- With simple charts, it is possible double-click on plotted components to edit them and export data as CSV
+
+- Histogram distributions can be fitted to a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) (Gaussian) or a [Gaussian mixture model](https://en.wikipedia.org/wiki/Mixture_model) (see _Components & Curve Fitting_ in the histogram right-click menu). In both cases, curves are scaled so that the [area under the curve](https://en.wikipedia.org/wiki/Integral) of the fitted curve matches that of the histogram. [Quartile](https://en.wikipedia.org/wiki/Quartile) marks can also be overlaid. By default, the [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule) rule is used to compute the no. of histogram bins.
+
+- Unless specified, all radial plots display angles in [0°-360°[ degrees
+
+- While SNT is not a statistical analysis software, it does offer some basic convenience methods to parse third-party data. See e.g., [this example](./scripting#analysis-of-external-data) for fitting a Gaussian mixture model to CSV data
 
 # Comparing Reconstructions
 
