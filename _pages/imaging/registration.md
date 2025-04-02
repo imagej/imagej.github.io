@@ -29,7 +29,18 @@ A tool for identifying a set of corresponding points of interest in two images.
 
 A tool for aligning image stacks.
 
-* A lightweight SIFT-implementation for Java after the paper of David Lowe[^1].
+* A lightweight SIFT implementation for Java after the paper of David Lowe[^1].
+
+Landmark Correspondences
+
+### [Landmark Correspondences](/plugins/landmark-correspondences)
+
+A simple tool for manual alignment of image planes.
+
+{% include img src="plugins/transform-roi-mls" width="500px" %}
+
+* Place corresponding points of interest on each of two images.
+* Useful for images of heterogeneous resolution and/or modalities where correspondences cannot be automatically detected.
 
 ### [BUnwarpJ](/plugins/bunwarpj)
 
