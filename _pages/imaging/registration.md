@@ -1,5 +1,4 @@
 ---
-mediawiki: Registration
 title: Registration
 section: Learn:Scientific Imaging
 nav-links: true
@@ -15,144 +14,66 @@ Essentially, image registration is used to align two or more images of the same 
 
 Here we summarize some of the Registration plugins in ImageJ.
 
-{::nomarkdown}
-<table>
-  <tbody>
-    <tr>
-      <td>
-        <p><strong>Plugin Name</strong></p>
-      </td>
-      <td>
-        <p><strong>Short Description</strong></p>
-      </td>
-      <td>
-        <p><strong>Highlights</strong></p>
-      </td>
-      <td>
-        <p><strong>Plugin Snapshot</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/plugins/feature-extraction">Feature Extraction</a></p>
-      </td>
-      <td>
-        <p>A tool for identifying a set of corresponding points of interest in two images</p>
-      </td>
-      <td>
-        <ul>
-          <li>Interest points are detected using the Difference of Gaussian detector</li>
-          <li>Uses the <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform">Scale Invariant Feature Transform (SIFT)</a> and <a href="http://matthewalunbrown.com/papers/cvpr05.pdf">Multi-Scale Oriented Patches (MOPS)</a> for local feature description
-          </li>
-          <li>Established matches are filtered using the <a href="https://en.wikipedia.org/wiki/Random_sample_consensus">Random Sample Consensus (RANSAC)</a>
-          </li>
-          <li>The extracted sets of corresponding landmarks and the calculated transformations are used in <a href="/plugins/trakem2">TrakEM2</a>, <a href="/plugins/register-virtual-stack-slices">Register Virtual Stack Slices</a> and <a href="/plugins/bunwarpj">BUnwarpJ</a> for image registration.
-          </li>
-        </ul>
-      </td>
-      <td>
-        <p><img src="/media/tem-42-33-f.png" width="500"> MOPS feature correspondences (example 1)</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/plugins/linear-stack-alignment-with-sift">Linear Stack Alignment with SIFT</a></p>
-      </td>
-      <td>
-        <p>A tool for aligning image stacks</p>
-      </td>
-      <td>
-        <ul>
-          <li>A lightweight SIFT-implementation for Java after the paper of David Lowe[^1].
-          </li>
-        </ul>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/plugins/bunwarpj">BUnwarpJ</a></p>
-      </td>
-      <td>
-        <p>A tool for elastic and consistent image registration</p>
-      </td>
-      <td>
-        <ul>
-          <li>Performs 2D image registration based on elastic deformations represented by B-splines</li>
-          <li>Invertibility of the deformations is enforced through a consistency restriction</li>
-          <li>Get started with the detailed <a href="/plugins/bunwarpj#user-manual">BUnwarpJ user manual</a>
-          </li>
-        </ul>
-      </td>
-      <td>
-        <p><img src="/media/plugins/bunwarpj/scheme.png" width="500"></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/plugins/trakem2">TrakEM2</a></p>
-      </td>
-      <td>
-        <p>A tool for morphological data mining, three-dimensional modeling and image stitching, <strong>registration</strong>, editing and annotation</p>
-      </td>
-      <td>
-        <ul>
-          <li>Registers floating image tiles to each other using SIFT and global optimization algorithms.</li>
-          <li>See the <a href="https://www.ini.uzh.ch/~acardona/trakem2_manual.html#registration">TrakEM2 sser manual section on registration</a>
-          </li>
-        </ul>
-      </td>
-      <td>
-        <p><img src="/media/trakem2-snap.jpg" width="500"></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/plugins/register-virtual-stack-slices">Register Virtual Stack Slices</a></p>
-      </td>
-      <td>
-        <p>A tool that takes a sequence of image slices stored in a folder and delivers a list of registered image slices</p>
-      </td>
-      <td>
-        <ul>
-          <li>The plugin can perform 6 types of image registration techniques: Translation, Rigid (translation + rotation), Similarity (translation + rotation + isotropic scaling), Affine, Elastic (via <a href="/plugins/bunwarpj">BUnwarpJ</a> with cubic B-splines), and Moving least squares
-          </li>
-          <li>All models are aided by automatically extracted <a href="/plugins/feature-extraction">SIFT features</a>
-          </li>
-        </ul>
-      </td>
-      <td>
-        <p><img src="/media/rvs-scheme.png" width="500"></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><a href="/plugins/fijiyama">Fijiyama</a></p>
-      </td>
-      <td>
-        <p>A registration tool for 3D multimodal time-lapse imaging</p>
-      </td>
-      <td>
-        <ul>
-          <li>User-friendly, generic and versatile</li>
-          <li>Automatic 3D registration (two algorithms available)</li>
-          <li>Manual registration (using the <a href="/plugins/3d-viewer">3D_Viewer</a>)
-          </li>
-          <li>Movie tutorials and example datasets</li>
-          <li>Settings automatically adjust based on your data</li>
-          <li>Transformations: linear or non-linear</li>
-          <li>Tested on specimens: human, vine trunk,</li>
-          <li>Tested on modalities: MRI, X-ray CT, Photograph</li>
-          <li>Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).</li>
-        </ul>
-      </td>
-      <td>
-        <p><img src="/media/reg-present-1.png" width="500"></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-{:/}
+### [Feature Extraction](/plugins/feature-extraction)
+
+A tool for identifying a set of corresponding points of interest in two images.
+
+{% include img src="tem-42-33-f" width="500" caption="MOPS feature correspondences (example 1)" %}
+
+* Interest points are detected using the Difference of Gaussian detector
+* Uses the [Scale Invariant Feature Transform (SIFT)](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform) and [Multi-Scale Oriented Patches (MOPS)](http://matthewalunbrown.com/papers/cvpr05.pdf) for local feature description
+* Established matches are filtered using the [Random Sample Consensus (RANSAC)](https://en.wikipedia.org/wiki/Random_sample_consensus)
+* The extracted sets of corresponding landmarks and the calculated transformations are used in [TrakEM2](/plugins/trakem2), [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices) and [BUnwarpJ](/plugins/bunwarpj) for image registration.
+
+### [Linear Stack Alignment with SIFT](/plugins/linear-stack-alignment-with-sift)
+
+A tool for aligning image stacks.
+
+* A lightweight SIFT-implementation for Java after the paper of David Lowe[^1].
+
+### [BUnwarpJ](/plugins/bunwarpj)
+
+A tool for elastic and consistent image registration.
+
+{% include img align="center" src="plugins/bunwarpj/scheme" width="500" %}
+
+* Performs 2D image registration based on elastic deformations represented by B-splines
+* Invertibility of the deformations is enforced through a consistency restriction
+* Get started with the detailed [BUnwarpJ user manual](/plugins/bunwarpj#user-manual)
+
+### [TrakEM2](/plugins/trakem2)
+
+A tool for morphological data mining, three-dimensional modeling and image stitching, **registration**, editing and annotation.
+
+{% include img src="trakem2-snap" width="500" %}
+
+* Registers floating image tiles to each other using SIFT and global optimization algorithms.
+* See the [TrakEM2 user manual section on registration](https://www.ini.uzh.ch/~acardona/trakem2_manual.html#registration)
+
+### [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices)
+
+A tool that takes a sequence of image slices stored in a folder and delivers a list of registered image slices
+
+{% include img src="rvs-scheme" width="500" %}
+
+* The plugin can perform 6 types of image registration techniques: Translation, Rigid (translation + rotation), Similarity (translation + rotation + isotropic scaling), Affine, Elastic (via [BUnwarpJ](/plugins/bunwarpj) with cubic B-splines), and Moving least squares
+* All models are aided by automatically extracted [SIFT features](/plugins/feature-extraction)
+
+### [Fijiyama](/plugins/fijiyama)
+
+A registration tool for 3D multimodal time-lapse imaging
+
+{% include img src="reg-present-1" width="500" %}
+
+* User-friendly, generic and versatile
+* Automatic 3D registration (two algorithms available)
+* Manual registration (using the [3D_Viewer](/plugins/3d-viewer))
+* Movie tutorials and example datasets
+* Settings automatically adjust based on your data
+* Transformations: linear or non-linear
+* Tested on specimens: human, vine trunk,
+* Tested on modalities: MRI, X-ray CT, Photograph
+* Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).
 
 ## Other pages and tools for Registration in ImageJ
 
@@ -160,4 +81,4 @@ Filter by the Registration category on the [list of extensions](/list-of-extensi
 
 # References
 
-[^1] {% include citation id='plugins/linear-stack-alignment-with-sift' %}
+{% include citation fn=1 id='plugins/linear-stack-alignment-with-sift' %}
