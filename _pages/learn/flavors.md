@@ -204,8 +204,6 @@ The first imaging program that {% include person id='rasband' %} developed, star
 
 Here is a timeline of software development related to ImageJ:
 
-{% comment %}{% include timeline title="Flavors of ImageJ" timeline=page.timeline-imagej initial='1987' %}{% endcomment %}
-
 ![](/media/software/timeline-history-of-imagej.png)
 
 ## Publications
