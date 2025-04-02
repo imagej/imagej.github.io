@@ -1,5 +1,8 @@
 ---
 title: SNT › Key Shortcuts
+excerpt: >-
+  These keyboard shortcuts are available
+  to control SNT behavior in various modes.
 nav-links: true
 nav-title: Hotkeys
 artifact: org.morphonets:SNT
@@ -14,7 +17,7 @@ Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically s
 
 {% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
 _Typically_, when {% include key keys='ctlcmd' %} is pressed, hotkeys are not intercepted by SNT. E.g., During a tracing session pressing {% include key key='N' %} triggers <u>N</u>o* in the interactive prompt while {% include key keys='ctlcmd|N' %} will trigger IJ's built-in command {% include bc path='File|New|image...'%}.
-<br><br>
+
 If you are not familiar with SNT commands the [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift|P' %}) is the fastest way to access actions and discover their respective shortcuts!
 {% endcapture %}
 {% include notice icon="info" content=text %}
