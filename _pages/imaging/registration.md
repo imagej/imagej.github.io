@@ -85,7 +85,7 @@ Here we summarize some of the Registration plugins in ImageJ.
         </ul>
       </td>
       <td>
-        <p><img src="/media/plugins/bunwarpj-scheme.png" width="500"></p>
+        <p><img src="/media/plugins/bunwarpj/scheme.png" width="500"></p>
       </td>
     </tr>
     <tr>
