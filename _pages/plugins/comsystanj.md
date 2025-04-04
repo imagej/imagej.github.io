@@ -28,13 +28,13 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Autocorrelation, FFT, Statistics
 
 ### Complexity analyses
-- Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot, Porta Guzik Ehler indices, Recurrence quantification analysis, Standard HRV measurements, Symbolic aggregation
+- Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot, Porta Guzik Ehler indices, Recurrence quantification analysis, Rescaled auto-density RAD, Standard HRV measurements, Symbolic aggregation
 
 ### Entropy analyses
 - Generalised entropies, Permutation entropy, Sample entropy
 
 ### Fractal analyses
-- Fragmentation dimension, Higuchi dimension, Hurst coefficient (HK, RS, SP), Hurst coefficient (PSD), Katz dimension, Petrosian dimension, RSE dimension (Roughness dimension), Sevcik dimension, Tug of war dimension, Walking divider dimension
+- Fragmentation dimension, Higuchi dimension, Hurst coefficient (HK, RS, SP), Hurst coefficient (PSD), Katz dimension, Petrosian dimension, RSE dimension, Sevcik dimension, Tug of war dimension, Walking divider dimension
 
 ## 2D images
 - Image opener, Image generator
