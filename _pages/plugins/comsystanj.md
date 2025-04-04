@@ -18,37 +18,37 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 ## 1D signals
 - Signal opener, Signal generator
 
-### Preprocessing
+### 1D Preprocessing
 - Cut out, Filter, Mathematics, Noise, Resampling, Surrogates
 
-### Detection
+### 1D Detection
 - Event detection, QRS peak detection (from file)
 
-### Linear analyses
+### 1D Linear analyses
 - Autocorrelation, FFT, Statistics
 
-### Complexity analyses
+### 1D Complexity analyses
 - Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot, Porta Guzik Ehler indices, Recurrence quantification analysis, Rescaled auto-density RAD, Standard HRV measurements, Symbolic aggregation
 
-### Entropy analyses
+### 1D Entropy analyses
 - Generalised entropies, Permutation entropy, Sample entropy
 
-### Fractal analyses
+### 1D Fractal analyses
 - Fragmentation dimension, Higuchi dimension, Hurst coefficient (HK, RS, SP), Hurst coefficient (PSD), Katz dimension, Petrosian dimension, RSE dimension, Sevcik dimension, Tug of war dimension, Walking divider dimension
 
 ## 2D images
 - Image opener, Image generator
 
-### Preprocessing
+### 2D Preprocessing
 - Auto crop borders, Filter, Histogram modification, Noise, Particles to stack, Segmentation - RGB relative, Surrogates
 
-### Complexity analyses
+### 2D Complexity analyses
 - Kolmogorov complexity and Logical depth
 
-### Entropy analyses
+### 2D Entropy analyses
 - Generalised entropies
 
-### Fractal analyses
+### 2D Fractal analyses
 - Box counting dimension, Correlation dimension, Fractal correlation dimension, Directional correlation dimension, FFT dimension, Link to FracLac, Fractal fragmentation indices, Generalised dimensions, Higuchi dimension 1D, Higuchi dimension 2D, Lacunarity, Mass radius dimension, Minkowski dimension, Perimeter area dimension, Pyramid dimension, Succolarity, Tug of war dimension, Walking divider dimension
   
 ## 3D Image volume
