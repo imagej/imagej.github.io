@@ -231,6 +231,15 @@ In addition, SNT also implements descriptors based on persistence landscapes, as
 
 Currently, _basic_ persistence homology descriptors can be computed using UI commands {% include bc path='Analysis|Persistence Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistence Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
 
+# Delineation Analysis
+
+Delineations allow measuring proportions of recontructions within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Some of the questions that delineation analyses can answer include:
+
+- Do branching patterns of neurons change along strata (cell layers)?
+- Do branches near a lesion site differ from branches further away from it?
+- Are there morphological differences across subregions of a neuron's receptive field?
+
+Delineations are described in [Walkthroughs › Delineation Analysis](/plugins/snt/walkthroughs#delineation-analysis).
 
 # Root Angle Analysis
 Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or rootof the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
