@@ -112,7 +112,7 @@ See [sciview](/plugins/sciview)'s {% include bc path='Help| '%}menu for a full l
 
 ### Legacy 3D Viewer
 
-The most important shortcuts for the [Legacy 3D viewer](/plugins/snt/walkthroughs#legacy-3d-viewer) are:
+The most important shortcuts for the [Legacy 3D viewer](/plugins/snt/walkthroughs#tracing-in-the-legacy-3d-viewer) are:
 
 | {% include key key='H' %} | Selects the <u>H</u>and (pan) tool |
 | {% include key key='W' %} | Selects the <u>W</u>and (tracing) tool |

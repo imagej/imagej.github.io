@@ -81,11 +81,17 @@ The extent to which the [convex hull](#convex-hull) approaches a rectangle (if 2
 ###### Convex hull: Centroid-root distance
 The distance between the root of a neuronal arbor and the centroid of its [convex hull](#convex-hull)
 
+###### Convex hull: Compactness
+The ratio between $$area^3/volume^2$$ of the 3D [convex hull](#convex-hull), normalized so that a sphere has a compactness value of 1. Defined in [Bribiesca E, 2008](https://doi.org/10.1016/j.patcog.2007.06.029). Not applicable to 2D convex hulls. Range of values: 0--1 (unitless)
+
+###### Convex hull: Eccentricity
+Defined as $$\sqrt{1 - \left(\frac{b}{a}\right)^2}$$, where $$a$$ and $$b$$ are the semi-major and semi-minor axes of the 2D [convex hull](#convex-hull). Not applicable to 3D Convex hulls. An eccentricity of 0 corresponds to a perfect circle. An eccentricity close to 1 indicates a highly elongated ellipse. Unitless
+
 ###### Convex hull: Elongation
-The [caliper (also known as Feret) diameter](https://en.wikipedia.org/wiki/Feret_diameter) of the [convex hull](#convex-hull)
+The [caliper (Feret) diameter](https://en.wikipedia.org/wiki/Feret_diameter) of the [convex hull](#convex-hull)
 
 ###### Convex hull: Roundness
-The extent to which the [convex hull](#convex-hull) approaches a circle (2D) or a sphere (3D). Range of values: 0--1 (unitless)
+The extent to which the [convex hull](#convex-hull) approaches a circle (i.e., circularity in 2D) or a sphere (i.e., sphericity in 3D). Range of values: 0--1 (unitless)
 
 ###### Convex hull: Size
 Either the area of the 2D polygon, or the volume of the 3D polyhedron defining the [convex hull](#convex-hull)

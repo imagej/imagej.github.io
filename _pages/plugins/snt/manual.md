@@ -483,6 +483,7 @@ The Legacy 3D Viewer is a functional tracing canvas and allows images to be trac
 
 This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/walkthroughs#spinevaricosity-analysis). The basic usage is as follows:
 
+<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" title="Delineations tab" />
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" title="Bookmarks tab" />
 
 - Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor's X, Y, Z, C, T coordinates
@@ -495,6 +496,13 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
 - Use {% include bc path='Import...' %} to load bookmars from either: 1) a CSV file, 2) Existing ROIs in ImageJ's ROI Manager, or 3) Existing ROIs in the overlay of the image being traced. Note that when loading an area ROI, the bookmark is registered at the ROI's centroid
 
 - Use {% include bc path='Export...' %} to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
+
+
+<span id="delineations"></span>
+<span id="delineations-manager"></span>
+
+## Delineations Tab
+This tab hosts the Delineations Manager, a utility that allows measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses are described in detail in [Walkthroughs › Delineation Analysis](/plugins/snt/walkthroughs#delineation-analysis).
 
 ## Status Bar
 The status bar at the bottom of the Main Dialog displays brief messages about ongoing operations. By default, the status bar reports the image title and the CT position being traced.
