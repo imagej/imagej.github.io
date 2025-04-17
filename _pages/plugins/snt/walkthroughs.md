@@ -464,7 +464,7 @@ You can use the _MouseLight dendrites_ demo dataset to follow the delineation tu
 {% include notice icon="info" content=ml-demo %}
 
 <div align="center">
-  <img  src="/media/plugins/snt/snt-delineation-analysis.png" title="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " width="650" />
+  <img  src="/media/plugins/snt/snt-delineation-analysis1.png" title="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " width="650" />
 </div>
 
 ## Creating Delineations from ROIs
