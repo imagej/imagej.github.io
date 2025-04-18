@@ -14,7 +14,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 {% capture text%}
 **This list is focused on default measurements available through SNT's GUI and does not include specialized metrics available via its scripting API. Thus, it only captures [a subset](#notes) of the full repertoire of SNT metrics.**
 <br><br>
-**For each metric SNT retrieves the descriptive statistics _Mix_, _Max_, _Mean_, _Standard Deviation_ (SD), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements. E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
+**For each metric SNT retrieves the descriptive statistics _Min_, _Max_, _Mean_, _Standard Deviation_ (SD), _Coefficient of variation_ (CV, i.e., the ratio of the standard deviation to the mean), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements. E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
 <br><br>
 Metrics ported from published literature include their associated publication in the definition.
 {% endcapture %}
@@ -375,7 +375,7 @@ Cartesian coordinates in the three-dimensional space
 
 - Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
 
-- Each of the 95+ metrics is represented by five statistical properties: minimum, maximum, mean, standard deviation and sum, resulting in a total of at least $$95\times 5$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- Each of the 95+ metrics is represented by seven statistical properties: minimum, maximum, mean, standard deviation (SD), coefficient of variation (CV, the ratio of the standard deviation to the mean), sum, and _N_, resulting in a total of at least $$95\times 7$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 
