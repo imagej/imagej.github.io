@@ -162,7 +162,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='rasband' %}</td>
       <td>Introduction to ImageJ</td>
       <td>
-        <a href="https://vimeo.com/140929691">video</a>
+        <a href="https://youtube.com/watch?v=MDyOIOUyiU8">video</a>
       </td>
     </tr>
     <tr>
@@ -170,7 +170,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='ctrueden' %}</td>
       <td>ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ</td>
       <td>
-        <a href="https://vimeo.com/140929687">video</a>, <a href="/presentations/2015-09-03-imagej2-and-fiji/">slides</a>
+        <a href="https://youtube.com/watch?v=hathImiGfP4">video</a>, <a href="/presentations/2015-09-03-imagej2-and-fiji/">slides</a>
       </td>
     </tr>
     <tr>
@@ -178,7 +178,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='marktsuchida' %}</td>
       <td>Microscope control and image acquisition with Micro-Manager</td>
       <td>
-        <a href="https://vimeo.com/140098816">video</a>
+        <a href="https://youtube.com/watch?v=XVfOomuR3Vc">video</a>
       </td>
     </tr>
     <tr>
@@ -186,7 +186,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='fjug' %}</td>
       <td>Getting stuff done – Software synergy with ImageJ + KNIME</td>
       <td>
-        <a href="https://vimeo.com/140098839">video</a>
+        <a href="https://youtube.com/watch?v=DZjO-G8aXJ8">video</a> (<a href="https://youtube.com/watch?v=x5ZxwBmTGpY">alt</a>)
       </td>
     </tr>
     <tr>
@@ -197,7 +197,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='omsai' %}</td>
       <td>Sharing the value of software freedom with non-programmers</td>
       <td>
-        <a href="https://vimeo.com/140098825">video</a>, <a href="/events/conference-2015/program#pariksheet-nanda---sharing-the-value-of-software-freedom-with-non-programmers">abstract</a>, <a href="http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf">transcript</a>
+        <a href="https://youtube.com/watch?v=vBF6Aubcxqg">video</a>, <a href="/events/conference-2015/program#pariksheet-nanda---sharing-the-value-of-software-freedom-with-non-programmers">abstract</a>, <a href="http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf">transcript</a>
       </td>
     </tr>
     <tr>
@@ -205,7 +205,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='tferr' %}</td>
       <td>Alternative approaches for neuronal morphometry</td>
       <td>
-        <a href="https://vimeo.com/140098832">video</a>, <a href="/events/conference-2015/program#tiago-ferreira---alternative-approaches-for-neuronal-morphometry">abstract</a>
+        <a href="https://youtube.com/watch?v=wBmF0DRiQB0">video</a>, <a href="/events/conference-2015/program#tiago-ferreira---alternative-approaches-for-neuronal-morphometry">abstract</a>
       </td>
     </tr>
     <tr>
@@ -213,7 +213,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='bogovicj' %}</td>
       <td>The Thin Plate Spline method for smooth non-rigid transformations</td>
       <td>
-        <a href="https://vimeo.com/140929688">video</a>, <a href="/events/conference-2015/program#john-bogovic---the-thin-plate-spline-method-for-smooth-non-rigid-transformations">abstract</a>, <a href="http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx">slides</a>
+        <a href="https://youtube.com/watch?v=3coLgYvbLXE">video</a>, <a href="/events/conference-2015/program#john-bogovic---the-thin-plate-spline-method-for-smooth-non-rigid-transformations">abstract</a>, <a href="http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx">slides</a>
       </td>
     </tr>
     <tr>
@@ -224,7 +224,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Anne Alerding</td>
       <td>Quantifying soybean stem tissues using common tools in ImageJ & Fiji</td>
       <td>
-        <a href="https://vimeo.com/140098824">video</a>, <a href="/events/conference-2015/program#anne-alerding---quantifying-soybean-stem-tissues-using-common-tools-in-imagej--fiji">abstract</a>
+        <a href="/events/conference-2015/program#anne-alerding---quantifying-soybean-stem-tissues-using-common-tools-in-imagej--fiji">abstract</a>
       </td>
     </tr>
     <tr>
@@ -232,7 +232,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='Fab14' %}</td>
       <td>Yet another ImageJ friend: Icy</td>
       <td>
-        <a href="https://vimeo.com/140929690">video</a>, <a href="/events/conference-2015/program#fabrice-de-chaumont---yet-another-imagej-friend-icy">abstract</a>
+        <a href="https://youtube.com/watch?v=hlgg5YNLqJ4">video</a>, <a href="/events/conference-2015/program#fabrice-de-chaumont---yet-another-imagej-friend-icy">abstract</a>
       </td>
     </tr>
     <tr>
@@ -240,7 +240,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Jesus Manuel Falagan</td>
       <td>Plugins to import, visualize, process & write astronomical FITS files</td>
       <td>
-        <a href="https://vimeo.com/140929695">video</a>, <a href="/events/conference-2015/program#jesus-manuel-falagan---plugins-to-import-visualize-process--write-astronomical-fits-files">abstract</a>
+        <a href="https://youtube.com/watch?v=wyx17_gZSM8">video</a>, <a href="/events/conference-2015/program#jesus-manuel-falagan---plugins-to-import-visualize-process--write-astronomical-fits-files">abstract</a>
       </td>
     </tr>
     <tr>
@@ -248,7 +248,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Bill Heeschen</td>
       <td>Quantitative characterization of cellular irregularities in extruded polystyrene foam using digital image processing and analysis</td>
       <td>
-        <a href="https://vimeo.com/140098843">video</a>, <a href="/events/conference-2015/program#bill-heeschen---quantitative-characterization-of-cellular-irregularities-in-extruded-polystyrene-foam-using-digital-image-processing-and-analysis">abstract</a>, <a href="http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_FoamPatternMacros.ijm">macro</a>,<br>
+        <a href="https://youtube.com/watch?v=QfxOSJZq2II">video</a>, <a href="/events/conference-2015/program#bill-heeschen---quantitative-characterization-of-cellular-irregularities-in-extruded-polystyrene-foam-using-digital-image-processing-and-analysis">abstract</a>, <a href="http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_FoamPatternMacros.ijm">macro</a>,<br>
         <a href="http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pdf">slides (PDF)</a>, <a href="http://conference.imagej.net/2015/bill-heeschen/Heeschen_2015ImageJConf_TalkSlides.pptx">slides (PPTX)</a>
       </td>
     </tr>
@@ -257,7 +257,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='hinerm' %}</td>
       <td>ImageJ+MATLAB: Reunited</td>
       <td>
-        <a href="https://vimeo.com/140929686">video</a>, <a href="/events/conference-2015/program#mark-hiner---imagejmatlab-reunited">abstract</a>, <a href="/presentations/2015-09-03-imagej-matlab/">slides</a>
+        <a href="https://youtube.com/watch?v=ipxWgLXkNxs">video</a>, <a href="/events/conference-2015/program#mark-hiner---imagejmatlab-reunited">abstract</a>, <a href="/presentations/2015-09-03-imagej-matlab/">slides</a>
       </td>
     </tr>
     <tr>
@@ -265,7 +265,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Irene Landrum</td>
       <td>SWAMP – a no-cost, open, high-performance computing platform for continuous software assurance</td>
       <td>
-        <a href="https://vimeo.com/140098818">video</a>, <a href="/events/conference-2015/program#irene-landrum---swamp--a-no-cost-open-high-performance-computing-platform-for-continuous-software-assurance">abstract</a>, <a href="http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx">slides</a>
+        <a href="https://youtube.com/watch?v=a9lfME_WCrc">video</a>, <a href="/events/conference-2015/program#irene-landrum---swamp--a-no-cost-open-high-performance-computing-platform-for-continuous-software-assurance">abstract</a>, <a href="http://conference.imagej.net/2015/irene-landrum/SWAMP%20%20Presentation%202015Aug25.pptx">slides</a>
       </td>
     </tr>
     <tr>
@@ -273,7 +273,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='melissalinkert' %}</td>
       <td>OME Bio-Formats: 10 years of proprietary image data</td>
       <td>
-        <a href="https://vimeo.com/140929689">video</a>, <a href="/events/conference-2015/program#melissa-linkert---ome-bio-formats-10-years-of-proprietary-image-data">abstract</a>, <a href="http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/">slides</a>
+        <a href="https://youtube.com/watch?v=8eSrmL6dPic">video</a>, <a href="/events/conference-2015/program#melissa-linkert---ome-bio-formats-10-years-of-proprietary-image-data">abstract</a>, <a href="http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/">slides</a>
       </td>
     </tr>
     <tr>
@@ -281,7 +281,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Michael Majurski</td>
       <td>Accurate and scalable Microscopy Image Stitching Tool (MIST)</td>
       <td>
-        <a href="https://vimeo.com/140929697">video</a>, <a href="/events/conference-2015/program#michael-majurski---accurate-and-scalable-microscopy-image-stitching-tool-mist">abstract</a>
+        <a href="https://youtube.com/watch?v=VJ1zdAdN4ko">video</a>, <a href="/events/conference-2015/program#michael-majurski---accurate-and-scalable-microscopy-image-stitching-tool-mist">abstract</a>
       </td>
     </tr>
     <tr>
@@ -289,7 +289,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='bnanes' %}</td>
       <td>Slide Set: Simplified batch processing with ImageJ2</td>
       <td>
-        <a href="https://vimeo.com/140098828">video</a>, <a href="/events/conference-2015/program#benjamin-nanes---slide-set-simplified-batch-processing-with-imagej2">abstract</a>
+        <a href="https://youtube.com/watch?v=0nVF3PR1kdQ">video</a>, <a href="/events/conference-2015/program#benjamin-nanes---slide-set-simplified-batch-processing-with-imagej2">abstract</a>
       </td>
     </tr>
     <tr>
@@ -297,7 +297,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='bnorthan' %}</td>
       <td>Flexible Deconvolution using ImageJ Ops</td>
       <td>
-        <a href="https://vimeo.com/140098821">video</a>, <a href="/events/conference-2015/program#brian-northan---flexible-deconvolution-using-imagej-ops">abstract</a>, <a href="/presentations/2015-09-04-imagej2-deconvolution/">slides</a>
+        <a href="https://youtube.com/watch?v=BKOCfBWR3oQ">video</a>, <a href="/events/conference-2015/program#brian-northan---flexible-deconvolution-using-imagej-ops">abstract</a>, <a href="/presentations/2015-09-04-imagej2-deconvolution/">slides</a>
       </td>
     </tr>
     <tr>
@@ -305,7 +305,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='axtimwalde' %}</td>
       <td>Seamless stitching without blending</td>
       <td>
-        <a href="https://vimeo.com/140098840">video</a>, <a href="/events/conference-2015/program#stephan-saalfeld---seamless-stitching-without-blending">abstract</a>
+        <a href="https://youtube.com/watch?v=0-A_GXyPRkw">video</a>, <a href="/events/conference-2015/program#stephan-saalfeld---seamless-stitching-without-blending">abstract</a>
       </td>
     </tr>
     <tr>
@@ -313,7 +313,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Raghavender Sahdev</td>
       <td>TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy</td>
       <td>
-        <a href="https://vimeo.com/140098822">video</a>, <a href="/events/conference-2015/program#raghavender-sahdev---timelapsereg--an-imagej-plugin-for-drift-correction-of-video-sequence-in-time-lapse-microscopy-1">abstract</a>
+        <a href="https://youtube.com/watch?v=pd293ykk4W8">video</a>, <a href="/events/conference-2015/program#raghavender-sahdev---timelapsereg--an-imagej-plugin-for-drift-correction-of-video-sequence-in-time-lapse-microscopy-1">abstract</a>
       </td>
     </tr>
     <tr>
@@ -321,7 +321,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='bene51' %}</td>
       <td>Real-time multi-view deconvolution of time-lapse data on the GPU</td>
       <td>
-        <a href="https://vimeo.com/140098826">video</a>, <a href="/events/conference-2015/program#benjamin-schmid---real-time-multi-view-deconvolution-of-time-lapse-data-on-the-gpu">abstract</a>
+        <a href="https://youtube.com/watch?v=DUOH_WKOFcw">video</a>, <a href="/events/conference-2015/program#benjamin-schmid---real-time-multi-view-deconvolution-of-time-lapse-data-on-the-gpu">abstract</a>
       </td>
     </tr>
     <tr>
@@ -329,7 +329,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Amitabh Verma</td>
       <td>Acquisition, processing & re-processing using OpenPolScope plugin for Micro-Manager</td>
       <td>
-        <a href="https://vimeo.com/140098844">video</a>, <a href="/events/conference-2015/program#amitabh-verma---acquisition-processing--re-processing-using-openpolscope-plugin-for-micro-manager">abstract</a>
+        <a href="https://youtube.com/watch?v=9vBUmwcnZVY">video</a>, <a href="/events/conference-2015/program#amitabh-verma---acquisition-processing--re-processing-using-openpolscope-plugin-for-micro-manager">abstract</a>
       </td>
     </tr>
     <tr>
@@ -337,7 +337,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='thorstenwagner' %}</td>
       <td>NanoTrackJ – An open-source multi-modal size characterization tool for nanoparticle tracking analysis based on ImageJ</td>
       <td>
-        <a href="https://vimeo.com/140098848">video</a>, <a href="/events/conference-2015/program#thorsten-wagner---nanotrackj--an-open-source-multi-modal-size-characterization-tool-for-nanoparticle-tracking-analysis-based-on-imagej">abstract</a>, <a href="https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf">slides</a>
+        <a href="https://youtube.com/watch?v=EqR8uhEoR38">video</a>, <a href="/events/conference-2015/program#thorsten-wagner---nanotrackj--an-open-source-multi-modal-size-characterization-tool-for-nanoparticle-tracking-analysis-based-on-imagej">abstract</a>, <a href="https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf">slides</a>
       </td>
     </tr>
     <tr>
@@ -345,7 +345,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Petr Walczysko</td>
       <td>The Open Microscopy Environment (OME)</td>
       <td>
-        <a href="https://vimeo.com/140098837">video</a>, <a href="/events/conference-2015/program#petr-walczysko---the-open-microscopy-environment-ome">abstract</a>
+        <a href="https://youtube.com/watch?v=YV6e97Bjpzc">video</a>, <a href="/events/conference-2015/program#petr-walczysko---the-open-microscopy-environment-ome">abstract</a>
       </td>
     </tr>
     <tr>
@@ -353,7 +353,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='jaywarrick' %}</td>
       <td>JEX – a platform for data management and batch processing with standard tools</td>
       <td>
-        <a href="https://vimeo.com/140098819">video</a>, <a href="/events/conference-2015/program#jay-warrick---jex--a-platform-for-data-management-and-batch-processing-with-standard-tools">abstract</a>
+        <a href="https://youtube.com/watch?v=dJoRGqn3JHY">video</a>, <a href="/events/conference-2015/program#jay-warrick---jex--a-platform-for-data-management-and-batch-processing-with-standard-tools">abstract</a>
       </td>
     </tr>
     <tr>
@@ -361,7 +361,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Aryeh Weiss</td>
       <td>Automated processing of telomeres with ImageJ and R</td>
       <td>
-        <a href="https://vimeo.com/140929694">video</a>, <a href="/events/conference-2015/program#aryeh-weiss---automated-processing-of-telomeres-with-imagej-and-r">abstract</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt">slides</a>
+        <a href="https://youtube.com/watch?v=46CcwAXpN-g">video</a>, <a href="/events/conference-2015/program#aryeh-weiss---automated-processing-of-telomeres-with-imagej-and-r">abstract</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/ij2015telomere-A.ppt">slides</a>
       </td>
     </tr>
     <tr>
@@ -508,7 +508,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>Aryeh Weiss</td>
       <td>An introduction to digital image processing</td>
       <td>
-        <a href="https://vimeo.com/140929692">video</a>, <a href="/events/conference-2015/program#aryeh-weiss12---an-introduction-to-digital-image-processing">abstract</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt">slides</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip">data</a>
+        <a href="https://youtube.com/watch?v=m6Wvtr5y5Jk">video</a>, <a href="/events/conference-2015/program#aryeh-weiss12---an-introduction-to-digital-image-processing">abstract</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/IntroImageProcessingB.ppt">slides</a>, <a href="http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip">data</a>
       </td>
     </tr>
     <tr>
@@ -516,7 +516,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='biovoxxel' %}</td>
       <td>Image processing, feature extraction and analysis using the BioVoxxel Toolbox</td>
       <td>
-        <a href="https://vimeo.com/140929696">video</a>, <a href="/events/conference-2015/program#jan-brocher---image-processing-feature-extraction-and-analysis-using-the-biovoxxel-toolbox">abstract</a>, <a href="https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/">slides</a>
+        <a href="https://youtube.com/watch?v=gpM7DFI6A_Y">video</a>, <a href="/events/conference-2015/program#jan-brocher---image-processing-feature-extraction-and-analysis-using-the-biovoxxel-toolbox">abstract</a>, <a href="https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/">slides</a>
       </td>
     </tr>
     <tr>
@@ -524,7 +524,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='tferr' %}</td>
       <td>Scripting with BAR</td>
       <td>
-        <a href="https://vimeo.com/140099767">video</a>, <a href="/events/conference-2015/program#tiago-ferreira---scripting-with-bar">abstract</a>
+        <a href="https://youtube.com/watch?v=lW3R5-cqnss">video</a>, <a href="/events/conference-2015/program#tiago-ferreira---scripting-with-bar">abstract</a>
       </td>
     </tr>
     <tr>
@@ -533,7 +533,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       Petr Walczysko</td>
       <td>The OMERO platform for management of microscopy data and beyond</td>
       <td>
-        <a href="https://vimeo.com/140099766">video</a>, <a href="/events/conference-2015/program#dominik-lindner-and-petr-walczysko---the-omero-platform-for-management-of-microscopy-data-and-beyond">abstract</a>
+        <a href="https://youtube.com/watch?v=7TVTa77XTuk">video</a>, <a href="/events/conference-2015/program#dominik-lindner-and-petr-walczysko---the-omero-platform-for-management-of-microscopy-data-and-beyond">abstract</a>
       </td>
     </tr>
     <tr>
@@ -542,7 +542,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       Stephane Dallongeville</td>
       <td>Hands on Icy !</td>
       <td>
-        <a href="https://vimeo.com/140929698">video</a>, <a href="/events/conference-2015/program#fabrice-de-chaumont-and-stephane-dallongeville---hands-on-icy-">abstract</a>
+        <a href="https://youtube.com/watch?v=fcElVIKBgj4">video</a>, <a href="/events/conference-2015/program#fabrice-de-chaumont-and-stephane-dallongeville---hands-on-icy-">abstract</a>
       </td>
     </tr>
     <tr>
@@ -550,7 +550,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='thewtex' %}</td>
       <td>SimpleITK</td>
       <td>
-        <a href="https://vimeo.com/140099763">video</a>, <a href="/events/conference-2015/program#matt-mccormick---simpleitk">abstract</a>, <a href="http://bit.ly/1hD5FZF">interactive</a>
+        <a href="https://youtube.com/watch?v=91HSOn-F5yQ">video</a>, <a href="/events/conference-2015/program#matt-mccormick---simpleitk">abstract</a>, <a href="http://bit.ly/1hD5FZF">interactive</a>
       </td>
     </tr>
     <tr>
@@ -559,7 +559,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       {% include person id='bnorthan' %}</td>
       <td>ImageJ2 scripts: Parameters + ImageJ Ops</td>
       <td>
-        <a href="https://vimeo.com/140098817">video 1</a>, <a href="https://vimeo.com/140098835">video 2</a>, <a href="/events/conference-2015/program#curtis-rueden-and-brian-northan---imagej2-scripts-parameters--imagej-ops">abstract</a>, <a href="/presentations/2015-09-04-imagej2-scripting/">slides</a>
+        <a href="https://youtube.com/watch?v=ZsCaNfl-Ods">video 1</a> (<a href="https://www.youtube.com/watch?v=AZNlz0TCWD0">alt</a>), <a href="https://youtube.com/watch?v=G_kLH0bpgP0">video 2</a> (<a href="https://youtube.com/watch?v=B3qRDmh5E-4">alt</a>), <a href="/events/conference-2015/program#curtis-rueden-and-brian-northan---imagej2-scripts-parameters--imagej-ops">abstract</a>, <a href="/presentations/2015-09-04-imagej2-scripting/">slides</a>
       </td>
     </tr>
     <tr>
@@ -567,7 +567,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='Bio7' %}</td>
       <td>Statistical image analysis and reproducible reports with ImageJ and R</td>
       <td>
-        <a href="https://vimeo.com/140098838">video</a>, <a href="/events/conference-2015/program#marcel-austenfeld---bio7--statistical-image-analysis-and-reproducible-reports-with-imagej-and-r">abstract</a>
+        <a href="/events/conference-2015/program#marcel-austenfeld---bio7--statistical-image-analysis-and-reproducible-reports-with-imagej-and-r">abstract</a>
       </td>
     </tr>
     <tr>
