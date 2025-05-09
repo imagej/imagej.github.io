@@ -22,9 +22,9 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 4. Segmented nuclei and foci are visualized as overlays on the original images for easy inspection. If desired, foci detection settings (threshold bias, min/max size) can be adapted before processing all input images. A colocalization map is also created when two channels are measured.
 
 ## Installation / Requirements
-Download the [latest release of `Foci_Analyzer.ijm`](https://github.com/BioImaging-NKI/Foci-analyzer/releases/) (in Assets) into a sensible folder. 
 
-► [Activate](https://imagej.net/update-sites/following) the following Fiji update sites (in the menu bar, via Help -> Update...):
+[Activate](https://imagej.net/update-sites/following) the following Fiji update sites (in the menu bar, via Help -> Update...):
+- Foci-Analyzer
 - 3D ImageJ Suite
 - CLIJ
 - CLIJ2
@@ -32,13 +32,10 @@ Download the [latest release of `Foci_Analyzer.ijm`](https://github.com/BioImagi
 - CLIJx-assistent-extensions
 - CSBDeep
 - IJPB-plugins
-- SCF MPI CBG
 - StarDist
 - (TensorFlow) Due to a recent Fiji update, StarDist [may require the TensorFlow Update Site](https://forum.image.sc/t/stardist-error-since-update/107729) to function properly.
 
-► To run the script, you have two options:
-1. Drag&drop the `.ijm` file onto the Fiji window. This will open the file in the editor. Click 'Run' in the bottom left.
-2. Copy the `.ijm` file to `<myPath>\Fiji.app\Plugins\Macros` and restart Fiji. It will now appear in the menu bar under Plugins > Macros.
+Run Foci Analyzer from the Fiji menu: Plugins -> Foci Analyzer -> Foci Analyzer.
 
 In case you also want to use Cellpose segmentation you additionally need:
 - A working Cellpose 2.0 environment in Python (conda or venv)
