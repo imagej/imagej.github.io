@@ -1,15 +1,14 @@
 # Foci-analyzer
 
 ImageJ macro for the analysis of foci (e.g. DNA damage) in nuclei (or cells). Works on 2D/3D fluorescence images, including multiseries files, as long as all series have the same dimensions.
-The macro doesn't work on timelapse images (yet). A (slightly tedious) workaround is splitting your timepoints first. This option ~~may be included in a future version~~ will be supported in version 2.0 (to be released in May 2025).
+Timelapse images are split into separate timepoints and processed individually.
 
 Author: Bram van den Broek, The Netherlands Cancer Institute (b.vd.broek@nki.nl or bioimaging@nki.nl). @bramvdbroek on [image.sc](https://forum.image.sc/).
 
 ![image](https://user-images.githubusercontent.com/68109112/180581530-dd326026-cc74-4ce1-8d97-14518bfd4d73.png)
 
 ## Workflow summary
-1. Nuclei are segmented (in a 2D projection) using the pre-trained deep learning network [StarDist](https://imagej.net/plugins/stardist). Alternatively, classic thresholding + watershedding can be used (though no parameters can be changed). As a third option, the deep learning network [Cellpose](https://github.com/MouseLand/cellpose) can be used to segment whole cells, thanks to the [Cellpose wrapper for Fiji](https://github.com/BIOP/ijl-utilities-wrappers) by BIOP.[^1]
-[^1]: Currently, Cellpose is run using the 2D 'cyto' model on a single channel, with most options set to the defaults. Look for `run("Cellpose Advanced")` in the code and change parameters as seen fit.
+1. Nuclei are segmented using the pre-trained deep learning network [StarDist](https://imagej.net/plugins/stardist) (2D / 2D projection). Alternatively, the deep learning network [Cellpose](https://github.com/MouseLand/cellpose) can be used to segment nuclei or whole cells (2D, 2.5D or 3D), thanks to the [Cellpose wrapper for Fiji](https://github.com/BIOP/ijl-utilities-wrappers) by BIOP. Alternatively, classic thresholding + watershedding can be used (though no parameters can be changed). 
 
 2. Foci are detected in each nucleus in 2D or 3D. After Difference of Gaussians background subtraction, local maxima are detected and used as seeds for [MorpholibJ](https://imagej.net/plugins/morpholibj)'s [marker-controlled watershed](https://imagej.net/plugins/marker-controlled-watershed) (executed on the GPU using [CLIJ2/CLIJx](https://clij.github.io/)). Additionally, AreaMaxima local maxima detection can be used as detection method.
 Thresholds are automatically calculated per image as 3 times the median of the standard deviations of the (outlier-removed) foci signal in the nuclei, and can be adapted using the threshold bias sliders.
@@ -35,15 +34,17 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 - StarDist
 - (TensorFlow) Due to a recent Fiji update, StarDist [may require the TensorFlow Update Site](https://forum.image.sc/t/stardist-error-since-update/107729) to function properly.
 
-Run Foci Analyzer from the Fiji menu: Plugins -> Foci Analyzer -> Foci Analyzer.
+Run Foci Analyzer from the Fiji menu: `Plugins -> Foci Analyzer -> Foci Analyzer`.
+`Combine result files` can be used to pool output `.tsv` files into a single file/table.
 
 In case you also want to use Cellpose segmentation you additionally need:
-- A working Cellpose 2.0 environment in Python (conda or venv)
+- A working Cellpose (2.0 or higher) environment in Python (conda or venv)
 - Activated PTBIOP update site, with proper settings. See https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose
 
-The macro [`Merge_result_files_1.1.ijm`](https://github.com/BioImaging-NKI/Foci-analyzer/releases/download/v1.4/Merge_result_files_1.1.ijm) can be used to pool output `.tsv` files into a single file.
 
 ## Usage manual
+
+**NOTE** This documentation is created for an older version and not fully complete. Most notably, it is missing 3D nuclei Cellpose segmentation and colocalization descriptions. Updates are coming soon!
 
 The macro starts with a large dialog containing all options and parameters (click to enlarge):
 The dialog has several sections that are discussed below. All settings in this dialog will be remembered after you click `OK`.
