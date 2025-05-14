@@ -6,7 +6,7 @@ title: Fiji Downloads
 
 {% include fiji/download-links %}
 
-# System requirements
+## System requirements
 
 Fiji is supported on the following systems:
 
@@ -16,7 +16,7 @@ Fiji is supported on the following systems:
 
 However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime is available (Solaris, Raspbian, etc.).
 
-# Installation
+## Installation
 
 {% include warning/avoid-program-files %}
 
@@ -30,26 +30,26 @@ Fiji is distributed as a
 That means that you do not have to run an installer; just download, unpack and
 start it.
 
-# Troubleshooting
+## Troubleshooting
 
 -   Many common questions are answered on the [FAQ](/learn/faq).
 -   If you encounter bugs, please see the [Getting Help](/discuss) page.
 
-# Source code
+## Source code
 
 See the [source code](/develop/source) page for details on obtaining the Fiji source code.
 
-# Other downloads
+## Other downloads
 
-## Archive
+### Archive
 
-You can download previous Fiji builds by date stamp from the [archive](https://downloads.imagej.net/fiji/archive/).
+You can download previous Fiji builds by datestamp from the [archive](https://downloads.imagej.net/fiji/archive/).
 
-## Life-Line Fiji versions
+### Life-Line Fiji versions
 
 This sections offers older downloads of Fiji, preserved just prior to introducing major changes. The idea is that if something goes horribly wrong, you can fall back to a stable version.
 
-### Java 8
+#### Java 8
 
 Here are Life-Line versions of Fiji created after the switch to Java 8.
 
@@ -100,7 +100,7 @@ Here are Life-Line versions of Fiji created after the switch to Java 8.
 </table>
 {:/}
 
-### Java 6
+#### Java 6
 
 Here are Life-Line versions from before Fiji switched to Java 8.
 
@@ -233,6 +233,6 @@ Here are Life-Line versions from before Fiji switched to Java 8.
 </table>
 {:/}
 
-## See also
+### See also
 
 -   [https://downloads.imagej.net/fiji/](https://downloads.imagej.net/fiji/) for early versions of [Fiji](/software/fiji), and other miscellany.
