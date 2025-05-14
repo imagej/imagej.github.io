@@ -47,7 +47,10 @@ See the [source code](/develop/source) page for details on obtaining the Fiji so
 
 ### Archive
 
-You can download previous Fiji builds by datestamp from the [archive](https://downloads.imagej.net/fiji/archive/).
+You can download previous Fiji builds by datestamp from the archive:
+* [Fiji-Latest](https://downloads.imagej.net/fiji/archive/latest/).
+* [Fiji-Stable](https://downloads.imagej.net/fiji/archive/stable/).
+* [pre-2025 builds](https://downloads.imagej.net/fiji/archive/).
 
 ### Life-Line Fiji versions
 
