@@ -5,6 +5,7 @@ table.download {
   font-size: 1rem;
   width: auto;
   display: inline-block;
+  margin-right: 1em;
   vertical-align: top;
 }
 table.download tr.header th {
