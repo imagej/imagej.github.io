@@ -2,7 +2,7 @@
 title: Foci Analyzer
 categories: [Analysis]
 ---
-{% include github org='BioImaging-NKI' repo='Foci-analyzer' branch='master' path='README.md' %}
+{%- assign github            = page.github            -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
 ImageJ macro for the analysis of foci (e.g. DNA damage) in nuclei (or cells). Works on 2D/3D fluorescence images, including multiseries files, as long as all series have the same dimensions.
