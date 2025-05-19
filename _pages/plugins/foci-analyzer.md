@@ -1,12 +1,9 @@
 ---
 title: Foci Analyzer
 categories: [Analysis]
-website: "https://github.com/BioImaging-NKI/Foci-analyzer"
-update-site: "StarDist"
-team-founders: ['@BioImaging-NKI', '@bvandenbroek']
-team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
-source-url: https://github.com/BioImaging-NKI/Foci-analyzer
 ---
+{% include github org='BioImaging-NKI' repo='Foci-analyzer' branch='master' path='README.md' %}
+{%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
 ImageJ macro for the analysis of foci (e.g. DNA damage) in nuclei (or cells). Works on 2D/3D fluorescence images, including multiseries files, as long as all series have the same dimensions.
 Timelapse images are split into separate timepoints and processed individually.
