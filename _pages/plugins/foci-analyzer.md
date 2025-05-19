@@ -1,4 +1,7 @@
-# Foci-analyzer
+---
+title: Foci Analyzer
+categories: [Analysis]
+---
 
 ImageJ macro for the analysis of foci (e.g. DNA damage) in nuclei (or cells). Works on 2D/3D fluorescence images, including multiseries files, as long as all series have the same dimensions.
 Timelapse images are split into separate timepoints and processed individually.
@@ -8,6 +11,7 @@ Author: Bram van den Broek, The Netherlands Cancer Institute (b.vd.broek@nki.nl 
 ![image](https://user-images.githubusercontent.com/68109112/180581530-dd326026-cc74-4ce1-8d97-14518bfd4d73.png)
 
 ## Workflow summary
+
 1. Nuclei are segmented using the pre-trained deep learning network [StarDist](https://imagej.net/plugins/stardist) (2D / 2D projection). Alternatively, the deep learning network [Cellpose](https://github.com/MouseLand/cellpose) can be used to segment nuclei or whole cells (2D, 2.5D or 3D), thanks to the [Cellpose wrapper for Fiji](https://github.com/BIOP/ijl-utilities-wrappers) by BIOP. Alternatively, classic thresholding + watershedding can be used (though no parameters can be changed). 
 
 2. Foci are detected in each nucleus in 2D or 3D. After Difference of Gaussians background subtraction, local maxima are detected and used as seeds for [MorpholibJ](https://imagej.net/plugins/morpholibj)'s [marker-controlled watershed](https://imagej.net/plugins/marker-controlled-watershed) (executed on the GPU using [CLIJ2/CLIJx](https://clij.github.io/)). Additionally, AreaMaxima local maxima detection can be used as detection method.
