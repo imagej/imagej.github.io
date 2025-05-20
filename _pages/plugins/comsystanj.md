@@ -19,7 +19,7 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Signal opener, Signal generator
 
 ### 1D Preprocessing
-- Cut out, Filter, Mathematics, Noise, Resampling, Surrogates
+- Cut out, Filter, Mathematics, Noise, Outliers, Resampling, Surrogates
 
 ### 1D Detection
 - Event detection, QRS peak detection (from file)
