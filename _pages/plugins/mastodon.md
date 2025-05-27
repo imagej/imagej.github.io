@@ -2,7 +2,7 @@
 title: Mastodon
 description: Mastodon is a large-scale tracking and track-editing framework for large, multi-view images, such as the ones that are typically generated in the domain Development Biology or Stem-Cell Biology or Cell Biology.
 categories: [Segmentation,Tracking]
-artifact: org.mastodon.mamut:WindowManager
+artifact: org.mastodon:mastodon
 ---
 
 *Mastodon is a large-scale tracking and track-editing framework for large, multi-view images, such as the ones that are typically generated in the domain Development Biology or Stem-Cell Biology or Cell Biology.*
