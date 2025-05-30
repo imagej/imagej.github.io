@@ -725,3 +725,7 @@ before the `exec` call. (since ImageJ 1.52u38)
 # Further documentation
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.net/ij/developer/index.html).
+
+# Tutorial
+
+For a step-by-step tutorial on building a macro to automate batch processing, see [here](../tutorials/batch-processing-with-ij-macro.md).
