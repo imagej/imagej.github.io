@@ -10,3 +10,11 @@ This tutorial demonstrates how to
 2. Edit the output from the macro recorder so that it can be run on any open image
 3. Enclose the code from step 2 inside a loop so that it runs on multiple images
 4. Add a dialog so that a user can modify the parameters to the macro prior to execution
+
+# Record Commands with the Macro Recorder
+
+# Edit the Output from the Macro Recorder
+
+# Create a Loop to Run on Multiple Images
+
+# Create a Dialog to Obtain User Input
