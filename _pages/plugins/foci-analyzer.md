@@ -2,6 +2,10 @@
 title: Foci Analyzer
 categories: [Analysis]
 icon: https://github.com/user-attachments/assets/299e5a33-bd3d-4592-aad3-aa18681ecc1b
+website: "https://github.com/BioImaging-NKI/Foci-analyzer"
+update-site: "foci-analyzer"
+team-founders: ['@BioImaging-NKI', '@bvandenbroek']
+team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
 ---
 {%- assign github            = page.github            -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
