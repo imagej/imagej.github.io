@@ -17,7 +17,7 @@ team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
 ImageJ macro for the analysis of foci (e.g. DNA damage) in nuclei (or cells). Works on 2D/3D fluorescence images, including multiseries files, as long as all series have the same dimensions.
 Timelapse images are split into separate timepoints and processed individually.
 
-Author: Bram van den Broek, The Netherlands Cancer Institute (b.vd.broek@nki.nl or bioimaging@nki.nl). @bramvdbroek on [image.sc](https://forum.image.sc/).
+Author: Bram van den Broek, The Netherlands Cancer Institute, Amsterdam. For questions please use the [image.sc forum](https://forum.image.sc/) with tag @bramvdbroek.
 
 ![image](https://user-images.githubusercontent.com/68109112/180581530-dd326026-cc74-4ce1-8d97-14518bfd4d73.png)
 
@@ -104,10 +104,14 @@ The dialog has several sections that are discussed below. All settings in this d
 ### Nuclei/cell segmentation settings
 
 - _Nuclei/cell segmentation method_ :
-  - *Stardist nuclei segmentation* (default) uses the pretrained convolutional neural network [StarDist](https://github.com/stardist/stardist#readme) to recognize cell nuclei in fluoresence microscopy images. In general this method works very well on a large variety of samples.
-  - *Cellpose cytoplasm segmentation* uses the deep learning network [Cellpose](https://github.com/MouseLand/cellpose#--cellpose--) to recognize whole cells or nuclei. Use this option if you want to measure foci in entire cells, or if you prefer Cellpose nuclei segmentation over StarDist. Cellpose requires additional installations (see [Installation / Requirements](https://github.com/BioImaging-NKI/Foci-analyzer/edit/main/README.md#installation--requirements)).
-  - _Classic nuclei segmentation_ allows the user to segment nuclei using manual/automatic thresholding is provided for legacy reasons. The method is almost always outperformed by the two other methods.
+  - *Stardist nuclei segmentation 2D (or on 2D projection)* (default) uses the pretrained convolutional neural network [StarDist](https://github.com/stardist/stardist#readme) to recognize cell nuclei in fluoresence microscopy images. In general this method works very well on a large variety of samples.
+  - *Cellpose segmentation 2D (or on 2D projection)* uses the deep learning network [Cellpose](https://github.com/MouseLand/cellpose#--cellpose--) to recognize whole cells or nuclei. Use this option if you want to measure foci in entire cells, or if you prefer Cellpose nuclei segmentation over StarDist. Cellpose requires additional installations (see [Installation / Requirements](https://github.com/BioImaging-NKI/Foci-analyzer/edit/main/README.md#installation--requirements)).
+  - *Cellpose segmentation 3D*: If this option is chosen a new dialog pops up with extra settings. These are the most important parameters for 3D segmentation. More parameters can be added in the 'Additional Cellpose parameters' field. The `Help` button takes you to the [Cellpose CLI](https://cellpose.readthedocs.io/en/latest/cli.html) with explanations of all parameters.
+![image](https://github.com/user-attachments/assets/46199403-13c0-4082-9767-af73519effcf)
 
+  - *Classic nuclei segmentation* allows the user to segment nuclei using manual/automatic thresholding is provided for legacy reasons. The method is almost always outperformed by the two other methods.
+  - *Load ROIs from file*: ImageJ ROI `.zip` files can be loaded instead of performing segmentation. This option is used in the (near future) QuPath-Fiji workflow. ROI files should have the same name as the input images without extensions, followed by '_ROIs.zip'.
+  - *Load label images* allows loading a labelmap, if the segmentation has been done by external programs, or to quickly re-run files with the same segmentation. Label image files should be present in another folder and have the exact same name as the input images.
 - _Stardist nuclei rescaling factor [1-n], 0 for automatic, 1 for no rescaling_ : Stardist is trained on medium resolution images, and generally performs well on images with pixel sizes around 0.2-0.5 µm. For images with much smaller pixel size StarDist tends to 'oversegment' nuclei. Set to `0` for automatic rescaling the nuclei to an optimal pixel size of 0.25 µm, or put any other number for manual control of the rescaling. N.B. If the pixel unit is not µm, no rescaling is performed.
 This option only affects the nuclei segmentation; it is different from the previously mentioned 'XY binning' parameter, which also changes the pixel size of the foci channels. (default: 0)
 
@@ -165,10 +169,17 @@ Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be
 
 - _Debug mode (show intermediate images)_ : Used for development and bug fixing: checking this option will trigger displaying many intermediate results during the processing. It will also slow down the analysis.
 
-## Foci detection optimization 
-When the option _Preview foci detection (for parameters fine-tuning)?_ is active, a preview image of the detected foci will be shown during process. A dialog appears where foci detection parameters can be adjusted:
 
-<img src="https://github.com/user-attachments/assets/aa8a7f3c-bf86-40bd-a598-32b3d9b34695" width="800">
+## Foci detection optimization 
+When the option _Preview foci detection (for parameters fine-tuning)?_ is checked, a preview image of the detected foci will be shown during processing. A dialog appears where foci detection parameters can be adjusted (see [foci detection settings](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#foci-detection-settings) for explanations):
+
+![image](https://github.com/user-attachments/assets/7ddc5514-13c5-41cc-9ca1-80a2ce457328)
+
+Under `Action` there are four options:
+- *Recalculate with these settings*: re-run the foci detection with the current parameters. The segmentation remains the same. (default)
+- *Done optimizing | Process and optimize the next image*: Finishes the analysis for the current image and shows the dialog again for the next image.
+- *Done optimizing | Process all other images with these settings (calculate thresholds for each image)*: Performs the analysis on all subsequent images with the current settings. Foci threshold values are estimated and calculated for every image. The absolute threshold value depends on the image characteristics (see [foci detection settings](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#foci-detection-settings)) and can vary (slightly) from image to image. 
+- *Done optimizing | Process all other images with these settings (fix current threshold levels)*: Performs the analysis on all subsequent images with the current settings. The calculated absolute foci threshold value for _this_ image is used for all other images. This setting is useful when processing separate tiles of a larger image.
 
 After changing the settings, clicking `OK` will detect the foci on the same nuclei with the updated parameters and redisplay them in the preview image. Channel display settings and zoom are remembered in between optimization steps.
 The preview image shows an ImageJ hyperstack that, besides the z-slices of the 3D image (if applicable), contains two *frames* representing the foci channels A and B (if applicable), and four *channels*:
@@ -177,7 +188,7 @@ The preview image shows an ImageJ hyperstack that, besides the z-slices of the 3
 3. The detected foci (magenta)
 4. The centroids of the detected foci (white)
 
-<img src="https://user-images.githubusercontent.com/33119248/206935988-95c346ee-c1ba-44b6-8c14-2e9b214300da.png" width="297">
+![image](https://github.com/user-attachments/assets/c7670dd1-89ea-4b23-92df-9b6d7dad4dbb)
 
 The image below shows a montage layout of such a hyperstack, with vertically the '*frames*' (foci channels A and B - here 2 and 3), and horizontally the '*channels*' (as described above):
 ![image](https://user-images.githubusercontent.com/33119248/206936107-175705d8-61b0-45df-8872-e279052ae035.png)
@@ -189,18 +200,36 @@ By changing the displayed channels (*Shift-Z*), adjusting brightness&contrast (*
 ![channels_tool](https://user-images.githubusercontent.com/33119248/206938473-f8f575fc-26b9-4071-abbe-77a33e86e156.gif)
 
 
+
+## Time-lapse images
+
+When a Time-lapse image is detected, individual frames are split and saved to disk. The script then analyzes these single frame images one by one and saves the results.
+Currently, the time-lapse image is not being rebuilt. This can be done by running `Concatenate timelapse with overlays`, in the Foci-Analyzer Fiji submenu (`Plugins` -> `Foci-Analyzer`).
+
+After [concatenating the result files](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#handling-results) for all frames it is possible to run `Plot foci timetraces` from the Foci-Analyzer submenu. This will read data from the `Results` table and generate a table containing the foci count per cell per time frame, as well as a plot. N.B. This feature is experimental and under development.
+
+![image](https://github.com/user-attachments/assets/1132af51-5c21-4cc3-8b20-c48961cd0711)
+
+
 ## Output
 
-The following output files are displayed after analysis, as well as saved in the designated output folder:
+### Files
 
-- A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay:
+The following output tables are displayed after analysis of each image/frame. These are saved in the designated output folder:
+
+1. A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay. This image also contains (almost) all analysis settings as metadata (`Image` -> `Show Info... in Fiji), which is useful for documentation/reproducibility purposes, as well as re-using the same settings on another image (by [loading them](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#image-settings)).  
 
 ![image](https://github.com/user-attachments/assets/388695ef-b32e-43d5-b43d-ae9b8f1a9be3)
-- When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#colocalization-maps).
 
-- A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
 
-- A `.tsv` file ending with `All_Foci_statistics.tsv` containing relationship info and intensity info for every individual focus: _label, Cell ID, Mean, StdDev, Max, Min, Median, Skewness, Volume_.
+3. When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#colocalization-maps). Here, analysis settings are also stored in the metadata (`Image` -> `Show Info... in Fiji).
+
+4. A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
+
+5. A `.tsv` file ending with `All_Foci_statistics.tsv` containing relationship info and intensity info for every individual focus: _label, Cell ID, Mean, StdDev, Max, Min, Median, Skewness, Volume_.
+
+### Log
+The complete Log Window is saved as `Log.txt` in the output folder after the analysis has finished.
 
 ### Colocalization maps
 
@@ -215,4 +244,5 @@ The macro produces overlap maps for the foci in the two chosen channels that vis
 
 ![image](https://github.com/user-attachments/assets/d4f43130-7d62-4568-beb4-6e2513064706)
 
-
+## Handling results
+For each image (or frame) a new result file is generated. When multiple images (or frames) are processed. Result `.tsv` files in a folder can be appended by running `Combine result files` in the Foci-Analyzer Fiji submenu. The resulting table is saved as `Results_all_files.tsv` in the same folder as the input `.tsv` files. (By the way, this script also runs on other text-based files, e.g. `.csv`, `.txt`.)
