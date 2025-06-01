@@ -152,7 +152,7 @@ Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be
 ### Visualization options
 
 - _Nuclei/cell overlay choice_ : Select which numbers are added to the overlay: nucleus/cell ID, foci count, both or none.
-- 
+
 - _Nuclei/cell label color_ : The color of the nucleus/cell ID text overlay.
 
 - _Foci count label color_ : The color of the foci count text overlay.
@@ -168,7 +168,7 @@ Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be
 ## Foci detection optimization 
 When the option _Preview foci detection (for parameters fine-tuning)?_ is active, a preview image of the detected foci will be shown during process. A dialog appears where foci detection parameters can be adjusted:
 
-![image](https://github.com/user-attachments/assets/aa8a7f3c-bf86-40bd-a598-32b3d9b34695)
+<img src="https://github.com/user-attachments/assets/aa8a7f3c-bf86-40bd-a598-32b3d9b34695" width="800">
 
 After changing the settings, clicking `OK` will detect the foci on the same nuclei with the updated parameters and redisplay them in the preview image. Channel display settings and zoom are remembered in between optimization steps.
 The preview image shows an ImageJ hyperstack that, besides the z-slices of the 3D image (if applicable), contains two *frames* representing the foci channels A and B (if applicable), and four *channels*:
