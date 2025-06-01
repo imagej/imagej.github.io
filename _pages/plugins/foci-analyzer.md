@@ -78,7 +78,7 @@ The dialog has several sections that are discussed below. All settings in this d
 
 - _Nuclei channel_ : The image channel that contains the nuclei. For StarDist nuclei segmentation is performed using this channel, which always happens in 2D (in the case of 3D images on a maximum intensity projection). For Cellpose, there are two possibilities, depending on the value of _Cytoplasm/membrane channel_ below.
 
-- _Cytoplasm/membrane channel_ : The image channel that contains cytoplasm or membrane. If set to `-1`, segmentation is performed on the nucleus channel alone. If _not_ `-1` and Cellpose is chosen as [segmentation method](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#nucleicell-segmentation-settings), segmentation is performed on this channel. In this case the nuclei channel is the 'additional helper channel'. If _not_ set to `-1` and StarDist is chosen, this channel not used in the segmentation, but instead just displayed in the overlay image. (default: -1) 
+- _Cytoplasm/membrane channel_ : The image channel that contains cytoplasm or membrane. If set to `-1`, segmentation is performed on the nucleus channel alone. If _not_ `-1` and Cellpose is chosen as [segmentation method](https://imagej.net/plugins/foci-analyzer#nucleicell-segmentation-settings), segmentation is performed on this channel. In this case the nuclei channel is the 'additional helper channel'. If _not_ set to `-1` and StarDist is chosen, this channel not used in the segmentation, but instead just displayed in the overlay image. (default: -1) 
 
 - _Foci channel A_ : the first foci channel (default: 2)
 
@@ -105,7 +105,7 @@ The dialog has several sections that are discussed below. All settings in this d
 
 - _Nuclei/cell segmentation method_ :
   - *Stardist nuclei segmentation 2D (or on 2D projection)* (default) uses the pretrained convolutional neural network [StarDist](https://github.com/stardist/stardist#readme) to recognize cell nuclei in fluoresence microscopy images. In general this method works very well on a large variety of samples.
-  - *Cellpose segmentation 2D (or on 2D projection)* uses the deep learning network [Cellpose](https://github.com/MouseLand/cellpose#--cellpose--) to recognize whole cells or nuclei. Use this option if you want to measure foci in entire cells, or if you prefer Cellpose nuclei segmentation over StarDist. Cellpose requires additional installations (see [Installation / Requirements](https://github.com/BioImaging-NKI/Foci-analyzer/edit/main/README.md#installation--requirements)).
+  - *Cellpose segmentation 2D (or on 2D projection)* uses the deep learning network [Cellpose](https://github.com/MouseLand/cellpose#--cellpose--) to recognize whole cells or nuclei. Use this option if you want to measure foci in entire cells, or if you prefer Cellpose nuclei segmentation over StarDist. Cellpose requires additional installations (see [Installation / Requirements](https://imagej.net/plugins/foci-analyzer#installation--requirements)).
   - *Cellpose segmentation 3D*: If this option is chosen a new dialog pops up with extra settings. These are the most important parameters for 3D segmentation. More parameters can be added in the 'Additional Cellpose parameters' field. The `Help` button takes you to the [Cellpose CLI](https://cellpose.readthedocs.io/en/latest/cli.html) with explanations of all parameters.
 ![image](https://github.com/user-attachments/assets/46199403-13c0-4082-9767-af73519effcf)
 
@@ -171,15 +171,15 @@ Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be
 
 
 ## Foci detection optimization 
-When the option _Preview foci detection (for parameters fine-tuning)?_ is checked, a preview image of the detected foci will be shown during processing. A dialog appears where foci detection parameters can be adjusted (see [foci detection settings](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#foci-detection-settings) for explanations):
+When the option _Preview foci detection (for parameters fine-tuning)?_ is checked, a preview image of the detected foci will be shown during processing. A dialog appears where foci detection parameters can be adjusted (see [foci detection settings](https://imagej.net/plugins/foci-analyzer#foci-detection-settings) for explanations):
 
 ![image](https://github.com/user-attachments/assets/7ddc5514-13c5-41cc-9ca1-80a2ce457328)
 
 Under `Action` there are four options:
 - *Recalculate with these settings*: re-run the foci detection with the current parameters. The segmentation remains the same. (default)
-- *Done optimizing | Process and optimize the next image*: Finishes the analysis for the current image and shows the dialog again for the next image.
-- *Done optimizing | Process all other images with these settings (calculate thresholds for each image)*: Performs the analysis on all subsequent images with the current settings. Foci threshold values are estimated and calculated for every image. The absolute threshold value depends on the image characteristics (see [foci detection settings](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#foci-detection-settings)) and can vary (slightly) from image to image. 
-- *Done optimizing | Process all other images with these settings (fix current threshold levels)*: Performs the analysis on all subsequent images with the current settings. The calculated absolute foci threshold value for _this_ image is used for all other images. This setting is useful when processing separate tiles of a larger image.
+- *Done optimizing \ Process and optimize the next image*: Finishes the analysis for the current image and shows the dialog again for the next image.
+- *Done optimizing \ Process all other images with these settings (calculate thresholds for each image)*: Performs the analysis on all subsequent images with the current settings. Foci threshold values are estimated and calculated for every image. The absolute threshold value depends on the image characteristics (see [foci detection settings](https://imagej.net/plugins/foci-analyzer#foci-detection-settings)) and can vary (slightly) from image to image. 
+- *Done optimizing \ Process all other images with these settings (fix current threshold levels)*: Performs the analysis on all subsequent images with the current settings. The calculated absolute foci threshold value for _this_ image is used for all other images. This setting is useful when processing separate tiles of a larger image.
 
 After changing the settings, clicking `OK` will detect the foci on the same nuclei with the updated parameters and redisplay them in the preview image. Channel display settings and zoom are remembered in between optimization steps.
 The preview image shows an ImageJ hyperstack that, besides the z-slices of the 3D image (if applicable), contains two *frames* representing the foci channels A and B (if applicable), and four *channels*:
@@ -206,7 +206,7 @@ By changing the displayed channels (*Shift-Z*), adjusting brightness&contrast (*
 When a Time-lapse image is detected, individual frames are split and saved to disk. The script then analyzes these single frame images one by one and saves the results.
 Currently, the time-lapse image is not being rebuilt. This can be done by running `Concatenate timelapse with overlays`, in the Foci-Analyzer Fiji submenu (`Plugins` -> `Foci-Analyzer`).
 
-After [concatenating the result files](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#handling-results) for all frames it is possible to run `Plot foci timetraces` from the Foci-Analyzer submenu. This will read data from the `Results` table and generate a table containing the foci count per cell per time frame, as well as a plot. N.B. This feature is experimental and under development.
+After [concatenating the result files](https://imagej.net/plugins/foci-analyzer#handling-results) for all frames it is possible to run `Plot foci timetraces` from the Foci-Analyzer submenu. This will read data from the `Results` table and generate a table containing the foci count per cell per time frame, as well as a plot. N.B. This feature is experimental and under development.
 
 ![image](https://github.com/user-attachments/assets/1132af51-5c21-4cc3-8b20-c48961cd0711)
 
@@ -217,12 +217,12 @@ After [concatenating the result files](https://github.com/imagej/imagej.github.i
 
 The following output tables are displayed after analysis of each image/frame. These are saved in the designated output folder:
 
-1. A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay. This image also contains (almost) all analysis settings as metadata (`Image` -> `Show Info... in Fiji), which is useful for documentation/reproducibility purposes, as well as re-using the same settings on another image (by [loading them](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#image-settings)).  
+1. A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay. This image also contains (almost) all analysis settings as metadata (`Image` -> `Show Info... in Fiji), which is useful for documentation/reproducibility purposes, as well as re-using the same settings on another image (by [loading them](https://imagej.net/plugins/foci-analyzer#output:~:text=Load%20settings%20from%20previously%20analyzed%20image%3F)).  
 
 ![image](https://github.com/user-attachments/assets/388695ef-b32e-43d5-b43d-ae9b8f1a9be3)
 
 
-3. When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#colocalization-maps). Here, analysis settings are also stored in the metadata (`Image` -> `Show Info... in Fiji).
+3. When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://imagej.net/plugins/foci-analyzer#colocalization-maps). Here, analysis settings are also stored in the metadata (`Image` -> `Show Info... in Fiji).
 
 4. A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
 
