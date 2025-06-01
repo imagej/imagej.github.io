@@ -1,13 +1,17 @@
 ---
 title: Foci Analyzer
 categories: [Analysis]
-icon: https://github.com/user-attachments/assets/299e5a33-bd3d-4592-aad3-aa18681ecc1b
-website: "https://github.com/BioImaging-NKI/Foci-analyzer"
+icon: /media/icons/Foci-Analyzer-icon.png
+source-url: "https://github.com/BioImaging-NKI/Foci-analyzer"
 update-site: "foci-analyzer"
+release-version: v1.8
 team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
 ---
 {%- assign github            = page.github            -%}
+{%- assign release-version   = page.release-version   -%} {%- comment -%} Most recent component release version                       {%- endcomment -%}
+{%- assign release-date      = page.release-date      -%} {%- comment -%} Most recent component release date                          {%- endcomment -%}
+{%- assign dev-status        = page.dev-status        -%} {%- comment -%} Unstable, Active, Stable, or Obsolete                       {%- endcomment -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
 ImageJ macro for the analysis of foci (e.g. DNA damage) in nuclei (or cells). Works on 2D/3D fluorescence images, including multiseries files, as long as all series have the same dimensions.
@@ -60,15 +64,21 @@ In case you also want to use Cellpose segmentation you additionally need:
 The macro starts with a large dialog containing all options and parameters (click to enlarge):
 The dialog has several sections that are discussed below. All settings in this dialog will be remembered after you click `OK`.
 
-<img src="https://github.com/user-attachments/assets/2274ced2-2420-4f92-a395-7b200d32e356" width="600">
+<img src="https://github.com/user-attachments/assets/438a42c7-90d9-454d-b4e6-a15809e94f75" width="600">
 
-### File handling and image settings
+### File settings
 
 - _Input files_ : Here you can specify which files to analyze, by adding them to the list, or drag&drop from a file explorer window
 
 - _Output folder_ : the folder where all the analyzed images and results will be written.
 
-- _Nuclei channel_ : The image channel on which nuclei segmentation will be performed. This segmentation always happens in 2D; for 3D images on a maximum intensity projection. (default: 1)
+### Image settings
+
+- _Load settings from previously analyzed image?_ : When checked, a separate dialog will popup where an output `.zip` file can be selected (overlay or colocalization map). All settings are loaded from the metadata in the saved image. The script parameter entries in this large dialog are ignored.
+
+- _Nuclei channel_ : The image channel that contains the nuclei. For StarDist nuclei segmentation is performed using this channel, which always happens in 2D (in the case of 3D images on a maximum intensity projection). For Cellpose, there are two possibilities, depending on the value of _Cytoplasm/membrane channel_ below.
+
+- _Cytoplasm/membrane channel_ : The image channel that contains cytoplasm or membrane. If set to `-1`, segmentation is performed on the nucleus channel alone. If _not_ `-1` and Cellpose is chosen as [segmentation method](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#nucleicell-segmentation-settings), segmentation is performed on this channel. In this case the nuclei channel is the 'additional helper channel'. If _not_ set to `-1` and StarDist is chosen, this channel not used in the segmentation, but instead just displayed in the overlay image. (default: -1) 
 
 - _Foci channel A_ : the first foci channel (default: 2)
 
@@ -76,7 +86,7 @@ The dialog has several sections that are discussed below. All settings in this d
 
 - _Also detect foci in Channel B and perform colocalization?_ : If checked, foci in both channels *A* and *B* will be analyzed, followed by a simple colocalization analysis. (default: checked)
 
-- _3D image handling_ : This parameter determines how foci in 3D images should be analyzed. For 2D input images this setting is ignored. There are four options:
+- _2D/3D foci detection_ : This parameter determines how foci in 3D images should be analyzed. For 2D input images this setting is ignored. There are four options:
   - *Analyze foci in 3D* (default) performs foci analysis using 3D filters and 3D marker-controlled watershed functions. Connected foci in consecutive slices are counted once.
   - *Detect foci on a Extended Depth of Focus Projection* performs 2D foci analysis on an EDF projection.
   - *Detect foci on the Maximum Intensity Projection* performs 2D foci analysis on the MIP projection.
@@ -95,14 +105,17 @@ The dialog has several sections that are discussed below. All settings in this d
 
 - _Nuclei/cell segmentation method_ :
   - *Stardist nuclei segmentation* (default) uses the pretrained convolutional neural network [StarDist](https://github.com/stardist/stardist#readme) to recognize cell nuclei in fluoresence microscopy images. In general this method works very well on a large variety of samples.
-  - *Cellpose cytoplasm segmentation* uses the deep learning network [Cellpose](https://github.com/MouseLand/cellpose#--cellpose--) (model: cyto) to recognize whole cells. Use this option if you want to measure foci in entire cells and/or you do not have a nuclear staining (but it can also work well for nuclei). Cellpose requires a few additional installations (see [Installation / Requirements](https://github.com/BioImaging-NKI/Foci-analyzer/edit/main/README.md#installation--requirements)).
+  - *Cellpose cytoplasm segmentation* uses the deep learning network [Cellpose](https://github.com/MouseLand/cellpose#--cellpose--) to recognize whole cells or nuclei. Use this option if you want to measure foci in entire cells, or if you prefer Cellpose nuclei segmentation over StarDist. Cellpose requires additional installations (see [Installation / Requirements](https://github.com/BioImaging-NKI/Foci-analyzer/edit/main/README.md#installation--requirements)).
   - _Classic nuclei segmentation_ allows the user to segment nuclei using manual/automatic thresholding is provided for legacy reasons. The method is almost always outperformed by the two other methods.
 
-- _Stardist nuclei rescaling factor [1-n], 0 for automatic rescaling_ : Stardist is trained on medium resolution images, and generally performs well on images with pixel sizes around 0.5 µm. For images with much smaller pixel size StarDist tends to 'oversegment' nuclei. Set to `0` for automatic rescaling the nuclei to the optimal pixel size of 0.5 µm, or put any other number for manual control of the rescaling. (N.B. This option only affects the nuclei segmentation; it is different from the previously mentioned 'XY binning' parameter, which also changes the pixel size of the foci channels.) (default: 0)
+- _Stardist nuclei rescaling factor [1-n], 0 for automatic, 1 for no rescaling_ : Stardist is trained on medium resolution images, and generally performs well on images with pixel sizes around 0.2-0.5 µm. For images with much smaller pixel size StarDist tends to 'oversegment' nuclei. Set to `0` for automatic rescaling the nuclei to an optimal pixel size of 0.25 µm, or put any other number for manual control of the rescaling. N.B. If the pixel unit is not µm, no rescaling is performed.
+This option only affects the nuclei segmentation; it is different from the previously mentioned 'XY binning' parameter, which also changes the pixel size of the foci channels. (default: 0)
 
-- _Probability threshold [0.0-1.0] (StarDist/Cellpose)_ : Lower values will accept more nuclei; higher values will be more stringent. For Cellpose this is actually the _flow_threshold_ parameter. (default: 0.5)
+- _Probability/flow threshold [0.0-1.0] (StarDist/Cellpose)_ : Lower values will accept more nuclei/cells; higher values will be more stringent. For Cellpose this is actually the [_flow_threshold_](https://cellpose.readthedocs.io/en/latest/settings.html#flow-threshold) parameter. (Cellpose's [Cellprob parameter](https://cellpose.readthedocs.io/en/latest/settings.html#cellprob-threshold) has less influence and is always set to 0.) (default: 0.5)
 
 - _Cellpose cell diameter (pixels), 0 for automatic_ : Estimated diameter of the cells, in pixels. Setting this parameter to 0 will trigger Cellpose to estimate it. Please check the Fiji console for the resulting estimate.
+
+- _Cellpose model_ : The [model](https://cellpose.readthedocs.io/en/v3.1.1.1/models.html#models) (built-in or custom) used for segmentation. Tested up to Cellpose 3.1 (cpsam may just work though).
 
 - _Remove nuclei with diameter smaller than (units)_ : Objects smaller than circles having an area corresponding to this diameter will be removed. 'Units' depends on the image, and will almost always be 'µm', or otherwise 'pixels' in case the pxiel calibration values are missing. (default: 4)
 
@@ -117,13 +130,13 @@ The dialog has several sections that are discussed below. All settings in this d
  
 ### Foci detection settings
 
-- _Enable foci parameters optimization mode?_ : Checking this will allow the user to adapt the foci detection settings on a preview analysis before quantifying. (default: checked)
+- _Preview foci detection (for parameters fine-tuning)?_ : Checking this will allow the user to adapt the foci detection settings on a preview analysis before quantifying. (default: checked)
 
 - _Foci size channel A/B (after XY binning)_ : choices between *tiny*, *small*, *average*, *large*, *huge*, and *other*. This parameter controls several foci image filtering steps and steers the macro towards detecting smaller or larger foci. (default: average).
 
 - _Foci detection method_ :
-  - *Marker-controlled watershed* uses [marker-controlled watershed](https://imagej.net/plugins/marker-controlled-watershed) with local maxima as seeds to segment foci
-  - *AreaMaximum detection* tends to detect only the peaks of the foci. Can be tried when the other option doesn't provide satisfactory results.
+  - *Marker-controlled watershed* uses MorphoLibJ's [marker-controlled watershed](https://imagej.net/plugins/marker-controlled-watershed) with local maxima as seeds to segment foci
+  - *AreaMaximum detection* tends to detect only the peaks of the foci. Can be tried when the other option doesn't provide satisfactory results. This options requires the SCF MPI CBG Fiji Update Site to be installed.
 
 - _Foci intensity threshold bias channel A/B_ : The macro will automatically estimate the intensity threshold for foci detection (after difference-of-Gaussians background subtraction). This default threshold is set at 3 times the median standard deviation of the nuclear background signal in all nuclei in the image. The user can bias this threshold with the slider to lower values (accepting more low intensity foci) or higher values (gearing towards high intensity foci). The bias slider couples exponentially to the used threshold value: threshold = estimated_threshold * e<sup>bias</sup>. 
 Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be set to anywhere between 0.2 and 36 times the standard deviation of the nuclear background signal. (default: 0)
@@ -138,18 +151,24 @@ Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be
 
 ### Visualization options
 
-- _Nuclei outline color_ : The color of the nuclei outlines overlay.
+- _Nuclei/cell overlay choice_ : Select which numbers are added to the overlay: nucleus/cell ID, foci count, both or none.
+- 
+- _Nuclei/cell label color_ : The color of the nucleus/cell ID text overlay.
 
-- _Nuclei label color_ : The color of the nuclei label numbers overlay.
+- _Foci count label color_ : The color of the foci count text overlay.
 
-- _Nuclei label size_ : The size of the nuclei label numbers overlay.
+- _Nuclei/cell label font size_ : The size of the nuclei/cell ID text overlay.
+
+- _Nuclei/cell outline brightness_ : The brightness of the nuclei outlines overlay: bright or dim.
+
+- _Nuclei/cell outline color_ : The color of the nuclei outlines overlay.
 
 - _Debug mode (show intermediate images)_ : Used for development and bug fixing: checking this option will trigger displaying many intermediate results during the processing. It will also slow down the analysis.
 
-## Tips and tricks
-When the option _Enable foci parameters optimization mode?_ is active, a preview image of the detected foci will be shown during process. A dialog appears where foci detection parameters can be adjusted:
+## Foci detection optimization 
+When the option _Preview foci detection (for parameters fine-tuning)?_ is active, a preview image of the detected foci will be shown during process. A dialog appears where foci detection parameters can be adjusted:
 
-<img src="https://user-images.githubusercontent.com/33119248/206919566-f0255a45-50fc-4f93-8386-a04e1d97351b.png" width="400">
+![image](https://github.com/user-attachments/assets/aa8a7f3c-bf86-40bd-a598-32b3d9b34695)
 
 After changing the settings, clicking `OK` will detect the foci on the same nuclei with the updated parameters and redisplay them in the preview image. Channel display settings and zoom are remembered in between optimization steps.
 The preview image shows an ImageJ hyperstack that, besides the z-slices of the 3D image (if applicable), contains two *frames* representing the foci channels A and B (if applicable), and four *channels*:
@@ -169,15 +188,31 @@ By changing the displayed channels (*Shift-Z*), adjusting brightness&contrast (*
 ![foci_03_crop_RGB_optimization_crop](https://user-images.githubusercontent.com/33119248/206938037-fd79a4eb-3b14-42d5-8ddc-8aa39794a727.gif)
 ![channels_tool](https://user-images.githubusercontent.com/33119248/206938473-f8f575fc-26b9-4071-abbe-77a33e86e156.gif)
 
-### Colocalization
+
+## Output
+
+The following output files are displayed after analysis, as well as saved in the designated output folder:
+
+- A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay:
+
+![image](https://github.com/user-attachments/assets/388695ef-b32e-43d5-b43d-ae9b8f1a9be3)
+- When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/foci-analyzer.md#colocalization-maps).
+
+- A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
+
+- A `.tsv` file ending with `All_Foci_statistics.tsv` containing relationship info and intensity info for every individual focus: _label, Cell ID, Mean, StdDev, Max, Min, Median, Skewness, Volume_.
+
+### Colocalization maps
 
 The macro produces overlap maps for the foci in the two chosen channels that visualize the overlap of foci in the different channels. This map has 6 channels:
 
 1. detected foci mask channel A (green)
 2. detected foci mask channel B (red)
-3. overlap % foci count with channel A (azure; the brighter, the more foci overlap)
-4. overlap % foci volume with channel A (magenta)
-5. overlap % foci count with channel B (azure)
-6. overlap % foci volume with channel B (magenta)
+3. overlap % foci _count_ with channel A (azure; the brighter, the more foci overlap)
+4. overlap % foci _area/volume_ with channel A  (Manders M1) (magenta)
+5. overlap % foci _count_ with channel B (azure)
+6. overlap % foci _area/volume_ with channel B (Manders M2) (magenta)
 
-More documentation will follow with the coming release (soon!), that includes proper (2D/3D) Cellpose segmentation, and stats for all foci instead of only averages per nucleus.
+![image](https://github.com/user-attachments/assets/d4f43130-7d62-4568-beb4-6e2513064706)
+
+
