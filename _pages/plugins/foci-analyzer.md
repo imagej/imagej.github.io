@@ -84,10 +84,12 @@ The dialog has several (color-coded) sections that are discussed below. All sett
 
 - _Also detect foci in Channel B and perform colocalization?_ : If checked, foci in both channels *A* and *B* will be analyzed, followed by a simple colocalization analysis. (default: checked)
 
-- _2D/3D foci detection_ : This parameter determines how foci in 3D images should be analyzed. For 2D input images this setting is ignored. There are four options:
-  - *Analyze foci in 3D* (default) performs foci analysis using 3D filters and 3D marker-controlled watershed functions. Connected foci in consecutive slices are counted once.
-  - *Detect foci on a Extended Depth of Focus Projection* performs 2D foci analysis on an EDF projection.
+- _2D/3D foci detection_ : This parameter determines how foci in 3D images should be analyzed. For 2D input images this setting is ignored. The options are:
+  - *Detect foci in 3D (or 2D when N/A)* (default) performs foci analysis using 3D filters and 3D marker-controlled watershed functions. Connected foci in consecutive slices are counted once.
   - *Detect foci on the Maximum Intensity Projection* performs 2D foci analysis on the MIP projection.
+  - *Detect foci on a Extended Depth of Focus Projection* performs 2D foci analysis on an EDF projection.
+  - *Detect foci on the Standard Deviation Projection* performs 2D foci analysis on the STDEV projection.
+  - *Detect foci on the Summed Intensity Projection* performs 2D foci analysis on the SUM projection.
   - *Use quasi-2D foci detection (detect foci separately in every Z-slice)* analyzes every z-slice in a 3D image as a separate 2D image. This setting is useful in cases where the z-spacing is very large and each focus is visible in only one z-slice. Hence, connected foci in consecutive slices will be counted multiple times.
   - *Process a single z-slice only (specify below which slice)* allows the user to analyze foci only in a particular z-slice.
 
