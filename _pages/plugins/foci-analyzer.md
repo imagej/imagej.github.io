@@ -130,7 +130,7 @@ This option only affects the nuclei segmentation; it is different from the previ
 - _Manual nuclei removal_ : allows the user to erase ill-segmented nuclei before analysis. (default: No thanks) Options:
   - *No thanks* means no manual nuclei editing
   - *Manually remove nuclei* : Remove nuclei by leftclicking them in the image with the mouse. Editings will be saved to a small text file in the output folder.
-  - *load previously saved removals (from output folder)* : If you have edited the segmented nuclei on this image before, it will load the previous nuclei removals from the file in the specified output folder. (Hence, if you change the output folder parameter this option will not work.)
+  - *Load previously saved removals (from output folder)* : If you have edited the segmented nuclei on this image before, it will load the previous nuclei removals from the file in the specified output folder. (Hence, if you change the output folder parameter this option will not work.)
  
 ### Foci detection settings
 
