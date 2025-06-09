@@ -217,16 +217,14 @@ After [concatenating the result files](https://imagej.net/plugins/foci-analyzer#
 
 The following output tables are displayed after analysis of each image/frame. These are saved in the designated output folder:
 
-1. A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay. This image also contains (almost) all analysis settings as metadata (`Image` -> `Show Info... in Fiji), which is useful for documentation/reproducibility purposes, as well as re-using the same settings on another image (by [loading them](https://imagej.net/plugins/foci-analyzer#output:~:text=Load%20settings%20from%20previously%20analyzed%20image%3F)).  
-
+1. A `.zip` file ending with `overlay_ch...zip`, containing the abovementioned channels, with segmented cells/nuclei outlines, as well as nucleus ID and/or foci count as text overlay. This image also contains (almost) all analysis settings as metadata (`Image` -> `Show Info... in Fiji), which is useful for documentation/reproducibility purposes, as well as re-using the same settings on another image (by [loading them](https://imagej.net/plugins/foci-analyzer#output:~:text=Load%20settings%20from%20previously%20analyzed%20image%3F)).
 ![image](https://github.com/user-attachments/assets/388695ef-b32e-43d5-b43d-ae9b8f1a9be3)
 
+2. When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://imagej.net/plugins/foci-analyzer#colocalization-maps). Here, analysis settings are also stored in the metadata (`Image` -> `Show Info... in Fiji).
 
-3. When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://imagej.net/plugins/foci-analyzer#colocalization-maps). Here, analysis settings are also stored in the metadata (`Image` -> `Show Info... in Fiji).
+3. A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
 
-4. A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
-
-5. A `.tsv` file ending with `All_Foci_statistics.tsv` containing relationship info and intensity info for every individual focus: _label, Cell ID, Mean, StdDev, Max, Min, Median, Skewness, Volume_.
+4. A `.tsv` file ending with `All_Foci_statistics.tsv` containing relationship info and intensity info for every individual focus: _label, Cell ID, Mean, StdDev, Max, Min, Median, Skewness, Area/Volume, Circularity/Sphericity, Centroid.X, Centroid.Y, (Centroid.Z)_. (Centroids coordinates with respect to the image origin.)
 
 ### Log
 The complete Log Window is saved as `Log.txt` in the output folder after the analysis has finished.
