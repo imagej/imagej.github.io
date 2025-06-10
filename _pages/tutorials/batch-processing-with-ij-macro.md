@@ -148,6 +148,46 @@ for (i = 0; i < 10; i++) {
 
 ## 3.3 Run the loop required number of times
 
+At present, the code within the `for` loop will always be executed exactly 10 times, regardless of how many images there are in the input directory. We can change this behaviour for placing something more meaningful in the conditional statement `i < 10`, such as:
+```javascript
+for (i = 0; i < lengthOf(images); i++) {
+```
+Here, the `lengthOf` command returns the length of the `images` array, so the `for` loop will continue to be executed until all images in the array have been analysed.
+
 ## 3.4 Change the name of the output image
 
+Finally, in order to have a fully functional (if rudimentary) macro, we need the name of the segmentation output image to be updated on each iteration of the `for` loop - at present, an image with the name `segmentation_output.png` is repeatedly overwritten. We could modify the `saveAs` statement to include the current value of `i` in the filename as follows:
+```javascript
+saveAs("PNG", output + "segmentation_output_" + i + ".png");
+```
+This will result in output images being saved as:
+```
+segmentation_output_0.png
+segmentation_output_1.png
+segmentation_output_2.png
+...
+```
+To be more informative, we could include the input filename in the output image filename, as follows:
+```javascript
+saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+```
+The complete script now looks like this:
+```javascript
+inputDir = getDirectory("Select Input Directory");
+images = getFileList(inputDir);
+output = getDirectory("Select output directory");
+
+for (i = 0; i < lengthOf(images); i++) {
+	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+	selectImage(1);
+	run("Gaussian Blur...", "sigma=2");
+	setAutoThreshold("Default dark");
+	setOption("BlackBackground", false);
+	run("Convert to Mask");
+	run("Watershed");
+	run("Analyze Particles...", "exclude summarize");
+	saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+	close("*");
+}
+```
 # 4. Create a Dialogue to Obtain User Input
