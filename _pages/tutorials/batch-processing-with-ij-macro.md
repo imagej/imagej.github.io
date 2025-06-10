@@ -199,6 +199,8 @@ inputDir = getDirectory("Select Input Directory");
 images = getFileList(inputDir);
 output = getDirectory("Select output directory");
 
+setBatchMode(true);
+
 print("\\Clear");
 print("Found " + images.length + " files in " + inputDir);
 print("0% of images processed.");
@@ -217,6 +219,9 @@ for (i = 0; i < lengthOf(images); i++) {
 	close("*");
 }
 print("\\Update:100% of images processed.");
+
+setBatchMode(false);
 ```
+The `setBatchMode` statements cause ImageJ to enter, then exit, "Batch Mode", which suppresses image windows. This allows the macro to execute faster.
 
 # 5. Create a Dialogue to Obtain User Input
