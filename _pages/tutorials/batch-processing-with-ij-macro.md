@@ -32,7 +32,7 @@ Every command you now access through ImageJ's menu will be recorded as a line of
 ## 1.2 Perform a simple workflow
 
 Perform a series of commands that you would like to automate with a macro. The commands recorded below resulted from:
-1. The opening of an image with [BioFormats](https://www.openmicroscopy.org/bio-formats/)
+1. The opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into seperate windows.
 2. Selecting the first channel and applying a Gaussian blur
 3. Thresholding the image with the default method
 4. Generating a particle count using the `summarize` option in the [Analyze Particles](https://imagej.net/ij/docs/guide/146-30.html#sub:Analyze-Particles...) tool.
@@ -51,7 +51,29 @@ It's possible to edit commands directly within the Macro Recorder, but it's prob
 
 ## 2.1 Save your macro and run it
 
-Give your macro a sensible name and save it by going to `File > Save As...` in the Script Editor. Now try running your macro by selecting `Run > Run` from the menu. Your macro should produce the same output as the series of commands you recorded earlier.
+Give your macro a sensible name and save it by going to `File > Save As...` in the Script Editor. Now try running your macro by selecting `Run > Run` from the menu. Your macro should produce the same output as the series of commands you recorded earlier. The code in the image above is reproduced below should you wish to copy it:
+
+## 2.2 Generalise your macro
+
+The obvious problem with the macro in its current form is that it will only ever work on the image that was loaded when the commands that form the basis of the macro were originally recorded. Modifying the first two lines is the first step in "generalising" the macro, so that it runs on _any_ image:
+```javascript
+run("Bio-Formats Importer", "autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+selectImage(1);
+run("Gaussian Blur...", "sigma=2");
+setAutoThreshold("Default dark");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Watershed");
+run("Analyze Particles...", "exclude summarize");
+output = getDirectory("Select output directory");
+saveAs("PNG", output + "segmentation_output.png");
+```
+There are three changes above:
+1. On the first line, the `open` argument that was previously passed to Bio-Formats has now been removed. As such, ImageJ will produce a File Open dialog, asking the user to specify which image they wish to open with Bio-Formats
+2. On the second line, the `selectImage` command has been modified to select the first image window (assuming this is the channel with the nuclei signal). Alternatively, we could have modified the Bio-Formats Importer statement to only open the first channel in the image.
+3. The last two lines now ask the user to specify an output directory, before saving the segmentation mask.
+
+While this macro will now run on any image, it only allows us to process one image at a time, which is not ideal!
 
 # 3. Create a Loop to Run on Multiple Images
 
