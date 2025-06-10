@@ -225,3 +225,29 @@ setBatchMode(false);
 The `setBatchMode` statements cause ImageJ to enter, then exit, "Batch Mode", which suppresses image windows. This allows the macro to execute faster.
 
 # 5. Create a Dialogue to Obtain User Input
+
+As an alternative to the `getDirectory` statements used above, it is possible to create a more functional, self-contained dialogue to receive input from the user.
+
+## 5.1 Specify inputs and outputs
+
+We can create and customise a `Generic Dialog` to obtain a variety of different inputs from the user. We can also use this interface to provide instructions to the user. Let's begin with a simple dialog that prompts the user to specify input and output directories:
+
+```javascript
+var inputDir;
+var output;
+
+Dialog.create("Batch Counting");
+Dialog.addDirectory("Input Directory:", inputDir);
+Dialog.addDirectory("Output Directory:", output);
+Dialog.show();
+
+inputDir = Dialog.getString();
+output = Dialog.getString();
+```
+
+The code above does three things:
+1. Initialise two variables for the input and output directories. These can be initialised with specific file locations if desired (e.g. `var inputDir = "C:/Users/barryd";`)
+2. Create a dialog with two directory selection fields and buttons
+3. Obtain the specified input and output directories when the user closes the dialog by clicking `OK`. If he user clicks `Cancel`, the macro exits.
+
+# 6. Installing the Macro
