@@ -17,7 +17,7 @@ This tutorial demonstrates how to
 
 To start the macro recorder, go to `Plugins > Macros > Record`:
 
-![ImageJ Macro Recorder](../../media/tutorials/screenshot-plugins-macro-record.PNG)
+![Macro Recorder location on plugins menu](../../media/tutorials/screenshot-plugins-macro-record.PNG)
 
 Every command you now access through ImageJ's menu will be recorded as a line of text in the macro recorder.
 
@@ -35,6 +35,10 @@ The commands recorded below resulted from:
 ![ImageJ Macro Recorder](../../media/tutorials/screenshot-macro-recorder-with-commands.PNG)
 
 # 2. Edit the Output from the Macro Recorder
+
+It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](https://imagej.net/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
+
+![Macro Recorder create button](../../media/tutorials/screenshot-macro-recorder-create.PNG)
 
 # 3. Create a Loop to Run on Multiple Images
 
