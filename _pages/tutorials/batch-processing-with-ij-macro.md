@@ -9,7 +9,8 @@ This tutorial demonstrates how to
 1. Use [the macro recorder](../scripting/macro.md#the-recorder) to record a series of commands to form the basis of a macro
 2. Edit the output from the macro recorder so that it can be run on any open image
 3. Enclose the code from step 2 inside a loop so that it runs on multiple images
-4. Add a dialogue so that a user can modify the parameters to the macro prior to execution
+4. Add some progress updates
+5. Add a dialogue so that a user can modify the parameters to the macro prior to execution
 
 > [!NOTE]
 > Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images, an example of which is shown below.
@@ -190,4 +191,32 @@ for (i = 0; i < lengthOf(images); i++) {
 	close("*");
 }
 ```
-# 4. Create a Dialogue to Obtain User Input
+# 4. Add Some Progress Updates
+
+It's generally a good idea to keep the user informed of progress when code is running. We can do this by adding `print` statements at different points in the macro, so updates get printed to the Log window:
+```javascript
+inputDir = getDirectory("Select Input Directory");
+images = getFileList(inputDir);
+output = getDirectory("Select output directory");
+
+print("\\Clear");
+print("Found " + images.length + " files in " + inputDir);
+print("0% of images processed.");
+
+for (i = 0; i < lengthOf(images); i++) {
+	print("\\Update:" + (100.0 * i / images.length) + "% of images processed.");
+	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+	selectImage(1);
+	run("Gaussian Blur...", "sigma=2");
+	setAutoThreshold("Default dark");
+	setOption("BlackBackground", false);
+	run("Convert to Mask");
+	run("Watershed");
+	run("Analyze Particles...", "exclude summarize");
+	saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+	close("*");
+}
+print("\\Update:100% of images processed.");
+```
+
+# 5. Create a Dialogue to Obtain User Input
