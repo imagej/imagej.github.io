@@ -39,6 +39,10 @@ Perform a series of commands that you would like to automate with a macro. The c
 
 ![ImageJ Macro Recorder](../../media/tutorials/screenshot-macro-recorder-with-commands.PNG)
 
+The result of the commands recorded above should look like this:
+
+![Workflow output](../../media/tutorials/screenshot-workflow-output.PNG)
+
 # 2. Edit the Output from the Macro Recorder
 
 It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](https://imagej.net/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
