@@ -9,7 +9,7 @@ This tutorial demonstrates how to
 1. Use [the macro recorder](../scripting/macro.md#the-recorder) to record a series of commands to form the basis of a macro
 2. Edit the output from the macro recorder so that it can be run on any open image
 3. Enclose the code from step 2 inside a loop so that it runs on multiple images
-4. Add a dialog so that a user can modify the parameters to the macro prior to execution
+4. Add a dialogue so that a user can modify the parameters to the macro prior to execution
 
 > [!NOTE]
 > Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images, an example of which is shown below.
@@ -32,7 +32,7 @@ Every command you now access through ImageJ's menu will be recorded as a line of
 ## 1.2 Perform a simple workflow
 
 Perform a series of commands that you would like to automate with a macro. The commands recorded below resulted from:
-1. The opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into seperate windows.
+1. The opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into separate windows.
 2. Selecting the first channel and applying a Gaussian blur
 3. Thresholding the image with the default method
 4. Generating a particle count using the `summarize` option in the [Analyze Particles](https://imagej.net/ij/docs/guide/146-30.html#sub:Analyze-Particles...) tool.
@@ -69,7 +69,7 @@ output = getDirectory("Select output directory");
 saveAs("PNG", output + "segmentation_output.png");
 ```
 There are three changes above:
-1. On the first line, the `open` argument that was previously passed to Bio-Formats has now been removed. As such, ImageJ will produce a File Open dialog, asking the user to specify which image they wish to open with Bio-Formats
+1. On the first line, the `open` argument that was previously passed to Bio-Formats has now been removed. As such, ImageJ will produce a File Open dialogue, asking the user to specify which image they wish to open with Bio-Formats
 2. On the second line, the `selectImage` command has been modified to select the first image window (assuming this is the channel with the nuclei signal). Alternatively, we could have modified the Bio-Formats Importer statement to only open the first channel in the image.
 3. The last two lines now ask the user to specify an output directory, before saving the segmentation mask.
 
@@ -150,4 +150,4 @@ for (i = 0; i < 10; i++) {
 
 ## 3.4 Change the name of the output image
 
-# 4. Create a Dialog to Obtain User Input
+# 4. Create a Dialogue to Obtain User Input
