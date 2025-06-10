@@ -11,6 +11,10 @@ This tutorial demonstrates how to
 3. Enclose the code from step 2 inside a loop so that it runs on multiple images
 4. Add a dialog so that a user can modify the parameters to the macro prior to execution
 
+Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images, an example of which is shown below.
+
+![IDR0028 LM2_siGENOME_1A Well C3 Field 10](../../media/tutorials/IDR0028-LM2_siGENOME_1A_Well_C3_Field_10.png)
+
 # 1. Record Commands with the Macro Recorder
 
 ## 1.1 Start the macro recorder
@@ -39,6 +43,10 @@ Perform a series of commands that you would like to automate with a macro. The c
 It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](https://imagej.net/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
 
 ![Macro Recorder create button](../../media/tutorials/screenshot-macro-recorder-create.PNG)
+
+## 2.1 Save your macro and run it
+
+Give your macro a sensible name and save it by going to `File > Save As...` in the Script Editor. Now try running your macro by selecting `Run > Run` from the menu. Your macro should produce the same output as the series of commands you recorded earlier.
 
 # 3. Create a Loop to Run on Multiple Images
 
