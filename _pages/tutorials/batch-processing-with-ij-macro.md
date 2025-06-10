@@ -26,7 +26,7 @@ Every command you now access through ImageJ's menu will be recorded as a line of
 
 ## 1.2 Perform a simple workflow
 
-The commands recorded below resulted from:
+Perform a series of commands that you would like to automate with a macro. The commands recorded below resulted from:
 1. The opening of an image with [BioFormats](https://www.openmicroscopy.org/bio-formats/)
 2. Selecting the first channel and applying a Gaussian blur
 3. Thresholding the image with the default method
