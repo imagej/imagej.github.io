@@ -96,9 +96,27 @@ for (i = 0; i < 10; i++) {
 ```
 However, there are a number of problems with the above code:
 1. The user is required to specify the input image and output directory on each iteration of the loop
-2. The output image will have the same name for each iteration of the loop
-3. The loop only will always run exactly 10 times
+2. The loop only will always run exactly 10 times
+3. The output image will have the same name for each iteration of the loop
 
 Let's deal with each of these one at a time.
+
+## 3.2 Obtain an input directory
+
+Let's add some code before the `for` loop to get an input directory and obtain a list of files from that input directory:
+
+```javascript
+inputDir = getDirectory("Select Input Directory");
+images = getFileList(inputDir);
+```
+
+Now we need to update the command that runs the Bio-Formats Importer, such that it opens a different image on each iteration of the loop:
+```javascript
+run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Composite rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
+```
+
+## 3.3 Run the loop required number of times
+
+## 3.4 Change the name of the output image
 
 # 4. Create a Dialog to Obtain User Input
