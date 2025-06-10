@@ -77,4 +77,28 @@ While this macro will now run on any image, it only allows us to process one ima
 
 # 3. Create a Loop to Run on Multiple Images
 
+## 3.1 Enclose code within a `for` loop
+We can run our code multiple times, to process multiple images, by enclosing it in a `for` loop:
+
+```javascript
+for (i = 0; i < 10; i++) {
+	run("Bio-Formats Importer", "autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+	selectImage(1);
+	run("Gaussian Blur...", "sigma=2");
+	setAutoThreshold("Default dark");
+	setOption("BlackBackground", false);
+	run("Convert to Mask");
+	run("Watershed");
+	run("Analyze Particles...", "exclude summarize");
+	output = getDirectory("Select output directory");
+	saveAs("PNG", output + "segmentation_output.png");
+}
+```
+However, there are a number of problems with the above code:
+1. The user is required to specify the input image and output directory on each iteration of the loop
+2. The output image will have the same name for each iteration of the loop
+3. The loop only will always run exactly 10 times
+
+Let's deal with each of these one at a time.
+
 # 4. Create a Dialog to Obtain User Input
