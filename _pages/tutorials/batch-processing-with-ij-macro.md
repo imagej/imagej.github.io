@@ -104,11 +104,12 @@ Let's deal with each of these one at a time.
 
 ## 3.2 Obtain an input directory
 
-Let's add some code before the `for` loop to get an input directory and obtain a list of files from that input directory:
+Let's add some code before the `for` loop to get an input directory and obtain a list of files from that input directory. We can also move the line of code specifying the output directory here so it doesn't get called every time the loop is executed:
 
 ```javascript
 inputDir = getDirectory("Select Input Directory");
 images = getFileList(inputDir);
+output = getDirectory("Select output directory");
 ```
 
 Now we need to update the command that runs the Bio-Formats Importer, such that it opens a different image on each iteration of the loop:
@@ -122,6 +123,28 @@ The macro in its current form will open four windows every time the `for` loop i
 ```javascript
 close("*");
 ```
+The complete macro now looks like this...
+```javascript
+inputDir = getDirectory("Select Input Directory");
+images = getFileList(inputDir);
+output = getDirectory("Select output directory");
+
+for (i = 0; i < 10; i++) {
+	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+	selectImage(1);
+	run("Gaussian Blur...", "sigma=2");
+	setAutoThreshold("Default dark");
+	setOption("BlackBackground", false);
+	run("Convert to Mask");
+	run("Watershed");
+	run("Analyze Particles...", "exclude summarize");
+	saveAs("PNG", output + "segmentation_output.png");
+	close("*");
+}
+```
+...and should now produce some meaningful output when run:
+
+![Particle Analyzer summary output](../../media/tutorials/screenshot-particle-analyzer-summary-output.PNG)
 
 ## 3.3 Run the loop required number of times
 
