@@ -317,4 +317,60 @@ Note the following:
 1. The `selectImage` command now takes `nucleiIndex` as an argument
 2. The `run("Gaussian Blur...")` command now takes it's `sigma` parameter from `gaussRad`
 3. `setAutoThreshold` uses whatever method is specified by `thresholdMethod`
+
 # 6. Installing the Macro
+
+It is possible to ["install" macros in ImageJ](https://imagej.net/scripting/macro#installing-macros), such that they appear on the Plugins menu. In order to do so, we first need to wrap our macro in `macro` blocks. With the `macro` blocks added, our complete macro now looks as follows:
+```javascript
+macro "Batch Nuclei Counter" {
+	var inputDir;
+	var output;
+	var gaussRad = 1.0;
+	var thresholdMethod = "Default";
+	var allThreshMethods = getList("threshold.methods");
+	var DAPIIndex = 1;
+	
+	// Create dialog to obtain input from user
+	Dialog.create("Batch Counting");
+	Dialog.addDirectory("Input Directory:", inputDir);
+	Dialog.addDirectory("Output Directory:", output);
+	Dialog.addNumber("Nuclear Channel:", nucleiIndex);
+	Dialog.addNumber("Gaussian Filter Radius:", gaussRad);
+	Dialog.addChoice("Threshold Method:", allThreshMethods);
+	Dialog.show();
+	
+	inputDir = Dialog.getString();
+	output = Dialog.getString();
+	nucleiIndex = Dialog.getNumber();
+	gaussRad = Dialog.getNumber();
+	thresholdMethod = Dialog.getChoice();
+	
+	images = getFileList(inputDir);
+	
+	setBatchMode(true);
+	
+	print("\\Clear");
+	print("Found " + images.length + " files in " + inputDir);
+	print("0% of images processed.");
+	
+	for (i = 0; i < lengthOf(images); i++) {
+		print("\\Update:" + (100.0 * i / images.length) + "% of images processed.");
+		run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+		selectImage(nucleiIndex);
+		run("Gaussian Blur...", "sigma=" + gaussRad);
+		setAutoThreshold(thresholdMethod + " dark");
+		setOption("BlackBackground", false);
+		run("Convert to Mask");
+		run("Watershed");
+		run("Analyze Particles...", "exclude summarize");
+		saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+		close("*");
+	}
+	print("\\Update:100% of images processed.");
+	
+	setBatchMode(false);
+}
+```
+Find the _scripts_ folder within your ImageJ/FIJI installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
+
+![Macro dialogue](../../media/tutorials/screenshot-plugins-installed-macro.PNG)
