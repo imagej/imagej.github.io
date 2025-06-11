@@ -10,7 +10,7 @@ This tutorial demonstrates how to
 2. Edit the output from the macro recorder so that it can be run on any open image
 3. Enclose the code from step 2 inside a loop so that it runs on multiple images
 4. Add some progress updates
-5. Add a dialogue so that a user can modify the parameters to the macro prior to execution
+5. Add a dialog so that a user can modify the parameters to the macro prior to execution
 
 > [!NOTE]
 > Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images, an example of which is shown below.
@@ -70,7 +70,7 @@ output = getDirectory("Select output directory");
 saveAs("PNG", output + "segmentation_output.png");
 ```
 There are three changes above:
-1. On the first line, the `open` argument that was previously passed to Bio-Formats has now been removed. As such, ImageJ will produce a File Open dialogue, asking the user to specify which image they wish to open with Bio-Formats
+1. On the first line, the `open` argument that was previously passed to Bio-Formats has now been removed. As such, ImageJ will produce a File Open dialog, asking the user to specify which image they wish to open with Bio-Formats
 2. On the second line, the `selectImage` command has been modified to select the first image window (assuming this is the channel with the nuclei signal). Alternatively, we could have modified the Bio-Formats Importer statement to only open the first channel in the image.
 3. The last two lines now ask the user to specify an output directory, before saving the segmentation mask.
 
@@ -224,9 +224,9 @@ setBatchMode(false);
 ```
 The `setBatchMode` statements cause ImageJ to enter, then exit, "Batch Mode", which suppresses image windows. This allows the macro to execute faster.
 
-# 5. Create a Dialogue to Obtain User Input
+# 5. Create a Dialog to Obtain User Input
 
-As an alternative to the `getDirectory` statements used above, it is possible to create a more functional, self-contained dialogue to receive input from the user.
+As an alternative to the `getDirectory` statements used above, it is possible to create a more functional, self-contained dialog to receive input from the user.
 
 ## 5.1 Specify inputs and outputs
 
@@ -250,11 +250,11 @@ The code above does three things:
 2. Create a dialog with two directory selection fields and buttons
 3. Obtain the specified input and output directories when the user closes the dialog by clicking `OK`. If he user clicks `Cancel`, the macro exits.
 
-Running the macro now should produce the following dialogue:
+Running the macro now should produce the following dialog:
 
-![Macro dialogue](../../media/tutorials/screenshot-macro-dialog-1.png)
+![Macro simple dialog](../../media/tutorials/screenshot-macro-dialog-1.png)
 
-## 5.2 Modifying parameters via a dialogue
+## 5.2 Modifying parameters via a dialog
 
 In addition to specifying input and output directories, there are a range of other controls that can be added to a dialog. For example, we can add fields allowing the user to specify...
 1. a filter radius for Gaussian smoothing
@@ -268,7 +268,7 @@ var output;
 var gaussRad = 1.0;
 var thresholdMethod = "Default";
 var allThreshMethods = getList("threshold.methods");
-var DAPIIndex = 1;
+var nucleiIndex = 1;
 
 Dialog.create("Batch Counting");
 Dialog.addDirectory("Input Directory:", inputDir);
@@ -284,7 +284,12 @@ nucleiIndex = Dialog.getNumber();
 gaussRad = Dialog.getNumber();
 thresholdMethod = Dialog.getChoice();
 ```
-For a full list of controls that can be added to a Dialog, see the [relevant macro language documentation](https://wsr.imagej.net/developer/macro/functions.html#dialog).
+> [!TIP]
+> For a full list of controls that can be added to a Dialog, see the [relevant macro language documentation](https://wsr.imagej.net/developer/macro/functions.html#dialog).
+
+Running the macro will now produce a dialog that looks like this:
+
+![Macro advanced dialog](../../media/tutorials/screenshot-macro-dialog-2.png)
 
 In order for the variables captured from the dialog to have any effect, we must modify the remainder of the code, placing the variables where they are needed:
 ```javascript
@@ -328,7 +333,7 @@ macro "Batch Nuclei Counter" {
 	var gaussRad = 1.0;
 	var thresholdMethod = "Default";
 	var allThreshMethods = getList("threshold.methods");
-	var DAPIIndex = 1;
+	var nucleiIndex = 1;
 	
 	// Create dialog to obtain input from user
 	Dialog.create("Batch Counting");
@@ -373,4 +378,4 @@ macro "Batch Nuclei Counter" {
 ```
 Find the _scripts_ folder within your ImageJ/FIJI installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
 
-![Macro dialogue](../../media/tutorials/screenshot-plugins-installed-macro.PNG)
+![Macro dialog](../../media/tutorials/screenshot-plugins-installed-macro.PNG)
