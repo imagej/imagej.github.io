@@ -335,7 +335,6 @@ macro "Batch Nuclei Counter" {
 	var allThreshMethods = getList("threshold.methods");
 	var nucleiIndex = 1;
 	
-	// Create dialog to obtain input from user
 	Dialog.create("Batch Counting");
 	Dialog.addDirectory("Input Directory:", inputDir);
 	Dialog.addDirectory("Output Directory:", output);
