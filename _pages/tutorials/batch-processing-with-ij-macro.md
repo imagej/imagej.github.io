@@ -250,4 +250,8 @@ The code above does three things:
 2. Create a dialog with two directory selection fields and buttons
 3. Obtain the specified input and output directories when the user closes the dialog by clicking `OK`. If he user clicks `Cancel`, the macro exits.
 
+Running the macro now should produce the following dialogue:
+
+![Macro dialogue](../../media/tutorials/screenshot-macro-dialog-1.png)
+
 # 6. Installing the Macro
