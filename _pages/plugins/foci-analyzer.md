@@ -66,9 +66,9 @@ The dialog has several (color-coded) sections that are discussed below. All sett
 
 ### File settings
 
-- _Input files_ : Here you can specify which files to analyze, by adding them to the list, or drag&drop from a file explorer window
+- _Input files_ : Here you can specify which files to analyze. Simply add them to the list using the buttons, or directly drag&drop from a file explorer window. Input images should be multichannel images. (RGB images will be converted to composite multichannel image with channels 1:Red, 2:Green; 3:Blue.) Each file should contain at least a channel with nuclei staining, and a channel with foci (though technically they can be the same). The file format can e.g. be `.tiff`, or any proprietary microscopy file format that Fiji (i.e. Bio-Formats) can open, including multiple images packed into a single file as series.
 
-- _Output folder_ : the folder where all the analyzed images and results will be written.
+- _Output folder_ : the folder where all the analyzed images and result output files will be written.
 
 ### Image settings
 
