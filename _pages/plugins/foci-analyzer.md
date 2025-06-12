@@ -15,6 +15,7 @@ team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
 Foci Analyzer is a comprehensive Fiji macro to detect, analyze and visualize nuclear/cellular foci in 2D/3D fluorescence microscopy images of cells and tissue.
+
 Foci are efficiently and reliably detected in images from different imaging modalities (confocal, widefield), with a wide range of resolutions.
 The output data include detailed tables with foci statistics and overlays of segmented cells with foci on the original image. Colocalization analysis is performed on images with two foci channels, and shown in insightful overlap maps.
 
