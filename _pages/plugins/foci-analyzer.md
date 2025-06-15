@@ -38,6 +38,9 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 4. Segmented nuclei and foci are visualized as overlays on the original images for easy inspection. If desired, foci detection settings (threshold bias, min/max size) can be adapted before processing all input images. A colocalization map is also created when two channels are measured.
 
 ## Installation / Requirements
+______
+**IMPORTANT NOTE**: Currently StarDist does not function with Fiji-Latest, due to a [TensorFlow issue](https://github.com/fiji/fiji/issues/393). For the time being, please use Fiji-Stable: select the 'Stable' distribution next to the large green download button on [https://fiji.sc/](https://fiji.sc/)).
+______
 
 [Activate](https://imagej.net/update-sites/following) the following Fiji update sites (in the menu bar, via Help -> Update...):
 - Foci-Analyzer
@@ -50,10 +53,6 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 - IJPB-plugins
 - StarDist
 - (TensorFlow) Due to a recent Fiji update, StarDist [may require the TensorFlow Update Site](https://forum.image.sc/t/stardist-error-since-update/107729) to function properly.
-
-______
-**IMPORTANT NOTE**: Currently StarDist does not function with Fiji-Latest, due to a [TensorFlow issue](https://github.com/fiji/fiji/issues/393). For the time being, please use Fiji-Stable: select the 'Stable' distribution next to the large green download button on [https://fiji.sc/](https://fiji.sc/)).
-______
 
 Run Foci Analyzer from the Fiji menu: `Plugins -> Foci Analyzer -> Foci Analyzer`.
 `Combine result files` can be used to pool output `.tsv` files into a single file/table.
