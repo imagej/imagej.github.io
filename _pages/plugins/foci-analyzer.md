@@ -56,7 +56,7 @@ Run Foci Analyzer from the Fiji menu: `Plugins -> Foci Analyzer -> Foci Analyzer
 
 In case you also want to use Cellpose segmentation you additionally need:
 - A working Cellpose (2.0 or higher) environment in Python (conda or venv)
-- Activated PTBIOP update site, with proper settings. See https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose
+- Activated PTBIOP update site, with proper settings. See [here](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose) for more details.
 
 
 ## Usage manual
