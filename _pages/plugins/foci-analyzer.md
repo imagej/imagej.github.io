@@ -51,6 +51,10 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 - StarDist
 - (TensorFlow) Due to a recent Fiji update, StarDist [may require the TensorFlow Update Site](https://forum.image.sc/t/stardist-error-since-update/107729) to function properly.
 
+______
+**IMPORTANT NOTE**: Currently StarDist does not function with Fiji-Latest, due to a [TensorFlow issue](https://github.com/fiji/fiji/issues/393). For the time being, please use Fiji-Stable: select the 'Stable' distribution next to the large green download button on [https://fiji.sc/](https://fiji.sc/)).
+______
+
 Run Foci Analyzer from the Fiji menu: `Plugins -> Foci Analyzer -> Foci Analyzer`.
 `Combine result files` can be used to pool output `.tsv` files into a single file/table.
 
