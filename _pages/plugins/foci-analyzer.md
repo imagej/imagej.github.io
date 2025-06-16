@@ -9,9 +9,9 @@ team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
 ---
 {%- assign github            = page.github            -%}
-{%- assign release-version   = page.release-version   -%} {%- comment -%} Most recent component release version                       {%- endcomment -%}
-{%- assign release-date      = page.release-date      -%} {%- comment -%} Most recent component release date                          {%- endcomment -%}
-{%- assign dev-status        = page.dev-status        -%} {%- comment -%} Unstable, Active, Stable, or Obsolete                       {%- endcomment -%}
+{%- assign release-version   = page.release-version   -%}
+{%- assign release-date      = page.release-date      -%}
+{%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
 Foci Analyzer is a comprehensive Fiji macro to detect, analyze and visualize nuclear/cellular foci in 2D/3D fluorescence microscopy images of cells and tissue.
