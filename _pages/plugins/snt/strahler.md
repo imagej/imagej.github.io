@@ -17,7 +17,7 @@ There are several entry points to Strahler Analysis in SNT. You can find those i
 <br/>
 <ol>
 <li><i>Strahler Analysis (Image)...</i> Direct parsing of skeletonized images, bypassing tracing (described on this page)</li>
-<li><i>Strahler Analysis (Tracings)...</i> Parsing of traced structures (described in 
+<li><i>Strahler Analysis (Tracings)...</i> Parsing of traced structures (described in
 <a href="/plugins/snt/analysis#strahler-analysis">Analysis › Strahler (Tracings)</a>)</li>
 <li><i>Strahler Analysis Scripts</i>  Batch processing of files</li>
 </ol>
@@ -38,7 +38,7 @@ Strahler numbering is a numerical procedure that summarizes the branching comple
 
 1. A (re)-skeletonization step to ensure that arbor remains represented by its centerlines
 2. an elimination step in which terminal-branches are pruned from the image
-3. An analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or a unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
+3. An analysis step in which pruned branches are counted and measured. The iteration ceases as soon as all branches have been eliminated or an unresolved [closed loop](#elimination-of-skeleton-loops) has been detected in the pruned arbor.
 
 ## Parameters
 
@@ -95,7 +95,7 @@ The plugin produces three types of results:
 {% include img align="right" width="800px" src="/media/plugins/snt/strahler-analysis-from-reconstructions.png" caption="[Strahler Analysis (Tracings)](/plugins/snt/analysis#strahler-analysis) provides more detailed quantifications at the expense of reconstruction." %}
 There are two major limitations with parsing images directly:
 
-1. Accuracy of skeletonization: The analysis can only be as accurate as the image segmentation. For many images (specially those depicting simpler structures) this may not be an issue, but you should always be critical of results obtained from ill-segmentation. If your images are not ameanable to direct parsing, consider reconstructing them in SNT beforehand
+1. Accuracy of skeletonization: The analysis can only be as accurate as the image segmentation. For many images (specially those depicting simpler structures) this may not be an issue, but you should always be critical of results obtained from ill-segmentation. If your images are not amenable to direct parsing, consider reconstructing them in SNT beforehand
 
 2. Simple morphometry: Because no reconstruction is performed, the type of measurements that is performed at each Strahler order is rather limited. For detailed morphometry, consider automatic reconstruction of the skeletonized image in SNT using the _Extract Paths from Segmented Image..._ command.
 

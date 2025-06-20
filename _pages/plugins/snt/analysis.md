@@ -31,7 +31,7 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 
 Notes on SNT charts and plots:
 
-- SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible. Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures
+- SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible. Right-click on a plot canvas to export it as vector graphics (PDF or SVG), access customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures
 
 - With simple charts, it is possible double-click on plotted components to edit them and export data as CSV
 
@@ -70,7 +70,7 @@ There are several entry points to Sholl Analysis in SNT. You can find those in t
 
 1. Sholl Analysis (Image): Direct parsing of images, bypassing tracing
 2. Sholl Analysis (Tracings): Parsing of reconstructions
-3. Sholl Analysis Scripts: These handle batch processing of files, specialized analysis, and misc. utilities 
+3. Sholl Analysis Scripts: These handle batch processing of files, specialized analysis, and misc. utilities
 
 Sholl Analysis has a dedicated [documentation page](./sholl) detailing [parameters](./sholl#parameters), [plots](./sholl#sholl-plots), and [metrics](./sholl#metrics).
 {% endcapture %}
@@ -98,7 +98,7 @@ NB: The default {% include key keys='Alt|Shift' %} modifier can be simplified in
 
 The Sholl dialog created by this approach is a variant of the dialog created by running the {% include bc path='Sholl|Sholl Analysis (From Tracings)...'%} from the _Neuroanatomy Shortcuts_ panel, with a couple of changes:
 
-1. Since the center of analysis is defined precisely on an image, radius step size can be previewed 
+1. Since the center of analysis is defined precisely on an image, radius step size can be previewed
 2. The *Path filtering* drop-down menu provides additional options to restrict the analysis to the subset of paths selected in the Path Manager
 3. The type of annotations is more specialized and includes:
    - **Color coded nodes** Intersection counts will be color mapped into path nodes under the _annotation LUT_.
@@ -159,7 +159,7 @@ This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog,
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/brain-analysis-combined-histograms.png | *Brain Area Frequencies...* in which *No. of tips* was tabulated across the motor cortext subregions associated with the four cells in the *File › Load Demo Dataset...  › MouseLight dendrites* demo dataset
+/media/plugins/snt/brain-analysis-combined-histograms.png | *Brain Area Frequencies...* in which *No. of tips* was tabulated across the motor cortex subregions associated with the four cells in the *File › Load Demo Dataset...  › MouseLight dendrites* demo dataset
 /media/plugins/snt/snt-brain-analysis-ipsi-contra.png | *Brain Area Frequencies...* of a single cell in which *Cable length* of axonal projections was tabulated across ipsilateral and contralateral hemisphere regions.  See the *Hemisphere Analysis* [notebook](https://github.com/morphonets/SNT/tree/main/notebooks) for details
 "
 %}
@@ -177,8 +177,8 @@ Annotations Graphs rely on brain annotations (i.e., neuropil labels) and are typ
 
 Prompts for generation of Annotation graphs, typically require a common set of inputs to be specified:
 
-- **Metric**: The morphometric trait defining connectivy (cable length, no. of tips, etc.)
-- **Cutoff value**: Brain areas associated with less than this quantity are excluded from the diagram. E.g., if metric is "No. of Tips" and this value is 10, only brain areas targetted by at least 11 tips are reported
+- **Metric**: The morphometric trait defining connectivity (cable length, no. of tips, etc.)
+- **Cutoff value**: Brain areas associated with less than this quantity are excluded from the diagram. E.g., if metric is "No. of Tips" and this value is 10, only brain areas targeted by at least 11 tips are reported
 - **Deepest ontology** The highest ontology level to be considered for neuropil labels. As a reference, the deepest level for mouse brain atlases is around 10. Setting this value to 0 forces SNT to consider all depths
 
 Other types of specialized graphs are described in [Graph-based Analysis](#graph-based-analysis).
@@ -186,7 +186,7 @@ Other types of specialized graphs are described in [Graph-based Analysis](#graph
 
 <span id="dendrogram-viewer"></span>
 # Graph-based Analysis
-Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
+Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects.
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The _Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG, and SVG.
 
@@ -233,7 +233,7 @@ Currently, _basic_ persistence homology descriptors can be computed using UI com
 
 # Delineation Analysis
 
-Delineations allow measuring proportions of recontructions within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Some of the questions that delineation analyses can answer include:
+Delineations allow measuring proportions of reconstructions within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Some of the questions that delineation analyses can answer include:
 
 - Do branching patterns of neurons change along strata (cell layers)?
 - Do branches near a lesion site differ from branches further away from it?
@@ -242,7 +242,7 @@ Delineations allow measuring proportions of recontructions within other structur
 Delineations are described in [Walkthroughs › Delineation Analysis](/plugins/snt/walkthroughs#delineation-analysis).
 
 # Root Angle Analysis
-Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or rootof the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
+Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or root of the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
 
 {% include citation doi='10.1016/j.celrep.2019.04.097' %}
 
@@ -250,7 +250,7 @@ A root angle is defined as the angle between a neurite segment (defined centripe
 
 - Root angles are computed centripetally for every node in the arbor in centripetal sequence (from tips to root)
 
-- The distribution of root angles is fitted to a [von Mises distribution](https://en.wikipedia.org/wiki/Von_Mises_distribution), a specialized probability distribution that models angles/directions. von Mises can be considered a 'wrapped normal', or a circular analogue of the normal distribution, as it addresses the issue of "wrapping" that occurs when dealing with angles revolving around a circle where 0° and 360° (2π) are the same. 
+- The distribution of root angles is fitted to a [von Mises distribution](https://en.wikipedia.org/wiki/Von_Mises_distribution), a specialized probability distribution that models angles/directions. von Mises can be considered a 'wrapped normal', or a circular analogue of the normal distribution, as it addresses the issue of "wrapping" that occurs when dealing with angles revolving around a circle where 0° and 360° (2π) are the same.
 
 - [Centripetal bias](./metrics#root-angles-centripetal-bias), [Balancing factor](./metrics#root-angles-balancing-factor), and [Mean direction](./metrics#root-angles-mean-direction) are then computed from the von Mises fit
 
