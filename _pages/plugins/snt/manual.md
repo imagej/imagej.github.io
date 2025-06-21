@@ -913,7 +913,7 @@ The filter toolbar allows paths to be searched and filtered quickly using tags, 
 The text field is used for text-based searches (recent searches can be recovered through its history drop-down menu). The <i class="fas fa-caret-up"></i> and <i class="fas fa-caret-down"></i> buttons find the next/previous occurrence of the entered phrase, while the <i class="fas fa-lightbulb"></i> button highlights all occurrences of the entered phrase.
 The trailing icons within the text field control case-sensitive matching and/or wildcard support. Currently, two wildcards are supported:
 
-- `?`: any single character, e.g., `b?g` matches "bag", and "big", but not "bang"
+- `?`: any single character, e.g., `b?g` matches "bag" and "big", but not "bang"
 - `*`: any string, e.g., `* arbor` matches both "axonal arbor" and "dendritic arbor"
 
 Other search settings can be accessed through the text field drop-down menu, including a replace-by-pattern option.
@@ -929,7 +929,7 @@ Allows filtering of Paths by SWC-type ID tags (axon, dendrite, glia process, etc
 Allows filtering of Paths by color tags
 
 #### Tag Filters <i class="fa fa-tag"></i>
-Allows filtering of tags set via the {% include bc path='Tag|Other...' %} command or the [Proofreading Toolbar](#proofreading-toolbar). The prompt will generate a multiple-choice list of the tags associated with the selected paths (all paths if none is selected). Simply selected those of interest.
+Allows filtering of tags set via the {% include bc path='Tag|Other...' %} command or the [Proofreading Toolbar](#proofreading-toolbar). The prompt will generate a multiple-choice list of the tags associated with the selected paths (all paths if none is selected).
 <img align="right" width="250px" src="/media/plugins/snt/snt-tag-filtering.png" title="Tag filtering (v5.0)" />
 
 #### Morphology Filters <i class="fa fa-ruler-combined"></i>
