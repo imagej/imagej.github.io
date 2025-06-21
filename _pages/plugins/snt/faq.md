@@ -32,7 +32,7 @@ In addition, you should also cite any additional modules that you may use:
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
-Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](https://doi.org/10.1093/bioinformatics/btr390), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji' repo='Simple_Neurite_Tracer' label='historic' %} and SNT's {% include github org='morphonets' repo='SNT' label='current' %} repositories.
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](https://doi.org/10.1093/bioinformatics/btr390), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modeling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji' repo='Simple_Neurite_Tracer' label='historic' %} and SNT's {% include github org='morphonets' repo='SNT' label='current' %} repositories.
 
 ### How accurate is SNT?
 
@@ -66,7 +66,7 @@ Unsupported and proprietary file formats can be converted to [SWC](#swc) using [
 Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
 
 ### How do I (batch) convert TRACES to SWC?
-Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from the Scripts menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy|'%} menu in the Script Editor. 
+Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from the Scripts menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy|'%} menu in the Script Editor.
 
 ### How can I improve SNT documentation?
 Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!

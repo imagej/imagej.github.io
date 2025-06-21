@@ -68,11 +68,11 @@ In this mode (bitmap analysis), the plugin requires a [binary image or a segment
 
 The center of analysis can be specified using one of three possibilities:
 
-1. Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [Ending radius](#end-radius) are automatically set, and 2) Horizontal/vertical lines (created by holding {% include key key='Shift' %} while using the Straight Line Selection Tool) can be used to [restrict analysis to sub-regions](#restrict) of the image.  
+1. Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [Ending radius](#end-radius) are automatically set, and 2) Horizontal/vertical lines (created by holding {% include key key='Shift' %} while using the Straight Line Selection Tool) can be used to [restrict analysis to sub-regions](#restrict) of the image.
 
-2. Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [batch processing](#batch-processing) of images with different dimensions with undefined [Ending radius](#end-radius).  
+2. Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [batch processing](#batch-processing) of images with different dimensions with undefined [Ending radius](#end-radius).
 
-3. Multipoint selection:A Multi-point selection (multipoint counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.  
+3. Multipoint selection:A Multi-point selection (multipoint counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [ramification indices](#schoenen-sampled)). Suitable for cases in which [inference from starting radius](#primary-branches) is not effective.
 
 {% include img align="center" name="sholl plots" src="/media/plugins/snt/shollanalysisstartuprois.png" %}
 
@@ -228,7 +228,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 - <span id="normalizer"></span>**Normalizer** The property of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles. Default is area (2D images)/volume (3D images). It is [described below](#methods-table).
 
 ### Output Options
-<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Defines which kind of annotations should be output, including: 
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Defines which kind of annotations should be output, including:
 
 - **Plots** The type of plot(s) to be output. In addition to the [Linear and Normalized profiles](#methods-table) and their cumulative variants, it is also possible to obtain integrated density plots when parsing images. In this case rather than reporting on intersections, these plots report on normalized integrated density (sum of all voxel intensities) along the sampling shell normalized to the perimeter/surface of the shell.
 
@@ -242,7 +242,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 
   - **Mask** A 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle
 
-- **Save files** If checked, outputs are saved to the specified directory. Files are named after the image filename . 
+- **Save files** If checked, outputs are saved to the specified directory. Files are named after the image filename .
 
 -   **Show fitting details** - Choose this option to have all the parameters of the simplex fitting printed to the Log window. The {% include wikipedia title='Coefficient of determination' text='coefficient of determination'%} (*R<sup>2</sup>*, a measure of goodness of fit) is always stored in the *Sholl Results* table even when this option is not selected
 
@@ -333,22 +333,22 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
   </tbody>
 </table>
 
-<span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*  
+<span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*
 <span style="display: inline-block; width: 25px"> </span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius *r*
 
 <span style="display: inline-block; width: 25px">***r***</span> Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)
 
 <span style="display: inline-block; width: 25px">***log***</span> Natural logarithm, the logarithm to the base *e*
 
-<span style="display: inline-block; width: 25px">***S***</span>The [property](#normalization) of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles.  
-<span style="display: inline-block; width: 25px"> </span>For 2D images, the *Perimeter* of the sampling circumference (2πr) or the *Area* of the corresponding circle (πr<sup>2</sup>)  
-<span style="display: inline-block; width: 25px"> </span>For 3D images, the *Surface* of the sampling sphere (4πr<sup>2</sup>) or its respective *Volume* (4/3πr<sup>3</sup>)  
+<span style="display: inline-block; width: 25px">***S***</span>The [property](#normalization) of the sampling shell to be used in the normalization of *Linear-norm*, *Semi-log*, and *Log-log* profiles.
+<span style="display: inline-block; width: 25px"> </span>For 2D images, the *Perimeter* of the sampling circumference (2πr) or the *Area* of the corresponding circle (πr<sup>2</sup>)
+<span style="display: inline-block; width: 25px"> </span>For 3D images, the *Surface* of the sampling sphere (4πr<sup>2</sup>) or its respective *Volume* (4/3πr<sup>3</sup>)
 <span style="display: inline-block; width: 25px"> </span>*Annulus*/*Spherical shell* normalization is also available when performing [non-continuous sampling](#step-size). In this case, the normalization is performed against the area/volume between circumferences/spheres at *r* ± *Radius step size*/2
 
 
 # Metrics
 
-Morphometric descriptors and other properties of the arbor are printed to the measurements table. Output is customizable using the _detailed metrics_ checkbox in *Options & Preferences...* . See 
+Morphometric descriptors and other properties of the arbor are printed to the measurements table. Output is customizable using the _detailed metrics_ checkbox in *Options & Preferences...* . See
 
 ## Metrics based on sampled data
 
@@ -427,7 +427,7 @@ For more information on image processing routines have a look at [tutorials](/tu
 This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by *Sholl Analysis*. Since *image segmentation* (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets.
 
 
-## Noise  
+## Noise
 
 Noise can be mitigated through the usage of processing filters. Specially useful are edge-preserving filters:
 - [Tubeness](/plugins/tubeness) and [Frangi](/plugins/frangi), see SNT's [Secondary Layer Wizard](/plugins/snt/manual#tracing-on-secondary-image)
@@ -438,7 +438,7 @@ Noise can be mitigated through the usage of processing filters. Specially useful
 - Shen-Castan Edge Detector ([BAR](/plugins/bar) plugin), {% include bc path="BAR | Segmentation |" %}
 - Frequency filters, e.g., {% include bc path="Process | FFT | Bandpass Filter..." %}
 
-## Uneven Illumination  
+## Uneven Illumination
 
 Uneven illumination problems, typically associated with [wide field microscopy](http://imagejdocu.list.lu/doku.php?id=howto:working:how_to_correct_background_illumination_in_brightfield_microscopy), do occur in confocal microscopy when signal from deep layers of the tissue is not captured as bright as with superficial layers. This signal attenuation along the Z-axis will generate a shaded gradient across the stack that [histogram-based segmentation](#automated-segmentation) will need to take into account. While these problems are better tackled during acquisition (e.g., using laser ramping), it is possible to mitigate this effect using histogram-normalization techniques. E.g.:
 
@@ -446,7 +446,7 @@ Uneven illumination problems, typically associated with [wide field microscopy](
 - [Bleach Correction](/plugins/bleach-correction), {% include bc path="Image | Adjust |" %}
 - [Attenuation correction](http://imagejdocu.list.lu/doku.php?id=plugin:stacks:attenuation_correction:start)
 
-## Segmentation  
+## Segmentation
 
 It is possible to adopt more sophisticated [segmentation algorithms](/imaging/segmentation) when [global thresholding methods](/plugins/auto-threshold) do not yield satisfactory results. Examples:
 - [Machine learning algorithms](machine-learning) (semantic segmentation)
@@ -528,7 +528,7 @@ Overlay.activateSelection( Overlay.size - 1 );
 run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 {% endhighlight %}
 
-That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %} 
+That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %}
 
 
 ## Examples:
@@ -581,7 +581,7 @@ Counting intersections is really a binary procedure: a shell either intercepts a
 <dl>
 <dd markdown="1">
 
-Image segmentation has always been [required](#faq:threshold). In its early implementations, the program dealt solely with binary images and used the intensity at the center of the analysis to decide how to segregate objects from background. This approach was very restringent: It assumed that the pixels representing the neuron would have the same (constant!) intensity that was not to be found in the remaining background. As the program became aware of grayscale images, this "feature" had to be removed because a single intensity can no longer be used to infer which parts of the image should be analyzed.
+Image segmentation has always been [required](#faq:threshold). In its early implementations, the program dealt solely with binary images and used the intensity at the center of the analysis to decide how to segregate objects from background. This approach was very stringent: It assumed that the pixels representing the neuron would have the same (constant!) intensity that was not to be found in the remaining background. As the program became aware of grayscale images, this "feature" had to be removed because a single intensity can no longer be used to infer which parts of the image should be analyzed.
 
 </dd>
 </dl>

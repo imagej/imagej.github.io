@@ -102,7 +102,7 @@ The depth of the bounding box embedding the structure being measured
 
 <span id="e"></span>
 ##### Extension angle
-The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across allcoordinates on either the XY, XZ, or ZY plane. Extension angles can be _absolute_ or _relative_ (_rel._):
+The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across all coordinates on either the XY, XZ, or ZY plane. Extension angles can be _absolute_ or _relative_ (_rel._):
 
 - _Absolute angles_ are measured with respect to a fixed reference and range from [0°-360°[ under a _West-clockwise_ convention (W: 0°; N: 90°; E: 180°; S: 270°)
 
@@ -116,7 +116,7 @@ The height of the bounding box embedding the structure being measured
 The average bifurcation ratio of [Strahler bifurcation ratios](https://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio)
 
 ##### Horton-Strahler root number
-The highest Horton-Strahler number of a tree, i.e., the Horton-Strahler number of its root node 
+The highest Horton-Strahler number of a tree, i.e., the Horton-Strahler number of its root node
 
 <span id="i"></span>
 ##### Inner branches
@@ -136,7 +136,7 @@ The absolute [extension angle](#extension-angle) of [inner branches](#inner-bran
 The length of [inner branches](#inner-branches)
 
 ##### Internode angle
-The angle (in degrees, 0-360 range) between a node and its immediate neighbors. I.e., if node B is preceeded by node A and followed by node C, the internode angle at position B is defined as the angle between vecors AB and BC: $$\angle (\overrightarrow{AB}, \overrightarrow{BC})$$
+The angle (in degrees, 0-360 range) between a node and its immediate neighbors. I.e., if node B is preceded by node A and followed by node C, the internode angle at position B is defined as the angle between vectors AB and BC: $$\angle (\overrightarrow{AB}, \overrightarrow{BC})$$
 
 ##### Internode distance
 The distance between nodes defining a branch or a Path. Can be retrieved as _squared internode distance_ when faster computations are required
@@ -209,7 +209,7 @@ The radius at each node, typically obtained from [fitting procedures](/plugins/s
 
 <span id="p"></span>
 ##### Partition asymmetry
-L-measure metric[^2]. Computed at each bifurcation point of the structure being measured. Note that branch points with more than 2 children are ignored. Given $$n1, n2$$ the number of tips on each side of a bifurcation point, Partition asymmetry is defined as: $$\frac{abs(n1-n2)}{(n1+n2-2)}$$. 
+L-measure metric[^2]. Computed at each bifurcation point of the structure being measured. Note that branch points with more than 2 children are ignored. Given $$n1, n2$$ the number of tips on each side of a bifurcation point, Partition asymmetry is defined as: $$\frac{abs(n1-n2)}{(n1+n2-2)}$$.
 
 ##### Path channel
 The color channel associated with a path (multidimensional images)

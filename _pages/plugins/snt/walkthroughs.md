@@ -157,11 +157,11 @@ The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 
 - Select *New with image...* from the *Viewer* drop-down menu and press *Apply*. Note that you can re-use existing viewers you may have open by choosing their window titles from the drop-down menu. NB: Selecting *New without image* would only allow you to look at reconstructions without the underlying signal.
 
-- Large images may require downsampling for performance reasons. Once you *Apply* the viewer choice, a prompt will appear asking you to choose the downsampling factor for the image. E.g., a value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction. Note that while downsampling speeds up rendering it often results in signal smoothing. Volumes should look crisper without downsampling. Original pixels are used with a resampling factor of 1. 
+- Large images may require downsampling for performance reasons. Once you *Apply* the viewer choice, a prompt will appear asking you to choose the downsampling factor for the image. E.g., a value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction. Note that while downsampling speeds up rendering it often results in signal smoothing. Volumes should look crisper without downsampling. Original pixels are used with a resampling factor of 1.
 
 - Once the downsampling factor is specified, the viewer window will appear with the currently open image (i.e., the current Channel/Frame being traced as specified in the [Data Source](/plugins/snt/manual#data-source) widget).
 
-- Options in the _Mode_ drop-down menu specify how paths should be rendered. There are three possibilities: 1) *Lines*: Only the centerline of paths is displayed; 2) *Lines and disks*: Centerline of paths is displayed with disks at each node depicting the node radius;  and 3) *Surface reconstruction*: Paths are dispayed as surface meshes.
+- Options in the _Mode_ drop-down menu specify how paths should be rendered. There are three possibilities: 1) *Lines*: Only the centerline of paths is displayed; 2) *Lines and disks*: Centerline of paths is displayed with disks at each node depicting the node radius;  and 3) *Surface reconstruction*: Paths are displayed as surface meshes.
 
 {% include notice highlight-color="#67A1FE" background-color="#EBF2F8" content="It is recommended to render color coded paths in either [Reconstruction Plotter](./manual#reconstruction-plotter) or [Reconstruction Viewer](./reconstruction-viewer) because the algorithms that allow paths to be [mapped to lookup tables ](./manual#color-mapping-) have not been ported to the Legacy 3D Viewer." %}
 
@@ -280,7 +280,7 @@ NB:
   - Create a freehand area ROI around the path(s) of interest
   - Run ImageJ's {% include bc path='Process|Find Maxima...' %}. Detection will be restricted to freehand selection
 
-- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROis for future reference
+- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROIs for future reference
 
 - ImageJ has several ways to expedite handling of multipoint ROIs:
   - {% include key key='left click' %} on a point and drag to move it
@@ -300,9 +300,9 @@ You can use one of two demo datasets ({% include bc path='File|Load Demo Dataset
 
 {% include img align="right" name="Drift correction" src="/media/plugins/snt/snt-timelapse-drift-correction.png" caption="**Mitigation of motion artifacts**. Left: Projection of inter-frame differences across the original time-lapse sequence. Right: Inter-frame differences of the same time-lapse after 3D drift correction. Neurite displacements are color coded with warmer hues indicating higher motility. Note how lateral motion around the soma and along the longest extending neurite (lower left) has been minimized. Hue ramp has been scaled to the smallest (min) and largest (max) displacements in the sequence." %}
 
-The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts. 
+The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts.
 
-SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well as existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highligths the type of mitigation you should expect.
+SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well as existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highlights the type of mitigation you should expect.
 
 Once undesired motion has been mitigated:
 
@@ -322,7 +322,7 @@ Once undesired motion has been mitigated:
 
     - **Frame range** Only paths associated with these frames will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
 
-    - **Matching criteria** These are a series of conditions that matching paths must fulfill. Some require no further adjustments (e.g., _channel_, _path order_, _type tag_, _color tag_) while others have configurable settings. Criteria can be combined E.g., if _channel_ and _type tag_ are selected, paths need to share the same channel and the same type tag ('Axon', 'Dendrite', etc.) to be matched. 
+    - **Matching criteria** These are a series of conditions that matching paths must fulfill. Some require no further adjustments (e.g., _channel_, _path order_, _type tag_, _color tag_) while others have configurable settings. Criteria can be combined E.g., if _channel_ and _type tag_ are selected, paths need to share the same channel and the same type tag ('Axon', 'Dendrite', etc.) to be matched.
 
        The criteria with configurable settings are perhaps the most commonly used:
 
@@ -370,7 +370,7 @@ First, select the one or more paths that you want to fill out from in the Path M
 
 The filler continues to explore the image until you click "Pause" or "Stop" in the dialog, or until all the image has been fully explored. However, the fill which is shown only includes those points up to a certain threshold distance from the path. Note that this "distance" doesn't mean a real physical distance, but instead a 'likelihood-distance': a measure which takes into account the intensity values of the pixels which must be [passed through when moving away from the path](#iii-understanding-fill-distances-and-distance-threshold). Information about the current threshold and the progress of the search is shown in the dialog. Note that if your image is rather small, the entire image may be fully explored before you have time to interact with prompt.
 <img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />
-The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". 
+The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet".
 
 The _Search status_ shows your current [threshold distance](#iii-understanding-fill-distances-and-distance-threshold): so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and highlighted in green in the image). The "Max. explored distance:" shows the maximum distance from the path that has been completely explored.
 
@@ -388,9 +388,9 @@ We will assume that you want to use the first of these approaches:
 
 - It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for.
 
-- Since the solid green fill obscures the intensity value of the points in the fill, you may want to activate the _Transparent overlay_ checkbox. Note that this _could_ slow down filling, although the performance hit is usually negligible. 
+- Since the solid green fill obscures the intensity value of the points in the fill, you may want to activate the _Transparent overlay_ checkbox. Note that this _could_ slow down filling, although the performance hit is usually negligible.
 
-- As you can see in the middle image, the threshold is set too far from the path, since there are many background voxels under the green fill, as well as voxels on different paths than those of interest. Experiment with clicking on different locations closer to the path in order to adjust the threshold until you are satisfied with thr result. You might end up with something like the rightmost image:
+- As you can see in the middle image, the threshold is set too far from the path, since there are many background voxels under the green fill, as well as voxels on different paths than those of interest. Experiment with clicking on different locations closer to the path in order to adjust the threshold until you are satisfied with the result. You might end up with something like the rightmost image:
 
 <div align="center">
   <img src="/media/plugins/snt/snt-zoomed-filling-2.png" title="Fill, opaque" width="250" alt="Fill, opaque" />
@@ -413,7 +413,7 @@ While adjusting the _distance threshold_ is the single most effective way to imp
 
 - **Adopt secondary layers**: Currently, the filler only looks at pixel intensities, and thus likelihood is a simple comparison of gray value intensities, but note that other _features_ can be used by the algorithm, when a [secondary tracing layer](/plugins/snt/manual#tracing-on-secondary-image-layer) is used. E.g., If the filling occurs in a [Tubeness](/plugins/tubeness) flavor of the image, then distances reflect likelihoods of association with tube-like structures.
 
-- **Optimize center-lines**: Since center-line pixes function as seeds, ensuring they follow closely the curvatures of the fluorescence signal using [Path fitting](/plugins/snt/manual#refinefit) may improve the result
+- **Optimize center-lines**: Since center-line pixels function as seeds, ensuring they follow closely the curvatures of the fluorescence signal using [Path fitting](/plugins/snt/manual#refinefit) may improve the result
 
 ### IV. Completing the Fill
 
@@ -423,7 +423,7 @@ If the search is still active, you might as well click "Pause" so halt explorati
 
 - Discard the fill by either clicking "Cancel/Discard" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete"
 
-### V. Exporting 
+### V. Exporting
 
 - The "Export" button provides several export options, including:
 
@@ -488,7 +488,7 @@ ROIs generated programmatically or in bulk outside SNT can be applied in a singl
 
 
 ## Creating Delineations from Atlas Annotations
-Delineations can also be created from [neuropil annotations](/plugins/snt/analysis#atlas-based-analysis) using the _Import Assignments from Atlas Annotation_ option from the Options (gear) menu. In this case delineations are created from selected brain compartments associated with the cell(s) being analyzed. Note that this requires cells to be tagged by atlas annotations. Currently only cells downloaded directly from the MouseLight database fullfill this criterion.
+Delineations can also be created from [neuropil annotations](/plugins/snt/analysis#atlas-based-analysis) using the _Import Assignments from Atlas Annotation_ option from the Options (gear) menu. In this case delineations are created from selected brain compartments associated with the cell(s) being analyzed. Note that this requires cells to be tagged by atlas annotations. Currently only cells downloaded directly from the MouseLight database fulfill this criterion.
 
 
 ## Editing Delineations
@@ -511,7 +511,7 @@ In addition to defined delineations, plots and tables may include two other cate
 
 - _Non-delineated_: This category corresponds to all the path sections that remained in-between or outside delineations. _Non-delineated_ sections are labeled by [outside color](#editing-delineations)
 
-- _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors 
+- _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors
 
 {% include notice icon="info" content="Topological constraints may not allow certain metrics to be computed for a particular delineation. E.g., a metric that requires a [graph-theoretic tree](./analysis#graph-based-analysis) may not be computed for a delineation defined by a non-contiguous ROI." %}
 
