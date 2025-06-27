@@ -6,8 +6,8 @@ categories: [Uncategorized]
 release-date: "January 2019"
 initial-release-date: "April 2012"
 dev-status: "stable, active"
-team-founder: 'CIMA | https://cima.unav.edu/'
-team-maintainer: 'Mikel Ariz | mailto:mikelariz@unav.es'
+team-founder: 'CIMA | https://cima.cun.es/investigacion/plataformas-tecnologicas/plataforma-imagen/desarrollo-software'
+team-maintainer: 'Tomás Muñoz Santoro | mailto:tmsantoro@unav.es'
 ---
 
 {% include info-box publications=' [JLR](http://www.jlr.org/content/53/12/2791.short)' category='Segmentation' %}
