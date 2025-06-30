@@ -474,6 +474,10 @@ This widget provides an entry point to a dedicated [Reconstruction Viewer](/plug
 
 This option assumes [sciview](/plugins/sciview) to be successfully installed. sciview is a modern replacement for the [Legacy 3D Viewer](#legacy-3d-viewer), providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. sciview scenes support image volumes, meshes, and paths, as well as integration with [Cx3D](https://github.com/morphonets/cx3d). The latter enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
 
+### Big Volume Viewer
+
+Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](https://imagej.net/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Currently, support for Big Volume Viewer remains highly experimental.
+    
 ### Legacy 3D Viewer
 
 The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. That being said, SNTv5 has implemented several improvements that have restored/improved Legacy 3D Viewer functionality relatively to earlier versions. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/walkthroughs#tracing-in-the-legacy-3d-viewer).
