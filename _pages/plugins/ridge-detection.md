@@ -36,9 +36,9 @@ There are three parameters which **have to** be specified. These are the mandato
 
 **Sigma:** Determines the sigma for the derivatives. It depends on the line width.
 
-**Lower Threshold:** Line points with a response smaller as this threshold are rejected
+**Lower Threshold:** The lower hysteresis threshold. Line points with a response less than this threshold are rejected.
 
-**Upper Threshold:** Line points with a response larger as this threshold are accepted.
+**Upper Threshold:** The uppter hysteresis threshold. Line points with a response greater than this threshold are accepted. Points with a response less than this threshold but above the lower threshold are accepted **if** connected to an accepted point.
 
 **Darkline:** (true/false) This parameter determines whether dark or bright lines are extracted.
 
