@@ -1,20 +1,22 @@
 {% raw %}
 
 <style>
-table.download {
-  font-size: 1rem;
-  width: auto;
+div.download {
   display: inline-block;
-  margin-right: 1em;
   vertical-align: top;
 }
-table.download tr.header th {
+div.download table {
+  font-size: 1rem;
+  width: auto;
+  margin-right: 1em;
+}
+div.download table tr.header th {
   font-weight: bolder;
   background: #65a4e3;
   color: #fff;
   padding: 0.7em;
 }
-table.download th {
+div.download table th {
   text-align: center;
   text-wrap: nowrap;
   line-height: 1em;
@@ -22,27 +24,36 @@ table.download th {
   padding: 0.4em;
   font-variant: small-caps;
 }
-table.download td {
+div.download table td {
   font-size: 0.8rem;
   text-align: center;
 }
 @media (min-width: 350px) {
-  table.download td {
+  div.download table td {
     padding-left: 1em;
     padding-right: 1em;
   }
 }
-table.download button {
+div.download table button {
   font-size: 0.7rem;
   padding: 0 0.5em 0 0.3em;
   margin: 0.1em;
 }
-table.download tr.new-section {
+div.download table tr.new-section {
   border-top: 1px solid gray;
+}
+div.download div.sysreq {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+div.download div.sysreq li {
+  padding-bottom: 0.3rem;
 }
 </style>
 <div>
-<table class="download">
+
+<div class="download">
+<table>
 <tbody>
   <tr class="header"><th colspan=4>Latest Downloads</th></tr>
   <tr>
@@ -123,8 +134,16 @@ table.download tr.new-section {
   </tr>
 </tbody>
 </table>
+<div class="sysreq" markdown=1>
+- Windows 10 or later, x86-64 or arm64
+- macOS 11 "Big Sur" or later, Apple Silicon or Intel
+- Ubuntu 22.04 LTS or later, x86-64 or arm64
+- Any other system with a Java 21 runtime, except<br>plugins using native libraries (e.g. [3D Viewer](https://imagej.net/plugins/3d-viewer))
+</div>
+</div>
 
-<table class="download">
+<div class="download">
+<table>
 <tbody>
   <tr class="header"><th colspan=4>Stable Downloads</th></tr>
   <tr>
@@ -187,6 +206,13 @@ table.download tr.new-section {
   </tr>
 </tbody>
 </table>
+<div class="sysreq" markdown=1>
+- Windows XP or later, x86-64 or x86-32
+- Mac OS X 10.8 "Mountain Lion" or later in Intel mode
+- Linux on x86-64
+- Any other system with a Java 8 runtime, except<br>plugins using native libraries (e.g. [3D Viewer](https://imagej.net/plugins/3d-viewer))
+</div>
+</div>
 
 </div>
 {% endraw %}
