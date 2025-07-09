@@ -44,84 +44,51 @@ table.download tr.new-section {
 <div>
 <table class="download">
 <tbody>
-  <tr class="header"><th colspan=5>Latest Downloads</th></tr>
+  <tr class="header"><th colspan=4>Latest Downloads</th></tr>
   <tr>
     <th>&nbsp;</th>
     <th>OS</th>
     <th>Arch</th>
-    <th>Java</th>
     <th>Download</th>
   </tr>
 
   <!-- Linux x86-64 -->
   <tr class="new-section">
-    <td rowspan=4><img alt="Linux" src="/media/icons/linux.svg" width="24" height="24"></td>
-    <td rowspan=4>Linux</td>
-    <td rowspan=2>x86-64</td>
-    <td>JDK</td>
+    <td rowspan=2><img alt="Linux" src="/media/icons/linux.svg" width="24" height="24"></td>
+    <td rowspan=2>Linux</td>
+    <td>x86-64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-linux64-jdk.zip"><button class="download" title="Download fiji-latest-linux64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-linux64-jdk.zip"><button class="download" title="Download fiji-latest-linux64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-linux64-jre.zip"><button class="download" title="Download fiji-latest-linux64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-linux64-jre.zip"><button class="download" title="Download fiji-latest-linux64-jre from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
 
   <!-- Linux arm64 -->
   <tr class="new-section">
-    <td rowspan=2>arm64</td>
-    <td>JDK</td>
+    <td>arm64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-linux-arm64-jdk.zip"><button class="download" title="Download fiji-latest-linux-arm64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-linux-arm64-jdk.zip"><button class="download"  title="Download fiji-latest-linux-arm64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-linux-arm64-jre.zip"><button class="download" title="Download fiji-latest-linux-arm64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-linux-arm64-jre.zip"><button class="download" title="Download fiji-latest-linux-arm64-jre from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
 
   <!-- macOS x86-64 -->
   <tr class="new-section">
-    <td rowspan=4><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></td>
-    <td rowspan=4>macOS</td>
-    <td rowspan=2>x86-64</td>
-    <td>JDK</td>
+    <td rowspan=2><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></td>
+    <td rowspan=2>macOS</td>
+    <td>x86-64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-macos64-jdk.zip"><button class="download" title="Download fiji-latest-macos64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-macos64-jdk.zip"><button class="download" title="Download fiji-latest-macos64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-macos64-jre.zip"><button class="download" title="Download fiji-latest-macos64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-macos64-jre.zip"><button class="download" title="Download fiji-latest-macos64-jre from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
 
   <!-- macOS arm64 -->
   <tr class="new-section">
-    <td rowspan=2>arm64</td>
-    <td>JDK</td>
+    <td>arm64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-macos-arm64-jdk.zip"><button class="download" title="Download fiji-macos-arm64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-macos-arm64-jdk.zip"><button class="download" title="Download fiji-latest-macos-arm64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-macos-arm64-jre.zip"><button class="download" title="Download fiji-macos-arm64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-macos-arm64-jre.zip"><button class="download" title="Download fiji-latest-macos-arm64-jre from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
 
@@ -129,27 +96,27 @@ table.download tr.new-section {
   <tr class="new-section">
     <td rowspan=2><img alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></td>
     <td rowspan=2>Windows</td>
-    <td rowspan=2>x86-64</td>
-    <td>JDK</td>
+    <td>x86-64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-win64-jdk.zip"><button class="download" title="Download fiji-latest-win64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-win64-jdk.zip"><button class="download" title="Download fiji-latest-win64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
+
+  <!-- Windows arm64 -->
+  <tr class="new-section">
+    <td>arm64</td>
     <td>
-      <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-win64-jre.zip"><button class="download" title="Download fiji-win64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-win64-jre.zip"><button class="download" title="Download fiji-latest-win64-jre from UK server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-win-arm64-jdk.zip"><button class="download" title="Download fiji-latest-win-arm64-jdk from US server"><b>&#x2913;</b> US</button></a>
+      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-win-arm64-jdk.zip"><button class="download" title="Download fiji-latest-win-arm64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
 
   <!-- Portable -->
   <tr class="new-section">
     <td><img alt="Portable" src="/media/icons/fiji.png" width="24" height="24"></td>
-    <td colspan=2>Portable</td>
-    <td>None</td>
-    <td colspan=2>
+    <td colspan=2>Portable (no JDK)</td>
+    <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-portable-nojava.zip"><button class="download" title="Download fiji-latest-portable-nojava from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-portable-nojava.zip"><button class="download" title="Download fiji-latest-portable-nojava from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
@@ -159,95 +126,61 @@ table.download tr.new-section {
 
 <table class="download">
 <tbody>
-  <tr class="header"><th colspan=5>Stable Downloads</th></tr>
+  <tr class="header"><th colspan=4>Stable Downloads</th></tr>
   <tr>
     <th>&nbsp;</th>
     <th>OS</th>
     <th>Arch</th>
-    <th>Java</th>
     <th>Download</th>
   </tr>
 
   <!-- Linux x86-64 -->
   <tr class="new-section">
-    <td rowspan=2><img alt="Linux" src="/media/icons/linux.svg" width="24" height="24"></td>
-    <td rowspan=2>Linux</td>
-    <td rowspan=2>x86-64</td>
-    <td>JDK</td>
+    <td><img alt="Linux" src="/media/icons/linux.svg" width="24" height="24"></td>
+    <td>Linux</td>
+    <td>x86-64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-linux64-jdk.zip"><button class="download" title="Download fiji-stable-linux64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-linux64-jdk.zip"><button class="download" title="Download fiji-stable-linux64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-linux64-jre.zip"><button class="download" title="Download fiji-stable-linux64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-linux64-jre.zip"><button class="download" title="Download fiji-stable-linux64-jre from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
 
   <!-- macOS x86-64 -->
   <tr class="new-section">
-    <td rowspan=2><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></td>
-    <td rowspan=2>macOS</td>
-    <td rowspan=2>x86-64</td>
-    <td>JDK</td>
+    <td><img alt="macOS" src="/media/icons/macos.png" width="24" height="24"></td>
+    <td>macOS</td>
+    <td>x86-64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-macosx-jdk.zip"><button class="download" title="Download fiji-stable-macosx-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-macosx-jdk.zip"><button class="download" title="Download fiji-stable-macosx-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-macosx-jre.zip"><button class="download" title="Download fiji-stable-macosx-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-macosx-jre.zip"><button class="download" title="Download fiji-stable-macosx-jre from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
 
   <!-- Windows x86-64 -->
   <tr class="new-section">
-    <td rowspan=4><img alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></td>
-    <td rowspan=4>Windows</td>
-    <td rowspan=2>x86-64</td>
-    <td>JDK</td>
+    <td rowspan=2><img alt="Windows" src="/media/icons/windows.svg" width="24" height="24"></td>
+    <td rowspan=2>Windows</td>
+    <td>x86-64</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-win64-jdk.zip"><button class="download" title="Download fiji-stable-win64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-win64-jdk.zip"><button class="download" title="Download fiji-stable-win64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-win64-jre.zip"><button class="download" title="Download fiji-stable-win64-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-win64-jre.zip"><button class="download" title="Download fiji-stable-win64-jre from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
 
   <!-- Windows x86-32 -->
   <tr class="new-section">
-    <td rowspan=2>x86-32</td>
-    <td>JDK</td>
+    <td>x86-32</td>
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-win32-jdk.zip"><button class="download" title="Download fiji-stable-win32-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-win32-jdk.zip"><button class="download" title="Download fiji-stable-win32-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-    </td>
-  </tr>
-  <tr>
-    <td>JRE</td>
-    <td>
-      <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-win32-jre.zip"><button class="download" title="Download fiji-stable-win32-jre from US server"><b>&#x2913;</b> US</button></a>
-      <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-win32-jre.zip"><button class="download" title="Download fiji-stable-win32-jre from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
   </tr>
 
   <!-- Portable -->
   <tr class="new-section">
     <td><img alt="Portable" src="/media/icons/fiji.png" width="24" height="24"></td>
-    <td colspan=2>Portable</td>
-    <td>None</td>
-    <td colspan=2>
+    <td colspan=2>Portable (no JDK)</td>
+    <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-portable-nojava.zip"><button class="download" title="Download fiji-stable-portable-nojava from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-portable-nojava.zip"><button class="download" title="Download fiji-stable-portable-nojava from UK server"><b>&#x2913;</b> UK</button></a>
     </td>
