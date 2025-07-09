@@ -9,16 +9,16 @@ title: Fiji Downloads
 ## System requirements
 
 Fiji-Latest runs on:
--   Windows 10 or later on x86-64
+-   Windows 10 or later on x86-64 or arm64
 -   macOS 11 "Big Sur" or later, Apple Silicon or Intel
 -   Ubuntu 22.04 LTS or later on x86-64 or arm64
--   Any other system with a Java 21 runtime, except for plugins using native libraries (e.g. [3D Viewer](https://imagej.net/plugins/3d-viewer)
+-   Any other system with a Java 21 runtime, except for plugins using native libraries (e.g. [3D Viewer](https://imagej.net/plugins/3d-viewer))
 
 Fiji-Stable runs on:
 -   Windows XP or later on x86-64 or x86-32
 -   Mac OS X 10.8 "Mountain Lion" or later in x86/Intel mode
 -   Linux on x86-64
--   Any other system with a Java 8 runtime, except for plugins using native libraries (e.g. [3D Viewer](https://imagej.net/plugins/3d-viewer)
+-   Any other system with a Java 8 runtime, except for plugins using native libraries (e.g. [3D Viewer](https://imagej.net/plugins/3d-viewer))
 
 ## Installation
 
