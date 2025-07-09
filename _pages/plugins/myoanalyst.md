@@ -1,5 +1,4 @@
 ---
-mediawiki: MyoAnalyst
 title: MyoAnalyst
 description: MyoAnalyst is a tool to segment and measure size of skeletal muscle fibers.
 section: Contribute:Editing the Wiki
