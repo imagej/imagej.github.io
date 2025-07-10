@@ -15,7 +15,7 @@ team-maintainers: ['Jalink-lab', '@BioImaging-NKI', '@bvandenbroek']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-# FAST-HIPPOS: FLIM Analysis of Single-cell Traces for Hit Identification of Phenotypes in Pooled Optical Screening
+# FLIM Analysis of Single-cell Traces for Hit Identification of Phenotypes in Pooled Optical Screening
 
 FAST-HIPPOS is a collection of Fiji scripts to analyze and visualize multi-cell time-lapse experiments, detect hit cells based on user-set criteria and output their stage coordinates for e.g. photoactivation.
 For non-screening applications it can function as a valuable tool for single-cell trace analysis, visualization and inspection.
@@ -112,12 +112,13 @@ A 2D histogram with lifetime on the y-axis and time on the x-axis. This image al
 
 <img src="https://github.com/user-attachments/assets/9b904263-e3ae-46f2-ab06-7fdb56b0b5af" title="Density plot" width="400">
 
-# 6. Screening: hit selection
+## 6. Screening: hit selection
 When `activate screening` is selected in the starting dialog, cells showing certain kinetic behaviour can be detected, and the stage coordinates of these 'hit'cells are written to a `.rgn` file for subsequent photoactivation (or e.g. high-resolution imaging, run FRAP experiments, etc.). This file can then be loaded into the Leica LAS X Navigator, where the hit cells will be marked as imaging positions.
 Because many possible interesting dynamic phenotypes exist, the script provides several possible rules and criteria, that can be combined (AND / OR) when desired:
 
 ### Hit criteria panel
-![image](https://github.com/user-attachments/assets/4d2f37da-727e-4e86-a424-0fa101b05ba6)
+![image](https://github.com/user-attachments/assets/774ae993-dc11-41e1-8f26-1f59d42c270c)
+
 
 ### Time traces plot of hits
 After hit detection, a graph is generated showing only the traces of the hit cells. Here, the selected time window used in the hit selection (in this example the full response time) is highlighted in blue. Compare with the plot containing all the single-cell traces:
