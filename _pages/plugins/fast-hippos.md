@@ -27,12 +27,12 @@ Required activated [Fiji Update Sites](https://imagej.net/update-sites/following
 - FAST-HIPPOS
 - CLIJ
 - CLIJ2
-- CSBDeep
+- (CSBDeep)
 - ImageScience
 - IJ-PB Plugins
 - PTBIOP
 - SCF MPI CBG
-(- StarDist)
+- (StarDist)
 
 Additionally, you need a working Cellpose (2.0 or higher) environment in Python. See the [Cellpose GitHub Readme](https://github.com/MouseLand/cellpose#installation) for installation instructions. (Note: FAST-HIPPOS was tested up to Cellpose 3. Although it may just as well work with Cellpose 4 (Cellpose-SAM), the last Cellpose 3 version can be installed with `pip install cellpose[gui]==3.1.1.2`.)
 
