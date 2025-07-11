@@ -34,7 +34,7 @@ Required activated [Fiji Update Sites](https://imagej.net/update-sites/following
 - SCF MPI CBG
 (- StarDist)
 
-Additionally, you need a working Cellpose (2.0 or higher) environment in Python.
+Additionally, you need a working Cellpose (2.0 or higher) environment in Python. See the [Cellpose GitHub Readme](https://github.com/MouseLand/cellpose#installation) for installation instructions. (Note: FAST-HIPPOS was tested up to Cellpose 3. Although it may just as well work with Cellpose 4 (Cellpose-SAM), the last Cellpose 3 version can be installed with `pip install cellpose[gui]==3.1.1.2`.)
 
 Before running FAST-HIPPOS, make sure that the [BIOP Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose) works correctly: follow their [installation instructions](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#i-installation). Then make sure that the wrapper knows where your Cellpose environment is located and which type it is (conda or venv), by filling in the top two fields in `Plugins` -> `BIOP` ->  `Cellpose/Omnipose` -> `Cellpose...`:
 
