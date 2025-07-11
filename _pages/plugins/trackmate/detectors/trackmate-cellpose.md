@@ -291,13 +291,40 @@ Finally, click `Open` on one last confirmation panel:
 
 Once you cellpose installed, run the GUI to confirm that it works and can segment images on your system. Again, in the `Path to cellpose / Python executable` text field in the TrackMate detector UI, you will just need to enter the path to this executable.
 
-#### With Anaconda
+#### With conda, mamba environment managers
+
+{% include notice icon="tech"
+  content="This is the recommended way to install Python tools to be used with TrackMate." %}
+
+Using mamba (a better conda) is the most common way to run scientific Python tools on your computer. Recommendations keep evolving and we try to update this page.
+If you don't have mamba, follow these instructions to install it: https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html 
 
 Go to the cellpose GitHub webpage and follow the [installation procedures](https://github.com/MouseLand/cellpose#local-installation).
 
 If you chose Anaconda to install cellpose, and put it in a dedicated environment, you need to enter the path to the _python executable_ of this conda environment. For instance if made a conda environment named `cellpose` for cellpose, it will be something like this:
 
 `C:\Users\tinevez\anaconda3\envs\cellpose\python.exe`
+
+##### Install cellpose 3 on a Mac
+
+For instance on Mac: (on the computer used in example below, conda is an alias to microsmamba)
+
+```zsh
+>> conda create --name cellpose-3 python=3.10
+>> conda activate cellpose-3
+>> pip install 'cellpose[gui]==3.1.1.2'
+>> cellpose --version
+cellpose version: 	3.1.1.2 
+platform:       	darwin 
+python version: 	3.10.18 
+torch version:  	2.7.1
+```
+
+This will install the version 3 of cellpose. As mid 2025, GPU-acceleration is used on this OS, as you can attest in the log when running cellpose:
+```
+2025-07-11 11:13:53,625 [INFO] ** TORCH MPS version installed and working. **
+2025-07-11 11:13:53,625 [INFO] >>>> using GPU (MPS)
+```
 
 #### BIOP Conda installation for GPU support on Windows
 
