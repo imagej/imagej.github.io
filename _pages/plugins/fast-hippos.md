@@ -34,14 +34,17 @@ Required activated [Fiji Update Sites](https://imagej.net/update-sites/following
 - SCF MPI CBG
 (- StarDist)
 
-Additionally, you need a working Cellpose (2.0 or higher) environment in Python. Before running FAST-HIPPOS, make sure that the [BIOP Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose) knows where your Cellpose environment is located and which type it is  (conda or venv), by filling in the top two fields in `Plugins` -> `BIOP` ->  `Cellpose/Omnipose` -> `Cellpose...`:
+Additionally, you need a working Cellpose (2.0 or higher) environment in Python.
 
-<img src="https://github.com/user-attachments/assets/fefd2857-6880-40f2-901f-c9cdc08971aa" title="BIOP Cellpose wrapper" width="600">
+Before running FAST-HIPPOS, make sure that the [BIOP Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose) works correctly: follow their [installation instructions](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#i-installation). Then make sure that the wrapper knows where your Cellpose environment is located and which type it is (conda or venv), by filling in the top two fields in `Plugins` -> `BIOP` ->  `Cellpose/Omnipose` -> `Cellpose...`:
 
+<img src="https://github.com/user-attachments/assets/fefd2857-6880-40f2-901f-c9cdc08971aa" title="BIOP Cellpose wrapper" width="500">
+
+You will find the FAST-HIPPOS commands in the Fiji menu under `Plugins` -> `Macros`. Below follows a description of the main command: FAST-HIPPOS. Details on the other commands follow below.
 <hr>
 
-## Workflow
-1. *[Loading input images](https://github.com/Jalink-lab/dynamic-pooled-screening/#1-input-images)*
+## FAST-HIPPOS Workflow
+1. *[Input images](https://github.com/Jalink-lab/dynamic-pooled-screening/#1-input-images)*
 2. *[Pre-processing](https://github.com/Jalink-lab/dynamic-pooled-screening/#2-pre-processing)*
 3. *[Cell segmentation](https://github.com/Jalink-lab/dynamic-pooled-screening/#3-cell-segmentation)*
 4. *[Measuring single-cell (FLIM/intensity) traces](https://github.com/Jalink-lab/dynamic-pooled-screening/#4-measuring-single-cell-flimintensity-traces)*
