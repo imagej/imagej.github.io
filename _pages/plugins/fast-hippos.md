@@ -103,8 +103,10 @@ The data is visualized in various graphs and images:
 ### Timelapse Lifetime histogram and scatterplots
 Movies of
 - the histogram of cell lifetimes/ratios
-- scatterplots of lifetime vs cell intensity and liftime vs cell area 
+- scatterplots of lifetime vs cell intensity and liftime vs cell area
+
 <img src="https://github.com/user-attachments/assets/87c92c02-cf5d-4e7f-b391-40c858a6ffa9" title="Kymograph" width="400">
+
 <img src="https://github.com/user-attachments/assets/d750ebd6-a1d4-4687-83cc-bfae930cc858" title="Sorted Kymograph" width="400">
 
 ### Kymographs
