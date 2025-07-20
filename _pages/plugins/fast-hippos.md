@@ -159,8 +159,8 @@ Per image many output files are generated:
 - Lifetime & intensity RGB overlay (optional)
 - Lifetime histogram movie (optional)
 - Scatterplots (optional)
-- Intensity.tsv: table with cell intensities for each frame
-- Lifetimes.tsv: table with cell lifetimes for each frame (for technical reasons currently transposed)
+- Intensity.tsv: table with cell intensities for each frame (optional)
+- Lifetimes.tsv: table with cell lifetimes for each frame (for technical reasons currently transposed) (optional)
 
 When screening is performed a few additional files are created:
 - Hit list.tsv: table(s) with hit cells, sorted by measurement of their selected criteria, and xy stage coordinates. Chuncked if the number of hit cells exceeds the set limit.
@@ -169,6 +169,7 @@ When screening is performed a few additional files are created:
 - kymographs (hits and non-hits)
 - lifetime histograms (hits and non-hits)
 - density plots (hits and non-hits)
+- graphical representation of xy positions of hit cells
 
 # Trace inspection and manual selection of hits
 After analysis cells and traces can be interactively inspected using the `Inspect and select traces` command. Upon running it, a dialog with options allows choosing between _inspecting_ and _selecting_ mode. After clicking ok, the windows re-arrange.
