@@ -50,7 +50,7 @@ You will find the FAST-HIPPOS commands in the Fiji menu under `Plugins` -> `Macr
 4. *[Measuring single-cell (FLIM/intensity) traces](https://github.com/Jalink-lab/dynamic-pooled-screening/#4-measuring-single-cell-flimintensity-traces)*
 5. *[Visualization](https://github.com/Jalink-lab/dynamic-pooled-screening/#5-visualization)*
 6. *[Hit selection](https://github.com/Jalink-lab/dynamic-pooled-screening/#6-screening-hit-selection)*
-7. *Output files*
+7. *[Output files](https://imagej.net/plugins/fast-hippos#7-output-files)*
 
 ## 1. Input images
 Input images are multi-channel `.tif` files, or any proprietary microscopy format that is [supported by Bio-Formats](https://bio-formats.readthedocs.io/en/v8.2.0/supported-formats.html), including files containing multiple images.
@@ -159,6 +159,7 @@ Per image many output files are generated:
 - Scatterplots (optional)
 - Intensity.tsv: table with cell intensities for each frame
 - Lifetimes.tsv: table with cell lifetimes for each frame (for technical reasons currently transposed)
+
 When screening is performed a few additional files are created:
 - Hit list.tsv: table(s) with hit cells, sorted by measurement of their selected criteria, and xy stage coordinates. Chuncked if the number of hit cells exceeds the set limit.
 - `rgn` file with hit positions for LAS X
