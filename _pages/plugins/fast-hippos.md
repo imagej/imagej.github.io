@@ -166,5 +166,24 @@ When screening is performed a few additional files are created:
 - Hit list.tsv: table(s) with hit cells, sorted by measurement of their selected criteria, and xy stage coordinates. Chuncked if the number of hit cells exceeds the set limit.
 - .rgn file with hit positions for LAS X
 - Hits only traces plot
-- Hits only lifetime histograms
-- Hits only scatterplots
+- kymographs (hits and non-hits)
+- lifetime histograms (hits and non-hits)
+- density plots (hits and non-hits)
+
+# Trace inspection and manual selection of hits
+After analysis cells and traces can be interactively inspected using the `Inspect and select traces` command. Upon running it, a dialog with options allows choosing between _inspecting_ and _selecting_ mode. After clicking ok, the windows re-arrange.
+
+## Inspection mode
+
+Cells and traces are highlighted in the sorted kymographs, traces plot and RGB overlay image when the mouse cursus moves over them _and the window is activated_.
+
+Left-clicking on a cell in the sorted kymographs or RGB overlay image shows the selected trace in the plot, with the other traces grayed out.
+
+Left-clicking on a trace in the plot generates a cropped RGB overlay image of the associated cell. 
+
+Ctrl + left-click & dragging on the sorted kymograph image creates a temporary selection. Selected cells are highlighted in the RGB overlay. The plot shows only the selected cells.
+
+# Selection mode
+
+In this mode ROIs can be draw on the sorted kymograph, the plot or the RGB overlay image. In the latter case this can also be a multi-point ROI.
+Selected cells are again highlighted in the diagrams. Additionally an `.rgn` file is created with positions of the selected cells only, allowing for 'manual' phenotype screening.
