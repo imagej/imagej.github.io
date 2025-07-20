@@ -163,3 +163,6 @@ Per image many output files are generated:
 When screening is performed a few additional files are created:
 - Hit list.tsv: table(s) with hit cells, sorted by measurement of their selected criteria, and xy stage coordinates. Chuncked if the number of hit cells exceeds the set limit.
 - `rgn` file with hit positions for LAS X
+- Hits only traces plot
+- Hits only lifetime histograms
+- Hits only scatterplots
