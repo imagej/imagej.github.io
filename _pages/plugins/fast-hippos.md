@@ -184,7 +184,7 @@ Left-clicking on a trace in the plot generates a cropped RGB overlay image of th
 
 Ctrl + left-click & dragging on the sorted kymograph image creates a temporary selection. Selected cells are highlighted in the RGB overlay. The plot shows only the selected cells.
 
-# Selection mode
+## Selection mode
 
 In this mode ROIs can be draw on the sorted kymograph, the plot or the RGB overlay image. In the latter case this can also be a multi-point ROI.
 Selected cells are again highlighted in the diagrams. Additionally an `.rgn` file is created with positions of the selected cells only, allowing for 'manual' phenotype screening.
