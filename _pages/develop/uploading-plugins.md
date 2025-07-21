@@ -32,25 +32,6 @@ Once everything is ready for upload, just click the button *Upload to Server*.
 
 {% include notice icon="note" content="You will need to have an account on [fiji.sc](/contribute/funding) which is in the group *updaters*, and you will only be offered the upload option by the Updater if you work from a working directory with source files." %}
 
-## Using the command line
-
-If you have an ssh account on *fiji.sc* that is in the *uploaders* group, you can upload plugins. To do this, run
-
-```
-git pull origin master
-```
-
-If this says that a recursive merge was performed, you had local changes and should **not** upload anything, as you did not test that version!
-
-If it was a fast-forward (or if Git said "Everything up-to-date"), you are good to go:
-
-```
-./Build.sh
-./bin/update-fiji.py <filename>
-```
-
-It will refuse to upload a file that has locally-modified dependencies, and list them. To upload those dependencies, too, you can use the `--auto` option of `./bin/update-fiji.py`. **Use with care!**
-
 ## Internals
 
 The original [Fiji Updater](/plugins/updater) was very limited; it only allowed to download new versions of files, and it did not have an option to determine whether a local version was previously installed via the Updater or not.

@@ -72,19 +72,19 @@ You are most likely to have submodule conflicts while merging when you run `git 
 Conflicts in submodule versions while you're rebasing are slightly different. For example, suppose I am in the following situation:
 
 ```
-o---o----o----o----o master  
+o---o----o----o----o main  
  \  
   A----B----C-----D----E----F server
 ```
 
-And I want to rebase server onto master, by doing the following:
+And I want to rebase server onto main, by doing the following:
 
 ```bash
 git checkout server  
-git rebase -i master
+git rebase -i main
 ```
 
-The `-i` option means that I am first presented with a list of commits to port onto master, named A, B, C, D, E and F in the above diagram. After possibly making some changes (there may be some commits that you don't actually want to include in the rebased version) the rebasing begins. The first error I get is the following:
+The `-i` option means that I am first presented with a list of commits to port onto main, named A, B, C, D, E and F in the above diagram. After possibly making some changes (there may be some commits that you don't actually want to include in the rebased version) the rebasing begins. The first error I get is the following:
 
 ```bash
 Automatic cherry-pick failed.  After resolving the conflicts,  
@@ -129,7 +129,7 @@ Let's say that the situation now corresponds to the following diagram:
 ```
                      A'---B' HEAD  
                     /  
-o---o----o----o----o master  
+o---o----o----o----o main  
  \  
   A----B----C-----D----E----F server ORIG_HEAD
 ```
@@ -174,7 +174,7 @@ Now we should be able to continue, with `git rebase --continue`
 If you're using `git diff --theirs` and `git diff --ours` while rebasing then you may get confused. Essentially:
 
 -   `git diff --theirs` shows the differences between the "server" branch and the working tree.
--   `git diff --ours` shows the differences between the "master" or "upstream" branch and the working tree.
+-   `git diff --ours` shows the differences between the "main" or "upstream" branch and the working tree.
 
 This is probably the opposite way round from what you expect from resolving conflicts while merging :)
 

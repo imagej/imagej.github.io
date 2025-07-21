@@ -68,10 +68,10 @@ git pull --rebase
 git stash pop
 ```
 
-### Push changes on master to origin
+### Push changes on main to origin
 
 ```shell
-git push origin master
+git push origin main
 ```
 
 ### Delete untracked files and directories
@@ -94,10 +94,10 @@ git checkout HEAD@{1} -- file
 
 ## Branches
 
-### Branch master to a new local branch "new\_branch"
+### Branch main to a new local branch "new\_branch"
 
 ```shell
-git checkout -b new_branch master
+git checkout -b new_branch main
 ```
 
 ### Push local branch to remote
@@ -354,9 +354,9 @@ logout
 
 cd ~/local
 git remote add origin ssh://you@server/home/you/remote.git
-git push origin master
-git config branch.master.remote origin
-git config branch.master.merge refs/heads/master
+git push origin main
+git config branch.main.remote origin
+git config branch.main.merge refs/heads/main
 ```
 
 Creates a bare remote repository at [`ssh://server/home/you/remote.git`](Ssh___server_home_you_remote.git) that tracks your local repository in `/home/you/local`. Adopted from [Tim Lucas](http://toolmantim.com/articles/setting_up_a_new_remote_git_repository).
@@ -369,10 +369,10 @@ Assume you want to see commits in branch `stephan`, but only those that are <u>n
 git log stephan ^saalfeld
 ```
 
-More realistically, if you want to see all the commits which are in a topic branch, but not yet merged into master:
+More realistically, if you want to see all the commits which are in a topic branch, but not yet merged into main:
 
 ```shell
-git log --all ^master
+git log --all ^main
 ```
 
 If you want to see the changes which come from a topic branch which was merged in commit `deadbeef`, use this command line:

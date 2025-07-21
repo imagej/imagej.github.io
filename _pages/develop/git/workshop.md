@@ -167,7 +167,7 @@ Note: to disambiguate between start commit and files, put a `--` between commit 
 
 # What are branches? Why do I need them?
 
-A branch is a named pointer into the commit graph. The main branch is called 'master' (Subversion's *trunk*, Mercurial's *default*). Since branches are just pointers, they are very easily created.
+A branch is a named pointer into the commit graph. The main branch is called 'main' (Subversion's *trunk*, Mercurial's *default*). Since branches are just pointers, they are very easily created.
 
 Committing while on a branch advances that pointer (if you need something that cannot advance, you need to use *tags*).
 
@@ -186,7 +186,7 @@ Branches can be used to organize sets of changes by topic. Compare also [Fiji's 
 -   Switching to another branch
 
     ```bash
-    git checkout master
+    git checkout main
     ```
 
 -   Seeing all (local) branches (the current one is prefixed by a star)
@@ -231,7 +231,7 @@ A main repository usually does not need a working directory, in which case it is
 
 # The merge concept of Git (and what is this "index" all about?)
 
-When working with others, or with topic branches, the changes (including their complete commit history) need to be integrated into another branch, typically *master*. This integration is called *merging*.
+When working with others, or with topic branches, the changes (including their complete commit history) need to be integrated into another branch, typically *main*. This integration is called *merging*.
 
 In order to perform a merge, the file versions are put into a staging area (the *index*), and all non-overlapping changes are resolved automatically. Overlapping (read: contradicting) changes are not resolved, but marked as *merge conflicts*.
 
@@ -414,7 +414,7 @@ Interaction with remote repositories is performed using
 -   `git fetch`, which local copies of the branches of the remote repository including all required objects (but being a bit clever about avoiding to get objects we have already) and
 -   `git push`, which updates remote repositories' branches to the local branches' state.
 
-The local copies of remote branches live in a specific namespace, refs/remotes/\<name>. For example, the *master* branch of the remote called *origin* will be stored in *refs/remotes/origin/master*. If unambiguous, it can be referred to as *origin/master*, too.
+The local copies of remote branches live in a specific namespace, refs/remotes/\<name>. For example, the *main* branch of the remote called *origin* will be stored in *refs/remotes/origin/main*. If unambiguous, it can be referred to as *origin/main*, too.
 
 Note: you need to make sure that you do not mix two different projects in the same working directory's repository. Git will happily fetch from wherever into your local repository, even if it does not make sense.
 
@@ -443,7 +443,7 @@ Note: there is a shortcut for *fetch & merge*: `git pull`. If you create a new b
 -   Push a branch
 
     ```bash
-    git push origin master
+    git push origin main
     ```
 
 -   Push the current branch
@@ -455,7 +455,7 @@ Note: there is a shortcut for *fetch & merge*: `git pull`. If you create a new b
 -   Push to a branch with a name differing from the local name
 
     ```bash
-    git push origin my-new-branch:master
+    git push origin my-new-branch:main
     ```
 
 -   Delete a branch from a remote repository

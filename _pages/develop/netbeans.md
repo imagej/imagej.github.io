@@ -52,7 +52,7 @@ sudo aptitude install netbeans
 
 1.  Choose {% include bc path="Team | Git | Clone..." %} from the NetBeans menu
 2.  For the Repository URL, enter: [`git://github.com/imagej/imagej2`](git://github.com/imagej/imagej2)
-3.  Click Next, check the `master\*` branch, then Next again, then Finish
+3.  Click Next, check the `main\*` branch, then Next again, then Finish
 4.  When prompted, click Open Project...
 5.  Select the "ImageJ" project in the tree then click Open
 6.  Right-click the "ImageJ" project and choose Build

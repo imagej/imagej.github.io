@@ -4,7 +4,7 @@ title: Maven - Frequently Asked Questions
 
 # What does the POM version mean?
 
-The {% include github org='imagej' repo='example-legacy-plugin' branch='master' path='pom.xml' label='pom.xml' %} of [example-legacy-plugin](https://github.com/imagej/example-legacy-plugin/) inherits from a parent called {% include github org='scijava' repo='pom-scijava' branch='master' path='pom.xml' label='pom-scijava' %}. This parent POM defines and configures many things so that the POMs of individual plugin projects are shorter (i.e., so they don't have to repeat things) and more consistent (i.e., so they do not forget to define crucial metadata).
+The {% include github org='imagej' repo='example-legacy-plugin' branch='main' path='pom.xml' label='pom.xml' %} of [example-legacy-plugin](https://github.com/imagej/example-legacy-plugin/) inherits from a parent called {% include github org='scijava' repo='pom-scijava' branch='main' path='pom.xml' label='pom-scijava' %}. This parent POM defines and configures many things so that the POMs of individual plugin projects are shorter (i.e., so they don't have to repeat things) and more consistent (i.e., so they do not forget to define crucial metadata).
 
 The version of `pom-scijava` (`14.0.0` as of this writing) indicates the version of that parent POM. We occasionally improve the parent POM, adding and tweaking it. When we do so, its version increases. It is suggested to leave the version that same as what's in `example-legacy-plugin`, since that refers to the latest version. Future `1.x` versions of ImageJ will be backwards compatible, so if you later notice that we have updated `example-legacy-plugin` to e.g. `15.0.0`, you can (optionally) update your plugin to that version as well.
 

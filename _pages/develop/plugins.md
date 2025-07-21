@@ -78,7 +78,7 @@ public class SpecialService implements Service { }
 
 ### The Context
 
-References to all the `@Plugin`-annotated classes that are discovered are contained in a single, master {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/Context.java' label='Context' %}. Each application is responsible for creating its own `Context` to manage plugins and contextual state.
+References to all the `@Plugin`-annotated classes that are discovered are contained in a single, unified {% include github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0' source='org/scijava/Context.java' label='Context' %}. Each application is responsible for creating its own `Context` to manage plugins and contextual state.
 
 In ImageJ, a `Context` is automatically created when {% include github org='imagej' repo='imagej' tag='imagej-2.0.0-rc-39' source='net/imagej/ImageJ.java' label='the application starts up' %}, so plugin developers do not need to create their own. In fact, creating your own `Context` typically causes problems, as it will be a different container than ImageJ is using. Instead, plugin instances within a common `Context` are provided automatically by the framework—you just have to ask.
 
@@ -176,7 +176,7 @@ You do not need to understand every project in this repository, nor must you go 
 Because these tutorials use [Git](/develop/git) for source control, you have complete freedom to modify and play with the code. Worst-case scenario, you always have a big reset button via the command:
 
 ```shell
-git reset --hard origin/master
+git reset --hard 'HEAD@{u}'
 ```
 
 There are always other options for saving or restoring your work—[stashing](https://git-scm.com/book/en/v1/Git-Tools-Stashing) or [branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell), for example—but their use will depend on your personal comfort and knowledge of Git.

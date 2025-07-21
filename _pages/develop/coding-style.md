@@ -26,10 +26,10 @@ Because a large number of developers study the SciJava codebase, and it provides
 
 We try to follow best practices for maintaining a clean and organized Git history:
 
--   We provide a permanent, stable master branch (i.e., no force pushes).
+-   We provide a permanent, stable main branch (i.e., no force pushes).
 -   We try to write [thorough, informative](http://chris.beams.io/posts/git-commit/) and [well-formatted](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) commit messages. As a rule of thumb: relevant information that cannot be deduced easily from the patch itself should be provided in the commit message's *body*, e.g. what other approaches were tried first and why they did not work, a motivating blurb why the patch is desirable, or links to discussions.
 -   In general, we prefer merging to rebasing, so that individual commits continue to reflect what was actually the true development history (i.e., what was tested and working at the time). That said, we do use rebasing sometimes on topic branches to keep our commits well organized and easy to understand.
--   We use topic branches for large feature additions and complex code changes, and purge them promptly once merged to master. We prefer to make explicit merges (i.e. with `--no-ff`) to document the purpose of each merged branch.
+-   We use topic branches for large feature additions and complex code changes, and purge them promptly once merged to main. We prefer to make explicit merges (i.e. with `--no-ff`) to document the purpose of each merged branch.
 -   To refine commits on topic branches, we use `git commit --fixup <commit>` extensively. Subsequent `git rebase --autosquash` will squash the fixup into the other commit.
 -   In the case of unfinished work at the conclusion of a coding session, we commit it with the subject *WIP* and push to the topic branch. (Calling `git reset HEAD^` next time makes it easy to pick up the work from there.) Doing this reduces the chance of lost work, and makes it easier for other programmers to collaborate during development.
 -   We avoid monster commits (with commit messages like "Many changes to several subsystems") in favor of well-separated, modular commits with one conceptual change at a time. Git's staging area feature makes this much easier (e.g., `git add -p`). Granular commits have many advantages; e.g., [`git` bisect`](/develop/git/pinpoint-regressions) becomes much more useful for understanding mysterious bugs.
