@@ -3,7 +3,7 @@ title: Travis CI
 section: Extend:Development:Tools
 ---
 
-{% include notice icon="note" content="SciJava [CI](/develop/ci) has [migrated from Travis CI to Github Actions](https://forum.image.sc/t/scijava-ci-migration-from-travis-ci-to-github-actions/57573). See the [GitHub Actions](https://imagej.net/develop/github-actions) page for configuration instructions, including how to migrate existing projects from Travis CI." %}
+{% include notice icon="note" content="SciJava projects now use Github Actions for CI. See the [GitHub Actions](/develop/github-actions) page for configuration instructions." %}
 
 {% include img src='logos/travis' align='right' width=150 caption='**Travis CI:** Build your code in the cloud!' %}
 
