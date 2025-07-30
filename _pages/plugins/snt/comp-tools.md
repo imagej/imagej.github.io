@@ -21,6 +21,7 @@ update-site: Neuroanatomy
 
 | Tool | Description |
 |------|-------------|
+| [HortaCloud](https://hortacloud.org/) | Cloud-based, open-source platform for collaborative reconstruction of long-range projection neurons from whole-brain light microscopy data |
 | [BICCN Tools](https://biccn.org/tools) | List of tools supporting NIH's Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN) |
 | [Blue Brain's Morphology Suite](https://github.com/BlueBrain/morphology-suite) | Blue brain's collection of tools (mostly Python) to build, analyze and visualize morphologies. Currently supported by the [Open Brain Institute](https://www.openbraininstitute.org/) |
 | [Cajal](https://cajal.readthedocs.io/en/latest/index.html#) | A Python package for the analysis of single-cell morphological data using  Gromov-Wasserstein (GW) distances |

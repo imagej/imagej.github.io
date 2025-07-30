@@ -26,8 +26,11 @@ Metrics ported from published literature include their associated publication in
 A measure of _straightness_. The ratio between the Euclidean distance of a branch (i.e., Euclidean distance between the first and last node of the branch) and its path length. Range of values: ]0--1] (unitless). L-measure metric[^2]
 <br>See also: [Path contraction](#path-contraction)
 
+##### Branch extension angle
+The absolute (compass bearing) [extension angle](#extension-angle) of a branch
+
 ##### Branch extension angle XY
-The absolute [extension angle](#extension-angle) of a branch in the XY plane
+The absolute [extension angle](#extension-angle) of a branch in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ##### Branch extension angle XZ
 The absolute [extension angle](#extension-angle) of a branch in the XZ plane
@@ -102,11 +105,37 @@ The depth of the bounding box embedding the structure being measured
 
 <span id="e"></span>
 ##### Extension angle
-The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across all coordinates on either the XY, XZ, or ZY plane. Extension angles can be _absolute_ or _relative_ (_rel._):
+{% include img align="right" name="Compass/navigation convention" src="/media/plugins/snt/snt-angles.svg" caption="Compass/navigation convention" %}
+Extension angles report the _overall_ outgrowth direction of a path/branch, and are determined by computing an overall direction vector. This vector is computed in 3D using linear regression across the path/branch coordinates, and its angle retrieved from the slope of the regression. While different angles can be obtained via the [scripting API](./scripting), the most common type of extension angles fall into one of two categories: _absolute_ and _relative_ (_rel._):
 
-- _Absolute angles_ are measured with respect to a fixed reference and range from [0°-360°[ under a _West-clockwise_ convention (W: 0°; N: 90°; E: 180°; S: 270°)
+###### Absolute angles
+Absolute angles range between [0°—360°[ and are compass bearing angles defined under navigation convention: 0°: North; 90°: East; 180°: South; 270°: West. Absolute angles can be retrieved in 3D, or using projected planes (XY, XZ, or ZY). Note that there are key differences between compass convention and standard mathematical convention:
 
-- _Relative (rel.) angles_ are measured as the acute intersection angle between the extension angle of a branch/path and the extension angle of its parent, and range between [0°-180°[. When no parent exists the relative extension angle is _NaN_
+|---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
+|               | Compass Nomenclature                          | Mathematical Nomenclature                                                             |
+|---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
+| Reference     | Angles are referenced from North (0° or 360°) | Angles are measured from the positive x-axis, which is 0°                             |
+| Direction[^3] | Measurements are always clockwise             | Positive angles are measured counterclockwise. Negative angles are measured clockwise |
+| Units         | Degrees (non-SI unit). Range: 0°—360°         | Radians (SI unit). Range: 0—2π                                                        |
+|---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
+
+[^3]: Paths with only one node have no direction. Angles involving such paths default to _NaN_
+
+
+{% capture azimuth-elevation%}
+The 3D orientation of a path can be captured using two components:
+
+-  **Horizontal direction (azimuth)**: The compass bearing in XY plane (0-360°) following navigation convention
+
+-  **Vertical inclination (elevation)**: The vertical angle from the XY plane, ranging from -90° to +90°. E.g.:<br>0° → horizontal (parallel to XY plane); +90° → extending straight up (positive Z direction); -90° → extending straight down (negative Z direction)
+{% endcapture %}
+
+<span id="azimuth-elevation"></span>
+{% include notice icon="info" content=azimuth-elevation %}
+
+###### Relative (rel.) angles
+Relative angles range between [0°—180°[ and are computed as the acute angle between a path's 3D direction vector and its parent path's 3D direction vector. These are thus 3D branching angles. If a path has no parent, its relative angle defaults to _NaN_
+
 
 <span id="h"></span>
 ##### Height
@@ -123,8 +152,11 @@ The highest Horton-Strahler number of a tree, i.e., the Horton-Strahler number o
 Defined as the branches of highest Strahler order. Typically, these correspond to the most 'internal' branches of an arbor, in direct sequence from the root. Note that _Primary branches_ are _inner branches_ starting at the tree's root
 <br>See also: [Primary branches](#primary-branches), [Terminal branches](#terminal-branches)
 
+###### Inner branches: Extension angle
+The absolute (compass bearing) [extension angle](#extension-angle) of [inner branches](#inner-branches)
+
 ###### Inner branches: Extension angle XY
-The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane
+The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Inner branches: Extension angle XZ
 The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XZ plane
@@ -145,8 +177,11 @@ The distance between nodes defining a branch or a Path. Can be retrieved as _squ
 ##### Longest shortest path
 The longest graph geodesic. Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _longest shortest path_ corresponds to its [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html) (also known as maximum geodesic, or longest graph geodesic). Can only be computed for structures that are valid mathematical trees.
 
+###### Longest shortest path: Extension angle
+The absolute (compass bearing) [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path)
+
 ###### Longest shortest path: Extension angle XY
-Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XY plane
+Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Longest shortest path: Extension angle XZ
 Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XZ plane
@@ -217,8 +252,14 @@ The color channel associated with a path (multidimensional images)
 ##### Path contraction
 A measure of straightness of a path. See [Branch contraction](#branch-contraction) for definition
 
+##### Path extension angle
+The absolute (compass bearing) [Extension angle](#extension-angle) of a path
+
+##### Path extension angle (Rel.)
+The relative [Extension angle](#extension-angle) of a path, i.e., the angle formed between a path and its parent (branching angle). NaN if a path has no parent.
+
 ##### Path extension angle XY
-Absolute [Extension angle](#extension-angle) of a path in the XY plane
+Absolute [Extension angle](#extension-angle) of a path in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ##### Path extension angle XY (Rel.)
 Relative [Extension angle](#extension-angle) of a path in the XY plane
@@ -268,7 +309,7 @@ Primary branches that have origin in a tree's root, extending to the closest bra
 <br>See also: [Inner branches](#inner-branches), [Terminal branches](#terminal-branches)
 
 ###### Primary branches: Extension angle XY
-Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XY plane
+Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Primary branches: Extension angle XZ
 Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XZ plane
@@ -342,7 +383,7 @@ Branches ending at terminal endpoints (tips)
 <br>See also: [Inner branches](#inner-branches), [Primary branches](#primary-branches)
 
 ###### Terminal branches: Extension angle XY
-Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XY plane
+Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Terminal branches: Extension angle XZ
 Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XZ plane
@@ -375,7 +416,7 @@ Cartesian coordinates in the three-dimensional space
 
 - Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
 
-- Each of the 95+ metrics is represented by seven statistical properties: minimum, maximum, mean, standard deviation (SD), coefficient of variation (CV, the ratio of the standard deviation to the mean), sum, and _N_, resulting in a total of at least $$95\times 7$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- Each of the 100+ metrics is represented by seven statistical properties: minimum, maximum, mean, standard deviation (SD), coefficient of variation (CV, the ratio of the standard deviation to the mean), sum, and _N_, resulting in a total of $$100\times 7$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 

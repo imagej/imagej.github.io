@@ -264,9 +264,9 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 
 - **Fast marching**: Provided by [Tubular Geodesics](/plugins/snt/tubular-geodesics), an external SNT add-on
   
-  Independently of the algorithm used, the algorithm drop-down menu in this pane provides options to tweak the performance, accuracy and footprint of the computations involved in the search. These include:
+  Independently of the algorithm used, the algorithm drop-down menu in this pane provides options to tweak the performance, accuracy and efficieny of the computations involved in the search. These include:
   
-  - **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower footprint), or _Array_ (slightly faster, but higher footprint)
+  - **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower computation footprint), or _Array_ (slightly faster, but higher footprint)
   
   - **Cost Function** Auto-tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
     
