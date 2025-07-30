@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   version="1.1"
+   viewBox="0 0 340.97 333.62"
+   sodipodi:docname="snt-angles.svg"
+   inkscape:export-filename="snt-angles2.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview39"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1"
+     inkscape:cx="171"
+     inkscape:cy="167.5"
+     inkscape:window-width="1368"
+     inkscape:window-height="1020"
+     inkscape:window-x="270"
+     inkscape:window-y="1533"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .st0, .st1 {
+        fill: #d32f2f;
+      }
+
+      .st0, .st2, .st3 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st0, .st2, .st3, .st4, .st5 {
+        isolation: isolate;
+      }
+
+      .st0, .st3 {
+        font-size: 16px;
+      }
+
+      .st6 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st6, .st7, .st8 {
+        stroke: #ccc;
+      }
+
+      .st6, .st7, .st8, .st9, .st10, .st11 {
+        fill: none;
+      }
+
+      .st7 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st8 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st1, .st12, .st11 {
+        stroke: #333;
+      }
+
+      .st2 {
+        font-size: 14px;
+      }
+
+      .st2, .st12, .st3, .st13 {
+        fill: #333;
+      }
+
+      .st9 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st9, .st10 {
+        stroke: #666;
+      }
+
+      .st10 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st4 {
+        font-size: 12px;
+      }
+
+      .st4, .st5 {
+        fill: #666;
+        font-family: ArialMT, Arial;
+      }
+
+      .st11 {
+        stroke-width: 2px;
+      }
+
+      .st5 {
+        font-size: 10px;
+      }
+    </style>
+  </defs>
+  <g
+     id="g8">
+    <line
+       class="st10"
+       x1="243.82"
+       y1="37.48"
+       x2="236.32"
+       y2="50.47"
+       id="line1" />
+    <line
+       class="st9"
+       x1="295.06"
+       y1="88.73"
+       x2="282.07"
+       y2="96.23"
+       id="line2" />
+    <line
+       class="st9"
+       x1="295.06"
+       y1="228.73"
+       x2="282.07"
+       y2="221.23"
+       id="line3" />
+    <line
+       class="st10"
+       x1="243.82"
+       y1="279.97"
+       x2="236.32"
+       y2="266.98"
+       id="line4" />
+    <line
+       class="st10"
+       x1="103.82"
+       y1="279.97"
+       x2="111.32"
+       y2="266.98"
+       id="line5" />
+    <line
+       class="st9"
+       x1="52.58"
+       y1="228.73"
+       x2="65.57"
+       y2="221.23"
+       id="line6" />
+    <line
+       class="st9"
+       x1="52.58"
+       y1="88.73"
+       x2="65.57"
+       y2="96.23"
+       id="line7" />
+    <line
+       class="st10"
+       x1="103.82"
+       y1="37.48"
+       x2="111.32"
+       y2="50.47"
+       id="line8" />
+  </g>
+  <g
+     id="g20">
+    <line
+       class="st7"
+       x1="210.05"
+       y1="23.5"
+       x2="207.47"
+       y2="33.16"
+       id="line9" />
+    <line
+       class="st8"
+       x1="272.82"
+       y1="59.73"
+       x2="265.74"
+       y2="66.8"
+       id="line10" />
+    <line
+       class="st6"
+       x1="309.05"
+       y1="122.49"
+       x2="299.39"
+       y2="125.08"
+       id="line11" />
+    <line
+       class="st6"
+       x1="309.05"
+       y1="194.96"
+       x2="299.39"
+       y2="192.37"
+       id="line12" />
+    <line
+       class="st8"
+       x1="272.82"
+       y1="257.72"
+       x2="265.74"
+       y2="250.65"
+       id="line13" />
+    <line
+       class="st7"
+       x1="210.05"
+       y1="293.96"
+       x2="207.47"
+       y2="284.3"
+       id="line14" />
+    <line
+       class="st7"
+       x1="137.59"
+       y1="293.96"
+       x2="140.17"
+       y2="284.3"
+       id="line15" />
+    <line
+       class="st8"
+       x1="74.83"
+       y1="257.72"
+       x2="81.9"
+       y2="250.65"
+       id="line16" />
+    <line
+       class="st6"
+       x1="38.59"
+       y1="194.96"
+       x2="48.25"
+       y2="192.37"
+       id="line17" />
+    <line
+       class="st6"
+       x1="38.59"
+       y1="122.49"
+       x2="48.25"
+       y2="125.08"
+       id="line18" />
+    <line
+       class="st8"
+       x1="74.83"
+       y1="59.73"
+       x2="81.9"
+       y2="66.8"
+       id="line19" />
+    <line
+       class="st7"
+       x1="137.59"
+       y1="23.5"
+       x2="140.17"
+       y2="33.16"
+       id="line20" />
+  </g>
+  <circle
+     class="st11"
+     cx="173.82"
+     cy="158.73"
+     r="140"
+     id="circle20" />
+  <circle
+     class="st13"
+     cx="173.82"
+     cy="158.73"
+     r="3"
+     id="circle21" />
+  <polygon
+     class="st1"
+     points="173.82 38.73 181.82 56.73 165.82 56.73 173.82 38.73"
+     id="polygon21" />
+  <line
+     class="st11"
+     x1="173.82"
+     y1="56.73"
+     x2="173.82"
+     y2="138.73"
+     id="line21" />
+  <polygon
+     class="st12"
+     points="293.82 158.73 275.82 150.73 275.82 166.73 293.82 158.73"
+     id="polygon22" />
+  <line
+     class="st11"
+     x1="275.82"
+     y1="158.73"
+     x2="193.82"
+     y2="158.73"
+     id="line22" />
+  <polygon
+     class="st12"
+     points="173.82 278.73 165.82 260.73 181.82 260.73 173.82 278.73"
+     id="polygon23" />
+  <line
+     class="st11"
+     x1="173.82"
+     y1="260.73"
+     x2="173.82"
+     y2="178.73"
+     id="line23" />
+  <polygon
+     class="st12"
+     points="53.82 158.73 71.82 166.73 71.82 150.73 53.82 158.73"
+     id="polygon24" />
+  <line
+     class="st11"
+     x1="71.82"
+     y1="158.73"
+     x2="153.82"
+     y2="158.73"
+     id="line24" />
+  <text
+     class="st0"
+     transform="translate(168.04 13.73)"
+     id="text24"><tspan
+       x="0"
+       y="0"
+       id="tspan24">N</tspan></text>
+  <text
+     class="st4"
+     transform="translate(150.01 33.73)"
+     id="text25"><tspan
+       x="0"
+       y="0"
+       id="tspan25">0° (360°)</tspan></text>
+  <text
+     class="st3"
+     transform="translate(322.82 163.73)"
+     id="text26"><tspan
+       x="0"
+       y="0"
+       id="tspan26">E</tspan></text>
+  <text
+     class="st4"
+     transform="translate(322.82 178.73)"
+     id="text27"><tspan
+       x="0"
+       y="0"
+       id="tspan27">90°</tspan></text>
+  <text
+     class="st3"
+     transform="translate(168.48 316.73)"
+     id="text28"><tspan
+       x="0"
+       y="0"
+       id="tspan28">S</tspan></text>
+  <text
+     class="st4"
+     transform="translate(161.41 329.73)"
+     id="text29"><tspan
+       x="0"
+       y="0"
+       id="tspan29">180°</tspan></text>
+  <text
+     class="st3"
+     transform="translate(9.72 163.73)"
+     id="text30"><tspan
+       x="0"
+       y="0"
+       id="tspan30">W</tspan></text>
+  <text
+     class="st4"
+     transform="translate(1 178.73)"
+     id="text31"><tspan
+       x="0"
+       y="0"
+       id="tspan31">270°</tspan></text>
+  <text
+     class="st2"
+     transform="translate(279.1 58.73)"
+     id="text32"><tspan
+       x="0"
+       y="0"
+       id="tspan32">NE</tspan></text>
+  <text
+     class="st5"
+     transform="translate(291.26 71.73)"
+     id="text33"><tspan
+       x="0"
+       y="0"
+       id="tspan33">45°</tspan></text>
+  <text
+     class="st2"
+     transform="translate(279.48 273.73)"
+     id="text34"><tspan
+       x="0"
+       y="0"
+       id="tspan34">SE</tspan></text>
+  <text
+     class="st5"
+     transform="translate(288.48 284.73)"
+     id="text35"><tspan
+       x="0"
+       y="0"
+       id="tspan35">135°</tspan></text>
+  <text
+     class="st2"
+     transform="translate(47.54 273.73)"
+     id="text36"><tspan
+       x="0"
+       y="0"
+       id="tspan36">SW</tspan></text>
+  <text
+     class="st5"
+     transform="translate(38.48 284.73)"
+     id="text37"><tspan
+       x="0"
+       y="0"
+       id="tspan37">225°</tspan></text>
+  <text
+     class="st2"
+     transform="translate(47.16 58.73)"
+     id="text38"><tspan
+       x="0"
+       y="0"
+       id="tspan38">NW</tspan></text>
+  <text
+     class="st5"
+     transform="translate(38.48 71.73)"
+     id="text39"><tspan
+       x="0"
+       y="0"
+       id="tspan39">315°</tspan></text>
+</svg>
