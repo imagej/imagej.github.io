@@ -106,10 +106,10 @@ The depth of the bounding box embedding the structure being measured
 <span id="e"></span>
 ##### Extension angle
 {% include img align="right" name="Compass/navigation convention" src="/media/plugins/snt/snt-angles.svg" caption="Compass/navigation convention" %}
-Extension angles report the _overall_ outgrowth direction of a path/branch, and are determined by computing an overall direction vector. This vector is computed in 3D using linear regression across the path/branch coordinates, and its angle retrieved from the slope of the regression. While different angles can be obtained via the [scripting API](./scripting), the most common type of extension angles fall into one of two categories: _absolute_ and _relative_ (_rel._):
+Extension angles report the _overall_ outgrowth direction of a path/branch, and are determined by computing a direction vector. This vector is computed in 3D using linear regression across the path/branch coordinates, and its angle retrieved from the slope of the regression. While different angles can be obtained via the [scripting API](#specialized-angles), the most common type of extension angles fall into one of two categories: _absolute_ and _relative_ (_rel._):
 
 ###### Absolute angles
-Absolute angles range between [0°—360°[ and are compass bearing angles defined under navigation convention: 0°: North; 90°: East; 180°: South; 270°: West. Absolute angles can be retrieved in 3D, or using projected planes (XY, XZ, or ZY). Note that there are key differences between compass convention and standard mathematical convention:
+Absolute angles range between [0°—360°[ and are compass bearing angles defined under navigation convention: 0°: North; 90°: East; 180°: South; 270°: West. Absolute angles can be retrieved in 3D, or using projection planes (XY, XZ, or ZY). Note the key differences between compass convention and standard mathematical convention:
 
 |---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
 |               | Compass Nomenclature                          | Mathematical Nomenclature                                                             |
@@ -136,6 +136,14 @@ The 3D orientation of a path can be captured using two components:
 ###### Relative (rel.) angles
 Relative angles range between [0°—180°[ and are computed as the acute angle between a path's 3D direction vector and its parent path's 3D direction vector. These are thus 3D branching angles. If a path has no parent, its relative angle defaults to _NaN_
 
+##### Specialized angles
+Specialized angles can be measured via the scripting API for any group of 3D coordinates. This includes reconstructions (whole cells or parts thereof) and 3D meshes. Some of the specialized angles include:
+
+- **Principal axes**: 	The principal axes of a 3D point cloud representing the directions of maximum, intermediate, and minimum variance in the cloud geometry. Principal axes provide insight into the overall shape orientation of a 3D surface. Axes are computed using Principal Component Analysis (PCA).
+
+- **Direction of mesh curvature**: The local orientation of a 3D mesh at a specific location.
+
+For more details have a look at angle-related [demo scripts](./scripting#bundled-templates) such as _Tree Mesh Direction Analysis_ and _Tree Span Angle Analysis_.
 
 <span id="h"></span>
 ##### Height
