@@ -42,6 +42,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer)
 /media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/analysis#sholl-analysis) and [Strahler](/plugins/snt/analysis#strahler-analysis) analysis
 /media/plugins/snt/snt-delineation-analysis2.png | [Delineation analyses](/plugins/snt/walkthroughs#delineation-analysis)
+/media/plugins/snt/snt-local-angle-surface-analysis.png | Analysis of [surface angles/arbor orientation](/plugins/snt/metrics#extension-angle)
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/graph-viewer-ferris-wheel.png | Routines to summarize data from [projectomes and connectomics](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/snt-2d-histogram.png | Specialized [statistics](/plugins/snt/analysis#statistics)
