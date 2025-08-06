@@ -15,7 +15,8 @@ team-maintainers: "@jdhardin"
 4d Tools is a set of macros/plugin for (1) import of legacy 4d datasets as movies (.MOV, .MP4, .AVI); (2) simplified import of Imaris .IMS and Micro-manager 1.4/2.0 datasets into Fiji; and (3) experimental playback of maximum-intensity projections on the fly as a crude attempt to recaptiulate legacy Perkin-Elmer UltraView software.
 
 **Rationale**
-1. Import of legacy datasets is useful for many long-established *C. elegans* laboratories, for example, which have large numbers of legacy 4d DIC datasets as movies in xytc format. For this vintage approach, see, for example,  Thomas, C., DeVries, P., Hardin, J., and White, J. (1996). Four-dimensional imaging: computer visualization of 3D movements in living specimens. *Science* **273**, 603-607.
+1. Import of legacy datasets is useful for many long-established *C. elegans* laboratories, for example, which have large numbers of legacy 4d DIC datasets as movies in xytc format. For this vintage approach, see, for example:
+   {% include citation doi="10.1126/science.273.5275.60" %}
 
 2. Micro-Manager has an integrated playback mechanisms built on top of ImageJ, and a free multi-platform Imaris player is avaialble, but in some cases direct import into Fiji is useful, and these macros simplify this process for routine work.
 
