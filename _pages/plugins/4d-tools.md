@@ -16,7 +16,7 @@ team-maintainers: "@jdhardin"
 
 **Rationale**
 1. Import of legacy datasets is useful for many long-established *C. elegans* laboratories, for example, which have large numbers of legacy 4d DIC datasets as movies in xytc format. For this vintage approach, see, for example:
-   {% include citation doi="10.1126/science.273.5275.60" %}
+   {% include citation doi="10.1126/science.273.5275.603" %}
 
 2. Micro-Manager has an integrated playback mechanisms built on top of ImageJ, and a free multi-platform Imaris player is avaialble, but in some cases direct import into Fiji is useful, and these macros simplify this process for routine work.
 
