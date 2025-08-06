@@ -809,7 +809,7 @@ body.is-preload #header:after {
 .page-info {
   text-align: right;
   font-style: italic;
-  font-size: small;
+  font-size: 0.8em;
   padding: 0.5em 0.5em 1em 0;
   line-height: 1.2em;
 }
@@ -817,4 +817,9 @@ body.is-preload #header:after {
 .page-info a {
   border-bottom: none;
   padding: 0 0.5em 0 0;
+}
+
+.page-info div {
+  display: inline-block;
+  vertical-align: top;
 }
