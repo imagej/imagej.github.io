@@ -29,49 +29,49 @@ Add the 4d-Tools update site using the Fiji update sites manager. After updating
 ***4d Import options***
 
 A "4d" submenu will be added to the "Import" menu in Fiji. Four items will be avaialble in this submenu:
-1. Classic 4d AVI to Hyperstack - Imports a 4d AVI video as a  Virtual Hyperstack. It looks for a plain text file with the same root name as video. If none is found the macro will ask for the number of focal planes.
-2. Classic 4d Movie to Hyperstack - Imports a 4d Quicktime .MOV or an MPEG4 .MP4 video as a 4d Virtual Hyperstack using FFMpeg. It looks for a plain text file with the same root name as the video. If none is found the macro will ask for the number of focal planes.
-3. Imaris to Hyperstack - Imports the highest- resolution dataset in an Imaris .IMS file (a variant of the HDF5 format) as a Virtual Hyperstack using the BioFormats Importer built into Fiji.
-4. MM Images to Hyperstack - Imports a Micro-Manager 1.4 or 2.0 dataset as a Virtual Hyperstack, using the metadata in the dataset.
+1. **Classic 4d AVI to Hyperstack:** Imports a 4d AVI video as a  Virtual Hyperstack. It looks for a plain text file with the same root name as video. If none is found the macro will ask for the number of focal planes.
+2. **Classic 4d Movie to Hyperstack:** Imports a 4d Quicktime .MOV or an MPEG4 .MP4 video as a 4d Virtual Hyperstack using FFMpeg. It looks for a plain text file with the same root name as the video. If none is found the macro will ask for the number of focal planes.
+3. **Imaris to Hyperstack:** Imports the highest-resolution dataset in an Imaris .IMS file (a variant of the HDF5 format) as a Virtual Hyperstack using the BioFormats Importer built into Fiji.
+4. **MM Images to Hyperstack:** Imports a Micro-Manager 1.4 or 2.0 dataset as a Virtual Hyperstack, using the metadata in the dataset.
 
 ***Hyperstack Projector***
 
-A new "Hyperstack Projector" item will be added to the "Image -> Hyperstacks" submenu. Running this plugin will attempt to recaptiulate the functionality of the old Perkin-Elmer Ultraview software, which performed a maximum-intensity projection on a specified range of images on the fly. The plugin assumes a 4d Hyperstack is open, and temporarily replaces the stack window with a custom window that allows specificaiton of the number of focal planes to be projected. CLosing the window restores the original stack window.
+A new "Hyperstack Projector" item will be added to the {% include bc path="Image|Hyperstacks" %} submenu. Running this plugin will attempt to recaptiulate the functionality of the old Perkin-Elmer Ultraview software, which performed a maximum-intensity projection on a specified range of images on the fly. The plugin assumes a 4d Hyperstack is open, and temporarily replaces the stack window with a custom window that allows specificaiton of the number of focal planes to be projected. CLosing the window restores the original stack window.
 
 **NOTE:** This plugin is **extremely** experimental. The code in the installed .JAR file can likely be massively improved.
 
-
 ## Usage
-***Classic 4d AVI to Hyperstack***
 
-1. Select menu "Import->4d-> Classic 4d AVI to Hyperstack".
+### Classic 4d AVI to Hyperstack
+
+1. Select menu {% include bc path="Import|4d|Classic 4d AVI to Hyperstack" %}.
 2. Specify the video file.
 3. If no text file with focal plane information is found, specify the number of focal planes.
 4. The dataset will be loaded as a Virtual Hyperstack.
 
-***Classic 4d Movie to Hyperstack***
+### Classic 4d Movie to Hyperstack
 
-1. Select menu "Import->4d-> Classic 4d Movie to Hyperstack".
+1. Select menu {% include bc path="Import|4d|Classic 4d Movie to Hyperstack" %}.
 2. Specify the video file.
 3. If no text file with focal plane information is found, specify the number of focal planes.
 4. The dataset will be loaded as a Virtual Hyperstack.
 5. A window with the FFMpeg import data from the FFmpegVideoImportExport plugin should be visible.
 
-***Imaris to Hyperstack***
+### Imaris to Hyperstack
 
-1. Select menu "Import->4d-> Imaris to Hyperstack".
+1. Select menu {% include bc path="Import|4d|Imaris to Hyperstack" %}.
 2. Specify the data file.
 3. The dataset will be loaded as a Virtual Hyperstack.
 
-***MM Images to Hyperstack***
+### MM Images to Hyperstack
 
-1. Select menu "Import->4d-> MM Images to Hyperstack".
+1. Select menu {% include bc path="Import|4d|MM Images to Hyperstack" %}.
 2. Specify the data directory.
 3. The dataset will be loaded as a Virtual Hyperstack.
 
-***Hyperstack Projector***
+### Hyperstack Projector
 
-1. With a 4d Hyperstack in the frontmost window, select menu "Import->Hyperstacks-> Hyperstack Projector".
+1. With a 4d Hyperstack in the frontmost window, select menu {% include bc path="Import|Hyperstacks|Hyperstack Projector" %}.
 2. The Hyperstack window will be replaced with a custom window.
 3. Enter the number of focal planes to be projected centered on the current focal plane in the "d" text field.
 4. A running projection will be displayed centered on the current z plane and time point.
@@ -79,4 +79,4 @@ A new "Hyperstack Projector" item will be added to the "Image -> Hyperstacks" su
 
 ## Additional information and support
 
-Sample data can be downloaded from the [Hardin Lab microscopy page](https://worms.zoology.wisc.edu/research/microscopy/)
+Sample data can be downloaded from the [Hardin Lab microscopy page](https://worms.zoology.wisc.edu/research/microscopy/).
