@@ -30,16 +30,17 @@ Please keep the following in mind:
 <span style="font-size: 1.5em">We are focusing on the *content*, not the
 *style*.</span> We *must* keep a clean separation between the actual
 information and how it is presented. If you don't like the way something looks,
-that's OK&mdash;but raise an issue in the
-[chat room](https://gitter.im/imagej/imagej.github.io) or
+that's OK&mdash;but raise an issue ~~in the chat room or~~
 [on GitHub](https://github.com/imagej/imagej.github.io/issues/new).
 Please do not hack in custom styles just to tweak things like an improper
 margin or an ugly table. And don't invent your own custom navigation or other
 fancy web feature, just for one page or site section. If you feel something
 should be fixed or enhanced, let's do it for the whole site, so that all pages
-reap the benefits. When in doubt, discuss in the
-[chat room](https://gitter.im/imagej/imagej.github.io) or on the
-[Fiji gather.town island](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon).
+reap the benefits. When in doubt, discuss ~~in the
+chat room or on the
+[Fiji gather.town island](https://gather.town/app/ipHMoZp6WOdATHE4/FijiHackathon)~~
+[on GitHub](https://github.com/imagej/imagej.github.io/issues/new) or
+[on the Image.sc Forum](https://forum.image.sc/).
 {% endcapture %}
 {% include notice content=primary-focus %}
 
@@ -95,8 +96,8 @@ In many ways, this new wiki is much more powerful than the old site.
     can tag whatever they want for the categories, and
     [it shows in the list of extensions](/list-of-extensions).
     Do you have opinions? Or know of any kind of community
-    standard we could use here? Start a conversation in
-    [the chatroom](https://gitter.im/imagej/imagej.github.io) or
+    standard we could use here? Start a conversation
+    ~~in the chatroom or~~
     [on the Image.sc Forum](https://forum.image.sc/tag/imagej)!
 
 2.  ~~`/update-sites` contains pages documenting what update sites are and how to
@@ -176,11 +177,13 @@ In many ways, this new wiki is much more powerful than the old site.
         [first page of the sign-up sheet](https://docs.google.com/spreadsheets/d/1CdRCMFBXCg6ypDGdDaZNEN5cBY_1Ye47-kyTZQ11wBQ/edit#gid=0)
         and make sure your GitHub ID is listed next to your name in the first
         column.~~
-    -   Open the [chat room](https://gitter.im/imagej/imagej.github.io) in a
-        browser tab, and sign in with your GitHub account.
-    -   If you don't already have write access to the wiki, post a message in
-        the chat room introducing yourself, and asking to be granted write
-        access. Hopefully someone can grant it to you quickly, but if not,
+    -   ~~Open the chat room in a
+        browser tab, and sign in with your GitHub account.~~
+    -   If you don't already have write access to the wiki, post a message
+        ~~in the chat room~~ [on the Image.sc Forum](https://forum.image.sc/)
+        or [on GitHub](https://github.com/imagej/imagej.github.io/issues/new)
+        introducing yourself, and asking to be granted write access.
+        Hopefully someone can grant it to you quickly, but if not,
         don't worry: it's still possible to submit edits to the wiki even
         without write access, via a mechanism called "pull requests." Either
         way, you just click the "Edit page" link on the page you with to edit
@@ -260,10 +263,10 @@ As for which pages to work on, here are some suggestions:
 * Once you've learned how to fix a particular kind of problem, pick more pages
   with that same problem, to apply your expertise. However: if you see many
   pages with the same problem, it might be fixable programmatically. Speak up
-  in the chat, and someone with developer skills can help cross them all off
-  the list at once. If your inner voice is telling you: "This is boring and
-  repetitive&mdash;I feel like a mindless robot," it's a hint that maybe what
-  you are doing could be done with a script instead.
+  ~~in the chat~~ on the forum, and someone with developer skills can help
+  cross them all off the list at once. If your inner voice is telling you:
+  "This is boring and repetitive&mdash;I feel like a mindless robot," it's a
+  hint that maybe what you are doing could be done with a script instead.
 
 ## Reviewing a page
 
@@ -281,9 +284,9 @@ As for which pages to work on, here are some suggestions:
     it was all automatically converted. Rather, you are looking for things like:
     -   Any big chunks of missing text. E.g., text formatted as an aside on the
         old wiki and floated to one side could potentially be completely missing
-        from the new site. If you see anything like this, please report it in
-        the chat, so that a software developer can scan the whole site for
-        the same problem across all pages.
+        from the new site. If you see anything like this, please report it
+        ~~in the chat~~ on the forum, so that a software developer can scan the
+        whole site for the same problem across all pages.
     -   Bad or ugly layout, such as images and text being badly misaligned, or
         otherwise incorrectly oriented, especially compared to the old page.
     -   Anything else that jumps out at you as a step backward from how it was.
@@ -294,8 +297,10 @@ As for which pages to work on, here are some suggestions:
     we mark a page as complete, and what will cause it to disappear from the
     [pages remaining list](page-list).
 
-Finally, **discuss early and often** in the
-[chat room](https://gitter.im/imagej/imagej.github.io)!
+Finally, **discuss early and often**
+[on the Image.sc Forum](https://forum.image.sc/) and/or
+[on GitHub](https://github.com/imagej/imagej.github.io/issues/new)
+~~in the chat room~~!
 Asking questions is a good way to facilitate rapid progress, especially during
 times when other knowledgeable people are online (check the sign-up sheet for
 everyone's availability).
@@ -394,7 +399,8 @@ We'll use the [MorphoLibJ plugins](/plugins/morpholibj) as an example.
     `groupId` and `artifactId` out of that XML file.
 
 If you are unable to locate the Maven artifact string for any particular
-plugin, please ask in the chat room, and someone will help you out!
+plugin, please ask ~~in the chat room~~ on the forum,
+and someone will help you out!
 
 #### Manual statbox
 
@@ -417,10 +423,10 @@ that need it.
 
 ### Missing chunks of content
 
-For now, speak up in the chat if you find any. In particular, it may be that
-some content from sideboxes did not carry over from the original page. Once we
-have a better grasp on which sorts of pages have missing content, we can
-outline the best ways of fixing those scenarios here.
+For now, speak up ~~in the chat~~ on the forum if you find any. In particular,
+it may be that some content from sideboxes did not carry over from the original
+page. Once we have a better grasp on which sorts of pages have missing content,
+we can outline the best ways of fixing those scenarios here.
 
 ## Filing issues on GitHub
 
