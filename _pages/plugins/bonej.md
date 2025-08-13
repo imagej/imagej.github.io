@@ -10,6 +10,8 @@ extensions: ["mathjax"]
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentation is for the current BoneJ version available through the ImageJ [updater](/plugins/updater). Legacy documentation is provided for old versions (1.x) at [bonej.org](https://bonej.org/).
 
+GPU-accelerated extensions that run orders of magnitude (~100×) faster are being rolled out on a pay-for-play basis in the new `bonej-plus` package. Functionality is similar to the CPU version, with the primary current limitation being a maximum data size of 1 Gpx (c. 1024³ pixels) per image. Where a BoneJ+ GPU-accelerated extension exists, it's marked below with **BoneJ+** and you can find it in the *Plugins>BoneJ>Plus* menu. Payment is managed through purchasing a bean token from [bonej.org/shop](https://bonej.org/shop) and entering it into the token box at *Plugins>BoneJ>Plus>Check Token*. Drop us a line at bonej-at-bonej.org for a coupon to get a free token to try out BoneJ+.
+
 If you use BoneJ in your work please [cite it](#citation).
 
 {% include citation %}
@@ -218,7 +220,7 @@ Removes a range of slices from a stack, so that cropping in the Z direction is p
 
 A 3D image.
 
-## Ellipsoid factor
+## Ellipsoid factor (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ | Ellipsoid factor" %}.
 
@@ -638,7 +640,7 @@ The input image must be 3D, 8-bit and binary.
     -   **Duration**: time in seconds to complete purification
 -   **Purified image**: optionally in a new image window.
 
-## Skeletonise
+## Skeletonise (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ |Skeletonise" %}.
 
