@@ -30,6 +30,10 @@ If you use BoneJ in your work please [cite it](#citation).
 
 After the downloads have finished, close and restart Fiji.
 
+BoneJ+ will also be installed by the updater by following the above steps. You will need an OpenCL environment and suitable GPU to run BoneJ+ plugins ([NVIDIA]([url](https://developer.nvidia.com/opencl)) and [AMD]([url](https://rocm.docs.amd.com/en/latest/)) are supported, Intel is in development). OpenCL support is provided by GPU drivers, which you will need to install following instructions at the hardware vendors' sites.
+
+Once OpenCL is set up, and each time you make hardware changes in your system, you must run *Plugins>BoneJ>Plus>Check GPUs* to tell BoneJ which GPUs to use or ignore. Physically present but unsupported hardware is listed but greyed out - BoneJ+ automatically checks for feature compliance prior to running. BoneJ+ can use as many GPUs as you have installed in your system.
+
 ## Analyse skeleton
 
 Menu path {% include bc path="Plugins | BoneJ | Analyse skeleton" %}.
