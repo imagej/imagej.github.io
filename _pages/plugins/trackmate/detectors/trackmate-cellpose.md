@@ -12,11 +12,11 @@ section: TrackMate-Cellpose.:Usage:cellpose parameters in the TrackMate UI.
 
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [cellpose](https://cellpose.readthedocs.io/en/latest/) to segment cells in 2D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following). It also requires cellpose to be installed on your system and working independently. This tutorial page gives installation details and advices at how to use the cellpose integration in TrackMate.
 
-cellpose is a segmentation algorithm based on Deep Learning techniques, written in Python 3 by Carsen Stringer and Marius Pachitariu. The TrackMate-cellpose module, which is written in Java, is an example of integration via sub-processes. The integration technique is similar to that of the [TrackMate-Ilastik](trackmate-ilastik) module, except that the iastik authors offer a ready-to-use Java bridge that took care of launching ilastik from Fiji. For the TrackMate-cellpose module, we built our own, based on ideas proposed by [Olivier Burri](/people/lacan), [Romain Guiet](/people/romainGuiet) and [Nicolas Chiaruttini](/people/NicoKiaru) from the [BIOP](https://www.epfl.ch/research/facilities/ptbiop/) team in the EPFL.
+cellpose is a segmentation algorithm based on Deep Learning techniques, written in Python 3 by Carsen Stringer and Marius Pachitariu. The TrackMate-cellpose module, which is written in Java, is an example of integration via sub-processes. The integration technique is similar to that of the [TrackMate-Ilastik](trackmate-ilastik) module, except that the ilastik authors offer a ready-to-use Java bridge that took care of launching ilastik from Fiji. For the TrackMate-cellpose module, we rely on launching the cellpose command-line interface directly from TrackMate.
 
-If you use the cellpose TrackMate module for your research, please also cite the cellpose paper:
+If you use the cellpose TrackMate module for your research, please also cite the cellpose 3 paper:
 
-_{% include citation doi='10.1038/s41592-020-01018-x' %}_
+_{% include citation doi='10.1038/s41592-025-02595-5' %}_
 
 
 ## Installation
@@ -25,7 +25,17 @@ We need to subscribe to an extra update site in Fiji, and have a working install
 
 ### TrackMate-Cellpose update site
 
-In Fiji, go to {% include bc path='Help|Update...' %}. Update and restart Fiji until it is up-to-date. Then go to the update menu once more, and click on the `Manage update sites` button, at the bottom-left of the updater window. A new window containing all the known update sites will appear. Click on the  **TrackMate-Cellpose** check box and restart Fiji one more time. 
+In Fiji, go to {% include bc path='Help|Update...' %}. Update and restart Fiji until it is up-to-date. Then go to the update menu once more, and click on the `Manage update sites` button, at the bottom-left of the updater window. A new window containing all the known update sites will appear. Click on the  **TrackMate-Cellpose** check box and restart Fiji one more time.
+
+### conda
+
+You need to install conda (or mamba, or any flavor of conda) on your system. We recommend [miniforge](https://github.com/conda-forge/miniforge).
+
+<!---
+### Configure conda path for TrackMate
+
+You need to tell TrackMate where conda is installed. This step is explained here: [configure the TrackMate conda path in Fiji](/plugins/trackmate/trackmate-conda-path). 
+-->
 
 ### cellpose
 
@@ -40,6 +50,13 @@ There are many ways to get cellpose installed. We give a subset of them in the [
 
 {% include img src="/media/plugins/trackmate/trackmate-cellpose-ui-01.png" align='center' width='300' %}
 We document these parameters from top to bottom in the GUI.
+
+<!---
+##### `Conda environment`
+
+Specify in what conda environment you installed Cellpose-SAM. 
+If you get an error at this stage, it is likely because the conda path for TrackMate was not configured properly. Check [this page]((/plugins/trackmate/trackmate-conda-path).
+-->
 
 ##### `Path to cellpose / Python executable`
 
@@ -250,64 +267,13 @@ cellpose can and does work with RGB images. They are single-channel but encode r
 
 ### Installing cellpose
 
-This step is completely independent of Fiji. If you have already a working cellpose installation, you can skip this section entirely. But we absolutely need a working cellpose. The installation of cellpose with GPU support requires some knowledge of Python and of Conda to manage Python packages. If you are unfamiliar with Conda and are keen on having GPU support we suggest you get in touch with someone that knows them well.
-
-There are several ways to install cellpose. We give example of using Anaconda or via precompiled executables. Both ways (conda or executable files) will work with TrackMate. 
-The executables do not support GPU but work out of the box and do not require a local Python installation. And there is no support for GPU on MacOS anyway.
-
-#### cellpose precompiled executables
-
-The cellpose authors provide two precompiled executables for MacOS and Windows available here:
-
-- For Mac: [https://www.cellpose.org/mac](https://www.cellpose.org/mac)
-- For Windows: [https://www.cellpose.org/windows](https://www.cellpose.org/windows)
-
-##### Windows
-
-Just download the executable file and save it in a convenient place. Test that it works by double-clicking it The cellpose UI should show up.
-In the `Path to cellpose / Python executable` text field in the detector UI, you will just need to enter the path to this executable.
-
-##### Mac
-
-On Mac you need to make the fille executable by opening a terminal, browsing to the folder containing it and running:
-
-```sh
-chmod 777 cellpose_mac
-```
-or
-```sh
-chmod 777 cellpose_mac.dms
-```
-depending on what file you downloaded.
-
-In a second step you need to run the cellpose GUI by double-clicking on the file to unblock it from Mac security system. When run it for the first time, this message will appear:
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-installation-01.png"  width='300' align='center' %}
-
-Click OK then go the settings of your Mac. In the Security and Privacy panel the cellpose executable should be mentioned. Click on `Open Anyway`.
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-installation-02.png"  width='400' align='center' %}
-
-Finally, click `Open` on one last confirmation panel:
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-installation-03.png"  width='300' align='center' %}
-
-Once you cellpose installed, run the GUI to confirm that it works and can segment images on your system. Again, in the `Path to cellpose / Python executable` text field in the TrackMate detector UI, you will just need to enter the path to this executable.
-
-#### With conda, mamba environment managers
-
 {% include notice icon="tech"
   content="This is the recommended way to install Python tools to be used with TrackMate." %}
 
-Using mamba (a better conda) is the most common way to run scientific Python tools on your computer. Recommendations keep evolving and we try to update this page.
-If you don't have mamba, follow these instructions to install it: https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html 
+  {% include notice icon="tech"
+  content="From now on we support **cellpose 3** in TrackMate. It is great, simple to install, and has GPU acceleration on all modern platforms." %}
 
-Go to the cellpose GitHub webpage and follow the [installation procedures](https://github.com/MouseLand/cellpose#local-installation).
-
-If you chose Anaconda to install cellpose, and put it in a dedicated environment, you need to enter the path to the _python executable_ of this conda environment. For instance if made a conda environment named `cellpose` for cellpose, it will be something like this:
-
-`C:\Users\tinevez\anaconda3\envs\cellpose\python.exe`
-
-##### Install cellpose 3 on a Mac
-
-For instance on Mac: (on the computer used in example below, conda is an alias to microsmamba)
+Go to the cellpose GitHub webpage and follow the [installation procedures](https://github.com/MouseLand/cellpose#local-installation). We copy and adapt these installation instructions below.
 
 ```zsh
 >> conda create --name cellpose-3 python=3.10
@@ -320,85 +286,13 @@ python version: 	3.10.18
 torch version:  	2.7.1
 ```
 
-This will install the version 3 of cellpose. As mid 2025, GPU-acceleration is used on this OS, as you can attest in the log when running cellpose:
+This will install the version 3 of cellpose. As mid 2025, GPU-acceleration is used even on Mac, as you can attest in the log when running cellpose:
 ```
 2025-07-11 11:13:53,625 [INFO] ** TORCH MPS version installed and working. **
 2025-07-11 11:13:53,625 [INFO] >>>> using GPU (MPS)
 ```
 
-#### BIOP Conda installation for GPU support on Windows
-
-The excellent people of the BIOP facility mentioned above also prepared a Conda spec list and recommendations for libraries dependencies to robustly achieve GPU support with cellpose. We give a procedure here, but all credits should go to them. It supports an older version of cellpose but works really well. Also the procedure describes one and one only way of getting GPU support with Python, that might not stand any deviation from it. Such is Python.
-
-For this procedure to apply, you need to have Windows 10 or 11 as an OS, to have Python installed on your system using [Anaconda](https://www.anaconda.com/) and a NVIDIA GPU card. Ideally you would not have installed the Cuda library yet.
-
-Go to the [BIOP GitHub page](https://github.com/BIOP/ijl-utilities-wrappers/blob/-/README.md#-conda-cellpose-gpu-) and fetch the YAML file corresponding to cellpose v0.6. Save it somwhere convenient.
-
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-biop-yaml-page.png"  align='center' class='box' %}
-
-Here is a [direct link to the file](https://raw.githubusercontent.com/BIOP/ijl-utilities-wrappers/master/resources/cellpose06_biop_gpu_113-821.yml) and its transcript:
-
-```yaml
-name: cellpose_biop_gpu
-dependencies:
-  - python>=3.8
-  - pip
-  - cudnn==8.2.1
-  - cudatoolkit=11.3
-  - pytorch::pytorch 
-  - pip:
-    - cellpose==0.6.5
-    - jupyterlab
-    - scikit-image
-```
-It specifies the versions of dependencies and constraints them, and they are chosen to work together.
-
-Open an anaconda terminal and cd to the folder containing the YAML file. Create a new Conda environment from this file using:
-```shell
- conda env create -f cellpose06_biop_gpu_113-821.yml
-```
-Now we need to install the CUDA Toolkit, with the right version. In our case it is the version 11.3. You can download it here for Windows 10 and Windows 11:
-
-https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10
-
-It will work with Windows 11 even if it is not stated on the webpage. After installation, your environment variable should look like this: 
-
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-installation-04.png" align='center' %}
-
-Let's now confirm that cellpose works with GPU support. In the anaconda prompt type
-
-```shell
-(base) PS C:\Users\tinevez> conda activate cellpose_biop_gpu
-(cellpose_biop_gpu) PS C:\Users\tinevez> python -m cellpose
-```
-
-The cellpose user interface should show up. Load an image, configure cellpose and click the `run segmentation` button on the GUI. In the anaconda shell, the log should confirm that the GPU was used:
-
-```shell
-2022-01-15 16:52:26,471 [INFO] WRITING LOG OUTPUT TO C:\Users\tinevez\.cellpose\run.log
-2022-01-15 16:52:27,180 [INFO] ** TORCH CUDA version installed and working. **
-C:/Users/tinevez/Desktop/R2_multiC-1.tif
-1 (1024, 1024, 3)
-removed all cells
-removed all cells
-cyto
-2022-01-15 16:55:35,056 [INFO] ** TORCH CUDA version installed and working. **
-2022-01-15 16:55:35,056 [INFO] >>>> using GPU
-using model cyto
-2022-01-15 16:55:35,178 [INFO] ~~~ FINDING MASKS ~~~
-2022-01-15 16:55:43,181 [INFO] >>>> TOTAL TIME 8.00 sec
-262 cells found with cellpose net in 8.152 sec
-plane 0 outlines processed
-```
-
-If you have the `** TORCH CUDA version installed and working. **` and `[INFO] >>>> using GPU` then congratulations! You have now cellpose with GPU acceleration.
-
-Now coming back to TrackMate, if you chose this path to install cellpose, you need to enter the path to the _python executable_ of this conda environment. In my case it is:
-
-`C:\Users\tinevez\anaconda3\envs\cellpose_biop_gpu\python.exe`
-
-
 
 _____
 
-*Jean-Yves Tinevez - Jan 2022*
+*Jean-Yves Tinevez - August 2025*
