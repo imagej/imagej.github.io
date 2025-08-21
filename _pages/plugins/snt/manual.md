@@ -175,10 +175,10 @@ Generates a Dendrogram plot of a connected component (i.e, one rooted tree struc
 <img align="right" src="/media/plugins/snt/snt-create-figure.png" title="Create Figure... prompt" width="350px" alt="Create Figure... prompt" />
 Creates multi-panel figures from chosen reconstructions, according to the following options:
 
-- **Style**: Whether cells should be rendered in a single pane or in a multi-panel montage with 1 cell per pane
+- **Style**: Whether cells should be rendered in a single pane or in a multi-panel montage with 1 cell per pane. This option is only available when multiple cells exist
 - **Type**: Whether the illustration should be a bitmap image (typically rendered at 1micron per pixel); a scalable graphics 2D image (see [Reconstruction Plotter](#reconstruction-plotter)), or an interactive 3D scene (see [Reconstruction Viewer](/plugins/snt/reconstruction-viewer))
 - **View**: The display plane of the scene: XY (the default), XZ, or ZY. This option pertains only to static 2D scenes
-- **Positioning**: Whether reconstructions should be rendered under the original coordinates, or whether every cell in the scene should be translated to a common xyz coordinate (0,0,0)
+- **Positioning**: Whether reconstructions should be rendered under the original coordinates, or whether every cell in the scene should be translated to a common xyz coordinate (0,0,0). This option is only available when multiple cells exist
 - **Rotation**: Whether cell(s) should be rotated to a _guessed_ 'vertical' position. Options include:
   - _None_: No rotation is performed
   - _Longest geodesic_: Assumes the longest shortest path in the arbor reflects its overall orientation. May be best suitable for polarized architectures (e.g., dendrites of pyramidal cells)
@@ -636,6 +636,9 @@ Duplicates the selected path with options to duplicate just a sub-segment or a f
 - **Make primary** Whether the duplicated path (or group of paths) should be disconnected from their parent
 <img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" title="Duplicate... (v4.3)" />
 
+#### Go To...
+
+Zoom-in into specific locations of the selected path.
 
 #### Rename...
 
@@ -705,7 +708,7 @@ Morphometric properties, such as *Path length*, *Path mean radius* or *[Path ord
 
 #### Proofreading Toolbar
 
-The proofreading toolbar allows for path-reviewing tags to be applied to selected paths in a convenient manner. Only one proofreading tag can be applied, because the previous assigned tag is replaced by the most recent assignment. Press "None" to remove existing tags. The toolbar includes an option to summarize current tag assignments, by listing the proportions of tagged paths.
+The proofreading toolbar allows for path-reviewing tags to be applied to selected paths in a convenient manner. Only one proofreading tag can be applied, because the previous assigned tag is replaced by the most recent assignment. Press "None" to remove existing tags, right-click on the toolbar and choose {% include bc path='Change Colors...' %} to edit tags. The toolbar also includes an option to summarize current tag assignments, by listing the proportions of tagged paths.
 
 
 #### Other...
