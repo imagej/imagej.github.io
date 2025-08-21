@@ -256,7 +256,99 @@ A root angle is defined as the angle between a neurite segment (defined centripe
 
 The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-angle-analysis) in the main dialog, Reconstruction Viewer's [Analyze & Measure](/plugins/snt/reconstruction-viewer#analyze--measure) menu, or [template scripts](/plugins/snt/scripting#bundled-templates). The screenshot below depicts the output of the *Analysis › Root Angle Analysis* template script:
 
-{% include img align="fit" src="/media/plugins/snt/snt-root-angle-analysis.png" %}
+{% include img align="center" src="/media/plugins/snt/snt-root-angle-analysis.png" caption="Root Angle Analysis outputs."%}
+
+
+# Growth Analysis
+
+Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matches across time frames, as detailed in. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
+
+## Prerequisites
+
+- **Time-matched paths**: Paths must be tagged using the {% include bc path='Match Paths Across Time...'%} command first, so that all paths in the timelapse sequence associated with the same neurite are tagged with a common neurite label, e.g., "{neurite #1}", "{neurite #2}", etc, as described in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough.
+- **Sufficient time points**: At least 3 time points per neurite for meaningful analysis. Monitoring changes in extension angles tipically requires at least 4 time points
+
+Data generated outside SNT can also be analyzed:
+1. Import all the reconstruction files associated with the time series
+2. Apply "{neurite #}" tags using {% include bc path='Match Paths Across Time...'%}
+3. Run {% include bc path='Growth Analysis...'%}
+{% include img align="center" src="/media/plugins/snt/snt-growth-analysis.png" caption="Growth Analysis outputs."%}
+
+## Classification Algorithm
+
+The {% include bc path='Growth Analysis...'%} command classifies growth phases based on instantaneous growth rates relative to the overall average growth rate of each neurite. Algorithmically, the classification works as follows:
+
+1. The overall growth rate of a neurite is calculated to establish a baseline
+
+2. A moving window "glides" along the time sequence to identify phase transitions in growth data. The detection combines three different detection methods to more robustly identify where changes in growth patterns occur. These include:
+  - _Mean shift detection_: Aimed at detecting sudden changes in average growth rate. This is usually effective at detecting Lag → Rapid; Rapid → Plateau; and Steady → Retraction transitions (see below)
+  - _Variance change detection_: Detects changes in growth rate variability, e.g., transitions from stable to variable growth
+  - _Trend change detection_: Detects changes in growth acceleration/deceleration patterns
+
+3. Growth rates are then split into five growth categories or phases:
+
+|------------|--------------------------------------------------------------|-------------------------------------|
+| Phase      | Definition                                                   | Interpretation                      |
+|------------|--------------------------------------------------------------|-------------------------------------|
+| Retraction | Phase rate less than *-min%* of overall growth rate          | Active shrinkage                    |
+| Lag        | Phase rate *≤ min%* of overall growth rate                   | Slow growth                         |
+| Plateau    | Absolute value of phase rate < *min%* of overall growth rate | Minimal net growth                  |
+| Steady     | Phase rate within *min% - max%* of overall growth rate       | Moderate growth                     |
+| Rapid      | Phase rate *> max%* of overall growth rate                   | Fast extension                      |
+|------------|--------------------------------------------------------------|-------------------------------------|
+
+With _overall growth rate_, _phase rate_, and _thresholds_ defined as:
+
+|---------------------|------------------------------------------------------------------|
+| Term.               | Definition                                                       |
+|---------------------|------------------------------------------------------------------|
+| Overall growth rate | The slope of the linear regression fitted to the entire time series of length measurements. It represents the average rate of length increase over the complete observation period |
+| Phase rate          | Average of instantaneous rates within phase boundaries, with *Instantaneous rate* defined at each time point _t_ as _(length[t+1] - length[t]) / (time[t+1] - time[t])_ |
+| *min%* and *max%* thresholds | The cutoff thresholds ensure that e.g., fast-growing neurites aren't misclassified as always "Rapid" or slow-growing neurites aren't misclassified as always "Lag". The *min%* cutoff represents the noise floor for growth measurements, while *max%* the cutoff threshold for significant acceleration. Cutoff thresholds can be calculated globally or *relative to each neurite's overall growth rate*  |
+|------------|------------------------------------------------------------------|
+
+
+## Outputs
+
+1. **Growth Phase Timeline**: Temporal visualization of growth phases. This is a timeline chart showing the temporal progression of growth phases for each neurite. Each neurite is represented as a horizontal row with color-coded segments indicating different growth phases over time
+
+2. **Length Over Time**: A scatter plot with trend lines showing the growth trajectories of individual neurites over time. Each neurite is represented by a colored line connecting measured length values at different time points
+
+3. **Phase Distributions**: Statistical summary of phase types. These are two donut (ring) plots summarizing growth phases across all analyzed neurites. The "Growth Phases" plot summarizes the relative frequency of different phases, while the "Growth Phase Durations" plot summarizes cumulative durations
+
+4. **Angular Velocity Over Time**: Angular velocity is the rate of change of angular position over time. It measures how quickly a neurite's extension direction is changing over time. This type of data informs on how often a neurite changes direction, and how stable their directed growth is
+
+5. **Extension Direction Over Time**: Absolute extension angles of neurites across time
+
+6. **Summarized Measurements**: Tabular values of plotted data
+
+
+## Input Parameters
+<img align="right" src="/media/plugins/snt/growth-analysis-prompt.png" title="Growth Analysis... prompt" width="450px" alt="Growth Analysis... prompt" />
+The algorithm has several adjustable parameters that can be set in the "Growth Analysis..." prompt:
+
+- **Threshold for 'Lag/Plateau' phase (%)**: Defines the minimum growth rate threshold for classifying growth phases. Growth rates below this threshold are classified as _Lag_ or _Plateau_. Calculated as a percentage of each neurite's overall linear growth rate. Lower values allow for detection of subtle growth variations, while high values detect only clearly distinct slow phases. Range: 10% - 50% (default is 30%)
+
+  E.g., _For a neurite with an overall growth rate of 2.0 μm/m: With a 30% threshold, growth below 0.6 μm/m (2.0 x 30%) would be classified as Lag/Plateau_.
+
+- **Threshold for 'Rapid' phase (%)**: Defines the minimum growth rate multiple for classifying _Rapid_ growth phases. Growth rates above this multiple of the overall rate are classified as rapid growth. Calculated as a percentage of each neurite's overall linear growth rate. Lower values allow for detection of moderate growth accelerations, while high values detect only very fast accelerations. Range: 110% - 300% (default is 150%)
+
+  E.g., _For a neurite with an overall growth rate of 2.0 μm/m: With a 150% threshold, growth above 3.0 μm/m (2.0 x 150%) would be classified as 'Rapid'_.
+
+- **Threshold calculation**: Either "Global" or "Per-neurite". If global, thresholds are calculated relative to mean growth rate of _all_ neurites. If "Per-neurite": Thresholds are calculated relative to each neurite's individual growth rate
+
+- **Phase detection sensitivity**: Sensitivity ranges from 0.05 to 1.0 (default value is 0.5). Lower values correspond to higher sensitivity, i.e., more phase transitions being detected, and higher values encoding low sensitivity. Higher values allow more phases to be detected. Lower values detect fewer, longer phases. Increase this parameter if too many short phases are being detected. Decrease it if obvious phase transitions are being missed.
+
+- **Window size (no. of frames)**: Controls the size of the "moving window" of the [phase detection algorithm](#classification-algorithm). Higher values provide more stable detection with fewer phases, while lower values detect more detailed changes but may include spurious transitions. Range 2-40 frames (default is 3)
+                    
+- **Threshold for retraction length (%)**: Defines the minimum percentage decrease in neurite length required to classify a phase as a _retraction event_. It is calculated at the start of the potential retraction. Increase this threshold if spurious "retraction" classifications occur. Range: 1% - 50% (default is 5%)
+
+  E.g., _A neurite is 100 μm long at a given frame and decreases its length to 94μm in the subsequent frame. That's a 6% reduction: With a 5% threshold, this change would be classified as "retraction"_.
+
+- **Filtering options**: Filtering options are optional but may be useful for noisy datasets:
+  - **Minimum length**: Neurites that never reach this length throughout the timelapse are ignored. It allows very short paths to be excluded from analysis
+  - **Minimum duration**: Neurites extending for less than this duration are ignored. Allows short-lived neurites to be excluded from analysis
+
 
 # Other Specialized Analyses
 See [SNT Scripting](/plugins/snt/scripting), as well as script templates demonstrating a range of analysis possibilities.

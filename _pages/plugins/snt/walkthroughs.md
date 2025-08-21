@@ -316,7 +316,7 @@ Once undesired motion has been mitigated:
 
    - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset...' %})
 
-4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
+4. Run [Path Manager](./manual#path-manager)'s {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
 
    <img align="right" src="/media/plugins/snt/snt-match-paths-across-time.png" title="MatchPath(s) Across Time... prompt" width="350" alt="MatchPath(s) Across Time... prompt" />
 
@@ -334,7 +334,10 @@ Once undesired motion has been mitigated:
       
     - NB: Note that any mistakes by the matching algorithm can be corrected by editing _neurite#_ tags manually
    
-5. Once paths have been matched across the time-lapse to common neurites, future analysis becomes simplified. {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} can be used to e.g. plot growth across time. {% include bc path='Time Profile...' %} includes the following options:
+5. Once paths have been matched to their neurites across the time-lapse sequence, future analysis becomes simplified.
+
+6. Use Either  {% include bc path='Analyze|Time-lapse Utilities|Grow Analysis...' %} or {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} analyze the data. The former is a very simple approach to summarize growth across time, while the latter is a comprehensive analysis tool.
+   {% include bc path='Time Profile...' %} includes the following options:
 
       - **Metric** the measurement to be profiled across time
 
@@ -342,9 +345,15 @@ Once undesired motion has been mitigated:
 
       - **Output** Whether a plot, a table or both should be created
 
-<div align="center">
-  <img  src="/media/plugins/snt/snt-time-profile.png" title="Time Profile... (v4.3.0)" width="500" />
-</div>
+7. For more complete, thorough measurements, use [Grow Analysis](./analysis/growth-analysis): In addition to growth trajectories, this option classifies motion growth phases, including elongation and retraction events, phase transitions, angular velocity changes, and directional steering.
+
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/snt-time-profile.png | Time Profile... (v4.3.0)
+/media/plugins/snt/snt-growth-analysis.png | [Growth Analysis](/plugins/snt/analysis#growth-analysis)
+"
+%}
 
 
 # Filling
