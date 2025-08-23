@@ -2,8 +2,8 @@
 title: 4d Tools
 description: 4d Tools is a set of macros/plugin for (1) import of legacy 4d datasets as movies (.MOV, .MP4, .AVI); (2) simplified import of Imaris .IMS and Micro-manager 1.4/2.0 datasets into Fiji; and (3) experimental playback of maximum-intensity projections on the fly as a crude attempt to recaptiulate legacy Perkin-Elmer UltraView software.
 categories: [Import-Export,Stacks]
-release-date: July 28 2025
-release-version: 0.5.0
+release-date: August 23 2025
+release-version: 0.6.0
 dev-status: Active
 support-status: Active
 team-founders: "@jdhardin"
@@ -30,9 +30,11 @@ Add the 4d-Tools update site using the Fiji update sites manager. After updating
 
 A "4d" submenu will be added to the "Import" menu in Fiji. Four items will be avaialble in this submenu:
 1. **Classic 4d AVI to Hyperstack:** Imports a 4d AVI video as a  Virtual Hyperstack. It looks for a plain text file with the same root name as video. If none is found the macro will ask for the number of focal planes.
-2. **Classic 4d Movie to Hyperstack:** Imports a 4d Quicktime .MOV or an MPEG4 .MP4 video as a 4d Virtual Hyperstack using FFMpeg. It looks for a plain text file with the same root name as the video. If none is found the macro will ask for the number of focal planes.
-3. **Imaris to Hyperstack:** Imports the highest-resolution dataset in an Imaris .IMS file (a variant of the HDF5 format) as a Virtual Hyperstack using the BioFormats Importer built into Fiji.
-4. **MM Images to Hyperstack:** Imports a Micro-Manager 1.4 or 2.0 dataset as a Virtual Hyperstack, using the metadata in the dataset.
+2. **Classic 4d Movie to Hyperstack:** Imports a 4d Quicktime .MOV or an MPEG4 .MP4 video as a 4d Virtual Hyperstack using FFMpeg. It looks for a plain text file with the same root name as the video. If none is found the macro will ask for the number of focal planes. FFmpeg is very versatile in terms of video formats; particularly valuable for classic QWuicktime movies, both MPEG  will accept 
+3. **Classic 4d Movie to Hyperstack Bio-Formats:** Imports a 4d Quicktime .MOV or an MPEG4 .MP4 video as a 4d Virtual Hyperstack using the Bio-Formats Importer built into Fiji. It looks for a plain text file with the same root name as the video. If none is found the macro will ask for the number of focal planes. NOTE #1: due to an issue with Bio-Formats virtual hyperstacks, the data is loaded into RAM. A warning dialog asks if this is OK. NOTE #2: For historical reasons, Bio-Formats focused on the Motion JPEG B codec (compression.decompression) format. Attempting to import MPEG A formatted video will throw an error.
+4. **Classic 4d Viewer to Hyperstack:** Imports classic 4d Viewer data (a folder of .MOV or .mov files) as a 4d Virtual Hyperstack using the Bio-Formats Importer built into Fiji. Rather than using the 4d Viewer info file, it simply counts the number of movie files, which are assumed to be the indivual focal planes. NOTE: this script only displays the movie data; displaying annotation/overlay information is not supported. 
+5. **Imaris to Hyperstack:** Imports the highest-resolution dataset in an Imaris .IMS file (a variant of the HDF5 format) as a Virtual Hyperstack using the Bio-Formats Importer built into Fiji.
+6. **MM Images to Hyperstack:** Imports a Micro-Manager 1.4 or 2.0 dataset as a Virtual Hyperstack, using the metadata in the dataset.
 
 ***Hyperstack Projector***
 
@@ -48,14 +50,23 @@ A new "Hyperstack Projector" item will be added to the {% include bc path="Image
 2. Specify the video file.
 3. If no text file with focal plane information is found, specify the number of focal planes.
 4. The dataset will be loaded as a Virtual Hyperstack.
+5. A window with the focal plane and time point information should be visible.
 
-### Classic 4d Movie to Hyperstack
+### Classic 4d Movie to Hyperstack/Classic 4d Movie to Hyperstack Bio-Formats
 
-1. Select menu {% include bc path="Import|4d|Classic 4d Movie to Hyperstack" %}.
+1. Select menu {% include bc path="Import|4d|Classic 4d Movie to Hyperstack" %} or {% include bc path="Import|4d|Classic 4d Movie to Hyperstack Bio-Formats" %}.
 2. Specify the video file.
 3. If no text file with focal plane information is found, specify the number of focal planes.
 4. The dataset will be loaded as a Virtual Hyperstack.
-5. A window with the FFMpeg import data from the FFmpegVideoImportExport plugin should be visible.
+5. A window with the focal plane and time point information should be visible.
+
+### Classic 4d Viewer to Hyperstack
+
+1. Select menu {% include bc path="Import|4d|Classic 4d Viewer to Hyperstack" %}.
+2. Specify the directory containing the focal plane movies.
+3. The dataset will be loaded as a Virtual Hyperstack.
+4. A window with the focal plane and time point information should be visible.
+NOTE: this script only loads the movie data; annotation/overlay information is not supported.
 
 ### Imaris to Hyperstack
 
