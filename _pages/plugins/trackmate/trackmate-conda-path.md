@@ -18,6 +18,7 @@ Using these tools in TrackMate requires you to
 - configure the path to your conda environment.
 
 To install conda, we recommend using [miniforge](https://github.com/conda-forge/miniforge).
+You can use the recommended settings for your platform.
 
 The TrackMate modules that depend on Python and external tools are all optional and documented on this wiki.
 [This path](/plugins/trackmate/index#trackmate-components) is a good starting point to find them.

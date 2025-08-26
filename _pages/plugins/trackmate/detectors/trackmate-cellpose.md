@@ -276,10 +276,13 @@ cellpose can and does work with RGB images. They are single-channel but encode r
 Go to the cellpose GitHub webpage and follow the [installation procedures](https://github.com/MouseLand/cellpose#local-installation). We copy and adapt these installation instructions below.
 
 ```zsh
->> conda create --name cellpose-3 python=3.10
->> conda activate cellpose-3
->> pip install 'cellpose[gui]==3.1.1.2'
->> cellpose --version
+conda create --name cellpose-3 python=3.10
+conda activate cellpose-3
+pip install 'cellpose[gui]==3.1.1.2'
+cellpose --version
+```
+
+```
 cellpose version: 	3.1.1.2 
 platform:       	darwin 
 python version: 	3.10.18 
@@ -292,6 +295,29 @@ This will install the version 3 of cellpose. As mid 2025, GPU-acceleration is us
 2025-07-11 11:13:53,625 [INFO] >>>> using GPU (MPS)
 ```
 
+On **Windows**, we noticed that it is not enough to get GPU acceleration even if you have a NVIDIA card.
+You need to reinstall torch with GPU CUDA support, as follow:
+- Remove the current version of torch
+```zsh
+pip uninstall torch
+```
+- Reinstall torch with GPU support. Follows the instructions [here](https://pytorch.org/get-started/locally/).
+In August 2025, this amounts to:
+```zsh
+ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+```
+
+Then:
+```zsh
+cellpose --version
+```
+
+```
+cellpose version:       3.1.1.2
+platform:               win32
+python version:         3.10.18
+torch version:          2.8.0+cu126
+```
 
 _____
 

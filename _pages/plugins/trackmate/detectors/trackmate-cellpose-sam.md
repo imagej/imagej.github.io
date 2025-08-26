@@ -43,6 +43,36 @@ conda create --name cellpose-sam python=3.10
 conda activate cellpose-sam
 python -m pip install 'cellpose[gui]'
 ```
+
+On **Windows**, we noticed that it is not enough to get GPU acceleration even if you have a NVIDIA card.
+You need to reinstall torch with GPU CUDA support, as follow:
+- Remove the current version of torch
+```zsh
+pip uninstall torch
+```
+- Reinstall torch with GPU support. Follows the instructions [here](https://pytorch.org/get-started/locally/).
+In August 2025, this amounts to:
+```zsh
+ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+```
+
+Then:
+```zsh
+cellpose --version
+```
+
+```
+Welcome to CellposeSAM, cellpose v
+cellpose version:       4.0.6
+platform:               win32
+python version:         3.12.11
+torch version:          2.8.0+cu126
+```
+You can ignore the warning if any.
+
+_____
+
+
 If you have not done it yet, you need to [configure the TrackMate conda path in Fiji](/plugins/trackmate/trackmate-conda-path). 
 
 
