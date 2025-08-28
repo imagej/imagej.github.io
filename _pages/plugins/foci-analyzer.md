@@ -4,7 +4,7 @@ categories: [Analysis]
 icon: /media/icons/Foci-Analyzer-icon.png
 source-url: "https://github.com/BioImaging-NKI/Foci-analyzer"
 update-site: "foci-analyzer"
-release-version: v1.8
+release-version: v1.87
 support-status: Active
 team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
@@ -74,7 +74,11 @@ The dialog has several (color-coded) sections that are discussed below. All sett
 
 - _Input files_ : Here you can specify which files to analyze. Simply add them to the list using the buttons, or directly drag&drop from a file explorer window. Input images should be multichannel images. (RGB images will be converted to composite multichannel image with channels 1:Red, 2:Green; 3:Blue.) Each file should contain at least a channel with nuclei staining, and a channel with foci (though technically they can be the same). The file format can e.g. be `.tiff`, or any proprietary microscopy file format that Fiji (i.e. Bio-Formats) can open, including multiple images packed into a single file as series.
 
+- _Only process files with extension (leave empty for all files)_ : If multiple file formats are in the list, only files ending with this extension (e.g. tif, czi) will be processed.
+
 - _Output folder_ : the folder where all the analyzed images and result output files will be written.
+
+- _Save the output files in the same folder as the input file(s)?_ : When checked, output images and result files will be saved in the same folder as the input file(s).
 
 ### Image settings
 
