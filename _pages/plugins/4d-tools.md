@@ -37,6 +37,7 @@ A "4d" submenu will be added to the "Import" menu in Fiji. Four items will be av
 6. **PE TIFFs to Hyperstack:** Imports a TIFF data series geenrated using the old Perkin-Elmer UltraView LCI software into Fiji. This is actually just a wrapper for the [Bio-Formats Importer](https://imagej.net/formats/bio-formats) plugin with a couple of paramaters set via script.
 7. **Imaris to Hyperstack:** Imports the highest-resolution dataset in an Imaris .IMS file (a variant of the HDF5 format) as a Virtual Hyperstack using the Bio-Formats Importer built into Fiji.
 8. **MM Images to Hyperstack:** Imports a Micro-Manager 1.4 or 2.0 dataset as a Virtual Hyperstack, using the metadata in the dataset.
+9. **Movie to Hyperstack macro toolbar** An ImageJ macro toolbar with easy access to the script in this package, as well as toolbar navigation buttons for 4d Hyperstacks.
 
 ***Hyperstack Projector***
 
@@ -96,9 +97,9 @@ NOTE: this script only loads the movie data; annotation/overlay information is n
 
 ### Movie to Hyperstack macro tool
 {% include img name="4d tools" src="/media/4d_macro_tool.png" width="248px" height="40px" %}
-1. The Movie to Hypersrtack macro tool will be avialable as an option in the ImageJ toolbar (click the >> button to see a list of aviualble toolbars).
-2. Selecting "Movie to Hyperstack" will load the toolbar. Clicking the leftmost button provides easy selectino of the scripts in the {% include bc path="Import|4d" %} submenu.
-3. Mousing over the other buttons provides a description of the other buttons, which allow standard navigation through Hyperstacks fro the toolbar. 
+1. The Movie to Hypersrtack macro tool will be available as an option in the ImageJ toolbar (click the >> button to see a list of aviualble toolbars).
+2. Selecting "Movie to Hyperstack" will load the toolbar. Clicking the leftmost button provides easy selection of the scripts in the {% include bc path="Import|4d" %} submenu.
+3. Mousing over the other buttons provides a description of the other buttons, which allow standard navigation through Hyperstacks from the toolbar. 
 
 ### Hyperstack Projector
 
