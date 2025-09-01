@@ -95,7 +95,7 @@ NOTE: this script only loads the movie data; annotation/overlay information is n
 3. The dataset will be loaded as a Virtual Hyperstack.
 
 ### Movie to Hyperstack macro tool
-{% include img name="4d tools" src="/media/4d_macro_tool.png" %}
+{% include img name="4d tools" src="/media/4d_macro_tool.png" width="248px" height="40px" %}
 1. The Movie to Hypersrtack macro tool will be avialable as an option in the ImageJ toolbar (click the >> button to see a list of aviualble toolbars).
 2. Selecting "Movie to Hyperstack" will load the toolbar. Clicking the leftmost button provides easy selectino of the scripts in the {% include bc path="Import|4d" %} submenu.
 3. Mousing over the other buttons provides a description of the other buttons, which allow standard navigation through Hyperstacks fro the toolbar. 
