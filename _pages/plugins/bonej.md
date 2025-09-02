@@ -30,7 +30,7 @@ If you use BoneJ in your work please [cite it](#citation).
 
 After the downloads have finished, close and restart Fiji.
 
-BoneJ+ will also be installed by the updater by following the above steps. You will need an OpenCL environment and suitable GPU to run BoneJ+ plugins ([NVIDIA]([url](https://developer.nvidia.com/opencl)) and [AMD]([url](https://rocm.docs.amd.com/en/latest/)) are supported, Intel is in development). OpenCL support is provided by GPU drivers, which you will need to install following instructions at the hardware vendors' sites.
+BoneJ+ will also be installed by the updater by following the above steps. You will need an OpenCL environment and suitable GPU to run BoneJ+ plugins ([NVIDIA]([url](https://developer.nvidia.com/opencl)), [AMD]([url](https://rocm.docs.amd.com/en/latest/)) and [Intel]([url](https://www.intel.com/content/www/us/en/developer/articles/tool/opencl-drivers.html#proc-graph-section))) GPUs on Windows and Linux are known to work. OpenCL support is provided by GPU drivers, which you will need to install following instructions at the hardware vendors' sites. BoneJ+ uses OpenCL version 1.2, which is widely supported by GPUs manufactured since at least 2015, although [performance varies a great deal among GPUs]([url](https://www.videocardbenchmark.net/gpu_list.php)). 
 
 Once OpenCL is set up, and each time you make hardware changes in your system, you must run *Plugins>BoneJ>Plus>Check GPUs* to tell BoneJ which GPUs to use or ignore. Physically present but unsupported hardware is listed but greyed out - BoneJ+ automatically checks for feature compliance prior to running. BoneJ+ can use as many GPUs as you have installed in your system.
 
