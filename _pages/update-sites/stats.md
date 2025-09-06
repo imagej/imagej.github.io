@@ -355,11 +355,11 @@ You can download the raw data directly from individual update sites. Each site h
 
 **URL Format:** `https://sites.imagej.net/{SITE_NAME}/{STATS_FILE}`
 
-**Sites Index:** https://sites.imagej.net/sites.json
+**Sites Index:** [https://sites.imagej.net/sites.json](https://sites.imagej.net/sites.json)
 
 **Example URLs:**
-- https://sites.imagej.net/Java-8/stats-unique-daily.txt.gz
-- https://sites.imagej.net/Fiji/stats-total-monthly.txt.gz
+- [https://sites.imagej.net/Java-8/stats-unique-daily.txt.gz](https://sites.imagej.net/Java-8/stats-unique-daily.txt.gz)
+- [https://sites.imagej.net/Fiji/stats-total-monthly.txt.gz](https://sites.imagej.net/Fiji/stats-total-monthly.txt.gz)
 
 **Data Format:** Each line contains a datestamp and count value separated by a space:
 ```
