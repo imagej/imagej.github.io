@@ -3,33 +3,75 @@ title: Update Site Statistics
 section: Extend:Update Sites
 ---
 
-<div id="controls" style="left: auto; right: auto; text-align: center; margin: 0 auto;">
-<div>
-<b>Update Site:</b> <select id="site" onchange="updateChart()"></select>
+<style>
+#controls {
+  margin: 0 auto;
+  padding-bottom: 2em;
+  width: fit-content;
+}
+#controls .grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.2em 0.2em;
+  align-items: start;
+}
+#controls .grid label.heading {
+  font-weight: bold;
+  text-align: right;
+}
+#controls .grid div.widgets {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+#controls label, #controls select {
+  padding-right: 0.4em;
+}
+#loading {
+  display: none;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+}
+.error {
+  color: #d32f2f;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+<div id="controls">
+<div class="grid">
+  <label class="heading">Update Site:</label>
+  <select id="site" onchange="updateChart()"></select>
+
+  <label class="heading">Time Window:</label>
+  <div class="widgets">
+    <label><input type="radio" id="time-daily" name="timeWindow" value="daily" checked onchange="updateChart()"> Daily</label>
+    <label><input type="radio" id="time-monthly" name="timeWindow" value="monthly" onchange="updateChart()"> Monthly</label>
+    <label><input type="radio" id="time-yearly" name="timeWindow" value="yearly" onchange="updateChart()"> Yearly</label>
+    <label><input type="radio" id="time-ever" name="timeWindow" value="ever" onchange="updateChart()"> Ever/Cumulative</label>
+  </div>
+
+  <label class="heading">Count Type:</label>
+  <div class="widgets">
+    <label><input type="radio" id="count-unique" name="countType" value="unique" checked onchange="updateChart()"> Unique IPs</label>
+    <label><input type="radio" id="count-total" name="countType" value="total" onchange="updateChart()"> Total Checks</label>
+  </div>
+
+  <label class="heading">Options:</label>
+  <div class="widgets">
+    <label for="rolling-average"><input type="checkbox" id="rolling-average" checked onchange="updateChart()"> 7-day rolling average</label>
+  </div>
 </div>
 
-<div>
-<b>Time Window:</b>
-<input type="radio" id="time-daily" name="timeWindow" value="daily" checked onchange="updateChart()"><label for="time-daily">Daily</label>
-<input type="radio" id="time-monthly" name="timeWindow" value="monthly" onchange="updateChart()"><label for="time-monthly">Monthly</label>
-<input type="radio" id="time-yearly" name="timeWindow" value="yearly" onchange="updateChart()"><label for="time-yearly">Yearly</label>
-<input type="radio" id="time-ever" name="timeWindow" value="ever" onchange="updateChart()"><label for="time-ever">Ever/Cumulative</label>
+<div id="loading">Loading data...</div>
 </div>
 
-<div>
-<b>Count Type:</b>
-<input type="radio" id="count-unique" name="countType" value="unique" checked onchange="updateChart()"><label for="count-unique">Unique IPs</label>
-<input type="radio" id="count-total" name="countType" value="total" onchange="updateChart()"><label for="count-total">Total Checks</label>
-</div>
+<div id="stats-chart" style="width: 100%"></div>
 
-<div style="margin-bottom: 15px;">
-<input type="checkbox" id="rolling-average" checked onchange="updateChart()"><label for="rolling-average">7-day rolling average</label>
-</div>
-
-<div id="loading" style="display: none; font-style: italic; color: #666;">Loading data...</div>
-</div>
-
-<div id="stats-chart" style="width: 100%;"></div>
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 <script type="text/javascript">
   // Data cache to avoid refetching
@@ -224,9 +266,8 @@ section: Extend:Update Sites
 
     } catch (error) {
       document.getElementById("stats-chart").innerHTML =
-        `<div style="padding: 20px; text-align: center; color: #d32f2f;">
-          <p><strong>Error loading data:</strong> ${error.message}</p>
-          <p>Please try a different selection or contact support if the problem persists.</p>
+        `<div class="error">
+          <p>Error loading data: ${error.message}</p>
         </div>`;
     } finally {
       // Hide loading indicator
@@ -314,11 +355,11 @@ You can download the raw data directly from individual update sites. Each site h
 
 **URL Format:** `https://sites.imagej.net/{SITE_NAME}/{STATS_FILE}`
 
-**Sites Index:** {% include link-banner url='https://sites.imagej.net/sites.json' %}
+**Sites Index:** https://sites.imagej.net/sites.json
 
 **Example URLs:**
-- {% include link-banner url='https://sites.imagej.net/Java-8/stats-unique-daily.txt.gz' %}
-- {% include link-banner url='https://sites.imagej.net/Fiji/stats-total-monthly.txt.gz' %}
+- https://sites.imagej.net/Java-8/stats-unique-daily.txt.gz
+- https://sites.imagej.net/Fiji/stats-total-monthly.txt.gz
 
 **Data Format:** Each line contains a datestamp and count value separated by a space:
 ```
