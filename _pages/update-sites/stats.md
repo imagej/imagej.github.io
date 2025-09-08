@@ -23,6 +23,10 @@ section: Extend:Update Sites
   display: flex;
   gap: 2px;
   flex-wrap: wrap;
+  width: 100%;
+}
+#controls .grid div.widgets select {
+  flex: 1;
 }
 #controls label, #controls select {
   padding-right: 0.4em;
@@ -46,6 +50,16 @@ section: Extend:Update Sites
 <div class="grid">
   <label class="heading">Update Site:</label>
   <select id="site" onchange="updateChart()"></select>
+
+  <label class="heading">Compare To:</label>
+  <div class="widgets">
+    <select id="op" onchange="updateChart()">
+      <option value="+">+</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <select id="site2" onchange="updateChart()"></select>
+  </div>
 
   <label class="heading">Time Window:</label>
   <div class="widgets">
@@ -82,11 +96,13 @@ section: Extend:Update Sites
 
   function getSelectedValues() {
     const site = document.getElementById('site').value;
+    const op = document.getElementById('op').value;
+    const site2 = document.getElementById('site2').value;
     const timeWindow = document.querySelector('input[name="timeWindow"]:checked').value;
     const countType = document.querySelector('input[name="countType"]:checked').value;
     const rollingAverage = document.getElementById('rolling-average').checked;
 
-    return { site, timeWindow, countType, rollingAverage };
+    return { site, op, site2, timeWindow, countType, rollingAverage };
   }
 
   function updateRollingAverageState() {
@@ -184,6 +200,63 @@ section: Extend:Update Sites
     return filled;
   }
 
+  function combineForStackedChart(data1, data2) {
+    if (!data1 || !data2) return data1 || data2 || [];
+
+    // Create maps for efficient lookup
+    const map1 = new Map(data1.map(([date, value]) => [date.getTime(), value]));
+    const map2 = new Map(data2.map(([date, value]) => [date.getTime(), value]));
+
+    // Get all unique dates from both datasets
+    const allDates = new Set([...map1.keys(), ...map2.keys()]);
+    const result = [];
+
+    for (const dateKey of Array.from(allDates).sort()) {
+      const date = new Date(dateKey);
+      const val1 = map1.get(dateKey) || 0;
+      const val2 = map2.get(dateKey) || 0;
+
+      // Format: [date, site1_value, site2_value]
+      result.push([date, val1, val2]);
+    }
+
+    return result;
+  }
+
+  function combineDataSets(data1, data2, operation) {
+    if (!data1 || !data2) return data1 || data2 || [];
+
+    // Create maps for efficient lookup
+    const map1 = new Map(data1.map(([date, value]) => [date.getTime(), value]));
+    const map2 = new Map(data2.map(([date, value]) => [date.getTime(), value]));
+
+    // Get all unique dates from both datasets
+    const allDates = new Set([...map1.keys(), ...map2.keys()]);
+    const result = [];
+
+    for (const dateKey of Array.from(allDates).sort()) {
+      const date = new Date(dateKey);
+      const val1 = map1.get(dateKey) || 0;
+      const val2 = map2.get(dateKey) || 0;
+
+      let combinedValue;
+      switch (operation) {
+        case '/':
+          combinedValue = val2 === 0 ? 0 : val1 / val2;
+          break;
+        case '%':
+          combinedValue = (val1 + val2) === 0 ? 0 : (val1 / (val1 + val2)) * 100;
+          break;
+        default:
+          combinedValue = val1;
+      }
+
+      result.push([date, combinedValue]);
+    }
+
+    return result;
+  }
+
   async function fetchStatsData(site, timeWindow, countType) {
     const cacheKey = getCacheKey(site, timeWindow, countType);
 
@@ -232,7 +305,7 @@ section: Extend:Update Sites
   }
 
   async function updateChart() {
-    const { site, timeWindow, countType, rollingAverage } = getSelectedValues();
+    const { site, op, site2, timeWindow, countType, rollingAverage } = getSelectedValues();
 
     if (!site) return;
 
@@ -243,26 +316,82 @@ section: Extend:Update Sites
     document.getElementById('loading').style.display = 'block';
 
     try {
-      const rawData = await fetchStatsData(site, timeWindow, countType);
+      // Fetch data for primary site
+      const rawData1 = await fetchStatsData(site, timeWindow, countType);
+      let data = fillDateGaps(rawData1, timeWindow);
+      let chartTitle = site;
+      let yLabel = `${countType === 'unique' ? 'Unique IP Addresses' : 'Total Update Checks'}`;
 
-      // Fill date gaps to avoid weird connecting lines
-      const data = fillDateGaps(rawData, timeWindow);
+      // Configuration for chart
+      let chartConfig = {
+        rollPeriod: rollingAverage && timeWindow === 'daily' ? 7 : 1,
+        labels: ['Date', `${countType === 'unique' ? 'Unique IPs' : 'Total Checks'}`],
+        ylabel: yLabel,
+        title: `${chartTitle} - ${timeWindow.charAt(0).toUpperCase() + timeWindow.slice(1)} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`
+      };
 
-      let rollPeriod = 1;
-      if (rollingAverage && timeWindow === 'daily') {
-        rollPeriod = 7;
+      // Set X-axis formatting based on time window
+      if (timeWindow === 'yearly') {
+        chartConfig.axes = {
+          x: {
+            axisLabelFormatter: function(d) {
+              return d.getFullYear().toString();
+            },
+            ticker: function(a, b, pixels, opts, dygraph, vals) {
+              // Generate yearly ticks
+              const startYear = new Date(a).getFullYear();
+              const endYear = new Date(b).getFullYear();
+              const ticks = [];
+              for (let year = startYear; year <= endYear; year++) {
+                ticks.push({v: new Date(year, 0, 1).getTime(), label: year.toString()});
+              }
+              return ticks;
+            }
+          }
+        };
+      } else if (timeWindow === 'monthly') {
+        chartConfig.axes = {
+          x: {
+            axisLabelFormatter: function(d) {
+              return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+            }
+          }
+        };
       }
 
-      new Dygraph(
-        document.getElementById("stats-chart"),
-        data,
-        {
-          rollPeriod: rollPeriod,
-          labels: ['Date', `${countType === 'unique' ? 'Unique IPs' : 'Total Checks'}`],
-          ylabel: `${countType === 'unique' ? 'Unique IP Addresses' : 'Total Update Checks'}`,
-          title: `${site} - ${timeWindow.charAt(0).toUpperCase() + timeWindow.slice(1)} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`
+      // If site2 is selected, fetch and combine data
+      if (site2 && site2 !== site) {
+        const rawData2 = await fetchStatsData(site2, timeWindow, countType);
+        const filledData2 = fillDateGaps(rawData2, timeWindow);
+
+        if (op === '+') {
+          // For sum, create stacked chart with both series
+          data = combineForStackedChart(data, filledData2);
+          chartTitle = `${site} + ${site2}`;
+          chartConfig.labels = ['Date', site, site2];
+          chartConfig.stackedGraph = true;
+          chartConfig.fillGraph = true;
+          chartConfig.colors = ['#1f77b4', '#ff7f0e'];
+        } else {
+          // For other operations, combine into single series
+          data = combineDataSets(data, filledData2, op);
+          switch (op) {
+            case '/':
+              chartTitle = `${site} / ${site2}`;
+              yLabel = `Ratio (${site}/${site2})`;
+              break;
+            case '%':
+              chartTitle = `${site} as % of (${site} + ${site2})`;
+              yLabel = `Percentage (%)`;
+              break;
+          }
         }
-      );
+
+        chartConfig.title = `${chartTitle} - ${timeWindow.charAt(0).toUpperCase() + timeWindow.slice(1)} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`;
+        chartConfig.ylabel = yLabel;
+      }
+
+      new Dygraph(document.getElementById("stats-chart"), data, chartConfig);
 
     } catch (error) {
       document.getElementById("stats-chart").innerHTML =
@@ -292,20 +421,25 @@ section: Extend:Update Sites
 
       // Add sites as options to dropdown list
       const siteSelect = document.getElementById('site');
+      const site2Select = document.getElementById('site2');
       for (const siteName of window.availableSites) {
         const siteOption = new Option();
-        siteOption.value = siteName;
+        const site2Option = new Option();
+        siteOption.value = site2Option.value = siteName;
 
         // Add metadata to option text if available
         const metadata = sitesData[siteName];
         if (metadata && metadata.total_unique_ips) {
-          siteOption.innerHTML = `${siteName} (${metadata.total_unique_ips.toLocaleString()})`;
+          siteOption.innerHTML = site2Option.innerHTML =
+            `${siteName} (${metadata.total_unique_ips.toLocaleString()})`;
         } else {
-          siteOption.innerHTML = siteName;
+          siteOption.innerHTML = site2Option.innerHTML = siteName;
         }
 
-        if (siteName === 'Java-8') siteOption.selected = true;
+        if (siteName === 'Fiji') siteOption.selected = true;
+        else if (siteName === 'Java-8') site2Option.selected = true;
         siteSelect.appendChild(siteOption);
+        site2Select.appendChild(site2Option);
       }
 
       // Initial chart update
@@ -314,13 +448,18 @@ section: Extend:Update Sites
     } catch (error) {
       console.error('Failed to initialize page:', error);
       // Fallback to hardcoded list if sites.json fails
-      window.availableSites = ['Java-8', 'Fiji', 'ImageJ', 'Bio-Formats'];
+      window.availableSites = ['Java-8', 'Fiji'];
       const siteSelect = document.getElementById('site');
+      const site2Select = document.getElementById('site2');
       for (const siteName of window.availableSites) {
         const siteOption = new Option();
-        siteOption.value = siteOption.innerHTML = siteName;
-        if (siteName === 'Java-8') siteOption.selected = true;
+        const site2Option = new Option();
+        siteOption.value = site2Option.value =
+          siteOption.innerHTML = site2Option.innerHTML = siteName;
+        if (siteName === 'Fiji') siteOption.selected = true;
+        else if (siteName === 'Java-8') site2Option.selected = true;
         siteSelect.appendChild(siteOption);
+        site2Select.appendChild(site2Option);
       }
       updateChart();
     }
