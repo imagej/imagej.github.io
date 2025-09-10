@@ -641,26 +641,25 @@ for year in sorted(yearly_stats.keys()):
 # Find the most popular year
 best_year = max(yearly_stats.keys(), key=lambda y: yearly_stats[y])
 print(f"\nBest year: {best_year} with {yearly_stats[best_year]:,} unique IPs")
+```
 
-# Example: List all sites sorted by total unique IPs
-def get_sites_ranking():
-    """Get all sites ranked by total unique IPs."""
-    import json
+And another example to list all sites sorted by total unique IPs:
+```python
+import json
+import urllib.request
 
-    with urllib.request.urlopen('https://sites.imagej.net/sites.json') as response:
-        sites_data = json.load(response)
+with urllib.request.urlopen('https://sites.imagej.net/sites.json') as response:
+    sites_data = json.load(response)
 
-    # Sort sites by total unique IPs
-    ranked_sites = sorted(
-        sites_data.items(),
-        key=lambda x: x[1]['total_unique_ips'],
-        reverse=True
-    )
+# Sort sites by total unique IPs
+ranked_sites = sorted(
+    sites_data.items(),
+    key=lambda x: x[1]['total_unique_ips'],
+    reverse=True
+)
 
-    print("Sites ranked by total unique IPs:")
-    for site_name, metadata in ranked_sites:
-        print(f"  {site_name}: {metadata['total_unique_ips']:,} unique IPs "
-              f"({metadata['days_with_data']} days of data)")
-
-get_sites_ranking()
+print("Sites ranked by total unique IPs:")
+for site_name, metadata in ranked_sites:
+    print(f"  {site_name}: {metadata['total_unique_ips']:,} unique IPs "
+          f"({metadata['days_with_data']} days of data)")
 ```
