@@ -11,7 +11,7 @@ section: Extend:Update Sites
 }
 #controls .grid {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 8em 1fr;
   gap: 0.2em 0.2em;
   align-items: start;
 }
@@ -21,7 +21,7 @@ section: Extend:Update Sites
 }
 #controls .grid div.widgets {
   display: flex;
-  gap: 2px;
+  gap: 0.3em;
   flex-wrap: wrap;
   width: 100%;
 }
