@@ -49,7 +49,14 @@ section: Extend:Update Sites
 <div id="controls">
 <div class="grid">
   <label class="heading">Update Site:</label>
-  <select id="site" onchange="updateChart()"></select>
+  <div class="widgets">
+    <select id="sort" onchange="updateSiteList()">
+      <option value="alpha">Sort: A-Z</option>
+      <option value="ips">Sort: Most Used</option>
+      <option value="date">Sort: Newest</option>
+    </select>
+    <select id="site" onchange="updateChart()"></select>
+  </div>
 
   <label class="heading">Compare To:</label>
   <div class="widgets">
@@ -104,6 +111,79 @@ section: Extend:Update Sites
     const rollingAverage = document.getElementById('rolling-average').checked;
 
     return { site, op, site2, timeWindow, countType, rollingAverage };
+  }
+
+  function updateSiteList() {
+    const sortMode = document.getElementById('sort').value;
+    const siteSelect = document.getElementById('site');
+    const site2Select = document.getElementById('site2');
+
+    // Remember current selections
+    const currentSite = siteSelect.value;
+    const currentSite2 = site2Select.value;
+
+    // Sort sites according to selected mode
+    let sortedSites = [...window.availableSites];
+
+    switch (sortMode) {
+      case 'alpha':
+        sortedSites.sort();
+        break;
+      case 'ips':
+        sortedSites.sort((a, b) => {
+          const ipsA = window.sitesMetadata[a]?.total_unique_ips || 0;
+          const ipsB = window.sitesMetadata[b]?.total_unique_ips || 0;
+          return ipsB - ipsA; // Descending
+        });
+        break;
+      case 'date':
+        sortedSites.sort((a, b) => {
+          const dateA = window.sitesMetadata[a]?.date_range?.start || '00000000';
+          const dateB = window.sitesMetadata[b]?.date_range?.start || '00000000';
+          return dateB.localeCompare(dateA); // Newest first
+        });
+        break;
+    }
+
+    // Clear and repopulate dropdowns
+    siteSelect.innerHTML = '';
+    site2Select.innerHTML = '';
+
+    for (const siteName of sortedSites) {
+      const siteOption = new Option();
+      const site2Option = new Option();
+      siteOption.value = site2Option.value = siteName;
+
+      // Add metadata to option text if available
+      const metadata = window.sitesMetadata[siteName];
+      if (metadata && metadata.total_unique_ips) {
+        siteOption.innerHTML = site2Option.innerHTML =
+          `${siteName} (${metadata.total_unique_ips.toLocaleString()})`;
+      } else {
+        siteOption.innerHTML = site2Option.innerHTML = siteName;
+      }
+
+      siteSelect.appendChild(siteOption);
+      site2Select.appendChild(site2Option);
+    }
+
+    // Restore selections if possible
+    if (sortedSites.includes(currentSite)) {
+      siteSelect.value = currentSite;
+    } else if (sortedSites.length > 0) {
+      siteSelect.selectedIndex = 0;
+    }
+
+    if (sortedSites.includes(currentSite2)) {
+      site2Select.value = currentSite2;
+    } else if (sortedSites.includes('Java-8')) {
+      site2Select.value = 'Java-8';
+    } else if (sortedSites.length > 1) {
+      site2Select.selectedIndex = 1;
+    }
+
+    // Update chart with new selection
+    updateChart();
   }
 
   function updateCompareMode() {
@@ -432,30 +512,22 @@ section: Extend:Update Sites
       const sitesData = await response.json();
       window.sitesMetadata = sitesData;
 
-      // Extract site names and sort them
-      window.availableSites = Object.keys(sitesData).sort();
+      // Extract site names (will be sorted by updateSiteList)
+      window.availableSites = Object.keys(sitesData);
 
-      // Add sites as options to dropdown list
+      // Set default selections
       const siteSelect = document.getElementById('site');
       const site2Select = document.getElementById('site2');
-      for (const siteName of window.availableSites) {
-        const siteOption = new Option();
-        const site2Option = new Option();
-        siteOption.value = site2Option.value = siteName;
 
-        // Add metadata to option text if available
-        const metadata = sitesData[siteName];
-        if (metadata && metadata.total_unique_ips) {
-          siteOption.innerHTML = site2Option.innerHTML =
-            `${siteName} (${metadata.total_unique_ips.toLocaleString()})`;
-        } else {
-          siteOption.innerHTML = site2Option.innerHTML = siteName;
-        }
+      // Populate and sort site lists
+      updateSiteList();
 
-        if (siteName === 'Fiji') siteOption.selected = true;
-        else if (siteName === 'Java-8') site2Option.selected = true;
-        siteSelect.appendChild(siteOption);
-        site2Select.appendChild(site2Option);
+      // Set initial selections after population
+      if (window.availableSites.includes('Fiji')) {
+        siteSelect.value = 'Fiji';
+      }
+      if (window.availableSites.includes('Java-8')) {
+        site2Select.value = 'Java-8';
       }
 
       // Initialize compare mode state and chart
@@ -466,18 +538,21 @@ section: Extend:Update Sites
       console.error('Failed to initialize page:', error);
       // Fallback to hardcoded list if sites.json fails
       window.availableSites = ['Java-8', 'Fiji'];
+      window.sitesMetadata = {}; // Empty metadata for fallback
+
       const siteSelect = document.getElementById('site');
       const site2Select = document.getElementById('site2');
-      for (const siteName of window.availableSites) {
-        const siteOption = new Option();
-        const site2Option = new Option();
-        siteOption.value = site2Option.value =
-          siteOption.innerHTML = site2Option.innerHTML = siteName;
-        if (siteName === 'Fiji') siteOption.selected = true;
-        else if (siteName === 'Java-8') site2Option.selected = true;
-        siteSelect.appendChild(siteOption);
-        site2Select.appendChild(site2Option);
+
+      updateSiteList();
+
+      // Set fallback selections
+      if (window.availableSites.includes('Fiji')) {
+        siteSelect.value = 'Fiji';
       }
+      if (window.availableSites.includes('Java-8')) {
+        site2Select.value = 'Java-8';
+      }
+
       updateCompareMode();
       updateChart();
     }
