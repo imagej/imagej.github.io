@@ -71,7 +71,8 @@ section: Extend:Update Sites
 
   <label class="heading">Time Window:</label>
   <div class="widgets">
-    <label><input type="radio" id="time-daily" name="timeWindow" value="daily" checked onchange="updateChart()"> Daily</label>
+    <label><input type="radio" id="time-daily" name="timeWindow" value="daily" onchange="updateChart()"> Daily</label>
+    <label><input type="radio" id="time-daily-avg" name="timeWindow" value="daily-avg" checked onchange="updateChart()"> Daily (7-day avg)</label>
     <label><input type="radio" id="time-monthly" name="timeWindow" value="monthly" onchange="updateChart()"> Monthly</label>
     <label><input type="radio" id="time-yearly" name="timeWindow" value="yearly" onchange="updateChart()"> Yearly</label>
     <label><input type="radio" id="time-ever" name="timeWindow" value="ever" onchange="updateChart()"> Ever/Cumulative</label>
@@ -81,11 +82,6 @@ section: Extend:Update Sites
   <div class="widgets">
     <label><input type="radio" id="count-unique" name="countType" value="unique" checked onchange="updateChart()"> Unique IPs</label>
     <label><input type="radio" id="count-total" name="countType" value="total" onchange="updateChart()"> Total Checks</label>
-  </div>
-
-  <label class="heading">Options:</label>
-  <div class="widgets">
-    <label for="rolling-average"><input type="checkbox" id="rolling-average" checked onchange="updateChart()"> 7-day rolling average</label>
   </div>
 </div>
 
@@ -108,9 +104,8 @@ section: Extend:Update Sites
     const site2 = document.getElementById('site2').value;
     const timeWindow = document.querySelector('input[name="timeWindow"]:checked').value;
     const countType = document.querySelector('input[name="countType"]:checked').value;
-    const rollingAverage = document.getElementById('rolling-average').checked;
 
-    return { site, op, site2, timeWindow, countType, rollingAverage };
+    return { site, op, site2, timeWindow, countType };
   }
 
   function updateSiteList() {
@@ -201,23 +196,10 @@ section: Extend:Update Sites
     }
   }
 
-  function updateRollingAverageState() {
-    const { timeWindow } = getSelectedValues();
-    const checkbox = document.getElementById('rolling-average');
-    const label = document.querySelector('label[for="rolling-average"]');
-
-    if (timeWindow === 'daily') {
-      checkbox.disabled = false;
-      label.style.color = '';
-    } else {
-      checkbox.disabled = true;
-      checkbox.checked = false;
-      label.style.color = '#999';
-    }
-  }
-
   function buildStatsUrl(site, timeWindow, countType) {
-    const filename = `stats-${countType}-${timeWindow}.txt.gz`;
+    // Map daily-avg to daily for URL
+    const urlTimeWindow = timeWindow === 'daily-avg' ? 'daily' : timeWindow;
+    const filename = `stats-${countType}-${urlTimeWindow}.txt.gz`;
     return `https://sites.imagej.net/${site}/${filename}`;
   }
 
@@ -226,7 +208,7 @@ section: Extend:Update Sites
   }
 
   function parseDate(dateStr, timeWindow) {
-    if (timeWindow === 'daily' || timeWindow === 'ever') {
+    if (timeWindow === 'daily' || timeWindow === 'daily-avg' || timeWindow === 'ever') {
       // YYYYMMDD format
       const year = parseInt(dateStr.substring(0, 4));
       const month = parseInt(dateStr.substring(4, 6)) - 1; // JS months are 0-based
@@ -284,7 +266,7 @@ section: Extend:Update Sites
       }
 
       // Increment current date based on time window
-      if (timeWindow === 'daily' || timeWindow === 'ever') {
+      if (timeWindow === 'daily' || timeWindow === 'daily-avg' || timeWindow === 'ever') {
         current.setDate(current.getDate() + 1);
       } else if (timeWindow === 'monthly') {
         current.setMonth(current.getMonth() + 1);
@@ -401,12 +383,9 @@ section: Extend:Update Sites
   }
 
   async function updateChart() {
-    const { site, op, site2, timeWindow, countType, rollingAverage } = getSelectedValues();
+    const { site, op, site2, timeWindow, countType } = getSelectedValues();
 
     if (!site) return;
-
-    // Update rolling average state
-    updateRollingAverageState();
 
     // Show loading indicator
     document.getElementById('loading').style.display = 'block';
@@ -418,12 +397,17 @@ section: Extend:Update Sites
       let chartTitle = site;
       let yLabel = `${countType === 'unique' ? 'Unique IP Addresses' : 'Total Update Checks'}`;
 
+      // Determine display time window for title
+      const displayTimeWindow = timeWindow === 'daily-avg' ?
+        'Daily (7-day avg)' :
+        timeWindow.charAt(0).toUpperCase() + timeWindow.slice(1);
+
       // Configuration for chart
       let chartConfig = {
-        rollPeriod: rollingAverage && timeWindow === 'daily' ? 7 : 1,
+        rollPeriod: timeWindow === 'daily-avg' ? 7 : 1,
         labels: ['Date', `${countType === 'unique' ? 'Unique IPs' : 'Total Checks'}`],
         ylabel: yLabel,
-        title: `${chartTitle} - ${timeWindow.charAt(0).toUpperCase() + timeWindow.slice(1)} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`
+        title: `${chartTitle} - ${displayTimeWindow} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`
       };
 
       // Set X-axis formatting based on time window
@@ -483,7 +467,7 @@ section: Extend:Update Sites
           }
         }
 
-        chartConfig.title = `${chartTitle} - ${timeWindow.charAt(0).toUpperCase() + timeWindow.slice(1)} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`;
+        chartConfig.title = `${chartTitle} - ${displayTimeWindow} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`;
         chartConfig.ylabel = yLabel;
       }
 
