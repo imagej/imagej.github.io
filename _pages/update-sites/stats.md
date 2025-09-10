@@ -53,8 +53,9 @@ section: Extend:Update Sites
 
   <label class="heading">Compare To:</label>
   <div class="widgets">
-    <select id="op" onchange="updateChart()">
-      <option value="+">+</option>
+    <select id="op" onchange="updateCompareMode(); updateChart()">
+      <option value=""></option>
+      <option value="+" selected>+</option>
       <option value="/">/</option>
       <option value="%">%</option>
     </select>
@@ -103,6 +104,21 @@ section: Extend:Update Sites
     const rollingAverage = document.getElementById('rolling-average').checked;
 
     return { site, op, site2, timeWindow, countType, rollingAverage };
+  }
+
+  function updateCompareMode() {
+    const op = document.getElementById('op').value;
+    const site2Select = document.getElementById('site2');
+
+    if (op === '') {
+      // Single site mode
+      site2Select.disabled = true;
+      site2Select.style.opacity = '0.5';
+    } else {
+      // Comparison mode
+      site2Select.disabled = false;
+      site2Select.style.opacity = '1';
+    }
   }
 
   function updateRollingAverageState() {
@@ -359,8 +375,8 @@ section: Extend:Update Sites
         };
       }
 
-      // If site2 is selected, fetch and combine data
-      if (site2 && site2 !== site) {
+      // If comparison mode is enabled and site2 is selected
+      if (op && site2 && site2 !== site) {
         const rawData2 = await fetchStatsData(site2, timeWindow, countType);
         const filledData2 = fillDateGaps(rawData2, timeWindow);
 
@@ -442,7 +458,8 @@ section: Extend:Update Sites
         site2Select.appendChild(site2Option);
       }
 
-      // Initial chart update
+      // Initialize compare mode state and chart
+      updateCompareMode();
       updateChart();
 
     } catch (error) {
@@ -461,6 +478,7 @@ section: Extend:Update Sites
         siteSelect.appendChild(siteOption);
         site2Select.appendChild(site2Option);
       }
+      updateCompareMode();
       updateChart();
     }
   }
