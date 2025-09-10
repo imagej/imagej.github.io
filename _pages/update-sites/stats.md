@@ -50,38 +50,43 @@ section: Extend:Update Sites
 <div class="grid">
   <label class="heading">Update Site:</label>
   <div class="widgets">
-    <select id="sort" onchange="updateSiteList()">
+    <select id="sort" onchange="updateSiteList()" title="Order of update sites in the neighboring dropdown list boxes">
       <option value="alpha">Sort: A-Z</option>
       <option value="ips">Sort: Most Used</option>
       <option value="date">Sort: Newest</option>
     </select>
-    <select id="site" onchange="updateChart()"></select>
+    <select id="site" onchange="updateChart()" title="Update site to visualize"></select>
   </div>
 
   <label class="heading">Compare To:</label>
   <div class="widgets">
-    <select id="op" onchange="updateCompareMode(); updateChart()">
+    <select id="op" onchange="updateCompareMode(); updateChart()" title="Comparison operation: + (sum both sites), / (ratio of first ÷ second), % (first as percentage of total)">
       <option value=""></option>
       <option value="+" selected>+</option>
       <option value="/">/</option>
       <option value="%">%</option>
     </select>
-    <select id="site2" onchange="updateChart()"></select>
+    <select id="site2" onchange="updateChart()" title="Second update site, for comparison"></select>
   </div>
 
   <label class="heading">Time Window:</label>
   <div class="widgets">
-    <label><input type="radio" id="time-daily" name="timeWindow" value="daily" onchange="updateChart()"> Daily</label>
-    <label><input type="radio" id="time-daily-avg" name="timeWindow" value="daily-avg" checked onchange="updateChart()"> Daily (7-day avg)</label>
-    <label><input type="radio" id="time-monthly" name="timeWindow" value="monthly" onchange="updateChart()"> Monthly</label>
-    <label><input type="radio" id="time-yearly" name="timeWindow" value="yearly" onchange="updateChart()"> Yearly</label>
-    <label><input type="radio" id="time-ever" name="timeWindow" value="ever" onchange="updateChart()"> Ever/Cumulative</label>
+    <label title="Data aggregated per day (USA Central time zone), with no smoothing."><input type="radio" id="time-daily" name="timeWindow" value="daily" onchange="updateChart()"> Daily</label>
+    <label title="Daily data smoothed with 7-day rolling average. Eliminates weekend/weekday noise since fewer people use Fiji on weekends. Recommended for cleaner trend visualization."><input type="radio" id="time-daily-avg" name="timeWindow" value="daily-avg" checked onchange="updateChart()"> Daily (7-day avg)</label>
+    <label title="Data aggregated per month, with no smoothing."><input type="radio" id="time-monthly" name="timeWindow" value="monthly" onchange="updateChart()"> Monthly</label>
+    <label title="Data aggregated per year, with no smoothing."><input type="radio" id="time-yearly" name="timeWindow" value="yearly" onchange="updateChart()"> Yearly</label>
+    <label title="Running total over time. For Unique IPs: cumulative count of all IPs ever seen. For Total Checks: running sum of all checks since the update site was created."><input type="radio" id="time-ever" name="timeWindow" value="ever" onchange="updateChart()"> Ever/Cumulative</label>
   </div>
 
   <label class="heading">Count Type:</label>
   <div class="widgets">
-    <label><input type="radio" id="count-unique" name="countType" value="unique" checked onchange="updateChart()"> Unique IPs</label>
-    <label><input type="radio" id="count-total" name="countType" value="total" onchange="updateChart()"> Total Checks</label>
+    <label title="Number of distinct IP addresses seen during the chosen window of time.
+
+Note:
+* Multiple users at one organization may share the same public IP due to NAT.
+* Many wireless users may have different IPs daily due to DHCP.
+* Therefore, this value should not be construed as an accurate unique user count."><input type="radio" id="count-unique" name="countType" value="unique" checked onchange="updateChart()"> Unique IPs</label>
+    <label title="Total update checks performed, regardless of IP address. Each time the Updater checks for updates (not downloads), it's counted. For most users, this check happens once daily when launching Fiji the first time within a 24-hour period."><input type="radio" id="count-total" name="countType" value="total" onchange="updateChart()"> Total Checks</label>
   </div>
 </div>
 
