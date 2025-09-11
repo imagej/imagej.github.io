@@ -412,37 +412,115 @@ Note:
         rollPeriod: timeWindow === 'daily-avg' ? 7 : 1,
         labels: ['Date', `${countType === 'unique' ? 'Unique IPs' : 'Total Checks'}`],
         ylabel: yLabel,
-        title: `${chartTitle} - ${displayTimeWindow} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`
+        title: `${chartTitle} - ${displayTimeWindow} ${countType === 'unique' ? 'Unique' : 'Total'} Statistics`,
+        axes: {x: {}}
       };
 
-      // Set X-axis formatting based on time window
+      // Calculate X-axis labels dynamically whenever chart is rendered
+      chartConfig.axes.x.ticker = function(a, b, pixels, opts, dygraph, vals) {
+        function offDayBoundary(d) {
+          return d.getHours() > 0 || d.getMinutes() > 0 ||
+            d.getSeconds() > 0 || d.getMilliseconds() > 0;
+        }
+
+        const startDate = new Date(a);
+        const endDate = new Date(b);
+
+        // Clamp the date range to the closest boundaries within the range
+        switch (timeWindow) {
+          case 'yearly':
+            // Round inward to the nearest year boundaries
+            if (startDate.getMonth() > 0 || startDate.getDate() > 1 || offDayBoundary(startDate)) {
+              startDate.setFullYear(startDate.getFullYear() + 1, 0, 1);
+              startDate.setHours(0, 0, 0, 0);
+            }
+            // Set to beginning of the final year
+            endDate.setMonth(0, 1);
+            endDate.setHours(0, 0, 0, 0);
+            break;
+          case 'monthly':
+            // Round inward to the nearest month boundaries
+            if (startDate.getDate() > 1 || offDayBoundary(startDate)) {
+              startDate.setMonth(startDate.getMonth() + 1, 1);
+              startDate.setHours(0, 0, 0, 0);
+            }
+            // Set to beginning of the final month
+            endDate.setDate(1);
+            endDate.setHours(0, 0, 0, 0);
+            break;
+          default:
+            // Round inward to the nearest day boundaries
+            if (offDayBoundary(startDate)) {
+              startDate.setDate(startDate.getDate() + 1);
+              startDate.setHours(0, 0, 0, 0);
+            }
+            // Set to beginning of the final day
+            endDate.setHours(0, 0, 0, 0);
+        }
+        // Note: If the raw startDate and endDate are timestamps less than
+        // 24 hours apart on the same day, which happens e.g. when the user
+        // zooms very far into the graph within a single day's time interval,
+        // then the rounded-later startDate will end up being later than the
+        // rounded-earlier endDate, and there won't be any ticks, and therefore
+        // no axis labels. But that is indeed the correct behavior, assuming we
+        // don't want to label the axis anywhere apart from on date boundaries.
+        // We could bend over backwards to do such custom labeling only in this
+        // case, but it's more code for an unimportant edge case: there are not
+        // actually any samples to be inspected inside a single day's interval.
+
+        const minPixelsPerTick =
+          timeWindow === 'yearly' ? 50 :
+          timeWindow === 'monthly' ? 75 : 100;
+        const numTicks = Math.max(2, Math.floor(pixels / minPixelsPerTick));
+        const currentDate = new Date(startDate);
+        const yearStep = Math.ceil((endDate.getFullYear() - startDate.getFullYear() + 1) / numTicks);
+        const startMonth = 12 * startDate.getFullYear() + startDate.getMonth();
+        const endMonth = 12 * endDate.getFullYear() + endDate.getMonth();
+        const monthStep = Math.ceil((endMonth - startMonth + 1) / numTicks);
+        const msStep = Math.ceil((endDate.getTime() - startDate.getTime() + 1) / numTicks);
+        const msPerDay = 1000 * 60 * 60 * 24;
+        const dayStep = Math.ceil(msStep / msPerDay);
+
+        function incrementDate(d, yearStep, monthStep, dayStep) {
+          if (timeWindow === 'yearly') d.setFullYear(d.getFullYear() + yearStep);
+          else if (timeWindow === 'monthly') d.setMonth(d.getMonth() + monthStep);
+          else d.setDate(d.getDate() + dayStep);
+        }
+
+        const ticks = [];
+        while (ticks.length < numTicks && currentDate <= endDate) {
+          ticks.push({
+            v: currentDate.getTime(),
+            label: opts('axisLabelFormatter').call(dygraph, currentDate, 0, opts, dygraph)
+          });
+          incrementDate(currentDate, yearStep, monthStep, dayStep);
+        }
+
+        return ticks;
+      };
+
+      // Format X-axis labels appropriately
+      const xLabelPre = '<span style="font-size: 0.9em; white-space: nowrap;">';
+      const xLabelPost = '</span>';
+      function xLabelYear(d) { return d.getFullYear().toString(); }
+      function xLabelMonth(d) { return String(d.getMonth() + 1).padStart(2, '0'); }
+      function xLabelDay(d) { return String(d.getDate()).padStart(2, '0'); }
       if (timeWindow === 'yearly') {
-        chartConfig.axes = {
-          x: {
-            axisLabelFormatter: function(d) {
-              return d.getFullYear().toString();
-            },
-            ticker: function(a, b, pixels, opts, dygraph, vals) {
-              // Generate yearly ticks
-              const startYear = new Date(a).getFullYear();
-              const endYear = new Date(b).getFullYear();
-              const ticks = [];
-              for (let year = startYear; year <= endYear; year++) {
-                ticks.push({v: new Date(year, 0, 1).getTime(), label: year.toString()});
-              }
-              return ticks;
-            }
-          }
-        };
-      } else if (timeWindow === 'monthly') {
-        chartConfig.axes = {
-          x: {
-            axisLabelFormatter: function(d) {
-              return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
-            }
-          }
+        chartConfig.axes.x.axisLabelFormatter = function(d) {
+          return `${xLabelPre}${xLabelYear(d)}${xLabelPost}`;
         };
       }
+      else if (timeWindow === 'monthly') {
+        chartConfig.axes.x.axisLabelFormatter = function(d) {
+          return `${xLabelPre}${xLabelYear(d)}-${xLabelMonth(d)}${xLabelPost}`;
+        };
+      }
+      else {
+        chartConfig.axes.x.axisLabelFormatter = function(d) {
+          return `${xLabelPre}${xLabelYear(d)}-${xLabelMonth(d)}-${xLabelDay(d)}${xLabelPost}`;
+        };
+      }
+
 
       // If comparison mode is enabled and site2 is selected
       if (op && site2 && site2 !== site) {
