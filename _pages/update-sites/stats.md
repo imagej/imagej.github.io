@@ -552,6 +552,14 @@ Note:
         chartConfig.ylabel = yLabel;
       }
 
+      // Extend the date window slightly to ensure final tick label is within bounds
+      if (data && data.length > 0) {
+        chartConfig.dateWindow = [
+          data[0][0].getTime(),
+          data[data.length-1][0].getTime() + 1 // Add a sliver of time
+        ];
+      }
+
       new Dygraph(document.getElementById("stats-chart"), data, chartConfig);
 
     } catch (error) {
