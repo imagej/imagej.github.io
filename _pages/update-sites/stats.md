@@ -472,7 +472,6 @@ Note:
           timeWindow === 'yearly' ? 50 :
           timeWindow === 'monthly' ? 75 : 100;
         const numTicks = Math.max(2, Math.floor(pixels / minPixelsPerTick));
-        const currentDate = new Date(startDate);
         const yearStep = Math.ceil((endDate.getFullYear() - startDate.getFullYear() + 1) / numTicks);
         const startMonth = 12 * startDate.getFullYear() + startDate.getMonth();
         const endMonth = 12 * endDate.getFullYear() + endDate.getMonth();
@@ -481,19 +480,18 @@ Note:
         const msPerDay = 1000 * 60 * 60 * 24;
         const dayStep = Math.ceil(msStep / msPerDay);
 
-        function incrementDate(d, yearStep, monthStep, dayStep) {
-          if (timeWindow === 'yearly') d.setFullYear(d.getFullYear() + yearStep);
-          else if (timeWindow === 'monthly') d.setMonth(d.getMonth() + monthStep);
-          else d.setDate(d.getDate() + dayStep);
-        }
-
         const ticks = [];
-        while (ticks.length < numTicks && currentDate <= endDate) {
+        const date = new Date(startDate);
+        while (ticks.length < numTicks && date <= endDate) {
+          // Record the label in the ticks list
           ticks.push({
-            v: currentDate.getTime(),
-            label: opts('axisLabelFormatter').call(dygraph, currentDate, 0, opts, dygraph)
+            v: date.getTime(),
+            label: opts('axisLabelFormatter').call(dygraph, date, 0, opts, dygraph)
           });
-          incrementDate(currentDate, yearStep, monthStep, dayStep);
+          // Increment date to next label position
+          if (timeWindow === 'yearly') date.setFullYear(date.getFullYear() + yearStep);
+          else if (timeWindow === 'monthly') date.setMonth(date.getMonth() + monthStep);
+          else date.setDate(date.getDate() + dayStep);
         }
 
         return ticks;
