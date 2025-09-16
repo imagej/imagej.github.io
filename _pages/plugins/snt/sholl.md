@@ -360,7 +360,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
     </tr>
     <tr>
       <td>
-        <p><span id="eq4">(5)</span></p>
+        <p><span id="eq5">(5)</span></p>
       </td>
       <td>
         <p>Angular (Polar)</p>
