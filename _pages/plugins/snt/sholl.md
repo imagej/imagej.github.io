@@ -33,6 +33,8 @@ The Sholl technique[^2] is used to describe neuronal arbors. SNT features a coll
 - When analyzing images directly, previous tracing of the arbor is not required
 - [Curve fitting](#methods-table) is combined with several [methods](#sholl-plots) to automatically retrieve [quantitative descriptors](#metrics) from sampled data, which allows direct statistical comparisons between arbors
 - [Continuous and repeated sampling](#multiple-samples-and-noise-reduction) around user-defined foci are allowed
+- [Angular](#angular-sholl) and [Length-based](#length-based-profiles) profiles
+- Extensive options for quantitative analysis
 - [Batch processing](#batch-processing) is possible
 
 After [installing SNT](/plugins/snt/#installation), Sholl commands can be accessed through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window'%} (SNT icon in the ImageJ toolbar), or from SNT's [tracing interface](analysis#sholl-analysis).
@@ -47,11 +49,33 @@ After [installing SNT](/plugins/snt/#installation), Sholl commands can be access
 /media/plugins/snt/sholl-group-statistics.png | Statistics for [groups of cells](/plugins/snt/analysis#comparing-reconstructions) [[use case](https://forum.image.sc/t/sholl-analysis-with-snt-one-graph-for-two-groups/82471/2)]
 /media/plugins/snt/animatedpolyfit.gif | Sampled data can be fitted to polynomials of varying degree (animation created using [BAR](/plugins/bar))
 /media/plugins/snt/sholl-convex-hull.png | Scripting allows for arbitrary focal points, in this case the centroid of the neuron's convex hull (*Convex Hull as Center* template script)
+/media/plugins/snt/snt-angular-sholl-ddac.png | [Angular Sholl](#angular-sholl) and [Angle-based metrics](##metrics-based-on-angular-sholl)
 /media/plugins/snt/shollresultasrois.png | Intersection points and sampling shells can be retrieved as ROIs. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.
 /media/plugins/snt/sholl-rasterized-shells.png | Using Sholl to measure the distribution of image objects (_Sholl Rasterize Shells_ template script) [[use case](https://forum.image.sc/t/measuring-distribution-of-object-diameters-in-different-stripes-using-sholl-plugin/51087)]
 /media/plugins/snt/snt-sholl-integrate-density-profiles.png | Not only neurons: Integrated-density profiles can be used to obtain radial maps of fluorescent markers.
 "
 %}
+
+
+# Length-based Profiles
+
+Since SNTv5 it is possible to obtain **length profiles** in addition to the traditional **No. of intersections** counts. The two strategies are usually (highly) correlated but not identical: _Intersection counts_ summarize how often the arbor crosses each sampling shell (frequency of crossings). _Length_ summarizes ow much cable lies within each shell.
+
+<i class="fas fa-image"></i> For direct parsing of images, groups of foreground pixels are first identified along each sampling shell:
+- Groups are defined as 8‑connected components in 2D and 26‑connected in 3D
+- The _No. of Intersections_ at a shell is the number of identified groups
+- The _Intersected length_ at a shell is the sum of path lengths of all groups within that shell. Note that lengths can be affected by the apparent thickness of processes. Consider skeletonizing before analysis to reduce thickness bias
+
+<i class="fas fa-pen"></i> For traced morphologies, each segment (straight line between consecutive nodes) is tested against each sampling shell:
+ - If a segment intersects a shell, the segment is clipped to the shell and its arc length inside the shell is accumulated
+ - Intersections at a shell correspond to the number of connected arbor components that cross the shell (based on the tracing graph topology, not pixel connectivity)
+ - Length at a shell corresponds to the sum of Euclidean lengths of all clipped segment pieces inside that shell. Note that node radii are not considered for length calculations
+
+**NB:**
+- Conceptually, length requires a non‑zero [radius step size](#step-size). If you select continuous sampling (step size = 0), the program will internally fallback to a _minimum_ separation: Either the geometric mean of voxel dimension when parsing images, or the median inter-node distance of the structure when parsing reconstructions
+- Reported lengths are in calibrated units (e.g., µm)
+
+
 # Direct Analysis of Images
 <img align="right" width="320px" src="/media/plugins/snt/sholl-bitmap-promptv4.png" title="Main prompt (v4.2.1) when input is a segmented image" >
 
@@ -80,7 +104,7 @@ Three types of ROIs expected by the plugin when analyzing images directly. <b>Le
 
 ## Cf. Segmentation
 
-It is important to visually confirm which phase of the segmented image will be sampled, specially when using black and white (binary) lookup tables. To so, you can select the _Red_ lookup table in the Threshold widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}) to highlight foreground from background pixels to verify that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [DIADEM](http://diademchallenge.org) dataset[^3]:
+It is important to visually confirm which phase of the segmented image will be sampled, specially when using black and white (binary) lookup tables. To so, you can select the _Red_ lookup table in the Threshold widget ({% include bc path="Image | Adjust | Threshold..." %} {% include key keys='Shift|T' %}) to highlight foreground from background pixels to verify that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor from the Drosophila olfactory neuron [demo dataset](./manual#load-demo-dataset):
 
 <table>
   <tbody>
@@ -161,11 +185,15 @@ For clarity, settings pertaining to direct parsing of images are tagged with <i 
 
 ## Shells
 <span id="definition-of-shells"></span>
+
+#### Profile type
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> Whether the profile should report traditional **No. of intersections** counts or [intersected lengths](#length-based-profiles)
+
 #### Start radius
 <i class="fas fa-image"></i> The radius of the smallest sampling circle/sphere, i.e., the first distance to be sampled.
 
 #### Step size
-<i class="fas fa-image"></i> <i class="fas fa-pen"></i> The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements. For stacks with anisotropic voxel size, setting *Radius step size* to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the cube root of the product of the voxel dimensions (3D images) or the square root of the product of the pixel dimensions (2D images).
+<i class="fas fa-image"></i> <i class="fas fa-pen"></i> The sampling interval between radii of consecutive sampling circles/spheres. This value may be set to zero for continuous (1-voxel increment) measurements. For stacks with anisotropic voxel size, setting *Radius step size* to zero, sets the step length to the dimension of the matching isotropic voxel, i.e., the geometric mean of voxel dimensions: For 3D images, the cube root of the product of the voxel dimensions; For 2D images: the square root of the product of the pixel dimensions.
 
 #### End radius
 <i class="fas fa-image"></i> The radius of the largest (last) sampling circle/sphere. It is automatically calculated if a [line ROI is used](#usage). Note that the specified distance may not be actually sampled, if *Radius step size* is not a divisor of *Ending radius*-*Starting radius*. In this case, the program will choose the largest possible distance smaller than the specified value. You can clear *Ending radius* or set it to *NaN* ("Not a Number") to sample the entire image. This is particularly useful when [batch processing](#batch-processing) images with different dimensions.
@@ -251,7 +279,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 
 {% include img align="center" name="sholl plots" src="/media/plugins/snt/shollplots.png" %}
 
-***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles for the ddaC cell ({% include bc path='File|Open Samples|ddaC Neuron'%}), version 3.0**. Most of the retrieved [metrics](#metrics-based-on-fitted-data) are automatically highlighted by the plugin. *Linear profile*: [Mean value](#mean-value-of-function) (horizontal grid line) and [Centroid](#centroid) (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#sholl-decay) (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#dratio) when compared to the Log-log method.
+***Linear*, *Linear-norm*, *Semi-log* and *Log-log* profiles** for the ddaC [demo dataset](./manual#load-demo-dataset). Most of the retrieved [metrics](#metrics-based-on-fitted-data) are automatically highlighted by the plugin. *Linear profile*: [Mean value](#mean-value-of-function) (horizontal grid line) and [Centroid](#centroid) (colored mark). Logarithmic profiles: The [Sholl regression coefficient](#sholl-decay) (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line). For this particular cell type, the Semi-log method is more [informative](#dratio) when compared to the Log-log method. **See [Angular Sholl](#angular-sholl) for other type of plots**.
 
 <span id="methods-table"></span>
 <table>
@@ -330,6 +358,21 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
         Outputs a <i>log(N/S) vs log(Distance)</i> profile. Data is also fitted to a straight line. This is an alternative approach<a href="#fn:5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> of obtaining a relevant <a href="#sholl-decay">regression coefficient</a>, when the Semi-log method returns a poor fit<br></p>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p><span id="eq5">(5)</span></p>
+      </td>
+      <td>
+        <p>Angular (Polar)</p>
+      </td>
+      <td>
+        <p>von Mises (unimodal distributions only)</p>
+      </td>
+      <td>
+        <p><br>Distributes profiled data over [angular sections](#angular-sholl] to detect directional biases in the data. Preferred directions are identified by detecting maxima in the angular distribution of the data.
+        <br></p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -346,9 +389,32 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 <span style="display: inline-block; width: 25px"> </span>*Annulus*/*Spherical shell* normalization is also available when performing [non-continuous sampling](#step-size). In this case, the normalization is performed against the area/volume between circumferences/spheres at *r* ± *Radius step size*/2
 
 
+# Angular Sholl
+
+Angular Sholl (radius × angle, also called *Polar Sholl*) produces polar heatmaps to reveal directional biases in Sholl Profiles and how such biases change with distance. Angular Sholl distributes the location of Sholl intersection (i.e., "Sholl Points") over angular sectors. Summing the _No. of intersections_ (or _intersected length_) across each radius produces an *angular distribution* used to compute [angle-based metrics](#metrics-based-on-angular-sholl).
+
+In simplistic terms, the algorithms in Angular Sholl that detected preferred orientations work as follows:
+
+1. “compass histogram": Imagine the space around the neuron divided into equal slices like a pizza (e.g., every 10°). For each slice the program adds up how much arbor points each way—either the number of crossings (“intersections”) or the amount of intersected cable (“length”)
+
+2. Smoothing: Each slice is averaged with its two neighbors to reduce jitter from noise
+ 
+3. Standout slices (“peaks”) are identified: The program measures how much "taller" a slice is relative to its immediate neighbors using a local prominence (difference from the average of the two neighbors). Only taller slices with a strong prominence are considered real peaks
+
+4. Curve fitting: If only one peak is identified, the distribution angles is fitted to a [von Mises distribution](https://en.wikipedia.org/wiki/Von_Mises_distribution). As detailed in [Root Angle Analysis](./analysis#root-angle-analysis), this a a circular analogue of the normal distribution that models angles/directions
+
+5. After this process is concluded, a list of directional "peaks" are obtained: each has an angle (in degrees) and a strength (the height of that slice)
+
+
+{% include img align="center" width="850px" src="/media/plugins/snt/snt-angular-sholl.png" %}
+**Examples of angular (polar) profiles**. Left: Space filling dendrites of the ddaC demo dataset featuring an homogenous [angle distribution](#adc). Right: Pyramidal neuron (MouseLight dendrites demo dataset). Basal dendrites are associated with an homogenous angle distribution, but apical dendrites feature a strong [directional bias](#preferred-direction). In both causes, a bin width of 10° was used. This type of data can be obtained for [length-based profiles](#length-based-profiles) and [fitted data](#polynomial-fit).
+
+
+
 # Metrics
 
-Morphometric descriptors and other properties of the arbor are printed to the measurements table. Output is customizable using the _detailed metrics_ checkbox in *Options & Preferences...* . See
+Morphometric descriptors and other properties of the arbor are printed to the measurements table. Output is customizable using the _detailed metrics_ checkbox in the "Further Options" dialog in the analysis prompt.
+
 
 ## Metrics based on sampled data
 
@@ -412,6 +478,19 @@ Overview of Sholl metrics) based on curve fitting including the Sholl regression
 - <span id="skewness-fitted"></span> **Skewness (*Skewness (fit)*)**  The [skewness](#skewness) of the fitted polynomial distribution between [Starting radius](#start-radius) and [Ending radius](#end-radius).
 
 
+## Metrics based on [Angular Sholl](#angular-sholl)
+
+- <span id="adc">**Angle distribution coherence (*ADC*)** The evenness of the angular distribution of [Sholl data](#angular-sholl). Unitless, ranging from [0, 1], with higher values indicating Sholl data is concentrated around a [preferred direction](#preferred-direction); 0 indicates a uniform distribution across all directions.
+
+- <span id="preferred-direction">**Preferred directions (*PD*)** The direction around which [Sholl data](#angular-sholl) is the most concentrated when [Angle distribution coherence](#adc) is high. Range: [0°,360°[. Examples: A space filling neuron is not expected to be associated with a prominent direction (low ADC value). On the other hand, a cell may have more than one preferred direction (e.g., data from dendrites of a pyramidal neuron), as exemplified [above](#angular-sholl).
+
+- <span id="odc">**Orientation distribution coherence (*ODC*)** This is a variant of [Angle distribution coherence](#adc) that considers *orientation* as opposed to *direction*. ODC can be useful to discriminate morphologies that are symmetric across 180° (e.g., a neuronal arbor with two opposite tufts) for which ADC can be near 0
+
+- <span id="preferred-orientation">**Preferred orientatiosn** The orientation around which [Sholl data](#angular-sholl) is the most concentrated when [Orientation distribution coherence](#odc) is high. Range: [0°,180°[
+
+Similarly to all other Sholl-related profiles, both intersection counts and [intersecting lengths](#length-based-profiles) can be used, as well as data from polynomial fits. By default, polar heatmaps use an angular bin width of 10°. This sensitivity can be adjusted in the "Further Options" dialog in the analysis prompt.
+
+
 # Complementary Tools
 
 SNT provides several scripts and commands that facilitate all type of Sholl-related analyses. You'll find them through the {% include bc path='Plugins|Neuroanatomy|Neuroanatomy Shortcut Window'%} (SNT icon in the ImageJ toolbar), as well as in Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu.
@@ -461,7 +540,19 @@ It is possible to adopt more sophisticated [segmentation algorithms](/imaging/se
 
 # Batch Processing
 
-The Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu lists demo scripts that perform batch operations. For sake of completeness, here is a small tutorial on how to write a macro from the ground up:
+SNTv5 reinstated macro-recordable commands. So the easiest/quickest way to automate analysis requires only 3 steps:
+1. Open ImageJ's macro recorder: {% include bc path="Plugins|Macro|Record..." %}
+2. From the Neuroanatomy Shortcuts Window, choose the relevant prompt from the _Macro Recordable_ section of {% include bc path="Sholl Analysis | " %}
+3. Set the options as usual
+4. Copy the recorded string into your macro/script. Beware that the recorded expression is quite large. Make sure to avoid copy/paste errors. It should look something like:
+
+{% highlight javascript %}
+// NB: have a look at the example scripts in Templates>Neuroanatomy> for more robust ways to automate Sholl. E.g., Sholl_Extract_Profile_From_Image_Demo.py exemplifies how to parse an image programmatically using API calls
+run("Sholl Analysis (From Image)...", "datamodechoice=Intersections startradius=0.0 stepsize=10.0 endradius=400.0 hemishellchoice=[None. Use full shells] previewshells=false nspans=1 nspansintchoice=N/A primarybrancheschoice=[Infer from starting radius] primarybranches=0 polynomialchoice=['Best fitting' degree] polynomialdegree=0 normalizationmethoddescription=[Automatically choose] normalizerdescription=Default plotoutputdescription=[Linear, normalized, and polar plots] tableoutputdescription=[Detailed & Summary tables] annotationsdescription=[ROIs (points and 2D shells)] lutchoice=Ice.lut save=true savedir=/Users/ferreirat analysisaction=[Analyze image]");
+{% endhighlight %}
+
+
+For more comprehensive functionality, the Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu lists demo scripts that perform batch operations. For sake of completeness, here is a small tutorial on how to write a macro from the ground up:
 
 ## Tutorial: Batch Analysis of Images using IJM Languages
 

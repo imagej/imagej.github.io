@@ -477,7 +477,8 @@ This option assumes [sciview](/plugins/sciview) to be successfully installed. sc
 ### Big Volume Viewer
 
 Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](https://imagej.net/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Currently, support for Big Volume Viewer remains highly experimental.
-    
+{% include img align="center" name="BVV integration" src="/media/plugins/snt/snt-bvv.png" caption="BVV integration" %}
+
 ### Legacy 3D Viewer
 
 The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. That being said, SNTv5 has implemented several improvements that have restored/improved Legacy 3D Viewer functionality relatively to earlier versions. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/walkthroughs#tracing-in-the-legacy-3d-viewer).

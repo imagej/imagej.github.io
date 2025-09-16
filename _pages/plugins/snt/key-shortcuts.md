@@ -51,6 +51,7 @@ The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift
 | {% include key key='2' %} | Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices |
 | {% include key key='3' %} | Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame |
 | {% include key key='G' %} | Selects the nearest path to the mouse cursor. Holding {% include key keys='Shift|G' %} adds the path nearest to the mouse cursor to the current list of selected paths. *Mnemonic: <u>G</u>roup paths around cursor.* Note that Paths can only be edited one at a time, and thus {% include key keys='Shift|G' %} is disabled in *Edit Mode* |
+| {% include key key='H' %} | Temporarily <u>H</u>ides alls paths/annotations while being pressed |
 
 
 ### Tracing
