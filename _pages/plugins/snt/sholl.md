@@ -32,8 +32,8 @@ The Sholl technique[^2] is used to describe neuronal arbors. SNT features a coll
 - Both images and reconstructions can be analyzed
 - When analyzing images directly, previous tracing of the arbor is not required
 - [Curve fitting](#methods-table) is combined with several [methods](#sholl-plots) to automatically retrieve [quantitative descriptors](#metrics) from sampled data, which allows direct statistical comparisons between arbors
-- [Continuous and repeated sampling](#multiple-samples-and-noise-reduction) around user-defined foci are allowed
-- [Angular](#angular-sholl) and [Length-based](#length-based-profiles) profiles
+- [Continuous and repeated sampling](#noise-reduction) around user-defined foci are allowed
+- [Angular](#angular-sholl), [length-based](#length-based-profiles), and [intensity-based](#intensity-based-profiles) profiles
 - Extensive options for quantitative analysis
 - [Batch processing](#batch-processing) is possible
 
@@ -57,7 +57,9 @@ After [installing SNT](/plugins/snt/#installation), Sholl commands can be access
 %}
 
 
-# Length-based Profiles
+# Profile Types
+
+## Length-based Profiles
 
 Since SNTv5 it is possible to obtain **length profiles** in addition to the traditional **No. of intersections** counts. The two strategies are usually (highly) correlated but not identical: _Intersection counts_ summarize how often the arbor crosses each sampling shell (frequency of crossings). _Length_ summarizes ow much cable lies within each shell.
 
@@ -74,6 +76,13 @@ Since SNTv5 it is possible to obtain **length profiles** in addition to the trad
 **NB:**
 - Conceptually, length requires a non‑zero [radius step size](#step-size). If you select continuous sampling (step size = 0), the program will internally fallback to a _minimum_ separation: Either the geometric mean of voxel dimension when parsing images, or the median inter-node distance of the structure when parsing reconstructions
 - Reported lengths are in calibrated units (e.g., µm)
+
+
+## Intensity-based Profiles
+<i class="fas fa-image"></i> When parsing images directly it is possible to obtain integrated density plots. In this case rather than reporting on No. of intersections or intersected lengths, these profiles report on _normalized integrated density_. _Normalized integrated density_ is the sum of all voxel intensities along the sampling shell normalized to the perimeter/surface of the shell. These type of profiles can also include cumulative distributions plots and are useful to quantify the distribution of organelles and other structures in cells (including non-neuronal cell types), e.g., as in:
+
+  - Distribution of FISH spots within nuclei: {% include citation doi='10.1371/journal.pgen.1010451' %}
+  - Distribution of mitochondria: {% include citation doi='10.1016/j.celrep.2016.09.004' %}
 
 
 # Direct Analysis of Images
@@ -209,7 +218,7 @@ For clarity, settings pertaining to direct parsing of images are tagged with <i 
 <i class="fas fa-image"></i> Updates the center position by reading the centroid of the active ROI.
 
 
-### Segmentation
+### Noise Reduction
 
 #### Samples per radius *(2D images only)*
 <span id="multiple-samplesnoise-reduction"></span>
@@ -258,7 +267,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 ### Output Options
 <i class="fas fa-image"></i> <i class="fas fa-pen"></i> Defines which kind of annotations should be output, including:
 
-- **Plots** The type of plot(s) to be output. In addition to the [Linear and Normalized profiles](#methods-table) and their cumulative variants, it is also possible to obtain integrated density plots when parsing images. In this case rather than reporting on intersections, these plots report on normalized integrated density (sum of all voxel intensities) along the sampling shell normalized to the perimeter/surface of the shell.
+- **Plots** The type of plot(s) to be output. In addition to the [Linear and Normalized profiles](#methods-table), it is also possible to obtain [polar plots](#angular-sholl), as well as cumulative distribution plots for [intensity-based](#intensity-based-profiles) profiles.
 
 - **Tables** Defines which kind of tables should be output, including _Detailed_ and _Summary_ tables.
 
@@ -266,7 +275,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 
   - **LUT** The Lookup Table (LUT) used for annotations.
 
-  - **ROIs** Allows for two sets of ROIS to be added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels. Note that WYSIWYG versions (RGB images) of these masks can be obtained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...'%}. Note that ROIs are not created when outputting integrated density plots.
+  - **ROIs** Allows for two sets of ROIS to be added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels. Note that WYSIWYG versions (RGB images) of these masks can be obtained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...'%}. Note that ROIs are not created when outputting [integrated density](#intensity-based-profiles).
 
   - **Mask** A 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle
 
@@ -540,7 +549,7 @@ It is possible to adopt more sophisticated [segmentation algorithms](/imaging/se
 
 # Batch Processing
 
-SNTv5 reinstated macro-recordable commands. So the easiest/quickest way to automate analysis requires only 3 steps:
+SNTv5 reinstated macro-recordable commands. So the easiest/quickest way to automate analysis requires only a few steps:
 1. Open ImageJ's macro recorder: {% include bc path="Plugins|Macro|Record..." %}
 2. From the Neuroanatomy Shortcuts Window, choose the relevant prompt from the _Macro Recordable_ section of {% include bc path="Sholl Analysis | " %}
 3. Set the options as usual
