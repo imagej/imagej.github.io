@@ -50,9 +50,9 @@ After [installing SNT](/plugins/snt/#installation), Sholl commands can be access
 /media/plugins/snt/animatedpolyfit.gif | Sampled data can be fitted to polynomials of varying degree (animation created using [BAR](/plugins/bar))
 /media/plugins/snt/sholl-convex-hull.png | Scripting allows for arbitrary focal points, in this case the centroid of the neuron's convex hull (*Convex Hull as Center* template script)
 /media/plugins/snt/snt-angular-sholl-ddac.png | [Angular Sholl](#angular-sholl) and [Angle-based metrics](##metrics-based-on-angular-sholl)
-/media/plugins/snt/shollresultasrois.png | Intersection points and sampling shells can be retrieved as ROIs. Intersection points are placed at edges of detected clusters of foreground pixels, not their center.
+/media/plugins/snt/shollresultasrois.png | Intersection points and sampling shells can be retrieved as [annotation ROIs](#output-options)
 /media/plugins/snt/sholl-rasterized-shells.png | Using Sholl to measure the distribution of image objects (_Sholl Rasterize Shells_ template script) [[use case](https://forum.image.sc/t/measuring-distribution-of-object-diameters-in-different-stripes-using-sholl-plugin/51087)]
-/media/plugins/snt/snt-sholl-integrate-density-profiles.png | Not only neurons: Integrated-density profiles can be used to obtain radial maps of fluorescent markers.
+/media/plugins/snt/snt-sholl-integrate-density-profiles.png | Not only neurons: [Integrated-density profiles](#intensity-based-profiles) can be used to obtain radial maps of fluorescent markers.
 "
 %}
 
@@ -275,7 +275,12 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
 
   - **LUT** The Lookup Table (LUT) used for annotations.
 
-  - **ROIs** Allows for two sets of ROIS to be added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels. Note that WYSIWYG versions (RGB images) of these masks can be obtained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...'%}. Note that ROIs are not created when outputting [integrated density](#intensity-based-profiles).
+  - **ROIs** Allows for two sets of ROIS to be added to the image overlay: 1) concentric shells matching sampled distances (circular ROIs or composite ROIs when using hemicircles); and 2) Multipoint ROIs at intersection sites between shells and clusters of foreground pixels. Note that WYSIWYG versions (RGB images) of these masks can be obtained using by pressing {% include key keys='Shift|F' %} ({% include bc path='Image|Overlay|Flatten'%}) or by running {% include bc path='Analyze|Tools|Calibration Bar...'%}.
+  
+    NB:
+    - ROIs are not created when outputting [integrated density](#intensity-based-profiles)
+    - Versions prior to SNTv5 placed intersection points at edges of detected clusters of foreground pixels, not their centroid
+
 
   - **Mask** A 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (*Raw*, i.e., sampled or *Fitted*) is displayed in the image subtitle
 
@@ -385,7 +390,7 @@ Detailed control over polynomial fitting is controlled by the options in the *Op
   </tbody>
 </table>
 
-<span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*
+<span style="display: inline-block; width: 25px">***N***</span> For 2D images, the <u>N</u>umber of clusters of pixels (8–connected) intersecting the circumference of radius *r*<br>
 <span style="display: inline-block; width: 25px"> </span> For 3D images, the <u>N</u>umber of clusters of voxels (26-connected) intersecting the surface of the sphere of radius *r*
 
 <span style="display: inline-block; width: 25px">***r***</span> Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)
@@ -563,7 +568,7 @@ run("Sholl Analysis (From Image)...", "datamodechoice=Intersections startradius=
 
 For more comprehensive functionality, the Script Editor's {% include bc path='Templates|Neuroanatomy|'%} menu lists demo scripts that perform batch operations. For sake of completeness, here is a small tutorial on how to write a macro from the ground up:
 
-## Tutorial: Batch Analysis of Images using IJM Languages
+## Tutorial: Batch Analysis of Images using IJ Macro Language
 
 Any macro must set a center, or allow the Sholl Analysis plugin to access a ROI marking it. One could instruct ImageJ to read the coordinates of pre-existing ROIs from a text file, store a list of line selections in the ROI Manager, or write a morphology-based routine that detects the center of the arbor. However, marking the center of analysis is probably something that you will want to do manually. Here is a workflow:
 
@@ -583,7 +588,7 @@ Now that all the images are marked, we could use the Macro Recorder ({% include 
 
 {% highlight javascript %}
 // Recording Sholl Analysis version 3.4.3
-run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
+run("Sholl Analysis (From Image)...", "datamodechoice=Intersections starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 {% endhighlight %}
 
 As you may have noticed, ImageJ plugins are controlled by a single lowercase sentence in which arguments are separated by a space. Input fields and choice lists appear as *keyword=value* pairs, active checkboxes by a single keyword. Options that are not needed can be omitted. This makes it easier to edit code blocks:
@@ -594,11 +599,12 @@ end   = 200; // variable that controls ending radius
 step  = 2;   // variable that controls step size
 
 // Run the plugin
-run("Sholl Analysis...", "starting="+ start +" ending="+ end +" radius_step="+ step +" infer linear save do");
+run("Sholl Analysis (From Image)...", "starting="+ start +" ending="+ end +" radius_step="+ step +" infer linear save do");
 {% endhighlight %}
 
 Now we just need to assemble a working macro to be pasted in the {% include bc path="Process | Batch | Macro..." %} prompt:
 
+<details>
 {% highlight javascript %}
 // Get the number of ROIs of the image overlay
 nROIs = Overlay.size;
@@ -610,11 +616,13 @@ if (nROIs==0)
 Overlay.activateSelection(nROIs-1);
 // We now call the plugin as detailed by the Macro Recorder. We'll set 'Ending radius' to a non-numeric
 // value (NaN, "Not a Value") to make sure the maximum length for each individual image is used
-run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
+run("Sholl Analysis (From Image)...", "datamodechoice=Intersections starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 {% endhighlight %}
+</details>
+
 
 Of course you can also automate any preceding steps. However, do not forget to ensure that the center of analysis will be available when the plugin is called:
-
+<details>
 {% highlight javascript %}
 // Impose spatial calibration
 run("Properties...", "unit=um pixel_width=1.5 pixel_height=1.5 voxel_depth=3.0");
@@ -625,19 +633,37 @@ setAutoThreshold("Huang dark stack");
 // >>>> Make sure the initial point selection remains available <<<<
 Overlay.activateSelection( Overlay.size - 1 );
 // Run the plugin
-run("Sholl Analysis...", "starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
+run("Sholl Analysis (From Image)...", "datamodechoice=Intersections starting=10 ending=NaN radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 {% endhighlight %}
+</details>
 
 That's it. Use the Macro Recorder to generate the customizations you will need before parsing the entire folder of images with {% include bc path="Process | Batch | Macro..." %}
 
 
-## Examples:
+## Complex Scripts
 
-More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting). Here are some examples:
+More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting). Here are some of scripts from SNT's [Bundled Templates](./scripting#bundled-templates):
 
+<details>
+<summary>Bitmap vs Tracing Comparison (Groovy)</summary>
+{% include code org='morphonets' repo='SNT' branch='master' path='src/main/resources/script_templates/Neuroanatomy/Analysis/Sholl_Bitmap_vs_Tracing_Comparison.groovy' label='Bitmap vs Tracing Comparison (Groovy)' %}
+</details>
+
+<details>
+<summary>Extensive Stats Demo (Groovy)</summary>
 {% include code org='morphonets' repo='SNT' branch='master' path='src/main/resources/script_templates/Neuroanatomy/Analysis/Sholl_Extensive_Stats_Demo.groovy' label='Extensive Stats Demo (Groovy)' %}
+</details>
 
+<details>
+<summary>Extract Profile from Image (Python)</summary>
 {% include code org='morphonets' repo='SNT' branch='master' path='src/main/resources/script_templates/Neuroanatomy/Analysis/Sholl_Extract_Profile_From_Image_Demo.py' label='Extract Profile from Image (Python)' %}
+</details>
+
+<details>
+<summary>Rasterize Shells (Python)</summary>
+{% include code org='morphonets' repo='SNT' branch='master' path='src/main/resources/script_templates/Neuroanatomy/Analysis/Sholl_Rasterize_Shells.py' label='Rasterize Shells (Python)' %}
+</details>
+
 
 # FAQ
 
@@ -906,7 +932,7 @@ Release notes are available on the {% include github org='morphonets' repo='SNT'
 
 {% include citation %}
 
-Citing manuscripts can be retrieved using [Scholar](https://scholar.google.com/scholar?cites=15441574333602897335&as_sdt=2005&sciodt=1,5&hl=en) or [PubMed](http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25264773/citedby/?tool=pubmed), although many [more publications seem to be using it](https://scholar.google.com/scholar?hl=en&as_sdt=1%2C5&as_vis=1&q=fiji+AND+%22Sholl+Analysis%22&btnG=). See [Global FAQs](/plugins/snt/faq#how-do-i-cite-snt) for details on how to cite SNT.
+Citing manuscripts can be retrieved using [Scholar](https://scholar.google.com/scholar?cites=15441574333602897335&as_sdt=2005&sciodt=1,5&hl=en) or [PubMed](https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed_citedin&from_uid=25264773), although many [more publications seem to be using it](https://scholar.google.com/scholar?hl=en&as_sdt=1%2C5&as_vis=1&q=fiji+AND+%22Sholl+Analysis%22&btnG=). See [Global FAQs](/plugins/snt/faq#how-do-i-cite-snt) for details on how to cite SNT.
 
 
 # References
