@@ -49,7 +49,7 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 
 Calls the latest version of [AnalyzeSkeleton](/plugins/analyze-skeleton).
 
-## Anisotropy
+## Anisotropy (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ | Anisotropy" %}.
 
