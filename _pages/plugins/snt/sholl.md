@@ -85,6 +85,10 @@ Since SNTv5 it is possible to obtain **length profiles** in addition to the trad
   - Distribution of mitochondria: {% include citation doi='10.1016/j.celrep.2016.09.004' %}
 
 
+## Volume-based Profiles
+<i class="fas fa-pen"></i> When parsing tracings, it is possible to profile intersected arbor volume. This is achieved by clipping each traced segment to the sampling shell and summing the volumes of the resulting truncated-cone (frustum) pieces.
+
+
 # Direct Analysis of Images
 <img align="right" width="320px" src="/media/plugins/snt/sholl-bitmap-promptv4.png" title="Main prompt (v4.2.1) when input is a segmented image" >
 
@@ -157,7 +161,7 @@ With binary images, *Sholl Analysis* treats zero intensities as the background, 
 
 <img align="right" width="320px" src="/media/plugins/snt/sholl-tracings-promptv4.png" title="Main prompt (v4.2.1) when input is a traced data" >
 
-In this mode the plugin analyzes reconstructed arbors (traced in SNT or [elsewhere](/update-sites/neuroanatomy/external-resources)), which is particularly relevant for stainings that do not allow single-cell resolution or proper segmentation. There are several entry points to this analysis, namely:
+In this mode the plugin analyzes reconstructed arbors (traced in SNT or [elsewhere](./comp-tools)), which is particularly relevant for stainings that do not allow single-cell resolution or proper segmentation. There are several entry points to this analysis, namely:
 
 - [SNT](/plugins/snt/analysis#sholl-analysis)'s main interface: Offers more options for defining the center of analysis, restrictions to tagged branches, etc., but is not amenable to batch processing.
   
