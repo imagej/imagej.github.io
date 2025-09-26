@@ -378,5 +378,3 @@ macro "Batch Nuclei Counter" {
 Find the _scripts_ folder within your ImageJ/FIJI installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
 
 ![Macro dialog](../../media/tutorials/screenshot-plugins-installed-macro.PNG)
-
-# 7. Add Comments to your Code
