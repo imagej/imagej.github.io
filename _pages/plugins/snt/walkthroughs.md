@@ -525,6 +525,68 @@ In addition to defined delineations, plots and tables may include two other cate
 {% include notice icon="info" content="Topological constraints may not allow certain metrics to be computed for a particular delineation. E.g., a metric that requires a [graph-theoretic tree](./analysis#graph-based-analysis) may not be computed for a delineation defined by a non-contiguous ROI." %}
 
 
+# Detecting Crossovers
+
+A crossover is a spot where at least two neurites pass very close to each other in space (so they may look like they intersect in the image) but they are not connected in the reconstructed graph (i.e., there is no shared node / true topological join). Identification of crossover sites is thus useful to disambiguate overlaps between neurites and spot possible tracing mistakes, such as missed branch-points or false merges.
+
+{% include img align="center" src="/media/plugins/snt/snt-crossover.svg" caption="Overview of a crossover between two neurites.<br>Left: Seem from top, the two neurites seem to intersect. Right: rotation to front view reveals that the two paths are juxtaposed in the XZ plane." %}
+
+
+## Algorithm
+
+Crossover events between two paths, _Path A_ and _Path B_, are detected as follows:
+1. Seeds:<br>
+    All tracing nodes from both paths plus segment midpoints are used as seed points (midpoints help catch “T‑like” geometries where a node lies near the middle of another path’s segment). Midpoints are flagged so they can be treated specially later
+2. Proximity mining:<br>
+    A uniform 3‑D grid is built with cell size equal to the _proximity radius_. For each seed, the 27‑cell neighborhood (the seed’s cell ± 1 in x/y/z) is queried; candidate pairs are kept if their Euclidean distance ≤ _proximity_ and they satisfy a series of optional criteria
+3. Candidate grouping:<br>
+    Candidate pairs are grouped by unordered (_Path A_, _Path B_) pairs, then sorted by index (_iA_, _iB_) and deduplicated. Each group is split into monotonic "runs". A run is accepted if its length is within a specified cutoff, or if it is a single‑pair run that touches an endpoint
+4. Geometric verification:<br>
+    For each accepted run, all corresponding segment pairs are examined: the closest points and distances between segments are computed, as well as an orientation‑invariant approach angle (0–90°) from local tangents. The center of the crossover event is the mean of closest‑point midpoints; the median distance and median angle summarize the run. Optional angle thresholds can be applied
+5. Merging:<br>
+    Nearby events (centers within _proximity_) are merged: the center is averaged, participants are unioned, index windows are merged, the distance becomes the minimum of medians, and the angle becomes the mean of medians
+6. Validation:<br>
+    A final post‑hoc filter keeps an event only if at least one path node from a participant path is near the event center. This removes spurious “floating” events
+
+## Obtaining Crossover Locations
+
+From the GUI, the easiest way to list crossover events is to use the [Bookmark option](./manual#bookmark-menu) in the [Navigator Toolbar](./manual#navigation-toolbar). For advanced detections, [scripting](./scripting) is advised.
+
+In a script, detection settings are specified in a _Config_ object, example:
+
+{% highlight java %}
+// groovy
+import sc.fiji.snt.util.CrossoverFinder
+
+cfg = new CrossoverFinder.Config()
+    .proximity(2.0) // The Neighborhood radius [real‑world units (e.g., µm)] used 1) for the coarse grid query during candidate mining, and 2) to merge nearby events
+    .thetaMinDeg(0.0) // Minimum approach angle (0–90°) required to accept an event. Use 10–20° to suppress nearly parallel neurites
+    .minRunNodes(2) // Minimum length of a “near‑pair run”. Neurites need to have at list this no. of nodes at the crossover site for it to be detected
+    .sameCTOnly(true) // Only compare paths with the same channel and frame?
+    .includeSelfCrossovers(false) // Allow detections within the same neurite? Generally keep false
+    .includeDirectChildren(false) // Allow detections within a path and its direct child? Generally keep false
+    .nodeWitnessRadius(-1.0); // Post‑hoc filter: A crossover event is only kept if at least one participant path has an actual node (not a midpoint) within this radius of the event center. Default (-1) instructs proximity value
+{% endhighlight %}
+
+Once the config is defined, events can be detected from any collection of paths:
+
+
+{% highlight java %}
+// groovy
+import sc.fiji.snt.Tree
+
+tree = Tree.fromFile("path/to/a/swc/file.swc")
+paths = tree.list()
+
+var events = CrossoverFinder.find(paths, cfg)
+for (ev in events) {
+    System.out.printf("x=%.2fµm, y=%.2fµm, z=%.2fµm, angle=%.1f°, d=%.2fµm, paths=%d%n",
+        ev.x, ev.y, ev.z, ev.medianAngleDeg, ev.medianMinDist, ev.participants.size());
+    double[] xyzct = ev.xyzct(); // pixel-space + avg C/T
+    // Optional: create a bookmark or navigate to xyzct[0..2]
+}
+{% endhighlight %}
+
 # Generating *Filtered Images* in Bulk
 
 This section describes how to generate [Filtered Images](/plugins/snt/manual#tracing-on-secondary-image-layer) outside SNT in bulk. Note that there are [many tutorials](/scripting/batch) on this topic. Arguably, the easiest way to process multiple images is to 1) record a macro that processes a single image, then 2) wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:

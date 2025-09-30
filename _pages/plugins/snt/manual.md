@@ -612,9 +612,43 @@ Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image
 # Path Manager
 
 <img align="right" width="300" src="/media/plugins/snt/snt-path-manager.png" title="Path Manager (v4.3)" />
-The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" or "root" (path 0) and all other paths (paths 1...N) are children of the primary path. This pattern repeats for each cell being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
+The Path Manager dialog displays all existing paths in a hierarchical structure, where one path is "primary" or "root" (path 1) and all other paths (paths 2...N) are children of the primary path. This pattern repeats for each structure (arbor) being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
 {% include notice icon="info" content="Path Manager commands are applied to all paths if no paths are selected." %}
+
+
+## Navigation Toolbar
+<img align="right" width="400" src="/media/plugins/snt/snt-navigation-toolbar.png" title="Navigation Toolbar (v5.0)" />
+
+The navigation toolbar allows for better handling of multiple arbors. An arbor is a primary (root‑level) path together with all of its children. In the Path Manager list, each arbor appears as a top‑level entry containing its dependent paths. The toolbar is designed to help you quickly navigate, filter, zoom, and bookmark image locations in larger projects. It includes the following controls:
+
+### Sort Arbors / Root‑level Structures
+<i class="fas fa-arrow-up-a-z"></i> Reorders the arbors in the Path Manager using sorting options such as _Arbor ID_, _Cell label_, _Traced channel_, etc.
+
+### Arbor Chooser
+This section of the toolbar allow for filtering the display of arbors in the Path Manager list. It includes the following controls:
+
+- <i class="fas fa-undo"></i> **Show All Arbors**: Clears any filtering and shows all paths in the list
+
+- **Drop‑down Choice**: Allows you to 'Jump to' a specific arbor in the list. If _Hide others_ (see below) is active, choosing an arbor limits the list to only that arbor’s paths
+
+- <i class="fas fa-sort"></i> **Next Arbor**: Cycles the Arbor choice to the next entry
+
+- <i class="fas fa-arrows-to-eye"></i> **Hide Others**: Shows only the arbor chosen in the drop‑down. If selected the Path Manager list is filtered to the select choice. If unselected all arbors are shown. Toolbar actions (Zoom, Bookmark, see below) honor this filter.
+
+## Zoom to Selected Path(s)
+<i class="fas fa-object-group"></i> Centers and zooms the image view to encompass the selected paths
+
+## Zoom to Selected Node(s)
+<i class="fas fa-crosshairs"></i> Navigates to specific node locations on the selected paths, such as their midpoint, first/last branch point, etc. When a single path is selected, it is also possible to navigate to its node with the smallest/largest radius
+
+## Bookmark Menu
+<i class="fas fa-bookmark"></i> This menu creates [bookmarks](#bookmarks-tab) at important locations. Two types of bookmarks are possible: 1) Topological locations (branch points, end-points, etc.), and 2) Quality-Control (QC) locations. The latter are locations pertinent to inspection, and review of traced paths, and include:
+
+- **Manually Tagged Nodes**: Nodes you previously color‑tagged (e.g., via the tracing canvas)
+- **Nodes With Invalid Radius**: Nodes whose radius is [unset or invalid](#correct-radii)
+- **Putative Crossovers**: These are “apparent crossings” (two or more paths passing very near without being topologically connected), automatically detected by SNT's algorithms. These are described in more detail in [Walkthroughs](./walkthroughs#detecting-crossovers). Note that detecting putative crossovers can be computationally heavy for large datasets. Start with a modest selection of paths and widen it as needed
+
 
 ## Menu Commands
 
@@ -965,7 +999,7 @@ Filters can be combined using the <i class="fa fa-filter"></i> button: It restri
 
 ## Contextual Menu
 
-The Path Manager contextual menu offers convenience options to sort Paths, collapse/expand selections, and access children of Paths.
+The Path Manager contextual menu offers convenience options to collapse/expand selections, access children of Paths, etc.
 
 # Fill Manager
 
