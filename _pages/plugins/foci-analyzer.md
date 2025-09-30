@@ -4,7 +4,7 @@ categories: [Analysis]
 icon: /media/icons/Foci-Analyzer-icon.png
 source-url: "https://github.com/BioImaging-NKI/Foci-analyzer"
 update-site: "foci-analyzer"
-release-version: v1.87
+release-version: v1.88
 support-status: Active
 team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
@@ -151,6 +151,7 @@ This option only affects the nuclei segmentation; it is different from the previ
 - _Foci detection method_ :
   - *Marker-controlled watershed* uses MorphoLibJ's [marker-controlled watershed](https://imagej.net/plugins/marker-controlled-watershed) with local maxima as seeds to segment foci
   - *AreaMaximum detection* tends to detect only the peaks of the foci. Can be tried when the other option doesn't provide satisfactory results. This options requires the SCF MPI CBG Fiji Update Site to be installed.
+  - *Manual thresholding* allows the user to manually set a threshold on the (background-corrected and filtered) foci image.
 
 - _Foci intensity threshold bias channel A/B_ : The macro will automatically estimate the intensity threshold for foci detection (after difference-of-Gaussians background subtraction). This default threshold is set at 3 times the median standard deviation of the nuclear background signal in all nuclei in the image. The user can bias this threshold with the slider to lower values (accepting more low intensity foci) or higher values (gearing towards high intensity foci). The bias slider couples exponentially to the used threshold value: threshold = estimated_threshold * e<sup>bias</sup>. 
 Since the minimum and maximum slider values are (-2.5, 2.5) the threshold can be set to anywhere between 0.2 and 36 times the standard deviation of the nuclear background signal. (default: 0)
