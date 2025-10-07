@@ -14,7 +14,13 @@ This product is a testament to our expertise at KapoorLabs, where we specialize 
 
 This page describes a track corrector module for TrackMate that relies on [oneat](https://pypi.org/project/oneat/). It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following) called **TrackMate-Oneat**.
 
-<img src="/media/plugins/trackmate/actions/FigS1.png" width="300"/> <img src="/media/plugins/trackmate/actions/FigS7.png" width="300"/>
+
+The figures and tables mentioned here can be found in our [associated publication](https://www.biorxiv.org/content/10.1101/2025.09.17.676780v1)
+
+<img src="/media/plugins/trackmate/actions/FigS1.png" width="300"/> 
+
+
+<img src="/media/plugins/trackmate/actions/FigS7.png" width="300"/>
 
 # Introduction
 
@@ -39,7 +45,7 @@ By restricting candidate daughters to fall within a defined angular region of in
 
 ## Explaining the figures
 
-Quality metrics for tracking and division detection. A-B. Cell Tracking Challenge format quality estimations in Table S3 are based on an ROI of a dataset (A), where each cell is manually tracked for as long it appears in the ROI. Manual track annotations are formatted in CTC format, to which automated tracking with TrackMate is then compared to estimate tracking quality. Division metrics in C-J are based on a dataset where each cell division is manually annotated (B). In this dataset, selected tracks are also annotated and compared to automated tracking in Table S3 and panel K. C-E, I. Division detections for Oneat (not connected with tracks), TrackMate-Oneat (Oneat divisions connected with TrackMate tracks), TrackMate-Oneat + MARI principle (TrackMate-Oneat with max boundary set for angle between mother cell and daughter cells), and TrackMate “native” track splitting, enabled in TrackMate LAP linking algorithm. F-H, J. Corresponding detection metrics. K. Manually annotated ground truth tracks colorized by the Track ID assigned by automatic tracking used for the experiments.  
+Quality metrics for tracking and division detection. A-B.  Division metrics in C-J are based on a dataset where each cell division is manually annotated (B). In this dataset, selected tracks are also annotated and compared to automated tracking in Table S3 and panel K. C-E, I. Division detections for Oneat (not connected with tracks), TrackMate-Oneat (Oneat divisions connected with TrackMate tracks), TrackMate-Oneat + MARI principle (TrackMate-Oneat with max boundary set for angle between mother cell and daughter cells), and TrackMate “native” track splitting, enabled in TrackMate LAP linking algorithm. F-H, J. Corresponding detection metrics. K. Manually annotated ground truth tracks colorized by the Track ID assigned by automatic tracking used for the experiments.  
 
 
 Oneat model structure. A. Training data annotations in Napari for training a mitosis classifier. B. CNN architecture. Input data is 3 timepoints, 8 x 64 x 64 pixel crop, centered around the annotation ZYX+t centroid. Output is probabilities for classification as mitotic or non-mitotic.
