@@ -65,7 +65,7 @@ Please note that
 
 -   `FETCH_HEAD` is overwritten with every call to `git fetch`
 -   `FETCH_HEAD` does not really refer to a branch, hence you will end up on an unnamed branch that is *not* updated when fetching
--   after testing, you should switch back to, say, *master* using `git checkout master`
+-   after testing, you should switch back to, say, *main* using `git checkout main`
 -   once the Pull Request is merged, the pseudo-branch will reflect the final merge result, not a tentative one.
 
  

@@ -9,9 +9,9 @@ section: Extend:Development:Tools
 
 [SciJava](/libs/scijava) projects use Github Actions in a variety of ways:
 
--   Perform builds of SciJava projects. Github Actions deploy `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `master` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Github build—i.e., the latest code on `master`.
+-   Perform builds of SciJava projects. Github Actions deploy `SNAPSHOT` builds to the [SciJava Maven repository](https://maven.scijava.org/) in response to pushes to each code repository's `main` branch. So any downstream projects depending on a version of `LATEST` for a given component will match the last successful Github build—i.e., the latest code on `main`.
 -   Run each project's associated {% include wikipedia title='Unit testing' text='unit tests'%}. Github Actions is instrumental in early detection of new bugs introduced to the codebase.
--   Perform [releases](/develop/releasing) of [SciJava](/libs/scijava) projects. Github Actions deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [OSS Sonatype](https://oss.sonatype.org/).
+-   Perform [releases](/develop/releasing) of [SciJava](/libs/scijava) projects. Github Actions deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [Maven Central via the Central Publisher Portal](https://central.sonatype.org/publish/publish-portal-guide/).
 -   Keep the [javadoc](/develop/source#javadocs) site updated.
 -   Keep other web resources updated.
 
@@ -26,15 +26,10 @@ Deploying your library to a [Maven](/develop/maven) repository makes it availabl
 
 ## Instructions
 
--   In order to add Github CI support to a repository, the secrets are needed: A) for deploying to Maven repositories; and B) in the case of deploying to OSS Sonatype, for GPG signing of artifacts. 
+-   In order to add Github CI support to a repository, the secrets are needed: A) for deploying to Maven repositories; and B) in the case of deploying to Maven Central, for GPG signing of artifacts. 
 -   If the secrets have been added to your organization, and you have push access to the relevant repository on GitHub, you can use the [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/-/github-actionify.sh) with the `-f` flag to perform the needed operations. 
--   The github-actionify script will return '[ERROR] Dirty working copy' if you have uncommited changes. If you get this error, check the status of the repository with `git status` and then run `github-actionify -f` again.
+-   The github-actionify script will return `[ERROR] Dirty working copy` if you have uncommited changes. If you get this error, check the status of the repository with `git status` and then run `github-actionify -f` again.
 -   If you need help, please ask [on the Image.sc Forum](https://forum.image.sc/) in the Development category, or in the [SciJava stream](https://imagesc.zulipchat.com/#narrow/channel/327237-SciJava) on the Image.sc Zulip.
-
-## Configuration of JavaFX builds
-
--   The workflows configured by the [github-actionify.sh script](https://github.com/scijava/scijava-scripts/blob/-/github-actionify.sh) do not include JavaFX. 
--   To add support for JavaFX, edit the files contained in the folder `.github/workflows/` to match those found in other SciJava projects that depend on JavaFX, e.g. [FilamentDetector](https://github.com/fiji/FilamentDetector).
 
 ## Testing things which cannot run headless
 
@@ -44,7 +39,7 @@ If your tests require a display (i.e.: they do not pass when run [headless](/lea
      Error:  myTest  Time elapsed: 0.097 s  <<< ERROR!
 
 You can fix this using [Xvfb](/learn/headless#xvfb-virtual-desktop) as follows.
-In your repository there is a file `.github/workflows/build-main.yml`.
+In your repository there is a file `.github/workflows/build.yml`.
 In this file there should be some lines that read:
 
     - name: Set up CI environment

@@ -14,7 +14,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 {% capture text%}
 **This list is focused on default measurements available through SNT's GUI and does not include specialized metrics available via its scripting API. Thus, it only captures [a subset](#notes) of the full repertoire of SNT metrics.**
 <br><br>
-**For each metric SNT retrieves the descriptive statistics _Min_, _Max_, _Mean_, _Standard Deviation_ (SD), _Coefficient of variation_ (CV, i.e., the ratio of the standard deviation to the mean), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements. E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
+**For each metric SNT retrieves the descriptive statistics _Min_, _Max_, _Mean_, _Standard Deviation_ (SD), _Coefficient of variation_ ([CV](#coefficient-of-variation), i.e., the ratio of the standard deviation to the mean), _Sum_ and _N_**, which may lead to inevitable [redundancy](#notes) between measurements. E.g., when measuring  [Branch length](#branch-length) for a particular cell, it is possible to retrieve the length of the smallest branch (_Min_), the longest (_Max_), the average and standard deviation of all branch lengths (_Mean_ and _SD_), their total length (_Sum_), and number (_N_).
 <br><br>
 Metrics ported from published literature include their associated publication in the definition.
 {% endcapture %}
@@ -26,14 +26,20 @@ Metrics ported from published literature include their associated publication in
 A measure of _straightness_. The ratio between the Euclidean distance of a branch (i.e., Euclidean distance between the first and last node of the branch) and its path length. Range of values: ]0--1] (unitless). L-measure metric[^2]
 <br>See also: [Path contraction](#path-contraction)
 
+##### Branch extension angle
+The [absolute](#absolute-angles) (compass bearing) [extension angle](#extension-angle) of a branch
+
+##### Branch extension angle (Rel.)
+The [relative](#relative-rel-angles) [Extension angle](#extension-angle) of a branch, i.e., the acute branching angle formed between a branch and its parent. NaN if a branch has no parent
+
 ##### Branch extension angle XY
-The absolute [extension angle](#extension-angle) of a branch in the XY plane
+The [absolute](#absolute-angles) [extension angle](#extension-angle) of a branch in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ##### Branch extension angle XZ
-The absolute [extension angle](#extension-angle) of a branch in the XZ plane
+The [absolute](#absolute-angles) [extension angle](#extension-angle) of a branch in the XZ plane
 
 ##### Branch extension angle ZY
-The absolute [extension angle](#extension-angle) of a branch in the ZY plane
+The [absolute](#absolute-angles) [extension angle](#extension-angle) of a branch in the ZY plane
 
 ##### Branch fractal dimension
 Also known has [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension). Defined as the slope obtained from the log-log plot of _Path distance vs Euclidean distance_, as [implemented by L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) following the definition of [Marks & Burke (2007)](https://doi.org/10.1002/cne.21418). It is only computed for branches defined by at least five nodes. L-measure metric[^2] described in:
@@ -102,11 +108,45 @@ The depth of the bounding box embedding the structure being measured
 
 <span id="e"></span>
 ##### Extension angle
-The _overall_ outgrowth direction of a branch or path with at least two nodes. It is obtained from the slope of a linear regression performed across allcoordinates on either the XY, XZ, or ZY plane. Extension angles can be _absolute_ or _relative_ (_rel._):
+{% include img align="right" name="Compass/navigation convention" src="/media/plugins/snt/snt-angles.svg" caption="Compass/navigation convention" %}
+Extension angles report the _overall_ outgrowth direction of a path/branch, and are determined by computing a direction vector. This vector is computed in 3D using linear regression across the path/branch coordinates, and its angle retrieved from the slope of the regression. While different angles can be obtained via the [scripting API](#specialized-angles), the most common type of extension angles fall into one of two categories: _absolute_ and _relative_ (_rel._):
 
-- _Absolute angles_ are measured with respect to a fixed reference and range from [0°-360°[ under a _West-clockwise_ convention (W: 0°; N: 90°; E: 180°; S: 270°)
+###### Absolute angles
+Absolute angles range between [0°—360°[ and are compass bearing angles defined under navigation convention: 0°: North; 90°: East; 180°: South; 270°: West. Absolute angles can be retrieved in 3D, or using projection planes (XY, XZ, or ZY). Note the key differences between compass convention and standard mathematical convention:
 
-- _Relative (rel.) angles_ are measured as the acute intersection angle between the extension angle of a branch/path and the extension angle of its parent, and range between [0°-180°[. When no parent exists the relative extension angle is _NaN_
+|---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
+|               | Compass Nomenclature                          | Mathematical Nomenclature                                                             |
+|---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
+| Reference     | Angles are referenced from North (0° or 360°) | Angles are measured from the positive x-axis, which is 0°                             |
+| Direction[^3] | Measurements are always clockwise             | Positive angles are measured counterclockwise. Negative angles are measured clockwise |
+| Units         | Degrees (non-SI unit). Range: 0°—360°         | Radians (SI unit). Range: 0—2π                                                        |
+|---------------|-----------------------------------------------|---------------------------------------------------------------------------------------|
+
+[^3]: Paths with only one node have no direction. Angles involving such paths default to _NaN_
+
+
+{% capture azimuth-elevation%}
+The 3D orientation of a path can be captured using two components:
+
+-  **Horizontal direction (azimuth)**: The compass bearing in XY plane (0-360°) following navigation convention
+
+-  **Vertical inclination (elevation)**: The vertical angle from the XY plane, ranging from -90° to +90°. E.g.:<br>0° → horizontal (parallel to XY plane); +90° → extending straight up (positive Z direction); -90° → extending straight down (negative Z direction)
+{% endcapture %}
+
+<span id="azimuth-elevation"></span>
+{% include notice icon="info" content=azimuth-elevation %}
+
+###### Relative (rel.) angles
+Relative angles range between [0°—180°[ and are computed as the acute angle between a path's 3D direction vector and its parent path's 3D direction vector. These are thus 3D branching angles. If a path or barans has no parent, its relative angle defaults to _NaN_
+
+##### Specialized angles
+Specialized angles can be measured via the scripting API for any group of 3D coordinates. This includes reconstructions (whole cells or parts thereof) and 3D meshes. Some of the specialized angles include:
+
+- **Principal axes**: 	The principal axes of a 3D point cloud representing the directions of maximum, intermediate, and minimum variance in the cloud geometry. Principal axes provide insight into the overall shape orientation of a 3D surface. Axes are computed using Principal Component Analysis (PCA).
+
+- **Direction of mesh curvature**: The local orientation of a 3D mesh at a specific location.
+
+For more details have a look at angle-related [demo scripts](./scripting#bundled-templates) such as _Tree Mesh Direction Analysis_ and _Tree Span Angle Analysis_.
 
 <span id="h"></span>
 ##### Height
@@ -116,37 +156,47 @@ The height of the bounding box embedding the structure being measured
 The average bifurcation ratio of [Strahler bifurcation ratios](https://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio)
 
 ##### Horton-Strahler root number
-The highest Horton-Strahler number of a tree, i.e., the Horton-Strahler number of its root node 
+The highest Horton-Strahler number of a tree, i.e., the Horton-Strahler number of its root node
 
 <span id="i"></span>
 ##### Inner branches
 Defined as the branches of highest Strahler order. Typically, these correspond to the most 'internal' branches of an arbor, in direct sequence from the root. Note that _Primary branches_ are _inner branches_ starting at the tree's root
 <br>See also: [Primary branches](#primary-branches), [Terminal branches](#terminal-branches)
 
+###### Inner branches: Extension angle
+The [absolute](#absolute-angles) (compass bearing) [extension angle](#extension-angle) of [inner branches](#inner-branches)
+
+##### Inner branches: Extension angle (Rel.)
+The [relative](#relative-rel-angles) [Extension angle](#extension-angle) of [inner branches](#inner-branches)
+
 ###### Inner branches: Extension angle XY
-The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane
+The [absolute](#absolute-angles) [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Inner branches: Extension angle XZ
-The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XZ plane
+The [absolute](#absolute-angles) [extension angle](#extension-angle) of [inner branches](#inner-branches) in the XZ plane
 
 ###### Inner branches: Extension angle ZY
-The absolute [extension angle](#extension-angle) of [inner branches](#inner-branches) in the ZY plane
+The [absolute](#absolute-angles) [extension angle](#extension-angle) of [inner branches](#inner-branches) in the ZY plane
 
 ###### Inner branches: Length
 The length of [inner branches](#inner-branches)
 
 ##### Internode angle
-The angle (in degrees, 0-360 range) between a node and its immediate neighbors. I.e., if node B is preceeded by node A and followed by node C, the internode angle at position B is defined as the angle between vecors AB and BC: $$\angle (\overrightarrow{AB}, \overrightarrow{BC})$$
+The angle (in degrees, 0-360 range) between a node and its immediate neighbors. I.e., if node B is preceded by node A and followed by node C, the internode angle at position B is defined as the angle between vectors AB and BC: $$\angle (\overrightarrow{AB}, \overrightarrow{BC})$$
 
 ##### Internode distance
+<span id="internode-distance-squared"></span>
 The distance between nodes defining a branch or a Path. Can be retrieved as _squared internode distance_ when faster computations are required
 
 <span id="l"></span>
 ##### Longest shortest path
 The longest graph geodesic. Considering a [graph-theory tree](https://en.wikipedia.org/wiki/Tree_(graph_theory)), the _longest shortest path_ corresponds to its [graph diameter](https://mathworld.wolfram.com/GraphDiameter.html) (also known as maximum geodesic, or longest graph geodesic). Can only be computed for structures that are valid mathematical trees.
 
+###### Longest shortest path: Extension angle
+The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path)
+
 ###### Longest shortest path: Extension angle XY
-Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XY plane
+Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Longest shortest path: Extension angle XZ
 Absolute [Extension angle](#extension-angle) of [longest shortest path](#longest-shortest-path) in the XZ plane
@@ -209,7 +259,7 @@ The radius at each node, typically obtained from [fitting procedures](/plugins/s
 
 <span id="p"></span>
 ##### Partition asymmetry
-L-measure metric[^2]. Computed at each bifurcation point of the structure being measured. Note that branch points with more than 2 children are ignored. Given $$n1, n2$$ the number of tips on each side of a bifurcation point, Partition asymmetry is defined as: $$\frac{abs(n1-n2)}{(n1+n2-2)}$$. 
+L-measure metric[^2]. Computed at each bifurcation point of the structure being measured. Note that branch points with more than 2 children are ignored. Given $$n1, n2$$ the number of tips on each side of a bifurcation point, Partition asymmetry is defined as: $$\frac{abs(n1-n2)}{(n1+n2-2)}$$.
 
 ##### Path channel
 The color channel associated with a path (multidimensional images)
@@ -217,8 +267,14 @@ The color channel associated with a path (multidimensional images)
 ##### Path contraction
 A measure of straightness of a path. See [Branch contraction](#branch-contraction) for definition
 
+##### Path extension angle
+The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of a path
+
+##### Path extension angle (Rel.)
+The [relative](#relative-rel-angles) [Extension angle](#extension-angle) of a path, i.e., the angle formed between a path and its parent (branching angle). NaN if a path has no parent.
+
 ##### Path extension angle XY
-Absolute [Extension angle](#extension-angle) of a path in the XY plane
+Absolute [Extension angle](#extension-angle) of a path in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ##### Path extension angle XY (Rel.)
 Relative [Extension angle](#extension-angle) of a path in the XY plane
@@ -268,7 +324,7 @@ Primary branches that have origin in a tree's root, extending to the closest bra
 <br>See also: [Inner branches](#inner-branches), [Terminal branches](#terminal-branches)
 
 ###### Primary branches: Extension angle XY
-Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XY plane
+Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Primary branches: Extension angle XZ
 Absolute [Extension angle](#extension-angle) of [primary branches](#primary-branches) in the XZ plane
@@ -341,14 +397,20 @@ Treating each internode segment as a conical frustum, the sum of the surface are
 Branches ending at terminal endpoints (tips)
 <br>See also: [Inner branches](#inner-branches), [Primary branches](#primary-branches)
 
+##### Terminal branches: Extension angle
+The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches)
+
+##### Terminal branches: Extension angle (Rel.)
+The [relative](#relative-rel-angles) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches)
+
 ###### Terminal branches: Extension angle XY
-Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XY plane
+The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XY plane, i.e., horizontal direction or [azimuth angle](#azimuth-elevation)
 
 ###### Terminal branches: Extension angle XZ
-Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XZ plane
+The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the XZ plane
 
 ###### Terminal branches: Extension angle ZY
-Absolute [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the ZY plane
+The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches) in the ZY plane
 
 ###### Terminal branches: Length
 The sum of branch lengths of branches ending at terminal endpoints (tips)
@@ -375,7 +437,7 @@ Cartesian coordinates in the three-dimensional space
 
 - Some combinations of metrics/statistics may not be meaningful: e.g., when measuring a single cell, pairing [cable length](#cable-length) to _SD_ will not be useful, since only one cable length value can be computed. In such cases, the Measurements table appends '[Single metric]' to such data
 
-- Each of the 95+ metrics is represented by seven statistical properties: minimum, maximum, mean, standard deviation (SD), coefficient of variation (CV, the ratio of the standard deviation to the mean), sum, and _N_, resulting in a total of at least $$95\times 7$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
+- Each of the 100+ metrics is represented by seven statistical properties: minimum, maximum, mean, standard deviation (SD), coefficient of variation (CV, the ratio of the standard deviation to the mean), sum, and _N_, resulting in a total of $$100\times 7$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
 -  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 
@@ -392,41 +454,50 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 
 ## Glossary
 
+###### Coefficient of variation
+The coefficient of variation (CV) is the ratio of the standard deviation to the mean. Unlike standard deviation, CV is dimensionless and facilitates comparisons between datasets with different units or scales (scale independent). Since CV expresses variability relative to the mean, it also facilitates comparing the consistency of different populations. A dataset with mean=100 and SD=10 (CV=0.1) shows the same relative variability as one with mean=1000 and SD=100 (CV=0.1), even though their absolute variability is quite different. Despite its usefulness, CV becomes meaningless when the mean approaches zero (small denominators can create misleadingly large CVs) and becomes less meaningful for data involving negative values.
+
+###### Graph
+In [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) terms a tree is a connected structure with no loops where there's exactly one path between any two points. The root, branching points, and tips are "nodes" (or "vertices"), and each segment between two nodes is an "edge". This mathematical formalism simplifies the quantification of morphometric traits involving neural branches by providing a standardized framework for analysis. See also [Simplified graph](#simplified-graph).
+
 ###### Mesh
-A polygon mesh defines the shape of a three-dimensional polyhedral object. In neuronal anatomy, meshes define neuropil annotations, typically compartments of a reference brain atlas (e.g., the hippocampal formation in mammals, or mushroom bodies in insects)
+A polygon mesh defines the shape of a three-dimensional polyhedral object. In neuroanatomy, meshes are used to define neuropil annotations and anatomical boundaries, typically representing compartments within a reference brain atlas (e.g., the hippocampal formation in mammals or mushroom bodies in insects).
 
 ###### Multi-dimensional image
-An image with more than 3 dimensions (3D). Examples include fluorescent images associated with multiple fluorophores (multichannel) and images with a time-dimension (time-lapse videos). A 3D multichannel timelapse has 5 dimensions
+An image with more than 3 dimensions (3D). Examples include fluorescent images associated with multiple fluorophores (multichannel) and images with a time-dimension (time-lapse videos). A 3D multichannel timelapse has 5 dimensions.
 
 ###### Neurite
-Same as neuronal process. Either an axon or a dendrite
+Synonymous with "neuronal process". Refers to any projection extending from the neuronal cell body (soma), encompassing both axons and dendrites. The term is useful when the specific identity of a process as axon or dendrite is unknown or irrelevant to the analysis.
+
+###### (Neuronal) morphometry
+The quantitative analysis and measurement of neuronal shape and structure.
+
+###### Neuropil
+Any area in the nervous system. The cellular tissue around neuronal processes.
+
+###### Out-of-core
+Software architecture that enables processing of datasets larger than available computer memory (RAM) by streaming data from storage devices as needed. SNT supports out-of-core tracing via scripting.
 
 ###### Path
 Can be defined as a sequence of branches, starting from soma or a branch point until a termination. In manual and assisted (semi-automated) tracing, neuronal arbors are traced using paths, not branches. [Fitting algorithms](/plugins/snt/manual#refinefit) that take into account voxel intensities can be used to refine the center-line coordinates of a path, typically to obtain more accurate curvatures. Fitting procedures can also be used to estimate the volume of the neurite(s) associated with a path
 
-###### (Neuronal) morphometry
-Quantification of neuronal morphology
-
-###### Neuropil
-Any area in the nervous system. The cellular tissue around neuronal processes
-
-###### Out-of-core
-Software with out-of-core capabilities is able to process data that is too large to fit into a computer’s main memory. SNT supports out-of-core tracing via scripting.
-
 ###### Reconstruction
-See [Tracing](#tracing)
+See [Tracing](#tracing). Both terms are used interchangeably to describe the digital representation of neuronal morphology.
 
 ###### ROI
-Region of Interest. Define specific parts of an image to be processed in image processing routines
+Region of Interest. Define specific parts of an image to be processed in image processing routines.
+
+###### Simplified graph
+A reduced representation of a [graph](#graph) where intermediate "slab" nodes along edges are removed, preserving only biologically meaningful nodes (root, branch points, and terminals). This simplification maintains the topological structure and edge weights while reducing computational complexity.
 
 ###### Skeleton
-A thinned version of a digitize shape (such as a neuronal reconstruction) or of a binary image
+A thinned, centerline representation of a digitized shape (such as a neuronal reconstruction) or of a binary image.
 
 ###### Tracing
-A digital reconstruction of a neuron or neurite. The term predates computational neuroscience and reflects the manual ‘tracing’ on paper performed with [camera lucida](https://en.wikipedia.org/wiki/Camera_lucida) devices by early neuroanatomists
+A digital reconstruction of a neuron or neurite. The term originates from historical manual tracing techniques using [camera lucida](https://en.wikipedia.org/wiki/Camera_lucida)  devices, where neuroanatomists would trace neural structures onto paper.
 
 ###### Volume rendering
-A visualization technique for displaying image volumes (3D images) directly as 3D objects
+A visualization technique for displaying image volumes (3D images) directly as 3D objects.
 
 
 {% capture text%}

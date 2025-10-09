@@ -45,35 +45,6 @@ src="/media/plugins/trackmate/trackmate-stardist-tracking.mp4"
 width='800' 
 align="center" %}
 
-You can use these algorithms to track objects in various imaging modalities.
-For instance, here are T-cells imaged in bright-field tracked with a custom Deep Learning model used with StarDist:
-
-{% include video 
-src="https://www.biorxiv.org/content/biorxiv/early/2021/09/20/2021.09.03.458852/DC4/embed/media-4.mp4" 
-width='800' 
-align="center" %}
-
-
-#### Interfacing with external segmentation algorithms
-
-TrackMate includes detectors that can create objects to track from a mask image, a label image or a probability map. 
-This way we can interface with external segmentation algorithms, such as [cellpose](https://www.cellpose.org/).
-Below are two movies segmented with cellpose. 
-We exported the segmentation results as a label image, that we added to the raw image as a 2nd channel, then used in TrackMate for tracking.
-In the first one we follow mouse hematopoietic stem cells migrating in a hydrogel microwell:
-
-{% include video 
-src="https://www.biorxiv.org/content/biorxiv/early/2021/09/20/2021.09.03.458852/DC8/embed/media-8.mp4" 
-width='800' 
-align="center" %}
-
-And here we follow migrating cancer cells, stained for their membrane:
-
-{% include video 
-src="https://www.biorxiv.org/content/biorxiv/early/2021/09/20/2021.09.03.458852/DC9/embed/media-9.mp4" 
-width='800' 
-align="center" %}
-
 #### Tracking and lineaging cells in 3D
 
 TrackMate works indifferently in 2D or 3D. 
@@ -83,7 +54,7 @@ Below is a movie showing the first 2 hours of a *C.elegans* embryo development, 
 {% include img 
 src="/media/plugins/trackmate/trackmate-celegans-devel.gif" 
 align="center"
-width='600'  %}
+width='300'  %}
 
 
 #### Tracks with fusion, split and bridging gap events
@@ -92,7 +63,7 @@ width='600'  %}
 
 {% include img
 src='/media/plugins/trackmate/trackmate-split-merge-gapclosing.gif' 
-width='500' 
+width='300' 
 align='center'
 %}
 
@@ -103,17 +74,17 @@ These measurements can be browsed, exported and plotted from within the user int
 
 {% include img 
 src='/media/plugins/trackmate/trackmate-newtables.png'
-width='400px'
+width='300px'
 %}
 {% include img 
 src='/media/plugins/trackmate/trackmate-newgrapher.png'
-width='400px'
+width='300px'
 %}
 
 
 #### Measuring morohpological features over time
 
-**Following cell morphology over several divisions within a lineage.** The lineage follows the growth of a _Nesseiria meningitidis_. The bottom graphs display the cell area and circularity for the cell highlighted in green in the above lineage. For 2D images,  TrackMate can measure the morphological features of the objects it tracks. 
+**Following cell morphology over several divisions within a lineage.** The lineage follows the growth of a _ meningitidis_. The bottom graphs display the cell area and circularity for the cell highlighted in green in the above lineage. For 2D images,  TrackMate can measure the morphological features of the objects it tracks. 
 
 {% include img 
 src='/media/plugins/trackmate/trackmate_morphofeatureslineage.png'
@@ -127,37 +98,15 @@ A movie following one cell of a *C.elegans* embryo tracked over 3 hours, as it d
 
 {% include img 
 src='/media/plugins/trackmate/trackmate-celeganscellfollowed.gif' 
-width='400'
+width='200'
 align='center'
 %}
 
 
-#### Segmenting objects in 3D with a slice-by-slice approach
+### Cell and organelle tracking
 
-TrackMate ships and integrates several nice Deep-Learning based and Machine-Learning based segmentation algorithms.
-They work especially well in 2D but we can also use them to segment 3D objects with TrackMate.
-The idea is to tell TrackMate "this is not a 3D image but a 2D+T image that you will track".
-For instance you could use cellpose on the individual 2D slice to segment sections of the object, then merging the multiple 2D contours in a single 3D object.
-This is the resulting segmentation on a _Drosophila melanogaster_ embryo:
-
-{% include video 
-src="https://www.biorxiv.org/content/biorxiv/early/2021/09/20/2021.09.03.458852/DC12/embed/media-12.mp4" 
-width='800' 
-align="center" %}
-
-And the same approach applied to _Arabidopsis thaliana floral meristem_:
-
-{% include video 
-src="https://www.biorxiv.org/content/biorxiv/early/2021/09/20/2021.09.03.458852/DC11/embed/media-11.mp4" 
-width='800' 
-align="center" %}
-
-
-### Single Particle Tracking
-
-TrackMate provides the tools to perform single particle tracking (SPT) typically in the context of microscopy.
-SPT is an image analysis challenge where the goal is to segment some objects and follow them over time. Each object is detected or segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track.
-These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
+TrackMate provides the tools to perform object tracking typically in the context of microscopy.
+Tracking is an image analysis challenge where the goal is to follow objects over time, cells, animals, organelles, etc., anything as long as it can be clearly identified in the image. Each object is detected or segmented in multiple frames and its trajectory is reconstructed by assigning it an identity over these frames, in the shape of a track. These tracks can then be either visualized or yield further analysis results such as velocity, total displacement, diffusion characteristics, division events, etc...
 
 TrackMate can deal with spot-like objects or cell-like objects. 
 - Spots are typically bright objects over a dark background for which the object contour shape is not important, but for which the main information can be extracted from the X,Y,Z coordinates over time. Examples include sub-resolution fluorescent spots, labelled traffic vesicles, nuclei or cells imaged at low resolution.
@@ -166,48 +115,27 @@ TrackMate can deal with spot-like objects or cell-like objects.
 TrackMate can compute numerical features for each spot, given its coordinates, a radius and its shape.
 For instance, the mean, max, min and median intensity will be computed, as well as the estimated radius and orientation for each spot, allowing to follow how these feature evolves over time for one object.
 
-### TrackMate goals
-
-Its development focuses on achieving two concomitant goals:
-
-#### For users
-
-TrackMate aims at offering a generic solution that works out of the box, through a simple and sensible user interface.
-
-The tracking process is divided in a series of steps, through which you will be guided thanks to a wizard-like GUI. It privileges tracking schemes where the segmentation step is decoupled from the particle-linking step.
-
-The segmentation / filtering / particle-linking processes and results are visualized immediately in 2D or 3D, allowing to judge their efficiency and adjust their control parameters. The visualization tools are the one shipped with Fiji and interact nicely with others plugin.
-
-Several automated segmentation and linking algorithms are provided. But you are also offered to edit the results manually, or even to completely skip the automatic steps, and perform fully manual segmentation and/or linking.
-
-Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [MATLAB](/scripting/matlab).
-
-TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependencies are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [Fiji Updater](/plugins/updater), and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
-
-A strong emphasis is made on performance, and TrackMate will take advantage of multi-cores hardware.
-
-#### For developers
-
-Have you ever wanted to develop your own segmentation and/or particle-linking algorithm, but wanted to avoid the painful burden to also write a GUI, several visualization tools, analysis tools and exporting facilities? Then TrackMate is for you.
-
-We spent a considerable amount of time making TrackMate extensible in every aspect. It has a very modular design, that makes it easy to extend. You can for instance develop your own segmentation algorithm, extend TrackMate to include it, and benefit from the visualization tools and the GUI already there. Here is a list of the components you can extend and customize:
-
--   detection algorithms
--   particle-linking algorithms
--   numerical features for spots (such as mean intensity, etc..)
--   numerical features for links (such as velocity, orientation, etc..)
--   numerical features for tracks (total displacement, length, etc...)
--   visualization tools
--   post-processing actions (exporting, data massaging, etc...)
-
-You can even modify the GUI, and remove, edit or insert new steps in the wizard. This can be useful for instance if you want to implement a tracking scheme that solves simultaneously the segmentation part and the particle linking part, but still want to take advantage of TrackMate components.
-
-Do you want to make your new algorithms usable by the reviewers of your submitted paper? Upload your extended version of TrackMate to a private update site, as [explained here](/update-sites/setup), then send the link to the reviewers. Now that the paper has been accepted (congratulations), you want to make it accessible to anyone? Just put the link to the update site in the article. All of this can happen without us even noticing.
-
-TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
-
 
 ## Documentation and tutorials
+
+
+### Online tutorials
+
+-   [Getting started with TrackMate](/plugins/trackmate/tutorials/getting-started) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
+-   [Manual editing of tracks using TrackMate](/plugins/trackmate/tutorials/manual-track-editing) shows how to manually curate and edit tracking results.
+-   [Manual tracking with TrackMate](/plugins/trackmate/tutorials/manual-tracking) shows how to perform a fully manual annotation of tracks in a source image.
+-   [Keyboard shortcuts for editing](/plugins/trackmate/tutorials/trackmate-editing-shortcuts) contains a summary of the keyboard shortcuts we use here.
+-   [TrackMate v7 new algorithms](/plugins/trackmate/detectors/trackmate-v7-detectors) documents the 8 new detectors introduced with version 7, and the new shape analysis framework. Each subpage contains a tutorial that explains how to use each of the new detector.
+
+### TrackMate components
+
+TrackMate has a modular design and ships several algorithms of several types: detectors, trackers, analyzers, etc. The pages below documents individual components, or modules or TrackMate.
+
+- [TrackMate Detectors](/plugins/trackmate/detectors): detect objects in images.
+- [TrackMate Trackers](/plugins/trackmate/trackers): link objects to build tracks.
+- [TrackMate Analyzers](/plugins/trackmate/analyzers): compute numerical values on spots, edges and tracks.
+- [TrackMate Actions](/plugins/trackmate/actions): miscalleneous actions on tracking results.
+- [TrackMate Views](/plugins/trackmate/views): tracking results viewers.
 
 ### Downloadable documents and tutorials
 
@@ -225,38 +153,13 @@ It compiles in a nice polished pdf the tutorials and information you can find on
 Again, it compiles several tutorials and developer documentation also linked below.
 
 
-### Online tutorials
-
--   [Getting started with TrackMate](/plugins/trackmate/tutorials/getting-started) is a basic tutorial that explains how TrackMate works on an easy image. You should start here.
--   [Manual editing of tracks using TrackMate](/plugins/trackmate/tutorials/manual-track-editing) shows how to manually curate and edit tracking results.
--   [Manual tracking with TrackMate](/plugins/trackmate/tutorials/manual-tracking) shows how to perform a fully manual annotation of tracks in a source image.
--   [Keyboard shortcuts for editing](/plugins/trackmate/tutorials/trackmate-editing-shortcuts) contains a summary of the keyboard shortcuts we use here.
--   [TrackMate v7 new algorithms](/plugins/trackmate/detectors/trackmate-v7-detectors) documents the 8 new detectors introduced with version 7, and the new shape analysis framework. Each subpage contains a tutorial that explains how to use each of the new detector.
-
-### TrackMate components
-
-TrackMate has a modular design and ships several algorithms of several types: detectors, trackers, analyzers, etc. 
-The pages below documents individual components, or modules or TrackMate.
-
-- [TrackMate Detectors](/plugins/trackmate/detectors): detect objects in images.
-- [TrackMate Trackers](/plugins/trackmate/trackers): link objects to build tracks.
-- [TrackMate Analyzers](/plugins/trackmate/analyzers): compute numerical values on spots, edges and tracks.
-- [TrackMate Actions](/plugins/trackmate/actions): miscalleneous actions on tracking results.
-- [TrackMate Views](/plugins/trackmate/views): tracking results viewers.
-
-
-### Interoperability
+## Interoperability
 
 #### Python
 
-There are several Python tools contributed by the TrackMate developer community that allows importing TrackMate results in Python and performing track analysis with the libraries of this language. Among them:
+Currently the best way to interact with TrackMate data in Python is to use **pycellin**, developed by Laura Xénard. pycellin can read and write many tracking file formats, including TrackMate, and ships many analysis features that work out of the box and will accelerate greatly your work.
 
-- `NapaTrackMater` [https://github.com/kapoorlab/NapaTrackMater](https://github.com/kapoorlab/NapaTrackMater) by {% include person id='kapoorlab' %}, a bridge from TrackMate to Napari.
-- `pytrackmate` [https://github.com/hadim/pytrackmate](https://github.com/hadim/pytrackmate) by {% include person id='hadim' %}, a Python function that imports TrackMate files in Pandas data frames.
-- `Single-molecule-tracking-python` [https://github.com/Colorado-State-University-Stasevich-Lab/single-molecule-tracking-python](https://github.com/Colorado-State-University-Stasevich-Lab/single-molecule-tracking-python) by the Stasevich lab (Colorado State University), a series of functions in Python to perform single-molecule analysis based on TrackMate results.
-- `pyTrackMateXML`[https://github.com/rharkes/pyTrackMateXML](https://github.com/rharkes/pyTrackMateXML) by Rolf Harkes, a Python function to follow intensity traces based on TrackMate tracking results.
-
-Please contact their respective authors directly for support.
+Pycellin is currently in development and can be found [here](https://github.com/Image-Analysis-Hub/pycellin).
 
 #### MATLAB
 
@@ -267,21 +170,9 @@ Please contact their respective authors directly for support.
 
 -   [Scripting TrackMate](/plugins/trackmate/scripting/scripting) shows how to do tracking using a scripting language, *e.g.* from the Fiji [Script Editor](/scripting/script-editor). These example scripts will show you how to use TrackMate as a library and familiarize yourself with the API.
 
--   In scripts, all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionnary for each detector and tracker, and the type of values they accept. All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/scripting/trackmate-detectors-trackers-keys).
+-   In scripts, all detectors and trackers are configured in the `Settings` object using a `Map` (e.g. in Java) or a `dict` (e.g. in Python). You need to know the keys of the dictionary for each detector and tracker, and the type of values they accept. All the keys of the known detectors and trackers are documented [in this page](/plugins/trackmate/scripting/trackmate-detectors-trackers-keys).
 
 -   [Using TrackMate from MATLAB](/plugins/trackmate/scripting/using-from-matlab) shows how to use [MATLAB](/scripting/matlab) as a scripting language for TrackMate, and benefit from [MATLAB](/scripting/matlab) facilities.
-
-
-
-### Misc information
-
--   TrackMate version history: Please look at the [gihub page for TrackMate releases](https://github.com/fiji/plugins/trackmate/releases).
-
-- The TrackMate [FAQ](/plugins/trackmate/faq)
-
-- Dave Mason on using pivot tables to get track statistics based on spot features: [mean-intensity-of-tracks-using-trackmate](https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5)
-
-
 
 ## Extending TrackMate
 
@@ -333,14 +224,62 @@ Thanks to [continuous integration](/develop/ci), the extensions we are aware of 
 
 #### Extensions documentation
 
--   [Find maxima detector](/plugins/trackmate/find-maxima-detector) from Thorsten Wagner.
+-   [Find maxima detector](/plugins/trackmate/extensions/find-maxima-detector) from Thorsten Wagner.
+
+## TrackMate goals
+
+The vision for the development of TrackMate focuses on achieving two concomitant goals:
+
+#### For users
+
+TrackMate aims at offering a generic solution that works out of the box, through a simple and sensible user interface.
+
+The tracking process is divided in a series of steps, through which you will be guided thanks to a wizard-like GUI. It privileges tracking schemes where the segmentation step is decoupled from the particle-linking step.
+
+The segmentation / filtering / particle-linking processes and results are visualized immediately in 2D or 3D, allowing to judge their efficiency and adjust their control parameters. The visualization tools are the one shipped with Fiji and interact nicely with others plugin.
+
+Several automated segmentation and linking algorithms are provided. But you are also offered to edit the results manually, or even to completely skip the automatic steps, and perform fully manual segmentation and/or linking.
+
+Some tools for track and spot analysis are included. Various plots can be made directly from the plugin and for instance used to derive numerical results from the tracks. If they are not enough, functions are provided to export the whole results to other analysis software such as [MATLAB](/scripting/matlab).
+
+TrackMate relies on several different libraries and plugins for data manipulation, analysis and visualization. This can be a pitfall when distributing a complex plugin, but this is where the Fiji magic comes into play. All dependencies are dealt with by through the Fiji updater. Installing TrackMate is easy as calling the [Fiji Updater](/plugins/updater), and the plugin must work out of the box. If this does not work for you, then it is a bug and we commit to fix it.
+
+A strong emphasis is made on performance, and TrackMate will take advantage of multi-cores hardware.
+
+#### For developers
+
+Have you ever wanted to develop your own segmentation and/or particle-linking algorithm, but wanted to avoid the painful burden to also write a GUI, several visualization tools, analysis tools and exporting facilities? Then TrackMate is for you.
+
+We spent a considerable amount of time making TrackMate extensible in every aspect. It has a very modular design, that makes it easy to extend. You can for instance develop your own segmentation algorithm, extend TrackMate to include it, and benefit from the visualization tools and the GUI already there. Here is a list of the components you can extend and customize:
+
+-   detection algorithms
+-   particle-linking algorithms
+-   numerical features for spots (such as mean intensity, etc..)
+-   numerical features for links (such as velocity, orientation, etc..)
+-   numerical features for tracks (total displacement, length, etc...)
+-   visualization tools
+-   post-processing actions (exporting, data massaging, etc...)
+
+You can even modify the GUI, and remove, edit or insert new steps in the wizard. This can be useful for instance if you want to implement a tracking scheme that solves simultaneously the segmentation part and the particle linking part, but still want to take advantage of TrackMate components.
+
+Do you want to make your new algorithms usable by the reviewers of your submitted paper? Upload your extended version of TrackMate to a private update site, as [explained here](/update-sites/setup), then send the link to the reviewers. Now that the paper has been accepted (congratulations), you want to make it accessible to anyone? Just put the link to the update site in the article. All of this can happen without us even noticing.
+
+TrackMate was developed to serve as a tool for Life-Science image analysis community, so that new tracking tools can be developed more easily and quickly, and so that end-users can use them to perform their own research. We will support you if need help to reuse it.
+
+### Misc information
+
+-   TrackMate version history: Please look at the [github page for TrackMate releases](https://github.com/trackmate-sc/TrackMate/releases).
+
+-   The TrackMate [FAQ](/plugins/trackmate/misc/faq)
+
+-   Dave Mason on using pivot tables to get track statistics based on spot features: [mean-intensity-of-tracks-using-trackmate](https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5)
 
 
 ## Acknowledgements
 
 ### Libraries 
 
-TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](/develop) system and the [Fiji Updater](/plugins/updater) ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
+TrackMate actually depends on many other Fiji plugins or libraries. The [Fiji Build System](/develop) and the [Fiji Updater](/plugins/updater) ensures that these dependencies will not bother you. We list them here, with their author when they are not obviously linked:
 
 -   [ImgLib2](/libs/imglib2) is used everywhere we need dealing with pixels. Relying on imglib made it trivial to have a plugin that deals indifferently with 2D or 3D images. In particular, we use code from Stephan Preibisch, {% include person id='axtimwalde' %}, Larry Lindsey and Lee Kamentsky.
 -   [ImageJ](/software/imagej) is of course the entry point for the plugin. We use it display the images as 2D slices and in the HyperStack displayer.

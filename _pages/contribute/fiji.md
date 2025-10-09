@@ -430,25 +430,25 @@ The following table provides a few examples of how various Fiji components are s
     </tr>
     <tr>
       <td>
-        <p><a href="/plugins/slim-curve">SLIM Curve</a></p>
+        <p><a href="/plugins/flimj">FLIMJ</a></p>
       </td>
       <td>
         <p>&#10060;</p>
       </td>
       <td>
-        <p><a href="http://sites.imagej.net/SLIM-Curve/">SLIM-Curve</a></p>
+        <p><a href="http://sites.imagej.net/FLIMJ/">FLIMJ</a></p>
       </td>
       <td>
         <p><a href="/licensing/gpl">GPLv3</a></p>
       </td>
       <td>
-        <p><a href="https://github.com/slim-curve">slim-curve</a></p>
+        <p><a href="https://github.com/flimlib">flimlib</a></p>
       </td>
       <td>
-        <p>{% include github org='slim-curve' repo='slim-plugin' label='slim-plugin' %}</p>
+        <p>{% include github org='flimlib' repo='flimj-ui' label='flimj-ui' %}</p>
       </td>
       <td>
-        <p><code>slim-curve</code></p>
+        <p><code>flimlib.flimj</code></p>
       </td>
       <td></td>
     </tr>

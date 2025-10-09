@@ -31,8 +31,8 @@ Other files that may be produced as artifacts include:
 {% include aside title="What are Maven artifacts?" content=maven-artifacts %}
 
 1.  **In development.** The source code is modified to add new features, fix bugs, etc... these modifications are expressed as *commits* by [Git](/develop/git), whether on your local filesystem, a topic branch, or a repository fork.
-2.  **On master.** When you have a set of one or more *commits* that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the `master` branch of the project's repository on GitHub. This ensures the `master` branch is always *release ready*.
-3.  **Released.** When there is a need to make the current `master` branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [Maven](/develop/maven) is used to *cut a release*, which is then *deployed as an artifact* to the [SciJava Maven repository](https://maven.scijava.org/). Developers can now use the new version in their own projects.
+2.  **On main.** When you have a set of one or more *commits* that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the `main` branch of the project's repository on GitHub. This ensures the `main` branch is always *release ready*.
+3.  **Released.** When there is a need to make the current `main` branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [Maven](/develop/maven) is used to *cut a release*, which is then *deployed as an artifact* to the [SciJava Maven repository](https://maven.scijava.org/). Developers can now use the new version in their own projects.
 4.  **Managed.** The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [Bill of Materials (BOM)](/develop/architecture#bill-of-materials) can be updated accordingly.
 5.  **Uploaded.** Finally, the new release artifact can be uploaded to its associated ImageJ [update site](/update-sites), making it available to end users.
 
@@ -124,19 +124,19 @@ Repositories on GitHub are referred to as **remotes**; when you *[clone](https:/
 
 -   **External developer.** If you do not have push rights, then you need to go through an additional step called **[Forking the repository](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/)**. This will create a remote copy of the repository, to which you have push rights. Your remote fork is referred to as *downstream* of the original remote repository (which is *upstream* of your fork). Your development will then take place on your fork, with an additional step later to reconcile with the upstream repository.
 
-## Phase 2: On master
+## Phase 2: On main
 
-Once a feature or fix is complete it can move to the `master` branch of the repository. How you accomplish this depends on how the changes were developed in Phase 1.
+Once a feature or fix is complete it can move to the `main` branch of the repository. How you accomplish this depends on how the changes were developed in Phase 1.
 
--   **Collaborating developer.** Minimal changes can be pushed back directly to `master` on the remote repository. If your work is on a [topic branch](/develop/git/topic-branches) then you should use a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) so that the topic branch can be reviewed before being merged to `master`.
+-   **Collaborating developer.** Minimal changes can be pushed back directly to `main` on the remote repository. If your work is on a [topic branch](/develop/git/topic-branches) then you should use a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) so that the topic branch can be reviewed before being merged to `main`.
 
 <!-- -->
 
--   **External developer.** First push your changes back to a branch of your forked repository (it doesn't necessarily have to be `master`). Then you can file a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) on [GitHub](/develop/github) to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [project maintainer](/contribute/governance) will accept your changes and then merge to the official `master` branch.
+-   **External developer.** First push your changes back to a branch of your forked repository (it doesn't necessarily have to be `main`). Then you can file a [pull request](https://help.github.com/articles/using-pull-requests/) (PR) on [GitHub](/develop/github) to merge your branch back to the official repository. This invites code review from other interested developers. Reviewers might ask for changes to the code to address any issues. After any needed revisions have been made, a [project maintainer](/contribute/governance) will accept your changes and then merge to the official `main` branch.
 
 ## Phase 3: Released
 
-Once the `master` branch of a component has your desired new functionality, the next step is to cut a *release* version of the component. Normally, the Maven version (in the [pom.xml](https://maven.apache.org/pom.html#Introduction)) on master is a [*SNAPSHOT* version](http://stackoverflow.com/q/5901378), meaning it is [unstable](/develop/architecture#reproducible-builds) and not yet released. However, a [stable](/develop/architecture#reproducible-builds) *release* artifact can be deployed to the appropriate remote Maven repository.
+Once the `main` branch of a component has your desired new functionality, the next step is to cut a *release* version of the component. Normally, the Maven version (in the [pom.xml](https://maven.apache.org/pom.html#Introduction)) on main is a [*SNAPSHOT* version](http://stackoverflow.com/q/5901378), meaning it is [unstable](/develop/architecture#reproducible-builds) and not yet released. However, a [stable](/develop/architecture#reproducible-builds) *release* artifact can be deployed to the appropriate remote Maven repository.
 
 The [release-version.sh](https://github.com/scijava/scijava-scripts/blob/-/release-version.sh) script automates the steps to performing a release. It relies on the [Maven Release plugin](http://maven.apache.org/maven-release/maven-release-plugin/) to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
@@ -161,7 +161,7 @@ From your project's directory, simply run:
 
     release-version.sh
 
-The script will verify that your master branch is ready to go, then create and push a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging) for the release. [GitHub Actions](/develop/github-actions) will then notice the tag and complete the release for you. You should receive an email from GitHub after the release is complete indicating whether the build was successful.
+The script will verify that your main branch is ready to go, then create and push a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging) for the release. [GitHub Actions](/develop/github-actions) will then notice the tag and complete the release for you. You should receive an email from GitHub after the release is complete indicating whether the build was successful.
 
 {% include notice icon="info" content='If your project is a [multi-module build](https://maven.apache.org/guides/mini/guide-multiple-modules.html), first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.' %}
 

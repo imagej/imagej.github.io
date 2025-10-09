@@ -31,7 +31,7 @@ SNT assembles comparison reports and simple statistical reports (two-sample t-te
 
 Notes on SNT charts and plots:
 
-- SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible. Righ-click on a plot canvas to export it as vector graphics (PDF or SVG), acess customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures
+- SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible. Right-click on a plot canvas to export it as vector graphics (PDF or SVG), access customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures
 
 - With simple charts, it is possible double-click on plotted components to edit them and export data as CSV
 
@@ -70,7 +70,7 @@ There are several entry points to Sholl Analysis in SNT. You can find those in t
 
 1. Sholl Analysis (Image): Direct parsing of images, bypassing tracing
 2. Sholl Analysis (Tracings): Parsing of reconstructions
-3. Sholl Analysis Scripts: These handle batch processing of files, specialized analysis, and misc. utilities 
+3. Sholl Analysis Scripts: These handle batch processing of files, specialized analysis, and misc. utilities
 
 Sholl Analysis has a dedicated [documentation page](./sholl) detailing [parameters](./sholl#parameters), [plots](./sholl#sholl-plots), and [metrics](./sholl#metrics).
 {% endcapture %}
@@ -98,7 +98,7 @@ NB: The default {% include key keys='Alt|Shift' %} modifier can be simplified in
 
 The Sholl dialog created by this approach is a variant of the dialog created by running the {% include bc path='Sholl|Sholl Analysis (From Tracings)...'%} from the _Neuroanatomy Shortcuts_ panel, with a couple of changes:
 
-1. Since the center of analysis is defined precisely on an image, radius step size can be previewed 
+1. Since the center of analysis is defined precisely on an image, radius step size can be previewed
 2. The *Path filtering* drop-down menu provides additional options to restrict the analysis to the subset of paths selected in the Path Manager
 3. The type of annotations is more specialized and includes:
    - **Color coded nodes** Intersection counts will be color mapped into path nodes under the _annotation LUT_.
@@ -159,7 +159,7 @@ This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog,
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/brain-analysis-combined-histograms.png | *Brain Area Frequencies...* in which *No. of tips* was tabulated across the motor cortext subregions associated with the four cells in the *File › Load Demo Dataset...  › MouseLight dendrites* demo dataset
+/media/plugins/snt/brain-analysis-combined-histograms.png | *Brain Area Frequencies...* in which *No. of tips* was tabulated across the motor cortex subregions associated with the four cells in the *File › Load Demo Dataset...  › MouseLight dendrites* demo dataset
 /media/plugins/snt/snt-brain-analysis-ipsi-contra.png | *Brain Area Frequencies...* of a single cell in which *Cable length* of axonal projections was tabulated across ipsilateral and contralateral hemisphere regions.  See the *Hemisphere Analysis* [notebook](https://github.com/morphonets/SNT/tree/main/notebooks) for details
 "
 %}
@@ -177,8 +177,8 @@ Annotations Graphs rely on brain annotations (i.e., neuropil labels) and are typ
 
 Prompts for generation of Annotation graphs, typically require a common set of inputs to be specified:
 
-- **Metric**: The morphometric trait defining connectivy (cable length, no. of tips, etc.)
-- **Cutoff value**: Brain areas associated with less than this quantity are excluded from the diagram. E.g., if metric is "No. of Tips" and this value is 10, only brain areas targetted by at least 11 tips are reported
+- **Metric**: The morphometric trait defining connectivity (cable length, no. of tips, etc.)
+- **Cutoff value**: Brain areas associated with less than this quantity are excluded from the diagram. E.g., if metric is "No. of Tips" and this value is 10, only brain areas targeted by at least 11 tips are reported
 - **Deepest ontology** The highest ontology level to be considered for neuropil labels. As a reference, the deepest level for mouse brain atlases is around 10. Setting this value to 0 forces SNT to consider all depths
 
 Other types of specialized graphs are described in [Graph-based Analysis](#graph-based-analysis).
@@ -186,7 +186,7 @@ Other types of specialized graphs are described in [Graph-based Analysis](#graph
 
 <span id="dendrogram-viewer"></span>
 # Graph-based Analysis
-Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects. 
+Analyses based on [graph-theory](https://en.wikipedia.org/wiki/Tree_(graph_theory)) are better performed via the [scripting](/plugins/snt/scripting). However, SNT features a quite-capable _Graph Viewer_ that has many built-in options for handling graph objects.
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to customize the display vertices (shape and labels) and edges (shape and weight labels). Basic support for themes (including _dark_, _light_ and _formal_) are also supported. The _Graph Viewer_ canvas may be exported in several file formats, including HTML, PNG, and SVG.
 
@@ -233,7 +233,7 @@ Currently, _basic_ persistence homology descriptors can be computed using UI com
 
 # Delineation Analysis
 
-Delineations allow measuring proportions of recontructions within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Some of the questions that delineation analyses can answer include:
+Delineations allow measuring proportions of reconstructions within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Some of the questions that delineation analyses can answer include:
 
 - Do branching patterns of neurons change along strata (cell layers)?
 - Do branches near a lesion site differ from branches further away from it?
@@ -242,7 +242,7 @@ Delineations allow measuring proportions of recontructions within other structur
 Delineations are described in [Walkthroughs › Delineation Analysis](/plugins/snt/walkthroughs#delineation-analysis).
 
 # Root Angle Analysis
-Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or rootof the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
+Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or root of the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis) (see also [angular Sholl](./sholl#angular-sholl)). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
 
 {% include citation doi='10.1016/j.celrep.2019.04.097' %}
 
@@ -250,13 +250,110 @@ A root angle is defined as the angle between a neurite segment (defined centripe
 
 - Root angles are computed centripetally for every node in the arbor in centripetal sequence (from tips to root)
 
-- The distribution of root angles is fitted to a [von Mises distribution](https://en.wikipedia.org/wiki/Von_Mises_distribution), a specialized probability distribution that models angles/directions. von Mises can be considered a 'wrapped normal', or a circular analogue of the normal distribution, as it addresses the issue of "wrapping" that occurs when dealing with angles revolving around a circle where 0° and 360° (2π) are the same. 
+- The distribution of root angles is fitted to a [von Mises distribution](https://en.wikipedia.org/wiki/Von_Mises_distribution), a specialized probability distribution that models angles/directions. von Mises can be considered a 'wrapped normal', or a circular analogue of the normal distribution, as it addresses the issue of "wrapping" that occurs when dealing with angles revolving around a circle where 0° and 360° (2π) are the same.
 
 - [Centripetal bias](./metrics#root-angles-centripetal-bias), [Balancing factor](./metrics#root-angles-balancing-factor), and [Mean direction](./metrics#root-angles-mean-direction) are then computed from the von Mises fit
 
 The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-angle-analysis) in the main dialog, Reconstruction Viewer's [Analyze & Measure](/plugins/snt/reconstruction-viewer#analyze--measure) menu, or [template scripts](/plugins/snt/scripting#bundled-templates). The screenshot below depicts the output of the *Analysis › Root Angle Analysis* template script:
 
-{% include img align="fit" src="/media/plugins/snt/snt-root-angle-analysis.png" %}
+{% include img align="center" src="/media/plugins/snt/snt-root-angle-analysis.png" caption="Root Angle Analysis outputs."%}
+
+
+# Growth Analysis
+
+Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matches across time frames, as detailed in. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
+
+{% capture timelapse-demo%}
+For parameter validation and configuration comparisons, load the _Hippocampal neuron (DIC timelapse)_ demo dataset ({% include bc path='File|Load Demo Dataset...' %})
+{% endcapture %}
+{% include notice icon="info" content=timelapse-demo %}
+
+## Prerequisites
+
+- **Time-matched paths**: Paths must be tagged using the {% include bc path='Match Paths Across Time...'%} command first, so that all paths in the timelapse sequence associated with the same neurite are tagged with a common neurite label, e.g., "{neurite #1}", "{neurite #2}", etc, as described in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough.
+- **Sufficient time points**: At least 3 time points per neurite for meaningful analysis. Monitoring changes in extension angles tipically requires at least 4 time points
+
+Data generated outside SNT can also be analyzed:
+1. Import all the reconstruction files associated with the time series
+2. Apply "{neurite #}" tags using {% include bc path='Match Paths Across Time...'%}
+3. Run {% include bc path='Growth Analysis...'%}
+{% include img align="center" src="/media/plugins/snt/snt-growth-analysis.png" caption="Growth Analysis outputs."%}
+
+## Classification Algorithm
+
+The {% include bc path='Growth Analysis...'%} command classifies growth phases based on instantaneous growth rates relative to the overall average growth rate of each neurite. Algorithmically, the classification works as follows:
+
+1. The overall growth rate of a neurite is calculated to establish a baseline
+
+2. A moving window "glides" along the time sequence to identify phase transitions in growth data. The detection combines three different detection methods to more robustly identify where changes in growth patterns occur. These include:
+  - _Mean shift detection_: Aimed at detecting sudden changes in average growth rate. This is usually effective at detecting Lag → Rapid; Rapid → Plateau; and Steady → Retraction transitions (see below)
+  - _Variance change detection_: Detects changes in growth rate variability, e.g., transitions from stable to variable growth
+  - _Trend change detection_: Detects changes in growth acceleration/deceleration patterns
+
+3. Growth rates are then split into five growth categories or phases:
+
+|------------|--------------------------------------------------------------|-------------------------------------|
+| Phase      | Definition                                                   | Interpretation                      |
+|------------|--------------------------------------------------------------|-------------------------------------|
+| Retraction | Phase rate less than *-min%* of overall growth rate          | Active shrinkage                    |
+| Lag        | Phase rate *≤ min%* of overall growth rate                   | Slow growth                         |
+| Plateau    | Absolute value of phase rate < *min%* of overall growth rate | Minimal net growth                  |
+| Steady     | Phase rate within *min% - max%* of overall growth rate       | Moderate growth                     |
+| Rapid      | Phase rate *> max%* of overall growth rate                   | Fast extension                      |
+|------------|--------------------------------------------------------------|-------------------------------------|
+
+With _overall growth rate_, _phase rate_, and _thresholds_ defined as:
+
+|---------------------|------------------------------------------------------------------|
+| Term.               | Definition                                                       |
+|---------------------|------------------------------------------------------------------|
+| Overall growth rate | The slope of the linear regression fitted to the entire time series of length measurements. It represents the average rate of length increase over the complete observation period |
+| Phase rate          | Average of instantaneous rates within phase boundaries, with *Instantaneous rate* defined at each time point _t_ as _(length[t+1] - length[t]) / (time[t+1] - time[t])_ |
+| *min%* and *max%* thresholds | The cutoff thresholds ensure that e.g., fast-growing neurites aren't misclassified as always "Rapid" or slow-growing neurites aren't misclassified as always "Lag". The *min%* cutoff represents the noise floor for growth measurements, while *max%* the cutoff threshold for significant acceleration. Cutoff thresholds can be calculated globally or *relative to each neurite's overall growth rate*  |
+|------------|------------------------------------------------------------------|
+
+
+## Outputs
+
+1. **Growth Phase Timeline**: Temporal visualization of growth phases. This is a timeline chart showing the temporal progression of growth phases for each neurite. Each neurite is represented as a horizontal row with color-coded segments indicating different growth phases over time
+
+2. **Length Over Time**: A scatter plot with trend lines showing the growth trajectories of individual neurites over time. Each neurite is represented by a colored line connecting measured length values at different time points
+
+3. **Phase Distributions**: Statistical summary of phase types. These are two donut (ring) plots summarizing growth phases across all analyzed neurites. The "Growth Phases" plot summarizes the relative frequency of different phases, while the "Growth Phase Durations" plot summarizes cumulative durations
+
+4. **Angular Velocity Over Time**: Angular velocity is the rate of change of angular position over time. It measures how quickly a neurite's extension direction is changing over time. This type of data informs on how often a neurite changes direction, and how stable their directed growth is
+
+5. **Extension Direction Over Time**: Absolute extension angles of neurites across time
+
+6. **Summarized Measurements**: Tabular values of plotted data
+
+
+## Input Parameters
+<img align="right" src="/media/plugins/snt/growth-analysis-prompt.png" title="Growth Analysis... prompt" width="450px" alt="Growth Analysis... prompt" />
+The algorithm has several adjustable parameters that can be set in the "Growth Analysis..." prompt:
+
+- **Threshold for 'Lag/Plateau' phase (%)**: Defines the minimum growth rate threshold for classifying growth phases. Growth rates below this threshold are classified as _Lag_ or _Plateau_. Calculated as a percentage of each neurite's overall linear growth rate. Lower values allow for detection of subtle growth variations, while high values detect only clearly distinct slow phases. Range: 10% - 50% (default is 30%)
+
+  E.g., _For a neurite with an overall growth rate of 2.0 μm/m: With a 30% threshold, growth below 0.6 μm/m (2.0 x 30%) would be classified as Lag/Plateau_.
+
+- **Threshold for 'Rapid' phase (%)**: Defines the minimum growth rate multiple for classifying _Rapid_ growth phases. Growth rates above this multiple of the overall rate are classified as rapid growth. Calculated as a percentage of each neurite's overall linear growth rate. Lower values allow for detection of moderate growth accelerations, while high values detect only very fast accelerations. Range: 110% - 300% (default is 150%)
+
+  E.g., _For a neurite with an overall growth rate of 2.0 μm/m: With a 150% threshold, growth above 3.0 μm/m (2.0 x 150%) would be classified as 'Rapid'_.
+
+- **Threshold calculation**: Either "Global" or "Per-neurite". If global, thresholds are calculated relative to mean growth rate of _all_ neurites. If "Per-neurite": Thresholds are calculated relative to each neurite's individual growth rate
+
+- **Phase detection sensitivity**: Sensitivity ranges from 0.05 to 1.0 (default value is 0.5). Lower values correspond to higher sensitivity, i.e., more phase transitions being detected, and higher values encoding low sensitivity. Higher values allow more phases to be detected. Lower values detect fewer, longer phases. Increase this parameter if too many short phases are being detected. Decrease it if obvious phase transitions are being missed.
+
+- **Window size (no. of frames)**: Controls the size of the "moving window" of the [phase detection algorithm](#classification-algorithm). Higher values provide more stable detection with fewer phases, while lower values detect more detailed changes but may include spurious transitions. Range 2-40 frames (default is 3)
+                    
+- **Threshold for retraction length (%)**: Defines the minimum percentage decrease in neurite length required to classify a phase as a _retraction event_. It is calculated at the start of the potential retraction. Increase this threshold if spurious "retraction" classifications occur. Range: 1% - 50% (default is 5%)
+
+  E.g., _A neurite is 100 μm long at a given frame and decreases its length to 94μm in the subsequent frame. That's a 6% reduction: With a 5% threshold, this change would be classified as "retraction"_.
+
+- **Filtering options**: Filtering options are optional but may be useful for noisy datasets:
+  - **Minimum length**: Neurites that never reach this length throughout the timelapse are ignored. It allows very short paths to be excluded from analysis
+  - **Minimum duration**: Neurites extending for less than this duration are ignored. Allows short-lived neurites to be excluded from analysis
+
 
 # Other Specialized Analyses
 See [SNT Scripting](/plugins/snt/scripting), as well as script templates demonstrating a range of analysis possibilities.

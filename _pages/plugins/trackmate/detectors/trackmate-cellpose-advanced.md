@@ -64,10 +64,13 @@ It will affect the smoothness of the resulting segmentation and the computing ti
 
 _By default in the non-advanced option, this parameter is set to `True`._
 
-
 #### Parameters for 3D stacks
 
-Starting from version 8, TrackMate can also handle 3D stack with cellpose.
+{% include notice icon="warning"
+  content="This feature is not released yet! 
+  It depends on the future version of TrackMate (the forthcoming v9), to be released late 2026 (if everything goes well)." %}
+
+Starting from version 9, TrackMate can also handle 3D stack with cellpose.
 Cellpose offers two version of "3D" segmentation:
 
 - `2D+Z` stitching: cells are segmented in 2D in each z-slice then the 3D volume is reconstructed by merging together segmented cells that overlap enough between neighboring slices.
@@ -121,8 +124,11 @@ TrackMate automatically calculates the anisotropy as the ratio between the scale
 
 ## Tutorial
 
-
 ### Detect and track cells in 3D from membrane staining
+
+{% include notice icon="warning"
+  content="This feature is not released yet! 
+  It depends on the future version of TrackMate (the forthcoming v9), to be released late 2026 (if everything goes well)." %}
 
 This tutorial guides you through the detection and tracking of cells in 3D using cellpose (version 2.0) and TrackMate (version 8).
 The dataset used in this tutorial was shared with us by Paul Palmquist-Gomes in Sigolène Meilhac's team (Institut Imagine/Institut Pasteur). 

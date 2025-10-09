@@ -13,12 +13,13 @@ update-site: Neuroanatomy
 
 
 {% capture text%}
+{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
+
 Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and most do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the *Trace/Fill on Secondary <u>L</u>ayer* checkbox, one only needs to press its highlighted letter, i.e., {% include key key='L' %}.
 
-{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
 _Typically_, when {% include key keys='ctlcmd' %} is pressed, hotkeys are not intercepted by SNT. E.g., During a tracing session pressing {% include key key='N' %} triggers <u>N</u>o* in the interactive prompt while {% include key keys='ctlcmd|N' %} will trigger IJ's built-in command {% include bc path='File|New|image...'%}.
 
-If you are not familiar with SNT commands the [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift|P' %}) is the fastest way to access actions and discover their respective shortcuts!
+The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift|P' %}) is the fastest way to access actions and discover their respective shortcuts!
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
@@ -41,6 +42,7 @@ If you are not familiar with SNT commands the [Command Palette](manual#command-p
 | {% include key key='Spacebar' %} | Activates the Pan (Hand) tool (IJ default) |
 | {% include key key='>' %} / {% include key key='<' %} | Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT oder of "&gt;" and "&lt;"* choice set in IJ's {% include bc path='Edit|Options|Misc...'%} prompt (IJ default) |
 | {% include key key='enter' %}    | Shuttles the window focus between the tracing image and the SNT window |
+| {% include key key='Ctrl|Tab' %} {% include key key='Ctrl|Shift|Tab' %} | Activates the next/previous tab in the main SNT window |
 
 
 ### Path Handling
@@ -49,6 +51,7 @@ If you are not familiar with SNT commands the [Command Palette](manual#command-p
 | {% include key key='2' %} | Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices |
 | {% include key key='3' %} | Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame |
 | {% include key key='G' %} | Selects the nearest path to the mouse cursor. Holding {% include key keys='Shift|G' %} adds the path nearest to the mouse cursor to the current list of selected paths. *Mnemonic: <u>G</u>roup paths around cursor.* Note that Paths can only be edited one at a time, and thus {% include key keys='Shift|G' %} is disabled in *Edit Mode* |
+| {% include key key='H' %} | Temporarily <u>H</u>ides alls paths/annotations while being pressed |
 
 
 ### Tracing
@@ -122,7 +125,7 @@ The most important shortcuts for the [Legacy 3D viewer](/plugins/snt/walkthrough
 | {% include key keys='Shift|Left Drag' %} | When Hand tool is active: Pan (translation) |
 | {% include key keys='Left Drag' %} | When Hand tool is active: Rotation |
 
-In addition, _most_ shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) can be used in the 3D Viewer. When a key stroke is not recognized by the 3D Viewer, a mesage is displayed in the [status bar](/plugins/snt/manual#status-bar) of the main dialog. 
+In addition, _most_ shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) can be used in the 3D Viewer. When a key stroke is not recognized by the 3D Viewer, a mesage is displayed in the [status bar](/plugins/snt/manual#status-bar) of the main dialog.
 
 
 ### Other

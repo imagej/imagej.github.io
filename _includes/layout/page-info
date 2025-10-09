@@ -1,9 +1,8 @@
 {%- assign url = page.url | replace: ".html", "" -%}
 {%- assign mw = page.mediawiki -%}
 <div class="page-info"> 
-  <a href="https://github.com/imagej/imagej.github.io/commits/main/_pages{{url}}.md">Page history</a>
-  <a href="https://github.com/imagej/imagej.github.io/edit/main/_pages{{url}}.md">Edit this page</a>
-  <a href="/editing">How do I edit this website?</a>
+  <div>
+    <a href="https://github.com/imagej/imagej.github.io/commits/main/_pages{{url}}.md"><button>Page history</button></a>
 {%- if mw and mw != 'NONE' -%}
   <br>
   {%- if mw.first -%}
@@ -16,6 +15,11 @@
   {%- else -%}
   {%- endif -%}
 {%- endif -%}
+  </div>
+  <div>
+    <a href="https://github.com/imagej/imagej.github.io/edit/main/_pages{{url}}.md"><button>Edit this page</button></a>
+    <br><a href="/editing">How do I edit this website?</a>
+  </div>
 </div>
 
 {%- comment -%}

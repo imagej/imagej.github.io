@@ -157,11 +157,11 @@ The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 
 - Select *New with image...* from the *Viewer* drop-down menu and press *Apply*. Note that you can re-use existing viewers you may have open by choosing their window titles from the drop-down menu. NB: Selecting *New without image* would only allow you to look at reconstructions without the underlying signal.
 
-- Large images may require downsampling for performance reasons. Once you *Apply* the viewer choice, a prompt will appear asking you to choose the downsampling factor for the image. E.g., a value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction. Note that while downsampling speeds up rendering it often results in signal smoothing. Volumes should look crisper without downsampling. Original pixels are used with a resampling factor of 1. 
+- Large images may require downsampling for performance reasons. Once you *Apply* the viewer choice, a prompt will appear asking you to choose the downsampling factor for the image. E.g., a value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction. Note that while downsampling speeds up rendering it often results in signal smoothing. Volumes should look crisper without downsampling. Original pixels are used with a resampling factor of 1.
 
 - Once the downsampling factor is specified, the viewer window will appear with the currently open image (i.e., the current Channel/Frame being traced as specified in the [Data Source](/plugins/snt/manual#data-source) widget).
 
-- Options in the _Mode_ drop-down menu specify how paths should be rendered. There are three possibilities: 1) *Lines*: Only the centerline of paths is displayed; 2) *Lines and disks*: Centerline of paths is displayed with disks at each node depicting the node radius;  and 3) *Surface reconstruction*: Paths are dispayed as surface meshes.
+- Options in the _Mode_ drop-down menu specify how paths should be rendered. There are three possibilities: 1) *Lines*: Only the centerline of paths is displayed; 2) *Lines and disks*: Centerline of paths is displayed with disks at each node depicting the node radius;  and 3) *Surface reconstruction*: Paths are displayed as surface meshes.
 
 {% include notice highlight-color="#67A1FE" background-color="#EBF2F8" content="It is recommended to render color coded paths in either [Reconstruction Plotter](./manual#reconstruction-plotter) or [Reconstruction Viewer](./reconstruction-viewer) because the algorithms that allow paths to be [mapped to lookup tables ](./manual#color-mapping-) have not been ported to the Legacy 3D Viewer." %}
 
@@ -280,7 +280,7 @@ NB:
   - Create a freehand area ROI around the path(s) of interest
   - Run ImageJ's {% include bc path='Process|Find Maxima...' %}. Detection will be restricted to freehand selection
 
-- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROis for future reference
+- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROIs for future reference
 
 - ImageJ has several ways to expedite handling of multipoint ROIs:
   - {% include key key='left click' %} on a point and drag to move it
@@ -300,9 +300,9 @@ You can use one of two demo datasets ({% include bc path='File|Load Demo Dataset
 
 {% include img align="right" name="Drift correction" src="/media/plugins/snt/snt-timelapse-drift-correction.png" caption="**Mitigation of motion artifacts**. Left: Projection of inter-frame differences across the original time-lapse sequence. Right: Inter-frame differences of the same time-lapse after 3D drift correction. Neurite displacements are color coded with warmer hues indicating higher motility. Note how lateral motion around the soma and along the longest extending neurite (lower left) has been minimized. Hue ramp has been scaled to the smallest (min) and largest (max) displacements in the sequence." %}
 
-The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts. 
+The first step is to ensure that the time-series is not affected by artifactual motion. Fiji features a host of registration tools to mitigate such artifacts. Arguably, one of the most intuitive of such tools is [Correct 3D Drift](/plugins/correct-3d-drift) because it can correct abrupt displacements as well as slow drifts.
 
-SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well as existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highligths the type of mitigation you should expect.
+SNT features {% include bc path='Scripts|Time-lapses|Apply 3D Drift Corrections...' %}, a convenience wrapper for _Correct 3D Drift_ that applies drift correction to the image being traced, as well as existing paths. However, if your time-lapse video is rather large it is recommended that you run _Correct 3D Drift_ (or alternative registration routine) _before_ loading the image in SNT to avoid running out of RAM. The illustration on the right highlights the type of mitigation you should expect.
 
 Once undesired motion has been mitigated:
 
@@ -316,13 +316,13 @@ Once undesired motion has been mitigated:
 
    - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset...' %})
 
-4. Run Path Manager's {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
+4. Run [Path Manager](./manual#path-manager)'s {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
 
    <img align="right" src="/media/plugins/snt/snt-match-paths-across-time.png" title="MatchPath(s) Across Time... prompt" width="350" alt="MatchPath(s) Across Time... prompt" />
 
     - **Frame range** Only paths associated with these frames will be considered for matching. Range(s) (e.g. <tt>2-14</tt>), and comma-separated list(s) (e.g. <tt>1,3,20,22</tt>) are accepted. Leave empty or type <tt>all</tt> to consider all frames
 
-    - **Matching criteria** These are a series of conditions that matching paths must fulfill. Some require no further adjustments (e.g., _channel_, _path order_, _type tag_, _color tag_) while others have configurable settings. Criteria can be combined E.g., if _channel_ and _type tag_ are selected, paths need to share the same channel and the same type tag ('Axon', 'Dendrite', etc.) to be matched. 
+    - **Matching criteria** These are a series of conditions that matching paths must fulfill. Some require no further adjustments (e.g., _channel_, _path order_, _type tag_, _color tag_) while others have configurable settings. Criteria can be combined E.g., if _channel_ and _type tag_ are selected, paths need to share the same channel and the same type tag ('Axon', 'Dendrite', etc.) to be matched.
 
        The criteria with configurable settings are perhaps the most commonly used:
 
@@ -334,7 +334,10 @@ Once undesired motion has been mitigated:
       
     - NB: Note that any mistakes by the matching algorithm can be corrected by editing _neurite#_ tags manually
    
-5. Once paths have been matched across the time-lapse to common neurites, future analysis becomes simplified. {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} can be used to e.g. plot growth across time. {% include bc path='Time Profile...' %} includes the following options:
+5. Once paths have been matched to their neurites across the time-lapse sequence, future analysis becomes simplified.
+
+6. Use Either  {% include bc path='Analyze|Time-lapse Utilities|Grow Analysis...' %} or {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} analyze the data. The former is a very simple approach to summarize growth across time, while the latter is a comprehensive analysis tool.
+   {% include bc path='Time Profile...' %} includes the following options:
 
       - **Metric** the measurement to be profiled across time
 
@@ -342,9 +345,15 @@ Once undesired motion has been mitigated:
 
       - **Output** Whether a plot, a table or both should be created
 
-<div align="center">
-  <img  src="/media/plugins/snt/snt-time-profile.png" title="Time Profile... (v4.3.0)" width="500" />
-</div>
+7. For more complete, thorough measurements, use [Grow Analysis](./analysis/growth-analysis): In addition to growth trajectories, this option classifies motion growth phases, including elongation and retraction events, phase transitions, angular velocity changes, and directional steering.
+
+
+{% include gallery align="fill" content=
+"
+/media/plugins/snt/snt-time-profile.png | Time Profile... (v4.3.0)
+/media/plugins/snt/snt-growth-analysis.png | [Growth Analysis](/plugins/snt/analysis#growth-analysis)
+"
+%}
 
 
 # Filling
@@ -370,7 +379,7 @@ First, select the one or more paths that you want to fill out from in the Path M
 
 The filler continues to explore the image until you click "Pause" or "Stop" in the dialog, or until all the image has been fully explored. However, the fill which is shown only includes those points up to a certain threshold distance from the path. Note that this "distance" doesn't mean a real physical distance, but instead a 'likelihood-distance': a measure which takes into account the intensity values of the pixels which must be [passed through when moving away from the path](#iii-understanding-fill-distances-and-distance-threshold). Information about the current threshold and the progress of the search is shown in the dialog. Note that if your image is rather small, the entire image may be fully explored before you have time to interact with prompt.
 <img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />
-The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". 
+The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet".
 
 The _Search status_ shows your current [threshold distance](#iii-understanding-fill-distances-and-distance-threshold): so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and highlighted in green in the image). The "Max. explored distance:" shows the maximum distance from the path that has been completely explored.
 
@@ -388,9 +397,9 @@ We will assume that you want to use the first of these approaches:
 
 - It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for.
 
-- Since the solid green fill obscures the intensity value of the points in the fill, you may want to activate the _Transparent overlay_ checkbox. Note that this _could_ slow down filling, although the performance hit is usually negligible. 
+- Since the solid green fill obscures the intensity value of the points in the fill, you may want to activate the _Transparent overlay_ checkbox. Note that this _could_ slow down filling, although the performance hit is usually negligible.
 
-- As you can see in the middle image, the threshold is set too far from the path, since there are many background voxels under the green fill, as well as voxels on different paths than those of interest. Experiment with clicking on different locations closer to the path in order to adjust the threshold until you are satisfied with thr result. You might end up with something like the rightmost image:
+- As you can see in the middle image, the threshold is set too far from the path, since there are many background voxels under the green fill, as well as voxels on different paths than those of interest. Experiment with clicking on different locations closer to the path in order to adjust the threshold until you are satisfied with the result. You might end up with something like the rightmost image:
 
 <div align="center">
   <img src="/media/plugins/snt/snt-zoomed-filling-2.png" title="Fill, opaque" width="250" alt="Fill, opaque" />
@@ -413,7 +422,7 @@ While adjusting the _distance threshold_ is the single most effective way to imp
 
 - **Adopt secondary layers**: Currently, the filler only looks at pixel intensities, and thus likelihood is a simple comparison of gray value intensities, but note that other _features_ can be used by the algorithm, when a [secondary tracing layer](/plugins/snt/manual#tracing-on-secondary-image-layer) is used. E.g., If the filling occurs in a [Tubeness](/plugins/tubeness) flavor of the image, then distances reflect likelihoods of association with tube-like structures.
 
-- **Optimize center-lines**: Since center-line pixes function as seeds, ensuring they follow closely the curvatures of the fluorescence signal using [Path fitting](/plugins/snt/manual#refinefit) may improve the result
+- **Optimize center-lines**: Since center-line pixels function as seeds, ensuring they follow closely the curvatures of the fluorescence signal using [Path fitting](/plugins/snt/manual#refinefit) may improve the result
 
 ### IV. Completing the Fill
 
@@ -423,7 +432,7 @@ If the search is still active, you might as well click "Pause" so halt explorati
 
 - Discard the fill by either clicking "Cancel/Discard" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete"
 
-### V. Exporting 
+### V. Exporting
 
 - The "Export" button provides several export options, including:
 
@@ -488,7 +497,7 @@ ROIs generated programmatically or in bulk outside SNT can be applied in a singl
 
 
 ## Creating Delineations from Atlas Annotations
-Delineations can also be created from [neuropil annotations](/plugins/snt/analysis#atlas-based-analysis) using the _Import Assignments from Atlas Annotation_ option from the Options (gear) menu. In this case delineations are created from selected brain compartments associated with the cell(s) being analyzed. Note that this requires cells to be tagged by atlas annotations. Currently only cells downloaded directly from the MouseLight database fullfill this criterion.
+Delineations can also be created from [neuropil annotations](/plugins/snt/analysis#atlas-based-analysis) using the _Import Assignments from Atlas Annotation_ option from the Options (gear) menu. In this case delineations are created from selected brain compartments associated with the cell(s) being analyzed. Note that this requires cells to be tagged by atlas annotations. Currently only cells downloaded directly from the MouseLight database fulfill this criterion.
 
 
 ## Editing Delineations
@@ -511,10 +520,72 @@ In addition to defined delineations, plots and tables may include two other cate
 
 - _Non-delineated_: This category corresponds to all the path sections that remained in-between or outside delineations. _Non-delineated_ sections are labeled by [outside color](#editing-delineations)
 
-- _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors 
+- _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors
 
 {% include notice icon="info" content="Topological constraints may not allow certain metrics to be computed for a particular delineation. E.g., a metric that requires a [graph-theoretic tree](./analysis#graph-based-analysis) may not be computed for a delineation defined by a non-contiguous ROI." %}
 
+
+# Detecting Crossovers
+
+A crossover is a spot where at least two neurites pass very close to each other in space (so they may look like they intersect in the image) but they are not connected in the reconstructed graph (i.e., there is no shared node / true topological join). Identification of crossover sites is thus useful to disambiguate overlaps between neurites and spot possible tracing mistakes, such as missed branch-points or false merges.
+
+{% include img align="center" src="/media/plugins/snt/snt-crossover.svg" caption="Overview of a crossover between two neurites.<br>Left: Seem from top, the two neurites seem to intersect. Right: rotation to front view reveals that the two paths are juxtaposed in the XZ plane." %}
+
+
+## Algorithm
+
+Crossover events between two paths, _Path A_ and _Path B_, are detected as follows:
+1. Seeds:<br>
+    All tracing nodes from both paths plus segment midpoints are used as seed points (midpoints help catch “T‑like” geometries where a node lies near the middle of another path’s segment). Midpoints are flagged so they can be treated specially later
+2. Proximity mining:<br>
+    A uniform 3‑D grid is built with cell size equal to the _proximity radius_. For each seed, the 27‑cell neighborhood (the seed’s cell ± 1 in x/y/z) is queried; candidate pairs are kept if their Euclidean distance ≤ _proximity_ and they satisfy a series of optional criteria
+3. Candidate grouping:<br>
+    Candidate pairs are grouped by unordered (_Path A_, _Path B_) pairs, then sorted by index (_iA_, _iB_) and deduplicated. Each group is split into monotonic "runs". A run is accepted if its length is within a specified cutoff, or if it is a single‑pair run that touches an endpoint
+4. Geometric verification:<br>
+    For each accepted run, all corresponding segment pairs are examined: the closest points and distances between segments are computed, as well as an orientation‑invariant approach angle (0–90°) from local tangents. The center of the crossover event is the mean of closest‑point midpoints; the median distance and median angle summarize the run. Optional angle thresholds can be applied
+5. Merging:<br>
+    Nearby events (centers within _proximity_) are merged: the center is averaged, participants are unioned, index windows are merged, the distance becomes the minimum of medians, and the angle becomes the mean of medians
+6. Validation:<br>
+    A final post‑hoc filter keeps an event only if at least one path node from a participant path is near the event center. This removes spurious “floating” events
+
+## Obtaining Crossover Locations
+
+From the GUI, the easiest way to list crossover events is to use the [Bookmark option](./manual#bookmark-menu) in the [Navigator Toolbar](./manual#navigation-toolbar). For advanced detections, [scripting](./scripting) is advised.
+
+In a script, detection settings are specified in a _Config_ object, example:
+
+{% highlight java %}
+// groovy
+import sc.fiji.snt.util.CrossoverFinder
+
+cfg = new CrossoverFinder.Config()
+    .proximity(2.0) // The Neighborhood radius [real‑world units (e.g., µm)] used 1) for the coarse grid query during candidate mining, and 2) to merge nearby events
+    .thetaMinDeg(0.0) // Minimum approach angle (0–90°) required to accept an event. Use 10–20° to suppress nearly parallel neurites
+    .minRunNodes(2) // Minimum length of a “near‑pair run”. Neurites need to have at list this no. of nodes at the crossover site for it to be detected
+    .sameCTOnly(true) // Only compare paths with the same channel and frame?
+    .includeSelfCrossovers(false) // Allow detections within the same neurite? Generally keep false
+    .includeDirectChildren(false) // Allow detections within a path and its direct child? Generally keep false
+    .nodeWitnessRadius(-1.0); // Post‑hoc filter: A crossover event is only kept if at least one participant path has an actual node (not a midpoint) within this radius of the event center. Default (-1) instructs proximity value
+{% endhighlight %}
+
+Once the config is defined, events can be detected from any collection of paths:
+
+
+{% highlight java %}
+// groovy
+import sc.fiji.snt.Tree
+
+tree = Tree.fromFile("path/to/a/swc/file.swc")
+paths = tree.list()
+
+var events = CrossoverFinder.find(paths, cfg)
+for (ev in events) {
+    System.out.printf("x=%.2fµm, y=%.2fµm, z=%.2fµm, angle=%.1f°, d=%.2fµm, paths=%d%n",
+        ev.x, ev.y, ev.z, ev.medianAngleDeg, ev.medianMinDist, ev.participants.size());
+    double[] xyzct = ev.xyzct(); // pixel-space + avg C/T
+    // Optional: create a bookmark or navigate to xyzct[0..2]
+}
+{% endhighlight %}
 
 # Generating *Filtered Images* in Bulk
 

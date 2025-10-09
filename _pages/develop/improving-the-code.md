@@ -31,7 +31,7 @@ Go to the library's repository (in this case https://github.com/fiji/VIB-lib) an
 
 ![](/media/develop/fork-github-tutorial.png)
 
-By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's master branch. *See [GitHub: how to fork a repository](https://help.github.com/articles/fork-a-repo) for more details.*
+By doing this, you will be duplicating the whole repository into your own GitHub account. This way you can freely work on the library with an identical version of the existing repository's main branch. *See [GitHub: how to fork a repository](https://help.github.com/articles/fork-a-repo) for more details.*
 
 ## Clone
 
@@ -93,7 +93,7 @@ Then click on the **Compare & Review button**:
 
 ![](/media/develop/github-compare-and-review-tutorial.png)
 
-After starting the review, you're presented with a review page where you can get a high-level overview of what exactly has changed between your branch and the repository's master branch. You can review all comments made on commits, identify which files changed, and get a list of contributors to your branch.
+After starting the review, you're presented with a review page where you can get a high-level overview of what exactly has changed between your branch and the repository's main branch. You can review all comments made on commits, identify which files changed, and get a list of contributors to your branch.
 
 Finally, when you're ready to submit your pull request, click **Create pull request**:
 
@@ -124,7 +124,7 @@ git rebase -i 6272a7bf
 If we aren't sure which commit to start from, we can just rebase over the entire branch:
 
 ```shell
-git rebase -i $(git merge-base --fork-point master)
+git rebase -i $(git merge-base --fork-point main)
 ```
 
 In our example, we run the first command and immediately Git launches our default text editor and open a file that details the commits in the range we've chosen:
@@ -201,7 +201,7 @@ git rebase --abort
 When the rebase process completes, we should see the following message in the command line:
 
 ```shell
-$ Successfully rebased and updated refs/heads/master.
+$ Successfully rebased and updated refs/heads/main.
 ```
 
 At this point, if we are happy with the rebase we should push the changes back to our remote branch:

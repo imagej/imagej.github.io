@@ -68,7 +68,7 @@ Assuming you are using [Maven](/develop/maven) to build the subproject:
 5.  Push the resultant history to the project's new repository:
 
 	```bash
-	git push -u origin master
+	git push -u origin main
 	```
 
 ## Change any online resources

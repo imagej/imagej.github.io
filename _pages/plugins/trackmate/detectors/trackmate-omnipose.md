@@ -78,6 +78,17 @@ pip install scipy==1.11.4
 pip install omnipose==1.0.6
 ```
 
+On lunux (Ubuntu)
+```sh
+mamba create -n omnipose-106 'python==3.9.18'
+mamba  activate omnipose-106
+pip3 install torch torchvision
+pip install natsort
+pip install scipy==1.11.4
+pip install omnipose==1.0.6
+omnipose
+```
+
 ### Troubleshooting "Found 0 spots" errors with pretrained models
 
 On some systems we have noticed that sometimes TrackMate returns 0 detections for the cellpose and omnipose detectors, even when the installation of these two programs worked correctly.

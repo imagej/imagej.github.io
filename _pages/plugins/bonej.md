@@ -10,6 +10,8 @@ extensions: ["mathjax"]
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentation is for the current BoneJ version available through the ImageJ [updater](/plugins/updater). Legacy documentation is provided for old versions (1.x) at [bonej.org](https://bonej.org/).
 
+GPU-accelerated extensions that run orders of magnitude (~100×) faster are being rolled out on a pay-for-play basis in the new `bonej-plus` package. Functionality is similar to the CPU version, with the primary current limitation being a maximum data size of 1 Gpx (c. 1024³ pixels) per image. Where a BoneJ+ GPU-accelerated extension exists, it's marked below with **BoneJ+** and you can find it in the *Plugins>BoneJ>Plus* menu. Payment is managed through purchasing a bean token from [bonej.org/shop](https://bonej.org/shop) and entering it into the token box at *Plugins>BoneJ>Plus>Check Token*. Drop us a line at bonej-at-bonej.org for a coupon to get a free token to try out BoneJ+.
+
 If you use BoneJ in your work please [cite it](#citation).
 
 {% include citation %}
@@ -28,6 +30,10 @@ If you use BoneJ in your work please [cite it](#citation).
 
 After the downloads have finished, close and restart Fiji.
 
+BoneJ+ will also be installed by the updater by following the above steps. You will need an OpenCL environment and suitable GPU to run BoneJ+ plugins. [NVIDIA]([url](https://developer.nvidia.com/opencl)), [AMD]([url](https://rocm.docs.amd.com/en/latest/)) and [Intel]([url](https://www.intel.com/content/www/us/en/developer/articles/tool/opencl-drivers.html#proc-graph-section)) GPUs on Windows and Linux are known to work. OpenCL support is provided by GPU drivers, which you will need to install following instructions at the hardware vendors' sites. BoneJ+ uses OpenCL version 1.2, which is widely supported by GPUs manufactured since at least 2015, although [performance varies a great deal among GPUs]([url](https://www.videocardbenchmark.net/gpu_list.php)). 
+
+Once OpenCL is set up, and each time you make hardware changes in your system, you must run *Plugins>BoneJ>Plus>Check GPUs* to tell BoneJ which GPUs to use or ignore. Physically present but unsupported hardware is listed but greyed out - BoneJ+ automatically checks for feature compliance prior to running. BoneJ+ can use as many GPUs as you have installed in your system.
+
 ## Analyse skeleton
 
 Menu path {% include bc path="Plugins | BoneJ | Analyse skeleton" %}.
@@ -43,7 +49,7 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 
 Calls the latest version of [AnalyzeSkeleton](/plugins/analyze-skeleton).
 
-## Anisotropy
+## Anisotropy (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ | Anisotropy" %}.
 
@@ -218,7 +224,7 @@ Removes a range of slices from a stack, so that cropping in the Z direction is p
 
 A 3D image.
 
-## Ellipsoid factor
+## Ellipsoid factor (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ | Ellipsoid factor" %}.
 
@@ -638,7 +644,7 @@ The input image must be 3D, 8-bit and binary.
     -   **Duration**: time in seconds to complete purification
 -   **Purified image**: optionally in a new image window.
 
-## Skeletonise
+## Skeletonise (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ |Skeletonise" %}.
 

@@ -7,7 +7,7 @@ section: Extend:Development:Git
 
 In Git, a "ref" is a pointer into the commit graph (to visualize the commit graph, use the wonderful tool *gitk*.
 
-Branches are implemented as refs ("refs/heads/master"), tracking branches, too ("refs/remotes/origin/master"), and tags ("refs/tags/v1.0"). The convention is that tags do not move (advance), while branches do. These named refs are also referred to as *symbolic refs*.
+Branches are implemented as refs ("refs/heads/main"), tracking branches, too ("refs/remotes/origin/main"), and tags ("refs/tags/v1.0"). The convention is that tags do not move (advance), while branches do. These named refs are also referred to as *symbolic refs*.
 
 As long as they are unambiguous, you can abbreviate symbolic refs by omitting the "refs/heads/", "refs/remotes/" and "refs/tags/" prefixes.
 
@@ -17,7 +17,7 @@ Often, it is cumbersome to write out the whole 40-digit hex string, but you can 
 
 There are a few special refs, which are upper-case by default:
 
--   HEAD: this is a pointer to the current branch, i.e. it points to something like "refs/heads/master", usually.
+-   HEAD: this is a pointer to the current branch, i.e. it points to something like "refs/heads/main", usually.
 
 -   ORIG\_HEAD: when pulling or merging, ORIG\_HEAD refers to the previous revision.
 
@@ -36,7 +36,7 @@ This type of history is called *reflog*, and it is purely linear (at least until
 To see the reflog of a ref, just call
 
 ```shell
-~/fiji$ git reflog show master
+~/fiji$ git reflog show main
 ```
 
 or

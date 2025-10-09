@@ -3,7 +3,7 @@ title: Git topic branches
 section: Extend:Development:Git
 ---
 
-Often you want to try some new idea, or work on some new feature, without interfering with the master branch. That is where topic branches come in. You can easily switch back and forth between branches, so that you do not need to contribute a new feature with one big "monster" commit.
+Often you want to try some new idea, or work on some new feature, without interfering with the main branch. That is where topic branches come in. You can easily switch back and forth between branches, so that you do not need to contribute a new feature with one big "monster" commit.
 
 If you want to try something that might not work out, and you do not want anybody to know in such a case, you can keep the topic branches local.
 
@@ -47,18 +47,18 @@ $ git cherry-pick other-branch~2
 
 In this example, the third-last commit (the 2nd order ancestor) of other-branch's tip was referenced.
 
-Cherry-picking comes in handy if you fix something in a topic branch which needs fixing in the master branch, too:
+Cherry-picking comes in handy if you fix something in a topic branch which needs fixing in the main branch, too:
 
 ```bash
 # current branch: topic234  
 ... fix bug ...  
 # git commit -s <file>  
-$ git checkout master  
+$ git checkout main  
 $ git cherry-pick topic234  
 $ git checkout topic234
 ```
 
-In this example, after fixing the bug and committing the bug fix, you switched to the branch *master*, cherry-picked the most recent commit on the branch *topic234* and then switched back to the branch *topic234*.
+In this example, after fixing the bug and committing the bug fix, you switched to the branch *main*, cherry-picked the most recent commit on the branch *topic234* and then switched back to the branch *topic234*.
 
 ## Resolving conflicts
 
@@ -77,19 +77,19 @@ In case of a failed cherry-pick/rebase, this will pick up the appropriate commit
 
 # Merging/Rebasing topic branches
 
-If you finished a topic, and want to bring the changes to the branch *master*, just switch to that branch and merge the topic branch:
+If you finished a topic, and want to bring the changes to the branch *main*, just switch to that branch and merge the topic branch:
 
 ```bash
-$ git checkout master  
+$ git checkout main  
 $ git merge topic234
 ```
 
 Just like cherry-pick, a merge can fail with conflicts. See [Resolving conflicts](/develop/git/topic-branches#resolving-conflicts) for details.
 
-Instead of merging, you might want to rebase your topic branch on top of the current master. To see what the difference between a merge and a rebase is, consider this history (left is older than right):
+Instead of merging, you might want to rebase your topic branch on top of the current main. To see what the difference between a merge and a rebase is, consider this history (left is older than right):
 
 ```
-- A - B - C - D - master  
+- A - B - C - D - main  
     \  
       E - F - G - topic234
 ```
@@ -97,26 +97,26 @@ Instead of merging, you might want to rebase your topic branch on top of the cur
 after merge:
 
 ```
-- A - B - C - D - master^ - master  
+- A - B - C - D - main^ - main  
     \                      /  
       E - F - G - topic234
 ```
 
 after rebase:
 
-- A - B - C - D - master - E' - F' - G' - topic234
+- A - B - C - D - main - E' - F' - G' - topic234
 
-In other words, all the commits in topic234 were rewritten as if they were created on top of the current tip of the *master* branch.
+In other words, all the commits in topic234 were rewritten as if they were created on top of the current tip of the *main* branch.
 
 As you see, the branch *topic234* is rewritten, and does not share any interesting history with the former tip of the *topic234* branch. (You can access the former tip with *topic234@{1}*, see [Git\_reflogs](/develop/git/reflogs).)
 
-So, to incorporate your topic branch into the *master* branch with a rebase, you would do the following:
+So, to incorporate your topic branch into the *main* branch with a rebase, you would do the following:
 
 ```bash
 # current branch is topic234  
-$ git rebase master  
-$ git checkout master  
-# this will fast-forward, i.e. not create a merge commit, but just move master's tip to topic234's tip.  
+$ git rebase main  
+$ git checkout main  
+# this will fast-forward, i.e. not create a merge commit, but just move main's tip to topic234's tip.  
 $ git merge topic234
 ```
 
@@ -137,7 +137,7 @@ e0acf90... Add Fake, a specialized yet simple substitute for 'make'
 deadbee... fixup! Add Fake, a specialized yet simple substitute for 'make'
 ```
 
-where `0470894` is the tip of the *master* branch, and *deadbee* fixes some severe issue in the commit `e0acf90`, that should not have been committed as is.
+where `0470894` is the tip of the *main* branch, and *deadbee* fixes some severe issue in the commit `e0acf90`, that should not have been committed as is.
 
 ```
 Note that the *fixup!* commit can be made easily by calling `git commit --fixup <commit-to-fixup>`.
@@ -145,9 +145,9 @@ Note that the *fixup!* commit can be made easily by calling `git commit --fixup 
 To reorder the commits and merge the two commits (*squash* in Git terminology, as *merge* already means to merge branches), call
 
 ```
-$ git rebase -i --autosquash master
+$ git rebase -i --autosquash main
 
-This will fire up an editor with a list of commits to be applied on top of *master*:
+This will fire up an editor with a list of commits to be applied on top of *main*:
 
 ```bash
 pick e0acf90 Add Fake, a specialized yet simple substitute for 'make'  

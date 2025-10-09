@@ -13,7 +13,7 @@ update-site: Neuroanatomy
 | Tool | Description | Comments |
 |------|-------------|----------|
 | [Spot Spine](/plugins/spot-spine) | Detection and count dendritic spines, segmentation of spine heads, and quantitative morphological measurements of spines | Under active development |
-| [BigTrace](/plugins/bigtrace) | Semi-automated tracing in 3D using BigVolumeViewer | Under active development |
+| [BigTrace](/plugins/bigtrace) | Semi-automated/automated tracing of unbranched structures using BigVolumeViewer | Under active development |
 | [NeuronJ](/plugins/neuronj) | Semi-automated tracing in 2D only | No longer maintained. SNT reads NDF files |
 
 
@@ -21,6 +21,8 @@ update-site: Neuroanatomy
 
 | Tool | Description |
 |------|-------------|
+| [HortaCloud](https://hortacloud.org/) | Cloud-based, open-source platform for collaborative reconstruction of long-range projection neurons from whole-brain light microscopy data. This is SNT's development team recommended tool for tracing [Terabyte-size datasets](./big-data) |
+| | |
 | [BICCN Tools](https://biccn.org/tools) | List of tools supporting NIH's Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN) |
 | [Blue Brain's Morphology Suite](https://github.com/BlueBrain/morphology-suite) | Blue brain's collection of tools (mostly Python) to build, analyze and visualize morphologies. Currently supported by the [Open Brain Institute](https://www.openbraininstitute.org/) |
 | [Cajal](https://cajal.readthedocs.io/en/latest/index.html#) | A Python package for the analysis of single-cell morphological data using  Gromov-Wasserstein (GW) distances |

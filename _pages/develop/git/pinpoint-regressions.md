@@ -64,7 +64,7 @@ git tag my-fix
 and go back to the branch you came from:
 
 ```shell
-git checkout master
+git checkout main
 ```
 
 If you are unsure which branch you came from, look at the [reflog](/develop/git/reflogs) first.
