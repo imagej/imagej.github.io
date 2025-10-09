@@ -28,7 +28,7 @@ To start the macro recorder, go to `Plugins > Macros > Record`:
 Every command you now access through ImageJ's menu will be recorded as a line of text in the macro recorder.
 
 > [!IMPORTANT]
-> Some commands will not be recorded, or not recorded correctly, but the vast majority of the functionality in ImageJ/FIJI's menus is macro-recordable.
+> The vast majority of the functionality in ImageJ/FIJI's menus is macro-recordable. Occasionally, some commands will not be recorded, or not recorded correctly. Please refer to the documentation and [image.sc](https://forum.image.sc/) in such cases.
 
 ## 1.2 Perform a simple workflow
 
