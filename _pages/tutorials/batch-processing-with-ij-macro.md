@@ -133,7 +133,7 @@ run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] +
 ```
 
 > [!TIP]
-> The `+` sign allows for concatenating strings, while using the `File.separator()` command takes care of differences in conventional file separator characters between operating systems. Enclosing a folder path or file name with squared brackets `[...]` ensures that they are read as a single string even in the presence of spaces.
+> The `+` sign allows for concatenating strings, while using the `File.separator()` command takes care of differences between operating systems in conventional file separator characters. Enclosing a folder path or file name with squared brackets `[...]` ensures that they are read as a single string even in the presence of spaces.
 
 ## 3.3 Close windows when we're done with them
 
@@ -243,7 +243,7 @@ setBatchMode(false);
 ```
 The `setBatchMode` statements cause ImageJ to enter, then exit, "Batch Mode", which suppresses image windows. This allows the macro to execute faster.
 
-# 5. Add comments
+# 5. Add Comments
 
 Adding comments to the macro will improve reusability both by others and our future selves. You can use the `//` sign before a line to add a comment in a Fiji macro: this will ensure the line is not executed. The macro with added comments would look like this:
 
