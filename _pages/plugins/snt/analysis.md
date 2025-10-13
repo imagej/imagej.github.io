@@ -261,7 +261,7 @@ The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-
 
 # Growth Analysis
 
-Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matches across time frames, as detailed in. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
+Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matches across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
 
 {% capture timelapse-demo%}
 For parameter validation and configuration comparisons, load the _Hippocampal neuron (DIC timelapse)_ demo dataset ({% include bc path='File|Load Demo Dataset...' %})

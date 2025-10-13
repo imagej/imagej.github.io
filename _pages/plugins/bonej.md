@@ -416,7 +416,7 @@ An 8-bit, binary 2D or 3D image. Hyperstacks are not supported.
 
 Reznikov, N et al. (2016), *Inter-trabecular angle: A parameter of trabecular bone architecture in the human proximal femur that reveals underlying topological motifs*, Acta Biomaterialia, 44: 65--72, [<doi:j.actbio.2016.08.040>](https://doi.org/10.1016/j.actbio.2016.08.040).
 
-## Thickness
+## Thickness (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ | Thickness" %}.
 

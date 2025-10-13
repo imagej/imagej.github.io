@@ -345,7 +345,7 @@ Once undesired motion has been mitigated:
 
       - **Output** Whether a plot, a table or both should be created
 
-7. For more complete, thorough measurements, use [Grow Analysis](./analysis/growth-analysis): In addition to growth trajectories, this option classifies motion growth phases, including elongation and retraction events, phase transitions, angular velocity changes, and directional steering.
+7. For more complete, thorough measurements, use [Grow Analysis](./analysis#growth-analysis): In addition to growth trajectories, this option classifies motion growth phases, including elongation and retraction events, phase transitions, angular velocity changes, and directional steering.
 
 
 {% include gallery align="fill" content=
