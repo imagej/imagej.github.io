@@ -53,6 +53,18 @@ It's possible to edit commands directly within the Macro Recorder, but it's prob
 ## 2.1 Save your macro and run it
 
 Give your macro a sensible name and save it by going to `File > Save As...` in the Script Editor. Now try running your macro by selecting `Run > Run` from the menu. Your macro should produce the same output as the series of commands you recorded earlier. The code in the image above is reproduced below should you wish to copy it:
+```javascript
+run("Bio-Formats Importer", "open=[C:/Users/barryd/Downloads/FrancisCrickInstitute-introduction-to-image-analysis-be5d061 (1)/FrancisCrickInstitute-introduction-to-image-analysis-be5d061/Data/idr0028/003003-10.tif] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+selectImage("003003-10.tif - C=0");
+run("Gaussian Blur...", "sigma=2");
+setAutoThreshold("Default dark");
+//run("Threshold...");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Watershed");
+run("Analyze Particles...", "exclude summarize");
+saveAs("PNG", "C:/Users/barryd/Downloads/FrancisCrickInstitute-introduction-to-image-analysis-be5d061 (1)/FrancisCrickInstitute-introduction-to-image-analysis-be5d061/Data/segmentation_masks/003003-10.tif - C=0.png");
+```
 
 ## 2.2 Generalise your macro
 
@@ -66,8 +78,8 @@ setOption("BlackBackground", false);
 run("Convert to Mask");
 run("Watershed");
 run("Analyze Particles...", "exclude summarize");
-output = getDirectory("Select output directory");
-saveAs("PNG", output + "segmentation_output.png");
+outputDir = getDirectory("Select Output Directory");
+saveAs("PNG", outputDir + "segmentation_output.png");
 ```
 There are three changes above:
 1. On the first line, the `open` argument that was previously passed to Bio-Formats has now been removed. As such, ImageJ will produce a File Open dialog, asking the user to specify which image they wish to open with Bio-Formats
@@ -77,6 +89,8 @@ There are three changes above:
 While this macro will now run on any image, it only allows us to process one image at a time, which is not ideal!
 
 # 3. Create a Loop to Run on Multiple Images
+
+The macro we have so far works on one image at a time, by asking the user to select it as input. To automate the analysis on multiple images in a folder, we will have to setup a `for` loop.
 
 ## 3.1 Enclose code within a `for` loop
 We can run our code multiple times, to process multiple images, by enclosing it in a `for` loop:
@@ -91,13 +105,13 @@ for (i = 0; i < 10; i++) {
 	run("Convert to Mask");
 	run("Watershed");
 	run("Analyze Particles...", "exclude summarize");
-	output = getDirectory("Select output directory");
-	saveAs("PNG", output + "segmentation_output.png");
+	outpuDir = getDirectory("Select output directory");
+	saveAs("PNG", outputDir + "segmentation_output.png");
 }
 ```
 However, there are a number of problems with the above code:
 1. The user is required to specify the input image and output directory on each iteration of the loop
-2. The loop only will always run exactly 10 times...
+2. The loop will always run exactly 10 times...
 3. ...which will result in a lot of image windows being opened
 4. The output image will have the same name for each iteration of the loop
 
@@ -110,13 +124,16 @@ Let's add some code before the `for` loop to get an input directory and obtain a
 ```javascript
 inputDir = getDirectory("Select Input Directory");
 images = getFileList(inputDir);
-output = getDirectory("Select output directory");
+outputDir = getDirectory("Select Output Directory");
 ```
 
 Now we need to update the command that runs the Bio-Formats Importer, such that it opens a different image on each iteration of the loop:
 ```javascript
 run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Composite rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
 ```
+
+> [!TIP]
+> The `+` sign allows for concatenating strings, while using the `File.separator()` command takes care of differences in conventional file separator characters between operating systems. Enclosing a folder path or file name with squared brackets `[...]` ensures that they are read as a single string even in the presence of spaces.
 
 ## 3.3 Close windows when we're done with them
 
@@ -128,7 +145,7 @@ The complete macro now looks like this...
 ```javascript
 inputDir = getDirectory("Select Input Directory");
 images = getFileList(inputDir);
-output = getDirectory("Select output directory");
+outputDir = getDirectory("Select Output Directory");
 
 for (i = 0; i < 10; i++) {
 	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
@@ -139,7 +156,7 @@ for (i = 0; i < 10; i++) {
 	run("Convert to Mask");
 	run("Watershed");
 	run("Analyze Particles...", "exclude summarize");
-	saveAs("PNG", output + "segmentation_output.png");
+	saveAs("PNG", outputDir + "segmentation_output.png");
 	close("*");
 }
 ```
@@ -147,7 +164,7 @@ for (i = 0; i < 10; i++) {
 
 ![Particle Analyzer summary output](../../media/tutorials/screenshot-particle-analyzer-summary-output.PNG)
 
-## 3.3 Run the loop required number of times
+## 3.3 Run the loop for the required number of times
 
 At present, the code within the `for` loop will always be executed exactly 10 times, regardless of how many images there are in the input directory. We can change this behaviour for placing something more meaningful in the conditional statement `i < 10`, such as:
 ```javascript
@@ -159,7 +176,7 @@ Here, the `lengthOf` command returns the length of the `images` array, so the `f
 
 Finally, in order to have a fully functional (if rudimentary) macro, we need the name of the segmentation output image to be updated on each iteration of the `for` loop - at present, an image with the name `segmentation_output.png` is repeatedly overwritten. We could modify the `saveAs` statement to include the current value of `i` in the filename as follows:
 ```javascript
-saveAs("PNG", output + "segmentation_output_" + i + ".png");
+saveAs("PNG", outputDir + "segmentation_output_" + i + ".png");
 ```
 This will result in output images being saved as:
 ```
@@ -170,13 +187,15 @@ segmentation_output_2.png
 ```
 To be more informative, we could include the input filename in the output image filename, as follows:
 ```javascript
-saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
 ```
+For an input image called `003003-10`, this command would return `segmentation_output_003003-10.png` as output name.
+
 The complete script now looks like this:
 ```javascript
 inputDir = getDirectory("Select Input Directory");
 images = getFileList(inputDir);
-output = getDirectory("Select output directory");
+outputDir = getDirectory("Select Output Directory");
 
 for (i = 0; i < lengthOf(images); i++) {
 	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
@@ -187,7 +206,7 @@ for (i = 0; i < lengthOf(images); i++) {
 	run("Convert to Mask");
 	run("Watershed");
 	run("Analyze Particles...", "exclude summarize");
-	saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+	saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
 	close("*");
 }
 ```
@@ -197,7 +216,7 @@ It's generally a good idea to keep the user informed of progress when code is ru
 ```javascript
 inputDir = getDirectory("Select Input Directory");
 images = getFileList(inputDir);
-output = getDirectory("Select output directory");
+outputDir = getDirectory("Select Output Directory");
 
 setBatchMode(true);
 
@@ -215,7 +234,7 @@ for (i = 0; i < lengthOf(images); i++) {
 	run("Convert to Mask");
 	run("Watershed");
 	run("Analyze Particles...", "exclude summarize");
-	saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+	saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
 	close("*");
 }
 print("\\Update:100% of images processed.");
@@ -224,37 +243,100 @@ setBatchMode(false);
 ```
 The `setBatchMode` statements cause ImageJ to enter, then exit, "Batch Mode", which suppresses image windows. This allows the macro to execute faster.
 
-# 5. Create a Dialog to Obtain User Input
+# 5. Add comments
+
+Adding comments to the macro will improve reusability both by others and our future selves. You can use the `//` sign before a line to add a comment in a Fiji macro: this will ensure the line is not executed. The macro with added comments would look like this:
+
+```javascript
+// Ask user for input directory and obtain file list
+inputDir = getDirectory("Select Input Directory");
+images = getFileList(inputDir);
+
+// Ask user for output directory
+outputDir = getDirectory("Select Output Directory");
+
+// Suppress image windows (not displayed to screen)
+setBatchMode(true);
+
+// Initialise progress update
+print("\\Clear");
+print("Found " + images.length + " files in " + inputDir);
+print("0% of images processed.");
+
+// Loop through images
+for (i = 0; i < lengthOf(images); i++) {
+
+	// Update progress
+	print("\\Update:" + (100.0 * i / images.length) + "% of images processed.");
+
+	// Open image with Bio-Formats (split channels)
+	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+
+	// Select the first channel
+	selectImage(1);
+
+	// Perform Gaussian blurring with sigma=2
+	run("Gaussian Blur...", "sigma=2");
+
+	// Threhold using the default algorithm
+	setAutoThreshold("Default dark");
+	setOption("BlackBackground", false);
+	run("Convert to Mask");
+
+	// Run Watershed to separate adjacent objects
+	run("Watershed");
+
+	// Measure morphological features
+	run("Analyze Particles...", "exclude summarize");
+
+	// Save segmentation mask
+	saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
+
+	// Close all images
+	close("*");
+}
+
+// Print message when the analysis is finished
+print("\\Update:100% of images processed.");
+
+// Turn off batch mode
+setBatchMode(false);
+```
+
+# 6. Create a Dialog to Obtain User Input
 
 As an alternative to the `getDirectory` statements used above, it is possible to create a more functional, self-contained dialog to receive input from the user.
 
-## 5.1 Specify inputs and outputs
+## 6.1 Specify inputs and outputs
 
 We can create and customise a [Generic Dialog](../../scripting/generic-dialog) to obtain a variety of different inputs from the user. We can also use this interface to provide instructions to the user. Let's begin with a simple dialog that prompts the user to specify input and output directories:
 
 ```javascript
+// Initialise variables
 var inputDir;
-var output;
+var outputDir;
 
+// Create dialog box
 Dialog.create("Batch Counting");
 Dialog.addDirectory("Input Directory:", inputDir);
-Dialog.addDirectory("Output Directory:", output);
+Dialog.addDirectory("Output Directory:", outputDir);
 Dialog.show();
 
+// Update variables with user input
 inputDir = Dialog.getString();
-output = Dialog.getString();
+outputDir = Dialog.getString();
 ```
 
 The code above does three things:
-1. Initialise two variables for the input and output directories. These can be initialised with specific file locations if desired (e.g. `var inputDir = "C:/Users/barryd";`)
+1. Initialise two variables for the input and output directories. In the example, these are initialised to empty variables, but we could add here specific file locations if desired (e.g. `var inputDir = "C:/Users/barryd";`)
 2. Create a dialog with two directory selection fields and buttons
-3. Obtain the specified input and output directories when the user closes the dialog by clicking `OK`. If he user clicks `Cancel`, the macro exits.
+3. Obtain the specified input and output directories when the user closes the dialog by clicking `OK`. If the user clicks `Cancel`, the macro exits.
 
 Running the macro now should produce the following dialog:
 
 ![Macro simple dialog](../../media/tutorials/screenshot-macro-dialog-1.png)
 
-## 5.2 Modifying parameters via a dialog
+## 6.2 Modifying parameters via a dialog
 
 In addition to specifying input and output directories, there are a range of other controls that can be added to a dialog. For example, we can add fields allowing the user to specify...
 1. a filter radius for Gaussian smoothing
@@ -263,23 +345,26 @@ In addition to specifying input and output directories, there are a range of oth
 
 Note that we can initialise the dialog with default values.
 ```javascript
+// Initialise variables
 var inputDir;
-var output;
+var outputDir;
 var gaussRad = 1.0;
 var thresholdMethod = "Default";
 var allThreshMethods = getList("threshold.methods");
 var nucleiIndex = 1;
 
+// Create dialog box
 Dialog.create("Batch Counting");
 Dialog.addDirectory("Input Directory:", inputDir);
-Dialog.addDirectory("Output Directory:", output);
+Dialog.addDirectory("Output Directory:", outputDir);
 Dialog.addNumber("Nuclear Channel:", nucleiIndex);
 Dialog.addNumber("Gaussian Filter Radius:", gaussRad);
 Dialog.addChoice("Threshold Method:", allThreshMethods);
 Dialog.show();
 
+// Update variables with user input
 inputDir = Dialog.getString();
-output = Dialog.getString();
+outputDir = Dialog.getString();
 nucleiIndex = Dialog.getNumber();
 gaussRad = Dialog.getNumber();
 thresholdMethod = Dialog.getChoice();
@@ -291,87 +376,221 @@ Running the macro will now produce a dialog that looks like this:
 
 ![Macro advanced dialog](../../media/tutorials/screenshot-macro-dialog-2.png)
 
-In order for the variables captured from the dialog to have any effect, we must modify the remainder of the code, placing the variables where they are needed:
+In order for the variables captured from the dialog to have any effect, we must modify the remainder of the code, placing the variables where they are needed.
+
+Note the following:
+1. The `selectImage` command now takes `nucleiIndex` as an argument
+2. The `run("Gaussian Blur...")` command now takes its `sigma` parameter from `gaussRad`
+3. `setAutoThreshold` uses whatever method is specified by `thresholdMethod`
+
 ```javascript
+// Obtain file list
 images = getFileList(inputDir);
 
+// Suppress image windows (not displayed to screen)
 setBatchMode(true);
 
+// Initialise progress update
 print("\\Clear");
 print("Found " + images.length + " files in " + inputDir);
 print("0% of images processed.");
 
+// Loop through images
 for (i = 0; i < lengthOf(images); i++) {
+
+	// Update progress
 	print("\\Update:" + (100.0 * i / images.length) + "% of images processed.");
+
+	// Open image with Bio-Formats (split channels)
 	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+
+	// Select the channel containing nuclei
 	selectImage(nucleiIndex);
+
+	// Perform Gaussian blurring with specified sigma
 	run("Gaussian Blur...", "sigma=" + gaussRad);
+
+	// Threhold using the specified algorithm
 	setAutoThreshold(thresholdMethod + " dark");
 	setOption("BlackBackground", false);
 	run("Convert to Mask");
+
+	// Run Watershed to separate adjacent objects
 	run("Watershed");
+
+	// Measure morphological features
 	run("Analyze Particles...", "exclude summarize");
-	saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+
+	// Save segmentation mask
+	saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
+
+	// Close all images
 	close("*");
 }
+
+// Print message when the analysis is finished
 print("\\Update:100% of images processed.");
 
+// Turn off batch mode
 setBatchMode(false);
 ```
-Note the following:
-1. The `selectImage` command now takes `nucleiIndex` as an argument
-2. The `run("Gaussian Blur...")` command now takes it's `sigma` parameter from `gaussRad`
-3. `setAutoThreshold` uses whatever method is specified by `thresholdMethod`
 
-# 6. Installing the Macro
+The full macro, including the dialog box, now looks like this:
+```javascript
+// Initialise variables
+var inputDir;
+var outputDir;
+var gaussRad = 1.0;
+var thresholdMethod = "Default";
+var allThreshMethods = getList("threshold.methods");
+var nucleiIndex = 1;
 
-It is possible to ["install" macros in ImageJ](https://imagej.net/scripting/macro#installing-macros), such that they appear on the Plugins menu. In order to do so, we first need to wrap our macro in `macro` blocks. With the `macro` blocks added, our complete macro now looks as follows:
+// Create dialog box
+Dialog.create("Batch Counting");
+Dialog.addDirectory("Input Directory:", inputDir);
+Dialog.addDirectory("Output Directory:", outputDir);
+Dialog.addNumber("Nuclear Channel:", nucleiIndex);
+Dialog.addNumber("Gaussian Filter Radius:", gaussRad);
+Dialog.addChoice("Threshold Method:", allThreshMethods);
+Dialog.show();
+
+// Update variables with user input
+inputDir = Dialog.getString();
+outputDir = Dialog.getString();
+nucleiIndex = Dialog.getNumber();
+gaussRad = Dialog.getNumber();
+thresholdMethod = Dialog.getChoice();
+
+// Obtain file list
+images = getFileList(inputDir);
+
+// Suppress image windows (not displayed to screen)
+setBatchMode(true);
+
+// Initialise progress update
+print("\\Clear");
+print("Found " + images.length + " files in " + inputDir);
+print("0% of images processed.");
+
+// Loop through images
+for (i = 0; i < lengthOf(images); i++) {
+
+	// Update progress
+	print("\\Update:" + (100.0 * i / images.length) + "% of images processed.");
+
+	// Open image with Bio-Formats (split channels)
+	run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+
+	// Select the channel containing nuclei
+	selectImage(nucleiIndex);
+
+	// Perform Gaussian blurring with specified sigma
+	run("Gaussian Blur...", "sigma=" + gaussRad);
+
+	// Threhold using the specified algorithm
+	setAutoThreshold(thresholdMethod + " dark");
+	setOption("BlackBackground", false);
+	run("Convert to Mask");
+
+	// Run Watershed to separate adjacent objects
+	run("Watershed");
+
+	// Measure morphological features
+	run("Analyze Particles...", "exclude summarize");
+
+	// Save segmentation mask
+	saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
+
+	// Close all images
+	close("*");
+}
+
+// Print message when the analysis is finished
+print("\\Update:100% of images processed.");
+
+// Turn off batch mode
+setBatchMode(false);
+```
+
+
+# 7. Installing the Macro
+
+It is possible to ["install" macros in ImageJ](https://imagej.net/scripting/macro#installing-macros), such that they appear on the Plugins menu. While this is not necessary to run a macro, which can always be opened and exectued as is, this can be a good idea if you need to run the script regularly. In order to do so, we first need to wrap our macro in `macro` blocks. With the `macro` blocks added, our complete macro now looks as follows:
 ```javascript
 macro "Batch Nuclei Counter" {
+
+	// Initialise variables
 	var inputDir;
-	var output;
+	var outputDir;
 	var gaussRad = 1.0;
 	var thresholdMethod = "Default";
 	var allThreshMethods = getList("threshold.methods");
 	var nucleiIndex = 1;
-	
+
+	// Create dialog box
 	Dialog.create("Batch Counting");
 	Dialog.addDirectory("Input Directory:", inputDir);
-	Dialog.addDirectory("Output Directory:", output);
+	Dialog.addDirectory("Output Directory:", outputDir);
 	Dialog.addNumber("Nuclear Channel:", nucleiIndex);
 	Dialog.addNumber("Gaussian Filter Radius:", gaussRad);
 	Dialog.addChoice("Threshold Method:", allThreshMethods);
 	Dialog.show();
-	
+
+	// Update variables with user input
 	inputDir = Dialog.getString();
-	output = Dialog.getString();
+	outputDir = Dialog.getString();
 	nucleiIndex = Dialog.getNumber();
 	gaussRad = Dialog.getNumber();
 	thresholdMethod = Dialog.getChoice();
-	
+
+	// Obtain file list
 	images = getFileList(inputDir);
-	
+
+	// Suppress image windows (not displayed to screen)
 	setBatchMode(true);
-	
+
+	// Initialise progress update
 	print("\\Clear");
 	print("Found " + images.length + " files in " + inputDir);
 	print("0% of images processed.");
-	
+
+	// Loop through images
 	for (i = 0; i < lengthOf(images); i++) {
+
+		// Update progress
 		print("\\Update:" + (100.0 * i / images.length) + "% of images processed.");
+
+		// Open image with Bio-Formats (split channels)
 		run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
+
+		// Select the channel containing nuclei
 		selectImage(nucleiIndex);
+
+		// Perform Gaussian blurring with specified sigma
 		run("Gaussian Blur...", "sigma=" + gaussRad);
+
+		// Threhold using the specified algorithm
 		setAutoThreshold(thresholdMethod + " dark");
 		setOption("BlackBackground", false);
 		run("Convert to Mask");
+
+		// Run Watershed to separate adjacent objects
 		run("Watershed");
+
+		// Measure morphological features
 		run("Analyze Particles...", "exclude summarize");
-		saveAs("PNG", output + "segmentation_output_" + images[i] + ".png");
+
+		// Save segmentation mask
+		saveAs("PNG", outputDir + "segmentation_output_" + images[i] + ".png");
+
+		// Close all images
 		close("*");
 	}
+
+	// Print message when the analysis is finished
 	print("\\Update:100% of images processed.");
-	
+
+	// Turn off batch mode
 	setBatchMode(false);
 }
 ```
