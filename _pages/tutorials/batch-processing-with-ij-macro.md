@@ -33,7 +33,7 @@ Every command you now access through ImageJ's menu will be recorded as a line of
 ## 1.2 Perform a simple workflow
 
 Perform a series of commands that you would like to automate with a macro. The commands recorded below resulted from:
-1. The opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into separate windows.
+1. Opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into separate windows.
 2. Selecting the first channel containing the nuclei
 
 ![Raw image](../../media/tutorials/00raw.png)
@@ -46,7 +46,7 @@ Perform a series of commands that you would like to automate with a macro. The c
 
 ![Threshold](../../media/tutorials/02threshold.png)
 
-5. Use the Watershed algorithm to separate adjacent objects
+5. Using the Watershed algorithm to separate adjacent objects
 
 ![Watershed](../../media/tutorials/03watershed.png)
 
