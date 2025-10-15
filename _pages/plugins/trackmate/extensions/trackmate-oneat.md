@@ -14,51 +14,38 @@ This product is a testament to our expertise at KapoorLabs, where we specialize 
 
 This page describes a track corrector module for TrackMate that relies on [oneat](https://pypi.org/project/oneat/). It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following) called **TrackMate-Oneat**.
 
-## Usage
 
-### Obtaining oneat predictions
+The figures and tables mentioned here can be found in our [associated publication](https://www.biorxiv.org/content/10.1101/2025.09.17.676780v1)
 
-TrackMate-oneat replies on oneat which is a Keras based action classification library that provides multi-class trained model for doing static and action classification. The output of the network consists of a csv file of cell locations (XYT) that can be visualized using a customized Napari widget that can be found [here](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/blob/Wikioneat/Notebooks/Visualize_seg_with_action_classification_napari.ipynb)). We provide certain [demo notebooks](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/tree/Wikioneat/Demo) where pre-trained models are automatically downloaded along with a test dataset to show the prediction of oneat networks for mitotic cell events.
-To use this action you have to create a trained model of oneat for your dataset. This requires training a multi class action classification model as is described 
-[here](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/blob/-/Notebooks/Segmentation_free_dynamic_training_data_creator.ipynb). You can use this notebook to create [annotations](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/blob/-/Notebooks/Training_data_maker.ipynb). After creating the data you can use this [notebook](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/blob/Wikioneat/Notebooks/Segmentation_free_dynamic_training_data_creator.ipynb) to train your own network. Once your network is trained you would have obtained the model h5 and json files that can be used in conjugation with the segmentation image for your dataset to get the locations of mitotic/apoptotic/ other cell event that the network was trained on using this [notebook](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/blob/Wikioneat/Notebooks/Visualize_seg_with_action_classification_napari.ipynb). If you do not have segmentation image for your dataset use this [notebook](https://github.com/Kapoorlabs-CAPED/CAPED-AI-oneat/blob/Wikioneat/Notebooks/Visualize_seg_free_action_classification_napari.ipynb) to obtain the location of the cell event of interest. For oneat we currently use the location of mitotic and cell death events to correc tthe lineage trees. To avoid overdetection of the same cell event over time please use this notebook to obtain a "clean" csv file of cell event locations where we perform score based non maximal supression over time. This "clean" csv file serves as input to the TrackMate-Oneat extension post tracking is performed. 
-
-### Starting the TrackMate-Oneat action
-
-As is outlined in the video tutorial, we have to first finish the tracking process using Simple LAP tracker for example to obtain the tracks, then once we reach the last panel of TrackMate we can use the TrackMate-Oneat action by pressing the execute button and loading the "clean" csv file to start the process to track correction. The users additionally have the choice of specifying a veto over the score threshold of the detected events along with a parameter delta T, that checks if TrackMate found mitosis event matches with the oneat found mitosis event for that track. If you also have a trained model for cell death that can also be uploaded to terminate such tracks. Track correction can be done by creating new links and/or by breaking current mitotic cell event links if they do not match with the oneat detected cell locations for mitosis. When using Simple LAP tracker only new links can be created as that algorithm does not support linking segments for mitosis events. If you have chosen LAP tracker with segment splitting option, you can break the mitosis links found by TrackMate if no oneat detection is found for such cells under consideration.
-
-## Algorithm
-
-The algorithm for oneat is described figuratively [here](https://github.com/kapoorlab/imagej.github.io/blob/-/media/plugins/trackmate/actions/TrackMate-oneat-algorithm.jpg).
-Essentially in this scheme we describe the breaking and creating new linking process. If users chooses LAP tracker with segment splitting then we check for mitosis events, in this step we match the locations of mitotic cells with that of oneat detected location, if a match is found the track is not marked for re-linking else the mitotic cell link is broken and is marked for re-linking. If the user has also uploaded a file that contains cell death locations then such tracks are terminated at the found location. If the user on the other hand chooses Simple LAP tracker then the check for mitosis is skipped as that algorithm doe snot support segment to segment linking. In the next step the segments are re-linked based on our local segment linker step. In this step we create a local graph which contains the edge between the mother cell and its source cell to be linked with edges in the local neighborhood of daughter cells. We constrain this process of linking by enforcing that the size of the daughter cells to be less than that of the mother cell and  also the difference in the Z slices of the mother and daughter cell links. One such an assingment is determines using Jaqman Segment linker algorithm we break those links in the main graph and create new links based on the assingements determined. This leads to a new graph/trackschem with new TrackId's being generated.
+<img src="/media/plugins/trackmate/actions/FigS1.png" width="300"/> 
 
 
-## Tutorial: *Xenopus nuclei* early development
+<img src="/media/plugins/trackmate/actions/FigS7.png" width="300"/>
 
-In this video I compare the tracking results using LAP tracker of TrackMate and SimpleLap tracker + oneat correction. 
-[LAP tracker comparision with SimpleLAP Tracker + oneat correction](https://youtu.be/9HZvWxr2fsY) The dataset used can be found [here](https://zenodo.org/record/6591369#.YpOTwXZBy3A) along with the ground truth tracks. We used different combinations of TrackMate tracking algorithms and oneat and after converting the tracks to ctc compatiable formats obtianed the following tracking metrics which show that combination of SimpleLAP tracker with Oneat is most appropriate for this particular example to obtain highest tracking accurate results.
+# Introduction
 
-## Tracking Metrics
+Oneat identifies cell division events as spatiotemporal (TXYZ) coordinates. These coordinates were then used to impose trajectory splitting within TrackMate tracks through our custom-developed TrackMate-Oneat plugin. The plugin optionally applies the MARI (Mitosis Angular Region of Interest) principle, which filters division events to retain only those in which daughter cells emerge perpendicular to the mother cell’s nuclear major axis.
 
-### Simple LAP tracker + Oneat
+Oneat integration significantly improved mitosis detection compared to TrackMate’s native linking algorithm (TrackMate native branching accuracy = 0.122, TrackMate-Oneat branching correctness = 0.328). By combining Oneat-predicted division locations with trajectory continuity, the system generated more biologically realistic branching structures and reduced the number of false positives typically produced by Oneat alone. However, while applying the MARI principle nearly eliminated false positives, it also led to a reduction in true positive detections (Figure S1E). As such, the user should choose the division detection strategy – Oneat alone or Oneat with MARI filtering – based on the specific goals and tolerance for false positives in their downstream analyses.
 
-{DET : 0.9964,    CT : 0.73531,   TRA : 0.9933,    TF : 0.97518,  BCi : 0.10526}
+## Division detection with TrackMate-Oneat
 
-### LAP Tracker with track splitting and Quality as additional cost
-
-{DET : 0.9900,    CT : 0.677033,   TRA :	0.986785;  TF : 0.95041,  BCi :	0.04347}
-
-### LAP Tracker with track splitting and Quality as additional cost + Oneat
-
-{DET : 0.98911,    CT :	0.672629,    TRA : 0.985774,   TF :	0.948692,   BCi : 0.05555}
-
-### LAP Tracker without track splitting and Quality as additional cost + Oneat
-{DET : 0.990083,   CT :	0.6766,      TRA : 0.986742, TF : 0.9521, BCi	0.054}
+We developed a pipeline leveraging deep learning-based action classification to detect cell division events and use these predictions to improve nucleus tracking. A key component of this system is the Oneat classifier, which was trained to distinguish mitotic from non-mitotic cells based on short temporal sequences of image data. For training, the 3D+t nucleus channel of a dataset was manually annotated for division events. Specifically, mitotic events are annotated on Napari by clicking on the center of the dividing nucleus in a microscopy time series. For each annotated division, a 64 x 64 x 8 voxel crop of 3 time frames was extracted around the clicked location, centered both spatially and temporally on the mitotic event. This creates a positive training sample. To create negative (non-mitotic) samples, a corresponding number of randomly selected locations are extracted from non-dividing nuclei. These negative and positive samples are used to train the model in a supervised fashion, optimizing a binary classification loss to distinguish mitosis from non-mitosis using a DenseNet-based architecture.
 
 
+For the prediction of division events from whole datasets, the trained Oneat model processes each object identified from a pre-generated nucleus segmentation. For each segmented nucleus at every time point, a temporal window is constructed by cropping 64 x 64 x 8 voxels for 3 frames centered on the nucleus XYZ centroid. These volumes are passed through the Oneat model, which classifies each central frame as either mitotic or non-mitotic.
 
 
+To combine division events with tracking data of a dataset, the TZYX coordinates of predicted mitotic nuclei were recorded in a CSV file, which was used as input for the TrackMate-Oneat extension of TrackMate. This step uses the predicted division locations to impose a branching point on a trajectory. Suitable daughter cells for mitotic cells are searched from a 16.5 µm search radius from the mother cell, and linking is optimized using a Jaqaman linker algorithm. This biologically-informed relinking improves the completeness and accuracy of lineage tracking, especially in datasets with frequent cell divisions.
 
 
+To avoid spurious links and ensure geometric plausibility, the pipeline also incorporates the Mitosis Angular Region of Interest (MARI) principle. This constraint limits the search for daughter cells to a angular region from the mother cell’s nucleus principal axis of a fit ellipsoid. Candidate daughter spots were defined as those within a radial distance  of the mother spot  whose displacement vector , with  the candidate spot position, formed an unsigned angle with the mother’s principal axis  not exceeding a threshold  set by the user.
+By restricting candidate daughters to fall within a defined angular region of interest, this method eliminates improbable pairings and enhances the biological realism of the reconstructed lineages. This constraint is especially important in dense tissues, where purely distance-based linking may result in incorrect associations.
 
-Varun Kapoor - May 2022
 
+## Explaining the figures
+
+Quality metrics for tracking and division detection. A-B.  Division metrics in C-J are based on a dataset where each cell division is manually annotated (B). In this dataset, selected tracks are also annotated and compared to automated tracking in Table S3 and panel K. C-E, I. Division detections for Oneat (not connected with tracks), TrackMate-Oneat (Oneat divisions connected with TrackMate tracks), TrackMate-Oneat + MARI principle (TrackMate-Oneat with max boundary set for angle between mother cell and daughter cells), and TrackMate “native” track splitting, enabled in TrackMate LAP linking algorithm. F-H, J. Corresponding detection metrics. K. Manually annotated ground truth tracks colorized by the Track ID assigned by automatic tracking used for the experiments.  
+
+
+Oneat model structure. A. Training data annotations in Napari for training a mitosis classifier. B. CNN architecture. Input data is 3 timepoints, 8 x 64 x 64 pixel crop, centered around the annotation ZYX+t centroid. Output is probabilities for classification as mitotic or non-mitotic.

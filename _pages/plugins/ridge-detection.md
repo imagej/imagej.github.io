@@ -116,6 +116,8 @@ This is a list of publications where the plugin was used:
 
 {% include citation doi="10.1088/1367-2630/18/5/055001" %}
 
+{% include citation doi="10.26508/lsa.202000880" %}
+
 # How to cite
 
 We think the best way is to cite the formal method and the used implementation:

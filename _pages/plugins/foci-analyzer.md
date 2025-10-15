@@ -40,8 +40,6 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 
 ## Installation / Requirements
 
-> ***IMPORTANT NOTE***: Currently StarDist does not function with Fiji-Latest, due to a [TensorFlow issue](https://github.com/fiji/fiji/issues/393). For the time being, please use Fiji-Stable: select the 'Stable' distribution next to the large green download button on [https://fiji.sc/](https://fiji.sc/)).
-
 [Activate](https://imagej.net/update-sites/following) the following Fiji update sites (in the menu bar, via Help -> Update...):
 - Foci-Analyzer
 - 3D ImageJ Suite
@@ -52,8 +50,8 @@ The table is saved as a `.tsv` file, which can be easily opened in other program
 - CSBDeep
 - IJPB-plugins
 - StarDist
-- (TensorFlow) Due to a recent Fiji update, StarDist [may require the TensorFlow Update Site](https://forum.image.sc/t/stardist-error-since-update/107729) to function properly.
-- (SCF MPI CBG) Only if you want to use the foci detection method 'AreaMaxima local maxima detection'
+- TensorFlow
+- (SCF MPI CBG) - Only required if you want to use the foci detection method 'AreaMaxima local maxima detection'
 
 Run Foci Analyzer from the Fiji menu: `Plugins -> Foci Analyzer -> Foci Analyzer`.
 `Combine result files` can be used to pool output `.tsv` files into a single file/table.

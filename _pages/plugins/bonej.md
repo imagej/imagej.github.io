@@ -10,7 +10,7 @@ extensions: ["mathjax"]
 
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This documentation is for the current BoneJ version available through the ImageJ [updater](/plugins/updater). Legacy documentation is provided for old versions (1.x) at [bonej.org](https://bonej.org/).
 
-GPU-accelerated extensions that run orders of magnitude (~100×) faster are being rolled out on a pay-for-play basis in the new `bonej-plus` package. Functionality is similar to the CPU version, with the primary current limitation being a maximum data size of 1 Gpx (c. 1024³ pixels) per image. Where a BoneJ+ GPU-accelerated extension exists, it's marked below with **BoneJ+** and you can find it in the *Plugins>BoneJ>Plus* menu. Payment is managed through purchasing a bean token from [bonej.org/shop](https://bonej.org/shop) and entering it into the token box at *Plugins>BoneJ>Plus>Check Token*. Drop us a line at bonej-at-bonej.org for a coupon to get a free token to try out BoneJ+.
+GPU-accelerated extensions that run orders of magnitude (~100×) faster are being rolled out on a pay-for-play basis in the new `bonej-plus` package. Functionality is similar to the CPU version, with the primary current limitation being a maximum data size of 2 Gpx (c. 2048³ pixels) per image. Where a BoneJ+ GPU-accelerated extension exists, it's marked below with **BoneJ+** and you can find it in the *Plugins>BoneJ>Plus* menu. Payment is managed through purchasing a bean token from [bonej.org/shop](https://bonej.org/shop) and entering it into the token box at *Plugins>BoneJ>Plus>Check Token*. Drop us a line at bonej-at-bonej.org for a coupon to get a free token to try out BoneJ+.
 
 If you use BoneJ in your work please [cite it](#citation).
 
@@ -416,7 +416,7 @@ An 8-bit, binary 2D or 3D image. Hyperstacks are not supported.
 
 Reznikov, N et al. (2016), *Inter-trabecular angle: A parameter of trabecular bone architecture in the human proximal femur that reveals underlying topological motifs*, Acta Biomaterialia, 44: 65--72, [<doi:j.actbio.2016.08.040>](https://doi.org/10.1016/j.actbio.2016.08.040).
 
-## Thickness
+## Thickness (BoneJ+)
 
 Menu path {% include bc path="Plugins | BoneJ | Thickness" %}.
 
