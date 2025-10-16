@@ -1,6 +1,6 @@
 ---
-title: OlympusImageJPlugin
-name: OlympusViewer Plugin
+title: EvidentImageJPlugin
+name: EvidentViewer Plugin
 section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
 nav-links: true
@@ -11,13 +11,13 @@ team-maintainer: 'EVIDENT CORPORATION (GLOB-SM-imagejplugin at evidentscientific
 
 {% include info-box source='The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.' %}
 
-This plugin can load EVIDENT(Olympus) vsi/oir/omp2info file formats and show some meta data.
+This plugin can load EVIDENT vsi/oir/omp2info file formats and show some meta data.
 
 ## New release 
   Ver.2.4.1 Fix for incorrect colours displayed in some VSI files.
 
 ## Download
-  Download the latest OlympusViewer ImageJ Plugin for [Windows](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software) and [Mac](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software).
+  Download the latest EvidentViewer ImageJ Plugin for [Windows](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software) and [Mac](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software).
 
 ## Installation
   Please see our installation instructions for [Windows](https://github.com/evident-imagejplugin/evident-viewer-guide/blob/main/EvidentViewer_Installation_Guide_win.md) and [Mac](https://github.com/evident-imagejplugin/evident-viewer-guide/blob/main/EvidentViewer_Installation_Guide_mac.md).
