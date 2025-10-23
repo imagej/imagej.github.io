@@ -35,7 +35,7 @@ Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in 
 
 To start the macro recorder, go to {% include bc path="Plugins|Macros|Record" %}:
 
-{% include img src="screenshot-plugins-macro-record.PNG" alt="Macro Recorder location on plugins menu" %}
+{% include img src="screenshot-plugins-macro-record.png" alt="Macro Recorder location on plugins menu" %}
 
 Every command you now access through ImageJ's menu will be recorded as a line of text in the macro recorder.
 
@@ -45,7 +45,7 @@ Every command you now access through ImageJ's menu will be recorded as a line of
 
 Perform a series of commands that you would like to automate with a macro. 
 
-{% include img src="screenshot-macro-recorder-with-commands.PNG" alt="ImageJ Macro Recorder" %}
+{% include img src="screenshot-macro-recorder-with-commands.png" alt="ImageJ Macro Recorder" %}
 
 The commands recorded below resulted from:
 1. Opening of an image with [Bio-Formats](/formats/bio-formats), splitting channels into separate windows.
@@ -69,13 +69,13 @@ The commands recorded below resulted from:
 
 The result of the commands recorded above should look like this:
 
-{% include img src="screenshot-workflow-output.PNG" alt="Workflow output" %}
+{% include img src="screenshot-workflow-output.png" alt="Workflow output" %}
 
 ## Edit the Output from the Macro Recorder
 
 It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
 
-{% include img src="screenshot-macro-recorder-create.PNG" alt="Macro Recorder create button" %}
+{% include img src="screenshot-macro-recorder-create.png" alt="Macro Recorder create button" %}
 
 ### Save your macro and run it
 
@@ -188,7 +188,7 @@ for (i = 0; i < 10; i++) {
 ```
 ...and should now produce some meaningful output when run:
 
-{% include img src="screenshot-particle-analyzer-summary-output.PNG" alt="Particle Analyzer summary output" %}
+{% include img src="screenshot-particle-analyzer-summary-output.png" alt="Particle Analyzer summary output" %}
 
 ### Run the loop for the required number of times
 
@@ -621,7 +621,7 @@ macro "Batch Nuclei Counter" {
 ```
 Find the _scripts_ folder within your ImageJ/Fiji installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
 
-{% include img src="screenshot-plugins-installed-macro.PNG" alt="Macro dialog" %}
+{% include img src="screenshot-plugins-installed-macro.png" alt="Macro dialog" %}
 
 ## See also
 -   [Batch Processing](/batch)
