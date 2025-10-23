@@ -3,7 +3,17 @@ title: Batch Processing with the ImageJ Macro Language
 project: /software/imagej
 ---
 
-# Overview
+# Introduction
+
+One of the great strengths of FIJI is its ability to automate workflows. If you have a workflow you wish to automate, FIJI provides you with a number of options:
+1. [The macro recorder](../scripting/macro.md#the-recorder)
+2. [Batch Processing](https://imagej.net/scripting/batch#option-1---process--batch--macro)
+3. [Script Templates](https://imagej.net/scripting/batch#option-2---script-template)
+4. [Multiple Image Processor](https://imagej.net/tutorials/apply-operation-to-a-complete-directory#alternative-multiple-image-processor)
+
+Please note that the above list is not exhaustive! In this tutorial, we will be exploring option #1. However, it is advisable to experiment with the other options above - you may find an alternative approach (or perhaps a combination of approaches) is more suitable for your requirements.
+
+## Overview of this tutorial
 
 This tutorial demonstrates how to
 1. Use [the macro recorder](../scripting/macro.md#the-recorder) to record a series of commands to form the basis of a macro
