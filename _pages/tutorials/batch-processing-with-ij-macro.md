@@ -3,6 +3,8 @@ title: Batch Processing with the ImageJ Macro Language
 project: /software/imagej
 ---
 
+{% include notice glyph="&#127891;" content="See also the [Introduction into Macro Programming](/scripting/macro) and [Batch Processing](/scripting/batch) articles." %}
+
 # Introduction
 
 One of the great strengths of Fiji is its ability to automate workflows. If you have a workflow you wish to automate, Fiji provides you with a number of options:

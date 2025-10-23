@@ -3,6 +3,8 @@ title: Batch Processing
 section: Extend:Scripting:Languages
 ---
 
+{% include notice glyph="&#127891;" content="See also the [step-by-step tutorial on building a macro](/tutorials/batch-processing-with-ij-macro) to automate [batch processing](batch)." %}
+
 # Overview
 
 A fundamental benefit to creating [scripts and macros](/scripting) in [ImageJ](/software/imagej) is the ability to *reuse* their functionality *on more than one image*. Although this can be done manually, there are multiple ways to easily automate this batch processing.

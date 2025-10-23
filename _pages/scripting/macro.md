@@ -4,6 +4,8 @@ section: Extend:Scripting:Languages
 project: /software/imagej
 ---
 
+{% include notice glyph="&#127891;" content="See also the [step-by-step tutorial on building a macro](/tutorials/batch-processing-with-ij-macro) to automate [batch processing](batch)." %}
+
 # Why Macros?
 
 Macros can be used to
@@ -725,7 +727,3 @@ before the `exec` call. (since ImageJ 1.52u38)
 # Further documentation
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.net/ij/developer/index.html).
-
-# Tutorial
-
-For a step-by-step tutorial on building a macro to automate batch processing, see [here](/tutorials/batch-processing-with-ij-macro).
