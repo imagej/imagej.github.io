@@ -4,6 +4,8 @@ section: Extend:Scripting:Languages
 project: /software/imagej
 ---
 
+{% include notice glyph="&#127891;" content="See also the [step-by-step tutorial on building a macro](/tutorials/batch-processing-with-ij-macro) to automate [batch processing](batch)." %}
+
 # Why Macros?
 
 Macros can be used to

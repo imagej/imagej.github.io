@@ -1,11 +1,10 @@
 ---
-mediawiki: Scripting
 title: Scripting
 section: Extend:Scripting
 project: /software/imagej2
 ---
 
-ImageJ2 allows you to write scripts in several different languages.
+[ImageJ](/software/imagej) and [ImageJ2](/software/imagej2) allow you to write scripts in several different languages.
 
 # Getting started
 

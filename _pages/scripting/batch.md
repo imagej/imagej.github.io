@@ -1,8 +1,9 @@
 ---
-mediawiki: Batch_Processing
 title: Batch Processing
 section: Extend:Scripting:Languages
 ---
+
+{% include notice glyph="&#127891;" content="See also the [step-by-step tutorial on building a macro](/tutorials/batch-processing-with-ij-macro) to automate [batch processing](batch)." %}
 
 # Overview
 
