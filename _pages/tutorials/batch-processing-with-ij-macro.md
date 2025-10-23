@@ -5,9 +5,9 @@ project: /software/imagej
 
 {% include notice glyph="&#127891;" content="See also the [Introduction into Macro Programming](/scripting/macro) and [Batch Processing](/scripting/batch) articles." %}
 
-# Introduction
+## Introduction
 
-One of the great strengths of Fiji is its ability to automate workflows. If you have a workflow you wish to automate, Fiji provides you with a number of options:
+One of the great strengths of ImageJ is its ability to automate workflows. If you have a workflow you wish to automate, there are a number of options:
 
 1. [The macro recorder](/scripting/macro#the-recorder)
 2. [Batch Processing](/scripting/batch#option-1---process--batch--macro)
@@ -16,7 +16,7 @@ One of the great strengths of Fiji is its ability to automate workflows. If you 
 
 Please note that the above list is not exhaustive! In this tutorial, we will be exploring option #1. However, it is advisable to experiment with the other options above - you may find an alternative approach (or perhaps a combination of approaches) is more suitable for your requirements.
 
-## Overview of this tutorial
+### Overview of this tutorial
 
 This tutorial demonstrates how to
 1. Use [the macro recorder](/scripting/macro#the-recorder) to record a series of commands to form the basis of a macro
@@ -25,63 +25,61 @@ This tutorial demonstrates how to
 4. Add some progress updates
 5. Add a dialog so that a user can modify the parameters to the macro prior to execution
 
-> [!NOTE]
-> Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images, an example of which is shown below.
+Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images; here is an example such image:
 
-![IDR0028 LM2_siGENOME_1A Well C3 Field 10](/media/tutorials/IDR0028-LM2_siGENOME_1A_Well_C3_Field_10.png)
+{% include img src="IDR0028-LM2_siGENOME_1A_Well_C3_Field_10.png" alt="IDR0028 LM2_siGENOME_1A Well C3 Field 10" %}
 
-# 1. Record Commands with the Macro Recorder
+## Record Commands with the Macro Recorder
 
-## 1.1 Start the macro recorder
+### Start the macro recorder
 
-To start the macro recorder, go to `Plugins > Macros > Record`:
+To start the macro recorder, go to {% include bc path="Plugins|Macros|Record" %}:
 
-![Macro Recorder location on plugins menu](/media/tutorials/screenshot-plugins-macro-record.PNG)
+{% include img src="screenshot-plugins-macro-record.PNG" alt="Macro Recorder location on plugins menu" %}
 
 Every command you now access through ImageJ's menu will be recorded as a line of text in the macro recorder.
 
-> [!IMPORTANT]
-> The vast majority of the functionality in ImageJ/Fiji's menus is macro-recordable. Occasionally, some commands will not be recorded, or not recorded correctly. Please refer to the documentation and [image.sc](https://forum.image.sc/) in such cases.
+{% include notice icon="note" content="The vast majority of the functionality in ImageJ/Fiji's menus is macro-recordable. Occasionally, some commands will not be recorded, or not recorded correctly. Please refer to the documentation and [image.sc](https://forum.image.sc/) in such cases." %}
 
-## 1.2 Perform a simple workflow
+### Perform a simple workflow
 
 Perform a series of commands that you would like to automate with a macro. 
 
-![ImageJ Macro Recorder](/media/tutorials/screenshot-macro-recorder-with-commands.PNG)
+{% include img src="screenshot-macro-recorder-with-commands.PNG" alt="ImageJ Macro Recorder" %}
 
 The commands recorded below resulted from:
-1. Opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into separate windows.
+1. Opening of an image with [Bio-Formats](/formats/bio-formats), splitting channels into separate windows.
 2. Selecting the first channel containing the nuclei
 
-![Raw image](/media/tutorials/00raw.png)
+{% include img src="00raw.png" alt="Raw image" %}
 
 3. Applying a Gaussian blur
 
-![Gaussian blur](/media/tutorials/01gaussian_blur.png)
+{% include img src="01gaussian_blur.png" alt="Gaussian blur" %}
 
 4. Thresholding the image with the default method
 
-![Threshold](/media/tutorials/02threshold.png)
+{% include img src="02threshold.png" alt="Threshold" %}
 
 5. Using the Watershed algorithm to separate adjacent objects
 
-![Watershed](/media/tutorials/03watershed.png)
+{% include img src="03watershed.png" alt="Watershed" %}
 
 6. Generating a particle count using the `summarize` option in the [Analyze Particles](/ij/docs/guide/146-30.html#sub:Analyze-Particles...) tool.
 
 The result of the commands recorded above should look like this:
 
-![Workflow output](/media/tutorials/screenshot-workflow-output.PNG)
+{% include img src="screenshot-workflow-output.PNG" alt="Workflow output" %}
 
-# 2. Edit the Output from the Macro Recorder
+## Edit the Output from the Macro Recorder
 
 It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
 
-![Macro Recorder create button](/media/tutorials/screenshot-macro-recorder-create.PNG)
+{% include img src="screenshot-macro-recorder-create.PNG" alt="Macro Recorder create button" %}
 
-## 2.1 Save your macro and run it
+### Save your macro and run it
 
-Give your macro a sensible name and save it by going to `File > Save As...` in the Script Editor. Now try running your macro by selecting `Run > Run` from the menu. Your macro should produce the same output as the series of commands you recorded earlier. The code in the image above is reproduced below should you wish to copy it:
+Give your macro a sensible name and save it by going to {% include bc path="File|Save As..." %} in the Script Editor. Now try running your macro by selecting {% include bc path="Run|Run" %} from the menu. Your macro should produce the same output as the series of commands you recorded earlier. The code in the image above is reproduced below should you wish to copy it:
 ```javascript
 run("Bio-Formats Importer", "open=[C:/Users/barryd/Downloads/FrancisCrickInstitute-introduction-to-image-analysis-be5d061 (1)/FrancisCrickInstitute-introduction-to-image-analysis-be5d061/Data/idr0028/003003-10.tif] autoscale color_mode=Default rois_import=[ROI manager] split_channels view=Hyperstack stack_order=XYCZT");
 selectImage("003003-10.tif - C=0");
@@ -95,7 +93,7 @@ run("Analyze Particles...", "exclude summarize");
 saveAs("PNG", "C:/Users/barryd/Downloads/FrancisCrickInstitute-introduction-to-image-analysis-be5d061 (1)/FrancisCrickInstitute-introduction-to-image-analysis-be5d061/Data/segmentation_masks/003003-10.tif - C=0.png");
 ```
 
-## 2.2 Generalise your macro
+### Generalise your macro
 
 The obvious problem with the macro in its current form is that it will only ever work on the image that was loaded when the commands that form the basis of the macro were originally recorded. Modifying the first two lines is the first step in "generalising" the macro, so that it runs on _any_ image:
 ```javascript
@@ -117,11 +115,11 @@ There are three changes above:
 
 While this macro will now run on any image, it only allows us to process one image at a time, which is not ideal!
 
-# 3. Create a Loop to Run on Multiple Images
+## Create a Loop to Run on Multiple Images
 
 The macro we have so far works on one image at a time, by asking the user to select it as input. To automate the analysis on multiple images in a folder, we will have to setup a `for` loop.
 
-## 3.1 Enclose code within a `for` loop
+### Enclose code within a `for` loop
 We can run our code multiple times, to process multiple images, by enclosing it in a `for` loop:
 
 ```javascript
@@ -146,7 +144,7 @@ However, there are a number of problems with the above code:
 
 Let's deal with each of these one at a time.
 
-## 3.2 Obtain an input directory
+### Obtain an input directory
 
 Let's add some code before the `for` loop to get an input directory and obtain a list of files from that input directory. We can also move the line of code specifying the output directory here so it doesn't get called every time the loop is executed:
 
@@ -161,10 +159,9 @@ Now we need to update the command that runs the Bio-Formats Importer, such that 
 run("Bio-Formats Importer", "open=[" + inputDir + File.separator() + images[i] + "] autoscale color_mode=Composite rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
 ```
 
-> [!TIP]
-> The `+` sign allows for concatenating strings, while using the `File.separator()` command takes care of differences between operating systems in conventional file separator characters. Enclosing a folder path or file name with squared brackets `[...]` ensures that they are read as a single string even in the presence of spaces.
+{% include notice icon="tip" content="The `+` sign allows for concatenating strings, while using the `File.separator()` command takes care of differences between operating systems in conventional file separator characters. Enclosing a folder path or file name with squared brackets `[...]` ensures that they are read as a single string even in the presence of spaces." %}
 
-## 3.3 Close windows when we're done with them
+### Close windows when we're done with them
 
 The macro in its current form will open four windows every time the `for` loop is executed (assuming the input images have four channels). Multiply this by the number of times the loop gets executed (currently 10) and that's a lot of windows. We can deal with this by adding a `close` statement to the end of the code block within the `for` loop. Using a wildcard character (`*`) with the `close` statement instructs ImageJ to close _all_ image windows:
 ```javascript
@@ -191,9 +188,9 @@ for (i = 0; i < 10; i++) {
 ```
 ...and should now produce some meaningful output when run:
 
-![Particle Analyzer summary output](/media/tutorials/screenshot-particle-analyzer-summary-output.PNG)
+{% include img src="screenshot-particle-analyzer-summary-output.PNG" alt="Particle Analyzer summary output" %}
 
-## 3.3 Run the loop for the required number of times
+### Run the loop for the required number of times
 
 At present, the code within the `for` loop will always be executed exactly 10 times, regardless of how many images there are in the input directory. We can change this behaviour for placing something more meaningful in the conditional statement `i < 10`, such as:
 ```javascript
@@ -201,7 +198,7 @@ for (i = 0; i < lengthOf(images); i++) {
 ```
 Here, the `lengthOf` command returns the length of the `images` array, so the `for` loop will continue to be executed until all images in the array have been analysed.
 
-## 3.4 Change the name of the output image
+### Change the name of the output image
 
 Finally, in order to have a fully functional (if rudimentary) macro, we need the name of the segmentation output image to be updated on each iteration of the `for` loop - at present, an image with the name `segmentation_output.png` is repeatedly overwritten. We could modify the `saveAs` statement to include the current value of `i` in the filename as follows:
 ```javascript
@@ -239,7 +236,7 @@ for (i = 0; i < lengthOf(images); i++) {
 	close("*");
 }
 ```
-# 4. Add Some Progress Updates
+## Add Some Progress Updates
 
 It's generally a good idea to keep the user informed of progress when code is running. We can do this by adding `print` statements at different points in the macro, so updates get printed to the Log window:
 ```javascript
@@ -272,9 +269,9 @@ setBatchMode(false);
 ```
 The `setBatchMode` statements cause ImageJ to enter, then exit, "Batch Mode", which suppresses image windows. This allows the macro to execute faster.
 
-# 5. Add Comments
+## Add Comments
 
-Adding comments to the macro will improve reusability both by others and our future selves. You can use the `//` sign before a line to add a comment in a Fiji macro: this will ensure the line is not executed. The macro with added comments would look like this:
+Adding comments to the macro will improve reusability both by others and our future selves. You can use the `//` sign before a line to add a comment in an ImageJ macro: this will ensure the line is not executed. The macro with added comments would look like this:
 
 ```javascript
 // Ask user for input directory and obtain file list
@@ -332,11 +329,11 @@ print("\\Update:100% of images processed.");
 setBatchMode(false);
 ```
 
-# 6. Create a Dialog to Obtain User Input
+## Create a Dialog to Obtain User Input
 
 As an alternative to the `getDirectory` statements used above, it is possible to create a more functional, self-contained dialog to receive input from the user.
 
-## 6.1 Specify inputs and outputs
+### Specify inputs and outputs
 
 We can create and customise a [Generic Dialog](/scripting/generic-dialog) to obtain a variety of different inputs from the user. We can also use this interface to provide instructions to the user. Let's begin with a simple dialog that prompts the user to specify input and output directories:
 
@@ -363,9 +360,9 @@ The code above does three things:
 
 Running the macro now should produce the following dialog:
 
-![Macro simple dialog](/media/tutorials/screenshot-macro-dialog-1.png)
+{% include img src="screenshot-macro-dialog-1.png" alt="Macro simple dialog" %}
 
-## 6.2 Modifying parameters via a dialog
+### Modifying parameters via a dialog
 
 In addition to specifying input and output directories, there are a range of other controls that can be added to a dialog. For example, we can add fields allowing the user to specify...
 1. a filter radius for Gaussian smoothing
@@ -398,12 +395,12 @@ nucleiIndex = Dialog.getNumber();
 gaussRad = Dialog.getNumber();
 thresholdMethod = Dialog.getChoice();
 ```
-> [!TIP]
-> For a full list of controls that can be added to a Dialog, see the [relevant macro language documentation](https://wsr.imagej.net/developer/macro/functions.html#dialog).
+
+{% include notice icon="tip" content="For a full list of controls that can be added to a Dialog, see the [relevant macro language documentation](https://imagej.net/ij/developer/macro/functions.html#dialog)." %}
 
 Running the macro will now produce a dialog that looks like this:
 
-![Macro advanced dialog](/media/tutorials/screenshot-macro-dialog-2.png)
+{% include img src="screenshot-macro-dialog-2.png" alt="Macro advanced dialog" %}
 
 In order for the variables captured from the dialog to have any effect, we must modify the remainder of the code, placing the variables where they are needed.
 
@@ -541,8 +538,7 @@ print("\\Update:100% of images processed.");
 setBatchMode(false);
 ```
 
-
-# 7. Installing the Macro
+## Installing the Macro
 
 It is possible to ["install" macros in ImageJ](/scripting/macro#installing-macros), such that they appear on the Plugins menu. While this is not necessary to run a macro, which can always be opened and executed as is, this can be a good idea if you need to run the script regularly. In order to do so, we first need to wrap our macro in `macro` blocks. With the `macro` blocks added, our complete macro now looks as follows:
 ```javascript
@@ -625,9 +621,9 @@ macro "Batch Nuclei Counter" {
 ```
 Find the _scripts_ folder within your ImageJ/Fiji installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
 
-![Macro dialog](/media/tutorials/screenshot-plugins-installed-macro.PNG)
+{% include img src="screenshot-plugins-installed-macro.PNG" alt="Macro dialog" %}
 
-# See also
+## See also
 -   [Batch Processing](/batch)
 -   [Scripting](/scripting) documentation and tutorials.
 -   [How to apply a common operation to a complete directory](/tutorials/apply-operation-to-a-complete-directory)
