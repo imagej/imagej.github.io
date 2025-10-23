@@ -728,4 +728,4 @@ A complete description of the macro language, a reference of the built-in functi
 
 # Tutorial
 
-For a step-by-step tutorial on building a macro to automate batch processing, see [here](../tutorials/batch-processing-with-ij-macro.md).
+For a step-by-step tutorial on building a macro to automate batch processing, see [here](/tutorials/batch-processing-with-ij-macro).

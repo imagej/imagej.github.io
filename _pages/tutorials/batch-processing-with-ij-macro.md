@@ -5,18 +5,19 @@ project: /software/imagej
 
 # Introduction
 
-One of the great strengths of FIJI is its ability to automate workflows. If you have a workflow you wish to automate, FIJI provides you with a number of options:
-1. [The macro recorder](../scripting/macro.md#the-recorder)
-2. [Batch Processing](https://imagej.net/scripting/batch#option-1---process--batch--macro)
-3. [Script Templates](https://imagej.net/scripting/batch#option-2---script-template)
-4. [Multiple Image Processor](https://imagej.net/tutorials/apply-operation-to-a-complete-directory#alternative-multiple-image-processor)
+One of the great strengths of Fiji is its ability to automate workflows. If you have a workflow you wish to automate, Fiji provides you with a number of options:
+
+1. [The macro recorder](/scripting/macro#the-recorder)
+2. [Batch Processing](/scripting/batch#option-1---process--batch--macro)
+3. [Script Templates](/scripting/batch#option-2---script-template)
+4. [Multiple Image Processor](/tutorials/apply-operation-to-a-complete-directory#alternative-multiple-image-processor)
 
 Please note that the above list is not exhaustive! In this tutorial, we will be exploring option #1. However, it is advisable to experiment with the other options above - you may find an alternative approach (or perhaps a combination of approaches) is more suitable for your requirements.
 
 ## Overview of this tutorial
 
 This tutorial demonstrates how to
-1. Use [the macro recorder](../scripting/macro.md#the-recorder) to record a series of commands to form the basis of a macro
+1. Use [the macro recorder](/scripting/macro#the-recorder) to record a series of commands to form the basis of a macro
 2. Edit the output from the macro recorder so that it can be run on any open image
 3. Enclose the code from step 2 inside a loop so that it runs on multiple images
 4. Add some progress updates
@@ -25,7 +26,7 @@ This tutorial demonstrates how to
 > [!NOTE]
 > Data from the [Image Data Resource](https://idr.openmicroscopy.org/) is used in this tutorial, [which is browsable online](https://idr.openmicroscopy.org/webclient/?show=image-2874779). Instructions on downloading images from the IDR are [here](https://idr.openmicroscopy.org/about/download.html). Below we outline a simple macro designed to count nuclei in 10 such images, an example of which is shown below.
 
-![IDR0028 LM2_siGENOME_1A Well C3 Field 10](../../media/tutorials/IDR0028-LM2_siGENOME_1A_Well_C3_Field_10.png)
+![IDR0028 LM2_siGENOME_1A Well C3 Field 10](/media/tutorials/IDR0028-LM2_siGENOME_1A_Well_C3_Field_10.png)
 
 # 1. Record Commands with the Macro Recorder
 
@@ -33,48 +34,48 @@ This tutorial demonstrates how to
 
 To start the macro recorder, go to `Plugins > Macros > Record`:
 
-![Macro Recorder location on plugins menu](../../media/tutorials/screenshot-plugins-macro-record.PNG)
+![Macro Recorder location on plugins menu](/media/tutorials/screenshot-plugins-macro-record.PNG)
 
 Every command you now access through ImageJ's menu will be recorded as a line of text in the macro recorder.
 
 > [!IMPORTANT]
-> The vast majority of the functionality in ImageJ/FIJI's menus is macro-recordable. Occasionally, some commands will not be recorded, or not recorded correctly. Please refer to the documentation and [image.sc](https://forum.image.sc/) in such cases.
+> The vast majority of the functionality in ImageJ/Fiji's menus is macro-recordable. Occasionally, some commands will not be recorded, or not recorded correctly. Please refer to the documentation and [image.sc](https://forum.image.sc/) in such cases.
 
 ## 1.2 Perform a simple workflow
 
 Perform a series of commands that you would like to automate with a macro. 
 
-![ImageJ Macro Recorder](../../media/tutorials/screenshot-macro-recorder-with-commands.PNG)
+![ImageJ Macro Recorder](/media/tutorials/screenshot-macro-recorder-with-commands.PNG)
 
 The commands recorded below resulted from:
 1. Opening of an image with [Bio-Formats](https://www.openmicroscopy.org/bio-formats/), splitting channels into separate windows.
 2. Selecting the first channel containing the nuclei
 
-![Raw image](../../media/tutorials/00raw.png)
+![Raw image](/media/tutorials/00raw.png)
 
 3. Applying a Gaussian blur
 
-![Gaussian blur](../../media/tutorials/01gaussian_blur.png)
+![Gaussian blur](/media/tutorials/01gaussian_blur.png)
 
 4. Thresholding the image with the default method
 
-![Threshold](../../media/tutorials/02threshold.png)
+![Threshold](/media/tutorials/02threshold.png)
 
 5. Using the Watershed algorithm to separate adjacent objects
 
-![Watershed](../../media/tutorials/03watershed.png)
+![Watershed](/media/tutorials/03watershed.png)
 
-6. Generating a particle count using the `summarize` option in the [Analyze Particles](https://imagej.net/ij/docs/guide/146-30.html#sub:Analyze-Particles...) tool.
+6. Generating a particle count using the `summarize` option in the [Analyze Particles](/ij/docs/guide/146-30.html#sub:Analyze-Particles...) tool.
 
 The result of the commands recorded above should look like this:
 
-![Workflow output](../../media/tutorials/screenshot-workflow-output.PNG)
+![Workflow output](/media/tutorials/screenshot-workflow-output.PNG)
 
 # 2. Edit the Output from the Macro Recorder
 
-It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](https://imagej.net/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
+It's possible to edit commands directly within the Macro Recorder, but it's probably easier to use the [Script Editor](/scripting/script-editor). You can launch the Script Editor directly from the Macro Recorder by clicking the `Create` button.
 
-![Macro Recorder create button](../../media/tutorials/screenshot-macro-recorder-create.PNG)
+![Macro Recorder create button](/media/tutorials/screenshot-macro-recorder-create.PNG)
 
 ## 2.1 Save your macro and run it
 
@@ -188,7 +189,7 @@ for (i = 0; i < 10; i++) {
 ```
 ...and should now produce some meaningful output when run:
 
-![Particle Analyzer summary output](../../media/tutorials/screenshot-particle-analyzer-summary-output.PNG)
+![Particle Analyzer summary output](/media/tutorials/screenshot-particle-analyzer-summary-output.PNG)
 
 ## 3.3 Run the loop for the required number of times
 
@@ -335,7 +336,7 @@ As an alternative to the `getDirectory` statements used above, it is possible to
 
 ## 6.1 Specify inputs and outputs
 
-We can create and customise a [Generic Dialog](../../scripting/generic-dialog) to obtain a variety of different inputs from the user. We can also use this interface to provide instructions to the user. Let's begin with a simple dialog that prompts the user to specify input and output directories:
+We can create and customise a [Generic Dialog](/scripting/generic-dialog) to obtain a variety of different inputs from the user. We can also use this interface to provide instructions to the user. Let's begin with a simple dialog that prompts the user to specify input and output directories:
 
 ```javascript
 // Initialise variables
@@ -360,7 +361,7 @@ The code above does three things:
 
 Running the macro now should produce the following dialog:
 
-![Macro simple dialog](../../media/tutorials/screenshot-macro-dialog-1.png)
+![Macro simple dialog](/media/tutorials/screenshot-macro-dialog-1.png)
 
 ## 6.2 Modifying parameters via a dialog
 
@@ -400,7 +401,7 @@ thresholdMethod = Dialog.getChoice();
 
 Running the macro will now produce a dialog that looks like this:
 
-![Macro advanced dialog](../../media/tutorials/screenshot-macro-dialog-2.png)
+![Macro advanced dialog](/media/tutorials/screenshot-macro-dialog-2.png)
 
 In order for the variables captured from the dialog to have any effect, we must modify the remainder of the code, placing the variables where they are needed.
 
@@ -541,7 +542,7 @@ setBatchMode(false);
 
 # 7. Installing the Macro
 
-It is possible to ["install" macros in ImageJ](https://imagej.net/scripting/macro#installing-macros), such that they appear on the Plugins menu. While this is not necessary to run a macro, which can always be opened and exectued as is, this can be a good idea if you need to run the script regularly. In order to do so, we first need to wrap our macro in `macro` blocks. With the `macro` blocks added, our complete macro now looks as follows:
+It is possible to ["install" macros in ImageJ](/scripting/macro#installing-macros), such that they appear on the Plugins menu. While this is not necessary to run a macro, which can always be opened and executed as is, this can be a good idea if you need to run the script regularly. In order to do so, we first need to wrap our macro in `macro` blocks. With the `macro` blocks added, our complete macro now looks as follows:
 ```javascript
 macro "Batch Nuclei Counter" {
 
@@ -620,9 +621,9 @@ macro "Batch Nuclei Counter" {
 	setBatchMode(false);
 }
 ```
-Find the _scripts_ folder within your ImageJ/FIJI installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
+Find the _scripts_ folder within your ImageJ/Fiji installation and save your macro within the _Plugins_ subdirectory. You should now see your macro appear at the bottom of the Plugins menu when you restart the application:
 
-![Macro dialog](../../media/tutorials/screenshot-plugins-installed-macro.PNG)
+![Macro dialog](/media/tutorials/screenshot-plugins-installed-macro.PNG)
 
 # See also
 -   [Batch Processing](/batch)
