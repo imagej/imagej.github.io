@@ -10,8 +10,8 @@ source-url: https://github.com/chenli-git/FijiGui
 ---
 
 ## Overview
-
-## Installation in Fiji
+please check github link for relevant info
+https://github.com/chenli-git/FijiGui
 
 ## Reference
 
