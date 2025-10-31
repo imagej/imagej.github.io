@@ -50,7 +50,7 @@ We give below a tested procude to install omnipose on a Mac Intel, Mac M1 to M3 
 
 An example Windows installation working on GPU (may need to adapt the cuda version to your drivers):
 ```sh
-mamba create -n omnipose-106 'python==3.9.18' pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia -y
+mamba create -n omnipose-106 python==3.9.18 pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia -y
 mamba activate omnipose-106
 pip install natsort
 pip install scipy==1.11.4
