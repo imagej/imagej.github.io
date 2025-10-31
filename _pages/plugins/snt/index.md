@@ -33,7 +33,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/walkthroughs#full-automated-tracing) of segmented images
 /media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#bundled-templates) co-exist with graphical user interface operations
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
-/media/plugins/snt/snt-notebook.png | Scripting in native python through [pyimagej](/scripting/pyimagej)
+/media/plugins/snt/snt-notebook.png | Scripting in native Python using [PySNT](https://pysnt.readthedocs.io/en/latest/)
 /media/plugins/snt/snt-delaunay-triangulation.png | Delaunay tessellation: Tracings can be used in [image processing routines](/plugins/snt/manual#process-)
 /media/plugins/snt/snt-density-map.png | Density maps for group(s) of cells obtained from [built-in scripts](/plugins/snt/scripting#bundled-templates)
 /media/plugins/snt/snt-recviewer-convexhull-and-surface.png | [Convex hulls](/plugins/snt/analysis#convex-hull-analysis) and [surface annotations](/plugins/snt/reconstruction-viewer#geometric-annotations)
