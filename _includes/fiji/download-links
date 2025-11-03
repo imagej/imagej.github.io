@@ -71,7 +71,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-linux64-jdk.zip"><button class="download" title="Download fiji-latest-linux64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-linux64-jdk.zip"><button class="download" title="Download fiji-latest-linux64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-linux64-jdk.zip"><button class="download" title="Download fiji-latest-linux64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-linux64-jdk.zip"><button class="download" title="Download fiji-latest-linux64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -81,7 +81,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-linux-arm64-jdk.zip"><button class="download" title="Download fiji-latest-linux-arm64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-linux-arm64-jdk.zip"><button class="download"  title="Download fiji-latest-linux-arm64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-linux-arm64-jdk.zip"><button class="download"  title="Download fiji-latest-linux-arm64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-linux-arm64-jdk.zip"><button class="download"  title="Download fiji-latest-linux-arm64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -93,7 +93,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-macos64-jdk.zip"><button class="download" title="Download fiji-latest-macos64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-macos64-jdk.zip"><button class="download" title="Download fiji-latest-macos64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-macos64-jdk.zip"><button class="download" title="Download fiji-latest-macos64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-macos64-jdk.zip"><button class="download" title="Download fiji-latest-macos64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -103,7 +103,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-macos-arm64-jdk.zip"><button class="download" title="Download fiji-macos-arm64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-macos-arm64-jdk.zip"><button class="download" title="Download fiji-latest-macos-arm64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-macos-arm64-jdk.zip"><button class="download" title="Download fiji-latest-macos-arm64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-macos-arm64-jdk.zip"><button class="download" title="Download fiji-latest-macos-arm64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -115,7 +115,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-win64-jdk.zip"><button class="download" title="Download fiji-latest-win64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-win64-jdk.zip"><button class="download" title="Download fiji-latest-win64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-win64-jdk.zip"><button class="download" title="Download fiji-latest-win64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-win64-jdk.zip"><button class="download" title="Download fiji-latest-win64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -125,7 +125,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-win-arm64-jdk.zip"><button class="download" title="Download fiji-latest-win-arm64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-win-arm64-jdk.zip"><button class="download" title="Download fiji-latest-win-arm64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-win-arm64-jdk.zip"><button class="download" title="Download fiji-latest-win-arm64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-win-arm64-jdk.zip"><button class="download" title="Download fiji-latest-win-arm64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -136,7 +136,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/latest/fiji-latest-portable-nojava.zip"><button class="download" title="Download fiji-latest-portable-nojava from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-latest/fiji-latest-portable-nojava.zip"><button class="download" title="Download fiji-latest-portable-nojava from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-portable-nojava.zip"><button class="download" title="Download fiji-latest-portable-nojava from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/latest/fiji-latest-portable-nojava.zip"><button class="download" title="Download fiji-latest-portable-nojava from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 </tbody>
@@ -168,7 +168,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-linux64-jdk.zip"><button class="download" title="Download fiji-stable-linux64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-linux64-jdk.zip"><button class="download" title="Download fiji-stable-linux64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-linux64-jdk.zip"><button class="download" title="Download fiji-stable-linux64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-linux64-jdk.zip"><button class="download" title="Download fiji-stable-linux64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -180,7 +180,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-macosx-jdk.zip"><button class="download" title="Download fiji-stable-macosx-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-macosx-jdk.zip"><button class="download" title="Download fiji-stable-macosx-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-macosx-jdk.zip"><button class="download" title="Download fiji-stable-macosx-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-macosx-jdk.zip"><button class="download" title="Download fiji-stable-macosx-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -192,7 +192,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-win64-jdk.zip"><button class="download" title="Download fiji-stable-win64-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-win64-jdk.zip"><button class="download" title="Download fiji-stable-win64-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-win64-jdk.zip"><button class="download" title="Download fiji-stable-win64-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-win64-jdk.zip"><button class="download" title="Download fiji-stable-win64-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -202,7 +202,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-win32-jdk.zip"><button class="download" title="Download fiji-stable-win32-jdk from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-win32-jdk.zip"><button class="download" title="Download fiji-stable-win32-jdk from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-win32-jdk.zip"><button class="download" title="Download fiji-stable-win32-jdk from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-win32-jdk.zip"><button class="download" title="Download fiji-stable-win32-jdk from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 
@@ -213,7 +213,7 @@ div.download div.sysreq li {
     <td>
       <a href="https://downloads.imagej.net/fiji/stable/fiji-stable-portable-nojava.zip"><button class="download" title="Download fiji-stable-portable-nojava from US server"><b>&#x2913;</b> US</button></a>
       <a href="https://downloads.micron.ox.ac.uk/fiji_update/mirrors/fiji-stable/fiji-stable-portable-nojava.zip"><button class="download" title="Download fiji-stable-portable-nojava from UK server"><b>&#x2913;</b> UK</button></a>
-      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-portable-nojava.zip"><button class="download" title="Download fiji-stable-portable-nojava from FR server"><b>&#x2913;</b> UK</button></a>
+      <a href="https://mirrors.pasteur.fr/fiji/downloads/stable/fiji-stable-portable-nojava.zip"><button class="download" title="Download fiji-stable-portable-nojava from FR server"><b>&#x2913;</b> FR</button></a>
     </td>
   </tr>
 </tbody>
