@@ -127,7 +127,7 @@ The following table summarizes the dominant license of each project's components
     <tr>
       <td><img src="/media/icons/imagej2.png" width="48"></td>
       <th><a href="/software/imagej2">ImageJ2</a></th>
-      <td><a href="https://github.com/imagej/imagej/blob/-/LICENSE.txt">License</a></td>
+      <td><a href="https://github.com/imagej/imagej2/blob/-/LICENSE.txt">License</a></td>
     </tr>
     <tr>
       <td><img src="/media/icons/scifio.png" width="48"></td>

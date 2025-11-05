@@ -11,7 +11,7 @@ Please report bugs via the [Image.sc Forum](https://forum.image.sc/):
 - Include a [minimal working example](#bug-reporting-best-practices) illustrating the issue.
 - If you know who is responsible for maintaining the affected part of the software, please `@mention` them.
 
-Or if you have a GitHub account, please feel welcome to report issues [on GitHub](https://github.com/imagej/imagej/issues) instead.
+Or if you have a GitHub account, please feel welcome to report issues on GitHub in the [ImageJ](https://github.com/imagej/ImageJ/issues),[ImageJ2](https://github.com/imagej/imagej2/issues), [Fiji](https://github.com/fiji/fiji/issues) repositories.
 
 Thank you! 😁
 

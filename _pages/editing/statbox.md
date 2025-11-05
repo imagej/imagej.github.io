@@ -121,7 +121,7 @@ Several fields have URL/label pairs for better control over display text:
 
 ```yaml
 ---
-release-url: https://github.com/imagej/imagej/releases/tag/v2.14.0
+release-url: https://github.com/imagej/imagej2/releases/tag/v2.14.0
 release-version: "2.14.0"
 license-url: /licensing/bsd
 license-label: "BSD-2"

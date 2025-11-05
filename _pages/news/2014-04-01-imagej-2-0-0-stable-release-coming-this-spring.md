@@ -15,7 +15,7 @@ We are targeting the following goals for a June 1 release of ImageJ 2.0.0:
 5.  Stable release of the {% include github org='imagej' repo='imagej-omero' label='ImageJ-OMERO' %} interoperability library, including support for calling many ImageJ 1.x plugins from [OMERO](http://openmicroscopy.org/info/omero).
 6.  A final logo for ImageJ 2.0.0, chosen by a community logo competition.
 7.  Manuscript drafts for several software components of the [ImageJ software stack](/develop/architecture).
-8.  Cleanup and reconciliation of the [Trac](http://trac.imagej.net/) and [GitHub](https://github.com/imagej/imagej/issues) ImageJ issue trackers.
+8.  Cleanup and reconciliation of the [Trac](http://trac.imagej.net/) and [GitHub](https://github.com/imagej/imagej2/issues) ImageJ issue trackers.
 
 If you have questions or ideas relating to any of these goals, we welcome your feedback on the [Mailing Lists](/discuss/mailing-lists)!
 

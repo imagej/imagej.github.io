@@ -148,7 +148,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>to plan development timelines</p>
       </td>
       <td>
-        <p>Use future <a href="https://guides.github.com/features/issues/#filtering">milestones</a> (e.g., <a href="https://github.com/imagej/imagej/milestones">imagej</a>, <a href="https://github.com/scifio/scifio/milestones">scifio</a>).</p>
+        <p>Use future <a href="https://guides.github.com/features/issues/#filtering">milestones</a> (e.g., <a href="https://github.com/imagej/imagej2/milestones">imagej2</a>, <a href="https://github.com/scifio/scifio/milestones">scifio</a>).</p>
       </td>
     </tr>
     <tr>
@@ -157,7 +157,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
         <p>to report completed features</p>
       </td>
       <td>
-        <p>Use completed <a href="https://guides.github.com/features/issues/#filtering">milestones</a> (e.g., <a href="https://github.com/imagej/imagej/milestones?state=closed">imagej</a>, <a href="https://github.com/scifio/scifio/milestones?state=closed">scifio</a>).</p>
+        <p>Use completed <a href="https://guides.github.com/features/issues/#filtering">milestones</a> (e.g., <a href="https://github.com/imagej/imagej2/milestones?state=closed">imagej2</a>, <a href="https://github.com/scifio/scifio/milestones?state=closed">scifio</a>).</p>
       </td>
     </tr>
   </tbody>

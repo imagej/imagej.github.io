@@ -1876,7 +1876,7 @@ IMPORTANT: notice that, when executing scripts from the command line, there is n
 
 ### Catching errors from a running macro
 
-ImageJ exits with zero even when it fails (see [bug report](https://github.com/imagej/imagej/issues/61)). A possible fix is to convert the macro into a plugin but a quicker fix, is to wrap the macro call into a script. For this purpose, it is enough to check the returned string of `runMacroCode`, which will return the string `[aborted]` in case of [failure](http://javadoc.scijava.org/ImageJ1/ij/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29):
+ImageJ exits with zero even when it fails (see [bug report](https://github.com/imagej/imagej2/issues/61)). A possible fix is to convert the macro into a plugin but a quicker fix, is to wrap the macro call into a script. For this purpose, it is enough to check the returned string of `runMacroCode`, which will return the string `[aborted]` in case of [failure](http://javadoc.scijava.org/ImageJ1/ij/ij/plugin/Macro_Runner.html#runMacro%28java.lang.String,%20java.lang.String%29):
 
 ```python
 from ij import IJ

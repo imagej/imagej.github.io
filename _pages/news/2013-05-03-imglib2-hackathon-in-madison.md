@@ -75,7 +75,7 @@ This has required work on all three projects:
     -   Converted [ImgSaver](https://github.com/hinerm/bioformats/blob/scifio-cell-image/components/scifio-devel/src/ome/scifio/io/img/ImgSaver.java) and [ImgOpener](https://github.com/hinerm/bioformats/blob/scifio-cell-image/components/scifio-devel/src/ome/scifio/io/img/ImgOpener.java) to use the SCIFIO API.
     -   Extended the imglib2 cell components with [SCIFIO cell classes](https://github.com/hinerm/bioformats/tree/scifio-cell-image/components/scifio-devel/src/ome/scifio/io/img/cell). Currently, these components create 2D cells using the optimal tile height/width, as determined by the current SCIFIO reader. The cells are cached per-dataset using soft references to determine when cells are disposed.
 -   ImageJ2
-    -   Updated [DefaultIOService](https://github.com/imagej/imagej/blob/scifio-cells/core/io/src/main/java/imagej/io/DefaultIOService.java) and [SaveImg](https://github.com/imagej/imagej/blob/scifio-cells/plugins/commands/src/main/java/imagej/core/commands/io/SaveAsImage.java) to use the updated SCIFIO ImgOpener and ImgSaver. This also means that IJ2 can read/write all the formats currently supported in SCIFIO.
+    -   Updated [DefaultIOService](https://github.com/imagej/imagej2/blob/scifio-cells/core/io/src/main/java/imagej/io/DefaultIOService.java) and [SaveImg](https://github.com/imagej/imagej2/blob/scifio-cells/plugins/commands/src/main/java/imagej/core/commands/io/SaveAsImage.java) to use the updated SCIFIO ImgOpener and ImgSaver. This also means that IJ2 can read/write all the formats currently supported in SCIFIO.
 
 ### Future plans
 
