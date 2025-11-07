@@ -159,7 +159,10 @@ I originally made this as I had someone who wanted to determine the average thic
 
 ## Major revisions
 
-### New confidence value calculation in 2.3
+### New results table order in v2.3
+The parameter order in the results table has been changed to accomadate multiple Gaussian fitting. This change in order will likely affect script results that automatically read from this output table. Order changed from {Mean, SD, Confidence, R-Squared, Height} to {<Mean, SD, Height, Confidence> (per Gaussian), R-Squared}.  
+
+### New confidence value calculation in v2.3
 With the release of the multi-Gaussian fitting in v2.3, the confidence calculation was changed to use the area under the curve (AUC) of the Gaussian fit curve in place of the subtracted correlogram data. This was changed so that each individual Gaussian of a multi-Gaussian fit would have its own confidence value. 
 
 ### Slightly different results in v2.1
