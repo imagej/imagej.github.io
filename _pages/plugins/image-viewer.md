@@ -28,7 +28,7 @@ If you have a question, feedback or a bug to report, you can post it on the [Ima
 ___
 
 ### Channels and Contrast
-This plugin combines imageJ's "Brightness and Contrast" and "Channels Tool" functionalities to manage visualization of the active image
+This plugin combines imageJ's "Brightness and Contrast" and "Channels Tool" functionalities to manage visualization of the active image       
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true)     
 You can:
 - Change multi-channel display mode: composite, color, or grayscale
@@ -50,7 +50,7 @@ You can change order of LUTs in a palette directly with the mouse from the palet
 - Change LUT order with the mouse
 - Right-click on palette to move or remove LUTs
 - Empty palette channels default to "Grays"     
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true)     
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="400px"}         
 #### LUTs Finder
 The plugin scans all LUTs in your ImageJ `luts` folder
 You can use the search bar and color buttons to filter the list
@@ -95,8 +95,8 @@ With the **Multi Tool**, middle-click on a montage will open the image under the
 - Keep the Preview Opener file in the images folder
 ### Other Commands
 A small collection of utility macros:
-- **Split View:** Quickly create clean multichannel montages
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true)     
+- **Split View:** Quickly create clean multichannel montages       
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="400px"}    
 
 - **Auto Scale Bar:** Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
 - **Auto-Contrast** recordable macro commands similar to the Channels and Contrast buttons
