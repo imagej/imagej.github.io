@@ -3,7 +3,7 @@ title: Image Viewer
 description: utility plugins and macros to control images contast and LUTs
 categories: [Annotation, Interactive, Macro, Microscopy, Montage, Utilities, Visualization]
 ---
-This Update Site provides utility plugins and macros to help with handling and visualization of microscopy images
+This Update Site provides utility plugins and macros to help with handling and visualization of microscopy images        
 If you have a question, feedback or a bug to report, you can post it on the [Image.sc](https://forum.image.sc/t/looking-for-testers-channels-contrast-and-luts-manager-plugins/) Forum
 
 Features include:
