@@ -5,16 +5,16 @@ section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
 nav-links: true
 initial-release-date: "Dec. 9, 2015: First version Ver.1.1.1"
-release-date: "Jan. 30, 2023: Ver.2.4.1"
+release-date: "Oct. 29, 2025: Ver.2.6.1"
 team-maintainer: 'EVIDENT CORPORATION (GLOB-SM-imagejplugin at evidentscientific.com)'
 ---
 
-{% include info-box source='The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.' %}
+{% include info-box source='The source code of plugin is in Evident_Viewer.jar. The source code of native library is not provided.' %}
 
 This plugin can load EVIDENT vsi/oir/omp2info file formats and show some meta data.
 
 ## New release 
-  Ver.2.4.1 Fix for incorrect colours displayed in some VSI files.
+  Ver.2.6.1 Fix file opening issue in Fiji environment.
 
 ## Download
   Download the latest EvidentViewer ImageJ Plugin for [Windows](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software) and [Mac](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software).
@@ -26,27 +26,27 @@ This plugin can load EVIDENT vsi/oir/omp2info file formats and show some meta da
 
 File Open
 
-1.  Select a menu item {% include bc path="Plugins | OlympusViewer | Viewer" %}
+1.  Select a menu item {% include bc path="Plugins | EvidentViewer | Viewer" %}
 2.  Select a file.
 
 Show Meta Data
 
-1.  Select a menu item {% include bc path="Plugins | OlympusViewer | ShowInfo" %}
+1.  Select a menu item {% include bc path="Plugins | EvidentViewer | ShowInfo" %}
 
 Drag & Drop (ver2.1.1-)
 
-1.  Select a menu item {% include bc path="Plugins | OlympusViewer | DragDrop" %}
+1.  Select a menu item {% include bc path="Plugins | EvidentViewer | DragDrop" %}
 2.  Drop a image file.
 
 Virtual stack mode for large images (ver2.2.1-)
 
-1.  Select a menu item {% include bc path="Plugins | OlympusViewer | DragDrop | Use Virtual Stack" %} for large images
+1.  Select a menu item {% include bc path="Plugins | EvidentViewer | DragDrop | Use Virtual Stack" %} for large images
 2.  Drop a image file.
 
 Use Macro function (ver2.3.1-)
 
 1.  Enable Macro Record function.
-2.  Select menu item {% include bc path="Plugins | OlympusViewer | Viewer" %}
+2.  Select menu item {% include bc path="Plugins | EvidentViewer | Viewer" %}
 3.  Select image file.
 4.  You can see that Macro command was registered.
 
