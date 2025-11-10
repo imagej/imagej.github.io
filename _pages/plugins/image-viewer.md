@@ -71,8 +71,8 @@ Then the Multi Tool can interact with this montage to open the selected image
 ##### **How to use:**
 1. Open the images you want (virtual stacks supported) from a single folder
 2. Adjust display settings
-3. run the command `Create Preview Opener`
-The generated montage will auto-save in the images folder
+3. run the command `Create Preview Opener`       
+The generated montage will auto-save in the images folder         
 With the **Multi Tool**, middle-click on a montage to open the image under the cursor      
   
 ###### **Notes:**
@@ -136,8 +136,11 @@ but it can perform many actions based on the mouse button, modifier keys (shift,
 
 # Other Commands
 A collection of utility macros:
-### **Split View:** Quickly create clean multichannel montages       
+### **Split View:** 
+Quickly create clean multichannel montages       
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
 
-### **Auto Scale Bar:** Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
-### **Auto-Contrast** recordable macro commands reproducing the **Channels and Contrast** buttons
+### **Auto Scale Bar:** 
+Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
+### **Auto-Contrast** 
+Recordable macro commands reproducing the **Channels and Contrast** buttons
