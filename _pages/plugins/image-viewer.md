@@ -48,7 +48,8 @@ You can change order of LUTs in a palette directly with the mouse from the palet
 - Change LUT order with the mouse
 - Right-click on palette to move or remove LUTs
 - Empty palette channels default to "Grays"     
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="600px"}         
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="600px"}        
+
 #### LUTs Finder
 All LUTs in your ImageJ `luts` folder are scanned      
 You can use the search bar and color buttons to filter the list       
@@ -73,6 +74,7 @@ Then the Multi Tool can interact with this montage to open the selected image
 3. run the command `Create Preview Opener`
 The generated montage will auto-save in the images folder
 With the **Multi Tool**, middle-click on a montage to open the image under the cursor      
+  
 ###### **Notes:**
 - Keep the Preview Opener file in the images folder
 - Montage title must include “Preview Opener” (you can add text before/after)
@@ -132,10 +134,10 @@ but it can perform many actions based on the mouse button, modifier keys (shift,
 | Shift + Left Drag  | Live contrast adjustment             |
 | Alt + Left Drag    | Stack/frame scroll                             |    
 
-### Other Commands
+# Other Commands
 A collection of utility macros:
-- **Split View:** Quickly create clean multichannel montages       
+### **Split View:** Quickly create clean multichannel montages       
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
 
-- **Auto Scale Bar:** Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
-- **Auto-Contrast** recordable macro commands reproducing the **Channels and Contrast** buttons
+### **Auto Scale Bar:** Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
+### **Auto-Contrast** recordable macro commands reproducing the **Channels and Contrast** buttons
