@@ -1,5 +1,4 @@
 ---
-mediawiki: Java_3D
 title: Java 3D
 section: Explore:Libraries
 ---
