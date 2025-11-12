@@ -34,7 +34,7 @@ The [Fiji](/software/fiji) distribution of ImageJ includes Java 3D 1.6; see [thi
 
 ## Troubleshooting Java 3D
 
-When [Java 3D](libs/java-3d) does not work, the first order of business is to use {% include bc path='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc path='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
+When Java 3D does not work, the first order of business is to use {% include bc path='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc path='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
 
 ### Command line debugging
 
