@@ -5,96 +5,98 @@ section: Extend:Development
 ---
 
 
- {% include notice icon="info" content='This page has approaches for *software developers* to use for debugging ImageJ.
+ {% include notice icon="info" content='This page has approaches for *software developers* to use for debugging ImageJ and Fiji.
 If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/learn/troubleshooting) page.' %}
 
-# Launching ImageJ in debug mode
+## Launching in debug mode
 
-To debug problems with ImageJ, it is often helpful to launch it in debug mode. See the [Troubleshooting](/learn/troubleshooting#launching-imagej-from-the-console) page for instructions.
+To debug problems, it is often helpful to launch in debug mode. See the [Troubleshooting](/learn/troubleshooting#launching-imagej-from-the-console) page for instructions.
 
-## Attaching to ImageJ instances
+### Attaching to running instances
 
-Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in `<ImageJ>/plugins/`, and often we want to bundle them as `.jar` files, both of which are incompatible with Eclipse debugging). JDWP (*Java Debug Wire Protocol*) to the rescue!
+Sometimes, we need to debug things directly in ImageJ, for example because there might be issues with the plugin discovery (ImageJ wants to find the plugins in `ImageJ/plugins/`, and often we want to bundle them as `.jar` files, both of which are incompatible with Eclipse debugging). JDWP (*Java Debug Wire Protocol*) to the rescue!
 
-After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start ImageJ in said mode, you need to pass the `--debugger=<port>` option:
+After starting the Java Virtual Machine in a special mode, debuggers (such as Eclipse's built-in one) can attach to it. To start in said mode, you need to pass the `--debugger=<port>` option:
 
 ```shell
-./ImageJ-linux64 --debugger=8000
+./fiji --debugger=8000
 ```
 
 In Eclipse (or whatever {% include wikipedia title='JDWP' text='JDWP'%}-enabled debugger) select the correct project so that the source code can be found, mark the break-points where you want execution to halt (e.g. to inspect variables' values), and after clicking on {% include bc path="Run|Debug Configurations..." %} right-click on the *Remote Java Application* item in the left-hand side list and select *New*. Now you only need to make sure that the port matches the value that you specified (in the example above, `8000`, Eclipse's default port number).
 
-If you require more control over the ImageJ side—such as picking a semi-random port if port 8000 is already in use—you can also use the `-agentlib:jdwp=...` Java option directly (`--debugger=<port>` is just a shortcut for convenience):
+If you require more control over the debugger configuration, you can also use the `-agentlib:jdwp=...` Java option directly (`--debugger=<port>` is just a shortcut for convenience):
 
 ```
-./ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
+./fiji -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
 ```
-(the `--` marker separates the Java options—if any—from the ImageJ options). Once started that way, ImageJ will wait for the debugger to be attached, after printing a message such as:
+(the `--` marker separates the Java options—if any—from the program options). Once started that way, ImageJ will wait for the debugger to be attached, after printing a message such as:
 ```
 > Listening for transport dt\_socket at address: 46317
 ```
 {% include notice icon='info' content="Calling `imagej -agentlib:jdwp=help --` will print nice usage information with documentation of other JDWP options." %}
 
-## Attach ImageJ to a waiting Eclipse
+### Attach ImageJ to a waiting Eclipse
 
 Instead of making ImageJ [the debugging server](#attaching-to-imagej-instances), when debugging startup events and headless operations it is easier to make ImageJ the client and Eclipse (or equivalent) the server.
 
 In this case you start the debugging session first, e.g. in Eclipse debug configurations you specify "Standard (Socket Listen)" as the connection type. Then, simply start ImageJ without the `server=y` flag to connect and debug:
 
 ```shell
-./ImageJ-linux64 -agentlib:jdwp=suspend=y,transport=dt_socket,address=localhost:8000 --
+./fiji -agentlib:jdwp=suspend=y,transport=dt_socket,address=localhost:8000 --
 ```
 
-# Monitoring system calls
+## Monitoring system calls
 
-## Linux
+### Linux
 
 On Linux, you should call ImageJ using the [strace command](http://www.linuxmanpages.com/man1/strace.1.php):
 
 ```shell
-strace -Ffo syscall.log ./imagej <args>
+strace -Ffo syscall.log ./fiji <args>
 ```
 
-## macOS
+### macOS
 
 Use the `dtruss` wrapper around [dtrace](http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/dtrace.1.html) to monitor system calls:
 
 ```shell
-dtruss ./imagej <args>
+dtruss ./fiji <args>
 ```
 
-## Windows
+### Windows
 
 To monitor all kinds of aspects of processes on Windows, use [Sysinternal's Process Monitor](http://technet.microsoft.com/en-us/sysinternals/bb896645.aspx).
 
-# Debugging shared (dynamic) library issues
+## Debugging shared (dynamic) library issues
 
-## Linux
+### Linux
 
 Set the `LD_DEBUG` environment variable before launching ImageJ:
 
 ```shell
-LD_DEBUG=1 ./imagej <args>
+LD_DEBUG=1 ./fiji <args>
 ```
 
-## macOS
+### macOS
 
 Set the `DYLD_PRINT_APIS` environment variable before launching ImageJ:
 
 ```shell
-DYLD_PRINT_APIS=1 ./imagej <args>
+DYLD_PRINT_APIS=1 ./fiji <args>
 ```
 
-## Windows
+### Windows
 
 Often, dynamic library issues are connected to a dependent .dll file missing. Download [depends.exe](http://www.dependencywalker.com/) and load the .dll file you suspect is missing a dependency.
 
-# Debugging JVM hangs
+## Debugging JVM hangs
 
 When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack trace](/learn/troubleshooting#if-imagej-freezes-or-hangs). If you have trouble, you can try one of the following advanced techniques:
 
 1.  You can use the `jstack` command (you don't need to run ImageJ from the command line in this case). This requires that you first find the PID (process ID) of ImageJ. You can do so by running:
-        jps
+    ```shell
+    jps
+	```
 
     from the command line to print a list of running Java processes. If you're not sure which PID is ImageJ's, you can close ImageJ, run `jps`, open ImageJ and run `jps` again. Whichever PID is present in the second run but not the first is ImageJ's. Then, to acquire a stack trace, just run:
     ```shell
@@ -104,31 +106,31 @@ When the Java VM hangs, the reason might be a dead-lock. Try taking a [stack tra
 
 Regardless of which method you use to acquire the stack trace, to debug you will want to acquire multiple stack traces over time and compare. If all the stack traces are in the same method execution, then that's the source of the deadlock (or slowdown).
 
-# Debugging memory leaks
+## Debugging memory leaks
 
 Sometimes, memory is not released properly, leading to `OutOfMemoryException`.
 
 One way to find out what is happening is to use `jvisualvm` (see [\#Debugging JVM hangs](#debugging-jvm-hangs)) to connect to the ImageJ process, click on *Heap Dump* in the *Monitor* tab, in said tab select the sub-tab *Classes* and sort by size. Double-clicking on the top user should get you to a detailed list of *Instances* where you can expand the tree of references to find out what is holding a reference still.
 
-# Debugging hard JVM crashes
+## Debugging hard JVM crashes
 
 When you have found an issue that crashes the JVM, and you can repeat that crash reliably, there are a number of options to find out what is going on.
 
-## Using gdb
+### Using gdb
 
 Typically when you debug a program that crashes, you start it in a debugger, to inspect the stack trace and the variables at the time of the crash. However, there are substantial problems with gdb when starting the Java VM; either gdb gets confused by segmentation faults (used by the JVM to handle NullPointerExceptions in an efficient manner), or it gets confused by the threading system—unless you compile gdb yourself.
 
 But there is a very easy method to use gdb to inspect serious errors such as segmentation faults or trap signals nevertheless:
 
 ```shell
-./imagej -XX:OnError="gdb - %p" --
+./fiji -XX:OnError="gdb - %p" --
 ```
 
-## Using lldb
+### Using lldb
 
 On newer macOS versions, gdb has been replaced with lldb. For those familiar with gdb already, there is an [LLDB to GDB Command Map](http://lldb.llvm.org/lldb-gdb.html) cheat sheet which may be useful.
 
-## Using the `hs_err_pid<pid>.log` files
+### Using the `hs_err_pid<pid>.log` files
 
 The Java virtual machine (JVM) frequently leaves files of the format `hs_err_pid<number>.log` in the current working directory after a crash. Such a file starts with a preamble similar to this:
 
@@ -154,12 +156,12 @@ followed by thread dumps and other useful information including the command-line
 
 The most important part is the line after the line `# Problematic frame:` because it usually gives you an idea in which component the crash was triggered.
 
-## Out of memory error
+### Out of memory error
 
 If the specific exception you're receiving (or you suspect) is an `OutOfMemoryError`, there are JVM flags that can be enabled when running ImageJ to help pinpoint the problem:
 
 ```shell
-./imagej -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
+./fiji -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/desired/path/
 ```
 
 The first option:
@@ -180,9 +182,9 @@ is not required, but convenient for controlling where the resulting `.hprof` fil
 
 After acquiring a heap dump, you can analyze it yourself, e.g. with a [memory analyzer](http://www.eclipse.org/mat/), or post on the [Image.sc Forum](/discuss) with a brief explanation of your problem.
 
-# Debugging Java code with jdb
+## Debugging Java code with jdb
 
-## How to attach the Java debugger jdb to a running ImageJ process
+### How to attach the Java debugger jdb to a running process
 
 This requires two separate processes, ImageJ itself and the debugger. You can do this either in one shell, backgrounding the first process or in two shells, this is recommended. In the two shells do the following:
 
@@ -190,7 +192,7 @@ Shell 1
 In the first shell, start ImageJ with special parameters to open a port (8000 in this case) to which jdb can connect afterwards:
 
 ```shell
-./ImageJ-linux64 --debugger=8000,suspend=y --
+./fiji --debugger=8000,suspend=y --
 ```
 
 Shell 2
@@ -200,7 +202,7 @@ In the second shell, tell `jdb` to attach to that port:
 jdb -attach 8000
 ```
 
-## This is an ultra quick start to jdb, the default Java debugger
+### This is an ultra quick start to jdb, the default Java debugger
 
 Hopefully you are a little familiar with gdb, since jdb resembles it lightly.
 
@@ -269,7 +271,7 @@ main[1] cont
 The application exited
 ```
 
-# Inspecting serialized objects
+## Inspecting serialized objects
 
 If you have a file with a serialized object, you can use this BeanShell in the [Script Editor](/scripting/script-editor) to open a tree view of the object (double-click to open/close the branches of the view):
 
@@ -292,116 +294,17 @@ if (dialog.getDirectory() != null) {
 }
 ```
 
-# Debugging Swing (Event Dispatch Thread) issues
+## Debugging Swing (Event Dispatch Thread) issues
 
 Swing does not allow us to call all the methods on all UI objects from wherever we want. Some things, such as `setVisible(true)` or `pack()` need to be called on the Event Dispatch Thread (AKA EDT). See Sun's [detailed explanation](http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html) as to why this is the case.
 
 There are a couple of ways to test for such EDT violations, see [this blog post by Alexander Potochkin](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_swing.html) (current versions of debug.jar can be found [here](http://java.net/projects/swinghelper/sources/svn/show/trunk/www/bin)).
 
-# Debugging Java3D issues
+## Debugging Java 3D issues
 
-When Java3D does not work, the first order of business is to use {% include bc path='Plugins | Utilities | Debugging | Test Java3D'%}. If this shows a rotating cube, but the [3D Viewer](/plugins/3d-viewer) does not work, please click on {% include bc path='Help | Java3D Properties...'%} in the [3D Viewer](/plugins/3d-viewer)'s menu bar.
+See [Troubleshooting Java 3D](/libs/java-3d#troubleshooting-java-3d).
 
-## Command line debugging
-
-If this information is not enough to solve the trouble, or if `Test Java3D` did not work, then you need to call ImageJ from the command line to find out more.
-
-From the command line, you have several options to show more or less information about Java3D.
-
-### Windows & Linux
-
-Please find the `ImageJ-<platform>` executable in your ImageJ/ImageJ2/Fiji installation directory (on 32-bit Windows, that would be `ImageJ-win32.exe`. Make a copy in the same directory and rename that to `debug` (on Windows: `debug.exe`). Simply double-click that.
-
-On Windows, you will see a console window popping up; to copy information for pasting somewhere else, please right-click the upper-left window icon, select *Properties...*, activate the *Quick Edit* mode. Then mark the text in question by dragging the mouse with the left mouse button pressed, and copy it to the clipboard by right-clicking.
-
-On Linux, the output will be written to the file `.xsession-errors` in the home directory.
-
-### macOS
-
-On macOS, you need to remember that any application is just a directory with a special layout. So you can call it like this from the *Terminal* (which you will find in the Finder by clicking on {% include bc path="Go|Utilities" %}. Example command line:
-
-```shell
-cd /Applications/ImageJ2.app/Contents/MacOS/
-cp ImageJ-macosx debug
-./debug
-```
-
-## Show Java3D debug messages
-
-```shell
-./imagej -Dj3d.debug=true --
-```
-
-(Of course, you need to substitute the `./imagej` executable name with the appropriate name for your platform.)
-
-{% include notice icon="note" content="Do not forget the trailing `--`; without them, ImageJ mistakes the first option for an ImageJ option rather than a Java one. And on Windows, you *must not* forget to pass the `--console` option (this can be anywhere on the command line)." %}
-
-## Windows-specific stuff
-
-On Windows, you can choose between OpenGL and Direct3D by passing `-Dj3d.rend=ogl` or `-Dj3d.rend=d3d`, respectively.
-
-Further, some setups require enough RAM to be reserved, so you might need to pass an option like `--mem=1200m` (make sure that you have enough RAM free before starting ImageJ that way, though!). If it turns out that memory was the issue, you can make the setting permanent by clicking ImageJ's {% include bc path='Edit | Options | Memory & Threads...'%} menu entry.
-
-## More Java 3D properties
-
-You can control quite a few things in Java 3D through setting Java properties. Remember, you can set properties using a command line like this:
-
-```shell
-./imagej -D<property-name>=<property-value> --
-```
-
-where you substitute `<property-name>` and `<property-values>` appropriately. You can have more than one such option, but make sure that they are appearing before the `--` on the command line, otherwise ImageJ will mistake them for ImageJ options.
-
-This list of Java 3D properties was salvaged from the now-defunct j3d.org website:
-
-
-| Property                         | Values                | Java 3D version | Explanation |
-|----------------------------------|-----------------------|-----------------|-------------|
-| `j3d.rend`                       | `ogl` or `d3d`        | 1.3.2           | Win32-only. Specifies which underlying rendering API should be used (thus allowing both Direct3D and OpenGL native DLLs to be installed on a singe machine. (default value `ogl`) |
-| `j3d.deviceSampleTime`           | A time in millseconds | 1.1             | The sample time for non-blocking input devices (default value is 5ms). |
-| `j3d.disablecompile`             | N/A                   | 1.2             | If set turns off the ability to internally .compile() the scenegraph. |
-| `j3d.docompaction`               | true or false         | 1.3             | Default true. Controls whether or not objects are removed from the render cache when they haven't been visibile for a while. If it is disabled, they stay in the render cache from when they are first visible until they are removed from the scene graph. |
-| `j3d.forceReleaseView`           | true or false         | 1.3.2           | Default false. If this flag is set to true, the view is released after the Canvas3D is removed from the view. Can be used if you have memory leaks after disposing Canvas3D. Note: Setting this flag as true disables the bug fix 4267395 in View deactivate() |
-| `j3d.implicitAntialiasing`       | true or false         | 1.3             | Default false. By default, full scene antialiasing is disabled if a multisampling pixel format (or visual) is chosen. To honor a display drivers multisample antialiasing setting (e.g. force scene antialiasing), set the implicitAntialiasing property to true. This causes Java3D to ignore its own scene antialias settings, letting the driver implicitly implement the feature |
-| `j3d.optimizeForSpace`           | true or false         | 1.3             | Default true Java3d only builds display list for by-copy geometry. Set to false will cause Java3d to build display list for by-ref geometry and infrequently changing geometry using more space, but having greater speed. |
-| `j3d.renderLock`                 | true or false         | 1.3             | JDK requires getting the JAWT_DrawingSurfaceInfo and lock the surface before Java3D render on the canvas. (see comment on jdk/include/jawt.h in the SDK) Default false causes Java3D to lock the surface before rendering and unlock it afterwards for onScreen rendering in the Renderer thread. For OffScreen rendering and for front/back buffer swapping the lock will not acquired. Setting the value to true will force Java3D lock the surface using the AWT mechanism before swap() and for offScreen rendering. This may be useful for some driver/OS to workaround problem. But in general the default should work. |
-| `j3d.threadLimit`                | An integer            | 1.2             | Controls how many threads may run in parallel regardless of how many cpu's the system has. Setting it to "1" will make the system act like a traditional OpenGL render loop. The default value is the number of CPUs in your machine + 1. |
-| `j3d.transparentOffScreen`       | true or false         | 1.3.2           | Default false. If this flag is set to true the background of the off screen canvas is set to transparent. |
-| `j3d.usePbuffer`                 | true or false         | 1.3.2           | Default true. If this flag is set to false pbuffer will not be use for off screen rendering. |
-| `j3d.viewFrustumCulling`         | true or false         | 1.3.2           | Default true. If this flag is set to false, the renderer view frustum culling is turned off. Java 3D uses a 2 pass view culling. The first pass is a loose view culling of the spatial tree, and the second pass is a tight view frustum culling in the renderer before sending the geometry down to the low level graphics API. This property is to control the renderer view frustum culling, and it will not affect the first pass view culling. |
-| `javax.media.j3d.compileStats`   | N/A                   | ??              | Output scenegraph compilation statistics |
-| `javax.media.j3d.compileVerbose` | N/A                   | ??              | Output verbose message when compiling scenegraph |
-
-### OpenGL only
-
-| Property                      | Values        | Java 3D version | Explanation |
-|-------------------------------|---------------|-----------------|-------------|
-| `j3d.backgroundtexture`       | true or false | 1.3             | Prior to Java3D 1.3 OGL version of Java3D used `glDrawPixels()` to render background, which is known to be very slow under Windows since most window driver did not accelerate the function. To workaround this performance problem current release uses textures for the backgrond under windows by default (`glDrawPixels()` is used as default under Solaris). Setting this flag to false will force Java3D fall back to use `glDrawPixels()` instead of texture when drawing background texture in case it provide better performance under some drivers. |
-| `j3d.disableSeparateSpecular` | true or false | 1.2             | Default true enables the use of specular highlights in textures when using OpenGL 1.2. |
-| `j3d.disableXinerama`         | true or false | 1.3             | Solaris version only. Allows major performance boost when using dual screen environments with the X11 Xinerama extension enabled. To disable this feature you need JDK1.4. Detailed information in the release notes. |
-| `j3d.displaylist`             | true or false | 1.2             | Default true to use display lists (an OpenGL performance enhancing feature). False to disable for debugging. |
-| `j3d.g2ddrawpixel`            | true or false | 1.1             | If false, this will use texture mapping instead of glDrawPixel to flush the graphics2D to the screen. glDrawPixel is not accelerated on some older video cards (windows). |
-| `j3d.sharedctx`               | true or false | 1.2             | Default true for Solaris and false for windows. Shared contexts are used in OpenGL for DisplayLists and Texture Objects to improve performance. However some drivers have bugs causing weird rendering artifacts. This can be used to disable their use to see if this is the problem. |
-| `j3d.sharedstereozbuffer`     | true or false | 1.2             | Some framebuffers only have one Z buffer and share this between the left and right eyes. This may be the reason why they don't have quad buffer but can still support stereo by setting this flag to true. |
-| `j3d.usecombiners`            | true or false | 1.3             | Default false, uses the standard OpenGL all environment options. When set to true, it will make use of the Nvidia register combiner extensions to OpenGL for for Texture combine modes such as `COMBINE_INTERPOLATE`, `COMBINE_DOT3`. (i.e. `GL_NV_register_combiners` instead of standard OpenGL call `glTexEnvi(GL_TEXTURE_ENV, ...)`). It can be use in case like Dot3 texture when the driver does not support OpenGL extension `GL_ARB_texture_env_dot3/GL_EXT_texture_env_dot3` but it supports the `GL_NV_register_combiners` extension instead. |
-
-### Direct3D only
-
-| Property                  | Values                                                    | Java 3D version | Explanation |
-|---------------------------|-----------------------------------------------------------|-----------------|-------------|
-| `j3d.d3ddevice`           | `emulation` or `hardware` or `tnlhardware` or `reference` | 1.2             | Forces the software to use a particular mode for the underlying graphics accelaration. The reference option is only available if you have the Direct3D SDK installed (very unlikely). |
-| `j3d.d3ddriver`           | `idx`                                                     | 1.2             | For cards like Voodoo that run fullscreen 3D only. idx is the order DirectX enumerates its driver using DirectDrawEnumerateEx(). This number starts at 1. This will force Java3D to use the driver specified by the user (may fail if the driver is not compatible with display). The driver number and details can be found by using the j3d.debug property. For a typical setup of a 3D only card attach to a graphics card in a single monitor system, use idx=2. This will automatically toggle to fullscreen hardware accelerated mode since if the 3D card support 3D only. |
-| `j3d.debug`               | true or false                                             | 1.1             | Prints out startup and running information. Useful for finding out information about the underlying hardware setup. |
-| `j3d.fullscreen`          | `PREFERRED` or `REQUIRED` or `UNNECESSARY`                | 1.2             | Option to force Java3D to run in fullscreen mode for video cards that will only use hardware accelaration when using fullscreen (non-windowed) mode, like the older Voodoo series. |
-| `j3d.vertexbuffer`        | true or false                                             | 1.2             | false to turn off the use of vertex buffers (a D3D performance enhancing feature equivalent to OpenGL display lists). Some drivers have implementation problems so it might be worth turning this off if you get crashes. Utility Classes |
-| `j3d.audiodevice`         | A quote string containing a class name                    | 1.3.2           | SimpleUniverse utility classes. Takes the name of a concrete subclass of com.sun.j3d.audioengines.AudioEngine3DL2 that will be constructed by Viewer.createAudioDevice(). The default value is null, which means that audio is disabled by default for applications that call Viewer.createAudioDevice(). j3d.configURL Unknown 1.3.1 Found in the ConfiguredUniverse class. Functionality unknown currently. |
-| `j3d.io.ImageCompression` | `None` or `GZIP` or `JPEG`                                | 1.3.1           | Found in the scenegraph I/O package. Functionality unknown currently. |
-| `j3d.stereo`              | `PREFERRED` or `REQUIRED`                                 | 1.1             | Only used by SimpleUniverse. If you roll your own VirtualUniverse, this property is not used. Controls whether you want Java3D to definitely create stereo mode capable canvases or not |
-| `sun.java2d.d3d`          | true or false                                             | ??              | Default true. Enable Direct3D in Java 2D (not Java 3D, actually). |
-| `sun.java2d.ddoffscreen`  | true or false                                             | ??              | Default true. Enable DirectDraw and Direct3D by Java 2D for off screen images, such as the Swing back buffer (not Java 3D, actually). |
-| `sun.java2d.noddraw`      | true or false                                             | ??              | Default false. Completely disable DirectDraw and Direct3D by Java 2D (not Java 3D, actually). This avoids any problems associated with use of these APIs and their respective drivers. |
-
-# Interactive debugging using a shared Terminal session
+## Interactive debugging using a shared Terminal session
 
 For users running [Linux](/platforms/linux) and [macOS](/platforms/macos) computers (or on [Windows](/platforms/windows), [Cygwin](http://www.cygwin.com/) with an OpenSSH server), one can use an SSH tunnel for a debugging session shared between a user and a developer. All that is needed is a shared account on a public SSH server.
 
@@ -428,5 +331,3 @@ ssh -t $ACCOUNT@$SSHSERVER 'screen -x'
 Since this provides a shared [GNU screen](http://savannah.gnu.org/projects/screen/) session, both the user and the developer can execute commands and see the output. It is even quite common to use the terminal window as sort of a private chat room by typing out what you have to say, ending the line with a {% include key keys='Ctrl|C' %} (lest it get executed as a command).
 
 After the debugging party is over, the user can log out securely by pressing {% include key keys='Ctrl|D' %} to log out from the local machine (since the user typed in their password in the GNU screen session herself, there is no way for the developer to log back in without the user's explicit consent). Another {% include key keys='Ctrl|D' %} will terminate the GNU screen session, and yet another {% include key keys='Ctrl|D' %} will log out from the shared account on the SSH server.
-
-
