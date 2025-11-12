@@ -10,7 +10,7 @@ However, it acquired [macro](/scripting/macro) capabilities, a [batch mode](/scr
 
 Naturally, users want to execute such [macros](/scripting/macro) or [scripts](/scripting) in environments such as clusters where there is no graphical user interface available.
 
-# `--headless` mode
+## `--headless` mode
 
 To address all of these needs, [ImageJ2](/software/imagej2) provides the capability to execute ImageJ plugins, macros and scripts in headless mode. This feature uses bytecode manipulation to patch ImageJ's behavior at runtime, making it possible to start ImageJ in batch mode without instantiating GUI components.
 
@@ -18,30 +18,25 @@ To address all of these needs, [ImageJ2](/software/imagej2) provides the capabil
 ImageJ is. Naturally, these plugins will still try to instantiate GUI
 elements when being called in headless mode, failing.
 
-## Running scripts in headless mode
+### Running scripts in headless mode
 
 Please see the [headless scripting guide](/scripting/headless).
 
-## Running macros in headless mode
+### Running macros in headless mode
 
-To run a *macro* in headless mode via a command prompt, first open a command prompt in the Fiji.app or ImageJ directory where the .exe (on windows) of ImageJ resides.  Then use the following syntax, with the `-macro` command line argument along with the `--headless` option, as follows:
+To run a *macro* in headless mode via a command prompt, first open a command prompt in the directory where a Fiji installation resides. Then use the following syntax, with the `-macro` command line argument along with the `--headless` option, as follows:
 
 ```shell
-ImageJ --headless --console -macro path-to-Macro.ijm
+./fiji --headless -macro path-to-Macro.ijm
 ```
-The `--console` flag is optional, it only ensures that print statements and error messages are shown in the command prompt.    
-However, **it also has a side effect of preventing the command prompt from "returning" after execution**, in effect giving the impression that the code is hanging. This is especially not desirable if calling ImageJ from an external program : the external program would just wait indefinitly for the execution to terminate.   
-**An external program can still access the printed statements without the `--console` flag**, by redirecting the standard/error output of the process (ImageJ.exe).  
-
-If you omit the `--headless` flag, the GUI will open and the macro will be executed.  
+If you omit the `--headless` flag, the GUI will open and the macro will be executed.
 
 If the macro resides in ImageJ's macro directory, it is possible to specify the macro name instead of the actual file path. The file extension is always very recommended but for backwards compatibility, it is not strictly required *only* when specifying the macro name instead of a path.
-
 
 You can even pass parameters to the macro; e.g.:
 
 ```shell
-./ImageJ-win64.exe --headless --console -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'
+./fiji --headless -macro ./RunBatch.ijm 'folder=../folder1 parameters=a.properties output=../samples/Output'
 ```
 
 In that case, the RunBatch.ijm file should be something like:
@@ -59,10 +54,9 @@ the `getArgument()` is used to grab the parameter string itself, and it is then 
 
 {% include notice icon="warning" content='Please note that you will not be able to use [script parameters](/scripting/parameters) with `-macro`. Follow instructions in [Scripting Headless](/scripting/headless) instead.' %}
 
-Some ImageJ commands relying on the GUI do not work in headless mode such as : 
-- `selectWindow("name")`, use `selectImage(title)` instead for images  
+Some commands relying on the GUI do not work in headless mode such as:
+- `selectWindow("name")`, use `selectImage(title)` instead for images
 - `Table.Rename("oldTitle", "newTitle")`
-
 
 {% capture historical-note %}
 Headless support was originally a branch in [ImageJA](/libs/imageja); it worked
@@ -79,8 +73,7 @@ launching ImageJ from the command line.
 {% endcapture %}
 {% include aside title="Historical note" content=historical-note %}
 
-
-# Why is `--headless` needed?
+## Why is `--headless` needed?
 
 Java *does* support a headless mode via the `java.awt.headless` property; setting this property to `true` enables it.
 
@@ -90,8 +83,9 @@ Since ImageJ was devised as a desktop application, everything -- including macro
 
 On macOS, there is no problem: Aqua provides GUI-independent text rendering (mapping to the actual display using anti-aliasing). There, running in headless mode allows instantiating GUI elements such as the menu bar.
 
-# Other solutions
-## Xvfb virtual desktop
+## Other solutions
+
+### Xvfb virtual desktop
 
 Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xvfb' text='Xvfb'%}. This will allow ImageJ to start with a virtualised graphical desktop.
 
@@ -99,7 +93,7 @@ Another method is to have a virtual desktop, e.g. {% include wikipedia title='Xv
 
 **Shortcomings:** It is slower than it needs to be because of the overhead of starting the GUI, it is harder to configure, and plugins might get stuck because they wait for user input which never comes.
 
-### Examples
+#### Examples
 
 Here are a couple of simple examples.
 
@@ -109,7 +103,7 @@ Passing direct arguments:
 $ cat hello.js
 importClass(Packages.ij.IJ);
 IJ.log("hello " + arguments[0]);
-$ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 hello.js Emerson
+$ xvfb-run -a $FIJI_DIR/fiji hello.js Emerson
 hello Emerson
 ```
 
@@ -120,7 +114,7 @@ $ cat hello-with-params.js
 // @String name
 importClass(Packages.ij.IJ);
 IJ.log("hello " + name);
-$ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 --ij2 --headless --run hello-with-params.js 'name="Emerson"'
+$ xvfb-run -a $FIJI_DIR/fiji --ij2 --headless --run hello-with-params.js 'name="Emerson"'
 hello Emerson
 ```
 
@@ -143,6 +137,6 @@ wait # waits until all 'program' processes are finished
 
 See also [this post on the ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;5ace1ed0.1508).
 
-## Rewriting as scripts or plugins
+### Rewriting as scripts or plugins
 
 The most robust method is to rewrite macros as scripts that do not require interaction with the GUI to begin with. Unfortunately, this is the most involved solution, too, since it usually takes some time to convert macros.

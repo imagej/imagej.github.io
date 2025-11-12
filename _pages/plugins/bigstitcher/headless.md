@@ -96,6 +96,6 @@ to process another dataset with a different number of tiles headlessly:
 
 After saving the macro, it can be run from any Terminal by starting Fiji in [Headless](/learn/headless) mode and passing the macro as well as a parameter string.
 
-`   /path/to/fiji/ImageJ-linux64 --headless --console -macro /path/to/macro/bigStitcherBatch.ijm "/path/to/data 2 3"`
+`   /path/to/Fiji/fiji --headless -macro /path/to/macro/bigStitcherBatch.ijm "/path/to/data 2 3"`
 
 Go back to the [main page](/plugins/bigstitcher#documentation)
