@@ -14,7 +14,7 @@ please check [Github link](https://github.com/chenli-git/FijiGui) for relevant i
 
 **EasyFiji** is a graphical user interface for fluorescence image display and processing in Fiji.
 <p align="center">
-    <img src="https://github.com/chenli-git/FijiGui/blob/main/media/Gui_layout.png" width="600">
+    <img src="https://github.com/imagej/imagej.github.io/blob/main/media/plugins/EasyFiji_layout.png" width="600">
 </p>
 
 ## Download options:
