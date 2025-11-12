@@ -22,7 +22,6 @@ please check [Github link](https://github.com/chenli-git/FijiGui) for relevant i
    1. [Click here to download ⬇️](https://github.com/chenli-git/FijiGui/raw/main/target/EasyFiji_2-1.2.0.jar)
    2. After downloading, copy the `.jar` file into your **Fiji.app/plugins/** folder. 
    3. Restart Fiji.
----
 * Download via the ImageJ Update Site:
    1. Launch Fiji and navigate to Help > Update.. in the menu bar.
    2. In the updater window, click Manage Update sites and Search for "EasyFiji" and click "Apply and Close". 
