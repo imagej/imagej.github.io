@@ -4,7 +4,7 @@ description: utility plugins and macros to control images contast and LUTs
 categories: [Annotation, Interactive, Macro, Microscopy, Montage, Utilities, Visualization]
 ---
 This Update Site provides utility plugins and macros to help with handling and visualization of microscopy images        
-If you have a question, feedback or a bug to report, you can post it on the [Image.sc](https://forum.image.sc/t/looking-for-testers-channels-contrast-and-luts-manager-plugins/) Forum
+**If you have a question, feedback or a bug to report, you can post it on the [Image.sc](https://forum.image.sc/t/looking-for-testers-channels-contrast-and-luts-manager-plugins/) Forum**
 
 Features include:
 - Two plugins to control image contrast and LUTs (Look Up Tables)
@@ -27,7 +27,7 @@ But the easiest way is to install the toolbar menu from Image_Viewer_Toolset und
 
 # Channels and Contrast
 This plugin combines imageJ's "Brightness and Contrast" and "Channels Tool" functionalities to manage visualization of the active image       
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true)     
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true){:width="600px"}          
 You can:
 - Change multi-channel display mode: composite, color, or grayscale
 - Adjust all channels display range (contrast)
@@ -48,7 +48,7 @@ You can change order of LUTs in a palette directly with the mouse from the palet
 - Change LUT order with the mouse
 - Right-click on palette to move or remove LUTs
 - Empty palette channels default to "Grays"     
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="600px"}        
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="700px"}        
 
 #### LUTs Finder
 All LUTs in your ImageJ `luts` folder are scanned      
@@ -74,53 +74,49 @@ Then the Multi Tool can interact with this montage to open the selected image
 3. run the command `Create Preview Opener`       
 The generated montage will auto-save in the images folder         
 With the **Multi Tool**, middle-click on a montage to open the image under the cursor      
+
+![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/88d28948-a392-49c4-8b55-5f7f5256d5b0)
   
 ###### **Notes:**
 - Keep the Preview Opener file in the images folder
 - Montage title must include “Preview Opener” (you can add text before/after)
 
 # Multi Tool
-This Tool is a neutral tool 
-but it can perform many actions based on the mouse button, modifier keys (shift, ctrl, alt) and context:
+This Tool is a neutral tool :
 ### **Windows**     
 - **Move Window:**       
-  Left Click and Drag (outside ROI):       
-  Moves the image window position interactively.     
+  Left Click and Drag (outside ROI):  Moves the image window position interactively.     
 - **Reversible Full Screen:**       
-  Double Left Click:       
-  Maximizes/minimizes the image window, reversible to original size.     
-     
+  Double Left Click:  Maximizes the image window, reversible to original size.          
+
+But it can perform many actions based on the mouse button, modifier keys (shift, ctrl, alt) and context:
 ### **Composite Display Switch**     
 - **Switch Composite Display:**       
-  Middle Click on composite image:       
-  Toggle display mode between Composite and Color.     
+  Middle Click on composite image:  Toggle display mode between Composite and Color.        
 ### **ROI**     
 - **Create Rectangular ROI:**       
-  Ctrl + Left Mouse Drag:       
-  Drag to create a rectangular selection.      
+  Ctrl + Left Mouse Drag: creates a rectangular selection.      
 - **Handle Polygon/Point ROI:**       
   Drag ROI handles using Left Mouse and modify selected selection / points.      
 - **Remove ROI:**       
   Ctrl + Click outside the ROI removes the current ROI.     
 ### **Contrast**     
 - **Local Box Auto-Contrast:**       
-  Shift + Alt + Left Click (on non-RGB images):       
-  Creates a fixed-size box ROI and auto-adjusts contrast in its area.     
+  Shift + Alt + Left Click (on non-RGB images): Creates a fixed-size box ROI and auto-adjusts contrast in its area.
+  ![Image-Viewer-Local-Auto-Contrast-1](https://github.com/user-attachments/assets/168e2c92-4cf1-47a3-831a-d1c3255a1f41)
+
 - **Live Contrast Adjustment:**       
-  Shift + Left Mouse Drag (non-RGB images):       
-  Drag pointer in the image to interactively adjust contrast.     
+  Shift + Left Mouse Drag (non-RGB images):  Drag pointer in the image to interactively adjust contrast.
+  ![Image-Viewer-Shift-Contrast](https://github.com/user-attachments/assets/6e97e6d4-1df9-4345-a9f9-4aface1cb516)
+   
 ### **Stack Browsing**     
 - **Live Scroll through Slices/Frames:**       
-  Alt + Left Mouse Drag (on stack/multi-frame images):       
-  Drag horizontally to scroll through slices or frames.     
-     
+  Alt + Left Mouse Drag (on stack/multi-frame images):  Drag horizontally to scroll through slices or frames.     
 ### **Preview Opener interaction**      
 - **Open Image from Preview Opener:**      
   Mouse Over thumbnails will update top left label showing the file name of the selected image.      
   Middle Click on a thumbnail to open the corresponding file.       
-  Caps Lock ON: Opens image as ‘virtual stack’.       
-  Supports standard formats or uses Bio-Formats Importer if needed.        
-![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/88d28948-a392-49c4-8b55-5f7f5256d5b0)
+  If Caps Lock ON: Opens image as ‘virtual stack’.           
 
 ### Multi Tool Shortcuts Summary
 
@@ -130,10 +126,11 @@ but it can perform many actions based on the mouse button, modifier keys (shift,
 | Double Left Click  | Maximize/minimize image window                 |
 | Middle Click       | Composite display toggle / Preview opener open  |
 | Ctrl + Left Drag   | Create rectangle ROI                           |
-| Ctrl + Click out   | Remove current ROI                             |
-| Shift + Alt + Left | Box auto-contrast                  |
+| Ctrl + Click out of ROI  | Remove current ROI                             |
+| Shift + Alt + Left Click | Box auto-contrast                  |
 | Shift + Left Drag  | Live contrast adjustment             |
 | Alt + Left Drag    | Stack/frame scroll                             |    
+{:.left}
 
 # Other Commands
 A collection of utility macros:
