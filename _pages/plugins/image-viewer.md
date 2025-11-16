@@ -102,11 +102,11 @@ But it can perform many actions based on the mouse button, modifier keys (shift,
   Ctrl + Click outside the ROI removes the current ROI.     
 ### **Contrast**     
 - **Local Box Auto-Contrast:**       
-  Shift + Alt + Left Click (on non-RGB images): Creates a fixed-size box ROI and auto-adjusts contrast in its area.
+  Shift + Alt + Left Click (on non-RGB images): Creates a fixed-size box ROI and auto-adjusts contrast in its area.      
   ![Image-Viewer-Local-Auto-Contrast-1](https://github.com/user-attachments/assets/168e2c92-4cf1-47a3-831a-d1c3255a1f41)
 
 - **Live Contrast Adjustment:**       
-  Shift + Left Mouse Drag (non-RGB images):  Drag pointer in the image to interactively adjust contrast.
+  Shift + Left Mouse Drag (non-RGB images):  Drag pointer in the image to interactively adjust contrast.        
   ![Image-Viewer-Shift-Contrast](https://github.com/user-attachments/assets/6e97e6d4-1df9-4345-a9f9-4aface1cb516)
    
 ### **Stack Browsing**     
