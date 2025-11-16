@@ -74,8 +74,7 @@ Then the Multi Tool can interact with this montage to open the selected image
 3. run the command `Create Preview Opener`       
 The generated montage will auto-save in the images folder         
 With the **Multi Tool**, middle-click on a montage to open the image under the cursor      
-
-![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/88d28948-a392-49c4-8b55-5f7f5256d5b0)
+![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/96bcd24a-208d-4628-ad91-884a8d34c5a0){:width="700px"}
   
 ###### **Notes:**
 - Keep the Preview Opener file in the images folder
@@ -88,7 +87,6 @@ This Tool is a neutral tool :
   Left Click and Drag (outside ROI):  Moves the image window position interactively.     
 - **Reversible Full Screen:**       
   Double Left Click:  Maximizes the image window, reversible to original size.          
-
 But it can perform many actions based on the mouse button, modifier keys (shift, ctrl, alt) and context:
 ### **Composite Display Switch**     
 - **Switch Composite Display:**       
@@ -103,12 +101,10 @@ But it can perform many actions based on the mouse button, modifier keys (shift,
 ### **Contrast**     
 - **Local Box Auto-Contrast:**       
   Shift + Alt + Left Click (on non-RGB images): Creates a fixed-size box ROI and auto-adjusts contrast in its area.      
-  ![Image-Viewer-Local-Auto-Contrast-1](https://github.com/user-attachments/assets/168e2c92-4cf1-47a3-831a-d1c3255a1f41)
-
+  ![Image-Viewer-Local-Auto-Contrast-1](https://github.com/user-attachments/assets/4af5fdae-0f32-4762-957f-18947bf2cda8){:width="600px"}           
 - **Live Contrast Adjustment:**       
   Shift + Left Mouse Drag (non-RGB images):  Drag pointer in the image to interactively adjust contrast.        
-  ![Image-Viewer-Shift-Contrast](https://github.com/user-attachments/assets/6e97e6d4-1df9-4345-a9f9-4aface1cb516)
-   
+  ![Image-Viewer-Shift-Contrast](https://github.com/user-attachments/assets/d5f47fc6-9f6d-49e2-a067-8a0075369935){:width="500px"}       
 ### **Stack Browsing**     
 - **Live Scroll through Slices/Frames:**       
   Alt + Left Mouse Drag (on stack/multi-frame images):  Drag horizontally to scroll through slices or frames.     
