@@ -119,8 +119,9 @@ but it can perform many actions based on the mouse button, modifier keys (shift,
   Mouse Over thumbnails will update top left label showing the file name of the selected image.      
   Middle Click on a thumbnail to open the corresponding file.       
   Caps Lock ON: Opens image as ‘virtual stack’.       
-  Supports standard formats or uses Bio-Formats Importer if needed.     
-     
+  Supports standard formats or uses Bio-Formats Importer if needed.        
+![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/88d28948-a392-49c4-8b55-5f7f5256d5b0)
+
 ### Multi Tool Shortcuts Summary
 
 | Mouse & Keys       | Action                                          |
