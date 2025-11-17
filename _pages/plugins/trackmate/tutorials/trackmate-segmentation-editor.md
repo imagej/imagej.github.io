@@ -7,10 +7,6 @@ section: Tips and Tricks:Closing the editor window
 ---
 
 
-{% include notice icon="warning" 
-  content="This feature is not released yet! 
-  It depends on the future version of TrackMate (the forthcoming v8), to be released Autumn 2025 (if everything goes well)." %}
-
 Since version 8, TrackMate ships a new feature that allows editing object shape in 2D. 
 The spot editor is based on [Labkit](/plugins/labkit) components, and is made to simplify and accelerate the creation of tracking ground truth. 
 In this tutorial we will explain how to use it to modify segmentation results directly in TrackMate 
