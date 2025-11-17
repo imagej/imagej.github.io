@@ -9,10 +9,6 @@ artifact: sc.fiji:TrackMate-Cellpose
 
 {% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-R2_multiC.gif" width='400'  %} {% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-01.png"  width='200' %}
 
-{% include notice icon="warning"
-  content="The Cellpose-SAM integration is not deleased yet! 
-  It depends on the future version of TrackMate (the forthcoming v8), to be released Autumn 2025 (if everything goes well)." %}
-
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on the latest version of [cellpose](https://cellpose.readthedocs.io/en/latest/) to segment cells in 2D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following). It also requires cellpose to be installed on your system and working independently. This tutorial page gives installation details and advices at how to use the cellpose integration in TrackMate.
 
 Cellpose-SAM is the latest version of cellpose (at least in August 2025) that leverages a new encoder based on SAM foundational model to achieve better generalizations performance.
