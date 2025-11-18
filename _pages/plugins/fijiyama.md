@@ -14,7 +14,7 @@ maven-repo: https://search.maven.org/artifact/io.github.rocsg/fijiyama/
 
 [![javadoc](https://javadoc.io/badge2/io.github.rocsg/fijiyama/javadoc.svg)](https://javadoc.io/doc/io.github.rocsg/fijiyama)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.rocsg/fijiyama.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.rocsg%22%20AND%20a:%22fijiyama%22)
-[![Downloads](https://img.shields.io/badge/Users%20-+9000%20downloads-orange.svg)](https://img.shields.io/badge)
+[![Downloads](https://img.shields.io/badge/Users%20-+18000%20downloads-orange.svg)](https://img.shields.io/badge)
 
 <i>Current Fijiyama version : Handsome Honeysuckle (last release : October 16<sup>th</sup>, 2022).</i>
 
