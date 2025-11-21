@@ -48,7 +48,7 @@ $$
 h\left(x\right)=\max_{s}\sqrt{d\left(s,C^{c}\right)^{2}-d\left(x,s\right)^{2}}
 $$
 
-where $$d$$ is Euclidean distance, $$C^{c}$$ is the background and $$sS$ is the centre of the equatorial circle. 
+where $$d$$ is Euclidean distance, $$C^{c}$$ is the background and $$s$$ is the centre of the equatorial circle. 
 
  {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion_res.png" caption="Area and mean height of spherical extrusion" %}
 
