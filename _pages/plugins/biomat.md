@@ -40,10 +40,10 @@ Example: [Synthetic contours](https://raw.githubusercontent.com/jiri-janacek/bio
 
 The binary image was extruded into 3D by union
 of balls which equatorial circles are inside the foreground $C$. The
-height of the extrusion $h$ as the function of 2D point $x$ in $A$
+height of the extrusion $h$ as the function of 2D point $x$
 is
 
-$h\left(x\right)=\max_{s}\sqrt{d\left(s,C^{c}\right)^{2}-d\left(x,s\right)^{2}}$
+$$h\left(x\right)=\max_{s}\sqrt{d\left(s,C^{c}\right)^{2}-d\left(x,s\right)^{2}}$$
 
 where $d$ is Euclidean distance, $C^{c}$ is the background and $s$ is the centre of the equatorial circle. 
 
