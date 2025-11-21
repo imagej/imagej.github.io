@@ -3,6 +3,7 @@ mediawiki: Biomat
 name: "Biomat"
 title: Biomat
 categories: [Filtering, Mathematical Morphology]
+extensions: ["mathjax"]
 release-date: "11/26/2024"
 initial-release-date: "03/26/2019"
 team-founder: 'Jiří Janáček'
@@ -43,7 +44,9 @@ of balls which equatorial circles are inside the foreground $C$. The
 height of the extrusion $h$ as the function of 2D point $x$
 is
 
-$$h\left(x\right)=\max_{s}\sqrt{d\left(s,C^{c}\right)^{2}-d\left(x,s\right)^{2}}$$
+$$
+h\left(x\right)=\max_{s}\sqrt{d\left(s,C^{c}\right)^{2}-d\left(x,s\right)^{2}}
+$$
 
 where $d$ is Euclidean distance, $C^{c}$ is the background and $s$ is the centre of the equatorial circle. 
 
