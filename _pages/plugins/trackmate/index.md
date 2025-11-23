@@ -137,6 +137,10 @@ TrackMate has a modular design and ships several algorithms of several types: de
 - [TrackMate Actions](/plugins/trackmate/actions): miscalleneous actions on tracking results.
 - [TrackMate Views](/plugins/trackmate/views): tracking results viewers.
 
+Many of these extra modules connect with an external tool, typically in Python, that needs to be installed via Conda or Mamba. 
+TrackMate needs to know where your conda environments are installed, and this is explained here: [trackmate-conda-path](trackmate-conda-path)
+
+
 ### Downloadable documents and tutorials
 
 - The main manual for TrackMate can be found here:
