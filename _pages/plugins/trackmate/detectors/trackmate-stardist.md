@@ -8,10 +8,17 @@ This page describes a detector module for [TrackMate](/plugins/trackmate/index) 
 
 ## Installation
 
-You need to subscribe to the **CSBDeep** update site and to the **StarDist** update site first, then to the **TrackMate-StarDist** update site:
+You need to subscribe to several update sites:
+- the **CSBDeep** update site,
+- the **Tensorflow** update site,
+- to the **StarDist** update site,
+- then to the **TrackMate-StarDist** update site:
 
 The CSBDeep update site:
 ![Subscribe to the CSBDeep update site](/media/plugins/trackmate/trackmate-stardist-install-csbdeep.png)
+
+The Tensorflow update site:
+![Subscribe to the Tensorflow update site](/media/plugins/trackmate/trackmate-stardist-install-tensorflow.png)
 
 The StarDist update site:
 ![Subscribe to the StarDist update site](/media/plugins/trackmate/trackmate-stardist-install-stardist.png)
