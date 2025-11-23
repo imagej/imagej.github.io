@@ -159,6 +159,13 @@ Again, it compiles several tutorials and developer documentation also linked bel
 
 ## Interoperability
 
+#### GEFF
+
+[GEFF](https://liveimagetrackingtools.org/geff/latest/) is a new, universal file format for exchanging tracking data between tools. 
+While Java support is still in beta, it’s already used in TrackMate (e.g., for the TrackMate-inTRACKtive integration).
+For now, GEFF I/O is shipped as an optional module, that can be installed via an update site.
+The documentation is here: [trackmate-geff](/interoperability/trackmate-geff).
+
 #### Python
 
 Currently the best way to interact with TrackMate data in Python is to use **pycellin**, developed by Laura Xénard. pycellin can read and write many tracking file formats, including TrackMate, and ships many analysis features that work out of the box and will accelerate greatly your work.
