@@ -6,13 +6,10 @@ artifact: sc.fiji:TrackMate
 project: /software/fiji
 ---
 
-{% include notice icon="warning"
-  content="This feature is not released yet! 
-  It depends on the future version of TrackMate (the forthcoming v8), to be released Autumn 2025 (if everything goes well)." %}
-  
 The new v8 version of TrackMate ships many new detectors, trackers and actions that are based on existing Python tools. 
 We introduced in TrackMate v8 a framework to facilitate the integration of Python tools that are deployed within a conda (or mamba, of any flavor) environment. 
 Using these tools in TrackMate requires you to
+
 - install a conda distribution on your computer.
 - install the individual TrackMate modules that are you interested in.
 - configure the path to your conda environment.
