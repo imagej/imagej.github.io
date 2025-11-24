@@ -253,3 +253,7 @@ The macro produces overlap maps for the foci in the two chosen channels that vis
 
 ## Handling results
 For each image (or frame) a new result file is generated. When multiple images (or frames) are processed. Result `.tsv` files in a folder can be appended by running `Combine result files` in the Foci-Analyzer Fiji submenu. The resulting table is saved as `Results_all_files.tsv` in the same folder as the input `.tsv` files. (By the way, this script also runs on other text-based files, e.g. `.csv`, `.txt`.)
+
+## Foci quantification on large images using QuPath & Fiji
+Foci Analyzer can be combined with QuPath, enabling foci analysis on very large images. For this, we have developed some `groovy` scripts [(on Github)](https://github.com/BioImaging-NKI/Foci-analyzer/tree/main/QuPath). Image tiles from annotated regions together with cell segmentations are exported from QuPath and analyzed in Fiji. Foci results can be imported into QuPath, allowing cells to be classified on their foci characteristics.
+
