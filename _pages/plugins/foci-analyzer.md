@@ -4,7 +4,7 @@ categories: [Analysis]
 icon: /media/icons/Foci-Analyzer-icon.png
 source-url: "https://github.com/BioImaging-NKI/Foci-analyzer"
 update-site: "foci-analyzer"
-release-version: v1.88
+release-version: v1.91
 support-status: Active
 team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
@@ -127,7 +127,7 @@ This option only affects the nuclei segmentation; it is different from the previ
 
 - _Cellpose cell diameter (pixels), 0 for automatic_ : Estimated diameter of the cells, in pixels. Setting this parameter to 0 will trigger Cellpose to estimate it. Please check the Fiji console for the resulting estimate.
 
-- _Cellpose model_ : The [model](https://cellpose.readthedocs.io/en/v3.1.1.1/models.html#models) (built-in or custom) used for segmentation. Tested up to Cellpose 3.1 (cpsam may just work though).
+- _Cellpose model_ : The [model](https://cellpose.readthedocs.io/en/v3.1.1.1/models.html#models) (built-in or custom) used for segmentation. Tested up to Cellpose 3.1.1.1 (Cellpose 4 is now operated with a different command - support will follow soon).
 
 - _Remove nuclei with diameter smaller than (units)_ : Objects smaller than circles having an area corresponding to this diameter will be removed. 'Units' depends on the image, and will almost always be 'µm', or otherwise 'pixels' in case the pxiel calibration values are missing. (default: 4)
 
