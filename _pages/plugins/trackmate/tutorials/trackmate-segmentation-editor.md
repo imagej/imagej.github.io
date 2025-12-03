@@ -6,7 +6,7 @@ artifact: sc.fiji:TrackMate
 section: Tips and Tricks:Closing the editor window
 ---
 
-Since version 8, TrackMate ships a new feature that allows editing object shape in 2D. 
+Since version 8, [TrackMate](/plugins/trackmate/index) ships a new feature that allows editing object shape in 2D. 
 The spot editor is based on [Labkit](/plugins/labkit) components, and is made to simplify and accelerate the creation of tracking ground truth. 
 In this page we explain how to use it to modify segmentation results directly in TrackMate.
 
@@ -14,12 +14,12 @@ In this page we explain how to use it to modify segmentation results directly in
 
 The spot editor can be launched from the _Display options_ panel of TrackMate:
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-04.png" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-04.png" align="center"  width="300" %}
 
 This button is visible only for 2D images.
 When clicking on this button, the user interface of TrackMate is frozen and a new window appear:
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-06.png" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-06.png" align="center" %}
 
 The editor is made of several UI components:
 - The main editor panel, where the image is painted along with the spot masks (center).
@@ -305,6 +305,24 @@ You can customize the key bindings of the spot editor in a dedicated dialog, dis
 Has the same effect as clicking the _Close and send to TrackMate_ button.
 
 
+
+### Other segmentation editor tools
+
+We developed a segmentation editor tool in TrackMate, because we wanted it to be able to generate tracking ground-truth conveniently.
+There are however many segmentation editors, not necessarily made for tracking, available in the domain of biological imaging. 
+We list some of them here:
+
+Commercial 
+- Imaris 'Surface' objects can be edited manually, as 2D and 3D meshes.
+- Arivis can be used for manual correction or creation of segmentation masks
+- ...
+
+Open-source
+- I have a (somewhat) biased likeness for [Icy](https://icy.bioimageanalysis.org/). Its mask editor is super convenient, can work in 2D / 3D and over time, and has undo / redo. Check [the ROI cheat sheet](https://icy.bioimageanalysis.org/wp-content/uploads/2020/10/2021-04-23_icy-shortcuts_ROIcheatsheet.pdf)
+- The UI of [QuPath](https://qupath.github.io/) is super convenient, and it also has undo / redo. The [brush tool](https://qupath.readthedocs.io/en/stable/docs/starting/annotating.html#brush-tool) is particularly useful.
+- [Napari](https://napari.org/stable/) has a [label layer](https://napari.org/0.6.2/howtos/layers/labels.html) that can be used to edit manually a segmentation mask, as above.
+- In ImageJ, Thierry Pécot created the [Annotater](https://github.com/tpecot/Annotater) plugin to facilitate the creation of Deep Learning models.
+- ...
 
 ___
 Jean-Yves Tinevez, August - December 2025
