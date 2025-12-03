@@ -82,7 +82,7 @@ The fact that the initial spot and the new one have the same label plays no role
 
 When you select one of the tool by cliking on its icon or with F1 - F6, the right part of the toolbar changes to show the tool controls.
 
-### The pan tool -  {% include key key="F1" %}
+### The pan / move tool -  {% include key key="F1" %}
 
 See above.
 When this tool is selected, the mouse is used to navigate in the image. 
@@ -98,67 +98,101 @@ The default key shortcuts to do so are {% include key key="Q" %} /  {% include k
 
 The rightmost list allows changing the paint mode.
 There are three of them: _Replace, Add, Preserve_. 
+The selected modes and brush size are remembered between use of the editor. 
 
-#### Paint Replace
+#### Paint replace
 
-#### Pain Add
+This is the default mode. 
+If you paint over an existing label, it is discarded.
+
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-Replace.gif" align="center"  %}
+
+#### Paint add
 
 In TrackMate the spots can be overlapping, and as a consequence, in the editor you can have several labels on one pixel. 
 This is the way to edit overlapping spots.
 The _Add_ mode paint labels, and if there is an existing label, it will add the selected one, and not remove the existing one:
 
-<iframe width="480" height="270" align="center" src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-AddMode_halfsize.mp4"  allow="autoplay">
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-AddMode.gif" align="center"  %}
 
+This will lead to overlapping spots, as demonstrated in the animation above.
 
-#### Paint Preserve
+#### Paint preserve
+
+This mode is the converse of the 'Replace' mode. 
+The selected label will be applied only on the pixels that have no label already.
+It will only paint on the background.
+This is useful if you have close objects that you know are not overlapping.
+
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-PreserveMode.gif" align="center"  %}
 
 
 ### Deleting pixels -   {% include key key="F3" %}
 
-The fourth button on the top bar is the _Delete_ button.
-Click it to make the delete brush mode active.
-But if you click on the spurious detections, nothing happens.
-This is because the **delete brush only works on the pixels of the label that is currently selected in the left side bar**.
-You need to select the label you want to edit first.
-To do so, you can either
-- {% include key key="Shift|left click" %} on the spot mask in the image panel, 
-- click on the _Select_ button on the top toolbar (the sixth button on the left) then click on the spot in the image,
-- or select the label in the left side bar.
+The delete tool also has several modes, that are made to harness possibly overlapping labels.
 
-{% include notice icon="note"
-  content="*Shift-click* in the image selects the spot at the cursor position." %}
+#### Delete all labels
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-11.gif" align="center"  %}
+This mode simply remove all labels at once. 
+You get the background where you paint.
 
-Shift-click on each of the spurious detections to select them, and then click on them with the _delete_ brush on to remove them.
-Notice that the corresponding labels in the left side bar are not removed, which is normal.
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Delete-AllLabels.gif" align="center"  %}
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-12.gif" align="center"  %}
+#### Delete selected label
 
-### Painting spots
+With this mode, the brush will only remove the label currently selected, and no touch the others:
 
-We now want to enlarge the largest spot to cover the nucleus.
-First shift-click on it in the image panel to make the spot label active.
-Then click on the _Add_ button in the top bar which is the second button from the left.
-Edit the brush size to about 5 pixels, and paint over the nucleus.
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Delete-SelectedLabel.gif" align="center"  %}
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-13.gif" align="center"  %}
 
-### Removing entire spots
+### Flood fill  -   {% include key key="F4" %}
 
-You can also remove entire spots from the editor using the _Remove_ mode, which is the third button from the left in the top bar.
-Again, the corresponding label of the spot to remove must be selected in the left side bar.
-Click on the _Remove_ button, select the label in the left side bar and click on the spot you want to remove.
+This tool allows for painting over a 'segment' of the labeling.
+That is: any connected portion of the labels that have the same labels underneath. 
+It is most useful to replace a label or add one.
+There is also two modes for this tool.
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-14.gif" align="center"  %}
+#### Flood fill replace
 
-### Filling holes
+Similar to the _Paint add_ tool, this leads to replace all the label of a segment with the selected label.
+On the animation below, the red part of the labeling is overwritten with the blue label, leading to a larger spot:
 
-Another way of creating spots is to paint the border and fill the inside.
-After drawing the contour of the nucleus, you can use the _Fill_ button, which is the third button from the left in the top bar.
-Click it, and click inside the contour to fill it.
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodFill-Replace.gif" align="center"  %}
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-15.gif" align="center"  %}
+#### Flood fill add
+
+This _adds_ a label to a segment that might already have one.
+On the animation below, the red label is added to the blue segment. 
+This segment has now two labels, the blue and the red, and it appers in magenta in the editor. 
+After returning to TrackMate, this leads to two spots overlapping:
+
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodFill-Add.gif" align="center"  %}
+
+### Flood erase  -   {% include key key="F5" %}
+
+This tool removes one or all labels of a segment.
+
+#### Flood erase remove all
+
+All the labels are removed from the segment.
+The modified pixels are now part of the background.
+
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodErase-RemoveAll.gif" align="center"  %}
+
+#### Flood erase selected label
+
+Only the currently selected label is removed. 
+For instance, on the animation below, the top segment has two labels, red and blue, and appears in magenta.
+The flood erase tool is used to remove the blue label from it, which leaves the red label.
+
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodErase-SelectedLabel.gif" align="center"  %}
+
+
+### Select label  -   {% include key key="F6" %}
+
+Click on any pixel to select its associated label.
+If the pixel contains multiple labels, click repeatedly to cycle through them.
+
 
 ### Keyboard shortcuts changing the brush mode and size
 
@@ -226,8 +260,7 @@ This respects whether you have a ROI in the image or not.
 
 In TrackMate, spots are represented as polygons, as as such they can overlap. 
 This is also the case in the spot editor.
-This is the reason why it is necessary to select the spot you want to edit before using the brush.
-
+See the _Paint add_ mode above for instance.
 {% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-22.gif" align="center"  %}
 
 ### Several spots can have the same label
@@ -258,4 +291,4 @@ Has the same effect as clicking the _Close and send to TrackMate_ button.
 
 
 ___
-Jean-Yves Tinevez, August 2025
+Jean-Yves Tinevez, August - December 2025
