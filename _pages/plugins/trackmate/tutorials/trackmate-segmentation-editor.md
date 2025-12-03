@@ -12,6 +12,15 @@ In this page we explain how to use it to modify segmentation results directly in
 
 ## The editor
 
+The spot editor can be launched from the _Display options_ panel of TrackMate:
+
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-04.png" align="center"  %}
+
+This button is visible only for 2D images.
+When clicking on this button, the user interface of TrackMate is frozen and a new window appear:
+
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-06.png" align="center"  %}
+
 The editor is made of several UI components:
 - The main editor panel, where the image is painted along with the spot masks (center).
 - The side panel (left) that contains from top to bottom: 
@@ -72,8 +81,15 @@ In TrackMate, 2D spots are polygons, but we found out that painting inside the i
 
 The editor will display the spots as a 'labeling', a colored image where the pixels inside each spot is painted with a specific label.
 All the labels corresponding to the spots in the image are listed on the left side bar. 
-Modifying a spot is adding a removing pixels from its shape.
+The are created with the same color and name that of the spot they correspond to.
 
+So it is possible that two different spots will lead to two different labels in the editor, but with the same color, which will make them indisinguishable. 
+If this is the case we recommend changing the spot coloring before launching the editor. 
+For instance, selecting the _Random color_ mode.
+
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-RandomColoring.png" align="center" width="300"  %}
+
+Modifying a spot is adding a removing pixels from its shape.
 There is a gotcha however: When you finish editing the actual label of a spot does not matter anymore. 
 For instance, if you paint a new spot with an existing label, so that the new spot is disconnected from the initial spot or even on another time-point, the new spot will be created as a separated one in TrackMate. 
 The fact that the initial spot and the new one have the same label plays no role if they are not touching.
