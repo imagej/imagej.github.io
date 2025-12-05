@@ -8,13 +8,18 @@ artifact: sc.fiji:TrackMate-Cellpose
 section: TrackMate-Cellpose.:Usage:cellpose parameters in the TrackMate UI.
 ---
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-screenshot.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-screenshot.png" align='center' width='500' %}
 
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on [cellpose](https://cellpose.readthedocs.io/en/latest/) to segment cells in 2D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following). It also requires cellpose to be installed on your system and working independently. This tutorial page gives installation details and advices at how to use the cellpose integration in TrackMate.
 
-cellpose is a segmentation algorithm based on Deep Learning techniques, written in Python 3 by Carsen Stringer and Marius Pachitariu. The TrackMate-cellpose module, which is written in Java, is an example of integration via sub-processes. The integration technique is similar to that of the [TrackMate-Ilastik](trackmate-ilastik) module, except that the ilastik authors offer a ready-to-use Java bridge that took care of launching ilastik from Fiji. For the TrackMate-cellpose module, we rely on launching the cellpose command-line interface directly from TrackMate.
+There are other TrackMate detectors shipped in the same update site, and documented separately:
+- This page documents using cellpose 3.1.1 with TrackMate.
+- There is also an [advanced version](trackmate-cellpose-advanced) of this detector, that let you configure additionnal parameters.
+- The latest version of cellpose (as December 2025) is cellpose-SAM (cellpose 4), for which we made a specialized detector, documented [here](trackmate-cellpose-sam).
+- Omnipose is another segmentation algorithm specialized for rod-shape bacteria. Because it is a based on Cellpose, its TrackMate integration is shipped in the same upate site and documented [here](trackmate-omnipose), and here for its [advanced version](trackmate-omnipose-advanced).
 
-If you use the cellpose TrackMate module for your research, please also cite the cellpose 3 paper:
+Cellpose is a segmentation algorithm based on Deep Learning techniques, written in Python 3 by Carsen Stringer and Marius Pachitariu. 
+If you use the cellpose TrackMate module for your research, please also cite the Cellpose 3 paper:
 
 _{% include citation doi='10.1038/s41592-025-02595-5' %}_
 
@@ -27,28 +32,22 @@ We need to subscribe to an extra update site in Fiji, and have a working install
 
 In Fiji, go to {% include bc path='Help|Update...' %}. Update and restart Fiji until it is up-to-date. Then go to the update menu once more, and click on the `Manage update sites` button, at the bottom-left of the updater window. A new window containing all the known update sites will appear. Click on the  **TrackMate-Cellpose** check box and restart Fiji one more time.
 
-### conda
-
-You need to install conda (or mamba, or any flavor of conda) on your system. We recommend [miniforge](https://github.com/conda-forge/miniforge).
-
-<!---
-### Configure conda path for TrackMate
-
-You need to tell TrackMate where conda is installed. This step is explained here: [configure the TrackMate conda path in Fiji](/plugins/trackmate/trackmate-conda-path). 
--->
-
-### cellpose
+### Conda & Cellpose
 
 This step is completely independent of Fiji. If you have already a working cellpose installation, you can skip this section entirely. But we absolutely need a working cellpose.
 
 There are many ways to get cellpose installed. We give a subset of them in the [last section of this document](#installing-cellpose).
+
+Once this is done, TrackMate needs to know where you installed conda. 
+You need to do this only once.
+This is documented [on this page](/plugins/trackmate/trackmate-conda-path).
 
 
 ## Usage
 
 ### Cellpose parameters in the TrackMate UI
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-ui-01.png" align='center' width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-ui-01.png" align='center' width='300' %}
 We document these parameters from top to bottom in the GUI.
 
 <!---
@@ -124,7 +123,7 @@ One of the central  advantage of cellpose is its ability to give robuset segment
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5864646.svg)](https://doi.org/10.5281/zenodo.5864646)
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-01" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-01" align='center' width='400' %}
 
 These are breast cancer cells moving collectively. We are tracking them to analyze how their migration parameters change in various conditions.
 
@@ -133,11 +132,11 @@ The movie comes from RGB images that have already been split in 3 separated comp
 Open Fiji and load the image. Then launch TrackMate in {% include bc path='Plugins|Tracking|TrackMate' %}.
 In the second panel, select the **cellpose detector**:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-02" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-02" align='center' width='400' %}
 
 then click the `Next` button. You should see the configuration panel for cellpose. 
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-03" align='center' width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-03" align='center' width='300' %}
 
 We want to segment the touching cells and obtain their contour. So we will use the **Cytoplasm** model. The cytoplasm is imaged in the second channel (it happens to use the green LUT, but it would not matter) so we enter **2** for the `Channel to segment` parameter. The channel **1** contains the nuclei so we can specify it in the `Optional second channel` parameter. Finally, we can measure a rough estimate of the cell size using ImageJ ROI tools, which is about **40 µm**, and enter this value in the `Cell diameter` field.
 
@@ -149,23 +148,23 @@ Then we are ready to launch segmentation. Click the `Next` button. The log windo
 
 The **Initial thresholding** reports the quality histogram for all detections. Here, the quality is just the area of detections in pixel units. We see that there are some detections with very little size, probably for spurious objects. We can filter them out by setting a threshold value around 220.
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-04" align='center' width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-04" align='center' width='300' %}
 
 Click the `Next` button.  In the **Spot filter** panel TrackMate first computes all the spot features. Then the results are shown. Given the difficulty of the segmentation task, the results are surprisingly good, and we should thank cellpose for it. They are not perfect though. For some big and faint cells, we can see a few events of oversegmentation, probably caused by red granules drifting in some cells. Still, we can follow cell division by eye and see that the vast majority of them is detected properly.
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-05" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-05" align='center' width='400' %}
 
 We don't need to filter the detections so click the `Next` button. Our aim is to detect cell divisions as they migrate, so we have to pick either the LAP tracker of the Overlap tracker. Given the cell density we would normally use the LAP tracker. However it would introduce too many false positive in the cell division detection. Indeed, the cells migrate "downwards" in the image, and new cells appear in the field-of-view from the top of the image. These new cells would be elected as candidates to be the daughter emerging from a non-existent division of the cell just below it. The overlap tracker will be more robust against this artifact so we elect to chose it. 
 
 We use the following parameter:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-06" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-06" align='center' width='400' %}
 
 We dilate the cells with a `Scale factor` of *1.2* so that if the daughter cells moved away from the mother cell they are still linked to the mother. A `Minimal IoU` value of *0.3* mitigate false cell division detections. Choosing the *Precise* method for `IoU calculation` has some cost on tracking time (5 s. versus 1 s. for the *Fast* method) but it is so short in our case that we still use it.
 
 Here is what the tracking results look like:
 
-{% include video src="/media/plugins/trackmate/trackmate-cellpose-tutorial-07.mp4" width='600' align="center" %}
+{% include video src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-07.mp4" width='600' align="center" %}
 
 In the movie above the cells are colored by their track ID, which tends to highlight tracking mistakes and missed detections. Indeed, some cell divisions are missed. Still the results are better than what they would be with the LAP tracker, due to the bias for low Y value discussed above.
 
@@ -173,7 +172,7 @@ In the movie above the cells are colored by their track ID, which tends to highl
 
 Another key advantage of cellpose is that it is relatively easy and fast to train or augment a model to harness difficult use cases that are not handled well by the pretrained model.
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-01" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-01" align='center' width='400' %}
 
 For instance the cells above were imaged in bright-field at high resolution. They are Glioblastoma-astrocytoma U373 cells migrating on a polyacrylamide gel. They have a rather complex shape and a low contrast. The segmentation of cells in such images is normally difficult with classical image processing techniques. In the following we will use the trackMate-Cellpose intragration to segment and track them. Our goal is to see if we discriminate between two types of cell locomotion based on dynamics and morphological features of single cells. We will see how to give more robustness to the analysis by filtering out some detections close to image border.
 
@@ -185,7 +184,7 @@ The dataset contains a custom cellpose model. We have trained a it using the [Ze
 
 To use the model you need to unzip the `Cellpose model 171121-20211118T111402Z-001.zip` file. The cellpose model file itself is the `cellpose_residual_on_style_on_concatenation_off_train_folder_2021_11_17_19_45_23.398850` file in the `171121` folder.
 We can use it in TrackMate by specifying "Custom" as a model in the interface:
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-02" align='center' width='350' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-02" align='center' width='350' %}
 
 Here I am running TrackMate on a Windows machine, and I used the cellpose installation recommended by BIOP people ([see below](#biop-conda-installation-for-gpu-support-on-windows)). So in the `Path to cellpose / Python executable` I have: `C:\Users\tinevez\anaconda3\envs\cellpose_biop_gpu\python.exe` 
 
@@ -197,25 +196,25 @@ On this Windows machine and with this cellpose installation I have GPU support, 
 
 Clicking `Next` starts the segmentation. In my case it completes in about 1 minute. In the **Initial thresholding** panel, choose a threshold of 0 to include all detections in the next step. We get the following results displayed in the **Spot filter** panel:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-03" width='300' %}
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-04" width='300' %}
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-05" width='150' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-03" width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-04" width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-05" width='150' %}
 
 The contours are not absolutely perfect. In a few cases they miss a cell extrusion or include a debris that touches the cell. Some cells that touch the border of the image are not detected. But overall the results are very good and there is no spurious detection. We don't need to add spot filters at tis step.
 
 For this movie, the tracking part should be simple as the cells are well separated and move by a distance smaller than their size from one frame to the next. Yet, we have to bridge over the missed detections when cells were close to the border. The **Simple LAP tracker** is suitable for this case:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-06" width='300'  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-06" width='300'  align='center' %}
 
 The max distance are taken from the cell size. Note the large max frame gap, chosen to accommodate several missed detections near the image borders. As final results we get:
 
-{% include video src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-07.mp4" width='600' align="center" %}
+{% include video src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-07.mp4" width='600' align="center" %}
 
 We can distinguish roughly two modes of motion for the cells in this movie. The two cells in the bottom-left part of the image display saltatory movements with extrusion forming on changing sides of the cell, followed by a retraction and a large but brisk movement of the nucleus. The other cells display a large lamellipodium and exhibit a smooth motion in the direction of the protrusion.
 
 We can use the **Plot features** panel to investigate these behaviors quantitatively. For instance, one of the two cells in the bottom-left (in blue in the movie above and in the figure below) display this dynamics for the cell area and speed:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-08" width='600'  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-08" width='600'  align='center' %}
 
 We see that brisk changes in area, corresponding to retraction events, correlate with peaks in velocity. 
 
@@ -225,17 +224,17 @@ The velocity is defined for links (edge between two detection across time), so c
 
 The same metrics are different for the cell on the right:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-09" width='600'  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-09" width='600'  align='center' %}
 
 There seems to be a peak in velocity at late times along with a decrease in area, but this might be due to the cell crossing the right border of the image. We can prune these incorrect data points by filtering out the cells that touch the borders of the image. 
 
 To do this, navigate back in TrackMate to the **Spot filter** panel. We will add a filter on the cell position to hide the detections too close to the border. Let's add a filter that keeps cells which center is below 420 µm:
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-10" width='300'  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-10" width='300'  align='center' %}
 
 Then proceed as before for the tracking step and the plot generation. The area and velocity plots for the filtered cell track does not show the peak in velocity we had without filtering.
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-tutorial-b-11" width='600'  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-b-11" width='600'  align='center' %}
 
 
 ### 3D segmentation with cellpose
@@ -253,17 +252,17 @@ cellpose can and does work with RGB images. They are single-channel but encode r
 
 - With the RGB image opened, go to the {% include bc path='Image|Type' %} menu and select `RGB Stack`. This will convert the 1-channel RGB image in a 3-channels 8-bit image. 
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-convert-rgb-01.png" width='400' %}
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-convert-rgb-02.png" width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-convert-rgb-01.png" width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-convert-rgb-02.png" width='400' %}
 
 - Most likely Fiji will display only one of the 3 channels in grayscale. To overlay again the 3 channels in a composite image, first display the **Channels tool** by selecting the {% include bc path='Image|Color|Channels Tool…' %} menu item.
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-convert-rgb-03.png" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-convert-rgb-03.png" align='center' width='400' %}
 
 -  A new floating window title **Channels** appears. Click on the `More »` button to bring an additional menu, and select the `Make Composite` item. You image should be now properly displayed, but made of 3 independent components. This way you can run it through TrackMate and still have it properly segmented by its cellpose integration.
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-convert-rgb-04.png" %}
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-convert-rgb-05.png" %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-convert-rgb-04.png" %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-convert-rgb-05.png" %}
 
 ### Installing cellpose
 
@@ -273,9 +272,13 @@ cellpose can and does work with RGB images. They are single-channel but encode r
   {% include notice icon="tech"
   content="From now on we support **cellpose 3** in TrackMate. It is great, simple to install, and has GPU acceleration on all modern platforms." %}
 
-Go to the cellpose GitHub webpage and follow the [installation procedures](https://github.com/MouseLand/cellpose#local-installation). We copy and adapt these installation instructions below.
+You need to have conda (or mamba) installed on your system. 
+Any flavor (Anaconda, miniconda, miniforge, mamba, micromamba, ... ) works, but if you have to install one, we recommend [miniforge](https://github.com/conda-forge/miniforge).
 
-```zsh
+Once it is done, go to the cellpose GitHub webpage and follow the [installation procedures](https://github.com/MouseLand/cellpose#local-installation). We copy and adapt these installation instructions below.
+In a terminal where conda is usable, type the following (assuming you run zsh):
+
+```sh
 conda create --name cellpose-3 python=3.10
 conda activate cellpose-3
 pip install 'cellpose[gui]==3.1.1.2'
