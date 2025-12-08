@@ -22,7 +22,7 @@ Features include:
 In your imageJ app folder : place the **Image Viewer** folder on the ``plugins`` folder and the **Image_Viewer_Toolset.ijm** file on the ``macros /toolsets/`` folder
 
 All commands and plugins are located in the ``Plugins > Image Viewer`` menu       
-But the easiest way is to install the toolbar menu from Image_Viewer_Toolset under the red `>>` menu in the ImageJ window            
+But also easily accessible from the toolbar menu you can find in ``Image_Viewer_Toolset`` under the red `>>` menu in the ImageJ window:            
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Toolset.png?raw=true){:width="300px"}              
 
 # Channels and Contrast
