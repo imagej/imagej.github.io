@@ -45,14 +45,14 @@ Otherwise, here is how to navigate in the image panel.
 - Rotate the image with the {% include key key="left click" %}.
 - Zoom in and out towards the center of the panel with the {% include key key="Mouse Wheel" %}.
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-07.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-07.gif" align="center" width="300" %}
 
 ### Resetting the view
 
 - {% include key key="Shift|Z" %} aligns the view with the XY plane.
 - {% include key key="Shift|R" %} resets the view.
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-08.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-08.gif" align="center" width="300"  %}
 
 ### Navigating to spots
 
@@ -61,7 +61,7 @@ Each label initially corresponds to a spot in TrackMate.
 The label will have the same name and color that of the current view in TrackMate.
 Shift-clicking on a label in the list will center the image view on the corresponding spot mask
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-09.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-09.gif" align="center" width="300" %}
 
 ### Changing the display settings
 
@@ -69,7 +69,7 @@ The _Image_ section in the left side bar allows you to change the display settin
 The _auto contrast_ button will set the display range to the min and max pixel values in the image.
 The _settings_ button will open a dialog to change the display settings of the image, such as the color table, the brightness and contrast and the visibility of channels and spots.
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-10.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-10.gif" align="center" width="300" %}
 
 ## Editing spots
 
@@ -121,7 +121,7 @@ The selected modes and brush size are remembered between use of the editor.
 This is the default mode. 
 If you paint over an existing label, it is discarded.
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-Replace.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-Replace.gif" align="center" width="300" %}
 
 #### Paint add
 
@@ -129,7 +129,7 @@ In TrackMate the spots can be overlapping, and as a consequence, in the editor y
 This is the way to edit overlapping spots.
 The _Add_ mode paint labels, and if there is an existing label, it will add the selected one, and not remove the existing one:
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-AddMode.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-AddMode.gif" align="center" width="300" %}
 
 This will lead to overlapping spots, as demonstrated in the animation above.
 
@@ -140,7 +140,7 @@ The selected label will be applied only on the pixels that have no label already
 It will only paint on the background.
 This is useful if you have close objects that you know are not overlapping.
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-PreserveMode.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Paint-PreserveMode.gif" align="center" width="300" %}
 
 
 ### Deleting pixels -   {% include key key="F3" %}
@@ -152,13 +152,13 @@ The delete tool also has several modes, that are made to harness possibly overla
 This mode simply remove all labels at once. 
 You get the background where you paint.
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Delete-AllLabels.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Delete-AllLabels.gif" align="center" width="300" %}
 
 #### Delete selected label
 
 With this mode, the brush will only remove the label currently selected, and no touch the others:
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Delete-SelectedLabel.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-Delete-SelectedLabel.gif" align="center" width="300" %}
 
 
 ### Flood fill  -   {% include key key="F4" %}
@@ -173,7 +173,7 @@ There is also two modes for this tool.
 Similar to the _Paint add_ tool, this leads to replace all the label of a segment with the selected label.
 On the animation below, the red part of the labeling is overwritten with the blue label, leading to a larger spot:
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodFill-Replace.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodFill-Replace.gif" align="center" width="300" %}
 
 #### Flood fill add
 
@@ -182,7 +182,7 @@ On the animation below, the red label is added to the blue segment.
 This segment has now two labels, the blue and the red, and it appers in magenta in the editor. 
 After returning to TrackMate, this leads to two spots overlapping:
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodFill-Add.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodFill-Add.gif" align="center" width="300" %}
 
 ### Flood erase  -   {% include key key="F5" %}
 
@@ -193,7 +193,7 @@ This tool removes one or all labels of a segment.
 All the labels are removed from the segment.
 The modified pixels are now part of the background.
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodErase-RemoveAll.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodErase-RemoveAll.gif" align="center" width="300" %}
 
 #### Flood erase selected label
 
@@ -201,7 +201,7 @@ Only the currently selected label is removed.
 For instance, on the animation below, the top segment has two labels, red and blue, and appears in magenta.
 The flood erase tool is used to remove the blue label from it, which leaves the red label.
 
-{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodErase-SelectedLabel.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/TrackMate-Editor-FloodErase-SelectedLabel.gif" align="center" width="300" %}
 
 
 ### Select label  -   {% include key key="F6" %}
@@ -217,7 +217,7 @@ First you can press {% include key key="F1" %}, {% include key key="F2" %}, {% i
 You can also use {% include key key="Q" %} and , {% include key key="E" %} to decrease and increase the brush size, respectively.
 Pressing {% include key key="Shift|Q" %} and {% include key key="Shift|E" %} will change the brush size by a larger amount.
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-16.gif" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-16.gif" align="center" width="300" %}
 
 
 ### Keyboard shortcuts for editing
@@ -245,7 +245,7 @@ For adding, deleting, removing and filling spots, the keys must be used as modif
 Once you are done editing, click the _Close and send to TrackMate_ button in the top left side bar.
 This will close the editor and prompt you with the following dialog:
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-17.png" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-17.png" align="center"  width="300" %}
 
 If you click _No_, your changes will be discarded.
 If you click _Yes_, the modified spots will be sent to TrackMate. 
@@ -298,7 +298,7 @@ If the edits generate masks that are too different from the initial spots, they 
 
 You can customize the key bindings of the spot editor in a dedicated dialog, displayed when you press {% include key key="Ctrl|," %}.
 
-{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-21.png" align="center"  %}
+{% include img src="/media/plugins/trackmate/spot-editor/trackmate-spot-editor-tuto-21.png" align="center" width="400" %}
 
 ### Closing the editor window
 

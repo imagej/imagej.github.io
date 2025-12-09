@@ -8,7 +8,7 @@ artifact: sc.fiji:TrackMate-Cellpose
 section: TrackMate-Cellpose.:Usage:cellpose parameters in the TrackMate UI.
 ---
 
-{% include img src="/media/plugins/trackmate/trackmate-cellpose-screenshot.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-screenshot.png" align='center' width='500' %}
 
 This page describes the advanced version of the cellpose detector in [TrackMate](/plugins/trackmate/index), documented [here](trackmate-cellpose). 
 These two detectors rely both on the  [cellpose](https://cellpose.readthedocs.io/en/latest/) software, but this one offers more configuration options that are hidden in the non-advanced version.
@@ -33,15 +33,7 @@ In particular the  _Installing cellpose_ paragraph in the _Additional informatio
 We describe here the advanced parameters that are specific to the advanced detector. 
 Core parameters are described in the [TrackMate-Cellpose](trackmate-cellpose) documentation page.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-ui-advanced-2D.png" align='center' width='300' %}
-
-##### `Cell probability threshold`
-One of the neural network output of cellpose is a cell probability map: each pixel contains the value of its probability to belongs to a cell.
-This parameter controls the amount of confidence to keep a pixel in the cell: all pixels with a probability above `cell_probability_threshold` will be kept.
-This value can range from `-6.0` (more and larger cells) to `6.0` (less and smaller but most likely cells).
-
-_By default in the non-advanced option, this parameter is `0.0`._ 
-
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-ui-advanced-2D.png" align='center' width='300' %}
 
 ##### `Flow threshold`
 Cellpose performs an additional step after a first reconstruction of the shape to check the consistency between the calculated cell shapes and the computed flows. 
@@ -52,8 +44,15 @@ If it's `0`, this step will not be performed (all detections whatever the shape 
 
 _By default in the non-advanced option, this parameter is `0.4`._ 
 
+##### `Cell probability threshold`
+One of the neural network output of cellpose is a cell probability map: each pixel contains the value of its probability to belongs to a cell.
+This parameter controls the amount of confidence to keep a pixel in the cell: all pixels with a probability above `cell_probability_threshold` will be kept.
+This value can range from `-6.0` (more and larger cells) to `6.0` (less and smaller but most likely cells).
 
-##### `Resample`
+_By default in the non-advanced option, this parameter is `0.0`._ 
+
+
+##### `Do not resample`
 
 Cellpose resizes your image to have the mean cell size (`mean diameter` parameter above) equals to the mean diameter of the trained model.
 The flows are computed on these rescaled images.
@@ -62,7 +61,11 @@ It will affect the smoothness of the resulting segmentation and the computing ti
 - If your mean diameter > model diameter, the image is downscaled. In this case, resampling will create smoother ROIs but will be slower (the calculation will be done in the original image size, so on larger image).
 - If your mean diameter < model diameter, the image is upscaled. In this case, resampling will be faster (running on smaller image), but will find less detections than without resampling.	
 
-_By default in the non-advanced option, this parameter is set to `True`._
+_By default in the non-advanced option, this parameter is set to `False`. 
+The images are resampled._
+
+
+<!--------------
 
 #### Parameters for 3D stacks
 
@@ -82,7 +85,7 @@ In both cases, the **deep learning part of CellPose segmentation is done in 2D**
 The parameters available in `TrackMate-Cellpose` are documented above. 
 Below we document the additional parameters that are available when the images are 3D. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-ui-parameters-3D.png" align='center' width='450' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-ui-parameters-3D.png" align='center' width='450' %}
 
 _By default, TrackMate uses the `3D mode` in the non-advanced version. You can change it through the `Advanced Cellpose detector` interface._
 
@@ -141,7 +144,7 @@ Open the movie to process.
 Start TrackMate by going to {% include bc path='Plugins | Tracking | TrackMate' %}.
 If your movie is large or contains a lot of time frames, we advise you to set-up all the detection and tracking parameters on a cropped movie (both spatially and temporally) and to apply it only after on the full movie. For this, when the first panel of TrackMate opens, you can draw a rectangular ROI to select the area to process. Click on `Refresh ROI` to apply your selection, the `X` and `Y` values should update. You can also set the `T` parameters: first time point to last time point to crop the movie temporally for the parameter tunning. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-tutorial_CP3D_cropmovie.png" width='600'  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial_CP3D_cropmovie.png" width='600'  align='center' %}
 
 Click on `Next` to choose the detector and select `Cellpose advanced detector`.
 Choose the path to your python environment where cellpose is installed.
@@ -153,7 +156,7 @@ We don't have the nuclei staining, so we keep the `Optional second channel` to 0
 The `Cell diameter` parameter has a strong effect on the result and the computing time (the images will be rescaled to the trained model scale). Put the average cell diameter in micron and click on `Preview` to test it on the current time frame only.
 Change its value if necessary until you get accceptable detections. If you don't succeed to get a proper segmentation, you can select another pretrained model, try to do the segmentation in the `2D+Z` mode or retrain a model in cellpose 2.0 on your dataset. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-tutorial-CP3D_previews.png"  align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-CP3D_previews.png"  align='center' %}
 
 Once the detection parameters give good results on your previews, click `Next` to run the detection on the frames that you selected in the first panel (or on all the movie if you didn't changed the `T` parameter). You reach the `Initial thresholding` panel in which you can remove false positive detections based on the spots quality measure.
 
@@ -166,7 +169,7 @@ At any step of the process, you can visualize your movie and your detections in 
 If you click on the 🔧 icon at he bottom of TrackMate interface, you get to the panel to set-up the display parameters. 
 Click on `3D view` to open the 3D viewer interface. In this interface, you can see in 3D your movie overlayed with your detections. The color display of the detection are synchronized between the 2D and the 3D viewer.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-tutorial_CP3D_3dviewing.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial_CP3D_3dviewing.png" align='center' %}
 
 #### Smoothing the results
 
@@ -176,7 +179,7 @@ You can undo the smoothing if the results are not satisfying and try another num
 
 Note that Cellpose with `2D+Z` mode will directly gives much smoother detections as it is using the *flow threshold* parameter in the segmentation.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-tutorial-CP3D_smooth.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial-CP3D_smooth.png" align='center' %}
 
 
 #### Tracking cells
@@ -187,5 +190,6 @@ Here, you can choose the `Overlap Tracker` with an IOU of 0.25 to obtain an acce
 
 When all the parameters have been chosen, go back to the first panel of TrackMate, remove the rectangular ROI and click on `refresh ROI`. This will reset all the parameters to take the full movie in the analysis. You can then perform all the steps with the full movie. All parameters should be set to the latest configuration so you should only have to click on `Next` for each step. The computation of the detection can take some time as it will run a 3D Cellpose segmentation for each frame.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-tutorial_CP3D_tracked.gif" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-tutorial_CP3D_tracked.gif" align='center' %}
 
+----------->
