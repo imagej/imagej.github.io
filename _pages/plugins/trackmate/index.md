@@ -140,6 +140,10 @@ TrackMate has a modular design and ships several algorithms of several types: de
 Many of these extra modules connect with an external tool, typically in Python, that needs to be installed via Conda or Mamba. 
 TrackMate needs to know where your conda environments are installed, and this is explained here: [trackmate-conda-path](trackmate-conda-path)
 
+Since v8, TrackMate ships better track and segmentation editing. 
+Track editing (correcting missing or spurious links over time) is mainly done in the main view and [TrackScheme](views/trackscheme).
+The shape of objects can be edited in the new [segmentation editor](tutorials/trackmate-segmentation-editor).
+
 
 ### Downloadable documents and tutorials
 
