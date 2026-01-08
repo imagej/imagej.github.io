@@ -28,7 +28,7 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Autocorrelation, FFT, Statistics
 
 ### 1D Complexity analyses
-- Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot, Porta Guzik Ehler indices, Recurrence quantification analysis, Rescaled auto-density RAD, Standard HRV measurements, Symbolic aggregation
+- Allometric scaling, Detrended fluctuation analysis, Generalised DFA, Kolmogorov complexity and Logical depth, Lyapunov exponent, Poincare plot, Porta Guzik Ehler indices, Recurrence quantification analysis, Renyi heterogeneities, Rescaled auto-density RAD, Statistical complexity measures SCM, Standard HRV measurements, Symbolic aggregation
 
 ### 1D Entropy analyses
 - Generalised entropies, Permutation entropy, Sample entropy
@@ -40,10 +40,10 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Image opener, Image generator
 
 ### 2D Preprocessing
-- Auto crop borders, Filter, Histogram modification, Noise, Particles to stack, Segmentation - RGB relative, Surrogates
+- Auto crop borders, Filter, Histogram modification, Noise, Outliers, Particles to stack, Segmentation - RGB relative, Surrogates
 
 ### 2D Complexity analyses
-- Kolmogorov complexity and Logical depth
+- Kolmogorov complexity and Logical depth, Renyi heterogeneities, Statistical complexity measures SCM
 
 ### 2D Entropy analyses
 - Generalised entropies
@@ -55,10 +55,10 @@ ComsystanJ (Complex Systems Analysis for ImageJ) is a collection of ImageJ2/Fiji
 - Image volume opener, Image volume generator
 
 ### 3D Preprocessing
-- 3D Filter, 3D Noise, 3D Surrogates
+- 3D Filter, 3D Noise, 3D  Outliers, 3D Surrogates
 
 ### 3D Complexity analyses
-- 3D Kolmogorov complexity and Logical depth
+- 3D Kolmogorov complexity and Logical depth, 3D Renyi heterogeneities, 3D Statistical complexity measures SCM
 
 ### 3D Entropy analyses
 - 3D Generalised entropies
