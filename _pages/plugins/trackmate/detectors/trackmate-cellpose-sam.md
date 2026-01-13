@@ -2,16 +2,12 @@
 title: TrackMate-Cellpose-SAM
 categories: [Segmentation,Tracking,Deep Learning]
 icon: /media/icons/cellpose.png
-description: cellpose-SAM integration in TrackMate.
+description: Cellpose-SAM integration in TrackMate.
 categories: [Segmentation,Tracking,Machine Learning]
 artifact: sc.fiji:TrackMate-Cellpose
 ---
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-R2_multiC.gif" width='400'  %} {% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-01.png"  width='200' %}
-
-{% include notice icon="warning"
-  content="The Cellpose-SAM integration is not deleased yet! 
-  It depends on the future version of TrackMate (the forthcoming v8), to be released Autumn 2025 (if everything goes well)." %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-R2_multiC.gif" width='400'  %} {% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-01.png"  width='200' %}
 
 This page describes a detector module for [TrackMate](/plugins/trackmate/index) that relies on the latest version of [cellpose](https://cellpose.readthedocs.io/en/latest/) to segment cells in 2D. It is not included in the core of TrackMate and must be installed via its own [update site](/update-sites/following). It also requires cellpose to be installed on your system and working independently. This tutorial page gives installation details and advices at how to use the cellpose integration in TrackMate.
 
@@ -80,13 +76,13 @@ If you have not done it yet, you need to [configure the TrackMate conda path in 
 
 ### Cellpose parameters in the TrackMate UI
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-01.png" align='center' width='400' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-01.png" align='center' width='400' %}
 We document these parameters from top to bottom in the GUI.
 
 ##### `Conda environment`
 
 Specify in what conda environment you installed Cellpose-SAM. 
-If you get an error at this stage, it is likely because the conda path for TrackMate was not configured properly. Check [this page]((/plugins/trackmate/trackmate-conda-path).
+If you get an error at this stage, it is likely because the conda path for TrackMate was not configured properly. Check [this page](/plugins/trackmate/trackmate-conda-path).
 
 ##### `Pretrained model`
 
@@ -125,14 +121,14 @@ This image comes from the lab of Guillaume Jacquemet and was used in {% include 
 
 
 With all channels:
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-allchannels.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-allchannels.png" align='center' %}
 
 Channel 1 only, in which nuclei are painted in red:
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-channel-1.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-channel-1.png" align='center' %}
 
 Channel 2 only, in which the cell cytoplasm appears in green:
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-channel-2.png" align='center'  %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-channel-2.png" align='center'  %}
 
 Channel 3 only, which is empty:
-{% include img src="/media/plugins/trackmate/detectors/trackmate-cellpose-sam-channel-3.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-cellpose-sam-channel-3.png" align='center' %}
 

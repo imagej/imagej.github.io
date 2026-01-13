@@ -7,7 +7,7 @@ categories: [Segmentation,Tracking,Machine Learning]
 artifact: sc.fiji:TrackMate-Cellpose
 ---
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-01.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-advanced-01.png" align='center' width='500' %}
 
 The advanced Omnipose integration in [TrackMate](/plugins/trackmate/index) works roughly as the [Omnipose integration](trackmate-omnipose). The omnipose advanced detector gives you the possibility to tune some Omnipose model hyper-parameters.
 It requires Omnipose to be installed on your system and working independently. This page gives installation details and advices at how to use the omnipose advanced integration in TrackMate.
@@ -119,52 +119,50 @@ It is a relatively large image with a small pixel size (70 nm).
 Each 2D frame is 1824 x 1896 and a bacteria of length 4 um is imaged over about 50 pixels.
 With this image selected, run TrackMate (_Plugins > TrackMate_).
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-01.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-01.png" align='center' width='500' %}
 
-In the detector selection panel, pick the **omnipose advanced detector**.
+In the detector selection panel, pick the **Omnipose advanced detector**.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-02.png" align='center' width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-advanced-tutorial-02.png" align='center' width='300' %}
 
 The configuration panel is quasi identical to that of the omnipose detector.
 Here, the default values will give us satisfactory results. 
-You just need to edit the path to the python executable on your computer. 
-For a windows computer where omnipose has been installed following the instructions above, this path is something like `C:\Users\tinevez\anaconda3\envs\omnipose-106\python.exe`.
-For a Mac computer, the path will be like `/opt/miniforge/base/envs/omnipose-106/bin/python`.
+You just need to set the conda environment to be the one where you installed Omnipose.
 
-To change the values of the flow and mask thresholds, you need to slide their associated cursor in the panel.
+The values of the flow and mask thresholds are set with two sliders and number inputs.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-03.png" align='center' width='300' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-advanced-tutorial-03.png" align='center' width='300' %}
 
 Click the `Preview` button to check that the settings give correct results.
 Here the quality is equal to the number of pixels inside detected objects.
 We see that there are some very small objects with settings we have, but otherwise the results are excellent with the default parameters. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-04.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-advanced-tutorial-04.png" align='center' width='500' %}
 
 We can now run the detection over the whole movie by clicking the `Next` button.
 On my windows machine with a NVIDIA 2080Ti, it takes about 3 to 4 seconds per frame. 
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-advanced-tutorial-05.png" align='center' width='500' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-advanced-tutorial-05.png" align='center' width='500' %}
 
 When done, click `Next` to reach the initial filtering panel.
 The quality histogram displays a small peak at low quality, corresponding to small spurious objects.
 We can filter them out by setting the threshold in between the two peaks in the histogram.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-06.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-06.png" align='center' width='300' %}
 
 We can skip filtering objects.
 Click `Next` until you reach the tracker selection panel.
 The bacteria do not move much, but divide, pushing each other away.
 We found out that for this kind of dynamics the **Overlap tracker** gives good tracking results.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-07.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-07.png" align='center' width='300' %}
 
 A few parameter needs to be tuned. 
 For the `Min IoU` we use **0.1**.
 For the `Scale factor` we use **1.3**.
 Click `Next`.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-08.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-08.png" align='center' width='300' %}
 
 This yields a good lineage of the bacteria.
 We see each "colony" grows, and mix with the close ones. 
@@ -177,16 +175,16 @@ In the display settings window that appear, make the following changes:
 - for `spot color`, select **Track index**
 - uncheck `draw tracks`
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-09.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-09.png" align='center' %}
 
 The lineages that we see in the [TrackScheme](/plugins/trackmate/views/trackscheme) window show that for some bacteria, there might be some linking errors late in the movie.
 But overall we could correctly detect the division events over 5 generations in this movie.
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-10.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-10.png" align='center' %}
 
 In the very last panel of TrackMate, an action called **Plot N spots vs time** highlights the exponential growth of the bacteria:
 
-{% include img src="/media/plugins/trackmate/detectors/trackmate-omnipose-tutorial-11.png" align='center' %}
+{% include img src="/media/plugins/trackmate/detectors/cellpose/trackmate-omnipose-tutorial-11.png" align='center' %}
 
 
 

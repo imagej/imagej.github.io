@@ -3,6 +3,7 @@ mediawiki: Biomat
 name: "Biomat"
 title: Biomat
 categories: [Filtering, Mathematical Morphology]
+extensions: ["mathjax"]
 release-date: "11/26/2024"
 initial-release-date: "03/26/2019"
 team-founder: 'Jiří Janáček'
@@ -37,6 +38,17 @@ Example: [Synthetic contours](https://raw.githubusercontent.com/jiri-janacek/bio
 -   {% include bc path='Plugins | Biomat | Spherical Extrusion'%}
 
  {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion.png" caption="Height of spherical extrusion" %}
+
+The binary image was extruded into 3D by union
+of balls which equatorial circles are inside the foreground $$C$$. The
+height of the extrusion $$h$$ as the function of 2D point $$x$$
+is
+
+$$
+h\left(x\right)=\max_{s}\sqrt{d\left(s,C^{c}\right)^{2}-d\left(x,s\right)^{2}}
+$$
+
+where $$d$$ is Euclidean distance, $$C^{c}$$ is the background and $$s$$ is the centre of the equatorial circle. 
 
  {% include img align="center" name="objects" src="https://raw.githubusercontent.com/jiri-janacek/biomat/d9ca3b6cfd867b04717b16a3debd45ef9157419e/media/objects_Spherical_extrusion_res.png" caption="Area and mean height of spherical extrusion" %}
 

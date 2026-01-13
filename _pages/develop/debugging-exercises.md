@@ -1,17 +1,17 @@
 ---
-mediawiki: Debugging_Exercises
 title: Debugging Exercises
 section: Extend:Development:Guides
+project: /software/fiji
 ---
 
- {% include notice icon="info" content='This page presents exercises for *software developers* to use for debugging ImageJ.  
+ {% include notice icon="info" content='This page presents exercises for *software developers* to use for debugging Fiji.  
 If you are a *user* looking to troubleshoot issues, see the [Troubleshooting](/learn/troubleshooting) page.' %}
 
 [Debugging](/develop/debugging) is the art of determining the cause and/or location of a problem. The purpose of this guide is to provide developers practical, hands-on experience using a variety of debugging techniques to identify problems in code.
 
 ## Requirements
 
-As ImageJ is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
+As Fiji is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
 -   [Git](/develop/git)
 -   [Maven](/develop/maven)
@@ -35,11 +35,11 @@ However, there are critical drawbacks to trying to debug via print statement:
 -   They are part of the code. Adding print statements changes line numbers, causes git to pick up modifications to the source code, and can even affect performance and/or behavior.
 -   They are limited. Even the most basic breakpoint and expression evaluation in Eclipse debug mode gives you vastly more power and flexibility over print statements.
 
-Learning to use debugging tools is, understandably, a burden: it's "one more thing" to learn as a developer. But if you want to develop ImageJ plugins, you will almost certainly run into cases where debugging is necessary. So you may as well start familiarizing yourself with the tools now, gaining skills and perspectives that will serve you well throughout your career.
+Learning to use debugging tools is, understandably, a burden: it's "one more thing" to learn as a developer. But if you want to [develop plugins](/develop/plugins), you will almost certainly run into cases where debugging is necessary. So you may as well start familiarizing yourself with the tools now, gaining skills and perspectives that will serve you well throughout your career.
 
 ## Using this guide
 
-The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, none explicitly use ImageJ. But once you learn how to [debug an external Java application](#exercise-4-imagej-plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, application like [ImageJ](/software/imagej).
+The goal of these exercises is not to *solve* the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for *when* to apply each technique. To keep exercises simple and focused, none explicitly use Fiji. But once you learn how to [debug an external Java application](#exercise-4-imagej-plugins), you will have the knowledge to apply any of these techniques to a rich, and complex, applications like [Fiji](/software/fiji).
 
 Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into `hidden` and `visible` packages. Users are strongly recommended to only inspect and set breakpoints from the `visible` classes. From a development point of view, consider the `hidden` package a 3rd-party library that you may not have control over, or access to the source code.
 
@@ -197,13 +197,13 @@ Were you able to get the breakpoint to stop in the loop only when a problem is e
 -   Setting a hit count on a breakpoint is useful if problematic code is called multiple times
 -   If problems appear randomly, using a conditional expressions on the breakpoint can help
 
-### Exercise 4: ImageJ plugins
+### Exercise 4: Fiji plugins
 
 #### Goals
 
--   Start a debugging session in Eclipse that connects to a running ImageJ instance
+-   Start a debugging session in Eclipse that connects to a running Fiji instance
 
-Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual ImageJ [plugin](/develop/plugins#what-is-a-plugin). Although plugin developers typically set up tests to run their plugin within ImageJ, it is impossible to test all possible runtime environments: users could have a variety of [update sites](/update-sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of ImageJ itself.
+Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` class, on the other hand, is an actual Fiji [plugin](/develop/plugins#what-is-a-plugin). Although plugin developers typically set up tests to run their plugin within Fiji, it is impossible to test all possible runtime environments: users could have a variety of [update sites](/update-sites) enabled, custom plugins installed, etc... and each modification is an opportunity for dependency skew and clashes with your plugin. When problems do arise, it is invaluable to have the ability to debug a running copy of Fiji itself.
 
 `E4RemoteResearch` does still have a `main` method to demonstrate the expected output for this plugin - in this case, simply printing the concrete implementation of the `ConsoleService`. Run the class in Eclipse and you should see some simple output in the console:
 
@@ -211,11 +211,11 @@ Exercises 1-3 are abstract, self-contained programs. The `E4RemoteResearch` clas
 I found our console service! Look: class org.scijava.console.DefaultConsoleService
 ```
 
-Next, we want to run this plugin in ImageJ and see what happens:
+Next, we want to run this plugin in Fiji and see what happens:
 
 1.  On the command line, run `mvn clean install` from the `imagej-troubleshooting` directory, to build a `.jar`
-2.  Copy the produced jar (e.g. `target/imagej-troubleshooting-0.1.0-SNAPSHOT.jar`) to the `jars` directory of your ImageJ installation
-3.  Start ImageJ
+2.  Copy the produced jar (e.g. `target/imagej-troubleshooting-0.1.0-SNAPSHOT.jar`) to the `jars` directory of your Fiji installation
+3.  Start Fiji
 
 Note that the menu path of the plugin is specified in the class's annotation:
 
@@ -227,15 +227,15 @@ So, you can now run the `E4 - Print ConsoleService` command either via the menus
 
 ![](/media/develop/e4stacktrace.png)
 
-In order to connect Eclipse to ImageJ, we need to close our running instance and [launch ImageJ from the command line](/learn/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
+In order to connect Eclipse to Fiji, we need to close our running instance and [launch Fiji from the command line](/learn/troubleshooting#launching-imagej-from-the-console), which allows us to set the [debug flag](/develop/debugging#attaching-to-imagej-instances), e.g.:
 ```
-ImageJ.app/ImageJ-linux64 --debugger=8000
+Fiji/fiji --debugger=8000
 ```
 
 {% capture windows-console-tip %}
 On Windows we need to add the `console` flag:
 ```
-ImageJ.app/ImageJ-linux64 --debugger=8000 --console
+Fiji/fiji --debugger=8000 --console
 ```
 See [this issue](https://github.com/imagej/imagej-launcher/issues/29) for more information.
 {% endcapture %}
@@ -243,16 +243,16 @@ See [this issue](https://github.com/imagej/imagej-launcher/issues/29) for more i
 
 {% include img src="e4debugconfig" align="right" width="400" caption="Remote Java Application debug configuration" %}
 
-This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
+This will start up Fiji in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running Fiji instance:
 
 1.  Right-click the `E4RemoteResearch` source file in the Package Explorer
 2.  Select {% include bc path="Debug As | Debug Configurations..." %}
 3.  Scroll down the list of configurations (or search) until you find `Remote Java Application`
 4.  Double-click `Remote Java Application` to create the debug configuration
-5.  Rename the configuration to `E4RemoteResearch-remote` to distinguish it. If necessary you can update the port to match what was specified when you started ImageJ.
+5.  Rename the configuration to `E4RemoteResearch-remote` to distinguish it. If necessary you can update the port to match what was specified when you started Fiji.
 6.  Click the `Debug` button to start a remote debugging session
 
-At this point ImageJ and Eclipse should be communicating. It's important to understand that the information flow goes from ImageJ to Eclipse: ImageJ says "I am at line number X in class Y" and if Eclipse looks in the source files it knows about, and stops if it finds a breakpoint at that location.
+At this point Fiji and Eclipse should be communicating. It's important to understand that the information flow goes from Fiji to Eclipse: Fiji says "I am at line number X in class Y" and if Eclipse looks in the source files it knows about, and stops if it finds a breakpoint at that location.
 
 **However**, when Eclipse looks at its source files, it's not looking at the *actual* classes that were used to launch the remote Application. In fact, the classes Eclipse looks in depend entirely on the classpath of the project *that was used to start the remote debugging session*. So when you are remote debugging, there are two best practices to follow:
 
@@ -262,19 +262,19 @@ At this point ImageJ and Eclipse should be communicating. It's important to unde
 Since we already followed these best practices, we can now finally debug our plugin:
 
 1.  In Eclipse, set a breakpoint on the line where the `ConsoleService` is being cast to `DefualtConsoleService`
-2.  In ImageJ, run the `E4 - Print ConsoleService` command
+2.  In Fiji, run the `E4 - Print ConsoleService` command
 3.  In Eclipse, when the breakpoint is hit, inspect the value of the `consoleService` field
 
 {% include quiz q="What is the class of `consoleService`?"
                 a="It's a `LegacyConsoleService`." %}
 
-{% include quiz q="Extra credit: why did this plugin work when we ran its `main` method, but not in ImageJ?"
-                a="The `Context` in the `main` method is built with only one `ConsoleService` implementation available - `DefaultConsoleService`. In the full `Context` used in ImageJ, a higher-priority `LegacyConsoleService` overrides the `DefaultConsoleService`." %}
+{% include quiz q="Extra credit: why did this plugin work when we ran its `main` method, but not in Fiji?"
+                a="The `Context` in the `main` method is built with only one `ConsoleService` implementation available - `DefaultConsoleService`. In the full `Context` used in Fiji, a higher-priority `LegacyConsoleService` overrides the `DefaultConsoleService`." %}
 
 #### Takeaways
 
--   Launching ImageJ from the command line allows us to add useful flags and collect debugging information
--   Attaching Eclipse to a running ImageJ lets us debug plugins in a "production" environment
+-   Launching Fiji from the command line allows us to add useful flags and collect debugging information
+-   Attaching Eclipse to a running Fiji lets us debug plugins in a "production" environment
 
 ### Exercise 5: Git history
 
@@ -343,9 +343,9 @@ Date:   Fri Nov 20 13:46:34 2015 -0600
 
 When debugging we're trying to identify why a program isn't behaving as expected. Often this starts in response to an unhandled Java exception, which comes with a helpful stack trace to point us in the right direction. Unfortunately, there are also times when no information as given - such as when the [JVM hangs (gets stuck)](/develop/debugging#debugging-jvm-hangs) or [crashes without warning](/develop/debugging#debugging-hard-jvm-crashes). In this exercise we'll look at another way to extract information from our application: by forcing a stack trace to be printed.
 
-As we did [in exercise 4](#exercise-4-imagej-plugins), the first thing to do is build the `imagej-troubleshooting .jar` and install it in your `ImageJ.app/jars` directory. Then you can start up ImageJ and run the command for this exercise: {% include bc path="Plugins | Troubleshooting | E6 - Start Looping" %}
+As we did [in exercise 4](#exercise-4-imagej-plugins), the first thing to do is build the `imagej-troubleshooting.jar` and install it in your `Fiji/jars` directory. Then you can start up Fiji and run the command for this exercise: {% include bc path="Plugins | Troubleshooting | E6 - Start Looping" %}
 
-After running this command, you should notice ImageJ sitting around for a few seconds... and then close unexpectedly. As this crash doesn't give us any leads to follow, the next thing we should do is look at the code:
+After running this command, you should notice Fiji sitting around for a few seconds... and then close unexpectedly. As this crash doesn't give us any leads to follow, the next thing we should do is look at the code:
 
 ```
 NotALoop.dontLoopTwice();
@@ -359,15 +359,15 @@ NotALoop.loopForever();
 
 We see four methods are being called. What do they do..? No idea! But we know one of them (at least) is bad. So let's do what we can to learn what's happening in our application up until the crash.
 
-To investigate further, close ImageJ (if it's running) and launch it again from the command line, e.g.:
+To investigate further, close Fiji (if it's running) and launch it again from the command line, e.g.:
 
 ```
-ImageJ.app/ImageJ-linux64
+Fiji/fiji
 ```
 
-We actually don't need any extra flags this time, as this technique isn't specific to ImageJ. When you run a program from the command line, your console is directly tied to the running instance:
+We actually don't need any extra flags this time, as this technique isn't specific to Fiji. When you run a program from the command line, your console is directly tied to the running instance:
 
-{% include img src="e6console" width="400" title="Waiting for input after launching ImageJ" %}
+{% include img src="e6console" width="400" title="Waiting for input after launching Fiji" %}
 
 In this state, we can still send signals to the running application (for example - {% include key keys='ctrl|c' %} to [kill the app](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)).
 
@@ -378,9 +378,9 @@ When running a Java application, we can use {% include key keys='ctrl|backslash'
 
 With this knowledge:
 
-1.  Run the `E6 - Start Looping` command from ImageJ
-2.  Before ImageJ crashes, switch back to the terminal and use {% include key keys='ctrl|backslash' %} to print a stack trace
-3.  Because we want to guess what the last method to run is, keep taking stack traces until ImageJ crashes
+1.  Run the `E6 - Start Looping` command from Fiji
+2.  Before Fiji crashes, switch back to the terminal and use {% include key keys='ctrl|backslash' %} to print a stack trace
+3.  Because we want to guess what the last method to run is, keep taking stack traces until Fiji crashes
 4.  Look back through the console text and find the last method to be executed
 
 Hint: raw stack dumps like this are not the easiest to read. Stack traces for all the threads in the JVM are printed, as well as additional information we're not interested in. Look for the the sections of stack traces sorted by thread, like you would see in an exception message, and find the `E6SleuthingSilence` class. Whatever follows that entry is at the top of the stack, and thus what was being processed on that thread when you took the stack trace.

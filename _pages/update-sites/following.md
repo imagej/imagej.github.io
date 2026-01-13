@@ -29,11 +29,17 @@ Click on the *Manage update sites* button to bring up the site management dialog
 
 {% include img src="mamed-3" %}
 
-If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the *Add update site* button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
+If the update site you want to follow is listed, just click the checkbox next to its name. 
+
+### Adding unlisted sites
+
+To add follow an update site that is not listed, click the **Add Unlisted Site** button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 
 {% include notice icon="note" content="The list of update sites shown by default is generated from a special page, which you can [view and edit here](/list-of-update-sites). Update site maintainers are encouraged to add their update site to this list, as it both helps the community and the developers." %}
 
-After you have selected your desired update site(s), close the dialog. The list of plugins that will be installed or updated from the chosen sites will now show up:
+### Verify new files
+
+After you have selected your desired update site(s), close the dialog. The list of files that will be installed or updated from the chosen sites will now show up:
 
 {% include img src="addpluginsite-5" %}
 
@@ -41,9 +47,7 @@ After you have selected your desired update site(s), close the dialog. The list 
 Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
 When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](/discuss) with the maintainers!" %}
 
-## Choose and download plugins
-
-You can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
+By default, all files from the new update site(s) will be installed or updated. However, if needed you can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
 
 {% include img src="addpluginsite-6" %}
 

@@ -165,12 +165,14 @@ Try disabling time averaging (1).
 * [Romain F. Laine](https://twitter.com/LaineBioImaging)
 * {% include person id='guijacquemet' %}
 
-## When using this script, please cite the NanoJ paper
+## When using this script, please cite the original Fast4DReg and the NanoJ papers
 
-{% include citation %}
+{% include citation doi='10.1242/jcs.260728' %}
+{% include citation doi='10.1088/1361-6463/ab0261' %}
 
 ## Change log
 
-* **220222 Version 1.0 (pre-print)**
+* **2025/11/10 Version 2.0 (published)**
+* **2022/08/15 Version 1.0 (pre-print)**
 
-All four scripts have been tested and work well. Ready for pre-print.
+All four scripts have been tested and work well. Already published.

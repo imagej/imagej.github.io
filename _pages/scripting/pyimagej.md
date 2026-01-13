@@ -33,6 +33,8 @@ instructions, please see the project page on PyPI:
 
 {% include link-banner url="https://pypi.org/project/pyimagej/" %}
 
+{% include notice icon="info" content='If you are new to Python or image analysis using Python and would like to learn about it, check out the [tutorials](https://imaging.epfl.ch/field-guide/sections/python/#tutorials) and [resources](https://imaging.epfl.ch/field-guide/sections/python/#tutorials) from the [EPFL Center for Imaging - image analysis field guide](https://imaging.epfl.ch/field-guide/index.html) ' %}
+
 ## Publication
 
 To cite PyImageJ, you can use:

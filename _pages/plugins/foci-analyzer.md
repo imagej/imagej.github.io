@@ -4,7 +4,7 @@ categories: [Analysis]
 icon: /media/icons/Foci-Analyzer-icon.png
 source-url: "https://github.com/BioImaging-NKI/Foci-analyzer"
 update-site: "foci-analyzer"
-release-version: v1.88
+release-version: v1.92
 support-status: Active
 team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
@@ -127,7 +127,7 @@ This option only affects the nuclei segmentation; it is different from the previ
 
 - _Cellpose cell diameter (pixels), 0 for automatic_ : Estimated diameter of the cells, in pixels. Setting this parameter to 0 will trigger Cellpose to estimate it. Please check the Fiji console for the resulting estimate.
 
-- _Cellpose model_ : The [model](https://cellpose.readthedocs.io/en/v3.1.1.1/models.html#models) (built-in or custom) used for segmentation. Tested up to Cellpose 3.1 (cpsam may just work though).
+- _Cellpose model_ : The [model](https://cellpose.readthedocs.io/en/v3.1.1.1/models.html#models) (built-in or custom) used for segmentation. Tested up to Cellpose 3.1.1.1 (Cellpose 4 is now operated with a different command - support will follow soon).
 
 - _Remove nuclei with diameter smaller than (units)_ : Objects smaller than circles having an area corresponding to this diameter will be removed. 'Units' depends on the image, and will almost always be 'µm', or otherwise 'pixels' in case the pxiel calibration values are missing. (default: 4)
 
@@ -231,7 +231,7 @@ The following output tables are displayed after analysis of each image/frame. Th
 
 2. When `Also detect foci in Channel B and perform colocalization` is checked: a  `.zip` file ending with `foci_coloc_map.zip`, containing the [colocalization maps](https://imagej.net/plugins/foci-analyzer#colocalization-maps). Here, analysis settings are also stored in the metadata (`Image` -> `Show Info... in Fiji).
 
-3. A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity, mean intensity, sum intensity, foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
+3. A `.tsv` file ending with `Foci_results.tsv` with statistics _per cell/nucleus_, with the following columns: _cell area/volume, background intensity_ (outside the nuclei)_, mean intensity, sum intensity, threshold (filtered image), foci count, mean foci intensity, median foci intensity, mean foci volume, median foci volume, total foci volume, total foci intensity_ for the foci channel(s), as well as _background intensity, mean intensity, sum intensity_ for the nucleus channel. When colocalization is performed, the table also contains: _overlapping foci count, overlapping foci volume, overlap count % ch_A, overlap volume ch_A, count % ch_B, overlap count % ch_B, overlap volume ch_B_.
 
 4. A `.tsv` file ending with `All_Foci_statistics.tsv` containing relationship info and intensity info for every individual focus: _label, Cell ID, Mean, StdDev, Max, Min, Median, Skewness, Area/Volume, Circularity/Sphericity, Centroid.X, Centroid.Y, (Centroid.Z)_. (Centroids coordinates with respect to the image origin.)
 
@@ -253,3 +253,7 @@ The macro produces overlap maps for the foci in the two chosen channels that vis
 
 ## Handling results
 For each image (or frame) a new result file is generated. When multiple images (or frames) are processed. Result `.tsv` files in a folder can be appended by running `Combine result files` in the Foci-Analyzer Fiji submenu. The resulting table is saved as `Results_all_files.tsv` in the same folder as the input `.tsv` files. (By the way, this script also runs on other text-based files, e.g. `.csv`, `.txt`.)
+
+## Foci quantification on large images using QuPath & Fiji
+Foci Analyzer can be combined with QuPath, enabling foci analysis on very large images. For this, we have developed some `groovy` scripts [(on Github)](https://github.com/BioImaging-NKI/Foci-analyzer/tree/main/QuPath). Image tiles from annotated regions together with cell segmentations are exported from QuPath and analyzed in Fiji. Foci results can be imported into QuPath, allowing cells to be classified on their foci characteristics.
+
