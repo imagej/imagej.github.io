@@ -1,7 +1,7 @@
 ---
 title: RIA-J
 categories: [Analysis, Visualization]
-icon: /media/icons/ria-j.png
+icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/RIA-J"
 update-site: "RIA-J"
 release-version: v2.0.0
