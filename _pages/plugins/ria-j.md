@@ -1,16 +1,25 @@
 ---
-title: RIA-J Raito Image Analyzer
-categories: [Analysis, Visualization, Image Characterization]
-icon: /media/icons/RIA-J.png
-source-url: https://github.com/Epivitae/RIA-J
-update-site: RIA-J
-release-version: v2.2.0
+title: RIA-J
+categories: [Analysis, Visualization]
+icon: /media/icons/ria-j.png
+source-url: "https://github.com/Epivitae/RIA-J"
+update-site: "RIA-J"
+release-version: v2.0.0
 support-status: Active
 team-founders: ['@Epivitae']
 team-maintainers: ['@Epivitae']
 ---
+{%- assign github            = page.github            -%}
+{%- assign release-version   = page.release-version   -%}
+{%- assign release-date      = page.release-date      -%}
+{%- assign dev-status        = page.dev-status        -%}
+{%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-**RIA-J (Ratio Imaging Analyzer - Java Edition)** is a lightweight, high-performance ImageJ/Fiji plugin designed for interactive ratiometric fluorescence analysis. Developed by **Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it serves as the native Java counterpart to the Python-based RIA software.
+**RIA-J (Ratio Imaging Analyzer - Java Edition)** is a lightweight, high-performance ImageJ/Fiji plugin designed for interactive ratiometric fluorescence analysis. 
+
+Developed by **Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it serves as the native Java counterpart to the Python-based RIA software.
+
+Author: Kui Wang, CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/RIA-J/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 
