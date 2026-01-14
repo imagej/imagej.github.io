@@ -1,18 +1,13 @@
 ---
-title: RIA-J
-name: RIA-J (Ratio Imaging Analyzer - Java Edition)
-description: A high-performance, interactive dashboard for real-time ratiometric fluorescence analysis and visualization.
+title: RIA-J Raito Image Analyzer
 categories: [Analysis, Visualization, Image Characterization]
-authors: [Kui Wang]
-labels: [ratiometric, fluorescence, FRET, biosensor, kinetics, normalized-convolution]
 icon: /media/icons/RIA-J.png
-project: https://github.com/Epivitae/RIA-J
-source: https://github.com/Epivitae/RIA-J/blob/main/src/main/java/com/mybiolab/RIA_J.java
-website: https://github.com/Epivitae/RIA-J
-dev-status: active
-support: https://github.com/Epivitae/RIA-J/issues
-doi: 10.5281/zenodo.18200077
+source-url: https://github.com/Epivitae/RIA-J
 update-site: RIA-J
+release-version: v2.2.0
+support-status: Active
+team-founders: ['@Epivitae']
+team-maintainers: ['@Epivitae']
 ---
 
 **RIA-J (Ratio Imaging Analyzer - Java Edition)** is a lightweight, high-performance ImageJ/Fiji plugin designed for interactive ratiometric fluorescence analysis. Developed by **Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it serves as the native Java counterpart to the Python-based RIA software.
