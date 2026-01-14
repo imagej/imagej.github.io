@@ -5,13 +5,13 @@ description: A high-performance, interactive dashboard for real-time ratiometric
 categories: [Analysis, Visualization, Image Characterization]
 authors: [Kui Wang]
 labels: [ratiometric, fluorescence, FRET, biosensor, kinetics, normalized-convolution]
-icon: /images/RIA-J.png
+icon: /media/icons/RIA-J.png
 project: https://github.com/Epivitae/RIA-J
 source: https://github.com/Epivitae/RIA-J/blob/main/src/main/java/com/mybiolab/RIA_J.java
 website: https://github.com/Epivitae/RIA-J
 dev-status: active
 support: https://github.com/Epivitae/RIA-J/issues
-doi: 10.5281/zenodo.18200078
+doi: 10.5281/zenodo.18200077
 update-site: RIA-J
 ---
 
@@ -49,8 +49,8 @@ RIA-J is distributed via an official Fiji Update Site.
 If you use this software in your research, please cite the permanent Zenodo record:
 
 {% include citation
-   text="Wang, K. (2026). RIA-J: Ratio Imaging Analyzer (Java) - Interactive Ratiometric Analysis for ImageJ/Fiji (Version v0.3.0). Zenodo."
-   doi="10.5281/zenodo.18200078"
+   text="Wang, K. (2026). RIA-J: Ratio Imaging Analyzer (Java) - Interactive Ratiometric Analysis for ImageJ/Fiji. Zenodo."
+   doi="10.5281/zenodo.18200077"
 %}
 
 * **Repository**: [https://github.com/Epivitae/RIA-J](https://github.com/Epivitae/RIA-J)
