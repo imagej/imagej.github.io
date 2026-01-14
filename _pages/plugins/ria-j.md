@@ -1,6 +1,6 @@
 ---
 title: RIA-J
-categories: [Analysis, Visualization]
+categories: [Analysis, Visualization, Ratiometric Imaging]
 icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/RIA-J"
 update-site: "RIA-J"
