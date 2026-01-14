@@ -1,6 +1,6 @@
 ---
 title: RIA-J
-categories: [Analysis, Visualization]
+categories: [Analysis, Visualization, Ratiometric Imaging]
 icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/RIA-J"
 update-site: "RIA-J"
@@ -15,11 +15,13 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18204761.svg)](https://doi.org/10.5281/zenodo.18204761)
+
 **RIA-J (Ratio Imaging Analyzer - Java Edition)** is a lightweight, high-performance ImageJ/Fiji plugin designed for interactive ratiometric fluorescence analysis. 
 
-Developed by **Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it serves as the native Java counterpart to the Python-based RIA software.
+Developed by **Dr. Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it serves as the native Java counterpart to the Python-based RIA software.
 
-Author: Kui Wang, CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/RIA-J/issues) or tag @Epivitae on image.sc.
+Author: [Kui Wang](www.cns.ac.cn), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/RIA-J/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 
@@ -52,12 +54,11 @@ RIA-J is distributed via an official Fiji Update Site.
 
 If you use this software in your research, please cite the permanent Zenodo record:
 
-{% include citation
-   text="Wang, K. (2026). RIA-J: Ratio Imaging Analyzer (Java) - Interactive Ratiometric Analysis for ImageJ/Fiji. Zenodo."
-   doi="10.5281/zenodo.18200077"
-%}
+Wang, K. (2026). RIA-J: Ratio Imaging Analyzer (Java) - Publication-Grade Ratiometric Analysis for ImageJ/Fiji (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.18204761
+
+
 
 * **Repository**: [https://github.com/Epivitae/RIA-J](https://github.com/Epivitae/RIA-J)
-
+* **CNS Team**: [Chimeric Nano Sensor Team](https://www.cns.ac.cn/)
 ---
 *Developed by Kui Wang © 2026. Part of the development for genetically encoded indicators, including GEM-CPPU1.0 and phosphate (Pi) probes.*
