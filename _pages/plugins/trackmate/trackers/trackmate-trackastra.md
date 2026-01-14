@@ -8,11 +8,6 @@ categories: [Tracking,Machine Learning]
 artifact: sc.fiji:TrackMate-Trackastra
 ---
 
-{% include notice icon="warning"
-  content="The Trackastra integration is not deleased yet! 
-  It depends on the future version of TrackMate (the forthcoming v8), to be released Autumn 2025 (if everything goes well)." %}
-
-
 TrackMate integration of the **Trackastra** transformer-based tracking algorithm, by Benjamin Gallusser and Martin Weigert. 
 If you use this tracker in your work, please be so kind as to cite the paper that describes it:
 
