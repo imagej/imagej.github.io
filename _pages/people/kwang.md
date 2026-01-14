@@ -25,9 +25,12 @@ I am a Postdoctoral Fellow at the Institute of Neuroscience (ION), CAS, where I 
 
 Below are the open-source software tools I developed to facilitate imaging analysis.
 
-### 🔬 Biosensor Tools
+### 🔬 Biosensor Tools (Suite)
 
 A collection of ImageJ/Fiji plugins for ratiometric imaging, motion correction, and workspace management.
+
+<br>
+<br>
 
 **📥 Installation via Fiji Update Site**
 To install or update these plugins, please use the **Biosensor Tools** update site:
