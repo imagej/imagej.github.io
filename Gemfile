@@ -20,6 +20,7 @@ gem 'jekyll', '~> 4.2'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'html-proofer'
 gem 'webrick'
+gem 'logger'
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
