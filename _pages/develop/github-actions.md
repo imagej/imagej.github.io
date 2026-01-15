@@ -22,7 +22,7 @@ Deploying your library to a [Maven](/develop/maven) repository makes it availabl
 ## Requirements
 
 -   Host your [open-source](/licensing/open-source) project on [GitHub](/develop/github).
--   Contact an ImageJ admin on the [Image.sc Zulip](https://imagesc.zulipchat.com/) or the [Image.sc Forum](http://forum.image.sc/) and request that they add the authentication secrets for deployment to your organization.
+-   Contact a SciJava admin (@ctrueden, @hinerm, @tpietzsch) on the [Image.sc Zulip](https://imagesc.zulipchat.com/) or the [Image.sc Forum](http://forum.image.sc/) and request that they add the authentication secrets for deployment to your organization.
 
 ## Instructions
 

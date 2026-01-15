@@ -20,7 +20,8 @@ If, for some reason, you have a gradle managed project instead of a maven projec
 Suppose that you have a gradle project with minimal dependencies and you want to upload the resulting built jar to scijava maven. First you need to host your project on github, and your github organisation needs to be allowed to deploy on scijava maven:
 
 -   Host your [open-source](/licensing/open-source) project on [GitHub](/develop/github).
--   Contact an ImageJ admin in [Gitter](/discuss/chat#gitter) or [the Image.sc Forum](http://forum.image.sc/) and request that they add the authentication secrets for deployment to your organization.
+-   Contact a SciJava admin (@ctrueden, @hinerm, @tpietzsch) on the [Image.sc Zulip](https://imagesc.zulipchat.com/) or the [Image.sc Forum](http://forum.image.sc/) and request that they add the authentication secrets for deployment to your organization.
+
 
 Then you need to amend your build script and add a github workflow, as specified below:
 
@@ -138,9 +139,9 @@ You will need to change the version number manually, and also run the github pub
 
 If you want to see a project which uses all of this, have a look at [https://github.com/BIOP/qupath-extension-warpy](https://github.com/BIOP/qupath-extension-warpy)
 
-## Consuming ImageJ artifact in a Gradle build.gradle script
+## Consuming a SciJava artifact in a Gradle build.gradle script
 
-The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle build script.
+The core artifacts in the SciJava software stack (e.g. [SciJava](/libs/scijava), [ImgLib2](/libs/imglib2), [ImageJ2](/software/imagej2), [SCIFIO](/libs/scifio), [Fiji](/software/fiji)) are built with [Maven](maven), but can also be consumed in a Gradle build script.
 
 Contributed<sup>[1](https://github.com/imagej/tutorials/issues/24)</sup> by {% include person id='reckbo' %}
 
@@ -158,14 +159,14 @@ buildscript {
 apply plugin: "io.spring.dependency-management"
 
 repositories {
-    jcenter()
+    mavenCentral()
     maven {
             url "https://maven.scijava.org/content/groups/public/"
     }
 }
 dependencyManagement {
     imports {
-        mavenBom 'net.imagej:pom-imagej:14.1.0'
+        mavenBom 'org.scijava:pom-scijava:43.0.0'
     }
 }
 
