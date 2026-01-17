@@ -10,8 +10,6 @@ affiliation:
   - Chimeric Nano Sensor (CNS) Team | https://www.cns.ac.cn/
 forum: Epivitae
 github: Epivitae
-stackoverflow: 
-openhub: 
 twitter: bio_sensor
 researchgate: Kui-Wang-37
 orcid: 0000-0002-9436-3632
@@ -21,33 +19,30 @@ scholar: RFAVjC4AAAAJ
 I am a Postdoctoral Fellow at the Institute of Neuroscience (ION), CAS, where I lead the **[Chimeric Nano Sensor (CNS) Team](https://www.cns.ac.cn)**. My research focuses on the development of genetically encoded fluorescent biosensors and their application in studying neurochemical dynamics in live animals.
 
 <br>
-<br>
 
-Below are the open-source software tools I developed to facilitate imaging analysis.
+## 🔬 Biosensor Tools
 
-### 🔬 Biosensor Tools
+I develop **Biosensor Tools**, a suite of open-source ImageJ/Fiji plugins designed for ratiometric imaging, motion correction, metadata inspection, and AI-powered denoising.
 
-A collection of ImageJ/Fiji plugins for ratiometric imaging, motion correction, and workspace management.
+### 📥 Installation
 
-<br>
-<br>
+The easiest way to install and stay up-to-date is via the **Fiji Update Site**:
 
-**📥 Installation via Fiji Update Site**
-To install or update these plugins, please use the **Biosensor Tools** update site:
 1. Open Fiji and navigate to `Help > Update...`
 2. Click `Manage update sites`.
-3. Click `Add update site` and fill in:
-   - **Name:** Biosensor Tools
-   - **URL:** `https://sites.imagej.net/Biosensor-Tools/`
+3. Click `Add update site` and enter:
+   * **Name:** `Biosensor Tools`
+   * **URL:** `https://sites.imagej.net/Biosensor-Tools/`
 4. Close the window and click `Apply changes`.
 
 <br>
-<br>
 
-**🛠️ Plugin List**
+### 🛠️ Plugin List
 
 | Plugin | Description | Links |
 | :--- | :--- | :--- |
-| **RIA-J** (Ratio Imaging Analyzer) | Publication-grade analysis for ratiometric biosensors. Features background subtraction, pixel-by-pixel ratio calculation, and IMD mode. | [Wiki](https://imagej.net/plugins/ria-j) / [GitHub](https://github.com/Epivitae/RIA-J) |
-| **FIA** (Fluorescence Image Analyzer) | A robust tool for image registration and motion correction. Designed to stabilize live-animal time-lapse datasets before quantification. | [GitHub](https://github.com/Epivitae/FIA) |
-| **WinMan** (Window Manager) | A workflow utility for efficiently managing the ImageJ workspace. Allows tiling, organizing, and controlling multiple image/result windows simultaneously. | [GitHub](https://github.com/Epivitae/WinMan) |
+| **RIA-J**<br>(Ratio Imaging Analyzer) | **Publication-grade ratiometric analysis.**<br>Features background subtraction, pixel-by-pixel ratio calculation, and IMD display mode. | [Wiki](https://imagej.net/plugins/ria-j) / [GitHub](https://github.com/Epivitae/RIA-J) |
+| **FIA**<br>(Fluorescence Image Aligner) | **Motion correction & Registration.**<br>Robustly stabilizes live-animal time-lapse datasets (Global & Dense Flow) before quantification. | [GitHub](https://github.com/Epivitae/FIA-Fluorescence-Image-Aligner) |
+| **NIA**<br>(Neural Inference Assistant) | **Zero-setup AI denoising.**<br>Runs deep learning models (DnCNN) directly in Java via ONNX Runtime. No Python, no CUDA required. Supports 5D hyperstacks. | [GitHub](https://github.com/Epivitae/NIA-Denoise) / [DOI](https://doi.org/10.5281/zenodo.18244343) |
+| **MIA**<br>(Metadata Inspection Analyzer) | **Metadata explorer.**<br>Instantly extracts hidden tags (Olympus .oir, OME-XML) and exports summaries to Excel/CSV. | [GitHub](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer) |
+| **WinMan**<br>(Window Manager) | **Workspace accelerator.**<br>Efficiently manages, tiles, and filters multiple image windows to keep your workspace clean. | [GitHub](https://github.com/Epivitae/WinMan) |
