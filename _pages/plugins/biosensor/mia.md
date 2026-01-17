@@ -21,7 +21,7 @@ team-maintainers: ['@Epivitae']
 
 Developed by **Dr. Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it fills the gap between basic file information and complex OME-XML parsing, offering a "drag-and-drop" solution for biologists.
 
-Author: [Kui Wang](people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer/issues) or tag @Epivitae on image.sc.
+Author: [Kui Wang](https://imagej.net/people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 

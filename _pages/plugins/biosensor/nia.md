@@ -21,7 +21,7 @@ team-maintainers: ['@Epivitae']
 
 Developed by **Dr. Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, NIA is built on the embedded **ONNX Runtime**. It allows biologists to run advanced denoising models directly in Java, eliminating the need for external Python environments, Conda, or complex CUDA setups.
 
-Author: [Kui Wang](people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/NIA-Denoise/issues) or tag @Epivitae on image.sc.
+Author: [Kui Wang](https://imagej.net/people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/NIA-Denoise/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 

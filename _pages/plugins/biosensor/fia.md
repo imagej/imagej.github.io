@@ -21,7 +21,7 @@ team-maintainers: ['@Epivitae']
 
 Developed by **Dr. Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, FIA bridges the gap between high-precision rigid alignment and non-rigid deformation correction. It is specialized for Calcium Imaging (G/R-CaMP), Voltage Imaging, and long-term live cell monitoring.
 
-Author: [Kui Wang](people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/FIA-Fluorescence-Image-Aligner/issues) or tag @Epivitae on image.sc.
+Author: [Kui Wang](https://imagej.net/people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/FIA-Fluorescence-Image-Aligner/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 
