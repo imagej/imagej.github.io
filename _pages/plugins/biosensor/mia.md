@@ -1,7 +1,7 @@
 ---
 title: MIA
 categories: [Metadata, Utilities, Analysis]
-icon: /media/icons/MIA.png
+icon: /media/icons/mia-j.png
 source-url: "https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer"
 update-site: "Biosensor Tools"
 release-version: v1.0.0

@@ -1,7 +1,7 @@
 ---
 title: NIA
 categories: [Denoising, Machine Learning, Restoration]
-icon: /media/icons/NIA.png
+icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/NIA-Denoise"
 update-site: "Biosensor Tools"
 release-version: v1.0.0

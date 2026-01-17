@@ -1,7 +1,7 @@
 ---
 title: WinMan
 categories: [Utilities, Workflow, Interface]
-icon: /media/icons/WinMan.png
+icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/WinMan"
 update-site: "Biosensor Tools"
 release-version: v1.0.0

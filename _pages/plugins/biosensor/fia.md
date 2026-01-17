@@ -1,7 +1,7 @@
 ---
 title: FIA
 categories: [Registration, Motion Correction, Analysis]
-icon: /media/icons/FIA.png
+icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/FIA-Fluorescence-Image-Aligner"
 update-site: "Biosensor Tools"
 release-version: v3.1.0
