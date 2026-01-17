@@ -85,9 +85,8 @@ FIA is built upon established computer vision algorithms to ensure reliability:
 
 ## Citation & DOI
 
-If you use FIA in your research, please cite the permanent Zenodo record:
 
-Wang, K. (2026). FIA: Fluorescence Image Aligner - Robust Motion Correction for ImageJ/Fiji (v3.1.0). Zenodo. https://doi.org/10.5281/zenodo.18206931
+Wang, K. (2026). FIA: Fluorescence Image Aligner - Robust Motion Correction for ImageJ/Fiji. Zenodo. https://doi.org/10.5281/zenodo.18206931
 
 * **Repository**: [https://github.com/Epivitae/FIA-Fluorescence-Image-Aligner](https://github.com/Epivitae/FIA-Fluorescence-Image-Aligner)
 * **CNS Team**: [Chimeric Nano Sensor Team](https://www.cns.ac.cn/)
