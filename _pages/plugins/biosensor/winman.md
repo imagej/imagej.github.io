@@ -1,7 +1,7 @@
 ---
 title: WinMan
 categories: [Utilities, Workflow, Interface]
-icon: /media/icons/WinMan.png
+icon: /media/icons/RIA-J.png
 source-url: "https://github.com/Epivitae/WinMan"
 update-site: "Biosensor Tools"
 release-version: v1.0.0
@@ -21,7 +21,7 @@ team-maintainers: ['@Epivitae']
 
 Developed by **Dr. Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, WinMan acts as a digital housekeeper. It provides granular control over open windows, batch processing tools, and system resource monitoring with a modern, compact interface.
 
-Author: [Kui Wang](people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/WinMan/issues) or tag @Epivitae on image.sc.
+Author: [Kui Wang](https://imagej.net/people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/WinMan/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 

@@ -21,7 +21,7 @@ team-maintainers: ['@Epivitae']
 
 Developed by **Dr. Kui Wang** at the Center for Excellence in Brain Science and Intelligence Technology (CEBSIT), Chinese Academy of Sciences, it serves as the native Java counterpart to the Python-based RIA software.
 
-Author: [Kui Wang](people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/RIA-J/issues) or tag @Epivitae on image.sc.
+Author: [Kui Wang](https://imagej.net/people/Epivitae), CEBSIT, CAS. For questions please use the [GitHub Issues](https://github.com/Epivitae/RIA-J/issues) or tag @Epivitae on image.sc.
 
 ## Key Features
 
