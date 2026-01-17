@@ -15,7 +15,8 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18204761.svg)](https://doi.org/10.5281/zenodo.18204761)
+[![DOI](https://zenodo.org/badge/1131155665.svg)](https://doi.org/10.5281/zenodo.18200077)
+
 
 **RIA-J (Ratio Imaging Analyzer - Java Edition)** is a lightweight, high-performance ImageJ/Fiji plugin designed for interactive ratiometric fluorescence analysis. 
 

@@ -15,7 +15,8 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18224551.svg)](https://doi.org/10.5281/zenodo.18224551)
+[![DOI](https://zenodo.org/badge/1132898127.svg)](https://doi.org/10.5281/zenodo.18224551)
+
 
 **WinMan (Window Manager & Workflow Accelerator)** is a lightweight utility designed to solve the "Desktop Explosion" problem in high-throughput microscopy workflows.
 

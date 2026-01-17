@@ -15,7 +15,8 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-[![Release](https://img.shields.io/github/v/release/Epivitae/MIA-Metadata-Inspection-Analyzer?color=blue)](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer/releases)
+[![Release](https://img.shields.io/github/v/release/Epivitae/MIA-Metadata-Inspection-Analyzer?color=blue)](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer/releases)  [![DOI](https://zenodo.org/badge/1136201132.svg)](https://doi.org/10.5281/zenodo.18280807)
+
 
 **MIA (Metadata Inspection Analyzer)** is a streamlined, user-friendly ImageJ/Fiji plugin designed for instant extraction and visualization of microscopy metadata.
 
@@ -55,7 +56,7 @@ MIA is distributed via the **Biosensor Tools** Fiji Update Site.
 
 If you use this software in your research, please cite the software and the repository:
 
-Wang, K. (2026). MIA: Metadata Inspection Analyzer - A Lightweight Metadata Extraction Tool for ImageJ/Fiji (v1.0.0). [Software]. Available at https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer
+Wang, K. (2026). MIA: Metadata Inspection Analyzer — A Lightweight Tool for Extracting Microscopy Source Parameters (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.18280807
 
 * **Repository**: [https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer)
 * **CNS Team**: [Chimeric Nano Sensor Team](https://www.cns.ac.cn/)
