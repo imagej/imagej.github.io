@@ -15,7 +15,8 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18206931.svg)](https://doi.org/10.5281/zenodo.18206931)
+[![DOI](https://zenodo.org/badge/1131581394.svg)](https://doi.org/10.5281/zenodo.18206931)
+
 
 **FIA (Fluorescence Image Aligner)** is a robust motion correction plugin designed to solve the full spectrum of motion artifacts in biological time-lapse microscopy.
 

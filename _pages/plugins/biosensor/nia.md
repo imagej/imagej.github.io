@@ -15,7 +15,8 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18244343.svg)](https://doi.org/10.5281/zenodo.18244343)
+[![DOI](https://zenodo.org/badge/1134239045.svg)](https://doi.org/10.5281/zenodo.18244343)
+
 
 **NIA (Neural Inference Assistant)** is a native, AI-powered denoising plugin that brings deep learning to ImageJ/Fiji without the configuration headache.
 

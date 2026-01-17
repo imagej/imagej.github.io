@@ -15,7 +15,8 @@ team-maintainers: ['@Epivitae']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
-[![Release](https://img.shields.io/github/v/release/Epivitae/MIA-Metadata-Inspection-Analyzer?color=blue)](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer/releases)
+[![Release](https://img.shields.io/github/v/release/Epivitae/MIA-Metadata-Inspection-Analyzer?color=blue)](https://github.com/Epivitae/MIA-Metadata-Inspection-Analyzer/releases)  [![DOI](https://zenodo.org/badge/1136201132.svg)](https://doi.org/10.5281/zenodo.18280807)
+
 
 **MIA (Metadata Inspection Analyzer)** is a streamlined, user-friendly ImageJ/Fiji plugin designed for instant extraction and visualization of microscopy metadata.
 
