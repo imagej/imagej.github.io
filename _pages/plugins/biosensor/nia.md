@@ -57,7 +57,7 @@ NIA is distributed via the **Biosensor Tools** Fiji Update Site.
 
 If you use NIA in your research, please cite the software DOI:
 
-**Wang, K. (2026).** NIA Denoise: User-Friendly AI Denoising Plugin for ImageJ/Fiji (v1.0.0). *Zenodo*. https://doi.org/10.5281/zenodo.18206931
+**Wang, K. (2026).** NIA Denoise: User-Friendly AI Denoising Plugin for ImageJ/Fiji (v1.0.0). *Zenodo*. https://doi.org/10.5281/zenodo.18244343
 
 * **Repository**: [https://github.com/Epivitae/NIA-Denoise](https://github.com/Epivitae/NIA-Denoise)
 * **CNS Team**: [Chimeric Nano Sensor Team](https://www.cns.ac.cn/)
