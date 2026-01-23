@@ -7,11 +7,17 @@ github: ekatrukha
 scholar: FfzP1wwAAAAJ
 ---
 
-I like coding, algorithms, data structures and microtubules.  
+I like coding, algorithms, data structures, and microtubules.  
 
-So I develop and maintain many open-source plugins, in the various areas where scientific curiosity takes me.   
+Currently, I work at the [Cell Biology, Neurobiology and Biophysics](https://cellbiology.science.uu.nl/) department of Utrecht University, NL.  
 
-Last couple of years I'm into 3D and large data.   
+You can check my scientific output in a nicely formatted [papers](https://scholar.google.com/citations?hl=en&user=FfzP1wwAAAAJ&view_op=list_works&sortby=pubdate).
+
+My main scientific interest is the organization of the microtubule cytoskeleton.   
+It took me to the areas of advanced microscopy, cell biology, biophysical modeling, and image analysis.   
+I am big fan of open data/code/papers, therefore I develop and maintain many open-source plugins.   
+
+The last couple of years, I'm into 3D and large data.   
 The most recent project I'm working on right now is [BigVolumeBrowser](/plugins/bigvolumebrowser).   
 
 My other plugins:  
@@ -28,7 +34,5 @@ My other plugins:
 - fast virtual reading of hyperstacks from [Metamorph](https://github.com/ekatrukha/Metamorph_nD_5D).
 
 And then there are multiple macros and some contributions to other projects.   
-
-I work at the [Cell Biology, Neurobiology and Biophysics](https://cellbiology.science.uu.nl/) department of Utrecht University, NL.   
 
 My [website](https://katpyxa.info) and I'm active on [bsky](https://bsky.app/profile/ekatrukha.bsky.social).  
