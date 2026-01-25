@@ -51,7 +51,7 @@ You can:
 - Toggle visible channels in composite mode with the checkboxes
 - Use two types of auto-contrast:
   - **Auto:** Uses imageJ "Enhance Contrast" command with a default of 0.1% saturated pixels (adjustable from "More" button). For stacks, contrast is based on displayed slice only
-  - **Min/Max:** Resets the display range betwin the min and max values of the full channel stack. (this is why it can be a bit slow huge images)       
+  - **Min/Max:** Resets the display range betwin the min and max values of the full channel stack. (this is why it can be a bit slow with huge images)       
 - Interface with the **LUTs Manager** to apply LUT palettes or individual favorite LUTs      
 You can change order of LUTs in a palette directly with the mouse from the palette menu     
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-palettes.png?raw=true){:width="300px"}     
@@ -66,8 +66,9 @@ Then the Multi Tool can interact with this montage to open the selected image
 2. Adjust display settings
 3. run the command `Create Preview Opener`       
 The generated montage will auto-save in the images folder         
-NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to open the corresponding image!      
-![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/96bcd24a-208d-4628-ad91-884a8d34c5a0){:width="700px"}
+NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to open the corresponding image!
+         
+![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/96bcd24a-208d-4628-ad91-884a8d34c5a0){:width="500"}
   
 ###### **Notes:**
 - Keep the Preview Opener file in the images folder
@@ -125,7 +126,7 @@ But it can do **many** actions based on the mouse button, modifier keys (shift, 
 # Other Commands
 A collection of utility macros:
 ### **Split View:** 
-Quickly create clean multichannel montages       
+Quickly create clean multichannel montages for up to 5 channels :       
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
 
 ### **Auto Scale Bar:** 
