@@ -132,7 +132,9 @@ Quickly create clean multichannel montages for up to 5 channels :
 ### **Auto Scale Bar:** 
 Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
 
-and various **Auto Contrast macros**.
+### **Auto-Contrast** 
+Recordable macro commands reproducing the **Channels and Contrast** buttons       
+
 
 # Installation
 - in Fiji, add the __Image Viewer__ [Update Site](https://imagej.net/update-sites/following). That's it.
@@ -147,8 +149,10 @@ This will intall a "View" menu in your Toolbar will all Image Viewer commands!
 Note :     
 If you like these tools so much you need to get them installed at every starts, just copy this macro code and past it at the end of your 
 - `Fiji/macros/StartupMacros.fiji.ijm` for Fiji       
-- `ImageJ/macros/StartupMacros.txt` for ImageJ      
-```js
+- `ImageJ/macros/StartupMacros.txt` for ImageJ
+
+  
+```java
 var viewer_Menu = newMenu("Image Viewer Menu Tool",
 	newArray( 
 		"Channels and Contrast",
@@ -178,8 +182,3 @@ macro "Image Viewer Menu Tool - N20C000 T0c15v T8c10i  Tac10e Tfc10w" {
 	run(command); 
 }
 ```
-
-
-
-### **Auto-Contrast** 
-Recordable macro commands reproducing the **Channels and Contrast** buttons
