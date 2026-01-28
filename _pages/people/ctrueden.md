@@ -23,9 +23,9 @@ Curtis Rueden is a research software engineer at [LOCI](/orgs/loci).
 He is the principal architect of [ImageJ2](/software/imagej2),
 and the current maintainer of the [Fiji](/software/fiji) distribution of ImageJ.
 
-## Community support pledge
+## Community support
 
-The ImageJ community generates a lot of support activity!
+The Fiji/ImageJ community generates a lot of support activity!
 [Forum posts](https://forum.image.sc/tag/imagej), [bug reports](/discuss/bugs),
 [chat room](/discuss/chat) messages, and
 [mailing list threads](/discuss/mailing-lists), and [more](/discuss).
@@ -33,64 +33,24 @@ I want to help, but it's rather overwhelming, especially taken together
 with new development efforts and collaborations that are always ongoing.
 
 If you are reading this, perhaps you have posted issues or support requests
-that have gone unanswered for weeks, months, or even years. I want to change
-that, and am working on process improvements to make it easier for the core
-ImageJ2 team to respond to every support request within one work day:
+that have gone unanswered for weeks, months, or even years. I wish I had the
+energy to keep up consistently, but realistically there will always be too many
+priorities to respond to everything adequately, despite
+[all](https://github.com/ctrueden/monoqueue)
+[my](https://github.com/ctrueden/tasks/issues)
+[efforts](https://github.com/scijava/pom-scijava)
+[to](https://github.com/ctrueden/dotfiles)
+[stay](https://status.scijava.org/)
+[organized](https://github.com/orgs/fiji/projects/1).
 
-* **Better component status overview.** The site
-  [status.scijava.org](https://status.scijava.org/) is a developer-oriented
-  view of the status of every component in the SciJava
-  [Bill of Materials](/develop/architecture#bill-of-materials), especially
-  components built on [pom-scijava](https://github.com/scijava/pom-scijava).
-  I am expanding the scope of the component table to include a summary of
-  support requests, issues, pull requests, etc., per component, in a way that
-  will foster accountability for the people maintaining each component.
-
-* **Community Mondays.** In the meantime, I am personally focusing every Monday
-  on answering support questions. I can't keep up with everything, but I can
-  try to make some small impact by responding to as many requests as I can.
-  Unfortunately, until the status.scijava.org work is complete, I won't always
-  succeed in prioritizing items in a fair order, but I'm doing my best.
-
-## What is Curtis working on?
-
-*Last updated: 2022-Sep-16*
-
-### Weekly allocation of effort
-
-| Day | Focus |
-|----:|:------|
-| **Mon** | Community support ([forum topics](https://forum.image.sc/u/ctrueden/activity/bookmarks), [issues](https://github.com/users/ctrueden/projects/1/views/3)) |
-| **Tue** | Fiji maintenance ([PR queue](https://github.com/users/ctrueden/projects/1/views/2)) |
-| **Wed** thru **Fri** | New development: SciJava Ops |
-
-### Immediate priorities
-
-- Make the mega-melt ({% include github org='scijava' repo='pom-scijava' issue=146 %}) fully work.
-- (with {% include person id='hinerm' %} and {% include person id='gselzer' %}) **SciJava Ops** + **ImageJ Ops2** ([roadmap](https://github.com/orgs/scijava/projects/1)), including [JPMS/Jigsaw](https://openjdk.java.net/projects/jigsaw/) modularization and migration of SciJava foundational libraries to Java 11.
-- Finish revamping status.scijava.org ({% include github org='scijava' repo='status.scijava.org' branch='github-issues' label='scijava/status.scijava.org' %}).
-
-### Short-term priorities
-
-- **Integrate PyImageJ with the ImageJ launcher.** (see also [this forum discussion](https://forum.image.sc/t/fiji-conda/59618/13))
-- **Upgrade component stack to Java 11/17.** (with {% include person id='axtimwalde' %}) Migrate ImageJ2 and Fiji to ship with Java 11 or 17 ([roadmap](https://github.com/orgs/imagej/projects/4)), with a **Maven-based ImageJ update site generator** to simplify creation and maintenance of update sites.
-- **Better javadoc.scijava.org.** ({% include github org='scijava' repo='pom-scijava' issue=130 %})
-
-### Medium-term priorities
-
-- **Finish the imagej.net statbox feature.** ([related issues](https://github.com/imagej/imagej.github.io/issues?q=is%3Aissue+is%3Aopen+statbox)).
-- **GitHub issue reporting plugin.** The Fiji BugZilla and ImageJ Trac are now static content only. The [Report a Bug](/discuss/bugs) plugin needs to send reports to GitHub instead. ([scijava/scijava-plugins-issues-github](https://github.com/scijava/scijava-plugins-issues-github))
-- **Fix the ImageJ Server.** ({% include github org='imagej' repo='imagej-server' issue=41 %}, {% include github org='scijava' repo='pom-scijava' issue=133 %}).
-
-### Longer-term priorities
-
-- **Rich Image.** Improve the [ImageJ Common](/libs/imagej-common) data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([imagej/imagej-common@rich](https://github.com/imagej/imagej-common/compare/rich), [imagej/janelia-hackathon-2016](https://github.com/imagej/janelia-hackathon-2016))
-- **SCIFIO blockization.** ({% include github org='scifio' repo='scifio' issue=283 %})
-- **ImageJ Launcher.** Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher.
-  ({% include github org='imagej' repo='imagej-launcher' issue=33 %})
-- **ImageJ Electron app.** Shared memory between Java, JavaScript and Python. ([imagej/imagej-electron-app](https://github.com/imagej/imagej-electron-app))
+So I fear if you need my help, your best hope is to be loud and persistent about it:
+mention `@ctrueden` on the [Image.sc Forum](https://forum.image.sc/) until I notice;
+ping me on the [Image.sc Zulip](https://imagesc.zulipchat.com/); or even organize a
+[hackathon](/events/hackathons) and invite me so that we can work together in person.
 
 ## Recommended development tools
+
+*Last updated: 2026-Jan-28*
 
 So you want to be an effective software developer? Use tools!
 
@@ -106,39 +66,53 @@ So you want to be an effective software developer? Use tools!
   </thead>
   <tbody>
     <tr>
-      <td rowspan=2><a href="/develop/eclipse">Eclipse</a></td>
-      <td rowspan=2>
+      <td rowspan="4">AI Coding Assistants</td>
+      <td rowspan="4">Ignore the hype and the hate, and <a href="https://www.thatsoftwaredude.com/content/14227/how-to-actually-use-ai-as-a-developer-in-2026">learn to use them</a>&mdash;see my <a href="https://docs.google.com/presentation/d/1esXn1TU5G6KIzRzXM-47aEm9MgWkfidtnCApE5rxe80/present">talk slides from Dec 2025</a></td>
+      <td><a href="https://github.com/features/copilot/cli">GitHub Copilot CLI</a></td>
+      <td>GitHub Copilot Pro is <a href="https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro">free for teachers, students, and OSS maintainers</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.claude.com/product/claude-code">Claude Code</a></td>
+      <td>Not free (Claude Pro is $20/month), but Claude is awesome&mdash;and Claude models are also available within Copilot</td>
+    </tr>
+    <tr>
+      <td><a href="https://geminicli.com/">Gemini CLI</a></td>
+      <td>A strong offering from Google</td>
+    </tr>
+    <tr>
+      <td><a href="https://ollama.com/">Ollama</a></td>
+      <td>Run LLMs locally for superior privacy</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><a href="/develop/ides">IDEs</a></td>
+      <td rowspan="3">
         Super powerful
         <ul>
-          <li><em>Essential</em> for navigation of large projects</li>
+          <li>Easily navigate large projects</li>
           <li>Supreme code completion</li>
-          <li>Super useful debugger</li>
+          <li>Illuminating debugger</li>
         </ul>
       </td>
-      <td><a href="http://vrapper.sourceforge.net/">Vrapper</a></td>
-      <td>Vim-fu inside Eclipse – almost as good as the real thing</td>
+      <td><a href="/develop/intellij">IntelliJ IDEA</a> (Java)</td>
+      <td>For Java and Kotlin projects</td>
     </tr>
     <tr>
-      <td><a href="https://ecd-plugin.github.io/">Enhanced Class Decompiler</a></td>
-      <td>Automatic decompilation when browsing classes in Eclipse</td>
+      <td><a href="https://www.jetbrains.com/pycharm/">PyCharm</a></td>
+      <td>For Python projects</td>
     </tr>
     <tr>
-      <td rowspan=7><a href="https://www.vim.org/">Vim</a></td>
-      <td rowspan=7>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></td>
+      <td><a href="https://plugins.jetbrains.com/plugin/164-ideavim">IdeaVim</a></td>
+      <td>Vim-fu inside JetBrains IDEs – almost as good as the real thing</td>
+    </tr>
+    <tr>
+      <td rowspan=5><a href="https://www.vim.org/">Vim</a></td>
+      <td rowspan=5>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></td>
       <td><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></td>
-      <td>Manage your vim plugins like a boss</td>
+      <td>Vim plugin manager</td>
     </tr>
     <tr>
       <td><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></td>
       <td>Defaults everyone can agree on</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></td>
-      <td>Lean & mean status/tabline that's light as air</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></td>
-      <td>A Git wrapper so awesome, it should be illegal</td>
     </tr>
     <tr>
       <td><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></td>
@@ -155,7 +129,7 @@ So you want to be an effective software developer? Use tools!
       <td rowspan=6><a href="https://www.zsh.org/">Zsh</a></td>
       <td rowspan=6>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></td>
       <td><a href="https://github.com/zpm-zsh/zpm">zpm</a></td>
-      <td>Lightweight plugin manager</td>
+      <td>Lightweight zsh plugin manager</td>
     </tr>
     <tr>
       <td><a href="https://ohmyz.sh/">oh-my-zsh</a></td>
