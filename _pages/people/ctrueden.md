@@ -69,11 +69,11 @@ So you want to be an effective software developer? Use tools!
       <td rowspan="4">AI Coding Assistants</td>
       <td rowspan="4">Ignore the hype and the hate, and <a href="https://www.thatsoftwaredude.com/content/14227/how-to-actually-use-ai-as-a-developer-in-2026">learn to use them</a>&mdash;see my <a href="https://docs.google.com/presentation/d/1esXn1TU5G6KIzRzXM-47aEm9MgWkfidtnCApE5rxe80/present">talk slides from Dec 2025</a></td>
       <td><a href="https://github.com/features/copilot/cli">GitHub Copilot CLI</a></td>
-      <td>GitHub Copilot Pro is <a href="https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro">free for teachers, students, and OSS maintainers</a></td>
+      <td>GitHub Copilot Pro is <a href="https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro">free for teachers/researchers, students, and OSS maintainers</a>, and includes access to Claude, Gemini, and GPT models</td>
     </tr>
     <tr>
       <td><a href="https://www.claude.com/product/claude-code">Claude Code</a></td>
-      <td>Not free (Claude Pro is $20/month), but Claude is awesome&mdash;and Claude models are also available within Copilot</td>
+      <td>Not free (Claude Pro is $20/month), but Claude is awesome</td>
     </tr>
     <tr>
       <td><a href="https://geminicli.com/">Gemini CLI</a></td>
@@ -84,8 +84,8 @@ So you want to be an effective software developer? Use tools!
       <td>Run LLMs locally for superior privacy</td>
     </tr>
     <tr>
-      <td rowspan="3"><a href="/develop/ides">IDEs</a></td>
-      <td rowspan="3">
+      <td rowspan="4"><a href="/develop/ides">IDEs</a></td>
+      <td rowspan="4">
         Super powerful
         <ul>
           <li>Easily navigate large projects</li>
@@ -93,7 +93,7 @@ So you want to be an effective software developer? Use tools!
           <li>Illuminating debugger</li>
         </ul>
       </td>
-      <td><a href="/develop/intellij">IntelliJ IDEA</a> (Java)</td>
+      <td><a href="/develop/intellij">IntelliJ IDEA</a></td>
       <td>For Java and Kotlin projects</td>
     </tr>
     <tr>
@@ -103,6 +103,10 @@ So you want to be an effective software developer? Use tools!
     <tr>
       <td><a href="https://plugins.jetbrains.com/plugin/164-ideavim">IdeaVim</a></td>
       <td>Vim-fu inside JetBrains IDEs – almost as good as the real thing</td>
+    </tr>
+    <tr>
+      <td><strike><a href="https://code.visualstudio.com/">Visual Studio Code</a></strike></td>
+      <td>Flexible, powerful, popular, and <a href="https://code.visualstudio.com/docs/configure/telemetry">chock full of Microsoft data harvesting</a>! (You can use <a href="https://vscodium.com/">VSCodium</a> instead, but <a href="https://stackoverflow.com/q/75345501/1207769">Python support sucks</a> compared to official/proprietary VSCode builds without <a href="https://www.flypenguin.de/2023/02/26/use-vscodium-with-microsofts-proprietary-marketplace/">hacky tricks</a> that <a href="https://github.com/VSCodium/vscodium/discussions/1641">may stop working</a>...)</td>
     </tr>
     <tr>
       <td rowspan=5><a href="https://www.vim.org/">Vim</a></td>
