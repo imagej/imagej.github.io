@@ -19,7 +19,7 @@ team-maintainer: '@nicost'
 
 ## Installation
 
-To install this plugin check the "ValelabUtils" update site in the Fiji updater.
+To install this plugin check the "ValelabUtils" update site in the Fiji updater. Please not that the plugin was updated 1/28/2026 to version 1.10.0 to work with recent Fiji versions.
 
 ## Description
 
@@ -61,6 +61,7 @@ Some of the single pixels fits we obtained look as follows:
 
 ## History
 
+-   1.10.0 (2026-01-28): Updated dependencies to work with recent Fiji versions (all issues due to JFreeChart)
 -   1.0.8 (2016-09-28): Added Fit\_Macro, a blocking version of the Fit plugin that can be called from a macro
 -   1.0.7 (2016-04-22): Fixed bug that caused most pixels not to be fit
 -   1.0.6 (2016-04-21): Added capability to export data and predictions from Inspect module.
