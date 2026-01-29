@@ -19,7 +19,7 @@ team-maintainer: '@nicost'
 
 ## Installation
 
-To install this plugin check the "ValelabUtils" update site in the Fiji updater. Please not that the plugin was updated 1/28/2026 to version 1.10.0 to work with recent Fiji versions.
+To install this plugin check the "ValelabUtils" update site in the Fiji updater. Please note that the plugin was updated 1/28/2026 to version 1.10.0 to work with recent Fiji versions.
 
 ## Description
 
