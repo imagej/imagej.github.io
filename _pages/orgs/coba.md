@@ -17,9 +17,3 @@ COBA's mission is to serve the cell biology community's growing need for sophist
 The Center brings together the [Cimini](https://cimini-lab.broadinstitute.org/) and [Carpenter-Singh](https://carpenter-singh-lab.broadinstitute.org/) labs at the [Broad Institute](https://www.broadinstitute.org/) and the [Eliceiri lab](/orgs/loci) at the [University of Wisconsin-Madison](https://www.wisc.edu/), and in doing so brings together two popular open-source bioimage analysis projects, [ImageJ](/software/imagej) (including [ImageJ2](/software/imagej2) and [Fiji](/software/fiji)) and [CellProfiler](/software/cellprofiler).
 
 Through the collaborative development and dissemination of open-source image analysis software, as well as training events and resources, the Center seeks to empower thousands of researchers to apply advanced analytics in innovative ways to address new experimental areas.
-
-## Resources
-
-* [COBA on Twitter](https://twitter.com/COBA_NIH)
-* [COBA channel on YouTube](youtube: https://www.youtube.com/channel/UC_id9sE-vu_i30Bd-skay7Q)
-* [COBA organization on GitHub](https://github.com/COBA-NIH)

@@ -16,7 +16,7 @@ From Monday, December 4, 2017 through Friday, December 15, 2017, the [Max Planck
 
 ## Hackathon on Twitter (\#hackdd17)
 
-[https://twitter.com/hashtag/hackdd17?vertical=default&src=hash](https://twitter.com/hashtag/hackdd17?vertical=default&src=hash)
+[https://x.com/hashtag/hackdd17?vertical=default&src=hash](https://x.com/hashtag/hackdd17?vertical=default&src=hash)
 
 ## Technical Discussions
 

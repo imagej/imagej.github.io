@@ -162,7 +162,7 @@ Try disabling time averaging (1).
 ## Contributors
 
 * {% include person id='jpylvanainen' %}
-* [Romain F. Laine](https://twitter.com/LaineBioImaging)
+* [Romain F. Laine](https://x.com/LaineBioImaging)
 * {% include person id='guijacquemet' %}
 
 ## When using this script, please cite the original Fast4DReg and the NanoJ papers

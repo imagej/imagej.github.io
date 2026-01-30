@@ -82,7 +82,7 @@ Team fields support multiple people in various formats:
 | `github` | GitHub username | `"username"` |
 | `stackoverflow` | Stack Overflow user ID | `"12345"` |
 | `openhub` | Open Hub username | `"username"` |
-| `twitter` | Twitter username | `"username"` |
+| `twitter` | X/Twitter username | `"username"` |
 | `linkedin` | LinkedIn profile path | `"in/username"` |
 | `researchgate` | ResearchGate profile | `"Username_Name"` |
 | `loop` | Loop Research Network ID | `"12345"` |

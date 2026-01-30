@@ -110,7 +110,7 @@ All movements and timepoints are synchronized between windows:
 
 {% include img name="bdv ortho viewer command" src="/media/plugins/bdv/playground/bdvpg-orthobvv.gif" %}
 
-[Another demo with a cell division](https://twitter.com/nKiaru/status/1537558107722743810)
+[Another demo with a cell division](https://x.com/nKiaru/status/1537558107722743810)
 
 ## Setting the number of timepoints of viewers
 

@@ -63,7 +63,7 @@ the javascript only populates fields when they are empty.
 {%- assign github            = page.github            -%} {%- comment -%} The person's username on GitHub                             {%- endcomment -%}
 {%- assign stackoverflow     = page.stackoverflow     -%} {%- comment -%} The person's username on StackOverflow                      {%- endcomment -%}
 {%- assign openhub           = page.openhub           -%} {%- comment -%} The person's username on Black Duck Open Hub                {%- endcomment -%}
-{%- assign twitter           = page.twitter           -%} {%- comment -%} The person's username on Twitter                            {%- endcomment -%}
+{%- assign twitter           = page.twitter           -%} {%- comment -%} The person's username on X/Twitter                          {%- endcomment -%}
 {%- assign linkedin          = page.linkedin          -%} {%- comment -%} The person's username on LinkedIn                           {%- endcomment -%}
 {%- assign researchgate      = page.researchgate      -%} {%- comment -%} The person's username on ResearchGate                       {%- endcomment -%}
 {%- assign loop              = page.loop              -%} {%- comment -%} The person's username on the Loop Research Network          {%- endcomment -%}
@@ -223,7 +223,7 @@ https://forum.image.sc/u/{{forum}}
 {%- if twitter or linkedin or researchgate or loop -%}
 {%- capture person-social -%}
 <ul>
-{%- if twitter -%}<li><a href="https://twitter.com/{{twitter}}">Twitter</a></li>{%- endif -%}
+{%- if twitter -%}<li><a href="https://x.com/{{twitter}}">X/Twitter</a></li>{%- endif -%}
 {%- if linkedin -%}<li><a href="https://www.linkedin.com/{{linkedin}}">LinkedIn</a></li>{%- endif -%}
 {%- if researchgate -%}<li><a href="https://www.researchgate.net/profile/{{researchgate}}">ResearchGate</a></li>{%- endif -%}
 {%- if loop -%}<li><a href="https://loop.frontiersin.org/people/{{loop}}">Loop</a></li>{%- endif -%}

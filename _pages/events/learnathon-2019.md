@@ -29,7 +29,7 @@ You can also view the [2017 Learnathon](/events/learnathon-2017) and the [2018 L
 
 **{% include person id='tpietzsch' %}** '*'I'm a postdoc in the Jug and Zechner labs at MPI-CBG / CSBD. I am the coauthor and maintainer of ImgLib2, BigDataViewer, BigVolumeViewer, Mastodon, etc."*
 
-**{% include person id='haesleinhuepf' %}** '*'I'm a postdoc in Myers lab at MPI CBG / CSBD. I'm the creator of [CLIJ](https://clij.github.io). In my actual job, I develop, run and maintain custom smart microscopes on the [ClearControl](https://github.com/ClearControl) platform. Analysing images after acquisition but before writing them to disc is my thing. Our microscopes are so smart, they even use [twitter](https://twitter.com/XWingScope)."*
+**{% include person id='haesleinhuepf' %}** '*'I'm a postdoc in Myers lab at MPI CBG / CSBD. I'm the creator of [CLIJ](https://clij.github.io). In my actual job, I develop, run and maintain custom smart microscopes on the [ClearControl](https://github.com/ClearControl) platform. Analysing images after acquisition but before writing them to disc is my thing. Our microscopes are so smart, they even use [twitter](https://x.com/XWingScope)."*
 
 **{% include person id='skalarproduktraum' %}** '*'Hey there! I'm currently a PhD student at the Sbalzarini Lab at CSBD. I'm trying to bring VR to microscopy and systems biology in general, e.g. by enabling VR control of microscopes, or developing [scenery](https://github.com/scenerygraphics/scenery) and the new 3D viewer for ImageJ, [sciview](https://github.com/scenerygraphics/scenery)."*
 
@@ -61,8 +61,8 @@ There many beginner books for Java. If you want to be well prepared, you may als
 
 **9:00 - 10:00**
 
--   Welcome by [Florian Jug](https://twitter.com/haesleinhuepf/status/1143052112798060544) and Pavel Tomancak.
--   [Scientific speed dating](https://twitter.com/PavelTomancak/status/1143079972506128386)
+-   Welcome by [Florian Jug](https://x.com/haesleinhuepf/status/1143052112798060544) and Pavel Tomancak.
+-   [Scientific speed dating](https://x.com/PavelTomancak/status/1143079972506128386)
 
 **10:00 - 12:00 ImageJ2 API beating**
 
