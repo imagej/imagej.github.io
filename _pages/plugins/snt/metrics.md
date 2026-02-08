@@ -137,7 +137,7 @@ The 3D orientation of a path can be captured using two components:
 {% include notice icon="info" content=azimuth-elevation %}
 
 ###### Relative (rel.) angles
-Relative angles range between [0°—180°[ and are computed as the acute angle between a path's 3D direction vector and its parent path's 3D direction vector. These are thus 3D branching angles. If a path or barans has no parent, its relative angle defaults to _NaN_
+Relative angles range between [0°—180°[ and are computed as the acute angle between a path's 3D direction vector and its parent path's 3D direction vector. These are thus 3D branching angles. If a path or branch has no parent, its relative angle defaults to _NaN_
 
 ##### Specialized angles
 Specialized angles can be measured via the scripting API for any group of 3D coordinates. This includes reconstructions (whole cells or parts thereof) and 3D meshes. Some of the specialized angles include:

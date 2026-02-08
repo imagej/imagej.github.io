@@ -28,7 +28,6 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/snt-overview.png | Overview of SNT components &amp; SNT functionality
 /media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
 /media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/walkthroughs#full-automated-tracing) of segmented images
 /media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#bundled-templates) co-exist with graphical user interface operations
@@ -71,20 +70,23 @@ SNT is currently distributed through [Fiji](/software/fiji)'s [Neuroanatomy upda
 SNT's documentation is extensive. Please use the navigation bar on top of the page to access the different sections, organized as follows:
 
 | Section                                                         | Contents                                                                                                                           |
-| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **[Analysis](/plugins/snt/analysis)**                           | Overview of GUI-based analyses                                                                                                     |
+| **[Autotracing](/plugins/snt/auto-tracing)**                    | Documentation on fully automated reconstructions                                                                                   |
+| **[Big Data](/plugins/snt/big-data)**                           | Status of big data support                                                                                                         |
 | **[Contributing](/plugins/snt/contribute)**                     | How to contribute to SNT                                                                                                           |
-| **[Extending](/plugins/snt/extending)**                         | Resources for developers interested in extending SNT or parsing TRACES files                                                       |
+| **[Extending](/plugins/snt/extending)**                         | Resources for developers interested in extending SNT or parsing TRACES                                                             |
 | **[FAQ](/plugins/snt/faq)**                                     | Frequently asked questions                                                                                                         |
 | **[Key Shortcuts](/plugins/snt/key-shortcuts)**                 | List of SNT shortcuts (keyboard cheatsheet)                                                                                        |
 | **[Machine Learning](/plugins/snt/machine-learning)**           | Semantic segmentation: Labkit and TWS integration                                                                                  |
 | **[Manual](/plugins/snt/manual)**                               | User guide for main interface and tracing operations                                                                               |
-| **[Metrics](/plugins/snt/metrics)**                             | Definition of metrics                                                                                                             |
+| **[Metrics](/plugins/snt/metrics)**                             | Definition of metrics                                                                                                              |
 | **[Modeling](/plugins/snt/modeling)**                           | Cx3D integration                                                                                                                   |
 | **[Reconstruction Viewer](/plugins/snt/reconstruction-viewer)** | SNT's entry point for visualization of pre-existing data. If you are analyzing neuronal reconstructions you may want to start here |
 | **[Screencasts](/plugins/snt/screencasts)**                     | Video tutorials. If you are using SNT for the first time you probably want to start here                                           |
 | **[Scripting](/plugins/snt/scripting)**                         | Details on how to use SNT as a scripting library                                                                                   |
-| **[Walkthroughs](/plugins/snt/walkthroughs)**     | Detailed step-by-step instructions for specific tasks                                                                              |
+| **[Walkthroughs](/plugins/snt/walkthroughs)**                   | Detailed step-by-step instructions for specific tasks                                                                              |
+
 
 ## References
 

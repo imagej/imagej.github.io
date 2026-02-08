@@ -16,10 +16,14 @@ tags: snt,tracing,segmentation,neuroanatomy,big-data
 
 ## Big Data support
 
-SNTv5 implemented _preliminary_ support for big data. The support remains basic but currently supports the following operations:
+SNTv5 implemented _preliminary_ support for big data. The support remains basic but the following operations are currently supported:
 
-| Operation          | Status                | Details |
-|--------------------|-----------------------|---------|
-| Tracing operations | Headless support only | A* tracing performed using pre-existing coordinates is fully supported via scripting in headless operations. [Example implementation](https://github.com/AllenNeuralDynamics/neuron-tracing-utils). For interactive tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets |
-| Path optimization  | Headless support only | [Optimization of curvatures](./manual#refinefit-), including extraction of radii |
-| 3D Visualization   | Supported via [sciview](./manual#sciview) and [BigVolumeViewer](./manual#big-volume-viewer)  | Visualization of 3D reconstructions, including [color mappings](./manual#color-mapping-), etc. |
+| Operation                | Status                                                                                      | Details                                                                                                                              |
+|--------------------------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Automated tracing        | Supported (experimental)                                                                    | See [Auto-tracing](./auto-tracing#grayscale-images)<sup>1,2</sup>                                                                    |
+| Tracing along way-points | Headless support only<sup>2</sup>                                                           | A* tracing performed using pre-existing coordinates is fully supported via scripting<sup>2</sup> in headless operations<sup>1</sup>. |
+| Path optimization        | Headless support only<sup>2</sup>                                                           | [Optimization of curvatures](./manual#refinefit-), including extraction of radii<sup>2</sup>                                         |
+| 3D Visualization         | Supported via [sciview](./manual#sciview) and [BigVolumeViewer](./manual#big-volume-viewer) | Visualization of 3D reconstructions, including [color mappings](./manual#color-mapping-), etc.                                       |
+
+<sup>1</sup>For interactive tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets
+<sup>2</sup>See [PySNT](https://pysnt.readthedocs.io/en/latest/)

@@ -212,66 +212,9 @@ Two paths can be merged or joined in *Edit Mode*. To do so:
 - The recommended way to concatenate or combine paths is to use the respective commands in Path Manager's [Edit menu](/plugins/snt/manual#edit)
 
 # Full-automated Tracing
-{% capture ddac-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila ddaC neuron (Autotrace demo)_. It will load a binary (thresholded) image of a Drosophila space-filling neuron (ddaC) displaying autotracing options for automated reconstruction.
-{% endcapture %}
-{% include notice icon="info" content=ddac-demo %}
 
-## Input Image(s)
-Full automated tracing requires two types of inputs:
+Full-automated tracing is described in [Auto-tracing](/plugins/snt/auto-tracing).
 
-1. **Segmented Image (_Mandatory_)** The pre-processed image from which paths will be extracted. It will be skeletonized by the extraction algorithm. If thresholded (recommended), only highlighted pixels are considered, otherwise all non-zero intensities in the image will be considered for extraction.
-
-2. **Intensity Image (_Optional_)** The original (un-processed) image used to resolve any possible loops in the segmented image using brightness criteria. Required for intensity-based loop resolution strategies (see below).
-
-## Soma/Root Detection
-Root detection requires an area ROI marking the root of the arbor exists on the image. With neurons, this typically corresponds to an area ROI marking the soma. Several strategies are possible:
-
-- **Place root on ROI's simple centroid** Attempts to root all primary paths intersecting the ROI at its geometric centroid (the centroid of the ROI's contour). Typically used when 1) multiple paths branch out from the soma, 2) the ROI accurately defines the contour of the soma, and 3) somatic segments are expected to be part of the reconstruction
-
-- **Place root on ROI's weighted centroid** Similar to the above, but places the root at the centroid of all foreground voxels contained by the ROI, rather than the ROI's geometric center. Useful when the ROI contour is imprecise but still encloses the relevant structure
-
-- **Place roots along ROI's edge** Attempts to root all primary paths intersecting along the perimeter of the ROI. As above, this option is typically used when multiple paths branch out from the soma and the ROI defines the contour of the soma, but somatic segments are not expected to be included in the reconstruction. Most accurate strategy for complex topologies
-
-- **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma
-
-- **None. Ignore any ROIs** If no ROI exists an arbitrary root node is used
-
-When parsing 3D images, toggling the Active plane only checkbox clarifies that the root(s) marked by the ROI occurs at the active ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
-
-## Loop Resolution
-Skeletonized images often contain spurious loops (cycles) that must be broken to produce valid tree structures. Several strategies are available:
-
-- **Dimmest branch** Removes the branch with the lowest average intensity in the loop. Requires an intensity image. Best when signal intensity correlates with structural importance
-
-- **Dimmest voxel** Cuts the loop at the single dimmest pixel. Requires an intensity image. More precise than dimmest branch but may be sensitive to noise
-
-- **Shortest branch** Removes the shortest branch (the skeletonized path between junctions) in the loop. Fast and suitable for simple artifacts, but may inadvertently break main structures
-
-- **Shortest segment** Removes the shortest edge(s) using a maximum spanning tree algorithm. Preserves the longest continuous paths in the structure. Suitable for simple loops where geometric length indicates "importance"
-
-- **Furthest from root** Removes edges most distant from the root/soma. Preserves proximal structure closer to the cell body. Requires a root-defining ROI. Useful when loops near the soma are expected to be more meaningful/important than distal ones
-
-- **Peripheral segments** Removes edges with the lowest betweenness centrality (i.e., edges that lie on fewer shortest paths through the graph). Preserves the main backbone/trunk of the structure regardless of geometric length. Recommended for complex structures where topological importance matters more than geometry
-
-NB: If an intensity-based strategy is selected but no intensity image is provided, the algorithm automatically falls back to _Peripheral segments_.
-
-## Gaps and Disconnected Components
-It is almost impossible to segment structures into a single, coherent volume. These options define how gaps in the segmentation should be handled.
-
-- **Settings for handling small components** These options determine whether the algorithm should ignore segments (connected components that are disconnected from the main structure) that are too small to be of interest. Disconnected segments with a cable length below the specified length threshold will be discarded by the algorithm.<br>
-Increase this value if too many isolated branches are being created. Decrease it to bias the extraction for larger, contiguous structures.
-
-- **Settings for handling adjacent components** If the segmented image is fragmented into multiple components (e.g., due to 'beaded' labeling): Should the algorithm attempt to connect nearby components? If so, what should be the maximum allowable distance between disconnected components to be merged?<br>
-You should increase Max. connection distance if the algorithm produces too many gaps. Decrease it to minimize spurious connections.<br>
-
-NB: When components are bridged, new loops may be introduced. These are automatically resolved using the selected loop resolution strategy.
-
-Information on other options in the prompt can be accessed through the tooltip text that is displayed when hovering the cursor above them.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-fully-automated-reconstructions.png" title="Fully automated reconstructions (ddaC demo dataset)" width="850" />
-</div>
 
 # Spine/Varicosity Analysis
 

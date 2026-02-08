@@ -253,9 +253,10 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
   
   > To facilitate accurate positioning of starting points, so that they are really on a neurite rather than close to one, the program carries out a local snapping operation. This means that when moving the mouse within the image, the program quickly searches in a small window around the current mouse position for the pixel that is most likely to be on a neurite.
 
-### Auto-tracing
+### Interactive Tracing
+<span id="auto-tracing"></span>
 
-<img align="right" width="450" src="/media/plugins/snt/snt-auto-tracing.png" title="Auto-tracing options" />
+<img align="right" width="450" src="/media/plugins/snt/snt-interactive-tracing.png" title="Interactive-tracing options" />
 - **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search algorithm" %} to automatically trace paths between two manually selected points. To manually place nodes along a path, toggle this feature off. Note that it is also possible to enable other built-in algorithms or algorithms provided by external SNT add-ons. Current options include:
 
 - **A\* search**: Canonical and proven implementation of the historic algorithm, ported from [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
@@ -268,7 +269,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
   
   - **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower computation footprint), or _Array_ (slightly faster, but higher footprint)
   
-  - **Cost Function** Auto-tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
+  - **Cost Function** Interactive tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
     
     - **Reciprocal of Intensity** The default, robust under a wide range of conditions
     
@@ -280,7 +281,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
   
   - **Image Statistics** Successful cost functions rely on _a priori_ understanding of the image (simpler cost functions may only require access to the image minimum (dimmest intensity) and maximum (brightest intensity), but many others may need access to the image's mean, standard deviation, etc.). Options include:
     
-    - **Compute Real-Time** The default. Image statistics are computed during _each_ auto-tracing operation, along a bounding-box defined by the start and end points of the search
+    - **Compute Real-Time** The default. Image statistics are computed during _each_ interactive tracing operation, along a bounding-box defined by the start and end points of the search
     
     - **Specify Manually** Advanced option for users with a quantitative understanding of the image. Searches may consider pixels outside neurites when maximum in over-estimated, and may take significantly longer when it is under-estimated, since each pixel will carry a greater-than-reasonable cost
     
@@ -290,11 +291,11 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 
 <span id="tracing-on-secondary-image"></span>
 <img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-menu.png" title="Secondary layer controls" />
-This is one of SNT's most advanced and useful features. The [default auto-tracing](#Auto-tracing) provides an immediate way to detect structures by their likelihood of *belonging* to a tube-like structure (such as a neurite). However, it is just _one_ approach for "tube-like" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect processing algorithm for your images is not yet available in SNT?
+This is one of SNT's most advanced and useful features. The [default tracing algorithm](#interactive-tracing) provides an immediate way to detect structures by their likelihood of *belonging* to a tube-like structure (such as a neurite). However, it is just _one_ approach for "tube-like" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect processing algorithm for your images is not yet available in SNT?
 
-*Tracing on Secondary Layer* is the answer to these questions: It allows you to feed SNT with a pre-processed image on which the A\* star search will operate. Because this option can be toggled at will, it becomes a secondary _layer_ for auto-tracing: E.g., you may decide to auto-trace certain neurites on the original image, while tracing other neurites on the secondary layer.
+*Tracing on Secondary Layer* is the answer to these questions: It allows you to feed SNT with a pre-processed image on which the A\* star search will operate. Because this option can be toggled at will, it becomes a secondary _layer_ for interactive tracing: E.g., you may decide to trace certain neurites on the original image, while tracing other neurites on the secondary layer.
 
-For the most part, the secondary layer remains hidden because feedback on auto-tracing searches is always provided in the original image. When RAM is not limited, one can ping-pong between _secondary_ and _original_ image simply, by pressing {% include key key='L' %}, the shortcut for the _Trace/Fill on Secondary **L**ayer_ checkbox. Here are some specific usages for this feature:
+For the most part, the secondary layer remains hidden because feedback on the path search is always provided in the original image. When RAM is not limited, one can ping-pong between _secondary_ and _original_ image simply, by pressing {% include key key='L' %}, the shortcut for the _Trace/Fill on Secondary **L**ayer_ checkbox. Here are some specific usages for this feature:
 
 - **Frangi *Vesselness* filtering** For certain datasets [Frangi](/plugins/frangi) filtering  is quite effective at enhancing tubular structures. However, it is more computation intensive, and thus, less suitable to be adopted by "compute-as-needed" approaches. Thus, Frangi-filtering can be computed once for the whole image, and the result loaded as secondary layer
 
@@ -306,7 +307,7 @@ For the most part, the secondary layer remains hidden because feedback on auto-t
 
 <img align="right" width="400" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" title="Secondary layer wizard" />
 
-Secondary layers are created/load using the "Layers" drop-down menu in the auto-tracing panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
+Secondary layers are created/load using the "Layers" drop-down menu in the _Interactive Tracing_ panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
 
 The wizard needs two types of information from the user: The type of filtering operation and the size(s) (scale(s)) of the structures being traced, which control the spatial scale of the filter (known as σ).
 
@@ -338,7 +339,7 @@ NB: The wizard also allows you to use a backup copy of the image being traced as
 </div>
 #### Loading Secondary layers
 
-The "Layers" drop-down menu in the auto-tracing panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/walkthroughs#generating-filtered-images) walkthrough for more details.
+The "Layers" drop-down menu in the _Interactive Tracing_ panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/walkthroughs#generating-filtered-images) walkthrough for more details.
 
 The same menu also provides options to import a [Labkit/Weka](./machine-learning) model. In this case the model is applied to the image being traced, and the resulting 'p-map' is loaded as secondary layer.
 
@@ -347,7 +348,8 @@ The same menu also provides options to import a [Labkit/Weka](./machine-learning
 This widget reports current settings (cost function, image statistics, etc.). Report can be copied to the clipboard, or logged to the [Script Recorder](./scripting/#script-recorder).
 
 
-### Filters for Visibility of Paths
+### Path Display Filters
+<span id="filters-for-visibility-of-paths"></span>
 
 <img align="right" src="/media/plugins/snt/path-visibility-filters.png"  width="300" />
 By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths:
@@ -389,7 +391,7 @@ This tab aggregated widgets for advanced settings.
 ### Views
 
 <img align="right" width="300" src="/media/plugins/snt/snt-options-tab.png" title="Options tab" />
-- **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
+- **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
 
 <div align="center">
   <img src="/media/plugins/snt/op1-without-mip.png" title="OP1 demo dataset without MIP overlay" width="250" alt="Image without MIP overlay" />
@@ -432,7 +434,7 @@ If selected the default shortcut for branching off a path ( {% include key key='
 The render opacity (in percentage) for node diameters and segments connecting path nodes.
 
 - **Out-of-plane opacity (%)**
-The render opacity (in percentage) for path segments that are above/below the active Z-plane. It is only considered when tracing 3D images and [visibility filters](#filters-for-visibility-of-paths) are set to
+The render opacity (in percentage) for path segments that are above/below the active Z-plane. It is only considered when tracing 3D images and [visibility filters](#path-display-filters) are set to
 _Only nodes within {x} nearby Z-slices_.
 
 
