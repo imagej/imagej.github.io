@@ -10,3 +10,9 @@ update-site: Neuroanatomy
 
 [PySNT](https://pysnt.readthedocs.io/en/latest/) is a Python wrapper for SNT that enables direct integration with the Python software ecosystem, including NumPy, SciPy, scikit-image, and more.
 For details, see the [PySNT documentation page](https://pysnt.readthedocs.io/en/latest/).
+
+<p align="center">
+    <a href="https://pysnt.readthedocs.io/en/latest/">
+        <img align="center" src="/media/plugins/snt/pysnt-screenshot.png" alt="pysnt.readthedocs.io" width="800px">
+    </a>
+</p>

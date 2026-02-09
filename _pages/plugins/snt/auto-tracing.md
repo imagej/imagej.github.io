@@ -77,7 +77,7 @@ Higher connectivity produces smoother paths through the image but may trace thro
 
 ### About the Algorithm
 
-SNT's grayscale autotracing as been implemented with substantial re-engineering/improvements:
+SNT's grayscale autotracing has been implemented with substantial re-engineering/improvements:
 
 - **Full-resolution tracing** Works directly on original image data without mandatory downsampling, preserving fine details
 

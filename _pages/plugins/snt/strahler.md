@@ -25,7 +25,7 @@ There are several entry points to Strahler Analysis in SNT. You can find those i
 {% include notice icon="info" content=strahler %}
 
 {% capture strahler%}
-While _Strahler Analysis (Image)..._ remains a functional workflow, you may find its simplicity rather limiting. A more flexible approach may be to convert [skeletonized images into traced paths](/plugins/snt/walkthroughs#full-automated-tracing) and run [Strahler Analysis (Tracings)](/plugins/snt/analysis#strahler-analysis) on them.
+While _Strahler Analysis (Image)..._ remains a functional workflow, you may find its simplicity rather limiting. A more flexible approach may be to run [auto-tracing](/plugins/snt/auto-tracing) and run [Strahler Analysis (Tracings)](/plugins/snt/analysis#strahler-analysis) on them.
 {% endcapture %}
 {% include notice icon="warning" background-color="#fffbeb" content=strahler %}
 

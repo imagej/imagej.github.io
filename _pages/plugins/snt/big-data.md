@@ -26,4 +26,5 @@ SNTv5 implemented _preliminary_ support for big data. The support remains basic 
 | 3D Visualization         | Supported via [sciview](./manual#sciview) and [BigVolumeViewer](./manual#big-volume-viewer) | Visualization of 3D reconstructions, including [color mappings](./manual#color-mapping-), etc.                                       |
 
 <sup>1</sup>For interactive tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets
+
 <sup>2</sup>See [PySNT](https://pysnt.readthedocs.io/en/latest/)

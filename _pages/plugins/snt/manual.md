@@ -63,10 +63,6 @@ Specifies the image to trace on without having to restart SNT. Commands include:
 
 In either scenario. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
 
-#### Autotrace Segmented Image File...
-
-If you have a binary mask of the image you want to trace saved to disk (i.e., a pre-processed version of the image in which background pixels have been zeroed), you can use this command to attempt automatic reconstruction. This is similar to {% include bc path='Utilities | Autotrace Segmented Image... ' %} but uses file paths as input. See [Full-automated tracing walkthrough](/plugins/snt/walkthroughs#full-automated-tracing) for details.
-
 #### Load Tracings ›
 
 Imports of neuronal reconstructions from multiple sources, including:
@@ -112,7 +108,28 @@ Convenience shortcuts to open common directories (scripts, backups, folder of im
 
 #### Reset SNT and Restart...
 
-Resets all preferences and restarts SNT using default options. It is recommended to reset SNTs after a major version release.
+Resets all preferences and restarts SNT using default options. It is recommended to reset SNT after a major version release.
+
+### Auto-trace ›
+
+#### Grayscale Image (GWDT)...
+Runs fully automated tracing directly from a **grayscale (intensity) image** already open in SNT (no binarization required). The approach uses **Gray-Weighted Distance Transform (GWDT)** with Fast Marching and expects bright-on-dark imagery. See [Autotracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) for details.
+
+#### Grayscale Image (GWDT) File...
+
+Same as {% include bc path='Grayscale Image (GWDT)...' %}, but loads the grayscale image from a **file path** (including [big-data/out-of-core](/plugins/snt/big-data) datasets). See [Auto-tracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) for details.
+
+#### Detect Soma...
+Standalone tool for automatic soma/root detection in neuronal images. Detects the thickest and brightest structures using an EDT×intensity score, and can export results as a path node or ROI (point, countour, circle) for annotation or seeding autotracing. See [Auto-tracing › Soma Detection](/plugins/snt/auto-tracing#soma-detection) for details.
+
+#### Autotrace Segmented Image...
+
+Runs fully automated tracing on a segmented image that is already open. A segmented image can be a binary mask or a thresholded image, where background pixels have been set to zero. See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) for details.
+
+#### Autotrace Segmented Image File...
+
+Same as {% include bc path='Autotrace Segmented Image...' %}, but loads the segmented image from a file path instead of using an image already open. See [Fully automated tracing](/plugins/snt/auto-tracing#segmented-images) for details.
+
 
 ### Analysis ›
 
@@ -121,6 +138,9 @@ See [Analysis › Atlas-based Analysis](/plugins/snt/analysis#atlas-based-analys
 
 #### Path-based ›
 See [Analysis › Path-based Analysis](/plugins/snt/analysis#path-based-analysis).
+
+#### Compare Reconstructions/Cell Groups...
+Allows morphometric comparisons of two single reconstruction files or multiple groups of reconstruction files (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
 
 #### Convex Hull
 See [Analysis › Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
@@ -139,36 +159,11 @@ See [Analysis › Sholl Analysis](/plugins/snt/analysis#sholl-analysis).
 
 See [Analysis › Strahler Analysis](/plugins/snt/analysis#strahler-analysis).
 
-#### Measure...
 
-Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details.
-
-#### Quick Measurements
-
-Shortcut for running {% include bc path='Measure...' %} with common metrics.
-
-### Utilities
-
-#### Command Palette
-
-{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
-The Command Palette is the fastest way to access actions and discover their respective shortcuts:
-
-1. Press {% include key keys='ctlcmd|Shift|P' %} in either SNT or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)
-2. Start typing to filter actions, scripts and available commands
-3. Press {% include key keys='up' %} or {% include key keys='down' %} (or use the  {% include key keys='mouse wheel' %}) to select a command
-4. Press {% include key keys='Enter' %} to run it. If the record button is toggled, executed commands are recorded by the [Script Recorder](/plugins/snt/scripting#script-recorder).
-
-By default, commands and actions are filtered using approximate string matching. Exact matching can be enabled by toggling the _Match Case/Whitespace_ buttons. Press the &nbsp;<i style="color:gray;" class="fas fa-map-pin"></i>&nbsp; button to display the Command Palette above all windows. Press the &nbsp;<i style="color:gray;" class="fas fa-lock"></i>&nbsp; button to keep the Palette open after running a command.
-
-
-#### Compare Reconstructions/Cell Groups...
-Allows morphometric comparisons of two single reconstruction files or multiple groups of reconstruction files (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
-
+#### Utilities
 
 #### Create Dendrogram
 Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
-
 
 #### Create Figure...
 
@@ -188,7 +183,6 @@ Creates multi-panel figures from chosen reconstructions, according to the follow
   <img src="/media/plugins/snt/snt-create-figure-demo.gif" title="Create figure: 3D (interactive) multi-panel montage" width="60%" alt="Create figure: 3D (interactive) multi-panel montage" />
 </div>
 
-
 <span id="plotter"></span>
 
 #### Reconstruction Plotter
@@ -201,10 +195,14 @@ _Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructio
 - Color legends when color mappings are present
 - Can be combined in multi-panel viewers (mainly via scripting)
 
+#### Measure...
 
-#### Autotrace Segmented Image...
+Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details.
 
-Similar to {% include bc path='File|Autotrace Segmented Image File...| ' %} but using image(s) already open  as input. See [Full-automated tracing walkthrough](/plugins/snt/walkthroughs#full-automated-tracing) for details.
+#### Quick Measurements
+
+Shortcut for running {% include bc path='Measure...' %} with common metrics.
+
 
 ### Scripts›
 
@@ -223,6 +221,20 @@ Contains commands for organizing tracing views on screen, plus commands for disp
 - **{% include bc path='Display Secondary Image' %}** Displays the cached filtered image being used as secondary tracing layer.
 
 - **{% include bc path='Toggle Fiji Console' %}** Toggles the visibility of Fiji's Console. The console displays errors and exceptions as well as informational messages when _Debug mode_ is activated.
+
+### Help›
+
+##### Command Palette
+
+{% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}
+The Command Palette is the fastest way to access actions and discover their respective shortcuts:
+
+1. Press {% include key keys='ctlcmd|Shift|P' %} in either SNT or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)
+2. Start typing to filter actions, scripts and available commands
+3. Press {% include key keys='up' %} or {% include key keys='down' %} (or use the  {% include key keys='mouse wheel' %}) to select a command
+4. Press {% include key keys='Enter' %} to run it. If the record button is toggled, executed commands are recorded by the [Script Recorder](/plugins/snt/scripting#script-recorder).
+
+By default, commands and actions are filtered using approximate string matching. Exact matching can be enabled by toggling the _Match Case/Whitespace_ buttons. Press the &nbsp;<i style="color:gray;" class="fas fa-map-pin"></i>&nbsp; button to display the Command Palette above all windows. Press the &nbsp;<i style="color:gray;" class="fas fa-lock"></i>&nbsp; button to keep the Palette open after running a command.
 
 ## Main Tab
 
@@ -695,7 +707,7 @@ Combines (connects) two or more _disconnected_ paths into one (undoable operatio
 
 #### Concatenate...
 
-Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/walkthroughs#full-automated-tracing) belonging to the same neurite.
+Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/auto-tracing) belonging to the same neurite.
 
 #### Merge Primary Path(s) into Shared Root
 
@@ -703,7 +715,7 @@ Takes two or more primary paths and merges them into a common root node placed a
 
 #### Reverse...
 
-Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/walkthroughs#full-automated-tracing).
+Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/#auto-tracing).
 
 #### Specify Constant Radius...
 
