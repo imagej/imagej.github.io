@@ -89,7 +89,7 @@ in which the user can select the desired tracking workflow. The options are:
 
 5. (Optional) After selecting your desired workflow, you can tune the tracking parameters in the **Settings** section. 
    The parameters are workflow-dependent, and the user can 
-   [check here](https://github.com/royerlab/ultrack-dev/blob/main/ultrack/config/README.md) for more information about
+   [check here](https://royerlab.github.io/ultrack/configuration.html) for more information about
    the parameters. Not all of them are available in the FIJI interface, Python is required for full customization.
 
 {% include img
