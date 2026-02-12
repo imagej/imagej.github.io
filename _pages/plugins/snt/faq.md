@@ -32,7 +32,7 @@ In addition, you should also cite any additional modules that you may use:
 
 ### What is the difference between SNT and Simple Neurite Tracer?
 
-Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](https://doi.org/10.1093/bioinformatics/btr390), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modeling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji' repo='Simple_Neurite_Tracer' label='historic' %} and SNT's {% include github org='morphonets' repo='SNT' label='current' %} repositories.
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [Mark Longair](/people/mhl) and [published in 2011](https://doi.org/10.1093/bioinformatics/btr390), to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers led by [Tiago Ferreira](/people/tferr) took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modeling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (*Not so Simple Neurite Tracer*, *Smart Neurite Tracer*, *Super Neurite Tracer* to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub: Simple Neurite Tracer's {% include github org='fiji' repo='Simple_Neurite_Tracer' label='historic' %} and SNT's {% include github org='morphonets' repo='SNT' label='current' %} repositories.
 
 ### How accurate is SNT?
 
@@ -48,7 +48,7 @@ When tracing 4D or 5D images, TRACES is preferable because the channel and/or ti
 
 |                                              | **SWC**                                                                                                                              | **TRACES**                                                                                  |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| No. reconstructions per file                 | Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                                   |
+| No. reconstructions per file                 | Formally only one. When multiple reconstructions exist, SNT splits them across multiple files appending unique suffixes to filenames | Multiple reconstructions per file allowed                                                   |
 | Image metadata                               | Formally none. SNT stores the spatial calibration of the image in the header                                                         | Rich. Including channel and frame of the traced structure.                                  |
 | [Path Manager tags](/plugins/snt/manual#tag) | Not stored                                                                                                                           | Stored                                                                                      |
 | [Fits](/plugins/snt/manual#refinefit)        | Not stored, unless fitting replaces existing nodes                                                                                   | Stored                                                                                      |
@@ -63,7 +63,7 @@ SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by 
 Unsupported and proprietary file formats can be converted to [SWC](#swc) using [xyz2swc](https://neuromorpho.org/xyz2swc/ui/).
 
 ### Which image file formats are supported by SNT?
-Any file format supported by ImageJ/bioformats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
+Any file format supported by ImageJ/Bio-Formats with up to 5 dimensions. RGB images are strongly discouraged and are converted to multichannel before loading.
 
 ### How do I (batch) convert TRACES to SWC?
 Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from the Scripts menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy|'%} menu in the Script Editor.
@@ -75,14 +75,14 @@ Use the *Edit this page* option on the <a href="#top">top</a> of the documentati
 ## Tracing
 
 ### Can I trace in 3D?
-Yes, always. Either using the XY,ZY,XZ [views](/plugins/snt/walkthroughs#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy), or [sciview](/plugins/snt/manual#sciview) (experimental).
+Yes. You can trace using the the XY,ZY,XZ [views](/plugins/snt/walkthroughs#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy), or [sciview](/plugins/snt/manual#sciview) (experimental). There is also growing support for [Big Volume Viewer](/plugins/snt/manual#big-volume-viewer).
 
 ### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
 Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section).
 
 ### How can I browse voxel intensities around processes?
 Right-click on the image canvas and select *Pause SNT* from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
-Alternative, you can also obtain Path profiles, in which voxel intensities are plotted along selected path(s).
+Alternatively, you can also obtain [Path profiles](/plugins/snt/manual#path-profiler), in which voxel intensities are plotted along selected path(s).
 
 ### I traced an image in pixel coordinates but need to scale the reconstruction to physical units. How do I do it?
 Have a look at [these instructions](https://forum.image.sc/t/how-to-set-the-correct-scale-micrometer-um-of-traced-cell-in-sholl-analysis/84764/4)

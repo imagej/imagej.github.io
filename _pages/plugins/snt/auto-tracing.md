@@ -195,6 +195,11 @@ You should increase Max. connection distance if the algorithm produces too many 
 
 NB: When components are bridged, new loops may be introduced. These are automatically resolved using the selected loop resolution strategy.
 
+{% capture hotip%}
+Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations. Hold {% include key keys='F' %} to temporarily hide all annotations.
+{% endcapture %}
+{% include notice icon="info" content=hotip %}
+
 ## Additional Options
 
 Additional processing options are available in the dialog:

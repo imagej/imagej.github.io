@@ -57,7 +57,7 @@ _Reconstruction viewer_ is a generic visualization tool, supporting multiple spe
 
 
 # RV Controls
-The RV Controls dialog is the Reconstruction Viewer equivalent to the [Path Manager](/plugins/snt/manual#path-manager) in SNT's tracing interface. It allows you to control and customize the objects displayed in the scene. Note that only interactive instance of the viewer display this dialog. Those generated programmatically via scripting may omit it. The dialog is organized has follows:
+The RV Controls dialog is the Reconstruction Viewer equivalent to the [Path Manager](/plugins/snt/manual#path-manager) in SNT's tracing interface. It allows you to control and customize the objects displayed in the scene. Note that only interactive instance of the viewer display this dialog. Those generated programmatically via scripting may omit it. The dialog is organized as follows:
 
 ## Scene Controls
 This menu provides control over the rendered scene.
@@ -70,7 +70,7 @@ Switches between dark and light theme. Shortcut: {% include key key='D' %}
 Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view. Shortcut: {% include key key='F' %}
 
 ### Fit to Selection
-Zooms into the object(s) current selected in the object list.
+Zooms into the object(s) currently selected in the object list.
 
 ### Impose Isotropic Scale ›
 Squares the aspect ratio of the selected dimensions, leaving the others unchanged. Default is _None_.
@@ -97,7 +97,7 @@ Resets the view and checks if all the drawables in the scene are being rendered 
 Clears all objects from the scene then rebuilds them from scratch. Shortcut: {% include key keys='CTRL|SHIFT|R' %}
 
 ### Wipe Scene
-Removes all objects from the scene (undoable action).
+Removes all objects from the scene (this action is undoable).
 
 ### Scene Shortcuts...
 Displays the viewer's hotkeys. Shortcut: {% include key keys='F1' %}
@@ -151,7 +151,7 @@ Legends can be edited using [Color Mapping Legends ›](#color-mapping-legends-)
 Specifies a constant thickness to be applied to the selected reconstructions. Confusingly, thickness is set using an arbitrary scale ranging from 1 (thinnest) to 8 (thickest).
 
 #### Soma Radius...
-Applies a constant radius (in physical units) to be the soma(s) of selected reconstructions. Note that this requires nodes to be explicitly tagged as soma during import.
+Applies a constant radius (in physical units) to the soma(s) of selected reconstructions. Note that this requires nodes to be explicitly tagged as soma during import.
 
 #### Translate...
 Specifies a translation to be applied to selected reconstructions.

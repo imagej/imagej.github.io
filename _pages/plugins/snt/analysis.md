@@ -10,11 +10,11 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 # Measurements
-{% include img align="right" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features options for searching and selecting metrics, renderer measured cells, and summarize existing measurements. An offline guide is also accessible through the <i>Gear</i> menu." %}
+{% include img align="right" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features options for searching and selecting metrics, render measured cells, and summarize existing measurements. An offline guide is also accessible through the <i>Gear</i> menu." %}
 
 SNT provides a couple ways to measure reconstructions. To measure complete cells use {% include bc path='Analysis|Measure...'%} in the main SNT dialog (or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer). To get measurements only on a select group of Paths, first select or filter for the Paths you want to measure in the Path Manager, then use the commands in Path Manager's {% include bc path='Analyze|Measurements'%} menu.
 
-The reason for distinguishing between cell-based (i.e., branch-based) and path-based measurements is flexibility:  Path-based measurements can be performed on any structures, even those with loops, while cell-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
+The reason for distinguishing between cell-based (i.e., branch-based) and path-based measurements is flexibility: Path-based measurements can be performed on any structures, even those with loops, while cell-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
 A convenience _Quick Measurements_ command also exists ( {% include bc path='Analysis| '%} menu in the main SNT dialog or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
 
@@ -33,7 +33,7 @@ Notes on SNT charts and plots:
 
 - SNT charts are zoomable, scalable, and rendered using scientific plotting styles to be as publication-ready as possible. Right-click on a plot canvas to export it as vector graphics (PDF or SVG), access customization controls, a light/dark theme toggle, and options to aggregate charts in multi-panel figures
 
-- With simple charts, it is possible double-click on plotted components to edit them and export data as CSV
+- With simple charts, it is possible to double-click on plotted components to edit them and export data as CSV
 
 - Histogram distributions can be fitted to a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) (Gaussian) or a [Gaussian mixture model](https://en.wikipedia.org/wiki/Mixture_model) (see _Components & Curve Fitting_ in the histogram right-click menu). In both cases, curves are scaled so that the [area under the curve](https://en.wikipedia.org/wiki/Integral) of the fitted curve matches that of the histogram. [Quartile](https://en.wikipedia.org/wiki/Quartile) marks can also be overlaid. By default, the [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman%E2%80%93Diaconis_rule) rule is used to compute the no. of histogram bins.
 
@@ -124,7 +124,7 @@ Similarly to _Sholl Analysis_, there are several entry points to Strahler Analys
 {% include img align="right" src="/media/plugins/snt/strahler-classification-example.png" caption="Strahler classification"%}
 {% include wikipedia title='Strahler number' text='Strahler numbering'%} is a numerical procedure that summarizes the branching complexity of mathematical trees. The {% include wikipedia title='Strahler number' text='Strahler classification'%} occurs as follows:
 
-- If a brach is terminal (has no children), its Strahler number is one
+- If a branch is terminal (has no children), its Strahler number is one
 - If a branch has one child-branch with Strahler number *i*, and all other children-branches have Strahler numbers less than *i*, then the Strahler number of the branch is *i* again
 - If a branch has two or more children-branches with Strahler number *i*, and no children-branches with greater number, then the Strahler number of the branch is *i+1*
 
@@ -148,10 +148,10 @@ This command ({% include bc path='Analysis|Path-based|Path Order Analysis'%} in 
 - Any collection of paths can be analyzed without validating into a formal tree
 
 ### Path Properties: Export CSV...
-This command ({% include bc path='Analysis|Path-based|Path Properties: Export CSV...'%}) exports path details morphometrics, neurite compartments, linkage relationships to other Paths, start and end coordinates, etc.) to a spreadsheet file.
+This command ({% include bc path='Analysis|Path-based|Path Properties: Export CSV...'%}) exports path details (morphometrics, neurite compartments, linkage relationships to other Paths, start and end coordinates, etc.) to a spreadsheet file.
 
 # Atlas-based Analysis
-Atlas-based analyses require reconstruction nodes to be tagged with neuropil IDs (atlas labels) (e.g., ). Broadly, there are two types of analyses: [Brain Area Frequencies](#brain-area-frequencies) and [Annotations Graphs](#annotations-graphs).
+Atlas-based analyses require reconstruction nodes to be tagged with neuropil IDs (atlas labels) (e.g., MouseLight data). Broadly, there are two types of analyses: [Brain Area Frequencies](#brain-area-frequencies) and [Annotations Graphs](#annotations-graphs).
 
 
 ### Brain Area Frequencies
@@ -261,7 +261,7 @@ The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-
 
 # Growth Analysis
 
-Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matches across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
+Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matched across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
 
 {% capture timelapse-demo%}
 For parameter validation and configuration comparisons, load the _Hippocampal neuron (DIC timelapse)_ demo dataset ({% include bc path='File|Load Demo Dataset...' %})
@@ -271,7 +271,7 @@ For parameter validation and configuration comparisons, load the _Hippocampal ne
 ## Prerequisites
 
 - **Time-matched paths**: Paths must be tagged using the {% include bc path='Match Paths Across Time...'%} command first, so that all paths in the timelapse sequence associated with the same neurite are tagged with a common neurite label, e.g., "{neurite #1}", "{neurite #2}", etc, as described in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough.
-- **Sufficient time points**: At least 3 time points per neurite for meaningful analysis. Monitoring changes in extension angles tipically requires at least 4 time points
+- **Sufficient time points**: At least 3 time points per neurite for meaningful analysis. Monitoring changes in extension angles typically requires at least 4 time points
 
 Data generated outside SNT can also be analyzed:
 1. Import all the reconstruction files associated with the time series
@@ -342,8 +342,8 @@ The algorithm has several adjustable parameters that can be set in the "Growth A
 
 - **Threshold calculation**: Either "Global" or "Per-neurite". If global, thresholds are calculated relative to mean growth rate of _all_ neurites. If "Per-neurite": Thresholds are calculated relative to each neurite's individual growth rate
 
-- **Phase detection sensitivity**: Sensitivity ranges from 0.05 to 1.0 (default value is 0.5). Lower values correspond to higher sensitivity, i.e., more phase transitions being detected, and higher values encoding low sensitivity. Higher values allow more phases to be detected. Lower values detect fewer, longer phases. Increase this parameter if too many short phases are being detected. Decrease it if obvious phase transitions are being missed.
-
+- **Phase detection sensitivity**: Sensitivity ranges from 0.05 to 1.0 (default value is 0.5). Lower values correspond to higher sensitivity, detecting more phase transitions (resulting in shorter, more numerous phases). Higher values correspond to lower sensitivity, detecting fewer transitions (resulting in longer, fewer phases). Increase this parameter if too many short phases are being detected. Decrease it if obvious phase transitions are being missed
+ 
 - **Window size (no. of frames)**: Controls the size of the "moving window" of the [phase detection algorithm](#classification-algorithm). Higher values provide more stable detection with fewer phases, while lower values detect more detailed changes but may include spurious transitions. Range 2-40 frames (default is 3)
                     
 - **Threshold for retraction length (%)**: Defines the minimum percentage decrease in neurite length required to classify a phase as a _retraction event_. It is calculated at the start of the potential retraction. Increase this threshold if spurious "retraction" classifications occur. Range: 1% - 50% (default is 5%)

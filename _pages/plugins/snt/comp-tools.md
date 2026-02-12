@@ -27,6 +27,6 @@ update-site: Neuroanatomy
 | [Blue Brain's Morphology Suite](https://github.com/BlueBrain/morphology-suite) | Blue brain's collection of tools (mostly Python) to build, analyze and visualize morphologies. Currently supported by the [Open Brain Institute](https://www.openbraininstitute.org/) |
 | [Cajal](https://cajal.readthedocs.io/en/latest/index.html#) | A Python package for the analysis of single-cell morphological data using  Gromov-Wasserstein (GW) distances |
 | [HBP Morphology Viewer](https://neuroinformatics.nl/HBP/morphology-viewer/)| WebGL-based viewer with Allen Cell Types and Neuromorpho.org integration |
-| [L-measure](http://cng.gmu.edu:8080/Lm/) | Classic toolkit for quantitative analyzes of neuronal reconstructions of neurons (cf. [metrics](metrics)) |
+| [L-measure](http://cng.gmu.edu:8080/Lm/) | Classic toolkit for quantitative analyses of neuronal reconstructions of neurons (cf. [metrics](metrics)) |
 | [natverse](https://natverse.org/) | Complete neuroanatomical data analysis in R |
 | [TREES Toolbox ](https://www.treestoolbox.org/) | Complete neuroanatomical data analysis and modeling in MATLAB |

@@ -73,7 +73,7 @@ This element can have the following attributes:
 : if this is present, it gives the ID of the path which the branch ends on. If `endson` is specified, then either the deprecated attribute `endsindex` or the recommended attributes `endsx`, `endsy` `endsz` must be specified as well
 
 `endsx`, `endsy` and `endsz`
-: These attributes indicate where on the path specified by `endson` this path ends. If one of these is attributes is specified, all must be specified.
+: These attributes indicate where on the path specified by `endson` this path ends. If one of these attributes is specified, all must be specified.
 
 `name`
 : A string giving the name of this path

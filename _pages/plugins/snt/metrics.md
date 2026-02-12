@@ -42,7 +42,7 @@ The [absolute](#absolute-angles) [extension angle](#extension-angle) of a branch
 The [absolute](#absolute-angles) [extension angle](#extension-angle) of a branch in the ZY plane
 
 ##### Branch fractal dimension
-Also known has [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension). Defined as the slope obtained from the log-log plot of _Path distance vs Euclidean distance_, as [implemented by L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) following the definition of [Marks & Burke (2007)](https://doi.org/10.1002/cne.21418). It is only computed for branches defined by at least five nodes. L-measure metric[^2] described in:
+Also known as [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension). Defined as the slope obtained from the log-log plot of _Path distance vs Euclidean distance_, as [implemented by L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) following the definition of [Marks & Burke (2007)](https://doi.org/10.1002/cne.21418). It is only computed for branches defined by at least five nodes. L-measure metric[^2] described in:
 {% include citation doi='10.1002/cne.21418' %}
 
 ##### Branch length
@@ -63,7 +63,7 @@ _Estimated_ volume[^1] of a branch computed from treating each internode segment
 The total path length of a structure, i.e., the sum of all internode distances of its paths
 
 ##### Complexity Indices
-Complexity Indices are ratios of anatomical properties that summarize branching patterns. Typically, this type of descriptors have been created to summarize (early) neural development in vitro
+Complexity Indices are ratios of anatomical properties that summarize branching patterns. Typically, these type of descriptors have been created to summarize (early) neural development in vitro
 
 ###### Complexity index: ACI
 Also known as "Axonal Complexity Index". An index based on path orders, defined as $$\frac{\sum_{n=1}^{N} {Path\,order - 1}}{N}$$, with $$N$$ being the total number of paths in the reconstruction. Described in:
@@ -146,7 +146,7 @@ Specialized angles can be measured via the scripting API for any group of 3D coo
 
 - **Direction of mesh curvature**: The local orientation of a 3D mesh at a specific location.
 
-For more details have a look at angle-related [demo scripts](./scripting#bundled-templates) such as _Tree Mesh Direction Analysis_ and _Tree Span Angle Analysis_.
+For more details, have a look at angle-related [demo scripts](./scripting#bundled-templates) such as _Tree Mesh Direction Analysis_ and _Tree Span Angle Analysis_.
 
 <span id="h"></span>
 ##### Height
@@ -166,7 +166,7 @@ Defined as the branches of highest Strahler order. Typically, these correspond t
 ###### Inner branches: Extension angle
 The [absolute](#absolute-angles) (compass bearing) [extension angle](#extension-angle) of [inner branches](#inner-branches)
 
-##### Inner branches: Extension angle (Rel.)
+###### Inner branches: Extension angle (Rel.)
 The [relative](#relative-rel-angles) [Extension angle](#extension-angle) of [inner branches](#inner-branches)
 
 ###### Inner branches: Extension angle XY
@@ -228,7 +228,7 @@ The total number (count) of [fitted](/plugins/snt/manual#refinefit) paths
 The number of branches of highest Strahler order. Typically, these correspond to the most 'internal' branches of an arbor, in direct sequence from the root
 
 ##### No. of path nodes (path fragmentation)
- The total number of nodes (and thus _compartments_) in a path
+The total number of nodes (and thus _compartments_) in a path
 
 ##### No. of paths
 The total number (count) of paths defining a structure
@@ -320,7 +320,7 @@ See [persistence homology](/plugins/snt/analysis#persistence-homology)
 See [persistence homology](/plugins/snt/analysis#persistence-homology)
 
 ##### Primary branches
-Primary branches that have origin in a tree's root, extending to the closest branch point or end-point, i.e., [inner branches](#inner-branches) starting at the root. Also known as root-associated branches. Note that a primary branch can also be terminal
+Primary branches originate at a tree's root, extending to the closest branch point or end-point, i.e., [inner branches](#inner-branches) starting at the root. Also known as root-associated branches. Note that a primary branch can also be terminal
 <br>See also: [Inner branches](#inner-branches), [Terminal branches](#terminal-branches)
 
 ###### Primary branches: Extension angle XY
@@ -347,7 +347,7 @@ Dimensionless property related to [Centripetal bias](#root-angles-centripetal-bi
 {% include citation doi='10.1371/journal.pcbi.1000877' %}
 
 ##### Root angles: Centripetal bias
-[Root angle analysis](/plugins/snt/analysis#root-angle-analysis) metric (dimensionless, range: $$[0,\infty[$$). It is defined as the concentration ($$\kappa$$) of the von Mises fit of the root angle distribution: $$\kappa=0$$ indicate no bias (root angles are distributed uniformly) while $$\kappa\to\infty$$ indicate that all neurites point directly toward the root of the tree
+[Root angle analysis](/plugins/snt/analysis#root-angle-analysis) metric (dimensionless, range: $$[0,\infty[$$). It is defined as the concentration ($$\kappa$$) of the von Mises fit of the root angle distribution: $$\kappa=0$$ indicates no bias (root angles are distributed uniformly) while $$\kappa\to\infty$$ indicates that all neurites point directly toward the root of the tree
 
 ##### Root angles: Mean direction
 [Root angle analysis](/plugins/snt/analysis#root-angle-analysis) metric. The mean direction of the fitted von Mises distribution (in degrees).
@@ -397,10 +397,10 @@ Treating each internode segment as a conical frustum, the sum of the surface are
 Branches ending at terminal endpoints (tips)
 <br>See also: [Inner branches](#inner-branches), [Primary branches](#primary-branches)
 
-##### Terminal branches: Extension angle
+###### Terminal branches: Extension angle
 The [absolute](#absolute-angles) (compass bearing) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches)
 
-##### Terminal branches: Extension angle (Rel.)
+###### Terminal branches: Extension angle (Rel.)
 The [relative](#relative-rel-angles) [Extension angle](#extension-angle) of [terminal branches](#terminal-branches)
 
 ###### Terminal branches: Extension angle XY
@@ -421,7 +421,7 @@ Topological Morphology Descriptor. See [persistence homology analysis](/plugins/
 
 <span id="v"></span>
 ##### Volume
-Treating each internode segment as a conical frustum, the sum of the volume[^1] of all frusta
+Treating each internode segment as a conical frustum, the sum of the volumes[^1] of all frusta
 
 <span id="w"></span>
 ##### Width
@@ -439,11 +439,11 @@ Cartesian coordinates in the three-dimensional space
 
 - Each of the 100+ metrics is represented by seven statistical properties: minimum, maximum, mean, standard deviation (SD), coefficient of variation (CV, the ratio of the standard deviation to the mean), sum, and _N_, resulting in a total of $$100\times 7$$ features. Note that there is an intrinsic redundancy between these features: E.g., for a given cell, retrieving [Branch length](#branch-length)'s _N_ is effectively the same as retrieving [No. of branches](#no-of-branches)
 
--  *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
+- *NaN* values for a reported metric typically reflect undefined operations (e.g., division by zero), or the fact that the reconstruction being parsed is not a valid mathematical tree
 
 - Currently, volume-related metrics do not take into account [path fillings](/plugins/snt/walkthroughs#filling)
 
-[^1]: Volume and surface area calculations assume radii have been assigned to  path nodes, typically through [fitting routines](/plugins/snt/manual#refinefit).<br>
+[^1]: Volume and surface area calculations assume radii have been assigned to path nodes, typically through [fitting routines](/plugins/snt/manual#refinefit).<br>
 [^2]: [L-measure](http://cng.gmu.edu:8080/Lm/help/index.htm) metrics are described in: {% include citation doi='10.1038/nprot.2008.51' %}<br>
 
 

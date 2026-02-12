@@ -13,7 +13,7 @@ update-site: Neuroanatomy
 doi: 10.1038/s41592-021-01105-7
 ---
 
-SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multidimensional microscopy data, semi-automated and automated routines, and options for editing traces. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data.
+SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses, and modeling of neuronal morphology. For tracing, SNT supports modern multidimensional microscopy data, semi-automated and automated routines, and options for editing traces. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data.
 
 {% capture text%}
 **SNT is based on [publications](/plugins/snt/faq#how-do-i-cite-snt). Please [cite](/plugins/snt/faq#how-do-i-cite-snt) SNT in your own research!**
@@ -40,7 +40,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
 /media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations
 /media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer)
-/media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/#sholl) and [Strahler](/plugins/snt/analysis#strahler) directly from images (bypassing tracing)
+/media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/sholl) and [Strahler](/plugins/snt/analysis#strahler) directly from images (bypassing tracing)
 /media/plugins/snt/snt-angular-sholl.png | Advanced [Sholl-based quantifications](/plugins/snt/sholl#angular-sholl)
 /media/plugins/snt/snt-root-angle-analysis.png | [Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis)
 /media/plugins/snt/snt-local-angle-surface-analysis.png | Analysis of [surface angles/arbor orientation](/plugins/snt/metrics#extension-angle)

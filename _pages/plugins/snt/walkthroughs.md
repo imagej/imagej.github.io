@@ -12,7 +12,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 
 {% capture version%}
 **This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.<br>
-Please help us to keep these walkthroughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
+Please help us to keep these walkthroughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/walkthroughs.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
 
@@ -57,6 +57,10 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 
 NB: Once you become familiarized with the software you may want to disable the confirmation of temporary segments in _Temporary Paths_ section of the [Options tab](/plugins/snt/manual#options-tab)
 
+{% capture hotip%}
+Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations. Hold {% include key keys='F' %} to temporarily hide all annotations.
+{% endcapture %}
+{% include notice icon="info" content=hotip %}
 
 ## Branching: Start A Path On An Existing Path
 
@@ -101,7 +105,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
       <td>
         <p>When you press {% include key key='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key key='+' %}, make sure you move your mouse pointer over the neurite so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br>
         At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in XY (2D), and optionally Z (3D).</p>
-        <p>Note that when Z-snapping is enabled, all views become synchronized,</p>
+        <p>Note that when Z-snapping is enabled, all views become synchronized</p>
       </td>
       <td>
         <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="300px">
@@ -109,7 +113,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
     </tr>
     <tr style="background-color:white">
       <td>
-        <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key key='Shift' %} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key key='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key key='M' %}.</p>
+        <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key key='Shift' %} to synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key key='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key key='M' %}.</p>
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
       </td>
       <td>
@@ -169,7 +173,7 @@ The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 <img  align="right" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="350"/>
 
 #### Selecting points for tracing
-_Tracing_ mode is only active when the *Wand tool* in the main ImageJ toolbar is active. To activate it, press the {% include key key='W' %} [shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) and click over the region you want to trace. Tracing works the same way as in the XY, YZ, and XZ views, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#iii-confirm-the-temporary-segment). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier. NB: This shortcut can be simplified: See [Options Tab](/plugins/snt/manual#temporary-paths) for details.
+_Tracing_ mode is only active when the *Wand tool* in the main ImageJ toolbar is active. To activate it, press the {% include key key='W' %} ([shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) and click over the region you want to trace. Tracing works the same way as in the XY, YZ, and XZ views, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#iii-confirm-the-temporary-segment). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier. NB: This shortcut can be simplified: See [Options Tab](/plugins/snt/manual#temporary-paths) for details.
 
 To interact with the scene without tracing, activate the *Hand tool* in the main ImageJ toolbar by pressing {% include key key='H' %}.
 
@@ -192,7 +196,7 @@ See [Key Shortcuts](/plugins/snt/key-shortcuts#legacy-3d-viewer) for the list of
 {% include notice icon="info" content=op1-demo-incomplete %}
 Two paths can be merged or joined in *Edit Mode*. To do so:
 
-1. Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [contextual menu](/plugins/snt/manual#contextual-menu)
+1. Select a path and enter *Edit Mode* (by right-clicking on the image canvas to access its [contextual menu](/plugins/snt/manual#contextual-menu))
 2. Activate the node to be merged by hovering over it
 3. Select the second path by using the {% include key key='G' %} [shortcut](/plugins/snt/key-shortcuts) and activate the second merging node by hovering over it
 4. Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu
@@ -211,6 +215,11 @@ Two paths can be merged or joined in *Edit Mode*. To do so:
 - Loop-forming connections are not allowed
 - The recommended way to concatenate or combine paths is to use the respective commands in Path Manager's [Edit menu](/plugins/snt/manual#edit)
 
+{% capture hotip%}
+Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations before merging.
+{% endcapture %}
+{% include notice icon="info" content=hotip %}
+
 # Full-automated Tracing
 
 Full-automated tracing is described in [Auto-tracing](/plugins/snt/auto-tracing).
@@ -228,7 +237,7 @@ Complete shape analysis of dendritic spines can be performed using [Spot Spine](
 {% endcapture %}
 {% include notice icon="info" content=spot-spine %}
 
-This type of analysis uses (manually placed) multi-Point ROIs along paths as markers for neurite features such dendritic spines or axonal varicosities. Currently only counts and densities are supported. A typical workflow would proceed as follows.
+This type of analysis uses (manually placed) multi-Point ROIs along paths as markers for neurite features such as dendritic spines or axonal varicosities. Currently only counts and densities are supported. A typical workflow would proceed as follows.
 
  1. Right-click on the image being traced and choose _Count Spine/Varicosities_ from the [contextual menu](/plugins/snt/manual#contextual-menu). SNT will pause, the multipoint tool will be selected, and a floating dialog (that can be dismissed at will) displays a summary of these instructions
  2. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) the feature being counted
@@ -302,7 +311,7 @@ Once undesired motion has been mitigated:
    
 5. Once paths have been matched to their neurites across the time-lapse sequence, future analysis becomes simplified.
 
-6. Use Either  {% include bc path='Analyze|Time-lapse Utilities|Grow Analysis...' %} or {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} analyze the data. The former is a very simple approach to summarize growth across time, while the latter is a comprehensive analysis tool.
+6. Use Either  {% include bc path='Analyze|Time-lapse Utilities|Grow Analysis...' %} or {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} to analyze the data. The former is a very simple approach to summarize growth across time, while the latter is a comprehensive analysis tool.
    {% include bc path='Time Profile...' %} includes the following options:
 
       - **Metric** the measurement to be profiled across time
@@ -349,7 +358,7 @@ The "Cursor position:" state under "Search Status" is updated as you move your m
 
 The _Search status_ shows your current [threshold distance](#iii-understanding-fill-distances-and-distance-threshold): so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and highlighted in green in the image). The "Max. explored distance:" shows the maximum distance from the path that has been completely explored.
 
-### II.Adjusting the Fill Threshold
+### II. Adjusting the Fill Threshold
 
 You can change the fill threshold in one of three ways:
 

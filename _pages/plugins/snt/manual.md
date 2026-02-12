@@ -57,7 +57,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 
 Specifies the image to trace on without having to restart SNT. Commands include:
 
-- *{% include bc path='From Open Image...'%}* Use this to staring tracing on an image already open in Fiji. It allows selection of an image from a a prompt listing all images currently open
+- *{% include bc path='From Open Image...'%}* Use this to start tracing on an image already open in Fiji. It allows selection of an image from a a prompt listing all images currently open
 - *{% include bc path='From File...'%}* Allows browsing for an image file
 - *{% include bc path='From System Clipboard'%}* Loads a 2D image from the system clipboard. Useful, to e.g., trace on [forum-posted](https://forum.image.sc/) images
 
@@ -549,7 +549,19 @@ Selects ("<u>G</u>roups") the path closest to the mouse cursor.
 Keeps appending the closest path to the existing path selection.
 
 ### Select Paths by 2D ROI
-A convenience utility to select path(s) quickly (but coarsely). One the command is run, it is possible to "draw" an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
+A convenience utility to select path(s) quickly. One the command is run, it is possible to draw an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
+
+## Hide Paths {% include key key='H' %}
+Temporarily hides all paths and annotations to reveal the underlying image while held. Useful for:
+- Inspecting image features obscured by dense tracings
+- Verifying path accuracy against the original signal
+- Taking screenshots of the unobstructed image
+
+## Path Orientation {% include key key='O' %}
+Temporarily displays directional arrows along paths indicating their orientation (start→end) while held. Useful for:
+- Verifying directionality when merging or connecting paths
+- Checking path orientation before analysis
+- Identifying the root/origin of auto-traced structures
 
 ### Bookmark Cursor Position {% include key key='Shift|B' %}
 Described in [Bookmarks Tab](#bookmarks-tab).
@@ -576,7 +588,26 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 
 ### Connect To (...) {% include key key='C' %}
-Allows two existing paths to be connected, typically under a parent-child relationship. Described in this [walkthrough](/plugins/snt/walkthroughs#mergingjoining-paths).
+<img align="right" src="/media/plugins/snt/snt-connect-to.png" title="Connect To..." width="375" />
+
+Connects two paths under a parent-child relationship. To connect paths:
+
+1. Select the parent path and enter Edit Mode ({% include key key='Shift|E' %})
+2. Hover over the node where the child should branch from
+3. Press {% include key key='G' %} to switch to the **child** path
+4. Select the child's connection node
+5. Press {% include key key='C' %} to connect (or use the menu entry)
+
+A preview of the connection is displayed over the image using the current [annotation color](#misc).
+A confirmation dialog shows the connection summary with an option to swap parent/child roles. Parent/child roles are inferred from tree depth and path size; the swap option is pre-selected if the current assignment seems reversed.
+
+**Notes:**
+- Child paths are automatically re-oriented to maintain proper tree structure
+- If connection points are spatially distant, a bridging segment is created
+- If the child's selected node is mid-path, the path is split to form a T-junction
+- Loop-forming connections are not allowed
+
+See also this [walkthrough](/plugins/snt/walkthroughs#mergingjoining-paths).
 
 <img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v4.2)" width="300" />
 
@@ -709,13 +740,35 @@ Combines (connects) two or more _disconnected_ paths into one (undoable operatio
 
 Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/auto-tracing) belonging to the same neurite.
 
-#### Merge Primary Path(s) into Shared Root
+{% capture hotip%}
+Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations.
+{% endcapture %}
+{% include notice icon="info" content=hotip %}
 
-Takes two or more primary paths and merges them into a common root node placed at the centroid defined by starting nodes of the primary paths to be merged. This is useful, e.g., when all the paths around a soma have been traced without passing through it. Note that this will alter parent-child relationships between paths.
+#### Create Shared Root (Soma)...
+
+Connects two or more primary paths to a new single-node root path. A dialog prompts for the location of the shared root:
+
+- **Averaged origin of selected paths**: Places the root at the centroid of the starting nodes of the selected paths
+
+- **Centroid of soma ROI**: Places the root at the centroid of the active ROI. Soma-delineating ROIs can be created by [Auto-trace › Detect Soma...](/plugins/snt/auto-tracing#soma-detection)
+
+- **Auto-orient paths toward root**: When enabled (default), automatically reverses paths whose end node is closer to the root than their start node. This ensures all paths point away from the shared root, which is useful when paths have inconsistent orientations. Child branch points are updated accordingly
+
+This is useful, e.g., when paths around a soma have been traced without passing through it. Note that this operation alters parent-child relationships and cannot be undone.
+
+{% capture hotip%}
+Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations.
+{% endcapture %}
+{% include notice icon="info" content=hotip %}
 
 #### Reverse...
 
-Reverses the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by [full-automated tracing](/plugins/snt/#auto-tracing).
+Reverses (flips) the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by full-automated tracing. Options:
+
+- **Reverse orientation only**: Flips node order without updating child connections. Use with caution as branch point indices may become invalid
+- **Reverse and update child branch point(s)**: Flips node order and recalculates all child branch point indices to maintain correct connections
+- **Orient tree toward root**: Only reverses paths whose end node is closer to the root than their start node, ensuring all paths in the tree point away from the root. This is useful for batch-correcting inconsistent orientations without affecting already-correct paths. Child branch points are updated automatically
 
 #### Specify Constant Radius...
 
@@ -731,7 +784,17 @@ Simplifies paths by reducing their node density. Given an inputted maximum permi
 
 #### Rebuild...
 
-Resets all Path IDs and recompute connectivity for all paths. Useful to reset ill-relationships created from mis-editing paths.
+Analyzes and rebuilds path relationships to fix structural issues. The command first scans all paths for problems, then offers to rebuild if issues are found. Detected issues include:
+
+- Orphaned paths: Non-primary paths without a parent connection
+- Inconsistent tree IDs: Child paths with different tree IDs than their parent
+- Incorrect path orders: Paths with order values that don't match their hierarchy depth
+- Disconnected children: Paths not properly registered in their parent's children list
+- Misoriented paths (warning): Paths that may be pointing away from their tree root
+
+Rebuilding will reset all tree IDs, recalculate path orders, and reestablish parent-child connections. This is useful for repairing relationships broken by manual edits or imports.
+
+{% include notice icon="info" content='Misoriented paths are reported as warnings but not auto-corrected. Use [Reverse...](#reverse) with the "Orient tree toward root" option to fix orientation issues.' %}
 
 ### Tag ›
 
