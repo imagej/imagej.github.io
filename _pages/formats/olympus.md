@@ -5,7 +5,7 @@ section: Learn:ImageJ Basics:File Formats
 categories: [Import-Export]
 nav-links: true
 initial-release-date: "Dec. 9, 2015: First version Ver.1.1.1"
-release-date: "Oct. 29, 2025: Ver.2.6.1"
+release-date: "Feb. 6, 2026: Ver.2.6.3"
 team-maintainer: 'EVIDENT CORPORATION (GLOB-SM-imagejplugin at evidentscientific.com)'
 ---
 
@@ -14,7 +14,7 @@ team-maintainer: 'EVIDENT CORPORATION (GLOB-SM-imagejplugin at evidentscientific
 This plugin can load EVIDENT vsi/oir/omp2info file formats and show some meta data.
 
 ## New release 
-  Ver.2.6.1 Fix file opening issue in Fiji environment.
+  Ver.2.6.3 Fixed an issue where opening T-series VSI files with inconsistent Z values would fail.
 
 ## Download
   Download the latest EvidentViewer ImageJ Plugin for [Windows](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software) and [Mac](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software).
