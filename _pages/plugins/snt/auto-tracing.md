@@ -14,7 +14,7 @@ tags: snt,tracing,neuroanatomy,big-data
 {% endcapture %}
 {% include notice content=version %}
 
-SNT Auto-tracing features can be accessed through the _Auto-trace_ menu in the main dialog.
+Fully automated tracing routines can be accessed through the _Auto-trace_ menu in the main dialog.
 
 # Grayscale Images
 
@@ -44,6 +44,10 @@ The algorithm requires a starting point (seed) to begin tracing. Several strateg
 - **Single tree rooted at ROI weighted centroid** Similar to the above, but roots the tree at the intensity-weighted centroid of nodes traced within the soma region, rather than the ROI's geometric center. More accurate when the ROI encompasses the entire soma but may not be precisely centered
 
 When working with 3D images, the _Active plane only_ option restricts the ROI to its specific Z-slice, preventing the algorithm from considering roots at other depths.
+
+<div align="center">
+  <img src="/media/plugins/snt/snt-gwdt-autotracing.png" title="Fully automated reconstructions: Grayscale images (OP1 demo dataset)" width="700" />
+</div>
 
 ## Thresholding
 
@@ -96,14 +100,14 @@ For technical implementation details and references, see the [SNT technical note
 
 The {% include bc path='Auto-trace|Detect Soma...' %} command provides automated detection of cell bodies in neuronal images. This is a standalone tool that can be used before autotracing to identify soma locations, or independently to annotate soma positions and sizes.
 
+{% include img align="center" name="Soma Detection" src="/media/plugins/snt/snt-soma-detection.png" caption="Automated soma detection: ROI countour (Cultured hippocamapl neurons: _Neuronal receptors_/_Synaptic labeling_ demo datasets)" %}
+
 ## Detection Strategy
 
 The algorithm uses a combined EDT-intensity approach to identify somas:
 
-1. **Euclidean Distance Transform (EDT)** identifies the thickest structures in the image. Since somas are typically the thickest part of neurons, they have the highest EDT values
-
-2. **Intensity scoring** weights the EDT by pixel intensity to favor bright structures
-
+1. Euclidean Distance Transform (EDT) identifies the thickest structures in the image. Since somas are typically the thickest part of neurons, they have the highest EDT values
+2. Intensity scoring weights the EDT by pixel intensity to favor bright structures
 3. The product of EDT × intensity identifies regions that are both thick and bright, typical characteristics of well-labeled cell bodies
 
 This dual approach is more robust than using intensity alone because it effectively filters out hot pixels and imaging artifacts, which are bright but thin (low EDT values).
@@ -149,7 +153,7 @@ Full automated tracing of _segmented_ (thresholded) images requires two types of
 2. **Intensity Image (_Optional_)** The original (un-processed) image used to resolve any possible loops in the segmented image using brightness criteria. Required for intensity-based loop resolution strategies (see below).
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-fully-automated-reconstructions.png" title="Fully automated reconstructions (ddaC demo dataset)" width="850" />
+  <img src="/media/plugins/snt/snt-binary-autotracing.png" title="Fully automated reconstructions: Thresholded images (ddaC demo dataset)" width="850" />
 </div>
 
 ## Soma/Root Detection

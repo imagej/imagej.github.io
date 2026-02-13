@@ -28,9 +28,10 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from raw grayscale imagery (no thresholding required) as well as segmented images
+/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from both [grayscale images](./auto-tracing#grayscale-images) (no thresholding required) and [segmented images](./auto-tracing#segmented-images)
 /media/plugins/snt/snt-bvv.png | [Big-data (out-of-core) support](/plugins/snt/big-data): Automatic switch to disk-backed processing for TB-scale datasets that don’t fit in RAM (experimental)
 /media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
+/media/plugins/snt/snt-soma-detection.png | Automated [soma detection](/plugins/snt/auto-tracing#soma-detection) (no thresholding required)
 /media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#snt-scripts) co-exist with graphical user interface operations
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
 /media/plugins/snt/snt-notebook.png | Scripting in native Python using [PySNT](https://pysnt.readthedocs.io/en/latest/)
