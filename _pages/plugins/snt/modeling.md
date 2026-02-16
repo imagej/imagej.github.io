@@ -11,6 +11,13 @@ doi:
 - 10.3389/neuro.10.025.2009
 ---
 
+{% capture version%}
+**This page was last revised for [version 4.2.0](https://github.com/morphonets/SNT/releases)**.<br>
+Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/modeling.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
+{% endcapture %}
+{% include notice content=version %}
+
+
 Modeling in SNT is performed through [Cortex3D (Cx3D)](https://github.com/morphonets/cx3d) and [sciview](/plugins/sciview). Cx3D was developed in 2009 as a computational modeling tool for simulating neurodevelopmental processes and is well known for generative models of cortical circuits. The [Morphonets](http://morphonets.org) distribution of Cx3D was modified by {% include person id='kephale' %} to be compatible with SNT and the ImageJ ecosystem. This includes using [sciview](/plugins/sciview) for 3D visualization, and support for image-based modeling.
 
 Currently, an [IDE](/develop/ides) is the most effective way to implement custom models, using the [minimal-cx3d-example-project](https://github.com/morphonets/minimal-cx3d-example-project) as a template. For more information refer to the [GitHub project page](https://github.com/morphonets/cx3d).

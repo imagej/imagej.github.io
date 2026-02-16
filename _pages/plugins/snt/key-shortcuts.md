@@ -11,6 +11,10 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
+{% capture version%}
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+{% endcapture %}
+{% include notice content=version %}
 
 {% capture text%}
 {% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}

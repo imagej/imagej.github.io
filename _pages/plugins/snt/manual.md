@@ -145,8 +145,8 @@ Allows morphometric comparisons of two single reconstruction files or multiple g
 #### Convex Hull
 See [Analysis › Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
 
-#### Persistence Homology
-See [Analysis › Persistence Homology Analysis](/plugins/snt/analysis#persistence-homology).
+#### Persistent Homology
+See [Analysis › Persistent Homology Analysis](/plugins/snt/analysis#persistent-homology).
 
 #### Root Angle Analysis
 See [Analysis › Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis).

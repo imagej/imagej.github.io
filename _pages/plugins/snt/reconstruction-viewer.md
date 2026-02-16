@@ -259,8 +259,8 @@ Computes and displays the convex hull of a reconstruction (i.e., the smallest co
 #### Create Dendrogram
 Generates a Dendrogram plot of single cells. See [Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis).
 
-#### Persistence Homology...
-See [Analysis › Persistence Homology](/plugins/snt/analysis#graph-based-analysis).
+#### Persistent Homology...
+See [Analysis › Persistent Homology](/plugins/snt/analysis#persistent-homology).
 
 #### Sholl Analysis...
 Runs [Sholl Analysis](/plugins/snt/sholl#analysis-of-traced-cells) on single cells.

@@ -12,6 +12,11 @@ icon: /media/icons/snt.png
 doi: 10.1038/s41592-021-01105-7
 ---
 
+{% capture version%}
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+{% endcapture %}
+{% include notice content=version %}
+
 {% capture strahler%}
 There are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):
 <br/>

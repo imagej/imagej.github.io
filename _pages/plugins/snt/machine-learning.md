@@ -11,6 +11,11 @@ doi:
 - 10.1093/bioinformatics/btx180
 ---
 
+{% capture version%}
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+{% endcapture %}
+{% include notice content=version %}
+
 SNT interacts with [Labkit](../labkit) and [Trainable Weka Segmentation (TWS)](../tws), both leveraging  machine learning algorithms for semantic segmentation of images (namely, random forest classifiers). The bridge between these tools makes it possible to:
 
 - Import a pre-trained model into SNT and directly load the probability maps of the semantic segmentation as secondary tracing layer

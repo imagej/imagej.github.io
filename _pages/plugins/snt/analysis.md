@@ -8,6 +8,10 @@ forum-tag: snt
 update-site: Neuroanatomy
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
+{% capture version%}
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+{% endcapture %}
+{% include notice content=version %}
 
 # Measurements
 {% include img align="right" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features options for searching and selecting metrics, render measured cells, and summarize existing measurements. An offline guide is also accessible through the <i>Gear</i> menu." %}
@@ -212,11 +216,12 @@ Ultimately, fine-grained programmatic control over SNT's Graph objects is achiev
 - *Python notebooks*: For [pyimagej](/scripting/pyimagej) examples, have a look at the *Hemisphere Analysis* [notebook](/plugins/snt/scripting#python-notebooks)
 
 
-# Persistence Homology
+# Persistent Homology
+<span id="persistence-homology"></span>
 <img align="right" width="300px" src="/media/plugins/snt/snt-persistence-landscape.png" title="Visualization of a persistence landscape for ML neuron #AA0039" />
-<img align="right" width="350px" src="/media/plugins/snt/snt-persistence-analyzer.png" title="Persistence Homology prompt" />
+<img align="right" width="350px" src="/media/plugins/snt/snt-persistence-analyzer.png" title="Persistent Homology prompt" />
 
-Persistent homology computes topological features of neuronal reconstructions at different spatial resolutions, which in turn can be used to obtain topological signatures of their branching patterns. The Topological Morphology Descriptor (TMD) is the first published algorithm to use persistence Homology to describe neuronal arbors. It is described in:
+Persistent homology computes topological features of neuronal reconstructions at different spatial resolutions, which in turn can be used to obtain topological signatures of their branching patterns. The Topological Morphology Descriptor (TMD) is the first published algorithm to use persistent Homology to describe neuronal arbors. It is described in:
 
 Kanari, L., Dłotko, P., Scolamiero, M., Levi, R., Shillcock, J., Hess, K., & Markram, H. (2017). A Topological Representation of Branching Neuronal Morphologies. Neuroinformatics, 16(1), 3–13. [doi:10.1007/s12021-017-9341-1](https://doi.org/10.1007/s12021-017-9341-1).
 
@@ -229,7 +234,8 @@ SNT implements TMD and TMD variants by supporting several descriptor functions:
 
 In addition, SNT also implements descriptors based on persistence landscapes, as described in Bubenik, P. (2012). Statistical topological data analysis using persistence landscapes. ArXiv. [doi:10.48550/ARXIV.1207.6437](https://doi.org/10.48550/ARXIV.1207.6437).
 
-Currently, _basic_ persistence homology descriptors can be computed using UI commands {% include bc path='Analysis|Persistence Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistence Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting).  See e.g.,  the *Persistence Landscape* [notebook](https://github.com/morphonets/SNT/blob/main/notebooks/).
+Currently, _basic_ persistent homology descriptors can be computed using UI commands {% include bc path='Analysis|Persistent Homology...'%} (main interface), or {% include bc path='Analyze & Measure|Persistent Homology...'%} in [Rec. viewer](/plugins/snt/reconstruction-viewer). Complete extraction of descriptors can be obtained with [scripting](/plugins/snt/scripting). 
+See e.g.,  the *Persistence Landscape* [notebook tutorial](https://pysnt.readthedocs.io/en/latest/notebooks/06_persistence_landscape.html).
 
 # Delineation Analysis
 

@@ -57,15 +57,21 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 %}
 
 ## Installation
+SNT requires **the latest Fiji version** and is distributed through [Fiji](/software/fiji)'s [Neuroanatomy update site](/update-sites/neuroanatomy).
 
-SNT is currently distributed through [Fiji](/software/fiji)'s [Neuroanatomy update site](/update-sites/neuroanatomy). The first time you start SNT from Fiji's menu structure ({% include bc path='Plugins|Neuroanatomy|SNT'%}), you should be prompted for automatic subscription and download of required dependencies. If not:
+### Recommended: Fresh Fiji-Latest Install
+1. Download **Fiji-Latest** (bundled with Java 21) from the [Fiji downloads page](/software/fiji/downloads)
+2. Run the Fiji [Updater](/plugins/updater) ({% include bc path='Help|Update...'%}, the penultimate entry in the {% include bc path='Help|'%} menu)
+3. Click *Manage update sites*
+4. Search for *Neuroanatomy* (or *SNT*) and activate the *Neuroanatomy* checkbox
+5. Click *Apply changes* and restart Fiji
+6. **Optional**: For [sciview](/plugins/sciview) and [Cx3D](/plugins/snt/modeling) functionality, you need to install [sciview](/plugins/sciview). See the [official sciview documentation](https://docs.scenery.graphics/sciview) for details.
 
-1. Run the Fiji [Updater](/plugins/updater) ({% include bc path='Help|Update...'%}, the penultimate entry in the {% include bc path='Help|'%} menu)
-2. Click *Manage update sites*
-3. Search for *Neuroanatomy* (or *SNT*) and activate the *Neuroanatomy* checkbox
-4. Click *Apply changes* and restart Fiji
+{% capture java8-notice %}
+**Upgrading from an older Fiji (Java 8)?** SNT no longer supports Java 8. If you are running a legacy Fiji installation, you will see a startup dialog guiding you through the transition. Your existing data and traces are not affected. See the [release notes](https://github.com/morphonets/SNT/releases) for details on what's new.
+{% endcapture %}
+{% include notice icon="info" content=java8-notice %}
 
-**Optional**: For [sciview](/plugins/sciview) and [Cx3D](/plugins/snt/modeling) functionality, you need to install [sciview](/plugins/sciview). See the [official sciview documentation](https://docs.scenery.graphics/sciview) for details.
 
 ## Documentation
 

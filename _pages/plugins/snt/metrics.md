@@ -9,6 +9,10 @@ update-site: Neuroanatomy
 extensions: ["mathjax"]
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
+{% capture version%}
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+{% endcapture %}
+{% include notice content=version %}
 
 ## Metrics
 {% capture text%}
@@ -314,10 +318,10 @@ _Estimated_ surface area[^1] of a path computed from treating each internode seg
 _Estimated_ volume[^1] of a path computed from treating each internode segment as a conical frustum and summing the volume of all frusta
 
 ##### Persistence diagram
-See [persistence homology](/plugins/snt/analysis#persistence-homology)
+See [persistent homology](/plugins/snt/analysis#persistent-homology)
 
 ##### Persistence landscapes
-See [persistence homology](/plugins/snt/analysis#persistence-homology)
+See [persistent homology](/plugins/snt/analysis#persistent-homology)
 
 ##### Primary branches
 Primary branches originate at a tree's root, extending to the closest branch point or end-point, i.e., [inner branches](#inner-branches) starting at the root. Also known as root-associated branches. Note that a primary branch can also be terminal
@@ -417,7 +421,7 @@ The sum of branch lengths of branches ending at terminal endpoints (tips)
 <br>See also: [Inner branches length](#inner-branches-length), [Primary branches length](#primary-branches-length)
 
 ##### TMD
-Topological Morphology Descriptor. See [persistence homology analysis](/plugins/snt/analysis#persistence-homology)
+Topological Morphology Descriptor. See [persistent homology analysis](/plugins/snt/analysis#persistent-homology)
 
 <span id="v"></span>
 ##### Volume

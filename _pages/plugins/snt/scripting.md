@@ -8,6 +8,11 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
+{% capture version%}
+**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+{% endcapture %}
+{% include notice content=version %}
+
 {% capture api%}
 The most up-to-date SNT API can be found at [https://javadoc.scijava.org/SNT](https://javadoc.scijava.org/SNT).
 {% endcapture %}
