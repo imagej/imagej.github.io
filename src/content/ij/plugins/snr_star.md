@@ -1,6 +1,7 @@
 ---
 title: SNRstar – Covariance-based SNR measurement
 categories: [Analysis]
+doi: 10.6009/jjrt.2022-1154
 ---
 
 ## SNRstar – Covariance-based SNR measurement
@@ -34,5 +35,4 @@ It provides an unbiased and statistically optimal estimation of SNR.
 
 ### Reference
 
-- Tabuchi M, Kiguchi T, Ikenaga H. SNR estimation for image quality evaluation in X-ray CT. Jpn J Radiol Technol. 2022;78:464–72. https://doi.org/10.6009/jjrt.2022-1154
-
+{% include citation %}
