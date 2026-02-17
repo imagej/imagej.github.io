@@ -1,14 +1,14 @@
 ---
-title: SNRstar – Covariance-based SNR measurement
+title: SNR_star – Covariance-based SNR measurement
 categories: [Analysis]
 doi: 10.6009/jjrt.2022-1154
 ---
 
-## SNRstar – Covariance-based SNR measurement
+## SNR_star – Covariance-based SNR measurement
 
 Author: Motohiro TABUCHI
 
-SNRstar is an ImageJ macro that estimates signal variance and noise variance using covariance between two repeated images acquired under identical imaging conditions.  
+SNR_star is an ImageJ macro that estimates signal variance and noise variance using covariance between two repeated images acquired under identical imaging conditions.  
 It provides an unbiased and statistically optimal estimation of SNR.
 
 ### Features
