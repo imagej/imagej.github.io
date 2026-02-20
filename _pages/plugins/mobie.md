@@ -7,6 +7,7 @@ update-site: "MoBIE"
 team-founders: ['@tischi', Kimberly Meechan, Constantin Pape]
 team-maintainer: '@tischi'
 source-url: https://github.com/mobie-org/mobie-viewer-fiji
+doi: 10.1038/s41592-023-01776-4
 ---
 
 <figure><img src="/media/plugins/mobie-white.jpg" title="Mobie-white.jpg" width="200" alt="Mobie-white.jpg" /><figcaption aria-hidden="true"></figcaption></figure>

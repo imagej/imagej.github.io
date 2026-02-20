@@ -6,6 +6,7 @@ extensions: ["mathjax"]
 nav-links: true
 nav-title: Overview
 artifact: net.preibisch:BigStitcher
+doi: 10.1038/s41592-019-0501-0
 ---
 
 ## Introduction & Overview

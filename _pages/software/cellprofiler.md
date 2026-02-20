@@ -19,6 +19,7 @@ doi:
 - 10.1186/gb-2006-7-10-r100
 - 10.1093/bioinformatics/btr095
 - 10.1371/journal.pbio.2005970
+- 10.1186/s12859-021-04344-9
 ---
 
 {% capture source%}
