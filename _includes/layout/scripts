@@ -12,6 +12,7 @@
 {% endfor %}
 <!-- Site code -->
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/theme.js"></script>
 <script src="/assets/js/dock.js"></script>
 <script src="/assets/js/code.js"></script>
 <!-- Anchors -->

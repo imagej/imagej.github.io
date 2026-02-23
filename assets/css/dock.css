@@ -9,7 +9,7 @@
   margin-left: 5px;
   margin-top: 5px;
   border-right: 10px solid transparent;
-  border-top: 10px solid black;
+  border-top: 10px solid var(--color-drag-handle);
   cursor: move;
 }
 
@@ -42,7 +42,7 @@
 .drag-active {
   outline: 3px dotted #666;
   box-sizing: border-box;
-  background: lightgray;
+  background: var(--color-drag-active);
 }
 
 .drag-over {

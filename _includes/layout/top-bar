@@ -3,6 +3,10 @@
   <div id="search-panel">
     <div id="search-box"></div>
   </div>
+  <button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+    <i class="fas fa-moon theme-icon-dark"></i>
+    <i class="fas fa-sun theme-icon-light"></i>
+  </button>
 </section>
 
 {%- comment -%}

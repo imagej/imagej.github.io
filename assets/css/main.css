@@ -74,7 +74,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: var(--color-bg);
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -90,7 +90,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 body, input, select, textarea {
-  color: #333;
+  color: var(--color-text);
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 100%;
   /* font-weight: 300; */
@@ -103,17 +103,17 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border-bottom: none;
-  color: #0014ca;
+  color: var(--color-link);
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 1px solid #6eb3bd;
-  color: #4d959f;
+  border-bottom: 1px solid var(--color-link-hover-border);
+  color: var(--color-link-hover);
 }
 
 strong, b {
-  color: black;
+  color: var(--color-strong);
   /* font-weight: 550; */ font-weight: bold;
 }
 
@@ -126,7 +126,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #232323;
+  color: var(--color-heading);
   line-height: 1.35em;
   margin: 0.25em 0 0 0;
 }
@@ -157,7 +157,7 @@ sup {
 
 hr {
   border: 0;
-  border-bottom: solid 1px rgba(144, 144, 144, 0.5);
+  border-bottom: solid 1px var(--color-border);
   margin: 0 0 1em 0;
 }
 
@@ -166,16 +166,16 @@ hr.major {
 }
 
 blockquote {
-  border-left: solid 4px rgba(144, 144, 144, 0.5);
+  border-left: solid 4px var(--color-border);
   font-style: italic;
   margin: 0 0 1em 0;
   padding: 0.5em 0 0.5em 2em;
 }
 
 code {
-  background: rgba(144, 144, 144, 0.075);
+  background: var(--color-code-bg);
   border-radius: 4px;
-  border: solid 1px rgba(144, 144, 144, 0.5);
+  border: solid 1px var(--color-border);
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
@@ -742,7 +742,7 @@ section.special, article.special {
 }
 
 header p {
-  color: #000000;
+  color: var(--color-text);
   margin: 0 0 1.5em 0;
   position: relative;
 }
@@ -786,7 +786,7 @@ header.special {
 
 header.special h1 {
   display: inline-block;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-title-border);
   padding-bottom: 0 0.5em 0.3em 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -818,7 +818,7 @@ header.special h1 {
 
 .box {
   border-radius: 4px;
-  border: solid 1px rgba(144, 144, 144, 0.5);
+  border: solid 1px var(--color-border);
   margin-bottom: 2em;
   padding: 1.5em;
 }
@@ -952,7 +952,7 @@ ul.alt {
 }
 
 ul.alt li {
-  border-top: solid 1px rgba(144, 144, 144, 0.5);
+  border-top: solid 1px var(--color-border);
   padding: 0.5em 0;
 }
 
@@ -971,11 +971,11 @@ ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   margin: 0 0 0 0;
-  background-color: #eee;
+  background-color: var(--color-breadcrumb-bg);
 }
 
 ul.breadcrumb a {
-  color: #585858;
+  color: var(--color-breadcrumb-text);
   border-bottom: none;
   /* font-weight: 500; */
   text-decoration: underline;
@@ -988,7 +988,7 @@ ul.breadcrumb li {
 
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: #585858;
+  color: var(--color-breadcrumb-text);
   content: "/\00a0";
 }
 
@@ -1076,14 +1076,14 @@ ul.icons a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border-bottom: dotted 1px #666;
+  border-bottom: dotted 1px var(--color-menu-link);
   color: inherit;
   text-decoration: none;
 }
 
 ul.icons a:hover {
   border-bottom-color: transparent !important;
-  color: #4d959f;
+  color: var(--color-link-hover);
 }
 
 ul.icons li {
@@ -1118,7 +1118,7 @@ ul.major-icons li .icon {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   border-radius: 4px;
-  border: solid 1px rgba(144, 144, 144, 0.5);
+  border: solid 1px var(--color-border);
   display: inline-block;
   height: 8em;
   line-height: 8em;
@@ -1144,13 +1144,13 @@ ul.major-icons li .icon:before {
 }
 
 .browse a {
-  color: #585858;
+  color: var(--color-menu-link);
   border-bottom: none;
   /* font-weight: 550; */
 }
 
 .browse a:hover {
-  color:#6eb3bd;
+  color: var(--color-link-hover);
 }
 
 /* Table */
@@ -1165,7 +1165,7 @@ table tbody tr {
 }
 
 table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(144, 144, 144, 0.075);
+  background-color: var(--color-table-stripe);
 }
 
 table td {
@@ -1174,7 +1174,7 @@ table td {
 }
 
 table th {
-  color: #555;
+  color: var(--color-table-header);
   font-size: 0.9em;
   /* font-weight: 400; */
   padding: 0 0.75em 0.75em 0.75em;
@@ -1183,11 +1183,11 @@ table th {
 }
 
 table thead {
-  border-bottom: solid 1px rgba(144, 144, 144, 0.5);
+  border-bottom: solid 1px var(--color-border);
 }
 
 table tfoot {
-  border-top: solid 1px rgba(144, 144, 144, 0.5);
+  border-top: solid 1px var(--color-border);
 }
 
 table.alt {
@@ -1195,7 +1195,7 @@ table.alt {
 }
 
 table.alt tbody tr td {
-  border: solid 1px rgba(144, 144, 144, 0.5);
+  border: solid 1px var(--color-border);
   border-left-width: 0;
   border-top-width: 0;
 }
@@ -1227,7 +1227,7 @@ table.bottom td {
 }
 
 table.striped-columns td:nth-child(even), table.striped-columns th:nth-child(even) {
-  background-color: rgba(144, 144, 144, 0.075);
+  background-color: var(--color-table-stripe);
 }
 
 table.plain tr {
@@ -1238,14 +1238,14 @@ table.plain tr {
 
 .page-content h1, .page-content h2, .page-content h3,
 .page-content h4, .page-content h5, .page-content h6 {
-  color: #232323;
+  color: var(--color-heading);
   margin: 1em 0 0.2em 0;
   font-weight: bold;
 }
 
-.page-content h1 { border-bottom: solid 1px rgba(144, 144, 144, 0.5); }
-.page-content h2 { border-bottom: solid 1px rgba(144, 144, 144, 0.3); }
-.page-content h3 { border-bottom: solid 1px rgba(144, 144, 144, 0.1); }
+.page-content h1 { border-bottom: solid 1px var(--color-border); }
+.page-content h2 { border-bottom: solid 1px var(--color-border-light); }
+.page-content h3 { border-bottom: solid 1px var(--color-border-faint); }
 
 /* Button */
 
@@ -1265,8 +1265,8 @@ button,
   background-color: transparent;
   border-radius: 4px;
   border: 0;
-  box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
-  color: #555 !important;
+  box-shadow: inset 0 0 0 1px var(--color-button-shadow);
+  color: var(--color-button-text) !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.9em;
@@ -1385,7 +1385,7 @@ button:disabled,
 }
 
 .main.style1 {
-  background: #fff;
+  background: var(--color-main-bg);
   min-height: 80vh; /* resolve the footer issue from sitting in the middle of the page */
 }
 
@@ -1599,8 +1599,8 @@ ul.major-icons li .icon {
 /* ======= BOXES ======= */
 
 .shadowed-box {
-  box-shadow: 4px 4px 4px lightgray;
-  background: #eee;
+  box-shadow: 4px 4px 4px var(--color-shadow);
+  background: var(--color-shadowed-box-bg);
   padding: 0.5em;
   margin-bottom: 0.8em;
 }
@@ -1612,8 +1612,8 @@ ul.major-icons li .icon {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid var(--color-tab-border);
+  background-color: var(--color-tab-bg);
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -1628,19 +1628,19 @@ ul.major-icons li .icon {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: var(--color-tab-hover);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: var(--color-tab-active);
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-tab-border);
   border-top: none;
 }
 

@@ -1,0 +1,259 @@
+/*
+ * Theme custom properties (CSS variables) for light/dark mode.
+ *
+ * An inline script in <head> sets data-theme on <html> before any CSS
+ * renders, preventing a flash of the wrong theme. The toggle button in
+ * the top bar lets users override their OS preference; choice is saved
+ * to localStorage.
+ */
+
+/* ========================= LIGHT THEME (DEFAULT) ========================= */
+
+:root {
+  color-scheme: light;
+
+  /* Page base */
+  --color-bg:           #fff;
+  --color-text:         #333;
+  --color-heading:      #232323;
+  --color-strong:       black;
+
+  /* Links */
+  --color-link:              #0014ca;
+  --color-link-hover:        #4d959f;
+  --color-link-hover-border: #6eb3bd;
+
+  /* Borders */
+  --color-border:       rgba(144, 144, 144, 0.5);
+  --color-border-light: rgba(144, 144, 144, 0.3);
+  --color-border-faint: rgba(144, 144, 144, 0.1);
+
+  /* Surfaces */
+  --color-surface:    #eee;
+  --color-surface-2:  #f9f9f9;
+  --color-code-bg:    rgba(144, 144, 144, 0.075);
+  --color-shadow:     lightgray;
+
+  /* Top bar */
+  --color-topbar-bg: #3f454b;
+
+  /* Menu / sidebar */
+  --color-menu-link:           #444;
+  --color-menu-current-page:   black;
+  --color-menu-heading-border: darkgray;
+  --color-search-result:       black;
+  --color-search-hover-bg:     #dd7;
+
+  /* Main content */
+  --color-main-bg: #fff;
+
+  /* Tables */
+  --color-table-stripe: rgba(144, 144, 144, 0.075);
+  --color-table-header: #555;
+
+  /* Buttons */
+  --color-button-text:   #555;
+  --color-button-shadow: rgba(144, 144, 144, 0.5);
+
+  /* Breadcrumb */
+  --color-breadcrumb-bg:   #eee;
+  --color-breadcrumb-text: #585858;
+
+  /* Tabs */
+  --color-tab-bg:     #f1f1f1;
+  --color-tab-border: #ccc;
+  --color-tab-hover:  #ddd;
+  --color-tab-active: #ccc;
+
+  /* Components */
+  --color-figure-bg:           #f9f9f9;
+  --color-figure-border:       silver;
+  --color-sidebox-bg:          lightyellow;
+  --color-shadowed-box-bg:     #eee;
+  --color-info-notice-bg:      #ebf2f8;
+  --color-info-notice-border:  #36c;
+  --color-key-bg:              #f9f9f9;
+  --color-key-border:          #aaa;
+  --color-key-text:            black;
+  --color-link-banner-bg:      khaki;
+  --color-thumbnail-bg:        #f1f1f3;
+  --color-thumbnail-hover-bg:  #e1e1e3;
+  --color-app-button-bg:       #e4edf6;
+  --color-app-button-border:   #7a8a99;
+  --color-os-info-bg:          #e9f5f8;
+
+  /* Misc */
+  --color-title-border:  black;
+  --color-drag-handle:   black;
+  --color-drag-active:   lightgray;
+}
+
+/* ============================ DARK THEME ============================ */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Page base */
+  --color-bg:           #1a1a1a;
+  --color-text:         #d8d8d8;
+  --color-heading:      #e0e0e0;
+  --color-strong:       #f0f0f0;
+
+  /* Links */
+  --color-link:              #7aabff;
+  --color-link-hover:        #7dd0db;
+  --color-link-hover-border: #7dd0db;
+
+  /* Borders */
+  --color-border:       rgba(180, 180, 180, 0.3);
+  --color-border-light: rgba(180, 180, 180, 0.2);
+  --color-border-faint: rgba(180, 180, 180, 0.08);
+
+  /* Surfaces */
+  --color-surface:    #2d2d2d;
+  --color-surface-2:  #252525;
+  --color-code-bg:    rgba(255, 255, 255, 0.08);
+  --color-shadow:     #111;
+
+  /* Top bar */
+  --color-topbar-bg: #1e2428;
+
+  /* Menu / sidebar */
+  --color-menu-link:           #bbb;
+  --color-menu-current-page:   #f0f0f0;
+  --color-menu-heading-border: #555;
+  --color-search-result:       #ddd;
+  --color-search-hover-bg:     #554;
+
+  /* Main content */
+  --color-main-bg: #1a1a1a;
+
+  /* Tables */
+  --color-table-stripe: rgba(255, 255, 255, 0.05);
+  --color-table-header: #aaa;
+
+  /* Buttons */
+  --color-button-text:   #bbb;
+  --color-button-shadow: rgba(180, 180, 180, 0.3);
+
+  /* Breadcrumb */
+  --color-breadcrumb-bg:   #2d2d2d;
+  --color-breadcrumb-text: #aaa;
+
+  /* Tabs */
+  --color-tab-bg:     #2d2d2d;
+  --color-tab-border: #555;
+  --color-tab-hover:  #3d3d3d;
+  --color-tab-active: #444;
+
+  /* Components */
+  --color-figure-bg:           #252525;
+  --color-figure-border:       #555;
+  --color-sidebox-bg:          #2d2b1a;
+  --color-shadowed-box-bg:     #2d2d2d;
+  --color-info-notice-bg:      #1a2636;
+  --color-info-notice-border:  #5588ff;
+  --color-key-bg:              #2d2d2d;
+  --color-key-border:          #666;
+  --color-key-text:            #e0e0e0;
+  --color-link-banner-bg:      #3d3a10;
+  --color-thumbnail-bg:        #252528;
+  --color-thumbnail-hover-bg:  #303035;
+  --color-app-button-bg:       #1e2d3d;
+  --color-app-button-border:   #4a5a69;
+  --color-os-info-bg:          #1a2d33;
+
+  /* Misc */
+  --color-title-border:  #e0e0e0;
+  --color-drag-handle:   #aaa;
+  --color-drag-active:   #3d3d3d;
+}
+
+/* =================== DARK MODE SYNTAX HIGHLIGHTING =================== */
+
+/* Override the github-light theme imported in main.css */
+[data-theme="dark"] pre code,
+[data-theme="dark"] .highlight pre { background-color: #252525; color: #e0e0e0; }
+[data-theme="dark"] .highlight .hll { background-color: #444; }
+
+/* Tokens */
+[data-theme="dark"] .highlight .c,
+[data-theme="dark"] .highlight .cm,
+[data-theme="dark"] .highlight .c1,
+[data-theme="dark"] .highlight .cs,
+[data-theme="dark"] .highlight .cp { color: #7e9e7e; font-style: italic; }
+[data-theme="dark"] .highlight .k,
+[data-theme="dark"] .highlight .kc,
+[data-theme="dark"] .highlight .kd,
+[data-theme="dark"] .highlight .kn,
+[data-theme="dark"] .highlight .kp,
+[data-theme="dark"] .highlight .kr { color: #cc99cd; font-weight: normal; }
+[data-theme="dark"] .highlight .kt { color: #67cdcc; font-weight: normal; }
+[data-theme="dark"] .highlight .s,
+[data-theme="dark"] .highlight .sb,
+[data-theme="dark"] .highlight .sc,
+[data-theme="dark"] .highlight .sd,
+[data-theme="dark"] .highlight .s2,
+[data-theme="dark"] .highlight .se,
+[data-theme="dark"] .highlight .sh,
+[data-theme="dark"] .highlight .si,
+[data-theme="dark"] .highlight .sx,
+[data-theme="dark"] .highlight .sr,
+[data-theme="dark"] .highlight .s1,
+[data-theme="dark"] .highlight .ss { color: #7ec699; }
+[data-theme="dark"] .highlight .m,
+[data-theme="dark"] .highlight .mf,
+[data-theme="dark"] .highlight .mh,
+[data-theme="dark"] .highlight .mi,
+[data-theme="dark"] .highlight .mo { color: #f08d49; }
+[data-theme="dark"] .highlight .na { color: #9dafd8; }
+[data-theme="dark"] .highlight .nb { color: #9dc5d0; }
+[data-theme="dark"] .highlight .nc { color: #f8c555; font-weight: normal; }
+[data-theme="dark"] .highlight .nf { color: #f8c555; font-weight: normal; }
+[data-theme="dark"] .highlight .no { color: #9dc5d0; }
+[data-theme="dark"] .highlight .nt { color: #e07b54; }
+[data-theme="dark"] .highlight .nv { color: #9dafd8; }
+[data-theme="dark"] .highlight .o,
+[data-theme="dark"] .highlight .ow { color: #67cdcc; font-weight: normal; }
+[data-theme="dark"] .highlight .err { color: #ff6666; background-color: transparent; }
+[data-theme="dark"] .highlight .gd { color: #ff7070; background-color: transparent; }
+[data-theme="dark"] .highlight .gi { color: #7ec699; background-color: transparent; }
+[data-theme="dark"] .highlight .gh,
+[data-theme="dark"] .highlight .gu,
+[data-theme="dark"] .highlight .gp { color: #aaa; }
+[data-theme="dark"] .highlight .go { color: #888; }
+
+/* ====================== THEME TOGGLE BUTTON ====================== */
+
+#theme-toggle {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  color: #bbb;
+  font-size: 1.1em;
+  cursor: pointer;
+  vertical-align: top;
+  box-shadow: none !important;
+  letter-spacing: normal;
+  text-indent: 0;
+  font-variant: normal;
+  padding: 0;
+  line-height: 48px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#theme-toggle:hover {
+  color: #fff;
+  background: transparent;
+  border-bottom: none;
+}
+
+/* Moon icon shown in light mode; sun icon shown in dark mode */
+#theme-toggle .theme-icon-light { display: none; }
+#theme-toggle .theme-icon-dark  { display: inline-block; }
+[data-theme="dark"] #theme-toggle .theme-icon-light { display: inline-block; }
+[data-theme="dark"] #theme-toggle .theme-icon-dark  { display: none; }

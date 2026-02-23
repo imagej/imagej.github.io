@@ -20,8 +20,9 @@ $sidebarPadding: 10px;
 /* ------------------------------ SEARCH BAR ------------------------------ */
 
 #top-bar {
-  background-color: #3f454b;
+  background-color: var(--color-topbar-bg);
   overflow: hidden;
+  position: relative;
 }
 
 #site-logo {
@@ -31,7 +32,7 @@ $sidebarPadding: 10px;
 
 #search-panel {
   display: inline-block;
-  width: #{'calc(100% - #{$logoSize + 1})'};
+  width: #{'calc(100% - #{$logoSize * 2 + 2})'};
   height: $topBarHeight;
 }
 
@@ -49,8 +50,8 @@ $sidebarPadding: 10px;
   width: #{'calc(100% - #{$logoSize + $boxShadowSize + 3})'};
   top: $topBarHeight + $boxShadowSize;
   left: $logoSize;
-  background: #eee;
-  box-shadow: $boxShadowSize $boxShadowSize $boxShadowSize lightgray;
+  background: var(--color-surface);
+  box-shadow: $boxShadowSize $boxShadowSize $boxShadowSize var(--color-shadow);
   display: none;
   z-index: 1;
 }
@@ -76,11 +77,11 @@ $sidebarPadding: 10px;
 
 .search-result {
   max-height: 2em;
-  color: black;
+  color: var(--color-search-result);
 }
 
 .search-result:hover {
-  background: #dd7;
+  background: var(--color-search-hover-bg);
 }
 
 .hit-icon {
@@ -168,7 +169,7 @@ $sidebarPadding: 10px;
 
 #ham-toggle a {
   text-decoration: none;
-  color: #232323;
+  color: var(--color-heading);
 
   transition: color 0.3s ease;
 }
@@ -261,7 +262,7 @@ $sidebarPadding: 10px;
   padding: 80px 5px 5px 50px;
   box-shadow: 1px 1px 6px #444;
 
-  background: #eee;
+  background: var(--color-surface);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -305,8 +306,8 @@ $sidebarPadding: 10px;
 .sidebar > div {
   margin: 0 $sidebarMargin 10px $sidebarMargin;
   padding: 5px $sidebarPadding 0 $sidebarPadding;
-  box-shadow: $boxShadowSize $boxShadowSize $boxShadowSize lightgray;
-  background: #eee;
+  box-shadow: $boxShadowSize $boxShadowSize $boxShadowSize var(--color-shadow);
+  background: var(--color-surface);
 }
 
 #left-column {
@@ -330,7 +331,7 @@ $sidebarPadding: 10px;
 .menu h3 {
   text-align: center;
   font-weight: bold;
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1px solid var(--color-menu-heading-border);
   margin: 0 2em 0.5em 2em;
 }
 
@@ -348,7 +349,7 @@ $sidebarPadding: 10px;
 }
 
 .menu a {
-  color: #444;
+  color: var(--color-menu-link);
 }
 
 .menu ul li {
@@ -390,7 +391,7 @@ $sidebarPadding: 10px;
 
 .menu a.current-page {
   font-weight: bold;
-  color: black;
+  color: var(--color-menu-current-page);
   -moz-transition: none;
   -webkit-transition: none;
   -ms-transition: none;
@@ -443,7 +444,7 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
 #statbox h3 {
   font-weight: bold;
   text-align: center;
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1px solid var(--color-menu-heading-border);
   margin-bottom: 0.5em;
 }
 
