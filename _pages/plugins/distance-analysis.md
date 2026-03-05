@@ -11,6 +11,7 @@ This plugin allows :
 
 -   Calculating co-localization between objects in 3D
 -   Measuring 3D distances between nearest object, co-localized or not
+-   Create a graph comparing nearest distances between experimental and random object positions
 -   Getting some 3D measurements about each objects
 
 The plugin can be used with labelled images, but it also integrates tools for the segmentation of the objects.
@@ -141,7 +142,7 @@ To compute closest borders, use a 'b' after the number of closest objects: ... a
 
 ## Installation
 
-Download and copy the following jar in your plugins folder [Diana\_1.54.jar](https://drive.google.com/file/d/1hkmM6kHMnPvwya26ogQsNaLI2AMVq_zN)
+Download and copy the following jar in your plugins folder [Diana\_1.54.jar](https://github.com/JeffGilles/DiAna/releases/download/v1.54/DiAna_1.54.jar)
 
 You have also to manually download and copy into your plugins directory the [3D ImageJ Suite](https://mcib3d.frama.io/3d-suite-imagej/).
 
