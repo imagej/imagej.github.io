@@ -143,11 +143,11 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 
 Menu path {% include bc path="Plugins | BoneJ | Fraction | Area/Volume fraction" %}
 
-*Area/Volume fraction* calculates the fraction of bone in an image by it to the whole image. It counts all the foreground voxels, which it assumes represent bone, and compares them to the total number of voxels in the image. More formally defined, the plug-in calculates the fraction *BV/TV*, which is the volume of mineralised bone *BV* per unit volume of the sample *TV*. In case of a 2D image, it calculates the fraction *BA/TA*, which is the area of bone per unit area of the sample.
+*Area/Volume fraction* calculates the fraction of bone in an image by it to the whole image. It counts all the foreground voxels, which it assumes represent bone, and compares them to the total number of voxels in the image. More formally defined, the plug-in calculates the fraction *BV/TV*, which is the volume of mineralised bone *BV* per unit volume of the sample *TV*. In case of a 2D image, it calculates the fraction *BA/TA*, which is the area of bone per unit area of the sample. ROIs in the ROI Manager are respected (since 7.1.10) by converting each one to a 2D (_xy_) mask, which is applied to the _z_, _channel_ and/or _time_ positions if they are present for the ROI. If an ROI lacks position information for a dimension it is used on all positions of that dimension.
 
 #### Suitable images
 
-A 2D or 3D binary image
+A 2D or 3D binary image. Must have at least _xy_ dimensions and up to _xyzct_ dimensions, with ImageJ1 convention 8-bit {0,255} binary pixels
 
 #### Results
 
