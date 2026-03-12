@@ -1,11 +1,8 @@
 ---
-
-title: SNR_star – Covariance-based SNR measurement (ImageJ macro)
+title: SNR_star – Covariance-based SNR measurement
 categories: [Analysis]
-tags: [SNR, image quality, CT, covariance, ImageJ macro]
-author: Motohiro TABUCHI
 doi: 10.6009/jjrt.2022-1154
----------------------------
+---
 
 # SNR_star – Covariance-based SNR measurement
 
