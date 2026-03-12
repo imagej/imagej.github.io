@@ -31,7 +31,7 @@ The SNR* value in decibels is defined as
 
 SNR* [dB] = 10 log10 (σ_s² / σ_n²)
 
-![Principle](snr_star_principle.jpg)
+![Principle](snr_star_principle.JPG)
 
 ---
 
@@ -55,7 +55,7 @@ SNR* [dB] = 10 log10 (σ_s² / σ_n²)
 
 ## Usage
 
-![Usage](snr_star_usage.jpg)
+![Usage](snr_star_usage.JPG)
 
 1. Prepare a folder containing two observed images
 2. Run the SNR_star macro and select the folder containing the two observed images
