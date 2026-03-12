@@ -8,7 +8,7 @@ doi: 10.6009/jjrt.2022-1154
 
 **Author:** Motohiro TABUCHI
 
-SNR_star is an ImageJ macro that estimates signal variance and noise variance using the covariance between two repeated images acquired under identical imaging conditions.
+SNR_star is an ImageJ macro that estimates signal and noise variance using the covariance between two repeated images acquired under identical imaging conditions.
 It provides an unbiased and statistically optimal estimation of signal-to-noise ratio (SNR).
 
 The method is particularly useful for image quality evaluation in X-ray CT where direct measurement of signal variance is difficult.
@@ -58,15 +58,15 @@ SNR* [dB] = 10 log10 (σ_s² / σ_n²)
 ![Usage](./snr_star_usage.jpg)
 
 1. Prepare a folder containing two observed images
-2. Open the first image in ImageJ
-3. Draw a region of interest (ROI)
-4. Run the SNR_star macro
-5. The macro outputs the following values in the Log window:
+2. Run the SNR_star macro and select the folder containing the two observed images
+3. Open the first image in ImageJ
+4. Draw a region of interest (ROI)
+5. Results appear in the Log window:
 
-* SNR* [dB]
-* ROI size
-* signal variance
-* noise variance
+- SNR* [dB]
+- ROI size
+- signal variance
+- noise variance
 
 ---
 
@@ -90,12 +90,13 @@ https://zenodo.org/record/18666471
 
 ---
 
-## Notes
+### Notes
 
-* The method assumes additive, zero-mean, independent noise between the two images
-* Larger ROIs improve estimation stability
-* Negative covariance may indicate unsuitable imaging conditions
-* The method is applicable to CT and other imaging modalities with repeated acquisitions
+- Requires two repeated images acquired under identical imaging conditions
+- Assumes additive, zero-mean, independent noise between the two images
+- The ROI should be selected with an appropriate shape and size to represent the signal of interest
+- Inclusion of large uniform background regions may reduce the estimated SNR*
+- The method is applicable to CT, MRI, and other imaging modalities with repeated acquisitions
 
 ---
 
