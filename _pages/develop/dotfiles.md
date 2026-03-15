@@ -57,13 +57,14 @@ You can find the dotfiles in the following repositories:
 There are several tools for which configuration and customization is provided:
 
 -   Shells: [bash](https://www.gnu.org/software/bash/) and [zsh](http://www.zsh.org/)
--   Editors: [Vim](http://www.vim.org/)
+-   Editors: [Neovim](https://neovim.io/) (nvim ≥0.10) with [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim); [Vim](http://www.vim.org/) as fallback
 -   SCM tools: [Git](/develop/git) and [myrepos](https://myrepos.branchable.com/)
 
 Where possible, configuration is driven by plugin managers:
 
 -   [zpm](https://github.com/zpm-zsh/zpm) and [Oh-My-Zsh](http://ohmyz.sh/) for zsh
--   [Vundle](https://github.com/VundleVim/Vundle.vim) for vim
+-   [lazy.nvim](https://github.com/folke/lazy.nvim) for Neovim
+-   [Vundle](https://github.com/VundleVim/Vundle.vim) for Vim (fallback)
 
 ## How to get started?
 
@@ -72,7 +73,7 @@ Bootstrap:
 cd
 mkdir -p code/ctrueden
 cd code/ctrueden
-git clone git://github.com/ctrueden/dotfiles
+git clone https://github.com/ctrueden/dotfiles
 cd dotfiles
 sh setup.sh
 ```

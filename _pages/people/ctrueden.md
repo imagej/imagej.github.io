@@ -50,7 +50,7 @@ ping me on the [Image.sc Zulip](https://imagesc.zulipchat.com/); or even organiz
 
 ## Recommended development tools
 
-*Last updated: 2026-Jan-28*
+*Last updated: 2026-Mar-14*
 
 So you want to be an effective software developer? Use tools!
 
@@ -65,6 +65,7 @@ So you want to be an effective software developer? Use tools!
     </tr>
   </thead>
   <tbody>
+    <!-- AI Coding Assistants -->
     <tr>
       <td rowspan="4">AI Coding Assistants</td>
       <td rowspan="4">Ignore the hype and the hate, and <a href="https://www.thatsoftwaredude.com/content/14227/how-to-actually-use-ai-as-a-developer-in-2026">learn to use them</a>&mdash;see my <a href="https://docs.google.com/presentation/d/1esXn1TU5G6KIzRzXM-47aEm9MgWkfidtnCApE5rxe80/present">talk slides from Dec 2025</a></td>
@@ -83,6 +84,7 @@ So you want to be an effective software developer? Use tools!
       <td><a href="https://ollama.com/">Ollama</a></td>
       <td>Run LLMs locally for superior privacy</td>
     </tr>
+    <!-- IDEs -->
     <tr>
       <td rowspan="4"><a href="/develop/ides">IDEs</a></td>
       <td rowspan="4">
@@ -108,27 +110,42 @@ So you want to be an effective software developer? Use tools!
       <td><strike><a href="https://code.visualstudio.com/">Visual Studio Code</a></strike></td>
       <td>Flexible, powerful, popular, and <a href="https://code.visualstudio.com/docs/configure/telemetry">chock full of Microsoft data harvesting</a>! (You can use <a href="https://vscodium.com/">VSCodium</a> instead, but <a href="https://stackoverflow.com/q/75345501/1207769">Python support sucks</a> compared to official/proprietary VSCode builds without <a href="https://www.flypenguin.de/2023/02/26/use-vscodium-with-microsofts-proprietary-marketplace/">hacky tricks</a> that <a href="https://github.com/VSCodium/vscodium/discussions/1641">may stop working</a>...)</td>
     </tr>
+    <!-- Editors -->
     <tr>
-      <td rowspan=5><a href="https://www.vim.org/">Vim</a></td>
-      <td rowspan=5>Great editor. Crazy fast <a href="https://vim.wikia.com/wiki/Macros">macros</a></td>
-      <td><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></td>
-      <td>Vim plugin manager</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></td>
-      <td>Defaults everyone can agree on</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></td>
-      <td>Repeating supported plugin maps with "."</td>
+      <td rowspan=7><a href="https://neovim.io/">Neovim</a> / <a href="https://www.vim.org/">Vim</a></td>
+      <td rowspan=7>Great editor. Crazy fast <a href="https://vim.fandom.com/wiki/Macros">macros</a>
+      <ul>
+        <li>Use <a href="https://neovim.io/">Neovim</a> (nvim &ge;0.10) for <a href="https://en.wikipedia.org/wiki/Language_Server_Protocol">language intelligence</a></li>
+        <li><a href="https://www.vim.org/">Vim</a> as fallback on older systems</li>
+      </ul>
+      </td>
+      <td><a href="https://github.com/nvim-lua/kickstart.nvim">kickstart.nvim</a></td>
+      <td>Neovim starter config with LSP, treesitter, <a href="https://github.com/nvim-telescope/telescope.nvim">Telescope</a>, completion, debugging, and more (nvim &ge;0.10 required)</td>
     </tr>
     <tr>
       <td><a href="https://github.com/tpope/vim-surround">vim-surround</a></td>
       <td>Quoting/parenthesizing made simple</td>
     </tr>
     <tr>
-      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/vimrc">my .vimrc</a></td>
+      <td><a href="https://github.com/justinmk/vim-sneak">vim-sneak</a></td>
+      <td>Jump to any location with two characters</td>
     </tr>
+    <tr>
+      <td><a href="https://github.com/tpope/vim-repeat">vim-repeat</a></td>
+      <td>Repeating supported plugin maps with "."</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></td>
+      <td>Vim plugin manager (Vim fallback only)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/tpope/vim-sensible">vim-sensible</a></td>
+      <td>Defaults everyone can agree on (Vim fallback only)</td>
+    </tr>
+    <tr>
+      <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/vimrc">my .vimrc</a> and <a href="https://github.com/ctrueden/dotfiles/tree/main/nvim">nvim/ plugins</a></td>
+    </tr>
+    <!-- Shells -->
     <tr>
       <td rowspan=6><a href="https://www.zsh.org/">Zsh</a></td>
       <td rowspan=6>Awesome shell – even <a href="https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692">better than bash</a></td>
@@ -166,9 +183,36 @@ So you want to be an effective software developer? Use tools!
     <tr>
       <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/zshrc">my .zshrc</a></td>
     </tr>
+    <!-- Dependency Management -->
     <tr>
-      <td rowspan=2><a href="/develop/git">Git</a></td>
-      <td rowspan=2>It is worth the pain, I promise</td>
+      <td rowspan=4>Dependency Management</td>
+      <td rowspan=4>Build <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">reusable software components</a></td>
+      <td><a href="https://docs.astral.sh/uv/">uv</a></td>
+      <td>For Python projects</td>
+    </tr>
+    <tr>
+      <td><a href="https://pixi.sh/">pixi</a></td>
+      <td>For projects that need <a href="https://en.wikipedia.org/wiki/Conda_(package_manager)">Conda</a> packages</td>
+    </tr>
+    <tr>
+      <td><a href="/develop/maven">Maven</a></td>
+      <td>For Java and Kotlin projects</td>
+    </tr>
+    <tr>
+      <td colspan=2>See also my shell config: <a href="https://github.com/ctrueden/dotfiles/blob/-/plugins/maven.sh">maven.sh</a>, <a href="https://github.com/ctrueden/dotfiles/blob/-/plugins/uv.zsh">uv.zsh</a></td>
+    </tr>
+    <!-- SCM -->
+    <tr>
+      <td rowspan=4><a href="/develop/git">Git</a></td>
+      <td rowspan=4>It is worth the pain, I promise</td>
+      <td><a href="/develop/github">GitHub</a></td>
+      <td>If you don't have a GitHub account, <a href="https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">you don't exist</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/cli/cli">GitHub CLI</a></td>
+      <td>GitHub on the command line</td>
+    </tr>
+    <tr>
       <td><a href="https://myrepos.branchable.com/">myrepos</a></td>
       <td>Commit, push & pull across repositories <a href="https://github.com/ctrueden/dotfiles/blob/-/mrconfig">en masse</a></td>
     </tr>
@@ -176,12 +220,6 @@ So you want to be an effective software developer? Use tools!
       <td colspan=2>See also <a href="https://github.com/ctrueden/dotfiles/blob/-/gitconfig">my .gitconfig</a></td>
     </tr>
     <tr>
-      <td><a href="/develop/github">GitHub</a></td>
-      <td colspan=3>If you don't have a GitHub account, <a href="https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/">you don't exist</a></td>
-    </tr>
-    <tr>
-      <td><a href="/develop/maven">Maven</a></td>
-      <td colspan=3>Build <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">reusable software components</a></td>
     </tr>
   </tbody>
 </table>
