@@ -23,7 +23,7 @@ Main Features include:
 - Change LUT order with the mouse
 - Right-click on palette to move or remove LUTs
 - Empty palette channels default to "Grays"
-- All created palettes will be easilly accessible from the **Channels and Contrast** plugin! 
+- All created palettes will be easilly accessible from the **Channels and Contrast** plugin!    
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="700px"}        
 
 #### LUTs Finder
