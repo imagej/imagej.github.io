@@ -7,12 +7,12 @@ This Update Site provides utility plugins and macros to help with handling and v
 **If you have a question, feedback or a bug to report, you can post it on the [Image.sc](https://forum.image.sc/t/looking-for-testers-channels-contrast-and-luts-manager-plugins/) Forum**
 
 Main Features include:
+- A Multi Tool to enhance mouse interactions with image windows
 - Two plugins to control image contrast and LUTs (Look Up Tables)
-- A pluginTool called Multi Tool to enhance mouse interactions with image windows
 - Utility macros :
-	- basic multichannel montages (Split View)
+	- A cool way to open images from thumbnail montages
+	- Fast basic multichannel montages (Split View)
 	- auto-generated scale bar
-	- A way to open images from thumbnail montages
 	- Auto-contrast macros
 	- Save all opened images
 
@@ -46,6 +46,7 @@ This plugin combines and enhance most imageJ's "Brightness and Contrast" and "Ch
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true){:width="600px"}          
 You can:
 - Change multi-channel display mode: composite, color, or grayscale
+- **Right click on the composite button to change projection mode : Sum, Max, Min and Invert**
 - Adjust all channels display range (contrast)
 - **Right click on a slider to set value manually**
 - Toggle visible channels in composite mode with the checkboxes
@@ -66,7 +67,7 @@ Then the Multi Tool can interact with this montage to open the selected image
 2. Adjust display settings
 3. run the command `Create Preview Opener`       
 The generated montage will auto-save in the images folder         
-NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to open the corresponding image!
+NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to open the corresponding image! So next time you search for a specific image on the folder, you will find it immediately
          
 ![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/96bcd24a-208d-4628-ad91-884a8d34c5a0){:width="500"}
   
@@ -75,14 +76,14 @@ NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to ope
 - Montage title must include “Preview Opener” (you can add text before/after)
 
 # Multi Tool
-This Tool is a neutral tool with a simple click:
+This Tool is a neutral tool with a simple click.      
+And it can do **many** actions based on the mouse button, modifier keys (shift, ctrl, alt) and context!
 ### **Windows**     
 - **Move Window:**       
   Left Click and Drag (outside ROI):  Moves the image window position interactively.     
 - **Reversible Full Screen:**       
   Double Left Click:  Maximizes the image window, double click again to go back to original size.
                 
-But it can do **many** actions based on the mouse button, modifier keys (shift, ctrl, alt) and context!
 ### **Composite Display Switch**     
 - **Switch Composite Display:**       
   Middle Click on composite image:  Toggle display mode between Composite and Color.        
@@ -106,7 +107,7 @@ But it can do **many** actions based on the mouse button, modifier keys (shift, 
 ### **Preview Opener interaction**      
 - **Open Image from Preview Opener:**      
   Mouse Over thumbnails will update top left label showing the file name of the selected image.      
-  Middle Click on a thumbnail to open the corresponding file.       
+  Middle Click or double click on a thumbnail to open the corresponding file.       
   If Caps Lock ON: Opens image as ‘virtual stack’.           
 
 ### Multi Tool Shortcuts Summary
@@ -114,13 +115,13 @@ But it can do **many** actions based on the mouse button, modifier keys (shift, 
 | Mouse & Keys       | Action                                          |
 |--------------------|------------------------------------------------|
 | Left Drag (no ROI) | Move image window                              |
-| Double Left Click  | Maximize/minimize image window                 |
+| Double Left Click  | Maximize / minimize image window                 |
 | Middle Click       | Composite display toggle / Preview opener open  |
 | Ctrl + Left Drag   | Create rectangle ROI                           |
 | Ctrl + Click out of ROI  | Remove current ROI                             |
 | Shift + Alt + Left Click | Box auto-contrast                  |
 | Shift + Left Drag  | Live contrast adjustment             |
-| Alt + Left Drag    | Stack/frame scroll                             |    
+| Alt + Left Drag    | Stack / frame navigation                             |    
 {:.left}
 
 # Other Commands
@@ -144,7 +145,7 @@ Then in your imageJ app folder : place the **Image Viewer** folder on the ``plug
 All commands and plugins are located in the ``Plugins > Image Viewer`` menu.       
 However, The easiest way to access commands is from the toolbar menu you can find as ``Image_Viewer_Toolset`` under the red `>>` menu in the ImageJ window:            
 ![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Toolset.png?raw=true){:width="300px"}    
-This will intall a "View" menu in your Toolbar will all Image Viewer commands!     
+This will install a "View" menu in your Toolbar will all Image Viewer commands!     
 
 Note :     
 If you like these tools so much you need to get them installed at every starts, just copy this macro code and past it at the end of your 
