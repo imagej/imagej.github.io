@@ -10,8 +10,8 @@ Main Features include:
 - A Multi Tool to enhance mouse interactions with image windows
 - Two plugins to control image contrast and LUTs (Look Up Tables)
 - Utility macros :
-	- A cool way to open images from thumbnail montages
-	- Fast basic multichannel montages (Split View)
+	- A cool way to open images from thumbnail montages: [Preview Opener](https://imagej.net/plugins/image-viewer#preview-opener)
+	- Fast basic multichannel montages: [SpitView](https://imagej.net/plugins/image-viewer#preview-opener)
 	- auto-generated scale bar
 	- Auto-contrast macros
 	- Save all opened images
