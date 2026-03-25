@@ -11,7 +11,7 @@ Main Features include:
 - Two plugins to control image contrast and LUTs (Look Up Tables)
 - Utility macros :
 	- A cool way to open images from thumbnail montages: [Preview Opener](https://imagej.net/plugins/image-viewer#preview-opener)
-	- Fast basic multichannel montages: [SpitView](https://imagej.net/plugins/image-viewer#preview-opener)
+	- Fast basic multichannel montages: [Spit View](https://imagej.net/plugins/image-viewer#split-view)
 	- auto-generated scale bar
 	- Auto-contrast macros
 	- Save all opened images
@@ -67,7 +67,8 @@ Then the Multi Tool can interact with this montage to open the selected image
 2. Adjust display settings
 3. run the command `Create Preview Opener`       
 The generated montage will auto-save in the images folder         
-NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to open the corresponding image! So next time you search for a specific image on the folder, you will find it immediately
+NOW! With the **Multi Tool**, double click or middle-click on a thumbnail to open the corresponding image!
+So next time you search for a specific image on the folder, you will find it immediately
          
 ![Image-Viewer-Preview-Opener](https://github.com/user-attachments/assets/96bcd24a-208d-4628-ad91-884a8d34c5a0){:width="500"}
   
