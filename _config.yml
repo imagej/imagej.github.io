@@ -3,8 +3,6 @@ title: ImageJ Wiki
 description: The ImageJ wiki is a community-edited knowledge base on topics relating to ImageJ, a public domain program for processing and analyzing scientific images, and its ecosystem of derivatives and variants, including ImageJ2, Fiji, and others.
 image: /media/icons/imagej2.png
 markdown: kramdown
-kramdown:
-  syntax_highlighter: rogue
 plugins:
   - jekyll-sitemap
 collections:
