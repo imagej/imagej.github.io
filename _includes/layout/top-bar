@@ -1,5 +1,5 @@
 <section id="top-bar">
-  <a href="/"><img id="site-logo" src="/media/icons/imagej2.png"></a>
+  <a href="/" aria-label="ImageJ Wiki home"><img id="site-logo" src="/media/icons/imagej2.png" alt="ImageJ Wiki"></a>
   <div id="search-panel">
     <div id="search-box"></div>
   </div>

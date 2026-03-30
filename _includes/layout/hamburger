@@ -1,6 +1,6 @@
     <nav role="navigation">
       <div id="ham-toggle">
-        <input type="checkbox" />
+        <input type="checkbox" aria-label="Toggle navigation menu" />
         <span></span> <!-- top bun -->
         <span></span> <!-- hamburger -->
         <span></span> <!-- bottom bun -->

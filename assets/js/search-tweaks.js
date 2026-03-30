@@ -85,6 +85,7 @@ function selectPage(buttonIndex) {
   selectedHit = -1;
 }
 
+searchInput().setAttribute('aria-label', 'Search');
 searchInput().oninput = refreshSearchResultsVisibility;
 searchInput().onkeydown = function(e) {
   if (e.keyCode == 27) clearSearch(); // escape

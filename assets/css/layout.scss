@@ -824,3 +824,19 @@ body.is-preload #header:after {
   display: inline-block;
   vertical-align: top;
 }
+
+/* Accessibility: override main.css's "display: none" on .icon > .label.
+ * Icon links (social footer, etc.) use <span class="label"> as their
+ * accessible text; display:none hides it from screen readers entirely.
+ * Visually-hidden keeps the text invisible but readable by assistive tech. */
+.icon > .label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

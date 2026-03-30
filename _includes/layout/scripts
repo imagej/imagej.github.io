@@ -6,6 +6,14 @@
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/jquery.toc.js"></script>
 <script src="/assets/js/lightbox.min.js"></script>
+<script>
+  // Accessibility: add labels to lightbox controls that lack text content.
+  // lb-prev/lb-next already have aria-label in the library; lb-cancel/lb-close do not.
+  $(document).ready(function() {
+    $('#lightbox .lb-cancel').attr('aria-label', 'Cancel');
+    $('#lightbox .lb-close').attr('aria-label', 'Close lightbox');
+  });
+</script>
 <!-- Extensions -->
 {% for extension in page.extensions %}
 {% include extensions/{{ extension }} %}
