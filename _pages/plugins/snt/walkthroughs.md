@@ -167,7 +167,7 @@ The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 
 - Options in the _Mode_ drop-down menu specify how paths should be rendered. There are three possibilities: 1) *Lines*: Only the centerline of paths is displayed; 2) *Lines and disks*: Centerline of paths is displayed with disks at each node depicting the node radius;  and 3) *Surface reconstruction*: Paths are displayed as surface meshes.
 
-{% include notice highlight-color="#67A1FE" background-color="#EBF2F8" content="It is recommended to render color coded paths in either [Reconstruction Plotter](./manual#reconstruction-plotter) or [Reconstruction Viewer](./reconstruction-viewer) because the algorithms that allow paths to be [mapped to lookup tables ](./manual#color-mapping-) have not been ported to the Legacy 3D Viewer." %}
+{% include notice icon="info" content="It is recommended to render color coded paths in either [Reconstruction Plotter](./manual#reconstruction-plotter) or [Reconstruction Viewer](./reconstruction-viewer) because the algorithms that allow paths to be [mapped to lookup tables ](./manual#color-mapping-) have not been ported to the Legacy 3D Viewer." %}
 
 ### II. Tracing and Navigation
 <img  align="right" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="350"/>

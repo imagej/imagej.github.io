@@ -19,13 +19,11 @@ Adds a stylized notice.
 
 {%- comment -%}
   Background and border colors are handled by CSS via the notice-{{icon}} class.
-  Only apply inline overrides when explicit colors are passed as include params.
 {%- endcomment -%}
 {%- assign notice-icon-class = icon | default: "default" | strip -%}
 {%- if notice-icon-class == "" -%}{%- assign notice-icon-class = "default" -%}{%- endif -%}
 {%- capture font-size-style -%}{%- if notice-size -%}font-size: {{notice-size}}; {%- endif -%}{%- endcapture -%}
-{%- capture inline-style -%}{{font-size-style}}{%- if include.background-color -%}background: {{include.background-color}}; {%- endif -%}{%- if include.highlight-color -%}border-left-color: {{include.highlight-color}}; {%- endif -%}{%- endcapture -%}
-<div class="notice notice-{{notice-icon-class}}" style="{{inline-style}}">
+<div class="notice notice-{{notice-icon-class}}" style="{{font-size-style}}">
   {%- if glyph != "" or glyph-classes != "" -%}
     <div class="notice-icon"><span class="{{glyph-classes}}">{{glyph}}</span></div>
   {%- elsif icon and icon != "" -%}

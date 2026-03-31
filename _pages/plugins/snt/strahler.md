@@ -32,7 +32,7 @@ There are several entry points to Strahler Analysis in SNT. You can find those i
 {% capture strahler%}
 While _Strahler Analysis (Image)..._ remains a functional workflow, you may find its simplicity rather limiting. A more flexible approach may be to run [auto-tracing](/plugins/snt/auto-tracing) and run [Strahler Analysis (Tracings)](/plugins/snt/analysis#strahler-analysis) on them.
 {% endcapture %}
-{% include notice icon="warning" background-color="#fffbeb" content=strahler %}
+{% include notice icon="note" content=strahler %}
 
 {% include img align="right" src="/media/plugins/snt/strahler-classification-example.png" caption="Strahler classification"%}
 Strahler numbering is a numerical procedure that summarizes the branching complexity of mathematical trees. It is described in detail [here](./analysis#strahler-analysis).
