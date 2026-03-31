@@ -18,6 +18,41 @@ function selectAndCopy(element) {
   document.execCommand("copy");
 }
 
+// Load emgithub embeds with the correct style for the current light/dark theme.
+// The _includes/code template emits a <div class="emgithub-embed" data-src-base="...">
+// placeholder (URL without &style=). We inject the <script> tag at runtime so the
+// style can match the active theme, and re-inject when the user toggles the theme.
+(function () {
+  function emgithubStyle() {
+    return document.documentElement.getAttribute('data-theme') === 'dark'
+      ? 'github-dark' : 'github';
+  }
+
+  function loadEmbed(div) {
+    div.innerHTML = '';
+    var script = document.createElement('script');
+    script.src = div.dataset.srcBase + '&style=' + emgithubStyle();
+    div.appendChild(script);
+  }
+
+  function loadAllEmbeds() {
+    document.querySelectorAll('.emgithub-embed').forEach(loadEmbed);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadAllEmbeds);
+  } else {
+    loadAllEmbeds();
+  }
+
+  // Re-render when the user toggles light/dark (theme.js sets data-theme on <html>).
+  new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+      if (mutations[i].attributeName === 'data-theme') { loadAllEmbeds(); return; }
+    }
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+
 // Splice in a "Copy" button next to each code block.
 document.querySelectorAll("pre").forEach(function(pre) {
   if (pre.childElementCount != 1) return;

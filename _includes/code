@@ -6,7 +6,6 @@
 {%- assign line-start = include.line-start | default: "1" -%}
 {%- assign line-end = include.line-end | default: "99999" -%}
 {%- assign label = include.label -%}
-{%- assign style = include.style | default: "github" -%}
 {%- assign show-border = include.show-border | default: true -%}
 {%- assign show-line-numbers = include.show-line-numbers | default: true -%}
 {%- assign show-file-meta = include.show-file-meta | default: true -%}
@@ -41,14 +40,14 @@
 {%- capture content -%}
   {%- case service -%}
     {%- when "github" -%}
-      <script src="https://emgithub.com/embed.js?target=
-        {{- url | replace: "/", "%2F" | replace: "#", "%23" | replace: ":", "%3A" -}}
-        &style={{style}}
+      {%- assign embed-target = url | strip | replace: "/", "%2F" | replace: "#", "%23" | replace: ":", "%3A" -%}
+      {%- capture embed-params -%}
         {%- if show-border -%}       &showBorder=on      {%- endif -%}
         {%- if show-line-numbers -%} &showLineNumbers=on {%- endif -%}
         {%- if show-file-meta -%}    &showFileMeta=on    {%- endif -%}
         {%- if show-copy -%}         &showCopy=on        {%- endif -%}
-      "></script>
+      {%- endcapture -%}
+      <div class="emgithub-embed" data-src-base="https://emgithub.com/embed-v2.js?target={{embed-target}}{{embed-params | strip}}"></div>
     {%- when "gitlab" -%}
 {% include notice icon="warning" content="
 Embedding content from GitLab is not yet supported.
