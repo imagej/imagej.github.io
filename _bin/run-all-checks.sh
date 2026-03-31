@@ -49,5 +49,11 @@ echo "[Checking HTML element id values]"
 #  echo "--> Site HTML looks good! Congratulations." ||
 #  errors=$((errors+$?))
 
+echo
+echo "[Checking accessibility]"
+"$bin/check-accessibility.sh" &&
+  echo "--> Accessibility looks good." ||
+  errors=$((errors+$?))
+
 test "$errors" -gt 255 && errors=255
 exit $errors

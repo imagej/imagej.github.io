@@ -21,5 +21,8 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
     - run: bundle exec jekyll build
     - run: _bin/run-all-checks.sh

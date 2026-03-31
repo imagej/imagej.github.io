@@ -11,12 +11,11 @@
 {%- else -%}
 <details>
 {%- endif -%}
-{%- if include.link -%}
-<summary><a href="{{include.link}}">{{include.title}}</a></summary>
-{%- else -%}
 <summary>{{include.title}}</summary>
-{%- endif -%}
 <ul>
+{%- if include.link -%}
+<li><a href="{{include.link}}">{{include.title}}</a></li>
+{%- endif -%}
 
 {%- comment -%}
 # vi:syntax=liquid

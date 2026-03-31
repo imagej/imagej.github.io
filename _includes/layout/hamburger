@@ -4,9 +4,9 @@
         <span></span> <!-- top bun -->
         <span></span> <!-- hamburger -->
         <span></span> <!-- bottom bun -->
-        <ul id="ham-menu">
+        <div id="ham-menu">
           {% include layout/menu %}
-        </ul>
+        </div>
       </div>
     </nav>
 

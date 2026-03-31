@@ -3,7 +3,7 @@ Adds a stylized notice.
 {%- endcomment -%}
 
 {%- assign message = include.content | markdownify -%}
-{%- assign size = include.size | default: "normal" -%}
+{%- assign notice-size = include.size -%}
 {%- assign icon = include.icon -%}
 {%- assign glyph = include.glyph -%}
 {%- assign glyph-classes = include.class | default: "" -%}
@@ -51,7 +51,8 @@ Adds a stylized notice.
   {%- endcapture -%}
 {%- endunless -%}
 
-<div class="notice" style="font-size: {{size}}; background: {{background-color}}; border-left: 10px solid {{highlight-color}}">
+{%- capture font-size-style -%}{%- if notice-size -%}font-size: {{notice-size}}; {%- endif -%}{%- endcapture -%}
+<div class="notice" style="{{font-size-style}}background: {{background-color}}; border-left: 10px solid {{highlight-color}}">
   {%- if glyph != "" or glyph-classes != "" -%}
     <div class="notice-icon"><span class="{{glyph-classes}}">{{glyph}}</span></div>
   {%- elsif icon and icon != "" -%}
@@ -59,9 +60,9 @@ Adds a stylized notice.
     {%- assign extension = src | slice: -4, 4 | downcase -%}
     {%- if extension == '.svg' -%}
       {%- comment -%} Vector images need an explicit width. {%- endcomment -%}
-      <div class="notice-icon"><img src="{{src}}" width="32"></div>
+      <div class="notice-icon"><img src="{{src}}" width="32" alt=""></div>
     {%- else -%}
-      <div class="notice-icon"><img src="{{src}}"></div>
+      <div class="notice-icon"><img src="{{src}}" alt=""></div>
     {%- endif -%}
   {%- endif -%}
   <div class="notice-content">{{message}}</div>

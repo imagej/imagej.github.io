@@ -276,7 +276,7 @@ $sidebarPadding: 10px;
 /*
  * And let's slide it in from the left
  */
-#ham-toggle input:checked ~ ul
+#ham-toggle input:checked ~ #ham-menu
 {
   transform: none;
 }
@@ -823,6 +823,22 @@ body.is-preload #header:after {
 .page-info div {
   display: inline-block;
   vertical-align: top;
+}
+
+/* Accessibility: ensure search input text has sufficient contrast (WCAG 1.4.3).
+ * The Algolia InstantSearch CSS does not guarantee contrast on our dark topbar
+ * background; explicitly pin to black-on-white in both themes. */
+.ais-SearchBox-input {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+/* Accessibility: underline inline links in paragraph/table/list text so they
+ * are distinguishable without relying on color alone (WCAG 1.4.1). */
+p a:not([class]),
+td a:not([class]),
+li a:not([class]) {
+  text-decoration: underline;
 }
 
 /* Accessibility: override main.css's "display: none" on .icon > .label.
