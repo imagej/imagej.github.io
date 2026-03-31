@@ -121,14 +121,14 @@ It is important to visually confirm which phase of the segmented image will be s
 
 <table>
   <tbody>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <center>
           <p><span style="display:inline-block;text-align:center;width:230px">Segmented image<br><em>(Black/White LUT)</em></span> <span style="display:inline-block;text-align:center;width:230px">Segmented image<br><em>(Yellow/Blue LUT)</em></span> <span style="display:inline-block;text-align:center;width:230px">Intersections mask<br><em>(Jet LUT)</em></span></p>
         </center>
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <center>
           <figure>
@@ -137,7 +137,7 @@ It is important to visually confirm which phase of the segmented image will be s
         </center>
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <center>
           <strong>Top row:</strong> Image properly segmented: Arbor is sampled. <strong>Bottom row:</strong> Aberrant segmentation (inverted image): Background is sampled.<br>

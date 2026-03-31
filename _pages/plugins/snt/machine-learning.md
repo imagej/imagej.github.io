@@ -59,24 +59,12 @@ Paths from different channels are split into distinct classification classes
 | Single-node paths                       | Valid labels                                              | Typically skipped                                                                                                                                                                               |
 | Hyperstacks (images with CT dimensions) | Displayed by [BigDataViewer](../bdv)                      | CT dimensions are displayed as a simple stack in the TWS window. IJ's {% include bc path='Stack to Hyperstack...' %} command can be used to re-apply the original image layout to output images |
 
-<table>
-  <tr style="background-color:white">
-    <td style="width:50%">
-    <img width="100%" src="/media/plugins/snt/snt-labkit-training.png" title="SNT Paths as classifier labels: Labkit" />
-    </td>
-    <td style="width:50%">
-    <img  width="100%" src="/media/plugins/snt/snt-tws-training.png" title="SNT Paths as classifier labels: TWS" />
-    </td>
-  </tr>
-  <tr style="background-color:white">
-    <td style="width:50%">
-    Drosophila OP neuron (3D grayscale image, SNT's <i>Demo 03</i>) being classified in Labkit.
-    </td>
-    <td style="width:50%">
-    A triple-stained neuron (2D multichannel image, SNT's <i>Demo 06</i>) being classified in TWS.
-    </td>
-  </tr>
-</table>
+{% include gallery content=
+"
+/media/plugins/snt/snt-labkit-training.png | **SNT Paths as classifier labels: Labkit.** Drosophila OP neuron (3D grayscale image, SNT's *Demo 03*) being classified in Labkit.
+/media/plugins/snt/snt-tws-training.png    | **SNT Paths as classifier labels: TWS.** A triple-stained neuron (2D multichannel image, SNT's *Demo 06*) being classified in TWS.
+"
+%}
 
 ## Scripts
 

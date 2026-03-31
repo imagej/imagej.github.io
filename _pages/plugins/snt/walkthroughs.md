@@ -92,7 +92,7 @@ From this point on, you can carry on adding nodes to the branched path as [above
 Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views to be visible. You can do so at <a href="/plugins/snt/manual#startup-prompt">startup</a>, by making sure that <em>Default: XY, ZY and XZ views</em> is selected, or by clicking in <em>Display ZY/XZ Views</em> in the <a href="/plugins/snt/manual#options-tab">Options tab</a> if you have already started SNT.
 <table>
   <tbody>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <p>Find the approximate location of your start point by moving your mouse in the XY window, holding down {% include key key='Shift' %} to synchronize the view in the other panes.</p>
         <p>At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image. When this option is enabled, the cursor will automatically 'sniff' for local maxima and 'snap' to their average X,Y,Z position. The pixel that is most likely to be on a neurite is indicated by the red cross-hair cursor.</p>
@@ -101,7 +101,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" width="300px">
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <p>When you press {% include key key='+' %} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {% include key key='+' %}, make sure you move your mouse pointer over the neurite so that it's still over the structure of interest. You may want to adjust in the <a href="/plugins/snt/manual#views">Views</a> widget (<a href="/plugins/snt/manual#options-tab">Options tab</a>) whether all views should zoom synchronously.<br>
         At this point, you should adjust a suitable <a href="/plugins/snt/manual#cursor-auto-snapping">snapping neighborhood</a> both in XY (2D), and optionally Z (3D).</p>
@@ -111,7 +111,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="300px">
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <p>Locate the center of the structure to be clicked on. If <a href="/plugins/snt/manual#cursor-auto-snapping">cursor auto-snapping</a> is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {% include key key='Shift' %} to synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the <a href="/plugins/snt/key-shortcuts">shortcut</a> {% include key key='S' %}. Also, note that you can "click" on the <a href="/plugins/snt/key-shortcuts#tracing">brightest voxel</a> of a voxel column, by pressing {% include key key='M' %}.</p>
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
@@ -120,7 +120,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" width="300px">
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <p>Zoom out again with the {% include key key='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
       </td>
@@ -128,7 +128,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" width="300px">
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <p>The path along the neuron may not follow the center line perfectly:</p>
       </td>
@@ -136,7 +136,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" width="300px">
       </td>
     </tr>
-    <tr style="background-color:white">
+    <tr style="background-color:var(--color-bg)">
       <td>
         <p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p>
       </td>
