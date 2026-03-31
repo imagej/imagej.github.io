@@ -47,13 +47,6 @@ What do these cities have in common?
 | Zürich         | Switzerland    |
 " %}
 
-## Custom colors
-
-{% highlight liquid %}{% raw %}{% include notice background-color="chartreuse" highlight-color="brown"
-  content="Green background with brown stripe? How exciting!" %}{% endraw %}{% endhighlight %}
-{% include notice background-color="chartreuse" highlight-color="brown"
-  content="Green background with brown stripe? How exciting!" %}
-
 ## Custom font size
 
 {% highlight liquid %}{% raw %}{% include notice size="2em"
