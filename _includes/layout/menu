@@ -226,23 +226,9 @@
               <li><a href="/libs/imagej-ops">ImageJ Ops</a></li>
               <li><a href="/libs/imagej-common">ImageJ Common</a></li>
               <li><a href="/libs/imagej-legacy">ImageJ Legacy</a></li>
+              <li><a href="/libs/imglib2">ImgLib2</a></li>
               <li><a href="/libs/scijava">SciJava</a></li>
               <li><a href="/libs/scifio">SCIFIO</a></li>
-
-              {% include menu/section title="ImgLib2" link="/libs/imglib2" %}
-                <li><a href="/libs/imglib2/getting-started">Getting Started</a></li>
-                <li><a href="/libs/imglib2/accessors">Accessors</a></li>
-                <li><a href="/libs/imglib2/accessibles">Accessibles</a></li>
-                <li><a href="/libs/imglib2/examples">Examples</a></li>
-                <li><a href="/libs/imglib2/workshop-introductory">Introductory Workshop</a></li>
-                <li><a href="/libs/imglib2/workshop-advanced">Advanced Workshop</a></li>
-                <li><a href="/libs/imglib2/matlab">ImgLib2 images in MATLAB</a></li>
-                <li><a href="/libs/imglib2/benchmarks">Benchmarks</a></li>
-                <li><a href="/libs/imglib2/faq">FAQ</a></li>
-                <li><a href="/libs/imglib2/developing">Developing ImgLib2</a></li>
-                <li><a href="/libs/imglib2/discussion">ImgLib2 Discussion</a></li>
-              {% include menu/section-end %} <!-- Explore/Libraries/ImgLib2 -->
-              
               <li><a href="/libs">More...</a></li>
             {% include menu/section-end %} <!-- Explore/Libraries -->
 
