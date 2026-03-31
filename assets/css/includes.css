@@ -235,9 +235,25 @@ table.info-notice {
 
 .notice {
   border: 0px solid #aaa;
+  border-left: 10px solid var(--color-notice-default-border);
+  background: var(--color-notice-default-bg);
   padding: 0.5em;
   margin-bottom: 1em;
 }
+
+/* Per-type notice styles — backgrounds and borders adapt to dark mode. */
+.notice-info    { background: var(--color-notice-info-bg);    border-left-color: var(--color-notice-info-border); }
+.notice-tip     { background: var(--color-notice-tip-bg);     border-left-color: var(--color-notice-tip-border); }
+.notice-warning { background: var(--color-notice-warning-bg); border-left-color: var(--color-notice-warning-border); }
+.notice-note    { background: var(--color-notice-note-bg);    border-left-color: var(--color-notice-note-border); }
+/* Per-icon accent colors share the default background. */
+.notice-android  { border-left-color: #a4c639; }
+.notice-fiji     { border-left-color: #65a4e3; }
+.notice-imagej   { border-left-color: goldenrod; }
+.notice-imagej2  { border-left-color: #fadd8d; }
+.notice-linux    { border-left-color: #555; }
+.notice-tech     { border-left-color: #bdbdbd; }
+.notice-windows  { border-left-color: #00adef; }
 
 .notice-icon {
   font-size: x-large;
@@ -259,7 +275,7 @@ table.info-notice {
   margin-bottom: -0.5em;
   max-width: calc(100% - 32px - 1em);
   /* Accessibility: explicit color ensures contrast checkers can determine ratio. */
-  color: #333;
+  color: var(--color-text);
 }
 
 /* person */

@@ -10,6 +10,14 @@
 {%- assign linkback = include.linkback -%}
 
 {%- assign caption = include.caption -%}
+{%- assign video-title = include.title -%}
+{%- unless video-title -%}
+  {%- if caption -%}
+    {%- assign video-title = caption | strip_html | strip -%}
+  {%- else -%}
+    {%- assign video-title = platform | append: " video" -%}
+  {%- endif -%}
+{%- endunless -%}
 
 {%- assign default-width = 400 -%}
 {%- assign default-height = 300 -%}
@@ -117,7 +125,7 @@
     {%- if direct -%}
       <video controls width="{{width}}" height="{{height}}"><source src="{{src}}">Sorry, your browser doesn't support embedded video.</video>
     {%- else -%}
-      <iframe src="{{src}}" width="{{width}}" height="{{height}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      <iframe src="{{src}}" width="{{width}}" height="{{height}}" title="{{video-title}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
     {%- endif -%}
     {%- if linkback -%} <div class="linkback" style="width: {{width}}px">{{linkback-blurb}}</div> {%- endif -%}
     {%- if caption -%} <figcaption>{{caption | markdownify}}</figcaption> {%- endif -%}

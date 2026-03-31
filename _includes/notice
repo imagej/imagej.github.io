@@ -7,8 +7,6 @@ Adds a stylized notice.
 {%- assign icon = include.icon -%}
 {%- assign glyph = include.glyph -%}
 {%- assign glyph-classes = include.class | default: "" -%}
-{%- assign background-color = include.background-color -%}
-{%- assign highlight-color = include.highlight-color -%}
 
 {%- comment -%} Infer glyph from common icons. {%- endcomment -%}
 {%- unless glyph -%}
@@ -19,40 +17,15 @@ Adds a stylized notice.
   {%- endcapture -%}
 {%- endunless -%}
 
-{%- comment -%} Infer background color from common icons. {%- endcomment -%}
-{%- unless background-color -%}
-  {%- capture background-color -%}
-    {%- case icon -%}
-      {%- when "info"    -%} #ebf2f8
-      {%- when "tip"     -%} #dedede
-      {%- when "warning" -%} #ffcccb
-      {%- else           -%} #e6e6e6
-    {%- endcase -%}
-  {%- endcapture -%}
-{%- endunless -%}
-
-{%- comment -%} Infer highlight color from common icons. {%- endcomment -%}
-{%- unless highlight-color -%}
-  {%- capture highlight-color -%}
-    {%- case icon -%}
-      {%- when "android"    -%} #a4c639
-      {%- when "fiji"       -%} #65a4e3
-      {%- when "imagej"     -%} goldenrod
-      {%- when "imagej2"    -%} #fadd8d
-      {%- when "info"       -%} #67a1fe
-      {%- when "linux"      -%} black
-      {%- when "note"       -%} #901913
-      {%- when "tech"       -%} #bdbdbd
-      {%- when "tip"        -%} #7e7e7e
-      {%- when "warning"    -%} #f57900
-      {%- when "windows"    -%} #00adef
-      {%- else              -%} gold
-    {%- endcase -%}
-  {%- endcapture -%}
-{%- endunless -%}
-
+{%- comment -%}
+  Background and border colors are handled by CSS via the notice-{{icon}} class.
+  Only apply inline overrides when explicit colors are passed as include params.
+{%- endcomment -%}
+{%- assign notice-icon-class = icon | default: "default" | strip -%}
+{%- if notice-icon-class == "" -%}{%- assign notice-icon-class = "default" -%}{%- endif -%}
 {%- capture font-size-style -%}{%- if notice-size -%}font-size: {{notice-size}}; {%- endif -%}{%- endcapture -%}
-<div class="notice" style="{{font-size-style}}background: {{background-color}}; border-left: 10px solid {{highlight-color}}">
+{%- capture inline-style -%}{{font-size-style}}{%- if include.background-color -%}background: {{include.background-color}}; {%- endif -%}{%- if include.highlight-color -%}border-left-color: {{include.highlight-color}}; {%- endif -%}{%- endcapture -%}
+<div class="notice notice-{{notice-icon-class}}" style="{{inline-style}}">
   {%- if glyph != "" or glyph-classes != "" -%}
     <div class="notice-icon"><span class="{{glyph-classes}}">{{glyph}}</span></div>
   {%- elsif icon and icon != "" -%}

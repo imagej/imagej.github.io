@@ -25,7 +25,7 @@ This page provides an overview of ImageJ2 from the perspective of software devel
     </tr>
     <tr>
       <td style="border-top: 1px #aaa solid; padding: 15px 15px;">
-        <a href="Getting%20started"><img src="/media/develop/imagej-app.png" width="500px"></a>
+        <a href="Getting%20started"><img src="/media/develop/imagej-app.png" width="500px" alt="ImageJ application screenshot"></a>
       </td>
     </tr>
     <tr>
@@ -51,7 +51,7 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr>
       <td style="padding: 15px 0 30px 45px;">
-        <a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a>
+        <a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px" alt="SciJava"></a>
       </td>
     </tr>
     <tr>
@@ -61,7 +61,7 @@ public void loadAndDisplay(File file) {
     </tr>
     <tr>
       <td style="padding: 15px 0 15px 25px;">
-        <a href="/libs/imagej-ops"><img src="/media/develop/write-once-run-anywhere.png" width="500px"></a>
+        <a href="/libs/imagej-ops"><img src="/media/develop/write-once-run-anywhere.png" width="500px" alt="Write once, run anywhere diagram"></a>
       </td>
     </tr>
   </tbody>
@@ -143,7 +143,7 @@ ImageJ2 is divided into three parts---ImageJ2, ImgLib2, and SciJava---with respo
 <div class="layer">
   <div class="project">
     <div>
-      <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px"></a></p>
+      <p><a href="/libs/scijava"><img src="/media/logos/scijava.png" height="72px" alt="SciJava"></a></p>
       <p>more general than images</p>
     </div>
     <div>
