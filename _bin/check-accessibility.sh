@@ -56,10 +56,10 @@ try:
             and not i.get('runnerExtras', {}).get('needsFurtherReview', False)]
     print(len(real))
     for i in real:
-        print('  ERROR [' + i.get('code','?') + '] ' + i.get('context','')[:80], file=sys.stderr)
+        print('  ERROR [' + i.get('code','?') + '] ' + i.get('context','')[:80])
 except Exception as e:
     print(0)
-" 2>&1)
+")
   real_errors=$(echo "$count" | head -1)
   detail=$(echo "$count" | tail -n +2)
   if [ "$real_errors" -eq 0 ]; then
@@ -79,8 +79,16 @@ check_url "$BASE/" \
   --ignore "aria-required-children" \
   --ignore "link-in-text-block"
 
-check_url "$BASE/learn"
-check_url "$BASE/downloads"
+if [ "$#" -eq 0 ]; then
+  # Default pages checked when no arguments are given.
+  check_url "$BASE/learn"
+  check_url "$BASE/downloads"
+else
+  while [ "$#" -gt 0 ]; do
+    check_url "$BASE/$1"
+    shift
+  done
+fi
 
 if [ "$errors" -eq 0 ]; then
   echo "Accessibility looks good."
