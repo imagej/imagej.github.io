@@ -350,6 +350,7 @@ $sidebarPadding: 10px;
 
 .menu a {
   color: var(--color-menu-link);
+  text-decoration: none;
 }
 
 .menu ul li {
@@ -520,6 +521,10 @@ $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 3
   margin-left: $sidebarWidth - $sidebarPadding;
   margin-right: $sidebarWidth - $sidebarPadding;
   z-index: 1;
+}
+
+#nav-bar a {
+  text-decoration: none;
 }
 
 #nav-bar li {
@@ -833,12 +838,22 @@ body.is-preload #header:after {
   background-color: #ffffff !important;
 }
 
-/* Accessibility: underline inline links in paragraph/table/list text so they
- * are distinguishable without relying on color alone (WCAG 1.4.1). */
-p a:not([class]),
-td a:not([class]),
-li a:not([class]) {
-  text-decoration: underline;
+/* Accessibility: thin dotted underline on all links so they are
+ * distinguishable from surrounding text without relying on color alone
+ * (WCAG 1.4.1).  More-specific selectors (heading links, nav links,
+ * buttons, icon links, etc.) retain their existing text-decoration: none
+ * overrides and are unaffected. */
+a {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* On hover, switch to a solid underline for a clear state change.
+ * Also remove main.css's border-bottom so the two don't stack. */
+a:hover {
+  text-decoration-style: solid;
+  border-bottom: none;
 }
 
 /* Accessibility: override main.css's "display: none" on .icon > .label.
