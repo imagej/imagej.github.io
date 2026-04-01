@@ -6,17 +6,13 @@
     {%- assign open = true -%}
   {%- endif -%}
 {%- endfor -%}
-{%- if open -%}
-<details open>
-{%- else -%}
-<details>
-{%- endif -%}
 {%- if include.link -%}
-<summary><a href="{{include.link}}">{{include.title}}</a></summary>
+<a href="{{include.link}}">{{include.title}}</a>
 {%- else -%}
-<summary>{{include.title}}</summary>
+<span class="menu-section-title">{{include.title}}</span>
 {%- endif -%}
-<ul>
+<button class="menu-toggle" type="button" aria-label="Toggle {{include.title}} submenu" aria-expanded="{%- if open -%}true{%- else -%}false{%- endif -%}"></button>
+<ul{%- unless open %} hidden{%- endunless -%}>
 
 {%- comment -%}
 # vi:syntax=liquid
