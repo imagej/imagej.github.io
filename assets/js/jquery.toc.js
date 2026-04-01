@@ -80,15 +80,15 @@
                     // In the upside-down stack, unshift = push, and stack[0] = the top.
                     var parentItem = stack[0].children("li:last")[0];
                     if (parentItem) {
-                        var aItem = $(parentItem.firstChild); // <a> element
-                        var details = $("<details open/>");
-                        var summary = $("<summary/>");
-                        // Put the link directly in the summary so the header is clickable.
-                        summary.append(aItem);
-                        details.append(summary);
+                        var aItem = $(parentItem.firstChild); // <a> element (stays in place)
+                        var btn = $("<button/>")
+                            .addClass("menu-toggle")
+                            .attr("type", "button")
+                            .attr("aria-expanded", "true")
+                            .attr("aria-label", "Toggle " + aItem.text() + " subsection");
                         var ol = $("<" + listTag + "/>");
-                        details.append(ol);
-                        details.appendTo(parentItem);
+                        btn.appendTo(parentItem);
+                        ol.appendTo(parentItem);
                         stack.unshift(ol); // move down to the new <ol> level
                     }
                 } else {

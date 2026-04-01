@@ -281,13 +281,6 @@ $sidebarPadding: 10px;
   transform: none;
 }
 
-#ham-menu .menu details > summary:after {
-  left: $hamMenuWidth - $hamMenuEdge;
-}
-
-#ham-menu .menu details[open] > summary:after {
-  left: $hamMenuWidth - $hamMenuEdge - 1;
-}
 
 .sidebar {
   width: $sidebarWidth - $sidebarMargin;
@@ -367,34 +360,49 @@ $sidebarPadding: 10px;
   margin-right: 10px;
 }
 
+/* Section rows: [link-or-title] [toggle] on one line, submenu on next */
 .menu li {
   margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.menu summary {
-  outline: none;
+.menu li > a,
+.menu li > .menu-section-title {
+  flex: 1 1 auto;
+}
+
+.menu li > ul,
+.menu li > ol {
+  flex: 0 0 100%;
+}
+
+.menu .menu-section-title {
+  color: var(--color-menu-link);
+}
+
+.menu .menu-toggle {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  padding: 0 2px;
   cursor: pointer;
-}
-
-.menu summary.li {
-  padding-left: 1.4em;
-}
-
-.menu details > summary {
-  list-style: none;
-}
-
-.menu summary::-webkit-details-marker {
-  display: none;
-}
-
-.menu details > summary:after {
-  content: "▹";
+  color: var(--color-menu-link);
   font-size: 10px;
-  position: absolute;
+  line-height: 1;
+  outline: none;
 }
 
-.menu details[open] > summary:after {
+.menu .menu-toggle:hover {
+  color: var(--color-link-hover);
+}
+
+.menu .menu-toggle::after {
+  content: "▹";
+}
+
+.menu .menu-toggle[aria-expanded="true"]::after {
   content: "▿";
   font-size: 11px;
 }
@@ -412,23 +420,6 @@ $sidebarPadding: 10px;
   border-bottom: none;
   text-decoration: none;
   color: var(--color-menu-current-page);
-}
-
-$leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 30px;
-
-#left-column .menu details > summary:after {
-  left: $leftColumnArrowOffset;
-}
-
-#left-column .menu details[open] > summary:after {
-  left: $leftColumnArrowOffset - 1;
-}
-
-#right-column .menu details > summary:after {
-  right: $sidebarMargin;
-}
-
-#right-column .menu details[open] > summary:after {
 }
 
 /* ------------------------------- STATBOX -------------------------------- */

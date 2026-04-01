@@ -34,6 +34,14 @@
     $('.toc').remove();
   }
 
+  // Menu toggle buttons (expand/collapse submenus)
+  $(document).on('click', '.menu-toggle', function() {
+    var btn = $(this);
+    var expanded = btn.attr('aria-expanded') === 'true';
+    btn.attr('aria-expanded', String(!expanded));
+    btn.siblings('ul, ol').prop('hidden', expanded);
+  });
+
 })(jQuery);
 
 /* Taken from https://www.w3schools.com/howto/howto_js_tabs.asp  */
