@@ -27,7 +27,7 @@ In the first dialog, you will be asked for some **basic parameters** for the reg
 -   **Interest points**: the interest points to use for registration.
 -   **Group Tiles** and **Group illuminations**: (Only available if you have multiple Tiles or Illuminations in your dataset) Tick this to group the Tiles and/or illumination directions within one Channel/Angle/TimePoint. Grouped views will be moved together. Use this if you already aligned Tiles in Stitching mode. Since we also have to do less comparisons this way, this will also speed up the registration process.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-register-basic.png" width="800"/>
+<img alt="BigStitcher Register basic" src="/media/plugins/bigstitcher/bigstitcher-register-basic.png" width="800"/>
 
 ## Specific Registration Options
 
@@ -37,7 +37,7 @@ Depending on the choices you made in the previous dialog, you will be asked for 
 -   2\) **View Fixing and map-back Transformations** (not available when registering relative to a **refenence timepoint**)
 -   3\) **Registration Algorithm Parameters**
 
-<img src="/media/plugins/bigstitcher/bigstitcher-register-scpecific.png" width="800"/>
+<img alt="BigStitcher Register scpecific" src="/media/plugins/bigstitcher/bigstitcher-register-scpecific.png" width="800"/>
 
 ### Time Series Registration Options
 
@@ -71,13 +71,13 @@ If you chose to **manually** select the views to fix or map back to, you will be
 
 When **registering timepoints individually**, you will be asked whether you want to fix/map back to the same view in each timepoint or select different ones for each time point.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-register-fix-same-all-tps.png" width="400"/>
+<img alt="BigStitcher Register fix same all tps" src="/media/plugins/bigstitcher/bigstitcher-register-fix-same-all-tps.png" width="400"/>
 
 When manually selecting **views to fix**, you can choose to fix multiple views (optionally, this is repeated for each timepoint, see above).
 
 When **mapping back**, you can select a single view to map back to.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-register-fix-select.png" width="400"/><img src="/media/plugins/bigstitcher/bigstitcher-register-map-back-select.png" width="400"/>
+<img alt="BigStitcher Register fix select" src="/media/plugins/bigstitcher/bigstitcher-register-fix-select.png" width="400"/><img alt="BigStitcher Register map back select" src="/media/plugins/bigstitcher/bigstitcher-register-map-back-select.png" width="400"/>
 
   
 
@@ -157,13 +157,13 @@ In the parameter dialog, you can set the two parameters described above:
 
 If you opted for **Regularization** of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a **lambda** ($$\in[0,1]$$), i.e. how much weight you want to give to the regularizing model in the final averaged result.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-regularize-model.png" width="400"/>
+<img alt="BigStitcher Regularize model" src="/media/plugins/bigstitcher/bigstitcher-regularize-model.png" width="400"/>
 
 ### Grouping Options
 
 If you chose to **group tiles or illuminations** in the first dialog, you will be asked how to perform the grouping in another dialog.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-register-grouping.png" width="600"/>
+<img alt="BigStitcher Register grouping" src="/media/plugins/bigstitcher/bigstitcher-register-grouping.png" width="600"/>
 
 The options for **Interest point grouping** are:
 

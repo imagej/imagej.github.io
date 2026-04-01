@@ -250,4 +250,4 @@ $ python
 true
 ```
 
-![](https://thumbs.gfycat.com/OblongJaggedBluemorphobutterfly-small.gif)
+![OblongJaggedBluemorphobutterfly small](https://thumbs.gfycat.com/OblongJaggedBluemorphobutterfly-small.gif)

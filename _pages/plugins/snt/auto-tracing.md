@@ -46,7 +46,7 @@ The algorithm requires a starting point (seed) to begin tracing. Several strateg
 When working with 3D images, the _Active plane only_ option restricts the ROI to its specific Z-slice, preventing the algorithm from considering roots at other depths.
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-gwdt-autotracing.png" title="Fully automated reconstructions: Grayscale images (OP1 demo dataset)" width="700" />
+  <img src="/media/plugins/snt/snt-gwdt-autotracing.png" alt="Gwdt autotracing" title="Fully automated reconstructions: Grayscale images (OP1 demo dataset)" width="700" />
 </div>
 
 ## Thresholding
@@ -153,7 +153,7 @@ Full automated tracing of _segmented_ (thresholded) images requires two types of
 2. **Intensity Image (_Optional_)** The original (un-processed) image used to resolve any possible loops in the segmented image using brightness criteria. Required for intensity-based loop resolution strategies (see below).
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-binary-autotracing.png" title="Fully automated reconstructions: Thresholded images (ddaC demo dataset)" width="850" />
+  <img src="/media/plugins/snt/snt-binary-autotracing.png" alt="Binary autotracing" title="Fully automated reconstructions: Thresholded images (ddaC demo dataset)" width="850" />
 </div>
 
 ## Soma/Root Detection

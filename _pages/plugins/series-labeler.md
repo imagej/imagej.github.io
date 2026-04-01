@@ -12,7 +12,7 @@ It aims to combine the functionality of these plugins and refine and enhance the
 
 ## Screen Shot of features
 
-![](/media/plugins/series-labeler-screen-shot.png)
+![Series labeler screen shot](/media/plugins/series-labeler-screen-shot.png)
 
 ## What it works with
 

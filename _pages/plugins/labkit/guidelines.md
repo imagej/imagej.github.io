@@ -19,7 +19,7 @@ The following two images show a good and a bad example on how to place the scrib
 
 | good | bad |
 | ---- | --- |
-| <img src="/media/plugins/labkit/labkit-scribble-good.png"/> | <img src="/media/plugins/labkit/labkit-scribble-bad.png"/> |
+| <img src="/media/plugins/labkit/labkit-scribble-good.png" alt="Labkit scribble good"/> | <img src="/media/plugins/labkit/labkit-scribble-bad.png" alt="Labkit scribble bad"/> |
 
 The lines that you draw should start roughly on edge of an object and go inwards.
 Similarly, if you mark background pixels start close to an object and draw a line away from the object.
@@ -46,7 +46,7 @@ Time series: If the objects you want to segment change their appearance over tim
 
 ## Pixel Classification Settings
 
-<img src="/media/plugins/labkit/labkit-pixel-classification-settings.png"/>
+<img src="/media/plugins/labkit/labkit-pixel-classification-settings.png" alt="Labkit pixel classification settings"/>
 
 Labkit's pixel classification algorithm applies a list of filters on the image to gather informations about the individual pixels.
 The pixel classification settings dialog allows you to select which filters Labkit uses.

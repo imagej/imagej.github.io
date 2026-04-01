@@ -18,4 +18,4 @@ A list of pages related to plugins developed at IT4Innovations:
 - [Scijava-parallel](/libs/scijava-parallel)
 - [SPIM Workflow Manager for HPC](/plugins/spim-workflow-manager-for-hpc)
 
-![](/media/orgs/it4i.jpg)
+![It4i](/media/orgs/it4i.jpg)

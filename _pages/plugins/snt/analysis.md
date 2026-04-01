@@ -47,7 +47,7 @@ Notes on SNT charts and plots:
 
 # Comparing Reconstructions
 
-<img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" title=" " />
+<img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" alt="SNT Compare Reconstructions/Cell Groups prompt" title=" " />
 SNT can compare up to six groups of cells. The entry point for this type of comparison is twofold:
 - **{% include bc path='Utilities|Compare Reconstructions/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
 - **{% include bc path='Neuronal arbors|Load & Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
@@ -93,7 +93,7 @@ In the main SNT dialog, Sholl commands are available in the [Analysis](manual#an
 For precise positioning of the center of analysis:
 
 1. Mouse over the path of interest. Press {% include key key='G' %} to activate it
-   <img align="right" width="400px" src="/media/plugins/snt/sholl-analysis-by-focal-point.png" title=" " />
+   <img align="right" width="400px" src="/media/plugins/snt/sholl-analysis-by-focal-point.png" alt="SNT Sholl analysis by focal point" title=" " />
 2. Then, select the node to be used as focal point. This can be done in one of two ways:
    1. Select a node along the path as you would for forking operation: i.e., by pressing {% include key keys='Alt|Shift' %} while moving the cursor along the path (Note the "Fork Point" label appearing near the cursor on non-display canvases). With {% include key keys='Alt|Shift' %} still pressed, press  {% include key keys='A' %} to start the analysis
    2. Make the path editable (right-click on the image and choose _Edit Path_ from the contextual menu). Move the cursor along the path until the desired node is highlighted. Press  {% include key keys='Alt|Shift|A' %} to start the analysis
@@ -218,8 +218,8 @@ Ultimately, fine-grained programmatic control over SNT's Graph objects is achiev
 
 # Persistent Homology
 <span id="persistence-homology"></span>
-<img align="right" width="300px" src="/media/plugins/snt/snt-persistence-landscape.png" title="Visualization of a persistence landscape for ML neuron #AA0039" />
-<img align="right" width="350px" src="/media/plugins/snt/snt-persistence-analyzer.png" title="Persistent Homology prompt" />
+<img align="right" width="300px" src="/media/plugins/snt/snt-persistence-landscape.png" alt="Visualization of a persistence landscape for ML neuron #AA0039" title="Visualization of a persistence landscape for ML neuron #AA0039" />
+<img align="right" width="350px" src="/media/plugins/snt/snt-persistence-analyzer.png" alt="Persistent Homology prompt" title="Persistent Homology prompt" />
 
 Persistent homology computes topological features of neuronal reconstructions at different spatial resolutions, which in turn can be used to obtain topological signatures of their branching patterns. The Topological Morphology Descriptor (TMD) is the first published algorithm to use persistent Homology to describe neuronal arbors. It is described in:
 

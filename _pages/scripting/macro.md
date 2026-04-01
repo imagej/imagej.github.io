@@ -274,7 +274,7 @@ for (i = 0; i < roiManager("count"); i++){
 
 Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc path='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can click {% include button label="Create" %} to open the recorded instructions in an editor:
 
-![](/media/scripting/macro-recorder.png)
+![Macro recorder](/media/scripting/macro-recorder.png)
 
 In some cases, you might need to edit the recorded macro to make it usable with other images than the one you used to record the macro with. Example: when you merge channels, you end up with a statement like this:
 

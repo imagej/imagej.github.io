@@ -21,7 +21,7 @@ The Updater is a mechanism to update individual packages. It is automatically ru
 
 If there were updates since the Updater was run the last time, the user will be asked whether you want to run the Updater now or later:
 
-![](/media/plugins/up-to-date-check.png)
+![Up to date check](/media/plugins/up-to-date-check.png)
 
 In case you do not want to run the Updater upon startup, you can choose *Never*.
 
@@ -33,7 +33,7 @@ The Updater can be run via {% include bc path='Help | Update...'%}.
 
 The Updater has two modes, the *Easy Mode* and the *Advanced Mode*. In the easy mode, you will only see the files that can be updated. The easy mode looks like this:
 
-![](/media/plugins/updater-easy-mode.png)
+![Updater easy mode](/media/plugins/updater-easy-mode.png)
 
 For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [here](/develop/uploading-plugins).
 
@@ -41,7 +41,7 @@ For technical reasons, a restart of ImageJ is required before the changes take e
 
 Some plugins require other components to be updated. For example, the [Simple Neurite Tracer](/plugins/snt) needs the [3D Viewer](/plugins/3d-viewer). If you have a locally modified version of the dependency (i.e. the Updater does not know that particular version), the Updater will ask you what to do:
 
-![](/media/plugins/updater-resolve-dependencies.png)
+![Updater resolve dependencies](/media/plugins/updater-resolve-dependencies.png)
 
 A typical scenario when you can have a locally modified version of a component is when you asked the respective plugin author for a change in a certain component and got a test version that you [installed manually](/plugins#installing-plugins).
 
@@ -63,7 +63,7 @@ While in the advanced mode, you can **edit a file's dependencies directly** by m
 
 Just click on the {% include bc path='Help | Update...'%} menu item:
 
-![](/media/plugins/fiji-updater-screenshot.png)
+![Fiji updater screenshot](/media/plugins/fiji-updater-screenshot.png)
 
 ## Adding update sites
 

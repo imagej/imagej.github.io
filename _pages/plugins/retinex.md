@@ -50,9 +50,9 @@ adjusts the colour of the result. Large values produce less saturated images..
 
 ## Example
 
-Original: ![](/media/plugins/photo1.jpg)
+Original: ![Photo1](/media/plugins/photo1.jpg)
 
-After Retinex (default parameters): ![](/media/plugins/photo1-retinex.jpg)
+After Retinex (default parameters): ![Photo1 retinex](/media/plugins/photo1-retinex.jpg)
 
 ## Homepage
 

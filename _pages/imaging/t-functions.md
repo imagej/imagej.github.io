@@ -17,11 +17,11 @@ If you know the decay constant *k*, you can use the plugin {% include bc path="I
 
 Raw time course
 
-![](/media/imaging/bleach-raw-data.png)
+![Bleach raw data](/media/imaging/bleach-raw-data.png)
 
 Bleach corrected time course
 
-![](/media/imaging/bleach-corrected-data.png)
+![Bleach corrected data](/media/imaging/bleach-corrected-data.png)
 
 The k value can be calculated in ImageJ by:
 
@@ -35,7 +35,7 @@ The k value can be calculated in ImageJ by:
 
 Since bleaching is often not mono-exponential, quantification of fluorescence intensities after bleach correction is not possible. This plugin should only be used to enhance time-course movies for presentation rather than quantification.
 
-![](/media/imaging/contrast-window.png)
+![Contrast window](/media/imaging/contrast-window.png)
 
 Another way to compensate for bleaching is to use the menu item {% include bc path="Process|Enhance Contrast" %}. This method is quicker to implement than the proper bleach correction above and can be useful for correcting for fluorophore bleaching during a movie if the intensity of the fluorophore is changing only because of bleaching. Check the "Process Entire Stack" option and the plugin will scan through the stack applying brightness and contrast adjustment selected on each slice based on each slice's histogram. The intensity values are adjusted so that quantitative intensity measurements are no longer possible.
 
@@ -43,7 +43,7 @@ Again, use this function to enhance movies for presentation, not quantification.
 
 ## F÷F0
 
-![](/media/imaging/f-f0-raw.png) ![](/media/imaging/f-f0-corrected.png)
+![F f0 raw](/media/imaging/f-f0-raw.png) ![F f0 corrected](/media/imaging/f-f0-corrected.png)
 
 There are several drawbacks with the use of single wavelength fluorescent probes; some include uneven fluorescence intensity (F) due to cell thickness and cell to cell variation in loading. These can be largely corrected by normalizing fluorescence against resting fluorescence i.e. F0. This does not correct for bleaching and dye loss during the experiment.
 
@@ -63,11 +63,11 @@ The F divided by F0 steps are automated in the *"F\_div\_F0"* macro. This will r
 
 ## Delta-F
 
-![](/media/imaging/delta-f-raw.png)
+![Delta f raw](/media/imaging/delta-f-raw.png)
 
 **Raw**
 
-![](/media/imaging/delta-f-corrected.png)
+![Delta f corrected](/media/imaging/delta-f-corrected.png)
 
 **Delta-F up**
 
@@ -81,7 +81,7 @@ Note: The plugin generates a second result stack. For large memory consuming sta
 
 ## Surface plotting
 
-![](/media/imaging/surface-plot-compare.png)
+![Surface plot compare](/media/imaging/surface-plot-compare.png)
 
 Surface plots can be generated in many ways: notably via the menu command {% include bc path="Analyze|Surface plot" %} or via the plugins "*SurfaceJ*" and *"Interactive 3D Surface Plot*". These functions will surface-plot movies as well as single frame images. Ensure the features you're interested in are "Contrast stretched" optimally. This can be done using a "Max intensity projection" on the stack. Get the max and min pixel intensities and apply these to the stack. Remember, do not perform intensity analysis on images that have had their contrast stretched.
 

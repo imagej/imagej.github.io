@@ -40,11 +40,11 @@ This guide covers the process of migrating a page from the ImageJ Documentation 
         * Drag `cf-images.png` and `cf-table.png` onto the "Drag files here" area. Then scroll down to the "Commit changes" box below, type a message like "Add Colocalization Finder images", then click the {% include button label="Commit changes" %} button. This will stage the images for availability from URLs `https://imagej.net/media/plugins/cf-images.png` and `https://imagej.net/media/plugins/cf-table.png` respectively.
     4.  Back in our new Colocalization Finder page, we fix the image link paths; e.g.:
         ```markdown
-        ![](/plugin/analysis/colocalizationfinder/cf_images.png)
+        ![Cf images](/plugin/analysis/colocalizationfinder/cf_images.png)
         ```
         becomes
         ```markdown
-        ![](/media/plugins/cf-images.png)
+        ![Cf images](/media/plugins/cf-images.png)
         ```
         See the wiki editing guide's [images](https://imagej.net/editing/images) page for details on formatting your images.
     5.  If you are new to GitHub and not yet approved as an imagej.net editor, you will need to file a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), which is just a term meaning your changes will be posted as a suggestion (i.e. a "request") for the wiki editors to review, approve, and merge (i.e. "pull in") to the main wiki contents. When you commit your changes as described in step 8.3 above, GitHub will walk you through this procedure. Once your first pull request is merged, you will be granted direct edit access to simplify future edits.

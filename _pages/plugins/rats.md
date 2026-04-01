@@ -16,17 +16,17 @@ The RATS algorithm is applied across regions of the image making it suitable for
 
 In this implementation the input gradient of the input image is computed using the Sobel kernels. Traditionally the Sobel gradient is computed using
 
-![](/media/plugins/rats-sobel.png)
+![Rats sobel](/media/plugins/rats-sobel.png)
 
 The kernel operators are detailed in many sources including {% include wikipedia title='Sobel operator' text='here'%}. However, Wilkinson shows that eliminating the square root yields suitable results with out the added cost of a final scan across the image to compute the root. In the plugin the gradient is left simply as the sum of the squares of the kernel operations.
 
-![](/media/plugins/rats-sobel2.png)
+![Rats sobel2](/media/plugins/rats-sobel2.png)
 
-Pixels with gradients that fall below a user specified threshold, ![](/media/plugins/rats-lambdasigma.png) , are rejected. The threshold is defined by an estimate of the noise (![](/media/plugins/rats-sigma.png) ,the standard deviation of the expected background is a good starting point) and a scaling factor (![](/media/plugins/rats-lambda.png), 3 is a good starting point). Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values.
+Pixels with gradients that fall below a user specified threshold, ![Rats lambdasigma](/media/plugins/rats-lambdasigma.png) , are rejected. The threshold is defined by an estimate of the noise (![Rats sigma](/media/plugins/rats-sigma.png) ,the standard deviation of the expected background is a good starting point) and a scaling factor (![Rats lambda](/media/plugins/rats-lambda.png), 3 is a good starting point). Estimate the noise by selecting a "background" portion of the image and using ImageJ to determine the standard deviation of gray values.
 
-The input image is then subdivided into a quadtree architecture (for more info see {% include wikipedia title='Quadtree' text='Wikipedia:Quadtree'%}). Within each of the smallest subregions, a regional threshold, ![](/media/plugins/rats-tr.png) , is computed as the gradient weighted sum of the pixels, P.
+The input image is then subdivided into a quadtree architecture (for more info see {% include wikipedia title='Quadtree' text='Wikipedia:Quadtree'%}). Within each of the smallest subregions, a regional threshold, ![Rats tr](/media/plugins/rats-tr.png) , is computed as the gradient weighted sum of the pixels, P.
 
-![](/media/plugins/rats-tr2.png)
+![Rats tr2](/media/plugins/rats-tr2.png)
 
 Occasionally, the regional threshold fails if the sum of the weights (the denominator) falls to the level of background containing only noise. In such cases, the regional threshold is replaced by the threshold of its parent quadtree (if the parent's threshold doesn't fail). It is possible that thresholds fail all the way up the quadtree heirarchy, in which case a same threshold is applied to all regions which is identical to applying a global threshold. In our experience, regional threshold failures are rare. Once the regional thresholds are computed, they are interpolated (bilinear interpolation) across the entire image yielding a threshold map.
 
@@ -34,7 +34,7 @@ The user also controls the size of the smallest quadtree region (aka leaflet). A
 
 ## Plugin Usage
 
-![](/media/plugins/rats-gui.jpg)
+![Rats gui](/media/plugins/rats-gui.jpg)
 
 Load an single channel image (8-bit, 16-bit or 32-bit). Note that the plugin expects bright objects on dark background, so you might want to call {% include bc path='Edit | Invert'%} if your input image has dark objects. Select the RATS plugin from the Plugins menu. The following dialog will appear:
 
@@ -48,7 +48,7 @@ Load an single channel image (8-bit, 16-bit or 32-bit). Note that the plugin exp
 
 That's it! A bilevel image is produced with the name "-mask" appended to the original image name.
 
-![](/media/plugins/rats-output.png)
+![Rats output](/media/plugins/rats-output.png)
 
 ## Macro Usage
 

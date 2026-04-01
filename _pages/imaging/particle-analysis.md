@@ -35,7 +35,7 @@ There are many algorithms you can use to calculate the threshold without introdu
 
 Fiji has several plugins found in the menu {% include bc path='Image | Adjust | Threshold'%} for automatic calculation of an image threshold. These include Otsu's thresholding, maximum entropy threshold, and mixture modelling thresholding. For a complete list of the methods available with Fiji see the Plugins section located in the Documentation section under the Content tab at the top of this page.
 
-![](/media/imaging/automatic-thresholding-5.1.1.2.jpg)
+![Automatic thresholding 5.1.1.2](/media/imaging/automatic-thresholding-5.1.1.2.jpg)
 
 ### Watershed separation
 
@@ -57,7 +57,7 @@ The particle analysis can be automated via plugins or macros once the correct th
 
 This plugin automates many of the steps discussed above.
 
-![](/media/imaging/nucleus-counter-1.jpg).
+![Nucleus counter 1](/media/imaging/nucleus-counter-1.jpg).
 
 1.  Enter the size range to be counted
 2.  Select the automatic thresholding method. This can be either *Current*, *Otsu*, *Maximum Entropy*, *Mixture Modelling* or *k-means* clustering. *Current* uses the threshold that has been set manually, see above.
@@ -71,7 +71,7 @@ Other options can easily be added on request.
 
 The count, area, and average size are returned as a text window and the outlined particles are overlaid on a duplicate of the original image.
 
-![](/media/imaging/nucleus-counter-2.jpg)
+![Nucleus counter 2](/media/imaging/nucleus-counter-2.jpg)
 
 ## Manual Counting
 

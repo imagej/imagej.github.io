@@ -13,7 +13,7 @@ The [TrackMate](/plugins/trackmate) plugin provides a way to semi-automatically 
 
 The test image we will use for this tutorial has now a link in Fiji. You can find it in {% include bc path='File | Open Samples | Tracks for TrackMate (807K)'%}, at the bottom of the list.
 
-![](/media/plugins/trackmate/trackmate-faketracks.png)
+![TrackMate test image with fake tracks](/media/plugins/trackmate/trackmate-faketracks.png)
 
 This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a very easy use case: there is at most 4 spots per frame, they are well separated, they are about the same size and the background is uniform. It is such an ideal case that you would not need TrackMate to deal with it. But for this first tutorial, it will help us getting through TrackMate without being bothered by difficulties.
 
@@ -24,7 +24,7 @@ Also, if you look carefully, you will see that there are two splitting events - 
 
 ## Starting TrackMate
 
-![](/media/plugins/trackmate/trackmate-mainbuttons.png)
+![TrackMate main navigation buttons](/media/plugins/trackmate/trackmate-mainbuttons.png)
 
 With this image selected, launch TrackMate from the menu {% include bc path='Plugins | Tracking | TrackMate'%} or from the [search bar](/learn#the-search-bar). The TrackMate GUI appears next to the image, displaying the starting dialog panel.
 
@@ -43,7 +43,7 @@ The advantage of this approach is that you load in TrackMate, and everything you
 
 ## The start panel
 
-![](/media/plugins/trackmate/trackmate-startpanel.png)
+![TrackMate start panel with calibration settings](/media/plugins/trackmate/trackmate-startpanel.png)
 
 This first panel allows you to check the spatial and temporal calibration of your data. It is very important to get it right, since everything afterwards will be based on physical units and not in pixel units (for instance μm and minutes, and not pixels and frames). In our case, that does not matter actually, since our test image has a dummy calibration (`1 pixel = 1 pixel`).
 
@@ -62,7 +62,7 @@ Defining a smaller area to analyze can be very beneficial to test and inspect fo
 
 ## Choosing a detector
 
-![](/media/plugins/trackmate/trackmate-segmenterchoice.png)
+![TrackMate detector selection panel](/media/plugins/trackmate/trackmate-segmenterchoice.png)
 
 You are now offered to choose a detection algorithm ("detector") amongst the currently implemented ones.
 
@@ -79,7 +79,7 @@ In our case, let us just use the **Dog detector**.
 
 ## The detector configuration panel
 
-![](/media/plugins/trackmate/trackmate-segmenterconfig.png)
+![TrackMate detector configuration panel](/media/plugins/trackmate/trackmate-segmenterconfig.png)
 
 The LoG-based detectors fortunately demand very few parameters to tune them. The only really important one is the *Estimated blob diameter*'. Just enter the approximate size of the spots you are looking to tracks. Careful: you are expected to enter it in <u>physical units</u>. In our dummy example, there is no calibration (`1 pixel = 1 pixel`), so it does not appear here.
 
@@ -100,7 +100,7 @@ In our case, the spots we want to track are about 5 pixels in diameter, so this 
 
 ## The detection process
 
-![](/media/plugins/trackmate/trackmate-segmenting.png)
+![TrackMate detection progress log panel](/media/plugins/trackmate/trackmate-segmenting.png)
 
 Once you are happy with the segmentation parameters, press the **Next** button and the segmentation will start. The TrackMate GUI displays the **log panel**, that you will meet several times during the process. It is basically made of a text area that recapitulates your choices and send information on the current process, and of a progress bar on top. You can copy-paste the text if you want to keep track of the process somewhere. You can even add comments as text in it: it is editable, and everything you type there is saved in the XML file, and retrieved upon loading. You can access the log panel anytime, by clicking on the log button at the bottom of the TrackMate window.
 
@@ -115,7 +115,7 @@ On our dummy image, this is clearly something we need to worry about, and the se
 
 ## Initial spot filtering
 
-![](/media/plugins/trackmate/trackmate-initthresholding.png)
+![TrackMate initial spot quality threshold histogram](/media/plugins/trackmate/trackmate-initthresholding.png)
 
 Here is a difficult step to explain, particularly because we do not need at all now. If the explanations following in this paragraph seem foggy, please feel free to press the **Next** button and skip to the next paragraph. This one is all related to performance, memory and disk usage in difficult cases.
 
@@ -134,7 +134,7 @@ In our case, we see from the histogram that we could make sense of this step. Th
 
 ## Selecting a view
 
-![](/media/plugins/trackmate/trackmate-displayerchoice.png)
+![TrackMate view/displayer selection panel](/media/plugins/trackmate/trackmate-displayerchoice.png)
 
 Here, you can choose between the two visualization tools that will be used to display the tracking results. The first one, **HyperStack displayer**, simply reuses ImageJ stack window and overlay the results non-destructively over the image. Choosing the **3D viewer** will open a new 3D viewer window, import that image data in it, and will display spots as 3D spheres and tracks as 3D lines.
 
@@ -152,7 +152,7 @@ So nothing much. Let's carry on.
 
 ## Spot filtering
 
-![](/media/plugins/trackmate/trackmate-filterspots-1.png)
+![TrackMate spot filtering panel](/media/plugins/trackmate/trackmate-filterspots-1.png)
 
 The moment this panel is shown, the spots should be displayed on the ImageJ stack. They take the shape of purple circles of diameter set previously. As promised, there are quite a lot of them, and their vast majority are irrelevant. If you did not remove the irrelevant one in the initial thresholding step, you should get an overlay that resembles the image to the right.
 
@@ -168,7 +168,7 @@ By default , when the combo-box is on **Uniform color**, all spots are purple. B
 
 We will therefore add a filter based on this feature. Click the green **+** button. A small orange box should appear in the upper part, containing the histogram for a given feature. Click on the orange box combo-box to select **Mean intensity**. Yous should have something similar to the image below.
 
-![](/media/plugins/trackmate/trackmate-filterspots-2.png)
+![TrackMate spot filter by mean intensity histogram](/media/plugins/trackmate/trackmate-filterspots-2.png)
 
 We note that the histogram has a very desirable shape: a massive peak at low intensity represent most of the spots. There are other smaller peaks at higher intensity, and fortunately, they are very well separated from the large peak.
 
@@ -192,7 +192,7 @@ Press **Next** when you are ready to build tracks with these spots.
 
 ## Selecting a simple tracker
 
-![](/media/plugins/trackmate/trackmate-trackerchoice.png)
+![TrackMate tracker selection panel](/media/plugins/trackmate/trackmate-trackerchoice.png)
 
 The next panel let you choose amongst available particle-linking algorithms, or "trackers".
 
@@ -246,7 +246,7 @@ Now, we would like the shape of these tracks to change. We see that the yellow t
 
 ## Configuring a not so simple tracker
 
-![](/media/plugins/trackmate/trackmate-trackerconfiguration-2.png)
+![TrackMate LAP tracker configuration panel](/media/plugins/trackmate/trackmate-trackerconfiguration-2.png)
 
 Look at the configuration panel. It is quite more complex than for the simple tracker, obviously, and it is the price for flexibility. Since it is quite long, the panel has to be scrolled to its bottom to venture on all fields.
 
@@ -274,19 +274,19 @@ For <u>track splitting</u>, the middle of a segment is offered to bridge to the 
 
 As an exercise, try to find the parameters the will fuse the central track segments in a single large track, with two splitting events and a merge event. You should obtain the track layout pictured below.
 
-![](/media/plugins/trackmate/trackmate-trackingresults-2.png)
+![TrackMate tracking results with splitting and merging events](/media/plugins/trackmate/trackmate-trackingresults-2.png)
 
 ## Filtering tracks
 
 The next panel is just the equivalent of the spot filtering step we met before, but this time we use track features,. The filter principles are the same: you simply add filters, choosing a target feature, until you are happy with the remaining tracks. As for the spots, the tracks are not really deleted; they are just hidden and you can retrieve them by switching back to this panel and delete the filters.
 
-![](/media/plugins/trackmate/trackmate-trackingfiltering.png)
+![TrackMate track filtering panel](/media/plugins/trackmate/trackmate-trackingfiltering.png)
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom left contribute one track each, that we can barely see because they do not move much. Let us say that we want to get rid of them. There are several ways to do that, but the simple is simply to add a filter on track displacement, as picture above.
 
 ## The end or so
 
-![](/media/plugins/trackmate/trackmate-displaypanel.png)
+![TrackMate display options panel](/media/plugins/trackmate/trackmate-displaypanel.png)
 
 We are now close to the end of a typical workflow for a tracking problem. The panel you see now is the one that recapitulates display option. You can set spot color by feature, hide them, show their name, etc... Find out what they do, display options are pretty much self-explanatory.
 

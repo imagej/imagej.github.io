@@ -17,10 +17,10 @@ This page describes a track corrector module for TrackMate that relies on [oneat
 
 The figures and tables mentioned here can be found in our [associated publication](https://www.biorxiv.org/content/10.1101/2025.09.17.676780v1)
 
-<img src="/media/plugins/trackmate/actions/FigS1.png" width="300"/> 
+<img src="/media/plugins/trackmate/actions/FigS1.png" alt="FigS1" width="300"/> 
 
 
-<img src="/media/plugins/trackmate/actions/FigS7.png" width="300"/>
+<img src="/media/plugins/trackmate/actions/FigS7.png" alt="FigS7" width="300"/>
 
 # Introduction
 

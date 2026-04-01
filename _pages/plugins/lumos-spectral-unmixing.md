@@ -24,7 +24,7 @@ Due to the overlapping emission spectra of fluorophores, fluorescence microscopy
 
 *K*-means is an unsupervised learning clustering technique. Given a set of input datapoints, *k*-means clusters the points into *k* different groups based on their values. K-means defines clusters by iteratively calculating the centroid of each cluster and assigning datapoints to the nearest cluster centroid. This process is depicted below:
 
-<img src="/media/k-means.png" width="600"/>
+<img src="/media/k-means.png" alt="K means" width="600"/>
 
 # *K*-means for spectral unmixing
 

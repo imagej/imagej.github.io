@@ -55,7 +55,7 @@ Additionally, the installer creates a local cache of the repository, allowing qu
 
 Manual JavaCV installation can be done using the plugin's user interface:
 
-![](/media/plugins/javacv-installer-ui.png)
+![Javacv installer ui](/media/plugins/javacv-installer-ui.png)
 
 Using macro or public methods of the plugin, developers can automatically check for required interfaces and install missing JavaCV dependencies in ImageJ.
 

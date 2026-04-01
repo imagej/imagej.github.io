@@ -16,17 +16,17 @@ In the initial setup we need to ensure:
 
 In our test case, we have 19,600 images, i.e. 140 sections of 10x14 tiles:
 
-<img src="/media/tutorials/screenshot-file-browser-sequence.png" width="725"/>
+<img src="/media/tutorials/screenshot-file-browser-sequence.png" alt="Screenshot file browser sequence" width="725"/>
 
 ## Stitching
 
 As a first step, we start Fiji and go to {% include bc path='Plugins | Stitching | Stitch Sequence of Grids of Images'%}:
 
-![](/media/tutorials/stitching-menu-grid-sequence.png)
+![Stitching menu grid sequence](/media/tutorials/stitching-menu-grid-sequence.png)
 
 Then, the next dialog pops up to choose the stitching parameters:
 
-![](/media/tutorials/screenshot-stitch-image-grid-sequence.png)
+![Screenshot stitch image grid sequence](/media/tutorials/screenshot-stitch-image-grid-sequence.png)
 
 Here we have to set some important parameters (the ones we don't mention can be left with their default values):
 
@@ -41,11 +41,11 @@ We then click on OK and the stitching will take place. The plugin will display a
 
 After processing the last grid/section, the plugin will display the following message:
 
-![](/media/tutorials/screenshot-message-sequence-stitching.png)
+![Screenshot message sequence stitching](/media/tutorials/screenshot-message-sequence-stitching.png)
 
 As result, the stitched images are stored in the output folder:
 
-<img src="/media/tutorials/screenshot-file-browser-stitched-sequence.png" width="750"/>
+<img src="/media/tutorials/screenshot-file-browser-stitched-sequence.png" alt="Screenshot file browser stitched sequence" width="750"/>
 
 **Performance**: The stitching of the 19,600 images (732x732 pixels each) took around 117 minutes in a Intel Core Duo at 3GHz, 4GB of RAM, running on Linux 64-bit.
 
@@ -53,11 +53,11 @@ As result, the stitched images are stored in the output folder:
 
 For the alignment of the stitched slices we will use the plugin *Register Virtual Stack Slices*, under {% include bc path='Plugins | Registration'%}:
 
-![](/media/tutorials/screenshot-rvss-menu.png)
+![Screenshot rvss menu](/media/tutorials/screenshot-rvss-menu.png)
 
 As before, a dialog will pop up where we have to choose the registration parameters:
 
-![](/media/tutorials/screenshot-register-virtual-stack.png)
+![Screenshot register virtual stack](/media/tutorials/screenshot-register-virtual-stack.png)
 
 The relevant parameters are:
 
@@ -72,7 +72,7 @@ And we click on the first two check-boxes:
 
 When we click on OK, another dialog pops up to select the Feature extraction parameters:
 
-![](/media/tutorials/screenshot-feature-extraction.png)
+![Screenshot feature extraction](/media/tutorials/screenshot-feature-extraction.png)
 
 Here, we only increase the **steps per octave scale** to 5 to find more point candidates to correspondences, and the **maximum image size** to 1400 pixels, to use more image information.
 
@@ -82,7 +82,7 @@ We then click on OK and the alignment starts.
 
 After few minutes (depending on the computer and number of CPUs), when the alignment is done, aligned images are saved to the specified output folder and results will be displayed as a virtual stack.
 
-![](/media/tutorials/screenshot-aligned-stack-v.png)
+![Screenshot aligned stack v](/media/tutorials/screenshot-aligned-stack-v.png)
 
 **Performance**: the alignment of the 140 slices (and their resizing) took around 20 minutes in a 8-CPUs Intel Core Duo at 3.4GHz, 32GB of RAM, running on Linux 64-bit.
 

@@ -162,12 +162,12 @@ Even this sequence of rather noisy transmission electron microscopy images, with
 <tr>
 <td>
 
-![](/media/plugins/stack4.gif)
+![Stack4](/media/plugins/stack4.gif)
 
 </td>
 <td>
 
-![](/media/plugins/stack4-2.gif)
+![Stack4 2](/media/plugins/stack4-2.gif)
 
 </td>
 </tr>

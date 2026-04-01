@@ -16,7 +16,7 @@ source-url: https://github.com/ijpb/MorphoLibJ
 
 ## Introduction
 
-<img src="/media/plugins/morphological-segmentation-front.png" width="400"/>Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
+<img src="/media/plugins/morphological-segmentation-front.png" alt="Morphological segmentation front" width="400"/>Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
 
 ## Usage
 

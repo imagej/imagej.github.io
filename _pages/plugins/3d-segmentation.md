@@ -60,7 +60,7 @@ Three methods are available for computing the value of the local threshold and 3
 
 A tutorial is also available : [3d seg spot tutorial.pdf](/media/3d-seg-spot-tutorial.pdf)
 
-![](/media/plugins/heck-orig.png) ![](/media/plugins/heck-watershed.png)![](/media/plugins/heck-seg.png)
+![Heck orig](/media/plugins/heck-orig.png) ![Heck watershed](/media/plugins/heck-watershed.png)![Heck seg](/media/plugins/heck-seg.png)
 
 Left, slice of a 3D raw image with crowded objects with different intensities. Middle, the zones around each detected local maxima, computed using watershed. Right, the final segmentation of the objects.
 

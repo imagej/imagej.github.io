@@ -15,15 +15,15 @@ The idea is to start with one region per pixel and then applying a statistical t
 
 For the moment, the plugin handles only grayscale images:
 
-![](/media/plugins/statistical-region-merging-boats.jpg)
+![Statistical region merging boats](/media/plugins/statistical-region-merging-boats.jpg)
 
 It asks for a value for *Q*, which is a rough estimate of the number of regions in the image. You can also choose whether you want the regions to be marked by the mean gray value, or by the index of the region:
 
-![](/media/plugins/statistical-region-merging-dialog.jpg)
+![Statistical region merging dialog](/media/plugins/statistical-region-merging-dialog.jpg)
 
 This is a result for a low value of *Q*:
 
-![](/media/plugins/statistical-region-merging-result.jpg)
+![Statistical region merging result](/media/plugins/statistical-region-merging-result.jpg)
 
 ## References
 

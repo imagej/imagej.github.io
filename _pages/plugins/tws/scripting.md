@@ -607,16 +607,16 @@ output.setDisplayRange( 0, numClusters-1 );
 
 This can be a very useful approach to segment images where the elements contain very distinct colors. Let's see an example using a [public image](https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg) of hematoxylin and eosin (H&E) stained lung tissue:
 
-![](/media/plugins/tws/emphysema-h-and-e.jpg)
+![Emphysema h and e](/media/plugins/tws/emphysema-h-and-e.jpg)
 
 Once the image is open, we can call the script and a dialog will pop up:
 
-![](/media/plugins/tws/tws-color-segmentation-script-menu.png)
+![Color segmentation script menu](/media/plugins/tws/tws-color-segmentation-script-menu.png)
 
 Here we can select the number of expected clusters, the number of samples per cluster used for training and the clustering method. The default values of 5 clusters, 1000 samples and "SimpleKMeans" involve that 5000 pixels will be used for training ($$5\times1000=5000$$) a k-means classifier and the resulting image will be an integer image containing labels in the range of [0-4].
 
 This would be a possible output of the script with 3 clusters, 2000 samples and "SimpleKMeans":
 
-![](/media/plugins/tws/tws-result-h-and-e-k-means-3-clusters-2000-samples.png)
+![Result h and e k means 3 clusters 2000 samples](/media/plugins/tws/tws-result-h-and-e-k-means-3-clusters-2000-samples.png)
 
 The actual label values may vary between different executions of the same clustering due to its random seed initialization. In any case, the blood cells (originally in red), the cell nuclei (in blue-purple), other cell bodies (in pink) and the extracellular space get usually a very reasonable segmentation.

@@ -8,13 +8,13 @@ doi: 10.3389/fcomp.2022.777728
 
 ## Abstract
 
-<!--<img src="/media/plugins/labkit-illustration.jpg" width="700"/>-->
+<!--<img src="/media/plugins/labkit-illustration.jpg" alt="Labkit illustration" width="700"/>-->
 
 Labkit is a user-friendly Fiji plugin for the segmentation of microscopy image data.  It offers easy to use manual and automated image segmentation routines that can be rapidly applied to single- and multi-channel images as well as timelapse movies in 2D or 3D. Labkit is specifically designed to work efficiently on big image data and users of consumer laptops can conveniently work with multiple terabytes large image data. This efficiency is achieved by using Imglib2 and BigDataViewer as the foundation of our software. Furthermore, memory efficient and fast random forest based pixel classification based on the Waikato Environment for Knowledge Analysis (WEKA) is implemented, optionally exploiting the power of graphics processing units (GPUs) to gain additional performance and can even be used on high performance computing clusters (HPC) for distributed processing of big image data. Finally, manual tools for ground-truth annotation are available. 
 
 ## What It Looks Like
 
-<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" style="width: 712px; height: 490px"/>
+<img src="https://user-images.githubusercontent.com/24407711/133519201-67d6e29f-f024-4803-8eee-75831a996952.gif" alt="133519201 67d6e29f f024 4803 8eee 75831a996952" style="width: 712px; height: 490px"/>
 
 ## Installation
 

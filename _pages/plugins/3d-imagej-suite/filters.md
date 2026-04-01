@@ -43,7 +43,7 @@ Available filters :
 
 -   Adaptive Nagao-like
 
-![](/media/plugins/3d-imagej-suite/3d-variance.png)
+![3d variance](/media/plugins/3d-imagej-suite/3d-variance.png)
 
 3D variance
 

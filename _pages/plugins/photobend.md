@@ -38,9 +38,9 @@ The plugin is for the analysis of a stack of time lapse microscopic images of a 
 <!-- TODO: Improve site infrastructure surrounding figures, and use it here. -->
 <figure class="figure" style="max-width: 100%">
 <div style="column-count: 3" markdown=1>
-![](/media/plugins/photobend-processing.jpg){:style='width: 100%'}
-![](/media/plugins/photobend-deformation-plot.jpg){:style='width: 100%'}
-![](/media/plugins/photobend-curvature-plot.jpg){:style='width: 100%'}
+![Photobend processing](/media/plugins/photobend-processing.jpg){:style='width: 100%'}
+![Photobend deformation plot](/media/plugins/photobend-deformation-plot.jpg){:style='width: 100%'}
+![Photobend curvature plot](/media/plugins/photobend-curvature-plot.jpg){:style='width: 100%'}
 </div>
 <figcaption style="font-weight: bold">Crystal shape tracking in progress</figcaption>
 </figure>

@@ -7,7 +7,7 @@ nav-title: Define New Dataset
 
 When clicking {% include bc path='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:
 
-![](/media/plugins/bigstitcher/bigstitcher-import-exisitng-0.png)
+![BigStitcher Import exisitng 0](/media/plugins/bigstitcher/bigstitcher-import-exisitng-0.png)
 
 {% include thumbnail src='/media/plugins/bigstitcher/bigstitcher-importer-1.png' title='Select the importer and the name of the xml file to save the metadata to.'%} In order to **define a new dataset**, please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
 

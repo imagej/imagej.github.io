@@ -9,7 +9,7 @@ nav-title: Manual Translation
 
 In the **right-click menu** you can find various functions for manually arranging the views in your dataset under {% include bc path='Preprocessing|Arrange Views'%}.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-arrange-views001.png" width="600"/>
+<img alt="BigStitcher Arrange views001" src="/media/plugins/bigstitcher/bigstitcher-arrange-views001.png" width="600"/>
 
 ### Manually translate views
 
@@ -22,7 +22,7 @@ Clicking **Manually translate Views** will bring up a new window that allows you
 
 {% include notice icon="info" content='The range of movement is limited, if you wish to move views by a large amount, you have to repeatedly apply a translation' %}
 
-<img src="/media/plugins/bigstitcher/bigstitcher-arrange-views002.png" width="800"/>
+<img alt="BigStitcher Arrange views002" src="/media/plugins/bigstitcher/bigstitcher-arrange-views002.png" width="800"/>
 
 ### Read Locations From File
 
@@ -49,7 +49,7 @@ Clicking **Read Locations From File** will bring up a new window that allows you
 -   Lines starting with **\#** (comments) are ignored:
         # this is a comment. 
 
-<img src="/media/plugins/bigstitcher/bigstitcher-arrange-views003.png" width="800"/>
+<img alt="BigStitcher Arrange views003" src="/media/plugins/bigstitcher/bigstitcher-arrange-views003.png" width="800"/>
 
 ### Move Tiles To Regular Grid ...
 
@@ -62,6 +62,6 @@ Clicking **Move Tiles To Regular Grid ...** will bring up a new window that allo
 
 {% include notice icon="warning" content='Clicking **Apply** will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)' %}
 
-<img src="/media/plugins/bigstitcher/bigstitcher-arrange-views004.png" width="800"/>
+<img alt="BigStitcher Arrange views004" src="/media/plugins/bigstitcher/bigstitcher-arrange-views004.png" width="800"/>
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

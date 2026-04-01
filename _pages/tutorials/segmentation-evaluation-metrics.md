@@ -106,10 +106,10 @@ if( calculateRandError )
 
 If you run it, the following dialog will pop up:
 
-![](/media/tutorials/challenge-segmentation-metrics-script.png)
+![Challenge segmentation metrics script](/media/tutorials/challenge-segmentation-metrics-script.png)
 
 Here you can select among the open images which ones are the original and the proposed labels, along with the specific metrics you want to apply to evaluate the segmentation results.
 
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
-![](/media/tutorials/challenge-script-log-window.png)
+![Challenge script log window](/media/tutorials/challenge-script-log-window.png)

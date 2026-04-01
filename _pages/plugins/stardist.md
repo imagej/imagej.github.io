@@ -12,7 +12,7 @@ source-url: https://github.com/stardist/stardist-imagej
 ---
 
 
-<img src="/media/icons/stardist.jpg" width="128"/>
+<img src="/media/icons/stardist.jpg" alt="StarDist logo" width="128"/>
 
 ## Overview
 
@@ -25,7 +25,7 @@ Please only file an issue [here](https://github.com/stardist/stardist-imagej) fo
 
 *The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/stardist/stardist).*
 
-<img src="/media/plugins/stardist-screenshot-small.jpg" width="640"/>
+<img src="/media/plugins/stardist-screenshot-small.jpg" alt="StarDist plugin screenshot" width="640"/>
 
 ## Installation
 
@@ -34,7 +34,7 @@ Please only file an issue [here](https://github.com/stardist/stardist-imagej) fo
 3.  Click on the button `Manage update sites`.
 4.  Scroll down the list and tick the checkboxes for update sites `CSBDeep`, `StarDist` and `TensorFlow`, then click the `Close` button.  
     (If `StarDist` is missing, click `Update URLs` to refresh the list of update sites.)  
-    <img src="/media/plugins/stardist-update-site2.png" width="320"/><img src="/media/plugins/stardist-update-site.png" width="320"/>
+    <img src="/media/plugins/stardist-update-site2.png" alt="StarDist update site selection" width="320"/><img src="/media/plugins/stardist-update-site.png" alt="StarDist update site in list" width="320"/>
 5.  Click on `Apply changes` to install the plugin.
 6.  Restart Fiji.
 
@@ -44,7 +44,7 @@ Please only file an issue [here](https://github.com/stardist/stardist-imagej) fo
 
 Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)[1]:
 
-<img src="/media/plugins/stardist-usage-input.png" height="240"/>
+<img src="/media/plugins/stardist-usage-input.png" alt="StarDist input image for segmentation" height="240"/>
 
 Start the plugin from `Plugins > StarDist > StarDist 2D`. The following parameters can be set:
 
@@ -53,7 +53,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
   <tbody>
     <tr>
       <td>
-        <p><img src="/media/plugins/stardist-usage-param-pred.jpg" width="400"></p>
+        <p><img src="/media/plugins/stardist-usage-param-pred.jpg" alt="StarDist prediction parameters" width="400"></p>
       </td>
       <td>
         <p>Select a neural network model from the dropdown list, which can be one of the following:</p>
@@ -78,7 +78,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
     </tr>
     <tr>
       <td>
-        <p><img src="/media/plugins/stardist-usage-param-nms.jpg" width="400"></p>
+        <p><img src="/media/plugins/stardist-usage-param-nms.jpg" alt="StarDist NMS postprocessing parameters" width="400"></p>
       </td>
       <td>
         <p>Adjust the NMS (non-maximum suppression) postprocessing parameters:</p>
@@ -92,7 +92,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
     </tr>
     <tr>
       <td>
-        <p><img src="/media/plugins/stardist-usage-param-advanced.jpg" width="400"></p>
+        <p><img src="/media/plugins/stardist-usage-param-advanced.jpg" alt="StarDist advanced options" width="400"></p>
       </td>
       <td>
         <p>Advanced options:</p>
@@ -114,7 +114,7 @@ Start the plugin from `Plugins > StarDist > StarDist 2D`. The following paramete
 
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check `Show All` in the ROI Manager):
 
-<img src="/media/plugins/stardist-usage-output.png" height="240"/>
+<img src="/media/plugins/stardist-usage-output.png" alt="StarDist segmentation output with label image and ROIs" height="240"/>
 
 ### Scripting/Batch-Processing
 

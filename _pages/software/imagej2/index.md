@@ -44,7 +44,7 @@ ImageJ2 provides many new features and capabilities:
 
 ### Integrated search bar
 
-<img src="/media/search-bar.png" width="600"/>
+{% include img src="search-bar" alt="ImageJ2 integrated search bar" width="600" %}
 
 The search bar finds commands, and can search the ImageJ wiki as well as the [Image.sc Forum](http://forum.image.sc/) if you check those respective checkboxes.
 

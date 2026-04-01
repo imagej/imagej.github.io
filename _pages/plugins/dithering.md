@@ -29,7 +29,7 @@ Dithering results are best rendered when the image is displayed or printed using
 
 The following images have been magnified by a factor of 2 to show the individual pixels.
 
-![](/media/plugins/ditheringmontage.png)
+![Ditheringmontage](/media/plugins/ditheringmontage.png)
 
 ## Macro code
 

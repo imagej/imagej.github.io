@@ -14,7 +14,7 @@ team-maintainer: 'Adrian Daerr | http://www.msc.univ-paris-diderot.fr/~daerr/'
 
 {% include info-box source='https://github.com/adaerr/pendent-drop'  %}
 
-![](/media/plugins/eaucontrastemaxfit.jpg)
+![Eaucontrastemaxfit](/media/plugins/eaucontrastemaxfit.jpg)
 
 *Pendent drop profile integration and fitting*
 

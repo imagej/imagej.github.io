@@ -7,7 +7,7 @@ nav-title: Select Illumination
 
 When views have more than one illumination, you can select the best one by selecting the views you wish to process and clicing {% include bc path='Preprocessing|Select Best Illuminations'%} in the **right-click menu**.
 
-![](/media/plugins/bigstitcher/bigstitcher-illu-1.png)
+![BigStitcher Illu 1](/media/plugins/bigstitcher/bigstitcher-illu-1.png)
 
 -   Ticking **Process only selection** will limit the illumination selection to the views currently selected in the main window. Select which views should be processed and if you want to review the selections before applying.
 
@@ -25,10 +25,10 @@ In general, our experience is that all three methods provide similar results, wi
 
 -   If the **Show selection results before applying** option was selected a new window showing the assigned illumination for all selected views will appear. The selected illumination can be manually changed for each view by changing the Illumination attribute in the list.
 
-![](/media/plugins/bigstitcher/bigstitcher-illu-2.png)
+![BigStitcher Illu 2](/media/plugins/bigstitcher/bigstitcher-illu-2.png)
 
 After selecting the best illumination, only the chosen illumination will be used for the stitching and will appear in the BigDataViewer.
 
-<img src="/media/plugins/bigstitcher/bigstitcher-illu-3.png" width="800"/>
+<img alt="BigStitcher Illu 3" src="/media/plugins/bigstitcher/bigstitcher-illu-3.png" width="800"/>
 
 Go back to the [main page](/plugins/bigstitcher#documentation)

@@ -58,7 +58,7 @@ There are two ways to start the recorder: {% include bc path='Scripts|Record...'
 As a rule-of-thumb, commands that are simple or do not involve prompts record flawlessly. This includes setting filters for visibility of tags, applying Tags, or filtering paths in the Path Manager. Commands for fully automated reconstructions, or generating secondary layers _should_ work well. However, many others remain limited.
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-script-recorder.png" title="SNT's Script Recorder" width="650px" />
+  <img src="/media/plugins/snt/snt-script-recorder.png" alt="Script recorder" title="SNT's Script Recorder" width="650px" />
 </div>
 
 
@@ -66,7 +66,7 @@ As a rule-of-thumb, commands that are simple or do not involve prompts record fl
 
 SNT's Scripting REPL (Read–Eval–Print Loop) is opened using {% include bc path='Scripts|New|REPL'%}. It is a [Script Interpreter](/scripting/interpreter) instance with pre-initialized variables that are entry-points to the API of current SNT session. The REPL serves as a commandline prompt with access to all of SNT classes.
 <div align="center">
-  <img src="/media/plugins/snt/snt-repl.png" title="SNTService being accessed in SNT's Scripting REPL" width="700px" />
+  <img src="/media/plugins/snt/snt-repl.png" alt="Repl" title="SNTService being accessed in SNT's Scripting REPL" width="700px" />
 </div>
 The REPL has access to _all_ of SNT's API. The prompt does not feature auto-completion but you can use `api(object, 'optional keyword')` to obtain a list of methods associated with an object. Example: To find out all of the 'demo' methods in SNTService, one would use:
 
@@ -109,7 +109,7 @@ SNTChart.showHistogram3D(table.get("y"), table.get("z"), ColorMaps.get("viridis"
 Note that this approach would work for both local and remote files. The result of both snippets side-by-side:
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-analysis-external-data.png" title="Analysis of tabular data in SNT" width="700px" />
+  <img src="/media/plugins/snt/snt-analysis-external-data.png" alt="Analysis external data" title="Analysis of tabular data in SNT" width="700px" />
 </div>
 
 

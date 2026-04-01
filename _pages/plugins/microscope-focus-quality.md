@@ -8,7 +8,7 @@ doi: 10.1186/s12859-018-2087-4
 
  
 
-<img src="/media/mifqc.png" width="900"/> 
+<img src="/media/mifqc.png" alt="Mifqc" width="900"/> 
 
 This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 

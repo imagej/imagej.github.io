@@ -41,7 +41,7 @@ For the DoG detector, unsurprisingly, we find that the execution time is proport
 
 The LoG detector operates in Fourier space, and because of the Fourier transform implementation we use, the images are padded with 0s to reach a size equal to a power of 2. This does not show here as all but one tests are made with such a size. Still, the execution time slightly deviates from the linear case, and shows a slight quadratic shape. The best linear fit yields a low in *t (ms) = 2.8e-4 x Npixels*, showing that the LoG detector is slightly quicker than the DoG detector.
 
-<img src="/media/plugins/trackmate/trackmate-dogandlogtimevspixels.png" width="400"/>
+<img src="/media/plugins/trackmate/trackmate-dogandlogtimevspixels.png" alt="Dogandlogtimevspixels" width="400"/>
 
 #### Processing time for a 3D image as a function of its size
 
@@ -58,7 +58,7 @@ And again, the processing time is found to be linear with the number of pixels. 
 
 Interestingly, the LoG detector seems to become the slowest at intermediate size, which I cannot interpret well.
 
-<img src="/media/plugins/trackmate/trackmate-dogandlogtimevspixels3d.png" width="400"/>
+<img src="/media/plugins/trackmate/trackmate-dogandlogtimevspixels3d.png" alt="Dogandlogtimevspixels3d" width="400"/>
 
 #### Processing time for a 2D image as a function of the spot radius
 
@@ -74,7 +74,7 @@ The LoG detector shows a near-constant processing time, which makes it desirable
 
 This time we used a 256x256x256 3D image, but with otherwise the same parameters.
 
-<img src="/media/plugins/trackmate/trackmate-dogandlogtimevsradius3d.png" width="400"/>
+<img src="/media/plugins/trackmate/trackmate-dogandlogtimevsradius3d.png" alt="Dogandlogtimevsradius3d" width="400"/>
 
 The processing time increases, but this time deviates slightly from linearity in the DoG case. We retrieve the 3D kernel overhead we had for the 3D images.
 

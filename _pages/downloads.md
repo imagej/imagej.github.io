@@ -7,7 +7,7 @@ description: This page provides download links for ImageJ.
 
 Which distribution of ImageJ would you like to download?
 
-| [![](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![](/media/icons/imagej.png){:width="96px"}<br>ImageJ](https://imagej.net/ij/download.html) |
+| [![Fiji](/media/icons/fiji.svg){:width="96px"}<br>Fiji](/software/fiji/downloads) | [![Imagej](/media/icons/imagej.png){:width="96px"}<br>ImageJ](https://imagej.net/ij/download.html) |
 {:.plain.center.center-text}
 
 {% capture help-me-decide %}

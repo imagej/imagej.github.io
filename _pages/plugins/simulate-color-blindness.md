@@ -16,7 +16,7 @@ It is based on:
 
 Choose one of the color blindness modes in the dialog, then press OK:
 
-![](/media/plugins/simulate-color-blindness-dialog.png)
+![Simulate color blindness dialog](/media/plugins/simulate-color-blindness-dialog.png)
 
 Here's how the results look like when applied to the *Clown* sample image:
 

@@ -17,7 +17,7 @@ There are two ways to start up the Op Finder:
 # Parts of the Op Finder
 
 
-![](/media/plugins/labeledopfinder.png)
+![Labeledopfinder](/media/plugins/labeledopfinder.png)
 
 **Labeled components**
 
@@ -87,7 +87,7 @@ Code snippets are available in the [Developer view](#for-developers). These are 
 
 1\. The first thing to do is find an Op of interest. In this case, we start from the [User view](#for-users) and see that there is a Convolve Op we want to try:
 
-![](/media/plugins/1-select-op.png)
+![1 select op](/media/plugins/1-select-op.png)
 
 2\. In the [Script Editor](/scripting/script-editor) (the keyboard shortcut {% include key key='{' %} (open curly bracket) opens the editor), we need to add a reference to the `OpService` which will be our entry point for Op usage:
 

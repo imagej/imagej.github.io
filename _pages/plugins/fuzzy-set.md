@@ -15,7 +15,7 @@ We began developing a GUI based java application separate from the Fiji platform
 Our application employs the principle of fuzzy sets to transform pixels with the hope of enhancing an image.  The Fuzzy Set plugin inputs the pixels from an image into an array.  The user provides, through the use of an input window, numbers that correspond to values (except z0) in the following equation.
 
 <div style="text-align: center;" markdown=1>
-![](/media/plugins/fuzzysetformula.gif)
+![Fuzzy set transformation formula](/media/plugins/fuzzysetformula.gif)
 </div>
 
 All images utilize the gray levels of the image; therefore, limiting the range of output values from "0-255" ("0" corresponds to totally black, likewise "255" corresponds to totally white).
@@ -46,7 +46,7 @@ Launch the Fiji application until the following window appears.
 
 <div style="text-align: center;">
 
-![](/media/plugins/openinganimage.jpg)
+![Fiji application main window](/media/plugins/openinganimage.jpg)
 
 </div>
 
@@ -58,9 +58,9 @@ Select the Plugin from the application window. See diagram below.
 
 <div style="text-align: center;">
 
-![](/media/plugins/launchingplugin.jpg)
+![Launching the Fuzzy Set plugin from Plugins menu](/media/plugins/launchingplugin.jpg)
 
-![](/media/plugins/launchingplugin2.jpg)
+![Fuzzy Set plugin in the Plugins menu list](/media/plugins/launchingplugin2.jpg)
 
 </div>
 
@@ -68,7 +68,7 @@ A user may now set the appropriate user defined values.
 
 <div style="text-align: center;">
 
-![](/media/plugins/selectvalues.jpg)
+![Fuzzy Set control panel for entering transformation values](/media/plugins/selectvalues.jpg)
 
 </div>
 
@@ -80,7 +80,7 @@ Below is an example of a histogram window.
 
 <div style="text-align: center;">
 
-![](/media/plugins/histogramwindow.jpg)
+![Histogram window showing pixel distribution of original image](/media/plugins/histogramwindow.jpg)
 
 </div>
 
@@ -90,7 +90,7 @@ Below is an example of the modified Histogram
 
 <div style="text-align: center;">
 
-![](/media/plugins/modifiedhistogramwindow.jpg)
+![Modified histogram window after fuzzy set transformation](/media/plugins/modifiedhistogramwindow.jpg)
 
 </div>
 
@@ -100,7 +100,7 @@ Following is an example of the Modified Image Window (image supplied by author)
 
 <div style="text-align: center;">
 
-![](/media/plugins/modifiedwindow.jpg)
+![Modified image window showing transformed result](/media/plugins/modifiedwindow.jpg)
 
 </div>
 
@@ -110,21 +110,21 @@ The user of the application can save results using the save as feature under the
 
 ## Demo
 
-We did many experiments with the application, but to show case one such result, we have included a demo below. ![](/media/2.jpg) ![](/media/plugins/modae.jpg)
+We did many experiments with the application, but to show case one such result, we have included a demo below. ![Demo original image](/media/2.jpg) ![Demo transformed image](/media/plugins/modae.jpg)
 
 <div>
 
-![](/media/plugins/hist2.jpg) Histogram of Image Before Transformation
+![Histogram of image before transformation](/media/plugins/hist2.jpg) Histogram of Image Before Transformation
 
 </div>
 
-![](/media/plugins/histmod.jpg) Histogram of Image After Transformation
+![Histogram of image after transformation](/media/plugins/histmod.jpg) Histogram of Image After Transformation
 
 ## Acknowledgements
 
 <div style="text-align: center;">
 
-![](/media/dr.jpg)
+![Dr. Nikolay Sirakov](/media/dr.jpg)
 
 </div>
 

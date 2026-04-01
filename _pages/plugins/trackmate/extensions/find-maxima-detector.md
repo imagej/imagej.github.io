@@ -28,4 +28,4 @@ Copy the jar file into your fiji plugins folder. If you start TrackMate it is de
 
 ## Example
 
-The example shows a typical image of scattering nanoparticles. The detection was done with a **estimated blob diameter** of 10 and **tolerance** of 10: ![](/media/plugins/trackmate/findmax-result.png)
+The example shows a typical image of scattering nanoparticles. The detection was done with a **estimated blob diameter** of 10 and **tolerance** of 10: ![Findmax result](/media/plugins/trackmate/findmax-result.png)

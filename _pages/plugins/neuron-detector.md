@@ -27,7 +27,7 @@ Please cite:
 
 Example video obtained with GCampf6 marker \| Processed video \| Object map obtained with [3D Objects Counter](/plugins/3d-objects-counter)
 
-![](/media/plugins/example-neuron-activation-300.gif) ![](/media/plugins/example-neurons-activation-postprocessed-300.gif) ![](/media/plugins/example-neurons-activation-objects-map-300.gif)
+![Example neuron activation 300](/media/plugins/example-neuron-activation-300.gif) ![Example neurons activation postprocessed 300](/media/plugins/example-neurons-activation-postprocessed-300.gif) ![Example neurons activation objects map 300](/media/plugins/example-neurons-activation-objects-map-300.gif)
 
 ------------------------------------------------------------------------
 

@@ -25,11 +25,11 @@ All source code is on [GitHub](/develop/github).
 
 | Logo                                       | Organization                          | Purpose                                                         |
 |--------------------------------------------|---------------------------------------|-----------------------------------------------------------------|
-| ![](/media/icons/scijava.png){:width="28"} | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
-| ![](/media/icons/imagej2.png){:width="28"} | [ImageJ2](https://github.com/imagej)  | A general-purpose image processing application                  |
-| ![](/media/icons/imglib2.png){:width="28"} | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
-| ![](/media/icons/scifio.png){:width="28"}  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
-| ![](/media/icons/fiji.png){:width="28"}    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ and ImageJ2       |
+| ![Scijava](/media/icons/scijava.png){:width="28"} | [SciJava](https://github.com/scijava) | Common utilities, plugin infrastructure, scripting, the context |
+| ![Imagej2](/media/icons/imagej2.png){:width="28"} | [ImageJ2](https://github.com/imagej)  | A general-purpose image processing application                  |
+| ![Imglib2](/media/icons/imglib2.png){:width="28"} | [ImgLib2](https://github.com/imglib)  | Generic multi-dimensional data processing                       |
+| ![Scifio](/media/icons/scifio.png){:width="28"}  | [SCIFIO](https://github.com/scifio)   | Extensible image file I/O                                       |
+| ![Fiji](/media/icons/fiji.png){:width="28"}    | [Fiji](https://github.com/fiji)       | A "batteries-included" distribution of ImageJ and ImageJ2       |
 
 See the [Architecture](/develop/architecture) page for more information about the relationship between these projects.
 

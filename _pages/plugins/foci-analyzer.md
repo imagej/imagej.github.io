@@ -66,7 +66,7 @@ In case you also want to use Cellpose segmentation you additionally need:
 The macro starts with a large dialog containing all options and parameters (click to enlarge):
 The dialog has several (color-coded) sections that are discussed below. All settings in this dialog will be remembered after you click `OK`.
 
-<img src="https://github.com/user-attachments/assets/438a42c7-90d9-454d-b4e6-a15809e94f75" width="600">
+<img src="https://github.com/user-attachments/assets/438a42c7-90d9-454d-b4e6-a15809e94f75" alt="438a42c7 90d9 454d b4e6 a15809e94f75" width="600">
 
 ### File settings
 

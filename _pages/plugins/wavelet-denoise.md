@@ -14,7 +14,7 @@ source-url: https://github.com/LMCF-IMG/Wavelet_Denoise
 
 ## Plugin for wavelet-based denoising/filtering image data
 
-<img src="/media/plugins/wavelet-denoise-pics-imagej-syncwins.jpg" width="800"/>
+<img src="/media/plugins/wavelet-denoise-pics-imagej-syncwins.jpg" alt="Wavelet denoise pics imagej syncwins" width="800"/>
 
 When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture ("Filtered-" prefix), the third one contains the wavelet coefficients ("WT-" prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture ("WT-NoStretch-" prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. <i>Applying Synchronize All</i> in the <i>Sync Wins</i> dialog is helpful when navigating through image stacks.
 

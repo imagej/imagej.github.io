@@ -41,7 +41,7 @@ Source repository for each core update site:
 
 First of all, start the [updater](/plugins/updater) with {% include bc path='Help | Update' %} and click on {% include button label="Manage update sites" %}:
 
-<img src="/media/mamed-3.jpg" width="770"/>
+<img src="/media/mamed-3.jpg" alt="Mamed 3" width="770"/>
 
 From this dialog, you can edit the desired update site(s) to add your authentication information.
 
@@ -58,7 +58,7 @@ In the *Manage update sites* dialog, on the Fiji update site line, add the follo
 
 Note that your username will always start with an upper case letter. It should look like this:
 
-<img src="/media/update-sites/update-site-fiji-creds.png" width="770"/>
+<img src="/media/update-sites/update-site-fiji-creds.png" alt="Update site fiji creds" width="770"/>
 
 You can now close the *Manage update sites* window and go on to [ Uploading your resources](#uploading-your-resources).
 
@@ -73,7 +73,7 @@ In the *Manage update sites* dialog, on the ImageJ update site line, add the fol
 
 It should look like this:
 
-<img src="/media/update-sites/update-site-ij2-creds.png" width="770"/>
+<img src="/media/update-sites/update-site-ij2-creds.png" alt="Update site ij2 creds" width="770"/>
 
 You can now close the *Manage update sites* window and go on to [Uploading your resources](#uploading-your-resources).
 

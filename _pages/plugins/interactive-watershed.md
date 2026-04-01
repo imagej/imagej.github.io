@@ -13,7 +13,7 @@ team-maintainer: "@benoalo"
 {% capture source -%} {% include github org='mpicbg-scicomp' repo='Interactive-H-Watershed' %} {%- endcapture %}
 {% include info-box filename='SCF-MPI-CBG update site' source=source %}
 
-<img src="/media/interactivewatershed-illustration.png" width="500"/>
+<img src="/media/interactivewatershed-illustration.png" alt="Interactive Watershed plugin showing control panel and segmentation overlay" width="500"/>
 
 <div align="center">
 
@@ -35,7 +35,7 @@ The 2 following subsection gives additional details on watershed working princip
 
 If we interpret images as landscapes of hills and valleys, the watershed algorithm gradually flood the valleys starting from their lowest point (the image local minima). When the floodings of two minima meet at a sadle they remain distinct as each minima region is labelled with a distinct color. The flooding stops when all the image is covered. As objects do not always cover the whole image a threshold can be set to stop region the region flooding. Alternatively the flooding can be started from local maxima. Figure 2 shows the flooding of 3 peaks for different values of the treshold parameter.
 
-<img src="/media/plugins/figure-watershed.png" width="800"/>
+<img src="/media/plugins/figure-watershed.png" alt="Watershed algorithm flooding illustration" width="800"/>
 
 <div align="center">
 
@@ -51,7 +51,7 @@ There exists many different ways of detecting local maxima. H-maxima focuses on 
 
 We call H-Watershed the segmentation obtained by flooding the H-maxima of an image. Such segmentation has 2 parameters. The Threshold, T, that stops the flooding of the image and the H-maxima robustness, H, that defines the flooding initialization.
 
-<img src="/media/plugins/figure-hmax-hwatershed-v3.png" width="800"/>
+<img src="/media/plugins/figure-hmax-hwatershed-v3.png" alt="H-Maxima detection and H-Watershed segmentation for different H values" width="800"/>
 
 <div align="center">
 
@@ -96,7 +96,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 -   **Export regions mask**: if checked the export button will export a binary image rather than a label image. if the image is 2D this binary image is compatible with the particle analyzer from ImageJ.
 -   **Export**: Once satisfied with the segmentation visible on screen the corresponding label map can be exported to an ImagePlus that can be further analyzed with ImageJ. The export action appear in the macro recorder for Image Macro Language and Jython language.
 
-<img src="/media/plugins/figure-iws-controlpanel.png" width="800"/>
+<img src="/media/plugins/figure-iws-controlpanel.png" alt="Interactive Watershed control panel for 2D and 3D images" width="800"/>
 
 <div align="center">
 
@@ -104,7 +104,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-<img src="/media/plugins/figure-iws-visualisationmode.png" width="800"/>
+<img src="/media/plugins/figure-iws-visualisationmode.png" alt="Interactive Watershed segmentation display modes comparison" width="800"/>
 
 <div align="center">
 
@@ -112,7 +112,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-<img src="/media/plugins/figure-iws-sideviews-v2.png" width="800"/>
+<img src="/media/plugins/figure-iws-sideviews-v2.png" alt="Interactive Watershed 3D side views in XY, YZ and XZ orientations" width="800"/>
 
 <div align="center">
 
@@ -120,7 +120,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 </div>
 
-<img src="/media/plugins/figure-iws-custombgimage.png" width="800"/>
+<img src="/media/plugins/figure-iws-custombgimage.png" alt="Interactive Watershed with custom background image for quality assessment" width="800"/>
 
 <div align="center">
 

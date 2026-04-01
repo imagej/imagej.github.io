@@ -113,7 +113,7 @@ This script just shows you how to use this construct to build and populate a mod
 
 Spot quality and link cost are typically useful to quantify automatic spot detection and linking. We typically use negative values for these two numbers when doing manual edits.
 
-The script below does this: ![](/media/plugins/trackmate/trackmate-animatedname.gif)
+The script below does this: ![Animatedname](/media/plugins/trackmate/trackmate-animatedname.gif)
 
 {% include code org='fiji' repo='TrackMate' branch='master' path='scripts/ExampleScript_CreateTrackingData.py' %}
 

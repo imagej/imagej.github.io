@@ -24,7 +24,7 @@ It works with stacks, is parallelized, has a preview mode and is able to resolve
 
 ## Examples
 
-![](/media/plugins/cnt-ridge-detection-original.png) ![](/media/plugins/cnt-ridge-detection-example.png)
+![Cnt ridge detection original](/media/plugins/cnt-ridge-detection-original.png) ![Cnt ridge detection example](/media/plugins/cnt-ridge-detection-example.png)
 
 This example shows the application of the plugin on images of carbon nanotubes (Sigma = 1.5, Lower Threshold = 1.3, Higher Threshold = 7).
 
@@ -88,19 +88,19 @@ This method makes the assumption that when two ridges overlap, it is more likely
 
 If you use this method of overlap resolution, it is recommended that you first tune the Ridge Detection parameters with `Preview` enabled to get a minimal starting set of junction points - so that each ridge matches reality as best as possible. For example:
 
-<img src="/media/plugins/slope-detection-low-sigma.png" width="325"/>
+<img src="/media/plugins/slope-detection-low-sigma.png" alt="Ridge detection with low sigma (1.6) producing unsuitable junction points" width="325"/>
 
 This detection with a sigma of 1.6 produces a set of lines and junctions not suited to slope-based overlap detection.
 
-<img src="/media/plugins/slope-detection-high-sigma.png" width="325"/>
+<img src="/media/plugins/slope-detection-high-sigma.png" alt="Ridge detection with higher sigma (3.0) showing real junction points" width="325"/>
 
 The same image with a sigma of 3.0. These are "real" junction points that will allow reasonable overlap detection via line slope.
 
-<img src="/media/plugins/slope-detection-bad.png" width="325"/>
+<img src="/media/plugins/slope-detection-bad.png" alt="Poor overlap detection due to superfluous junction point" width="325"/>
 
 In this image we see poor overlap detection. In this case due to a superfluous junction point at the bottom of one arm, leading to a misdiagnosis of what lines are overlapping.
 
-<img src="/media/plugins/slope-detection-success.png" width="325"/>
+<img src="/media/plugins/slope-detection-success.png" alt="Successful ridge detection with slope-based overlap detection" width="325"/>
 
 Successful ridge detection with slope-based overlap detection enabled. Line 134 is selected to illustrate the selection of a complete line despite numerous intersections.
 
@@ -128,6 +128,6 @@ We think the best way is to cite the formal method and the used implementation:
 
 **Implementation**:
 
-<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection"><img src="/media/plugins/ij-ridgedetection.svg" width="174px"/></a>
+<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection"><img src="/media/plugins/ij-ridgedetection.svg" alt="DOI badge" width="174px"/></a>
 
 {% include citation %}

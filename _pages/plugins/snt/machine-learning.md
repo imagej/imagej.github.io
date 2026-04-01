@@ -37,7 +37,7 @@ The table below summarizes key differences between Labkit and TWS (as of SNT v4.
 
 ## Importing Models
 
-<img align="right" width="400" src="/media/plugins/snt/import-weka-model.png" title="Import Models prompt (v4.3.0)" />
+<img align="right" width="400" src="/media/plugins/snt/import-weka-model.png" alt="Import weka model" title="Import Models prompt (v4.3.0)" />
 
 Importing of models can be done via the [Secondary layer menu](manual#tracing-on-secondary-image-layer). Once the trained model is imported, it is applied to the image being traced, and the resulting classification is loaded as a secondary tracing image. The import prompt has the following options:
 

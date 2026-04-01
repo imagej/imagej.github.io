@@ -25,13 +25,13 @@ Segmentation Editor Demo Screencast (5 min 30 sec):
 
 Open the stack containing the structures you want to reconstruct or segment. Go the to the plugins menu and click on "Segmentation Editor". Your stack will be embedded into a segmentation window, and another window opens, which will contain your labels later.
 
-![](/media/plugins/segmentation-editor-1.png)
+![Segmentation editor 1](/media/plugins/segmentation-editor-1.png)
 
 ## Material
 
 On the left side of the segmentation window, you see a list of available materials. You can extend and modify these materials by right-clicking into the list. For a first start, right-click on Interior, select "Rename" from the popup menu and specify the name of the label you want.
 
-![](/media/plugins/segmentation-editor-2.png)
+![Segmentation editor 2](/media/plugins/segmentation-editor-2.png)
 
 ## Labelling
 
@@ -39,17 +39,17 @@ Now go through the slices and use ImageJ's selection tools to select the regions
 
 After selecting the regions to label in each slice, click the I-Button (which is next to the Plus and Minus button). This interpolates if you didn't make selections on each slice. Now activate the "3d" checkbox. It means that the selections of all slices will be assigned to a material, not only the selection of the current slice.
 
-![](/media/plugins/segmentation-editor-3.png)
+![Segmentation editor 3](/media/plugins/segmentation-editor-3.png)
 
 Now go to the material list, select the material which you want to assign, and click on the Plus button. That's it.
 
-![](/media/plugins/segmentation-editor-4.png)
+![Segmentation editor 4](/media/plugins/segmentation-editor-4.png)
 
 After finishing, click Ok to close the segmentation window. The labels will remain open. You must store them yourself.
 
 Have also a look at our 3D viewer if you want to see your result in 3D.
 
-![](/media/plugins/segmentation-editor-medulla-r-labels-rotating.gif)
+![Segmentation editor medulla r labels rotating](/media/plugins/segmentation-editor-medulla-r-labels-rotating.gif)
 
 ## Starting from a macro
 

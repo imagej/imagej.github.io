@@ -40,7 +40,7 @@ A typical dataset consists of a single two-dimensional (2d) image of the non-dyn
 
 The welcome panel will open.
 
-<img src="/media/plugins/mtrack/welcomea.png" width="500"/>
+<img src="/media/plugins/mtrack/welcomea.png" alt="Welcomea" width="500"/>
 
 #### Choose Mode
 
@@ -76,13 +76,13 @@ The default algorithm to identify the seeds as objects is called Maximally Stabl
 
 The end-points will be displayed as green circles. A "Next" button appears on the panel, which allows the user to flip to the next panel.
 
-<img src="/media/plugins/mtrack/msersimple.png" width="300"/>
+<img src="/media/plugins/mtrack/msersimple.png" alt="Msersimple" width="300"/>
 
 #### Options
 
 Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options:
 
-<img src="/media/options.png" width="300"/>
+<img src="/media/options.png" alt="Options" width="300"/>
 
 **Deselect and select ends**
 

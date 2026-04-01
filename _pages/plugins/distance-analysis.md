@@ -20,7 +20,7 @@ The plugin can be used with labelled images, but it also integrates tools for th
 
 Jean-François Gilles, Institute of Biology Paris Seine (France). jean-francois.gilles (at) upmc.fr
 
-Thomas Boudier ![](/media/emailboudier.png), [CENTURI](https://centuri-livingsystems.org), Université Aix-Marseille, France.
+Thomas Boudier ![Emailboudier](/media/emailboudier.png), [CENTURI](https://centuri-livingsystems.org), Université Aix-Marseille, France.
 
 ## Features
 

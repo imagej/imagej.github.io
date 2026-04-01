@@ -27,7 +27,7 @@ For example, if we look at the [Greeting.py](https://github.com/scijava/scriptin
 
 We see that an input parameter `name` of type `String` is declared. `@Parameters` are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the `name` parameter will automatically be harvested via a pop-up dialog:
 
-<img src="/media/scripting/scriptparams.png" width="450"/>
+{% include img src="scriptparams" alt="Script parameters dialog" width="450" %}
 
 We could also run this script [headlessly](/scripting/headless), thanks to the general nature of `@parameters`.
 
@@ -71,7 +71,7 @@ Different styles are also possible.
 #@ Float   (label="Slider with float", style="slider", min=0, max=1, stepSize=0.1) myfloat
 ```
 
-<img src="/media/scripting/scriptparameters-integerstyles.jpg" width="450"/>
+{% include img src="scriptparameters-integerstyles" alt="Integer and decimal input widget styles" width="450" %}
 
 It is also possible to specify a format with a fixed number of decimals...
 ```javascript
@@ -149,7 +149,7 @@ This property set if the parameter should be displayed, editable and/or recorded
 \- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option `required` should be set to false.
 
 
-<img src="/media/scripting/scriptparam-messagestring.jpg" width="450"/>
+{% include img src="scriptparam-messagestring" alt="Script parameter message string example" width="450" %}
 
 ```javascript
 #@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
@@ -162,7 +162,7 @@ You can [use HTML](https://forum.image.sc/t/multiline-messages-in-dialog-widgets
 #@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
 #@ Integer anIntParam
 ```
- ![](/media/scripting/scijavamultilinemessage.png)
+ ![Scijavamultilinemessage](/media/scripting/scijavamultilinemessage.png)
 
 {% include notice icon="warning" content='Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and will be corrected in the future.' %}
 
@@ -177,7 +177,7 @@ The choice widget can have different styles like dropdown list or radio buttons.
 print(myChoice123)
 print(myChoiceABC)
 ```
-![](/media/scripting/input-styles.png)
+![Input styles](/media/scripting/input-styles.png)
 
 ### Files and Folders
 

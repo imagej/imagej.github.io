@@ -34,11 +34,11 @@ It you are processing a stack, one additional option is available: **Stack** can
 
 Which method segments your data best? You can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, so one can explore how the different algorithms perform on an image or stack.
 
-![](/media/plugins/epith.png)
+![Epith](/media/plugins/epith.png)
 
 Original image
 
-![](/media/plugins/epithm2.png)
+![Epithm2](/media/plugins/epithm2.png)
 
 Try all methods.
 

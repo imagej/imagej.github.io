@@ -17,7 +17,7 @@ team-founders: ["@iarganda", "@dlegland"]
 
 ## Introduction
 
-<img src="/media/plugins/interactive-marker-controlled-watershed-plugin-overview.png" width="400"/> Similar to the [Marker-controlled Watershed](/plugins/marker-controlled-watershed) plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
+<img src="/media/plugins/interactive-marker-controlled-watershed-plugin-overview.png" alt="Interactive marker controlled watershed plugin overview" width="400"/> Similar to the [Marker-controlled Watershed](/plugins/marker-controlled-watershed) plugin, this ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and 32-bit) in 2D and 3D using the marker-controlled watershed algorithm by Meyer and Beucher (1990) and it floods the image from specific seed points, **but this time the points are introduced interactively by the user**.
 
 ## Usage
 

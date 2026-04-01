@@ -22,7 +22,7 @@ team-maintainer: Christophe Leterrier | mailto:christophe_dot_leterrier_at_gmail
 
 This plugin stabilizes jittery image stacks using the Lucas-Kanade algorithm. It supports both grayscale and color images.
 
-![](/media/plugins/image-stabilizer-example.gif) ![](/media/plugins/image-stabilizer-examplecolor.gif)
+![Image stabilizer example](/media/plugins/image-stabilizer-example.gif) ![Image stabilizer examplecolor](/media/plugins/image-stabilizer-examplecolor.gif)
 
 ## How does it work?
 

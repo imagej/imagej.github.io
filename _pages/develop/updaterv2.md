@@ -23,7 +23,7 @@ The core plugins written in Java, versioned via Maven and distributed via update
 -   each time Fiji is started, these update sites are checked for new content
 -   in case there is new content, the user will be asked to approve the updates
 
-![](/media/develop/user-updatesite.png)
+![User updatesite](/media/develop/user-updatesite.png)
 
 -   the user can manually add additional update sites which will then also be checked for updates on startup
 
@@ -396,7 +396,7 @@ Vision: Make people looking forward to getting updates, because they get to know
 
 ### Routing for available update sites / updater upgrades
 
-![](/media/develop/availablesitesrouting.png)
+![Availablesitesrouting](/media/develop/availablesitesrouting.png)
 
 A server providing the official update sites serves different content depending if the updater is requesting them via HTTP or HTTPS. The current updater (V0) should receive an upgrade to V1 via HTTP and HTTPS. The updater V1 should only be able to upgrade to V2 if a connection via HTTPS can be established. Starting from V2 official updates will only be shipped via HTTPS.
 

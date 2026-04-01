@@ -59,4 +59,4 @@ We think the best way is to cite the formal method and the used implementation:
 
 **Implementation:**
 
-<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means"><img src="/media/plugins/zenodo.35114.svg" width="174px"/></a>
+<a href="https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means"><img src="/media/plugins/zenodo.35114.svg" alt="Zenodo.35114" width="174px"/></a>

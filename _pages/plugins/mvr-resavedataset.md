@@ -9,9 +9,9 @@ Resaving a dataset is a simple two step process:
 -   select existing dataset
 -   define resaving parameters
 
-![](/media/plugins/mvr-resave1.png)
+![Mvr resave1](/media/plugins/mvr-resave1.png)
 
-![](/media/plugins/mvr-resave2.png)
+![Mvr resave2](/media/plugins/mvr-resave2.png)
 
 Some log output shows the resaving process.
 
@@ -30,4 +30,4 @@ Thu Aug 21 13:36:24 CEST 2014: Opening '/Users/janosch/no_backup/HisYFP/././spim
 
 Finally you can use [BigDataViewer](/plugins/bdv) to view your data set.
 
-![](/media/plugins/mvr-resave3.png)
+![Mvr resave3](/media/plugins/mvr-resave3.png)

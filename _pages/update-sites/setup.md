@@ -28,17 +28,17 @@ You can also request:
 
 To start using your update site, in ImageJ2, start the [Updater](/plugins/updater) with {% include bc path='Help | Update' %} and click on the {% include button label="Manage Update Sites" %} button:
 
-<img src="/media/update-sites/manage-sites.png" width="770"/>
+<img src="/media/update-sites/manage-sites.png" alt="Manage sites" width="770"/>
 
 ### Specifying your site
 
 Click the {% include button label="Add Unlisted Site" %} button. 
 
-<img src="/media/update-sites/add-update-site-1.png" width="770"/>
+<img src="/media/update-sites/add-update-site-1.png" alt="Add update site 1" width="770"/>
 
 Using the URL and upload-username obtained above for [hosted](#creating-a-hosted-update-site) or [self-owned](#adding-an-update-site-on-your-own-server) sites, enter your site's complete URL in the **URL** column and `webdav:<upload-username>` in the **Host** column. Optionally, you can edit the **Name** column for a local nickname to identify your site.
 
-<img src="/media/update-sites/add-update-site-2.png" width="770"/>
+<img src="/media/update-sites/add-update-site-2.png" alt="Add update site 2" width="770"/>
 
 ### Dedicated plugin update sites
 
@@ -56,7 +56,7 @@ To create such an update site, post on the [Image.sc Forum](https://forum.image.
 
 If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {% include bc path='Help | Update'%} and click the {% include button label="Manage update sites" %} button:
 
-<img src="/media/mamed-3.jpg" width="770"/>
+<img src="/media/mamed-3.jpg" alt="Mamed 3" width="770"/>
 
 Now press the {% include button label="Add" %} button, provide a nick name for your update site, the URL of your web space, and *upload information*.
 
@@ -84,7 +84,7 @@ Note that you need to connect with command-line ssh first, to record the finger-
 
 If the update site has not been initialized yet (i.e. if nobody else has initialized that site yet), you will see a dialog like this:
 
-![](/media/update-sites/how-to-setup-a-plugin-distribution-site-6a.jpg)
+![How to setup a plugin distribution site 6a](/media/update-sites/how-to-setup-a-plugin-distribution-site-6a.jpg)
 
 Just click *OK* and let the updater upload an empty file index (it is stored in the file *db.xml.gz* which is also called the *database* in the documentation of the updater).
 
@@ -96,7 +96,7 @@ Note: you cannot simply copy files to your web space; the updater would miss all
 
 First, start the [updater](/plugins/updater):
 
-![](/media/update-sites/how-to-setup-a-plugin-distribution-site-1.jpg)
+![How to setup a plugin distribution site 1](/media/update-sites/how-to-setup-a-plugin-distribution-site-1.jpg)
 
 Click on the {% include button label="Manage Update Sites" %} button and verify:
 
@@ -105,7 +105,7 @@ Click on the {% include button label="Manage Update Sites" %} button and verify:
 
 For example:
 
-<img src="/media/update-sites/personal-update-site-7.png" width="770"/>
+<img src="/media/update-sites/personal-update-site-7.png" alt="Personal update site 7" width="770"/>
 
 If this info is missing, see [Specifying your site](#specifying-your-site). Once your login information is set you can {% include button label="Apply and Close" %} the `Manage Update Sites` window.
 
@@ -133,7 +133,7 @@ In this example, the plugin we'll be uploading is contained in *A\_Jolly\_Useful
 
 Select the file to upload, click under the *Stats/Action* column, or right-click (on macOS, {% include key keys='Ctrl|Left Click' %}) in any column, for the context menu and select *Upload to &lt;update site name&gt;*.
 
-<img src="/media/update-sites/upload-to-update-site.png" width="770"/>
+<img src="/media/update-sites/upload-to-update-site.png" alt="Upload to update site" width="770"/>
 
 {% include notice icon="info" content='The *Upload to &lt;update site name&gt;* option is only available if you entered your [upload credentials](#start-the-updater-and-check-your-update-site) and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the *View changes* view and resolve any pending changes - e.g. by updating or reverting to **Keep as-is**.' %}
 
@@ -141,7 +141,7 @@ Select the file to upload, click under the *Stats/Action* column, or right-click
 
 When a file is selected in Advanced Mode, a *Details* panel becomes available. This allows manual editing of important metadata.
 
-<img src="/media/update-sites/how-to-setup-a-plugin-distribution-site-15.jpg" width="770"/>
+<img src="/media/update-sites/how-to-setup-a-plugin-distribution-site-15.jpg" alt="How to setup a plugin distribution site 15" width="770"/>
 
 {% include notice icon="info" content='The *Details* panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the *Details* panel you can mark the jar for upload, even though the jar contents itself has not changed.' %}
 
@@ -149,7 +149,7 @@ When a file is selected in Advanced Mode, a *Details* panel becomes available. T
 
 Some files in your update site may only be appropriate for specific platforms (e.g. Mac, Windows, Linux): `dll` or `dylib` files, for example. In that case, the *Platform* field can be used as a "classifier," such that the updater will only download the given file if its platform value matches the current platform ImageJ is running on. This allows you to upload platform-specific binaries for all platforms to a single update site.
 
-<img src="/media/update-sites/change-platform.png" width="770"/>
+<img src="/media/update-sites/change-platform.png" alt="Change platform" width="770"/>
 
 Note that this field *must* have one of the following values:
 
@@ -173,7 +173,7 @@ Finally, click *Apply Changes (upload)* to upload your plugin to the server and 
 
 Check that your plugins are now registered as ImageJ plugins by selecting the *View files of the '\[your site name here\]' site* view option:
 
-<img src="/media/update-sites/updaterfinalscreen.jpg" width="770"/>
+<img src="/media/update-sites/updaterfinalscreen.jpg" alt="Updaterfinalscreen" width="770"/>
 
 That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [add your update site](/update-sites/following) to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.  
 For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).
@@ -188,7 +188,7 @@ An ImageJ update site is essentially just a record of the changes/modifications 
 
 In the {% include button label="Advanced Mode" %} view of the updater, you can select any installed file and use either the {% include button label="Uninstall" %} button, or drop-down menu entry, to mark an item for removal. Then when you {% include button label="Apply Changes" %}, the selected item(s) will be deleted from your local filesystem.
 
-<img src="/media/update-sites/uninstall.png" width="770"/>
+<img src="/media/update-sites/uninstall.png" alt="Uninstall" width="770"/>
 
 This is functionally equivalent to removing these files manually from your filesystem; feel free to do so before starting your ImageJ application.
 
@@ -198,7 +198,7 @@ Once you have removed the undesired files, go back to the {% include button labe
 
 When you find the uninstalled file(s) you can click their *Status/Action* and change it to **Mark obsolete (xxxxx)**. This option should always have an associated update site name; verify that it matches the update site you will be removing the file from.
 
-<img src="/media/update-sites/markobsolete.png" width="770"/>
+<img src="/media/update-sites/markobsolete.png" alt="Markobsolete" width="770"/>
 
 Marking a file as obsolete will change its status to **Remove it**, and the action button to {% include button label="Apply Changes (Upload)" %}
 

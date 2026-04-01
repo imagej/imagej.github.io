@@ -28,7 +28,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <th>Status</th>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej.png" width="64"/></td>
+      <td><img src="/media/icons/imagej.png" alt="ImageJ" width="64"/></td>
       <td><a href="/software/imagej">ImageJ</a></td>
       <td>{% include person id='rasband' %}</td>
       <td>The original version of ImageJ which has been in development since 1997.
@@ -41,7 +41,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej2.png" width="64"/></td>
+      <td><img src="/media/icons/imagej2.png" alt="ImageJ2" width="64"/></td>
       <td><a href="/software/imagej2">ImageJ2</a></td>
       <td><a href="/people">ImageJ2 developers</a></td>
       <td>A new version of ImageJ targeting scientific multidimensional image
@@ -56,7 +56,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/fiji.png" width="64"/></td>
+      <td><img src="/media/icons/fiji.png" alt="Fiji" width="64"/></td>
       <td><a href="/software/fiji">Fiji</a></td>
       <td><a href="/people">Fiji contributors</a></td>
       <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
@@ -68,7 +68,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="https://ij.imjoy.io/assets/icons/chrome/chrome-installprocess-128-128.png" width="64"/></td>
+      <td><img src="https://ij.imjoy.io/assets/icons/chrome/chrome-installprocess-128-128.png" alt="ImageJ.JS" width="64"/></td>
       <td><a href="/software/imagej-js">ImageJ.JS</a></td>
       <td>{% include person id='oeway' %}</td>
       <td>ImageJ.JS is a web version of ImageJ that runs in the browser without
@@ -92,7 +92,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Abandoned</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagesxm.png" width="64"/></td>
+      <td><img src="/media/icons/imagesxm.png" alt="ImageSXM" width="64"/></td>
       <td><a href="/software/imagesxm">ImageSXM</a></td>
       <td>Steve Barrett</td>
       <td>Image SXM is a version of NIH Image that has been extended to handle
@@ -101,7 +101,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Active</td>
     </tr>
     <tr>
-      <td><img src="/media/software/astroimagej.png" width="64"/></td>
+      <td><img src="/media/software/astroimagej.png" alt="AstroImageJ" width="64"/></td>
       <td><a href="http://www.astro.louisville.edu/software/astroimagej/">AstroImageJ</a></td>
       <td><a href="http://www.astro.louisville.edu/john_kielkopf/">John Kielkopf</a></td>
       <td>AstroImageJ is ImageJ with astronomy plugins and macros installed.</td>
@@ -120,7 +120,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <th colspan=6>Closed-source variants</th>
     </tr>
     <tr>
-      <td><img src="/media/logos/eu-hou.png" width="64"/></td>
+      <td><img src="/media/logos/eu-hou.png" alt="EU-HOU" width="64"/></td>
       <td><a href="http://www.euhou.net/index.php?option=com_content&amp;task=view&amp;id=7&amp;Itemid=9">SalsaJ</a></td>
       <td><a href="http://www.euhou.net/">EU-HOU</a></td>
       <td>SalsaJ is a closed-source fork of the original ImageJ intended for
@@ -153,7 +153,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Defunct<br>(Last update:<br>Dec. 2009)</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej.png" width="64"/></td>
+      <td><img src="/media/icons/imagej.png" alt="ImageJA" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
       <td><a href="/people">{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</a></td>
       <td>ImageJA was a project that provided a clean <a href="/develop/git">Git</a>
@@ -182,7 +182,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
       <td>Superseded by ImageJ2</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/nih-image.png"/></td>
+      <td><img src="/media/icons/nih-image.png" alt="NIH Image"/></td>
       <td><a href="/software/nih-image">NIH Image</a></td>
       <td>{% include person id='rasband' %}</td>
       <td>NIH Image is a public domain image processing and analysis
@@ -204,7 +204,7 @@ The first imaging program that {% include person id='rasband' %} developed, star
 
 Here is a timeline of software development related to ImageJ:
 
-![](/media/software/timeline-history-of-imagej.png)
+![Timeline history of imagej](/media/software/timeline-history-of-imagej.png)
 
 ## Publications
 

@@ -66,7 +66,7 @@ Use Path Orientation (hold {% include key keys='O' %}) to verify path orientatio
 
 ### I. Select The Path To Branch Off
 
-<img align="right" src="/media/plugins/snt/snt-sb-selecting-by-g.gif" width="33%" title="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" >
+<img align="right" src="/media/plugins/snt/snt-sb-selecting-by-g.gif" width="33%" alt="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" title="Holding &#39;G&#39; (Group paths around cursor) will select the closest path to the mouse pointer" >
 To select the path you want to branch off from, you can either select it in the Path Manager, or press {% include key key='G' %} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color. Note that you can also right-click on the image and choose _Select Paths by 2D ROI_ from the contextual menu: This will allow you to draw coarsely around the path of interest to activate it.
 
 ### II. Select The Fork Point
@@ -98,7 +98,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <p>At this point, you should enable cursor <a href="/plugins/snt/manual#cursor-auto-snapping">auto-snapping</a> in the <a href="/plugins/snt/manual#main-tab">Main tab</a> using suitable parameters for your image. When this option is enabled, the cursor will automatically 'sniff' for local maxima and 'snap' to their average X,Y,Z position. The pixel that is most likely to be on a neurite is indicated by the red cross-hair cursor.</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" width="300px">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-1.png" alt="SNT cursor auto-snapping to neurite with red crosshair" width="300px">
       </td>
     </tr>
     <tr style="background-color:var(--color-bg)">
@@ -108,7 +108,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <p>Note that when Z-snapping is enabled, all views become synchronized</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" width="300px">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-2.png" alt="SNT zooming in on neurite to adjust snapping neighborhood" width="300px">
       </td>
     </tr>
     <tr style="background-color:var(--color-bg)">
@@ -117,7 +117,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <p>When you're happy with the point under the crosshairs, left-click to start the path:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" width="300px">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-3.png" alt="SNT left-clicking to place start point on neurite" width="300px">
       </td>
     </tr>
     <tr style="background-color:var(--color-bg)">
@@ -125,7 +125,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <p>Zoom out again with the {% include key key='-' %} key, and similarly zoom in on the next point you want to be on your path to place it precisely:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" width="300px">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-4.png" alt="SNT zooming in on next path point for precise placement" width="300px">
       </td>
     </tr>
     <tr style="background-color:var(--color-bg)">
@@ -133,7 +133,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <p>The path along the neuron may not follow the center line perfectly:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" width="300px">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-5.png" alt="SNT path not perfectly following neuron center line" width="300px">
       </td>
     </tr>
     <tr style="background-color:var(--color-bg)">
@@ -141,7 +141,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
         <p>... but you can later improve that with the {% include bc path='Refine/Fit|Fit Path...'%} option in the <a href="/plugins/snt/manual#path-manager">Path Manager</a>, which tries to align the path to the midline of the structure to sub-voxel accuracy:</p>
       </td>
       <td>
-        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-6.png" width="300px">
+        <img src="/media/plugins/snt/snt-accurate-point-placement-walkthrough-updated-6.png" alt="SNT path fitted to midline with sub-voxel accuracy" width="300px">
       </td>
     </tr>
   </tbody>
@@ -156,7 +156,7 @@ The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 
 ### I. Starting the Viewer
 
-<img align="right" src="/media/plugins/snt/snt-3d-dialog.png" title="The legacy 3D Viewer remains a functional canvas" width="300px"/>
+<img align="right" src="/media/plugins/snt/snt-3d-dialog.png" alt="The legacy 3D Viewer remains a functional canvas" title="The legacy 3D Viewer remains a functional canvas" width="300px"/>
  To open the viewer, select the *3D* menu tab in the SNT dialog and look for *Legacy 3D Viewer*. You will see several parameters:
 
 - Select *New with image...* from the *Viewer* drop-down menu and press *Apply*. Note that you can re-use existing viewers you may have open by choosing their window titles from the drop-down menu. NB: Selecting *New without image* would only allow you to look at reconstructions without the underlying signal.
@@ -170,7 +170,7 @@ The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 {% include notice icon="info" content="It is recommended to render color coded paths in either [Reconstruction Plotter](./manual#reconstruction-plotter) or [Reconstruction Viewer](./reconstruction-viewer) because the algorithms that allow paths to be [mapped to lookup tables ](./manual#color-mapping-) have not been ported to the Legacy 3D Viewer." %}
 
 ### II. Tracing and Navigation
-<img  align="right" src="/media/plugins/snt/snt-legacy-3d-viewer.png" title="3D viewer showing OP_1.tif" width="350"/>
+<img  align="right" src="/media/plugins/snt/snt-legacy-3d-viewer.png" alt="3D viewer showing OP_1.tif" title="3D viewer showing OP_1.tif" width="350"/>
 
 #### Selecting points for tracing
 _Tracing_ mode is only active when the *Wand tool* in the main ImageJ toolbar is active. To activate it, press the {% include key key='W' %} ([shortcut](/plugins/snt/key-shortcuts#legacy-3d-viewer)) and click over the region you want to trace. Tracing works the same way as in the XY, YZ, and XZ views, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment as described [above](#iii-confirm-the-temporary-segment). Similarly, branching occurs as [described for 2D canvas(es)](#branching-start-a-path-on-an-existing-path), by holding the {% include key keys='Alt|Shift' %} modifier. NB: This shortcut can be simplified: See [Options Tab](/plugins/snt/manual#temporary-paths) for details.
@@ -202,10 +202,10 @@ Two paths can be merged or joined in *Edit Mode*. To do so:
 4. Open the contextual menu and select the initial path from the *Connect To (Start Join)* / *Connect To (End Join)* menu
 
 <div style="text-align: center;">
-<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-1.png' width="20%" title='1) Select parent path and activate first join node'>
-<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-2.png' width="20%" title='2) Select child path and activate second join node'>
-<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-3.png' width="24%" title='3) Use the contextual-menu option to connect child path to parent path'>
-<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-result.png' width="20%" title='4) Joined result'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-1.png' width="20%" alt='1) Select parent path and activate first join node' title='1) Select parent path and activate first join node'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-2.png' width="20%" alt='2) Select child path and activate second join node' title='2) Select child path and activate second join node'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-step-3.png' width="24%" alt='3) Use the contextual-menu option to connect child path to parent path' title='3) Use the contextual-menu option to connect child path to parent path'>
+<img style="vertical-align:top" src='/media/plugins/snt/snt-edit-path-connect-to-result.png' width="20%" alt='4) Joined result' title='4) Joined result'>
 </div>
 
 
@@ -336,7 +336,7 @@ Once undesired motion has been mitigated:
 You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset.
 {% endcapture %}
 {% include notice icon="info" content=op1-demo-full %}
-<img align="right" src="/media/plugins/snt/fill-manager-v420.png" title="Fill Manager (v4.2.0)." width="275" />
+<img align="right" src="/media/plugins/snt/fill-manager-v420.png" alt="Fill Manager (v4.2.0)." title="Fill Manager (v4.2.0)." width="275" />
 Paths can be "filled out" to volumes, i.e., converted into 3D images that can be used to improve the visualization of the shape of a neuron beyond what can be seen from traced center-lines, and/or subsequent image processing routines. The filling algorithm uses the center-line path coordinates as seeds in a '[signal search](#iii-understanding-fill-distances-and-distance-threshold)' that expands along neurites to encapsulate the neurite in 3D. The result can be exported as different types of images, including distance maps, binary masks or labeled image.
 
 Fillings are controlled by the Fill Manager and share many of the same properties of auto-tracing:
@@ -353,7 +353,7 @@ Fillings are controlled by the Fill Manager and share many of the same propertie
 First, select the one or more paths that you want to fill out from in the Path Manager and select {% include bc path="Fill|Fill Out..." %} in the Path Manager (or select none if you want to fill all the existing paths). Once the filling starts, you should be able to see a thick green surround the path while scrolling through the 3D stack:
 
 The filler continues to explore the image until you click "Pause" or "Stop" in the dialog, or until all the image has been fully explored. However, the fill which is shown only includes those points up to a certain threshold distance from the path. Note that this "distance" doesn't mean a real physical distance, but instead a 'likelihood-distance': a measure which takes into account the intensity values of the pixels which must be [passed through when moving away from the path](#iii-understanding-fill-distances-and-distance-threshold). Information about the current threshold and the progress of the search is shown in the dialog. Note that if your image is rather small, the entire image may be fully explored before you have time to interact with prompt.
-<img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />
+<img align="right" src="/media/plugins/snt/snt-initial-filling-2.png" alt="A few seconds after selecting 'Fill Out...' with 1 path selected" title="A few seconds after selecting 'Fill Out...' with 1 path selected" width="350" />
 The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet".
 
 The _Search status_ shows your current [threshold distance](#iii-understanding-fill-distances-and-distance-threshold): so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and highlighted in green in the image). The "Max. explored distance:" shows the maximum distance from the path that has been completely explored.
@@ -422,7 +422,7 @@ If the search is still active, you might as well click "Pause" so halt explorati
   - CSV export: Exports details of the filling operation as tabular data. This includes [distance thresholds](#iii-understanding-fill-distances-and-distance-threshold), algorithms used, and volumes of filled paths
 
 <div align="center">
-  <img src="/media/plugins/snt/filling-output-examples.png" title="Fill Manager export options as demoed by the Fill_Demo.py script. Properties of fills can also be exported to CSV files." width="850" />
+  <img src="/media/plugins/snt/filling-output-examples.png" alt="Fill Manager export options as demoed by the Fill_Demo.py script. Properties of fills can also be exported to CSV files." title="Fill Manager export options as demoed by the Fill_Demo.py script. Properties of fills can also be exported to CSV files." width="850" />
 </div>
 
 {% capture text%}
@@ -448,7 +448,7 @@ You can use the _MouseLight dendrites_ demo dataset to follow the delineation tu
 {% include notice icon="info" content=ml-demo %}
 
 <div align="center">
-  <img  src="/media/plugins/snt/snt-delineation-analysis1.png" title="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " width="650" />
+  <img  src="/media/plugins/snt/snt-delineation-analysis1.png" alt="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " title="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " width="650" />
 </div>
 
 ## Creating Delineations from ROIs

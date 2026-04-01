@@ -38,7 +38,7 @@ Additionally, you need a working Cellpose (2.0 or higher) environment in Python.
 
 Before running FAST-HIPPOS, make sure that the [BIOP Cellpose wrapper](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#cellpose) works correctly: follow their [installation instructions](https://github.com/BIOP/ijl-utilities-wrappers/blob/master/README.md#i-installation). Then make sure that the wrapper knows where your Cellpose environment is located and which type it is (conda or venv), by filling in the top two fields in `Plugins` -> `BIOP` ->  `Cellpose/Omnipose` -> `Cellpose...`:
 
-<img src="https://github.com/user-attachments/assets/fefd2857-6880-40f2-901f-c9cdc08971aa" title="BIOP Cellpose wrapper" width="500">
+<img src="https://github.com/user-attachments/assets/fefd2857-6880-40f2-901f-c9cdc08971aa" alt="BIOP Cellpose wrapper" title="BIOP Cellpose wrapper" width="500">
 
 You will find the FAST-HIPPOS commands in the Fiji menu under `Plugins` -> `Macros`. Below follows a description of the main command: FAST-HIPPOS. Details on the other commands follow below.
 <hr>
@@ -93,21 +93,21 @@ After cell segmentation ROIs are created from the obtained label image, after wh
 
 The script automatically tries to determine the time points of a(nta)gonist stimulation and calibration by detecting peaks in the second derivative of the average trace of all cells. If the peaks are higher than a set number of times the stddev of the signal it is picked up. If successful, cell traces are divided into three parts: *baseline*, *response*, and *calibration*. If not, manual input of the time points is also possible. These three partitions are used for detection of hit cells when screening for dynamic phenotypes. If no stimulation and calibration frame are found or set, the full trace is regarded as *response*. If only a single peak is found, it is regarded as being the stimulation. (N.B. Currently only upward rises in lifetime/ratio are detected!)
 
-<img src="https://github.com/user-attachments/assets/52832275-d256-4162-8a86-7ee22ab6f2df" title="first and second derivative of the average trace" width="500">
+<img src="https://github.com/user-attachments/assets/52832275-d256-4162-8a86-7ee22ab6f2df" alt="first and second derivative of the average trace" title="first and second derivative of the average trace" width="500">
 
 ## 5. Visualization
 The data is visualized in various graphs and images:
 ### Time traces plot
-<img src="https://github.com/user-attachments/assets/a23f8818-b754-4b01-93ab-b5e1a6dff63e" title="lifetime traces plot" width="510">
+<img src="https://github.com/user-attachments/assets/a23f8818-b754-4b01-93ab-b5e1a6dff63e" alt="A23f8818 b754 4b01 93ab b5e1a6dff63e" title="lifetime traces plot" width="510">
 
 ### Timelapse Lifetime histogram and scatterplots
 Movies of
 - the histogram of cell lifetimes/ratios
 - scatterplots of lifetime vs cell intensity and liftime vs cell area
 
-<img src="https://github.com/user-attachments/assets/87c92c02-cf5d-4e7f-b391-40c858a6ffa9" title="Kymograph" width="400">
+<img src="https://github.com/user-attachments/assets/87c92c02-cf5d-4e7f-b391-40c858a6ffa9" alt="Kymograph" title="Kymograph" width="400">
 
-<img src="https://github.com/user-attachments/assets/d750ebd6-a1d4-4687-83cc-bfae930cc858" title="Sorted Kymograph" width="400">
+<img src="https://github.com/user-attachments/assets/d750ebd6-a1d4-4687-83cc-bfae930cc858" alt="Sorted Kymograph" title="Sorted Kymograph" width="400">
 
 ### Kymographs
 This is an image with time as y-coordinate, Cell ID as x-coordinate and cell lifetime as value. Additionally, a 'sorted kymograph' is created, where the X-axis is sorted on the average response lifetime.
@@ -118,7 +118,7 @@ This is an image with time as y-coordinate, Cell ID as x-coordinate and cell lif
 ### Density plot
 A 2D histogram with lifetime on the y-axis and time on the x-axis. This image allows a better visual assessment of the heterogeneity of traces compared to the Time Traces plot.
 
-<img src="https://github.com/user-attachments/assets/9b904263-e3ae-46f2-ab06-7fdb56b0b5af" title="Density plot" width="400">
+<img src="https://github.com/user-attachments/assets/9b904263-e3ae-46f2-ab06-7fdb56b0b5af" alt="Density plot" title="Density plot" width="400">
 
 ## 6. Screening: hit selection
 When `activate screening` is selected in the starting dialog, cells showing certain kinetic behaviour can be detected, and the stage coordinates of these 'hit'cells are written to a `.rgn` file for subsequent photoactivation (or e.g. high-resolution imaging, run FRAP experiments, etc.). This file can then be loaded into the Leica LAS X Navigator, where the hit cells will be marked as imaging positions.
@@ -136,13 +136,13 @@ Specific details:
 ### Time traces plot of hits
 After hit detection, a graph is generated showing only the traces of the hit cells. Here, the selected time window used in the hit selection (in this example the full response time) is highlighted in blue. Compare with the plot containing all the single-cell traces:
 
-<img src="https://github.com/user-attachments/assets/3ea842f1-83b4-49fc-842f-ce76d3c63542" title="lifetime traces plot - hits only" width="510">
-<img src="https://github.com/user-attachments/assets/a23f8818-b754-4b01-93ab-b5e1a6dff63e" title="lifetime traces plot" width="510">
+<img src="https://github.com/user-attachments/assets/3ea842f1-83b4-49fc-842f-ce76d3c63542" alt="lifetime traces plot - hits only" title="lifetime traces plot - hits only" width="510">
+<img src="https://github.com/user-attachments/assets/a23f8818-b754-4b01-93ab-b5e1a6dff63e" alt="lifetime traces plot" title="lifetime traces plot" width="510">
 
 The hit cells are also displayed in a table, as well as their positions graphically:
 
-<img src="https://github.com/user-attachments/assets/07703a58-82ac-4303-b720-fc5a0f071c2b" title="lifetime traces plot" width="500">
-<img src="https://github.com/user-attachments/assets/fca0f6d1-65bb-4f7a-8b42-6208eda40602" title="lifetime traces plot" width="450">
+<img src="https://github.com/user-attachments/assets/07703a58-82ac-4303-b720-fc5a0f071c2b" alt="hit cell positions map" title="lifetime traces plot" width="500">
+<img src="https://github.com/user-attachments/assets/fca0f6d1-65bb-4f7a-8b42-6208eda40602" alt="hit cell table" title="lifetime traces plot" width="450">
 
 ## 7. Output files
 Per image many output files are generated:

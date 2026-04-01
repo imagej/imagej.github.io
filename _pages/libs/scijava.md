@@ -42,17 +42,17 @@ The following projects are part of the **SciJava pledge** to work together, reus
         <p>{% include icon name='ImageJ2' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/cellprofiler"><img src="/media/logos/cellprofiler.png" height="64px"></a></p>
+        <p><a href="/software/cellprofiler"><img src="/media/logos/cellprofiler.png" alt="CellProfiler" height="64px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/knime"><img src="/media/logos/knime.svg" height="54px"></a></p>
+        <p><a href="/software/knime"><img src="/media/logos/knime.svg" alt="KNIME" height="54px"></a></p>
       </td>
       <td></td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/omero"><img src="/media/logos/omero.png" height="32px"></a></p>
+        <p><a href="/software/omero"><img src="/media/logos/omero.png" alt="OMERO" height="32px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="https://github.com/scenerygraphics/scenery"><img src="/media/logos/scenery.png" height="72px"></a></p>
+        <p><a href="https://github.com/scenerygraphics/scenery"><img src="/media/logos/scenery.png" alt="scenery" height="72px"></a></p>
       </td>
       <td></td>
     </tr>
@@ -61,7 +61,7 @@ The following projects are part of the **SciJava pledge** to work together, reus
         <p>{% include icon name='Fiji' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/software/icy"><img src="/media/logos/icy.png" height="48px"></a></p>
+        <p><a href="/software/icy"><img src="/media/logos/icy.png" alt="Icy" height="48px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
         <p>{% include icon name='Micro-Manager' size='48px' %}</p>
@@ -70,7 +70,7 @@ The following projects are part of the **SciJava pledge** to work together, reus
         <p>{% include icon name='VCell' size='48px' %}</p>
       </td>
       <td style="text-align: center; vertical-align: middle">
-        <p><a href="/formats/bio-formats"><img src="/media/logos/bio-formats.png" height="28px"></a></p>
+        <p><a href="/formats/bio-formats"><img src="/media/logos/bio-formats.png" alt="Bio-Formats" height="28px"></a></p>
       </td>
       <td style="text-align: center; vertical-align: middle">
         <p>{% include icon name='Alida' size='48px' %}</p>

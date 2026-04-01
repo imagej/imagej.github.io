@@ -81,7 +81,7 @@ This macro helps to visually identify features in images according to their shap
 
 How to: Select analysis modes and start.
 
-<img src="https://www.biovoxxel.de/BioVoxxel Toolbox/images/ShapeDescriptorMaps-21073001.png" width="1024"/>
+<img src="https://www.biovoxxel.de/BioVoxxel Toolbox/images/ShapeDescriptorMaps-21073001.png" alt="Shape Descriptor Maps output example" width="1024"/>
 
 Form: macro
 
@@ -99,7 +99,7 @@ Example: A specific nuclear fluorescent staining is thresholded as the selector 
 
 How to: First, specify the images containing on the one hand the objects to extract and on the other hand the selectors (e.g. marker staining, cell masks) which defines the objects that should be extracted. The plugin then extracts the features which overlap with the selector. The "Overlap in percent" option enables to define a minimal overlap fraction (in percent) of the selector area with the object area (in exactly this sequence). The object is only extracted if the overlap is equal or bigger than the defined minimal overlap. Finally, you can define to show the count of objects, selectors and extracted features as well as display the individual results tables for the three different images (This is equal to run the "Analyze Particles..." on each of the images.
 
-<img src="/media/plugins/featureextractor1.png" width="750"/>
+<img src="/media/plugins/featureextractor1.png" alt="Feature Extractor plugin example output" width="750"/>
 
 Form: plugin
 
@@ -115,7 +115,7 @@ Purpose: The "Speckle Inspector" is able to identify bigger features by the numb
 
 How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, object size and object circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
 
-<img src="https://www.biovoxxel.de/BioVoxxel Toolbox/images/SpeckleInspector-21073001.png" width="1024"/>
+<img src="https://www.biovoxxel.de/BioVoxxel Toolbox/images/SpeckleInspector-21073001.png" alt="Speckle Inspector color-coded output" width="1024"/>
 
 The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "statistics log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds. You can also choose if you want to see the RoiManager for the objects rois to further analyze the original image. "individual roi analysis" returns a results table which contains the analyzed particles inside each roi (the latter is indicated in the results "Label" column).
 
@@ -131,7 +131,7 @@ Status: maintenance active
 [The new Label Splitter for 2D and 3D images as alternative](https://biovoxxel.github.io/bv3dbox#label-splitter)
 Purpose: The standard watershed algorithm in ImageJ is very usefull to separate connected, roughly circular structures. Nevertheless, it gets into trouble while separating irregular (non-ellipsoid like) structures. The Irregular Watershed enables the user to separate also irregular shaped structures to a certain extend.
 
-<img src="/media/plugins/watershed-irregular-features.png" width="770"/>
+<img src="/media/plugins/watershed-irregular-features.png" alt="Watershed Irregular Features example" width="770"/>
 
 How to: The user needs to specify one of two parameters:
 
@@ -153,7 +153,7 @@ Thanks to Thorsten Wagner which provided the ij-blobs library as basis and the i
 
 Purpose: The standard binary erosion and dilation suffers from the artefact that under higher iteration cycles the binary structures get irregularly deformed (see image below, second column). The EDM based methods for erosion and dilation prevent these artifacts. The method is using thresholding on a 8-bit euclidean distance map of the original image to facilitate binary erosion, dilation, opening and closing.
 
-<img src="/media/plugins/edmerosiondilation.png" width="600"/>
+<img src="/media/plugins/edmerosiondilation.png" alt="EDM-based erosion and dilation compared to standard binary operations" width="600"/>
 
 How to: The number of iterations determines how often the chosen function will be applied to the image.
 
@@ -185,7 +185,7 @@ How to: The user needs to first select the image the in which the thresholds sho
 
 Output interpretation: You will get a stack with each thresholding method represented in a single stack slice. The following colors should help in interpreting the thresholding result:
 
-<img src="/media/plugins/thresholdcheck.png" width="770"/>
+<img src="/media/plugins/thresholdcheck.png" alt="Threshold Check output color-coded by threshold method" width="770"/>
 
 **blue** = this is thresholded as background and also represents black or very dark areas in the original image, thus most likely being really background.
 
@@ -265,7 +265,7 @@ The *Shape* option enables a basic pre-selection of pixels from the kernel neigh
 
 In the image below the upper pannels show the original photograph and a version with artificial shot noise added. The lower pannels depict the noisy image after a median filter (radius=2) or after the Adaptive Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
 
-![](/media/plugins/adaptivefilter.png)
+![Adaptive Filter comparison: original, noisy, median, and adaptive filter results](/media/plugins/adaptivefilter.png)
 
 Output: The filter will be applied directly on the input image. It is undoable (by pressing \[z\]).
 
@@ -283,7 +283,7 @@ Purpose: The recursive filters plugin allows to repetitively apply one of the th
 
 The maximum iteration can be set by the user up to 500 times but will be stopped if two consecutive filtered images do not show any further difference.
 
-<img src="/media/plugins/recursivefilters01.png" width="500"/>
+<img src="/media/plugins/recursivefilters01.png" alt="Recursive Filters plugin example" width="500"/>
 
 ------------------------------------------------------------------------
 
@@ -311,7 +311,7 @@ How to: Specify the analysis parameters (same input as for "Analyze Particles...
 
 Methods: "Voronoi" analyzes the paticles according to the directly correlated voronoi map. "UEP Voronoi" uses the voronoi map from the ultimate eroded points of the particles. This might underestimate the real number of neighbors and is rather suitable for roundish structures. "Centroid Neighborhood" analyzes an area corresponding to a circle with the specified neighborhood radius around the centroid of each particle. "Particle Neighborhood" analyzes also an area around each particle with the specified radius as distance to the particle border.
 
-<img src="/media/plugins/neighboranalysis.png" width="750"/>
+<img src="/media/plugins/neighboranalysis.png" alt="Neighbor Analysis color-coded output" width="750"/>
 
 ------------------------------------------------------------------------
 
@@ -327,7 +327,7 @@ Method: The UEPs of the particles are generated and the nearest neighbor distanc
 
 **BE AWARE:** This tool estimates the type of clustering or exclusion since it does not take non-isotropic shape into account and WORKS ONLY on complete, rectangular images and NOT inside irregular ROIs. This might be changed in future.
 
-<img src="/media/plugins/distributionanalysis.png" width="750"/>
+<img src="/media/plugins/distributionanalysis.png" alt="Distribution Analysis nearest neighbor statistics output" width="750"/>
 
 ------------------------------------------------------------------------
 
@@ -366,7 +366,7 @@ Clusters overlapping (at least 1 pixel) can also be fused to one cluster if spec
 
 Consider that the detector size as well as density settings influence if a cluster is found and finally accepted as a cluster. This on the one hand leads to a certain bias but should enable the user to search for clusters of different sizes and densities.
 
-<img src="/media/plugins/clusterindicator.png" width="750"/>
+<img src="/media/plugins/clusterindicator.png" alt="SSIDC Cluster Indicator output" width="750"/>
 
 Method: Circle ROIs of the specified size are initially distributed with sufficient overlap to cover the complete image. The cluster finding process is done according to the mean shift method towards the center of mass of clusters. The latter is influenced by particle number, size and neighbor distance.
 
@@ -380,7 +380,7 @@ Output: A copy of the original image is created with the particle of interest (P
 
 Method: As measure for the distance between the particles the minimum separation distance is taken by analysis of the intensity coded Voronoi cell algorithm of ImageJ. The lowest non-background intensity is used to indicate the nearest neighbor.
 
-<img src="/media/plugins/nearestneighborindicator.png" width="750"/>
+<img src="/media/plugins/nearestneighborindicator.png" alt="Nearest Neighbor Indicator output with POI in red, neighbors in blue, nearest neighbor in yellow" width="750"/>
 
 ------------------------------------------------------------------------
 

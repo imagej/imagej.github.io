@@ -254,7 +254,7 @@ G. Table columns:
     4. nucleus volume;
     5. fraction of pixels laying into the cell area. When there are mistakes in segmentation, the value P is less then one.
 
-![](/media/plugins/english-manual-uz-html-m7446267b.gif) , where k is quantitate of cell's pixels; n is quantitate of pixels into the inner cell area. In the case of incomplete overlapping of the nucleus region by the inner space of the cell *p* becomes less than one.
+![English manual uz html m7446267b](/media/plugins/english-manual-uz-html-m7446267b.gif) , where k is quantitate of cell's pixels; n is quantitate of pixels into the inner cell area. In the case of incomplete overlapping of the nucleus region by the inner space of the cell *p* becomes less than one.
 
 H. Resulting image
 

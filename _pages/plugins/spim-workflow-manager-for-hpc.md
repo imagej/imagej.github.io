@@ -39,7 +39,7 @@ The sheer amount of the SPIM data requires conversion from raw microscopy data t
 
 Pipeline input parameters are entered by a user into a *config.yaml* configuration file. In the first step, the .czi raw data are concurrently resaved into the HDF5 container in parallel on the cluster. Similarly, the individual time points are registered in parallel using fluorescent beads as fiduciary markers on the cluster. Subsequently, a non-parallel job executed by *Snakemake* consolidate the registration XML files into a single one, followed by time-lapse registration using the beads segmented during the spatial registration step. After this, the pipeline diverge into either parallel content-based fusion or parallel multi-view deconvolution. To achieve this divergence in practice, the *Snakemake* pipeline is launched from the Fiji plugin as two separate jobs using two different *config.yaml* files set to execute content-based fusion and deconvolution respectively. In the final stage of the pipeline, the fusion/deconvolution output is saved into a new HDF5 container. Figure below shows results of registration, fusion and deconvolution in different time points. 
 
-<img src="/media/drosophila.png" width="800"/>
+<img src="/media/drosophila.png" alt="Drosophila" width="800"/>
 
 ## HEAppE middleware
 
@@ -55,7 +55,7 @@ After you install and launch [Fiji](/software/fiji/downloads), go to {% include 
 
 # Usage
 
-Now you should see the plugin under {% include bc path='Plugins | Multiview Reconstruction | SPIM Workflow Manager for HPC'%}. Upon plugin invocation from the application menu, you are prompted for HEAppE credentials, e-mail address and specifying your working directory. Following a successful login, the main window containing all jobs arranged in a table is displayed. In this context, the term *job* is used for a single pipeline run with specified parameters. The plugin actively inquires information on the created jobs from HEAppE and updates the table as appropriate. <img src="/media/flowchart.png" width="400"/>
+Now you should see the plugin under {% include bc path='Plugins | Multiview Reconstruction | SPIM Workflow Manager for HPC'%}. Upon plugin invocation from the application menu, you are prompted for HEAppE credentials, e-mail address and specifying your working directory. Following a successful login, the main window containing all jobs arranged in a table is displayed. In this context, the term *job* is used for a single pipeline run with specified parameters. The plugin actively inquires information on the created jobs from HEAppE and updates the table as appropriate. <img src="/media/flowchart.png" alt="Flowchart" width="400"/>
 
 For creating a new job, right click in the main window and choose *Create a new job*. A window with input and output data location will pop up. You have the option to use demonstration data on the Salamon cluster or specify your own input data location. Eventually you may choose your working directory (specified during login) as both your input and output data location. Once a new job is configured, you are able to upload your own data (if you chose this option in the previous step) by right clicking on the job line and choosing *Upload data*. When *Done* appears in the *Upload* column, you can start the job by {% include bc path='right click | Start job'%}. Status of your job changes to *Queued*, then to *Running* and finally to *Finished* when your pipeline finishes successfully.
 
@@ -63,7 +63,7 @@ The plugin provides a wizard allowing you to set up a configuration file *config
 
 Once a job execution is selected by you, the configuration file is sent to the cluster via HEAppE, which is responsible for the job life cycle from this point on. You can display a detailed progress dashboard showing current states of all individual computational tasks for the selected job as well as output logs useful for debugging. 
 
-<img src="/media/plugins/ui-screens.png" width="1200"/>
+<img src="/media/plugins/ui-screens.png" alt="Ui screens" width="1200"/>
 
 Following a successfully finished pipeline, you can interactively examine the processed SPIM image data using the [BigDataServer](/plugins/bdv/server) as well as download resultant data and a summary file containing key information about the performed job. Importantly, you can edit the corresponding local configuration file in a common text editor, and restart an interrupted, finished, or failed job.
 

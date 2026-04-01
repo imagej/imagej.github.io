@@ -45,8 +45,8 @@ The main source code directory is on GitHub under [here](https://github.com/DanH
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/DanHUMassMed/puncta_process_plugin/main/docs/Puncta_Process_Dialog.png" width="500" >
+<img src="https://raw.githubusercontent.com/DanHUMassMed/puncta_process_plugin/main/docs/Puncta_Process_Dialog.png" alt="Puncta Process Dialog" width="500" >
 <br>
-<img src="https://raw.githubusercontent.com/DanHUMassMed/puncta_process_plugin/main/docs/BarCharts_Screenshot.png" width="500">
+<img src="https://raw.githubusercontent.com/DanHUMassMed/puncta_process_plugin/main/docs/BarCharts_Screenshot.png" alt="BarCharts Screenshot" width="500">
 <br>
-<img src="https://raw.githubusercontent.com/DanHUMassMed/puncta_process_plugin/main/docs/Excel-Screenshot.png" width="500">
+<img src="https://raw.githubusercontent.com/DanHUMassMed/puncta_process_plugin/main/docs/Excel-Screenshot.png" alt="Excel Screenshot" width="500">

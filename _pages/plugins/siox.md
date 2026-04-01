@@ -84,7 +84,7 @@ The ROIs can be defined with any of the Selection Tools:
 <!-- -->
 
   
-![](/media/plugins/fiji-selection-tools.png)
+![Fiji selection tools](/media/plugins/fiji-selection-tools.png)
 
 <!-- -->
 

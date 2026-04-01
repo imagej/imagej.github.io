@@ -21,7 +21,7 @@ source-url: https://github.com/bene51/ActogramJ
 
 {% include citation %}
 
-![](/media/plugins/actogramj.png)
+![Actogramj](/media/plugins/actogramj.png)
 
 More information is available at [https://bene51.github.io/ActogramJ](https://bene51.github.io/ActogramJ).
 

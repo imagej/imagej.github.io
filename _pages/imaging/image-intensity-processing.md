@@ -53,7 +53,7 @@ The Multi Measure plugin that comes with the installation is v3.2.
 8.  Go to the *Results* window and select the menu item {% include bc path='Edit | Select All...'%}. Then {% include bc path="Edit | Copy" %}.
 9.  Go to Excel and paste in the data. Check that everything was pasted in correctly
 
-![](/media/imaging/roi-select-all.jpg)
+![Roi select all](/media/imaging/roi-select-all.jpg)
 
 10\. To copy ROI coordinates into the Excel spreadsheet, there needs to be an empty row above the intensity data. Use the Multi Measure dialog and click the *Copy list* button.
 
@@ -63,7 +63,7 @@ Oval and rectangular ROIs can be restored individually from x, y, l, h values wi
 
 ## Ratio Analysis
 
-![](/media/imaging/intensity-ratio-analysis.jpg) 
+![Intensity ratio analysis](/media/imaging/intensity-ratio-analysis.jpg) 
 
 Ratiometric imaging compares the recordings of two different signals to see if there are any similarities between them. It is done by dividing one channel by another channel to produce a third ratiometric channel. This technique is useful because it corrects for dye leakage, unequal dye loading, and photo-bleaching. An example application would be measuring intracellular ion, pH, and voltage dynamics in real time.
 
@@ -137,7 +137,7 @@ You can have more control over brightness and contrast adjustments with the {% i
 
 The *Equalize contrast* command applies a non-linear stretch of the histogram based on the square root of its intensity.
 
-![](/media/imaging/equalize-histrogram.jpg)
+![Equalize histrogram](/media/imaging/equalize-histrogram.jpg)
 
 ### Gamma
 
@@ -147,7 +147,7 @@ For 8 bit images; New intensity = 255 × *\[(old intensity÷255) gamma*\]
 
 Gamma can be adjusted via the {% include bc path='Process | Math | Gamma'%} command. It will allow you to adjust the gamma with the scroll bar. Click on *Ok* when you are finished. You can use the Scroll-bar to determine the desired gamma value on one slice of your stack. There is also an option to preview the results.
 
-![](/media/imaging/gamma-pic.jpg)
+![Gamma pic](/media/imaging/gamma-pic.jpg)
 
 ## Filtering
 
@@ -181,11 +181,11 @@ To fix an uneven background use the menu command {% include bc path='Process | S
 
 | RAW |  | {% include bc path='Process | Subtract Background...'%} |
 | :----: | :----: | :----: |
-| ![](/media/imaging/raw-rolling-ball-back-corr.jpg) | ![](/media/imaging/rolling-ball-back-corr.jpg) | ![](/media/imaging/processed-rolling-ball-back-corr.jpg) |
+| ![Raw rolling ball back corr](/media/imaging/raw-rolling-ball-back-corr.jpg) | ![Rolling ball back corr](/media/imaging/rolling-ball-back-corr.jpg) | ![Processed rolling ball back corr](/media/imaging/processed-rolling-ball-back-corr.jpg) |
 
 Once the background has been evened, final adjustments can be made with the *Brightness/Contrast* control.
 
-| ![](/media/imaging/bright-contr-roll-ball.jpg) | ![](/media/imaging/histogram-roll-ball.jpg) | ![](/media/imaging/bright-contr-control-roll-ball.jpg) |
+| ![Bright contr roll ball](/media/imaging/bright-contr-roll-ball.jpg) | ![Histogram roll ball](/media/imaging/histogram-roll-ball.jpg) | ![Bright contr control roll ball](/media/imaging/bright-contr-control-roll-ball.jpg) |
 
 ### ROI background correction
 
@@ -195,7 +195,7 @@ This macro, because it also works with stacks, can be used on time-courses with 
 
 | Before correction | Background intensity over time | After *ROI_BG_Correction* |
 | :----: | :----: | :----: |
-| ![](/media/imaging/roi-back-corr-before.gif) | ![](/media/imaging/roi-back-corr-during.gif) | ![](/media/imaging/roi-back-corr-after.gif) |
+| ![Roi back corr before](/media/imaging/roi-back-corr-before.gif) | ![Roi back corr during](/media/imaging/roi-back-corr-during.gif) | ![Roi back corr after](/media/imaging/roi-back-corr-after.gif) |
 
 ## Flat-field correction
 
@@ -213,7 +213,7 @@ Use this technique on brightfield images. You can correct uneven illumination or
 
 This can also be done using the {% include bc path='Process | Image Calculator'%}function with the *32-bit Result* option checked. Then adjust the brightness and contrast and convert the image to 8-bit.
 
-![](/media/imaging/calculator-plus-flat-field.jpg)
+![Calculator plus flat field](/media/imaging/calculator-plus-flat-field.jpg)
 
 ### Pseudo-correction
 
@@ -235,7 +235,7 @@ You can correct for uneven illumination and horizontal "scan lines" in transmitt
 
 You can experiment with the settings to optimize the filtering and also choose to filter structures down to a certain number of pixels. The default value is 40 pixels. You can filter small structures up to a certain value. The default value is 3 pixels. The user can choose from a drop down menu whether to suppress stripes with None, Horizontal, or Vertical. The tolerance of direction can be chosen. The default is 5%. Finally, the user can choose whether to allow autoscale after filtering, saturation of the image when autoscaling, whether or not to display the filter, and whether or not to process an entire stack.
 
-![](/media/imaging/newfftbandfilter.jpg)
+![Newfftbandfilter](/media/imaging/newfftbandfilter.jpg)
 
 ## Masking unwanted regions
 

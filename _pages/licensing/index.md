@@ -82,7 +82,7 @@ The following table summarizes the dominant license of each project's components
       <th colspan=14 style="text-align: center"><a href="/software/imagej">ImageJ</a></th>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej.png" width="48"></td>
+      <td><img src="/media/icons/imagej.png" alt="ImageJ" width="48"></td>
       <th><a href="/software/imagej">ImageJ</a></th>
       <td><a href="https://imagej.net/ij/disclaimer.html">Disclaimer</a></td>
       <td>
@@ -104,7 +104,7 @@ The following table summarizes the dominant license of each project's components
       <th colspan=14 style="text-align: center"><a href="/develop/architecture">ImageJ2 software stack</a></th>
     </tr>
     <tr>
-      <td><img src="/media/icons/scijava.png" width="48"></td>
+      <td><img src="/media/icons/scijava.png" alt="SciJava" width="48"></td>
       <th><a href="/libs/scijava">SciJava</a></th>
       <td><a href="https://github.com/scijava/scijava-common/blob/-/LICENSE.txt">License</a></td>
       <td rowspan="4"><a href="/licensing/bsd">BSD-2</a></td>
@@ -120,17 +120,17 @@ The following table summarizes the dominant license of each project's components
       <td rowspan="4">-</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imglib2.png" width="48"></td>
+      <td><img src="/media/icons/imglib2.png" alt="ImgLib2" width="48"></td>
       <th><a href="/libs/imglib2">ImgLib2</a></th>
       <td><a href="https://github.com/imglib/imglib2/blob/-/LICENSE.txt">License</a></td>
     </tr>
     <tr>
-      <td><img src="/media/icons/imagej2.png" width="48"></td>
+      <td><img src="/media/icons/imagej2.png" alt="ImageJ2" width="48"></td>
       <th><a href="/software/imagej2">ImageJ2</a></th>
       <td><a href="https://github.com/imagej/imagej2/blob/-/LICENSE.txt">License</a></td>
     </tr>
     <tr>
-      <td><img src="/media/icons/scifio.png" width="48"></td>
+      <td><img src="/media/icons/scifio.png" alt="SCIFIO" width="48"></td>
       <th><a href="/libs/scifio">SCIFIO</a></th>
       <td><a href="https://github.com/scifio/scifio/blob/-/LICENSE.txt">License</a></td>
     </tr>
@@ -139,7 +139,7 @@ The following table summarizes the dominant license of each project's components
       <th colspan="14" style="text-align: center"><a href="/software/fiji">Fiji projects</a></th>
     </tr>
     <tr>
-      <td rowspan="3"><img src="/media/icons/fiji.png" width="48"></td>
+      <td rowspan="3"><img src="/media/icons/fiji.png" alt="Fiji" width="48"></td>
       <th><a href="/software/fiji">Fiji</a></th>
       <td><a href="https://github.com/fiji/fiji/blob/-/LICENSES">Licenses</a></td>
       <td rowspan="2"><a href="/licensing/gpl">GPL</a></td>
@@ -177,7 +177,7 @@ The following table summarizes the dominant license of each project's components
       <th colspan="14" style="text-align: center"><a href="/libs/scijava">SciJava consortium</a></th>
     </tr>
     <tr>
-      <td><img src="/media/icons/cellprofiler.png" width="48"></td>
+      <td><img src="/media/icons/cellprofiler.png" alt="CellProfiler" width="48"></td>
       <th><a href="/software/cellprofiler">CellProfiler</a></th>
       <td><a href="https://github.com/CellProfiler/CellProfiler/blob/-/LICENSE">License</a></td>
       <td><a href="/licensing/bsd">BSD-3</a></td>
@@ -193,7 +193,7 @@ The following table summarizes the dominant license of each project's components
       <td>-</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/bio-formats.png" width="48"></td>
+      <td><img src="/media/icons/bio-formats.png" alt="Bio-Formats" width="48"></td>
       <th><a href="/formats/bio-formats">Bio-Formats</a></th>
       <td>
         <a href="https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt">License</a><br>
@@ -212,7 +212,7 @@ The following table summarizes the dominant license of each project's components
       <td rowspan="3">❌</td>
     </tr>
     <tr>
-      <td><img src="/media/icons/omero.png" width="48"></td>
+      <td><img src="/media/icons/omero.png" alt="OMERO" width="48"></td>
       <th><a href="/software/omero">OMERO</a></th>
       <td>
         <a href="https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt">License</a><br>
@@ -220,7 +220,7 @@ The following table summarizes the dominant license of each project's components
       </td>
     </tr>
     <tr>
-      <td><img src="/media/icons/knime.svg" width="48"></td>
+      <td><img src="/media/icons/knime.svg" alt="KNIME" width="48"></td>
       <th><a href="/software/knime">KNIME</a></th>
       <td><a href="http://www.knime.org/downloads/full-license">License</a></td>
     </tr>

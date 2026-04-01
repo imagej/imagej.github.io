@@ -21,7 +21,7 @@ SNT registers commands in Fiji's menu structure in the {% include bc path='Plugi
 **Neuroanatomy Shortcuts Window** A toolbar panel listing most SNT commands, actions, and scripts including entry points to Sholl and Strahler analyses. It can be open via {% include bc path='Plugins|Neuroanatomy|' %}, or more easily, by pressing *SNT* in the ImageJ toolbar:
 
 <div align="center">
-    <img align="center" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
+    <img align="center" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" alt="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
 </div>
 
 **[SNT](#startup-prompt)...** The main interface, from which tracing and path editing operations are done
@@ -32,7 +32,7 @@ SNT registers commands in Fiji's menu structure in the {% include bc path='Plugi
 
 # Startup Prompt
 
-<img align="right" width="300" src="/media/plugins/snt/snt-startup-prompt.png" title="Shortcuts Window (v4.0)" />
+<img align="right" width="300" src="/media/plugins/snt/snt-startup-prompt.png" alt="Shortcuts Window (v4.0)" title="Shortcuts Window (v4.0)" />
 SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
 
 - **Image**/**Image file** The image to be traced/analyzed. The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking *Browse* and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
@@ -273,14 +273,14 @@ This *home* tab aggregated widgets for tracing and frequent operations.
 
 ### Data Source
 
-<img align="right" src="/media/plugins/snt/snt-data-source-widget.png" width="300" />
+<img align="right" alt="SNT data source widget" src="/media/plugins/snt/snt-data-source-widget.png" width="300" />
 If tracing on a multidimensional image (i.e., one with multiple channels and/or multiple time points), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button. By default, new values need to be confirmed in a confirmation prompt. If this is too cumbersome, the *Auto-load CT position of new paths* option automatically loads the active channel/frame when a new path is started. Note that this option may not be compatible with [secondary layers](#tracing-on-secondary-image-layer) and [Z-projection overlays](#views).
 
 ### Cursor Auto-snapping
 
 **Enable Snapping** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position, searches quickly for local maxima in that neighborhood, and moves the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
-<img align="right" width="300" src="/media/plugins/snt/cursor-snap.png" title="Cursor auto-snapping in 2D or 3D" />
+<img align="right" width="300" src="/media/plugins/snt/cursor-snap.png" alt="Cursor auto-snapping in 2D or 3D" title="Cursor auto-snapping in 2D or 3D" />
 
 - This feature assumes the signal is brighter than the background as typically found in fluorescent images.
 
@@ -299,7 +299,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 ### Interactive Tracing
 <span id="auto-tracing"></span>
 
-<img align="right" width="450" src="/media/plugins/snt/snt-interactive-tracing.png" title="Interactive-tracing options" />
+<img align="right" width="450" src="/media/plugins/snt/snt-interactive-tracing.png" alt="Interactive-tracing options" title="Interactive-tracing options" />
 - **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search algorithm" %} to automatically trace paths between two manually selected points. To manually place nodes along a path, toggle this feature off. Note that it is also possible to enable other built-in algorithms or algorithms provided by external SNT add-ons. Current options include:
 
 - **A\* search**: Canonical and proven implementation of the historic algorithm, ported from [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
@@ -333,7 +333,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 ### Tracing on Secondary Image (Layer)
 
 <span id="tracing-on-secondary-image"></span>
-<img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-menu.png" title="Secondary layer controls" />
+<img align="right" width="450" src="/media/plugins/snt/snt-secondary-layer-menu.png" alt="Secondary layer controls" title="Secondary layer controls" />
 This is one of SNT's most advanced and useful features. The [default tracing algorithm](#interactive-tracing) provides an immediate way to detect structures by their likelihood of *belonging* to a tube-like structure (such as a neurite). However, it is just _one_ approach for "tube-like" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect processing algorithm for your images is not yet available in SNT?
 
 *Tracing on Secondary Layer* is the answer to these questions: It allows you to feed SNT with a pre-processed image on which the A\* star search will operate. Because this option can be toggled at will, it becomes a secondary _layer_ for interactive tracing: E.g., you may decide to trace certain neurites on the original image, while tracing other neurites on the secondary layer.
@@ -348,7 +348,7 @@ For the most part, the secondary layer remains hidden because feedback on the pa
 
 #### Creating Secondary layers
 
-<img align="right" width="400" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" title="Secondary layer wizard" />
+<img align="right" width="400" src="/media/plugins/snt/snt-secondary-layer-wizard-prompt.png" alt="Secondary layer wizard" title="Secondary layer wizard" />
 
 Secondary layers are created/load using the "Layers" drop-down menu in the _Interactive Tracing_ panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
 
@@ -375,7 +375,7 @@ The wizard needs two types of information from the user: The type of filtering o
 NB: The wizard also allows you to use a backup copy of the image being traced as secondary layer. This is only useful if you intend to modify the original image during a tracing session, but want to have convenient access to the initial image at a later time.
 
 <div align="center">
- <img  width="900" src="/media/plugins/snt/snt-secondary-layer-wizard.png" title="Secondary layer wizard previewers" />
+ <img  width="900" src="/media/plugins/snt/snt-secondary-layer-wizard.png" alt="Secondary layer wizard previewers" title="Secondary layer wizard previewers" />
 <br>
 <b>Secondary Layer Wizard</b>.<br>
 <b>Left</b>:  Visual selection of filtering kernel(s) using the <i>Sigma palette</i>. The palette features its own offline manual accessible by pressing <i>H</i> or <i>F1</i>. <b>Right</b>: Programmatic estimation of radii across the whole image using <i>local thickness</i>.
@@ -394,7 +394,7 @@ This widget reports current settings (cost function, image statistics, etc.). Re
 ### Path Display Filters
 <span id="filters-for-visibility-of-paths"></span>
 
-<img align="right" src="/media/plugins/snt/path-visibility-filters.png"  width="300" />
+<img align="right" alt="SNT path visibility filters" src="/media/plugins/snt/path-visibility-filters.png"  width="300" />
 By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths:
 
 1. **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
@@ -407,7 +407,7 @@ Any combination of these options may be toggled simultaneously. Note that these 
 
 ### Default Path Colors
 
-<img align="right" src="/media/plugins/snt/cmyk-color-model.png" title="CMYK color selection UI" width="300" />
+<img align="right" src="/media/plugins/snt/cmyk-color-model.png" alt="CMYK color selection UI" title="CMYK color selection UI" width="300" />
 By default, finished paths are colored by their selection status (only selected paths can be edited, or extended). The default colors are <font color="#00FF00">Green</font> (selected paths) and <font color="#FF00FF">Magenta</font> (deselected). Default colors can be customized by pressing the respective button in the widget . For customizing unconfirmed and temporary paths, see the *Colors* option in the [UI Interaction](#ui-interaction) widget.
 
 **Enforce default colors (ignore color tags)** If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons.
@@ -433,7 +433,7 @@ This tab aggregated widgets for advanced settings.
 
 ### Views
 
-<img align="right" width="300" src="/media/plugins/snt/snt-options-tab.png" title="Options tab" />
+<img align="right" width="300" src="/media/plugins/snt/snt-options-tab.png" alt="Options tab" title="Options tab" />
 - **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
 
 <div align="center">
@@ -502,7 +502,7 @@ _Only nodes within {x} nearby Z-slices_.
 
 ## 3D Tab
 
-<img align="right" width="250" src="/media/plugins/snt/snt-3d-tab.png" title="3D tab" />
+<img align="right" width="250" src="/media/plugins/snt/snt-3d-tab.png" alt="3D tab" title="3D tab" />
 This tab aggregates widgets related to 3D interaction.
 
 ### Reconstruction Viewer
@@ -535,8 +535,8 @@ The Legacy 3D Viewer is a functional tracing canvas and allows images to be trac
 
 This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/walkthroughs#spinevaricosity-analysis). The basic usage is as follows:
 
-<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" title="Delineations tab" />
-<img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" title="Bookmarks tab" />
+<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
+<img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
 
 - Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor's X, Y, Z, C, T coordinates
 
@@ -560,7 +560,7 @@ This tab hosts the Delineations Manager, a utility that allows measuring proport
 
 ## Notes Tab
 This tab hosts a simple notepad allowing you to jot down notes without disrupting the tracing workflow. Notes are not stored in neither .TRACES nor .SWC files and must be saved manually. The notepad is rather simple but supports [markdown markup](https://en.wikipedia.org/wiki/Markdown), and features a dedicated toolbar for insertion of automated text, such as name and path of image being traced, current time, computation settings, etc.
-<img align="right" width="300" src="/media/plugins/snt/snt-notes-tab.png" title="Notes tab" />
+<img align="right" width="300" src="/media/plugins/snt/snt-notes-tab.png" alt="Notes tab" title="Notes tab" />
 
 
 ## Status Bar
@@ -619,7 +619,7 @@ Pressing *Edit Path* with a single path selected will activate *Edit Mode*, unlo
 Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 
 ### Connect To (...) {% include key key='C' %}
-<img align="right" src="/media/plugins/snt/snt-connect-to.png" title="Connect To..." width="375" />
+<img align="right" src="/media/plugins/snt/snt-connect-to.png" alt="Connect To..." title="Connect To..." width="375" />
 
 Connects two paths under a parent-child relationship. To connect paths:
 
@@ -640,7 +640,7 @@ A confirmation dialog shows the connection summary with an option to swap parent
 
 See also this [walkthrough](/plugins/snt/walkthroughs#mergingjoining-paths).
 
-<img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" title="Editing paths: contextual menu (v4.2)" width="300" />
+<img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" alt="Editing paths: contextual menu (v4.2)" title="Editing paths: contextual menu (v4.2)" width="300" />
 
 ### Delete Active Node {% include key key='D' %}
 Removes the active node from the path.
@@ -687,14 +687,14 @@ Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image
 
 # Path Manager
 
-<img align="right" width="300" src="/media/plugins/snt/snt-path-manager.png" title="Path Manager (v4.3)" />
+<img align="right" width="300" src="/media/plugins/snt/snt-path-manager.png" alt="Path Manager (v4.3)" title="Path Manager (v4.3)" />
 The Path Manager dialog displays all existing paths in a hierarchical structure, where one path is "primary" or "root" (path 1) and all other paths (paths 2...N) are children of the primary path. This pattern repeats for each structure (arbor) being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
 {% include notice icon="info" content="Path Manager commands are applied to all paths if no paths are selected." %}
 
 
 ## Navigation Toolbar
-<img align="right" width="400" src="/media/plugins/snt/snt-navigation-toolbar.png" title="Navigation Toolbar (v5.0)" />
+<img align="right" width="400" src="/media/plugins/snt/snt-navigation-toolbar.png" alt="Navigation Toolbar (v5.0)" title="Navigation Toolbar (v5.0)" />
 
 The navigation toolbar allows for better handling of multiple arbors. An arbor is a primary (root‑level) path together with all of its children. In the Path Manager list, each arbor appears as a top‑level entry containing its dependent paths. The toolbar is designed to help you quickly navigate, filter, zoom, and bookmark image locations in larger projects. It includes the following controls:
 
@@ -745,7 +745,7 @@ Duplicates the selected path with options to duplicate just a sub-segment or a f
 - **Assign to Channel/Frame** The CT position of the duplicated path. Useful when 'transferring' paths across frames in [timelapse videos](step-by-step-instructions#time-lapse-analysis)
 
 - **Make primary** Whether the duplicated path (or group of paths) should be disconnected from their parent
-<img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" title="Duplicate... (v4.3)" />
+<img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" alt="Duplicate... (v4.3)" title="Duplicate... (v4.3)" />
 
 #### Go To...
 
@@ -929,7 +929,7 @@ This command sets fitting options and should be run before computing a fit. Opti
 
 #### Correct Radii...
 
-<img align="right" width="550px" src="/media/plugins/snt/correct-radii.png" title="Correct Radii..." />
+<img align="right" width="550px" src="/media/plugins/snt/correct-radii.png" alt="Correct Radii..." title="Correct Radii..." />
 If the fitting fails at a certain location (e.g., because the shape of the cross-section is too irregular, or because the fitted centroid is too far off) the program will skip that node moving on to the next. Skipped nodes will retain their original coordinates but their radius may become unset (see _Radius fallback_ in [parameters](#parameters)). This command collects such nodes from selected paths, and assigns them new radii using linear interpolation based on remaining nodes with valid radii. It can apply the interpolation immediately, or simply preview it. Note that by default _NaN_ and negative values are always corrected. The criterion specified in the prompt is used as an extra correction condition.
 
 ### Fill ›
@@ -941,7 +941,7 @@ This menu lists commands pertaining to ROIs and image processing routines.
 
 #### Convert to ROIs...
 
-<img align="right" width="400" src="/media/plugins/snt/snt-convert-to-rois.png" title="Convert to ROIs prompt prompt" />
+<img align="right" width="400" src="/media/plugins/snt/snt-convert-to-rois.png" alt="Convert to ROIs prompt prompt" title="Convert to ROIs prompt prompt" />
 Allows conversion of Path(s) to ImageJ [ROIs](https://imagej.net/ij/docs/guide/146-10.html#sec:Selections-Intro) (Regions of Interest). Opens the [ROI Manager](https://imagej.net/ij/docs/guide/146-30.html#fig:The-ROI-Manager), if closed. Options include:
 
 - *Convert* Drop-down menu specifying the structure(s) to convert. Options are:
@@ -962,7 +962,7 @@ Outputs a binary image that is a topographic skeleton, ie, it generates an empty
 - *ROI filtering*: If an area ROI exists over the image (you may need to pause SNT to create such an ROI), then only paths inside it will be converted
 - *Run "Analyze Skeleton" after conversion* Runs the [AnalyzeSkeleton](/plugins/analyze-skeleton) plugin on the skeletonized output image
 
-<img align="right" width="400" src="/media/plugins/snt/snt-straightened-path.png" title="Highlighted path in cyan 'straightened' using Path Manager Analyze>Straighten... command" />
+<img align="right" width="400" alt="Highlighted path in cyan straightened using Path Manager Analyze>Straighten... command" src="/media/plugins/snt/snt-straightened-path.png" title="Highlighted path in cyan 'straightened' using Path Manager Analyze>Straighten... command" />
 
 #### Straighten...
 
@@ -982,7 +982,7 @@ This menu contains several options which provide quick ways to analyze and visua
 
 #### Color Mapping ›
 
-<img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" title="Color Mapping" />
+<img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" alt="Color Mapping" title="Color Mapping" />
 
 This menu lists commands for mapping morphological traits into lookup tables that are then used to render reconstructions. It contains commands to map path-based metrics or branch-based metrics: _Path-based Color Mapping_ accepts _any_ type of structures (i.e., any group of selected paths, even those belonging to different cells) but offers limited mapping metrics, while _Branch-based Color Mapping_ requires structures to be valid mathematical trees (with more mapping metrics available). These commands prompt for the following settings:
 
@@ -1023,7 +1023,7 @@ Commands for retrieving a table of summary statistics for selected paths/cells. 
 Plots a Path metric against several others.
 
 #### Node Profiler...
-<img align="right" src="/media/plugins/snt/snt-node-and-path-profiler.png" width="700px" title="Node and Path Profilers (v4.3)" />
+<img align="right" src="/media/plugins/snt/snt-node-and-path-profiler.png" width="700px" alt="Node and Path Profilers (v4.3)" title="Node and Path Profilers (v4.3)" />
 
 Displays a cross-section profile of the path. The X-axis represents distance across the path and the Y-axis a measure of pixel intensity. Pixel Intensities are retrieve using a 'shaped cursor' described in [Path Profiler...](#path-profiler).
 
@@ -1055,7 +1055,7 @@ Exports the selected subset of Path(s) as an [SWC](/plugins/snt/faq#what-is-a-sw
 
 ## Filter Toolbar
 
-<img align="right" width="400px" src="/media/plugins/snt/snt-path-manager-filter-toolbar.png" title="Filter toolbar (v5.0)" />
+<img align="right" width="400px" src="/media/plugins/snt/snt-path-manager-filter-toolbar.png" alt="Filter toolbar (v5.0)" title="Filter toolbar (v5.0)" />
 The filter toolbar allows paths to be searched and filtered quickly using tags, colors, SWC-type, or morphometric properties. The toolbar is organized in two sections: Text-based filtering and Propertied-based filtering:
 
 ### Text-based Filtering
@@ -1068,7 +1068,7 @@ The trailing icons within the text field control case-sensitive matching and/or 
 
 Other search settings can be accessed through the text field drop-down menu, including a replace-by-pattern option.
 
-<img align="right" width="250px" src="/media/plugins/snt/snt-path-manager-color-filters.png" title="Color filters (v5.0)" />
+<img align="right" width="250px" src="/media/plugins/snt/snt-path-manager-color-filters.png" alt="Color filters (v5.0)" title="Color filters (v5.0)" />
 
 ### Propertied-based Filtering
 
@@ -1080,7 +1080,7 @@ Allows filtering of Paths by color tags
 
 #### Tag Filters <i class="fa fa-tag"></i>
 Allows filtering of tags set via the {% include bc path='Tag|Other...' %} command or the [Proofreading Toolbar](#proofreading-toolbar). The prompt will generate a multiple-choice list of the tags associated with the selected paths (all paths if none is selected).
-<img align="right" width="250px" src="/media/plugins/snt/snt-tag-filtering.png" title="Tag filtering (v5.0)" />
+<img align="right" width="250px" src="/media/plugins/snt/snt-tag-filtering.png" alt="Tag filtering (v5.0)" title="Tag filtering (v5.0)" />
 
 #### Morphology Filters <i class="fa fa-ruler-combined"></i>
 Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters _do not_ require Paths to be labeled using {% include bc path='Tag|Morphology| ' %}. Typically a morphological filter requires an input range. Here are some examples:

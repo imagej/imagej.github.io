@@ -8,7 +8,7 @@ team-founder: "@benoalo"
 team-maintainer: "@benoalo"
 ---
 
-{% include info-box filename='![](/media/plugins/manual-drift-correction-1.0.0.jar.zip)' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' %}
+{% include info-box filename='![Manual drift correction 1.0.0.jar](/media/plugins/manual-drift-correction-1.0.0.jar.zip)' source=' [github](https://github.com/mpicbg-scicomp/Manual_drift_correction)' %}
 
 ## Goal of the plugin
 
@@ -18,7 +18,7 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 
 ### Installation
 
-To get started with the plugin first download it (![](/media/plugins/manual-drift-correction-1.0.0.jar.zip)), unzip it and install it (Fiji menu {% include bc path="Plugins|Install..." %}). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu {% include bc path="Plugins|Registration|Manual drift correction" %} meaning that the plugin was properly installed.
+To get started with the plugin first download it (![Manual drift correction 1.0.0.jar](/media/plugins/manual-drift-correction-1.0.0.jar.zip)), unzip it and install it (Fiji menu {% include bc path="Plugins|Install..." %}). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu {% include bc path="Plugins|Registration|Manual drift correction" %} meaning that the plugin was properly installed.
 
 ### Tutorial
 

@@ -47,12 +47,12 @@ Several ImageJ-related projects have channels on the [Image.sc Zulip instance](h
 
 | Logo                                       | Project                                      | Channel       |
 |--------------------------------------------|----------------------------------------------|---------------|
-| ![](/media/icons/imagej2.png){:width="24"} | ImageJ wiki (this website)                   | `#imagej.net` |
-| ![](/media/icons/imagej2.png){:width="24"} | [ImageJ2](/software/imagej2)                 | `#ImageJ2`    |
-| ![](/media/icons/fiji.png){:width="24"}    | [Fiji](/software/fiji)                       | `#Fiji`       |
-| ![](/media/icons/imglib2.png){:width="24"} | [ImgLib2](/libs/imglib2)                     | `#ImgLib2`    |
-| ![](/media/icons/scifio.png){:width="24"}  | [SCIFIO](/libs/scifio)                       | `#SCIFIO`     |
-| ![](/media/icons/scijava.png){:width="24"} | [SciJava](/libs/scijava)                     | `#SciJava`    |
+| ![Imagej2](/media/icons/imagej2.png){:width="24"} | ImageJ wiki (this website)                   | `#imagej.net` |
+| ![Imagej2](/media/icons/imagej2.png){:width="24"} | [ImageJ2](/software/imagej2)                 | `#ImageJ2`    |
+| ![Fiji](/media/icons/fiji.png){:width="24"}    | [Fiji](/software/fiji)                       | `#Fiji`       |
+| ![Imglib2](/media/icons/imglib2.png){:width="24"} | [ImgLib2](/libs/imglib2)                     | `#ImgLib2`    |
+| ![Scifio](/media/icons/scifio.png){:width="24"}  | [SCIFIO](/libs/scifio)                       | `#SCIFIO`     |
+| ![Scijava](/media/icons/scijava.png){:width="24"} | [SciJava](/libs/scijava)                     | `#SciJava`    |
 |                                            | [3D ImageJ Suite](/plugins/3d-imagej-suite/) | `#3D Suite`   |
 
 ## Previous chat solutions

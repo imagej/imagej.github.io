@@ -11,7 +11,7 @@ nav-links: true
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ({% include wikipedia title='Image segmentation' text='Wikipedia'%})
 
-![](/media/imaging/segmentation-overlay.jpg) ![](/media/imaging/segmentation-boundaries.jpg)
+![Segmentation overlay](/media/imaging/segmentation-overlay.jpg) ![Segmentation boundaries](/media/imaging/segmentation-boundaries.jpg)
 
 It is typically used to locate *objects* and *boundaries*.
 
@@ -55,7 +55,7 @@ One plugin which is designed to be very powerful, yet easy to use for non-expert
         </ul>
       </td>
       <td>
-        <p><img src="/media/tws-gui-after-training.png" width="500"></p>
+        <p><img src="/media/tws-gui-after-training.png" alt="Trainable Weka Segmentation GUI after training" width="500"></p>
       </td>
     </tr>
     <tr>

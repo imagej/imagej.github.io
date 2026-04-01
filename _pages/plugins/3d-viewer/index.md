@@ -10,7 +10,7 @@ nav-links: true
 
 This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](/libs/java-3d) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
 
-![](/media/3d-viewer-overview.png)
+![3d viewer overview](/media/3d-viewer-overview.png)
 
 ## Screencasts
 

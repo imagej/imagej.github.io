@@ -11,29 +11,29 @@ Often you want to apply a common operation to all images in a given directory. T
 
 First, start the Macro Recorder:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-1.jpg)
+![How to apply a common operation to a complete directory 1](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-1.jpg)
 
 This will open the Macro Recorder window:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-2.jpg)
+![How to apply a common operation to a complete directory 2](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-2.jpg)
 
 Now perform the operation on a single image. Make sure that you save the image at the end.
 
 Exmaple: cropping the image. First, select a rectangle:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-3.jpg)
+![How to apply a common operation to a complete directory 3](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-3.jpg)
 
 Then crop it.
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-4.jpg)
+![How to apply a common operation to a complete directory 4](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-4.jpg)
 
 After saving, the recorder window will show this:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-6.jpg)
+![How to apply a common operation to a complete directory 6](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-6.jpg)
 
 Click on the **Create** button, and you will get this:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-7.jpg)
+![How to apply a common operation to a complete directory 7](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-7.jpg)
 
 ## Step 2: Make the macro generic
 
@@ -128,8 +128,8 @@ run("Crop");
 
 Find the *Multiple ImageProcessor* plugin in the *Process* menu:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-8.jpg)
+![How to apply a common operation to a complete directory 8](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-8.jpg)
 
 The dialog would need to be filled out like this:
 
-![](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-9.jpg)
+![How to apply a common operation to a complete directory 9](/media/tutorials/how-to-apply-a-common-operation-to-a-complete-directory-9.jpg)

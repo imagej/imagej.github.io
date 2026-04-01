@@ -35,26 +35,26 @@ BTrack is a tool to analyse the growth of branched tissues. A 2D time-lapse/ 3D 
 For using this detector select Btrack from the detector menu list of TrackMate. The screen looks as shown here
 
 
-<img src="/media/plugins/btrack/Btrackdetector_screen_1.png" width="250"/> 
+<img src="/media/plugins/btrack/Btrackdetector_screen_1.png" alt="Btrackdetector screen 1" width="250"/> 
 
 
 
 #### Detection Panel
 Click next and if you are using a hyperstack with Raw and segmentation images in two channels, choose the segmentation image channel for the detector. Click Preview to see the detected end points. The panel for this looks as shown here
 
-<img src="/media/plugins/btrack/Btrackdetector_screen_2.png" width="250"/> 
+<img src="/media/plugins/btrack/Btrackdetector_screen_2.png" alt="Btrackdetector screen 2" width="250"/> 
 
 
 In our [example, download from Zenodo](https://zenodo.org/record/6838981) we have the Segmentation image in channel 1 and the Raw image in channel 2 and the initial detections look as shown here
 
-<img src="/media/plugins/btrack/initial_detections.png" width="250"/> 
+<img src="/media/plugins/btrack/initial_detections.png" alt="Initial detections" width="250"/> 
 
 
 #### Tracking Options
 
 After the initial preview click on the next button to run the detector on all the timepoints, after that you can use the simple LAP tracker of TrackMate [^1] to track the growing end points. The final result after tracking looks as shown here
 
-<img src="/media/plugins/btrack/initial_tracks.png" width="250"/> 
+<img src="/media/plugins/btrack/initial_tracks.png" alt="Initial tracks" width="250"/> 
 
 
 

@@ -32,7 +32,7 @@ This work was supported by the French Ministry of Agriculture, France AgriMer, C
 
 **Versatility:** Fijiyama is a generic tool, efficient at any scale, tissue or imaging modality. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
-<img src="/media/reg-present-1.png" width="700"/>
+<img src="/media/reg-present-1.png" alt="Reg present 1" width="700"/>
 
 ## Dataset with DOI for testing purpose
 

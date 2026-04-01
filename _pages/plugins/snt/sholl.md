@@ -26,7 +26,7 @@ Automated Sholl for direct analysis of segmented images and traced morphologies.
 
 
 # Introduction
-<img align="right" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
+<img align="right" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" alt="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
 The Sholl technique[^2] is used to describe neuronal arbors. SNT features a collection of tools that perform Sholl on reconstructed morphologies, or directly on 2D/3D images of isolated neurons (bypassing the need for reconstruction). The procedure is based upon how Sholl analysis is done by hand: Algorithms define a series of concentric *shells* (circles or spheroids) around a focal point of a neuronal arbor and count how many times the arbor intersects sampling shells. The major advantages of these tools over other implementations are:
 
 - Both images and reconstructions can be analyzed
@@ -90,7 +90,7 @@ Since SNTv5 it is possible to obtain **length profiles** in addition to the trad
 
 
 # Direct Analysis of Images
-<img align="right" width="320px" src="/media/plugins/snt/sholl-bitmap-promptv4.png" title="Main prompt (v4.2.1) when input is a segmented image" >
+<img align="right" width="320px" src="/media/plugins/snt/sholl-bitmap-promptv4.png" alt="Main prompt (v4.2.1) when input is a segmented image" title="Main prompt (v4.2.1) when input is a segmented image" >
 
 In this mode (bitmap analysis), the plugin requires a [binary image or a segmented](#faq:threshold) [grayscale image](#faq:image-types) (2D or 3D) containing a single neuron.
 
@@ -132,7 +132,7 @@ It is important to visually confirm which phase of the segmented image will be s
       <td>
         <center>
           <figure>
-            <img src="/media/plugins/cfsegmentation.png" width="700">
+            <img src="/media/plugins/cfsegmentation.png" alt="Segmented image comparison: Black/White LUT, Yellow/Blue LUT, and Intersections mask with Jet LUT" width="700">
           </figure>
         </center>
       </td>
@@ -159,7 +159,7 @@ With binary images, *Sholl Analysis* treats zero intensities as the background, 
 
 # Analysis of Traced Cells
 
-<img align="right" width="320px" src="/media/plugins/snt/sholl-tracings-promptv4.png" title="Main prompt (v4.2.1) when input is a traced data" >
+<img align="right" width="320px" src="/media/plugins/snt/sholl-tracings-promptv4.png" alt="Main prompt (v4.2.1) when input is traced data" title="Main prompt (v4.2.1) when input is a traced data" >
 
 In this mode the plugin analyzes reconstructed arbors (traced in SNT or [elsewhere](./comp-tools)), which is particularly relevant for stainings that do not allow single-cell resolution or proper segmentation. There are several entry points to this analysis, namely:
 

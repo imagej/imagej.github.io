@@ -25,4 +25,4 @@ And more particularly for:
 
 The diagram below depicts the relation between the different classes composing the original [ImageJ](/software/imagej):
 
-{% include img src="imagej-api-diagram" width="1100" %}
+{% include img src="/media/scripting/imagej-api-diagram.jpg" alt="ImageJ API class diagram" width="1100" %}

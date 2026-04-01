@@ -33,7 +33,7 @@ for the legacy dialog. If this is not visible in your installation, try updating
 <table>
   <tbody>
     <tr>
-        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-init-dialog.png" width="500"/> </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-init-dialog.png" alt="BigWarp command initialization dialog" width="500"/> </td>
         <td style="padding: 5px;">
             <ul>
             <li><b>BigWarp project or landmarks</b> : Select a saved BigWarp project file (json) or landmarks file (csv).</li>
@@ -64,7 +64,7 @@ a path or [N5URL](https://github.com/saalfeldlab/n5/wiki/URLs) directly into the
 <table>
   <tbody>
     <tr>
-        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-dialog-legacy.png" width="250"/> </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-dialog-legacy.png" alt="BigWarp legacy dialog for selecting moving and target images" width="250"/> </td>
         <td style="padding: 5px;">
             <ul>
             <li><b>moving image</b> : Select an image open in ImageJ to be transformed.</li>
@@ -307,7 +307,7 @@ Press {% include key key='F2' %} to bring up a transformation type selection win
 
 |                                                |                                                   |
 |------------------------------------------------|---------------------------------------------------|
-| <img src="/media/plugins/bigwarp/bigwarp-selecttps.png" width="400"/> | <img src="/media/plugins/bigwarp/bigwarp-selectaffine.png" width="400"/> |
+| <img src="/media/plugins/bigwarp/bigwarp-selecttps.png" alt="BigWarp thin plate spline transformation selection" width="400"/> | <img src="/media/plugins/bigwarp/bigwarp-selectaffine.png" alt="BigWarp affine transformation selection" width="400"/> |
 | Example of a thin plate spline transformation  | Example of an affine transformation               |
 
 #### Table of transformation types
@@ -611,7 +611,7 @@ Export the warped moving image by clicking
 {% include bc path="File | Export as ImagePlus" %} or using the
 {% include key keys='Ctrl|E' %} keyboard shortcut.
 
-![](/media/plugins/bigwarp/bigwarp-export.png)
+![Bigwarp export](/media/plugins/bigwarp/bigwarp-export.png)
 
 The default parameters will result in the exported image having the same
 dimensions as the target image.
@@ -633,7 +633,7 @@ dimensions as the target image.
 
 The warped moving image can be exported as an in-memory or [virtual](https://imagej.net/ij/docs/guide/146-8.html) ImagePlus. A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-<img src="/media/plugins/bigwarp/bigwarplandmarkcenteredexport.png" width="600"/>
+<img src="/media/plugins/bigwarp/bigwarplandmarkcenteredexport.png" alt="BigWarp landmark-centered export dialog" width="600"/>
 
 ### Apply transforms
 
@@ -700,7 +700,7 @@ transformations as displacement fields that can either be displayed as a window 
             </li>
             </ul>
         </td>
-        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-export-transform-dialog.png" width="500"/> </td>
+        <td style="padding: 5px;"> <img src="/media/plugins/bigwarp/bigwarp-export-transform-dialog.png" alt="BigWarp export transform dialog" width="500"/> </td>
     </tr>
   </tbody>
 </table>
@@ -744,7 +744,7 @@ The results are shown in the "Inverse example" below.
 
 |                                                   |                                                   |
 |---------------------------------------------------|---------------------------------------------------|
-| <img src="/media/plugins/bigwarp/bigwarp-warp-roi-fwd.png" width="600"/> | <img src="/media/plugins/bigwarp/bigwarp-warp-roi-inv.png" width="600"/> |
+| <img src="/media/plugins/bigwarp/bigwarp-warp-roi-fwd.png" alt="BigWarp forward ROI warp example" width="600"/> | <img src="/media/plugins/bigwarp/bigwarp-warp-roi-inv.png" alt="BigWarp inverse ROI warp example" width="600"/> |
 | Forward example                                                  | Inverse example                                                  |
 
 Note, at this time ImageJ ROIs are 2D objects. We recommend using another approach for 3D regions of interest.

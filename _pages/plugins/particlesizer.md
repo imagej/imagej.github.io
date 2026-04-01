@@ -34,7 +34,7 @@ You can now start the ParticleSizer via {% include bc path="Plugins | NanoDefine
 
 # Settings
 
-**Segmentation:**![](/media/plugins/psizer-gui.png)
+**Segmentation:**![Psizer gui](/media/plugins/psizer-gui.png)
 
 -   Circular window radius: This is a parameter of the local thresholding technique. The ParticleSizer does not use a global threshold to binarize the image. Instead it uses a local threshold which is estimated for a specific circular region with the configured radius.
 -   Rolling ball radius: The background is removed by rolling a ball with this radius over the surface (intensity interpreded as hight) of the image. It should be at least as large as the largest object in image which does not belongs to the background.
@@ -107,7 +107,7 @@ The ParticleSizer supports the [NanoDefiner e-tool](https://labs.inf.fh-dortmund
 
 ## Kaolin, Settings: +Single particle mode
 
-<img src="/media/plugins/kaolin-ohne-overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/media/plugins/kaolin-overlay.png" width="300"/> <img src="/media/plugins/kaolin-size-distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
+<img src="/media/plugins/kaolin-ohne-overlay.png" title="fig:Kaolin_ohne_overlay.png" width="300" alt="Kaolin_ohne_overlay.png" /> <img src="/media/plugins/kaolin-overlay.png" alt="Kaolin overlay" width="300"/> <img src="/media/plugins/kaolin-size-distr.png" title="fig:Kaolin_size_distr.png" width="300" alt="Kaolin_size_distr.png" />
 
 # How to cite
 

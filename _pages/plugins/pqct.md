@@ -47,7 +47,7 @@ This package contains tools for Stractec pQCT soft-tissue and bone images. It's 
 
 The main tool for pQCT image analysis. You must open an image first before running this tool.
 
-![](/media/selections.png)
+![Selections](/media/selections.png)
 
 -   **Flip horizontal**: flips the image horizontally
 
@@ -318,14 +318,14 @@ compressive strength index (=ToD²\*ToA)
 ### Interpretation
 
 **Polar distribution**  
-![](/media/polar.png)  
+![Polar](/media/polar.png)  
 The mean of the three radial divisions within a given sector is reported as the density of that sector. Applies to:
 
 -   0° - 10° ... 350° - 360° mineral mass \[mg\]
 -   Polar sector \#0 ... \#35 vBMD \[mg/cm³\]
 
 **Radial distribution**  
-![](/media/radial.png)  
+![Radial](/media/radial.png)  
 The mean of the thirty six 10° sectors within a given anatomical ring is reported as the density of that ring. Applies to:
 
 -   Radial division \#0 ... \#2 vBMD \[mg/cm³\]
@@ -341,7 +341,7 @@ The mean of the thirty six 10° sectors within a given anatomical ring is report
 
 -   0° - 10° ... 350° - 360° endo/pericortical radius \[mm\]
 
-![](/media/radii.png)  
+![Radii](/media/radii.png)  
 Endo- and pericortical radii are given as the distance from the centroid of the marrow cavity to the endo- and pericortical border, respectively. The radii are calculated prior to peeling off the layers of pixels from endosteal and periosteal border.
 
 ## Export Stratec Header

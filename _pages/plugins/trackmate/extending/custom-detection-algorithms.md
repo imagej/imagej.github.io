@@ -554,7 +554,7 @@ Here is what our dummy example looks. To maximize your user experience, I let it
 
 _JY_
 
-![](/media/plugins/trackmate/trackmatecustomdetector-01.gif)
+![Trackmatecustomdetector 01](/media/plugins/trackmate/trackmatecustomdetector-01.gif)
 
 ## References
 

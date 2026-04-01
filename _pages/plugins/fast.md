@@ -18,7 +18,7 @@ This ImageJ macro automates tasks (open, set threshold, save Region Of Interest,
 
 ## Image Processing
 
-[<img src="/media/plugins/fast-processing.png" title="Description of the Image processing pipeline of FAST macro." width="450" align="right"/>] (https://imagej.net/media/plugins/fast-processing.png)
+[<img src="/media/plugins/fast-processing.png" alt="Fast processing" title="Description of the Image processing pipeline of FAST macro." width="450" align="right"/>] (https://imagej.net/media/plugins/fast-processing.png)
 
 ### Step 1: Auto processing of images within the selected work directory
 
@@ -34,7 +34,7 @@ This ImageJ macro automates tasks (open, set threshold, save Region Of Interest,
 
 ## Startup Options
 
-<img src="/media/plugins/fast-options.png" title="Options dialog box" width="250" align="right"/>
+<img src="/media/plugins/fast-options.png" alt="Fast options" title="Options dialog box" width="250" align="right"/>
 The macro displays a dialog box to set analysis options:
 
 **File type** : Select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).  
@@ -66,9 +66,9 @@ Just select the radio button option needed then click {% include button label='O
 If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
 
-<img src="/media/plugins/fast-thr-roi.png" title="Example of thresholded image and corrected ROI" width="500" />
+<img src="/media/plugins/fast-thr-roi.png" alt="Fast thr roi" title="Example of thresholded image and corrected ROI" width="500" />
 
-Select the appropriate tool in ImageJ toolbar: ![](/media/freehand.png) Freehand (default) OR ![](/media/plugins/wand-tool.png) Wand tool.
+Select the appropriate tool in ImageJ toolbar: ![Freehand](/media/freehand.png) Freehand (default) OR ![Wand tool](/media/plugins/wand-tool.png) Wand tool.
 
 -   To remove non-specific fluorescence, use selected tool and hold {% include key key='Alt' %} while unwanted area to remove it from ROI.
 -   To add area to the previously selected ROI, hold {% include key key='Shift' %} while selecting new area to add.

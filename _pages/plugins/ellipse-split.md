@@ -39,15 +39,15 @@ Suppose you have the following input image:
 
 Then the watershed approach ({% include bc path="Process | Binary | Watershed" %}) would give this result:
 
-<img src="/media/plugins/ellipsesplit-watershed.png" width="300"/>
+<img src="/media/plugins/ellipsesplit-watershed.png" alt="Ellipsesplit watershed" width="300"/>
 
 The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![](/media/plugins/ellipsesplit-result.png)
+![Ellipsesplit result](/media/plugins/ellipsesplit-result.png)
 
 Furthermore it outputs several important features:
 
-<img src="/media/plugins/ellipsesplit-resultstable.png" width="600"/>
+<img src="/media/plugins/ellipsesplit-resultstable.png" alt="Ellipsesplit resultstable" width="600"/>
 
 ## Parameters
 

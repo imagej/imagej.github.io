@@ -93,7 +93,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 <center>
 
-<img src="/media/plugins/startupbar.png" width="380"/>
+<img src="/media/plugins/startupbar.png" alt="Startupbar" width="380"/>
 
 </center>
 

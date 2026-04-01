@@ -7,15 +7,15 @@ nav-title: Introduction
 
 # What is ImageJ?
 
-[![](/media/icons/imagej.png){:height="48px"} ImageJ](/software/imagej) is [public domain](/licensing#a-note-about-imagej) software for processing and analyzing scientific images.
+[![Imagej](/media/icons/imagej.png){:height="48px"} ImageJ](/software/imagej) is [public domain](/licensing#a-note-about-imagej) software for processing and analyzing scientific images.
 
 # What is ImageJ2?
 
-[![](/media/icons/imagej2.png){:height="48px"} ImageJ2](/software/imagej2) is a new version of ImageJ for multidimensional image data, with a focus on scientific imaging. It includes some additional features not available in the original ImageJ.
+[![Imagej2](/media/icons/imagej2.png){:height="48px"} ImageJ2](/software/imagej2) is a new version of ImageJ for multidimensional image data, with a focus on scientific imaging. It includes some additional features not available in the original ImageJ.
 
 # What is Fiji?
 
-[![](/media/icons/fiji.svg){:height="48px"} <span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](/software/fiji)—a "batteries-included" distribution of ImageJ and ImageJ2 which includes many useful [plugins](/plugins) [contributed by the community](/contribute/fiji).
+[![Fiji](/media/icons/fiji.svg){:height="48px"} <span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>mageJ](/software/fiji)—a "batteries-included" distribution of ImageJ and ImageJ2 which includes many useful [plugins](/plugins) [contributed by the community](/contribute/fiji).
 
 # What does ImageJ provide?
 
@@ -95,21 +95,21 @@ The toolbar mostly contains selection tools: the rectangle, ellipse, polygon, fr
 
 Some tools offer option dialogs which you can open by double clicking the icon. This example shows the option dialog of the Oval Tool:
 
-![](/media/learn/oval-tool-option-dialog.png)
+![Oval tool option dialog](/media/learn/oval-tool-option-dialog.png)
 
 If there is a small red arrow in the lower right corner of the tool icon, you can right-click ({% include key keys='Ctrl|Left Click' %} on an Apple mouse) and select an alternative selection tool (e.g. a circular brush selection tool which shares the icon with the ellipse selection tool). Example:
 
-![](/media/learn/alternative-tools.png)
+![Alternative tools](/media/learn/alternative-tools.png)
 
 ### The status bar
 
 The status bar displays useful information at startup, and when running plugins. It also shows a progress bar on the right side for long-running processes:
 
-![](/media/learn/status-bar-with-progress.png)
+![Status bar with progress](/media/learn/status-bar-with-progress.png)
 
 A single mouse click on the status bar will show the information about ImageJ and Java version as well as about memory consumption:
 
-![](/media/learn/default-status-message.png)
+![Default status message](/media/learn/default-status-message.png)
 
 ### Drag & Drop
 
@@ -125,7 +125,7 @@ Whenever you open an image, be it via {% include bc path='File | Open' %},
 Drag 'n Drop or {% include bc path='File | Open Samples' %}, ImageJ will open
 an image window.
 
-![](/media/learn/clown-snapshot.jpg)
+![Clown snapshot](/media/learn/clown-snapshot.jpg)
 
 The window has the file name as title, and it display some useful information
 above the image: the real resolution (in this case in square centimeters), the
@@ -140,7 +140,7 @@ by following the
 
 You can change the image *type*:
 
-![](/media/image-types.png)
+![Image types](/media/image-types.png)
 
 Choose between
 

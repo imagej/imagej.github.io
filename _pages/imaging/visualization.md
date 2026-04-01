@@ -151,7 +151,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
           <li>Enables live streaming of 3D data in real time over the internet</li>
         </ul>
       </td>
-      <td><img src="/media/clearvolumeinfiji.png" width="500"></td>
+      <td><img src="/media/clearvolumeinfiji.png" alt="ClearVolume in Fiji screenshot" width="500"></td>
     </tr>
     <tr>
       <td>
@@ -166,7 +166,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
           </li>
         </ul>
       </td>
-      <td><img src="/media/imaging/volviewer.png" width="500"></td>
+      <td><img src="/media/imaging/volviewer.png" alt="Volume Viewer screenshot" width="500"></td>
     </tr>
     <tr>
       <td>
@@ -183,7 +183,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
           </li>
         </ul>
       </td>
-      <td><img src="/media/imaging/sciview-gameoflife.gif" width="500"></td>
+      <td><img src="/media/imaging/sciview-gameoflife.gif" alt="sciview Game of Life visualization" width="500"></td>
     </tr>
   </tbody>
 </table>
@@ -243,7 +243,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
           </li>
         </ul>
       </td>
-      <td><img src="/media/bdv.png" width="500"></td>
+      <td><img src="/media/bdv.png" alt="BigDataViewer screenshot" width="500"></td>
     </tr>
     <tr>
       <td>
@@ -257,7 +257,7 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
           <li>Interactive viewing and annotation of the data</li>
         </ul>
       </td>
-      <td><img src="/media/imaging/spim-application.png" width="500"></td>
+      <td><img src="/media/imaging/spim-application.png" alt="MultiView Reconstruction screenshot" width="500"></td>
     </tr>
   </tbody>
 </table>
@@ -290,7 +290,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
           </li>
         </ul>
       </td>
-      <td><img src="/media/mamut.png" width="500"></td>
+      <td><img src="/media/mamut.png" alt="MaMuT screenshot" width="500"></td>
     </tr>
     <tr>
       <td>
@@ -305,7 +305,7 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
           <li>Enables landmark pair placement and displays the effects of the warp on-the-fly</li>
         </ul>
       </td>
-      <td><img src="/media/bigwarp.png" width="400"></td>
+      <td><img src="/media/bigwarp.png" alt="BigWarp screenshot" width="400"></td>
     </tr>
   </tbody>
 </table>

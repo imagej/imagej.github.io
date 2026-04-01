@@ -24,7 +24,7 @@ Main Features include:
 - Right-click on palette to move or remove LUTs
 - Empty palette channels default to "Grays"
 - All created palettes will be easilly accessible from the **Channels and Contrast** plugin!    
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="700px"}        
+![Image Viewer LUTs Manager](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="700px"}        
 
 #### LUTs Finder
 All LUTs in your ImageJ `luts` folder are scanned      
@@ -43,7 +43,7 @@ Each LUT comes with an **estimated** description of its properties:
 
 # Channels and Contrast
 This plugin combines and enhance most imageJ's "Brightness and Contrast" and "Channels Tool" functionalities to manage visualization of the active image       
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true){:width="600px"}          
+![Image Viewer Channels and Contrast](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true){:width="600px"}          
 You can:
 - Change multi-channel display mode: composite, color, or grayscale
 - **Right click on the composite button to change projection mode : Sum, Max, Min and Invert**
@@ -55,9 +55,9 @@ You can:
   - **Min/Max:** Resets the display range betwin the min and max values of the full channel stack. (this is why it can be a bit slow with huge images)       
 - Interface with the **LUTs Manager** to apply LUT palettes or individual favorite LUTs      
 You can change order of LUTs in a palette directly with the mouse from the palette menu     
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-palettes.png?raw=true){:width="300px"}     
+![Image Viewer CC palettes](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-palettes.png?raw=true){:width="300px"}     
 - Access more options and built-in utilities for multi-channel images via the "More" button     
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-More.png?raw=true){:width="200"}      
+![Image Viewer CC More](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-More.png?raw=true){:width="200"}      
 
 # Preview Opener
 This command creates a thumbnail montage of opened images and saves it in their directory  
@@ -129,7 +129,7 @@ And it can do **many** actions based on the mouse button, modifier keys (shift, 
 A collection of utility macros:
 ### **Split View:** 
 Quickly create clean multichannel montages for up to 5 channels :       
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
+![Image Viewer SplitView](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
 
 ### **Auto Scale Bar:** 
 Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
@@ -145,7 +145,7 @@ Then in your imageJ app folder : place the **Image Viewer** folder on the ``plug
 
 All commands and plugins are located in the ``Plugins > Image Viewer`` menu.       
 However, The easiest way to access commands is from the toolbar menu you can find as ``Image_Viewer_Toolset`` under the red `>>` menu in the ImageJ window:            
-![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Toolset.png?raw=true){:width="300px"}    
+![Image Viewer Toolset](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Toolset.png?raw=true){:width="300px"}    
 This will install a "View" menu in your Toolbar will all Image Viewer commands!     
 
 Note :     

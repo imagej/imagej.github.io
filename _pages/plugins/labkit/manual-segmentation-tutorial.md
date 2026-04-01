@@ -14,4 +14,4 @@ This quick start tutorial shows you how to manually segment an image using the [
 4.  Use the `Flood Fill` button (bucket icon) to fill inside this contour
 5.  When all objects have been labeled in the manner above, select `Labeling > Save Labeling`
 
-<img src="https://user-images.githubusercontent.com/34229641/106534470-6b4df100-64f4-11eb-8c76-600a33de669a.gif"  width="800" />
+<img src="https://user-images.githubusercontent.com/34229641/106534470-6b4df100-64f4-11eb-8c76-600a33de669a.gif" alt="106534470 6b4df100 64f4 11eb 8c76 600a33de669a"  width="800" />

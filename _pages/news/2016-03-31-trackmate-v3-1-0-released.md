@@ -8,7 +8,7 @@ We just release the version 3.1.0 of [TrackMate](/plugins/trackmate), a Fiji plu
 
 -   Add an action that export all visible spots statistics, regardless of whether they belong in a track or not.
 
-![](/media/news/trackmate-exportallspotsstatistics.png)
+![Exportallspotsstatistics](/media/news/trackmate-exportallspotsstatistics.png)
 
 -   New display mode: show only selection.
 
@@ -22,7 +22,7 @@ This track display mode only shows the content of the current selection, for spo
 
 -   There is now a step-wise time browsing ('à la MaMuT'): press 'F' and 'G' to move in time by jumping to frames, spaced by a number set in the Spot edit tool of TrackMate (double-click on the icon in the ImageJ toolbar).
 
-![](/media/news/trackmate-stepwisetimebrowsing.png)
+![Stepwisetimebrowsing](/media/news/trackmate-stepwisetimebrowsing.png)
 
 -   The manual editing of spot radius (press 'Q' and 'E') is fully reversible (if you press 3 times 'Q' then 3 times 'E', you get back the initial radius).
 
