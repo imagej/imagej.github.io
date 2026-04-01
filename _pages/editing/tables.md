@@ -119,13 +119,21 @@ you can declare it inline:
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-weight: bold;
 }
+.power-levels-table th { text-decoration: underline; }
+.power-levels-table th, .power-levels-table td {
+  padding: 0.2em 1em;
+  color: black;
+  text-shadow:
+    -1px -1px 0 white, 1px -1px 0 white,
+    -1px  1px 0 white, 1px  1px 0 white;
+}
 </style>
 
 | Superhero      | Power Level |
-| -------------- | -----------|
-| Captain Marvel | ridiculous |
-| Superman       | ludicrous  |
-| Silver Surfer  | absurd     |
+| -------------- | ------------|
+| Captain Marvel | ridiculous  |
+| Superman       | ludicrous   |
+| Silver Surfer  | absurd      |
 {:.power-levels-table}
 {% endcapture %}
 {% include editing/example code=custom-styling-inline %}
