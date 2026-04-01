@@ -2,15 +2,19 @@
 # Runs WCAG 2.1 AA accessibility checks against the built site using
 # pa11y with the axe runner.  Requires Node.js (npx must be on PATH).
 #
-# Usage: _bin/check-accessibility.sh
+# Usage: _bin/check-accessibility.sh [page ...]
 #   The site must already be built (bundle exec jekyll build).
 #
-# Pages tested:
-#   /            home page  (ignores: color-contrast, aria-required-children,
-#                             link-in-text-block — all image-background issues
-#                             flagged as needsFurtherReview by axe)
-#   /learn       intro page
-#   /downloads   downloads page
+# With no arguments, checks every page in _site/ (all HTML files).
+# With arguments, checks the home page plus each specified path, e.g.:
+#   _bin/check-accessibility.sh learn downloads
+#
+# The home page always suppresses color-contrast, aria-required-children,
+# and link-in-text-block (image-background issues flagged needsFurtherReview
+# by axe).  All pages suppress nested-interactive.
+#
+# Results are cached in .accessibility-cache by content hash so unchanged
+# pages are skipped on subsequent runs.
 #
 # All checks use the axe runner (not htmlcs) to avoid false positives.
 # Only errors that axe can definitively confirm (needsFurtherReview=false)
@@ -40,12 +44,7 @@ hash_file() {
 # Map a full URL to the corresponding built HTML file under _site/.
 html_file_for_url() {
   path="${1#"$BASE"}"   # strip base URL prefix
-  path="${path%/}"      # strip trailing slash
-  if [ -z "$path" ]; then
-    echo "$root/index.html"
-  else
-    echo "$root$path/index.html"
-  fi
+  echo "$root$path"
 }
 
 # Return 0 (hit) if the given URL's HTML file matches its cached hash.
@@ -76,7 +75,8 @@ cache_update() {
 # dev server.
 npx --yes serve "$root" --listen $PORT --no-clipboard >/dev/null 2>&1 &
 SERVER_PID=$!
-trap 'kill "$SERVER_PID" 2>/dev/null' EXIT INT TERM
+trap 'kill "$SERVER_PID" 2>/dev/null' EXIT
+trap 'exit 130' INT TERM
 
 # Give the server a moment to be ready.
 sleep 2
@@ -122,22 +122,30 @@ except Exception as e:
   fi
 }
 
-# Home page: ignore color-contrast and aria-required-children (all image-background
-# issues flagged needsFurtherReview=true by axe, but pa11y --runner axe still exits
-# non-zero for them).  Also ignore link-in-text-block in the hero section.
-check_url "$BASE/" \
-  --ignore "color-contrast" \
-  --ignore "aria-required-children" \
-  --ignore "link-in-text-block" \
-  --ignore "nested-interactive"
+check_home() {
+  # Home page: ignore color-contrast and aria-required-children (all image-background
+  # issues flagged needsFurtherReview=true by axe, but pa11y --runner axe still exits
+  # non-zero for them).  Also ignore link-in-text-block in the hero section.
+  check_url "$BASE/index.html" \
+    --ignore "color-contrast" \
+    --ignore "aria-required-children" \
+    --ignore "link-in-text-block" \
+    --ignore "nested-interactive"
+}
 
 if [ "$#" -eq 0 ]; then
-  # Default pages checked when no arguments are given.
-  check_url "$BASE/learn" \
-    --ignore "nested-interactive"
-  check_url "$BASE/downloads" \
-    --ignore "nested-interactive"
+  # Default: check every page in _site/.
+  tmplist=$(mktemp)
+  find "$root" -name "*.html" | sort > "$tmplist"
+  while IFS= read -r html_file; do
+    rel="${html_file#"$root"}"   # e.g. /learn/index.html, or /index.html
+    check_url "$BASE$rel" \
+      --ignore "nested-interactive"
+  done < "$tmplist"
+  rm -f "$tmplist"
 else
+  # Check the home page plus each explicitly requested path.
+  check_home
   while [ "$#" -gt 0 ]; do
     check_url "$BASE/$1" \
       --ignore "nested-interactive"
