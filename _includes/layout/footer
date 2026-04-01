@@ -1,6 +1,6 @@
 <section id="footer">
   <ul class="icons">
-    <li><a href="https://forum.image.sc/tag/imagej" class="icon alt" aria-label="Forum"><img src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -10px" alt="Image.sc"><span class="label">Forum</span></a></li>
+    <li><a href="https://forum.image.sc/tag/imagej" class="icon alt" aria-label="Forum"><img alt="Image.sc" src="/media/icons/image-sc.png" width="24" style="vertical-align: middle; margin-top: -10px"><span class="label">Forum</span></a></li>
 
     <li><a href="https://x.com/hashtag/ImageJ" class="icon brands alt fa-twitter" aria-label="X/Twitter"><span class="label">X/Twitter</span></a></li>
     <li><a href="https://github.com/imagej" class="icon brands alt fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>

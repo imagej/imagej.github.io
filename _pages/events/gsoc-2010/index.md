@@ -237,7 +237,7 @@ In life sciences, you often cope with round structures of interest. Such round s
 
 It is important to keep in mind that the objects are clearly convex, as they sometimes overlap, and we still want to find the objects correctly. Example:
 
-<figure><img src="/media/nucleidapiconfocal.png" title="NucleiDAPIconfocal.png" width="400" alt="NucleiDAPIconfocal.png" /><figcaption aria-hidden="true">NucleiDAPIconfocal.png</figcaption></figure>
+{% include img src="nucleidapiconfocal" width="400" %}
 
 The purpose of this project is to segment in a fully automatic way round, convex structures in biological images. This could be done by using a simple template matching approach for the initial stage, or a Gaussian fit, followed by a fit of the whole outline under the desired constraints.
 
@@ -261,7 +261,7 @@ A combination of edge detection, hough transform and fitting should provide a ro
 
 Not all images which Fiji users are interested in contain bright objects on dark background, or vice versa. Sometimes, the structures cannot be discerned using the intensity, but only using statistic measures where the inside pixels have a different geometric distribution than the outside pixels. Example:
 
-<figure><img src="/media/tem-clahe-50-256-2.5.jpg" title="Tem-clahe-50-256-2.5.jpg" width="500" alt="Tem-clahe-50-256-2.5.jpg" /><figcaption aria-hidden="true">Tem-clahe-50-256-2.5.jpg</figcaption></figure>
+{% include img src="tem-clahe-50-256-2.5" width="500" %}
 
 There are [a number](http://ai.stanford.edu/~ruzon/tex_seg/) [of](http://people.csail.mit.edu/sarasu/pub/texture05/) [texture](http://www-sop.inria.fr/ariana/DEMOS/wold/node2.html) [segmentation](http://www.cs.iupui.edu/~tuceryan/research/ComputerVision/moment-paper.pdf) [algorithms](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.49.6534) that appear to solve the problem to various extents.
 

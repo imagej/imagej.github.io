@@ -157,7 +157,7 @@ When implementing a filter plugin, you usually do not need to access *WindowMana
 
 All images are represented as instances of {% include github org='imagej' repo='ImageJ' branch='master' path='ij/ImagePlus.java' label='ij.ImagePlus' %}. This class wraps an {% include github org='imagej' repo='ImageJ' branch='master' path='ij/ImageStack.java' label='ij.ImageStack' %} of slices. Slices are data-type dependent instances of {% include github org='imagej' repo='ImageJ' branch='master' path='ij/process/ImageProcessor.java' label='ij.process.ImageProcessor' %}: {% include github org='imagej' repo='ImageJ' branch='master' path='ij/process/ByteProcessor.java' label='ij.process.ByteProcessor' %}, {% include github org='imagej' repo='ImageJ' branch='master' path='ij/process/ShortProcessor.java' label='ij.process.ShortProcessor' %}, {% include github org='imagej' repo='ImageJ' branch='master' path='ij/process/FloatProcessor.java' label='ij.process.FloatProcessor' %}, and {% include github org='imagej' repo='ImageJ' branch='master' path='ij/process/ColorProcessor.java' label='ij.process.ColorProcessor' %}. Or graphically:
 
-<figure><img src="/media/image-class-hierarchy.png" title="Image_Class_Hierarchy.png" width="600" alt="Image_Class_Hierarchy.png" /><figcaption aria-hidden="true">Image_Class_Hierarchy.png</figcaption></figure>
+{% include img src="image-class-hierarchy" title="Image class hierarchy" width="600" %}
 
 Example usage:
 ```java

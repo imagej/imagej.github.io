@@ -54,7 +54,7 @@ A comprehensive dataset can be found on Zenodo at [https://doi.org/10.5281/zenod
 
 The following video guide you throughout the installation process, and take a first tour of FijiRelax functions. Window users, warning. You have specific operations to run at the end of this section.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8jEVQjRbFcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include video platform="youtube" id="8jEVQjRbFcU" width="560" height="315" %}
 
 In order to install FijiRelax on your computer, please follow these steps:
 
@@ -91,12 +91,12 @@ FijiRelax interface have four main panels :
 ## Tutorials
 
 **Tutorial part 1: proton density, T1 and T2 time-series from 3D dicom data of a sorgho plant**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nhWRZN9puFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
- 
+{% include video platform="youtube" id="nhWRZN9puFg" width="560" height="315" %}
 
 **Tutorial part 2: from 4D HyperMaps to time-lapse plant physiology monitoring**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tiJnq_xN-dY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include video platform="youtube" id="tiJnq_xN-dY" width="560" height="315" %}
 
 ## HyperMap data structure
 

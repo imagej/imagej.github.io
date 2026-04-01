@@ -43,7 +43,7 @@ height will correspond to frame interval.
 
 - [ ] **Removal of ROIs** from the table is not supported yet. A possible way to
   implement this features is described by the author of TrackMate [on the
-  image.sc forum](https://forum.image.sc/t/add-listener-to-resultstable/814/2).
+  Image.sc Forum](https://forum.image.sc/t/add-listener-to-resultstable/814/2).
 - [ ] Wide ROIs extending outside the image will have incorrect pixel values.
 - [ ] RGB input time-lapses raise an ImageJ error.
 

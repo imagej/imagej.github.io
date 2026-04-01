@@ -18,10 +18,10 @@ For instructions on plugin development for the original [ImageJ](/software/image
 
 As ImageJ2 is built using the [SciJava principles of project management](/develop/project-management), this guide assumes a basic familiarity with these topics and tools, especially:
 
-|                                                                                                              |                                                                                                                  |
-|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| <a href="/develop/git"><img src="/media/icons/git.png" width="64px"/></a> | <a href="/develop/maven"><img src="/media/icons/maven.png" width="64px"/></a> |
-| [Git](/develop/git)                                    | [Maven](/develop/maven)                                    |
+|   |   |
+|---|---|
+| <a href="/develop/git"><img alt="git" src="/media/icons/git.png" width="64px"/></a> | <a href="/develop/maven"><img alt="maven" src="/media/icons/maven.png" width="64px"/></a> |
+| [Git](/develop/git) | [Maven](/develop/maven) |
 
 Additionally, at a minimum, you should clone the {% include github org='imagej' repo='tutorials' label='imagej/tutorials repository' %}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 

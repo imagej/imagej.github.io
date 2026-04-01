@@ -40,7 +40,7 @@
 
   {%- capture text -%}
     {%- if icon -%}
-      <img src="{{icon}}" alt="{{blurb}}">
+      <img alt="{{blurb}}" src="{{icon}}">
     {%- else -%}
       &#10060;
     {%- endif -%}

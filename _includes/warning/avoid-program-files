@@ -1,13 +1,13 @@
 {% include notice icon="warning" content='
-<span style="font-size: large; color: red">Caution: "Program Files" not recommended!</span>
+<span style="font-size: large; font-weight: bold">Caution: "Program Files" not recommended!</span>
 
-If you are installing ImageJ2 on Windows, we strongly recommend that you store
-your ImageJ2.app directory somewhere in your user space
-(e.g., `C:\Users\[your name]\ImageJ2.app`) rather than in `C:\Program Files` or
-other system-wide directory. If you move ImageJ2.app to such a directory, modern
-versions of Windows will deny ImageJ2 write permission to its own directory
+If you are installing Fiji on Windows, we strongly recommend that you store
+your Fiji directory somewhere in your user space
+(e.g., `C:\Users\[your name]\Fiji`) rather than in `C:\Program Files` or
+other system-wide directory. If you move Fiji to such a directory, modern
+versions of Windows will deny Fiji write permission to its own directory
 structure, preventing it from being able to update. See also
-[imagej/imagej#72](https://github.com/imagej/imagej2/issues/72).' %}
+[imagej/imagej2#72](https://github.com/imagej/imagej2/issues/72).' %}
 
 {%- comment -%}
 # vi:syntax=liquid

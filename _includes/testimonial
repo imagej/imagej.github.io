@@ -23,7 +23,7 @@
 
 {%- capture content -%}
 {%- if image-src != "" -%}
-  <img src="{{image-src}}" style="float: left; margin-right: 0.5em" width=64 height=64>
+  <img alt="image" src="{{image-src}}" style="float: left; margin-right: 0.5em" width=64 height=64>
 {%- endif -%}
 <span markdown=1>{{quote}}</span>
 {%- if person-name or description or source -%} <br>&mdash; {%- endif -%}

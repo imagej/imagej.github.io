@@ -137,6 +137,5 @@ git mergetool
 
 ... which will offer you a choice of tools. Here is a screenshot of using `git mergetool --tool=meld`:
 
-<img src="/media/develop/git/meld-example.png" width="750"/>
-
+{% include img src="meld-example" width="750" %}
 

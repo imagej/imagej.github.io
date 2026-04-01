@@ -87,7 +87,7 @@ Finally, once you have tested your new code and are satisfied with the results, 
 
 First, **switch to your branch**:
 
-<img src="/media/develop/github-change-branch-tutorial.png" width="780"/>
+{% include img src="github-change-branch-tutorial" width="780" %}
 
 Then click on the **Compare & Review button**:
 
@@ -97,7 +97,7 @@ After starting the review, you're presented with a review page where you can get
 
 Finally, when you're ready to submit your pull request, click **Create pull request**:
 
-<img src="/media/develop/github-pull-request-review-create-tutorial.png" width="780"/>
+{% include img src="github-pull-request-review-create-tutorial" width="780" %}
 
 *See [GitHub: how to send a pull request](https://help.github.com/articles/using-pull-requests) for more details.*
 
@@ -105,7 +105,7 @@ Finally, when you're ready to submit your pull request, click **Create pull requ
 
 Once the pull request is created, it is automatically sent to the person in charge of the original repository. After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. The **discussion view** is designed to encourage and capture this type of discussion:
 
-<img src="/media/develop/github-discussion-view-tutorial.png" width="700"/>
+{% include img src="github-discussion-view-tutorial" width="700" %}
 
 ## Modifying your commits
 
@@ -222,7 +222,7 @@ git reset --hard $(git rev-parse --abbrev-ref --symbolic-full-name @{u})
 
 Once all the developers involved in the conversation are satisfied with the state of the branch, the person in charge of the repository will merge and close the pull the request:
 
-<img src="/media/develop/github-merge-and-close-pull-request.png" width="780"/>
+{% include img src="github-merge-and-close-pull-request" width="780" %}
 
 ## See also
 

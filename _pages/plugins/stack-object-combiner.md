@@ -12,7 +12,7 @@ The purpose of this plugin is to replace the objects in their original position,
 
 ## Installation
 
-<span style="color:#FF0000"> Bug with memory watch parameter, increase it so its not a limit for the plugin anymore (higher than what IJ is allowed to have, e.g. 8000 if IJ is allowed to have 8GBytes)</span>
+{% include notice icon="warning" content="Bug with memory watch parameter, increase it so its not a limit for the plugin anymore (higher than what IJ is allowed to have, e.g. 8000 if IJ is allowed to have 8GBytes)" %}
 
 The plugin can be found on the github [project](https://github.com/Tom-TBT/StackObjectCombiner/releases) in the release tab (please take the lattest version of the plugin).  
 Download the .jar file and place it in the plugin folder of ImageJ.  
@@ -43,7 +43,9 @@ This box contain the different parameters to merge the meshes automatically. The
 -   Border separation: The borders of the meshes have to be decomposed into fragments to be located on only one side of the volume. This parameter help to separate the borders. If the message "Error while separating the borders" appear, increase this parameter.
 -   Distance window: It is the distance between the vertices of the meshes and the splits. The quality of the border separation can be modified with this parameter.
 -   Vertex pairing: When two borders are compatible, new faces have to be created. This value represent the size of the sets of vertices combined together. These sets are useful to prevent the formation of aberrant faces between the meshes.
--   Memory watch: If the memory available goes bellow this value, the plugin will remove from the memory all the meshes previously processed to make space. But then the plugin will need to reload all the meshes when it will come to the final step. (value in MByte) <span style="color:#FF0000">Bug with this parameter, increase it so its not a limit for the plugin anymore (higher than what IJ is allowed to have, e.g. 8000 if IJ is allowed to have 8GBytes)</span>
+-   Memory watch: If the memory available goes bellow this value, the plugin will remove from the memory all the meshes previously processed to make space. But then the plugin will need to reload all the meshes when it will come to the final step. (value in MByte)
+
+{% include notice icon="warning" content="Bug with this parameter, increase it so its not a limit for the plugin anymore (higher than what IJ is allowed to have, e.g. 8000 if IJ is allowed to have 8GBytes)" %}
 
 Once that the parameters have been set, click on "Automatic merging". A trace of the merging will appear in the log.
 

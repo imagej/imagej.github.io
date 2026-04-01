@@ -149,7 +149,7 @@ Draw the Unicode symbol you want    -- https://shapecatcher.com/
     {%- if image == '' -%}
       <kbd class="key">{{ glyph | append: " " | append: label | strip }}</kbd>
     {%- else -%}
-      <span class="key"><img src="{{image}}" alt=""> {{ label | strip }}</span>
+      <span class="key"><img alt="{{label}}" src="{{image}}" alt=""> {{ label | strip }}</span>
     {%- endif -%}
   {%- endcapture -%}
 

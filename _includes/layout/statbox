@@ -95,9 +95,9 @@ the javascript only populates fields when they are empty.
 {%- if icon or gravatar -%}
   {%- capture image -%}
     {%- if gravatar -%}
-      <img src="https://gravatar.com/avatar/{{gravatar}}" alt="{{name}}">
+      <img alt="{{name}}" src="https://gravatar.com/avatar/{{gravatar}}">
     {%- elsif icon -%}
-      <img src="{{icon}}" alt="{{name}}">
+      <img alt="{{name}}" src="{{icon}}">
     {%- endif -%}
   {%- endcapture -%}
 {%- endif -%}
@@ -122,7 +122,7 @@ the javascript only populates fields when they are empty.
 </p>
 {%- if honorific -%}
 <p id="statbox-honorific">
-<img src="/media/sparkles.png" width="16" alt=""> {{honorific}} <img src="/media/sparkles.png" width="16" alt="">
+<img alt="" src="/media/sparkles.png" width="16"> {{honorific}} <img alt="" src="/media/sparkles.png" width="16">
 </p>
 {%- endif -%}
 {%- if affiliation -%}

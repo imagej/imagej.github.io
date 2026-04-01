@@ -80,7 +80,7 @@ section: Extend
     {%- assign classes = classes | append: 'category-' | append: c -%}
   {%- endfor %}
   <li class="{{classes}}">
-    <img src="{{p.icon}}" height=25>
+    <img src="{{p.icon}}" alt="{{p.title}}" height=25>
     <div>
       <a href="{{p.url | replace: '/index', ''}}">{{p.title}}</a><br>
       <span class="categories">{{ p.categories | join: ', ' }}</span>

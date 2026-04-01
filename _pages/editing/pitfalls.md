@@ -17,9 +17,10 @@ and any nearby Markdown will still be applied:
 
 {% capture markdown-plus-html %}
 Enjoy some
-*<span style="color: red">colored</span>
-<span style="color: green">text</span>
-<span style="color: blue">in italics</span>*!
+*<span style="font-size: 1.3em">increasingly</span>
+<span style="font-size: 1.6em">large</span>
+<span style="font-size: 1.9em">text</span>
+<span style="font-size: 2.2em">in italics</span>*!
 {% endcapture %}
 {% include editing/example code=markdown-plus-html %}
 

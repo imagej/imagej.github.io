@@ -31,9 +31,9 @@ Adds a stylized notice.
     {%- assign extension = src | slice: -4, 4 | downcase -%}
     {%- if extension == '.svg' -%}
       {%- comment -%} Vector images need an explicit width. {%- endcomment -%}
-      <div class="notice-icon"><img src="{{src}}" width="32" alt=""></div>
+      <div class="notice-icon"><img alt="" src="{{src}}" width="32"></div>
     {%- else -%}
-      <div class="notice-icon"><img src="{{src}}" alt=""></div>
+      <div class="notice-icon"><img alt="" src="{{src}}"></div>
     {%- endif -%}
   {%- endif -%}
   <div class="notice-content">{{message}}</div>

@@ -17,8 +17,8 @@ Tooltips allow you to add text that only shows up when the reader's hovers their
 
 Optional `style` can be applied to the anchor text.
 
-{% highlight liquid %}{% raw %}{% include tooltip text="Here is some blue anchor text." tooltip="Non-blue tooltip" style="color:blue;" %}{% endraw %}{% endhighlight %}
-{% include tooltip text="Here is some blue anchor text." tooltip="Non-blue tooltip" style="color:blue;" %}
+{% highlight liquid %}{% raw %}{% include tooltip text="Here is some blue anchor text." tooltip="Non-blue tooltip" style="color:#7070ff;" %}{% endraw %}{% endhighlight %}
+{% include tooltip text="Here is some blue anchor text." tooltip="Non-blue tooltip" style="color:#7070ff;" %}
 
 ### Position
 

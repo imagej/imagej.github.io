@@ -14,37 +14,37 @@ You can find the dotfiles in the following repositories:
   <tbody>
     <tr>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/people/ctrueden"><img src="https://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width="48" height="48"></a><br>
+        <p><a href="/people/ctrueden"><img alt="gravatar" src="https://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width="48" height="48"></a><br>
         {% include github org='ctrueden' repo='dotfiles' label='ctrueden/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/libs/scijava"><img src="/media/icons/scijava.png" width="48px"></a><br>
+        <p><a href="/libs/scijava"><img alt="scijava" src="/media/icons/scijava.png" width="48px"></a><br>
         {% include github org='scijava' repo='dotfiles' label='scijava/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/software/imagej2"><img src="/media/icons/imagej2.png" width="48px"></a><br>
+        <p><a href="/software/imagej2"><img alt="imagej2" src="/media/icons/imagej2.png" width="48px"></a><br>
         {% include github org='imagej' repo='dotfiles' label='imagej/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/orgs/loci"><img src="/media/logos/loci.png" width="48px"></a><br>
+        <p><a href="/orgs/loci"><img alt="loci" src="/media/logos/loci.png" width="48px"></a><br>
         {% include github org='uw-loci' repo='dotfiles' label='uw-loci/dotfiles' %}</p>
       </td>
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/libs/imglib2"><img src="/media/icons/imglib2.png" width="48px"></a><br>
+        <p><a href="/libs/imglib2"><img alt="imglib2" src="/media/icons/imglib2.png" width="48px"></a><br>
         {% include github org='imglib2' repo='dotfiles' label='imglib2/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/libs/scifio"><img src="/media/icons/scifio.png" width="48px"></a><br>
+        <p><a href="/libs/scifio"><img alt="scifio" src="/media/icons/scifio.png" width="48px"></a><br>
         {% include github org='scifio' repo='dotfiles' label='scifio/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/software/fiji"><img src="/media/icons/fiji.png" width="48px"></a><br>
+        <p><a href="/software/fiji"><img alt="fiji" src="/media/icons/fiji.png" width="48px"></a><br>
         {% include github org='fiji' repo='dotfiles' label='fiji/dotfiles' %}</p>
       </td>
       <td style="text-align: center; vertical-align: bottom">
-        <p><a href="/plugins/flimj"><img src="/media/icons/slim-curve.png" width="48px"></a><br>
+        <p><a href="/plugins/flimj"><img alt="slim-curve" src="/media/icons/slim-curve.png" width="48px"></a><br>
         {% include github org='flimlib' repo='dotfiles' label='flimlib/dotfiles' %}</p>
       </td>
     </tr>

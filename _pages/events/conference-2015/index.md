@@ -78,7 +78,7 @@ With this conference, there were no registration fees, and there was a free rece
 
 # Program
 
-{% include spreadsheet id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" width="100%" height=700 %}
+{% include spreadsheet id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" title="ImageJ 2015 Conference Program" width="100%" height=700 %}
 
 For full details including abstracts and presentation recordings, see the [Conference 2015 Program](program) page.
 

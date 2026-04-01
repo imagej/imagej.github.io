@@ -490,7 +490,7 @@ Developing codes may often involve using multiple threads instead of sequential 
 
 E9 exercise on multiple threads focuses on this issue and also highlight an additional property of breakpoint that can be helpful in debugging program (Stop Virtual Machine).
 
-Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case. <img src="/media/develop/e9stopvm.png" title="fig:Setting a VM-wide breakpoint" width="400" alt="Setting a VM-wide breakpoint" />
+Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case. <img alt="Setting a VM-wide breakpoint" src="/media/develop/e9stopvm.png" title="fig:Setting a VM-wide breakpoint" width="400" />
 
 #### Steps for the exercise
 

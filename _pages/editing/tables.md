@@ -137,7 +137,7 @@ You can embed an external spreadsheet.
 ### Google Sheets
 
 {% highlight liquid %}{% raw %}
-{% include spreadsheet platform="google" id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" %}
+{% include spreadsheet platform="google" id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" title="ImageJ Conference 2015 Program" %}
 {% endraw %}{% endhighlight %}
 
-{% include notice class="fas fa-hard-hat" content="This include is under construction! Coming soon." %}
+{% include spreadsheet platform="google" id="1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5_CMmw-dU64sFk" title="ImageJ Conference 2015 Program" %}

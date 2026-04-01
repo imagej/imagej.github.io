@@ -95,7 +95,7 @@ Here are some common kinds of text formatting:
 | `fixed width text/code`                  | <code>`fixed width text/code`</code>       |
 | ~~struck-out text~~                      | `~~struck-out text~~`                      |
 | [Hyperlink](https://example.com/)        | `[Hyperlink](https://example.com/)`        |
-| <span style="color: #c00000">red text</span> | `<span style="color: red">red text</span>` |
+| <span style="color: red">red text</span> | `<span style="color: red">red text</span>` |
 
 Note that the last example, colored text, is not really Markdown, but rather
 plain {% include wikipedia title="HTML" %}. However, Markdown does not have a
