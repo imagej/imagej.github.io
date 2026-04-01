@@ -351,6 +351,15 @@ $sidebarPadding: 10px;
 .menu a {
   color: var(--color-menu-link);
   text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.menu a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline solid;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  border-bottom: none;
 }
 
 .menu ul li {
@@ -401,6 +410,8 @@ $sidebarPadding: 10px;
 
 .menu a.current-page:hover {
   border-bottom: none;
+  text-decoration: none;
+  color: var(--color-menu-current-page);
 }
 
 $leftColumnArrowOffset: $sidebarWidth - 2*$sidebarMargin - 2*$sidebarPadding - 30px;

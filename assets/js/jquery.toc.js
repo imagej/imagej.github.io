@@ -81,16 +81,12 @@
                     var parentItem = stack[0].children("li:last")[0];
                     if (parentItem) {
                         var aItem = $(parentItem.firstChild); // <a> element
-                        var details = $("<details/>");
+                        var details = $("<details open/>");
                         var summary = $("<summary/>");
-                        // Use text only (not link) in summary to avoid nesting an interactive
-                        // <a> inside the interactive <summary> (WCAG nested-interactive).
-                        // The link is re-added as the first <li> in the expanded list.
-                        summary.text(aItem.text());
+                        // Put the link directly in the summary so the header is clickable.
+                        summary.append(aItem);
                         details.append(summary);
                         var ol = $("<" + listTag + "/>");
-                        // Re-add the section link as first item in the expanded list
-                        $("<li/>").append(aItem).appendTo(ol);
                         details.append(ol);
                         details.appendTo(parentItem);
                         stack.unshift(ol); // move down to the new <ol> level
