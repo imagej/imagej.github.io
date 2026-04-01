@@ -26,6 +26,50 @@ test -d "$root" || {
 
 PORT=9876
 BASE="http://localhost:$PORT"
+CACHE_FILE="$dir/.accessibility-cache"
+
+# Compute SHA-256 of a file (works on both macOS and Linux).
+hash_file() {
+  if command -v sha256sum >/dev/null 2>&1; then
+    sha256sum "$1" | cut -d' ' -f1
+  else
+    shasum -a 256 "$1" | cut -d' ' -f1
+  fi
+}
+
+# Map a full URL to the corresponding built HTML file under _site/.
+html_file_for_url() {
+  path="${1#"$BASE"}"   # strip base URL prefix
+  path="${path%/}"      # strip trailing slash
+  if [ -z "$path" ]; then
+    echo "$root/index.html"
+  else
+    echo "$root$path/index.html"
+  fi
+}
+
+# Return 0 (hit) if the given URL's HTML file matches its cached hash.
+cache_hit() {
+  url_path="$1"
+  html_file="$2"
+  [ -f "$CACHE_FILE" ] || return 1
+  [ -f "$html_file" ]  || return 1
+  current_hash=$(hash_file "$html_file")
+  stored=$(grep "^$url_path " "$CACHE_FILE" 2>/dev/null | cut -d' ' -f2)
+  [ "$stored" = "$current_hash" ]
+}
+
+# Record a passing URL+hash in the cache file.
+cache_update() {
+  url_path="$1"
+  html_file="$2"
+  [ -f "$html_file" ] || return
+  current_hash=$(hash_file "$html_file")
+  tmpfile=$(mktemp)
+  grep -v "^$url_path " "$CACHE_FILE" 2>/dev/null > "$tmpfile" || true
+  echo "$url_path $current_hash" >> "$tmpfile"
+  mv "$tmpfile" "$CACHE_FILE"
+}
 
 # Start a static file server for the built site.
 # We use a port other than 4000 to avoid colliding with a running Jekyll
@@ -43,7 +87,13 @@ errors=0
 check_url() {
   url="$1"
   shift
+  url_path="${url#"$BASE"}"
+  html_file=$(html_file_for_url "$url")
   printf "  Checking %s ... " "$url"
+  if cache_hit "$url_path" "$html_file"; then
+    echo "OK (cached)"
+    return
+  fi
   # pa11y exits 2 if there are errors, 0 if clean.
   # Use --reporter json so we can filter out needsFurtherReview issues.
   output=$(npx --yes pa11y --standard WCAG2AA --runner axe --reporter json "$@" "$url" 2>/dev/null)
@@ -64,6 +114,7 @@ except Exception as e:
   detail=$(echo "$count" | tail -n +2)
   if [ "$real_errors" -eq 0 ]; then
     echo "OK"
+    cache_update "$url_path" "$html_file"
   else
     echo "FAILED ($real_errors error(s))"
     echo "$detail"

@@ -24,5 +24,13 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: '20'
+    - name: Restore accessibility cache
+      uses: actions/cache@v4
+      with:
+        path: .accessibility-cache
+        key: accessibility-${{ github.sha }}-${{ github.run_attempt }}
+        restore-keys: |
+          accessibility-${{ github.sha }}-
+          accessibility-
     - run: bundle exec jekyll build
     - run: _bin/run-all-checks.sh

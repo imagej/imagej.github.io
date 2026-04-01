@@ -3,6 +3,7 @@
 .idea/
 /.jekyll-cache/
 /.jekyll-metadata
+/.accessibility-cache
 /.tweet-cache
 /Gemfile.lock
 /_site/
