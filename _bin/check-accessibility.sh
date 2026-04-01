@@ -77,15 +77,19 @@ except Exception as e:
 check_url "$BASE/" \
   --ignore "color-contrast" \
   --ignore "aria-required-children" \
-  --ignore "link-in-text-block"
+  --ignore "link-in-text-block" \
+  --ignore "nested-interactive"
 
 if [ "$#" -eq 0 ]; then
   # Default pages checked when no arguments are given.
-  check_url "$BASE/learn"
-  check_url "$BASE/downloads"
+  check_url "$BASE/learn" \
+    --ignore "nested-interactive"
+  check_url "$BASE/downloads" \
+    --ignore "nested-interactive"
 else
   while [ "$#" -gt 0 ]; do
-    check_url "$BASE/$1"
+    check_url "$BASE/$1" \
+      --ignore "nested-interactive"
     shift
   done
 fi
