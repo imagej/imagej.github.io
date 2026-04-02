@@ -144,7 +144,7 @@ Get the tutorial dataset from Zenodo:
 
 - A panel with the description of the mask detector opens. Here you can select to Simplify the contours to smooth the edges of the segmented objects. Click on `Preview` to see a preview of the segmentation. On the left, there will also be the number of detected objects in that field of view. Click `Next`. The objects are now being detected.
 - When the progress bar has reached the end, click `Next`.
-- A panel to filter the detected spots according to their quality opens (more information about this filtering can be found[ ](https://www.google.com/url?q=https://imagej.net/plugins/trackmate/getting-started%23initial-spot-filtering&sa=D&source=editors&ust=1627290029831000&usg=AOvVaw07FRzNH1si7etp26p4FTqx)[here](/plugins/trackmate/getting-started#initial-spot-filtering). With our test image, this part can be ignored. Click `Next`.
+- A panel to filter the detected spots according to their quality opens (more information about this filtering can be found [here](/plugins/trackmate/getting-started#initial-spot-filtering)). With our test image, this part can be ignored. Click `Next`.
 - A panel to filter spots according to their properties (i.e. size, shape, location, or signal intensity) opens.  With our test image, we do not need to filter any spots. Click `Next`.
 
 {% include img src='/media/plugins/trackmate/trackmate-mask-detector-tutorial-bis-2.png' align='center' width='250'  %}

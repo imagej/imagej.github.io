@@ -3,7 +3,7 @@ This is a helper include used by the statbox include.
 {%- endcomment -%}
 {%- capture value -%}
 {%- if include.url -%}
-<a href="{{include.url}}">{{include.value}}
+<a href="{{include.url}}">{% if include.value and include.value != "" %}{{include.value}}{% else %}{{include.url}}{% endif %}</a>
 {%- else -%}
 {{include.value}}
 {%- endif -%}

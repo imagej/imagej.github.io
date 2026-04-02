@@ -36,7 +36,7 @@ First download the tutorial dataset on Zenodo:
 
 {% include img src="/media/plugins/trackmate/trackmate-label-image-tutorial-2.png" width='250' align='center' %}
 
-- A panel to filter the detected spots according to their quality opens (more information about this filtering can be found[ ](https://www.google.com/url?q=https://imagej.net/plugins/trackmate/getting-started%23initial-spot-filtering&sa=D&source=editors&ust=1627290029805000&usg=AOvVaw1xoGgLr43vlqfTBB35pHz2)[here](/plugins/trackmate/getting-started#initial-spot-filtering). With our test image, this part can be ignored. Click `Next`.
+- A panel to filter the detected spots according to their quality opens (more information about this filtering can be found [here](/plugins/trackmate/getting-started#initial-spot-filtering)). With our test image, this part can be ignored. Click `Next`.
 
 - A panel to filter spots according to their properties (i.e. size, shape, location, or signal intensity) opens. With our test image, in frame 65 you will see small floating cells that were segmented. To get rid of this, you can add a spot filter to remove anything with an `Area` lower than 230. Click `Next`.
 

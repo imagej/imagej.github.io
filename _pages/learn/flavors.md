@@ -43,7 +43,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
     <tr>
       <td><img src="/media/icons/imagej2.png" alt="ImageJ2" width="64"/></td>
       <td><a href="/software/imagej2">ImageJ2</a></td>
-      <td><a href="/people">ImageJ2 developers</a></td>
+      <td>ImageJ2 developers</td>
       <td>A new version of ImageJ targeting scientific multidimensional image
         data. It is a complete rewrite of the
         <a href="/software/imagej">original ImageJ</a>, but includes the
@@ -58,7 +58,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
     <tr>
       <td><img src="/media/icons/fiji.png" alt="Fiji" width="64"/></td>
       <td><a href="/software/fiji">Fiji</a></td>
-      <td><a href="/people">Fiji contributors</a></td>
+      <td>Fiji contributors</td>
       <td><strong>F</strong>iji <strong>i</strong>s <strong>J</strong>ust
         <strong>I</strong>mageJ, with extras. It is a distribution of ImageJ
         and ImageJ2 with many plugins useful for scientific image analysis in
@@ -155,7 +155,7 @@ There are a many different derivatives of ImageJ with very similar names, and so
     <tr>
       <td><img src="/media/icons/imagej.png" alt="ImageJA" width="64"/></td>
       <td><a href="/libs/imageja">ImageJA</a></td>
-      <td><a href="/people">{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</a></td>
+      <td>{% include person id='rasband' %} (author); ImageJ2 team (maintainers)</td>
       <td>ImageJA was a project that provided a clean <a href="/develop/git">Git</a>
         history of the original ImageJ, with a proper <code>pom.xml</code> file
         so that it could be used with Maven without hassles. The ImageJ project
