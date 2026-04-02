@@ -80,3 +80,39 @@ document.querySelectorAll("pre").forEach(function(pre) {
   pre.style.position = 'relative';
   pre.insertBefore(copy, code);
 });
+
+// Make scrollable code blocks keyboard-focusable for accessibility.
+// WCAG 2.1.1 Level A requires scrollable regions to be keyboard accessible.
+function makeScrollableCodeFocusable() {
+  document.querySelectorAll("pre code").forEach(function(code) {
+    // Check if the code block has horizontal overflow (is scrollable)
+    // Use setTimeout to ensure layout has been calculated
+    setTimeout(function() {
+      if (code.scrollWidth > code.clientWidth && !code.hasAttribute("tabindex")) {
+        code.setAttribute("tabindex", "0");
+      }
+    }, 0);
+  });
+}
+
+// Run on initial page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', makeScrollableCodeFocusable);
+} else {
+  makeScrollableCodeFocusable();
+}
+
+// Re-run when emgithub embeds are loaded (they are added dynamically)
+// Watch for changes to .emgithub-embed containers
+new MutationObserver(function(mutations) {
+  var needsUpdate = false;
+  mutations.forEach(function(mutation) {
+    if (mutation.addedNodes.length > 0) {
+      needsUpdate = true;
+    }
+  });
+  if (needsUpdate) {
+    // Delay to allow emgithub content to fully render
+    setTimeout(makeScrollableCodeFocusable, 500);
+  }
+}).observe(document.body, { childList: true, subtree: true });
