@@ -54,7 +54,7 @@ cache_hit() {
   [ -f "$CACHE_FILE" ] || return 1
   [ -f "$html_file" ]  || return 1
   current_hash=$(hash_file "$html_file")
-  stored=$(grep "^$url_path " "$CACHE_FILE" 2>/dev/null | cut -d' ' -f2)
+  stored=$(awk -v p="$url_path " 'index($0,p)==1{print $NF;exit}' "$CACHE_FILE" 2>/dev/null)
   [ "$stored" = "$current_hash" ]
 }
 
@@ -65,7 +65,7 @@ cache_update() {
   [ -f "$html_file" ] || return
   current_hash=$(hash_file "$html_file")
   tmpfile=$(mktemp)
-  grep -v "^$url_path " "$CACHE_FILE" 2>/dev/null > "$tmpfile" || true
+  awk -v p="$url_path " 'index($0,p)!=1' "$CACHE_FILE" 2>/dev/null > "$tmpfile" || true
   echo "$url_path $current_hash" >> "$tmpfile"
   mv "$tmpfile" "$CACHE_FILE"
 }
