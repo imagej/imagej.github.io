@@ -122,17 +122,6 @@ except Exception as e:
   fi
 }
 
-check_home() {
-  # Home page: ignore color-contrast and aria-required-children (all image-background
-  # issues flagged needsFurtherReview=true by axe, but pa11y --runner axe still exits
-  # non-zero for them).  Also ignore link-in-text-block in the hero section.
-  check_url "$BASE/index.html" \
-    --ignore "color-contrast" \
-    --ignore "aria-required-children" \
-    --ignore "link-in-text-block" \
-    --ignore "nested-interactive"
-}
-
 if [ "$#" -eq 0 ]; then
   # Default: check every page in _site/.
   tmplist=$(mktemp)
@@ -145,7 +134,6 @@ if [ "$#" -eq 0 ]; then
   rm -f "$tmplist"
 else
   # Check the home page plus each explicitly requested path.
-  check_home
   while [ "$#" -gt 0 ]; do
     check_url "$BASE/$1" \
       --ignore "nested-interactive"
