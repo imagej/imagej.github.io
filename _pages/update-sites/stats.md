@@ -44,6 +44,11 @@ section: Extend:Update Sites
   padding: 20px;
   text-align: center;
 }
+/* Dygraphs hardcodes color:black on axis labels; override to inherit the
+   page's text color so labels remain readable on dark themes. */
+.dygraph-axis-label {
+  color: inherit;
+}
 </style>
 
 <div id="controls">
