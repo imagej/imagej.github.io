@@ -25,18 +25,18 @@ Here's a demo with the *Tracks for TrackMate* sample:
 
 The plugin's menu entry is next to the Scalebar entry: `Analyze > Tools > Time Bar...`. The configuration window that opens lets the user chose a few options:
 
-- [x] The progress bar can be disabled
-- [x] The time units can be replaced by symbols (ie: `3-23:15:42.695` instead of `3d23h15m42.695s`)
-- [x] The time format can be modified (`D-HH:MM:ss.SSS` or `D-HH:MM` or `HH:MM:ss` or `ss.SSS` and many more!)
-- [ ] A well suited time format is automatically selected based on the time interval and the total duration
-- [x] The time can be offset, such that the first frame displays a non-zero timecode (positive or negative)
+- ✓ The progress bar can be disabled
+- ✓ The time units can be replaced by symbols (ie: `3-23:15:42.695` instead of `3d23h15m42.695s`)
+- ✓ The time format can be modified (`D-HH:MM:ss.SSS` or `D-HH:MM` or `HH:MM:ss` or `ss.SSS` and many more!)
+- ✗ A well suited time format is automatically selected based on the time interval and the total duration
+- ✓ The time can be offset, such that the first frame displays a non-zero timecode (positive or negative)
 
 And just like the scale bar :
 
-- [x] The progress bar thickness can be changed
-- [x] The font can be made Bold or Serif, the font size can be changed
-- [x] The location can be modified (all four corners, or at the selection)
-- [x] Font and background color can be changed
+- ✓ The progress bar thickness can be changed
+- ✓ The font can be made Bold or Serif, the font size can be changed
+- ✓ The location can be modified (all four corners, or at the selection)
+- ✓ Font and background color can be changed
 
 The frame interval information is extracted from the image's metadata (`Image > Properties... > Frame interval`). Units in this field can be one of `h/hr/hrs/hour/hours` for hours, `m/min/minute/minutes` for minutes, `s/sec/second/seconds` for seconds, `ms/milisecond/miliseconds` for miliseconds.
 
