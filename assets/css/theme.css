@@ -18,6 +18,36 @@
   --color-heading:      #232323;
   --color-strong:       black;
 
+  /* Color presets */
+  --fg-red:        #c80000;
+  --fg-orange:     #cc5500;
+  --fg-yellow:     #9a6700;
+  --fg-lime:       #4d7c00;
+  --fg-green:      #0d8000;
+  --fg-cyan:       #007373;
+  --fg-light-blue: #0074b3;
+  --fg-blue:       #0052cc;
+  --fg-purple:     #6e3bb3;
+  --fg-magenta:    #a3008c;
+  --fg-pink:       #c7005c;
+  --fg-light-gray: #6b6b6b;
+  --fg-gray:       #595959;
+  --fg-brown:      #7a5025;
+  --bg-red:        #ffebe9;
+  --bg-orange:     #ffedcc;
+  --bg-yellow:     #fff8cc;
+  --bg-lime:       #efffcc;
+  --bg-green:      #e3ffd9;
+  --bg-cyan:       #ccf5f5;
+  --bg-light-blue: #e5f3ff;
+  --bg-blue:       #e0ebff;
+  --bg-purple:     #f0e6ff;
+  --bg-magenta:    #ffe6f7;
+  --bg-pink:       #ffe6f0;
+  --bg-light-gray: #f5f5f5;
+  --bg-gray:       #e8e8e8;
+  --bg-brown:      #f5e6d3;
+
   /* Links */
   --color-link:              #0014ca;
   --color-link-hover:        #4d959f;
@@ -110,6 +140,36 @@
   --color-text:         #d8d8d8;
   --color-heading:      #e0e0e0;
   --color-strong:       #f0f0f0;
+
+  /* Color presets */
+  --fg-red:        #ff6b6b;
+  --fg-orange:     #ff9955;
+  --fg-yellow:     #ffcc66;
+  --fg-lime:       #a8d46f;
+  --fg-green:      #66dd88;
+  --fg-cyan:       #5fd4d4;
+  --fg-light-blue: #66bbff;
+  --fg-blue:       #6699ff;
+  --fg-purple:     #b388ff;
+  --fg-magenta:    #ff66d9;
+  --fg-pink:       #ff88b3;
+  --fg-light-gray: #bbb;
+  --fg-gray:       #999;
+  --fg-brown:      #d4a574;
+  --bg-red:        #4d1a1a;
+  --bg-orange:     #4d2e1a;
+  --bg-yellow:     #4d4426;
+  --bg-lime:       #2e4d1a;
+  --bg-green:      #1a4d2e;
+  --bg-cyan:       #1a4040;
+  --bg-light-blue: #1a334d;
+  --bg-blue:       #1a264d;
+  --bg-purple:     #2e1a4d;
+  --bg-magenta:    #4d1a4d;
+  --bg-pink:       #4d1a33;
+  --bg-light-gray: #333;
+  --bg-gray:       #2a2a2a;
+  --bg-brown:      #3d2e1a;
 
   /* Links */
   --color-link:              #7aabff;

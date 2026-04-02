@@ -43,8 +43,7 @@ When selecting "Object Image", an additional set of options is enabled to choose
 
 -   **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 
-  
-<b><span style="color:#f80000">Note</span></b>: since the tolerance is an intensity parameter, it is sensitive to the input image type. A tolerance value of 10 is a good starting point for 8-bit images (with 0-255 intensity range) but it should be drastically increased when using image types with larger intensity ranges. For example to \~2000 when working on a 16-bit image (intensity values between 0 and 65535).
+{% include notice icon="note" content="Since the tolerance is an intensity parameter, it is sensitive to the input image type. A tolerance value of 10 is a good starting point for 8-bit images (with 0-255 intensity range) but it should be drastically increased when using image types with larger intensity ranges. For example to \~2000 when working on a 16-bit image (intensity values between 0 and 65535)." %}
 
 -   **Calculate dams**: un-check this option to produce segmentations without watershed lines.
 -   **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
@@ -73,8 +72,7 @@ If your segmentation is taking too long or you want **to stop it** for any reaso
 
 -   **Merge labels**: merge together labels selected by either the **"freehand" selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
-  
-<b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.
+{% include notice icon="note" content="To select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label." %}
 
 -   **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
@@ -177,17 +175,17 @@ The complete list of commands is as follows:
 
 Morphological Segmentation is part of the [MorphoLibJ](/plugins/morpholibj) library. To install it, you just need to [ add](/update-sites/following#add-update-sites) the IJPB-plugins update site:
 
-1\) Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
+1. Select {% include bc path='Help | Update...'%} from the Fiji menu to start the updater.
 
-2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
+2. Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
-3\) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
+3. Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
 
-4\) Click *Apply changes* and restart Fiji.
+4. Click *Apply changes* and restart Fiji.
 
 You should now find the plugin under the sub-menu {% include bc path='Plugins | MorphoLibJ | Segmentation'%}.
 
-**Note**: Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) library. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+{% include notice icon="note" content="Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](/plugins/morpholibj) library. By following these installation steps, you will be installing as well the rest of plugins in the suite." %}
 
 ## Examples
 

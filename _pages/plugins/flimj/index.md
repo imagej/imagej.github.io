@@ -125,7 +125,7 @@ You may also change the "as" option to specify how the results are rendered. Cur
 
 -   **Grayscale**: Linearly maps the middle 80 percentile of the result image's values to grayscale colors from black to white. Values below the 10th percentile and above the 90th percentile are rendered black and white respectively.
 
--   **Color**: Linearly maps the middle 80 percentile of the result image's values to colors from <span style="color:hsl(20,100%,50%)">`hsl(20, 100%, 50%)`</span> to <span style="color:hsl(220,100%,50%)">`hsl(220, 100%, 50%)`</span> (see color bar below). Out-of-range values follow the same rule as in **Grayscale**.
+-   **Color**: Linearly maps the middle 80 percentile of the result image's values to colors from <span style="color:var(--fg-red)">`hsl(20, 100%, 50%)`</span> to <span style="color:var(--fg-blue)">`hsl(220, 100%, 50%)`</span> (see color bar below). Out-of-range values follow the same rule as in **Grayscale**.
 
 -   **Composite Color**: Takes the color mapped to by **Color** but replace the brightness with the brightness of the intensity image (on the left of the **Preview** pane). This option makes the fitted image look more uniform by deemphasizing jittery low photon count pixels.
 

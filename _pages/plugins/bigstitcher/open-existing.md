@@ -15,7 +15,7 @@ You have several options of how you can select your XML dataset file:
 -   Use the file chooser (click **Browse ...**) to select the XML file
 -   Type or copy & paste the full path of the XML file
 
-If the XML file was successfully recognized, the dialog will change and show a quick summary of the contents of the dataset (the number of views, attributes, etc...) in <span style='color:green'>green</span>:
+If the XML file was successfully recognized, the dialog will change and show a quick summary of the contents of the dataset (the number of views, attributes, etc...) in <span style='color:var(--fg-green)'>green</span>:
 
 ![BigStitcher Import exisitng 1](/media/plugins/bigstitcher/bigstitcher-import-exisitng-1.png)
 

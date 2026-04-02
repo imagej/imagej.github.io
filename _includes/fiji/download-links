@@ -12,7 +12,7 @@ div.download table {
 }
 div.download table tr.header th {
   font-weight: bolder;
-  background: #65a4e3;
+  background: #2a7bb9;
   color: #fff;
   padding: 0.7em;
 }

@@ -85,22 +85,68 @@ allowing you to easily and cleanly modify text with italics, bold, ordered
 or bulleted lists, etc. This wiki, as a Jekyll site, uses
 [kramdown](https://kramdown.gettalong.org/syntax.html). A quick-reference can be found [here](https://kramdown.gettalong.org/quickref.html), and a general Jekyll support reference [here](https://www.markdownguide.org/tools/jekyll/). Also helpful is GitHub Flavored Markdown (GFM) guide found [here](https://guides.github.com/features/mastering-markdown/).
 
+### Text
+
 Here are some common kinds of text formatting:
 
-| Formatting                               | Markup                                     |
-|------------------------------------------|--------------------------------------------|
-| *italic text*                            | `*italic text*`                            |
-| **bold text**                            | `**bold text**`                            |
-| ***bold and italic text***               | `***bold and italic text***`               |
-| `fixed width text/code`                  | <code>`fixed width text/code`</code>       |
-| ~~struck-out text~~                      | `~~struck-out text~~`                      |
-| [Hyperlink](https://example.com/)        | `[Hyperlink](https://example.com/)`        |
-| <span style="color: red">red text</span> | `<span style="color: red">red text</span>` |
+| Formatting                                         | Markup                                               |
+|----------------------------------------------------|------------------------------------------------------|
+| *italic text*                                      | `*italic text*`                                      |
+| **bold text**                                      | `**bold text**`                                      |
+| ***bold and italic text***                         | `***bold and italic text***`                         |
+| `fixed width text/code`                            | <code>`fixed width text/code`</code>                 |
+| ~~struck-out text~~                                | `~~struck-out text~~`                                |
+| [Hyperlink](https://example.com/)                  | `[Hyperlink](https://example.com/)`                  |
+| <span style="color: var(--fg-red)">red text</span> | `<span style="color: var(--fg-red)">red text</span>` |
 
 Note that the last example, colored text, is not really Markdown, but rather
 plain {% include wikipedia title="HTML" %}. However, Markdown does not have a
 syntax for changing text color, and it supports mixing in HTML, so you can use
 the technique above if you need text in different colors.
+
+### Colors
+
+Rather than hardcoding colors, it is better to use preset theme-sensitive color variables, as shown above. The following color presets achieve sufficient color contrast to meet accessibility standards:
+
+* <span style="color: var(--fg-red)">fg-red</span>,
+  <span style="color: var(--fg-orange)">fg-orange</span>,
+  <span style="color: var(--fg-yellow)">fg-yellow</span>,
+  <span style="color: var(--fg-lime)">fg-lime</span>,
+  <span style="color: var(--fg-green)">fg-green</span>,
+  <span style="color: var(--fg-cyan)">fg-cyan</span>,
+  <span style="color: var(--fg-light-blue)">fg-light-blue</span>,
+  <span style="color: var(--fg-blue)">fg-blue</span>,
+  <span style="color: var(--fg-purple)">fg-purple</span>,
+  <span style="color: var(--fg-magenta)">fg-magenta</span>,
+  <span style="color: var(--fg-pink)">fg-pink</span>,
+  <span style="color: var(--fg-light-gray)">fg-light-gray</span>,
+  <span style="color: var(--fg-gray)">fg-gray</span>,
+  <span style="color: var(--fg-brown)">fg-brown</span>.
+* <span style="background: var(--bg-red)">bg-red</span>,
+  <span style="background: var(--bg-orange)">bg-orange</span>,
+  <span style="background: var(--bg-yellow)">bg-yellow</span>,
+  <span style="background: var(--bg-lime)">bg-lime</span>,
+  <span style="background: var(--bg-green)">bg-green</span>,
+  <span style="background: var(--bg-cyan)">bg-cyan</span>,
+  <span style="background: var(--bg-light-blue)">bg-light-blue</span>,
+  <span style="background: var(--bg-blue)">bg-blue</span>,
+  <span style="background: var(--bg-purple)">bg-purple</span>,
+  <span style="background: var(--bg-magenta)">bg-magenta</span>,
+  <span style="background: var(--bg-pink)">bg-pink</span>,
+  <span style="background: var(--bg-light-gray)">bg-light-gray</span>,
+  <span style="background: var(--bg-gray)">bg-gray</span>,
+  <span style="background: var(--bg-brown)">bg-brown</span>.
+
+Reference them using CSS's `var` syntax. Example:
+
+{% capture color-preset-example %}
+<span style="color: var(--fg-blue);
+  background: var(--bg-red)">
+  &rarr; blue on red &larr;</span>
+{% endcapture %}
+{% include editing/example code=color-preset-example %}
+
+### Images
 
 Here are some common image uses:
 

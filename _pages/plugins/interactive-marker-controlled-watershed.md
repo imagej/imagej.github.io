@@ -60,8 +60,7 @@ In this plugin the markers are introduced interactively by the user using any of
 
 -   **Merge labels**: merge together labels selected by either the **"freehand" selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
-  
-<b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.
+{% include notice icon="note" content="To select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label." %}
 
 -   **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
