@@ -11,7 +11,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.<br>
+**This page was last revised for [version 5.0.5](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep these walkthroughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/walkthroughs.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -44,6 +44,10 @@ NB:
 - Increasing *Z* in the *Cursor Auto-snapping* panel allows for automated Z-navigation on signal mouseover
 - You can increase the contrast (opacity, size, etc.) of Path nodes in the _Path rendering_ widget of the [Options tab](/plugins/snt/manual#options-tab)
 
+{% capture diamtip%}
+Use {% include key keys='Ctrl|Mouse Wheel' %} to change the diameter of the path being traced, by adjusting the cursor size to the thickness of the neurite being traced.
+{% endcapture %}
+{% include notice icon="info" content= diamtip %}
 
 ### III. Confirm The Temporary Segment
 
@@ -58,7 +62,7 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 NB: Once you become familiarized with the software you may want to disable the confirmation of temporary segments in _Temporary Paths_ section of the [Options tab](/plugins/snt/manual#options-tab)
 
 {% capture hotip%}
-Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations. Hold {% include key keys='F' %} to temporarily hide all annotations.
+Hold {% include key keys='O' %} to verify path orientations. Hold {% include key keys='H' %} to temporarily hide all annotations.
 {% endcapture %}
 {% include notice icon="info" content=hotip %}
 
@@ -239,9 +243,10 @@ Complete shape analysis of dendritic spines can be performed using [Spot Spine](
 
 This type of analysis uses (manually placed) multi-Point ROIs along paths as markers for neurite features such as dendritic spines or axonal varicosities. Currently only counts and densities are supported. A typical workflow would proceed as follows.
 
- 1. Right-click on the image being traced and choose _Count Spine/Varicosities_ from the [contextual menu](/plugins/snt/manual#contextual-menu). SNT will pause, the multipoint tool will be selected, and a floating dialog (that can be dismissed at will) displays a summary of these instructions
- 2. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) the feature being counted
- 3. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosity Utilities|Extract Counts from Multi-point ROIs...' %}. The dialog allows you to specify:
+1. Run {% include bc path='Analyze|Spine/Varicosity Utilities|Spine/Varicosity Utilities Help...' %} in the Path Manager to have offline instructions available in a dedicated dialog
+2. Pause SNT from the [contextual menu](/plugins/snt/manual#contextual-menu), and select the multipoint tool from ImageJ's toolbar
+3. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) the feature being counted. Skip this step if you are running a programmatic routine that automatically annotates locations
+4. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosity Utilities|Extract Counts from Multi-point ROIs...' %}. The dialog allows you to specify:
    
     - **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager. It also allows [bookmarked locations](/plugins/snt/manual#bookmarks-tab) to be parsed as markers
    

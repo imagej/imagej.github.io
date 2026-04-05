@@ -75,20 +75,32 @@ Use the *Edit this page* option on the <a href="#top">top</a> of the documentati
 ## Tracing
 
 ### Can I trace in 3D?
-Yes. You can trace using the the XY,ZY,XZ [views](/plugins/snt/walkthroughs#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy), or [sciview](/plugins/snt/manual#sciview) (experimental). There is also growing support for [Big Volume Viewer](/plugins/snt/manual#big-volume-viewer).
+Yes. You can trace using the the XY,ZY,XZ [views](/plugins/snt/walkthroughs#accurate-point-placement) or more interactively: using the [3D Viewer](/plugins/snt/manual#legacy-3d-viewer) (legacy). There is also growing support for [sciview](/plugins/snt/manual#sciview) and [Big Volume Viewer](/plugins/snt/manual#big-volume-viewer).
+
+### Can I undo tracing mistakes?
+Yes. With version 5 and later, temporary segments can be reverted before finishing a path simply by pressing {% include key key='Z' %}. In Edit Mode, editing operations can also be reverted using the same shortcut. By default, the last 20 operations can be undone.
 
 ### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
-Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section).
+Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section): When this option is disabled. Segments are confirmed automatically. Note that double-click finishes a path directly, and the last confirmed segment can always be undone with the {% include key key='Z' %} key.
+
+### I miss NeuronJ's simplicity. Can I make SNT behave like NeuronJ?
+Yes! [NeuronJ](./plugins/neuronj) implemented several popular features: 1) Rapid iteration over image files stored in a common directory; 2) "Rubber band" tracing where temporary segments "stick" to the current cursor position, so that segments update continuously in real-time; and 3) Cursor snapping to neurite signal. All of these can be set in SNT:
+- Tracing of multiple images: Use {% include key key='ctlcmd|Shift|O' %} ([Save Tracings &amp; Open Next Image](./manual#save-tracings--open-next-image)) and {% include key key='ctlcmd|Alt|O' %} ([Save Tracings &amp; Open Previous Image](./manual#save-tracings--open-previous-image))
+- "Rubber band" tracing: Enable _Live Preview_ in [Algorithm Settings](./manual#algorithm-settings)
+- Cursor snapping: Enable [Cursor Auto-snapping](./manual#cursor-auto-snapping)
 
 ### How can I browse voxel intensities around processes?
 Right-click on the image canvas and select *Pause SNT* from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
 Alternatively, you can also obtain [Path profiles](/plugins/snt/manual#path-profiler), in which voxel intensities are plotted along selected path(s).
 
 ### I traced an image in pixel coordinates but need to scale the reconstruction to physical units. How do I do it?
-Have a look at [these instructions](https://forum.image.sc/t/how-to-set-the-correct-scale-micrometer-um-of-traced-cell-in-sholl-analysis/84764/4)
+There are multiple ways to handle this case. First, take note of the voxel size using {% include bc path='Image|Properties...' color='white'%}, then do one of the following:
+1. Use {% include bc path='Scripts|Tracing|Transform Paths' color='white'%} to scale paths in place
+2. Export tracings as SWC and re-import the file: The [Import prompt](./manual#load-tracings-) has an option for scaling paths
+3. Read the voxel dimensions from the image by, e.g., following [these instructions](https://forum.image.sc/t/how-to-set-the-correct-scale-micrometer-um-of-traced-cell-in-sholl-analysis/84764/4)
 
 ### Is there a way to process one image after another in a fast way?
-Yes. Have a look at these [instructions](https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr).
+Yes. Use {% include key key='ctlcmd|Shift|O' %} / {% include key key='ctlcmd|Alt|O' %} (see [Save Tracings &amp; Open Next Image](./manual#save-tracings--open-next-image))
 
 ### How can I import an image sequence into SNT?
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
@@ -100,16 +112,10 @@ See [Sholl Analysis › FAQ](./sholl#faq).
 ## Spine Analysis
 
 ### Does SNT support spine analysis?
-Currently only [Spine densities](./walkthroughs#spinevaricosity-analysis) are supported. In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
+See [Spine/Varicosity Analysis](./walkthroughs#spinevaricosity-analysis). In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
 
 
 ## Soma Analysis
 
 ### Can SNT reconstruct somata?
-Currently SNT favors the [single-point soma representation](https://neuromorpho.org/SomaFormat.html). The task of soma segmentation is better tackled using ImageJ built-in tools for analysis of contours, or by means of dedicated machine-learning tools, including:
-
-| **Tools**                                       | **Fiji Integration**                                                                                    | **Resources**                                                                               |
-|-------------------------------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [Labkit](../labkit) and [TWS](../tws)           | Bundled with Fiji                                                                                       | [SNT › Machine Learning](./machine-learning), [Forum](https://forum.image.sc/tag/labkit)    |
-| [Cellpose](https://www.cellpose.org/)           | Via [PTBIOP](https://wiki-biop.epfl.ch/en/ipa/fiji/update-site) update site                             | [Documentation](https://github.com/BIOP/ijl-utilities-wrappers?tab=readme-ov-file#cellpose), [Forum](https://forum.image.sc/tag/cellpose)|
-| [StarDist](https://github.com/stardist/stardist)| Via [PTBIOP](https://wiki-biop.epfl.ch/en/ipa/fiji/update-site)/[CSBDeep](/plugins/csbdeep) update sites| [Documentation](https://github.com/BIOP/ijl-utilities-wrappers?tab=readme-ov-file#stardist), [Forum](https://forum.image.sc/tag/stardist)|
+Yes, see [Autotracing › Soma/Root Detection](./auto-tracing#somaroot-detection). Note, however, that most SNT tutorials favor the [single-point soma representation](https://neuromorpho.org/SomaFormat.html).

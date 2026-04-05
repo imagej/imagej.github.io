@@ -12,7 +12,7 @@ update-site: Neuroanatomy
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.5](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice content=version %}
 
@@ -63,16 +63,19 @@ The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift
 
 These shortcuts are available when running SNT in *Tracing Mode*:
 
-| {% include key keys='Ctrl|S' %} / {% include key keys='Command|S' %}           | <u>S</u>ave tracings |
-| {% include key key='Ctrl|Shift|S' %} / {% include key keys='Command|Shift|S' %} | <u>S</u>ave <u>S</u>napshot Backup |
 | {% include key key='L' %}                     | Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image) |
 | {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
 | {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/walkthroughs#accurate-point-placement) |
+| {% include key key='Z' %}                     | Undo last segment (temporary paths) |
+| {% include key keys='Ctrl|Mouse Wheel' %}     | Change diameter of path being traced |
 | {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path) for more details on joining and branching). This shortcut can be [simplified](/plugins/snt/manual#temporary-paths) |
 | {% include key keys='Shift|B' %}              | <u>B</u>ookmarks cursor location |
 | {% include key keys='Shift|E' %}              | Activates *Edit Mode* (<u>E</u>diting of selected Path) |
 | {% include key keys='Shift|P' %}              | <u>P</u>auses tracing operations |
-
+| {% include key keys='Ctrl|S' %} / {% include key keys='Command|S' %}           | <u>S</u>ave tracings |
+| {% include key key='Ctrl|Shift|S' %} / {% include key keys='Command|Shift|S' %} | Backup tracings |
+| {% include key key='Ctrl|Shift|O' %} / {% include key keys='Command|Shift|O' %} | Save tracings & Open Next Image |
+| {% include key key='Ctrl|Alt|O' %} / {% include key keys='Command|Alt|O' %} | Save tracings & Open Previous Image |
 
 ### Path Editing
 
@@ -86,6 +89,7 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key key='M' %} | <u>M</u>oves active node to cursor position |
 | {% include key key='R' %} | Changes the <u>R</u>adius of active node |
 | {% include key key='X' %} | Splits tree at active node, re-rooting the selected structure at the active node |
+| {% include key key='Z' %} | Undo last operation |
 
 ### Reconstruction Viewer
 
