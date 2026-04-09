@@ -31,7 +31,7 @@ The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift
 ### Interactive Prompt
 
 | {% include key key='C' %}  | <u>C</u>ancels a path. Note that you can finish a path by pressing {% include key key='N' %} {% include key key='N' %} twice |
-| {% include key key='F' %}  | <u>F</u>inishes a path. Note that you can finish a path by pressing {% include key key='Y' %} {% include key key='Y' %} twice |
+| {% include key key='F' %}  | <u>F</u>inishes a path. Note that you can finish a path by pressing {% include key key='Y' %} {% include key key='Y' %} twice or using {% include key keys='Double Click' %}|
 | {% include key key='N' %}  | Discards the current temporary path. *Mnemonic: <u>N</u>o*  |
 | {% include key key='Y' %}  | Confirms the current temporary path. *Mnemonic: <u>Y</u>es* |
 | {% include key key='Esc' %}| Aborts current operation / Exits current mode |

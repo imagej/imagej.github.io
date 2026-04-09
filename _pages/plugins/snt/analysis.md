@@ -245,7 +245,7 @@ Delineations allow measuring proportions of reconstructions within other structu
 - Do branches near a lesion site differ from branches further away from it?
 - Are there morphological differences across subregions of a neuron's receptive field?
 
-Delineations are described in [Walkthroughs › Delineation Analysis](/plugins/snt/walkthroughs#delineation-analysis).
+Delineations are described in [Delineation Analysis](/plugins/snt/delineations).
 
 # Root Angle Analysis
 Root angle analysis measures the angular distribution of how far neurites deviate from a direct path to the soma (or root of the neuronal arbor), a functional property that is captured by [Sholl profiles](#sholl-analysis) (see also [angular Sholl](./sholl#angular-sholl)). It quantifies properties such as [balancing factor](./metrics#root-angles-balancing-factor), [centripetal bias](./metrics#root-angles-centripetal-bias), and [mean direction](./metrics#root-angles-mean-direction). It is described in:
@@ -267,7 +267,7 @@ The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-
 
 # Growth Analysis
 
-Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matched across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapse-utilities-) menu.
+Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matched across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapses-) menu.
 
 {% capture timelapse-demo%}
 For parameter validation and configuration comparisons, load the _Hippocampal neuron (DIC timelapse)_ demo dataset ({% include bc path='File|Load Demo Dataset...' %})

@@ -39,6 +39,7 @@ A small circle should appear, highlighting the start of the path. Move through t
 
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {% include key key='C' %}/{% include key key='Esc' %}) and pick a point closer to the start point.
 <img align="right" src="/media/plugins/snt/snt-cropped-mid-tracing-2.png" title="A* search animated progress" width="33%" alt="A* search animated progress" />
+NB: *You can always press {% include key keys='Z' %} to undo the last segment*
 
 NB:
 - Increasing *Z* in the *Cursor Auto-snapping* panel allows for automated Z-navigation on signal mouseover
@@ -59,7 +60,9 @@ Once the search has reached the target point, the path is shown in cyan (to indi
   <img src="/media/plugins/snt/snt-cropped-completed-path-2.png" title="A completed path" width="33%" alt="A completed path" />
 </div>
 
-NB: Once you become familiarized with the software you may want to disable the confirmation of temporary segments in _Temporary Paths_ section of the [Options tab](/plugins/snt/manual#options-tab)
+
+**NB**: Once you become familiarized with the software you may want to **disable the confirmation of temporary segments** in _Temporary Paths_ section of the [Options tab](/plugins/snt/manual#options-tab).
+This will allow you trace faster by finishing a path using {% include key keys='Double Click' %}, and using {% include key keys='Z' %} to undo any misplaced segment.
 
 {% capture hotip%}
 Hold {% include key keys='O' %} to verify path orientations. Hold {% include key keys='H' %} to temporarily hide all annotations.
@@ -156,7 +159,7 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
 
 The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 
-{% include notice content="By default, the Legacy 3D Viewer displays warnings and errors in pop-up dialogs. If you find this distracting, you can toggle _Disable pop-up errors_ to have them displayed in a non-blocking Log window." %}
+{% include notice content="By default, the Legacy 3D Viewer displays warnings and errors in pop-up dialogs. If you find this distracting, you can toggle _Quiet mode (log errors to Console)_ to have them displayed in a non-blocking Log window." %}
 
 ### I. Starting the Viewer
 
@@ -225,52 +228,17 @@ Use Path Orientation (hold {% include key keys='O' %}) to verify path orientatio
 {% include notice icon="info" content=hotip %}
 
 # Full-automated Tracing
-
-Full-automated tracing is described in [Auto-tracing](/plugins/snt/auto-tracing).
+Described in [Auto-tracing](/plugins/snt/auto-tracing).
 
 
 # Spine/Varicosity Analysis
+Described in [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities).
 
-{% capture spines-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset, as it contains pre-placed multipoint ROIs emulating markers for dendritic spines.
-{% endcapture %}
-{% include notice icon="info" content=spines-demo %}
 
-{% capture spot-spine%}
-Complete shape analysis of dendritic spines can be performed using [Spot Spine](/plugins/spot-spine).
-{% endcapture %}
-{% include notice icon="info" content=spot-spine %}
+# Delineation Analysis
+Described in [Delineation Analysis](/plugins/snt/delineations).
 
-This type of analysis uses (manually placed) multi-Point ROIs along paths as markers for neurite features such as dendritic spines or axonal varicosities. Currently only counts and densities are supported. A typical workflow would proceed as follows.
-
-1. Run {% include bc path='Analyze|Spine/Varicosity Utilities|Spine/Varicosity Utilities Help...' %} in the Path Manager to have offline instructions available in a dedicated dialog
-2. Pause SNT from the [contextual menu](/plugins/snt/manual#contextual-menu), and select the multipoint tool from ImageJ's toolbar
-3. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) the feature being counted. Skip this step if you are running a programmatic routine that automatically annotates locations
-4. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosity Utilities|Extract Counts from Multi-point ROIs...' %}. The dialog allows you to specify:
-   
-    - **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager. It also allows [bookmarked locations](/plugins/snt/manual#bookmarks-tab) to be parsed as markers
-   
-    - **Max. association distance** The maximum allowed distance between a point and its path in physical units. This option is ignored if set to -1 (the default). This works as follows: for every point ROI, the closest path node is identified. ROI is only considered to be associated with Path if its distance to the closest path node is less than or equal to _Max. association distance_.
-   
-    - **Add extracted counts to ROI Manager** Generates new ROIs from the assigned counts and adds them to the ROI Manager. This allows you to validate the extraction and ensure the assignments are correct, as each ROI gets tagged by its associated Path.
-
-NB:
-
-- Point ROIs can also be generated programmatically or in a semi-automated way, e.g.:
-  - Create a freehand area ROI around the path(s) of interest
-  - Run ImageJ's {% include bc path='Process|Find Maxima...' %}. Detection will be restricted to freehand selection
-
-- SNT only keeps a tally of the features being counted and location of ROIs are not saved in .traces files, so you may want to save the multipoint ROIs for future reference
-
-- ImageJ has several ways to expedite handling of multipoint ROIs:
-  - {% include key key='left click' %} on a point and drag to move it
-  - {% include key key='alt|left click' %} on a point to delete it
-  - To delete multiple points, create an area selection while holding down {% include key key='alt' %}
-  - Use {% include bc path='Edit|Selection|Select None' %} to delete a multi-point selection
-  - Use {% include bc path='Edit|Selection|Restore Selection' %} to restore a deleted multipoint selection
-  - {% include key key='double click' %} on the Multi-point tool in the ImageJ toolbar for further options
-
-# Time-lapse analysis
+# Time-lapse Analysis
 {% capture timelapse-demo%}
 You can use one of two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) to follow these instructions:
 - _Hippocampal neuron (DIC timelapse)_ dataset: A timelapse video of a cultured neuron in which neurites have been pre-traced across time
@@ -296,7 +264,7 @@ Once undesired motion has been mitigated:
 
    - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset...' %})
 
-4. Run [Path Manager](./manual#path-manager)'s {% include bc path='Analyze|Time-lapse Utilities|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
+4. Run [Path Manager](./manual#path-manager)'s {% include bc path='Analyze|Time-lapses|Match Path(s) Across Time...' %}. The dialog allows you to match paths in the same time-series to a common neurite. Note that the command matches only selected path(s) (or all paths if no selection exists), but ignores Paths tagged as 'soma'. Options include:
 
    <img align="right" src="/media/plugins/snt/snt-match-paths-across-time.png" title="MatchPath(s) Across Time... prompt" width="350" alt="MatchPath(s) Across Time... prompt" />
 
@@ -316,7 +284,7 @@ Once undesired motion has been mitigated:
    
 5. Once paths have been matched to their neurites across the time-lapse sequence, future analysis becomes simplified.
 
-6. Use Either  {% include bc path='Analyze|Time-lapse Utilities|Grow Analysis...' %} or {% include bc path='Analyze|Time-lapse Utilities|Time Profile...' %} to analyze the data. The former is a very simple approach to summarize growth across time, while the latter is a comprehensive analysis tool.
+6. Use Either  {% include bc path='Analyze|Time-lapses|Grow Analysis...' %} or {% include bc path='Analyze|Time-lapses|Time Profile...' %} to analyze the data. The former is a very simple approach to summarize growth across time, while the latter is a comprehensive analysis tool.
    {% include bc path='Time Profile...' %} includes the following options:
 
       - **Metric** the measurement to be profiled across time
@@ -435,75 +403,6 @@ Currently, only the output images/CSV summary of fills can be exported. TRACES f
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
-# Delineation Analysis
-Delineations aggregate sections of reconstructions into groups to allow measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses can be applied to disconnected paths, a single cell, or multiple cells. Some of the questions that delineation analyses can answer include:
-
-- Do branching patterns of neurons change along strata (cell layers)?
-- What is the total dendritic/axonal length contained within a cortical layer?
-- Do branches near a lesion site differ from branches further away from it?
-- Are there morphological differences across subregions of a neuron's receptive field?
-
-{% capture ml-demo %}
-You can use the _MouseLight dendrites_ demo dataset to follow the delineation tutorials. While this dataset does not include counterstaining images, it can still be used for both ROI-based and Atlas-based delineations:
-
-1. Open {% include bc path='File|Load Demo Dataset...' %} and choose _MouseLight dendrites (Reconstructions only)_
-2. Right-click on the _Display Canvas_ and choose _Pause SNT_ from the contextual menu
-3. Follow the instructions below
-{% endcapture %}
-{% include notice icon="info" content=ml-demo %}
-
-<div align="center">
-  <img  src="/media/plugins/snt/snt-delineation-analysis1.png" alt="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " title="Delineation Analysis: MouseLight dendrites demo dataset delineated by cortical layers " width="650" />
-</div>
-
-## Creating Delineations from ROIs
-The most common way to generate delineations is by means of ROIs:
-
-1. Activate the _Delineations_ tab in the [main dialog](/plugins/snt/manual#delineations-tab)
-
-2. Pause SNT by right-clicking on the image and choose "Pause SNT" from the contextual menu
-
-3. Create an area ROI. _Any_ area ROI is supported (freehand, polygon, wand-defined, rectangular, oval, etc.)
-
-4. Press the _Assign_ button. Sections of paths with XY coordinates contained by the ROI are colored by the delineation label. Note that assignments propagate to all Z-coordinates within the ROI
-
-5. Optional: If you prefer, press the <i class="fas fa-pen"></i> icon and type a new label in the _name_ field You can also change the delineation color by clicking its color tag
-
-6. Repeat this process as needed until all paths of interest have been tiled by a delineation. If needed, visibility of previously assigned ROIs can be toggled using the <i class="fas fa-eye"></i> button
-
-7. Proceed to [Measuring Delineations](#measuring-delineations)
-
-ROIs generated programmatically or in bulk outside SNT can be applied in a single step using _Import Assignments from ROI Manager_ from the Options (gear) menu. This command will parse each area ROI in the ROI Manager as an assignment ROI. The delineation name and color will be retrieved directly from ROIs that have been renamed or colored (either stroke or fill color).
-
-
-## Creating Delineations from Atlas Annotations
-Delineations can also be created from [neuropil annotations](/plugins/snt/analysis#atlas-based-analysis) using the _Import Assignments from Atlas Annotation_ option from the Options (gear) menu. In this case delineations are created from selected brain compartments associated with the cell(s) being analyzed. Note that this requires cells to be tagged by atlas annotations. Currently only cells downloaded directly from the MouseLight database fulfill this criterion.
-
-
-## Editing Delineations
-To re-define a delineation it is sufficient to re-define or re-adjust an existing ROI and press the _Assign_ button. The Options (gear) menu lists commands for rebuilding, restoring, and deleting delineations. Most of the editing operations can be performed through the toolbar at the bottom of the delineations list, including:
-- <i class="fas fa-plus"></i> Adds more entries to the delineations list
-- <i class="fas fa-object-group"></i> Merges two or more delineations into one
-- <i class="fas fa-swatchbook"></i> Applies one of the default color schemes to the delineations list
-- <i class="fas fa-pen"></i> Enables/Disables direct editing of delineation names
-- _Outside color_ widget: Defines the color for non-delineated sections, i.e., those sections that remain _outside_ delineated areas
-
-
-## Measuring Delineations
-
-Measurements are retrieved using the <i class="fas fa-chart-bar"></i> _Plot_ and <i class="fas fa-table"></i> _Measure_ buttons:
-
-- <i class="fas fa-chart-bar"></i> _Plot_: Plots distributions of selected metrics. Plotting styles include: Box plots (one delineation per category), multi-series histograms (one delineation per series), or a montage of single-series histograms (one panel per delineation)
-- <i class="fas fa-table"></i> _Measure_: Reports common metrics to a dedicated table (Total length, No. of nodes, No. of junctions, etc.) across delineations
-
-In addition to defined delineations, plots and tables may include two other categories:
-
-- _Non-delineated_: This category corresponds to all the path sections that remained in-between or outside delineations. _Non-delineated_ sections are labeled by [outside color](#editing-delineations)
-
-- _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors
-
-{% include notice icon="info" content="Topological constraints may not allow certain metrics to be computed for a particular delineation. E.g., a metric that requires a [graph-theoretic tree](./analysis#graph-based-analysis) may not be computed for a delineation defined by a non-contiguous ROI." %}
-
 
 # Detecting Crossovers
 
@@ -545,7 +444,7 @@ cfg = new CrossoverFinder.Config()
     .sameCTOnly(true) // Only compare paths with the same channel and frame?
     .includeSelfCrossovers(false) // Allow detections within the same neurite? Generally keep false
     .includeDirectChildren(false) // Allow detections within a path and its direct child? Generally keep false
-    .nodeWitnessRadius(-1.0); // Post‑hoc filter: A crossover event is only kept if at least one participant path has an actual node (not a midpoint) within this radius of the event center. Default (-1) instructs proximity value
+    .nodeWitnessRadius(-1.0) // Post‑hoc filter: A crossover event is only kept if at least one participant path has an actual node (not a midpoint) within this radius of the event center. Default (-1) instructs proximity value
 {% endhighlight %}
 
 Once the config is defined, events can be detected from any collection of paths:
@@ -558,11 +457,11 @@ import sc.fiji.snt.Tree
 tree = Tree.fromFile("path/to/a/swc/file.swc")
 paths = tree.list()
 
-var events = CrossoverFinder.find(paths, cfg)
+events = CrossoverFinder.find(paths, cfg)
 for (ev in events) {
-    System.out.printf("x=%.2fµm, y=%.2fµm, z=%.2fµm, angle=%.1f°, d=%.2fµm, paths=%d%n",
-        ev.x, ev.y, ev.z, ev.medianAngleDeg, ev.medianMinDist, ev.participants.size());
-    double[] xyzct = ev.xyzct(); // pixel-space + avg C/T
+    println("x=%.2fµm, y=%.2fµm, z=%.2fµm, angle=%.1f°, d=%.2fµm, paths=%d%n",
+        ev.x, ev.y, ev.z, ev.medianAngleDeg, ev.medianMinDist, ev.participants.size())
+    xyzct = ev.xyzct() // pixel-space + avg C/T
     // Optional: create a bookmark or navigate to xyzct[0..2]
 }
 {% endhighlight %}

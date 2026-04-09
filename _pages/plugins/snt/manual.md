@@ -557,7 +557,7 @@ The Legacy 3D Viewer is a functional tracing canvas and allows images to be trac
 
 ## Bookmarks Tab
 
-This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/walkthroughs#spinevaricosity-analysis). The basic usage is as follows:
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities). The basic usage is as follows:
 
 <img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
@@ -578,7 +578,7 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
 <span id="delineations-manager"></span>
 
 ## Delineations Tab
-This tab hosts the Delineations Manager, a utility that allows measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses are described in detail in [Walkthroughs › Delineation Analysis](/plugins/snt/walkthroughs#delineation-analysis).
+This tab hosts the Delineations Manager, a utility that allows measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses are described in detail in [Delineation Analysis](/plugins/snt/delineations).
 
 <span id="notepad"></span>
 
@@ -823,7 +823,7 @@ Assigns a constant radius to all the nodes of selected Path(s). This setting onl
 
 #### Specify No. Spine\Varicosity Markers...
 
-Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity Analysis](/plugins/snt/walkthroughs#spinevaricosity-analysis)).
+Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities)).
 
 #### Ramer-Douglas-Peuker Downsampling...
 
@@ -1057,11 +1057,11 @@ NB:
 
 - *Integration metric* The statistics (Mean, Median, Sum, etc.) integrating pixel intensities within *shape*.
 
-#### Spine/Varicosity Utilities ›
+#### Spines/Varicosities ›
 
-This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Step-by-step instructions](/plugins/snt/walkthroughs#spinevaricosity-analysis).
+This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities).
 
-#### Time-lapse Utilities ›
+#### Time-lapses ›
 
 This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/walkthroughs#time-lapse-analysis) for more details.
 
