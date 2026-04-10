@@ -14,7 +14,7 @@ team-maintainer: 'EVIDENT CORPORATION (GLOB-SM-imagejplugin at evidentscientific
 This plugin can load EVIDENT vsi/oir/omp2info file formats and show some meta data.
 
 ## New release 
-  Ver.2.6.3 Fixed an issue where opening T-series VSI files with inconsistent Z values would fail.
+  {{ release-date }} Fixed an issue where opening T-series VSI files with inconsistent Z values would fail.
 
 ## Download
   Download the latest EvidentViewer ImageJ Plugin for [Windows](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software) and [Mac](https://evidentscientific.com/en/downloads?product=ImageJ&type=Software).
