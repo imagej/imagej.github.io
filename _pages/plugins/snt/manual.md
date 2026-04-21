@@ -523,6 +523,33 @@ The render opacity (in percentage) for path segments that are above/below the ac
   - Whether the position of dialogs should be remembered across restarts
   - *Reset All Preferences...* Resets all options to their default values. A restart of SNT may be required for changes to take effect.
 
+<span id="curation"></span>
+<span id="curation-assistant"></span>
+
+## Assistant Tab
+Described in [Curation Assistant](./curation#curation-assistant).
+
+<span id="bookmarks"></span>
+<span id="bookmark-manager"></span>
+
+## Bookmarks Tab
+
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities). The basic usage is as follows:
+
+<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
+<img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
+
+- Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor's X, Y, Z, C, T coordinates
+
+- To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
+
+- To rename an existing bookmark, select it and start typing its new label. Alternatively, use
+{% include bc path='Rename Selected Bookmark..' %} command in the list right-click menu
+
+- Use the {% include bc path='Import' %} button to load bookmarks from either: 1) a CSV file, 2) Existing ROIs in ImageJ's ROI Manager, or 3) Existing ROIs in the overlay of the image being traced. Note that when loading an area ROI, the bookmark is registered at the ROI's centroid
+
+- Use the {% include bc path='Export' %} button to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
+
 
 ## 3D Tab
 
@@ -551,27 +578,6 @@ Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](https://imagej.
 ### Legacy 3D Viewer
 
 The Legacy 3D Viewer is a functional tracing canvas and allows images to be traced interactively in 3D. However, it relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. That being said, SNTv5 has implemented several improvements that have restored/improved Legacy 3D Viewer functionality relatively to earlier versions. For usage instructions, see [Tracing using the Legacy 3D Viewer](/plugins/snt/walkthroughs#tracing-in-the-legacy-3d-viewer).
-
-<span id="bookmarks"></span>
-<span id="bookmark-manager"></span>
-
-## Bookmarks Tab
-
-This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities). The basic usage is as follows:
-
-<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
-<img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
-
-- Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor's X, Y, Z, C, T coordinates
-
-- To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
-
-- To rename an existing bookmark, select it and start typing its new label. Alternatively, use
-{% include bc path='Rename Selected Bookmark..' %} command in the list right-click menu
-
-- Use the {% include bc path='Import' %} button to load bookmarks from either: 1) a CSV file, 2) Existing ROIs in ImageJ's ROI Manager, or 3) Existing ROIs in the overlay of the image being traced. Note that when loading an area ROI, the bookmark is registered at the ROI's centroid
-
-- Use the {% include bc path='Export' %} button to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
 
 
 <span id="delineations"></span>
@@ -739,7 +745,7 @@ This section of the toolbar allow for filtering the display of arbors in the Pat
 
 - **Manually Tagged Nodes**: Nodes you previously color‑tagged (e.g., via the tracing canvas)
 - **Nodes With Invalid Radius**: Nodes whose radius is [unset or invalid](#correct-radii)
-- **Putative Crossovers**: These are “apparent crossings” (two or more paths passing very near without being topologically connected), automatically detected by SNT's algorithms. These are described in more detail in [Walkthroughs](./walkthroughs#detecting-crossovers). Note that detecting putative crossovers can be computationally heavy for large datasets. Start with a modest selection of paths and widen it as needed
+- **Putative Crossovers**: These are “apparent crossings” (two or more paths passing very near without being topologically connected), automatically detected by SNT's algorithms. These are described in more detail in [Curation](./curation#detecting-crossovers). Note that detecting putative crossovers can be computationally heavy for large datasets. Start with a modest selection of paths and widen it as needed
 
 
 ## Menu Commands
