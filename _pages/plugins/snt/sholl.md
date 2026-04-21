@@ -671,12 +671,14 @@ More complex scripts will take advantage of [SNT's API](/plugins/snt/scripting).
 
 # FAQ
 
+For clarity, FAQs pertaining to direct parsing of images are tagged with <i class="fas fa-image"></i>, those pertaining to reconstructions (tracings) with <i class="fas fa-pen"></i>.
+
 **General**
 
 <ol>
 <li markdown="1">
 
-<span id="faq:citing"></span>**How do I cite *Sholl Analysis***?
+<span id="faq:citing"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **How do I cite *Sholl Analysis***? 
 
 </li>
 <dl>
@@ -693,7 +695,7 @@ The authoritative references for *Sholl Analysis* are twofold:
 
 <li markdown="1">
 
-<span id="faq:threshold"></span>**Why do I need to threshold the cell?**
+<span id="faq:threshold"></span><i class="fas fa-image"></i> **Why do I need to threshold the cell?**
 
 </li>
 <dl>
@@ -705,7 +707,7 @@ Counting intersections is really a binary procedure: a shell either intercepts a
 </dl>
 <li markdown="1">
 
-<span id="faq:threshold2"></span>**In older versions it was not mandatory to adjust threshold values prior to analysis. Why is it now?**
+<span id="faq:threshold2"></span><i class="fas fa-image"></i> **In older versions it was not mandatory to adjust threshold values prior to analysis. Why is it now?**
 
 </li>
 <dl>
@@ -717,7 +719,7 @@ Image segmentation has always been [required](#faq:threshold). In its early impl
 </dl>
 <li markdown="1">
 
-<span id="faq:pre-processing"></span>**My images do not look that *great*. How can I treat them prior to analysis?**
+<span id="faq:pre-processing"></span><i class="fas fa-image"></i> **My images do not look that *great*. How can I treat them prior to analysis?**
 
 </li>
 <dl>
@@ -729,19 +731,21 @@ Have a look at [Pre-processing](#pre-processing).
 </dl>
 <li markdown="1">
 
-<span id="faq:accuracy"></span>**My bitmap profiles are different from the ones obtained from tracings of the same cells. Why?**
+<span id="faq:accuracy"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **My bitmap profiles are different from the ones obtained from tracings of the same cells. Why?**
 
 </li>
 <dl>
 <dd markdown="1">
 
-The quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [segmentation routines](#pre-processing). On the other hand, if you already obtained binary images make sure you are [interpreting them properly](#cf-segmentation). You should also confirm that [Ending radius](#end-radius) does not intersect objects in the image canvas that extend beyond the analyzed arbor. As a rule of thumb, always refer to the [Sholl mask](#faq:sholl-mask) to visually inspect which regions of the image have been measured.
+The quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you may need to optimize your [segmentation routines](#pre-processing).
+On the other hand, if you already obtained binary images make sure you are [interpreting them properly](#cf-segmentation). You should also confirm that [Ending radius](#end-radius) does not intersect other structures in the image beyond the analyzed arbor.
+See also [The 3D profile looks worse than the 2D profile of the Maximum Intensity Projection of the same cell. Why?](#faq:3Dvs2D)
 
 </dd>
 </dl>
 <li markdown="1">
 
-<span id="faq:updates"></span>**My version is not the latest after running {% include bc path="Help | Update Fiji..." %} Why?**
+<span id="faq:updates"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **My version is not the latest after running {% include bc path="Help | Update Fiji..." %} Why?**
 
 </li>
 <dl>
@@ -751,7 +755,7 @@ This may happen if you have manually installed/modified core files.. Run the [Up
 </dl>
 <li markdown="1">
 
-<span id="faq:documentation"></span>**This documentation is not that useful. How long do I have to wait until it gets improved?**
+<span id="faq:documentation"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **This documentation is not that useful. How long do I have to wait until it gets improved?**
 
 </li>
 <dl>
@@ -768,7 +772,7 @@ Use the Edit this page option on the [top](#top) of the page and edit its conten
 <ol>
 <li markdown="1">
 
-<span id="faq:image-types"></span>**The plugin complains about a wrong image type. Why?**
+<span id="faq:image-types"></span><i class="fas fa-image"></i> **The plugin complains about a wrong image type. Why?**
 
 </li>
 <dl>
@@ -780,7 +784,7 @@ The plugin does not parse RGB images, but will process any grayscale image (8/16
 </dl>
 <li markdown="1">
 
-<span id="faq:z-position"></span>**With 3D and 4D images, how do I set the Z-position of the center?**
+<span id="faq:z-position"></span><i class="fas fa-image"></i> **With 3D and 4D images, how do I set the Z-position of the center?**
 
 </li>
 <dl>
@@ -792,7 +796,7 @@ The Z-position (depth) of the center of analysis is the active Z-slice of the st
 </dl>
 <li markdown="1">
 
-<span id="faq:parameters"></span>**Why so many parameters?**
+<span id="faq:parameters"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **Why so many parameters?**
 
 </li>
 <dl>
@@ -809,18 +813,18 @@ The plugin is designed for the analysis of a wide diversity of arbors and it is 
 <ol>
 <li markdown="1">
 
-<span id="faq:Sholl-table"></span>**How can I save/edit the *Sholl Results* table?**
+<span id="faq:Sholl-table"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **How can I save/edit the *Sholl Results* table?**
 
 </li>
 <dl>
 <dd markdown="1">
-Use Fiji's {% include bc path="File | Export | Table..." %} command or SNT's {% include bc path="File | Save Tables and Analysis Plots.." %} ([details](/plugins/snt/manual#save-tables--analysis-plots)). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+Use Fiji's {% include bc path="File | Export | Table..." %} command or SNT's {% include bc path="File | Save Tables and Analysis Plots..." %} ([details](/plugins/snt/manual#save-tables--analysis-plots)), or right-click on the table and choose {% include bc path="Save As..." %}
 
 </dd>
 </dl>
 <li markdown="1">
 
-<span id="faq:sholl-mask"></span>**What is the *Sholl mask*?**
+<span id="faq:sholl-mask"></span><i class="fas fa-image"></i> **What is the *Sholl mask*?**
 
 </li>
 <dl>
@@ -832,25 +836,26 @@ The Sholl mask ([see example of CA1 cell](#ca1-cell-mask)) is simply an illustra
 </dl>
 <li markdown="1">
 
-<span id="faq:3Dvs2D"></span>**The 3D profile looks *worse* than the 2D profile of the Maximum Intensity Projection of the same cell. Why?**
+<span id="faq:3Dvs2D"></span><i class="fas fa-image"></i> **The 3D profile looks *worse* than the 2D profile of the Maximum Intensity Projection of the same cell. Why?**
 
 </li>
 <dl>
 <dd markdown="1">
 
-An anisotropic voxel size will have a strong impact on [step size](#step-size). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#parameters). If {% include bc path="Image | Properties..." %} ({% include key keys='Shift|P' %}) reports the appropriate spatial calibration, make sure to read [Multiple Samples and Noise Reduction](#multiple-samples-and-noise-reduction) before deciding which type of images to use.
-
+An anisotropic voxel size will have a strong impact on [step size](#step-size). On the other hand, 2D and 3D images can be sampled differently depending on the [options chosen](#parameters).
+If {% include bc path="Image | Properties..." %} ({% include key keys='Shift|P' %}) reports the appropriate spatial calibration, check [Noise Reduction](#noise-reduction) parameters.
+The {% include bc path="Analysis|Sholl Bitmap vs Tracing Comparison" %} [template script](./scripting#bundled-templates) can be used to compare Sholl profiles across different inputs (2D/3D images vs 2D/3D reconstructions).
 </dd>
 </dl>
 <li markdown="1">
 
-<span id="faq:no-output"></span>**The program terminates without warnings. What am I doing wrong?**
+<span id="faq:no-output"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **The program terminates without warnings. What am I doing wrong?**
 
 </li>
 <dl>
 <dd markdown="1">
 
-The program should not terminate without throwing an error message. However, do note that some exiting messages are displayed in the often overlooked status bar of the main ImageJ window. This is intentional, as it minimizes the frequency of modal windows popping up for each failed operation.
+The program should not terminate without throwing an error message. 
 
 </dd>
 </dl>
@@ -860,19 +865,19 @@ The program should not terminate without throwing an error message. However, do 
 <ol>
 <li markdown="1">
 
-<span id="faq:AUC"></span>**Would it be possible to retrieve the Area Under the Curve (linear Sholl plot)?**
+<span id="faq:AUC"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **Would it be possible to retrieve the Area Under the Curve (linear Sholl plot)?**
 
 </li>
 <dl>
 <dd markdown="1">
 
-Sure. But it would hardly be relevant for data sampled at fixed intervals. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the {% include wikipedia title='Trapezoidal rule' text='trapezoidal rule'%}. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [Mean inters.](#mean-inters) by the distance between [Ending radius](#end-radius) and [Starting radius](#start-radius). Thus, effectively, AUC is redundant with [Mean inters.](#mean-inters), that is already an integrated measurement of the sampled data. On the other hand, one could retrieve the AUC of the polynomial fit, but such property is already covered by [Mean value](#mean-value-of-function).
+The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the {% include wikipedia title='Trapezoidal rule' text='trapezoidal rule'%}. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [Mean inters.](#mean-inters) by the distance between [Ending radius](#end-radius) and [Starting radius](#start-radius). Thus, effectively, AUC is redundant with [Mean inters.](#mean-inters), that is already an integrated measurement of the sampled data. On the other hand, one could retrieve the AUC of the polynomial fit, but such property is already covered by [Mean value](#mean-value-of-function).
 
 </dd>
 </dl>
 <li markdown="1">
 
-<span id="faq:inflection-points"></span>**The shape of the polynomial changes at the edges of the profile. Why?**
+<span id="faq:inflection-points"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **The shape of the polynomial changes at the edges of the profile. Why?**
 
 </li>
 <dl>
@@ -882,31 +887,21 @@ Inflection points at [starting/ending radius](#start-radius) are usually associa
 
 </dd>
 </dl>
-<li markdown="1">
 
-<span id="faq:poor-fitting"></span>**None of the fitting options is suitable for my datasets. What should I do?**
-
-</li>
-<dl>
-<dd markdown="1">
-
-Have a look at [Complementary Tools](#complementary-tools).
-
-</dd>
-</dl>
 </ol>
 
 **Batch Processing**
 <ol>
 <li markdown="1">
 
-<span id="faq:recorder"></span>**The code that the Macro Recorder produced does not seem to work. What am I doing wrong?**
+<span id="faq:recorder"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **The code that the Macro Recorder produced does not seem to work. What am I doing wrong?**
 
 </li>
 <dl>
 <dd markdown="1">
 
-It is likely that frequent interactions with the dialog prompt(s) (from which the Recorder retrieves user-specified parameters) have "confused" ImageJ. The solution is to repeat the recording, while minimizing such interactions.
+Note that the [Neuroanatomy Shortcuts Window ](./manual#snt-commands) lists two types of commands: _Interactive_ and _Macro Recordable_. The latter should be used for efficient macro recording.
+Frequent interactions with the interactive dialog prompt(s) (from which the Recorder retrieves user-specified parameters) can "confuse" ImageJ. The solution is to repeat the recording with _Macro Recordable_ commands.
 
 </dd>
 </dl>
@@ -916,12 +911,12 @@ It is likely that frequent interactions with the dialog prompt(s) (from which th
 <ol>
 <li markdown="1">
 
-<span id="faq:bug-report"></span>**I found a bug. How do I report it?**
+<span id="faq:bug-report"></span><i class="fas fa-image"></i> <i class="fas fa-pen"></i> **I found a bug. How do I report it?**
 
 </li>
 <dl>
 <dd markdown="1">
-Report it in the [ImageJ Forum](http://forum.imagej.net).
+see [Contribute › Report Bugs](./contribute#report-bugs).
 </dd>
 </dl>
 </ol>
