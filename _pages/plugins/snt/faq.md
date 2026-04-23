@@ -105,6 +105,20 @@ Yes. Use {% include key key='ctlcmd|Shift|O' %} / {% include key key='ctlcmd|Alt
 ### How can I import an image sequence into SNT?
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
 
+## Proofreading
+### What is proofreading and curation?
+SNT provides two complementary approaches to reconstruction quality control:
+
+- The **[Proofreading toolbar](./manual#proofreading-toolbar)** in the [Path Manager](./manual#path-manager) is a manual annotation system. It allows tagging of individual paths with quality labels (e.g., *approved*, *flagged*, *rejected*) based on visual inspection.
+This is a human-driven workflow: the reviewer examines paths one by one, applies judgment, and records decisions.
+
+- The **[Curation Assistant](./curation#curation-assistant)** is an automated monitoring system. It runs configurable plausibility checks (branch angle ranges, radius continuity, direction changes, path overlaps, and others) either in real time during tracing or on demand over the full reconstruction.
+Thresholds can be tuned manually, calibrated from reference cells, or loaded from preset files. Warnings are generated algorithmically and displayed in a sortable table with one-click navigation to each issue.
+The assistant does not make quality judgments; it surfaces statistical anomalies that may warrant a closer look.
+
+In practice, the two tools serve different stages: the Curation Assistant catches potential errors *during* tracing (or shortly after), while the Proofreading toolbar supports structured *review* of traced strucures.
+
+
 ## Sholl Analysis
 See [Sholl Analysis › FAQ](./sholl#faq).
 

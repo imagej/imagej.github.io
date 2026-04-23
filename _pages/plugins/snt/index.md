@@ -83,6 +83,8 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 | **[Autotracing](/plugins/snt/auto-tracing)**                    | Documentation on fully automated reconstructions                                                                                   |
 | **[Big Data](/plugins/snt/big-data)**                           | Status of big data support                                                                                                         |
 | **[Contributing](/plugins/snt/contribute)**                     | How to contribute to SNT                                                                                                           |
+| **[Curation](/plugins/snt/curation)**                           | Curation Assistant (Real-time quality control while tracing)                                                                       |
+| **[Delineations](/plugins/snt/delineations)**                   | Delineation Analysis                                                                                                               |
 | **[Extending](/plugins/snt/extending)**                         | Resources for developers interested in extending SNT or parsing TRACES                                                             |
 | **[FAQ](/plugins/snt/faq)**                                     | Frequently asked questions                                                                                                         |
 | **[Key Shortcuts](/plugins/snt/key-shortcuts)**                 | List of SNT shortcuts (keyboard cheatsheet)                                                                                        |
