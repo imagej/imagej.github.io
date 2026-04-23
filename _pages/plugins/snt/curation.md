@@ -1,8 +1,8 @@
 ---
-title: SNT › Data Curation
+title: SNT › Curation
 nav-links: true
-nav-title: Data Curation
-name: Data Curation
+nav-title: Curation
+name: Curation
 categories: [QC,Analysis,Neuroanatomy]
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
@@ -131,7 +131,16 @@ The calibrated values are applied to the panel immediately. See [Advanced Curati
 ### Built-in Presets
 
 Lists curation presets bundled with SNT. These are calibrated from NeuroMorpho reference data and provide sensible starting points for common cell types.
-Selecting a preset loads its thresholds and enabled states into the panel.
+Selecting a preset loads its thresholds and enabled states into the panel. Presets include:
+
+| Preset | Cell type | Species | Publication(s) | NeuroMorpho archive |
+|--------|-----------|---------|-------------|---------------------|
+| CA1 Dendrites | CA1 pyramidal (basal + apical dendrites) | Mouse | [Mellström et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26928278/) | [DeFelipe](https://neuromorpho.org/bylab.jsp?name=DeFelipe) |
+| CA3 Dendrites | CA3 pyramidal (basal + apical dendrites) | Rat | [Ishizuka et al., 1995](https://pubmed.ncbi.nlm.nih.gov/8576427/) | [Amaral](https://neuromorpho.org/bylab.jsp?name=Amaral) |
+| Eurydendroid Cells | Eurydendroid | Larval zebrafish | [Kunst et al., 2019](https://pubmed.ncbi.nlm.nih.gov/31147152/) | [Baier](https://neuromorpho.org/bylab.jsp?name=Baier) |
+| Martinotti Cells | Martinotti interneuron (axons/dendrites) | Mouse | [Goldberg et al., 2004](https://pubmed.ncbi.nlm.nih.gov/15146046/), [Trevelyan et al., 2006](https://pubmed.ncbi.nlm.nih.gov/17135406/), [Nikolenko et al., 2007](https://pubmed.ncbi.nlm.nih.gov/17965719/) | [Yuste](https://neuromorpho.org/bylab.jsp?name=Yuste) |
+| Purkinje Dendrites | Purkinje neuron (dendrites) | Mouse | [Chen et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23719821/) | [Dusart](https://neuromorpho.org/bylab.jsp?name=Dusart) |
+| RGC Dendrites | Retinal ganglion cell (dendrites) | Mouse | [Werginz et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32736374/) | [Fried](https://neuromorpho.org/bylab.jsp?name=Fried) |
 
 ### User Presets
 
