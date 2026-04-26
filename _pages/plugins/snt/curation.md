@@ -22,7 +22,7 @@ tags: snt,tracing,neuroanatomy,qc,ground-truth
 # Curation Assistant
 <img align="right" width="350" src="/media/plugins/snt/snt-curation-assistant.png" alt="Assistant tab" title="Curation Assistant" />
 
-The Curation Assistant a tab in the main dialog that monitors the _morphological plausibility_ of neuron reconstructions in real time.
+The Curation Assistant a tab in the main dialog that monitors the _morphological plausibility_ of neuron reconstructions in real time (see [Curation vs Proofreading](./faq#what-is-proofreading-and-curation)).
 It flags suspect tracing operations as they happen, e.g., near-parallel fork angles, abrupt radius changes, U-turns at branch points, and so on.
 It also provides an on-demand "full scan" that detects whole-reconstruction issues such as path overlaps and radius inversions.
 All parameters can be adjusted in the GUI, saved to reusable preset files, or calibrated automatically from reference reconstructions.
@@ -138,6 +138,7 @@ Selecting a preset loads its thresholds and enabled states into the panel. Prese
 | CA1 Dendrites | CA1 pyramidal (basal + apical dendrites) | Mouse | [Mellström et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26928278/) | [DeFelipe](https://neuromorpho.org/bylab.jsp?name=DeFelipe) |
 | CA3 Dendrites | CA3 pyramidal (basal + apical dendrites) | Rat | [Ishizuka et al., 1995](https://pubmed.ncbi.nlm.nih.gov/8576427/) | [Amaral](https://neuromorpho.org/bylab.jsp?name=Amaral) |
 | Eurydendroid Cells | Eurydendroid | Larval zebrafish | [Kunst et al., 2019](https://pubmed.ncbi.nlm.nih.gov/31147152/) | [Baier](https://neuromorpho.org/bylab.jsp?name=Baier) |
+| Kenyon Cells | Kenyon | Adult Drosophila | [Zheng et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30033368/) | [Bock](https://neuromorpho.org/bylab.jsp?name=Bock) |
 | Martinotti Cells | Martinotti interneuron (axons/dendrites) | Mouse | [Goldberg et al., 2004](https://pubmed.ncbi.nlm.nih.gov/15146046/), [Trevelyan et al., 2006](https://pubmed.ncbi.nlm.nih.gov/17135406/), [Nikolenko et al., 2007](https://pubmed.ncbi.nlm.nih.gov/17965719/) | [Yuste](https://neuromorpho.org/bylab.jsp?name=Yuste) |
 | Purkinje Dendrites | Purkinje neuron (dendrites) | Mouse | [Chen et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23719821/) | [Dusart](https://neuromorpho.org/bylab.jsp?name=Dusart) |
 | RGC Dendrites | Retinal ganglion cell (dendrites) | Mouse | [Werginz et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32736374/) | [Fried](https://neuromorpho.org/bylab.jsp?name=Fried) |
