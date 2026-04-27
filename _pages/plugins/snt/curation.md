@@ -91,7 +91,7 @@ This check has no threshold field: it is either enabled or disabled.
 These checks scan the full set of paths in the reconstruction. They are triggered by clicking the **Run Full Scan** button.
 
 ### Max. proximity for path cross-overs
-Detects regions where topologically unconnected paths run suspiciously close to each other, suggesting duplicate or overlapping tracings.
+Detects [crossovers](#detecting-crossovers): regions where topologically unconnected paths run suspiciously close to each other, suggesting duplicate or overlapping tracings.
 Internally uses `CrossoverFinder` with a proximity radius. Self-crossovers and direct parent-child pairs are excluded.
 **Range:** 0.1–100.0
 
@@ -186,7 +186,7 @@ Crossover events between two paths, _Path A_ and _Path B_, are detected as follo
 
 ## Obtaining Crossover Locations
 
-From the GUI, the easiest way to list crossover events is to use the [Bookmark option](./manual#bookmark-menu) in the [Navigator Toolbar](./manual#navigation-toolbar). For advanced detections, [scripting](./scripting) is advised.
+From the GUI, the easiest way to list crossover events is to use the [Bookmark option](./manual#bookmark-menu) in the [Navigator Toolbar](./manual#navigation-toolbar). Alternatively, running the [curation assistant's full scan](#on-demand-monitoring-parameters) will also run the detection routine. For advanced detections, [scripting](./scripting) is advised.
 In a script, detection settings are specified in a _Config_ object, example:
 
 {% highlight java %}
