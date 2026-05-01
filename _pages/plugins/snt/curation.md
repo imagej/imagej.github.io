@@ -22,7 +22,7 @@ tags: snt,tracing,neuroanatomy,qc,ground-truth
 # Curation Assistant
 <img align="right" width="350" src="/media/plugins/snt/snt-curation-assistant.png" alt="Assistant tab" title="Curation Assistant" />
 
-The Curation Assistant a tab in the main dialog that monitors the _morphological plausibility_ of neuron reconstructions in real time (see [Curation vs Proofreading](./faq#what-is-proofreading-and-curation)).
+The Curation Assistant is a tab in the main dialog that monitors the _morphological plausibility_ of neuron reconstructions in real time (see [Curation vs Proofreading](./faq#what-is-proofreading-and-curation)).
 It flags suspect tracing operations as they happen, e.g., near-parallel fork angles, abrupt radius changes, U-turns at branch points, and so on.
 It also provides an on-demand "full scan" that detects whole-reconstruction issues such as path overlaps and radius inversions.
 All parameters can be adjusted in the GUI, saved to reusable preset files, or calibrated automatically from reference reconstructions.
