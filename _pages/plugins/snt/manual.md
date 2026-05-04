@@ -122,7 +122,7 @@ Presents a list of previously created backups and replaces the current tracings 
 To use this feature:
 {% include img src="/media/plugins/snt/snt-recover-from-snapshot.png" align="right" width="300px" %}
 
-1. Trace one more paths
+1. Trace one or more paths
 2. Save them to a local file using {% include key key='ctlcmd|S' %} ({% include bc path='File|Save Tracings|Save' %})
 3. Keep tracing paths. When pertinent, press {% include key key='ctlcmd|Shift|S' %} ({% include bc path='File|Backup Tracings' %}) to save current progress to a timestamped backup file
 4. Reinstate progress from backed up data using {% include bc path='File|Revert to Backup...' %}, which allows you to go 'back in time'
@@ -643,7 +643,7 @@ Creates a fork point at the node closest to the mouse cursor. Once a fork point 
 Removes the last segment from the temporary path.
 
 ### Finish Path {% include key key='F' %}
-Finishes the temporary path. Not that a path can always be finished by {% include key key='double click' %}
+Finishes the temporary path. Note that a path can always be finished by {% include key key='double click' %}
 
 ## Edit Mode {% include key keys='Shift|E' %}
 Pressing *Edit Mode*, selects the nearest path for editing, unlocking the edit options. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.

@@ -8,7 +8,7 @@ forum-tag: snt
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.<br>
+**This page was last revised for [version 5.0.9](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/reconstruction-viewer.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -63,23 +63,11 @@ The RV Controls dialog is the Reconstruction Viewer equivalent to the [Path Mana
 This menu provides control over the rendered scene.
 <img align="right" src="/media/plugins/snt/snt-recviewer-scene-controls.png" alt="Scene Controls" title="Scene Controls" width="300" />
 
-### Toggle Dark Mode
-Switches between dark and light theme. Shortcut: {% include key key='D' %}
-
 ### Fit to Visible Objects
 Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view. Shortcut: {% include key key='F' %}
 
 ### Fit to Selection
 Zooms into the object(s) currently selected in the object list.
-
-### Impose Isotropic Scale ›
-Squares the aspect ratio of the selected dimensions, leaving the others unchanged. Default is _None_.
-
-### Axes ›
-Controls to label, toggle and change the orientation of the cartesian axes of the scene. The 'Flip axis' commands may be useful to mitigate mismatches between cartesian and anatomical orientations.
-
-### Stretch-to-Fill
-Stretches the projection on the whole viewport. NB: This may distort proportions in the scene.
 
 ### Viewer Size...
 Allows fine-control over the viewer dimensions (useful for, e.g., resizing the viewer to known dimensions before recording an animation).
@@ -87,27 +75,45 @@ Allows fine-control over the viewer dimensions (useful for, e.g., resizing the v
 ### Full Screen
 Enters full screen mode ({% include key keys='Shift|F' %}). To exit full screen press {% include key key='ESC' %}
 
+### Aspect Ratio/Scaling ›
+Options to impose isotropic spacing by "squaring" the aspect ratio of the selected dimensions, leaving the others unchanged. Default is _None_ (No imposition).
+This menu also includes a _Stretch-to-Fill_ option that stretches the projection on the whole viewport. NB: This may distort proportions in the scene.
+
+### Axes ›
+Controls for the Cartesian axes of the scene, including:
+
+- {% include bc path='Anatomical Mapping...'%} Opens a dialog to assign anatomical labels and orientations to scene axes (e.g., Anterior–Posterior, Dorsal–Ventral, Left–Right), useful when working with registered data from reference atlases
+- {% include bc path='Axes Labels...'%} Allows manual renaming of the X, Y, and Z axis labels
+- {% include bc path='Display Frame'%} Toggles the full bounding frame (axis box) around the scene
+- {% include bc path='Toggle Axes'%} Shows or hides the axis lines. Shortcut: {% include key key='A' %}
+- {% include bc path='XY View: Flip Horizontal Axis / Flip Vertical Axis'%} Flips the specified axis in the XY constrained view, which can be useful to mitigate mismatches between Cartesian and anatomical orientations (e.g., when left–right or dorsal–ventral conventions differ from the default rendering)
+
+### Scale Bar ›
+Controls for an overlay scale bar rendered on the scene canvas:
+
+- {% include bc path='Display Scale Bar'%} Toggles the scale bar overlay. When first enabled, a notification reminds the user of the assumed base unit
+- {% include bc path='Set Base Unit...'%} Specifies the spatial unit of the scene coordinates (µm, nm, mm, or pixels). This determines how the scale bar length is computed and labeled
+
+### Toggle Dark Mode
+Switches between dark and light theme. Shortcut: {% include key key='D' %}
+
 ### Reset View
 Resets the view point, view mode, and zoom level, fitting and centering all scene objects into the camera view. Shortcut: {% include key key='R' %}
 
 ### Reload Scene
 Resets the view and checks if all the drawables in the scene are being rendered properly. If not, allows the scene to be rebuilt completely. Shortcut: {% include key keys='CTRL|R' %}
 
-### Rebuild Scene
+### Rebuild Scene...
 Clears all objects from the scene then rebuilds them from scratch. Shortcut: {% include key keys='CTRL|SHIFT|R' %}
 
-### Wipe Scene
+### Wipe Scene...
 Removes all objects from the scene (this action is undoable).
-
-### Scene Shortcuts...
-Displays the viewer's hotkeys. Shortcut: {% include key keys='F1' %}
 
 ### Duplicate Scene
 Stores the current scene into a new non-interactive instance of the viewer to allow side-by-side rendering of detailed scenes.
 
 ### Sync Path Manager Changes
 This option is only available when the viewer was initialized from SNT. It ensures any pending changes performed in the Path Manager percolate into the 3D scene. Shortcut: {% include key keys='CTRL|SHIFT|S' %}
-
 
 ## Neuronal Arbors
 This menu relates to the import, customization and management of reconstructions and is organized into three sections.
@@ -163,7 +169,7 @@ This section of the menu includes commands for deleting reconstructions from the
 This menu includes commands for loading, managing, and customizing 3D meshes commonly used to represent surface meshes of anatomical structures, neuropil labels, or brain compartments. Currently only Wavefront OBJ files are supported. It is also organized in three sections:
 <img align="right" src="/media/plugins/snt/snt-recviewer-mesh-controls.png" alt="3D Meshes" title="3D Meshes" width="300" />
 
-### Add Meshes
+### Load OBJ File(s)...
 Includes commands for import and rendering of Wavefront OBJ files, or folders containing multiple files.
 
 ### Customize Meshes
@@ -172,33 +178,31 @@ Includes commands for adjustment of the color and transparency of the selected m
 ### Remove 3D Meshes
 This section of the menu includes commands for deleting meshes from the scene. Note that you can also remove objects using the [contextual menu](#contextual-menu).
 
-
 ## Geometric Annotations
 This menu includes commands for handling geometric annotations such as points, vectors, surface, and cross-section planes.
 
 <img align="right" src="/media/plugins/snt/snt-recviewer-annot-controls.png" alt="Geometric Annotations" title="Geometric Annotations" width="350" />
 
 ### Add Annotations
-Commands for adding cross-section planes, surfaces, as well as simpler primitives (spheres, vectors, and planes). Annotations can be split in two categories:
+Commands for adding cross-section planes, surfaces, as well as simpler primitives (spheres, vectors, and planes). Annotations can be split in three categories:
 
 #### Cross-section planes
 Cross-section planes can be cell-based or mesh-based:
 
-- Cell-based: Cross-section planes can be rendered in either X,Y,Z axis along the centroid (mid-plane) of either dendrites, or axons, or at the center of cell soma
+- Tree-based: Cross-section planes can be rendered in either X,Y,Z axis along the centroid (mid-plane) of either dendrites, or axons, or at the center of cell soma
 - Mesh-based: Cross-section planes can be rendered in either X,Y,Z axis along the centroid (mid-plane) of the mesh
 
 #### Surfaces
 Similarly to [convex hulls](#convex-hull), surfaces reflect enclosing polyhedrons. Surfaces can also be of two types:
 
-- Cell-based: Cell-based surfaces can be assembled from the point cloud defined by branch-points or tips of a neuronal arbor
+- Tree-based: Cell-based surfaces can be assembled from the point cloud defined by branch-points or tips of a neuronal arbor
 - Mesh-based: Mesh-based surfaces can be assembled from the point cloud of the mesh's vertices associated with either the left or the right hemisphere (bilaterians model organisms)
 
 {% include img align="right" name="Geometric annotations" src="/media/plugins/snt/snt-recviewer-geometric-annot.png" caption="Geometric annotations: Surfaces and planes" %}
 
 
-
-#### Misc ›
-This menu includes controls for adding 3D primitives to the scene including, parallelograms, spheres, or vectors at specified coordinates.
+#### Shapes
+These are 3D primitives including, parallelograms, spheres, or vectors at specified coordinates.
 
 
 ### Customize Annotations
@@ -280,7 +284,7 @@ Conducts [Strahler Analysis](/plugins/snt/analysis#strahler-analysis) on single 
 "
 %}
 
-### Atlas-based Analysis
+### Atlas-based Analyses
 
 #### Annotation Graph
 
@@ -305,17 +309,16 @@ Adds a text label with options to customize font size, style, color, rotation an
 #### Color Mapping Legends ›
 Contains options to add, edit, or remove [Color Mapping](#color-mapping-) legends.
 
-#### Create Figure...
-Only available in standalone viewers. See [Manual › Create Figure...](/plugins/snt/manual#create-figure).
-
 #### Light Controls...
 Adjustments of light and shadows. Note these are currently experimental features.
 
-#### Record Rotation
+#### Create Figure...
+Only available in standalone viewers. See [Manual › Create Figure...](/plugins/snt/manual#create-figure).
+
+#### Record Animation...
 Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in [Preferences](#other).
 
-
-### Screenshots
+### Snapshots
 Commands for handling scene snapshots, including:
 
 - {% include bc path='Take Snapshot & Display'%} Takes a snapshot of the current scene and displays it in ImageJ
@@ -345,8 +348,31 @@ This section contains options for sensitivity of mouse and keyboard scene intera
 - {% include bc path='Pan Accuracy| '%} Sets the responsiveness of panning. A lower step size is more responsive
 - {% include bc path='Zoom Steps (+/- Keys)| '%} Sets the percentage of a single zoom step via {% include key key='+' %} {% include key key='-' %} keys
 - {% include bc path='Rotation Steps (Arrow Keys)| '%} Sets the number of degrees of a single rotation step via {% include key key='left' %} {% include key key='right' %} keys
+- {% include bc path='Animation Type | '%} Sets how the scene animates when a rotation is triggered (double-click or recorded animation). _Full Rotation_ performs a continuous 360° sweep, while _Ping-pong_ oscillates back and forth over a fixed arc (~60°). The preference persists across sessions
 
+### Neurite Rendering
+This section contains options that control how neuronal arbors are drawn:
 
+- {% include bc path='Neurite Style'%} Selects the rendering mode for neurite paths (mutually exclusive):
+  - _Simple Lines_ Basic line rendering (default, fastest)
+  - _Pseudo-Lighting_ Modulates neurite brightness based on orientation relative to the camera, giving a sense of depth without full 3D geometry
+  - _Shaded Tubes_ Renders neurites as illuminated 3D tubes using per-fragment Phong lighting (requires OpenGL 3.2+)
+  - _Shaded Tubes (Wireframe)_ Same as Shaded Tubes but with a wireframe overlay showing mesh edges
+
+  An additional _Tube Sides..._ option sets the number of sides for tube cross-sections (higher values produce smoother tubes at the cost of performance)
+
+- {% include bc path='Path Smoothing'%} Applies Catmull-Rom spline interpolation to reduce angular kinks at thick line joints. Options: _None_, _Low_, _Medium_, _High_ (corresponding to upsampling factors of 1, 2, 4, and 8, respectively)
+
+- {% include bc path='Depth Perception'%} Fades distant neurites toward the background color to enhance depth cues. Intensity presets include _Subtle_, _Moderate_, _Strong_, and _Full_, or depth fog can be disabled entirely with _None_
+
+### Mesh Rendering
+Options controlling how surface meshes (OBJ files) are rendered:
+
+- {% include bc path='Mesh Style'%} Selects the shading mode for meshes (mutually exclusive):
+  - _Default_ Fixed-function rendering (jzy3d default pipeline)
+  - _Smooth Shading_ Per-fragment Phong lighting with hemispherical ambient, producing smoother surfaces
+
+- {% include bc path='Backface Culling'%} Skips back-facing triangles during rendering. This improves performance for closed (watertight) meshes but may cause visual artifacts on open surfaces
 ### Advanced Settings
 Includes advanced controls such as:
 

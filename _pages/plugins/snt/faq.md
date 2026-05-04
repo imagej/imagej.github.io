@@ -116,7 +116,7 @@ This is a human-driven workflow: the reviewer examines paths one by one, applies
 Thresholds can be tuned manually, calibrated from reference cells, or loaded from preset files. Warnings are generated algorithmically and displayed in a sortable table with one-click navigation to each issue.
 The assistant does not make quality judgments; it surfaces statistical anomalies that may warrant a closer look.
 
-In practice, the two tools serve different stages: the Curation Assistant catches potential errors *during* tracing (or shortly after), while the Proofreading toolbar supports structured *review* of traced strucures.
+In practice, the two tools serve different stages: the Curation Assistant catches potential errors *during* tracing (or shortly after), while the Proofreading toolbar supports structured *review* of traced structures.
 
 
 ## Sholl Analysis

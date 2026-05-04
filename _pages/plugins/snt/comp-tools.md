@@ -12,7 +12,7 @@ update-site: Neuroanatomy
 
 | Tool | Description | Comments |
 |------|-------------|----------|
-| [Spot Spine](/plugins/spot-spine) | Detection and count dendritic spines, segmentation of spine heads, and quantitative morphological measurements of spines | Under active development |
+| [Spot Spine](/plugins/spot-spine) | Detection and count of dendritic spines, segmentation of spine heads, and quantitative morphological measurements of spines | Under active development |
 | [BigTrace](/plugins/bigtrace) | Semi-automated/automated tracing of unbranched structures using BigVolumeViewer | Under active development |
 | [NeuronJ](/plugins/neuronj) | Semi-automated tracing in 2D only | No longer maintained. SNT reads NDF files |
 
