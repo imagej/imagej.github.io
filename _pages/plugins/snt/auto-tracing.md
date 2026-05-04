@@ -100,7 +100,7 @@ For technical implementation details and references, see the [SNT technical note
 
 The {% include bc path='Auto-trace|Detect Soma...' %} command provides automated detection of cell bodies in neuronal images. This is a standalone tool that can be used before autotracing to identify soma locations, or independently to annotate soma positions and sizes.
 
-{% include img align="center" name="Soma Detection" src="/media/plugins/snt/snt-soma-detection.png" caption="Automated soma detection: ROI countour (Cultured hippocamapl neurons: _Neuronal receptors_/_Synaptic labeling_ demo datasets)" %}
+{% include img align="center" name="Soma Detection" src="/media/plugins/snt/snt-soma-detection.png" caption="Automated soma detection: ROI countour (Cultured hippocampal neurons: _Neuronal receptors_/_Synaptic labeling_ demo datasets)" %}
 
 ## Detection Strategy
 

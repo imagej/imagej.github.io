@@ -155,7 +155,7 @@ def run():
 
 # Fiji Scripting
 
-Scripting in Fiji's script editor is perhaps best done using Groovy and python. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
+Scripting in Fiji's script editor is perhaps best done using Groovy and Python. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
 
 
 # Further  Resources
@@ -245,7 +245,7 @@ def do_stuff(viewer):
     # Enforce side perspective.
     viewer.setViewMode('side')
 
-    # Next, we will applying a color mapping to the axon
+    # Next, we will apply a color mapping to the axon
     # using branch order as the metric and the Ice Lut.
     # Make an instance of TreeColorMapper using SciJava context.
     mapper = TreeColorMapper(context)
