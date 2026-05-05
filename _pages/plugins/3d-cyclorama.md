@@ -8,35 +8,35 @@ description: Fiji plugin to digitally unroll deformed tubes.
 author: Charalambos Rossides
 ---
 
-Fiji plugin to digitally unroll deformed tubes. If you use this plugin for your research or industrial applications we kindly ask you to cite our work [1]. 
+Fiji/Imagej plugin to unroll 3D deformed tubes within image stacks.
+
+Author: Charalambos Rossides, University of Southampton
+
+If you use this plugin for your research or industrial applications we kindly ask you to cite our work [1].
 
 [1] Rossides, C., Pender, S.L.F. & Schneider, P. "3D cyclorama for digital unrolling and visualisation of deformed tubes." Sci Rep 11, 14672 (2021).
 
 [https://doi.org/10.1038/s41598-021-93184-x](https://doi.org/10.1038/s41598-021-93184-x)
 
+------------------------
+
 ## Download
 
-Step 1 - enable the *3Dcyclorama* site:
+Step 1 - enable the *3D cyclorama* update site:
 
 - Start Fiji
 - Go to Help > Update > Manage update sites
-- Click *Add update site*. Name: 3D cyclorama, URL: https://sites.imagej.net/3Dcyclorama
-- Check the newly added *3Dcyclorama* site
-- Click *close*
+- Find *3D cyclorama* in the list and tick its checkbox
+- Click *Close*
 - Click *Apply changes*
 
-Step 2 - download dependencies:
-- Create a directory named *FastDTW* in the Fiji plugins directory (Fiji.app/plugins/FastDTW)
-- Download the FastDTW algorithm from github [https://github.com/rmaestre/FastDTW](https://github.com/rmaestre/FastDTW) (Click code > download zip)
-- Extract the contents of FastDTW-master (FastDTW.iml, README.md, src, target, etc.) in Fiji.app/plugins/FastDTW
-
-Step 3 - Run:
+Step 2 - Run:
 - Restart Fiji
 - The 3D cyclorama plugin should appear in the Plugins menu towards the bottom in a menu titled **3D cyclorama**
 
-## Tutorial
+------------------------
 
-Usage:
+## Tutorial
 
 A. Preparation
 1. Run imagej
@@ -119,7 +119,7 @@ B. Unrolling
 
 	Click "Load scanStack", navigate to the directory of your image stack, select one image and click "Open". This will open the image stack and it will load the ROIset file that is expected to be saved in the same directory. A message will be displayed in the script editor output panel informing of the selected RoiSet.
     ```
-2. Compute the boundary contours (Panel 2: Compute boundary contours)
+	2. Compute the boundary contours (Panel 2: Compute boundary contours)
     ```
 	Select the desired "contour length" (Start with 100 points. Increase if the contours do not properly capture the shape. Decrease as much as possible for improved performance).
 
@@ -140,7 +140,7 @@ B. Unrolling
 		If the contours in the intermediate slices remain relatively unchanged, then the "Interpolation interval" on panel 1 needs to be reduced.
 		If the contours oscillate exceedingly from slice to slice, the "Interpolation interval" on panel 1 needs to be increased.
     ```
-3. Compute the intermediate contours and resampling surfaces (Panel 3: Compute resampling surfaces)
+	3. Compute the intermediate contours and resampling surfaces (Panel 3: Compute resampling surfaces)
     ```
 	Define the "number of contours" to be computed on each slice, which includes the boundary and intermediate contours:
 		Begin with a small value (3 or 5) so that you can quickly derive the rest of the parameters on this panel.
@@ -206,7 +206,7 @@ B. Unrolling
 		If you would like to save the mappping to file, check the "Save mapping" checkbox in Panel 4. Note that this is required for bi-directional examination of the result (see C. Analysis).
 		If you would like to save the resulting 3D cyclorama to file as a tiff image, check the "Save cyclorama" in Panel 5.
     ```		
-4. Proceed with the final unrolling:
+	4. Proceed with the final unrolling:
     ```
 	Close the image stack and run the 3D cyclorama plugin again.
 
@@ -237,7 +237,7 @@ C. Analysis
 		A "Load project" panel will pop up. Leave the default values and click "Load".
 		In the file selector that pops up, navigate to the "Cyclorama" directory that was created in the directory of the image stack.
 		Select the <datetime>_log.txt file and click "Open".
-		This will open the image stack, the 3D cyclorama, the ImageJ log window and a panel titled "Analyze cyclorama".
+		This will open the image stack, the 3D cyclorama, the Imagej log window and a panel titled "Analyze cyclorama".
 
 	Bidirectional mapping:
 		When the checkbox "Link views" is checked clicking on either of the views (image stack or cyclorama) will create the corresponding (mapped) point on the other view.
@@ -263,7 +263,7 @@ C. Analysis
 		This is useful when features are segmented on the 3D cyclorama and the corresponding features need to be quantified on the image stack.
 		Example:
 			Uncheck all check boxes.
-			Select the rectangle tool (leftmost tool on the ImageJ toolbar).
+			Select the rectangle tool (leftmost tool on the Imagej toolbar).
 			Draw a rectangle on top of the 3D cyclorama and press ctrl+f to fill it with a given colour.
 			Repeat this over all slices of the cyclorama (Keep the rectangle unchanged, scroll to change image slice and press ctrl+f on each slice).
 			Under the "Invert projected image (Cyclorama)" click "Select".
@@ -279,7 +279,7 @@ C. Analysis
 		This is useful when seed-points (e.g. for region growth segmentation purposes) need to be identified on the 3D cyclorama and defined on the image stack.
 		Example:
 			Uncheck the "Activate ROI manager" to close any open ROI manager.
-			Select the point tool (7th tool from the left on the ImageJ toolbar).
+			Select the point tool (7th tool from the left on the Imagej toolbar).
 			Click on a feature on the cyclorama image and press "t" to add the ROI to the ROI manager. Repeat this several times to create several ROIs.
 			Under the "Invert ROIs" click the "Invert" button.
 			This will create a black mask stack with the same dimensions as the image stack and white cubes of 5 x 5 x 5 pixels at the corresponding (mapped) points of all the points currently existing in the ROI manager.
@@ -287,19 +287,16 @@ C. Analysis
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/20737950/131255975-c5f6bbd8-eafe-4d34-9770-65716e112b9e.png" alt="131255975 c5f6bbd8 eafe 4d34 9770 65716e112b9e" width="800"></p>
 
 ## ChangeLog
-v1.0.0:
+### v1.0.0
 
+- FastDTW is now bundled with the plugin and shipped via the update site. Manual install of FastDTW from rmaestre/FastDTW is no longer required.
 - Added functionality to flatten sheets and scrolls.
-  
-v0.6.0:
-  
-- Implemented sanity checks in GUI.
-  
-v0.5.0:
 
+### v0.5.1
+
+- Implemented sanity checks in GUI.
 - Restricted 3Dcyclorama GUI access to unnecessary backend functionality.
-  
-v0.4.0:
-  
+
+### v0.4.0
+
 - First mature GUI.
-  
