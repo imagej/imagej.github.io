@@ -96,7 +96,8 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key key='left' %} {% include key key='right' %} {% include key key='up' %} {% include key key='down' %} | Rotate (with mouse: {% include key keys='Left Drag' %}) |
 | {% include key keys='shift|left' %} {% include key key='right' %} {% include key key='up' %} {% include key key='down' %} | Pan (with mouse: {% include key keys='Right Drag' %}) |
 | {% include key key='+' %} / {% include key key='-' %} | Zoom (with mouse: {% include key keys='Mouse Wheel' %}) |
-| {% include key keys='Double Click' %} | Toggle animation |
+| {% include key keys='Double Click' %} | Toggle animation (auto-detect rotation axis) |
+| {% include key keys='Shift|Double Click' %} | Toggle animation (force Z-axis rotation) |
 | {% include key keys='CTRL|Left Click' %} | Snap to top/side view |
 | {% include key key='A' %}        | Toggle <u>A</u>xes |
 | {% include key key='C' %}        | Toggle <u>C</u>amera Mode |

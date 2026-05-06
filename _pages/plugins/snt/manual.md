@@ -365,9 +365,9 @@ For the most part, the secondary layer remains hidden because feedback on the pa
 
 Secondary layers are created/load using the "Layers" drop-down menu in the _Interactive Tracing_ panel. The most common way to create a new layer is by calling the _Secondary Layer Creation Wizard_:
 
-The wizard needs two types of information from the user: The type of filtering operation and the size(s) (scale(s)) of the structures being traced, which control the spatial scale of the filter (known as σ).
+The wizard needs two types of information from the user: The type of filtering operation and the size(s) (scale(s)) of the structures being traced, which control the spatial scale of the filter (known as σ). For _Spectral Similarity_, σ values are replaced by a reference color vector (see details below).
 
-- **Filter** The filtering operation, including *Tubeness*, *Frangi*, *Gaussian blur* and *Median*:
+- **Filter** The filtering operation, including *Tubeness*, *Frangi*, *Gaussian blur*, *Median*, and *Spectral Similarity*:
   
   - **Tubeness** This corresponds to the _Hessian-based analysis_ of older SNT versions. This filter enhances tube-like structures in the image, using an improved [Tubeness](/plugins/tubeness) approach, modified to support multiple scale(s)
   
@@ -376,6 +376,8 @@ The wizard needs two types of information from the user: The type of filtering o
   - **Gaussian blur** Filter for noise removal, capable of gentle smoothing with some ability to preserve neurite edges, specially under small σ values.
   
   - **Median** Filter for noise removal able to preserve neurite edges. Note that _Median_ accepts only one σ value, i.e., a single scale.
+  
+  - **Spectral Similarity (Brainbow / Multichannel)** A filter designed for multichannel images in which neurites are labeled by multiple fluorophores such as Brainbow data. Instead of enhancing structural features, it computes how well each voxel's color (channel-intensity vector) matches a reference color derived from traced paths. The output combines cosine similarity (directional match) with an intensity factor (brightness match), producing a scalar map in [0, 1] where high values indicate voxels matching the target neuron's spectral signature. This filter does not require σ values: the _Scale(s)_ field is automatically set to "unused". See _Scale(s)_ below for how to define the reference color.
 
 - **Scale(s)** Also known as _sigma(s)_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
   
@@ -384,6 +386,8 @@ The wizard needs two types of information from the user: The type of filtering o
   - **Estimate programmatically...**: This allows automated estimation of radii across the image, which can inform the choice of scale(s). The only parameter required is *Dimmest intensity (approx.)*: Pixel values below this value are treated as background when computing thicknesses. Use -1 to adopt the default cutoff value (half of the image max). After pressing *OK*, a color-mapped image (based off local radius) and a histogram showing the distribution of radii across the image are shown. The histogram can be used to validate values chosen _visually_ in the preview palette.
     
     NB: Analysis is performed via the *Local Thickness (complete process)* plugin ({% include bc path='Analyze|Local Thickness|Local Thickness (complete process)' %} in Fiji's menu bar).
+  
+  NB: When _Spectral Similarity_ is selected, σ values are not applicable and the _Scale(s)_ field is set to "unused". Instead, the wizard needs a reference color vector. The button label changes to _"Now Select Path(s) Defining Avg. Color"_, and it operates in two modes: (1) Select one or more paths in the Path Manager, then press _Run_: the average color is computed from the selected paths. (2) Press _"Estimate Programmatically..."_ to compute the average color from all paths currently in the Path Manager. In both cases, the per-channel average intensities are displayed for verification before the similarity map is computed.
 
 NB: The wizard also allows you to use a backup copy of the image being traced as secondary layer. This is only useful if you intend to modify the original image during a tracing session, but want to have convenient access to the initial image at a later time.
 
@@ -953,6 +957,36 @@ This command sets fitting options and should be run before computing a fit. Opti
 
 <img align="right" width="550px" src="/media/plugins/snt/correct-radii.png" alt="Correct Radii..." title="Correct Radii..." />
 If the fitting fails at a certain location (e.g., because the shape of the cross-section is too irregular, or because the fitted centroid is too far off) the program will skip that node moving on to the next. Skipped nodes will retain their original coordinates but their radius may become unset (see _Radius fallback_ in [parameters](#parameters)). This command collects such nodes from selected paths, and assigns them new radii using linear interpolation based on remaining nodes with valid radii. It can apply the interpolation immediately, or simply preview it. Note that by default _NaN_ and negative values are always corrected. The criterion specified in the prompt is used as an extra correction condition.
+
+#### Multispectral Refinement...
+
+This command refines traced paths in multi-color labeled images such as Brainbow data. In such images, uneven overlap between fluorescent reporters can cause traces to deviate from the neurite's true centerline. The algorithm repositions nodes by scoring candidate positions around each node against a multi-criteria cost function that combines brightness, color fidelity, and cross-section compactness. It works in tandem with the [Spectral Similarity](#creating-secondary-layers) secondary layer: while the secondary layer improves the _tracing_ step by producing a scalar similarity map for A\* search, multispectral refinement improves the _post-hoc_ step by refining an already-traced path using the full channel-intensity vector.
+
+The refinement dialog groups its settings into several categories:
+
+- **Relative importance of matching criteria** Controls how much each criterion influences node placement. The algorithm repositions nodes to minimize a combined penalty based on brightness, color fidelity, and cross-section compactness. Each weight can be increased to make that criterion dominate:
+  - _Brightness importance_: How strongly voxels outside the expected brightness range are penalized. Higher values keep nodes in well-lit regions of the neurite
+  - _Color-match importance_: How strongly voxels whose hue differs from the reference color are penalized. Higher values keep nodes on the labeled neurite's spectral channel
+  - _Radius importance_: How strongly large radii are penalized, favoring tight cross-sections. Higher values prefer thinner fits; lower values allow wider ones
+
+- **Detection criteria** Define when a voxel is considered part of the neurite vs. background:
+  - _Color-match stringency_: How closely a voxel's color must match the neurite's reference color (0–1). Higher values are stricter, rejecting weakly colored voxels
+  - _Background sensitivity_: Fraction of dim voxels (in a local sphere) that flags a node as background (0–1). Lower values are more aggressive at discarding nodes in dim regions
+  - _Max. radius_: Largest cross-section radius tested during optimization (in physical units). As a rule of thumb, should be 2–3× the expected neurite thickness
+
+- **Reference color strategy** How the reference color vector is computed. Two modes are available:
+  - _Global_: A single reference color is computed per path from the average channel intensities of all its nodes. This is the default and works well for short paths or paths with consistent coloring
+  - _Sliding window_: The reference color is recomputed locally for each node using ±N neighboring nodes. This adapts to gradual color changes along long neurites where spectral drift is common. The _Window extent (±nodes)_ parameter controls how many neighbors on each side contribute to the local reference; larger values smooth more, smaller values track finer color shifts
+
+- **Signal intensity range** The expected brightness range of the neurite signal (summed across all channels). Can be auto-calibrated from the image bit-depth and number of channels, or specified manually. When auto-calibrating, the min/max fields are computed automatically and their manual values are ignored
+
+- **Brightness tolerance** How forgiving the brightness assessment is when deciding if a voxel belongs to the neurite. Dim neurites get a wider tolerance; bright neurites get a stricter one. The two parameters define the endpoints of this range:
+  - _Tolerance (bright signal)_: Strictest tolerance, applied to the brightest neurites
+  - _Tolerance (dim signal)_: Most permissive tolerance, applied to the dimmest neurites
+
+- **Global Options**
+  - _Auto-tune from traced paths_: Automatically adjusts max. radius, color-match stringency, and signal intensity range based on the actual path data. Manual values above are used as starting points and may be overridden per-path during refinement. This is recommended when processing many paths with varying properties.
+  - _No. of parallel threads_: Number of threads used during refinement. Defaults to the number available on your computer. Set to 0 to reset to the default.
 
 ### Fill ›
 
