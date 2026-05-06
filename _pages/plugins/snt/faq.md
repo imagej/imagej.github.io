@@ -105,6 +105,9 @@ Yes. Use {% include key key='ctlcmd|Shift|O' %} / {% include key key='ctlcmd|Alt
 ### How can I import an image sequence into SNT?
 Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {% include bc path='File| Import|Image Sequence' color='white'%} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {% include bc path='Image|Properties...' color='white'%}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {% include bc path='File|Save As|Tiff...' color='white'%}
 
+### Does SNT support brainbow-like images?
+Yes. See [Tracing in Multichannel (Brainbow) Images](./walkthroughs#tracing-in-multichannel-brainbow-images).
+
 ## Proofreading
 ### What is proofreading and curation?
 SNT provides two complementary approaches to reconstruction quality control:

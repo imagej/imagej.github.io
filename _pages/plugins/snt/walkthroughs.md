@@ -403,6 +403,57 @@ Currently, only the output images/CSV summary of fills are exported. TRACES file
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
+# Tracing in Multichannel (Brainbow) Images
+
+{% capture brainbow-demo%}
+You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Brainbow zebrafish larva_ dataset. This is a 2D, 3-channel confocal image in which individual neurons are distinguished by their unique combination of fluorescent proteins.
+{% endcapture %}
+{% include notice icon="info" content=brainbow-demo %}
+
+In multichannel-labeled images (such as Brainbow, Tetbow, or other combinatorial labeling), each neuron expresses a unique combination of fluorescent proteins, giving it a distinct color. Standard tracing approaches based on single-channel intensity can struggle in these images because multiple neurites of similar brightness but different color overlap in the same region. SNT provides two complementary tools for this: a **Spectral Similarity** secondary layer that improves path _tracing_, and **Multispectral Refinement** that improves path _positioning_ after tracing.
+
+## Step 1: Creating a Spectral Similarity Secondary Layer
+
+The idea is to produce a scalar image where voxels matching the target neuron's color are bright, and everything else is dark. The A* search then operates on this filtered image instead of the raw multichannel data.
+
+1. Trace a short path along the neuron of interest using standard tracing (see [Semi-automated Tracing](#semi-automated-tracing)). This initial path does not need to be perfect — it only needs to run along the target neuron so its average color can be computed. Prefer a path that is **long enough** to yield a reliable color average and that stays within a **single compartment** (e.g., all dendrites or all axons), as color hues can differ between compartments
+
+2. Open the _Secondary Layer Creation Wizard_ from the _Layers_ drop-down in the [Interactive Tracing panel](./manual#tracing-on-secondary-image-layer). Choose **Spectral Similarity (Brainbow / Multichannel)** as the filter. The _Scale(s)_ field will change to "unused" (σ values are not applicable to this filter)
+
+3. Click **Now Select Path(s) Defining Avg. Color**  and select the path(s) you just traced in the [Path Manager](/plugins/snt/manual#path-manager)
+
+4. Press **Run**. The wizard computes the average per-channel intensity from the selected path(s), displays it for verification, and generates the similarity map. Alternatively, press **Estimate Programmatically...** to compute the average color from _all_ paths in the Path Manager
+
+5. Enable **Trace/Fill on Secondary Layer** (shortcut: {% include key key='L' %}) to trace subsequent paths using the similarity map. The A* search should now follow the target neuron's spectral signature, hopefully ignoring neurites of other colors
+
+{% capture spectral-tip%}
+You can ping-pong between the original and secondary layer by pressing {% include key key='L' %} at any time. This is useful when the similarity map works well for some parts of the neuron but not others (e.g., dim regions where the color signal is weak).
+{% endcapture %}
+{% include notice icon="info" content=spectral-tip %}
+
+## Step 2: Refining Traced Paths with Multispectral Refinement
+
+Even with a spectral similarity layer, traced paths may not follow the exact centerline of the neuron, particularly where fluorescent reporters overlap unevenly. Multispectral Refinement corrects node positions using the full channel-intensity vector (not just the scalar similarity map).
+
+1. Select the path(s) to refine in the [Path Manager](/plugins/snt/manual#path-manager). Paths should be **long enough** for a reliable reference color (very short fragments will be automatically skipped)
+
+2. Run {% include bc path='Refine/Fit|Multispectral Refinement...' %} from the Path Manager menu. This opens the [parameter dialog](/plugins/snt/manual#multispectral-refinement), which groups settings into several categories:
+
+   - **Relative importance of matching criteria**: Controls how much brightness, color fidelity, and cross-section compactness influence node placement. Save existing paths and start with the defaults: Adjust as needed, reverting to the backup if needed
+   - **Detection criteria**: Sets the color-match stringency, background sensitivity, and maximum cross-section radius. If unsure, start with defaults and enable **Auto-tune from traced paths** (see below)
+   - **Reference color strategy**: Choose _Global_ for short paths with consistent coloring, or _Sliding window_ for long neurites where the color drifts gradually
+   - **Auto-tune**: When enabled, the algorithm estimates max radius, color-match stringency, and intensity thresholds from the actual path data. This is recommended when processing many paths or when you are unsure about suitable parameter values
+
+3. Press **OK** to run the refinement. The algorithm iteratively repositions each interior node to the lowest-cost candidate position, converging when no further improvement is found. Progress is logged to the console.
+
+4. Inspect the result. Refined paths should follow the neuron's centerline more closely. If the refinement is too aggressive or too conservative, adjust the weights or detection criteria and re-run.
+
+{% capture refine-tip%}
+Multispectral Refinement and standard [Fitting](/plugins/snt/manual#refinefit) serve different purposes: Fitting estimates radii and snaps nodes using single-channel cross-section analysis, while Multispectral Refinement uses the full color vector to handle the unique challenges of multicolor-labeled images. You can use both sequentially: e.g., refine positions with Multispectral Refinement first, then fit radii with standard Fitting afterward.
+{% endcapture %}
+{% include notice icon="info" content=refine-tip %}
+
+
 # Detecting Crossovers
 
 Described in [Curation](curation#detecting-crossovers).

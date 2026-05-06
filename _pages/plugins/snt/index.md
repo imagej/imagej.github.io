@@ -33,6 +33,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
 /media/plugins/snt/snt-soma-detection.png | Automated [soma detection](/plugins/snt/auto-tracing#soma-detection) (no thresholding required)
 /media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#snt-scripts) co-exist with graphical user interface operations
+/media/plugins/snt/snt-spectral-unmixing.png | Support for [Brainbow-like images](./walkthroughs#tracing-in-multichannel-brainbow-images)
 /media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
 /media/plugins/snt/snt-notebook.png | Scripting in native Python using [PySNT](https://pysnt.readthedocs.io/en/latest/)
 /media/plugins/snt/snt-delaunay-triangulation.png | Delaunay tessellation: Tracings can be used in [image processing routines](/plugins/snt/manual#process-)
