@@ -48,7 +48,7 @@ Install activating update sites:
 
 ## **Usage**:
 
-*FRETENATOR2 Segment and ratio* is a powerful plugin to quickly perform ratiometric analysis of 2D, 3D or 4D microscopy images,  with an new user interface and a live updating preview. The plugin performs full 3D segmentation of images, which means you don't analyse background, and does all the analysis, ready for you to plot and interpret. The algorithm can be used to analyse punctate sensors (e.g. nuclear localised) on a per object basis, or diffuse sensors (e.g. cytoplasmic) on a pixel by pixel basis, with guideline settings below. Saturated pixels are automatically removed. Settings can be saved and used for headless processing, or even batch (alpha).
+*FN2 Segment and ratio* is a powerful plugin to quickly perform ratiometric analysis of 2D, 3D or 4D microscopy images,  with an new user interface and a live updating preview. The plugin performs full 3D segmentation of images, which means you don't analyse background, and does all the analysis, ready for you to plot and interpret. The algorithm can be used to analyse punctate sensors (e.g. nuclear localised) on a per object basis, or diffuse sensors (e.g. cytoplasmic) on a pixel by pixel basis, with guideline settings below. Saturated pixels are automatically removed. Settings can be saved and used for headless processing, or even batch (alpha).
 
 • Results Table:    ◦ Includes the ratiometric calculation (emission ratio) your channel quantifications, and x, y, z positions. This can be saved as a .csv and then analysed in python, R or excel.
 
@@ -65,7 +65,7 @@ Install activating update sites:
 • Log:     ◦ Details of the image file and exact analysis settings used to keep with your metadata. Savable as a .txt file
 
 
-### **FRETENATOR2 SEGMENT AND RATIO TUTORIAL** 
+### **FN2 SEGMENT AND RATIO TUTORIAL** 
 
 https://www.youtube.com/watch?v=OdPR_2kKuzg
 
@@ -127,21 +127,17 @@ The "nearest point Z projection" option has outline drawing between segmented ob
 
 There are two background subtraction methods. Global mean subtraction, subtracts the average intensity of the are excluded from segmentation in each channel from each pixel before performing calculation - this is good for the global background signal that is present in many camera/detector types. Local label based subtraction will process each ROI object individually, subtracting the average intensity of nearby pixels in the excluded area surrounding it, which is good for global background as well as local background such as light scattering/autofluorescence.
 
-## **FRETENATOR2_Segment_and_ratio_BT (Alpha)**
-
-A specialised version of FRETENATOR2_Segment_and_ratio, developed for Tang et al 2025, which measures the fluorescence of an additional channel, in a dilated area surrounding and including the original ROI. This allows nearby fluorescence to be quantified and is included on the results table. Please select 'Local Label Based' from the "Background Subtraction Method" to use this functionality. This will be added as a new column to the results table.
-
-## **FRETENATOR2_SaR_Headless**
+## **FN2_SaR_Headless**
 
 Uses the last saved settings of FRETENATOR2_Segment_and_ratio, and performs analysis without opening a dialog box (faster).
 
 
-## **FRETENATOR2_SaR_Batch (alpha)**
+## **FN_SaR_Batch (alpha)**
 
 *Currently only reliable when run from the script editor* Uses the last saved settings of FRETENATOR2_Segment_and_ratio, and performs analysis on all images in a user defined folder, then exports the analysis into another user defined folder.
 
 
-## **FRETENATOR_Labeller (Beta)**
+## **FN_ROI_Labeller (Beta)**
 
 ### Implementation and usage
 
@@ -151,12 +147,17 @@ A follow on tool for after segmentations where users can categorise the ROI in t
 FRETENATOR ROI Labeller tutorial
 https://www.youtube.com/watch?v=EKXR4z5g8Pg
 
-## **FRETENATOR_Trackmate_Bridge (Alpha)**
+## **FN_Trackmate_Bridge (Alpha)**
 
 A simple plugin to allow **Trackmate 7** analysed label images (Analyse the FRETENATOR label map for tracking then export the tracked label map as dots) to be combined with **FRETENATOR_Segment_and_ratio** output. This adds TrackIDs to the results table and creats a new TrackID labelmap that can be analysed with the ROI manager.
 
 ![Stomata](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image29.gif)
 ![Stomata ROI labeled image after tracking with Trackmate](https://github.com/JimageJ/ImageJ-Tools/blob/master/images/labeled%20stomata.gif)
+
+## **FRETENATOR2_Segment_and_ratio_BT (Alpha)**
+
+A specialised version of FRETENATOR2_Segment_and_ratio, developed for Tang et al 2025, which measures the fluorescence of an additional channel, in a dilated area surrounding and including the original ROI. This allows nearby fluorescence to be quantified and is included on the results table. Please select 'Local Label Based' from the "Background Subtraction Method" to use this functionality. This will be added as a new column to the results table.
+
 
 ## **Troubleshooting**
 
