@@ -15,7 +15,7 @@ tags: snt,tracing,neuroanatomy,qc,ground-truth
 
 
 {% capture version%}
-**This page was last revised for [version 5.0.8](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice content=version %}
 
@@ -105,6 +105,16 @@ Flags sustained centripetal radius increases along a path. Since neurites genera
 A "run" is a consecutive sequence of nodes where each radius exceeds the previous.
 When a run's length meets or exceeds this threshold, a warning is produced.
 **Range:** 3–100 (no. of nodes)
+
+### Min. signal contrast ratio
+Measures how well each path stands out from the background in the image. At every node (excluding the first and last), a perpendicular cross-section is sampled using a Bresenham line that extends 3× the path radius (minimum 5 px) on each side.
+The sampled intensities are split by percentile: the lower quartile (P25) estimates background, the upper quartile (P75) estimates signal. The contrast ratio is defined as:
+
+$$\frac{\mathrm{median}(\text{signal}) + 1}{\mathrm{median}(\text{background}) + 1}$$
+
+A path whose median contrast ratio falls below this threshold is flagged. The +1 offset prevents division by zero and stabilizes the ratio for dim images. When set to **-1** (Auto), the threshold is computed automatically from the image's intensity range as $$\frac{I_{\max} + 1}{I_{\min} + 1} \times \frac{1}{2}$$, representing half of the best achievable contrast ratio for the image. The computed value is displayed in the spinner after the scan completes; use the undo button to reset to auto mode. This check requires an image to be loaded and image statistics to be computed.
+
+**Range:** -1 (auto) or 1.0–100.0
 
 
 ## Toolbar Actions
