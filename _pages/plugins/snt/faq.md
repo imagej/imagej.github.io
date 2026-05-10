@@ -57,7 +57,7 @@ When tracing 4D or 5D images, TRACES is preferable because the channel and/or ti
 | Presence                                     | Ubiquitous among reconstruction software. The *de facto* standard in data sharing                                                    | Exclusive to SNT. But [open and easily parsable](/plugins/snt/extending#traces-file-format) |
 
 ### Which file formats for neuronal reconstruction are supported by SNT?
-SNT can read TRACES, SWC, NDF (NeuronJ data format), and JSON files (as used by the [MouseLight](https://ml-neuronbrowser.janelia.org/) project). Other file formats can be converted to [SWC](#swc) using [xyz2swc](https://neuromorpho.org/xyz2swc/ui/).
+SNT can read TRACES, SWC, NDF (NeuronJ data format), JSON files (as used by the [MouseLight](https://ml-neuronbrowser.janelia.org/) project), and [Neurolucida XML](https://neuromorphological-file-specification.readthedocs.io/) (MBF Bioscience's Neuromorphological File Specification). Neurolucida XML files support both tree structures and markers. Other file formats can be converted to [SWC](#swc) using [xyz2swc](https://neuromorpho.org/xyz2swc/ui/).
 
 ### My neuronal reconstructions are saved under a format that is not supported. How can I open them?
 Unsupported and proprietary file formats can be converted to [SWC](#swc) using [xyz2swc](https://neuromorpho.org/xyz2swc/ui/).

@@ -14,7 +14,7 @@ tags: snt,tracing,neuroanatomy,maxima
 
 
 {% capture version%}
-**This page was last revised for [version 5.0.7](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice content=version %}
 
@@ -68,6 +68,37 @@ The annular search region used by the Peripath Detector can also be exported as 
 Note that the mask is a voxel-level approximation of the continuous search annulus; small gaps may appear due to discretization. A morphological closing operation can be applied to fill these if a contiguous volume is needed.
 
 See {% include bc path='Scripts|Demos|Peripath Detection Demo' %} ({% include bc path='Templates|Neuroanatomy|Analysis|Peripath Detection Demo' %} in the Script Editor) for a working example that runs detection and generates the torus mask on one of the demo datasets.
+
+
+## Along-Path Detection (Radius Swellings)
+
+SNT can also detect swellings (boutons, varicosities, blebs) **along** traced paths using the _Along-Path Detector_, which analyzes longitudinal radius profiles. The algorithm works as follows:
+- At each node, the node radius is compared to the average radius of its neighbors within a sliding window
+- A node is flagged as a swelled candidate when its radius exceeds the neighbor average by a configurable factor
+- Optionally, a intensity (brighness) threshold can filter candidates further
+- Adjacent candidates are merged via non-maximum suppression
+
+Unlike the Peripath Detector (which searches for bright *off-skeleton* [outside path centerline] maxima in perpendicular cross-sections), the Along-Path Detector identifies *on-skeleton* [along path centerline] swellings, i.e., regions where the neurite itself is wider than its surroundings. This is particularly suited for axonal varicosities and en-passant boutons.
+
+To run {% include bc path='Analyze|Spines/Varicosities|Detect Swellings Along Paths...' %} Select the path(s) of interest. Note that **Paths must have radii**: Paths without radii are skipped. 
+
+The command's dialog provides the following parameters:
+
+- **Swelling factor** A node is flagged when its radius exceeds the average of its neighbors by at least this factor. Default: 1.5 (i.e., 1.5× the local average). Lower values increase sensitivity; higher values restrict detection to more prominent swellings
+
+- **No. of neighbors** Total number of neighboring nodes used to compute the local average radius, split evenly on each side of the test node. Default: 10. Larger values smooth out local noise but may miss closely spaced features
+
+- **Min. intensity** Minimum on-skeleton (centerline) intensity for a detection to be accepted. Three modes: **0** disables intensity filtering (radius-only detection); **-1** auto-computes a threshold as the midpoint of the image's dynamic range; any **positive value** sets an explicit threshold in image intensity units
+
+- **Intensity channel** The image channel for intensity sampling (1-based; only shown for multi-channel images and when intensity filtering is enabled)
+
+- **Merging distance** Minimum separation between detections in physical units. Nearby detections are merged, keeping the one with the highest score. Set to 0 for automatic (defaults to 2× mean radius across all paths)
+
+- **Exclude junctions/tips** When enabled, nodes near branch points and path tips are excluded from detection. These regions may have naturally enlarged radii that produce false positives. The exclusion zone extends by the half-window size on each side of every junction and at each path endpoint. Default: enabled
+
+- **Output** Results can be exported as _ROIs_ (added to the ROI Manager, grouped per path) or as _Bookmarked locations_ (added to the [Bookmark Manager](/plugins/snt/manual#bookmarks-tab))
+
+Detected counts are automatically assigned to each path's spine/varicosity tally, just as with the Peripath Detector.
 
 
 ## Manual Annotation
