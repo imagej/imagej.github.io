@@ -9,7 +9,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.8](https://github.com/morphonets/SNT/releases)**.<br>
+**This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -67,7 +67,7 @@ In either scenario. You should toggle the *validate spatial calibration* checkbo
 
 Imports of neuronal reconstructions from multiple sources, including:
 
-- **{% include bc path='Local Files' %}** [TRACES](/plugins/snt/faq#in-which-format-should-i-save-my-tracings-traces-or-swc), [SWC](/plugins/snt/faq#what-is-a-swc-file) (single files or bulk import of a directory of files), NDF ([NeuronJ](/plugins/neuronj) data format), or JSON.
+- **{% include bc path='Local Files' %}** [TRACES](/plugins/snt/faq#in-which-format-should-i-save-my-tracings-traces-or-swc), [SWC](/plugins/snt/faq#what-is-a-swc-file) (single files or bulk import of a directory of files), NDF ([NeuronJ](/plugins/neuronj) data format), JSON, or [Neurolucida XML](https://neuromorphological-file-specification.readthedocs.io/) (MBF Bioscience). Neurolucida files import both tree structures and markers (loaded as [bookmarks](#bookmarks-tab)).
 
 - **{% include bc path='Remote Databases' %}** Import of neuronal reconstructions from [FlyCircuit](http://www.flycircuit.tw/), [InsectBrain](https://insectbraindb.org/app/), [MouseLight](https://ml-neuronbrowser.janelia.org/), and [NeuroMorpho](http://neuromorpho.org/).
 
@@ -554,6 +554,12 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
 
 - Use the {% include bc path='Export' %} button to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
 
+The right-click contextual menu of the Bookmark Manager also provides commands for consolidating bookmarks:
+
+- **{% include bc path='Colocalize...' %}** Matches bookmarks across different channels within a specified distance threshold, replacing matched groups with their centroids. This is useful for identifying co-labeled structures in multichannel images. Only bookmarks from different channels are matched.
+
+- **{% include bc path='Merge...' %}** Merges nearby bookmarks within each channel independently, replacing clustered bookmarks with their centroids. This is useful for consolidating redundant or overlapping bookmarks that were placed on the same structure within a single channel.
+
 
 ## 3D Tab
 
@@ -839,6 +845,10 @@ Assigns the no. of markers (e.g., spines or varicosities) to be associated to se
 
 Simplifies paths by reducing their node density. Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s) (undoable operation).
 
+#### Correct Z-Shrinkage...
+
+Corrects Z-axis shrinkage from tissue processing (e.g., histological sectioning and mounting). The command prompts for a correction factor, typically the ratio of *cut thickness / mounted thickness*. Values greater than 1 expand Z coordinates; values less than 1 compress them. If an image is loaded, a warning is displayed when corrected nodes would fall outside image bounds. This operation cannot be undone.
+
 #### Rebuild...
 
 Analyzes and rebuilds path relationships to fix structural issues. The command first scans all paths for problems, then offers to rebuild if issues are found. Detected issues include:
@@ -1099,7 +1109,12 @@ NB:
 
 #### Spines/Varicosities ›
 
-This menu contains commands tools for analyzing at manually placed markers along paths such as dendritic spines or axonal varicosities. The starting point for such analyses are multipoint ROIs placed along paths. These are detailed in [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities).
+This menu contains tools for detecting and analyzing spines, varicosities, boutons, and other features along or around traced paths. It includes two automated detectors and tools for working with manual annotations:
+- **Detect Maxima Around Paths...**: Detection of intensity peaks in perpendicular cross-sections outside the path centerline (off-skeleton)
+- **Detect Swellings Along Paths...**: Detection of radius swellings along the neurite centerline (on-skeleton)
+- **Commands for handling manually placed markers**
+
+These tools are detailed in [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities).
 
 #### Time-lapses ›
 
