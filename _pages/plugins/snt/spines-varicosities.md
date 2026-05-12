@@ -1,15 +1,15 @@
 ---
-title: SNT › Spine/Varicosity Analysis
+title: SNT › Spine/Varicosity/Label Analysis
 nav-links: true
-nav-title: Spines/Varicosities
-name: Spine/Varicosity Analysis
-categories: [Maxima,Analysis,Neuroanatomy]
+nav-title: Spines/Varicosities/Labels
+name: Spine/Varicosity/Label Analysis
+categories: [Maxima,Analysis,Neuroanatomy,Labels]
 artifact: org.morphonets:SNT
 icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
 doi: 10.1038/s41592-021-01105-7
-tags: snt,tracing,neuroanatomy,maxima
+tags: snt,tracing,neuroanatomy,maxima,labels,segmentation
 ---
 
 
@@ -18,7 +18,7 @@ tags: snt,tracing,neuroanatomy,maxima
 {% endcapture %}
 {% include notice content=version %}
 
-# Spine/Varicosity Analysis
+# Spine/Varicosity/Label Analysis
 
 {% capture spot-spine%}
 Currently, SNT supports detection, annotation, and density analysis of bright puncta around paths. Complete shape analysis of dendritic spines can be performed using [Spot Spine](/plugins/spot-spine).
@@ -34,12 +34,12 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 
 1. Choose a neurite of interest. Adjust cursor size to the neurite thickness using {% include key keys='Ctrl|Mouse Wheel' %}
 2. Trace a small path (finish it by {% include key keys='Double Click' %})
-3. Run {% include bc path='Analyze|Spines/Varicosities|Detect Maxima Around Paths...' %}
+3. Run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Maxima Around Paths...' %}
 
 {% endcapture %}
 {% include notice icon="tip" content=maxima-demo %}
 
-To run {% include bc path='Analyze|Spines/Varicosities|Detect Maxima Around Paths...' %}, select first the path(s) of interest (or none to include all). The command's dialog provides the following parameters:
+To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Maxima Around Paths...' %}, select first the path(s) of interest (or none to include all). The command's dialog provides the following parameters:
 
 - **Detection channel** The image channel to analyze (1-based; only for multi-channel images)
 
@@ -80,7 +80,7 @@ SNT can also detect swellings (boutons, varicosities, blebs) **along** traced pa
 
 Unlike the Peripath Detector (which searches for bright *off-skeleton* [outside path centerline] maxima in perpendicular cross-sections), the Along-Path Detector identifies *on-skeleton* [along path centerline] swellings, i.e., regions where the neurite itself is wider than its surroundings. This is particularly suited for axonal varicosities and en-passant boutons.
 
-To run {% include bc path='Analyze|Spines/Varicosities|Detect Swellings Along Paths...' %} Select the path(s) of interest. Note that **Paths must have radii**: Paths without radii are skipped. 
+To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Swellings Along Paths...' %} Select the path(s) of interest. Note that **Paths must have radii**: Paths without radii are skipped. 
 
 The command's dialog provides the following parameters:
 
@@ -101,6 +101,33 @@ The command's dialog provides the following parameters:
 Detected counts are automatically assigned to each path's spine/varicosity tally, just as with the Peripath Detector.
 
 
+## Label Proximity Detection
+
+SNT can detect **contact points** between traced paths and labeled surfaces from a segmentation image using the _Label Proximity Detector_. This is useful for identifying where neurites approach or contact structures segmented by tools such as [Labkit](/plugins/labkit), [Weka](/plugins/tws), cellpose, or similar. The detector computes a calibrated Euclidean Distance Transform (EDT) for each unique label in the image, then identifies path nodes that are within a configurable distance of a label boundary.
+
+To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Label Proximity...' %}, select the path(s) of interest and ensure a label (segmentation) image is open in ImageJ. The label image should contain non-negative integer values, with 0 as background and each non-zero value identifying a distinct structure.
+
+The command's dialog provides the following parameters:
+
+- **Label image** A drop-down listing all open images that pass label-image validation (non-negative integers, bounded number of classes). Images whose spatial dimensions do not match the tracing image are excluded. Hyperstacks are also excluded (only the first channel/frame would be considered)
+
+- **Distance threshold** Maximum distance (in calibrated units) from a label boundary for a path node to be flagged as a contact point. Two modes are available: when set to a **positive value**, all nodes within that distance of any label boundary are detected (_threshold mode_); when set to **0**, only the single closest node per path–label pair is detected (_closest-approach mode_). Default: 0
+
+- **Merging distance** Minimum separation between detections in physical units. Nearby detections are merged, keeping the one closest to the label boundary. Set to 0 to disable merging
+
+- **Output** Results can be exported as _Bookmarked locations_ (added to the [Bookmark Manager](/plugins/snt/manual#bookmarks-tab)) or as _ROIs_ (added to the ROI Manager, grouped per path with path name and color)
+
+{% capture label-note %}
+The label image and the tracing image should share the same spatial dimensions and calibration. If dimensions differ, a warning is displayed but detection proceeds. The EDT is computed using the label image's pixel spacing, so results are in calibrated (physical) units.
+{% endcapture %}
+{% include notice icon="info" content=label-note %}
+
+{% capture label-relation %}
+Label proximity detection is complementary to [Delineation Analysis](/plugins/snt/delineations): while delineations measure _how much_ of a path lies within a labeled region (length, node counts, distance-to-boundary statistics), the Label Proximity Detector identifies _specific points_ where paths approach or contact labeled structures, emitting navigable bookmarks or ROIs at those locations.
+{% endcapture %}
+{% include notice icon="info" content=label-relation %}
+
+
 ## Manual Annotation
 
 This approach uses manually placed multi-Point ROIs along paths as markers for neurite features. Currently only counts and densities are supported. A typical workflow proceeds as follows:
@@ -110,10 +137,10 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 {% endcapture %}
 {% include notice icon="tip" content=spines-demo %}
 
-1. Run {% include bc path='Analyze|Spines/Varicosities|Spine/Varicosity Analysis Help...' %} in the Path Manager to have offline instructions available in a dedicated dialog
+1. Run {% include bc path='Analyze|Spine/Varicosities/Labels|Spine/Varicosity Analysis Help...' %} in the Path Manager to have offline instructions available in a dedicated dialog
 2. Pause SNT from the [contextual menu](/plugins/snt/manual#contextual-menu), and select the multipoint tool from ImageJ's toolbar
 3. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) as the feature being counted. Skip this step if you are running a programmatic routine that automatically annotates locations
-4. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spines/Varicosities|Compute Densities from Annotations...' %}. The dialog allows you to specify:
+4. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosities/Labels|Compute Densities from Annotations...' %}. The dialog allows you to specify:
    
     - **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager. It also allows [bookmarked locations](/plugins/snt/manual#bookmarks-tab) to be parsed as markers
    

@@ -9,12 +9,12 @@ icon: /media/icons/snt.png
 forum-tag: snt
 update-site: Neuroanatomy
 doi: 10.1038/s41592-021-01105-7
-tags: snt,tracing,neuroanatomy,contours
+tags: snt,tracing,neuroanatomy,contours,labels,segmentation
 ---
 
 
 {% capture version%}
-**This page was last revised for [version 5.0.6](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice content=version %}
 
@@ -63,6 +63,32 @@ ROIs generated programmatically or in bulk outside SNT can be applied in a singl
 Delineations can also be created from [neuropil annotations](/plugins/snt/analysis#atlas-based-analysis) using the _Import Assignments from Atlas Annotation_ option from the Options (gear) menu. In this case delineations are created from selected brain compartments associated with the cell(s) being analyzed. Note that this requires cells to be tagged by atlas annotations. Currently only cells downloaded directly from the MouseLight database fulfill this criterion.
 
 
+## Creating Delineations from Label Images
+Delineations can be imported from segmentation (label) images produced by tools such as [Labkit](/plugins/labkit), [Weka](/plugins/tws), [cellpose](https://cellpose.readthedocs.io/en/latest/), or similar. Each unique non-zero integer value in the label image becomes a delineation, with path nodes assigned to whichever label they overlap. To import:
+
+1. Open the label image in Fiji. The image should contain non-negative integer pixel values, with 0 as background. Its spatial dimensions must match those of the tracing image
+
+2. In the Delineations tab, choose _Import Assignments from Label Image_ from the Options (gear) menu
+
+3. If multiple candidate images are open, a dialog allows you to choose which one to import. Hyperstacks are excluded; only the first channel/frame of multi-dimensional images is considered
+
+Each label value is mapped to a new delineation entry. Path nodes whose coordinates fall within a labeled region are assigned to the corresponding delineation. Nodes outside all labels remain non-delineated.
+
+{% capture label-validation %}
+SNT validates the selected image before importing: it must contain only non-negative integers with a bounded number of unique classes (≤ 500). If the image dimensions do not match the tracing image, a warning is displayed. Nodes whose coordinates fall outside the label image bounds are skipped.
+{% endcapture %}
+{% include notice icon="info" content=label-validation %}
+
+
+## Exporting Delineations as Label Images
+Delineation assignments can be exported back to a label image using _Export Assignments to Label Image_ from the Options (gear) menu. This generates a new image in which each voxel within a traced neurite is labeled by its delineation assignment. The export uses tube-based rasterization, filling each path's volume based on node radii. Each delineation is assigned a unique positive integer label; background voxels remain zero. This is useful for visualizing delineation assignments in 3D, or for downstream analysis in other tools.
+
+{% capture export-note %}
+Export requires paths to have delineation assignments. If all assignments were made via ROIs or atlas annotations (rather than from a label image), the export still works: it rasterizes whatever assignments exist. The output is a 16-bit image; if there are more than 65,535 unique labels, values may overflow.
+{% endcapture %}
+{% include notice icon="info" content=export-note %}
+
+
 ## Editing Delineations
 To re-define a delineation it is sufficient to re-define or re-adjust an existing ROI and press the _Assign_ button. The Options (gear) menu lists commands for rebuilding, restoring, and deleting delineations. Most of the editing operations can be performed through the toolbar at the bottom of the delineations list, including:
 - <i class="fas fa-plus"></i> Adds more entries to the delineations list
@@ -77,7 +103,7 @@ To re-define a delineation it is sufficient to re-define or re-adjust an existin
 Measurements are retrieved using the <i class="fas fa-chart-bar"></i> _Plot_ and <i class="fas fa-table"></i> _Measure_ buttons:
 
 - <i class="fas fa-chart-bar"></i> _Plot_: Plots distributions of selected metrics. Plotting styles include: Box plots (one delineation per category), multi-series histograms (one delineation per series), or a montage of single-series histograms (one panel per delineation)
-- <i class="fas fa-table"></i> _Measure_: Reports common metrics to a dedicated table (Total length, No. of nodes, No. of junctions, etc.) across delineations
+- <i class="fas fa-table"></i> _Measure_: Reports common metrics to a dedicated table (Total length, No. of nodes, No. of junctions, etc.) across delineations. When delineations were imported from a label image, the table includes additional distance-to-boundary statistics computed via calibrated Euclidean Distance Transforms (EDT): _Mean dist. to boundary_, _Min dist. to boundary_, _Max dist. to boundary_, and _Fraction inside_ (the proportion of nodes with zero distance, i.e., fully contained within the label). These columns are only populated for label-image-based delineations
 
 In addition to defined delineations, plots and tables may include two other categories:
 
@@ -86,3 +112,8 @@ In addition to defined delineations, plots and tables may include two other cate
 - _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors
 
 {% include notice icon="info" content="Topological constraints may not allow certain metrics to be computed for a particular delineation. E.g., a metric that requires a [graph-theoretic tree](./analysis#graph-based-analysis) may not be computed for a delineation defined by a non-contiguous ROI." %}
+
+{% capture proximity-relation %}
+Delineation analysis measures _aggregate_ properties of paths within labeled regions (lengths, node counts, distance statistics). To identify _specific contact points_ where paths approach or touch labeled structures, use the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity-detection), which emits navigable bookmarks or ROIs at individual contact locations.
+{% endcapture %}
+{% include notice icon="info" content=proximity-relation %}
