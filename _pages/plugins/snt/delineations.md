@@ -98,6 +98,19 @@ To re-define a delineation it is sufficient to re-define or re-adjust an existin
 - _Outside color_ widget: Defines the color for non-delineated sections, i.e., those sections that remain _outside_ delineated areas
 
 
+## Hierarchical Labels and Level-split Analysis
+
+Delineation names support hierarchical labeling using the `::` separator. For example, naming three delineations `Cortex::L1`, `Cortex::L2/3`, and `Cortex::L5` encodes both the parent region (Cortex) and the individual layers. This convention is particularly useful for atlas-imported delineations, where compartments are naturally hierarchical.
+
+When hierarchical labels are present, the _Measure_ and _Plot_ commands prompt for a **grouping level** before running the analysis. This allows measurements to be aggregated at different levels of granularity without redefining the delineations themselves. For example, with delineations named `Cortex::L1::proximal`, `Cortex::L1::distal`, and `Cortex::L2/3`:
+
+- **Level 1** groups everything under `Cortex` into a single entry
+- **Level 2** groups by layer (`Cortex::L1` combines proximal and distal; `Cortex::L2/3` remains separate)
+- **Level 3 (full)** reports each delineation individually
+
+The level-split prompt only appears when at least one delineation name contains the `::` separator. The _Non-delineated_ and _Unaffected paths_ categories always pass through unchanged regardless of the chosen level.
+
+
 ## Measuring Delineations
 
 Measurements are retrieved using the <i class="fas fa-chart-bar"></i> _Plot_ and <i class="fas fa-table"></i> _Measure_ buttons:

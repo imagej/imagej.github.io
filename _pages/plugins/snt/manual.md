@@ -202,6 +202,11 @@ See [Analysis › Strahler Analysis](/plugins/snt/analysis#strahler-analysis).
 
 #### Utilities
 
+#### Ontology Browser...
+Opens a standalone reference window for browsing brain-region ontologies (currently Allen CCF and Drosophila FBbt). The browser is intended for quickly looking up an acronym or ID while tracing or analyzing data.
+
+The browser is shared across ontology-aware features in SNT, including the [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)'s atlas navigator and the [Delineations tab](#delineations-tab) when using atlas annotations.
+
 #### Create Dendrogram
 Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
 
