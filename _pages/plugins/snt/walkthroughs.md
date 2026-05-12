@@ -231,8 +231,8 @@ Use Path Orientation (hold {% include key keys='O' %}) to verify path orientatio
 Described in [Auto-tracing](/plugins/snt/auto-tracing).
 
 
-# Spine/Varicosity Analysis
-Described in [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities).
+# Spine/Varicosity/Label Analysis
+Described in [Spine/Varicosity/Label Analysis](/plugins/snt/spines-varicosities).
 
 
 # Delineation Analysis

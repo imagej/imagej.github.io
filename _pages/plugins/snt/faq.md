@@ -129,7 +129,7 @@ See [Sholl Analysis › FAQ](./sholl#faq).
 ## Spine Analysis
 
 ### Does SNT support spine analysis?
-See [Spine/Varicosity Analysis](./spines-varicosities). In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
+See [Spine/Varicosity/Label Analysis](./spines-varicosities). In-depth quantification of spine morphology can be done using [Spot Spine](/plugins/spot-spine), after tracing dendrites in SNT.
 
 
 ## Soma Analysis

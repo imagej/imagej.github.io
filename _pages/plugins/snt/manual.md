@@ -202,6 +202,11 @@ See [Analysis › Strahler Analysis](/plugins/snt/analysis#strahler-analysis).
 
 #### Utilities
 
+#### Ontology Browser...
+Opens a standalone reference window for browsing brain-region ontologies (currently Allen CCF and Drosophila FBbt). The browser is intended for quickly looking up an acronym or ID while tracing or analyzing data.
+
+The browser is shared across ontology-aware features in SNT, including the [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)'s atlas navigator and the [Delineations tab](#delineations-tab) when using atlas annotations.
+
 #### Create Dendrogram
 Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
 
@@ -538,7 +543,7 @@ Described in [Curation Assistant](./curation#curation-assistant).
 
 ## Bookmarks Tab
 
-This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities). The basic usage is as follows:
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities) or as output from the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity-detection). The basic usage is as follows:
 
 <img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
@@ -839,7 +844,7 @@ Assigns a constant radius to all the nodes of selected Path(s). This setting onl
 
 #### Specify No. Spine\Varicosity Markers...
 
-Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities)).
+Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity/Label Analysis](/plugins/snt/spines-varicosities)).
 
 #### Ramer-Douglas-Peuker Downsampling...
 
@@ -1107,14 +1112,15 @@ NB:
 
 - *Integration metric* The statistics (Mean, Median, Sum, etc.) integrating pixel intensities within *shape*.
 
-#### Spines/Varicosities ›
+#### Spine/Varicosities/Labels ›
 
-This menu contains tools for detecting and analyzing spines, varicosities, boutons, and other features along or around traced paths. It includes two automated detectors and tools for working with manual annotations:
+This menu contains tools for detecting and analyzing spines, varicosities, boutons, and other features along or around traced paths, as well as proximity contacts with labeled structures from segmentation images. It includes three automated detectors and tools for working with manual annotations:
 - **Detect Maxima Around Paths...**: Detection of intensity peaks in perpendicular cross-sections outside the path centerline (off-skeleton)
 - **Detect Swellings Along Paths...**: Detection of radius swellings along the neurite centerline (on-skeleton)
+- **Detect Label Proximity...**: Detection of contact points between paths and labeled surfaces from a segmentation image (e.g., from [Labkit](/plugins/labkit), [Weka](/plugins/tws), or cellpose). Computes calibrated distance transforms for each label and identifies path nodes within a configurable distance threshold. Supports both threshold mode (all nodes within distance) and closest-approach mode (one detection per path–label pair)
 - **Commands for handling manually placed markers**
 
-These tools are detailed in [Spine/Varicosity Analysis](/plugins/snt/spines-varicosities).
+These tools are detailed in [Spine/Varicosity/Label Analysis](/plugins/snt/spines-varicosities).
 
 #### Time-lapses ›
 
