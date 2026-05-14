@@ -1,12 +1,11 @@
 ---
-mediawiki: Updater
 title: Updater
 categories: [ImageJ2]
 artifact: net.imagej:imagej-updater
 project: /software/imagej2
 ---
 
-The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
+The ImageJ Updater plugin is part of the [ImageJ2 component suite](/software/imagej2) (*not* the [original ImageJ](/software/imagej)), and is bundled with [Fiji](/software/fiji). Its purpose is to keep all of your components up to date: i.e. the macros, scripts, plugins and core libraries needed by the plugins.
 
 The ImageJ Updater can handle [3rd-party update sites](#adding-update-sites), i.e. anybody can set up their own update site which users can follow.
 
@@ -14,9 +13,9 @@ The ImageJ Updater can handle [3rd-party update sites](#adding-update-sites), i.
 
 The Updater is a mechanism to update individual packages. It is automatically run when all the following conditions are met:
 
--   ImageJ was just started
--   ImageJ was started without parameters (i.e. no Drag 'n Drop onto the ImageJ icon)
--   ImageJ's files can be updated by the current user
+-   Fiji was just started
+-   Fiji was started without parameters (i.e. no Drag 'n Drop onto the Fiji icon)
+-   Fiji's files can be updated by the current user
 -   There is a network connection
 
 If there were updates since the Updater was run the last time, the user will be asked whether you want to run the Updater now or later:
@@ -35,7 +34,7 @@ The Updater has two modes, the *Easy Mode* and the *Advanced Mode*. In the easy 
 
 ![Updater easy mode](/media/plugins/updater-easy-mode.png)
 
-For technical reasons, a restart of ImageJ is required before the changes take effect. You can read about technical details [here](/develop/uploading-plugins).
+For technical reasons, a restart of Fiji is required before the changes take effect. You can read about technical details [here](/develop/uploading-plugins).
 
 ### Resolve dependencies
 
@@ -75,21 +74,21 @@ You can also [set up and populate your own update site](/update-sites/setup).
 
 It is possible to drive the Updater through the command-line option `--update`. If you call that without arguments, it will show you what subcommands are available:
 
-    ./ImageJ-<platform> --update
+    fiji --update
 
 The simplest usage is to update either single files:
 
-    ./ImageJ-<platform> --update update jars/ij.jar plugins/Simple_Neurite_Tracer.jar
+    fiji --update update jars/ij.jar plugins/Simple_Neurite_Tracer.jar
 
 or all files that would be marked for update in the interactive Updater by default:
 
-    ./ImageJ-<platform> --update update
+    fiji --update update
 
 If you configured upload sites, you can also use the command-line version of the Updater to upload files:
 
-    ./ImageJ-<platform> --update upload plugins/My_New_Cool_Plugin.jar
+    fiji --update upload plugins/My_New_Cool_Plugin.jar
 
-The full list of options available when running ImageJ from command line looks like this:
+The full list of options available when running Fiji from command line looks like this:
 
     Commands:
         diff [ --list-files | --javap | --class-file-diff | --hex-diff ] [<files>]
@@ -114,17 +113,16 @@ The full list of options available when running ImageJ from command line looks l
 
 In order to update from command line using a specific update site (for example the BAR) use the following command:
 
-    ./ImageJ-<platform> --update add-update-sites "BAR" "https://sites.imagej.net/Tiago/"
+```shell
+fiji --update add-update-site "BAR" "https://sites.imagej.net/Tiago/"
+fiji --update update
+```
 
-## Bootstrapping the updater
+You can also add multiple update sites in a single command line:
 
-If you do not have ImageJ yet, you can download [bootstrap.js](http://update.imagej.net/bootstrap.js) and run it like this:
-
-    jrunscript bootstrap.js help
-
-This uses the **jrunscript** executable of your Java installation to run the Javascript file tracked in ImageJ's {% include github org='imagej' repo='imagej-updater' branch='master' path='bin/bootstrap.js' label='source code repository' %}.
-
-The `bootstrap.js` script was originally intended to fix broken [Fiji](/software/fiji) installations, and was subsequently enhanced to initialize the updater in an ImageJ 1.x-only directory -- or even from a complete fresh state.
+```shell
+fiji --update add-update-sites "BAR" "https://sites.imagej.net/Tiago/" "IJPB-plugins" "https://sites.imagej.net/IJPB-plugins/"
+```
 
 ## History
 
@@ -134,9 +132,9 @@ In the course of one of two successful Google Summer of Code projects, the updat
 
 Johannes Schindelin got stuck with the maintainership and introduced third-party update sites (a feature that many claimed to desire, though no pinky was harmed by contributing any code) in the course of a very successful [hackathon](/events/hackathons#imagej-hackathons) at the Lawrence Berkeley National Laboratory in October 2010 and another one in February 2011 hosted by [LOCI](/orgs/loci).
 
-As of September 2012, the Fiji Updater has moved to [ImageJ2](/software/imagej2). Details can be found in the announcement: [2012-09-14 - The Updater moved](/news/2012-09-14-the-updater-moved).
+In September 2012, the Fiji Updater moved to [ImageJ2](/software/imagej2). Details can be found in the announcement: [2012-09-14 - The Updater moved](/news/2012-09-14-the-updater-moved).
 
 ## Related links
 
-* Schematics of the [updater inner working](/develop/updaterv1)
+* Schematics of the [Updater inner workings](/develop/updaterv1)
 * [Headless scripting](/scripting/headless)

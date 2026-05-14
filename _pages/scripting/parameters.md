@@ -6,7 +6,7 @@ project: /software/imagej2
 
 All scripting languages have access to a universal `#@parameter` notation for declaring inputs and outputs. This approach is preferred over the original [ImageJ](/software/imagej)'s [GenericDialog](/scripting/generic-dialog) because it is totally agnostic of the user interface, allowing such scripts to run in a variety of contexts. As with [ImageJ2 plugins](/develop/plugins), script parameterization is based on the [SciJava](/libs/scijava) [parameter annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java)—so experience with plugin writing directly translates to scripting, and vice versa.
 
-{% include notice icon="info" content='Script parameters are a feature of [ImageJ2](/software/imagej2); they will not work in the original [ImageJ](/software/imagej). The [Fiji](/software/fiji) distribution of ImageJ is built on ImageJ2, so they also work in Fiji.' %}
+{% include notice icon="fiji" content='Script parameters are a feature of [Fiji](/software/fiji); they will not work in the original [ImageJ](/software/imagej).' %}
 
 ## Basic syntax
 
@@ -19,7 +19,7 @@ The rules for `#@` parameter use are as follows:
 
 1.  Parameter declarations begin with `#@`. Each such line contains a single parameter declaration or script directive and nothing else.
 2.  `#@ Type variableName` will declare an input of the indicated type, assigned to the specified name. (The use of a space between `#@` and `Type` is encouraged, but not required.)
-3.  `#@output Type outputName` will declare the variable of the specified name as an output parameter with the given type. The `Type` parameter is optional, as the output will be treated as `Object` be default. (For the `output` directive and other script directives, no space is allowed between `#@` and the directive.)
+3.  `#@output Type outputName` will declare the variable of the specified name as an output parameter with the given type. The `Type` parameter is optional, as the output will be treated as `Object` by default. (For the `output` directive and other script directives, no space is allowed between `#@` and the directive.)
 
 For example, if we look at the [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py) [template](/scripting/templates) supplied with Fiji:
 

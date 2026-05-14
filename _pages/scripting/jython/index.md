@@ -1,33 +1,29 @@
 ---
-mediawiki: Jython_Scripting
 title: Jython Scripting
 section: Extend:Scripting:Languages
 project: /software/imagej2
 ---
 
-{% include notice content="This page describes how to write scripts in
-  **Jython**, the JVM-based flavor of Python. To call ImageJ functions
-  from Python programs, see [PyImageJ](/scripting/pyimagej)." %}
+{% include notice content="This page describes how to write [SciJava scripts](/scripting/basics) in
+  **Jython**, the JVM-based flavor of Python. Jython is one of several Python options in the
+  [ImageJ ecosystem](/scripting#terminology) — see the [Python page](/scripting/python)
+  for a comparison of all of them. To call ImageJ2 functions from CPython programs,
+  see [PyImageJ](/scripting/pyimagej)." %}
 
 ## Introduction
 
-Jython is an implementation of the Python programming language designed to run on the Java platform. [^1] In ImageJ, Jython is one of several [supported languages](/scripting#supported-languages).
+Jython is an implementation of the Python programming language that runs on the Java Virtual Machine. [^1] In [ImageJ2](/software/imagej2) and [Fiji](/software/fiji), Jython is one of several [supported scripting languages](/scripting#supported-languages).
 
 ## When to use Jython
 
-All scripting language supported by ImageJ can be used to access the [ImageJ API](https://javadoc.scijava.org/). There are only differences in how the imports are handled and in the syntax of the selected language. Jython has a syntax that differs from most other language as indentations instead of brackets are used to group code blocks.
+Jython has a specific niche among the [Python options for Fiji](/scripting/python):
 
-The following list will help you to decide if Jython is the right choice to create scripts for ImageJ:
+- **In-JVM, zero spawn overhead.** Calls into Java APIs are ordinary method calls — no serialization, no subprocess boundary.
+- **Python 2.7 syntax only.** Jython does not implement Python 3.
+- **No native-code modules.** `numpy`, `scipy`, `scikit-image` and other modules that rely on native code are not available. If you need them, use [Fiji Python mode (PyImageJ)](/scripting/pyimagej) or [Appose](https://github.com/apposed/appose) instead — see [the Python page](/scripting/python).
+- **The Python standard library is available**, and so is any Java class on the Fiji classpath.
 
--   If you have experience with Python, you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [own modules](/scripting/jython#self-written-jython-modules-for-imagej) you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
--   If don't have any experience in programming, the Python language is a good choice to start with. If your only aim is to write scripts for ImageJ, there are other languages you should try first (e.g. [Groovy](/scripting/groovy)).
--   In Python, many problems can be solved with less code than in other languages. Nonetheless, the code is easy to read. Have a look at the examples on this page and decide if you want to start using Python for ImageJ scripting.
-
-### Explanation
-
-The Java implementation of Python is limited to the [standard library](https://docs.python.org/2/library/index.html) of Python 2.  
-It is not possible to use external python modules (like Numpy...) however, [any Java class residing in the Fiji installation can be used](/scripting/jython#importing-java-module-and-classes).  
-Even with the given limitations, Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
+If you want Python syntax, fast access to the [ImageJ](http://javadoc.scijava.org/ImageJ1/) and [ImageJ2](http://javadoc.scijava.org/ImageJ/) Java APIs, and you do not need third-party `pip` packages, Jython is a good fit. If you are new to programming and only need to script Fiji, [Groovy](/scripting/groovy) is often a gentler starting point.
 
 ## Jython basics for ImageJ
 
@@ -176,126 +172,9 @@ RM = RoiManager()        # we create an instance of the RoiManager class
 rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely
 ```
 
-### Using openCV in Jython
+### Using OpenCV from Jython
 
-It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [wiki page about opencv](/software/opencv)), yet the most straight forward is probably IJ-OpenCV which is available via the update sites. It will automatically download the necessary packages and dependencies in your Fiji installation.
-
-A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are available on the [IJopenCV github](https://github.com/joheras/IJ-OpenCV), which even provides a maven option.
-
-#### Matrices
-
-The first thing to know about OpenCV is that most functions work with an OpenCV matrix object. Fortunately, the IJ-OpenCV project provides some converters :
-
-```python
-#@ ImagePlus ImP
-from ijopencv.ij      import ImagePlusMatConverter
-from ijopencv.opencv  import MatImagePlusConverter
-from ij               import ImagePlus
-
-# Convert ImagePlus (actually the contained ImageProcessor) to Matrix object
-imp2mat = ImagePlusMatConverter()
-ImMat = imp2mat.toMat(imp.getProcessor())
-print ImMat
-
-# Convert Matrix object to ImageProcessor
-mat2ip = MatImagePlusConverter()
-NewIP  = mat2ip.toImageProcessor(ImMat)
-NewImp = ImagePlus("Matrix converted back to ImagePlus", NewIP)
-print NewImP
-```
-
-Such kind of converter is also available for PointRoi to opencv keypoints...
-
-Now to use opencv function, we use the [JavaCPP API](http://bytedeco.org/javacpp-presets/opencv/apidocs/) that contains almost all functions of opencv.
-
-```python
-from org.bytedeco.javacpp.opencv_core   import Mat, CvMat, vconcat
-
-## Typical matrices ##
-
-# Identity Matrix of size (3x3) and type 8-bit
-Id = Mat().eye(3,3,0).asMat()
-print Id
-print CvMat(Id) # handy to visualise the matrix
-
-# Matrix of ones (3x3)
-One = Mat().ones(3,3,0).asMat()
-
-# Matrix of zeros (3x3)
-Zero = Mat().zeros(3,3,0).asMat()
-
-# Custom Matrices
-# 1D-Matrix can be initialize from a list
-# For 2D (or more) we have to concatenate 1D-Matrices
-
-Row1 = Mat([1,2,3,4,5]) # 1D matrix
-Row2 = Mat([6,7,8,9,10])
-
-TwoColumn = Mat()              # initialise output
-vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
-print CvMat(TwoColumn)
-
-{% include notice icon="warning" content="The `org.bytedeco.javacpp.opencv_core.Mat` object is different than the `org.opencv.core.Mat` !! They don't have exactly the same attributes and functions. In Fiji you should always use the objects from `org.bytedeco.javacpp`." %}
-```
-
-Similarly there is some apparent redudancy for the function in the javacpp API.
-
-ex : Transform exists in 3 different places :
-
--   `org.opencv.core.Core.transform`
-
-This one takes `org.opencv.core.Mat` as input. It is currently challenging to have such object in Fiji.
-
--   `org.bytedeco.javacpp.opencv_core.cvTransform`
-
-using `CvArr` as input, but even if you manage to convert your input as a `CvArr` it crashes Fiji. Apparently it is a deprecated version.
-
--   `org.bytedeco.javacpp.opencv_core.transform`
-
-That's the one to use ! It takes only `org.bytedeco.javacpp.opencv_core.Mat` as input, which is the most appropriate in Fiji/Jython
-
-#### Scalar
-
-In addition to Matrices, opencv allows to use Scalar objects A scalar is a 4 item element (v0, v1, v2, v3). If v1=v2=v3=0 then the Scalar is real.
-
-```python
-from org.bytedeco.javacpp.opencv_core   import Scalar
-
-# Real scalar can be initiated with a float parameters
-Number = Scalar(5.0)
-Number = Scalar(float(5))
-print Number
-
-# Using an integer as parameter has a different meaning
-Empty = Scalar(5) # This initiate an empty Scalar object of size 5
-print Empty
-
-# Alternatively one can set the other values of the Scalar
-Complex = Scalar(1,2,3,4)
-print Complex
-```
-
-#### Operations
-
-It is possible to perform some operations between matrices, or between Scalar and matrices.
-
-```python
-from org.bytedeco.javacpp.opencv_core   import Scalar, Mat, subtract
-
-A = Mat([1,2,3,4,5])
-B = Mat([1,2,-3,-4,0])
-
-Number = Scalar(10.0)
-
-## Number - B ( B-Number is also possible)
-Expr = subtract(Number,B)
-print CvMat(Expr.asMat())
-
-## A - B
-Out = Mat()
-subtract(A,B,Out)
-print CvMat(Out)
-```
+OpenCV can be used from Jython via the IJ-OpenCV project (available as an [update site](/update-sites)) or directly through the JavaCPP `org.bytedeco.javacpp.opencv_core` bindings. See the [OpenCV wiki page](/software/opencv) for current options. Note that the OpenCV-from-Jython examples that previously lived here were written years ago and have not been verified recently; contributions of fresh examples are welcome.
 
 ## Self written Jython modules for ImageJ
 
@@ -445,4 +324,4 @@ At GitHub you will find an [example project](https://github.com/m-entrup/imagej-
 
 ## References
 
-[^1]: [Wikipedia entry on Jython](https://imagej.net/ij/plugins/index.html). Accessed: 2016-08-30
+[^1]: [Wikipedia entry on Jython](https://en.wikipedia.org/wiki/Jython).

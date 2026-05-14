@@ -18,8 +18,8 @@ doi: 10.1038/s41592-022-01655-4
   the JVM-based flavor of Python, see [Jython scripting](/scripting/jython)." %}
 
 [PyImageJ](https://pypi.org/project/pyimagej/) is a [Python](/scripting/python)
-wrapper for [ImageJ2](/software/imagej2). It also supports the
-[original ImageJ](/software/imagej) via ImageJ2's
+wrapper for [ImageJ2](/software/imagej2) (and therefore [Fiji](/software/fiji)).
+It also supports the [original ImageJ](/software/imagej) via ImageJ2's
 [legacy bridge](/libs/imagej-legacy).
 
 PyImageJ provides a set of wrapper functions for integration between ImageJ and
@@ -29,11 +29,9 @@ SciPy, scikit-image, [CellProfiler](/software/cellprofiler),
 [OpenCV](/software/opencv), [ITK](/software/itk) and more.
 
 For further details about PyImageJ, including installation and usage
-instructions, please see the project page on PyPI:
+instructions, please see the PyImageJ documentation at:
 
-{% include link-banner url="https://pypi.org/project/pyimagej/" %}
-
-{% include notice icon="info" content='If you are new to Python or image analysis using Python and would like to learn about it, check out the [tutorials](https://imaging.epfl.ch/field-guide/sections/python/#tutorials) and [resources](https://imaging.epfl.ch/field-guide/sections/python/#tutorials) from the [EPFL Center for Imaging - image analysis field guide](https://imaging.epfl.ch/field-guide/index.html) ' %}
+{% include link-banner url="https://py.imagej.net/" %}
 
 ## Publication
 

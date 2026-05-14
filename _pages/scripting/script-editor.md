@@ -9,13 +9,21 @@ The script editor is an invaluable help when writing scripts in any of the [SciJ
 
 ## Features
 
-Text Editing  
+<div style="display: flex; flex-wrap: wrap; gap: 1em;">
+
+<div style="flex: 1 1 12em;" markdown="1">
+
+**Text Editing**
 
 -   Full undo support
 -   Auto-indent
 -   Configurable white-space options
 
-Programming  
+</div>
+
+<div style="flex: 1 1 12em;" markdown="1">
+
+**Programming**
 
 -   Syntax highlighting
 -   Output console
@@ -25,17 +33,29 @@ Programming
 -   Automatic brace highlighting
 -   Line numbers
 
-Language specific tools  
+</div>
+
+<div style="flex: 1 1 12em;" markdown="1">
+
+**Language-specific tools**
 
 -   Organization of `import` declarations
 -   Access to online documentation ([Javadocs](http://javadoc.scijava.org/), [ImageJ Macro Functions](https://imagej.net/ij/developer/macro/functions.html))
 -   Access to source code in `.jar` files
 
-Interface  
+</div>
+
+<div style="flex: 1 1 12em;" markdown="1">
+
+**Interface**
 
 -   Bookmarks
 -   Tabs for easy switching between open files
 -   Navigation shortcuts
+
+</div>
+
+</div>
 
 ## Usage
 
