@@ -1,7 +1,7 @@
 ---
 title: PyImageJ
 project: /software/imagej2
-website: https://pypi.org/project/pyimagej/
+website: https://py.imagej.net/
 source-url: https://github.com/imagej/pyimagej
 dev-status: Active
 team-lead: '@ctrueden'
@@ -17,8 +17,8 @@ doi: 10.1038/s41592-022-01655-4
   making ImageJ functions accessible from Python. To write scripts in Jython,
   the JVM-based flavor of Python, see [Jython scripting](/scripting/jython)." %}
 
-[PyImageJ](https://pypi.org/project/pyimagej/) is a [Python](/scripting/python)
-wrapper for [ImageJ2](/software/imagej2) (and therefore [Fiji](/software/fiji)).
+[PyImageJ](https://py.imagej.net/) is a [Python](/scripting/python) wrapper
+for [ImageJ2](/software/imagej2) (and therefore [Fiji](/software/fiji)).
 It also supports the [original ImageJ](/software/imagej) via ImageJ2's
 [legacy bridge](/libs/imagej-legacy).
 
