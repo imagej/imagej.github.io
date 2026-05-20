@@ -152,23 +152,34 @@ Exits the program.
 
 ### Auto-trace ›
 
-#### Grayscale Image (GWDT)...
-Runs fully automated tracing directly from a **grayscale (intensity) image** already open in SNT (no binarization required). The approach uses **Gray-Weighted Distance Transform (GWDT)** with Fast Marching and expects bright-on-dark imagery. See [Autotracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) for details.
+#### Grayscale Image...
+Runs fully automated tracing of a single cell directly from a **grayscale (intensity) image** already open in SNT (no binarization required). See [Autotracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) for details.
 
-#### Grayscale Image (GWDT) File...
+#### Grayscale Image (Multiple Cells)...
+Runs automated tracing of **multiple cells** in a single grayscale image. Automatically detects all soma locations, then traces each cell independently using exclusion masks to prevent territory overlap. See [Auto-tracing › Multiple Cells](/plugins/snt/auto-tracing#multiple-cells) for details.
 
-Same as {% include bc path='Grayscale Image (GWDT)...' %}, but loads the grayscale image from a **file path** (including [big-data/out-of-core](/plugins/snt/big-data) datasets). See [Auto-tracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) for details.
+#### Detect Soma(s)...
+Standalone tool for automatic soma/root detection in neuronal images, and can export results as a path node or ROI (point, contour, circle) for annotation or seeding autotracing. Options include:
 
-#### Detect Soma...
-Standalone tool for automatic soma/root detection in neuronal images. Detects the thickest and brightest structures using an EDT×intensity score, and can export results as a path node or ROI (point, countour, circle) for annotation or seeding autotracing. See [Auto-tracing › Soma Detection](/plugins/snt/auto-tracing#soma-detection) for details.
+- **Scope** Whether to detect only the single brightest/largest soma or all somata in the image. When detecting all somata, additional filtering parameters become available
+
+- **Output type** How results are exported: as a _Single-node path_ (for seeding autotracing), _Point ROI_, _Area ROI_ (contour from thresholding), or _Circular ROI_ (circle with EDT-derived radius)
+
+Remaining options are described in [Auto-tracing › Soma Detection](/plugins/snt/auto-tracing#soma-detection).
 
 #### Autotrace Segmented Image...
 
 Runs fully automated tracing on a segmented image that is already open. A segmented image can be a binary mask or a thresholded image, where background pixels have been set to zero. See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) for details.
 
+#### Grayscale Image File(s)...
+Batch-capable variant that loads grayscale images from a **file** or **directory**, traces a single cell per image using GWDT autotracing, and exports reconstructions as SWC files. See [Auto-tracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
+
+#### Grayscale Image File(s) (Multiple Cells)...
+Batch-capable variant that loads grayscale images from a **file too large to be loaded into memory** (e.g., an OME-ZARR, or .IMS file) or **directory**, detects all soma locations, and traces each cell independently using GWDT autotracing with exclusion masks. Results are exported as SWC files (one per detected cell). See [Auto-tracing › Multiple Cells](/plugins/snt/auto-tracing#multiple-cells) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
+
 #### Autotrace Segmented Image File...
 
-Same as {% include bc path='Autotrace Segmented Image...' %}, but loads the segmented image from a file path instead of using an image already open. See [Fully automated tracing](/plugins/snt/auto-tracing#segmented-images) for details.
+Batch-capable variant that loads segmented images from a **directory**, traces each image, and exports the resulting reconstructions as SWC files. See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
 
 
 ### Analysis ›
