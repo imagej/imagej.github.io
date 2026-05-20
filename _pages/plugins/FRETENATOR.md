@@ -48,22 +48,20 @@ Install activating update sites:
 
 ## **_FRETENATOR2_Segment_and_ratio_**
 
-
-![nlsABACUS2 confocal image](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image20.gif)
-![nlsABACUS2 segmentation performed with FRETENATOR](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image22.gif)
-![nlsABACUS2 emission ratio, with calculations performed on a per object basis](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image21.gif)
-
+<img src="https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image20.gif" title="nlsABACUS2 confocal image" alt="nlsABACUS2 confocal image" />
+<img src="https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image22.gif" title="nlsABACUS2 segmentation performed with FRETENATOR" />
+<img src="https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image21.gif" title="nlsABACUS2 emission ratio, with calculations performed on a per object basis" />
 
 ## **Usage**:
 
 *FN2 Segment and ratio* is a powerful plugin to quickly perform ratiometric analysis of 2D, 3D or 4D microscopy images,  with an new user interface and a live updating preview. The plugin performs full 3D segmentation of images, which means you don't analyse background, and does all the analysis, ready for you to plot and interpret. The algorithm can be used to analyse punctate sensors (e.g. nuclear localised) on a per object basis, or diffuse sensors (e.g. cytoplasmic) on a pixel by pixel basis, with quickload settings buttons. Saturated pixels are automatically removed. Settings can be saved and used for headless processing, or even batch (alpha).
 
-  • Results Table:    ◦ Includes the ratiometric calculation (emission ratio) your channel quantifications, and x, y, z positions. This can be saved as a .csv and then analysed in python, R or excel.
-  • Label map:    ◦ An image in which every nucleus is given a value that corresponds to the “label” in the results table.
-  • Emission ratio map:    ◦ An image in which every nucleus is given the value of it’s emission ratio
-  • Average Z projected emission ratio map:    ◦ An average Z projection of the emission ratio map
-  • Nearest point emission ratio map:    ◦ A nearest point projection of the emission ratio map, with outlines added between the nuclei NB: the scale of this image is different to the original image and other images, allowing thin outlines to be drawn.
-  • Log:     ◦ Details of the image file and exact analysis settings used to keep with your metadata. Savable as a .txt file
+  * Results Table:    ◦ Includes the ratiometric calculation (emission ratio) your channel quantifications, and x, y, z positions. This can be saved as a .csv and then analysed in python, R or excel.
+  * Label map:    ◦ An image in which every nucleus is given a value that corresponds to the “label” in the results table.
+  * Emission ratio map:    ◦ An image in which every nucleus is given the value of it’s emission ratio
+  * Average Z projected emission ratio map:    ◦ An average Z projection of the emission ratio map
+  * Nearest point emission ratio map:    ◦ A nearest point projection of the emission ratio map, with outlines added between the nuclei NB: the scale of this image is different to the original image and other images, allowing thin outlines to be drawn.
+  * Log:     ◦ Details of the image file and exact analysis settings used to keep with your metadata. Savable as a .txt file
 
 
 ### **_FN2 Segment and ratio_ tutorial** 
@@ -73,11 +71,6 @@ Install activating update sites:
 ### **Setting LUTs and making a colourbar**
 
 [On youtube.](https://www.youtube.com/watch?v=rTH1vWirORI)
-
-
-
-![cytosolic ABACUS1 confocal image](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/PixelXPixel2.png)
-![cytosolic ABACUS1 analysed pixel by pixel](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/pixelXpixel1.png)
 
 
 
@@ -118,8 +111,8 @@ FRETENATOR ROI Labeller tutorial
 
 A simple plugin to allow **Trackmate 7** analysed label images (Analyse the FRETENATOR label map for tracking then export the tracked label map as dots) to be combined with **FRETENATOR_Segment_and_ratio** output. This adds TrackIDs to the results table and creats a new TrackID labelmap that can be analysed with the ROI manager.
 
-![Stomata](https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image29.gif)
-![Stomata ROI labeled image after tracking with Trackmate](https://github.com/JimageJ/ImageJ-Tools/blob/master/images/labeled%20stomata.gif)
+<img src="https://github.com/JimageJ/FRETENATOR2/blob/main/imagefiles/image29.gif" title="Stomata" alt="Stomata" />
+<img src="https://github.com/JimageJ/ImageJ-Tools/blob/master/images/labeled%20stomata.gif" title="Stomata ROI labeled image after tracking with Trackmate" alt="Stomata ROI labeled image after tracking with Trackmate" />
 
 ## **_FRETENATOR2_Segment_and_ratio_BT_ (Alpha)**
 
