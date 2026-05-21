@@ -26,15 +26,17 @@ This command reconstructs neuronal structures directly from grayscale (intensity
 
 2. **[Big data](./big-data) support**: Ability to process TB datasets that exceed available RAM
 
-3. **Score maps for pruning guidance**: Ability to use either Vesselness-based (e.g., [Tubeness](/plugins/tubeness)/[Frangi](/plugins/frangi)) or external segmentation p-maps to better guide the detection of neurites
+3. **Learning from manual annotations**: Ability to [derive tracing parameters](#learning-parameters-from-selected-paths) automatically from ground-truth paths, reducing trial-and-error when tuning the algorithm for a new dataset
 
-4. **Tip extension across dim gaps**: Ability to 'hop' over blebbed or non-contiguous signal
+4. **Score maps for pruning guidance**: Ability to use either Vesselness-based (e.g., [Tubeness](/plugins/tubeness)/[Frangi](/plugins/frangi)) or external segmentation p-maps to better guide the detection of neurites
 
-5. **Post-hoc fitting for node position and radius [refinement](./manual#refinefit-)**: Ability to obtain more natural curvatures by snapping traces to the neurite's signal
+5. **Tip extension across dim gaps**: Ability to 'hop' over blebbed or non-contiguous signal
 
-6. **Automated detection of somata**: Ability to simultaneously seed the tracing algorithm on somata in a multi-cell labeled neuropil
+6. **Post-hoc fitting for node position and radius [refinement](./manual#refinefit-)**: Ability to obtain more natural curvatures by snapping traces to the neurite's signal
 
-7. **Territory-controlled multi-soma tracing**: Ability to predict whether a neurite belongs to which cell in a _sparsely labeled_ multi-cell neuropil
+7. **Automated detection of somata**: Ability to simultaneously seed the tracing algorithm on somata in a multi-cell labeled neuropil
+
+8. **Territory-controlled multi-soma tracing**: Ability to predict whether a neurite belongs to which cell in a _sparsely labeled_ multi-cell neuropil
 
 For technical implementation details and references, see the [SNT technical notes](https://github.com/morphonets/SNT/blob/main/NOTES.md).
 
@@ -109,6 +111,46 @@ After the initial tree extraction and branch filtering, several post-processing 
 **Smoothing** Applies a moving average filter to reduce residual irregularities in traced paths. The window size determines how many adjacent nodes are averaged together. Larger windows create smoother paths but may lose fine details. Default: 5 (set to 1 to disable)
 
 **Resampling** Redistributes nodes along paths at regular intervals to standardize node density. The step size (in voxels) determines spacing between resampled nodes. Useful for ensuring consistent spatial sampling across the reconstruction. Default: 2.0 (set to 0 to disable)
+
+
+## Learning Parameters from Selected Paths
+
+The _Learn Parameters From Selected Path(s)..._ button (located in the autotracing prompt) derives tracing parameters from paths already traced in the current session. This is useful when starting with a new dataset: instead of manually tuning thresholds and scales, you trace a representative neurite (or a few branches), then let SNT extract sensible defaults from those examples.
+
+<img align="right" width="400" src="/media/plugins/snt/snt-autotracing-groundtruth-learning.png" alt="Learning from Selected Paths (v5.1.0)" title="Learning from Selected Paths (v5.1.0)" />
+
+### Workflow
+
+1. **Trace one or more representative paths** manually (or load existing reconstructions). Select them in Path Manager
+
+2. **Click** _Learn Parameters From Selected Path(s)..._ in the {% include bc path='Auto-trace|Grayscale Image...' %} prompt. SNT analyzes the selected paths and opens a review dialog
+
+3. **Review the results**. The dialog has two sections: _Source Statistics_ (read-only summary of what was measured: path count, node count, mean radius, mean intensity, etc.) and _Derived Parameters_ (a table with checkboxes). Each derived parameter has a checkbox controlling whether it will be applied
+
+4. **Apply**. Click _Apply & Close_ to transfer the checked parameters into the autotracing prompt. Only checked rows are applied; unchecked values are left at their current settings
+
+### Derived Parameters
+
+SNT samples radius, intensity, and branch geometry from the selected paths to derive the following:
+
+**Background threshold** Set to 25% of the mean signal intensity sampled along the traced paths. Because the paths run through bright foreground, a quarter of that mean provides a conservative floor that excludes background while preserving dim neurites.
+
+**Score map scales** Computed from the 25<sup>th</sup>/50<sup>th</sup>/75<sup>th</sup> percentile of node radii across all selected paths. These percentiles become the sigma values for the Hessian-based tubeness filter, ensuring the score map is tuned to the actual thickness range of the structures being traced. Near-duplicate scales (within 10%) are merged.
+
+**Min. branch score** Derived from the 10<sup>th</sup> percentile of node radii, with a floor of 3.0 pixels. Branches shorter than the thinnest observed radius are likely noise.
+
+**Max. branching angle** Set to the 90<sup>th</sup> percentile of fork angles measured at branch points where child paths diverge from their parents. This captures the typical range of branching geometry, so the post-processing branch-tuning step can rewire only unusually sharp turns.
+
+**Reconnect parameters** _(unchecked by default)_ Three values for the tip-extension feature: minimum contraction (80% of the lowest observed path contraction, floored at 0.3), maximum bridge angle (120% of the branch-tune angle, capped at 90°), and maximum bridge distance (4× the largest observed radius in voxel units, floored at 10). These are conservative starting points and are unchecked by default because tip extension is an experimental feature.
+
+### Radius Fitting
+
+If the selected paths lack radii (i.e., they were traced without fitting), SNT automatically performs a non-destructive fit before analysis. The fit estimates radii from the image signal without modifying the original paths.
+
+{% capture learn-tip %}
+For best results, select paths that are representative of the structures you want to auto-trace: include both thin and thick branches if present, and ensure the paths span the typical intensity range of the image. A handful of well-placed paths (3–5 branches from different parts of the arbor) is usually sufficient.
+{% endcapture %}
+{% include notice icon="info" content=learn-tip %}
 
 
 ## Options
