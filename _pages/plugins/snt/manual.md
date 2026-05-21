@@ -628,7 +628,7 @@ The status bar at the bottom of the Main Dialog displays brief messages about on
 Right-clicking on any of the tracing views will bring up a menu with various editing tools. The corresponding [keyboard shortcuts](/plugins/snt/key-shortcuts) are shown to the right of each option. The list includes:
 
 
-### Select Nearest Path {% include key key='G' %}
+### Grab Nearest Path {% include key key='G' %}
 Selects ("<u>G</u>roups") the path closest to the mouse cursor.
 
 ### Add Nearest Path to Selection {% include key key='Shift|G' %}
@@ -672,7 +672,7 @@ Removes the last segment from the temporary path.
 Finishes the temporary path. Note that a path can always be finished by {% include key key='double click' %}
 
 ## Edit Mode {% include key keys='Shift|E' %}
-Pressing *Edit Mode*, selects the nearest path for editing, unlocking the edit options. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*.
+Pressing *Edit Mode*, selects the nearest path for editing, unlocking the edit options. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*. For brush-based editing of multiple nodes at once, see [Paint Mode](#paint-mode-p) below.
 
 ### Bring Active Node to Current Z-plane {% include key key='B' %}
 Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
@@ -724,6 +724,22 @@ Reorganizes the existing tree so that the active node becomes its root.
 
 ### Split Tree at Active Node {% include key key='X' %}
 Splits the current tree into two subtrees by disconnecting the active node from its parent structure
+
+### Paint Mode {% include key key='P' %}
+Toggles Paint Mode, a brush-based sub-mode of Edit Mode for adjusting paths. In Paint Mode, operations fade smoothly from full effect at the cursor to no effect at the brush edge, like a soft brush in image editors. The brush radius (number of flanking nodes affected) is displayed in the status label.
+
+**{% include key keys='Drag' %}**  Moves nodes within the brush radius toward the cursor, weighted by proximity to the center node (Gaussian-like displacement)
+
+**{% include key keys='Alt|Drag' %}** Blends radii from the center node outward. Each flanking node's radius is pulled toward the center node's radius with fading falloff. Dashed arcs show the brush extent during the operation. 
+
+**{% include key keys='Ctrl|Mouse Wheel' %}** Adjusts the brush radius (number of flanking nodes). Transient dashed arcs preview the brush extent.
+
+Press {% include key key='P' %} again or exit Edit Mode to leave Paint Mode. Undo ({% include key key='Z' %}) reverts the last paint stroke.
+
+{% capture tip-paint%}
+Use {% include key key='R' %} to set the center node's radius first, then {% include key keys='Alt|Drag' %} to propagate it smoothly along the path.
+{% endcapture %}
+{% include notice icon="tip" content=tip-paint %}
 
 
 ## Pause Tracing {% include key keys='Shift|P' %}
