@@ -28,7 +28,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from both [grayscale images](./auto-tracing#grayscale-images) (no thresholding required) and [segmented images](./auto-tracing#segmented-images)
+/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from both [grayscale](./auto-tracing#grayscale-images) and [segmented](./auto-tracing#segmented-images) images
 /media/plugins/snt/snt-autotracing-multiple-somata.webp | [Fully automated tracing](/plugins/snt/auto-tracing) of [multiple cells in the same image](./auto-tracing#multiple-cells)
 /media/plugins/snt/snt-autotracing-groundtruth-learning.png | [Auto-tuned tracing](./auto-tracing#learning-parameters-from-selected-paths): Learned tracing parameters from manually traced paths
 /media/plugins/snt/snt-soma-detection.png | Automated [soma detection](/plugins/snt/auto-tracing#soma-detection)
