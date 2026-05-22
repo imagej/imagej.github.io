@@ -30,30 +30,32 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 "
 /media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from both [grayscale images](./auto-tracing#grayscale-images) (no thresholding required) and [segmented images](./auto-tracing#segmented-images)
 /media/plugins/snt/snt-autotracing-multiple-somata.webp | [Fully automated tracing](/plugins/snt/auto-tracing) of [multiple cells in the same image](./auto-tracing#multiple-cells)
-/media/plugins/snt/snt-bvv.png | [Big-data (out-of-core) support](/plugins/snt/big-data): Automatic switch to disk-backed processing for TB-scale datasets that don’t fit in RAM (experimental)
-/media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
+/media/plugins/snt/snt-autotracing-groundtruth-learning.png | [Auto-tuned tracing](./auto-tracing#learning-parameters-from-selected-paths): Learned tracing parameters from manually traced paths
 /media/plugins/snt/snt-soma-detection.png | Automated [soma detection](/plugins/snt/auto-tracing#soma-detection)
-/media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#snt-scripts) co-exist with graphical user interface operations
+/media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
 /media/plugins/snt/snt-spectral-unmixing.png | Support for [Brainbow-like images](./walkthroughs#tracing-in-multichannel-brainbow-images)
-/media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
-/media/plugins/snt/snt-notebook.png | Scripting in native Python using [PySNT](https://pysnt.readthedocs.io/en/latest/)
-/media/plugins/snt/snt-delaunay-triangulation.png | Delaunay tessellation: Tracings can be used in [image processing routines](/plugins/snt/manual#process-)
-/media/plugins/snt/snt-density-map.png | Density maps for group(s) of cells obtained from [built-in scripts](/plugins/snt/scripting#bundled-templates)
-/media/plugins/snt/snt-recviewer-convexhull-and-surface.png | [Convex hulls](/plugins/snt/analysis#convex-hull-analysis) and [surface annotations](/plugins/snt/reconstruction-viewer#geometric-annotations)
-/media/plugins/snt/snt-montage-light.png | Quantitative and publication quality visualizations
-/media/plugins/snt/snt-montage-dark.png | Data-rich 3D visualizations
-/media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer)
+/media/plugins/snt/snt-bvv.png | [Big data support](/plugins/snt/big-data): TB-scale datasets that exceed available RAM (experimental)
+/media/plugins/snt/snt-curation-assistant.png | [Calibrated, real-time quality-control](./curation#curation-assistant) of traced morphologies
+/media/plugins/snt/snt-labkit-training.png | [Semantic segmentation](/plugins/snt/machine-learning)
 /media/plugins/snt/sholl-analysis-outputs.png | [Sholl](/plugins/snt/sholl) and [Strahler](/plugins/snt/analysis#strahler) directly from images (bypassing tracing)
 /media/plugins/snt/snt-angular-sholl.png | Advanced [Sholl-based quantifications](/plugins/snt/sholl#angular-sholl)
 /media/plugins/snt/snt-root-angle-analysis.png | [Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis)
 /media/plugins/snt/snt-local-angle-surface-analysis.png | Analysis of [surface angles/arbor orientation](/plugins/snt/metrics#extension-angle)
-/media/plugins/snt/snt-delineation-analysis2.png | [Delineation analyses](/plugins/snt/walkthroughs#delineation-analysis)
 /media/plugins/snt/snt-growth-analysis.png | [Growth Analysis](/plugins/snt/analysis#growth-analysis)
+/media/plugins/snt/snt-delineation-analysis2.png | [Delineation analyses](/plugins/snt/walkthroughs#delineation-analysis)
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/graph-viewer-ferris-wheel.png | Routines to summarize data from [projectomes and connectomics](/plugins/snt/analysis#graph-based-analysis)
 /media/plugins/snt/snt-2d-histogram.png | Specialized [statistics](/plugins/snt/analysis#statistics)
-/media/plugins/snt/snt-labkit-training.png | [Semantic segmentation](/plugins/snt/machine-learning)
-/media/plugins/snt/snt-astrocyte-example.png | Glia analysis: Bulk characterization (width and length) of astrocytic processes ([use case](https://forum.image.sc/t/determining-astrocyte-width-from-2d-images-using-fiji-snt/56426/2))
+/media/plugins/snt/snt-delaunay-triangulation.png | Delaunay tessellation: Tracings can be used in [image processing routines](/plugins/snt/manual#process-)
+/media/plugins/snt/snt-density-map.png | Density maps for group(s) of cells obtained from [built-in scripts](/plugins/snt/scripting#bundled-templates)
+/media/plugins/snt/snt-recviewer-convexhull-and-surface.png | [Convex hulls](/plugins/snt/analysis#convex-hull-analysis) and [surface annotations](/plugins/snt/reconstruction-viewer#geometric-annotations)
+/media/plugins/snt/snt-montage-light.png | Quantitative and publication-quality visualizations
+/media/plugins/snt/snt-montage-dark.png | Rich 3D visualizations with dark theme
+/media/plugins/snt/snt-rec-viewer-demo2-dark.gif | [Interactive 3D scenes](/plugins/snt/reconstruction-viewer)
+/media/plugins/snt/snt-v3-overview.png | [Scripted routines](/plugins/snt/scripting#snt-scripts) co-exist with graphical user interface operations
+/media/plugins/snt/snt-script-example.png | [Scripting](/plugins/snt/scripting) in any of Fiji's supported languages facilitated by SNT's [Script Recorder](/plugins/snt/scripting#script-recorder)
+/media/plugins/snt/snt-notebook.png | Scripting in native Python using [PySNT](https://pysnt.readthedocs.io/en/latest/)
+/media/plugins/snt/snt-astrocyte-example.png | Glia analysis: Quantification of [astrocyte and microglia morphologies](./auto-tracing#multiple-cells)
 /media/plugins/snt/snt-non-neuronal-example.png | Not only neurons: SNT can be used to analyze many types of filamentous structures
 "
 %}
