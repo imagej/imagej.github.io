@@ -7,9 +7,9 @@ categories: [Segmentation]
 forum-tag: fiji, cellpose
 ---
 
-This plugin install and run [cellpose](https://www.cellpose.org/) on 2D/3D in Fiji. 
-Two version of cellpose is available:
-- Cellpose (v3, [doi:10.1038/s41592-025-02595-5](https://www.nature.com/articles/s41592-025-02595-5))
+This plugin install and run [cellpose](https://www.cellpose.org/) on an image (2D/3D/multi-colors/time) in Fiji. 
+Two version of cellpose are available:
+- Cellpose (v3, [doi:10.1038/s41592-025-02595-5](https://www.nature.com/articles/s41592-025-02595-5))  
 - Cellpose-SAM (v4, [doi:10.1101/2025.04.28.651001](https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1))
 
 This plugin is based on [Appose](https://github.com/apposed/appose), that automatically install python environment and allows python script execution with shared objects with Fiji.
@@ -27,16 +27,24 @@ Press `Apply changes` and restart Fiji when it's done.
 
 ## Usage
 
-From Fiji
-- Open the image that you want to process.  
+The plugin handles images or movies that are 2D or 3D, that contains or not multiple channels. It can also have a temporal dimension. First open an image and then run the plugin. If you have several images opened when you launch the plgin, it will run on the active one.
+
+From Fiji:
+
+- Open the image that you want to process.
+  
 - Launch one of the cellpose version available in the plugin:
-  - `Plugins>Segmentation>Cellpose-Appose>Cellpose...`
-    This option allows to run CellPose v3. 
-    The full official Cellpose 3 documentation is available [here](https://cellpose.readthedocs.io/en/v3.1.1.1/). 
-  - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...`
-      This option allows to run CellPose v4 with SAM.
-      The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).
+  
+    - `Plugins>Segmentation>Cellpose-Appose>Cellpose...`
+      This option allows to run CellPose v3. 
+      The full official Cellpose 3 documentation is available [here](https://cellpose.readthedocs.io/en/v3.1.1.1/).
+      
+    - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...`
+        This option allows to run CellPose v4 with SAM.
+        The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).
+    
 - Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_
+  
 - Press "Ok" and Enjoy!   
 
 {% include notice icon="info"
