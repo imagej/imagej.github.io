@@ -23,8 +23,7 @@ Click `Add unliste update site`, name it `Appose-Playground` and write its addre
 Select the Appose-Cellpose `.jar` file to install only this plugin, or keep all proposed plugins. 
 Press `Apply changes` and restart Fiji when it's done.
 
-> [!IMPORTANT]
-> You should have a recent version of Fiji, based on Java 21 or more. Download a new version if you're current installation is too old.
+{% include notice icon="warning" content=" You should have a recent version of Fiji, based on Java 21 or more. Download a new version if you're current installation is too old." %}
 
 ## Usage
 
@@ -40,11 +39,11 @@ From Fiji
 - Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_
 - Press "Ok" and Enjoy!   
 
-> [!NOTE]
-> The first time you run each option of this plugin, a python environment with the requested Cellpose version will be automatically installed in your home `.local\shared\appose` directory, which will take some time. The next time you use the same option, the environment will be directly activated from the plugin when needed so it will be much faster.
+{% include notice icon="info"
+  content="The first time you run each option of this plugin, a python environment with the requested Cellpose version will be automatically installed in your home `.local\shared\appose` directory, which will take some time. The next time you use the same option, the environment will be directly activated from the plugin when needed so it will be much faster." %}
 
->[!NOTE]
->Cellpose-SAM relies on a much bigger neural network than Cellpose3. Thus computation with this version takes longer and it is advised to have a GPU available.
+{% include notice icon="info"
+  content="Cellpose-SAM relies on a much bigger neural network than Cellpose3. Thus computation with this version takes longer and it is advised to have a GPU available." %}
 
 ## Parameters
 
