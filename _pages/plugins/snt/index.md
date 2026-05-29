@@ -33,6 +33,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-autotracing-groundtruth-learning.png | [Auto-tuned tracing](./auto-tracing#learning-parameters-from-selected-paths): Learned tracing parameters from manually traced paths
 /media/plugins/snt/snt-soma-detection.png | Automated [soma detection](/plugins/snt/auto-tracing#soma-detection)
 /media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
+/media/plugins/snt/snt-seeded-tracing-assistant.png | [Seeded Tracing](./seeds)
 /media/plugins/snt/snt-spectral-unmixing.png | Support for [Brainbow-like images](./walkthroughs#tracing-in-multichannel-brainbow-images)
 /media/plugins/snt/snt-bvv.png | [Big data support](/plugins/snt/big-data): TB-scale datasets that exceed available RAM (experimental)
 /media/plugins/snt/snt-curation-assistant.png | [Calibrated, real-time quality-control](./curation#curation-assistant) of traced morphologies

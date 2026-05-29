@@ -23,13 +23,11 @@ Seeded Tracing allows for anchoring/constraining tracing algorithms around key l
 - **ROIs** e.g., generated from ImageJ routines (area and line ROIs are reduced to representative points)
 - **Tabular data** (CSV) exported from external tools or scripts
 
+
 # Seeded Tracing Assistant
+{% include img src="/media/plugins/snt/snt-seeded-tracing-assistant.png" align="right" width="350px" %}
 
 The _Seeded Tracing Assistant_ is one of the main tabs in the [Main Dialog](./manual#main-dialog) and manages seeds. It is organized into four sections: a display toolbar, a confidence filter, a table of all loaded seeds, and a bottom toolbar for [import](#importing-seeds), [export](#exporting-seeds), and [autotrace](#auto-tracing-from-seeds) actions.
-
-<div align="center">
-  <img src="/media/plugins/snt/snt-seeds-tab.png" alt="Seeds tab" title="The Seeds tab" width="500" />
-</div>
 
 ## Display toolbar
 Controls how seeds are rendered on the tracing canvas, and includes:
@@ -105,6 +103,8 @@ SNT will parse all the ROIs stored in the ROI Manager, using the following crite
 **NB**: Channel and frame come from the ROI's hyperstack position when set, otherwise from the image's active C/T. When importing ROIs, it is possible to set their seeds _type_ and _confidence_ value (default 1.0).
 
 ## From Workspace
+{% include bc path='Import|From Workspace...' %}
+
 This option loads a previously-exported `seeds.csv` directly from the current [SNT session directory](./manual#save-session). Useful for quickly restoring seeds across SNT restarts.
 
 # Exporting Seeds
@@ -135,7 +135,7 @@ The naming convention pairs the algorithmic role with its biological interpretat
 Each filtered seed becomes the root of its own auto-trace; the soma-detection strategy of the autotraced is bypassed because the seed _is_ the root. The command iterates one tracer run per seed and aggregates the resulting trees into a forest: one tree per seed.
 Failures (unreachable seeds, seeds in background, etc.) are logged to the Console but don't abort the run.
 
-The seed source filter ("Visible / All / Selection only") and type filter allow you to restrict the per-seed loop to a subset.
+The seed source filter (_Visible_/_All_/_Selection only_) and type filter allow you to restrict the per-seed loop to a subset.
 When invoked from rows selected, the source filter is pre-targeted to _Selection only_.
 
 ## Seeds as Endpoints / Tips
