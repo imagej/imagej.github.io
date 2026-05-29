@@ -50,20 +50,33 @@ From Fiji
 
 After you selected a version of Cellpose, a graphical interface will pop-up to let you choose the parameters to run cellpose. See the Cellpose [documentation](https://cellpose.readthedocs.io/en/latest/) for full description of the parameters.
 
-## Cellpose parameters
+### Cellpose parameters
 
 - `Cellpose model` (**Cellpose v3 only**): Select a pretrained model from Cellpose website. These models have been trained on dataset with specific biological objects, as for example nuclei for `nuclei` model. Select the model that corresponds the best to your data.
   
 - `Path to custom model`: if you have fine-tuned or trained your own cellpose model, write here the full path to the directory containing the model files.
   
-- `Diameter`: The prediction is sensitive to the size of the objects to detect, so you need to indicate the average diameter of the objects (cell or nuclei), in pixels. This parameter strongly affects the segmentation results for Cellpose v3, while Cellpose-SAM can handle a much bigger range of object sizes. Cellpose will resize your image(s) to have an average object size compatible to the one of the training data (30 pixels for most models), and resize back the results to your initial image size. _Default value is 30 pixel_.
+- `Diameter`: The prediction is sensitive to the size of the objects to detect, so you need to indicate the average diameter of the objects (cell or nuclei), in pixels. This parameter strongly affects the segmentation results for Cellpose v3, while Cellpose-SAM can handle a much bigger range of object sizes. Cellpose will resize your image(s) to have an average object size compatible to the one of the training data (30 pixels for most models), and resize back the results to your initial image size.
+   _Default value is 30 pixel_.
 
-- `Channel selection`: Choose the color channel on the image to do the segmentation on (that contain the staining of your objects).
+- `Channel selection`: Choose the color channel on the image to do the segmentation on (that contain the staining of your objects). The number of the channel to select are the same one as in the Fiji interface, starting at one for the first channel.
   - For **Cellpose 3**: you can select one or two channels, one for the main object to segment (`Cytoplasmic channel`) and an optional one for the nuclei staining (`Nuclei chanel`). When you have both stainings, selecting also the nuclei channel can help the segmentation of the contour of the cell by giving more information.
   - For **Cellpose-SAM**: Cellpose-SAM can use information from up to 3 channels to segment the objects. So select the number of channels that are relevant to segment your objects of interest.
  
-- `Minimum Object Size`: At the end of the segmentation process, objects that are smaller in size (total area in pixel) from this parameter will be removed. This allows to get rid off small errors segmentation of only a few pixel. _Default value is 15 pixels^2_.   
+- `Minimum Object Size`: At the end of the segmentation process, objects that are smaller in size (total area in pixel) from this parameter will be removed. This allows to get rid off small errors segmentation of only a few pixel.
+  _Default value is 15 pixels^2_.
 
+- `Normalize Channel Intensity`: whether to use Cellpose's normalization or not. The normalization allows to put the images in the same range of pixel values than the one used for training to get better results. This is recommended, except if you perform your own normalization before.
+  _Default to True (checked)_.
 
+- `Resample Segmentation`: This allows to have more accurate boundaries when your object size is bigger than the model's size (usual 30 pixels, see `diameter` parameter), but will be slower to compute. Indeed, when this option is selected the "dynamics", i.e. the post-processing specific from cellpose to reconstruct the cells from the network's output, will be run at your original image size (at full resolution then). If it's not checked, these "dynamics" will be run on the resized image, which will be smaller if your `diameter` parameter is bigger than 30 pixels.
+_Default value to True (checked)._
+
+- `return ROIs` (**only for 2D or 2D+time images**): the default output (segmentation) that you get is a label image: each object is assigned a unique identity (label), displayed in different color. If you check this option, you will also have a Region Of Interest for each object, added to the ROIManager.
+_Unselected by default_
+
+### Advanced options parameters
+
+### 3D Options
 
 
