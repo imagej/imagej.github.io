@@ -1,6 +1,7 @@
 ---
 title: Cellpose-Appose 
 description: PLugin to use Cellpose from Fiji relying on Appose.
+artifact: fiji.plugin:Cellpose_Appose
 categories: [Segmentation]
 ---
 
@@ -29,10 +30,21 @@ Press `Apply changes` and restart Fiji when it's done.
 From Fiji
 - Open the image that you want to process.  
 - Launch one of the cellpose version available in the plugin:
-  - `Plugins>Segmentation>Cellpose-Appose>Cellpose...`
-  - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...`
+  - `Plugins>Segmentation>Cellpose-Appose>Cellpose...` _see [here](#cellpose) for documentation_
+  - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...` _see [here](#cellpose-sam) for documentation_
 - Configure your Cellpose run through the Graphic Interface
 - Press "Ok" and Enjoy!   
 
 > [!NOTE]
 > The python environment will be automatically installed in your home `.local\shared\appose` directory and activated from the plugin when needed.
+
+
+## Cellpose
+
+The option `Plugins>Segmentation>Cellpose-Appose>Cellpose...` allows to run CellPose v3.
+
+## Cellpose-SAM
+
+The option `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...` allows to run CellPose v4 with SAM.
+
+### Cuda selection
