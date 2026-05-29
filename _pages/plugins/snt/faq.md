@@ -80,6 +80,9 @@ Yes. You can trace using the the XY,ZY,XZ [views](/plugins/snt/walkthroughs#accu
 ### Can I undo tracing mistakes?
 Yes. With version 5 and later, temporary segments can be reverted before finishing a path simply by pressing {% include key key='Z' %}. In Edit Mode, editing operations can also be reverted using the same shortcut. By default, the last 20 operations can be undone.
 
+### Does SNT use AI?
+See [machine learning](./machine-learning).
+
 ### Having to confirm individual segments is too cumbersome. Is it possible to trace without interruption, by clicking in succession?
 Yes. Uncheck the *Confirm temporary segments* in the *Options* tab (*Temporary Paths* section): When this option is disabled. Segments are confirmed automatically. Note that double-click finishes a path directly, and the last confirmed segment can always be undone with the {% include key key='Z' %} key.
 
@@ -136,3 +139,6 @@ See [Spine/Varicosity/Label Analysis](./spines-varicosities). In-depth quantific
 
 ### Can SNT reconstruct somata?
 Yes, see [Autotracing › Soma/Root Detection](./auto-tracing#somaroot-detection). Note, however, that most SNT tutorials favor the [single-point soma representation](https://neuromorpho.org/SomaFormat.html).
+
+### Can I use cellpose segmentations?
+Yes, see [Machine learning](./machine-learning).

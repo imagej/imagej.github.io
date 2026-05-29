@@ -8,6 +8,10 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
+### AI Tools
+Described in [Seeded Tracing](./seeds).
+
+
 ### ImageJ Ecosystem
 
 | Tool | Description | Comments |
