@@ -17,11 +17,11 @@ This plugin is based on [Appose](https://github.com/apposed/appose), that automa
 ## Installation
 
 You can install the plugin for the unliste update site `Appose-Playground`:
-in Fiji, go to `Help>Update...` then to `Manage Update Sites` in the window that opens.
-Click `Add unliste update site`, name it `Appose-Playground` and write its address `https://sites.imagej.net/Appose-Playground`.
-
-Select the Appose-Cellpose `.jar` file to install only this plugin, or keep all proposed plugins. 
-Press `Apply changes` and restart Fiji when it's done.
+- In Fiji, go to `Help>Update...`
+- Select `Manage Update Sites` in the window that opens.
+- Click `Add unliste update site`, name it `Appose-Playground` and write its address `https://sites.imagej.net/Appose-Playground`.
+- Select the Appose-Cellpose `.jar` file to install only this plugin, or keep all proposed plugins. 
+- Press `Apply changes` and restart Fiji when it's done.
 
 {% include notice icon="warning" content=" You should have a recent version of Fiji, based on Java 21 or more. Download a new version if you're current installation is too old." %}
 
@@ -32,19 +32,14 @@ The plugin handles images or movies that are 2D or 3D, that contains or not mult
 From Fiji:
 
 - Open the image that you want to process.
-  
-- Launch one of the cellpose version available in the plugin:
-  
+- Launch one of the cellpose version available in the plugin:  
     - `Plugins>Segmentation>Cellpose-Appose>Cellpose...`
       This option allows to run CellPose v3. 
-      The full official Cellpose 3 documentation is available [here](https://cellpose.readthedocs.io/en/v3.1.1.1/).
-      
+      The full official Cellpose 3 documentation is available [here](https://cellpose.readthedocs.io/en/v3.1.1.1/). 
     - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...`
         This option allows to run CellPose v4 with SAM.
-        The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).
-    
-- Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_
-  
+        The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).   
+- Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_  
 - Press "Ok" and Enjoy!   
 
 {% include notice icon="info"
