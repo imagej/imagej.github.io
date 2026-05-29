@@ -1,15 +1,16 @@
 ---
 title: Cellpose-Appose 
 description: PLugin to use Cellpose from Fiji relying on Appose.
+source-url: https://github.com/Image-Analysis-Hub/cellpose-appose
 artifact: fiji.plugin:Cellpose_Appose
 categories: [Segmentation]
+forum-tag: fiji, cellpose
 ---
 
-
-This is a plugin to install and run [cellpose](https://www.cellpose.org/) on 2D/3D in Fiji. 
+This plugin install and run [cellpose](https://www.cellpose.org/) on 2D/3D in Fiji. 
 Two version of cellpose is available:
-- Cellpose (v3)
-- Cellpose-SAM (v4)
+- Cellpose (v3, [doi:10.1038/s41592-025-02595-5](https://www.nature.com/articles/s41592-025-02595-5))
+- Cellpose-SAM (v4, [doi:10.1101/2025.04.28.651001](https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1))
 
 This plugin is based on [Appose](https://github.com/apposed/appose), that automatically install python environment and allows python script execution with shared objects with Fiji.
 
@@ -30,21 +31,39 @@ Press `Apply changes` and restart Fiji when it's done.
 From Fiji
 - Open the image that you want to process.  
 - Launch one of the cellpose version available in the plugin:
-  - `Plugins>Segmentation>Cellpose-Appose>Cellpose...` _see [here](#cellpose) for documentation_
-  - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...` _see [here](#cellpose-sam) for documentation_
-- Configure your Cellpose run through the Graphic Interface
+  - `Plugins>Segmentation>Cellpose-Appose>Cellpose...`
+    This option allows to run CellPose v3. 
+    The full official Cellpose 3 documentation is available [here](https://cellpose.readthedocs.io/en/v3.1.1.1/). 
+  - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...`
+      This option allows to run CellPose v4 with SAM.
+      The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).
+- Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_
 - Press "Ok" and Enjoy!   
 
 > [!NOTE]
-> The python environment will be automatically installed in your home `.local\shared\appose` directory and activated from the plugin when needed.
+> The first time you run each option of this plugin, a python environment with the requested Cellpose version will be automatically installed in your home `.local\shared\appose` directory, which will take some time. The next time you use the same option, the environment will be directly activated from the plugin when needed so it will be much faster.
+
+>[!NOTE]
+>Cellpose-SAM relies on a much bigger neural network than Cellpose3. Thus computation with this version takes longer and it is advised to have a GPU available.
+
+## Parameters
+
+After you selected a version of Cellpose, a graphical interface will pop-up to let you choose the parameters to run cellpose. See the Cellpose [documentation](https://cellpose.readthedocs.io/en/latest/) for full description of the parameters.
+
+## Cellpose parameters
+
+- `Cellpose model` (**Cellpose v3 only**): Select a pretrained model from Cellpose website. These models have been trained on dataset with specific biological objects, as for example nuclei for `nuclei` model. Select the model that corresponds the best to your data.
+  
+- `Path to custom model`: if you have fine-tuned or trained your own cellpose model, write here the full path to the directory containing the model files.
+  
+- `Diameter`: The prediction is sensitive to the size of the objects to detect, so you need to indicate the average diameter of the objects (cell or nuclei), in pixels. This parameter strongly affects the segmentation results for Cellpose v3, while Cellpose-SAM can handle a much bigger range of object sizes. Cellpose will resize your image(s) to have an average object size compatible to the one of the training data (30 pixels for most models), and resize back the results to your initial image size. _Default value is 30 pixel_.
+
+- `Channel selection`: Choose the color channel on the image to do the segmentation on (that contain the staining of your objects).
+  - For **Cellpose 3**: you can select one or two channels, one for the main object to segment (`Cytoplasmic channel`) and an optional one for the nuclei staining (`Nuclei chanel`). When you have both stainings, selecting also the nuclei channel can help the segmentation of the contour of the cell by giving more information.
+  - For **Cellpose-SAM**: Cellpose-SAM can use information from up to 3 channels to segment the objects. So select the number of channels that are relevant to segment your objects of interest.
+ 
+- `Minimum Object Size`: At the end of the segmentation process, objects that are smaller in size (total area in pixel) from this parameter will be removed. This allows to get rid off small errors segmentation of only a few pixel. _Default value is 15 pixels^2_.   
 
 
-## Cellpose
 
-The option `Plugins>Segmentation>Cellpose-Appose>Cellpose...` allows to run CellPose v3.
 
-## Cellpose-SAM
-
-The option `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...` allows to run CellPose v4 with SAM.
-
-### Cuda selection
