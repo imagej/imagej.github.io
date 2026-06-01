@@ -29,7 +29,7 @@ You can install the plugin for the unliste update site `Appose-Playground`:
 
 ## Usage
 
-The plugin handles images or movies that are 2D or 3D, that contains or not multiple channels. It can also have a temporal dimension. First open an image and then run the plugin. If you have several images opened when you launch the plgin, it will run on the active one.
+The plugin handles images or movies that are 2D or 3D, that contains or not multiple channels. It can also have a temporal dimension. First open an image and then run the plugin. If you have several images opened when you launch the plugin, it will run on the active one.
 
 From Fiji:
 
@@ -68,21 +68,30 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
   - For **Cellpose-SAM**: Cellpose-SAM can use information from up to 3 channels to segment the objects. So select the number of channels that are relevant to segment your objects of interest.
  
 - `Minimum Object Size`: At the end of the segmentation process, objects that are smaller in size (total area in pixel) from this parameter will be removed. This allows to get rid off small errors segmentation of only a few pixel.
-   <i class="fas fa-gear"></i> _Default value is 15 pixels^2_.
+   &#9881 _Default value is 15 pixels^2_.
 
 - `Normalize Channel Intensity`: whether to use Cellpose's normalization or not. The normalization allows to put the images in the same range of pixel values than the one used for training to get better results. This is recommended, except if you perform your own normalization before.
-  <i class="fas fa-gear"></i>  _Default to True (checked)_.
+  &#9881  _Default to True (checked)_.
 
 - `Resample Segmentation`: This allows to have more accurate boundaries when your object size is bigger than the model's size (usual 30 pixels, see `diameter` parameter), but will be slower to compute. Indeed, when this option is selected the "dynamics", i.e. the post-processing specific from cellpose to reconstruct the cells from the network's output, will be run at your original image size (at full resolution then). If it's not checked, these "dynamics" will be run on the resized image, which will be smaller if your `diameter` parameter is bigger than 30 pixels.
   <i class="fa-solid fa-gear"></i>_Default value to True (checked)._
 
-- `return ROIs` (**only for 2D or 2D+time images**): the default output (segmentation) that you get is a label image: each object is assigned a unique identity (label), displayed in different color. If you check this option, you will also have a Region Of Interest for each object, added to the ROIManager.
+- `return ROIs` (**not for 3D images**): the default output (segmentation) that you get is a label image: each object is assigned a unique identity (label), displayed in different color. If you check this option, you will also have a Region Of Interest for each object, added to the ROIManager.
   <i class="fa-solid fa-gear"></i> _Unselected by default_
 
 ### Advanced options parameters
 
 - `Cell probability threshold`: Cellpose runs a neural network to predict the probability of a pixel to be part of an object and the direction from this pixel to the center of this object (the flows). This threshold allows to tune which pixels to keep in the final segmentation: increasing the threshold will reduce the size of detected objects, keeping only most probable pixels, while decreasing it allows to find larger and more objects.
   _This parameter range from -6 to 6 and is 0 by default._
+
+- `Flows threshold` (**not for 3D images**): Cellpose runs a neural network to predict the probability of a pixel to be part of an object and the direction from this pixel to the center of this object (the flows). The error between the segmentation mask and the calculated flow is calculated, and pixels with an error smaller than the threshold will be kept. Increasing this threshold will thus increase the size/number of objects kept and also allows less regular shape.
+  _This parameter range from 0 to 1 and is 0.4 by default._
+
+- `Tile overlap`: Cellpose is dividing the input images into tiles of (256*256) and computing the neural networks in each tile, then putting back the results together. A small overlap between neighboring tiles allows to reconstruct well the cells that are on the boundaries.
+  _This parameter range from 0 (no overlap) to 1 (full overlap, doesn't make sense). Default value is 0.1 (10% overlap)._
+
+- `Compute flows`: Cellpose runs a neural network to predict the probability of a pixel to be part of an object and the direction from this pixel to the center of this object (the flows). By default, you only get the resulting image of cell segmented with a label assigned to each cell. Checking this option allows to also get the flows images as a results. This could be usefull to change the postprocessing step for example.
+  _Not selected by default_.
 
 ### 3D Options
 
