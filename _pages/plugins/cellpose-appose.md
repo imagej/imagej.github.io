@@ -146,7 +146,7 @@ You can also first use the plugin on one image, while recording your action:
 ### Macro to run on all .tif of a folder
 For example, here's a macro that will process all `.tif` files in a folder and save the resulting label image for each image in the same folder.
 
-```
+```java
 // Let you choose the folder to process
 directory = getDir("Choose folder to process");
 
@@ -171,4 +171,5 @@ for (i = 0; i < lengthOf(filelist); i++)
 		close();
     } 
 }
-``
+```
+
