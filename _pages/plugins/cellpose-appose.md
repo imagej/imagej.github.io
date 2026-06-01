@@ -179,4 +179,9 @@ for (i = 0; i < lengthOf(filelist); i++)
     } 
 }
 ```
+## Issue/FAQ
+
+If you encountered a problem using the plugin, or to ask for a new feature, please fill an issue on the [github repository](https://github.com/Image-Analysis-Hub/cellpose-appose/issues).Please give as many details as possible.
+
+You can also post a new question on the [imagesc forum](https://forum.image.sc/), mentionning that the question is related to cellpose-appose plugin.
 
