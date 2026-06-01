@@ -14,6 +14,8 @@ Two version of cellpose are available:
 
 This plugin is based on [Appose](https://github.com/apposed/appose), that automatically install python environment and allows python script execution with shared objects with Fiji.
 
+{% include img name="cellpose-overview" src="/media/cellpose-appose/overview.png" %}
+
 ## Installation
 
 You can install the plugin for the unliste update site `Appose-Playground`:
@@ -66,10 +68,10 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
   - For **Cellpose-SAM**: Cellpose-SAM can use information from up to 3 channels to segment the objects. So select the number of channels that are relevant to segment your objects of interest.
  
 - `Minimum Object Size`: At the end of the segmentation process, objects that are smaller in size (total area in pixel) from this parameter will be removed. This allows to get rid off small errors segmentation of only a few pixel.
-   <i class="fa-solid fa-gear"></i> _Default value is 15 pixels^2_.
+   <i class="fas fa-gear"></i> _Default value is 15 pixels^2_.
 
 - `Normalize Channel Intensity`: whether to use Cellpose's normalization or not. The normalization allows to put the images in the same range of pixel values than the one used for training to get better results. This is recommended, except if you perform your own normalization before.
-  <i class="fa-solid fa-gear"></i>  _Default to True (checked)_.
+  <i class="fas fa-gear"></i>  _Default to True (checked)_.
 
 - `Resample Segmentation`: This allows to have more accurate boundaries when your object size is bigger than the model's size (usual 30 pixels, see `diameter` parameter), but will be slower to compute. Indeed, when this option is selected the "dynamics", i.e. the post-processing specific from cellpose to reconstruct the cells from the network's output, will be run at your original image size (at full resolution then). If it's not checked, these "dynamics" will be run on the resized image, which will be smaller if your `diameter` parameter is bigger than 30 pixels.
   <i class="fa-solid fa-gear"></i>_Default value to True (checked)._
