@@ -95,7 +95,8 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
 - `Compute flows`: Cellpose runs a neural network to predict the probability of a pixel to be part of an object and the direction from this pixel to the center of this object (the flows). By default, you only get the resulting image of cell segmented with a label assigned to each cell. Checking this option allows to also get the flows images as a results. This could be usefull to change the postprocessing step for example.
  &#9881; _Not selected by default_.
 
-- `Iterations`
+- `Iterations`: The number of iterations computed by Cellpose when calculating the cell shapes from the flows (`niter` parameter in Cellpose). If the value is set to `None` (0 in the interface), Cellpose will automatically calculate it based on the cell diameter. Increase it for detecting elongated objects.
+&#9881; _0 by default (None, automatic calculation)._
 
 ### 3D Options
 
