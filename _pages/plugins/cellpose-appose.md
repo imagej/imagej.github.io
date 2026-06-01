@@ -93,6 +93,20 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
 - `Compute flows`: Cellpose runs a neural network to predict the probability of a pixel to be part of an object and the direction from this pixel to the center of this object (the flows). By default, you only get the resulting image of cell segmented with a label assigned to each cell. Checking this option allows to also get the flows images as a results. This could be usefull to change the postprocessing step for example.
   _Not selected by default_.
 
+- `Iterations`
+
 ### 3D Options
 
+**These options can be modified only if the image is a 3D stack (contains more than 1 slice)**. 
 
+{% include notice icon="info"
+  content="If your image should be 3D but is not detected as such (the 3D parameters cannot be modified), check that the metadata are correct: go to `Image>Properties...` and check that the number of slices is more than 1. If you have several frames and only 1 slice and the image should be 3D instead of temporal, exchange the values of number of slices and of frames and click `Ok`." %}
+
+- `Mode 3D`: To segment cells in 3D, Cellpose proposes 2 ways to do it. First option `2D+stitch` is computing the segmentation in each 2D slice, and then reconstructing the 3D cells by linking the probable same cell accross slices. Second option `3D` is not really running in 2D: Cellpose will run on the image on `x,y` direction, `x,z` and then `y,z`. The 3D results will then be reconstructed by combining the flows calculated with each direction.
+  
+- `Stitch threshold` (**2D+stitch mode**): If you selected the `2D+stitch` option, Cellpose will predict the cells in each 2D slice and then will reconstruct the 3D cells by linking together cells that overlap enough between consecutive slices. This threshold controls how much cells in consecutive slices should overlap (intersection over union score). If you put 0, the cells will not be linked from one slice to another. If 1, cells would be linked as the same cell only if they are exactly the same from one slice to the next one. Decreasing this threshold allows to linked more cells together.
+  _This parameter range from 0 (no overlap) to 1 (full overlap: the cells are exactly the same). Default value is 0.0 (no 3D reconstruction)._
+  
+- `Flow 3d smooth` (**3D mode**): If you selected the `3D mode` option, this parameter allows to smooth the flows calculated by cellpose in 3D. The smoothing will be done with a gaussian filter with a stddev of the given parameter. This allows to have more regular 3D shapes.
+  _Default value to 0.0 (no smoothing)._
+  
