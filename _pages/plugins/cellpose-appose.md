@@ -42,7 +42,9 @@ From Fiji:
         This option allows to run CellPose v4 with SAM.
         The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).   
 - Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_  
-- Press "Ok" and Enjoy!   
+- Press "Ok" and Enjoy!
+
+Optionnaly, you can use the plugin from a Fiji macro, which allows you to run it automatically on several images or integrate it in a bigger pipeline. See [here](#run-from-macro) for more informations.
 
 {% include notice icon="info"
   content="The first time you run each option of this plugin, a python environment with the requested Cellpose version will be automatically installed in your home `.local\shared\appose` directory, which will take some time. The next time you use the same option, the environment will be directly activated from the plugin when needed so it will be much faster." %}
@@ -116,3 +118,57 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
 - `Flow 3d smooth` (**3D mode**): If you selected the `3D mode` option, this parameter allows to smooth the flows calculated by cellpose in 3D. The smoothing will be done with a gaussian filter with a stddev of the given parameter. This allows to have more regular 3D shapes.
  &#9881; _Default value to 0.0 (no smoothing)._
   
+___
+
+## Run from macro
+
+The plugin is compatible with Fiji macro. 
+
+### Macro from scratch
+To write a new macro, you can:
+- go to `File>New>Script...`that will opens the macro editor.
+- In `Language`, select `ImageJ Macro`
+- In the file, write:
+```
+run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1 nuclei_channel=None min_size=15 normalize=true resample=true return_rois=false cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false mode_3d=2D+stitch stitch_threshold=0.1 flow3d_smooth=0 torchversion=cpu usegpu=true");
+```
+
+### Macro from recorder
+You can also first use the plugin on one image, while recording your action:
+- go to `Plugins>Macro>Record...`
+- open your image
+- start cellpose-appose (in `Plugins>Segmentation>Cellpose-Appose>Cellpose...`)
+- choose the parameters relevant for your case
+- run it
+- when it's done, you will see in the recorder the command line that you did.
+- Click `Create` to directly create a new macro in the editor with your command line.
+
+### Macro to run on all .tif of a folder
+For example, here's a macro that will process all `.tif` files in a folder and save the resulting label image for each image in the same folder.
+
+```
+// Let you choose the folder to process
+directory = getDir("Choose folder to process");
+
+// get the list of all files in the selected directory
+filelist = getFileList(directory); 
+for (i = 0; i < lengthOf(filelist); i++) 
+{
+	// process only files that are tif files
+    if (endsWith(filelist[i], ".tif")) 
+    { 
+    	// open the image
+        open(directory + File.separator + filelist[i]);
+        raw_img = getImageID();
+        // run cellpose
+        run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1 nuclei_channel=None min_size=15 normalize=true resample=true return_rois=false cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false mode_3d=2D+stitch stitch_threshold=0.1 flow3d_smooth=0 torchversion=cpu usegpu=true");
+		// define the name of the label file to save it
+        label_file = directory+File.separator+substring( filelist[i], 0, lengthOf(filelist[i])-4 ) + "_labels.tif";
+        saveAs("Tiff", label_file);
+		// close the results and the raw image
+		close();
+		selectImage( raw_img );
+		close();
+    } 
+}
+``
