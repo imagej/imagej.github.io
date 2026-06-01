@@ -117,6 +117,13 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
   
 - `Flow 3d smooth` (**3D mode**): If you selected the `3D mode` option, this parameter allows to smooth the flows calculated by cellpose in 3D. The smoothing will be done with a gaussian filter with a stddev of the given parameter. This allows to have more regular 3D shapes.
  &#9881; _Default value to 0.0 (no smoothing)._
+
+### GPU handling
+
+Cellpose relies on pytorch to compute on GPU. 
+Depending on your operating system and on you GPU drivers, the version of cuda installed will not be the same.
+
+- `Torch version`: allows you to select the cuda versions that fits your system. On top of this parameter, the plugin prints a message with the information of your GPU driver. You can choose between `cpu` to not rely on cuda (if you don't have GPU or for MacOS system which handles it differently). Otherwise, choose the version `cu126` or `cu130` depending on the version that is printed above (same major version `12->126` or `13->130`). If it doesn't work, you can try the other 2 versions.
   
 ___
 
