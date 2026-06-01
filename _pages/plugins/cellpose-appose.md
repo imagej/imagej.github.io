@@ -56,6 +56,9 @@ ___
 
 After you selected a version of Cellpose, a graphical interface will pop-up to let you choose the parameters to run cellpose. See the Cellpose [documentation](https://cellpose.readthedocs.io/en/latest/) for full description of the parameters.
 
+{% include notice icon="tip"
+  content="If you put your mouse pointer above a parameter, a small text indicating the parameter meaning appears. More details are given for each parameter in the following." %}
+
 ### Cellpose parameters
 
 - `Cellpose model` (**Cellpose v3 only**): Select a pretrained model from Cellpose website. These models have been trained on dataset with specific biological objects, as for example nuclei for `nuclei` model. Select the model that corresponds the best to your data.
