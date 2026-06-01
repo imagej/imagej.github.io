@@ -68,7 +68,7 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
   - For **Cellpose-SAM**: Cellpose-SAM can use information from up to 3 channels to segment the objects. So select the number of channels that are relevant to segment your objects of interest.
  
 - `Minimum Object Size`: At the end of the segmentation process, objects that are smaller in size (total area in pixel) from this parameter will be removed. This allows to get rid off small errors segmentation of only a few pixel.
-   &#9881 _Default value is 15 pixels^2_.
+   &#9881; _Default value is 15 pixels^2_.
 
 - `Normalize Channel Intensity`: whether to use Cellpose's normalization or not. The normalization allows to put the images in the same range of pixel values than the one used for training to get better results. This is recommended, except if you perform your own normalization before.
   &#9881  _Default to True (checked)_.
