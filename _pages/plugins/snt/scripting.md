@@ -14,7 +14,18 @@ update-site: Neuroanatomy
 {% include notice content=version %}
 
 {% capture api%}
-The most up-to-date SNT API can be found at [https://javadoc.scijava.org/SNT](https://javadoc.scijava.org/SNT).
+
+
+##### API Documentation
+The complete API is hosted at [javadoc.scijava.org/SNT](https://javadoc.scijava.org/SNT) (release builds; updated on major releases) and at [morphonets.github.io/SNT/](https://morphonets.github.io/SNT/) (always reflects the latest source).
+
+##### Script SNT with an AI Agent
+SNT ships a ready-to-use **skill** (a portable prompt file) that primes an AI coding agent (Claude, Gemini, Copilot, Codex, Aider, Cline, Continue, and other agents with web access) with SNT's conventions, API patterns, and anti-patterns. Paste this into your agent's chat to get started:
+```
+Fetch https://raw.githubusercontent.com/morphonets/SNT/refs/heads/main/SKILL.md, follow its rules, then help me script SNT.
+```
+If your agent lacks web access, download [`SKILL.md`](https://github.com/morphonets/SNT/blob/main/SKILL.md) and paste its contents directly.
+
 {% endcapture %}
 {% include notice icon="info" content=api %}
 
