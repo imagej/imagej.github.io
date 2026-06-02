@@ -9,7 +9,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.<br>
+**This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice content=version %}
@@ -338,9 +338,11 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
  Independently of the algorithm used, the algorithm drop-down menu in this pane provides options to tweak the performance, accuracy and efficieny of the computations involved in the search. These include:
   
 - **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower computation footprint), or _Array_ (slightly faster, but higher footprint)
-  
+
+{% include img src="/media/plugins/snt/snt-cost-function-wizard.png" align="right" caption="Not sure which cost function suits your image? Use _Cost Function Selection Wizard..._ to compare all variants on a representative neurite segment: Each variant's candidate path is overlaid on a cropped view of the source image so you can pick the most suitable. The wizard accepts either a short traced path, a Path Manager selection, or a multi-point ROI (2+ points) as the probe segment" width="450px" %}
+
 - **Cost Function** Interactive tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
-    
+
   - **Reciprocal of Intensity** The default, robust under a wide range of conditions
     
   - **Difference of Intensity** Fast on images with right-shifted histograms (mean >> 0)
@@ -348,7 +350,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
   - **Difference of Intensity Squared** (Usually) Faster flavor of _Difference of Intensity_
     
   - **Probability of Intensity** Fast, specially on noisy images. To be used with 'Real-time statistics' (see below)
-  
+ 
 - **Image Statistics** Successful cost functions rely on _a priori_ understanding of the image (simpler cost functions may only require access to the image minimum (dimmest intensity) and maximum (brightest intensity), but many others may need access to the image's mean, standard deviation, etc.). Options include:
     
   - **Compute Real-Time** The default. Image statistics are computed during _each_ interactive tracing operation, along a bounding-box defined by the start and end points of the search

@@ -68,7 +68,7 @@ When tracing is paused, {% include key keys='Alt|Left Click' %} on a seed marker
 # Importing Seeds
 
 {% capture tipseed2%}
-Seeds can be imported by drag-and-drop. The following files are supported: [.csv](#from-csv-file), [.roi/.zip](#from-roi-manager), and [.tif](#from-labelsmasks-image)
+Seeds can be imported by drag-and-drop. The following files are supported: [.csv](#from-csv-file), [.roi/.zip](#from-rois), and [.tif](#from-labelsmasks-image)
 {% endcapture %}
 {% include notice icon="tip" content=tipseed2 %}
 
