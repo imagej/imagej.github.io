@@ -179,6 +179,17 @@ for (i = 0; i < lengthOf(filelist); i++)
     } 
 }
 ```
+
+## Segment only in a Region Of Interest
+
+It is possible to run Cellpose only in a region of the image by first drawing a ROI in the image.
+Then run `Cellpose_Appose` in the same way as you would do for a whole image. 
+Cellpose will segment only the objects within the selected ROI and returns the labels in a smaller image cropped around the ROI.
+
+If you select the option `return ROIs`, the resulting ROIs will be placed in the original image (full size), as you can see in the example image below.
+{% include img name="cellpose-overview" src="/media/cellpose-appose/process_rois.png" %}
+
+
 ## Issue/FAQ
 
 If you encountered a problem using the plugin, or to ask for a new feature, please fill an issue on the [github repository](https://github.com/Image-Analysis-Hub/cellpose-appose/issues).Please give as many details as possible.
