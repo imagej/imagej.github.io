@@ -24,7 +24,7 @@ SNT ships a ready-to-use **skill** (a portable prompt file) that primes an AI co
 ```
 Fetch https://raw.githubusercontent.com/morphonets/SNT/refs/heads/main/SKILL.md, follow its rules, then help me script SNT.
 ```
-If your agent lacks web access, download [`SKILL.md`](https://github.com/morphonets/SNT/blob/main/SKILL.md) and paste its contents directly.
+If your agent lacks web access, download [SKILL.md](https://github.com/morphonets/SNT/blob/main/SKILL.md) and paste its contents directly.
 
 {% endcapture %}
 {% include notice icon="info" content=api %}
