@@ -116,6 +116,10 @@ Flags sustained centripetal radius increases along a path. Since neurites genera
 A "run" is a consecutive sequence of nodes where each radius exceeds the previous. When a run's length meets or exceeds this threshold, a warning is produced.<br>
 **Default**: Enabled | **Severity level**: _Advisory note_ | **Range**: 3–100 (no. of nodes) |
 
+### Invalid thickness: flag
+Identifies paths containing nodes with zero, negative, or _NaN_ radius, which typically occurs from [un-fitted nodes](./manual#correct-radii), upon path [refinement](manual#refinefit-).<br>
+**Default**: Enabled | **Severity level**: _Warning_ | This check has no threshold field: it is either enabled or disabled
+
 ### Path signal quality: min contrast
 Measures how well each path stands out from the background in the image. At every node (excluding the first and last), a perpendicular [cross-section is sampled](./manual#node-profiler) using a Bresenham line that extends 3× the path radius (minimum 5 px) on each side.
 The sampled intensities are split by percentile: the lower quartile (P25) estimates background, the upper quartile (P75) estimates signal. The contrast ratio is defined as:
@@ -260,7 +264,7 @@ A typical workflow:
 
 # Detecting Crossovers
 
-A crossover is a spot where at least two neurites pass very close to each other in space (so they may look like they intersect in the image) but they are not connected in the reconstructed graph (i.e., there is no shared node / true topological join). Identification of crossover sites is thus useful to disambiguate overlaps between neurites and spot possible tracing mistakes, such as missed branch-points or false merges.
+A crossover is a spot where at least two neurites pass very close to each other in space (so they may look like they intersect in the image) without being topologically connected. Identification of crossover sites is thus useful to disambiguate overlaps between neurites and spot possible tracing mistakes, such as missed branch-points or false merges.
 
 {% include img align="center" src="/media/plugins/snt/snt-crossover.svg" caption="Overview of a crossover between two neurites.<br>Left: Seen from top, the two neurites appear to intersect. Right: rotation to front view reveals that the two paths are juxtaposed in the XZ plane." %}
 

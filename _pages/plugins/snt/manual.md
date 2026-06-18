@@ -600,7 +600,7 @@ This option assumes [sciview](/plugins/sciview) to be successfully installed. sc
 
 ### Big Volume Viewer
 
-Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](https://imagej.net/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Currently, support for Big Volume Viewer remains highly experimental.
+Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](https://imagej.net/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Currently, support for Big Volume Viewer remains experimental.
 {% include img align="center" name="BVV integration" src="/media/plugins/snt/snt-bvv.png" caption="BVV integration" %}
 
 ### Legacy 3D Viewer
@@ -778,18 +778,31 @@ This section of the toolbar allow for filtering the display of arbors in the Pat
 
 - <i class="fas fa-arrows-to-eye"></i> **Hide Others**: Shows only the arbor chosen in the drop‑down. If selected the Path Manager list is filtered to the select choice. If unselected all arbors are shown. Toolbar actions (Zoom, Bookmark, see below) honor this filter.
 
-## Zoom to Selected Path(s)
-<i class="fas fa-object-group"></i> Centers and zooms the image view to encompass the selected paths
+## Zoom to Path(s)
+<i class="fas fa-search-plus"></i> Centers and zooms the image view to encompass the selected paths
 
-## Zoom to Selected Node(s)
-<i class="fas fa-crosshairs"></i> Navigates to specific node locations on the selected paths, such as their midpoint, first/last branch point, etc. When a single path is selected, it is also possible to navigate to its node with the smallest/largest radius
+## Zoom to Node(s)
+<i class="fas fa-search-location"></i> Navigates the canvas to a notable node along the selected path(s). The popup menu groups options into four categories:
 
-## Bookmark Menu
-<i class="fas fa-bookmark"></i> This menu creates [bookmarks](#bookmarks-tab) at important locations. Two types of bookmarks are possible: 1) Topological locations (branch points, end-points, etc.), and 2) Quality-Control (QC) locations. The latter are locations pertinent to inspection, and review of traced paths, and include:
+- **Path Positions**: First Node, Last Node, Midpoint
+- **Structure**: First Branch Point, Last Branch Point, Sharpest Angle Node
+- **Thickness**: Smallest/Largest Radius Node (for paths with defined or fitted radii)
+- **Intensity**: Brightest/Dimmest Node (requires an image)
 
-- **Manually Tagged Nodes**: Nodes you previously color‑tagged (e.g., via the tracing canvas)
-- **Nodes With Invalid Radius**: Nodes whose radius is [unset or invalid](#correct-radii)
-- **Putative Crossovers**: These are “apparent crossings” (two or more paths passing very near without being topologically connected), automatically detected by SNT's algorithms. These are described in more detail in [Curation](./curation#detecting-crossovers). Note that detecting putative crossovers can be computationally heavy for large datasets. Start with a modest selection of paths and widen it as needed
+With multiple paths selected, the *Path Positions* and *Structure* items collect one node per path and zoom out to fit them all in view: useful as a population overview (e.g., zoom to the bounding box of every terminal). The *Thickness* and *Intensity* items instead navigate to the single global extremum across the entire selection (the thinnest node anywhere, the dimmest node anywhere, etc.).
+
+## Bookmark Locations
+<i class="fas fa-bookmark"></i> This menu creates [bookmarks](#bookmarks-tab) from key locations along selected path(s). The popup menu groups options into two categories:
+
+- **Topology**: Branch Points, End Points, Start Points
+- **Annotations**: Manually Tagged Nodes (nodes color-tagged via the canvas's [Tag Active Node](#tag-active-node-t) command)
+
+Each entry adds one bookmark per matching node, accumulating across every selected path.
+
+{% capture qc-locations%}
+For algorithmically-detected quality control (QC) locations (invalid radii, putative crossovers, parallel bundles, etc.), use the [Curation Assistant](./curation#curation-assistant) instead.
+{% endcapture %}
+{% include notice icon="info" content=qc-locations %}
 
 
 ## Menu Commands
@@ -813,10 +826,6 @@ Duplicates the selected path with options to duplicate just a sub-segment or a f
 - **Make primary** Whether the duplicated path (or group of paths) should be disconnected from their parent
 <img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" alt="Duplicate... (v4.3)" title="Duplicate... (v4.3)" />
 
-#### Go To...
-
-Zoom-in into specific locations of the selected path.
-
 #### Rename...
 
 Renames the selected Path. Only one Path may be renamed at a time because path names are expected to be unique.
@@ -828,19 +837,6 @@ Connects two paths in a parent-child relationship. The fork-point between the tw
 #### Disconnect...
 
 Disconnects selected path(s) from all of its connections. Note that this is an undoable operation and will force connectivity of remaining paths to be rearranged.
-
-#### Combine...
-
-Combines (connects) two or more _disconnected_ paths into one (undoable operation).
-
-#### Concatenate...
-
-Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/auto-tracing) belonging to the same neurite.
-
-{% capture hotip%}
-Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations.
-{% endcapture %}
-{% include notice icon="info" content=hotip %}
 
 #### Create Shared Root (Soma)...
 
@@ -859,6 +855,20 @@ Use Path Orientation (hold {% include key keys='O' %}) to verify path orientatio
 {% endcapture %}
 {% include notice icon="info" content=hotip %}
 
+#### Combine...
+
+Combines (connects) two or more _disconnected_ paths into one (undoable operation).
+
+#### Concatenate...
+
+Concatenates two or more paths into a single un-branched segment. Concatenated paths must be oriented in the same direction. Can be used to merge non-contiguous fragments from [full-automated tracing](/plugins/snt/auto-tracing) belonging to the same neurite.
+
+{% capture hotip%}
+Use Path Orientation (hold {% include key keys='O' %}) to verify path orientations.
+{% endcapture %}
+{% include notice icon="info" content=hotip %}
+
+
 #### Reverse...
 
 Reverses (flips) the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by full-automated tracing. Options:
@@ -867,21 +877,24 @@ Reverses (flips) the orientation of primary path(s) so that the starting node be
 - **Reverse and update child branch point(s)**: Flips node order and recalculates all child branch point indices to maintain correct connections
 - **Orient tree toward root**: Only reverses paths whose end node is closer to the root than their start node, ensuring all paths in the tree point away from the root. This is useful for batch-correcting inconsistent orientations without affecting already-correct paths. Child branch points are updated automatically
 
+#### Specify Channel/Frame...
+Changes channel & time positions of selected path(s).
+
 #### Specify Constant Radius...
 
-Assigns a constant radius to all the nodes of selected Path(s). This setting only applies to unfitted Paths and overrides any existing values.
+Assigns a constant radius to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values.
 
 #### Specify No. Spine\Varicosity Markers...
 
 Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity/Label Analysis](/plugins/snt/spines-varicosities)).
 
-#### Ramer-Douglas-Peuker Downsampling...
-
-Simplifies paths by reducing their node density. Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s) (undoable operation).
-
 #### Correct Z-Shrinkage...
 
 Corrects Z-axis shrinkage from tissue processing (e.g., histological sectioning and mounting). The command prompts for a correction factor, typically the ratio of *cut thickness / mounted thickness*. Values greater than 1 expand Z coordinates; values less than 1 compress them. If an image is loaded, a warning is displayed when corrected nodes would fall outside image bounds. This operation cannot be undone.
+
+#### Downsample...
+
+Simplifies paths by reducing their node density using Ramer-Douglas-Peuker downsampling. Given an inputted maximum permitted distance between adjacent nodes, performs {% include wikipedia title="Ramer–Douglas–Peucker algorithm" %} downsampling on the selected Path(s) (undoable operation).
 
 #### Rebuild...
 

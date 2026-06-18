@@ -126,43 +126,7 @@ Note that this approach would work for both local and remote files. The result o
 
 # Python Notebooks
 
-Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PyImageJ](/scripting/pyimagej) module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [Notebooks](https://github.com/morphonets/SNT/tree/-/notebooks) directory in the SNT repository contains several examples at different complexity levels.
-
-Here, we will only exemplify basic functionality. Please refer to the complete [notebook examples](https://github.com/morphonets/SNT/blob/main/notebooks/) for more details. Once the Python environment is properly [setup](https://github.com/morphonets/SNT/tree/-/notebooks#snt-notebooks), one can initialize Fiji:
-
-{% highlight python %}
-import imagej
-ij = imagej.init('sc.fiji:fiji', mode='interactive')
-{% endhighlight %}
-
-Then, one import the needed SNT (Java) classes. E.g., to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [MouseLightLoader](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/io/MouseLightLoader.html) and [TreeStatistics](https://javadoc.scijava.org/SNT/index.html?sc/fiji/snt/analysis/TreeStatistics.html) classes:
-
-{% highlight python %}
-from scyjava import jimport
-MouseLightLoader = jimport('sc.fiji.snt.io.MouseLightLoader')
-TreeStatistics = jimport('sc.fiji.snt.analysis.TreeStatistics')
-{% endhighlight %}
-
-Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (ID = "AA0100" in the [MouseLight database](https://ml-neuronbrowser.janelia.org/)).
-
-{% highlight python %}
-def run():
-    loader = MouseLightLoader("AA0100")
-    if not loader.isDatabaseAvailable():
-        print("Could not connect to ML database", "Error")
-        return
-    if not loader.idExists():
-        print("Somehow the specified id was not found", "Error")
-        return
-
-    a_tree = loader.getTree('axon', None) # compartment, color
-    s_stats = TreeStatistics(a_tree)
-    metric = TreeStatistics.INTER_NODE_DISTANCE
-    summary_stats = s_stats.getSummaryStats(metric)
-    s_stats.getHistogram(metric).show()
-    print("The average inter-node distance is %d" % summary_stats.getMean())
-
-{% endhighlight %}
+Direct access to the SNT API from the [Python](https://www.python.org/) programming language is made possible through the [PySNT](https://pysnt.readthedocs.io/en/latest/). This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). PySNT's [Tutorial Notebooks](https://pysnt.readthedocs.io/en/latest/notebooks/index.html) include several tutorials at different complexity levels.
 
 # Fiji Scripting
 
