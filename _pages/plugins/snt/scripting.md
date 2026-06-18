@@ -9,7 +9,7 @@ update-site: Neuroanatomy
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.11](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice content=version %}
 
@@ -83,13 +83,14 @@ The REPL has access to _all_ of SNT's API. The prompt does not feature auto-comp
 
 {% highlight java %}
 >>> api(snt, "demo")
-6 method(s) available in sc.fiji.snt.SNTService:
-  demoImage(String arg0)           -> ImagePlus
-  demoTree(String arg0)            -> Tree
-  demoTree()                       -> Tree
-  demoTreeImage()                  -> ImagePlus
-  demoTrees()                      -> List
-  demoTreesSWC()                   -> List
+7 method(s) available in sc.fiji.snt.SNTService:
+  demoImage(String arg0)                -> ImagePlus
+  demoImgPlus(String arg0)              -> ImgPlus
+  demoTree()                            -> Tree
+  demoTree(String arg0)                 -> Tree
+  demoTreeImage()                       -> ImagePlus
+  demoTrees()                           -> List
+  demoTreesSWC()                        -> List
 {% endhighlight %}
 
 # Analysis of External Data

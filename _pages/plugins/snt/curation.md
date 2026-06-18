@@ -32,7 +32,7 @@ The Assistant panel is organized into four regions:
 
 1. **[Live Monitoring Parameters](#live-monitoring-parameters)**: Lightweight checks that run inline during interactive tracing (at fork initiation, segment completion, path finalization, and node editing)
 2. **[On-Demand Monitoring Parameters](#on-demand-monitoring-parameters)**: More computationally intensive checks that scan the full reconstruction when explicitly triggered
-3. **[Toolbar](#toolbar-actions)**: Action buttons and options menu for calibration and presets
+3. **[Toolbar](#toolbar-actions)**: Action buttons and options for calibration and presets
 4. **[Issues Table](#issues-table)**: Displays current issues sorted by severity and/or impact. Double-click a row to navigate to the warning location in the image
 
 
@@ -156,7 +156,19 @@ A dropdown with two sections:
 - **Show**: Checkboxes for each severity level (_Errors_, _Warnings_, _Advisory Notes_) controlling which categories appear in the table
 - **Sort**: A _Sort by Impact (descending)_ toggle that orders the issues by impact fraction, highest first. Useful for triage when you want consequential issues at the top. Clicking a column header manually overrides it until re-enabled
 
-### <i class="fas fa-cog"></i> Options Menu 
+### <i class="fas fa-toolbox"></i> Utilities Menu  
+A dropdown listing commands listing conveninence actions:
+
+- **Visiting Zoom Level ›**: Configures the zoom applied when double-clicking a warning to navigate.
+
+- **Color Paths by Issue Severity**: For each issue, color codes affected paths by severity: <span style="font-weight: bold;color:#FF6565;">Error</span>, <span style="font-weight: bold;color:#FFD654;">Warning</span>, or <span style="font-weight: bold;color:#4DA0FF;">Advisory Note</span>
+
+- **Seed Reviews**:
+  - **Mark Affected Path(s) As ›**: Tags the path(s) referenced by the selected warning(s) as _positive_, _negative_, or _follow-up_ examples for [seed-review workflows](#seed-review)
+  - **Show Reviewed Paths in Path Manager**: Switches focus to the Path Manager and filters its list to paths carrying any `cur:*` review tag.
+
+
+### <i class="fas fa-cog"></i> Calibration Menu 
 A dropdown listing commands for parameter [calibration](#calibrating-parameters): from [existing reconstructions](#calibrating-thresholds-from-traced-cells), [built-in](#built-in-presets), or [user](#user-presets) presets.
 
 ## Issues Table
@@ -172,13 +184,9 @@ Default order is by severity descending (_Errors_ → _Warnings_ → _Advisory N
 **Double-click** a row to navigate to the warning's spatial location in the image. The view centers on the affected node and zooms to the configured visiting zoom level (table's contextual menu).
 
 **Right-click** the table for:
-
 - **Copy Issue Description**: Copies selected issues (or all rows when nothing is selected) to the clipboard as tab-separated text including severity, message, and affected path names
 - **Help on Issue...**: Opens this documentation page anchored to the section describing the selected check
 - **Clear All Issues**: Empties the table
-- **Mark Affected Path(s) As ›**: Tags the path(s) referenced by the selected warning(s) as _positive_, _negative_, or _follow-up_ examples for [seed-review workflows](#seed-review)
-- **Show Reviewed Paths in Path Manager**: Switches focus to the Path Manager and filters its list to paths carrying any `cur:*` review tag.
-- **Visiting Zoom Level ›**: Configures the zoom applied when double-clicking a warning to navigate.
 - **Detach Table**: Pops the issues table out into a separate floating window so it can be docked elsewhere or kept visible while the main panel is used for other tasks.
 
 # Understanding Impact
@@ -201,11 +209,11 @@ For fork-point warnings involving both a parent and child path, the **child** is
 A striking feature of the Curation Assistant is that the threshold of each validation parameter can be calibrated with fine granularity using known ground-truth data from multiple sources: existing files, built-in presets, or user presets. It is also possible to fine-tune thresholds by inspecting the distributions of traced paths.
 
 ## Calibrating Thresholds from Traced Cells
-Calibrates the Assistant from existing reconstructions. Available via the [Options Menu](#options-menu), {% include bc path='Calibrate Thresholds from Traced Cells...'%}: the command opens a file chooser for selecting reconstruction files. The selected cells are loaded, and all thresholds are inferred from their morphological statistics using percentile analysis (5<sup>th</sup> percentile for lower-bound thresholds, 95<sup>th</sup> percentile for upper-bound).
+Calibrates the Assistant from existing reconstructions. Available via the [Utilities Menu](#utilities-menu), {% include bc path='Calibrate Thresholds from Traced Cells...'%}: the command opens a file chooser for selecting reconstruction files. The selected cells are loaded, and all thresholds are inferred from their morphological statistics using percentile analysis (5<sup>th</sup> percentile for lower-bound thresholds, 95<sup>th</sup> percentile for upper-bound).
 The calibrated values are applied to the panel immediately. See [Advanced Curation Tasks](#advanced-curation-tasks) for details on the underlying algorithm.
 
 ## Built-in Presets
-Calibrates the Assistant from NeuroMorpho reference data and provides sensible starting points for common cell types. Available via the [Options Menu](#options-menu) {% include bc path='Built-in Presets'%} list:
+Calibrates the Assistant from NeuroMorpho reference data and provides sensible starting points for common cell types. Available via the [Utilities Menu](#utilities-menu) {% include bc path='Built-in Presets'%} list:
 Selecting a preset loads its thresholds and enabled states into the panel. Presets include:
 
 | Preset | Cell type | Species | Publication(s) | NeuroMorpho archive |
@@ -222,7 +230,7 @@ Selecting a preset loads its thresholds and enabled states into the panel. Prese
 
 
 ## User Presets
-Calibrates the Assistant from your own data. Available via the [Options Menu](#options-menu) {% include bc path='User Presets'%} list, automatically populated from preset files (`.curation` extension) found in the `curations/` subdirectory of the SNT workspace (typically `~/SNT_workspace/curations/`). This section of the menu also includes commands to manage presets:
+Calibrates the Assistant from your own data. Available via the [Calibration Menu](#utilities-menu) {% include bc path='User Presets'%} list, automatically populated from preset files (`.curation` extension) found in the `curations/` subdirectory of the SNT workspace (typically `~/SNT_workspace/curations/`). This section of the menu also includes commands to manage presets:
 
 - **Create From Current Parameters...** Saves the current thresholds and enabled states to a new `.curation` file (described [here](./extending#curation-file-format)).
 - **Reload User Presets**: Rescans the curations directory and refreshes the menu
@@ -230,8 +238,9 @@ Calibrates the Assistant from your own data. Available via the [Options Menu](#o
 
 
 ## Distribution Inspection
-Allows you to calibrate the Assistant from all the paths currently listed in the [Path Manager](./manual#path-manager). Next to each parameter spinner is a small histogram button. Clicking it opens a popup showing the distribution of the corresponding metric across the current reconstruction, with:
 <img align="right" width="375" src="/media/plugins/snt/snt-curation-distribution.png" alt="Distribution Inspection" title="Calibrating the assistant using distributions" />
+
+Allows you to calibrate the Assistant from all the paths currently listed in the [Path Manager](./manual#path-manager). Next to each parameter spinner is a small histogram button. Clicking it opens a popup showing the distribution of the corresponding metric across the current reconstruction, with:
 
 - Quartile markers (Q1, median, Q3) and a descriptive subtitle reporting _n_, _min_, _max_, _mean_, and _SD_
 - A threshold line at the configured spinner value, with the flagged region lightly shaded
