@@ -5,10 +5,10 @@ source-url: https://github.com/Image-Analysis-Hub/cellpose-appose
 icon: /media/icons/cellpose.png
 license: BSD-3 Clause license
 categories: [Segmentation]
-forum-tag: fiji, cellpose
+forum-tag: ["fiji","cellpose-appose"]
 dev-status: 'active'
 update-site: 'Appose-Playground'
-team-founder: ["@gletort", "Stephane Rigaud", "Julie Mabon"]
+team-founder: ["Gaelle Letort", "Stephane Rigaud", "Julie Mabon"]
 team-maintainer: ["Gaelle Letort", "Stephane Rigaud", "Jean-Yves Tinevez"]
 team-developers: ["Gaelle Letort", "Stephane Rigaud", "Julie Mabon", "Jean-Yves Tinevez"]
 ---
