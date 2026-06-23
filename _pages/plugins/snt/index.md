@@ -42,6 +42,7 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 /media/plugins/snt/snt-angular-sholl.png | Advanced [Sholl-based quantifications](/plugins/snt/sholl#angular-sholl)
 /media/plugins/snt/snt-root-angle-analysis.png | [Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis)
 /media/plugins/snt/snt-local-angle-surface-analysis.png | Analysis of [surface angles/arbor orientation](/plugins/snt/metrics#extension-angle)
+/media/plugins/snt/snt-time-profiler-v.png | [Calcium dynamics along neurites](/plugins/snt/walkthroughs#generic-measurements)
 /media/plugins/snt/snt-growth-analysis.png | [Growth Analysis](/plugins/snt/analysis#growth-analysis)
 /media/plugins/snt/snt-delineation-analysis2.png | [Delineation analyses](/plugins/snt/walkthroughs#delineation-analysis)
 /media/plugins/snt/snt-ferris-wheel.png | Routines to summarize [innervation patterns](/plugins/snt/analysis#graph-based-analysis)

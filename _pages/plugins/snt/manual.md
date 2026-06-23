@@ -598,9 +598,13 @@ This widget provides an entry point to a dedicated [Reconstruction Viewer](/plug
 
 This option assumes [sciview](/plugins/sciview) to be successfully installed. sciview is a modern replacement for the [Legacy 3D Viewer](#legacy-3d-viewer), providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. sciview scenes support image volumes, meshes, and paths, as well as integration with [Cx3D](https://github.com/morphonets/cx3d). The latter enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [SNT: Modeling](/plugins/snt/modeling) for details.
 
+### Big Data Viewer
+
+[Big Data Viewer (BDV)](/plugins/bdv) is Fiji's reslicing browser for TB-size images. 
+
 ### Big Volume Viewer
 
-Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](https://imagej.net/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Currently, support for Big Volume Viewer remains experimental.
+Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory.
 {% include img align="center" name="BVV integration" src="/media/plugins/snt/snt-bvv.png" caption="BVV integration" %}
 
 ### Legacy 3D Viewer
@@ -622,7 +626,12 @@ This tab hosts a simple notepad allowing you to jot down notes without disruptin
 
 
 ## Status Bar
-The status bar at the bottom of the Main Dialog displays brief messages about ongoing operations. By default, the status bar reports the image title and the CT position being traced.
+The status bar at the bottom of the Main Dialog displays brief messages about ongoing operations. By default, the status bar reports the image title and the CT position being traced. It also provides convenience access to utilities that are common to all SNT workflows, including:
+
+- <i class="fas fa-lightbulb"></i> **Hints**: Displays a usage tip 
+- <i class="fas fa-keyboard"></i> **List of Keyboard Shortcuts**: Displays an offline version of [keyboard shortcuts](/plugins/snt/key-shortcuts)
+- <i class="fas fa-house-laptop"></i> **Workspace indicator**: Creates/Reveals the workspace directory
+- <i class="fas fa-bolt"></i> **Quick Toggles**: Convenience access to common toggles (visibility filters, diameter rendering, etc.)
 
 
 # Image Contextual Menu
@@ -1149,6 +1158,7 @@ NB:
    - Shapes are always centered at the node
    - Shapes are assembled orthogonally to the path in the node's plane. E.g., If *2D line*, intensities are retrieved along a line perpendicular to the path at the node's location (i.e., similar to the way radii of traced paths are rendered in the tracing image)
    - If *None* is selected, a single intensity is retrieved at the node
+   - For profiles of paths across time (e.g., calcium dynamics along a neurite), have a look at [Time-lapse Analysis](/plugins/snt/walkthroughs#time-lapse-analysis)
 
 - *Radius* The radius (in pixels) of the shape, or half-length if shape is *2D Line*. If set to zero and the path has radii, each shape is resized to the radius of its node.
 

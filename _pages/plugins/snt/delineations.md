@@ -95,7 +95,7 @@ To re-define a delineation it is sufficient to re-define or re-adjust an existin
 - <i class="fas fa-object-group"></i> Merges two or more delineations into one
 - <i class="fas fa-swatchbook"></i> Applies one of the default color schemes to the delineations list
 - <i class="fas fa-pen"></i> Enables/Disables direct editing of delineation names
-- _Outside color_ widget: Defines the color for non-delineated sections, i.e., those sections that remain _outside_ delineated areas
+- _Non-delineating color_ widget: Defines the color for non-delineated sections, i.e., those sections that remain "outside" delineated areas
 
 
 ## Hierarchical Labels and Level-split Analysis
@@ -120,7 +120,7 @@ Measurements are retrieved using the <i class="fas fa-chart-bar"></i> _Plot_ and
 
 In addition to defined delineations, plots and tables may include two other categories:
 
-- _Non-delineated_: This category corresponds to all the path sections that remained in-between or outside delineations. _Non-delineated_ sections are labeled by [outside color](#editing-delineations)
+- _Non-delineated_: This category corresponds to all the path sections that remained in-between or outside delineations. _Non-delineated_ sections are labeled with the [non-delineating color](#editing-delineations)
 
 - _Unaffected paths_: This category corresponds to full paths that have no XY coordinates inside any delineation. _Unaffected paths_  retain their rendered colors
 

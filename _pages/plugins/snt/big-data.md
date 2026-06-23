@@ -23,7 +23,7 @@ SNTv5 implemented _preliminary_ support for big data. The following operations a
 | Automated tracing        | Supported (experimental)                                                                    | See [Auto-tracing](./auto-tracing#grayscale-images)<sup>1,2</sup>                               |
 | Tracing along way-points | Supported in headless scripts<sup>2</sup>                                                   | A* tracing performed using pre-existing coordinates is fully supported via scripting<sup>2</sup>|
 | Path optimization        | Supported in headless scripts<sup>2</sup>                                                   | [Optimization of curvatures](./manual#refinefit-), including extraction of radii<sup>2</sup>.   |
-| 3D Visualization: Interactive re-slicing browser | Supported via [BigDataViewer](/plugins/bdv/) | Visualization of reconstructions, including [color mappings](./manual#color-mapping-), etc.  |
+| 3D Visualization: Interactive re-slicing browser | Supported via [BigDataViewer](./manual#big-data-viewer) | Visualization of reconstructions, including [color mappings](./manual#color-mapping-), etc.  |
 | 3D Visualization: Interactive volume viewer       | Supported via [BigVolumeViewer](./manual#big-volume-viewer) and [sciview](./manual#sciview) | Visualization of 3D reconstructions, including [color mappings](./manual#color-mapping-), etc.  |
 
 <sup>1</sup>For interactive tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets
