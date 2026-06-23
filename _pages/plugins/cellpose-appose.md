@@ -6,6 +6,11 @@ license: BSD-3 Clause license
 artifact: fiji.plugin:Cellpose_Appose
 categories: [Segmentation]
 forum-tag: fiji, cellpose
+dev-status: 'active'
+update-site: 'Appose-Playground'
+team-founder: 'Gaëlle Letort & Stephane Rigaud & Julie Mabon'
+team-maintainer: 'Gaëlle Letort & Stephane Rigaud & Jean-Yves Tinevez'
+team-developers: 'Gaëlle Letort & Stephane Rigaud & Julie Mabon & Jean-Yves Tinevez'
 ---
 
 This plugin install and run [cellpose](https://www.cellpose.org/) on an image (2D/3D/multi-colors/time) in Fiji. 
