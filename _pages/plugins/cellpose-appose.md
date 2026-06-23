@@ -2,6 +2,7 @@
 title: Cellpose-Appose 
 description: PLugin to use Cellpose from Fiji relying on Appose.
 source-url: https://github.com/Image-Analysis-Hub/cellpose-appose
+icon: /media/icons/cellpose.png
 license: BSD-3 Clause license
 artifact: fiji.plugin:Cellpose_Appose
 categories: [Segmentation]
