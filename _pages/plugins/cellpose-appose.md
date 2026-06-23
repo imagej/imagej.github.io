@@ -201,7 +201,7 @@ Then run `Cellpose_Appose` in the same way as you would do for a whole image.
 Cellpose will segment only the objects within the selected ROI and returns the labels in a smaller image cropped around the ROI.
 
 If you select the option `return ROIs`, the resulting ROIs will be placed in the original image (full size), as you can see in the example image below.
-{% include img name="cellpose-roi" src="/media/cellpose-appose/process_rois.png" %}
+{% include img name="cellpose-roi" src="/media/cellpose-appose/process_roi.png" %}
 
 
 ## Issue/FAQ
