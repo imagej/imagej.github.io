@@ -15,7 +15,7 @@ team-developers: ["Gaelle Letort"]
 
 **Semi-automatic segmentation/annotation of 3D objects**
 
-This plugin install and run [nnInteractive]([https://www.cellpose.org/](https://github.com/MIC-DKFZ/nnInteractive)) on a stack (3D) in Fiji. 
+This plugin install and run [nnInteractive](https://github.com/MIC-DKFZ/nnInteractive) on a stack (3D) in Fiji. 
 nnInteractive segments objects in 3D based on prompts placed by the user.
 
 {% include img name="nninterappose-overview" src="/media/plugins/nninterappose/overview.png" %}
