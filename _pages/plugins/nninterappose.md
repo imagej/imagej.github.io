@@ -5,7 +5,7 @@ source-url: https://github.com/Image-Analysis-Hub/nnInterappose
 icon: /media/icons/nninteractive.png
 license: BSD-3 Clause license
 categories: [Segmentation, Annotation]
-forum-tag: ""
+forum-tag: ["fiji", "appose"]
 dev-status: 'active'
 update-site: 'Appose-Playground'
 team-founder: ["Gaelle Letort"]
@@ -13,8 +13,12 @@ team-maintainer: ["Gaelle Letort"]
 team-developers: ["Gaelle Letort"]
 ---
 
+**Semi-automatic segmentation/annotation of 3D objects**
+
 This plugin install and run [nnInteractive]([https://www.cellpose.org/](https://github.com/MIC-DKFZ/nnInteractive)) on a stack (3D) in Fiji. 
 nnInteractive segments objects in 3D based on prompts placed by the user.
+
+{% include img name="nninterappose-overview" src="/media/plugins/nninterappose/overview.png" %}
 
 This plugin is based on [Appose](https://github.com/apposed/appose), that automatically install python environment and allows python script execution with shared objects with Fiji.
 
@@ -66,10 +70,17 @@ In this Fiji plugin, currently possible options to annotate are (other ROIs migh
 * Point ROI -> nnInteractive point seed
 * Line ROI -> nnInteractive scribble. In the Fiji side, it can be any type of line ROI (single line, segmented line, or freehand line).
 
-![Possible ROI to use](./media/nninterappose/RoiToolbar.png)
+{% include img name="possible ROI to use" src="/media/plugins/nninterappose/RoiToolbar.png" %}
 
 If you want the prompt to be a positive interaction (see nnInteractive documentation), press `1` to add the current ROI to the ROIManager as a positive one. 
 For a negative prompt (relevant in `All ROIs for one object` mode), press `2` to add the current selection to the RoiManager as a negative one.
+
+#### Orthogonal views
+
+You can also place prompts on the two orthogonal views (XZ and YZ stacks) that can be open on the side of the image.
+This allows for more flexibility in the 3D annotations.
+
+The shortcuts are the same: select the stack (XZ or YZ) and the slice where you want to add a prompt, draw the ROI and press `1` for positive annotation and `2` for a negative one.
 
 
 ### Segment
