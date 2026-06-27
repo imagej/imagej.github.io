@@ -24,7 +24,7 @@ Unlike electrophysiology simulators (e.g., [NEURON](https://www.neuronsimulator.
 
 {% include img align="center" name="cx3d-sciview" src="/media/plugins/snt/cx3d-sciview.png" caption="Synthetic neuron generated using the *[Random Branching](https://github.com/morphonets/cx3d/blob/-/src/main/java/sc/iview/cx3d/commands/RandomBranchingDemo.java)* demo, accessible from sciview's *Demo* menu." %}
 
-## Key Cpabilities
+## Key Capabilities
 - **Morphogenesis**: Cells divide, migrate, and grow neurites in a 3D physical space governed by mechanical forces and chemical gradients
 - **Agent-based**: Each cell follows local rules; emergent network structure arises from those rules
 - **Developmental time scales**: Hours/days of neurodevelopment
