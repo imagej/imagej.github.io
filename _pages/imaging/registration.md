@@ -59,7 +59,7 @@ A tool for morphological data mining, three-dimensional modeling and image stitc
 {% include img src="trakem2-snap" width="500" %}
 
 * Registers floating image tiles to each other using SIFT and global optimization algorithms.
-* See the [TrakEM2 user manual section on registration](https://www.ini.uzh.ch/~acardona/trakem2_manual.html#registration)
+* See the [TrakEM2 user manual section on registration](https://syn.mrc-lmb.cam.ac.uk/acardona/INI-2008-2011/trakem2_manual.html#registration)
 
 ### [Register Virtual Stack Slices](/plugins/register-virtual-stack-slices)
 
