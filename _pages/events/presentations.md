@@ -31,7 +31,7 @@ Do you know of a publicly archived ImageJ-related presentation not listed here? 
   }
 </style>
 
-## Living workshops
+## Workshops
 
 These materials are regularly updated, and intended to teach ImageJ and Fiji at introductory, intermediate and advanced levels. The [LOCI](/orgs/loci) group uses them to teach ImageJ at the [AQLM](http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/) course every year, as well as locally. Videos of the workshops were recorded in Spring 2017; those links are below along with the corresponding slides used at that time.
 
@@ -47,10 +47,10 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>Introduction to ImageJ/Fiji</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1JzcToNnOTlt0dmthmkdhAhmcHG3aSnzLcyugB29Csmg/edit?usp=sharing">2024</a>,
-        <a href="https://docs.google.com/presentation/d/1if03t5KoVHgsy8s96ABnlzaGz8dNPUSZ3i5Wpwv5PCs/edit?usp=sharing">2023</a>,
-        <a href="https://docs.google.com/presentation/d/1dcu41cC3Yzw2MnBMiWzWlHd7Rstr8Coo0zRAOXmfSGs/edit?usp=sharing/">2021</a>,
-        <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/edit?usp=sharing/">2019-fall</a>,
+        <a href="https://docs.google.com/presentation/d/1JzcToNnOTlt0dmthmkdhAhmcHG3aSnzLcyugB29Csmg/present">2024</a>,
+        <a href="https://docs.google.com/presentation/d/1if03t5KoVHgsy8s96ABnlzaGz8dNPUSZ3i5Wpwv5PCs/present">2023</a>,
+        <a href="https://docs.google.com/presentation/d/1dcu41cC3Yzw2MnBMiWzWlHd7Rstr8Coo0zRAOXmfSGs/present">2021</a>,
+        <a href="https://docs.google.com/presentation/d/12TUYh2snsOAxcOBNprh70KOqV5gqdzEjGIo2UTHs-DY/present">2019-fall</a>,
         <a href="/presentations/fiji-introduction/">2019-spring</a>,
         <a href="/presentations/2017-05/fiji-introduction/">2017</a>
       </td>
@@ -58,15 +58,15 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>Image processing with ImageJ/Fiji</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1FteAHtgwo60oE3FlrRwQ9La5rn4G090l6mhbGUNwClg/edit?usp=sharing">2023</a>
+        <a href="https://docs.google.com/presentation/d/1FteAHtgwo60oE3FlrRwQ9La5rn4G090l6mhbGUNwClg/present">2023</a>
       </td>
     </tr>
     <tr>
       <td>Segmentation in ImageJ/Fiji</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1ebyxUHph_O_OcngfMsR2QuxMJcdODpu08qAWUpQCIvM/edit?usp=sharing">2023</a>,
-        <a href="https://docs.google.com/presentation/d/1HKHZTTYCZWvm62IvgGAxzOvchwNfJswsx5WtKuRVCRE/edit?usp=sharing">2021</a>,
-        <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/edit#slide=id.g7c8e1a894f_0_0/">2020</a>,
+        <a href="https://docs.google.com/presentation/d/1ebyxUHph_O_OcngfMsR2QuxMJcdODpu08qAWUpQCIvM/present">2023</a>,
+        <a href="https://docs.google.com/presentation/d/1HKHZTTYCZWvm62IvgGAxzOvchwNfJswsx5WtKuRVCRE/present">2021</a>,
+        <a href="https://docs.google.com/presentation/d/13FKh5BlkmfSjPJp9wRWFEpbgWz5D6rWfPBxGR7JV8PM/present">2020</a>,
         <a href="/presentations/fiji-segmentation/">2019</a>,
         <a href="/presentations/2017-05/fiji-segmentation/">2017</a>
       </td>
@@ -74,10 +74,14 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
     <tr>
       <td>Scripting with ImageJ/Fiji</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1c7cvJLAhRZ9t1zrbbAQ0Zr-hTrHva6WOT6hQQinuDTE/edit?usp=sharing/">2021</a>,
+        <a href="https://docs.google.com/presentation/d/1c7cvJLAhRZ9t1zrbbAQ0Zr-hTrHva6WOT6hQQinuDTE/present">2021</a>,
         <a href="/presentations/fiji-scripting/">2019</a>,
         <a href="/presentations/2017-05/fiji-scripting/">2017</a>
       </td>
+    </tr>
+    <tr>
+      <td>Segmentation & Scripting with Fiji/ImageJ</td>
+      <td><a href="https://docs.google.com/presentation/d/1PjzLeKpouuEpxOOwETS4TiOgTHTEbozOIJzcLNA0J6s/present">2024-Oct-29</a></td>
     </tr>
   </tbody>
 </table>
@@ -115,19 +119,11 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='ctrueden' %}</td>
       <td>The Future of Image Analysis + ImageJ/Fiji</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1Lt024rW_g79qTTlcJPaxVbNFJuOzeVdEdDpQPuQJd0I/edit?usp=drive_link">slides</a>
+        <a href="https://docs.google.com/presentation/d/1Lt024rW_g79qTTlcJPaxVbNFJuOzeVdEdDpQPuQJd0I/present">slides</a>
       </td>
     </tr>
     <tr>
       <th colspan=4 class="section-major"><a href="https://www.embl.de/training/events/2018/IMJ18-01/">From Images to Knowledge with ImageJ & Friends</a></th>
-    </tr>
-    <tr>
-      <td>2024-Oct-29</td>
-      <td>{% include person id='elevans' %}</td>
-      <td>Segmentation & Scripting with Fiji/ImageJ</td>
-      <td>
-        <a href="https://docs.google.com/presentation/d/1PjzLeKpouuEpxOOwETS4TiOgTHTEbozOIJzcLNA0J6s/edit?usp=sharing">slides</a>
-      </td>
     </tr>
     <tr>
       <td>2018-Dec-06</td>
