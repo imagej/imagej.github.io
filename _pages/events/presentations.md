@@ -108,7 +108,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='ctrueden' %}</td>
       <td>Fiji Progress and Priorities 2024</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1YyFymvpFYA4L-p8gIMgKvJzrZhto6sNl0qItEImNme4/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/1tu3ht778SnslFnCFpsp6BOq2Evytwpwc/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -401,7 +401,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='hinerm' %}</td>
       <td>Introduction to the ImageJ2 Team (C-MITIE Retreat)</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/166CkXRaaSXS-qd4F6VYyIkYILevMKfCT-jhUyloHUjM/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/166CkXRaaSXS-qd4F6VYyIkYILevMKfCT-jhUyloHUjM/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -409,7 +409,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='elevans' %}</td>
       <td>Introduction to the ImageJ Ecosystem (Advanced Imaging Methods Workshop 2023)</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1e6sbAJjsDIODoVBNNRGYd4vYv1rAi7JlDi-RXDdFu50/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/1e6sbAJjsDIODoVBNNRGYd4vYv1rAi7JlDi-RXDdFu50/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -417,7 +417,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='elevans' %}</td>
       <td>Introduction to ImageJ (Virtual Advanced Imaging Methods Workshop 2022)</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/15IoW674_1dcRLdifom43KUauRQke10PaQyXbNOXyn-Q/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/15IoW674_1dcRLdifom43KUauRQke10PaQyXbNOXyn-Q/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -425,7 +425,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='etadobson' %}</td>
       <td>ImageJ: An Open Platform for Scientific Image Analysis (Virtual AQLM 2020)</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1CCmZEWigNXcG6Yr47l5_WvSEt-pTKKTfMmwOj1YY0Mw/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/1CCmZEWigNXcG6Yr47l5_WvSEt-pTKKTfMmwOj1YY0Mw/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -574,7 +574,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='elevans' %}</td>
       <td>Van Andel Institute Image processing workshop with ImageJ/Fiji</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1e94san5M7zl5n0ZLjQyVBafAFi6zJLyFV1pzvxXItYg/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/1e94san5M7zl5n0ZLjQyVBafAFi6zJLyFV1pzvxXItYg/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -582,7 +582,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='elevans' %}</td>
       <td>AQLM Image processing, segmentation and scripting with ImageJ/Fiji Workshp</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1f8vKVmeRdHYzyXoWZEv-ylpqbWIDR3mlUMAXM6iVawI/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/1f8vKVmeRdHYzyXoWZEv-ylpqbWIDR3mlUMAXM6iVawI/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -590,7 +590,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='etadobson' %} & {% include person id='elevans' %}</td>
       <td>ABRF Light Microscopy Research Group - 3D Segmentation using ImageJ</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1-hqOCs7NwCa-Edc3s9SP9ln5E9PDdn9wfeQ4_-6Unuk/edit?usp=sharing">slides</a>
+        <a href="https://docs.google.com/presentation/d/1-hqOCs7NwCa-Edc3s9SP9ln5E9PDdn9wfeQ4_-6Unuk/present">slides</a>
       </td>
     </tr>
     <tr>
@@ -598,7 +598,7 @@ These materials are regularly updated, and intended to teach ImageJ and Fiji at 
       <td>{% include person id='etadobson' %}</td>
       <td>CZI Workshops</td>
       <td>
-        <a href="https://chanzuckerberg.wistia.com/medias/uwakj3npiq">Workshop I video</a>, <a href="https://docs.google.com/presentation/d/1eDKMlweAIyTw72LuAv6LCknLE9BmZruTRiWuIPQGadk/edit?usp=sharing">Workshop I slides</a>, <a href="https://chanzuckerberg.wistia.com/medias/2kmue5jamv">Workshop II video</a>, <a href="https://docs.google.com/presentation/d/111nrll-4uyk0ZVrudmFnEZHyNt76RzVZvKvJkOVSoJA/edit?usp=sharing">Workshop II slides</a>
+        <a href="https://chanzuckerberg.wistia.com/medias/uwakj3npiq">Workshop I video</a>, <a href="https://docs.google.com/presentation/d/1eDKMlweAIyTw72LuAv6LCknLE9BmZruTRiWuIPQGadk/present">Workshop I slides</a>, <a href="https://chanzuckerberg.wistia.com/medias/2kmue5jamv">Workshop II video</a>, <a href="https://docs.google.com/presentation/d/111nrll-4uyk0ZVrudmFnEZHyNt76RzVZvKvJkOVSoJA/present">Workshop II slides</a>
       </td>
     </tr>
     <tr>
