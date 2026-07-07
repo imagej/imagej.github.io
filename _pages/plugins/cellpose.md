@@ -1,3 +1,5 @@
+# Running Cellpose in Fiji
+
 {% include img name="cellpose-icon" src="/media/icons/cellpose.png" %}
 
 [Cellpose](https://www.cellpose.org/) is a very efficient framework to segment cell or nucleus. 
