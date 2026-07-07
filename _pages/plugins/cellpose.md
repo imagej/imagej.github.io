@@ -1,4 +1,8 @@
-# Running Cellpose in Fiji
+---
+title: Cellpose
+---
+
+## Running Cellpose in Fiji
 
 {% include img name="cellpose-icon" src="/media/icons/cellpose.png" %}
 
