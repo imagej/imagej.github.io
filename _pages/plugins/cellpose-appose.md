@@ -203,6 +203,9 @@ Cellpose will segment only the objects within the selected ROI and returns the l
 If you select the option `return ROIs`, the resulting ROIs will be placed in the original image (full size), as you can see in the example image below.
 {% include img name="cellpose-roi" src="/media/cellpose-appose/process_roi.png" %}
 
+## Alternatives
+
+For other way to run Cellpose from Fiji, see this page that links several options: [https://imagej.net/plugins/cellpose](https://imagej.net/plugins/cellpose).
 
 ## Issue/FAQ
 
