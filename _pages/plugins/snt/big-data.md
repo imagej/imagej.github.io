@@ -14,7 +14,7 @@ tags: snt,tracing,segmentation,neuroanatomy,big-data
 {% endcapture %}
 {% include notice content=version %}
 
-## Big Data support
+# Big Data support
 
 SNTv5 implemented _preliminary_ support for big data. The following operations are currently supported:
 
@@ -29,3 +29,10 @@ SNTv5 implemented _preliminary_ support for big data. The following operations a
 <sup>1</sup>For interactive tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets
 
 <sup>2</sup>See [PySNT](https://pysnt.readthedocs.io/en/latest/)
+
+
+## Supported File Formats
+
+Standard formats (TIFF, and anything readable via Bio-Formats) are loaded as regular in-memory volumes, with an option to downsample automatically if a volume exceeds the GPU's 3D texture limits. Imaris (.ims) files are supported via an automatically generated BDV-XML sidecar written next to the original file.
+
+For genuinely large datasets, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers are opened virtually: data is streamed from disk in blocks as needed. N5 and Zarr containers are read directly, with no XML sidecar required.

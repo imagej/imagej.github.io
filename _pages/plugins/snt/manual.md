@@ -288,9 +288,9 @@ The Command Palette is the fastest way to access actions and discover their resp
 1. Press {% include key keys='ctlcmd|Shift|P' %} in either SNT or [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)
 2. Start typing to filter actions, scripts and available commands
 3. Press {% include key keys='up' %} or {% include key keys='down' %} (or use the  {% include key keys='mouse wheel' %}) to select a command
-4. Press {% include key keys='Enter' %} to run it. If the record button is toggled, executed commands are recorded by the [Script Recorder](/plugins/snt/scripting#script-recorder).
+4. Press {% include key keys='Enter' %} to run it. If the <i>Reveal</i> button is toggled, the widget associated with the command (button, menu, etc.) is highlighted. This allows you to locate an entry in the GUI.
 
-By default, commands and actions are filtered using approximate string matching. Exact matching can be enabled by toggling the _Match Case/Whitespace_ buttons. Press the &nbsp;<i style="color:gray;" class="fas fa-map-pin"></i>&nbsp; button to display the Command Palette above all windows. Press the &nbsp;<i style="color:gray;" class="fas fa-lock"></i>&nbsp; button to keep the Palette open after running a command.
+By default, commands and actions are filtered using approximate string matching. Exact matching can be enabled by toggling the _Match Case/Whitespace_ buttons. Press the <i>Pin</i> button to display the Command Palette above all windows. Press the <i>Auto-Hide</i> button to keep the Palette open after running a command.
 
 ## Main Tab
 
@@ -762,7 +762,7 @@ Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image
 
 # Path Manager
 
-<img align="right" width="300" src="/media/plugins/snt/snt-path-manager.png" alt="Path Manager (v4.3)" title="Path Manager (v4.3)" />
+<img align="right" width="380" src="/media/plugins/snt/snt-path-manager.png" alt="Path Manager (v5.0)" title="Path Manager (v5.0)" />
 The Path Manager dialog displays all existing paths in a hierarchical structure, where one path is "primary" or "root" (path 1) and all other paths (paths 2...N) are children of the primary path. This pattern repeats for each structure (arbor) being traced. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu.
 
 {% include notice icon="info" content="Path Manager commands are applied to all paths if no paths are selected." %}
@@ -779,13 +779,11 @@ The navigation toolbar allows for better handling of multiple arbors. An arbor i
 ### Arbor Chooser
 This section of the toolbar allow for filtering the display of arbors in the Path Manager list. It includes the following controls:
 
-- <i class="fas fa-undo"></i> **Show All Arbors**: Clears any filtering and shows all paths in the list
-
 - **Drop‑down Choice**: Allows you to 'Jump to' a specific arbor in the list. If _Hide others_ (see below) is active, choosing an arbor limits the list to only that arbor’s paths
 
-- <i class="fas fa-sort"></i> **Next Arbor**: Cycles the Arbor choice to the next entry
+- <i class="fas fa-low-vision"></i> **Hide Others**: Shows only the arbor chosen in the drop‑down. If selected the Path Manager list is filtered to the select choice. If unselected all arbors are shown. Toolbar actions (Zoom, Bookmark, etc.) honor this filter
 
-- <i class="fas fa-arrows-to-eye"></i> **Hide Others**: Shows only the arbor chosen in the drop‑down. If selected the Path Manager list is filtered to the select choice. If unselected all arbors are shown. Toolbar actions (Zoom, Bookmark, see below) honor this filter.
+- <i class="fas fa-eye"></i> **Show All**: Clears any filtering and shows all paths in the list
 
 ## Zoom to Path(s)
 <i class="fas fa-search-plus"></i> Centers and zooms the image view to encompass the selected paths
@@ -836,8 +834,11 @@ Duplicates the selected path with options to duplicate just a sub-segment or a f
 <img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" alt="Duplicate... (v4.3)" title="Duplicate... (v4.3)" />
 
 #### Rename...
-
 Renames the selected Path. Only one Path may be renamed at a time because path names are expected to be unique.
+
+#### Rename by Pattern...
+Does bulk renaming of paths using replace-by-pattern. Case-matching and wildcard matches are supported and read from
+the [filter toolbar](#filter-toolbar).
 
 #### Auto-connect...
 
@@ -1187,20 +1188,18 @@ Exports the selected subset of Path(s) as an [SWC](/plugins/snt/faq#what-is-a-sw
 <img align="right" width="400px" src="/media/plugins/snt/snt-path-manager-filter-toolbar.png" alt="Filter toolbar (v5.0)" title="Filter toolbar (v5.0)" />
 The filter toolbar allows paths to be searched and filtered quickly using tags, colors, SWC-type, or morphometric properties. The toolbar is organized in two sections: Text-based filtering and Propertied-based filtering:
 
-### Text-based Filtering
+### Text-based Filters
 
-The text field is used for text-based searches (recent searches can be recovered through its history drop-down menu). The <i class="fas fa-caret-up"></i> and <i class="fas fa-caret-down"></i> buttons find the next/previous occurrence of the entered phrase, while the <i class="fas fa-lightbulb"></i> button highlights all occurrences of the entered phrase.
-The trailing icons within the text field control case-sensitive matching and/or wildcard support. Currently, two wildcards are supported:
+The text field is used for text-based searches (recent searches can be recovered through its history drop-down menu). The <i class="fas fa-caret-up"></i> and <i class="fas fa-caret-down"></i> buttons find the next/previous occurrence of the entered phrase, while the <i class="fas fa-check-double"></i> button selects all occurrences of the searched text.
+The trailing buttons in the text field control case-sensitive matching and wildcard support. Currently, two wildcards are supported:
 
 - `?`: any single character, e.g., `b?g` matches "bag" and "big", but not "bang"
 - `*`: any string, e.g., `* arbor` matches both "axonal arbor" and "dendritic arbor"
 
-Other search settings can be accessed through the text field drop-down menu, including a replace-by-pattern option.
+Other search settings can be accessed through the text field drop-down menu.
 
-<img align="right" width="250px" src="/media/plugins/snt/snt-path-manager-color-filters.png" alt="Color filters (v5.0)" title="Color filters (v5.0)" />
-
-### Propertied-based Filtering
-
+### Tag-based Filters
+<img align="right" width="350px" src="/media/plugins/snt/snt-tag-filtering.png" alt="Tag filtering (v5.0)" title="Tag filtering (v5.0)" />
 #### ID Filters <i class="fa fa-id-badge"></i>
 Allows filtering of Paths by SWC-type ID tags (axon, dendrite, glia process, etc.).  Note that Paths must have been [tagged](/plugins/snt/manual#tag) using the {% include bc path='Tag|Type|' %} menu
 
@@ -1209,7 +1208,7 @@ Allows filtering of Paths by color tags
 
 #### Tag Filters <i class="fa fa-tag"></i>
 Allows filtering of tags set via the {% include bc path='Tag|Other...' %} command or the [Proofreading Toolbar](#proofreading-toolbar). The prompt will generate a multiple-choice list of the tags associated with the selected paths (all paths if none is selected).
-<img align="right" width="250px" src="/media/plugins/snt/snt-tag-filtering.png" alt="Tag filtering (v5.0)" title="Tag filtering (v5.0)" />
+
 
 #### Morphology Filters <i class="fa fa-ruler-combined"></i>
 Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters _do not_ require Paths to be labeled using {% include bc path='Tag|Morphology| ' %}. Typically a morphological filter requires an input range. Here are some examples:
@@ -1229,8 +1228,9 @@ Allows filtering of Paths by selected morphological properties (including cell i
 
 Filters can be combined using the <i class="fa fa-filter"></i> button: It restricts filtering to the subset of Path(s) already selected. Example: Selecting the thinnest paths between 10-50μm of length:
 
-1. <i class="fa fa-ruler-combined"></i>  {% include bc path=' | Length...' %} query: `10-50`
-2. Activate <i class="fa fa-filter"></i>
+
+1. Step 1: <i class="fa fa-ruler-combined"></i>  {% include bc path=' | Length...' %} query: `10-50`
+2. Activate <i class="fa fa-filter"></i> (works like an AND operator)
 3. <i class="fa fa-ruler-combined"></i>  {% include bc path=' | Mean Radius...' %} query: `min-min`
 
 
