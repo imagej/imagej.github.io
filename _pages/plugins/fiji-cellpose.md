@@ -1,11 +1,11 @@
 ---
-title: Cellpose-Appose 
+title: Fiji-Cellpose
 description: PLugin to use Cellpose from Fiji relying on Appose.
 source-url: https://github.com/Image-Analysis-Hub/cellpose-appose
 icon: /media/icons/cellpose.png
 license: BSD-3 Clause license
 categories: [Segmentation]
-forum-tag: "cellpose-appose"
+forum-tag: "fiji-cellpose"
 dev-status: 'active'
 update-site: 'Appose-Playground'
 team-founder: ["Gaelle Letort", "Stephane Rigaud", "Julie Mabon"]
