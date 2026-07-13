@@ -159,7 +159,9 @@ Accurate node placement requires <em>XY</em>, <em>ZY</em> and <em>XZ</em> views 
 
 The legacy 3D Viewer allows for tracing in an interactive 3D scene.
 
-{% include notice content="By default, the Legacy 3D Viewer displays warnings and errors in pop-up dialogs. If you find this distracting, you can toggle _Quiet mode (log errors to Console)_ to have them displayed in a non-blocking Log window." %}
+{% include notice content="The Legacy 3D Viewer relies on libraries that are not actively maintained and _may_ not function reliably during complex tasks. Please consider using [Big Volume Viewer](./manual#big-volume-viewer) instead.
+
+By default, the viewer displays warnings and errors in pop-up dialogs. If you find this distracting, you can toggle _Quiet mode (log errors to Console)_ to have them displayed in a non-blocking Log window." %}
 
 ### I. Starting the Viewer
 
