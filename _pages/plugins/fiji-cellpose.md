@@ -7,7 +7,7 @@ license: BSD-3 Clause license
 categories: [Segmentation]
 forum-tag: "fiji-cellpose"
 dev-status: 'active'
-update-site: 'Appose-Playground'
+update-site: 'Fiji-Cellpose'
 team-founder: ["Gaelle Letort", "Stephane Rigaud", "Julie Mabon"]
 team-maintainer: ["Gaelle Letort", "Stephane Rigaud", "Jean-Yves Tinevez"]
 team-developers: ["Gaelle Letort", "Stephane Rigaud", "Julie Mabon", "Jean-Yves Tinevez"]
@@ -27,8 +27,8 @@ This plugin is based on [Appose](https://github.com/apposed/appose), that automa
 You can install the plugin for the unliste update site `Appose-Playground`:
 - In Fiji, go to `Help>Update...`
 - Select `Manage Update Sites` in the window that opens.
-- Click `Add unliste update site`, name it `Appose-Playground` and write its address `https://sites.imagej.net/Appose-Playground`.
-- Select the Appose-Cellpose `.jar` file to install only this plugin, or keep all proposed plugins. 
+- Click `Add unliste update site`, name it `Fiji-Cellpose` and write its address `https://sites.imagej.net/Fiji-Cellpose`.
+- It will install/udpate two jars file: `Cellpose_Appose` and `imglib2-cellpose`
 - Press `Apply changes` and restart Fiji when it's done.
 
 {% include notice icon="warning" content=" You should have a recent version of Fiji, based on Java 21 or more. Download a new version [here (Latest downloads column)](https://imagej.net/software/fiji/downloads) if you're current installation is too old." %}
