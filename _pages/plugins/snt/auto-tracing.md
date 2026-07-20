@@ -3,7 +3,7 @@ title: SNT › Auto-tracing
 nav-links: true
 nav-title: Autotracing
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 tags: snt,tracing,neuroanatomy,big-data
@@ -12,7 +12,7 @@ tags: snt,tracing,neuroanatomy,big-data
 {% capture version%}
 **This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 Fully automated tracing routines can be accessed through the _Auto-trace_ menu in the main dialog.
 

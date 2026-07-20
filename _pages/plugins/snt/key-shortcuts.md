@@ -6,7 +6,7 @@ excerpt: >-
 nav-links: true
 nav-title: Hotkeys
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 ---
@@ -14,7 +14,7 @@ update-site: Neuroanatomy
 {% capture version%}
 **This page was last revised for [version 5.0.5](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 {% capture text%}
 {% include img src="/media/plugins/snt/command-palette.png" align="right" width="450px" %}

@@ -3,7 +3,7 @@ title: SNT › Walkthroughs
 nav-links: true
 nav-title: Walkthroughs
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 extensions: ["mathjax"]
@@ -14,7 +14,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 **This page was last revised for [version 5.0.5](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep these walkthroughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/walkthroughs.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 # Semi-automated Tracing
 {% capture op1-demo-incomplete%}

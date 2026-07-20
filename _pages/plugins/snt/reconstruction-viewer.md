@@ -3,7 +3,7 @@ title: SNT › Reconstruction Viewer
 nav-links: true
 nav-title: Rec. Viewer
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 ---
 
@@ -11,7 +11,7 @@ forum-tag: snt
 **This page was last revised for [version 5.0.9](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/reconstruction-viewer.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 
 # Overview

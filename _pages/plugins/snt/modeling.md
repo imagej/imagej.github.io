@@ -3,7 +3,7 @@ title: SNT › Modeling
 nav-links: true
 nav-title: Modeling
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 doi:
@@ -15,7 +15,7 @@ doi:
 **This page was last revised for [version 4.2.0](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/modeling.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 
 Modeling in SNT is performed through [Cortex3D (Cx3D)](https://github.com/morphonets/cx3d) and [sciview](/plugins/sciview). Cx3D was developed in 2009 as a computational modeling tool for simulating neurodevelopmental processes, including cell division, migration, neurite outgrowth, and chemotaxis in 3D physical space. It is well known for generative models of cortical circuits.

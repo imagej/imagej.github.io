@@ -5,7 +5,7 @@ nav-title: Delineations
 name: Delineation Analysis
 categories: [Contours,Analysis,Neuroanatomy]
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 doi: 10.1038/s41592-021-01105-7
@@ -16,7 +16,7 @@ tags: snt,tracing,neuroanatomy,contours,labels,segmentation
 {% capture version%}
 **This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 # Delineation Analysis
 Delineations aggregate sections of reconstructions into groups to allow measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses can be applied to disconnected paths, a single cell, or multiple cells. Some of the questions that delineation analyses can answer include:

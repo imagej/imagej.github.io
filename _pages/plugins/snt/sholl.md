@@ -7,7 +7,7 @@ categories: [Analysis,Neuroanatomy]
 tags: [sholl,sholl analysis,snt,arbor,neuron,morphometry,dendrite,neuroanatomy]
 forum-tag: sholl-analysis
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 doi: 10.1038/nmeth.3125
 update-site: Neuroanatomy
 ---
@@ -20,7 +20,7 @@ update-site: Neuroanatomy
 **This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/sholl.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 Automated Sholl for direct analysis of segmented images and traced morphologies. Features powerful quantifications based on curve fitting. Analysis of profiles obtained by other software is also possible.
 

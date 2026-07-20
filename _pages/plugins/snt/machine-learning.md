@@ -3,7 +3,7 @@ title: SNT › Machine Learning
 nav-links: true
 nav-title: Machine Learning
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 doi:
@@ -14,7 +14,7 @@ doi:
 {% capture version%}
 **This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 SNT integrates with deep-learning (DL) segmentation tools (e.g., [cellpose](https://www.cellpose.org), [CSBDeep](/plugins/csbdeep), [DeepImageJ](https://deepimagej.github.io/), [nnU-Net](https://github.com/MIC-DKFZ/nnUNet), [StarDist](https://stardist.net/), and others) in both directions: their outputs — segmentations, probability maps, detected coordinates — become inputs to SNT's tracing and analysis workflows, while SNT's reconstructions, after [curation](./curation) and [refinement](./manual#refinefit-), can be exported as ground-truth labels to train the next round of models. For simpler, classical-ML alternatives, SNT also embeds ensemble (random-forest) classifiers via [Labkit/TWS](#embedded-tools-labkit--tws). The sections below provide an overview of how model predictions can be consumed in SNT, and how SNT can be used to generate training data for either family of models.
 

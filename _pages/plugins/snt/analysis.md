@@ -3,7 +3,7 @@ title: SNT › Analysis
 nav-links: true
 nav-title: Analysis
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
@@ -11,7 +11,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 {% capture version%}
 **This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 # Measurements
 {% include img align="right" name="Measurements dialog" src="/media/plugins/snt/snt-measurements-prompt.png" caption="The measurements dialog features options for searching and selecting metrics, render measured cells, and summarize existing measurements. An offline guide is also accessible through the <i>Gear</i> menu." %}

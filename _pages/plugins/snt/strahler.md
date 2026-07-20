@@ -8,14 +8,14 @@ tags: strahler,plugin,arbor,neuron,morphometry,dendrite,neuroanatomy
 update-site: Neuroanatomy
 artifact: org.morphonets:SNT
 forum-tag: strahler-analysis
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 doi: 10.1038/s41592-021-01105-7
 ---
 
 {% capture version%}
 **This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 {% capture strahler%}
 There are several entry points to Strahler Analysis in SNT. You can find those in the _Neuroanatomy Shortcuts_ panel ({% include bc path='Plugins|Neuroanatomy|'%} or "SNT" icon in Fiji's toolbar):

@@ -3,7 +3,7 @@ title: SNT › Screencasts
 nav-links: true
 nav-title: Screencasts
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 ---
 

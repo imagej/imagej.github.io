@@ -8,7 +8,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 nav-links: true
 nav-title: Overview
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 update-site: Neuroanatomy
 doi: 10.1038/s41592-021-01105-7
 ---

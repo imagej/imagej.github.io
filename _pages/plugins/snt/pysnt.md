@@ -3,7 +3,7 @@ title: SNT › PySNT
 nav-links: true
 nav-title: PySNT
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/pysnt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 ---
@@ -11,7 +11,7 @@ update-site: Neuroanatomy
 {% capture version%}
 **This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="pysnt" content=version %}
 
 [PySNT](https://pysnt.readthedocs.io/en/latest/) is a Python wrapper for SNT that enables direct integration with the Python software ecosystem, including NumPy, SciPy, scikit-image, and more.
 For details, see the [PySNT documentation page](https://pysnt.readthedocs.io/en/latest/).

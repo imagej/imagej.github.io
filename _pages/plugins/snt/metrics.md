@@ -3,7 +3,7 @@ title: SNT › Metrics
 nav-links: true
 nav-title: Metrics
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 extensions: ["mathjax"]
@@ -12,7 +12,7 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 {% capture version%}
 **This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 ## Metrics
 {% capture text%}

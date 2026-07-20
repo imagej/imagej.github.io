@@ -3,7 +3,7 @@ title: SNT › Scripting
 nav-links: true
 nav-title: Scripting
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 ---
@@ -11,7 +11,7 @@ update-site: Neuroanatomy
 {% capture version%}
 **This page was last revised for [version 5.0.11](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 {% capture api%}
 

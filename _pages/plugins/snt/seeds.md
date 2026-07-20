@@ -3,7 +3,7 @@ title: SNT › Seeded Tracing
 nav-links: true
 nav-title: Seeded Tracing
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 extensions: ["mathjax"]
@@ -14,7 +14,7 @@ tags: snt,seeds,points,neuroanatomy,deep-learning,segmentation,ground-truth
 {% capture version%}
 **This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 Seeded Tracing allows for anchoring/constraining tracing algorithms around key locations ([machine learning predictions](./machine-learning#deep-learning), soma locations, neurite endpoints, manual annotations, etc.). A **seed** is a 3D point that carries a position, a confidence score, and a few optional attributes (radius, type, source, channel, frame). Seeds are overlaid on the image using a dedicated renderer, and do not affect other overlaid objects like paths or ROIs. Common sources of seeds include:
 

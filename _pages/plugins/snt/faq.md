@@ -3,7 +3,7 @@ title: SNT › FAQ
 nav-links: true
 nav-title: FAQ
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 ---

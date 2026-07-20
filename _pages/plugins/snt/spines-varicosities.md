@@ -5,7 +5,7 @@ nav-title: Spines/Varicosities/Labels
 name: Spine/Varicosity/Label Analysis
 categories: [Maxima,Analysis,Neuroanatomy,Labels]
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 doi: 10.1038/s41592-021-01105-7
@@ -16,7 +16,7 @@ tags: snt,tracing,neuroanatomy,maxima,labels,segmentation
 {% capture version%}
 **This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 # Spine/Varicosity/Label Analysis
 

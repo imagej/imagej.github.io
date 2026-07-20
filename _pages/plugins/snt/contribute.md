@@ -3,7 +3,7 @@ title: SNT › Contributing
 nav-links: true
 nav-title: Contributing
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 forum-tag: snt
 update-site: Neuroanatomy
 tags: snt,tracing,segmentation,neuroanatomy

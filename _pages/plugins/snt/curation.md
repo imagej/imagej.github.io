@@ -5,7 +5,7 @@ nav-title: Curation
 name: Curation
 categories: [QC,Analysis,Neuroanatomy]
 artifact: org.morphonets:SNT
-icon: /media/icons/snt.png
+icon: /media/icons/snt.svg
 extensions: ["mathjax"]
 forum-tag: snt
 update-site: Neuroanatomy
@@ -17,7 +17,7 @@ tags: snt,tracing,neuroanatomy,qc,ground-truth
 {% capture version%}
 **This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
-{% include notice content=version %}
+{% include notice icon="snt" content=version %}
 
 # Curation Assistant
 <img align="right" width="375" src="/media/plugins/snt/snt-curation-assistant.png" alt="Assistant tab" title="Curation Assistant" />
