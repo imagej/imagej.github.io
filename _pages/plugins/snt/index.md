@@ -87,7 +87,7 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **[Analysis](/plugins/snt/analysis)**                           | Overview of GUI-based analyses                                                                                                     |
 | **[Autotracing](/plugins/snt/auto-tracing)**                    | Documentation on fully automated reconstructions                                                                                   |
-| **[Big Data](/plugins/snt/big-data)**                           | Status of big data support                                                                                                         |
+| **[Big Data](/plugins/snt/big-data)**                           | Overview of big data support                                                                                                       |
 | **[Contributing](/plugins/snt/contribute)**                     | How to contribute to SNT                                                                                                           |
 | **[Curation](/plugins/snt/curation)**                           | Curation Assistant (Real-time quality control while tracing)                                                                       |
 | **[Delineations](/plugins/snt/delineations)**                   | Delineation Analysis                                                                                                               |
@@ -101,6 +101,7 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 | **[Reconstruction Viewer](/plugins/snt/reconstruction-viewer)** | SNT's entry point for visualization of pre-existing data. If you are analyzing neuronal reconstructions you may want to start here |
 | **[Screencasts](/plugins/snt/screencasts)**                     | Video tutorials. If you are using SNT for the first time you probably want to start here                                           |
 | **[Scripting](/plugins/snt/scripting)**                         | Details on how to use SNT as a scripting library                                                                                   |
+| **[SNT Stream](/plugins/snt/snt-stream)**                       | SNT's big data tracing mode                                                                                                        |
 | **[Walkthroughs](/plugins/snt/walkthroughs)**                   | Detailed step-by-step instructions for specific tasks                                                                              |
 
 

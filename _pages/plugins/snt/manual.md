@@ -18,17 +18,19 @@ Please help us to keep up-to-date documentation by [editing](https://github.com/
 
 SNT registers commands in Fiji's menu structure in the {% include bc path='Plugins|Neuroanatomy|' %} sub-menu, namely:
 
-**Neuroanatomy Shortcuts Window** A toolbar panel listing most SNT commands, actions, and scripts including entry points to Sholl and Strahler analyses. It can be open via {% include bc path='Plugins|Neuroanatomy|' %}, or more easily, by pressing *SNT* in the ImageJ toolbar:
+**SNT Shortcuts Window** A toolbar panel listing common entry points to SNT functionality, including viewer, scripts, and analyses. It can be open via {% include bc path='Plugins|Neuroanatomy|' %}, or more easily, by pressing *SNT* in the ImageJ toolbar:
 
 <div align="center">
-    <img align="center" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" alt="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" title="The Neuroanatomy Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
+    <img align="center" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" alt="The Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" title="The Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
 </div>
 
-**[SNT](#startup-prompt)...** The main interface, from which tracing and path editing operations are done
+**[Startup...](#startup-prompt)...** Loads SNT's "full suite" interface. This is the recommended choice for operations requiring traditional images (tracing, editing, curation, analyses requiring access to pixel data, etc.)
 
-**[Rec. Viewer](/plugins/snt/reconstruction-viewer)** A fast, streamlined 3D viewer for analysis and quantification of existing neuroanatomical data
+**[Big Data...](#startup-prompt)...** Loads SNT with [Big Data](./big-data) support, including [SNT Stream](./snt-stream) tracing. This is the recommended choice for large (TB-size) imagery that cannot fit in CPU/GPU memory
 
-**[Reconstruction Plotter](#reconstruction-plotter)** A utility for rendering 2D illustrations of reconstructions (including vector formats) without having to load other interfaces
+**[Rec. Viewer](/plugins/snt/reconstruction-viewer)** Loads _Reconstruction Viewer_: A fast, streamlined 3D viewer for analysis and quantification of existing reconstructions that do not require imagery. This is the recommended choice for analyses that do not require neither access to imagery, nor access to individual nodes of reconstructed structures.
+
+**[Reconstruction Plotter](#reconstruction-plotter)** A smal utility for rendering 2D illustrations of reconstructions (including vector formats) without having to load other interfaces. This is a convenience choice for quick and basic figures. For more capable options, have a look at e.g., [Create Figure](#create-figure)
 
 # Startup Prompt
 
@@ -604,11 +606,11 @@ This option assumes [sciview](/plugins/sciview) to be successfully installed. sc
 
 ### Big Volume Viewer
 
-Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Since v5 it is also a functional tracing canvas. Two entry points are provided:
+Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Since v5 it is also a functional tracing canvas, and includes [Slab View](./big-data#slab-view) for restricting rendering to a thin, adjustable region of the volume. Two entry points are provided:
 
 1. **Standard Images**: For regular, in-core images, already open in SNT, click the _BVV_ button in the 3D tab of SNT 
 
-2. **Large/Pyramidal Datasets**: For massive files (such as OME-Zarr), please follow the instructions in [Big Data](./big-data#getting-started)
+2. **Large/Pyramidal Datasets**: For massive files (such as OME-Zarr), please follow the instructions in [Big Data](./big-data#getting-started). Tracing directly on such streamed datasets is handled by [SNT Stream](./snt-stream)
 
 {% include img align="center" name="BVV integration" src="/media/plugins/snt/snt-bvv.png" caption="BVV integration" %}
 
@@ -1058,6 +1060,13 @@ The refinement dialog groups its settings into several categories:
 - **Global Options**
   - _Auto-tune from traced paths_: Automatically adjusts max. radius, color-match stringency, and signal intensity range based on the actual path data. Manual values above are used as starting points and may be overridden per-path during refinement. This is recommended when processing many paths with varying properties.
   - _No. of parallel threads_: Number of threads used during refinement. Defaults to the number available on your computer. Set to 0 to reset to the default.
+
+#### Re-trace With A*...
+
+Re-traces selected path(s) with [A\* search](./auto-tracing#grayscale-images), treating each path's existing nodes as waypoints and re-deriving the geometry between them via a fresh search. Intended for paths traced manually against streamed data (e.g., in [SNT Stream](./snt-stream)), where running A\* interactively is often impractical: trace by eye first, then re-trace once A\* is practical (e.g., once the region is cached locally, or as an overnight batch job).
+
+There is no parameter prompt: the command reuses whichever cost function/search settings are already configured (see [Parameters...](#parameters)). When multiple paths are selected, they are re-traced in parallel, all sharing the same settings so results stay consistent even if the configuration is changed while the batch is still running.
+Successfully re-traced paths are renamed with a `[Retraced*]` suffix; any that fail are left untouched, with a summary logged to the Console.
 
 ### Fill ›
 
