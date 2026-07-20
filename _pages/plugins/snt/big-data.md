@@ -35,7 +35,7 @@ The following operations are currently supported:
 <sup>2</sup>See [PySNT](https://pysnt.readthedocs.io/en/latest/)
 
 ## Getting Started
-<img align="right" width="450" src="/media/plugins/snt/snt_big_data_prompt.png" alt="Big Data Prompt (v.5.1)" title="Big Data Prompt (v.5.1)" />
+<img align="right" width="500" src="/media/plugins/snt/snt_big_data_prompt.png" alt="Big Data Prompt (v.5.1)" title="Big Data Prompt (v.5.1)" />
 
 Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the prompt you can specify:
 

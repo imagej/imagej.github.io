@@ -15,14 +15,11 @@ Please help us to keep up-to-date documentation by [editing](https://github.com/
 {% include notice icon="snt" content=version %}
 
 # SNT Commands
+<img align="right" width="50%" src="/media/plugins/snt/snt-shortcuts-window.png" alt="The Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" title="The Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
 
 SNT registers commands in Fiji's menu structure in the {% include bc path='Plugins|Neuroanatomy|' %} sub-menu, namely:
 
 **SNT Shortcuts Window** A toolbar panel listing common entry points to SNT functionality, including viewer, scripts, and analyses. It can be open via {% include bc path='Plugins|Neuroanatomy|' %}, or more easily, by pressing *SNT* in the ImageJ toolbar:
-
-<div align="center">
-    <img align="center" width="40%" src="/media/plugins/snt/snt-shortcuts-window.png" alt="The Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" title="The Shortcuts panel can be toggled using the SNT icon in the ImageJ toolbar" />
-</div>
 
 **[Startup...](#startup-prompt)...** Loads SNT's "full suite" interface. This is the recommended choice for operations requiring traditional images (tracing, editing, curation, analyses requiring access to pixel data, etc.)
 
