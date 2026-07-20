@@ -468,32 +468,3 @@ Multispectral Refinement and standard [Fitting](/plugins/snt/manual#refinefit) s
 # Detecting Crossovers
 
 Described in [Curation](curation#detecting-crossovers).
-
-# Generating *Filtered Images* in Bulk
-
-This section describes how to generate [Filtered Images](/plugins/snt/manual#tracing-on-secondary-image-layer) outside SNT in bulk. Note that there are [many tutorials](/scripting/batch) on this topic. Arguably, the easiest way to process multiple images is to 1) record a macro that processes a single image, then 2) wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
-
-{% highlight javascript %}
-d = getDirectory("Select a directory");
-files = getFileList(d);
-extension = ".tif";
-
-for( i = 0; i < files.length; ++i ) {
-    filename = files[i];
-    if( endsWith(filename,extension) ) {
-        l = lengthOf(filename);
-        el = lengthOf(extension);
-        basename = substring(filename,0,l-el);
-        expected_window_name = "result";
-        output_filename = d + File.separator + basename + ".tubes.tif";
-        open(filename);
-        run("Gaussian Blur...", "sigma=2 scaled stack"); // processing step here
-        selectWindow(expected_window_name);
-        saveAs("Tiff", output_filename);
-    }
-}
-{% endhighlight %}
-
-The same process can be accomplished more completely in a script using [ImageJ Ops](/libs/imagej-ops). For example, in Jython:
-
-{% include code org='morphonets' repo='SNT' branch='master' path='src/main/resources/script_templates/Neuroanatomy/Batch/Filter_Multiple_Images.py' label='Filter Multiple Images (Python)' %}
