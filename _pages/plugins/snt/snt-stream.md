@@ -10,7 +10,7 @@ update-site: Neuroanatomy
 tags: snt,tracing,segmentation,neuroanatomy,big-data,snt-stream
 ---
 
-{% include notice icon="snt-stream" content="**[SNT Stream](./snt-stream) remains experimental. This page may describe preliminary features**." %}
+{% include notice icon="snt-stream" content="**SNT Stream remains experimental. This page may describe preliminary features**." %}
 
 
 **SNT Stream** is a suite of modifications that allows SNT to trace directly against a streamed dataset rendered in [Big Volume Viewer](./manual#big-volume-viewer) or [Big Data Viewer](./manual#big-data-viewer)
@@ -26,3 +26,6 @@ without materializing the volume in memory. It allows SNT to handle [TB-sized im
 5. Switch the active channel/frame from the toolbar as needed; only one is streamed for tracing at a time (see [big data limitations](./big-data#limitations-and-idiosyncrasies))
 6. Finished paths land in the Path Manager exactly as they would from any other SNT session: save, curate, and analyze them as usual
 7. If tracing manually, use [Re-trace With A*](manual#re-trace-with-a) asynchronously to refine the curvature of traced paths
+
+
+{% include notice icon="info" content="If you don't have a discrete graphics card, ore are running SNT on underpowered hardware, you could repeat the steps above choosing _Big Data Viewer (BDV): Interactive reslicing w/ tracing capabilities_ as viwer type." %}

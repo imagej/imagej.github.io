@@ -115,6 +115,22 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key keys='Shift|S' %} | Toggle <u>S</u>tatus Bar |
 | {% include key keys='Ctrl|Shift|P' %} / {% include key keys='Command|Shift|P' %}| Toggle Command <u>P</u>alette |
 
+### SNT Stream
+
+[SNT Stream](./snt-stream) maintains the defaul shortcuts of [BDV](/plugins/bdv/)/BVV. In addition, the following are available<sup>1</sup>:
+
+| {% include key key='K' %}            | Record <u>K</u>ey frame |
+| {% include key key='M' %}            | <u>M</u>ark cursor location<sup>2</sup> |
+| {% include key key='Z' %}            | Undo last segment (temporary paths) |
+| {% include key key="Enter" %}        | Finish a temporary path (same as {% include key key='Double Click' %}) |
+| {% include key key="Double Click" %} | Finish a path when tracing (same as {% include key key='Enter' %}), otherwise centers view |
+| {% include key key="Esc" %}          | Discard temporary path |
+
+<sup>1</sup> The full list of active shortcuts can be accessed from the options drop-down menu of the _Scene Controls_ widget of BDV/BVV
+
+<sup>2</sup> {% include key keys='Shift|B' %} used with traditional images is not used becaued it collides with BDV/BVV native bookmark support
+
+
 ### sciview
 
 | {% include key key="Left Drag" %}          | Move around |

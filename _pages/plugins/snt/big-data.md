@@ -51,6 +51,7 @@ Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the 
   - **Big Data Viewer (BDV): Interactive reslicing**: Interactive re-slicing browser
   - **Big Volume Viewer (BVV): 3D rendering**: Interactive volume viewer, no tracing
   - **Big Volume Viewer (BVV): 3D rendering w/ tracing capabilities**: Same as _Big Volume Viewer (BVV): 3D rendering_, but a new SNT instance is initialized as **[SNT Stream](./snt-stream)**, turning the BVV viewer into a functional tracing canvas
+  - **Big Data Viewer (BDV): Interactive reslicing w/ tracing capabilities**: A fallback option to the previous choice for when no discrete graphics card is available, or SNT is running on hardware without GPU support
 
 {% include notice icon="info" content="**[SNT Stream](./snt-stream) remains experimental**." %}
 
@@ -76,6 +77,7 @@ It is a general rendering feature, available in _Scene Controls_ whenever a BVV 
 
 ## Supported File Formats
 
-[Big volume viewer](./manual#big-volume-viewer) and [Big data viewer](./manual#big-data-viewer) are at the core of Big-data support. Standard formats (TIFF, and anything readable via Bio-Formats) are loaded as regular in-memory volumes, with an option to downsample automatically if a volume exceeds the GPU's 3D texture limits. Imaris (.ims) files are supported via an automatically generated BDV-XML sidecar written next to the original file.
+[Big volume viewer](./manual#big-volume-viewer) and [Big data viewer](./manual#big-data-viewer) are at the core of Big-data support. Standard formats (TIFF, and anything readable via [Bio-Formats](/formats/bio-formats)) are loaded as regular in-memory volumes, with an option to downsample automatically if a volume exceeds the GPU's 3D texture limits.
+Imaris (.ims) files are supported via an automatically generated BDV-XML sidecar written next to the original file.
 
 For genuinely large datasets, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers are opened virtually: data is streamed from disk in blocks as needed. N5 and Zarr containers are read directly, with no XML sidecar required.
