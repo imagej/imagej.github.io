@@ -12,7 +12,7 @@ update-site: Neuroanatomy
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.5](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.13](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice icon="snt" content=version %}
 
@@ -119,17 +119,17 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 
 [SNT Stream](./snt-stream) maintains the defaul shortcuts of [BDV](/plugins/bdv/)/BVV. In addition, the following are available<sup>1</sup>:
 
+| {% include key key='H' %}            | Temporarily <u>H</u>ides all paths/annotations while pressed |
 | {% include key key='K' %}            | Record <u>K</u>ey frame |
 | {% include key key='M' %}            | <u>M</u>ark cursor location<sup>2</sup> |
 | {% include key key='Z' %}            | Undo last segment (temporary paths) |
-| {% include key key="Enter" %}        | Finish a temporary path (same as {% include key key='Double Click' %}) |
-| {% include key key="Double Click" %} | Finish a path when tracing (same as {% include key key='Enter' %}), otherwise centers view |
+| {% include key key="Enter" %}        | Finish temporary path (same as {% include key key='Double Click' %}) |
+| {% include key key="Double Click" %} | Finish temporary path when tracing (same as {% include key key='Enter' %}), otherwise centers view |
 | {% include key key="Esc" %}          | Discard temporary path |
 
 <sup>1</sup> The full list of active shortcuts can be accessed from the options drop-down menu of the _Scene Controls_ widget of BDV/BVV
 
-<sup>2</sup> {% include key keys='Shift|B' %} used with traditional images is not used becaued it collides with BDV/BVV native bookmark support
-
+<sup>2</sup> The {% include key keys='Shift|B' %} key combination (used with traditional images) is not used because it collides with BDV/BVV native bookmark support
 
 ### sciview
 
