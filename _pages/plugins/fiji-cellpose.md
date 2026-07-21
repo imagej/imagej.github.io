@@ -26,10 +26,11 @@ This plugin is based on [Appose](https://github.com/apposed/appose), that automa
 
 You can install the plugin for the unliste update site `Appose-Playground`:
 - In Fiji, go to `Help>Update...`
-- Select `Manage Update Sites` in the window that opens.
-- Click `Add unliste update site`, name it `Fiji-Cellpose` and write its address `https://sites.imagej.net/Fiji-Cellpose`.
+- If updates are suggested, it is strongly advised to apply them and restart Fiji before to continue
+- Select `Manage Update Sites` in the window that opens
+- Search for `Fiji-Cellpose` and select it. Click `Apply and Close`
 - It will install/udpate two jars file: `Cellpose_Appose` and `imglib2-cellpose`
-- Press `Apply changes` and restart Fiji when it's done.
+- Press `Apply changes` and restart Fiji when it's done
 
 {% include notice icon="warning" content=" You should have a recent version of Fiji, based on Java 21 or more. Download a new version [here (Latest downloads column)](https://imagej.net/software/fiji/downloads) if you're current installation is too old." %}
 
@@ -41,10 +42,10 @@ From Fiji:
 
 - Open the image that you want to process.
 - Launch one of the cellpose version available in the plugin:  
-    - `Plugins>Segmentation>Cellpose-Appose>Cellpose...`
+    - `Plugins>Segmentation>Cellpose...`
       This option allows to run CellPose v3. 
       The full official Cellpose 3 documentation is available [here](https://cellpose.readthedocs.io/en/v3.1.1.1/). 
-    - `Plugins>Segmentation>Cellpose-Appose>Cellpose-SAM...`
+    - `Plugins>Segmentation>Cellpose-SAM...`
         This option allows to run CellPose v4 with SAM.
         The full official Cellpose 4 documentation is available [here](https://cellpose.readthedocs.io/en/latest/).   
 - Configure your Cellpose run through the Graphic Interface. _see [here](#parameters) for documentation_  
@@ -158,7 +159,7 @@ run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1
 You can also first use the plugin on one image, while recording your action:
 - go to `Plugins>Macro>Record...`
 - open your image
-- start cellpose-appose (in `Plugins>Segmentation>Cellpose-Appose>Cellpose...`)
+- start cellpose-appose (in `Plugins>Segmentation>Cellpose...`)
 - choose the parameters relevant for your case
 - run it
 - when it's done, you will see in the recorder the command line that you did.
@@ -197,7 +198,7 @@ for (i = 0; i < lengthOf(filelist); i++)
 ## Segment only in a Region Of Interest
 
 It is possible to run Cellpose only in a region of the image by first drawing a ROI in the image.
-Then run `Cellpose_Appose` in the same way as you would do for a whole image. 
+Then run `Fiji-Cellpose` in the same way as you would do for a whole image. 
 Cellpose will segment only the objects within the selected ROI and returns the labels in a smaller image cropped around the ROI.
 
 If you select the option `return ROIs`, the resulting ROIs will be placed in the original image (full size), as you can see in the example image below.
@@ -211,5 +212,10 @@ For other way to run Cellpose from Fiji, see this page that links several option
 
 If you encountered a problem using the plugin, or to ask for a new feature, please fill an issue on the [github repository](https://github.com/Image-Analysis-Hub/cellpose-appose/issues).Please give as many details as possible.
 
-You can also post a new question on the [imagesc forum](https://forum.image.sc/), mentionning that the question is related to cellpose-appose plugin.
+You can also post a new question on the [imagesc forum](https://forum.image.sc/) with the tag `fiji-cellpose`.
 
+## Code development
+
+The core of running cellpose has been move to a separated repository in [https://github.com/imglib/imglib2-cellpose](https://github.com/imglib/imglib2-cellpose). This allows to have a reusable artifact to run cellpose from Java, so it can also be directly called in other Fiji or Icy plugins.
+
+This repository takes care of the interface between the user and the `imglib2-cellpose` code.
