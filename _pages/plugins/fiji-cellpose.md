@@ -217,5 +217,6 @@ You can also post a new question on the [imagesc forum](https://forum.image.sc/)
 ## Code development
 
 The core of running cellpose has been move to a separated repository in [https://github.com/imglib/imglib2-cellpose](https://github.com/imglib/imglib2-cellpose). This allows to have a reusable artifact to run cellpose from Java, so it can also be directly called in other Fiji or Icy plugins.
+Cellpose API documentation can be found [here](https://cellpose.readthedocs.io/en/latest/api.html) and a more detailled version [here](https://deepwiki.com/MouseLand/cellpose/1-overview).
 
 This repository takes care of the interface between the user and the `imglib2-cellpose` code.
