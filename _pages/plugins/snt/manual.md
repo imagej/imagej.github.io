@@ -320,6 +320,9 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
   
   > To facilitate accurate positioning of starting points, so that they are really on a neurite rather than close to one, the program carries out a local snapping operation. This means that when moving the mouse within the image, the program quickly searches in a small window around the current mouse position for the pixel that is most likely to be on a neurite.
 
+
+{% include notice icon="info" content="Cursor snapping occurs in the [secondary layer](#tracing-on-secondary-image-layer) when active." %}
+
 ### Interactive Tracing
 <span id="auto-tracing"></span>
 
@@ -396,6 +399,8 @@ The wizard needs two types of information from the user: The type of filtering o
   
   - **Spectral Similarity (Brainbow / Multichannel)** A filter designed for multichannel images in which neurites are labeled by multiple fluorophores such as Brainbow data. Instead of enhancing structural features, it computes how well each voxel's color (channel-intensity vector) matches a reference color derived from traced paths. The output combines cosine similarity (directional match) with an intensity factor (brightness match), producing a scalar map in [0, 1] where high values indicate voxels matching the target neuron's spectral signature. This filter does not require σ values: the _Scale(s)_ field is automatically set to "unused". See _Scale(s)_ below for how to define the reference color.
 
+{% include notice icon="snt-stream" content="Filters that require the entire image to reside in memory, are not available in [Stream Mode](./snt-stream)." %}
+
 - **Scale(s)** Also known as _sigma(s)_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
   
   - **Select visually...**: The wizard will prompt you to click on a representative region of the image which has a meaningful structure. Once you click there, a preview palette is generated showing increasing values of σ (from top-left to bottom-right) applied to that region of the image. Select the suitable scales
@@ -412,8 +417,13 @@ NB: The wizard also allows you to use a backup copy of the image being traced as
  <img  width="900" src="/media/plugins/snt/snt-secondary-layer-wizard.png" alt="Secondary layer wizard previewers" title="Secondary layer wizard previewers" />
 <br>
 <b>Secondary Layer Wizard</b>.<br>
-<b>Left</b>:  Visual selection of filtering kernel(s) using the <i>Sigma palette</i>. The palette features its own offline manual accessible by pressing <i>H</i> or <i>F1</i>. <b>Right</b>: Programmatic estimation of radii across the whole image using <i>local thickness</i>.
+<b>Left</b>:  Visual selection of filtering kernel(s) using the <i>Pick Sigma(s)</i> palette. The palette features its own offline manual accessible by pressing <i>H</i> or <i>F1</i>. <b>Right</b>: Programmatic estimation of radii across the whole image using <i>local thickness</i>.
 </div>
+<br>
+
+{% include notice icon="snt-stream" content="The _Pick Sigma(s)_ palette is initialized differently in [Stream Mode](./snt-stream): Rather than clicking on a representative structure in the image canvas, Activate BDV/BVVV, navigate to a representative structure, hover over it, then press 'P' (Mnemonic: _<u>P</u>ick structure_)" %}
+
+
 #### Loading Secondary layers
 
 The "Layers" drop-down menu in the _Interactive Tracing_ panel also allows for importing secondary images processed elsewhere: Either from a file or an image already open in Fiji.  See the [Generating Filtered Images](/plugins/snt/walkthroughs#generating-filtered-images) walkthrough for more details.
@@ -557,11 +567,14 @@ Described in [Curation Assistant](./curation#curation-assistant).
 
 This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities) or as output from the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity-detection). The basic usage is as follows:
 
-<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
+{% include notice icon="snt-stream" content="In [SNT Stream](./snt-stream), bookmarks are called _Markers_ so that they do not interfere with BDV/BVV's native bookmarks framework, but they function in the exact same way." %}
+
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
 
-- Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %}). A new bookmark will be added logging the cursor's X, Y, Z, C, T coordinates
-
+- To create a bookmark logging the cursor's X, Y, Z, C, T coordinates:
+  - With traditional images: Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %})
+  - With [big data](./big-data)/[SNT Stream](./snt-stream) press {% include key key='M' %}
+  
 - To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
 
 - To rename an existing bookmark, select it and start typing its new label. Alternatively, use
@@ -571,11 +584,17 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
 
 - Use the {% include bc path='Export' %} button to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
 
-The right-click contextual menu of the Bookmark Manager also provides commands for consolidating bookmarks:
+The right-click contextual menu of the Bookmark Manager also provides commands for consolidating, organizing, and analyzing bookmarks:
 
 - **{% include bc path='Colocalize...' %}** Matches bookmarks across different channels within a specified distance threshold, replacing matched groups with their centroids. This is useful for identifying co-labeled structures in multichannel images. Only bookmarks from different channels are matched.
 
+- **{% include bc path='Grouping Tags...' %}** Assigns distinct colors to bookmarks, either one color per entry or one color per group of matching labels. Groups can be defined by the exact label (e.g. "M1"/"M1"), a common leading token (e.g. "Soma 1"/"Soma-2" → "Soma"), or a common trailing token (e.g. "Left Soma"/"Right Soma" → "Soma"), making it easy to color-code bookmarks that follow a shared naming convention.
+
 - **{% include bc path='Merge...' %}** Merges nearby bookmarks within each channel independently, replacing clustered bookmarks with their centroids. This is useful for consolidating redundant or overlapping bookmarks that were placed on the same structure within a single channel.
+
+- **{% include bc path='Nearest Neighbor Distribution...' %}** Computes the distribution of nearest neighbor distances between (selected) bookmarks.
+
+- **{% include bc path='Sort by Distance' %}** Submenu for sorting the bookmarks table by distance, either to a reference point you specify, or to the currently selected entry.
 
 
 ## 3D Tab
@@ -619,13 +638,15 @@ The Legacy 3D Viewer is a functional tracing canvas and allows images to be trac
 <span id="delineations-manager"></span>
 
 ## Delineations Tab
+<img align="right" width="300" src="/media/plugins/snt/snt-delineations-tab.png" alt="Delineations tab" title="Delineations tab" />
+<img align="right" width="300" src="/media/plugins/snt/snt-notes-tab.png" alt="Notes tab" title="Notes tab" />
+
 This tab hosts the Delineations Manager, a utility that allows measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses are described in detail in [Delineation Analysis](/plugins/snt/delineations).
 
 <span id="notepad"></span>
 
 ## Notes Tab
 This tab hosts a simple notepad allowing you to jot down notes without disrupting the tracing workflow. Notes are not stored in neither .TRACES nor .SWC files and must be saved manually. The notepad is rather simple but supports [markdown markup](https://en.wikipedia.org/wiki/Markdown), and features a dedicated toolbar for insertion of automated text, such as name and path of image being traced, current time, computation settings, etc.
-<img align="right" width="300" src="/media/plugins/snt/snt-notes-tab.png" alt="Notes tab" title="Notes tab" />
 
 
 ## Status Bar

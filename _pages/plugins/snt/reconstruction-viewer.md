@@ -56,8 +56,11 @@ _Reconstruction viewer_ is a generic visualization tool, supporting multiple spe
 {% include notice icon="info" content=coordinates %}
 
 
-# RV Controls
-The RV Controls dialog is the Reconstruction Viewer equivalent to the [Path Manager](/plugins/snt/manual#path-manager) in SNT's tracing interface. It allows you to control and customize the objects displayed in the scene. Note that only interactive instance of the viewer display this dialog. Those generated programmatically via scripting may omit it. The dialog is organized as follows:
+# Controls
+<span id="rv-controls"></span>
+
+The Control pane is the Reconstruction Viewer equivalent to the [Path Manager](/plugins/snt/manual#path-manager) in SNT's tracing interface. It allows you to handle and customize the objects displayed in the scene.
+Note that only interactive instance of the viewer display the pane. Those generated programmatically via scripting may omit it. The pane is organized as follows:
 
 ## Scene Controls
 This menu provides control over the rendered scene.
@@ -339,7 +342,7 @@ Options and global settings. It is divided in 4 sections:
 <img align="right" src="/media/plugins/snt/snt-recviewer-setting-controls.png" alt="Settings" title="Settings" width="500" />
 
 ### Layout
-Includes options to toggle the visibility of the _RV Controls_ dialog (typically hidden in full screen). Shortcut: {% include key keys='SHIFT|C' %}
+Includes options to toggle the visibility of the control pane (typically hidden in full screen). Shortcut: {% include key keys='SHIFT|C' %}
 
 
 ### Keyboard & Mouse Sensitivity

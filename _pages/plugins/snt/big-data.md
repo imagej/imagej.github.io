@@ -39,13 +39,13 @@ The following operations are currently supported:
 
 Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the prompt you can specify:
 
-- **Main volume**: The primary image volume. Supported files include: standard files, IMS, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers
+- **Main volume**: The local path _or_ remote URL to the primary image volume. Supported files include: standard files, IMS, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers
 
-- **Secondary volume**: Optional image volume. Useful for loading a processed version of the main volume, or a secondary channel saved as a separated file
+- **Secondary volume**: The local path _or_ remote URL to a second, optional image volume. Useful for loading a processed version of the main volume, or a secondary channel saved as a separated file
 
-- **Reconstruction file(s)**: Optional. Either a single file ([TRACES, SWC, JSON, etc.](./manual#load-tracings-)), or a folder containing multiple reconstruction files. Reconstructions can also be imported later on using the _SNT Controls_ toolbar
+- **Reconstruction file(s)**: Optional. Either a single file ([TRACES, SWC, JSON, etc.](./manual#load-tracings-)), or a folder containing multiple reconstruction files. Reconstructions can also be [imported later](./manual#load-tracings-). Remote URLs are also supported.
 
-- **Markers file**: Optional. A CSV file containing [bookmarked](./manual#bookmarks-tab) locations. Markers can also be imported later on using the _SNT Controls_ toolbar
+- **Markers file**: Optional. A CSV file containing [bookmarked](./manual#bookmarks-tab) locations. Markers can also be imported later on. Remote URLs are also supported.
 
 - **Viewer type**: Defines the viewer type. Either:
   - **Big Data Viewer (BDV): Interactive reslicing**: Interactive re-slicing browser
@@ -60,7 +60,7 @@ Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the 
 
 - **One channel/frame at a time**: for performance reasons, one channel/frame is streamed for tracing at once. Commands that require all channels/frames available simultaneously (e.g., [Multispectral Refinement](./manual#multispectral-refinement)) are not supported
 - **Fixed search algorithm**: the A* search algorithm is used for interactive tracing; the alternate NBA*/Fast Marching options available for in-core images may not be offered in Stream mode
-- **Image statistics**: Access to cost-function tuning and [image-statistics options](./manual#algorithm-settings). _Compute Real-Time_ (the default) recalculates local statistics as you trace new regions. _Compute Now For Whole Image_ scans the entire streamed dataset once; because this can be _slow_ depending on dataset size and network/disk speed
+- **Cached image statistics**: Access to cost-function tuning and [image-statistics options](./manual#algorithm-settings) remains available. However, since _Compute Now For Whole Image_ scans the entire streamed dataset once, it can be _slow_ depending on dataset size and network/disk speed. Use _Compute Real-Time_ (the default) instead: It recalculates local statistics as you trace new regions.
 - **3D Scene recentering on click**: whether/how the view recenters as you place tracing points is configurable from the toolbar's options menu (_Never_ / _Adaptive_ / _Always_). _Adaptive_ is the recommended default for streamed data: it skips recentering for clicks that already land close to the focal plane, and briefly gates subsequent clicks after a recenter fires, giving tile streaming time to catch up
 - **Path fitting and automated tracing**: Supported the same way as for in-core images; see [Auto-tracing](./auto-tracing#grayscale-images) and [Path optimization](./manual#refinefit-)
 
@@ -80,4 +80,4 @@ It is a general rendering feature, available in _Scene Controls_ whenever a BVV 
 [Big volume viewer](./manual#big-volume-viewer) and [Big data viewer](./manual#big-data-viewer) are at the core of Big-data support. Standard formats (TIFF, and anything readable via [Bio-Formats](/formats/bio-formats)) are loaded as regular in-memory volumes, with an option to downsample automatically if a volume exceeds the GPU's 3D texture limits.
 Imaris (.ims) files are supported via an automatically generated BDV-XML sidecar written next to the original file.
 
-For genuinely large datasets, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers are opened virtually: data is streamed from disk in blocks as needed. N5 and Zarr containers are read directly, with no XML sidecar required.
+For genuinely large datasets, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers are opened virtually: data is streamed from disk in blocks as needed. N5 and Zarr containers are read directly, with no XML sidecar required. Remote data can be also be loaded using URLs.
