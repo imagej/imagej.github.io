@@ -4,13 +4,13 @@ description: Object-based colocalization from label images or ROI sets using cen
 categories: [Analysis, Colocalization, Segmentation]
 source-url: https://github.com/Jay2owe/CPC
 update-site: Center-Particle-Coincidence
-release-version: 1.3.0
-release-date: 2026-05-05
+release-version: 1.5.0
+release-date: 2026-08-05
 dev-status: Active
 support-status: Active
 team-maintainers: '@Jay2owe'
-license-url: /licensing/public-domain
-license-label: CC0-1.0
+license-url: https://github.com/Jay2owe/CPC/blob/main/LICENSE
+license-label: BSD-3-Clause
 ---
 
 Centre-Particle Coincidence (CPC) is an ImageJ/Fiji plugin for object-based colocalization analysis. CPC classifies segmented objects as coincident when their centroid falls inside a segmented object in another channel, and it also reports the reciprocal "contains" relationship: how many partner-object centroids fall inside each object. This keeps segmentation separate from colocalization, so objects can come from StarDist, Cellpose, thresholding, manual ROI sets, or any other workflow that produces label images or ROI `.zip` files.
@@ -39,7 +39,9 @@ Plugins > CPC
 
 ## What CPC Does
 
-CPC compares segmented objects across 2 to 5 channels. For each object in a source label image, it reads the target label image at the source object's centroid position. If that position falls inside a target object, CPC reports the source object as coincident with that target object.
+CPC compares segmented objects across channels. For each object in a source label image, it reads the target label image at the source object's centroid position. If that position falls inside a target object, CPC reports the source object as coincident with that target object.
+
+At least two channels are required. The dialog and the macro grammar provide five channel slots; folder batch processing and the Java API accept any number.
 
 CPC also runs the reciprocal centroid test so users can see containment from the other direction:
 
@@ -52,8 +54,8 @@ These results are not always symmetric. A small object can be colocalized with a
 
 CPC supports two input modes:
 
-- **Label images**: 2 to 5 open or file-backed label/object maps. Each object is represented by a non-zero integer label.
-- **ROI sets**: a reference image plus 2 to 5 ImageJ ROI `.zip` files.
+- **Label images**: open or file-backed label/object maps. Each object is represented by a non-zero integer label. Non-integer label images are read by rounding, and negative, NaN and out-of-range values are treated as background.
+- **ROI sets**: a reference image plus ImageJ ROI `.zip` files.
 
 If raw intensity images are available, CPC can use intensity-weighted centroids instead of geometric centroids. Raw images must match the dimensions of their corresponding label images.
 
@@ -70,9 +72,20 @@ CPC can produce:
 
 When auto-save is enabled, CPC writes results into a `CPC/` folder containing object tables, multi-target summaries, map images, and small README files describing the outputs.
 
+Two properties make the tables safe to script against:
+
+- Rows in every per-object table are ordered by **ascending object label**, so the same dataset always produces the same row order.
+- The multi-target summary **always carries its `None` row**, including when that count is zero, so a script reading rows by position does not silently pick up the totals row on datasets where everything colocalizes.
+
 ## Batch Processing
 
 The **Batch...** button opens a folder workflow for processing many label images. Batch mode supports recursive folder scanning, regular-expression grouping of filenames, group preview before running, and aggregated output tables across groups and folders.
+
+## Scripting and Reuse
+
+CPC records and replays ImageJ macros, and exposes a Java API for use from scripts and from other plugins. The macro grammar mirrors the dialog's five channel slots; the Java API and folder batch processing are not limited to five.
+
+The analysis engine is also packaged as an embeddable module, so another plugin can compile in centroid coincidence and offer it directly. That is a build-time arrangement between plugin authors — it changes nothing for users, who install a single jar from the update site as before.
 
 ## Method Notes
 
@@ -82,9 +95,11 @@ Because CPC uses object centroids, users should inspect segmentation quality and
 
 ## Citation
 
-If you use CPC in published work, cite the software repository:
+If you use CPC in published work, cite the archived release. The concept DOI below always resolves to the latest version:
 
 ```text
-Malcolm, J. (2026). CPC - Centre-Particle Coincidence (v1.3.0) [Software].
-https://github.com/Jay2owe/CPC
+Malcolm, J. (2026). CPC - Centre-Particle Coincidence [Computer software].
+Zenodo. https://doi.org/10.5281/zenodo.21633355
 ```
+
+Where exact reproducibility matters, cite the DOI of the version you ran instead — v1.5.0 is [10.5281/zenodo.21812272](https://doi.org/10.5281/zenodo.21812272).
