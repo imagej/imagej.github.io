@@ -7,6 +7,11 @@ affiliation:
 forum: elevans
 github: elevans
 ---
-Ed Evans is a postdoc programmer at [LOCI](/orgs/loci) and member of LOCI's
-core [ImageJ2](/software/imagej2)/[Fiji](/software/fiji) team. His current
-project is integration of Python-based machine learning approaches with ImageJ.
+Edward Evans is a staff scientist/programmer at [LOCI](/orgs/loci) and member of
+LOCI's core [Fiji](/software/fiji) team. Ed enjoys applying Fiji to real-world
+scientific image analysis. He co-maintains the [PyImageJ](/scripting/pyimagej)
+library for
+[integration of Fiji/ImageJ into Python](https://imagej.net/scripting/python),
+and more recently has been developing Rust-based image analysis libraries
+[imgal](https://github.com/imgal-sc/) and
+[cellcast](https://github.com/uw-loci/cellcast).
