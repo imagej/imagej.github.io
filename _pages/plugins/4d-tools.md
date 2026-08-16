@@ -111,4 +111,4 @@ NOTE: this script only loads the movie data; annotation/overlay information is n
 
 ## Additional information and support
 
-Sample data can be downloaded from the [Hardin Lab microscopy page](https://worms.zoology.wisc.edu/research/microscopy/).
+Sample data can be downloaded from the [Hardin Lab microscopy page](https://worms.biology.wisc.edu/research/microscopy/).
