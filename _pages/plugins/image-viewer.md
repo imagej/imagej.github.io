@@ -1,20 +1,31 @@
 ---
 title: Image Viewer
 description: utility plugins and macros to control images contast and LUTs
-categories: [Annotation, Interactive, Macro, Microscopy, Montage, Utilities, Visualization]
+categories:
+  - Annotation
+  - Interactive
+  - Macro
+  - Microscopy
+  - Montage
+  - Utilities
+  - Visualization
+canvas:
+  - "[[IMAGEJ.canvas]]"
+IMAGEJ: []
 ---
 This Update Site provides utility plugins and macros to help with handling and visualization of microscopy images        
 **If you have a question, feedback or a bug to report, you can post it on the [Image.sc](https://forum.image.sc/t/looking-for-testers-channels-contrast-and-luts-manager-plugins/) Forum**
 
-Main Features include:
-- A Multi Tool to enhance mouse interactions with image windows
+#### Main Features include:
+- A Multi Tool to enhance mouse interactions with image windows in many ways
 - Two plugins to control image contrast and LUTs (Look Up Tables)
 - Utility macros :
 	- A cool way to open images from thumbnail montages: [Preview Opener](https://imagej.net/plugins/image-viewer#preview-opener)
-	- Fast basic multichannel montages: [Spit View](https://imagej.net/plugins/image-viewer#split-view)
+	- Fast basic multichannel montages: [Split View](https://imagej.net/plugins/image-viewer#split-view)
 	- auto-generated scale bar
 	- Auto-contrast macros
 	- Save all opened images
+	- A curtain tool to compare two versions of an image
 
 # LUTs Manager
 #### Multichannel Palettes:
@@ -24,7 +35,7 @@ Main Features include:
 - Right-click on palette to move or remove LUTs
 - Empty palette channels default to "Grays"
 - All created palettes will be easilly accessible from the **Channels and Contrast** plugin!    
-![Image Viewer LUTs Manager](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="700px"}        
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-LUTs-Manager.png?raw=true){:width="700px"}        
 
 #### LUTs Finder
 All LUTs in your ImageJ `luts` folder are scanned      
@@ -43,7 +54,7 @@ Each LUT comes with an **estimated** description of its properties:
 
 # Channels and Contrast
 This plugin combines and enhance most imageJ's "Brightness and Contrast" and "Channels Tool" functionalities to manage visualization of the active image       
-![Image Viewer Channels and Contrast](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true){:width="600px"}          
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Channels-and-Contrast.png?raw=true){:width="600px"}          
 You can:
 - Change multi-channel display mode: composite, color, or grayscale
 - **Right click on the composite button to change projection mode : Sum, Max, Min and Invert**
@@ -55,9 +66,9 @@ You can:
   - **Min/Max:** Resets the display range betwin the min and max values of the full channel stack. (this is why it can be a bit slow with huge images)       
 - Interface with the **LUTs Manager** to apply LUT palettes or individual favorite LUTs      
 You can change order of LUTs in a palette directly with the mouse from the palette menu     
-![Image Viewer CC palettes](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-palettes.png?raw=true){:width="300px"}     
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-palettes.png?raw=true){:width="300px"}     
 - Access more options and built-in utilities for multi-channel images via the "More" button     
-![Image Viewer CC More](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-More.png?raw=true){:width="200"}      
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-CC-More.png?raw=true){:width="200"}      
 
 # Preview Opener
 This command creates a thumbnail montage of opened images and saves it in their directory  
@@ -77,14 +88,14 @@ So next time you search for a specific image on the folder, you will find it imm
 - Montage title must include “Preview Opener” (you can add text before/after)
 
 # Multi Tool
-This Tool is a neutral tool with a simple click.      
-And it can do **many** actions based on the mouse button, modifier keys (shift, ctrl, alt) and context!
+This Tool do nothing with a simple left click.      
+Howether it can do **many** actions based on the mouse button, modifier keys (shift, ctrl, alt) and context!
 ### **Windows**     
 - **Move Window:**       
-  Left Click and Drag (outside ROI):  Moves the image window position interactively.     
+  Left Click and Drag:  Moves the image window position interactively.     
 - **Reversible Full Screen:**       
-  Double Left Click:  Maximizes the image window, double click again to go back to original size.
-                
+  Double Left Click:  Maximizes the image window, double click again to go back to previous size and position.
+
 ### **Composite Display Switch**     
 - **Switch Composite Display:**       
   Middle Click on composite image:  Toggle display mode between Composite and Color.        
@@ -97,7 +108,7 @@ And it can do **many** actions based on the mouse button, modifier keys (shift, 
   Ctrl + Click outside the ROI removes the current ROI.     
 ### **Contrast**     
 - **Local Box Auto-Contrast:**       
-  Shift + Alt + Left Click (on non-RGB images): Creates a fixed-size box ROI and auto-adjusts contrast in its area.      
+  Shift + Alt + Left Click (on non-RGB images): Creates a fixed-size box ROI and auto-adjusts contrast based on this area.      
   ![Image-Viewer-Local-Auto-Contrast-1](https://github.com/user-attachments/assets/4af5fdae-0f32-4762-957f-18947bf2cda8){:width="600px"}           
 - **Live Contrast Adjustment:**       
   Shift + Left Mouse Drag (non-RGB images):  Drag pointer in the image to interactively adjust contrast.        
@@ -127,15 +138,26 @@ And it can do **many** actions based on the mouse button, modifier keys (shift, 
 
 # Other Commands
 A collection of utility macros:
-### **Split View:** 
+### Split View: 
 Quickly create clean multichannel montages for up to 5 channels :       
-![Image Viewer SplitView](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-SplitView.png?raw=true){:width="500px"}    
 
-### **Auto Scale Bar:** 
+### Auto Scale Bar: 
 Estimate and add scale bar. You can adjust the size and hide the text in options. This macro is adapted from [Aleš Kladnik](https://forum.image.sc/t/automatic-scale-bar-in-fiji-imagej/60774)     
 
-### **Auto-Contrast** 
-Recordable macro commands reproducing the **Channels and Contrast** buttons       
+### Auto-Contrast 
+Macro commands reproducing the **Channels and Contrast** buttons  
+
+### Compare Tool
+A macro tool you can find in the toolsets menu of ImageJ (the red double-greater-than `>>` "More Tools" button at the right end of the main toolbar.)        
+with it you can compare two versions of the same image. Double click on the source image and slide on the other image to compare with a curtain effect           
+### Miscellaneous
+- Apply first LUT Palette (to current image or all opened)
+- Same contrast to all opened images
+- Same composite mode to all images
+- Save all opened images as
+
+
 
 
 # Installation
@@ -145,36 +167,33 @@ Then in your imageJ app folder : place the **Image Viewer** folder on the ``plug
 
 All commands and plugins are located in the ``Plugins > Image Viewer`` menu.       
 However, The easiest way to access commands is from the toolbar menu you can find as ``Image_Viewer_Toolset`` under the red `>>` menu in the ImageJ window:            
-![Image Viewer Toolset](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Toolset.png?raw=true){:width="300px"}    
+![](https://github.com/imagej/imagej.github.io/blob/main/media/Image-Viewer/Image-Viewer-Toolset.png?raw=true){:width="300px"}    
 This will install a "View" menu in your Toolbar will all Image Viewer commands!     
-
-Note :     
+  
+# Macro snippets
 If you like these tools so much you need to get them installed at every starts, just copy this macro code and past it at the end of your 
 - `Fiji/macros/StartupMacros.fiji.ijm` for Fiji       
-- `ImageJ/macros/StartupMacros.txt` for ImageJ
-
+- `ImageJ/macros/StartupMacros.txt` for ImageJ : 
   
 ```java
 var viewer_Menu = newMenu("Image Viewer Menu Tool",
 	newArray( 
 		"Channels and Contrast",
-		"LUTs Manager",
 		"Multi Tool",
+		"LUTs Manager",
+		"Create Preview Opener",
 		"-",
+		"Apply first LUT Palette",
 		"Split View (multi-channel montage)",
 		"Auto scale bar",
-		"Create Preview Opener",
-		"Image Viewer options",
 		"-",
 		"Auto contrast all images",
-		"Auto contrast all channels",
-		"Auto contrast active channel",
 		"Reset min max all images",
-		"Reset min max all channels",
-		"Reset min max active channel",
 		"Same contrast to all opened images",
-		"-",
+		"Same composite mode to all images",
 		"Save all opened images as",
+		"-",
+		"Image Viewer options",
 		"Image Viewer online help"
 	)
 );
@@ -183,4 +202,17 @@ macro "Image Viewer Menu Tool - N20C000 T0c15v T8c10i  Tac10e Tfc10w" {
 	command = getArgument(); 
 	run(command); 
 }
+```
+
+All commands are macro recordable so you can make your own keyboard shortcuts:
+in example:
+```java
+macro "[1]"{ 
+	run("Apply first LUT Palette", "active=[All opened images]");
+}
+
+macro "[S]"{ 
+	run("Split View (multi-channel montage)", "channels=Grayscale montage=Linear border=5 labels=[No labels]");
+}
+
 ```
