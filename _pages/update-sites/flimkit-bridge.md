@@ -1,5 +1,6 @@
 ---
 title: FLIMKit-Bridge
+icon: https://raw.githubusercontent.com/FLIMKit/FLIMKit/main/flimkit/UI/icon.png
 ---
 
 FLIMKit-Bridge provides direct image and ROI exchange between [FLIMKit](https://github.com/FLIMKit/FLIMKit) and Fiji (ImageJ), and brings FLIMKit's tools -- fitting, phasor analysis, and stitching -- to Fiji.
