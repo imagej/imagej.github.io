@@ -24,23 +24,13 @@ This purpose is also crucial for agile development across multiple components. F
 
 ### Proxying
 
-The SciJava Maven repository's secondary purpose is to serve as a fast, local mirror of Maven Central as well as several useful third-party repositories.
+The SciJava Maven repository's secondary purpose is to serve as a fast, local mirror of useful third-party repositories.
 
-It acts as a unified, on-demand mirror for these public Maven repositories, reducing load on the remote servers and potentially reducing local build times.
+It acts as a unified, on-demand mirror for these public Maven repositories, reducing load on their servers and often speeding up local builds.
 
-Developers can benefit from the mirror by adding the following section to their `$HOME/.m2/settings.xml` file:
+If one of these third-party repositories goes offline—as we have seen happen several times over the years—old builds of SciJava-based software keep working, because their dependencies are pulled from the SciJava mirror rather than the now-defunct upstream server.
 
-    <settings>
-            ...
-            <mirrors>
-                    <mirror>
-                            <id>scijava-mirror</id>
-                            <name>SciJava public mirror repository</name>
-                            <url>https://maven.scijava.org/content/groups/public</url>
-                            <mirrorOf>*</mirrorOf>
-                    </mirror>
-            </mirrors>
-    </settings>
+Note that, as of 2026, the SciJava Maven repository no longer proxies Maven Central. As a result, when building SciJava-based software on a fresh machine, you will see each dependency fetched first from scijava.public, then—if scijava.public doesn't have it, which it won't for artifacts hosted on Central—from central.
 
 ## Continuous integration
 
