@@ -119,7 +119,7 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
 &#9881; _0 by default (None, automatic calculation)._
 
 - `Shuffle labels`: In the output of Cellpose, the labels are ordered with label 1 being around the top left part of the image. Neighbor objects will have very close label value. The labels are displayed with random colors, but when there are more than 256 labels, objects with close label values can be displayed with nearly or the same color, and can appear as one object if they are touching. See [this example and discussion](https://forum.image.sc/t/stitching-parameter-backwards-for-fiji-cellpose/122477) for more. As suggested in this post by Sara McArdle, putting this parameter to `True` shuffle randomly the labels so that neighbors labels are more likely to be of different colors. You can deactivate this shuffling by unchecking this parameter.<br/>
-  &#9881; _True by default (will shuffle)._
+&#9881; _True by default (will shuffle)._
 
 ### 3D Options
 
