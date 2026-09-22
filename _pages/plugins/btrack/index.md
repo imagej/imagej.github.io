@@ -8,11 +8,6 @@ categories: [Tracking,Tissue,Skeleton]
 
 <img src="/media/icons/kapoorlablogo.png" alt="Logo2" width="150"/>
 
-This product is a testament to our expertise at KapoorLabs, where we specialize in creating cutting-edge solutions. We offer bespoke pipeline development services, transforming your developmental biology questions into publishable figures with our advanced computer vision and AI tools. Leverage our expertise and resources to achieve end-to-end solutions that make your research stand out.
-
-**Note:** The tools and pipelines showcased here represent only a fraction of what we can achieve. For tailored and comprehensive solutions beyond what was done in the referenced publication, engage with us directly. Our team is ready to provide the expertise and custom development you need to take your research to the next level. Visit us at [KapoorLabs](https://www.kapoorlabs.org/).
-
-
 BTrack is a TrackMate detector for tracking growing ends of tissue branches using skeletonization implementation of imglib2.
 
 ## Installation
@@ -34,21 +29,17 @@ BTrack is a tool to analyse the growth of branched tissues. A 2D time-lapse/ 3D 
 
 For using this detector select Btrack from the detector menu list of TrackMate. The screen looks as shown here
 
-
 <img src="/media/plugins/btrack/Btrackdetector_screen_1.png" alt="Btrackdetector screen 1" width="250"/> 
 
-
-
 #### Detection Panel
+
 Click next and if you are using a hyperstack with Raw and segmentation images in two channels, choose the segmentation image channel for the detector. Click Preview to see the detected end points. The panel for this looks as shown here
 
 <img src="/media/plugins/btrack/Btrackdetector_screen_2.png" alt="Btrackdetector screen 2" width="250"/> 
 
-
 In our [example, download from Zenodo](https://zenodo.org/record/6838981) we have the Segmentation image in channel 1 and the Raw image in channel 2 and the initial detections look as shown here
 
 <img src="/media/plugins/btrack/initial_detections.png" alt="Initial detections" width="250"/> 
-
 
 #### Tracking Options
 
@@ -56,15 +47,15 @@ After the initial preview click on the next button to run the detector on all th
 
 <img src="/media/plugins/btrack/initial_tracks.png" alt="Initial tracks" width="250"/> 
 
-
-
-
 #### Save Options
+
 All the usual tracking, track editing and saving options that are provided by TrackMate can be used to further analyze and compute the growth rates of individual tracks. For detailed options available for doing so please refer to the manual of [TrackMate](https://imagej.net/plugins/trackmate/)
 
 ## Authors
-Lead programmer, Mantainer: {% include person id='kapoorlab' %}
-Contributor: {% include person id='claudiacarabana' %}
+
+Lead programmer and maintainer: {% include person id='kapoorlab' %}
+Contributor: {% include person name='Claudia Carabana' %}
+
 ## References
 
 [^1]: J. Munkres, "Algorithms for the Assignment and Transportation Problems", Journal of the Society for Industrial and Applied Mathematics, 5(1):32–38, 1957 March
