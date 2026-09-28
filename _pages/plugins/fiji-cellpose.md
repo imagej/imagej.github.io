@@ -121,6 +121,9 @@ After you selected a version of Cellpose, a graphical interface will pop-up to l
 - `Shuffle labels`: In the output of Cellpose, the labels are ordered with label 1 being around the top left part of the image. Neighbor objects will have very close label value. The labels are displayed with random colors, but when there are more than 256 labels, objects with close label values can be displayed with nearly or the same color, and can appear as one object if they are touching. See [this example and discussion](https://forum.image.sc/t/stitching-parameter-backwards-for-fiji-cellpose/122477) for more. As suggested in this post by Sara McArdle, putting this parameter to `True` shuffle randomly the labels so that neighbors labels are more likely to be of different colors. You can deactivate this shuffling by unchecking this parameter.<br/>
 &#9881; _True by default (will shuffle)._
 
+- `Output type`: The output of Cellpose is a labelled image. By default, for memory efficiency, Fiji-Cellpose returns a `16-bit` labelled image, which means that the number of unique object labels is limited to 65K. If your image contains more than 65K objects, it will use the same label for several objects. To have unique labels, you can force it to returns a `32-bit` result by selecting `32-bit` in this parameter, so that a very large number of objects can be uniquely labelled. <br/>
+&#9881; _16-bit by default (until 65K objects)._
+
 ### 3D Options
 
 **These options can be modified only if the image is a 3D stack (contains more than 1 slice)**. 
