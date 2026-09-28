@@ -295,6 +295,8 @@ By default, commands and actions are filtered using approximate string matching.
 
 This *home* tab aggregated widgets for tracing and frequent operations.
 
+{% include notice icon="snt-stream" content="Some widgets that require images to be fully loaded into memory may be disabled in [Stream Mode](./snt-stream)." %}
+
 ### Data Source
 
 <img align="right" alt="SNT data source widget" src="/media/plugins/snt/snt-data-source-widget.png" width="300" />
@@ -341,7 +343,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
   
 - **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower computation footprint), or _Array_ (slightly faster, but higher footprint)
 
-{% include img src="/media/plugins/snt/snt-cost-function-wizard.png" align="right" caption="Not sure which cost function suits your image? Use _Cost Function Selection Wizard..._ to compare all variants on a representative neurite segment: Each variant's candidate path is overlaid on a cropped view of the source image so you can pick the most suitable. The wizard accepts either a short traced path, a Path Manager selection, or a multi-point ROI (2+ points) as the probe segment" width="450px" %}
+{% include img src="/media/plugins/snt/snt-cost-function-wizard.png" align="right" caption="Not sure which cost function suits your image? Use _Cost Function Selection Wizard..._ to compare all variants on a representative neurite segment: Each variant's candidate path is overlaid on a cropped view of the source image so you can pick the most suitable. The wizard accepts either a short traced path, a Path Manager selection, or (in-memory images only) a multi-point ROI (2+ points) as the probe segment" width="450px" %}
 
 - **Cost Function** Interactive tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
 
@@ -399,7 +401,7 @@ The wizard needs two types of information from the user: The type of filtering o
   
   - **Spectral Similarity (Brainbow / Multichannel)** A filter designed for multichannel images in which neurites are labeled by multiple fluorophores such as Brainbow data. Instead of enhancing structural features, it computes how well each voxel's color (channel-intensity vector) matches a reference color derived from traced paths. The output combines cosine similarity (directional match) with an intensity factor (brightness match), producing a scalar map in [0, 1] where high values indicate voxels matching the target neuron's spectral signature. This filter does not require σ values: the _Scale(s)_ field is automatically set to "unused". See _Scale(s)_ below for how to define the reference color.
 
-{% include notice icon="snt-stream" content="Filters that require the entire image to reside in memory, are not available in [Stream Mode](./snt-stream)." %}
+{% include notice icon="snt-stream" content="Filters that require the entire image to reside in memory are not available in [Stream Mode](./snt-stream)." %}
 
 - **Scale(s)** Also known as _sigma(s)_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
   
@@ -421,7 +423,7 @@ NB: The wizard also allows you to use a backup copy of the image being traced as
 </div>
 <br>
 
-{% include notice icon="snt-stream" content="The _Pick Sigma(s)_ palette is initialized differently in [Stream Mode](./snt-stream): Rather than clicking on a representative structure in the image canvas, Activate BDV/BVVV, navigate to a representative structure, hover over it, then press 'P' (Mnemonic: _<u>P</u>ick structure_)" %}
+{% include notice icon="snt-stream" content="The _Pick Sigma(s)_ palette is initialized differently in [Stream Mode](./snt-stream): Rather than clicking on a representative structure in the image canvas, activate BDV/BVVV, navigate to a representative structure, hover over it, then press 'P' (Mnemonic: _<u>P</u>ick structure_)" %}
 
 
 #### Loading Secondary layers
@@ -447,7 +449,8 @@ By default, all the nodes of a path are projected onto the current Z-slice. This
 
 3. **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
 
-Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [sciview](/plugins/sciview).
+Any combination of these options may be toggled simultaneously. Note that these options do not apply to [Rec. Viewer](/plugins/snt/reconstruction-viewer) and [sciview](/plugins/sciview), and some filters may be disabled in [Stream Mode](./snt-stream).
+
 
 ### Default Path Colors
 
@@ -573,8 +576,8 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
 
 - To create a bookmark logging the cursor's X, Y, Z, C, T coordinates:
   - With traditional images: Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %})
-  - With [big data](./big-data)/[SNT Stream](./snt-stream) press {% include key key='M' %}
-  
+  - With [big data](./big-data)/[SNT Stream](./snt-stream) press {% include key key='M' %}. NB: A BVV/BDV viewer opened against a regular, already-open image does not support {% include key key='M' %}: bookmark from the original image as above
+
 - To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
 
 - To rename an existing bookmark, select it and start typing its new label. Alternatively, use
@@ -624,7 +627,7 @@ This option assumes [sciview](/plugins/sciview) to be successfully installed. sc
 
 Big Volume Viewer (BVV) is the 3D counterpart of [BigDataViewer](/plugins/bdv) capable of GPU volume rendering of images too large to fit into memory. Since v5 it is also a functional tracing canvas, and includes [Slab View](./big-data#slab-view) for restricting rendering to a thin, adjustable region of the volume. Two entry points are provided:
 
-1. **Standard Images**: For regular, in-core images, already open in SNT, click the _BVV_ button in the 3D tab of SNT 
+1. **Standard Images**: For regular, in-core images, already open in SNT, click the _BVV_ button in the 3D tab of SNT. NB: Bookmarks are still created from the original image using {% include key keys='Shift|B' %} ; {% include key keys='M' %} y marker placement is only available in [SNT Stream](./snt-stream)
 
 2. **Large/Pyramidal Datasets**: For massive files (such as OME-Zarr), please follow the instructions in [Big Data](./big-data#getting-started). Tracing directly on such streamed datasets is handled by [SNT Stream](./snt-stream)
 

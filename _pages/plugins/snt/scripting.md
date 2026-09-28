@@ -131,8 +131,13 @@ Direct access to the SNT API from the [Python](https://www.python.org/) programm
 
 # Fiji Scripting
 
-Scripting in Fiji's script editor is perhaps best done using Groovy and Python. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
+Scripting in Fiji's script editor is perhaps best done using Groovy and Jython. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
 
+{% capture text %}
+For serious scripting, Fiji's Script Editor may not be powerful enough for your needs. The most robust way to script SNT in Groovy
+is to use an IDE: the [SNT scripting project](https://github.com/morphonets/snt-scripting-project) sets one up for you.
+{% endcapture %}
+{% include notice icon="info" content=text %}
 
 # Further  Resources
 
