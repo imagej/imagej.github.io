@@ -8,6 +8,12 @@ section: Generating and analyzing kymographs with TrackMate:Introduction.
 
 # Generating and analyzing kymographs with TrackMate
 
+## Citation. 
+
+This TrackMate extension was developed specifically for a research project. If you use this plugin for your research, please cite the associated article:
+
+{% include citation doi='10.1038/s41467-026-76619-9' %}
+
 ## Introduction. 
 
 Kymographs are a very useful technique in bioimage analysis, that allow for visually following particles even  in data where they are very faint in a noisy background. A moving object drown in noise and background  signal could be become barely visible in the source image. In a kymograph its movement often becomes salient,  and easier to analyze.   
