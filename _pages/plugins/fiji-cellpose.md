@@ -220,6 +220,11 @@ If you encountered a problem using the plugin, or to ask for a new feature, plea
 
 You can also post a new question on the [imagesc forum](https://forum.image.sc/) with the tag `fiji-cellpose`.
 
+- **Unexpected end of file**
+If you get this message `Error: × io error: unexpected end of file`, this is most likely due to a conflict between the cached files from your local pixi and the cached files used by Appose.
+Doing `pixi clean cache` should fix it.
+
+
 ## Code development
 
 The core of running cellpose has been move to a separated repository in [https://github.com/imglib/imglib2-cellpose](https://github.com/imglib/imglib2-cellpose). This allows to have a reusable artifact to run cellpose from Java, so it can also be directly called in other Fiji or Icy plugins.
