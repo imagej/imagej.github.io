@@ -4,6 +4,8 @@ title: Fiji Downloads
 
 [Fiji](/software/fiji) is a distribution of ImageJ which includes many useful plugins [contributed by the community](/contribute/fiji).
 
+{% include notice icon="info" content='<span style="font-size: large; font-weight: bold">New to Fiji?</span> **Fiji Latest** is recommended for most users and is required for the newest Fiji features and plugins. Choose **Fiji Stable** only if you need Java 8, an older operating system, or compatibility with older plugins.' %}
+
 {% include fiji/download-links %}
 
 ## Installation

@@ -1,20 +1,37 @@
 {% raw %}
 
 <style>
+div.downloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em;
+}
 div.download {
-  display: inline-block;
-  vertical-align: top;
+  flex: 1 1 26rem;
+  min-width: 0;
 }
 div.download table {
   font-size: 1rem;
-  width: auto;
-  margin-right: 1em;
+  width: 100%;
 }
 div.download table tr.header th {
   font-weight: bolder;
   background: #2a7bb9;
   color: #fff;
   padding: 0.7em;
+}
+div.download.stable table tr.header th {
+  background: #606060;
+}
+div.download span.download-subtitle {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.65em;
+  font-weight: normal;
+  font-variant: normal;
+  white-space: normal;
+  text-transform: none;
 }
 div.download table th {
   text-align: center;
@@ -50,12 +67,13 @@ div.download div.sysreq li {
   padding-bottom: 0.3rem;
 }
 </style>
-<div>
 
-<div class="download">
+<div class="downloads">
+
+<div class="download latest">
 <table>
 <tbody>
-  <tr class="header"><th colspan=4>Latest Downloads</th></tr>
+  <tr class="header"><th colspan=4>Fiji Latest <span class="download-subtitle">Recommended for most users</span></th></tr>
   <tr>
     <th>&nbsp;</th>
     <th>OS</th>
@@ -149,10 +167,10 @@ div.download div.sysreq li {
 </div>
 </div>
 
-<div class="download">
+<div class="download stable">
 <table>
 <tbody>
-  <tr class="header"><th colspan=4>Stable Downloads</th></tr>
+  <tr class="header"><th colspan=4>Fiji Stable <span class="download-subtitle">For older systems and Java 8</span></th></tr>
   <tr>
     <th>&nbsp;</th>
     <th>OS</th>
