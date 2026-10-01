@@ -158,7 +158,7 @@ To write a new macro, you can:
 - In `Language`, select `ImageJ Macro`
 - In the file, write:
 ```
-run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1 nuclei_channel=None min_size=15 normalize=true resample=true return_rois=false cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false mode_3d=2D+stitch stitch_threshold=0.1 flow3d_smooth=0 torchversion=cpu usegpu=true");
+run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1 nuclei_channel=None min_size=15 normalize=true resample=true return_rois=false cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false shuffle=false labeltype=16-bit mode_3d=2D+stitch stitch_threshold=0.1 flow3d_smooth=0 torchversion=cpu usegpu=true");
 ```
 
 ### Macro from recorder
@@ -189,7 +189,7 @@ for (i = 0; i < lengthOf(filelist); i++)
         open(directory + File.separator + filelist[i]);
         raw_img = getImageID();
         // run cellpose
-        run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1 nuclei_channel=None min_size=15 normalize=true resample=true return_rois=false cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false mode_3d=2D+stitch stitch_threshold=0.1 flow3d_smooth=0 torchversion=cpu usegpu=true");
+        run("Cellpose...", "cp_model=cyto3 custom_model= cell_diameter=30 cyto_channel=1 nuclei_channel=None min_size=15 normalize=true resample=true return_rois=false cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false shuffle=false labeltype=16-bit mode_3d=2D+stitch stitch_threshold=0.1 flow3d_smooth=0 torchversion=cpu usegpu=true");
 		// define the name of the label file to save it
         label_file = directory+File.separator+substring( filelist[i], 0, lengthOf(filelist[i])-4 ) + "_labels.tif";
         saveAs("Tiff", label_file);
