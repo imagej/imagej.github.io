@@ -17,9 +17,9 @@ nav-links:
   url: /plugins/andi-j/ml-models
 ---
 
-This tool runs a per-frame segmentation model that predicts, **for every frame** of every trajectory, the local anomalous exponent *α*, the diffusion coefficient *D* (shown as log₁₀(*D*), due to its wide range of values) and the **diffusive state** — immobile, confined, free diffusion, or directed. It then detects **change points** to split each trajectory into homogeneous segments, each with its own mean α, mean *D*, and majority diffusive state. The window has four tabs: [Visualization](#visualization), [D vs α](#d-vs-alpha), [Segment Stats](#segment-stats) and [Diffusive state](#diffusive-state).
+This tool runs a per-frame segmentation model that predicts, **for every frame** of every trajectory, the local anomalous exponent *α*, the diffusion coefficient *D* (shown as log₁₀(*D*), due to its wide range of values) and the **diffusive state** — immobile, confined, free diffusion, or directed. It then detects **change points** to split each trajectory into homogeneous segments, each with its own α, *D* and diffusive state (see [ML models](/plugins/andi-j/ml-models#andi-j-segmentation) for how the default model computes them). The window has four tabs: [Visualization](#visualization), [D vs α](#d-vs-alpha), [Segment Stats](#segment-stats) and [Diffusive state](#diffusive-state).
 
-{% include notice icon="info" content="**Saving data.** Per-frame predictions and per-segment statistics can be exported as `csv` files from the [Visualization](#visualization) tab (see below)." %}
+{% include notice icon="info" content="**Saving data.** Per-frame predictions and per-segment statistics can be exported as `csv` files from the [Visualization](#visualization) tab (see below). The **D vs α**, **Segment Stats** and **Diffusive state** tabs have a **Save plot** button that exports the plot, with all its panels, as a vector image (`svg`)." %}
 
 ## Visualization
 
@@ -35,15 +35,15 @@ A **4 × 4 grid** of prediction plots, one per trajectory. Each plot shows the p
 For α and D, two layers are overlaid:
 
 *   The **raw per-frame prediction**, whose opacity is controlled by the **Raw α/D** slider.
-*   The **segment step-line**, i.e. the mean of that variable over each detected segment, toggled independently with **α_seg** / **D_seg**.
+*   The **segment step-line**, i.e. the value of that variable for each detected segment, toggled independently with **α_seg** / **D_seg**.
 
 The **CP** toggle shows/hides the dashed vertical lines marking the detected change points; the **State** toggle shows/hides the diffusive-state strip.
 
 Tools:
 
 *   **Sample random 16** picks 16 random trajectories; **Choose trajectories** opens a popup to enter specific `TRACK_ID`s.
-*   **Save raw preds.** exports every trajectory's per-frame α, D and diffusive state to a `csv` (`experiment, traj_idx, frame, alpha, D, state`); `state` is the state of the segment covering that frame, coded as `0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed`.
-*   **Save segments** exports the detected segments, with starting frame, length, mean α, mean D, and state (`experiment, track_id, segment, start_frame, length, alpha, D, state`).
+*   **Save raw preds.** exports every trajectory's per-frame α, D and diffusive state to a `csv` (`experiment, traj_idx, frame, alpha, D, state`); `state` is the per-frame diffusive state, coded as `0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed`.
+*   **Save segments** exports the detected segments, with starting frame, length, α, D, and state (`experiment, track_id, segment, start_frame, length, alpha, D, state`). The `experiment` column is omitted when only one experiment is loaded.
 
 {% include img align="center" name="Visualization tab" src="/media/plugins/andi-j/seg-visualization-tab.png" caption="**Visualization** grid with the raw prediction and segment step-line overlaid." %}
 

@@ -19,7 +19,7 @@ nav-links:
 
 This tool allows to perform single-trajectory analysis of the input experiments. Every tab has a side **Experiments** panel where each experiment can be toggled on/off and, where relevant, restricted to the **2D**, **X**, or **Y** component.
 
-{% include notice icon="info" content="**Saving data.** In each tab you can save the relevant quantity as a `csv` file for further analysis." %}
+{% include notice icon="info" content="**Saving data.** Every tab has a **Save plot** button that exports its plot as a vector image (`svg`), which you can edit in tools such as Inkscape or Illustrator. The **Diffusion coefficient**, **Anomalous exponent**, **Diffusion Model**, **Turning Angles** and **PSD** tabs also save their values as a `csv` file for further analysis (**Save D…**, **Save α…**, **Save models…**, **Save angles…** and **Save PSD…**). In **D vs α**, tagged populations can be saved as trajectory files (see [Population tagging](#d-vs-alpha))." %}
 
 ## tMSD Visualization
 
@@ -36,7 +36,15 @@ This tab shows the time-averaged MSD curves for each experiment, allowing for an
 
 Estimates the diffusion coefficient *D* per trajectory from a linear fit of the tMSD vs lag-time (mirroring `andi_datasets`' `get_diff_coeff`), shown as a histogram. Dashed lines show the mean over the experiment.
 
-You can configure the time lags at will, depending on the conditions of your experiment. For guidance on what to choose, we recommend:
+You can configure the time lags at will, depending on the conditions of your experiment. Three formats are accepted:
+
+1.  **`[min, max]` — a fixed integer range.** When the second value is an integer ≥ 1 and larger than the first, the fit uses every lag from `min` to `max`, the **same for all trajectories**. Example: `[1, 20]` uses lags 1, 2, …, 20.
+
+2.  **`[min, fraction]` — a per-trajectory (adaptive) range.** When the second value is between 0 and 1, it is read as a *fraction of each trajectory's length*: the fit uses lags from `min` up to `floor(fraction × length)` (with a small lower bound of 4), computed **independently for every trajectory**, so short trajectories automatically get a shorter maximum lag. Example (and default): `[1, 0.1]` fits from lag 1 up to 10 % of each trajectory's length.
+
+3.  **`[t₁, t₂, t₃, …]` — an explicit list.** Any comma-separated list of positive integers is used verbatim as the set of lags for every trajectory. Example: `[1, 2, 4, 8]`.
+
+For guidance on what to choose, we recommend:
 
 *   Kepten, E., Weron, A., Sikora, G., Burnecki, K., & Garini, Y. (2015). Guidelines for the fitting of anomalous diffusion mean square displacement graphs from single particle tracking experiments. [PLOS ONE, 10(2), e0117722](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117722).
 
@@ -51,13 +59,7 @@ Estimates the anomalous exponent *α* with **two interchangeable methods**, sele
 <details markdown="1">
 <summary><b>TMSD</b> — log–log fit of the tMSD curve (click to expand)</summary>
 
-The anomalous exponent is obtained from a **log–log fit** of the time-averaged MSD (tMSD) versus the time lag Δ: α is the slope of `log(tMSD)` vs `log(Δ)`. The **Time lags** field controls which lags enter that fit. It accepts three formats:
-
-1.  **`[min, max]` — a fixed integer range.** When the second value is an integer ≥ 1 and larger than the first, the fit uses every lag from `min` to `max`, the **same for all trajectories**. Example: `[1, 20]` uses lags 1, 2, …, 20.
-
-2.  **`[min, fraction]` — a per-trajectory (adaptive) range.** When the second value is between 0 and 1, it is read as a *fraction of each trajectory's length*: the fit uses lags from `min` up to `floor(fraction × length)` (with a small lower bound of 4), computed **independently for every trajectory**, so short trajectories automatically get a shorter maximum lag. Example (and default): `[1, 0.1]` fits from lag 1 up to 10 % of each trajectory's length.
-
-3.  **`[t₁, t₂, t₃, …]` — an explicit list.** Any comma-separated list of positive integers is used verbatim as the set of lags for every trajectory. Example: `[1, 2, 4, 8]`.
+The anomalous exponent is obtained from a **log–log fit** of the time-averaged MSD (tMSD) versus the time lag Δ: α is the slope of `log(tMSD)` vs `log(Δ)`. The **Time lags** field controls which lags enter that fit, and follows the same format as for [*D*](#diffusion-coefficient) above.
 
 **How to choose.** The key trade-off is statistics versus bias. At a lag Δ, the tMSD of a trajectory of length `L` is averaged over only `L − Δ` time origins, so **large lags are noisy** and can distort the slope; conversely you need enough points to define a slope reliably.
 
@@ -74,7 +76,7 @@ The anomalous exponent is obtained from a **log–log fit** of the time-averaged
 
 Uses a neural network to predict the exponent, typically a much more accurate technique than the tMSD approach (as shown in the [1st AnDi Challenge](https://arxiv.org/abs/2105.06766)). Two options:
 
-1.  **Default** — uses a pre-trained model of comparable accuracy to the best models in the 1st AnDi Challenge. This model internally also predicts the diffusion model, so running it automatically populates the [Diffusion Model](#diffusion-model) tab (see below).
+1.  **Default** — uses a pre-trained model that outperforms every method of the 1st AnDi Challenge on 2D trajectories (see [ML models](/plugins/andi-j/ml-models#andi-j-analysis)). This model internally also predicts the diffusion model, so running it automatically populates the [Diffusion Model](#diffusion-model) tab (see below).
 2.  **Load** — allows you to load a custom α predictor. See [ML models](/plugins/andi-j/ml-models#custom-models-for-trajectory-analysis) for details.
 
 </details>
@@ -91,7 +93,7 @@ A scatter of **one point per trajectory** in the *D*–*α* plane. Both quantiti
 Features:
 
 *   **Marginal KDEs** — the plots along the top and right edges show a kernel density estimate of the population for α and *D*, respectively.
-*   **Population tagging** — in **Select** mode, *circle* (lasso) a cluster of points (see blue area in the figure below), type a name in **Population tag:** and click **Tag population**. The enclosed trajectories are recoloured to a shade of their parent colour and added as a new dataset to the [Turning Angles](#turning-angles) and [Diffusion Model](#diffusion-model) tabs. A management table below the plot lists each population (tag, source datasets, colour — click the colour to change it).
+*   **Population tagging** — in **Select** mode, *circle* (lasso) a cluster of points (see blue area in the figure below), type a name in **Population tag:** and click **Tag population**. The enclosed trajectories are recoloured to a shade of their parent colour and added as a new dataset to the [Turning Angles](#turning-angles) and [Diffusion Model](#diffusion-model) tabs. A management table below the plot lists each population (tag, source datasets, colour — click the colour to change it). Click **Save…** in the **Save** column to export the population's trajectories as a `csv` in the [input format](/plugins/andi-j/input-data) (`TRACK_ID, POSITION_X, POSITION_Y, POSITION_T, FRAME`), plus an `EXPERIMENT` column naming the experiment each trajectory comes from. The file can be loaded again in the Data Manager, which ignores the extra column. `TRACK_ID` keeps the trajectory's id when the population comes from one experiment and is renumbered from 0 when it mixes several, so ids stay unique; commas in experiment names are written as semicolons.
 *   **Plot manipulation** — Log *D* axis toggle, rubber-band **Zoom**, **Pan**, **Reset view**.
 
 {% include img align="center" name="D vs alpha tab" src="/media/plugins/andi-j/d-vs-alpha-tab.png" caption="**D vs α** scatter with marginal KDEs and a tagged population." %}

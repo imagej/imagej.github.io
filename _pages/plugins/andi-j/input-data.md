@@ -24,7 +24,7 @@ AnDi-J takes as input `.csv` files containing the trajectories of a given experi
 | `TRACK_ID` | trajectory identifier |
 | `POSITION_X`, `POSITION_Y` | spot coordinates |
 | `FRAME` | frame index |
-| `POSITION_T` | time (used to estimate the frame interval) |
+| `POSITION_T` | time (optional, used to estimate the frame interval) |
 
 Spots are grouped by `TRACK_ID` and sorted by frame; gaps in `FRAME` are handled where relevant (e.g. MSD and eMSD lookups are gap-aware).
 
@@ -42,8 +42,9 @@ This part of the manager is the same for both Trajectory Analysis and Trajectory
 
 *   **Load as Separate / Merge** — whether the chosen files are merged into a single experiment for analysis or loaded as separate ones. Only applies if more than one file is selected.
 *   **Choose Files…** — choose the CSV files (multi-select allowed).
-*   **Tag** — the name by which the experiment will be tagged in the analysis. If left blank, the tag is set to the file name.
+*   **Tag** — the name by which the experiment will be tagged in the analysis. If left blank, the tag is set to the file name. If several files are merged without a tag, the experiment is named `Exp N`.
 *   **Cut length** — per-file trajectory-length filter: trajectories shorter than *N* are dropped, longer ones are truncated to the first *N* points.
+*   **Load Data** — loads the files into the table.
 *   The table shows, per file: colour, tag, file name, number of trajectories, min/max trajectory length, and cut length. **Tag and cut length are editable.**
 *   **Perform Analysis** — assembles the experiments and opens the analysis window. For Trajectory Analysis this is almost instantaneous. For Trajectory Segmentation, the ML models that predict the per-frame properties are run at this point, so it takes longer; see [Selecting the segmentation model](#selecting-the-segmentation-model) below for details.
 
@@ -55,9 +56,8 @@ The Data Manager can be accessed at any time during analysis, allowing you to ad
 
 This part of the manager exists only in [Trajectory Segmentation](/plugins/andi-j/trajectory-segmentation). By default a pre-trained model is already selected, so the analysis can be run as is.
 
-*   **TTA** enables *test-time augmentation*: instead of a single prediction, the model is run on 8 symmetry transformations of each trajectory and the results are averaged. This typically gives a more stable prediction, at the cost of roughly 8× the compute time.
-*   You can also **load your own models** for the predictions, either one model producing all outputs or one model per output. See [Custom models for Trajectory Segmentation](/plugins/andi-j/ml-models#custom-models-for-trajectory-segmentation) for the input/output contract your model must follow.
+*   You can also **load your own models** for the predictions, either one model producing all outputs (**Combined model**) or one model per output (**Per output**). For a combined model, the **Model segments** checkbox (ticked by default) uses the segments the model reports in its `seg_*` outputs; unticked, the plugin builds the segments from the change points. See [Custom models for Trajectory Segmentation](/plugins/andi-j/ml-models#custom-models-for-trajectory-segmentation) for the input/output contract your model must follow.
 
-As a reference for runtime, the bundled default model with TTA off processes 500 trajectories of 200 frames in about 30 s on a laptop CPU (Intel Core i7-1165G7, 4 cores / 8 threads, no GPU). Inference uses all available cores. The current release runs entirely on CPU; GPU support is planned for a future release.
+As a reference for runtime, the bundled default model processes 500 trajectories of 200 frames in about 90 s on an 8-core CPU (no GPU), running 4 trajectories in parallel. With a CUDA GPU and the GPU build of ONNX Runtime, inference runs on the GPU (see [Installation](/plugins/andi-j#installation)). The bundled model averages its predictions over 8 rotations and reflections of each trajectory; see [ML models](/plugins/andi-j/ml-models#andi-j-segmentation).
 
 {% include img align="center" name="ML model options" src="/media/plugins/andi-j/data-manager-ml.png" caption="**ML model options** in the Trajectory Segmentation Data Manager." %}

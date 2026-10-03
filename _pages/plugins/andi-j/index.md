@@ -41,7 +41,7 @@ AnDi-J is organised around two menu commands under {% include bc path="Plugins|A
 
 | Command | Purpose |
 |---|---|
-| [**Trajectory Analysis**](/plugins/andi-j/trajectory-analysis) | Per-trajectory observables: mean squared displacement (MSD) analysis, diffusion coefficient *D*, anomalous exponent *α*, the *D*–*α* plane, diffusion-model classification, and turning angles. |
+| [**Trajectory Analysis**](/plugins/andi-j/trajectory-analysis) | Per-trajectory observables: mean squared displacement (MSD) analysis, diffusion coefficient *D*, anomalous exponent *α*, the *D*–*α* plane, diffusion-model classification, turning angles and PSD. |
 | [**Trajectory Segmentation**](/plugins/andi-j/trajectory-segmentation) | Per-frame predictions of *α* and *D* along each trajectory, change-point detection that splits it into homogeneous segments, and the diffusive state (immobile, confined, free diffusion, or directed) of each segment. |
 
 Both commands share the same [Data Manager](/plugins/andi-j/input-data#data-manager) for loading and grouping data, and both can analyse several experiments (conditions) at once, each with its own colour, overlaid for comparison.
@@ -50,9 +50,9 @@ Both commands share the same [Data Manager](/plugins/andi-j/input-data#data-mana
 
 | Page | Contents |
 |---|---|
-| [Input data](/plugins/andi-j/input-data) | Expected `.csv` layout, the [Data Manager](/plugins/andi-j/input-data#data-manager), and [selecting the segmentation model](/plugins/andi-j/input-data#selecting-the-segmentation-model). |
-| [Trajectory Analysis](/plugins/andi-j/trajectory-analysis) | [tMSD](/plugins/andi-j/trajectory-analysis#tmsd-visualization), [diffusion coefficient](/plugins/andi-j/trajectory-analysis#diffusion-coefficient), [anomalous exponent](/plugins/andi-j/trajectory-analysis#anomalous-exponent), [*D* vs *α*](/plugins/andi-j/trajectory-analysis#d-vs-α), [diffusion model](/plugins/andi-j/trajectory-analysis#diffusion-model), [turning angles](/plugins/andi-j/trajectory-analysis#turning-angles) and [PSD](/plugins/andi-j/trajectory-analysis#psd). |
-| [Trajectory Segmentation](/plugins/andi-j/trajectory-segmentation) | [Visualization](/plugins/andi-j/trajectory-segmentation#visualization), [*D* vs *α* density](/plugins/andi-j/trajectory-segmentation#d-vs-α), [segment stats](/plugins/andi-j/trajectory-segmentation#segment-stats) and [diffusive state](/plugins/andi-j/trajectory-segmentation#diffusive-state). |
+| [Input data](/plugins/andi-j/input-data) | Expected `.csv` layout, the [Data Manager](/plugins/andi-j/input-data#data-manager) ([loading trajectories](/plugins/andi-j/input-data#loading-trajectories)), and [selecting the segmentation model](/plugins/andi-j/input-data#selecting-the-segmentation-model). |
+| [Trajectory Analysis](/plugins/andi-j/trajectory-analysis) | [tMSD](/plugins/andi-j/trajectory-analysis#tmsd-visualization), [diffusion coefficient](/plugins/andi-j/trajectory-analysis#diffusion-coefficient), [anomalous exponent](/plugins/andi-j/trajectory-analysis#anomalous-exponent), [*D* vs *α*](/plugins/andi-j/trajectory-analysis#d-vs-alpha), [diffusion model](/plugins/andi-j/trajectory-analysis#diffusion-model), [turning angles](/plugins/andi-j/trajectory-analysis#turning-angles) and [PSD](/plugins/andi-j/trajectory-analysis#psd). |
+| [Trajectory Segmentation](/plugins/andi-j/trajectory-segmentation) | [Visualization](/plugins/andi-j/trajectory-segmentation#visualization), [*D* vs *α* density](/plugins/andi-j/trajectory-segmentation#d-vs-alpha), [segment stats](/plugins/andi-j/trajectory-segmentation#segment-stats) and [diffusive state](/plugins/andi-j/trajectory-segmentation#diffusive-state). |
 | [ML models](/plugins/andi-j/ml-models) | The bundled models, the ONNX contract, and how to plug in your own models. |
 
 ## Installation
@@ -71,21 +71,21 @@ The easiest way to install AnDi-J, and to keep it up to date, is to [follow](/up
 The plugin is then available under {% include bc path="Plugins|AnDi-J" %}.
 
 {% include notice icon="note" content="
-The update site installs AnDi-J together with the **CPU** build of ONNX Runtime. For GPU (CUDA) acceleration, replace `onnxruntime-1.26.0.jar` with `onnxruntime_gpu-1.26.0.jar` ([download link](https://repo1.maven.org/maven2/com/microsoft/onnxruntime/onnxruntime_gpu/1.26.0/onnxruntime_gpu-1.26.0.jar)) in the `Fiji.app/jars/` folder. See more below.
+The update site installs AnDi-J together with the **CPU** build of ONNX Runtime. For GPU (CUDA) acceleration, available only on Windows and Linux, replace `onnxruntime-1.26.0.jar` with `onnxruntime_gpu-1.26.0.jar` ([download link](https://repo1.maven.org/maven2/com/microsoft/onnxruntime/onnxruntime_gpu/1.26.0/onnxruntime_gpu-1.26.0.jar)) in the `Fiji.app/jars/` folder (see the requirements below).
 " %}
 
 ### Manual installation
 
-If you prefer not to use the updater, or you want a specific release:
-
 1.  Go to the [Releases](https://github.com/gorkamunoz/andi-j/releases) page of the AnDi-J repository.
-2.  Under the latest plugin release, download the file `andi-j-X.Y.Z.jar`.
-3.  AnDi-J uses **ONNX Runtime** for its machine-learning predictions, with support for both **CPU** and **GPU** (CUDA). The latter allows for much faster computations. The current release requires CUDA Toolkit 12.x and cuDNN 9.x for CUDA 12 (see [Custom CUDA installation](#custom-cuda-installation) for other CUDA versions). Download the corresponding file directly from Maven Central:
+2.  Under the latest plugin release, download the file `andi-j-X.Y.Z.jar`. It already contains the two default ML models.
+3.  AnDi-J uses **ONNX Runtime** for its machine-learning predictions, on **CPU** or **GPU** (CUDA). The GPU is much faster, and needs CUDA Toolkit 12.x and cuDNN 9.x for CUDA 12 (see [Other CUDA versions](#other-cuda-versions) otherwise). Download **one** of the two ONNX Runtime jars from Maven Central:
     *   CPU: [`onnxruntime-1.26.0.jar`](https://repo1.maven.org/maven2/com/microsoft/onnxruntime/onnxruntime/1.26.0/onnxruntime-1.26.0.jar)
-    *   GPU/CUDA: [`onnxruntime_gpu-1.26.0.jar`](https://repo1.maven.org/maven2/com/microsoft/onnxruntime/onnxruntime_gpu/1.26.0/onnxruntime_gpu-1.26.0.jar)
-4.  Copy **both** the `andi-j` and the `onnxruntime` jars into the `Fiji.app/jars/` folder.
+    *   GPU/CUDA (Windows and Linux only): [`onnxruntime_gpu-1.26.0.jar`](https://repo1.maven.org/maven2/com/microsoft/onnxruntime/onnxruntime_gpu/1.26.0/onnxruntime_gpu-1.26.0.jar)
+4.  Copy the `andi-j` jar and the ONNX Runtime jar into the `Fiji.app/jars/` folder. Keep a single ONNX Runtime jar in that folder.
 5.  Restart Fiji.
 6.  The plugin is now available under {% include bc path="Plugins|AnDi-J" %}.
+
+With the GPU jar, AnDi-J runs the models on the GPU when CUDA is available and on the CPU otherwise.
 
 ### Build from source
 
@@ -93,19 +93,26 @@ If you prefer not to use the updater, or you want a specific release:
 git clone https://github.com/gorkamunoz/andi-j.git
 ```
 
-You will then need to download the two default ML models (see [Releases](https://github.com/gorkamunoz/andi-j/releases), look for the latest model release). Place these models in `andi-j/src/main/resources/models/`. Then:
+Download the two default ML models from the latest model release on the [Releases](https://github.com/gorkamunoz/andi-j/releases) page and place them in `andi-j/src/main/resources/models/`. The plugin loads them by name, so rename the files, if needed, to exactly:
+
+*   `andi-j-analysis-latest.onnx` (Trajectory Analysis model)
+*   `andi-j-seg-latest.onnx` (Trajectory Segmentation model)
+
+Then:
 
 ```bash
 cd andi-j
 mvn clean package
-# then copy target/andi-j-*.jar into Fiji.app/jars/
+cp target/andi-j-X.Y.Z.jar Fiji.app/jars/   # not the -sources.jar
 ```
 
-`mvn clean package` also resolves `onnxruntime-1.26.0.jar` into your local Maven cache, so you can copy it from there instead of downloading it again:
+The build downloads the **GPU** build of ONNX Runtime (Windows and Linux only) into your local Maven cache, so you can copy it from there:
 
 ```bash
-cp ~/.m2/repository/com/microsoft/onnxruntime/onnxruntime_gpu/1.26.0/onnxruntime-1.26.0.jar Fiji.app/jars/
+cp ~/.m2/repository/com/microsoft/onnxruntime/onnxruntime_gpu/1.26.0/onnxruntime_gpu-1.26.0.jar Fiji.app/jars/
 ```
+
+For the CPU build, download `onnxruntime-1.26.0.jar` as in [Manual installation](#manual-installation).
 
 Requires Java 8+ and [Maven](/develop/maven). The build uses the [pom-scijava](https://github.com/scijava/pom-scijava) parent POM.
 
@@ -114,22 +121,17 @@ Requires Java 8+ and [Maven](/develop/maven). The build uses the [pom-scijava](h
 {% endcapture %}
 {% include notice icon="tech" content=debug-mode %}
 
-### Custom CUDA installation
+### Other CUDA versions
 
-If your machine has a different CUDA toolkit installed than the recommended one, you must find the matching `onnxruntime_gpu` release:
+If your machine has a different CUDA toolkit than the one ONNX Runtime 1.26.0 needs, use the matching `onnxruntime_gpu` release instead:
 
 1.  Check your installed CUDA version: `nvcc --version`.
 2.  Look up which `onnxruntime_gpu` release supports that CUDA version in the [ONNX Runtime CUDA Execution Provider compatibility table](https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html).
 3.  Download the matching jar from Maven Central: `https://repo1.maven.org/maven2/com/microsoft/onnxruntime/onnxruntime_gpu/<version>/onnxruntime_gpu-<version>.jar`
-4.  Place that file in `Fiji.app/jars/`.
-5.  Update the AnDi-J `pom.xml` file with the downloaded version:
+4.  Put it in `Fiji.app/jars/` in place of the ONNX Runtime jar that is there.
+5.  Restart Fiji.
 
-    ```xml
-    <artifactId>onnxruntime_gpu</artifactId>
-    <version>1.xx.0</version>
-    ```
-6.  Build the plugin from source.
-7.  Restart Fiji.
+The plugin uses whichever ONNX Runtime jar is in `Fiji.app/jars/`, so no rebuild is needed. AnDi-J is tested with ONNX Runtime 1.26.0.
 
 ## Citing AnDi-J
 
@@ -142,7 +144,8 @@ AnDi-J relies on previous work done in the context of the AnDi Challenge and rel
 *   [`andi_datasets`](https://github.com/AnDiChallenge/andi_datasets): Python library used as backbone for many of the methods underlying AnDi-J.
 *   [Objective comparison of methods to decode anomalous diffusion, G. Muñoz-Gil et al. (2021)](https://www.nature.com/articles/s41467-021-26320-w): paper gathering the results of the 1st AnDi Challenge. Related to the analysis performed in [Trajectory Analysis](/plugins/andi-j/trajectory-analysis).
 *   [Quantitative evaluation of methods to analyze motion changes in single-particle experiments, G. Muñoz-Gil et al. (2025)](https://www.nature.com/articles/s41467-025-61949-x): paper gathering the results of the 2nd AnDi Challenge. Related to the analysis performed in [Trajectory Segmentation](/plugins/andi-j/trajectory-segmentation).
-*   [Inferring pointwise diffusion properties of single trajectories with deep learning, B. Requena et al. (2023)](https://www.cell.com/biophysj/fulltext/S0006-3495(23)00651-3): paper proposing step-wise prediction of anomalous diffusion trajectories. The default ML models used in both tabs are based on the architecture developed for this paper and the [KISTEP](https://github.com/GabrielFernandezFernandez/kistep) extension by G. Fernández-Fernández.
+*   [Single-particle diffusion characterization by deep learning, N. Granik et al. (2019)](https://doi.org/10.1016/j.bpj.2019.06.015): convolutional networks for single-trajectory analysis. The default model of the Trajectory Analysis tab is built on their architecture.
+*   [Inferring pointwise diffusion properties of single trajectories with deep learning, B. Requena et al. (2023)](https://www.cell.com/biophysj/fulltext/S0006-3495(23)00651-3): paper proposing step-wise prediction of anomalous diffusion trajectories.
 *   [U-Net 3+ for anomalous diffusion analysis enhanced with mixture estimates (U-AnD-ME) in particle-tracking data, S. Asghar et al. (2025)](https://iopscience.iop.org/article/10.1088/2515-7647/adf9aa): paper of the winners of the 2nd AnDi Challenge. The default model of the segmentation tab is a direct update of their model.
 
 ## See also
