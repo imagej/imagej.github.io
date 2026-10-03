@@ -85,7 +85,7 @@ The update site installs AnDi-J together with the **CPU** build of ONNX Runtime.
 5.  Restart Fiji.
 6.  The plugin is now available under {% include bc path="Plugins|AnDi-J" %}.
 
-With the GPU jar, AnDi-J runs the models on the GPU when CUDA is available and on the CPU otherwise.
+With the GPU jar, AnDi-J runs the models on the GPU when CUDA is available and on the CPU otherwise. Without CUDA, Fiji's console shows an error line such as `[E:onnxruntime…] Failed to load library libonnxruntime_providers_cuda.so` when a model loads; it is harmless, and the models then run on the CPU.
 
 ### Build from source
 
