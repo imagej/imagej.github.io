@@ -308,3 +308,14 @@ Applies to both analysis and segmentation models.
 | Classes look shuffled | classifier class order ≠ `ATTM, CTRW, FBM, LW, SBM` |
 | α histogram empty | α outside `[0, 2]`, or NaNs — the plugin uses custom α verbatim, so clip/validate it inside your model |
 | Load fails immediately | not a valid `.onnx`, or exported with an opset newer than the bundled ONNX Runtime 1.26 supports — re-export with a lower `opset_version` |
+
+## Contributing a model
+
+Models developed for AnDi-J can be shared with the community: once approved, they are listed with the bundled models in [`contributions/list.md`](https://github.com/gorkamunoz/andi-j/blob/main/contributions/list.md), together with their scores and download links, and shown on the [benchmark website](https://gorkamunoz.github.io/andi-j/). The maintainers review every contribution.
+
+1.  Export your model to ONNX following the contract of its module ([analysis](#custom-models-for-trajectory-analysis) or [segmentation](#custom-models-for-trajectory-segmentation)), and check that it runs in Fiji with **Load**.
+2.  Score it on the Submit pages of the [benchmark website](https://gorkamunoz.github.io/andi-j/).
+3.  Upload the `.onnx` file(s) to a public record with a DOI (for example [Zenodo](https://zenodo.org)). The code of the method must be open source.
+4.  Copy [`contributions/template.yml`](https://github.com/gorkamunoz/andi-j/blob/main/contributions/template.yml) to `contributions/<id>.yml`, fill it in, and open a pull request that adds it. The file gives the method's id and version, authors, contact, license, code repository, optional reference, the ONNX record(s) and the scores, named `TA.alpha_mae`, `TA.model_f1` (Trajectory Analysis) and `TS.cp_ji`, `TS.cp_rmse`, `TS.alpha_mae`, `TS.D_msle`, `TS.state_f1` (Trajectory Segmentation). The pull request template lists the checks.
+
+The maintainers then download and benchmark the model, and add it to the list, the [GitHub wiki](https://github.com/gorkamunoz/andi-j/wiki) and the benchmark website.
