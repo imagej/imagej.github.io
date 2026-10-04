@@ -44,6 +44,7 @@ This part of the manager is the same for both Trajectory Analysis and Trajectory
 *   **Choose Files…** — choose the CSV files (multi-select allowed).
 *   **Tag** — the name by which the experiment will be tagged in the analysis. If left blank, the tag is set to the file name. If several files are merged without a tag, the experiment is named `Exp N`.
 *   **Cut length** — per-file trajectory-length filter: trajectories shorter than *N* are dropped, longer ones are truncated to the first *N* points.
+*   **Spatial unit** — the unit of the x, y positions, shown in the Trajectory Analysis plot labels (e.g. MSD in unit², D in unit²/time). Default `μm`; any text is accepted. It applies when you click **Perform Analysis**.
 *   **Load Data** — loads the files into the table.
 *   The table shows, per file: colour, tag, file name, number of trajectories, min/max trajectory length, and cut length. **Tag and cut length are editable.**
 *   **Perform Analysis** — assembles the experiments and opens the analysis window. For Trajectory Analysis this is almost instantaneous. For Trajectory Segmentation, the ML models that predict the per-frame properties are run at this point, so it takes longer; see [Selecting the segmentation model](#selecting-the-segmentation-model) below for details.
