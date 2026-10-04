@@ -26,7 +26,7 @@ This tool allows to perform single-trajectory analysis of the input experiments.
 This tab shows the time-averaged MSD curves for each experiment, allowing for an initial visual inspection of the diffusive properties of the loaded experiments.
 
 *   Per-experiment selectors for **Avg** (the average tMSD), **All** (every individual trajectory, faint), and **eMSD** (ensemble MSD, dashed).
-*   The lag axis is controlled by **Min lag**, **Max lag**, **Log-spaced**, and a **Frame interval** / **Unit**. The number of lag points is chosen automatically (every integer lag when linear; capped, log-spaced sampling when log-spaced is selected). When the window opens, the tMSD is computed with min lag 1, max lag the longest trajectory length minus 1, linear lags and frame interval 1 (unit: frames), the values shown in the fields.
+*   The lag axis is controlled by **Min lag**, **Max lag**, **Log-spaced**, and a **Frame interval** / **Unit**. The number of lag points is chosen automatically (every integer lag when linear; capped, log-spaced sampling when log-spaced is selected). When the window opens, the tMSD is computed with min lag 1, max lag a quarter of the longest trajectory length, linear lags and frame interval 1 (unit: frames), the values shown in the fields.
 *   **Draw line** lets you place a reference line and read its slope live; in log–log mode the slope is labelled *α*, since it corresponds to the anomalous exponent.
 *   **eMSD vs tMSD as an ergodicity test:** comparing the eMSD curve to the Avg tMSD shows whether the process is ergodic (the two coincide) or non-ergodic (they differ).
 
