@@ -21,12 +21,14 @@ This tool allows to perform single-trajectory analysis of the input experiments.
 
 {% include notice icon="info" content="**Saving data.** Every tab has a **Save plot** button that exports its plot as a vector image (`svg`), which you can edit in tools such as Inkscape or Illustrator. The **Diffusion coefficient**, **Anomalous exponent**, **Diffusion Model**, **Turning Angles** and **PSD** tabs also save their values as a `csv` file for further analysis (**Save D…**, **Save α…**, **Save models…**, **Save angles…** and **Save PSD…**). Their first columns are `experiment` and, for per-trajectory values, `track_id`; commas in experiment names are written as semicolons. In **D vs α**, tagged populations can be saved as trajectory files (see [Population tagging](#d-vs-alpha))." %}
 
+{% include notice icon="info" content="**Units.** The **Units** button of the tMSD Visualization, Diffusion coefficient, D vs α and PSD tabs opens a window to choose the time (frames, ns, μs, ms, s) and space (nm, μm, mm, m) units of the plots and `csv` exports, whose column headers name them. Physical units need the calibration of the [Data Manager](/plugins/andi-j/input-data#units); without it, the window shows px and frames and cannot change them." %}
+
 ## tMSD Visualization
 
 This tab shows the time-averaged MSD curves for each experiment, allowing for an initial visual inspection of the diffusive properties of the loaded experiments.
 
 *   Per-experiment selectors for **Avg** (the average tMSD), **All** (every individual trajectory, faint), and **eMSD** (ensemble MSD, dashed).
-*   The lag axis is controlled by **Min lag**, **Max lag**, **Log-spaced**, and a **Frame interval** / **Unit**. The number of lag points is chosen automatically (every integer lag when linear; capped, log-spaced sampling when log-spaced is selected). When the window opens, the tMSD is computed with min lag 1, max lag a quarter of the longest trajectory length, linear lags and frame interval 1 (unit: frames), the values shown in the fields.
+*   The lag axis is controlled by **Min lag**, **Max lag** (in frames) and **Log-spaced**. The number of lag points is chosen automatically (every integer lag when linear; capped, log-spaced sampling when log-spaced is selected). When the window opens, the tMSD is computed with min lag 1, max lag a quarter of the longest trajectory length and linear lags, the values shown in the fields.
 *   **Draw line** lets you place a reference line and read its slope live; in log–log mode the slope is labelled *α*, since it corresponds to the anomalous exponent.
 *   **eMSD vs tMSD as an ergodicity test:** comparing the eMSD curve to the Avg tMSD shows whether the process is ergodic (the two coincide) or non-ergodic (they differ).
 
@@ -48,7 +50,7 @@ For guidance on what to choose, we recommend:
 
 *   Kepten, E., Weron, A., Sikora, G., Burnecki, K., & Garini, Y. (2015). Guidelines for the fitting of anomalous diffusion mean square displacement graphs from single particle tracking experiments. [PLOS ONE, 10(2), e0117722](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117722).
 
-You can analyse the **2D / X / Y** components independently, which makes it possible, for instance, to detect anisotropic diffusion in your experiment. Frame interval (default 1) and units (default frames) can be chosen based on your setup. The values shown when the window opens use the default time lags `[1,2]` and frame interval 1.
+You can analyse the **2D / X / Y** components independently, which makes it possible, for instance, to detect anisotropic diffusion in your experiment. The values shown when the window opens use the default time lags `[1,2]`.
 
 {% include img align="center" name="Diffusion coefficient tab" src="/media/plugins/andi-j/diff-coeff-tab.png" caption="**Diffusion coefficient** histogram." %}
 
@@ -93,7 +95,7 @@ A scatter of **one point per trajectory** in the *D*–*α* plane. Both quantiti
 Features:
 
 *   **Marginal KDEs** — the plots along the top and right edges show a kernel density estimate of the population for α and *D*, respectively.
-*   **Population tagging** — in **Select** mode, *circle* (lasso) a cluster of points (see blue area in the figure below), type a name in **Population tag:** and click **Tag population**. The enclosed trajectories are recoloured to a shade of their parent colour and added as a new dataset to the [Turning Angles](#turning-angles) and [Diffusion Model](#diffusion-model) tabs. A management table below the plot lists each population (tag, source datasets, colour — click the colour to change it). Click **Save…** in the **Save** column to export the population's trajectories as a `csv` in the [input format](/plugins/andi-j/input-data) (`TRACK_ID, POSITION_X, POSITION_Y, POSITION_T, FRAME`), plus an `EXPERIMENT` column naming the experiment each trajectory comes from. The file can be loaded again in the Data Manager, which ignores the extra column. `TRACK_ID` keeps the trajectory's id when the population comes from one experiment and is renumbered from 0 when it mixes several, so ids stay unique; commas in experiment names are written as semicolons.
+*   **Population tagging** — in **Select** mode, *circle* (lasso) a cluster of points (see blue area in the figure below), type a name in **Population tag:** and click **Tag population**. The enclosed trajectories are recoloured to a shade of their parent colour and added as a new dataset to the [Turning Angles](#turning-angles) and [Diffusion Model](#diffusion-model) tabs. A management table below the plot lists each population (tag, source datasets, colour — click the colour to change it). Click **Save…** in the **Save** column to export the population's trajectories as a `csv` in the [input format](/plugins/andi-j/input-data) (`TRACK_ID, POSITION_X, POSITION_Y, POSITION_T, FRAME`), plus an `EXPERIMENT` column naming the experiment each trajectory comes from. The file can be loaded again in the Data Manager, which ignores the extra column; with a calibration, positions are written in μm and `POSITION_T` in seconds, so the file loads back calibrated. `TRACK_ID` keeps the trajectory's id when the population comes from one experiment and is renumbered from 0 when it mixes several, so ids stay unique; commas in experiment names are written as semicolons.
 *   **Plot manipulation** — Log *D* axis toggle, rubber-band **Zoom**, **Pan**, **Reset view**.
 
 {% include img align="center" name="D vs alpha tab" src="/media/plugins/andi-j/d-vs-alpha-tab.png" caption="**D vs α** scatter with marginal KDEs and a tagged population." %}

@@ -21,6 +21,8 @@ This tool runs a per-frame segmentation model that predicts, **for every frame**
 
 {% include notice icon="info" content="**Saving data.** Per-frame predictions and per-segment statistics can be exported as `csv` files from the [Visualization](#visualization) tab (see below). The **D vs α**, **Segment Stats** and **Diffusive state** tabs have a **Save plot** button that exports the plot, with all its panels, as a vector image (`svg`)." %}
 
+{% include notice icon="info" content="**Units.** Each tab has a **Units** button to choose the time and space units (see [Units](/plugins/andi-j/input-data#units)). log₁₀(*D*) and segment lengths are shown in the chosen units, and the `csv` exports give *D* in them (named in the header); the *D* axis labels do not repeat the unit." %}
+
 ## Visualization
 
 A **4 × 4 grid** of prediction plots, one per trajectory. Each plot shows the per-frame predictions for one trajectory:
@@ -42,8 +44,8 @@ The **CP** toggle shows/hides the dashed vertical lines marking the detected cha
 Tools:
 
 *   **Sample random 16** picks 16 random trajectories; **Choose trajectories** opens a popup to enter specific `TRACK_ID`s.
-*   **Save raw preds.** exports every trajectory's per-frame α, D and diffusive state to a `csv` (`experiment, track_id, frame, alpha, D, state`); `frame` is the `FRAME` of the input file and `state` is the per-frame diffusive state, coded as `0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed`.
-*   **Save segments** exports the detected segments, with starting frame, length, α, D, and state (`experiment, track_id, segment, start_frame, length, alpha, D, state`); `start_frame` is the `FRAME` of the input file at which the segment starts.
+*   **Save raw preds.** exports every trajectory's per-frame α, D and diffusive state to a `csv` (`experiment, track_id, frame, alpha, D [unit], state`); `frame` is the `FRAME` of the input file and `state` is the per-frame diffusive state, coded as `0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed`.
+*   **Save segments** exports the detected segments, with starting frame, length, α, D, and state (`experiment, track_id, segment, start_frame, length, alpha, D [unit], state`); `length` is the number of frames; `start_frame` is the `FRAME` of the input file at which the segment starts.
 
 {% include img align="center" name="Visualization tab" src="/media/plugins/andi-j/seg-visualization-tab.png" caption="**Visualization** grid with the raw prediction and segment step-line overlaid." %}
 

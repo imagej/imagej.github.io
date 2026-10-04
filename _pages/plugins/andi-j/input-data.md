@@ -24,7 +24,7 @@ AnDi-J takes as input `.csv` files containing the trajectories of a given experi
 | `TRACK_ID` | trajectory identifier |
 | `POSITION_X`, `POSITION_Y` | spot coordinates |
 | `FRAME` | frame index |
-| `POSITION_T` | time (optional; the analysis works in frames, see **Frame interval** in each tab) |
+| `POSITION_T` | time (optional; with its unit, gives the frame interval, see [Units](#units)) |
 
 Spots are grouped by `TRACK_ID` and sorted by frame; gaps in `FRAME` are handled where relevant (e.g. MSD and eMSD lookups are gap-aware).
 
@@ -44,12 +44,22 @@ This part of the manager is the same for both Trajectory Analysis and Trajectory
 *   **Choose Files…** — choose the CSV files (multi-select allowed).
 *   **Tag** — the name by which the experiment will be tagged in the analysis. If left blank, the tag is set to the file name. If several files are merged without a tag, the experiment is named `Exp N`.
 *   **Cut length** — per-file trajectory-length filter: trajectories shorter than *N* are dropped, longer ones are truncated to the first *N* points.
-*   **Spatial unit** — the unit of the x, y positions, shown in the Trajectory Analysis plot labels (e.g. MSD in unit², D in unit²/time). Default `μm`; any text is accepted. It applies when you click **Perform Analysis**.
 *   **Load Data** — loads the files into the table.
-*   The table shows, per file: colour, tag, file name, number of trajectories, min/max trajectory length, and cut length. **Tag and cut length are editable.**
+*   The table shows, per file: colour, tag, file name, number of trajectories, min/max trajectory length, cut length, and the [units](#units). **Tag, cut length and the units are editable.**
 *   **Perform Analysis** — assembles the experiments and opens the analysis window. For Trajectory Analysis this is almost instantaneous. For Trajectory Segmentation, the ML models that predict the per-frame properties are run at this point, so it takes longer; see [Selecting the segmentation model](#selecting-the-segmentation-model) below for details.
 
 The Data Manager can be accessed at any time during analysis, allowing you to add or remove experiments at will.
+
+### Units
+
+The fourth header row of a TrackMate export holds the unit of each column, e.g. `(micron)` for the positions and `(sec)` for `POSITION_T`, or `(pixel)` and `(frame)` when the image was not calibrated. The Data Manager reads them into two editable columns of the table:
+
+*   **Space unit (μm)** — the size of one position unit in μm: 1 for positions in μm, the pixel size for positions in pixels.
+*   **Frame interval (μs)** — the time between frames in μs, from `POSITION_T` and its unit.
+
+An empty cell means unknown; double-click it to fill in or correct the value. When the experiments have these values, the **Units** button of the analysis tabs shows the results in physical units (nm to m, ns to s); without them, the analysis is in pixels and frames.
+
+All experiments must be either calibrated or not (separately for space and time), and files merged into one experiment must share their values: otherwise **Perform Analysis** shows a warning and does not run, since values in μm and in pixels, or in seconds and in frames, cannot be compared. α, turning angles, diffusion models and diffusive states do not depend on the units.
 
 {% include img align="center" name="Data Manager" src="/media/plugins/andi-j/data-manager.png" caption="**Data Manager.** Three test experiments loaded as separate ones, then the same three loaded again as a merged experiment with a cut length of 10. The latter appears as a single experiment in the analysis." %}
 
