@@ -19,7 +19,7 @@ nav-links:
 
 This tool allows to perform single-trajectory analysis of the input experiments. Every tab has a side **Experiments** panel where each experiment can be toggled on/off and, where relevant, restricted to the **2D**, **X**, or **Y** component.
 
-{% include notice icon="info" content="**Saving data.** Every tab has a **Save plot** button that exports its plot as a vector image (`svg`), which you can edit in tools such as Inkscape or Illustrator. The **Diffusion coefficient**, **Anomalous exponent**, **Diffusion Model**, **Turning Angles** and **PSD** tabs also save their values as a `csv` file for further analysis (**Save D…**, **Save α…**, **Save models…**, **Save angles…** and **Save PSD…**). In **D vs α**, tagged populations can be saved as trajectory files (see [Population tagging](#d-vs-alpha))." %}
+{% include notice icon="info" content="**Saving data.** Every tab has a **Save plot** button that exports its plot as a vector image (`svg`), which you can edit in tools such as Inkscape or Illustrator. The **Diffusion coefficient**, **Anomalous exponent**, **Diffusion Model**, **Turning Angles** and **PSD** tabs also save their values as a `csv` file for further analysis (**Save D…**, **Save α…**, **Save models…**, **Save angles…** and **Save PSD…**). Their first columns are `experiment` and, for per-trajectory values, `track_id`; commas in experiment names are written as semicolons. In **D vs α**, tagged populations can be saved as trajectory files (see [Population tagging](#d-vs-alpha))." %}
 
 ## tMSD Visualization
 

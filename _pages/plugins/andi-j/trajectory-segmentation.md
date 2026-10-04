@@ -42,8 +42,8 @@ The **CP** toggle shows/hides the dashed vertical lines marking the detected cha
 Tools:
 
 *   **Sample random 16** picks 16 random trajectories; **Choose trajectories** opens a popup to enter specific `TRACK_ID`s.
-*   **Save raw preds.** exports every trajectory's per-frame α, D and diffusive state to a `csv` (`experiment, traj_idx, frame, alpha, D, state`); `state` is the per-frame diffusive state, coded as `0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed`.
-*   **Save segments** exports the detected segments, with starting frame, length, α, D, and state (`experiment, track_id, segment, start_frame, length, alpha, D, state`). The `experiment` column is omitted when only one experiment is loaded.
+*   **Save raw preds.** exports every trajectory's per-frame α, D and diffusive state to a `csv` (`experiment, track_id, frame, alpha, D, state`); `frame` is the `FRAME` of the input file and `state` is the per-frame diffusive state, coded as `0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed`.
+*   **Save segments** exports the detected segments, with starting frame, length, α, D, and state (`experiment, track_id, segment, start_frame, length, alpha, D, state`); `start_frame` is the `FRAME` of the input file at which the segment starts.
 
 {% include img align="center" name="Visualization tab" src="/media/plugins/andi-j/seg-visualization-tab.png" caption="**Visualization** grid with the raw prediction and segment step-line overlaid." %}
 
