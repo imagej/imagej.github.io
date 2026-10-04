@@ -24,7 +24,7 @@ AnDi-J takes as input `.csv` files containing the trajectories of a given experi
 | `TRACK_ID` | trajectory identifier |
 | `POSITION_X`, `POSITION_Y` | spot coordinates |
 | `FRAME` | frame index |
-| `POSITION_T` | time (optional, used to estimate the frame interval) |
+| `POSITION_T` | time (optional; the analysis works in frames, see **Frame interval** in each tab) |
 
 Spots are grouped by `TRACK_ID` and sorted by frame; gaps in `FRAME` are handled where relevant (e.g. MSD and eMSD lookups are gap-aware).
 

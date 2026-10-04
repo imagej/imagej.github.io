@@ -26,7 +26,7 @@ This tool allows to perform single-trajectory analysis of the input experiments.
 This tab shows the time-averaged MSD curves for each experiment, allowing for an initial visual inspection of the diffusive properties of the loaded experiments.
 
 *   Per-experiment selectors for **Avg** (the average tMSD), **All** (every individual trajectory, faint), and **eMSD** (ensemble MSD, dashed).
-*   The lag axis is controlled by **Min lag**, **Max lag**, **Log-spaced**, and a **Frame interval** / **Unit**. The number of lag points is chosen automatically (every integer lag when linear; capped, log-spaced sampling when log-spaced is selected).
+*   The lag axis is controlled by **Min lag**, **Max lag**, **Log-spaced**, and a **Frame interval** / **Unit**. The number of lag points is chosen automatically (every integer lag when linear; capped, log-spaced sampling when log-spaced is selected). When the window opens, the tMSD is computed with min lag 1, max lag the longest trajectory length minus 1, linear lags and frame interval 1 (unit: frames), the values shown in the fields.
 *   **Draw line** lets you place a reference line and read its slope live; in log–log mode the slope is labelled *α*, since it corresponds to the anomalous exponent.
 *   **eMSD vs tMSD as an ergodicity test:** comparing the eMSD curve to the Avg tMSD shows whether the process is ergodic (the two coincide) or non-ergodic (they differ).
 
@@ -48,7 +48,7 @@ For guidance on what to choose, we recommend:
 
 *   Kepten, E., Weron, A., Sikora, G., Burnecki, K., & Garini, Y. (2015). Guidelines for the fitting of anomalous diffusion mean square displacement graphs from single particle tracking experiments. [PLOS ONE, 10(2), e0117722](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117722).
 
-You can analyse the **2D / X / Y** components independently, which makes it possible, for instance, to detect anisotropic diffusion in your experiment. Frame interval and units can be chosen based on your setup.
+You can analyse the **2D / X / Y** components independently, which makes it possible, for instance, to detect anisotropic diffusion in your experiment. Frame interval (default 1) and units (default frames) can be chosen based on your setup. The values shown when the window opens use the default time lags `[1,2]` and frame interval 1.
 
 {% include img align="center" name="Diffusion coefficient tab" src="/media/plugins/andi-j/diff-coeff-tab.png" caption="**Diffusion coefficient** histogram." %}
 
