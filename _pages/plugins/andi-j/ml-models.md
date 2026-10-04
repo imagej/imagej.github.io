@@ -304,6 +304,7 @@ Applies to both analysis and segmentation models.
 | Symptom | Likely cause |
 |---|---|
 | "Output '…' not found" / wrong values | output not named as expected, or wrong shape |
+| "Output '…' has N values for a trajectory of T frames" | a per-frame output is not length `T`: e.g. one value per displacement (`T−1`) or a length fixed at export |
 | Works for one dataset, wrong for another | sequence-length axis not dynamic, or length-derived constants baked in |
 | Classes look shuffled | classifier class order ≠ `ATTM, CTRW, FBM, LW, SBM` |
 | α histogram empty | α outside `[0, 2]`, or NaNs — the plugin uses custom α verbatim, so clip/validate it inside your model |
