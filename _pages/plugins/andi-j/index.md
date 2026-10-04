@@ -64,7 +64,7 @@ The easiest way to install AnDi-J, and to keep it up to date, is to [follow](/up
 1.  Start [Fiji](/software/fiji) (or [download and install it](/software/fiji/downloads) first).
 2.  Select {% include bc path="Help|Update..." %} from the menu bar.
 3.  Click on the {% include button label="Manage update sites" %} button.
-4.  Scroll down the list and tick the checkbox for the **AnDi-J** update site, then click {% include button label="Close" %}. If **AnDi-J** is missing from the list, click {% include button label="Update URLs" %} to refresh it.
+4.  Scroll down the list and tick the checkbox for the **AnDi-J** update site, then click {% include button label="Close" %}. If **AnDi-J** is not in the list, click {% include button label="Add unlisted site" %} and enter the name `AnDi-J` and the URL `https://sites.imagej.net/AnDi-J/`.
 5.  Click {% include button label="Apply changes" %} to install the plugin.
 6.  Restart Fiji.
 
