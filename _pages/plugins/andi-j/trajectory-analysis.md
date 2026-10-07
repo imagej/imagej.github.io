@@ -50,7 +50,7 @@ For guidance on what to choose, we recommend:
 
 *   Kepten, E., Weron, A., Sikora, G., Burnecki, K., & Garini, Y. (2015). Guidelines for the fitting of anomalous diffusion mean square displacement graphs from single particle tracking experiments. [PLOS ONE, 10(2), e0117722](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117722).
 
-You can analyse the **2D / X / Y** components independently, which makes it possible, for instance, to detect anisotropic diffusion in your experiment. The values shown when the window opens use the default time lags `[1,2]`.
+You can analyse the **2D / X / Y** components independently, which makes it possible, for instance, to detect anisotropic diffusion in your experiment. The values shown when the window opens use the default time lags `[1,2]`. The histogram toolbar has **Normalize (%)** and **Log D axis**; the latter shows *D* on a logarithmic axis with log-spaced bins (values *D* ≤ 0 are left out).
 
 {% include img align="center" name="Diffusion coefficient tab" src="/media/plugins/andi-j/diff-coeff-tab.png" caption="**Diffusion coefficient** histogram." %}
 
