@@ -52,7 +52,7 @@ Tools:
 ## D vs α
 {: #d-vs-alpha}
 
-This tab shows a **2-D density heatmap** for the per-frame tuple (α, log₁₀*D*). Each selected experiment is overlaid as its own semi-transparent colour.
+This tab shows a **2-D density heatmap** of (α, log₁₀*D*). The dropdown at the start of the toolbar chooses whether each **frame** or each **segment** counts once; the colour scale, the side plots and the legend count the same. Each selected experiment is overlaid as its own semi-transparent colour.
 
 The side plots show the **marginal histograms + KDEs** along the top (α) and right (log₁₀*D*) edges. Drag the plot's top or right border to resize either marginal strip.
 
