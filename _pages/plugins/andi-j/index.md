@@ -135,7 +135,26 @@ The plugin uses whichever ONNX Runtime jar is in `Fiji.app/jars/`, so no rebuild
 
 ## Citing AnDi-J
 
-{% include notice icon="info" content="A citable reference for AnDi-J is coming soon. In the meantime, please cite the [papers listed below](#more-resources) that underpin the analyses you used." %}
+If you use AnDi-J in your work, please cite:
+
+**Plugin**
+
+> G. Muñoz-Gil. *AnDi-J*. Zenodo (2026). [https://doi.org/10.5281/zenodo.23147104](https://doi.org/10.5281/zenodo.23147104)
+
+```bibtex
+@software{andij,
+  author    = {Muñoz-Gil, Gorka},
+  title     = {{AnDi-J}},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23147104},
+  url       = {https://doi.org/10.5281/zenodo.23147104}
+}
+```
+
+**Paper**
+
+> *coming soon*
 
 ## More resources
 
