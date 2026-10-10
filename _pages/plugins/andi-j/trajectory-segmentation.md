@@ -54,7 +54,7 @@ Tools:
 
 This tab shows a **2-D density heatmap** of (α, log₁₀*D*). The dropdown at the start of the toolbar chooses whether each **frame** or each **segment** counts once; the colour scale, the side plots and the legend count the same. Each selected experiment is overlaid as its own semi-transparent colour.
 
-**Show immobile** (off by default): immobile segments, and in frame mode the frames of immobile segments, are left out of the plot, so that immobile data at α ≈ 0 do not hide the distribution of the moving ones. The legend gives how many are hidden and their share; tick the box to include them.
+**Show immobile** (off by default): immobile segments, and in frame mode the frames of immobile segments, are left out of the plot, so that immobile data at α ≈ 0 do not hide the distribution of the moving ones. The legend gives the number of frames or segments (*N*, immobile included) and, below, how many are immobile and their share. While immobile data is hidden, the checkbox has a soft orange highlight, which pulses for a few seconds after each update until the box is first ticked. Immobile segments keep their predicted *D*: the apparent diffusion coefficient of the remaining motion, typically localization noise.
 
 The side plots show the **marginal histograms + KDEs** along the top (α) and right (log₁₀*D*) edges. Drag the plot's top or right border to resize either marginal strip.
 
@@ -78,7 +78,7 @@ Plots:
 Tools:
 
 *   **Length bins**, **α bins** and **D bins** are set independently; all three plots share the segment-length *x* axis.
-*   **Show immobile** (off by default): the **Segment length vs α** plot leaves out immobile segments and gives how many are hidden and their share; tick the box to include them. The length histogram and the *D* plot always include them.
+*   **Show immobile** (off by default): the **Segment length vs α** and **Segment length vs D** plots leave out immobile segments; each gives the number of segments (*N*, immobile included) and, below, how many are immobile and their share. The length histogram always includes them. The checkbox is highlighted as in the **D vs α** tab.
 *   Rubber-band **Zoom**, **Pan**, **Reset view** on every plot.
 
 {% include img align="center" name="Segment Stats tab" src="/media/plugins/andi-j/seg-stats-tab.png" caption="**Segment Stats** tab." %}
