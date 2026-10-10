@@ -58,6 +58,9 @@ A 1-D **U-Net 3+** ([U-AnD-ME](https://iopscience.iop.org/article/10.1088/2515-7
 *   **Per frame:** *α* (clipped to [0, 1.999]), log₁₀(*D*) and the probabilities of the four diffusive states (0 = immobile, 1 = confined, 2 = free diffusion, 3 = directed); frames with *α* > 1.9 are directed.
 *   **Change points:** the local maxima of the change-point probability above 0.32, one flag at the first frame of each new segment.
 *   **Segments** (`seg_*` outputs): each segment's *α*, log₁₀(*D*) and diffusive-state probabilities are the **median** over its frames; its state is the most probable one.
+*   **Immobile segments** have *α* = 0, for the segment and for each of its frames, as in the labels of the 2nd AnDi Challenge. Their *D* is the predicted one: the apparent diffusion coefficient of the remaining motion, typically localization noise.
+
+On the challenge-phase data of the 2nd AnDi Challenge (single-trajectory task) it reaches JI (CP) 0.684, RMSE (CP) 1.755, MAE (*α*) 0.175, MSLE (*D*) 0.018 and F1 (diffusive state) 0.919, second in the overall ranking (see the [benchmark website](https://gorkamunoz.github.io/andi-j/)).
 
 The plugin runs 4 trajectories at a time in parallel. On an 8-core CPU this takes about 175 ms per trajectory of 10–400 frames; compute grows with the trajectory length.
 
