@@ -17,11 +17,11 @@ nav-links:
   url: /plugins/andi-j/ml-models
 ---
 
-This tool runs a per-frame segmentation model that predicts, **for every frame** of every trajectory, the local anomalous exponent *α*, the diffusion coefficient *D* (shown as log₁₀(*D*), due to its wide range of values) and the **diffusive state** — immobile, confined, free diffusion, or directed. It then detects **change points** to split each trajectory into homogeneous segments, each with its own α, *D* and diffusive state (see [ML models](/plugins/andi-j/ml-models#andi-j-segmentation) for how the default model computes them). The window has four tabs: [Visualization](#visualization), [D vs α](#d-vs-alpha), [Segment Stats](#segment-stats) and [Diffusive state](#diffusive-state).
+This tool runs a per-frame segmentation model that predicts, **for every frame** of every trajectory, the local anomalous exponent *α*, the diffusion coefficient *D* (shown on a logarithmic scale, due to its wide range of values) and the **diffusive state** — immobile, confined, free diffusion, or directed. It then detects **change points** to split each trajectory into homogeneous segments, each with its own α, *D* and diffusive state (see [ML models](/plugins/andi-j/ml-models#andi-j-segmentation) for how the default model computes them). The window has four tabs: [Visualization](#visualization), [D vs α](#d-vs-alpha), [Segment Stats](#segment-stats) and [Diffusive state](#diffusive-state).
 
 {% include notice icon="info" content="**Saving data.** Per-frame predictions and per-segment statistics can be exported as `csv` files from the [Visualization](#visualization) tab (see below). The **D vs α**, **Segment Stats** and **Diffusive state** tabs have a **Save plot** button that exports the plot, with all its panels, as a vector image (`svg`)." %}
 
-{% include notice icon="info" content="**Units.** Each tab has a **Units** button to choose the time and space units (see [Units](/plugins/andi-j/input-data#units)). log₁₀(*D*) and segment lengths are shown in the chosen units, and the `csv` exports give *D* in them (named in the header); the *D* axis labels do not repeat the unit." %}
+{% include notice icon="info" content="**Units.** Each tab has a **Units** button to choose the time and space units (see [Units](/plugins/andi-j/input-data#units)). *D* and segment lengths are shown in the chosen units, named in the *D* axis labels of the **D vs α** and **Segment Stats** tabs and in the `csv` headers; the log₁₀(*D*) axis of the **Visualization** tab does not repeat the unit." %}
 
 ## Visualization
 
@@ -52,15 +52,17 @@ Tools:
 ## D vs α
 {: #d-vs-alpha}
 
-This tab shows a **2-D density heatmap** of (α, log₁₀*D*). The dropdown at the start of the toolbar chooses whether each **frame** or each **segment** counts once; the colour scale, the side plots and the legend count the same. Each selected experiment is overlaid as its own semi-transparent colour.
+This tab shows a **2-D density heatmap** of (α, *D*). The dropdown at the start of the toolbar chooses whether each **frame** or each **segment** counts once; the colour scale, the side plots and the legend count the same. Each selected experiment is overlaid as its own semi-transparent colour.
 
 **Show immobile** (off by default): immobile segments, and in frame mode the frames of immobile segments, are left out of the plot, so that immobile data at α ≈ 0 do not hide the distribution of the moving ones. The legend has one row per experiment: its number of frames or segments and how many of them are immobile, marked *(hidden)* while they are left out. While immobile data is hidden, the checkbox has a soft orange highlight, which pulses for a few seconds when the tab is opened or the plot updates; once the box has been ticked, it is no longer highlighted until the next **Perform Analysis**. Immobile segments keep their predicted *D*: the apparent diffusion coefficient of the remaining motion, typically localization noise.
 
-The side plots show the **marginal histograms + KDEs** along the top (α) and right (log₁₀*D*) edges. Drag the plot's top or right border to resize either marginal strip.
+**Log D axis** (on by default): *D* on a logarithmic axis with log-spaced bins, as in the [Trajectory Analysis](/plugins/andi-j/trajectory-analysis#d-vs-alpha) **D vs α** tab; untick it for a linear axis.
+
+The side plots show the **marginal histograms + KDEs** along the top (α) and right (*D*) edges. Drag the plot's top or right border to resize either marginal strip.
 
 Tools:
 
-*   Hovering the heatmap shows the (α, log₁₀*D*) value under the cursor.
+*   Hovering the heatmap shows the (α, *D*) value under the cursor.
 *   Rubber-band **Zoom**, **Pan**, **Reset view**; a draggable **legend**.
 *   Experiment multi-select in the side panel.
 
@@ -78,6 +80,7 @@ Plots:
 Tools:
 
 *   **Length bins**, **α bins** and **D bins** are set independently; all three plots share the segment-length *x* axis.
+*   **Log D axis** (on by default): the **Segment length vs D** plot shows *D* on a logarithmic axis with log-spaced bins; untick it for a linear axis.
 *   **Show immobile** (off by default): the **Segment length vs α** and **Segment length vs D** plots leave out immobile segments; each gives the number of segments (*N*, immobile included) and, below, how many are immobile and their share. The length histogram always includes them. The checkbox is highlighted as in the **D vs α** tab.
 *   Rubber-band **Zoom**, **Pan**, **Reset view** on every plot.
 
