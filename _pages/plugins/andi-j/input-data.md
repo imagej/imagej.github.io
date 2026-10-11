@@ -61,7 +61,7 @@ An empty cell means unknown; double-click it to fill in or correct the value. Wh
 
 All experiments must be either calibrated or not (separately for space and time), and files merged into one experiment must share their values: otherwise **Perform Analysis** shows a warning and does not run, since values in μm and in pixels, or in seconds and in frames, cannot be compared. α, turning angles, diffusion models and diffusive states do not depend on the units.
 
-{% include img align="center" name="Data Manager" src="/media/plugins/andi-j/data-manager.png" caption="**Data Manager.** Three test experiments loaded as separate ones, then the same three loaded again as a merged experiment with Min. length and Max. length of 10. The latter appears as a single experiment in the analysis." %}
+{% include img align="center" name="Data Manager" src="/media/plugins/andi-j/data-manager.png" caption="**Data Manager.** Four test files loaded into three experiments. exp 1 keeps the trajectories of at least 10 frames and cuts them to 200 (557 of its 3005 trajectories are kept); the two files tagged exp 2 are merged into one experiment; exp 3 cuts its trajectories to 20 frames." %}
 
 ## Selecting the segmentation model
 
