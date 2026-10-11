@@ -103,7 +103,7 @@ Features:
 *   **Population tagging** — in **Select** mode, *circle* (lasso) a cluster of points (see blue area in the figure below), type a name in **Population tag:** and click **Tag population**. The enclosed trajectories are recoloured to a shade of their parent colour and added as a new dataset to the [Turning Angles](#turning-angles) and [Diffusion Model](#diffusion-model) tabs. A management table below the plot lists each population (tag, source datasets, colour — click the colour to change it). Click **Save…** in the **Save** column to export the population's trajectories as a `csv` in the [input format](/plugins/andi-j/input-data) (`TRACK_ID, POSITION_X, POSITION_Y, POSITION_T, FRAME`), plus an `EXPERIMENT` column naming the experiment each trajectory comes from. The file can be loaded again in the Data Manager, which ignores the extra column; with a calibration, positions are written in μm and `POSITION_T` in seconds, so the file loads back calibrated. `TRACK_ID` keeps the trajectory's id when the population comes from one experiment and is renumbered from 0 when it mixes several, so ids stay unique; commas in experiment names are written as semicolons.
 *   **Plot manipulation** — Log *D* axis toggle, rubber-band **Zoom**, **Pan**, **Reset view**, in both views.
 
-{% include img align="center" name="D vs alpha tab" src="/media/plugins/andi-j/d-vs-alpha-tab.png" caption="**D vs α** scatter with marginal KDEs and a tagged population." %}
+{% include img align="center" name="D vs alpha tab" src="/media/plugins/andi-j/d-vs-alpha-tab.png" caption="**D vs α** in Scatter view, with marginal KDEs and a tagged population (top), and in Density view (bottom)." %}
 
 ## Diffusion Model
 
