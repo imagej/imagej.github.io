@@ -11,9 +11,7 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
-{% capture crop %}<i class="fas fa-crop-alt" style="font-size:0.7em;" title="Requires a in-memory image (traditional image or stream-mode crop)"></i>{% endcapture %}
-{% capture stream %}<i class="fas fa-water"  style="font-size:0.7em;" title="Stream Mode only"></i>{% endcapture %}
-
+{% include snt-modes %}
 {% capture version%}
 **This page was last revised for [version 5.0.13](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
