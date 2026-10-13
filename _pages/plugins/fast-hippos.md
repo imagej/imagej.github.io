@@ -4,7 +4,7 @@ categories: [Analysis]
 icon: /media/icons/FAST-HIPPOS-icon.png
 source-url: "https://github.com/Jalink-lab/FAST-HIPPOS"
 update-site: "FAST-HIPPOS"
-release-version: v0.9.1
+release-version: v0.9.5
 support-status: Active
 team-founders: ['@Jalink-lab']
 team-maintainers: ['Jalink-lab', '@BioImaging-NKI', '@bvandenbroek']
