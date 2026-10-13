@@ -11,6 +11,7 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
+{% include snt-modes %}
 {% capture version%}
 **This page was last revised for [version 5.0.13](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
@@ -28,35 +29,54 @@ The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift
 {% include notice icon="info" content=text %}
 
 
+{% capture legend %}
+Unless marked, shortcuts work in all tracing canvases: the classic XY/ZY/XZ views and [SNT Stream](./snt-stream) (BDV/BVV). Marked shortcuts are limited to one of them:
+
+| {{ crop }} | Requires an image loaded as an ImagePlus: the classic canvas, or a _materialized crop_ in [Stream Mode](./snt-stream) |
+| {{ stream }} |Stream Mode only |
+
+In Stream Mode, BDV/BVV's own shortcuts are retained unless noted otherwise. The full list of active shortcuts can be accessed from the options drop-down menu of the _Scene Controls_ widget of BDV/BVV. 
+The [Legacy 3D Viewer](#legacy-3d-viewer) does not support most of the shortcuts listed here.
+{% endcapture %}
+{% include notice icon="info" content=legend %}
+
+
 ### Interactive Prompt
 
-| {% include key key='C' %}  | <u>C</u>ancels a path. Note that you can finish a path by pressing {% include key key='N' %} {% include key key='N' %} twice |
-| {% include key key='F' %}  | <u>F</u>inishes a path. Note that you can finish a path by pressing {% include key key='Y' %} {% include key key='Y' %} twice or using {% include key keys='Double Click' %}|
-| {% include key key='N' %}  | Discards the current temporary path. *Mnemonic: <u>N</u>o*  |
-| {% include key key='Y' %}  | Confirms the current temporary path. *Mnemonic: <u>Y</u>es* |
-| {% include key key='Esc' %}| Aborts current operation / Exits current mode |
+| {% include key key='C' %}  | {{ crop }} <u>C</u>ancels a path. Note that you can finish a path by pressing {% include key key='N' %} {% include key key='N' %} twice |
+| {% include key key='F' %}  | {{ crop }} <u>F</u>inishes a path. Note that you can finish a path by pressing {% include key key='Y' %} {% include key key='Y' %} twice or using {% include key keys='Double Click' %}|
+| {% include key key='N' %}  | {{ crop }} Discards the current temporary path. *Mnemonic: <u>N</u>o*  |
+| {% include key key='Y' %}  | {{ crop }} Confirms the current temporary path. *Mnemonic: <u>Y</u>es* |
+| {% include key key='Enter' %} | {{ stream }} Finishes the temporary path (same as {% include key key='Double Click' %} while tracing; otherwise, a double click centers the view) |
+| {% include key key='Esc' %}| Aborts current operation / Discards the temporary path / Exits current mode |
+| {% include key key='Z' %}  | Undo last segment (temporary paths) |
 
 
 ### Navigation and Zoom
 
-| {% include key key='Shift' %}    | Synchronizes XY, ZY, and XZ views while moving the cursor when not using cursor snapping |
-| {% include key key='+' %} / {% include key key='-' %}      | Zooms in/out (Simultaneously on all views) (IJ default) |
-| {% include key key='4' %}        | Displays tracing view(s) at original scale (IJ default) |
-| {% include key key='5' %}        | Displays tracing view(s) at 100% (IJ default) |
-| {% include key key='Spacebar' %} | Activates the Pan (Hand) tool (IJ default) |
-| {% include key key='>' %} / {% include key key='<' %} | Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT order of "&gt;" and "&lt;"* choice set in IJ's {% include bc path='Edit|Options|Misc...'%} prompt (IJ default) |
-| {% include key key='enter' %}    | Shuttles the window focus between the tracing image and the SNT window |
-| {% include key key='Ctrl|Tab' %} {% include key key='Ctrl|Shift|Tab' %} | Activates the next/previous tab in the main SNT window |
+| {% include key key='Shift' %}    | {{ crop }} Synchronizes XY, ZY, and XZ views while moving the cursor when not using cursor snapping |
+| {% include key key='+' %} / {% include key key='-' %}      | {{ crop }} Zooms in/out (Simultaneously on all views) (IJ default) |
+| {% include key key='4' %}        | {{ crop }} Displays tracing view(s) at original scale (IJ default) |
+| {% include key key='5' %}        | {{ crop }} Displays tracing view(s) at 100% (IJ default) |
+| {% include key key='Spacebar' %} | {{ crop }} Activates the Pan (Hand) tool (IJ default) |
+| {% include key key='>' %} / {% include key key='<' %} | {{ crop }} Previous/Next Z-slice, or Previous/Next channel, depending on the *Reverse CZT order of "&gt;" and "&lt;"* choice set in IJ's {% include bc path='Edit|Options|Misc...'%} prompt (IJ default) |
+| {% include key key='Enter' %}    | {{ crop }} Shuttles the window focus between the tracing image and the SNT window |
+| {% include key key='Ctrl|Tab' %} {% include key key='Ctrl|Shift|Tab' %} | {{ crop }} Activates the next/previous tab in the main SNT window |
+| {% include key keys='Ctrl/Cmd|G' %} | {{ stream }} Prompts for a location to fly to |
 
 
-### Path Handling
+### Path Selection and Visibility
 
-| {% include key key='1' %} | Toggles the first visibility filter: Whether all traced paths should be displayed or just selected ones |
-| {% include key key='2' %} | Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices |
-| {% include key key='3' %} | Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame |
 | {% include key key='G' %} | <u>G</u>rabs the nearest path to the mouse cursor. Holding {% include key keys='Shift|G' %} adds the nearest path to the current selection. Note that Paths can only be edited one at a time, and thus {% include key keys='Shift|G' %} is disabled in *Edit Mode* |
+| {% include key keys='Alt|G' %} | Deselects the last selected path (nothing remains selected if only one path was selected) |
+| {% include key keys='Shift|Alt|G' %} | Deselects all paths (*Select None*) |
 | {% include key key='H' %} | Temporarily <u>H</u>ides all paths/annotations while pressed |
-| {% include key key='O' %} | Temporarily shows path <u>O</u>rientations (start→end direction) while pressed |
+| {% include key key='O' %} | {{ crop }} Temporarily shows path <u>O</u>rientations (start→end direction) while pressed |
+| {% include key key='1' %} | {{ crop }} Toggles the first visibility filter: Whether all traced paths should be displayed or just selected ones |
+| {% include key key='2' %} | {{ crop }} Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices |
+| {% include key key='3' %} | {{ crop }} Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame |
+
+Path (de)selection shortcuts are disabled in *Edit Mode*, in which a single path is always selected.
 
 
 ### Tracing
@@ -64,35 +84,51 @@ The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift
 These shortcuts are available when running SNT in *Tracing Mode*:
 
 | {% include key key='L' %}                     | Toggles Tracing/Filling on Secondary <u>L</u>ayer (filtered image) |
-| {% include key key='V' %}                     | Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
-| {% include key key='S' %}                     | Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/walkthroughs#accurate-point-placement) |
-| {% include key key='Z' %}                     | Undo last segment (temporary paths) |
-| {% include key keys='Ctrl|Mouse Wheel' %}     | Change diameter of path being traced |
+| {% include key key='V' %}                     | {{ crop }} Finds the brightest <u>V</u>oxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background |
+| {% include key key='S' %}                     | {{ crop }} Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window. When set correctly, this facilitates accurate [positioning of path points](/plugins/snt/walkthroughs#accurate-point-placement) |
+| {% include key key='P' %}                     | {{ stream }} <u>P</u>icks the structure under the cursor as a representative structure (e.g., for the _Pick Sigma(s)_ palette) |
+| {% include key key='Spacebar' %}              | {{ stream }} A quick tap toggles tracing on/off; holding it disables tracing for as long as it is pressed |
+| {% include key keys='Ctrl|Mouse Wheel' %}     | {{ crop }} Change diameter of path being traced |
 | {% include key keys='Alt|Shift|Left Click' %} | Selects a point along the active path to be used as forking point (See [step-by-step instructions](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path) for more details on joining and branching). This shortcut can be [simplified](/plugins/snt/manual#temporary-paths) |
-| {% include key keys='Shift|B' %}              | <u>B</u>ookmarks cursor location |
 | {% include key keys='Shift|E' %}              | Activates *Edit Mode* (<u>E</u>diting of selected Path) |
-| {% include key keys='Shift|P' %}              | <u>P</u>auses tracing operations |
-| {% include key keys='Ctrl|S' %} / {% include key keys='Command|S' %}           | <u>S</u>ave tracings |
-| {% include key key='Ctrl|Shift|S' %} / {% include key keys='Command|Shift|S' %} | Backup tracings |
-| {% include key key='Ctrl|Shift|O' %} / {% include key keys='Command|Shift|O' %} | Save tracings & Open Next Image |
-| {% include key key='Ctrl|Alt|O' %} / {% include key keys='Command|Alt|O' %} | Save tracings & Open Previous Image |
+| {% include key keys='Shift|P' %}              | {{ crop }} <u>P</u>auses tracing operations |
+| {% include key keys='Ctrl|S' %} / {% include key keys='Command|S' %}           | {{ crop }} <u>S</u>ave tracings |
+| {% include key key='Ctrl|Shift|S' %} / {% include key keys='Command|Shift|S' %} | {{ crop }} Backup tracings |
+| {% include key key='Ctrl|Shift|O' %} / {% include key keys='Command|Shift|O' %} | {{ crop }} Save tracings & Open Next Image |
+| {% include key key='Ctrl|Alt|O' %} / {% include key keys='Command|Alt|O' %} | {{ crop }} Save tracings & Open Previous Image |
+
+
+### Bookmarks and Analysis
+
+| {% include key keys='Shift|B' %} | {{ crop }} <u>B</u>ookmarks cursor location. Not used in Stream Mode because it collides with BDV/BVV native bookmark support |
+| {% include key key='M' %}        | {{ stream }} <u>M</u>arks cursor location |
+| {% include key keys='Shift|Alt|A' %} | Sholl analysis at nearest node |
+| {% include key key='K' %}        | {{ stream }} Records a <u>K</u>ey frame ({% include key keys='Shift|K' %} clears the frames recorded so far) |
+| {% include key keys='Shift|S' %} | {{ stream }} Saves a <u>S</u>creenshot (BVV only) |
+| {% include key keys='Ctrl|Shift|P' %} / {% include key keys='Command|Shift|P' %} | Toggle Command <u>P</u>alette |
+
 
 ### Path Editing
 
-These shortcuts become available in *Edit Mode*, activated through the contextual menu (displayed with {% include key keys='Right Click' %} on a tracing canvas), or by pressing {% include key keys='Shift|E' %}:
+These shortcuts become available in *Edit Mode*, activated through the contextual menu (displayed with {% include key keys='Right Click' %} on a tracing canvas), or by pressing {% include key keys='Shift|E' %}. When active, tracing is suspended and the node under the cursor is the active node:
 
-| {% include key key='B' %} | <u>B</u>rings active node to current Z-plane |
+| {% include key key='B' %} | {{ crop }} <u>B</u>rings active node to current Z-plane |
 | {% include key key='C' %} | <u>C</u>onnects highlighted nodes (see *Connect to Help...* in contextual menu) |
+| {% include key key='Shift|C' %} | {{ stream }} Quick <u>C</u>onnects nodes (see *Connect to Help...* in contextual menu) |
 | {% include key key='D' %} | <u>D</u>eletes the active node |
 | {% include key key='I' %} | <u>I</u>nserts a new node at cursor position |
 | {% include key key='L' %} | <u>L</u>ocks active node to prevent accidental editing |
 | {% include key key='M' %} | <u>M</u>oves active node to cursor position |
-| {% include key key='P' %} | Toggle <u>P</u>aint Mode for brush editing |
+| {% include key key='P' %} | {{ crop }} Toggle <u>P</u>aint Mode for brush editing |
 | {% include key key='R' %} | Changes the <u>R</u>adius of active node |
+| {% include key key='T' %} | <u>T</u>ags the active node (assigns it a unique color) |
 | {% include key key='X' %} | Splits tree at active node, re-rooting the selected structure at the active node |
 | {% include key key='Z' %} | Undo last operation |
-| {% include key keys='Ctrl|Mouse Wheel' %}     | Adjust node radius / brush size (Paint Mode) |
-| {% include key keys='Alt|Drag' %}             | Move node / blend radii (Paint Mode) |
+| {% include key key='Esc' %} | Exits *Edit Mode* |
+| {% include key keys='Ctrl|Mouse Wheel' %}     | {{ crop }} Adjust node radius / brush size (Paint Mode) |
+| {% include key keys='Alt|Drag' %}             | {{ crop }} Move node / blend radii (Paint Mode) |
+
+Commands without an equivalent in Stream Mode (e.g., paint mode) are disabled in its contextual menu.
 
 ### Reconstruction Viewer
 
@@ -114,22 +150,6 @@ These shortcuts become available in *Edit Mode*, activated through the contextua
 | {% include key keys='Shift|F' %} | Toggle <u>F</u>ull Screen ({% include key key='Esc' %} can also be used to exit) |
 | {% include key keys='Shift|S' %} | Toggle <u>S</u>tatus Bar |
 | {% include key keys='Ctrl|Shift|P' %} / {% include key keys='Command|Shift|P' %}| Toggle Command <u>P</u>alette |
-
-### SNT Stream
-
-[SNT Stream](./snt-stream) maintains the defaul shortcuts of [BDV](/plugins/bdv/)/BVV. In addition, the following are available<sup>1</sup>:
-
-| {% include key key='H' %}            | Temporarily <u>H</u>ides all paths/annotations while pressed |
-| {% include key key='K' %}            | Record <u>K</u>ey frame |
-| {% include key key='M' %}            | <u>M</u>ark cursor location<sup>2</sup> |
-| {% include key key='Z' %}            | Undo last segment (temporary paths) |
-| {% include key key="Enter" %}        | Finish temporary path (same as {% include key key='Double Click' %}) |
-| {% include key key="Double Click" %} | Finish temporary path when tracing (same as {% include key key='Enter' %}), otherwise centers view |
-| {% include key key="Esc" %}          | Discard temporary path |
-
-<sup>1</sup> The full list of active shortcuts can be accessed from the options drop-down menu of the _Scene Controls_ widget of BDV/BVV
-
-<sup>2</sup> The {% include key keys='Shift|B' %} key combination (used with traditional images) is not used because it collides with BDV/BVV native bookmark support
 
 ### sciview
 
@@ -159,4 +179,4 @@ In addition, _most_ shortcuts that are not specific to tracing canvases (XY, ZY 
 
 ### Other
 
-There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when right-clicking a tracing canvas.
+There are other key and mouse combinations used in e.g., [Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis), and [Branching and Joining Paths](/plugins/snt/walkthroughs#branching-start-a-path-on-an-existing-path), that are listed in the contextual menu, displayed when right-clicking a tracing canvas. In Stream Mode, right-click without dragging (since right-drag pans the view) to bring up the same menu. It also includes _Continue Extending Path_, which replaces the toolbar button used by earlier versions of Stream Mode.

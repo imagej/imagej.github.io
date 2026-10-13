@@ -42,7 +42,7 @@ For technical implementation details and references, see the [SNT technical note
 
 
 {% capture op1-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing either 1) the _Drosophila OP neuron_, a Drosophila olfactory projection neuron and respective ground truth reconstruction (single cell); or the _Microglia cells_ dataset, a 2D image with multiple ramified microglia in the mouse retina.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing either 1) the _Drosophila OP neuron_, a Drosophila olfactory projection neuron and respective ground truth reconstruction (single cell); or the _Microglia cells_ dataset, a 2D image with multiple ramified microglia in the mouse retina.
 {% endcapture %}
 {% include notice icon="info" content=op1-demo %}
 
@@ -334,7 +334,7 @@ The algorithm works by first skeletonizing the segmented image to extract its to
 
 
 {% capture ddac-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila ddaC neuron (Autotrace demo)_. It will load a binary (thresholded) image of a Drosophila space-filling neuron (ddaC) displaying autotracing options for automated reconstruction.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing the _Drosophila ddaC neuron (Autotrace demo)_. It will load a binary (thresholded) image of a Drosophila space-filling neuron (ddaC) displaying autotracing options for automated reconstruction.
 {% endcapture %}
 {% include notice icon="info" content=ddac-demo %}
 

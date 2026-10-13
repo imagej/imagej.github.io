@@ -30,7 +30,7 @@ Currently, SNT supports detection, annotation, and density analysis of bright pu
 SNT can automatically detect intensity maxima (spines, varicosities, synaptic puncta) in the vicinity of traced paths using the **Peripath Detector**. At each path node, a perpendicular cross-section is sampled from the image, masked to an annular region around the neurite, and analyzed for local maxima via prominence filtering. Detections from adjacent cross-sections are deduplicated automatically. The detection algorithm is the same used by ImageJ's {% include bc path='Process|Find Maxima...' %}
 
 {% capture maxima-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing _Hippocampal neuron (Neuronal receptors)_ or _Hippocampal neuron (Synaptic labeling)_ datasets:
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing _Hippocampal neuron (Neuronal receptors)_ or _Hippocampal neuron (Synaptic labeling)_ datasets:
 
 1. Choose a neurite of interest. Adjust cursor size to the neurite thickness using {% include key keys='Ctrl|Mouse Wheel' %}
 2. Trace a small path (finish it by {% include key keys='Double Click' %})
@@ -133,7 +133,7 @@ Label proximity detection is complementary to [Delineation Analysis](/plugins/sn
 This approach uses manually placed multi-Point ROIs along paths as markers for neurite features. Currently only counts and densities are supported. A typical workflow proceeds as follows:
 
 {% capture spines-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset.
 {% endcapture %}
 {% include notice icon="tip" content=spines-demo %}
 

@@ -1,0 +1,14 @@
+{%- comment -%}
+Defines {{ crop }} and {{ stream }}, the inline icons that mark SNT features
+restricted to one kind of tracing canvas. Include once, at the top of a page:
+
+  {% include snt-modes %}
+
+crop:   requires an image loaded in memory (classic canvas or a stream-mode crop)
+stream: SNT Stream only
+
+Variables assigned in an include persist in the including page, so they can be
+used anywhere below it
+{%- endcomment -%}
+{%- capture crop -%}<i class="fas fa-crop-alt" style="font-size:0.7em;" title="Requires an in-memory image (traditional image or stream-mode crop)"></i>{%- endcapture -%}
+{%- capture stream -%}<i class="fas fa-water" style="font-size:0.7em;" title="SNT Stream only"></i>{%- endcapture -%}

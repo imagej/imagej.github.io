@@ -29,7 +29,7 @@ Delineations aggregate sections of reconstructions into groups to allow measurin
 {% capture ml-demo %}
 You can use the _MouseLight dendrites_ demo dataset to follow the delineation tutorials. While this dataset does not include counterstaining images, it can still be used for both ROI-based and Atlas-based delineations:
 
-1. Open {% include bc path='File|Load Demo Dataset...' %} and choose _MouseLight dendrites (Reconstructions only)_
+1. Open {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choose _MouseLight dendrites (Reconstructions only)_
 2. Right-click on the _Display Canvas_ and choose _Pause SNT_ from the contextual menu
 3. Follow the instructions below
 {% endcapture %}
