@@ -672,6 +672,12 @@ Selects ("<u>G</u>roups") the path closest to the mouse cursor.
 ### Add Nearest Path to Selection {% include key key='Shift|G' %}
 Keeps appending the closest path to the existing path selection.
 
+### Deselect Last Path {% include key key='Alt|G' %}
+Removes the most recently selected path from the selection (leaving nothing selected if only one path was selected).
+
+### Select None {% include key key='Shift|Alt|G' %}
+Clears the path selection.
+
 ### Lasso Select Paths
 A convenience utility to select path(s) quickly. One the command is run, it is possible to draw an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
 
