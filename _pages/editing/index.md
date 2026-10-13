@@ -263,6 +263,7 @@ The following tables list all of this site's general-purpose includes:
 | [timeline](timelines)                | Insert a horizontal timeline         |
 | [tooltip](tooltips)                  | Add a tooltip appearing on mouseover |
 | [echo](debugging)                    | For debugging                        |
+| [snt-modes](/plugins/snt/key-shortcuts) | Define the crop/stream icons of SNT |
 {:.skinny}
 
 #### MARKED FOR REMOVAL
