@@ -23,7 +23,7 @@ Seeded Tracing allows for anchoring/constraining tracing algorithms around key l
 - **ROIs** e.g., generated from ImageJ routines (area and line ROIs are reduced to representative points)
 - **Tabular data** (CSV) exported from external tools or scripts
 
-
+<span id="seeds"></span>
 # Seeded Tracing Assistant
 {% include img src="/media/plugins/snt/snt-seeded-tracing-assistant.png" align="right" width="350px" %}
 

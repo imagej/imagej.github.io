@@ -11,14 +11,20 @@ tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroana
 ---
 
 {% capture version%}
-**This page was last revised for [version 5.0.5](https://github.com/morphonets/SNT/releases)**.<br>
+**This page was last revised for [version 5.0.19](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep these walkthroughs up-to-date by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/walkthroughs.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
 {% endcapture %}
 {% include notice icon="snt" content=version %}
 
 # Semi-automated Tracing
+
+{% capture tutorial %}
+**In a rush?** Run {% include bc path='File|Load Demo Dataset/Tutorial...|Guided Tracing (Interactive)' %} for a 1-minute interactive tutorial. It runs completely offline.
+{% endcapture %}
+{% include notice icon="info" content=tutorial %}
+
 {% capture op1-demo-incomplete%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset. All the neuronal processes are traced in this dataset, so you may want to delete some of the existing paths beforehand.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset. All the neuronal processes are traced in this dataset, so you may want to delete some of the existing paths beforehand.
 {% endcapture %}
 
 {% include notice icon="info" content=op1-demo-incomplete %}
@@ -242,7 +248,7 @@ Described in [Delineation Analysis](/plugins/snt/delineations).
 
 # Time-lapse Analysis
 {% capture timelapse-demo%}
-You can use one of two demo datasets ({% include bc path='File|Load Demo Dataset...' %}) to follow these instructions:
+You can use one of two demo datasets ({% include bc path='File|Load Demo Dataset/Tutorial...' %}) to follow these instructions:
 - _Hippocampal neuron (DIC timelapse)_ dataset: A timelapse video of a cultured neuron in which neurites have been pre-traced across time
 - _Segmented video (2D timelapse)_ dataset: A small, thresholded video of a cultured neuron processed by a script that automates tracing at each frame
 {% endcapture %}
@@ -264,7 +270,7 @@ Once undesired motion has been mitigated:
 
    - Duplicate the path(s) of interest using Path Manager's {% include bc path='Edit|[Duplicate...](/plugins/snt/manual#duplicate)' %} This will allow you to copy a path (and its children) to a new frame (or channel). If a neurite is retracting, you can duplicate the subsection of the path that better matches the retracted neurite: e.g., by restricting the duplication to a fraction of the path's total length, or up to a branch-point
 
-   - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset...' %})
+   - Use a script to attempt segmentation at each frame, as in the _Segmented video (2D timelapse)_ demo ({% include bc path='File|Load Demo Dataset/Tutorial...' %})
 
 4. At this point, there are two types of analyses you can do using [Path Manager](./manual#path-manager)'s {% include bc path='Analyze|Time-lapses|' %} commands:
 
@@ -317,7 +323,7 @@ Once paths have been matched to their neurites across the time-lapse sequence, s
 
 # Filling
 {% capture op1-demo-full%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing the _Drosophila OP neuron (Complete 3D reconstruction)_ dataset.
 {% endcapture %}
 {% include notice icon="info" content=op1-demo-full %}
 <img align="right" src="/media/plugins/snt/fill-manager-v420.png" alt="Fill Manager (v4.2.0)." title="Fill Manager (v4.2.0)." width="275" />
@@ -417,7 +423,7 @@ Currently, only the output images/CSV summary of fills are exported. TRACES file
 # Tracing in Multichannel (Brainbow) Images
 
 {% capture brainbow-demo%}
-You can follow these instructions using {% include bc path='File|Load Demo Dataset...' %} and choosing the _Brainbow zebrafish larva_ dataset. This is a 2D, 3-channel confocal image in which individual neurons are distinguished by their unique combination of fluorescent proteins.
+You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing the _Brainbow zebrafish larva_ dataset. This is a 2D, 3-channel confocal image in which individual neurons are distinguished by their unique combination of fluorescent proteins.
 {% endcapture %}
 {% include notice icon="info" content=brainbow-demo %}
 
