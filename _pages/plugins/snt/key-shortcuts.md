@@ -13,7 +13,7 @@ update-site: Neuroanatomy
 
 {% include snt-modes %}
 {% capture version%}
-**This page was last revised for [version 5.0.13](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.0.21](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice icon="snt" content=version %}
 
@@ -32,13 +32,12 @@ The [Command Palette](manual#command-palette) ({% include key keys='ctlcmd|Shift
 {% capture legend %}
 Unless marked, shortcuts work in all tracing canvases: the classic XY/ZY/XZ views and [SNT Stream](./snt-stream) (BDV/BVV). Marked shortcuts are limited to one of them:
 
-| {{ crop }} | Requires an image loaded as an ImagePlus: the classic canvas, or a _materialized crop_ in [Stream Mode](./snt-stream) |
-| {{ stream }} |Stream Mode only |
+{{ crop }} → Requires an image fully loaded into memory: A traditional image or a [materialized regions](./manual#materialized-regions) in Stream mode<br>
+{{ stream }} → Stream Mode only
 
-In Stream Mode, BDV/BVV's own shortcuts are retained unless noted otherwise. The full list of active shortcuts can be accessed from the options drop-down menu of the _Scene Controls_ widget of BDV/BVV. 
-The [Legacy 3D Viewer](#legacy-3d-viewer) does not support most of the shortcuts listed here.
+In Stream Mode, BDV/BVV's own shortcuts are retained unless noted otherwise.
 {% endcapture %}
-{% include notice icon="info" content=legend %}
+{% include notice icon="snt-stream" content=legend %}
 
 
 ### Interactive Prompt

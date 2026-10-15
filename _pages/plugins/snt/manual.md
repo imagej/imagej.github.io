@@ -8,6 +8,8 @@ forum-tag: snt
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 
+{% include snt-modes %}
+
 {% capture version%}
 **This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.<br>
 Please help us to keep up-to-date documentation by [editing](https://github.com/imagej/imagej.github.io/edit/main/_pages/plugins/snt/manual.md) this page directly to fill in any documentation gap. Do [reach out](https://forum.image.sc/tag/snt) if you need assistance!
@@ -42,6 +44,8 @@ SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %
 
 - **Tracing Channel** Specifies the image channel to trace on (this option is ignored with single-channel images).
 
+> Throughout the documentation, {{ crop }} flags features that require an image loaded in memory (a regular image, or a [materialized region](./snt-stream#materialized-regions) of a stream), and {{ stream }} flags features that only exist in [SNT Stream](./snt-stream).
+
 # Main Dialog
 
 {% include img align="center" src="/media/plugins/snt/snt-main-gui.png" caption="Overview of main dialog (left). Note that clicking on the  headings separating the different widgets will point your browser to the relevant section of this manual!" %}
@@ -52,7 +56,7 @@ SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %
 
 Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 
-#### Choose Tracing Image...
+#### {{ crop }} Choose Tracing Image...
 
 Specifies the image to trace on without having to restart SNT. Commands include:
 
@@ -77,11 +81,11 @@ All SNT dialogs (including the _Neuroanatomy Shortcut Window_ support drag-and-d
 {% endcapture %}
 {% include notice icon="info" content=dnd %}
 
-#### Load Demo Dataset...
+#### {{ crop }} Load Demo Dataset...
 
 Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/walkthroughs), and to create [Minimal reproducible examples](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
 
-#### Load Labels (AmiraMesh)...
+#### {{ crop }} Load Labels (AmiraMesh)...
 
 {% include img src="/media/plugins/snt/load-demo-dialog.png" align="right" width="300px" %}
 This option assumes you are tracing on the same spatial coordinates of an annotated neuropil for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
@@ -89,10 +93,10 @@ This option assumes you are tracing on the same spatial coordinates of an annota
 #### Save Tracings...
 Saves all paths to a TRACES file. Shortcut: {% include key key='ctlcmd|S' %}
 
-#### Save Tracings &amp; Open Next Image
+#### {{ crop }} Save Tracings &amp; Open Next Image
 When an image is loaded the program also checks if there are other images in the same directory. This command saves current tracings alongside the image file, then loads the next image (alphabetically) in the same folder. This facilitates tracing multiple images. Note that only file extensions in _Next/Prev image: suffix filter_ in the [Additional Options...](#misc) prompt are considered (default is ".tif", ".tiff"). Shortcut: {% include key key='ctlcmd|Shift|O' %}
 
-#### Save Tracings &amp; Open Previous Image
+#### {{ crop }} Save Tracings &amp; Open Previous Image
 Similar to [Save Tracings &amp; Open Next Image](#save-tracings--open-next-image): Saves the tracing in the same directory, then loads the previous image in the same folder. Shortcut: {% include key key='ctlcmd|Alt|O' %}
 
 #### Save Tracings As...
@@ -269,9 +273,9 @@ Contains commands for organizing tracing views on screen, plus commands for disp
 
 - **{% include bc path='Arrange Dialogs' %}** Resets the on-screen positions of dialogs and widgets.
 
-- **{% include bc path='Arrange Tracing Views' %}** Resets the on-screen positions of tracing views.
+- {{ crop }} **{% include bc path='Arrange Tracing Views' %}**  Resets the on-screen positions of tracing views.
 
-- **{% include bc path='Hide Tracing Canvas| ' %}** Allows toggling of the visibility of the three orthogonal view tracing panes as well as the Legacy 3D View window.
+- {{ crop }} **{% include bc path='Hide Tracing Canvas| ' %}**  Allows toggling of the visibility of the three orthogonal view tracing panes as well as the Legacy 3D View window.
 
 - **{% include bc path='Display Secondary Image' %}** Displays the cached filtered image being used as secondary tracing layer.
 
@@ -297,12 +301,14 @@ This *home* tab aggregated widgets for tracing and frequent operations.
 
 {% include notice icon="snt-stream" content="Some widgets that require images to be fully loaded into memory may be disabled in [Stream Mode](./snt-stream)." %}
 
-### Data Source
+### {{ crop }} Data Source
+<span id="data-source"></span>
 
 <img align="right" alt="SNT data source widget" src="/media/plugins/snt/snt-data-source-widget.png" width="300" />
 If tracing on a multidimensional image (i.e., one with multiple channels and/or multiple time points), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button. By default, new values need to be confirmed in a confirmation prompt. If this is too cumbersome, the *Auto-load CT position of new paths* option automatically loads the active channel/frame when a new path is started. Note that this option may not be compatible with [secondary layers](#tracing-on-secondary-image-layer) and [Z-projection overlays](#views).
 
-### Cursor Auto-snapping
+### {{ crop }} Cursor Auto-snapping
+<span id="cursor-auto-snapping"></span>
 
 **Enable Snapping** If active (the default) the cursor snaps to the brightest voxel in its vicinity (Toggling shortcut: {% include key key='S' %}). To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position, searches quickly for local maxima in that neighborhood, and moves the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 
@@ -329,7 +335,7 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 <span id="auto-tracing"></span>
 
 <img align="right" width="450" src="/media/plugins/snt/snt-interactive-tracing.png" alt="Interactive-tracing options" title="Interactive-tracing options" />
-- **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search algorithm" %} to automatically trace paths between two manually selected points. To manually place nodes along a path, toggle this feature off. Note that it is also possible to enable other built-in algorithms or algorithms provided by external SNT add-ons. Current options include:
+- {{ crop }} **Enable A\* search algorithm** By default, SNT uses the {% include wikipedia title="A* search algorithm" text="A* search algorithm" %} to automatically trace paths between two manually selected points. To manually place nodes along a path, toggle this feature off. Note that it is also possible to enable other built-in algorithms or algorithms provided by external SNT add-ons. Current options include:
 
 - **A\* search**: Canonical and proven implementation of the historic algorithm, ported from [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer)
 
@@ -341,11 +347,11 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
 
  Independently of the algorithm used, the algorithm drop-down menu in this pane provides options to tweak the performance, accuracy and efficieny of the computations involved in the search. These include:
   
-- **Data structure** Defines how data is stored internally: Either _Map_ (slightly slower, but lower computation footprint), or _Array_ (slightly faster, but higher footprint)
+- **Data structure** {{ crop }} Defines how data is stored internally: Either _Map_ (slightly slower, but lower computation footprint), or _Array_ (slightly faster, but higher footprint)
 
 {% include img src="/media/plugins/snt/snt-cost-function-wizard.png" align="right" caption="Not sure which cost function suits your image? Use _Cost Function Selection Wizard..._ to compare all variants on a representative neurite segment: Each variant's candidate path is overlaid on a cropped view of the source image so you can pick the most suitable. The wizard accepts either a short traced path, a Path Manager selection, or (in-memory images only) a multi-point ROI (2+ points) as the probe segment" width="450px" %}
 
-- **Cost Function** Interactive tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
+- **Cost Function**  Interactive tracing algorithms aim to find a path to the destination node under the smallest _cost_ of deviating from the signal along a neurite. A successful search between two points is thus the _cheapest_ path with the least deviations. This is implemented through a _cost function_ in which voxels along a neurite are assigned lower costs, while voxels outside the neurite are assigned higher costs or penalties. SNT implements several _cost functions_, namely:
 
   - **Reciprocal of Intensity** The default, robust under a wide range of conditions
     
@@ -361,9 +367,9 @@ If tracing on a multidimensional image (i.e., one with multiple channels and/or 
     
   - **Specify Manually** Advanced option for users with a quantitative understanding of the image. Searches may consider pixels outside neurites when maximum in over-estimated, and may take significantly longer when it is under-estimated, since each pixel will carry a greater-than-reasonable cost
     
-  - **Compute Once** Statistics are computed once for the whole image (may take a while for large images) and stored in memory. If enough RAM is available this _may_ speed up searches. Although in real-word usage any speed-gains relatively to _Compute Real-Time_ seem negligible on modern hardware
+  - **Compute Now For Whole Image** Statistics are computed once for the whole image (may take a while for large images) and stored in memory. If enough RAM is available this _may_ speed up searches. Although in real-word usage any speed-gains relatively to _Compute Real-Time_ seem negligible on modern hardware
 
-- **Tracing Mode** Allows toggling between _Standard_ (the default) and _Live Preview_. In _Live Preview_ (also known as "rubber band" tracing), the path to the cursor position is continuously displayed as you move the mouse. Note that this option is only recommended for 2D images
+- {{ crop }} **Tracing Mode** Allows toggling between _Standard_ (the default) and _Live Preview_. In _Live Preview_ (also known as "rubber band" tracing), the path to the cursor position is continuously displayed as you move the mouse. Note that this option is only recommended for 2D images
 
 ### Tracing on Secondary Image (Layer)
 
@@ -401,7 +407,7 @@ The wizard needs two types of information from the user: The type of filtering o
   
   - **Spectral Similarity (Brainbow / Multichannel)** A filter designed for multichannel images in which neurites are labeled by multiple fluorophores such as Brainbow data. Instead of enhancing structural features, it computes how well each voxel's color (channel-intensity vector) matches a reference color derived from traced paths. The output combines cosine similarity (directional match) with an intensity factor (brightness match), producing a scalar map in [0, 1] where high values indicate voxels matching the target neuron's spectral signature. This filter does not require σ values: the _Scale(s)_ field is automatically set to "unused". See _Scale(s)_ below for how to define the reference color.
 
-{% include notice icon="snt-stream" content="Filters that require the entire image to reside in memory are not available in [Stream Mode](./snt-stream)." %}
+{% include notice icon="snt-stream" content="Filters that require the entire image to reside in memory require a [materialized region](./snt-stream#materialized-regions) when in [Stream Mode](./snt-stream)." %}
 
 - **Scale(s)** Also known as _sigma(s)_ (σ). These should reflect average radii of the structures being traced. If smaller values are specified, the filter becomes more sensitive to noise. Larger values on the other hand, make the filtering operation less sensitive to local shape characteristics. There are two ways to select this values:
   
@@ -443,9 +449,9 @@ This widget reports current settings (cost function, image statistics, etc.). Re
 <img align="right" alt="SNT path visibility filters" src="/media/plugins/snt/path-visibility-filters.png"  width="300" />
 By default, all the nodes of a path are projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides three additional visibility options for paths:
 
-1. **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
+1. {{ crop }} **Only selected paths (hide deselected)** Only show paths that have been manually selected in the Path Manager or with the {% include key key='G' %} key ({% include key keys='Shift|G' %} to select multiple paths).
 
-2. **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
+2. {{ crop }} **Only nodes within {x} nearby Z-slices** Only highlight nodes within {x} number of Z-slices on either side of the current slice. The projected skeletons of all paths remain visible.
 
 3. **Only paths from active channel/frame** If tracing on a multichannel image or an image with a time axis, only show paths from the active channel or frame.
 
@@ -478,7 +484,8 @@ The [Path Manager](#path-manager) offers several ways to colorize Paths:
 
 This tab aggregated widgets for advanced settings.
 
-### Views
+### {{ crop }} Views
+<span id="views"></span>
 
 <img align="right" width="300" src="/media/plugins/snt/snt-options-tab.png" alt="Options tab" title="Options tab" />
 - **Overlay MIP(s) at X% opacity** Overlays the {% include wikipedia title="Maximum intensity projection" %} of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
@@ -492,9 +499,14 @@ This tab aggregated widgets for advanced settings.
 
 - **Invert LUT** <i class="fa fa-circle-half-stroke"></i> Convenience shortcut for inverting the LUT of tracing image. If using a display canvas, the button toggles between a white, gray, or black backgrounds
 
+The contents of this widget changes between traditional (in-memory) images and [SNT Stream](./snt-stream). With traditional images it hosts two extra buttons:
+
 - **Create/Resize Canvas** If using a display canvas to view reconstructions, reset its dimensions to the default.  If the tracing image has been closed, it creates a display canvas for current paths. Note that this command does not resize the actual image being traced. To do so, use ImageJ's command {% include bc path='Image | Adjust | Canvas Size...' %}
 
 - **Display ZY/XZ views** If currently using the XY only view, display the ZY and XZ views as well.
+
+With {{ stream }} streamed data, it includes a **[Materialize Region](./snt-stream#materialized-regions)** option that allows you to obtain in-memory portions of the streamed volume.
+<span id="materialized-regions"></span>
 
 ### Temporary Paths
 
@@ -515,7 +527,8 @@ Whether a path should be automatically selected once finished.
 If selected the default shortcut for branching off a path ( {% include key key='Alt|Left-click' %} ) becomes {% include key key='Shift|Alt|Left-click' %}, which avoids conflict with OS-level shortcuts (in several Linux distributions, {% include key key='Alt|Left-click' %} is a common shortcut for dragging windows around the screen).
 
 
-### Path Rendering
+### {{ crop }} Path Rendering
+<span id="path-rendering"></span>
 
 - **Draw diameters** Displays the stored diameter (if any) in the XY view for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
 
@@ -542,7 +555,7 @@ The render opacity (in percentage) for path segments that are above/below the ac
   - **Fills** The pixels that have been reached by the Fill search
   - **Unconfirmed** and **Temporary** paths.
 
-- **Activate canvas on mouse hovering** If active, moving the mouse cursor over any of the views automatically brings the view window into focus, allowing it to receive input.
+- {{ crop }} **Activate canvas on mouse hovering** If active, moving the mouse cursor over any of the views automatically brings the view window into focus, allowing it to receive input.
 
 - **Skip confirmation dialogs** If active, disables the "*Are you sure?*" prompt preceding major actions. Note that this option does not apply to irreversible actions such as deleting paths.
 
@@ -678,7 +691,7 @@ Removes the most recently selected path from the selection (leaving nothing sele
 ### Select None {% include key key='Shift|Alt|G' %}
 Clears the path selection.
 
-### Lasso Select Paths
+### {{ crop }} Lasso Select Paths
 A convenience utility to select path(s) quickly. One the command is run, it is possible to draw an area ROI around the paths of interest, so that path(s) intersecting ROI boundaries can be selected. The shape of the ROI (rectangle, oval, freehand, etc.) is determined by the area ROI tool currently selected in ImageJ's main toolbar
 
 ### Hide Paths (Hold {% include key key='H' %})
@@ -687,7 +700,7 @@ Temporarily hides all paths and annotations to reveal the underlying image while
 - Verifying path accuracy against the original signal
 - Taking screenshots of the unobstructed image
 
-### Path Orientation (Hold {% include key key='O' %})
+### {{ crop }} Path Orientation (Hold {% include key key='O' %})
 Temporarily displays directional arrows along paths indicating their orientation (start→end) while held. Useful for:
 - Verifying directionality when merging or connecting paths
 - Checking path orientation before analysis
@@ -700,7 +713,7 @@ Described in [Bookmarks Tab](#bookmarks-tab).
 ### Sholl Analysis at Nearest Node {% include key keys='Shift|Alt|A' %}
 Described in [Analysis › Sholl Analysis (by Focal Point)](/plugins/snt/analysis#sholl-analysis-by-focal-point).
 
-### Click on Brightest Voxel Above/Below Cursor {% include key key='V' %}
+### {{ crop }} Click on Brightest Voxel Above/Below Cursor {% include key key='V' %}
 Finds the brightest Voxel above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background.
 
 ### Continue Extending Path
@@ -718,7 +731,7 @@ Finishes the temporary path. Note that a path can always be finished by {% inclu
 ## Edit Mode {% include key keys='Shift|E' %}
 Pressing *Edit Mode*, selects the nearest path for editing, unlocking the edit options. When *Edit Mode* is active, moving the mouse cursor along the path will highlight the nearest node with a crosshair icon and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in *Edit Mode*. For brush-based editing of multiple nodes at once, see [Paint Mode](#paint-mode-p) below.
 
-### Bring Active Node to Current Z-plane {% include key key='B' %}
+### {{ crop }} Bring Active Node to Current Z-plane {% include key key='B' %}
 Moves the active node to the active Z-plane. Note that the translation is only done in Z. XY positions are unchanged.
 
 ### Connect To (...) {% include key key='C' %}
@@ -742,6 +755,15 @@ A confirmation dialog shows the connection summary with an option to swap parent
 - Loop-forming connections are not allowed
 
 See also this [walkthrough](/plugins/snt/walkthroughs#mergingjoining-paths).
+
+### {{ stream }} Quick Connect...  {% include key key='Shift|C' %}
+This is an expedite strategy for branching off paths, only available in [Stream mode](./stream-mode):
+
+1. Press {% include key keys='Shift|C' %} (or choose _Quick Connect..._ from the contextual menu) with the cursor near the node of the edited path that should be connected
+2. Move the cursor over the node to connect to: the cursor snaps to the closest node of any other path (within 150 pixels), a dotted line shows the link, and the status message reports the gap
+3. Click, press {% include key key='Enter' %}, or press {% include key keys='Shift|C' %} again to connect. Press {% include key key='Esc' %} to cancel
+
+The edited path becomes the child of the target. Branches of the edited path are dimmed, since connecting to them would create a loop.
 
 <img align="right" src="/media/plugins/snt/snt-path-edit-right-click-menu-active.png" alt="Editing paths: contextual menu (v4.2)" title="Editing paths: contextual menu (v4.2)" width="300" />
 
@@ -769,7 +791,7 @@ Reorganizes the existing tree so that the active node becomes its root.
 ### Split Tree at Active Node {% include key key='X' %}
 Splits the current tree into two subtrees by disconnecting the active node from its parent structure
 
-### Paint Mode {% include key key='P' %}
+### {{ crop }} Paint Mode {% include key key='P' %}
 Toggles Paint Mode, a brush-based sub-mode of Edit Mode for adjusting paths. In Paint Mode, operations fade smoothly from full effect at the cursor to no effect at the brush edge, like a soft brush in image editors. The brush radius (number of flanking nodes affected) is displayed in the status label.
 
 **{% include key keys='Drag' %}**  Moves nodes within the brush radius toward the cursor, weighted by proximity to the center node (Gaussian-like displacement)
