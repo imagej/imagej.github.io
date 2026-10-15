@@ -20,12 +20,11 @@ update-site: Neuroanatomy
 The complete API is hosted at [javadoc.scijava.org/SNT](https://javadoc.scijava.org/SNT) (release builds; updated on major releases) and at [morphonets.github.io/SNT/](https://morphonets.github.io/SNT/) (always reflects the latest source).
 
 ##### Script SNT with an AI Agent
-SNT ships a ready-to-use **skill** (a portable prompt file) that primes an AI coding agent (Claude, Gemini, Copilot, Codex, Aider, Cline, Continue, and other agents with web access) with SNT's conventions, API patterns, and anti-patterns. Paste this into your agent's chat to get started:
+SNT ships a ready-to-use **skill** (a portable prompt file) that primes an AI coding agent (Claude, Gemini, Copilot, Codex, etc. and other agents with web access) with SNT's conventions, API patterns, and anti-patterns. Paste this into your agent's chat to get started:
 ```
 Fetch https://raw.githubusercontent.com/morphonets/SNT/refs/heads/main/SKILL.md, follow its rules, then help me script SNT.
 ```
-If your agent lacks web access, download [SKILL.md](https://github.com/morphonets/SNT/blob/main/SKILL.md) and paste its contents directly.
-
+If your agent lacks web access, use {% include bc path='Scripts|Develop|Download Agent Skill (SKILL.md)...' %} to save the file (by default into a folder named *snt*), and place it in your agent's skills directory (e.g., *.claude/skills/snt/SKILL.md*) or paste its contents directly. Agents can also use the [Develop helper scripts](#develop-menu) to look up the API installed in your Fiji and to inspect the state of an SNT session. **See [Agentic Scripting](#agentic-scripting) for details**.
 {% endcapture %}
 {% include notice icon="info" content=api %}
 
@@ -37,7 +36,7 @@ SNT Scripts are intentionally written in multiple languages to demonstrate flexi
 
 ## Bundled Templates
 {% include img align="right" src="/media/plugins/snt/snt-scripts-menu.png" width="200px" caption="Scripts menu in main dialog"%}
-There are 50+ scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Demos* (teaching examples), *Render* (visualizations), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Time-lapses* (time-lapse utilities).
+There are 50+ scripts currently bundled in SNT. These are organized into non-rigid categories: *Analysis* (typically handling quantifications) , *Batch* (Bulk processing of files), *Demos* (teaching examples), *Develop* (helpers for script and agent development, see [below](#develop-menu)), *Render* (visualizations), *Skeletons &amp; ROIs* (pixel-based analyses), *Tracing* (Tracing-related tasks), and *Time-lapses* (time-lapse utilities).
 
 Bundled scripts can be accessed in two ways:
 
@@ -52,11 +51,96 @@ There are a couple of ways to have your own scripts appear in SNT's *Scripts* me
 
 Any script saved into Fiji's "scripts" subdirectory containing *SNT* in the filename (e.g., *C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py* or */home/user/Fiji.app/scripts/My_SNT_Script.py*) will be listed in {% include bc path='Scripts'%} menu:
 
-1. Go to {% include bc path='Scripts|New...'%} from the SNT dialog. You can choose to open an instance of Fiji's Script Editor with preloaded boilerplate code in the scripting language of your choice or to assemble your boilerplate using the [Script Recorder](#script-recorder)
+1. Go to {% include bc path='Scripts|Develop|New Script from Template...'%} from the SNT dialog. You can choose to open an instance of Fiji's Script Editor with preloaded boilerplate code in the scripting language of your choice or to assemble your boilerplate using the [Script Recorder](#script-recorder)
 
 2. Save the script in *Fiji.app/scripts/* including 'SNT' anywhere in its file name
 
 3. Run {% include bc path='Scripts|Reload...'%}, and your new script should appear in the full list of scripts found at {% include bc path='Scripts|Full List...'%}.
+
+# Develop Menu
+
+The {% include bc path='Scripts|Develop'%} menu groups tools for writing scripts, whether by hand or with an AI agent:
+
+- **New Script from Template...** and **New Script from Clipboard...** open the Script Editor with boilerplate code or with the code in your clipboard
+- **REPL** opens the [REPL](#repl)
+- **API Lookup** and **Inspect Session** run the helper scripts described below
+- **Download Agent Skill (SKILL.md)...** saves SNT's [agent skill](#script-snt-with-an-ai-agent) to disk
+
+## API Lookup
+Lists the public API (*sc.fiji.snt.\**) of the SNT version installed in your Fiji, so that class and method names do not need to be guessed. The *Mode* parameter defines what is listed: *search* (classes and methods matching a keyword), *class* (constructors, methods and fields of a class), *classes* (classes of a package) or *packages*. *Query* is the keyword, class name or package name (case is ignored), and *Output* can be *Console*, *JSON* or *Text window*. Deprecated members are omitted unless *Include deprecated API* is checked. If a class is not found (e.g., it was renamed), similar names are suggested.
+
+## Inspect Session
+Reports the state of the SNT session in which it runs as JSON: SNT and Java versions, the image being traced (dimensions and calibration), and the number of paths and trees (with cable length, branches and tips for each tree). A reconstruction can be loaded first, and the report can be saved to a file. Run from the Script Editor or the menu, it reports on your live session. Run headlessly, it reports on a fresh one.
+
+## Running the Helpers Headless
+Both scripts are bundled in SNT's jar (*script_templates/Neuroanatomy/Develop/*) and can be run from the command line, which is how agents use them:
+
+{% highlight bash %}
+fiji --headless --run API_Lookup.groovy 'mode="class",query="TreeStatistics",output="JSON"'
+fiji --headless --run Inspect_Session.groovy 'reconstruction="/path/to/cell.swc"'
+{% endhighlight %}
+
+Output is always printed to the console unless *Text window* is chosen (and a GUI is available).
+
+# Agentic Scripting
+
+An AI agent can write, run and debug SNT scripts for you, provided it knows SNT's conventions and can check its work against the Fiji you have installed. Getting there takes four steps:
+
+1. **Give the agent the skill.** Paste the one-line prompt from [above](#script-snt-with-an-ai-agent), or save the skill with {% include bc path='Scripts|Develop|Download Agent Skill (SKILL.md)...' %} into your agent's skills directory
+2. **Let it reach your Fiji.** Agents with a shell (e.g., Claude Code, Codex) can run Fiji headless and use the [Develop helpers](#develop-menu) to verify class names and inspect results. Chat-only agents cannot: paste their script into the Script Editor, run it, and paste back any error
+3. **State the goal, inputs and outputs.** What data you have, what you want measured or drawn, and where the result should go
+4. **Iterate on test data first.** Ask the agent to try the script on SNT's demo data (e.g., `snt.demoTree()`), then on one of your files, and only then on the whole batch
+
+Things that help: ask for [script parameters](/scripting/parameters) (`#@`) instead of hard-coded paths so the script can be reused; ask it to adapt one of the [bundled templates](#bundled-templates) rather than starting from scratch; and always sanity-check a result you know (e.g., a cell you have measured before). Agents can be confidently wrong, so review a script before running it on irreplaceable data.
+
+## Example Conversation
+The following conversation shows a typical flow for a common task. Note how the agent checks the API instead of relying on memory, tests on demo data, and asks before touching the real files.
+
+{% highlight text %}
+You:    I have a folder of SWC files. I want a CSV with the cable length, number
+        of branches and mean branch length of each cell. Can you write a script?
+
+Agent:  Sure. Two quick questions: should it also search subfolders, and are
+        the files calibrated in microns (I would report lengths in the units
+        stored in the reconstructions)?
+
+You:    No subfolders. Units are whatever is in the files.
+
+Agent:  Understood. I'll adapt SNT's "Measure Multiple Files" template and first
+        confirm the method names in your Fiji.
+        > API_Lookup.groovy mode="class" query="TreeStatistics" output="JSON"
+        TreeStatistics has getMetric(String) and getSummaryStats(String), with
+        constants LENGTH, N_BRANCHES and BRANCH_LENGTH. Here is the script:
+
+        #@ File (label="Input folder", style="directory") dir
+        #@ File (label="Output CSV", style="save") csv
+        import sc.fiji.snt.Tree
+        import sc.fiji.snt.analysis.*
+        table = new SNTTable()
+        dir.eachFileMatch(~/.*\.swc/) { f ->
+            stats = new TreeStatistics(new Tree(f.absolutePath))
+            table.insertRow(f.name)
+            table.appendToLastRow("Cable length", stats.getMetric(TreeStatistics.LENGTH))
+            table.appendToLastRow("N branches", stats.getMetric(TreeStatistics.N_BRANCHES))
+            table.appendToLastRow("Mean branch length",
+                stats.getSummaryStats(TreeStatistics.BRANCH_LENGTH).getMean())
+        }
+        table.save(csv.absolutePath)
+
+        I'll test it on a demo cell before using your folder.
+
+Agent:  > fiji --headless --run measure.groovy 'dir="/tmp/demo",csv="/tmp/out.csv"'
+        The demo file produced a single row of plausible values that match the
+        statistics SNT reports for that cell in its own dialogs. Running
+        it on your folder now... done. 48 files measured, saved to results.csv.
+        One file (cell_17.swc) has a single path and thus a branch length of
+        zero: you may want to check it.
+
+You:    Great. Add the number of tips as well.
+
+Agent:  Done: added an "N tips" column (TreeStatistics.N_TIPS). The updated
+        script and CSV are saved alongside the previous ones.
+{% endhighlight %}
 
 # Script Recorder
 
@@ -75,7 +159,7 @@ As a rule-of-thumb, commands that are simple or do not involve prompts record fl
 
 # REPL
 
-SNT's Scripting REPL (Read–Eval–Print Loop) is opened using {% include bc path='Scripts|New|REPL'%}. It is a [Script Interpreter](/scripting/interpreter) instance with pre-initialized variables that are entry-points to the API of current SNT session. The REPL serves as a commandline prompt with access to all of SNT classes.
+SNT's Scripting REPL (Read–Eval–Print Loop) is opened using {% include bc path='Scripts|Develop|REPL'%}. It is a [Script Interpreter](/scripting/interpreter) instance with pre-initialized variables that are entry-points to the API of current SNT session. The REPL serves as a commandline prompt with access to all of SNT classes.
 <div align="center">
   <img src="/media/plugins/snt/snt-repl.png" alt="Repl" title="SNTService being accessed in SNT's Scripting REPL" width="700px" />
 </div>
@@ -131,7 +215,7 @@ Direct access to the SNT API from the [Python](https://www.python.org/) programm
 
 # Fiji Scripting
 
-Scripting in Fiji's script editor is perhaps best done using Groovy and Jython. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|New|From Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
+Scripting in Fiji's script editor is perhaps best done using Groovy and Jython. The latter as quite good autocompletion for objects that are not script parameters. The best way to start a new script is by choosing a boilerplate  {% include bc path='Scripts|Develop|New Script from Template...'%} in SNT or {% include bc path='Neuroanatomy|Boilerplate|'%} in the script Editor. These templates hold boilerplate code in several programming languages (namely [BeanShell](/scripting/beanshell), [Groovy](/scripting/groovy) and [Jython](/scripting/jython)), and include the most essential imports and [script parameters](/scripting/parameters) to facilitate rapid development.
 
 {% capture text %}
 For serious scripting, Fiji's Script Editor may not be powerful enough for your needs. The most robust way to script SNT in Groovy
