@@ -139,6 +139,7 @@ If you use AnDi-J in your work, please cite:
 
 > G. Muñoz-Gil, *AnDi-J: diffusion analysis of single-particle tracking data in Fiji*, bioRxiv (2026). [https://doi.org/10.64898/2026.10.14.756868](https://doi.org/10.64898/2026.10.14.756868)
 
+{% raw %}
 ```bibtex
 @article{andij_paper,
   author    = {Mu{\~n}oz-Gil, Gorka},
@@ -150,6 +151,7 @@ If you use AnDi-J in your work, please cite:
   journal   = {bioRxiv}
 }
 ```
+{% endraw %}
 
 ## More resources
 
