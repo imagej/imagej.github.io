@@ -5,37 +5,56 @@ nav-links: true
 toc: true
 ---
 
-The complete documentation of ABBA can be found here: 
+Aligning Big Brains & Atlases, or ABBA for short, is a Fiji plugin to register thin serial sections of brains to
+3D atlases, in coronal, sagittal and horizontal orientations.
+
+The complete documentation of ABBA is at
 [https://abba-documentation.readthedocs.io](https://abba-documentation.readthedocs.io).
 
-You can use ABBA by activating the PTBIOP update site, but more functionalities are acessible through other installation means. Check the full documentation for instructions.
+## Features
 
-## [ABBA](https://www.youtube.com/watch?v=8haRfsY4-_s) - Aligning Big Brains & Atlases
+* **Atlases**: the [Allen mouse brain atlas](http://atlas.brain-map.org/atlas?atlas=602630314) (CCFv3), the
+  [Waxholm Space atlas of the Sprague Dawley rat brain](https://www.nitrc.org/projects/whs-sd-atlas), and all the
+  [BrainGlobe atlases](https://brainglobe.info/), opened directly in Fiji.
+* **Automated registration**: [DeepSlice](https://github.com/PolarBean/DeepSlice) positions the sections along
+  the atlas, [elastix](https://elastix.dev/) refines each one with affine and spline registrations. Both are
+  installed by ABBA itself the first time they are used: nothing else to install or configure.
+* **Manual correction**: position sections by hand, and edit any registration, with
+  [BigWarp](/plugins/bigwarp) for spline registrations.
+* **Large images**: ABBA uses [BigDataViewer](/plugins/bdv) to display and transform multiresolution images, the
+  typical output of whole slide imaging, on the fly.
+* **QuPath**: a [QuPath](https://qupath.github.io) project can be the input of ABBA, and the registered atlas
+  regions are imported back into QuPath for cell detection and counting per region.
+* **AI assistant** (experimental): through [abba-mcp](https://github.com/unige-biochem/abba-mcp), an AI
+  assistant (in VS Code, Claude, Codex...) can run a registration in ABBA's window, where you can take over at any
+  time.
 
-Aligning Big Brains & Atlases or ABBA for short, is a Fiji plugin which allows to register thin serial sections to several atlases, in coronal, sagittal and horizontal orientations.
+## Installation
 
-Within Fiji, you have access to the [3D mouse Allen Brain atlas](http://atlas.brain-map.org/atlas?atlas=602630314), and the [Waxholm Space Atlas of the Sprague Dawley Rat Brain](https://www.nitrc.org/projects/whs-sd-atlas). With [ABBA-Python](https://github.com/NicoKiaru/ABBA-Python), you can access all [BrainGlobe atlases](https://brainglobe.info/).
+In Fiji, enable the `UNIGE-Biochem` [update site](/update-sites/following), then restart Fiji. ABBA needs Java 21,
+which an up-to-date Fiji has.
 
-ABBA is typically used in conjunction with [QuPath](https://qupath.github.io): a QuPath project can serve as an input for ABBA, and the registration results can be imported back into QuPath for downstream processing.
+ABBA can also be installed with an AI assistant, with a standalone installer, or from Python: see the
+[installation page](https://abba-documentation.readthedocs.io/en/stable/installation/installation.html).
 
-<video autoplay loop muted style="width: 100%;">
-  <source src="https://user-images.githubusercontent.com/20223054/149301605-07b27dd0-4010-4ca4-b415-f5a9acc8963d.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## Getting started
 
------
+* [Getting started](https://abba-documentation.readthedocs.io/en/stable/getting_started/first_registration.html):
+  a first registration, step by step, on demo sections that ABBA downloads for you.
+* [Video tutorial](https://abba-documentation.readthedocs.io/en/stable/resources/video_tuto.html).
+* Questions and bug reports: the [image.sc forum](https://forum.image.sc/tag/abba), with the `abba` tag.
 
+## Citation
 
-ABBA uses [BigDataViewer](https://imagej.net/plugins/bdv/index) and [BigWarp](https://imagej.net/plugins/bigwarp) for the display and on-the-fly computation of spline-transformed multiresolution images (typical output of Whole Slide Imaging).
+If you use ABBA, please cite:
 
-It has been developed by the [BioImaging & Optics Platform](https://www.epfl.ch/research/facilities/ptbiop/) at EPFL. This page contains the reference documentation of ABBA. If you require additional help, please check the troubleshooting section at the bottom of this page.
+Chiaruttini, N., Castoldi, C., Requie, L. et al. **ABBA+BraiAn, an integrated suite for whole-brain mapping,
+reveals brain-wide differences in immediate-early genes induction upon learning**. *Cell Reports* (2025).
+[doi:10.1016/j.celrep.2025.115876](https://doi.org/10.1016/j.celrep.2025.115876)
 
+After the registration, [BraiAn](https://silvalab.codeberg.page/BraiAn/) analyses whole-brain datasets aligned with
+ABBA.
 
-
-## Documentation
-
-You will find the complete documentation in [https://abba-documentation.readthedocs.io](https://abba-documentation.readthedocs.io)
-
-
-
-
+ABBA was started at the [BioImaging & Optics Platform](https://www.epfl.ch/research/facilities/ptbiop/) of EPFL,
+and is developed at the University of Geneva. Its sources are on
+[GitHub](https://github.com/BIOP/ijp-imagetoatlas).
