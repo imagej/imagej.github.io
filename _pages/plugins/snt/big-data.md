@@ -25,11 +25,11 @@ The following operations are currently supported:
 | Manual and semi-automated tracing | Supported (experimental)<sup>1</sup> | Multi-dimensional images have not been thoroughly tested |
 | Automated tracing | Supported (experimental) | See [Auto-tracing](./auto-tracing#grayscale-images)<sup>1,2</sup> |
 | Tracing along way-points | Supported | |
-| [Path optimization](./manual#refinefit-) | Supported | |
+| [Path optimization](./manual#refinefit-) | Supported | See [Re-trace With A*](./manual#re-trace-with-a) |
 | 3D Visualization: Interactive re-slicing browser | Supported via [BigDataViewer](./manual#big-data-viewer) | |
 | 3D Visualization: Interactive volume viewer | Supported via [BigVolumeViewer](./manual#big-volume-viewer) and [sciview](./manual#sciview) | Includes [Slab View](#slab-view) for restricting rendering to a thin, adjustable region of the volume |
-| Stream-specific workflows | Supported (experimental) | [Materialized crops](./snt-stream#materialized-crops), [channel unmixing](./snt-stream#channel-unmixing), and [Quick Connect](./snt-stream#editing): see [SNT Stream](./snt-stream) |
-| Multidimensional operations | Limited support | Tracing handles one active channel/frame at a time for performance reasons. Commands that require exposing all channels/frames to be available at once [may not be supported](#limitations-and-idiosyncrasies) |
+| Stream-specific workflows | Supported (experimental) | [Materialized crops](./snt-stream#materialized-crops), [channel unmixing](./snt-stream#channel-unmixing), and [Quick Connect](./snt-stream#editing) |
+| Multidimensional operations | Limited support | Tracing handles one active channel/frame at a time for performance reasons. Commands that require exposing all channels/frames to be available at once may require [data crops](#limitations-and-idiosyncrasies) |
 
 <sup>1</sup>For collaborative tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets in a collaborative environment
 
@@ -56,7 +56,7 @@ Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the 
   |---|---|---|
   | **Display** | 3D volume rendering | Interactive reslicing |
   | **Hardware** | Discrete graphics card recommended | No GPU needed |
-  | **[Slab View](#slab-view)** | Available | N/A |
+  | **[Slab view](#slab-view)** | Available | N/A |
   | **[Channel unmixing](./snt-stream#channel-unmixing)** | Computed per slab | Live |
 
   Choose BVV for sparsely labeled data, modern hardware, and a fast disk or network connection. Choose BDV for dense, feature-rich images, modest hardware, or slow connections.
@@ -65,14 +65,14 @@ Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the 
 
 - **Load Remote Demo**: Pre-fills all fields with a remote demo (marmoset neurons, OME-Zarr, with autotracings and soma markers, using BVV with tracing enabled)
 
-All inputs can be local paths or remote URLs (including http and s3 links). Only _Main volume_ is mandatory.
 
-{% include notice icon="info" content="**[SNT Stream](./snt-stream) remains experimental**." %}
+
+{% include notice icon="info" content="**All inputs can be local paths or remote URLs. Only _Main volume_ is mandatory**." %}
 
 
 ## Limitations and Idiosyncrasies
 
-- **One channel/frame at a time**: for performance reasons, one channel/frame is streamed for tracing at once. Commands that require all channels/frames available simultaneously (e.g., [Multispectral Refinement](./manual#multispectral-refinement)) are not supported
+- **One channel/frame at a time**: for performance reasons, one channel/frame is streamed for tracing at once. Commands that require all channels/frames available simultaneously (e.g., [Multispectral Refinement](./manual#multispectral-refinement)) require [materialized regions](./manual#materialize-regions). 
 - **Fixed search algorithm**: the A* search algorithm is used for interactive tracing; the alternate NBA*/Fast Marching options available for in-core images may not be offered in Stream mode
 - **Cached image statistics**: Access to cost-function tuning and [image-statistics options](./manual#algorithm-settings) remains available. However, since _Compute Now For Whole Image_ scans the entire streamed dataset once, it can be _slow_ depending on dataset size and network/disk speed. Use _Compute Real-Time_ (the default) instead: It recalculates local statistics as you trace new regions.
 - **3D Scene recentering on click**: whether/how the view recenters as you place tracing points is configurable from the toolbar's options menu (_Never_ / _Adaptive_ / _Always_). _Adaptive_ is the recommended default for streamed data: it skips recentering for clicks that already land close to the focal plane, and briefly gates subsequent clicks after a recenter fires, giving tile streaming time to catch up
@@ -96,13 +96,13 @@ Slab View switches itself off if the view no longer intersects the slab, and whe
 [Big volume viewer](./manual#big-volume-viewer) and [Big data viewer](./manual#big-data-viewer) are at the core of Big-data support. Standard formats (TIFF, and anything readable via [Bio-Formats](/formats/bio-formats)) are loaded as regular in-memory volumes, with an option to downsample automatically if a volume exceeds the GPU's 3D texture limits.
 Imaris (.ims) files are supported via an automatically generated BDV-XML sidecar written next to the original file.
 
-For genuinely large datasets, BDV XML/HDF5, N5, and OME-Zarr/OME-NGFF containers are opened virtually: data is streamed from disk in blocks as needed. N5 and Zarr containers are read directly, with no XML sidecar required. Remote data can be also be loaded using URLs.
+For genuinely large datasets, BDV XML/HDF5, N5, and OME-Zarr containers are opened virtually: data is streamed from disk in blocks as needed. N5 and Zarr containers are read directly, with no XML sidecar required. Remote data can be also be loaded using URLs.
 
-### Non-pyramidal and oversized volumes
+### Non-pyramidal and Oversized Volumes
 
 BVV's 3D renderer requires a multi-resolution pyramid, and a single GPU texture has size limits. If the _Main volume_ does not satisfy these and BVV is chosen, SNT prompts you for how to proceed:
 
-- **Non-pyramidal N5/Zarr**: Choose _Build Pyramid_ to have SNT compute the coarser levels on demand (volumes that fit in memory are first copied locally, which may take a while for remote datasets)
+- **Non-pyramidal Zarr/N5**: Choose _Build Pyramid_ to have SNT compute the coarser levels on demand (volumes that fit in memory are first copied locally, which may take a while for remote datasets)
 - **Image too large for a single GPU texture**: This happens when a dimension exceeds the 3D texture limit of your graphics card, or when the volume has too many voxels per channel. You can choose between:
   - _Downsample_: Shrinks the image so that it fits. Opens quickly, but fine detail is lost
   - _Load at full resolution_: Loads every voxel into memory as a tiled pyramid. Requires substantial memory, and is a rendering only: it cannot be used for tracing

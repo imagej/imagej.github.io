@@ -30,22 +30,22 @@ Tracing, editing, and shortcuts work the same way in both viewers.
 2. Press {% include key key='Enter' %} to finish the current path, or {% include key key='Esc' %} to discard it.
 3. Press {% include key key='Z' %}, or use the **Undo Last Segment** button on the toolbar, to step back one click at a time along the path currently being traced.
 4. Switch the active channel/frame from the toolbar as needed; only one is streamed for tracing at a time (see [big data limitations](./big-data#limitations-and-idiosyncrasies)).
-5. Finished paths land in the Path Manager exactly as they would from any other SNT session: save, curate, and analyze them as usual.
+5. Finished paths land in the Path Manager exactly as they would from any other SNT session: [save](./manual#save-tracings), [curate](./curation#curation-assistant), and [analyze](./analysis) them as usual.
 6. If tracing manually, use [Re-trace With A*](./manual#re-trace-with-a) asynchronously to refine the curvature of traced paths.
 
 ## What Differs From In-Core Tracing
 
 Most of SNT works the same way in a streamed scene and in an image loaded in memory: the same [shortcuts](./key-shortcuts) and [contextual menu](./manual#image-contextual-menu) apply, and paths are handled by the same Path Manager. The differences are summarized below. 
 
-> Throughout the documentation, {{ crop }} flags features that require an image loaded in memory (a regular image, or a [materialized crop](#materialized-crops) of a stream), and {{ stream }} flags features that only exist in SNT Stream.
+> Throughout the documentation, {{ crop }} flags features that require an image loaded in memory (a regular image, or a [materialized region](#materialized-regions) of a stream), and {{ stream }} flags features that only exist in SNT Stream.
 
 
-| | {{ stream }} SNT Stream | {{ crop }} Image in Memory |
+| | {{ stream }} SNT Stream | {{ crop }} In-Memory Image |
 |---|---|---|
 | **Image data** | Streamed and tiled. Only the displayed region/resolution is loaded | Fully loaded in memory |
 | **Tracing algorithm** | A* only (currently). See [limitations](./big-data#limitations-and-idiosyncrasies) | A*, NBA*, Fast Marching |
-| **Filters, widgets requiring entire images, and ImageJ-specific workflows (ROIs, etc.)** | Materialized crops only | Available |
-| **Lasso selection, path orientation, brightest-voxel click, paint mode** | Materialized crops only |  Available |
+| **Filters, widgets requiring entire images, and ImageJ-specific workflows (ROIs, etc.)** | [Materialized regions](#materialized-regions) only | Available |
+| **Lasso selection, path orientation, brightest-voxel click, paint mode** | [Materialized regions](#materialized-regions) only |  Available |
 | **[Spacebar behavior](#tracing-and-navigation)** | Panning and tracing toggle | Panning |
 | **Unique workflows** | [Channel unmixing](#channel-unmixing), [slab controls](#slab-view) | Orthogonal views |
 
@@ -109,14 +109,14 @@ Note that:
 - The script aborts if the channel count of the dataset differs from the one in the viewer.
 
 
-## Materialized Crops
+## Materialized Regions
 
-Some [features](#what-differs-from-in-core-tracing) need pixel data in memory. A _materialized crop_ is a region of the streamed volume that is copied into memory as a regular image, so these features become available for that region.
+Some [features](#what-differs-from-in-core-tracing) need pixel data in memory. A _materialized region_ is a 3D crop of the streamed volume that is copied into memory as a regular image, so these features become available for that region.
 
-1. Choose **Materialize Region...** in the _Options_ tab of the main SNT window (it replaces the _Create Canvas_ button of in-core tracing).
+1. Choose **Materialize Region...** in the [Options tab](./manual#-views) of the main SNT window.
 2. Choose what to crop: the image being traced (or its secondary layer) and the bounding box: around all paths, around selected paths, one of several presets (e.g., 1024×1024×512 px), or custom dimensions. The box is centered on the scene by default, or on custom coordinates, and is padded by the specified amount (10 calibrated units, by default).
 3. Check the estimated size shown at the bottom of the dialog. The region must fit in 80% of the memory still available to Fiji. Regions of 500 MB or more take a while to assemble.
-4. Click **Materialize**. The region opens as the SNT canvas (_Materialized Region_), and {{ crop }} features are enabled.
+4. Click **Materialize**. The region opens as a traditional image (_Materialized Region_), and {{ crop }} features are enabled.
 
 While a region is materialized, tracing is scoped to its bounds. Note that:
 
@@ -128,13 +128,7 @@ While a region is materialized, tracing is scoped to its bounds. Note that:
 
 ## Editing
 
-Edit Mode ({% include key keys='Shift|E' %}) works as in any SNT canvas. In addition to _Connect To..._ ({% include key key='C' %}), Stream offers **Quick Connect** ({% include key keys='Shift|C' %}), which does not require a secondary path:
-
-1. Press {% include key keys='Shift|C' %} (or choose _Quick Connect..._ from the contextual menu) with the cursor near the node of the edited path that should be connected.
-2. Move the cursor over the node to connect to: the cursor snaps to the closest node of any other path (within 150 pixels), a dotted line shows the link, and the status message reports the gap.
-3. Click, press {% include key key='Enter' %}, or press {% include key keys='Shift|C' %} again to connect. Press {% include key key='Esc' %} to cancel.
-
-The edited path becomes the child of the target. Branches of the edited path are dimmed, since connecting to them would create a loop.
+Edit Mode ({% include key keys='Shift|E' %}) works as in any SNT canvas. In addition to _Connect To..._ ({% include key key='C' %}), Stream offers [Quick Connect](./manual#-quick-connect--8679-shiftc) ({% include key keys='Shift|C' %}), which does not require the child path to be pre-selected.
 
 
 ## See Also
