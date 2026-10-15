@@ -111,4 +111,5 @@ BVV's 3D renderer requires a multi-resolution pyramid, and a single GPU texture 
 ## See Also
 
 - [SNT Stream](./snt-stream): Tracing on streamed data, differences from in-core tracing, channel unmixing, materialized crops, and editing
+- [Profiling SNT](./extending#profiling-snt): Monitoring latencies and performance to fine-tune big-data loading
 - [Key Shortcuts](./key-shortcuts): Shortcuts for both traditional and streamed canvases

@@ -757,7 +757,7 @@ A confirmation dialog shows the connection summary with an option to swap parent
 See also this [walkthrough](/plugins/snt/walkthroughs#mergingjoining-paths).
 
 ### {{ stream }} Quick Connect...  {% include key key='Shift|C' %}
-This is an expedite strategy for branching off paths, only available in [Stream mode](./stream-mode):
+This is an expedite strategy for branching off paths, only available in [Stream mode](./snt-stream):
 
 1. Press {% include key keys='Shift|C' %} (or choose _Quick Connect..._ from the contextual menu) with the cursor near the node of the edited path that should be connected
 2. Move the cursor over the node to connect to: the cursor snaps to the closest node of any other path (within 150 pixels), a dotted line shows the link, and the status message reports the gap

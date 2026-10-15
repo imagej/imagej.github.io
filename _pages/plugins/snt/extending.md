@@ -21,10 +21,42 @@ To use SNT as a software library in your own project, simply add SNT as a maven 
 <dependency>
     <groupId>org.morphonets</groupId>
     <artifactId>SNT</artifactId>
-    <version>4.2.0</version> <!-- only required if pom-scijava is not being used as parent pom -->
+    <version>5.0.21</version> <!-- only required if pom-scijava is not being used as parent pom -->
 </dependency>
 ```
 See e.g., [this forum thread](https://forum.image.sc/t/minimal-autotrace-code-for-snt-java/51654/15) for a concrete example of SNT being used as a software library.
+
+## Profiling SNT
+
+You can profile SNT's ability to parse [Big Data](./big-data) using the following flags/parameters:
+
+| Flag | Default | Effect |
+|---|---|---|
+| `snt.profile` | false | Master switch. Prints the summary table (timings, per-level `cell.load`, decoded MB, EDT stall counts) every few seconds |
+| `snt.profile.n5` | false | Also times every N5/Zarr reader call, e.g. `n5.readChunk` and peak concurrent reads. Needs `snt.profile` |
+| `snt.profile.slow` | false | Logs each slow call as it happens (highly verbose) |
+| `snt.profile.edt` | false | Starts the EDT stall monitor |
+| `snt.profile.edt.dump` | false | On a stall, dumps the EDT's stack trace. Needs `snt.profile.edt` |
+| `snt.profile.slowMs` | 30 | Threshold for "slow call" logging |
+| `snt.profile.stallMs` | 150 | How long the EDT must be unresponsive to count as a stall |
+| `snt.profile.reportSec` | 10 | Seconds between summary tables |
+
+### BVV Streaming
+
+| Flag | Default | Effect |
+|---|---|---|
+| `snt.bvv.fetchers` | 64 remote, cores-1 local | Number of tile fetcher threads. It overrides the Preferences entry |
+| `snt.bvv.maxCell` | 256 | Upper limit for the cell size, which otherwise matches the chunk size |
+| `snt.bvv.noQueueSync` | false | Turns off queue sync (for comparison runs) |
+| `snt.bvv.levelPriority` | false | Enables coarse-levels-first priorities (experimental) |
+| `snt.bvv.moveAA` | false | Keeps overlay anti-aliasing while the view is moving |
+
+You can pass each as _-Dname=value_ pairs to the JVM startup, e.g.:
+
+```bash
+cd /path/to/fiji/folder
+./fiji -Dsnt.profile=true -Dsnt.profile.n5=true -Dsnt.profile.edt=true -Dsnt.bvv.fetchers=64 -Dsnt.bvv.flatPriority=true
+```
 
 
 ## Tubular Geodesics
