@@ -58,6 +58,8 @@ cd /path/to/fiji/folder
 ./fiji -Dsnt.profile=true -Dsnt.profile.n5=true -Dsnt.profile.edt=true -Dsnt.bvv.fetchers=64 -Dsnt.bvv.flatPriority=true
 ```
 
+ See [Performance Tips for Stream Mode (BVV)](./snt-stream#performance-tips-for-stream-mode-bvv) for details on how to profile actual rendered data.
+ 
 
 ## Tubular Geodesics
 The Tubular Geodesics plugins were developed several years ago for [Simple Neurite Tracer](/plugins/snt/faq#what-is-the-difference-between-snt-and-simple-neurite-tracer) but remain functional in modern [SNT](/plugins/snt). They can be installed manually as an SNT add-on. Once installed, they allow you to trace on a filtered-version of your image in which neuronal processes (or other tubular structures) are significantly enhanced using [ITK](/software/itk) segmentation. More details on the following pages:

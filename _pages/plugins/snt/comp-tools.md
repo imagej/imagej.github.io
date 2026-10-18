@@ -21,6 +21,14 @@ Described in [Seeded Tracing](./seeds).
 | [NeuronJ](/plugins/neuronj) | Semi-automated tracing in 2D only | No longer maintained. SNT reads NDF files |
 
 
+### Python Ecosystem
+
+| Tool | Description | Comments |
+|------|-------------|----------|
+| [PySNT](https://pysnt.readthedocs.io/en/latest/)  | Python wrapper for SNT | Experimental |
+| [napari-snt](https://github.com/morphonets/napari-snt) | Simple bridge between [napari](https://napari.org/) and SNT | Experimental |
+
+
 ### Other
 
 | Tool | Description |
