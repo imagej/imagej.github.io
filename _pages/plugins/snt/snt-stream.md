@@ -131,6 +131,79 @@ While a region is materialized, tracing is scoped to its bounds. Note that:
 Edit Mode ({% include key keys='Shift|E' %}) works as in any SNT canvas. In addition to _Connect To..._ ({% include key key='C' %}), Stream offers [Quick Connect](./manual#-quick-connect--8679-shiftc) ({% include key keys='Shift|C' %}), which does not require the child path to be pre-selected.
 
 
+## Performance Tips for Stream Mode (BVV)
+
+Streaming large pyramidal datasets (N5, OME-Zarr, or even HDF5/IMS files), especially from remote storage such as S3, is limited by how
+quickly tiles can be fetched and uploaded to the GPU. The settings below can be adjusted in either the [preferences dialog](./manual#misc)
+(if a restart is required) or in BVV's [scene controls](#scene-controls) toolbar.
+
+The defaults _should_ be suitable for most cases, and the guidance below is based on benchmarks of a remote 62708x52320x25187 OME-Zarr (16 MB chunks)
+navigated along the waypoints of a large reconstruction.
+
+### Render Quality
+
+| Preset | Use it for |
+|---|---|
+| Low (256x256, 15 ms, dithered) | Remote data, slow GPUs, laptops. Fewest tile requests and the smoothest navigation |
+| **Medium (512x512, 30 ms)** | Default. Good balance for everyday navigation and tracing |
+| High (768x768, 60 ms) | Analysis and screenshots, once the view has settled |
+| Max (1024x1024, 100 ms) | High-end GPUs only. Slowest rendering |
+
+Lower presets render fewer pixels per frame and request fewer tiles: on remote data, *Low* required about 3x fewer
+chunk downloads and caused about 4x fewer GUI stalls than *Medium*. If navigation feels laggy, lowering this
+setting is the most effective change. **Applies the next time a BVV window is opened**
+
+### GPU Tile Cache (MB)
+
+Leave at **0 (automatic)** for default performance: about 1 GB per displayed channel, limited to 2 GB or 25% of the JVM's maximum memory,
+whichever is lower. Increase it only if tiles flicker or reload while panning and zooming (symptoms that the cache is too small
+and cannot hold the tiles of the current view). The value is bounded by the memory of your graphics card. **Applies the next time a BVV
+window is opened**.
+
+### Tile Fetcher Threads
+
+Leave at **0 (automatic)** for default performance: 64 threads for remote data (S3/HTTPS), and the number of CPU cores minus one for local
+files. For remote data, 64 threads performed better than 32, but more threads don't seem to help further: throughput is then
+limited by the network and the server (about 16 chunks/s for 16 MB chunks in our tests). Since every chunk in flight
+is held in memory, 64 threads and 16 MB chunks require about 1 GB of heap. On computers with little memory, lower the value (and see
+{% include bc path="Edit|Options|Memory & Threads..." %}). **Applies the next time a dataset is opened**.
+
+### Advanced Options
+
+These are not in the Preferences dialog, and are only needed for troubleshooting, benchmarking, or expert fine-tuning.
+They are set at startup as system properties, e.g., `-Dsnt.bvv.gpuBlock=32`.
+
+| Property | Default | Description |
+|---|---|---|
+| `snt.bvv.gpuBlock` | 64 | Edge length (voxels) of the tiles uploaded to the GPU: 32, 64 or 128. Larger tiles mean fewer uploads and less padding overhead (about 10% at 64 vs. 20% at 32). 64 felt more responsive than 32 in our tests, but the difference was within the run-to-run noise |
+| `snt.bvv.noQueueSync` | off | Disables dropping of stale tile requests when the view changes (enabled by default: roughly halves chunk downloads and GUI stalls) |
+| `snt.profile` | off | Prints timing statistics of tile loading, rendering and GUI responsiveness (additional flags: `snt.profile.n5`, `snt.profile.edt`) |
+
+See [Performance Profiling](./extending#profiling-snt) for details.
+
+### Rendering Accuracy
+
+The *maximum ray-marching step* (Stream mode toolbar) trades rendering fidelity for speed: 1 voxel (default) samples
+every voxel along each ray, larger values are faster but can miss thin structures. It does not affect the placement of
+nodes.
+
+### Measuring Performance
+
+For reproducible comparisons, scripts can play a walkthrough along paths at constant speed and report how well the viewer kept up:
+
+```groovy
+// Groovy: 100 um/s along the selected paths, 500 um wide field of view
+
+#@ SNTService snt
+def bvv = snt.getUI().getActiveBigViewer()
+def player = bvv.playPaths(snt.getSelectedPaths(), 100, 500)
+player.onFinished { println player.getSummary() }
+```
+
+Compare the *elapsed* and *ideal* times (and the number of long gaps) between settings, and repeat each measurement
+several times: results on remote data vary with network conditions.
+
+
 ## See Also
 
 - [Big Data](./big-data): Loading data, supported file formats, BVV vs BDV, Slab View, and current limitations
