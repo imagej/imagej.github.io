@@ -7,7 +7,7 @@ categories: [Uncategorized]
 release-date: "version 2 (September 20, 2015)"
 initial-release-date: "September 28, 2010"
 dev-status: "stable, active"
-update-site: "https://sites.imagej.net/Daerr/"
+update-site-unlisted: "https://sites.imagej.net/Daerr/"
 team-founder: 'Adrian Daerr | http://www.msc.univ-paris-diderot.fr/~daerr/'
 team-maintainer: 'Adrian Daerr | http://www.msc.univ-paris-diderot.fr/~daerr/'
 ---
