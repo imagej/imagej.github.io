@@ -147,6 +147,8 @@ A table with **one row per experiment** and values aggregated over its trajector
 *   Yellow cells are not computed yet; hover over one to see where to compute it. Empty cells are values not defined for that row (for example FMI in 2D).
 *   **Units** sets the units of *D*, mean speed and centre of mass. **Save table…** saves a `csv` with one row per experiment and component (`2D`, `X`, `Y`); values not defined or not computed are left empty.
 
+{% include img align="center" name="Summary tab" src="/media/plugins/andi-j/summary.png" caption="**Summary** tab with two experiments expanded to their X and Y rows, after **Compute** and the ML model." %}
+
 In the formulas, r(t) = (x(t), y(t)) is a trajectory sampled every Δt (one frame), and ⟨…⟩ is the average over all times and trajectories of the experiment.
 
 *   **N**, **Length** — number of trajectories, and their length in frames as median (min–max).
