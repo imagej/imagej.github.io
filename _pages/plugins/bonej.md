@@ -20,13 +20,14 @@ If you use BoneJ in your work please [cite it](#citation).
 
 ![Install BoneJ](/media/plugins/install-bonej.png)
 
-1.  [Download](/downloads) the latest version of Fiji for your operating system. Ensure Java is 11 or later.
+1.  [Download](/downloads) the latest version of Fiji for your operating system.
 2.  Launch Fiji
 3.  Select in the menu {% include bc path="Help | Update..." %}
 4.  Click *Manage update sites*
 5.  Check *BoneJ*
-6.  Click *Close*
-7.  Click *Apply changes*
+6.  Check *Fiji-Latest*, selecting the Europe mirror if that's closer for you.
+7.  Click *Close*
+8.  Click *Apply changes*
 
 After the downloads have finished, close and restart Fiji.
 
