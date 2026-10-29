@@ -41,7 +41,7 @@ AnDi-J is organised around two menu commands under {% include bc path="Plugins|A
 
 | Command | Purpose |
 |---|---|
-| [**Trajectory Analysis**](/plugins/andi-j/trajectory-analysis) | Per-trajectory observables: mean squared displacement (MSD) analysis, diffusion coefficient *D*, anomalous exponent *α*, the *D*–*α* plane, diffusion-model classification, turning angles and PSD. |
+| [**Trajectory Analysis**](/plugins/andi-j/trajectory-analysis) | Per-trajectory observables: mean squared displacement (MSD) analysis, diffusion coefficient *D*, anomalous exponent *α*, the *D*–*α* plane, diffusion-model classification, turning angles, PSD and a summary table per experiment. |
 | [**Trajectory Segmentation**](/plugins/andi-j/trajectory-segmentation) | Per-frame predictions of *α* and *D* along each trajectory, change-point detection that splits it into homogeneous segments, and the diffusive state (immobile, confined, free diffusion, or directed) of each segment. |
 
 Both commands share the same [Data Manager](/plugins/andi-j/input-data#data-manager) for loading and grouping data, and both can analyse several experiments (conditions) at once, each with its own colour, overlaid for comparison.
@@ -51,7 +51,7 @@ Both commands share the same [Data Manager](/plugins/andi-j/input-data#data-mana
 | Page | Contents |
 |---|---|
 | [Input data](/plugins/andi-j/input-data) | Expected `.csv` layout, the [Data Manager](/plugins/andi-j/input-data#data-manager) ([loading trajectories](/plugins/andi-j/input-data#loading-trajectories), [units](/plugins/andi-j/input-data#units)), and [selecting the segmentation model](/plugins/andi-j/input-data#selecting-the-segmentation-model). |
-| [Trajectory Analysis](/plugins/andi-j/trajectory-analysis) | [tMSD](/plugins/andi-j/trajectory-analysis#tmsd-visualization), [diffusion coefficient](/plugins/andi-j/trajectory-analysis#diffusion-coefficient), [anomalous exponent](/plugins/andi-j/trajectory-analysis#anomalous-exponent), [*D* vs *α*](/plugins/andi-j/trajectory-analysis#d-vs-alpha), [diffusion model](/plugins/andi-j/trajectory-analysis#diffusion-model), [turning angles](/plugins/andi-j/trajectory-analysis#turning-angles) and [PSD](/plugins/andi-j/trajectory-analysis#psd). |
+| [Trajectory Analysis](/plugins/andi-j/trajectory-analysis) | [tMSD](/plugins/andi-j/trajectory-analysis#tmsd-visualization), [diffusion coefficient](/plugins/andi-j/trajectory-analysis#diffusion-coefficient), [anomalous exponent](/plugins/andi-j/trajectory-analysis#anomalous-exponent), [*D* vs *α*](/plugins/andi-j/trajectory-analysis#d-vs-alpha), [diffusion model](/plugins/andi-j/trajectory-analysis#diffusion-model), [turning angles](/plugins/andi-j/trajectory-analysis#turning-angles), [PSD](/plugins/andi-j/trajectory-analysis#psd) and [summary](/plugins/andi-j/trajectory-analysis#summary). |
 | [Trajectory Segmentation](/plugins/andi-j/trajectory-segmentation) | [Visualization](/plugins/andi-j/trajectory-segmentation#visualization), [*D* vs *α* density](/plugins/andi-j/trajectory-segmentation#d-vs-alpha), [segment stats](/plugins/andi-j/trajectory-segmentation#segment-stats) and [diffusive state](/plugins/andi-j/trajectory-segmentation#diffusive-state). |
 | [ML models](/plugins/andi-j/ml-models) | The bundled models, the ONNX contract, how to plug in your own models, and how to [contribute them](/plugins/andi-j/ml-models#contributing-a-model). |
 
