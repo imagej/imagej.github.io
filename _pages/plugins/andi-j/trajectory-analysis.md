@@ -2,7 +2,7 @@
 title: AnDi-J › Trajectory Analysis
 name: AnDi-J
 icon: /media/plugins/andi-j/logo.png
-description: Per-trajectory anomalous-diffusion observables in AnDi-J - tMSD, diffusion coefficient, anomalous exponent, D vs α, diffusion model, turning angles and PSD.
+description: Per-trajectory anomalous-diffusion observables in AnDi-J - tMSD, diffusion coefficient, anomalous exponent, D vs α, diffusion model, turning angles, PSD and summary table.
 nav-title: Trajectory Analysis
 nav-links:
 - title: Overview
@@ -19,9 +19,9 @@ nav-links:
 
 This tool allows to perform single-trajectory analysis of the input experiments. Every tab has a side **Experiments** panel where each experiment can be toggled on/off and, where relevant, restricted to the **2D**, **X**, or **Y** component.
 
-{% include notice icon="info" content="**Saving data.** Every tab has a **Save plot** button that exports its plot as a vector image (`svg`), which you can edit in tools such as Inkscape or Illustrator. The **Diffusion coefficient**, **Anomalous exponent**, **Diffusion Model**, **Turning Angles** and **PSD** tabs also save their values as a `csv` file for further analysis (**Save D…**, **Save α…**, **Save models…**, **Save angles…** and **Save PSD…**). Their first columns are `experiment` and, for per-trajectory values, `track_id`; commas in experiment names are written as semicolons. In **D vs α**, tagged populations can be saved as trajectory files (see [Population tagging](#d-vs-alpha))." %}
+{% include notice icon="info" content="**Saving data.** Every tab has a **Save plot** button that exports its plot as a vector image (`svg`), which you can edit in tools such as Inkscape or Illustrator. The **Diffusion coefficient**, **Anomalous exponent**, **Diffusion Model**, **Turning Angles**, **PSD** and **Summary** tabs also save their values as a `csv` file for further analysis (**Save D…**, **Save α…**, **Save models…**, **Save angles…**, **Save PSD…** and **Save table…**). Their first columns are `experiment` and, for per-trajectory values, `track_id`; commas in experiment names are written as semicolons. In **D vs α**, tagged populations can be saved as trajectory files (see [Population tagging](#d-vs-alpha))." %}
 
-{% include notice icon="info" content="**Units.** The **Units** button of the tMSD Visualization, Diffusion coefficient, D vs α and PSD tabs opens a window to choose the time (frames, ns, μs, ms, s) and space (nm, μm, mm, m) units of the plots and `csv` exports, whose column headers name them. Physical units need the calibration of the [Data Manager](/plugins/andi-j/input-data#units); without it, the window shows px and frames and cannot change them." %}
+{% include notice icon="info" content="**Units.** The **Units** button of the tMSD Visualization, Diffusion coefficient, D vs α, PSD and Summary tabs opens a window to choose the time (frames, ns, μs, ms, s) and space (nm, μm, mm, m) units of the plots and `csv` exports, whose column headers name them. Physical units need the calibration of the [Data Manager](/plugins/andi-j/input-data#units); without it, the window shows px and frames and cannot change them." %}
 
 ## tMSD Visualization
 
@@ -136,3 +136,33 @@ To learn about the PSD for anomalous diffusion analysis, we recommend reading th
 *   Sposini, V., Krapf, D., Marinari, E., Sunyer, R., Ritort, F., Taheri, F., … & Oshanin, G. (2022). Towards a robust criterion of anomalous diffusion. [Communications Physics, 5(1), 305](https://www.nature.com/articles/s42005-022-01079-8).
 
 {% include img align="center" name="PSD tab" src="/media/plugins/andi-j/psd-tab.png" caption="**PSD** tab with a drawn slope line." %}
+
+## Summary
+
+A table with **one row per experiment** and values aggregated over its trajectories. Click the ▸ next to an experiment's name to show its **X** and **Y** rows. Click a column header marked ⓘ for a description of the value; the descriptions are listed below.
+
+*   Values from the other tabs (*D*, α, eMSD) appear when the tab opens and are updated each time it is shown, so they follow the parameters chosen in those tabs.
+*   **Compute** fills the trajectory statistics of every experiment: α₂, VACF, mean speed, step anisotropy, FMI, centre of mass and directness.
+*   **α (ML)** and **Diffusion model** come from the ML model of the [Anomalous exponent](#anomalous-exponent) or [Diffusion Model](#diffusion-model) tab. Run it there to fill or update these values; **Compute** does not run it.
+*   Yellow cells are not computed yet; hover over one to see where to compute it. Empty cells are values not defined for that row (for example FMI in 2D).
+*   **Units** sets the units of *D*, mean speed and centre of mass. **Save table…** saves a `csv` with one row per experiment and component (`2D`, `X`, `Y`); values not defined or not computed are left empty.
+
+In the formulas, r(t) = (x(t), y(t)) is a trajectory sampled every Δt (one frame), and ⟨…⟩ is the average over all times and trajectories of the experiment.
+
+*   **N**, **Length** — number of trajectories, and their length in frames as median (min–max).
+*   **D** — mean over the trajectories of *D* from the [Diffusion coefficient](#diffusion-coefficient) tab.
+*   **Dₓ / Dᵧ** — ratio of the diffusion coefficients along x and y, computed from the X and Y values of **D**. A value of 1 means isotropic diffusion; values far from 1 mean faster motion along one axis.
+*   **α (tMSD)** — mean of the anomalous exponents of the trajectories, each from a log–log linear fit of the trajectory's tMSD with the time lags of the [Anomalous exponent](#anomalous-exponent) tab. α < 1: subdiffusion · α = 1: normal diffusion · α > 1: superdiffusion.
+*   **α (eMSD)** — anomalous exponent from a log–log linear fit of the ensemble MSD, eMSD(Δ) ∝ Δ<sup>α</sup>, over the lags of the [tMSD Visualization](#tmsd-visualization) tab. The eMSD averages the squared displacement from the first frame of each trajectory. If α (eMSD) ≠ α (tMSD), the time and ensemble averages differ (see **Ergodicity gap**). *Reference:* R. Metzler, J.-H. Jeon, A. G. Cherstvy, E. Barkai, [*Phys. Chem. Chem. Phys.* **16**, 24128 (2014)](https://doi.org/10.1039/C4CP03465A).
+*   **α (ML)** — mean of the α predicted by the ML model for each trajectory.
+*   **Diffusion model** — the most frequent diffusion model among the trajectories, with the percentage of trajectories assigned to it.
+*   **Ergodicity gap** — ratio of the time-averaged and ensemble-averaged MSDs, averaged over the lags of the [tMSD Visualization](#tmsd-visualization) tab: G = mean over Δ of ⟨tMSD(Δ)⟩ / eMSD(Δ). G ≈ 1: time and ensemble averages agree, as for an ergodic process such as Brownian motion or fractional Brownian motion. G ≠ 1: weak ergodicity breaking, as for continuous-time random walks (CTRW), annealed transient time motion (ATTM) or ageing systems. *References:* Y. He, S. Burov, R. Metzler, E. Barkai, [*Phys. Rev. Lett.* **101**, 058101 (2008)](https://doi.org/10.1103/PhysRevLett.101.058101); R. Metzler *et al.* (2014), above.
+*   **α₂ (non-Gaussian)** — measures whether the displacements over one frame are Gaussian: α₂ = ⟨\|r\|⁴⟩ / ((1 + 2/d) ⟨\|r\|²⟩²) − 1, where d is the number of dimensions: 2 for 2D, 1 for X or Y. In 1D this is α₂ = ⟨Δx⁴⟩ / (3⟨Δx²⟩²) − 1. α₂ = 0 for Gaussian displacements. α₂ > 0 means heavier tails than a Gaussian. This typically comes from heterogeneity: particles, or parts of trajectories, with different diffusion coefficients ("Fickian yet non-Gaussian" diffusion). *Reference:* B. Wang, J. Kuo, S. C. Bae, S. Granick, [*Nat. Mater.* **11**, 481 (2012)](https://doi.org/10.1038/nmat3308).
+*   **VACF** — correlation between consecutive steps, normalised by the step variance: C = ⟨v(t) · v(t+Δt)⟩ / ⟨\|v(t)\|²⟩, with v(t) = r(t+Δt) − r(t). C ≈ 0: uncorrelated steps (Brownian motion, continuous-time random walk). C < 0: anti-persistent steps (fractional Brownian motion with α < 1 gives C = 2<sup>α−1</sup> − 1, confinement). C > 0: persistent steps (directed or superdiffusive motion). Static localisation noise pushes C towards −0.5. A strongly negative C can therefore also mean noisy data. *Reference:* S. Burov, J.-H. Jeon, R. Metzler, E. Barkai, [*Phys. Chem. Chem. Phys.* **13**, 1800 (2011)](https://doi.org/10.1039/C0CP01879A).
+*   **Mean speed** — accumulated distance of each trajectory divided by its duration, averaged over the trajectories: v = ⟨ Σ \|r(t+Δt) − r(t)\| / (T Δt) ⟩. For X and Y, \|Δx\| or \|Δy\| replaces the step length. The value depends on the frame rate and on localisation noise, which adds apparent motion, so compare it only between experiments recorded the same way.
+*   **Step anisotropy** — orientation order of the steps. With φ = atan2(Δy, Δx) the direction of each one-frame step: S = ⟨cos 2φ⟩. S = 1: all steps along x. S = −1: all steps along y. S = 0: no preferred axis. Opposite steps (φ and φ + 180°) count the same, so S measures alignment along an axis, not drift in one direction (see **FMI** and **Centre of mass**).
+*   **FMI** (forward migration index) — net displacement along one axis relative to the path length, averaged over the trajectories: FMI<sub>x</sub> = ⟨ (x<sub>end</sub> − x<sub>start</sub>) / d<sub>acc</sub> ⟩, with d<sub>acc</sub> = Σ \|r(t+Δt) − r(t)\|. FMI<sub>y</sub> is the same with y. It ranges from −1 to 1. Values near 0 mean no drift along that axis. In a chemotaxis assay with the gradient along one axis, FMI along the gradient measures how efficiently the cells follow it.
+*   **Centre of mass** — mean end point of the trajectories, each shifted to start at the origin: M<sub>end</sub> = ⟨ r<sub>end</sub> − r<sub>start</sub> ⟩. M<sub>end</sub> close to (0, 0) means no net drift. Its x and y components give the direction of the drift; the 2D value is its distance from the origin.
+*   **Directness** — straight-line distance between start and end divided by the path length, averaged over the trajectories: Directness = ⟨ \|r<sub>end</sub> − r<sub>start</sub>\| / d<sub>acc</sub> ⟩. It ranges from 0 to 1, where 1 is a straight line. It decreases with trajectory length: for Brownian motion, Directness ≈ 1/√T for trajectories of T frames, since the net displacement grows as √T and the path length as T. Localisation noise also lowers it. Compare it only between experiments with similar lengths and frame rates, for example by setting the same **Max. length** for all files in the [Data Manager](/plugins/andi-j/input-data#loading-trajectories).
+
+*Reference* for mean speed, FMI, centre of mass and directness: P. Zengel *et al.*, [*BMC Cell Biol.* **12**, 21 (2011)](https://doi.org/10.1186/1471-2121-12-21).
