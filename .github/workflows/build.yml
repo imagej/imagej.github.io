@@ -10,18 +10,18 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7
     # caches and runs bundle automatically - see
     # https://github.com/ruby/setup-ruby#caching-bundle-install-automatically
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '4.0'
         bundler-cache: true
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v7
       with:
-        node-version: '20'
+        node-version: '24'
     - name: Restore accessibility cache
-      uses: actions/cache@v4
+      uses: actions/cache@v6
       with:
         path: .accessibility-cache
         key: accessibility-${{ github.sha }}-${{ github.run_attempt }}
