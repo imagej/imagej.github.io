@@ -207,4 +207,5 @@ several times: results on remote data vary with network conditions.
 ## See Also
 
 - [Big Data](./big-data): Loading data, supported file formats, BVV vs BDV, Slab View, and current limitations
+- [SNT Links](walkthroughs#creating-snt-links): Shareable links that open (and fly to a location in) streamed datasets
 - [Key Shortcuts](./key-shortcuts): Shortcuts for both traditional and streamed canvases

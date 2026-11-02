@@ -98,7 +98,7 @@ The ratio between $$area^3/volume^2$$ of the 3D [convex hull](#convex-hull), nor
 Defined as $$\sqrt{1 - \left(\frac{b}{a}\right)^2}$$, where $$a$$ and $$b$$ are the semi-major and semi-minor axes of the 2D [convex hull](#convex-hull). Not applicable to 3D Convex hulls. An eccentricity of 0 corresponds to a perfect circle. An eccentricity close to 1 indicates a highly elongated ellipse. Unitless
 
 ###### Convex hull: Elongation
-The [caliper (Feret) diameter](https://en.wikipedia.org/wiki/Feret_diameter) of the [convex hull](#convex-hull)
+How stretched the [convex hull](#convex-hull) is, defined as $$1 - \frac{b}{a}$$. In 2D, $$a$$ and $$b$$ are the longer and shorter sides of the minimum-area bounding rectangle of the polygon. In 3D, they are the longest and second-longest semi-axes of the ellipsoid with the same second moments (inertia tensor) as the polyhedron. Range of values: 0 (e.g., a circle or a sphere) to 1 (increasingly rod-like). Unitless
 
 ###### Convex hull: Roundness
 The extent to which the [convex hull](#convex-hull) approaches a circle (i.e., circularity in 2D) or a sphere (i.e., sphericity in 3D). Range of values: 0--1 (unitless)

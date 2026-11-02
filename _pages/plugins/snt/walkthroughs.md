@@ -474,3 +474,43 @@ Multispectral Refinement and standard [Fitting](/plugins/snt/manual#refinefit) s
 # Detecting Crossovers
 
 Described in [Curation](curation#detecting-crossovers).
+
+
+# Creating snt:// links
+
+SNT links are URLs that open SNT with specific data, optionally flying to a location of interest. They can be shared in manuscripts, bug reports, tutorials or forum posts: Clicking on one opens the data in the recipient's Fiji.
+
+{% include notice icon="info" content="Links require a Fiji installation with an up-to-date _Neuroanatomy_ update site. If a link is opened by an installation that does not support it, an error is displayed. If you have several Fiji installations, the operating system decides which one receives the link." %}
+
+## Generating Links
+
+In SNT Stream and in standalone Big Data/Big Volume viewers, right-click a bookmark in the [Bookmark Manager](./manual#bookmarks-tab) and choose _Copy Link to Location_. For more granular control over links use the _Create SNT Link_ [template script](./scripting#bundled-templates).
+
+{% include notice icon="note" content=" `snt://` works well on Windows and Linux but not on macOS. `fiji://snt/` links work on all platforms." %}
+
+## Examples
+
+[fiji://snt/demo?id=4](fiji://snt/demo?id=4)
+
+: Loads _Drosophila OP Neuron (Complete 3D Dataset)_: Demo 4 of the demo prompt, including any demo-specific setup
+
+[fiji://snt/open?image=demo:OP1&tracings=demo:OP1](fiji://snt/open?image=demo:OP1&tracings=demo:OP1)
+
+: Loads the same demo but using image and reconstruction labels
+
+[fiji://snt/open?image=https%3A%2F%2Fome-zarr-scivis.s3.us-east-1.amazonaws.com%2Fv0.5%2F96x2%2Fmarmoset_neurons.ome.zarr&viewer=bvv&view=82.880,-238.968,-65.067,1](fiji://snt/open?image=https%3A%2F%2Fome-zarr-scivis.s3.us-east-1.amazonaws.com%2Fv0.5%2F96x2%2Fmarmoset_neurons.ome.zarr&viewer=bvv&view=82.880,-238.968,-65.067,1)
+
+: Opens a remote OME-Zarr in [SNT Stream](./snt-stream) (BVV), and flies to the specified location (`x,y,z` in world coordinates, followed by an optional timepoint. 
+
+[fiji://snt/fly?view=82.880,-238.968,-65.067](fiji://snt/fly?view=82.880,-238.968,-65.067)
+
+: Zooms to the specified location on the dataset already open 
+
+
+## Format
+
+```
+fiji://snt/<operation>?<parameter>=<value>&<parameter>=<value>
+```
+
+Values must be percent-encoded (e.g., `https%3A%2F%2F...` for a URL). Images and reconstructions can be remote URLs, or local paths/`file:` URIs. Links to local files only work on the machine that has them.
