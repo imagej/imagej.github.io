@@ -77,8 +77,8 @@ So you want to be an effective software developer? Use tools!
       <td>Not free (Claude Pro is $20/month), but Claude is awesome</td>
     </tr>
     <tr>
-      <td><a href="https://geminicli.com/">Gemini CLI</a></td>
-      <td>A strong offering from Google</td>
+      <td><a href="https://antigravity.google/product/antigravity-cli/">Antigravity CLI</a></td>
+      <td>Run Gemini models from Google</td>
     </tr>
     <tr>
       <td><a href="https://ollama.com/">Ollama</a></td>
