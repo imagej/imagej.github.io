@@ -1,6 +1,6 @@
 ---
-title: Mark Hiner
-name: Mark Hiner
+title: Mark Hiner-Weir
+name: Mark Hiner-Weir
 honorific: Champion of ImageJ
 gravatar: 02dba515add5d5c4991f6b93520d502c
 affiliation:
@@ -10,7 +10,7 @@ forum: hinerm
 github: hinerm
 stackoverflow: 1027800/hinerm
 openhub: hinerm
-linkedin: pub/mark-hiner/63/984/8b2
+linkedin: in/mark-hiner
 orcid: 0000-0001-9404-7579
 ---
 
@@ -18,11 +18,11 @@ Most recently, Mark has been an ImageJ2 team member since 2020. His areas of int
 
 ## Current priorities
 
-These areas came from a recent [Exchange of Experiences](https://forum.image.sc/t/bina-exchange-of-experiences-reflections-and-outcomes-from-aug-25-llm-image-analysis-workshop/116372) through [BINA](https://www.bioimagingnorthamerica.org). As of Oct 2025 they are still experimental, or conceptual. Mark will be focusing on materializing them in the coming year.
+In addition to general Fiji maintenance and support, Mark's primary focus is currently:
+-   {% include github org='fiji' repo='fiji-llm' label='Fiji LLM' %}: first-party support for Large Language Model (LLM) integration in Fiji. This includes an extensible framework for providing agentic tools, model agnostic in-app AI chat, and access via MCP.
 
--   {% include github org='imagej' repo='pyimagej' label='PyImageJ' %} as a medium for LLM interaction with ImageJ/Fiji
--   {% include github org='fiji' repo='fiji-learn' label='Fiji Learn' %}: a "workshop in a box" and extensible framework for training new users in the Fiji ecosystem and 
--   {% include github org='fiji' repo='fiji-llm' label='Fiji LLM' %}: first-party support for 
+The "next thing" he wants to work on is:
+-   {% include github org='fiji' repo='fiji-learn' label='Fiji Learn' %}: a "workshop in a box" and extensible framework for training new users in the Fiji ecosystem.
 
 ## History at LOCI
 
