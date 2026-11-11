@@ -292,3 +292,11 @@ See the [MacOS](/platforms/macos) page.
 ### App Nap
 
 See the [MacOS](/platforms/macos) page.
+
+# Windows issues
+
+## Why does Fiji take a long time to load?
+
+On Windows, the built-in antivirus scanner (Microsoft Defender) may scan every JAR file in the [Fiji](/software/fiji) installation during startup, which can cause Fiji to take a long time to load.
+
+As a workaround, you can [add an exclusion to Windows Security](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) for your `Fiji` folder via {% include bc path='Windows Security | Virus & threat protection | Manage settings | Exclusions'%}.
