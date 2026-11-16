@@ -1,9 +1,11 @@
 ---
-title: Cell Segmentation
+title: MechanoQuant
 categories: [Segmentation]
 ---
 
-Cell Segmentation is a Fiji/ImageJ plugin for segmenting cells in RICM images.
+MechanoQuant is a Fiji/ImageJ plugin designed primarily for segmenting cells in RICM images and measuring accepted ROIs on the segmentation image itself or on paired fluorescence images/channels.
+
+Current release: **0.6.0**.
 
 The plugin can run fully automatically, while also providing optional interactive review steps for adjusting thresholds and detected ROIs when manual refinement is needed.
 
@@ -16,14 +18,12 @@ It supports:
 - measurement of accepted ROIs on the source image or a paired fluorescence image
 - export of masks, label images, ROI sets, measurements, and segmentation parameters
 
-The source code is available on [GitHub](https://github.com/will-f-dean-36/fiji-cell-segmentation).
-
 ## Installation
 
-Cell Segmentation is available through the ImageJ update site:
+MechanoQuant is available through the CPMM update site:
 
-- **Name:** `Cell Segmentation`
-- **URL:** `https://sites.imagej.net/CellSegmentation/`
+- **Name:** `CPMM`
+- **URL:** `https://sites.imagej.net/CPMM/`
 
 To install it:
 
@@ -31,27 +31,25 @@ To install it:
 2. Choose {% include bc path='Help | Update...' %}.
 3. Click **Manage update sites**.
 4. Click **Add update site**.
-5. Enter `Cell Segmentation` as the name and `https://sites.imagej.net/CellSegmentation/` as the URL.
+5. Enter `CPMM` as the name and `https://sites.imagej.net/CPMM/` as the URL.
 6. Enable the new update site.
 7. Close the update-site window and click **Apply changes**.
 8. Restart Fiji.
 
-After installation, the plugin is available under:
-
-{% include bc path='Plugins | Cell Segmentation' %}
-
-with two commands:
-
-- **Run on current image/stack...**
-- **Run on multiple images...**
-
 ## Usage
+
+Open MechanoQuant using:
+
+{% include bc path='Plugins | CPMM | MechanoQuant...' %}
+
+The launcher offers two choices:
+
+- **Current image** starts the current-image/current-stack workflow.
+- **Select file(s)** starts the file/batch workflow.
 
 ### Current image or stack
 
-Choose:
-
-{% include bc path='Plugins | Cell Segmentation | Run on current image/stack...' %}
+Open the image or stack in Fiji, then choose **Current image** in the MechanoQuant launcher.
 
 The active image can be either a single 2D image or a stack. When processing a stack, each slice is treated as an independent segmentation target.
 
@@ -59,9 +57,7 @@ The plugin provides settings for thresholding, object polarity, edge detection, 
 
 ### Batch processing
 
-Choose:
-
-{% include bc path='Plugins | Cell Segmentation | Run on multiple images...' %}
+Choose **Select file(s)** in the MechanoQuant launcher.
 
 Batch mode supports several data organizations, including:
 
@@ -97,7 +93,7 @@ Both review steps can be disabled for fully automatic processing.
 
 ## Outputs
 
-Depending on the selected options, Cell Segmentation can produce:
+Depending on the selected options, MechanoQuant can produce:
 
 - binary mask images
 - label images
@@ -110,4 +106,4 @@ Measurement options use standard ImageJ measurements such as area, mean intensit
 
 ## Source code
 
-Development takes place on [GitHub](https://github.com/will-f-dean-36/fiji-cell-segmentation).
+Development takes place on [GitHub](https://github.com/will-f-dean-36/mechano-quant).
