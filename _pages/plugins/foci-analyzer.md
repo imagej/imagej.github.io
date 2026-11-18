@@ -15,6 +15,8 @@ team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
 {%- assign dev-status        = page.dev-status        -%}
 {%- unless team-maintainers  -%} {%- assign team-maintainers  = page.team-maintainer  -%} {%- endunless -%}
 
+{% include notice icon="info" content='**Foci Analyzer 2 (Python) is available.** The successor of this macro is a program of its own, with a window in the browser, a live preview of the analysis, neural networks for nuclei and foci, and installers for Windows, macOS and Linux: [BioImaging-NKI/Foci-analyzer](https://github.com/BioImaging-NKI/Foci-analyzer), with a [manual](https://bioimaging-nki.github.io/Foci-analyzer/). It is in beta; the Fiji macro on this page stays supported.' %}
+
 Foci Analyzer is a comprehensive Fiji macro to detect, analyze and visualize nuclear/cellular foci in 2D/3D fluorescence microscopy images of cells and tissue.
 
 Foci are efficiently and reliably detected in images from different imaging modalities (confocal, widefield), with a wide range of resolutions.
