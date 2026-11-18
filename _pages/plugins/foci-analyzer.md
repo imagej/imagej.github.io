@@ -2,7 +2,7 @@
 title: Foci Analyzer
 categories: [Analysis]
 icon: /media/icons/Foci-Analyzer-icon.png
-source-url: "https://github.com/BioImaging-NKI/Foci-analyzer"
+source-url: "https://github.com/BioImaging-NKI/Foci-analyzer-Fiji"
 update-site: "foci-analyzer"
 release-version: v1.92
 support-status: Active
