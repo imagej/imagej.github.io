@@ -39,7 +39,28 @@ ImageJ's support for videos. See the [Video](/formats/video) page for details.
 
 ## Opening and importing
 
-{% include warning/stub %}
+Use {% include bc path="File|Open..." %} for formats supported by your
+installation. Additional formats may require a plugin and its own import
+command. See [Importing Image Files](/plugins/importing-image-files) for the
+available approaches, including Bio-Formats and image sequences.
+
+### Camera RAW files
+
+A camera RAW file can contain compressed sensor samples, capture metadata and
+an embedded JPEG preview. Choose an importer for the camera format and the
+output you need: a decoded sensor mosaic for examining samples, a developed
+color image, or the camera's rendered preview.
+
+The generic {% include bc path="File|Import|Raw..." %} command reads pixel arrays
+using dimensions, data type and offsets supplied by the user. It does not
+decode a compressed camera format such as Canon CR3.
+
+For supported Canon CR3 RAW and C-RAW files, the
+[Canon CR3 Sensor Importer](/plugins/canon-cr3-sensor-importer) provides a Fiji
+command for importing Bayer samples in native sensor units into a 16-bit image.
+Its guide includes installation, a sample image, metadata and a separate script
+for opening an embedded JPEG or developing RGB. Check the guide's tested camera
+configurations and Java requirements before installing.
 
 ## Saving and exporting
 
@@ -118,3 +139,4 @@ for an up-to-date list of formats which can be exported.
 - The ImageJ Documentation Wiki page
   [FAQ: Which file formats are supported by ImageJ](http://imagejdocu.list.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej)
   (though it is outdated).
+
