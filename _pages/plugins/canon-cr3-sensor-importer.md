@@ -1,6 +1,6 @@
 ---
 title: Canon CR3 Sensor Importer
-description: Import Canon CR3 Bayer samples into Fiji, inspect sensor metadata, or open a color image.
+description: Open Canon CR3 files in Fiji as native Bayer samples, a 16-bit RGB composite or the camera's JPEG preview.
 categories: [Import-Export]
 name: Canon CR3 Sensor Importer
 source-url: https://github.com/carstenartur/Photographer/tree/main/cr3-imagej
@@ -12,14 +12,11 @@ team-maintainers: 'Carsten Hammer | https://github.com/carstenartur'
 update-site: Canon CR3 Sensor Importer
 ---
 
-Canon CR3 Sensor Importer opens supported Canon RAW and C-RAW files as a Bayer
-sensor image in [Fiji](/software/fiji). Each pixel contains one decoded sample in
-native sensor units, stored as an unsigned 16-bit value. This gives access to the
-sensor mosaic before cropping, black-level correction or demosaicing.
-
+Canon CR3 Sensor Importer opens supported Canon RAW and C-RAW files in
+[Fiji](/software/fiji). Version 0.1.8 provides two commands under **File › Import**.
+Choose **CR3 Sensor Data...** to measure the original Bayer samples or
+**CR3 Color Image...** to open a developed image with three 16-bit color channels.
 The plugin is part of [Photographer](https://github.com/carstenartur/Photographer).
-Its update site also supplies the Java ImageIO reader used by the
-[color-image example](#opening-a-color-image) below.
 
 ## Choosing an output
 
@@ -28,8 +25,8 @@ Its update site also supplies the Java ImageIO reader used by the
 | Output | How to open it | Pixel data |
 | --- | --- | --- |
 | **Sensor mosaic** | **File › Import › CR3 Sensor Data...** | One Bayer sample per pixel in an unsigned 16-bit image, including the masked sensor margins. Useful for inspecting the decoded sensor values. |
-| **Camera JPEG** | Run the color example with **Develop RAW to RGB** cleared. | The camera's embedded color preview, when present. This does not require decoding the RAW sensor stream. |
-| **Developed RGB** | Run the color example with **Develop RAW to RGB** selected. | A demosaiced image from RAW or C-RAW: 8-bit sRGB per channel, cropped to the active area and oriented using EXIF metadata. Color reproduction remains experimental. |
+| **Developed RGB** | **File › Import › CR3 Color Image...** | An sRGB composite with three unsigned 16-bit channels, cropped to the active area and oriented using EXIF metadata. Color rendering is experimental. |
+| **Camera JPEG** | Run the [Groovy example](#opening-the-camera-jpeg) with **Develop RAW to 16-bit RGB** cleared. | The camera's embedded color preview, when present. |
 
 </div>
 
@@ -117,22 +114,47 @@ To import a file from an ImageJ macro:
 run("CR3 Sensor Data...", "path=[/data/capture.cr3]");
 ```
 
-Replace the path with your CR3 file. This command opens the sensor mosaic; use
-the separate script below for a color image.
+Replace the path with your CR3 file. This command opens the sensor mosaic.
 
 ## Opening a color image
 
-After installing the update site:
+Choose **File › Import › CR3 Color Image...** and select a supported RAW or
+C-RAW file. Fiji opens the developed active area as an EXIF-oriented composite
+with red, green and blue planes. Each plane contains unsigned 16-bit sRGB
+values and starts with a display range of 0–65535.
 
-1. Download [open-cr3-color.groovy](https://carstenartur.github.io/Photographer/fiji/cr3/open-cr3-color.groovy).
-2. Open it in Fiji's [Script Editor](/scripting/script-editor) with **Groovy** selected.
-3. Run it and choose a CR3 file. Leave **Develop RAW to RGB** cleared for the
-   embedded camera JPEG, or select it to develop the RAW data.
+An ImageJ macro can open the composite directly:
 
-The [script source and explanation](https://github.com/carstenartur/Photographer/blob/main/docs/cr3/fiji-update-site.md#open-a-color-image)
-are also available in the project documentation. The two choices use different
-processing pipelines, so the developed RGB image may differ from the camera JPEG.
-The camera JPEG can include the camera's picture style and other corrections.
+```ijm
+run("CR3 Color Image...", "path=[/data/capture.cr3]");
+```
+
+### Opening the camera JPEG
+
+To open the camera's embedded preview, download
+[open-cr3-color.groovy](https://carstenartur.github.io/Photographer/fiji/cr3/open-cr3-color.groovy).
+Open it in Fiji's [Script Editor](/scripting/script-editor), select **Groovy**,
+run the script and choose a CR3 file. Leave **Develop RAW to 16-bit RGB**
+cleared for the camera JPEG. Selecting it runs the same 16-bit importer as
+the color menu command. The camera JPEG may include the camera's picture
+style and other corrections. For installations still using 0.1.7, see the
+[earlier 8-bit color script](https://github.com/carstenartur/Photographer/blob/v0.1.7/docs/cr3/fiji-update-site.md#open-a-color-image).
+
+## Memory for an import
+
+The sensor image retains 2 bytes of pixel data per sensor site. The color
+composite retains 6 bytes per developed pixel across its three planes. For
+example, a 5496 × 3668 composite retains about 115 MiB of pixel data. Decoder
+buffers, other open images and rendering the composite need additional memory.
+
+Both RAW menu commands use the decoder's automatic memory policy (`AUTO`).
+When the normal read would exceed its estimated Java heap budget, the decoder
+selects compact processing and writes one line beginning `CR3 low-memory:` to
+standard error. The line reports the worker limit selected for the read. If
+the estimated memory needed with one worker still exceeds the budget, the
+decoder attempts the import with one worker. This estimate is advisory, and
+the final image must fit in memory. Dimensions, orientation and sample precision
+are preserved.
 
 ## Supported files
 
@@ -152,8 +174,8 @@ for the measurements and current limitations.
 
 | Symptom | What to check |
 | --- | --- |
-| No **CR3 Sensor Data...** entry | Confirm the update site is enabled, apply its changes and restart Fiji. Check that Fiji is actually running Java 21 or newer. |
-| Dark image, grayscale display or visible sensor borders | These can be expected for the full Bayer mosaic. Adjust the display limits as above, or use the color example for a developed view. |
+| A CR3 import command is missing | Confirm the update site is enabled, apply its changes and restart Fiji. Check that Fiji is actually running Java 21 or newer. The color menu command requires plugin version 0.1.8 or later. |
+| Dark image, grayscale display or visible sensor borders | These can be expected for the full Bayer mosaic. Adjust the display limits as above, or choose **CR3 Color Image...** for a developed view. |
 | RAW import reports an unsupported or unreadable layout | Check the supported configurations. The color example can still open an embedded JPEG if one is present and readable; this supplies a preview rather than sensor data. |
 
 </div>
@@ -177,3 +199,14 @@ with native sensor units. The [ImageJ plugin source](https://github.com/carstena
 [CR3 format reference](https://github.com/carstenartur/Photographer/blob/main/docs/cr3/format.md)
 provide the implementation and technical details.
 
+The color importer uses the exact 16-bit sRGB quantizer. The optional Java 25
+SIMD color-matrix acceleration applies to the packed 8-bit RGB ImageIO path.
+Both Fiji menu commands work on Java 21 without a vector module flag.
+The [ImageJ adapter guide](https://github.com/carstenartur/Photographer/blob/main/docs/developer/modules.md#imagej-adapter)
+covers headless calls and ownership of the sensor and color planes.
+
+The [installed-plugin checks](https://github.com/carstenartur/Photographer/blob/main/docs/cr3/fiji-qa-2026-11-19/README.md)
+compare full-image fingerprints for four sensor images and four color composites
+with the ImageIO references and include two constrained-heap imports. The separate
+[complete-import measurements](https://github.com/carstenartur/Photographer/blob/main/docs/cr3/optimization-2026-11-19/README.md)
+time ImageIO reads. Opening and rendering Fiji windows are outside those timings.
