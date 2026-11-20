@@ -4,7 +4,7 @@ categories: [Analysis]
 icon: /media/icons/Foci-Analyzer-icon.png
 source-url: "https://github.com/BioImaging-NKI/Foci-analyzer-Fiji"
 update-site: "foci-analyzer"
-release-version: v1.92
+release-version: v1.96
 support-status: Active
 team-founders: ['@BioImaging-NKI', '@bvandenbroek']
 team-maintainers: ['@BioImaging-NKI', '@bvandenbroek']
