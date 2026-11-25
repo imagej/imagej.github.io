@@ -35,9 +35,9 @@ The plugin adds two entries to the **Plugins > BiaPy** menu:
 | {% include bc path='Plugins|BiaPy|Apply model' %} | Apply a trained model to an **image already open in Fiji**. |
 
 ### Run BiaPy
-
-{% include video platform="youtube" id="htIGUCJJlAk" %}
-
+<div style="text-align: center;">
+  {% include video platform="youtube" id="htIGUCJJlAk" width=500 %}
+</div>
 A single window with three tabs:
 
 - **HOME**: links (project, forum, documentation, templates, notebooks, citation), the status of the Python environment
@@ -60,7 +60,9 @@ The plugin also keeps a **job history**, to open the results of previous jobs or
 
 ### Apply model
 
-{% include video platform="youtube" id="JOdaSDS_rvA" %}
+<div style="text-align: center;">
+  {% include video platform="youtube" id="JOdaSDS_rvA" width=500 %}
+</div>
 
 Applies a model to the image you have open in Fiji and opens the results in Fiji (labeled instances, classes, points...):
 
@@ -100,13 +102,17 @@ run("Apply model", "model=affable-shark device=cpu keep");
 4. Tick the checkbox of the update site `BiaPy` and click {% include button label='Apply and Close' %}.
    If it is not in the list yet, click {% include button label='Add Unlisted Site' %} and use the URL
    `https://sites.imagej.net/BiaPyX/`.
-   <img width="830" height="436" alt="biapy_update_site" src="https://github.com/user-attachments/assets/c5c749d7-a0e1-44ce-ba50-41a47d6202d9" />
+   <div style="text-align: center;">
+    <img style="width: 50%;" alt="Screenshot of the Fiji 'Manage Update Sites' window listing the BiaPy update site " src="https://github.com/user-attachments/assets/c5c749d7-a0e1-44ce-ba50-41a47d6202d9" />
+   </div>
 5. Click on {% include button label='Apply changes' %} and restart Fiji.
 6. Open {% include bc path='Plugins|BiaPy|Run BiaPy' %}. In the **HOME** tab, click on
    {% include button label='Install BiaPy' %}: it creates a Python environment inside the Fiji folder and downloads
    BiaPy and PyTorch into it (several GB, only the first time).
-   {% include bc path='Plugins|BiaPy|Apply model' %} has the same installation option in its first tab.
-   <img width="1062" height="762" alt="biapy_home_install" src="https://github.com/user-attachments/assets/8b10ee60-3289-47ea-bd9f-42cb9767a00c" />
+   {% include bc path='Plugins|BiaPy|Apply model' %} has the same installation option in its first tab.   
+   <div style="text-align: center;">
+    <img style="width: 50%;" alt="BiaPy's Fiji plugin without BiaPy installed" src="https://github.com/user-attachments/assets/8b10ee60-3289-47ea-bd9f-42cb9767a00c" />
+   </div>
 
 If you already have a Python environment with BiaPy, use **HOME > Use existing Python...** instead.
 
