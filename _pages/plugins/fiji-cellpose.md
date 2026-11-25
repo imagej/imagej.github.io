@@ -24,7 +24,7 @@ This plugin is based on [Appose](https://github.com/apposed/appose), that automa
 
 ## Installation
 
-You can install the plugin for the unliste update site `Appose-Playground`:
+You can install the plugin from the update site `Fiji-Cellpose`:
 - In Fiji, go to `Help>Update...`
 - If updates are suggested, it is strongly advised to apply them and restart Fiji before to continue
 - Select `Manage Update Sites` in the window that opens
