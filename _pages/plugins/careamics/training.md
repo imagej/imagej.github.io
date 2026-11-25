@@ -32,20 +32,20 @@ nav-links:
     <h3>Configuration</h3>
     <ul>
       <li><b>Experiment Name</b>: the name of experiment (mandatory for <code>CAREamics</code>)</li>
-      <li><b>Input Axes</b>: to select the input image(s) axes</li>
-      <li><b>XY Patch Size</b>: the training patch size</li>
-      <li><b>3D Patching</b>: if checked, then the training will happen over 3D patches.</li>
-      <li><b>Z Patch Size</b>: the patch size in Z dimension</li>
+      <li><b>Input Axes</b>: to select the input image(s) axes, necessary to correctly reshape the data</li>
+      <li><b>XY Patch Size</b>: the training patch size in X and Y</li>
+      <li><b>3D Patching</b>: whether the data is 3D.</li>
+      <li><b>Z Patch Size</b>: the patch size in the Z dimension</li>
       <li><b>Batch Size</b>: training batch size (use a small number if you have a GPU with a small memory)</li>
-      <li><b>Number of Epochs</b>: the number of iterations that the model will be trained over the data</li>
-      <li><b>Number of Steps</b>: the number of steps (batches) for each epoch (if it's higher than number of available batches, then it will be ignored)</li>
+      <li><b>Number of Epochs</b>: the number of iterations that the model will be trained over</li>
+      <li><b>Number of Steps</b>: the number of steps (batches) for each epoch (ignored if larger than the number of available batches)</li>
     </ul>
 
-    <p>After setting the configuration regarding your training images, hit the "<b>Train</b>" button to start the training process.
+    <p>After setting the configuration, hit the "<b>Train</b>" button to start the training process.
     </p>
 
     {% include notice class="fa fa-exclamation-circle"
-        content="If you are using the plugin for the first time, before the training begins, a python environment will be created using [`uv`](https://docs.astral.sh/uv/)."
+        content="If you are using the plugin for the first time, before the training begins, a python environment will be created using [`uv`](https://docs.astral.sh/uv/), which will take a few minutes."
     %}
 
     <p>
