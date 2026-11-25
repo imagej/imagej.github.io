@@ -52,6 +52,12 @@ nav-links:
     You can stop the training process by hitting the <b>"Stop"</b> button.<br>
     The details of the training process will be logged into the plugin's logging window.
     </p>
+
+    {% include notice icon="tip" 
+        content="The training is better suited for **GPU** and it supports macOS silicon chips as well. 
+        You can also use **CPU** for training, but it will be significantly *slower*."
+    %}
+  
   </div>
 
   <div style="display: block; max-width: 100%;">
