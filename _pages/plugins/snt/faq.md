@@ -68,6 +68,9 @@ Any file format supported by ImageJ/Bio-Formats with up to 5 dimensions. RGB ima
 ### How do I (batch) convert TRACES to SWC?
 Use the {% include bc path='Batch|Convert Traces to SWC'%} script either from the Scripts menu in the main dialog, or the {% include bc path='Templates|Neuroanatomy|'%} menu in the Script Editor.
 
+### How do I report a bug?
+Run {% include bc path='Help|Run SNT Doctor...' %} and use its _Report Issue_ button: it copies a system report to the clipboard and opens a new post on the [forum](https://forum.image.sc/tag/snt) or a new [GitHub](https://github.com/morphonets/SNT/issues) issue, where you can paste it. See [Report Bugs](./contribute#report-bugs) for details.
+
 ### How can I improve SNT documentation?
 Use the *Edit this page* option on the <a href="#top">top</a> of the documentation page and edit its contents at will. Don't be shy. All changes are undoable\!
 
