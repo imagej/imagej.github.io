@@ -39,6 +39,7 @@ nav-links:
       <li><b>Batch Size</b>: training batch size (use a small number if you have a GPU with a small memory)</li>
       <li><b>Number of Epochs</b>: the number of iterations that the model will be trained over</li>
       <li><b>Number of Steps</b>: the number of steps (batches) for each epoch (ignored if larger than the number of available batches)</li>
+      <li><b>Use n2v2</b>: whether to use the Noise2Void v2 training strategy</li>
     </ul>
 
     <p>After setting the configuration, hit the "<b>Train</b>" button to start the training process.
