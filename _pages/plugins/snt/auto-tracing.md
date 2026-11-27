@@ -14,13 +14,32 @@ tags: snt,tracing,neuroanatomy,big-data
 {% endcapture %}
 {% include notice icon="snt" content=version %}
 
-Fully automated tracing routines can be accessed through the _Auto-trace_ menu in the main dialog.
+Fully automated tracing routines can be accessed through the _Auto-trace_ menu in the main dialog. Its commands are grouped into four sections:
 
-# Grayscale Images
+- **Guided** A [wizard](#guided-auto-trace) for tracing neurons, and another for [detecting features](./seeds#detecting-features) (somas, tips, tufts, roots, swellings, maxima) as seeds
+- **Interactive Tracing** Commands that trace an image already open in SNT: [Intensity Image...](#intensity-images), [Intensity Image (Multiple Cells)...](#multiple-cells), {% include bc path='Auto-trace|Region (Select in Viewer)...' %} ([SNT Stream](./snt-stream) only), and [Segmented Image...](#segmented-images)
+- **Interactive Detection** [Detect Soma(s)...](#soma-detection) and _Detect Features (Advanced)..._, which opens the [Seeds tab](./seeds)
+- **Batch Processing** File-based variants of the tracing commands: see [Batch Processing](#batch-processing)
 
-Grayscale images are processed using the {% include bc path='Auto-trace|Grayscale Image...' %} command for single-cell tracing of images already loaded, or {% include bc path='Auto-trace|Grayscale Image (Multiple Cells)...' %} when the image contains multiple cells (see [Multiple Cells](#multiple-cells)). File-based and batch variants are available under {% include bc path='Auto-trace|Batch Processing' %} ([Batch Processing](#batch-processing)).
+Tracing can also be driven by [seeds](./seeds#auto-tracing-from-seeds).
 
-This command reconstructs neuronal structures directly from grayscale (intensity) images without requiring binarization. The method is particularly effective for fluorescence microscopy images with bright foreground structures on dark backgrounds. It builds on two foundational algorithms: [APP2](https://pubmed.ncbi.nlm.nih.gov/23603332/) (Gray-Weighted Distance Transform with Fast Marching and hierarchical pruning) and [neuTube](https://pubmed.ncbi.nlm.nih.gov/26464967/) (several of the [post-processing](#post-processing) refinements described below). SNT extends these with its own capabilities:
+<span id="guided-auto-trace"></span>
+# Guided Auto-trace
+
+{% include bc path='Auto-trace|Guided Auto-trace...' %} opens a wizard that walks through the steps required to auto-trace a neuron. The wizard does not trace on its own: it learns parameters and opens the tracing prompt with the learned values already filled in. Its steps are:
+
+1. **Your Data** Checks the image and asks whether it contains a single neuron or multiple neurons (which selects the single- or multi-cell command)
+2. **Example Paths** Choose the paths from which parameters are [learned](#learning-parameters-from-example-paths): all paths in the Path Manager, only the selected ones, or reconstruction files. Skipped for segmented images
+3. **Training** Learns the tracing parameters from the example paths
+4. **Region** Only for streamed data, in [SNT Stream](./snt-stream): draws a box around the structures of interest in BDV/BVV, and loads the region into memory. Skip it to trace the entire volume
+5. **Auto-trace** Opens the tracing prompt, populated with the learned values
+
+<span id="grayscale-images"></span>
+# Intensity Images
+
+Intensity (grayscale) images are processed using the {% include bc path='Auto-trace|Intensity Image...' %} command for single-cell tracing of images already loaded, or {% include bc path='Auto-trace|Intensity Image (Multiple Cells)...' %} when the image contains multiple cells (see [Multiple Cells](#multiple-cells)). In [SNT Stream](./snt-stream), {% include bc path='Auto-trace|Region (Select in Viewer)...' %} loads a region drawn in the viewer into memory, and opens the tracing prompt for it. File-based variants are available in the _Batch Processing_ section of the menu ([Batch Processing](#batch-processing)).
+
+This command reconstructs neuronal structures directly from intensity images without requiring binarization. The method is particularly effective for fluorescence microscopy images with bright foreground structures on dark backgrounds. It builds on two foundational algorithms: [APP2](https://pubmed.ncbi.nlm.nih.gov/23603332/) (Gray-Weighted Distance Transform with Fast Marching and hierarchical pruning) and [neuTube](https://pubmed.ncbi.nlm.nih.gov/26464967/) (several of the [post-processing](#post-processing) refinements described below). SNT extends these with its own capabilities:
 
 1. **Images parsed at full-resolution** and native bit-depth without downsampling
 
@@ -48,13 +67,15 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 
 ## Input Image
 
-**Grayscale Image (_Mandatory_)** The intensity image to be traced (2D or 3D). Either the image currently loaded in SNT, or a [Secondary image layer](./manual#tracing-on-secondary-image-layer). Should contain bright neuronal structures on a dark background.
+**Intensity image (_Mandatory_)** The intensity image to be traced (2D or 3D). Either the image being traced (its active channel and frame are used, e.g., _Image being traced [C1T1]_), or a [Secondary image layer](./manual#tracing-on-secondary-image-layer). Should contain bright neuronal structures on a dark background.
 
 ## Soma/Root Detection
 
 The algorithm requires a starting point (seed) to begin tracing. Several strategies are available:
 
-- **None. Use auto-detection** Automatically detects the soma/root at the thickest and brightest region as per [Soma Detection](#soma-detection). No ROI is required
+- **None. Use auto-detection** Automatically detects the soma/root at the thickest and brightest region as per [Soma Detection](#soma-detection), and creates a single tree rooted at its centroid. No ROI is required, and any ROI is ignored
+
+- **None. Auto-detect soma: One tree per primary neurite** Automatically detects the soma contour, and creates separate trees for each neurite exiting it. No ROI is required
 
 - **Area ROI around soma: One tree per primary neurite** An area ROI delineates the soma boundary. Creates separate trees for each neurite exiting the soma, rooting them at the soma perimeter. Best for complex morphologies where multiple primary branches emerge from the cell body and individual neurites need to be analyzed separately
 
@@ -62,10 +83,12 @@ The algorithm requires a starting point (seed) to begin tracing. Several strateg
 
 - **Single tree rooted at ROI weighted centroid** Similar to the above, but roots the tree at the intensity-weighted centroid of nodes traced within the soma region, rather than the ROI's geometric center. More accurate when the ROI encompasses the entire soma but may not be precisely centered
 
+In [SNT Stream](./snt-stream), which does not support ROIs, **Selected Bookmarks/markers define somata** is offered instead: somata are defined by the markers placed in BDV/BVV.
+
 When working with 3D images, the _Active plane only_ option restricts the ROI to its specific Z-slice, preventing the algorithm from considering roots at other depths.
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-gwdt-autotracing.png" alt="Gwdt autotracing" title="Fully automated reconstructions: Grayscale images (OP1 demo dataset)" width="700" />
+  <img src="/media/plugins/snt/snt-gwdt-autotracing.png" alt="Gwdt autotracing" title="Fully automated reconstructions: Intensity images (OP1 demo dataset)" width="700" />
 </div>
 
 ## Thresholding
@@ -100,22 +123,23 @@ These parameters control which branches are retained in the final reconstruction
 
 After the initial tree extraction and branch filtering, several post-processing steps refine the geometry and topology of the reconstruction:
 
-**Max. branching angle** Controls branch-point parent reassignment (branch tuning). At each branch point, the algorithm tests whether re-attaching a continuation node to its grandparent or a sibling produces a straighter path. If the alternative attachment avoids a turn exceeding the specified angle, the topology is rewired. Set to -1 to disable. Default: 90°
+**Max. branching angle (°)** Controls branch-point parent reassignment (branch tuning). At each branch point, the algorithm tests whether re-attaching a continuation node to its grandparent or a sibling produces a straighter path. If the alternative attachment avoids a turn exceeding the specified angle, the topology is rewired. Set to -1 to disable. Default: 90°
 
 **Tip extension distance (voxels)** Maximum distance (in voxels) for A*-based tip extension (experimental feature). After pruning, each leaf tip is scanned along its tangent direction for bright signal beyond the Fast Marching frontier. If a foreground target is found within this distance, an A* path is traced through the gap and grafted onto the tree. Each candidate bridge is validated against geometric and intensity criteria (contraction ratio, direction compatibility, mean intensity). Disconnected components that cannot be bridged are discarded. Set to 0 to disable. Default: 0 (disabled)
 
-**Remove zigzags** When enabled (default), iteratively detects and collapses zigzag artifacts: consecutive nodes that both form sharp turns (angles of 90°—270°). The inner node is merged into its parent. The process repeats until no more zigzags are found, producing smoother paths at junctions
+**Remove zigzags** When enabled (default), iteratively detects and collapses zigzag artifacts: consecutive nodes that both form sharp turns (angles of 90° to 270°). The inner node is merged into its parent. The process repeats until no more zigzags are found, producing smoother paths at junctions
 
 **Remove overshoots** When enabled (default), detects and removes overshoot nodes in a single pass. A node is an overshoot if it forms a sharp turn and exactly one of its neighbors (parent or child) is a branch point. Such nodes likely represent tracing artifacts where a path extends slightly past a junction before turning back
 
-**Smoothing** Applies a moving average filter to reduce residual irregularities in traced paths. The window size determines how many adjacent nodes are averaged together. Larger windows create smoother paths but may lose fine details. Default: 5 (set to 1 to disable)
+**Smoothing window** Applies a moving average filter to reduce residual irregularities in traced paths. The window size determines how many adjacent nodes are averaged together. Larger windows create smoother paths but may lose fine details. Default: 5 (set to 1 to disable)
 
-**Resampling** Redistributes nodes along paths at regular intervals to standardize node density. The step size (in voxels) determines spacing between resampled nodes. Useful for ensuring consistent spatial sampling across the reconstruction. Default: 2.0 (set to 0 to disable)
+**Resample interval** Redistributes nodes along paths at regular intervals to standardize node density. The step size (in voxels) determines spacing between resampled nodes. Useful for ensuring consistent spatial sampling across the reconstruction. Default: 2.0 (set to 0 to disable)
 
 
-## Learning Parameters from Selected Paths
+<span id="learning-parameters-from-selected-paths"></span>
+## Learning Parameters from Example Paths
 
-The _Learn Parameters From Selected Path(s)..._ button (located in the autotracing prompt) derives tracing parameters from paths already traced in the current session. This is useful when starting with a new dataset: instead of manually tuning thresholds and scales, you trace a representative neurite (or a few branches), then let SNT extract sensible defaults from those examples.
+The _Learn Parameters..._ button (located in the autotracing prompt, and also in the [Guided Auto-trace](#guided-auto-trace) wizard) derives tracing parameters from paths that you consider correct. This is useful when starting with a new dataset: instead of manually tuning thresholds and scales, you trace a representative neurite (or a few branches), then let SNT extract sensible defaults from those examples.
 
 <img align="right" width="400" src="/media/plugins/snt/snt-autotracing-groundtruth-learning.png" alt="Learning from Selected Paths (v5.1.0)" title="Learning from Selected Paths (v5.1.0)" />
 
@@ -123,15 +147,17 @@ The _Learn Parameters From Selected Path(s)..._ button (located in the autotraci
 
 1. **Trace one or more representative paths** manually (or load existing reconstructions). Select them in Path Manager
 
-2. **Click** _Learn Parameters From Selected Path(s)..._ in the {% include bc path='Auto-trace|Grayscale Image...' %} prompt. SNT analyzes the selected paths and opens a review dialog
+2. **Click** _Learn Parameters..._ in the {% include bc path='Auto-trace|Intensity Image...' %} prompt. A window opens, and learns from the paths selected in the Path Manager (if any)
 
-3. **Review the results**. The dialog has two sections: _Source Statistics_ (read-only summary of what was measured: path count, node count, mean radius, mean intensity, etc.) and _Derived Parameters_ (a table with checkboxes). Each derived parameter has a checkbox controlling whether it will be applied
+3. **Choose the examples**, if needed. The _Learn From Existing Data_ menu offers _Learn From Selected Paths_, _Learn From All Paths_ (only recommended if all of them are representative), and _Learn From Reconstruction File(s)..._ (SWC, TRACES, JSON, etc.). Reconstruction files can also be dropped onto the window. Each of these actions replaces the current examples
 
-4. **Apply**. Click _Apply & Close_ to transfer the checked parameters into the autotracing prompt. Only checked rows are applied; unchecked values are left at their current settings
+4. **Review the results**. The window has three sections: the table of parameters, with their _Current_ and _Learned_ values, and a _Use_ column that controls which of the two will be adopted (hover a row to see how its parameter was derived); _Source Statistics_ (read-only summary of the examples: path count, node count, mean radius, mean intensity, etc.); and _Recommendations & Notes_ (advice based on the image and the examples, e.g., connectivity for large images, that is not part of the learned values). The _Choose_ menu adopts all parameters, only the recommended ones (confident values), or none
+
+5. **Apply**. Click _Apply & Close_ to transfer the chosen parameters into the autotracing prompt. Parameters that are not adopted are left at their current settings
 
 ### Derived Parameters
 
-SNT samples radius, intensity, and branch geometry from the selected paths to derive the following:
+SNT samples radius, intensity, and branch geometry from the example paths to derive the following:
 
 **Background threshold** Set to 25% of the mean signal intensity sampled along the traced paths. Because the paths run through bright foreground, a quarter of that mean provides a conservative floor that excludes background while preserving dim neurites.
 
@@ -141,14 +167,20 @@ SNT samples radius, intensity, and branch geometry from the selected paths to de
 
 **Max. branching angle** Set to the 90<sup>th</sup> percentile of fork angles measured at branch points where child paths diverge from their parents. This captures the typical range of branching geometry, so the post-processing branch-tuning step can rewire only unusually sharp turns.
 
-**Reconnect parameters** _(unchecked by default)_ Three values for the tip-extension feature: minimum contraction (80% of the lowest observed path contraction, floored at 0.3), maximum bridge angle (120% of the branch-tune angle, capped at 90°), and maximum bridge distance (4× the largest observed radius in voxel units, floored at 10). These are conservative starting points and are unchecked by default because tip extension is an experimental feature.
+**Overlap tolerance** Set to the 90<sup>th</sup> percentile of the fraction of a node's sphere that is covered by a node of another path, limited to the range 0.05 to 0.5. Unavailable if the example paths do not touch each other.
+
+**Resample interval** Set to the median distance between consecutive nodes of the example paths, rounded to an integer between 1 and 10 voxels.
+
+**Reconnect parameters** Three values for the tip-extension feature: minimum contraction (80% of the lowest observed path contraction, floored at 0.3), maximum bridge angle (120% of the branch-tune angle, capped at 90°), and maximum bridge distance (4 times the largest observed radius in voxel units, floored at 10). These are conservative starting points, as tip extension is an experimental feature.
+
+Parameters that cannot be derived (e.g., no branch points among the examples) are reported as warnings, and left unchanged.
 
 ### Radius Fitting
 
 If the selected paths lack radii (i.e., they were traced without fitting), SNT automatically performs a non-destructive fit before analysis. The fit estimates radii from the image signal without modifying the original paths.
 
 {% capture learn-tip %}
-For best results, select paths that are representative of the structures you want to auto-trace: include both thin and thick branches if present, and ensure the paths span the typical intensity range of the image. A handful of well-placed paths (3–5 branches from different parts of the arbor) is usually sufficient.
+For best results, select paths that are representative of the structures you want to auto-trace: include both thin and thick branches if present, and ensure the paths span the typical intensity range of the image. A handful of well-placed paths (at least 3, with 30+ nodes in total; from different parts of the arbor) is usually sufficient. SNT warns when too few examples are provided.
 {% endcapture %}
 {% include notice icon="info" content=learn-tip %}
 
@@ -162,6 +194,8 @@ For best results, select paths that are representative of the structures you wan
 - _High_ (26-connected): All 26 voxel neighbors including edge and corner diagonals
 
 **Debug mode** Enables verbose logging to the Console, useful for troubleshooting.
+
+**Apply Defaults** Resets all fields of the prompt to their default values.
 
 **After tracing** Determines what happens after the traced trees are added to the Path Manager. Options include:
 
@@ -177,7 +211,7 @@ Batch processing of entire directories is also supported. See [Batch Processing]
 
 # Soma Detection
 
-The {% include bc path='Auto-trace|Detect Soma...' %} command provides automated detection of cell bodies in neuronal images. This is a standalone tool that can be used before autotracing to identify soma locations, or independently to annotate soma positions and sizes.
+The {% include bc path='Auto-trace|Detect Soma(s)...' %} command provides automated detection of cell bodies in neuronal images. This is a standalone tool that can be used before autotracing to identify soma locations, or independently to annotate soma positions and sizes. Parameters can be tuned visually, in a preview, using the _Learn Parameters..._ button of the prompt. To detect somas as [seeds](./seeds#somas), use {% include bc path='Auto-trace|Guided Feature Detection...' %} or the [Seeds tab](./seeds).
 
 {% include img align="center" name="Soma Detection" src="/media/plugins/snt/snt-soma-detection.png" caption="Automated soma detection: ROI countour (Cultured hippocampal neurons: _Neuronal receptors_/_Synaptic labeling_ demo datasets)" %}
 
@@ -193,13 +227,17 @@ This dual approach is more robust than using intensity alone because it effectiv
 
 ## Detection Scope
 
-**Brightest/largest soma only** Detects the single most prominent soma in the image—the structure with the highest EDT × intensity score. Use this for images containing a single neuron or when you want to identify the primary cell body.
+**Brightest/largest soma only** Detects the single most prominent soma in the image, i.e., the structure with the highest EDT × intensity score. Use this for images containing a single neuron or when you want to identify the primary cell body.
 
 **All somata in image** Detects multiple somas by finding local maxima in the EDT map. Each local maximum represents a thick structure that likely corresponds to a cell body. When this scope is selected, several additional filtering parameters become available (see below).
 
 ## Threshold
 
-The intensity threshold determines which pixels are considered foreground during detection. Use `-1` (default) to automatically compute the threshold using image statistics. Manual adjustment may be needed for images with uneven illumination or weak signal.
+The intensity threshold determines which pixels are considered foreground during detection. Use `-1` (default) to automatically compute the threshold using Otsu's method. Manual adjustment may be needed for images with uneven illumination or weak signal.
+
+## Plane and Depth
+
+For 3D images, _Plane_ defines where multi-soma detection runs: on a _Max projection_ (default; detects somata at any depth) or on the _Current slice_ (displayed slice only). Single-soma detection always uses the current slice. In [SNT Stream](./snt-stream), _Depth_ is used instead (_Auto-detect_, or a depth specified by the user), together with _Resolution level_: somata rarely need full resolution, and coarser levels are much faster to read. Detections are placed in the full resolution space.
 
 ## Multi-soma Filtering Parameters
 
@@ -207,16 +245,20 @@ The following parameters are only active when the detection scope is set to _All
 
 **Min. radius** The minimum soma radius in spatially calibrated units. Detections with an EDT-derived radius below this value are discarded as noise (debris, hot pixels, etc.). Default: 0 (no filtering).
 
-**Min. inter-soma distance** The minimum distance between detected soma centers in spatially calibrated units. When greater than zero, non-maximum suppression is applied: among detections that are closer than this distance, only the one with the highest EDT × intensity score is kept. This is the most reliable way to separate closely spaced detections. Default: 0 (disabled).
+**Min. inter-soma distance** The minimum distance between detected soma centers in spatially calibrated units. When greater than zero, non-maximum suppression is applied: among detections that are closer than this distance, only the one with the highest EDT × intensity score is kept. This is the most reliable way to separate closely spaced detections. Default: 0 (automatic: twice _Min. radius_ if it is set, otherwise no filtering).
 
 **Expected no. of somata** _[Experimental]_ When greater than zero, keeps only the top-N detections ranked by EDT thickness. This uses an additional binarization step (Minimum auto-threshold) to recompute the EDT and rank candidates, which may not work well for images with large connected bright regions. In most cases, _Min. inter-soma distance_ (above) is a more reliable filtering strategy. Default: 0 (disabled).
 
 
 ## Output Types
 
-Results can be exported in several formats. When detecting all somata, the output is added to the image overlay (for ROI types) or to the Path Manager (for path output):
+Results can be exported in several formats. When detecting all somata, the output is added to the image overlay (for ROI types), to the Path Manager (for path output), to the Bookmark Manager, or to the Seeds tab:
 
-- **Single-node path** Creates a path in SNT's Path Manager consisting of a single node at the soma center. The node radius is estimated from the distance transform. Useful for marking soma locations in reconstructions and for seeding [multi-soma autotracing](#multi-soma-autotracing)
+- **Single-node path** Creates a path in SNT's Path Manager consisting of a single node at the soma center. The node radius is estimated from the distance transform. Useful for marking soma locations in reconstructions and for seeding [multi-soma autotracing](#multiple-cells)
+
+- **Bookmark/marker** Adds a bookmarked location at the soma center, with a size derived from the distance transform. Available in [SNT Stream](./snt-stream), where ROIs are not supported
+
+- **Seed point** Adds a [seed](./seeds) at the soma center, with a radius derived from the distance transform. When several somata are detected, each seed is assigned a confidence based on the integrated intensity of its mask. Confidences are normalized as described in [Detecting Features](./seeds#detecting-features), using the _Percentile clip (%)_ option of the prompt (default: 10)
 
 - **Point ROI** Places a point marker at the detected soma center. Simplest output for marking locations
 
@@ -226,10 +268,10 @@ Results can be exported in several formats. When detecting all somata, the outpu
 
 ## Multiple Cells
 
-The {% include bc path='Auto-trace|Grayscale Image (Multiple Cells)...' %} command traces all cells in a grayscale image in a single run. It automatically detects all soma locations, then traces each cell independently using the GWDT + Fast Marching pipeline with exclusion masks that prevent territory overlap between cells.
+The {% include bc path='Auto-trace|Intensity Image (Multiple Cells)...' %} command traces all cells in an intensity image in a single run. It automatically detects all soma locations, then traces each cell independently using the GWDT + Fast Marching pipeline with exclusion masks that prevent territory overlap between cells.
 
 <div align="center">
-  <img src="/media/plugins/snt/snt-autotracing-multiple-somata.webp" alt="Autotracing of multiple cells" title="Fully automated reconstructions: Grayscale images | Multiple cells in the same field of view (Microglia cells demo dataset)" width="700" />
+  <img src="/media/plugins/snt/snt-autotracing-multiple-somata.webp" alt="Autotracing of multiple cells" title="Fully automated reconstructions: Intensity images | Multiple cells in the same field of view (Microglia cells demo dataset)" width="700" />
 </div>
 
 The command shares the same tracing parameters as the single-cell variant (thresholding, branch filtering, scoring, post-processing, smoothing, and resampling) but replaces the Soma/Root Detection section with parameters specific to multi-cell reconstruction.
@@ -246,11 +288,11 @@ The command shares the same tracing parameters as the single-cell variant (thres
 
 ### Soma Detection
 
-These are the filtering parameters for soma detection [described earlier](#multi-soma-filtering-parameters).
+_Min. soma radius_ and _Min. inter-soma distance_ filter soma detections as [described earlier](#multi-soma-filtering-parameters).
 
 ### Territory Control
 
-**Territory reach** Controls how far each cell's tracing can extend toward its nearest neighbor, expressed as a fraction of the inter-soma distance. At 0.5 (default), each cell traces up to the midpoint between somas, so territories just touch. Values above 0.5 allow territories to overlap—the exclusion mask still prevents actual re-tracing. Set to -1 to disable territory limits (unlimited spread)
+**Territory reach** Controls how far each cell's tracing can extend toward its nearest neighbor, expressed as a fraction of the inter-soma distance. At 0.5 (default), each cell traces up to the midpoint between somas, so territories just touch. Values above 0.5 allow territories to overlap (the exclusion mask still prevents actual re-tracing). Set to -1 to disable territory limits (unlimited spread)
 
 ### Multi-Cell Options
 
@@ -330,7 +372,7 @@ Look for the _AutoTracing_Demo_(Microglia_Cells)_ [demo script](./scripting#bund
 
 Segmented (binary or thresholded) images are processed using skeleton-based tracing, which converts the image topology into neuronal tree structures. This approach is suitable for images with clear foreground/background separation where structures have already been segmented through thresholding or other preprocessing methods.
 
-The algorithm works by first skeletonizing the segmented image to extract its topological structure, then converting the resulting skeleton graph into neuronal trees. Segmented images are processed using the {% include bc path='Auto-trace|Segmented Image...' %} command when the image to be processed is already open or {% include bc path='Auto-trace|Segmented Image File...' %}, if the image is yet to be loaded from disk. For technical implementation details including the skeletonization algorithm and graph conversion methods, see the [SNT technical notes](https://github.com/morphonets/SNT/blob/main/NOTES.md).
+The algorithm works by first skeletonizing the segmented image to extract its topological structure, then converting the resulting skeleton graph into neuronal trees. Segmented images are processed using the {% include bc path='Auto-trace|Segmented Image...' %} command when the image to be processed is already open or {% include bc path='Auto-trace|Segmented Image File(s)...' %}, if the image is yet to be loaded from disk. For technical implementation details including the skeletonization algorithm and graph conversion methods, see the [SNT technical notes](https://github.com/morphonets/SNT/blob/main/NOTES.md).
 
 
 {% capture ddac-demo%}
@@ -352,15 +394,17 @@ Full automated tracing of _segmented_ (thresholded) images requires two types of
 ## Soma/Root Detection
 Root detection typically uses an area ROI to mark the root of the arbor on the image. With neurons, this typically corresponds to an area ROI marking the soma. Several strategies are possible:
 
-- **Place root on ROI's simple centroid** Attempts to root all primary paths intersecting the ROI at its geometric centroid (the centroid of the ROI's contour). Typically used when 1) multiple paths branch out from the soma, 2) the ROI accurately defines the contour of the soma, and 3) somatic segments are expected to be part of the reconstruction
-
-- **Place root on ROI's weighted centroid** Similar to the above, but places the root at the centroid of all foreground voxels contained by the ROI, rather than the ROI's geometric center. Useful when the ROI contour is imprecise but still encloses the relevant structure
-
-- **Place roots along ROI's edge** Attempts to root all primary paths intersecting along the perimeter of the ROI. As above, this option is typically used when multiple paths branch out from the soma and the ROI defines the contour of the soma, but somatic segments are not expected to be included in the reconstruction. Most accurate strategy for complex topologies
-
-- **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma
+- **None. Use auto-detection** Automatically detects the soma using EDT x intensity scoring (see [Soma Detection](#soma-detection)), and roots the tree at its centroid. No ROI is required
 
 - **None. Ignore any ROIs** If no ROI exists an arbitrary root node is used
+
+- **Path(s) branch out from ROI edge** Attempts to root all primary paths intersecting along the perimeter of the ROI. Typically used when multiple paths branch out from the soma and the ROI defines the contour of the soma, but somatic segments are not expected to be included in the reconstruction. Most accurate strategy for complex topologies
+
+- **Path(s) branch out from ROI simple centroid** Attempts to root all primary paths intersecting the ROI at its geometric centroid (the centroid of the ROI's contour). Typically used when 1) multiple paths branch out from the soma, 2) the ROI accurately defines the contour of the soma, and 3) somatic segments are expected to be part of the reconstruction
+
+- **Path(s) branch out from ROI weighted centroid** Similar to the above, but places the root at the centroid of all foreground voxels contained by the ROI, rather than the ROI's geometric center. Useful when the ROI contour is imprecise but still encloses the relevant structure
+
+- **ROI marks a single root** Assumes a polarized morphology (e.g., apical dendrites of a pyramidal neuron), in which the arbor being reconstructed has a single primary branch at the root. Under this option, the 'closest' end-point (or junction point) contained by the ROI becomes the root node. In this case the ROI does not need to reflect an accurate contour of the soma
 
 When parsing 3D images, toggling the _Active plane only_ checkbox clarifies that the root(s) marked by the ROI occurs at the active ROI's Z-plane. This ensures that other possible roots above or below the ROI will not be considered.
 
@@ -384,10 +428,10 @@ NB: If an intensity-based strategy is selected but no intensity image is provide
 ## Gaps and Disconnected Components
 It is almost impossible to segment structures into a single, coherent volume. These options define how gaps in the segmentation should be handled.
 
-- **Settings for handling small components** These options determine whether the algorithm should ignore segments (connected components that are disconnected from the main structure) that are too small to be of interest. Disconnected segments with a cable length below the specified length threshold will be discarded by the algorithm.<br>
+- **Prune small components / Length threshold** These options determine whether the algorithm should ignore segments (connected components that are disconnected from the main structure) that are too small to be of interest. Disconnected segments with a cable length below the specified length threshold will be discarded by the algorithm.<br>
 Increase this value if too many isolated branches are being created. Decrease it to bias the extraction for larger, contiguous structures.
 
-- **Settings for handling adjacent components** If the segmented image is fragmented into multiple components (e.g., due to 'beaded' labeling): Should the algorithm attempt to connect nearby components? If so, what should be the maximum allowable distance between disconnected components to be merged?<br>
+- **Bridge gaps / Max. connection distance** If the segmented image is fragmented into multiple components (e.g., due to 'beaded' labeling): Should the algorithm attempt to connect nearby components? If so, what should be the maximum allowable distance between disconnected components to be merged?<br>
 You should increase Max. connection distance if the algorithm produces too many gaps. Decrease it to minimize spurious connections.<br>
 
 NB: When components are bridged, new loops may be introduced. These are automatically resolved using the selected loop resolution strategy.
@@ -408,19 +452,27 @@ Additional processing options are available in the dialog:
 
 # Batch Processing
 
-All autotracing commands (grayscale single-cell, grayscale multi-cell, and segmented image) can process entire directories of images in batch mode. Batch commands are available from the {% include bc path='Auto-trace' %} menu under the _Batch Processing_ separator, or through the {% include bc path='File|Load Tracings|' %} import menu.
+The tracing commands described above have file-based variants that process entire directories of images, or single files that are too large to fit into memory. They are listed in the _Batch Processing_ section of the {% include bc path='Auto-trace' %} menu:
+
+- {% include bc path='Auto-trace|Intensity Image File(s)...' %} traces a single cell per image (see [Intensity Images](#intensity-images))
+- {% include bc path='Auto-trace|Intensity Image File(s) (Multiple Cells)...' %} detects all somata, and traces each cell (see [Multiple Cells](#multiple-cells))
+- {% include bc path='Auto-trace|Segmented Image File(s)...' %} traces segmented images (see [Segmented Images](#segmented-images))
 
 In batch mode, all tracing parameters are configured once and applied uniformly to every image in the input directory. Each image is loaded, traced, and the resulting reconstruction is exported as an [SWC](/plugins/snt/faq#what-is-a-swc-file) file to the specified export directory. For multi-cell batch processing, each detected cell produces a separate SWC file (named `<image>_cell1.swc`, `<image>_cell2.swc`, etc.). Processing errors on individual images are logged but do not halt the batch, so the remaining images continue to be processed.
 
 ## Batch Parameters
 
-**Path to image(s)** The directory containing images to be traced _or_ a path to a single file (e.g., an OME-ZARR, or .IMS file) that may be too large to fit into memory.
+**Path to image(s)** The directory containing images to be traced _or_ a path to a single file (e.g., an OME-ZARR, or .IMS file) that may be too large to fit into memory. (For segmented images, this is the _Input directory_.)
 
 **NB:**
 - The _Browse_ button may not allow you to select a folder directly: In that case simplify select a file within that folder, and manually remove it from the resulting path. E.g., if the goal is to parse `/path/to/folder/`, browse to `/path/to/folder/random.file`, and delete "random.file" from the file path
 
-- For grayscale tracing, images should contain bright neuronal structures on a dark background. For segmented image tracing, images should be binary masks or thresholded images where non-zero pixels represent foreground structures.
+- For intensity image tracing, images should contain bright neuronal structures on a dark background. For segmented image tracing, images should be binary masks or thresholded images where non-zero pixels represent foreground structures.
 
-**Export directory** The output directory where SWC files will be saved. One SWC file is generated per input image.
+**Export directory** The output directory where SWC files will be saved. One SWC file is generated per input image (or per detected cell, for multi-cell tracing).
+
+**Secondary image suffix** Intensity image commands only, and only used when _Score map filter_ is set to _Secondary image layer_. Suffix used to locate a paired image for each input: for input `foo.tif` and suffix `_probmap` (default), the sibling file `foo_probmap.*` in the same directory is used as the score map. If no match is found, or its dimensions do not match the input, score mapping is disabled for that image, and a warning is logged (the trace still runs).
+
+**Learn Parameters... / Apply Defaults** As in the interactive commands, parameters can be [learned from example paths](#learning-parameters-from-example-paths), or reset to their defaults.
 
 All other tracing parameters (thresholds, filtering, post-processing, etc.) are shared with the corresponding interactive command and apply to every image in the batch. Soma/root detection defaults to automatic in batch mode (no ROI interaction).
