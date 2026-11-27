@@ -54,14 +54,14 @@ SNT is initialized by running {% include bc path='Plugins|NeuroAnatomy|SNT...' %
 
 ### File ›
 
-Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
+Lists commands for I/O operations, grouped under the *Load*, *Save & Export*, *Backups & Sessions*, and *External* section headers. Most are self-explanatory. Noteworthy:
 
 #### {{ crop }} Choose Tracing Image...
 
 Specifies the image to trace on without having to restart SNT. Commands include:
 
-- *{% include bc path='From Open Image...'%}* Use this to start tracing on an image already open in Fiji. It allows selection of an image from a a prompt listing all images currently open
 - *{% include bc path='From File...'%}* Allows browsing for an image file
+- *{% include bc path='From Open Image...'%}* Use this to start tracing on an image already open in Fiji. It allows selection of an image from a a prompt listing all images currently open
 - *{% include bc path='From System Clipboard'%}* Loads a 2D image from the system clipboard. Useful, to e.g., trace on [forum-posted](https://forum.image.sc/) images
 
 In either scenario. You should toggle the *validate spatial calibration* checkbox to ensure the image to be imported is compatible with the existing one.
@@ -70,9 +70,11 @@ In either scenario. You should toggle the *validate spatial calibration* checkbo
 
 Imports of neuronal reconstructions from multiple sources, including:
 
-- **{% include bc path='Local Files' %}** [TRACES](/plugins/snt/faq#in-which-format-should-i-save-my-tracings-traces-or-swc), [SWC](/plugins/snt/faq#what-is-a-swc-file) (single files or bulk import of a directory of files), NDF ([NeuronJ](/plugins/neuronj) data format), JSON, or [Neurolucida XML](https://neuromorphological-file-specification.readthedocs.io/) (MBF Bioscience). Neurolucida files import both tree structures and markers (loaded as [bookmarks](#bookmarks-tab)).
+- **Local Files** *Guess File Type...* (attempts to detect the format automatically), *JSON...*, *NDF...* ([NeuronJ](/plugins/neuronj) data format), *Neurolucida XML...* ([MBF Bioscience](https://neuromorphological-file-specification.readthedocs.io/) format. Both tree structures and markers are imported, with markers loaded as [bookmarks](#bookmarks-tab)), *[SWC](/plugins/snt/faq#what-is-a-swc-file)...*, *[TRACES](/plugins/snt/faq#in-which-format-should-i-save-my-tracings-traces-or-swc)...*, and *Directory or Zip of SWCs...* (bulk import of all the SWC files of a folder or zip archive)
 
 - **{% include bc path='Remote Databases' %}** Import of neuronal reconstructions from [FlyCircuit](http://www.flycircuit.tw/), [InsectBrain](https://insectbraindb.org/app/), [MouseLight](https://ml-neuronbrowser.janelia.org/), and [NeuroMorpho](http://neuromorpho.org/).
+
+- **Remote URL...** Imports a reconstruction file from a web address
 
 {% include img align="center" src="/media/plugins/snt/snt-swc-prompts.png" caption="Prompts for importing and exporting SWC files" %}
 
@@ -81,13 +83,15 @@ All SNT dialogs (including the _Neuroanatomy Shortcut Window_ support drag-and-d
 {% endcapture %}
 {% include notice icon="info" content=dnd %}
 
-#### {{ crop }} Load Demo Dataset...
+<span id="load-demo-dataset"></span>
 
-Loads a demo dataset (a tracing image, a reconstruction, or both). Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/walkthroughs), and to create [Minimal reproducible examples](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
+#### {{ crop }} Load Demo Dataset/Tutorial...
+
+{% include img src="/media/plugins/snt/load-demo-dialog.png" align="right" width="300px" %}
+Loads a demo dataset (a tracing image, a reconstruction, or both), or a tutorial. Use this to familiarize yourself with the software, explore [Walk‑throughs](/plugins/snt/walkthroughs), and to create [Minimal reproducible examples](https://en.wikipedia.org/wiki/Minimal_reproducible_example) when reporting problems. The bottom part of the dialog describes each dataset including source, citation, and DOI (when available). Note that while some of the data is bundled with SNT, the majority of the datasets is downloaded from remote servers (internet connection required).
 
 #### {{ crop }} Load Labels (AmiraMesh)...
 
-{% include img src="/media/plugins/snt/load-demo-dialog.png" align="right" width="300px" %}
 This option assumes you are tracing on the same spatial coordinates of an annotated neuropil for which compartments have been segmented (*labeled*) and stored in an [Amira](https://amira.zib.de/) labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
 
 #### Save Tracings...
@@ -142,24 +146,39 @@ Saves the current tracing effort (paths, [bookmarks](#bookmarks-tab), [curation 
 Restores a selected section, reopening the associated tracings, [bookmarks](#bookmarks-tab),  [curation thresholds]((./curation#curation-assistant), [notes](#notes-tab), and [ROIs](#delineations-tab).
 
 #### Reveal Directory
-Convenience shortcuts to open common directories (scripts, backups, folder of image being traced, etc.) in the native file explorer.
+Convenience shortcuts to open common directories (scripts, backups, folder of image being traced, etc.) in the native file explorer. Entries include: *Current Workspace*, *Change Workspace...* (prompts for a new workspace directory), *Backup(s)*, *Sessions*, *Cache*, *Current TRACES File*, *Image Being Traced*, *Last Accessed Folder*, *Secondary Layer Image*, and *Fiji Scripts*.
 
 #### Send to TrakEM2
 Sends current paths to [TrakEM2](/plugins/trakem2/) instances attached to SNT.
 
 #### Reset and Restart...
-Resets all preferences and restarts SNT using default options. It is recommended to reset SNT after a major version release.
+Resets all preferences and restarts SNT using default options. A prompt allows choosing whether SNT restarts in *Standard Mode* or in [SNT Stream](./snt-stream) mode. It is recommended to reset SNT after a major version release.
 
 #### Quit
 Exits the program.
 
 ### Auto-trace ›
 
-#### Grayscale Image...
-Runs fully automated tracing of a single cell directly from a **grayscale (intensity) image** already open in SNT (no binarization required). See [Autotracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) for details.
+Lists commands for automated reconstruction and feature detection, grouped under the *Guided*, *Interactive Tracing*, *Interactive Detection*, and *Batch Processing* section headers. See [Auto-tracing](/plugins/snt/auto-tracing) for details.
 
-#### Grayscale Image (Multiple Cells)...
-Runs automated tracing of **multiple cells** in a single grayscale image. Automatically detects all soma locations, then traces each cell independently using exclusion masks to prevent territory overlap. See [Auto-tracing › Multiple Cells](/plugins/snt/auto-tracing#multiple-cells) for details.
+#### Guided Auto-trace...
+Opens a wizard that reconstructs neurons by walking through data check, example paths, training, region selection, and tracing. See [Auto-tracing](/plugins/snt/auto-tracing#guided-auto-trace) for details.
+
+#### Guided Feature Detection...
+Opens a wizard that helps choosing and running the detector for a given feature: somas, tips, tufts, roots, or swellings/maxima. Detected features are added as [seeds](/plugins/snt/seeds) (probabilistic detections) to the [Seeds tab](#seeds-tab).
+
+#### Intensity Image...
+Runs fully automated tracing of a single cell directly from an **intensity (grayscale) image** already open in SNT, or from a secondary image layer (no binarization required). See [Autotracing › Grayscale Images](/plugins/snt/auto-tracing#intensity-images) for details.
+
+#### Intensity Image (Multiple Cells)...
+Runs automated tracing of **multiple cells** in a single intensity image. Automatically detects all soma locations, then traces each cell independently using exclusion masks to prevent territory overlap. See [Auto-tracing › Multiple Cells](/plugins/snt/auto-tracing#multiple-cells) for details.
+
+#### {{ stream }} Region (Select in Viewer)...
+Draws a region on the data displayed in the Big Data Viewer (BDV) or Big Volume Viewer (BVV), loads it into memory, and opens the automated tracing prompt for it. See [Materialized Regions](./snt-stream#materialized-regions).
+
+#### Segmented Image...
+
+Runs fully automated tracing on a segmented image that is already open. A segmented image can be a binary mask or a thresholded image, where background pixels have been set to zero. See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) for details.
 
 #### Detect Soma(s)...
 Standalone tool for automatic soma/root detection in neuronal images, and can export results as a path node or ROI (point, contour, circle) for annotation or seeding autotracing. Options include:
@@ -168,58 +187,77 @@ Standalone tool for automatic soma/root detection in neuronal images, and can ex
 
 - **Output type** How results are exported: as a _Single-node path_ (for seeding autotracing), _Point ROI_, _Area ROI_ (contour from thresholding), or _Circular ROI_ (circle with EDT-derived radius)
 
-Remaining options are described in [Auto-tracing › Soma Detection](/plugins/snt/auto-tracing#soma-detection).
+Remaining options are described in [Auto-tracing › Soma Detection](/plugins/snt/auto-tracing#soma-detection). To add somas as [seeds](/plugins/snt/seeds), use *Guided Feature Detection...* or the [Seeds tab](#seeds-tab).
 
-#### Autotrace Segmented Image...
+#### Detect Features (Advanced)...
+Switches to the [Seeds tab](#seeds-tab), from which all detectors (somas, tips, tufts, roots, swellings, and maxima) can be run directly.
 
-Runs fully automated tracing on a segmented image that is already open. A segmented image can be a binary mask or a thresholded image, where background pixels have been set to zero. See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) for details.
+#### Intensity Image File(s)...
+Batch-capable variant that loads intensity images from a **file** or **directory**, traces a single cell per image using GWDT autotracing, and exports reconstructions as SWC files. Parameters are entered manually (see [Intensity Image...](#intensity-image) to learn them). See [Auto-tracing › Grayscale Images](/plugins/snt/auto-tracing#intensity-images) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
 
-#### Grayscale Image File(s)...
-Batch-capable variant that loads grayscale images from a **file** or **directory**, traces a single cell per image using GWDT autotracing, and exports reconstructions as SWC files. See [Auto-tracing › Grayscale Images](/plugins/snt/auto-tracing#grayscale-images) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
+#### Intensity Image File(s) (Multiple Cells)...
+Batch-capable variant that loads intensity images from a **file too large to be loaded into memory** (e.g., an OME-ZARR, or .IMS file) or **directory**, detects all soma locations, and traces each cell independently using GWDT autotracing with exclusion masks. Results are exported as SWC files (one per detected cell). Parameters are entered manually (see [Intensity Image (Multiple Cells)...](#intensity-image-multiple-cells) to learn them). See [Auto-tracing › Multiple Cells](/plugins/snt/auto-tracing#multiple-cells) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
 
-#### Grayscale Image File(s) (Multiple Cells)...
-Batch-capable variant that loads grayscale images from a **file too large to be loaded into memory** (e.g., an OME-ZARR, or .IMS file) or **directory**, detects all soma locations, and traces each cell independently using GWDT autotracing with exclusion masks. Results are exported as SWC files (one per detected cell). See [Auto-tracing › Multiple Cells](/plugins/snt/auto-tracing#multiple-cells) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
+#### Segmented Image File(s)...
 
-#### Autotrace Segmented Image File...
-
-Batch-capable variant that loads segmented images from a **directory**, traces each image, and exports the resulting reconstructions as SWC files. See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
-
+Batch-capable variant that loads segmented images from a **file** or **directory**, traces each image, and exports the resulting reconstructions as SWC files. Parameters are entered manually (see [Segmented Image...](#segmented-image) to learn them). See [Auto-tracing › Segmented Images](/plugins/snt/auto-tracing#segmented-images) and [Batch Processing](/plugins/snt/auto-tracing#batch-processing) for details.
 
 ### Analysis ›
 
-#### Atlas-based ›
-See [Analysis › Atlas-based Analysis](/plugins/snt/analysis#atlas-based-analysis).
+Lists commands that operate on complete cells (analyses operating on selected paths or sub-cellular structures are listed in the [Path Manager](#path-manager)'s *Analyze* menu). Commands are grouped under the *Measurements*, *Morphometry*, *Frequency Analysis*, *Atlas Annotations*, and *Visualization* section headers.
 
-#### Path-based ›
-See [Analysis › Path-based Analysis](/plugins/snt/analysis#path-based-analysis).
+#### Measure...
 
-#### Compare Reconstructions/Cell Groups...
-Allows morphometric comparisons of two single reconstruction files or multiple groups of reconstruction files (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
+Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details.
 
-#### Convex Hull
-See [Analysis › Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
+#### Quick Measurements
 
-#### Persistent Homology
-See [Analysis › Persistent Homology Analysis](/plugins/snt/analysis#persistent-homology).
-
-#### Root Angle Analysis
-See [Analysis › Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis).
+Shortcut for running {% include bc path='Measure...' %} with common metrics.
 
 #### Sholl Analysis.../Sholl Analysis (by Focal Point)...
 
-See [Analysis › Sholl Analysis](/plugins/snt/analysis#sholl-analysis).
+*Sholl Analysis...* runs the analysis using pre-defined focal points. *Sholl Analysis (by Focal Point)...* displays instructions on how to start the analysis from a specific node: right-click near a node and choose *Sholl Analysis at Nearest Node* from the [contextual menu](#image-contextual-menu). See [Analysis › Sholl Analysis](/plugins/snt/analysis#sholl-analysis).
 
 #### Strahler Analysis...
 
 See [Analysis › Strahler Analysis](/plugins/snt/analysis#strahler-analysis).
 
+#### Root Angle Analysis...
+See [Analysis › Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis).
 
-#### Utilities
+#### Persistent Homology...
+See [Analysis › Persistent Homology Analysis](/plugins/snt/analysis#persistent-homology).
+
+#### Convex Hull...
+See [Analysis › Convex hull Analysis](/plugins/snt/analysis#convex-hull-analysis).
+
+<span id="compare-reconstructionscell-groups"></span>
+
+#### Compare Arbors/Cell Groups...
+Allows morphometric comparisons of two single reconstruction files or multiple groups of reconstruction files (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
+
+#### Path-based ›
+Lists *Path Order Analysis* and *Path Properties: Export CSV...*. See [Analysis › Path-based Analysis](/plugins/snt/analysis#path-based-analysis).
+
+#### Cell-based Distributions...
+Computes frequency histograms for measurements of complete arbors. Same as {% include bc path='Path Manager|Analyze|Frequency Analysis|Cell-based Distributions...' %}, see [Frequency Analysis](#frequency-analysis-).
+
+#### Two-Dimensional Histograms...
+Computes distributions of two-dimensional (bivariate) data. Same as {% include bc path='Path Manager|Analyze|Frequency Analysis|Two-Dimensional Histograms...' %}, see [Frequency Analysis](#frequency-analysis-).
+
+#### Annotation Graph...
+Creates flow plots and Ferris-wheel diagrams from annotated trees (e.g., MouseLight data). See [Analysis › Annotation Graphs](/plugins/snt/analysis#annotations-graphs).
+
+#### Brain Area Frequencies...
+Distribution analysis of projection patterns across brain areas. See [Analysis › Atlas-based Analysis](/plugins/snt/analysis#atlas-based-analysis).
 
 #### Ontology Browser...
 Opens a standalone reference window for browsing brain-region ontologies (currently Allen CCF and Drosophila FBbt). The browser is intended for quickly looking up an acronym or ID while tracing or analyzing data.
 
 The browser is shared across ontology-aware features in SNT, including the [Reconstruction Viewer](/plugins/snt/reconstruction-viewer)'s atlas navigator and the [Delineations tab](#delineations-tab) when using atlas annotations.
+
+#### Cell-based Color Mapping...
+Color codes complete arbors using connectivity-dependent metrics. Same as {% include bc path='Path Manager|Analyze|Color Mapping|Cell-based Color Mapping...' %}, see [Color Mapping](#color-mapping-).
 
 #### Create Dendrogram
 Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [Analysis › Graph-based Analysis](/plugins/snt/analysis#graph-based-analysis) for details.
@@ -244,7 +282,7 @@ Creates multi-panel figures from chosen reconstructions, according to the follow
 
 <span id="plotter"></span>
 
-#### Reconstruction Plotter
+#### Reconstruction Plotter...
 
 _Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructions by plotting 2D projections of traced paths. Its major ability is to produce publication-quality (vector-based) renditions of neuronal reconstructions. A control panel  allows for adjustment of the spatial orientation of the tracing. By default, the plot is monochrome. If paths are assigned color tags, or the structure has been color-coded  use {% include bc path='Actions|Render final (colorized) plot' %} from the control panel to render a (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot. Features (accessed via plotter's contextual menu) include:
 <img align="right" src="/media/plugins/snt/snt-reconstruction-plotter.png" title="Reconstruction Plotter overview" width="50%" alt="Reconstruction Plotter overview" />
@@ -254,34 +292,42 @@ _Reconstruction Plotter_ is a whole-purpose 2D viewer for neuronal reconstructio
 - Color legends when color mappings are present
 - Can be combined in multi-panel viewers (mainly via scripting)
 
-#### Measure...
-
-Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details.
-
-#### Quick Measurements
-
-Shortcut for running {% include bc path='Measure...' %} with common metrics.
-
+#### More in Path Manager...
+Opens the [Path Manager](#path-manager) and reveals its *Analyze* menu, which lists analyses that operate on selected paths or sub-cellular structures.
 
 ### Scripts›
 
-Commands listing bundled and local scripts, as well as access to SNT's [Script Recorder](/plugins/snt/scripting#script-recorder). See [SNT: Scripting](/plugins/snt/scripting) for details.
+Lists bundled and local scripts, and provides access to script-authoring tools, including SNT's [Script Recorder](/plugins/snt/scripting#script-recorder). Commands are grouped under the following section headers. See [SNT: Scripting](/plugins/snt/scripting) for details:
+
+- **Templates** Bundled scripts, organized by category (`Analysis`, `Batch`, `Big_Data`, `Render`, `Skeletons_and_ROIs`, `Spines_and_Varicosities`, `Time-lapses`, `Tracing`, and `Misc`)
+
+- **Learn** *Demos* (teaching examples: save your work before running a demo mid-tracing) and *Recipes*
+
+- **All Scripts** *Full List* of scripts, and *Reload Scripts...*, which rescans the scripts directory for newly added scripts
+
+- **Develop** Script-authoring tools: *New Script* (*From Boilerplate...* creates a script in BeanShell, Groovy, or Python (Jython) from a template, and *From Clipboard...* creates one from the contents of the clipboard), *REPL* (a terminal to run and evaluate code in real time), and *Agentic Scripting* (tools for scripting SNT with AI coding agents: *API Lookup*, *Inspect Session*, *Download Agent Skill...*, and *Agentic Script Help*)
+
+- **Record... (Experimental)** Opens the Script Recorder
+
+- **About SNT Scripts...** Describes how the list of scripts is populated
 
 ### View›
 
-Contains commands for organizing tracing views on screen, plus commands for displaying cached data used for computation of paths, including:
+Contains commands for organizing tracing views on screen, plus commands for displaying cached data used for computation of paths. Commands are grouped under the *Windows* and *Views* section headers:
 
 - **{% include bc path='Arrange Dialogs' %}** Resets the on-screen positions of dialogs and widgets.
 
 - {{ crop }} **{% include bc path='Arrange Tracing Views' %}**  Resets the on-screen positions of tracing views.
 
-- {{ crop }} **{% include bc path='Hide Tracing Canvas| ' %}**  Allows toggling of the visibility of the three orthogonal view tracing panes as well as the Legacy 3D View window.
-
-- **{% include bc path='Display Secondary Image' %}** Displays the cached filtered image being used as secondary tracing layer.
-
 - **{% include bc path='Toggle Fiji Console' %}** Toggles the visibility of Fiji's Console. The console displays errors and exceptions as well as informational messages when _Debug mode_ is activated.
 
+- {{ crop }} **{% include bc path='Hide Tracing Views' %}**  Allows toggling of the visibility of the three orthogonal view tracing panes (XY, ZY, XZ) as well as the BDV, BVV, and Legacy 3D Viewer windows.
+
+- {{ crop }} **{% include bc path='Display Secondary Image' %}** Displays the cached filtered image being used as secondary tracing layer.
+
 ### Help›
+
+Lists the Command Palette, followed by commands for troubleshooting, learning, and exploring SNT, grouped under the *Troubleshoot*, *Learn*, *Develop*, and *Explore* section headers.
 
 ##### Command Palette
 
@@ -294,6 +340,35 @@ The Command Palette is the fastest way to access actions and discover their resp
 4. Press {% include key keys='Enter' %} to run it. If the <i>Reveal</i> button is toggled, the widget associated with the command (button, menu, etc.) is highlighted. This allows you to locate an entry in the GUI.
 
 By default, commands and actions are filtered using approximate string matching. Exact matching can be enabled by toggling the _Match Case/Whitespace_ buttons. Press the <i>Pin</i> button to display the Command Palette above all windows. Press the <i>Auto-Hide</i> button to keep the Palette open after running a command.
+
+The remaining commands are:
+
+- **Troubleshoot** [*Run SNT Doctor...*](#run-snt-doctor) (checks memory, compute, graphics, disk, network, and the SNT installation), *FAQs*, *Known Issues* (SNT's issue tracker), and *Ask a Question* (the [Image.sc Forum](https://forum.image.sc/tag/snt))
+
+- **Learn** Links to documentation pages: *Main Documentation Page*, *User Manual*, *Analysis*, *Auto-tracing*, *Big Data*, *Reconstruction Viewer*, *Complementary Tools*, *List of Shortcuts*, *Screencasts*, and *Walkthroughs*
+
+- **Develop** Links to developer resources: *Java API*, *Python API (PySNT)*, and *Scripting Documentation*
+
+- **Explore** *Computational Neuroanatomy*, *Implemented Algorithms*, *Release Notes*, and *SNT Manuscripts*
+
+- **About SNT...** Displays SNT's About dialog, which includes a _Run SNT Doctor..._ button
+
+##### Run SNT Doctor...
+
+The SNT Doctor reports what the current computer can be expected to handle, and is the first thing to run when SNT is slow, a 3D viewer misbehaves, or something fails. It is also available from the About dialog, and from notices that SNT displays when it detects a likely cause (e.g., insufficient memory). It runs a series of checks, each reported as _OK_, _Limited_, _Unavailable_, _Failed_ or _Unknown_, together with a tip on how to address the finding when there is one. A status other than _Unknown_ is only assigned when there is an objective cause (e.g., software OpenGL rendering, heap well below the computer's RAM). The checks cover:
+
+- **Java** and **Launcher**: Java version and architecture, and how Fiji was started
+- **Memory** and **Compute**: Memory available to Fiji/SNT and the largest image that can comfortably be processed, and the number of cores and threads
+- **Graphics**: Whether OpenGL is available and hardware-accelerated, which determines the speed of the 3D viewers
+- **Disk**: Free space and write access in the SNT workspace
+- **Network**: Whether online resources (demo images, remote datasets) can be reached
+- **Updates** and **Integrations**: State of the Fiji update sites, and of optional integrations
+- **Image**: Properties of the image being traced, if any, that may affect performance
+- **Sanity test**: Loads a demo neuron and traces a path in a synthetic image, to confirm that core functions work
+
+The report window then has options to attach the report to a new post on the [Image.sc Forum](https://forum.image.sc/tag/snt) or a new [GitHub](https://github.com/morphonets/SNT/issues) issue. Both require a free account. Review the report for private information (e.g., file paths) before posting.
+
+Tip: The same checks can be run from a script using `sc.fiji.snt.util.SNTDoctor.run()`.
 
 ## Main Tab
 
@@ -581,9 +656,14 @@ Described in [Curation Assistant](./curation#curation-assistant).
 
 ## Bookmarks Tab
 
-This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities) or as output from the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity-detection). The basic usage is as follows:
+This tab hosts the Bookmark Manager, a utility that stores image locations to be (re)visited during tracing (e.g., a location of an ambiguous branching point or an ambiguous cross-over between two neurites). Bookmarked locations can also be used as [spine/varicosity markers](/plugins/snt/spines-varicosities#manual-annotation) or as output from the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity). The basic usage is as follows:
 
 {% include notice icon="snt-stream" content="In [SNT Stream](./snt-stream), bookmarks are called _Markers_ so that they do not interfere with BDV/BVV's native bookmarks framework, but they function in the exact same way." %}
+
+{% capture bookmarks-vs-seeds %}
+**Bookmarks vs. seeds**: Bookmarks are locations that _you_ place and name by hand: they are certain, and carry only coordinates (X, Y, Z, C, T), a label, a color tag, and a display size. [Seeds](/plugins/snt/seeds) are typically produced by detectors or imported from other programs: they are _probabilistic_ candidates, with a confidence, radius, type, and source, that are meant to be filtered, curated, and used to drive [auto-tracing](/plugins/snt/seeds#using-seeds). Both tables share most of their commands, and bookmarks can be converted into seeds (see _Send to Seed Manager..._ below).
+{% endcapture %}
+{% include notice icon="info" content=bookmarks-vs-seeds %}
 
 <img align="right" width="300" src="/media/plugins/snt/snt-bookmarks-tab.png" alt="Bookmarks tab" title="Bookmarks tab" />
 
@@ -591,26 +671,36 @@ This tab hosts the Bookmark Manager, a utility that stores image locations to be
   - With traditional images: Right-click on the image and choose {% include bc path='Bookmark Cursor Position' %} from the image contextual menu (shortcut: {% include key key='Shift|B' %})
   - With [big data](./big-data)/[SNT Stream](./snt-stream) press {% include key key='M' %}. NB: A BVV/BDV viewer opened against a regular, already-open image does not support {% include key key='M' %}: bookmark from the original image as above
 
-- To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}
+- To visit a bookmarked location, double-click on its entry. The image will be centered at that position under the specified zoom in {% include bc path='Preferred Zoom Level (%)' %}. The _Go To Location..._ toolbar button zooms into a specific coordinate
 
-- To rename an existing bookmark, select it and start typing its new label. Alternatively, use
-{% include bc path='Rename Selected Bookmark..' %} command in the list right-click menu
+- To rename an existing bookmark, select it and start typing its new label. Alternatively, use {% include bc path='Rename...' %} in the list right-click menu
 
-- Use the {% include bc path='Import' %} button to load bookmarks from either: 1) a CSV file, 2) Existing ROIs in ImageJ's ROI Manager, or 3) Existing ROIs in the overlay of the image being traced. Note that when loading an area ROI, the bookmark is registered at the ROI's centroid
+- Use the toolbar's highlight toggle to display the bookmarked locations on the image (all of them, or only the selected ones)
 
-- Use the {% include bc path='Export' %} button to save the current list to either: 1) a CSV file, 2) ImageJ's ROI Manager or 3) the overlay of the active image. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
+- Use the {% include bc path='Import' %} button to load bookmarks from: 1) a CSV file, 2) Existing ROIs in ImageJ's ROI Manager, 3) Existing ROIs in the overlay of the image being traced, or 4) the workspace. Note that when loading an area ROI, the bookmark is registered at the ROI's centroid
 
-The right-click contextual menu of the Bookmark Manager also provides commands for consolidating, organizing, and analyzing bookmarks:
+- Use the {% include bc path='Export' %} button to save the current list to: 1) a CSV file, 2) ImageJ's ROI Manager, 3) the overlay of the active image, or 4) the workspace. Note that when images are saved as TIFF, ROIs are saved in the file's header, and automatically loaded by ImageJ when the image is open.
 
-- **{% include bc path='Colocalize...' %}** Matches bookmarks across different channels within a specified distance threshold, replacing matched groups with their centroids. This is useful for identifying co-labeled structures in multichannel images. Only bookmarks from different channels are matched.
+### Bookmarks Table Menu
 
-- **{% include bc path='Grouping Tags...' %}** Assigns distinct colors to bookmarks, either one color per entry or one color per group of matching labels. Groups can be defined by the exact label (e.g. "M1"/"M1"), a common leading token (e.g. "Soma 1"/"Soma-2" → "Soma"), or a common trailing token (e.g. "Left Soma"/"Right Soma" → "Soma"), making it easy to color-code bookmarks that follow a shared naming convention.
+{% include key keys='Right Click' %} on the table opens a menu of commands that act on the selected bookmarks (or on all of them, if none is selected). Most of its commands work as described for the [Seeds table contextual menu](/plugins/snt/seeds#contextual-menu), except that bookmarks have no confidence or source. These are:
 
-- **{% include bc path='Merge...' %}** Merges nearby bookmarks within each channel independently, replacing clustered bookmarks with their centroids. This is useful for consolidating redundant or overlapping bookmarks that were placed on the same structure within a single channel.
+- **Select/Deselect All**, and **Delete...**
+- **Combine**: _Merge by Distance..._, _Merge Selection into One_, and _Colocalize..._ (matching bookmarks across channels within a distance threshold: useful to identify co-labeled structures in multichannel images)
+- **Analyze**: _Nearest Neighbor Distribution..._
+- **Table Controls**: Resize/Reset Columns, and Detach/Dock Table
 
-- **{% include bc path='Nearest Neighbor Distribution...' %}** Computes the distribution of nearest neighbor distances between (selected) bookmarks.
+Commands specific to bookmarks are:
 
-- **{% include bc path='Sort by Distance' %}** Submenu for sorting the bookmarks table by distance, either to a reference point you specify, or to the currently selected entry.
+- **Rename...** Edits the label of the selected bookmark. If several bookmarks are selected, they are all assigned a common label followed by a sequential number
+- **Adjust**
+  - **Tag ›**: Assigns a color tag to the selected bookmarks. _Grouping Tags..._ assigns distinct colors, either one color per entry or one color per group of matching labels. Groups can be defined by the exact label (e.g. "M1"/"M1"), a common leading token (e.g. "Soma 1"/"Soma-2" to "Soma"), or a common trailing token (e.g. "Left Soma"/"Right Soma" to "Soma"), making it easy to color-code bookmarks that follow a shared naming convention
+  - **Size ›**: _Set..._, _Increase Size..._, and _Decrease Size..._ control the size used to display the selected bookmarks
+- **Analyze**
+  - **Sort by Distance ›**: Sorts the table by distance, either to a reference location you specify, or to the currently selected entry
+- **Transfer**
+  - **Send to Seed Manager...** Converts the selected bookmarks into [seeds](/plugins/snt/seeds) (source: _bookmark_), after prompting for their type (default: _tip_), radius, and confidence (default: 1). The bookmarks can optionally be removed from the list
+  - **Copy snt:// Link to Selected Location** Copies a link that flies to the selected bookmark
 
 
 ## 3D Tab
@@ -658,6 +748,9 @@ The Legacy 3D Viewer is a functional tracing canvas and allows images to be trac
 <img align="right" width="300" src="/media/plugins/snt/snt-notes-tab.png" alt="Notes tab" title="Notes tab" />
 
 This tab hosts the Delineations Manager, a utility that allows measuring proportions of paths within other structures defined by ROIs or neuropil annotations (e.g., cortical layers, biomarkers, or counterstaining landmarks). Delineation analyses are described in detail in [Delineation Analysis](/plugins/snt/delineations).
+
+## Seeds Tab
+Described in [Seeded Tracing Assistant](./seeds#seeded-tracing-assistant). It lists seeds (probabilistic detections such as somas, tips, or tufts) in a table with a [contextual menu](./seeds#contextual-menu), and provides commands to [import](./seeds#importing-seeds) and [export](./seeds#exporting-seeds) seeds, [detect features](./seeds#detecting-features), and [trace from seeds](./seeds#auto-tracing-from-seeds).
 
 <span id="notepad"></span>
 
@@ -871,6 +964,8 @@ For algorithmically-detected quality control (QC) locations (invalid radii, puta
 
 ### Edit ›
 
+Lists commands for editing paths, grouped under the *Connectivity*, *Attributes*, *Geometry*, and *Repair* section headers (*Delete...*, *Duplicate...*, and *Rename...* are listed above them).
+
 #### Delete...
 
 Removes selected Path(s) from the Path Manager. Note that children of selected paths are not deleted by default unless selected. To include them, choose _Append Children To Selection_ from Path Manager's contextual menu. Also, if no Paths are selected, all Paths are deleted.
@@ -889,11 +984,7 @@ Duplicates the selected path with options to duplicate just a sub-segment or a f
 <img align="right" width="300" src="/media/plugins/snt/snt-duplicate-path.png" alt="Duplicate... (v4.3)" title="Duplicate... (v4.3)" />
 
 #### Rename...
-Renames the selected Path. Only one Path may be renamed at a time because path names are expected to be unique.
-
-#### Rename by Pattern...
-Does bulk renaming of paths using replace-by-pattern. Case-matching and wildcard matches are supported and read from
-the [filter toolbar](#filter-toolbar).
+Renames the selected Path. Path names are expected to be unique, so only one Path can be renamed at a time. If multiple Paths are selected (or if none are, in which case all Paths are considered), the command does bulk renaming using replace-by-pattern instead. Case-matching and wildcard matches are supported and read from the [filter toolbar](#filter-toolbar).
 
 #### Auto-connect...
 
@@ -933,7 +1024,6 @@ Use Path Orientation (hold {% include key keys='O' %}) to verify path orientatio
 {% endcapture %}
 {% include notice icon="info" content=hotip %}
 
-
 #### Reverse...
 
 Reverses (flips) the orientation of primary path(s) so that the starting node becomes the end-node and vice versa. Can be used to correct 'anti-sense' paths created by full-automated tracing. Options:
@@ -949,7 +1039,7 @@ Changes channel & time positions of selected path(s).
 
 Assigns a constant radius to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values.
 
-#### Specify No. Spine\Varicosity Markers...
+#### Specify No. Spine/Varicosity Markers...
 
 Assigns the no. of markers (e.g., spines or varicosities) to be associated to selected path(s) (see [Spine/Varicosity/Label Analysis](/plugins/snt/spines-varicosities)).
 
@@ -986,21 +1076,20 @@ Type of neurite compartment (*Axon*, *(Basal) Dendrite*, *Soma*, etc.), as per [
 
 #### Color ›
 
-A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign unique (distinctive) colors to a group of paths. Metric-based color mapping can also be applied using the {% include bc path='Analyze|Color Mapping...' %} command. Note that paths containing multiple colors (e.g., after node color mapping or after tagging individual nodes) are assigned a multicolor gradient icon in the Path Manager list.
+A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Additional commands in this menu include *Other...* (tags paths with a color not listed in the swatches), *Distinct Colors* (assigns unique colors to a group of paths), and *Distinct Colors (CVD)* (same as above, using colors that are safe for color vision deficiency). Metric-based color mapping can also be applied using the {% include bc path='Analyze|Color Mapping...' %} command. Note that paths containing multiple colors (e.g., after node color mapping or after tagging individual nodes) are assigned a multicolor gradient icon in the Path Manager list.
 
 #### Image Properties ›
 
-Information on hyperstack position details (e.g., channel, frame or slice labels on which a path was traced).
+Information on hyperstack position details (e.g., channel, frame or slice labels on which a path was traced): *Traced Channel*, *Traced Frame*, *Z-slice of First Node*, and *Slice Labels* (applies slice labels, a.k.a. image subtitles, as custom tags. Note that most images do not have meaningful slice labels unless they have been explicitly set).
 <img align="right" src="/media/plugins/snt/snt-proofreading-toolbar.png" title="Proofreading toolbar" width="300" alt="Proofreading toolbar" />
 
 #### Morphometry ›
 
-Morphometric properties, such as *Path length*, *Path mean radius* or *[Path order](/plugins/snt/analysis#path-order-analysis)*.
+Morphometric properties: *Arbor ID*, *Extension Angle...*, *Length*, *Mean Radius*, *No. of Children*, *No. of Spine/Varicosity Markers*, and *[Path Order](/plugins/snt/analysis#path-order-analysis)*.
 
 #### Proofreading Toolbar
 
 The proofreading toolbar allows for path-reviewing tags to be applied to selected paths in a convenient manner. Only one proofreading tag can be applied, because the previous assigned tag is replaced by the most recent assignment. Press "None" to remove existing tags, right-click on the toolbar and choose {% include bc path='Change Colors...' %} to edit tags. The toolbar also includes an option to summarize current tag assignments, by listing the proportions of tagged paths.
-
 
 #### Other...
 Ad-hoc tag(s) can be typed in a dialog prompt (comma-separated list supported).
@@ -1033,9 +1122,13 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 
 The {% include bc path='Refine/Fit|' %} menu contains several commands:
 
-#### Fit Path(s).../Un-fit Path(s)/Apply Existing Fit
+#### Fit Path(s)...
 
-This is a dynamic menu item that  will change depending on which Path(s) are currently selected. You can use it to 1) Fit selected Path(s), 2) Un-fit Path(s) that have already been fitted, or 3) Toggle cached fits that have not overridden the original path.
+Fits selected path(s) to the signal, i.e., computes refined radii and/or node positions (see [Parameters...](#parameters)). Existing fits are re-used unless you choose to recompute them.
+
+#### Un-fit Path(s)
+
+Reverts selected path(s) to their raw (unfitted) geometry. This operation is reversible: fits are kept in memory and can be re-applied using *Fit Path(s)...*. Use [Discard Fit(s)...](#discard-fits) to delete them permanently.
 
 #### Explore/Preview Fit
 
@@ -1048,10 +1141,6 @@ Carves out a region of the image along and around each Path node, generating an 
 - **Modal radius of possible fits** The mode of the radii of all the possible fits attempted by the algorithm at the given location. If the fitting fails, this mode can be used as a 'best guess' radius for that location (as per  {% include bc path='Refine|Parameters...' %}). It is displayed in orange (dashed circumference) and is centered on the original node coordinates.
 - **Fallback strategy** The strategy for radius value fallback as specified in  {% include bc path='Refine|Parameters...' %}.
 - **Fitted coordinates and radius** Displayed in green when fit is valid, in red when invalid (filled circumference and dot). With invalid fits, the displacement between fitted and original coordinates is highlighted by a connecting line.
-
-#### Discard Fit(s)...
-
-Deletes the existing fit(s) for the selected Path(s), or all fits if no Paths are selected.
 
 #### Parameters...
 
@@ -1075,10 +1164,25 @@ This command sets fitting options and should be run before computing a fit. Opti
 
 - **Multithreading** The number of parallel threads to be used by SNT while fitting. By default, it is the number of threads specified in [Preferences](#misc)
 
+#### Discard Fit(s)...
+
+Deletes the existing fit(s) for the selected Path(s), or all fits if no Paths are selected. This operation cannot be undone: use *Un-fit Path(s)* to temporarily revert to raw geometry.
+
+#### Flatten Fit(s)...
+
+Makes the fitted geometry of selected path(s) permanent: the fitted nodes replace the original ones, and the raw (unfitted) geometry is permanently discarded. A prompt asks for confirmation and, if some of the selected paths are currently displaying their raw geometry, whether those should be flattened as well.
+
 #### Correct Radii...
 
 <img align="right" width="550px" src="/media/plugins/snt/correct-radii.png" alt="Correct Radii..." title="Correct Radii..." />
 If the fitting fails at a certain location (e.g., because the shape of the cross-section is too irregular, or because the fitted centroid is too far off) the program will skip that node moving on to the next. Skipped nodes will retain their original coordinates but their radius may become unset (see _Radius fallback_ in [parameters](#parameters)). This command collects such nodes from selected paths, and assigns them new radii using linear interpolation based on remaining nodes with valid radii. It can apply the interpolation immediately, or simply preview it. Note that by default _NaN_ and negative values are always corrected. The criterion specified in the prompt is used as an extra correction condition.
+
+#### Re-trace With A*...
+
+Re-traces selected path(s) with [A\* search](./auto-tracing#intensity-images), treating each path's existing nodes as waypoints and re-deriving the geometry between them via a fresh search. Intended for paths traced manually against streamed data (e.g., in [SNT Stream](./snt-stream)), where running A\* interactively is often impractical: trace by eye first, then re-trace once A\* is practical (e.g., once the region is cached locally, or as an overnight batch job).
+
+There is no parameter prompt: the command reuses whichever cost function/search settings are already configured (see [Parameters...](#parameters)). When multiple paths are selected, they are re-traced in parallel, all sharing the same settings so results stay consistent even if the configuration is changed while the batch is still running.
+Successfully re-traced paths are renamed with a `[Retraced*]` suffix; any that fail are left untouched, with a summary logged to the Console.
 
 #### Multispectral Refinement...
 
@@ -1110,19 +1214,12 @@ The refinement dialog groups its settings into several categories:
   - _Auto-tune from traced paths_: Automatically adjusts max. radius, color-match stringency, and signal intensity range based on the actual path data. Manual values above are used as starting points and may be overridden per-path during refinement. This is recommended when processing many paths with varying properties.
   - _No. of parallel threads_: Number of threads used during refinement. Defaults to the number available on your computer. Set to 0 to reset to the default.
 
-#### Re-trace With A*...
-
-Re-traces selected path(s) with [A\* search](./auto-tracing#grayscale-images), treating each path's existing nodes as waypoints and re-deriving the geometry between them via a fresh search. Intended for paths traced manually against streamed data (e.g., in [SNT Stream](./snt-stream)), where running A\* interactively is often impractical: trace by eye first, then re-trace once A\* is practical (e.g., once the region is cached locally, or as an overnight batch job).
-
-There is no parameter prompt: the command reuses whichever cost function/search settings are already configured (see [Parameters...](#parameters)). When multiple paths are selected, they are re-traced in parallel, all sharing the same settings so results stay consistent even if the configuration is changed while the batch is still running.
-Successfully re-traced paths are renamed with a `[Retraced*]` suffix; any that fail are left untouched, with a summary logged to the Console.
-
 ### Fill ›
 
 This menu contains options to start the filling process for selected paths. For detailed instructions see [Filling: Step-By-Step Instructions](/plugins/snt/walkthroughs#filling).
 
 ### Process ›
-This menu lists commands pertaining to ROIs and image processing routines.
+This menu lists commands pertaining to ROIs and image processing routines, grouped under the *Convert & Export* and *Semantic Segmentation* section headers.
 
 #### Convert to ROIs...
 
@@ -1153,23 +1250,51 @@ Outputs a binary image that is a topographic skeleton, ie, it generates an empty
 
 Creates a 'linear image' from the pixels associated with a single paths, similarly to [ImageJ's Straighten](/plugins/straighten) command. Useful to e.g., display intensity gradients or featured landmarks along a neurite.
 
-#### Load Labkit With Selected Paths...
+#### Export Selection as SWC...
+
+Exports the selected subset of Path(s) as an [SWC](/plugins/snt/faq#what-is-a-swc-file) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
+
+#### Load Labkit With Selected Path(s)...
 
 Uses selected Path(s) to train -- in [Labkit](/plugins/labkit) -- a random forest classifier algorithm for semantic segmentation aimed at classifying neurite-associated pixels. Described in [Machine Learning](machine-learning).
 
-#### Load TWS With Selected Paths...
+#### Load TWS With Selected Path(s)...
 
 Uses selected Path(s) to train -- in [TWS](/plugins/tws) -- a random forest classifier algorithm for semantic segmentation aimed at classifying neurite-associated pixels. Described in [Machine Learning](machine-learning).
 
 ### Analyze ›
 
-This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths and associated branches. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first.
+This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths and associated branches, grouped under the *Statistics & Plots*, *Visualization*, *Intensity Profilers*, and *Specialized* section headers. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first.
+
+#### Measurements ›
+
+Commands for retrieving a table of summary statistics for selected paths/cells: *Measure Cell(s)...* (complete arbors) and *Measure Path(s)...* (selected path(s), independently of their connectivity). See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details.
+
+#### Frequency Analysis ›
+Commands for retrieving histograms of selected path/branch metric(s): *Cell-based Distributions...* (complete arbors), *Path-based Distributions...* (selected path(s), independently of their connectivity), and *Two-Dimensional Histograms...*. The first two commands prompt for the following settings:
+
+- *Measurement* Drop-down menu with the available metrics.
+
+- *Polar* Whether the histogram should be plotted using polar coordinates. Typically, this assumes that the data being profiled ranges between 0 and 360 degrees (e.g., bifurcation angles)
+
+*Two-Dimensional Histograms...* displays two-dimensional (bivariate) histograms in which two distributions are plotted.
+
+{% include gallery content=
+"
+/media/plugins/snt/snt-combined-histograms.png | Distributions of branch-based metrics...
+/media/plugins/snt/snt-2d-histogram.png | Two-dimensional histogram
+"
+%}
+
+#### Multimetric Plot...
+
+Plots a Path metric against several others.
 
 #### Color Mapping ›
 
 <img align="right" width="400" src="/media/plugins/snt/snt-color-mapping-prompt.png" alt="Color Mapping" title="Color Mapping" />
 
-This menu lists commands for mapping morphological traits into lookup tables that are then used to render reconstructions. It contains commands to map path-based metrics or branch-based metrics: _Path-based Color Mapping_ accepts _any_ type of structures (i.e., any group of selected paths, even those belonging to different cells) but offers limited mapping metrics, while _Branch-based Color Mapping_ requires structures to be valid mathematical trees (with more mapping metrics available). These commands prompt for the following settings:
+This menu lists commands for mapping morphological traits into lookup tables that are then used to render reconstructions. It contains commands to map path-based or cell-based metrics: _Path-based Color Mapping..._ accepts _any_ type of structures (i.e., any group of selected paths, even those belonging to different cells) but offers limited mapping metrics, while _Cell-based Color Mapping..._ requires structures to be valid mathematical trees (with more mapping metrics available). These commands prompt for the following settings:
 
 - *Color by* Drop-down menu containing the metrics which inform the color mapping.
 
@@ -1179,33 +1304,7 @@ This menu lists commands for mapping morphological traits into lookup tables tha
 
 - *Rec. Plotter Color Map* If active, opens a [Reconstruction Plotter](#reconstruction-plotter) instance with the selected paths mapped to the selected LUT.
 
-The *Remove Existing Color Mapping...* command removes existing color mapping from the selected paths.
-
-
-#### Frequency Analysis ›
-Commands for retrieving histograms of selected path/branch metric(s). These commands prompt for the following settings:
-
-- *Measurement* Drop-down menu with the available metrics.
-
-- *Polar* Whether the histogram should be plotted using polar coordinates. Typically, this assumes that the data being profiled ranges between 0 and 360 degrees (e.g., bifurcation angles)
-
-The menu also lists a command for displaying two-dimensional (bivariate) histograms in which two-distributions are plotted.
-
-{% include gallery content=
-"
-/media/plugins/snt/snt-combined-histograms.png | Distributions of branch-based metrics...
-/media/plugins/snt/snt-2d-histogram.png | Two-dimensional histogram
-"
-%}
-
-
-#### Measurements ›
-
-Commands for retrieving a table of summary statistics for selected paths/cells. See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details.
-
-#### Multimetric Plot...
-
-Plots a Path metric against several others.
+The *Remove Existing Color Mapping(s)...* command removes existing color mapping from the selected paths.
 
 #### Node Profiler...
 <img align="right" src="/media/plugins/snt/snt-node-and-path-profiler.png" width="700px" alt="Node and Path Profilers (v4.3)" title="Node and Path Profilers (v4.3)" />
@@ -1229,21 +1328,44 @@ NB:
 
 #### Spine/Varicosities/Labels ›
 
-This menu contains tools for detecting and analyzing spines, varicosities, boutons, and other features along or around traced paths, as well as proximity contacts with labeled structures from segmentation images. It includes three automated detectors and tools for working with manual annotations:
-- **Detect Maxima Around Paths...**: Detection of intensity peaks in perpendicular cross-sections outside the path centerline (off-skeleton)
-- **Detect Swellings Along Paths...**: Detection of radius swellings along the neurite centerline (on-skeleton)
-- **Detect Label Proximity...**: Detection of contact points between paths and labeled surfaces from a segmentation image (e.g., from [Labkit](/plugins/labkit), [Weka](/plugins/tws), or cellpose). Computes calibrated distance transforms for each label and identifies path nodes within a configurable distance threshold. Supports both threshold mode (all nodes within distance) and closest-approach mode (one detection per path–label pair)
-- **Commands for handling manually placed markers**
+This menu contains tools for detecting and analyzing spines, varicosities, boutons, and other features along or around traced paths, as well as proximity contacts with labeled structures from segmentation images. Commands are grouped as follows:
+
+- **Automated Detectors**
+  - **Detect Label Proximity...**: Detection of contact points between paths and labeled surfaces from a segmentation image (e.g., from [Labkit](/plugins/labkit), [Weka](/plugins/tws), or cellpose). Computes calibrated distance transforms for each label and identifies path nodes within a configurable distance threshold. Supports both threshold mode (all nodes within distance) and closest-approach mode (one detection per pair of path and label)
+  - **Detect Maxima Around Paths...**: Detection of intensity peaks in perpendicular cross-sections outside the path centerline (off-skeleton)
+  - **Detect Swellings Along Paths...**: Detection of radius swellings along the neurite centerline (on-skeleton)
+
+- **Post-Annotation** Commands that assume spine/varicosity markers have already been assigned to selected path(s), either manually or by one of the detectors above:
+  - **Compute Densities from Annotations...**: Associates markers (multi-point ROIs or bookmarked locations) with their closest path and tallies the counts
+  - **Color Code Paths Using Densities...**: Color codes selected paths by their average marker density
+  - **Density Profiles...**: Plots density profiles of the assigned markers
+
+- **External Tools**
+  - **Start Spot Spine...**: Starts [Spot Spine](/plugins/spot-spine), for complete shape analysis of dendritic spines
+
+- **Spine/Varicosity Analysis Help...**: Offline instructions on how to count and analyze spines and varicosities
 
 These tools are detailed in [Spine/Varicosity/Label Analysis](/plugins/snt/spines-varicosities).
 
 #### Time-lapses ›
 
-This menu contains commands tools for analyzing time-lapse videos, and assume that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/walkthroughs#time-lapse-analysis) for more details.
+This menu contains commands for analyzing time-lapse videos, and assumes that the same structure has been traced across multiple frames. Refer to [Step-by-step instructions](/plugins/snt/walkthroughs#time-lapse-analysis) for more details. Commands are grouped as follows:
 
-#### Save Subset as SWC...
+- **Generic commands** (do not require paths to be matched across time)
+  - **Color Code Paths Across Time...**: Color codes selected paths by the frame in which they were traced
+  - **Time Profile (Intensities)...**: Creates [intensity profiles](#path-profiler) across time (e.g., to monitor calcium dynamics along a neurite)
+  - **Time Profile (Morphometry)...**: Monitors a measurement (e.g., cable length) across time
 
-Exports the selected subset of Path(s) as an [SWC](/plugins/snt/faq#what-is-a-swc-file) file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
+- **Neurite-based Analysis** (requires paths to be matched across time)
+  - **Match Paths Across Time...**: Tags the paths of a time series so that those associated with the same neurite share a common tag
+  - **Summarized Growth...**: Variant of *Time Profile (Morphometry)...* in which measurements are grouped by matched neurite
+  - **Growth Analysis...**: Growth rate and growth phase analysis of matched paths (see [Growth Analysis](/plugins/snt/analysis#growth-analysis))
+
+- **Time-lapse Utilities Help**: Opens the time-lapse [walkthrough](/plugins/snt/walkthroughs#time-lapse-analysis)
+
+#### More in Analysis Menu...
+
+Brings the main SNT dialog to the front and reveals its [Analysis menu](#analysis-), which lists analyses that operate on whole cells (e.g., Sholl, Strahler, Root Angle).
 
 ## Filter Toolbar
 
