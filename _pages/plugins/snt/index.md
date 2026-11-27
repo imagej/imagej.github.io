@@ -16,7 +16,8 @@ doi: 10.1038/s41592-021-01105-7
 SNT[^1] is ImageJ's framework for tracing, visualization, quantitative analyses, and modeling of neuronal morphology. For tracing, SNT supports modern multidimensional microscopy data, semi-automated and automated routines, and options for editing traces. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data.
 
 {% capture text%}
-**SNT is based on [publications](/plugins/snt/faq#how-do-i-cite-snt). Please [cite](/plugins/snt/faq#how-do-i-cite-snt) SNT in your own research!**
+**SNT is based on [publications](/plugins/snt/faq#how-do-i-cite-snt). Please [cite](/plugins/snt/faq#how-do-i-cite-snt) SNT in your own research!**<br><br>
+To learn how to analyze reconstructions, see [Computational Neuroanatomy](https://morphonets.org/computational-neuroanatomy/), a free curriculum of runnable notebooks powered by [PySNT](/plugins/snt/pysnt).
 {% endcapture %}
 {% include notice icon="info" content=text %}
 
@@ -28,9 +29,9 @@ The [source repository](https://github.com/morphonets/SNT) contains more details
 
 {% include gallery align="fill" content=
 "
-/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from both [grayscale](./auto-tracing#grayscale-images) and [segmented](./auto-tracing#segmented-images) images
+/media/plugins/snt/snt-auto-tracing-overview.png | [Fully automated tracing](/plugins/snt/auto-tracing) from both [grayscale](./auto-tracing#intensity-images) and [segmented](./auto-tracing#segmented-images) images
 /media/plugins/snt/snt-autotracing-multiple-somata.webp | [Fully automated tracing](/plugins/snt/auto-tracing) of [multiple cells in the same image](./auto-tracing#multiple-cells)
-/media/plugins/snt/snt-autotracing-groundtruth-learning.png | [Auto-tuned tracing](./auto-tracing#learning-parameters-from-selected-paths): Learned tracing parameters from manually traced paths
+/media/plugins/snt/snt-autotracing-groundtruth-learning.png | [Auto-tuned tracing](./auto-tracing#learning-parameters-from-example-paths): Learned tracing parameters from manually traced paths
 /media/plugins/snt/snt-soma-detection.png | Automated [soma detection](/plugins/snt/auto-tracing#soma-detection)
 /media/plugins/snt/snt-4D-examples.png | [Semi-automated tracing](/plugins/snt/walkthroughs#semi-automated-tracing): Support for multi-channel and [timelapse](/plugins/snt/walkthroughs#time-lapse-analysis) images
 /media/plugins/snt/snt-seeded-tracing-assistant.png | [Seeded Tracing](./seeds)
@@ -88,6 +89,7 @@ SNT's documentation is extensive. Please use the navigation bar on top of the pa
 | **[Analysis](/plugins/snt/analysis)**                           | Overview of GUI-based analyses                                                                                                     |
 | **[Autotracing](/plugins/snt/auto-tracing)**                    | Documentation on fully automated reconstructions                                                                                   |
 | **[Big Data](/plugins/snt/big-data)**                           | Overview of big data support                                                                                                       |
+| **[Computational Neuroanatomy](https://morphonets.org/computational-neuroanatomy/)** | Hands-on curriculum in Python (PySNT notebooks): from a single reconstruction to atlas-scale analysis |
 | **[Contributing](/plugins/snt/contribute)**                     | How to contribute to SNT                                                                                                           |
 | **[Curation](/plugins/snt/curation)**                           | Curation Assistant (Real-time quality control while tracing)                                                                       |
 | **[Delineations](/plugins/snt/delineations)**                   | Delineation Analysis                                                                                                               |
