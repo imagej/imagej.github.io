@@ -127,6 +127,6 @@ In addition to defined delineations, plots and tables may include two other cate
 {% include notice icon="info" content="Topological constraints may not allow certain metrics to be computed for a particular delineation. E.g., a metric that requires a [graph-theoretic tree](./analysis#graph-based-analysis) may not be computed for a delineation defined by a non-contiguous ROI." %}
 
 {% capture proximity-relation %}
-Delineation analysis measures _aggregate_ properties of paths within labeled regions (lengths, node counts, distance statistics). To identify _specific contact points_ where paths approach or touch labeled structures, use the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity-detection), which emits navigable bookmarks or ROIs at individual contact locations.
+Delineation analysis measures _aggregate_ properties of paths within labeled regions (lengths, node counts, distance statistics). To identify _specific contact points_ where paths approach or touch labeled structures, use the [Label Proximity Detector](/plugins/snt/spines-varicosities#label-proximity), which emits navigable bookmarks or ROIs at individual contact locations.
 {% endcapture %}
 {% include notice icon="info" content=proximity-relation %}

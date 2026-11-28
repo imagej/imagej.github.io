@@ -21,6 +21,8 @@ This is simple but impactful. Join [forum.image.sc](https://forum.image.sc/), fo
 ### Report Bugs
 Did something fail? Please report it, either on the [forum](https://forum.image.sc/tag/snt) or on [GitHub](https://github.com/morphonets/SNT/issues). Don't forget to include a [minimal, complete, verifiable example](/learn/faq#i-reported-an-issue-but-it-is-still-not-fixed-why-not).
 
+First, run {% include bc path='Help|Run SNT Doctor...' %} (also available from the About dialog). It checks memory, graphics, disk, network, and the SNT installation, and its report is the information developers most often have to ask for. Its _Report Issue_ button copies the report to the clipboard, and opens a new forum post or GitHub issue where you can paste it. See [Run SNT Doctor](./manual#run-snt-doctor) for details. Review the report for private information (e.g., file paths) before posting.
+
 ### Contribute Documentation
 Did you notice a typo? Is something unclear or outdated? Are examples missing? Please make a suggestion! Either by following the _Edit this page_ option on the [top](#top) of the page, reaching out on the [forum](https://forum.image.sc/tag/snt), or opening an issue on [GitHub](https://github.com/morphonets/SNT/issues). Please don't be shy. All changes are trackable and undoable.
 

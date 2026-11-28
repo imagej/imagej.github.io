@@ -8,13 +8,13 @@ forum-tag: snt
 update-site: Neuroanatomy
 ---
 
-{% capture version%}
-**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
-{% endcapture %}
-{% include notice icon="pysnt" content=version %}
-
 [PySNT](https://pysnt.readthedocs.io/en/latest/) is a Python wrapper for SNT that enables direct integration with the Python software ecosystem, including NumPy, SciPy, scikit-image, and more.
 For details, see the [PySNT documentation page](https://pysnt.readthedocs.io/en/latest/).
+
+{% capture curriculum %}
+New to PySNT? Start with [Computational Neuroanatomy](https://morphonets.org/computational-neuroanatomy/): a free, self-paced series of runnable notebooks, ordered by increasing complexity, that teaches neuroanatomy in Python using real data.
+{% endcapture %}
+{% include notice icon="pysnt" content=curriculum %}
 
 <p align="center">
     <a href="https://pysnt.readthedocs.io/en/latest/">

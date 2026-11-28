@@ -14,20 +14,30 @@ tags: snt,tracing,neuroanatomy,maxima,labels,segmentation
 
 
 {% capture version%}
-**This page was last revised for [version 5.0.10](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice icon="snt" content=version %}
 
 # Spine/Varicosity/Label Analysis
 
 {% capture spot-spine%}
-Currently, SNT supports detection, annotation, and density analysis of bright puncta around paths. Complete shape analysis of dendritic spines can be performed using [Spot Spine](/plugins/spot-spine).
+SNT supports detection, annotation, and density analysis of bright puncta around paths, and of swellings along them. Complete shape analysis of dendritic spines can be performed using [Spot Spine](/plugins/spot-spine).
 {% endcapture %}
 {% include notice icon="info" content=spot-spine %}
 
+Features can be detected automatically, using the commands in the Path Manager's {% include bc path='Analyze|Spine/Varicosities/Labels' %} menu, or annotated manually. In both cases, counts are tallied per path, and can then be [analyzed](#analyzing-annotations) as densities. Automatic detections can also be sent to the [Seeds tab](./seeds#seeded-tracing-assistant) for curation.
 
-## Automated Detection
-SNT can automatically detect intensity maxima (spines, varicosities, synaptic puncta) in the vicinity of traced paths using the **Peripath Detector**. At each path node, a perpendicular cross-section is sampled from the image, masked to an annular region around the neurite, and analyzed for local maxima via prominence filtering. Detections from adjacent cross-sections are deduplicated automatically. The detection algorithm is the same used by ImageJ's {% include bc path='Process|Find Maxima...' %}
+| Method | Finds | Operates on | Requires | Output |
+|--------|-------|-------------|----------|--------|
+| [Maxima Around Paths](#maxima-around-paths) | Bright puncta near the neurite (e.g., spines, synaptic puncta) | Selected paths (or all) and image | Ideally, fitted radii | ROIs, Bookmarks, Seeds |
+| [Swellings Along Paths](#swellings-along-paths) | Local widenings of the neurite (e.g., boutons, varicosities) | Selected paths (or all) | Radii | ROIs, Bookmarks, Seeds |
+| [Label Proximity](#label-proximity) | Contacts between paths and labeled structures | Selected paths (or all) and label image | Label image | ROIs, Bookmarks |
+| [Manual Annotation](#manual-annotation) | Any feature marked with multipoint ROIs | Multipoint ROIs or bookmarks | None | Counts only |
+
+## Detecting Features
+
+### Maxima Around Paths
+The _Peripath Detector_ finds intensity maxima (spines, varicosities, synaptic puncta) in the vicinity of traced paths. At each path node, a perpendicular cross-section is sampled from the image, masked to an annular region around the neurite, and analyzed for local maxima via prominence filtering. Detections from adjacent cross-sections are deduplicated automatically. The detection algorithm is the same used by ImageJ's {% include bc path='Process|Find Maxima...' %}
 
 {% capture maxima-demo%}
 You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing _Hippocampal neuron (Neuronal receptors)_ or _Hippocampal neuron (Synaptic labeling)_ datasets:
@@ -45,7 +55,7 @@ To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Maxima Aroun
 
 - **Inner radius** The inner boundary of the search annulus. In _Multiplier_ mode, this is a fraction of each node's fitted radius (e.g., 0.5 starts searching at half the local dendrite thickness, catching maxima near the membrane edge). In _Absolute_ mode, a fixed radius in calibrated units. Default multiplier: 1.0
 
-- **Outer radius** The outer boundary of the search annulus. In _Multiplier_ mode, a multiple of each node's radius (e.g., 2.0 searches up to 2× the local thickness). In _Absolute_ mode, a fixed radius in calibrated units. Default multiplier: 2.0
+- **Outer radius** The outer boundary of the search annulus. In _Multiplier_ mode, a multiple of each node's radius (e.g., 2.0 searches up to twice the local thickness). In _Absolute_ mode, a fixed radius in calibrated units. Default multiplier: 2.0
 
 {% capture maxima-membrane%}
 To detect puncta specifically at the neurite membrane, use _Multiplier mode_ with a narrow band around 1.0 (e.g., inner = 0.95, outer = 1.05). This creates a thin annulus centered on the membrane edge, assuming paths have been traced with accurate radii.
@@ -56,12 +66,10 @@ To detect puncta specifically at the neurite membrane, use _Multiplier mode_ wit
 
 - **Merging distance** Minimum separation between detections in physical units. Nearby detections are merged, keeping the brightest. Set to 0 for automatic (defaults to the outer radius)
 
-- **Output** Results can be exported as _ROIs_ (added to the ROI Manager, grouped per path with path name and color) or as _Bookmarked locations_ (added to the [Bookmark Manager](/plugins/snt/manual#bookmarks-tab))
-
-Detected counts are automatically assigned to each path's spine/varicosity tally. Paths with [fitted radii](./manual#refinefit-) will produce better results, as the annulus adapts to local neurite thickness.
+Paths with [fitted radii](./manual#refinefit-) give better results, as the annulus adapts to local neurite thickness. Results are sent to the [selected output](#output-options).
 
 
-### Advanced: Torus Mask Segmentation
+#### Advanced: Torus Mask Segmentation
 
 The annular search region used by the Peripath Detector can also be exported as a binary mask via scripting. This generates a 3D torus-shaped volume around each path, defined by the same inner and outer radius parameters used for detection. The mask can then be used to extract or quantify signal in the vicinity of traced neurites independently of detection (e.g., to measure mean fluorescence intensity around dendrites, or to isolate peri-neuronal signal for downstream analysis).
 
@@ -69,22 +77,21 @@ Note that the mask is a voxel-level approximation of the continuous search annul
 
 See {% include bc path='Scripts|Demos|Peripath Detection Demo' %} ({% include bc path='Templates|Neuroanatomy|Analysis|Peripath Detection Demo' %} in the Script Editor) for a working example that runs detection and generates the torus mask on one of the demo datasets.
 
+### Swellings Along Paths
 
-## Along-Path Detection (Radius Swellings)
-
-SNT can also detect swellings (boutons, varicosities, blebs) **along** traced paths using the _Along-Path Detector_, which analyzes longitudinal radius profiles. The algorithm works as follows:
+The _Along-Path Detector_ finds swellings (boutons, varicosities, blebs) **along** traced paths by analyzing longitudinal radius profiles. The algorithm works as follows:
 - At each node, the node radius is compared to the average radius of its neighbors within a sliding window
 - A node is flagged as a swelled candidate when its radius exceeds the neighbor average by a configurable factor
-- Optionally, a intensity (brighness) threshold can filter candidates further
+- Optionally, an intensity (brightness) threshold can filter candidates further
 - Adjacent candidates are merged via non-maximum suppression
 
 Unlike the Peripath Detector (which searches for bright *off-skeleton* [outside path centerline] maxima in perpendicular cross-sections), the Along-Path Detector identifies *on-skeleton* [along path centerline] swellings, i.e., regions where the neurite itself is wider than its surroundings. This is particularly suited for axonal varicosities and en-passant boutons.
 
-To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Swellings Along Paths...' %} Select the path(s) of interest. Note that **Paths must have radii**: Paths without radii are skipped. 
+To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Swellings Along Paths...' %} select the path(s) of interest. Note that **paths must have radii**: paths without radii are skipped. Both fitted and non-fitted radii are accepted, but [fitted radii](./manual#refinefit-) are recommended.
 
 The command's dialog provides the following parameters:
 
-- **Swelling factor** A node is flagged when its radius exceeds the average of its neighbors by at least this factor. Default: 1.5 (i.e., 1.5× the local average). Lower values increase sensitivity; higher values restrict detection to more prominent swellings
+- **Swelling factor** A node is flagged when its radius exceeds the average of its neighbors by at least this factor. Default: 1.5 (i.e., 1.5 times the local average). Lower values increase sensitivity; higher values restrict detection to more prominent swellings
 
 - **No. of neighbors** Total number of neighboring nodes used to compute the local average radius, split evenly on each side of the test node. Default: 10. Larger values smooth out local noise but may miss closely spaced features
 
@@ -92,18 +99,15 @@ The command's dialog provides the following parameters:
 
 - **Intensity channel** The image channel for intensity sampling (1-based; only shown for multi-channel images and when intensity filtering is enabled)
 
-- **Merging distance** Minimum separation between detections in physical units. Nearby detections are merged, keeping the one with the highest score. Set to 0 for automatic (defaults to 2× mean radius across all paths)
+- **Merging distance** Minimum separation between detections in physical units. Nearby detections are merged, keeping the one with the highest score. Set to 0 for automatic (defaults to twice the mean radius across all paths)
 
 - **Exclude junctions/tips** When enabled, nodes near branch points and path tips are excluded from detection. These regions may have naturally enlarged radii that produce false positives. The exclusion zone extends by the half-window size on each side of every junction and at each path endpoint. Default: enabled
 
-- **Output** Results can be exported as _ROIs_ (added to the ROI Manager, grouped per path) or as _Bookmarked locations_ (added to the [Bookmark Manager](/plugins/snt/manual#bookmarks-tab))
+Results are sent to the [selected output](#output-options).
 
-Detected counts are automatically assigned to each path's spine/varicosity tally, just as with the Peripath Detector.
+### Label Proximity
 
-
-## Label Proximity Detection
-
-SNT can detect **contact points** between traced paths and labeled surfaces from a segmentation image using the _Label Proximity Detector_. This is useful for identifying where neurites approach or contact structures segmented by tools such as [Labkit](/plugins/labkit), [Weka](/plugins/tws), cellpose, or similar. The detector computes a calibrated Euclidean Distance Transform (EDT) for each unique label in the image, then identifies path nodes that are within a configurable distance of a label boundary.
+The _Label Proximity Detector_ finds **contact points** between traced paths and labeled surfaces from a segmentation image. This is useful for identifying where neurites approach or contact structures segmented by tools such as [Labkit](/plugins/labkit), [Weka](/plugins/tws), cellpose, or similar. The detector computes a calibrated Euclidean Distance Transform (EDT) for each unique label in the image, then identifies path nodes that are within a configurable distance of a label boundary.
 
 To run {% include bc path='Analyze|Spine/Varicosities/Labels|Detect Label Proximity...' %}, select the path(s) of interest and ensure a label (segmentation) image is open in ImageJ. The label image should contain non-negative integer values, with 0 as background and each non-zero value identifying a distinct structure.
 
@@ -111,11 +115,9 @@ The command's dialog provides the following parameters:
 
 - **Label image** A drop-down listing all open images that pass label-image validation (non-negative integers, bounded number of classes). Images whose spatial dimensions do not match the tracing image are excluded. Hyperstacks are also excluded (only the first channel/frame would be considered)
 
-- **Distance threshold** Maximum distance (in calibrated units) from a label boundary for a path node to be flagged as a contact point. Two modes are available: when set to a **positive value**, all nodes within that distance of any label boundary are detected (_threshold mode_); when set to **0**, only the single closest node per path–label pair is detected (_closest-approach mode_). Default: 0
+- **Distance threshold** Maximum distance (in calibrated units) from a label boundary for a path node to be flagged as a contact point. Two modes are available: when set to a **positive value**, all nodes within that distance of any label boundary are detected (_threshold mode_); when set to **0**, only the single closest node per path-label pair is detected (_closest-approach mode_). Default: 0
 
 - **Merging distance** Minimum separation between detections in physical units. Nearby detections are merged, keeping the one closest to the label boundary. Set to 0 to disable merging
-
-- **Output** Results can be exported as _Bookmarked locations_ (added to the [Bookmark Manager](/plugins/snt/manual#bookmarks-tab)) or as _ROIs_ (added to the ROI Manager, grouped per path with path name and color)
 
 {% capture label-note %}
 The label image and the tracing image should share the same spatial dimensions and calibration. If dimensions differ, a warning is displayed but detection proceeds. The EDT is computed using the label image's pixel spacing, so results are in calibrated (physical) units.
@@ -127,10 +129,23 @@ Label proximity detection is complementary to [Delineation Analysis](/plugins/sn
 {% endcapture %}
 {% include notice icon="info" content=label-relation %}
 
+Output is restricted to _Bookmarked locations_ and _ROIs_ (see [Output Options](#output-options)). Seeds are not available for this detector.
+
+## Output Options
+
+All detectors report their results using the same _Output_ choice:
+
+- **ROIs** Added to the ROI Manager, grouped per path and tagged with the path name and color. Requires an image displayed on the canvas
+- **Bookmarked locations** Added to the [Bookmark Manager](./manual#bookmarks-tab), for quick navigation to each detection
+- **Seed point** Added to the [Seeds tab](./seeds#seeded-tracing-assistant), and the tab is brought to the front. Only available for maxima and swellings
+
+Regardless of the choice, detected counts are always added to each path's spine/varicosity tally.
+
+Seeds are the preferred output when detections need to be reviewed or reused. Each seed is stored with the type (_maximum_ or _swelling_), the detector (_peripath-detector_ or _along-path-detector_) and a confidence derived from detection scores (see [Detecting Features](./seeds#detecting-features) in the Seeds page). This allows detections to be [filtered by confidence](./seeds#confidence-filtering), merged, analyzed through the Seeds table [contextual menu](./seeds#contextual-menu) (e.g., nearest-neighbor distributions), reviewed in the Curation Assistant, and exported to CSV. Counts in the path tally are not changed by curating seeds.
 
 ## Manual Annotation
 
-This approach uses manually placed multi-Point ROIs along paths as markers for neurite features. Currently only counts and densities are supported. A typical workflow proceeds as follows:
+This approach uses manually placed multi-point ROIs along paths as markers for neurite features. Only counts and densities are supported. Once markers are placed, they can be assigned to paths as described in [Analyzing Annotations](#analyzing-annotations). A typical workflow proceeds as follows:
 
 {% capture spines-demo%}
 You can follow these instructions using {% include bc path='File|Load Demo Dataset/Tutorial...' %} and choosing the _L-systems fractal (Toy neuron)_ dataset.
@@ -140,13 +155,6 @@ You can follow these instructions using {% include bc path='File|Load Demo Datas
 1. Run {% include bc path='Analyze|Spine/Varicosities/Labels|Spine/Varicosity Analysis Help...' %} in the Path Manager to have offline instructions available in a dedicated dialog
 2. Pause SNT from the [contextual menu](/plugins/snt/manual#contextual-menu), and select the multipoint tool from ImageJ's toolbar
 3. Click over the features to be counted. Point placement may not need to be accurate, but with 3D images points should be placed on the same plane (Z-plane) as the feature being counted. Skip this step if you are running a programmatic routine that automatically annotates locations
-4. Once you have placed all the points, select the Path(s) associated with the features (or select none, if all Paths are to be considered) and run Path Manager's {% include bc path='Analyze|Spine/Varicosities/Labels|Compute Densities from Annotations...' %}. The dialog allows you to specify:
-   
-    - **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager. It also allows [bookmarked locations](/plugins/snt/manual#bookmarks-tab) to be parsed as markers
-   
-    - **Max. association distance** The maximum allowed distance between a point and its path in physical units. This option is ignored if set to -1 (the default). This works as follows: for every point ROI, the closest path node is identified. The ROI is only considered to be associated with a path if its distance to the closest path node is less than or equal to _Max. association distance_.
-   
-    - **Add extracted counts to ROI Manager** Generates new ROIs from the assigned counts and adds them to the ROI Manager. This allows you to validate the extraction and ensure the assignments are correct, as each ROI gets tagged by its associated Path.
 
 NB:
 
@@ -163,3 +171,33 @@ NB:
   - Use {% include bc path='Edit|Selection|Select None' %} to delete a multi-point selection
   - Use {% include bc path='Edit|Selection|Restore Selection' %} to restore a deleted multipoint selection
   - {% include key key='double click' %} on the Multi-point tool in the ImageJ toolbar for further options
+
+## Analyzing Annotations
+
+Once counts are assigned to paths, the following commands in {% include bc path='Analyze|Spine/Varicosities/Labels' %} can be used.
+
+### Compute Densities from Annotations
+
+Use {% include bc path='Analyze|Spine/Varicosities/Labels|Compute Densities from Annotations...' %} to assign point markers (multipoint ROIs or bookmarks) to paths. This is needed for manual annotations, and for locations stored elsewhere. Select the path(s) associated with the features (or none, if all paths are to be considered) before running the command. The dialog allows you to specify:
+
+- **Source of Multi-point ROI(s)** The location of the markers. Particularly useful if the ROIs are being generated programmatically and stored in the ROI Manager. It also allows [bookmarked locations](/plugins/snt/manual#bookmarks-tab) to be parsed as markers
+
+- **Max. association distance** The maximum allowed distance between a point and its path in physical units. This option is ignored if set to -1 (the default). This works as follows: for every point ROI, the closest path node is identified. The ROI is only considered to be associated with a path if its distance to the closest path node is less than or equal to _Max. association distance_.
+
+- **Add extracted counts to ROI Manager** Generates new ROIs from the assigned counts and adds them to the ROI Manager. This allows you to validate the extraction and ensure the assignments are correct, as each ROI gets tagged by its associated Path.
+
+### Color Code Paths Using Densities
+
+{% include bc path='Analyze|Spine/Varicosities/Labels|Color Code Paths Using Densities...' %} color maps paths by their spine/varicosity density (count divided by path length). It opens the Color Mapping prompt with the metric preset, so LUT, range, and display options work as described in [Color Mapping](./manual#color-mapping-).
+
+### Density Profiles
+
+{% include bc path='Analyze|Spine/Varicosities/Labels|Density Profiles...' %} plots the spine/varicosity density (or number of spines) against a path metric. The prompt allows you to choose:
+
+- **X-Axis Metric** Path ID, channel, frame, number of branch points, contraction, extension angles, length, mean radius, order, surface area, number of nodes, or volume
+- **Y-Axis Metric** Path spine density or number of spines, plus up to three optional additional Y metrics
+- **Output** Plot, Table, or Plot and Table
+
+### Further Help
+
+{% include bc path='Analyze|Spine/Varicosities/Labels|Start Spot Spine...' %} launches [Spot Spine](/plugins/spot-spine) for complete shape analysis of dendritic spines. {% include bc path='Analyze|Spine/Varicosities/Labels|Spine/Varicosity Analysis Help...' %} opens offline instructions.

@@ -9,7 +9,7 @@ update-site: Neuroanatomy
 tags: snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy
 ---
 {% capture version%}
-**This page was last revised for [version 5.0.0](https://github.com/morphonets/SNT/releases)**.
+**This page was last revised for [version 5.1.0](https://github.com/morphonets/SNT/releases)**.
 {% endcapture %}
 {% include notice icon="snt" content=version %}
 
@@ -20,7 +20,7 @@ SNT provides a couple ways to measure reconstructions. To measure complete cells
 
 The reason for distinguishing between cell-based (i.e., branch-based) and path-based measurements is flexibility: Path-based measurements can be performed on any structures, even those with loops, while cell-based measurements require the structure to be a [graph-theoretic tree](#graph-based-analysis). The bulk of SNT measurements is described in [Metrics](/plugins/snt/metrics).  Measurements available in the GUI are typically single-value metrics. Many others measurements are available via [scripting](/plugins/snt/scripting).
 
-A convenience _Quick Measurements_ command also exists ( {% include bc path='Analysis| '%} menu in the main SNT dialog or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
+A convenience _Quick Measurements_ command also exists ({% include bc path='Analysis|Quick Measurements'%} in the main SNT dialog or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer), in which common metrics are immediately retrieved using default settings without prompts.
 
 Batch measurements of reconstructions can be accomplished via scripting. See, e.g., the [bundled template script](/plugins/snt/scripting#bundled-templates) *Measure\_Multiple\_Files.py*, and related batch scripts for examples.
 
@@ -49,7 +49,7 @@ Notes on SNT charts and plots:
 
 <img align="right" width="300px" src="/media/plugins/snt/snt-compare-groups-prompt.png" alt="SNT Compare Reconstructions/Cell Groups prompt" title=" " />
 SNT can compare up to six groups of cells. The entry point for this type of comparison is twofold:
-- **{% include bc path='Utilities|Compare Reconstructions/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
+- **{% include bc path='Analysis|Compare Arbors/Cell Groups...'%}** in the main SNT dialog. This includes a convenience option to compare single reconstruction files.
 - **{% include bc path='Neuronal arbors|Load & Compare Groups...'%}** in Reconstruction Viewer, allowing groups to be tagged, and imported into a common scene while being compared.
 
 The dialog  prompt for this feature allows selection of up to six directories containing reconstruction files (SWC, TRACES, JSON, NDF). The metric to compare against is chosen from the *Metric* drop-down menu. Optionally, it is possible to  restrict the analysis to specific neurite compartments. After making your selections, press *OK* to run the analysis. The result typically includes:
@@ -80,11 +80,11 @@ Sholl Analysis has a dedicated [documentation page](./sholl) detailing [paramete
 {% endcapture %}
 {% include notice icon="info" content=sholl %}
 
-In the main SNT dialog, Sholl commands are available in the [Analysis](manual#analysis-) and [image contextual](manual#image-contextual-menu) menus and include:
+In the main SNT dialog, Sholl commands are available in the [Analysis](./manual#analysis-) and [image contextual](./manual#image-contextual-menu) menus and include:
 
-- **{% include bc path='Sholl Analysis...'%}** Analyzes cells based on a set of pre-defined, morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*). Note that this assumes the relevant morphology tag(s) have been assigned to the set of paths being analyzed. Since the center of analysis is only determined after the prompt has been dismissed, preview of sampling shells may not be available.
+- **{% include bc path='Analysis|Sholl Analysis...'%}** Analyzes cells based on a set of pre-defined, morphology-based focal points (e.g., *Soma*, *Root node(s): Primary apical dendrite(s)*). Note that this assumes the relevant morphology tag(s) have been assigned to the set of paths being analyzed. Since the center of analysis is only determined after the prompt has been dismissed, preview of sampling shells may not be available.
 
-- **{% include bc path='Sholl Analysis (by Focal Point)...'%}** Analyzes cells on an _exact_, user-defined focal point. It is described on the following section.
+- **{% include bc path='Analysis|Sholl Analysis (by Focal Point)...'%}** Analyzes cells on an _exact_, user-defined focal point. It is described on the following section.
 
 - **{% include bc path='Sholl Analysis at Nearest Node'%}** Coarser alternative to {% include bc path='Sholl Analysis (by Focal Point)...'%}, run from the image contextual menu by right-clicking _near_ a node (Shortcut: {% include key keys='Alt|Shift|A' %}.
 
@@ -100,7 +100,7 @@ For precise positioning of the center of analysis:
 
 NB: The default {% include key keys='Alt|Shift' %} modifier can be simplified in the _Options_ tab of the main dialog.
 
-The Sholl dialog created by this approach is a variant of the dialog created by running the {% include bc path='Sholl|Sholl Analysis (From Tracings)...'%} from the _Neuroanatomy Shortcuts_ panel, with a couple of changes:
+The Sholl dialog created by this approach is a variant of the dialog created by running the {% include bc path='Sholl Analysis (Tracings)...'%} from the _Neuroanatomy Shortcuts_ panel, with a couple of changes:
 
 1. Since the center of analysis is defined precisely on an image, radius step size can be previewed
 2. The *Path filtering* drop-down menu provides additional options to restrict the analysis to the subset of paths selected in the Path Manager
@@ -159,7 +159,7 @@ Atlas-based analyses require reconstruction nodes to be tagged with neuropil IDs
 
 
 ### Brain Area Frequencies
-This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog, or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer) summarizes projection patterns across brain areas by computing frequency histograms of how often a morphometric trait (no. of tips, cable length, etc.) occurs across brain regions (neuropil labels). Such histograms can be obtained for groups of cells, isolated cells, or parts thereof.
+This command ({% include bc path='Analysis|Brain Area Frequencies...'%} in the main dialog, or {% include bc path='Analyze & Measure| '%} in Reconstruction Viewer) summarizes projection patterns across brain areas by computing frequency histograms of how often a morphometric trait (no. of tips, cable length, etc.) occurs across brain regions (neuropil labels). Such histograms can be obtained for groups of cells, isolated cells, or parts thereof.
 
 {% include gallery align="fill" content=
 "
@@ -169,7 +169,7 @@ This command ({% include bc path='Analysis|Atlas-based| '%} menu in main dialog,
 %}
 
 ### Annotations Graphs
-Annotations Graphs rely on brain annotations (i.e., neuropil labels) and are typically used to obtain unbiased, semi-quantitative summaries of projectomes or relationships between brain areas. Annotation graphs can be generated for a single cell or groups of cells. There are three major types of annotation graphs reporting neurite occupancy across brain areas/neuropil regions: 1) Sankey (flow) diagrams, 2) Ferris wheel diagrams, and 3) Boxplots:
+Annotations Graphs ({% include bc path='Analysis|Annotation Graph...'%} in the main dialog) rely on brain annotations (i.e., neuropil labels) and are typically used to obtain unbiased, semi-quantitative summaries of projectomes or relationships between brain areas. Annotation graphs can be generated for a single cell or groups of cells. There are three major types of annotation graphs reporting neurite occupancy across brain areas/neuropil regions: 1) Sankey (flow) diagrams, 2) Ferris wheel diagrams, and 3) Boxplots:
 
 {% include gallery align="center" content=
 "
@@ -196,7 +196,7 @@ The viewer provides controls for orientation, zoom level, panning, vertex editin
 
 Typically, the most common types of graphs handled by _Graph Viewer_ are:
 
- - **Graphs based on morphology**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Utilities|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer). Typically, dendrograms are generated for single cells
+ - **Graphs based on morphology**: {% include wikipedia title="Dendrogram" %}s can be obtained from single rooted tree structure, and provide a high-level overview of neurite branching topology. In the GUI, dendrograms can be created from {% include bc path='Analysis|Create Dendrogram'%} in the main SNT dialog or {% include bc path='Analyze &amp; Measure|Create Dendrogram'%} in [Reconstruction Viewer](/plugins/snt/reconstruction-viewer). Typically, dendrograms are generated for single cells
 
  - **Graphs based on brain annotations** As mentioned [above](#annotations-graphs), these rely on brain annotations (i.e., neuropil labels). Annotation graphs can be generated for a single cell or groups of cells
 
@@ -260,14 +260,14 @@ A root angle is defined as the angle between a neurite segment (defined centripe
 
 - [Centripetal bias](./metrics#root-angles-centripetal-bias), [Balancing factor](./metrics#root-angles-balancing-factor), and [Mean direction](./metrics#root-angles-mean-direction) are then computed from the von Mises fit
 
-The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-angle-analysis) in the main dialog, Reconstruction Viewer's [Analyze & Measure](/plugins/snt/reconstruction-viewer#analyze--measure) menu, or [template scripts](/plugins/snt/scripting#bundled-templates). The screenshot below depicts the output of the *Analysis › Root Angle Analysis* template script:
+The analysis can be performed from the [Analysis menu](/plugins/snt/manual#root-angle-analysis) ({% include bc path='Analysis|Root Angle Analysis...'%}) in the main dialog, Reconstruction Viewer's [Analyze & Measure](/plugins/snt/reconstruction-viewer#analyze--measure) menu, or [template scripts](/plugins/snt/scripting#bundled-templates). The screenshot below depicts the output of the *Analysis › Root Angle Analysis* template script:
 
 {% include img align="center" src="/media/plugins/snt/snt-root-angle-analysis.png" caption="Root Angle Analysis outputs."%}
 
 
 # Growth Analysis
 
-Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matched across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapse Utilities](./manual#time-lapses-) menu.
+Growth Analysis provides detailed time-lapse analysis of neuronal  patterns and requires traced paths to be matched across time frames, as detailed in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough. The Analysis is accessed through the [Path Manager](./manual#path-manager)'s [Time-lapses](./manual#time-lapses-) menu ({% include bc path='Analyze|Time-lapses' %}).
 
 {% capture timelapse-demo%}
 For parameter validation and configuration comparisons, load the _Hippocampal neuron (DIC timelapse)_ demo dataset ({% include bc path='File|Load Demo Dataset/Tutorial...' %})
@@ -276,13 +276,13 @@ For parameter validation and configuration comparisons, load the _Hippocampal ne
 
 ## Prerequisites
 
-- **Time-matched paths**: Paths must be tagged using the {% include bc path='Match Paths Across Time...'%} command first, so that all paths in the timelapse sequence associated with the same neurite are tagged with a common neurite label, e.g., "{neurite #1}", "{neurite #2}", etc, as described in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough.
+- **Time-matched paths**: Paths must be tagged using the {% include bc path='Analyze|Time-lapses|Match Paths Across Time...'%} command first, so that all paths in the timelapse sequence associated with the same neurite are tagged with a common neurite label, e.g., "{neurite #1}", "{neurite #2}", etc, as described in the [Time-lapse analysis](./walkthroughs#time-lapse-analysis) walkthrough.
 - **Sufficient time points**: At least 3 time points per neurite for meaningful analysis. Monitoring changes in extension angles typically requires at least 4 time points
 
 Data generated outside SNT can also be analyzed:
 1. Import all the reconstruction files associated with the time series
-2. Apply "{neurite #}" tags using {% include bc path='Match Paths Across Time...'%}
-3. Run {% include bc path='Growth Analysis...'%}
+2. Apply "{neurite #}" tags using {% include bc path='Analyze|Time-lapses|Match Paths Across Time...'%}
+3. Run {% include bc path='Analyze|Time-lapses|Growth Analysis...'%}
 {% include img align="center" src="/media/plugins/snt/snt-growth-analysis.png" caption="Growth Analysis outputs."%}
 
 ## Classification Algorithm

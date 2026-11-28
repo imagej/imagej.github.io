@@ -23,12 +23,12 @@ The following operations are currently supported:
 | Operation | Status | Comments |
 |-----------|--------|----------|
 | Manual and semi-automated tracing | Supported (experimental)<sup>1</sup> | Multi-dimensional images have not been thoroughly tested |
-| Automated tracing | Supported (experimental) | See [Auto-tracing](./auto-tracing#grayscale-images)<sup>1,2</sup> |
+| Automated tracing | Supported (experimental) | See [Auto-tracing](./auto-tracing#intensity-images)<sup>1,2</sup> |
 | Tracing along way-points | Supported | |
 | [Path optimization](./manual#refinefit-) | Supported | See [Re-trace With A*](./manual#re-trace-with-a) |
 | 3D Visualization: Interactive re-slicing browser | Supported via [BigDataViewer](./manual#big-data-viewer) | |
 | 3D Visualization: Interactive volume viewer | Supported via [BigVolumeViewer](./manual#big-volume-viewer) and [sciview](./manual#sciview) | Includes [Slab View](#slab-view) for restricting rendering to a thin, adjustable region of the volume |
-| Stream-specific workflows | Supported (experimental) | [Materialized crops](./snt-stream#materialized-crops), [channel unmixing](./snt-stream#channel-unmixing), and [Quick Connect](./snt-stream#editing) |
+| Stream-specific workflows | Supported (experimental) | [Materialized regions](./snt-stream#materialized-regions), [channel unmixing](./snt-stream#channel-unmixing), and [Quick Connect](./snt-stream#editing) |
 | Multidimensional operations | Limited support | Tracing handles one active channel/frame at a time for performance reasons. Commands that require exposing all channels/frames to be available at once may require [data crops](#limitations-and-idiosyncrasies) |
 
 <sup>1</sup>For collaborative tracing, please use [HortaCloud](https://hortacloud.org/): This is SNT's development team recommended tool for tracing Terabyte-size datasets in a collaborative environment
@@ -44,11 +44,11 @@ Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the 
 
 - **Secondary volume**: Optional. The local path _or_ remote URL to a second image volume. Useful for loading a processed version of the main volume, or a secondary channel saved as a separate file
 
-- **Reconstruction file(s)**: Optional. Either a single file ([TRACES, SWC, JSON, Neurolucida XML](./manual#load-tracings-)), or a folder/.zip archive of several such files. Coordinates are assumed to be properly scaled: use the _Import_ commands if an offset/scaling factor is needed. Reconstructions can also be [imported later](./manual#load-tracings-) when tracing is enabled
+- **Reconstruction(s)**: Optional. Either a single file ([TRACES, SWC, JSON, Neurolucida XML](./manual#load-tracings-)), or a folder/.zip archive of several such files. Coordinates are assumed to be properly scaled: use the _Import_ commands if an offset/scaling factor is needed. Reconstructions can also be [imported later](./manual#load-tracings-) when tracing is enabled
 
-- **Markers file**: Optional. A CSV file containing [bookmarked](./manual#bookmarks-tab) locations. Markers can also be imported later on
+- **Markers**: Optional. A CSV file containing [bookmarked](./manual#bookmarks-tab) locations. Markers can also be imported later on
 
-- **Seeds file**: Optional. A CSV file with candidate tracing [seeds](./seeds). Requires _Enable tracing (SNT Stream)_
+- **Seeds**: Optional. A CSV file with candidate tracing [seeds](./seeds) (header: `x,y,z,confidence,radius`). Requires _Enable tracing (SNT Stream)_
 
 - **Viewer type**: Either **Big Data Viewer (BDV)**, an interactive re-slicing browser, or **Big Volume Viewer (BVV)**, a 3D volume renderer. The main differences are:
 
@@ -72,11 +72,11 @@ Choose _Big Data..._ from the [Shortcuts Window](./manual#snt-commands). In the 
 
 ## Limitations and Idiosyncrasies
 
-- **One channel/frame at a time**: for performance reasons, one channel/frame is streamed for tracing at once. Commands that require all channels/frames available simultaneously (e.g., [Multispectral Refinement](./manual#multispectral-refinement)) require [materialized regions](./manual#materialize-regions). 
+- **One channel/frame at a time**: for performance reasons, one channel/frame is streamed for tracing at once. Commands that require all channels/frames available simultaneously (e.g., [Multispectral Refinement](./manual#multispectral-refinement)) require [materialized regions](./manual#materialized-regions). 
 - **Fixed search algorithm**: the A* search algorithm is used for interactive tracing; the alternate NBA*/Fast Marching options available for in-core images may not be offered in Stream mode
 - **Cached image statistics**: Access to cost-function tuning and [image-statistics options](./manual#algorithm-settings) remains available. However, since _Compute Now For Whole Image_ scans the entire streamed dataset once, it can be _slow_ depending on dataset size and network/disk speed. Use _Compute Real-Time_ (the default) instead: It recalculates local statistics as you trace new regions.
 - **3D Scene recentering on click**: whether/how the view recenters as you place tracing points is configurable from the toolbar's options menu (_Never_ / _Adaptive_ / _Always_). _Adaptive_ is the recommended default for streamed data: it skips recentering for clicks that already land close to the focal plane, and briefly gates subsequent clicks after a recenter fires, giving tile streaming time to catch up
-- **Path fitting and automated tracing**: Supported the same way as for in-core images; see [Auto-tracing](./auto-tracing#grayscale-images) and [Path optimization](./manual#refinefit-)
+- **Path fitting and automated tracing**: Supported the same way as for in-core images; see [Auto-tracing](./auto-tracing#intensity-images) and [Path optimization](./manual#refinefit-)
 
 
 ## Slab View
