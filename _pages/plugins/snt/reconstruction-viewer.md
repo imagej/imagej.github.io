@@ -63,7 +63,7 @@ The Control pane is the Reconstruction Viewer equivalent to the [Path Manager](/
 Note that only interactive instance of the viewer display the pane. Those generated programmatically via scripting may omit it. The pane is organized as follows:
 
 ## Scene Controls
-This menu provides control over the rendered scene.
+This menu provides control over the rendered scene. It is organized into four sections: _View_, _Appearance_, _Scene_ and _Utilities_.
 <img align="right" src="/media/plugins/snt/snt-recviewer-scene-controls.png" alt="Scene Controls" title="Scene Controls" width="300" />
 
 ### Fit to Visible Objects
@@ -115,11 +115,14 @@ Removes all objects from the scene (this action is undoable).
 ### Duplicate Scene
 Stores the current scene into a new non-interactive instance of the viewer to allow side-by-side rendering of detailed scenes.
 
+### Save Scene (Experimental)...
+Saves the current scene to disk.
+
 ### Sync Path Manager Changes
 This option is only available when the viewer was initialized from SNT. It ensures any pending changes performed in the Path Manager percolate into the 3D scene. Shortcut: {% include key keys='CTRL|SHIFT|S' %}
 
 ## Neuronal Arbors
-This menu relates to the import, customization and management of reconstructions and is organized into three sections.
+This menu relates to the import, customization and management of reconstructions and is organized into four sections: _Add_, _Style_, _Utilities_ and _Remove_. Demo reconstructions can be loaded using the toolbar button at the top of the pane (also listed in the [Command Palette](#command-palette) as _Load Demo(s)..._).
 <img align="right" src="/media/plugins/snt/snt-recviewer-arbor-controls.png" alt="Neuronal Arbors" title="Neuronal Arbors" width="300" />
 
 ### Add Neuronal Arbors
@@ -133,14 +136,12 @@ Imports and renders reconstruction files in a directory (filename pattern matchi
 #### Load & Compare Groups
 Allows import and rendering of groups of cells while performing morphometric comparisons between groups (including statistical reports and two-sample t-test/one-way ANOVA analysis). Color-coded montages of analyzed groups can also be generated. It is a modified alias for {% include bc path='Utilities|Compare Reconstructions...'%} in the [tracing UI](/plugins/snt/manual#compare-reconstructionscell-groups). See [Comparing Reconstructions](/plugins/snt/analysis#comparing-reconstructions) for details.
 
-#### Load Demo(s)...
-Loads [demo](/plugins/snt/manual#load-demo-dataset) subsets that can be open directly into the viewer.
-
 #### Load From Database ›
 Allows import and rendering of reconstruction files fetched from the [FlyCircuit](http://www.flycircuit.tw/), [InsectBrain](https://www.insectbraindb.org/), [MouseLight](https://ml-neuronbrowser.janelia.org/), and [NeuroMorpho](https://neuromorpho.org/) remote databases.
 
-### Customize & Adjust Neuronal Arbors
-This sections lists commands to modify the way reconstructions are displayed (colors, transparencies, etc.).
+### Style Neuronal Arbors
+<span id="customize--adjust-neuronal-arbors"></span>
+This section lists commands to modify the way reconstructions are displayed (colors, transparencies, etc.).
 
 #### All Parameters...
 Allows customization of color, transparency and thickness of neurites in a single dialog
@@ -148,13 +149,16 @@ Allows customization of color, transparency and thickness of neurites in a singl
 #### Color...
 Changes the (opaque) color of selected reconstructions.
 
+#### Transparency...
+Sets the transparency (as percentage) of selected reconstructions.
+
 #### Color Mapping ›
 This menu includes commands that apply morphometric color mapping to selected reconstructions, so that a quantitative trait gets mapped to a color ramp (lookup table). Typically, such mapping will render reconstructions under a color gradient, with warmer hues depicting higher values of the mapped metric. It includes two options:
 
 - {% include bc path='Color Mapping|Individual Cells...'%} Assigns color mappings to each cell independently in the ensemble of selected cells
 - {% include bc path='Color Mapping|Groups of Cells...'%} Assigns color mappings using metrics retrieved for the ensemble of selected cells
 
-Legends can be edited using [Color Mapping Legends ›](#color-mapping-legends-). This menu also includes commands to remove existing color mappings, and an option to assign unique (distinctive) colors to selected cell(s).
+Legends can be edited using [Color Mapping Legends ›](#color-mapping-legends-). This menu also includes commands to remove existing color mappings, and options to assign unique (distinctive) colors to selected cell(s), including a colorblind-safe variant.
 
 #### Thickness...
 Specifies a constant thickness to be applied to the selected reconstructions. Confusingly, thickness is set using an arbitrary scale ranging from 1 (thinnest) to 8 (thickest).
@@ -162,8 +166,13 @@ Specifies a constant thickness to be applied to the selected reconstructions. Co
 #### Soma Radius...
 Applies a constant radius (in physical units) to the soma(s) of selected reconstructions. Note that this requires nodes to be explicitly tagged as soma during import.
 
+### Arbor Utilities
+
 #### Translate...
 Specifies a translation to be applied to selected reconstructions.
+
+#### Align View to Tree
+Rotates the scene around its vertical axis so that the main axis of the selected reconstruction (longest path from root to tip) points up in the XY plane. Requires a single reconstruction and an unlocked view.
 
 ### Remove Neuronal Arbors
 This section of the menu includes commands for deleting reconstructions from the scene. Note that you can also remove objects using the [contextual menu](#contextual-menu).
@@ -176,7 +185,7 @@ This menu includes commands for loading, managing, and customizing 3D meshes com
 Includes commands for import and rendering of Wavefront OBJ files, or folders containing multiple files.
 
 ### Customize Meshes
-Includes commands for adjustment of the color and transparency of the selected mesh(es) and/or their computed bounding boxes, including color, transparency (as percentage), visibility of bounding box, etc.
+Includes commands for adjustment of the selected mesh(es) and/or their computed bounding boxes: _All Parameters..._, _Color..._, _Transparency..._ (as percentage), and _Hemisphere..._ (which hemisphere of the mesh is displayed), as well as visibility of bounding boxes.
 
 ### Remove 3D Meshes
 This section of the menu includes commands for deleting meshes from the scene. Note that you can also remove objects using the [contextual menu](#contextual-menu).
@@ -209,7 +218,7 @@ These are 3D primitives including, parallelograms, spheres, or vectors at specif
 
 
 ### Customize Annotations
-This section contains commands to modify the color, transparency, etc. of annotations, as well as more advanced options, including:
+This section contains commands to rename annotations, and to modify their color, transparency and size, as well as more advanced options, including:
 
 - Color Gradient: Display the annotation under a hue gradient along a specified axis. NB: Transparency levels of color gradients may not be adjustable
 - Surface Rendering: Adjusts the ambient, diffuse, and specular lighting model of objects. This option is only available for simple 3D primitives such as spheres and vectors
@@ -252,13 +261,15 @@ Includes two commands:
 - {% include bc path='Measure...' %} Provides a comprehensive selection of measurements to be extracted from selected cells. See [Analysis › Measurements](/plugins/snt/analysis#measurements) for details
 - {% include bc path='Quick Measurements...' %} Convenience shortcut for running {% include bc path='Measure...' %} with common metrics
 
-### Distribution Analysis
+### Distribution Analyses
+<span id="distribution-analysis"></span>
 Includes two commands:
 - {% include bc path='Branch Properties...' %} Measures all branches of the currently selected reconstructions (without considering cell identity) and plots frequencies of the chosen metric. Enabling quantification of branch properties across a population.
 - {% include bc path='Cell Properties...' %} Plots frequencies of single-cell measurements.
 
 
-### Specialized Analysis
+### Specialized Analyses
+<span id="specialized-analysis"></span>
 
 #### Convex Hull...
 Computes and displays the convex hull of a reconstruction (i.e., the smallest convex polygon/polyhedron that contains a neuronal arbor). Convex hull measurements are defined in [Metrics](/plugins/snt/metrics#convex-hull-boundary-size). Note that it is also possible to define polyhedron based on subsets of nodes (e.g., branch points) using [surface annotations](#surfaces).
@@ -268,6 +279,9 @@ Generates a Dendrogram plot of single cells. See [Graph-based Analysis](/plugins
 
 #### Persistent Homology...
 See [Analysis › Persistent Homology](/plugins/snt/analysis#persistent-homology).
+
+#### Root Angle Analysis...
+Runs [Root Angle Analysis](/plugins/snt/analysis#root-angle-analysis) on single cells.
 
 #### Sholl Analysis...
 Runs [Sholl Analysis](/plugins/snt/sholl#analysis-of-traced-cells) on single cells.
@@ -303,8 +317,10 @@ Allows saving of any tabular measurements and plots generated by analysis comman
 
 ## Utilities &amp; Actions
 <img align="right" src="/media/plugins/snt/snt-recviewer-util-controls.png" alt="Utilities" title="Utilities" width="450" />
+This menu is organized into three sections: _Tools_, _Capture_ and _Resources_.
 
-### Utilities
+### Tools
+<span id="utilities"></span>
 
 #### Annotation Label...
 Adds a text label with options to customize font size, style, color, rotation angle, and location.
@@ -318,19 +334,25 @@ Adjustments of light and shadows. Note these are currently experimental features
 #### Create Figure...
 Only available in standalone viewers. See [Manual › Create Figure...](/plugins/snt/manual#create-figure).
 
-#### Record Animation...
-Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in [Preferences](#other).
+### Capture
+<span id="snapshots"></span>
 
-### Snapshots
-Commands for handling scene snapshots, including:
+#### Record Animation...
+Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in [Preferences](#preferences).
+
+Commands for handling scene snapshots:
 
 - {% include bc path='Take Snapshot & Display'%} Takes a snapshot of the current scene and displays it in ImageJ
-- {% include bc path='Take Snapshot & Save to Disk'%} Saves a PNG image of the current scene to disk. The default directory may be changed in [Preferences](#other). Snapshot: {% include key key='S' %}
+- {% include bc path='Take Snapshot & Save to Disk'%} Saves a PNG image of the current scene to disk. The default directory may be changed in [Preferences](#preferences). Snapshot: {% include key key='S' %}
 - {% include bc path='Show Snapshot Directory'%} Opens the snapshot export directory in the native file explorer
+
+### Resources
+- {% include bc path='Scene Shortcuts...'%} Lists keyboard and mouse shortcuts of the scene
+- {% include bc path='Help ›'%} Links to documentation and other online resources
 
 
 ## Scripting
-Commands to create scripts, including:
+This menu has two sections: _New Script_ and _Resources_ (links to the Java and Python APIs and to the main scripting resource). Commands to create scripts:
 <img align="right" src="/media/plugins/snt/snt-recviewer-script-controls.png" alt="Scripting" title="Scripting" width="450" />
 
 - {% include bc path='Record Script...'%} Starts the [Script Recorder](/plugins/snt/scripting#script-recorder). Shortcut: {% include key key='[' %}
@@ -338,14 +360,15 @@ Commands to create scripts, including:
 
 
 ## Settings
-Options and global settings. It is divided in 4 sections:
+Options and global settings. It is divided in 5 sections: _Layout_, _Controls_, _Neurite Rendering_, _Mesh Rendering_ and _Advanced_:
 <img align="right" src="/media/plugins/snt/snt-recviewer-setting-controls.png" alt="Settings" title="Settings" width="500" />
 
 ### Layout
 Includes options to toggle the visibility of the control pane (typically hidden in full screen). Shortcut: {% include key keys='SHIFT|C' %}
 
 
-### Keyboard & Mouse Sensitivity
+### Controls
+<span id="keyboard--mouse-sensitivity"></span>
 This section contains options for sensitivity of mouse and keyboard scene interaction. Note that a default shared sensitivity parameter can be specified for panning, zooming and rotating (using hotkeys) in the {% include bc path='Global Preferences...'%} dialog, including
 
 - {% include bc path='Pan Accuracy| '%} Sets the responsiveness of panning. A lower step size is more responsive
@@ -376,13 +399,17 @@ Options controlling how surface meshes (OBJ files) are rendered:
   - _Smooth Shading_ Per-fragment Phong lighting with hemispherical ambient, producing smoother surfaces
 
 - {% include bc path='Backface Culling'%} Skips back-facing triangles during rendering. This improves performance for closed (watertight) meshes but may cause visual artifacts on open surfaces
-### Advanced Settings
+### Advanced
+<span id="advanced-settings"></span>
 Includes advanced controls such as:
 
-- {% include bc path='Debug Mode'%} Logs detailed information about commands usage, including warnings and errors to the Console
+- {% include bc path='Debug'%} Logs detailed information about commands usage, including warnings and errors to the Console
 - {% include bc path='Enable Hardware Acceleration'%} Sets hardware accelerated 3D graphics
 
-### Other
+- {% include bc path='Preferences...'%} Opens the global preferences dialog (see below)
+
+### Preferences
+<span id="other"></span>
 Sets persisting preferences for snapshot recordings, keyboard and mouse controls, and the preferred scripting language for the Viewer. Persistent preferences apply across viewers and sessions.
 
 
