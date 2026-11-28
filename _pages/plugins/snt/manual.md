@@ -1425,3 +1425,21 @@ The Path Manager contextual menu offers convenience options to collapse/expand s
 # Fill Manager
 
 Provides controls for all filling operations. It is described in more detail in the [Filling: Step-By-Step Instructions](/plugins/snt/walkthroughs#filling).
+
+### Search Type
+Reports the target image and cost function of the current fill search. Both are modifiable in the main dialog.
+
+### Search Status
+Reports the current distance threshold, the maximum threshold explored so far, and the cursor position (updated as you move the mouse over the image).
+
+### Distance Threshold for Fill Search
+Defines how far the fill extends from the filled paths. The threshold can be set by clicking on a traced structure (preferred), specified manually, or set to the explored maximum. _Defaults_ restores the default choice. See [Understanding Fill Distances](/plugins/snt/walkthroughs#iii-understanding-fill-distances-and-distance-threshold).
+
+### Performance Impacting Options
+- **One fill per path**: Fills each path independently, allowing unique labels in exported images
+- **Store above-threshold nodes**: Allows resuming progress with the same fill, at the cost of performance
+- **Transparent overlay**: Eases inspection of fills, but may slow down filling
+
+<span id="stored-fill(s)"></span>
+### Stored Fills
+Lists the fills stored so far. A contextual menu provides commands to select, unload, and reload fills.
